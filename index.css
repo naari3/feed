@@ -172,6 +172,7 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
+  word-break: break-word;
   padding-left: 8px;
   border-left: 1px solid var(--accordion-content-rail-color);
 }
