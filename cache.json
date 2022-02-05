@@ -1430,6 +1430,20 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438060206287",
+          "author": null,
+          "description": "www.tonya.co.jp\nエチオピアを起源とし、イエメンから世界に広まったアラビカ・コーヒー。そのうち、ティピカ種とブルボン種は、300年を経て現在世界各地で栽培されている多様な主要品種の母体となっています。\n今回届いたコーヒー「イエメニア」はそのティピカ系でもブルボン系でもない、全く新しい「母体品種」です！\n\n\nフルーツのようなナッツのようなカカオのような、でもどれとも違うなんとも言えない香りがすごいです。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/05/111954",
+          "publishedOn": "2022-02-05T02:19:54.000Z",
+          "wordCount": 71,
+          "title": "イエメン ハイミ イエメニア ナチュラル",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          }
+        },
+        {
           "id": "hatenablog://entry/13574176438058942172",
           "author": null,
           "description": "WSLのUbuntu 20にgitをソースコードからインストールするのに次の手順が必要でした。\n手順\nsudo apt install autoconf \nsudo apt install libcurl4-openssl-dev \ncurl https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.21.4.tar.xz --output git-2.21-4.tar.xz\ntar -xf git-2.21-4.tar.xz \ncd git-2.21.4/\nmake configure\n./configure --prefix=/usr NO_TCLTK=1\nmake NO_GETTEXT=1\nsudo make install NO_GETTEXT=1\n\n\n\n2.21.4という中途半端なバージョンであることは気にしないでください。\nインストールしたいバージョンのソースコードはIndex of /pub/software/scm/git/ から探してください。\n参考：How to install git specific version(2.7.*) on Ubuntu - Stack Overflow\nトラブルシュート\n以下解説というか、つまづいた点です。\nmake configureにはautoconfが必要です。\nないと次のエラーが出ます。\n~ make configure\nGIT_VERSION = 2.21.4\n    GEN configure\n/bin/sh: 1: autoconf: not found\nmake: *** [Makefile:2274: configure] Error 127\n\n\n\nインストールします。\nsudo apt install autoconf \n\n\n\n参考：installation - How to install autoconf - Ask Ubuntu\nTcl/Tkがない場合は環境変数NO_TCLTKが必要\nないとmakeで次のようなエラーが出ます。\n    * new locations or Tcl/Tk interpreter\n    GEN git-gui\n    INDEX lib/\n    * tclsh failed; using unoptimized loading\n    MSGFMT    po/bg.msg make[1]: *** [Makefile:252: po/bg.msg] Error 127\nmake: *** [Makefile:2037: all] Error 2\n\n\n\n環境変数NO_TCLTKをつけて./configureします。\n./configure --prefix=/usr NO_TCLTK=1\n\n\n\n　\ngettextがない場合は環境変数NO_GETTEXTが必要\nないと次のエラーが出ます。\n    SUBDIR templates\n    MSGFMT po/build/locale/pt_PT/LC_MESSAGES/git.mo\n/bin/sh: 1: msgfmt: not found\nmake: *** [Makefile:2533: po/build/locale/pt_PT/LC_MESSAGES/git.mo] Error 127\n\n\n\n環境変数NO_GETTEXTをつけてmakeします。\nTcl/TKの時と違いmakeの環境変数であることに注意してください。\nmake NO_GETTEXT=1\nmake installの時も同じフラグをつけて実行します。\nそうしないとビルドから実行されます。\nsudo make NO_GETTEXT=1 install\n\n\n\n参考：Compile Git without gettext - Stack Overflow\nhttpsスキーマを使うには\nhttpsスキーマに対応したコンパイルができていないと、次のようなエラーがでます。\n~ git clone https://example.com/test.git\nCloning into 'test'...\nfatal: unable to find remote helper for 'https'\n\n\n\nhttpsを使いたい場合は、makeする前にcurlの開発用ライブラリをインストールします。\nsudo apt install libcurl4-openssl-dev \n\n\n\n参考\nlinux - \"Unable to find remote helper for 'https'\" during git clone - Stack Overflow\nlibraries - Installing curl.h library - Ask Ubuntu",
