@@ -548,6 +548,20 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438060410442",
+          "author": null,
+          "description": "ハクメイとミコチ 10巻 (HARTA COMIX)\n\n作者:樫木 祐人\nKADOKAWA\nAmazon\n\nハクメイとミコチ、10巻読んだ。\n1巻から読み返していたのだけど、やはり最高の漫画。前にも書いた気がするけど、相対的に大きい食べ物が描写されているのがすごくいい。巨大な大根1本とか、「ひとつぶいなり」とか、米粒やコーヒー豆を砕いて使うところとか。\nしばらく前にアニメも見始めたのだけど、動画を見るのが苦手で数話見て止まっている…。\n原作に忠実だなーと思っていたけれど、改めて読み返してみると結構スキップしている話とかはあることに気がついた。\nエンディングテーマがすごく好き。良い。\nアニメを見始めて、「ハクメイ」「ミコチ」のイントネーションが思っていたのと違っていたのを知った。どちらも平坦なイントネーションだと思っていたら、アニメは1音目が高いイントネーションだった。",
+          "link": "https://commits.hatenablog.com/entry/2022/02/06/100020",
+          "publishedOn": "2022-02-06T01:00:20.000Z",
+          "wordCount": 163,
+          "title": "2022-02-05",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51LUzOm7Z1L._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          }
+        },
+        {
           "id": "hatenablog://entry/13574176438059692538",
           "author": null,
           "description": "github.com\ngithub.com\ngem_rbs_collection で code owners機能を有効にした。\nこれでgemの単位でRBSを書くメンテナを増やせるようになった。\n次のような設定がされている。\ngemの単位で権限を与えたい人を ruby/gem_rbs_collection リポジトリに outside collaboratorとしてwrite権限で招待する\n\n\ncollaborator はこのリポジトリの全てを読み書きできるようになる\nそのため、code owners 機能を使って触れる範囲を狭める必要がある\nmainブランチにbranch protectionを設定する\n\n\n1 approval 以上を必須にする\n\n\nこれで collaborator が勝手にPRをマージできないようになる\ncode ownerによるapproveを必須にする\n\n\nこれでcode ownerは自分がownerのファイルへのPRをマージできるようになる\nCODEOWNERSファイルに、ファイルの対応を書く\n\n\n各gemにcollaboratorをassignする\nファイルの先頭で*  @pockeのように全てのファイルに対するcode ownerを設定する\n\n\nこれを設定しないと、code ownerが明示的に指定されていないファイルへのPRをcollaboratorがマージできてしまう\ncode owners機能は便利なような、微妙に使いづらいような。\ncollaboratorの権限はある程度制限できている(と思う)のだけど、私など元からいるメンテナの権限も同様に制限されてしまってちょっとやりづらい。\nただ、リポジトリのadmin権限があれば強権マージができるので、たぶん強権マージを乱発する体制になる。\nたとえば*  @pockeが効いているファイルへのPRは私がapproveしないとマージできないのだけど、私自身で開いたPRは自分でapproveできないので、強権マージできないと詰む。\ncollaboratorの権限に関してもちょっと微妙なところがある。collaboratorも自身が開いたPRを自身でapproveできないので、code ownerになっていても他者のPRをマージできるだけで自身のPRはマージできない。\nあと、issueの権限は完全にオープンになっていると思うので、全然関係ないissueを閉じれたりしてしまいそう。issueに関してはこれはroleの権限を調整すればなんとかできるような気もしている。",
