@@ -48,6 +48,56 @@ Amazon
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank" rel="noopener">knqyf263&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">sigstoreによるコンテナイメージやソフトウェアの署名</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2022/02/06/213003" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>長い上に割と複雑なので最後まで読む人はほとんどいないと思うのですが、将来確実に忘れてしまう自分のために書いたので別に悲しくありません。
+まえがき
+背景
+sigstoreの概要
+sigstoreを構成するツール郡
+Cosign
+Rekor
+Fulcio
+署名方法
+コンテナイメージ
+鍵ペアの生成
+署名
+検証
+Blobs
+鍵ペアの生成
+署名
+検証
+署名の仕組み
+コンテナイメージ
+OCI Registryについて
+署名の保存先
+署名フォーマット
+署名検証
+検証が不十分な例
+Blobs
+参考
+まとめ
+まえがき
+鍵の管理不要でソフトウェア署名を可能にするKeyless Signingについて解説を書こうと思い、まず前提知識を書いていたら信じられないぐらい長くなったので前提知識だけで1つの記事になりました。
+後述するsigstoreは急速に開発が進んでいるプロジェクトであり、ここで書いている記述は少し経ったら不正確になる可能性があります。本記事の内容は参考程度に留め、公式ドキュメントやソースコードなどを参照してください。昔はそうだったのかなぐらいで見てもらえればと思います。
+また、最近認証や署名周りを追っていなかったこともあり、割と忘れていて用語の使い方が多少怪しいところがあるかもしれません。その場合はご指摘いただければ修正します。
+PKIって何？とか公開鍵認証って何？とかそういうことは説明していません。
+背景
+近年開発されるサービスやソフトウェアはオープンソースソフトウェア（OSS）に依存することが一般的になっています。一方で、自分達が依存しているOSSの一覧を把握することは困難であり、さらにはそれらOSSがどこで管理されているのか、どのようにビルドされているのか、などを把握することはより困難です。その結果、いわゆるサプライチェーン攻撃を受けやすい状況になっています。サプライチェーン攻…</span>
+                  </div>
+                    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220206/20220206210659.png" class="card article-thumbnail"/>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank" rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
             <article>
@@ -21425,7 +21475,7 @@ youtu.be
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-06T12:07:44.544Z">2022-02-06T12:07:44.544Z</time>
+    <time id="build-timestamp" datetime="2022-02-06T13:08:51.789Z">2022-02-06T13:08:51.789Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.12.1</a></span>
   </footer>
   <script src="./index.js"></script>
