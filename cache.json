@@ -8598,6 +8598,49 @@
       "feedUrl": "https://ss-sahara.work/feed/",
       "siteUrl": "https://ss-sahara.work",
       "articles": []
+    },
+    {
+      "title": "YTPMV.info",
+      "feedUrl": "https://ytpmv.info/?feed=rss2",
+      "siteUrl": "https://ytpmv.info",
+      "articles": [
+        {
+          "id": "https://ytpmv.info/?p=1242",
+          "author": "maimai",
+          "description": "みなさんごきげんよう。まいまいです。 Youtubedl使う時って、コマンドいちいち選択して高画質になるようにするの、面倒ですよね。 なのでサイトごとにそれなりに最適化した設定でDLできるように、ワンクリックでDLできる […]\nThe post クリップボードからURLを取得しyt-dlpを起動するVBScript first appeared on YTPMV.info.",
+          "link": "https://ytpmv.info/?p=1242&utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25af%25e3%2583%25aa%25e3%2583%2583%25e3%2583%2597%25e3%2583%259c%25e3%2583%25bc%25e3%2583%2589%25e3%2581%258b%25e3%2582%2589url%25e3%2582%2592%25e5%258f%2596%25e5%25be%2597%25e3%2581%2597yt-dlp%25e3%2582%2592%25e8%25b5%25b7%25e5%258b%2595%25e3%2581%2599%25e3%2582%258bvbscript",
+          "publishedOn": "2022-01-30T05:31:38.000Z",
+          "wordCount": 315,
+          "title": "クリップボードからURLを取得しyt-dlpを起動するVBScript"
+        },
+        {
+          "id": "https://ytpmv.info/?p=1225",
+          "author": "maimai",
+          "description": "皆さんごきげんよう。まいまいです。 今回は、人力系音MADで多用する表現のリップシンク（歌声に合わせて口の形を変える表現)を一部自動化するPythonスクリプトを作ったので公開します。 今回作ったスクリプトは、Pytho […]\nThe post リップシンク支援Pythonスクリプト RPPtoEXO(Lyric) (REAPER→Aviutl) first appeared on YTPMV.info.",
+          "link": "https://ytpmv.info/rpptoexo-lyric?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2583%25aa%25e3%2583%2583%25e3%2583%2597%25e3%2582%25b7%25e3%2583%25b3%25e3%2582%25af%25e6%2594%25af%25e6%258f%25b4python%25e3%2582%25b9%25e3%2582%25af%25e3%2583%25aa%25e3%2583%2597%25e3%2583%2588-rpptoexolyric-reaper%25e2%2586%2592aviutl",
+          "publishedOn": "2022-01-20T17:28:12.000Z",
+          "wordCount": 358,
+          "title": "リップシンク支援Pythonスクリプト RPPtoEXO(Lyric) (REAPER→Aviutl)"
+        },
+        {
+          "id": "https://ytpmv.info/?p=1220",
+          "author": "maimai",
+          "description": "ffmpegを用いた動画の音声差し替えの方法のメモ\nThe post ffmpegを用いた動画の音声差し替え first appeared on YTPMV.info.",
+          "link": "https://ytpmv.info/?p=1220&utm_source=rss&utm_medium=rss&utm_campaign=ffmpeg%25e3%2582%2592%25e7%2594%25a8%25e3%2581%2584%25e3%2581%259f%25e9%259f%25b3%25e5%25a3%25b0%25e5%25b7%25ae%25e3%2581%2597%25e6%259b%25bf%25e3%2581%2588",
+          "publishedOn": "2022-01-09T13:00:21.000Z",
+          "wordCount": 332,
+          "title": "ffmpegを用いた動画の音声差し替え"
+        },
+        {
+          "id": "https://ytpmv.info/?p=1131",
+          "author": "maimai",
+          "description": "みなさん御機嫌よう。まいまいです。今回は個人的に動画のコーデックについて調べまくってたのでその情報の備忘録がてら音MAD制作におけるコーデックについてまとめていきます。内容間違ってたら指摘してください。 基本的に「なるべ […]\nThe post 音MAD制作とコーデック ～場面に応じて最適なコーデックを追求する。 first appeared on YTPMV.info.",
+          "link": "https://ytpmv.info/encode-and-codec/?utm_source=rss&utm_medium=rss&utm_campaign=%25e9%259f%25b3mad%25e5%2588%25b6%25e4%25bd%259c%25e3%2581%25a8%25e3%2582%25b3%25e3%2583%25bc%25e3%2583%2587%25e3%2583%2583%25e3%2582%25af-%25ef%25bd%259e%25e5%25a0%25b4%25e9%259d%25a2%25e3%2581%25ab%25e5%25bf%259c%25e3%2581%2598%25e3%2581%25a6%25e6%259c%2580%25e9%2581%25a9%25e3%2581%25aa%25e3%2582%25b3%25e3%2583%25bc",
+          "publishedOn": "2022-01-09T08:37:17.000Z",
+          "wordCount": 388,
+          "title": "音MAD制作とコーデック ～場面に応じて最適なコーデックを追求する。"
+        }
+      ]
     }
   ],
   "cliVersion": "1.12.1"
