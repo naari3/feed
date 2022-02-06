@@ -8340,6 +8340,31 @@
       ]
     },
     {
+      "title": "Posts on ストイックに生きたい",
+      "feedUrl": "https://blog.sakamo.dev/post/index.xml",
+      "siteUrl": "https://blog.sakamo.dev/post/",
+      "articles": [
+        {
+          "id": "https://blog.sakamo.dev/post/catch-all-custom-domain/",
+          "author": null,
+          "description": "独自ドメインでメールを受信する\n\n\n\n    \n\nTweet\n\nモチベーション\nドメインをいくつか持っていて有効活用したくなり、特定のドメインに送信されたメールを Gmail に転送したくなった。\nとりあえず実際に動くことを確認したのは Google Domains と Cloudflare Email Routing である。\nGoogle Domains\nGoogle Domains を使っている場合は、メール転送の機能を使うだけでいいので簡単である。\n*@example.com に対して設定すれば、全てのメールを転送することができる。\nカスタム ネームサーバーによるメール転送を設定する に書いてあるとおり、MX レコードを追加すると転送できる。\n\nCloudflare Email Routing\nEmail Routing は現在ベータ版の機能なので、Waitlist に登録しましょう。\nCatch-all address に書かれているとおり、機能として Catch-all があるので設定するだけで特定のアドレスに転送することができる。\nおわり\nGoogle Domains のメール転送を使っていたが、DNS は Cloudflare を使っているので Email Routing を使うようにした。",
+          "link": "https://blog.sakamo.dev/post/catch-all-custom-domain/",
+          "publishedOn": "2022-02-05T11:16:12.000Z",
+          "wordCount": 87,
+          "title": "Catch All Custom Domain"
+        },
+        {
+          "id": "https://blog.sakamo.dev/post/review-2021/",
+          "author": null,
+          "description": "2021年も終わりなので振り返る。\n\n\n\n    \n\nTweet\n\n2021年も色々変化があったがここに記すには余白が狭すぎる。\nプライベート\n今年もそれなりに経済を回した。\n振り返ると色々あったが今年も後悔はしておらず、今後も後悔することないと断言ができる。\nOSS\n今年の3月に Argo CD 等の OSS を開発している argoproj のメンバーになった。\n頑張ります pic.twitter.com/hN5DnFmvrZ\n— さかもとりょーた(23) (@let_constant) March 11, 2021\n \n主にやっていたのは argocd-notifications と notifications-engine で、ドキュメントを充実させたり PR のレビューしたり Slack で人間を助けたりしていた。\nargo-cd/pull/7744 で Argo CD 本体にマージされてv2.3でリリースされる。\n仕事\n8月に転職し、ソフトウェアエンジニアからクラウドサポートエンジニアになった。\n転職するまでは結局ずっと Go を書いていたし、多分今後も何か書く際は Go で書いていく気がする。\n技術\n基本的にコンテナ系を追っていた一年ではあったし、きっと2021年もコンテナ系を追っていくつもりではある。\nBMSファイル再生\n途中まで作って満足してやめてしまったが、BMS ファイルを読み込んで再生するやつを作っていた。\nEngo というライブラリを使っていて、リポジトリは ryota-sakamoto/beatgo にある。\n任意のBMSファイルを読んで再生するところまで作った pic.twitter.com/LZ3EDYSZU3\n— さかもとりょーた(23) (@let_constant) January 3, 2021\n \n\n「Automating chaos experiments in production」を読んだ\n人生で初めてまともに英語の論文を読んだ。内容は多少古いが。\nDNSサーバー\nDNS がどうやって動くかを理解したかったので、RFC を読みながら DNS サーバーを作っていた。完全に理解した状態になり、これも途中で飽きてやめた。\nstd::io::Cursor を使って丁寧に書いていた。\nフルサービスリゾルバまで実装した pic.twitter.com/SOte47y8BH\n— さかもとりょーた(23) (@let_constant) April 29, 2021\n \n\nブログの移行\nNetlify から Cloudflare Pages に移行した。とにかく簡単だった。\nNetlifyからCloudflare Pagesへ移行\n— さかもとりょーた(23) (@let_constant) July 26, 2021\n \n2021年の目標\n2021年は下記の目標を一応掲げてはいた。\nTOEIC: 800点\n資格: AP, CKAD\n発狂皆伝\n買った本をちゃんと読む\n賢くなる\nまず TOEIC、これは定期的に受けてはいるし英語の勉強もたまにしていて12月も受けたのでそれの結果次第なところはある。\nこう見ると何も達成してないが忘れていたことはないし、ここに書いてあること以外の進捗が良いのでよしとする。\n総括\n来年は仕事も技術も頑張りましょう。",
+          "link": "https://blog.sakamo.dev/post/review-2021/",
+          "publishedOn": "2021-12-30T14:58:31.000Z",
+          "wordCount": 173,
+          "title": "Goodbye 2021"
+        }
+      ]
+    },
+    {
       "title": "音MADとその周辺",
       "feedUrl": "https://otomad.jp/feed",
       "siteUrl": "https://otomad.jp",
