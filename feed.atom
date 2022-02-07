@@ -2,10 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-07T12:13:38.734Z</updated>
+    <updated>2022-02-07T13:15:26.450Z</updated>
     <generator>osmosfeed 1.12.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[console.time]]></title>
+        <id>hatenablog://entry/13574176438061089146</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/02/07/215726"/>
+        <updated>2022-02-07T12:57:26.000Z</updated>
+        <summary type="html"><![CDATA[パフォーマンス計測に使えるJavaScript組み込みの関数です。
+ブラウザでもNode.jsでも使える便利な子です。
+developer.mozilla.org
+基本はconsole.timeとconsole.timeEndをセットで使います。
+console.time('ほげほげ処理に掛かる時間を測るぞい！')
+
+// なんか、ほげほげする処理
+
+console.timeEnd('ほげほげ処理に掛かる時間を測るぞい！')
+
+
+
+とすると、次のような文字列がブラウザなら開発コンソールに、Node.jsなら標準出力に出力されます。
+ほげほげ処理に掛かる時間を測るぞい！: 4.600s
+タイマーは引数で与えた名前で区別されます。
+同じ名前のタイマーを2つ同時に起動できません。
+ループ処理みたいな途中経過を測りたい時はconsole.timeLogを使います。
+console.time('繰り返し処理に掛かった時間')
+
+ for(let i = 0; i < 10; i++){
+  console.timeLog('繰り返し処理に掛かった時間')
+}
+
+console.timeEnd('繰り返し処理に掛かった時間')
+
+
+
+を実行すると次のような結果が得られます。
+繰り返し処理に掛かった時間: 3.488ms
+繰り返し処理に掛かった時間: 3.569ms
+繰り返し処理に掛かった時間: 3.615ms
+繰り返し処理に掛かった時間: 3.648ms
+繰り返し処理に掛かった時間: 3.687ms
+繰り返し処理に掛かった時間: 3.738ms
+繰り返し処理に掛かった時間: 3.77ms
+繰り返し処理に掛かった時間: 3.81ms
+繰り返し処理に掛かった時間: 3.847ms
+繰り返し処理に掛かった時間: 3.881ms
+繰り返し処理に掛かった時間: 17.205ms
+
+
+
+表示される時間は、タイマー開始からの経過時間です。
+MDNには書いてないのですがwhatwgの仕様を見ると、timeLogは第二引数以降の引数が取れるみたいです。
+console.time('繰り返し処理に掛かった時間')
+
+ for(let i = 0; i < 10; i++){
+  console.timeLog('繰り返し処理に掛かった時間', i)
+}
+
+console.timeEnd('繰り返し処理に掛かった時間')
+
+
+
+で、次のような出力が得られます。
+繰り返し処理に掛かった時間: 3.672ms 0
+繰り返し処理に掛かった時間: 3.761ms 1
+繰り返し処理に掛かった時間: 3.807ms 2
+繰り返し処理に掛かった時間: 3.842ms 3
+繰り返し処理に掛かった時間: 3.883ms 4
+繰り返し処理に掛かった時間: 3.919ms 5
+繰り返し処理に掛かった時間: 3.96ms 6
+繰り返し処理に掛かった時間: 3.981ms 7
+繰り返し処理に掛かった時間: 4.02ms 8
+繰り返し処理に掛かった時間: 4.054ms 9
+繰り返し処理に掛かった時間: 5.245ms]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[20220207]]></title>
         <id>https://note.com/dak/n/n617909a447b3</id>
