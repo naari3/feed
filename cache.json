@@ -4871,20 +4871,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438029454380",
-          "author": null,
-          "description": "こんにちは、クックパッド事業本部 買物サービス開発部の佐藤（@n_atmark）です。\n2019年新卒で入社後、クックパッドの新規サービスである「クックパッドマート」の開発に従事しており、2020年からはレシピサービス「クックパッド」iOSアプリの買い物機能を開発していました。\nレシピサービス「クックパッド」の買い物機能は、iOSアプリ（以下: クックパッドiOS）で先行リリースしており、現在Androidアプリ（以下: クックパッドAndroid）でも同様の機能開発を行っています。\n本稿ではクックパッドAndroidの買い物機能の開発について紹介します。\n買い物機能とは\nなぜやるのか\n楽しみが広がる、まったく新しい「買い物」を\n買い物機能を最速でリリースするために選択したこと\n再利用可能なAndroid実装の活用\n宣言的UIフレームワークの活用\n方針\n実装について\nJetpack Compose版VIPERベースのアーキテクチャ\nPresentationレイヤーについて\nデータフローについて\nUI層でのみJetpack Composeを活用する実装に関して\nUILayerの実装に関して\nActivity\nFragment\nViewModelの実装に関して\nScreenの実装に関して\n実際どうだったのか\nうまくいった点\nうまくいかなかった点\nまとめ\nクックパッドでは一緒に働く仲間を募集しています！\n買い物機能とは\n生鮮食品ECサービス「クックパッドマート」の仕組みと連携し、レシピサービス「クックパッド」のアプリから食材を注文できます*1。\n詳しくはiOSアプリ向けの買い物機能の開発について紹介している​​ SwiftUI を活用した「レシピ」×「買い物」の新機能開発 をご覧ください。\n買い物機能の画面例\nなぜやるのか\nクックパッドで目指している「毎日の料理を楽しみにする」の…",
-          "link": "https://techlife.cookpad.com/entry/2021/11/11/kaimono-jetpack-compose",
-          "publishedOn": "2021-11-11T00:00:00.000Z",
-          "wordCount": 980,
-          "title": "既存実装を活用しつつJetpack Composeを用いてクックパッドAndroidアプリの買い物機能を高速に開発している話",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/n/n_atmark/20211104/20211104141338.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -6149,6 +6135,15 @@
       "feedUrl": "https://note.com/diginthedigger/rss",
       "siteUrl": "https://note.com/diginthedigger",
       "articles": [
+        {
+          "id": "https://note.com/diginthedigger/n/n8304a9656638",
+          "author": null,
+          "description": "これは、漫画「ディグインザディガー」第11話公開に際して、原作の栄免建設と漫画の駒澤零（と、たまにゲスト）が淡々と元ネタ紹介をしていくコーナーです。\n\n原作担当：栄免建設\n続きをみる",
+          "link": "https://note.com/diginthedigger/n/n8304a9656638",
+          "publishedOn": "2022-02-08T12:00:22.000Z",
+          "wordCount": 180,
+          "title": "「ディグディガ」元ネタ紹介：第11話"
+        },
         {
           "id": "https://note.com/diginthedigger/n/na68960925d5a",
           "author": null,
@@ -7459,6 +7454,15 @@
       "feedUrl": "https://note.com/rainy_raincoat/rss",
       "siteUrl": "https://note.com/rainy_raincoat",
       "articles": [
+        {
+          "id": "https://note.com/rainy_raincoat/n/nb2298390923b",
+          "author": null,
+          "description": "どうも\n雨天雨衣です。マクドナルドのポテトに思いを馳せています。\n本当に。\n2021/11/30 05:20に投稿した個人作メドレー スコウル\nhttps://www.nicovideo.jp/watch/sm39691235\nについてつらつらと書いていきます。\n続きをみる",
+          "link": "https://note.com/rainy_raincoat/n/nb2298390923b",
+          "publishedOn": "2022-02-08T11:51:55.000Z",
+          "wordCount": 42,
+          "title": "スコウルの雨天雨衣"
+        },
         {
           "id": "https://note.com/rainy_raincoat/n/nab36f794b783",
           "author": null,

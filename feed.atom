@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-08T11:03:32.804Z</updated>
+    <updated>2022-02-08T12:12:41.350Z</updated>
     <generator>osmosfeed 1.12.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「ディグディガ」元ネタ紹介：第11話]]></title>
+        <id>https://note.com/diginthedigger/n/n8304a9656638</id>
+        <link href="https://note.com/diginthedigger/n/n8304a9656638"/>
+        <updated>2022-02-08T12:00:22.000Z</updated>
+        <summary type="html"><![CDATA[これは、漫画「ディグインザディガー」第11話公開に際して、原作の栄免建設と漫画の駒澤零（と、たまにゲスト）が淡々と元ネタ紹介をしていくコーナーです。
+
+原作担当：栄免建設
+続きをみる]]></summary>
+        <author>
+            <name>ディグインザディガー</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[スコウルの雨天雨衣]]></title>
+        <id>https://note.com/rainy_raincoat/n/nb2298390923b</id>
+        <link href="https://note.com/rainy_raincoat/n/nb2298390923b"/>
+        <updated>2022-02-08T11:51:55.000Z</updated>
+        <summary type="html"><![CDATA[どうも
+雨天雨衣です。マクドナルドのポテトに思いを馳せています。
+本当に。
+2021/11/30 05:20に投稿した個人作メドレー スコウル
+https://www.nicovideo.jp/watch/sm39691235
+についてつらつらと書いていきます。
+続きをみる]]></summary>
+        <author>
+            <name>雨天雨衣</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[エッセイ:ラーメンハゲ]]></title>
         <id>https://note.com/sizes/n/nfda62a6a9f5e</id>
@@ -17615,47 +17644,6 @@ v1.46をSteamに公開しました。
 Abletonが普通に動いて、普通に動いとるな、という気持ちになれて良かった。]]></summary>
         <author>
             <name>Robot Checkerboard</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[既存実装を活用しつつJetpack Composeを用いてクックパッドAndroidアプリの買い物機能を高速に開発している話]]></title>
-        <id>hatenablog://entry/13574176438029454380</id>
-        <link href="https://techlife.cookpad.com/entry/2021/11/11/kaimono-jetpack-compose"/>
-        <updated>2021-11-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、クックパッド事業本部 買物サービス開発部の佐藤（@n_atmark）です。
-2019年新卒で入社後、クックパッドの新規サービスである「クックパッドマート」の開発に従事しており、2020年からはレシピサービス「クックパッド」iOSアプリの買い物機能を開発していました。
-レシピサービス「クックパッド」の買い物機能は、iOSアプリ（以下: クックパッドiOS）で先行リリースしており、現在Androidアプリ（以下: クックパッドAndroid）でも同様の機能開発を行っています。
-本稿ではクックパッドAndroidの買い物機能の開発について紹介します。
-買い物機能とは
-なぜやるのか
-楽しみが広がる、まったく新しい「買い物」を
-買い物機能を最速でリリースするために選択したこと
-再利用可能なAndroid実装の活用
-宣言的UIフレームワークの活用
-方針
-実装について
-Jetpack Compose版VIPERベースのアーキテクチャ
-Presentationレイヤーについて
-データフローについて
-UI層でのみJetpack Composeを活用する実装に関して
-UILayerの実装に関して
-Activity
-Fragment
-ViewModelの実装に関して
-Screenの実装に関して
-実際どうだったのか
-うまくいった点
-うまくいかなかった点
-まとめ
-クックパッドでは一緒に働く仲間を募集しています！
-買い物機能とは
-生鮮食品ECサービス「クックパッドマート」の仕組みと連携し、レシピサービス「クックパッド」のアプリから食材を注文できます*1。
-詳しくはiOSアプリ向けの買い物機能の開発について紹介している​​ SwiftUI を活用した「レシピ」×「買い物」の新機能開発 をご覧ください。
-買い物機能の画面例
-なぜやるのか
-クックパッドで目指している「毎日の料理を楽しみにする」の…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>
