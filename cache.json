@@ -2904,6 +2904,20 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438061738262",
+          "author": null,
+          "description": "serverfault.com\n2011年頃、10年前の古い文章ですが、大変長くて情熱的なので良いなーと思いました。\nシステム管理者にとっての利点という視点があるのが興味深いです。\nなるほど、企業で使っているPCに一斉にアプリケーションをインストールするのにCLIで起動出来てオプションパラメータが渡せるのは魅力的に思えます。\nMSI以前のインストーラーの辛み\nMSIが登場する以前は、アプリケーション開発者がそれぞれの流儀でインストーラーを作成していました。\n標準化されてないが故の辛みがあったようです。\nインストーラー開発者視点で、知らない時代の情報なので興味深いです。\n共有ファイルを上書きする\nアンインストールできない\nGUIなしでのインストールが出来ない\nインストールしたファイルの記録が残らない。インストール後に変更されたかどうか確認できない\nインストーラーのコマンドラインパラメータがバラバラすぎ\n↑のおかげで、インストーラーにオプションをつけてカスタムインストールを自動化するのがほぼ不可能\nUACに対応していない\nインストール失敗時にエラーコードを返さない（ので、自動化できない）\nインストーラーからファイルを抽出できない\nインストーラーがログを残さない\nインストール失敗時のロールバックがされない\n共有コンポーネントをインストールする業界標準がない\nなるほど、MSIを使うだけでこれがほとんどクリアできるのはすげー便利ですね。\nアンインストールは作り方によっては失敗します。\nMSIの強み\nアンインストールが可能\nログが標準化されている\nmsiファイルのフォーマットが標準化されているので、インストールを実行しなくても何が起きるか検査可能（ただしカスタムアクションはコンパイルされているので検査できない）\nインストールのカスタマイズ方法が標準化されている\nActiveDirectoryのグループポリシーでインストール可能。ユーザーに管理者権限を渡さなくて良い\nGUIなしでインストール/アンインストールが可能\nインストール失敗時にロールバックできる\n???\nアップデートインストールも可能（ただしややこしい）\nmsiからファイルを抽出できる\nmsiexeに色々パラメータが渡せる（4との違いはわかりません）\n???\n???\n上手く行ってない点もある\nパッチ（バージョンアップ）\nGUIがシンプルすぎる\nレジリエンス（わかりません）\n難しい\n遅い（といっても今は十分速いです。）\nその他\nまだ半分以下で全文はモリモリ書いてあります。\n個人的には「カスタムアクション、とくに独自実装のカスタムアクションを絶対に使わせたくない」気持ちに興味を持ちました。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/09/232128",
+          "publishedOn": "2022-02-09T14:21:28.000Z",
+          "wordCount": 138,
+          "title": "msiを使う利点",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          }
+        },
+        {
           "id": "hatenablog://entry/13574176438061508357",
           "author": null,
           "description": "WindowsでIPアドレスをしゅっと出力する方法がないか探していました。\nnetworking - How to get network ip address via windows command prompt? - Super User から、次のコマンドを知りました。\nnetsh interface ip show address | findstr IP\nこれをPowerShellで実行すると文字化けします。\nPS C:\\Users\\led_l> netsh interface ip show address | findstr IP\n    IP 繧｢繝峨Ξ繧ｹ:                           172.24.144.1\n    IP 繧｢繝峨Ξ繧ｹ:                           192.168.1.34\n    IP 繧｢繝峨Ξ繧ｹ:                           127.0.0.1\nコマンドプロンプトだと文字化けしません。\nC:\\Users\\led_l> netsh interface ip show address | findstr IP\n    IP アドレス:                           172.28.144.1\n    IP アドレス:                           192.168.1.76\n    IP アドレス:                           127.0.0.1\nnetshコマンド単体だとどちらも日本語で文字化けせずに表示されます。\nPS C:\\Users\\led_l> netsh interface ip show address\n\nインターフェイスの構成 \"vEthernet (WSL)\"\n    DHCP …",
@@ -8207,6 +8221,15 @@
       "feedUrl": "https://note.com/tough_mad/rss",
       "siteUrl": "https://note.com/tough_mad",
       "articles": [
+        {
+          "id": "https://note.com/tough_mad/n/na0adbb23dc25",
+          "author": null,
+          "description": "合作の主催をしたことがある皆さんは、やっぱり期限を守らないバカタレ野郎にはらわた煮えくりかえることがありますよね。僕は優しいのでそんなこと思いませんけど。\nそして期限守らない人って遅刻の常習犯ってことがよくあるんじゃないですか？多分\n続きをみる",
+          "link": "https://note.com/tough_mad/n/na0adbb23dc25",
+          "publishedOn": "2022-02-09T15:01:32.000Z",
+          "wordCount": 50,
+          "title": "合作の主催をする方々へ　もう遅刻させないために"
+        },
         {
           "id": "https://note.com/tough_mad/n/ne1dc00ba6e55",
           "author": null,

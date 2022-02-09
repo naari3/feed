@@ -24,6 +24,61 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander" open>
+                <summary class="article-expander__title">msiを使う利点</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/02/09/232128" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>serverfault.com
+2011年頃、10年前の古い文章ですが、大変長くて情熱的なので良いなーと思いました。
+システム管理者にとっての利点という視点があるのが興味深いです。
+なるほど、企業で使っているPCに一斉にアプリケーションをインストールするのにCLIで起動出来てオプションパラメータが渡せるのは魅力的に思えます。
+MSI以前のインストーラーの辛み
+MSIが登場する以前は、アプリケーション開発者がそれぞれの流儀でインストーラーを作成していました。
+標準化されてないが故の辛みがあったようです。
+インストーラー開発者視点で、知らない時代の情報なので興味深いです。
+共有ファイルを上書きする
+アンインストールできない
+GUIなしでのインストールが出来ない
+インストールしたファイルの記録が残らない。インストール後に変更されたかどうか確認できない
+インストーラーのコマンドラインパラメータがバラバラすぎ
+↑のおかげで、インストーラーにオプションをつけてカスタムインストールを自動化するのがほぼ不可能
+UACに対応していない
+インストール失敗時にエラーコードを返さない（ので、自動化できない）
+インストーラーからファイルを抽出できない
+インストーラーがログを残さない
+インストール失敗時のロールバックがされない
+共有コンポーネントをインストールする業界標準がない
+なるほど、MSIを使うだけでこれがほとんどクリアできるのはすげー便利ですね。
+アンインストールは作り方によっては失敗します。
+MSIの強み
+アンインストールが可能
+ログが標準化されている
+msiファイルのフォーマットが標準化されているので、インストールを実行しなくても何が起きるか検査可能（ただしカスタムアクションはコンパイルされているので検査できない）
+インストールのカスタマイズ方法が標準化されている
+ActiveDirectoryのグループポリシーでインストール可能。ユーザーに管理者権限を渡さなくて良い
+GUIなしでインストール/アンインストールが可能
+インストール失敗時にロールバックできる
+???
+アップデートインストールも可能（ただしややこしい）
+msiからファイルを抽出できる
+msiexeに色々パラメータが渡せる（4との違いはわかりません）
+???
+???
+上手く行ってない点もある
+パッチ（バージョンアップ）
+GUIがシンプルすぎる
+レジリエンス（わかりません）
+難しい
+遅い（といっても今は十分速いです。）
+その他
+まだ半分以下で全文はモリモリ書いてあります。
+個人的には「カスタムアクション、とくに独自実装のカスタムアクションを絶対に使わせたくない」気持ちに興味を持ちました。</span>
+                  </div>
+                    <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail"/>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
                 <summary class="article-expander__title">findstr で文字化けする</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/02/09/090506" target="_blank" rel="noopener">
                   <div class="article-summary-box-inner">
@@ -63,6 +118,24 @@ PS C:\Users\led_l&gt; netsh interface ip show address
                   <div class="article-summary-box-inner">
                     <span>今日は朝の9時に起きられた
 女と話しているときにその女が嫌いな女の写真（胸を強調した下衆な姿勢）を送ってきたからその乳の感じからカップ数を言ってみたらまさか当たっていて自分でも気持ち悪いなと自己嫌悪した
+続きをみる</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/tough_mad" target="_blank" rel="noopener">タフ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">合作の主催をする方々へ　もう遅刻させないために</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/tough_mad/n/na0adbb23dc25" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>合作の主催をしたことがある皆さんは、やっぱり期限を守らないバカタレ野郎にはらわた煮えくりかえることがありますよね。僕は優しいのでそんなこと思いませんけど。
+そして期限守らない人って遅刻の常習犯ってことがよくあるんじゃないですか？多分
 続きをみる</span>
                   </div>
                 </a>
@@ -21997,7 +22070,7 @@ v1.46をSteamに公開しました。
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-09T14:10:58.464Z">2022-02-09T14:10:58.464Z</time>
+    <time id="build-timestamp" datetime="2022-02-09T15:11:52.798Z">2022-02-09T15:11:52.798Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.12.1</a></span>
   </footer>
   <script src="./index.js"></script>
