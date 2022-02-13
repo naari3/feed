@@ -17,3 +17,5 @@ jobs:
       - run: npm run fix
       - name: suggest
         uses: reviewdog/action-suggester@v1
+        with:
+          tool_name: feed-lint
