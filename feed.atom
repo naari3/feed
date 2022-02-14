@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-14T18:05:06.225Z</updated>
+    <updated>2022-02-14T19:08:03.773Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -15082,53 +15082,6 @@ store.steampowered.com
 それじゃあまた。]]></summary>
         <author>
             <name>chomoshのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ATOMCam2の無線LANチップが変わっていた件]]></title>
-        <id>hatenablog://entry/13574176438033831168</id>
-        <link href="https://honeylab.hatenablog.jp/entry/2021/11/17/153209"/>
-        <updated>2021-11-17T06:32:09.000Z</updated>
-        <summary type="html"><![CDATA[ATOMCam2、初回ロット、そのあとに届いた回収版、そして１０月頃に買いなおした３台、どれもすでにバラバラになっているのですが、これらの基板についていた無線LANチップは、間違いなくRTL8189というものでした。
-
-このチップは、普通に使えば子機にもなるし、hostapdを立てれば親機になり、
-やろうと思えばad-hocモードという、いわゆる子機同士、ルーターなしでネットワークを構築することができるものでした。
-なので、ちょっとこいつをいじって、ルータからの電波の届かないところでも、子機同士でルーティングしてデータを飛ばしたりしたい、ということを思いついていたので、追加でもう一台買ってみました。
-すると…あれ？？無線ＬＡＮ基板の色が違うぞ…
-
-ATBM6031 …　えっ、何それ、知らない
- 
-…無線LANチップが変わってる…
- 
-嫌な予感…
-
-ああぁぁぁぁぁぁあ！！！ ad-hoc(IBSS)が設定できないぃぃぃぃぃぃぃ！！！！
-
-ええええー。なんででしょうかね。RTLが入手不能っていうよりは、たぶん格安の無線ＬＡＮチップが出たからっていうことで乗り換えたんだと思うんですけど…
-ファームウェアを見ると７月ぐらいのにはすでに対応されていて、その後新しい無線LANチップでの技適申請の追加が行われており、適法に更新されています。
-
-が、えーーー。
-https://www.altobeam.com/api/sys/stl/actions/download?siteId=1&channelId=28&contentId=139&fileUrl=JDpii4VLW8obArXHgMAKFrRIZZN4Pxu7fawSYRX0slash0sT6V4Q0add0R8DhN0vPCBQMJ7Lbx1kVDP00MpQ2x7G4hmKZ30A0equals00equals00secret0
-データシート的に対応しないってことはないような気がするので、あれやこれやといじってみてもダメ。
-あちこち漁って出てきた、ATBM603xのドライバのソースとにらめっこしてみると、
-デフォルトのソースではデバイス登録の時にフルスペックにしているのに、
-ATOMCam2のドライバとして入れてるときにはなぜかAPとCLIENTにしか使えないようにプロファイルを設定しているようです。
-
-…えーと、運が良ければアドホックの部分のコードは入ってるはず。
-ならば、登録のとこにパッチ当てたるわ！！！！と思ってやってみましたが（力技すぎる）
-iw wlan0 info　のところにはスペックが表示され、ad-hocモードになっているとは表示されますが、BSSIDの設定や周波数設定が動かず…ダメか…
-リファレンスのソースコードはビルドはできるのですが、この無線LANチップはSDIOのため、ハード依存のmmcの初期化などのコードが含まれていません。
-そこを自前で実装するのは大変です。
-
-
-でもね。
-
-GPL!!!GPL!!!このドライバはGPL！！！
-カスタムコード入れたとこ、まとめて頂戴！！！！
-
-待ってるにょ！！！！]]></summary>
-        <author>
-            <name>honeylab's blog</name>
         </author>
     </entry>
     <entry>

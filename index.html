@@ -19223,60 +19223,6 @@ store.steampowered.com
     <ul class="sources card">
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank" rel="noopener">honeylab&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">ATOMCam2の無線LANチップが変わっていた件</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2021/11/17/153209" target="_blank" rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ATOMCam2、初回ロット、そのあとに届いた回収版、そして１０月頃に買いなおした３台、どれもすでにバラバラになっているのですが、これらの基板についていた無線LANチップは、間違いなくRTL8189というものでした。
-
-このチップは、普通に使えば子機にもなるし、hostapdを立てれば親機になり、
-やろうと思えばad-hocモードという、いわゆる子機同士、ルーターなしでネットワークを構築することができるものでした。
-なので、ちょっとこいつをいじって、ルータからの電波の届かないところでも、子機同士でルーティングしてデータを飛ばしたりしたい、ということを思いついていたので、追加でもう一台買ってみました。
-すると…あれ？？無線ＬＡＮ基板の色が違うぞ…
-
-ATBM6031 …　えっ、何それ、知らない
- 
-…無線LANチップが変わってる…
- 
-嫌な予感…
-
-ああぁぁぁぁぁぁあ！！！ ad-hoc(IBSS)が設定できないぃぃぃぃぃぃぃ！！！！
-
-ええええー。なんででしょうかね。RTLが入手不能っていうよりは、たぶん格安の無線ＬＡＮチップが出たからっていうことで乗り換えたんだと思うんですけど…
-ファームウェアを見ると７月ぐらいのにはすでに対応されていて、その後新しい無線LANチップでの技適申請の追加が行われており、適法に更新されています。
-
-が、えーーー。
-https://www.altobeam.com/api/sys/stl/actions/download?siteId&#x3D;1&amp;channelId&#x3D;28&amp;contentId&#x3D;139&amp;fileUrl&#x3D;JDpii4VLW8obArXHgMAKFrRIZZN4Pxu7fawSYRX0slash0sT6V4Q0add0R8DhN0vPCBQMJ7Lbx1kVDP00MpQ2x7G4hmKZ30A0equals00equals00secret0
-データシート的に対応しないってことはないような気がするので、あれやこれやといじってみてもダメ。
-あちこち漁って出てきた、ATBM603xのドライバのソースとにらめっこしてみると、
-デフォルトのソースではデバイス登録の時にフルスペックにしているのに、
-ATOMCam2のドライバとして入れてるときにはなぜかAPとCLIENTにしか使えないようにプロファイルを設定しているようです。
-
-…えーと、運が良ければアドホックの部分のコードは入ってるはず。
-ならば、登録のとこにパッチ当てたるわ！！！！と思ってやってみましたが（力技すぎる）
-iw wlan0 info　のところにはスペックが表示され、ad-hocモードになっているとは表示されますが、BSSIDの設定や周波数設定が動かず…ダメか…
-リファレンスのソースコードはビルドはできるのですが、この無線LANチップはSDIOのため、ハード依存のmmcの初期化などのコードが含まれていません。
-そこを自前で実装するのは大変です。
-
-
-でもね。
-
-GPL!!!GPL!!!このドライバはGPL！！！
-カスタムコード入れたとこ、まとめて頂戴！！！！
-
-待ってるにょ！！！！</span>
-                  </div>
-                    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20211117/20211117153120.png" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank" rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
             <article>
@@ -19296,7 +19242,7 @@ GPL!!!GPL!!!このドライバはGPL！！！
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-14T18:05:06.165Z">2022-02-14T18:05:06.165Z</time>
+    <time id="build-timestamp" datetime="2022-02-14T19:08:03.715Z">2022-02-14T19:08:03.715Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
