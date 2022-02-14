@@ -3036,6 +3036,36 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438063500592",
+          "author": null,
+          "description": "AngularJSには$httpと言う名前のHttpClientが入っています。\nどうせjQuery.ajaxのラッパーだろうと思って、次の感じでjQuery.ajaxに置き換えました。\n取ってきた値が上手く反映出来ませんでした。\njQuery.ajax({\n  type: \"get\",\n  url: \"/books/100\",\n  dataType: \"json\",\n  success: (data) => $scope.data = data\n})\n\n\n\n次のような感じで、$scopeへの反映をAngularJSに伝えるために、$apply()でくくって上げれば反映されました。\njQuery.ajax({\n  type: \"get\",\n  url: \"/books/100\",\n  dataType: \"json\",\n  success: (data) => $scope.$apply(() => $scope.data = data)\n})\n\n\n\n言われて見ればそういうのがあったような記憶があります。\nあとjQuery.ajaxはデフォルトではapplication/x-www-form-urlencodedで通信するので必要に応じて、contentType: \"application/json”とかdataType: \"json\"とかつける必要があるようです。jQueryのバージョンに依存するかもしれません。\n意外とかゆいところに手が届く便利な奴ですね、$http。\n参考\nAngularJS and scope.$apply（日本語訳） - Qiita",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/14/221247",
+          "publishedOn": "2022-02-14T13:12:47.000Z",
+          "wordCount": 141,
+          "title": "AngularJSの$httpの置き換え",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/13574176438063486009",
+          "author": null,
+          "description": "html - How to use on addEventListener on radio button in Plain Javascript? - Stack Overflow\nなるほど、同じラジオボタンのname属性は同じなので、name属性でまとめて取れます。\n次のような感じです。\nfor (const elem of document.querySelectorAll('[name=\"contract_duration\"]')) {\n  elem.addEventListener(\"change\", () => console.log('hey'))\n}\n\n\n\nラジオボタンが動的に増減するときは、フォームにイベントリスナーを設定して、バブリングしてきたイベントのターゲットをみて判別すると良いと思います。。\nform.addEventListener(\"change\", ({target}) => {\n  if(target.name === 'contract_duration') {\n    console.log('hey')\n  }\n})",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/14/215456",
+          "publishedOn": "2022-02-14T12:54:56.000Z",
+          "wordCount": 131,
+          "title": "ラジオボタンのイベントリスナーを設定する方法",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438062866093",
           "author": null,
           "description": "【ブーランジェリーベルベ 裾野市】手作り製法にこだわる妥協しないパン屋が裾野店をオープン！ もぺもぐ によると9月20日頃に裾野店をオープンしていたようです。\n（株）ベルベ ： 東京商工リサーチ\n ２０２１年１１月１５日に再度の資金ショートを起こし行き詰まりを表面化した\n給与の遅配も発生するなど資金繰りがひっ迫し、２０２１年１１月８日に全店舗を閉鎖して事業を停止していた。\n\n\n社長失踪、負債59億円で「全店閉店」のパン店が復活。新オーナーに“計画倒産説”を直撃 | bizSPA!フレッシュ\n2021年11月の報道によると、株式会社ベルベの創業社長である石川民夫氏が11月2日に失踪。その後「50億円を上回る負債が発覚し、破産申請を検討中」と報じられていました。\n そんな状況を背景に、元ベルベの社員らによる新店「リベルベ」が2022年1月26日にオープン。地元のファンからは大いに歓迎され、その様子がテレビのニュースなどでも取り上げられました。\n翌月2月8日、ベルベの破産申請が横浜地裁により受理され、「負債総額は約59億円の見通し」と報じられました。\n\n\nスピード感がすごいです。\n9月 新規出店\n11月 資金ショート\n1月 元従業員が居抜き開店\n2月 破産申請\n僕が参加したとあるファンドの出資先が破産したときは、次みたいな感じで10倍ぐらいゆっくりしたペースでした。\n2017年 資金ショート\n2019年 破産申請\n2021年 破産手続廃止\n売上で20〜30分の一の規模だったので関係者のやる気が違ったのかもしれません。",
@@ -3960,6 +3990,21 @@
       "feedUrl": "https://nonwo.hatenablog.com/rss",
       "siteUrl": "https://nonwo.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438063485658",
+          "author": null,
+          "description": "単発記事書いてきたけど、日記を書いていきたい。\nずっとツイッター張り付きマンなので、日記を設けて頻度をさげることも目的にしてる。\n \n本文\n早起きしようとしたけど普通に二度寝した。\n１０時過ぎに起きて昼までぼーっとしていた。冷蔵庫にあった食いかけのヨーグルトに送ってもらったリンゴをぶち込んだものと、２日前にスーパーで買った半額のカットフルーツを朝飯として食べた。うまかった。\n毎日フルーツ食べてる人すごい、飽きないのだろうか。そういえば毎日フルーツスムージー飲んでたらめちゃ糖分取り過ぎてた、果糖やばみたいなツイートみたけどまじなのか？一般人がくうフルーツならそこまででもないのかも。\n \n昼からバイトした。自分が辞めた後、代わりに入ってくれることになった新人君が来なくてざわついたが、連絡の齟齬で元から今週は出れないと話だった。新人君もいろいろ佳境らしく、少し前の自分もその状況だったのでぜひ頑張ってほしい。\nバイトの内容はいつも通りだったが、一件だけでかめな内容でひたすら大変だった。このバイトもあと数回なんだと思ったが、特に感慨深い感じもしなかった。チョコもありがたいことにいただき、食った。うまい。\n \n帰ってきてぺクスをした。今シーズンはずっとコントロールをしている。死にまくっても点数には関係ないし、撃ち合いどんぱちで楽しいが負けている状況だと通常のゲームよりすごいイライラしてしまう。下手糞な自分が悪いので、感情移入し過ぎないようにしたい。\n \n掃除をした。引っ越しが近いにもかかわらず、４年住んだ中で一番汚いといっても過言ではない。明日以降に大家さんに一度来てもらうので、それまでに最低限はきれいにしたい、というかする。\n \n久しぶりに飯を作った。冷凍チャーハンとラーメンだがうまかった。洗い物ためるくせにシンクは狭いので、一度ためると当分料理しない。食材も腐るし、引っ越し前に殻にしないといけないので、急ぐべき。\n \nこれから少し勉強して、プリコネみてさっさと寝たい。",
+          "link": "https://nonwo.hatenablog.com/entry/2022/02/14/215403",
+          "publishedOn": "2022-02-14T12:54:03.000Z",
+          "wordCount": 78,
+          "title": "日記",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/13574176438061173154",
           "author": null,
