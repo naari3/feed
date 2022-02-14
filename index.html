@@ -84,6 +84,33 @@ Webを初めとする情報インフラで動いている資金はGAFAの給料�
             </article>
         </section>
       </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank" rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">AWS CodeBuildでのRailsアプリのdocker buildを早くしたい</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/02/14/134436" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>メディアプロダクト開発部の後藤(id:mtgto)です。
+世間ではバレンタインですね。最近私はハンドメイドスイーツオークションというWebサービスの立ち上げをやっていました。ライブ配信でバレンタインのスイーツを作っていただき、ライバーのファンがスイーツをオークション形式で実際に購入できるというサービスです。 私のチームでは仮想DOMを扱うのにVue 2を使うことが多いのですが、今回は期日がずらせないイベントだったことや必要なライブラリがReact版しか提供されていなかったこともあり私がVueより使い慣れているReactで作りました。
+本記事ではAWS CodeBuildでのRailsアプリのDocker buildを早くするための工夫を紹介します。
+docker buildを早くしたい理由
+クックパッドでは多くのアプリケーションを運用していますが、その多くはAWS ECS上で動いています(ref. ECS インフラの変遷)。 デプロイにかかる時間の大部分を占めるのはCIおよびDocker imageのビルド時間なのでコード修正→ステージング環境へのデプロイ→動作確認→デプロイのデベロップルーティンを日に何度もくり返すような生活をしているときに発生する待ち時間を減らすためにもdocker buildにかかる時間を減らすことができれば幸せになります(主に私が)。
+まずは現状どれだけかかっているかを見てみましょう。今回使うのは生まれてから数年経っておりVue.jsを含むフロントエンド実装がそこそこあるRailsアプリです。
+
+CodeBuildのフェーズ詳細で確認すると、現状のDocker buildのためのCodeBuildジョブには10分弱ほどかかっていることがわかりました。
+今回はこれを半分の時間にするのを目標としてみます。
+今回のRailsアプリケーション
+今回の実験に使…</span>
+                  </div>
+                    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mtgto/20220214/20220214133414.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19061,7 +19088,7 @@ GPL!!!GPL!!!このドライバはGPL！！！
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-14T04:07:57.303Z">2022-02-14T04:07:57.303Z</time>
+    <time id="build-timestamp" datetime="2022-02-14T05:06:32.227Z">2022-02-14T05:06:32.227Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.13.0</a></span>
   </footer>
   <script src="./index.js"></script>

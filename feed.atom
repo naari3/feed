@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-14T04:07:57.358Z</updated>
+    <updated>2022-02-14T05:06:32.292Z</updated>
     <generator>osmosfeed 1.13.0</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AWS CodeBuildでのRailsアプリのdocker buildを早くしたい]]></title>
+        <id>hatenablog://entry/13574176438063330742</id>
+        <link href="https://techlife.cookpad.com/entry/2022/02/14/134436"/>
+        <updated>2022-02-14T04:44:36.000Z</updated>
+        <summary type="html"><![CDATA[メディアプロダクト開発部の後藤(id:mtgto)です。
+世間ではバレンタインですね。最近私はハンドメイドスイーツオークションというWebサービスの立ち上げをやっていました。ライブ配信でバレンタインのスイーツを作っていただき、ライバーのファンがスイーツをオークション形式で実際に購入できるというサービスです。 私のチームでは仮想DOMを扱うのにVue 2を使うことが多いのですが、今回は期日がずらせないイベントだったことや必要なライブラリがReact版しか提供されていなかったこともあり私がVueより使い慣れているReactで作りました。
+本記事ではAWS CodeBuildでのRailsアプリのDocker buildを早くするための工夫を紹介します。
+docker buildを早くしたい理由
+クックパッドでは多くのアプリケーションを運用していますが、その多くはAWS ECS上で動いています(ref. ECS インフラの変遷)。 デプロイにかかる時間の大部分を占めるのはCIおよびDocker imageのビルド時間なのでコード修正→ステージング環境へのデプロイ→動作確認→デプロイのデベロップルーティンを日に何度もくり返すような生活をしているときに発生する待ち時間を減らすためにもdocker buildにかかる時間を減らすことができれば幸せになります(主に私が)。
+まずは現状どれだけかかっているかを見てみましょう。今回使うのは生まれてから数年経っておりVue.jsを含むフロントエンド実装がそこそこあるRailsアプリです。
+
+CodeBuildのフェーズ詳細で確認すると、現状のDocker buildのためのCodeBuildジョブには10分弱ほどかかっていることがわかりました。
+今回はこれを半分の時間にするのを目標としてみます。
+今回のRailsアプリケーション
+今回の実験に使…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Re: 空想のNFTと現実のNFT]]></title>
         <id>hatenablog://entry/13574176438063280990</id>
