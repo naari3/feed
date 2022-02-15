@@ -2,10 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-15T06:17:58.350Z</updated>
+    <updated>2022-02-15T07:04:13.957Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Rails7 で jQuery をセットアップ]]></title>
+        <id>hatenablog://entry/13574176438063710598</id>
+        <link href="https://www.bokukoko.info/entry/2022/02/15/153751"/>
+        <updated>2022-02-15T06:37:51.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+Rails 7 がリリースされてから暫く経つが、基本的な部分がまだシェアされてないことが多い。本記事では Rails 7 注目のフロントエンドのセットアップについて記す。
+importmap
+Rails 7 といえば、Node.js を裏で使う必要がなくなった importmap-rails が目玉のリリースだ。
+importmap-rails を使うことで、フロントエンドの JavaScript のライブラリを管理してくれるようになる。
+github.com
+本記事では初歩の初歩として、jQuery をどうやって importmap-rails に載せるかについて記す。
+importmap pin でのインストール
+さっと手順について記しておく。
+$ rails -v
+Rails 7.0.2.2
+
+$ rails new sample  --skip-hotwire --javascript=importmap
+$ cd sample
+$ ./bin/importmap pin jquery
+$ vim app/javascript/application.js
+import jquery from "jquery"
+window.$ = jquery
+
+$(function() {
+  console.log("Hello Rails7!");
+})
+
+
+
+Rails 起動
+$ bundle exec rails g scaffold tweets title:string body:text
+$ bundle exec rails server
+http://localhost:3000/tweets
+最初に Rails アプリを初期化するときに importmap を指定することにしている。既にある Rails アプリに impor…]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我が義憤]]></title>
         <id>hatenablog://entry/13574176438063634735</id>

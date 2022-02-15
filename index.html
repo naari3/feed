@@ -20,6 +20,53 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank" rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Rails7 で jQuery をセットアップ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/02/15/153751" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+Rails 7 がリリースされてから暫く経つが、基本的な部分がまだシェアされてないことが多い。本記事では Rails 7 注目のフロントエンドのセットアップについて記す。
+importmap
+Rails 7 といえば、Node.js を裏で使う必要がなくなった importmap-rails が目玉のリリースだ。
+importmap-rails を使うことで、フロントエンドの JavaScript のライブラリを管理してくれるようになる。
+github.com
+本記事では初歩の初歩として、jQuery をどうやって importmap-rails に載せるかについて記す。
+importmap pin でのインストール
+さっと手順について記しておく。
+$ rails -v
+Rails 7.0.2.2
+
+$ rails new sample  --skip-hotwire --javascript&#x3D;importmap
+$ cd sample
+$ ./bin/importmap pin jquery
+$ vim app/javascript/application.js
+import jquery from &quot;jquery&quot;
+window.$ &#x3D; jquery
+
+$(function() {
+  console.log(&quot;Hello Rails7!&quot;);
+})
+
+
+
+Rails 起動
+$ bundle exec rails g scaffold tweets title:string body:text
+$ bundle exec rails server
+http://localhost:3000/tweets
+最初に Rails アプリを初期化するときに importmap を指定することにしている。既にある Rails アプリに impor…</span>
+                  </div>
+                    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220215/20220215153352.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://chomosh.hatenablog.com/" target="_blank" rel="noopener">chomoshのブログ</a></h3>
           <section class="articles-per-source">
             <article>
@@ -19382,7 +19429,7 @@ store.steampowered.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-15T06:17:58.270Z">2022-02-15T06:17:58.270Z</time>
+    <time id="build-timestamp" datetime="2022-02-15T07:04:13.905Z">2022-02-15T07:04:13.905Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
