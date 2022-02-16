@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-15T23:04:10.868Z</updated>
+    <updated>2022-02-16T00:20:32.928Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[WSL2にDistrodをインストールした]]></title>
+        <id>hatenablog://entry/13574176438063923590</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/02/16/091551"/>
+        <updated>2022-02-16T00:15:51.000Z</updated>
+        <summary type="html"><![CDATA[WSLでRailsアプリケーションを起動する際に毎回
+sudo service postgresql start
+
+
+
+していました。3回目ぐらいになっていい加減めんどくさくなってきました。
+背景
+現代のLinuxは常駐アプリケーションの起動にsystemdというプログラムを使っています。
+systemd はPIDが1でないと動かないという制約があります。
+WSL2ではこの制約が満たせないので、systemd が使えず、WSL2の起動時に自動でPostgreSQLを起動出来ません。
+これを解決する方法がいくつかあります。
+GitHub - arkane-systems/genie: A quick way into a systemd "bottle" for WSL
+GitHub - sorah/subsystemctl: Utility to run systemd in WSL2 with a Linux namespace
+GitHub - nullpo-head/wsl-distrod: Distrod is a meta-distro for WSL 2 which installs Ubuntu, Arch, Debian, Gentoo, etc. with systemd in a minute for you. Distrod also has built-in auto-start feature on Windows startup and port forwarding ability.
+どれもコンテナ内でsystemdを起動することで、systemd の PIDを1にする手法を採っています。
+このうち3番目のDistrodをインストールしました。
+なぜ Distrod ？
+3つのなかで一番インストールが簡単そうでした。
+bash.rcの設定が必要…]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[６分Ⅱ]]></title>
+        <id>https://note.com/klunakapa/n/n2c81cf1f7cb0</id>
+        <link href="https://note.com/klunakapa/n/n2c81cf1f7cb0"/>
+        <updated>2022-02-15T23:13:15.000Z</updated>
+        <summary type="html"><![CDATA[続きをみる]]></summary>
+        <author>
+            <name>かっぱ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Re: Re: Re: 空想のNFTと現実のNFT]]></title>
         <id>hatenablog://entry/13574176438063905331</id>
@@ -15271,60 +15309,6 @@ libdlopentest.c
 続きをみる]]></summary>
         <author>
             <name>Hercelot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[『ルインドキング』はスラム街をイラオイで歩くのが楽しい]]></title>
-        <id>hatenablog://entry/13574176438034230716</id>
-        <link href="https://chomosh.hatenablog.com/entry/2021/11/18/201824"/>
-        <updated>2021-11-18T11:18:24.000Z</updated>
-        <summary type="html"><![CDATA[ちょもすです。
- 
-まだクリアには程遠いどころか10時間くらいしかプレイしてないんですけど、突如閃光のように現れたRiotのRPG『ルインドキング』について少し。
- 
-まずね。ゲーム始めてフォーチュンでチュートリアルを終えると、最初に世界を探索キャラクターがイラオイなんですよ。
- 
-イラオイだよ。イラオイ。説教はあまり得意ではないが骨身に染みる教えをくれてくれることでお馴染み。すごくないですか？
- 
-
- 
-普通美少女とか美男子とかヤクザとかだったりするところを、スキンが少ないことでお馴染みの、どちらかと言えば人気がそんなない方の、超絶パワー系女子ですよ。口を開けば「ナーガケイボロスの教え一本で行く（要約）」しか言わねえし、そのへんのチンピラはパンチでわからせるし、やべえ。
- 
-『League of Legends』のRPG！ってなったら絵的に映えるヨードルの大冒険とか、フレヨルドの揉め事とか、デマーシアとノクサスのおっさんばっかりのむさくるしい話とか色々あるじゃないですか。それこそ『ARCANE』の華やかなピルトーヴァー＆地下街のゾウンの話なんて最高ですよ。そこからゲームを作るとなって、ビルジウォーターのスラム街をイラオイで闊歩するゲームが出てくるんだからたまりません。
- 
-ビルジウォーターにしたって普通に考えたらMFとGPが銃でバンバカ打ち合ってかっこいい！みたいなゲームにするじゃないですか。それが宗教バカのゴリラ女子の話から始まるんだからすごい。しかも意外といいやつ。イラオイのストーリーって正直全然知らなかったんですけど、想像以上に正義感の強いいい奴で笑いました。チャンピオン性能は許せないけどキャラは大分好きになりましたね。
- 
-それでいて次に仲間になるのがブラウム。やばいよ絵面。ブラウムとイラオイのパーティ、子供が見たら泣くタイプの絵面です。まじでこの一切媚びない姿勢が本当にいいと思います。
- 
-更に話を進めるとヤスオが仲間に入って。装備を見るとこれ。
- 
-
-ドランリングを装備して参戦する味方のヤスオ pic.twitter.com/VESvReVObK
-— chomosh / ちょもす (@chomosh) 2021年11月17日
-  
- 
-絶対わざとやってるもんね。ドランリングヤスオ。たまらん。
- 
-これRPGとしては普通というか、いや出来はもちろんいいんだけれど、特別なんかこれが面白い！とか、ストーリーがすごい！みたいなことは今のところそこまでない。でも、やっぱり10年遊んできたゲームのキャラ、しかもかなりのキワモノがスラム街歩いてたら、やっぱり嬉しくなっちゃうよね。あと『ARCANE』に続いてこのゲームも古の『Legend of Runeterra』知識が生きて楽しい。「ブラックマーケット」って単語出てくるだけで「あの！？『ブラックマーケットの商人』でおなじみの！？」みたいな反応しちゃう。
- 
-
-あえて2/2の画像。
- 
-そんなこんなでRiotのコンテンツを追ってきた人には間違いなくニヤニヤできる出来になっていると思います。『ルインドキング』。逆に言えばルーンテラ世界に興味がない人は無理してやる必要ないと思います。その場合は『ARCANE』見ましょう。
- 
-store.steampowered.com
- 
-追記
-
-ナーガウロボロスではなくナーガケイボロスでは⁉️
-— えびンモ/DFM Evi (@ebihuryahurya) 2021年11月18日
-  
- 
-修正しました！！！
- 
-それじゃあまた。]]></summary>
-        <author>
-            <name>chomoshのブログ</name>
         </author>
     </entry>
 </feed>

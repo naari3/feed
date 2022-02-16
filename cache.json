@@ -500,20 +500,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438034230716",
-          "author": null,
-          "description": "ちょもすです。\n \nまだクリアには程遠いどころか10時間くらいしかプレイしてないんですけど、突如閃光のように現れたRiotのRPG『ルインドキング』について少し。\n \nまずね。ゲーム始めてフォーチュンでチュートリアルを終えると、最初に世界を探索キャラクターがイラオイなんですよ。\n \nイラオイだよ。イラオイ。説教はあまり得意ではないが骨身に染みる教えをくれてくれることでお馴染み。すごくないですか？\n \n\n \n普通美少女とか美男子とかヤクザとかだったりするところを、スキンが少ないことでお馴染みの、どちらかと言えば人気がそんなない方の、超絶パワー系女子ですよ。口を開けば「ナーガケイボロスの教え一本で行く（要約）」しか言わねえし、そのへんのチンピラはパンチでわからせるし、やべえ。\n \n『League of Legends』のRPG！ってなったら絵的に映えるヨードルの大冒険とか、フレヨルドの揉め事とか、デマーシアとノクサスのおっさんばっかりのむさくるしい話とか色々あるじゃないですか。それこそ『ARCANE』の華やかなピルトーヴァー＆地下街のゾウンの話なんて最高ですよ。そこからゲームを作るとなって、ビルジウォーターのスラム街をイラオイで闊歩するゲームが出てくるんだからたまりません。\n \nビルジウォーターにしたって普通に考えたらMFとGPが銃でバンバカ打ち合ってかっこいい！みたいなゲームにするじゃないですか。それが宗教バカのゴリラ女子の話から始まるんだからすごい。しかも意外といいやつ。イラオイのストーリーって正直全然知らなかったんですけど、想像以上に正義感の強いいい奴で笑いました。チャンピオン性能は許せないけどキャラは大分好きになりましたね。\n \nそれでいて次に仲間になるのがブラウム。やばいよ絵面。ブラウムとイラオイのパーティ、子供が見たら泣くタイプの絵面です。まじでこの一切媚びない姿勢が本当にいいと思います。\n \n更に話を進めるとヤスオが仲間に入って。装備を見るとこれ。\n \n\nドランリングを装備して参戦する味方のヤスオ pic.twitter.com/VESvReVObK\n— chomosh / ちょもす (@chomosh) 2021年11月17日\n  \n \n絶対わざとやってるもんね。ドランリングヤスオ。たまらん。\n \nこれRPGとしては普通というか、いや出来はもちろんいいんだけれど、特別なんかこれが面白い！とか、ストーリーがすごい！みたいなことは今のところそこまでない。でも、やっぱり10年遊んできたゲームのキャラ、しかもかなりのキワモノがスラム街歩いてたら、やっぱり嬉しくなっちゃうよね。あと『ARCANE』に続いてこのゲームも古の『Legend of Runeterra』知識が生きて楽しい。「ブラックマーケット」って単語出てくるだけで「あの！？『ブラックマーケットの商人』でおなじみの！？」みたいな反応しちゃう。\n \n\nあえて2/2の画像。\n \nそんなこんなでRiotのコンテンツを追ってきた人には間違いなくニヤニヤできる出来になっていると思います。『ルインドキング』。逆に言えばルーンテラ世界に興味がない人は無理してやる必要ないと思います。その場合は『ARCANE』見ましょう。\n \nstore.steampowered.com\n \n追記\n\nナーガウロボロスではなくナーガケイボロスでは⁉️\n— えびンモ/DFM Evi (@ebihuryahurya) 2021年11月18日\n  \n \n修正しました！！！\n \nそれじゃあまた。",
-          "link": "https://chomosh.hatenablog.com/entry/2021/11/18/201824",
-          "publishedOn": "2021-11-18T11:18:24.000Z",
-          "wordCount": 148,
-          "title": "『ルインドキング』はスラム街をイラオイで歩くのが楽しい",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/chomosh/20211118/20211118195425.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
         }
       ]
     },
@@ -3103,6 +3089,21 @@
       "feedUrl": "https://ledsun.hatenablog.com/rss",
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438063923590",
+          "author": null,
+          "description": "WSLでRailsアプリケーションを起動する際に毎回\nsudo service postgresql start\n\n\n\nしていました。3回目ぐらいになっていい加減めんどくさくなってきました。\n背景\n現代のLinuxは常駐アプリケーションの起動にsystemdというプログラムを使っています。\nsystemd はPIDが1でないと動かないという制約があります。\nWSL2ではこの制約が満たせないので、systemd が使えず、WSL2の起動時に自動でPostgreSQLを起動出来ません。\nこれを解決する方法がいくつかあります。\nGitHub - arkane-systems/genie: A quick way into a systemd \"bottle\" for WSL\nGitHub - sorah/subsystemctl: Utility to run systemd in WSL2 with a Linux namespace\nGitHub - nullpo-head/wsl-distrod: Distrod is a meta-distro for WSL 2 which installs Ubuntu, Arch, Debian, Gentoo, etc. with systemd in a minute for you. Distrod also has built-in auto-start feature on Windows startup and port forwarding ability.\nどれもコンテナ内でsystemdを起動することで、systemd の PIDを1にする手法を採っています。\nこのうち3番目のDistrodをインストールしました。\nなぜ Distrod ？\n3つのなかで一番インストールが簡単そうでした。\nbash.rcの設定が必要…",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/16/091551",
+          "publishedOn": "2022-02-16T00:15:51.000Z",
+          "wordCount": 306,
+          "title": "WSL2にDistrodをインストールした",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220216/20220216071709.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220216/20220216071709.png"
+        },
         {
           "id": "hatenablog://entry/13574176438063500592",
           "author": null,
@@ -6953,6 +6954,16 @@
       "feedUrl": "https://note.com/klunakapa/rss",
       "siteUrl": "https://note.com/klunakapa",
       "articles": [
+        {
+          "id": "https://note.com/klunakapa/n/n2c81cf1f7cb0",
+          "author": null,
+          "description": "続きをみる",
+          "link": "https://note.com/klunakapa/n/n2c81cf1f7cb0",
+          "publishedOn": "2022-02-15T23:13:15.000Z",
+          "wordCount": 21,
+          "title": "６分Ⅱ",
+          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/0a2c56cfb659bf8dff77e7681b893e39bd185c47.jpg"
+        },
         {
           "id": "https://note.com/klunakapa/n/nc2f901522593",
           "author": null,

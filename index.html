@@ -16,8 +16,65 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-02-16">2022-02-16</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank" rel="noopener">@ledsun blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">WSL2にDistrodをインストールした</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/02/16/091551" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>WSLでRailsアプリケーションを起動する際に毎回
+sudo service postgresql start
+
+
+
+していました。3回目ぐらいになっていい加減めんどくさくなってきました。
+背景
+現代のLinuxは常駐アプリケーションの起動にsystemdというプログラムを使っています。
+systemd はPIDが1でないと動かないという制約があります。
+WSL2ではこの制約が満たせないので、systemd が使えず、WSL2の起動時に自動でPostgreSQLを起動出来ません。
+これを解決する方法がいくつかあります。
+GitHub - arkane-systems/genie: A quick way into a systemd &quot;bottle&quot; for WSL
+GitHub - sorah/subsystemctl: Utility to run systemd in WSL2 with a Linux namespace
+GitHub - nullpo-head/wsl-distrod: Distrod is a meta-distro for WSL 2 which installs Ubuntu, Arch, Debian, Gentoo, etc. with systemd in a minute for you. Distrod also has built-in auto-start feature on Windows startup and port forwarding ability.
+どれもコンテナ内でsystemdを起動することで、systemd の PIDを1にする手法を採っています。
+このうち3番目のDistrodをインストールしました。
+なぜ Distrod ？
+3つのなかで一番インストールが簡単そうでした。
+bash.rcの設定が必要…</span>
+                  </div>
+                    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220216/20220216071709.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-02-15">2022-02-15</time></h2>
     <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/klunakapa" target="_blank" rel="noopener">かっぱ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">６分Ⅱ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/klunakapa/n/n2c81cf1f7cb0" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>続きをみる</span>
+                  </div>
+                    <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/0a2c56cfb659bf8dff77e7681b893e39bd185c47.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://kumagi.hatenablog.com/" target="_blank" rel="noopener">Software Transactional Memo</a></h3>
@@ -19500,72 +19557,11 @@ libdlopentest.c
             </article>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://chomosh.hatenablog.com/" target="_blank" rel="noopener">chomoshのブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">『ルインドキング』はスラム街をイラオイで歩くのが楽しい</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://chomosh.hatenablog.com/entry/2021/11/18/201824" target="_blank" rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ちょもすです。
- 
-まだクリアには程遠いどころか10時間くらいしかプレイしてないんですけど、突如閃光のように現れたRiotのRPG『ルインドキング』について少し。
- 
-まずね。ゲーム始めてフォーチュンでチュートリアルを終えると、最初に世界を探索キャラクターがイラオイなんですよ。
- 
-イラオイだよ。イラオイ。説教はあまり得意ではないが骨身に染みる教えをくれてくれることでお馴染み。すごくないですか？
- 
-
- 
-普通美少女とか美男子とかヤクザとかだったりするところを、スキンが少ないことでお馴染みの、どちらかと言えば人気がそんなない方の、超絶パワー系女子ですよ。口を開けば「ナーガケイボロスの教え一本で行く（要約）」しか言わねえし、そのへんのチンピラはパンチでわからせるし、やべえ。
- 
-『League of Legends』のRPG！ってなったら絵的に映えるヨードルの大冒険とか、フレヨルドの揉め事とか、デマーシアとノクサスのおっさんばっかりのむさくるしい話とか色々あるじゃないですか。それこそ『ARCANE』の華やかなピルトーヴァー＆地下街のゾウンの話なんて最高ですよ。そこからゲームを作るとなって、ビルジウォーターのスラム街をイラオイで闊歩するゲームが出てくるんだからたまりません。
- 
-ビルジウォーターにしたって普通に考えたらMFとGPが銃でバンバカ打ち合ってかっこいい！みたいなゲームにするじゃないですか。それが宗教バカのゴリラ女子の話から始まるんだからすごい。しかも意外といいやつ。イラオイのストーリーって正直全然知らなかったんですけど、想像以上に正義感の強いいい奴で笑いました。チャンピオン性能は許せないけどキャラは大分好きになりましたね。
- 
-それでいて次に仲間になるのがブラウム。やばいよ絵面。ブラウムとイラオイのパーティ、子供が見たら泣くタイプの絵面です。まじでこの一切媚びない姿勢が本当にいいと思います。
- 
-更に話を進めるとヤスオが仲間に入って。装備を見るとこれ。
- 
-
-ドランリングを装備して参戦する味方のヤスオ pic.twitter.com/VESvReVObK
-— chomosh / ちょもす (@chomosh) 2021年11月17日
-  
- 
-絶対わざとやってるもんね。ドランリングヤスオ。たまらん。
- 
-これRPGとしては普通というか、いや出来はもちろんいいんだけれど、特別なんかこれが面白い！とか、ストーリーがすごい！みたいなことは今のところそこまでない。でも、やっぱり10年遊んできたゲームのキャラ、しかもかなりのキワモノがスラム街歩いてたら、やっぱり嬉しくなっちゃうよね。あと『ARCANE』に続いてこのゲームも古の『Legend of Runeterra』知識が生きて楽しい。「ブラックマーケット」って単語出てくるだけで「あの！？『ブラックマーケットの商人』でおなじみの！？」みたいな反応しちゃう。
- 
-
-あえて2/2の画像。
- 
-そんなこんなでRiotのコンテンツを追ってきた人には間違いなくニヤニヤできる出来になっていると思います。『ルインドキング』。逆に言えばルーンテラ世界に興味がない人は無理してやる必要ないと思います。その場合は『ARCANE』見ましょう。
- 
-store.steampowered.com
- 
-追記
-
-ナーガウロボロスではなくナーガケイボロスでは⁉️
-— えびンモ/DFM Evi (@ebihuryahurya) 2021年11月18日
-  
- 
-修正しました！！！
- 
-それじゃあまた。</span>
-                  </div>
-                    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/chomosh/20211118/20211118195425.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-15T23:04:10.808Z">2022-02-15T23:04:10.808Z</time>
+    <time id="build-timestamp" datetime="2022-02-16T00:20:32.853Z">2022-02-16T00:20:32.853Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
