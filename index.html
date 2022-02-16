@@ -19581,51 +19581,11 @@ Discordに取って代わられたSkypeみたいで可愛いですね。質問�
             </article>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://yasukata.hatenablog.com/" target="_blank" rel="noopener">かーねるさんとか</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">dlmopen を使ってシステムコールのフックをいい感じにプログラミングする</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://yasukata.hatenablog.com/entry/2021/11/19/144708" target="_blank" rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>前回の記事で紹介しました Zpoline というシステムコールフックの仕組みだと、バイナリ書き換え後の関数を、システムコールフックから呼び出してしまうと、デッドロックもしくは無限ループが発生することがあるという問題がありました。
-結果として、システムコールフックの実装に標準ライブラリ内の機能、例えば、printf 等が使えなくてプログラミングがしにくくなっていました。
-この問題は、dlmopen という機能を使うと解決できると教えて頂いて、実際に大分簡単にフック関数を実装できるようになったので、今回の記事では、具体的な Zpoline での利用方法について説明します。
-以下の GitHub 上のリポジトリに置いてあるソースコードは dlmopen を利用できるように変更してありますので、よかったら是非試してみてください。
-github.com
-dlmopen の前に dlopen とは？
-dlmopen は dlopen という機能の拡張です。dlmopen の前に、簡単に dlopen について説明します。
-dlopen を利用すると、プログラムの中から、任意の共有ライブラリファイルをロードすることができます。
-具体例として、以下のようなサンプルプログラムを用意してみました。
-dlopentest.c
-#include 
-
-int main(void)
-{
-	void (*example_fn)(void);
-	void *handle &#x3D; dlopen(&quot;./libdlopentest.so&quot;, RTLD_NOW);
-	example_fn &#x3D; dlsym(handle, &quot;example_function&quot;);
-	example_fn();
-	dlclose(handle);
-	return 0;
-}
-
-libdlopentest.c
-#includ…</span>
-                  </div>
-                    <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-16T17:11:50.183Z">2022-02-16T17:11:50.183Z</time>
+    <time id="build-timestamp" datetime="2022-02-16T18:08:44.682Z">2022-02-16T18:08:44.682Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

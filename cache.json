@@ -5494,22 +5494,7 @@
       "title": "かーねるさんとか",
       "feedUrl": "https://yasukata.hatenablog.com/rss",
       "siteUrl": "https://yasukata.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438034425596",
-          "author": null,
-          "description": "前回の記事で紹介しました Zpoline というシステムコールフックの仕組みだと、バイナリ書き換え後の関数を、システムコールフックから呼び出してしまうと、デッドロックもしくは無限ループが発生することがあるという問題がありました。\n結果として、システムコールフックの実装に標準ライブラリ内の機能、例えば、printf 等が使えなくてプログラミングがしにくくなっていました。\nこの問題は、dlmopen という機能を使うと解決できると教えて頂いて、実際に大分簡単にフック関数を実装できるようになったので、今回の記事では、具体的な Zpoline での利用方法について説明します。\n以下の GitHub 上のリポジトリに置いてあるソースコードは dlmopen を利用できるように変更してありますので、よかったら是非試してみてください。\ngithub.com\ndlmopen の前に dlopen とは？\ndlmopen は dlopen という機能の拡張です。dlmopen の前に、簡単に dlopen について説明します。\ndlopen を利用すると、プログラムの中から、任意の共有ライブラリファイルをロードすることができます。\n具体例として、以下のようなサンプルプログラムを用意してみました。\ndlopentest.c\n#include <dlfcn.h>\n\nint main(void)\n{\n\tvoid (*example_fn)(void);\n\tvoid *handle = dlopen(\"./libdlopentest.so\", RTLD_NOW);\n\texample_fn = dlsym(handle, \"example_function\");\n\texample_fn();\n\tdlclose(handle);\n\treturn 0;\n}\n\nlibdlopentest.c\n#includ…",
-          "link": "https://yasukata.hatenablog.com/entry/2021/11/19/144708",
-          "publishedOn": "2021-11-19T05:47:08.000Z",
-          "wordCount": 637,
-          "title": "dlmopen を使ってシステムコールのフックをいい感じにプログラミングする",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        }
-      ]
+      "articles": []
     },
     {
       "title": "膳（仮）",
