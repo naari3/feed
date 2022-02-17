@@ -3092,6 +3092,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438064452099",
+          "author": null,
+          "description": "【新 物】 茨城県産バラ詰干し芋・乾燥芋(たまゆたか) 2Kg | 株式会社マルヒ\n去年は買い損ねて、2年ぶりに買いました。\nやはり美味しい。\n噛み応えと甘さと芋臭さが、僕のイメージするほしいもとちょうど合うんです。\n近年のほしいもは紅はるかが主流で、玉豊が減っているらしいです。\n今のうちに楽しんでおきます。\n紅はるかのほうが甘くてねっとりしていて柔らかいです。\nほしいもにすると堅いことはあります。\n玉豊のほうは芋臭いです。玉豊のかみ切る堅さと芋臭さがなんか好きなんです。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/17/182605",
+          "publishedOn": "2022-02-17T09:26:05.000Z",
+          "wordCount": 88,
+          "title": "ほしいも",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438063923590",
           "author": null,
           "description": "WSLでRailsアプリケーションを起動する際に毎回\nsudo service postgresql start\n\n\n\nしていました。3回目ぐらいになっていい加減めんどくさくなってきました。\n背景\n現代のLinuxは常駐アプリケーションの起動にsystemdというプログラムを使っています。\nsystemd はPIDが1でないと動かないという制約があります。\nWSL2ではこの制約が満たせないので、systemd が使えず、WSL2の起動時に自動でPostgreSQLを起動出来ません。\nこれを解決する方法がいくつかあります。\nGitHub - arkane-systems/genie: A quick way into a systemd \"bottle\" for WSL\nGitHub - sorah/subsystemctl: Utility to run systemd in WSL2 with a Linux namespace\nGitHub - nullpo-head/wsl-distrod: Distrod is a meta-distro for WSL 2 which installs Ubuntu, Arch, Debian, Gentoo, etc. with systemd in a minute for you. Distrod also has built-in auto-start feature on Windows startup and port forwarding ability.\nどれもコンテナ内でsystemdを起動することで、systemd の PIDを1にする手法を採っています。\nこのうち3番目のDistrodをインストールしました。\nなぜ Distrod ？\n3つのなかで一番インストールが簡単そうでした。\nbash.rcの設定が必要…",
