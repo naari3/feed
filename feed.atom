@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-17T02:16:40.502Z</updated>
+    <updated>2022-02-17T03:05:00.961Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[レシピページのOGP画像を動的に生成する]]></title>
+        <id>hatenablog://entry/13574176438061582558</id>
+        <link href="https://techlife.cookpad.com/entry/dynamic-og-image"/>
+        <updated>2022-02-17T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、クックパッドでエンジニアをやっている @morishin です。入社してわりと長い間 iOS アプリやそのバックエンドの開発を中心にやってきましたが、最近は専らウェブフロントエンドとその基盤をいい感じにするというのをやっています。先日クックパッドウェブサイトのレシピページの OGP 画像を素敵に刷新したのでそのお話をしたいと思います。
+※ ここで OGP 画像と呼んでいるのは Open Graph Protocol で定義されている og:image プロパティに指定する画像のことです。
+twitter:image) 用の画像のみなので、その他の SNS に表示される画像 (og:image) は変わっていません。  
+できたもの
+これまではレシピ作者さんがアップロードされた料理写真を単にクロップしたものが表示されていましたが、料理写真の横にクックパッドのロゴやレシピ・作者さんの名前を添えたいい感じの画像が表示されるようになりました！画像を見ただけでクックパッドのレシピページであること、なんという料理であるかなどの情報をパッと認識することができるようになっています。
+厚切り食パンで大満足ピザトースト by クックモリシン☆ #cookpad https://t.co/RzPosuzOzO
+— morishin (@morishin127) February 8, 2022
+ 
+Before 
+ After
+
+
+
+
+ 
+ 
+
+
+
+
+
+動機
+SNS にシェアされたレシピがより魅力的に見えるようにしたいという思いと、クックパッドのレシピであることがひと目で伝わってほしいという気持ちから OGP 画像のデザインを変えられないかという話が挙がりました。開発はそれなりにかかりそうなので、まずはクックパッドの公式ツイッターアカウントから「画像ウェブサイトカード」(Twitte…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[個人的なもの、全体からの孤立、分離の感覚が消滅する時——。なぜ人は“観に行く”のか？]]></title>
         <id>https://note.com/kazumakawauchi/n/n107a25acf784</id>
