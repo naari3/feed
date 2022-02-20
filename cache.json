@@ -5333,6 +5333,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438065425412",
+          "author": null,
+          "description": "ども、@kimihom です。\n\nWeb サービスを運営していれば障害は付き物なので、その対策を検討した結果について記しておこう。\n障害検知\nきっかけとなったのは、起きている昼間だったら定期的に Slack 通知などをみながら様子を見て、誰かが発見したら共有すれば良い。しかし、夜間で起きた場合にどうするかという問題がある。\nこれに対して、そもそも夜間は使う人が少ないから、起きた時に見つけたら対応する。というケースでほとんどは問題ないのかもしれない。基本的にこうした障害は結局は外部サービス側の障害解消を待つしかないケースが多いのである。\nそれでも、自分達でWebサービスを運営しているのであれば、できる限り早くユーザーに向けてその状況を報告しなければならない。そうした責任感が増した時、深夜に障害が発生したら早くお知らせする体制が必要になってくるだろう。\nAmazon Connect\nAmazon Connect は、いろいろなケースで電話をカスタマイズできるクラウドベースのコンタクトセンターである。\naws.amazon.com\n「あれ？いつもはTwilioのことを書いてない？」そう思った読者の皆様にはいつもブログを読んでいただいて感謝である。そう、今回のような障害通知を利用するケースで、Twilio Voice を使うケースがとても多い。\nしかし、私自身が Twilioを使ったWebサービスを開発しているため、仮にTwilioで障害が起きてしまったら、そもそも通知さえ届かなくなる事態が発生してしまう。それを防ぐためには、Twilio とは別の環境で電話の通知を出すようにしなければならなかった。\nではAmazon Connectを使って具体的にどう実装をするかについては、以下のWebサイトを参考にさせてもらった。\nAmazon ConnectでLambdaから電話をかける | …",
+          "link": "https://www.bokukoko.info/entry/2022/02/20/174720",
+          "publishedOn": "2022-02-20T08:47:20.000Z",
+          "wordCount": 291,
+          "title": "Webサービス障害時にAmazon Connectから通知",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20190430/20190430182438.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20190430/20190430182438.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438063710598",
           "author": null,
           "description": "ども、@kimihom です。\n\nRails 7 がリリースされてから暫く経つが、基本的な部分がまだシェアされてないことが多い。本記事では Rails 7 注目のフロントエンドのセットアップについて記す。\nimportmap\nRails 7 といえば、Node.js を裏で使う必要がなくなった importmap-rails が目玉のリリースだ。\nimportmap-rails を使うことで、フロントエンドの JavaScript のライブラリを管理してくれるようになる。\ngithub.com\n本記事では初歩の初歩として、jQuery をどうやって importmap-rails に載せるかについて記す。\nimportmap pin でのインストール\nさっと手順について記しておく。\n$ rails -v\nRails 7.0.2.2\n\n$ rails new sample  --skip-hotwire --javascript=importmap\n$ cd sample\n$ ./bin/importmap pin jquery\n$ vim app/javascript/application.js\nimport jquery from \"jquery\"\nwindow.$ = jquery\n\n$(function() {\n  console.log(\"Hello Rails7!\");\n})\n\n\n\nRails 起動\n$ bundle exec rails g scaffold tweets title:string body:text\n$ bundle exec rails server\nhttp://localhost:3000/tweets\n最初に Rails アプリを初期化するときに importmap を指定することにしている。既にある Rails アプリに impor…",
