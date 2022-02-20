@@ -16,6 +16,50 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-02-20">2022-02-20</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank" rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2022-02-19</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/02/20/100008" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Currently 55.8 kg and 12.19 % body fat. #Withings
+— 🎹 (@p_ck_) February 19, 2022
+  twitter.com
+やんちゃクラブの影響で、体重をつぶやくIFTTTを設定してみた。健康な体重の範囲内なので、減らしたり増やしたりを頑張るつもりは今のところない。
+
+チェーザレ（１）　破壊の創造者 チェーザレ　破壊の創造者 (モーニングコミックス)
+
+作者:惣領冬実
+講談社
+Amazon
+
+チェーザレ 全13巻読んだ。
+巻末の解説も含めてかなり面白い。15世紀末のイタリアが詳しく知れて良い。
+ただ、完結の仕方がかなりつらい。「俺達の冒険はまだはじまったばかりだ！(完)」である。続きを読ませてくれ……
+アサシンクリード2と時間・場所がかなり近そうで、アサシンクリード2をやり直したくなった。
+github.com
+gem_rbs_collection で、Active SupportのClass#subsclassesを消した。rbs側のメソッド定義とぶつかってしまうため。
+github.com
+RBSのパーサがRubyで書かれていたときに使われていたコードが残っていたので消した。
+github.com
+rbsを少し速くした。self.class.hashをhashメソッドの中で呼んでいるのが遅くなっていた。
+クラスのhashは取らなくても死なないので、呼ぶのをやめた。これによって別クラスのオブジェクトとhashの値が同じになりやすくなるけど、実際はそれらがぶつかることはかなり少ないだろうし、self.classを呼ばないことによるメリットのほうが大きそう。
+Object#classって遅いのかな。graphql-rubyのプロファイリング取っているときもこれが結構遅かった記憶がある。</span>
+                  </div>
+                    <img src="https://m.media-amazon.com/images/I/41U6mJIO0cL._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-02-19">2022-02-19</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -20185,7 +20229,7 @@ Homebrew (macOS もしくは Linux），MacPorts（macOS），pkgin（NetBSD）�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-20T00:28:45.161Z">2022-02-20T00:28:45.161Z</time>
+    <time id="build-timestamp" datetime="2022-02-20T01:57:00.672Z">2022-02-20T01:57:00.672Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
