@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-21T00:24:28.069Z</updated>
+    <updated>2022-02-21T01:51:17.151Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2022-02-20]]></title>
+        <id>hatenablog://entry/13574176438065539635</id>
+        <link href="https://commits.hatenablog.com/entry/2022/02/21/100006"/>
+        <updated>2022-02-21T01:00:06.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+RBSのメモリ使用量を減らした。アクセス頻度が低いインスタンス変数がinitialize内で初期化されていたので、それを遅延して初期化するようにした。
+速度にも影響が出るかなーと思っていたけど、誤差レベルでしか影響は出ていなかった。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[底辺領主の勘違い英雄譚 4]]></title>
         <id>hatenablog://entry/13574176438065588401</id>

@@ -537,6 +537,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438065539635",
+          "author": null,
+          "description": "github.com\nRBSのメモリ使用量を減らした。アクセス頻度が低いインスタンス変数がinitialize内で初期化されていたので、それを遅延して初期化するようにした。\n速度にも影響が出るかなーと思っていたけど、誤差レベルでしか影響は出ていなかった。",
+          "link": "https://commits.hatenablog.com/entry/2022/02/21/100006",
+          "publishedOn": "2022-02-21T01:00:06.000Z",
+          "wordCount": 158,
+          "title": "2022-02-20",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438065220394",
           "author": null,
           "description": "Currently 55.8 kg and 12.19 % body fat. #Withings\n— 🎹 (@p_ck_) February 19, 2022\n  twitter.com\nやんちゃクラブの影響で、体重をつぶやくIFTTTを設定してみた。健康な体重の範囲内なので、減らしたり増やしたりを頑張るつもりは今のところない。\n\nチェーザレ（１）　破壊の創造者 チェーザレ　破壊の創造者 (モーニングコミックス)\n\n作者:惣領冬実\n講談社\nAmazon\n\nチェーザレ 全13巻読んだ。\n巻末の解説も含めてかなり面白い。15世紀末のイタリアが詳しく知れて良い。\nただ、完結の仕方がかなりつらい。「俺達の冒険はまだはじまったばかりだ！(完)」である。続きを読ませてくれ……\nアサシンクリード2と時間・場所がかなり近そうで、アサシンクリード2をやり直したくなった。\ngithub.com\ngem_rbs_collection で、Active SupportのClass#subsclassesを消した。rbs側のメソッド定義とぶつかってしまうため。\ngithub.com\nRBSのパーサがRubyで書かれていたときに使われていたコードが残っていたので消した。\ngithub.com\nrbsを少し速くした。self.class.hashをhashメソッドの中で呼んでいるのが遅くなっていた。\nクラスのhashは取らなくても死なないので、呼ぶのをやめた。これによって別クラスのオブジェクトとhashの値が同じになりやすくなるけど、実際はそれらがぶつかることはかなり少ないだろうし、self.classを呼ばないことによるメリットのほうが大きそう。\nObject#classって遅いのかな。graphql-rubyのプロファイリング取っているときもこれが結構遅かった記憶がある。",
