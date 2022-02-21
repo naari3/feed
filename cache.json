@@ -4362,22 +4362,7 @@
       "title": "はやくプログラムになりたい",
       "feedUrl": "https://rhysd.hatenablog.com/rss",
       "siteUrl": "https://rhysd.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438035875921",
-          "author": null,
-          "description": "H(uman-friendly) な grep コマンド hgrep をつくりました．\ngithub.com\n'\\w+ で検索した時の出力\nファイルを特定のパターンで検索し，マッチした箇所を構文ハイライトしたコード片で表示します．超ざっくり言うと，ripgrep で検索して bat でマッチ箇所付近を表示するような感じです．\ngrep -C によるコンテキスト表示に似ていますが，マッチ行が近い時は1つのコード片にまとめる，周囲何行を表示するかをヒューリスティックに少し賢く決めているなど，ちょっと出力は工夫しています．\n動機\n手元のリポジトリでコードを検索する時は\n単純に grep で検索してマッチ結果を眺める\ngrep | fzf のように検索結果を fzf で絞り込んだりプレビューする\nvim $(grep -l ...) のように検索結果をエディタで開く\nあたりを使い分けているのですが，マッチ結果全体を個々のマッチの周囲を見ながら眺めるというのがやりにくいと常々思っていました．\n要は GitHub のコード検索結果のような出力を手元でも見たいなというのが，hgrep を使った動機です．\nインストール方法\nリリースページから zip をダウンロードして解凍し，なかに入っている実行ファイルを /usr/local/bin などにコピーしてください．\ncargo を使って cargo install hgrep でインストールできます．ソースからビルドする場合は feature flags を使って自分のほしい機能だけを有効にしてインストールすることもできます（バイナリサイズや依存パッケージを減らせる）．\nHomebrew (macOS もしくは Linux），MacPorts（macOS），pkgin（NetBSD）などのパッケージマネージャもサポートしています．\n詳しくは…",
-          "link": "https://rhysd.hatenablog.com/entry/2021/11/23/211530",
-          "publishedOn": "2021-11-23T12:15:30.000Z",
-          "wordCount": 577,
-          "title": "えっちな grep をつくった",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/r/rhysd/20211123/20211123211157.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        }
-      ]
+      "articles": []
     },
     {
       "title": "若宮イヴだいすきクラブ",
