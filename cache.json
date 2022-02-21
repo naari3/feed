@@ -3112,6 +3112,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438065868790",
+          "author": null,
+          "description": "github.com\n特に機能は追加してません。\nセキュリティアラートが来てたので、たまにはアップデートしようかな？と、そんな気分になりました。\n7年ぶりに触るので、いろいろ環境が変わっていました。\nCIがtravisCI。travisのドメインが変わったとかで動かなくなっています。面倒臭いので、Github Actionsに移行しました。テスト実行するだけならテンプレート選んでポチポチするだけなので、簡単です。\nSourceLabというクロスブラウザテスト環境。何も覚えていないので消しました。合わせてzuulとかkarmaとかのブラウザ向けのテスト実行環境も消しました。karmaの古いバージョンにセキュリティアラートがでていたので目的は果たせました。\npower-assert。全然メンテナンスしない場合、アサーションエラーが詳しいことにうれしさがないことに気がつきました。\nES5。ソースコードもテストコードもES5だったので、ES6に書き換えました。\nnpm publish。Windows PC（のWSL）でnpm publishしたことが無かったので、publishしておきました。\n「久しぶりにラジオ体操したら、ラジオ体操しただけなのに体のあちこちが痛い」気分です。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/21/235148",
+          "publishedOn": "2022-02-21T14:51:48.000Z",
+          "wordCount": null,
+          "title": "generate-google-calendar-linkのバージョンを上げました",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438065589616",
           "author": null,
           "description": "北海道の現役ハンターが異世界に放り込まれてみた ～エルフ嫁と巡る異世界狩猟ライフ～ 3巻 (マッグガーデンコミックスBeat'sシリーズ)\n\n作者:ジュピタースタジオ,カルトマ,夕薙\nマッグガーデン\nAmazon\n\n無事ゴブリンロードのスナイプに成功した主人公達は冒険者ランクがあがりました。早速、貴族から来た依頼でエルフ誘拐事件の犯人に近づけるのか？ストーリーの累計は犯人を求め旅をする「黄金の羊毛」です。\nレミントンM700の活躍シーン",
@@ -7244,15 +7259,6 @@
           "publishedOn": "2021-12-08T02:16:46.000Z",
           "wordCount": 542,
           "title": "『サッカーはプレイヤーのゲームだ。コーチのゲームではない。』"
-        },
-        {
-          "id": "https://note.com/kazumakawauchi/n/n80fbd31e779e",
-          "author": null,
-          "description": "自然が好きです。ただ、New Yorkの夜の街並みを思い出すと、これもまた異常な美しさを感じるのです。生きていると、全く意識していないタイミングで、大切なことに気が付くことがあります。これまで蓄積していた「点」が一本の「線」で繋がる瞬間は、意図せず訪れるのかもしれません。コントロールできないとも言えます。\n\n続きをみる",
-          "link": "https://note.com/kazumakawauchi/n/n80fbd31e779e",
-          "publishedOn": "2021-11-24T02:59:24.000Z",
-          "wordCount": 69,
-          "title": "サッカー観とトレーニングメソッドに共通する「多様性」の概念"
         }
       ]
     },
@@ -8049,6 +8055,16 @@
       "feedUrl": "https://note.com/sizes/rss",
       "siteUrl": "https://note.com/sizes",
       "articles": [
+        {
+          "id": "https://note.com/sizes/n/nfd923c403543",
+          "author": null,
+          "description": "•刺青や割礼、ピアッシングのような身体改造は、どの国のどの時代にもある。目的や文脈はさまざまだけれど、部族のイニシエーションとしてそれを行うばあい、もっぱらその部族への忠誠・帰属が意図として含まれる。消えないアザをこしらえて、ワタシはこの部族のこういう一員です、ということを体で示すのだ。\n「推し」を信仰するのも、明らかにその一種だよなとは思う。法被や団扇や缶バッジをゴージャスにまとって、身をやつすほどに心身と金銭を蕩尽したオタクがいちばんのファン。\n続きをみる",
+          "link": "https://note.com/sizes/n/nfd923c403543",
+          "publishedOn": "2022-02-21T14:06:32.000Z",
+          "wordCount": null,
+          "title": "エッセイ：自己犠牲",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/72751523/rectangle_large_type_2_c248b3fb7ef4fd51723df62d1d693695.png?width=800"
+        },
         {
           "id": "https://note.com/sizes/n/nd112dffca9e1",
           "author": null,
