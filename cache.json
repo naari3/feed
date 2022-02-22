@@ -3112,6 +3112,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438065938558",
+          "author": null,
+          "description": "現在は43インチの液晶モニタを奥行き70cmの机にモニタアームをつけて置いています。\n机の前端からモニタ面まで50cmありません。\nモニタとの距離を調整するために頭を前後するため、姿勢が悪くなります。\nモニタスタンドを机の後ろにおいて距離を90cm位にしたらどうなるのでしょうか？\nイメージはこういう奴です。\n\nYaheetech テレビスタンド TVスタンド 移動式 壁寄せ ハイタイプ 液晶テレビ台 TV台 13-42インチ VESA200x200mmまで 高さ調節可能 角度調整可能 低騒音キャスター付き (LCD/LED/OLED)対応 耐荷重20Kg 省スペース 軽量 日本語説明書付き ホーム 会議室 クラスルーム 業務用 家用 展示用 おしゃれ ブラック\n\nYaheetech\nAmazon\n\nモニタ*1の条件です。\n中心の高さ 114cm～147cm\nサイズ 43インチ\n重量 6.8kg\nVESA 200x200マウント\n机は昇降式でモニタの位置は上下します。\n\n武田コーポレーション ガス圧昇降式 デスク T9-GSD90BR\n\n武田コーポレーション(Takeda corporation)\nAmazon\n\n悩ましいのはモニタスタンドは机と一緒に昇降しないので、立って作業するのは諦めないと行けなさそうな点です。\n*1:JN-IPS4300TUHDR 4Kモニター 43型 UHDディスプレイ IPS系パネル HDMI2.0 HDCP2.2 HDR JAPANNEXT – JAPANNEXT 4K WQHDなど超解像度、ゲーミング、曲面など特殊液晶モニター",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/22/090834",
+          "publishedOn": "2022-02-22T00:08:34.000Z",
+          "wordCount": 120,
+          "title": "モニタスタンドを買うか考える",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/31FYwvmzi2L._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/31FYwvmzi2L._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438065868790",
           "author": null,
           "description": "github.com\n特に機能は追加してません。\nセキュリティアラートが来てたので、たまにはアップデートしようかな？と、そんな気分になりました。\n7年ぶりに触るので、いろいろ環境が変わっていました。\nCIがtravisCI。travisのドメインが変わったとかで動かなくなっています。面倒臭いので、Github Actionsに移行しました。テスト実行するだけならテンプレート選んでポチポチするだけなので、簡単です。\nSourceLabというクロスブラウザテスト環境。何も覚えていないので消しました。合わせてzuulとかkarmaとかのブラウザ向けのテスト実行環境も消しました。karmaの古いバージョンにセキュリティアラートがでていたので目的は果たせました。\npower-assert。全然メンテナンスしない場合、アサーションエラーが詳しいことにうれしさがないことに気がつきました。\nES5。ソースコードもテストコードもES5だったので、ES6に書き換えました。\nnpm publish。Windows PC（のWSL）でnpm publishしたことが無かったので、publishしておきました。\n「久しぶりにラジオ体操したら、ラジオ体操しただけなのに体のあちこちが痛い」気分です。",
