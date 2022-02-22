@@ -5375,7 +5375,23 @@
       "title": "t-wadaのブログ",
       "feedUrl": "https://t-wada.hatenablog.jp/rss",
       "siteUrl": "https://t-wada.hatenablog.jp/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/13574176438065956914",
+          "author": null,
+          "description": "2022年2月18日発売の Software Design 2022年3月号 にて、第2特集「そろそろはじめるテスト駆動開発」の第1章「自動テストとテスト駆動開発、その全体像」を執筆いたしました。第1章では、混同されることの多い自動テスト関係の概念を自動テスト、テストファースト、テスト駆動開発（TDD: Test-Driven Development）の3つの段階に分け、それぞれの効果や注意点を包括的に整理整頓しています。\n\nソフトウェアデザイン 2022年3月号\n\n作者:大竹 章裕,瀬戸口 聡,庄司 勝哉,光成 滋生,和田 卓人,櫛引 実秀,やまねひでき,渋川 よしき,高橋 信頼,サリチル酸,結城 浩,山川 正美,Tellusオウンドメディア「宙畑」編集部,松本 直人,清水 洋治,皆川 諒,中山 浩太郎,坂井 靖文,増田 泰,中島 雅弘,兼清 裕平,梶原 直人,寺西 祐樹,森若 和雄,伊藤 裕一,くつなりょうすけ,弁護士 坂田 晃祐,高橋 そのみ,杉山 貴章\n技術評論社\nAmazon\n\ngihyo.jp\ngihyo.jp\n第2特集\nそろそろはじめるテスト駆動開発\nJavaScriptでテストファーストに挑戦\n…… 和田 卓人（監修）\n\n第1章：保守しやすく変化に強いソフトウェアを支える柱\n自動テストとテスト駆動開発，その全体像\n…… 和田 卓人\n\n第2章：TDDのその前に\n自動テストの環境を構築しよう\n…… 櫛引 実秀\n\n第3章：レッド・グリーン・リファクタリングのリズムを体験\n実践！ テストファースト\n…… 櫛引 実秀\n私が書いた第1章ですが、ポイントは下記のものです\n自動テスト関係のプラクティスを 1.自動テスト 2.テストファースト 3.テスト駆動開発 の3段階に分ける\n3つそれぞれの効果や注意点を包括的にまとめる\nテスト駆動開発まで行かずとも、自動テストを行えば十…",
+          "link": "https://t-wada.hatenablog.jp/entry/automated-test-and-tdd-sd202203",
+          "publishedOn": "2022-02-22T07:22:10.000Z",
+          "wordCount": 462,
+          "title": "「自動テストとテスト駆動開発、その全体像」を執筆しました（Software Design 2022年3月号）",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51RYS6e8cqL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51RYS6e8cqL._SL500_.jpg"
+        }
+      ]
     },
     {
       "title": "とげのブログ",
