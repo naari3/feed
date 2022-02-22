@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-22T04:07:26.731Z</updated>
+    <updated>2022-02-22T05:05:14.740Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[3/12 (土) 開催!「6社合同SRE勉強会」のクックパッドのセッションを紹介します]]></title>
+        <id>hatenablog://entry/13574176438066015273</id>
+        <link href="https://techlife.cookpad.com/entry/2022/02/22/140204"/>
+        <updated>2022-02-22T05:02:04.000Z</updated>
+        <summary type="html"><![CDATA[6社合同SRE勉強会について
+クックパッド技術部 SRE チームの @eagletmt と @mozamimy が、以下の Connpass で告知・募集されている「6社合同SRE勉強会」に登壇します。
+https://line.connpass.com/event/236497/
+6社合同SRE勉強会は、IT 企業 6 社 (LINE/メルカリ/クックパッド/ディー・エヌ・エー/サイバーエージェント/リクルート) が合同で開催する、Site Reliability Engineering (SRE) 領域の勉強会です。各社が特徴的な事例を共有し、各セッションのAsk the Speakerでは違う会社の登壇者がモデレーター兼聞き手を務めて、知見共有＆深堀りを行なっていきます。
+多様なバックグラウンドを持つ各社の SRE が取り組んでいる課題について、技術的な面から組織的な面までを絡めた、魅力的な内容のセッションが盛りだくさんとなっています。
+以下、クックパッド SRE によるセッションの概要をご紹介します。現在、鋭意資料の準備中ですので、本番では細かい内容が変更になる可能性がありますがご容赦ください。
+Track B 13:30-14:15: 少人数でも運用できるインフラ作り
+技術部 SRE グループの鈴木 (id:eagletmt) です。このセッションではクックパッドにおけるインフラ構成の変遷を概観しつつ、その変遷の根底にあったマネージドサービス化やセルフサービス化について話そうと思っています。
+私がクックパッドに入社した2014年当時、社内の多くのエンジニアはレシピサービス (cookpad.com) の開発にかかわっており、モノリシックな Rails アプリケーションが Amazon EC2 上にデプロイされてレシピサービスが実現されていました。SRE *1 の仕…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[にわかに界隈でマーダーミステリーが流行り出している話]]></title>
         <id>hatenablog://entry/13574176438065959615</id>
