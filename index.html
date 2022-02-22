@@ -20,6 +20,110 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/customer_center" target="_blank" rel="noopener">こちらカスタマーセンター</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">深夜に音MAD作者達が人狼やった話</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/customer_center/n/n0dafe263252d" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>〜深夜3時　某Discordサーバーにて〜
+
+続きをみる</span>
+                  </div>
+                    <img src="https://assets.st-note.com/production/uploads/images/71549700/rectangle_large_type_2_1aa15868a93619dbb29fdf137b8ee7f9.png?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank" rel="noopener">@ledsun blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">変数topをoffsetTopとclientTopにわけるまで</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/02/22/230525" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>背景
+offsetTopとclientTopの使い分けについてです。
+両者の違いはoffsetTopがoffsetParentからの相対値で、clientTopはブラウザの左上からの相対位置です。
+offsetParentと言われても意味不明ですが、ここではposition: absoluteなHTML要素の一番近い先祖のposition: relativeな要素です。次のようなイメージです。
+
+  
+
+  
+
+
+
+
+
+一つ目のoffsetChildのoffsetTopは常に10pxです。
+clientTopは縦スクロールの位置によって変わります。
+offsetParentの左上がちょうど、ブラウザの左上と一致した時、offsetTopとclientTopは同じ値になります。
+課題
+上の例のoffsetChildにtop, leftを設定して良い感じの位置に表示するプログラムを書いています。
+今までHTML要素の位置を設定するために、offsetTopとしての値しか扱っていませんでした。
+変数名やプロパティ名もシンプルにtopとしていました。
+ここ最近、First Meaningful Paint の最適化に凝っています。
+First Meaningful Paint のためには、これから表示するdivが、ブラウザで表示されている領域の中にあるか外にあるかが重要です。
+ブラウザでdivが表示されているか判定する - @ledsun blog で、考えたようにこの判定にはclientTopを使います*1。
+ここで困ったのがtopという名前だとoffsetTopを意味しているのかclientTopを意味しているのかわからないことです。
+そして悩みはじめた時点では、offsetTopという既知の最高の名前があることを忘れていました。
+解決
+リファクタリングしながら3時間半考えて「いままでのtopが表しているのはoffsetTopだ」と天啓を得ました。
+あとは1時間くらいゴリゴリっと名前を変えるリファクタリングして回って、15分くらいclientTopを取るAPIを追加して、10分でclientTopを使った新機能*2を実装しました。
+2017年頃は、じっくり考えてから実装するスタイルでした。
+いまはリファクタリングしながら考えるスタイルに変わりました。
+「道がみつかるまで手を動かせなかった」から「手を動かせば道が見つかる」を経験的に学習したようです。
+しかも、リファクタリングした結果、読みやすいソースコードまで手に入るオマケ付きです。
+*1:記事中ではgetBoundingClientRectを使っていますが、実質同じ値です。
+*2:FMP全体でなく、ある要素を描画するかどうかの基準に使っている要素を別の要素に変える実装です。</span>
+                  </div>
+                    <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">モニタスタンドを買うか考える</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/02/22/090834" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>現在は43インチの液晶モニタを奥行き70cmの机にモニタアームをつけて置いています。
+机の前端からモニタ面まで50cmありません。
+モニタとの距離を調整するために頭を前後するため、姿勢が悪くなります。
+モニタスタンドを机の後ろにおいて距離を90cm位にしたらどうなるのでしょうか？
+イメージはこういう奴です。
+
+Yaheetech テレビスタンド TVスタンド 移動式 壁寄せ ハイタイプ 液晶テレビ台 TV台 13-42インチ VESA200x200mmまで 高さ調節可能 角度調整可能 低騒音キャスター付き (LCD/LED/OLED)対応 耐荷重20Kg 省スペース 軽量 日本語説明書付き ホーム 会議室 クラスルーム 業務用 家用 展示用 おしゃれ ブラック
+
+Yaheetech
+Amazon
+
+モニタ*1の条件です。
+中心の高さ 114cm～147cm
+サイズ 43インチ
+重量 6.8kg
+VESA 200x200マウント
+机は昇降式でモニタの位置は上下します。
+
+武田コーポレーション ガス圧昇降式 デスク T9-GSD90BR
+
+武田コーポレーション(Takeda corporation)
+Amazon
+
+悩ましいのはモニタスタンドは机と一緒に昇降しないので、立って作業するのは諦めないと行けなさそうな点です。
+*1:JN-IPS4300TUHDR 4Kモニター 43型 UHDディスプレイ IPS系パネル HDMI2.0 HDCP2.2 HDR JAPANNEXT – JAPANNEXT 4K WQHDなど超解像度、ゲーミング、曲面など特殊液晶モニター</span>
+                  </div>
+                    <img src="https://m.media-amazon.com/images/I/31FYwvmzi2L._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/hercelot" target="_blank" rel="noopener">Hercelot</a></h3>
           <section class="articles-per-source">
             <article>
@@ -325,47 +429,6 @@ SNSで超話題の陰キャ少年と陽キャ美少女の
 少し前に歩いていて見た啓蒙する看板</span>
                   </div>
                     <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20220222/20220222090137.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank" rel="noopener">@ledsun blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">モニタスタンドを買うか考える</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/02/22/090834" target="_blank" rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>現在は43インチの液晶モニタを奥行き70cmの机にモニタアームをつけて置いています。
-机の前端からモニタ面まで50cmありません。
-モニタとの距離を調整するために頭を前後するため、姿勢が悪くなります。
-モニタスタンドを机の後ろにおいて距離を90cm位にしたらどうなるのでしょうか？
-イメージはこういう奴です。
-
-Yaheetech テレビスタンド TVスタンド 移動式 壁寄せ ハイタイプ 液晶テレビ台 TV台 13-42インチ VESA200x200mmまで 高さ調節可能 角度調整可能 低騒音キャスター付き (LCD/LED/OLED)対応 耐荷重20Kg 省スペース 軽量 日本語説明書付き ホーム 会議室 クラスルーム 業務用 家用 展示用 おしゃれ ブラック
-
-Yaheetech
-Amazon
-
-モニタ*1の条件です。
-中心の高さ 114cm～147cm
-サイズ 43インチ
-重量 6.8kg
-VESA 200x200マウント
-机は昇降式でモニタの位置は上下します。
-
-武田コーポレーション ガス圧昇降式 デスク T9-GSD90BR
-
-武田コーポレーション(Takeda corporation)
-Amazon
-
-悩ましいのはモニタスタンドは机と一緒に昇降しないので、立って作業するのは諦めないと行けなさそうな点です。
-*1:JN-IPS4300TUHDR 4Kモニター 43型 UHDディスプレイ IPS系パネル HDMI2.0 HDCP2.2 HDR JAPANNEXT – JAPANNEXT 4K WQHDなど超解像度、ゲーミング、曲面など特殊液晶モニター</span>
-                  </div>
-                    <img src="https://m.media-amazon.com/images/I/31FYwvmzi2L._SL500_.jpg" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -21690,7 +21753,7 @@ DTMをやっている人なら、どの音源いけばいいんじゃー！
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-22T14:04:52.751Z">2022-02-22T14:04:52.751Z</time>
+    <time id="build-timestamp" datetime="2022-02-22T15:07:56.633Z">2022-02-22T15:07:56.633Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

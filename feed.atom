@@ -2,10 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-22T14:04:52.806Z</updated>
+    <updated>2022-02-22T15:07:56.714Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[深夜に音MAD作者達が人狼やった話]]></title>
+        <id>https://note.com/customer_center/n/n0dafe263252d</id>
+        <link href="https://note.com/customer_center/n/n0dafe263252d"/>
+        <updated>2022-02-22T15:00:48.000Z</updated>
+        <summary type="html"><![CDATA[〜深夜3時　某Discordサーバーにて〜
+
+続きをみる]]></summary>
+        <author>
+            <name>こちらカスタマーセンター</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[変数topをoffsetTopとclientTopにわけるまで]]></title>
+        <id>hatenablog://entry/13574176438066183665</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/02/22/230525"/>
+        <updated>2022-02-22T14:05:25.000Z</updated>
+        <summary type="html"><![CDATA[背景
+offsetTopとclientTopの使い分けについてです。
+両者の違いはoffsetTopがoffsetParentからの相対値で、clientTopはブラウザの左上からの相対位置です。
+offsetParentと言われても意味不明ですが、ここではposition: absoluteなHTML要素の一番近い先祖のposition: relativeな要素です。次のようなイメージです。
+<div id="offsetParent" style="position: absolute; witdth: 100px; height: 100px">
+  <div class="offsetChild" style="position: relative; top: 10px; left: 10px; witdth: 100px; height: 100px"></div>
+  <div class="offsetChild" style="position: relative; top: 20px; left: 40px; witdth: 100px; height: 100px"></div>
+</div>
+
+
+
+一つ目のoffsetChildのoffsetTopは常に10pxです。
+clientTopは縦スクロールの位置によって変わります。
+offsetParentの左上がちょうど、ブラウザの左上と一致した時、offsetTopとclientTopは同じ値になります。
+課題
+上の例のoffsetChildにtop, leftを設定して良い感じの位置に表示するプログラムを書いています。
+今までHTML要素の位置を設定するために、offsetTopとしての値しか扱っていませんでした。
+変数名やプロパティ名もシンプルにtopとしていました。
+ここ最近、First Meaningful Paint の最適化に凝っています。
+First Meaningful Paint のためには、これから表示するdivが、ブラウザで表示されている領域の中にあるか外にあるかが重要です。
+ブラウザでdivが表示されているか判定する - @ledsun blog で、考えたようにこの判定にはclientTopを使います*1。
+ここで困ったのがtopという名前だとoffsetTopを意味しているのかclientTopを意味しているのかわからないことです。
+そして悩みはじめた時点では、offsetTopという既知の最高の名前があることを忘れていました。
+解決
+リファクタリングしながら3時間半考えて「いままでのtopが表しているのはoffsetTopだ」と天啓を得ました。
+あとは1時間くらいゴリゴリっと名前を変えるリファクタリングして回って、15分くらいclientTopを取るAPIを追加して、10分でclientTopを使った新機能*2を実装しました。
+2017年頃は、じっくり考えてから実装するスタイルでした。
+いまはリファクタリングしながら考えるスタイルに変わりました。
+「道がみつかるまで手を動かせなかった」から「手を動かせば道が見つかる」を経験的に学習したようです。
+しかも、リファクタリングした結果、読みやすいソースコードまで手に入るオマケ付きです。
+*1:記事中ではgetBoundingClientRectを使っていますが、実質同じ値です。
+*2:FMP全体でなく、ある要素を描画するかどうかの基準に使っている要素を別の要素に変える実装です。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記2/22]]></title>
         <id>https://note.com/hercelot/n/n09e6b6200ec0</id>

@@ -3570,6 +3570,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438066183665",
+          "author": null,
+          "description": "背景\noffsetTopとclientTopの使い分けについてです。\n両者の違いはoffsetTopがoffsetParentからの相対値で、clientTopはブラウザの左上からの相対位置です。\noffsetParentと言われても意味不明ですが、ここではposition: absoluteなHTML要素の一番近い先祖のposition: relativeな要素です。次のようなイメージです。\n<div id=\"offsetParent\" style=\"position: absolute; witdth: 100px; height: 100px\">\n  <div class=\"offsetChild\" style=\"position: relative; top: 10px; left: 10px; witdth: 100px; height: 100px\"></div>\n  <div class=\"offsetChild\" style=\"position: relative; top: 20px; left: 40px; witdth: 100px; height: 100px\"></div>\n</div>\n\n\n\n一つ目のoffsetChildのoffsetTopは常に10pxです。\nclientTopは縦スクロールの位置によって変わります。\noffsetParentの左上がちょうど、ブラウザの左上と一致した時、offsetTopとclientTopは同じ値になります。\n課題\n上の例のoffsetChildにtop, leftを設定して良い感じの位置に表示するプログラムを書いています。\n今までHTML要素の位置を設定するために、offsetTopとしての値しか扱っていませんでした。\n変数名やプロパティ名もシンプルにtopとしていました。\nここ最近、First Meaningful Paint の最適化に凝っています。\nFirst Meaningful Paint のためには、これから表示するdivが、ブラウザで表示されている領域の中にあるか外にあるかが重要です。\nブラウザでdivが表示されているか判定する - @ledsun blog で、考えたようにこの判定にはclientTopを使います*1。\nここで困ったのがtopという名前だとoffsetTopを意味しているのかclientTopを意味しているのかわからないことです。\nそして悩みはじめた時点では、offsetTopという既知の最高の名前があることを忘れていました。\n解決\nリファクタリングしながら3時間半考えて「いままでのtopが表しているのはoffsetTopだ」と天啓を得ました。\nあとは1時間くらいゴリゴリっと名前を変えるリファクタリングして回って、15分くらいclientTopを取るAPIを追加して、10分でclientTopを使った新機能*2を実装しました。\n2017年頃は、じっくり考えてから実装するスタイルでした。\nいまはリファクタリングしながら考えるスタイルに変わりました。\n「道がみつかるまで手を動かせなかった」から「手を動かせば道が見つかる」を経験的に学習したようです。\nしかも、リファクタリングした結果、読みやすいソースコードまで手に入るオマケ付きです。\n*1:記事中ではgetBoundingClientRectを使っていますが、実質同じ値です。\n*2:FMP全体でなく、ある要素を描画するかどうかの基準に使っている要素を別の要素に変える実装です。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/02/22/230525",
+          "publishedOn": "2022-02-22T14:05:25.000Z",
+          "wordCount": 162,
+          "title": "変数topをoffsetTopとclientTopにわけるまで",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438065938558",
           "author": null,
           "description": "現在は43インチの液晶モニタを奥行き70cmの机にモニタアームをつけて置いています。\n机の前端からモニタ面まで50cmありません。\nモニタとの距離を調整するために頭を前後するため、姿勢が悪くなります。\nモニタスタンドを机の後ろにおいて距離を90cm位にしたらどうなるのでしょうか？\nイメージはこういう奴です。\n\nYaheetech テレビスタンド TVスタンド 移動式 壁寄せ ハイタイプ 液晶テレビ台 TV台 13-42インチ VESA200x200mmまで 高さ調節可能 角度調整可能 低騒音キャスター付き (LCD/LED/OLED)対応 耐荷重20Kg 省スペース 軽量 日本語説明書付き ホーム 会議室 クラスルーム 業務用 家用 展示用 おしゃれ ブラック\n\nYaheetech\nAmazon\n\nモニタ*1の条件です。\n中心の高さ 114cm～147cm\nサイズ 43インチ\n重量 6.8kg\nVESA 200x200マウント\n机は昇降式でモニタの位置は上下します。\n\n武田コーポレーション ガス圧昇降式 デスク T9-GSD90BR\n\n武田コーポレーション(Takeda corporation)\nAmazon\n\n悩ましいのはモニタスタンドは机と一緒に昇降しないので、立って作業するのは諦めないと行けなさそうな点です。\n*1:JN-IPS4300TUHDR 4Kモニター 43型 UHDディスプレイ IPS系パネル HDMI2.0 HDCP2.2 HDR JAPANNEXT – JAPANNEXT 4K WQHDなど超解像度、ゲーミング、曲面など特殊液晶モニター",
@@ -6459,6 +6474,16 @@
       "feedUrl": "https://note.com/customer_center/rss",
       "siteUrl": "https://note.com/customer_center",
       "articles": [
+        {
+          "id": "https://note.com/customer_center/n/n0dafe263252d",
+          "author": null,
+          "description": "〜深夜3時　某Discordサーバーにて〜\n\n続きをみる",
+          "link": "https://note.com/customer_center/n/n0dafe263252d",
+          "publishedOn": "2022-02-22T15:00:48.000Z",
+          "wordCount": 49,
+          "title": "深夜に音MAD作者達が人狼やった話",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/71549700/rectangle_large_type_2_1aa15868a93619dbb29fdf137b8ee7f9.png?width=800"
+        },
         {
           "id": "https://note.com/customer_center/n/nc439d46fa797",
           "author": null,
