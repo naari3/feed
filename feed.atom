@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-24T14:11:21.222Z</updated>
+    <updated>2022-02-24T14:34:21.300Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -188,6 +188,16 @@ eval以外ならどれでも解消されました。
 続きをみる]]></summary>
         <author>
             <name>Theas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rustが遅すぎる？プロファイリングで性能向上！]]></title>
+        <id>https://medium.com/p/7f6033c5b6ab</id>
+        <link href="https://medium.com/nttlabs/profiling-rust-applications-jp-7f6033c5b6ab?source=rss----74f667786e9f---4"/>
+        <updated>2022-02-23T23:16:37.000Z</updated>
+        <summary type="html"><![CDATA[Goと違って、各種プロファイリングツールが標準機能として提供されないRustでも解析してみました。]]></summary>
+        <author>
+            <name>FUJITA Tomonori</name>
         </author>
     </entry>
     <entry>
@@ -393,6 +403,16 @@ www.aozora.gr.jp
 　日記に添付する写真として度々出しているこの猫の写真ですが、これは昨年の8月くらいに夜を徹して朝までどこまで歩けるか、6時間くらい歩き続けたときのもの…深夜の国道で見かけた猫です。昼間にはほぼ猫を見ないような街でも、夜になると意外といるらしいということがそのときの発見だったな。広い車道とかを渡れるのは夜の間しかないわけで、そういう意味で猫にとって車道は川みたいなもの、「車道は川」という認識は小学校のころの自分が考えていたことと同じだったのでちょっと感動していた。車道は川で、住宅の集合は島だなと思っていたので。写真からも分かるように至近距離でじっと撮影しても逃げなかったので、怯えていたのか人馴れしていたのか…。この猫のいた町や、この猫はどうなったんだろうと思うことがあります。おやすみなさい。]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Profiling Rust applications]]></title>
+        <id>https://medium.com/p/9a9c956200ce</id>
+        <link href="https://medium.com/nttlabs/profiling-rust-applications-9a9c956200ce?source=rss----74f667786e9f---4"/>
+        <updated>2022-02-23T06:08:34.000Z</updated>
+        <summary type="html"><![CDATA[Profiling Rust, in comparison with Go, designed to support various built-in profilers.]]></summary>
+        <author>
+            <name>FUJITA Tomonori</name>
         </author>
     </entry>
     <entry>
@@ -2050,6 +2070,16 @@ RTA in JAPAN
 ■おたくのやどかり 公式 HPhttps://t.co/UPNsbqLbua#RTAinJapan #おたくのやどかり pic.tw…]]></summary>
         <author>
             <name>chomoshのブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[インターンレポート: RootlessコンテナのTCP/IP高速化]]></title>
+        <id>https://medium.com/p/29d0e908dda4</id>
+        <link href="https://medium.com/nttlabs/accelerating-rootless-container-network-29d0e908dda4?source=rss----74f667786e9f---4"/>
+        <updated>2022-02-16T08:23:25.000Z</updated>
+        <summary type="html"><![CDATA[はじめまして、インターン生の松本直樹と申します。 この記事では、私がNTT研究所におけるインターン「コンテナランタイムの実装と評価」のインターン期間中に取り組んだ「bypass4netns」について紹介させていただきます。]]></summary>
+        <author>
+            <name>松本直樹</name>
         </author>
     </entry>
     <entry>
@@ -4185,6 +4215,16 @@ Google Domains のメール転送を使っていたが、DNS は Cloudflare を�
 続きをみる]]></summary>
         <author>
             <name>疒</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[インターンレポート: コンテナランタイムの実装と評価]]></title>
+        <id>https://medium.com/p/77d0047ad06e</id>
+        <link href="https://medium.com/nttlabs/containerd-shim-in-rust-77d0047ad06e?source=rss----74f667786e9f---4"/>
+        <updated>2022-02-04T08:03:12.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。インターン生の富田祐永です。普段は情報系の研究室で超伝導量子コンピュータの研究をしています。]]></summary>
+        <author>
+            <name>Yuna Tomida</name>
         </author>
     </entry>
     <entry>
