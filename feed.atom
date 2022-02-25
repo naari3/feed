@@ -2,10 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-25T15:08:38.686Z</updated>
+    <updated>2022-02-25T15:16:58.641Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2月終わりに]]></title>
+        <id>hatenablog://entry/13574176438067163559</id>
+        <link href="https://baibukken.hatenablog.com/entry/2022/02/26/001411"/>
+        <updated>2022-02-25T15:14:11.000Z</updated>
+        <summary type="html"><![CDATA[君と2月終わり 将来の夢
+10年後の8月(2月ガン無視) また出会えるのを 信じて
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+どうも、買物件です。
+2月も終わりそうなんで今月をまとめます。
+ 
+ 
+卒論書き終わりました
+発表も論文の方もなんとか書き終わりました。気が狂いそう
+お疲れさまでした、ありがとうございました。
+正直かなり精神的に参ってた(本当に参ってる人よりは軽いと思います)んですけど、Discordとかで色々話してると色々気が晴れて集中することができました。単純な研究の物事についての感謝もそうなんですけど、精神的に色々支えてくれる友人が多くいて本当に助かってます。ありがとうございました。
+ 
+卒論書いてる途中ずっと見てた音MADについて
+気分転換で最近投稿された音MADを色々見てたんですけど、特に東方魔酢汚タグの動画を中心に見てました。
+
+マスオ幻葬 ~ Masuo-Fantasy
+
+マスオファンタジア
+ 
+ 
+ 
+ 
+マスオ幻葬の方はかなり見てました。
+そもそも少女幻葬の音MADがかなり好きで、歪みある人の少女哲学をずっと見ていた思い出があるんですよね。
+
+
+少女哲学　～ Yugami-Fantasy
+ 
+あとは最近投稿されたマン幻葬なんかもかなり良かったです。
+ 
+
+
+
+マン幻葬 ～ Mange-Fantasy
+ 
+これらのMADって最近ありがちなストーリー性を前面に押し出した音MADじゃなくて所謂古典派、音合わせを中心に据えた音MADなんですけど、自分が好きなMADってこういう2008~2013年辺りにあったような音合わせ中心のMADなんですよね。
+音MADを映像作品ではなく音楽作品として消化してる節もあるからなのかはよく分からないですけど、こういう音方面に極振りした音MADとかの方が好きです。
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+あとは
+特になんもないです。
+ 
+ 
+ 
+ 
+ 
+ 
+
+最近聞いた曲です。
+DJ Mad Dog久しぶりに曲出したな～って思ったらすっごいスローテンポなハードコアで最高でした。かなり古めなハードコアとテクノの間みたいでかなり良かったです。
+ 
+ 
+ 
+以上です。
+来月も頑張ります。]]></summary>
+        <author>
+            <name>思い出したら書きます</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[20220225]]></title>
         <id>https://note.com/dak/n/nc4ff870b6a50</id>
@@ -1182,6 +1257,17 @@ Amazon
 続きをみる]]></summary>
         <author>
             <name>aun6june</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rustでポインタから`Box<[T]>`を作る]]></title>
+        <id>https://KeenS.github.io/blog/2022/02/21/rustdepointakara_box_t__wotsukuru/</id>
+        <link href="https://KeenS.github.io/blog/2022/02/21/rustdepointakara_box_t__wotsukuru/"/>
+        <updated>2022-02-20T17:17:08.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。表題のとおりのことをやりたかったのですが、ピンポイントのAPIが見当らなかったのでやり方を書き留めます。
+2022-02-22: 末尾に追記しました]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
         </author>
     </entry>
     <entry>
@@ -3308,6 +3394,35 @@ Aメロ～Bメロ：努力パート
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[音声入力でメモを書けるウェブアプリを書いた、x-callbackを使ったアプリケーション連携]]></title>
+        <id>https://efcl.info/2022/02/10/voicod/</id>
+        <link href="https://efcl.info/2022/02/10/voicod/"/>
+        <updated>2022-02-10T14:13:00.000Z</updated>
+        <summary type="html"><![CDATA[voicodという音声入力でメモを書けるシンプルなウェブアプリケーションを書きました。
+音声入力でメモができるシンプルなアプリケーションを書きました。https://t.co/EHSKnNKNaL
+x-callbackを使ってショートカット.app 等と連携すれば、入力内容をNotionに保存したりできます。
+Note: SpeechRecognitionに対応したブラウザ(ChromeやSafari)が必要
+Source: https://t.co/NnzXVjlGnF pic.twitter.com/yzoA3VIzzl
+— azu (@azu_re) February 10, 2022
+ 
+
+SpeechRecognitionというウェブブラウザで音声認識をするAPIを使っているので、このAPIに対応しているブラウザが必要になります。
+具体的にはGoogle ChromeやSafariなど該当します(2022-02-10時点)が、Chromeが一番相性が良いと思います。
+使い方
+https://voicod.pages.dev/ を開く
+マイクの使用を許可する
+音声入力するとメモが記録される
+というシンプルなものです。
+入力した内容は自動的にlocalStorageに保存されるので、リロードしても前回の状態から再開できます。
+逆に前回の状態じゃなくて毎回初期状態から開始したい場合は https://voicod.pages.dev/?noSave へアクセスすると自動保存を無効化できます。
+このアプリケーションは音声入力してテキストのメモを書くというシンプルなアプリケーションですが、
+x-callback連携やChrome Apps(ショートカット)と組み合わせると入力内容を別のアプリケーションに渡すといった色々な使い方ができます。
+x-callbackを使ったアプリ…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[20220210]]></title>
         <id>https://note.com/dak/n/n207a15bd0ae9</id>
         <link href="https://note.com/dak/n/n207a15bd0ae9"/>
@@ -4136,6 +4251,33 @@ PKIって何？とか公開鍵認証って何？とかそういうことは説�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[jsprimerのES2022対応中、コントリビュート歓迎です]]></title>
+        <id>https://efcl.info/2022/02/06/jsprimer-es2022-working/</id>
+        <link href="https://efcl.info/2022/02/06/jsprimer-es2022-working/"/>
+        <updated>2022-02-06T05:47:00.000Z</updated>
+        <summary type="html"><![CDATA[ECMAScriptは、毎年6月ごろに新しいバージョンがスナップショットとしてリリースされます。
+次のバージョンであるECMAScript 2022は6月に公開される予定です。
+ECMAScriptの策定プロセスについては、JavaScript Primer - 迷わないための入門書(jsprimer)でも解説しています。
+ECMAScript · JavaScript Primer #jsprimer
+毎年これに合わせる形で、jsprimerのECMAScript 2022の対応作業をやっています。
+リポジトリ: asciidwango/js-primer: JavaScript Primer - 迷わないための入門書
+jsprimerはJavaScriptの入門書ですが、毎年のECMAScriptのアップデートに合わせて更新しています。
+JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch
+この記事は、ES2022対応の作業メモとオープンソースな書籍に対するContributorの募集記事です。
+ES2022の対応予定
+jsprimerでES2022の対応予定については、次のMeta Issueで管理しています。
+ECMAScript 2022対応 · Issue #1337 · asciidwango/js-primer
+ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の変更が入った感じがします。
+具体的には、次のProposalがES2022で入る予定です。
+Class
+
+
+tc39/proposal-private-methods: Private methods and getter/setters for ES6 clas…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2022-02-05]]></title>
         <id>hatenablog://entry/13574176438060410442</id>
         <link href="https://commits.hatenablog.com/entry/2022/02/06/100020"/>
@@ -4354,6 +4496,16 @@ Google Domains のメール転送を使っていたが、DNS は Cloudflare を�
 　濁音半濁音は思いついたら書きました、あとタイトルだけ知ってるものも多いのでメロディー知ら…]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[サイトの HTTP3 化と DNS HTTPS RR および Alt-Svc Header によるアドバタイズ]]></title>
+        <id>https://blog.jxck.io/entries/2022-02-05/http3.html</id>
+        <link href="https://blog.jxck.io/entries/2022-02-05/http3.html"/>
+        <updated>2022-02-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[本サイトを HTTP3 対応し、Alt-Svc ヘッダおよび DNS HTTPS Resource Record によってそれをアドバタイズする構成を適用した。色々ハマったので作業のログを記す。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
@@ -5881,6 +6033,61 @@ SOMAは、マスタリングに携わる人でない限りはあまり知られ�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[KindleのメモとハイライトをMarkdownにするJavaScriptライブラリを書いた]]></title>
+        <id>https://efcl.info/2022/01/29/kindle-highlight-to-markdown/</id>
+        <link href="https://efcl.info/2022/01/29/kindle-highlight-to-markdown/"/>
+        <updated>2022-01-29T05:54:00.000Z</updated>
+        <summary type="html"><![CDATA[Kindleでハイライトつけた内容はKindle: メモとハイライトで閲覧できます。
+このページの内容をMarkdownに変換してコピーするためのライブラリを書きました。
+azu/kindle-highlight-to-markdown: Convert Your Kindle highlight & Note to Markdown/JSON
+使い方
+コピーしたい本をKindle: メモとハイライトで開きます
+ブラウザの開発者ツールの"コンソール"を開きます
+
+
+Firefox: ウェブコンソール - 開発ツール | MDN
+Chrome: Console overview - Chrome Developers
+
+次のコードを実行するとクリップボードにコピーできます
+const { parsePage, toMarkdown } = await import('https://cdn.skypack.dev/kindle-highlight-to-markdown');
+const result = parsePage(window); // JSON Object
+const markdown = toMarkdown(result); // Markdown
+copy(markdown);
+
+
+ブックマークレット版: kindle-highlight-to-markdown
+ただのnpmに公開しているJavaScriptライブラリになっています。
+DOMの中身を見てJSONにして、それをMarkdownに変換してるだけです。
+仕様が変わると壊れると思うので、壊れてたらIssueかPRをください。
+azu/kindle-highlight-to-markdown: Convert Your Kindle highlight & Note to Markdown/JSON
+モバイル端末とかでKindle読んで、ハイライトを回収したいことがあったので書きました。
+macOSとかのPCならスクリーンショットベースでメモを取ったりしてることが多いです。
+スクリーンショットドリブンのメモアプリ mumemo を作った | Web Scratch
+メモ kindle:// protocol
+macOSではkindle:// というprotocolが予約されていて、次のパラメータで書籍の任意の場所を開けます。
+kindle://book?action=open&asin=${asinValue}&location=${locationNumber}
+
+
+このkindle://みたいな未知のProtocolはGitHub Markdownだとリンクになりません。(javascript:とかのXSSを防ぐための処置だと思います)
+そのため、次のようなCloudflare WorkerでProxyを書いて、https://xxx.workers.dev/book?action=open&asin=${asinValue}&location=${locationNumber} を kindle:// にリダイレクトしています。
+これで、GitHub Markdownなどkindle://がサニタイズされる場所からも、Kindleのページをリンクできます。
+const statusCode = 301
+
+async function handleRequest(request) {
+  const url = new URL(request.url)
+  const { pathname, search } = url;
+  const destinationURL = "kindle://" + pathname + search;
+  return Response.redirect(destinationURL, statusCode);
+}
+
+addEventListener("fetch", async event => {
+  event.respondWith(handleRequest(event.request))
+})]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2022-01-28]]></title>
         <id>hatenablog://entry/13574176438057585357</id>
         <link href="https://commits.hatenablog.com/entry/2022/01/29/100002"/>
@@ -5962,6 +6169,34 @@ Amazonでもエルゴラピード・リチウムがタイムセール中
 ちなみに、このエレクトロラッ…]]></summary>
         <author>
             <name>僕とネットショッピング</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Komesan: 指定したURLに関連するはてなブックマーク、Twitter、HackerNewsのコメントを表示する]]></title>
+        <id>https://efcl.info/2022/01/29/komesan/</id>
+        <link href="https://efcl.info/2022/01/29/komesan/"/>
+        <updated>2022-01-28T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Komesanというはてなブックマーク、Twitter、HackerNewsをまとめて表示するサイトを作りました。
+https://komesan.pages.dev/?url=https://pages.cloudflare.com
+HackerNewsはオプショナル: https://komesan.pages.dev/?url=https://pages.cloudflare.com&service=hackerNews
+ブックマークレットで実行する場合は、次のようなURLのブックマークを利用します。サイトの下部に同じものがおいてあります。
+javascript:void(window.open("https://komesan.pages.dev/?url="+encodeURIComponent(location.href)))
+
+
+自分用のツールでなので、iframe表示用の変な機能もありますが、READMEとか読んでください。
+はてなブックマークは、はてなブックマークのAPIを利用しています
+Twitterは、Twitter v2 APIの検索APIを利用しています
+HackerNewsは、AlgoliaのHackerNews APIを利用しています
+元のデータは、元サイトのAPIを使って取得しているだけです。
+作った理由
+同様の機能を持つサイトとして http://komepon.net がありますが、HTTPSに対応してなかったのが気になりました。
+あと、Remixを使って何か作ってみたくて、検索結果を表示するのは題材としてちょうど良さそうでした。
+Remix
+Komesanは、Cloudflare PagesとRemixを使って動いています。
+KomesanのやっていることはAPIの結果を加工して表示するという感じです。
+Remixの題材としてちょうど良…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -8191,6 +8426,33 @@ https://youtu.be/Pn6GCfkwPvE]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[GitHub Advisory DatabaseのRSSフィードを作った]]></title>
+        <id>https://efcl.info/2022/01/19/github-advisory-database-rss/</id>
+        <link href="https://efcl.info/2022/01/19/github-advisory-database-rss/"/>
+        <updated>2022-01-19T02:26:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub Advisory DatabaseのRSSフィードがなかったの作りました
+JSON FeedとAtomフィードを出力しています。
+基本的にはJSON Feedをメインにしてますが、SlackがJSON FeedをサポートしてなかったのでAtomを追加しました。
+RSS Feeds for GitHub Advisory Database
+GitHub Advisory Databaseは、脆弱性のデータベースでRubyとかGoとかnpmとかRustとか言語ごとの脆弱性が集まっています。また、GitHub自体がセキュリティアドバイザリーの仕組みを持っているので、外部の脆弱性データベースにないものとかもあります。
+About GitHub Security Advisories - GitHub Docs
+JavaScriptだとnpm auditとかはこのデータベースを参照したりしています。
+GitHub Advisory Database now powers npm audit | The GitHub Blog
+RSS Feeds for GitHub Advisory Databaseでは言語(エコシステム)ごとそれぞれフィードを作っています。
+また、OPMLフィードに対応してるRSSリーダならまとめて購読できます。(inoreaderなど)
+余談
+GraphQLでGitHub Advisory Databaseのデータを取得しているのですが、
+アドバイザリーをpublishした人を取る方法がよくわからなくてauthorが現在固定値になっています。
+この辺わかる人Pull Requestください！
+https://github.com/azu/github-advisory-database-rss/blob/030a7bf9ab3fcc864bd0705ad4afa1f0601d7cbd/src/generate-rss.ts#L57-L81
+仕組み的にはGitHub Actionsで毎日RSSファイルを出力しているだけです。
+azu/github-advisory-database-rss: GitHub Advisory Database RSS Feeds.
+現在GitHub Advisory Databaseにある言語は個別でフィードを出力していますが、言語が増えたらPull Requestください！]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>https://r7kamura.com/articles/2022-01-19-diary</id>
         <link href="https://r7kamura.com/articles/2022-01-19-diary"/>
@@ -8560,6 +8822,22 @@ IntelっておまえIntelのCPU入ってねえじゃん・・・。
 こんな感じで、つける方のヘルメットにインカムをつけかえて使います。上はシステムヘルメット、下はカーボンのフルフェイスです。フルフェイスは多少圧迫感があるので、高速道路に乗るときだけ使って、下道はシステムヘルメットにしています。]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JSer.info についてのアンケートを実施中です]]></title>
+        <id>https://efcl.info/2022/01/18/jser-info-survey/</id>
+        <link href="https://efcl.info/2022/01/18/jser-info-survey/"/>
+        <updated>2022-01-18T13:05:00.000Z</updated>
+        <summary type="html"><![CDATA[JSer.infoというJavaScriptの情報サイトを10年以上やっているのですが、2022-01-16 で11周年を迎えました。
+JSer.info 11周年: 目標は2025年までに交換可能にする、JSer.info アンケート - JSer.info
+リンク先の記事でも紹介しているのですが、JSer.infoについてのアンケートを実施中です。
+JSer.info 11周年アンケート
+https://forms.gle/Uzs3wgSrkUgYxWdr5
+5問ぐらいのアンケートなので、JSer.infoを見たことある人など是非答えてみてください！
+このアンケートの目的は、JSer.infoを2025年までに交換可能にするために、現状のJSer.infoがどう見られているかを把握する目的で実施しています。]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -11410,6 +11688,16 @@ Lambdaの実行時エラーをChatbotでSlackに通知するのが便利すぎ�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[画像最適化戦略 AVIF 編]]></title>
+        <id>https://blog.jxck.io/entries/2022-01-07/avif.html</id>
+        <link href="https://blog.jxck.io/entries/2022-01-07/avif.html"/>
+        <updated>2022-01-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[本サイトの PNG/JPEG で提供している画像については、よりサイズが小さくなりやすい AVIF 形式を提供し、対応ブラウザに配布するようにした。フォーマットを出し分けるため、画像の指定は <picture> 要素を用いて対応した。画像最適化シリーズ第 6 回目のエントリである。画像最適化戦略 PNG/JPEG 編画像最適化戦略 Picture 編画像最適化戦略 WebP 編画像最適化戦略 SVG/Font 編画像最適化戦略 Lazy Loading 編> 画像最適化戦略 AVIF 編]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[とうとう、モバイルSuicaもiPhone系から、Androidに移行しました。これで、本当にiOS使わなくなります。]]></title>
         <id>hatenablog://entry/13574176438049978263</id>
         <link href="https://katsumakazuyo.hatenablog.com/entry/2022/01/06/152103"/>
@@ -11697,6 +11985,16 @@ Netflixで『騙し絵の牙』を観た。まさかのクリーンヒット。�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[eBPFでDockerの--passwordで入力したパスワードを盗む]]></title>
+        <id>https://KeenS.github.io/blog/2022/01/04/ebpfdedockerno__passworddenyuuryokushitapasuwa_dowonusumu/</id>
+        <link href="https://KeenS.github.io/blog/2022/01/04/ebpfdedockerno__passworddenyuuryokushitapasuwa_dowonusumu/"/>
+        <updated>2022-01-03T16:47:31.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。以前の記事の続きで、 /proc を監視するのではなくeBPFで取得してみます。ついでにRustのコードをeBPFで動かせるライブラリのayaも使ってみます。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[【復旧済み】まれにはてなブログへの接続に失敗する障害が発生していました]]></title>
         <id>hatenablog://entry/13574176438049014120</id>
         <link href="https://staff.hatenablog.com/entry/2022/01/03/171916"/>
@@ -11786,6 +12084,16 @@ RTAGamersで行われた、アドベントカレンダー企画で記事*1を書
 *2:「抱負」で検索したら、大勢に公開した抱負は、その時点で満足して達成に向けた努力をしなくなるというものを見つけた。いまのオレじゃん。]]></summary>
         <author>
             <name>でっかいものクラブ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[よくあるベンチマークを調べたい]]></title>
+        <id>https://KeenS.github.io/blog/2022/01/03/yokuarubenchima_kuwoshirabetai/</id>
+        <link href="https://KeenS.github.io/blog/2022/01/03/yokuarubenchima_kuwoshirabetai/"/>
+        <updated>2022-01-02T17:35:58.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。よくある言語同士や言語実装同士の速さの比較に使われるベンチマークが実際にどんなところの性能を調べているのかを理解してないので軽く調べてみます。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
         </author>
     </entry>
     <entry>
@@ -11897,6 +12205,46 @@ tsd0313.github.io
 ピアノ練習動画を録画した。今日は木綿のハンカチーフ。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SVGのアニメーションのお勉強]]></title>
+        <id>https://KeenS.github.io/blog/2022/01/02/svgnoanime_shonnoobenkyou/</id>
+        <link href="https://KeenS.github.io/blog/2022/01/02/svgnoanime_shonnoobenkyou/"/>
+        <updated>2022-01-01T16:18:49.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。InkscapeとかでSVGをよく扱うので表現の幅を増やすためにSVGのアニメーションを触ってみます。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022年抱負]]></title>
+        <id>https://KeenS.github.io/blog/2022/01/01/2022nenhoufu/</id>
+        <link href="https://KeenS.github.io/blog/2022/01/01/2022nenhoufu/"/>
+        <updated>2022-01-01T14:02:55.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。2021注目していきたい技術、やっていきたいことを書いておく。 Axum Rustの新しいウェブアプリケーションフレームワーク。Toki]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ubuntuでamdgpuのドライバインストールに失敗したあとGPUが使えなくなったときの対処法]]></title>
+        <id>https://KeenS.github.io/blog/2022/01/01/ubuntudeamdgpunodoraibainsuto_runishippaishitaatogpugatsukaenakunattatokinotaishohou/</id>
+        <link href="https://KeenS.github.io/blog/2022/01/01/ubuntudeamdgpunodoraibainsuto_runishippaishitaatogpugatsukaenakunattatokinotaishohou/"/>
+        <updated>2022-01-01T13:18:41.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。このタイトルで正しく説明できてるか分かりませんが、ちょいちょい遭遇するのでメモ。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[文献管理をMendeleyからZoteroに移行した]]></title>
+        <id>https://KeenS.github.io/blog/2022/01/01/bunkenkanriwomendeleykarazoteroniikoushita/</id>
+        <link href="https://KeenS.github.io/blog/2022/01/01/bunkenkanriwomendeleykarazoteroniikoushita/"/>
+        <updated>2022-01-01T12:38:23.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。長年Mendeleyを使っていましたが、モバイル版のMendeleyのサポート終了などのイベントがあったのでZoteroに乗り換えました。そのお話。結構前にやったのでかなり記憶が怪しいので適当に参考にして下さい。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
         </author>
     </entry>
     <entry>
@@ -12229,6 +12577,56 @@ YOTY（ヤバいオブザイヤー）の季節がやって参りました。
 続きをみる]]></summary>
         <author>
             <name>sanmal</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021年振り返り]]></title>
+        <id>https://KeenS.github.io/blog/2021/12/31/2021nenfurikaeri/</id>
+        <link href="https://KeenS.github.io/blog/2021/12/31/2021nenfurikaeri/"/>
+        <updated>2021-12-31T09:21:50.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。まだ大掃除終わってないけどこれ書かないと一年が締まらないので筆を執ります。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[今年のオープンソース活動振り返り @ 2021]]></title>
+        <id>https://efcl.info/2021/12/31/open-source-in-2021/</id>
+        <link href="https://efcl.info/2021/12/31/open-source-in-2021/"/>
+        <updated>2021-12-31T05:22:00.000Z</updated>
+        <summary type="html"><![CDATA[2021年のオープンソース活動の振り返り記事です。
+今までの振り返りの一覧です。
+今年のオープンソース活動振り返り @ 2020 | Web Scratch
+今年のOSS活動振り返り @ 2019 | Web Scratch
+今年のOSS活動振り返り @ 2018 | Web Scratch
+今年のOSS活動振り返り @ 2017 | Web Scratch
+今年のOSS活動振り返り @ 2016 | Web Scratch
+今年のOSS活動振り返り @ 2015 | Web Scratch
+今年のOSS活動振り返り @ 2014 | Web Scratch
+2021年のGitHubのPublicなContributionsは8000~9000ぐらいを推移していました。
+
+Privateリポジトリも含めると大体1.5倍ぐらいなので、これは2020年と大体同じ比率なようです。
+データの取得には次のツールを使いました。
+GitHub Contributions Chart Generator
+Issue/PR
+PR: 302
+
+
+去年: 372
+
+Issue: 226
+
+
+去年: 379
+
+
+
+ちょっと減少傾向になってる。
+Contributions見ても、深い緑が少ないので、新規に何か作り込むケースが少なかったのが要因な気はする。
+作ったリポジトリ
+https://github.com/search?q=user%3Aazu+user%3Aefcl+user%3Ajser+user%3Aalmin+user%3Atextlint+user%3Atextlint-ja+user%3Atextlint-rule+user%3AJXA-userland+user%3Ajs-primer+user%3Aecmascript-daily+user%3Aasciidwango+user%…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -12988,6 +13386,16 @@ M-1グランプリの決勝の日、僕は京都にいた。
 Ruby 3.1のリリースイベントに参加していた。来年もRBS周りの開発頑張っていきたいですね。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021 年をふりかえる]]></title>
+        <id>https://blog.jxck.io/entries/2021-12-28/end-of-2021.html</id>
+        <link href="https://blog.jxck.io/entries/2021-12-28/end-of-2021.html"/>
+        <updated>2021-12-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[例年通り 2021 年を振り返る。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
@@ -13887,6 +14295,48 @@ Groupieでは画面を構成するコンポーネント（GroupieItem）が行�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Apple Silicon Macbook Proへの移行でやったこと @ 2021]]></title>
+        <id>https://efcl.info/2021/12/22/macbook-pro-14-m1/</id>
+        <link href="https://efcl.info/2021/12/22/macbook-pro-14-m1/"/>
+        <updated>2021-12-21T22:11:00.000Z</updated>
+        <summary type="html"><![CDATA[移行ツールを使うと余計なものが色々入ってしまうため、
+Intel Macbook ProからApple Silicon Macbook Proへと手動で移行した。
+移行元: Macbook Pro 13" Intel Core i7 32GB 2020
+移行先: Macbook Pro 14" Apple M1 Max 64 GB 2021
+最初にやっておくと便利なこと
+それぞれのmacでユニバーサルクリップボードを有効化
+
+
+ファイルとか文字列のやりとりが楽になる
+ユニバーサルクリップボードを使って Apple デバイス間でコピーアンドペーストする - Apple サポート (日本)
+適当に元macでファイルをコピー、新しいmacでペーストするだけでファイルコピーできる
+
+scpやrsyncでファイルを渡せるようにする
+# scpでパスフレーズの入力補助
+brew install hudochenkov/sshpass/sshpass
+
+
+SCPで元MacAから新しいMacBへファイルをコピー
+# 同じネットワークなら共有のところにある端末名が利用できる
+NEW_MAC="user@MacBookPro.local"
+# 新しいmacのパスワード(user)
+NEW_MAC_PASS="XXXX"
+# ファイルをネットワークでコピーして渡す
+sshpass -p "$NEW_MAC_PASS" scp -p ./Brewfile $NEW_MAC:~/Desktop
+
+
+
+大量のファイルをやるならブリッジしてrsync or ターゲットディスクモードを使う
+
+
+rsync -cahE --no-i-r --info=progress2
+Mac同士をThunderboltケーブルでつないでファイル共有、ニコイチで使う。｜Yoshiryu｜note
+ThunderboltでI…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[音MAD素材最高齢ランキング]]></title>
         <id>https://note.com/nototote/n/n58faa4199ab8</id>
         <link href="https://note.com/nototote/n/n58faa4199ab8"/>
@@ -14092,6 +14542,17 @@ UPDATE items SET Iteration = 'Iteration 11' WHERE Iteration = 'Iteration 10';
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[RustでDockerの--passwordで入力したパスワードを盗む]]></title>
+        <id>https://KeenS.github.io/blog/2021/12/20/rustdedockerno__passworddenyuuryokushitapasuwa_dowonusumu/</id>
+        <link href="https://KeenS.github.io/blog/2021/12/20/rustdedockerno__passworddenyuuryokushitapasuwa_dowonusumu/"/>
+        <updated>2021-12-20T14:19:28.000Z</updated>
+        <summary type="html"><![CDATA[このエントリはRust Advent Calendarの9日目の記事です。
+空いてる日を埋める担当のκeenです。9日目が空いてたので遡って記事を投稿します。RustというよりLinuxの知識を使った記事ですが。Docker CLIでログインするときに --password オプションを使うとパスワードが盗まれる可能性があるよという警告が出たことありませんか？あれを実際にやってみたいと思います。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[午前４時]]></title>
         <id>hatenablog://entry/13574176438044645833</id>
         <link href="https://chomosh.hatenablog.com/entry/2021/12/20/230409"/>
@@ -14259,6 +14720,30 @@ Amazon
 何か良い対策があれば教えてください。]]></summary>
         <author>
             <name>Robot Checkerboard</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[moldを使うとRustのビルドが速くなる]]></title>
+        <id>https://KeenS.github.io/blog/2021/12/20/moldwotsukautorustnobirudogahayakunaru/</id>
+        <link href="https://KeenS.github.io/blog/2021/12/20/moldwotsukautorustnobirudogahayakunaru/"/>
+        <updated>2021-12-19T17:53:43.000Z</updated>
+        <summary type="html"><![CDATA[このエントリはRust Advent Calendarの2日目の記事です。
+空いてる日を埋める担当のκeenです。2日目が空いてたので遡って記事を投稿します。
+最近v1.0.0がリリースされたリンカ、moldを使うとビルドが高速化するよというお話です。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rustのテストは2種類のオプションがある]]></title>
+        <id>https://KeenS.github.io/blog/2021/12/20/rustnotesutoha2shuruinoopushongaaru/</id>
+        <link href="https://KeenS.github.io/blog/2021/12/20/rustnotesutoha2shuruinoopushongaaru/"/>
+        <updated>2021-12-19T16:57:28.000Z</updated>
+        <summary type="html"><![CDATA[このエントリはRust Advent Calendarの1日目の記事です。
+空いてる日を埋める担当のκeenです。1日目が空いてたので遡って記事を投稿します。
+Rustでテストをするときに渡すオプションが2種類あるという話について。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
         </author>
     </entry>
     <entry>
@@ -16451,6 +16936,16 @@ Graham Potter: ‘My friends don’t care about the Premier League – about thi
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Web のセマンティクスにおける Push と Pull]]></title>
+        <id>https://blog.jxck.io/entries/2021-12-08/web-semantics-push-and-pull.html</id>
+        <link href="https://blog.jxck.io/entries/2021-12-08/web-semantics-push-and-pull.html"/>
+        <updated>2021-12-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[筆者は、 Web のセマンティクスに対する実装の方針として、大きく Push 型の実装 と Pull 型の実装 があると考えている。もっと言えば、それは実装方法という具体的な話よりも、開発者のセマンティクスに対する態度を表現することができる。この話は「Push よりも Pull が良い」などと簡単に切り分けられる話ではない。「自分は今 Push で実装しているのか、 Pull で実装しているのか」この観点を意識するかしないかによって、セマンティクスに対する視野が広くなり、その応用として、たとえば今自分が行っている実装が、将来の Web においてどのような互換性の問題を生じるかなどを想像できるようになるだろう。最近問題になる Ossification を、こうした視点の欠如の結果とみることもできる。(本エントリでの Ossification は、一般に言われている Protocol Ossification よりも、もう少し広義に捉えていることに注意)抽象的な話が続くため、なるべく具体例を交えて解説を試みる。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2021-12-07]]></title>
         <id>hatenablog://entry/13574176438040569821</id>
         <link href="https://diary.hatenablog.jp/entry/2021/12/07/233244"/>
@@ -17577,6 +18072,16 @@ https://www.metatft.com/units
 我々は「裁判を受ける権利」と言うのを持っているが、実際その裁判というものがどういう場所でどういう雰囲気で進むのか、というのを（ごくごく一部ではあるが）知ることが出来る良い機会だった。]]></summary>
         <author>
             <name>Robot Checkerboard</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[自作 Markdown プロセッサベースの blog.jxck.io v2 リリース]]></title>
+        <id>https://blog.jxck.io/entries/2021-11-30/blog-v2-release.html</id>
+        <link href="https://blog.jxck.io/entries/2021-11-30/blog-v2-release.html"/>
+        <updated>2021-11-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[本サイトは自作の Markdown ビルダを使っていたが、色々と気に食わない部分があったのでフルスクラッチで作り直し、それにともなってサイトの刷新を実施した。必要だった要件や、意思決定を作業ログとして記す。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
