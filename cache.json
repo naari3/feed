@@ -10062,6 +10062,973 @@
       ]
     },
     {
+      "title": "メルカリエンジニアリングブログ",
+      "feedUrl": "https://engineering.mercari.com/blog/feed.xml/",
+      "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
+      "articles": [
+        {
+          "id": "19754",
+          "author": null,
+          "description": "※この記事は、\"Blog Series of Introduction of Developer Productivity Engineering at Mercari\" の一環で書かれています。 著 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220225-cdb2b6deff/",
+          "publishedOn": "2022-02-25T15:01:45.000Z",
+          "wordCount": 918,
+          "title": "SRE伝道師としてMicroservices SRE チームが取り組んでいる事例",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2022/02/42bbf0ae--2022-02-25-14.53.39.png"
+        },
+        {
+          "id": "19651",
+          "author": null,
+          "description": "こんにちは! ソウゾウのSoftware Engineerの@ogataka50です。連載：メルカリShops 開発の裏側 Vol.2の9日目を担当させていただきます。 9日目はメルカリShopsを開発する中でのDesi […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220225-design-docs-by-mercari-shops/",
+          "publishedOn": "2022-02-25T10:00:55.000Z",
+          "wordCount": null,
+          "title": "メルカリShopsでのDesign Docs運用について",
+          "imageUrl": null
+        },
+        {
+          "id": "19688",
+          "author": null,
+          "description": "はじめに こんにちは、メルペイフロントエンドチームの @tokuda109 です。 この記事は、メルペイフロントエンドチームで取り組んでいるパフォーマンス改善について紹介するシリーズ記事の第3弾の記事で、ブラウザ上の N […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220224-bb58d70052/",
+          "publishedOn": "2022-02-25T10:00:27.000Z",
+          "wordCount": null,
+          "title": "Nuxt.jsの初期化処理について",
+          "imageUrl": null
+        },
+        {
+          "id": "19561",
+          "author": null,
+          "description": "こんにちは、メルカリMicroservices SREチームの mtokioka です。Embedded SREとしてマイクロサービスのチームに参加し、サービスの信頼性向上や自動化などの業務に従事しています。 メルカリで […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220218-cd149f6298/",
+          "publishedOn": "2022-02-24T10:30:49.000Z",
+          "wordCount": null,
+          "title": "Kubernetes HPA External Metrics の事例紹介",
+          "imageUrl": null
+        },
+        {
+          "id": "19670",
+          "author": null,
+          "description": "こんにちは。ソウゾウの Software Engineer の @wakanapo です。 連載：メルカリShops 開発の裏側 Vol.2の8日目を担当させていただきます。 この記事では Vertex AI Match […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220224-similar-search-using-matching-engine/",
+          "publishedOn": "2022-02-24T10:00:30.000Z",
+          "wordCount": null,
+          "title": "Vertex AI Matching Engineをつかった類似商品検索APIの開発",
+          "imageUrl": null
+        },
+        {
+          "id": "19391",
+          "author": null,
+          "description": "こんにちは。SouzohでEngineering Managerをやっている @naopr です。 連載：メルカリShops 開発の裏側 Vol.2の7日目を担当します。 はじめに Souzohを含むメルカリグループでは […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220222-souzoh-engineer-communication/",
+          "publishedOn": "2022-02-22T11:00:32.000Z",
+          "wordCount": null,
+          "title": "Souzoh エンジニアのオンラインコミュニケーション",
+          "imageUrl": null
+        },
+        {
+          "id": "19593",
+          "author": null,
+          "description": "こんにちは。ソウゾウ Software Engineer の @sou です。連載：メルカリShops 開発の裏側 Vol.2 の6日目を担当させていただきます。 この記事ではメルカリShops 注文システム反省会として […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220220-db66c76db7/",
+          "publishedOn": "2022-02-21T10:00:44.000Z",
+          "wordCount": null,
+          "title": "メルカリShops 注文システム反省会",
+          "imageUrl": null
+        },
+        {
+          "id": "19496",
+          "author": null,
+          "description": "はじめに はじめまして、@takashi-kun です。 自分が所属するチームでの連載企画 \"Blog Series of Introduction of Developer Productivity Engi […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220218-3c7faca4cc/",
+          "publishedOn": "2022-02-18T12:31:24.000Z",
+          "wordCount": null,
+          "title": "レガシーなシステムとの向き合い方",
+          "imageUrl": null
+        },
+        {
+          "id": "19482",
+          "author": null,
+          "description": "こんにちは。ソウゾウで Software Engineer をしている @sottar です。連載：メルカリShops 開発の裏側 Vol.2の 5 日目を担当させていただきます。 この記事ではメルカリShops におけ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220218-mercari-shops-automation/",
+          "publishedOn": "2022-02-18T10:00:22.000Z",
+          "wordCount": null,
+          "title": "メルカリ Shops の開発を支える Automation 化",
+          "imageUrl": null
+        },
+        {
+          "id": "19505",
+          "author": null,
+          "description": "※この記事は、\"Blog Series of Introduction of Developer Productivity Engineering at Mercari\"の一環で書かれています。 Au […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220217-d0d6aa21fe/",
+          "publishedOn": "2022-02-17T14:44:54.000Z",
+          "wordCount": null,
+          "title": "特殊な構成のMySQLに対するDDL適用の一例",
+          "imageUrl": null
+        },
+        {
+          "id": "19431",
+          "author": null,
+          "description": "2021年11月5日に、メルペイ・メルコインのエンジニアたちによる「Tech Talk 〜 ゼロトラストをベースとした安定的なシステム稼働の取り組み〜」を開催しました。 現在のメルペイサービスにおける認証・認可の仕組みや […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220217-11d92ef626/",
+          "publishedOn": "2022-02-17T09:36:04.000Z",
+          "wordCount": 297,
+          "title": "【書き起こし】メルペイチームが考える「ゼロトラスト」をベースとした認証・認可の在り方と課題 #merpay_techtalk",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2022/02/02efaca7-image4-1024x574-1.png"
+        },
+        {
+          "id": "19491",
+          "author": null,
+          "description": "※この記事は、\"Blog Series of Introduction of Developer Productivity Engineering at Mercari\" の一環で書かれています。 は […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220216-introduction-of-coresre/",
+          "publishedOn": "2022-02-16T19:05:01.000Z",
+          "wordCount": null,
+          "title": "Introduction of CoreSRE",
+          "imageUrl": null
+        },
+        {
+          "id": "19215",
+          "author": null,
+          "description": "2022年2月3日に、『Android Office Hours〜2022年の技術トレンド大予想！〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはYouTube上にある […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220216-cc6ac2d3c4/",
+          "publishedOn": "2022-02-16T17:30:14.000Z",
+          "wordCount": null,
+          "title": "Android Office Hours〜2022年の技術トレンド大予想！〜を開催しました！ #android_oh",
+          "imageUrl": null
+        },
+        {
+          "id": "19313",
+          "author": null,
+          "description": "こんにちは！ソウゾウの Software Engineer の @dragon3 です。連載：メルカリShops 開発の裏側 Vol.2 の4日目を担当させていただきます。 この記事では、メルカリShops において、C […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220216-mercari-shops-canary-deployment/",
+          "publishedOn": "2022-02-16T10:00:21.000Z",
+          "wordCount": null,
+          "title": "メルカリShops における Cloud Run service の Canary Deployment",
+          "imageUrl": null
+        },
+        {
+          "id": "19419",
+          "author": null,
+          "description": "2021年7月8日に、「Frontend Tech Talk 〜 Quality of Merpay Frontend 〜」 というイベントを開催しました。 本記事はその中でメルペイ フロントエンド エンジニアリングマネ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220214-2442ddf578/",
+          "publishedOn": "2022-02-14T11:15:52.000Z",
+          "wordCount": null,
+          "title": "【書き起こし】「お客さま体験の向上を目指して」品質向上に向けたメルペイフロントエンドチームの取り組み #mercari_frontend",
+          "imageUrl": null
+        },
+        {
+          "id": "19396",
+          "author": null,
+          "description": "この記事は @hatappi によって提供される Developer Productivity Engineering Camp blog series の１つです。 序論 私達 Microservices Networ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220210-how-istio-solved-our-problems/",
+          "publishedOn": "2022-02-10T16:36:26.000Z",
+          "wordCount": null,
+          "title": "Istio が解決する私達の問題",
+          "imageUrl": null
+        },
+        {
+          "id": "19343",
+          "author": null,
+          "description": "こんにちは、メルカリの検索チームで機械学習エンジニアとしてインターンをしていた塚越駿 ( @hpp_ricecake ) です。インターンでは、メルカリのログデータと言語モデルを用いて同義語辞書を自動構築するというタスク […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220210-eab9f5d823/",
+          "publishedOn": "2022-02-10T10:54:27.000Z",
+          "wordCount": null,
+          "title": "ログデータと言語モデルを用いた同義語辞書の自動構築",
+          "imageUrl": null
+        },
+        {
+          "id": "18885",
+          "author": null,
+          "description": "こんにちは。ソウゾウのSoftware Engineerの@napoliです。連載：メルカリShops 開発の裏側 Vol.2の3日目を担当させていただきます。 メルカリShopsはメルペイと連携し、メルペイによる決済シ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220209-a71b0c7c26/",
+          "publishedOn": "2022-02-10T10:00:57.000Z",
+          "wordCount": null,
+          "title": "メルカリShopsとメルペイはどうつながっているのか",
+          "imageUrl": null
+        },
+        {
+          "id": "19261",
+          "author": null,
+          "description": "このインタビューではメルペイのフロントエンド開発を支える @ryotah 、 @yutapon 、@tokuda109 、 @dwj の4人に今取り組んでいることや、技術スタック、今後の展望などを聞いています。メルペイの […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220209-7dbffabb5e/",
+          "publishedOn": "2022-02-09T16:58:34.000Z",
+          "wordCount": 252,
+          "title": "テスト・パフォーマンス・アクセシビリティ・セキュリティの4大品質に取り組むメルペイのフロントエンドチーム #TeamInterview",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2022/02/eb01699c-pay_frontend_interview.png"
+        },
+        {
+          "id": "19248",
+          "author": null,
+          "description": "はじめに こんにちは。ソウゾウでEngineering Managerをやっている@keigowです。連載：メルカリShops 開発の裏側 Vol.2の2日目を担当させていただきます。メルカリShopsをプレオープンした […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220208-a49d9da7ba/",
+          "publishedOn": "2022-02-09T10:00:38.000Z",
+          "wordCount": null,
+          "title": "ソウゾウのエンジニア採用と課題",
+          "imageUrl": null
+        },
+        {
+          "id": "19136",
+          "author": null,
+          "description": "こんにちは。ソウゾウのSoftware Engineer(CTO)の@suguruです。連載：メルカリShops 開発の裏側 Vol.2の1日目を担当させていただきます。 去年、2021年に開始した メルカリShopsの […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220207-mercari-shops-tech-stack-next/",
+          "publishedOn": "2022-02-08T10:00:40.000Z",
+          "wordCount": null,
+          "title": "メルカリShops の技術スタック、その後",
+          "imageUrl": null
+        },
+        {
+          "id": "19096",
+          "author": null,
+          "description": "※この記事は、\"Blog Series of Introduction of Developer Productivity Engineering at Mercari\" の一環で書かれています。 は […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220207-8ff8aad53e/",
+          "publishedOn": "2022-02-08T09:00:50.000Z",
+          "wordCount": null,
+          "title": "検索の応答性能を維持するための Benchmarking Automation",
+          "imageUrl": null
+        },
+        {
+          "id": "18872",
+          "author": null,
+          "description": "こんにちは！ソウゾウのSoftware Engineerの@napoliです。「メルカリShops」は昨年に7月21日にプレオープンし、それから約半年が経ちました。前回は「連載：メルカリShopsプレオープンまでの開発の […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220207-mercari-shops-behind-the-scenes-vol-2/",
+          "publishedOn": "2022-02-07T13:00:21.000Z",
+          "wordCount": null,
+          "title": "連載：メルカリShops 開発の裏側 Vol.2",
+          "imageUrl": null
+        },
+        {
+          "id": "19163",
+          "author": null,
+          "description": "※この記事は、\"Blog Series of Introduction of Developer Productivity Engineering at Mercariの一環で書かれています。 はじめに こんに […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220207-776318b784/",
+          "publishedOn": "2022-02-07T11:59:19.000Z",
+          "wordCount": null,
+          "title": "メルカリの検索基盤の変遷について",
+          "imageUrl": null
+        },
+        {
+          "id": "16717",
+          "author": null,
+          "description": "2021年12月7日に、『Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社のCI/CD事情〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはY […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220129-368d0842e6/",
+          "publishedOn": "2022-02-07T10:00:38.000Z",
+          "wordCount": null,
+          "title": "Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社のCI/CD事情〜 を開催しました！ #kubernetes_casualtalk",
+          "imageUrl": null
+        },
+        {
+          "id": "18926",
+          "author": null,
+          "description": "昨年末に、BASE社、hey社、ソウゾウ社合同で【CTO登壇】BASE・hey・ソウゾウが描く「ECの未来と実現する組織の今」というイベントを開催しました。この記事では、当日の内容を簡単に紹介します！ イベント概要 EC […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220201-b1a5cad617/",
+          "publishedOn": "2022-02-01T15:45:28.000Z",
+          "wordCount": null,
+          "title": "【CTO登壇】BASE・hey・ソウゾウが描く「ECの未来と実現する組織の今」を開催しました",
+          "imageUrl": null
+        },
+        {
+          "id": "18854",
+          "author": null,
+          "description": "2022年1月12日には、メルペイのQAエンジニアによる「merpay QA Talk 〜メルペイQAのリアル vol. 3〜」を開催しました。 フルリモート環境において選考を受けて入社をしたメンバーの、リアルな働き方を […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220129-0c05bd3742/",
+          "publishedOn": "2022-01-31T13:00:40.000Z",
+          "wordCount": null,
+          "title": "フルリモート環境で入社をしたメルペイQAのリアル #merpay_qatalk",
+          "imageUrl": null
+        },
+        {
+          "id": "18812",
+          "author": null,
+          "description": "はじめに こんにちは、メルペイフロントエンドチームの @tokuda109 です。 この記事は、メルペイフロントエンドチームで取り組んでいるパフォーマンス改善について紹介するシリーズ記事の第2弾の記事で、JavaScri […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220128-3a0922eaa4/",
+          "publishedOn": "2022-01-31T10:00:36.000Z",
+          "wordCount": null,
+          "title": "JavaScriptがブラウザでどのように動くのか",
+          "imageUrl": null
+        },
+        {
+          "id": "17421",
+          "author": null,
+          "description": "2021年12月14日に、『Merpay Tech Talk 〜事業成長を支えるArchitectチームの取り組み〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはYou […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220128-f4ccd3af66/",
+          "publishedOn": "2022-01-31T10:00:32.000Z",
+          "wordCount": null,
+          "title": "Merpay Tech Talk 〜事業成長を支えるArchitectチームの取り組み〜 を開催しました！ #merpay_techtalk",
+          "imageUrl": null
+        },
+        {
+          "id": "18318",
+          "author": null,
+          "description": "はじめまして。メルペイのQA Engineer(以降QAE)チームのtakamaです。 本記事では、QAチーム内で発生した技術的負債にどう立ち向かい、どのような結果が得られたかについて紹介します。 「QAチームって開発す […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220118-dfa7943248/",
+          "publishedOn": "2022-01-28T11:00:31.000Z",
+          "wordCount": null,
+          "title": "QA Engineer2年生がQA的技術的負債と立ち向かった話",
+          "imageUrl": null
+        },
+        {
+          "id": "18715",
+          "author": null,
+          "description": "はじめに こんにちは、mercari.go スタッフの @otter です。 1月20日にメルカリ主催のGo勉強会 mercari.go #18 をオンライン配信にて開催しました。 この記事では、当日の各発表を簡単に紹介 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220125-mercarigo-18/",
+          "publishedOn": "2022-01-25T11:03:59.000Z",
+          "wordCount": null,
+          "title": "mercari.go #18 を開催しました #mercarigo",
+          "imageUrl": null
+        },
+        {
+          "id": "18662",
+          "author": null,
+          "description": "本投稿は DPE Camp blog series の一部です。 こんにちは。 Platform Infra の Kenichi Sasaki (@siroken3) です。メルカリでは主にAWSの管理を業務にしています […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220124-automation-of-terraform-for-aws/",
+          "publishedOn": "2022-01-24T19:00:14.000Z",
+          "wordCount": null,
+          "title": "Automation of Terraform for AWS",
+          "imageUrl": null
+        },
+        {
+          "id": "18430",
+          "author": null,
+          "description": "メルカリグループでは複数のアプリやサービスを提供していますが、そのベースに決済基盤があります。それを提供するのがメルペイです。QRコードを使った決済などを提供するメルペイのバックエンドエンジニア達に、これまでの経験や開発 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220121-9e083be116/",
+          "publishedOn": "2022-01-21T15:35:44.000Z",
+          "wordCount": null,
+          "title": "高い堅牢性と可用性を支えるメルペイコード決済チームの取り組みと工夫 #TeamInterview",
+          "imageUrl": null
+        },
+        {
+          "id": "18499",
+          "author": null,
+          "description": "2021年11月11日に、プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 というイベントを開催しました。 この記事はその中で行われたパネルディスカッション「メルカリプロダクト開発体制本音トーク」の書き起 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220120-f9acd23e86/",
+          "publishedOn": "2022-01-20T10:41:00.000Z",
+          "wordCount": null,
+          "title": "【書き起こし】プロダクト開発体制を一挙公開 – メルカリプロダクト開発体制本音トーク",
+          "imageUrl": null
+        },
+        {
+          "id": "18481",
+          "author": null,
+          "description": "2021年11月11日に、プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 というイベントを開催しました。 この記事はその中のセッションの1つ、「Cross-functional team in Merc […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220120-97ab1e892c/",
+          "publishedOn": "2022-01-20T10:40:43.000Z",
+          "wordCount": null,
+          "title": "【書き起こし】プロダクト開発体制を一挙公開 – Cross-functional team in Mercari",
+          "imageUrl": null
+        },
+        {
+          "id": "18463",
+          "author": null,
+          "description": "2021年11月11日に、プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 というイベントを開催しました。 この記事はその中のセッションの1つ、「全員ソフトウェアエンジニアとは？」の書き起こしです。 詳し […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220120-59f3333936/",
+          "publishedOn": "2022-01-20T10:40:28.000Z",
+          "wordCount": null,
+          "title": "【書き起こし】プロダクト開発体制を一挙公開 – 全員ソフトウェアエンジニアとは？",
+          "imageUrl": null
+        },
+        {
+          "id": "18445",
+          "author": null,
+          "description": "2021年11月11日に、プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 というイベントを開催しました。 この記事はその中のセッションの1つ、「メルカリのプロダクト開発体制」の書き起こしです。 詳しくは […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220120-2fd1a3e4ba/",
+          "publishedOn": "2022-01-20T10:40:15.000Z",
+          "wordCount": null,
+          "title": "【書き起こし】プロダクト開発体制を一挙公開 – メルカリのプロダクト開発体制",
+          "imageUrl": null
+        },
+        {
+          "id": "18346",
+          "author": null,
+          "description": "2021年12月15日に、『Mercari ML&Search Talk #1 ~Personalization~』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくは […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220118-04d00608f8/",
+          "publishedOn": "2022-01-18T17:10:42.000Z",
+          "wordCount": null,
+          "title": "Mercari ML&#038;Search Talk #1 ~Personalization~ を開催しました #mercari_ai",
+          "imageUrl": null
+        },
+        {
+          "id": "18274",
+          "author": null,
+          "description": "Author: @urahiroshi, Engineering manager of Web Platform team The mission of Web Platform team Web Platform te […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220118-introduction-of-web-platform/",
+          "publishedOn": "2022-01-18T14:21:32.000Z",
+          "wordCount": null,
+          "title": "Introduction of Web Platform",
+          "imageUrl": null
+        },
+        {
+          "id": "18271",
+          "author": null,
+          "description": "はじめに こんにちは、メルペイフロントエンドチームの @tokuda109 です。 メルペイフロントエンドチームは、テスト・アクセシビリティ・パフォーマンス・セキュリティを4つの重要な品質指標として日々改善しています。  […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220118-e040ab3dd3/",
+          "publishedOn": "2022-01-18T10:43:16.000Z",
+          "wordCount": null,
+          "title": "メルペイフロントエンドチームで行っているパフォーマンス改善の取り組み紹介",
+          "imageUrl": null
+        },
+        {
+          "id": "17440",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2021の22日目の記事です。こんにちは、Merpay SREチームの@raviです。 DBaaSでは、さまざまなユーザー要件を満たすためにあらゆるcloudから […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211222-kubernetes-based-spanner-autoscaler/",
+          "publishedOn": "2022-01-18T09:10:57.000Z",
+          "wordCount": null,
+          "title": "KubernetesベースのCloud Spanner Autoscaler",
+          "imageUrl": null
+        },
+        {
+          "id": "18129",
+          "author": null,
+          "description": "2021年9月28日に開催したサイボウズとメルペイのコラボイベント「QA Talk 〜現場のチームの作り方。QAチーム設立21年目サイボウズ x 3年目メルペイ〜」の続編として、情報交換会をサイボウズの東京オフィスにて実 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211223-955ad69af1/",
+          "publishedOn": "2022-01-06T09:30:21.000Z",
+          "wordCount": null,
+          "title": "OKRの運用や教育、今後のキャリア…他社のQAはどうしてる？#cybozu_merpay",
+          "imageUrl": null
+        },
+        {
+          "id": "18243",
+          "author": null,
+          "description": "メルペイCTOの曾川 景介とメルペイアーキテクトエンジニアの伊藤 雄貴が対談。その時の様子をお届けします！ メルペイCTO x アーキテクトエンジニア対談 1/3 〜注目の技術〜 メルペイCTO x アーキテクトエンジニ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211229-6e71d4bb16/",
+          "publishedOn": "2021-12-30T08:31:42.000Z",
+          "wordCount": null,
+          "title": "メルペイCTO x アーキテクトエンジニア対談 3/3 〜メルコインのアーキテクトについて〜",
+          "imageUrl": null
+        },
+        {
+          "id": "18236",
+          "author": null,
+          "description": "メルペイCTOの曾川 景介とメルペイアーキテクトエンジニアの伊藤 雄貴が対談。その時の様子をお届けします！ メルペイCTO x アーキテクトエンジニア対談 1/3 〜注目の技術〜 メルペイCTO x アーキテクトエンジニ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211229-3607c1eb8a/",
+          "publishedOn": "2021-12-30T08:30:00.000Z",
+          "wordCount": null,
+          "title": "メルペイCTO x アーキテクトエンジニア対談 2/3 〜伊藤のキャリアとメルペイアーキテクトチームについて〜",
+          "imageUrl": null
+        },
+        {
+          "id": "18212",
+          "author": null,
+          "description": "メルペイCTOの曾川 景介とメルペイアーキテクトエンジニアの伊藤 雄貴が対談。その時の様子をお届けします！ メルペイCTO x アーキテクトエンジニア対談 1/3 〜注目の技術〜 メルペイCTO x アーキテクトエンジニ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211229-13dd8b3e18/",
+          "publishedOn": "2021-12-29T18:49:53.000Z",
+          "wordCount": null,
+          "title": "メルペイCTO x アーキテクトエンジニア対談 1/3 〜注目の技術〜",
+          "imageUrl": null
+        },
+        {
+          "id": "17572",
+          "author": null,
+          "description": "5~8人のBackendチーム編成を目指そう こんにちは。メルペイ Backendチーム Manager of Managersの @godricです。 この記事は、Merpay Advent Calendar 2021 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211225-size-backend-team-to-5-to-8-members/",
+          "publishedOn": "2021-12-25T11:00:02.000Z",
+          "wordCount": null,
+          "title": "5~8人のBackendチーム編成を目指そう",
+          "imageUrl": null
+        },
+        {
+          "id": "18182",
+          "author": null,
+          "description": "2021年も残りわずかとなりました。メルカリのエンジニアリング組織の1年間を振り返るとさまざまなできごとに遭遇したり、新たな取り組みにも挑戦しました。 本編に入る前に、過去記事でも何度か取り上げた大きな動きを紹介しておく […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211224-look-back-2021/",
+          "publishedOn": "2021-12-25T11:00:01.000Z",
+          "wordCount": null,
+          "title": "メルカリCTO/VP/Directorsがふりかえる2021年 ~パーソナライゼーション強化、グループ横断でのインシデント対応、D&#038;I推進 ~",
+          "imageUrl": null
+        },
+        {
+          "id": "17794",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2021 最終日の記事です。 こんにちは。メルペイProduct EngineeringチームでVP of Engineeringを担当しているnozaqです。  […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211221-advent-calendar-12-25/",
+          "publishedOn": "2021-12-25T10:00:51.000Z",
+          "wordCount": null,
+          "title": "Fintechサービス開発を10倍楽しむ読書習慣",
+          "imageUrl": null
+        },
+        {
+          "id": "17698",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2021の24日目の記事です。 こんにちは、メルペイQAエンジニアのEnnです。 今回は、メルペイQAチームで取り組んでいる「不具合データの可視化と分析」について […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211222-6d545e2c99/",
+          "publishedOn": "2021-12-24T12:00:15.000Z",
+          "wordCount": 185,
+          "title": "不具合データの可視化と分析",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/e48cea6a-advent-calendar2021.png"
+        },
+        {
+          "id": "17804",
+          "author": null,
+          "description": "こんにちは。Merpay Advent Calendar 2021の24日目はメルペイQAチームでエンジニアリングマネージャーをしている miisan が「メルペイQAチームにおける自動化のイマ」についてQAチームを代表 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211224-merpay-qa-for-automation-test/",
+          "publishedOn": "2021-12-24T09:00:01.000Z",
+          "wordCount": null,
+          "title": "メルペイQAチームにおける自動化のイマ",
+          "imageUrl": null
+        },
+        {
+          "id": "18078",
+          "author": null,
+          "description": "こんにちは！ Advanced TechnologyチームのPramendraです。 Advanced Technologyチームは、世界中のビジネスおよびテクノロジーの動向を調査しています。 今回、皆さんに再び新しいレ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211213-b652bc2850/",
+          "publishedOn": "2021-12-23T14:58:15.000Z",
+          "wordCount": null,
+          "title": "🪙 eコマースにおけるNFTの将来性",
+          "imageUrl": null
+        },
+        {
+          "id": "17898",
+          "author": null,
+          "description": "マイクロサービスにおけるリコンサイルの話 この記事はMerpay Advent Calendar 2021 の23日目の記事です。メルペイPayment Platformチームの @foghost がお送りします。 本記 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211222-1df9e3a553/",
+          "publishedOn": "2021-12-23T09:30:19.000Z",
+          "wordCount": null,
+          "title": "マイクロサービスにおけるリコンサイルの話",
+          "imageUrl": null
+        },
+        {
+          "id": "17820",
+          "author": null,
+          "description": "この記事は、Mercari Advent Calendar 2021 の22日目の記事です。 こんにちは、メルカリ EdgeAIチームの@tkatoです。私たちのチームでは、クライアントサイドでの機械学習応用について、ア […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211222-mercari-lens/",
+          "publishedOn": "2021-12-22T12:00:11.000Z",
+          "wordCount": 234,
+          "title": "メルカリレンズβ WebAssembly × AIのプロダクト開発",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/9fb0bf5f-ogp.png"
+        },
+        {
+          "id": "17747",
+          "author": null,
+          "description": "Mercari advent calender の21日目を担当します@sanposhihoです。現在大学の学部4回生で、メルカリでは内定者インターンとして、メルカリのホーム画面などのバックエンドを担当するチームに所属し […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211220-create-your-kube-scheduler/",
+          "publishedOn": "2021-12-21T17:00:18.000Z",
+          "wordCount": 2528,
+          "title": "自作して学ぶKubernetes Scheduler",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/703fcc11-scheduling-framework-extensions.png"
+        },
+        {
+          "id": "17780",
+          "author": null,
+          "description": "お客さまがアプリを開いたときに最初に目にするメルカリのホーム画面には数多くの情報が掲載されています。商品情報はもちろん、おすすめのキャンペーン情報など、お客さまそれぞれにパーソナライズされたコンテンツも必要です。 そんな […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211221-mercari-personalization-core-interview/",
+          "publishedOn": "2021-12-21T13:24:48.000Z",
+          "wordCount": null,
+          "title": "アプリの入り口となるホーム画面開発を支えるメルカリのPersonalization Coreチーム #TeamInterview",
+          "imageUrl": null
+        },
+        {
+          "id": "17666",
+          "author": null,
+          "description": "Credit Designチームでバックエンドエンジニアをしている@iwataです。主にメルペイスマート払い関連の開発をしています。 Merpay Advent Calendar 2021 の21日目の記事をお届けします […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211221-transactional-outbox/",
+          "publishedOn": "2021-12-21T10:00:51.000Z",
+          "wordCount": 541,
+          "title": "Cloud SpannerとCloud Pub/Subとで実装するTransactional outboxパターン",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/222620ff-letter-box-scaled.jpg"
+        },
+        {
+          "id": "16824",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2021 の21日目の記事です。 はじめに こんにちは。メルペイのFrontendエンジニアのtoshickです。 メルペイフロントエンドチームではパフォーマンス […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211217-856683a917/",
+          "publishedOn": "2021-12-21T09:00:29.000Z",
+          "wordCount": null,
+          "title": "WebFrontendローカルパフォーマンス改善支援ツールを作ってみた。",
+          "imageUrl": null
+        },
+        {
+          "id": "17652",
+          "author": null,
+          "description": "こんにちは。メルカリにてSoftware Engineerをしている@kuu 🍣です。 この記事は、Mercari Advent Calendar 2021 の20日目の記事です。 はじめに 　私は所属しているメルカリJ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211217-a51c7f16d2/",
+          "publishedOn": "2021-12-20T10:00:27.000Z",
+          "wordCount": null,
+          "title": "M1 Macとビルド時間とそれからメルカリAndroidアプリ",
+          "imageUrl": null
+        },
+        {
+          "id": "17638",
+          "author": null,
+          "description": "はじめに メルペイバックエンドエンジニアの @r_yamaoka です。 Merpay Advent Calendar 2021 の19日目の記事をお届けします。 私は普段メルペイ加盟店さまの管理を担うマイクロサービス群 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211217-163d5c4e4e/",
+          "publishedOn": "2021-12-19T12:00:58.000Z",
+          "wordCount": null,
+          "title": "事業者情報台帳サービスにイベントパブリッシングを導入した話",
+          "imageUrl": null
+        },
+        {
+          "id": "16573",
+          "author": null,
+          "description": "こんにちは。メルカリのNotification teamでソフトウェアエンジニアをしている@naruseです。 この記事は、Mercari Advent Calendar 2021 の19日目の記事です。 はじめに 　私 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211216-09550a386d/",
+          "publishedOn": "2021-12-19T10:00:10.000Z",
+          "wordCount": null,
+          "title": "PubSub/Redisを用いたGoによるスケーラブルなworkerの構築と運用",
+          "imageUrl": null
+        },
+        {
+          "id": "17157",
+          "author": null,
+          "description": "こんにちは。メルペイのMachine Learningチームの@hiroです。Merpay Advent Calendar 2021 の18日目の記事をお届けします。 機械学習の社会的重要性の高まり 近年、機械学習という […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211217-3286689d87/",
+          "publishedOn": "2021-12-18T12:00:55.000Z",
+          "wordCount": null,
+          "title": "公平性に配慮した機械学習",
+          "imageUrl": null
+        },
+        {
+          "id": "17628",
+          "author": null,
+          "description": "こんにちは。メルカリのSoftware Engineerのsotaです。 この記事は、Mercari Advent Calendar 2021 の18日目の記事です。 先日限定公開が始まったmerworkのWebフロント […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211217-418551f715/",
+          "publishedOn": "2021-12-18T11:00:30.000Z",
+          "wordCount": null,
+          "title": "XState + Apollo Clientでフロントエンドのステート管理",
+          "imageUrl": null
+        },
+        {
+          "id": "17613",
+          "author": null,
+          "description": "2021年11月11日に、「プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 」 というイベントを開催しました。 この記事では当日いただいた質問の中で時間の関係上お答えすることができなかったものに対して、 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211217-bb39ce99f1/",
+          "publishedOn": "2021-12-17T11:03:17.000Z",
+          "wordCount": null,
+          "title": "プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜  当日いただいた質問への回答まとめ",
+          "imageUrl": null
+        },
+        {
+          "id": "16821",
+          "author": null,
+          "description": "この記事は、Mercari Advent Calendar 2021 の17日目の記事になります。 　こんにちは。メルカリのバックエンドのチームでインターンをしている@torichanです。私は、2020年の8月から1 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-intern-migration/",
+          "publishedOn": "2021-12-17T10:00:14.000Z",
+          "wordCount": null,
+          "title": "インターンがメルカリのマイクロサービスマイグレーションを経験する",
+          "imageUrl": null
+        },
+        {
+          "id": "17223",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2021 の17日目の記事です。 こんにちは。メルペイ Payment Platform所属の rossy です。 はじめに この記事を読んでる方は転職で新しい環 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-51f2df9357/",
+          "publishedOn": "2021-12-17T09:30:56.000Z",
+          "wordCount": 249,
+          "title": "新しいチームに入ってから立ち上がりの極意",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/c3554f9b-rossy_gikui_preview.png"
+        },
+        {
+          "id": "17424",
+          "author": null,
+          "description": "2021年9月28日に開催したサイボウズとメルペイのコラボイベント「QA Talk 〜現場のチームの作り方。QAチーム設立21年目サイボウズ x 3年目メルペイ〜」の続編として、情報交換会をサイボウズ社の東京オフィスにて […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-8e20e5a371/",
+          "publishedOn": "2021-12-16T13:00:50.000Z",
+          "wordCount": null,
+          "title": "QAチーム設立21年目のサイボウズ×3年目のメルペイに聞くQAエンジニアの役割とは？#cybozu_merpay",
+          "imageUrl": null
+        },
+        {
+          "id": "17556",
+          "author": null,
+          "description": "こんにちは。メルカリEngineering Officeの@lestrratです。 この記事は、Mercari Advent Calendar 2021 の16日目の記事です。 今回は直接技術には関連しませんが、メルカリ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-e622702f69/",
+          "publishedOn": "2021-12-16T11:00:06.000Z",
+          "wordCount": null,
+          "title": "メルカリのオープンソースプロジェクト協賛活動",
+          "imageUrl": null
+        },
+        {
+          "id": "17522",
+          "author": null,
+          "description": "2021年10月28日に、「多様な働き方を実現するエンジニアの実態〜メルカリ・エンジニア組織の大解剖〜」というイベントを開催しました。 この記事はその中のセッションの1つ、「パネルディスカッション – エンジ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-panel-various-working-style/",
+          "publishedOn": "2021-12-16T10:11:07.000Z",
+          "wordCount": 308,
+          "title": "【書き起こし】多様な働き方を実現するエンジニアの実態 &#8211; パネルディスカッション: エンジニアのさまざまな働き方 &#8211;",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/34863169-image11.jpg"
+        },
+        {
+          "id": "17509",
+          "author": null,
+          "description": "2021年10月28日に、「多様な働き方を実現するエンジニアの実態〜メルカリ・エンジニア組織の大解剖〜」 というイベントを開催しました。 この記事はその中のセッションの1つ、「パネルディスカッション – フル […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-panel-em-work/",
+          "publishedOn": "2021-12-16T10:10:46.000Z",
+          "wordCount": null,
+          "title": "【書き起こし】多様な働き方を実現するエンジニアの実態 &#8211; パネルディスカッション: フルリモートでのEMの仕事 &#8211;",
+          "imageUrl": null
+        },
+        {
+          "id": "17480",
+          "author": null,
+          "description": "2021年10月28日に、「多様な働き方を実現するエンジニアの実態〜メルカリ・エンジニア組織の大解剖〜」 というイベントを開催しました。 この記事はその中のセッションの1つ、「数字で見るエンジニアのリモートワーク」の書き […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-engineer-remotework/",
+          "publishedOn": "2021-12-16T10:10:20.000Z",
+          "wordCount": null,
+          "title": "【書き起こし】多様な働き方を実現するエンジニアの実態 &#8211; 数字で見るエンジニアのリモートワーク",
+          "imageUrl": null
+        },
+        {
+          "id": "17303",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2021の16日目の記事です。 こんにちは、メルペイSREチームのfoostanです。普段はキーボードのことばかり話していますが、本業ではSREチームの一員として […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-practical_alerting_methods_based_on_customer_impact/",
+          "publishedOn": "2021-12-16T09:00:30.000Z",
+          "wordCount": 470,
+          "title": "お客さま影響に基づく実践的なアラート方法",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/e48cea6a-advent-calendar2021.png"
+        },
+        {
+          "id": "16843",
+          "author": null,
+          "description": "Merpay Advent Calendar 2021 の 15 日目は 2 本立てで、2 本目の記事をメルペイ Growth Platform Team のバックエンドエンジニアの ksoichiro がお送りします。 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-operation-tool-dashboard/",
+          "publishedOn": "2021-12-15T09:00:44.000Z",
+          "wordCount": 453,
+          "title": "Growthのオペレーションツールの歩み 〜ダッシュボード編〜",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/11/e48cea6a-advent-calendar2021.png"
+        },
+        {
+          "id": "16909",
+          "author": null,
+          "description": "Merpay Advent Calendar 2021 の 15 日目は 2 本立てで、1 本目の記事をメルペイ Growth Platform Team のバックエンドエンジニアの@naoinaがお送りします。 2本目 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211215-operation-tool-coupon/",
+          "publishedOn": "2021-12-15T09:00:41.000Z",
+          "wordCount": null,
+          "title": "Growthのオペレーションツールの歩み 〜クーポン編〜",
+          "imageUrl": null
+        },
+        {
+          "id": "16704",
+          "author": null,
+          "description": "はじめに こんにちは、メルカリでQAエンジニアをやっている @tettan （河野）です。この記事は、Mercari Advent Calendar 2021 の14日目の記事です。 先日、Merwork（メルワーク）と […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211214-how-to-do-qa-for-merwork/",
+          "publishedOn": "2021-12-14T12:14:07.000Z",
+          "wordCount": null,
+          "title": "How to do QA for Merwork",
+          "imageUrl": null
+        },
+        {
+          "id": "17172",
+          "author": null,
+          "description": "メルペイでの運用環境とオブザーバビリティ この記事は、Merpay Advent Calendar の14日目の記事です。 こんにちは。メルペイのSettelementチームで開発を担当するバックエンドエンジニアの @s […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211213-e228df121f/",
+          "publishedOn": "2021-12-14T12:00:49.000Z",
+          "wordCount": null,
+          "title": "メルペイでの運用環境とオブザーバビリティ",
+          "imageUrl": null
+        },
+        {
+          "id": "16624",
+          "author": null,
+          "description": "メルカリ Engineering Office チームの@yuki.tです。 私たちのチームでは、「全てのエンジニアに最高の従業員体験を」というミッションを元に、様々な活動を行なっています。私はその中でも、エンジニアの評 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211213-4b77715a44/",
+          "publishedOn": "2021-12-13T15:44:44.000Z",
+          "wordCount": null,
+          "title": "メルカリで築くエンジニアキャリア",
+          "imageUrl": null
+        },
+        {
+          "id": "17046",
+          "author": null,
+          "description": "こんにちは。この記事は、Merpay Advent Calendar 2021 の13日目の記事です。メルペイのSREチームに所属している@yuharaです。 組織ではコンプライアンスの遵守が必要不可欠です。ソフトウェア […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211213-8f5f5a5aee/",
+          "publishedOn": "2021-12-13T11:00:17.000Z",
+          "wordCount": 400,
+          "title": "GitHubリポジトリにおけるレビュープロセスの統制",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/a6fe90fc-screenshot-2021-12-13-2.30.16-1024x376-1.png"
+        },
+        {
+          "id": "16929",
+          "author": null,
+          "description": "はじめまして、メルペイのiOSチームでEngineering Managerをしている玉城です。この記事は、 Merpay Advent Calendar 2021 の11日目の記事です。 はじめに メルカリアプリでは2 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211210-b5d0a7dc9c/",
+          "publishedOn": "2021-12-11T12:00:49.000Z",
+          "wordCount": null,
+          "title": "メルカリ・メルペイで行ったリリースサイクルのアップデート",
+          "imageUrl": null
+        },
+        {
+          "id": "16712",
+          "author": null,
+          "description": "こんにちは。Product Security チームの @gloriaです。 この記事は、Mercari Advent Calendar 2021 の10日目の記事です。 ———&#8 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211210-how-is-security-testing-different-from-typical-software-testing/",
+          "publishedOn": "2021-12-10T10:00:28.000Z",
+          "wordCount": null,
+          "title": "セキュリティ・テストは一般的なソフトウェア・テストとどう違うのか？",
+          "imageUrl": null
+        },
+        {
+          "id": "16790",
+          "author": null,
+          "description": "この記事は、 Merpay Advent Calendar 2021 の10日目の記事です。 本記事は、1週間リリースを支えるAndroid自動テスト運用についてメルペイ Androidチームの@amane, @kenk […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211210-merpay-android-test-automation/",
+          "publishedOn": "2021-12-10T09:00:06.000Z",
+          "wordCount": 225,
+          "title": "1週間リリースを支えるAndroid自動テスト運用",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/9bfe9a01-screen-shot-2021-12-07-at-8.49.48-1024x510-1.png"
+        },
+        {
+          "id": "16849",
+          "author": null,
+          "description": "こんにちは。メルカリのweb platformチームの@urahiroshiです。 この記事は、Mercari Advent Calendar 2021 の9日目の記事です。 今回は、メルカリWeb版のアプリケーションの […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211209-a41d2dcfd3/",
+          "publishedOn": "2021-12-09T16:07:09.000Z",
+          "wordCount": 323,
+          "title": "メルカリWeb版のPull Request環境の構築方法について",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/83c15efe-prenv_cicd.drawio.png"
+        },
+        {
+          "id": "16737",
+          "author": null,
+          "description": "2021年11月25日に、『merpay Tech Talk 〜 2000万MAUを支える決済基盤の現状と未来〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはYouTu […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211209-f359c9f121/",
+          "publishedOn": "2021-12-09T15:16:35.000Z",
+          "wordCount": null,
+          "title": "merpay Tech Talk 〜 2000万MAUを支える決済基盤の現状と未来〜 を開催しました！ #merpay_techtalk",
+          "imageUrl": null
+        },
+        {
+          "id": "16452",
+          "author": null,
+          "description": "Merpay Advent Calendar 2021 の9日目は、メルペイ Credit Design チームの @fivestar がお送りします。 今回のテーマである Engineering Counterpart […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211211-engineering-counterpart/",
+          "publishedOn": "2021-12-09T09:30:52.000Z",
+          "wordCount": null,
+          "title": "Engineering Counterpartとしての取り組み",
+          "imageUrl": null
+        },
+        {
+          "id": "16669",
+          "author": null,
+          "description": "※この記事は、Mercari Advent Calendar 2021 の8日目の記事です。 こんにちは。メルカリのEngineering Officeの@afroscriptです。 メルカリでは2019年9月から、およ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211207-3b8d96d447/",
+          "publishedOn": "2021-12-08T11:50:43.000Z",
+          "wordCount": null,
+          "title": "Mercari HACK WEEKのつくり方",
+          "imageUrl": null
+        },
+        {
+          "id": "16497",
+          "author": null,
+          "description": "Merpay Advent Calendar 2021 の 8 日目はメルペイフロントエンドチーム の @tanakaworld がお送りします。 はじめに メルペイは金融サービスであり、品質の維持・向上に日々取り組んで […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211208-test-automation-policy-in-merpay-frontend/",
+          "publishedOn": "2021-12-08T09:00:42.000Z",
+          "wordCount": 669,
+          "title": "メルペイフロントエンドのテスト自動化方針",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/8a447512-merpay-advent-calendar-2021-tanakaworld-2021_12_08-materials-2-copy.jpg"
+        },
+        {
+          "id": "16579",
+          "author": null,
+          "description": "Advent Calendar day 7 担当の vvakame です。 予告では Apollo Federation Gateway Node.js実装についてポイント解説 としていましたが、社内各所のご協力によりA […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211207-removing-sensitive-data-from-github/",
+          "publishedOn": "2021-12-07T10:00:18.000Z",
+          "wordCount": 415,
+          "title": "GitHub上のsensitive dataを削除するための手順と道のり",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/7d7bca7a-image1.png"
+        },
+        {
+          "id": "16551",
+          "author": null,
+          "description": "誰向けの記事？ EM（Engineering Manager）の方に向けた記事です。 ただ、一般的な評価者全般にあてはまる内容を書いているので、評価を行う方なら誰でも参考にできると思います。 評価をする側ではないけど、ど […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211206-15c9c9dc16/",
+          "publishedOn": "2021-12-06T15:20:50.000Z",
+          "wordCount": null,
+          "title": "評価の満足度を劇的にあげた秘訣。Continuous Feedbackのすすめ",
+          "imageUrl": null
+        },
+        {
+          "id": "16416",
+          "author": null,
+          "description": "この記事は、 Merpay Advent Calendar 2021 6日目の記事です。 はじめに こんにちは。メルペイ Architect の @goccy です。 この記事では、日々実行しているマイクロサービス間の結 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211206-5aa2ac7efc/",
+          "publishedOn": "2021-12-06T09:30:47.000Z",
+          "wordCount": 702,
+          "title": "テスト時間を短くするための分散テスト実行",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/6ae22d58-144171059-12f9978f-0623-455c-8660-5ae84ea62c80.png"
+        },
+        {
+          "id": "16516",
+          "author": null,
+          "description": "こんにちは。メルカリでSoftware Engineerをやっているakkie30です。 この記事は、Mercari Advent Calendar 2021 の5日目の記事です。 私のチームでは半年ほど前からGoのOR […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211205-44a97f0e1c/",
+          "publishedOn": "2021-12-05T19:00:20.000Z",
+          "wordCount": null,
+          "title": "entを使った省エネバックエンド開発",
+          "imageUrl": null
+        },
+        {
+          "id": "16403",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2021 の 5 日目の記事です。 @1000ch です。最近はメルペイのエンジニアリング部門にて、Android・iOS・Web を含むクライアントエンジニアリ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211205-merpay-client-engineering/",
+          "publishedOn": "2021-12-05T12:00:42.000Z",
+          "wordCount": null,
+          "title": "メルペイのクライアントエンジニアリングの話",
+          "imageUrl": null
+        },
+        {
+          "id": "16100",
+          "author": null,
+          "description": "はじめに メルペイ ML Platformチームの@ysk24okです。この記事は、 Merpay Advent Calendar の4日目の記事です。 本記事では自チームにモブプログラミングを導入し、チーム一丸となって […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211130-52e6d96087/",
+          "publishedOn": "2021-12-04T09:30:10.000Z",
+          "wordCount": null,
+          "title": "モブプログラミングを導入し、チーム一丸となってタスクに取り組むようになった話",
+          "imageUrl": null
+        },
+        {
+          "id": "16250",
+          "author": null,
+          "description": "Merpay Advent Calendar 2021の3日目はGrowth Platform Teamのバックエンドエンジニアの @yukinasu がお送りします。 Growth Platform Teamはキャンペ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211203-campaign-filtering-system/",
+          "publishedOn": "2021-12-03T07:00:49.000Z",
+          "wordCount": null,
+          "title": "メルペイのキャンペーンを支えるフィルタリング機能",
+          "imageUrl": null
+        },
+        {
+          "id": "16440",
+          "author": null,
+          "description": "こんにちは、新卒採用チームのAoiです。 2021年夏に開催され総勢27名に参加いただいた「Build@Mercari 2021」および「Mercari Summer Internship 2021」の成果報告会を9月に […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211202-8418dee13b/",
+          "publishedOn": "2021-12-02T16:17:20.000Z",
+          "wordCount": null,
+          "title": "Build&amp;サマーインターン2021 成果発表会レポート",
+          "imageUrl": null
+        },
+        {
+          "id": "15997",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2021 の2日目の記事です。 こんにちは。メルペイのBackendエンジニアの 柴田 です。 はじめに この記事は昨年書いた開発用ノートPCを活用して長時間ラン […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211202-running-tests/",
+          "publishedOn": "2021-12-02T07:00:36.000Z",
+          "wordCount": null,
+          "title": "（続）長時間ランニングテストの勧め 〜開発用ノートPCの活用〜",
+          "imageUrl": null
+        },
+        {
+          "id": "16350",
+          "author": null,
+          "description": "こんにちはこんにちは。 Merpay Advent Calendar の1日目を、メルペイ VPoE の @hidek がお届けします。 はじめに 今年もあっという間で、12月に入り残りわずかとなり、Advent Cal […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211130-c8bd6dd7cd/",
+          "publishedOn": "2021-12-01T09:30:58.000Z",
+          "wordCount": null,
+          "title": "メルペイ VPoE による2021年の振り返り",
+          "imageUrl": null
+        },
+        {
+          "id": "15882",
+          "author": null,
+          "description": "2021年10月7日に、『Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社の開発における工夫〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくは […]",
+          "link": "https://engineering.mercari.com/blog/entry/20211125-1f0c397b0a/",
+          "publishedOn": "2021-11-29T10:00:01.000Z",
+          "wordCount": null,
+          "title": "Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社の開発における工夫〜 を開催しました！ #kubernetes_casualtalk",
+          "imageUrl": null
+        }
+      ]
+    },
+    {
       "title": "κeenのHappy Hacκing Blog",
       "feedUrl": "https://keens.github.io/index.xml",
       "siteUrl": "https://KeenS.github.io/",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-25T16:10:45.503Z</updated>
+    <updated>2022-02-25T16:53:10.695Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -82,6 +82,16 @@ DJ Mad Dog久しぶりに曲出したな～って思ったらすっごいスロ�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[SRE伝道師としてMicroservices SRE チームが取り組んでいる事例]]></title>
+        <id>19754</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220225-cdb2b6deff/"/>
+        <updated>2022-02-25T15:01:45.000Z</updated>
+        <summary type="html"><![CDATA[※この記事は、"Blog Series of Introduction of Developer Productivity Engineering at Mercari" の一環で書かれています。 著 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[20220225]]></title>
         <id>https://note.com/dak/n/nc4ff870b6a50</id>
         <link href="https://note.com/dak/n/nc4ff870b6a50"/>
@@ -103,6 +113,26 @@ DJ Mad Dog久しぶりに曲出したな～って思ったらすっごいスロ�
 続きをみる]]></summary>
         <author>
             <name>ておつく</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリShopsでのDesign Docs運用について]]></title>
+        <id>19651</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220225-design-docs-by-mercari-shops/"/>
+        <updated>2022-02-25T10:00:55.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは! ソウゾウのSoftware Engineerの@ogataka50です。連載：メルカリShops 開発の裏側 Vol.2の9日目を担当させていただきます。 9日目はメルカリShopsを開発する中でのDesi […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nuxt.jsの初期化処理について]]></title>
+        <id>19688</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220224-bb58d70052/"/>
+        <updated>2022-02-25T10:00:27.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは、メルペイフロントエンドチームの @tokuda109 です。 この記事は、メルペイフロントエンドチームで取り組んでいるパフォーマンス改善について紹介するシリーズ記事の第3弾の記事で、ブラウザ上の N […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -394,6 +424,26 @@ eval以外ならどれでも解消されました。
 根本的な解決になっていない感じはしますが、何か問題がおきたときに設定をまた見直そうと思います。]]></summary>
         <author>
             <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes HPA External Metrics の事例紹介]]></title>
+        <id>19561</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220218-cd149f6298/"/>
+        <updated>2022-02-24T10:30:49.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、メルカリMicroservices SREチームの mtokioka です。Embedded SREとしてマイクロサービスのチームに参加し、サービスの信頼性向上や自動化などの業務に従事しています。 メルカリで […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vertex AI Matching Engineをつかった類似商品検索APIの開発]]></title>
+        <id>19670</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220224-similar-search-using-matching-engine/"/>
+        <updated>2022-02-24T10:00:30.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。ソウゾウの Software Engineer の @wakanapo です。 連載：メルカリShops 開発の裏側 Vol.2の8日目を担当させていただきます。 この記事では Vertex AI Match […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -815,6 +865,16 @@ First Meaningful Paint のためには、これから表示するdivが、ブラ
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Souzoh エンジニアのオンラインコミュニケーション]]></title>
+        <id>19391</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220222-souzoh-engineer-communication/"/>
+        <updated>2022-02-22T11:00:32.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。SouzohでEngineering Managerをやっている @naopr です。 連載：メルカリShops 開発の裏側 Vol.2の7日目を担当します。 はじめに Souzohを含むメルカリグループでは […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[20220222]]></title>
         <id>https://note.com/dak/n/n4a4c89ba2bc6</id>
         <link href="https://note.com/dak/n/n4a4c89ba2bc6"/>
@@ -1182,6 +1242,16 @@ Amazon
 続きをみる]]></summary>
         <author>
             <name>疒</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリShops 注文システム反省会]]></title>
+        <id>19593</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220220-db66c76db7/"/>
+        <updated>2022-02-21T10:00:44.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。ソウゾウ Software Engineer の @sou です。連載：メルカリShops 開発の裏側 Vol.2 の6日目を担当させていただきます。 この記事ではメルカリShops 注文システム反省会として […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -1820,6 +1890,16 @@ IHコンロは元々伝導熱しかないので本当に使いにくいのです
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[レガシーなシステムとの向き合い方]]></title>
+        <id>19496</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220218-3c7faca4cc/"/>
+        <updated>2022-02-18T12:31:24.000Z</updated>
+        <summary type="html"><![CDATA[はじめに はじめまして、@takashi-kun です。 自分が所属するチームでの連載企画 "Blog Series of Introduction of Developer Productivity Engi […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[20220218]]></title>
         <id>https://note.com/dak/n/n44bb744cc518</id>
         <link href="https://note.com/dak/n/n44bb744cc518"/>
@@ -1842,6 +1922,16 @@ IHコンロは元々伝導熱しかないので本当に使いにくいのです
 続きをみる]]></summary>
         <author>
             <name>ディグインザディガー</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリ Shops の開発を支える Automation 化]]></title>
+        <id>19482</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220218-mercari-shops-automation/"/>
+        <updated>2022-02-18T10:00:22.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。ソウゾウで Software Engineer をしている @sottar です。連載：メルカリShops 開発の裏側 Vol.2の 5 日目を担当させていただきます。 この記事ではメルカリShops におけ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -1964,6 +2054,16 @@ Demolition
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[特殊な構成のMySQLに対するDDL適用の一例]]></title>
+        <id>19505</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220217-d0d6aa21fe/"/>
+        <updated>2022-02-17T14:44:54.000Z</updated>
+        <summary type="html"><![CDATA[※この記事は、"Blog Series of Introduction of Developer Productivity Engineering at Mercari"の一環で書かれています。 Au […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[エッセイ:レベル1のギャラドス]]></title>
         <id>https://note.com/sizes/n/ne91741ea0e88</id>
         <link href="https://note.com/sizes/n/ne91741ea0e88"/>
@@ -2058,6 +2158,16 @@ Amazon
 　そして、ActiveRecordのような、一見メソッド呼び出しに見えるものがDBアクセスになるような柔軟なライブラリを作りやすいのは、メタプログラミングが容易という部分があるにせよ、動的な型付き言語ならでは（あるいは静的な型が「ない」から）というのがあります。実際、ActiveRecordをガリガリに使われたRubyコードに静的な型をつけようとしても（たとえば、Ruby 3のRBSにのっとった型注釈を使っても）かなり苦しい。他にも色々ありますが、静的な型がない言語というよりそれを前提に作られたライブラリやフレームワークは、「短期間にとり…]]></summary>
         <author>
             <name>kmizuの日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】メルペイチームが考える「ゼロトラスト」をベースとした認証・認可の在り方と課題 #merpay_techtalk]]></title>
+        <id>19431</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220217-11d92ef626/"/>
+        <updated>2022-02-17T09:36:04.000Z</updated>
+        <summary type="html"><![CDATA[2021年11月5日に、メルペイ・メルコインのエンジニアたちによる「Tech Talk 〜 ゼロトラストをベースとした安定的なシステム稼働の取り組み〜」を開催しました。 現在のメルペイサービスにおける認証・認可の仕組みや […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -2250,6 +2360,26 @@ SNS にシェアされたレシピがより魅力的に見えるようにした�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Introduction of CoreSRE]]></title>
+        <id>19491</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220216-introduction-of-coresre/"/>
+        <updated>2022-02-16T19:05:01.000Z</updated>
+        <summary type="html"><![CDATA[※この記事は、"Blog Series of Introduction of Developer Productivity Engineering at Mercari" の一環で書かれています。 は […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android Office Hours〜2022年の技術トレンド大予想！〜を開催しました！ #android_oh]]></title>
+        <id>19215</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220216-cc6ac2d3c4/"/>
+        <updated>2022-02-16T17:30:14.000Z</updated>
+        <summary type="html"><![CDATA[2022年2月3日に、『Android Office Hours〜2022年の技術トレンド大予想！〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはYouTube上にある […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>hatenablog://entry/13574176438064219206</id>
         <link href="https://nonwo.hatenablog.com/entry/2022/02/16/231459"/>
@@ -2293,6 +2423,16 @@ SNS にシェアされたレシピがより魅力的に見えるようにした�
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリShops における Cloud Run service の Canary Deployment]]></title>
+        <id>19313</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220216-mercari-shops-canary-deployment/"/>
+        <updated>2022-02-16T10:00:21.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは！ソウゾウの Software Engineer の @dragon3 です。連載：メルカリShops 開発の裏側 Vol.2 の4日目を担当させていただきます。 この記事では、メルカリShops において、C […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -2786,6 +2926,16 @@ form.addEventListener("change", ({target}) => {
 これから少し勉強して、プリコネみてさっさと寝たい。]]></summary>
         <author>
             <name>雑記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】「お客さま体験の向上を目指して」品質向上に向けたメルペイフロントエンドチームの取り組み #mercari_frontend]]></title>
+        <id>19419</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220214-2442ddf578/"/>
+        <updated>2022-02-14T11:15:52.000Z</updated>
+        <summary type="html"><![CDATA[2021年7月8日に、「Frontend Tech Talk 〜 Quality of Merpay Frontend 〜」 というイベントを開催しました。 本記事はその中でメルペイ フロントエンド エンジニアリングマネ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -3352,6 +3502,16 @@ Amazon
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Istio が解決する私達の問題]]></title>
+        <id>19396</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220210-how-istio-solved-our-problems/"/>
+        <updated>2022-02-10T16:36:26.000Z</updated>
+        <summary type="html"><![CDATA[この記事は @hatappi によって提供される Developer Productivity Engineering Camp blog series の１つです。 序論 私達 Microservices Networ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Z会復習帖ED「夢路らびりんす」パート解説]]></title>
         <id>hatenablog://entry/13574176438061953479</id>
         <link href="https://kaikityou.hatenablog.com/entry/2022/02/10/232813"/>
@@ -3457,6 +3617,26 @@ x-callbackを使ったアプリ…]]></summary>
 続きをみる]]></summary>
         <author>
             <name>aun6june</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ログデータと言語モデルを用いた同義語辞書の自動構築]]></title>
+        <id>19343</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220210-eab9f5d823/"/>
+        <updated>2022-02-10T10:54:27.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、メルカリの検索チームで機械学習エンジニアとしてインターンをしていた塚越駿 ( @hpp_ricecake ) です。インターンでは、メルカリのログデータと言語モデルを用いて同義語辞書を自動構築するというタスク […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリShopsとメルペイはどうつながっているのか]]></title>
+        <id>18885</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220209-a71b0c7c26/"/>
+        <updated>2022-02-10T10:00:57.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。ソウゾウのSoftware Engineerの@napoliです。連載：メルカリShops 開発の裏側 Vol.2の3日目を担当させていただきます。 メルカリShopsはメルペイと連携し、メルペイによる決済シ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -3618,6 +3798,16 @@ Amazon
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[テスト・パフォーマンス・アクセシビリティ・セキュリティの4大品質に取り組むメルペイのフロントエンドチーム #TeamInterview]]></title>
+        <id>19261</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220209-7dbffabb5e/"/>
+        <updated>2022-02-09T16:58:34.000Z</updated>
+        <summary type="html"><![CDATA[このインタビューではメルペイのフロントエンド開発を支える @ryotah 、 @yutapon 、@tokuda109 、 @dwj の4人に今取り組んでいることや、技術スタック、今後の展望などを聞いています。メルペイの […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[合作の主催をする方々へ　もう遅刻させないために]]></title>
         <id>https://note.com/tough_mad/n/na0adbb23dc25</id>
         <link href="https://note.com/tough_mad/n/na0adbb23dc25"/>
@@ -3712,6 +3902,16 @@ youkai.hatenablog.jp
 　…]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ソウゾウのエンジニア採用と課題]]></title>
+        <id>19248</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220208-a49d9da7ba/"/>
+        <updated>2022-02-09T10:00:38.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは。ソウゾウでEngineering Managerをやっている@keigowです。連載：メルカリShops 開発の裏側 Vol.2の2日目を担当させていただきます。メルカリShopsをプレオープンした […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -3917,6 +4117,26 @@ https://www.nicovideo.jp/watch/sm39691235
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルカリShops の技術スタック、その後]]></title>
+        <id>19136</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220207-mercari-shops-tech-stack-next/"/>
+        <updated>2022-02-08T10:00:40.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。ソウゾウのSoftware Engineer(CTO)の@suguruです。連載：メルカリShops 開発の裏側 Vol.2の1日目を担当させていただきます。 去年、2021年に開始した メルカリShopsの […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[検索の応答性能を維持するための Benchmarking Automation]]></title>
+        <id>19096</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220207-8ff8aad53e/"/>
+        <updated>2022-02-08T09:00:50.000Z</updated>
+        <summary type="html"><![CDATA[※この記事は、"Blog Series of Introduction of Developer Productivity Engineering at Mercari" の一環で書かれています。 は […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[エッセイ:ラーメンハゲ]]></title>
         <id>https://note.com/sizes/n/nfda62a6a9f5e</id>
         <link href="https://note.com/sizes/n/nfda62a6a9f5e"/>
@@ -4064,6 +4284,16 @@ jp.wazap.com]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[連載：メルカリShops 開発の裏側 Vol.2]]></title>
+        <id>18872</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220207-mercari-shops-behind-the-scenes-vol-2/"/>
+        <updated>2022-02-07T13:00:21.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは！ソウゾウのSoftware Engineerの@napoliです。「メルカリShops」は昨年に7月21日にプレオープンし、それから約半年が経ちました。前回は「連載：メルカリShopsプレオープンまでの開発の […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[console.time]]></title>
         <id>hatenablog://entry/13574176438061089146</id>
         <link href="https://ledsun.hatenablog.com/entry/2022/02/07/215726"/>
@@ -4136,6 +4366,26 @@ console.timeEnd('繰り返し処理に掛かった時間')
 繰り返し処理に掛かった時間: 5.245ms]]></summary>
         <author>
             <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリの検索基盤の変遷について]]></title>
+        <id>19163</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220207-776318b784/"/>
+        <updated>2022-02-07T11:59:19.000Z</updated>
+        <summary type="html"><![CDATA[※この記事は、"Blog Series of Introduction of Developer Productivity Engineering at Mercariの一環で書かれています。 はじめに こんに […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社のCI/CD事情〜 を開催しました！ #kubernetes_casualtalk]]></title>
+        <id>16717</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220129-368d0842e6/"/>
+        <updated>2022-02-07T10:00:38.000Z</updated>
+        <summary type="html"><![CDATA[2021年12月7日に、『Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社のCI/CD事情〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはY […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -5115,6 +5365,16 @@ nico.ms]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[【CTO登壇】BASE・hey・ソウゾウが描く「ECの未来と実現する組織の今」を開催しました]]></title>
+        <id>18926</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220201-b1a5cad617/"/>
+        <updated>2022-02-01T15:45:28.000Z</updated>
+        <summary type="html"><![CDATA[昨年末に、BASE社、hey社、ソウゾウ社合同で【CTO登壇】BASE・hey・ソウゾウが描く「ECの未来と実現する組織の今」というイベントを開催しました。この記事では、当日の内容を簡単に紹介します！ イベント概要 EC […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Docker DesktopからRancher Desktopに乗り換えてみた]]></title>
         <id>hatenablog://entry/13574176438059051538</id>
         <link href="https://knqyf263.hatenablog.com/entry/2022/02/01/225546"/>
@@ -5646,6 +5906,16 @@ NEDO アルコール事業本部（2006年まで工業用アルコールを専�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[フルリモート環境で入社をしたメルペイQAのリアル #merpay_qatalk]]></title>
+        <id>18854</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220129-0c05bd3742/"/>
+        <updated>2022-01-31T13:00:40.000Z</updated>
+        <summary type="html"><![CDATA[2022年1月12日には、メルペイのQAエンジニアによる「merpay QA Talk 〜メルペイQAのリアル vol. 3〜」を開催しました。 フルリモート環境において選考を受けて入社をしたメンバーの、リアルな働き方を […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[20220131]]></title>
         <id>https://note.com/dak/n/n55635c867b7a</id>
         <link href="https://note.com/dak/n/n55635c867b7a"/>
@@ -5658,6 +5928,26 @@ NEDO アルコール事業本部（2006年まで工業用アルコールを専�
 続きをみる]]></summary>
         <author>
             <name>疒</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JavaScriptがブラウザでどのように動くのか]]></title>
+        <id>18812</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220128-3a0922eaa4/"/>
+        <updated>2022-01-31T10:00:36.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは、メルペイフロントエンドチームの @tokuda109 です。 この記事は、メルペイフロントエンドチームで取り組んでいるパフォーマンス改善について紹介するシリーズ記事の第2弾の記事で、JavaScri […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Merpay Tech Talk 〜事業成長を支えるArchitectチームの取り組み〜 を開催しました！ #merpay_techtalk]]></title>
+        <id>17421</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220128-f4ccd3af66/"/>
+        <updated>2022-01-31T10:00:32.000Z</updated>
+        <summary type="html"><![CDATA[2021年12月14日に、『Merpay Tech Talk 〜事業成長を支えるArchitectチームの取り組み〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはYou […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -6209,6 +6499,16 @@ Remixの題材としてちょうど良…]]></summary>
 続きをみる]]></summary>
         <author>
             <name>エンプラーJ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[QA Engineer2年生がQA的技術的負債と立ち向かった話]]></title>
+        <id>18318</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220118-dfa7943248/"/>
+        <updated>2022-01-28T11:00:31.000Z</updated>
+        <summary type="html"><![CDATA[はじめまして。メルペイのQA Engineer(以降QAE)チームのtakamaです。 本記事では、QAチーム内で発生した技術的負債にどう立ち向かい、どのような結果が得られたかについて紹介します。 「QAチームって開発す […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -6815,6 +7115,16 @@ VisualViewport - Web APIs | MDN
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[mercari.go #18 を開催しました #mercarigo]]></title>
+        <id>18715</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220125-mercarigo-18/"/>
+        <updated>2022-01-25T11:03:59.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは、mercari.go スタッフの @otter です。 1月20日にメルカリ主催のGo勉強会 mercari.go #18 をオンライン配信にて開催しました。 この記事では、当日の各発表を簡単に紹介 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[20220125]]></title>
         <id>https://note.com/dak/n/n4ed8ec8e8393</id>
         <link href="https://note.com/dak/n/n4ed8ec8e8393"/>
@@ -6931,6 +7241,16 @@ PS5は持っていない↩]]></summary>
         <summary type="html"><![CDATA[朝、6時に起きて12時頃までプログラミング。]]></summary>
         <author>
             <name>r7kamura.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automation of Terraform for AWS]]></title>
+        <id>18662</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220124-automation-of-terraform-for-aws/"/>
+        <updated>2022-01-24T19:00:14.000Z</updated>
+        <summary type="html"><![CDATA[本投稿は DPE Camp blog series の一部です。 こんにちは。 Platform Infra の Kenichi Sasaki (@siroken3) です。メルカリでは主にAWSの管理を業務にしています […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -7803,6 +8123,16 @@ slowlooptv.com
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[高い堅牢性と可用性を支えるメルペイコード決済チームの取り組みと工夫 #TeamInterview]]></title>
+        <id>18430</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220121-9e083be116/"/>
+        <updated>2022-01-21T15:35:44.000Z</updated>
+        <summary type="html"><![CDATA[メルカリグループでは複数のアプリやサービスを提供していますが、そのベースに決済基盤があります。それを提供するのがメルペイです。QRコードを使った決済などを提供するメルペイのバックエンドエンジニア達に、これまでの経験や開発 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[エッセイ:ニコニコ動画]]></title>
         <id>https://note.com/sizes/n/n3654e32062b5</id>
         <link href="https://note.com/sizes/n/n3654e32062b5"/>
@@ -8132,6 +8462,46 @@ MVのビジュアルも素晴らしいが、ラテン要素と電子音楽の独
 ライブバージョンが良かった。やはり、Lawrenceの本領が発揮できるのはライブだと実感。そして、そのことが良く伝わる映像。舞台女優でもあるGracieのパワフルな歌声、兄Clydeの優しいボーカルとキーボード/ピアノ、実力派揃いのコーラスとの調和。Clydeは、ピアノとキーボードを行き来し、目にも楽しい。3人めのLawrence、Linusは兄弟なのかいとこなのか、たまたま名前がLawrenceなだけなのか少し気になる。Lawrenceは、Choachella 2022の出演予定。]]></summary>
         <author>
             <name>電子計算機舞踏音楽</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】プロダクト開発体制を一挙公開 – メルカリプロダクト開発体制本音トーク]]></title>
+        <id>18499</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220120-f9acd23e86/"/>
+        <updated>2022-01-20T10:41:00.000Z</updated>
+        <summary type="html"><![CDATA[2021年11月11日に、プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 というイベントを開催しました。 この記事はその中で行われたパネルディスカッション「メルカリプロダクト開発体制本音トーク」の書き起 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】プロダクト開発体制を一挙公開 – Cross-functional team in Mercari]]></title>
+        <id>18481</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220120-97ab1e892c/"/>
+        <updated>2022-01-20T10:40:43.000Z</updated>
+        <summary type="html"><![CDATA[2021年11月11日に、プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 というイベントを開催しました。 この記事はその中のセッションの1つ、「Cross-functional team in Merc […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】プロダクト開発体制を一挙公開 – 全員ソフトウェアエンジニアとは？]]></title>
+        <id>18463</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220120-59f3333936/"/>
+        <updated>2022-01-20T10:40:28.000Z</updated>
+        <summary type="html"><![CDATA[2021年11月11日に、プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 というイベントを開催しました。 この記事はその中のセッションの1つ、「全員ソフトウェアエンジニアとは？」の書き起こしです。 詳し […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】プロダクト開発体制を一挙公開 – メルカリのプロダクト開発体制]]></title>
+        <id>18445</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220120-2fd1a3e4ba/"/>
+        <updated>2022-01-20T10:40:15.000Z</updated>
+        <summary type="html"><![CDATA[2021年11月11日に、プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 というイベントを開催しました。 この記事はその中のセッションの1つ、「メルカリのプロダクト開発体制」の書き起こしです。 詳しくは […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -8658,6 +9028,16 @@ qureate.co.jp
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Mercari ML&#038;Search Talk #1 ~Personalization~ を開催しました #mercari_ai]]></title>
+        <id>18346</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220118-04d00608f8/"/>
+        <updated>2022-01-18T17:10:42.000Z</updated>
+        <summary type="html"><![CDATA[2021年12月15日に、『Mercari ML&Search Talk #1 ~Personalization~』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくは […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[ぼっちだった高校時代の修学旅行の話]]></title>
         <id>hatenablog://entry/13574176438053995618</id>
         <link href="https://kaikityou.hatenablog.com/entry/2022/01/19/015347"/>
@@ -8730,6 +9110,16 @@ YくんとKくんと一緒に自由行動。ここがマジで楽しかった。
 そんな感じ。読んでくれてありがとう。]]></summary>
         <author>
             <name>kaikityouの日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction of Web Platform]]></title>
+        <id>18274</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220118-introduction-of-web-platform/"/>
+        <updated>2022-01-18T14:21:32.000Z</updated>
+        <summary type="html"><![CDATA[Author: @urahiroshi, Engineering manager of Web Platform team The mission of Web Platform team Web Platform te […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -8878,6 +9268,16 @@ https://forms.gle/Uzs3wgSrkUgYxWdr5
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルペイフロントエンドチームで行っているパフォーマンス改善の取り組み紹介]]></title>
+        <id>18271</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220118-e040ab3dd3/"/>
+        <updated>2022-01-18T10:43:16.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは、メルペイフロントエンドチームの @tokuda109 です。 メルペイフロントエンドチームは、テスト・アクセシビリティ・パフォーマンス・セキュリティを4つの重要な品質指標として日々改善しています。  […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[【チャットで30分】かっぱさんと　ラップ調合作～セリフ合わせ]]></title>
         <id>hatenablog://entry/13574176438051455576</id>
         <link href="https://taket-a.hateblo.jp/entry/lyrics-interview-09"/>
@@ -9022,6 +9422,16 @@ note.com
 なれると、なんとかなりますね。]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[KubernetesベースのCloud Spanner Autoscaler]]></title>
+        <id>17440</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211222-kubernetes-based-spanner-autoscaler/"/>
+        <updated>2022-01-18T09:10:57.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2021の22日目の記事です。こんにちは、Merpay SREチームの@raviです。 DBaaSでは、さまざまなユーザー要件を満たすためにあらゆるcloudから […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -11698,6 +12108,16 @@ Lambdaの実行時エラーをChatbotでSlackに通知するのが便利すぎ�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[OKRの運用や教育、今後のキャリア…他社のQAはどうしてる？#cybozu_merpay]]></title>
+        <id>18129</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211223-955ad69af1/"/>
+        <updated>2022-01-06T09:30:21.000Z</updated>
+        <summary type="html"><![CDATA[2021年9月28日に開催したサイボウズとメルペイのコラボイベント「QA Talk 〜現場のチームの作り方。QAチーム設立21年目サイボウズ x 3年目メルペイ〜」の続編として、情報交換会をサイボウズの東京オフィスにて実 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[とうとう、モバイルSuicaもiPhone系から、Androidに移行しました。これで、本当にiOS使わなくなります。]]></title>
         <id>hatenablog://entry/13574176438049978263</id>
         <link href="https://katsumakazuyo.hatenablog.com/entry/2022/01/06/152103"/>
@@ -12850,6 +13270,26 @@ TOEIC: 800点
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルペイCTO x アーキテクトエンジニア対談 3/3 〜メルコインのアーキテクトについて〜]]></title>
+        <id>18243</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211229-6e71d4bb16/"/>
+        <updated>2021-12-30T08:31:42.000Z</updated>
+        <summary type="html"><![CDATA[メルペイCTOの曾川 景介とメルペイアーキテクトエンジニアの伊藤 雄貴が対談。その時の様子をお届けします！ メルペイCTO x アーキテクトエンジニア対談 1/3 〜注目の技術〜 メルペイCTO x アーキテクトエンジニ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルペイCTO x アーキテクトエンジニア対談 2/3 〜伊藤のキャリアとメルペイアーキテクトチームについて〜]]></title>
+        <id>18236</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211229-3607c1eb8a/"/>
+        <updated>2021-12-30T08:30:00.000Z</updated>
+        <summary type="html"><![CDATA[メルペイCTOの曾川 景介とメルペイアーキテクトエンジニアの伊藤 雄貴が対談。その時の様子をお届けします！ メルペイCTO x アーキテクトエンジニア対談 1/3 〜注目の技術〜 メルペイCTO x アーキテクトエンジニ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2021年良かった曲10選]]></title>
         <id>hatenablog://entry/13574176438045987605</id>
         <link href="https://immortalt.hatenablog.com/entry/2021/12/30/111159"/>
@@ -13105,6 +13545,16 @@ Amazon
 土日は外食ですが、必ず妻と一緒なのでステーキ…]]></summary>
         <author>
             <name>僕とネットショッピング</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルペイCTO x アーキテクトエンジニア対談 1/3 〜注目の技術〜]]></title>
+        <id>18212</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211229-13dd8b3e18/"/>
+        <updated>2021-12-29T18:49:53.000Z</updated>
+        <summary type="html"><![CDATA[メルペイCTOの曾川 景介とメルペイアーキテクトエンジニアの伊藤 雄貴が対談。その時の様子をお届けします！ メルペイCTO x アーキテクトエンジニア対談 1/3 〜注目の技術〜 メルペイCTO x アーキテクトエンジニ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -13759,6 +14209,36 @@ www.magika4.com
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[5~8人のBackendチーム編成を目指そう]]></title>
+        <id>17572</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211225-size-backend-team-to-5-to-8-members/"/>
+        <updated>2021-12-25T11:00:02.000Z</updated>
+        <summary type="html"><![CDATA[5~8人のBackendチーム編成を目指そう こんにちは。メルペイ Backendチーム Manager of Managersの @godricです。 この記事は、Merpay Advent Calendar 2021 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリCTO/VP/Directorsがふりかえる2021年 ~パーソナライゼーション強化、グループ横断でのインシデント対応、D&#038;I推進 ~]]></title>
+        <id>18182</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211224-look-back-2021/"/>
+        <updated>2021-12-25T11:00:01.000Z</updated>
+        <summary type="html"><![CDATA[2021年も残りわずかとなりました。メルカリのエンジニアリング組織の1年間を振り返るとさまざまなできごとに遭遇したり、新たな取り組みにも挑戦しました。 本編に入る前に、過去記事でも何度か取り上げた大きな動きを紹介しておく […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fintechサービス開発を10倍楽しむ読書習慣]]></title>
+        <id>17794</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211221-advent-calendar-12-25/"/>
+        <updated>2021-12-25T10:00:51.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2021 最終日の記事です。 こんにちは。メルペイProduct EngineeringチームでVP of Engineeringを担当しているnozaqです。  […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[『劇場版 少女☆歌劇 レヴュースタァライト』ファストフード店での日常芝居について備忘録]]></title>
         <id>hatenablog://entry/13574176438045546907</id>
         <link href="https://kasutera2nd.hatenablog.com/entry/2021/12/25/184847"/>
@@ -13903,6 +14383,16 @@ www.magika4.com
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[不具合データの可視化と分析]]></title>
+        <id>17698</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211222-6d545e2c99/"/>
+        <updated>2021-12-24T12:00:15.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2021の24日目の記事です。 こんにちは、メルペイQAエンジニアのEnnです。 今回は、メルペイQAチームで取り組んでいる「不具合データの可視化と分析」について […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[シャンメリーって結局何あじなの]]></title>
         <id>hatenablog://entry/13574176438045788663</id>
         <link href="https://blogyu-a-rueru.hatenablog.com/entry/2021/12/24/195836"/>
@@ -14018,6 +14508,16 @@ P.S.今月誕生日だったので実家で祝ってもらいました。感謝�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルペイQAチームにおける自動化のイマ]]></title>
+        <id>17804</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211224-merpay-qa-for-automation-test/"/>
+        <updated>2021-12-24T09:00:01.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。Merpay Advent Calendar 2021の24日目はメルペイQAチームでエンジニアリングマネージャーをしている miisan が「メルペイQAチームにおける自動化のイマ」についてQAチームを代表 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[集まり、考えることの難しさ - MYORPH:OPENをやる価値]]></title>
         <id>https://note.com/ocha307/n/n2a7ccc5ac31a</id>
         <link href="https://note.com/ocha307/n/n2a7ccc5ac31a"/>
@@ -14052,6 +14552,16 @@ github.com
 英語書いた]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🪙 eコマースにおけるNFTの将来性]]></title>
+        <id>18078</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211213-b652bc2850/"/>
+        <updated>2021-12-23T14:58:15.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは！ Advanced TechnologyチームのPramendraです。 Advanced Technologyチームは、世界中のビジネスおよびテクノロジーの動向を調査しています。 今回、皆さんに再び新しいレ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -14090,6 +14600,16 @@ github.com
 続きをみる]]></summary>
         <author>
             <name>rupea</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[マイクロサービスにおけるリコンサイルの話]]></title>
+        <id>17898</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211222-1df9e3a553/"/>
+        <updated>2021-12-23T09:30:19.000Z</updated>
+        <summary type="html"><![CDATA[マイクロサービスにおけるリコンサイルの話 この記事はMerpay Advent Calendar 2021 の23日目の記事です。メルペイPayment Platformチームの @foghost がお送りします。 本記 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -14159,6 +14679,16 @@ BlenderAeというBlenderのアドオンが馬鹿便利で、フレアとか焚�
 適当にカメラとライトをAeに転送❗knoll light factoryにライト適用すると、いいよね。]]></summary>
         <author>
             <name>ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリレンズβ WebAssembly × AIのプロダクト開発]]></title>
+        <id>17820</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211222-mercari-lens/"/>
+        <updated>2021-12-22T12:00:11.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Mercari Advent Calendar 2021 の22日目の記事です。 こんにちは、メルカリ EdgeAIチームの@tkatoです。私たちのチームでは、クライアントサイドでの機械学習応用について、ア […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -14358,6 +14888,16 @@ adventar.org
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[自作して学ぶKubernetes Scheduler]]></title>
+        <id>17747</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211220-create-your-kube-scheduler/"/>
+        <updated>2021-12-21T17:00:18.000Z</updated>
+        <summary type="html"><![CDATA[Mercari advent calender の21日目を担当します@sanposhihoです。現在大学の学部4回生で、メルカリでは内定者インターンとして、メルカリのホーム画面などのバックエンドを担当するチームに所属し […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[厳選！2021年グッド・ツイート集]]></title>
         <id>hatenablog://entry/13574176438044968473</id>
         <link href="https://ebidesu.hatenablog.com/entry/2021/12/22/004601"/>
@@ -14461,6 +15001,16 @@ pic.twitter.com/ZbKjO1FfWI
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[アプリの入り口となるホーム画面開発を支えるメルカリのPersonalization Coreチーム #TeamInterview]]></title>
+        <id>17780</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211221-mercari-personalization-core-interview/"/>
+        <updated>2021-12-21T13:24:48.000Z</updated>
+        <summary type="html"><![CDATA[お客さまがアプリを開いたときに最初に目にするメルカリのホーム画面には数多くの情報が掲載されています。商品情報はもちろん、おすすめのキャンペーン情報など、お客さまそれぞれにパーソナライズされたコンテンツも必要です。 そんな […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[車掌ロボ]]></title>
         <id>https://note.com/ssaymds/n/n41cda8f9ad7b</id>
         <link href="https://note.com/ssaymds/n/n41cda8f9ad7b"/>
@@ -14487,6 +15037,16 @@ pic.twitter.com/ZbKjO1FfWI
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Cloud SpannerとCloud Pub/Subとで実装するTransactional outboxパターン]]></title>
+        <id>17666</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211221-transactional-outbox/"/>
+        <updated>2021-12-21T10:00:51.000Z</updated>
+        <summary type="html"><![CDATA[Credit Designチームでバックエンドエンジニアをしている@iwataです。主にメルペイスマート払い関連の開発をしています。 Merpay Advent Calendar 2021 の21日目の記事をお届けします […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[除夜ポゴ2021雑まとめ]]></title>
         <id>https://note.com/izumi_pogo/n/ne266cbc8a158</id>
         <link href="https://note.com/izumi_pogo/n/ne266cbc8a158"/>
@@ -14496,6 +15056,16 @@ pic.twitter.com/ZbKjO1FfWI
 続きをみる]]></summary>
         <author>
             <name>izumi🦆</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WebFrontendローカルパフォーマンス改善支援ツールを作ってみた。]]></title>
+        <id>16824</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211217-856683a917/"/>
+        <updated>2021-12-21T09:00:29.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2021 の21日目の記事です。 はじめに こんにちは。メルペイのFrontendエンジニアのtoshickです。 メルペイフロントエンドチームではパフォーマンス […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -14588,6 +15158,16 @@ UPDATE items SET Iteration = 'Iteration 11' WHERE Iteration = 'Iteration 10';
 続きをみる]]></summary>
         <author>
             <name>かすてら</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[M1 Macとビルド時間とそれからメルカリAndroidアプリ]]></title>
+        <id>17652</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211217-a51c7f16d2/"/>
+        <updated>2021-12-20T10:00:27.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリにてSoftware Engineerをしている@kuu 🍣です。 この記事は、Mercari Advent Calendar 2021 の20日目の記事です。 はじめに 　私は所属しているメルカリJ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -14803,6 +15383,26 @@ Rustでテストをするときに渡すオプションが2種類あるという
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[事業者情報台帳サービスにイベントパブリッシングを導入した話]]></title>
+        <id>17638</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211217-163d5c4e4e/"/>
+        <updated>2021-12-19T12:00:58.000Z</updated>
+        <summary type="html"><![CDATA[はじめに メルペイバックエンドエンジニアの @r_yamaoka です。 Merpay Advent Calendar 2021 の19日目の記事をお届けします。 私は普段メルペイ加盟店さまの管理を担うマイクロサービス群 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PubSub/Redisを用いたGoによるスケーラブルなworkerの構築と運用]]></title>
+        <id>16573</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211216-09550a386d/"/>
+        <updated>2021-12-19T10:00:10.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリのNotification teamでソフトウェアエンジニアをしている@naruseです。 この記事は、Mercari Advent Calendar 2021 の19日目の記事です。 はじめに 　私 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2021-12-18]]></title>
         <id>hatenablog://entry/13574176438044054327</id>
         <link href="https://commits.hatenablog.com/entry/2021/12/19/100007"/>
@@ -14867,6 +15467,26 @@ YoutubeがいよいよGoogleの15秒あるCMを飛ばせなくしてきたの、
 続きをみる]]></summary>
         <author>
             <name>ディグインザディガー</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[公平性に配慮した機械学習]]></title>
+        <id>17157</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211217-3286689d87/"/>
+        <updated>2021-12-18T12:00:55.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルペイのMachine Learningチームの@hiroです。Merpay Advent Calendar 2021 の18日目の記事をお届けします。 機械学習の社会的重要性の高まり 近年、機械学習という […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[XState + Apollo Clientでフロントエンドのステート管理]]></title>
+        <id>17628</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211217-418551f715/"/>
+        <updated>2021-12-18T11:00:30.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリのSoftware Engineerのsotaです。 この記事は、Mercari Advent Calendar 2021 の18日目の記事です。 先日限定公開が始まったmerworkのWebフロント […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -15035,6 +15655,16 @@ Amazon
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜  当日いただいた質問への回答まとめ]]></title>
+        <id>17613</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211217-bb39ce99f1/"/>
+        <updated>2021-12-17T11:03:17.000Z</updated>
+        <summary type="html"><![CDATA[2021年11月11日に、「プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 」 というイベントを開催しました。 この記事では当日いただいた質問の中で時間の関係上お答えすることができなかったものに対して、 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[SWDやCMSIS-DAPとにらめっこした]]></title>
         <id>hatenablog://entry/13574176438043661334</id>
         <link href="https://diary.hatenablog.jp/entry/2021/12/17/194651"/>
@@ -15063,6 +15693,16 @@ rust-dap は CMSIS-DAP v2 に対応してるし実装小さくて移植しやす
 続きをみる]]></summary>
         <author>
             <name>埜村武</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[インターンがメルカリのマイクロサービスマイグレーションを経験する]]></title>
+        <id>16821</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-intern-migration/"/>
+        <updated>2021-12-17T10:00:14.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Mercari Advent Calendar 2021 の17日目の記事になります。 　こんにちは。メルカリのバックエンドのチームでインターンをしている@torichanです。私は、2020年の8月から1 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -15371,6 +16011,16 @@ Aviutlが重いから
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[新しいチームに入ってから立ち上がりの極意]]></title>
+        <id>17223</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-51f2df9357/"/>
+        <updated>2021-12-17T09:30:56.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2021 の17日目の記事です。 こんにちは。メルペイ Payment Platform所属の rossy です。 はじめに この記事を読んでる方は転職で新しい環 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[モバイルアプリ開発において宣言的UIフレームワークを利用する際のコンポーネント粒度についての考察]]></title>
         <id>hatenablog://entry/13574176438042946150</id>
         <link href="https://techlife.cookpad.com/entry/2021/12/17/103000"/>
@@ -15426,6 +16076,16 @@ www.youtube.com
 DJMAXとEZ2DJが熱かった。どちらもほぼ前知…]]></summary>
         <author>
             <name>思い出したら書きます</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[QAチーム設立21年目のサイボウズ×3年目のメルペイに聞くQAエンジニアの役割とは？#cybozu_merpay]]></title>
+        <id>17424</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-8e20e5a371/"/>
+        <updated>2021-12-16T13:00:50.000Z</updated>
+        <summary type="html"><![CDATA[2021年9月28日に開催したサイボウズとメルペイのコラボイベント「QA Talk 〜現場のチームの作り方。QAチーム設立21年目サイボウズ x 3年目メルペイ〜」の続編として、情報交換会をサイボウズ社の東京オフィスにて […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -15520,6 +16180,16 @@ Servo5が逆なのでReverseする．（DisarmでもMainout5以降は動いて�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルカリのオープンソースプロジェクト協賛活動]]></title>
+        <id>17556</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-e622702f69/"/>
+        <updated>2021-12-16T11:00:06.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリEngineering Officeの@lestrratです。 この記事は、Mercari Advent Calendar 2021 の16日目の記事です。 今回は直接技術には関連しませんが、メルカリ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[【修正済み】Androidアプリでログイン状態が正常に反映されない不具合が発生しております]]></title>
         <id>hatenablog://entry/13574176438043344740</id>
         <link href="https://staff.hatenablog.com/entry/2021/12/16/191249"/>
@@ -15534,6 +16204,46 @@ Servo5が逆なのでReverseする．（DisarmでもMainout5以降は動いて�
 不具合を修正したバージョン2.10.0を、12月20日にリリースしました。お手数ですが、最新バージョンへのアップデートをお願いいたします。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】多様な働き方を実現するエンジニアの実態 &#8211; パネルディスカッション: エンジニアのさまざまな働き方 &#8211;]]></title>
+        <id>17522</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-panel-various-working-style/"/>
+        <updated>2021-12-16T10:11:07.000Z</updated>
+        <summary type="html"><![CDATA[2021年10月28日に、「多様な働き方を実現するエンジニアの実態〜メルカリ・エンジニア組織の大解剖〜」というイベントを開催しました。 この記事はその中のセッションの1つ、「パネルディスカッション – エンジ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】多様な働き方を実現するエンジニアの実態 &#8211; パネルディスカッション: フルリモートでのEMの仕事 &#8211;]]></title>
+        <id>17509</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-panel-em-work/"/>
+        <updated>2021-12-16T10:10:46.000Z</updated>
+        <summary type="html"><![CDATA[2021年10月28日に、「多様な働き方を実現するエンジニアの実態〜メルカリ・エンジニア組織の大解剖〜」 というイベントを開催しました。 この記事はその中のセッションの1つ、「パネルディスカッション – フル […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】多様な働き方を実現するエンジニアの実態 &#8211; 数字で見るエンジニアのリモートワーク]]></title>
+        <id>17480</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-engineer-remotework/"/>
+        <updated>2021-12-16T10:10:20.000Z</updated>
+        <summary type="html"><![CDATA[2021年10月28日に、「多様な働き方を実現するエンジニアの実態〜メルカリ・エンジニア組織の大解剖〜」 というイベントを開催しました。 この記事はその中のセッションの1つ、「数字で見るエンジニアのリモートワーク」の書き […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[お客さま影響に基づく実践的なアラート方法]]></title>
+        <id>17303</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-practical_alerting_methods_based_on_customer_impact/"/>
+        <updated>2021-12-16T09:00:30.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2021の16日目の記事です。 こんにちは、メルペイSREチームのfoostanです。普段はキーボードのことばかり話していますが、本業ではSREチームの一員として […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -15671,6 +16381,26 @@ starryskybrog.hatenablog.jp
 4つ中2つできた！えらい！]]></summary>
         <author>
             <name>星空のブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Growthのオペレーションツールの歩み 〜ダッシュボード編〜]]></title>
+        <id>16843</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-operation-tool-dashboard/"/>
+        <updated>2021-12-15T09:00:44.000Z</updated>
+        <summary type="html"><![CDATA[Merpay Advent Calendar 2021 の 15 日目は 2 本立てで、2 本目の記事をメルペイ Growth Platform Team のバックエンドエンジニアの ksoichiro がお送りします。 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Growthのオペレーションツールの歩み 〜クーポン編〜]]></title>
+        <id>16909</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211215-operation-tool-coupon/"/>
+        <updated>2021-12-15T09:00:41.000Z</updated>
+        <summary type="html"><![CDATA[Merpay Advent Calendar 2021 の 15 日目は 2 本立てで、1 本目の記事をメルペイ Growth Platform Team のバックエンドエンジニアの@naoinaがお送りします。 2本目 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -15981,6 +16711,26 @@ Amazon
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[How to do QA for Merwork]]></title>
+        <id>16704</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211214-how-to-do-qa-for-merwork/"/>
+        <updated>2021-12-14T12:14:07.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは、メルカリでQAエンジニアをやっている @tettan （河野）です。この記事は、Mercari Advent Calendar 2021 の14日目の記事です。 先日、Merwork（メルワーク）と […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルペイでの運用環境とオブザーバビリティ]]></title>
+        <id>17172</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211213-e228df121f/"/>
+        <updated>2021-12-14T12:00:49.000Z</updated>
+        <summary type="html"><![CDATA[メルペイでの運用環境とオブザーバビリティ この記事は、Merpay Advent Calendar の14日目の記事です。 こんにちは。メルペイのSettelementチームで開発を担当するバックエンドエンジニアの @s […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[【遊ぼう】イナハルが暇な時みるサイト【競おう】]]></title>
         <id>https://note.com/inaharu/n/n18fb17aaf906</id>
         <link href="https://note.com/inaharu/n/n18fb17aaf906"/>
@@ -16109,6 +16859,16 @@ gist.github.com]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルカリで築くエンジニアキャリア]]></title>
+        <id>16624</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211213-4b77715a44/"/>
+        <updated>2021-12-13T15:44:44.000Z</updated>
+        <summary type="html"><![CDATA[メルカリ Engineering Office チームの@yuki.tです。 私たちのチームでは、「全てのエンジニアに最高の従業員体験を」というミッションを元に、様々な活動を行なっています。私はその中でも、エンジニアの評 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[音MADにおけるオケヒのような音について]]></title>
         <id>https://note.com/saradisk/n/ncf863ecfdfd9</id>
         <link href="https://note.com/saradisk/n/ncf863ecfdfd9"/>
@@ -16229,6 +16989,16 @@ oda-senin.blogspot.com
 多分BDSPはここで一旦区切り。他のゲームを終わらせたいです。]]></summary>
         <author>
             <name>kaikityouの日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHubリポジトリにおけるレビュープロセスの統制]]></title>
+        <id>17046</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211213-8f5f5a5aee/"/>
+        <updated>2021-12-13T11:00:17.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。この記事は、Merpay Advent Calendar 2021 の13日目の記事です。メルペイのSREチームに所属している@yuharaです。 組織ではコンプライアンスの遵守が必要不可欠です。ソフトウェア […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -16544,6 +17314,16 @@ AcFunという名前がAnime Com…]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルカリ・メルペイで行ったリリースサイクルのアップデート]]></title>
+        <id>16929</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211210-b5d0a7dc9c/"/>
+        <updated>2021-12-11T12:00:49.000Z</updated>
+        <summary type="html"><![CDATA[はじめまして、メルペイのiOSチームでEngineering Managerをしている玉城です。この記事は、 Merpay Advent Calendar 2021 の11日目の記事です。 はじめに メルカリアプリでは2 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[浮島ダイレクト、花畑ダイレクト]]></title>
         <id>https://note.com/izumi_pogo/n/n784001c41988</id>
         <link href="https://note.com/izumi_pogo/n/n784001c41988"/>
@@ -16725,6 +17505,26 @@ atcoder.jp
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[セキュリティ・テストは一般的なソフトウェア・テストとどう違うのか？]]></title>
+        <id>16712</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211210-how-is-security-testing-different-from-typical-software-testing/"/>
+        <updated>2021-12-10T10:00:28.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。Product Security チームの @gloriaです。 この記事は、Mercari Advent Calendar 2021 の10日目の記事です。 ———&#8 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1週間リリースを支えるAndroid自動テスト運用]]></title>
+        <id>16790</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211210-merpay-android-test-automation/"/>
+        <updated>2021-12-10T09:00:06.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、 Merpay Advent Calendar 2021 の10日目の記事です。 本記事は、1週間リリースを支えるAndroid自動テスト運用についてメルペイ Androidチームの@amane, @kenk […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[ATOM Cam Swingが発売されたので（略）]]></title>
         <id>hatenablog://entry/13574176438041303169</id>
         <link href="https://honeylab.hatenablog.jp/entry/2021/12/10/104949"/>
@@ -16786,6 +17586,16 @@ December 7, 2021
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルカリWeb版のPull Request環境の構築方法について]]></title>
+        <id>16849</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211209-a41d2dcfd3/"/>
+        <updated>2021-12-09T16:07:09.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリのweb platformチームの@urahiroshiです。 この記事は、Mercari Advent Calendar 2021 の9日目の記事です。 今回は、メルカリWeb版のアプリケーションの […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[来年の目標]]></title>
         <id>https://note.com/fourangle/n/n220978a505e1</id>
         <link href="https://note.com/fourangle/n/n220978a505e1"/>
@@ -16795,6 +17605,16 @@ December 7, 2021
 続きをみる]]></summary>
         <author>
             <name>四角</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[merpay Tech Talk 〜 2000万MAUを支える決済基盤の現状と未来〜 を開催しました！ #merpay_techtalk]]></title>
+        <id>16737</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211209-f359c9f121/"/>
+        <updated>2021-12-09T15:16:35.000Z</updated>
+        <summary type="html"><![CDATA[2021年11月25日に、『merpay Tech Talk 〜 2000万MAUを支える決済基盤の現状と未来〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくはYouTu […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -16819,6 +17639,16 @@ December 7, 2021
 続きをみる]]></summary>
         <author>
             <name>Natto(ナット)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Engineering Counterpartとしての取り組み]]></title>
+        <id>16452</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211211-engineering-counterpart/"/>
+        <updated>2021-12-09T09:30:52.000Z</updated>
+        <summary type="html"><![CDATA[Merpay Advent Calendar 2021 の9日目は、メルペイ Credit Design チームの @fivestar がお送りします。 今回のテーマである Engineering Counterpart […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -16894,6 +17724,16 @@ www.youtube.com
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Mercari HACK WEEKのつくり方]]></title>
+        <id>16669</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211207-3b8d96d447/"/>
+        <updated>2021-12-08T11:50:43.000Z</updated>
+        <summary type="html"><![CDATA[※この記事は、Mercari Advent Calendar 2021 の8日目の記事です。 こんにちは。メルカリのEngineering Officeの@afroscriptです。 メルカリでは2019年9月から、およ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[【人力ボカロ】なめうぇーぶを使ってみよう！]]></title>
         <id>https://note.com/walkingsushibox/n/n4f9061ba27c5</id>
         <link href="https://note.com/walkingsushibox/n/n4f9061ba27c5"/>
@@ -16903,6 +17743,16 @@ www.youtube.com
 続きをみる]]></summary>
         <author>
             <name>あるくおすし</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルペイフロントエンドのテスト自動化方針]]></title>
+        <id>16497</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211208-test-automation-policy-in-merpay-frontend/"/>
+        <updated>2021-12-08T09:00:42.000Z</updated>
+        <summary type="html"><![CDATA[Merpay Advent Calendar 2021 の 8 日目はメルペイフロントエンドチーム の @tanakaworld がお送りします。 はじめに メルペイは金融サービスであり、品質の維持・向上に日々取り組んで […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -16994,6 +17844,16 @@ Graham Potter: ‘My friends don’t care about the Premier League – about thi
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[GitHub上のsensitive dataを削除するための手順と道のり]]></title>
+        <id>16579</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211207-removing-sensitive-data-from-github/"/>
+        <updated>2021-12-07T10:00:18.000Z</updated>
+        <summary type="html"><![CDATA[Advent Calendar day 7 担当の vvakame です。 予告では Apollo Federation Gateway Node.js実装についてポイント解説 としていましたが、社内各所のご協力によりA […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[この一年の話（控訴審編）]]></title>
         <id>https://note.com/ono_matope/n/n161c0695ce44</id>
         <link href="https://note.com/ono_matope/n/n161c0695ce44"/>
@@ -17060,6 +17920,16 @@ test.rb:2:in `<main>': undefined method `[]' for nil:NilClass (NoMethodError…]
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[評価の満足度を劇的にあげた秘訣。Continuous Feedbackのすすめ]]></title>
+        <id>16551</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211206-15c9c9dc16/"/>
+        <updated>2021-12-06T15:20:50.000Z</updated>
+        <summary type="html"><![CDATA[誰向けの記事？ EM（Engineering Manager）の方に向けた記事です。 ただ、一般的な評価者全般にあてはまる内容を書いているので、評価を行う方なら誰でも参考にできると思います。 評価をする側ではないけど、ど […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2021-12-06]]></title>
         <id>hatenablog://entry/13574176438040246046</id>
         <link href="https://diary.hatenablog.jp/entry/2021/12/06/230958"/>
@@ -17107,6 +17977,16 @@ github.com
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[テスト時間を短くするための分散テスト実行]]></title>
+        <id>16416</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211206-5aa2ac7efc/"/>
+        <updated>2021-12-06T09:30:47.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、 Merpay Advent Calendar 2021 6日目の記事です。 はじめに こんにちは。メルペイ Architect の @goccy です。 この記事では、日々実行しているマイクロサービス間の結 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[適当に音窓アドベント 2021 - 6日目【音MAD作者の活躍の場とは】]]></title>
         <id>https://note.com/natto0141/n/nadfa1112f052</id>
         <link href="https://note.com/natto0141/n/nadfa1112f052"/>
@@ -17140,6 +18020,16 @@ A：見つけたー
 続きをみる]]></summary>
         <author>
             <name>片知</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[entを使った省エネバックエンド開発]]></title>
+        <id>16516</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211205-44a97f0e1c/"/>
+        <updated>2021-12-05T19:00:20.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリでSoftware Engineerをやっているakkie30です。 この記事は、Mercari Advent Calendar 2021 の5日目の記事です。 私のチームでは半年ほど前からGoのOR […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -17203,6 +18093,16 @@ Amazon
 しかし、ブコメはそのまま「お便り」として使えない。知っ…]]></summary>
         <author>
             <name>本しゃぶり</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルペイのクライアントエンジニアリングの話]]></title>
+        <id>16403</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211205-merpay-client-engineering/"/>
+        <updated>2021-12-05T12:00:42.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2021 の 5 日目の記事です。 @1000ch です。最近はメルペイのエンジニアリング部門にて、Android・iOS・Web を含むクライアントエンジニアリ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -17446,6 +18346,16 @@ Amazon
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[モブプログラミングを導入し、チーム一丸となってタスクに取り組むようになった話]]></title>
+        <id>16100</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211130-52e6d96087/"/>
+        <updated>2021-12-04T09:30:10.000Z</updated>
+        <summary type="html"><![CDATA[はじめに メルペイ ML Platformチームの@ysk24okです。この記事は、 Merpay Advent Calendar の4日目の記事です。 本記事では自チームにモブプログラミングを導入し、チーム一丸となって […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2021年に見つけたいい音楽 by Lazhward]]></title>
         <id>hatenablog://entry/13574176438038422742</id>
         <link href="https://mu-records.hatenablog.com/entry/2021/12/04/170010"/>
@@ -17629,6 +18539,16 @@ Wikipediaより
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルペイのキャンペーンを支えるフィルタリング機能]]></title>
+        <id>16250</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211203-campaign-filtering-system/"/>
+        <updated>2021-12-03T07:00:49.000Z</updated>
+        <summary type="html"><![CDATA[Merpay Advent Calendar 2021の3日目はGrowth Platform Teamのバックエンドエンジニアの @yukinasu がお送りします。 Growth Platform Teamはキャンペ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Redshiftのデータをサービス改善に役立てるデータ転送システム Queuery]]></title>
         <id>hatenablog://entry/13574176438038678459</id>
         <link href="https://techlife.cookpad.com/entry/2021/12/03/093000"/>
@@ -17647,6 +18567,16 @@ Queueryはこれらの問題を解決するためにあります。Queueryを使
 QueueryはRedshiftへUnload文を投げる役割を…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build&amp;サマーインターン2021 成果発表会レポート]]></title>
+        <id>16440</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211202-8418dee13b/"/>
+        <updated>2021-12-02T16:17:20.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、新卒採用チームのAoiです。 2021年夏に開催され総勢27名に参加いただいた「Build@Mercari 2021」および「Mercari Summer Internship 2021」の成果報告会を9月に […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -17684,6 +18614,16 @@ QueueryはRedshiftへUnload文を投げる役割を…]]></summary>
 2019年を迎えてすぐ、1/12にサブマリン氏が「HIKAKIN星のダ…]]></summary>
         <author>
             <name>BURNET</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[（続）長時間ランニングテストの勧め 〜開発用ノートPCの活用〜]]></title>
+        <id>15997</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211202-running-tests/"/>
+        <updated>2021-12-02T07:00:36.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2021 の2日目の記事です。 こんにちは。メルペイのBackendエンジニアの 柴田 です。 はじめに この記事は昨年書いた開発用ノートPCを活用して長時間ラン […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -17776,6 +18716,16 @@ KOBA789 個人として
 明日も書く。]]></summary>
         <author>
             <name>Write and Run</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルペイ VPoE による2021年の振り返り]]></title>
+        <id>16350</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211130-c8bd6dd7cd/"/>
+        <updated>2021-12-01T09:30:58.000Z</updated>
+        <summary type="html"><![CDATA[こんにちはこんにちは。 Merpay Advent Calendar の1日目を、メルペイ VPoE の @hidek がお届けします。 はじめに 今年もあっという間で、12月に入り残りわずかとなり、Advent Cal […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -18082,6 +19032,16 @@ https://www.metatft.com/units
         <summary type="html"><![CDATA[本サイトは自作の Markdown ビルダを使っていたが、色々と気に食わない部分があったのでフルスクラッチで作り直し、それにともなってサイトの刷新を実施した。必要だった要件や、意思決定を作業ログとして記す。]]></summary>
         <author>
             <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社の開発における工夫〜 を開催しました！ #kubernetes_casualtalk]]></title>
+        <id>15882</id>
+        <link href="https://engineering.mercari.com/blog/entry/20211125-1f0c397b0a/"/>
+        <updated>2021-11-29T10:00:01.000Z</updated>
+        <summary type="html"><![CDATA[2021年10月7日に、『Kubernetes Casual Talk 〜Ubie、CA、メルペイ各社の開発における工夫〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくは […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
