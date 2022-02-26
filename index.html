@@ -20,6 +20,45 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank" rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Twilio Voice JavaScript 2.0 以降での複数着信の受け取り方</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/02/26/191116" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+Twilio コミュニティの中で、「1本目の着信が来た後、続けて2本目の着信が来たときに、1本目の着信を出られるようにしたい」というケースで質問をいただいた。まさにそのケースの対応を自分も実装したので、コードを含めて説明していければと思う。
+Twilio Voice JavaScript SDK の変更
+まず、v1 から v2 への 大枠の変更は以下の記事にまとめてある。
+www.bokukoko.info
+&quot;Device 実装の変更&quot; がさっと書いてあるが、これが実装する上では最も大きな影響を与えている。
+最も大きな変更点は何か。個人的には以下の違いが最も大きいと感じている。
+v1: 着信が来た順で最新の着信のみを受け取れていた
+v2: 着信が複数来たときに、そのどの着信を出るかを選択できるようになった
+この影響もあり、どうやら執筆時点で Twilio Voice JavaScript SDK のサンプルアプリでは、最もシンプルに着信を表示するだけの実装になっているようだ。
+ではどう実装していくか、詳細をコードを含めて説明していく。
+初期化コード
+まず答えから書くと、&quot;着信を受けているCallをJavaScript内で管理する&quot; ということになる。
+具体的なサンプルコードを書いてみる。
+let token &#x3D; getToken(); // access token
+let activeCall &#x3D; null; // 現在アクティブなCall
+let activeIncomingCalls &#x3D; {} // 現在着信を受けているCall
+
+function initTwilioClient(token) {
+  const twilio &#x3D; new Twilio.Device(token);
+
+  twilio.on(&#x27;registering…</span>
+                  </div>
+                    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220226/20220226191000.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://isitsutbustu-todoke.hatenablog.com/" target="_blank" rel="noopener">遺失物取扱所</a></h3>
           <section class="articles-per-source">
             <article>
@@ -24391,7 +24430,7 @@ https://www.metatft.com/units
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-26T10:04:49.416Z">2022-02-26T10:04:49.416Z</time>
+    <time id="build-timestamp" datetime="2022-02-26T11:03:24.618Z">2022-02-26T11:03:24.618Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

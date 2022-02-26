@@ -6113,6 +6113,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438067391543",
+          "author": null,
+          "description": "ども、@kimihom です。\n\nTwilio コミュニティの中で、「1本目の着信が来た後、続けて2本目の着信が来たときに、1本目の着信を出られるようにしたい」というケースで質問をいただいた。まさにそのケースの対応を自分も実装したので、コードを含めて説明していければと思う。\nTwilio Voice JavaScript SDK の変更\nまず、v1 から v2 への 大枠の変更は以下の記事にまとめてある。\nwww.bokukoko.info\n\"Device 実装の変更\" がさっと書いてあるが、これが実装する上では最も大きな影響を与えている。\n最も大きな変更点は何か。個人的には以下の違いが最も大きいと感じている。\nv1: 着信が来た順で最新の着信のみを受け取れていた\nv2: 着信が複数来たときに、そのどの着信を出るかを選択できるようになった\nこの影響もあり、どうやら執筆時点で Twilio Voice JavaScript SDK のサンプルアプリでは、最もシンプルに着信を表示するだけの実装になっているようだ。\nではどう実装していくか、詳細をコードを含めて説明していく。\n初期化コード\nまず答えから書くと、\"着信を受けているCallをJavaScript内で管理する\" ということになる。\n具体的なサンプルコードを書いてみる。\nlet token = getToken(); // access token\nlet activeCall = null; // 現在アクティブなCall\nlet activeIncomingCalls = {} // 現在着信を受けているCall\n\nfunction initTwilioClient(token) {\n  const twilio = new Twilio.Device(token);\n\n  twilio.on('registering…",
+          "link": "https://www.bokukoko.info/entry/2022/02/26/191116",
+          "publishedOn": "2022-02-26T10:11:16.000Z",
+          "wordCount": 367,
+          "title": "Twilio Voice JavaScript 2.0 以降での複数着信の受け取り方",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220226/20220226191000.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220226/20220226191000.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438066091917",
           "author": null,
           "description": "ども、@kimihom です。\n\n前回のインデックス貼り に続き、インデックス対応についての追記を記す。\n外部キー のインデックスの効果\nよく、関連する外部キーにインデックスをデフォルトで貼る書き方がある。\nclass CreateTweets < ActiveRecord::Migration[5.0]\n  def change\n    create_table :articles do |t|\n      t.string    :text\n      t.integer   :user_id, index: true\n    end\n  end\nend\n\n\n\nここでの user_id, index: true の箇所となる。さて、インデックスを貼ると、SELECT 文でインデックスが使われるようになるという点はわかりやすい。つまり以下のようなケースである。\n@user = User.find(params[:id])\n@articles = @user .articles\n=>\nSELECT * FROM articles WHERE user_id = ? ORDER BY id ASC LIMIT 100;\n\n\n\n最初は良かったけど、そのうち記事は基本的にグループ単位で取得するケースが出てくる。\n@user = User.find(params[:id])\n@articles = @user.group.articles\nSELECT * FROM articles WHERE group_id = ? ORDER BY id ASC LIMIT 100;\n\n\n\nこうなると、user_idでの絞り込みインデックスは不要になるケースがある。\n「group_id でインデックスを貼ったことだし、user_id のインデックスはもう用がないね。消そう」\nそして消した後、…",
