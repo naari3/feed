@@ -1686,22 +1686,7 @@
       "title": "開け閉め",
       "feedUrl": "https://hikido.hatenablog.com/rss",
       "siteUrl": "https://hikido.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438038380018",
-          "author": null,
-          "description": "結論\nPowertoysで「ビデオ会議のミュート」をオフにしたら治った。\n\n \n問題\n今週火曜日から、デスクトップPCでZoomに入ろうとすると「Zoomが予期せず終了します」というダイアログが出てクラッシュ、その後も繰り返し強制終了するようになった。\n手持ちのノートPC(Windows11)やAndroidスマホではこうした問題は出なかった。\n \n環境\n・OS: Windows 10 21H1\n・CPU: Intel Core i7 10700F\n・GPU: GeForce RTX 3060Ti\n・マイク: Blue Snowball iCE\n・カメラ: なし\n \nやったこと\n・デバイスドライバーの更新\n・Zoomのインストールフォルダの削除→再インストール\n・Zoomのダウングレード(2021年5月のものに)\n・再起動(無限回)\n \nエラーが起こる条件\n・Zoomへのサインイン後、ブラウザから戻るとき\n・Zoomのアプリから設定画面を開くとき\n・Zoom会議に入るとき(テストミーティングを含む)\n→すべて「外部からZoomダイアログを開くとき」だな……\n→グラボやCPUの問題ではなく、外部から強制終了されている？\n \n解決\nハードウェアアクセラレーション的な設定の問題か？と思って変更しようにも、設定画面を開くとクラッシュするので何もできず。\n「Zoom 起動しない」「Zoom crash」などで検索しまくっていたところ、\nZoom crash after 10 seconds - can't even log in - Zoom Community\nというフォーラムにたどり着き、そこでPowertoys(Windows純正の便利ツール)に原因があるという記述を発見。Githubを調べると\nPowerToys conflict with Zoom · Issue #14289 · microsoft/PowerToys · GitHub\nというIssueがあり、ここのバグ報告を読む限り\n \n\n「Powertoysの11月のアップデートで追加された ビデオ会議のミュート をオンにしていて、なおかつカメラを接続していない時に限りZoomが繰り返しクラッシュする」\n \nとのこと。\n \n治った\nということで、「ビデオ会議のミュート」を設定画面からオフにしたら治った。先週くらいにPowertoysを手動でアップデートした際にこの機能が追加されてしまったっぽい。\n \nバグが無かったノートPCにもPowertoysは入れていた(し、更新もしていた)けど、Webカメラが内蔵されていたから問題なかったみたい。\nその後Powertoysを最新版にアプデしたら、「ビデオ会議のミュート」をオンに戻してもZoomが落ちなくなった。",
-          "link": "https://hikido.hatenablog.com/entry/2021/12/01/142856",
-          "publishedOn": "2021-12-01T05:28:56.000Z",
-          "wordCount": 138,
-          "title": "【Powertoys】ミーティング参加時にZoomが繰り返し落ちる問題とその解決策【お前か】",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hikido/20211201/20211201140601.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        }
-      ]
+      "articles": []
     },
     {
       "title": "hirausan",
@@ -4596,20 +4581,6 @@
           "title": "2021年に見つけたいい音楽 by Lazhward",
           "enclosure": {
             "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/mu_records/20211201/20211201165424.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
-        },
-        {
-          "id": "hatenablog://entry/13574176438038381149",
-          "author": null,
-          "description": "ルギア爆誕",
-          "link": "https://mu-records.hatenablog.com/entry/2021/12/01/143402",
-          "publishedOn": "2021-12-01T05:34:02.000Z",
-          "wordCount": 74,
-          "title": "無レコ爆誕",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/mu_records/20211201/20211201143355.jpg",
             "type": "image/jpeg",
             "length": "0"
           }

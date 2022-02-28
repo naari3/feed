@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-02-28T17:14:26.657Z</updated>
+    <updated>2022-02-28T18:08:22.120Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -19220,71 +19220,6 @@ Kyashに入金する
 ブログPro]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[無レコ爆誕]]></title>
-        <id>hatenablog://entry/13574176438038381149</id>
-        <link href="https://mu-records.hatenablog.com/entry/2021/12/01/143402"/>
-        <updated>2021-12-01T05:34:02.000Z</updated>
-        <summary type="html"><![CDATA[ルギア爆誕]]></summary>
-        <author>
-            <name>無責任レコーズ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【Powertoys】ミーティング参加時にZoomが繰り返し落ちる問題とその解決策【お前か】]]></title>
-        <id>hatenablog://entry/13574176438038380018</id>
-        <link href="https://hikido.hatenablog.com/entry/2021/12/01/142856"/>
-        <updated>2021-12-01T05:28:56.000Z</updated>
-        <summary type="html"><![CDATA[結論
-Powertoysで「ビデオ会議のミュート」をオフにしたら治った。
-
- 
-問題
-今週火曜日から、デスクトップPCでZoomに入ろうとすると「Zoomが予期せず終了します」というダイアログが出てクラッシュ、その後も繰り返し強制終了するようになった。
-手持ちのノートPC(Windows11)やAndroidスマホではこうした問題は出なかった。
- 
-環境
-・OS: Windows 10 21H1
-・CPU: Intel Core i7 10700F
-・GPU: GeForce RTX 3060Ti
-・マイク: Blue Snowball iCE
-・カメラ: なし
- 
-やったこと
-・デバイスドライバーの更新
-・Zoomのインストールフォルダの削除→再インストール
-・Zoomのダウングレード(2021年5月のものに)
-・再起動(無限回)
- 
-エラーが起こる条件
-・Zoomへのサインイン後、ブラウザから戻るとき
-・Zoomのアプリから設定画面を開くとき
-・Zoom会議に入るとき(テストミーティングを含む)
-→すべて「外部からZoomダイアログを開くとき」だな……
-→グラボやCPUの問題ではなく、外部から強制終了されている？
- 
-解決
-ハードウェアアクセラレーション的な設定の問題か？と思って変更しようにも、設定画面を開くとクラッシュするので何もできず。
-「Zoom 起動しない」「Zoom crash」などで検索しまくっていたところ、
-Zoom crash after 10 seconds - can't even log in - Zoom Community
-というフォーラムにたどり着き、そこでPowertoys(Windows純正の便利ツール)に原因があるという記述を発見。Githubを調べると
-PowerToys conflict with Zoom · Issue #14289 · microsoft/PowerToys · GitHub
-というIssueがあり、ここのバグ報告を読む限り
- 
-
-「Powertoysの11月のアップデートで追加された ビデオ会議のミュート をオンにしていて、なおかつカメラを接続していない時に限りZoomが繰り返しクラッシュする」
- 
-とのこと。
- 
-治った
-ということで、「ビデオ会議のミュート」を設定画面からオフにしたら治った。先週くらいにPowertoysを手動でアップデートした際にこの機能が追加されてしまったっぽい。
- 
-バグが無かったノートPCにもPowertoysは入れていた(し、更新もしていた)けど、Webカメラが内蔵されていたから問題なかったみたい。
-その後Powertoysを最新版にアプデしたら、「ビデオ会議のミュート」をオンに戻してもZoomが落ちなくなった。]]></summary>
-        <author>
-            <name>開け閉め</name>
         </author>
     </entry>
 </feed>
