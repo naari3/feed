@@ -5355,6 +5355,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438068285235",
+          "author": null,
+          "description": "はてなブログでは、日々さまざまな機能修正・改善を行っています。多くのユーザーさまに関係する機能は、この開発ブログにて個別にお知らせしています。その一方で、目に見えづらい改善や、影響する方が少ない機能の修正も進めています。本記事では、2022年2月に実施した機能修正・改善をダイジェストでお届けします。\n細かな機能修正・改善\n1.記事本文において自動リンクが不要な場面で、リンクされないようにしました\nはてなブログでは自動でリンクする機能を提供していますが、記事本文において自動リンクが不要と考えられる下記のHTML要素内では、URLやはてなブログタグにリンクしないようにしました。\nsummary要素\nbutton要素\noption要素\n2. 複数行を選択した際、入力補助ツールバーのボタンからリストにできるようになりました（はてな記法モード、Markdownモード）\nはてな記法モードとMarkdownモードにおいて、複数行を選択して「箇条書き」や「番号付きリスト」のボタンを押した際に、複数行がリストになるよう修正対応を行いました。\n3.各トピックの記事の表示件数が48件になりました\n各トピックに表示される記事の件数はこれまで24件でしたが、48件に増やしました。\nはてなブログトップページ上部の「トピック」よりご覧いただけます。\n4. ブログカードにrobotsタグ indexifembedded を追加しました\nはてなブログのブログカードはiframeとして提供しておりますが、ブログカード自体が検索結果に表示されるのを望まないため、noindexを指定しています。しかしながら、その影響で、ブログに掲載されたブログカードのコンテンツをGoogleが利用することができませんでした。\nindexifembedded というタグのサポートを開始したため、はてなブログのブログカードで対応いたしました。このタグを利用すると、検索結果に掲載されないようにしつつ、Googleがページのコンテンツとして利用することができるようになります。",
+          "link": "https://staff.hatenablog.com/entry/2022/03/01/150058",
+          "publishedOn": "2022-03-01T06:00:58.000Z",
+          "wordCount": 186,
+          "title": "はてなブログの2022年2月の機能修正・改善をお知らせします（4件）",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20220301/20220301115542.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20220301/20220301115542.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438067001715",
           "author": null,
           "description": "2022年2月24日より、はてなブログアプリでコメントが書けない不具合が発生しております。\nご利用の皆様にはご不便をおかけしておりますが、原因の特定はできており、修正対応を進めておりますので今しばらくお待ちください。\n追記 2022/02/25 15:00\n不具合の修正対応が完了しました。\n原因は予期しないJavascriptの挙動によるもので、不具合発生期間は2022年2月24日 16:25 ～ 2022年2月25日 14:21でした。\nお問い合わせ等でご報告いただいたユーザーの皆さま、ありがとうございました。\nこの度はご迷惑をおかけいたしまして申し訳ございませんでした。再発防止に努めてまいります。",
@@ -10038,6 +10053,113 @@
           "publishedOn": "2021-12-30T14:58:31.000Z",
           "wordCount": 173,
           "title": "Goodbye 2021"
+        }
+      ]
+    },
+    {
+      "title": "Wesley Aptekar-Cassels",
+      "feedUrl": "https://blog.wesleyac.com/feed.xml",
+      "siteUrl": "https://blog.wesleyac.com",
+      "articles": [
+        {
+          "id": "https://blog.wesleyac.com/posts/minify-and-gzip",
+          "author": null,
+          "description": "I've been doing a bit of work cleaning up the CSS on this blog in the past couple days — the CSS is from a template that I copied more than five years ago at this point, and it was pretty crufty even when I first got it.\nWhen I was poking around, I noticed that I had two separate media queries to check if the browser width was something that looked like a mobile device. This makes the CSS nicer to read, since the overrides can be right next to the things they're overriding, but it also makes the resulting CSS slightly larger. I minify my CSS using tdewolff/minify during the build, so I checked to see if it would collapse the two media query blocks into one. Doing so would be a somewhat complicated optimization, since the order that CSS rules are defined in can sometimes matter, but it woul…",
+          "link": "https://blog.wesleyac.com/posts/minify-and-gzip",
+          "publishedOn": "2022-02-21T16:00:00.000Z",
+          "wordCount": 587,
+          "title": "Minify and Gzip",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/linux-reset-usb",
+          "author": null,
+          "description": "I've recently started having issues with the USB stack on my Linux laptop getting itself wedged. Rebooting fixes the problem, but I'd rather not have to reboot, so I looked into ways to reset the USB stack without needing a reboot. Almost all of the answers on the internet about how to do so either do not work on modern Linux systems, or did not reset at low enough of a level to fix the specific problem I was having.\nThe solution is to unbind and rebind the USB controller to the xHCI driver. First, find the PCI bus number of the misbehaving USB controller, using lspci -D. Then, write that bus number to /sys/bus/pci/drivers/xhci_hcd/unbind, for instance, by running echo 0000:00:14.0 | sudo tee /sys/bus/pci/drivers/xhci_hcd/unbind (replacing 0000:00:14.0 with whatever the PCI bus number you found in the previous step was). This will disable the USB controller. Once you've done that, reenable it by writing the same bus number to /sys/bus/pci/drivers/xhci_hcd/bind.\nHere's a script that will do that all for you, in case it's useful:\n#!/usr/bin/env bash\n\nset -eo pipefail\n\nDEVICE=$(lspci -Dm | grep \"USB controller\" | cut -f1 -d' ' | head -n1)\n\necho $DEVICE > /sys/bus/pci/drivers/xhci_hcd/unbind\necho $DEVICE > /sys/bus/pci/drivers/xhci_hcd/bind\n\n\nYou may need to modify the grep for \"USB controller\", depending on how your USB controller identifies itself.",
+          "link": "https://blog.wesleyac.com/posts/linux-reset-usb",
+          "publishedOn": "2022-02-17T16:00:00.000Z",
+          "wordCount": 245,
+          "title": "How to reset the USB stack on Linux",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/snes-dev-6-sprites",
+          "author": null,
+          "description": "This is part six of my series on SNES development. You may want to start with the first post.\nIn the sixth, and likely final segment of this SNES tutorial, we're going to draw a sprite (or rather, an \"object\") on the screen! Once we're through with this, you should have basically everything you need to go off into the world and make SNES games all on your own :)\nAs usual, I recommend the Retro Game Mechanics Explained video on Objects as prerequisite background material.\nWe're going to allocate some space to save a copy of our OAM, which we'll DMA to the actual OAM memory every frame. We'll need to add a new palette for the sprites, and some new tiles. Then, we'll set sprite zero to use our tile and palette, and set its X and Y position. We'll make it a 16x16 sprite, because that's more in…",
+          "link": "https://blog.wesleyac.com/posts/snes-dev-6-sprites",
+          "publishedOn": "2022-02-09T16:00:00.000Z",
+          "wordCount": 625,
+          "title": "SNES Development Part 6: Sprites",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/snes-dev-5-dma",
+          "author": null,
+          "description": "This is part five of my series on SNES development. You may want to start with the first post.\nIn part three, I mentioned that in the future, we'd switch from using a loop to copy data into VRAM to using DMA. Well, the future is now!\nUsing DMA is much faster than using a loop, which makes it easier to load large amounts of data from ROM to memory, whether that's graphics, sprite data, palettes, levels, or anything else your heart desires. It'll be useful in the next part, where we'll want to quickly send the sprite data to the SNES.\nAs usual, I recommend watching the Retro Game Mechanics Explained video on DMA & HDMA first. You can stop watching once you get to the HDMA part if you'd like — only the DMA section is needed to understand this part.\nThe code for this part might seem a little s…",
+          "link": "https://blog.wesleyac.com/posts/snes-dev-5-dma",
+          "publishedOn": "2022-02-09T16:00:00.000Z",
+          "wordCount": 559,
+          "title": "SNES Development Part 5: DMA",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/snes-dev-4-nmi-and-vblank",
+          "author": null,
+          "description": "This is part four of my series on SNES development. You may want to start with the first post.\nLast time, we started reading controller inputs! However, we weren't able to get a tile to move around on the screen in response to the controller, because our code was running too fast. In this part, we'll look at how to slow down our main code so that it runs once per frame. We'll do this by modifying our NMI handler, which is called whenever the \"vblank\" period starts, once per frame. For context on what vblank is and how it works on the SNES, I recommend this video. This post will assume that you've watched it, or found the information in it from some other source.\nWe already have a NMI routine, which we set up in the very first part of this series. What we want to do is to make sure our code…",
+          "link": "https://blog.wesleyac.com/posts/snes-dev-4-nmi-and-vblank",
+          "publishedOn": "2022-02-09T16:00:00.000Z",
+          "wordCount": 540,
+          "title": "SNES Development Part 4: NMIs and vblank",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/snes-dev-3-input",
+          "author": null,
+          "description": "This is part three of my series on SNES development. You may want to start with the first post.\nIn the previous part, we got some graphics rendered to the screen! Now, we're going to read some input from the controller (\"joypad\", in official Nintendo parlance) so we can move the graphics around.\nOn the whole, this is pretty simple — we'll enable \"auto-read\", which will cause the input data to be read into the JOY1L and JOY1H registers, which we can then read from to get the state of all of the buttons.\nWe enable the auto-read feature by setting the 0th bit of the NMITIMEN register.\nThat's really all you need to know to get input working! You can see the example code and diff as per usual.\nThe example code just waits to write the tile to the screen until the down button is pressed.\nNow that you can read input, there's plenty of interesting stuff you can do! I'd recommend:\nChange which button is used to render the tile.\n\n\nMake a file that has constants like JOYH_UP, JOYH_DOWN, etc, so you don't have to keep looking up the bitmasks.\n\nMake different buttons render different tiles.\nIt might be tempting to jump right in and try to make a tile you can move around, but that's not going to work very well just yet — since this code is running in a tight loop, it'll move way too fast to be controllable at all. The next part will cover synchronizing with vblank so that we can get a fixed framerate.",
+          "link": "https://blog.wesleyac.com/posts/snes-dev-3-input",
+          "publishedOn": "2022-02-09T16:00:00.000Z",
+          "wordCount": 283,
+          "title": "SNES Development Part 3: Input",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/snes-dev-2-background-graphics",
+          "author": null,
+          "description": "This is part two of my series on SNES development. You may want to read the previous post first.\nNow that we have a simple SNES ROM, let's add some graphics. In this post, we'll draw some graphics to the background. There are many explanations of the SNES background graphics architecture online, so I won't bother repeating those here — I recommend watching the Retro Game Mechanics Explained videos on Graphics & Palettes, Backgrounds & Rendering, and Background Modes. I don't usually recommend videos, but these are the best explanations I've found of this topic, in any format. This blog post is a reasonable general overview as well, but it has less information than the videos.\nThe general gist of things is that we're going to set up a palette, which will give us some colors we can use, just…",
+          "link": "https://blog.wesleyac.com/posts/snes-dev-2-background-graphics",
+          "publishedOn": "2022-02-09T16:00:00.000Z",
+          "wordCount": 936,
+          "title": "SNES Development Part 2: Background Graphics",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/snes-dev-1-getting-started",
+          "author": null,
+          "description": "I fell down the rabbit hole making a homebrew SNES game a few days ago, and since I couldn't find many good resources, I figured I'd write something of a tutorial.\nThere are lots of resources out there for writing NES games, but way fewer for SNES games — I think there are a few reasons for this. First, the NES is much simpler than the SNES — this is true of both the NES hardware itself, but also of the 6502 chip as opposed to the 65816 used in the SNES. Many people have an almost religious connection to the 6502, whereas the 65816 is pretty clearly a backwards-compatible hack of an architecture. Secondly, the NES is nostalgic for people who likely learned to program by writing assembly, whereas people for whom the SNES holds nostalgia are probably around a decade older, and were more like…",
+          "link": "https://blog.wesleyac.com/posts/snes-dev-1-getting-started",
+          "publishedOn": "2022-02-09T16:00:00.000Z",
+          "wordCount": 1715,
+          "title": "SNES Development Part 1: Getting Started",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/the-curse-of-nixos",
+          "author": null,
+          "description": "I've used NixOS as the only OS on my laptop for around three years at this point. Installing it has felt sort of like a curse: on the one hand, it's so clearly the only operating system that actually gets how package management should be done. After using it, I can't go back to anything else. On the other hand, it's extremely complicated constantly changing software that requires configuration with the second-worst homegrown config programming language I've ever used1.\nI don't think that NixOS is the future, but I do absolutely think that the ideas in it are, so I want to write about what I think it gets right and what it gets wrong, in the hopes that other projects can take note. As such, this post will not assume knowledge of NixOS — if you've used NixOS significantly, there probably isn…",
+          "link": "https://blog.wesleyac.com/posts/the-curse-of-nixos",
+          "publishedOn": "2022-01-23T16:00:00.000Z",
+          "wordCount": 1688,
+          "title": "The Curse of NixOS",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.wesleyac.com/posts/how-i-run-my-servers",
+          "author": null,
+          "description": "I've been writing recently about servers and internet infrastructure1. A lot of this writing is predicated on running server software on a VM or physical machine, rather than using a more cloudy solution, which is somewhat unpopular these days. However, I think it's a pretty reasonable way to do things, and it's not as difficult as many people make it out to be. This post is a simple description of how I run most of the servers I operate. It mostly describes running server software that I've written myself, since that allows me to make it much more robust and easy to deploy than the vast majority of off-the-shelf software is.\nThis describes roughly the setup for thoughts.page, hanabi.site, cgmserver, phonebridge, and a few other services.\nThese apps run on DigitalOcean VMs — the $5/month t…",
+          "link": "https://blog.wesleyac.com/posts/how-i-run-my-servers",
+          "publishedOn": "2022-01-20T16:00:00.000Z",
+          "wordCount": 1097,
+          "title": "How I run my servers",
+          "imageUrl": null
         }
       ]
     },

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-01T05:07:45.940Z</updated>
+    <updated>2022-03-01T06:03:18.364Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,30 @@
         <summary type="html"><![CDATA[こんにちは！ソウゾウの Software Engineer の @takatoshiono です。連載：メルカリShops 開発の裏側 Vol.2 の11日目を担当させていただきます。 この記事ではメルカリShopsを開 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[はてなブログの2022年2月の機能修正・改善をお知らせします（4件）]]></title>
+        <id>hatenablog://entry/13574176438068285235</id>
+        <link href="https://staff.hatenablog.com/entry/2022/03/01/150058"/>
+        <updated>2022-03-01T06:00:58.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、日々さまざまな機能修正・改善を行っています。多くのユーザーさまに関係する機能は、この開発ブログにて個別にお知らせしています。その一方で、目に見えづらい改善や、影響する方が少ない機能の修正も進めています。本記事では、2022年2月に実施した機能修正・改善をダイジェストでお届けします。
+細かな機能修正・改善
+1.記事本文において自動リンクが不要な場面で、リンクされないようにしました
+はてなブログでは自動でリンクする機能を提供していますが、記事本文において自動リンクが不要と考えられる下記のHTML要素内では、URLやはてなブログタグにリンクしないようにしました。
+summary要素
+button要素
+option要素
+2. 複数行を選択した際、入力補助ツールバーのボタンからリストにできるようになりました（はてな記法モード、Markdownモード）
+はてな記法モードとMarkdownモードにおいて、複数行を選択して「箇条書き」や「番号付きリスト」のボタンを押した際に、複数行がリストになるよう修正対応を行いました。
+3.各トピックの記事の表示件数が48件になりました
+各トピックに表示される記事の件数はこれまで24件でしたが、48件に増やしました。
+はてなブログトップページ上部の「トピック」よりご覧いただけます。
+4. ブログカードにrobotsタグ indexifembedded を追加しました
+はてなブログのブログカードはiframeとして提供しておりますが、ブログカード自体が検索結果に表示されるのを望まないため、noindexを指定しています。しかしながら、その影響で、ブログに掲載されたブログカードのコンテンツをGoogleが利用することができませんでした。
+indexifembedded というタグのサポートを開始したため、はてなブログのブログカードで対応いたしました。このタグを利用すると、検索結果に掲載されないようにしつつ、Googleがページのコンテンツとして利用することができるようになります。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
@@ -1643,6 +1667,17 @@ Amazon
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Minify and Gzip]]></title>
+        <id>https://blog.wesleyac.com/posts/minify-and-gzip</id>
+        <link href="https://blog.wesleyac.com/posts/minify-and-gzip"/>
+        <updated>2022-02-21T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I've been doing a bit of work cleaning up the CSS on this blog in the past couple days — the CSS is from a template that I copied more than five years ago at this point, and it was pretty crufty even when I first got it.
+When I was poking around, I noticed that I had two separate media queries to check if the browser width was something that looked like a mobile device. This makes the CSS nicer to read, since the overrides can be right next to the things they're overriding, but it also makes the resulting CSS slightly larger. I minify my CSS using tdewolff/minify during the build, so I checked to see if it would collapse the two media query blocks into one. Doing so would be a somewhat complicated optimization, since the order that CSS rules are defined in can sometimes matter, but it woul…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[岸だけが寝ちゃう街１選　結果発表]]></title>
         <id>https://note.com/tough_mad/n/nfa365bef3d09</id>
         <link href="https://note.com/tough_mad/n/nfa365bef3d09"/>
@@ -2509,6 +2544,29 @@ Demolition
 続きをみる]]></summary>
         <author>
             <name>大腸菌デリバリーサービス</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to reset the USB stack on Linux]]></title>
+        <id>https://blog.wesleyac.com/posts/linux-reset-usb</id>
+        <link href="https://blog.wesleyac.com/posts/linux-reset-usb"/>
+        <updated>2022-02-17T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I've recently started having issues with the USB stack on my Linux laptop getting itself wedged. Rebooting fixes the problem, but I'd rather not have to reboot, so I looked into ways to reset the USB stack without needing a reboot. Almost all of the answers on the internet about how to do so either do not work on modern Linux systems, or did not reset at low enough of a level to fix the specific problem I was having.
+The solution is to unbind and rebind the USB controller to the xHCI driver. First, find the PCI bus number of the misbehaving USB controller, using lspci -D. Then, write that bus number to /sys/bus/pci/drivers/xhci_hcd/unbind, for instance, by running echo 0000:00:14.0 | sudo tee /sys/bus/pci/drivers/xhci_hcd/unbind (replacing 0000:00:14.0 with whatever the PCI bus number you found in the previous step was). This will disable the USB controller. Once you've done that, reenable it by writing the same bus number to /sys/bus/pci/drivers/xhci_hcd/bind.
+Here's a script that will do that all for you, in case it's useful:
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+DEVICE=$(lspci -Dm | grep "USB controller" | cut -f1 -d' ' | head -n1)
+
+echo $DEVICE > /sys/bus/pci/drivers/xhci_hcd/unbind
+echo $DEVICE > /sys/bus/pci/drivers/xhci_hcd/bind
+
+
+You may need to modify the grep for "USB controller", depending on how your USB controller identifies itself.]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
     <entry>
@@ -4275,6 +4333,91 @@ Amazon
         <summary type="html"><![CDATA[このインタビューではメルペイのフロントエンド開発を支える @ryotah 、 @yutapon 、@tokuda109 、 @dwj の4人に今取り組んでいることや、技術スタック、今後の展望などを聞いています。メルペイの […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SNES Development Part 6: Sprites]]></title>
+        <id>https://blog.wesleyac.com/posts/snes-dev-6-sprites</id>
+        <link href="https://blog.wesleyac.com/posts/snes-dev-6-sprites"/>
+        <updated>2022-02-09T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is part six of my series on SNES development. You may want to start with the first post.
+In the sixth, and likely final segment of this SNES tutorial, we're going to draw a sprite (or rather, an "object") on the screen! Once we're through with this, you should have basically everything you need to go off into the world and make SNES games all on your own :)
+As usual, I recommend the Retro Game Mechanics Explained video on Objects as prerequisite background material.
+We're going to allocate some space to save a copy of our OAM, which we'll DMA to the actual OAM memory every frame. We'll need to add a new palette for the sprites, and some new tiles. Then, we'll set sprite zero to use our tile and palette, and set its X and Y position. We'll make it a 16x16 sprite, because that's more in…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SNES Development Part 5: DMA]]></title>
+        <id>https://blog.wesleyac.com/posts/snes-dev-5-dma</id>
+        <link href="https://blog.wesleyac.com/posts/snes-dev-5-dma"/>
+        <updated>2022-02-09T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is part five of my series on SNES development. You may want to start with the first post.
+In part three, I mentioned that in the future, we'd switch from using a loop to copy data into VRAM to using DMA. Well, the future is now!
+Using DMA is much faster than using a loop, which makes it easier to load large amounts of data from ROM to memory, whether that's graphics, sprite data, palettes, levels, or anything else your heart desires. It'll be useful in the next part, where we'll want to quickly send the sprite data to the SNES.
+As usual, I recommend watching the Retro Game Mechanics Explained video on DMA & HDMA first. You can stop watching once you get to the HDMA part if you'd like — only the DMA section is needed to understand this part.
+The code for this part might seem a little s…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SNES Development Part 4: NMIs and vblank]]></title>
+        <id>https://blog.wesleyac.com/posts/snes-dev-4-nmi-and-vblank</id>
+        <link href="https://blog.wesleyac.com/posts/snes-dev-4-nmi-and-vblank"/>
+        <updated>2022-02-09T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is part four of my series on SNES development. You may want to start with the first post.
+Last time, we started reading controller inputs! However, we weren't able to get a tile to move around on the screen in response to the controller, because our code was running too fast. In this part, we'll look at how to slow down our main code so that it runs once per frame. We'll do this by modifying our NMI handler, which is called whenever the "vblank" period starts, once per frame. For context on what vblank is and how it works on the SNES, I recommend this video. This post will assume that you've watched it, or found the information in it from some other source.
+We already have a NMI routine, which we set up in the very first part of this series. What we want to do is to make sure our code…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SNES Development Part 3: Input]]></title>
+        <id>https://blog.wesleyac.com/posts/snes-dev-3-input</id>
+        <link href="https://blog.wesleyac.com/posts/snes-dev-3-input"/>
+        <updated>2022-02-09T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is part three of my series on SNES development. You may want to start with the first post.
+In the previous part, we got some graphics rendered to the screen! Now, we're going to read some input from the controller ("joypad", in official Nintendo parlance) so we can move the graphics around.
+On the whole, this is pretty simple — we'll enable "auto-read", which will cause the input data to be read into the JOY1L and JOY1H registers, which we can then read from to get the state of all of the buttons.
+We enable the auto-read feature by setting the 0th bit of the NMITIMEN register.
+That's really all you need to know to get input working! You can see the example code and diff as per usual.
+The example code just waits to write the tile to the screen until the down button is pressed.
+Now that you can read input, there's plenty of interesting stuff you can do! I'd recommend:
+Change which button is used to render the tile.
+
+
+Make a file that has constants like JOYH_UP, JOYH_DOWN, etc, so you don't have to keep looking up the bitmasks.
+
+Make different buttons render different tiles.
+It might be tempting to jump right in and try to make a tile you can move around, but that's not going to work very well just yet — since this code is running in a tight loop, it'll move way too fast to be controllable at all. The next part will cover synchronizing with vblank so that we can get a fixed framerate.]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SNES Development Part 2: Background Graphics]]></title>
+        <id>https://blog.wesleyac.com/posts/snes-dev-2-background-graphics</id>
+        <link href="https://blog.wesleyac.com/posts/snes-dev-2-background-graphics"/>
+        <updated>2022-02-09T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is part two of my series on SNES development. You may want to read the previous post first.
+Now that we have a simple SNES ROM, let's add some graphics. In this post, we'll draw some graphics to the background. There are many explanations of the SNES background graphics architecture online, so I won't bother repeating those here — I recommend watching the Retro Game Mechanics Explained videos on Graphics & Palettes, Backgrounds & Rendering, and Background Modes. I don't usually recommend videos, but these are the best explanations I've found of this topic, in any format. This blog post is a reasonable general overview as well, but it has less information than the videos.
+The general gist of things is that we're going to set up a palette, which will give us some colors we can use, just…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SNES Development Part 1: Getting Started]]></title>
+        <id>https://blog.wesleyac.com/posts/snes-dev-1-getting-started</id>
+        <link href="https://blog.wesleyac.com/posts/snes-dev-1-getting-started"/>
+        <updated>2022-02-09T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I fell down the rabbit hole making a homebrew SNES game a few days ago, and since I couldn't find many good resources, I figured I'd write something of a tutorial.
+There are lots of resources out there for writing NES games, but way fewer for SNES games — I think there are a few reasons for this. First, the NES is much simpler than the SNES — this is true of both the NES hardware itself, but also of the 6502 chip as opposed to the 65816 used in the SNES. Many people have an almost religious connection to the 6502, whereas the 65816 is pretty clearly a backwards-compatible hack of an architecture. Secondly, the NES is nostalgic for people who likely learned to program by writing assembly, whereas people for whom the SNES holds nostalgia are probably around a decade older, and were more like…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
     <entry>
@@ -7921,6 +8064,17 @@ PS5は持っていない↩]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[The Curse of NixOS]]></title>
+        <id>https://blog.wesleyac.com/posts/the-curse-of-nixos</id>
+        <link href="https://blog.wesleyac.com/posts/the-curse-of-nixos"/>
+        <updated>2022-01-23T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I've used NixOS as the only OS on my laptop for around three years at this point. Installing it has felt sort of like a curse: on the one hand, it's so clearly the only operating system that actually gets how package management should be done. After using it, I can't go back to anything else. On the other hand, it's extremely complicated constantly changing software that requires configuration with the second-worst homegrown config programming language I've ever used1.
+I don't think that NixOS is the future, but I do absolutely think that the ideas in it are, so I want to write about what I think it gets right and what it gets wrong, in the hopes that other projects can take note. As such, this post will not assume knowledge of NixOS — if you've used NixOS significantly, there probably isn…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[nikki_20220123「オルタナなボカロ曲」]]></title>
         <id>hatenablog://entry/13574176438055885319</id>
         <link href="https://isitsutbustu-todoke.hatenablog.com/entry/2022/01/23/232437"/>
@@ -8744,6 +8898,18 @@ The post リップシンク支援Pythonスクリプト RPPtoEXO(Lyric) (REAPER�
 以上。]]></summary>
         <author>
             <name>kaikityouの日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How I run my servers]]></title>
+        <id>https://blog.wesleyac.com/posts/how-i-run-my-servers</id>
+        <link href="https://blog.wesleyac.com/posts/how-i-run-my-servers"/>
+        <updated>2022-01-20T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I've been writing recently about servers and internet infrastructure1. A lot of this writing is predicated on running server software on a VM or physical machine, rather than using a more cloudy solution, which is somewhat unpopular these days. However, I think it's a pretty reasonable way to do things, and it's not as difficult as many people make it out to be. This post is a simple description of how I run most of the servers I operate. It mostly describes running server software that I've written myself, since that allows me to make it much more robust and easy to deploy than the vast majority of off-the-shelf software is.
+This describes roughly the setup for thoughts.page, hanabi.site, cgmserver, phonebridge, and a few other services.
+These apps run on DigitalOcean VMs — the $5/month t…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
     <entry>
