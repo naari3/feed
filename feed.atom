@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-02T04:09:00.362Z</updated>
+    <updated>2022-03-02T05:04:49.896Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -97,6 +97,16 @@ option要素
 indexifembedded というタグのサポートを開始したため、はてなブログのブログカードで対応いたしました。このタグを利用すると、検索結果に掲載されないようにしつつ、Googleがページのコンテンツとして利用することができるようになります。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日記]]></title>
+        <id>https://r7kamura.com/articles/2022-03-01-diary</id>
+        <link href="https://r7kamura.com/articles/2022-03-01-diary"/>
+        <updated>2022-03-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[暖かい1日だった。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
@@ -19262,16 +19272,6 @@ Queueryはこれらの問題を解決するためにあります。Queueryを使
 QueueryはRedshiftへUnload文を投げる役割を…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Build&amp;サマーインターン2021 成果発表会レポート]]></title>
-        <id>16440</id>
-        <link href="https://engineering.mercari.com/blog/entry/20211202-8418dee13b/"/>
-        <updated>2021-12-02T16:17:20.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、新卒採用チームのAoiです。 2021年夏に開催され総勢27名に参加いただいた「Build@Mercari 2021」および「Mercari Summer Internship 2021」の成果報告会を9月に […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
