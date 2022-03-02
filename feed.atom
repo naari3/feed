@@ -2,10 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-02T10:08:22.324Z</updated>
+    <updated>2022-03-02T11:04:08.728Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[書籍のサンプルコードと違う言語で写経することの意義]]></title>
+        <id>hatenablog://entry/13574176438068727749</id>
+        <link href="https://kmizu.hatenablog.com/entry/2022/03/02/191020"/>
+        <updated>2022-03-02T10:10:20.000Z</updated>
+        <summary type="html"><![CDATA[こんばんは、みずしまです。最近は主に強化学習の勉強をしているのですが、読み進めていく過程で少し悩みの種がありました。それは、サンプルコードの扱いです。サンプルコードはPythonで書かれていて、実際に書き写すことが私にとって理解の助けになるのは確かなように思えましたが、一方で過去の経験から、そのまま写経すると「スルスルと動いてしまってフィードバックとして不十分そうだな」と感じたので、Scalaで書いてみることにしました。
+　別にScalaでなくて、JavaでもRubyでもあるいはJuliaでも良かったのですがそれはともかくとして、元のサンプルコードと違う言語で書くことで得られる利点も結構あるものだなというのが正直に感じた点です。たとえば、np.mean(...)というコードが書籍では出て来るわけですが、「そういえばScalaでmeanと同じことをするにはどうしたらいいんだっけ？」と考えることになりますし、グラフをプロットするライブラリでいいのあったっけ……と考えたところから、Plotyを見つけることにもつながりました。
+　Scalaは典型的なオブジェクト指向言語でもあるため、サンプルコードをScalaに移すのはさほど難しくはありません。しかし、やはり違う言語ですから移植する時には相応に色々なことを考える必要があります。たとえば、Pythonはリストも辞書もデフォルトで可変ですがScalaではデフォルトでは不変です。なので、可変なコレクションを見つけたときには「うーん。ここは、scala.collection.mutabe.Bufferで表現すべきだろうか」とか、あるいは「varで不変コレクションを扱うべきだろうか」とか考えるわけです。
+　また、ごく一部のコードを除いてPythonコードのほとんどには型注釈がついていないので「rewardsの型は明示されていないけど、文脈的にSeq[Double]が相当するな」など考えながら移植する必要があります。
+　移植するにはコードの意味をより深く理解しなければならないため、単なる写経よりも理解度が深まったというのが正直な感想です。単に忠実に元のコードを書き写していただけでは（コードの意味を考えずとも動いてしまうため）このような効果は得られなかっただろうことが予測されるので、人によっては「違う言語で写経」は学習のために役立つかもしれません（既に実践している方も多いかとは思いますが）。
+　あんまり生産的でないですがそんなことを感じた今日一日でした。なお、元の本はこちら
+https://www.amazon.co.jp/dp/B082HNNGQG/
+　です。サンプルコードの一部をScala化したのがこんな感じです。
+package com.github.kmizu.scala_ml
+import scala.math.random
+
+case class CoinToss(var headProbs: Seq[Double], var maxEpisodeSteps: Int = 30) {
+  private var tossCount: Int = 0
+
+  def length: Int = headProbs.length
+
+  def reset(): Unit = {
+    tossCount = 0
+  }
+
+  def step(action: Int): (Double, Boolean) = {
+    val `final`= maxEpisodeSteps - 1
+    if(tossCount > `final`) {
+      throw new RuntimeException(
+        """The step count exceeded maximum.
+          |Please reset env.""".stripMargin
+      )
+    }
+    val done = tossCount == `final`
+
+    if(action >= headProbs.length) {
+      throw new Exception(s"The No.${action} coin doesn't exist")
+    }
+    val headProb = headProbs(action)
+    val reward = if(random() < headProb) 1.0 else 0.0
+    tossCount += 1
+    (reward, done)
+  }
+}]]></summary>
+        <author>
+            <name>kmizuの日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Souzoh QAのミッション・バリューを作りました]]></title>
         <id>19859</id>

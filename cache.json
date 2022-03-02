@@ -3277,6 +3277,21 @@
       "siteUrl": "https://kmizu.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438068727749",
+          "author": null,
+          "description": "こんばんは、みずしまです。最近は主に強化学習の勉強をしているのですが、読み進めていく過程で少し悩みの種がありました。それは、サンプルコードの扱いです。サンプルコードはPythonで書かれていて、実際に書き写すことが私にとって理解の助けになるのは確かなように思えましたが、一方で過去の経験から、そのまま写経すると「スルスルと動いてしまってフィードバックとして不十分そうだな」と感じたので、Scalaで書いてみることにしました。\n　別にScalaでなくて、JavaでもRubyでもあるいはJuliaでも良かったのですがそれはともかくとして、元のサンプルコードと違う言語で書くことで得られる利点も結構あるものだなというのが正直に感じた点です。たとえば、np.mean(...)というコードが書籍では出て来るわけですが、「そういえばScalaでmeanと同じことをするにはどうしたらいいんだっけ？」と考えることになりますし、グラフをプロットするライブラリでいいのあったっけ……と考えたところから、Plotyを見つけることにもつながりました。\n　Scalaは典型的なオブジェクト指向言語でもあるため、サンプルコードをScalaに移すのはさほど難しくはありません。しかし、やはり違う言語ですから移植する時には相応に色々なことを考える必要があります。たとえば、Pythonはリストも辞書もデフォルトで可変ですがScalaではデフォルトでは不変です。なので、可変なコレクションを見つけたときには「うーん。ここは、scala.collection.mutabe.Bufferで表現すべきだろうか」とか、あるいは「varで不変コレクションを扱うべきだろうか」とか考えるわけです。\n　また、ごく一部のコードを除いてPythonコードのほとんどには型注釈がついていないので「rewardsの型は明示されていないけど、文脈的にSeq[Double]が相当するな」など考えながら移植する必要があります。\n　移植するにはコードの意味をより深く理解しなければならないため、単なる写経よりも理解度が深まったというのが正直な感想です。単に忠実に元のコードを書き写していただけでは（コードの意味を考えずとも動いてしまうため）このような効果は得られなかっただろうことが予測されるので、人によっては「違う言語で写経」は学習のために役立つかもしれません（既に実践している方も多いかとは思いますが）。\n　あんまり生産的でないですがそんなことを感じた今日一日でした。なお、元の本はこちら\nhttps://www.amazon.co.jp/dp/B082HNNGQG/\n　です。サンプルコードの一部をScala化したのがこんな感じです。\npackage com.github.kmizu.scala_ml\nimport scala.math.random\n\ncase class CoinToss(var headProbs: Seq[Double], var maxEpisodeSteps: Int = 30) {\n  private var tossCount: Int = 0\n\n  def length: Int = headProbs.length\n\n  def reset(): Unit = {\n    tossCount = 0\n  }\n\n  def step(action: Int): (Double, Boolean) = {\n    val `final`= maxEpisodeSteps - 1\n    if(tossCount > `final`) {\n      throw new RuntimeException(\n        \"\"\"The step count exceeded maximum.\n          |Please reset env.\"\"\".stripMargin\n      )\n    }\n    val done = tossCount == `final`\n\n    if(action >= headProbs.length) {\n      throw new Exception(s\"The No.${action} coin doesn't exist\")\n    }\n    val headProb = headProbs(action)\n    val reward = if(random() < headProb) 1.0 else 0.0\n    tossCount += 1\n    (reward, done)\n  }\n}",
+          "link": "https://kmizu.hatenablog.com/entry/2022/03/02/191020",
+          "publishedOn": "2022-03-02T10:10:20.000Z",
+          "wordCount": 203,
+          "title": "書籍のサンプルコードと違う言語で写経することの意義",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438064476701",
           "author": null,
           "description": "注：誤解されないように最初にこの記事の意図を書いておくと、古典的な静的型付き言語VS.動的型付き言語の論争をするつもりはありません。これまで色々なプロジェクトを観察（風聞も含む）して来たところ、そういう傾向があるのではないかという仮説です。それと、文脈として主にWebアプリケーション開発する時のことを想定しており、それ以外のケースはいったん脇に置いています。\n　たとえば、色々な事例を見聞きするに、スタートアップ企業において動的型付き言語であるRubyのWebアプリケーションフレームワークであるRuby on Rails（RoR）は好まれる傾向にあります。近年のPythonの動向はさておき、未だにRoRの求人がかなり多いのも間違いない。で、何故だろうと考えた時に色々な人から聞くのが「とにかく最低限のアプリケーションを素早く作ることができる」ということなんですね。RoRが出た当初にあった、テンプレートエンジンとの手軽な連携というメリットが今どのくらいあるかはともかく、Webアプリケーションを立ち上げる時、ほとんどのプロジェクトはまずRDBを使うでしょうから、ActiveRecordが標準で備わっているRoRには独特の強みがあるように思います。\n　そして、ActiveRecordのような、一見メソッド呼び出しに見えるものがDBアクセスになるような柔軟なライブラリを作りやすいのは、メタプログラミングが容易という部分があるにせよ、動的な型付き言語ならでは（あるいは静的な型が「ない」から）というのがあります。実際、ActiveRecordをガリガリに使われたRubyコードに静的な型をつけようとしても（たとえば、Ruby 3のRBSにのっとった型注釈を使っても）かなり苦しい。他にも色々ありますが、静的な型がない言語というよりそれを前提に作られたライブラリやフレームワークは、「短期間にとり…",

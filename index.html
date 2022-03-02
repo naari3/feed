@@ -20,6 +20,61 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://kmizu.hatenablog.com/" target="_blank" rel="noopener">kmizuの日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">書籍のサンプルコードと違う言語で写経することの意義</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://kmizu.hatenablog.com/entry/2022/03/02/191020" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんばんは、みずしまです。最近は主に強化学習の勉強をしているのですが、読み進めていく過程で少し悩みの種がありました。それは、サンプルコードの扱いです。サンプルコードはPythonで書かれていて、実際に書き写すことが私にとって理解の助けになるのは確かなように思えましたが、一方で過去の経験から、そのまま写経すると「スルスルと動いてしまってフィードバックとして不十分そうだな」と感じたので、Scalaで書いてみることにしました。
+　別にScalaでなくて、JavaでもRubyでもあるいはJuliaでも良かったのですがそれはともかくとして、元のサンプルコードと違う言語で書くことで得られる利点も結構あるものだなというのが正直に感じた点です。たとえば、np.mean(...)というコードが書籍では出て来るわけですが、「そういえばScalaでmeanと同じことをするにはどうしたらいいんだっけ？」と考えることになりますし、グラフをプロットするライブラリでいいのあったっけ……と考えたところから、Plotyを見つけることにもつながりました。
+　Scalaは典型的なオブジェクト指向言語でもあるため、サンプルコードをScalaに移すのはさほど難しくはありません。しかし、やはり違う言語ですから移植する時には相応に色々なことを考える必要があります。たとえば、Pythonはリストも辞書もデフォルトで可変ですがScalaではデフォルトでは不変です。なので、可変なコレクションを見つけたときには「うーん。ここは、scala.collection.mutabe.Bufferで表現すべきだろうか」とか、あるいは「varで不変コレクションを扱うべきだろうか」とか考えるわけです。
+　また、ごく一部のコードを除いてPythonコードのほとんどには型注釈がついていないので「rewardsの型は明示されていないけど、文脈的にSeq[Double]が相当するな」など考えながら移植する必要があります。
+　移植するにはコードの意味をより深く理解しなければならないため、単なる写経よりも理解度が深まったというのが正直な感想です。単に忠実に元のコードを書き写していただけでは（コードの意味を考えずとも動いてしまうため）このような効果は得られなかっただろうことが予測されるので、人によっては「違う言語で写経」は学習のために役立つかもしれません（既に実践している方も多いかとは思いますが）。
+　あんまり生産的でないですがそんなことを感じた今日一日でした。なお、元の本はこちら
+https://www.amazon.co.jp/dp/B082HNNGQG/
+　です。サンプルコードの一部をScala化したのがこんな感じです。
+package com.github.kmizu.scala_ml
+import scala.math.random
+
+case class CoinToss(var headProbs: Seq[Double], var maxEpisodeSteps: Int &#x3D; 30) {
+  private var tossCount: Int &#x3D; 0
+
+  def length: Int &#x3D; headProbs.length
+
+  def reset(): Unit &#x3D; {
+    tossCount &#x3D; 0
+  }
+
+  def step(action: Int): (Double, Boolean) &#x3D; {
+    val &#x60;final&#x60;&#x3D; maxEpisodeSteps - 1
+    if(tossCount &gt; &#x60;final&#x60;) {
+      throw new RuntimeException(
+        &quot;&quot;&quot;The step count exceeded maximum.
+          |Please reset env.&quot;&quot;&quot;.stripMargin
+      )
+    }
+    val done &#x3D; tossCount &#x3D;&#x3D; &#x60;final&#x60;
+
+    if(action &gt;&#x3D; headProbs.length) {
+      throw new Exception(s&quot;The No.${action} coin doesn&#x27;t exist&quot;)
+    }
+    val headProb &#x3D; headProbs(action)
+    val reward &#x3D; if(random() &lt; headProb) 1.0 else 0.0
+    tossCount +&#x3D; 1
+    (reward, done)
+  }
+}</span>
+                  </div>
+                    <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank" rel="noopener">メルカリエンジニアリングブログ</a></h3>
           <section class="articles-per-source">
             <article>
@@ -24575,7 +24630,7 @@ QueueryはRedshiftへUnload文を投げる役割を…</span>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-02T10:08:22.264Z">2022-03-02T10:08:22.264Z</time>
+    <time id="build-timestamp" datetime="2022-03-02T11:04:08.662Z">2022-03-02T11:04:08.662Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
