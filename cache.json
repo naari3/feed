@@ -6046,20 +6046,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438038678459",
-          "author": null,
-          "description": "こんにちは、技術部データ基盤グループの佐藤です。この記事では最近業務として主に取り組んでいたDWHから外部へのデータ転送基盤であるQueuery（きゅうり）について、OSSとしてGitHubへの公開しましたのでこの記事でご紹介をします。\ngithub.com\nQueueryというシステムは2017年の春頃にid:koba789の手により作られ、クックパッドのデータ基盤における重要な立ち位置を担っています。\n背景\n従来、RedshiftでSELECT文などの取得系クエリを実行するためにはRedshiftに直接接続してクエリを発行していました。この方法ではクエリ結果が巨大な場合にクライアント側のリソースを逼迫させることがありました。\nしかし、それを避けるためにカーソルを使おうものなら今度はたちまちRedshiftのリーダーノードの具合が悪くなってしまいます。Redshiftから巨大な結果を得るクエリを外部から実行するためには様々な工夫が必要でした。\nさらに通常の（PostgreSQLプロトコルを使った）接続方式では遠隔地（別AWSリージョン）からの接続が難しかったり、よくコネクションが切れたり、コネクションが切れると結果が取得できなかったりします。AWSのSecurity Groupの設定も忘れがちです。\nまた、セットアップがActiveRecord経由になるため単純に設定が面倒です。しかもActiveRecordを使ったあらゆる使い方ができてしまうため、標準化も困難です。\nQueueryはこれらの問題を解決するためにあります。Queueryを使うことで、クライアントはRedshiftに直接接続せずHTTP APIで取得系クエリを実行できるようになります。\nアプリケーションからRedshiftへ接続する手法\n仕組み\nQueueryはRedshiftへUnload文を投げる役割を…",
-          "link": "https://techlife.cookpad.com/entry/2021/12/03/093000",
-          "publishedOn": "2021-12-03T00:30:00.000Z",
-          "wordCount": 569,
-          "title": "Redshiftのデータをサービス改善に役立てるデータ転送システム Queuery",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/r/ragi256/20211202/20211202115017.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -8906,6 +8892,16 @@
       "feedUrl": "https://note.com/sizes/rss",
       "siteUrl": "https://note.com/sizes",
       "articles": [
+        {
+          "id": "https://note.com/sizes/n/n66fce7646a71",
+          "author": null,
+          "description": "•イオンでタコの刺身を買ったらなんか吸盤がジャリっとしててオエッッッってなった たぶん美味しいやつなんだろうけどそもそもタコの刺身が好きじゃないのかもしんない\n•人生の中で一貫して、好きなものを見つけたときにはその好きなものがふたつでありがちなことに気づいた  ポケモン・カードゲーム　文章・絵、好きな人A・好きな人B　分裂気質なのが関係している\n続きをみる",
+          "link": "https://note.com/sizes/n/n66fce7646a71",
+          "publishedOn": "2022-03-02T12:16:35.000Z",
+          "wordCount": null,
+          "title": "エッセイ:あ",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/73404689/rectangle_large_type_2_0fd4ea8989be039cf30c6404ed2a6c95.jpeg?width=800"
+        },
         {
           "id": "https://note.com/sizes/n/n68f8b91bf66c",
           "author": null,

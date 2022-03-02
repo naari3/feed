@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-02T12:10:01.847Z</updated>
+    <updated>2022-03-02T13:13:33.920Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[エッセイ:あ]]></title>
+        <id>https://note.com/sizes/n/n66fce7646a71</id>
+        <link href="https://note.com/sizes/n/n66fce7646a71"/>
+        <updated>2022-03-02T12:16:35.000Z</updated>
+        <summary type="html"><![CDATA[•イオンでタコの刺身を買ったらなんか吸盤がジャリっとしててオエッッッってなった たぶん美味しいやつなんだろうけどそもそもタコの刺身が好きじゃないのかもしんない
+•人生の中で一貫して、好きなものを見つけたときにはその好きなものがふたつでありがちなことに気づいた  ポケモン・カードゲーム　文章・絵、好きな人A・好きな人B　分裂気質なのが関係している
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[書籍のサンプルコードと違う言語で写経することの意義]]></title>
         <id>hatenablog://entry/13574176438068727749</id>
@@ -19299,27 +19311,6 @@ Wikipediaより
         <summary type="html"><![CDATA[Merpay Advent Calendar 2021の3日目はGrowth Platform Teamのバックエンドエンジニアの @yukinasu がお送りします。 Growth Platform Teamはキャンペ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Redshiftのデータをサービス改善に役立てるデータ転送システム Queuery]]></title>
-        <id>hatenablog://entry/13574176438038678459</id>
-        <link href="https://techlife.cookpad.com/entry/2021/12/03/093000"/>
-        <updated>2021-12-03T00:30:00.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、技術部データ基盤グループの佐藤です。この記事では最近業務として主に取り組んでいたDWHから外部へのデータ転送基盤であるQueuery（きゅうり）について、OSSとしてGitHubへの公開しましたのでこの記事でご紹介をします。
-github.com
-Queueryというシステムは2017年の春頃にid:koba789の手により作られ、クックパッドのデータ基盤における重要な立ち位置を担っています。
-背景
-従来、RedshiftでSELECT文などの取得系クエリを実行するためにはRedshiftに直接接続してクエリを発行していました。この方法ではクエリ結果が巨大な場合にクライアント側のリソースを逼迫させることがありました。
-しかし、それを避けるためにカーソルを使おうものなら今度はたちまちRedshiftのリーダーノードの具合が悪くなってしまいます。Redshiftから巨大な結果を得るクエリを外部から実行するためには様々な工夫が必要でした。
-さらに通常の（PostgreSQLプロトコルを使った）接続方式では遠隔地（別AWSリージョン）からの接続が難しかったり、よくコネクションが切れたり、コネクションが切れると結果が取得できなかったりします。AWSのSecurity Groupの設定も忘れがちです。
-また、セットアップがActiveRecord経由になるため単純に設定が面倒です。しかもActiveRecordを使ったあらゆる使い方ができてしまうため、標準化も困難です。
-Queueryはこれらの問題を解決するためにあります。Queueryを使うことで、クライアントはRedshiftに直接接続せずHTTP APIで取得系クエリを実行できるようになります。
-アプリケーションからRedshiftへ接続する手法
-仕組み
-QueueryはRedshiftへUnload文を投げる役割を…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>
