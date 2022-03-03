@@ -3324,6 +3324,21 @@
       "siteUrl": "https://kmizu.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438069043359",
+          "author": null,
+          "description": "Twitterの@kmizuアカウントでも多少宣伝しましたが、こちらの方でも改めて。趣旨は\nopt.connpass.com\nに書いてある通りですが、お堅いことを言わずにプログラミングを教える、教えられる側の知見を持ち寄ることで楽しい集まりに出来ればと思っています。参加者は技術者でなくても良くて、たとえば「プログラミング」を教えることになりそうだけど、どうすればいいのかわからないという小学校/中学校/高校の先生方でもウェルカムです。あるいは「プログラミング」を今まさに学んでいるけども、教え方にピンと来ないという側（学生でも社会人でも）の参加も歓迎したいです。現状ではどちらかというと「教える側」のためのイベントになりそうな気はしますが、たとえば懇親会で教える側、教えられる側の交流が持てれば面白いことになりそうだとも思っています。\n　私的な目玉はアベ先生による、普段あまり知られていない小学校でのプログラミング教育の実態のお話です。小学校でのプログラミング教育の実態についてはまだまだ知らないので、どのようなお話がうかがえるのかとても楽しみにしています。\n　また、その他にもDDD等で有名な増田 亨さんやきしだなおきさんなど，色々な方が発表やLTをしてくださる予定です。今後は賛否両論あれどプログラミング教育が一般的になっていくのは間違いありません。その過渡期にある現在、それぞれの視点を持ち寄ってみませんか？\n　発表枠は埋まっていますが参加枠はまだまだあるので、がんがん宣伝していただけると嬉しいです。",
+          "link": "https://kmizu.hatenablog.com/entry/2022/03/03/173635",
+          "publishedOn": "2022-03-03T08:36:35.000Z",
+          "wordCount": 106,
+          "title": "「第一回プログラミング教育について話し合う会」を3/25（金）に開催します",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438068727749",
           "author": null,
           "description": "こんばんは、みずしまです。最近は主に強化学習の勉強をしているのですが、読み進めていく過程で少し悩みの種がありました。それは、サンプルコードの扱いです。サンプルコードはPythonで書かれていて、実際に書き写すことが私にとって理解の助けになるのは確かなように思えましたが、一方で過去の経験から、そのまま写経すると「スルスルと動いてしまってフィードバックとして不十分そうだな」と感じたので、Scalaで書いてみることにしました。\n　別にScalaでなくて、JavaでもRubyでもあるいはJuliaでも良かったのですがそれはともかくとして、元のサンプルコードと違う言語で書くことで得られる利点も結構あるものだなというのが正直に感じた点です。たとえば、np.mean(...)というコードが書籍では出て来るわけですが、「そういえばScalaでmeanと同じことをするにはどうしたらいいんだっけ？」と考えることになりますし、グラフをプロットするライブラリでいいのあったっけ……と考えたところから、Plotyを見つけることにもつながりました。\n　Scalaは典型的なオブジェクト指向言語でもあるため、サンプルコードをScalaに移すのはさほど難しくはありません。しかし、やはり違う言語ですから移植する時には相応に色々なことを考える必要があります。たとえば、Pythonはリストも辞書もデフォルトで可変ですがScalaではデフォルトでは不変です。なので、可変なコレクションを見つけたときには「うーん。ここは、scala.collection.mutabe.Bufferで表現すべきだろうか」とか、あるいは「varで不変コレクションを扱うべきだろうか」とか考えるわけです。\n　また、ごく一部のコードを除いてPythonコードのほとんどには型注釈がついていないので「rewardsの型は明示されていないけど、文脈的にSeq[Double]が相当するな」など考えながら移植する必要があります。\n　移植するにはコードの意味をより深く理解しなければならないため、単なる写経よりも理解度が深まったというのが正直な感想です。単に忠実に元のコードを書き写していただけでは（コードの意味を考えずとも動いてしまうため）このような効果は得られなかっただろうことが予測されるので、人によっては「違う言語で写経」は学習のために役立つかもしれません（既に実践している方も多いかとは思いますが）。\n　あんまり生産的でないですがそんなことを感じた今日一日でした。なお、元の本はこちら\nhttps://www.amazon.co.jp/dp/B082HNNGQG/\n　です。サンプルコードの一部をScala化したのがこんな感じです。\npackage com.github.kmizu.scala_ml\nimport scala.math.random\n\ncase class CoinToss(var headProbs: Seq[Double], var maxEpisodeSteps: Int = 30) {\n  private var tossCount: Int = 0\n\n  def length: Int = headProbs.length\n\n  def reset(): Unit = {\n    tossCount = 0\n  }\n\n  def step(action: Int): (Double, Boolean) = {\n    val `final`= maxEpisodeSteps - 1\n    if(tossCount > `final`) {\n      throw new RuntimeException(\n        \"\"\"The step count exceeded maximum.\n          |Please reset env.\"\"\".stripMargin\n      )\n    }\n    val done = tossCount == `final`\n\n    if(action >= headProbs.length) {\n      throw new Exception(s\"The No.${action} coin doesn't exist\")\n    }\n    val headProb = headProbs(action)\n    val reward = if(random() < headProb) 1.0 else 0.0\n    tossCount += 1\n    (reward, done)\n  }\n}",
