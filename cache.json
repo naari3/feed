@@ -555,6 +555,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438069173660",
+          "author": null,
+          "description": "github.com\nmeta-tags gemがsig/にRBSを同梱しているのだけど、それがActiveSupportのRBSとぶつかってしまっていたので直した。\nこのPRは問題の発見からPRの作成まですべて業務時間でやった。",
+          "link": "https://commits.hatenablog.com/entry/2022/03/04/100002",
+          "publishedOn": "2022-03-04T01:00:02.000Z",
+          "wordCount": 150,
+          "title": "2022-03-03",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438068818124",
           "author": null,
           "description": "この世界がゲームだと俺だけが知っている 1 (ファミ通クリアコミックス)\n\n作者:イチゼン\nKADOKAWA\nAmazon\n\nこの世界がゲームだと俺だけが知っている、最新9巻まで読んだ。面白い。早く続きを読みたい。\nruby-jpでなんどか見かけたので読んでみた。",
@@ -5415,20 +5430,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/S/ShiMa1296/20220223/20220223234744.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438032663760",
-          "author": null,
-          "description": "※本記事は「音MAD Advent Calendar 2021」4日目の記事です。他にも面白い記事が上がる予定なので是非。\nadventar.org\n\nこんにちは。ShiMaと申します。チャー研MADをメインに活動しております。\nShiMa\n代表作は、「ヒカマニサイコトロピック」「ドーナツに穴があってよかったな～」「ポシャルル／亀井有馬＆ユージ」などです。\n\n\n\nさて、この3作品のどれにおいても僕は人力VOCALOIDなる技術を用いたわけですが、この記事ではそんな人力VOCALOIDについて検討していきます。\nそして、もう一つの主題について。\nアドベントカレンダーの企画に誘われたのでネタを探していたら、「調音音声学」という音MADに応用できそうな学問を見つけました。\n※僕は音声学の専門家ではないので、もしかしたら専門的な視点から見たら不正確な表現などあるかもしれません。ご了承ください。\n要約\nはじめに\n参考文献\n調音音声学とは\n人力VOCALOIDとは\n音MAD外での音声合成技術の使われ方\n人力VOCALOIDの方法\n調音音声学の知識\n子音\n「タ」「チ」「ツ」の子音は違う\n子音の分類（難しいから飛ばしてもいいよ）\n調音のしかたが似ている子音は、聞こえも似る\n補遺　～音MADと摩擦音・破擦音～\n母音\n母音の分類（難しいから飛ばしてもいいよ）\n「ヤ」は「イア」？\n本振りサディスティック\n無声化母音\n二重母音\n最後に\n脚注\n要約\nこの記事で最も伝えたいことは、「調音音声学を学ぶと音MADの音声に関する諸現象を理論的に説明できるようになるよ」ということです。\nはじめに\nまず、ここで紹介する知識は、音MADを作るうえで必ず必要になる知識ではありません。\nですが、こうした知識を持っておくことは、表現を豊かにする可能性があります。\n特に人力VOCALOID方面において、より自然な調教にで…",
-          "link": "https://shima1296.hatenablog.com/entry/2021/12/04/221208",
-          "publishedOn": "2021-12-04T13:12:08.000Z",
-          "wordCount": 316,
-          "title": "もし音MAD作者が調音音声学を学んだら【音MAD Advent Calendar 2021】",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/S/ShiMa1296/20211129/20211129205502.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -10422,6 +10423,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml/",
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
+        {
+          "id": "19858",
+          "author": null,
+          "description": "はじめに こんにちは。ソウゾウの Software Engineerの@souma946 です。連載：メルカリShops 開発の裏側 Vol.2の14日目を担当させていただきます。 今回は自分が開発をしているメルカリSh […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220303-shop-opened-as-engineer/",
+          "publishedOn": "2022-03-04T10:00:51.000Z",
+          "wordCount": null,
+          "title": "エンジニアがメルカリShopsでショップを開設して得ることができた視点",
+          "imageUrl": null
+        },
         {
           "id": "19906",
           "author": null,
