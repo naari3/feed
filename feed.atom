@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-05T00:26:40.225Z</updated>
+    <updated>2022-03-05T02:00:45.458Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2022-03-04]]></title>
+        <id>hatenablog://entry/13574176438069513553</id>
+        <link href="https://commits.hatenablog.com/entry/2022/03/05/100011"/>
+        <updated>2022-03-05T01:00:11.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+Integer#uptoとdowntoが、Floatなどを受け付けてくれなかったのでなおした。
+github.com
+SteepでArrayリテラルの中にsplat演算子を書いたときの型がおかしかったので報告した。ちょっとSteepのコードも読んでみたけど、よくわからなかった。
+仕事ではRBSをやる日として時間を取っていて、会社のRails appにSteepを入れてとりあえず動かすまでをやっていた。上の2つのチケットはその時に見つけた問題。
+Steepがとりあえず動くところまではいったから、次は型検査内容を充実させるのと、継続的にSteepを回していけるようにするのをやるぞという宣言を社内ブログで書いた。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220304「Q&A」]]></title>
         <id>hatenablog://entry/13574176438069542318</id>
@@ -19502,58 +19517,6 @@ A：見つけたー
 続きをみる]]></summary>
         <author>
             <name>角煮サイダ一</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2021-12-05]]></title>
-        <id>hatenablog://entry/13574176438039898579</id>
-        <link href="https://diary.hatenablog.jp/entry/2021/12/05/224048"/>
-        <updated>2021-12-05T13:40:48.000Z</updated>
-        <summary type="html"><![CDATA[これは KOBA789 日記 Advent Calendar 2021 - Adventar 5日目の記事です。
-4日目は デプロイメントに求める速さ - 宇宙行きたい でした。乱入ありがとうございました。
-最初の3日間は日記にタイトルを付けていたけれど、日常というのはそんなにタイトルがつけられるような日々ばかりではないなと気づきました。今日はタイトルがない側の日です。
-日記
-とある事情で、Apache2 や10年前に書かれた Ruby CGI などと格闘していました。かろうじて git 管理されていましたが、サーバー上で git status したら未コミットの変更がたくさんありました。人類はなぜ。
-10年程度なので、真にレガシーというには若干新しい感じのコードですが、これをなんとか kubernetes に乗っけようとしています。Gemfile すらないんだけど Dockerfile 書けるんですかねこれは。
-久しぶりにかなり渋い作業をしています。カエルを押しつぶしたような擬音語はたくさん出てきますが、そんなに嫌いな作業ではないです。こればかりやりたいかと言われれば別ですが、風呂場にカビキラーを噴霧する作業くらいの楽しさはあります。
-ところでカビキラー楽しくないですか？　二度と落ちないと思っていた頑固なカビがみるみるうちに綺麗になる様は、すっかり平凡になりきってしまった日々にでもワクワクを取り戻せるんじゃないかという希望を与えてくれます。そうでもないですか？
-終わりに
-明日も（乱入がなければ）書く。]]></summary>
-        <author>
-            <name>Write and Run</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ブコメお便りコーナーの時間です]]></title>
-        <id>hatenablog://entry/13574176438039796555</id>
-        <link href="https://honeshabri.hatenablog.com/entry/reply_to_bcome_2021"/>
-        <updated>2021-12-05T13:19:15.000Z</updated>
-        <summary type="html"><![CDATA[俺もラジオに来るようなお便りが欲しい。 
-記事へのブコメを有効活用することにした。
-お便りに憧れる
-AfterShokzを使っているだろうか？
-
-AfterShokz Aeropex 骨伝導イヤホン 防水bluetooth5.0 コズミックブラック
-
-Aftershokz
-Amazon
-
-俺はあいかわらずプライベートではKindle読み上げやPodcastを聞くのに使っている。こういったコンテンツを消費しながらだと、掃除のような面倒な家事もちょっとは楽しくなるのが良い。
-そうやっていろんなPodcastを聞いていると、ちょっと憧れることがある。それは「リスナーからのお便り」だ。
-
-様々なリスナーからお便りが届き、読み上げられると、いかにも人気って感じがする。ちゃんとPodcastにはリスナーが存在し、わざわざお便りを出すほどに求められているのだ、と。
-俺もこのブログに関するお便りが欲しい。
-一応言っておくと、お便り的なものが皆無というわけではない。例えばマシュマロはお便りと言っていいだろう。
-
-嬉しいことにちょいちょい質問が飛んでくる。これには感謝している。ただ、なんというか率直に言えば、もっと欲しい。こうドサッと来て、「答えきれなくてごめんな」みたいなことを言ってみたい。今のところ、飛んできたマシュマロは全部回答できている。
-ではどうしたらお便りを増やせるか。こういうのは既にあるものを活用するのが手っ取り早い。ブコメである。
-ブコメのお便り化
-ブコメなら腐るほどある。例えば前回の記事についたブコメは現時点で128件ある*1。
-[B! お役立ち] 去年買って今も使い続けている良かったもの5選 - 本しゃぶり
-もちろんブコメはこれだけでなく、他の記事にもついている。これなら「たくさんのお便りが届いています」を実現できる。
-しかし、ブコメはそのまま「お便り」として使えない。知っ…]]></summary>
-        <author>
-            <name>本しゃぶり</name>
         </author>
     </entry>
 </feed>

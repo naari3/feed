@@ -555,6 +555,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438069513553",
+          "author": null,
+          "description": "github.com\nInteger#uptoとdowntoが、Floatなどを受け付けてくれなかったのでなおした。\ngithub.com\nSteepでArrayリテラルの中にsplat演算子を書いたときの型がおかしかったので報告した。ちょっとSteepのコードも読んでみたけど、よくわからなかった。\n仕事ではRBSをやる日として時間を取っていて、会社のRails appにSteepを入れてとりあえず動かすまでをやっていた。上の2つのチケットはその時に見つけた問題。\nSteepがとりあえず動くところまではいったから、次は型検査内容を充実させるのと、継続的にSteepを回していけるようにするのをやるぞという宣言を社内ブログで書いた。",
+          "link": "https://commits.hatenablog.com/entry/2022/03/05/100011",
+          "publishedOn": "2022-03-05T01:00:11.000Z",
+          "wordCount": 152,
+          "title": "2022-03-04",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438069173660",
           "author": null,
           "description": "github.com\nmeta-tags gemがsig/にRBSを同梱しているのだけど、それがActiveSupportのRBSとぶつかってしまっていたので直した。\nこのPRは問題の発見からPRの作成まですべて業務時間でやった。",
@@ -1259,20 +1274,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438039898579",
-          "author": null,
-          "description": "これは KOBA789 日記 Advent Calendar 2021 - Adventar 5日目の記事です。\n4日目は デプロイメントに求める速さ - 宇宙行きたい でした。乱入ありがとうございました。\n最初の3日間は日記にタイトルを付けていたけれど、日常というのはそんなにタイトルがつけられるような日々ばかりではないなと気づきました。今日はタイトルがない側の日です。\n日記\nとある事情で、Apache2 や10年前に書かれた Ruby CGI などと格闘していました。かろうじて git 管理されていましたが、サーバー上で git status したら未コミットの変更がたくさんありました。人類はなぜ。\n10年程度なので、真にレガシーというには若干新しい感じのコードですが、これをなんとか kubernetes に乗っけようとしています。Gemfile すらないんだけど Dockerfile 書けるんですかねこれは。\n久しぶりにかなり渋い作業をしています。カエルを押しつぶしたような擬音語はたくさん出てきますが、そんなに嫌いな作業ではないです。こればかりやりたいかと言われれば別ですが、風呂場にカビキラーを噴霧する作業くらいの楽しさはあります。\nところでカビキラー楽しくないですか？　二度と落ちないと思っていた頑固なカビがみるみるうちに綺麗になる様は、すっかり平凡になりきってしまった日々にでもワクワクを取り戻せるんじゃないかという希望を与えてくれます。そうでもないですか？\n終わりに\n明日も（乱入がなければ）書く。",
-          "link": "https://diary.hatenablog.jp/entry/2021/12/05/224048",
-          "publishedOn": "2021-12-05T13:40:48.000Z",
-          "wordCount": 172,
-          "title": "2021-12-05",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -1771,20 +1772,6 @@
           "enclosure": {
             "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20211226/20211226223944.png",
             "type": "image/png",
-            "length": "0"
-          }
-        },
-        {
-          "id": "hatenablog://entry/13574176438039796555",
-          "author": null,
-          "description": "俺もラジオに来るようなお便りが欲しい。 \n記事へのブコメを有効活用することにした。\nお便りに憧れる\nAfterShokzを使っているだろうか？\n\nAfterShokz Aeropex 骨伝導イヤホン 防水bluetooth5.0 コズミックブラック\n\nAftershokz\nAmazon\n\n俺はあいかわらずプライベートではKindle読み上げやPodcastを聞くのに使っている。こういったコンテンツを消費しながらだと、掃除のような面倒な家事もちょっとは楽しくなるのが良い。\nそうやっていろんなPodcastを聞いていると、ちょっと憧れることがある。それは「リスナーからのお便り」だ。\n\n様々なリスナーからお便りが届き、読み上げられると、いかにも人気って感じがする。ちゃんとPodcastにはリスナーが存在し、わざわざお便りを出すほどに求められているのだ、と。\n俺もこのブログに関するお便りが欲しい。\n一応言っておくと、お便り的なものが皆無というわけではない。例えばマシュマロはお便りと言っていいだろう。\n\n嬉しいことにちょいちょい質問が飛んでくる。これには感謝している。ただ、なんというか率直に言えば、もっと欲しい。こうドサッと来て、「答えきれなくてごめんな」みたいなことを言ってみたい。今のところ、飛んできたマシュマロは全部回答できている。\nではどうしたらお便りを増やせるか。こういうのは既にあるものを活用するのが手っ取り早い。ブコメである。\nブコメのお便り化\nブコメなら腐るほどある。例えば前回の記事についたブコメは現時点で128件ある*1。\n[B! お役立ち] 去年買って今も使い続けている良かったもの5選 - 本しゃぶり\nもちろんブコメはこれだけでなく、他の記事にもついている。これなら「たくさんのお便りが届いています」を実現できる。\nしかし、ブコメはそのまま「お便り」として使えない。知っ…",
-          "link": "https://honeshabri.hatenablog.com/entry/reply_to_bcome_2021",
-          "publishedOn": "2021-12-05T13:19:15.000Z",
-          "wordCount": 401,
-          "title": "ブコメお便りコーナーの時間です",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20211205/20211205165408.jpg",
-            "type": "image/jpeg",
             "length": "0"
           }
         }
