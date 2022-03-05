@@ -3705,6 +3705,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438069606471",
+          "author": null,
+          "description": "最近、Rubyをはじめた人からRuby 2.5*1の環境で次のエラーが出たという相談を受けました。\nrbenv: bundle: command not found\n\nThe `bundle' command exists in these Ruby versions:\n  2.7.5\n  3.0.3\n\n\n\nエラーメッセージ通りbundleコマンドがないので、gem install bundlerすれば良いです。\nなんですが、よく考えるとBundlerがRuby本体に同梱されるようになって3年です。\nRuby 2.6.0 Released\nBundler is now installed as a default gem.\n\n\n今からRubyをはじめた人からすると摩訶不思議な現象ですよね。\n*1:Ruby 2.5はもうメンテナンスされていませんが、事情があります。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/05/110142",
+          "publishedOn": "2022-03-05T02:01:42.000Z",
+          "wordCount": 170,
+          "title": "Ruby 2.5にはBundlerが含まれない",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438069539745",
           "author": null,
           "description": "FormData\n先週、Form要素のデータがそのまんま欲しくて、はじめて使いました。\nそのときは次のようにJSON形式で送信しました。\nconst formData = new FormData(document.bookForm);\nconst name = formData.get(\"name\");\nconst age = formData.get(\"age\");\nconst data = {\n  name,\n  age\n};\n\njQuery.ajax({\n  type: \"post\",\n  url: \"/books/,\n  data: JSON.stringify(data),\n  contentType: \"application/json\"\n});\n\n\n\ndeveloper.mozilla.org\nThe FormData object lets you compile a set of key/value pairs to send using XMLHttpRequest.\n\n\nと、あるのでずいぶん昔からあるAPIみたいです。\n次のように使われていたようです。\njavascript - How to send FormData objects with Ajax-requests in jQuery? - Stack Overflow\nvar xhr = new XMLHttpRequest(),\n    fd = new FormData();\n\nfd.append( 'file', input.files[0] );\nxhr.open( 'POST', 'http://example.com/script.php', true );\nxhr.onreadystatechange = handler;\nxhr.send( fd );\n\n\n\nこの書き方の場合はmultipart/from-data形式で送信されるようです。\nentries()があるので、ES6以降も拡張されているようです。\n参考情報\njavascript - How to convert FormData (HTML5 object) to JSON - Stack Overflow\nJavaScript の formdata イベントのまとめ | gotohayato.com",
