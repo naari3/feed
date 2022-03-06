@@ -10207,6 +10207,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2022-03-06/markdown-style-table-css.html",
+          "author": null,
+          "description": "本ブログは Markdown で原稿を書き、それを HTML に変換して表示している。このとき、 CSS を用いて Markdown のシンタックスに似せた Style を適用している。例えば以下のように h2::before に content: '##' を指定するといった具合だ。しかし、これまで <table> だけはうまく Markdown 記法を再現する CSS が書けないでいた。そこで、周りの CSS 強者に実現できないか聞いてみたところ、@shqld, @araya, @yoshiko 達の協力を得て、かなりの完成度にすることができた。実現方法を記録する。",
+          "link": "https://blog.jxck.io/entries/2022-03-06/markdown-style-table-css.html",
+          "publishedOn": "2022-03-06T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Markdown の Table 記法を CSS で実現する",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2022-02-05/http3.html",
           "author": null,
           "description": "本サイトを HTTP3 対応し、Alt-Svc ヘッダおよび DNS HTTPS Resource Record によってそれをアドバタイズする構成を適用した。色々ハマったので作業のログを記す。",
