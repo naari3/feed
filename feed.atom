@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-06T13:10:52.377Z</updated>
+    <updated>2022-03-06T14:04:19.564Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ウマ娘競奏曲のメドレー単品の動画を作った男のはなし]]></title>
+        <id>https://note.com/emplor_j/n/n7b57d7f82ff2</id>
+        <link href="https://note.com/emplor_j/n/n7b57d7f82ff2"/>
+        <updated>2022-03-06T13:45:22.000Z</updated>
+        <summary type="html"><![CDATA[ウマ娘合作に、メドレー単品として動画を出しました！！！！！！！！！！！！
+  
+続きをみる]]></summary>
+        <author>
+            <name>エンプラーJ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[エッセイ:青春コンプレックスオタクオタク]]></title>
         <id>https://note.com/sizes/n/n11c338f0baa7</id>
@@ -19678,36 +19690,6 @@ Graham Potter: ‘My friends don’t care about the Premier League – about thi
 続きをみる]]></summary>
         <author>
             <name>小野マトペ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ruby 3.1はエラー表示をちょっと親切にします]]></title>
-        <id>hatenablog://entry/13574176438038411287</id>
-        <link href="https://techlife.cookpad.com/entry/2021/12/07/103547"/>
-        <updated>2021-12-07T01:35:47.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、ruby-devチームの遠藤（@mametter）です。
-Among Usというゲームをやってるのですが、友達が少なくてあまり開催できないのが悩みです。
-今日は、Ruby 3.1に導入される予定のerror_highlightという機能を紹介します。
-どんな機能？
-NoMethodErrorが起きたとき、次のような表示が出るようになります。
-error_highlightの動作例
-どこのメソッド呼び出しで失敗したかが一目瞭然ですね。これだけの機能ですが、使ってみると意外と便利です。
-もう少し詳しく
-この機能が本領を発揮するのは、RailsのparamsやJSONデータの取り扱いなどのときです。
-たとえばjson[:articles][:title]みたいなコードを書いて、undefined method '[]' for nil:NilClassという例外が出たとします。
-このとき、変数jsonがnilだったのか、json[:articles]の返り値がnilだったのかは、残念ながらコードだけ見ても判断できません。
-特定するには、デバッグ出力を挟んで再実行する必要がありました。
-error_highlightがあると、これがひと目で判別できます。
-$ ruby test.rb
-test.rb:2:in `<main>': undefined method `[]' for nil:NilClass (NoMethodError)
-
-title = json[:articles][:title]
-            ^^^^^^^^^^^
-↑は、jsonがnilだったケースです。
-$ ruby test.rb
-test.rb:2:in `<main>': undefined method `[]' for nil:NilClass (NoMethodError…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>

@@ -6252,20 +6252,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438038411287",
-          "author": null,
-          "description": "こんにちは、ruby-devチームの遠藤（@mametter）です。\nAmong Usというゲームをやってるのですが、友達が少なくてあまり開催できないのが悩みです。\n今日は、Ruby 3.1に導入される予定のerror_highlightという機能を紹介します。\nどんな機能？\nNoMethodErrorが起きたとき、次のような表示が出るようになります。\nerror_highlightの動作例\nどこのメソッド呼び出しで失敗したかが一目瞭然ですね。これだけの機能ですが、使ってみると意外と便利です。\nもう少し詳しく\nこの機能が本領を発揮するのは、RailsのparamsやJSONデータの取り扱いなどのときです。\nたとえばjson[:articles][:title]みたいなコードを書いて、undefined method '[]' for nil:NilClassという例外が出たとします。\nこのとき、変数jsonがnilだったのか、json[:articles]の返り値がnilだったのかは、残念ながらコードだけ見ても判断できません。\n特定するには、デバッグ出力を挟んで再実行する必要がありました。\nerror_highlightがあると、これがひと目で判別できます。\n$ ruby test.rb\ntest.rb:2:in `<main>': undefined method `[]' for nil:NilClass (NoMethodError)\n\ntitle = json[:articles][:title]\n            ^^^^^^^^^^^\n↑は、jsonがnilだったケースです。\n$ ruby test.rb\ntest.rb:2:in `<main>': undefined method `[]' for nil:NilClass (NoMethodError…",
-          "link": "https://techlife.cookpad.com/entry/2021/12/07/103547",
-          "publishedOn": "2021-12-07T01:35:47.000Z",
-          "wordCount": 493,
-          "title": "Ruby 3.1はエラー表示をちょっと親切にします",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20211201/20211201172801.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -7820,6 +7806,16 @@
       "feedUrl": "https://note.com/emplor_j/rss",
       "siteUrl": "https://note.com/emplor_j",
       "articles": [
+        {
+          "id": "https://note.com/emplor_j/n/n7b57d7f82ff2",
+          "author": null,
+          "description": "ウマ娘合作に、メドレー単品として動画を出しました！！！！！！！！！！！！\n  \n続きをみる",
+          "link": "https://note.com/emplor_j/n/n7b57d7f82ff2",
+          "publishedOn": "2022-03-06T13:45:22.000Z",
+          "wordCount": 143,
+          "title": "ウマ娘競奏曲のメドレー単品の動画を作った男のはなし",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/73703431/rectangle_large_type_2_8fb45f179d13842fcb68323e71a34af6.jpeg?width=800"
+        },
         {
           "id": "https://note.com/emplor_j/n/n594852c7752e",
           "author": null,
