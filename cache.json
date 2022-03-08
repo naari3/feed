@@ -10463,6 +10463,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2022/03/08/secretlint-5/",
+          "author": null,
+          "description": "APIトークンや秘密鍵を検出するツールであるSecretlint 5をリリースしました。\nRelease v5.0.0 · secretlint/secretlint\nSecretlint 5は、機能追加的な変更はありません。\n主に、.secretlintrc.jsonのバリデーションが強化が目的です。\nまた、Node.js 12 LTSが2022-04でメンテナンスが終了するので一足早くサポートを切っています。\nバリデーションを改善したことで、今ままで許容されていたけど意味がない設定になっていたケースなども実行前に検出できるようになっています。\nその結果、いままで動いていた(素通りしていた)設定がエラーとなるケースもあるためメジャーアップデートとしています。\nfeat(config-loader): improve validation to config by azu · Pull Request #224 · secretlint/secretlint\n具体的には、今までは次のようにプリセットの中に無効なidを指定しても単に無視されるだけでした。\n5.0.0からは、これは設定エラーとして検出されるので、間違った設定がしにくくなっています。\n{\n  \"rules\": [\n    {\n      \"id\": \"@secretlint/secretlint-rule-preset-recommend\",\n      \"rules\": [\n        {\n          \"id\": \"invalid-id\"\n        }\n      ]\n    }\n  ]\n}\n\n\nこれは設計的な話ですが、内部的には@secretlint/config-loaderと@secretlint/config-validatorという二つのモジュールで設定ファイルを読んでいました。\n今…",
+          "link": "https://efcl.info/2022/03/08/secretlint-5/",
+          "publishedOn": "2022-03-08T13:49:00.000Z",
+          "wordCount": null,
+          "title": "Secretlint 5をリリースした。SARIF形式の対応、Configのバリデーション強化、Slackのxapp-トークンの検出に対応",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2022/02/10/voicod/",
           "author": null,
           "description": "voicodという音声入力でメモを書けるシンプルなウェブアプリケーションを書きました。\n音声入力でメモができるシンプルなアプリケーションを書きました。https://t.co/EHSKnNKNaL\nx-callbackを使ってショートカット.app 等と連携すれば、入力内容をNotionに保存したりできます。\nNote: SpeechRecognitionに対応したブラウザ(ChromeやSafari)が必要\nSource: https://t.co/NnzXVjlGnF pic.twitter.com/yzoA3VIzzl\n— azu (@azu_re) February 10, 2022\n \n\nSpeechRecognitionというウェブブラウザで音声認識をするAPIを使っているので、このAPIに対応しているブラウザが必要になります。\n具体的にはGoogle ChromeやSafariなど該当します(2022-02-10時点)が、Chromeが一番相性が良いと思います。\n使い方\nhttps://voicod.pages.dev/ を開く\nマイクの使用を許可する\n音声入力するとメモが記録される\nというシンプルなものです。\n入力した内容は自動的にlocalStorageに保存されるので、リロードしても前回の状態から再開できます。\n逆に前回の状態じゃなくて毎回初期状態から開始したい場合は https://voicod.pages.dev/?noSave へアクセスすると自動保存を無効化できます。\nこのアプリケーションは音声入力してテキストのメモを書くというシンプルなアプリケーションですが、\nx-callback連携やChrome Apps(ショートカット)と組み合わせると入力内容を別のアプリケーションに渡すといった色々な使い方ができます。\nx-callbackを使ったアプリ…",

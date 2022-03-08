@@ -20,6 +20,47 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank" rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Secretlint 5をリリースした。SARIF形式の対応、Configのバリデーション強化、Slackのxapp-トークンの検出に対応</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/03/08/secretlint-5/" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>APIトークンや秘密鍵を検出するツールであるSecretlint 5をリリースしました。
+Release v5.0.0 · secretlint/secretlint
+Secretlint 5は、機能追加的な変更はありません。
+主に、.secretlintrc.jsonのバリデーションが強化が目的です。
+また、Node.js 12 LTSが2022-04でメンテナンスが終了するので一足早くサポートを切っています。
+バリデーションを改善したことで、今ままで許容されていたけど意味がない設定になっていたケースなども実行前に検出できるようになっています。
+その結果、いままで動いていた(素通りしていた)設定がエラーとなるケースもあるためメジャーアップデートとしています。
+feat(config-loader): improve validation to config by azu · Pull Request #224 · secretlint/secretlint
+具体的には、今までは次のようにプリセットの中に無効なidを指定しても単に無視されるだけでした。
+5.0.0からは、これは設定エラーとして検出されるので、間違った設定がしにくくなっています。
+{
+  &quot;rules&quot;: [
+    {
+      &quot;id&quot;: &quot;@secretlint/secretlint-rule-preset-recommend&quot;,
+      &quot;rules&quot;: [
+        {
+          &quot;id&quot;: &quot;invalid-id&quot;
+        }
+      ]
+    }
+  ]
+}
+
+
+これは設計的な話ですが、内部的には@secretlint/config-loaderと@secretlint/config-validatorという二つのモジュールで設定ファイルを読んでいました。
+今…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank" rel="noopener">疒</a></h3>
           <section class="articles-per-source">
             <article>
@@ -25269,7 +25310,7 @@ https://adventar.org/calendars/6506
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-08T14:11:29.562Z">2022-03-08T14:11:29.562Z</time>
+    <time id="build-timestamp" datetime="2022-03-08T15:10:36.028Z">2022-03-08T15:10:36.028Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
