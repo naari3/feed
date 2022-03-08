@@ -20,6 +20,43 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank" rel="noopener">@ledsun blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">PostgreSQLのユーザー作成</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/03/08/091903" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Railsアプリケーションの開発環境を構築するときに時々はまります。
+ローカルにインストールされているPostgreSQLを使うとアプリケーションごとにPostgreSQLのユーザーが微妙に違うことがあります。
+例えばpostgresというユーザーがないと次のようなエラーが起きます。
+~ bundle exec rails db:create
+2022-03-02 15:00:59.447 JST [52724] FATAL:  role &quot;postgres&quot; does not exist
+connection to server at &quot;localhost&quot; (::1), port 5432 failed: FATAL:  role &quot;postgres&quot; does not exist
+Couldn&#x27;t create &#x27;xxxx&#x27; database. Please check your configuration.
+rails aborted!
+ActiveRecord::NoDatabaseError: connection to server at &quot;localhost&quot; (::1), port 5432 failed: FATAL:  role &quot;postgres&quot; does not exist
+
+
+
+というわけでpostgresというユーザーを作成します。シェル上で次のコマンドを実行します。
+createuser postgres
+
+
+
+ふたたびrails db:createします。
+~ bundle exec rails db:create
+2022-03-02 15:08:44.447 JST [52953] ERROR:  permission denied to create database
+2022-03-02 15:08:44.447 JST [529…</span>
+                  </div>
+                    <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://r7kamura.com/" target="_blank" rel="noopener">r7kamura.com</a></h3>
           <section class="articles-per-source">
             <article>
@@ -40,6 +77,38 @@
   <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-03-07">2022-03-07</time></h2>
     <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank" rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SV650が重く感じたのは、Vツインエンジンのための高重心だったからのようです</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2022/03/08/082158" target="_blank" rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>最近レンタルバイクで色々なバイクを乗ってる時に不思議だったのが、同じく200キロ近いバイクでも他のバイクはSV650ほど重く感じなかったことです。
+また、以前持っていたレブル500もあるいはリターンライトの前に乗っていたバイク達も200キロ前後でしたが、そこまで重いと思ったことがありませんでした。
+ところが、なぜかSV650は、停車時に支えてる時も取り回しの時にもちょっと油断すると重く倒れ掛かってきそうです。５年間の間に、すっかり筋力やバイクの勘が衰えていたせいかと思っていたのですが、どうもそればかりではなさそうです。
+なぜだろうと思って雑談ついでに買ったバイク屋さんのお兄さんに聞いてみたところ
+「ああ、それは、Vツインエンジンで、高重心だからですよ。だから、最近のバイクはみんな、パラレルツインが増えてきて、Vツイン淘汰されちゃったんですよね」
+とかるーーーく、言われました。ひーーーっ。
+検索してみたら、私とまったく同じ感想持っている人がいました。SV650より20キロ重いバイクよりも、下手したら、停車時や取り回しがたいへん、と。
+blog.livedoor.jp
+他のブログでも、風速10メートルを超えてくると、SV650は超怖いというインプレがありました。私も実は、まったく同じ感想で、レブル500でらくらく渡っていたアクアライン、風速がそこそこ強いときに初めてSV650で渡ったときに、まじに
+「数を数えながら、集中して、ひたすら無事渡り終わるのを待つ」
+という修行のような感じでした。
+まぁ、それでも、Vツインの音は好きだし、とにかく
+「高重心でスリムな子だから、扱いに気をつけてあげよう」
+と決意したら、ちょっとしたブレや挙動についても、理解ができるようになりました。いまは、なるべくコツコツ街乗りで低速時の修行もしています。
+縁があってうちにやってきた子なので、多少、高重心で扱いづらくてもエンジンかかって乗ってしまえば逆に素晴らしい乗り心地なので、大事にしてあげたいと思います。
+ちなみに、最近、マメにブログとかいろいろ検索しているのですが、50代女性で、大型バイクの免許をとったという話はちらほらあるのですが、乗り続けている人が意外と少ないんですよね。もう少し、仲間が増えるといいな、と思います。</span>
+                  </div>
+                    <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank" rel="noopener">疒</a></h3>
@@ -25078,27 +25147,11 @@ www.youtube.com
             </article>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank" rel="noopener">メルカリエンジニアリングブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Mercari HACK WEEKのつくり方</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://engineering.mercari.com/blog/entry/20211207-3b8d96d447/" target="_blank" rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>※この記事は、Mercari Advent Calendar 2021 の8日目の記事です。 こんにちは。メルカリのEngineering Officeの@afroscriptです。 メルカリでは2019年9月から、およ […]</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-07T23:04:47.640Z">2022-03-07T23:04:47.640Z</time>
+    <time id="build-timestamp" datetime="2022-03-08T00:24:44.065Z">2022-03-08T00:24:44.065Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
