@@ -168,6 +168,12 @@ body {
   text-decoration: none;
 }
 
+.article-summary-no-link {
+  color: var(--article-summary-color);
+  font-size: var(--font-size-m);
+  text-decoration: none;
+}
+
 .article-summary-link:hover {
   color: var(--article-summary-hover-color);
   --accordion-content-rail-color: var(--accordion-content-hover-rail-color);
