@@ -6637,20 +6637,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438041726346",
-          "author": null,
-          "description": "ども、@kimihom です。\n先日の TwilioJP-UG Online Vol.4 のイベントで、久々に話をさせてもらったので、その内容と所感について記す。\nSIGNAL での Twilio Live\n私は早めに切り上げさせてもらったのだが、序盤の話の中では 今回の SIGNAL で新しく出てきた内容のシェアがされた。Twilio Live は かつて wellcast がある時に欲しかったサービスだった。\nwww.twilio.com\nwww.bokukoko.info\n\"多人数への配信\" というのは今までも多くの Web サービスがあるのだけど、この領域はまだまだ未来がある。単に自分のビデオを配信するだけではなく、画像を加工したり音声だけの配信をしたり、特定ニーズでのビデオ配信などに応用ができる。今 Twilio で最も熱いサービスである(と思う)ので、今のうちから 何ができるのか考えておくと良さそうだ。\nはてさて、Zoom SDK とどう違ってどちらが適切なのか？是非調べていただければと思う。\n登壇資料\n speakerdeck.com\n所感\n今年は、iOS アプリ開発の日々であった。Swift の基本から学び、SwiftUI、そして Twilio Voice for iOS での実装まで、全てをやり切ることができた。\n\nCallConnect\n\nselfree LLC\nビジネス\n無料\n\n\napps.apple.com\n現状でできることは以下の機能となる。\nアカウントでのログイン. ログアウト\n外線の発信・着信\n発信時の通知する電話番号の選択\n内線の発信・着信\nキューイング着信への応答\n通話中の保留とその再開\n着信時に相手の名前、会社名の表示\n通話後の後処理メモ保存\n通話後に外部サービスへの通知\n1st リリースでは機能を抑えようと考え抜いた結果、上記の機能に絞ることにした。そうだ、これは最初のリリースがに過ぎない。今後も iOS の技術を追い続け、さらなる改善を続けていこう。\nこの中でも特に苦戦したのは、CallKit を使った通話周りの実装だ。Twilio Voice iOS にサンプルアプリがあるのだけど、そのアプリは画面遷移のない最もシンプルな構成であるため、その先にある CallKit の本当の難しさに直面することがない。\n特に通話のステータス管理が重要で、着信がきた時に正しく CallKit へ着信が受けられる状態を報告する必要がある。その後通話が始まったら CallKit へ報告するし、当然ながら通話が終わった後にも報告する必要がある。このタイミングがズレたり、報告し終わってないのに着信がきたら〜・・といった状態になるとすぐに Crash! するのである。\nここまで ステータスに厳しいのは、CallKit の iOS 間での共有にある。この CallKit はあらゆる電話のアプリ (電話, LINE など) で共有で使われており、例えば LINE で通話中の時に 自前の iOS アプリで着信が来ると、今の LINE 通話を切断して 自前 iOS アプリに出る といった選択ができるようになる。\nこれらは iOS 側での共通 UI となっており、これこそが CallKit となるのである。CallKit を使えば、通話アプリとして iOS 内で \"共有\" できる便利さはありつつ、CallKit のルールに必ず従わなければならない厳しさがある。\n終わりに\n今回の Twilio Meetup は忘年会も兼ねてということで、今年やったことを報告させてもらった。\n私は引き続き Voice 電話 を極めていく次第である。今月中には 資料に記した 録音セキュリティ 周りに関する記事を頑張って書くとしよう。\n\nクラウドネイティブセキュリティ入門\n\n作者:澤橋松王,岩上隆志,小林弘典,小幡学,関克隆\nシーアンドアール研究所\nAmazon\n\n\nゼロから教えて 電話応対\n\n作者:大部美知子\nかんき出版\nAmazon",
-          "link": "https://www.bokukoko.info/entry/2021/12/11/181309",
-          "publishedOn": "2021-12-11T09:13:09.000Z",
-          "wordCount": null,
-          "title": "Twilio Meetup Vol.4 の LT 補足",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/fd3df1b0f7153fdef9efdecb3b3c264a244f7555/enlarge=0;height=200;version=1;width=200/https%3A%2F%2Fis2-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple116%2Fv4%2F3c%2F7f%2Ff0%2F3c7ff0bc-b51d-9d39-046b-014d7a8c56d9%2Fsource%2F100x100bb.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
         }
       ]
     },
@@ -8328,15 +8314,6 @@
           "publishedOn": "2021-12-21T09:35:43.000Z",
           "wordCount": null,
           "title": "除夜ポゴ2021雑まとめ"
-        },
-        {
-          "id": "https://note.com/izumi_pogo/n/n784001c41988",
-          "author": null,
-          "description": "浮島D\nジャンプまるまる1つ消えるため約1.5秒短縮でとてもおいしい。（その後の小ジャンプの兼ね合いで1.3～1.4くらいかも）\n続きをみる",
-          "link": "https://note.com/izumi_pogo/n/n784001c41988",
-          "publishedOn": "2021-12-11T09:44:27.000Z",
-          "wordCount": null,
-          "title": "浮島ダイレクト、花畑ダイレクト"
         }
       ]
     },
