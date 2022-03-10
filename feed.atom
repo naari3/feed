@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-09T23:04:31.944Z</updated>
+    <updated>2022-03-10T00:24:04.964Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[spliceを使って高速・省メモリでGzipからZIPを作る]]></title>
+        <id>hatenablog://entry/13574176438071370865</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2022/03/10/091150"/>
+        <updated>2022-03-10T00:11:50.000Z</updated>
+        <summary type="html"><![CDATA[良い話を含むので概要の最初だけでも読んでもらえると幸いです。この話が実用的かと言うと多分全然実用的ではないので理解しても仕方ないかなと言う気がします。
+概要
+ファイルフォーマット
+gzip
+10-byteのヘッダ
+拡張ヘッダ
+ファイル本体
+フッタ（trailer）
+zip
+ローカルファイルヘッダ
+Data descriptor
+セントラルディレクトリエントリ
+セントラルディレクトリの終端レコード
+gzipからzipへの変換
+gzipヘッダの処理
+gzipファイル本体の処理
+gzip trailerの処理
+複数gzipファイルの連結
+PoC
+まとめ
+概要
+先日Dirty PipeというLinuxカーネルの脆弱性が公表されました。
+dirtypipe.cm4all.com
+この脆弱性の原理自体も面白いのですが、その前に報告者の組織で行っているGzipとZIPの処理で引っかかったのでまず先にそちらの理解に努めました。ちなみにアホなのでDirty Pipe関連で不明点を報告者に直接ぶつけたら丁寧に回答してくれました。話題になっていて問い合わせも殺到しているはずなのに返信がいつも数時間以内でありがたい限りです。疑問が解消してスッキリして最高な気分になれたので、失礼かもみたいな気持ちを一度捨てて無理を承知で連絡をとってみると良いかもしれません。忙しければスルーされるだけなので、そこまで時間を取ってしまうこともないと思います。そういったことで関係が生まれて何かに繋がるかもしれません。ちなみに自分もOSSのメンテナをやっていて知らない人からメールがちょくちょく来ますが面倒な時はただスルーしてますし、特に嫌な気持ちにはなりません。
+話を戻すと、まずは上記ブログ内に以下の記述がありました。
+Via HTTP, all access logs of a month can be download…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022/03/09]]></title>
         <id>hatenablog://entry/13574176438071325820</id>
