@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-11T04:09:19.727Z</updated>
+    <updated>2022-03-11T05:05:06.426Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Elasticsearch運用ノウハウ]]></title>
+        <id>20185</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220311-97aec2a2f8/"/>
+        <updated>2022-03-11T13:42:13.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、メルカリMicroservices SREチームの藤本(@jimo1001)です。 私は現在、Embedded SRE として サーチインフラチームに入り活動しています。このサーチインフラチームは、Elast […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[新メンバーの視点から見たソウゾウでのオンボーディング]]></title>
         <id>19339</id>
