@@ -74,6 +74,209 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-03-11">2022-03-11</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank"
+              rel="noopener">メルカリエンジニアリングブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">新メンバーの視点から見たソウゾウでのオンボーディング</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://engineering.mercari.com/blog/entry/20220311-souzoh-onboarding-from-new-members-perspective/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。ソウゾウの Software Engineer の @gotomo です。連載：メルカリShops 開発の裏側 Vol.2の19日目を担当させていただきます。 ソウゾウには Onboarding Quest  […]</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank"
+              rel="noopener">knqyf263&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">20分で分かるDirty Pipe（CVE-2022-0847）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2022/03/11/105130" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>極限まで詳細を省けば何とか20分で雰囲気だけでも伝えられるんじゃないかと思って書きました。書き終えてから見返したら多分無理なので誇大広告となったことを深くお詫び申し上げます。
+背景
+概要
+脆弱性の影響
+ページキャッシュやsplice
+パイプ
+マージの可否
+下準備
+攻撃手順
+まとめ
+背景
+先日Dirty PipeというLinuxカーネルの脆弱性が公表されました。
+dirtypipe.cm4all.com
+Linuxのパイプに関する脆弱性なのですが、仕組みは意外とシンプルでぎりぎりブログでも伝わるかもしれないと思ったので自分の理解を書きました。あといつも細かく書きすぎて長くなるので、今回は雰囲気だけでも伝わるようにとにかく説明を簡略化し、ふわっとした概要だけでも理解してもらえるように頑張りました。その結果、若干正確性に欠ける部分があるかもしれませんがお許しください。細かい部分はまた別の記事でまとめます。もっと正確に細かく書きたいという衝動を抑え、とにかく20分以内に「あーそういうことね完全に理解した（わかってない）」というところまで持っていくことを目指しています。
+なお、自分は特にLinuxカーネル開発者でもないですし、一部は簡略化のせいとかではなく普通に間違っている可能性もあります。その点は念頭に置いて読んでください。また、何か間違いがあれば修正するのでLinuxカーネルに詳しい方たちからのご指摘もお待ちしております。
+概要
+脆弱性の影響
+まず、この脆弱性はread-onlyのファイルに対して書き込みができてしまうというものです。例えばrootしか書き込みできない /root/.ssh/authorized_keys だったり /etc/passwd だったりを一般ユーザから変更することでrootになりすますことが出来ます。つまり権限昇格の脆弱性ということになります。
+PoC…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220310/20220310225307.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank"
+              rel="noopener">@ledsun blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">マクロスのミサイルみたいな矢印</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/03/11/101232" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんな感じでX座標が同じ目標にむかう矢印は狭い範囲に集中してごちゃごちゃします。
+同じ座標に向かっている矢印
+そこでマクロスのミサイルみたいに各矢印に個性を与えます。
+マクロスのミサイルみたいな矢印
+正確に言うと逆です。
+マクロスのミサイルは目標地点は1つで、経路に個性があります。
+今回与えた個性は、目標地点をずらしています。
+目標地点が画面外に出ていて見えないことを良いことに、矢印が向かうX座標をランダムで変更しています。
+ネットワーク、パフォーマンス、メモリを指しているように見えるかもしれませんが、偶然です。
+順番に並んだ矢印
+もう少し調整して、矢印が決まった順番にならぶようにしました。
+矢印の個性は減ります。
+矢印の交差が減るので関係性は見やすくなります。
+ちなみにこの画像はブラウザのキャプチャで、矢印はSVGで描いています。</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220311/20220311100009.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">PostgreSQLのcreateuserで作ったユーザーのパスワードって何になるんだろうか？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/03/11/095416" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>PostgreSQLのユーザー作成 - @ledsun blog でPostgreSQLのユーザーを作成しました。
+パスワードを指定しませんでした。
+このとき作成したユーザーにはどのようなパスワードが設定されるのでしょうか？
+ユーザー名と同じになるのでしょうか？それとも乱数で初期パスワードが設定されるのでしょうか？
+createuserコマンドを使ってユーザーを作成したので、そのマニュアルを確認します。
+www.postgresql.jp
+-P
+--pwprompt
+このオプションが指定されると、createuserは新しいユーザのパスワードのプロンプトを表示します。 もしパスワード認証を使う予定がなければ、これは必要ありません。
+
+
+-pオプションはつけませんでした。
+この場合、パスワード認証を使わないようです。
+つまりパスワードは設定されていない、あるいは設定されていても無視されるようです。
+では、パスワード認証以外の認証には何があるのでしょうか？
+www.postgresql.jp
+trust認証が指定されるとPostgreSQLは、サーバに接続できる全ての人に対して （データベーススーパーユーザさえも）その人が指定する任意のデータベースユーザ名としてのアクセス権限が付与されていると想定します。
+
+
+これみたいです。
+HomebrewでインストールしたPostgreSQLはTrust認証が有効になっていそうです。
+Changing your (Homebrew) PostgreSQL configuration from trust to md5
+というそのものズバリな記事があります。
+これを参考に自分の環境の設定を確認してみます。
+まず設定ファイルpg_hba.confの場所を確認します。
+~►psql postgres                                                            09:27
+psql (14.2)
+Type &quot;help&quot; for help.
+
+postgres&#x3D;# show hba_file;
+              hba_file
+-------------------------------------
+ /usr/local/var/postgres/pg_hba.conf
+(1 row)
+
+
+
+つぎにpg_hba.confの内容を確認します。
+# &quot;local&quot; is for Unix domain socket connections only
+local   all             all                                     trust
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            trust
+# IPv6 local connections:
+host    all             all             ::1/128                 trust
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+local   replication     all                                     trust
+host    replication     all             127.0.0.1/32            trust
+host    replication     all             ::1/128                 trust
+trustがいっぱい出てくるので、Trust認証が有効になっているようです。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">村づくりゲームのNPCが生身の人間としか思えない ４</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/03/11/093720" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>村づくりゲームのNPCが生身の人間としか思えない（４） (角川コミックス・エース)
+
+作者:森田 和彦
+KADOKAWA
+Amazon
+
+人間には物語に触れて登場人物に共感すると、自分を客観的にみれるようになる性質があります。
+原理はよくわかりませんが、あります。
+この漫画のストーリーはこれを丁寧に描きます。
+主人公はゲームの登場人物に感情移入し、自分を客観視するようになり、自分を変えようと努力をはじめます。
+丁寧にストーリーを描いているので力強く興味が引かれます。
+その一方でもう一つの大きな柱である謎のゲームに関しては一向に謎が解き明かされません。
+そのくせチラチラと怪しいフラグを見せてきます。
+先は気になるし、お話は楽しめるし、次の巻が楽しみです。</span>
+                  </div>
+                  <img src="https://m.media-amazon.com/images/I/513jITBa7FL._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2022-03-10</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/03/11/100006" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+TypeProfにIssueがきていて、どうやらRBS側の問題だったので修正した。rbs gem用のmanifest.yamlが必要だったけど欠けていたようだった。すっかり書くのを忘れていた。
+この調査とパッチは業務時間中に書いた。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-03-10">2022-03-10</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -27836,93 +28039,11 @@ ALT3
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/readybug_" target="_blank"
-              rel="noopener">れでぃば</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">音MADという人形遊び ─音に対する映像編集のアプローチ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/readybug_/n/nc2e7eccda258" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>「原曲不使用で音程合わせしかしてない音MADってDTMと変わんなくね？」
-「耳コピするにしろちゃんとした音源買えば良くね？」
-「なんでわざわざ権利侵害して妙な加工しまくってんの？」
-という意見を以前耳にしました。
-…そうか？本当に音MADとDTMって同じなのか？
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://diary.hatenablog.jp/" target="_blank"
-              rel="noopener">Write and Run</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2021-12-11</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://diary.hatenablog.jp/entry/2021/12/11/221750" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>これは KOBA789 日記 Advent Calendar 2021 - Adventar 11日目の記事です。
-9日目はなかった。
-日記
-年末なのでおさけが美味しい。
-終わりに
-明日も書ければ書く。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://sevensheets.hatenablog.com/" target="_blank"
-              rel="noopener">七曲り</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">BiliBili動画における「鬼畜」と「音MAD」の関係　「鬼畜」&#x3D;「音MAD」なのか？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://sevensheets.hatenablog.com/entry/2021/12/11/221346" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>你好（ニーハオ）！この記事は音MAD Advent Calendar 2021に参加しています！
-adventar.org
- 
-さてこんなネットの僻地まで記事を読みに来てくれている音MADフリークの皆さんの中には、中国版ニコニコ動画（もはや中国版YouTubeと言っても過言ではない規模かも）であるBiliBili動画において、音MAD動画が「鬼畜」と呼称されているという話を聞いたことがある方も多いかと思います。
-現在では中華圏においては音MADよりも遥かに認知度が高いであろうこの鬼畜というワードですが、一体どういう経緯で定着し、どのように使われているのでしょうか。日本語でそのあたりの情報がまとまっている記事が無さそうだったので、自分で調べた範囲でまとめてみたいと思います。
-注:この記事は中国語の記事や中国音MAD界隈の方に聞いた話を元に書いていますが、もしかしたら私が解釈を間違えている箇所があるかもしれません。間違いがあれば記事のコメント欄やTwitterでご指摘頂ければありがたいです。
-
-記事サムネ用にOtaku&#x27;s Adventureの谷恒条野ちゃんの画像を貼っています。別に有名な鬼畜素材というわけではないですが、かわいいので。翻訳がかなり怪しい日本語字幕もあるのでプレイしてみてね。
- 
-「鬼畜」という文字からお察しの方も多いと思いますが、鬼畜の語源はビートまりお氏による東方アレンジ曲「最終鬼畜妹フランドール・S」及び同曲を使った音MAD「M.C.ドナルドはダンスに夢中なのか？最終鬼畜道化師ドナルド・Ｍ」（以下、「総本山」とします）から来ています。
-
- 
-時代はBiliBili動画が生まれる前に遡ります。総本山が投稿された2008年、ニコニコのようにコメントが流れる中国の動画投稿サイトの1つにAcFunというサイトがありました。
-AcFunという名前がAnime Com…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/S/SevenSheets/20211211/20211211215421.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-11T00:30:07.017Z">2022-03-11T00:30:07.017Z</time>
+    <time id="build-timestamp" datetime="2022-03-11T02:06:52.997Z">2022-03-11T02:06:52.997Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
