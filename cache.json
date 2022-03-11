@@ -3499,22 +3499,7 @@
       "title": "北の大地のIT技術屋より",
       "feedUrl": "https://kitano-daichino-gijyutuya.hatenadiary.jp/rss",
       "siteUrl": "https://kitano-daichino-gijyutuya.hatenadiary.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438042052798",
-          "author": null,
-          "description": "自宅のメインPCがWindows10 Homeなんですが、たまにリビングからノートPCを使ってリモートアクセスしたいことがあります。\n基本的に、Homeはリモートデスクトップを使ったホストマシーンにできません。\nそんな時に使うのは、RDP Wrapperです。\n※以降、問題が発生しても、責任を負いかねます。\ngithub.com\n \n使い方はReleseセクションにあります。\ngithub.com\n \nこのRDPなんですが、オフィシャルでMicrosoftがサポートしているわけではありません。\nそして、WIndows Updateが行われる度に、様々な理由から使えなくなります。\n今回は2021年12月のWIndows Update後使用できなくなりました。\n最終的には、再度RDPが使えるようになったので、行ったことを残しておこうと思います。\n \nバージョン\n・エディション：Windows 10 Home\n・バージョン：21H1\n・OSビルド：19043.1348\n \n \n手順\n自分の状態は、autoupdate.batはあったんですが、その内容を最新化するような手順です。\n基本的には、ここにある手順を追いかけました。\ngithub.com\n \n1.こちらかこちらのリンクからRDPをダウンロードして、\"%ProgramFiles%\\RDP Wrapper\"のディレクトリに展開する。（通常だとC:\\Program Files\\RDP Wrapperとなる）\n→この部分は既に行っていたので、対応なし\n \n2.autoupdate.zipをダウンロードして、 \"%ProgramFiles%\\RDP Wrapper\"のディレクトリに全て展開する。\n→この部分は対応。\n \n3. autoupdate.batを管理者権限として実行（右クリックで、管理者権限で実行）するために、\"%ProgramFiles%\\RDP Wrapper\\helper\\autoupdate__enable_autorun_on_startup.bat\"を実行する。\n→この部分は対応。\n \n4.\"%ProgramFiles%\\RDP Wrapper\"フォルダをご自身のウィルスソフトやWindows Defenderの監視対象外とする。\n→既に対応していたため、特に対応なし。\n \n5.1~4の対応後、インストールとアップデートができる。インストール後、更新バッチを実行する。\"%ProgramFiles%\\RDP Wrapper\\autoupdate.bat\"\n→実行\n \n \nこれでうまくいった。\n%ProgramFiles%\\RDP Wrapper\\helper\\配下のファイルがなかったのと、\"%ProgramFiles%\\RDP Wrapper\\autoupdate.bat\"は以前のモノから置き換えた。\nそれによって再度RDPが使えるようになった。",
-          "link": "https://kitano-daichino-gijyutuya.hatenadiary.jp/entry/2021/12/12/181253",
-          "publishedOn": "2021-12-12T09:12:53.000Z",
-          "wordCount": null,
-          "title": "RDP v1.6.2が使えなくなったため、使えるようにした方法 2021年12月",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Robot Checkerboard",

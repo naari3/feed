@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-11T21:04:25.782Z</updated>
+    <updated>2022-03-11T22:06:16.714Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -20169,59 +20169,6 @@ Kindle Unlimited だとそういう心配なく読み漁れるのでいいです
 その技術を用いることで極論どんなことでも実現出来てしまう。つまり…]]></summary>
         <author>
             <name>kaikityouの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RDP v1.6.2が使えなくなったため、使えるようにした方法 2021年12月]]></title>
-        <id>hatenablog://entry/13574176438042052798</id>
-        <link href="https://kitano-daichino-gijyutuya.hatenadiary.jp/entry/2021/12/12/181253"/>
-        <updated>2021-12-12T09:12:53.000Z</updated>
-        <summary type="html"><![CDATA[自宅のメインPCがWindows10 Homeなんですが、たまにリビングからノートPCを使ってリモートアクセスしたいことがあります。
-基本的に、Homeはリモートデスクトップを使ったホストマシーンにできません。
-そんな時に使うのは、RDP Wrapperです。
-※以降、問題が発生しても、責任を負いかねます。
-github.com
- 
-使い方はReleseセクションにあります。
-github.com
- 
-このRDPなんですが、オフィシャルでMicrosoftがサポートしているわけではありません。
-そして、WIndows Updateが行われる度に、様々な理由から使えなくなります。
-今回は2021年12月のWIndows Update後使用できなくなりました。
-最終的には、再度RDPが使えるようになったので、行ったことを残しておこうと思います。
- 
-バージョン
-・エディション：Windows 10 Home
-・バージョン：21H1
-・OSビルド：19043.1348
- 
- 
-手順
-自分の状態は、autoupdate.batはあったんですが、その内容を最新化するような手順です。
-基本的には、ここにある手順を追いかけました。
-github.com
- 
-1.こちらかこちらのリンクからRDPをダウンロードして、"%ProgramFiles%\RDP Wrapper"のディレクトリに展開する。（通常だとC:\Program Files\RDP Wrapperとなる）
-→この部分は既に行っていたので、対応なし
- 
-2.autoupdate.zipをダウンロードして、 "%ProgramFiles%\RDP Wrapper"のディレクトリに全て展開する。
-→この部分は対応。
- 
-3. autoupdate.batを管理者権限として実行（右クリックで、管理者権限で実行）するために、"%ProgramFiles%\RDP Wrapper\helper\autoupdate__enable_autorun_on_startup.bat"を実行する。
-→この部分は対応。
- 
-4."%ProgramFiles%\RDP Wrapper"フォルダをご自身のウィルスソフトやWindows Defenderの監視対象外とする。
-→既に対応していたため、特に対応なし。
- 
-5.1~4の対応後、インストールとアップデートができる。インストール後、更新バッチを実行する。"%ProgramFiles%\RDP Wrapper\autoupdate.bat"
-→実行
- 
- 
-これでうまくいった。
-%ProgramFiles%\RDP Wrapper\helper\配下のファイルがなかったのと、"%ProgramFiles%\RDP Wrapper\autoupdate.bat"は以前のモノから置き換えた。
-それによって再度RDPが使えるようになった。]]></summary>
-        <author>
-            <name>北の大地のIT技術屋より</name>
         </author>
     </entry>
 </feed>

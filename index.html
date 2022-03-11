@@ -28126,74 +28126,11 @@ Kindle Unlimited だとそういう心配なく読み漁れるのでいいです
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://kitano-daichino-gijyutuya.hatenadiary.jp/" target="_blank"
-              rel="noopener">北の大地のIT技術屋より</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">RDP v1.6.2が使えなくなったため、使えるようにした方法 2021年12月</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://kitano-daichino-gijyutuya.hatenadiary.jp/entry/2021/12/12/181253" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>自宅のメインPCがWindows10 Homeなんですが、たまにリビングからノートPCを使ってリモートアクセスしたいことがあります。
-基本的に、Homeはリモートデスクトップを使ったホストマシーンにできません。
-そんな時に使うのは、RDP Wrapperです。
-※以降、問題が発生しても、責任を負いかねます。
-github.com
- 
-使い方はReleseセクションにあります。
-github.com
- 
-このRDPなんですが、オフィシャルでMicrosoftがサポートしているわけではありません。
-そして、WIndows Updateが行われる度に、様々な理由から使えなくなります。
-今回は2021年12月のWIndows Update後使用できなくなりました。
-最終的には、再度RDPが使えるようになったので、行ったことを残しておこうと思います。
- 
-バージョン
-・エディション：Windows 10 Home
-・バージョン：21H1
-・OSビルド：19043.1348
- 
- 
-手順
-自分の状態は、autoupdate.batはあったんですが、その内容を最新化するような手順です。
-基本的には、ここにある手順を追いかけました。
-github.com
- 
-1.こちらかこちらのリンクからRDPをダウンロードして、&quot;%ProgramFiles%\RDP Wrapper&quot;のディレクトリに展開する。（通常だとC:\Program Files\RDP Wrapperとなる）
-→この部分は既に行っていたので、対応なし
- 
-2.autoupdate.zipをダウンロードして、 &quot;%ProgramFiles%\RDP Wrapper&quot;のディレクトリに全て展開する。
-→この部分は対応。
- 
-3. autoupdate.batを管理者権限として実行（右クリックで、管理者権限で実行）するために、&quot;%ProgramFiles%\RDP Wrapper\helper\autoupdate__enable_autorun_on_startup.bat&quot;を実行する。
-→この部分は対応。
- 
-4.&quot;%ProgramFiles%\RDP Wrapper&quot;フォルダをご自身のウィルスソフトやWindows Defenderの監視対象外とする。
-→既に対応していたため、特に対応なし。
- 
-5.1~4の対応後、インストールとアップデートができる。インストール後、更新バッチを実行する。&quot;%ProgramFiles%\RDP Wrapper\autoupdate.bat&quot;
-→実行
- 
- 
-これでうまくいった。
-%ProgramFiles%\RDP Wrapper\helper\配下のファイルがなかったのと、&quot;%ProgramFiles%\RDP Wrapper\autoupdate.bat&quot;は以前のモノから置き換えた。
-それによって再度RDPが使えるようになった。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-11T21:04:25.690Z">2022-03-11T21:04:25.690Z</time>
+    <time id="build-timestamp" datetime="2022-03-11T22:06:16.659Z">2022-03-11T22:06:16.659Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
