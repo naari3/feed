@@ -528,6 +528,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438072221943",
+          "author": null,
+          "description": "メイドさんは食べるだけ（４） (コミックＤＡＹＳコミックス)\n\n作者:前屋進\n講談社\nAmazon\n\nメイドさんは食べるだけ、4巻読んだ。良かった。色々食べたくなる(けど季節外れになりがちでちょっとつらい)\n\nかわいいが詰まっていてさいこーなので読んでくださいお願いしますhttps://t.co/KtXA7GYnJu\n— 🎹 (@p_ck_) March 11, 2022\n  twitter.com\n1巻無料です。おねがいします。\nピアノレッスンだった。\n前回ペダルの踏み方を変えてみましょうと言われたところがしっくりきていなかったのでまた相談したところ、踏む回数を減らしてみることになった。そのほうがいい感じな気がするので、それで練習していきたい。\n中盤テーマが出てくるところで、出だしの音の強さを曲の頭のテーマの部分と揃えるように意識しましょうと言われた。",
+          "link": "https://commits.hatenablog.com/entry/2022/03/13/100002",
+          "publishedOn": "2022-03-13T01:00:02.000Z",
+          "wordCount": 157,
+          "title": "2022-03-12",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51OH7H1Px2L._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51OH7H1Px2L._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438071930208",
           "author": null,
           "description": "bugs.ruby-lang.org\n業務中にRails appでconst_source_locationを見てごちゃごちゃやるようなコードを書いていたのだけど、いくつかのクラスでこれが[false, 0]を返してきていてバグのようだったので報告した。\nRails app上では100%再現するのだけど、これを小さい再現コードに持っていくのがなかなか大変だった。\n対象のクラスがrequire_dependencyされていることからZeitwerk関連だと当たりをつけて、Zeitwerkを使った小さい再現コードを作って、そこからさらにZeitwerkの依存を外して、と調査していた。",
