@@ -1734,20 +1734,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438042671667",
-          "author": null,
-          "description": "現状、atomcam_toolsの機能としてはmnakada氏のforkがかなり高機能になっていますが、\n私のほうで公開していたv1.0rc2およびそちらのforkが現在ATOM Cam Swingには対応していない状態でした。\nそのため、とりあえずv1.0rc2を修正してまずはATOM Cam2と同様に使えるように修正しました。\ngithub.com\n \n修正個所としては、モータドライバが読み込まれていない部分を追加\ngithub.com\n \nしただけです。\nまた、mnakada氏のforkでは、atomcamの起動スクリプト内で無線LANドライバを読み込んでいる部分が独自記述になっていて、ATOM Cam Swingで発生したドライバファイルの移動に対応できていません。\ngithub.com\n私のほうは、ATOMCam内のスクリプトを読み込むようになっているため問題が発生していなかったようです。\n \nSwingで更新された起動スクリプトを貼っておくので…是非…ご対応を…っっっ\n \ngist.github.com",
-          "link": "https://honeylab.hatenablog.jp/entry/2021/12/14/155016",
-          "publishedOn": "2021-12-14T06:50:16.000Z",
-          "wordCount": null,
-          "title": "atomcam_toolsをATOM Cam Swingに対応しました",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
