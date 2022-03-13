@@ -2,10 +2,109 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-13T06:04:35.063Z</updated>
+    <updated>2022-03-13T07:01:48.497Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Ruby, Rails アップデートログ]]></title>
+        <id>hatenablog://entry/13574176438072486536</id>
+        <link href="https://www.bokukoko.info/entry/2022/03/13/153733"/>
+        <updated>2022-03-13T06:37:33.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+自社サービスの CallConnect で、 Ruby 3.1.1, Ruby on Rails 7.0.2.3 へアップデートが無事完了した。本記事では、対応した内容に関してまとめておこう。
+button_to の挙動変更
+button_to で View を展開された際の HTML が <input> タグから <button> タグに変更されていた。
+ここで気にしたいのが、JavaScript, CSS で input を指定していると適用されなくなっていた。そもそも class などで定義していれば問題なしとなる。
+X
+input.submit {
+  // CSS
+}
+
+○
+button.submit {
+  // CSS
+}
+
+
+
+URI.encode が利用不可へ
+URI.encode のコードが一律エラーとなった。Rails7 へ上げるときには一通り grep でこの該当コードがないか見ておく必要がある。
+X
+URI.encode("sample")
+
+○
+URI.encode_www_form_component("sample")
+
+
+
+違いに関しては 【翻訳】URI.escapeは非推奨メソッドです。あなたのクエリ文字列をパーセントエンコードするには - Qiita が参考になった。
+外部ドメインへの redirect_to の追加オプション
+単に redirect_to で他ドメインを指定すると、エラーが出るようになった。セキュリティ的な部分だろうか。
+X
+redirect_to "https://api.auth.com/oauth/"
+
+○
+redirect_to "https://api.auth.com/oauth/", allow_other_host: true
+
+
+
+メソッドにおけるハッシュパラメータ
+これが一番ハマった。Rails7 ではハッシュパラメータがメソッドの引数として指定できないケースがある。
+キーワード引数とハッシュ引数というので、似てるけども違うものとして捉えられるようになっている。
+www.ruby-lang.org
+# キーワード引数のメソッド
+def foo(k: 1)
+  p k
+end
+
+foo(k: 1) # OK! 注意
+foo({k: 1}) # NG
+foo(**{k: 1}) # OK
+
+h = { k: 1 }
+foo(h) # NG
+foo(**h) # OK
+
+# ハッシュ引数のメソッド
+def foo(k)
+  p k
+end
+h = { k: 1 }
+foo(h) # OK
+
+
+
+ActionMailer の config 指定の変更
+メール送信が正しくできなくなっていて、config の指定を変えたことで動作した。
+X
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
+ #...
+}
+
+○
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  #...
+}
+
+
+
+肝心のフロントエンドは？
+ご存知の通り、Rails7 での最大のアップデートはフロントエンド周りの対応だ。
+Rails7 から新しく出てきた Turbo, Stimulus, Hotwire などを検討してみた。なるほど、ゼロから開発する場合には確かに Node.js から逃れられる体験は素晴らしいものである。
+しかし、既に動いている Rails アプリに対して上記を使おうとすると、大規模な改修が必要となることがわかった。そのため、Rails7 でも引き続き対応している AssetPipeline を使い続けることにした。
+補足: 私個人のフロントエンドに関する思いとして、フレームワークやライブラリの最新を追い続けても、新しくできるようになることがほとんど何もない。そこに時間をかけるよりも、根本となる HTML5 の最新情報を追いつつ、実装は "できる限り" フレームワークを使わずに自前で対応していく次第である。
+終わりに
+フロントエンド側を思いっきり変えるなら、大規模な変更が必要になりそうな Rails7。
+しかし、それ以外は大きな問題もなく進めることができた。
+引き続き、HTML5, Ruby, Rails, Twilio, Heroku の最新を追いかけよう!!]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220312「リポグラ日記　その１」]]></title>
         <id>hatenablog://entry/13574176438072464101</id>

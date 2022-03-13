@@ -6492,6 +6492,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438072486536",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n自社サービスの CallConnect で、 Ruby 3.1.1, Ruby on Rails 7.0.2.3 へアップデートが無事完了した。本記事では、対応した内容に関してまとめておこう。\nbutton_to の挙動変更\nbutton_to で View を展開された際の HTML が <input> タグから <button> タグに変更されていた。\nここで気にしたいのが、JavaScript, CSS で input を指定していると適用されなくなっていた。そもそも class などで定義していれば問題なしとなる。\nX\ninput.submit {\n  // CSS\n}\n\n○\nbutton.submit {\n  // CSS\n}\n\n\n\nURI.encode が利用不可へ\nURI.encode のコードが一律エラーとなった。Rails7 へ上げるときには一通り grep でこの該当コードがないか見ておく必要がある。\nX\nURI.encode(\"sample\")\n\n○\nURI.encode_www_form_component(\"sample\")\n\n\n\n違いに関しては 【翻訳】URI.escapeは非推奨メソッドです。あなたのクエリ文字列をパーセントエンコードするには - Qiita が参考になった。\n外部ドメインへの redirect_to の追加オプション\n単に redirect_to で他ドメインを指定すると、エラーが出るようになった。セキュリティ的な部分だろうか。\nX\nredirect_to \"https://api.auth.com/oauth/\"\n\n○\nredirect_to \"https://api.auth.com/oauth/\", allow_other_host: true\n\n\n\nメソッドにおけるハッシュパラメータ\nこれが一番ハマった。Rails7 ではハッシュパラメータがメソッドの引数として指定できないケースがある。\nキーワード引数とハッシュ引数というので、似てるけども違うものとして捉えられるようになっている。\nwww.ruby-lang.org\n# キーワード引数のメソッド\ndef foo(k: 1)\n  p k\nend\n\nfoo(k: 1) # OK! 注意\nfoo({k: 1}) # NG\nfoo(**{k: 1}) # OK\n\nh = { k: 1 }\nfoo(h) # NG\nfoo(**h) # OK\n\n# ハッシュ引数のメソッド\ndef foo(k)\n  p k\nend\nh = { k: 1 }\nfoo(h) # OK\n\n\n\nActionMailer の config 指定の変更\nメール送信が正しくできなくなっていて、config の指定を変えたことで動作した。\nX\nActionMailer::Base.delivery_method = :smtp\nActionMailer::Base.smtp_settings = {\n #...\n}\n\n○\nconfig.action_mailer.delivery_method = :smtp\nconfig.action_mailer.smtp_settings = {\n  #...\n}\n\n\n\n肝心のフロントエンドは？\nご存知の通り、Rails7 での最大のアップデートはフロントエンド周りの対応だ。\nRails7 から新しく出てきた Turbo, Stimulus, Hotwire などを検討してみた。なるほど、ゼロから開発する場合には確かに Node.js から逃れられる体験は素晴らしいものである。\nしかし、既に動いている Rails アプリに対して上記を使おうとすると、大規模な改修が必要となることがわかった。そのため、Rails7 でも引き続き対応している AssetPipeline を使い続けることにした。\n補足: 私個人のフロントエンドに関する思いとして、フレームワークやライブラリの最新を追い続けても、新しくできるようになることがほとんど何もない。そこに時間をかけるよりも、根本となる HTML5 の最新情報を追いつつ、実装は \"できる限り\" フレームワークを使わずに自前で対応していく次第である。\n終わりに\nフロントエンド側を思いっきり変えるなら、大規模な変更が必要になりそうな Rails7。\nしかし、それ以外は大きな問題もなく進めることができた。\n引き続き、HTML5, Ruby, Rails, Twilio, Heroku の最新を追いかけよう!!",
+          "link": "https://www.bokukoko.info/entry/2022/03/13/153733",
+          "publishedOn": "2022-03-13T06:37:33.000Z",
+          "wordCount": null,
+          "title": "Ruby, Rails アップデートログ",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220215/20220215153352.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220215/20220215153352.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438067391543",
           "author": null,
           "description": "ども、@kimihom です。\n\nTwilio コミュニティの中で、「1本目の着信が来た後、続けて2本目の着信が来たときに、1本目の着信を出られるようにしたい」というケースで質問をいただいた。まさにそのケースの対応を自分も実装したので、コードを含めて説明していければと思う。\nTwilio Voice JavaScript SDK の変更\nまず、v1 から v2 への 大枠の変更は以下の記事にまとめてある。\nwww.bokukoko.info\n\"Device 実装の変更\" がさっと書いてあるが、これが実装する上では最も大きな影響を与えている。\n最も大きな変更点は何か。個人的には以下の違いが最も大きいと感じている。\nv1: 着信が来た順で最新の着信のみを受け取れていた\nv2: 着信が複数来たときに、そのどの着信を出るかを選択できるようになった\nこの影響もあり、どうやら執筆時点で Twilio Voice JavaScript SDK のサンプルアプリでは、最もシンプルに着信を表示するだけの実装になっているようだ。\nではどう実装していくか、詳細をコードを含めて説明していく。\n初期化コード\nまず答えから書くと、\"着信を受けているCallをJavaScript内で管理する\" ということになる。\n具体的なサンプルコードを書いてみる。\nlet token = getToken(); // access token\nlet activeCall = null; // 現在アクティブなCall\nlet activeIncomingCalls = {} // 現在着信を受けているCall\n\nfunction initTwilioClient(token) {\n  const twilio = new Twilio.Device(token);\n\n  twilio.on('registering…",
