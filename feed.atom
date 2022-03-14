@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-14T21:02:18.698Z</updated>
+    <updated>2022-03-14T22:02:12.568Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[セキュリティツールの評価は難しい]]></title>
+        <id>hatenablog://entry/13574176438073099609</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2022/03/15/064819"/>
+        <updated>2022-03-14T21:48:19.000Z</updated>
+        <summary type="html"><![CDATA[前から思ってたことをちょっと書かずにいられなくなったのでポエムを書きました。
+背景
+お前誰だよってなるかもしれないので書いておくと、Trivyという脆弱性スキャナーのメンテナをやっています。
+github.com
+とある有名な方による以下のツイートがありました。
+
+I just discovered, during @cloudflare #SecurityWeek no less, that Trivy (the vuln scanner) doesn't detect known issues in Alpine images. Including a critical CVE in the latest. 🙁
+Worth checking your scanner works with your base image type.
+— Matt Farina (@mattfarina) 2022年3月14日
+  
+簡単に言うとTrivyがAlpine Linuxで検知するべき脆弱性を検知していない（false negative）という話です。つまりバグっているという指摘なわけですが、結論から言うと実際には彼の勘違いでTrivyのバグではありませんでした。正直GitHubに来るfalse positive/negativeに関するIssueの9割近くは報告者の勘違いなのでまずはちゃんと原因を把握しようと思ったのですが、その前にすでにAlpineのセキュリティチームの方が反論してくれていました。
+
+This is, of course, nonsense.  Trivy was literally written by @AquaSecTeam to scan Alpine images.
+Find another distribution to lie about, M…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki20220314「数学を解いてみる」]]></title>
         <id>hatenablog://entry/13574176438073085808</id>
