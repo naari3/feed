@@ -2,10 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-14T18:03:07.831Z</updated>
+    <updated>2022-03-14T19:02:01.036Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[nikki20220314「数学を解いてみる」]]></title>
+        <id>hatenablog://entry/13574176438073085808</id>
+        <link href="https://isitsutbustu-todoke.hatenablog.com/entry/2022/03/15/034924"/>
+        <updated>2022-03-14T18:49:24.000Z</updated>
+        <summary type="html"><![CDATA[朝の8時くらいに寝て、不規則に寝たり起きたりする隙間で予定をこなすと夜になった。
+ 
+ 
+ 
+ 
+　食べるものがなくて、深夜にコンビニに行った。親戚から食料が送られてきたためあるにはあるのだけど、がっつり食べられるものはあまりない。パスタとソースを買った。事務室のようなところで同年齢くらいの店員が談笑していたので、会計をすることに対する抵抗があった。最近はどうやら24時間営業ではないらしく、ほぼ終業間際に行ったので迷惑だったろう。前に午前2時に行ったら閉まっていて店の前で立ち尽くしたことがある。
+ 
+ 
+ 
+
+　数日前の日記で触れたネットプリント「第三滑走路」、そのうちのひとりの方がやっているyoutubeチャンネルが流れてきたので見た。文房具の試し書きコーナーで東大の入試を解いていた。
+ 
+youtu.be
+ 
+ 
+ 
+ 
+　ここで解かれている昨年度の理系数学の問題を見てそんなに難しくないんじゃないか、と思ったので解くことにした。前提として私は文系であり、数学を扱うことは数年来やっていない。家庭教師などもしていないので教えることもなく、本当に忘れている。証拠として、先日妹に0は整数かと訊かれたときに答えられなかった。
+ 
+
+www.densu.jp
+ 
+　これの大問１の（1）である。やってみたところ1時間くらいかかった。そして図示したのがこちらで解答が以下
+ 
+ 
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+　驚くほどの差であった。回答を見て納得はできた。放物線がx軸と二点で交わるので、あるxのときのyが正か負かを見るだけでよい、という定理であり懐かしい。しかし、自分の解き方のどこが間違っていたのかが分からない。また後日に分析と反省を書くかもしれない。ただ、トラウマというか学生時代数学が苦手でこういう経験ばかりしていたことを思い出した。長い時間かけて解いたらあっけない解法で、しかも自分の方は些細なミスをしているという経験。そもそも数学における解答の解法は結論だけ書いてあるというか、そこまでの思考にいたるプロセスが省略されているのでこの解答の鮮やかさにそこまで落胆する必要はないのかもしれない。あと動画内で東大の理三の方も苦戦しているので…。しかし見るにわりと初歩的（青チャートなどの…。*1）っぽいので、やはり苦手が露呈しただけな気もする。誰かに教えてほしいです。あと解いてからきょうが3.14でキリがいいと気づいた。おやすみなさい。
+ 
+*1:私は学生時代青チャートに一切触れなかった。実際の入試で青チャートに載っているままの問題が出たりしたので、1年の頃から少しずつ解いていればもう少し変わったのかもしれないという後悔がある]]></summary>
+        <author>
+            <name>遺失物取扱所</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220313「一般事務員の憂鬱」]]></title>
         <id>hatenablog://entry/13574176438073080612</id>
@@ -20089,70 +20136,6 @@ pic.twitter.com/1YeWtZlPrD
 それじゃあまた。]]></summary>
         <author>
             <name>chomoshのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[set -eのもとで特定のコマンドの終了ステータスを変数に入れるシェルスクリプトのスニペット]]></title>
-        <id>hatenablog://entry/13574176438042978391</id>
-        <link href="https://gfx.hatenablog.com/entry/2021/12/15/153937"/>
-        <updated>2021-12-15T06:39:37.000Z</updated>
-        <summary type="html"><![CDATA[課題編
-シェルスクリプトで「あるグローバルな状態を変える操作を行い、その結果をチェックし、状態をもとに戻す」みたいなタスクをするときに「その結果をチェックし」のところでコマンドの終了ステータスを変数に入れて置きたいみたいなことがあります。例えば、次のようなコマンド操作です。
-set -e
-
-# グローバルな状態を変える操作を行う
-git merge --no-ff --no-commit $main_branch || true
-
-# 結果をチェックしてexit codeを変数に入れる
-git diff --cached --exit-code --quiet ; code=$?
-
-# グローバルな状態をもとに戻す
-git merge --abort
-
-# 上位プロセスに結果を渡す
-exit $code
-
-
-
-スクリプト全体には set -e （コマンドが失敗するとシェルスクリプトが即座に終了する）を効かせていると、このままだと  git diff --exit-code ... で差分があるときに終了ステータス1を返してシェルスクリプトが終了してしまいます。これをシェルスクリプトを終了させるに終了ステータスを得たいというわけです。
-解答編
-やりかたは色々ありました。
-
-興味がわいたので検索してみたら、一時的に set +e して set -e で戻すしかないみたいですね。https://t.co/lib3MOADLh
-— Hiroaki Nakamura (@hnakamur2) December 15, 2021
-  
-
-set -e
-{ something-command; CODE=$?; } || :
-echo "$CODE"
-が良い気がします。
-— mattn (@mattn_jp) December 15, 2021
-  
-
-じつは&&trueをつければ終了しない。
-set -e
-false && true
-echo $?#シェル芸
-— eban (@eban) December 15, 2021
-  
-
-ex=0
-cmd || ex=$?
-とか
-cmd && :     # または cmd && true
-ex=$?
-個人的には if cmd; then のように書くので、終了ステータスの値を本当に参照したい時以外はシェル変数に入れたりしませんが
-— Koichi Nakashima (@ko1nksm) December 15, 2021
-  
-
-ポータブル（sh / bash / zshで動く）、簡単な構文、やりたいことが明白、という観点から検討した結果以下のやりかたはぼくは好みです。
-code=$(set +e ; command ; echo $?)
-— FUJI Goro (@__gfx__) December 15, 2021
-  
-※ -e の挙動はポータブルではなくシェルによって挙動が違うので set +e での無効化が必要
-どれでも正しく動くのでいいと思いますが、 code=$(set +e ; command ; echo $?) はポータブルで比較的メジャーな構文のみ使い、グローバルの状態に依存したりグローバルの状態を一時的にでも変えたりせず、意図が明確なので今回はこれでいこうかと思います。]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
         </author>
     </entry>
 </feed>

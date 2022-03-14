@@ -1405,20 +1405,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438042978391",
-          "author": null,
-          "description": "課題編\nシェルスクリプトで「あるグローバルな状態を変える操作を行い、その結果をチェックし、状態をもとに戻す」みたいなタスクをするときに「その結果をチェックし」のところでコマンドの終了ステータスを変数に入れて置きたいみたいなことがあります。例えば、次のようなコマンド操作です。\nset -e\n\n# グローバルな状態を変える操作を行う\ngit merge --no-ff --no-commit $main_branch || true\n\n# 結果をチェックしてexit codeを変数に入れる\ngit diff --cached --exit-code --quiet ; code=$?\n\n# グローバルな状態をもとに戻す\ngit merge --abort\n\n# 上位プロセスに結果を渡す\nexit $code\n\n\n\nスクリプト全体には set -e （コマンドが失敗するとシェルスクリプトが即座に終了する）を効かせていると、このままだと  git diff --exit-code ... で差分があるときに終了ステータス1を返してシェルスクリプトが終了してしまいます。これをシェルスクリプトを終了させるに終了ステータスを得たいというわけです。\n解答編\nやりかたは色々ありました。\n\n興味がわいたので検索してみたら、一時的に set +e して set -e で戻すしかないみたいですね。https://t.co/lib3MOADLh\n— Hiroaki Nakamura (@hnakamur2) December 15, 2021\n  \n\nset -e\n{ something-command; CODE=$?; } || :\necho \"$CODE\"\nが良い気がします。\n— mattn (@mattn_jp) December 15, 2021\n  \n\nじつは&&trueをつければ終了しない。\nset -e\nfalse && true\necho $?#シェル芸\n— eban (@eban) December 15, 2021\n  \n\nex=0\ncmd || ex=$?\nとか\ncmd && :     # または cmd && true\nex=$?\n個人的には if cmd; then のように書くので、終了ステータスの値を本当に参照したい時以外はシェル変数に入れたりしませんが\n— Koichi Nakashima (@ko1nksm) December 15, 2021\n  \n\nポータブル（sh / bash / zshで動く）、簡単な構文、やりたいことが明白、という観点から検討した結果以下のやりかたはぼくは好みです。\ncode=$(set +e ; command ; echo $?)\n— FUJI Goro (@__gfx__) December 15, 2021\n  \n※ -e の挙動はポータブルではなくシェルによって挙動が違うので set +e での無効化が必要\nどれでも正しく動くのでいいと思いますが、 code=$(set +e ; command ; echo $?) はポータブルで比較的メジャーな構文のみ使い、グローバルの状態に依存したりグローバルの状態を一時的にでも変えたりせず、意図が明確なので今回はこれでいこうかと思います。",
-          "link": "https://gfx.hatenablog.com/entry/2021/12/15/153937",
-          "publishedOn": "2021-12-15T06:39:37.000Z",
-          "wordCount": 242,
-          "title": "set -eのもとで特定のコマンドの終了ステータスを変数に入れるシェルスクリプトのスニペット",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -1803,6 +1789,21 @@
       "feedUrl": "https://isitsutbustu-todoke.hatenablog.com/rss",
       "siteUrl": "https://isitsutbustu-todoke.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438073085808",
+          "author": null,
+          "description": "朝の8時くらいに寝て、不規則に寝たり起きたりする隙間で予定をこなすと夜になった。\n \n \n \n \n　食べるものがなくて、深夜にコンビニに行った。親戚から食料が送られてきたためあるにはあるのだけど、がっつり食べられるものはあまりない。パスタとソースを買った。事務室のようなところで同年齢くらいの店員が談笑していたので、会計をすることに対する抵抗があった。最近はどうやら24時間営業ではないらしく、ほぼ終業間際に行ったので迷惑だったろう。前に午前2時に行ったら閉まっていて店の前で立ち尽くしたことがある。\n \n \n \n\n　数日前の日記で触れたネットプリント「第三滑走路」、そのうちのひとりの方がやっているyoutubeチャンネルが流れてきたので見た。文房具の試し書きコーナーで東大の入試を解いていた。\n \nyoutu.be\n \n \n \n \n　ここで解かれている昨年度の理系数学の問題を見てそんなに難しくないんじゃないか、と思ったので解くことにした。前提として私は文系であり、数学を扱うことは数年来やっていない。家庭教師などもしていないので教えることもなく、本当に忘れている。証拠として、先日妹に0は整数かと訊かれたときに答えられなかった。\n \n\nwww.densu.jp\n \n　これの大問１の（1）である。やってみたところ1時間くらいかかった。そして図示したのがこちらで解答が以下\n \n \n\n\n\n \n\n\n\n \n \n \n　驚くほどの差であった。回答を見て納得はできた。放物線がx軸と二点で交わるので、あるxのときのyが正か負かを見るだけでよい、という定理であり懐かしい。しかし、自分の解き方のどこが間違っていたのかが分からない。また後日に分析と反省を書くかもしれない。ただ、トラウマというか学生時代数学が苦手でこういう経験ばかりしていたことを思い出した。長い時間かけて解いたらあっけない解法で、しかも自分の方は些細なミスをしているという経験。そもそも数学における解答の解法は結論だけ書いてあるというか、そこまでの思考にいたるプロセスが省略されているのでこの解答の鮮やかさにそこまで落胆する必要はないのかもしれない。あと動画内で東大の理三の方も苦戦しているので…。しかし見るにわりと初歩的（青チャートなどの…。*1）っぽいので、やはり苦手が露呈しただけな気もする。誰かに教えてほしいです。あと解いてからきょうが3.14でキリがいいと気づいた。おやすみなさい。\n \n*1:私は学生時代青チャートに一切触れなかった。実際の入試で青チャートに載っているままの問題が出たりしたので、1年の頃から少しずつ解いていればもう少し変わったのかもしれないという後悔がある",
+          "link": "https://isitsutbustu-todoke.hatenablog.com/entry/2022/03/15/034924",
+          "publishedOn": "2022-03-14T18:49:24.000Z",
+          "wordCount": 93,
+          "title": "nikki20220314「数学を解いてみる」",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20220315/20220315033549.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20220315/20220315033549.png"
+        },
         {
           "id": "hatenablog://entry/13574176438073080612",
           "author": null,
