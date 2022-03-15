@@ -1345,6 +1345,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438073268743",
+          "author": null,
+          "description": "初めに\n本ブログではやった内容技術詳細ではなく、未踏プロジェクトをやってみてどうだったか、どんなことを学んだのか、感じたことといったポエムです。興味のある方だけ読むようにお願いします。あらかじめご了承ください。\n概要\n今回、2021年度の未踏プロジェクトを終了しましたのでご報告をさせていただきます。今回私はレースドローン向け低遅延IP映像伝送システムの開発というテーマで取り組みました。高画質なデジタル映像伝送かつ、アナログ映像伝送並みの伝送遅延を実現したいというプロジェクトです。FPGAを使った、フレームバッファリングをしない画像処理、MJPEG圧縮やIP送信機構などハードウェア実装など行いカメラから受信機までを30ｍs程度の遅延でなんとかしましたというプロジェクトです。\n一人プロジェクトです。\n実装した映像送信機の写真\n未踏期間中に思ったこと\nよくある感想で申し訳ないのですが、あっという間でした。それだけ忙しかったという感じです。未踏期間は約9ヶ月、作業的には8ヶ月くらいしかありません。この期間でハードウェアを作ろうという人は覚悟して挑んだほうが良いと思います。自分の能力不足という可能性も十分にあり\n自分の場合は構想だけあって、基礎技術だけ検証できてる状態で、実際に組み合わせて動作を確かめたりが全然できておらず、未踏期間中に初めて組み合わせて動かすという状態だったのでかなり厳しい戦いだった。特に電子回路からFPGA、CPU、OS、アプリケーションまで触るようなフルレイヤーはかなりハマりやすいのもあり相当苦戦しました。使ったことないツールを使わないといけないことがわかったり、そもそもやり方が間違っており実装できず全部やり直しになったりしたというのもあるんですけどね。\n一人プロジェクトは作業中の会話相手がいないし、挫けそうになった時すぐに相談できる人もあんまいないのでそこはグ…",
+          "link": "https://fumimaker.net/entry/2022/03/15/194337?utm_source=feed",
+          "publishedOn": "2022-03-15T10:43:37.000Z",
+          "wordCount": 206,
+          "title": "2021年度未踏プロジェクトを終えて",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20201003/20201003015020.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20201003/20201003015020.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438050787291",
           "author": null,
           "description": "2022年になったことでuint32_tからリビジョンがオーバーフローし、論理合成ができないバグが発生していました。\nパッチが公開されました。\nhttps://support.xilinx.com/s/article/76960?language=ja\n症状\nオーバーフローバグがあるときこのようなエラーが発生します。例えばUltra96 MPSoCでAXI GPIOをつなげただけの単純なデザインではこのようなエラーがでます。HLSを使うデザインは全滅します。\nTPGやDemosaicなどが失敗している\nScanning sources...\nFinished scanning sources\nINFO: [IP_Flow 19-234] Refreshing IP repositories\nINFO: [IP_Flow 19-1704] No user IP repositories specified\nINFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.\nWARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not found '/home/fumi/fixstars/fixstars.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0.dcp'. Please regenerate to continue.\nWARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not …",
