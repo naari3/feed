@@ -98,37 +98,51 @@
       </li>
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2022-03-15</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/03/16/100013" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>碓氷峠を越えたアプト式鉄道 (交通新聞社新書)
-
-作者:清水昇
-交通新聞社
-Amazon
-
-碓氷峠を越えたアプト式鉄道、読んだ。碓氷線のことは全然知らなかったので、面白かった。
-碓氷峠まで遊びに行きたいなあ。
-この本は紡ぐ乙女と大正の月の参考文献に載っていたのがきっかけで読み始めた。</span>
-                  </div>
-                  <img src="https://m.media-amazon.com/images/I/41MmELSiPBL._SL500_.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank"
               rel="noopener">@ledsun blog</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Fat Model問題</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/03/16/200505" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Fat Model問題を説明してみましょう。
+ここでいうFat Model問題とはRuby on Raisを使って書かれたWebアプリケーションにおいてモデルクラスが大きくなりすぎる問題のことをいいます。
+Ruby on Railsでは、MVC（model-view-controller）というアーキテクチャパターンを採用しています。
+第1章 ゼロからデプロイまで - Railsチュートリアル
+ブラウザがRailsアプリと通信する際、一般的にWebサーバーにリクエスト（request）を送信し、これはリクエストを処理する役割を担っているRailsのコントローラ（controller）に渡されます。コントローラは（ユーザーなどの）サイトの要素を表しており、データベースとの通信を担当しているRubyのオブジェクトであるモデル（model） と対話します。モデルを呼び出した後、コントローラは、ビューを描画し、完成したWebページをHTMLとしてブラウザに返します。
+
+
+Ruby on Railsではコントローラーには処理をほとんど書かずに、モデルクラスの呼び出しのみを書くべきだとされています（要出展）。
+例えば、DHHが示したBasecamp3というアプリケーションの統計情報では、コントローラーのメソッド辺りの行数（LOC/M）は3行しかありません。
+
+Basecamp 3 is up to 308 controllers. Some 1400 methods. Imagine recreating all that with all-native apps? No thanks. Majestic be thy Monolith. pic.twitter.com/aTmwGT32ep
+— DHH (@dhh) February 9, 2018
+  
+では処理はどこに書くのでしょうか？MVCの残りの登場人物はモデルクラスとビューです。
+MVCはPresentation Domain Separation (PDS)原則に則っています。
+ビューにはプレゼンテーション（見た目の整える）処理のみを書きそれ以外の処理はモデルに書きます。
+つまり、見た目に関わらないほとんどの処理はモデルクラスに書きます。
+この方針のまま大きなアプリケーションを実装したらどうなるでしょうか？
+大きなモデルクラスが誕生します。
+モデルクラスが大きくなると変更が難しくなります（なぜ？）。
+これがFat Model問題です。
+で、DHHのツイートを見なおしてみましょう。
+モデルクラスは2万行近くあって300個以上あります。
+が、クラス辺りのメソッド数（M/C）は8しかないしメソッド辺りの行数は3なんですよね・・・どこがFatなのか？
+ServiceクラスもFormオブジェクトも使わなくともFat Model問題は起きないみたいですよ？どういうことですか？
+参考
+rails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記
+プレゼンテーションとドメインの分離
+rails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記
+改めて振り返る Fat Controller / Fat modelとの戦い - masa寿司の日記
+Fat Modelの倒し方 / how to deal with fat model - Speaker Deck</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander" open>
                 <summary class="article-expander__title">ブラウザからJavaScriptモジュールをjQueryとともに使う</summary>
@@ -180,6 +194,34 @@ HTTPサーバーを起動しないと、index.jsをローカルファイルか�
 モジュールバンドラーを使っていなくても、を使ってWeb標準の依存関係解決をやっていけることがわかりました。</span>
                   </div>
                   <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220316/20220316085625.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2022-03-15</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/03/16/100013" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>碓氷峠を越えたアプト式鉄道 (交通新聞社新書)
+
+作者:清水昇
+交通新聞社
+Amazon
+
+碓氷峠を越えたアプト式鉄道、読んだ。碓氷線のことは全然知らなかったので、面白かった。
+碓氷峠まで遊びに行きたいなあ。
+この本は紡ぐ乙女と大正の月の参考文献に載っていたのがきっかけで読み始めた。</span>
+                  </div>
+                  <img src="https://m.media-amazon.com/images/I/41MmELSiPBL._SL500_.jpg" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -27977,7 +28019,7 @@ UI変更がより柔軟に、簡単になることで、作って壊しの試行
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-16T10:07:02.187Z">2022-03-16T10:07:02.187Z</time>
+    <time id="build-timestamp" datetime="2022-03-16T11:06:46.568Z">2022-03-16T11:06:46.568Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

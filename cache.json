@@ -3865,6 +3865,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438073617034",
+          "author": null,
+          "description": "Fat Model問題を説明してみましょう。\nここでいうFat Model問題とはRuby on Raisを使って書かれたWebアプリケーションにおいてモデルクラスが大きくなりすぎる問題のことをいいます。\nRuby on Railsでは、MVC（model-view-controller）というアーキテクチャパターンを採用しています。\n第1章 ゼロからデプロイまで - Railsチュートリアル\nブラウザがRailsアプリと通信する際、一般的にWebサーバーにリクエスト（request）を送信し、これはリクエストを処理する役割を担っているRailsのコントローラ（controller）に渡されます。コントローラは（ユーザーなどの）サイトの要素を表しており、データベースとの通信を担当しているRubyのオブジェクトであるモデル（model） と対話します。モデルを呼び出した後、コントローラは、ビューを描画し、完成したWebページをHTMLとしてブラウザに返します。\n\n\nRuby on Railsではコントローラーには処理をほとんど書かずに、モデルクラスの呼び出しのみを書くべきだとされています（要出展）。\n例えば、DHHが示したBasecamp3というアプリケーションの統計情報では、コントローラーのメソッド辺りの行数（LOC/M）は3行しかありません。\n\nBasecamp 3 is up to 308 controllers. Some 1400 methods. Imagine recreating all that with all-native apps? No thanks. Majestic be thy Monolith. pic.twitter.com/aTmwGT32ep\n— DHH (@dhh) February 9, 2018\n  \nでは処理はどこに書くのでしょうか？MVCの残りの登場人物はモデルクラスとビューです。\nMVCはPresentation Domain Separation (PDS)原則に則っています。\nビューにはプレゼンテーション（見た目の整える）処理のみを書きそれ以外の処理はモデルに書きます。\nつまり、見た目に関わらないほとんどの処理はモデルクラスに書きます。\nこの方針のまま大きなアプリケーションを実装したらどうなるでしょうか？\n大きなモデルクラスが誕生します。\nモデルクラスが大きくなると変更が難しくなります（なぜ？）。\nこれがFat Model問題です。\nで、DHHのツイートを見なおしてみましょう。\nモデルクラスは2万行近くあって300個以上あります。\nが、クラス辺りのメソッド数（M/C）は8しかないしメソッド辺りの行数は3なんですよね・・・どこがFatなのか？\nServiceクラスもFormオブジェクトも使わなくともFat Model問題は起きないみたいですよ？どういうことですか？\n参考\nrails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記\nプレゼンテーションとドメインの分離\nrails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記\n改めて振り返る Fat Controller / Fat modelとの戦い - masa寿司の日記\nFat Modelの倒し方 / how to deal with fat model - Speaker Deck",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/16/200505",
+          "publishedOn": "2022-03-16T11:05:05.000Z",
+          "wordCount": 221,
+          "title": "Fat Model問題",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438073444708",
           "author": null,
           "description": "ブラウザでJavaScriptモジュールが使えるようになりました。\n<script type=\"module\">って書くやつです。\nこれを使うとimport/exportを使ってモジュール感の依存関係が解決できます。\nこれまでは人間がscriptタグの順番を決めるか、Webpackのようなモジュールバンドラーで事前処理する必要がありました。\nさらにそれ以前は、jQueryのようなグローバル変数を使って、依存関係を解決していました。\njQuery時代の依存関係解決からJavaScriptモジュールに一気にジャンプ出来るのでしょうか？\nそれとも一度Webpackのようなモジュールバンドラーを経由する必要があるのでしょうか？\nということを試してみます。\n次のindex.htmlではJavaScriptモジュールとして、index.jsを読み込みます。\n<head>\n  <script src=\"https://code.jquery.com/jquery-3.6.0.js\" integrity=\"sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=\"\n    crossorigin=\"anonymous\"></script>\n  <script type=\"module\" defer>\n    import init from './index.js'\n    init()\n  </script>\n</head>\n\n<body>\n  <div id=\"hoge\"></div>\n</body>\n\n\n\nindex.jsではすでに読み込まれているはずのjQueryを参照します。\nexport default function () {\n  $(\"#hoge\").text(\"hello\");\n}\n\n\n\nこれが動くのかというと、動きます。\n次のようにHTTPサーバーで起動します。\npython3 -m http.server\nopen htttp://localhost:8000\n\n\n\nhelloが表示されます。\nHTTPサーバーを起動しないと、index.jsをローカルファイルから読もうとします。\nこれはエラーになります。\nローカルのスクリプトファイル読み込みエラー\nモジュールバンドラーを使っていなくても、<script type=\"module\">を使ってWeb標準の依存関係解決をやっていけることがわかりました。",

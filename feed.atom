@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-16T10:07:02.253Z</updated>
+    <updated>2022-03-16T11:06:46.648Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,46 @@
         <summary type="html"><![CDATA[現代のソフトウェアを基盤としているビジネスとしては当前ですが、メルカリではいくつものオープンソースソフトウェアを利用させていただいています。また、これまでもそれらの利用させていただいているオープンソースコミュニティに対し […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fat Model問題]]></title>
+        <id>hatenablog://entry/13574176438073617034</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/16/200505"/>
+        <updated>2022-03-16T11:05:05.000Z</updated>
+        <summary type="html"><![CDATA[Fat Model問題を説明してみましょう。
+ここでいうFat Model問題とはRuby on Raisを使って書かれたWebアプリケーションにおいてモデルクラスが大きくなりすぎる問題のことをいいます。
+Ruby on Railsでは、MVC（model-view-controller）というアーキテクチャパターンを採用しています。
+第1章 ゼロからデプロイまで - Railsチュートリアル
+ブラウザがRailsアプリと通信する際、一般的にWebサーバーにリクエスト（request）を送信し、これはリクエストを処理する役割を担っているRailsのコントローラ（controller）に渡されます。コントローラは（ユーザーなどの）サイトの要素を表しており、データベースとの通信を担当しているRubyのオブジェクトであるモデル（model） と対話します。モデルを呼び出した後、コントローラは、ビューを描画し、完成したWebページをHTMLとしてブラウザに返します。
+
+
+Ruby on Railsではコントローラーには処理をほとんど書かずに、モデルクラスの呼び出しのみを書くべきだとされています（要出展）。
+例えば、DHHが示したBasecamp3というアプリケーションの統計情報では、コントローラーのメソッド辺りの行数（LOC/M）は3行しかありません。
+
+Basecamp 3 is up to 308 controllers. Some 1400 methods. Imagine recreating all that with all-native apps? No thanks. Majestic be thy Monolith. pic.twitter.com/aTmwGT32ep
+— DHH (@dhh) February 9, 2018
+  
+では処理はどこに書くのでしょうか？MVCの残りの登場人物はモデルクラスとビューです。
+MVCはPresentation Domain Separation (PDS)原則に則っています。
+ビューにはプレゼンテーション（見た目の整える）処理のみを書きそれ以外の処理はモデルに書きます。
+つまり、見た目に関わらないほとんどの処理はモデルクラスに書きます。
+この方針のまま大きなアプリケーションを実装したらどうなるでしょうか？
+大きなモデルクラスが誕生します。
+モデルクラスが大きくなると変更が難しくなります（なぜ？）。
+これがFat Model問題です。
+で、DHHのツイートを見なおしてみましょう。
+モデルクラスは2万行近くあって300個以上あります。
+が、クラス辺りのメソッド数（M/C）は8しかないしメソッド辺りの行数は3なんですよね・・・どこがFatなのか？
+ServiceクラスもFormオブジェクトも使わなくともFat Model問題は起きないみたいですよ？どういうことですか？
+参考
+rails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記
+プレゼンテーションとドメインの分離
+rails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記
+改めて振り返る Fat Controller / Fat modelとの戦い - masa寿司の日記
+Fat Modelの倒し方 / how to deal with fat model - Speaker Deck]]></summary>
+        <author>
+            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
