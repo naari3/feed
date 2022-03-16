@@ -1171,20 +1171,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438043661334",
-          "author": null,
-          "description": "これは KOBA789 日記 Advent Calendar 2021 - Adventar 17日目の記事です。12月って16日がないらしいです。\n日記\nSWD や CMSIS-DAP とにらめっこしていました。SWD や CMSIS-DAP というのは、Arm マイコンのデバッグをするときに使うやつです。にらめっこの結果として rust-dap のバグを見つけたので PR を出しました。\nrust-dap は CMSIS-DAP v2 に対応してるし実装小さくて移植しやすいしで最高です。実際に手元の bluepill に移植して活用しています。\nこれは私がやっつけ移植した bluepill 対応版(fork): GitHub - KOBA789/rust-dap: CMSIS-DAP Rust implementation\n自分が使うソフトウェアが自分の慣れた言語で書かれている安心感は何物にも代えがたいですね。多少バグってても自力で直せるので身軽です。\nそうそう、CMSIS-DAP ではどうやってフラッシュへの書き込みをしているんだろうと思って調べたところ、なんとフラッシュ書き込み用の小さなファームウェアを RAM 上に展開してそれを呼び出して書き込ませるという仕組みでした。その小さなファームウェアのことを Flash Programming Algorithm と呼ぶらしいです。またひとつ賢くなりました。\n終わりに\n(12月に18日があれば)明日も書く。",
-          "link": "https://diary.hatenablog.jp/entry/2021/12/17/194651",
-          "publishedOn": "2021-12-17T10:46:51.000Z",
-          "wordCount": 162,
-          "title": "SWDやCMSIS-DAPとにらめっこした",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -8796,17 +8782,7 @@
       "title": "埜村武",
       "feedUrl": "https://note.com/nomuratakeshi/rss",
       "siteUrl": "https://note.com/nomuratakeshi",
-      "articles": [
-        {
-          "id": "https://note.com/nomuratakeshi/n/nd42b0c5dec5e",
-          "author": null,
-          "description": "みなさんこんにちは。埜村武です。\nこの記事は、2021年12月10日(金)に公開された『ケンタッキー』についての解説となります。\n動画をご覧になってない方は、まずご覧になってから記事をお読みください。\n続きをみる",
-          "link": "https://note.com/nomuratakeshi/n/nd42b0c5dec5e",
-          "publishedOn": "2021-12-17T10:45:15.000Z",
-          "wordCount": null,
-          "title": "『ケンタッキー』の制作後記"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "とッくん",

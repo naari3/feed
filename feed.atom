@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-16T22:02:00.142Z</updated>
+    <updated>2022-03-16T23:02:16.570Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -19764,37 +19764,6 @@ Amazon
         <summary type="html"><![CDATA[2021年11月11日に、「プロダクト開発体制を一挙公開〜メルカリ・エンジニア組織の大解剖〜 」 というイベントを開催しました。 この記事では当日いただいた質問の中で時間の関係上お答えすることができなかったものに対して、 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SWDやCMSIS-DAPとにらめっこした]]></title>
-        <id>hatenablog://entry/13574176438043661334</id>
-        <link href="https://diary.hatenablog.jp/entry/2021/12/17/194651"/>
-        <updated>2021-12-17T10:46:51.000Z</updated>
-        <summary type="html"><![CDATA[これは KOBA789 日記 Advent Calendar 2021 - Adventar 17日目の記事です。12月って16日がないらしいです。
-日記
-SWD や CMSIS-DAP とにらめっこしていました。SWD や CMSIS-DAP というのは、Arm マイコンのデバッグをするときに使うやつです。にらめっこの結果として rust-dap のバグを見つけたので PR を出しました。
-rust-dap は CMSIS-DAP v2 に対応してるし実装小さくて移植しやすいしで最高です。実際に手元の bluepill に移植して活用しています。
-これは私がやっつけ移植した bluepill 対応版(fork): GitHub - KOBA789/rust-dap: CMSIS-DAP Rust implementation
-自分が使うソフトウェアが自分の慣れた言語で書かれている安心感は何物にも代えがたいですね。多少バグってても自力で直せるので身軽です。
-そうそう、CMSIS-DAP ではどうやってフラッシュへの書き込みをしているんだろうと思って調べたところ、なんとフラッシュ書き込み用の小さなファームウェアを RAM 上に展開してそれを呼び出して書き込ませるという仕組みでした。その小さなファームウェアのことを Flash Programming Algorithm と呼ぶらしいです。またひとつ賢くなりました。
-終わりに
-(12月に18日があれば)明日も書く。]]></summary>
-        <author>
-            <name>Write and Run</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[『ケンタッキー』の制作後記]]></title>
-        <id>https://note.com/nomuratakeshi/n/nd42b0c5dec5e</id>
-        <link href="https://note.com/nomuratakeshi/n/nd42b0c5dec5e"/>
-        <updated>2021-12-17T10:45:15.000Z</updated>
-        <summary type="html"><![CDATA[みなさんこんにちは。埜村武です。
-この記事は、2021年12月10日(金)に公開された『ケンタッキー』についての解説となります。
-動画をご覧になってない方は、まずご覧になってから記事をお読みください。
-続きをみる]]></summary>
-        <author>
-            <name>埜村武</name>
         </author>
     </entry>
 </feed>
