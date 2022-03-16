@@ -6361,20 +6361,6 @@
             "type": "",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438042946150",
-          "author": null,
-          "description": "こんにちは、クックパッド事業本部 買物サービス開発部の佐藤（@n_atmark）です。\n私の所属する買物サービス開発部ではクックパッドアプリにおける買い物機能*1の開発を行なっており、私は2020年の上期から買い物機能のモバイルアプリ開発の担当をしています。\n2020年上期〜2021年上期では、クックパッドiOSアプリの買い物機能開発に、\n2021年下期からは、クックパッドAndroidアプリの買い物機能開発に携わっています。\nクックパッドアプリの買い物機能開発に関する詳細はクックパッド開発者ブログにもまとまっていますので、ぜひ合わせてご覧ください。\ntechlife.cookpad.com\ntechlife.cookpad.com\n前述の通りクックパッドアプリにおける買い物機能をiOS/Android両プラットフォーム向けに開発しているのですが、実はそれらの開発には共通している点があります。\nクックパッドiOSアプリの買い物機能ではSwiftUIというAppleプラットフォーム向けの宣言的UIフレームワークを利用しており、\nクックパッドAndroidアプリの買い物機能ではJetpack ComposeというAndroid向けの宣言的UIフレームワークを利用している点です。\nモバイルアプリ開発で宣言的UIフレームワークを利用する利点\nSwiftUIやJetpack ComposeといったUIフレームワークを利用することで、従来のUI構築の手法と比べて以下のようなメリットがあります。\nコード量を減らすことができる\n複雑・多様な条件のある画面実装をシンプルに書ける\nコンポーネント単位で使い回し・改変がしやすい\nUIのプレビュー表示が可能で、アプリ全体をビルドせずにUIの確認ができる\nUI変更がより柔軟に、簡単になることで、作って壊しの試行錯誤の回数を増やすことができ、スピード感…",
-          "link": "https://techlife.cookpad.com/entry/2021/12/17/103000",
-          "publishedOn": "2021-12-17T01:30:00.000Z",
-          "wordCount": null,
-          "title": "モバイルアプリ開発において宣言的UIフレームワークを利用する際のコンポーネント粒度についての考察",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/n/n_atmark/20211215/20211215131828.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -7143,6 +7129,16 @@
       "feedUrl": "https://note.com/dak/rss",
       "siteUrl": "https://note.com/dak",
       "articles": [
+        {
+          "id": "https://note.com/dak/n/n28bb1508d5db",
+          "author": null,
+          "description": "昨日は彼女とデートして、深夜の出町柳からトボトボと千本鞍馬口まで歩いたので今朝から異常な筋肉痛に襲われ、ekaがスペイン語しか話さなくなったので（ウルグアイに移住したいとのこと）スペイン語を学ぶ必要が出てきたというのもありduolingoをインストールした\n\n続きをみる",
+          "link": "https://note.com/dak/n/n28bb1508d5db",
+          "publishedOn": "2022-03-16T13:41:57.000Z",
+          "wordCount": 43,
+          "title": "20220316",
+          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/951a519598075443d758222e43b3cbfb61b74136.jpg"
+        },
         {
           "id": "https://note.com/dak/n/n1b6712dc01b3",
           "author": null,
