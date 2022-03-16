@@ -2,10 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-16T00:02:42.753Z</updated>
+    <updated>2022-03-16T01:28:06.212Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2022-03-15]]></title>
+        <id>hatenablog://entry/13574176438073390840</id>
+        <link href="https://commits.hatenablog.com/entry/2022/03/16/100013"/>
+        <updated>2022-03-16T01:00:13.000Z</updated>
+        <summary type="html"><![CDATA[碓氷峠を越えたアプト式鉄道 (交通新聞社新書)
+
+作者:清水昇
+交通新聞社
+Amazon
+
+碓氷峠を越えたアプト式鉄道、読んだ。碓氷線のことは全然知らなかったので、面白かった。
+碓氷峠まで遊びに行きたいなあ。
+この本は紡ぐ乙女と大正の月の参考文献に載っていたのがきっかけで読み始めた。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ブラウザからJavaScriptモジュールをjQueryとともに使う]]></title>
+        <id>hatenablog://entry/13574176438073444708</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/16/090438"/>
+        <updated>2022-03-16T00:04:38.000Z</updated>
+        <summary type="html"><![CDATA[ブラウザでJavaScriptモジュールが使えるようになりました。
+<script type="module">って書くやつです。
+これを使うとimport/exportを使ってモジュール感の依存関係が解決できます。
+これまでは人間がscriptタグの順番を決めるか、Webpackのようなモジュールバンドラーで事前処理する必要がありました。
+さらにそれ以前は、jQueryのようなグローバル変数を使って、依存関係を解決していました。
+jQuery時代の依存関係解決からJavaScriptモジュールに一気にジャンプ出来るのでしょうか？
+それとも一度Webpackのようなモジュールバンドラーを経由する必要があるのでしょうか？
+ということを試してみます。
+次のindex.htmlではJavaScriptモジュールとして、index.jsを読み込みます。
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script type="module" defer>
+    import init from './index.js'
+    init()
+  </script>
+</head>
+
+<body>
+  <div id="hoge"></div>
+</body>
+
+
+
+index.jsではすでに読み込まれているはずのjQueryを参照します。
+export default function () {
+  $("#hoge").text("hello");
+}
+
+
+
+これが動くのかというと、動きます。
+次のようにHTTPサーバーで起動します。
+python3 -m http.server
+open htttp://localhost:8000
+
+
+
+helloが表示されます。
+HTTPサーバーを起動しないと、index.jsをローカルファイルから読もうとします。
+これはエラーになります。
+ローカルのスクリプトファイル読み込みエラー
+モジュールバンドラーを使っていなくても、<script type="module">を使ってWeb標準の依存関係解決をやっていけることがわかりました。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[エッセイ:pixivのエロ絵描きに熱っぽいコメントをする人の謎]]></title>
         <id>https://note.com/sizes/n/nfcaa90ab4465</id>
@@ -19986,16 +20056,6 @@ www.youtube.com
 DJMAXとEZ2DJが熱かった。どちらもほぼ前知…]]></summary>
         <author>
             <name>思い出したら書きます</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QAチーム設立21年目のサイボウズ×3年目のメルペイに聞くQAエンジニアの役割とは？#cybozu_merpay]]></title>
-        <id>17424</id>
-        <link href="https://engineering.mercari.com/blog/entry/20211215-8e20e5a371/"/>
-        <updated>2021-12-16T13:00:50.000Z</updated>
-        <summary type="html"><![CDATA[2021年9月28日に開催したサイボウズとメルペイのコラボイベント「QA Talk 〜現場のチームの作り方。QAチーム設立21年目サイボウズ x 3年目メルペイ〜」の続編として、情報交換会をサイボウズ社の東京オフィスにて […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>

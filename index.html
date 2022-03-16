@@ -74,6 +74,101 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-03-16">2022-03-16</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2022-03-15</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/03/16/100013" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>碓氷峠を越えたアプト式鉄道 (交通新聞社新書)
+
+作者:清水昇
+交通新聞社
+Amazon
+
+碓氷峠を越えたアプト式鉄道、読んだ。碓氷線のことは全然知らなかったので、面白かった。
+碓氷峠まで遊びに行きたいなあ。
+この本は紡ぐ乙女と大正の月の参考文献に載っていたのがきっかけで読み始めた。</span>
+                  </div>
+                  <img src="https://m.media-amazon.com/images/I/41MmELSiPBL._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank"
+              rel="noopener">@ledsun blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ブラウザからJavaScriptモジュールをjQueryとともに使う</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/03/16/090438" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ブラウザでJavaScriptモジュールが使えるようになりました。
+って書くやつです。
+これを使うとimport/exportを使ってモジュール感の依存関係が解決できます。
+これまでは人間がscriptタグの順番を決めるか、Webpackのようなモジュールバンドラーで事前処理する必要がありました。
+さらにそれ以前は、jQueryのようなグローバル変数を使って、依存関係を解決していました。
+jQuery時代の依存関係解決からJavaScriptモジュールに一気にジャンプ出来るのでしょうか？
+それとも一度Webpackのようなモジュールバンドラーを経由する必要があるのでしょうか？
+ということを試してみます。
+次のindex.htmlではJavaScriptモジュールとして、index.jsを読み込みます。
+
+  
+  
+    import init from &#x27;./index.js&#x27;
+    init()
+  
+
+
+
+  
+
+
+
+
+
+index.jsではすでに読み込まれているはずのjQueryを参照します。
+export default function () {
+  $(&quot;#hoge&quot;).text(&quot;hello&quot;);
+}
+
+
+
+これが動くのかというと、動きます。
+次のようにHTTPサーバーで起動します。
+python3 -m http.server
+open htttp://localhost:8000
+
+
+
+helloが表示されます。
+HTTPサーバーを起動しないと、index.jsをローカルファイルから読もうとします。
+これはエラーになります。
+ローカルのスクリプトファイル読み込みエラー
+モジュールバンドラーを使っていなくても、を使ってWeb標準の依存関係解決をやっていけることがわかりました。</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220316/20220316085625.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-03-15">2022-03-15</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -27905,30 +28000,11 @@ DJMAXとEZ2DJが熱かった。どちらもほぼ前知…</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank"
-              rel="noopener">メルカリエンジニアリングブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">QAチーム設立21年目のサイボウズ×3年目のメルペイに聞くQAエンジニアの役割とは？#cybozu_merpay</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://engineering.mercari.com/blog/entry/20211215-8e20e5a371/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>2021年9月28日に開催したサイボウズとメルペイのコラボイベント「QA Talk 〜現場のチームの作り方。QAチーム設立21年目サイボウズ x 3年目メルペイ〜」の続編として、情報交換会をサイボウズ社の東京オフィスにて […]</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-16T00:02:42.688Z">2022-03-16T00:02:42.688Z</time>
+    <time id="build-timestamp" datetime="2022-03-16T01:28:06.146Z">2022-03-16T01:28:06.146Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

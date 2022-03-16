@@ -500,6 +500,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438073390840",
+          "author": null,
+          "description": "碓氷峠を越えたアプト式鉄道 (交通新聞社新書)\n\n作者:清水昇\n交通新聞社\nAmazon\n\n碓氷峠を越えたアプト式鉄道、読んだ。碓氷線のことは全然知らなかったので、面白かった。\n碓氷峠まで遊びに行きたいなあ。\nこの本は紡ぐ乙女と大正の月の参考文献に載っていたのがきっかけで読み始めた。",
+          "link": "https://commits.hatenablog.com/entry/2022/03/16/100013",
+          "publishedOn": "2022-03-16T01:00:13.000Z",
+          "wordCount": 125,
+          "title": "2022-03-15",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/41MmELSiPBL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/41MmELSiPBL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438073042780",
           "author": null,
           "description": "github.com\nFile.exists?を使っている警告が出ているgemがあったので修正した。File.exists?ってもう撲滅されたと思っていたけど、まだ残っているところもあったのだなあ。\n\nFX戦士くるみちゃん　2 (MFコミックス　フラッパーシリーズ)\n\n作者:炭酸だいすき\nKADOKAWA\nAmazon\n\nFX戦士くるみちゃん 2巻読んだ。まあまあ心にくる漫画だけどわりとすき。\nつらい。\n\nザ・ファブル、新井素子さんの絶句とかブラックキャットに雰囲気が近いんじゃ、とふと思った\n— 🎹 (@p_ck_) March 13, 2022\n  twitter.com\nすこし前にザ・ファブルを読んでいたのだけど、なんか最後の方の雰囲気が絶句とかブラックキャットに近いのでは……？と思ったりしていた。両方とも読んだことある人に意見を聞きたい。",
@@ -3863,6 +3878,21 @@
       "feedUrl": "https://ledsun.hatenablog.com/rss",
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438073444708",
+          "author": null,
+          "description": "ブラウザでJavaScriptモジュールが使えるようになりました。\n<script type=\"module\">って書くやつです。\nこれを使うとimport/exportを使ってモジュール感の依存関係が解決できます。\nこれまでは人間がscriptタグの順番を決めるか、Webpackのようなモジュールバンドラーで事前処理する必要がありました。\nさらにそれ以前は、jQueryのようなグローバル変数を使って、依存関係を解決していました。\njQuery時代の依存関係解決からJavaScriptモジュールに一気にジャンプ出来るのでしょうか？\nそれとも一度Webpackのようなモジュールバンドラーを経由する必要があるのでしょうか？\nということを試してみます。\n次のindex.htmlではJavaScriptモジュールとして、index.jsを読み込みます。\n<head>\n  <script src=\"https://code.jquery.com/jquery-3.6.0.js\" integrity=\"sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=\"\n    crossorigin=\"anonymous\"></script>\n  <script type=\"module\" defer>\n    import init from './index.js'\n    init()\n  </script>\n</head>\n\n<body>\n  <div id=\"hoge\"></div>\n</body>\n\n\n\nindex.jsではすでに読み込まれているはずのjQueryを参照します。\nexport default function () {\n  $(\"#hoge\").text(\"hello\");\n}\n\n\n\nこれが動くのかというと、動きます。\n次のようにHTTPサーバーで起動します。\npython3 -m http.server\nopen htttp://localhost:8000\n\n\n\nhelloが表示されます。\nHTTPサーバーを起動しないと、index.jsをローカルファイルから読もうとします。\nこれはエラーになります。\nローカルのスクリプトファイル読み込みエラー\nモジュールバンドラーを使っていなくても、<script type=\"module\">を使ってWeb標準の依存関係解決をやっていけることがわかりました。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/16/090438",
+          "publishedOn": "2022-03-16T00:04:38.000Z",
+          "wordCount": 178,
+          "title": "ブラウザからJavaScriptモジュールをjQueryとともに使う",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220316/20220316085625.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220316/20220316085625.png"
+        },
         {
           "id": "hatenablog://entry/13574176438073120934",
           "author": null,
@@ -11477,16 +11507,6 @@
           "wordCount": 249,
           "title": "新しいチームに入ってから立ち上がりの極意",
           "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2021/12/c3554f9b-rossy_gikui_preview.png"
-        },
-        {
-          "id": "17424",
-          "author": null,
-          "description": "2021年9月28日に開催したサイボウズとメルペイのコラボイベント「QA Talk 〜現場のチームの作り方。QAチーム設立21年目サイボウズ x 3年目メルペイ〜」の続編として、情報交換会をサイボウズ社の東京オフィスにて […]",
-          "link": "https://engineering.mercari.com/blog/entry/20211215-8e20e5a371/",
-          "publishedOn": "2021-12-16T13:00:50.000Z",
-          "wordCount": null,
-          "title": "QAチーム設立21年目のサイボウズ×3年目のメルペイに聞くQAエンジニアの役割とは？#cybozu_merpay",
-          "imageUrl": null
         }
       ]
     },
