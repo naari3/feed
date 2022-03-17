@@ -78,6 +78,133 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank"
+              rel="noopener">@ledsun blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">WSL起動時にfish-shellからrbenvの初期化に失敗する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/03/17/232317" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>WSL起動時に次のエラーメッセージが表示されます。
+source: Error encountered while sourcing file &#x27;/tmp/.psub.N1u4nIBokn&#x27;:
+source: No such file or directory
+rm: cannot remove &#x27;/tmp/.psub.N1u4nIBokn&#x27;: No such file or directory
+Welcome to fish, the friendly interactive shell
+Type help for instructions on how to use fish
+
+
+
+rbenvを初期化するためのコマンドsource (rbenv init -|psub)の実行に失敗しているためにでているエラーメッセージです。
+この状態ではrubyコマンドが見つかりません。
+ledsun@MSI:~►ruby                                                                                                  23:01
+
+Command &#x27;ruby&#x27; not found, but can be installed with:
+
+sudo snap install ruby  # version 3.1.1, or
+sudo apt  install ruby  # version 1:2.7+1
+
+See &#x27;snap info ruby&#x27; for additional versions.
+
+
+
+もう一度source (rbenv init -|psub)すればrbenvは初期化されます。
+rubyコマンドが使えるようになります。
+ledsun@MSI:~[127]►source (rbenv init -|psub)                                                                0.127s 23:01
+ledsun@MSI:~►ruby
+
+
+
+fish-shell同じエラーメッセージがでるissueがあります。
+github.com
+close済みです。
+WSLに関する情報も載っていません。
+psubは名前付きパイプの代わりに一時ファイルをつかうfish-shellの組み込みコマンドです。
+fishshell.com
+わかった風に書いていますが、名前付きパイプがなにかはわかっていません。
+やっていることは、次のようにrbenv initコマンドで初期化スクリプトを出力します。
+ledsun@MSI:~[1]►rbenv init -                                                                                       23:16
+set -gx PATH &#x27;/home/ledsun/.rbenv/shims&#x27; $PATH
+set -gx RBENV_SHELL fish
+command rbenv rehash 2&gt;/dev/null
+function rbenv
+  set command $argv[1]
+  set -e argv[1]
+
+  switch &quot;$command&quot;
+  case rehash shell use
+    rbenv &quot;sh-$command&quot; $argv|source
+  case &#x27;*&#x27;
+    command rbenv &quot;$command&quot; $argv
+  end
+end
+
+
+
+psubを使ってスクリプトを一時ファイルに書き込みます。
+一時ファイルのパスを返します。
+ledsun@MSI:~►echo (rbenv init -|psub)                                                                              23:17
+/tmp/.psub.qMqt1fQTDG
+
+
+
+これをsourceコマンドで読み込むだけなので、失敗しないはずです。
+WSLの起動中だと一時ファイルへの書き込みに失敗するか、書いた一時ファイルが消えるかしているのでしょうか？</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/dokozonosyake" target="_blank"
+              rel="noopener">しゃけ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">1級四字熟語表（意味付き）PDFプレゼントはこちら</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/dokozonosyake/n/n108d92cabb7f" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>しゃけです。
+R3-3の合格発表も終わりました。Twitterを見ていると、準1級に合格しついに1級を目指す頼もしき戦士たちがまた増えたように思います。
+続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/74472183/rectangle_large_type_2_94fe446e2c6767b318100bad3dc21509.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank"
+              rel="noopener">疒</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">20220317</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/dak/n/n76adfcc4f30b" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>¡Buenos dias!
+おはようございます
+続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/74469070/rectangle_large_type_2_bb75f630bdc4f3c1c174a9a342dbd2c6.jpg?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
               rel="noopener">honeylab&#x27;s blog</a></h3>
           <section class="articles-per-source">
@@ -27675,98 +27802,11 @@ STG 環境へも 手動で git push staging develop:master
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://hardshopper.hatenablog.com/" target="_blank"
-              rel="noopener">僕とネットショッピング</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">【比較レビュー】怪しい評判の中国メーカー InnoView のモバイルモニターは本当にオススメなのか？iPhoneやSwitchはつながる？使えるアームは？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hardshopper.hatenablog.com/entry/innoview" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>どうも、完全テレワーク勤務の僕です。
- 
-Amazonでモバイルディスプレイを探していると必ず見かけるInnoViewというメーカーのサブモニターを実際に使ってみたのでレビューします。
- 
-InnoViewって多分ほとんどの人が聞いたことないメーカーで、Amazonでモバイルディスプレイを探してて初めて知ったのではないでしょうか？
-で、多分Amazonのレビューは見たんだけど、Amazonのレビューは信頼できないって人がGoogle検索してこの辺境のブログにたどり着かれたのではないでしょうか？
- 
-分かります。分かってますよ。
-後述しますが「Amazonのレビューは信頼できない」で正しいです。
-なので、そういう方は是非読んでいってください。
- 
-仕事用に使っていますが、レビュー書くためにSwitch繋げて遅延しないかを確認したりもしましたし…
-
- 
-仕事用にモバイルディスプレイアームに繋げて使っているので、それも合わせてレビューします。
-
-15.8インチと大きいですがスタンド型のアームでしっかり固定できてます。
- 
-ちなみに同じくAmazonでモバイルディスプレイを探していると必ず見かけるcocoparというメーカーも使っているので、それと比較してレビューします。
- 
-同じくらいの価格帯なので、どっちにしよう？って悩んでいる人も参考にしていただければ。
- 
- 
- 
-InnoViewって大丈夫？怪しいAmazonレビュー、口コミも評判も信頼できない
- 
-さて、今回使ってみたのはこちら。
- 
-InnoView
-非光沢 FHD IPS液晶パネル
-モバイルモニター(モバイルディスプレイ)
-
- 
- 
-怪しい中華製品にありがちな長い名前ですね。
-Amazonの検索によくヒットするようにこんな名前になってるのだと思います。
- 
-そして、Amazon&#x27;s Choiceのマークがあります。
-…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hardshopper/20211214/20211214040024.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://niryuu.hatenablog.com/" target="_blank"
-              rel="noopener">表道具</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">地域資料とオープンデータに関するメモ(2)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://niryuu.hatenablog.com/entry/2021/12/18/102709" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Calendar for CivicTech ＆ GovTech | Advent Calendar 2021 - Qiita
-空いている日があったのでこちらにも登録しました。
-niryuu.hatenablog.com
-の続き。
-　前回は、図書館がオープンガバメントに踏み切れない理由を、根本先生のブログ記事から、その前身の1つとも言える地域資料公開という切り口で考察した。
-　図書館において、行政資料を含む地域資料の提供は、貸し出しと比べてニーズがないこと、行政情報の開示が行政評価にポジティブな影響を及ぼさないことが原因で、あまりうまく行かなかったのではとの考察がなされていた。行政資料のセンターになるポテンシャルがあったにもかかわらず、記事を読むだけでも肌感覚としてたしかに難しいと感じる。
-　今、行政に関するデータ流通のセンターとなっている、データカタログサイトに関する課題解決に、都知事杯オープンデータハッカソンで取り組んでいる。このプロジェクトがどう進むかわからないが、現段階での整理を行う。
-　地域資料の提供に関する問題は、突き詰めれば資料を提供することが評価されるかということだとまとめられる。確かに、ネガティブな評価ばかり受け取る事業は廃れるし、自治体などの予算編成にも影響するため予算規模&#x3D;事業の規模も縮小する。
-　そこでオープンデータの方を見ると、ポジティブなものもネガティブなものも含め、評価軸そのものが増えているように思う。つまり、データの透明性だけでなく、データを活用することの透明性も高まっており、それがデータの評価につながるのである。これはオープンソースの文化に由来する。
-　課題解決の当初案では、ダメなオープンデータ公開を指摘できることが念頭に置かれていた。それはそれで意義がある。デジタルアーカイブにしてもオープンデータにしても維持と更新を続けるのは難しい。その…</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-17T13:11:41.508Z">2022-03-17T13:11:41.508Z</time>
+    <time id="build-timestamp" datetime="2022-03-17T16:06:56.802Z">2022-03-17T16:06:56.802Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

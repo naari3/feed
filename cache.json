@@ -1492,20 +1492,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438042533826",
-          "author": null,
-          "description": "どうも、完全テレワーク勤務の僕です。\n \nAmazonでモバイルディスプレイを探していると必ず見かけるInnoViewというメーカーのサブモニターを実際に使ってみたのでレビューします。\n \nInnoViewって多分ほとんどの人が聞いたことないメーカーで、Amazonでモバイルディスプレイを探してて初めて知ったのではないでしょうか？\nで、多分Amazonのレビューは見たんだけど、Amazonのレビューは信頼できないって人がGoogle検索してこの辺境のブログにたどり着かれたのではないでしょうか？\n \n分かります。分かってますよ。\n後述しますが「Amazonのレビューは信頼できない」で正しいです。\nなので、そういう方は是非読んでいってください。\n \n仕事用に使っていますが、レビュー書くためにSwitch繋げて遅延しないかを確認したりもしましたし…\n\n \n仕事用にモバイルディスプレイアームに繋げて使っているので、それも合わせてレビューします。\n\n15.8インチと大きいですがスタンド型のアームでしっかり固定できてます。\n \nちなみに同じくAmazonでモバイルディスプレイを探していると必ず見かけるcocoparというメーカーも使っているので、それと比較してレビューします。\n \n同じくらいの価格帯なので、どっちにしよう？って悩んでいる人も参考にしていただければ。\n \n \n \nInnoViewって大丈夫？怪しいAmazonレビュー、口コミも評判も信頼できない\n \nさて、今回使ってみたのはこちら。\n \nInnoView\n非光沢 FHD IPS液晶パネル\nモバイルモニター(モバイルディスプレイ)\n\n \n \n怪しい中華製品にありがちな長い名前ですね。\nAmazonの検索によくヒットするようにこんな名前になってるのだと思います。\n \nそして、Amazon's Choiceのマークがあります。\n…",
-          "link": "https://hardshopper.hatenablog.com/entry/innoview",
-          "publishedOn": "2021-12-18T03:28:17.000Z",
-          "wordCount": null,
-          "title": "【比較レビュー】怪しい評判の中国メーカー InnoView のモバイルモニターは本当にオススメなのか？iPhoneやSwitchはつながる？使えるアームは？",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hardshopper/20211214/20211214040024.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
         }
       ]
     },
@@ -3897,6 +3883,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438073988909",
+          "author": null,
+          "description": "WSL起動時に次のエラーメッセージが表示されます。\nsource: Error encountered while sourcing file '/tmp/.psub.N1u4nIBokn':\nsource: No such file or directory\nrm: cannot remove '/tmp/.psub.N1u4nIBokn': No such file or directory\nWelcome to fish, the friendly interactive shell\nType help for instructions on how to use fish\n\n\n\nrbenvを初期化するためのコマンドsource (rbenv init -|psub)の実行に失敗しているためにでているエラーメッセージです。\nこの状態ではrubyコマンドが見つかりません。\nledsun@MSI:~►ruby                                                                                                  23:01\n\nCommand 'ruby' not found, but can be installed with:\n\nsudo snap install ruby  # version 3.1.1, or\nsudo apt  install ruby  # version 1:2.7+1\n\nSee 'snap info ruby' for additional versions.\n\n\n\nもう一度source (rbenv init -|psub)すればrbenvは初期化されます。\nrubyコマンドが使えるようになります。\nledsun@MSI:~[127]►source (rbenv init -|psub)                                                                0.127s 23:01\nledsun@MSI:~►ruby\n\n\n\nfish-shell同じエラーメッセージがでるissueがあります。\ngithub.com\nclose済みです。\nWSLに関する情報も載っていません。\npsubは名前付きパイプの代わりに一時ファイルをつかうfish-shellの組み込みコマンドです。\nfishshell.com\nわかった風に書いていますが、名前付きパイプがなにかはわかっていません。\nやっていることは、次のようにrbenv initコマンドで初期化スクリプトを出力します。\nledsun@MSI:~[1]►rbenv init -                                                                                       23:16\nset -gx PATH '/home/ledsun/.rbenv/shims' $PATH\nset -gx RBENV_SHELL fish\ncommand rbenv rehash 2>/dev/null\nfunction rbenv\n  set command $argv[1]\n  set -e argv[1]\n\n  switch \"$command\"\n  case rehash shell use\n    rbenv \"sh-$command\" $argv|source\n  case '*'\n    command rbenv \"$command\" $argv\n  end\nend\n\n\n\npsubを使ってスクリプトを一時ファイルに書き込みます。\n一時ファイルのパスを返します。\nledsun@MSI:~►echo (rbenv init -|psub)                                                                              23:17\n/tmp/.psub.qMqt1fQTDG\n\n\n\nこれをsourceコマンドで読み込むだけなので、失敗しないはずです。\nWSLの起動中だと一時ファイルへの書き込みに失敗するか、書いた一時ファイルが消えるかしているのでしょうか？",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/17/232317",
+          "publishedOn": "2022-03-17T14:23:17.000Z",
+          "wordCount": 276,
+          "title": "WSL起動時にfish-shellからrbenvの初期化に失敗する",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438073617034",
           "author": null,
           "description": "Fat Model問題を説明してみましょう。\nここでいうFat Model問題とはRuby on Raisを使って書かれたWebアプリケーションにおいてモデルクラスが大きくなりすぎる問題のことをいいます。\nRuby on Railsでは、MVC（model-view-controller）というアーキテクチャパターンを採用しています。\n第1章 ゼロからデプロイまで - Railsチュートリアル\nブラウザがRailsアプリと通信する際、一般的にWebサーバーにリクエスト（request）を送信し、これはリクエストを処理する役割を担っているRailsのコントローラ（controller）に渡されます。コントローラは（ユーザーなどの）サイトの要素を表しており、データベースとの通信を担当しているRubyのオブジェクトであるモデル（model） と対話します。モデルを呼び出した後、コントローラは、ビューを描画し、完成したWebページをHTMLとしてブラウザに返します。\n\n\nRuby on Railsではコントローラーには処理をほとんど書かずに、モデルクラスの呼び出しのみを書くべきだとされています（要出展）。\n例えば、DHHが示したBasecamp3というアプリケーションの統計情報では、コントローラーのメソッド辺りの行数（LOC/M）は3行しかありません。\n\nBasecamp 3 is up to 308 controllers. Some 1400 methods. Imagine recreating all that with all-native apps? No thanks. Majestic be thy Monolith. pic.twitter.com/aTmwGT32ep\n— DHH (@dhh) February 9, 2018\n  \nでは処理はどこに書くのでしょうか？MVCの残りの登場人物はモデルクラスとビューです。\nMVCはPresentation Domain Separation (PDS)原則に則っています。\nビューにはプレゼンテーション（見た目の整える）処理のみを書きそれ以外の処理はモデルに書きます。\nつまり、見た目に関わらないほとんどの処理はモデルクラスに書きます。\nこの方針のまま大きなアプリケーションを実装したらどうなるでしょうか？\n大きなモデルクラスが誕生します。\nモデルクラスが大きくなると変更が難しくなります（なぜ？）。\nこれがFat Model問題です。\nで、DHHのツイートを見なおしてみましょう。\nモデルクラスは2万行近くあって300個以上あります。\nが、クラス辺りのメソッド数（M/C）は8しかないしメソッド辺りの行数は3なんですよね・・・どこがFatなのか？\nServiceクラスもFormオブジェクトも使わなくともFat Model問題は起きないみたいですよ？どういうことですか？\n参考\nrails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記\nプレゼンテーションとドメインの分離\nrails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記\n改めて振り返る Fat Controller / Fat modelとの戦い - masa寿司の日記\nFat Modelの倒し方 / how to deal with fat model - Speaker Deck",
@@ -5091,20 +5092,6 @@
           "publishedOn": "2021-12-27T13:55:57.000Z",
           "wordCount": null,
           "title": "1年限定の鬱をやっていた",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        },
-        {
-          "id": "hatenablog://entry/13574176438043813788",
-          "author": null,
-          "description": "Calendar for CivicTech ＆ GovTech | Advent Calendar 2021 - Qiita\n空いている日があったのでこちらにも登録しました。\nniryuu.hatenablog.com\nの続き。\n　前回は、図書館がオープンガバメントに踏み切れない理由を、根本先生のブログ記事から、その前身の1つとも言える地域資料公開という切り口で考察した。\n　図書館において、行政資料を含む地域資料の提供は、貸し出しと比べてニーズがないこと、行政情報の開示が行政評価にポジティブな影響を及ぼさないことが原因で、あまりうまく行かなかったのではとの考察がなされていた。行政資料のセンターになるポテンシャルがあったにもかかわらず、記事を読むだけでも肌感覚としてたしかに難しいと感じる。\n　今、行政に関するデータ流通のセンターとなっている、データカタログサイトに関する課題解決に、都知事杯オープンデータハッカソンで取り組んでいる。このプロジェクトがどう進むかわからないが、現段階での整理を行う。\n　地域資料の提供に関する問題は、突き詰めれば資料を提供することが評価されるかということだとまとめられる。確かに、ネガティブな評価ばかり受け取る事業は廃れるし、自治体などの予算編成にも影響するため予算規模=事業の規模も縮小する。\n　そこでオープンデータの方を見ると、ポジティブなものもネガティブなものも含め、評価軸そのものが増えているように思う。つまり、データの透明性だけでなく、データを活用することの透明性も高まっており、それがデータの評価につながるのである。これはオープンソースの文化に由来する。\n　課題解決の当初案では、ダメなオープンデータ公開を指摘できることが念頭に置かれていた。それはそれで意義がある。デジタルアーカイブにしてもオープンデータにしても維持と更新を続けるのは難しい。その…",
-          "link": "https://niryuu.hatenablog.com/entry/2021/12/18/102709",
-          "publishedOn": "2021-12-18T01:27:09.000Z",
-          "wordCount": null,
-          "title": "地域資料とオープンデータに関するメモ(2)",
           "enclosure": {
             "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
             "type": "image/png",
@@ -7078,6 +7065,16 @@
       "siteUrl": "https://note.com/dak",
       "articles": [
         {
+          "id": "https://note.com/dak/n/n76adfcc4f30b",
+          "author": null,
+          "description": "¡Buenos dias!\nおはようございます\n続きをみる",
+          "link": "https://note.com/dak/n/n76adfcc4f30b",
+          "publishedOn": "2022-03-17T13:19:46.000Z",
+          "wordCount": 41,
+          "title": "20220317",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/74469070/rectangle_large_type_2_bb75f630bdc4f3c1c174a9a342dbd2c6.jpg?width=800"
+        },
+        {
           "id": "https://note.com/dak/n/n28bb1508d5db",
           "author": null,
           "description": "昨日は彼女とデートして、深夜の出町柳からトボトボと千本鞍馬口まで歩いたので今朝から異常な筋肉痛に襲われ、ekaがスペイン語しか話さなくなったので（ウルグアイに移住したいとのこと）スペイン語を学ぶ必要が出てきたというのもありduolingoをインストールした\n\n続きをみる",
@@ -7801,6 +7798,16 @@
       "feedUrl": "https://note.com/dokozonosyake/rss",
       "siteUrl": "https://note.com/dokozonosyake",
       "articles": [
+        {
+          "id": "https://note.com/dokozonosyake/n/n108d92cabb7f",
+          "author": null,
+          "description": "しゃけです。\nR3-3の合格発表も終わりました。Twitterを見ていると、準1級に合格しついに1級を目指す頼もしき戦士たちがまた増えたように思います。\n続きをみる",
+          "link": "https://note.com/dokozonosyake/n/n108d92cabb7f",
+          "publishedOn": "2022-03-17T14:00:26.000Z",
+          "wordCount": 49,
+          "title": "1級四字熟語表（意味付き）PDFプレゼントはこちら",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/74472183/rectangle_large_type_2_94fe446e2c6767b318100bad3dc21509.jpeg?width=800"
+        },
         {
           "id": "https://note.com/dokozonosyake/n/n282a4e6171e9",
           "author": null,
