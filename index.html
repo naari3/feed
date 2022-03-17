@@ -27768,45 +27768,11 @@ Barkerの一番新しいアルバムからチョイスしました。
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
-              rel="noopener">ボクココ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Heroku CI の導入と得られた結果</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2021/12/18/151558" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ども、@kimihom です。
-
-この記事は、Heroku Advent Calendar 2021 の 18日目の記事です。ぜひ他の記事も読んでみていただければと思う。
-今回は、つい最近 Heroku CI や Pipeline を導入したこと、そしてセキュリティ事情 について記す。
-導入前の開発環境
-今まで開発効率のテクニックが流行ってるのを聞き流し、目の前の個人開発に没頭してきた。一人でひたすら develop ブランチへプッシュ。STG へは手動デプロイ。最後リリースする時に master(main) へプルリクエストを出して、そのフェーズでの全体コードを一通り確認したら、 master へマージ。この開発体制ならなら以下の開発環境で十分だった。
-テストはローカル環境で実行
-git push origin develop で Bitbucket へプッシュ
-STG 環境へも 手動で git push staging develop:master
-プルリクエストからのマージ
-本番へも git push production master
-当時、プライベートなGit環境は有料だった GitHub を導入する必要性を感じず、Trello のついでに 無料で使える Bitbucket のプライベートリポジトリを長い間使い続けてきた。Bitbucket と Heroku の 2つの場所にそれぞれ push する手間はあったけど、その程度だったので問題だと感じていなかった。むしろ、それの方が安心して開発ができた。
-きっかけは開発のチーム化
-いよいよ開発環境の改善が必要になってきたのは、1人開発から開発チームとして数人のメンバーが加わったことにある。常に私がコマンドを叩かないと Heroku にデプロイできない状態だと、開発効率が下がることになってしまう。
-ちょうど、GitHub…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20211218/20211218150554.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-17T18:04:58.731Z">2022-03-17T18:04:58.731Z</time>
+    <time id="build-timestamp" datetime="2022-03-17T19:02:31.733Z">2022-03-17T19:02:31.733Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

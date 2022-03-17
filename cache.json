@@ -6528,20 +6528,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438035712184",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nこの記事は、Heroku Advent Calendar 2021 の 18日目の記事です。ぜひ他の記事も読んでみていただければと思う。\n今回は、つい最近 Heroku CI や Pipeline を導入したこと、そしてセキュリティ事情 について記す。\n導入前の開発環境\n今まで開発効率のテクニックが流行ってるのを聞き流し、目の前の個人開発に没頭してきた。一人でひたすら develop ブランチへプッシュ。STG へは手動デプロイ。最後リリースする時に master(main) へプルリクエストを出して、そのフェーズでの全体コードを一通り確認したら、 master へマージ。この開発体制ならなら以下の開発環境で十分だった。\nテストはローカル環境で実行\ngit push origin develop で Bitbucket へプッシュ\nSTG 環境へも 手動で git push staging develop:master\nプルリクエストからのマージ\n本番へも git push production master\n当時、プライベートなGit環境は有料だった GitHub を導入する必要性を感じず、Trello のついでに 無料で使える Bitbucket のプライベートリポジトリを長い間使い続けてきた。Bitbucket と Heroku の 2つの場所にそれぞれ push する手間はあったけど、その程度だったので問題だと感じていなかった。むしろ、それの方が安心して開発ができた。\nきっかけは開発のチーム化\nいよいよ開発環境の改善が必要になってきたのは、1人開発から開発チームとして数人のメンバーが加わったことにある。常に私がコマンドを叩かないと Heroku にデプロイできない状態だと、開発効率が下がることになってしまう。\nちょうど、GitHub…",
-          "link": "https://www.bokukoko.info/entry/2021/12/18/151558",
-          "publishedOn": "2021-12-18T06:15:58.000Z",
-          "wordCount": null,
-          "title": "Heroku CI の導入と得られた結果",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20211218/20211218150554.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
         }
       ]
     },
