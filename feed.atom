@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-18T11:02:01.122Z</updated>
+    <updated>2022-03-18T12:02:12.393Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「ディグディガ」元ネタ紹介：12.5話]]></title>
+        <id>https://note.com/diginthedigger/n/nd9dd27bc49f7</id>
+        <link href="https://note.com/diginthedigger/n/nd9dd27bc49f7"/>
+        <updated>2022-03-18T12:00:32.000Z</updated>
+        <summary type="html"><![CDATA[これは、漫画「ディグインザディガー」12.5話公開に際して、原作の栄免建設と漫画担当の駒澤が淡々と元ネタ紹介をしていくコーナーです。
+
+前半：栄免建設（原作）
+続きをみる]]></summary>
+        <author>
+            <name>ディグインザディガー</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[marmaid.jsを使ってシーケンス図を書くためのHTMLファイルのテンプレート]]></title>
+        <id>hatenablog://entry/13574176438074241239</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/18/202258"/>
+        <updated>2022-03-18T11:22:58.000Z</updated>
+        <summary type="html"><![CDATA[SPAのような、あるページを表示するときにブラウザからサーバーへ複数回のリクエストを送るWebサイトがあります。
+シーケンスそのものは複雑ではありませんが、複数種類のリクエストを送信していることを強調したいことがあります。
+そんなときにサッとシーケンス図を描いて図示できると便利です。
+簡単な図なのでわざわざ作図ツールを使うほどではありません。
+なるべく手軽にシーケンス図を書きたいです。
+そこで思いつきました。
+marmaid.jsを組み込んだHTMLファイルを用意します。
+例えば次のHTMLファイルです。
+
+
+
+これをブラウザで表示すればシーケンス図が得られます。
+ブラウザでひらいくとシーケンス図が得られます。
+お好みのテキストエディタで編集して、好きなシーケンス図が得られます。
+marmaid.jsにはライブエディタもあります。
+よく考えたら、要りませんでした。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DFJ]]></title>
         <id>https://note.com/izumi_pogo/n/n468d61285fb4</id>

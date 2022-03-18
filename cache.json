@@ -3900,6 +3900,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438074241239",
+          "author": null,
+          "description": "SPAのような、あるページを表示するときにブラウザからサーバーへ複数回のリクエストを送るWebサイトがあります。\nシーケンスそのものは複雑ではありませんが、複数種類のリクエストを送信していることを強調したいことがあります。\nそんなときにサッとシーケンス図を描いて図示できると便利です。\n簡単な図なのでわざわざ作図ツールを使うほどではありません。\nなるべく手軽にシーケンス図を書きたいです。\nそこで思いつきました。\nmarmaid.jsを組み込んだHTMLファイルを用意します。\n例えば次のHTMLファイルです。\n\n\n\nこれをブラウザで表示すればシーケンス図が得られます。\nブラウザでひらいくとシーケンス図が得られます。\nお好みのテキストエディタで編集して、好きなシーケンス図が得られます。\nmarmaid.jsにはライブエディタもあります。\nよく考えたら、要りませんでした。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/18/202258",
+          "publishedOn": "2022-03-18T11:22:58.000Z",
+          "wordCount": 137,
+          "title": "marmaid.jsを使ってシーケンス図を書くためのHTMLファイルのテンプレート",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220318/20220318200816.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220318/20220318200816.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438073988909",
           "author": null,
           "description": "WSL起動時に次のエラーメッセージが表示されます。\nsource: Error encountered while sourcing file '/tmp/.psub.N1u4nIBokn':\nsource: No such file or directory\nrm: cannot remove '/tmp/.psub.N1u4nIBokn': No such file or directory\nWelcome to fish, the friendly interactive shell\nType help for instructions on how to use fish\n\n\n\nrbenvを初期化するためのコマンドsource (rbenv init -|psub)の実行に失敗しているためにでているエラーメッセージです。\nこの状態ではrubyコマンドが見つかりません。\nledsun@MSI:~►ruby                                                                                                  23:01\n\nCommand 'ruby' not found, but can be installed with:\n\nsudo snap install ruby  # version 3.1.1, or\nsudo apt  install ruby  # version 1:2.7+1\n\nSee 'snap info ruby' for additional versions.\n\n\n\nもう一度source (rbenv init -|psub)すればrbenvは初期化されます。\nrubyコマンドが使えるようになります。\nledsun@MSI:~[127]►source (rbenv init -|psub)                                                                0.127s 23:01\nledsun@MSI:~►ruby\n\n\n\nfish-shell同じエラーメッセージがでるissueがあります。\ngithub.com\nclose済みです。\nWSLに関する情報も載っていません。\npsubは名前付きパイプの代わりに一時ファイルをつかうfish-shellの組み込みコマンドです。\nfishshell.com\nわかった風に書いていますが、名前付きパイプがなにかはわかっていません。\nやっていることは、次のようにrbenv initコマンドで初期化スクリプトを出力します。\nledsun@MSI:~[1]►rbenv init -                                                                                       23:16\nset -gx PATH '/home/ledsun/.rbenv/shims' $PATH\nset -gx RBENV_SHELL fish\ncommand rbenv rehash 2>/dev/null\nfunction rbenv\n  set command $argv[1]\n  set -e argv[1]\n\n  switch \"$command\"\n  case rehash shell use\n    rbenv \"sh-$command\" $argv|source\n  case '*'\n    command rbenv \"$command\" $argv\n  end\nend\n\n\n\npsubを使ってスクリプトを一時ファイルに書き込みます。\n一時ファイルのパスを返します。\nledsun@MSI:~►echo (rbenv init -|psub)                                                                              23:17\n/tmp/.psub.qMqt1fQTDG\n\n\n\nこれをsourceコマンドで読み込むだけなので、失敗しないはずです。\nWSLの起動中だと一時ファイルへの書き込みに失敗するか、書いた一時ファイルが消えるかしているのでしょうか？",
@@ -7724,6 +7739,16 @@
       "feedUrl": "https://note.com/diginthedigger/rss",
       "siteUrl": "https://note.com/diginthedigger",
       "articles": [
+        {
+          "id": "https://note.com/diginthedigger/n/nd9dd27bc49f7",
+          "author": null,
+          "description": "これは、漫画「ディグインザディガー」12.5話公開に際して、原作の栄免建設と漫画担当の駒澤が淡々と元ネタ紹介をしていくコーナーです。\n\n前半：栄免建設（原作）\n続きをみる",
+          "link": "https://note.com/diginthedigger/n/nd9dd27bc49f7",
+          "publishedOn": "2022-03-18T12:00:32.000Z",
+          "wordCount": 140,
+          "title": "「ディグディガ」元ネタ紹介：12.5話",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/73953346/rectangle_large_type_2_f03d53750a3554391d63138562abd5e8.jpg?width=800"
+        },
         {
           "id": "https://note.com/diginthedigger/n/n73e7f6b27284",
           "author": null,
