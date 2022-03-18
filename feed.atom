@@ -2,10 +2,90 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-18T14:03:03.487Z</updated>
+    <updated>2022-03-18T15:06:39.109Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[20220318]]></title>
+        <id>https://note.com/dak/n/n31549062bf2b</id>
+        <link href="https://note.com/dak/n/n31549062bf2b"/>
+        <updated>2022-03-18T15:02:28.000Z</updated>
+        <summary type="html"><![CDATA[恋人とデートしてきた
+これは親と食べた千日前の焼肉屋　うまかった…感涙
+続きをみる]]></summary>
+        <author>
+            <name>疒</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WSLを終了する]]></title>
+        <id>hatenablog://entry/13574176438074321409</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/18/231950"/>
+        <updated>2022-03-18T14:19:50.000Z</updated>
+        <summary type="html"><![CDATA[Windowsターミナルを閉じてもWSLは終了しません。
+sudo shutdow -h nowでも終了するっぽいのですが、Distrodがエラーメッセージを表示します。
+ledsun@MSI:~►sudo shutdown -h now
+[sudo] password for ledsun:
+ledsun@MSI:~►[Distrod][ERROR] Failed to spawn the command.
+Caused by:
+    status.code() is None unexpectedly.
+
+[プロセスはコード 137 で終了しました]
+
+
+
+wsl.exe --shutdownで正常に終了できます。
+wsl.exe --shutdown でWSLが正常に終了したところ
+sudoも要求されません。
+参考
+WSL1/WSL2 を再起動する方法 - 備忘録]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[トラックボール]]></title>
+        <id>hatenablog://entry/13574176438074318416</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/18/230852"/>
+        <updated>2022-03-18T14:08:52.000Z</updated>
+        <summary type="html"><![CDATA[ワークフロムホームでは机が狭いです。
+より快適に作業をするためにトラックボールを使っています。
+今まで使ったことがある三機種を比較してみます。
+
+エレコム マウス ワイヤレス トラックボール (親指) 左手専用 赤玉 6ボタン チルト機能(左右スクロール) ゲーミンググレード光学センサー採用 ブラック M-XT4DRBK-G
+
+エレコム
+Amazon
+
+現役の左手用トラックボールです。
+もとは右の背中の負担を減らすために、11月から左手用トラックボールを使い始めました。
+最初は、左手で操作するのは慣れませんでした。
+もう5ヶ月使っています。
+今は普通に使えます。
+何かで、右手が上手く動かせなくなったときに、左手でもある程度操作できる方が、プログラマ寿命が伸びそうです。
+
+エレコム マウス ワイヤレス (レシーバー付属) トラックボール 大玉 8ボタン チルト機能 ブラック M-HT1DRXBK
+
+エレコム
+Amazon
+
+その前、9月から2ヶ月間、使っていた大玉トラックボールです。
+でっかいとかっこいいと思って試してみました。
+久しぶりに使ってみました。
+僕は、人差し指と中指で操作するのはダメっぽいです。
+1時間ぐらい使うと手首が痛くなってきます。
+十数年前にボウリングをやっていた時期に痛めた部分です。
+普段は特になんともないのですが、10年経っても治らないんですね。
+www.sanwa.co.jp
+2022年5月、最初に使ったトラックボールです。
+1年以上使いました。
+今使ってみると、手が大きいからか、玉と本体と両方が軽すぎてふわふわします。
+なんとなく私には合わないようです。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「ディグディガ」元ネタ紹介：12.5話]]></title>
         <id>https://note.com/diginthedigger/n/nd9dd27bc49f7</id>

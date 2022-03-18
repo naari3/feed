@@ -3886,6 +3886,36 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438074321409",
+          "author": null,
+          "description": "Windowsターミナルを閉じてもWSLは終了しません。\nsudo shutdow -h nowでも終了するっぽいのですが、Distrodがエラーメッセージを表示します。\nledsun@MSI:~►sudo shutdown -h now\n[sudo] password for ledsun:\nledsun@MSI:~►[Distrod][ERROR] Failed to spawn the command.\nCaused by:\n    status.code() is None unexpectedly.\n\n[プロセスはコード 137 で終了しました]\n\n\n\nwsl.exe --shutdownで正常に終了できます。\nwsl.exe --shutdown でWSLが正常に終了したところ\nsudoも要求されません。\n参考\nWSL1/WSL2 を再起動する方法 - 備忘録",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/18/231950",
+          "publishedOn": "2022-03-18T14:19:50.000Z",
+          "wordCount": 157,
+          "title": "WSLを終了する",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220318/20220318231729.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220318/20220318231729.png"
+        },
+        {
+          "id": "hatenablog://entry/13574176438074318416",
+          "author": null,
+          "description": "ワークフロムホームでは机が狭いです。\nより快適に作業をするためにトラックボールを使っています。\n今まで使ったことがある三機種を比較してみます。\n\nエレコム マウス ワイヤレス トラックボール (親指) 左手専用 赤玉 6ボタン チルト機能(左右スクロール) ゲーミンググレード光学センサー採用 ブラック M-XT4DRBK-G\n\nエレコム\nAmazon\n\n現役の左手用トラックボールです。\nもとは右の背中の負担を減らすために、11月から左手用トラックボールを使い始めました。\n最初は、左手で操作するのは慣れませんでした。\nもう5ヶ月使っています。\n今は普通に使えます。\n何かで、右手が上手く動かせなくなったときに、左手でもある程度操作できる方が、プログラマ寿命が伸びそうです。\n\nエレコム マウス ワイヤレス (レシーバー付属) トラックボール 大玉 8ボタン チルト機能 ブラック M-HT1DRXBK\n\nエレコム\nAmazon\n\nその前、9月から2ヶ月間、使っていた大玉トラックボールです。\nでっかいとかっこいいと思って試してみました。\n久しぶりに使ってみました。\n僕は、人差し指と中指で操作するのはダメっぽいです。\n1時間ぐらい使うと手首が痛くなってきます。\n十数年前にボウリングをやっていた時期に痛めた部分です。\n普段は特になんともないのですが、10年経っても治らないんですね。\nwww.sanwa.co.jp\n2022年5月、最初に使ったトラックボールです。\n1年以上使いました。\n今使ってみると、手が大きいからか、玉と本体と両方が軽すぎてふわふわします。\nなんとなく私には合わないようです。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/18/230852",
+          "publishedOn": "2022-03-18T14:08:52.000Z",
+          "wordCount": 155,
+          "title": "トラックボール",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/41NdAFAa9XL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/41NdAFAa9XL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438074241239",
           "author": null,
           "description": "SPAのような、あるページを表示するときにブラウザからサーバーへ複数回のリクエストを送るWebサイトがあります。\nシーケンスそのものは複雑ではありませんが、複数種類のリクエストを送信していることを強調したいことがあります。\nそんなときにサッとシーケンス図を描いて図示できると便利です。\n簡単な図なのでわざわざ作図ツールを使うほどではありません。\nなるべく手軽にシーケンス図を書きたいです。\nそこで思いつきました。\nmarmaid.jsを組み込んだHTMLファイルを用意します。\n例えば次のHTMLファイルです。\n\n\n\nこれをブラウザで表示すればシーケンス図が得られます。\nブラウザでひらいくとシーケンス図が得られます。\nお好みのテキストエディタで編集して、好きなシーケンス図が得られます。\nmarmaid.jsにはライブエディタもあります。\nよく考えたら、要りませんでした。",
@@ -7054,6 +7084,16 @@
       "feedUrl": "https://note.com/dak/rss",
       "siteUrl": "https://note.com/dak",
       "articles": [
+        {
+          "id": "https://note.com/dak/n/n31549062bf2b",
+          "author": null,
+          "description": "恋人とデートしてきた\nこれは親と食べた千日前の焼肉屋　うまかった…感涙\n続きをみる",
+          "link": "https://note.com/dak/n/n31549062bf2b",
+          "publishedOn": "2022-03-18T15:02:28.000Z",
+          "wordCount": 46,
+          "title": "20220318",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/74543743/rectangle_large_type_2_fe9adcf0c04e713955a6e6f4f55c8df6.jpeg?width=800"
+        },
         {
           "id": "https://note.com/dak/n/n76adfcc4f30b",
           "author": null,
