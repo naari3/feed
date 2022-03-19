@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-19T00:02:55.932Z</updated>
+    <updated>2022-03-19T01:28:38.777Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2022-03-18]]></title>
+        <id>hatenablog://entry/13574176438074330005</id>
+        <link href="https://commits.hatenablog.com/entry/2022/03/19/100011"/>
+        <updated>2022-03-19T01:00:11.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+rbs_railsのCIをRuby 3.1で動かすようにした。
+github.com
+rbs_railsの型チェックを最新のSteepを使って行うようにした。
+github.com
+rbs_railsでドキュメントをちょっと書き足した。
+github.com
+rbs_railsでspecが落ちていたので直した。PRをマージする前は生きていた気がするけどなんでだろう？
+github.com
+rbs_railsで、依存するクラスの型を常に書き出すように修正した。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[20220318]]></title>
         <id>https://note.com/dak/n/n31549062bf2b</id>
