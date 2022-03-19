@@ -3859,6 +3859,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438074668075",
+          "author": null,
+          "description": "WSL2とかでなくて、もうちょっと細かいバージョンについてです。\ngithub.com\nGithubでは0.56.2とかってバージョンがついています。\ndocs.microsoft.com\nRelease NoteではBuild 21364です。\n要するに自分のPCに入っているWSLってどのバージョンなのでしょうか？\nhow to check version/build number of WLS · Issue #1728 · microsoft/WSL · GitHub\nTo find your Windows build number (which corresponds to your WSL version), go to Cortana and type \"About your PC\", and press Enter.\n\n\nBuild 21364というのはWindowsのビルドと一緒の番号みたいです。\n自分のPCのWindowsのビルドは19043.1586\nWSLでいうとBuild 19041まで入っているのでしょうか？\nリリースはDecember 10, 2019 で2年前です。\n結構古いですね。\nWindows 11にすると ビルド 22000 になるっぽいです*1。\nWSLのバージョンを上げるにはWindowsのバージョンを上げればよいということがわかりました。\nGithubとのタグとの関係性は謎です。\n*1:https://docs.microsoft.com/en-us/windows/release-health/status-windows-11-21h2",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/20/000759",
+          "publishedOn": "2022-03-19T15:07:59.000Z",
+          "wordCount": 188,
+          "title": "WSLのバージョン",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220319/20220319235424.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220319/20220319235424.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438074438748",
           "author": null,
           "description": "アラフォー賢者の異世界生活日記～気ままな異世界教師ライフ～ 8巻 (デジタル版ガンガンコミックスＵＰ！)\n\n作者:寿安清（「アラフォー賢者の異世界生活日記」KADOKAWA/MFブックス刊）,招来,西野リュウ,ジョンディー\nスクウェア・エニックス\nAmazon\n\n古代超科学文明の遺跡を調査しにきた主人公が見つける物は何か？\n「SAVE THE CATの法則」のストーリーの類型では「なぜやったのか？」に該当するのでしょうか？\n主人公が異世界に転生してきた原因が徐々に見えてきました。\n自分、異世界転生チート主人公が現地人を育てて回る話が好きみたい。",

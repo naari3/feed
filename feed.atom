@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-19T15:02:03.250Z</updated>
+    <updated>2022-03-19T16:01:50.801Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[WSLのバージョン]]></title>
+        <id>hatenablog://entry/13574176438074668075</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/20/000759"/>
+        <updated>2022-03-19T15:07:59.000Z</updated>
+        <summary type="html"><![CDATA[WSL2とかでなくて、もうちょっと細かいバージョンについてです。
+github.com
+Githubでは0.56.2とかってバージョンがついています。
+docs.microsoft.com
+Release NoteではBuild 21364です。
+要するに自分のPCに入っているWSLってどのバージョンなのでしょうか？
+how to check version/build number of WLS · Issue #1728 · microsoft/WSL · GitHub
+To find your Windows build number (which corresponds to your WSL version), go to Cortana and type "About your PC", and press Enter.
+
+
+Build 21364というのはWindowsのビルドと一緒の番号みたいです。
+自分のPCのWindowsのビルドは19043.1586
+WSLでいうとBuild 19041まで入っているのでしょうか？
+リリースはDecember 10, 2019 で2年前です。
+結構古いですね。
+Windows 11にすると ビルド 22000 になるっぽいです*1。
+WSLのバージョンを上げるにはWindowsのバージョンを上げればよいということがわかりました。
+Githubとのタグとの関係性は謎です。
+*1:https://docs.microsoft.com/en-us/windows/release-health/status-windows-11-21h2]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[アラフォー賢者の異世界生活日記～気ままな異世界教師ライフ～ 8]]></title>
         <id>hatenablog://entry/13574176438074438748</id>
