@@ -1117,22 +1117,7 @@
       "title": "Write and Run",
       "feedUrl": "https://diary.hatenablog.jp/rss",
       "siteUrl": "https://diary.hatenablog.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438044694539",
-          "author": null,
-          "description": "これは KOBA789 日記 Advent Calendar 2021 - Adventar 21日目の記事です。\nGitHub Projects (beta)\nみなさん GitHub Projects (beta) は使っていますか？　私はめっちゃ使っています。\nしかし beta ということもあってまだまだ使いづらかったり機能が足らなかったりすることがありますよね？\nマウスでポチポチしながら、SQL で操作できたらラクなのになぁと妄想したりもします。というわけで作りました。\nghsql\nGitHub Projects (beta) のデータを SQL でクエリ・更新できるツールを作りました。SELECT はもちろん、UPDATE や DELETE もできます（INSERT は未実装）。\ngithub.com\nインストール\nまだ crates.io とかには公開してないので、git clone して cargo install --path . してください。\n使い方\nPersonal Access Token や Installation Access Token などを環境変数 GITHUB_TOKEN に設定してください。\nコマンドの引数は以下の通りです。\nUSAGE:\n    ghsql <OWNER> <PROJECT_NUMBER> --github-token <github-token>\nSQL の例\nテーブル名は items 固定です。\nとりあえず全部列挙:\nSELECT * FROM items;\nもちろん件数も数えられる:\nSELECT count(*) FROM items;\nStatus が In Progress なやつだけ列挙:\nSELECT * FROM items WHERE Status = 'In Progress';\nリポジトリと Issue 番号を指定して Status を Done に更新:\nUPDATE items SET Status = 'Done' WHERE Repository = 'owner/repo' AND Issue = 123;\nStatus が Done なアイテムを全部削除:\nDELETE FROM items WHERE Status = 'Done';\nもちろん、Iteration にも対応しています。\n今イテレーション(Iteration 10)の積み残しを全部次のイテレーション(Iteration 11)に持ち越し:\nUPDATE items SET Iteration = 'Iteration 11' WHERE Iteration = 'Iteration 10';\nその他\n思いついた勢いで一気に作ったので、気合いでごり押した設計と実装になっています。\n終わりに\nもうアドベントカレンダーも終盤じゃん。そろそろ書かなくていいかな。",
-          "link": "https://diary.hatenablog.jp/entry/2021/12/21/044354",
-          "publishedOn": "2021-12-20T19:43:54.000Z",
-          "wordCount": 236,
-          "title": "GitHub Projects (beta)のデータをSQLでクエリ・更新できるツールを作った",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        }
-      ]
+      "articles": []
     },
     {
       "title": "dsaki",

@@ -27766,67 +27766,9 @@ pic.twitter.com/ZbKjO1FfWI
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-12-20">2021-12-20</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://diary.hatenablog.jp/" target="_blank"
-              rel="noopener">Write and Run</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GitHub Projects (beta)のデータをSQLでクエリ・更新できるツールを作った</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://diary.hatenablog.jp/entry/2021/12/21/044354" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>これは KOBA789 日記 Advent Calendar 2021 - Adventar 21日目の記事です。
-GitHub Projects (beta)
-みなさん GitHub Projects (beta) は使っていますか？　私はめっちゃ使っています。
-しかし beta ということもあってまだまだ使いづらかったり機能が足らなかったりすることがありますよね？
-マウスでポチポチしながら、SQL で操作できたらラクなのになぁと妄想したりもします。というわけで作りました。
-ghsql
-GitHub Projects (beta) のデータを SQL でクエリ・更新できるツールを作りました。SELECT はもちろん、UPDATE や DELETE もできます（INSERT は未実装）。
-github.com
-インストール
-まだ crates.io とかには公開してないので、git clone して cargo install --path . してください。
-使い方
-Personal Access Token や Installation Access Token などを環境変数 GITHUB_TOKEN に設定してください。
-コマンドの引数は以下の通りです。
-USAGE:
-    ghsql   --github-token 
-SQL の例
-テーブル名は items 固定です。
-とりあえず全部列挙:
-SELECT * FROM items;
-もちろん件数も数えられる:
-SELECT count(*) FROM items;
-Status が In Progress なやつだけ列挙:
-SELECT * FROM items WHERE Status &#x3D; &#x27;In Progress&#x27;;
-リポジトリと Issue 番号を指定して Status を Done に更新:
-UPDATE items SET Status &#x3D; &#x27;Done&#x27; WHERE Repository &#x3D; &#x27;owner/repo&#x27; AND Issue &#x3D; 123;
-Status が Done なアイテムを全部削除:
-DELETE FROM items WHERE Status &#x3D; &#x27;Done&#x27;;
-もちろん、Iteration にも対応しています。
-今イテレーション(Iteration 10)の積み残しを全部次のイテレーション(Iteration 11)に持ち越し:
-UPDATE items SET Iteration &#x3D; &#x27;Iteration 11&#x27; WHERE Iteration &#x3D; &#x27;Iteration 10&#x27;;
-その他
-思いついた勢いで一気に作ったので、気合いでごり押した設計と実装になっています。
-終わりに
-もうアドベントカレンダーも終盤じゃん。そろそろ書かなくていいかな。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-20T07:02:15.130Z">2022-03-20T07:02:15.130Z</time>
+    <time id="build-timestamp" datetime="2022-03-20T08:02:18.272Z">2022-03-20T08:02:18.272Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
