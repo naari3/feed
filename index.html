@@ -27736,66 +27736,9 @@ Groupieでは画面を構成するコンポーネント（GroupieItem）が行�
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-12-21">2021-12-21</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Apple Silicon Macbook Proへの移行でやったこと @ 2021</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2021/12/22/macbook-pro-14-m1/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>移行ツールを使うと余計なものが色々入ってしまうため、
-Intel Macbook ProからApple Silicon Macbook Proへと手動で移行した。
-移行元: Macbook Pro 13&quot; Intel Core i7 32GB 2020
-移行先: Macbook Pro 14&quot; Apple M1 Max 64 GB 2021
-最初にやっておくと便利なこと
-それぞれのmacでユニバーサルクリップボードを有効化
-
-
-ファイルとか文字列のやりとりが楽になる
-ユニバーサルクリップボードを使って Apple デバイス間でコピーアンドペーストする - Apple サポート (日本)
-適当に元macでファイルをコピー、新しいmacでペーストするだけでファイルコピーできる
-
-scpやrsyncでファイルを渡せるようにする
-# scpでパスフレーズの入力補助
-brew install hudochenkov/sshpass/sshpass
-
-
-SCPで元MacAから新しいMacBへファイルをコピー
-# 同じネットワークなら共有のところにある端末名が利用できる
-NEW_MAC&#x3D;&quot;user@MacBookPro.local&quot;
-# 新しいmacのパスワード(user)
-NEW_MAC_PASS&#x3D;&quot;XXXX&quot;
-# ファイルをネットワークでコピーして渡す
-sshpass -p &quot;$NEW_MAC_PASS&quot; scp -p ./Brewfile $NEW_MAC:~/Desktop
-
-
-
-大量のファイルをやるならブリッジしてrsync or ターゲットディスクモードを使う
-
-
-rsync -cahE --no-i-r --info&#x3D;progress2
-Mac同士をThunderboltケーブルでつないでファイル共有、ニコイチで使う。｜Yoshiryu｜note
-ThunderboltでI…</span>
-                  </div>
-                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-21T10:06:18.951Z">2022-03-21T10:06:18.951Z</time>
+    <time id="build-timestamp" datetime="2022-03-21T11:06:50.749Z">2022-03-21T11:06:50.749Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

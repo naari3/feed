@@ -10744,16 +10744,6 @@
           "wordCount": 1010,
           "title": "今年のオープンソース活動振り返り @ 2021",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2021/12/22/macbook-pro-14-m1/",
-          "author": null,
-          "description": "移行ツールを使うと余計なものが色々入ってしまうため、\nIntel Macbook ProからApple Silicon Macbook Proへと手動で移行した。\n移行元: Macbook Pro 13\" Intel Core i7 32GB 2020\n移行先: Macbook Pro 14\" Apple M1 Max 64 GB 2021\n最初にやっておくと便利なこと\nそれぞれのmacでユニバーサルクリップボードを有効化\n\n\nファイルとか文字列のやりとりが楽になる\nユニバーサルクリップボードを使って Apple デバイス間でコピーアンドペーストする - Apple サポート (日本)\n適当に元macでファイルをコピー、新しいmacでペーストするだけでファイルコピーできる\n\nscpやrsyncでファイルを渡せるようにする\n# scpでパスフレーズの入力補助\nbrew install hudochenkov/sshpass/sshpass\n\n\nSCPで元MacAから新しいMacBへファイルをコピー\n# 同じネットワークなら共有のところにある端末名が利用できる\nNEW_MAC=\"user@MacBookPro.local\"\n# 新しいmacのパスワード(user)\nNEW_MAC_PASS=\"XXXX\"\n# ファイルをネットワークでコピーして渡す\nsshpass -p \"$NEW_MAC_PASS\" scp -p ./Brewfile $NEW_MAC:~/Desktop\n\n\n\n大量のファイルをやるならブリッジしてrsync or ターゲットディスクモードを使う\n\n\nrsync -cahE --no-i-r --info=progress2\nMac同士をThunderboltケーブルでつないでファイル共有、ニコイチで使う。｜Yoshiryu｜note\nThunderboltでI…",
-          "link": "https://efcl.info/2021/12/22/macbook-pro-14-m1/",
-          "publishedOn": "2021-12-21T22:11:00.000Z",
-          "wordCount": 424,
-          "title": "Apple Silicon Macbook Proへの移行でやったこと @ 2021",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },

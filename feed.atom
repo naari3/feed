@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-21T10:06:19.014Z</updated>
+    <updated>2022-03-21T11:06:50.806Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -19888,48 +19888,6 @@ Create a bootable USB stick on macOS | Ubuntu
 Groupieでは画面を構成するコンポーネント（GroupieItem）が行単位で分割されることでActivityやFragmentの肥大化を防止できることが利点の1つでした。しかしこれによりActivityやFragmentには基本的にRecyclerViewだけを置くことになり、レイアウトエディター上のプレビューだけではどんな画面が表示されるのかわかりづ…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple Silicon Macbook Proへの移行でやったこと @ 2021]]></title>
-        <id>https://efcl.info/2021/12/22/macbook-pro-14-m1/</id>
-        <link href="https://efcl.info/2021/12/22/macbook-pro-14-m1/"/>
-        <updated>2021-12-21T22:11:00.000Z</updated>
-        <summary type="html"><![CDATA[移行ツールを使うと余計なものが色々入ってしまうため、
-Intel Macbook ProからApple Silicon Macbook Proへと手動で移行した。
-移行元: Macbook Pro 13" Intel Core i7 32GB 2020
-移行先: Macbook Pro 14" Apple M1 Max 64 GB 2021
-最初にやっておくと便利なこと
-それぞれのmacでユニバーサルクリップボードを有効化
-
-
-ファイルとか文字列のやりとりが楽になる
-ユニバーサルクリップボードを使って Apple デバイス間でコピーアンドペーストする - Apple サポート (日本)
-適当に元macでファイルをコピー、新しいmacでペーストするだけでファイルコピーできる
-
-scpやrsyncでファイルを渡せるようにする
-# scpでパスフレーズの入力補助
-brew install hudochenkov/sshpass/sshpass
-
-
-SCPで元MacAから新しいMacBへファイルをコピー
-# 同じネットワークなら共有のところにある端末名が利用できる
-NEW_MAC="user@MacBookPro.local"
-# 新しいmacのパスワード(user)
-NEW_MAC_PASS="XXXX"
-# ファイルをネットワークでコピーして渡す
-sshpass -p "$NEW_MAC_PASS" scp -p ./Brewfile $NEW_MAC:~/Desktop
-
-
-
-大量のファイルをやるならブリッジしてrsync or ターゲットディスクモードを使う
-
-
-rsync -cahE --no-i-r --info=progress2
-Mac同士をThunderboltケーブルでつないでファイル共有、ニコイチで使う。｜Yoshiryu｜note
-ThunderboltでI…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
