@@ -1267,20 +1267,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438045109251",
-          "author": null,
-          "description": "2021年現在、M1 MacでDockerを使うのが大変という話がちょいちょいあります。\n私は普段のAMD64 Linuxでしか動かせないソフトウェアを開発していて、Dockerもちょいちょい使う、という感じです。なのでAMD64 MacでVMWareを使ってUbuntu VMを使って開発しています。\n一方で、新規で購入できるMacbook ProがM1しかない、デスクトップマシンとしてWindowsやUbuntuを使うことにまだ踏ん切りがつかない（なんだかんだで10年Macで仕事をしてきているので…）ということもあり、どうしたものかと思っていましたが、会社が開発機としてIntel NUCを用意しているというので申請して導入したことで、一気に諸問題が解決しそうだなというところに至りました。\nIntel NUCはIntelが作っているmini PCで、サイズ的には幅12cm、 奥行き12cm、高さ4-6cm（具体的な大きさなモデルによる）くらいなのであまり物理的な場所をとりません。この中に開発環境を作ってSSHなりvscode remoteなりで入ればいいというわけです。私の場合はかれこれ2年ほどVMWareでUbuntu VMを作ってその中にSSHして開発していたので、開発体験的にもあまり変わらないはずです。\n今回は NUC10i5FNH (NUC 第10世代 with Core i5）をセットアップしました。\nIntel NUC 10 Performance kit NUC10i5FNH Product Specifications\n(Recommended Customer Price: $414.68 - $417.14)\nこの筐体はSSDもRAMもついてないので、適当に入手して自分でつける必要があります。\nUbuntuを入れるときはUbuntuのサイトにIntel NUCを使うときのやり方や、必要な周辺機器があります。ただし、私はUbuntu DesktopではなくUbuntu Serverを入れました。どのみちSSH経由でしか使いませんからね。\nInstall Ubuntu Desktop on the Intel® NUC | Ubuntu\n起動ディスクの作り方が最初わからなくてハマっていましたが、上記サイトのインストラクションをよく読んでいないだけでした…。Macで起動ディスクを作る場合はこれまた下記のとおりUbuntuのサイトにやり方が書いてあります。\nCreate a bootable USB stick on macOS | Ubuntu\nなお、セットアップ時に日本語キーボードを認識できずUSキーボードと検出されてしまったのですが、どうせSSHするだけなので特にがんばって日本語キーボード対応したりはせずスルーしました。\nまだセットアップしたばかりなので本当のところはよくわかりませんが、会社が開発機としてIntel NUCを支給できるならこれはベストの開発環境といえるのではないかと思っています。",
-          "link": "https://gfx.hatenablog.com/entry/2021/12/22/144438",
-          "publishedOn": "2021-12-22T05:44:38.000Z",
-          "wordCount": 211,
-          "title": "M1 Mac + Intel NUC (mini PC) で快適AMD64 Linux生活",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
