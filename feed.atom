@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-22T02:29:33.999Z</updated>
+    <updated>2022-03-22T03:09:55.248Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -19814,28 +19814,6 @@ Amazon
 (2021-12-23 15:27 追記) 女性が出てくるとだいたい「私を抱いて！」ってなるのはだいぶ嫌いだなと思っていたのを書き忘れていた]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twilio 録音セキュリティの考察と実装]]></title>
-        <id>hatenablog://entry/13574176438044253898</id>
-        <link href="https://www.bokukoko.info/entry/2021/12/23/000000"/>
-        <updated>2021-12-22T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimhiom です。
-
-この記事は Twilio Advent Calendar 2021 23日目の記事となります。他のも是非みていただければと〜。
-近年は セキュリティに関して多くの方々が意識するようになり、私にとって Twilio での録音ファイルをどのように管理するのかについて、最適解を考え続けた。そこでの対応や実装について記そう。
-録音をしない、保存しない
-まず録音セキュリティを話す前に、録音セキュリティをものすごく気にする方には、そもそも録音をしない を絶賛推奨しよう。ことの発端は全て録音をするから始まるのである。さらに、録音をするだけで Twilio ポイントが引かれるし、その録音ファイルを所持するだけで毎月費用が発生してしまう(ある程度までは無料だけど)。
-また、録音を一度ダウンロードして、どこかセキュア?な環境へ保存したら、Twilio 側の録音を削除するという運用で、一般公開を防ぐことが可能だ。ただ、手動での対応は手間がかかりすぎるので、TwiML での Twilio Action で指定した URL 側のプログラム実装すれば自動化できる。ただ、そのローカルな環境で保存したところで、誰がその録音にアクセスできるのかなどの課題は残り続ける。
-まず前提を考慮した上で、"ネット上で録音を聞きたい。でもセキュリティをなんとかして" という要望に対して、以下の方法を紹介していこう。
-Twilio 提供の 録音セキュリティ
-まず、Twilio がデフォルトで提供している録音セキュリティに関してまとめてみる。
-1. 予測不可能な録音URL
-Twilio で 録音を on にして通話をすると、以下のような形式の URL で録音が再生できるようになる。
-https://api.twilio.com/2010-04-01/Accounts/AC**********…]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>

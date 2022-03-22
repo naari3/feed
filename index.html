@@ -27635,46 +27635,9 @@ Amazon
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-12-22">2021-12-22</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
-              rel="noopener">ボクココ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Twilio 録音セキュリティの考察と実装</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2021/12/23/000000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ども、@kimhiom です。
-
-この記事は Twilio Advent Calendar 2021 23日目の記事となります。他のも是非みていただければと〜。
-近年は セキュリティに関して多くの方々が意識するようになり、私にとって Twilio での録音ファイルをどのように管理するのかについて、最適解を考え続けた。そこでの対応や実装について記そう。
-録音をしない、保存しない
-まず録音セキュリティを話す前に、録音セキュリティをものすごく気にする方には、そもそも録音をしない を絶賛推奨しよう。ことの発端は全て録音をするから始まるのである。さらに、録音をするだけで Twilio ポイントが引かれるし、その録音ファイルを所持するだけで毎月費用が発生してしまう(ある程度までは無料だけど)。
-また、録音を一度ダウンロードして、どこかセキュア?な環境へ保存したら、Twilio 側の録音を削除するという運用で、一般公開を防ぐことが可能だ。ただ、手動での対応は手間がかかりすぎるので、TwiML での Twilio Action で指定した URL 側のプログラム実装すれば自動化できる。ただ、そのローカルな環境で保存したところで、誰がその録音にアクセスできるのかなどの課題は残り続ける。
-まず前提を考慮した上で、&quot;ネット上で録音を聞きたい。でもセキュリティをなんとかして&quot; という要望に対して、以下の方法を紹介していこう。
-Twilio 提供の 録音セキュリティ
-まず、Twilio がデフォルトで提供している録音セキュリティに関してまとめてみる。
-1. 予測不可能な録音URL
-Twilio で 録音を on にして通話をすると、以下のような形式の URL で録音が再生できるようになる。
-https://api.twilio.com/2010-04-01/Accounts/AC**********…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20211221/20211221164707.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-22T02:29:33.919Z">2022-03-22T02:29:33.919Z</time>
+    <time id="build-timestamp" datetime="2022-03-22T03:09:55.184Z">2022-03-22T03:09:55.184Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
