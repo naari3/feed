@@ -10745,6 +10745,223 @@
       ]
     },
     {
+      "title": "Your Site's RSS Feed",
+      "feedUrl": "https://blog.ojisan.io/rss.xml",
+      "siteUrl": "https://blog.ojisan.io",
+      "articles": [
+        {
+          "id": "https://blog.ojisan.io/many-copies-original-sin",
+          "author": null,
+          "description": "Rust 分かんないッピ ・ε・ Rust の文字列周りのプラクティスを基礎から勉強してみようと思って勉強したのでそのときのメモをまとめます。 Rust は GC を持たない なぜ Rust の文字列周りの型があんなに大変なことになっているかは、Rust…",
+          "link": "https://blog.ojisan.io/many-copies-original-sin",
+          "publishedOn": "2022-03-22T00:00:00.000Z",
+          "wordCount": 991,
+          "title": "多コピーの原罪",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/firebase-vercel-speed",
+          "author": null,
+          "description": "ブログを Firebase から Vercel に移した 先日、ブログを Firebase から Vercel に移しました。\n正確には戻しました。 元々は今年の年始に CI/CD を柔軟にしたかった、 cloud logging を使いたかった という理由で Vercel…",
+          "link": "https://blog.ojisan.io/firebase-vercel-speed",
+          "publishedOn": "2022-03-01T00:00:00.000Z",
+          "wordCount": 252,
+          "title": "Firebase Hosting と Vercel どっちが速いか",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/i-cannot-jisui",
+          "author": null,
+          "description": "自炊をやめた 実は去年はじめて自炊にチャレンジしました。\n僕は一人暮らし歴はもう…",
+          "link": "https://blog.ojisan.io/i-cannot-jisui",
+          "publishedOn": "2022-02-28T00:00:00.000Z",
+          "wordCount": 72,
+          "title": "自炊ヘタクソ選手権",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/jq-get-dep",
+          "author": null,
+          "description": "何をしたいか 別プロジェクトで作った package.json の依存部分を使いまわしたいけど、それの最新バージョン版が欲しいことがあると思います。具体的には、package.json から  と  を生成してくれるものが欲しいです。以前に OCaml で json parse…",
+          "link": "https://blog.ojisan.io/jq-get-dep",
+          "publishedOn": "2022-02-27T00:00:00.000Z",
+          "wordCount": 198,
+          "title": "package.json から依存部分の key だけを抜き出す jq ワンライナー",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/should-i-send-my-address-to-findy",
+          "author": null,
+          "description": "Findy からお守りもらいました！  これは、エンジニアおみくじ という年始にやっていた Twitter の投稿キャンペーンを通してもらったものです。\n実はこういう抽選で当たるの初めてですごい舞い上がっています。 さて、当選したときに Twitter DM…",
+          "link": "https://blog.ojisan.io/should-i-send-my-address-to-findy",
+          "publishedOn": "2022-02-24T00:00:00.000Z",
+          "wordCount": 169,
+          "title": "Findy に住所を送るか悩んだ話",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/swagger-validator-ts",
+          "author": null,
+          "description": "API Spec を書くとそれ通りのリクエストしか受け付けないようにバリデーションしてくれて、なおかつバリデーションされた値には Spec で期待した通りの型が付いて欲しいですよね。 これを TypeScript で実現しようとすると色々と壁があります。特に API Spec…",
+          "link": "https://blog.ojisan.io/swagger-validator-ts",
+          "publishedOn": "2022-02-20T00:00:00.000Z",
+          "wordCount": 838,
+          "title": "API仕様書をバリデーターと型と同期させて作る",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/gradation-component",
+          "author": null,
+          "description": "何を作ったか 5 ヶ月くらい前に SupercolorpixelisticXDRidocious というライブラリを作りました。 これは Apple が iPhone13 を発売したときのデモページに書かれていた文字列が、半ば meme…",
+          "link": "https://blog.ojisan.io/gradation-component",
+          "publishedOn": "2022-02-19T00:00:00.000Z",
+          "wordCount": 198,
+          "title": "グラデーション文字を表示する Web Components を作った",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/cloud-functions-structured-logging",
+          "author": null,
+          "description": "※ 諸説あるかとは思いますが、ここでいう構造化ロギングは JSON などの構造に従って構築されたログという意味で使っています。 Firebase ではどうしていたか Firebase 上の Cloud Functions は firebase-functions…",
+          "link": "https://blog.ojisan.io/cloud-functions-structured-logging",
+          "publishedOn": "2022-02-19T00:00:00.000Z",
+          "wordCount": 219,
+          "title": "GCP 版 Cloud Functions でも構造化ロギング",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/i-am-indexed",
+          "author": null,
+          "description": "ごめん、嘘 先日、ブログの SEO が壊滅し始めていることに気づいた では、ブログが Google…",
+          "link": "https://blog.ojisan.io/i-am-indexed",
+          "publishedOn": "2022-02-18T00:00:00.000Z",
+          "wordCount": 72,
+          "title": "検索エンジンに認識されないと言ったがあれは嘘だ",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/my-blog-seo-is-bad",
+          "author": null,
+          "description": "…",
+          "link": "https://blog.ojisan.io/my-blog-seo-is-bad",
+          "publishedOn": "2022-02-17T00:00:00.000Z",
+          "wordCount": 301,
+          "title": "ブログのSEOが壊滅し始めていることに気づいた",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/wall-break-my-pc",
+          "author": null,
+          "description": "…",
+          "link": "https://blog.ojisan.io/wall-break-my-pc",
+          "publishedOn": "2022-02-17T00:00:00.000Z",
+          "wordCount": 51,
+          "title": "壁の突起でパソコン割った",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/syntax-highlight-battle-zenn",
+          "author": null,
+          "description": "zenn に 自分のお気に入りのエディタテーマを見つけられるサービスを作った という記事を投稿しました。",
+          "link": "https://blog.ojisan.io/syntax-highlight-battle-zenn",
+          "publishedOn": "2022-02-14T00:00:00.000Z",
+          "wordCount": 32,
+          "title": "自分のお気に入りのエディタテーマを見つけられるサービスを作った",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/cloud-functions-firestore-trigger",
+          "author": null,
+          "description": "トリガーとは ご存知の通り、Firebase の Cloud Functions は Firestore…",
+          "link": "https://blog.ojisan.io/cloud-functions-firestore-trigger",
+          "publishedOn": "2022-02-09T00:00:00.000Z",
+          "wordCount": 177,
+          "title": "GCP 版 Cloud Functions からも Firestore をトリガーしたい",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/gha-cloudrun",
+          "author": null,
+          "description": "ググったらすでに正解例が出ていると思いますが、たどり着くまでに色々あったのでメモ。 完成系 google-github-actions/auth に関しては いま GitHub Actions から GCP を使うなら を参照。 なんで GHA から CloudRun…",
+          "link": "https://blog.ojisan.io/gha-cloudrun",
+          "publishedOn": "2022-02-08T00:00:00.000Z",
+          "wordCount": 286,
+          "title": "GitHub Actions から CloudRun にデプロイする",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/gha-functions",
+          "author": null,
+          "description": "完全な形 完成系 一見簡単そうに見えますが、暗黙の前提などがあるので一つずつ解説していきます。 解説 エントリポイントを全 export するだけでは不十分 Firebase の Cloud Functions に慣れている人にとってはびっくりな罠です。\nFirebase…",
+          "link": "https://blog.ojisan.io/gha-functions",
+          "publishedOn": "2022-02-08T00:00:00.000Z",
+          "wordCount": 245,
+          "title": "GitHub Actions から Cloud Functions にデプロイする",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/file-permission-slot-with-rust",
+          "author": null,
+          "description": "2021 年で一番良かったアドベントカレンダーとはなんでしょうか。\n私が選ぶのは、ファイルパーミッションでスロットがしたい です。  これは 2021 年 Go アドベントカレンダー 1 日目の記事で、CLI…",
+          "link": "https://blog.ojisan.io/file-permission-slot-with-rust",
+          "publishedOn": "2022-02-07T00:00:00.000Z",
+          "wordCount": 258,
+          "title": "Rust でもファイルパーミッションでスロットがしたい",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/gha-gcloud",
+          "author": null,
+          "description": "GitHub Actions と GCP の連携方法でググったときの情報が何か古い気がしたので、2022 年 2 月版を書いておく。 setup-gcloud action には Google が公式で出している setup-gcloud を使う。 master…",
+          "link": "https://blog.ojisan.io/gha-gcloud",
+          "publishedOn": "2022-02-06T00:00:00.000Z",
+          "wordCount": 274,
+          "title": "いま GitHub Actions から GCP を使うなら",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/fire-fire",
+          "author": null,
+          "description": "Firestore や Firebase Auth は GCP から利用できることをご存知でしょうか？   実は Firestore はそのまま使えますし、Auth も Identity Platform がそれとして使えます。 そこで思うわけです、Firebase…",
+          "link": "https://blog.ojisan.io/fire-fire",
+          "publishedOn": "2022-02-05T00:00:00.000Z",
+          "wordCount": 397,
+          "title": "Firebase を Firebase コンソールにログインせずに terraform から使う回（存在しない回）",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/terraform-cdk-gcp",
+          "author": null,
+          "description": "CDK for Terraform (Cloud Development Kit for Terraform (CDKTF)) とは TS や Python や Go などのプログラミング言語で IaC が行えるツールです。 FYI: https://github.com…",
+          "link": "https://blog.ojisan.io/terraform-cdk-gcp",
+          "publishedOn": "2022-02-04T00:00:00.000Z",
+          "wordCount": 621,
+          "title": "CDK for Terraform で GCP スタックを作る",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/hurikaeri-2021",
+          "author": null,
+          "description": "あけましておめでとうございます！\n昨日ようやくsadnessOjisan Advent Calendar 2021を終えれたので新年を迎えることができました。\nなので、202…",
+          "link": "https://blog.ojisan.io/hurikaeri-2021",
+          "publishedOn": "2022-02-04T00:00:00.000Z",
+          "wordCount": 159,
+          "title": "2021年の振り返り",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/kuso-request-revenge",
+          "author": null,
+          "description": "この記事は sadnessOjisan Advent Calendar 2021 25 日目の記事です。\nついに最終日ですね！今日は 02/04 なのですが・・・ 12/25 に Qiita…",
+          "link": "https://blog.ojisan.io/kuso-request-revenge",
+          "publishedOn": "2021-12-25T00:00:00.000Z",
+          "wordCount": 250,
+          "title": "不正なリクエストに一泡吹かせたい",
+          "imageUrl": null
+        }
+      ]
+    },
+    {
       "title": "Web Scratch",
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",

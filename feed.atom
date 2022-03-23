@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-23T14:07:06.801Z</updated>
+    <updated>2022-03-23T14:27:10.055Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -335,6 +335,16 @@ ruby-jpでのアンケート
         <updated>2022-03-22T01:00:00.000Z</updated>
         <author>
             <name>桜井のりお</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[多コピーの原罪]]></title>
+        <id>https://blog.ojisan.io/many-copies-original-sin</id>
+        <link href="https://blog.ojisan.io/many-copies-original-sin"/>
+        <updated>2022-03-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Rust 分かんないッピ ・ε・ Rust の文字列周りのプラクティスを基礎から勉強してみようと思って勉強したのでそのときのメモをまとめます。 Rust は GC を持たない なぜ Rust の文字列周りの型があんなに大変なことになっているかは、Rust…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -4872,6 +4882,17 @@ indexifembedded というタグのサポートを開始したため、はてな�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Firebase Hosting と Vercel どっちが速いか]]></title>
+        <id>https://blog.ojisan.io/firebase-vercel-speed</id>
+        <link href="https://blog.ojisan.io/firebase-vercel-speed"/>
+        <updated>2022-03-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ブログを Firebase から Vercel に移した 先日、ブログを Firebase から Vercel に移しました。
+正確には戻しました。 元々は今年の年始に CI/CD を柔軟にしたかった、 cloud logging を使いたかった という理由で Vercel…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>https://r7kamura.com/articles/2022-03-01-diary</id>
         <link href="https://r7kamura.com/articles/2022-03-01-diary"/>
@@ -4958,6 +4979,17 @@ indexifembedded というタグのサポートを開始したため、はてな�
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[自炊ヘタクソ選手権]]></title>
+        <id>https://blog.ojisan.io/i-cannot-jisui</id>
+        <link href="https://blog.ojisan.io/i-cannot-jisui"/>
+        <updated>2022-02-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[自炊をやめた 実は去年はじめて自炊にチャレンジしました。
+僕は一人暮らし歴はもう…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -5109,6 +5141,16 @@ Voxengoについて
 続きをみる]]></summary>
         <author>
             <name>moroishimasaoki</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[package.json から依存部分の key だけを抜き出す jq ワンライナー]]></title>
+        <id>https://blog.ojisan.io/jq-get-dep</id>
+        <link href="https://blog.ojisan.io/jq-get-dep"/>
+        <updated>2022-02-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[何をしたいか 別プロジェクトで作った package.json の依存部分を使いまわしたいけど、それの最新バージョン版が欲しいことがあると思います。具体的には、package.json から  と  を生成してくれるものが欲しいです。以前に OCaml で json parse…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -5821,6 +5863,17 @@ eval以外ならどれでも解消されました。
 続きをみる]]></summary>
         <author>
             <name>Theas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Findy に住所を送るか悩んだ話]]></title>
+        <id>https://blog.ojisan.io/should-i-send-my-address-to-findy</id>
+        <link href="https://blog.ojisan.io/should-i-send-my-address-to-findy"/>
+        <updated>2022-02-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Findy からお守りもらいました！  これは、エンジニアおみくじ という年始にやっていた Twitter の投稿キャンペーンを通してもらったものです。
+実はこういう抽選で当たるの初めてですごい舞い上がっています。 さて、当選したときに Twitter DM…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -6795,6 +6848,16 @@ Object#classって遅いのかな。graphql-rubyのプロファイリング取�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[API仕様書をバリデーターと型と同期させて作る]]></title>
+        <id>https://blog.ojisan.io/swagger-validator-ts</id>
+        <link href="https://blog.ojisan.io/swagger-validator-ts"/>
+        <updated>2022-02-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[API Spec を書くとそれ通りのリクエストしか受け付けないようにバリデーションしてくれて、なおかつバリデーションされた値には Spec で期待した通りの型が付いて欲しいですよね。 これを TypeScript で実現しようとすると色々と壁があります。特に API Spec…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>https://r7kamura.com/articles/2022-02-20-diary</id>
         <link href="https://r7kamura.com/articles/2022-02-20-diary"/>
@@ -7204,6 +7267,26 @@ IHコンロは元々伝導熱しかないので本当に使いにくいのです
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[グラデーション文字を表示する Web Components を作った]]></title>
+        <id>https://blog.ojisan.io/gradation-component</id>
+        <link href="https://blog.ojisan.io/gradation-component"/>
+        <updated>2022-02-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[何を作ったか 5 ヶ月くらい前に SupercolorpixelisticXDRidocious というライブラリを作りました。 これは Apple が iPhone13 を発売したときのデモページに書かれていた文字列が、半ば meme…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GCP 版 Cloud Functions でも構造化ロギング]]></title>
+        <id>https://blog.ojisan.io/cloud-functions-structured-logging</id>
+        <link href="https://blog.ojisan.io/cloud-functions-structured-logging"/>
+        <updated>2022-02-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[※ 諸説あるかとは思いますが、ここでいう構造化ロギングは JSON などの構造に従って構築されたログという意味で使っています。 Firebase ではどうしていたか Firebase 上の Cloud Functions は firebase-functions…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[世界を救う男のショー2]]></title>
         <id>https://note.com/customer_center/n/nfbad35f4f1c6</id>
         <link href="https://note.com/customer_center/n/nfbad35f4f1c6"/>
@@ -7365,6 +7448,16 @@ Demolition
 それじゃあまた。]]></summary>
         <author>
             <name>chomoshのブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[検索エンジンに認識されないと言ったがあれは嘘だ]]></title>
+        <id>https://blog.ojisan.io/i-am-indexed</id>
+        <link href="https://blog.ojisan.io/i-am-indexed"/>
+        <updated>2022-02-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ごめん、嘘 先日、ブログの SEO が壊滅し始めていることに気づいた では、ブログが Google…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -7739,6 +7832,26 @@ SNS にシェアされたレシピがより魅力的に見えるようにした�
 続きをみる]]></summary>
         <author>
             <name>疒</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ブログのSEOが壊滅し始めていることに気づいた]]></title>
+        <id>https://blog.ojisan.io/my-blog-seo-is-bad</id>
+        <link href="https://blog.ojisan.io/my-blog-seo-is-bad"/>
+        <updated>2022-02-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[壁の突起でパソコン割った]]></title>
+        <id>https://blog.ojisan.io/wall-break-my-pc</id>
+        <link href="https://blog.ojisan.io/wall-break-my-pc"/>
+        <updated>2022-02-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -8427,6 +8540,16 @@ rbverというRubyのバージョン一覧を表示するだけのWeb appがあ�
 rexmlとpumaをGemfileに追加したぐらい。pumaはwebrickが消えた影響で必要になったっぽい。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[自分のお気に入りのエディタテーマを見つけられるサービスを作った]]></title>
+        <id>https://blog.ojisan.io/syntax-highlight-battle-zenn</id>
+        <link href="https://blog.ojisan.io/syntax-highlight-battle-zenn"/>
+        <updated>2022-02-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[zenn に 自分のお気に入りのエディタテーマを見つけられるサービスを作った という記事を投稿しました。]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -9421,6 +9544,16 @@ PS C:\Users\led_l> netsh interface ip show address
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[GCP 版 Cloud Functions からも Firestore をトリガーしたい]]></title>
+        <id>https://blog.ojisan.io/cloud-functions-firestore-trigger</id>
+        <link href="https://blog.ojisan.io/cloud-functions-firestore-trigger"/>
+        <updated>2022-02-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[トリガーとは ご存知の通り、Firebase の Cloud Functions は Firestore…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>https://r7kamura.com/articles/2022-02-09-diary</id>
         <link href="https://r7kamura.com/articles/2022-02-09-diary"/>
@@ -9620,6 +9753,27 @@ https://www.nicovideo.jp/watch/sm39691235
         <updated>2022-02-08T01:00:00.000Z</updated>
         <author>
             <name>桜井のりお</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Actions から CloudRun にデプロイする]]></title>
+        <id>https://blog.ojisan.io/gha-cloudrun</id>
+        <link href="https://blog.ojisan.io/gha-cloudrun"/>
+        <updated>2022-02-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ググったらすでに正解例が出ていると思いますが、たどり着くまでに色々あったのでメモ。 完成系 google-github-actions/auth に関しては いま GitHub Actions から GCP を使うなら を参照。 なんで GHA から CloudRun…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Actions から Cloud Functions にデプロイする]]></title>
+        <id>https://blog.ojisan.io/gha-functions</id>
+        <link href="https://blog.ojisan.io/gha-functions"/>
+        <updated>2022-02-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[完全な形 完成系 一見簡単そうに見えますが、暗黙の前提などがあるので一つずつ解説していきます。 解説 エントリポイントを全 export するだけでは不十分 Firebase の Cloud Functions に慣れている人にとってはびっくりな罠です。
+Firebase…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -9869,6 +10023,17 @@ https://asicshu.jp/　すごいサイト見つけた
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Rust でもファイルパーミッションでスロットがしたい]]></title>
+        <id>https://blog.ojisan.io/file-permission-slot-with-rust</id>
+        <link href="https://blog.ojisan.io/file-permission-slot-with-rust"/>
+        <updated>2022-02-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[2021 年で一番良かったアドベントカレンダーとはなんでしょうか。
+私が選ぶのは、ファイルパーミッションでスロットがしたい です。  これは 2021 年 Go アドベントカレンダー 1 日目の記事で、CLI…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[爆音エフェクト王者決定戦]]></title>
         <id>https://note.com/customer_center/n/na4beb4563061</id>
         <link href="https://note.com/customer_center/n/na4beb4563061"/>
@@ -10013,6 +10178,16 @@ Amazon
 アニメを見始めて、「ハクメイ」「ミコチ」のイントネーションが思っていたのと違っていたのを知った。どちらも平坦なイントネーションだと思っていたら、アニメは1音目が高いイントネーションだった。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[いま GitHub Actions から GCP を使うなら]]></title>
+        <id>https://blog.ojisan.io/gha-gcloud</id>
+        <link href="https://blog.ojisan.io/gha-gcloud"/>
+        <updated>2022-02-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub Actions と GCP の連携方法でググったときの情報が何か古い気がしたので、2022 年 2 月版を書いておく。 setup-gcloud action には Google が公式で出している setup-gcloud を使う。 master…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -10226,6 +10401,16 @@ Google Domains のメール転送を使っていたが、DNS は Cloudflare を�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Firebase を Firebase コンソールにログインせずに terraform から使う回（存在しない回）]]></title>
+        <id>https://blog.ojisan.io/fire-fire</id>
+        <link href="https://blog.ojisan.io/fire-fire"/>
+        <updated>2022-02-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Firestore や Firebase Auth は GCP から利用できることをご存知でしょうか？   実は Firestore はそのまま使えますし、Auth も Identity Platform がそれとして使えます。 そこで思うわけです、Firebase…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>https://r7kamura.com/articles/2022-02-05-diary</id>
         <link href="https://r7kamura.com/articles/2022-02-05-diary"/>
@@ -10377,6 +10562,28 @@ collaboratorの権限に関してもちょっと微妙なところがある。co
 あと、issueの権限は完全にオープンになっていると思うので、全然関係ないissueを閉じれたりしてしまいそう。issueに関してはこれはroleの権限を調整すればなんとかできるような気もしている。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CDK for Terraform で GCP スタックを作る]]></title>
+        <id>https://blog.ojisan.io/terraform-cdk-gcp</id>
+        <link href="https://blog.ojisan.io/terraform-cdk-gcp"/>
+        <updated>2022-02-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CDK for Terraform (Cloud Development Kit for Terraform (CDKTF)) とは TS や Python や Go などのプログラミング言語で IaC が行えるツールです。 FYI: https://github.com…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021年の振り返り]]></title>
+        <id>https://blog.ojisan.io/hurikaeri-2021</id>
+        <link href="https://blog.ojisan.io/hurikaeri-2021"/>
+        <updated>2022-02-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[あけましておめでとうございます！
+昨日ようやくsadnessOjisan Advent Calendar 2021を終えれたので新年を迎えることができました。
+なので、202…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -19846,6 +20053,17 @@ www.magika4.com
         <summary type="html"><![CDATA[自動車教習初回だった。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[不正なリクエストに一泡吹かせたい]]></title>
+        <id>https://blog.ojisan.io/kuso-request-revenge</id>
+        <link href="https://blog.ojisan.io/kuso-request-revenge"/>
+        <updated>2021-12-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[この記事は sadnessOjisan Advent Calendar 2021 25 日目の記事です。
+ついに最終日ですね！今日は 02/04 なのですが・・・ 12/25 に Qiita…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
