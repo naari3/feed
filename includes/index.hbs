@@ -9,12 +9,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <link rel="alternate" type="application/rss+xml" title="{{siteTitle}}" href="{{feedHref}}" />
-  <link href="./index.css" rel="stylesheet" />
+  <link href="./index.css?20220309" rel="stylesheet" />
   <!-- %before-head-end.html% -->
 </head>
 
 <body>
-<!-- %after-body-begin.html% -->
+  <section class="daily-content">
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="{{siteUrl}}" target="_blank"
+              rel="noopener">README</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">What is this page?</summary>
+                <section class="article-summary-no-link article-summary-box-outer">
+                  <div class="article-summary-box-inner">
+                    <span>This page aggregates the feeds to which I (naari3) am subscribed.</span>
+                  </div>
+                </section>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">naari3-feed/feed.atom</summary>
+                <section class="article-summary-no-link article-summary-box-outer">
+                  <div class="article-summary-box-inner">
+                    <span>You can subscribe to this page through <a class="article-summary-link"
+                        href="./feed.atom">./feed.atom</a>.</span>
+                  </div>
+                </section>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Available on GitHub</summary>
+                <section class="article-summary-no-link article-summary-box-outer">
+                  <div class="article-summary-box-inner">
+                    <span>This page is also maintained by <a class="article-summary-link"
+                        href="https://github.com/naari3/naari3-feed">GitHub naari3/naari3-feed</a>.</span>
+                  </div>
+                </section>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">About me</summary>
+                <section class="article-summary-no-link article-summary-box-outer">
+                  <div class="article-summary-box-inner">
+                    <span>
+                      Twitter: <a class="article-summary-link" href="https://twitter.com/_naari_">@_naari_</a>, <a
+                        class="article-summary-link" href="https://twitter.com/naari_">@naari_</a><br>
+                      GitHub: <a class="article-summary-link" href="https://github.com/naari3">@naari3</a>
+                    </span>
+                  </div>
+                </section>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <!-- %after-body-begin.html% -->
   {{#each dates}}
   <section class="daily-content">
     <h2 class="daily-heading"><time datatime="{{isoPublishDate}}">{{isoPublishDate}}</time></h2>
@@ -22,25 +80,28 @@
       {{#each sources}}
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="{{siteUrl}}" target="_blank" rel="noopener">{{title}}</a></h3>
+          <h3 class="source-name"><a class="source-name__link" href="{{siteUrl}}" target="_blank"
+              rel="noopener">{{title}}</a></h3>
           <section class="articles-per-source">
             {{#each articles}}
             <article>
               <details class="article-expander" open>
                 <summary class="article-expander__title">{{title}}</summary>
-                <a class="article-summary-link article-summary-box-outer" href="{{link}}" target="_blank" rel="noopener">
+                <a class="article-summary-link article-summary-box-outer" href="{{link}}" target="_blank"
+                  rel="noopener">
                   <div class="article-summary-box-inner">
                     <span>{{description}}</span>
                   </div>
                   {{#if imageUrl}}
-                    <img src="{{imageUrl}}" class="card article-thumbnail" data-image />
+                  <img src="{{imageUrl}}" class="card article-thumbnail" data-image />
                   {{else if enclosure}}
-                    <img src="{{enclosure.url}}" class="card article-thumbnail" data-enclosure />
+                  <img src="{{enclosure.url}}" class="card article-thumbnail" data-enclosure />
                   {{/if}}
                 </a>
               </details>
             </article>
             {{/each}}
+          </section>
         </section>
       </li>
       {{/each}}
