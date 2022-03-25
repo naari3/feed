@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-25T00:02:56.065Z</updated>
+    <updated>2022-03-25T01:28:59.050Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2022-03-24]]></title>
+        <id>hatenablog://entry/13574176438076362351</id>
+        <link href="https://commits.hatenablog.com/entry/2022/03/25/100007"/>
+        <updated>2022-03-25T01:00:07.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+rbs_railsで、rake taskのインストールをrails generatorを使って行うようにした。
+今まではこれ相当のことをユーザーに手で書かせていたのだけど、それだと不便だし、自動化されていると説明も楽なのでgeneratorを用意した。
+github.com
+rbs_railsで、不要なRBSをexposeしていたのをなおした。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ブロックチェーンの作り出す価値に付いて]]></title>
         <id>hatenablog://entry/13574176438076366555</id>
@@ -20067,36 +20081,6 @@ TypeProfを試していたら警告が出たので直した。警告の位置表
 …]]></summary>
         <author>
             <name>終了済</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[プロと読み解く Ruby 3.1 NEWS]]></title>
-        <id>hatenablog://entry/13574176438045137371</id>
-        <link href="https://techlife.cookpad.com/entry/2021/12/25/220002"/>
-        <updated>2021-12-25T13:00:02.000Z</updated>
-        <summary type="html"><![CDATA[技術部の笹田（ko1）と遠藤（mame）です。クックパッドで Ruby (MRI: Matz Ruby Implementation、いわゆる ruby コマンド) の開発をしています。お金をもらって Ruby を開発しているのでプロの Ruby コミッタです。
-本日 12/25 に、ついに Ruby 3.1.0 がリリースされました（Ruby 3.1.0 リリース ）。今年も Ruby 3.1 の NEWS.md ファイルの解説をします。NEWS ファイルとは何か、は以前の記事を見てください。
-プロと読み解く Ruby 2.6 NEWS ファイル - クックパッド開発者ブログ
-プロと読み解くRuby 2.7 NEWS - クックパッド開発者ブログ
-プロと読み解くRuby 3.0 NEWS - クックパッド開発者ブログ
-本記事は新機能を解説することもさることながら、変更が入った背景や苦労などの裏話も記憶の範囲で書いているところが特徴です。
-今回リリースする Ruby 3.1 は総論として、Ruby 3.0との互換性を重視したリリースとなっています。
-つまり、あまり大きな非互換はありません。
-比較的アップグレードしやすいと思いますので、みなさん是非試してみてください。
-ちなみに、Ruby 2.6はあと4ヶ月でEOL（サポート終了）で、Ruby 2系列最後の2.7も1年4ヶ月でEOLになると思われます。
-月日が立つのは早いですね。
-Ruby 3.1 の目玉として、次のようなものがあげられています。
-ハッシュリテラルやキーワード引数の省略記法の導入
-新しいJITコンパイラであるYJITの導入による性能向上
-開発環境の向上
-
-
-デバッガの刷新
-エラー箇所に下線をひく error_highlight の導入
-IRB のオートコンプリートとドキュメント表示
-本記事では、これらを含めて …]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>
