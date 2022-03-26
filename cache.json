@@ -1540,20 +1540,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438044255122",
-          "author": null,
-          "description": "扉の反対側にある窓を「全開」にした。\nまあ、ちょっぴり寒くなるが。\n\n「換気」と「寒気」\n部屋が寒い。\n2021年12月26日の室温\n1日の大半が15℃以下。朝起きる時だけは暖房を入れているのでそれなりに上がるが*1、日中は基本的に暖房を入れていない。だから寒いのである。\nなぜ日中に暖房を入れないのかというと、二酸化炭素濃度の上昇を抑えるためだ。もちろん地球全体の話ではない。俺の部屋の中の話である。室内の二酸化炭素濃度の上昇を抑えるために、部屋のドアは開けっ放しがデフォとなっている。だから暖房を入れる気にならないのだ。\n部屋のドア\nこんな生活を送るようになったきっかけは、今年の4月に二酸化炭素濃度測定器 (CO2センサ)を買ったからである。\n\nカスタム (CUSTOM) CO2モニター CO2-mini\n\nカスタム(CUSTOM)\nAmazon\n\n導入してみると、思っていた以上に二酸化炭素濃度は簡単に高まることが分かった。よく「こまめに換気しろ」と言うが、これはなかなか面倒だ。いろいろ試すうちに、部屋のドアを開けっ放しにしていれば、じっとしている分には基準値以下を維持できることが判明した。だから暖房を入れずに過ごしているのである。\nということで今回は、部屋の二酸化炭素濃度に関する知見を共有する。\n部屋では「1,000 ppm以下」を保て\n室内の二酸化炭素濃度を管理したければ、以下の「3つの数値」を覚えておくと良い。\n400 ppm：外気の二酸化炭素濃度がだいたいこれくらい*2\n1,000 ppm：建築物環境衛生管理基準*3など\n1,500 ppm：学校環境衛生基準*4など\n基本的には1,000 ppm以下を目指すように管理し、1,500 ppm以上になったら早急に換気を行う。400 ppm付近になったら、ほぼ下限であると考えれば良い。\nこれらの基準値は生産性や健康の観点から…",
-          "link": "https://honeshabri.hatenablog.com/entry/CO2-mini",
-          "publishedOn": "2021-12-26T14:20:16.000Z",
-          "wordCount": null,
-          "title": "二酸化炭素を減らすと部屋が寒い (冬なので)",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20211226/20211226223944.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -11829,6 +11815,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2022-03-25-diary",
+          "author": null,
+          "description": "Rails.configuration.hosts について、Rails 6.1.4.2 または Rails 7 以降で挙動がやや変わっており、意図された変更かどうか分かりかねたので、Issueを出してみることにした。",
+          "link": "https://r7kamura.com/articles/2022-03-25-diary",
+          "publishedOn": "2022-03-25T00:00:00.000Z",
+          "wordCount": 50,
+          "title": "日記",
+          "imageUrl": "https://r7kamura.com/default_og_image.jpg"
+        },
         {
           "id": "https://r7kamura.com/articles/2022-03-24-diary",
           "author": null,
