@@ -3990,6 +3990,36 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438076709325",
+          "author": null,
+          "description": "ｒｅｄＥｙｅｓ（２６） (月刊少年マガジンコミックス)\n\n作者:神堂潤\n講談社\nAmazon\n\n表紙からしてヘイデン回かと思ったらヘイデン回でした。\n野獣のような男がいつの間にか成長を遂げていました。\n22巻から始まった敵の本拠地への攻撃の続きです。\n5巻目なので、話の長さが特別長いと言うことはないです。\n年に一冊しか出ないので、もう5年目です。\nたぶん攻め終わるのは10年後ぐらいだと思います。\nいまどきパワードスーツバトルをアナログで描くのは伝統芸能だと思います。\n健康に気をつけて描き続けてもらえればと思います。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/26/142137",
+          "publishedOn": "2022-03-26T05:21:37.000Z",
+          "wordCount": 130,
+          "title": "ｒｅｄＥｙｅｓ26",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51bRZVC-h-L._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51bRZVC-h-L._SL500_.jpg"
+        },
+        {
+          "id": "hatenablog://entry/13574176438076710007",
+          "author": null,
+          "description": "クレバテス−魔獣の王と赤子と屍の勇者−【フルカラー版】 4巻 (LINEコミックス)\n\n作者:岩原裕二\nLINE Digital Frontier\nAmazon\n\n王都に攻め込んで来た主人公の仇の攻撃を、主人公は防げるか、仇を討てるのか？\nストーリーの累計としては「家の中のモンスター」に当たりそうです。\n見所はツンデレ魔王様のちょっといいところでしょうか？\n仇討ちと絡めて世界の謎がちょっと見えてきました。\n「ディメンションW」に続いて、強い仇役にひげ面のおじさんを配置したのは、何かこだわりがあるんですかね？",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/26/140952",
+          "publishedOn": "2022-03-26T05:09:52.000Z",
+          "wordCount": 111,
+          "title": "クレバテス−魔獣の王と赤子と屍の勇者− 4",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/517Ap0kOw-L._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/517Ap0kOw-L._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438075610160",
           "author": null,
           "description": "PostgreSQLで次の警告が表示されました。\n2022-03-22 18:00:35.147 JST [68445] WARNING:  collation \"ja-x-icu\" has version mismatch\n2022-03-22 18:00:35.147 JST [68445] DETAIL:  The collation in the database was created using version 153.14.39, but the operating system provides version 153.112.40.\n2022-03-22 18:00:35.147 JST [68445] HINT:  Rebuild all objects affected by this collation and run ALTER COLLATION pg_catalog.\"ja-x-icu\" REFRESH VERSION, or build PostgreSQL with the right library version.\n\n\n\n意味はわかりません。\n表示されたガイドに従ってコマンドを実行してみます。\n~/px►psql postgres\npsql (14.2)\nType \"help\" for help.\n\npostgres=# ALTER COLLATION pg_catalog.\"ja-x-icu\" REFRESH VERSION\npostgres-# ;\nNOTICE:  changing version from 153.14.39 to 153.112.40\nALTER COLLATION\n\n\n\n良さそうです。\n参考\nPostgreSQL 10のICUコレーションを使うと日本語を普通にソートでき、更に文字順序までカスタマイズできる – yohgaki's blog\nソート順序はICUのバージョンによって変わる場合があります。このため、ICUバージョンが異るとエラーが発生することがあります。\n\n\nPostgreSQL 10からja-x-icuという日本語の順序の指定方法が追加されたそうです。\nこれにバージョンが存在するそうです（言われてみれば、そらそうですね）。\nPostgreSQLをバージョンアップしたときに、DB内のICUバージョンとPostgreSQL側のICUバージョンがズレるみたいです。",
@@ -6456,6 +6486,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438076811890",
+          "author": null,
+          "description": "ども、@kimihom です。\n\nSwiftUI を使ってログインをより快適にする対応をしたので、その実施内容についてまとめておこう。\nテキストフォーカス\nログインをしようとするページの場合、ほぼ必ず最初はメールアドレスなどの入力から始まることだろう。iOS の場合、フォーカスが当たってない状態でタイプしても反映されない形となる。\n最初からフォーカスが当たっているのは、利用ユーザーのことを考えた改善と言える。\nさて、このフォーカスだけど SwiftUI でできるようになったのは iOS 15.0 からである。focused) が登場した。\nstruct SigninView: View {\n    enum Field: Hashable {\n        case email\n        case password\n    }\n\n    @State private var email = \"\"\n    @State private var password = \"\"\n    @FocusState private var focusedField: Field?\n\n    var body: some View {\n        ZStack {\n            TextField(\"メールアドレス\", text: $email)\n                .keyboardType(.emailAddress)\n                .focused($focusedField, equals: .email)\n                .onAppear(perform: {\n                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {\n   …",
+          "link": "https://www.bokukoko.info/entry/2022/03/26/144604",
+          "publishedOn": "2022-03-26T05:46:04.000Z",
+          "wordCount": 352,
+          "title": "SwiftUI で快適なログインUIを作ろう",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220326/20220326144057.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220326/20220326144057.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438072486536",
           "author": null,
           "description": "ども、@kimihom です。\n\n自社サービスの CallConnect で、 Ruby 3.1.1, Ruby on Rails 7.0.2.3 へアップデートが無事完了した。本記事では、対応した内容に関してまとめておこう。\nbutton_to の挙動変更\nbutton_to で View を展開された際の HTML が <input> タグから <button> タグに変更されていた。\nここで気にしたいのが、JavaScript, CSS で input を指定していると適用されなくなっていた。そもそも class などで定義していれば問題なしとなる。\nX\ninput.submit {\n  // CSS\n}\n\n○\nbutton.submit {\n  // CSS\n}\n\n\n\nURI.encode が利用不可へ\nURI.encode のコードが一律エラーとなった。Rails7 へ上げるときには一通り grep でこの該当コードがないか見ておく必要がある。\nX\nURI.encode(\"sample\")\n\n○\nURI.encode_www_form_component(\"sample\")\n\n\n\n違いに関しては 【翻訳】URI.escapeは非推奨メソッドです。あなたのクエリ文字列をパーセントエンコードするには - Qiita が参考になった。\n外部ドメインへの redirect_to の追加オプション\n単に redirect_to で他ドメインを指定すると、エラーが出るようになった。セキュリティ的な部分だろうか。\nX\nredirect_to \"https://api.auth.com/oauth/\"\n\n○\nredirect_to \"https://api.auth.com/oauth/\", allow_other_host: true\n\n\n\nメソッドにおけるハッシュパラメータ\nこれが一番ハマった。Rails7 ではハッシュパラメータがメソッドの引数として指定できないケースがある。\nキーワード引数とハッシュ引数というので、似てるけども違うものとして捉えられるようになっている。\nwww.ruby-lang.org\n# キーワード引数のメソッド\ndef foo(k: 1)\n  p k\nend\n\nfoo(k: 1) # OK! 注意\nfoo({k: 1}) # NG\nfoo(**{k: 1}) # OK\n\nh = { k: 1 }\nfoo(h) # NG\nfoo(**h) # OK\n\n# ハッシュ引数のメソッド\ndef foo(k)\n  p k\nend\nh = { k: 1 }\nfoo(h) # OK\n\n\n\nActionMailer の config 指定の変更\nメール送信が正しくできなくなっていて、config の指定を変えたことで動作した。\nX\nActionMailer::Base.delivery_method = :smtp\nActionMailer::Base.smtp_settings = {\n #...\n}\n\n○\nconfig.action_mailer.delivery_method = :smtp\nconfig.action_mailer.smtp_settings = {\n  #...\n}\n\n\n\n肝心のフロントエンドは？\nご存知の通り、Rails7 での最大のアップデートはフロントエンド周りの対応だ。\nRails7 から新しく出てきた Turbo, Stimulus, Hotwire などを検討してみた。なるほど、ゼロから開発する場合には確かに Node.js から逃れられる体験は素晴らしいものである。\nしかし、既に動いている Rails アプリに対して上記を使おうとすると、大規模な改修が必要となることがわかった。そのため、Rails7 でも引き続き対応している AssetPipeline を使い続けることにした。\n補足: 私個人のフロントエンドに関する思いとして、フレームワークやライブラリの最新を追い続けても、新しくできるようになることがほとんど何もない。そこに時間をかけるよりも、根本となる HTML5 の最新情報を追いつつ、実装は \"できる限り\" フレームワークを使わずに自前で対応していく次第である。\n終わりに\nフロントエンド側を思いっきり変えるなら、大規模な変更が必要になりそうな Rails7。\nしかし、それ以外は大きな問題もなく進めることができた。\n引き続き、HTML5, Ruby, Rails, Twilio, Heroku の最新を追いかけよう!!",
@@ -8329,6 +8374,16 @@
       "feedUrl": "https://note.com/izumi_pogo/rss",
       "siteUrl": "https://note.com/izumi_pogo",
       "articles": [
+        {
+          "id": "https://note.com/izumi_pogo/n/n7ae2a5b114ff",
+          "author": null,
+          "description": "ポゴレジェ試験以来しばらくmap1を触ってなかったのにこないだ（といってもNASより前）久しぶりにやったら、map1全体でみると多少下手になってるけど、かきやま式だけはべらぼうに上手くなってて「なんで？？？？？」と、そのあとmap3の練習に行ったらすぐわかった。\n\n続きをみる",
+          "link": "https://note.com/izumi_pogo/n/n7ae2a5b114ff",
+          "publishedOn": "2022-03-26T05:25:43.000Z",
+          "wordCount": 41,
+          "title": "かきやま式わかってきた（map1パイナップルINのあれ）",
+          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/271fe147359f10e1f39d42d4d0b28e724f5643e3.jpg"
+        },
         {
           "id": "https://note.com/izumi_pogo/n/n468d61285fb4",
           "author": null,

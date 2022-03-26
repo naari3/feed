@@ -2,10 +2,99 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-26T05:02:06.243Z</updated>
+    <updated>2022-03-26T06:02:12.453Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[SwiftUI で快適なログインUIを作ろう]]></title>
+        <id>hatenablog://entry/13574176438076811890</id>
+        <link href="https://www.bokukoko.info/entry/2022/03/26/144604"/>
+        <updated>2022-03-26T05:46:04.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+SwiftUI を使ってログインをより快適にする対応をしたので、その実施内容についてまとめておこう。
+テキストフォーカス
+ログインをしようとするページの場合、ほぼ必ず最初はメールアドレスなどの入力から始まることだろう。iOS の場合、フォーカスが当たってない状態でタイプしても反映されない形となる。
+最初からフォーカスが当たっているのは、利用ユーザーのことを考えた改善と言える。
+さて、このフォーカスだけど SwiftUI でできるようになったのは iOS 15.0 からである。focused) が登場した。
+struct SigninView: View {
+    enum Field: Hashable {
+        case email
+        case password
+    }
+
+    @State private var email = ""
+    @State private var password = ""
+    @FocusState private var focusedField: Field?
+
+    var body: some View {
+        ZStack {
+            TextField("メールアドレス", text: $email)
+                .keyboardType(.emailAddress)
+                .focused($focusedField, equals: .email)
+                .onAppear(perform: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+   …]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[かきやま式わかってきた（map1パイナップルINのあれ）]]></title>
+        <id>https://note.com/izumi_pogo/n/n7ae2a5b114ff</id>
+        <link href="https://note.com/izumi_pogo/n/n7ae2a5b114ff"/>
+        <updated>2022-03-26T05:25:43.000Z</updated>
+        <summary type="html"><![CDATA[ポゴレジェ試験以来しばらくmap1を触ってなかったのにこないだ（といってもNASより前）久しぶりにやったら、map1全体でみると多少下手になってるけど、かきやま式だけはべらぼうに上手くなってて「なんで？？？？？」と、そのあとmap3の練習に行ったらすぐわかった。
+
+続きをみる]]></summary>
+        <author>
+            <name>izumi🦆</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ｒｅｄＥｙｅｓ26]]></title>
+        <id>hatenablog://entry/13574176438076709325</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/26/142137"/>
+        <updated>2022-03-26T05:21:37.000Z</updated>
+        <summary type="html"><![CDATA[ｒｅｄＥｙｅｓ（２６） (月刊少年マガジンコミックス)
+
+作者:神堂潤
+講談社
+Amazon
+
+表紙からしてヘイデン回かと思ったらヘイデン回でした。
+野獣のような男がいつの間にか成長を遂げていました。
+22巻から始まった敵の本拠地への攻撃の続きです。
+5巻目なので、話の長さが特別長いと言うことはないです。
+年に一冊しか出ないので、もう5年目です。
+たぶん攻め終わるのは10年後ぐらいだと思います。
+いまどきパワードスーツバトルをアナログで描くのは伝統芸能だと思います。
+健康に気をつけて描き続けてもらえればと思います。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[クレバテス−魔獣の王と赤子と屍の勇者− 4]]></title>
+        <id>hatenablog://entry/13574176438076710007</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/26/140952"/>
+        <updated>2022-03-26T05:09:52.000Z</updated>
+        <summary type="html"><![CDATA[クレバテス−魔獣の王と赤子と屍の勇者−【フルカラー版】 4巻 (LINEコミックス)
+
+作者:岩原裕二
+LINE Digital Frontier
+Amazon
+
+王都に攻め込んで来た主人公の仇の攻撃を、主人公は防げるか、仇を討てるのか？
+ストーリーの累計としては「家の中のモンスター」に当たりそうです。
+見所はツンデレ魔王様のちょっといいところでしょうか？
+仇討ちと絡めて世界の謎がちょっと見えてきました。
+「ディメンションW」に続いて、強い仇役にひげ面のおじさんを配置したのは、何かこだわりがあるんですかね？]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[20220326:時々自分が不安になる]]></title>
         <id>hatenablog://entry/13574176438076782702</id>
