@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-27T14:01:44.532Z</updated>
+    <updated>2022-03-27T15:01:49.838Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[標準入力とはなにか？]]></title>
+        <id>hatenablog://entry/13574176438077304088</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/03/27/231822"/>
+        <updated>2022-03-27T14:18:22.000Z</updated>
+        <summary type="html"><![CDATA[雑に言うと、UNIX用のプログラムがキーボードからの文字入力を受けとる口です。
+プログラムの標準入力は、親プロセスの標準入力を引き継ぎます。
+対話シェル（Bashとかzshとか）は入力をキーボードから受け取ります。
+シェルからプログラムを起動すると、これを引き継いで標準入力はキーボードからの入力になります。
+UNIX以前は、プログラムの入力装置と出力装置は、プログラムを起動する毎に指定したようです。
+おそらくコンピューター毎に入力がパンチカードや磁気テープだったり、出力がプリンターだったりという環境を想定していたのだと思います。
+UNIXでは、デフォルトの入力装置をキーボード、出力装置をモニターにして、プログラムを起動する度に、入力装置と出力装置を指定しなくてよくしました。
+それで「標準」入力と名付けたようです。
+1970年代にキーボードとモニターが普及し、大抵のコンピューターにキーボードとモニターがついていると想定できるようになったのだと思います。
+UNIXのバージョンが進むにつれて標準エラー出力が追加され現在の振る舞いになりました。
+この動きが多くのOSやプログラミング言語に引き継がれているようです。
+いまではLinuxでもMacでもWindowsでも、Javaでも.NETでもPythonでもRubyでもPHPでも標準入力を持つようになりました。
+参考
+Standard streams - Wikipedia
+標準ストリーム - Wikipedia
+標準入出力
+標準入力と標準出力
+https://wa3.i-3-i.info/word11636.html
+標準入力（stdin）とは - IT用語辞典 e-Words
+標準入力・標準出力ってなに? - Qiita
+標準入出力(1) | LinuxC]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[新生活に向けて読みたい資産形成の本3冊]]></title>
         <id>hatenablog://entry/13574176438077155219</id>
