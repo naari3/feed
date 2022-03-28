@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-28T12:02:19.148Z</updated>
+    <updated>2022-03-28T13:12:45.166Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -20189,25 +20189,6 @@ store.steampowered.com
 ↓以下は後手番角頭歩での気付かれにくい攻め筋を紹介。]]></summary>
         <author>
             <name>キムギニョン</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2021-12-28]]></title>
-        <id>hatenablog://entry/13574176438046972031</id>
-        <link href="https://commits.hatenablog.com/entry/2021/12/29/100003"/>
-        <updated>2021-12-29T01:00:03.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-RBSで、activerecordがrailtiesに依存してしまっていたのを依存しないようにした。
-github.com
-ruby/rubyでRBSのテストが無効にされていたのを、ruby/rbs側で修正を入れたので、再度有効にするようにした。
-github.com
-github.com
-Integer#to_sがformat引数を受け取るAS拡張がうまく動いていなかったのを直した。
-rbsにprependがあるのを知らなくて、ちょっと手間取ってしまった。
-github.com
-rbs prototype rbがprependを解釈していなかったので直した。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
 </feed>

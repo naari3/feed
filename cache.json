@@ -1054,20 +1054,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438046972031",
-          "author": null,
-          "description": "github.com\nRBSで、activerecordがrailtiesに依存してしまっていたのを依存しないようにした。\ngithub.com\nruby/rubyでRBSのテストが無効にされていたのを、ruby/rbs側で修正を入れたので、再度有効にするようにした。\ngithub.com\ngithub.com\nInteger#to_sがformat引数を受け取るAS拡張がうまく動いていなかったのを直した。\nrbsにprependがあるのを知らなくて、ちょっと手間取ってしまった。\ngithub.com\nrbs prototype rbがprependを解釈していなかったので直した。",
-          "link": "https://commits.hatenablog.com/entry/2021/12/29/100003",
-          "publishedOn": "2021-12-29T01:00:03.000Z",
-          "wordCount": 161,
-          "title": "2021-12-28",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
