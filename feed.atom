@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-29T00:02:24.184Z</updated>
+    <updated>2022-03-29T01:29:40.086Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[merpay Backend Talk 〜決済基盤だけじゃない。メルペイを支える基盤開発の取り組み〜 を開催しました！ #merpay_backend]]></title>
+        <id>20299</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220325-472df3f530/"/>
+        <updated>2022-03-29T10:00:25.000Z</updated>
+        <summary type="html"><![CDATA[2022年3月17日に、『merpay Backend Talk 〜決済基盤だけじゃない。メルペイを支える基盤開発の取り組み〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳し […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022-03-28]]></title>
+        <id>hatenablog://entry/13574176438077642935</id>
+        <link href="https://commits.hatenablog.com/entry/2022/03/29/100017"/>
+        <updated>2022-03-29T01:00:17.000Z</updated>
+        <summary type="html"><![CDATA[ヴィンランド・サガ（２５） (アフタヌーンコミックス)
+
+作者:幸村誠
+講談社
+Amazon
+
+ヴィンランド・サガ 既刊25巻読んだ。面白くて良い。
+最初の3巻ぐらい無料だったから読んでいたのだけど、結局全巻読んでいて完全にセールの罠にハマった人になった。
+一気に読みきりたいなーという気持ちなので、まだ完結していなくてちょっとつらい。一気に走りきりたかった…。
+アサシンクリードヴァルハラをやりたくなった。途中までやってセーブ不可バグでやる気をなくしていたから、再開したい。PS5買えたらやるかーと思っていたけど、買えそうにないなあ。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Dirty Pipe（CVE-2022-0847）の発見経緯が面白かった]]></title>
         <id>hatenablog://entry/13574176438076120072</id>
@@ -20188,39 +20217,6 @@ www.youtube.com
 Khruangbin / So We …]]></summary>
         <author>
             <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ドラゴンクエスト3 ファミリーベーシック任意コード新チャートについて]]></title>
-        <id>hatenablog://entry/13574176438047399300</id>
-        <link href="https://pirohiko.hatenablog.com/entry/2021/12/29/221504"/>
-        <updated>2021-12-29T13:15:04.000Z</updated>
-        <summary type="html"><![CDATA[アーカイブはこちらから
-www.twitch.tv
-youtu.be
-ファミコンは電源を入れたままカセットを抜くと、
-通常はROMが読み込めなくなってプログラムが動作しなくなる。
-しかし、『メモリ上の』プログラムを無限ループで実行している間は
-ファミコンのカセットを抜いてもCPUは動作し続けているので
-別のカセットに差し替えてもコードが実行され続けることになる。
-ファミリーベーシックにはファミコンのバイナリーコード(ネイティブコード)を
-実行できる『CALL命令』があるため、ファミべ上で任意コード実行することは容易である。
-$0300-$03FFには1行分のプログラムバッファが格納されるので
-CALL773'～というコードを入れてReturnキーかF8を押すと、メモリアドレス$0305(773)
-つまり「'」以降の文字がバイナリコードとして実行される。
-しかし、メモリ上に無限ループを作って実行しても
-1／60秒毎の垂直同期タイミングであるVBlank時にNMI割り込みが発生して
-描画・音声を更新するためのROM上のプログラムなどを実行しようとしてしまうので、
-NMI割り込みを止める命令をループ前に書く必要がある。
-※I/Oレジスタ$2000(のミラーアドレス$2020)のBit7に0をセットすることでNMI割込がオフになる。
-無限ループ中には冒険中のゾーマ討伐フラグ($60C5)、復帰場所フラグ($60C3)、
-NMI割り込みオフ($2020)、カートリッジRAMオフ($AEAE)の4箇所に書き込むコードを書いている。
-カートリッジRAMオフには$A000-$BFFFのどこかに5回書き込む必要があるので
-無限ループ中のどのタイミングで挿しても問題ないが
-斜め差しをするとROMSEL(A15)が中央寄りなのでアドレスバスが小さくズレたままカートリッジRAMがオフになり、
-目当…]]></summary>
-        <author>
-            <name>ピロ彦の何か置き場</name>
         </author>
     </entry>
 </feed>
