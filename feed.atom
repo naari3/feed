@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-30T00:02:55.258Z</updated>
+    <updated>2022-03-30T01:28:49.593Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メルペイフロントエンドパフォーマンス改善報告]]></title>
+        <id>20364</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220329-02e2d821b8/"/>
+        <updated>2022-03-30T10:00:10.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは。メルペイフロントエンドチームのtoshickです。 この記事は、このチームで取り組んでいるパフォーマンス改善について紹介するシリーズ記事の第4弾の記事になります。 ref: https://engi […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firefoxの「プライバシーとセキュリティ」の設定を変えたらアプリの再起動が必要]]></title>
+        <id>hatenablog://entry/13574176438078074955</id>
+        <link href="https://gfx.hatenablog.com/entry/2022/03/30/094811"/>
+        <updated>2022-03-30T00:48:11.000Z</updated>
+        <summary type="html"><![CDATA[追記: これをしてもはてなブログのヘッダでログイン状態にならない現象が起きてしまうようです。もはやFirefoxのバグなのかはてなブログのバグなのかわかりませんが…。
+Firefoxの「プライバシーとセキュリティ」を変えると次のようにタブの再読み込みを行うUIが出ますが、少なくともFirefox v98現在はタブの再読み込みだけではなく Firefox自体の再起動が必要です。
+
+そうしないと少なくとも一部のクッキーの挙動などが変わり、「はてなブログ」のヘッダではてなアカウントがログイン状態にならないようです（はてなブログはFirefoxのプライバシー設定が「厳格」だとヘッダがログイン状態になりません）。
+このせいでずっとはてなブログがFirefox未対応だと勘違いしていたのですが、実際にはどうもFirefoxのバグっぽいなということがわかった次第です。]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction/分析はパズル感覚で！：セキュリティ分野の分析(1)]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=12969</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/12969"/>
+        <updated>2022-03-30T00:16:15.000Z</updated>
+        <summary type="html"><![CDATA[おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 IIJに入社したのは2017年で、中途入社のわたしです。 入社してからは、セキュリティの分野で分析業務を行っています。 この 分析...]]></summary>
+        <author>
+            <name>ふぇにっくちゅん</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GitHub Actionsで変更ファイルに応じた処理]]></title>
         <id>https://r7kamura.com/articles/2022-03-30-github-actions-changed-files</id>

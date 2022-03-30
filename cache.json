@@ -1178,6 +1178,21 @@
       "siteUrl": "https://gfx.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438078074955",
+          "author": null,
+          "description": "追記: これをしてもはてなブログのヘッダでログイン状態にならない現象が起きてしまうようです。もはやFirefoxのバグなのかはてなブログのバグなのかわかりませんが…。\nFirefoxの「プライバシーとセキュリティ」を変えると次のようにタブの再読み込みを行うUIが出ますが、少なくともFirefox v98現在はタブの再読み込みだけではなく Firefox自体の再起動が必要です。\n\nそうしないと少なくとも一部のクッキーの挙動などが変わり、「はてなブログ」のヘッダではてなアカウントがログイン状態にならないようです（はてなブログはFirefoxのプライバシー設定が「厳格」だとヘッダがログイン状態になりません）。\nこのせいでずっとはてなブログがFirefox未対応だと勘違いしていたのですが、実際にはどうもFirefoxのバグっぽいなということがわかった次第です。",
+          "link": "https://gfx.hatenablog.com/entry/2022/03/30/094811",
+          "publishedOn": "2022-03-30T00:48:11.000Z",
+          "wordCount": 116,
+          "title": "Firefoxの「プライバシーとセキュリティ」の設定を変えたらアプリの再起動が必要",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20220330/20220330094159.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20220330/20220330094159.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438054584858",
           "author": null,
           "description": "Chrome Web Store\nchrome.google.com\n使い方ですが、GitHub PR pageに次のようにCI statusにcheckboxが現れるので、完了通知がほしいCI statusにチェックをつけるだけ。\n\nチェックされたCI statusが完了（success or failure）になると、次のようなデスクトップ通知が出ます。この完了したときの通知をクリックすると該当のGitHub PR pageのタブをアクティブにします。\n\ntab idごとにcheck状態をもっているので、リロードしてもtabごとのcheck状態は維持されます。\n現在（v0.9.2）の機能はこれだけです。既知のバグとして、GitHubのPR画面で差分をみたりdiscussionに戻ったりしているとcheckboxが出ないことがありますが、そういう場合はリロードするとcheckboxが出ると思います。そのうち直します。\nRepository\ngithub.com\n実装はTypeScript、UI（といってもcheckboxだけですが）はReact、パッケージングはwebpackを使ってます。構造がちょっと面白い、そのあたりの詳細の話もそのうち書きます。\nなお、この \"WatchRaptor\" （ウォッチラプトル）という名前ですが、子供が恐竜にハマっているので \"watchdog\" （「番犬」）をもじって恐竜っぽい名前にしてみたという感じです。",
@@ -11120,6 +11135,16 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=12969",
+          "author": "ふぇにっくちゅん",
+          "description": "おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 IIJに入社したのは2017年で、中途入社のわたしです。 入社してからは、セキュリティの分野で分析業務を行っています。 この 分析...",
+          "link": "https://eng-blog.iij.ad.jp/archives/12969",
+          "publishedOn": "2022-03-30T00:16:15.000Z",
+          "wordCount": null,
+          "title": "Introduction/分析はパズル感覚で！：セキュリティ分野の分析(1)",
+          "imageUrl": null
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=13087",
           "author": "IIJ Engineers Blog編集部",
           "description": "IIR vol.54 第3章 フォーカス・レポート（2）「クリミア半島のインターネット −ルーティング情報の解析から見る接続経路の変遷−」では、2014年にロシアがクリミア半島（ウクライナ）に軍事的に...",
@@ -11266,6 +11291,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml/",
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
+        {
+          "id": "20364",
+          "author": null,
+          "description": "はじめに こんにちは。メルペイフロントエンドチームのtoshickです。 この記事は、このチームで取り組んでいるパフォーマンス改善について紹介するシリーズ記事の第4弾の記事になります。 ref: https://engi […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220329-02e2d821b8/",
+          "publishedOn": "2022-03-30T10:00:10.000Z",
+          "wordCount": null,
+          "title": "メルペイフロントエンドパフォーマンス改善報告",
+          "imageUrl": null
+        },
         {
           "id": "20299",
           "author": null,
