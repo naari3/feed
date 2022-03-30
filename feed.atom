@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-03-30T02:31:03.959Z</updated>
+    <updated>2022-03-30T03:13:56.940Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -20153,71 +20153,6 @@ goo.gl
 ・今年は生活に手応えがない年だった。去年のボイスメモで「最近手応えを掴んでない」と発言していた。あれから一年以上経ったが、今になっても諸々に対しての手応えを掴んだ感触がない。今年の初めに「横になる時間を減らし、縦になる時間を増やす」ことを抱負として挙げていたことを思い出した。書いている間は頑張ろうと一時的には思えるが持続性がない。私は島村卯月のように頑張りを唱え続けられる人間ではないのでなんとかしていく必要がある。来年は虚無感の緩和の端緒を開いていきたい。]]></summary>
         <author>
             <name>でっかいものクラブ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Goodbye 2021]]></title>
-        <id>https://blog.sakamo.dev/post/review-2021/</id>
-        <link href="https://blog.sakamo.dev/post/review-2021/"/>
-        <updated>2021-12-30T14:58:31.000Z</updated>
-        <summary type="html"><![CDATA[2021年も終わりなので振り返る。
-
-
-
-    
-
-Tweet
-
-2021年も色々変化があったがここに記すには余白が狭すぎる。
-プライベート
-今年もそれなりに経済を回した。
-振り返ると色々あったが今年も後悔はしておらず、今後も後悔することないと断言ができる。
-OSS
-今年の3月に Argo CD 等の OSS を開発している argoproj のメンバーになった。
-頑張ります pic.twitter.com/hN5DnFmvrZ
-— さかもとりょーた(23) (@let_constant) March 11, 2021
- 
-主にやっていたのは argocd-notifications と notifications-engine で、ドキュメントを充実させたり PR のレビューしたり Slack で人間を助けたりしていた。
-argo-cd/pull/7744 で Argo CD 本体にマージされてv2.3でリリースされる。
-仕事
-8月に転職し、ソフトウェアエンジニアからクラウドサポートエンジニアになった。
-転職するまでは結局ずっと Go を書いていたし、多分今後も何か書く際は Go で書いていく気がする。
-技術
-基本的にコンテナ系を追っていた一年ではあったし、きっと2021年もコンテナ系を追っていくつもりではある。
-BMSファイル再生
-途中まで作って満足してやめてしまったが、BMS ファイルを読み込んで再生するやつを作っていた。
-Engo というライブラリを使っていて、リポジトリは ryota-sakamoto/beatgo にある。
-任意のBMSファイルを読んで再生するところまで作った pic.twitter.com/LZ3EDYSZU3
-— さかもとりょーた(23) (@let_constant) January 3, 2021
- 
-
-「Automating chaos experiments in production」を読んだ
-人生で初めてまともに英語の論文を読んだ。内容は多少古いが。
-DNSサーバー
-DNS がどうやって動くかを理解したかったので、RFC を読みながら DNS サーバーを作っていた。完全に理解した状態になり、これも途中で飽きてやめた。
-std::io::Cursor を使って丁寧に書いていた。
-フルサービスリゾルバまで実装した pic.twitter.com/SOte47y8BH
-— さかもとりょーた(23) (@let_constant) April 29, 2021
- 
-
-ブログの移行
-Netlify から Cloudflare Pages に移行した。とにかく簡単だった。
-NetlifyからCloudflare Pagesへ移行
-— さかもとりょーた(23) (@let_constant) July 26, 2021
- 
-2021年の目標
-2021年は下記の目標を一応掲げてはいた。
-TOEIC: 800点
-資格: AP, CKAD
-発狂皆伝
-買った本をちゃんと読む
-賢くなる
-まず TOEIC、これは定期的に受けてはいるし英語の勉強もたまにしていて12月も受けたのでそれの結果次第なところはある。
-こう見ると何も達成してないが忘れていたことはないし、ここに書いてあること以外の進捗が良いのでよしとする。
-総括
-来年は仕事も技術も頑張りましょう。]]></summary>
-        <author>
-            <name>Posts on ストイックに生きたい</name>
         </author>
     </entry>
 </feed>
