@@ -4050,6 +4050,36 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438078605618",
+          "author": null,
+          "description": "if文とforeach文を覚えました。\n早速FizzBuzzしてみたいと思います。\n<?php\nforeach (range(1, 15) as $i) {\n  if ($i % 15 == 0) {\n    var_dump(\"FizzBuzz\");\n  } else if ($i % 5 == 0) {\n    var_dump(\"Buzz\");\n  } else if ($i % 3 == 0) {\n    var_dump(\"Fizz\");\n  } else {\n    var_dump($i);\n  }\n}\n\n\n\nはまった点\n変数の頭に$を付け忘れた\nrange(1, 15) as $iの順序を逆だと思い込んで$i as range(1, 15)と書いた\n実行してみましょう。\nPS C:\\Users\\led_l\\php_playground> php .\\fizz_buzz.php\nint(1)\nint(2)\nstring(4) \"Fizz\"\nint(4)\nstring(4) \"Buzz\"\nstring(4) \"Fizz\"\nint(7)\nint(8)\nstring(4) \"Fizz\"\nstring(4) \"Buzz\"\nint(11)\nstring(4) \"Fizz\"\nint(13)\nint(14)\nstring(8) \"FizzBuzz\"\n出力方法はvar_dumpと言う関数しか知りません。\nvar_dump関数は、値の形とサイズも一緒に表示します。\nあ、<?phpって必ずしも閉じなくて良いんですね！",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/31/225757",
+          "publishedOn": "2022-03-31T13:57:57.000Z",
+          "wordCount": 211,
+          "title": "PHPでFizzBuzz",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/13574176438078599960",
+          "author": null,
+          "description": "数ヶ月後にPHPを扱う可能性が出てきたのでゆるゆると勉強しようと思います。\nもっと近づいてからガッと勉強してもいいんですが、そうすると実利に近づきすぎるというか、遊びがなくなります。\nゆっくりダラダラ学んだほうが周辺情報がわかって良いかもしれません。\nふりがなプログラミング\n\nスラスラ読める PHPふりがなプログラミング (ふりがなプログラミングシリーズ)\n\n作者:リブロワークス\nインプレス\nAmazon\n\nまずは初心者向けの入門書から入ります。\nふりがなプログラミングシリーズは出た頃に話題になったのですが、それを学ぶ立場で読むって貴重な体験に思えます。\n読んでみると、プログラマーにすでに見えている情報をふりがなでアノテーションしているように思いました。\nなるほど初心者向けのギブスとしてよさげな感じがします。\n特に良いと思ったのがエラーメッセージにふりがなを振っている例です。\nエラーメッセージにふりがながふってあるところ\n知らないプログラミング言語のエラーメッセージって、つい読み飛ばします。\n読んでもファイル名と行数くらいで、メッセージの内容を読む気になれません。\nふりがながふってあると、読んでみたくなるのなかなかすごいです。\nMAMP\nPHPの環境構築には MAMP & MAMP PRO - your local web development solution for PHP and WordPress development というのを使うみたいです。\nもとはLAMP（Linux + Apache + MySQL + PHP）をもじってMac向けだったみたいです。\n名前はそのままでWindows版もあるので使ってみました。\nやけにインストールに時間が掛かるくせに、パスは設定してくれないし、微妙に不便だな？と思いました。\nMAMPでインストールされるPHPの羅列\n9バージョンインストールされてました。\nrbenvみたいに必要に応じて必要なバージョンをインストールするんじゃないんですね。\nいきなり全部用意してくれました。\nカルチャーの違いにおどろきます。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/03/31/224222",
+          "publishedOn": "2022-03-31T13:42:22.000Z",
+          "wordCount": 181,
+          "title": "PHPを学ぶ",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/513OOmaORWL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/513OOmaORWL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438077682530",
           "author": null,
           "description": "超一流になるのは才能か努力か?\n\n作者:エリクソン,アンダース,プール,ロバート\n文藝春秋\nAmazon\n\n「一万時間の法則」の根拠として研究を使われたアンダース・エリクソンさん本人の本。\n\nP111「経験豊富な医師は高度な心的イメージを身につけており、そのおかげで一見関係のなさそうな情報も含めてたくさんの事実を同時に考慮することができる」\n— ぎゃばん@手洗い (@ledsun) September 26, 2020",
@@ -5379,22 +5409,7 @@
       "title": "音MADとポケモンと私",
       "feedUrl": "https://nkaoobt.hatenablog.com/rss",
       "siteUrl": "https://nkaoobt.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438048205198",
-          "author": null,
-          "description": "あけましておめでとうございます。\nタイトルの通り、音MAD10選の結果を受けて書きたいことをただ書きます。\nツイッターで何ツイートにも分けて喜びを表すのはなんとなく気が引けるので、まとめて1記事にします。\n \nまず自分の動画の10選結果......さくら(チクショー) 3票\n \n \n \nうおおおおおおおお！！！！！！！！！きたああああああああああ！！！！！！！！！！！！\n \nめちゃくちゃ嬉しいです！\n上位常連の強い人たちからすれば3票の喜び方じゃないかもだけどめちゃくちゃ嬉しいですね〜\nこれまでの僕は2013~2020までの8年間(実際にはほぼ7年間ですが)での累計得票数が1票でした。(え？)\n票数/年を表すVPY(votes per year)は0.125でした。\nしかし、今年の3票によって累計得票数がこれまでの4倍になった結果、VPYは0.444にまで跳ね上がりました。嬉しい！\n前回票が入った時は事前に公開マイリス見ちゃって知ってた、ってことがあったのでちゃんとした方法で得票を知るのは今回が初めてだったりします。\n個人的には1フレームごとに動画が切り替わるグルメレースの方が不思議枠とか実験枠で票入る可能性高いのかな〜、と思ってましたが普通に0票でした。\n結果画面をスクロールする途中は、｢まあ0票...あって1票かな... まあ0票の動画がダメな動画ってことじゃないしそもそも自分が作りたいものを作ってるだけだから0票でも気にしないし...｣って心の中で保険掛けまくりながら指を動かしてたんですけど、実際3票も入ってるとテンションが上がりまくりますね。テンションが上がりすぎてVPYとかいうオリジナル指標まで作り出してしまいました。\nラグトレインBaqeelaテレキャスタービーボーイ辺りは票がかなり割れてたらしいので音MADの数が少なくて票も割れにくい選曲が良かったりしたのかもしれませんね。どデカい動画が1本ありますが。\nモチベいっぱい湧いたので今年は音MADめちゃくちゃ作ります。言ってるだけかもしれませんが。\n言いたいこと言いまくってめちゃくちゃ読みにくくなってると思います。ごめんなさい。さようなら。",
-          "link": "https://nkaoobt.hatenablog.com/entry/2022/01/01/101803",
-          "publishedOn": "2022-01-01T01:18:03.000Z",
-          "wordCount": null,
-          "title": "10選の結果を受けて書きたいことをただ書くだけ",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        }
-      ]
+      "articles": []
     },
     {
       "title": "nomolkのブログ",
@@ -7260,6 +7275,16 @@
       "feedUrl": "https://note.com/dak/rss",
       "siteUrl": "https://note.com/dak",
       "articles": [
+        {
+          "id": "https://note.com/dak/n/n16e9f38c90a9",
+          "author": null,
+          "description": "https://www.youtube.com/watch?v=BagTEec6H7o\n最近再生している動画\n続きをみる",
+          "link": "https://note.com/dak/n/n16e9f38c90a9",
+          "publishedOn": "2022-03-31T13:51:39.000Z",
+          "wordCount": 40,
+          "title": "20220331",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/75454940/rectangle_large_type_2_5847850ace176e68c8b5e0bd00465367.png?width=800"
+        },
         {
           "id": "https://note.com/dak/n/n3122350f3a27",
           "author": null,
@@ -11981,6 +12006,16 @@
       "feedUrl": "https://keens.github.io/index.xml",
       "siteUrl": "https://KeenS.github.io/",
       "articles": [
+        {
+          "id": "https://KeenS.github.io/blog/2022/03/01/gpuwomochiitafizzbuzznokousokukanotorikumi/",
+          "author": null,
+          "description": "ハ〜イ、κeenさんだよー。FizzBuzzを高速化したから紹介するねー。",
+          "link": "https://KeenS.github.io/blog/2022/03/01/gpuwomochiitafizzbuzznokousokukanotorikumi/",
+          "publishedOn": "2022-02-28T15:00:00.000Z",
+          "wordCount": null,
+          "title": "GPUを用いたFizzBuzzの高速化の取り組み",
+          "imageUrl": null
+        },
         {
           "id": "https://KeenS.github.io/blog/2022/02/21/rustdepointakara_box_t__wotsukuru/",
           "author": null,
