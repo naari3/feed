@@ -74,6 +74,42 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-03-31">2022-03-31</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">複数リージョンへの Alexa Skill のデプロイを可能な限り自動化する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/03/31/103220" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、ボイスサービス部の ymd (@y_am_a_da) です。今年からは採用にも関わっています。
+クックパッドは日本で No.1 のレシピサービス*1ですが、ここ数年は海外展開にも注力しており、世界 74 ヶ国 32 言語で展開しています。
+ボイスサービス部は、もともとクックパッドのひとつのプロジェクトとして音声 UI を利用したサービスの開発だったり、デモを作成*2していたのですが、サービスの拡大などにより最近独立した部署として設立されました。
+規模が一番大きい Amazon Alexa (以下 Alexa) 向けのサービスは、レシピサービスと比較するとまだまだ小規模ですが現在 9 ヶ国 3 言語で展開をしています。
+Alexa 向けのサービスも、このくらいのサービス規模になってくるとコードのデプロイや、サービスのメタデータの更新など、手動でやるのはなかなかに大変な規模になってきています。
+この記事では、 Alexa 向けサービスのデプロイを省力化するために、クックパッドで実際に行っている自動化のテクニックについて紹介をさせていただきます。
+クックパッドスキルの全体像
+Amazon Alexa では、いわゆるモバイルアプリケーションにおけるアプリに相当するものとしてスキルというものがあり、ユーザーはこれを有効化してサービスを利用します。クックパッドでもこのスキルを介してサービスを提供しています。
+具体的なデプロイのプロセスのお話をする前に、まずはこのスキルの全体像を紹介し、この記事で紹介するデプロイとはそもそも何をすることなのかを説明します。
+以下の画像が、クックパッドスキルの全体像になります。実際にはもう少し複雑なのですが、デプロイの説明をするために必要最小限のリソースを記載しています。
+
+Alexa は基本的にクラウドベースで稼働しており、 Amazon E…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yoshiaki-0614/20220331/20220331100729.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-03-30">2022-03-30</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -28282,77 +28318,11 @@ www.nicovideo.jp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.livedesu.com/" target="_blank"
-              rel="noopener">liveのブログ『清濁のるつぼ』</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">年末のご挨拶</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.livedesu.com/entry/2021/12/31/230306" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>りべです。
- 
-今年一年皆様ありがとうございました。
- 
-私個人として今年あったことを振り返ってみると
-・チャンピオンシップ優勝
-・最強リーグ2部リーグ出場
-・Redbull5G西代表
-・夏菜のWAZAARI出演
-・獣道解説
-あたりが大きな出来事だったでしょうか。
- 
- 
-最近発信が少なかったのは、今年のテーマとして「背中を見せる」年にしようというのがあったのと、単純に最近書きたいと思うことが少ないためです。
- 
-昨年までは自身の地位、役割、ポジションみたいなものを守ることが精神安定のための拠り所になってしまいつつ、実力不相応なことに手を出し過ぎて揺らいでいた部分がありました。ブログで偉そうに講釈を垂れる「ご意見番」的ポジションはその一助としてのものだったのでしょう。
-なので一度そういうのをかなぐり捨てて、一から選手活動に注力することで自らの地盤を再構築しようという意図があったわけです。
- 
-これは昨年の全国eスポーツ選手権優勝の時から考えてはじめていたことではあり、それが形になったのは今年の6月でのチャンピオンシップ優勝のときでした。
-努力らしい努力をようやく始めて、きちんと実力という面で周囲に認めさせたのがこの日だったように思います。
- 
-そうやって培った自信が安心感につながったのか、自界隈内でも肩肘張らずに自然体でいることが増えました。気を張っているときの僕は周りにとっつきづらいイメージを与えていたように自覚していましたが、今年は刺々しい部分がだいぶ和らいだのではないでしょうか。（何やらともりべという概念も生まれました）
- 
- 
-ぷよぷよのために、eスポーツのために……みたいに外部に自身の存在意義を求めなくなって、そのとき自らがやりたいことに注力できるようになりました。
-それらの存在意義を100％全て捨ててきたわけではないですが、身に余る重すぎる荷物はもっと分担して背…</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/seshiapple" target="_blank"
-              rel="noopener">せしも</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2021年下半期に読んだ本</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/seshiapple/n/nd94acbed80a1" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>仕事が納まっているのかそうでないのかも有耶無耶なまま（すいません）、コンテンツ地獄の準備に突入し、忘年会も終え、誰もいない電車の車内でノートパソコンを広げてこれを書いている。
-あんまり時間もないのでやりきれるかわからないけれど、12月ということで今年読んだ本を正直に紹介していこうと思う。正直に、というのは、2021年はマジでバタバタしていて、仕事に関連するようなものばかり読んでいて、それをここで紹介することに謎の躊躇があったからだ。
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-03-31T01:29:14.343Z">2022-03-31T01:29:14.343Z</time>
+    <time id="build-timestamp" datetime="2022-03-31T02:29:40.059Z">2022-03-31T02:29:40.059Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
