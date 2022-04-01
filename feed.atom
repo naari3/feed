@@ -2,10 +2,112 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-01T22:02:09.126Z</updated>
+    <updated>2022-04-01T23:01:42.532Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[$( document ).ready()]]></title>
+        <id>hatenablog://entry/13574176438078959879</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/02/074725"/>
+        <updated>2022-04-01T22:47:25.000Z</updated>
+        <summary type="html"><![CDATA[コールバック関数が実行されるタイミング
+$( document ).ready()はJavaScriptでDOMを操作するに当たって、DOMの読込完了を待つためのjQueryの便利関数です。
+ブラウザにloadイベントしか実装されていなかった時代がありました。
+loadイベントは次の2つを待ちます。
+DOMの構築
+画像、CSSの読込
+$( document ).ready()は2の前に発火します。
+画像などの（当時として）重たいアセットの読込を待たなくてよくなるため、JavaScriptの開始を高速化出来ました。
+次のように使いました。
+$(document).ready(function(){
+/// 好きな処理
+})
+
+
+
+代替え案
+scriptタグのdefer属性
+scriptタグにdefer属性を設定すると
+スクリプトを文書の解析完了後かつ DOMContentLoaded が発生する前に実行する
+
+
+ので、同様の効果が得られます。ただし、インラインスクリプトには効果がありません。
+src属性を使って読み込む外部スクリプトには、defer属性を使うのが良いと思います。
+<html>
+<head>
+  <script defer src="outer.js"></script>
+</head>
+<body>
+本文
+</body>
+
+
+
+outer.jsでは、$( document ).ready()を使わずに、いきなり実行したいJavaScriptが書けます。
+/// 好きな処理
+
+
+
+scriptタグの位置
+bodyタグの最後にscriptタグを書いても大体同じ効果が得られます。
+確かheadタグにで読み込むCSSを読み込んだ後で、画像を読み込む前だったような・・・うろ覚えです。
+O'Reilly Japan - ハイパフォーマンスJavaScript に詳しい説明が載っています。
+インラインスクリプトの場合はこちらの方が良いでしょう。
+<html>
+<head></head>
+<body>
+  本文
+  <script>
+  /// 好きな処理
+  </script>
+</body>
+
+
+
+DOMContentLoaded
+他人が使うJavaScriptファイルを提供する場合など、scriptタグの書き方を指定を変更出来ない時、JavaScriptだけで実行タイミングを制御したいことがあります。その場合はDOMContentLoadedイベントが使えます。
+document.addEventListener('DOMContentLoaded', () => {
+/// 好きな処理
+})
+
+
+
+DOMContentLoadedは一度しか発火しないため、後から追加するJavaScriptでは発火しません。
+$( document ).ready()は次のようにjQuery.Deferredを使って実装されています。
+https://github.com/jquery/jquery/blob/5d5ea015114092c157311c4948f7cc3d8c8e7f8a/src/core/ready.js#L7-L13
+// The deferred used on DOM ready
+var readyList = jQuery.Deferred();
+
+jQuery.fn.ready = function( fn ) {
+
+    readyList
+        .then( fn )
+
+
+
+DOM構築後に$( document ).ready()を読ぶと即座に実行されます。
+同じように動作させるには次のようにreadyStateの値を確認します。
+function doSomething() {
+/// 好きな処理
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', doSomething);
+} else {
+  doSomething();
+}
+
+
+
+厳密には$( document ).ready()は次のイベントループ（？）で非同期に実行します。
+doSomethingの実行に長い時間が掛かる場合は、requestAnimationFrameを使うなどの工夫が必要かもしれません。
+関連ページ
+HTMLのscriptタグのdefer属性 - @ledsun blog]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【悲報】ダイソンで電気代が5万円超え…ホットアンドクールでエアコン感覚のつけっぱなしは絶対ダメ！]]></title>
         <id>hatenablog://entry/13574176438076082367</id>
