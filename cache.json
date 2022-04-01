@@ -5322,22 +5322,7 @@
       "title": "mizchi's blog",
       "feedUrl": "https://mizchi.hatenablog.com/rss",
       "siteUrl": "https://mizchi.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438048664767",
-          "author": null,
-          "description": "年内に間に合わなかった…\n2021年に主にお世話になった言語・ライブラリ\nTypeScript\nReact\n\n\nchakra-ui\ndnd-kit\nNode\nVite\n\n\nesbuild\nDocker(=> lima)\nとりあえず挙げてみたが、なにか特定のライブラリを使う、という感じではなく、レイヤーが一つ下にいった感じがあり、実際にはなんかもうちょっと下のミドルウェアみたいなものを作っていることが多かった気がする。ASTをいじるコンパイラ周辺ツールを作っていることが多かった。\nサクッとなにか作る場合、 React + TypeScript + Vite(esbuild)  が鉄板という感じで、 esbuild が異次元に速すぎて、typescript の変換もバンドルも、もはやこれ一本でいい気がしてる。 microsoft/typescript はもはや言語仕様の定義と型検査がメインであって、コンパイルは別の実装に任せたほうがよさそう。\n2021 年は Next.js も Webpack もほとんど使っていない。 Next.js に興味がなくなったわけではなく、自分の扱う範囲だとさくっとプラグインを書けて、都度細かくチューニングができる vite のほうが合っていた。 とはいえ No bundle の体験が良すぎるのもあって、webpack も基本使わなくなったし、世代交代を感じている。 webpack はプラグインを書く際の挙動の確認が大変で、あまり深入りしたくない。コードもしんどい。\nRemix も気になってはいるのだが、同じ作者の react-router に嫌な記憶がありすぎて気が進まず、触れていない。あと、何度も Edge Worker が来る、来るといいつつも、自分で触ることができていない。\n今後の予想と自分が力を入れたい範囲\nRust+Wasm がとても完成…",
-          "link": "https://mizchi.hatenablog.com/entry/2022/01/02/164247",
-          "publishedOn": "2022-01-02T07:42:47.000Z",
-          "wordCount": null,
-          "title": "2021年のまとめ・反省",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        }
-      ]
+      "articles": []
     },
     {
       "title": "moaji",
@@ -5853,20 +5838,6 @@
           "title": "22/1/9 2021年10～12月消費コンテンツ",
           "enclosure": {
             "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/saize_lw/20220109/20220109172235.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        },
-        {
-          "id": "hatenablog://entry/13574176438036231597",
-          "author": null,
-          "description": "お題箱回92\n359.とりでさんのドグマブレードシミュレーターが全くクリアできません\nドグマブレードを回すコツや定石を教えて欲しいです\nこれですね。\ntsd0313.github.io\n\nコツはドグマブレードというデッキを信用しないことです。\n僕も現代プレイヤーの感想を見て初めて知ったのですが、恐らく現代プレイヤーはドグマブレードの回転力をかなり過大評価する傾向があります。\nドグマブレードにはサーチやドローが大量搭載されており、綺麗に回ったときはするするとデッキを引き切って明確な終着点に向かっていくため、一見すると現代遊戯王を先取りしたオーパーツに見えるのかもしれません。つまり現代遊戯王において一枚初動から確立されたルートによって（妨害さえなければ）強力な先行展開が確定するのと同様、ドグマブレードも初動からゴールまで一直線に進めるデッキだと誤解されていることが少なくありません。\nしかしそのイメージは買い被りです。ドグマブレードは古の美しい先行OTKとして神格化されがちですが、どこまで行っても欠陥綱渡りデッキです。\nカスみたいな性能の手札入れ替えしかない時代に奇跡的に成立した引き切りコンボであり、常に一貫性を持って動けるように作られている現代のカードデザインとは大前提が違います。そもそも基本の動きがドローであり、確定サーチで保証された動きはほとんどありません。一手選択肢を間違えた瞬間に完全ストップして打ち手が無くなるため、動けているだけで御の字、欲張らずにとにかく動き続けることにだけ意識を割くべきです。\n例えば「魔力倹約術＋次元融合＋混黒＋ヴァリー」は揃えば勝ちが確定する無限ドローコンボですが、これを積極的に狙うのは危険です。特に動けるカードが少ない序盤で手札抹殺と魔力倹約術を持っていた場合、大抵は手札抹殺で魔力倹約術を捨ててドローに変換するのが正解です（いつか無限ドローが成…",
-          "link": "https://saize-lw.hatenablog.com/entry/2022/01/02/160301",
-          "publishedOn": "2022-01-02T07:03:01.000Z",
-          "wordCount": null,
-          "title": "22/1/2 お題箱92：ドグマブレード、接続詞、萌えetc",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/saize_lw/20220102/20220102154356.png",
             "type": "image/png",
             "length": "0"
           }
@@ -8848,15 +8819,6 @@
           "wordCount": 21,
           "title": "６分",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/72253922/rectangle_large_type_2_e5a12aa6813449adc2b23bdf705aeac4.png?width=800"
-        },
-        {
-          "id": "https://note.com/klunakapa/n/n34cb817633f2",
-          "author": null,
-          "description": "・絵を描く\n\n・もう一回個人作１０選で流してえ～\n・１年中いつでもゲームをできるぐらいの余裕を持つ\n・競馬自分の金で勝つ\n・トイレに行くのに駄々こねない\n・Blenderちゃんと使う\n・スーパーカブ見る\n・ウマ娘２期見る\n・ラブライブ！虹ヶ咲学園スクールアイドル同好会を見る\n・響け！ユーフォニアムを見る\n・やがて君になるのMAD作る\n・百合の活字をめっちゃ読む\n・たいうおさんに百合作品薦めれるぐらいには百合作品を摂取する\n・Optical Flaresを買う　セールで\n続きをみる",
-          "link": "https://note.com/klunakapa/n/n34cb817633f2",
-          "publishedOn": "2022-01-02T07:02:49.000Z",
-          "wordCount": null,
-          "title": "今年の目標　𝔾𝔼ℕ𝔼𝕊𝕀𝕊"
         }
       ]
     },
