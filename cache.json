@@ -4111,6 +4111,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438079166707",
+          "author": null,
+          "description": "スラスラ読める PHPふりがなプログラミング (ふりがなプログラミングシリーズ)\n\n作者:リブロワークス\nインプレス\nAmazon\n\nを参考にしています。\n環境構築時にインストールしたMAPMで、Apacheが自動的にインストールされてPHPが実行できます。\n環境設定はこれに全部おまかせでPHPファイルだけを書きます。\nソースコードです。\n<!DOCTYPE html>\n<html>\n\n<head></head>\n<title>Echo by PHP</title>\n\n<body>\n  <h1>入力</h1>\n  <form>\n    <input type=\"text\" name=\"comment\" autofocus>\n    <button>送信</button>\n  </form>\n\n  <h1>出力</h1>\n  <p><?= h($_GET[\"comment\"]) ?></p>\n</body>\n\n</html>\n<?php\nfunction h($str)\n{\n  return htmlspecialchars($str, ENT_QUOTES, \"UTF-8\");\n}\n?>\n\n\n\n動かしたとろが次の動画です。\n\n一応入力文字列のエスケープ処理も入っています。\n動画では入力してません。\nPHPのソースコードがそのままHTMLのテンプレートになっているのが驚きです。\nPHP: Hypertext Preprocessor というのは伊達じゃないですね。\n1ページで完結するようなアプリケーション、例えば掲示板やTODOリストは、割と簡単に作れそうに思えます。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/02/203410",
+          "publishedOn": "2022-04-02T11:34:10.000Z",
+          "wordCount": 175,
+          "title": "PHPでエコーするWebアプリケーションをつくる",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/513OOmaORWL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/513OOmaORWL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438078959879",
           "author": null,
           "description": "コールバック関数が実行されるタイミング\n$( document ).ready()はJavaScriptでDOMを操作するに当たって、DOMの読込完了を待つためのjQueryの便利関数です。\nブラウザにloadイベントしか実装されていなかった時代がありました。\nloadイベントは次の2つを待ちます。\nDOMの構築\n画像、CSSの読込\n$( document ).ready()は2の前に発火します。\n画像などの（当時として）重たいアセットの読込を待たなくてよくなるため、JavaScriptの開始を高速化出来ました。\n次のように使いました。\n$(document).ready(function(){\n/// 好きな処理\n})\n\n\n\n代替え案\nscriptタグのdefer属性\nscriptタグにdefer属性を設定すると\nスクリプトを文書の解析完了後かつ DOMContentLoaded が発生する前に実行する\n\n\nので、同様の効果が得られます。ただし、インラインスクリプトには効果がありません。\nsrc属性を使って読み込む外部スクリプトには、defer属性を使うのが良いと思います。\n<html>\n<head>\n  <script defer src=\"outer.js\"></script>\n</head>\n<body>\n本文\n</body>\n\n\n\nouter.jsでは、$( document ).ready()を使わずに、いきなり実行したいJavaScriptが書けます。\n/// 好きな処理\n\n\n\nscriptタグの位置\nbodyタグの最後にscriptタグを書いても大体同じ効果が得られます。\n確かheadタグにで読み込むCSSを読み込んだ後で、画像を読み込む前だったような・・・うろ覚えです。\nO'Reilly Japan - ハイパフォーマンスJavaScript に詳しい説明が載っています。\nインラインスクリプトの場合はこちらの方が良いでしょう。\n<html>\n<head></head>\n<body>\n  本文\n  <script>\n  /// 好きな処理\n  </script>\n</body>\n\n\n\nDOMContentLoaded\n他人が使うJavaScriptファイルを提供する場合など、scriptタグの書き方を指定を変更出来ない時、JavaScriptだけで実行タイミングを制御したいことがあります。その場合はDOMContentLoadedイベントが使えます。\ndocument.addEventListener('DOMContentLoaded', () => {\n/// 好きな処理\n})\n\n\n\nDOMContentLoadedは一度しか発火しないため、後から追加するJavaScriptでは発火しません。\n$( document ).ready()は次のようにjQuery.Deferredを使って実装されています。\nhttps://github.com/jquery/jquery/blob/5d5ea015114092c157311c4948f7cc3d8c8e7f8a/src/core/ready.js#L7-L13\n// The deferred used on DOM ready\nvar readyList = jQuery.Deferred();\n\njQuery.fn.ready = function( fn ) {\n\n    readyList\n        .then( fn )\n\n\n\nDOM構築後に$( document ).ready()を読ぶと即座に実行されます。\n同じように動作させるには次のようにreadyStateの値を確認します。\nfunction doSomething() {\n/// 好きな処理\n}\n\nif (document.readyState === 'loading') {\n  document.addEventListener('DOMContentLoaded', doSomething);\n} else {\n  doSomething();\n}\n\n\n\n厳密には$( document ).ready()は次のイベントループ（？）で非同期に実行します。\ndoSomethingの実行に長い時間が掛かる場合は、requestAnimationFrameを使うなどの工夫が必要かもしれません。\n関連ページ\nHTMLのscriptタグのdefer属性 - @ledsun blog",
