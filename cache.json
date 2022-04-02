@@ -6690,6 +6690,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438079043919",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n旧式 Slack App を公開している場合、2022年5月27日までに対応しなければ、App ディレクトリから除外するよ というお知らせが届いた。本記事ではその対応についてまとめよう。\n注意 : 移行期限が 2022 年 5 月 27 日まで延長されました。\nApp ディレクトリにご登録いただいている Slack アプリについてのお知らせです。アプリで詳細な権限を使用するための変更が行われていない場合、そのアプリは 2022 年 5 月 27 日以降 App ディレクトリから除外されます。詳細な権限によって、アプリが機能するのに必要な最低限の情報のみを要求できるため、セキュリティを心配するユーザーにも広くアプリを使用してもらえるようになります。\n2020 年 1 月 1 日にお知らせしたとおり、まもなく従来のトークンモデルが新しい権限モデルに置き換わります。アプリで詳細な権限を使用するための変更が行われていない場合、そのアプリは 2021 年 11 月 18 日以降 App ディレクトリから除外されます。除外されると、ユーザーは App ディレクトリを介してアプリにアクセスできなくなり、Slack による審査が完了していないことが示されます。\n\n\nいよいよこの期限が迫ってきたこともあり、新しいSlack App申請をすることにした。\n今回の申請したSlack Appは、単に サーバー側から Slack にメッセージを投稿するだけのシンプルなものになっている。\nそれなのに、なぜ Incoming Webhook という最もシンプルな Slack 投稿の方法を使っていないのか？ それは、Webhook だけだと @ メンションをつけてユーザーに Slack メッセージを投稿できない というクリティカルな欠点があったためである。このこだわりだけ…",
+          "link": "https://www.bokukoko.info/entry/2022/04/02/180000",
+          "publishedOn": "2022-04-02T09:00:00.000Z",
+          "wordCount": null,
+          "title": "Slack App 移行メモ",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220402/20220402140412.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220402/20220402140412.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438076811890",
           "author": null,
           "description": "ども、@kimihom です。\n\nSwiftUI を使ってログインをより快適にする対応をしたので、その実施内容についてまとめておこう。\nテキストフォーカス\nログインをしようとするページの場合、ほぼ必ず最初はメールアドレスなどの入力から始まることだろう。iOS の場合、フォーカスが当たってない状態でタイプしても反映されない形となる。\n最初からフォーカスが当たっているのは、利用ユーザーのことを考えた改善と言える。\nさて、このフォーカスだけど SwiftUI でできるようになったのは iOS 15.0 からである。focused) が登場した。\nstruct SigninView: View {\n    enum Field: Hashable {\n        case email\n        case password\n    }\n\n    @State private var email = \"\"\n    @State private var password = \"\"\n    @FocusState private var focusedField: Field?\n\n    var body: some View {\n        ZStack {\n            TextField(\"メールアドレス\", text: $email)\n                .keyboardType(.emailAddress)\n                .focused($focusedField, equals: .email)\n                .onAppear(perform: {\n                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {\n   …",
