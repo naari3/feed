@@ -4099,6 +4099,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438079570725",
+          "author": null,
+          "description": "PHPを勉強しています。\nWebアプリケーションとしてPHPを動かすことが出来たので何か作ってみましょう。\n公式マニュアルをみていたらsetcookie関数を見つけました。\nCookieに値が保存できるならTODOリストアプリケーションが作れそうです。\nここでイメージしているTODOリストアプリケーションは\nhttps://todomvc.com/ のようなブラウザだけで完結したTODOリストアプリケーションです。\nというのは、いまのところPHPでDBはおろかファイルを操作する方法すら知らないからです。\nというわけで実装してみました。\nまずは追加だけを考えます。\nというのは、ユーザー操作が追加、達成、削除のどれかを区別する方法を知らないからです。\n<!DOCTYPE html>\n\n<head>\n  <title>TODOリスト</title>\n</head>\n\n<body>\n  <form method=\"post\">\n    <input type=\"text\" name=\"name\" autofocus>\n    <button>追加</button>\n    <?php\n    $todos = restore_todos();\n    $todos = add_todo($todos, $_POST[\"name\"]);\n    save_todos($todos);\n    ?>\n  </form>\n  <ul>\n    <?php\n    foreach (array_reverse($todos) as $todo) {\n      echo \"<li>\" . $todo . \"</li>\";\n    }\n    ?>\n  </ul>\n</body>\n\n<?php\nfunction add_todo($todos, $todo)\n{\n  if ($todo) {\n    $todos = restore_todos();\n    array_push($todos, $todo);\n  }\n\n  return $todos;\n}\n\nfunction restore_todos()\n{\n  return array_filter(explode(\",\", $_COOKIE[\"todos\"]));\n}\n\nfunction save_todos($todos)\n{\n  $todos_str = array_reduce($todos, function ($carry, $todo) {\n    return $carry . \",\" . $todo;\n  });\n  setcookie(\"todos\", $todos_str);\n}\n?>\n\n\n\n実装してみると、最初にHTMLでテンプレート書いて、それから振る舞いを実装していきます。\nすごくフロントエンド開発っぽいです。\nサーバー側でエラーが出たときに500エラーが起きて詳しい情報がわからないのは辛かったです。\nBetter Errorsって、ありがたいんだなと思いました。\n動かすと次の感じです。\n\n次の振る舞いで困りました。\n追加した新しいタスクがリロードしないと表示されない\nリロードすると前回追加したタスクがまた追加される\n前者はグローバル変数をつかって、変更後のリストをレンダリングすることで回避しました。\n後者が思いつかなくてググったらPRGパターンを使えって出てきて「そらそうだー！」っておでこをはたきました。\nまあ、リダイレクトの仕方がわからないので、次の課題です。\nどうやら僕は、PHPの勉強を「縛りプレイ」だと思うと楽しめそうです。\nWebアプリケーションを作ること自体は何週目かわからないので新鮮味はないです。\n新しい言語で使える物を限定したこと「この道具だけでどうやって実現するか？」を考えるのが面白いです。\nそれでWebアプリケーションについての理解が深まるのが、また楽しいです。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/04/000331",
+          "publishedOn": "2022-04-03T15:03:31.000Z",
+          "wordCount": 231,
+          "title": "PHPでTODOリストをつくる、追加まで",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438079166707",
           "author": null,
           "description": "スラスラ読める PHPふりがなプログラミング (ふりがなプログラミングシリーズ)\n\n作者:リブロワークス\nインプレス\nAmazon\n\nを参考にしています。\n環境構築時にインストールしたMAPMで、Apacheが自動的にインストールされてPHPが実行できます。\n環境設定はこれに全部おまかせでPHPファイルだけを書きます。\nソースコードです。\n<!DOCTYPE html>\n<html>\n\n<head></head>\n<title>Echo by PHP</title>\n\n<body>\n  <h1>入力</h1>\n  <form>\n    <input type=\"text\" name=\"comment\" autofocus>\n    <button>送信</button>\n  </form>\n\n  <h1>出力</h1>\n  <p><?= h($_GET[\"comment\"]) ?></p>\n</body>\n\n</html>\n<?php\nfunction h($str)\n{\n  return htmlspecialchars($str, ENT_QUOTES, \"UTF-8\");\n}\n?>\n\n\n\n動かしたとろが次の動画です。\n\n一応入力文字列のエスケープ処理も入っています。\n動画では入力してません。\nPHPのソースコードがそのままHTMLのテンプレートになっているのが驚きです。\nPHP: Hypertext Preprocessor というのは伊達じゃないですね。\n1ページで完結するようなアプリケーション、例えば掲示板やTODOリストは、割と簡単に作れそうに思えます。",

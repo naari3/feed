@@ -2,10 +2,97 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-03T15:02:17.857Z</updated>
+    <updated>2022-04-03T16:01:52.380Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[PHPでTODOリストをつくる、追加まで]]></title>
+        <id>hatenablog://entry/13574176438079570725</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/04/000331"/>
+        <updated>2022-04-03T15:03:31.000Z</updated>
+        <summary type="html"><![CDATA[PHPを勉強しています。
+WebアプリケーションとしてPHPを動かすことが出来たので何か作ってみましょう。
+公式マニュアルをみていたらsetcookie関数を見つけました。
+Cookieに値が保存できるならTODOリストアプリケーションが作れそうです。
+ここでイメージしているTODOリストアプリケーションは
+https://todomvc.com/ のようなブラウザだけで完結したTODOリストアプリケーションです。
+というのは、いまのところPHPでDBはおろかファイルを操作する方法すら知らないからです。
+というわけで実装してみました。
+まずは追加だけを考えます。
+というのは、ユーザー操作が追加、達成、削除のどれかを区別する方法を知らないからです。
+<!DOCTYPE html>
+
+<head>
+  <title>TODOリスト</title>
+</head>
+
+<body>
+  <form method="post">
+    <input type="text" name="name" autofocus>
+    <button>追加</button>
+    <?php
+    $todos = restore_todos();
+    $todos = add_todo($todos, $_POST["name"]);
+    save_todos($todos);
+    ?>
+  </form>
+  <ul>
+    <?php
+    foreach (array_reverse($todos) as $todo) {
+      echo "<li>" . $todo . "</li>";
+    }
+    ?>
+  </ul>
+</body>
+
+<?php
+function add_todo($todos, $todo)
+{
+  if ($todo) {
+    $todos = restore_todos();
+    array_push($todos, $todo);
+  }
+
+  return $todos;
+}
+
+function restore_todos()
+{
+  return array_filter(explode(",", $_COOKIE["todos"]));
+}
+
+function save_todos($todos)
+{
+  $todos_str = array_reduce($todos, function ($carry, $todo) {
+    return $carry . "," . $todo;
+  });
+  setcookie("todos", $todos_str);
+}
+?>
+
+
+
+実装してみると、最初にHTMLでテンプレート書いて、それから振る舞いを実装していきます。
+すごくフロントエンド開発っぽいです。
+サーバー側でエラーが出たときに500エラーが起きて詳しい情報がわからないのは辛かったです。
+Better Errorsって、ありがたいんだなと思いました。
+動かすと次の感じです。
+
+次の振る舞いで困りました。
+追加した新しいタスクがリロードしないと表示されない
+リロードすると前回追加したタスクがまた追加される
+前者はグローバル変数をつかって、変更後のリストをレンダリングすることで回避しました。
+後者が思いつかなくてググったらPRGパターンを使えって出てきて「そらそうだー！」っておでこをはたきました。
+まあ、リダイレクトの仕方がわからないので、次の課題です。
+どうやら僕は、PHPの勉強を「縛りプレイ」だと思うと楽しめそうです。
+Webアプリケーションを作ること自体は何週目かわからないので新鮮味はないです。
+新しい言語で使える物を限定したこと「この道具だけでどうやって実現するか？」を考えるのが面白いです。
+それでWebアプリケーションについての理解が深まるのが、また楽しいです。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[発想の枠を広げるドラゴンワインダー思考]]></title>
         <id>hatenablog://entry/13574176438079455925</id>
