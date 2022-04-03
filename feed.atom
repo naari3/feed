@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-03T12:02:16.489Z</updated>
+    <updated>2022-04-03T13:06:01.247Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -20921,22 +20921,6 @@ https://help.hatenablog.com/entry/reading/subscribe
 続きをみる]]></summary>
         <author>
             <name>ておつく</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022-01-03]]></title>
-        <id>hatenablog://entry/13574176438049102291</id>
-        <link href="https://commits.hatenablog.com/entry/2022/01/04/100007"/>
-        <updated>2022-01-04T01:00:07.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-all-ruby の gem 版を作った。
-大晦日にruby/rbsのIssue整理をしていたのだけど、そのときに「この機能って実装されているはずだけどどのバージョンで入ったっけ…」というのを調べていて、こういうものが欲しくなった。
-その時は気合でバージョンを調べたのだけど、作っておいたら便利そうだし作ってみた。
-もうちょっと整理したいところが残っているのでそれを整理したらブログ記事とか書こうかなあ。主に出力をわかりやすくするやつをやりたい。
-書いててRubyGemsのコードをちょこちょこ読んだ。「コマンド名からそのコマンドが定義されているgem名を調べる」というのをどうしようかなあとしばらく悩んで、いい方法はなさそうなので雑に「全部のgemspecをeachする」というコードを書いた。
-ちなみにこのコードはSteepで型検査が通っている。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
 </feed>

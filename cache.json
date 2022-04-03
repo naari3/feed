@@ -1002,20 +1002,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438049102291",
-          "author": null,
-          "description": "github.com\nall-ruby の gem 版を作った。\n大晦日にruby/rbsのIssue整理をしていたのだけど、そのときに「この機能って実装されているはずだけどどのバージョンで入ったっけ…」というのを調べていて、こういうものが欲しくなった。\nその時は気合でバージョンを調べたのだけど、作っておいたら便利そうだし作ってみた。\nもうちょっと整理したいところが残っているのでそれを整理したらブログ記事とか書こうかなあ。主に出力をわかりやすくするやつをやりたい。\n書いててRubyGemsのコードをちょこちょこ読んだ。「コマンド名からそのコマンドが定義されているgem名を調べる」というのをどうしようかなあとしばらく悩んで、いい方法はなさそうなので雑に「全部のgemspecをeachする」というコードを書いた。\nちなみにこのコードはSteepで型検査が通っている。",
-          "link": "https://commits.hatenablog.com/entry/2022/01/04/100007",
-          "publishedOn": "2022-01-04T01:00:07.000Z",
-          "wordCount": 157,
-          "title": "2022-01-03",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
