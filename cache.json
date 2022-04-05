@@ -427,20 +427,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438049894428",
-          "author": null,
-          "description": "ちょもすです。\n \n悪質なプロパガンダ\nwww.mildom.com\n \n「TOPANGA TVでちょもすがVRCから戻ってこない旨をマゴさんがおっしゃられていた」旨のタレコミがあり、確認すると確かに言っている。\n \nしかしこれは盛りすぎだ。悪質なプロパガンダ。僕があたかも現実から逃げ出し、VRの沼にはまって戻ってこない限界オタク人間かのように吹聴しているが、事実とはまったく異なる。\n \nそもそも「ずっとプレイしている」という概念からして認識がズレており、浅慮極まりない。人はDiscordを毎日起動しても「毎日Discordをプレイしている」とは言わないし、多くの人は「Discord沼にハマった」とも言わない。思うに知らない人がVRCを最もイメージしやすいアプリケーションはDiscordであり、mixiであり、Yahooジオシティーズだ。それらに「戻ってこない」という表現を使わず、ことさらVRにのみ用いるのは、昔ゲーマーやオタクに向けられた偏見そのもの。\n \n最近はVRCを起動しながらカウボーイビバップをウォッチパーティで見つつも、ポケモンユナイトをソロで回してDiscordでオタクの話を聞くという状態すらあり、これを「VRChatの世界から帰ってこれなくなった」と言うにはいささか強引だ。「ちょもすがVRChatから帰ってこれなくなった」という言葉の強さを求めるがあまり話を脚色しており、これでは悪質なまとめサイトと何も変わらない。\n \n連日『ポケモンユナイト』を配信し、裏でも動画を見ながらランクマッチを回し、ブログも数年前とは比べ物にならない頻度で更新しており、正月の集まりでは姪っ子にお年玉を渡し、まったく現実に生きている。プロゲーマーとしての自覚に欠けた、浅はか極まりない発言の訂正を要求する。\n \nグラブルの団のDiscordに「よくいた」というのもまったく事実と異なる。常駐していたのはせいぜい『Among us』ブームの頃であって、それはVRCを始めるはるか昔のこと。それ以降はまばらに『League of Legends』に混ざったりする程度のもので、よくいたかと言われたら常駐している誰もが首をかしげるところ。\n \n実際に今動いているのは『グランブルーファンタジー』と『ファイナルファンタジーXIV』と『League of Legends』の人達で、最近僕がプレイしているゲームとまったくかみ合わず、常駐する動機がない。僕は一人で『MTGO』のVintage cube draftと『pogostuck』を孤独にプレイし続けているだけであり、悪質な印象操作だ。余談だがhamekoさんはマジで一生『League of Legends』をしている。\n \n過度の脚色であり、発言の訂正を要求する。このような歪んだ倫理観の持ち主が『ストリートファイターⅤ』で好成績を残していることは全くの遺憾で、他のプレイヤーがなんとかしてくれることを切に願う。\n \n \n \n \n \n今日の日記\nところで僕がUnityと朝６時まで戦った成果を見て欲しい。\n\nくそかわいいんだが。\n \n \n \nそれじゃあまた。",
-          "link": "https://chomosh.hatenablog.com/entry/2022/01/06/120000",
-          "publishedOn": "2022-01-06T03:00:00.000Z",
-          "wordCount": 142,
-          "title": "現実に生きてます",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/chomosh/20220106/20220106092739.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -4099,6 +4085,21 @@
       "feedUrl": "https://ledsun.hatenablog.com/rss",
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438080187737",
+          "author": null,
+          "description": "一昔前のRailsではJavaScriptを簡単に使う機能としてrails ujsがありました。\nRails ガイドにも説明があります。\nrailsguides.jp\n「UJS: Unobtrusive（控えめな）JavaScript」\n\n\n主な用途は\nwww.inodev.jp\n\nJSの処理で確認ダイアログとして「マジでログアウトすんのか？」という表示をする\nJSの処理でログアウトのために「deleteメソッドとして」HTTPのPOSTリクエストをする\nなんだかんだ言って、削除ボタンとか確認ダイアログとか簡単に実装できて便利です。\nJavaScriptとして動く部分の実装は https://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview/app/assets/javascripts/rails-ujs/features\n にあります。\nたかだか300行のCoffeeScriptです。\n読もうと思えば読めそうです。\n今回は読みません。\nhttps://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview/app/assets/javascripts がプロジェクトのルートです。\nnpmパッケージを作っているのは、もう少し上の https://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview です。依存しているGemの定義がactionview.gemspecに書いてあるからだと思います。\nビルドするにはnpm run buildを実行します。\n次のよう…",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/05/232351",
+          "publishedOn": "2022-04-05T14:23:51.000Z",
+          "wordCount": 238,
+          "title": "rails ujsを学ぶ",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/13574176438080125840",
           "author": null,
