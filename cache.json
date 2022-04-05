@@ -4100,6 +4100,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438080125840",
+          "author": null,
+          "description": "冒険王ビィト 16 (ジャンプコミックスDIGITAL)\n\n作者:三条陸,稲田浩司\n集英社\nAmazon\n\n最終巻ぽい集合した表紙です。\n最終巻ではありませんでした。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/05/200849",
+          "publishedOn": "2022-04-05T11:08:49.000Z",
+          "wordCount": 128,
+          "title": "冒険王ビィト 16",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/615CKDepVgL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/615CKDepVgL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438079570725",
           "author": null,
           "description": "PHPを勉強しています。\nWebアプリケーションとしてPHPを動かすことが出来たので何か作ってみましょう。\n公式マニュアルをみていたらsetcookie関数を見つけました。\nCookieに値が保存できるならTODOリストアプリケーションが作れそうです。\nここでイメージしているTODOリストアプリケーションは\nhttps://todomvc.com/ のようなブラウザだけで完結したTODOリストアプリケーションです。\nというのは、いまのところPHPでDBはおろかファイルを操作する方法すら知らないからです。\nというわけで実装してみました。\nまずは追加だけを考えます。\nというのは、ユーザー操作が追加、達成、削除のどれかを区別する方法を知らないからです。\n<!DOCTYPE html>\n\n<head>\n  <title>TODOリスト</title>\n</head>\n\n<body>\n  <form method=\"post\">\n    <input type=\"text\" name=\"name\" autofocus>\n    <button>追加</button>\n    <?php\n    $todos = restore_todos();\n    $todos = add_todo($todos, $_POST[\"name\"]);\n    save_todos($todos);\n    ?>\n  </form>\n  <ul>\n    <?php\n    foreach (array_reverse($todos) as $todo) {\n      echo \"<li>\" . $todo . \"</li>\";\n    }\n    ?>\n  </ul>\n</body>\n\n<?php\nfunction add_todo($todos, $todo)\n{\n  if ($todo) {\n    $todos = restore_todos();\n    array_push($todos, $todo);\n  }\n\n  return $todos;\n}\n\nfunction restore_todos()\n{\n  return array_filter(explode(\",\", $_COOKIE[\"todos\"]));\n}\n\nfunction save_todos($todos)\n{\n  $todos_str = array_reduce($todos, function ($carry, $todo) {\n    return $carry . \",\" . $todo;\n  });\n  setcookie(\"todos\", $todos_str);\n}\n?>\n\n\n\n実装してみると、最初にHTMLでテンプレート書いて、それから振る舞いを実装していきます。\nすごくフロントエンド開発っぽいです。\nサーバー側でエラーが出たときに500エラーが起きて詳しい情報がわからないのは辛かったです。\nBetter Errorsって、ありがたいんだなと思いました。\n動かすと次の感じです。\n\n次の振る舞いで困りました。\n追加した新しいタスクがリロードしないと表示されない\nリロードすると前回追加したタスクがまた追加される\n前者はグローバル変数をつかって、変更後のリストをレンダリングすることで回避しました。\n後者が思いつかなくてググったらPRGパターンを使えって出てきて「そらそうだー！」っておでこをはたきました。\nまあ、リダイレクトの仕方がわからないので、次の課題です。\nどうやら僕は、PHPの勉強を「縛りプレイ」だと思うと楽しめそうです。\nWebアプリケーションを作ること自体は何週目かわからないので新鮮味はないです。\n新しい言語で使える物を限定したこと「この道具だけでどうやって実現するか？」を考えるのが面白いです。\nそれでWebアプリケーションについての理解が深まるのが、また楽しいです。",
@@ -9114,15 +9129,6 @@
           "publishedOn": "2022-01-12T00:43:16.000Z",
           "wordCount": 64,
           "title": "ブラックボックスを省くな。"
-        },
-        {
-          "id": "https://note.com/kazumakawauchi/n/ndfe99cd3ac0e",
-          "author": null,
-          "description": "新年あけましておめでとうございます。今年もよろしくお願い致します。\nアルゼンチンから帰国し、振り返るのも億劫なほど濃密だった2021年もあっという間に終わりを迎え、どうやら2022年がスタートしたようです。サッカーの世界で生きていると（あるいは皆様なのかもしれませんが）、1年ごとに「シーズン」として区切られ、ある意味で再スタートの連続、1年1年が勝負となります。そんなこともあり、武者震いといいましょうか、これから始まる短いようで長いシーズンに向けて、居ても立っても居られない心境でこの文章を書いています。個人的には、これまでの人生の中で最も楽しみで、ワクワクしている1年かもしれません。\n続きをみる",
-          "link": "https://note.com/kazumakawauchi/n/ndfe99cd3ac0e",
-          "publishedOn": "2022-01-05T23:14:10.000Z",
-          "wordCount": null,
-          "title": "The 2022年 has started."
         }
       ]
     },
@@ -10650,6 +10656,16 @@
       "siteUrl": "https://note.com/studio_vk",
       "articles": [
         {
+          "id": "https://note.com/studio_vk/n/n78cfa5d47dbc",
+          "author": null,
+          "description": "たまげちゃうほどに秋田の人が見ていなかったんですね。某CMも放送期間が終わってしまい、わたくしをメディアで認知できる機会がなくなっている事実に心を痛めております。仕事をもっと発生させたく存じます。\n秋田発配信特番「地下室のストラグル」第1夜、40名近くの方にご協力いただきお送りしました。各種アーカイブもチャンネルにupしています。当然詩的財産がウン十万かかっているので、これを新たなステップへと持ち運ぶ責務があります。そうしないと私が頑張らないからですね、わかります。\nわたくしにはSPEEDが足りないんです。いつか助かる日が来るのではないかという慢心をもって、ラジオパーソナリティーの方に裏方として意味なく頭を下げていた4年前を忘れている。天使がくれた出会い大切に。\nお笑いやエンタメに取り組んでいない人物がタレントになることは100%ないと考えているので、まずは2022年も神長という人格が真面目にそれを欲していることの体現はさせていただきました。誰かがみこしにならなければ若者世代が活躍する機会などこの街に到来しません。今回携わってくれた皆さんを中心に、もっとわたくしを自由に使ってください。BODY&SOUL。\n今回の配信における反省点改善点はもちろんありますが、これの次なる配信ないし番組化を目指して提案資料を現在作成中です。皆さんが知らない間に、知らないタレント志望者が減らないよう善処しています。わたしの人生がどうあろうとこれは関係のないことで、田舎にふざける人物が一人でも残るきっかけづくりみたいなものだと思ってください。\nチャンスを与えるフリをする大人にたくさん会ってきました。私はそれにだけはなりたくありません。よろしくお願いします。\n\n続きをみる",
+          "link": "https://note.com/studio_vk/n/n78cfa5d47dbc",
+          "publishedOn": "2022-04-05T11:48:29.000Z",
+          "wordCount": 46,
+          "title": "配信特番をやってみましたが",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/75810855/rectangle_large_type_2_7308af657d3b4213c05a214633f833bd.jpg?width=800"
+        },
+        {
           "id": "https://note.com/studio_vk/n/nae3dbebc10d4",
           "author": null,
           "description": "安心できないことがひとつあります。「4月からの地元メディアレギュラーが1本も決まっていない」ことです。今年で三十一になります。\n20歳のときに知りました。「秋田にはローカルタレントが本当にいない」んですね。東北でも事情が違っていて、隣県では夕方や深夜に若手モデルやタレントの出る番組がありますが、地元はそうではありません。\n続きをみる",
@@ -11150,15 +11166,6 @@
           "publishedOn": "2022-01-17T00:00:00.000Z",
           "wordCount": 88,
           "title": "もう2022年の4%が終わったようですが"
-        },
-        {
-          "id": "https://5h4ru.com/blog/my-favorite-fanfictions-of-oregairu/",
-          "author": null,
-          "description": "ハーメルンで連載されている俺ガイル二次創作で完結しているものは殆ど1読んでしまった。ここでは私の記憶に残ったものを記す。備忘録であり、雑記である。\nなお、記事中にネタバレが記載されていたとしても私は何ら責任を負わない。俺に怒るより読んだほうがいいマジで。",
-          "link": "https://5h4ru.com/blog/my-favorite-fanfictions-of-oregairu/",
-          "publishedOn": "2022-01-06T00:00:00.000Z",
-          "wordCount": null,
-          "title": "好みの俺ガイル二次創作を挙げる記事"
         }
       ]
     },
