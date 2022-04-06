@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-06T13:13:48.244Z</updated>
+    <updated>2022-04-06T14:02:13.876Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,46 @@
         <summary type="html"><![CDATA[2022年1月26日に、『Mercari ML&Search Talk #2 ~Customer Understanding~』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022/04/06(水)]]></title>
+        <id>https://note.com/aesthetic_milo/n/n5fbad57e50c3</id>
+        <link href="https://note.com/aesthetic_milo/n/n5fbad57e50c3"/>
+        <updated>2022-04-06T13:26:18.000Z</updated>
+        <summary type="html"><![CDATA[お昼にラーメン食べた　ラーメン王に
+
+今日はかなりだらけちゃった！！！やばい
+続きをみる]]></summary>
+        <author>
+            <name>議会制</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Romeは本当に速かった]]></title>
+        <id>hatenablog://entry/13574176438080443074</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/06/221807"/>
+        <updated>2022-04-06T13:18:07.000Z</updated>
+        <summary type="html"><![CDATA[RomeプロジェクトのJavaScriptフォーマッターがリリースされました。
+rome.tools
+ちょうどPrettier を使っているプロジェクトがあったので比較してみました。
+
+本当にめちゃくちゃ速い。
+prettierで8秒掛かるのが0.5秒とかで終わる。
+— ぎゃばん@手洗い (@ledsun) April 6, 2022
+  
+prettierを速く動かしたくてparallel-prettierに.prettierignoreを読む修正を加えて動かして速くなったか - Qiita でNode.jsのまま並列化したparallel-prettierを試したときは
+やったね1.25倍速くなりました！
+
+
+でした。
+それと比べてるとRomeは10倍以上速くなっています。
+驚異的です。
+JavaScriptパーサーやASTを扱うライブラリーなどの資産がないrustで書き直すのは、大変な労力に思えます。
+それに見合う性能向上がはかれるようです。
+今後の成長が期待大なプロジェクトです。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>

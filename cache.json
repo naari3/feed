@@ -4102,6 +4102,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438080443074",
+          "author": null,
+          "description": "RomeプロジェクトのJavaScriptフォーマッターがリリースされました。\nrome.tools\nちょうどPrettier を使っているプロジェクトがあったので比較してみました。\n\n本当にめちゃくちゃ速い。\nprettierで8秒掛かるのが0.5秒とかで終わる。\n— ぎゃばん@手洗い (@ledsun) April 6, 2022\n  \nprettierを速く動かしたくてparallel-prettierに.prettierignoreを読む修正を加えて動かして速くなったか - Qiita でNode.jsのまま並列化したparallel-prettierを試したときは\nやったね1.25倍速くなりました！\n\n\nでした。\nそれと比べてるとRomeは10倍以上速くなっています。\n驚異的です。\nJavaScriptパーサーやASTを扱うライブラリーなどの資産がないrustで書き直すのは、大変な労力に思えます。\nそれに見合う性能向上がはかれるようです。\n今後の成長が期待大なプロジェクトです。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/06/221807",
+          "publishedOn": "2022-04-06T13:18:07.000Z",
+          "wordCount": null,
+          "title": "Romeは本当に速かった",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438080423793",
           "author": null,
           "description": "Windows 10で英語キーボードを使っています。\n変換キーがないため、変換キーの機能をCtrl + Spaceに割り当てています。\nWindows 11にアップデートしたところ、この設定が消えました。\n再設定しました。\nタスクバー上のIMEアイコンを左クリックしてコンテキストメニューを開く\n「キーの割り当て」が「オフ」になっています\n開いた設定メニューから「キーとタッチのカスタマイズ」を選びます。\n「キーの割り当て」の「オン」にして「Ctrl + Space」を「IME-オン/オフ」にします。",
@@ -7145,6 +7160,16 @@
       "feedUrl": "https://note.com/aesthetic_milo/rss",
       "siteUrl": "https://note.com/aesthetic_milo",
       "articles": [
+        {
+          "id": "https://note.com/aesthetic_milo/n/n5fbad57e50c3",
+          "author": null,
+          "description": "お昼にラーメン食べた　ラーメン王に\n\n今日はかなりだらけちゃった！！！やばい\n続きをみる",
+          "link": "https://note.com/aesthetic_milo/n/n5fbad57e50c3",
+          "publishedOn": "2022-04-06T13:26:18.000Z",
+          "wordCount": null,
+          "title": "2022/04/06(水)",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/75888879/rectangle_large_type_2_c9e23835030428a3830d9215ea7134b2.png?width=800"
+        },
         {
           "id": "https://note.com/aesthetic_milo/n/nccf50c450aa1",
           "author": null,
