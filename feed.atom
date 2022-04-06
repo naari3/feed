@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-06T10:06:47.527Z</updated>
+    <updated>2022-04-06T11:06:39.363Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,23 @@
         <summary type="html"><![CDATA[2022年1月26日に、『Mercari ML&Search Talk #2 ~Customer Understanding~』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11にしたらIME オン/オフ切り替えキーの設定が消えた]]></title>
+        <id>hatenablog://entry/13574176438080423793</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/06/194856"/>
+        <updated>2022-04-06T10:48:56.000Z</updated>
+        <summary type="html"><![CDATA[Windows 10で英語キーボードを使っています。
+変換キーがないため、変換キーの機能をCtrl + Spaceに割り当てています。
+Windows 11にアップデートしたところ、この設定が消えました。
+再設定しました。
+タスクバー上のIMEアイコンを左クリックしてコンテキストメニューを開く
+「キーの割り当て」が「オフ」になっています
+開いた設定メニューから「キーとタッチのカスタマイズ」を選びます。
+「キーの割り当て」の「オン」にして「Ctrl + Space」を「IME-オン/オフ」にします。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>

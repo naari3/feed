@@ -4102,6 +4102,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438080423793",
+          "author": null,
+          "description": "Windows 10で英語キーボードを使っています。\n変換キーがないため、変換キーの機能をCtrl + Spaceに割り当てています。\nWindows 11にアップデートしたところ、この設定が消えました。\n再設定しました。\nタスクバー上のIMEアイコンを左クリックしてコンテキストメニューを開く\n「キーの割り当て」が「オフ」になっています\n開いた設定メニューから「キーとタッチのカスタマイズ」を選びます。\n「キーの割り当て」の「オン」にして「Ctrl + Space」を「IME-オン/オフ」にします。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/06/194856",
+          "publishedOn": "2022-04-06T10:48:56.000Z",
+          "wordCount": 135,
+          "title": "Windows 11にしたらIME オン/オフ切り替えキーの設定が消えた",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220406/20220406194336.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220406/20220406194336.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438080187737",
           "author": null,
           "description": "一昔前のRailsではJavaScriptを簡単に使う機能としてrails ujsがありました。\nRails ガイドにも説明があります。\nrailsguides.jp\n「UJS: Unobtrusive（控えめな）JavaScript」\n\n\n主な用途は\nwww.inodev.jp\n\nJSの処理で確認ダイアログとして「マジでログアウトすんのか？」という表示をする\nJSの処理でログアウトのために「deleteメソッドとして」HTTPのPOSTリクエストをする\nなんだかんだ言って、削除ボタンとか確認ダイアログとか簡単に実装できて便利です。\nJavaScriptとして動く部分の実装は https://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview/app/assets/javascripts/rails-ujs/features\n にあります。\nたかだか300行のCoffeeScriptです。\n読もうと思えば読めそうです。\n今回は読みません。\nhttps://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview/app/assets/javascripts がプロジェクトのルートです。\nnpmパッケージを作っているのは、もう少し上の https://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview です。依存しているGemの定義がactionview.gemspecに書いてあるからだと思います。\nビルドするにはnpm run buildを実行します。\n次のよう…",
