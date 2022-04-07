@@ -4134,6 +4134,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438080714422",
+          "author": null,
+          "description": "この文章は祈りです。\n主にRuby on Railsアプリケーションを想定した話です。\nRuby on Railsアプリケーションでは、Fat Model問題という問題が起きることがあります。\nドメインオブジェクトが肥大化しメンテナンスしにくくなる問題です。\nFat Model問題に対応するためにサービスレイヤーを導入することがあります。\n「ドメインモデル貧血症」と呼ばれているアンチパターンです。\nドメインモデル貧血症\nドメインのロジックをドメインオブジェクトの中に入れないという設計ルールに従っているのでしょう。その代わり、すべてのドメインロジックを含むサービスオブジェクト群が存在しているのです。\n\n\nFat Modelを恐れよ\nFat Modelは「単一責任原則」を満たしていないモデルです。\n単一責任原則 | プログラマが知るべき97のこと\n1つのサブシステムやモジュール、クラス、関数などに、変更する理由が2つ以上あるようではいけない\n\n\n重要なのは「変更する理由が2つあるということは、機能変更のためにあるクラスを変更すると別の機能が壊れる可能性がある」です*1。\nFat Modelの問題は行数の多さではありません。\n複数の責務を持つため、あるドメインオブジェクトへの変更が、変更したくない機能にも影響を与える可能性があることです。\nFat Modelがあるとアプリケーションの変更が難しくなります。\n地獄への道は善意で舗装されている\nサービスを求める\nどうすればFat Model問題を解消できるでしょうか？\nモデルが複数の責務を持っているのが問題です。\n責務をモデルの外に出してしまいましょう。\n各責務を担当するサービスオブジェクトを定義し、ロジックをサービスオブジェクトに移動します。\n1つのサービスオブジェクトは1つの責務を持ち、単一責任原則を満たします。\nすべてのFat …",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/08/000748",
+          "publishedOn": "2022-04-07T15:07:48.000Z",
+          "wordCount": 276,
+          "title": "人はFat Modelを恐れサービスを求め ドメインモデルは貧血に至る",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438080443074",
           "author": null,
           "description": "RomeプロジェクトのJavaScriptフォーマッターがリリースされました。\nrome.tools\nちょうどPrettier を使っているプロジェクトがあったので比較してみました。\n\n本当にめちゃくちゃ速い。\nprettierで8秒掛かるのが0.5秒とかで終わる。\n— ぎゃばん@手洗い (@ledsun) April 6, 2022\n  \nprettierを速く動かしたくてparallel-prettierに.prettierignoreを読む修正を加えて動かして速くなったか - Qiita でNode.jsのまま並列化したparallel-prettierを試したときは\nやったね1.25倍速くなりました！\n\n\nでした。\nそれと比べてるとRomeは10倍以上速くなっています。\n驚異的です。\nJavaScriptパーサーやASTを扱うライブラリーなどの資産がないrustで書き直すのは、大変な労力に思えます。\nそれに見合う性能向上がはかれるようです。\n今後の成長が期待大なプロジェクトです。",
@@ -12696,6 +12711,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2022-04-07-diary",
+          "author": null,
+          "description": "最近何やっているかというと、ELDEN RINGのLv1での攻略をずっとやっている。",
+          "link": "https://r7kamura.com/articles/2022-04-07-diary",
+          "publishedOn": "2022-04-07T00:00:00.000Z",
+          "wordCount": 14,
+          "title": "日記",
+          "imageUrl": "https://r7kamura.com/default_og_image.jpg"
+        },
         {
           "id": "https://r7kamura.com/articles/2022-04-01-ruby-dockerfile-env",
           "author": null,

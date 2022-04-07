@@ -78,6 +78,53 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank"
+              rel="noopener">@ledsun blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">人はFat Modelを恐れサービスを求め ドメインモデルは貧血に至る</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/04/08/000748" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>この文章は祈りです。
+主にRuby on Railsアプリケーションを想定した話です。
+Ruby on Railsアプリケーションでは、Fat Model問題という問題が起きることがあります。
+ドメインオブジェクトが肥大化しメンテナンスしにくくなる問題です。
+Fat Model問題に対応するためにサービスレイヤーを導入することがあります。
+「ドメインモデル貧血症」と呼ばれているアンチパターンです。
+ドメインモデル貧血症
+ドメインのロジックをドメインオブジェクトの中に入れないという設計ルールに従っているのでしょう。その代わり、すべてのドメインロジックを含むサービスオブジェクト群が存在しているのです。
+
+
+Fat Modelを恐れよ
+Fat Modelは「単一責任原則」を満たしていないモデルです。
+単一責任原則 | プログラマが知るべき97のこと
+1つのサブシステムやモジュール、クラス、関数などに、変更する理由が2つ以上あるようではいけない
+
+
+重要なのは「変更する理由が2つあるということは、機能変更のためにあるクラスを変更すると別の機能が壊れる可能性がある」です*1。
+Fat Modelの問題は行数の多さではありません。
+複数の責務を持つため、あるドメインオブジェクトへの変更が、変更したくない機能にも影響を与える可能性があることです。
+Fat Modelがあるとアプリケーションの変更が難しくなります。
+地獄への道は善意で舗装されている
+サービスを求める
+どうすればFat Model問題を解消できるでしょうか？
+モデルが複数の責務を持っているのが問題です。
+責務をモデルの外に出してしまいましょう。
+各責務を担当するサービスオブジェクトを定義し、ロジックをサービスオブジェクトに移動します。
+1つのサービスオブジェクトは1つの責務を持ち、単一責任原則を満たします。
+すべてのFat …</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/aesthetic_milo" target="_blank"
               rel="noopener">議会制</a></h3>
           <section class="articles-per-source">
@@ -261,6 +308,26 @@ RADIO TAPOK - Цусима (Официальное видео 2021)
 前回の録音と比べると、安定感がでてそこそこ成長をしたような気がする。</span>
                   </div>
                   <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://r7kamura.com/" target="_blank"
+              rel="noopener">r7kamura.com</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">日記</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://r7kamura.com/articles/2022-04-07-diary" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>最近何やっているかというと、ELDEN RINGのLv1での攻略をずっとやっている。</span>
+                  </div>
+                  <img src="https://r7kamura.com/default_og_image.jpg" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -30151,7 +30218,7 @@ Lambdaの実行時エラーをChatbotでSlackに通知するのが便利すぎ�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-07T15:06:42.055Z">2022-04-07T15:06:42.055Z</time>
+    <time id="build-timestamp" datetime="2022-04-07T16:02:06.237Z">2022-04-07T16:02:06.237Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

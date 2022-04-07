@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-07T15:06:42.139Z</updated>
+    <updated>2022-04-07T16:02:06.291Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[人はFat Modelを恐れサービスを求め ドメインモデルは貧血に至る]]></title>
+        <id>hatenablog://entry/13574176438080714422</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/08/000748"/>
+        <updated>2022-04-07T15:07:48.000Z</updated>
+        <summary type="html"><![CDATA[この文章は祈りです。
+主にRuby on Railsアプリケーションを想定した話です。
+Ruby on Railsアプリケーションでは、Fat Model問題という問題が起きることがあります。
+ドメインオブジェクトが肥大化しメンテナンスしにくくなる問題です。
+Fat Model問題に対応するためにサービスレイヤーを導入することがあります。
+「ドメインモデル貧血症」と呼ばれているアンチパターンです。
+ドメインモデル貧血症
+ドメインのロジックをドメインオブジェクトの中に入れないという設計ルールに従っているのでしょう。その代わり、すべてのドメインロジックを含むサービスオブジェクト群が存在しているのです。
+
+
+Fat Modelを恐れよ
+Fat Modelは「単一責任原則」を満たしていないモデルです。
+単一責任原則 | プログラマが知るべき97のこと
+1つのサブシステムやモジュール、クラス、関数などに、変更する理由が2つ以上あるようではいけない
+
+
+重要なのは「変更する理由が2つあるということは、機能変更のためにあるクラスを変更すると別の機能が壊れる可能性がある」です*1。
+Fat Modelの問題は行数の多さではありません。
+複数の責務を持つため、あるドメインオブジェクトへの変更が、変更したくない機能にも影響を与える可能性があることです。
+Fat Modelがあるとアプリケーションの変更が難しくなります。
+地獄への道は善意で舗装されている
+サービスを求める
+どうすればFat Model問題を解消できるでしょうか？
+モデルが複数の責務を持っているのが問題です。
+責務をモデルの外に出してしまいましょう。
+各責務を担当するサービスオブジェクトを定義し、ロジックをサービスオブジェクトに移動します。
+1つのサービスオブジェクトは1つの責務を持ち、単一責任原則を満たします。
+すべてのFat …]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022/04/07(木)]]></title>
         <id>https://note.com/aesthetic_milo/n/nd9d2e31a43ac</id>
@@ -126,6 +163,16 @@ RADIO TAPOK - Цусима (Официальное видео 2021)
 前回の録音と比べると、安定感がでてそこそこ成長をしたような気がする。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日記]]></title>
+        <id>https://r7kamura.com/articles/2022-04-07-diary</id>
+        <link href="https://r7kamura.com/articles/2022-04-07-diary"/>
+        <updated>2022-04-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[最近何やっているかというと、ELDEN RINGのLv1での攻略をずっとやっている。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
