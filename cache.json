@@ -11348,6 +11348,16 @@
       "siteUrl": "https://blog.wesleyac.com",
       "articles": [
         {
+          "id": "https://blog.wesleyac.com/posts/subdomains-as-identity",
+          "author": null,
+          "description": "A common identity scheme for websites is to give users pages like example.com/username. Twitter, Instagram, Twitch, Pinterest, and many other websites use this model. Reddit, TikTok, Mastodon, Lobsters, and several others use a slightly more conservative version of this, with a prefix (either @ or u/) before the username.\nI think that in many cases, this is a mistake, and using subdomains, like username.example.com is better. Particularly, I think that the subdomain-based model is best for websites where there is minimal interaction between users (blogging, publishing, etc), or where that interaction happens via an open protocol.\nUsing subdomains for identity offers a few advantages:\nIt makes it easier for users to own their own identities, since you can very easily support using custom do…",
+          "link": "https://blog.wesleyac.com/posts/subdomains-as-identity",
+          "publishedOn": "2022-04-06T16:00:00.000Z",
+          "wordCount": null,
+          "title": "Subdomains as identity",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.wesleyac.com/posts/minify-and-gzip",
           "author": null,
           "description": "I've been doing a bit of work cleaning up the CSS on this blog in the past couple days — the CSS is from a template that I copied more than five years ago at this point, and it was pretty crufty even when I first got it.\nWhen I was poking around, I noticed that I had two separate media queries to check if the browser width was something that looked like a mobile device. This makes the CSS nicer to read, since the overrides can be right next to the things they're overriding, but it also makes the resulting CSS slightly larger. I minify my CSS using tdewolff/minify during the build, so I checked to see if it would collapse the two media query blocks into one. Doing so would be a somewhat complicated optimization, since the order that CSS rules are defined in can sometimes matter, but it woul…",
