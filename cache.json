@@ -1125,6 +1125,21 @@
       "siteUrl": "https://gfx.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438080750576",
+          "author": null,
+          "description": "BPF CO-RE (CO-RE: Compile Once , Run Everywhere) を実行するにはLinux kernelがBTF (BPF Type Format) つきでビルドされている必要があります。\nUbunt 20.04 の最初のリリースではBTFは有効になっていませんでしたが、アップデートで配信されているカーネル 5.13.0-39-generic ではBTFが有効なのでカーネルのアップデートをするだけでBPF CO-REが使えます。\nGitHub Actionsの場合、デフォルトのカーネルではなくAzureのためのカスタムカーネルですが、こちらも最近のインスタンスはBTFが有効になっているので、特別なことをしなくても BPF CO-RE をテストできそうです。\ngithub.com\nci.yml - workflow file、ただし実際には make を呼ぶだけ\nMakefile - 依存関係のインストールやビルドなど\nこれで BPF CO-RE を使ったツールも開発し放題ですね！",
+          "link": "https://gfx.hatenablog.com/entry/2022/04/07/205910",
+          "publishedOn": "2022-04-07T11:59:10.000Z",
+          "wordCount": 182,
+          "title": "BPF CO-RE は GitHub Actions の Ubuntu 20.04 インスタンスでテストできそう",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438078074955",
           "author": null,
           "description": "追記: これをしてもはてなブログのヘッダでログイン状態にならない現象が起きてしまうようです。もはやFirefoxのバグなのかはてなブログのバグなのかわかりませんが…。\nFirefoxの「プライバシーとセキュリティ」を変えると次のようにタブの再読み込みを行うUIが出ますが、少なくともFirefox v98現在はタブの再読み込みだけではなく Firefox自体の再起動が必要です。\n\nそうしないと少なくとも一部のクッキーの挙動などが変わり、「はてなブログ」のヘッダではてなアカウントがログイン状態にならないようです（はてなブログはFirefoxのプライバシー設定が「厳格」だとヘッダがログイン状態になりません）。\nこのせいでずっとはてなブログがFirefox未対応だと勘違いしていたのですが、実際にはどうもFirefoxのバグっぽいなということがわかった次第です。",

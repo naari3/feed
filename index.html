@@ -78,6 +78,32 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gfx.hatenablog.com/" target="_blank"
+              rel="noopener">Islands in the byte stream</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">BPF CO-RE は GitHub Actions の Ubuntu 20.04 インスタンスでテストできそう</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gfx.hatenablog.com/entry/2022/04/07/205910" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>BPF CO-RE (CO-RE: Compile Once , Run Everywhere) を実行するにはLinux kernelがBTF (BPF Type Format) つきでビルドされている必要があります。
+Ubunt 20.04 の最初のリリースではBTFは有効になっていませんでしたが、アップデートで配信されているカーネル 5.13.0-39-generic ではBTFが有効なのでカーネルのアップデートをするだけでBPF CO-REが使えます。
+GitHub Actionsの場合、デフォルトのカーネルではなくAzureのためのカスタムカーネルですが、こちらも最近のインスタンスはBTFが有効になっているので、特別なことをしなくても BPF CO-RE をテストできそうです。
+github.com
+ci.yml - workflow file、ただし実際には make を呼ぶだけ
+Makefile - 依存関係のインストールやビルドなど
+これで BPF CO-RE を使ったツールも開発し放題ですね！</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank"
               rel="noopener">メルカリエンジニアリングブログ</a></h3>
           <section class="articles-per-source">
@@ -30103,7 +30129,7 @@ Lambdaの実行時エラーをChatbotでSlackに通知するのが便利すぎ�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-07T11:06:48.546Z">2022-04-07T11:06:48.546Z</time>
+    <time id="build-timestamp" datetime="2022-04-07T12:04:50.574Z">2022-04-07T12:04:50.574Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
