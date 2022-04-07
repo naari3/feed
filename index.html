@@ -30180,45 +30180,11 @@ ProductPlanでは、なんと37個もの意思決定フレームワークが紹�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
-              rel="noopener">ボクココ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Amazon CloudWatch でのエラー通知</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/01/08/142657" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ども、@kimhiom です。そしてあけましておめでとうございます、今年もよろしくお願いします。
-
-AWS Lambda でエラーが起きた時、どのように通知を受けているだろうか。ものすごい一般的な内容にもかかわらず、AWS 側の設定が多くて面倒だったので、参考サイトの補足として執筆時点で最新の対応について記す。
-目標
-やりたかったことはものすごくシンプルで、「Lambda 内で例外エラーが発生した際に Slack へ通知する」というもの。
-今まで自前で全コードを try で囲って、rescue で Slack 通知させる実装をしていたけど、とても探しづらい問題があった。
-具体的にはエラー通知を Cloudwatch の ログストリーム単位(ex: [$LATEST]f76663ac408647ccb336a269aad132aa)でしか場所を特定できず、詳細のエラー内容を見るには Cloudwatch からログストリームのページで対象の時間までスクロールしたりジャンプさせる手間があった。
-・・・こんな一般的なこと(バグのログを閲覧すること)は AWS 側でなんとかしてほしいなと感じていた。
-対応
-調べると、それだけのために自前の AWS Lambda メソッドをあげて実行させる方法がたくさん掲載されており、「面倒すぎる・・」と感じた。
-それが、&quot;AWS Lambda エラー Cloudwatch&quot; 関連の記事を1年以内に限定して対応方法を調べると、どうやら AWS Chatbot が登場したおかげで、より簡単に設定ができるようだった。参考になったページ
-Lambdaの実行時エラーをChatbotでSlackに通知するのが便利すぎる話 | public memo
-その中で、自分がはまったところだけ、この記事に記載しておく。
-エラー詳細がどうやっても見えない問題
-まず IAM …</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220108/20220108142207.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-07T17:05:12.503Z">2022-04-07T17:05:12.503Z</time>
+    <time id="build-timestamp" datetime="2022-04-07T18:01:51.633Z">2022-04-07T18:01:51.633Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
