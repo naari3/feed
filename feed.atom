@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-08T04:01:50.810Z</updated>
+    <updated>2022-04-08T05:01:48.137Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Pull RequestをKubernetesで気軽に試せるOSS、KubeTempuraをリリースしました]]></title>
+        <id>20584</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220408-99abbab0d0/"/>
+        <updated>2022-04-08T13:02:11.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、Mercari US Microservices Platform Teamの矢口です。 Mercariではこのたびテスト環境を簡単に作成できるツールをOSSとして公開しました！ KubeTempuraとは  […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Mercoin Talk 〜NFT&#038;ブロックチェーン最新トピックとメルカリグループの取り組み〜 を開催しました！ #mercoin_talk]]></title>
         <id>19892</id>
@@ -21455,28 +21465,6 @@ The post 音MAD制作とコーデック ～場面に応じて最適なコーデ�
 低身長だけれども大型バイクに乗りたい方、よかったら試してみてください。]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vivado HLSリビジョンオーバーフロー問題のパッチの当て方]]></title>
-        <id>hatenablog://entry/13574176438050787291</id>
-        <link href="https://fumimaker.net/entry/2022/01/09/010442?utm_source=feed"/>
-        <updated>2022-01-08T16:04:42.000Z</updated>
-        <summary type="html"><![CDATA[2022年になったことでuint32_tからリビジョンがオーバーフローし、論理合成ができないバグが発生していました。
-パッチが公開されました。
-https://support.xilinx.com/s/article/76960?language=ja
-症状
-オーバーフローバグがあるときこのようなエラーが発生します。例えばUltra96 MPSoCでAXI GPIOをつなげただけの単純なデザインではこのようなエラーがでます。HLSを使うデザインは全滅します。
-TPGやDemosaicなどが失敗している
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not found '/home/fumi/fixstars/fixstars.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not …]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
 </feed>

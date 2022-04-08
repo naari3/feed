@@ -1102,20 +1102,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20201003/20201003015020.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438050787291",
-          "author": null,
-          "description": "2022年になったことでuint32_tからリビジョンがオーバーフローし、論理合成ができないバグが発生していました。\nパッチが公開されました。\nhttps://support.xilinx.com/s/article/76960?language=ja\n症状\nオーバーフローバグがあるときこのようなエラーが発生します。例えばUltra96 MPSoCでAXI GPIOをつなげただけの単純なデザインではこのようなエラーがでます。HLSを使うデザインは全滅します。\nTPGやDemosaicなどが失敗している\nScanning sources...\nFinished scanning sources\nINFO: [IP_Flow 19-234] Refreshing IP repositories\nINFO: [IP_Flow 19-1704] No user IP repositories specified\nINFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.\nWARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not found '/home/fumi/fixstars/fixstars.srcs/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0.dcp'. Please regenerate to continue.\nWARNING: [IP_Flow 19-3664] IP 'design_1_v_demosaic_0_0' generated file not …",
-          "link": "https://fumimaker.net/entry/2022/01/09/010442?utm_source=feed",
-          "publishedOn": "2022-01-08T16:04:42.000Z",
-          "wordCount": 579,
-          "title": "Vivado HLSリビジョンオーバーフロー問題のパッチの当て方",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20220109/20220109010135.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -11940,6 +11926,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml/",
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
+        {
+          "id": "20584",
+          "author": null,
+          "description": "こんにちは、Mercari US Microservices Platform Teamの矢口です。 Mercariではこのたびテスト環境を簡単に作成できるツールをOSSとして公開しました！ KubeTempuraとは  […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220408-99abbab0d0/",
+          "publishedOn": "2022-04-08T13:02:11.000Z",
+          "wordCount": 437,
+          "title": "Pull RequestをKubernetesで気軽に試せるOSS、KubeTempuraをリリースしました",
+          "imageUrl": "/img/ogp/ogp_a.jpg"
+        },
         {
           "id": "19892",
           "author": null,
