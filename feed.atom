@@ -2,10 +2,106 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-09T13:06:04.559Z</updated>
+    <updated>2022-04-09T14:02:14.185Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[PHPで作っているTODOリストアプリケーションにPRGパターンを適用する]]></title>
+        <id>hatenablog://entry/13574176438081414217</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/09/225738"/>
+        <updated>2022-04-09T13:57:38.000Z</updated>
+        <summary type="html"><![CDATA[PHPでTODOリストをつくる、追加まで - @ledsun blog で、タスクを追加したときの画面遷移にPRGパターンを使うと良いことに気がつきました。
+次のように実装しました。
+<!DOCTYPE html>
+
+<head>
+  <title>TODOリスト</title>
+</head>
+
+<body>
+  <form method="post">
+    <input type="text" name="name" autofocus>
+    <button>追加</button>
+  </form>
+  <ul>
+    <?php
+    foreach (restore_todo_list() as $todo) {
+      echo "<li>" . $todo . "</li>";
+    }
+    ?>
+  </ul>
+</body>
+
+<?php
+if ($todo = $_POST["name"]) {
+  $todo_list = restore_todo_list();
+  array_unshift($todo_list, $todo);
+  save_todo_list($todo_list);
+
+  // GETリクエストするようにリダイレクトします。
+  header('Location: todo.php');
+}
+
+function restore_todo_list()
+{
+  return array_filter(explode(",", $_COOKIE["todo_list"]));
+}
+
+function save_todo_list($todo_list)
+{
+  $todo_list_str = array_reduce($todo_list, function ($carry, $todo) {
+    return $carry . "," . $todo;
+  });
+  setcookie("todo_list", $todo_list_str);
+}
+?>
+
+
+
+このコードを見ているとToDoリストがデータとその操作を持つオブジェクトに見えてきました。
+つまり、TodoListクラスにして、restore/saveメソッドを持たせたいです。
+次はPHPでクラスを書く事に挑戦しようと思います。
+参考
+How do I make a redirect in PHP? - Stack Overflow]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022/04/09(土)]]></title>
+        <id>https://note.com/aesthetic_milo/n/n9396aaa67639</id>
+        <link href="https://note.com/aesthetic_milo/n/n9396aaa67639"/>
+        <updated>2022-04-09T13:56:28.000Z</updated>
+        <summary type="html"><![CDATA[午前中まじでずっとパソコンにへばりついてDLsiteを漁りまくってて時間溶けた
+結局午後から焦って勉強したけど2時間ぐらいしかやれてない泣 終わった 色欲は人を狂わせる
+あと、めちゃ好きなイラストレーターのFanboxに入った
+特典としてフォーム入力してリクエスト送れば 過去イラストのデータ送ります みたいなサービスがあって 今日の午前にリクエスト送信してみたけど まだ返事こない泣
+ちゃんとフォーム送れてたかな
+続きをみる]]></summary>
+        <author>
+            <name>議会制</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最強勇者はお払い箱→魔王になったらずっと俺の無双ターン 5]]></title>
+        <id>hatenablog://entry/13574176438081403310</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/09/222051"/>
+        <updated>2022-04-09T13:20:51.000Z</updated>
+        <summary type="html"><![CDATA[最強勇者はお払い箱→魔王になったらずっと俺の無双ターン 5巻 (デジタル版ガンガンコミックスＵＰ！)
+
+作者:澄守彩,jimmy,まさゆみ
+スクウェア・エニックス
+Amazon
+
+前巻の終わりで、帝国からの刺客を返り討ちにしました。
+そっから帝国に占領された王都に逆襲しに行って、表紙の通りボスっぽいキャラとの対決まで行きます。
+お話がサクサク進んでいきます。
+伏線を必然的な演出っぽく埋め込むの上手いです。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[お知らせ：お題箱回が「一問一答シリ...]]></title>
         <id>https://note.com/sizes/n/ncd29dc583bca</id>

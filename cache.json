@@ -4094,6 +4094,36 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438081414217",
+          "author": null,
+          "description": "PHPでTODOリストをつくる、追加まで - @ledsun blog で、タスクを追加したときの画面遷移にPRGパターンを使うと良いことに気がつきました。\n次のように実装しました。\n<!DOCTYPE html>\n\n<head>\n  <title>TODOリスト</title>\n</head>\n\n<body>\n  <form method=\"post\">\n    <input type=\"text\" name=\"name\" autofocus>\n    <button>追加</button>\n  </form>\n  <ul>\n    <?php\n    foreach (restore_todo_list() as $todo) {\n      echo \"<li>\" . $todo . \"</li>\";\n    }\n    ?>\n  </ul>\n</body>\n\n<?php\nif ($todo = $_POST[\"name\"]) {\n  $todo_list = restore_todo_list();\n  array_unshift($todo_list, $todo);\n  save_todo_list($todo_list);\n\n  // GETリクエストするようにリダイレクトします。\n  header('Location: todo.php');\n}\n\nfunction restore_todo_list()\n{\n  return array_filter(explode(\",\", $_COOKIE[\"todo_list\"]));\n}\n\nfunction save_todo_list($todo_list)\n{\n  $todo_list_str = array_reduce($todo_list, function ($carry, $todo) {\n    return $carry . \",\" . $todo;\n  });\n  setcookie(\"todo_list\", $todo_list_str);\n}\n?>\n\n\n\nこのコードを見ているとToDoリストがデータとその操作を持つオブジェクトに見えてきました。\nつまり、TodoListクラスにして、restore/saveメソッドを持たせたいです。\n次はPHPでクラスを書く事に挑戦しようと思います。\n参考\nHow do I make a redirect in PHP? - Stack Overflow",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/09/225738",
+          "publishedOn": "2022-04-09T13:57:38.000Z",
+          "wordCount": 217,
+          "title": "PHPで作っているTODOリストアプリケーションにPRGパターンを適用する",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/13574176438081403310",
+          "author": null,
+          "description": "最強勇者はお払い箱→魔王になったらずっと俺の無双ターン 5巻 (デジタル版ガンガンコミックスＵＰ！)\n\n作者:澄守彩,jimmy,まさゆみ\nスクウェア・エニックス\nAmazon\n\n前巻の終わりで、帝国からの刺客を返り討ちにしました。\nそっから帝国に占領された王都に逆襲しに行って、表紙の通りボスっぽいキャラとの対決まで行きます。\nお話がサクサク進んでいきます。\n伏線を必然的な演出っぽく埋め込むの上手いです。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/09/222051",
+          "publishedOn": "2022-04-09T13:20:51.000Z",
+          "wordCount": 113,
+          "title": "最強勇者はお払い箱→魔王になったらずっと俺の無双ターン 5",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51e0N8M73nL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51e0N8M73nL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438080714422",
           "author": null,
           "description": "この文章は祈りです。\n主にRuby on Railsアプリケーションを想定した話です。\nRuby on Railsアプリケーションでは、Fat Model問題という問題が起きることがあります。\nドメインオブジェクトが肥大化しメンテナンスしにくくなる問題です。\nFat Model問題に対応するためにサービスレイヤーを導入することがあります。\n「ドメインモデル貧血症」と呼ばれているアンチパターンです。\nドメインモデル貧血症\nドメインのロジックをドメインオブジェクトの中に入れないという設計ルールに従っているのでしょう。その代わり、すべてのドメインロジックを含むサービスオブジェクト群が存在しているのです。\n\n\nFat Modelを恐れよ\nFat Modelは「単一責任原則」を満たしていないモデルです。\n単一責任原則 | プログラマが知るべき97のこと\n1つのサブシステムやモジュール、クラス、関数などに、変更する理由が2つ以上あるようではいけない\n\n\n重要なのは「変更する理由が2つあるということは、機能変更のためにあるクラスを変更すると別の機能が壊れる可能性がある」です*1。\nFat Modelの問題は行数の多さではありません。\n複数の責務を持つため、あるドメインオブジェクトへの変更が、変更したくない機能にも影響を与える可能性があることです。\nFat Modelがあるとアプリケーションの変更が難しくなります。\n地獄への道は善意で舗装されている\nサービスを求める\nどうすればFat Model問題を解消できるでしょうか？\nモデルが複数の責務を持っているのが問題です。\n責務をモデルの外に出してしまいましょう。\n各責務を担当するサービスオブジェクトを定義し、ロジックをサービスオブジェクトに移動します。\n1つのサービスオブジェクトは1つの責務を持ち、単一責任原則を満たします。\nすべてのFat …",
@@ -7159,6 +7189,16 @@
       "feedUrl": "https://note.com/aesthetic_milo/rss",
       "siteUrl": "https://note.com/aesthetic_milo",
       "articles": [
+        {
+          "id": "https://note.com/aesthetic_milo/n/n9396aaa67639",
+          "author": null,
+          "description": "午前中まじでずっとパソコンにへばりついてDLsiteを漁りまくってて時間溶けた\n結局午後から焦って勉強したけど2時間ぐらいしかやれてない泣 終わった 色欲は人を狂わせる\nあと、めちゃ好きなイラストレーターのFanboxに入った\n特典としてフォーム入力してリクエスト送れば 過去イラストのデータ送ります みたいなサービスがあって 今日の午前にリクエスト送信してみたけど まだ返事こない泣\nちゃんとフォーム送れてたかな\n続きをみる",
+          "link": "https://note.com/aesthetic_milo/n/n9396aaa67639",
+          "publishedOn": "2022-04-09T13:56:28.000Z",
+          "wordCount": 53,
+          "title": "2022/04/09(土)",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/76097485/rectangle_large_type_2_407d49b8fc6eeb37250a795bb4a3c67c.png?width=800"
+        },
         {
           "id": "https://note.com/aesthetic_milo/n/n3944264277b2",
           "author": null,
