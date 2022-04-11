@@ -5402,20 +5402,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438051865069",
-          "author": null,
-          "description": "詳解Rustプログラミング\n\n作者:Tim McNamara\n翔泳社\nAmazon\n\n2.7 プロジェクト：マンデルブロー集合のレンダリングのサンプルプログラムを動かしたいです。\nnumというクレートを使うようです。\nrustにはクレートと呼ばれるJavaScriptでのnpmパッケージのようなものがあり、インストールアンインストールにはnpmコマンドのようなcargoコマンドを使うようです。\n今回は、numクレートを使うためにcargo add numします。\nエラーが起きます。\ncargo addのエラー\ncargo addを使うには、先にcargo-editを入れる必要がありました。\n実行すると何かがたくさん入ってきます。\nPS C:\\Users\\led_l\\rust_land\\mandelbrot> cargo install cargo-edit\n    Updating crates.io index\n  Downloaded cargo-edit v0.8.0\n  Downloaded 1 crate (61.1 KB) in 0.87s\n  Installing cargo-edit v0.8.0\n  Downloaded addr2line v0.17.0\n  Downloaded adler v1.0.2\n  Downloaded aho-corasick v0.7.18\n  Downloaded base64 v0.13.0\n  Downloaded cargo-platform v0.1.2\n  Downloaded clap v2.34.0\n  Downloaded dirs-sys-next v0.1.2\n  Downloaded gimli v0.26.1\n  Downloaded heck v0.3.3\n  Downloaded itoa v…",
-          "link": "https://ledsun.hatenablog.com/entry/2022/01/12/050139",
-          "publishedOn": "2022-01-11T20:01:39.000Z",
-          "wordCount": 825,
-          "title": "cargo-edit",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220112/20220112044502.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },

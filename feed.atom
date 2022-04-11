@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-11T07:02:03.534Z</updated>
+    <updated>2022-04-11T08:06:59.162Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -21326,44 +21326,6 @@ staff.hatenablog.com
 続きをみる]]></summary>
         <author>
             <name>河内一馬</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[cargo-edit]]></title>
-        <id>hatenablog://entry/13574176438051865069</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/12/050139"/>
-        <updated>2022-01-11T20:01:39.000Z</updated>
-        <summary type="html"><![CDATA[詳解Rustプログラミング
-
-作者:Tim McNamara
-翔泳社
-Amazon
-
-2.7 プロジェクト：マンデルブロー集合のレンダリングのサンプルプログラムを動かしたいです。
-numというクレートを使うようです。
-rustにはクレートと呼ばれるJavaScriptでのnpmパッケージのようなものがあり、インストールアンインストールにはnpmコマンドのようなcargoコマンドを使うようです。
-今回は、numクレートを使うためにcargo add numします。
-エラーが起きます。
-cargo addのエラー
-cargo addを使うには、先にcargo-editを入れる必要がありました。
-実行すると何かがたくさん入ってきます。
-PS C:\Users\led_l\rust_land\mandelbrot> cargo install cargo-edit
-    Updating crates.io index
-  Downloaded cargo-edit v0.8.0
-  Downloaded 1 crate (61.1 KB) in 0.87s
-  Installing cargo-edit v0.8.0
-  Downloaded addr2line v0.17.0
-  Downloaded adler v1.0.2
-  Downloaded aho-corasick v0.7.18
-  Downloaded base64 v0.13.0
-  Downloaded cargo-platform v0.1.2
-  Downloaded clap v2.34.0
-  Downloaded dirs-sys-next v0.1.2
-  Downloaded gimli v0.26.1
-  Downloaded heck v0.3.3
-  Downloaded itoa v…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
 </feed>
