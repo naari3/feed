@@ -78,6 +78,95 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank"
+              rel="noopener">@ledsun blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">楽観的ロックを使ったRuby on Railsアプリケーションを作って動きを確かめる</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/04/12/234454" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>昔からある機能です。
+よくわかっていないので、説明してみます。
+Railsガイドの説明
+Railsガイドでは次のように説明されています。
+Active Record クエリインターフェイス - Railsガイド
+楽観的ロックでは、複数のユーザーが同じレコードを同時編集することを許し、データの衝突が最小限であることを仮定しています。この方法では、レコードがオープンされてから変更されたことがあるかどうかをチェックします。そのような変更が行われ、かつ更新が無視された場合、ActiveRecord::StaleObjectError例外が発生します。
+
+
+いまいちユースケースがピンと来ません。
+使い方
+Railsガイド中では次のような短いサンプルがあります。
+c1 &#x3D; Customer.find(1)
+c2 &#x3D; Customer.find(1)
+
+c1.first_name &#x3D; &quot;Sandra&quot;
+c1.save
+
+c2.first_name &#x3D; &quot;Michael&quot;
+c2.save # ActiveRecord::StaleObjectErrorが発生
+
+
+
+これだとRuby on Railsアプリケーションの中でどう使えば良いのかよくわかりません。
+画面からの編集リクエストとc1とc2の関係が想像できません。
+用途
+GitHubのWikiが楽観的ロックを使っていそうな動作だったような、おぼろげな記憶があります。
+確かめてみると、現在は次のようにフラッシュメッセージがPushされます。
+Gihub Wikiを編集中に保存された時にはフラッシュメッセージが表示されます。
+記憶の中のイメージでは、Saveボタンを押したときに保存失敗していました。
+想像するに、ユースケースは、ある程度長文を保持するモデルで編集内容を上書きされたくない時のようです。
+便利にするなら、マージするなり衝突したDiffを表示するなりしたいところです。
+そこまで凝った実装をしないで、最低限、別のユーザーからの変更があったことをユーザーに伝えるための機能です。
+楽観的ロックを使ったRuby on Railsアプリケーションを作る
+なんとなく用途がイメージできたので、実際にアプリケーションを作ってみます。
+長文を保持するので、記事モデルを一つ持つRuby on Railsアプリケーションを作ります。
+楽観的ロックはlock_version カラムさえあれば動作します。
+scaffold するときに lock_version カラムも指定しておきます。
+bundle exec rails new -MCAJT --skip-active-job --skip-active-storage . 
+bin/rails g scaffold Article title:string content:text lock_version:integer
+bin/rails db:prepare
+
+
+
+railsをインストールしていなければbundel initして出来たGemfileの中のコメントを外してbundleしてください。
+触ってみる
+次のコマンドでRuby on Railsアプリケーションを起動します。
+bin/rails s
+
+
+
+http://localhost:3000/articles を開くと記事の一覧画面です。
+記事の一覧画面
+リンクをたどって記事作成画面を表示します。
+記事作成画面
+scaffold するときに lock_version カラムも指定したので、lock_versionが編集出来ます。
+適当に記事を作ります。
+記事の作成に成功しました
+記事の本文を変更してて保存してみましょう。
+記事の本文を変えました
+lock_versionを変えていないのに、勝手にインクリメントされました。
+もう一度記事の本文を変更してみましょう。
+今回はlock_versionも一緒に変更し、保存します。
+ActiveRecord::StaleObjectErrorが発生します
+なんか狐につままれたよう気分になりますが、Ruby on Railsアプリケーションの外側でlock_version が変更されたらActiveRecord::StaleObjectErrorが発生します。
+以上が楽観的ロックの動作です。
+今日はここまで
+楽観的ロックの動作はわかりました。
+実際のアプリケーションでつかうにはもう少し工夫が必要そうです。
+参考
+Optimistic lock on Ruby on Rails - DEV Community</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220412/20220412014550.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/aesthetic_milo" target="_blank"
               rel="noopener">議会制</a></h3>
           <section class="articles-per-source">
@@ -30132,7 +30221,7 @@ www.youtube.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-12T14:06:59.629Z">2022-04-12T14:06:59.629Z</time>
+    <time id="build-timestamp" datetime="2022-04-12T15:03:08.189Z">2022-04-12T15:03:08.189Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -3986,6 +3986,21 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438082095243",
+          "author": null,
+          "description": "昔からある機能です。\nよくわかっていないので、説明してみます。\nRailsガイドの説明\nRailsガイドでは次のように説明されています。\nActive Record クエリインターフェイス - Railsガイド\n楽観的ロックでは、複数のユーザーが同じレコードを同時編集することを許し、データの衝突が最小限であることを仮定しています。この方法では、レコードがオープンされてから変更されたことがあるかどうかをチェックします。そのような変更が行われ、かつ更新が無視された場合、ActiveRecord::StaleObjectError例外が発生します。\n\n\nいまいちユースケースがピンと来ません。\n使い方\nRailsガイド中では次のような短いサンプルがあります。\nc1 = Customer.find(1)\nc2 = Customer.find(1)\n\nc1.first_name = \"Sandra\"\nc1.save\n\nc2.first_name = \"Michael\"\nc2.save # ActiveRecord::StaleObjectErrorが発生\n\n\n\nこれだとRuby on Railsアプリケーションの中でどう使えば良いのかよくわかりません。\n画面からの編集リクエストとc1とc2の関係が想像できません。\n用途\nGitHubのWikiが楽観的ロックを使っていそうな動作だったような、おぼろげな記憶があります。\n確かめてみると、現在は次のようにフラッシュメッセージがPushされます。\nGihub Wikiを編集中に保存された時にはフラッシュメッセージが表示されます。\n記憶の中のイメージでは、Saveボタンを押したときに保存失敗していました。\n想像するに、ユースケースは、ある程度長文を保持するモデルで編集内容を上書きされたくない時のようです。\n便利にするなら、マージするなり衝突したDiffを表示するなりしたいところです。\nそこまで凝った実装をしないで、最低限、別のユーザーからの変更があったことをユーザーに伝えるための機能です。\n楽観的ロックを使ったRuby on Railsアプリケーションを作る\nなんとなく用途がイメージできたので、実際にアプリケーションを作ってみます。\n長文を保持するので、記事モデルを一つ持つRuby on Railsアプリケーションを作ります。\n楽観的ロックはlock_version カラムさえあれば動作します。\nscaffold するときに lock_version カラムも指定しておきます。\nbundle exec rails new -MCAJT --skip-active-job --skip-active-storage . \nbin/rails g scaffold Article title:string content:text lock_version:integer\nbin/rails db:prepare\n\n\n\nrailsをインストールしていなければbundel initして出来たGemfileの中のコメントを外してbundleしてください。\n触ってみる\n次のコマンドでRuby on Railsアプリケーションを起動します。\nbin/rails s\n\n\n\nhttp://localhost:3000/articles を開くと記事の一覧画面です。\n記事の一覧画面\nリンクをたどって記事作成画面を表示します。\n記事作成画面\nscaffold するときに lock_version カラムも指定したので、lock_versionが編集出来ます。\n適当に記事を作ります。\n記事の作成に成功しました\n記事の本文を変更してて保存してみましょう。\n記事の本文を変えました\nlock_versionを変えていないのに、勝手にインクリメントされました。\nもう一度記事の本文を変更してみましょう。\n今回はlock_versionも一緒に変更し、保存します。\nActiveRecord::StaleObjectErrorが発生します\nなんか狐につままれたよう気分になりますが、Ruby on Railsアプリケーションの外側でlock_version が変更されたらActiveRecord::StaleObjectErrorが発生します。\n以上が楽観的ロックの動作です。\n今日はここまで\n楽観的ロックの動作はわかりました。\n実際のアプリケーションでつかうにはもう少し工夫が必要そうです。\n参考\nOptimistic lock on Ruby on Rails - DEV Community",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/12/234454",
+          "publishedOn": "2022-04-12T14:44:54.000Z",
+          "wordCount": 244,
+          "title": "楽観的ロックを使ったRuby on Railsアプリケーションを作って動きを確かめる",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220412/20220412014550.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220412/20220412014550.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438081420641",
           "author": null,
           "description": "ライドンキング（８） (シリウスコミックス)\n\n作者:馬場康誌\n講談社\nAmazon\n\n時節柄悪役のイメージが一段と強くなった主人公、魔導院の魔導士と大激突。",
