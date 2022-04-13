@@ -12814,6 +12814,16 @@
       "siteUrl": "https://r7kamura.com/",
       "articles": [
         {
+          "id": "https://r7kamura.com/articles/2022-04-13-rails-7-alert-notice",
+          "author": null,
+          "description": "今月もRailsアプリをひとつ7.0に上げようと思って作業していたところ、どうも #notice というアクションを使って実現されているエンドポイントがRails 7.0で動かないということが分かった。",
+          "link": "https://r7kamura.com/articles/2022-04-13-rails-7-alert-notice",
+          "publishedOn": "2022-04-13T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Rails 7でalertやnoticeというアクション名が使えないやつ",
+          "imageUrl": null
+        },
+        {
           "id": "https://r7kamura.com/articles/2022-04-10-rails-deprecation-where-not",
           "author": null,
           "description": "rubocop-rails_deprecationに、RailsDeprecation/WhereNotというCopを追加した。",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-13T10:07:10.994Z</updated>
+    <updated>2022-04-13T11:01:47.175Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -117,6 +117,16 @@ Amazon
 会社でTOEICを受けて、Listening 320点、Reading 360点で合計680点だった。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rails 7でalertやnoticeというアクション名が使えないやつ]]></title>
+        <id>https://r7kamura.com/articles/2022-04-13-rails-7-alert-notice</id>
+        <link href="https://r7kamura.com/articles/2022-04-13-rails-7-alert-notice"/>
+        <updated>2022-04-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[今月もRailsアプリをひとつ7.0に上げようと思って作業していたところ、どうも #notice というアクションを使って実現されているエンドポイントがRails 7.0で動かないということが分かった。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
