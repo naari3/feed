@@ -2,10 +2,174 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-13T13:08:24.654Z</updated>
+    <updated>2022-04-13T14:06:33.749Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[楽観的ロックをあつかう編集画面]]></title>
+        <id>hatenablog://entry/13574176438082369206</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/223646"/>
+        <updated>2022-04-13T13:36:46.000Z</updated>
+        <summary type="html"><![CDATA[楽観的ロックを使ったRuby on Railsアプリケーションを作って動きを確かめる - @ledsun blog の続きです。
+楽観的ロックで競合が起きるとActiveRecord::StaleObjectErrorが起きます。
+エラー画面が表示されます。
+編集画面に競合エラーを表示
+ActiveRecord::StaleObjectErrorをハンドリングして次のように、編集画面にメッセージを表示してみましょう。
+フラッシュメッセージを表示して編集内容を復元します。
+ArticlesController#update に例外処理を追加
+つぎのように例外処理を追加します。
+def update
+  respond_to do |format|
+    if @article.update(article_params)
+      format.html { redirect_to article_url(@article), notice: "Article was successfully updated." }
+      format.json { render :show, status: :ok, location: @article }
+    else
+      format.html { render :edit, status: :unprocessable_entity }
+      format.json { render json: @article.errors, status: :unprocessable_entity }
+    end
+  end
+rescue ActiveRecord::StaleObjectError
+  @article.reload.attributes = article_params.reject{ _1 == 'lock_version' }
+
+  flash.now[:error] = 'Another user has made a change to that record since you accessed the edit form.'
+  render :edit, status: :conflict
+end
+
+
+
+やっていることは次の通りです。
+lock_versionを最新の値に更新
+編集内容を復元
+フラッシュメッセージを設定
+編集画面を表示
+app/views/articles/edit.html.erb にフラッシュメッセージを追加
+Scaffoldで生成した編集画面ではフラッシュメッセージが表示されません。
+app/views/articles/edit.html.erbにフラッシュメッセージの表示を追加します。
+<p style="color: red"><%= flash[:error] %></p>
+
+<h1>Editing article</h1>
+
+<%= render "form", article: @article %>
+
+<br>
+
+<div>
+  <%= link_to "Show this article", @article %> |
+  <%= link_to "Back to articles", articles_path %>
+</div>
+
+
+
+一番上の行です。
+なにも考えずにUpdate Articleボタンを押すと更新されます。
+別ユーザーが編集した内容を表示してあげると、より便利になりそうです。
+参考
+A Guide to Optimistic Locking – EngineYard
+【Rails】flashの使い方 - Qiita]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[処刑された賢者はリッチに転職して侵略戦争を始める 5]]></title>
+        <id>hatenablog://entry/13574176438082656218</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/222347"/>
+        <updated>2022-04-13T13:23:47.000Z</updated>
+        <summary type="html"><![CDATA[処刑された賢者はリッチに転生して侵略戦争を始める 5巻 (デジタル版ガンガンコミックスＵＰ！)
+
+作者:結城絡繰,國友翔太郎,白狼
+スクウェア・エニックス
+Amazon
+
+帝国の雷撃使いと大激突。骨（表紙にいる骨のモンスター）大活躍。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ひとりぼっちの異世界攻略 11]]></title>
+        <id>hatenablog://entry/13574176438082654949</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/221931"/>
+        <updated>2022-04-13T13:19:31.000Z</updated>
+        <summary type="html"><![CDATA[ひとりぼっちの異世界攻略 11 (ガルドコミックス)
+
+作者:びび,五示正司
+オーバーラップ
+Amazon
+
+暗殺者の凶刃から王女を守れるのか！
+発刊ペースがやたら速くありませんか？]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[異世界ヤンキー八王子 3]]></title>
+        <id>hatenablog://entry/13574176438082653279</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/221459"/>
+        <updated>2022-04-13T13:14:59.000Z</updated>
+        <summary type="html"><![CDATA[異世界ヤンキー八王子 ： 3 (アクションコミックス)
+
+作者:奥嶋ひろまさ
+双葉社
+Amazon
+
+精神年齢8歳の遊び人の力でサッキュバスをやっつけろ！
+ヤンキーに色仕掛けは通じねえ！！]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022/04/13(水)]]></title>
+        <id>https://note.com/aesthetic_milo/n/n93f5ed5878e8</id>
+        <link href="https://note.com/aesthetic_milo/n/n93f5ed5878e8"/>
+        <updated>2022-04-13T13:11:17.000Z</updated>
+        <summary type="html"><![CDATA[学校あった
+疲れた
+体育でたくさん走った
+ロング・スロー・ディスタンスっていって　長い距離をゆっくり走るトレーニングをやったんだけど これLSDって略すらしい
+やべー
+続きをみる]]></summary>
+        <author>
+            <name>議会制</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WSLにDockerをインストールする]]></title>
+        <id>hatenablog://entry/13574176438082652181</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/221055"/>
+        <updated>2022-04-13T13:10:55.000Z</updated>
+        <summary type="html"><![CDATA[結論から言うと、なんのことはなくUbuntuにインストールするのと同じです。
+Dockerをインストール
+Install Docker Engine on Debian | Docker Documentation に従って、インストールします。
+普段fish-shellを使っています。
+読み替えが面倒臭いので、各コマンドはbashで実行しました。
+2回目のapt-get updateをすると、次のようなエラーが出ます。
+Err:7 https://download.docker.com/linux/debian focal Release
+  404  Not Found [IP: 13.249.170.87 443]
+
+
+
+Can't install docker on Ubuntu 20.04 - #9 by flostar3000 - Open Source Registry - Docker Community Forums によると
+deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian   focal stable
+
+
+
+を
+deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu   eoan stable
+
+
+
+に変えると良さそうです。
+動作確認します。
+ledsun@MSI:~►sudo docker run hello-world
+Unable to find image 'hello-world:latest'…]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RubyMineからWSL上のRubyを動かす]]></title>
         <id>hatenablog://entry/13574176438082645075</id>

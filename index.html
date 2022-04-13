@@ -83,6 +83,158 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander" open>
+                <summary class="article-expander__title">楽観的ロックをあつかう編集画面</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/04/13/223646" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>楽観的ロックを使ったRuby on Railsアプリケーションを作って動きを確かめる - @ledsun blog の続きです。
+楽観的ロックで競合が起きるとActiveRecord::StaleObjectErrorが起きます。
+エラー画面が表示されます。
+編集画面に競合エラーを表示
+ActiveRecord::StaleObjectErrorをハンドリングして次のように、編集画面にメッセージを表示してみましょう。
+フラッシュメッセージを表示して編集内容を復元します。
+ArticlesController#update に例外処理を追加
+つぎのように例外処理を追加します。
+def update
+  respond_to do |format|
+    if @article.update(article_params)
+      format.html { redirect_to article_url(@article), notice: &quot;Article was successfully updated.&quot; }
+      format.json { render :show, status: :ok, location: @article }
+    else
+      format.html { render :edit, status: :unprocessable_entity }
+      format.json { render json: @article.errors, status: :unprocessable_entity }
+    end
+  end
+rescue ActiveRecord::StaleObjectError
+  @article.reload.attributes &#x3D; article_params.reject{ _1 &#x3D;&#x3D; &#x27;lock_version&#x27; }
+
+  flash.now[:error] &#x3D; &#x27;Another user has made a change to that record since you accessed the edit form.&#x27;
+  render :edit, status: :conflict
+end
+
+
+
+やっていることは次の通りです。
+lock_versionを最新の値に更新
+編集内容を復元
+フラッシュメッセージを設定
+編集画面を表示
+app/views/articles/edit.html.erb にフラッシュメッセージを追加
+Scaffoldで生成した編集画面ではフラッシュメッセージが表示されません。
+app/views/articles/edit.html.erbにフラッシュメッセージの表示を追加します。
+
+Editing article
+ |
+  
+
+
+
+
+一番上の行です。
+なにも考えずにUpdate Articleボタンを押すと更新されます。
+別ユーザーが編集した内容を表示してあげると、より便利になりそうです。
+参考
+A Guide to Optimistic Locking – EngineYard
+【Rails】flashの使い方 - Qiita</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220413/20220413000516.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">処刑された賢者はリッチに転職して侵略戦争を始める 5</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/04/13/222347" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>処刑された賢者はリッチに転生して侵略戦争を始める 5巻 (デジタル版ガンガンコミックスＵＰ！)
+
+作者:結城絡繰,國友翔太郎,白狼
+スクウェア・エニックス
+Amazon
+
+帝国の雷撃使いと大激突。骨（表紙にいる骨のモンスター）大活躍。</span>
+                  </div>
+                  <img src="https://m.media-amazon.com/images/I/51YytW7dCYL._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ひとりぼっちの異世界攻略 11</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/04/13/221931" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ひとりぼっちの異世界攻略 11 (ガルドコミックス)
+
+作者:びび,五示正司
+オーバーラップ
+Amazon
+
+暗殺者の凶刃から王女を守れるのか！
+発刊ペースがやたら速くありませんか？</span>
+                  </div>
+                  <img src="https://m.media-amazon.com/images/I/51UZe-H+sEL._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">異世界ヤンキー八王子 3</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/04/13/221459" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>異世界ヤンキー八王子 ： 3 (アクションコミックス)
+
+作者:奥嶋ひろまさ
+双葉社
+Amazon
+
+精神年齢8歳の遊び人の力でサッキュバスをやっつけろ！
+ヤンキーに色仕掛けは通じねえ！！</span>
+                  </div>
+                  <img src="https://m.media-amazon.com/images/I/51gWl8hQ7iL._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">WSLにDockerをインストールする</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/04/13/221055" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>結論から言うと、なんのことはなくUbuntuにインストールするのと同じです。
+Dockerをインストール
+Install Docker Engine on Debian | Docker Documentation に従って、インストールします。
+普段fish-shellを使っています。
+読み替えが面倒臭いので、各コマンドはbashで実行しました。
+2回目のapt-get updateをすると、次のようなエラーが出ます。
+Err:7 https://download.docker.com/linux/debian focal Release
+  404  Not Found [IP: 13.249.170.87 443]
+
+
+
+Can&#x27;t install docker on Ubuntu 20.04 - #9 by flostar3000 - Open Source Registry - Docker Community Forums によると
+deb [arch&#x3D;amd64 signed-by&#x3D;/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian   focal stable
+
+
+
+を
+deb [arch&#x3D;amd64 signed-by&#x3D;/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu   eoan stable
+
+
+
+に変えると良さそうです。
+動作確認します。
+ledsun@MSI:~►sudo docker run hello-world
+Unable to find image &#x27;hello-world:latest&#x27;…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
                 <summary class="article-expander__title">RubyMineからWSL上のRubyを動かす</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/04/13/214809" target="_blank"
                   rel="noopener">
@@ -110,6 +262,31 @@ RubyMineのターミナルからRuby on Railsアプリケーションが起動�
 なかなか新鮮です。</span>
                   </div>
                   <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220413/20220413214019.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/aesthetic_milo" target="_blank"
+              rel="noopener">議会制</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2022/04/13(水)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/aesthetic_milo/n/n93f5ed5878e8" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>学校あった
+疲れた
+体育でたくさん走った
+ロング・スロー・ディスタンスっていって　長い距離をゆっくり走るトレーニングをやったんだけど これLSDって略すらしい
+やべー
+続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/76374126/rectangle_large_type_2_45365063b03a02cf4bb1802d459256ae.png?width&#x3D;800" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -30339,7 +30516,7 @@ omocoro.jp
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-13T13:08:24.558Z">2022-04-13T13:08:24.558Z</time>
+    <time id="build-timestamp" datetime="2022-04-13T14:06:33.671Z">2022-04-13T14:06:33.671Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

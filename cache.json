@@ -4003,6 +4003,81 @@
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438082369206",
+          "author": null,
+          "description": "楽観的ロックを使ったRuby on Railsアプリケーションを作って動きを確かめる - @ledsun blog の続きです。\n楽観的ロックで競合が起きるとActiveRecord::StaleObjectErrorが起きます。\nエラー画面が表示されます。\n編集画面に競合エラーを表示\nActiveRecord::StaleObjectErrorをハンドリングして次のように、編集画面にメッセージを表示してみましょう。\nフラッシュメッセージを表示して編集内容を復元します。\nArticlesController#update に例外処理を追加\nつぎのように例外処理を追加します。\ndef update\n  respond_to do |format|\n    if @article.update(article_params)\n      format.html { redirect_to article_url(@article), notice: \"Article was successfully updated.\" }\n      format.json { render :show, status: :ok, location: @article }\n    else\n      format.html { render :edit, status: :unprocessable_entity }\n      format.json { render json: @article.errors, status: :unprocessable_entity }\n    end\n  end\nrescue ActiveRecord::StaleObjectError\n  @article.reload.attributes = article_params.reject{ _1 == 'lock_version' }\n\n  flash.now[:error] = 'Another user has made a change to that record since you accessed the edit form.'\n  render :edit, status: :conflict\nend\n\n\n\nやっていることは次の通りです。\nlock_versionを最新の値に更新\n編集内容を復元\nフラッシュメッセージを設定\n編集画面を表示\napp/views/articles/edit.html.erb にフラッシュメッセージを追加\nScaffoldで生成した編集画面ではフラッシュメッセージが表示されません。\napp/views/articles/edit.html.erbにフラッシュメッセージの表示を追加します。\n<p style=\"color: red\"><%= flash[:error] %></p>\n\n<h1>Editing article</h1>\n\n<%= render \"form\", article: @article %>\n\n<br>\n\n<div>\n  <%= link_to \"Show this article\", @article %> |\n  <%= link_to \"Back to articles\", articles_path %>\n</div>\n\n\n\n一番上の行です。\nなにも考えずにUpdate Articleボタンを押すと更新されます。\n別ユーザーが編集した内容を表示してあげると、より便利になりそうです。\n参考\nA Guide to Optimistic Locking – EngineYard\n【Rails】flashの使い方 - Qiita",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/13/223646",
+          "publishedOn": "2022-04-13T13:36:46.000Z",
+          "wordCount": 271,
+          "title": "楽観的ロックをあつかう編集画面",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220413/20220413000516.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220413/20220413000516.png"
+        },
+        {
+          "id": "hatenablog://entry/13574176438082656218",
+          "author": null,
+          "description": "処刑された賢者はリッチに転生して侵略戦争を始める 5巻 (デジタル版ガンガンコミックスＵＰ！)\n\n作者:結城絡繰,國友翔太郎,白狼\nスクウェア・エニックス\nAmazon\n\n帝国の雷撃使いと大激突。骨（表紙にいる骨のモンスター）大活躍。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/13/222347",
+          "publishedOn": "2022-04-13T13:23:47.000Z",
+          "wordCount": 130,
+          "title": "処刑された賢者はリッチに転職して侵略戦争を始める 5",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51YytW7dCYL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51YytW7dCYL._SL500_.jpg"
+        },
+        {
+          "id": "hatenablog://entry/13574176438082654949",
+          "author": null,
+          "description": "ひとりぼっちの異世界攻略 11 (ガルドコミックス)\n\n作者:びび,五示正司\nオーバーラップ\nAmazon\n\n暗殺者の凶刃から王女を守れるのか！\n発刊ペースがやたら速くありませんか？",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/13/221931",
+          "publishedOn": "2022-04-13T13:19:31.000Z",
+          "wordCount": 103,
+          "title": "ひとりぼっちの異世界攻略 11",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51UZe-H+sEL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51UZe-H+sEL._SL500_.jpg"
+        },
+        {
+          "id": "hatenablog://entry/13574176438082653279",
+          "author": null,
+          "description": "異世界ヤンキー八王子 ： 3 (アクションコミックス)\n\n作者:奥嶋ひろまさ\n双葉社\nAmazon\n\n精神年齢8歳の遊び人の力でサッキュバスをやっつけろ！\nヤンキーに色仕掛けは通じねえ！！",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/13/221459",
+          "publishedOn": "2022-04-13T13:14:59.000Z",
+          "wordCount": 104,
+          "title": "異世界ヤンキー八王子 3",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51gWl8hQ7iL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51gWl8hQ7iL._SL500_.jpg"
+        },
+        {
+          "id": "hatenablog://entry/13574176438082652181",
+          "author": null,
+          "description": "結論から言うと、なんのことはなくUbuntuにインストールするのと同じです。\nDockerをインストール\nInstall Docker Engine on Debian | Docker Documentation に従って、インストールします。\n普段fish-shellを使っています。\n読み替えが面倒臭いので、各コマンドはbashで実行しました。\n2回目のapt-get updateをすると、次のようなエラーが出ます。\nErr:7 https://download.docker.com/linux/debian focal Release\n  404  Not Found [IP: 13.249.170.87 443]\n\n\n\nCan't install docker on Ubuntu 20.04 - #9 by flostar3000 - Open Source Registry - Docker Community Forums によると\ndeb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian   focal stable\n\n\n\nを\ndeb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu   eoan stable\n\n\n\nに変えると良さそうです。\n動作確認します。\nledsun@MSI:~►sudo docker run hello-world\nUnable to find image 'hello-world:latest'…",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/13/221055",
+          "publishedOn": "2022-04-13T13:10:55.000Z",
+          "wordCount": 512,
+          "title": "WSLにDockerをインストールする",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438082645075",
           "author": null,
           "description": "Ruby on Railsアプリケーションのソースコードを読もうとしました。\nソースコード読むにしてもアプリケーションを動かしたいです。\nWSLにソースコードをおき、環境を作ってRuby on Railsアプリケーションを起動しました。\nおもむろにVS Codeで読み始めたのですが、なんとなく興が乗りません。\nRubyMineで読むことにしました。\nWSL上のソースコードをRubyMineで開き、ふと公式の推奨手順を確認してみました。\nなんと、面白いことが書いてあります。\nWSL | RubyMine\nFor better performance, we recommend using WSL as a remote interpreter and storing your project in the Windows file system instead of WSL.\n\n\nソースコードはWindows側において置いて、WSL上のRubyで実行しなさいとあります。\nVS Codeとは逆です。\n手順に従って設定します。\nRubyMineにWSL上のRubyのパスを設定します。\nrbenvを使っているせいか/home/ledsun/.rbenv/shims/rubyでは、RubyMineが上手く認識しませんでした。\nRubyコマンドの実体が置いてある /home/ledsun/.rbenv/versions/2.7.4/bin/ruby を指定しました。\nこれでRubyMineからRuby on Railsアプリケーションを起動すると動きました。\nRubyMineのターミナルからRuby on Railsアプリケーションが起動しているログを確認できます。\nこれはこれで動くのですね。\nなかなか新鮮です。",
@@ -7223,6 +7298,16 @@
       "feedUrl": "https://note.com/aesthetic_milo/rss",
       "siteUrl": "https://note.com/aesthetic_milo",
       "articles": [
+        {
+          "id": "https://note.com/aesthetic_milo/n/n93f5ed5878e8",
+          "author": null,
+          "description": "学校あった\n疲れた\n体育でたくさん走った\nロング・スロー・ディスタンスっていって　長い距離をゆっくり走るトレーニングをやったんだけど これLSDって略すらしい\nやべー\n続きをみる",
+          "link": "https://note.com/aesthetic_milo/n/n93f5ed5878e8",
+          "publishedOn": "2022-04-13T13:11:17.000Z",
+          "wordCount": 42,
+          "title": "2022/04/13(水)",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/76374126/rectangle_large_type_2_45365063b03a02cf4bb1802d459256ae.png?width=800"
+        },
         {
           "id": "https://note.com/aesthetic_milo/n/nf2ee8158329f",
           "author": null,
