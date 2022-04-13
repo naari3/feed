@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-13T12:06:51.078Z</updated>
+    <updated>2022-04-13T13:08:24.654Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[RubyMineからWSL上のRubyを動かす]]></title>
+        <id>hatenablog://entry/13574176438082645075</id>
+        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/214809"/>
+        <updated>2022-04-13T12:48:09.000Z</updated>
+        <summary type="html"><![CDATA[Ruby on Railsアプリケーションのソースコードを読もうとしました。
+ソースコード読むにしてもアプリケーションを動かしたいです。
+WSLにソースコードをおき、環境を作ってRuby on Railsアプリケーションを起動しました。
+おもむろにVS Codeで読み始めたのですが、なんとなく興が乗りません。
+RubyMineで読むことにしました。
+WSL上のソースコードをRubyMineで開き、ふと公式の推奨手順を確認してみました。
+なんと、面白いことが書いてあります。
+WSL | RubyMine
+For better performance, we recommend using WSL as a remote interpreter and storing your project in the Windows file system instead of WSL.
+
+
+ソースコードはWindows側において置いて、WSL上のRubyで実行しなさいとあります。
+VS Codeとは逆です。
+手順に従って設定します。
+RubyMineにWSL上のRubyのパスを設定します。
+rbenvを使っているせいか/home/ledsun/.rbenv/shims/rubyでは、RubyMineが上手く認識しませんでした。
+Rubyコマンドの実体が置いてある /home/ledsun/.rbenv/versions/2.7.4/bin/ruby を指定しました。
+これでRubyMineからRuby on Railsアプリケーションを起動すると動きました。
+RubyMineのターミナルからRuby on Railsアプリケーションが起動しているログを確認できます。
+これはこれで動くのですね。
+なかなか新鮮です。]]></summary>
+        <author>
+            <name>@ledsun blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[プロダクトへの想いをキャリアに 〜 QAエンジニアの育成＆インターン採用チャレンジ]]></title>
         <id>20625</id>
@@ -21539,28 +21569,6 @@ omocoro.jp
 ・時間が決まっていることでお…]]></summary>
         <author>
             <name>竹達アーカイブ通信</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022-01-13]]></title>
-        <id>hatenablog://entry/13574176438052464610</id>
-        <link href="https://commits.hatenablog.com/entry/2022/01/14/100002"/>
-        <updated>2022-01-14T01:00:02.000Z</updated>
-        <summary type="html"><![CDATA[自動車教習所に行っていた。
-今日は技能1時間と学科2時間を取った。技能は初回の構内の運転だった。ひたすらぐるぐる回っていた。
-
-吸血鬼すぐ死ぬ　１ (少年チャンピオン・コミックス)
-
-作者:盆ノ木至
-秋田書店
-Amazon
-
-吸血鬼すぐ死ぬ、19巻まで読んだ。下ネタが多いのはそこまで好きではないけれど、わりと面白い。
-好きなセリフは「駅前がゾンビタウンの木更津」です(15巻P69)。
-吸血鬼すぐ死ぬは、うなすけさんが暴力で決めるコラがきっかけで読み始めた。
-このリプライがすごく好きです。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
 </feed>

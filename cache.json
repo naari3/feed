@@ -948,20 +948,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438052464610",
-          "author": null,
-          "description": "自動車教習所に行っていた。\n今日は技能1時間と学科2時間を取った。技能は初回の構内の運転だった。ひたすらぐるぐる回っていた。\n\n吸血鬼すぐ死ぬ　１ (少年チャンピオン・コミックス)\n\n作者:盆ノ木至\n秋田書店\nAmazon\n\n吸血鬼すぐ死ぬ、19巻まで読んだ。下ネタが多いのはそこまで好きではないけれど、わりと面白い。\n好きなセリフは「駅前がゾンビタウンの木更津」です(15巻P69)。\n吸血鬼すぐ死ぬは、うなすけさんが暴力で決めるコラがきっかけで読み始めた。\nこのリプライがすごく好きです。",
-          "link": "https://commits.hatenablog.com/entry/2022/01/14/100002",
-          "publishedOn": "2022-01-14T01:00:02.000Z",
-          "wordCount": 146,
-          "title": "2022-01-13",
-          "enclosure": {
-            "url": "https://m.media-amazon.com/images/I/51fCtHd7mAL._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
         }
       ]
     },
@@ -4016,6 +4002,21 @@
       "feedUrl": "https://ledsun.hatenablog.com/rss",
       "siteUrl": "https://ledsun.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438082645075",
+          "author": null,
+          "description": "Ruby on Railsアプリケーションのソースコードを読もうとしました。\nソースコード読むにしてもアプリケーションを動かしたいです。\nWSLにソースコードをおき、環境を作ってRuby on Railsアプリケーションを起動しました。\nおもむろにVS Codeで読み始めたのですが、なんとなく興が乗りません。\nRubyMineで読むことにしました。\nWSL上のソースコードをRubyMineで開き、ふと公式の推奨手順を確認してみました。\nなんと、面白いことが書いてあります。\nWSL | RubyMine\nFor better performance, we recommend using WSL as a remote interpreter and storing your project in the Windows file system instead of WSL.\n\n\nソースコードはWindows側において置いて、WSL上のRubyで実行しなさいとあります。\nVS Codeとは逆です。\n手順に従って設定します。\nRubyMineにWSL上のRubyのパスを設定します。\nrbenvを使っているせいか/home/ledsun/.rbenv/shims/rubyでは、RubyMineが上手く認識しませんでした。\nRubyコマンドの実体が置いてある /home/ledsun/.rbenv/versions/2.7.4/bin/ruby を指定しました。\nこれでRubyMineからRuby on Railsアプリケーションを起動すると動きました。\nRubyMineのターミナルからRuby on Railsアプリケーションが起動しているログを確認できます。\nこれはこれで動くのですね。\nなかなか新鮮です。",
+          "link": "https://ledsun.hatenablog.com/entry/2022/04/13/214809",
+          "publishedOn": "2022-04-13T12:48:09.000Z",
+          "wordCount": 183,
+          "title": "RubyMineからWSL上のRubyを動かす",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220413/20220413214019.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/l/ledsun/20220413/20220413214019.png"
+        },
         {
           "id": "hatenablog://entry/13574176438082095243",
           "author": null,
