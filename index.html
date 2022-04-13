@@ -97,6 +97,35 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">lernaからlerna-lite + turborepoに移行する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/04/13/lerna-to-lerna-lite-and-turborepo/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Secretlintはmonorepoとなっていて、パッケージを公開する際にlernaを利用していました。
+しかし、lernaは現在メンテナンスされていないため、publish機能だけを取り出したlerna-liteと効率的なmonorepo向けのビルドツールであるTurborepoへ移行しました。
+Lerna is largely unmaintained · Issue #2703 · lerna/lerna
+次の記事で書いていますが、Lernaはもともとall-in-one的なツールでしたが、それぞれの分野でメジャーなものが各機能と同等のものを実装しています。
+一番大きな所としては、Workspaces機能を各パッケージマネージャーが実装したため、Lerna独自でこの機能を持つ必要性がかなり薄くなりました。
+元々はLernaがWorkspace管理(依存関係の管理)、タスク管理(パッケージの依存を見てタスクを実行)、Publish管理(バージョンの更新やCHANGELOGの作成、公開)などの機能を持ったツールとしてスタートしています。
+babel/monorepo.md at master · babel/babel
+Workspace管理は、npm 7+/Yarn/pnpmなどのパッケージマネージャーがworkspaces機能としてサポートし始めました。
+タスク管理は、TurborepoやNx(Nxは全部入り)などがより効率的に実行できるツールとして誕生しています。
+Publish管理は、まだ成熟したツールは少ないですがchangesets/Ship.js/lerna-lite、パッケージマネージャー自体が持っていることがあります。
+- 2022-02-22のJS: Deno 1.19、Next.js 12.1、Monorepo Toolsまとめ - JSer.in…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -30156,67 +30185,9 @@ Amazon
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2022-01-13">2022-01-13</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://ledsun.hatenablog.com/" target="_blank"
-              rel="noopener">@ledsun blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Microsoft Visual Studio Installer Projects</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://ledsun.hatenablog.com/entry/2022/01/14/033809" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>いまさらWiX Toolsetの競合の存在に気がつきました。
-Visual Studio Installer Projects and .NET 6.0 | Microsoft Docs
-Microsoft Visual Studio Installer Projects - Visual Studio Marketplace
-【.NET Core対応】Visual Studio 2019でインストーラを作成する方法【画像付き】
-Visual Studio 2019でインストーラの作り方 - 滴了庵日録
-Visual Studioでインストーラを作成する – プログラマーやめました
-なつかしの Visual Studio Installer（の後継）を現役のVisual Studioで使用する - Qiita
-入門情報ですが、日本語情報もたくさんあります。
-WiX用のXMLファイルをテキストエディタで編集する代わりに、GUIでポチポチ設定できる感じです。
-Wix ToolsetもVisual Studio Installer Projectsも、出力結果はmsiファイル形式のデータベースをつくるので、設定内容自体は大体一緒です。
-setup.exe がどういうふうに作られているのかは謎です。
-Visual Studio 2019でインストーラを作成 - embeddedなブログ
-ユーザーインタフェースがGUIから選べてカスタマイズしやすそうなのはいいですね・・・。
-Visual Studioのバージョンが変わると拡張パッケージが変わるのは、ちょと面倒臭いですね。
-とはいえ2022用の拡張パッケージもすでにあるので、更新が滞るって感じではなさそうです。
-WiX Toolsetの開発リソース不足感を考えると、こっちの方がいいんですかねえ？
-Difference between Wix and Visual Studio installer - Stack Overflow
-As @nvoigt said the old vdproj type is not supported in VS2012 and it also cannot be built by a build server without doing some nasty setup (you have to install VS).
-
-
-ビルドサーバーの設定を考えると、Visual Studio や拡張パッケージに依存しない方が楽、というのはそれはそうですね。
-The Horrible Facts on Visual Studio Setup Projects – The Half-Blood Programmer
-Well, well, let it die please. You really shouldn’t expect too much from a legacy tooling revived only under some demands.
-
-
-めっちゃ辛辣ですね・・・
-Installer Projectsの、依存関係の更新を設定したい - Qiita
-Installer Projects（ほぼ更新停止状態だね）は、大規模なソリューションだと、だんだんつらくなってくるので、最初から、他の方法を採用すると良いかもしれません。
-
-
-やはりあまりフレンドリーではない感想です。
-What is MSIX? - MSIX | Microsoft Docs
-いまではMSIXというインストーラーの作り方があるみたいです。
-マイクロソフト系のテクノロジーではXAMLとかXamarinとか名前にXをつけるの好きですね。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-13T06:02:25.683Z">2022-04-13T06:02:25.683Z</time>
+    <time id="build-timestamp" datetime="2022-04-13T07:01:46.592Z">2022-04-13T07:01:46.592Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

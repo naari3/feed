@@ -5376,20 +5376,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438052502435",
-          "author": null,
-          "description": "いまさらWiX Toolsetの競合の存在に気がつきました。\nVisual Studio Installer Projects and .NET 6.0 | Microsoft Docs\nMicrosoft Visual Studio Installer Projects - Visual Studio Marketplace\n【.NET Core対応】Visual Studio 2019でインストーラを作成する方法【画像付き】\nVisual Studio 2019でインストーラの作り方 - 滴了庵日録\nVisual Studioでインストーラを作成する – プログラマーやめました\nなつかしの Visual Studio Installer（の後継）を現役のVisual Studioで使用する - Qiita\n入門情報ですが、日本語情報もたくさんあります。\nWiX用のXMLファイルをテキストエディタで編集する代わりに、GUIでポチポチ設定できる感じです。\nWix ToolsetもVisual Studio Installer Projectsも、出力結果はmsiファイル形式のデータベースをつくるので、設定内容自体は大体一緒です。\nsetup.exe がどういうふうに作られているのかは謎です。\nVisual Studio 2019でインストーラを作成 - embeddedなブログ\nユーザーインタフェースがGUIから選べてカスタマイズしやすそうなのはいいですね・・・。\nVisual Studioのバージョンが変わると拡張パッケージが変わるのは、ちょと面倒臭いですね。\nとはいえ2022用の拡張パッケージもすでにあるので、更新が滞るって感じではなさそうです。\nWiX Toolsetの開発リソース不足感を考えると、こっちの方がいいんですかねえ？\nDifference between Wix and Visual Studio installer - Stack Overflow\nAs @nvoigt said the old vdproj type is not supported in VS2012 and it also cannot be built by a build server without doing some nasty setup (you have to install VS).\n\n\nビルドサーバーの設定を考えると、Visual Studio や拡張パッケージに依存しない方が楽、というのはそれはそうですね。\nThe Horrible Facts on Visual Studio Setup Projects – The Half-Blood Programmer\nWell, well, let it die please. You really shouldn’t expect too much from a legacy tooling revived only under some demands.\n\n\nめっちゃ辛辣ですね・・・\nInstaller Projectsの、依存関係の更新を設定したい - Qiita\nInstaller Projects（ほぼ更新停止状態だね）は、大規模なソリューションだと、だんだんつらくなってくるので、最初から、他の方法を採用すると良いかもしれません。\n\n\nやはりあまりフレンドリーではない感想です。\nWhat is MSIX? - MSIX | Microsoft Docs\nいまではMSIXというインストーラーの作り方があるみたいです。\nマイクロソフト系のテクノロジーではXAMLとかXamarinとか名前にXをつけるの好きですね。",
-          "link": "https://ledsun.hatenablog.com/entry/2022/01/14/033809",
-          "publishedOn": "2022-01-13T18:38:09.000Z",
-          "wordCount": 259,
-          "title": "Microsoft Visual Studio Installer Projects",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -11748,6 +11734,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2022/04/13/lerna-to-lerna-lite-and-turborepo/",
+          "author": null,
+          "description": "Secretlintはmonorepoとなっていて、パッケージを公開する際にlernaを利用していました。\nしかし、lernaは現在メンテナンスされていないため、publish機能だけを取り出したlerna-liteと効率的なmonorepo向けのビルドツールであるTurborepoへ移行しました。\nLerna is largely unmaintained · Issue #2703 · lerna/lerna\n次の記事で書いていますが、Lernaはもともとall-in-one的なツールでしたが、それぞれの分野でメジャーなものが各機能と同等のものを実装しています。\n一番大きな所としては、Workspaces機能を各パッケージマネージャーが実装したため、Lerna独自でこの機能を持つ必要性がかなり薄くなりました。\n元々はLernaがWorkspace管理(依存関係の管理)、タスク管理(パッケージの依存を見てタスクを実行)、Publish管理(バージョンの更新やCHANGELOGの作成、公開)などの機能を持ったツールとしてスタートしています。\nbabel/monorepo.md at master · babel/babel\nWorkspace管理は、npm 7+/Yarn/pnpmなどのパッケージマネージャーがworkspaces機能としてサポートし始めました。\nタスク管理は、TurborepoやNx(Nxは全部入り)などがより効率的に実行できるツールとして誕生しています。\nPublish管理は、まだ成熟したツールは少ないですがchangesets/Ship.js/lerna-lite、パッケージマネージャー自体が持っていることがあります。\n- 2022-02-22のJS: Deno 1.19、Next.js 12.1、Monorepo Toolsまとめ - JSer.in…",
+          "link": "https://efcl.info/2022/04/13/lerna-to-lerna-lite-and-turborepo/",
+          "publishedOn": "2022-04-13T05:25:00.000Z",
+          "wordCount": null,
+          "title": "lernaからlerna-lite + turborepoに移行する",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2022/03/08/secretlint-5/",
           "author": null,

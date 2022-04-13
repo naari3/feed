@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-13T06:02:25.787Z</updated>
+    <updated>2022-04-13T07:01:46.660Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,26 @@
         <summary type="html"><![CDATA[はじめに こんにちは！Merpay QAエンジニアの＠myajiriです。Merpay Tech Openness Month 2022の8日目の記事です。 この夏、メルペイQAチームでは初の試みとなる学生向けのQAエン […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[lernaからlerna-lite + turborepoに移行する]]></title>
+        <id>https://efcl.info/2022/04/13/lerna-to-lerna-lite-and-turborepo/</id>
+        <link href="https://efcl.info/2022/04/13/lerna-to-lerna-lite-and-turborepo/"/>
+        <updated>2022-04-13T05:25:00.000Z</updated>
+        <summary type="html"><![CDATA[Secretlintはmonorepoとなっていて、パッケージを公開する際にlernaを利用していました。
+しかし、lernaは現在メンテナンスされていないため、publish機能だけを取り出したlerna-liteと効率的なmonorepo向けのビルドツールであるTurborepoへ移行しました。
+Lerna is largely unmaintained · Issue #2703 · lerna/lerna
+次の記事で書いていますが、Lernaはもともとall-in-one的なツールでしたが、それぞれの分野でメジャーなものが各機能と同等のものを実装しています。
+一番大きな所としては、Workspaces機能を各パッケージマネージャーが実装したため、Lerna独自でこの機能を持つ必要性がかなり薄くなりました。
+元々はLernaがWorkspace管理(依存関係の管理)、タスク管理(パッケージの依存を見てタスクを実行)、Publish管理(バージョンの更新やCHANGELOGの作成、公開)などの機能を持ったツールとしてスタートしています。
+babel/monorepo.md at master · babel/babel
+Workspace管理は、npm 7+/Yarn/pnpmなどのパッケージマネージャーがworkspaces機能としてサポートし始めました。
+タスク管理は、TurborepoやNx(Nxは全部入り)などがより効率的に実行できるツールとして誕生しています。
+Publish管理は、まだ成熟したツールは少ないですがchangesets/Ship.js/lerna-lite、パッケージマネージャー自体が持っていることがあります。
+- 2022-02-22のJS: Deno 1.19、Next.js 12.1、Monorepo Toolsまとめ - JSer.in…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -21428,49 +21448,6 @@ Amazon
 このリプライがすごく好きです。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Visual Studio Installer Projects]]></title>
-        <id>hatenablog://entry/13574176438052502435</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/14/033809"/>
-        <updated>2022-01-13T18:38:09.000Z</updated>
-        <summary type="html"><![CDATA[いまさらWiX Toolsetの競合の存在に気がつきました。
-Visual Studio Installer Projects and .NET 6.0 | Microsoft Docs
-Microsoft Visual Studio Installer Projects - Visual Studio Marketplace
-【.NET Core対応】Visual Studio 2019でインストーラを作成する方法【画像付き】
-Visual Studio 2019でインストーラの作り方 - 滴了庵日録
-Visual Studioでインストーラを作成する – プログラマーやめました
-なつかしの Visual Studio Installer（の後継）を現役のVisual Studioで使用する - Qiita
-入門情報ですが、日本語情報もたくさんあります。
-WiX用のXMLファイルをテキストエディタで編集する代わりに、GUIでポチポチ設定できる感じです。
-Wix ToolsetもVisual Studio Installer Projectsも、出力結果はmsiファイル形式のデータベースをつくるので、設定内容自体は大体一緒です。
-setup.exe がどういうふうに作られているのかは謎です。
-Visual Studio 2019でインストーラを作成 - embeddedなブログ
-ユーザーインタフェースがGUIから選べてカスタマイズしやすそうなのはいいですね・・・。
-Visual Studioのバージョンが変わると拡張パッケージが変わるのは、ちょと面倒臭いですね。
-とはいえ2022用の拡張パッケージもすでにあるので、更新が滞るって感じではなさそうです。
-WiX Toolsetの開発リソース不足感を考えると、こっちの方がいいんですかねえ？
-Difference between Wix and Visual Studio installer - Stack Overflow
-As @nvoigt said the old vdproj type is not supported in VS2012 and it also cannot be built by a build server without doing some nasty setup (you have to install VS).
-
-
-ビルドサーバーの設定を考えると、Visual Studio や拡張パッケージに依存しない方が楽、というのはそれはそうですね。
-The Horrible Facts on Visual Studio Setup Projects – The Half-Blood Programmer
-Well, well, let it die please. You really shouldn’t expect too much from a legacy tooling revived only under some demands.
-
-
-めっちゃ辛辣ですね・・・
-Installer Projectsの、依存関係の更新を設定したい - Qiita
-Installer Projects（ほぼ更新停止状態だね）は、大規模なソリューションだと、だんだんつらくなってくるので、最初から、他の方法を採用すると良いかもしれません。
-
-
-やはりあまりフレンドリーではない感想です。
-What is MSIX? - MSIX | Microsoft Docs
-いまではMSIXというインストーラーの作り方があるみたいです。
-マイクロソフト系のテクノロジーではXAMLとかXamarinとか名前にXをつけるの好きですね。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
 </feed>
