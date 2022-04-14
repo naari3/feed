@@ -5441,20 +5441,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438052782094",
-          "author": null,
-          "description": "詳解Rustプログラミング\n\n作者:Tim McNamara\n翔泳社\nAmazon\n\n「2.7 プロジェクト：マンデルブロ集合のレンダリング」です。\nuse num::complex::Complex;\n\nfn calculate_mandelbrot(\n    max_iters: usize,\n    x_min: f64,\n    x_max: f64,\n    y_min: f64,\n    y_max: f64,\n    width: usize,\n    height: usize,\n) -> Vec<Vec<usize>> {\n    let mut rows: Vec<_> = Vec::with_capacity(width);\n    for img_y in 0..height {\n        let mut row: Vec<_> = Vec::with_capacity(height);\n        for img_x in 0..width {\n            let x_percent = img_x as f64 / width as f64;\n            let y_percent = img_y as f64 / height as f64;\n            let cx = x_min + (x_max - x_min) * x_percent;\n            let cy = y_min + (y_max - y_min) * y_percent;\n            let escaped_at = mandelbrot_at_point(cx, cy, max_iters);\n            row.push(escaped_at);\n        }\n        r…",
-          "link": "https://ledsun.hatenablog.com/entry/2022/01/14/232817",
-          "publishedOn": "2022-01-14T14:28:17.000Z",
-          "wordCount": 458,
-          "title": "rustでマンデルブロー集合を描く",
-          "enclosure": {
-            "url": "https://m.media-amazon.com/images/I/41lTP4CSCrL._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
         }
       ]
     },
@@ -9236,6 +9222,16 @@
       "siteUrl": "https://note.com/kazumakawauchi",
       "articles": [
         {
+          "id": "https://note.com/kazumakawauchi/n/n859ccf291992",
+          "author": null,
+          "description": "ああ、これは（本）すげえ…と思う本に出会うことがたまにありますが、『すげえ…』の中にも種類があります。先日一瞬で読破した分厚い本は、圧倒的に『すげえ…』んですが、「これは敵わない」「どれだけ時間と労力をかけて纏めたのか」「こんな本を私もいつか書きたい」と、何か憧れや羨望の感覚を覚えるものでした。\n続きをみる",
+          "link": "https://note.com/kazumakawauchi/n/n859ccf291992",
+          "publishedOn": "2022-04-14T02:02:21.000Z",
+          "wordCount": 62,
+          "title": "『圧倒的にやばい本』",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/76400919/rectangle_large_type_2_65b46b201d72d2aba5400399f8010649.png?width=800"
+        },
+        {
           "id": "https://note.com/kazumakawauchi/n/n57a39802ba50",
           "author": null,
           "description": "「必然」に近づいていく感覚。自分が関わっている仕事領域や、あるいは私自身の人生においても、その「必然性」や「自然（な状態）」を一貫して求めることが私にとっての正義です。\n現在仕事で行っていることを既存の名前で整理すると、（サッカーの）コーチング、ブランディング、（広義の）デザイン、組織マネジメント、執筆、などが挙げられますが、それらに共通しているのは「そうであることの必然性」を追求する作業である、ということです。\n続きをみる",
@@ -12893,6 +12889,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2022-04-14-docker-irb-pry-history",
+          "author": null,
+          "description": "DockerでIRBやPryを利用するときにも入力したコードの履歴を記憶するよう設定する機会があったので、あらためて整理しておく。",
+          "link": "https://r7kamura.com/articles/2022-04-14-docker-irb-pry-history",
+          "publishedOn": "2022-04-14T00:00:00.000Z",
+          "wordCount": 78,
+          "title": "DockerでIRBやPryの履歴を記憶",
+          "imageUrl": "https://r7kamura.com/default_og_image.jpg"
+        },
         {
           "id": "https://r7kamura.com/articles/2022-04-13-rails-7-alert-notice",
           "author": null,
