@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-15T18:01:58.423Z</updated>
+    <updated>2022-04-15T18:31:15.364Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -494,121 +494,6 @@ https://youtu.be/nMYoWsH6FcM
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[楽観的ロックをあつかう編集画面]]></title>
-        <id>hatenablog://entry/13574176438082369206</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/223646"/>
-        <updated>2022-04-13T13:36:46.000Z</updated>
-        <summary type="html"><![CDATA[楽観的ロックを使ったRuby on Railsアプリケーションを作って動きを確かめる - @ledsun blog の続きです。
-楽観的ロックで競合が起きるとActiveRecord::StaleObjectErrorが起きます。
-エラー画面が表示されます。
-編集画面に競合エラーを表示
-ActiveRecord::StaleObjectErrorをハンドリングして次のように、編集画面にメッセージを表示してみましょう。
-フラッシュメッセージを表示して編集内容を復元します。
-ArticlesController#update に例外処理を追加
-つぎのように例外処理を追加します。
-def update
-  respond_to do |format|
-    if @article.update(article_params)
-      format.html { redirect_to article_url(@article), notice: "Article was successfully updated." }
-      format.json { render :show, status: :ok, location: @article }
-    else
-      format.html { render :edit, status: :unprocessable_entity }
-      format.json { render json: @article.errors, status: :unprocessable_entity }
-    end
-  end
-rescue ActiveRecord::StaleObjectError
-  @article.reload.attributes = article_params.reject{ _1 == 'lock_version' }
-
-  flash.now[:error] = 'Another user has made a change to that record since you accessed the edit form.'
-  render :edit, status: :conflict
-end
-
-
-
-やっていることは次の通りです。
-lock_versionを最新の値に更新
-編集内容を復元
-フラッシュメッセージを設定
-編集画面を表示
-app/views/articles/edit.html.erb にフラッシュメッセージを追加
-Scaffoldで生成した編集画面ではフラッシュメッセージが表示されません。
-app/views/articles/edit.html.erbにフラッシュメッセージの表示を追加します。
-<p style="color: red"><%= flash[:error] %></p>
-
-<h1>Editing article</h1>
-
-<%= render "form", article: @article %>
-
-<br>
-
-<div>
-  <%= link_to "Show this article", @article %> |
-  <%= link_to "Back to articles", articles_path %>
-</div>
-
-
-
-一番上の行です。
-なにも考えずにUpdate Articleボタンを押すと更新されます。
-別ユーザーが編集した内容を表示してあげると、より便利になりそうです。
-参考
-A Guide to Optimistic Locking – EngineYard
-【Rails】flashの使い方 - Qiita]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[処刑された賢者はリッチに転職して侵略戦争を始める 5]]></title>
-        <id>hatenablog://entry/13574176438082656218</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/222347"/>
-        <updated>2022-04-13T13:23:47.000Z</updated>
-        <summary type="html"><![CDATA[処刑された賢者はリッチに転生して侵略戦争を始める 5巻 (デジタル版ガンガンコミックスＵＰ！)
-
-作者:結城絡繰,國友翔太郎,白狼
-スクウェア・エニックス
-Amazon
-
-帝国の雷撃使いと大激突。骨（表紙にいる骨のモンスター）大活躍。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ひとりぼっちの異世界攻略 11]]></title>
-        <id>hatenablog://entry/13574176438082654949</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/221931"/>
-        <updated>2022-04-13T13:19:31.000Z</updated>
-        <summary type="html"><![CDATA[ひとりぼっちの異世界攻略 11 (ガルドコミックス)
-
-作者:びび,五示正司
-オーバーラップ
-Amazon
-
-暗殺者の凶刃から王女を守れるのか！
-発刊ペースがやたら速くありませんか？]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[異世界ヤンキー八王子 3]]></title>
-        <id>hatenablog://entry/13574176438082653279</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/221459"/>
-        <updated>2022-04-13T13:14:59.000Z</updated>
-        <summary type="html"><![CDATA[異世界ヤンキー八王子 ： 3 (アクションコミックス)
-
-作者:奥嶋ひろまさ
-双葉社
-Amazon
-
-精神年齢8歳の遊び人の力でサッキュバスをやっつけろ！
-ヤンキーに色仕掛けは通じねえ！！]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2022/04/13(水)]]></title>
         <id>https://note.com/aesthetic_milo/n/n93f5ed5878e8</id>
         <link href="https://note.com/aesthetic_milo/n/n93f5ed5878e8"/>
@@ -621,70 +506,6 @@ Amazon
 続きをみる]]></summary>
         <author>
             <name>議会制</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WSLにDockerをインストールする]]></title>
-        <id>hatenablog://entry/13574176438082652181</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/221055"/>
-        <updated>2022-04-13T13:10:55.000Z</updated>
-        <summary type="html"><![CDATA[結論から言うと、なんのことはなくUbuntuにインストールするのと同じです。
-Dockerをインストール
-Install Docker Engine on Debian | Docker Documentation に従って、インストールします。
-普段fish-shellを使っています。
-読み替えが面倒臭いので、各コマンドはbashで実行しました。
-2回目のapt-get updateをすると、次のようなエラーが出ます。
-Err:7 https://download.docker.com/linux/debian focal Release
-  404  Not Found [IP: 13.249.170.87 443]
-
-
-
-Can't install docker on Ubuntu 20.04 - #9 by flostar3000 - Open Source Registry - Docker Community Forums によると
-deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian   focal stable
-
-
-
-を
-deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu   eoan stable
-
-
-
-に変えると良さそうです。
-動作確認します。
-ledsun@MSI:~►sudo docker run hello-world
-Unable to find image 'hello-world:latest'…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RubyMineからWSL上のRubyを動かす]]></title>
-        <id>hatenablog://entry/13574176438082645075</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/13/214809"/>
-        <updated>2022-04-13T12:48:09.000Z</updated>
-        <summary type="html"><![CDATA[Ruby on Railsアプリケーションのソースコードを読もうとしました。
-ソースコード読むにしてもアプリケーションを動かしたいです。
-WSLにソースコードをおき、環境を作ってRuby on Railsアプリケーションを起動しました。
-おもむろにVS Codeで読み始めたのですが、なんとなく興が乗りません。
-RubyMineで読むことにしました。
-WSL上のソースコードをRubyMineで開き、ふと公式の推奨手順を確認してみました。
-なんと、面白いことが書いてあります。
-WSL | RubyMine
-For better performance, we recommend using WSL as a remote interpreter and storing your project in the Windows file system instead of WSL.
-
-
-ソースコードはWindows側において置いて、WSL上のRubyで実行しなさいとあります。
-VS Codeとは逆です。
-手順に従って設定します。
-RubyMineにWSL上のRubyのパスを設定します。
-rbenvを使っているせいか/home/ledsun/.rbenv/shims/rubyでは、RubyMineが上手く認識しませんでした。
-Rubyコマンドの実体が置いてある /home/ledsun/.rbenv/versions/2.7.4/bin/ruby を指定しました。
-これでRubyMineからRuby on Railsアプリケーションを起動すると動きました。
-RubyMineのターミナルからRuby on Railsアプリケーションが起動しているログを確認できます。
-これはこれで動くのですね。
-なかなか新鮮です。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -857,85 +678,6 @@ Amazon
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[楽観的ロックを使ったRuby on Railsアプリケーションを作って動きを確かめる]]></title>
-        <id>hatenablog://entry/13574176438082095243</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/12/234454"/>
-        <updated>2022-04-12T14:44:54.000Z</updated>
-        <summary type="html"><![CDATA[昔からある機能です。
-よくわかっていないので、説明してみます。
-Railsガイドの説明
-Railsガイドでは次のように説明されています。
-Active Record クエリインターフェイス - Railsガイド
-楽観的ロックでは、複数のユーザーが同じレコードを同時編集することを許し、データの衝突が最小限であることを仮定しています。この方法では、レコードがオープンされてから変更されたことがあるかどうかをチェックします。そのような変更が行われ、かつ更新が無視された場合、ActiveRecord::StaleObjectError例外が発生します。
-
-
-いまいちユースケースがピンと来ません。
-使い方
-Railsガイド中では次のような短いサンプルがあります。
-c1 = Customer.find(1)
-c2 = Customer.find(1)
-
-c1.first_name = "Sandra"
-c1.save
-
-c2.first_name = "Michael"
-c2.save # ActiveRecord::StaleObjectErrorが発生
-
-
-
-これだとRuby on Railsアプリケーションの中でどう使えば良いのかよくわかりません。
-画面からの編集リクエストとc1とc2の関係が想像できません。
-用途
-GitHubのWikiが楽観的ロックを使っていそうな動作だったような、おぼろげな記憶があります。
-確かめてみると、現在は次のようにフラッシュメッセージがPushされます。
-Gihub Wikiを編集中に保存された時にはフラッシュメッセージが表示されます。
-記憶の中のイメージでは、Saveボタンを押したときに保存失敗していました。
-想像するに、ユースケースは、ある程度長文を保持するモデルで編集内容を上書きされたくない時のようです。
-便利にするなら、マージするなり衝突したDiffを表示するなりしたいところです。
-そこまで凝った実装をしないで、最低限、別のユーザーからの変更があったことをユーザーに伝えるための機能です。
-楽観的ロックを使ったRuby on Railsアプリケーションを作る
-なんとなく用途がイメージできたので、実際にアプリケーションを作ってみます。
-長文を保持するので、記事モデルを一つ持つRuby on Railsアプリケーションを作ります。
-楽観的ロックはlock_version カラムさえあれば動作します。
-scaffold するときに lock_version カラムも指定しておきます。
-bundle exec rails new -MCAJT --skip-active-job --skip-active-storage . 
-bin/rails g scaffold Article title:string content:text lock_version:integer
-bin/rails db:prepare
-
-
-
-railsをインストールしていなければbundel initして出来たGemfileの中のコメントを外してbundleしてください。
-触ってみる
-次のコマンドでRuby on Railsアプリケーションを起動します。
-bin/rails s
-
-
-
-http://localhost:3000/articles を開くと記事の一覧画面です。
-記事の一覧画面
-リンクをたどって記事作成画面を表示します。
-記事作成画面
-scaffold するときに lock_version カラムも指定したので、lock_versionが編集出来ます。
-適当に記事を作ります。
-記事の作成に成功しました
-記事の本文を変更してて保存してみましょう。
-記事の本文を変えました
-lock_versionを変えていないのに、勝手にインクリメントされました。
-もう一度記事の本文を変更してみましょう。
-今回はlock_versionも一緒に変更し、保存します。
-ActiveRecord::StaleObjectErrorが発生します
-なんか狐につままれたよう気分になりますが、Ruby on Railsアプリケーションの外側でlock_version が変更されたらActiveRecord::StaleObjectErrorが発生します。
-以上が楽観的ロックの動作です。
-今日はここまで
-楽観的ロックの動作はわかりました。
-実際のアプリケーションでつかうにはもう少し工夫が必要そうです。
-参考
-Optimistic lock on Ruby on Rails - DEV Community]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -1492,116 +1234,6 @@ youtu.be
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ライドンキング 8]]></title>
-        <id>hatenablog://entry/13574176438081420641</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/09/231917"/>
-        <updated>2022-04-09T14:19:17.000Z</updated>
-        <summary type="html"><![CDATA[ライドンキング（８） (シリウスコミックス)
-
-作者:馬場康誌
-講談社
-Amazon
-
-時節柄悪役のイメージが一段と強くなった主人公、魔導院の魔導士と大激突。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[悪役令嬢転生おじさん 3]]></title>
-        <id>hatenablog://entry/13574176438081418593</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/09/231202"/>
-        <updated>2022-04-09T14:12:02.000Z</updated>
-        <summary type="html"><![CDATA[悪役令嬢転生おじさん(3) (ヤングキングコミックス)
-
-作者:上山道郎
-少年画報社
-Amazon
-
-魔法模範演習本番、主人公の悪役令嬢と元主人公のヒロインが力を合わせて大爆発。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[THE KING OF FANTASY　八神庵の異世界無双　月を見るたび思い出せ! 6]]></title>
-        <id>hatenablog://entry/13574176438081414638</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/09/230638"/>
-        <updated>2022-04-09T14:06:38.000Z</updated>
-        <summary type="html"><![CDATA[THE KING OF FANTASY　八神庵の異世界無双　月を見るたび思い出せ!　6 (ヒューコミックス)
-
-作者:蒼木 雅彦,おぐら えいすけ（SNK）
-KADOKAWA
-Amazon
-
-押し寄せる魔王軍1000匹を庵達5人で防げるのか？]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PHPで作っているTODOリストアプリケーションにPRGパターンを適用する]]></title>
-        <id>hatenablog://entry/13574176438081414217</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/09/225738"/>
-        <updated>2022-04-09T13:57:38.000Z</updated>
-        <summary type="html"><![CDATA[PHPでTODOリストをつくる、追加まで - @ledsun blog で、タスクを追加したときの画面遷移にPRGパターンを使うと良いことに気がつきました。
-次のように実装しました。
-<!DOCTYPE html>
-
-<head>
-  <title>TODOリスト</title>
-</head>
-
-<body>
-  <form method="post">
-    <input type="text" name="name" autofocus>
-    <button>追加</button>
-  </form>
-  <ul>
-    <?php
-    foreach (restore_todo_list() as $todo) {
-      echo "<li>" . $todo . "</li>";
-    }
-    ?>
-  </ul>
-</body>
-
-<?php
-if ($todo = $_POST["name"]) {
-  $todo_list = restore_todo_list();
-  array_unshift($todo_list, $todo);
-  save_todo_list($todo_list);
-
-  // GETリクエストするようにリダイレクトします。
-  header('Location: todo.php');
-}
-
-function restore_todo_list()
-{
-  return array_filter(explode(",", $_COOKIE["todo_list"]));
-}
-
-function save_todo_list($todo_list)
-{
-  $todo_list_str = array_reduce($todo_list, function ($carry, $todo) {
-    return $carry . "," . $todo;
-  });
-  setcookie("todo_list", $todo_list_str);
-}
-?>
-
-
-
-このコードを見ているとToDoリストがデータとその操作を持つオブジェクトに見えてきました。
-つまり、TodoListクラスにして、restore/saveメソッドを持たせたいです。
-次はPHPでクラスを書く事に挑戦しようと思います。
-参考
-How do I make a redirect in PHP? - Stack Overflow]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2022/04/09(土)]]></title>
         <id>https://note.com/aesthetic_milo/n/n9396aaa67639</id>
         <link href="https://note.com/aesthetic_milo/n/n9396aaa67639"/>
@@ -1614,25 +1246,6 @@ How do I make a redirect in PHP? - Stack Overflow]]></summary>
 続きをみる]]></summary>
         <author>
             <name>議会制</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最強勇者はお払い箱→魔王になったらずっと俺の無双ターン 5]]></title>
-        <id>hatenablog://entry/13574176438081403310</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/09/222051"/>
-        <updated>2022-04-09T13:20:51.000Z</updated>
-        <summary type="html"><![CDATA[最強勇者はお払い箱→魔王になったらずっと俺の無双ターン 5巻 (デジタル版ガンガンコミックスＵＰ！)
-
-作者:澄守彩,jimmy,まさゆみ
-スクウェア・エニックス
-Amazon
-
-前巻の終わりで、帝国からの刺客を返り討ちにしました。
-そっから帝国に占領された王都に逆襲しに行って、表紙の通りボスっぽいキャラとの対決まで行きます。
-お話がサクサク進んでいきます。
-伏線を必然的な演出っぽく埋め込むの上手いです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -1821,43 +1434,6 @@ youtu.be
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[人はFat Modelを恐れサービスを求め ドメインモデルは貧血に至る]]></title>
-        <id>hatenablog://entry/13574176438080714422</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/08/000748"/>
-        <updated>2022-04-07T15:07:48.000Z</updated>
-        <summary type="html"><![CDATA[この文章は祈りです。
-主にRuby on Railsアプリケーションを想定した話です。
-Ruby on Railsアプリケーションでは、Fat Model問題という問題が起きることがあります。
-ドメインオブジェクトが肥大化しメンテナンスしにくくなる問題です。
-Fat Model問題に対応するためにサービスレイヤーを導入することがあります。
-「ドメインモデル貧血症」と呼ばれているアンチパターンです。
-ドメインモデル貧血症
-ドメインのロジックをドメインオブジェクトの中に入れないという設計ルールに従っているのでしょう。その代わり、すべてのドメインロジックを含むサービスオブジェクト群が存在しているのです。
-
-
-Fat Modelを恐れよ
-Fat Modelは「単一責任原則」を満たしていないモデルです。
-単一責任原則 | プログラマが知るべき97のこと
-1つのサブシステムやモジュール、クラス、関数などに、変更する理由が2つ以上あるようではいけない
-
-
-重要なのは「変更する理由が2つあるということは、機能変更のためにあるクラスを変更すると別の機能が壊れる可能性がある」です*1。
-Fat Modelの問題は行数の多さではありません。
-複数の責務を持つため、あるドメインオブジェクトへの変更が、変更したくない機能にも影響を与える可能性があることです。
-Fat Modelがあるとアプリケーションの変更が難しくなります。
-地獄への道は善意で舗装されている
-サービスを求める
-どうすればFat Model問題を解消できるでしょうか？
-モデルが複数の責務を持っているのが問題です。
-責務をモデルの外に出してしまいましょう。
-各責務を担当するサービスオブジェクトを定義し、ロジックをサービスオブジェクトに移動します。
-1つのサービスオブジェクトは1つの責務を持ち、単一責任原則を満たします。
-すべてのFat …]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -2120,50 +1696,6 @@ It makes it easier for users to own their own identities, since you can very eas
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Romeは本当に速かった]]></title>
-        <id>hatenablog://entry/13574176438080443074</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/06/221807"/>
-        <updated>2022-04-06T13:18:07.000Z</updated>
-        <summary type="html"><![CDATA[RomeプロジェクトのJavaScriptフォーマッターがリリースされました。
-rome.tools
-ちょうどPrettier を使っているプロジェクトがあったので比較してみました。
-
-本当にめちゃくちゃ速い。
-prettierで8秒掛かるのが0.5秒とかで終わる。
-— ぎゃばん@手洗い (@ledsun) April 6, 2022
-  
-prettierを速く動かしたくてparallel-prettierに.prettierignoreを読む修正を加えて動かして速くなったか - Qiita でNode.jsのまま並列化したparallel-prettierを試したときは
-やったね1.25倍速くなりました！
-
-
-でした。
-それと比べてるとRomeは10倍以上速くなっています。
-驚異的です。
-JavaScriptパーサーやASTを扱うライブラリーなどの資産がないrustで書き直すのは、大変な労力に思えます。
-それに見合う性能向上がはかれるようです。
-今後の成長が期待大なプロジェクトです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11にしたらIME オン/オフ切り替えキーの設定が消えた]]></title>
-        <id>hatenablog://entry/13574176438080423793</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/06/194856"/>
-        <updated>2022-04-06T10:48:56.000Z</updated>
-        <summary type="html"><![CDATA[Windows 10で英語キーボードを使っています。
-変換キーがないため、変換キーの機能をCtrl + Spaceに割り当てています。
-Windows 11にアップデートしたところ、この設定が消えました。
-再設定しました。
-タスクバー上のIMEアイコンを左クリックしてコンテキストメニューを開く
-「キーの割り当て」が「オフ」になっています
-開いた設定メニューから「キーとタッチのカスタマイズ」を選びます。
-「キーの割り当て」の「オン」にして「Ctrl + Space」を「IME-オン/オフ」にします。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[gchammerをGoogle App EngineからCloud Runへ移行した]]></title>
         <id>20469</id>
         <link href="https://engineering.mercari.com/blog/entry/20220405-gchammer/"/>
@@ -2288,36 +1820,6 @@ Amazon
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[rails ujsを学ぶ]]></title>
-        <id>hatenablog://entry/13574176438080187737</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/05/232351"/>
-        <updated>2022-04-05T14:23:51.000Z</updated>
-        <summary type="html"><![CDATA[一昔前のRailsではJavaScriptを簡単に使う機能としてrails ujsがありました。
-Rails ガイドにも説明があります。
-railsguides.jp
-「UJS: Unobtrusive（控えめな）JavaScript」
-
-
-主な用途は
-www.inodev.jp
-
-JSの処理で確認ダイアログとして「マジでログアウトすんのか？」という表示をする
-JSの処理でログアウトのために「deleteメソッドとして」HTTPのPOSTリクエストをする
-なんだかんだ言って、削除ボタンとか確認ダイアログとか簡単に実装できて便利です。
-JavaScriptとして動く部分の実装は https://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview/app/assets/javascripts/rails-ujs/features
- にあります。
-たかだか300行のCoffeeScriptです。
-読もうと思えば読めそうです。
-今回は読みません。
-https://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview/app/assets/javascripts がプロジェクトのルートです。
-npmパッケージを作っているのは、もう少し上の https://github.com/rails/rails/tree/cfa728478935dc48d9d6e2463dc500ffafee802b/actionview です。依存しているGemの定義がactionview.gemspecに書いてあるからだと思います。
-ビルドするにはnpm run buildを実行します。
-次のよう…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2022/04/05(火)]]></title>
         <id>https://note.com/aesthetic_milo/n/nccf50c450aa1</id>
         <link href="https://note.com/aesthetic_milo/n/nccf50c450aa1"/>
@@ -2356,23 +1858,6 @@ npmパッケージを作っているのは、もう少し上の https://github.c
 続きをみる]]></summary>
         <author>
             <name>スタジオVK 神長タクミ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[冒険王ビィト 16]]></title>
-        <id>hatenablog://entry/13574176438080125840</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/05/200849"/>
-        <updated>2022-04-05T11:08:49.000Z</updated>
-        <summary type="html"><![CDATA[冒険王ビィト 16 (ジャンプコミックスDIGITAL)
-
-作者:三条陸,稲田浩司
-集英社
-Amazon
-
-最終巻ぽい集合した表紙です。
-最終巻ではありませんでした。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -2625,93 +2110,6 @@ R4-1試験まで80日を切りましたが、勉強の進捗はいかがでし�
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[PHPでTODOリストをつくる、追加まで]]></title>
-        <id>hatenablog://entry/13574176438079570725</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/04/000331"/>
-        <updated>2022-04-03T15:03:31.000Z</updated>
-        <summary type="html"><![CDATA[PHPを勉強しています。
-WebアプリケーションとしてPHPを動かすことが出来たので何か作ってみましょう。
-公式マニュアルをみていたらsetcookie関数を見つけました。
-Cookieに値が保存できるならTODOリストアプリケーションが作れそうです。
-ここでイメージしているTODOリストアプリケーションは
-https://todomvc.com/ のようなブラウザだけで完結したTODOリストアプリケーションです。
-というのは、いまのところPHPでDBはおろかファイルを操作する方法すら知らないからです。
-というわけで実装してみました。
-まずは追加だけを考えます。
-というのは、ユーザー操作が追加、達成、削除のどれかを区別する方法を知らないからです。
-<!DOCTYPE html>
-
-<head>
-  <title>TODOリスト</title>
-</head>
-
-<body>
-  <form method="post">
-    <input type="text" name="name" autofocus>
-    <button>追加</button>
-    <?php
-    $todos = restore_todos();
-    $todos = add_todo($todos, $_POST["name"]);
-    save_todos($todos);
-    ?>
-  </form>
-  <ul>
-    <?php
-    foreach (array_reverse($todos) as $todo) {
-      echo "<li>" . $todo . "</li>";
-    }
-    ?>
-  </ul>
-</body>
-
-<?php
-function add_todo($todos, $todo)
-{
-  if ($todo) {
-    $todos = restore_todos();
-    array_push($todos, $todo);
-  }
-
-  return $todos;
-}
-
-function restore_todos()
-{
-  return array_filter(explode(",", $_COOKIE["todos"]));
-}
-
-function save_todos($todos)
-{
-  $todos_str = array_reduce($todos, function ($carry, $todo) {
-    return $carry . "," . $todo;
-  });
-  setcookie("todos", $todos_str);
-}
-?>
-
-
-
-実装してみると、最初にHTMLでテンプレート書いて、それから振る舞いを実装していきます。
-すごくフロントエンド開発っぽいです。
-サーバー側でエラーが出たときに500エラーが起きて詳しい情報がわからないのは辛かったです。
-Better Errorsって、ありがたいんだなと思いました。
-動かすと次の感じです。
-
-次の振る舞いで困りました。
-追加した新しいタスクがリロードしないと表示されない
-リロードすると前回追加したタスクがまた追加される
-前者はグローバル変数をつかって、変更後のリストをレンダリングすることで回避しました。
-後者が思いつかなくてググったらPRGパターンを使えって出てきて「そらそうだー！」っておでこをはたきました。
-まあ、リダイレクトの仕方がわからないので、次の課題です。
-どうやら僕は、PHPの勉強を「縛りプレイ」だと思うと楽しめそうです。
-Webアプリケーションを作ること自体は何週目かわからないので新鮮味はないです。
-新しい言語で使える物を限定したこと「この道具だけでどうやって実現するか？」を考えるのが面白いです。
-それでWebアプリケーションについての理解が深まるのが、また楽しいです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[発想の枠を広げるドラゴンワインダー思考]]></title>
         <id>hatenablog://entry/13574176438079455925</id>
         <link href="https://honeshabri.hatenablog.com/entry/dragon-winder"/>
@@ -2859,59 +2257,6 @@ youtu.be]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[PHPでエコーするWebアプリケーションをつくる]]></title>
-        <id>hatenablog://entry/13574176438079166707</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/02/203410"/>
-        <updated>2022-04-02T11:34:10.000Z</updated>
-        <summary type="html"><![CDATA[スラスラ読める PHPふりがなプログラミング (ふりがなプログラミングシリーズ)
-
-作者:リブロワークス
-インプレス
-Amazon
-
-を参考にしています。
-環境構築時にインストールしたMAPMで、Apacheが自動的にインストールされてPHPが実行できます。
-環境設定はこれに全部おまかせでPHPファイルだけを書きます。
-ソースコードです。
-<!DOCTYPE html>
-<html>
-
-<head></head>
-<title>Echo by PHP</title>
-
-<body>
-  <h1>入力</h1>
-  <form>
-    <input type="text" name="comment" autofocus>
-    <button>送信</button>
-  </form>
-
-  <h1>出力</h1>
-  <p><?= h($_GET["comment"]) ?></p>
-</body>
-
-</html>
-<?php
-function h($str)
-{
-  return htmlspecialchars($str, ENT_QUOTES, "UTF-8");
-}
-?>
-
-
-
-動かしたとろが次の動画です。
-
-一応入力文字列のエスケープ処理も入っています。
-動画では入力してません。
-PHPのソースコードがそのままHTMLのテンプレートになっているのが驚きです。
-PHP: Hypertext Preprocessor というのは伊達じゃないですね。
-1ページで完結するようなアプリケーション、例えば掲示板やTODOリストは、割と簡単に作れそうに思えます。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Slack App 移行メモ]]></title>
         <id>hatenablog://entry/13574176438079043919</id>
         <link href="https://www.bokukoko.info/entry/2022/04/02/180000"/>
@@ -3034,108 +2379,6 @@ www.misterdonut.jp
 　店内では雑談をしている人々がさざめいていたが、それをよそ目にひとりでそそくさと食べて店を出ることに美学を感じているのでそうした（感染対策的にも）。後ろのほうで小学生――おそらくふたりだけで来ているのだろう――が公立の中学に行くか、私立に行くかについて雑談していた。うちはお金が無いから…ほら、私…]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[$( document ).ready()]]></title>
-        <id>hatenablog://entry/13574176438078959879</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/04/02/074725"/>
-        <updated>2022-04-01T22:47:25.000Z</updated>
-        <summary type="html"><![CDATA[コールバック関数が実行されるタイミング
-$( document ).ready()はJavaScriptでDOMを操作するに当たって、DOMの読込完了を待つためのjQueryの便利関数です。
-ブラウザにloadイベントしか実装されていなかった時代がありました。
-loadイベントは次の2つを待ちます。
-DOMの構築
-画像、CSSの読込
-$( document ).ready()は2の前に発火します。
-画像などの（当時として）重たいアセットの読込を待たなくてよくなるため、JavaScriptの開始を高速化出来ました。
-次のように使いました。
-$(document).ready(function(){
-/// 好きな処理
-})
-
-
-
-代替え案
-scriptタグのdefer属性
-scriptタグにdefer属性を設定すると
-スクリプトを文書の解析完了後かつ DOMContentLoaded が発生する前に実行する
-
-
-ので、同様の効果が得られます。ただし、インラインスクリプトには効果がありません。
-src属性を使って読み込む外部スクリプトには、defer属性を使うのが良いと思います。
-<html>
-<head>
-  <script defer src="outer.js"></script>
-</head>
-<body>
-本文
-</body>
-
-
-
-outer.jsでは、$( document ).ready()を使わずに、いきなり実行したいJavaScriptが書けます。
-/// 好きな処理
-
-
-
-scriptタグの位置
-bodyタグの最後にscriptタグを書いても大体同じ効果が得られます。
-確かheadタグにで読み込むCSSを読み込んだ後で、画像を読み込む前だったような・・・うろ覚えです。
-O'Reilly Japan - ハイパフォーマンスJavaScript に詳しい説明が載っています。
-インラインスクリプトの場合はこちらの方が良いでしょう。
-<html>
-<head></head>
-<body>
-  本文
-  <script>
-  /// 好きな処理
-  </script>
-</body>
-
-
-
-DOMContentLoaded
-他人が使うJavaScriptファイルを提供する場合など、scriptタグの書き方を指定を変更出来ない時、JavaScriptだけで実行タイミングを制御したいことがあります。その場合はDOMContentLoadedイベントが使えます。
-document.addEventListener('DOMContentLoaded', () => {
-/// 好きな処理
-})
-
-
-
-DOMContentLoadedは一度しか発火しないため、後から追加するJavaScriptでは発火しません。
-$( document ).ready()は次のようにjQuery.Deferredを使って実装されています。
-https://github.com/jquery/jquery/blob/5d5ea015114092c157311c4948f7cc3d8c8e7f8a/src/core/ready.js#L7-L13
-// The deferred used on DOM ready
-var readyList = jQuery.Deferred();
-
-jQuery.fn.ready = function( fn ) {
-
-    readyList
-        .then( fn )
-
-
-
-DOM構築後に$( document ).ready()を読ぶと即座に実行されます。
-同じように動作させるには次のようにreadyStateの値を確認します。
-function doSomething() {
-/// 好きな処理
-}
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', doSomething);
-} else {
-  doSomething();
-}
-
-
-
-厳密には$( document ).ready()は次のイベントループ（？）で非同期に実行します。
-doSomethingの実行に長い時間が掛かる場合は、requestAnimationFrameを使うなどの工夫が必要かもしれません。
-関連ページ
-HTMLのscriptタグのdefer属性 - @ledsun blog]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -3468,55 +2711,6 @@ YouTube Music Charts 地球で踊る
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[PHPでFizzBuzz]]></title>
-        <id>hatenablog://entry/13574176438078605618</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/31/225757"/>
-        <updated>2022-03-31T13:57:57.000Z</updated>
-        <summary type="html"><![CDATA[if文とforeach文を覚えました。
-早速FizzBuzzしてみたいと思います。
-<?php
-foreach (range(1, 15) as $i) {
-  if ($i % 15 == 0) {
-    var_dump("FizzBuzz");
-  } else if ($i % 5 == 0) {
-    var_dump("Buzz");
-  } else if ($i % 3 == 0) {
-    var_dump("Fizz");
-  } else {
-    var_dump($i);
-  }
-}
-
-
-
-はまった点
-変数の頭に$を付け忘れた
-range(1, 15) as $iの順序を逆だと思い込んで$i as range(1, 15)と書いた
-実行してみましょう。
-PS C:\Users\led_l\php_playground> php .\fizz_buzz.php
-int(1)
-int(2)
-string(4) "Fizz"
-int(4)
-string(4) "Buzz"
-string(4) "Fizz"
-int(7)
-int(8)
-string(4) "Fizz"
-string(4) "Buzz"
-int(11)
-string(4) "Fizz"
-int(13)
-int(14)
-string(8) "FizzBuzz"
-出力方法はvar_dumpと言う関数しか知りません。
-var_dump関数は、値の形とサイズも一緒に表示します。
-あ、<?phpって必ずしも閉じなくて良いんですね！]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[20220331]]></title>
         <id>https://note.com/dak/n/n16e9f38c90a9</id>
         <link href="https://note.com/dak/n/n16e9f38c90a9"/>
@@ -3526,45 +2720,6 @@ var_dump関数は、値の形とサイズも一緒に表示します。
 続きをみる]]></summary>
         <author>
             <name>疒</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PHPを学ぶ]]></title>
-        <id>hatenablog://entry/13574176438078599960</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/31/224222"/>
-        <updated>2022-03-31T13:42:22.000Z</updated>
-        <summary type="html"><![CDATA[数ヶ月後にPHPを扱う可能性が出てきたのでゆるゆると勉強しようと思います。
-もっと近づいてからガッと勉強してもいいんですが、そうすると実利に近づきすぎるというか、遊びがなくなります。
-ゆっくりダラダラ学んだほうが周辺情報がわかって良いかもしれません。
-ふりがなプログラミング
-
-スラスラ読める PHPふりがなプログラミング (ふりがなプログラミングシリーズ)
-
-作者:リブロワークス
-インプレス
-Amazon
-
-まずは初心者向けの入門書から入ります。
-ふりがなプログラミングシリーズは出た頃に話題になったのですが、それを学ぶ立場で読むって貴重な体験に思えます。
-読んでみると、プログラマーにすでに見えている情報をふりがなでアノテーションしているように思いました。
-なるほど初心者向けのギブスとしてよさげな感じがします。
-特に良いと思ったのがエラーメッセージにふりがなを振っている例です。
-エラーメッセージにふりがながふってあるところ
-知らないプログラミング言語のエラーメッセージって、つい読み飛ばします。
-読んでもファイル名と行数くらいで、メッセージの内容を読む気になれません。
-ふりがながふってあると、読んでみたくなるのなかなかすごいです。
-MAMP
-PHPの環境構築には MAMP & MAMP PRO - your local web development solution for PHP and WordPress development というのを使うみたいです。
-もとはLAMP（Linux + Apache + MySQL + PHP）をもじってMac向けだったみたいです。
-名前はそのままでWindows版もあるので使ってみました。
-やけにインストールに時間が掛かるくせに、パスは設定してくれないし、微妙に不便だな？と思いました。
-MAMPでインストールされるPHPの羅列
-9バージョンインストールされてました。
-rbenvみたいに必要に応じて必要なバージョンをインストールするんじゃないんですね。
-いきなり全部用意してくれました。
-カルチャーの違いにおどろきます。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -4465,25 +3620,6 @@ forms.gle]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[超一流になるのは才能か努力か?]]></title>
-        <id>hatenablog://entry/13574176438077682530</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/28/232055"/>
-        <updated>2022-03-28T14:20:55.000Z</updated>
-        <summary type="html"><![CDATA[超一流になるのは才能か努力か?
-
-作者:エリクソン,アンダース,プール,ロバート
-文藝春秋
-Amazon
-
-「一万時間の法則」の根拠として研究を使われたアンダース・エリクソンさん本人の本。
-
-P111「経験豊富な医師は高度な心的イメージを身につけており、そのおかげで一見関係のなさそうな情報も含めてたくさんの事実を同時に考慮することができる」
-— ぎゃばん@手洗い (@ledsun) September 26, 2020]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2022/03/28(月)]]></title>
         <id>https://note.com/aesthetic_milo/n/n838254a6cbc4</id>
         <link href="https://note.com/aesthetic_milo/n/n838254a6cbc4"/>
@@ -4503,28 +3639,6 @@ P111「経験豊富な医師は高度な心的イメージを身につけてお�
         <summary type="html"><![CDATA[2022年3月9日に、『merpay Backend Talk 〜自分に合った役割って？キャリアについてディスカッション〜』 を開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します！ 詳しくは […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[偽春菜]]></title>
-        <id>hatenablog://entry/13574176438077586028</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/28/181139"/>
-        <updated>2022-03-28T09:11:39.000Z</updated>
-        <summary type="html"><![CDATA[伺か - Wikipedia
-偽ペルソナウェア with "偽春菜"と命名して2000年5月25日に公開した。
-
-
-20年前に名前が問題になって話題になった、カイル君のもっとウザい感じの常駐アプリケーションです。
-なんかすごくインストールしたくなりました。
-今もあるのかな？と、調べたら独立伺か研究施設 ばぐとら研究所 で後継アプリケーションが配布されていました。
-インストールしてみたら普通に動きます。
-SSPのデフォルトゴースト
-今はゴーストという名前でキャラクターを入れ替えられるようになっているようです。
-相変わらずのウザさです。
-20年間受け継がれています。
-すばらしい。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -4572,36 +3686,6 @@ youtu.be
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[標準入力とはなにか？]]></title>
-        <id>hatenablog://entry/13574176438077304088</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/27/231822"/>
-        <updated>2022-03-27T14:18:22.000Z</updated>
-        <summary type="html"><![CDATA[雑に言うと、UNIX用のプログラムがキーボードからの文字入力を受けとる口です。
-プログラムの標準入力は、親プロセスの標準入力を引き継ぎます。
-対話シェル（Bashとかzshとか）は入力をキーボードから受け取ります。
-シェルからプログラムを起動すると、これを引き継いで標準入力はキーボードからの入力になります。
-UNIX以前は、プログラムの入力装置と出力装置は、プログラムを起動する毎に指定したようです。
-おそらくコンピューター毎に入力がパンチカードや磁気テープだったり、出力がプリンターだったりという環境を想定していたのだと思います。
-UNIXでは、デフォルトの入力装置をキーボード、出力装置をモニターにして、プログラムを起動する度に、入力装置と出力装置を指定しなくてよくしました。
-それで「標準」入力と名付けたようです。
-1970年代にキーボードとモニターが普及し、大抵のコンピューターにキーボードとモニターがついていると想定できるようになったのだと思います。
-UNIXのバージョンが進むにつれて標準エラー出力が追加され現在の振る舞いになりました。
-この動きが多くのOSやプログラミング言語に引き継がれているようです。
-いまではLinuxでもMacでもWindowsでも、Javaでも.NETでもPythonでもRubyでもPHPでも標準入力を持つようになりました。
-参考
-Standard streams - Wikipedia
-標準ストリーム - Wikipedia
-標準入出力
-標準入力と標準出力
-https://wa3.i-3-i.info/word11636.html
-標準入力（stdin）とは - IT用語辞典 e-Words
-標準入力・標準出力ってなに? - Qiita
-標準入出力(1) | LinuxC]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[新生活に向けて読みたい資産形成の本3冊]]></title>
         <id>hatenablog://entry/13574176438077155219</id>
         <link href="https://honeshabri.hatenablog.com/entry/asset_building"/>
@@ -4627,29 +3711,6 @@ Unknown authorUnknown author, Public domain, via Wikimedia Commons, Link
 この時点の本多は裕福ではない。ドイツ帰りの本多が東大で助教授となったということで親類縁…]]></summary>
         <author>
             <name>本しゃぶり</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ホームレス転生 ７ ～異世界で自由すぎる自給自足生活～]]></title>
-        <id>hatenablog://entry/13574176438075735415</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/27/222200"/>
-        <updated>2022-03-27T13:22:00.000Z</updated>
-        <summary type="html"><![CDATA[ホームレス転生　７　～異世界で自由すぎる自給自足生活～ (MFC)
-
-作者:久遠 まこと
-KADOKAWA
-Amazon
-
-他国の進軍を止めるクエストを受けた主人公たち、無事に時間を稼ぐことが出来るのか？
-逃げ場のない状況で迫る危機にどう対処するのか、「家の中のモンスター」です。
-表紙の通り女性キャラに囲まれています。
-その割には、メインヒロインと子供役以外は主人公に迫ってこなくてハーレム化しない点が読みやすいです。
-女性の作画は妙にエロいです。
-エロ展開があるとかリアリティがあるとか肉感的であるとかではないのです。
-でもエロスがあります。
-謎です。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -4747,69 +3808,6 @@ youtu.be
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[焼売は蒸して作るのになぜ焼くのか？]]></title>
-        <id>hatenablog://entry/13574176438076979669</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/26/233446"/>
-        <updated>2022-03-26T14:34:46.000Z</updated>
-        <summary type="html"><![CDATA[中国内モンゴル自治区発祥で、北京、広東と伝わるうちに音はシャオメイのまま、
-漢字が稍美 > 焼麦 > 焼売 と変化していったみたいです。
-日本に伝わるときに漢字は焼売のまま音がシュウマイに変わったようです。
-
-◆羊肉焼麦　…1,380円
-…「内モンゴルの羊肉シュウマイ」
-これが凄く食べたかった！！
-今でこそシュウマイというと
-広東料理など中国南方のイメージが強いが、
-実はその発祥は内モンゴル自治区の
-呼和浩市（フフホト市）で元王朝の時代に
-誕生したと言われている。
-こうやって発祥の地
-内蒙古のシュウマイが実際に食べれらるとは
-ホント貴重な経験( ﾟεﾟ；)
-・・・そんな私の気持ちを汲み取ってか、
-本来６個の所、８個にサービスしてもらいました(笑)
-小籠包のような
-モチモチとした皮に
-ゴロゴロした羊肉と臭み消しのタマネギのみ。
-羊肉特有の風味と
-ジューシーな肉汁に舌鼓(;´∀｀)
-黒酢で味変すると、
-羊のクセがまろやかに♪
-
-
-
-稍美(シャオメイ)　シューマイ
-　稍美は日本での定番中華料理シューマイのこと。地方によっては稍麦，焼売と書くところもあり、日本と全く変わらない。こちらのシューマイの一番の特徴は皮にある。餃子でもシューマイでも日本の物は皮がとても薄いが、中国ではこれが主食にあたるため、皮もおいしく、しっかり食べる。そのため、シューマイの皮にもこだわりがあり、日本のシューマイとは違った食感、味がする。具は、肉を中心にしたもので、とてもやわらかい。日本のシューマイのように、箸できれいに割ることは出来ない。割ってしまったらバラバラにくずれてしまう。
-　 フフホトでは、朝食にシューマイを食べる人が多く、朝からシューマイを出す店は繁盛している。朝早くおきて街中を散歩すれば、かならずシューマイを買っている人にでくわすだろう。
-
-
-
-次は、稍麦。いわゆる焼売（シューマイ）のことだ。
-意外なことに、シューマイが内モンゴルの名物らしい。
-中国ではシューマイは焼売とか焼麦とか書くのが普通なんだけど、
-ここ内モンゴルでは、稍麦とか稍美とか書くんだそうだ（どれも発音が似ているのだ）。
-中国の田舎に行くと、難しい漢字は勝手に違う漢字を当てて簡単にしてることがよくあるから、
-これもその一例なのかなと思ったら、さにあらず。
-なんと明代にはこっちの書き方が正式だったんだそうだ。へえ。
-餡に羊肉を使うのと、塞ぎ口に粉を付けて雪が積もったように見せるのが、特徴。
-まあ、美味しいかと聞かれれば、答えはやや微妙で。。
-「蒸し物なのに何でこんなに油っこいんだろう。。」
-「ひとつひとつが無闇に大きいからじゃないか？
-　これだけ皮が薄くて餡が多いと、肉の固まりを食べているのと大して変わらんもの」
-
-
- （DeepL翻訳）
-伝説によると、明朝末期から清朝初期にかけて、桂花市の大南街大昭寺の近くに、饅頭を売って生活している兄妹がいたという。
-兄は食費以外に収入がなく、将来結婚して家庭を持つために、鍋で蒸した時に薄皮の開いた「饅頭」を作って別に売り、饅頭を売ったお金を兄に渡して、そのお金を貯めていた。
-そのうち、饅頭には見えない饅頭を気に入る人が多くなり、豚の背比べを意味する「捎卖」と名付けられた。[1]
-また、その昔、茶館で売られていたこの蒸し菓子は、濃い磚茶やミルクティーに各種菓子を入れて飲み、籠から出したばかりの熱い蒸し菓子を食べたところ、側面が花のようにわずかにしわが寄っていたことから、「側面がわずかに美しい」という意味の「稍美」と呼ばれたそうである。 お茶屋さんで売られていることから、「捎卖」とも呼ばれている。
-その後、晋の商人を通じて北京や天津に広まり、「稍麦」と呼ばれるようになり、北京で有名になった。
-当時、北京の前門地区では、微麦を売る店の前にぶら下がっている看板に「桂花城稍麦」という文字がよく出ていた。 その後、進化を遂げながら「焼売」と呼ばれるようになり、南方へ広がっていった。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[20220326]]></title>
         <id>https://note.com/dak/n/n9bd182c6ae84</id>
         <link href="https://note.com/dak/n/n9bd182c6ae84"/>
@@ -4880,49 +3878,6 @@ struct SigninView: View {
 続きをみる]]></summary>
         <author>
             <name>izumi🦆</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ｒｅｄＥｙｅｓ26]]></title>
-        <id>hatenablog://entry/13574176438076709325</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/26/142137"/>
-        <updated>2022-03-26T05:21:37.000Z</updated>
-        <summary type="html"><![CDATA[ｒｅｄＥｙｅｓ（２６） (月刊少年マガジンコミックス)
-
-作者:神堂潤
-講談社
-Amazon
-
-表紙からしてヘイデン回かと思ったらヘイデン回でした。
-野獣のような男がいつの間にか成長を遂げていました。
-22巻から始まった敵の本拠地への攻撃の続きです。
-5巻目なので、話の長さが特別長いと言うことはないです。
-年に一冊しか出ないので、もう5年目です。
-たぶん攻め終わるのは10年後ぐらいだと思います。
-いまどきパワードスーツバトルをアナログで描くのは伝統芸能だと思います。
-健康に気をつけて描き続けてもらえればと思います。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[クレバテス−魔獣の王と赤子と屍の勇者− 4]]></title>
-        <id>hatenablog://entry/13574176438076710007</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/26/140952"/>
-        <updated>2022-03-26T05:09:52.000Z</updated>
-        <summary type="html"><![CDATA[クレバテス−魔獣の王と赤子と屍の勇者−【フルカラー版】 4巻 (LINEコミックス)
-
-作者:岩原裕二
-LINE Digital Frontier
-Amazon
-
-王都に攻め込んで来た主人公の仇の攻撃を、主人公は防げるか、仇を討てるのか？
-ストーリーの累計としては「家の中のモンスター」に当たりそうです。
-見所はツンデレ魔王様のちょっといいところでしょうか？
-仇討ちと絡めて世界の謎がちょっと見えてきました。
-「ディメンションW」に続いて、強い仇役にひげ面のおじさんを配置したのは、何かこだわりがあるんですかね？]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -5543,44 +4498,6 @@ SSSS.GRIDMAN（2018） #08「対・立」
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[WARNING:  collation "ja-x-icu" has version mismatch]]></title>
-        <id>hatenablog://entry/13574176438075610160</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/22/200849"/>
-        <updated>2022-03-22T11:08:49.000Z</updated>
-        <summary type="html"><![CDATA[PostgreSQLで次の警告が表示されました。
-2022-03-22 18:00:35.147 JST [68445] WARNING:  collation "ja-x-icu" has version mismatch
-2022-03-22 18:00:35.147 JST [68445] DETAIL:  The collation in the database was created using version 153.14.39, but the operating system provides version 153.112.40.
-2022-03-22 18:00:35.147 JST [68445] HINT:  Rebuild all objects affected by this collation and run ALTER COLLATION pg_catalog."ja-x-icu" REFRESH VERSION, or build PostgreSQL with the right library version.
-
-
-
-意味はわかりません。
-表示されたガイドに従ってコマンドを実行してみます。
-~/px►psql postgres
-psql (14.2)
-Type "help" for help.
-
-postgres=# ALTER COLLATION pg_catalog."ja-x-icu" REFRESH VERSION
-postgres-# ;
-NOTICE:  changing version from 153.14.39 to 153.112.40
-ALTER COLLATION
-
-
-
-良さそうです。
-参考
-PostgreSQL 10のICUコレーションを使うと日本語を普通にソートでき、更に文字順序までカスタマイズできる – yohgaki's blog
-ソート順序はICUのバージョンによって変わる場合があります。このため、ICUバージョンが異るとエラーが発生することがあります。
-
-
-PostgreSQL 10からja-x-icuという日本語の順序の指定方法が追加されたそうです。
-これにバージョンが存在するそうです（言われてみれば、そらそうですね）。
-PostgreSQLをバージョンアップしたときに、DB内のICUバージョンとPostgreSQL側のICUバージョンがズレるみたいです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[エッセイ:SeikinTVを見たりブルーアーカイブをやったりして終わる一日]]></title>
         <id>https://note.com/sizes/n/naf66dab277ea</id>
         <link href="https://note.com/sizes/n/naf66dab277ea"/>
@@ -6080,103 +4997,6 @@ youtubeで譜面動画見てみたらちゃんと捻りとか入ってて結構�
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[データモデリング]]></title>
-        <id>hatenablog://entry/13574176438074682031</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/20/011417"/>
-        <updated>2022-03-19T16:14:17.000Z</updated>
-        <summary type="html"><![CDATA[主にサーバーサイドのRDBMSのデータモデリングの話です。
-最近、流行らないのですが・・・T字形ERに取り組むのが早道なんじゃないかなあ？と思っています。
-例えば、TM（T字形ER）によるモデリング で説明されているものです。
-ただ、僕が知った10年前ですら「どこかに伝わっているそういう手法があるらしい」みたいな感じでした。
-人に勧めるには手頃な入門書を知らないです。
-提唱者の佐藤正美さんの比較的新しい本があるので、良いのかもしれません。
-
-SEのためのモデルへのいざない―データモデルとは何か?
-
-作者:佐藤 正美
-ソフトリサーチセンター
-Amazon
-
-未読です。
-そういえば、僕はどういう本で勉強してきたかなあ？というのを思い出してみます。
-
-業務システムのための上流工程入門
-
-作者:渡辺 幸三
-日本実業出版社
-Amazon
-
-10年以上前に読んだので内容は一ミリも覚えていませんが、すごい感銘を受けたことを覚えています。
-
-システム開発・刷新のための データモデル大全
-
-作者:渡辺 幸三
-日本実業出版社
-Amazon
-
-同著者のより新しいデータモデルの本があるので、これも良いのかもしれません。
-
-楽々ERDレッスン (CodeZine BOOKS)
-
-作者:(株)スターロジック 羽生 章洋
-翔泳社
-Amazon
-
-現実世界の例からデータモデリングをしていく実例が載っている本としては、名著です。
-データモデリングの理論でなくて実践の入り口としてとても良いです。
-「Kindle版がない」とか「出来た結果がRailsのActiveModelのソースコードだと、（僕にとって）都合がいいのに」とか思ったりします。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WSLのバージョン]]></title>
-        <id>hatenablog://entry/13574176438074668075</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/20/000759"/>
-        <updated>2022-03-19T15:07:59.000Z</updated>
-        <summary type="html"><![CDATA[WSL2とかでなくて、もうちょっと細かいバージョンについてです。
-github.com
-Githubでは0.56.2とかってバージョンがついています。
-docs.microsoft.com
-Release NoteではBuild 21364です。
-要するに自分のPCに入っているWSLってどのバージョンなのでしょうか？
-how to check version/build number of WLS · Issue #1728 · microsoft/WSL · GitHub
-To find your Windows build number (which corresponds to your WSL version), go to Cortana and type "About your PC", and press Enter.
-
-
-Build 21364というのはWindowsのビルドと一緒の番号みたいです。
-自分のPCのWindowsのビルドは19043.1586
-WSLでいうとBuild 19041まで入っているのでしょうか？
-リリースはDecember 10, 2019 で2年前です。
-結構古いですね。
-Windows 11にすると ビルド 22000 になるっぽいです*1。
-WSLのバージョンを上げるにはWindowsのバージョンを上げればよいということがわかりました。
-Githubとのタグとの関係性は謎です。
-*1:https://docs.microsoft.com/en-us/windows/release-health/status-windows-11-21h2]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アラフォー賢者の異世界生活日記～気ままな異世界教師ライフ～ 8]]></title>
-        <id>hatenablog://entry/13574176438074438748</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/19/234936"/>
-        <updated>2022-03-19T14:49:36.000Z</updated>
-        <summary type="html"><![CDATA[アラフォー賢者の異世界生活日記～気ままな異世界教師ライフ～ 8巻 (デジタル版ガンガンコミックスＵＰ！)
-
-作者:寿安清（「アラフォー賢者の異世界生活日記」KADOKAWA/MFブックス刊）,招来,西野リュウ,ジョンディー
-スクウェア・エニックス
-Amazon
-
-古代超科学文明の遺跡を調査しにきた主人公が見つける物は何か？
-「SAVE THE CATの法則」のストーリーの類型では「なぜやったのか？」に該当するのでしょうか？
-主人公が異世界に転生してきた原因が徐々に見えてきました。
-自分、異世界転生チート主人公が現地人を育てて回る話が好きみたい。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2022/03/19(土)]]></title>
         <id>https://note.com/aesthetic_milo/n/ndbdfd1aa20c5</id>
         <link href="https://note.com/aesthetic_milo/n/ndbdfd1aa20c5"/>
@@ -6394,74 +5214,6 @@ rbs_railsで、依存するクラスの型を常に書き出すように修正�
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[WSLを終了する]]></title>
-        <id>hatenablog://entry/13574176438074321409</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/18/231950"/>
-        <updated>2022-03-18T14:19:50.000Z</updated>
-        <summary type="html"><![CDATA[Windowsターミナルを閉じてもWSLは終了しません。
-sudo shutdow -h nowでも終了するっぽいのですが、Distrodがエラーメッセージを表示します。
-ledsun@MSI:~►sudo shutdown -h now
-[sudo] password for ledsun:
-ledsun@MSI:~►[Distrod][ERROR] Failed to spawn the command.
-Caused by:
-    status.code() is None unexpectedly.
-
-[プロセスはコード 137 で終了しました]
-
-
-
-wsl.exe --shutdownで正常に終了できます。
-wsl.exe --shutdown でWSLが正常に終了したところ
-sudoも要求されません。
-参考
-WSL1/WSL2 を再起動する方法 - 備忘録]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[トラックボール]]></title>
-        <id>hatenablog://entry/13574176438074318416</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/18/230852"/>
-        <updated>2022-03-18T14:08:52.000Z</updated>
-        <summary type="html"><![CDATA[ワークフロムホームでは机が狭いです。
-より快適に作業をするためにトラックボールを使っています。
-今まで使ったことがある三機種を比較してみます。
-
-エレコム マウス ワイヤレス トラックボール (親指) 左手専用 赤玉 6ボタン チルト機能(左右スクロール) ゲーミンググレード光学センサー採用 ブラック M-XT4DRBK-G
-
-エレコム
-Amazon
-
-現役の左手用トラックボールです。
-もとは右の背中の負担を減らすために、11月から左手用トラックボールを使い始めました。
-最初は、左手で操作するのは慣れませんでした。
-もう5ヶ月使っています。
-今は普通に使えます。
-何かで、右手が上手く動かせなくなったときに、左手でもある程度操作できる方が、プログラマ寿命が伸びそうです。
-
-エレコム マウス ワイヤレス (レシーバー付属) トラックボール 大玉 8ボタン チルト機能 ブラック M-HT1DRXBK
-
-エレコム
-Amazon
-
-その前、9月から2ヶ月間、使っていた大玉トラックボールです。
-でっかいとかっこいいと思って試してみました。
-久しぶりに使ってみました。
-僕は、人差し指と中指で操作するのはダメっぽいです。
-1時間ぐらい使うと手首が痛くなってきます。
-十数年前にボウリングをやっていた時期に痛めた部分です。
-普段は特になんともないのですが、10年経っても治らないんですね。
-www.sanwa.co.jp
-2022年5月、最初に使ったトラックボールです。
-1年以上使いました。
-今使ってみると、手が大きいからか、玉と本体と両方が軽すぎてふわふわします。
-なんとなく私には合わないようです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[「ディグディガ」元ネタ紹介：12.5話]]></title>
         <id>https://note.com/diginthedigger/n/nd9dd27bc49f7</id>
         <link href="https://note.com/diginthedigger/n/nd9dd27bc49f7"/>
@@ -6472,31 +5224,6 @@ www.sanwa.co.jp
 続きをみる]]></summary>
         <author>
             <name>ディグインザディガー</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[marmaid.jsを使ってシーケンス図を書くためのHTMLファイルのテンプレート]]></title>
-        <id>hatenablog://entry/13574176438074241239</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/18/202258"/>
-        <updated>2022-03-18T11:22:58.000Z</updated>
-        <summary type="html"><![CDATA[SPAのような、あるページを表示するときにブラウザからサーバーへ複数回のリクエストを送るWebサイトがあります。
-シーケンスそのものは複雑ではありませんが、複数種類のリクエストを送信していることを強調したいことがあります。
-そんなときにサッとシーケンス図を描いて図示できると便利です。
-簡単な図なのでわざわざ作図ツールを使うほどではありません。
-なるべく手軽にシーケンス図を書きたいです。
-そこで思いつきました。
-marmaid.jsを組み込んだHTMLファイルを用意します。
-例えば次のHTMLファイルです。
-
-
-
-これをブラウザで表示すればシーケンス図が得られます。
-ブラウザでひらいくとシーケンス図が得られます。
-お好みのテキストエディタで編集して、好きなシーケンス図が得られます。
-marmaid.jsにはライブエディタもあります。
-よく考えたら、要りませんでした。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -6573,79 +5300,6 @@ marmaid.jsにはライブエディタもあります。
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WSL起動時にfish-shellからrbenvの初期化に失敗する]]></title>
-        <id>hatenablog://entry/13574176438073988909</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/17/232317"/>
-        <updated>2022-03-17T14:23:17.000Z</updated>
-        <summary type="html"><![CDATA[WSL起動時に次のエラーメッセージが表示されます。
-source: Error encountered while sourcing file '/tmp/.psub.N1u4nIBokn':
-source: No such file or directory
-rm: cannot remove '/tmp/.psub.N1u4nIBokn': No such file or directory
-Welcome to fish, the friendly interactive shell
-Type help for instructions on how to use fish
-
-
-
-rbenvを初期化するためのコマンドsource (rbenv init -|psub)の実行に失敗しているためにでているエラーメッセージです。
-この状態ではrubyコマンドが見つかりません。
-ledsun@MSI:~►ruby                                                                                                  23:01
-
-Command 'ruby' not found, but can be installed with:
-
-sudo snap install ruby  # version 3.1.1, or
-sudo apt  install ruby  # version 1:2.7+1
-
-See 'snap info ruby' for additional versions.
-
-
-
-もう一度source (rbenv init -|psub)すればrbenvは初期化されます。
-rubyコマンドが使えるようになります。
-ledsun@MSI:~[127]►source (rbenv init -|psub)                                                                0.127s 23:01
-ledsun@MSI:~►ruby
-
-
-
-fish-shell同じエラーメッセージがでるissueがあります。
-github.com
-close済みです。
-WSLに関する情報も載っていません。
-psubは名前付きパイプの代わりに一時ファイルをつかうfish-shellの組み込みコマンドです。
-fishshell.com
-わかった風に書いていますが、名前付きパイプがなにかはわかっていません。
-やっていることは、次のようにrbenv initコマンドで初期化スクリプトを出力します。
-ledsun@MSI:~[1]►rbenv init -                                                                                       23:16
-set -gx PATH '/home/ledsun/.rbenv/shims' $PATH
-set -gx RBENV_SHELL fish
-command rbenv rehash 2>/dev/null
-function rbenv
-  set command $argv[1]
-  set -e argv[1]
-
-  switch "$command"
-  case rehash shell use
-    rbenv "sh-$command" $argv|source
-  case '*'
-    command rbenv "$command" $argv
-  end
-end
-
-
-
-psubを使ってスクリプトを一時ファイルに書き込みます。
-一時ファイルのパスを返します。
-ledsun@MSI:~►echo (rbenv init -|psub)                                                                              23:17
-/tmp/.psub.qMqt1fQTDG
-
-
-
-これをsourceコマンドで読み込むだけなので、失敗しないはずです。
-WSLの起動中だと一時ファイルへの書き込みに失敗するか、書いた一時ファイルが消えるかしているのでしょうか？]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -6891,46 +5545,6 @@ Amazonポイントは現金です。現金です。
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fat Model問題]]></title>
-        <id>hatenablog://entry/13574176438073617034</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/16/200505"/>
-        <updated>2022-03-16T11:05:05.000Z</updated>
-        <summary type="html"><![CDATA[Fat Model問題を説明してみましょう。
-ここでいうFat Model問題とはRuby on Raisを使って書かれたWebアプリケーションにおいてモデルクラスが大きくなりすぎる問題のことをいいます。
-Ruby on Railsでは、MVC（model-view-controller）というアーキテクチャパターンを採用しています。
-第1章 ゼロからデプロイまで - Railsチュートリアル
-ブラウザがRailsアプリと通信する際、一般的にWebサーバーにリクエスト（request）を送信し、これはリクエストを処理する役割を担っているRailsのコントローラ（controller）に渡されます。コントローラは（ユーザーなどの）サイトの要素を表しており、データベースとの通信を担当しているRubyのオブジェクトであるモデル（model） と対話します。モデルを呼び出した後、コントローラは、ビューを描画し、完成したWebページをHTMLとしてブラウザに返します。
-
-
-Ruby on Railsではコントローラーには処理をほとんど書かずに、モデルクラスの呼び出しのみを書くべきだとされています（要出展）。
-例えば、DHHが示したBasecamp3というアプリケーションの統計情報では、コントローラーのメソッド辺りの行数（LOC/M）は3行しかありません。
-
-Basecamp 3 is up to 308 controllers. Some 1400 methods. Imagine recreating all that with all-native apps? No thanks. Majestic be thy Monolith. pic.twitter.com/aTmwGT32ep
-— DHH (@dhh) February 9, 2018
-  
-では処理はどこに書くのでしょうか？MVCの残りの登場人物はモデルクラスとビューです。
-MVCはPresentation Domain Separation (PDS)原則に則っています。
-ビューにはプレゼンテーション（見た目の整える）処理のみを書きそれ以外の処理はモデルに書きます。
-つまり、見た目に関わらないほとんどの処理はモデルクラスに書きます。
-この方針のまま大きなアプリケーションを実装したらどうなるでしょうか？
-大きなモデルクラスが誕生します。
-モデルクラスが大きくなると変更が難しくなります（なぜ？）。
-これがFat Model問題です。
-で、DHHのツイートを見なおしてみましょう。
-モデルクラスは2万行近くあって300個以上あります。
-が、クラス辺りのメソッド数（M/C）は8しかないしメソッド辺りの行数は3なんですよね・・・どこがFatなのか？
-ServiceクラスもFormオブジェクトも使わなくともFat Model問題は起きないみたいですよ？どういうことですか？
-参考
-rails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記
-プレゼンテーションとドメインの分離
-rails アプリの統計情報を一発で取れる rake stats を試した - clayfishの日記
-改めて振り返る Fat Controller / Fat modelとの戦い - masa寿司の日記
-Fat Modelの倒し方 / how to deal with fat model - Speaker Deck]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2022-03-15]]></title>
         <id>hatenablog://entry/13574176438073390840</id>
         <link href="https://commits.hatenablog.com/entry/2022/03/16/100013"/>
@@ -6946,58 +5560,6 @@ Amazon
 この本は紡ぐ乙女と大正の月の参考文献に載っていたのがきっかけで読み始めた。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ブラウザからJavaScriptモジュールをjQueryとともに使う]]></title>
-        <id>hatenablog://entry/13574176438073444708</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/16/090438"/>
-        <updated>2022-03-16T00:04:38.000Z</updated>
-        <summary type="html"><![CDATA[ブラウザでJavaScriptモジュールが使えるようになりました。
-<script type="module">って書くやつです。
-これを使うとimport/exportを使ってモジュール感の依存関係が解決できます。
-これまでは人間がscriptタグの順番を決めるか、Webpackのようなモジュールバンドラーで事前処理する必要がありました。
-さらにそれ以前は、jQueryのようなグローバル変数を使って、依存関係を解決していました。
-jQuery時代の依存関係解決からJavaScriptモジュールに一気にジャンプ出来るのでしょうか？
-それとも一度Webpackのようなモジュールバンドラーを経由する必要があるのでしょうか？
-ということを試してみます。
-次のindex.htmlではJavaScriptモジュールとして、index.jsを読み込みます。
-<head>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <script type="module" defer>
-    import init from './index.js'
-    init()
-  </script>
-</head>
-
-<body>
-  <div id="hoge"></div>
-</body>
-
-
-
-index.jsではすでに読み込まれているはずのjQueryを参照します。
-export default function () {
-  $("#hoge").text("hello");
-}
-
-
-
-これが動くのかというと、動きます。
-次のようにHTTPサーバーで起動します。
-python3 -m http.server
-open htttp://localhost:8000
-
-
-
-helloが表示されます。
-HTTPサーバーを起動しないと、index.jsをローカルファイルから読もうとします。
-これはエラーになります。
-ローカルのスクリプトファイル読み込みエラー
-モジュールバンドラーを使っていなくても、<script type="module">を使ってWeb標準の依存関係解決をやっていけることがわかりました。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -7226,27 +5788,6 @@ FX戦士くるみちゃん 2巻読んだ。まあまあ心にくる漫画だけ�
         <summary type="html"><![CDATA[深夜に何か食べたらどうなるのかと思い、前日深夜にパスタとケーキを食べて即寝てみた結果、寝起きの体調が若干悪く、睡眠もどうやらうまく取れていなかった (昼頃に眠気が来た)。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[git force pullはない]]></title>
-        <id>hatenablog://entry/13574176438073120934</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/15/083931"/>
-        <updated>2022-03-14T23:39:31.000Z</updated>
-        <summary type="html"><![CDATA[変更が激しいブランチのソースコードレビューをするときなど、リモートのForce pushされたブランチをローカルブランチに反映したいことがあります。
-自分が作業しているわけではないのでローカルの変更は全部捨ててかまいません。
-git push -fみたいなオプションはpullコマンドにはありません。
-代わりにresetコマンドを使います。
-git reset --hard origin/master
-
-
-
-引数なしのgit reset --hardだとローカルブランチの状態を変更前に戻すコマンドです。
-戻す基準にするブランチを指定できるイメージでしょうか？
-参考
-git pull を強制し、リモートでローカルを上書きする方法 | WWWクリエイターズ]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -8185,29 +6726,6 @@ PoC…]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[マクロスのミサイルみたいな矢印]]></title>
-        <id>hatenablog://entry/13574176438071718151</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/11/101232"/>
-        <updated>2022-03-11T01:12:32.000Z</updated>
-        <summary type="html"><![CDATA[こんな感じでX座標が同じ目標にむかう矢印は狭い範囲に集中してごちゃごちゃします。
-同じ座標に向かっている矢印
-そこでマクロスのミサイルみたいに各矢印に個性を与えます。
-マクロスのミサイルみたいな矢印
-正確に言うと逆です。
-マクロスのミサイルは目標地点は1つで、経路に個性があります。
-今回与えた個性は、目標地点をずらしています。
-目標地点が画面外に出ていて見えないことを良いことに、矢印が向かうX座標をランダムで変更しています。
-ネットワーク、パフォーマンス、メモリを指しているように見えるかもしれませんが、偶然です。
-順番に並んだ矢印
-もう少し調整して、矢印が決まった順番にならぶようにしました。
-矢印の個性は減ります。
-矢印の交差が減るので関係性は見やすくなります。
-ちなみにこの画像はブラウザのキャプチャで、矢印はSVGで描いています。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2022-03-10]]></title>
         <id>hatenablog://entry/13574176438071633027</id>
         <link href="https://commits.hatenablog.com/entry/2022/03/11/100006"/>
@@ -8217,88 +6735,6 @@ TypeProfにIssueがきていて、どうやらRBS側の問題だったので修�
 この調査とパッチは業務時間中に書いた。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PostgreSQLのcreateuserで作ったユーザーのパスワードって何になるんだろうか？]]></title>
-        <id>hatenablog://entry/13574176438071712790</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/11/095416"/>
-        <updated>2022-03-11T00:54:16.000Z</updated>
-        <summary type="html"><![CDATA[PostgreSQLのユーザー作成 - @ledsun blog でPostgreSQLのユーザーを作成しました。
-パスワードを指定しませんでした。
-このとき作成したユーザーにはどのようなパスワードが設定されるのでしょうか？
-ユーザー名と同じになるのでしょうか？それとも乱数で初期パスワードが設定されるのでしょうか？
-createuserコマンドを使ってユーザーを作成したので、そのマニュアルを確認します。
-www.postgresql.jp
--P
---pwprompt
-このオプションが指定されると、createuserは新しいユーザのパスワードのプロンプトを表示します。 もしパスワード認証を使う予定がなければ、これは必要ありません。
-
-
--pオプションはつけませんでした。
-この場合、パスワード認証を使わないようです。
-つまりパスワードは設定されていない、あるいは設定されていても無視されるようです。
-では、パスワード認証以外の認証には何があるのでしょうか？
-www.postgresql.jp
-trust認証が指定されるとPostgreSQLは、サーバに接続できる全ての人に対して （データベーススーパーユーザさえも）その人が指定する任意のデータベースユーザ名としてのアクセス権限が付与されていると想定します。
-
-
-これみたいです。
-HomebrewでインストールしたPostgreSQLはTrust認証が有効になっていそうです。
-Changing your (Homebrew) PostgreSQL configuration from trust to md5
-というそのものズバリな記事があります。
-これを参考に自分の環境の設定を確認してみます。
-まず設定ファイルpg_hba.confの場所を確認します。
-~►psql postgres                                                            09:27
-psql (14.2)
-Type "help" for help.
-
-postgres=# show hba_file;
-              hba_file
--------------------------------------
- /usr/local/var/postgres/pg_hba.conf
-(1 row)
-
-
-
-つぎにpg_hba.confの内容を確認します。
-# "local" is for Unix domain socket connections only
-local   all             all                                     trust
-# IPv4 local connections:
-host    all             all             127.0.0.1/32            trust
-# IPv6 local connections:
-host    all             all             ::1/128                 trust
-# Allow replication connections from localhost, by a user with the
-# replication privilege.
-local   replication     all                                     trust
-host    replication     all             127.0.0.1/32            trust
-host    replication     all             ::1/128                 trust
-trustがいっぱい出てくるので、Trust認証が有効になっているようです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[村づくりゲームのNPCが生身の人間としか思えない ４]]></title>
-        <id>hatenablog://entry/13574176438071709328</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/11/093720"/>
-        <updated>2022-03-11T00:37:20.000Z</updated>
-        <summary type="html"><![CDATA[村づくりゲームのNPCが生身の人間としか思えない（４） (角川コミックス・エース)
-
-作者:森田 和彦
-KADOKAWA
-Amazon
-
-人間には物語に触れて登場人物に共感すると、自分を客観的にみれるようになる性質があります。
-原理はよくわかりませんが、あります。
-この漫画のストーリーはこれを丁寧に描きます。
-主人公はゲームの登場人物に感情移入し、自分を客観視するようになり、自分を変えようと努力をはじめます。
-丁寧にストーリーを描いているので力強く興味が引かれます。
-その一方でもう一つの大きな柱である謎のゲームに関しては一向に謎が解き明かされません。
-そのくせチラチラと怪しいフラグを見せてきます。
-先は気になるし、お話は楽しめるし、次の巻が楽しみです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -9022,36 +7458,6 @@ PCトラブル以外で人生とかも言及しといて欲しい
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[PostgreSQLのユーザー作成]]></title>
-        <id>hatenablog://entry/13574176438070630834</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/08/091903"/>
-        <updated>2022-03-08T00:19:03.000Z</updated>
-        <summary type="html"><![CDATA[Railsアプリケーションの開発環境を構築するときに時々はまります。
-ローカルにインストールされているPostgreSQLを使うとアプリケーションごとにPostgreSQLのユーザーが微妙に違うことがあります。
-例えばpostgresというユーザーがないと次のようなエラーが起きます。
-~ bundle exec rails db:create
-2022-03-02 15:00:59.447 JST [52724] FATAL:  role "postgres" does not exist
-connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "postgres" does not exist
-Couldn't create 'xxxx' database. Please check your configuration.
-rails aborted!
-ActiveRecord::NoDatabaseError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "postgres" does not exist
-
-
-
-というわけでpostgresというユーザーを作成します。シェル上で次のコマンドを実行します。
-createuser postgres
-
-
-
-ふたたびrails db:createします。
-~ bundle exec rails db:create
-2022-03-02 15:08:44.447 JST [52953] ERROR:  permission denied to create database
-2022-03-02 15:08:44.447 JST [529…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[ELDEN RING]]></title>
         <id>https://r7kamura.com/articles/2022-03-08-elden-ring</id>
         <link href="https://r7kamura.com/articles/2022-03-08-elden-ring"/>
@@ -9556,32 +7962,6 @@ www.nicovideo.jp
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Ruby 2.5にはBundlerが含まれない]]></title>
-        <id>hatenablog://entry/13574176438069606471</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/05/110142"/>
-        <updated>2022-03-05T02:01:42.000Z</updated>
-        <summary type="html"><![CDATA[最近、Rubyをはじめた人からRuby 2.5*1の環境で次のエラーが出たという相談を受けました。
-rbenv: bundle: command not found
-
-The `bundle' command exists in these Ruby versions:
-  2.7.5
-  3.0.3
-
-
-
-エラーメッセージ通りbundleコマンドがないので、gem install bundlerすれば良いです。
-なんですが、よく考えるとBundlerがRuby本体に同梱されるようになって3年です。
-Ruby 2.6.0 Released
-Bundler is now installed as a default gem.
-
-
-今からRubyをはじめた人からすると摩訶不思議な現象ですよね。
-*1:Ruby 2.5はもうメンテナンスされていませんが、事情があります。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2022-03-04]]></title>
         <id>hatenablog://entry/13574176438069513553</id>
         <link href="https://commits.hatenablog.com/entry/2022/03/05/100011"/>
@@ -9644,57 +8024,6 @@ Steepがとりあえず動くところまではいったから、次は型検査
 続きをみる]]></summary>
         <author>
             <name>鉄筋</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FormData]]></title>
-        <id>hatenablog://entry/13574176438069539745</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/05/051805"/>
-        <updated>2022-03-04T20:18:05.000Z</updated>
-        <summary type="html"><![CDATA[FormData
-先週、Form要素のデータがそのまんま欲しくて、はじめて使いました。
-そのときは次のようにJSON形式で送信しました。
-const formData = new FormData(document.bookForm);
-const name = formData.get("name");
-const age = formData.get("age");
-const data = {
-  name,
-  age
-};
-
-jQuery.ajax({
-  type: "post",
-  url: "/books/,
-  data: JSON.stringify(data),
-  contentType: "application/json"
-});
-
-
-
-developer.mozilla.org
-The FormData object lets you compile a set of key/value pairs to send using XMLHttpRequest.
-
-
-と、あるのでずいぶん昔からあるAPIみたいです。
-次のように使われていたようです。
-javascript - How to send FormData objects with Ajax-requests in jQuery? - Stack Overflow
-var xhr = new XMLHttpRequest(),
-    fd = new FormData();
-
-fd.append( 'file', input.files[0] );
-xhr.open( 'POST', 'http://example.com/script.php', true );
-xhr.onreadystatechange = handler;
-xhr.send( fd );
-
-
-
-この書き方の場合はmultipart/from-data形式で送信されるようです。
-entries()があるので、ES6以降も拡張されているようです。
-参考情報
-javascript - How to convert FormData (HTML5 object) to JSON - Stack Overflow
-JavaScript の formdata イベントのまとめ | gotohayato.com]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -9818,49 +8147,6 @@ I've just contributed to Play Framework. Consider supporting them too — every 
 　欧米（主語でか）の大富豪がよく慈善事業をしたがるのも、社会からの要請や税制面での問題だけでなく、ひょっとしたら慈善事業しないと落ち着かないとかいうことも一因としてはあるのかもなーとか思ったり。]]></summary>
         <author>
             <name>kmizuの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[異世界で土地を買って農場を作ろう 5]]></title>
-        <id>hatenablog://entry/13574176438068719380</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/03/04/060304"/>
-        <updated>2022-03-03T21:03:04.000Z</updated>
-        <summary type="html"><![CDATA[異世界で土地を買って農場を作ろう (5) 【電子限定おまけ付き】 (バーズコミックス)
-
-作者:岡沢六十四,細雪 純,村上ゆいち
-幻冬舎コミックス
-Amazon
-
-20代風の見た目の主人公いくつなんだ・・・
-陶芸人間皿割る皿割る～
-「陶芸人間皿割る皿割る～」が出てきたのが、ボキャブラ天国です。
-放映されたのが1992～1996年です。
-30年くらい前のネタです。
-僕自身はボキャブラ天国は見たことありますが、このネタは記憶にありません。検索して見つけました。
-
-
-
-
-www.youtube.com
-ピンクレディーの1978年の「透明人間」の歌詞「透明人間あらわる～」のパロディです。
-ボキャブラ天国の15年くらい前です。
-もとの歌を知らないのでボキャブラ天国で見てても意味はわからなかったと思います。
-
-
-
-
-www.youtube.com
-「透明人間あらわる」のフレーズの元ネタの大栄映画「透明人間現る」は1949年でした。
-30年空きます。
-阿久悠氏が12歳ときのネタを42歳の時に入れたようです。
-www.youtube.com
-ちなみに特撮撮影が同じ円谷英二氏の1954年の東映の「透明人間」はAmazon Prime Videoで見れます。
-もっと遡ると1934年のイギリス映画
-で、1897年のH・G・ウェルズの「透明人間」です。
-www.aozora.gr.jp
-125年後に異世界でパロディソングを歌われるとはH・G・ウェルズの想像力をもってしても思いつかなかったことでしょう。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -10886,75 +9172,6 @@ www.artpedia.asia
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[異世界に飛ばされたおっさんは何処へ行く？8]]></title>
-        <id>hatenablog://entry/13574176438067239545</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/26/100425"/>
-        <updated>2022-02-26T01:04:25.000Z</updated>
-        <summary type="html"><![CDATA[異世界に飛ばされたおっさんは何処へ行く？８ (アルファポリスCOMICS)
-
-作者:ひらぶき雅浩,シ・ガレット
-アルファポリス
-Amazon
-
-謎の変化を遂げる化け物13号、対する主人公タクマは毘沙門天の加護を受けた刀を得て対峙。13号は倒せるのか？
-ストーリーは「スーパーヒーロー」パターンです。
-異世界転生物はチート能力を得ることが多いので、異能を抱えた人の悩みを描く「スーパーヒーロー」パターンになることが多そうなのですが、実際は少ないです。
-5巻のあとがきによると、この漫画は途中でアナログからデジタルに変わったそうです。
-全然、気がつかなかったので、頑張って差を見比べてみました。
-3巻の14話からじゃないかなあと見ました。どうなんでしょう？]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[警視庁草紙 1]]></title>
-        <id>hatenablog://entry/13574176438066984865</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/26/094943"/>
-        <updated>2022-02-26T00:49:43.000Z</updated>
-        <summary type="html"><![CDATA[news.yahoo.co.jp
-で気がつきました。山田風太郎小説の漫画化作品です。
-
-警視庁草紙‐風太郎明治劇場‐（１） (モーニングコミックス)
-
-作者:山田風太郎,東直輝
-講談社
-Amazon
-
-主人公男性が色っぽく描かれていて良いです。
-明治物の怪談チックな雰囲気出てて好きです。
-小ネタが仕込まれているコマ
-小ネタが仕込んであったりして作者の方、山田風太郎が好きなんだろうなあっと思いました。
-
-風々院風々風々居士―山田風太郎に聞く (ちくま文庫)
-
-作者:山田 風太郎
-筑摩書房
-Amazon]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「帝国」ロシアの地政学 「勢力圏」で読むユーラシア戦略]]></title>
-        <id>hatenablog://entry/13574176438067232292</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/26/092715"/>
-        <updated>2022-02-26T00:27:15.000Z</updated>
-        <summary type="html"><![CDATA[「帝国」ロシアの地政学 「勢力圏」で読むユーラシア戦略 (東京堂出版)
-
-作者:小泉 悠
-PHP研究所
-Amazon
-
-現在のロシアにとって第二次世界大戦の記憶は貴重なアイデンティティのよすがとなっている。それは単にソ連という国家の勝利だったのではなく、ナチズムという悪に対する勝利だったのであり、ソ連はここで全人類的な貢献を果たしたのだという自負は現在も極めて強い。現在のロシアに暮らす諸民族に対しても、「共にナチスと戦った仲」だという意識は（ナショナル・アイデンティティとまでは言えないにせよ）一定の同胞意識を育む効果を果たしている。
-
-
-プーチン氏が「ウクライナの非軍事化と非ナチ化を目指す」と主張*1するのは、こういう国民感情に訴えようとしたのでしょうか？
-*1:https://jp.reuters.com/article/putin-idJPKBN2KT09S]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[2月終わりに]]></title>
         <id>hatenablog://entry/13574176438067163559</id>
         <link href="https://baibukken.hatenablog.com/entry/2022/02/26/001411"/>
@@ -11341,40 +9558,6 @@ youtu.be
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[webpack-dev-serverでsource mapが見つからなくて警告がでる]]></title>
-        <id>hatenablog://entry/13574176438066819828</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/24/221859"/>
-        <updated>2022-02-24T13:18:59.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-を使ったJavaScriptプログラムをWebpackでビルドしています。
-開発環境では、Google Chromeの開発ツールで次のような警告が表示されます。
-webpack-dev-serverでsource mapが見つからなくてでる警告
-小さくて見にくいですね。
-node_modules/deepcopy/umd/deepcopy.js.mapをダウンロードしようとして404になっています。
-qiita.com
-によるとwebpack.config.jsでdevtoolオプションを設定すればよさそうです。
-実際eval-source-mapを設定すると、この現象は解消されます。
-理由はわかりません。npmパッケージに含まれるsource mapを使う代わりに、Webpackが生成したsource mapを使うようになるのかもしれません。
-次のオプションも試してみました。
-eval
-eval-cheap-source-map
-eval-cheap-module-source-map
-cheap-source-map
-cheap-module-source-map
-source-map
-eval以外ならどれでも解消されました。
-オプションは全部で25個あります。
-あと4倍も試してられない気持ちになりました。
-なぜこんなにたくさんの選択肢があるのでしょうか？
-そしてそれぞれ何が違うのでしょうか？謎です。
-結局、Developmentの章にある、evalの次の候補eval-source-mapを使うことにしました。
-↑のQiitaと同じ結論です。
-根本的な解決になっていない感じはしますが、何か問題がおきたときに設定をまた見直そうと思います。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Kubernetes HPA External Metrics の事例紹介]]></title>
         <id>19561</id>
         <link href="https://engineering.mercari.com/blog/entry/20220218-cd149f6298/"/>
@@ -11471,42 +9654,6 @@ eval以外ならどれでも解消されました。
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ウクライナのNATO加盟]]></title>
-        <id>hatenablog://entry/13574176438066512005</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/23/224713"/>
-        <updated>2022-02-23T13:47:13.000Z</updated>
-        <summary type="html"><![CDATA[https://www.hit-u.ac.jp/kenkyu/eusi/eusicommentary/vol59.pdf
- NATO加盟には加盟国の全会一致が必要であり、国民の支持が高
-いという理由だけで実現するわけではない。それでも、ウクライナの加盟に慎重な立場をとる同盟国に「口実」を与
-えないためには、国民の支持は不可欠になってくる。
-また、ウクライナの国内改革や欧州の安全保障環境に悪影響を及ぼしている東部での戦闘を終結させなけれ
-ば、NATO 加盟実現は遠のくばかりである。
-
-
-2015年の情報です。
-ロシアがチラチラしている時点でウクライナがNATOに加盟する可能性はなさそうです。
-それで
-
-ウクライナ人の女性がFBで実情を語ってくれてた。 pic.twitter.com/eIwZPCH7J5
-— 猫バス@FX (@nekobusFX) February 22, 2022
-  
-今のロシアにさらなる侵略を許せば、軍事力によって他の国を乗っ取ることに対してGOサインど出すことになります。
-
-
-NATO加盟とかの大義名分はなくても、支援が必要という考え方が出てくるのかもしれません。
-で、西の盟友アメリカはどう出るのでしょうか？
-wedge.ismedia.jp
-もし、ロシアが何らかの形でウクライナに侵攻後、14年クリミア併合時と同様、時間をかけ既成事実化させていくことに成功したとしたら、それは言うまでもなく、中国を台湾侵攻に踏み切らせる呼び水になる。
-
-
-ロシア-ウクライナは直接関係ないけど、中国-台湾関係を考えると、指をくわえて見ているわけにもいかなさそうです。
-こういうシチュエーションで日本から軍隊を派兵する可能性を1ミリも考えなくてもいい点で、憲法9条ってめちゃくちゃ便利なんですね。
-島国で憲法9条を装備しているのチート感があります。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[明日ちゃんのセーラー服　7話　備忘録]]></title>
         <id>hatenablog://entry/13574176438066496261</id>
         <link href="https://kasutera2nd.hatenablog.com/entry/2022/02/23/222226"/>
@@ -11566,64 +9713,6 @@ Aパート時点では若干諦観ぎみにも見えますが、体育館裏で�
 2022年2月19日]]></summary>
         <author>
             <name>茶箪笥の奥</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ドンバス]]></title>
-        <id>hatenablog://entry/13574176438066502767</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/23/221940"/>
-        <updated>2022-02-23T13:19:40.000Z</updated>
-        <summary type="html"><![CDATA[anond.hatelabo.jp
-のトラックバックから
-ドンバス - Wikipedia
-を読みました。
-現在ドンバスとして知られる地域は17世紀後半、ドン・コサックが定住するまで無人の土地が広がっていた
-
-
-ここから驚きです。
-「肥沃な穀倉地帯ウクライナ」のイメージからは江戸時代に無人の地だったとは想像していませんでした。
-ドネツィクは1869年にイギリスの実業家ジョン・ヒューズが製鉄所を建設、複数の炭鉱を開発。炭鉱景気に沸くほかの町も発展し、ロシア帝国のグベールニヤ(県)から出稼ぎ先を求めて大勢の小作農が集まった
-
-
-明治時代に入ってから炭鉱、製鉄の町として発展し始めたようです。
-日本で言うと筑豊炭田のようなイメージでしょうか？
-1917-1922年のロシア内戦の結果、ドンバスは統合された。
-
-
-Wikipediaの記述では、統合先が不明瞭ですがソ連の一部になったようです。
-ホロドモール飢饉(1932年–1932年)
-
-
-世界恐慌が起きて数年後、満州国が建国されナチスが政権を取り、第二次世界大戦に突き進んでいる頃でしょうか？
-1941年から1942年に至るナチ占領下
-
-
-第二次世界大戦中はナチスに占領され、戦後にソ連に戻ったようです。
-1991年、ソビエト連邦からの独立
-
-
-ウクライナ独立は、30年前。湾岸戦争の翌年です。
-ドンバスの採炭業者は1993年に国内紛争を巻き起こしながらストライキを行った。 ドンバスの人たちは地域や企業や諸都市に権限移譲して欲しいから独立に賛成した
-1994年まで続いた。ウクライナは単一国家に留まり、ウクライナ語は唯一の公用語として維持され、ドンバスにはいかなる自治権も与えられなかった
-
-
-独立直後からモヤモヤしています。
-レオニード・クチマ ウクライナ大統領は1999年に再選。 クチマは地域内の政治的支援を得るために、開発資金を用いてドンバスに経済的援助を与えた
-
-
-イデオロギー的にモヤモヤしつつも経済的に落ち着いていたのでしょうか？
-2014年4月、分離主義武装勢力（ノヴォロシア人民共和国連邦）とウクライナ政府の戦争。内戦の最中、分離独立派の〈共和国〉は2014年5月11日にドネツィクとルハーンシク両州の地位に関する住民投票を実施し自治を望ましいとする結果に
-
-
-15年くらい時間が飛んで、なぜか内戦が起きました。
-詳しいことはわかりませんが、ドンバスには独立派が居て、おそらくロシアから非公式に直接的な支援を受けている。
-ウクライナ軍は直接的な戦闘は行っていた。
-ロシアの言い分としては、ドンバスの独立派を表だって指示して、公式に軍事支援することのようです。
-ロシア軍が侵攻したとして、ウクライナがNATOに非加盟なら、欧米は直接的な軍事支援は出来なさそうに思えます。
-あれ？もしかしてロシア vs NATOでなくて、ロシア vs ウクライナなんですか？
-すると戦力差が大きいので、クリミア半島と同じようにドンバスがロシアに併合される結果にしかならなさそうに思えます。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -11766,47 +9855,6 @@ HMDで見た方が200倍いいのは間違いないが、HMDはなくともPCさ
 続きをみる]]></summary>
         <author>
             <name>こちらカスタマーセンター</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[変数topをoffsetTopとclientTopにわけるまで]]></title>
-        <id>hatenablog://entry/13574176438066183665</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/22/230525"/>
-        <updated>2022-02-22T14:05:25.000Z</updated>
-        <summary type="html"><![CDATA[背景
-offsetTopとclientTopの使い分けについてです。
-両者の違いはoffsetTopがoffsetParentからの相対値で、clientTopはブラウザの左上からの相対位置です。
-offsetParentと言われても意味不明ですが、ここではposition: absoluteなHTML要素の一番近い先祖のposition: relativeな要素です。次のようなイメージです。
-<div id="offsetParent" style="position: absolute; witdth: 100px; height: 100px">
-  <div class="offsetChild" style="position: relative; top: 10px; left: 10px; witdth: 100px; height: 100px"></div>
-  <div class="offsetChild" style="position: relative; top: 20px; left: 40px; witdth: 100px; height: 100px"></div>
-</div>
-
-
-
-一つ目のoffsetChildのoffsetTopは常に10pxです。
-clientTopは縦スクロールの位置によって変わります。
-offsetParentの左上がちょうど、ブラウザの左上と一致した時、offsetTopとclientTopは同じ値になります。
-課題
-上の例のoffsetChildにtop, leftを設定して良い感じの位置に表示するプログラムを書いています。
-今までHTML要素の位置を設定するために、offsetTopとしての値しか扱っていませんでした。
-変数名やプロパティ名もシンプルにtopとしていました。
-ここ最近、First Meaningful Paint の最適化に凝っています。
-First Meaningful Paint のためには、これから表示するdivが、ブラウザで表示されている領域の中にあるか外にあるかが重要です。
-ブラウザでdivが表示されているか判定する - @ledsun blog で、考えたようにこの判定にはclientTopを使います*1。
-ここで困ったのがtopという名前だとoffsetTopを意味しているのかclientTopを意味しているのかわからないことです。
-そして悩みはじめた時点では、offsetTopという既知の最高の名前があることを忘れていました。
-解決
-リファクタリングしながら3時間半考えて「いままでのtopが表しているのはoffsetTopだ」と天啓を得ました。
-あとは1時間くらいゴリゴリっと名前を変えるリファクタリングして回って、15分くらいclientTopを取るAPIを追加して、10分でclientTopを使った新機能*2を実装しました。
-2017年頃は、じっくり考えてから実装するスタイルでした。
-いまはリファクタリングしながら考えるスタイルに変わりました。
-「道がみつかるまで手を動かせなかった」から「手を動かせば道が見つかる」を経験的に学習したようです。
-しかも、リファクタリングした結果、読みやすいソースコードまで手に入るオマケ付きです。
-*1:記事中ではgetBoundingClientRectを使っていますが、実質同じ値です。
-*2:FMP全体でなく、ある要素を描画するかどうかの基準に使っている要素を別の要素に変える実装です。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -12072,40 +10120,6 @@ SNSで超話題の陰キャ少年と陽キャ美少女の
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[モニタスタンドを買うか考える]]></title>
-        <id>hatenablog://entry/13574176438065938558</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/22/090834"/>
-        <updated>2022-02-22T00:08:34.000Z</updated>
-        <summary type="html"><![CDATA[現在は43インチの液晶モニタを奥行き70cmの机にモニタアームをつけて置いています。
-机の前端からモニタ面まで50cmありません。
-モニタとの距離を調整するために頭を前後するため、姿勢が悪くなります。
-モニタスタンドを机の後ろにおいて距離を90cm位にしたらどうなるのでしょうか？
-イメージはこういう奴です。
-
-Yaheetech テレビスタンド TVスタンド 移動式 壁寄せ ハイタイプ 液晶テレビ台 TV台 13-42インチ VESA200x200mmまで 高さ調節可能 角度調整可能 低騒音キャスター付き (LCD/LED/OLED)対応 耐荷重20Kg 省スペース 軽量 日本語説明書付き ホーム 会議室 クラスルーム 業務用 家用 展示用 おしゃれ ブラック
-
-Yaheetech
-Amazon
-
-モニタ*1の条件です。
-中心の高さ 114cm～147cm
-サイズ 43インチ
-重量 6.8kg
-VESA 200x200マウント
-机は昇降式でモニタの位置は上下します。
-
-武田コーポレーション ガス圧昇降式 デスク T9-GSD90BR
-
-武田コーポレーション(Takeda corporation)
-Amazon
-
-悩ましいのはモニタスタンドは机と一緒に昇降しないので、立って作業するのは諦めないと行けなさそうな点です。
-*1:JN-IPS4300TUHDR 4Kモニター 43型 UHDディスプレイ IPS系パネル HDMI2.0 HDCP2.2 HDR JAPANNEXT – JAPANNEXT 4K WQHDなど超解像度、ゲーミング、曲面など特殊液晶モニター]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[nikki_20220219「啓蒙する看板」]]></title>
         <id>hatenablog://entry/13574176438065938423</id>
         <link href="https://isitsutbustu-todoke.hatenablog.com/entry/2022/02/22/090224"/>
@@ -12155,25 +10169,6 @@ When I was poking around, I noticed that I had two separate media queries to che
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[generate-google-calendar-linkのバージョンを上げました]]></title>
-        <id>hatenablog://entry/13574176438065868790</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/21/235148"/>
-        <updated>2022-02-21T14:51:48.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-特に機能は追加してません。
-セキュリティアラートが来てたので、たまにはアップデートしようかな？と、そんな気分になりました。
-7年ぶりに触るので、いろいろ環境が変わっていました。
-CIがtravisCI。travisのドメインが変わったとかで動かなくなっています。面倒臭いので、Github Actionsに移行しました。テスト実行するだけならテンプレート選んでポチポチするだけなので、簡単です。
-SourceLabというクロスブラウザテスト環境。何も覚えていないので消しました。合わせてzuulとかkarmaとかのブラウザ向けのテスト実行環境も消しました。karmaの古いバージョンにセキュリティアラートがでていたので目的は果たせました。
-power-assert。全然メンテナンスしない場合、アサーションエラーが詳しいことにうれしさがないことに気がつきました。
-ES5。ソースコードもテストコードもES5だったので、ES6に書き換えました。
-npm publish。Windows PC（のWSL）でnpm publishしたことが無かったので、publishしておきました。
-「久しぶりにラジオ体操したら、ラジオ体操しただけなのに体のあちこちが痛い」気分です。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[エッセイ：自己犠牲]]></title>
         <id>https://note.com/sizes/n/nfd923c403543</id>
         <link href="https://note.com/sizes/n/nfd923c403543"/>
@@ -12183,23 +10178,6 @@ npm publish。Windows PC（のWSL）でnpm publishしたことが無かったの
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[北海道の現役ハンターが異世界に放り込まれてみた ～エルフ嫁と巡る異世界狩猟ライフ～ 3]]></title>
-        <id>hatenablog://entry/13574176438065589616</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/21/224552"/>
-        <updated>2022-02-21T13:45:52.000Z</updated>
-        <summary type="html"><![CDATA[北海道の現役ハンターが異世界に放り込まれてみた ～エルフ嫁と巡る異世界狩猟ライフ～ 3巻 (マッグガーデンコミックスBeat'sシリーズ)
-
-作者:ジュピタースタジオ,カルトマ,夕薙
-マッグガーデン
-Amazon
-
-無事ゴブリンロードのスナイプに成功した主人公達は冒険者ランクがあがりました。早速、貴族から来た依頼でエルフ誘拐事件の犯人に近づけるのか？ストーリーの累計は犯人を求め旅をする「黄金の羊毛」です。
-レミントンM700の活躍シーン]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -12244,57 +10222,6 @@ RBSのメモリ使用量を減らした。アクセス頻度が低いインス�
 速度にも影響が出るかなーと思っていたけど、誤差レベルでしか影響は出ていなかった。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[底辺領主の勘違い英雄譚 4]]></title>
-        <id>hatenablog://entry/13574176438065588401</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/21/051254"/>
-        <updated>2022-02-20T20:12:54.000Z</updated>
-        <summary type="html"><![CDATA[底辺領主の勘違い英雄譚 4 (ガルドコミックス)
-
-作者:ぱらボら,馬路まんじ,ファルまろ
-オーバーラップ
-Amazon
-
-敵も味方も悪意のある人物がいないのが気楽に読めて良いです。
-悪巧みはするのですが、自分の欲望を満たすのがメインで、他人を傷つけるのが目的にしないことが多いです。
-全部のキャラクターをそれ以上、掘り下げようとせずに「こいつら阿呆だから」で終わらしているところが好きです。
-特定のキャラだけ阿呆だと引っかかるのですが、キャラクター阿呆ラインみたいなものがひかれていて、誰もそこから出てこないのがよいです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FINAL FANTASY]]></title>
-        <id>hatenablog://entry/13574176438065021429</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/21/044742"/>
-        <updated>2022-02-20T19:47:42.000Z</updated>
-        <summary type="html"><![CDATA[store.steampowered.com
-Windows PCにUSB接続のゲームパッドを繋いで、STEAMでFINAL FANTASYをやってみました。
-FINAL FANTASY 6以前は初見です。
-リマスター版でバランス調整されているからなのか、めちゃくちゃサクサク進みます。
-最初の街で所持金で装備調えてそのまま最初のボスに突撃したら勝てる、くらいのペースです。
-最初「黒魔導士、死ぬ。弱え」と思っていると、全体魔法覚えてめちゃめちゃ有能になる展開いいですね。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[デアマンテ～天領華闘牌～ (4)]]></title>
-        <id>hatenablog://entry/13574176438065022178</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/21/043846"/>
-        <updated>2022-02-20T19:38:46.000Z</updated>
-        <summary type="html"><![CDATA[デアマンテ～天領華闘牌～ (4) (バーズコミックス　ガールズコレクション)
-
-作者:碧也ぴんく
-幻冬舎コミックス
-Amazon
-
-良かったです。
-一巻は快活、二巻は切なく、三巻で目的を果たしたかと思いきや…起承転結がきれいに決まってます。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -12958,29 +10885,6 @@ IHコンロは元々伝導熱しかないので本当に使いにくいのです
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[デアマンテ～天領華闘牌～ (1)]]></title>
-        <id>hatenablog://entry/13574176438064780175</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/18/184102"/>
-        <updated>2022-02-18T09:41:02.000Z</updated>
-        <summary type="html"><![CDATA[デアマンテ～天領華闘牌～ (1) (バーズコミックス　ガールズコレクション)
-
-作者:碧也ぴんく
-幻冬舎コミックス
-Amazon
-
-丸山遊女つながりからの碧也ぴんく先生です。
-碧也ぴんく先生の作品を読むのは八犬伝以来です。
-20年ぶりぐらいでしょうか？
-2008年の作品で10年くらい前の作品です。
-とりあえずこんなに絵が上手かったっけ？と驚きました。
-「丸山遊女～復讐の蕾～」と導入は大分似ていて、やはり主人公は仇討ちのために丸山遊女を目指します。
-ストーリーの類型は「バディとの友情」で、大分違います。
-同じようなスタート地点でも物語の展開にはいろいろな方向性があるようです。興味深いです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[『Frog Fight』は蛙が舌を伸ばして生き残りをかける最新のeスポーツタイトルだ]]></title>
         <id>hatenablog://entry/13574176438064606331</id>
         <link href="https://chomosh.hatenablog.com/entry/2022/02/18/120000"/>
@@ -13144,67 +11048,6 @@ You may need to modify the grep for "USB controller", depending on how your USB 
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[丸山遊女～復讐の蕾～ 3巻]]></title>
-        <id>hatenablog://entry/13574176438064491538</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/17/214843"/>
-        <updated>2022-02-17T12:48:43.000Z</updated>
-        <summary type="html"><![CDATA[丸山遊女～復讐の蕾～ 3巻 (まんが王国コミックス)
-
-作者:桜庭 あさみ
-ビーグリー
-Amazon
-
-無実の罪をかぶせられた姉の仇を探すために遊女になった主人公、腕力も権力もないのに長崎出島の歓楽街を生き延び仇を見つけ出せるのか？
-「SAVE THE CATの法則」のストーリーの分類だと「金の羊毛」に当たるんですかね？
-主人公がけなげで良かったです。
-
-漫画業界をあまりにも知らず地方からでてきた元公務員の私で、漫画の原稿料の支払システムになれず、苦労ばかりしました。
-たぶん大手出版でデビューされた漫画さんは私のような苦労は非常に少ないと思います＾＾；
- #はてなブログ
-あまり言えない漫画家の原稿料の話 - 桜庭…https://t.co/UE5sbwa1Wb
-— 桜庭あさみ@「丸山遊女～復讐の蕾～」連載中 (@AsamiOuba) January 11, 2022
-  
-普段読まないジャンルですが、この辺のツイートで知ってフォローしてという流れで読んでみました。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[転生したら第七王子だったので、気ままに魔術を極めます（６）]]></title>
-        <id>hatenablog://entry/13574176438063605608</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/17/203015"/>
-        <updated>2022-02-17T11:30:15.000Z</updated>
-        <summary type="html"><![CDATA[転生したら第七王子だったので、気ままに魔術を極めます（６） (マガジンポケットコミックス)
-
-作者:石沢庸介,謙虚なサークル
-講談社
-Amazon
-
-作画よいです。
-1巻の頃から高橋葉介氏や久正人氏の系譜なのだと思っていました。
-それに加えて魔法の表現が独特でした。
-6巻ではさらに、人物の崩し方の自由度が上がって、思うがままに描いている感じです。
-とても好きです。
-画太郎先生風のギャグ顔
-組み合わせる画風がドンドン増えているように思えます。
-主人公の顔だけでも、主人公の顔だから？、すごくパターンが多いです。
-主人公顔1
-主人公顔2
-主人公顔3
-主人公顔4
-主人公顔5
-主人公顔6
-スムーズに読めるので、偶然ではなく意図時に場面毎に画風を変えているように思えます。
-漫画では、コマの大きさで時間経過が変わるのですが、そこに画風変更を加えて、止まる時間を長くしているような気がします。
-見たことがない演出で気持ちいいです。
-あと、タオちゃんがかわいいです。
-タオちゃんがかわいい
-登場したころはウザキャラだったような記憶もありますが、いつの間にかかわいく仕上がってました。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[動的型付き言語は素早くプロジェクトを立ち上げるのに向いており、静的型付き言語は長期間の保守にむいているという仮説]]></title>
         <id>hatenablog://entry/13574176438064476701</id>
         <link href="https://kmizu.hatenablog.com/entry/2022/02/17/195423"/>
@@ -13224,24 +11067,6 @@ Amazon
         <summary type="html"><![CDATA[2021年11月5日に、メルペイ・メルコインのエンジニアたちによる「Tech Talk 〜 ゼロトラストをベースとした安定的なシステム稼働の取り組み〜」を開催しました。 現在のメルペイサービスにおける認証・認可の仕組みや […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ほしいも]]></title>
-        <id>hatenablog://entry/13574176438064452099</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/17/182605"/>
-        <updated>2022-02-17T09:26:05.000Z</updated>
-        <summary type="html"><![CDATA[【新 物】 茨城県産バラ詰干し芋・乾燥芋(たまゆたか) 2Kg | 株式会社マルヒ
-去年は買い損ねて、2年ぶりに買いました。
-やはり美味しい。
-噛み応えと甘さと芋臭さが、僕のイメージするほしいもとちょうど合うんです。
-近年のほしいもは紅はるかが主流で、玉豊が減っているらしいです。
-今のうちに楽しんでおきます。
-紅はるかのほうが甘くてねっとりしていて柔らかいです。
-ほしいもにすると堅いことはあります。
-玉豊のほうは芋臭いです。玉豊のかみ切る堅さと芋臭さがなんか好きなんです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -13611,34 +11436,6 @@ Amazon
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[WSL2にDistrodをインストールした]]></title>
-        <id>hatenablog://entry/13574176438063923590</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/16/091551"/>
-        <updated>2022-02-16T00:15:51.000Z</updated>
-        <summary type="html"><![CDATA[WSLでRailsアプリケーションを起動する際に毎回
-sudo service postgresql start
-
-
-
-していました。3回目ぐらいになっていい加減めんどくさくなってきました。
-背景
-現代のLinuxは常駐アプリケーションの起動にsystemdというプログラムを使っています。
-systemd はPIDが1でないと動かないという制約があります。
-WSL2ではこの制約が満たせないので、systemd が使えず、WSL2の起動時に自動でPostgreSQLを起動出来ません。
-これを解決する方法がいくつかあります。
-GitHub - arkane-systems/genie: A quick way into a systemd "bottle" for WSL
-GitHub - sorah/subsystemctl: Utility to run systemd in WSL2 with a Linux namespace
-GitHub - nullpo-head/wsl-distrod: Distrod is a meta-distro for WSL 2 which installs Ubuntu, Arch, Debian, Gentoo, etc. with systemd in a minute for you. Distrod also has built-in auto-start feature on Windows startup and port forwarding ability.
-どれもコンテナ内でsystemdを起動することで、systemd の PIDを1にする手法を採っています。
-このうち3番目のDistrodをインストールしました。
-なぜ Distrod ？
-3つのなかで一番インストールが簡単そうでした。
-bash.rcの設定が必要…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[６分Ⅱ]]></title>
         <id>https://note.com/klunakapa/n/n2c81cf1f7cb0</id>
         <link href="https://note.com/klunakapa/n/n2c81cf1f7cb0"/>
@@ -13938,66 +11735,6 @@ Opalでも(opalが持っているパッチを当てれば)parser gemが動くの
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[AngularJSの$httpの置き換え]]></title>
-        <id>hatenablog://entry/13574176438063500592</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/14/221247"/>
-        <updated>2022-02-14T13:12:47.000Z</updated>
-        <summary type="html"><![CDATA[AngularJSには$httpと言う名前のHttpClientが入っています。
-どうせjQuery.ajaxのラッパーだろうと思って、次の感じでjQuery.ajaxに置き換えました。
-取ってきた値が上手く反映出来ませんでした。
-jQuery.ajax({
-  type: "get",
-  url: "/books/100",
-  dataType: "json",
-  success: (data) => $scope.data = data
-})
-
-
-
-次のような感じで、$scopeへの反映をAngularJSに伝えるために、$apply()でくくって上げれば反映されました。
-jQuery.ajax({
-  type: "get",
-  url: "/books/100",
-  dataType: "json",
-  success: (data) => $scope.$apply(() => $scope.data = data)
-})
-
-
-
-言われて見ればそういうのがあったような記憶があります。
-あとjQuery.ajaxはデフォルトではapplication/x-www-form-urlencodedで通信するので必要に応じて、contentType: "application/json”とかdataType: "json"とかつける必要があるようです。jQueryのバージョンに依存するかもしれません。
-意外とかゆいところに手が届く便利な奴ですね、$http。
-参考
-AngularJS and scope.$apply（日本語訳） - Qiita]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ラジオボタンのイベントリスナーを設定する方法]]></title>
-        <id>hatenablog://entry/13574176438063486009</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/14/215456"/>
-        <updated>2022-02-14T12:54:56.000Z</updated>
-        <summary type="html"><![CDATA[html - How to use on addEventListener on radio button in Plain Javascript? - Stack Overflow
-なるほど、同じラジオボタンのname属性は同じなので、name属性でまとめて取れます。
-次のような感じです。
-for (const elem of document.querySelectorAll('[name="contract_duration"]')) {
-  elem.addEventListener("change", () => console.log('hey'))
-}
-
-
-
-ラジオボタンが動的に増減するときは、フォームにイベントリスナーを設定して、バブリングしてきたイベントのターゲットをみて判別すると良いと思います。。
-form.addEventListener("change", ({target}) => {
-  if(target.name === 'contract_duration') {
-    console.log('hey')
-  }
-})]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>hatenablog://entry/13574176438063485658</id>
         <link href="https://nonwo.hatenablog.com/entry/2022/02/14/215403"/>
@@ -14263,37 +12000,6 @@ Tantsissa
 いやーーーー、テクノロジーって本当にすごいです！！]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ベルベ]]></title>
-        <id>hatenablog://entry/13574176438062866093</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/13/103321"/>
-        <updated>2022-02-13T01:33:21.000Z</updated>
-        <summary type="html"><![CDATA[【ブーランジェリーベルベ 裾野市】手作り製法にこだわる妥協しないパン屋が裾野店をオープン！ もぺもぐ によると9月20日頃に裾野店をオープンしていたようです。
-（株）ベルベ ： 東京商工リサーチ
- ２０２１年１１月１５日に再度の資金ショートを起こし行き詰まりを表面化した
-給与の遅配も発生するなど資金繰りがひっ迫し、２０２１年１１月８日に全店舗を閉鎖して事業を停止していた。
-
-
-社長失踪、負債59億円で「全店閉店」のパン店が復活。新オーナーに“計画倒産説”を直撃 | bizSPA!フレッシュ
-2021年11月の報道によると、株式会社ベルベの創業社長である石川民夫氏が11月2日に失踪。その後「50億円を上回る負債が発覚し、破産申請を検討中」と報じられていました。
- そんな状況を背景に、元ベルベの社員らによる新店「リベルベ」が2022年1月26日にオープン。地元のファンからは大いに歓迎され、その様子がテレビのニュースなどでも取り上げられました。
-翌月2月8日、ベルベの破産申請が横浜地裁により受理され、「負債総額は約59億円の見通し」と報じられました。
-
-
-スピード感がすごいです。
-9月 新規出店
-11月 資金ショート
-1月 元従業員が居抜き開店
-2月 破産申請
-僕が参加したとあるファンドの出資先が破産したときは、次みたいな感じで10倍ぐらいゆっくりしたペースでした。
-2017年 資金ショート
-2019年 破産申請
-2021年 破産手続廃止
-売上で20〜30分の一の規模だったので関係者のやる気が違ったのかもしれません。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -15011,60 +12717,6 @@ There are lots of resources out there for writing NES games, but way fewer for S
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[msiを使う利点]]></title>
-        <id>hatenablog://entry/13574176438061738262</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/09/232128"/>
-        <updated>2022-02-09T14:21:28.000Z</updated>
-        <summary type="html"><![CDATA[serverfault.com
-2011年頃、10年前の古い文章ですが、大変長くて情熱的なので良いなーと思いました。
-システム管理者にとっての利点という視点があるのが興味深いです。
-なるほど、企業で使っているPCに一斉にアプリケーションをインストールするのにCLIで起動出来てオプションパラメータが渡せるのは魅力的に思えます。
-MSI以前のインストーラーの辛み
-MSIが登場する以前は、アプリケーション開発者がそれぞれの流儀でインストーラーを作成していました。
-標準化されてないが故の辛みがあったようです。
-インストーラー開発者視点で、知らない時代の情報なので興味深いです。
-共有ファイルを上書きする
-アンインストールできない
-GUIなしでのインストールが出来ない
-インストールしたファイルの記録が残らない。インストール後に変更されたかどうか確認できない
-インストーラーのコマンドラインパラメータがバラバラすぎ
-↑のおかげで、インストーラーにオプションをつけてカスタムインストールを自動化するのがほぼ不可能
-UACに対応していない
-インストール失敗時にエラーコードを返さない（ので、自動化できない）
-インストーラーからファイルを抽出できない
-インストーラーがログを残さない
-インストール失敗時のロールバックがされない
-共有コンポーネントをインストールする業界標準がない
-なるほど、MSIを使うだけでこれがほとんどクリアできるのはすげー便利ですね。
-アンインストールは作り方によっては失敗します。
-MSIの強み
-アンインストールが可能
-ログが標準化されている
-msiファイルのフォーマットが標準化されているので、インストールを実行しなくても何が起きるか検査可能（ただしカスタムアクションはコンパイルされているので検査できない）
-インストールのカスタマイズ方法が標準化されている
-ActiveDirectoryのグループポリシーでインストール可能。ユーザーに管理者権限を渡さなくて良い
-GUIなしでインストール/アンインストールが可能
-インストール失敗時にロールバックできる
-???
-アップデートインストールも可能（ただしややこしい）
-msiからファイルを抽出できる
-msiexeに色々パラメータが渡せる（4との違いはわかりません）
-???
-???
-上手く行ってない点もある
-パッチ（バージョンアップ）
-GUIがシンプルすぎる
-レジリエンス（わかりません）
-難しい
-遅い（といっても今は十分速いです。）
-その他
-まだ半分以下で全文はモリモリ書いてあります。
-個人的には「カスタムアクション、とくに独自実装のカスタムアクションを絶対に使わせたくない」気持ちに興味を持ちました。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[nikki_20220209「メメント・鳩羽つぐ」]]></title>
         <id>hatenablog://entry/13574176438061678070</id>
         <link href="https://isitsutbustu-todoke.hatenablog.com/entry/2022/02/09/201503"/>
@@ -15118,33 +12770,6 @@ youkai.hatenablog.jp
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[findstr で文字化けする]]></title>
-        <id>hatenablog://entry/13574176438061508357</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/09/090506"/>
-        <updated>2022-02-09T00:05:06.000Z</updated>
-        <summary type="html"><![CDATA[WindowsでIPアドレスをしゅっと出力する方法がないか探していました。
-networking - How to get network ip address via windows command prompt? - Super User から、次のコマンドを知りました。
-netsh interface ip show address | findstr IP
-これをPowerShellで実行すると文字化けします。
-PS C:\Users\led_l> netsh interface ip show address | findstr IP
-    IP 繧｢繝峨Ξ繧ｹ:                           172.24.144.1
-    IP 繧｢繝峨Ξ繧ｹ:                           192.168.1.34
-    IP 繧｢繝峨Ξ繧ｹ:                           127.0.0.1
-コマンドプロンプトだと文字化けしません。
-C:\Users\led_l> netsh interface ip show address | findstr IP
-    IP アドレス:                           172.28.144.1
-    IP アドレス:                           192.168.1.76
-    IP アドレス:                           127.0.0.1
-netshコマンド単体だとどちらも日本語で文字化けせずに表示されます。
-PS C:\Users\led_l> netsh interface ip show address
-
-インターフェイスの構成 "vEthernet (WSL)"
-    DHCP …]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[GCP 版 Cloud Functions からも Firestore をトリガーしたい]]></title>
         <id>https://blog.ojisan.io/cloud-functions-firestore-trigger</id>
         <link href="https://blog.ojisan.io/cloud-functions-firestore-trigger"/>
@@ -15162,66 +12787,6 @@ PS C:\Users\led_l> netsh interface ip show address
         <summary type="html"><![CDATA[PowerToysのVSCode Workspaceを開く機能が動かなくなっていた。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[コミット数はよいKPIか？]]></title>
-        <id>hatenablog://entry/13574176438061429935</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/09/085430"/>
-        <updated>2022-02-08T23:54:30.000Z</updated>
-        <summary type="html"><![CDATA[自分はコミット数をとあるプロジェクトのKPIとして使っています。
-KPIというか「週次で50切るとヤバいな」みたいな感覚で見ています。
-なぜコミット数を重要と感じているのか考えてみました。
-コードを書くとコーディング能力が上がる
-コミット数を増やすにはコードを書かないと始まりません。
-どっから手をつけたらよくわからない段階でも、まず手をつけてみることが重要です。
-手をつけてみたら意外と簡単なこともあります。
-また、コーディング能力はコードを書くことであがります。
-読んで上がる人も居るのかもしれないが、自分のはまだ書いた方がコーディング能力が上がる段階のようです。
-書く経験が増えると読むのも速くなるのは感じます。
-ここでコーディング能力が上がると言っている物が指しているのは、例えば。
-新しい機能やライブラリにチャレンジするときに、
-小さい単位で試す引き出しが増えます。
-試して体験して理解を深めるサイクルが小さく回せるようになります。
-プログラマとしてご飯を食べていく上でコーディング能力の向上は欠かせません。
-ソースコードになってないアイデアは過大評価される
-人間はなぜか形になっていないアイデアを過大評価します。
-自分のアイデアでも同じです。
-アイデアだけ思いついて実装していないと、自分の中でアイデアの価値が段々大きくなっていきます。
-相対的に実装していない自分の価値を低く感じるようになります。
-メンタルに良くないです。
-雑魚っぽいアイデアをさっと実装して雑魚であると認識するのが良いです。
-弊害がなければ、そのまま入れておきますし、害が出てきたらリバートすればいいです。
-小さいコミットの方が速く進める
-コミット数がKPIだとコミットが小さくなります。
-小さくなったらエディタから離れてコミットメッセージを書く頻度が増えるから、ソースコードを書くのが遅くなると予想できます。
-実際はそうはなりません。
-ひとつには間違える規模が小さくなるので、方向修正が速くできます。
-小さいコミットは影響範囲が明確なのでリバートするのも簡単です。
-デバッグするときにもバグが生まれたコミットさえ特定すれば、原因特定が早くできます。
-コミットは二分探索できるのでlog nで見つかります。
-コミット数が増えた方が探索時間が短くなってお得ですね。
-また、小さいコミットは「コミットしていいかな？」につかう決断力が小さく出来ます。
-決断力は有限のリソースです。
-大きい決断は一日に何十回もできません。
-小さい決断はたくさん出来ます。
-コーディングに集中する時間を長く出来ます。
-新しいアイデアがでる
-コミットで区切らずにエディタだけ見ている方が集中して物事を進められる人も居るみたいです。
-僕はそうではないようです。
-適度に区切ったほうが新しいアイデアが出てきます。
-あるアイデアAを抱えたまま、別のアイデアBを考えることは難しいです。
-ある程度時間かけてアイデアBのことを考えてコンテキストスイッチする必要があります。
-10～15分、場合によっては1時間かもしれません。
-1時間掛けてアイデアAを実装してしまいます。
-アイデアAについて覚えておく必要は無くなるので、アイデアBに集中できます。
-コンテキストスイッチの時間を使って実装出来ちゃいました。
-とはいってもアイデアAの実装中に別のアイデアCが出てくることがあります。
-脳みそはこういう邪心を生み出すのが得意なので、出てきます。
-すぐに着手できる物であれば、すぐに実装して忘れます。
-作戦を立てる必要がある物はメモを残して忘れます。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -15513,81 +13078,6 @@ jp.wazap.com]]></summary>
         <summary type="html"><![CDATA[こんにちは！ソウゾウのSoftware Engineerの@napoliです。「メルカリShops」は昨年に7月21日にプレオープンし、それから約半年が経ちました。前回は「連載：メルカリShopsプレオープンまでの開発の […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[console.time]]></title>
-        <id>hatenablog://entry/13574176438061089146</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/07/215726"/>
-        <updated>2022-02-07T12:57:26.000Z</updated>
-        <summary type="html"><![CDATA[パフォーマンス計測に使えるJavaScript組み込みの関数です。
-ブラウザでもNode.jsでも使える便利な子です。
-developer.mozilla.org
-基本はconsole.timeとconsole.timeEndをセットで使います。
-console.time('ほげほげ処理に掛かる時間を測るぞい！')
-
-// なんか、ほげほげする処理
-
-console.timeEnd('ほげほげ処理に掛かる時間を測るぞい！')
-
-
-
-とすると、次のような文字列がブラウザなら開発コンソールに、Node.jsなら標準出力に出力されます。
-ほげほげ処理に掛かる時間を測るぞい！: 4.600s
-タイマーは引数で与えた名前で区別されます。
-同じ名前のタイマーを2つ同時に起動できません。
-ループ処理みたいな途中経過を測りたい時はconsole.timeLogを使います。
-console.time('繰り返し処理に掛かった時間')
-
- for(let i = 0; i < 10; i++){
-  console.timeLog('繰り返し処理に掛かった時間')
-}
-
-console.timeEnd('繰り返し処理に掛かった時間')
-
-
-
-を実行すると次のような結果が得られます。
-繰り返し処理に掛かった時間: 3.488ms
-繰り返し処理に掛かった時間: 3.569ms
-繰り返し処理に掛かった時間: 3.615ms
-繰り返し処理に掛かった時間: 3.648ms
-繰り返し処理に掛かった時間: 3.687ms
-繰り返し処理に掛かった時間: 3.738ms
-繰り返し処理に掛かった時間: 3.77ms
-繰り返し処理に掛かった時間: 3.81ms
-繰り返し処理に掛かった時間: 3.847ms
-繰り返し処理に掛かった時間: 3.881ms
-繰り返し処理に掛かった時間: 17.205ms
-
-
-
-表示される時間は、タイマー開始からの経過時間です。
-MDNには書いてないのですがwhatwgの仕様を見ると、timeLogは第二引数以降の引数が取れるみたいです。
-console.time('繰り返し処理に掛かった時間')
-
- for(let i = 0; i < 10; i++){
-  console.timeLog('繰り返し処理に掛かった時間', i)
-}
-
-console.timeEnd('繰り返し処理に掛かった時間')
-
-
-
-で、次のような出力が得られます。
-繰り返し処理に掛かった時間: 3.672ms 0
-繰り返し処理に掛かった時間: 3.761ms 1
-繰り返し処理に掛かった時間: 3.807ms 2
-繰り返し処理に掛かった時間: 3.842ms 3
-繰り返し処理に掛かった時間: 3.883ms 4
-繰り返し処理に掛かった時間: 3.919ms 5
-繰り返し処理に掛かった時間: 3.96ms 6
-繰り返し処理に掛かった時間: 3.981ms 7
-繰り返し処理に掛かった時間: 4.02ms 8
-繰り返し処理に掛かった時間: 4.054ms 9
-繰り返し処理に掛かった時間: 5.245ms]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -15952,21 +13442,6 @@ Google Domains のメール転送を使っていたが、DNS は Cloudflare を�
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[イエメン ハイミ イエメニア ナチュラル]]></title>
-        <id>hatenablog://entry/13574176438060206287</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/05/111954"/>
-        <updated>2022-02-05T02:19:54.000Z</updated>
-        <summary type="html"><![CDATA[www.tonya.co.jp
-エチオピアを起源とし、イエメンから世界に広まったアラビカ・コーヒー。そのうち、ティピカ種とブルボン種は、300年を経て現在世界各地で栽培されている多様な主要品種の母体となっています。
-今回届いたコーヒー「イエメニア」はそのティピカ系でもブルボン系でもない、全く新しい「母体品種」です！
-
-
-フルーツのようなナッツのようなカカオのような、でもどれとも違うなんとも言えない香りがすごいです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -16704,158 +14179,6 @@ japan.zdnet.com
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Ubuntuにgitをソースコードからインストールする]]></title>
-        <id>hatenablog://entry/13574176438058942172</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/01/214739"/>
-        <updated>2022-02-01T12:47:39.000Z</updated>
-        <summary type="html"><![CDATA[WSLのUbuntu 20にgitをソースコードからインストールするのに次の手順が必要でした。
-手順
-sudo apt install autoconf 
-sudo apt install libcurl4-openssl-dev 
-curl https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.21.4.tar.xz --output git-2.21-4.tar.xz
-tar -xf git-2.21-4.tar.xz 
-cd git-2.21.4/
-make configure
-./configure --prefix=/usr NO_TCLTK=1
-make NO_GETTEXT=1
-sudo make install NO_GETTEXT=1
-
-
-
-2.21.4という中途半端なバージョンであることは気にしないでください。
-インストールしたいバージョンのソースコードはIndex of /pub/software/scm/git/ から探してください。
-参考：How to install git specific version(2.7.*) on Ubuntu - Stack Overflow
-トラブルシュート
-以下解説というか、つまづいた点です。
-make configureにはautoconfが必要です。
-ないと次のエラーが出ます。
-~ make configure
-GIT_VERSION = 2.21.4
-    GEN configure
-/bin/sh: 1: autoconf: not found
-make: *** [Makefile:2274: configure] Error 127
-
-
-
-インストールします。
-sudo apt install autoconf 
-
-
-
-参考：installation - How to install autoconf - Ask Ubuntu
-Tcl/Tkがない場合は環境変数NO_TCLTKが必要
-ないとmakeで次のようなエラーが出ます。
-    * new locations or Tcl/Tk interpreter
-    GEN git-gui
-    INDEX lib/
-    * tclsh failed; using unoptimized loading
-    MSGFMT    po/bg.msg make[1]: *** [Makefile:252: po/bg.msg] Error 127
-make: *** [Makefile:2037: all] Error 2
-
-
-
-環境変数NO_TCLTKをつけて./configureします。
-./configure --prefix=/usr NO_TCLTK=1
-
-
-
-　
-gettextがない場合は環境変数NO_GETTEXTが必要
-ないと次のエラーが出ます。
-    SUBDIR templates
-    MSGFMT po/build/locale/pt_PT/LC_MESSAGES/git.mo
-/bin/sh: 1: msgfmt: not found
-make: *** [Makefile:2533: po/build/locale/pt_PT/LC_MESSAGES/git.mo] Error 127
-
-
-
-環境変数NO_GETTEXTをつけてmakeします。
-Tcl/TKの時と違いmakeの環境変数であることに注意してください。
-make NO_GETTEXT=1
-make installの時も同じフラグをつけて実行します。
-そうしないとビルドから実行されます。
-sudo make NO_GETTEXT=1 install
-
-
-
-参考：Compile Git without gettext - Stack Overflow
-httpsスキーマを使うには
-httpsスキーマに対応したコンパイルができていないと、次のようなエラーがでます。
-~ git clone https://example.com/test.git
-Cloning into 'test'...
-fatal: unable to find remote helper for 'https'
-
-
-
-httpsを使いたい場合は、makeする前にcurlの開発用ライブラリをインストールします。
-sudo apt install libcurl4-openssl-dev 
-
-
-
-参考
-linux - "Unable to find remote helper for 'https'" during git clone - Stack Overflow
-libraries - Installing curl.h library - Ask Ubuntu]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Node.js 17でRails 6.1 の bin/webpackを実行するとエラーが起きる]]></title>
-        <id>hatenablog://entry/13574176438058944800</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/01/213852"/>
-        <updated>2022-02-01T12:38:52.000Z</updated>
-        <summary type="html"><![CDATA[Node.js 17がインストールされた環境でbin/webpackコマンドを実行すると次のエラーが起きます。
-~ bin/webpack
-node:internal/crypto/hash:67
-  this[kHandle] = new _Hash(algorithm, xofLen);
-                  ^
-
-Error: error:0308010C:digital envelope routines::unsupported
-    at new Hash (node:internal/crypto/hash:67:19)
-    at Object.createHash (node:crypto:130:10)
-    at module.exports (/home/ledsun/books-manager/node_modules/webpack/lib/util/createHash.js:135:53)
-    at NormalModule._initBuildHash (/home/ledsun/books-manager/node_modules/webpack/lib/NormalModule.js:417:16)
-    at handleParseError (/home/ledsun/books-manager/node_modules/webpack/lib/NormalModule.js:471:10)
-    at /home/ledsun/books-manager/node_modules/webpack/lib/NormalModule.js:503:5
-    at /home/ledsun/books-manager/node_modules/webpack/lib/NormalModule.js:358:…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RubyZip 3.0 is coming!]]></title>
-        <id>hatenablog://entry/13574176438058947673</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/01/210223"/>
-        <updated>2022-02-01T12:02:23.000Z</updated>
-        <summary type="html"><![CDATA[Rails 6.1の、特にテストのあるアプリケーションをbundleすると次のような警告がでます。
-Post-install message from rubyzip:
-RubyZip 3.0 is coming!
-**********************
-
-The public API of some Rubyzip classes has been modernized to use named
-parameters for optional arguments. Please check your usage of the
-following classes:
-  * `Zip::File`
-  * `Zip::Entry`
-  * `Zip::InputStream`
-  * `Zip::OutputStream`
-
-Please ensure that your Gemfiles and .gemspecs are suitably restrictive
-to avoid an unexpected breakage when 3.0 is released (e.g. ~> 2.3.0).
-See https://github.com/rubyzip/rubyzip for details. The Changelog also
-lists other enhancements and bugfixes that have been implemented since
-version 2.3.0.
-
-
-
-「RubyZip 3.0でブレイキングチェンジが入るからバージョン指定に気をつけてね」という趣旨だと思います。
-Gemfile.lockをみるとselenium-webdriverかwebdrivers由来に思えます。
-実際ソースコードをみるとそのようです…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[クックパッドの基盤をフル活用して新卒が新規アプリケーションを作った話]]></title>
         <id>hatenablog://entry/13574176438057498012</id>
         <link href="https://techlife.cookpad.com/entry/2022/02/01/170000"/>
@@ -16890,35 +14213,6 @@ Sサイズのゴディバ（ちょっとだけぬるい）＋紅茶（こっち�
 です！！]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アプリケーション構成ファイルはなくてもよい]]></title>
-        <id>hatenablog://entry/13574176438058827665</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/02/01/090235"/>
-        <updated>2022-02-01T00:02:35.000Z</updated>
-        <summary type="html"><![CDATA[Visual Studioで.NET Frameworkを使ったアプリケーションをつくろうとするとプロジェクトにApp.configというファイルができます。
-Windows FormなりWPFなりのデスクトップアプリケーションの場合、ビルドすると出力ディレクトリに実行ファイル名.configというファイル名でコピーされます。
-中身は次のような感じです。
-<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-    <startup> 
-        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6" />
-    </startup>
-</configuration>
-
-
-
-アプリケーションを起動出来る.NET Frameworkのバージョンが記載されています。
-プロジェクトのプロパティから「対象のフレームワーク」を変更すると自動的に更新されます。
-.NETに初めて触れたときから常に存在したので、必要な物だと思っていました。
-なくてもよかったです。
-実行ファイルと同じフォルダに存在しなくてもいいですし、プロジェクトからApp.configを消しても大丈夫です。
-また、.NET*1を対象としたプロジェクトの場合は最初からApp.configが作られません。
-新規のC# Windows フォームアプリプロジェクトに含まれるファイル
-*1:.NET Core以降の.NET 5とか.NET 6を指しています。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -17124,63 +14418,6 @@ TVアニメ「その着せ替え人形は恋をする」公式サイト
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Windowsインストーラーが「別のバージョンの製品が既にインストールされています。」と表示する条件]]></title>
-        <id>hatenablog://entry/13574176438058754090</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/31/235356"/>
-        <updated>2022-01-31T14:53:56.000Z</updated>
-        <summary type="html"><![CDATA[msiファイルをビルドしているとちょいちょい次のダイアログを見ます。
-「別のバージョンの製品が既にインストールされています。」ダイアログ
-Product Idが同じ異なるmsiファイルを実行すると起きます。
-何が「異なる」と表示されるのか特定出来ていませんでした。
-msiファイルのMD5みたいなハッシュか、ファイルサイズか辺りかな？と予想していました。
-今日、msiファイルをビルドしなおすと発生することに気がつきました。
-WiX Toolsetでいうと、wxsファイルを全く変えずにlight.exeを使ってリンクし直すだけで発生します。
-ユーザー毎コンテキストでインストールしたProductの情報はレジストリのHKEY_CURRENT_USER\SOFTWARE\Microsoft\Installer\Productsに登録されます。
-例えば WiX チュートリアル 日本語訳 Lesson 1 始めよう / 3. 使用に供する のSample-1-3-Firstで作成したmsiファイルを実行すると次の情報が登録されます。
-SampleFirst.msiでインストールした情報
-一回アンインストールします。
-light.exe .\SampleFirst.wixobjを実行し、msiファイルをつくりなおします。
-あたらしいmsiファイルを使ってインストールすると、次の情報に変わります。
-SampleFirst.msiをビルドしなおしてインストールした情報
-PackageCodeだけが変わっているのがわかります。
-WiX チュートリアル 日本語訳 Lesson 1 始めよう / 1. ソフトウェア・パッケージ
- Package の GUIDは、パッケージを生成するたびに違うものである必要があります。 事を簡単にし、新しい GUID を発行するのを忘れないようにするために、アスタリスクをタイプして WiX に GUID を自動生成させることが出来ます
-
-
-この説明の意味がやっとわかりました。
-「パッケージを生成するたび」というのはlight.exeを実行する度ということでした。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[みりんの知識]]></title>
-        <id>hatenablog://entry/13574176438058741652</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/31/231526"/>
-        <updated>2022-01-31T14:15:26.000Z</updated>
-        <summary type="html"><![CDATA[本返しを作っていて、なんで砂糖醤油じゃなくてみりんが必要なんだろう？と疑問を持ちました。
-そんなわけでAmazonで検索してみたら、みりんについて詳しそうな本が一冊見つかりました。
-
-みりんの知識
-
-作者:森田 日出男
-幸書房
-Amazon
-
-Amazon上は森田 日出男著って書いてあるので単著に見えたのですが、実物をみると編・著です。
-執筆陣をみるとすごい
-大学教授
-宝酒造の生産の人
-京都料理専修学校の校長・副校長
-NEDO アルコール事業本部（2006年まで工業用アルコールを専売してたところ）の人
-キッコーマンの人
-ミツカンの人
-産学官のみりんを作る人とみりんを使う人、全部カバーしています。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[フルリモート環境で入社をしたメルペイQAのリアル #merpay_qatalk]]></title>
         <id>18854</id>
         <link href="https://engineering.mercari.com/blog/entry/20220129-0c05bd3742/"/>
@@ -17285,45 +14522,6 @@ GOT the beat - Step …]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Windowsインストーラーでインストールボタンに盾アイコンが表示される場合とされない場合]]></title>
-        <id>hatenablog://entry/13574176438058464960</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/31/101429"/>
-        <updated>2022-01-31T01:14:29.000Z</updated>
-        <summary type="html"><![CDATA[Windows用のインストーラーのうち拡張子がmsiのインストーラーでは、次のようにインストールボタンに盾アイコンが表示されるインストーラーとされないインストーラーがあります。これは何が違うのでしょうか？
-盾アイコンの表示されたインストールボタン
-盾アイコンの表示されないインストールボタン
-ALLUSERS プロパティ
-ALLUSERS プロパティ - Win32 apps | Microsoft Docsが1の時、つまり「コンピューターごとのインストール コンテキスト」の時に盾アイコンが表示されます。
-WiX Toolsetでの設定方法
-WiX Toolsetの場合は次のプロパティが定義されているかどうかによって変わります。
-<Property Id="ALLUSERS" Value="1" />
-
-
-
-Windowsインストーラーの説明に
-空の文字列 ("") の ALLUSERS プロパティ値は、ユーザーごとのインストール コンテキストを指定します。
-
-
-とあるように、デフォルトでは「ユーザーごとのインストールコンテキスト」です。
-WiX チュートリアル 日本語訳 Lesson 2 ユーザー・インタフェイス / 1. 最初のステップにあるSampleWixUIで試すのが比較的簡単です。
-すべてのコンポーネントにGUIDを設定しないといけないので、それなりに手間は掛かります。
-ユーザーごとのインストールコンテキスト
-デフォルトのままです。
- gyazo.com
-インストールボタンに盾アイコンはありません。
-コンピューターごとのインストールコンテキスト
-<Property Id="ALLUSERS" Value="1" />
-
-
-
-を設定しました。
- gyazo.com
-インストールボタンに盾アイコンが表示されるようになりました。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>https://r7kamura.com/articles/2022-01-31-diary</id>
         <link href="https://r7kamura.com/articles/2022-01-31-diary"/>
@@ -17376,24 +14574,6 @@ SV650を買ったのは、もともと乗っていたレブル500がニーグリ
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[機動戦士ガンダムF90]]></title>
-        <id>hatenablog://entry/13574176438058327890</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/30/223518"/>
-        <updated>2022-01-30T13:35:18.000Z</updated>
-        <summary type="html"><![CDATA[ボッシュ大尉（ガンダムF90）の評価が180度変わった日～ボッシュ・ショック～ - Togetter が盛り上がっていたので読んでみました。
-
-機動戦士ガンダムF90 (電撃コミックス)
-
-作者:中原 れい
-KADOKAWA
-Amazon
-
-「ならば、今すぐ愚民ども全てに英知を授けて見せろ！」とシャアに言われたアムロが見せた奇跡を一番近くで見てた人が戦争を起こすのが最高に宇宙世紀って感じで良かったです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -17842,31 +15022,6 @@ Remixの題材としてちょうど良…]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[監視型MVCの残骸を解体するリファクタリング]]></title>
-        <id>hatenablog://entry/13574176438057276380</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/27/220158"/>
-        <updated>2022-01-27T13:01:58.000Z</updated>
-        <summary type="html"><![CDATA[監視型MVCで書いていたブラウザアプリケーションがあります。
-個々のレンダリングロジックが高速化されたので、非同期にレンダリングするのをやめ、MVVM風に書き直しています。
-レンダリングロジックをモデルの中に移動し、モデルの変更に応じて同期的に呼び出すように直しました。
-課題
-まだ、次のようなモデルの更新イベントに反応して、全インスタンス位置を再計算するレンダリングロジックを呼び出すイベントハンドラーが残っています。
-この解体に取りかかりました。
-https://github.com/pubannotation/textae/blob/803383bfc606c7077076e3c25bed58314347d06a/src/lib/editorize/start/View/index.js#L17-L51
-    const debouncedUpdatePosition = debounce(() => {
-      lineHeightAuto.updateLineHeight()
-      this._annotationData.updatePosition()
-    }, 100)
-    const asyncUpdatePosition = () =>
-      // If you delay the recalculation of the line height,
-      // the span will move after the scrolling by the span focus.
-      // This may cause the span to move out of the display area.
-      // Calculate the line height with as little delay as pos…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[エッセイ：顔]]></title>
         <id>https://note.com/sizes/n/nee4600ad1195</id>
         <link href="https://note.com/sizes/n/nee4600ad1195"/>
@@ -18016,24 +15171,6 @@ Amazon
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Windowsにインストールされている.NET Frameworkのバージョンをしらべる]]></title>
-        <id>hatenablog://entry/13574176438057016260</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/27/032203"/>
-        <updated>2022-01-26T18:22:03.000Z</updated>
-        <summary type="html"><![CDATA[インストールされている.NET Frameworkの情報はレジストリに登録されているのかな？と思ったらそうみたいです。
-レジストリ中の.NET Frameworkの情報
-Determine which .NET Framework versions are installed - .NET Framework | Microsoft Docs に記載されている情報です。
-このページには.NET Framework 4.8までを調べる方法が載っています。
-5以降は載っていません。
-と思ったら.NET 5以降は.NETであって、.NET Frameworkではないらしいです。
-Check installed .NET versions on Windows, Linux, and macOS - .NET | Microsoft Docs に記載されていました。
-OSがWindowsとは限らないだけあってレジストリを使わないようです。
-.NETの世界も変わっているんですね。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[nikki_20220126「増加所感」]]></title>
         <id>hatenablog://entry/13574176438056972918</id>
         <link href="https://isitsutbustu-todoke.hatenablog.com/entry/2022/01/26/230409"/>
@@ -18179,44 +15316,6 @@ Simejiの問題点というのはサーバーにつながる初回になぜか�
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[WiX Toolsetの組み込みダイアログのフォントを指定する]]></title>
-        <id>hatenablog://entry/13574176438055682768</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/26/064541"/>
-        <updated>2022-01-25T21:45:41.000Z</updated>
-        <summary type="html"><![CDATA[WiX チュートリアル 日本語訳 Lesson 2 ユーザー・インタフェイス / 1. 最初のステップにある、Sample-2-1-WixUI.zipはWixUI_InstallDirという組み込みのダイアログセットを使っています。
-WixUI_InstallDirを使っているというのは、wxsファイル中に次の要素があります。
-<UIRef Id="WixUI_InstallDir" />
-
-
-
-この要素の実体はhttps://github.com/wixtoolset/wix3/blob/b496a8fdc2979c9a8e70edd3a47f2e98fc178e9e/src/ext/UIExtension/wixlib/WixUI_InstallDir.wxs#L28-L79で定義されているUI要素です。
-29～31行目にフォントの指定があります。
-<TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
-<TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
-<TextStyle Id="WixUI_Font_Title" FaceName="Tahoma" Size="9" Bold="yes" />
-
-
-
-デフォルトのフォントはTahoma
-このUI要素をwxsファイル中に展開すると、好きなフォントが指定できます。
-フォントの変更作業
-<UIRef Id="WixUI_InstallDir" />
-
-
-
-を、上記のリンクに置き換えます。
-このとき
-<UIRef Id="WixUI_Common" />
-
-
-
-を入わすれると、次のエラーが発生します。
-PS C:\Users\led_l\wix-play-ground\Sam…]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[nikki_20220125「夕食相対主義」]]></title>
         <id>hatenablog://entry/13574176438056685341</id>
         <link href="https://isitsutbustu-todoke.hatenablog.com/entry/2022/01/26/033358"/>
@@ -18310,83 +15409,6 @@ youtu.be
 　音mad、おふざけだけじゃなくて人を泣かすことだってできるレベルの総合芸術なんだなということにこの一年くらいで気づいてから本当にずっと感動し続けている。大して詳しくもない人間があれこれ語ってすみませんという感じたが、豊饒な狂気と愛情の世界…と日々感動しているのでまだまだ見続けるだろう、と思う。おやすみなさい。]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WSLポートフォワード設定するインストーラーのリポジトリを作った]]></title>
-        <id>hatenablog://entry/13574176438056645128</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/25/232018"/>
-        <updated>2022-01-25T14:20:18.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-WiXでWSLポートフォワード設定するインストーラーを作る - @ledsun blog で作ったインストーラー、というかインストーラーでインストールするバッチファイルの修正をしたくなったのが2回目なので、リポジトリを作りました。
-1度目は有効にするバッチと無効にするバッチを1ファイルにまとめることでした。
-今回はバッチの中でIPアドレスを表示することです。
-実行画面
-実行するとポートフォワード設定を有効にして、雑にipconfigを実行して、入力を待ちます。
-何か入力するとポートフォワード設定を無効にして終了します。
-雑な作りですが、こんなものでもWSLで実行しているWebアプリケーションを、AndroidやiPhoneなどの外部の端末で試験するための環境設定はワンクリックで終わるので便利です。
-今回の修正をしているうちにインストーラーが上手く動かなくなったので、ショートカットをつくるのをやめて、デスクトップに直接バッチファイルを置くようにしました。
-もう全然インストーラー要らないじゃん？って思いますよね。僕もそう思います。
-普通に考えたら https://github.com/ledsun/wsl-port-forward/blob/main/port-forward-on.bat をコピって使えば良いと思います。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ブラウザでdivが表示されているか判定する]]></title>
-        <id>hatenablog://entry/13574176438056641342</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/25/230755"/>
-        <updated>2022-01-25T14:07:55.000Z</updated>
-        <summary type="html"><![CDATA[Firs Meaningful Paintの高速化
-Webアプリケーションの初期描画をを早くしたいです。
-今風に言うとFirst Meaningful Paintの高速化です。
-大量のデータを読み込んだ際にすべての情報をレンダリングすると時間がかかります。
-最初は、HTMLページの上の表の表示領域内のdivを描画し、下の方、表示領域外にあるdivの描画をスキップしたいです。
-スキップした要素はスクロールして表示領域に入った時に描画します。
-divを表示する位置を計算するロジックがすでにあります。
-計算した表示位置が表示領域内にあるかどうかを判定したいです。
-あるdiv要素か表示領域内にあるかどうか判定
-ロジックの確認のために、あるdiv要素か表示領域内にあるかどうか判定するCodepenを作りました。
-結果は開発コンソールに出力しています。
-ブラウザの開発ツールを起動してもらうか、Codepenで開いてConsoleを開いてもらうと、出力が確認できます。
-See the Pen 
-  表示されている要素を検出する by shigeru.nakajima (@ledsun)
-  on CodePen.
-
-
-
-
-
-
-判定条件
-結論は次の判定になりました。
-横スクロールは想定していません。
-const { top, bottom } = div.getBoundingClientRect();
-
-if (0 <= bottom && top <= clientHeight) {
-  ret.push(div.id);
-}
-
-
-
-clientHeightはdocument.documentElement.clientHeightです。
-clientHeightはブラウザの表示している領域です。
-非常に似たようなプロパティにwindow.innerHeightがあります。
-これはスクロールバーが表示されているときにスクロールバーを含んだ高さを返します。
-今回は人間の目に見える領域が取得したかったので、スクロールバーを含まないclientHeightを選択しました。*1
-またwindow.visualViewport.heightというプロパティもあります。
-これはタブレットまたはスマートフォンで、ピンチアウト、ピンチインして拡大縮小したときに見えている領域が取れるようです。
-今回はタブレット、スマートフォンは考慮しませんでした。
-div側は、getBoundingClientRectを使うと表示領域内でのtop, bottomが取れます。
-これとclientHeightを比較すると簡単に判定できます。
-div全体でなく、一部が表示領域に入った場合にtrueと判定しています。
-参考
-javascript - How to get the browser viewport dimensions? - Stack Overflow
-VisualViewport - Web APIs | MDN
-ウェブページがピンチアウト・ズームされているかどうか検出する方法 - Qiita
-*1: window.innerHeight を使っても、誤差の範囲で、ユーザーに見える情報にも性能にも影響は無いと思います。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -18926,54 +15948,6 @@ USBと違って、そこまで温まりませんが、その分、電池が長�
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[WiX Toolsetの組み込みダイアログの文言をかえる]]></title>
-        <id>hatenablog://entry/13574176438055709289</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/23/173654"/>
-        <updated>2022-01-23T08:36:54.000Z</updated>
-        <summary type="html"><![CDATA[多言語化の仕組みがあるのこれをつかいます。
-wxl形式のXMLファイルを用意し、ビルド時にコマンドラインオプションで指定すれば変更できます。
-文言の変更
-例えばWiX チュートリアル 日本語訳 Lesson 2 ユーザー・インタフェイス / 1. 最初のステップにある、Sample-2-1-WixUI.zipはWixUI_InstallDirという組み込みのダイアログセットを使っています。
-この文言を変えるには
-<?xml version="1.0" encoding="utf-8"?>
-<WixLocalization Culture="ja-jp"
-  xmlns="http://schemas.microsoft.com/wix/2006/localization">
-  <String Id="WelcomeDlgTitle">{\WixUI_Font_Bigger}[ProductName] セットアップ ウィザードへようこそ、おいでませり</String>
-</WixLocalization>
-
-
-
-上記のようなmy-lang.wxlファイルを用意します。
-リンク時に-locオプションを指定します。
-light.exe -ext WixUIExtension -cultures:ja-JP .\SampleWixUI.wixobj -loc .\my-lang.wxl
-
-
-
-文言を変更されたインストーラーの画面
--cultures:ja-JPオプションをつけておけば、組み込みの言語設定を使いつつ、一部だけ上書きできます。
-Idの探し方
-変えたい文言のIdを見つけるにはどうすればいいでしょうか？
-wix3/WixUI_ja-jp.wxl at c02e48ec301a60eba88a3b519d47e88eeaa4c978 · wixtoolset/wix3 · GitHub に現在使われている文言が含まれています。
-文言からIdが検索できます。
-ただし複数のダイアログで同じ文言を使っていることがあります。例えばようこそで検索すると次のように3つの定義が見つかります。
-<String Id="MaintenanceWelcomeDlgTitle" Overridable="yes">{\WixUI_Font_Bigger}[ProductName] セットアップ ウィザードへようこそ</String>
-<String Id="PrepareDlgTitle" Overridable="yes">{\WixUI_Font_Bigger}[ProductName] セットアップ ウィザードへようこそ</String>
-<String Id="WelcomeDlgTitle" Overridable="yes">{\WixUI_Font_Bigger}[ProductName] セットアップ ウィザードへようこそ</String>
-
-
-
-Idの前半部分でどのダイアログで使われている文言か判別できます。
-WelcomeDlgは今回変更したダイアログです。
-MaintenanceWelcomeDlgは修正インストールしたときに最初に表示されるダイアログです*1。
-PrepareDlgは、なんでしょうね？わかりません。
-参考
-WiX チュートリアル 日本語訳 Lesson 8 ユーザー・インタフェイス再び / 9. 英語はわかりませんか
-*1:「アプリと機能」から「変更」を選んで起動したときの画面だと思いますがSample-2-1-WixUIをインストールしても「変更」は選べません。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[音MADn選2021　あと書き]]></title>
         <id>https://note.com/sweets_farting/n/n66c81261ca5f</id>
         <link href="https://note.com/sweets_farting/n/n66c81261ca5f"/>
@@ -19254,51 +16228,6 @@ www.youtube.com
 続きをみる]]></summary>
         <author>
             <name>はここれ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RubyのパターンマッチでFizzBuzz]]></title>
-        <id>hatenablog://entry/13574176438055255837</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/22/105044"/>
-        <updated>2022-01-22T01:50:44.000Z</updated>
-        <summary type="html"><![CDATA[rustでFizzBuzz - @ledsun blog で、rustのパターンマッチングを使ったFizzBuzzを書いたので、rubyでもパターンマッチ*1でFizzBuzzが書けそうな気がしてきました。
-(1..30).each do
-  case _1
-  in i if i % 15 == 0
-    p 'FizzBuzz'
-  in i if i % 5 == 0
-    p 'Buzz'
-  in i if i % 3 == 0
-    p 'Fizz'
-  else
-    p _1
-  end
-end
-
-
-
-rustだと
-fn main() {
-    for i in 1..=15 {
-        match i {
-            i if i % 15 == 0 => println!("fizzbuzz"),
-            i if i % 3 == 0 => println!("fizz"),
-            i if i % 5 == 0 => println!("buzz"),
-            _ => println!("{}", i),
-        }
-    }
-}
-
-
-
-でした。大体一緒です。
-パターンマッチ（ング）の世界では、パターンに式を書くことがガード（句）と言うようです。
-参考
-https://docs.ruby-lang.org/en/3.0/doc/syntax/pattern_matching_rdoc.html#label-Guard+clauses
-https://gist.github.com/omasanori/7858569#%E3%82%AC%E3%83%BC%E3%83%89%E3%82%92%E5%90%AB%E3%82%80%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%83%9E%E3%83%83%E3%83%81
-*1:なぜかRubyとrustで呼び方が微妙に違う]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -19603,102 +16532,6 @@ These apps run on DigitalOcean VMs — the $5/month t…]]></summary>
 プロ…]]></summary>
         <author>
             <name>kaikityouの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WiX Toolsetで作られているインストーラーたち]]></title>
-        <id>hatenablog://entry/13574176438054816264</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/20/225051"/>
-        <updated>2022-01-20T13:50:51.000Z</updated>
-        <summary type="html"><![CDATA[msiファイルのプロパティの詳細を見るとプログラム名の欄にmsiファイルを作ったプログラム名が記載されていることに気がつきました。
-ダウンロードディレクトリに残っていたmsiファイルを見てみると、結構いろいろなmsiファイルがWiX Toolsetで作られていました。
-TortoiseGit
-TortoiseGitの日本語化パッケージ
-PowerShell
-Webex
-WiX Toolsetで作られているインストーラーたち
-広く使われているようです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Passive event listeners]]></title>
-        <id>hatenablog://entry/13574176438054814171</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/20/224413"/>
-        <updated>2022-01-20T13:44:13.000Z</updated>
-        <summary type="html"><![CDATA[iPadのSafariでタップした瞬間の選択文字列が取得したいです。
-mousedownイベントは、文字列選択が解除されてから発火します。
-そこでtouchstartイベントを監視することにしました。
-するとChromeで見慣れない警告が出てきました。
-touchstartイベントを監視するとGoogle Chromeで表示される警告
-リンク先のPassive event listeners - Chrome Platform Statusの、さらにリンク先の
-EventListenerOptions/explainer.md at gh-pages · WICG/EventListenerOptions · GitHub
-に詳しい説明がありました。
-タブレットのタッチ操作はスクロールにも使います。
-touchstartイベントを監視するとpreventDefaultされるかもしれないので、イベントハンドラーが完了するまでスクロールが開始できません。
-数百ms掛かると、ユーザー体験を明らかに悪くします。
-そこでaddEventListnerに{passive:true}オプションを渡します。
-{passive:true}はイベントハンドラーがpreventDefaultを呼ばないことを保証します。
-ブラウザはpreventDefaultが呼ばれないことがわかっているので、イベントハンドラーの終了を待つことなくヌルヌルスクロールできるのでした。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[input type="text"とtextareaをまとめて呼ぶ名前を知らないので、Text Fieldsと呼ぶことにした]]></title>
-        <id>hatenablog://entry/13574176438054810738</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/20/223405"/>
-        <updated>2022-01-20T13:34:05.000Z</updated>
-        <summary type="html"><![CDATA[こんな感じでアプリケーション独自のコピー処理を実装していました。
-document.addEventListener('copy', (clipboardEvent) => {
-  // アプリケーション独自の情報をクリップボードに書き込む
-  clipboardEvent.clipboardData.setData('text/plain', 'こんにちわ')
-  clipboardEvent.preventDefault()
-})
-
-
-
-すると、ふつうのinput type="text" で文字列がコピペ出来なくなるんですよ。
-なので、次のようなガード条件を追加して、input type="text"を対象から除外します。
-if(clipboardEvent.target instanceof HTMLInputElement) {
-  return;
-}
-例えば下の例です。
-input type="text"の文字列をコピーすると普通にコピーできます。
-textareaの文字列をコピーすると決まった文字しかコピー出来ません。
-See the Pen 
-  コピーイベントのハンドリング by shigeru.nakajima (@ledsun)
-  on CodePen.
-
-
-
-
-
-
-実際にクリップボードイベントを扱うときはinput type="text"とtexteareaを両方除外したくなります。
-このグループを表す良い名前を探します。
-最初はcontentEditableがそれっぽいかな？と思いました。
-contentEditableはinputやtexteareaには適用出来ません。
-つまり、これは背反したグループです。
-で、考え出したのがText Fieldsという名前です。
-こんな感じの関数を作ってガード条件に使えばいいな、と思いました。
-function isTextFields(htmlElement) {
-  return (
-    htmlElement instanceof HTMLInputElement ||
-    htmlElement instanceof HTMLTextAreaElement
-  )
-}
-
-
-
-参考
-dom - check if object is a textbox - javascript - Stack Overflow
-Determine element's type with JavaScript/jQuery | Techie Delight
-Why is textarea seperate from input? Is it even necessary? - HTML FAQ - Codecademy Forums
-Text fields | Contact Form 7]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -20174,112 +17007,6 @@ azu/github-advisory-database-rss: GitHub Advisory Database RSS Feeds.
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[rustでgrep-lite 2]]></title>
-        <id>hatenablog://entry/13574176438054238893</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/19/063212"/>
-        <updated>2022-01-18T21:32:12.000Z</updated>
-        <summary type="html"><![CDATA[行番号を出力する機能が増えました。
-fn main() {
-    let search_term = "picture";
-    let quote = "\
-Every face, every shop, bedroom window, public-house, and
-dark square is a picture feverishly turned--in search of what?
-It is the same with books.
-What do we seek through millions of pages?";
-    let mut line_num: usize = 1;
-
-    for line in quote.lines() {
-        if line.contains(search_term) {
-            println!("{line_num}: {line}");
-        }
-        line_num += 1;
-    }
-}
-
-
-
-line_num++;はないようです。
-まあ、なくても困りません。
-fn main() {
-    let search_term = "picture";
-    let quote = "\
-Every face, every shop, bedroom window, public-house, and
-dark square is a picture feverishly turned--in search of what?
-It is the same with books.
-What do we seek through millions of pages?";
-    for (i, line) in quote.lines().enumerate() {
-        if line.contains(search_term) {
-            let line_num = i + 1;
-            println!("{line_num}: {line}");
-        }
-    }
-}
-
-
-
-enumerateというメソッドを使うとインデックスが帰ってくるようです。
-JavaScriptのArray.prototype.forEachみたいに同じ関数で、コールバック関数の引数がかわるわけではないんですね。
-あ、forEachはイテレーターではないですね。
-イテレーターとして比較するなら
-Array.prototype.values()
-Array.prototype.entries()
-の方でした。
-メソッドがわかれているのではなく、メソッドチェーンになっているのは興味深いです。
-このループは2回回らないのでしょうか？
-気にならないくらい速いのか？
-コンパイラがインライン化してしまうのか？
-並列に実行されるのか？
-興味深いです。
-2つの値が返ってくる場合はlineを(i, line)のようにカッコでくくる必要があります。
-パーサーの都合でしょうか？desutructuring assignmentみたいな文法があるのでしょうか？]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[rustでgrep-lite 1]]></title>
-        <id>hatenablog://entry/13574176438054236534</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/19/061125"/>
-        <updated>2022-01-18T21:11:25.000Z</updated>
-        <summary type="html"><![CDATA[詳解Rustプログラミング
-
-作者:Tim McNamara
-翔泳社
-Amazon
-
-「2.9 grep-liteを作る」です。
-fn main() {
-    let search_term = "picture";
-    let quote = "\
-Every face, every shop, bedroom window, public-house, and
-dark square is a picture feverishly turned--in search of what?
-It is the same with books.
-What do we seek through millions of pages?";
-
-    for line in quote.lines() {
-        if line.contains(search_term) {
-            println!("{line}");
-        }
-    }
-}
-
-
-
-最近のプログラミング言語はJava 1.4くらいには文字列の扱いが簡単なようです。
-rustのバージョンを1.58.0に上げたので
-            println!("{line}");
-
-
-
-を使ってみました。
-「Rust 1.58.0」がリリース、フォーマット文字列が引数をキャプチャできるように：CodeZine（コードジン）
-過去のサンプルプログラムと見比べると、プレースフォルダが{}と{:?}と2種類出てきます。
-どう違うのでしょうか？]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[『デュエルプリンセス』でオーバーライドをした日]]></title>
         <id>hatenablog://entry/13574176438054226027</id>
         <link href="https://chomosh.hatenablog.com/entry/2022/01/19/033621"/>
@@ -20418,81 +17145,6 @@ YくんとKくんと一緒に自由行動。ここがマジで楽しかった。
         <summary type="html"><![CDATA[Author: @urahiroshi, Engineering manager of Web Platform team The mission of Web Platform team Web Platform te […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ruby on Railsを前提としたナチュラルキーとサロゲートキーの話]]></title>
-        <id>hatenablog://entry/13574176438054178081</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/18/230949"/>
-        <updated>2022-01-18T14:09:49.000Z</updated>
-        <summary type="html"><![CDATA[若手のWeb系プログラマとナチュラルキーとサロゲートキーの話をしました。
-適当なこと言ってないか不安になったのて、調べ直しました。
-DB データのサロゲートキー | knooto
-おおむね SI 系は自然キー派、Web 系はサロゲートキー派の傾向がある
-
-
-とても同意できる意見です。
-ナチュラルキー派
-第3回 テーブル設計のグレーゾーン～毒と薬は紙一重 （4）サロゲートキーVSナチュラルキー：SQLアタマアカデミー｜gihyo.jp … 技術評論社
-サロゲートキーを使えば，その保存に余計なディスク領域を消費しますし，論理的には不要な項目が付け加わることで，設計を不透明なものにするからです。必要に迫られたときだけ使うようにしましょう。
-
-
-漢(オトコ)のコンピュータ道: ナチュラルキーとサロゲートキーについての議論
-リレーショナルモデルでは、ドメインとは属性が取り得る値の集合のことである。（詳細はスライド を参照のこと。）もし同じ要素が異なるアイテムを指し示す可能性があるのだとしたら、そのドメインは一体如何なる意味のものだろうか。
-
-
-ミックさんや奥野さんのようなDBに強い人、ナチュラルキーを生かして（DBのレイヤーで）ドメイン設計していこう派のようです。
-サロゲートキー派
-欅樹雑記: 自然キー vs 人工キー　勝手に決着
-主キーの要件を満たせるのは理論的に人工キーしかありえないよね？
-
-
-とサロゲート派もいます。
-やはりSI系は自然キー派、Web系はサロゲートキー派というおおまかな傾向はありそうです。
-私見
-僕個人の見解を。
-僕は「当分Railsを介さずにRDBを触るつもりはない」というポジションです。
-その立場からすると「Railsがサロゲートキーをサポートしているんだから、脳死してRail Wayに乗れば良いじゃん」です。
-もうちょっと丁寧にいうと、Railsでは「モデリングをDB中心からリソース中心に変更する」決断をしています。
-Railsプログラマが何も指定せずに「ドメインモデル」と言うときはデータベースやモデルクラス単体というよりは、URLとHTTPメソッドまでひっくるめたリソースをイメージしていると思います。
-ナチュラルキーを使い出すと、リソースの一部のDBがリソースからはみ出はじめるように思います。
-そこまでしてナチュラルキーを使ってそれでドメインのモデリングがよくなるか？というと、Railsではそんなことはありません。
-それよりは早めに動くリソース使って、動く物をみながらモデリングする方がRail Wayに乗れるように思います。
-Railsの強みは早く動く物が作れる点にあります。
-というわけで、「ナチュラルキーを絶対使ってはいけない」とは思いませんが、初手はサロゲートキーが、良いように思います
-*1。
-*1:「初手」というのは、RailではDBマイグレートできますので、実装してしばらく試して、ナチュラルキーが良いと思ったときにナチュラルキーに変更するのが良いと思います]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[iPad Safariのユーザーエージェント文字列はiPadではないし、なんならIntel入ってるまである]]></title>
-        <id>hatenablog://entry/13574176438054165880</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/18/224602"/>
-        <updated>2022-01-18T13:46:02.000Z</updated>
-        <summary type="html"><![CDATA[iwb.jp
-↑の通りです。
-/iPad/.test(navigator.userAgent) || /iPhone/.test(navigator.userAgent)
-
-
-
-2週間程前に、こういう条件式を書いて、iPadのGoogle Chromeでちゃんと判別できることを確認して安心していました。
-今日試しに、Safariで開いてみたら、iPadとして判別されていませんでした。
-不思議だなあ？と思ってユーザーエージェント文字列を取得してみました。
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15
-
-
-全然嘘なんですよ・・・・。
-「そんなわけある？」と思いますよね？
-「Intel Macと接続してるとユーザーエージェント文字列変わるの？」とUSBケーブルを抜いたり、iPadを再起動してみたりしました。
-本当にこういう文字列みたいです。
-IntelっておまえIntelのCPU入ってねえじゃん・・・。
-検索して前述のページを見つけました。
-「ユーザーエージェント文字列にMacintoshが含まれている」かつ「タッチ機能がある」で判別すればよいことがわかりました。
-なるほどmacOSが載っている端末でタッチ機能があるものはないですね、賢い♪]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
@@ -20851,77 +17503,6 @@ Amazon
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[WindowsでrustupするならVS Codeを終わらせろ]]></title>
-        <id>hatenablog://entry/13574176438053900208</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/18/053331"/>
-        <updated>2022-01-17T20:33:31.000Z</updated>
-        <summary type="html"><![CDATA[rust 1.58がでたので、rustの環境を更新します。
-PS C:\Users\led_l\rust_land\grep-lite> cargo --version
-cargo 1.57.0 (b2e52d7ca 2021-10-21)
-PS C:\Users\led_l\rust_land\grep-lite> rustc --version
-rustc 1.57.0 (f1edd0429 2021-11-29)
-PS C:\Users\led_l\rust_land\grep-lite> rustup update
-info: syncing channel updates for 'stable-x86_64-pc-windows-msvc'
-info: latest update on 2022-01-13, rust version 1.58.0 (02072b482 2022-01-11)
-info: downloading component 'rls'
-info: downloading component 'rust-src'
-info: downloading component 'rust-analysis'
-info: downloading component 'cargo'
-info: downloading component 'clippy'
-info: downloading component 'rust-docs'
-info: downloading component 'rust-std'
-info: downloading component 'rustc'
- 65.2 MiB /  65.2 MiB (100 %)  61.2 MiB/s in  1s ETA:  0s
-info: downloading component …]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[珈琲サブスクリプション]]></title>
-        <id>hatenablog://entry/13574176438052702202</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/17/203952"/>
-        <updated>2022-01-17T11:39:52.000Z</updated>
-        <summary type="html"><![CDATA[2012年からつかっていた珈琲豆のサブスクリプションが在庫切れになりました。
-www.tonya.co.jp
-問い合わせたら、原価高騰につき価格改定中だそうです。
-これを機会にちょっとほかのサブスクリプションがどんな感じか比べてみます。
-現行の特徴を挙げます。
-2週間に400g
-豆は毎回変わる
-指定は出来ない
-僕は日に3杯（30g）くらい消費するので、2週間で420gでぴったりです。
-ただ、もともとそんな修正だったのか9年の購読で適応したのかは謎です。
-いや、後者だと思います。
-価格が45,531円でした。
-現状だと100g当たり 474円です。
-これが割とチートっぽい価格設定なんですよね。
-アラビカ種やブレンドも混ざっていて、全部の豆がスペシャルティコーヒーではないので、原価割れとかでは無いと思います。
-コーヒー豆サブスクリプションとしては安い方のようです。
-調べたサブスクリプション
-焙煎したてのコーヒーが毎月届く珈琲定期便-[OBSCURA COFFEE ROASTERS]
-shop.obscura-coffee.com
-月800g頼むと4800円です。
-100g当たり600円です。
-月一だと焙煎後の鮮度がちょっと不利です。
-1ヶ月以内なら誤差の範囲でしょうか？
-BeansExpress 焙煎したての新鮮なコーヒー豆を自宅にお届け｜Beans Express
-beans-express.com
-月300gで2376円です。
-100g当たりで792円です。
-月に2回来るのは焙煎後の鮮度が期待できます。
-300gだと今までの半分以下に減るのが悩ましいです。
-PostCoffee
-https://app.postcoffee.co/question
-月一回225g、2462円。
-100g当たり1094円です。
-頻度、量、値段、すべてが現状から一番遠いいです。
-僕向きではないようです。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[20220117]]></title>
         <id>https://note.com/dak/n/n14684f7d9200</id>
         <link href="https://note.com/dak/n/n14684f7d9200"/>
@@ -21086,40 +17667,6 @@ Amazon
 これ、配線を工夫すれば、外でも使えそうなので、バイク乗るときにもバイクにつけているUSB電源で取れないか、試してみます。]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[豚のレバーは加熱しろ(3回目)]]></title>
-        <id>hatenablog://entry/13574176438053682466</id>
-        <link href="https://ledsun.hatenablog.com/entry/2022/01/17/183528"/>
-        <updated>2022-01-17T09:35:28.000Z</updated>
-        <summary type="html"><![CDATA[豚のレバーは加熱しろ(3回目) (電撃文庫)
-
-作者:逆井 卓馬
-KADOKAWA
-Amazon
-
-異世界転生した自己評価の低い主人公が、自己評価の低い美少女ヒロインと、セクハラ形式のイチャイチャをしながらゆるゆるとお互い癒やしあうライトノベルらしくライトノベル。
-2巻から続いたエピソードに区切りがつきました。
-1巻からの伏線を綺麗に回収していきました。
-ストーリーのパターンは1巻が「難題に直面した平凡な奴」で、2～3巻が「人生の節目」だと思います。
-雰囲気は1巻は「Re:ゼロから始める異世界生活」に似た感じでしたが、もうちょっと気楽な感じになりました。
-変態おじさんがかっこいい感じで退場していったけど、やっぱり変態だと思います。
-20220118 追記
-セクハラ系イチャイチャラブコメって90年代にたくさんあったと思います。
-ルパン三世とかシティハンターとかをイメージしています。
-2020年代ではなかなか難しい形式に思います。
-男性から憎からず思っている女性にセクハラすると、女性は「いやん、ばかん」とマジギレせずに反応して、「いやよいやよも好きのうち」構図が成り立つやつです。
-2020年代にこれをやると、初手のセクハラがセクハラ（犯罪）になって、成り立ちません。
-ルパン三世や冴羽獠はすでにそういうキャラクターだと認知されているので許容されますが、新キャラでそれをやるのは厳しいです。
-それをテレパスで回避したのは興味深いギミックです。
-主人公の豚さんは脳内でセクハラを考える、ヒロインはテレパスで脳内のセクハラを読み取る。
-これであれば主人公は積極的にセクハラをしていない。
-どちらかといえば思考を除かれた被害者です。
-頭でセクハラを考えることまで禁止するのは心の自由が失われてしまいます。罪に問えません。
-これにてセクハラ系イチャイチャラブコメの復活です。]]></summary>
-        <author>
-            <name>@ledsun blog</name>
         </author>
     </entry>
     <entry>
