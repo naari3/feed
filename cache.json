@@ -949,20 +949,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438053119749",
-          "author": null,
-          "description": "github.com\nるりまのレビューで https://github.com/rurema/doctree/pull/2644 を見ていたら、RDocのIO.write('|cmd')などの記述も微妙に間違っているなと気がついたので直した。",
-          "link": "https://commits.hatenablog.com/entry/2022/01/16/100020",
-          "publishedOn": "2022-01-16T01:00:20.000Z",
-          "wordCount": 163,
-          "title": "2022-01-15",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -9948,6 +9934,16 @@
       "siteUrl": "https://note.com/sizes",
       "articles": [
         {
+          "id": "https://note.com/sizes/n/nd2a5f843b17d",
+          "author": null,
+          "description": "自分より若い世代のSNS運用を見ていると、明らかに「批判」というものに批判的だと思うことがある。そもそも公的な場でイシューをあけすけにすること自体を倦厭しているフシがあり、なにか自分の意見があるとしたら、それはもっぱらリアルの私的な付き合いで表明することになる。もしくは鍵アカウントなりLINEなりダイレクトメッセージなりDiscordの、「閉じたインターネット」に埋伏するかだ。\nとうぜんそう言った流れに与さない人も一定数いるし、そういう人はもう少し上の世代のように表アカウントで意見をくどくど並び立てるのだけれど、多数派が漂わせるTPOに反しているから、「痛い奴」「お気持ちマシーン」「思想が強い」みたいな評価をされてしまう。賢明な人はTPOをかぎ取るし従うから、ぶっちゃけ大抵その通りであることが多い。\n続きをみる",
+          "link": "https://note.com/sizes/n/nd2a5f843b17d",
+          "publishedOn": "2022-04-15T12:20:53.000Z",
+          "wordCount": null,
+          "title": "エッセイ：今時の若者は個人主義と共同体主義を反復してるという話",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/76499970/rectangle_large_type_2_3fad08620fd3d21582cd64b06e6e13e5.png?width=800"
+        },
+        {
           "id": "https://note.com/sizes/n/n5a4c7cc427cc",
           "author": null,
           "description": "僕の知り合いの名言(?)に「オタクはアニメ見てウンコしろ」というのがある。キモ・オタクはモエモエアニメを見て、オタク・カードショップに行き、オタク・ラーメンを食べ、モエモエアニメを見て、「モエ〜」と言えと。おそらくこれはガチャガチャを回して絵を被った女に端金を上納して偽りの性愛を得るだけのオタクでもなんでもない冴えない独り身のオッサンに対しての皮肉が含まれているのだろうけれど、それにしてもなかなか真に迫る言葉である。\n僕も、「そういうオタク」になりたくないと思っていたし、また忌避感を抱いていた。昔から僕のnoteを読んでいるひとなら知っているだろうけれど、「そういうオタク」への嘆きや呪詛でバズったところから始まったんです。\n続きをみる",
@@ -12900,6 +12896,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2022-04-15-changelog-versioning-automation",
+          "author": null,
+          "description": "CHANGELOG.mdに新しいバージョンのセクションを追加したら、そのバージョン用のGitタグを付け、更にそのバージョン用のGitHub Releaseを発行する、という作業が増えてきたので自動化した。",
+          "link": "https://r7kamura.com/articles/2022-04-15-changelog-versioning-automation",
+          "publishedOn": "2022-04-15T00:00:00.000Z",
+          "wordCount": null,
+          "title": "CHANGELOGが変更されたらタグを付けてリリース",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2022-04-14-weneedfeed",
           "author": null,

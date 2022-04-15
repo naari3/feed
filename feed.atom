@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-15T12:02:25.153Z</updated>
+    <updated>2022-04-15T13:07:25.208Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[エッセイ：今時の若者は個人主義と共同体主義を反復してるという話]]></title>
+        <id>https://note.com/sizes/n/nd2a5f843b17d</id>
+        <link href="https://note.com/sizes/n/nd2a5f843b17d"/>
+        <updated>2022-04-15T12:20:53.000Z</updated>
+        <summary type="html"><![CDATA[自分より若い世代のSNS運用を見ていると、明らかに「批判」というものに批判的だと思うことがある。そもそも公的な場でイシューをあけすけにすること自体を倦厭しているフシがあり、なにか自分の意見があるとしたら、それはもっぱらリアルの私的な付き合いで表明することになる。もしくは鍵アカウントなりLINEなりダイレクトメッセージなりDiscordの、「閉じたインターネット」に埋伏するかだ。
+とうぜんそう言った流れに与さない人も一定数いるし、そういう人はもう少し上の世代のように表アカウントで意見をくどくど並び立てるのだけれど、多数派が漂わせるTPOに反しているから、「痛い奴」「お気持ちマシーン」「思想が強い」みたいな評価をされてしまう。賢明な人はTPOをかぎ取るし従うから、ぶっちゃけ大抵その通りであることが多い。
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SV650も走行距離3000キロになり、アクアラインが怖くなくなりました]]></title>
         <id>hatenablog://entry/13574176438083198331</id>
@@ -101,6 +113,16 @@ Amazon
 読むと結婚したくなる最高の漫画。結婚したい…]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CHANGELOGが変更されたらタグを付けてリリース]]></title>
+        <id>https://r7kamura.com/articles/2022-04-15-changelog-versioning-automation</id>
+        <link href="https://r7kamura.com/articles/2022-04-15-changelog-versioning-automation"/>
+        <updated>2022-04-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CHANGELOG.mdに新しいバージョンのセクションを追加したら、そのバージョン用のGitタグを付け、更にそのバージョン用のGitHub Releaseを発行する、という作業が増えてきたので自動化した。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
@@ -21472,17 +21494,6 @@ immortalt.hatenablog.com
 続きをみる]]></summary>
         <author>
             <name>unknown protocol</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022-01-15]]></title>
-        <id>hatenablog://entry/13574176438053119749</id>
-        <link href="https://commits.hatenablog.com/entry/2022/01/16/100020"/>
-        <updated>2022-01-16T01:00:20.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-るりまのレビューで https://github.com/rurema/doctree/pull/2644 を見ていたら、RDocのIO.write('|cmd')などの記述も微妙に間違っているなと気がついたので直した。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
 </feed>
