@@ -78,6 +78,57 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">fz-browse: fzfライクな自由度の高いインタラクティブな検索ツール、ただしブラウザに表示する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/04/17/fz-browse/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>fz-browseという、fzfライクなインタラクティブな検索ツールを書きました。
+fz-browse自体は検索エンジンを持っているわけではなく、既存のripgrepやripgrep-allなどのツールと組み合わせて、インタラクティブな検索体験を自分で組み立てるツールです。
+コマンドを組みわせたインタラクティブな検索(絞り込み)はpercol、peco、fzfなどが有名ですが、これらは検索の結果や操作もターミナル上で行います。
+ターミナルは、書籍や画像などのコンテンツを検索した結果を表示してもあまり楽しくない場合があります。
+fz-browserでは既存のコマンドラインツールを組み合わせて検索するのは同じですが、この検索結果の表示や操作をウェブブラウザ上で行います。
+ブラウザで表示できるので、検索結果がPDFやEpubの書籍だったらそのままビューアで開いたり、画像だったらそのまま表示できるようになっていて、テキスト以外の結果にも対応しています。
+
+
+
+ripgrep-allを使って、PDFやEpub、Markdownを検索している様子
+
+
+
+ExifToolを使って、画像のExifに含まれるコメントや日付を検索している様子
+使い方
+fz-browseはNode.jsで動いているツールなので、npmでインストールします。
+npm install --global fz-browse
+
+
+最初に書いていたように、fz-browse自体は検索エンジンではなく、既存のコマンドを組み合わせます。
+テキストを検索する
+ripgrepで検索する例です。
+必要なもの:
+
+
+ripgrep
+jq
+
+
+
+次のコマンドを実行すると、検索欄に入力するたびに--runフラグに指定されているrgコマンドで検索した結果が表示されます。
+また、検索したファイルのリンクを開くと、--previewフラグで指…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/ssaymds" target="_blank"
               rel="noopener">ておつく</a></h3>
           <section class="articles-per-source">
@@ -25463,52 +25514,6 @@ azu/github-advisory-database-rss: GitHub Advisory Database RSS Feeds.
                                   </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">フットスイッチは、奥を倒すものと、手前を倒すものがありますが、私は奥を倒すほうが楽でした</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2022/01/18/115955" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>相変わらずいろいろフットスイッチをためしています。そして、フットスイッチには二種類あることがわかってきました。
-その１ 踏む時に奥側を踏んで自分より遠い方を低くするもの
-その２ 踏む時に手前側を踏んで、自分より近い所を低くするもの
-そして大事なことは、まずこれ統一した方がいいです。両方あると一瞬間違えます。
-私は両方試してみましたが、私自身としてはその１系の方が楽です。
-例えば、この辺が、奥側を倒す方のもの。
-
-
-ルートアール メカニカルスイッチ搭載 USBフットペダルスイッチ 1ペダル グレー RI-FP1MG
-ルートアール
-Amazon
-
-
-ルートアール メカニカルスイッチ搭載 USBフットペダルスイッチ 3ペダル グレー RI-FP3MG
-ルートアール
-Amazon
-こっちは、手前側を倒すやつ
-
-
-エジクン フットスイッチ [FS2P2] 2ペダル 日本製 日本語対応 USB キーボードやマウスの信号を出力 EDIKUN Foot Switch
-エジクン
-Amazon
-
-
-ルートアール メカニカル 高機能USBフットペダルスイッチ ゲームパッド・マルチメディア入力対応 RI-FP1DXG
-ルートアール
-Amazon
-ルートアールでも、両方あるので注意してください。
-どちらがいいかは、完全に本人の好みなのでお任せしますが、やはり元々床に置いて使っていると、さらに足を手前に踏むのはちょっと面倒くさいんです。それに較べると踏んだものを向こう側におろす操作の方が私には自然でした。
-ページターナー系も、どちらかというと、手前を倒すものが多く、あまり使い勝手よくなかったです。
-もし、これからフットスイッチを買う人は、できればどちらも試してみて、どちらかに統一することをお勧めします。
-追記
-友人からもし逆のものを買ってしまった場合には、前後を自分で逆さまにすればいいのではないかと言われました。なるほど。たしかにやってみると、なかなか快適です。
-追記２
-多分奥を倒すタイプの方の方が車と同じだから慣れがあるのではという指摘がありました。これもそうだと思います</span>
-                  </div>
-                  <img src="https://m.media-amazon.com/images/I/51oEGqLHrtL._SL500_.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -26031,33 +26036,11 @@ cookpad.connpass.com
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/ecolidelvsvc11" target="_blank"
-              rel="noopener">大腸菌デリバリーサービス</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2021年の思い出</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/ecolidelvsvc11/n/n595b77395366" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>去年は凄い面白かった。
-音MADもそれ以外も。
-1月
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-17T14:02:11.365Z">2022-04-17T14:02:11.365Z</time>
+    <time id="build-timestamp" datetime="2022-04-17T15:01:57.802Z">2022-04-17T15:01:57.802Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
