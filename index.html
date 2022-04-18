@@ -74,6 +74,40 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-04-18">2022-04-18</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">fastText in Cookpad</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/04/18/093000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>研究開発部の原島です。去年からはレシピサービス開発部も兼務しています。そちらの話（検索の話）はおいおいするとして、今日は研究開発部の話（機械学習の話）をします。
+fastText
+単語の分散表現、重要ですよね。ニューラル全盛期の現代において、使わないという選択肢はほとんどないように思います。
+最初に話題になったのは、2013 年に発表された word2vec でしょう。「king」のベクトルから「man」のベクトルを引き、「woman」のベクトルを足したら「queen」のベクトルになったという話は有名です。一方、最近は、2018 年に発表された BERT（及び、それに類するモデル）の話題で持ちきりですね。
+fastText は、ご存知の方も多いと思いますが、分散表現を学習するためのライブラリです。学習のアルゴリズム自体を指すこともあるように思います。fastText の論文は以下です。2017 年に発表されたものなので、発展が速いこの業界においてはもう古い論文なのかもしれません。
+Enriching Word Vectors with Subword Information. Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov.
+なぜ fastText なのか？
+クックパッドでは fastText をよく使っています。では、なぜ fastText なのでしょう？上でも触れたように、word2vec や BERT などの選択肢もあります。もちろん、fastText も主要な選択肢の一つではありますが、どうして fastText なのでしょうか？
+様々な理由がありますが、まとめると、「性能と運用のバランスがよい」といったところでしょうか。
+性能の面では、サブワード（部分文字列）が考慮できる分、word2ve…</span>
+                  </div>
+                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773" class="card article-thumbnail" data-enclosure />
+                                  </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-04-17">2022-04-17</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -25572,25 +25606,6 @@ azu/github-advisory-database-rss: GitHub Advisory Database RSS Feeds.
                                   </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">あらま、TypeCスピーカーにもつなぐときにも表裏があるのか</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2022/01/18/221725" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>バイクのヘルメットにはインカムをつけていますが、ツーリングをしないときには普通に音楽を聞いています。
-私のインカムはTypeCでスピーカーとつないでいるのですが、どうも、左右の音のバランスが悪い時があります。そこで、よくよく実験してみたところ
-「取扱説明書通りの方向につなげるとばっちりで、表裏を逆にすると左が大きく、右が小さく聞こえる」
-ということがわかりました。こちらが正しい方向。
-
-いやーーー、気づきませんでした。また忘れるかもしれないので、自分のためにもメモ書きでブログを残しておきます。
-ちなみに、２つ目のヘルメットはインカムのスピーカーは高いので、安いBluetoothのスピーカーをつないだら、やはり口元にマイクがくるのがうっとおしくて、B+Com Oneのスピーカーを買い直すことになったので、はじめから買えばよかったです。
-こんな感じで、つける方のヘルメットにインカムをつけかえて使います。上はシステムヘルメット、下はカーボンのフルフェイスです。フルフェイスは多少圧迫感があるので、高速道路に乗るときだけ使って、下道はシステムヘルメットにしています。</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazuyomugi/20220118/20220118221317.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -25786,58 +25801,11 @@ YくんとKくんと一緒に自由行動。ここがマジで楽しかった。
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">JSer.info についてのアンケートを実施中です</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/01/18/jser-info-survey/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>JSer.infoというJavaScriptの情報サイトを10年以上やっているのですが、2022-01-16 で11周年を迎えました。
-JSer.info 11周年: 目標は2025年までに交換可能にする、JSer.info アンケート - JSer.info
-リンク先の記事でも紹介しているのですが、JSer.infoについてのアンケートを実施中です。
-JSer.info 11周年アンケート
-https://forms.gle/Uzs3wgSrkUgYxWdr5
-5問ぐらいのアンケートなので、JSer.infoを見たことある人など是非答えてみてください！
-このアンケートの目的は、JSer.infoを2025年までに交換可能にするために、現状のJSer.infoがどう見られているかを把握する目的で実施しています。</span>
-                  </div>
-                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank"
-              rel="noopener">okazsystem</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">20220118</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/dak/n/na700f4881fe2" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>12時ごろ起きる
-灯油の移動販売車に2000円支払ったのち洗濯物を干す
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-18T00:03:15.626Z">2022-04-18T00:03:15.626Z</time>
+    <time id="build-timestamp" datetime="2022-04-18T01:31:09.009Z">2022-04-18T01:31:09.009Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

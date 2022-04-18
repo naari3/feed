@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-18T00:03:15.690Z</updated>
+    <updated>2022-04-18T01:31:09.080Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[fastText in Cookpad]]></title>
+        <id>hatenablog://entry/13574176438083124211</id>
+        <link href="https://techlife.cookpad.com/entry/2022/04/18/093000"/>
+        <updated>2022-04-18T00:30:00.000Z</updated>
+        <summary type="html"><![CDATA[研究開発部の原島です。去年からはレシピサービス開発部も兼務しています。そちらの話（検索の話）はおいおいするとして、今日は研究開発部の話（機械学習の話）をします。
+fastText
+単語の分散表現、重要ですよね。ニューラル全盛期の現代において、使わないという選択肢はほとんどないように思います。
+最初に話題になったのは、2013 年に発表された word2vec でしょう。「king」のベクトルから「man」のベクトルを引き、「woman」のベクトルを足したら「queen」のベクトルになったという話は有名です。一方、最近は、2018 年に発表された BERT（及び、それに類するモデル）の話題で持ちきりですね。
+fastText は、ご存知の方も多いと思いますが、分散表現を学習するためのライブラリです。学習のアルゴリズム自体を指すこともあるように思います。fastText の論文は以下です。2017 年に発表されたものなので、発展が速いこの業界においてはもう古い論文なのかもしれません。
+Enriching Word Vectors with Subword Information. Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov.
+なぜ fastText なのか？
+クックパッドでは fastText をよく使っています。では、なぜ fastText なのでしょう？上でも触れたように、word2vec や BERT などの選択肢もあります。もちろん、fastText も主要な選択肢の一つではありますが、どうして fastText なのでしょうか？
+様々な理由がありますが、まとめると、「性能と運用のバランスがよい」といったところでしょうか。
+性能の面では、サブワード（部分文字列）が考慮できる分、word2ve…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[エッセイ：恨むのをやめるのは難しいがいつかはやらなければいけないと言う話]]></title>
         <id>https://note.com/sizes/n/nff102461a540</id>
@@ -17528,51 +17547,6 @@ YくんとKくんと一緒に自由行動。ここがマジで楽しかった。
         <summary type="html"><![CDATA[Author: @urahiroshi, Engineering manager of Web Platform team The mission of Web Platform team Web Platform te […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[あらま、TypeCスピーカーにもつなぐときにも表裏があるのか]]></title>
-        <id>hatenablog://entry/13574176438054157396</id>
-        <link href="https://katsumakazuyo.hatenablog.com/entry/2022/01/18/221725"/>
-        <updated>2022-01-18T13:17:25.000Z</updated>
-        <summary type="html"><![CDATA[バイクのヘルメットにはインカムをつけていますが、ツーリングをしないときには普通に音楽を聞いています。
-私のインカムはTypeCでスピーカーとつないでいるのですが、どうも、左右の音のバランスが悪い時があります。そこで、よくよく実験してみたところ
-「取扱説明書通りの方向につなげるとばっちりで、表裏を逆にすると左が大きく、右が小さく聞こえる」
-ということがわかりました。こちらが正しい方向。
-
-いやーーー、気づきませんでした。また忘れるかもしれないので、自分のためにもメモ書きでブログを残しておきます。
-ちなみに、２つ目のヘルメットはインカムのスピーカーは高いので、安いBluetoothのスピーカーをつないだら、やはり口元にマイクがくるのがうっとおしくて、B+Com Oneのスピーカーを買い直すことになったので、はじめから買えばよかったです。
-こんな感じで、つける方のヘルメットにインカムをつけかえて使います。上はシステムヘルメット、下はカーボンのフルフェイスです。フルフェイスは多少圧迫感があるので、高速道路に乗るときだけ使って、下道はシステムヘルメットにしています。]]></summary>
-        <author>
-            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JSer.info についてのアンケートを実施中です]]></title>
-        <id>https://efcl.info/2022/01/18/jser-info-survey/</id>
-        <link href="https://efcl.info/2022/01/18/jser-info-survey/"/>
-        <updated>2022-01-18T13:05:00.000Z</updated>
-        <summary type="html"><![CDATA[JSer.infoというJavaScriptの情報サイトを10年以上やっているのですが、2022-01-16 で11周年を迎えました。
-JSer.info 11周年: 目標は2025年までに交換可能にする、JSer.info アンケート - JSer.info
-リンク先の記事でも紹介しているのですが、JSer.infoについてのアンケートを実施中です。
-JSer.info 11周年アンケート
-https://forms.gle/Uzs3wgSrkUgYxWdr5
-5問ぐらいのアンケートなので、JSer.infoを見たことある人など是非答えてみてください！
-このアンケートの目的は、JSer.infoを2025年までに交換可能にするために、現状のJSer.infoがどう見られているかを把握する目的で実施しています。]]></summary>
-        <author>
-            <name>Web Scratch</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[20220118]]></title>
-        <id>https://note.com/dak/n/na700f4881fe2</id>
-        <link href="https://note.com/dak/n/na700f4881fe2"/>
-        <updated>2022-01-18T12:39:30.000Z</updated>
-        <summary type="html"><![CDATA[12時ごろ起きる
-灯油の移動販売車に2000円支払ったのち洗濯物を干す
-続きをみる]]></summary>
-        <author>
-            <name>okazsystem</name>
         </author>
     </entry>
 </feed>

@@ -3524,20 +3524,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438054157396",
-          "author": null,
-          "description": "バイクのヘルメットにはインカムをつけていますが、ツーリングをしないときには普通に音楽を聞いています。\n私のインカムはTypeCでスピーカーとつないでいるのですが、どうも、左右の音のバランスが悪い時があります。そこで、よくよく実験してみたところ\n「取扱説明書通りの方向につなげるとばっちりで、表裏を逆にすると左が大きく、右が小さく聞こえる」\nということがわかりました。こちらが正しい方向。\n\nいやーーー、気づきませんでした。また忘れるかもしれないので、自分のためにもメモ書きでブログを残しておきます。\nちなみに、２つ目のヘルメットはインカムのスピーカーは高いので、安いBluetoothのスピーカーをつないだら、やはり口元にマイクがくるのがうっとおしくて、B+Com Oneのスピーカーを買い直すことになったので、はじめから買えばよかったです。\nこんな感じで、つける方のヘルメットにインカムをつけかえて使います。上はシステムヘルメット、下はカーボンのフルフェイスです。フルフェイスは多少圧迫感があるので、高速道路に乗るときだけ使って、下道はシステムヘルメットにしています。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2022/01/18/221725",
-          "publishedOn": "2022-01-18T13:17:25.000Z",
-          "wordCount": 203,
-          "title": "あらま、TypeCスピーカーにもつなぐときにも表裏があるのか",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazuyomugi/20220118/20220118221317.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
         }
       ]
     },
@@ -5131,6 +5117,21 @@
       "feedUrl": "https://techlife.cookpad.com/rss",
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438083124211",
+          "author": null,
+          "description": "研究開発部の原島です。去年からはレシピサービス開発部も兼務しています。そちらの話（検索の話）はおいおいするとして、今日は研究開発部の話（機械学習の話）をします。\nfastText\n単語の分散表現、重要ですよね。ニューラル全盛期の現代において、使わないという選択肢はほとんどないように思います。\n最初に話題になったのは、2013 年に発表された word2vec でしょう。「king」のベクトルから「man」のベクトルを引き、「woman」のベクトルを足したら「queen」のベクトルになったという話は有名です。一方、最近は、2018 年に発表された BERT（及び、それに類するモデル）の話題で持ちきりですね。\nfastText は、ご存知の方も多いと思いますが、分散表現を学習するためのライブラリです。学習のアルゴリズム自体を指すこともあるように思います。fastText の論文は以下です。2017 年に発表されたものなので、発展が速いこの業界においてはもう古い論文なのかもしれません。\nEnriching Word Vectors with Subword Information. Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov.\nなぜ fastText なのか？\nクックパッドでは fastText をよく使っています。では、なぜ fastText なのでしょう？上でも触れたように、word2vec や BERT などの選択肢もあります。もちろん、fastText も主要な選択肢の一つではありますが、どうして fastText なのでしょうか？\n様々な理由がありますが、まとめると、「性能と運用のバランスがよい」といったところでしょうか。\n性能の面では、サブワード（部分文字列）が考慮できる分、word2ve…",
+          "link": "https://techlife.cookpad.com/entry/2022/04/18/093000",
+          "publishedOn": "2022-04-18T00:30:00.000Z",
+          "wordCount": null,
+          "title": "fastText in Cookpad",
+          "enclosure": {
+            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773",
+            "type": "",
+            "length": "0"
+          },
+          "imageUrl": null
+        },
         {
           "id": "hatenablog://entry/13574176438082239319",
           "author": null,
@@ -7048,15 +7049,6 @@
           "publishedOn": "2022-01-19T13:58:49.000Z",
           "wordCount": 58,
           "title": "20220119"
-        },
-        {
-          "id": "https://note.com/dak/n/na700f4881fe2",
-          "author": null,
-          "description": "12時ごろ起きる\n灯油の移動販売車に2000円支払ったのち洗濯物を干す\n続きをみる",
-          "link": "https://note.com/dak/n/na700f4881fe2",
-          "publishedOn": "2022-01-18T12:39:30.000Z",
-          "wordCount": 54,
-          "title": "20220118"
         }
       ]
     },
@@ -10364,16 +10356,6 @@
           "publishedOn": "2022-01-19T02:26:00.000Z",
           "wordCount": 103,
           "title": "GitHub Advisory DatabaseのRSSフィードを作った",
-          "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2022/01/18/jser-info-survey/",
-          "author": null,
-          "description": "JSer.infoというJavaScriptの情報サイトを10年以上やっているのですが、2022-01-16 で11周年を迎えました。\nJSer.info 11周年: 目標は2025年までに交換可能にする、JSer.info アンケート - JSer.info\nリンク先の記事でも紹介しているのですが、JSer.infoについてのアンケートを実施中です。\nJSer.info 11周年アンケート\nhttps://forms.gle/Uzs3wgSrkUgYxWdr5\n5問ぐらいのアンケートなので、JSer.infoを見たことある人など是非答えてみてください！\nこのアンケートの目的は、JSer.infoを2025年までに交換可能にするために、現状のJSer.infoがどう見られているかを把握する目的で実施しています。",
-          "link": "https://efcl.info/2022/01/18/jser-info-survey/",
-          "publishedOn": "2022-01-18T13:05:00.000Z",
-          "wordCount": 50,
-          "title": "JSer.info についてのアンケートを実施中です",
           "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
