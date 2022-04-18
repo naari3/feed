@@ -10392,16 +10392,6 @@
           "wordCount": 308,
           "title": "Komesan: 指定したURLに関連するはてなブックマーク、Twitter、HackerNewsのコメントを表示する",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2022/01/19/github-advisory-database-rss/",
-          "author": null,
-          "description": "GitHub Advisory DatabaseのRSSフィードがなかったの作りました\nJSON FeedとAtomフィードを出力しています。\n基本的にはJSON Feedをメインにしてますが、SlackがJSON FeedをサポートしてなかったのでAtomを追加しました。\nRSS Feeds for GitHub Advisory Database\nGitHub Advisory Databaseは、脆弱性のデータベースでRubyとかGoとかnpmとかRustとか言語ごとの脆弱性が集まっています。また、GitHub自体がセキュリティアドバイザリーの仕組みを持っているので、外部の脆弱性データベースにないものとかもあります。\nAbout GitHub Security Advisories - GitHub Docs\nJavaScriptだとnpm auditとかはこのデータベースを参照したりしています。\nGitHub Advisory Database now powers npm audit | The GitHub Blog\nRSS Feeds for GitHub Advisory Databaseでは言語(エコシステム)ごとそれぞれフィードを作っています。\nまた、OPMLフィードに対応してるRSSリーダならまとめて購読できます。(inoreaderなど)\n余談\nGraphQLでGitHub Advisory Databaseのデータを取得しているのですが、\nアドバイザリーをpublishした人を取る方法がよくわからなくてauthorが現在固定値になっています。\nこの辺わかる人Pull Requestください！\nhttps://github.com/azu/github-advisory-database-rss/blob/030a7bf9ab3fcc864bd0705ad4afa1f0601d7cbd/src/generate-rss.ts#L57-L81\n仕組み的にはGitHub Actionsで毎日RSSファイルを出力しているだけです。\nazu/github-advisory-database-rss: GitHub Advisory Database RSS Feeds.\n現在GitHub Advisory Databaseにある言語は個別でフィードを出力していますが、言語が増えたらPull Requestください！",
-          "link": "https://efcl.info/2022/01/19/github-advisory-database-rss/",
-          "publishedOn": "2022-01-19T02:26:00.000Z",
-          "wordCount": 103,
-          "title": "GitHub Advisory DatabaseのRSSフィードを作った",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
