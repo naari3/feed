@@ -1118,20 +1118,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20220330/20220330094159.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438054584858",
-          "author": null,
-          "description": "Chrome Web Store\nchrome.google.com\n使い方ですが、GitHub PR pageに次のようにCI statusにcheckboxが現れるので、完了通知がほしいCI statusにチェックをつけるだけ。\n\nチェックされたCI statusが完了（success or failure）になると、次のようなデスクトップ通知が出ます。この完了したときの通知をクリックすると該当のGitHub PR pageのタブをアクティブにします。\n\ntab idごとにcheck状態をもっているので、リロードしてもtabごとのcheck状態は維持されます。\n現在（v0.9.2）の機能はこれだけです。既知のバグとして、GitHubのPR画面で差分をみたりdiscussionに戻ったりしているとcheckboxが出ないことがありますが、そういう場合はリロードするとcheckboxが出ると思います。そのうち直します。\nRepository\ngithub.com\n実装はTypeScript、UI（といってもcheckboxだけですが）はReact、パッケージングはwebpackを使ってます。構造がちょっと面白い、そのあたりの詳細の話もそのうち書きます。\nなお、この \"WatchRaptor\" （ウォッチラプトル）という名前ですが、子供が恐竜にハマっているので \"watchdog\" （「番犬」）をもじって恐竜っぽい名前にしてみたという感じです。",
-          "link": "https://gfx.hatenablog.com/entry/2022/01/20/093521",
-          "publishedOn": "2022-01-20T00:35:21.000Z",
-          "wordCount": 143,
-          "title": "GitHub Pull-ReqでCIの完了をデスクトップ通知するChrome拡張 \"WatchRaptor\" を作った",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20220118/20220118214310.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -5686,6 +5672,16 @@
       "feedUrl": "https://note.com/aesthetic_milo/rss",
       "siteUrl": "https://note.com/aesthetic_milo",
       "articles": [
+        {
+          "id": "https://note.com/aesthetic_milo/n/n680b291f1e5c",
+          "author": null,
+          "description": "学校に行った\n登校時間自己ベスト出た\n今日から早めに家出て学校でちょっと勉強することにした\n帰ってきてからDLsite漁ってて全然勉強しなかった\n続きをみる",
+          "link": "https://note.com/aesthetic_milo/n/n680b291f1e5c",
+          "publishedOn": "2022-04-19T13:15:12.000Z",
+          "wordCount": null,
+          "title": "2022/04/19(火)",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/76785405/rectangle_large_type_2_ee61e2e4712d2b0a5bb84517d1ff5d0e.png?width=800"
+        },
         {
           "id": "https://note.com/aesthetic_milo/n/n65a3042bd101",
           "author": null,
