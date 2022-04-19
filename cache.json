@@ -5123,6 +5123,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438084085883",
+          "author": null,
+          "description": "クックパッドマートでバックエンドエンジニアをしている奥薗 ( @mokuzon ) です。クックパッドマートは生鮮食品の EC サービスで、商品を届ける流通を内製しています。そんなクックパッドマート流通にエンジニアがどう貢献しているかを今日から 4 日連続でご紹介していきます。\n今回はクックパッドマートの裏側の流通がどんな要素で構成されているかを一気にご紹介します。このエントリを読んでおくと今後クックパッドマートの関連エントリを読むときにより具体的にイメージしやすくもなると思います。\n項目が多いので全体を俯瞰しやすいよう目次を貼っておきます。\nクックパッドマートについて\nクックパッドマートの流通\n資材\nコンテナ\nシッパー\nラベル\nドライバー\n拠点\nステーション\nハブ\nローカルスポット\nルート\nステーション便\nハブ便\n出荷サポート便\nタイムライン\nアプリケーション\nドライバー向けアプリケーション\nクックパッドスタッフ向け admin\nラベル\n温度監視\nおわりに\n2022年クックパッドマート連載の他のエントリ\nクックパッドマートについて\nクックパッドマートは 2018 年 9 月 20 日にリリースされた生鮮食品の EC プラットフォームです。リリースから 3 年以上経ち、新規事業ならではのスピードを維持しつつサービス拡大のため試行錯誤を日々続けています。\nhttps://cookpad-mart.com/\nクックパッドマートは iOS と Android の専用アプリと、最近ではクックパッドのレシピアプリでも利用可能になっています。このアプリで商品を購入して、近所の受け取り場所 ( ステーションと呼んでいます ) で受け取れます。有料で自宅配送するオプションもあります。\n\n取り扱っている商品はクックパッドが生産・在庫を持っているわけではありません。市場の卸売業者の方々、農家の…",
+          "link": "https://techlife.cookpad.com/entry/cookpad-mart-distribution-2022",
+          "publishedOn": "2022-04-19T01:59:25.000Z",
+          "wordCount": null,
+          "title": "クックパッド生鮮 EC お届けの裏側 2022 年版",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/mokuzon/20220418/20220418171746.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/mokuzon/20220418/20220418171746.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438083124211",
           "author": null,
           "description": "研究開発部の原島です。去年からはレシピサービス開発部も兼務しています。そちらの話（検索の話）はおいおいするとして、今日は研究開発部の話（機械学習の話）をします。\nfastText\n単語の分散表現、重要ですよね。ニューラル全盛期の現代において、使わないという選択肢はほとんどないように思います。\n最初に話題になったのは、2013 年に発表された word2vec でしょう。「king」のベクトルから「man」のベクトルを引き、「woman」のベクトルを足したら「queen」のベクトルになったという話は有名です。一方、最近は、2018 年に発表された BERT（及び、それに類するモデル）の話題で持ちきりですね。\nfastText は、ご存知の方も多いと思いますが、分散表現を学習するためのライブラリです。学習のアルゴリズム自体を指すこともあるように思います。fastText の論文は以下です。2017 年に発表されたものなので、発展が速いこの業界においてはもう古い論文なのかもしれません。\nEnriching Word Vectors with Subword Information. Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov.\nなぜ fastText なのか？\nクックパッドでは fastText をよく使っています。では、なぜ fastText なのでしょう？上でも触れたように、word2vec や BERT などの選択肢もあります。もちろん、fastText も主要な選択肢の一つではありますが、どうして fastText なのでしょうか？\n様々な理由がありますが、まとめると、「性能と運用のバランスがよい」といったところでしょうか。\n性能の面では、サブワード（部分文字列）が考慮できる分、word2ve…",
@@ -7055,15 +7070,6 @@
           "publishedOn": "2022-01-20T12:50:57.000Z",
           "wordCount": 54,
           "title": "20220120"
-        },
-        {
-          "id": "https://note.com/dak/n/nb77275919760",
-          "author": null,
-          "description": "午前中はクソゲーについて調べていた　いっきはオンラインで仲間と一緒に協力できれば面白いと思った　action52はBGMがなかなか良くてみんなも聴いてほしい\n続きをみる",
-          "link": "https://note.com/dak/n/nb77275919760",
-          "publishedOn": "2022-01-19T13:58:49.000Z",
-          "wordCount": 58,
-          "title": "20220119"
         }
       ]
     },
@@ -11995,6 +12001,21 @@
       "feedUrl": "https://naari3.github.io/mangacross-rss/yabai/feed.xml",
       "siteUrl": "https://mangacross.jp/comics/yabai/",
       "articles": [
+        {
+          "id": "https://mangacross.jp/comics/yabai/100",
+          "author": "桜井のりお",
+          "description": "",
+          "link": "https://mangacross.jp/comics/yabai/100",
+          "publishedOn": "2022-04-19T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Karte.95 | 僕らは反省した",
+          "enclosure": {
+            "url": "https://mangacross.jp/images/episode/rAqm8_PFmHc-ppZZ97Gbq9kDjSviiDNaxQiSsjY0k1M/episode_thumbnail/thumb_double.png?1650001315",
+            "length": "59472",
+            "type": "image/png"
+          },
+          "imageUrl": "https://mangacross.jp/images/episode/rAqm8_PFmHc-ppZZ97Gbq9kDjSviiDNaxQiSsjY0k1M/episode_thumbnail/thumb_double.png?1650001315"
+        },
         {
           "id": "https://mangacross.jp/comics/yabai/99",
           "author": "桜井のりお",
