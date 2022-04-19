@@ -391,6 +391,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438084211224",
+          "author": null,
+          "description": "github.com\nRails Guideで、primary_keyまわりの説明で必要のない記述が残っていたので、削除した。migrationでprimary_keyを設定したらモデルでも変更が必要と書かれていたけど、モデルへの変更は必要なくなっていた。\nもともとは日本語版で「その場合は必ず対応するモデル名を変更してください」と書かれていて、「モデル名を変更する必要はないよなあ」と引っかかったのがきっかけだった。\n動作確認のために実際にmigrationを作ったら、モデルにprimary_keyを書かなくても主キーが判定されているのに気がついて、そもそもこの記述は必要ないということに気がついたのだった。\nどうやら10年以上前から必要のなくなっていた記述みたいで面白かった。\ngithub.com\n↑の変更を日本語版にも当てた。\ngithub.com\nRails Guideを読んでいて、syntax highlightがあたっていないコードブロックが1つだけあったのでハイライトが効くようにした。\ngithub.com\n日本語版Rails Guideの訳を少し直した。\n\nこみっくがーるず　８巻 (まんがタイムKRコミックス)\n\n作者:はんざわかおり\n芳文社\nAmazon\n\nこみっくがーるず 8巻読んだ。良い。かおすの成長が少しずつ見えるたび、うるっときてしまう。編沢さん好き。",
+          "link": "https://commits.hatenablog.com/entry/2022/04/19/100003",
+          "publishedOn": "2022-04-19T01:00:03.000Z",
+          "wordCount": 166,
+          "title": "2022-04-18",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51M8MXDiIdL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51M8MXDiIdL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438083560223",
           "author": null,
           "description": "github.com\nRails Guideの日本語版を読んでいて、微妙な訳を見つけたので修正した。",
@@ -10556,6 +10571,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml/",
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
+        {
+          "id": "20750",
+          "author": null,
+          "description": "こんにちは。メルペイCash I/Oチームのshota sugiuraです。 これはMerpay Tech Openess Month 2022の12日目の記事です。 本記事では、振込申請機能のデータマイグレーションの振 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220418-ab49e2d2f9/",
+          "publishedOn": "2022-04-19T10:00:07.000Z",
+          "wordCount": null,
+          "title": "振込申請のデータマイグレーションを振り返る",
+          "imageUrl": null
+        },
         {
           "id": "20655",
           "author": null,

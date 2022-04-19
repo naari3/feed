@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-19T00:02:55.776Z</updated>
+    <updated>2022-04-19T01:29:38.577Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[振込申請のデータマイグレーションを振り返る]]></title>
+        <id>20750</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220418-ab49e2d2f9/"/>
+        <updated>2022-04-19T10:00:07.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルペイCash I/Oチームのshota sugiuraです。 これはMerpay Tech Openess Month 2022の12日目の記事です。 本記事では、振込申請機能のデータマイグレーションの振 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022-04-18]]></title>
+        <id>hatenablog://entry/13574176438084211224</id>
+        <link href="https://commits.hatenablog.com/entry/2022/04/19/100003"/>
+        <updated>2022-04-19T01:00:03.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+Rails Guideで、primary_keyまわりの説明で必要のない記述が残っていたので、削除した。migrationでprimary_keyを設定したらモデルでも変更が必要と書かれていたけど、モデルへの変更は必要なくなっていた。
+もともとは日本語版で「その場合は必ず対応するモデル名を変更してください」と書かれていて、「モデル名を変更する必要はないよなあ」と引っかかったのがきっかけだった。
+動作確認のために実際にmigrationを作ったら、モデルにprimary_keyを書かなくても主キーが判定されているのに気がついて、そもそもこの記述は必要ないということに気がついたのだった。
+どうやら10年以上前から必要のなくなっていた記述みたいで面白かった。
+github.com
+↑の変更を日本語版にも当てた。
+github.com
+Rails Guideを読んでいて、syntax highlightがあたっていないコードブロックが1つだけあったのでハイライトが効くようにした。
+github.com
+日本語版Rails Guideの訳を少し直した。
+
+こみっくがーるず　８巻 (まんがタイムKRコミックス)
+
+作者:はんざわかおり
+芳文社
+Amazon
+
+こみっくがーるず 8巻読んだ。良い。かおすの成長が少しずつ見えるたび、うるっときてしまう。編沢さん好き。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[海辺のエンジニア]]></title>
         <id>https://r7kamura.com/articles/2022-04-19-ride-on-the-wave</id>
