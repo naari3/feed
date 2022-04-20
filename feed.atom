@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-20T03:30:21.249Z</updated>
+    <updated>2022-04-20T04:17:25.553Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,20 @@
         <summary type="html"><![CDATA[こんにちは。メルペイTnS(Trust and Safety)チームのソフトウェアエンジニア孫星越（@singyue）です。この記事は、Merpay Tech Openness Month 2022 の13日目の記事です […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[エッセイ:MSペイント文化が失われて気づいたこと]]></title>
+        <id>https://note.com/sizes/n/nd9198cdb6ab7</id>
+        <link href="https://note.com/sizes/n/nd9198cdb6ab7"/>
+        <updated>2022-04-20T04:02:37.000Z</updated>
+        <summary type="html"><![CDATA[「マウスで描いたので下手です」という言い訳は、ミレニアル世代に生まれた人ならピンとくるのではないか。お絵描き初心者の人がpixivとかニコニコ静画で発表するときに顔を赤らめながら言う、アレです。
+さて、「スマホと指で描いたので下手です」、というのが当世バージョンなんですけれど、これ不思議とあんまり見ないんですよね。マウスで描いて上手い人って見かけるのが難しかったのですけれど、スマホと指で描いたのに上手い人ってすぐ目に入っちゃいますからね。実際にスマホと指で描いてたらそういうグループに取り込まれやすいし。
+今の世代ってパソコンあんまりいじらないから、マウスでお絵描きすることもないんですよね。あと、誰でもお絵描きで本格志向を持ってるってのもありますね。お絵描きが好きな人なら、美術的な要素を取り入れて・ちゃんと下書きして描いて当たり前……という時代。
+
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
         </author>
     </entry>
     <entry>
@@ -17301,18 +17315,6 @@ The post リップシンク支援Pythonスクリプト RPPtoEXO(Lyric) (REAPER�
 以上。]]></summary>
         <author>
             <name>kaikityouの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How I run my servers]]></title>
-        <id>https://blog.wesleyac.com/posts/how-i-run-my-servers</id>
-        <link href="https://blog.wesleyac.com/posts/how-i-run-my-servers"/>
-        <updated>2022-01-20T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I've been writing recently about servers and internet infrastructure1. A lot of this writing is predicated on running server software on a VM or physical machine, rather than using a more cloudy solution, which is somewhat unpopular these days. However, I think it's a pretty reasonable way to do things, and it's not as difficult as many people make it out to be. This post is a simple description of how I run most of the servers I operate. It mostly describes running server software that I've written myself, since that allows me to make it much more robust and easy to deploy than the vast majority of off-the-shelf software is.
-This describes roughly the setup for thoughts.page, hanabi.site, cgmserver, phonebridge, and a few other services.
-These apps run on DigitalOcean VMs — the $5/month t…]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
 </feed>

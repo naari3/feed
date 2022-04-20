@@ -8308,6 +8308,16 @@
       "siteUrl": "https://note.com/sizes",
       "articles": [
         {
+          "id": "https://note.com/sizes/n/nd9198cdb6ab7",
+          "author": null,
+          "description": "「マウスで描いたので下手です」という言い訳は、ミレニアル世代に生まれた人ならピンとくるのではないか。お絵描き初心者の人がpixivとかニコニコ静画で発表するときに顔を赤らめながら言う、アレです。\nさて、「スマホと指で描いたので下手です」、というのが当世バージョンなんですけれど、これ不思議とあんまり見ないんですよね。マウスで描いて上手い人って見かけるのが難しかったのですけれど、スマホと指で描いたのに上手い人ってすぐ目に入っちゃいますからね。実際にスマホと指で描いてたらそういうグループに取り込まれやすいし。\n今の世代ってパソコンあんまりいじらないから、マウスでお絵描きすることもないんですよね。あと、誰でもお絵描きで本格志向を持ってるってのもありますね。お絵描きが好きな人なら、美術的な要素を取り入れて・ちゃんと下書きして描いて当たり前……という時代。\n\n続きをみる",
+          "link": "https://note.com/sizes/n/nd9198cdb6ab7",
+          "publishedOn": "2022-04-20T04:02:37.000Z",
+          "wordCount": 47,
+          "title": "エッセイ:MSペイント文化が失われて気づいたこと",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/76819305/rectangle_large_type_2_23978227d15cf80bbf051f86689c6588.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/sizes/n/n841cc8552132",
           "author": null,
           "description": "君が 想う そのままのこと\n歌う 誰か 見つけても\nすぐに恋に落ちてはダメさ\n「お仕事でやってるだけかもよ」\n林檎もぎれビーム！\n林檎もぎれビーム！は僕の大好きな歌です。社会不適合者の孤独感や抑鬱を代弁することを、「それも仕事のうち」と容赦無くネタばらしする。けれどもネタバレから攻撃や冷笑に敷衍するわけでもなく、こう訴えかける。\n続きをみる",
@@ -10066,16 +10076,6 @@
           "publishedOn": "2022-01-23T16:00:00.000Z",
           "wordCount": 1688,
           "title": "The Curse of NixOS",
-          "imageUrl": null
-        },
-        {
-          "id": "https://blog.wesleyac.com/posts/how-i-run-my-servers",
-          "author": null,
-          "description": "I've been writing recently about servers and internet infrastructure1. A lot of this writing is predicated on running server software on a VM or physical machine, rather than using a more cloudy solution, which is somewhat unpopular these days. However, I think it's a pretty reasonable way to do things, and it's not as difficult as many people make it out to be. This post is a simple description of how I run most of the servers I operate. It mostly describes running server software that I've written myself, since that allows me to make it much more robust and easy to deploy than the vast majority of off-the-shelf software is.\nThis describes roughly the setup for thoughts.page, hanabi.site, cgmserver, phonebridge, and a few other services.\nThese apps run on DigitalOcean VMs — the $5/month t…",
-          "link": "https://blog.wesleyac.com/posts/how-i-run-my-servers",
-          "publishedOn": "2022-01-20T16:00:00.000Z",
-          "wordCount": 1097,
-          "title": "How I run my servers",
           "imageUrl": null
         }
       ]
