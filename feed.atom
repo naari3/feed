@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-21T21:02:19.974Z</updated>
+    <updated>2022-04-21T22:01:47.087Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Navigation API による「JS での画面遷移」と SPA の改善]]></title>
+        <id>https://blog.jxck.io/entries/2022-04-22/navigation-api.html</id>
+        <link href="https://blog.jxck.io/entries/2022-04-22/navigation-api.html"/>
+        <updated>2022-04-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[従来の History API を改善する Navigation API の仕様策定と実装が進んでいる。これは、 History API の使いにくかった部分を補うだけではなく、「JS で画面遷移をする」という現状のミッシングピースに取り組み、 SPA が抱える多くの問題だけでなく、 MPA すら改善する可能性のある API だ。この API の目的と仕様を解説しつつ、実装のメモを残す。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[JS を wasm 化とは何か、あるいは不正確な情報]]></title>
         <id>https://blog.ojisan.io/why-javy</id>
@@ -17245,31 +17255,6 @@ NHK主催「ベストアニメ100」にて38位になった幻の謎アニメ『
 自動で無駄…]]></summary>
         <author>
             <name>僕とネットショッピング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[20220122]]></title>
-        <id>https://note.com/dak/n/n097e3b321b05</id>
-        <link href="https://note.com/dak/n/n097e3b321b05"/>
-        <updated>2022-01-22T09:34:06.000Z</updated>
-        <summary type="html"><![CDATA[誕生日おめでとうございました　祝いが出現した
-ツイッター風船飛んでないやんけ　飛んでましたすいません
-インターネットのみんな祝ってくれてありがとう　祝ってくれてありがとう　帰れ
-続きをみる]]></summary>
-        <author>
-            <name>okazsystem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エッセイ：そんな役に立たない考えするなよ]]></title>
-        <id>https://note.com/sizes/n/n06c4f7775865</id>
-        <link href="https://note.com/sizes/n/n06c4f7775865"/>
-        <updated>2022-01-22T09:01:17.000Z</updated>
-        <summary type="html"><![CDATA[死は、生より優れた状態のように思える。これは僕以外のおおくのひとが感じてることで、死や自殺を寿ぐ態度はあまたある。
-希死念慮を抱くひとは、死に対する素朴な憧憬に基づいているのだと思う。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>

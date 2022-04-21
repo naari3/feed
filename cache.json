@@ -7029,15 +7029,6 @@
           "publishedOn": "2022-01-23T10:19:19.000Z",
           "wordCount": 46,
           "title": "20220123"
-        },
-        {
-          "id": "https://note.com/dak/n/n097e3b321b05",
-          "author": null,
-          "description": "誕生日おめでとうございました　祝いが出現した\nツイッター風船飛んでないやんけ　飛んでましたすいません\nインターネットのみんな祝ってくれてありがとう　祝ってくれてありがとう　帰れ\n続きをみる",
-          "link": "https://note.com/dak/n/n097e3b321b05",
-          "publishedOn": "2022-01-22T09:34:06.000Z",
-          "wordCount": 74,
-          "title": "20220122"
         }
       ]
     },
@@ -9324,15 +9315,6 @@
           "publishedOn": "2022-01-23T10:43:16.000Z",
           "wordCount": 44,
           "title": "エッセイ:知識と道徳"
-        },
-        {
-          "id": "https://note.com/sizes/n/n06c4f7775865",
-          "author": null,
-          "description": "死は、生より優れた状態のように思える。これは僕以外のおおくのひとが感じてることで、死や自殺を寿ぐ態度はあまたある。\n希死念慮を抱くひとは、死に対する素朴な憧憬に基づいているのだと思う。\n続きをみる",
-          "link": "https://note.com/sizes/n/n06c4f7775865",
-          "publishedOn": "2022-01-22T09:01:17.000Z",
-          "wordCount": 43,
-          "title": "エッセイ：そんな役に立たない考えするなよ"
         }
       ]
     },
@@ -9951,6 +9933,16 @@
       "feedUrl": "https://blog.jxck.io/feeds/atom.xml",
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
+        {
+          "id": "https://blog.jxck.io/entries/2022-04-22/navigation-api.html",
+          "author": null,
+          "description": "従来の History API を改善する Navigation API の仕様策定と実装が進んでいる。これは、 History API の使いにくかった部分を補うだけではなく、「JS で画面遷移をする」という現状のミッシングピースに取り組み、 SPA が抱える多くの問題だけでなく、 MPA すら改善する可能性のある API だ。この API の目的と仕様を解説しつつ、実装のメモを残す。",
+          "link": "https://blog.jxck.io/entries/2022-04-22/navigation-api.html",
+          "publishedOn": "2022-04-22T00:00:00.000Z",
+          "wordCount": 1674,
+          "title": "Navigation API による「JS での画面遷移」と SPA の改善",
+          "imageUrl": "https://blog.jxck.io/assets/img/jxck.png"
+        },
         {
           "id": "https://blog.jxck.io/entries/2022-03-06/markdown-style-table-css.html",
           "author": null,
