@@ -98,6 +98,65 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">クックパッドマート最難解ロジック!?「採番」</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/cookpad-mart-assignments-2022" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>クックパッドマート流通基盤アプリケーション開発グループでバックエンドエンジニアをしている奥薗 ( @mokuzon )です。今日まで 4 日間連載でクックパッドマートの流通についてご紹介してきました。最後のこのエントリーではマート内で 1,2 を争う難解かつ重要な処理と言われている「採番」についてご紹介します。
+先に クックパッド生鮮 EC お届けの裏側 2022 年版  を読むとよりイメージがつきやすいです。
+採番とは
+マートでは
+商品はハブという大規模拠点に出荷され
+ハブ便でハブからハブへ移動し
+ステーション便でハブからステーションと呼ばれる拠点に移動して
+ユーザーはステーションに商品を受け取りに行く
+というのが基本の流通になっています。
+マート流通の概略図
+採番とは、この商品がどのようなスケジュールで出荷されどういった経路でユーザーまで運ばれるかを計画する処理です。多くは注文時にオンラインで、一部特定時刻にバッチ処理で行っています。
+出荷された商品やそれが入ったコンテナには以下のようなラベルが貼られています。
+
+枠で囲った部分は実際のハブとステーションにある番地名です。商品の配送計画をするにあたってこのように番地などを決定していくため「採番」と呼ばれています。
+この採番はドメイン知識の集合体かつ非常に手続き的な処理のため、物理的な流通の仕組みが大きく変わるとこの採番もほぼ作り直しになるなど、改善も含めてこれまでに 3 回リプレースしました。
+なかなかに難解な処理でずっと職人と呼ばれる人たちの独断場でしたが、3 年強の運用で大分こなれて勝ちパターンが見えてきたのでこのタイミングでご紹介することにしました。
+なにが難しいか
+ひとえにマート流通のあらゆるドメイン知識が詰め込まれていることです。3 日かけてマート流通を紹介してきましたが、これだけでも複雑ですし、実際には紹介し…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mokuzon/20220422/20220422105215.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
+              rel="noopener">自由さ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">エッセイ：大日照りのもと太陽になり始める奴がインターネットで勝つ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n25e83de9bff3" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>中国の陰陽五行説には、丙という概念がある。これは陽性の火を表していて、太陽に擬えられる。陰陽五行説の世界観では丙はなんでも一つだけあるのが望ましいとされ、たとえば占いや風水で丙の要素がダブると太陽が二つある絵となって、不和が起きやすいとされている。
+インターネットは、いつも太陽が集まっている。あまりにも我が強すぎるインフルエンサーが一般人のTLを牛耳って、意識あるものを焼き尽くさんばかりに照らしあってる。
+続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/76943827/rectangle_large_type_2_d029de29d139e7cfccc5e190cc4a6ca2.png?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
               rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
           <section class="articles-per-source">
@@ -25395,70 +25454,11 @@ kawaii pic.twitter.com/MzwVqPFUXd
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/majirishigeri" target="_blank"
-              rel="noopener">KZ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">現代のオフ会について考える</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/majirishigeri/n/nf8ca46c42098" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>読み始める前に、こちらをBGMにしてこのnoteをご覧ください。
-各画像にもリンクが埋め込まれている場合があるので
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://8181chttest.hatenablog.com/" target="_blank"
-              rel="noopener">汁を染みこませるんだ！ ～落書きメモ～ (2代目)</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">発掘の終着点？幻のアニメ『星の子ポロン』『ガンとゴン』ベースとなる全貌がついに判明【22/01/22】</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://8181chttest.hatenablog.com/entry/2022/01/22/224428" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Q.まず『星の子ポロン』とは？
-A.ザックリ言うとこういう超展開のカルトアニメとよく言われてるらしい作品です。
-(大百科記事リンク)
-
-▲ケフィアさんに新たに作っていただきました
-NHK主催「ベストアニメ100」にて38位になった幻の謎アニメ『星の子ポロン』の目撃情報などを募集中です。一部で大変熱い盛り上がりの作品ですが、権利者も不明で全260話あるらしいのに一部しか見つかっていません…！https://t.co/rOx2ogwFbi [まとめWiki] pic.twitter.com/ro7PBxWsNy
-2017年5月3日
-
-▲人気エピソード集めた動画
-未解明の情報があまりにも膨大なため、『星の子ポロン』が好きな一部ファンによって盛んに研究活動や関連放送が行われています。
-
- 
-お久しぶりです…前回の記事から1年半振り？うん、多分それぐらい経ってる…。
- 
-さて、ポロ生でも紹介がされたと思いますが…『星の子ポロン』や『ガンとゴン』といった時報アニメに関しましてですね…とんでもないものが発掘されてしまいましたので、今回は主にそれらをご紹介させていただきたいなと思っています。正直、まとめきれるかどうか心配なぐらいに情報量がめっちゃ多いです。
-今回判明した情報は、前々から様々な要因で「推測」という形で既に存在していた事項が多いです。ですが、今回それが「確証」に変わるような事態が起きたので、調査している身としては、『星の子ポロン』『ガンとゴン』発掘の根本がある意味では覆されてしまうといった感じです。そこまでハードル上げる！？
- 
-本題に入る前に1件、告知をさせてください。わりと大事なので。
-既にご存知の方もいると思いますが、俺がちょうど6年前から不定期に書き始めた「星の子ポロンを発掘しよう」シリーズ(ポロン以外の記事含む)は、ニコニコのユーザーブロマガサービス終了に伴い、先日こ…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nbuu2000cht/20220120/20220120190150.jpg" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-22T01:29:38.835Z">2022-04-22T01:29:38.835Z</time>
+    <time id="build-timestamp" datetime="2022-04-22T02:46:33.349Z">2022-04-22T02:46:33.349Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
