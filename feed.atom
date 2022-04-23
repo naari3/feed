@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-23T19:01:56.871Z</updated>
+    <updated>2022-04-23T20:02:19.944Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[React ユーザー向けの NextJS チュートリアル]]></title>
+        <id>https://blog.ojisan.io/next-tutorial-for-react-user</id>
+        <link href="https://blog.ojisan.io/next-tutorial-for-react-user"/>
+        <updated>2022-04-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[最近 NextJS のチュートリアルを担当することがあったり、これからもあるので資料として記事をしたためておこうと思う。
+対象は、React は知っているけどこれから Next を学ぼうとする人が想定。
+つまり React 単体と Next の差分をまとめる。 React…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[fcitx-skkで変換/無変換キーで日本語/ラテンを切り替える]]></title>
         <id>https://KeenS.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/</id>
@@ -163,6 +175,16 @@ FKA twigs - Tears In The Club (feat. The Weeknd)]]></summary>
 続きをみる]]></summary>
         <author>
             <name>moroishimasaoki</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[月報、あるいはサボり日記]]></title>
+        <id>https://blog.ojisan.io/this-month-202204</id>
+        <link href="https://blog.ojisan.io/this-month-202204"/>
+        <updated>2022-04-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[タイトルに「、あるいは」って入れるのハマっていました。 昨日は久々にブログ書いたけど、ここ一ヶ月くらい更新していなかったから最近何をしていたのか言い訳を書こうと思います。 エルデンリング 2/24 からやり始めているのでいうてここ…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -17176,32 +17198,6 @@ PS5は持っていない↩]]></summary>
 直前のご連絡となりご迷惑をおかけしますが、ご理解いただけますと幸いです。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[0->1 サービス開発者の慣れないインデックス貼り]]></title>
-        <id>hatenablog://entry/13574176438056098498</id>
-        <link href="https://www.bokukoko.info/entry/2022/01/24/163323"/>
-        <updated>2022-01-24T07:33:23.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-本記事は、普段アプリケーションエンジニアとして 0->1 でのサービス開発をやってきて、クエリ処理が重くなってどうしたものかという状況へ達した際に考えたいことをまとめてみる。
-インフラエンジニアか自分でやるか
-まず、サービスを0から開始して、DB が重たく感じるくらいには たくさんのユーザーが使われる Web, スマホ アプリとなっておめでとう！ここまで来られただけで、本当に素晴らしい 0->1 エンジニアだと断言できよう。
-さて、DB のクエリ処理が重たいと感じるくらい使われるようになったら、そこで 0->1 エンジニアの役割は終わりとなるのか。
-大抵の 0->1 エンジニアの場合、答えは Yes となる。なぜならこうした運用作業は、未経験の領域で、それより新しいものをどんどんと開発していくのが好きなエンジニアだからである。
-「次開発するサービスのフレームワークは、最近流行ってる〇〇を使おう！」
-「それでブログ書いたらまたバズるぜ、ウヒヒ」
-そんなことを企む素晴らしい意欲がある。
-さて、そんな 0->1 エンジニア を繰り返すと、あることに気づいてくる。
-「このサービスを最初に作ったけど、それが金額としてなぜ戻ってこないのか」
-「もっと評価されるべきじゃないの」
-と。この点が  0->1 エンジニア の勘違いしやすいポイントとなっていることは間違いない。
-"サービス開発をしてそれなりにユーザー来て、今後成長していく見込みもある" という状態だけでは、残念ながらまだお金を払っていただけるたくさんのユーザーを得られていない。
-だからこそ、サービスが中規模になってきてもしっかりと運用ができるようになるエンジニアとなることが必要だ。つまり、DB が重くなってきたら、"自分" がその DB を最適化させていく必要がある。
-インデックスをしっかりと理…]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>
