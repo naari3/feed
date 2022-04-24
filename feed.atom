@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-24T20:02:24.053Z</updated>
+    <updated>2022-04-24T21:01:51.135Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17349,31 +17349,6 @@ pic.twitter.com/DysBR5wvJh
 続きをみる]]></summary>
         <author>
             <name>okazsystem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scratchで再帰関数の実装とメモ化をやってみた]]></title>
-        <id>hatenablog://entry/13574176438056495960</id>
-        <link href="https://kmizu.hatenablog.com/entry/2022/01/25/172634"/>
-        <updated>2022-01-25T08:26:34.000Z</updated>
-        <summary type="html"><![CDATA[最近、初学者へのプログラミング教育というテーマについて取り組むことが増えて来たこともあって、ちょくちょくScratchを触ってます。Scratch、教育用途のプログラミング言語としてとってもよく出来ていますし、全世界のScratcher（？）と作品を共有できるようなプラットフォームとしても実に素晴らしいのですが、個人的に不満なところが一つあります。ブロック（普通の言語でいう関数相当）が返り値を持つことができない点です。
-もちろん、Scratchの作者が教育上の配慮としてあえてブロックの返り値という概念を削除したのは想像に難くありません。しかしながら、そのままだと素朴には再帰関数を書けない。
-　しんどい。
-さらに、ブロックローカル変数もない。
-　しんどい。
-というわけで、Scratchの「リスト」を使って、
-返り値を格納するスタック
-オペランドスタック
-　をエミュレートするプログラムを書いてみました。
-フィボナッチ数を計算（メモ化）
-　例題は再帰関数でありがちなフィボナッチ数を計算するやつです。ついでに、メモ化も実装してみました。しかし、こうしてみると、オペランドスタックや返り値のスタックが変化していく様子が可視化されて、これはこれで別の意味で再帰関数の仕組みを教えるのに教育上良いツールになるかもしれませんね（ならない）。
-　なお、Scratchのコードは以下から見ることができますのでご自由にお使いください。
-
-
-
-https://scratch.mit.edu/projects/633061865]]></summary>
-        <author>
-            <name>kmizuの日記</name>
         </author>
     </entry>
 </feed>
