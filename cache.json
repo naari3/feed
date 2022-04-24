@@ -909,20 +909,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438056128653",
-          "author": null,
-          "description": "最近はずっと原神をやっている。\n一時期英語音声でやっていたのだけど、女主人公の通常攻撃を出していると時々「nya!」って言うのが可愛かった。\niPad にディスプレイとPS5コントローラー1をつないでプレイしている。前はPS4でプレイしていたのだけど、iPadのほうがファストトラベルやメニューが軽くて快適。\nただ、微妙にコントローラーの反応が悪くて(？)操作しづらいことが時々ある。\niPad のタッチパネル操作は、かなりきつい。タッチパネルでは探索派遣の回収をするとかそういうのしかやりたくない。\ngithub.com\nしばらく前にruby-jpでrbsのC extensionがビルドされていないというエラーが出るという話を見たので、bin/setupでビルドするようにしてみた。\ngithub.com\ngem_rbs_collectionでcode owners機能を使うぞと色々整備している。論理できたので、これからPRの説明を書いたりドキュメントを書いたり設定したりする。\nPS5は持っていない↩",
-          "link": "https://commits.hatenablog.com/entry/2022/01/25/100004",
-          "publishedOn": "2022-01-25T01:00:04.000Z",
-          "wordCount": 159,
-          "title": "2022-01-24",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -1233,6 +1219,21 @@
       "feedUrl": "https://honeshabri.hatenablog.com/rss",
       "siteUrl": "https://honeshabri.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438085586681",
+          "author": null,
+          "description": "noteで有料の定期購読マガジンを始めた。\n定期購読マガジンはじめました\n読者ファーストで考える\n収益を増やす手段の検討\nPV単価と広告\nPVを伸ばすには\nはてブの限界\n定期購読マガジンの役割\n来そうな質問に対する答え\n購読してね\n定期購読マガジンはじめました\n2週間前からnoteで有料の定期購読マガジンを始めた。\n\n概要としては以下の通りだ。\n内容：主に最近読んだ本の感想、その他コンテンツの感想、ブログのこぼれ話\n分量：一記事あたり1,000文字前後\n頻度：目標は週に5回、最低でも週に2回、実績は毎日\n料金：マガジン購読は500円/月で初月無料、単記事は100円で返金申請を受け付ける*1\n理由：金\n始めた理由を端的に言えば「金」の一文字となるが、それは誰もが同じなので情報量は0に等しい。なのでこの記事では、なぜ今さら定期購読マガジンを始めるに至ったのか、この「本しゃぶり」の扱いはどうするのかなどについて書いていく。俺は多くの人に購読者となってほしいが、それは納得の上で決めてほしいと思っているので。\n読者ファーストで考える\nネットでの活動でもっと金を稼ぎたいと思ったのは、今に始まったことではない。このブログを書いていてずっと思い続けたことである。しかし、金になるなら何でもするというのは、違うと考えていた。ブログを続けるほどに、読者ファーストで考えるべきであろう、と。\nまず理念の観点から言えば、クソみたいな記事を書きたくないというのがある。そもそも俺が「本しゃぶり」を始めた理由の一つは、「クソみたいな記事がホッテントリにあるのが気に食わない」ためだ。単純に not for me なら許せるが、興味のあるジャンルで低品質は腹が立つ。「こんなのがブクマされるなら、俺が書いたほうがマシ」そう考えてブログを始めたのだ。ゆえに俺基準でクソみたいな記事を作ってしまうと、当初の理念に反して…",
+          "link": "https://honeshabri.hatenablog.com/entry/honeshabri-epistles",
+          "publishedOn": "2022-04-24T12:16:47.000Z",
+          "wordCount": 324,
+          "title": "有料定期購読マガジンに屈しました",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20191229/20191229143057.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20191229/20191229143057.jpg"
+        },
         {
           "id": "hatenablog://entry/13574176438081593555",
           "author": null,
@@ -3555,20 +3556,6 @@
           "title": "Scratchで再帰関数の実装とメモ化をやってみた",
           "enclosure": {
             "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kmizushima/20220125/20220125172223.png",
-            "type": "image/png",
-            "length": "0"
-          }
-        },
-        {
-          "id": "hatenablog://entry/13574176438056340662",
-          "author": null,
-          "description": "※2022/01/25 17:10追記\n　以下のツイートが別に「Scalaが主眼でない」こと自体は承知しています。一般論として、Scalaに限らず言える技術選定の話ですよね。ただ、妙な方向への読解をちょくちょく見かけたので、それに乗っかる形で現状のScalaについて率直な感想を書いておこうと思ったのでした。「この話とは別なんだけど」みたいな言葉をつけておけば良かったです。申し訳ありません。\n　数日前、以下のツイートに端を発して色々な意見が交わされていました。\n\n「Scala好きなメンバーがプロダクト開発にScalaを採用して1人で開発していたが、そのメンバーが抜けてしまいScalaコードの保守ができなくて別の言語で書き直すことになった」という技術選定の失敗のお手本のような事例を目の当たりにしてしまった....\n— コミさん (@komi_edtr_1230) 2022年1月19日\n  \n\nこれを見て「いやScalaって読み書き大変じゃないし学習コスト高くない、他のメンバーに原因ある」と思った人はマジで反省しましょう\n人類は君が思ってるほど勉強好きじゃないし適応的に学習しません\n全員のキャパを考えて、人的リソースに欠損ができても開発が止まらない仕組み作りが技術選定です\n— コミさん (@komi_edtr_1230) 2022年1月20日\n  \n　ここで言われていることの一部は確かに正しいと感じます。Scalaについて言及する時はいつ頃かというのがポイントなのですが、たとえばScala言語そのものでなくても標準ビルドツールであるsbtが1.0未満の時代（はもう数年前です）だと色々扱いづらい部分も多かったです。また、Scala言語についても2.12以降はともかく2.11までは無節操に一部ライブラリを非推奨にしたり、かと思えばexperimentalとして導入されたマクロ機能がガ…",
-          "link": "https://kmizu.hatenablog.com/entry/2022/01/25/093221",
-          "publishedOn": "2022-01-25T00:32:21.000Z",
-          "wordCount": 162,
-          "title": "Scalaの学習コストについての私見",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
             "type": "image/png",
             "length": "0"
           }
@@ -7811,15 +7798,6 @@
           "publishedOn": "2022-01-29T06:20:24.000Z",
           "wordCount": 83,
           "title": "【週刊プラグインレビュー】Plugin Alliance Knif SOMA"
-        },
-        {
-          "id": "https://note.com/massmasaoki/n/n593e98c39d94",
-          "author": null,
-          "description": "寒い日が続きますが、皆さんいかがお過ごしでしょう？\nこちらは保育園が新型コロナウイルスの影響で休園となり、０歳児がウロウロしていて何もできません笑\nやったことといえばウォーキングデッドのシーズン１０を見終わってしまったことぐらいでしょうか・・・。あれだけ憎かったニーガンがいつのまにか一番気になる存在になってしまっている・・・。\nまぁそんなことはどうでもいいわけですが、おかげさまで余裕をもってこの週刊プラグインレビューを更新ができております笑\nさて、今回扱いたいプラグインはBoz Digital Labs Panipulator。\nなんと無料です。\n週刊プラグインレビューを購読してくださっている皆さんも、そうでない皆さんもみんなとりあえずダウンロードをすることは出来ます。\nしかも超即効性があります。\n続きをみる",
-          "link": "https://note.com/massmasaoki/n/n593e98c39d94",
-          "publishedOn": "2022-01-25T00:44:18.000Z",
-          "wordCount": 87,
-          "title": "【週刊プラグインレビュー】Boz Digital Labs Panipulator"
         }
       ]
     },
@@ -11315,6 +11293,16 @@
       "siteUrl": "https://KeenS.github.io/",
       "articles": [
         {
+          "id": "https://KeenS.github.io/blog/2022/04/24/rustdesetteichiwomotsunihadoushitaraiidesuka/",
+          "author": null,
+          "description": "κeenです。Rustではじめてアプリケーションを書くときに困りがちなことの1つにグローバルな値を持つにはどうしたらいいか分からないというのがあるようです。\nその書き方を何パターンか紹介しできたらなと。\n一応この記事には元ネタというかインスパイア元があり、以下のリポジトリも見ながら書かれています。\nhttps://github.com/paulkernfeld/global-data-in-rust",
+          "link": "https://KeenS.github.io/blog/2022/04/24/rustdesetteichiwomotsunihadoushitaraiidesuka/",
+          "publishedOn": "2022-04-24T06:54:37.000Z",
+          "wordCount": 261,
+          "title": "Rustで設定値を持つにはどうしたらいいですか",
+          "imageUrl": "https://KeenS.github.io/images/ogp/post/Rustdesetteichiwomotsunihadoushitaraiidesuka.png"
+        },
+        {
           "id": "https://KeenS.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/",
           "author": null,
           "description": "κeenです。fcitxユーザになってfcitx-skkの設定頑張ってるので記録に残します。",
@@ -12079,21 +12067,6 @@
             "type": "image/png"
           },
           "imageUrl": "https://mangacross.jp/images/episode/IaTe5aX0yzChhircRVXwa5OCHvtdz8sVVjvLOYiefLg/episode_thumbnail/thumb_double.png?1644203432"
-        },
-        {
-          "id": "https://mangacross.jp/comics/yabai/94",
-          "author": "桜井のりお",
-          "description": "",
-          "link": "https://mangacross.jp/comics/yabai/94",
-          "publishedOn": "2022-01-25T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Karte.89 | 僕は溢れ出る",
-          "enclosure": {
-            "url": "https://mangacross.jp/images/episode/ds3JPgef47TpLZP7pjpkzync5Is_DHTwl63QNDeVH4E/episode_thumbnail/thumb_double.png?1642733945",
-            "length": "85068",
-            "type": "image/png"
-          },
-          "imageUrl": "https://mangacross.jp/images/episode/ds3JPgef47TpLZP7pjpkzync5Is_DHTwl63QNDeVH4E/episode_thumbnail/thumb_double.png?1642733945"
         }
       ]
     }
