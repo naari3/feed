@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-24T06:02:08.848Z</updated>
+    <updated>2022-04-24T07:01:59.798Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[iOS CallKit と Twilio Voice iOS 徹底攻略]]></title>
+        <id>hatenablog://entry/13574176438085867520</id>
+        <link href="https://www.bokukoko.info/entry/2022/04/24/151955"/>
+        <updated>2022-04-24T06:19:55.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+先日の TwilioJP-UG Online Vol.6 はモバイル特集。私からは iOS CallKit と Twilio Voice iOS 徹底攻略として話をしたので、こちらの内容をブログに記しておこう。
+なお、今回のスライドはかなりコアな iOS CallKit 内容となっており、実際に CallKit x Twilio Voice iOS を開発した人をターゲットとしている。
+資料
+ speakerdeck.com
+CallKit の役割
+CallKit は iPhone/iPad における通話(電話/ビデオ)のやりとりを管理するプラットフォームと言える。CallKit を用いた実装をすると、他のCallKitアプリとうまく連携して、ユーザー体験をより良くさせることが可能だ。例えば LINE 通話中に自分のiOSアプリから着信が来た時、その着信に出るか、今のLINE通話を続けるかの選択などが可能になる。
+
+そして CallKit UI により、UIの実装はiOS側で共通のものが使えるようになる。ユーザーはスリープ状態でキーロックをかけていても、着信が来た時に着信を鳴らすことが可能になる。iOS側でキーロックをかけていても音声をミュートする、音量を上げる、キーパッドを入力するなどの動作を動かすことができる。CallKit UI で通話中の右下のエリアには、呼び出し元のアプリボタンが出てきているので、それをタップしてパスコードを入力すると、自前アプリを起動させることができる。
+Twilio Voice SDK
+Twilio Voice SDK の構成についてスライドに掲示している。
+自前アプリの中に Twilio Voice SDK を埋め込み、そのTwilio Voice SDK には実際に通話した時のオブジェクト(TVOCall)…]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[エッセイ：ナショナルジオグラフィックをファンタジーとして消費する俺]]></title>
         <id>https://note.com/sizes/n/n9bd17d659bea</id>
@@ -17172,16 +17194,6 @@ PS5は持っていない↩]]></summary>
         <summary type="html"><![CDATA[朝、6時に起きて12時頃までプログラミング。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Automation of Terraform for AWS]]></title>
-        <id>18662</id>
-        <link href="https://engineering.mercari.com/blog/entry/20220124-automation-of-terraform-for-aws/"/>
-        <updated>2022-01-24T19:00:14.000Z</updated>
-        <summary type="html"><![CDATA[本投稿は DPE Camp blog series の一部です。 こんにちは。 Platform Infra の Kenichi Sasaki (@siroken3) です。メルカリでは主にAWSの管理を業務にしています […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>

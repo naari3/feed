@@ -78,6 +78,38 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">iOS CallKit と Twilio Voice iOS 徹底攻略</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/04/24/151955" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+先日の TwilioJP-UG Online Vol.6 はモバイル特集。私からは iOS CallKit と Twilio Voice iOS 徹底攻略として話をしたので、こちらの内容をブログに記しておこう。
+なお、今回のスライドはかなりコアな iOS CallKit 内容となっており、実際に CallKit x Twilio Voice iOS を開発した人をターゲットとしている。
+資料
+ speakerdeck.com
+CallKit の役割
+CallKit は iPhone/iPad における通話(電話/ビデオ)のやりとりを管理するプラットフォームと言える。CallKit を用いた実装をすると、他のCallKitアプリとうまく連携して、ユーザー体験をより良くさせることが可能だ。例えば LINE 通話中に自分のiOSアプリから着信が来た時、その着信に出るか、今のLINE通話を続けるかの選択などが可能になる。
+
+そして CallKit UI により、UIの実装はiOS側で共通のものが使えるようになる。ユーザーはスリープ状態でキーロックをかけていても、着信が来た時に着信を鳴らすことが可能になる。iOS側でキーロックをかけていても音声をミュートする、音量を上げる、キーパッドを入力するなどの動作を動かすことができる。CallKit UI で通話中の右下のエリアには、呼び出し元のアプリボタンが出てきているので、それをタップしてパスコードを入力すると、自前アプリを起動させることができる。
+Twilio Voice SDK
+Twilio Voice SDK の構成についてスライドに掲示している。
+自前アプリの中に Twilio Voice SDK を埋め込み、そのTwilio Voice SDK には実際に通話した時のオブジェクト(TVOCall)…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -25318,33 +25350,9 @@ PS5は持っていない↩</span>
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2022-01-24">2022-01-24</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank"
-              rel="noopener">メルカリエンジニアリングブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Automation of Terraform for AWS</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://engineering.mercari.com/blog/entry/20220124-automation-of-terraform-for-aws/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>本投稿は DPE Camp blog series の一部です。 こんにちは。 Platform Infra の Kenichi Sasaki (@siroken3) です。メルカリでは主にAWSの管理を業務にしています […]</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-24T06:02:08.757Z">2022-04-24T06:02:08.757Z</time>
+    <time id="build-timestamp" datetime="2022-04-24T07:01:59.728Z">2022-04-24T07:01:59.728Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

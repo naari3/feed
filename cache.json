@@ -5231,6 +5231,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438085867520",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n先日の TwilioJP-UG Online Vol.6 はモバイル特集。私からは iOS CallKit と Twilio Voice iOS 徹底攻略として話をしたので、こちらの内容をブログに記しておこう。\nなお、今回のスライドはかなりコアな iOS CallKit 内容となっており、実際に CallKit x Twilio Voice iOS を開発した人をターゲットとしている。\n資料\n speakerdeck.com\nCallKit の役割\nCallKit は iPhone/iPad における通話(電話/ビデオ)のやりとりを管理するプラットフォームと言える。CallKit を用いた実装をすると、他のCallKitアプリとうまく連携して、ユーザー体験をより良くさせることが可能だ。例えば LINE 通話中に自分のiOSアプリから着信が来た時、その着信に出るか、今のLINE通話を続けるかの選択などが可能になる。\n\nそして CallKit UI により、UIの実装はiOS側で共通のものが使えるようになる。ユーザーはスリープ状態でキーロックをかけていても、着信が来た時に着信を鳴らすことが可能になる。iOS側でキーロックをかけていても音声をミュートする、音量を上げる、キーパッドを入力するなどの動作を動かすことができる。CallKit UI で通話中の右下のエリアには、呼び出し元のアプリボタンが出てきているので、それをタップしてパスコードを入力すると、自前アプリを起動させることができる。\nTwilio Voice SDK\nTwilio Voice SDK の構成についてスライドに掲示している。\n自前アプリの中に Twilio Voice SDK を埋め込み、そのTwilio Voice SDK には実際に通話した時のオブジェクト(TVOCall)…",
+          "link": "https://www.bokukoko.info/entry/2022/04/24/151955",
+          "publishedOn": "2022-04-24T06:19:55.000Z",
+          "wordCount": 364,
+          "title": "iOS CallKit と Twilio Voice iOS 徹底攻略",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438082220817",
           "author": null,
           "description": "ども、@kimihom です。\n\nプログラミングをしてきて10年が経った今、やってきて良かったこと間違っていたことを振り返りつつ、本テーマを記していこう。私が今まで選んできた技術の成功と失敗について。\n今までできなかった何かができるか\n最優先とするのは、「その技術が今まで不可能だった何かができるようになったか」である。近年では \"例えばこれ\" というものに出会うことができていないが、定期的にこの目線で技術の調査と試しを繰り返している。\nちょっと前だと、私の場合は Twilio に限る。今まで電話をプログラムして制御するなんて考えもつかなかったことが、誰でも簡単にできるようになった。今でも Twilio 以外で同様の実現が可能なのは数えるくらいしかない。\nこのような不可能を可能にした 0->1 技術はほとんどないが、「今まで可能だったものを、少し改善したもの」という 1->2 な技術というのは今でもどんどん出てきている。それらを磨いていったとしても、それは単に自己満足にしか過ぎず、利用者からしてみれば どうでもいいと思われるものだ。\n何でも6割ではなく、一つを9割にしたい技術\n教育でもなんでも言えることだけど、それぞれを \"6割理解できて使える\" レベルになるのではなく、\"9割理解できて広められる\"レベルに1にでもなれた方が、よりエンジニアとして相応しい。残り1割をさらに深めていきたいと、そう思えるエンジニアだ。\nこの \"1つの技術を極める\" 判断ができるのは、大人数のチームのみだとは思わない。事実、私は長い間1人でプログラミングをしてきた。この環境で大事なのは、9割を目指すものを一つにして、それ以外を汎用的な技術で固める という判断をすることだ。\"それ以外\" に関しては、今からすれば「今更」と言われそうな技術をあえて選ぶ。その選択をした方が、何か詰まったとしてもすぐに解決で…",
@@ -11245,16 +11260,6 @@
           "publishedOn": "2022-01-25T11:03:59.000Z",
           "wordCount": null,
           "title": "mercari.go #18 を開催しました #mercarigo",
-          "imageUrl": null
-        },
-        {
-          "id": "18662",
-          "author": null,
-          "description": "本投稿は DPE Camp blog series の一部です。 こんにちは。 Platform Infra の Kenichi Sasaki (@siroken3) です。メルカリでは主にAWSの管理を業務にしています […]",
-          "link": "https://engineering.mercari.com/blog/entry/20220124-automation-of-terraform-for-aws/",
-          "publishedOn": "2022-01-24T19:00:14.000Z",
-          "wordCount": null,
-          "title": "Automation of Terraform for AWS",
           "imageUrl": null
         }
       ]
