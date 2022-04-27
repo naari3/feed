@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-27T06:01:47.677Z</updated>
+    <updated>2022-04-27T07:02:23.948Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,40 @@
         <summary type="html"><![CDATA[Merpay Tech Openness Month 2022 の18日目の記事です。 こんにちは。メルペイの機械学習エンジニアの @navi です。 本記事では、機械学習を用いてビジネスの課題解決に取り組まれている方に […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[はてなブログで Google アナリティクス 4の設定が可能になりました]]></title>
+        <id>hatenablog://entry/13574176438086763134</id>
+        <link href="https://staff.hatenablog.com/entry/2022/04/27/152529"/>
+        <updated>2022-04-27T06:25:29.000Z</updated>
+        <summary type="html"><![CDATA[先日、Google より Google アナリティクス (ユニバーサル アナリティクス) の終了とGoogle アナリティクス 4 (以下 GA4)への準備についてアナウンスがありました。それを受けて、はてなブログでは以下の告知にて、GA4の対応予定を案内いたしました。
+
+本日、はてなブログにGA4の設定を追加いたしました。設定方法について詳しくはこちらをご確認ください。
+help.hatenablog.com
+ユニバーサルアナリティクスとは別に設定のフォームを提供しておりますので、同時に計測することも可能です。GA4とユニバーサルアナリティクスは計測のタイミングに違いがあるなど、数字に差異が発生することが多いです。つきましては、ユニバーサルアナリティクスは設定したままで、GA4の設定も追加することをおすすめいたします。
+また、はてなブログの設定からGA4の設定を行っていただくだけで*1、ブログの解析に便利な情報を合わせて送信するように変更しています。具体的には下記をご参照ください。
+追加されるデータ
+記事閲覧時に記事のメタデータを追加
+記事を読み終わったタイミングの計測
+リンククリックの計測、ブログカードのクリックの計測
+追加されたデータを利用するためのセットアップ
+追加されるデータ
+記事閲覧時に記事のメタデータを追加
+記事の閲覧時に、カスタムディメンションとして、「記事に設定した投稿日」のデータを送信しています。
+追加される値(クリックで展開されます)
+ カスタムディメンション名
+     値
+     補足
+    
+post_date
+    2022-01-01
+    ハイフン区切りの日付が記録されます
+    
+
+「記事に設定した投稿日」のデータは、下記の連載「小川卓のブログ分析入門」でウェブアナリストの小川卓さんが紹介された「月初率」を算出するのに利用できま…]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
