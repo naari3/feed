@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-28T17:05:51.080Z</updated>
+    <updated>2022-04-28T18:02:10.878Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17502,61 +17502,6 @@ SOMAは、マスタリングに携わる人でない限りはあまり知られ�
 続きをみる]]></summary>
         <author>
             <name>moroishimasaoki</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[KindleのメモとハイライトをMarkdownにするJavaScriptライブラリを書いた]]></title>
-        <id>https://efcl.info/2022/01/29/kindle-highlight-to-markdown/</id>
-        <link href="https://efcl.info/2022/01/29/kindle-highlight-to-markdown/"/>
-        <updated>2022-01-29T05:54:00.000Z</updated>
-        <summary type="html"><![CDATA[Kindleでハイライトつけた内容はKindle: メモとハイライトで閲覧できます。
-このページの内容をMarkdownに変換してコピーするためのライブラリを書きました。
-azu/kindle-highlight-to-markdown: Convert Your Kindle highlight & Note to Markdown/JSON
-使い方
-コピーしたい本をKindle: メモとハイライトで開きます
-ブラウザの開発者ツールの"コンソール"を開きます
-
-
-Firefox: ウェブコンソール - 開発ツール | MDN
-Chrome: Console overview - Chrome Developers
-
-次のコードを実行するとクリップボードにコピーできます
-const { parsePage, toMarkdown } = await import('https://cdn.skypack.dev/kindle-highlight-to-markdown');
-const result = parsePage(window); // JSON Object
-const markdown = toMarkdown(result); // Markdown
-copy(markdown);
-
-
-ブックマークレット版: kindle-highlight-to-markdown
-ただのnpmに公開しているJavaScriptライブラリになっています。
-DOMの中身を見てJSONにして、それをMarkdownに変換してるだけです。
-仕様が変わると壊れると思うので、壊れてたらIssueかPRをください。
-azu/kindle-highlight-to-markdown: Convert Your Kindle highlight & Note to Markdown/JSON
-モバイル端末とかでKindle読んで、ハイライトを回収したいことがあったので書きました。
-macOSとかのPCならスクリーンショットベースでメモを取ったりしてることが多いです。
-スクリーンショットドリブンのメモアプリ mumemo を作った | Web Scratch
-メモ kindle:// protocol
-macOSではkindle:// というprotocolが予約されていて、次のパラメータで書籍の任意の場所を開けます。
-kindle://book?action=open&asin=${asinValue}&location=${locationNumber}
-
-
-このkindle://みたいな未知のProtocolはGitHub Markdownだとリンクになりません。(javascript:とかのXSSを防ぐための処置だと思います)
-そのため、次のようなCloudflare WorkerでProxyを書いて、https://xxx.workers.dev/book?action=open&asin=${asinValue}&location=${locationNumber} を kindle:// にリダイレクトしています。
-これで、GitHub Markdownなどkindle://がサニタイズされる場所からも、Kindleのページをリンクできます。
-const statusCode = 301
-
-async function handleRequest(request) {
-  const url = new URL(request.url)
-  const { pathname, search } = url;
-  const destinationURL = "kindle://" + pathname + search;
-  return Response.redirect(destinationURL, statusCode);
-}
-
-addEventListener("fetch", async event => {
-  event.respondWith(handleRequest(event.request))
-})]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>

@@ -25741,76 +25741,11 @@ SOMAは、マスタリングに携わる人でない限りはあまり知られ�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">KindleのメモとハイライトをMarkdownにするJavaScriptライブラリを書いた</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/01/29/kindle-highlight-to-markdown/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Kindleでハイライトつけた内容はKindle: メモとハイライトで閲覧できます。
-このページの内容をMarkdownに変換してコピーするためのライブラリを書きました。
-azu/kindle-highlight-to-markdown: Convert Your Kindle highlight &amp; Note to Markdown/JSON
-使い方
-コピーしたい本をKindle: メモとハイライトで開きます
-ブラウザの開発者ツールの&quot;コンソール&quot;を開きます
-
-
-Firefox: ウェブコンソール - 開発ツール | MDN
-Chrome: Console overview - Chrome Developers
-
-次のコードを実行するとクリップボードにコピーできます
-const { parsePage, toMarkdown } &#x3D; await import(&#x27;https://cdn.skypack.dev/kindle-highlight-to-markdown&#x27;);
-const result &#x3D; parsePage(window); // JSON Object
-const markdown &#x3D; toMarkdown(result); // Markdown
-copy(markdown);
-
-
-ブックマークレット版: kindle-highlight-to-markdown
-ただのnpmに公開しているJavaScriptライブラリになっています。
-DOMの中身を見てJSONにして、それをMarkdownに変換してるだけです。
-仕様が変わると壊れると思うので、壊れてたらIssueかPRをください。
-azu/kindle-highlight-to-markdown: Convert Your Kindle highlight &amp; Note to Markdown/JSON
-モバイル端末とかでKindle読んで、ハイライトを回収したいことがあったので書きました。
-macOSとかのPCならスクリーンショットベースでメモを取ったりしてることが多いです。
-スクリーンショットドリブンのメモアプリ mumemo を作った | Web Scratch
-メモ kindle:// protocol
-macOSではkindle:// というprotocolが予約されていて、次のパラメータで書籍の任意の場所を開けます。
-kindle://book?action&#x3D;open&amp;asin&#x3D;${asinValue}&amp;location&#x3D;${locationNumber}
-
-
-このkindle://みたいな未知のProtocolはGitHub Markdownだとリンクになりません。(javascript:とかのXSSを防ぐための処置だと思います)
-そのため、次のようなCloudflare WorkerでProxyを書いて、https://xxx.workers.dev/book?action&#x3D;open&amp;asin&#x3D;${asinValue}&amp;location&#x3D;${locationNumber} を kindle:// にリダイレクトしています。
-これで、GitHub Markdownなどkindle://がサニタイズされる場所からも、Kindleのページをリンクできます。
-const statusCode &#x3D; 301
-
-async function handleRequest(request) {
-  const url &#x3D; new URL(request.url)
-  const { pathname, search } &#x3D; url;
-  const destinationURL &#x3D; &quot;kindle://&quot; + pathname + search;
-  return Response.redirect(destinationURL, statusCode);
-}
-
-addEventListener(&quot;fetch&quot;, async event &#x3D;&gt; {
-  event.respondWith(handleRequest(event.request))
-})</span>
-                  </div>
-                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-04-28T17:05:50.980Z">2022-04-28T17:05:50.980Z</time>
+    <time id="build-timestamp" datetime="2022-04-28T18:02:10.817Z">2022-04-28T18:02:10.817Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

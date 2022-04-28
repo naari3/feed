@@ -10530,16 +10530,6 @@
           "wordCount": 224,
           "title": "jsprimerのES2022対応中、コントリビュート歓迎です",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2022/01/29/kindle-highlight-to-markdown/",
-          "author": null,
-          "description": "Kindleでハイライトつけた内容はKindle: メモとハイライトで閲覧できます。\nこのページの内容をMarkdownに変換してコピーするためのライブラリを書きました。\nazu/kindle-highlight-to-markdown: Convert Your Kindle highlight & Note to Markdown/JSON\n使い方\nコピーしたい本をKindle: メモとハイライトで開きます\nブラウザの開発者ツールの\"コンソール\"を開きます\n\n\nFirefox: ウェブコンソール - 開発ツール | MDN\nChrome: Console overview - Chrome Developers\n\n次のコードを実行するとクリップボードにコピーできます\nconst { parsePage, toMarkdown } = await import('https://cdn.skypack.dev/kindle-highlight-to-markdown');\nconst result = parsePage(window); // JSON Object\nconst markdown = toMarkdown(result); // Markdown\ncopy(markdown);\n\n\nブックマークレット版: kindle-highlight-to-markdown\nただのnpmに公開しているJavaScriptライブラリになっています。\nDOMの中身を見てJSONにして、それをMarkdownに変換してるだけです。\n仕様が変わると壊れると思うので、壊れてたらIssueかPRをください。\nazu/kindle-highlight-to-markdown: Convert Your Kindle highlight & Note to Markdown/JSON\nモバイル端末とかでKindle読んで、ハイライトを回収したいことがあったので書きました。\nmacOSとかのPCならスクリーンショットベースでメモを取ったりしてることが多いです。\nスクリーンショットドリブンのメモアプリ mumemo を作った | Web Scratch\nメモ kindle:// protocol\nmacOSではkindle:// というprotocolが予約されていて、次のパラメータで書籍の任意の場所を開けます。\nkindle://book?action=open&asin=${asinValue}&location=${locationNumber}\n\n\nこのkindle://みたいな未知のProtocolはGitHub Markdownだとリンクになりません。(javascript:とかのXSSを防ぐための処置だと思います)\nそのため、次のようなCloudflare WorkerでProxyを書いて、https://xxx.workers.dev/book?action=open&asin=${asinValue}&location=${locationNumber} を kindle:// にリダイレクトしています。\nこれで、GitHub Markdownなどkindle://がサニタイズされる場所からも、Kindleのページをリンクできます。\nconst statusCode = 301\n\nasync function handleRequest(request) {\n  const url = new URL(request.url)\n  const { pathname, search } = url;\n  const destinationURL = \"kindle://\" + pathname + search;\n  return Response.redirect(destinationURL, statusCode);\n}\n\naddEventListener(\"fetch\", async event => {\n  event.respondWith(handleRequest(event.request))\n})",
-          "link": "https://efcl.info/2022/01/29/kindle-highlight-to-markdown/",
-          "publishedOn": "2022-01-29T05:54:00.000Z",
-          "wordCount": 162,
-          "title": "KindleのメモとハイライトをMarkdownにするJavaScriptライブラリを書いた",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
