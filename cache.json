@@ -10508,16 +10508,6 @@
           "wordCount": 162,
           "title": "KindleのメモとハイライトをMarkdownにするJavaScriptライブラリを書いた",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2022/01/29/komesan/",
-          "author": null,
-          "description": "Komesanというはてなブックマーク、Twitter、HackerNewsをまとめて表示するサイトを作りました。\nhttps://komesan.pages.dev/?url=https://pages.cloudflare.com\nHackerNewsはオプショナル: https://komesan.pages.dev/?url=https://pages.cloudflare.com&service=hackerNews\nブックマークレットで実行する場合は、次のようなURLのブックマークを利用します。サイトの下部に同じものがおいてあります。\njavascript:void(window.open(\"https://komesan.pages.dev/?url=\"+encodeURIComponent(location.href)))\n\n\n自分用のツールでなので、iframe表示用の変な機能もありますが、READMEとか読んでください。\nはてなブックマークは、はてなブックマークのAPIを利用しています\nTwitterは、Twitter v2 APIの検索APIを利用しています\nHackerNewsは、AlgoliaのHackerNews APIを利用しています\n元のデータは、元サイトのAPIを使って取得しているだけです。\n作った理由\n同様の機能を持つサイトとして http://komepon.net がありますが、HTTPSに対応してなかったのが気になりました。\nあと、Remixを使って何か作ってみたくて、検索結果を表示するのは題材としてちょうど良さそうでした。\nRemix\nKomesanは、Cloudflare PagesとRemixを使って動いています。\nKomesanのやっていることはAPIの結果を加工して表示するという感じです。\nRemixの題材としてちょうど良…",
-          "link": "https://efcl.info/2022/01/29/komesan/",
-          "publishedOn": "2022-01-28T15:00:00.000Z",
-          "wordCount": 308,
-          "title": "Komesan: 指定したURLに関連するはてなブックマーク、Twitter、HackerNewsのコメントを表示する",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },

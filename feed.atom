@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-28T02:55:55.550Z</updated>
+    <updated>2022-04-28T03:51:15.707Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17522,34 +17522,6 @@ Amazonでもエルゴラピード・リチウムがタイムセール中
 ちなみに、このエレクトロラッ…]]></summary>
         <author>
             <name>僕とネットショッピング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Komesan: 指定したURLに関連するはてなブックマーク、Twitter、HackerNewsのコメントを表示する]]></title>
-        <id>https://efcl.info/2022/01/29/komesan/</id>
-        <link href="https://efcl.info/2022/01/29/komesan/"/>
-        <updated>2022-01-28T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Komesanというはてなブックマーク、Twitter、HackerNewsをまとめて表示するサイトを作りました。
-https://komesan.pages.dev/?url=https://pages.cloudflare.com
-HackerNewsはオプショナル: https://komesan.pages.dev/?url=https://pages.cloudflare.com&service=hackerNews
-ブックマークレットで実行する場合は、次のようなURLのブックマークを利用します。サイトの下部に同じものがおいてあります。
-javascript:void(window.open("https://komesan.pages.dev/?url="+encodeURIComponent(location.href)))
-
-
-自分用のツールでなので、iframe表示用の変な機能もありますが、READMEとか読んでください。
-はてなブックマークは、はてなブックマークのAPIを利用しています
-Twitterは、Twitter v2 APIの検索APIを利用しています
-HackerNewsは、AlgoliaのHackerNews APIを利用しています
-元のデータは、元サイトのAPIを使って取得しているだけです。
-作った理由
-同様の機能を持つサイトとして http://komepon.net がありますが、HTTPSに対応してなかったのが気になりました。
-あと、Remixを使って何か作ってみたくて、検索結果を表示するのは題材としてちょうど良さそうでした。
-Remix
-Komesanは、Cloudflare PagesとRemixを使って動いています。
-KomesanのやっていることはAPIの結果を加工して表示するという感じです。
-Remixの題材としてちょうど良…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
