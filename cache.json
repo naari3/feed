@@ -10366,6 +10366,16 @@
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/jwt-verify-on-cae",
+          "author": null,
+          "description": "たかが JWT と思っていたらそれなりに苦戦したのでメモ 準備 encode した JWT は適当に NodeJS などで用意しておく。 署名に使う鍵は で作っておく。 Rust で decode ライブラリ選定 ここでは jwt_simple…",
+          "link": "https://blog.ojisan.io/jwt-verify-on-cae",
+          "publishedOn": "2022-05-01T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Fastly Compute@Edge + Rust で JWT を decode する",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/compute-at-edge-study",
           "author": null,
           "description": "GW に C@E で ちょっとしたアプリケーションを作ろうとしているのでお勉強。\nC@E そのものの勉強のために一番自分が得意な言語である JS を使う。\nまだ勉強したばかりで中身は薄いがそこは許してください。\nGW 明けには濃いのを書きたい。 C@E とは Fastly…",

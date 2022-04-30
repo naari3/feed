@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-04-30T20:02:26.209Z</updated>
+    <updated>2022-04-30T21:01:53.365Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Fastly Compute@Edge + Rust で JWT を decode する]]></title>
+        <id>https://blog.ojisan.io/jwt-verify-on-cae</id>
+        <link href="https://blog.ojisan.io/jwt-verify-on-cae"/>
+        <updated>2022-05-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[たかが JWT と思っていたらそれなりに苦戦したのでメモ 準備 encode した JWT は適当に NodeJS などで用意しておく。 署名に使う鍵は で作っておく。 Rust で decode ライブラリ選定 ここでは jwt_simple…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[当事者意識についての個人的な話]]></title>
         <id>hatenablog://entry/13574176438083903815</id>
