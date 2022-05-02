@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-02T01:34:03.634Z</updated>
+    <updated>2022-05-02T02:47:26.583Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17785,45 +17785,6 @@ nico.ms]]></summary>
         <summary type="html"><![CDATA[昨年末に、BASE社、hey社、ソウゾウ社合同で【CTO登壇】BASE・hey・ソウゾウが描く「ECの未来と実現する組織の今」というイベントを開催しました。この記事では、当日の内容を簡単に紹介します！ イベント概要 EC […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Docker DesktopからRancher Desktopに乗り換えてみた]]></title>
-        <id>hatenablog://entry/13574176438059051538</id>
-        <link href="https://knqyf263.hatenablog.com/entry/2022/02/01/225546"/>
-        <updated>2022-02-01T13:55:46.000Z</updated>
-        <summary type="html"><![CDATA[この記事はPRを含みます。
-概要
-背景
-移行
-Docker Desktopのアンインストール
-Rancher Desktopのインストール
-Kubernetesクラスタの無効化
-宣伝
-まとめ
-概要
-Rancher Desktopがcontainerdに加えdockerにも対応したのでDocker Desktopから乗り換えてみました。簡単な用途だとdockerコマンドがそのまま使えるので特に困っていません。
-背景
-2021年9月にDocker Desktopが有料化されました。移行期間として2022年1月31まで引き続き無料で利用できましたが、それもついに終了しました。
-www.docker.com
-ただし、個人利用もしくはスモールビジネス（従業員数250人未満かつ年間売上高1000万ドル未満）、教育機関、非商用のオープンソースプロジェクトでは引き続き無料で利用できるという条件でした。non-commercial open source projectsの定義を自分は見つけられず、仕事としてOSSをやっている自分は該当するのかどうか微妙なところでしたが、恐らく該当するだろうしお金を払って利用を続ける予定でした。
-乗り換え先としてLimaなど候補はいくつかあり、その1つにRancher Desktopがあります（Limaも内部で使われています）。最近1.0.0に到達しました。
-japan.zdnet.com
-実は自分の用途ではRancher Desktopで良さそうというのが本記事の内容です。こちらはKubernetesを簡単に使うためのツールなのですが、コンテナランタイムも同梱されておりcontainerdが使えます。K3sなどについては別の記事を参照してください。containerdを操作するためのCLIとしてnerdctlも同梱されており、dockerコマンドと同様に使…]]></summary>
-        <author>
-            <name>knqyf263's blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エッセイ ：鯉のぼりの絵]]></title>
-        <id>https://note.com/sizes/n/n9657e1ef7715</id>
-        <link href="https://note.com/sizes/n/n9657e1ef7715"/>
-        <updated>2022-02-01T13:45:10.000Z</updated>
-        <summary type="html"><![CDATA[･ぼくは鯉のぼりの絵が好きで、見かけると不思議と惹かれてしまう習性があった。
-なぜ惹かれているかがわからなかった。鯉のぼりにもこどもの日にも格段の思い入れがないし、そもそもなんで鯉のぼりそのものじゃなくて鯉のぼりの絵にだけ興味があるのだろう。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>

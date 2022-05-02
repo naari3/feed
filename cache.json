@@ -3669,20 +3669,6 @@
             "type": "image/png",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438059051538",
-          "author": null,
-          "description": "この記事はPRを含みます。\n概要\n背景\n移行\nDocker Desktopのアンインストール\nRancher Desktopのインストール\nKubernetesクラスタの無効化\n宣伝\nまとめ\n概要\nRancher Desktopがcontainerdに加えdockerにも対応したのでDocker Desktopから乗り換えてみました。簡単な用途だとdockerコマンドがそのまま使えるので特に困っていません。\n背景\n2021年9月にDocker Desktopが有料化されました。移行期間として2022年1月31まで引き続き無料で利用できましたが、それもついに終了しました。\nwww.docker.com\nただし、個人利用もしくはスモールビジネス（従業員数250人未満かつ年間売上高1000万ドル未満）、教育機関、非商用のオープンソースプロジェクトでは引き続き無料で利用できるという条件でした。non-commercial open source projectsの定義を自分は見つけられず、仕事としてOSSをやっている自分は該当するのかどうか微妙なところでしたが、恐らく該当するだろうしお金を払って利用を続ける予定でした。\n乗り換え先としてLimaなど候補はいくつかあり、その1つにRancher Desktopがあります（Limaも内部で使われています）。最近1.0.0に到達しました。\njapan.zdnet.com\n実は自分の用途ではRancher Desktopで良さそうというのが本記事の内容です。こちらはKubernetesを簡単に使うためのツールなのですが、コンテナランタイムも同梱されておりcontainerdが使えます。K3sなどについては別の記事を参照してください。containerdを操作するためのCLIとしてnerdctlも同梱されており、dockerコマンドと同様に使…",
-          "link": "https://knqyf263.hatenablog.com/entry/2022/02/01/225546",
-          "publishedOn": "2022-02-01T13:55:46.000Z",
-          "wordCount": 284,
-          "title": "Docker DesktopからRancher Desktopに乗り換えてみた",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220201/20220201215033.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -9631,15 +9617,6 @@
           "publishedOn": "2022-02-02T14:50:20.000Z",
           "wordCount": 43,
           "title": "エッセイ:間違っちゃったってそれも楽しい"
-        },
-        {
-          "id": "https://note.com/sizes/n/n9657e1ef7715",
-          "author": null,
-          "description": "･ぼくは鯉のぼりの絵が好きで、見かけると不思議と惹かれてしまう習性があった。\nなぜ惹かれているかがわからなかった。鯉のぼりにもこどもの日にも格段の思い入れがないし、そもそもなんで鯉のぼりそのものじゃなくて鯉のぼりの絵にだけ興味があるのだろう。\n続きをみる",
-          "link": "https://note.com/sizes/n/n9657e1ef7715",
-          "publishedOn": "2022-02-01T13:45:10.000Z",
-          "wordCount": 46,
-          "title": "エッセイ ：鯉のぼりの絵"
         }
       ]
     },
