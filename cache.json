@@ -3407,20 +3407,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438059143589",
-          "author": null,
-          "description": "相変わらず毎日親指シフトでカチカチと原稿を打ってるのですが、11 月末ぐらいからキーボードに大きな変更を加えたところ、本当に仕事が快適になりました。\n具体的に何をしたかと言うと、キーボードをまず同じHHKBでも、ハイブリッドからBTという１つ前のに戻して、それを3Dデータのキートップを使って、親指シフト化したことです。\nHHKBなのですが、こちらの記事にもありますが、私はやはり、一つ前の BT モデルの打鍵音が最新版よりもずっと好きです。\ngreenvip.jp\n一応、HHKB の最新版の静音でないモデルの方のバージョンも買ってみて打鍵を試してみたのですが、静音でない方でもやはり昔の BT モデルの方が音が良かったのです。\nイメージで言うと、こんな感じです。\nHHKB BT ＞＞ HHKB Hybrid 通常版 ＞＞＞＞＞＞＞＞＞＞＞＞ HHKB Hybrid Type S\nしかも軸の違いで、せっかく3Dデータのキートップで親指シフト化してもType Sの場合は右親指シフトの左側半分を打つと、すこっとひっかかって、うまく打てていなくて、ストレスが溜まっていました。\n要は、最新版にしたことで\n・音が悪くなって\n・打鍵が悪くなった\nというダブルで悪くなっていて、それで仕事に差し支えていたようです。よくこの状態で二年近く仕事をしていたと思います。だから色々とっかえひっかえ、いろんなキーボードを試してみたのも、なんとなく合点がいきます。\nそれがまさしく、昔のキーボードに戻せば、ほとんど全てのことが解決するというのは盲点でした。\nもともとBT版はBluetoohの安定性が悪くてよくBluetoothが切れてしまったので、それでハイブリッドに取り替えたのですが、最近はパソコン側の Bluetooth もよくなっていて、ほとんど切れなくなったので、実務には全く支障がないです。\nやはりキーボードは楽器なので音と打感が命です。毎日何時間もキーボードを叩いていますので、幸せになって本当に良かったです。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2022/02/02/080145",
-          "publishedOn": "2022-02-01T23:01:45.000Z",
-          "wordCount": 228,
-          "title": "ここ２ヶ月、HHKBのBTモデルと親指シフト3Dデータのキートップで、本当に仕事が幸せになりました",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
@@ -10414,6 +10400,16 @@
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/haisya-kansou",
+          "author": null,
+          "description": "皆さんは定期検診に行っていますでしょうか？\n私は５年サボっていました。\n別に歯医者が怖いとかそう言うのは無いのですが、特に異常も感じないし「親知らずを抜け」営業されるのが嫌なのでいませんでした。\n今日のブログは歯の異常を感じて…",
+          "link": "https://blog.ojisan.io/haisya-kansou",
+          "publishedOn": "2022-05-02T00:00:00.000Z",
+          "wordCount": 90,
+          "title": "歯医者 感想",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/jwt-verify-on-cae",
           "author": null,
           "description": "たかが JWT と思っていたらそれなりに苦戦したのでメモ 準備 encode した JWT は適当に NodeJS などで用意しておく。 署名に使う鍵は で作っておく。 Rust で decode ライブラリ選定 ここでは jwt_simple…",
@@ -12293,15 +12289,6 @@
           "publishedOn": "2022-02-04T00:00:00.000Z",
           "wordCount": 34,
           "title": "Pokémon LEGENDS アルセウス"
-        },
-        {
-          "id": "https://r7kamura.com/articles/2022-02-02-diary",
-          "author": null,
-          "description": "確定申告を済ませた。",
-          "link": "https://r7kamura.com/articles/2022-02-02-diary",
-          "publishedOn": "2022-02-02T00:00:00.000Z",
-          "wordCount": 13,
-          "title": "日記"
         }
       ]
     },
