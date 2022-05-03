@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-03T14:02:18.774Z</updated>
+    <updated>2022-05-03T15:02:08.606Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17710,55 +17710,6 @@ collaboratorの権限に関してもちょっと微妙なところがある。co
 続きをみる]]></summary>
         <author>
             <name>河内一馬</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Shopify プライベートアプリからカスタムアプリへの更新]]></title>
-        <id>hatenablog://entry/13574176438059552308</id>
-        <link href="https://www.bokukoko.info/entry/2022/02/03/113102"/>
-        <updated>2022-02-03T02:31:02.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-先日、Shopify からプライベートアプリの終了に関して連絡がきた。カスタムアプリへ移したので、そのログを記事にしておこう。
-Shopify からの連絡
-Private apps are being replaced by custom apps, with no action required from your end. Starting today we’ll be rolling this update out to all stores on Shopify. Creating new private apps won’t be possible once your store/s receive this update.
-
-
-つまり、今後新しくプライベートアプリを作ることはできない。ただし、以前インストール済みのプラベートアプリはそのまま使い続けられる。ということのようだ。
-早速確認をしよう。まず、[アプリを開発] リンクから 以前作成して利用中のプライベートアプリが残されていたことを確認した。ひとまず、現時点で利用しているものに影響は出なさそうと一安心。
-そして 以前プライベートアプリを作ることのできたエリアを見ると、作成ボタンが消えていることが確認できた。
-プライベートアプリは移動しました。[アプリ開発] ページで、既存のプライベートアプリを管理し、アプリを作成します。
-
-
-さて、問題はこれから新しくアプリを作る場合だ。ドキュメントを読みながら、開発をしてみた。
-カスタムアプリの作成
-1. 権限をセット
-Admin APIの統合 から、REST API で利用するデータにチェックを入れる。細かく分かれているので、必要に応じてしっかりと理解する必要がある。
-2. アクセストークンの取得
-アクセストークンを発行することができるようになるので、発行し、それを使って REST API のやりとりができる。
-3. 実際に REST API アクセス
-const request = require('request');
-const API_HOST = `https://${my-domain}.myshopify.com`;
-
-const param = {"json": true, headers: {
-  "X-Shopify-Access-Token": "access_token"
-}};
-request.get(
-  `${API_HOST}/admin/api/2021-04/....`,
-  param,
-  function(err, res, json) {
-    console.log(res);
-  }
-);
-
-
-
-終わりに
-プライベートアプリより、カスタムアプリの方がよりシンプルで作りやすい印象だった。
-もちろんパブリックアプリにしてストアに掲載することが一番理想ではあるけど、自前でちょろっと作りたい時には カスタムアプリは便利である。
-今後ますます盛り上がるであろう Shopify に注目だ。]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>

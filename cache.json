@@ -5565,20 +5565,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438059552308",
-          "author": null,
-          "description": "ども、@kimihom です。\n\n先日、Shopify からプライベートアプリの終了に関して連絡がきた。カスタムアプリへ移したので、そのログを記事にしておこう。\nShopify からの連絡\nPrivate apps are being replaced by custom apps, with no action required from your end. Starting today we’ll be rolling this update out to all stores on Shopify. Creating new private apps won’t be possible once your store/s receive this update.\n\n\nつまり、今後新しくプライベートアプリを作ることはできない。ただし、以前インストール済みのプラベートアプリはそのまま使い続けられる。ということのようだ。\n早速確認をしよう。まず、[アプリを開発] リンクから 以前作成して利用中のプライベートアプリが残されていたことを確認した。ひとまず、現時点で利用しているものに影響は出なさそうと一安心。\nそして 以前プライベートアプリを作ることのできたエリアを見ると、作成ボタンが消えていることが確認できた。\nプライベートアプリは移動しました。[アプリ開発] ページで、既存のプライベートアプリを管理し、アプリを作成します。\n\n\nさて、問題はこれから新しくアプリを作る場合だ。ドキュメントを読みながら、開発をしてみた。\nカスタムアプリの作成\n1. 権限をセット\nAdmin APIの統合 から、REST API で利用するデータにチェックを入れる。細かく分かれているので、必要に応じてしっかりと理解する必要がある。\n2. アクセストークンの取得\nアクセストークンを発行することができるようになるので、発行し、それを使って REST API のやりとりができる。\n3. 実際に REST API アクセス\nconst request = require('request');\nconst API_HOST = `https://${my-domain}.myshopify.com`;\n\nconst param = {\"json\": true, headers: {\n  \"X-Shopify-Access-Token\": \"access_token\"\n}};\nrequest.get(\n  `${API_HOST}/admin/api/2021-04/....`,\n  param,\n  function(err, res, json) {\n    console.log(res);\n  }\n);\n\n\n\n終わりに\nプライベートアプリより、カスタムアプリの方がよりシンプルで作りやすい印象だった。\nもちろんパブリックアプリにしてストアに掲載することが一番理想ではあるけど、自前でちょろっと作りたい時には カスタムアプリは便利である。\n今後ますます盛り上がるであろう Shopify に注目だ。",
-          "link": "https://www.bokukoko.info/entry/2022/02/03/113102",
-          "publishedOn": "2022-02-03T02:31:02.000Z",
-          "wordCount": 262,
-          "title": "Shopify プライベートアプリからカスタムアプリへの更新",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220203/20220203113151.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          }
         }
       ]
     },
