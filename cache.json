@@ -320,6 +320,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438088606247",
+          "author": null,
+          "description": "github.com\nRails 7のリリースノートを読んでいて、Active Recordの変更が一部Active Jobのセクションに書かれていたのに気がついたので修正した。\nAR::Relation#mergeは、同じカラムに対するwhereがあった時は引数の方の条件で上書きする、という挙動を知った。\nUser.where(name: 'foo', id: 1).where(id: 2)             # WHERE name = 'foo' AND id = 1 AND id = 2\nUser.where(name: 'foo', id: 1).merge(User.where(id: 2)) # WHERE name = 'foo' AND id = 2\n\n\n\nmergeを使った場合もwhereを直接書いたのと同じ結果になると思っていたので驚いた。mergeは2つのクエリの積を取るようなメソッドだと誤解していた。\nAR::Relation#mergeはHash#mergeなどと同じような挙動をする、ということっぽい。\nこの挙動は、Rails 7のリリースノートの#mergeの非互換を読んでいて知った。\nhttps://railsguides.jp/7_0_release_notes.html#active-record-%E4%B8%BB%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9",
+          "link": "https://commits.hatenablog.com/entry/2022/05/03/100001",
+          "publishedOn": "2022-05-03T01:00:01.000Z",
+          "wordCount": 189,
+          "title": "2022-05-02",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438088202053",
           "author": null,
           "description": "県内を巡っていた。\n\n井倉洞。通路や排水路に模様ができているのがめちゃくちゃ良かった pic.twitter.com/rYYFSPInYb\n— 🎹 (@p_ck_) May 1, 2022\n  \n井倉洞。全体的に良かったけど、一番良かったのが、人間が加工したあとの場所に鍾乳石が現れているもの。\n秋芳洞を想像していたら、洞窟内は結構狭い道が続いていてちょっとびっくりした。何度も頭をぶつけた\n閉鎖された坑道\n鍾乳洞内にも植物が生えていてたくましかった\nとうせんぼう。近くに切り取られた跡もあったから、これだけ残されたよう\n埋められていた\n吹屋の町並み。いい感じだった。\n吹屋ではお昼ご飯を食べた。\n吹屋の通りにストリートオルガンが置かれていて、ちょっとだけ弾いてみた。電子じゃないオルガンを弾くのは初めて。\n風を送るために常に足をふみふみしている必要があって、慣れないとリズムを取るのが難しそう。鍵盤の数がピアノよりも少なくて、弾いてて指が迷子になった。(そして鍵盤の右の方には楽譜がピン止めされていて鍵盤を隠していて邪魔だった…。)\nnariwa-museum.or.jp\n吹屋の次は高梁市成羽美術館に行った。写真なし。\n臨時展の「生誕140年記念　芸術家 児島虎次郎の古代エジプト蒐集記」が目的。 https://nariwa-museum.or.jp/current_exhibition/ (パーマリンクじゃない…)\n主にアサシンクリードオリジンズや遊戯王の影響で、エジプトは興味が強い国の一つなので気になっていた。アサクリオリジンズで予習していたので、地理が少しだけ理解しやすかった。\n美術品が展示されているだけではなく、博物館のように詳細な解説も充実していてかなり楽しかった。\n「ファイアンス」というガラスに近い焼き物があり、現在でも作り方がよくわかっていないという話が面白かった。かなり細かいオブジェクトが作られていてすごい。\nエジプトに行きたくなった。行きたいなあ。\n吹屋の郵便局。いい感じだった\n沢柳の滝。いい滝\n滝の目の前の空が広かった。\n\nこの辺焼け焦げた家が多いなと思っていたけど、焼杉板という技法があるのか。てっきり火事にあった家をそのまま使ってるのかと思ってた\n— 🎹 (@p_ck_) May 1, 2022\n  \nこのあたりで焼け焦げた外壁を持つ家が多くて気になっていた。調べたら「焼杉板」と呼ぶということを知った。\n最初に見たときは「隣が火事で焼けてしまったのかな」ぐらいに思っていたのだけど、結構な頻度で見かけるのでそうではないなと気がついた。気になって「木造住宅 外壁 焦げ」などでググって答えを知った。\n杉板を焼いて外側を炭化させることで、腐ったりしにくくなるらしい。ボロボロに崩れたりしないものなのかちょっと気になる。\n東ではあまり見られない文化のようなので、今まで知らなかったのも納得。",
@@ -3096,6 +3111,21 @@
       "feedUrl": "https://katsumakazuyo.hatenablog.com/rss",
       "siteUrl": "https://katsumakazuyo.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438088680431",
+          "author": null,
+          "description": "半年以上、GoogleのPixel6に初めて搭載された句読点が自動で入るGoogleの音声入力を試してきましたが、結局Simejiにはかなわないと言う結論になってSimejiに戻しました。\nPixel6の方でも、外部マイクを使うとそこそこましになったので、しばらく外部マイクで使っていたのですが、よく考えたら、Simejiと外部マイクの組み合わせの方がより正確なのではないかと思って試してみたところ、それが正解でして、今ではせっかく買ったPixel6ですが、結局Simejiで運用しています。\nPixel6の音声入力はなぜか音声入力の時に半角スペースが山のように入ってしまうとか、あるいは語尾を一部聞き逃す、そして何と言っても厳しかったのが、文脈の中で正しい同音異語を選択してくれないことが多く、１パラグラフで1回ぐらいは修正が必要になってしまったのでちょっと実用的に厳しかったのです。\nまた細かい話ですが、Simejiの場合にも音声入力をしてる時にかなり音声入力の波形が明確に見えるのですが、Pixel6の場合には輪っかがちょっとグラグラ動くぐらいなので、その音声フィードバックの仕組みもちょっと弱かったのです。\nまあ、いずれにしても、フットスイッチも手に入りましたし、外部マイクの組み合わせで非常に正確に入力できるということもわかりましたので、実用上問題はないのでしばらくはこの流れでいきたいと思います。\nどうせSimejiで入力するのであれば、Pixel6ではなくもっと安いAndroidで良かったのですが、まあこれはこれで色々試したので良しとしましょう。",
+          "link": "https://katsumakazuyo.hatenablog.com/entry/2022/05/03/094244",
+          "publishedOn": "2022-05-03T00:42:44.000Z",
+          "wordCount": 196,
+          "title": "結局、音声入力はSimejiと外部マイクの組み合わせに戻しています",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/13574176438087762960",
           "author": null,
@@ -7099,15 +7129,6 @@
           "publishedOn": "2022-02-03T13:56:33.000Z",
           "wordCount": 47,
           "title": "20220203"
-        },
-        {
-          "id": "https://note.com/dak/n/n749d8bbc35d6",
-          "author": null,
-          "description": "うおやっべ日記かくの忘れてた\nということでドン横界隈のメンクリに行ってきました\n続きをみる",
-          "link": "https://note.com/dak/n/n749d8bbc35d6",
-          "publishedOn": "2022-02-02T12:14:47.000Z",
-          "wordCount": 55,
-          "title": "20220202"
         }
       ]
     },

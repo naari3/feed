@@ -74,6 +74,67 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-05-03">2022-05-03</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2022-05-02</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/05/03/100001" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+Rails 7のリリースノートを読んでいて、Active Recordの変更が一部Active Jobのセクションに書かれていたのに気がついたので修正した。
+AR::Relation#mergeは、同じカラムに対するwhereがあった時は引数の方の条件で上書きする、という挙動を知った。
+User.where(name: &#x27;foo&#x27;, id: 1).where(id: 2)             # WHERE name &#x3D; &#x27;foo&#x27; AND id &#x3D; 1 AND id &#x3D; 2
+User.where(name: &#x27;foo&#x27;, id: 1).merge(User.where(id: 2)) # WHERE name &#x3D; &#x27;foo&#x27; AND id &#x3D; 2
+
+
+
+mergeを使った場合もwhereを直接書いたのと同じ結果になると思っていたので驚いた。mergeは2つのクエリの積を取るようなメソッドだと誤解していた。
+AR::Relation#mergeはHash#mergeなどと同じような挙動をする、ということっぽい。
+この挙動は、Rails 7のリリースノートの#mergeの非互換を読んでいて知った。
+https://railsguides.jp/7_0_release_notes.html#active-record-%E4%B8%BB%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
+              rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">結局、音声入力はSimejiと外部マイクの組み合わせに戻しています</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2022/05/03/094244" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>半年以上、GoogleのPixel6に初めて搭載された句読点が自動で入るGoogleの音声入力を試してきましたが、結局Simejiにはかなわないと言う結論になってSimejiに戻しました。
+Pixel6の方でも、外部マイクを使うとそこそこましになったので、しばらく外部マイクで使っていたのですが、よく考えたら、Simejiと外部マイクの組み合わせの方がより正確なのではないかと思って試してみたところ、それが正解でして、今ではせっかく買ったPixel6ですが、結局Simejiで運用しています。
+Pixel6の音声入力はなぜか音声入力の時に半角スペースが山のように入ってしまうとか、あるいは語尾を一部聞き逃す、そして何と言っても厳しかったのが、文脈の中で正しい同音異語を選択してくれないことが多く、１パラグラフで1回ぐらいは修正が必要になってしまったのでちょっと実用的に厳しかったのです。
+また細かい話ですが、Simejiの場合にも音声入力をしてる時にかなり音声入力の波形が明確に見えるのですが、Pixel6の場合には輪っかがちょっとグラグラ動くぐらいなので、その音声フィードバックの仕組みもちょっと弱かったのです。
+まあ、いずれにしても、フットスイッチも手に入りましたし、外部マイクの組み合わせで非常に正確に入力できるということもわかりましたので、実用上問題はないのでしばらくはこの流れでいきたいと思います。
+どうせSimejiで入力するのであれば、Pixel6ではなくもっと安いAndroidで良かったのですが、まあこれはこれで色々試したので良しとしましょう。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-05-02">2022-05-02</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -26037,32 +26098,11 @@ MVの映像もキマってるし、絶対この時代じゃないエッセンス
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank"
-              rel="noopener">okazsystem</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">20220202</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/dak/n/n749d8bbc35d6" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>うおやっべ日記かくの忘れてた
-ということでドン横界隈のメンクリに行ってきました
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-05-03T00:02:43.099Z">2022-05-03T00:02:43.099Z</time>
+    <time id="build-timestamp" datetime="2022-05-03T01:29:22.364Z">2022-05-03T01:29:22.364Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
