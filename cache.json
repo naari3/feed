@@ -871,20 +871,6 @@
             "type": "image/jpeg",
             "length": "0"
           }
-        },
-        {
-          "id": "hatenablog://entry/13574176438059692538",
-          "author": null,
-          "description": "github.com\ngithub.com\ngem_rbs_collection で code owners機能を有効にした。\nこれでgemの単位でRBSを書くメンテナを増やせるようになった。\n次のような設定がされている。\ngemの単位で権限を与えたい人を ruby/gem_rbs_collection リポジトリに outside collaboratorとしてwrite権限で招待する\n\n\ncollaborator はこのリポジトリの全てを読み書きできるようになる\nそのため、code owners 機能を使って触れる範囲を狭める必要がある\nmainブランチにbranch protectionを設定する\n\n\n1 approval 以上を必須にする\n\n\nこれで collaborator が勝手にPRをマージできないようになる\ncode ownerによるapproveを必須にする\n\n\nこれでcode ownerは自分がownerのファイルへのPRをマージできるようになる\nCODEOWNERSファイルに、ファイルの対応を書く\n\n\n各gemにcollaboratorをassignする\nファイルの先頭で*  @pockeのように全てのファイルに対するcode ownerを設定する\n\n\nこれを設定しないと、code ownerが明示的に指定されていないファイルへのPRをcollaboratorがマージできてしまう\ncode owners機能は便利なような、微妙に使いづらいような。\ncollaboratorの権限はある程度制限できている(と思う)のだけど、私など元からいるメンテナの権限も同様に制限されてしまってちょっとやりづらい。\nただ、リポジトリのadmin権限があれば強権マージができるので、たぶん強権マージを乱発する体制になる。\nたとえば*  @pockeが効いているファイルへのPRは私がapproveしないとマージできないのだけど、私自身で開いたPRは自分でapproveできないので、強権マージできないと詰む。\ncollaboratorの権限に関してもちょっと微妙なところがある。collaboratorも自身が開いたPRを自身でapproveできないので、code ownerになっていても他者のPRをマージできるだけで自身のPRはマージできない。\nあと、issueの権限は完全にオープンになっていると思うので、全然関係ないissueを閉じれたりしてしまいそう。issueに関してはこれはroleの権限を調整すればなんとかできるような気もしている。",
-          "link": "https://commits.hatenablog.com/entry/2022/02/04/100001",
-          "publishedOn": "2022-02-04T01:00:01.000Z",
-          "wordCount": 195,
-          "title": "2022-02-03",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },
