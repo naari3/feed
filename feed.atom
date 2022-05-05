@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-05T11:01:55.970Z</updated>
+    <updated>2022-05-05T12:02:10.782Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[エッセイ：自分のアカウントが何のアカウントなのかよくわからない]]></title>
+        <id>https://note.com/sizes/n/ne83f9088e37f</id>
+        <link href="https://note.com/sizes/n/ne83f9088e37f"/>
+        <updated>2022-05-05T11:49:26.000Z</updated>
+        <summary type="html"><![CDATA[ポケモン勢としてのアカウントを畳んでから、もう半年くらい経つ。もしかすると僕はポケモンオタクではなくなり、よくわからない不気味なアカウントしか残っていない。
+
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220504「読書日記　その2」]]></title>
         <id>hatenablog://entry/13574176438089388017</id>
@@ -17847,36 +17859,6 @@ Google Domains のメール転送を使っていたが、DNS は Cloudflare を�
 　濁音半濁音は思いついたら書きました、あとタイトルだけ知ってるものも多いのでメロディー知ら…]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[サイトの HTTP3 化と DNS HTTPS RR および Alt-Svc Header によるアドバタイズ]]></title>
-        <id>https://blog.jxck.io/entries/2022-02-05/http3.html</id>
-        <link href="https://blog.jxck.io/entries/2022-02-05/http3.html"/>
-        <updated>2022-02-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[本サイトを HTTP3 対応し、Alt-Svc ヘッダおよび DNS HTTPS Resource Record によってそれをアドバタイズする構成を適用した。色々ハマったので作業のログを記す。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Firebase を Firebase コンソールにログインせずに terraform から使う回（存在しない回）]]></title>
-        <id>https://blog.ojisan.io/fire-fire</id>
-        <link href="https://blog.ojisan.io/fire-fire"/>
-        <updated>2022-02-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Firestore や Firebase Auth は GCP から利用できることをご存知でしょうか？   実は Firestore はそのまま使えますし、Auth も Identity Platform がそれとして使えます。 そこで思うわけです、Firebase…]]></summary>
-        <author>
-            <name>Your Site's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[日記]]></title>
-        <id>https://r7kamura.com/articles/2022-02-05-diary</id>
-        <link href="https://r7kamura.com/articles/2022-02-05-diary"/>
-        <updated>2022-02-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[朝起きるときのしんどさが直感的ではない。]]></summary>
-        <author>
-            <name>r7kamura.com</name>
         </author>
     </entry>
 </feed>
