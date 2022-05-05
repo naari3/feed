@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-05T19:01:54.910Z</updated>
+    <updated>2022-05-05T20:02:14.769Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -164,6 +164,16 @@ Amazon
 　印象に残っているのは漫画・アニメグッズのコーナーで、やはりGWとだけあって混んでいた店内のなかでは最も空いていた場所だった。…]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NextJS でコンテンツモデルを無視してHTMLを書くと Dev サーバーでエラー扱いになる理由を調べた]]></title>
+        <id>https://blog.ojisan.io/next-nest-ng</id>
+        <link href="https://blog.ojisan.io/next-nest-ng"/>
+        <updated>2022-05-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[next-nest-ng っていうとても紛らわしい URL になってしまいましたが、今日話したいことはずばりそれです。 結論: 理由が完全には分からなかったが、ちゃんと HTML…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -17888,18 +17898,6 @@ Catch-all address に書かれているとおり、機能として Catch-all が
 Google Domains のメール転送を使っていたが、DNS は Cloudflare を使っているので Email Routing を使うようにした。]]></summary>
         <author>
             <name>Posts on ストイックに生きたい</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エッセイ：絵が古い]]></title>
-        <id>https://note.com/sizes/n/ne92af3c96e85</id>
-        <link href="https://note.com/sizes/n/ne92af3c96e85"/>
-        <updated>2022-02-05T07:17:52.000Z</updated>
-        <summary type="html"><![CDATA[6歳下のひとと話していて聞いたことなのだけれど、「絵が古い」という感覚がないらしい。リアルタイムで体験したコンテンツの絵はすでに洗練されているし、CLANNADを見ても「そういう絵柄なんだなあ」程度。
-これは目からウロコだった。ゼロ年代や震災あたりのコンテンツは自分が体験していないから、そもそも錆びたとかカビたとかそういう感覚が、ない。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>
