@@ -9696,15 +9696,6 @@
           "publishedOn": "2022-02-08T07:19:02.000Z",
           "wordCount": null,
           "title": "エッセイ:ラーメンハゲ"
-        },
-        {
-          "id": "https://note.com/sizes/n/nc978972d629b",
-          "author": null,
-          "description": "どのメディアを見てもSNSを見ても、たとえ新聞を読んでも書店を一瞥しても自己実現第一主義みたいなのが根差しているなと思う。社会的成功と何者かになることがイコールになったという感想がある。\nいくらなんでも過激すぎると思うのだが、こういう風潮にカウンターして「うまいもん食ってゲームやってたら幸せ」みたいな幸福論を創造するのもあまりにも短絡的すぎるし、中国の「寝そべり族」みたいなライフスタイルを肯定したり実践したりする態度も、正直しょうもない。\n続きをみる",
-          "link": "https://note.com/sizes/n/nc978972d629b",
-          "publishedOn": "2022-02-06T08:27:30.000Z",
-          "wordCount": 43,
-          "title": "エッセイ：自己実現2"
         }
       ]
     },
@@ -10466,6 +10457,16 @@
       "feedUrl": "https://blog.ojisan.io/rss.xml",
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
+        {
+          "id": "https://blog.ojisan.io/fastly-domain-config",
+          "author": null,
+          "description": "分かってしまえば簡単な話ではあるがいろいろ回り道をしたのでメモ。\nこの辺の設定は偉大なる先輩方や同僚方にすでにしてもらっていることもあってよく分かっていない。\n事実、Gatsby の DSG を Fastly…",
+          "link": "https://blog.ojisan.io/fastly-domain-config",
+          "publishedOn": "2022-05-07T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Fastly に自ドメインを設定する",
+          "imageUrl": null
+        },
         {
           "id": "https://blog.ojisan.io/next-nest-ng",
           "author": null,
