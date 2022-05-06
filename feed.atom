@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-05T23:01:54.655Z</updated>
+    <updated>2022-05-06T00:02:43.558Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GitHub Docsで常に英語版を表示]]></title>
+        <id>https://r7kamura.com/articles/2022-05-06-for-en-github-docs-lovers</id>
+        <link href="https://r7kamura.com/articles/2022-05-06-for-en-github-docs-lovers"/>
+        <updated>2022-05-05T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub Docsで日本語版のページを訪れるたびに英語版に切り替えていて、この操作が煩わしかったので、ブラウザ拡張を入れて自動化した。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GitHub Pagesとテンプレートリポジトリ]]></title>
         <id>https://r7kamura.com/articles/2022-05-06-github-pages-and-template-repository</id>
@@ -17878,36 +17888,6 @@ XY以降のポケモン本編が3Dになってしまったことやジオシテ�
 続きをみる]]></summary>
         <author>
             <name>okazsystem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Catch All Custom Domain]]></title>
-        <id>https://blog.sakamo.dev/post/catch-all-custom-domain/</id>
-        <link href="https://blog.sakamo.dev/post/catch-all-custom-domain/"/>
-        <updated>2022-02-05T11:16:12.000Z</updated>
-        <summary type="html"><![CDATA[独自ドメインでメールを受信する
-
-
-
-    
-
-Tweet
-
-モチベーション
-ドメインをいくつか持っていて有効活用したくなり、特定のドメインに送信されたメールを Gmail に転送したくなった。
-とりあえず実際に動くことを確認したのは Google Domains と Cloudflare Email Routing である。
-Google Domains
-Google Domains を使っている場合は、メール転送の機能を使うだけでいいので簡単である。
-*@example.com に対して設定すれば、全てのメールを転送することができる。
-カスタム ネームサーバーによるメール転送を設定する に書いてあるとおり、MX レコードを追加すると転送できる。
-
-Cloudflare Email Routing
-Email Routing は現在ベータ版の機能なので、Waitlist に登録しましょう。
-Catch-all address に書かれているとおり、機能として Catch-all があるので設定するだけで特定のアドレスに転送することができる。
-おわり
-Google Domains のメール転送を使っていたが、DNS は Cloudflare を使っているので Email Routing を使うようにした。]]></summary>
-        <author>
-            <name>Posts on ストイックに生きたい</name>
         </author>
     </entry>
 </feed>

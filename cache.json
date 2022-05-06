@@ -10363,17 +10363,7 @@
       "title": "Posts on ストイックに生きたい",
       "feedUrl": "https://blog.sakamo.dev/post/index.xml",
       "siteUrl": "https://blog.sakamo.dev/post/",
-      "articles": [
-        {
-          "id": "https://blog.sakamo.dev/post/catch-all-custom-domain/",
-          "author": null,
-          "description": "独自ドメインでメールを受信する\n\n\n\n    \n\nTweet\n\nモチベーション\nドメインをいくつか持っていて有効活用したくなり、特定のドメインに送信されたメールを Gmail に転送したくなった。\nとりあえず実際に動くことを確認したのは Google Domains と Cloudflare Email Routing である。\nGoogle Domains\nGoogle Domains を使っている場合は、メール転送の機能を使うだけでいいので簡単である。\n*@example.com に対して設定すれば、全てのメールを転送することができる。\nカスタム ネームサーバーによるメール転送を設定する に書いてあるとおり、MX レコードを追加すると転送できる。\n\nCloudflare Email Routing\nEmail Routing は現在ベータ版の機能なので、Waitlist に登録しましょう。\nCatch-all address に書かれているとおり、機能として Catch-all があるので設定するだけで特定のアドレスに転送することができる。\nおわり\nGoogle Domains のメール転送を使っていたが、DNS は Cloudflare を使っているので Email Routing を使うようにした。",
-          "link": "https://blog.sakamo.dev/post/catch-all-custom-domain/",
-          "publishedOn": "2022-02-05T11:16:12.000Z",
-          "wordCount": 87,
-          "title": "Catch All Custom Domain"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Wesley Aptekar-Cassels",
@@ -11818,6 +11808,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2022-05-06-for-en-github-docs-lovers",
+          "author": null,
+          "description": "GitHub Docsで日本語版のページを訪れるたびに英語版に切り替えていて、この操作が煩わしかったので、ブラウザ拡張を入れて自動化した。",
+          "link": "https://r7kamura.com/articles/2022-05-06-for-en-github-docs-lovers",
+          "publishedOn": "2022-05-05T15:00:00.000Z",
+          "wordCount": null,
+          "title": "GitHub Docsで常に英語版を表示",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2022-05-06-github-pages-and-template-repository",
           "author": null,
