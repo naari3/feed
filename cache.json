@@ -10742,16 +10742,6 @@
           "wordCount": 218,
           "title": "音声入力でメモを書けるウェブアプリを書いた、x-callbackを使ったアプリケーション連携",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2022/02/06/jsprimer-es2022-working/",
-          "author": null,
-          "description": "ECMAScriptは、毎年6月ごろに新しいバージョンがスナップショットとしてリリースされます。\n次のバージョンであるECMAScript 2022は6月に公開される予定です。\nECMAScriptの策定プロセスについては、JavaScript Primer - 迷わないための入門書(jsprimer)でも解説しています。\nECMAScript · JavaScript Primer #jsprimer\n毎年これに合わせる形で、jsprimerのECMAScript 2022の対応作業をやっています。\nリポジトリ: asciidwango/js-primer: JavaScript Primer - 迷わないための入門書\njsprimerはJavaScriptの入門書ですが、毎年のECMAScriptのアップデートに合わせて更新しています。\nJavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch\nこの記事は、ES2022対応の作業メモとオープンソースな書籍に対するContributorの募集記事です。\nES2022の対応予定\njsprimerでES2022の対応予定については、次のMeta Issueで管理しています。\nECMAScript 2022対応 · Issue #1337 · asciidwango/js-primer\nES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の変更が入った感じがします。\n具体的には、次のProposalがES2022で入る予定です。\nClass\n\n\ntc39/proposal-private-methods: Private methods and getter/setters for ES6 clas…",
-          "link": "https://efcl.info/2022/02/06/jsprimer-es2022-working/",
-          "publishedOn": "2022-02-06T05:47:00.000Z",
-          "wordCount": 224,
-          "title": "jsprimerのES2022対応中、コントリビュート歓迎です",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },

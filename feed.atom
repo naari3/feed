@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-06T17:06:45.121Z</updated>
+    <updated>2022-05-06T18:01:54.845Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17804,33 +17804,6 @@ PKIって何？とか公開鍵認証って何？とかそういうことは説�
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[jsprimerのES2022対応中、コントリビュート歓迎です]]></title>
-        <id>https://efcl.info/2022/02/06/jsprimer-es2022-working/</id>
-        <link href="https://efcl.info/2022/02/06/jsprimer-es2022-working/"/>
-        <updated>2022-02-06T05:47:00.000Z</updated>
-        <summary type="html"><![CDATA[ECMAScriptは、毎年6月ごろに新しいバージョンがスナップショットとしてリリースされます。
-次のバージョンであるECMAScript 2022は6月に公開される予定です。
-ECMAScriptの策定プロセスについては、JavaScript Primer - 迷わないための入門書(jsprimer)でも解説しています。
-ECMAScript · JavaScript Primer #jsprimer
-毎年これに合わせる形で、jsprimerのECMAScript 2022の対応作業をやっています。
-リポジトリ: asciidwango/js-primer: JavaScript Primer - 迷わないための入門書
-jsprimerはJavaScriptの入門書ですが、毎年のECMAScriptのアップデートに合わせて更新しています。
-JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch
-この記事は、ES2022対応の作業メモとオープンソースな書籍に対するContributorの募集記事です。
-ES2022の対応予定
-jsprimerでES2022の対応予定については、次のMeta Issueで管理しています。
-ECMAScript 2022対応 · Issue #1337 · asciidwango/js-primer
-ES2022は、ES2017のAsync functions (async/await) 以来の大きな構文の変更が入った感じがします。
-具体的には、次のProposalがES2022で入る予定です。
-Class
-
-
-tc39/proposal-private-methods: Private methods and getter/setters for ES6 clas…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
