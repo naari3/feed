@@ -335,6 +335,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438089857868",
+          "author": null,
+          "description": "github.com\nActive Record Validation のRails Guideを読んでいて、気になったところがいくつかあったのでPRした。\n上記Rails Guideを読んでいて、NumericalityValidatorがよくわからなかったので調べていた。\nRails Guideで次のように書かれているところに引っかかった。\nそれ以外の場合は、Floatを用いる数値の変換を試みます。Floatは、カラムの精度または15を用いてBigDecimalにキャストされます。\nhttps://railsguides.jp/active_record_validations.html#numericality\n\n\n原文だと以下のように書かれている\nOtherwise, it will try to convert the value to a number using Float. Floats are casted to BigDecimal using the column's precision value or 15.\nhttps://guides.rubyonrails.org/active_record_validations.html#numericality\n\n\nここでは、「値をFloatに変換したあと、BigDecimalに変換する」と書かれている。\nFloatに変換した段階で情報が落ちるので、なぜ直接BigDecimalに変換しないのだろうと気になった。\nこの実装は次のあたりにある。\ngithub.com\nどうやら'0.12345'のような値がこのvalidatorに渡ってきたときに、この「FloatにしてからBigDecimalにする」という処理を通りそうということがわかった。\n経緯を追っていると、次のPRが見つかった。\ngithub.com\nこのPRでは、もともとKernel.BigDecimalを呼んでいたところで、Kernel.Floatを呼んだあとto_dを呼ぶように変更されている。その意図は、to_fを定義したPOROをこのvalidatorに渡したときにうまく動くようにするため、のよう。\nこの挙動については、意図した挙動のように見える。次のドキュメントでは「Precision of Kernel.Float values are guaranteed up to 15 digits.」と言っていて、15以上の精度が保証されているとは言っていない。\ngithub.com\nまた、Active Record側のコードを見ると、精度をFloat::DIG( == 15)で打ち切っている。\ngithub.com\nということで、まあこれは意図した挙動なのではないかという気がしている。\n実際これが問題になるのは、'0.1234567890123456789'のような15桁を超える値がユーザーから送られてきて、かつそれを15桁を超える精度で比較したいときだけだと思う。validationという文脈ではそこまで細かい精度が必要になることはあまりない気がするので、問題にはなりづらい気がしている。\nちなみに、DB上ではこの精度は15より大きい値が許されているので(Floatより高い精度で計算したいのだからそれはそうか)、例えば20桁の精度で定義したカラムを持っているRails appとかはなにか問題を踏んだりしないのだろうか、とかはちょっと気になる。\nwww.postgresql.jp\ndev.mysql.com",
+          "link": "https://commits.hatenablog.com/entry/2022/05/07/100007",
+          "publishedOn": "2022-05-07T01:00:07.000Z",
+          "wordCount": 215,
+          "title": "2022-05-06",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438089259453",
           "author": null,
           "description": "大砲とスタンプ（１） (モーニングコミックス)\n\n作者:速水螺旋人\n講談社\nAmazon\n\n大砲とスタンプ、全9巻読んだ。しばらく前に1巻だけ読んで放置してたのだけど、読み返した。\n面白かった。謎兵器紹介も好き。ただ、つらい気持ち…。\n\nつらい、登場人物全員が幸せになる漫画だけ読んで生きていたい\n— 🎹 (@p_ck_) May 4, 2022\n  twitter.com\n感想です。",
@@ -3677,20 +3692,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220310/20220310064828.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438060708926",
-          "author": null,
-          "description": "長い上に割と複雑なので最後まで読む人はほとんどいないと思うのですが、将来確実に忘れてしまう自分のために書いたので別に悲しくありません。\nまえがき\n背景\nsigstoreの概要\nsigstoreを構成するツール郡\nCosign\nRekor\nFulcio\n署名方法\nコンテナイメージ\n鍵ペアの生成\n署名\n検証\nBlobs\n鍵ペアの生成\n署名\n検証\n署名の仕組み\nコンテナイメージ\nOCI Registryについて\n署名の保存先\n署名フォーマット\n署名検証\n検証が不十分な例\nBlobs\n参考\nまとめ\nまえがき\n鍵の管理不要でソフトウェア署名を可能にするKeyless Signingについて解説を書こうと思い、まず前提知識を書いていたら信じられないぐらい長くなったので前提知識だけで1つの記事になりました。\n後述するsigstoreは急速に開発が進んでいるプロジェクトであり、ここで書いている記述は少し経ったら不正確になる可能性があります。本記事の内容は参考程度に留め、公式ドキュメントやソースコードなどを参照してください。昔はそうだったのかなぐらいで見てもらえればと思います。\nまた、最近認証や署名周りを追っていなかったこともあり、割と忘れていて用語の使い方が多少怪しいところがあるかもしれません。その場合はご指摘いただければ修正します。\nPKIって何？とか公開鍵認証って何？とかそういうことは説明していません。\n背景\n近年開発されるサービスやソフトウェアはオープンソースソフトウェア（OSS）に依存することが一般的になっています。一方で、自分達が依存しているOSSの一覧を把握することは困難であり、さらにはそれらOSSがどこで管理されているのか、どのようにビルドされているのか、などを把握することはより困難です。その結果、いわゆるサプライチェーン攻撃を受けやすい状況になっています。サプライチェーン攻…",
-          "link": "https://knqyf263.hatenablog.com/entry/2022/02/06/213003",
-          "publishedOn": "2022-02-06T12:30:03.000Z",
-          "wordCount": 1207,
-          "title": "sigstoreによるコンテナイメージやソフトウェアの署名",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220206/20220206210659.png",
-            "type": "image/png",
-            "length": "0"
-          }
         }
       ]
     },

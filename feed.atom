@@ -2,10 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-07T00:02:38.119Z</updated>
+    <updated>2022-05-07T01:28:59.967Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2022-05-06]]></title>
+        <id>hatenablog://entry/13574176438089857868</id>
+        <link href="https://commits.hatenablog.com/entry/2022/05/07/100007"/>
+        <updated>2022-05-07T01:00:07.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+Active Record Validation のRails Guideを読んでいて、気になったところがいくつかあったのでPRした。
+上記Rails Guideを読んでいて、NumericalityValidatorがよくわからなかったので調べていた。
+Rails Guideで次のように書かれているところに引っかかった。
+それ以外の場合は、Floatを用いる数値の変換を試みます。Floatは、カラムの精度または15を用いてBigDecimalにキャストされます。
+https://railsguides.jp/active_record_validations.html#numericality
+
+
+原文だと以下のように書かれている
+Otherwise, it will try to convert the value to a number using Float. Floats are casted to BigDecimal using the column's precision value or 15.
+https://guides.rubyonrails.org/active_record_validations.html#numericality
+
+
+ここでは、「値をFloatに変換したあと、BigDecimalに変換する」と書かれている。
+Floatに変換した段階で情報が落ちるので、なぜ直接BigDecimalに変換しないのだろうと気になった。
+この実装は次のあたりにある。
+github.com
+どうやら'0.12345'のような値がこのvalidatorに渡ってきたときに、この「FloatにしてからBigDecimalにする」という処理を通りそうということがわかった。
+経緯を追っていると、次のPRが見つかった。
+github.com
+このPRでは、もともとKernel.BigDecimalを呼んでいたところで、Kernel.Floatを呼んだあとto_dを呼ぶように変更されている。その意図は、to_fを定義したPOROをこのvalidatorに渡したときにうまく動くようにするため、のよう。
+この挙動については、意図した挙動のように見える。次のドキュメントでは「Precision of Kernel.Float values are guaranteed up to 15 digits.」と言っていて、15以上の精度が保証されているとは言っていない。
+github.com
+また、Active Record側のコードを見ると、精度をFloat::DIG( == 15)で打ち切っている。
+github.com
+ということで、まあこれは意図した挙動なのではないかという気がしている。
+実際これが問題になるのは、'0.1234567890123456789'のような15桁を超える値がユーザーから送られてきて、かつそれを15桁を超える精度で比較したいときだけだと思う。validationという文脈ではそこまで細かい精度が必要になることはあまりない気がするので、問題にはなりづらい気がしている。
+ちなみに、DB上ではこの精度は15より大きい値が許されているので(Floatより高い精度で計算したいのだからそれはそうか)、例えば20桁の精度で定義したカラムを持っているRails appとかはなにか問題を踏んだりしないのだろうか、とかはちょっと気になる。
+www.postgresql.jp
+dev.mysql.com]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fastly に自ドメインを設定する]]></title>
         <id>https://blog.ojisan.io/fastly-domain-config</id>
@@ -17743,49 +17782,6 @@ https://asicshu.jp/　すごいサイト見つけた
 続きをみる]]></summary>
         <author>
             <name>okazsystem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[sigstoreによるコンテナイメージやソフトウェアの署名]]></title>
-        <id>hatenablog://entry/13574176438060708926</id>
-        <link href="https://knqyf263.hatenablog.com/entry/2022/02/06/213003"/>
-        <updated>2022-02-06T12:30:03.000Z</updated>
-        <summary type="html"><![CDATA[長い上に割と複雑なので最後まで読む人はほとんどいないと思うのですが、将来確実に忘れてしまう自分のために書いたので別に悲しくありません。
-まえがき
-背景
-sigstoreの概要
-sigstoreを構成するツール郡
-Cosign
-Rekor
-Fulcio
-署名方法
-コンテナイメージ
-鍵ペアの生成
-署名
-検証
-Blobs
-鍵ペアの生成
-署名
-検証
-署名の仕組み
-コンテナイメージ
-OCI Registryについて
-署名の保存先
-署名フォーマット
-署名検証
-検証が不十分な例
-Blobs
-参考
-まとめ
-まえがき
-鍵の管理不要でソフトウェア署名を可能にするKeyless Signingについて解説を書こうと思い、まず前提知識を書いていたら信じられないぐらい長くなったので前提知識だけで1つの記事になりました。
-後述するsigstoreは急速に開発が進んでいるプロジェクトであり、ここで書いている記述は少し経ったら不正確になる可能性があります。本記事の内容は参考程度に留め、公式ドキュメントやソースコードなどを参照してください。昔はそうだったのかなぐらいで見てもらえればと思います。
-また、最近認証や署名周りを追っていなかったこともあり、割と忘れていて用語の使い方が多少怪しいところがあるかもしれません。その場合はご指摘いただければ修正します。
-PKIって何？とか公開鍵認証って何？とかそういうことは説明していません。
-背景
-近年開発されるサービスやソフトウェアはオープンソースソフトウェア（OSS）に依存することが一般的になっています。一方で、自分達が依存しているOSSの一覧を把握することは困難であり、さらにはそれらOSSがどこで管理されているのか、どのようにビルドされているのか、などを把握することはより困難です。その結果、いわゆるサプライチェーン攻撃を受けやすい状況になっています。サプライチェーン攻…]]></summary>
-        <author>
-            <name>knqyf263's blog</name>
         </author>
     </entry>
 </feed>
