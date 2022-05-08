@@ -78,6 +78,47 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Chromeでネットの弱い環境を再現する方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/05/08/172659" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+とりわけ WebRTCを使ってリアルタイムな通話をしていると、ネット環境の弱いことが原因で、ろくに通話できないという問題が発生する。そのため、ネットの弱い環境を再現して動作を確認する必要が出てくる。本記事ではネットの弱い環境を簡単に設定できる方法を紹介しておく。
+Chrome console より設定の流れ
+1: Chrome consoleを起動する。
+Chromeページ内で右クリック &gt; 検証
+
+
+2: 上部タブの &gt;&gt; より、Networkを選択
+
+3: No throttling のエリアをクリックしてAdd... で新規追加
+
+好きなようにセットできるが、およそネットワークの&quot;弱い環境&quot;は以下。
+Download: 10kbit/s
+Upload: 10kbit/s
+Latency: 1000ms
+4: 右上 x で戻り、No throttling のエリアを作成したネット環境に適用
+5: 確認後、戻すことをお忘れなく
+実際のスピードは Googleインターネット速度テスト にて確認しよう。
+終わりに
+ユーザーのことを考えると、現時点ではネットの弱い環境を再現してテストすることは必須と言えよう。
+早く世間一般のネットワーク速度が速く快適になることを祈る。</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220508/20220508172120.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://baibukken.hatenablog.com/" target="_blank"
               rel="noopener">思い出したら書きます</a></h3>
           <section class="articles-per-source">
@@ -26320,7 +26361,7 @@ Firebase…</span>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-05-08T08:01:51.554Z">2022-05-08T08:01:51.554Z</time>
+    <time id="build-timestamp" datetime="2022-05-08T09:02:04.319Z">2022-05-08T09:02:04.319Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
