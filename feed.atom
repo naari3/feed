@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-10T03:09:47.876Z</updated>
+    <updated>2022-05-10T04:01:44.655Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17942,91 +17942,6 @@ Amazon
         <summary type="html"><![CDATA[このインタビューではメルペイのフロントエンド開発を支える @ryotah 、 @yutapon 、@tokuda109 、 @dwj の4人に今取り組んでいることや、技術スタック、今後の展望などを聞いています。メルペイの […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SNES Development Part 6: Sprites]]></title>
-        <id>https://blog.wesleyac.com/posts/snes-dev-6-sprites</id>
-        <link href="https://blog.wesleyac.com/posts/snes-dev-6-sprites"/>
-        <updated>2022-02-09T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is part six of my series on SNES development. You may want to start with the first post.
-In the sixth, and likely final segment of this SNES tutorial, we're going to draw a sprite (or rather, an "object") on the screen! Once we're through with this, you should have basically everything you need to go off into the world and make SNES games all on your own :)
-As usual, I recommend the Retro Game Mechanics Explained video on Objects as prerequisite background material.
-We're going to allocate some space to save a copy of our OAM, which we'll DMA to the actual OAM memory every frame. We'll need to add a new palette for the sprites, and some new tiles. Then, we'll set sprite zero to use our tile and palette, and set its X and Y position. We'll make it a 16x16 sprite, because that's more in…]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SNES Development Part 5: DMA]]></title>
-        <id>https://blog.wesleyac.com/posts/snes-dev-5-dma</id>
-        <link href="https://blog.wesleyac.com/posts/snes-dev-5-dma"/>
-        <updated>2022-02-09T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is part five of my series on SNES development. You may want to start with the first post.
-In part three, I mentioned that in the future, we'd switch from using a loop to copy data into VRAM to using DMA. Well, the future is now!
-Using DMA is much faster than using a loop, which makes it easier to load large amounts of data from ROM to memory, whether that's graphics, sprite data, palettes, levels, or anything else your heart desires. It'll be useful in the next part, where we'll want to quickly send the sprite data to the SNES.
-As usual, I recommend watching the Retro Game Mechanics Explained video on DMA & HDMA first. You can stop watching once you get to the HDMA part if you'd like — only the DMA section is needed to understand this part.
-The code for this part might seem a little s…]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SNES Development Part 4: NMIs and vblank]]></title>
-        <id>https://blog.wesleyac.com/posts/snes-dev-4-nmi-and-vblank</id>
-        <link href="https://blog.wesleyac.com/posts/snes-dev-4-nmi-and-vblank"/>
-        <updated>2022-02-09T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is part four of my series on SNES development. You may want to start with the first post.
-Last time, we started reading controller inputs! However, we weren't able to get a tile to move around on the screen in response to the controller, because our code was running too fast. In this part, we'll look at how to slow down our main code so that it runs once per frame. We'll do this by modifying our NMI handler, which is called whenever the "vblank" period starts, once per frame. For context on what vblank is and how it works on the SNES, I recommend this video. This post will assume that you've watched it, or found the information in it from some other source.
-We already have a NMI routine, which we set up in the very first part of this series. What we want to do is to make sure our code…]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SNES Development Part 3: Input]]></title>
-        <id>https://blog.wesleyac.com/posts/snes-dev-3-input</id>
-        <link href="https://blog.wesleyac.com/posts/snes-dev-3-input"/>
-        <updated>2022-02-09T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is part three of my series on SNES development. You may want to start with the first post.
-In the previous part, we got some graphics rendered to the screen! Now, we're going to read some input from the controller ("joypad", in official Nintendo parlance) so we can move the graphics around.
-On the whole, this is pretty simple — we'll enable "auto-read", which will cause the input data to be read into the JOY1L and JOY1H registers, which we can then read from to get the state of all of the buttons.
-We enable the auto-read feature by setting the 0th bit of the NMITIMEN register.
-That's really all you need to know to get input working! You can see the example code and diff as per usual.
-The example code just waits to write the tile to the screen until the down button is pressed.
-Now that you can read input, there's plenty of interesting stuff you can do! I'd recommend:
-Change which button is used to render the tile.
-
-
-Make a file that has constants like JOYH_UP, JOYH_DOWN, etc, so you don't have to keep looking up the bitmasks.
-
-Make different buttons render different tiles.
-It might be tempting to jump right in and try to make a tile you can move around, but that's not going to work very well just yet — since this code is running in a tight loop, it'll move way too fast to be controllable at all. The next part will cover synchronizing with vblank so that we can get a fixed framerate.]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SNES Development Part 2: Background Graphics]]></title>
-        <id>https://blog.wesleyac.com/posts/snes-dev-2-background-graphics</id>
-        <link href="https://blog.wesleyac.com/posts/snes-dev-2-background-graphics"/>
-        <updated>2022-02-09T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is part two of my series on SNES development. You may want to read the previous post first.
-Now that we have a simple SNES ROM, let's add some graphics. In this post, we'll draw some graphics to the background. There are many explanations of the SNES background graphics architecture online, so I won't bother repeating those here — I recommend watching the Retro Game Mechanics Explained videos on Graphics & Palettes, Backgrounds & Rendering, and Background Modes. I don't usually recommend videos, but these are the best explanations I've found of this topic, in any format. This blog post is a reasonable general overview as well, but it has less information than the videos.
-The general gist of things is that we're going to set up a palette, which will give us some colors we can use, just…]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SNES Development Part 1: Getting Started]]></title>
-        <id>https://blog.wesleyac.com/posts/snes-dev-1-getting-started</id>
-        <link href="https://blog.wesleyac.com/posts/snes-dev-1-getting-started"/>
-        <updated>2022-02-09T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I fell down the rabbit hole making a homebrew SNES game a few days ago, and since I couldn't find many good resources, I figured I'd write something of a tutorial.
-There are lots of resources out there for writing NES games, but way fewer for SNES games — I think there are a few reasons for this. First, the NES is much simpler than the SNES — this is true of both the NES hardware itself, but also of the 6502 chip as opposed to the 65816 used in the SNES. Many people have an almost religious connection to the 6502, whereas the 65816 is pretty clearly a backwards-compatible hack of an architecture. Secondly, the NES is nostalgic for people who likely learned to program by writing assembly, whereas people for whom the SNES holds nostalgia are probably around a decade older, and were more like…]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
 </feed>
