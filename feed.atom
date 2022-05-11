@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-11T01:31:20.932Z</updated>
+    <updated>2022-05-11T02:38:41.081Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[プロジェクトリングノート【私の愛用している技術系アイテム】]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=13430</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/13430"/>
+        <updated>2022-05-11T02:30:18.000Z</updated>
+        <summary type="html"><![CDATA[愛用しているアイテムを紹介する企画ということで、自分からはオキナの「プロジェクトA4リングノート」を紹介したいと思います。いつもお世話になっております。 http://www.okina.co.jp/...]]></summary>
+        <author>
+            <name>藤本 椋也</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022-05-10]]></title>
         <id>hatenablog://entry/13574176438091213609</id>
@@ -93,6 +103,16 @@ youtu.be
 二次会的にカフェに行きました。バナナとカスタードとキャラメルとクッキー、チーズケーキのパフェらしくかなりおいしかった。スーツの男4人が薄暗いローテーブルを囲んでいたので、光景がマフィアめいていた。]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OBS用ポモドーロタイマー]]></title>
+        <id>https://r7kamura.com/articles/2022-05-11-pomodoro-timer-for-obs</id>
+        <link href="https://r7kamura.com/articles/2022-05-11-pomodoro-timer-for-obs"/>
+        <updated>2022-05-10T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[OBSで手軽にポモドーロタイマーを組み込めるようにした。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
@@ -17759,77 +17779,6 @@ Amazon
         <summary type="html"><![CDATA[この記事は @hatappi によって提供される Developer Productivity Engineering Camp blog series の１つです。 序論 私達 Microservices Networ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Z会復習帖ED「夢路らびりんす」パート解説]]></title>
-        <id>hatenablog://entry/13574176438061953479</id>
-        <link href="https://kaikityou.hatenablog.com/entry/2022/02/10/232813"/>
-        <updated>2022-02-10T14:28:13.000Z</updated>
-        <summary type="html"><![CDATA[急に振り返りたくなったので、Z会復習帖ED「夢路らびりんす」パートの解説をします。
- 
-(16:00辺り～)
-技術系じゃなくてストーリー解説系でこういう記事書くのかなりダサくないか？とは思うんですが、伝わってなかったら一番ダサいのと、よく考えたらそもそも僕はダサい存在なので書くことにしました。
-単純にハイコンテクストだったとも思ってます。
- 
-まず前提としてあるのが、合作自体が「Z会歴戦譚」シリーズの影響を強く受けているということです。
-一つのZ会合作と言うよりはZ会歴戦譚シリーズの続きを勝手に作ろう！ぐらいのレベルで意識してました。
- 
-
-Z会歴戦譚シリーズの歴代EDはそれぞれテーマがしっかりしてます。
-それは合作のサブタイトルとも関係してて、初代から順に「合格」「留年(落第)」「卒業」だと思ってます。Ⅱだけちょっと曖昧。
-で、そこに続くテーマは何だろうと思った時に、個人的には「就職」だと考えました。これは合作の立ち上げの時からずっと根底にあって、Z会のバカガキが亀井有馬という一人の人間になっていくみたいな演出をやりたいと考えてました。
- 
-それを踏まえてEDパート制作に入りました。
-構成をかなり大雑把に説明するとZ会定番ネタ→それぞれの努力→進路決定→締めみたいな感じでしょうか。
-基本的に演者本人の略歴をZ会素材を交えてなぞっていくという構成です。
-作りながら、歴戦譚Ⅲのifルートみたいだなぁって思いました。
- 
-イントロ：Z会定番ネタパート
-
-歴戦譚EDでおなじみのアレ。のんのんびより合作に逆輸入されたりもしましたね。
-曲はのんのんじゃないけど、定番ネタなので入れました。
- 
-
-Z会のロゴをボコボコにした後、4人の各々の努力のパートになります。
- 
-Aメロ～Bメロ：努力パート
-
-亀井有馬は大学受験をしなかったので教科書を燃やしてます。燃えろ勉強道具。
- 
-
-『リズと青…]]></summary>
-        <author>
-            <name>kaikityouの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[音声入力でメモを書けるウェブアプリを書いた、x-callbackを使ったアプリケーション連携]]></title>
-        <id>https://efcl.info/2022/02/10/voicod/</id>
-        <link href="https://efcl.info/2022/02/10/voicod/"/>
-        <updated>2022-02-10T14:13:00.000Z</updated>
-        <summary type="html"><![CDATA[voicodという音声入力でメモを書けるシンプルなウェブアプリケーションを書きました。
-音声入力でメモができるシンプルなアプリケーションを書きました。https://t.co/EHSKnNKNaL
-x-callbackを使ってショートカット.app 等と連携すれば、入力内容をNotionに保存したりできます。
-Note: SpeechRecognitionに対応したブラウザ(ChromeやSafari)が必要
-Source: https://t.co/NnzXVjlGnF pic.twitter.com/yzoA3VIzzl
-— azu (@azu_re) February 10, 2022
- 
-
-SpeechRecognitionというウェブブラウザで音声認識をするAPIを使っているので、このAPIに対応しているブラウザが必要になります。
-具体的にはGoogle ChromeやSafariなど該当します(2022-02-10時点)が、Chromeが一番相性が良いと思います。
-使い方
-https://voicod.pages.dev/ を開く
-マイクの使用を許可する
-音声入力するとメモが記録される
-というシンプルなものです。
-入力した内容は自動的にlocalStorageに保存されるので、リロードしても前回の状態から再開できます。
-逆に前回の状態じゃなくて毎回初期状態から開始したい場合は https://voicod.pages.dev/?noSave へアクセスすると自動保存を無効化できます。
-このアプリケーションは音声入力してテキストのメモを書くというシンプルなアプリケーションですが、
-x-callback連携やChrome Apps(ショートカット)と組み合わせると入力内容を別のアプリケーションに渡すといった色々な使い方ができます。
-x-callbackを使ったアプリ…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
