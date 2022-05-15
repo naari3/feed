@@ -74,6 +74,39 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-05-15">2022-05-15</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://kumagi.hatenablog.com/" target="_blank"
+              rel="noopener">Software Transactional Memo</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Value Objectについて整理しよう</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://kumagi.hatenablog.com/entry/value-object" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Value Objectとは何であるか?
+マーチン・ファウラーのPatterns of Enterprise Application Architecture(PofEAA)やエヴァンス・エリックのDomain Driven Design: Tackling Complexity in the Heart of Software(DDD)が原典であるが、PofEAAではこう切り出している。
+When programming, I often find it&#x27;s useful to represent things as a compound.
+プログラミング時は物をcompound(合成物)として表現すると便利なことがしばしばある。
+例えば2次元空間上での座標のように複数のメンバ(属性)を持つ物は便利である、と。しかしそれらを比較する方法は一意ではない、そこで
+Objects that are equal due to the value of their properties, in this case their x and y coordinates, are called value objects.
+そのプロパティ(この場合ではxとy座標)によって等価比較されるオブジェクトをvalue objectと呼ぶ。
+とValue Objectの定義を行っている。そして各言語でそれぞれ比較の挙動が違う点について話が続く。
+比較演算子&#x3D;&#x3D;を用いて比較をする際、オブジェクト指向な言語の中でも挙動が変わる。JavaScriptでは {x: 1} &#x3D;&#x3D;&#x3D; {x: 1} は False を返す。それら2つのオブジェクトはメモリ上で別の場所に存在する別々の物体であるとして処理され、値に基づいた比較は実施されない。Rubyでは {x:1} &#x3D;&#x3D; {x:1} はtrueであるし、Pytho…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20220515/20220515054636.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-05-14">2022-05-14</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -25778,30 +25811,11 @@ Opalでも(opalが持っているパッチを当てれば)parser gemが動くの
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank"
-              rel="noopener">メルカリエンジニアリングブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">【書き起こし】「お客さま体験の向上を目指して」品質向上に向けたメルペイフロントエンドチームの取り組み #mercari_frontend</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://engineering.mercari.com/blog/entry/20220214-2442ddf578/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>2021年7月8日に、「Frontend Tech Talk 〜 Quality of Merpay Frontend 〜」 というイベントを開催しました。 本記事はその中でメルペイ フロントエンド エンジニアリングマネ […]</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-05-14T23:02:19.246Z">2022-05-14T23:02:19.246Z</time>
+    <time id="build-timestamp" datetime="2022-05-15T00:02:53.462Z">2022-05-15T00:02:53.462Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

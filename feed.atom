@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-14T23:02:19.317Z</updated>
+    <updated>2022-05-15T00:02:53.524Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Value Objectについて整理しよう]]></title>
+        <id>hatenablog://entry/13574176438092441635</id>
+        <link href="https://kumagi.hatenablog.com/entry/value-object"/>
+        <updated>2022-05-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Value Objectとは何であるか?
+マーチン・ファウラーのPatterns of Enterprise Application Architecture(PofEAA)やエヴァンス・エリックのDomain Driven Design: Tackling Complexity in the Heart of Software(DDD)が原典であるが、PofEAAではこう切り出している。
+When programming, I often find it's useful to represent things as a compound.
+プログラミング時は物をcompound(合成物)として表現すると便利なことがしばしばある。
+例えば2次元空間上での座標のように複数のメンバ(属性)を持つ物は便利である、と。しかしそれらを比較する方法は一意ではない、そこで
+Objects that are equal due to the value of their properties, in this case their x and y coordinates, are called value objects.
+そのプロパティ(この場合ではxとy座標)によって等価比較されるオブジェクトをvalue objectと呼ぶ。
+とValue Objectの定義を行っている。そして各言語でそれぞれ比較の挙動が違う点について話が続く。
+比較演算子==を用いて比較をする際、オブジェクト指向な言語の中でも挙動が変わる。JavaScriptでは {x: 1} === {x: 1} は False を返す。それら2つのオブジェクトはメモリ上で別の場所に存在する別々の物体であるとして処理され、値に基づいた比較は実施されない。Rubyでは {x:1} == {x:1} はtrueであるし、Pytho…]]></summary>
+        <author>
+            <name>Software Transactional Memo</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220514「読書環境について」]]></title>
         <id>hatenablog://entry/13574176438092417243</id>
@@ -17681,16 +17699,6 @@ Opalでも(opalが持っているパッチを当てれば)parser gemが動くの
 これから少し勉強して、プリコネみてさっさと寝たい。]]></summary>
         <author>
             <name>雑記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【書き起こし】「お客さま体験の向上を目指して」品質向上に向けたメルペイフロントエンドチームの取り組み #mercari_frontend]]></title>
-        <id>19419</id>
-        <link href="https://engineering.mercari.com/blog/entry/20220214-2442ddf578/"/>
-        <updated>2022-02-14T11:15:52.000Z</updated>
-        <summary type="html"><![CDATA[2021年7月8日に、「Frontend Tech Talk 〜 Quality of Merpay Frontend 〜」 というイベントを開催しました。 本記事はその中でメルペイ フロントエンド エンジニアリングマネ […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
