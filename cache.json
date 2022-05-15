@@ -5642,21 +5642,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20190430/20190430182438.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438063710598",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nRails 7 がリリースされてから暫く経つが、基本的な部分がまだシェアされてないことが多い。本記事では Rails 7 注目のフロントエンドのセットアップについて記す。\nimportmap\nRails 7 といえば、Node.js を裏で使う必要がなくなった importmap-rails が目玉のリリースだ。\nimportmap-rails を使うことで、フロントエンドの JavaScript のライブラリを管理してくれるようになる。\ngithub.com\n本記事では初歩の初歩として、jQuery をどうやって importmap-rails に載せるかについて記す。\nimportmap pin でのインストール\nさっと手順について記しておく。\n$ rails -v\nRails 7.0.2.2\n\n$ rails new sample  --skip-hotwire --javascript=importmap\n$ cd sample\n$ ./bin/importmap pin jquery\n$ vim app/javascript/application.js\nimport jquery from \"jquery\"\nwindow.$ = jquery\n\n$(function() {\n  console.log(\"Hello Rails7!\");\n})\n\n\n\nRails 起動\n$ bundle exec rails g scaffold tweets title:string body:text\n$ bundle exec rails server\nhttp://localhost:3000/tweets\n最初に Rails アプリを初期化するときに importmap を指定することにしている。既にある Rails アプリに impor…",
-          "link": "https://www.bokukoko.info/entry/2022/02/15/153751",
-          "publishedOn": "2022-02-15T06:37:51.000Z",
-          "wordCount": null,
-          "title": "Rails7 で jQuery をセットアップ",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220215/20220215153352.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220215/20220215153352.png"
         }
       ]
     },
