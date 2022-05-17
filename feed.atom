@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-17T22:02:02.951Z</updated>
+    <updated>2022-05-17T23:02:05.107Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17509,18 +17509,6 @@ You may need to modify the grep for "USB controller", depending on how your USB 
 続きをみる]]></summary>
         <author>
             <name>Hercelot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[動的型付き言語は素早くプロジェクトを立ち上げるのに向いており、静的型付き言語は長期間の保守にむいているという仮説]]></title>
-        <id>hatenablog://entry/13574176438064476701</id>
-        <link href="https://kmizu.hatenablog.com/entry/2022/02/17/195423"/>
-        <updated>2022-02-17T10:54:23.000Z</updated>
-        <summary type="html"><![CDATA[注：誤解されないように最初にこの記事の意図を書いておくと、古典的な静的型付き言語VS.動的型付き言語の論争をするつもりはありません。これまで色々なプロジェクトを観察（風聞も含む）して来たところ、そういう傾向があるのではないかという仮説です。それと、文脈として主にWebアプリケーション開発する時のことを想定しており、それ以外のケースはいったん脇に置いています。
-　たとえば、色々な事例を見聞きするに、スタートアップ企業において動的型付き言語であるRubyのWebアプリケーションフレームワークであるRuby on Rails（RoR）は好まれる傾向にあります。近年のPythonの動向はさておき、未だにRoRの求人がかなり多いのも間違いない。で、何故だろうと考えた時に色々な人から聞くのが「とにかく最低限のアプリケーションを素早く作ることができる」ということなんですね。RoRが出た当初にあった、テンプレートエンジンとの手軽な連携というメリットが今どのくらいあるかはともかく、Webアプリケーションを立ち上げる時、ほとんどのプロジェクトはまずRDBを使うでしょうから、ActiveRecordが標準で備わっているRoRには独特の強みがあるように思います。
-　そして、ActiveRecordのような、一見メソッド呼び出しに見えるものがDBアクセスになるような柔軟なライブラリを作りやすいのは、メタプログラミングが容易という部分があるにせよ、動的な型付き言語ならでは（あるいは静的な型が「ない」から）というのがあります。実際、ActiveRecordをガリガリに使われたRubyコードに静的な型をつけようとしても（たとえば、Ruby 3のRBSにのっとった型注釈を使っても）かなり苦しい。他にも色々ありますが、静的な型がない言語というよりそれを前提に作られたライブラリやフレームワークは、「短期間にとり…]]></summary>
-        <author>
-            <name>kmizuの日記</name>
         </author>
     </entry>
 </feed>
