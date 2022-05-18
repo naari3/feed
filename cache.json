@@ -300,21 +300,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438064606331",
-          "author": null,
-          "description": "ちょもすです。\n \n『Frog Fight』は2022/02/05に発売された最新のeスポーツタイトル。 \n \nstore.steampowered.com\n \n平日早朝６時にVRChatで何者かが「たまにはのっぴきならないゲームもやりたくなるんですよね～」と言い出したところ、不運にもその場でのっぴきならないゲームとのっぴきならない人間が揃ってしまった。\n \n……おそらくは冗談8割くらいで「『Frog Fight』とかやりたいですよね」と言われ、ストアページを見てあまりの迫力に一度は仰け反ったのだが、プロゲーマーとしての責務を果たすべく僕が最速で購入インストールし、「逃げるんですか？」と言い放ったらその場の全員後には引けなくなった。誰もたいしてやりたくないのに平日早朝に蛙が縦横無尽に飛び交うゲームを遊ぶ意味不明の状態。うち一人は完全に巻き込まれ事故。まったく同情する。\n \n操作方法\n左クリック：舌を伸ばす\n右クリック：舌を縮める\nWASD：向きを変える\n \n概要\nルールにはSurvivalとDemolitionの二つのルールがある。\n \nSurvival\n\n最も長い時間落下しなかった蛙が勝利。中央の島は勢いを持って蛙でぶつかると徐々に壊れる。\n \nDemolition\n\n中央の島を壊すと得点が入る。落ちるまでに最も得点を稼いだ蛙が勝利。\n \n\n迫力あるゲーム体験が可能。\n \n\nよく部屋が壊れる。ちなみにステージ選択ができるがステージは一つしかない。\n \n総括\n総プレイ時間40分。全一。\n \n『Frog Fight』は予想を裏切ることなく、のっぴきならないゲームだった。\n \n一人用の存在しない対戦ゲームであるため、二人以上存在しないとそもそもゲームを遊ぶことができない。プレイ人口は0人なので購入する場合は知り合いと一緒に購入することを推奨する。それなりのゲームなら「対戦相手お待ちしています」と書くところだが、頻繁に部屋が壊れる関係で対戦するのも大変で、今回は対戦を申し込まれても丁重にお断りする。のっぴきならない友人と遊ぼう。100円分は笑顔になること間違いなし。\n \n \n \nそれじゃあまた。",
-          "link": "https://chomosh.hatenablog.com/entry/2022/02/18/120000",
-          "publishedOn": "2022-02-18T03:00:00.000Z",
-          "wordCount": 129,
-          "title": "『Frog Fight』は蛙が舌を伸ばして生き残りをかける最新のeスポーツタイトルだ",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/chomosh/20220218/20220218065543.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/chomosh/20220218/20220218065543.png"
         }
       ]
     },
@@ -3537,7 +3522,23 @@
       "title": "pythonと自然言語処理を学ぶ日記",
       "feedUrl": "https://kimginyon.hatenablog.com/rss",
       "siteUrl": "https://kimginyon.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/13574176438093625364",
+          "author": null,
+          "description": "私は人に監視されているプレッシャーがある方がモチベーションを確保できるので、今日からこのブログに勉強の進捗を書きます。\npythonと自然言語処理を学び始めたのは、自分のかわりにAIにコメディを作らせるためです。\n将棋AI界隈と違って（厳密にはトップクラスの将棋AIを作っているエンジニア達は一般に自分の製品のことを「将棋AI」ではなく「将棋ソフト」と言っていますが）、コメディAIを研究しているエンジニアの中に、\"AI\"ではなく\"コメディ自体\"に長時間携わった人間はいないので、そこに私が参入したら何かよい事が起こるのではないかと思ったのが第一の動機です。\n第二に、渾身の作品である川崎国の1話と2話がかなりスベったことで、（支援者の方には申し訳ないですが）自力で漫画を描くモチベーションがなくなったという動機があります。もちろん今後も毎年1つ新しいエピソードを更新していきますが、その新しいエピソード達に徐々に自然言語処理の勉強の成果物を盛り込めていけたらな・・・ゆくゆくは漫画に盛り込む冗談の5割以上をAIに作ってもらえればな・・・と思っています。\nAIにコメディをさせる事が、AIに自動運転をさせる事より簡単だとしたら、いやですね。\n最前線で自動運転とかを研究してるエンジニアが、一斉にコメディを研究し始めたら、五年も待たずに地球からコメディアンが消えるのでは？毎晩ふとんでそう思っています。\nこのブログは勉強日記になるので、一部の方には購読解除のお手間をおかけします。申し訳ございません。",
+          "link": "https://kimginyon.hatenablog.com/entry/2022/05/18/234746",
+          "publishedOn": "2022-05-18T14:47:46.000Z",
+          "wordCount": 70,
+          "title": "pythonと自然言語処理を学ぶ日記",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "北の大地のIT技術屋より",
@@ -8119,6 +8120,16 @@
       "feedUrl": "https://note.com/sizes/rss",
       "siteUrl": "https://note.com/sizes",
       "articles": [
+        {
+          "id": "https://note.com/sizes/n/n84ceb335d423",
+          "author": null,
+          "description": "・爆速で 終わるのよ 一日が(5・7・5)\n・4630万引き出し男の何が悪いのかよくわかってない\n続きをみる",
+          "link": "https://note.com/sizes/n/n84ceb335d423",
+          "publishedOn": "2022-05-18T14:40:08.000Z",
+          "wordCount": 46,
+          "title": "日記:22/5/18",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/78834674/rectangle_large_type_2_31fdcbad25df707152f31a81806a5e3f.jpeg?width=800"
+        },
         {
           "id": "https://note.com/sizes/n/ne4f3e6f77a99",
           "author": null,
