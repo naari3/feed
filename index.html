@@ -97,6 +97,29 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/ocha307" target="_blank"
+              rel="noopener">sanmal</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">4月～5月中旬のディグ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/ocha307/n/n46270dbce354" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。新年度が始まったあとのスタートダッシュに失敗しています。立て直そう。
+
+先月更新できなかったので曲が溜まってます。コメント書くのしんどくなったので適当！！
+続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/78795006/rectangle_large_type_2_53f24a8a79aaaff6348fdf3910f1e458.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -25475,43 +25498,11 @@ Demolition
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.wesleyac.com" target="_blank"
-              rel="noopener">Wesley Aptekar-Cassels</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">How to reset the USB stack on Linux</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.wesleyac.com/posts/linux-reset-usb" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>I&#x27;ve recently started having issues with the USB stack on my Linux laptop getting itself wedged. Rebooting fixes the problem, but I&#x27;d rather not have to reboot, so I looked into ways to reset the USB stack without needing a reboot. Almost all of the answers on the internet about how to do so either do not work on modern Linux systems, or did not reset at low enough of a level to fix the specific problem I was having.
-The solution is to unbind and rebind the USB controller to the xHCI driver. First, find the PCI bus number of the misbehaving USB controller, using lspci -D. Then, write that bus number to /sys/bus/pci/drivers/xhci_hcd/unbind, for instance, by running echo 0000:00:14.0 | sudo tee /sys/bus/pci/drivers/xhci_hcd/unbind (replacing 0000:00:14.0 with whatever the PCI bus number you found in the previous step was). This will disable the USB controller. Once you&#x27;ve done that, reenable it by writing the same bus number to /sys/bus/pci/drivers/xhci_hcd/bind.
-Here&#x27;s a script that will do that all for you, in case it&#x27;s useful:
-#!/usr/bin/env bash
-
-set -eo pipefail
-
-DEVICE&#x3D;$(lspci -Dm | grep &quot;USB controller&quot; | cut -f1 -d&#x27; &#x27; | head -n1)
-
-echo $DEVICE &gt; /sys/bus/pci/drivers/xhci_hcd/unbind
-echo $DEVICE &gt; /sys/bus/pci/drivers/xhci_hcd/bind
-
-
-You may need to modify the grep for &quot;USB controller&quot;, depending on how your USB controller identifies itself.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-05-18T03:26:22.045Z">2022-05-18T03:26:22.045Z</time>
+    <time id="build-timestamp" datetime="2022-05-18T04:08:09.569Z">2022-05-18T04:08:09.569Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

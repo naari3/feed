@@ -7833,7 +7833,18 @@
       "title": "sanmal",
       "feedUrl": "https://note.com/ocha307/rss",
       "siteUrl": "https://note.com/ocha307",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/ocha307/n/n46270dbce354",
+          "author": null,
+          "description": "こんにちは。新年度が始まったあとのスタートダッシュに失敗しています。立て直そう。\n\n先月更新できなかったので曲が溜まってます。コメント書くのしんどくなったので適当！！\n続きをみる",
+          "link": "https://note.com/ocha307/n/n46270dbce354",
+          "publishedOn": "2022-05-18T03:46:45.000Z",
+          "wordCount": null,
+          "title": "4月～5月中旬のディグ",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/78795006/rectangle_large_type_2_53f24a8a79aaaff6348fdf3910f1e458.jpeg?width=800"
+        }
+      ]
     },
     {
       "title": "オンモコスブ",
@@ -10171,16 +10182,6 @@
           "publishedOn": "2022-02-21T16:00:00.000Z",
           "wordCount": 587,
           "title": "Minify and Gzip",
-          "imageUrl": null
-        },
-        {
-          "id": "https://blog.wesleyac.com/posts/linux-reset-usb",
-          "author": null,
-          "description": "I've recently started having issues with the USB stack on my Linux laptop getting itself wedged. Rebooting fixes the problem, but I'd rather not have to reboot, so I looked into ways to reset the USB stack without needing a reboot. Almost all of the answers on the internet about how to do so either do not work on modern Linux systems, or did not reset at low enough of a level to fix the specific problem I was having.\nThe solution is to unbind and rebind the USB controller to the xHCI driver. First, find the PCI bus number of the misbehaving USB controller, using lspci -D. Then, write that bus number to /sys/bus/pci/drivers/xhci_hcd/unbind, for instance, by running echo 0000:00:14.0 | sudo tee /sys/bus/pci/drivers/xhci_hcd/unbind (replacing 0000:00:14.0 with whatever the PCI bus number you found in the previous step was). This will disable the USB controller. Once you've done that, reenable it by writing the same bus number to /sys/bus/pci/drivers/xhci_hcd/bind.\nHere's a script that will do that all for you, in case it's useful:\n#!/usr/bin/env bash\n\nset -eo pipefail\n\nDEVICE=$(lspci -Dm | grep \"USB controller\" | cut -f1 -d' ' | head -n1)\n\necho $DEVICE > /sys/bus/pci/drivers/xhci_hcd/unbind\necho $DEVICE > /sys/bus/pci/drivers/xhci_hcd/bind\n\n\nYou may need to modify the grep for \"USB controller\", depending on how your USB controller identifies itself.",
-          "link": "https://blog.wesleyac.com/posts/linux-reset-usb",
-          "publishedOn": "2022-02-17T16:00:00.000Z",
-          "wordCount": 245,
-          "title": "How to reset the USB stack on Linux",
           "imageUrl": null
         }
       ]
