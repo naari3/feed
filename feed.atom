@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-18T02:38:15.206Z</updated>
+    <updated>2022-05-18T03:26:22.119Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メルカリの新卒エンジニアは入社後どう過ごす？2022年4月新卒が経験した技術研修のすべて]]></title>
+        <id>21137</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220518-ec01a32c9f/"/>
+        <updated>2022-05-18T12:00:48.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは！メルカリ Engineering Office チームの@aisakaです。 私達のチームは「全てのエンジニアに最高の従業員体験を」というミッションを元に、様々な活動を行なっています。私はその中でも、よりよい […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022-05-17]]></title>
         <id>hatenablog://entry/13574176438093335831</id>
@@ -17506,28 +17516,6 @@ echo $DEVICE > /sys/bus/pci/drivers/xhci_hcd/bind
 You may need to modify the grep for "USB controller", depending on how your USB controller identifies itself.]]></summary>
         <author>
             <name>Wesley Aptekar-Cassels</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[世界を救う男のショー]]></title>
-        <id>https://note.com/customer_center/n/nf21099ad2c54</id>
-        <link href="https://note.com/customer_center/n/nf21099ad2c54"/>
-        <updated>2022-02-17T15:00:05.000Z</updated>
-        <summary type="html"><![CDATA[某日、日本武道館＿＿＿＿
-
-続きをみる]]></summary>
-        <author>
-            <name>こちらカスタマーセンター</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[特殊な構成のMySQLに対するDDL適用の一例]]></title>
-        <id>19505</id>
-        <link href="https://engineering.mercari.com/blog/entry/20220217-d0d6aa21fe/"/>
-        <updated>2022-02-17T14:44:54.000Z</updated>
-        <summary type="html"><![CDATA[※この記事は、"Blog Series of Introduction of Developer Productivity Engineering at Mercari"の一環で書かれています。 Au […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
