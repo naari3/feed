@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-19T21:02:27.644Z</updated>
+    <updated>2022-05-19T22:02:42.018Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,26 @@
         <summary type="html"><![CDATA[毎年無限スクロールの実装をしているのだが正直なところ実装したくないので依頼されたときの反論材料として実装したくない理由を言語化しておこうと思う。 無限スクロールとは 無限スクロールが何を指すかを知らない人のために解説すると、ページにコンテンツを足す方式でページネーションする UI…]]></summary>
         <author>
             <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[画像のキャプション復活]]></title>
+        <id>https://r7kamura.com/articles/2022-05-20-image-caption</id>
+        <link href="https://r7kamura.com/articles/2022-05-20-image-caption"/>
+        <updated>2022-05-19T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[画像の下にキャプション（写真や図に添えられた説明文のこと）を表示する機能を復活させた。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Copy Markdown Link]]></title>
+        <id>https://r7kamura.com/articles/2022-05-20-copy-markdown-link</id>
+        <link href="https://r7kamura.com/articles/2022-05-20-copy-markdown-link"/>
+        <updated>2022-05-19T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Copy Rich Linkの亜種として、Copy Markdown Linkをつくった。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
