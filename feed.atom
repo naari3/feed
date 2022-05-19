@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-19T19:03:11.461Z</updated>
+    <updated>2022-05-19T20:02:08.921Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[無限スクロールは考慮することが多い]]></title>
+        <id>https://blog.ojisan.io/i-hate-infinite-scroll</id>
+        <link href="https://blog.ojisan.io/i-hate-infinite-scroll"/>
+        <updated>2022-05-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[毎年無限スクロールの実装をしているのだが正直なところ実装したくないので依頼されたときの反論材料として実装したくない理由を言語化しておこうと思う。 無限スクロールとは 無限スクロールが何を指すかを知らない人のために解説すると、ページにコンテンツを足す方式でページネーションする UI…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記:22/5/19]]></title>
         <id>https://note.com/sizes/n/na26704d15b25</id>
@@ -187,6 +197,16 @@ togetter.com
 作曲だったりの創作は、義務化すると楽しくなくなる気がしてやっていない。気の向いたときに出していきたいです。おやすみなさい。]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[作業ログのフィード]]></title>
+        <id>https://r7kamura.com/articles/2022-05-19-daily-working-log-feed</id>
+        <link href="https://r7kamura.com/articles/2022-05-19-daily-working-log-feed"/>
+        <updated>2022-05-18T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[自分の作業ログをRSSフィードとして配信し、購読している。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
