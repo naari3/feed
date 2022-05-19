@@ -3799,6 +3799,21 @@
       "siteUrl": "https://kumagi.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438093354889",
+          "author": null,
+          "description": "blog.j5ik2o.me\n値オブジェクトはドメイン固有型の一種です。なので、不変と等価判定だけではなく、なにかしらのドメイン固有の不変条件(invariant)を維持する責任があると考えます(もちろん型として切り出すわけですからその投資に見合うだけの見返りがないといけません)。\n違う。値オブジェクトとはID以外で等価判定をするオブジェクトの事であって、RubyのHash、Pythonのdict、C++のstd::unordered_setすらも値によって等価判定を行うのでこれらは値オブジェクトであるがドメイン固有型ではない。RubyでHashに入れて渡されたユーザ入力値をValidationしてドメイン固有型に詰め直すのはもちろん必要ならやれば良いが、Hashクラスそのものにモンキーパッチなり特異クラスなりを行って不変条件を維持する責任を負った自分専用Hashを作って普通のHashクラスの使用を禁じ始めたら流石に不味いコードに見える。\n使える言語が限られますが、型クラスを使えば既存の値型に振る舞いを追加することも可能です。\n型クラスを既存の値型にバリデーションを足すために使う人を見たことが無いけれど（やりたいことは素直なのだから素直にif文やクラスを作るほうがまだわかる）Scalaだとよくある文化なのかしら？\n開発者間の合意が必要なケースでは、問題のコンテキストに合致していないのに方法論だけ都合よく抜き取って対策したつもりになるのは避けたいですね。\n開発者は何らかのレイヤーで合意に至らないと開発は進まないし、そのために共通の語彙を使って会話するのはコンテキストを合わせるためにも重要な大前提である。それなのに\nドメイン固有型はモデリングツールでもある\nこれは僕の解釈です。値オブジェクトはドメイン固有型の一種です。\nこのように定義済みの用語に対して独自解釈をオーバーライドしていくのはちょっとどうかと思う。ドメイン固有型はエンティティや値オブジェクトから構成されうるけれど、Pythonのdictのようにドメイン固有型でない値オブジェクトという反例があるため、値オブジェクトはドメイン固有型の一種とは限らない。部分集合ではなく直交した概念である。\nモデリングツールとして（少なくともコンストラクトの瞬間に）正当な値しか持ちえないオブジェクト*1が欲しければ作れば良いけれど、それには適切な名称を付けるべきであって、値オブジェクトの定義を独自解釈で拡張すべきではない。少なくとも既存の値オブジェクトの定義を否定する方向に独自解釈を挟んだら混乱を招く。「String型とは日本語を代入した変数の事を言います」とか言ってたらどう思うか想像して欲しい。\n値オブジェクトの応用法の粒度は提唱者によって違いがあるかも知れないけれどその二者の間ですら「値によって等価判定するオブジェクト」という定義そのもので争っている様子はない。\nPofEAAやDDDの説明だとIDに基づかない等価性を持つオブジェクトなので、特定のドメインに依存しない汎用的なDateやPointも値オブジェクトだけど、記事の値オブジェクトの解釈とは矛盾しないのかな？\nドメイン固有型(値オブジェクト含む)を再考する - かとじゅんの技術日誌 https://t.co/gcjvAugxD1\nコダック (@ryoaita) 2022年5月17日\nヘッダ画像はFlickrでMike Cohenさんの作品をCC BY 2.0に基づいて利用しています。\n\n\n*1:完全コンストラクタ？？",
+          "link": "https://kumagi.hatenablog.com/entry/re-rethink-domain-object",
+          "publishedOn": "2022-05-19T01:12:34.000Z",
+          "wordCount": 128,
+          "title": "Re: ドメイン固有型(値オブジェクト含む)を再考する",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20220519/20220519100052.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20220519/20220519100052.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438092441635",
           "author": null,
           "description": "Value Objectとは何であるか?\nマーチン・ファウラーのPatterns of Enterprise Application Architecture(PofEAA)やエヴァンス・エリックのDomain Driven Design: Tackling Complexity in the Heart of Software(DDD)が原典であるが、PofEAAではこう切り出している。\nWhen programming, I often find it's useful to represent things as a compound.\nプログラミング時は物をcompound(合成物)として表現すると便利なことがしばしばある。\n例えば2次元空間上での座標のように複数のメンバ(属性)を持つ物は便利である、と。しかしそれらを比較する方法は一意ではない、そこで\nObjects that are equal due to the value of their properties, in this case their x and y coordinates, are called value objects.\nそのプロパティ(この場合ではxとy座標)によって等価比較されるオブジェクトをvalue objectと呼ぶ。\nとValue Objectの定義を行っている。そして各言語でそれぞれ比較の挙動が違う点について話が続く。\n比較演算子==を用いて比較をする際、オブジェクト指向な言語の中でも挙動が変わる。JavaScriptでは {x: 1} === {x: 1} は False を返す。それら2つのオブジェクトはメモリ上で別の場所に存在する別々の物体であるとして処理され、値に基づいた比較は実施されない。Rubyでは {x:1} == {x:1} はtrueであるし、Pytho…",
@@ -6988,16 +7003,6 @@
           "wordCount": 41,
           "title": "20220219",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/72583239/rectangle_large_type_2_3b6f23b276a1f7d2b3c1950c9c898a14.png?width=800"
-        },
-        {
-          "id": "https://note.com/dak/n/n44bb744cc518",
-          "author": null,
-          "description": "今日は朝早めに起きた　9時頃\n父親が出てったらすぐに朝飯を食べて、家事をした\n続きをみる",
-          "link": "https://note.com/dak/n/n44bb744cc518",
-          "publishedOn": "2022-02-18T12:29:14.000Z",
-          "wordCount": null,
-          "title": "20220218",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/72514417/rectangle_large_type_2_936f228f1b2cbee8c536b3702de2e1f7.jpeg?width=800"
         }
       ]
     },
@@ -7055,16 +7060,6 @@
           "wordCount": 268,
           "title": "「ディグディガ」元ネタ紹介：第12話",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/73816647/rectangle_large_type_2_c5334c0946dbf90c29aee3d59a495978.jpg?width=800"
-        },
-        {
-          "id": "https://note.com/diginthedigger/n/n16ad0d1a9406",
-          "author": null,
-          "description": "これは、漫画「ディグインザディガー」11.5話公開に際して、原作の栄免建設と漫画担当の駒澤が淡々と元ネタ紹介をしていくコーナーですが、今回は栄免さん多忙のため、駒澤とゲストでお送りします。\n\n前半：駒澤零（原作/漫画）\n続きをみる",
-          "link": "https://note.com/diginthedigger/n/n16ad0d1a9406",
-          "publishedOn": "2022-02-18T12:03:07.000Z",
-          "wordCount": 234,
-          "title": "「ディグディガ」元ネタ紹介：11.5話",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/72375363/rectangle_large_type_2_0c435b85acb3c89a9b3985ca2009042a.jpg?width=800"
         }
       ]
     },
@@ -7512,6 +7507,16 @@
       "feedUrl": "https://note.com/kazumakawauchi/rss",
       "siteUrl": "https://note.com/kazumakawauchi",
       "articles": [
+        {
+          "id": "https://note.com/kazumakawauchi/n/nb3f5aff7719b",
+          "author": null,
+          "description": "は、あるのだろうかと思ってきた。子供の頃に学校で触れるようなことの半分くらいは、その時の子供心にはわからないことが多いけど。でもいまは、いや、その意味はあったのだろうなと、そう思っている。\nメタルギアソリッドを生んだ小島秀夫が、過去に触れた本や映画について書く（これが本当に逸材）『創作する遺伝子 僕が愛したMEMEたち』を読んでいると、中島敦の『山月記』が出てきた。\n続きをみる",
+          "link": "https://note.com/kazumakawauchi/n/nb3f5aff7719b",
+          "publishedOn": "2022-05-19T01:00:05.000Z",
+          "wordCount": null,
+          "title": "子供にはわからないようなことを子供の頃に触れるワケ",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/78852286/rectangle_large_type_2_6ea2b53b9416b4f964a114b431b953fc.png?width=800"
+        },
         {
           "id": "https://note.com/kazumakawauchi/n/n84aef660cc0f",
           "author": null,
@@ -10814,6 +10819,16 @@
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
         {
+          "id": "21193",
+          "author": null,
+          "description": "2022年4月21日に、メルペイ・メルコインのエンジニアたちによる「Merpay Tech Talk〜Monorepo開発におけるツール選定〜」を開催しました。 Monorepo開発を進めるにあたって、メルコインではNx […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220518-aaa18f6b00/",
+          "publishedOn": "2022-05-19T10:00:53.000Z",
+          "wordCount": null,
+          "title": "【書き起こし】Merpay Tech Talk〜Monorepo開発におけるツール選定〜 #merpay_techtalk",
+          "imageUrl": null
+        },
+        {
           "id": "21137",
           "author": null,
           "description": "こんにちは！メルカリ Engineering Office チームの@aisakaです。 私達のチームは「全てのエンジニアに最高の従業員体験を」というミッションを元に、様々な活動を行なっています。私はその中でも、よりよい […]",
@@ -11361,16 +11376,6 @@
           "publishedOn": "2022-02-21T10:00:44.000Z",
           "wordCount": null,
           "title": "メルカリShops 注文システム反省会",
-          "imageUrl": null
-        },
-        {
-          "id": "19496",
-          "author": null,
-          "description": "はじめに はじめまして、@takashi-kun です。 自分が所属するチームでの連載企画 \"Blog Series of Introduction of Developer Productivity Engi […]",
-          "link": "https://engineering.mercari.com/blog/entry/20220218-3c7faca4cc/",
-          "publishedOn": "2022-02-18T12:31:24.000Z",
-          "wordCount": null,
-          "title": "レガシーなシステムとの向き合い方",
           "imageUrl": null
         }
       ]

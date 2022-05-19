@@ -2,10 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-19T00:03:04.044Z</updated>
+    <updated>2022-05-19T01:29:41.062Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【書き起こし】Merpay Tech Talk〜Monorepo開発におけるツール選定〜 #merpay_techtalk]]></title>
+        <id>21193</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220518-aaa18f6b00/"/>
+        <updated>2022-05-19T10:00:53.000Z</updated>
+        <summary type="html"><![CDATA[2022年4月21日に、メルペイ・メルコインのエンジニアたちによる「Merpay Tech Talk〜Monorepo開発におけるツール選定〜」を開催しました。 Monorepo開発を進めるにあたって、メルコインではNx […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Re: ドメイン固有型(値オブジェクト含む)を再考する]]></title>
+        <id>hatenablog://entry/13574176438093354889</id>
+        <link href="https://kumagi.hatenablog.com/entry/re-rethink-domain-object"/>
+        <updated>2022-05-19T01:12:34.000Z</updated>
+        <summary type="html"><![CDATA[blog.j5ik2o.me
+値オブジェクトはドメイン固有型の一種です。なので、不変と等価判定だけではなく、なにかしらのドメイン固有の不変条件(invariant)を維持する責任があると考えます(もちろん型として切り出すわけですからその投資に見合うだけの見返りがないといけません)。
+違う。値オブジェクトとはID以外で等価判定をするオブジェクトの事であって、RubyのHash、Pythonのdict、C++のstd::unordered_setすらも値によって等価判定を行うのでこれらは値オブジェクトであるがドメイン固有型ではない。RubyでHashに入れて渡されたユーザ入力値をValidationしてドメイン固有型に詰め直すのはもちろん必要ならやれば良いが、Hashクラスそのものにモンキーパッチなり特異クラスなりを行って不変条件を維持する責任を負った自分専用Hashを作って普通のHashクラスの使用を禁じ始めたら流石に不味いコードに見える。
+使える言語が限られますが、型クラスを使えば既存の値型に振る舞いを追加することも可能です。
+型クラスを既存の値型にバリデーションを足すために使う人を見たことが無いけれど（やりたいことは素直なのだから素直にif文やクラスを作るほうがまだわかる）Scalaだとよくある文化なのかしら？
+開発者間の合意が必要なケースでは、問題のコンテキストに合致していないのに方法論だけ都合よく抜き取って対策したつもりになるのは避けたいですね。
+開発者は何らかのレイヤーで合意に至らないと開発は進まないし、そのために共通の語彙を使って会話するのはコンテキストを合わせるためにも重要な大前提である。それなのに
+ドメイン固有型はモデリングツールでもある
+これは僕の解釈です。値オブジェクトはドメイン固有型の一種です。
+このように定義済みの用語に対して独自解釈をオーバーライドしていくのはちょっとどうかと思う。ドメイン固有型はエンティティや値オブジェクトから構成されうるけれど、Pythonのdictのようにドメイン固有型でない値オブジェクトという反例があるため、値オブジェクトはドメイン固有型の一種とは限らない。部分集合ではなく直交した概念である。
+モデリングツールとして（少なくともコンストラクトの瞬間に）正当な値しか持ちえないオブジェクト*1が欲しければ作れば良いけれど、それには適切な名称を付けるべきであって、値オブジェクトの定義を独自解釈で拡張すべきではない。少なくとも既存の値オブジェクトの定義を否定する方向に独自解釈を挟んだら混乱を招く。「String型とは日本語を代入した変数の事を言います」とか言ってたらどう思うか想像して欲しい。
+値オブジェクトの応用法の粒度は提唱者によって違いがあるかも知れないけれどその二者の間ですら「値によって等価判定するオブジェクト」という定義そのもので争っている様子はない。
+PofEAAやDDDの説明だとIDに基づかない等価性を持つオブジェクトなので、特定のドメインに依存しない汎用的なDateやPointも値オブジェクトだけど、記事の値オブジェクトの解釈とは矛盾しないのかな？
+ドメイン固有型(値オブジェクト含む)を再考する - かとじゅんの技術日誌 https://t.co/gcjvAugxD1
+コダック (@ryoaita) 2022年5月17日
+ヘッダ画像はFlickrでMike Cohenさんの作品をCC BY 2.0に基づいて利用しています。
+
+
+*1:完全コンストラクタ？？]]></summary>
+        <author>
+            <name>Software Transactional Memo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[子供にはわからないようなことを子供の頃に触れるワケ]]></title>
+        <id>https://note.com/kazumakawauchi/n/nb3f5aff7719b</id>
+        <link href="https://note.com/kazumakawauchi/n/nb3f5aff7719b"/>
+        <updated>2022-05-19T01:00:05.000Z</updated>
+        <summary type="html"><![CDATA[は、あるのだろうかと思ってきた。子供の頃に学校で触れるようなことの半分くらいは、その時の子供心にはわからないことが多いけど。でもいまは、いや、その意味はあったのだろうなと、そう思っている。
+メタルギアソリッドを生んだ小島秀夫が、過去に触れた本や映画について書く（これが本当に逸材）『創作する遺伝子 僕が愛したMEMEたち』を読んでいると、中島敦の『山月記』が出てきた。
+続きをみる]]></summary>
+        <author>
+            <name>河内一馬</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[stackにpushする試行錯誤]]></title>
         <id>https://blog.ojisan.io/stack-push</id>
@@ -17630,41 +17680,6 @@ IHコンロは元々伝導熱しかないので本当に使いにくいのです
 *2:一人称がころころ変わる。]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[レガシーなシステムとの向き合い方]]></title>
-        <id>19496</id>
-        <link href="https://engineering.mercari.com/blog/entry/20220218-3c7faca4cc/"/>
-        <updated>2022-02-18T12:31:24.000Z</updated>
-        <summary type="html"><![CDATA[はじめに はじめまして、@takashi-kun です。 自分が所属するチームでの連載企画 "Blog Series of Introduction of Developer Productivity Engi […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[20220218]]></title>
-        <id>https://note.com/dak/n/n44bb744cc518</id>
-        <link href="https://note.com/dak/n/n44bb744cc518"/>
-        <updated>2022-02-18T12:29:14.000Z</updated>
-        <summary type="html"><![CDATA[今日は朝早めに起きた　9時頃
-父親が出てったらすぐに朝飯を食べて、家事をした
-続きをみる]]></summary>
-        <author>
-            <name>okazsystem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「ディグディガ」元ネタ紹介：11.5話]]></title>
-        <id>https://note.com/diginthedigger/n/n16ad0d1a9406</id>
-        <link href="https://note.com/diginthedigger/n/n16ad0d1a9406"/>
-        <updated>2022-02-18T12:03:07.000Z</updated>
-        <summary type="html"><![CDATA[これは、漫画「ディグインザディガー」11.5話公開に際して、原作の栄免建設と漫画担当の駒澤が淡々と元ネタ紹介をしていくコーナーですが、今回は栄免さん多忙のため、駒澤とゲストでお送りします。
-
-前半：駒澤零（原作/漫画）
-続きをみる]]></summary>
-        <author>
-            <name>ディグインザディガー</name>
         </author>
     </entry>
 </feed>
