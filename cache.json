@@ -844,21 +844,6 @@
             "length": "0"
           },
           "imageUrl": "https://m.media-amazon.com/images/I/610JHQMrSzL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438065539635",
-          "author": null,
-          "description": "github.com\nRBSのメモリ使用量を減らした。アクセス頻度が低いインスタンス変数がinitialize内で初期化されていたので、それを遅延して初期化するようにした。\n速度にも影響が出るかなーと思っていたけど、誤差レベルでしか影響は出ていなかった。",
-          "link": "https://commits.hatenablog.com/entry/2022/02/21/100006",
-          "publishedOn": "2022-02-21T01:00:06.000Z",
-          "wordCount": 158,
-          "title": "2022-02-20",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -3568,6 +3553,21 @@
       "feedUrl": "https://kimginyon.hatenablog.com/rss",
       "siteUrl": "https://kimginyon.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438094514746",
+          "author": null,
+          "description": "勉強の進捗を書くぞ！と宣言した矢先ですが、今週は大きな心労に襲われたので、それについて書かせていただきます…申し訳ございません…\n \npythonの入門書をこなしつつテキストマイニングの本を読んでいます。\n今週は一日平均3時間勉強しました。無職なのに勉強時間が短すぎますね。これには理由があります。\n \nGoogleは、AIに冗談を解説させる研究をしています。\nnazology.net\n私の素人目には、「冗談を解説するAI」より「冗談を生成するAI」を作る方が簡単に見えます。\nあるいは「冗談を解説するAI」を開発できるエンジニアは「冗談を生成するAI」を開発する能力を有しているように思えます。\nGoogleが「冗談を生成するAI」でなく「冗談を解説するAI」を作っている理由が、「前者を作るのが簡単すぎる」というものだった場合、私が人生の大半の時間を費やしてきた「冗談の生成」という行為が「Googleの金で研究する必要もない些事」であるという事になります。\n加えて、自動運転や高層建築物の設計ができるAIよりも、冗談を作るAIの方が開発が困難だとは、私は思えません。\n仮に、上述した通り「冗談を作るAI」の開発が極めて容易であるならば、明日にも、5分後にも、どこかのエンジニアが、コメディアンを完全に失業させる水準の超面白AIを発表しておかしくない訳です。しかもそれをオープンソースにして全世界に無料配布する可能性もあります。\n \n上記の事を考えると、パニック発作の予期不安のような状態になり、勉強に集中できません😭\n睡眠薬と抗うつ剤を飲みたいので近所の精神科を予約したのですが、7月にならないと診察できないとのこと😭\nいずれAIエンジニアがコメディアンを失業させる日は来ます😭\nだから私は「AIに失業させられる側」でなく「AIで失業させる側」に立ちたいです😭\nそれがAIの勉強を始めた最大の理由です😭\nもし「失業させる側」という勝ち馬に乗れなかったとしたら、悲しい😭\n実は2017年あたりから薄々「自分が40歳になる前にAIはコメディアンを失業させるだろう」と勘付いていました。\n\nAIエンジニアは日々、様々な分野の芸術家を失業させるための研究をしています😭\nこんな事なら芸術ではなく「草野球」とか「ランニング」とか「食事」を愛する人間に生まれたかった😭\nだいぶ前にAIに手も足も出なくなった将棋棋士・チェス棋士には、その敗北の衝撃に立ち向かうために、「棋理への興味」を「棋士である自分への自尊心」よりも優先する選択肢があった訳です。私にそういった選択肢はありません。\n-\nと、勉強の進捗を報告するといいながら、メンタルの不調を報告してしまいました😳\n悩んでいる暇があるなら関数の一つでも覚えろという話ですよね😳\n今週はpythonでブラックジャックを作りました😳\n私がPythonに習熟して冗談生成AIを作るが先か、そこら辺のエンジニアが余技として冗談生成AIを作るが先か…\n来週はなるべく目の前のタスク以外に意識を向けないようにします😳",
+          "link": "https://kimginyon.hatenablog.com/entry/2022/05/21/212020",
+          "publishedOn": "2022-05-21T12:20:20.000Z",
+          "wordCount": 89,
+          "title": "1,病んでいます",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/13574176438093625364",
           "author": null,
@@ -8034,6 +8034,16 @@
       "feedUrl": "https://note.com/sizes/rss",
       "siteUrl": "https://note.com/sizes",
       "articles": [
+        {
+          "id": "https://note.com/sizes/n/nd28bf5caca7c",
+          "author": null,
+          "description": "・自宅最強\n・演劇とかで不可逆な多重人格になるひとっているんだろうか\n続きをみる",
+          "link": "https://note.com/sizes/n/nd28bf5caca7c",
+          "publishedOn": "2022-05-21T12:50:49.000Z",
+          "wordCount": 52,
+          "title": "日記：22/5/21",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/79027604/rectangle_large_type_2_b6299095e27ebaedd77c26f91fbad9f7.jpeg?width=800"
+        },
         {
           "id": "https://note.com/sizes/n/n98aa39aff614",
           "author": null,
