@@ -9927,16 +9927,6 @@
           "wordCount": null,
           "title": "南原",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/72978619/rectangle_large_type_2_4989ad81f32f07839102ea16226595ed.png?width=800"
-        },
-        {
-          "id": "https://note.com/tough_mad/n/nfa365bef3d09",
-          "author": null,
-          "description": "第一位　岸だけが寝ちゃう街\n  \n続きをみる",
-          "link": "https://note.com/tough_mad/n/nfa365bef3d09",
-          "publishedOn": "2022-02-21T15:21:14.000Z",
-          "wordCount": null,
-          "title": "岸だけが寝ちゃう街１選　結果発表",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/70355032/rectangle_large_type_2_f17960b11e73364a40dca9752b1e6604.jpeg?width=800"
         }
       ]
     },
@@ -10222,16 +10212,6 @@
           "publishedOn": "2022-04-06T16:00:00.000Z",
           "wordCount": null,
           "title": "Subdomains as identity",
-          "imageUrl": null
-        },
-        {
-          "id": "https://blog.wesleyac.com/posts/minify-and-gzip",
-          "author": null,
-          "description": "I've been doing a bit of work cleaning up the CSS on this blog in the past couple days — the CSS is from a template that I copied more than five years ago at this point, and it was pretty crufty even when I first got it.\nWhen I was poking around, I noticed that I had two separate media queries to check if the browser width was something that looked like a mobile device. This makes the CSS nicer to read, since the overrides can be right next to the things they're overriding, but it also makes the resulting CSS slightly larger. I minify my CSS using tdewolff/minify during the build, so I checked to see if it would collapse the two media query blocks into one. Doing so would be a somewhat complicated optimization, since the order that CSS rules are defined in can sometimes matter, but it woul…",
-          "link": "https://blog.wesleyac.com/posts/minify-and-gzip",
-          "publishedOn": "2022-02-21T16:00:00.000Z",
-          "wordCount": 587,
-          "title": "Minify and Gzip",
           "imageUrl": null
         }
       ]

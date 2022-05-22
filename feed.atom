@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-22T03:19:39.672Z</updated>
+    <updated>2022-05-22T04:02:49.421Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17404,29 +17404,6 @@ SNSで超話題の陰キャ少年と陽キャ美少女の
         <summary type="html"><![CDATA[1ヶ月ぶりに歯医者へ。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Minify and Gzip]]></title>
-        <id>https://blog.wesleyac.com/posts/minify-and-gzip</id>
-        <link href="https://blog.wesleyac.com/posts/minify-and-gzip"/>
-        <updated>2022-02-21T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I've been doing a bit of work cleaning up the CSS on this blog in the past couple days — the CSS is from a template that I copied more than five years ago at this point, and it was pretty crufty even when I first got it.
-When I was poking around, I noticed that I had two separate media queries to check if the browser width was something that looked like a mobile device. This makes the CSS nicer to read, since the overrides can be right next to the things they're overriding, but it also makes the resulting CSS slightly larger. I minify my CSS using tdewolff/minify during the build, so I checked to see if it would collapse the two media query blocks into one. Doing so would be a somewhat complicated optimization, since the order that CSS rules are defined in can sometimes matter, but it woul…]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[岸だけが寝ちゃう街１選　結果発表]]></title>
-        <id>https://note.com/tough_mad/n/nfa365bef3d09</id>
-        <link href="https://note.com/tough_mad/n/nfa365bef3d09"/>
-        <updated>2022-02-21T15:21:14.000Z</updated>
-        <summary type="html"><![CDATA[第一位　岸だけが寝ちゃう街
-  
-続きをみる]]></summary>
-        <author>
-            <name>タフ</name>
         </author>
     </entry>
 </feed>
