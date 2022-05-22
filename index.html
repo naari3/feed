@@ -25377,50 +25377,11 @@ HMDで見た方が200倍いいのは間違いないが、HMDはなくともPCさ
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
-              rel="noopener">ボクココ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">慣れないインデックス貼り vol.2</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/02/22/180938" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ども、@kimihom です。
-
-前回のインデックス貼り に続き、インデックス対応についての追記を記す。
-外部キー のインデックスの効果
-よく、関連する外部キーにインデックスをデフォルトで貼る書き方がある。
-class CreateTweets 
-SELECT * FROM articles WHERE user_id &#x3D; ? ORDER BY id ASC LIMIT 100;
-
-
-
-最初は良かったけど、そのうち記事は基本的にグループ単位で取得するケースが出てくる。
-@user &#x3D; User.find(params[:id])
-@articles &#x3D; @user.group.articles
-SELECT * FROM articles WHERE group_id &#x3D; ? ORDER BY id ASC LIMIT 100;
-
-
-
-こうなると、user_idでの絞り込みインデックスは不要になるケースがある。
-「group_id でインデックスを貼ったことだし、user_id のインデックスはもう用がないね。消そう」
-そして消した後、…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220222/20220222180904.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-05-22T21:01:40.604Z">2022-05-22T21:01:40.604Z</time>
+    <time id="build-timestamp" datetime="2022-05-22T22:01:48.020Z">2022-05-22T22:01:48.020Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

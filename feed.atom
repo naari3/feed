@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-22T21:01:40.694Z</updated>
+    <updated>2022-05-22T22:01:48.081Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17399,49 +17399,6 @@ HMDで見た方が200倍いいのは間違いないが、HMDはなくともPCさ
 続きをみる]]></summary>
         <author>
             <name>okazsystem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[慣れないインデックス貼り vol.2]]></title>
-        <id>hatenablog://entry/13574176438066091917</id>
-        <link href="https://www.bokukoko.info/entry/2022/02/22/180938"/>
-        <updated>2022-02-22T09:09:38.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-前回のインデックス貼り に続き、インデックス対応についての追記を記す。
-外部キー のインデックスの効果
-よく、関連する外部キーにインデックスをデフォルトで貼る書き方がある。
-class CreateTweets < ActiveRecord::Migration[5.0]
-  def change
-    create_table :articles do |t|
-      t.string    :text
-      t.integer   :user_id, index: true
-    end
-  end
-end
-
-
-
-ここでの user_id, index: true の箇所となる。さて、インデックスを貼ると、SELECT 文でインデックスが使われるようになるという点はわかりやすい。つまり以下のようなケースである。
-@user = User.find(params[:id])
-@articles = @user .articles
-=>
-SELECT * FROM articles WHERE user_id = ? ORDER BY id ASC LIMIT 100;
-
-
-
-最初は良かったけど、そのうち記事は基本的にグループ単位で取得するケースが出てくる。
-@user = User.find(params[:id])
-@articles = @user.group.articles
-SELECT * FROM articles WHERE group_id = ? ORDER BY id ASC LIMIT 100;
-
-
-
-こうなると、user_idでの絞り込みインデックスは不要になるケースがある。
-「group_id でインデックスを貼ったことだし、user_id のインデックスはもう用がないね。消そう」
-そして消した後、…]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>

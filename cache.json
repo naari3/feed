@@ -5718,21 +5718,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220226/20220226191000.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438066091917",
-          "author": null,
-          "description": "ども、@kimihom です。\n\n前回のインデックス貼り に続き、インデックス対応についての追記を記す。\n外部キー のインデックスの効果\nよく、関連する外部キーにインデックスをデフォルトで貼る書き方がある。\nclass CreateTweets < ActiveRecord::Migration[5.0]\n  def change\n    create_table :articles do |t|\n      t.string    :text\n      t.integer   :user_id, index: true\n    end\n  end\nend\n\n\n\nここでの user_id, index: true の箇所となる。さて、インデックスを貼ると、SELECT 文でインデックスが使われるようになるという点はわかりやすい。つまり以下のようなケースである。\n@user = User.find(params[:id])\n@articles = @user .articles\n=>\nSELECT * FROM articles WHERE user_id = ? ORDER BY id ASC LIMIT 100;\n\n\n\n最初は良かったけど、そのうち記事は基本的にグループ単位で取得するケースが出てくる。\n@user = User.find(params[:id])\n@articles = @user.group.articles\nSELECT * FROM articles WHERE group_id = ? ORDER BY id ASC LIMIT 100;\n\n\n\nこうなると、user_idでの絞り込みインデックスは不要になるケースがある。\n「group_id でインデックスを貼ったことだし、user_id のインデックスはもう用がないね。消そう」\nそして消した後、…",
-          "link": "https://www.bokukoko.info/entry/2022/02/22/180938",
-          "publishedOn": "2022-02-22T09:09:38.000Z",
-          "wordCount": null,
-          "title": "慣れないインデックス貼り vol.2",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220222/20220222180904.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220222/20220222180904.jpg"
         }
       ]
     },
