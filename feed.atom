@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-22T19:02:23.636Z</updated>
+    <updated>2022-05-22T20:02:07.026Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -306,6 +306,16 @@ Amazon
 とにかく音声入力の場合はわずかな音声の差が、入力結果に響きますので、そこそこ良いマイクを使うのが推奨です、そして良いマイクといっても高いマイクを使えというわけではなく、音声を程よくちゃんと取るマイクということで、だんだん使ってきてわかったのですが、結局高性能のピンマイクが良いのではないかと今のところ思っています。]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[レシピ記述形式メモ #2]]></title>
+        <id>https://r7kamura.com/articles/2022-05-22-cooking-recipe-format</id>
+        <link href="https://r7kamura.com/articles/2022-05-22-cooking-recipe-format"/>
+        <updated>2022-05-21T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[料理のレシピの記述形式について、前回の続き。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
@@ -17432,45 +17442,6 @@ SELECT * FROM articles WHERE group_id = ? ORDER BY id ASC LIMIT 100;
 そして消した後、…]]></summary>
         <author>
             <name>ボクココ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「自動テストとテスト駆動開発、その全体像」を執筆しました（Software Design 2022年3月号）]]></title>
-        <id>hatenablog://entry/13574176438065956914</id>
-        <link href="https://t-wada.hatenablog.jp/entry/automated-test-and-tdd-sd202203"/>
-        <updated>2022-02-22T07:22:10.000Z</updated>
-        <summary type="html"><![CDATA[2022年2月18日発売の Software Design 2022年3月号 にて、第2特集「そろそろはじめるテスト駆動開発」の第1章「自動テストとテスト駆動開発、その全体像」を執筆いたしました。第1章では、混同されることの多い自動テスト関係の概念を自動テスト、テストファースト、テスト駆動開発（TDD: Test-Driven Development）の3つの段階に分け、それぞれの効果や注意点を包括的に整理整頓しています。
-
-ソフトウェアデザイン 2022年3月号
-
-作者:大竹 章裕,瀬戸口 聡,庄司 勝哉,光成 滋生,和田 卓人,櫛引 実秀,やまねひでき,渋川 よしき,高橋 信頼,サリチル酸,結城 浩,山川 正美,Tellusオウンドメディア「宙畑」編集部,松本 直人,清水 洋治,皆川 諒,中山 浩太郎,坂井 靖文,増田 泰,中島 雅弘,兼清 裕平,梶原 直人,寺西 祐樹,森若 和雄,伊藤 裕一,くつなりょうすけ,弁護士 坂田 晃祐,高橋 そのみ,杉山 貴章
-技術評論社
-Amazon
-
-gihyo.jp
-gihyo.jp
-第2特集
-そろそろはじめるテスト駆動開発
-JavaScriptでテストファーストに挑戦
-…… 和田 卓人（監修）
-
-第1章：保守しやすく変化に強いソフトウェアを支える柱
-自動テストとテスト駆動開発，その全体像
-…… 和田 卓人
-
-第2章：TDDのその前に
-自動テストの環境を構築しよう
-…… 櫛引 実秀
-
-第3章：レッド・グリーン・リファクタリングのリズムを体験
-実践！ テストファースト
-…… 櫛引 実秀
-私が書いた第1章ですが、ポイントは下記のものです
-自動テスト関係のプラクティスを 1.自動テスト 2.テストファースト 3.テスト駆動開発 の3段階に分ける
-3つそれぞれの効果や注意点を包括的にまとめる
-テスト駆動開発まで行かずとも、自動テストを行えば十…]]></summary>
-        <author>
-            <name>t-wadaのブログ</name>
         </author>
     </entry>
 </feed>
