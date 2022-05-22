@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-22T01:28:59.672Z</updated>
+    <updated>2022-05-22T02:33:34.757Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[そして、新しいマイクのおかげで音声入力も久々のブレークスルー感があります]]></title>
+        <id>hatenablog://entry/13574176438094661824</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2022/05/22/103727"/>
+        <updated>2022-05-22T01:37:27.000Z</updated>
+        <summary type="html"><![CDATA[先程書いたブログの記事ですが、新しいピンマイクを導入することで随分と音声の品質が良くなりました。
+ところが音声品質は良くなったにもかかわらず、まだたまに誤変換があります。それはなぜかというと、マイクの音声は良いのですが、私の言葉が不明瞭な時です。
+そこで考えたことは何かというと、自分が話している言葉がしっかりと明瞭に波形が出てるかを確認しながら話すことです。
+最近は音声入力はSimejiを使ってることが多いのですが、Simejiの場合は音声入力をしている時にかなり綺麗に、音声の波形が画面の下半分に大きく出てきます。
+これをしっかりと見ながら、小さすぎない声大きくない声でしかもきれいに波打つように話をすると、ほとんど誤入力がなくなりました。
+Googleのアシスタント音声入力でもできないことはないのですが、Googleの音声入力の場合にはほんの小さな輪っかが多少ぐるぐる回るだけなのであまり音声フィードバックの状況を確認するには向いていません。
+また、元々Googleの音声入力はSimejiに比べますと何度も指摘していますが、同音異義語の選択が正しくないケースが多いので、せっかく音声を正しく入力したとしても向こう側で間違えられてしまうので、結局修正の手間暇がかかってしまいます。
+そうやって考えると
+・サンワの新しい高性能ピンマイクで
+・Simejiの音声入力の波形を自分で目で見て、チェックしながら
+・Simejiの音声入力の変換に任せる
+という組み合わせが今のところ一番誤変換がなく、入力できそうです。
+特にこれまで音声入力中の波形をそこまでしっかりと見て入力するということは、やってこなかったので、これはここ最近の音声入力の中で大きなブレークスルーになりそうです。
+ここの時点ではっきりと波が現れなければ当然Simeji側も私が何を言ってるのかさっぱりわからない訳で、ここをしっかりと見ながら分かりやすく明瞭に話すということをもう少し続けてみたいと思います。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022-05-21]]></title>
         <id>hatenablog://entry/13574176438094576360</id>
@@ -17404,18 +17427,6 @@ When I was poking around, I noticed that I had two separate media queries to che
 続きをみる]]></summary>
         <author>
             <name>タフ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エッセイ：自己犠牲]]></title>
-        <id>https://note.com/sizes/n/nfd923c403543</id>
-        <link href="https://note.com/sizes/n/nfd923c403543"/>
-        <updated>2022-02-21T14:06:32.000Z</updated>
-        <summary type="html"><![CDATA[•刺青や割礼、ピアッシングのような身体改造は、どの国のどの時代にもある。目的や文脈はさまざまだけれど、部族のイニシエーションとしてそれを行うばあい、もっぱらその部族への忠誠・帰属が意図として含まれる。消えないアザをこしらえて、ワタシはこの部族のこういう一員です、ということを体で示すのだ。
-「推し」を信仰するのも、明らかにその一種だよなとは思う。法被や団扇や缶バッジをゴージャスにまとって、身をやつすほどに心身と金銭を蕩尽したオタクがいちばんのファン。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>
