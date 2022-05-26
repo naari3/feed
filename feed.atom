@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-26T22:02:24.175Z</updated>
+    <updated>2022-05-26T23:02:16.403Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17127,38 +17127,6 @@ github.com
 続きをみる]]></summary>
         <author>
             <name>okazsystem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twilio Voice JavaScript 2.0 以降での複数着信の受け取り方]]></title>
-        <id>hatenablog://entry/13574176438067391543</id>
-        <link href="https://www.bokukoko.info/entry/2022/02/26/191116"/>
-        <updated>2022-02-26T10:11:16.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-Twilio コミュニティの中で、「1本目の着信が来た後、続けて2本目の着信が来たときに、1本目の着信を出られるようにしたい」というケースで質問をいただいた。まさにそのケースの対応を自分も実装したので、コードを含めて説明していければと思う。
-Twilio Voice JavaScript SDK の変更
-まず、v1 から v2 への 大枠の変更は以下の記事にまとめてある。
-www.bokukoko.info
-"Device 実装の変更" がさっと書いてあるが、これが実装する上では最も大きな影響を与えている。
-最も大きな変更点は何か。個人的には以下の違いが最も大きいと感じている。
-v1: 着信が来た順で最新の着信のみを受け取れていた
-v2: 着信が複数来たときに、そのどの着信を出るかを選択できるようになった
-この影響もあり、どうやら執筆時点で Twilio Voice JavaScript SDK のサンプルアプリでは、最もシンプルに着信を表示するだけの実装になっているようだ。
-ではどう実装していくか、詳細をコードを含めて説明していく。
-初期化コード
-まず答えから書くと、"着信を受けているCallをJavaScript内で管理する" ということになる。
-具体的なサンプルコードを書いてみる。
-let token = getToken(); // access token
-let activeCall = null; // 現在アクティブなCall
-let activeIncomingCalls = {} // 現在着信を受けているCall
-
-function initTwilioClient(token) {
-  const twilio = new Twilio.Device(token);
-
-  twilio.on('registering…]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>
