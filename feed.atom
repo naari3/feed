@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-29T18:01:58.121Z</updated>
+    <updated>2022-05-29T19:01:50.725Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17231,30 +17231,6 @@ case class CoinToss(var headProbs: Seq[Double], var maxEpisodeSteps: Int = 30) {
         <updated>2022-03-01T09:24:13.000Z</updated>
         <summary type="html"><![CDATA[2022年3月4日（金）14時から最大1時間程度、メンテナンスのためメール投稿の反映が遅延します。メンテナンス期間中のメール投稿は、その場でははてなブログに反映されませんが、メンテナンス終了後に反映されます。何度も投稿されないようにご注意ください。
 直前のご連絡となりご迷惑をおかけしますが、ご理解いただけますと幸いです。]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[はてなブログの2022年2月の機能修正・改善をお知らせします（4件）]]></title>
-        <id>hatenablog://entry/13574176438068285235</id>
-        <link href="https://staff.hatenablog.com/entry/2022/03/01/150058"/>
-        <updated>2022-03-01T06:00:58.000Z</updated>
-        <summary type="html"><![CDATA[はてなブログでは、日々さまざまな機能修正・改善を行っています。多くのユーザーさまに関係する機能は、この開発ブログにて個別にお知らせしています。その一方で、目に見えづらい改善や、影響する方が少ない機能の修正も進めています。本記事では、2022年2月に実施した機能修正・改善をダイジェストでお届けします。
-細かな機能修正・改善
-1.記事本文において自動リンクが不要な場面で、リンクされないようにしました
-はてなブログでは自動でリンクする機能を提供していますが、記事本文において自動リンクが不要と考えられる下記のHTML要素内では、URLやはてなブログタグにリンクしないようにしました。
-summary要素
-button要素
-option要素
-2. 複数行を選択した際、入力補助ツールバーのボタンからリストにできるようになりました（はてな記法モード、Markdownモード）
-はてな記法モードとMarkdownモードにおいて、複数行を選択して「箇条書き」や「番号付きリスト」のボタンを押した際に、複数行がリストになるよう修正対応を行いました。
-3.各トピックの記事の表示件数が48件になりました
-各トピックに表示される記事の件数はこれまで24件でしたが、48件に増やしました。
-はてなブログトップページ上部の「トピック」よりご覧いただけます。
-4. ブログカードにrobotsタグ indexifembedded を追加しました
-はてなブログのブログカードはiframeとして提供しておりますが、ブログカード自体が検索結果に表示されるのを望まないため、noindexを指定しています。しかしながら、その影響で、ブログに掲載されたブログカードのコンテンツをGoogleが利用することができませんでした。
-indexifembedded というタグのサポートを開始したため、はてなブログのブログカードで対応いたしました。このタグを利用すると、検索結果に掲載されないようにしつつ、Googleがページのコンテンツとして利用することができるようになります。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
         </author>
