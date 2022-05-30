@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-30T21:01:56.797Z</updated>
+    <updated>2022-05-30T22:02:15.585Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17246,16 +17246,6 @@ case class CoinToss(var headProbs: Seq[Double], var maxEpisodeSteps: Int = 30) {
 }]]></summary>
         <author>
             <name>kmizuの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Souzoh QAのミッション・バリューを作りました]]></title>
-        <id>19859</id>
-        <link href="https://engineering.mercari.com/blog/entry/20220302-souzoh-qa-mission/"/>
-        <updated>2022-03-02T10:00:31.000Z</updated>
-        <summary type="html"><![CDATA[はじめまして。ソウゾウQAチームのマネージャーをしています@matsuです。連載：メルカリShops 開発の裏側 Vol.2の12日目を担当させていただきます。 この記事ではメルカリShopsの品質を牽引するソウゾウQA […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
