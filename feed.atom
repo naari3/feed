@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-30T02:44:56.841Z</updated>
+    <updated>2022-05-30T03:30:03.953Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17198,20 +17198,6 @@ case class CoinToss(var headProbs: Seq[Double], var maxEpisodeSteps: Int = 30) {
         <summary type="html"><![CDATA[はじめまして。ソウゾウQAチームのマネージャーをしています@matsuです。連載：メルカリShops 開発の裏側 Vol.2の12日目を担当させていただきます。 この記事ではメルカリShopsの品質を牽引するソウゾウQA […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[真・カスMAD Advent Calendar開会式]]></title>
-        <id>https://note.com/customer_center/n/ncb3112d7c3a8</id>
-        <link href="https://note.com/customer_center/n/ncb3112d7c3a8"/>
-        <updated>2022-03-01T15:00:11.000Z</updated>
-        <summary type="html"><![CDATA[この度はカスMAD Advent Calendarをご愛読頂きありがとうございます。
-
-本日、皆様に大切なお知らせがございます。
-
-続きをみる]]></summary>
-        <author>
-            <name>こちらカスタマーセンター</name>
         </author>
     </entry>
 </feed>
