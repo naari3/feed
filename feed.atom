@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-05-31T19:01:39.377Z</updated>
+    <updated>2022-05-31T20:02:15.251Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -292,6 +292,26 @@ Webサイトとintent-f…]]></summary>
 これは競馬で負けすぎた、というより僕がバイトをほぼしていないのが原因なんですけど、競馬の負け額が月収を上回ってしまったので来月は買うのはGⅠレースだけにしておこうと思います。]]></summary>
         <author>
             <name>音MADとポケモンと私</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[作業配信31日経過振り返り]]></title>
+        <id>https://r7kamura.com/articles/2022-05-31-work-with-me-31-days</id>
+        <link href="https://r7kamura.com/articles/2022-05-31-work-with-me-31-days"/>
+        <updated>2022-05-30T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[毎時00分から50分まで作業して、50分から00分まで雑談休憩する、という作業配信を始めてから31日経った。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Twitter Recommendation Block]]></title>
+        <id>https://r7kamura.com/articles/2022-05-31-twitter-recommendation-block</id>
+        <link href="https://r7kamura.com/articles/2022-05-31-twitter-recommendation-block"/>
+        <updated>2022-05-30T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Twitterのおすすめや広告を非表示にするChrome拡張をつくった。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
@@ -17308,16 +17328,6 @@ opt.connpass.com
 　発表枠は埋まっていますが参加枠はまだまだあるので、がんがん宣伝していただけると嬉しいです。]]></summary>
         <author>
             <name>kmizuの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Proxy環境下で使うKubernetes]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=12769</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/12769"/>
-        <updated>2022-03-03T07:46:18.000Z</updated>
-        <summary type="html"><![CDATA[皆さんがdocker, kubernetesを使う環境にはhttp proxyがありますか？ 多くのエンタープライズネットワークがそうであるように、IIJのオフィスでもProxyを通らないとInter...]]></summary>
-        <author>
-            <name>田口 景介</name>
         </author>
     </entry>
 </feed>
