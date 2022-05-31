@@ -74,6 +74,158 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-05-31">2022-05-31</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2022-05-30</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/05/31/100010" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>週末に湯郷のあたりに旅行に行っていた。
+近くのノースヴィレッジという施設の馬
+toymuseum.wixsite.com
+​現代玩具博物館・オルゴール夢館に行った。おもちゃやオルゴールが展示されていて、なかなか楽しめた。
+オルゴールのコンサートとおもちゃの紹介のイベントがそれぞれあって、どちらも良かった。
+オルゴールのコンサートでは、様々なオルゴールを実際に鳴らしてくれるのだけど、古いオルゴールの駆動部分などを見せてもらえて結構楽しい。
+オルゴールでテンポがだんだん遅くなる曲が演奏されていて、たしかにアナログな機械だからそういうのもできるのだろうけど、なんだか新鮮な気持ちだった。
+おもちゃの紹介は、未就学児や小学校低学年ぐらいをターゲットとしたおもちゃを実演するようなイベントだったので、メインターゲットは家族連れという感じがした。とはいえパズル要素があるようなおもちゃの実演が多くて、手品ショーを見ているような感覚で楽しめた。
+オルゴール館で唯一撮っていた写真。馬の輪切りが良い
+宿の貸切風呂。広々としていて良かった
+今回の旅行のメインは、ホタルを見に行くことだった。ちょうど天気もよくホタルのシーズンで、結構たくさんホタルが飛んでいてきれいだった。
+しかし明るいライトを持っている人が結構いて、ちょっときつかった。
+ホタルが光る中、結局スマホの光に夢中になる人間がいるのは示唆的で面白かった。
+Pixel 6proの夜景モードの限界を感じるホタル
+
+ホタル pic.twitter.com/9Go46irNiM
+— 🎹 (@p_ck_) May 30, 2022
+  
+湯郷近くの展望台からの風景
+展望台のお手洗い。中は結構きれいだった。
+これはお手洗いの上からの風景。
+道の駅にいたガンダム。動くらしい
+津山で食べたフォー。おいしかった。
+
+うめともものふつうの暮らし (4) (バンブーコミックス)
+
+作者:藤沢カミヤ
+竹書房
+Amazon
+
+うめともものふつうの暮らし、4巻まで読んだ。めっちゃいい。かわいい。ひたすらかわいい。
+1巻の「たべものは 全体的におすすめ」が好きです</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/P/Pocke/20220528/20220528180134.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Android App Linksの複数ホスト対応と、Android App Links対応Webサイトに対して複数アプリを関連付けるための知見</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/05/31/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、クックパッド事業本部 買物サービス開発部の佐藤（@n_atmark）です。
+普段はクックパッドiOS/Androidアプリ向けの買い物機能の開発に従事しています。
+SwiftUI を活用した「レシピ」×「買い物」の新機能開発
+既存実装を活用しつつJetpack Composeを用いてクックパッドAndroidアプリの買い物機能を高速に開発している話
+さて、タイトルにある通り、今回は Android App Links の話を書こうと思います。
+付録: ディープリンク用語まとめ
+この記事ではDeepLinkに関連する用語がいくつか登場するため、説明のためにできるだけわかりやすく図示してみました。
+DeepLink関連用語の図示
+Android App Links とは
+Android App Linksの動作イメージ
+アプリとウェブサイトURLの両方の所有権を証明することによって自動的にURLインテントをアプリにルーティングする仕組みで、特定のウェブページに関連づけられたアプリがインストールされている場合に、ウェブサイト URL から直接 Android アプリ内の対応コンテンツを開けるようになります。アプリがインストールされていない場合はブラウザ上で表示を継続します。
+iOSでは同様の仕組みとして Universal Links があります。
+Android App Linksを検証する
+アプリとウェブサイトURLの両方の所有権を証明するために以下の手順が必要です。
+アプリの自動リンク検証を有効にするために、AndroidManifest.xml でintent-filterに autoVerify&#x3D;true を設定する (これによって intent-filter で使用されているURLドメインに属しているか検証されるようになる)
+Webサイトとintent-f…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/n_atmark/20220526/20220526160838.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
+              rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">パソコンで音声入力をするのにはWindows 11の標準の音声入力＋ピンマイクで良いんではないか疑惑</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2022/05/31/095222" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>これまで散々どうやってAndroidからリモートマウスで上手に音声入力をパソコン側に流すかということを工夫してきましたが、最近ふっと気づいたことがあります。それは、ひょっとしてピンマイクがAndroidの音声入力に有効であれば Windows 11の標準の音声入力をピンマイクで使えば、そのままそれですべてが完結ではないかというアイディアです。
+もともとWindowsの標準の音声入力はいちいちオンとオフをするときにピッと鳴るのが鬱陶しかったのと、場所がいつも真ん中の下の方に出てきて画面上邪魔になったので使わなくなっていたのですが、どこで変わったのかは分かりませんが、最近、画面の右側に 1回ずらすと、そのままずらしたまま出てくれるので、鬱陶しくなくなりました。
+加えてピッという音については消し方がわからなかったのですが、もうこれは初めからパソコンの音声を消してしまえばピッという音も出なくなります。
+また、肝心の漢字かな変換の能力ですが、おそらくGoogleのアシスト音声入力よりもSimejiの入力よりも精度が高いです。これまで精度がいまいちだったのはパソコンが当然私の顔から画面が離れていて、その画面のところにマイクがあったので、そもそも音声の精度が悪かったからのようでピンマイクを使うようになったら劇的に良くなりました。
+私が音声入力の基本機能として望む、句読点の自動挿入についても比較的他のものよりも相当的確な場所に入っていきます。これはちょっと驚きでした。特にSimejiやGoogleの音声入力は文末の句点をわざわざ自分で入れなければいけないのですが、Windows11の場合は、自動で適確に入れてくれます。
+他のものとちょっとだけ使い勝手が違うのは音声入力の開始は同じようにフットスイッチでできるのですが、終了についてはすぐにフットスイッチで終了させてしまうと、そこで漢字かな変換がされないまま入力が終わってしまうので、一瞬待って漢字から変換が終わるまでフットスイッチを押さないような習慣が必要です。その代わり、終了時点でフットスイッチを押さなくても自動で入っていきます。
+音声入力の変換のスピードはGoogleとSimejiのちょうど中間位ですが、別に遅いわけではないので実用上これで充分です。
+キーボードでこの音声入力をトグルしようとするとWindows + hでちょっと面倒くさいのと、マウスであればカーソルをその位置にいちいち合わせるのは大変ですが、フットスイッチであれば、ショートカットキーボード入力が楽楽できますので、フットフイッチとの組み合わせだと相当実用的です。
+私がたくさん買ったPixel6もこうなってくると、普段持ち歩く１台以外はいらなくなってしまうので、一体何の用途に使えばいいのかと途方にくれてしまいました。
+いずれにしてもより良い方法が見つかるということは私の仕事の効率にとっては良いことなので、まあ試行錯誤の末、新しい方法が見つかったのであれば、それで良いことにします。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nkaoobt.hatenablog.com/" target="_blank"
+              rel="noopener">音MADとポケモンと私</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">週記#9 5月4週</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nkaoobt.hatenablog.com/entry/2022/05/31/091743" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今日も火曜更新。
+これ、日曜にまとめて書こうとしてるから面倒になって毎回火曜更新になっちゃってる。
+ちょっとずつ書いて日曜に纏めるとかにした方がいいのかもしれないな。
+ 
+5/29は僕の誕生日でした。19→20は法律的にも精神的にも熱かったけど20→21は特に何もないですね。嬉しくはあるんですけど。
+ほしい物リストから耳かきを買って貰った。ありがとうございます。
+ 
+5/29は日本ダービーもありました。
+去年の日本ダービーが20歳の誕生日の翌日で人生初競馬だったのでちょうど1年になりますね。
+毎年誕生日近辺で日本ダービーが開催されるの、やっぱり競馬の神に愛されている可能性があるな。
+去年はなんも分からんかったので上位人気を適当に買ったような気がします。それでも十分面白かったんですけど、今年はダービーまでのレースも多少は見てたのでより面白かったです。
+ 
+これは競馬で負けすぎた、というより僕がバイトをほぼしていないのが原因なんですけど、競馬の負け額が月収を上回ってしまったので来月は買うのはGⅠレースだけにしておこうと思います。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-05-30">2022-05-30</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -24999,33 +25151,11 @@ ruby-jpでなんどか見かけたので読んでみた。</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
-              rel="noopener">自由さ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">エッセイ:あ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n66fce7646a71" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>•イオンでタコの刺身を買ったらなんか吸盤がジャリっとしててオエッッッってなった たぶん美味しいやつなんだろうけどそもそもタコの刺身が好きじゃないのかもしんない
-•人生の中で一貫して、好きなものを見つけたときにはその好きなものがふたつでありがちなことに気づいた  ポケモン・カードゲーム　文章・絵、好きな人A・好きな人B　分裂気質なのが関係している
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/73404689/rectangle_large_type_2_0fd4ea8989be039cf30c6404ed2a6c95.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-05-31T00:03:35.684Z">2022-05-31T00:03:35.684Z</time>
+    <time id="build-timestamp" datetime="2022-05-31T01:30:04.824Z">2022-05-31T01:30:04.824Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
