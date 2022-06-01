@@ -3598,21 +3598,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438069117380",
-          "author": null,
-          "description": "去年の夏にリターンライドしてからとりあえず自分のバイクやレンタルで借りたバイクなどを含めて９ヶ月で4000キロ程、乗車しました。大型も中型も小型も含まれていて、レンタルバイクでは5種類（Ninja400やZ400、YZF-R3、レブル1100など）ぐらい乗りましたし、自分のバイクは2種類(Z125ProとSV650)です。\nそしてこれまでのところ、どのバイクも立ちゴケさせてないということは、昔に比べて何かが変わったのだと思います。そして、なぜ立ちゴケ０になったかという事について、その要因を以下の３つにまとめました。\nその１ 5年前に比べて体を鍛えている\n5年間バイクに乗らない間に、かなりゴルフをしたり、毎日歩いたりしたので、多分体幹や身体感覚そのものが随分と良くなっているのだと思います。なので、そもそも、グラッとすること自体が少なくなっているようです。\nその２ バイクの性能そのものがかなり上がっている\nSV650にはローRPMがありますし、Ninja400とかをレンタルしても、クラッチが易しくなっていたり、エンスト立ちごけなどが非常に起こりにくくなっています。電子制御も随分と増えてきて、ユーザーに優しくなりました。\nその３ シート高が上がった分、ブレーキ操作が丁寧になった\n最近私が乗ったり、レンタルしている新しいバイクたちは、最初の頃のレブルを除いて、みんなシート高が高いのです。昔はシート高750mm前後のバイクが私の主流だったのですが、最近はもう、そんなバイクがほぼなくなってしまったので、今乗っているのは大体シート高が780から790mmです。\nそうすると、そもそも信号待ちなど停車時にも両足はツンツンになってしまうので、リアブレーキを踏みながら左足をつけるのが普通ですし、グラっと来たときには、股下が69cmしかない私は支えきる自信がないので、信号や一時停止のときにも、ギアをしっかり落として、クラッチもギリギリまで切らず、リアブレーキとフロントブレーキのバランスをとりながら、フロントをロックさせないようにしながら、ガッコンしないようにていねいにブレーキングして、止まってから足を出す、というのを繰り返しています。\n－－－－－－－－－－－－－\nこうやってまとめていって、自分でもよく分かりましたが、要は、虫歯と同じで虫歯も悪くなってから治療すると大変な痛みが生じますが、定期検診をして虫歯の発生自体を防いでいれば大した痛みがないので、立ちゴケも立ちゴケの原因を除いて行った方が、立ちゴケを無理やり支えるよりも良いのではないかと思いました。\n多分昔は立ちゴケは仕方がないと思っていたところがあるのですが、リターンライドしてからは立ちゴケは防げるという考え方で、YouTubeでもとにかく、関連動画を見たり、バイクも毎日自宅の周りを20分ずつ操作するなどして訓練を繰り返しています。\n・ハンドルは曲げて止まらない\n・取り回しは必ず体につけて行う\n・足をつくときにはかならず足元を確認してから着く\nなどの基本も実行しています。たぶん、昔も実行しているつもりだったのですが、甘かったのだと思います。\nある意味、良くも悪くも未熟だったし、若かっし、いろいろな人に迷惑かけたなーーー、と恐縮しきりです。\nとにかく、リターンライドしたからには、無事故無違反、安全運転を徹底して行きたいと思います。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2022/03/03/203406",
-          "publishedOn": "2022-03-03T11:34:06.000Z",
-          "wordCount": 216,
-          "title": "リターンライドから4000キロほど乗車、今のところ、立ちごけゼロなのはなぜなのか考察してみます",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazuyomugi/20220303/20220303201243.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazuyomugi/20220303/20220303201243.jpg"
         }
       ]
     },
@@ -5418,6 +5403,21 @@
       "feedUrl": "https://techlife.cookpad.com/rss",
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/13574176438095612911",
+          "author": null,
+          "description": "こんにちは、モバイル基盤部のヴァンサン(@vincentisambart)です。\nSwift Package ManagerはAppleがXcodeで公式にサポートしている唯一のパッケージマネージャーです。Xcode公式サポートの他に、Swift Package Manager形式でのみ提供されているswift-algorithms、swift-atomics、将来的に期待されているswift-async-algorithmsといった準標準ライブラリを利用できるようになるという大きなメリットがあります。\nクックパッドiOSアプリ(以下クックパッドアプリ)で一部の依存パッケージをXcodeのSwift Package Manager対応を使って入れるようにしました。この導入で得たいくつかの知見をまとめました。\nXcodeのSwift Package Manager対応\n本来のSwift Package ManagerがSwiftプロジェクトの一部です。コマンドラインでswift packageで使えます。活用するプロジェクトの構成をPackage.swiftで定義します。\nですが、今回話したいのはSwift Package ManagerのパッケージをXcodeのプロジェクトで使う時の話です。依存されているパッケージのプロジェクト構成がPackage.swiftで定義されていますが、メインのプロジェクトの構成がXcodeプロジェクト(xcworkspaceまたはxcodeproj)で定義されています。\nSwift Package Managerがオープンソースであるのに対し、Xcode側の実装はオープンソースのSwift Package Managerの一部を使いながらもクローズドソースです。\nプロジェクト構成の定義がPackage.swiftではないので、swift pac…",
+          "link": "https://techlife.cookpad.com/entry/2022/06/01/090000",
+          "publishedOn": "2022-06-01T00:00:00.000Z",
+          "wordCount": null,
+          "title": "XcodeでSwift Package Manager実用段階",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/v/vincentisambart/20220525/20220525085042.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/v/vincentisambart/20220525/20220525085042.png"
+        },
         {
           "id": "hatenablog://entry/13574176438095638269",
           "author": null,
