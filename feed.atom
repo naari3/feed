@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-03T11:02:00.358Z</updated>
+    <updated>2022-06-03T12:01:50.550Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[準1級四字熟語916意味つきバージョン  プレゼントはこちら]]></title>
+        <id>https://note.com/dokozonosyake/n/nbd45869a8dde</id>
+        <link href="https://note.com/dokozonosyake/n/nbd45869a8dde"/>
+        <updated>2022-06-03T11:49:12.000Z</updated>
+        <summary type="html"><![CDATA[こんばんは。まさかの1日で連投です。
+今度は 隼(はやぶさ)413号さん制作の「準１級四字熟語９１６」から、意味・解説を付記した表のご紹介です。本当は1週間くらいで完成させるつもりだったのですが、学校生活との兼ね合いもあって少し遅れてしまいました。
+続きをみる]]></summary>
+        <author>
+            <name>しゃけ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[新機能「おとなり日記」をリリースしました]]></title>
         <id>hatenablog://entry/13574176438098579198</id>
@@ -17278,16 +17290,6 @@ www.nicovideo.jp
 朝起きるのがちょっと大変だけど、帰り道のパン屋さんに寄ってパンを買って帰れるので体験がいい。今までは夜のレッスンだったから、パン屋さんは閉まっていた。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Markdown の Table 記法を CSS で実現する]]></title>
-        <id>https://blog.jxck.io/entries/2022-03-06/markdown-style-table-css.html</id>
-        <link href="https://blog.jxck.io/entries/2022-03-06/markdown-style-table-css.html"/>
-        <updated>2022-03-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[本ブログは Markdown で原稿を書き、それを HTML に変換して表示している。このとき、 CSS を用いて Markdown のシンタックスに似せた Style を適用している。例えば以下のように h2::before に content: '##' を指定するといった具合だ。しかし、これまで <table> だけはうまく Markdown 記法を再現する CSS が書けないでいた。そこで、周りの CSS 強者に実現できないか聞いてみたところ、@shqld, @araya, @yoshiko 達の協力を得て、かなりの完成度にすることができた。実現方法を記録する。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
         </author>
     </entry>
 </feed>
