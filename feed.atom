@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-04T19:01:40.884Z</updated>
+    <updated>2022-06-04T20:01:44.543Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -137,6 +137,16 @@ www.yomilab.com
         <summary type="html"><![CDATA[if array.blank?に対しては「これはarrayがnil-ableでないのならばより具体的なarray.empty?を使いたい」と言い、if val.nil?に対しては「nil?とか呼び出すのやめてunless valと書きたい」という自分は矛盾しているのではないか、とふと思った]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ダークモード対応]]></title>
+        <id>https://r7kamura.com/articles/2022-06-04-dark-mode-support</id>
+        <link href="https://r7kamura.com/articles/2022-06-04-dark-mode-support"/>
+        <updated>2022-06-03T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[r7kamura.comをダークモードに対応した。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
