@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-06T01:30:03.885Z</updated>
+    <updated>2022-06-06T02:38:36.932Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17121,53 +17121,6 @@ github.com
         <summary type="html"><![CDATA[二週間ほどかけて先週末までELDEN RINGにのめり込んでおり、更に先週末から水曜にかけて体調不足で寝込み続けていたため、日記の更新が完全に停止していた。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Secretlint 5をリリースした。SARIF形式の対応、Configのバリデーション強化、Slackのxapp-トークンの検出に対応]]></title>
-        <id>https://efcl.info/2022/03/08/secretlint-5/</id>
-        <link href="https://efcl.info/2022/03/08/secretlint-5/"/>
-        <updated>2022-03-08T13:49:00.000Z</updated>
-        <summary type="html"><![CDATA[APIトークンや秘密鍵を検出するツールであるSecretlint 5をリリースしました。
-Release v5.0.0 · secretlint/secretlint
-Secretlint 5は、機能追加的な変更はありません。
-主に、.secretlintrc.jsonのバリデーションが強化が目的です。
-また、Node.js 12 LTSが2022-04でメンテナンスが終了するので一足早くサポートを切っています。
-バリデーションを改善したことで、今ままで許容されていたけど意味がない設定になっていたケースなども実行前に検出できるようになっています。
-その結果、いままで動いていた(素通りしていた)設定がエラーとなるケースもあるためメジャーアップデートとしています。
-feat(config-loader): improve validation to config by azu · Pull Request #224 · secretlint/secretlint
-具体的には、今までは次のようにプリセットの中に無効なidを指定しても単に無視されるだけでした。
-5.0.0からは、これは設定エラーとして検出されるので、間違った設定がしにくくなっています。
-{
-  "rules": [
-    {
-      "id": "@secretlint/secretlint-rule-preset-recommend",
-      "rules": [
-        {
-          "id": "invalid-id"
-        }
-      ]
-    }
-  ]
-}
-
-
-これは設計的な話ですが、内部的には@secretlint/config-loaderと@secretlint/config-validatorという二つのモジュールで設定ファイルを読んでいました。
-今…]]></summary>
-        <author>
-            <name>Web Scratch</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[20220308]]></title>
-        <id>https://note.com/dak/n/n54e97d11cff6</id>
-        <link href="https://note.com/dak/n/n54e97d11cff6"/>
-        <updated>2022-03-08T13:47:20.000Z</updated>
-        <summary type="html"><![CDATA[9時ごろ起きる
-昨日情人と寝落ち通話して起きたらそんな時間帯になっていた
-続きをみる]]></summary>
-        <author>
-            <name>okazsystem</name>
         </author>
     </entry>
 </feed>

@@ -6825,16 +6825,6 @@
           "wordCount": 44,
           "title": "20220309",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/73908242/rectangle_large_type_2_8654c78e2fffe7bb4c571597eb2ccc2b.jpg?width=800"
-        },
-        {
-          "id": "https://note.com/dak/n/n54e97d11cff6",
-          "author": null,
-          "description": "9時ごろ起きる\n昨日情人と寝落ち通話して起きたらそんな時間帯になっていた\n続きをみる",
-          "link": "https://note.com/dak/n/n54e97d11cff6",
-          "publishedOn": "2022-03-08T13:47:20.000Z",
-          "wordCount": null,
-          "title": "20220308",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/73844530/rectangle_large_type_2_3abb26a4238e7dc5a2958355f497b4bf.jpeg?width=800"
         }
       ]
     },
@@ -10394,16 +10384,6 @@
           "publishedOn": "2022-04-13T05:25:00.000Z",
           "wordCount": null,
           "title": "lernaからlerna-lite + turborepoに移行する",
-          "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2022/03/08/secretlint-5/",
-          "author": null,
-          "description": "APIトークンや秘密鍵を検出するツールであるSecretlint 5をリリースしました。\nRelease v5.0.0 · secretlint/secretlint\nSecretlint 5は、機能追加的な変更はありません。\n主に、.secretlintrc.jsonのバリデーションが強化が目的です。\nまた、Node.js 12 LTSが2022-04でメンテナンスが終了するので一足早くサポートを切っています。\nバリデーションを改善したことで、今ままで許容されていたけど意味がない設定になっていたケースなども実行前に検出できるようになっています。\nその結果、いままで動いていた(素通りしていた)設定がエラーとなるケースもあるためメジャーアップデートとしています。\nfeat(config-loader): improve validation to config by azu · Pull Request #224 · secretlint/secretlint\n具体的には、今までは次のようにプリセットの中に無効なidを指定しても単に無視されるだけでした。\n5.0.0からは、これは設定エラーとして検出されるので、間違った設定がしにくくなっています。\n{\n  \"rules\": [\n    {\n      \"id\": \"@secretlint/secretlint-rule-preset-recommend\",\n      \"rules\": [\n        {\n          \"id\": \"invalid-id\"\n        }\n      ]\n    }\n  ]\n}\n\n\nこれは設計的な話ですが、内部的には@secretlint/config-loaderと@secretlint/config-validatorという二つのモジュールで設定ファイルを読んでいました。\n今…",
-          "link": "https://efcl.info/2022/03/08/secretlint-5/",
-          "publishedOn": "2022-03-08T13:49:00.000Z",
-          "wordCount": null,
-          "title": "Secretlint 5をリリースした。SARIF形式の対応、Configのバリデーション強化、Slackのxapp-トークンの検出に対応",
           "imageUrl": null
         }
       ]
