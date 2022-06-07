@@ -24820,73 +24820,11 @@ kai-you.net
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
-              rel="noopener">honeylab&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">イーグレットツーミニをハックする</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2022/03/09/234658" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>解析合戦不参加を表明していましたが、結局参加することになりました。
- 
-まず、シルクに騙されてUART端子が見つからず苦戦していましたが、
-結局普通にUART端子が出ていたのでここからいじることができました。
- 
-さて、早速あれやこれやいじってみた感触です。
- 
-
-進捗です　#イーグレットツーミニ pic.twitter.com/diDPUWKqMQ
-March 9, 2022
-
-
- 
-とりあえず、RetroArchのメニュー画面が出ましたが、
-ゲームを起動しようとするとcoreがSEGV吐いて落ちます。
-なんでだろう…
-RetroArchはいっちゃえば、何でも動くと思います。
-画面の縦横制御とかが必要ですが、AstroCityみたいに固定じゃなく、
-回転ルーチンのプログラムの呼び出し方もわかっているので、たぶん対応できるんだと思います。
-ここまでミニ系をいじってきたんですが、SDカードスロットが標準でついているので、
-今までで一番ハックとしてはやりやすい筐体ですね。
-画面回転もあり、筐体としては最高だと思います。
-（内蔵エミュのことはぶっちゃけわかんないですｗ）
- 
-今後のハックの流れですが
-・SDカード経由でのハック
-　追加ゲームとして供給されているＳＤカードにはパスワードプロテクションがかかっていて、普通の方法で読み書きすることができません。しかし、このパスワードが解除できた状態であれば、中にあるファイルを自由に弄ることができます。
-パスワードを解除したＳＤカードは、FATイメージが書かれた生メモリとして扱われます。ここで、中にあるegret2というファイルは、パスワード付きで圧縮されたzipファイルです。起動時にＳＤカードが挿入されていると、まずパスワードロックされたSDカードであるかを確認し、そうであればこのファイルにアクセスして解凍、実行するようになっています。
-パスワードロックされたＳＤカードは容易に入手することができません。
-そのため、ゲーム付きのパックを購入し、中身を書き換えることで、本体にまずこのチェックを外すようにパッチをあてることで、任意のＳＤカードからプログラムを実行することができます。このため、まずゲームを購入する、という必要があります。
-また、このカードの書き換えも、通常のＵＳＢーＳＤメモリカードでは不可能で、基板上に直接ＳＤカードスロットがあるマイコンやraspberry piなどが必要になります。
- 
-・USB端子経由でのハック
-　背面USB-Cポートは電源供給専用で、PCなどと接続してもデータ通信が行われません。しかし実は、2Pコントローラ端子は、ドライバを制御することでデバイス側として動作することができ、USB A-AケーブルでPCに接続することで、USBデバイスとして認識させることができました。
-起動時に特殊なネゴシエーションを行うことで、ファミコンミニやメガドライブミニ、などのハックでも活用されたFELモードに移行し、自由にファームウェアの書き換えが行われるようになります。
-今後、このタイプでのハックツールがリリースされる可能性があります。
- 
-ところで、TAITOのサイトで公開されたLinuxのソースコードが、
-アストロシティの時のアーカイブと寸分たがわぬ状態なので
-イーグレットツーミニの液晶のドライバファイルを含んでないんじゃないか、という指摘が上がってきています。
-標準のカーネルでは接続できるデバイスに制限があるので、これを外したいんですが、
-そのためにはカーネルの再コンパイルが必要なため、フルセットのソースが無いと駄目なんですよ。
-というわけで、とりあえず突っついておこう…</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-07T02:36:04.126Z">2022-06-07T02:36:04.126Z</time>
+    <time id="build-timestamp" datetime="2022-06-07T03:25:29.716Z">2022-06-07T03:25:29.716Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
