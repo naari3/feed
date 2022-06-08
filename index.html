@@ -24930,49 +24930,11 @@ PANって地味だけど、Mixの棲み分けをするときにすごく重要�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank"
-              rel="noopener">knqyf263&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">20分で分かるDirty Pipe（CVE-2022-0847）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2022/03/11/105130" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>極限まで詳細を省けば何とか20分で雰囲気だけでも伝えられるんじゃないかと思って書きました。書き終えてから見返したら多分無理なので誇大広告となったことを深くお詫び申し上げます。
-背景
-概要
-脆弱性の影響
-ページキャッシュやsplice
-パイプ
-マージの可否
-下準備
-攻撃手順
-まとめ
-背景
-先日Dirty PipeというLinuxカーネルの脆弱性が公表されました。
-dirtypipe.cm4all.com
-Linuxのパイプに関する脆弱性なのですが、仕組みは意外とシンプルでぎりぎりブログでも伝わるかもしれないと思ったので自分の理解を書きました。あといつも細かく書きすぎて長くなるので、今回は雰囲気だけでも伝わるようにとにかく説明を簡略化し、ふわっとした概要だけでも理解してもらえるように頑張りました。その結果、若干正確性に欠ける部分があるかもしれませんがお許しください。細かい部分はまた別の記事でまとめます。もっと正確に細かく書きたいという衝動を抑え、とにかく20分以内に「あーそういうことね完全に理解した（わかってない）」というところまで持っていくことを目指しています。
-なお、自分は特にLinuxカーネル開発者でもないですし、一部は簡略化のせいとかではなく普通に間違っている可能性もあります。その点は念頭に置いて読んでください。また、何か間違いがあれば修正するのでLinuxカーネルに詳しい方たちからのご指摘もお待ちしております。
-概要
-脆弱性の影響
-まず、この脆弱性はread-onlyのファイルに対して書き込みができてしまうというものです。例えばrootしか書き込みできない /root/.ssh/authorized_keys だったり /etc/passwd だったりを一般ユーザから変更することでrootになりすますことが出来ます。つまり権限昇格の脆弱性ということになります。
-PoC…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220310/20220310225307.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-08T13:13:20.797Z">2022-06-08T13:13:20.797Z</time>
+    <time id="build-timestamp" datetime="2022-06-08T14:01:54.682Z">2022-06-08T14:01:54.682Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
