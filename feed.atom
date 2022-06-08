@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-08T12:02:06.212Z</updated>
+    <updated>2022-06-08T13:13:20.865Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「ディグディガ」元ネタ紹介：第15話]]></title>
+        <id>https://note.com/diginthedigger/n/n6c018ca6fbc7</id>
+        <link href="https://note.com/diginthedigger/n/n6c018ca6fbc7"/>
+        <updated>2022-06-08T12:12:31.000Z</updated>
+        <summary type="html"><![CDATA[これは、漫画「ディグインザディガー」第15話公開に際して、原作の栄免建設と漫画の駒澤零（と、たまにゲスト）が淡々と元ネタ紹介をしていくコーナーです。
+
+ゲスト：ネムレス
+
+続きをみる]]></summary>
+        <author>
+            <name>ディグインザディガー</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記6/8]]></title>
         <id>https://note.com/hercelot/n/n0f0a90b4e180</id>
@@ -17112,18 +17126,6 @@ Linuxのパイプに関する脆弱性なのですが、仕組みは意外とシ
 PoC…]]></summary>
         <author>
             <name>knqyf263's blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022-03-10]]></title>
-        <id>hatenablog://entry/13574176438071633027</id>
-        <link href="https://commits.hatenablog.com/entry/2022/03/11/100006"/>
-        <updated>2022-03-11T01:00:06.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-TypeProfにIssueがきていて、どうやらRBS側の問題だったので修正した。rbs gem用のmanifest.yamlが必要だったけど欠けていたようだった。すっかり書くのを忘れていた。
-この調査とパッチは業務時間中に書いた。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
 </feed>
