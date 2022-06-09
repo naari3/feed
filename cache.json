@@ -844,21 +844,6 @@
             "length": "0"
           },
           "imageUrl": "https://m.media-amazon.com/images/I/51OH7H1Px2L._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438071930208",
-          "author": null,
-          "description": "bugs.ruby-lang.org\n業務中にRails appでconst_source_locationを見てごちゃごちゃやるようなコードを書いていたのだけど、いくつかのクラスでこれが[false, 0]を返してきていてバグのようだったので報告した。\nRails app上では100%再現するのだけど、これを小さい再現コードに持っていくのがなかなか大変だった。\n対象のクラスがrequire_dependencyされていることからZeitwerk関連だと当たりをつけて、Zeitwerkを使った小さい再現コードを作って、そこからさらにZeitwerkの依存を外して、と調査していた。",
-          "link": "https://commits.hatenablog.com/entry/2022/03/12/100015",
-          "publishedOn": "2022-03-12T01:00:15.000Z",
-          "wordCount": 158,
-          "title": "2022-03-11",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -7113,16 +7098,6 @@
           "wordCount": null,
           "title": "アベンジャーズのエンドゲームを観た",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/ecolidelvsvc11/n/n598aebe6476f",
-          "author": null,
-          "description": "思うようにいかなさすぎる。\nままならない事が多過ぎる。\n「ままならない」って言葉の響きの面白さに気づくのにこんなに時間がかかってしまうほど、色々上手くいってない。\n今年に入って就活でクソ忙しくなり始めた矢先、音MADの合作に何故か呼ばれまくる。\nしかもかなり規模が大きい合作や、話題を生みそうな合作、普通にメチャクチャ参加したい合作など断りたくないものばかりだ。\n結果として全部断ったり参加の返事を待ってもらったりと一切参加はしていない。\n1、2年前なら合作に呼ばれて内心喜んで飛び跳ねて天井を突き破っていたのだろうが今は苦々しい顔で苦々しい返事をするのが精一杯だ。\nつくづく音MADを作り始めるのが遅かったと思う。あと1、2年早ければ忙しくなる前に上記みたいな合作たちに迷わず参加出来ただろうに…\n話はメチャクチャ変わるがウマ娘の育成もままならない。ゴールドシチーというウマ娘を最近がんばって育成しているのだがジャパンカップのオグリキャップにどうしても勝てない。金スキル3つ積んでもステータスが盛りきれなくてギリギリ負けてしまう。\n自分はウマ娘の育成が下手なのでB+が関の山なのだが普通にAとかSとかのウマ娘を育ててる人達はどうやってそこまでステータスを盛ってるのか本当に教えて欲しい。ご指導ご鞭撻のほどよろしくお願いします。\n続きをみる",
-          "link": "https://note.com/ecolidelvsvc11/n/n598aebe6476f",
-          "publishedOn": "2022-03-12T00:43:23.000Z",
-          "wordCount": 36,
-          "title": "ままならない",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/1f7c77758e89fe584c55a54d89c2dac998f80d93.jpg"
         }
       ]
     },
