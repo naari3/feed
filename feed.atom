@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-10T05:01:40.263Z</updated>
+    <updated>2022-06-10T06:02:07.064Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[@react-google-maps/apiでの描画地図にPolylineで線を描くと消えなくなる]]></title>
+        <id>hatenablog://entry/13574176438100762758</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2022/06/10/144540"/>
+        <updated>2022-06-10T05:45:40.000Z</updated>
+        <summary type="html"><![CDATA[という問題が起きてあれこれやってた。React難しいの巻。たぶんnpm startで起動できるDevelopment modeでだけ起きる問題。
+問題
+@react-google-maps/apiでReactアプリ上にGoogle Mapsを表示*1し、そこに好き勝手にマーカーとか線を描きたい。以下のような感じ。
+// MyMapComponent
+import { LoadScript, GoogleMap, Marker, Polyline } from "@react-google-maps/api";
+
+// ...中略
+// in function MyMapComponent
+return (
+  <LoadScript googleMapsApiKey={myApiKey}>
+    <GoogleMaps
+      id="myMap"
+      mapContainerStyle={{height: "80%", width: "100%}}
+      zoom={calculatedZoom}
+      center={{lat: calculatedCenterLat, lng: calculatedCenterLng}}
+      mapOptions={{disabledDefaultUI: true, zoomControl: true}}
+    >
+      <Marker key={"map-marker-start-" + start.uuid} position={{lat: start.lat, lng: start.lng}} />
+      <Marker key={"map-marker-end-" + end.uuid} position={{lat: end.lat, lng: end.lng}} />
+   …]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220609「インターネットほのぼのクラブ」]]></title>
         <id>hatenablog://entry/13574176438100632729</id>

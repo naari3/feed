@@ -5397,7 +5397,23 @@
       "title": "たごもりすメモ",
       "feedUrl": "https://tagomoris.hatenablog.com/rss",
       "siteUrl": "https://tagomoris.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/13574176438100762758",
+          "author": null,
+          "description": "という問題が起きてあれこれやってた。React難しいの巻。たぶんnpm startで起動できるDevelopment modeでだけ起きる問題。\n問題\n@react-google-maps/apiでReactアプリ上にGoogle Mapsを表示*1し、そこに好き勝手にマーカーとか線を描きたい。以下のような感じ。\n// MyMapComponent\nimport { LoadScript, GoogleMap, Marker, Polyline } from \"@react-google-maps/api\";\n\n// ...中略\n// in function MyMapComponent\nreturn (\n  <LoadScript googleMapsApiKey={myApiKey}>\n    <GoogleMaps\n      id=\"myMap\"\n      mapContainerStyle={{height: \"80%\", width: \"100%}}\n      zoom={calculatedZoom}\n      center={{lat: calculatedCenterLat, lng: calculatedCenterLng}}\n      mapOptions={{disabledDefaultUI: true, zoomControl: true}}\n    >\n      <Marker key={\"map-marker-start-\" + start.uuid} position={{lat: start.lat, lng: start.lng}} />\n      <Marker key={\"map-marker-end-\" + end.uuid} position={{lat: end.lat, lng: end.lng}} />\n   …",
+          "link": "https://tagomoris.hatenablog.com/entry/2022/06/10/144540",
+          "publishedOn": "2022-06-10T05:45:40.000Z",
+          "wordCount": 279,
+          "title": "@react-google-maps/apiでの描画地図にPolylineで線を描くと消えなくなる",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "ユッ記",
