@@ -2,10 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-10T06:02:07.064Z</updated>
+    <updated>2022-06-10T07:02:19.744Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[React appを手元でProduction modeで動かす]]></title>
+        <id>hatenablog://entry/13574176438100766936</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2022/06/10/150230"/>
+        <updated>2022-06-10T06:02:30.000Z</updated>
+        <summary type="html"><![CDATA[react-scripts startで使えるDevelopment modeだとなんか変なことがちょいちょい起きるので、動作確認をProduction modeでやりたい。
+ところでこのアプリからはCORSリクエストを送りまくるのでHTTPSのサイトとしてlocalhostにアクセスしたい。Development modeについては、これはpackage.jsonに以下のように書いておいてnpm startすることで実現できる。
+...
+  "scripts": {
+    "start": "HTTPS=true react-scripts start",
+...
+
+
+
+React appをProduction modeで動かす
+単に動かすならドキュメントにあるようにnpm run buildでビルドしたあと、それを配信するサーバを実行すればいい。
+$ npm run build
+$ npm install -g serve
+$ serve -s build
+serveコマンドをHTTPSを有効にして実行する
+ところがこれだとHTTPなので、HTTPSにしたいときには困る。見てみたらserveコマンドには--ssl-certと--ssl-keyオプションがあって、このふたつを指定してあればHTTPSで動いてくれるっぽい。ちょいちょいと鍵と証明書を作って実行する。
+$ openssl genrsa -out key.pem
+$ openssl req -new -key key.pem -out csr.pem
+(色々聞かれるが、全部Enter連打でいい)
+$ openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+$ serve -s build --ssl-cert cert.pem --ssl-key key.pem 
+
+   ┌─────────────────────────────────────────────────────┐
+   │                                                     │
+   │   Serving!                                          │
+   │                                                     │
+   │   - Local:            https://localhost:3000        │
+   │   - On Your Network:  https://192.168.68.103:3000   │
+   │                                                     │
+   │   Copied local address to clipboard!                │
+   │                                                     │
+   └─────────────────────────────────────────────────────┘
+できた。
+Chromeで証明書チェックをスキップする
+できたと思ってChromeでhttps://localhost:3000を開くと証明書チェックにひっかかって進めない。Development modeのときはAdvanced以下に開くリンクが出るんだけど、こっちでは出ないのは何の違いによるものなのか。
+なんでだよと思って調べてみたら、このページ上で(どこかをクリックしてから?) thisisunsafe とタイプすると開けるとのこと。マジかよと思ってやってみたら、できた。マジかよ。
+yuki.world
+まとめ
+できた。やれやれ。]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[@react-google-maps/apiでの描画地図にPolylineで線を描くと消えなくなる]]></title>
         <id>hatenablog://entry/13574176438100762758</id>

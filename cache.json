@@ -5399,6 +5399,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438100766936",
+          "author": null,
+          "description": "react-scripts startで使えるDevelopment modeだとなんか変なことがちょいちょい起きるので、動作確認をProduction modeでやりたい。\nところでこのアプリからはCORSリクエストを送りまくるのでHTTPSのサイトとしてlocalhostにアクセスしたい。Development modeについては、これはpackage.jsonに以下のように書いておいてnpm startすることで実現できる。\n...\n  \"scripts\": {\n    \"start\": \"HTTPS=true react-scripts start\",\n...\n\n\n\nReact appをProduction modeで動かす\n単に動かすならドキュメントにあるようにnpm run buildでビルドしたあと、それを配信するサーバを実行すればいい。\n$ npm run build\n$ npm install -g serve\n$ serve -s build\nserveコマンドをHTTPSを有効にして実行する\nところがこれだとHTTPなので、HTTPSにしたいときには困る。見てみたらserveコマンドには--ssl-certと--ssl-keyオプションがあって、このふたつを指定してあればHTTPSで動いてくれるっぽい。ちょいちょいと鍵と証明書を作って実行する。\n$ openssl genrsa -out key.pem\n$ openssl req -new -key key.pem -out csr.pem\n(色々聞かれるが、全部Enter連打でいい)\n$ openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem\n$ serve -s build --ssl-cert cert.pem --ssl-key key.pem \n\n   ┌─────────────────────────────────────────────────────┐\n   │                                                     │\n   │   Serving!                                          │\n   │                                                     │\n   │   - Local:            https://localhost:3000        │\n   │   - On Your Network:  https://192.168.68.103:3000   │\n   │                                                     │\n   │   Copied local address to clipboard!                │\n   │                                                     │\n   └─────────────────────────────────────────────────────┘\nできた。\nChromeで証明書チェックをスキップする\nできたと思ってChromeでhttps://localhost:3000を開くと証明書チェックにひっかかって進めない。Development modeのときはAdvanced以下に開くリンクが出るんだけど、こっちでは出ないのは何の違いによるものなのか。\nなんでだよと思って調べてみたら、このページ上で(どこかをクリックしてから?) thisisunsafe とタイプすると開けるとのこと。マジかよと思ってやってみたら、できた。マジかよ。\nyuki.world\nまとめ\nできた。やれやれ。",
+          "link": "https://tagomoris.hatenablog.com/entry/2022/06/10/150230",
+          "publishedOn": "2022-06-10T06:02:30.000Z",
+          "wordCount": 202,
+          "title": "React appを手元でProduction modeで動かす",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438100762758",
           "author": null,
           "description": "という問題が起きてあれこれやってた。React難しいの巻。たぶんnpm startで起動できるDevelopment modeでだけ起きる問題。\n問題\n@react-google-maps/apiでReactアプリ上にGoogle Mapsを表示*1し、そこに好き勝手にマーカーとか線を描きたい。以下のような感じ。\n// MyMapComponent\nimport { LoadScript, GoogleMap, Marker, Polyline } from \"@react-google-maps/api\";\n\n// ...中略\n// in function MyMapComponent\nreturn (\n  <LoadScript googleMapsApiKey={myApiKey}>\n    <GoogleMaps\n      id=\"myMap\"\n      mapContainerStyle={{height: \"80%\", width: \"100%}}\n      zoom={calculatedZoom}\n      center={{lat: calculatedCenterLat, lng: calculatedCenterLng}}\n      mapOptions={{disabledDefaultUI: true, zoomControl: true}}\n    >\n      <Marker key={\"map-marker-start-\" + start.uuid} position={{lat: start.lat, lng: start.lng}} />\n      <Marker key={\"map-marker-end-\" + end.uuid} position={{lat: end.lat, lng: end.lng}} />\n   …",

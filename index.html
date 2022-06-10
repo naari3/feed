@@ -83,6 +83,56 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander" open>
+                <summary class="article-expander__title">React appを手元でProduction modeで動かす</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2022/06/10/150230" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>react-scripts startで使えるDevelopment modeだとなんか変なことがちょいちょい起きるので、動作確認をProduction modeでやりたい。
+ところでこのアプリからはCORSリクエストを送りまくるのでHTTPSのサイトとしてlocalhostにアクセスしたい。Development modeについては、これはpackage.jsonに以下のように書いておいてnpm startすることで実現できる。
+...
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;HTTPS&#x3D;true react-scripts start&quot;,
+...
+
+
+
+React appをProduction modeで動かす
+単に動かすならドキュメントにあるようにnpm run buildでビルドしたあと、それを配信するサーバを実行すればいい。
+$ npm run build
+$ npm install -g serve
+$ serve -s build
+serveコマンドをHTTPSを有効にして実行する
+ところがこれだとHTTPなので、HTTPSにしたいときには困る。見てみたらserveコマンドには--ssl-certと--ssl-keyオプションがあって、このふたつを指定してあればHTTPSで動いてくれるっぽい。ちょいちょいと鍵と証明書を作って実行する。
+$ openssl genrsa -out key.pem
+$ openssl req -new -key key.pem -out csr.pem
+(色々聞かれるが、全部Enter連打でいい)
+$ openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+$ serve -s build --ssl-cert cert.pem --ssl-key key.pem 
+
+   ┌─────────────────────────────────────────────────────┐
+   │                                                     │
+   │   Serving!                                          │
+   │                                                     │
+   │   - Local:            https://localhost:3000        │
+   │   - On Your Network:  https://192.168.68.103:3000   │
+   │                                                     │
+   │   Copied local address to clipboard!                │
+   │                                                     │
+   └─────────────────────────────────────────────────────┘
+できた。
+Chromeで証明書チェックをスキップする
+できたと思ってChromeでhttps://localhost:3000を開くと証明書チェックにひっかかって進めない。Development modeのときはAdvanced以下に開くリンクが出るんだけど、こっちでは出ないのは何の違いによるものなのか。
+なんでだよと思って調べてみたら、このページ上で(どこかをクリックしてから?) thisisunsafe とタイプすると開けるとのこと。マジかよと思ってやってみたら、できた。マジかよ。
+yuki.world
+まとめ
+できた。やれやれ。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
                 <summary class="article-expander__title">@react-google-maps/apiでの描画地図にPolylineで線を描くと消えなくなる</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2022/06/10/144540" target="_blank"
                   rel="noopener">
@@ -24822,7 +24872,7 @@ Amazon
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-10T06:02:06.998Z">2022-06-10T06:02:06.998Z</time>
+    <time id="build-timestamp" datetime="2022-06-10T07:02:19.654Z">2022-06-10T07:02:19.654Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
