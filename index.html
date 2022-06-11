@@ -78,6 +78,72 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
+              rel="noopener">fumiLab</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Vivadoプロジェクトをエクスポートして共有する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2022/06/11/214947?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>GitHubとかにあげたくなったらどうすればいいのか調べてやってみたので記録しておきます．
+まず，参考になるのはこちらのサイト方です．
+marsee101.blog.fc2.com
+wakky.tech
+qiita.com
+自分でもやってみて，うまくいかない事があったので，やり方をメモします．
+環境
+Vivado 2019.2
+Windows 10 Pro
+やりかた
+とりあえず，VivadoでWrite Tclします．
+
+オプションはこのようにしました．Recreate block designとすることでBDも一緒に作ってくれる．この出力ディレクトリの関係をもとにTCLが作られるので，出力ディレクトリは配布するときと同じ関係になるようにする必要があります．
+
+出力されたものを確認できました．
+
+配布するディレクトリ(vivado_test)を新たに作ってそこにTCLやsrcをコピーし，VivadoでそのディレクトリにCDしsource ./display_lantency.tclしました．
+
+pwd
+C:/Github/vivado_test
+ls
+WARNING: [Common 17-259] Unknown Tcl command &#x27;ls&#x27; sending command to the OS shell for execution. It is recommended to use &#x27;exec&#x27; to send the command to the OS shell.
+display_latency.tcl
+display_latency_def_val.txt
+display_latency_dump.txt
+ip_repo
+src
+
+
+
+ERROR: [Vivado 12-172] File or Directory &#x27;C:/Github/vivado_test/vivado/display_latency/display_latency.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v&#x27; does not existというエラーが発生．どうやらbdファイルがないようだ．確かにsrcには含まれていない．これってVivadoが勝手に生成してくれるやつなのでプロジェクト内部のものを自分でコピーしてやる必要がある．
+自分の環境だとC:\Github\pubtest\vivado\display_latency\display_latency.srcs\sources_1\bd\design_1にdbファイルがあった．このディレクトリを崩してはいけないようなので仕方なくこの構造のまま持っていきます．
+なお，display_latency.srcsには色々ありますが，生成されたtclを見ると
+&quot;vivado_test\vivado\display_latency\display_latency.srcs\sources_1\bd\design_1\hdl\design_1_wrapper.v&quot;
+&quot;vivado_test\vivado\display_latency\display_latency.srcs\sources_1\bd\design_1\design_1.bd&quot;
+&quot;vivado_test\vivado\display_latency\display_latency.srcs\sources_1\bd\design_1\synth\design_1.v&quot;
+の3つが必要そうなのでそれ以外は全部消しておきます．これら3つのファイルが正しいパスにある状態で再度開いてみます．
+正常にいけました．
+
+HLS で作ったIPは予め含んで於けばOKっぽい．
+おわりに
+このやり方で正しいのかわからないですし，正常に言ってるのもたまたまかもしれません．そもそもなんでこんなクソめんどくさいやり方をしなければいけないのかというと，プロジェクトに含まれるXilinxのIPをそのまま公開するわけにいかない，ということらしい．確かにそうだけど，もうちょっとなんかやり方ないのかなと思います．(大変すぎる)．プロの方は自前のスクリプトを描いて自動化しているとかなんとか．
+あれいまどうなってるか分からんですが、前は使い物にならなかったので、ウチではプロジェクト復元まわりは自前でtcl書いてその中でBDのtclをsourceしてる感じです。
+同じことしてる人多いんじゃないかなとおもいます。
+— Kenta IDA (@ciniml) June 11, 2022
+ 
+はやくこれになりたい．今日はそんなところです．</span>
+                  </div>
+                  <img src="https://raw.githubusercontent.com/fumimaker/Public_Images/main/Images/20220611_1654949021_image-20220611210340986.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://isitsutbustu-todoke.hatenablog.com/" target="_blank"
               rel="noopener">遺失物取扱所</a></h3>
           <section class="articles-per-source">
@@ -24522,33 +24588,11 @@ www.densu.jp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2022-03-13</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/03/14/100004" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>お出かけしていた。
-笠岡のカブトガニ博物館に行った。結構展示が充実していて楽しかった。元気に動いているカブトガニも見れて楽しい。ちっちゃいカブトガニもいてかわいい。
-カブトガニに餌のゴカイをやる動画が流れていて、めっちゃゴカイに逃げられていて笑った。そのあとちゃんと食べるのに成功していた。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-11T12:02:00.070Z">2022-06-11T12:02:00.070Z</time>
+    <time id="build-timestamp" datetime="2022-06-11T13:07:12.809Z">2022-06-11T13:07:12.809Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
