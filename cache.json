@@ -3749,21 +3749,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220329/20220329042944.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438073099609",
-          "author": null,
-          "description": "前から思ってたことをちょっと書かずにいられなくなったのでポエムを書きました。\n背景\nお前誰だよってなるかもしれないので書いておくと、Trivyという脆弱性スキャナーのメンテナをやっています。\ngithub.com\nとある有名な方による以下のツイートがありました。\n\nI just discovered, during @cloudflare #SecurityWeek no less, that Trivy (the vuln scanner) doesn't detect known issues in Alpine images. Including a critical CVE in the latest. 🙁\nWorth checking your scanner works with your base image type.\n— Matt Farina (@mattfarina) 2022年3月14日\n  \n簡単に言うとTrivyがAlpine Linuxで検知するべき脆弱性を検知していない（false negative）という話です。つまりバグっているという指摘なわけですが、結論から言うと実際には彼の勘違いでTrivyのバグではありませんでした。正直GitHubに来るfalse positive/negativeに関するIssueの9割近くは報告者の勘違いなのでまずはちゃんと原因を把握しようと思ったのですが、その前にすでにAlpineのセキュリティチームの方が反論してくれていました。\n\nThis is, of course, nonsense.  Trivy was literally written by @AquaSecTeam to scan Alpine images.\nFind another distribution to lie about, M…",
-          "link": "https://knqyf263.hatenablog.com/entry/2022/03/15/064819",
-          "publishedOn": "2022-03-14T21:48:19.000Z",
-          "wordCount": 276,
-          "title": "セキュリティツールの評価は難しい",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
