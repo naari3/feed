@@ -1028,21 +1028,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20220424/20220424225203.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438073268743",
-          "author": null,
-          "description": "初めに\n本ブログではやった内容技術詳細ではなく、未踏プロジェクトをやってみてどうだったか、どんなことを学んだのか、感じたことといったポエムです。興味のある方だけ読むようにお願いします。あらかじめご了承ください。\n概要\n今回、2021年度の未踏プロジェクトを終了しましたのでご報告をさせていただきます。今回私はレースドローン向け低遅延IP映像伝送システムの開発というテーマで取り組みました。高画質なデジタル映像伝送かつ、アナログ映像伝送並みの伝送遅延を実現したいというプロジェクトです。FPGAを使った、フレームバッファリングをしない画像処理、MJPEG圧縮やIP送信機構などハードウェア実装など行いカメラから受信機までを30ｍs程度の遅延でなんとかしましたというプロジェクトです。\n一人プロジェクトです。\n実装した映像送信機の写真\n未踏期間中に思ったこと\nよくある感想で申し訳ないのですが、あっという間でした。それだけ忙しかったという感じです。未踏期間は約9ヶ月、作業的には8ヶ月くらいしかありません。この期間でハードウェアを作ろうという人は覚悟して挑んだほうが良いと思います。自分の能力不足という可能性も十分にあり\n自分の場合は構想だけあって、基礎技術だけ検証できてる状態で、実際に組み合わせて動作を確かめたりが全然できておらず、未踏期間中に初めて組み合わせて動かすという状態だったのでかなり厳しい戦いだった。特に電子回路からFPGA、CPU、OS、アプリケーションまで触るようなフルレイヤーはかなりハマりやすいのもあり相当苦戦しました。使ったことないツールを使わないといけないことがわかったり、そもそもやり方が間違っており実装できず全部やり直しになったりしたというのもあるんですけどね。\n一人プロジェクトは作業中の会話相手がいないし、挫けそうになった時すぐに相談できる人もあんまいないのでそこはグ…",
-          "link": "https://fumimaker.net/entry/2022/03/15/194337?utm_source=feed",
-          "publishedOn": "2022-03-15T10:43:37.000Z",
-          "wordCount": 206,
-          "title": "2021年度未踏プロジェクトを終えて",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20201003/20201003015020.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20201003/20201003015020.jpg"
         }
       ]
     },
@@ -7874,6 +7859,16 @@
       "feedUrl": "https://note.com/sizes/rss",
       "siteUrl": "https://note.com/sizes",
       "articles": [
+        {
+          "id": "https://note.com/sizes/n/n74acf1d0423f",
+          "author": null,
+          "description": "続きをみる",
+          "link": "https://note.com/sizes/n/n74acf1d0423f",
+          "publishedOn": "2022-06-12T22:07:59.000Z",
+          "wordCount": 51,
+          "title": "日記:22/6/12",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/80564162/rectangle_large_type_2_3352569aaf5656c8592d055fd5d6d9c1.jpeg?width=800"
+        },
         {
           "id": "https://note.com/sizes/n/n893f106b4de5",
           "author": null,
