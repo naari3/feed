@@ -5680,6 +5680,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438102075199",
+          "author": null,
+          "description": "ども、@kimihom です。\n\nSwiftUI を使ってローディングアイコン(くるくる)を表示させようとした時、まず真っ先に GIF を使おうと思うだろうが、残念ながら GIF サポートは現状ない。何かしらのライブラリを使ったり、自前で動かす実装が必要になる。\nということで、現状の最適な方法としては GIF に代わる自前実装となるのがベストだろう。\n参考サイト\nまず以下の StackOverflow を参考にさせてもらった。\nActivity indicator in SwiftUI - Stack Overflow\nただ、この通りに実装すると最新の iOS 15 だと正しく動作しない部分があったので補足として本記事を記す。\nSwiftUI コード\nまずは改善版のコードを記しておく。\nimport Foundation\nimport SwiftUI\n\nstruct ActivityIndicator: View {\n    @State private var isAnimating: Bool = false\n\n    var body: some View {\n        GeometryReader { (geometry: GeometryProxy) in\n            ForEach(0..<5) { index in\n                Group {\n                    Circle()\n                        .frame(width: geometry.size.width / 5, height: geometry.size.height / 5)\n                        .scaleEffect(calcScale(index: index))\n     …",
+          "link": "https://www.bokukoko.info/entry/2022/06/14/135629",
+          "publishedOn": "2022-06-14T04:56:29.000Z",
+          "wordCount": null,
+          "title": "SwiftUI でのローディングアイコン表示",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220614/20220614135406.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220614/20220614135406.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438101172149",
           "author": null,
           "description": "確率は小学生において最も理解しづらいトピックの1つだ。\"順列\" まではなんとかわかっても、この\"組み合わせ\" の計算方法について「なぜそうなるの？」にちゃんと答えられていないことが原因の1つと考える。\nそこでご両親や塾講師などが確率の組み合わせをお子さんに説明するときに最もわかりやすい説明ができるようになることを目指して、本記事を記してみる。\n\nまずは順列をしっかりとマスターしよう\n\"順列\"は、確率において\"並び順を考慮しなければならない\"場合の確率の出し方だ。\nA, B, C, D さんがいたとき、3人を並ばせることを考える。\n\nまずわからなければ、自分でこの並び順を書いてみよう。「・・・」を全て書き付きして、その全ての並び順は何個あるか？ 24通りである。\nこの24をわざわざ書かずに簡単に出すには、パターンを見つけて計算式にする必要がある。よくみると、「1つずつ減っていった文字の選択肢の個数をそれぞれ × すればいい」ことがわかる。\nこれを 4P3 と表現し、4 × 3 × 2 = 24通り として答えを出すことができる。\nこれがわかった上で 組み合わせを考えよう！\nまず説明として「順列」と「組み合わせ」は何が違うのか？\n順列は順番を意識する必要がある。↑の図のでは A > B > C の順番と B > A > C というのは別として1つずつ足し合わせる必要があるということだ。\n組み合わせは順番が関係なくなる。つまり A > B > C と B > A > C は同じとして考える必要がある。先ほどの図を書き換えて考えてみよう。\n\n{A, B, C} { A, B, D } { A, C, D}, { B, C, D } それぞれの並び順である6通りを \"全て\"1つとして数える。だからこそ、 3 × 2 × 1 で割れば OK となる。\nこれを 4C3 と表現し、  と計算できることになるのである。\n終わりに\n確率の説明をする必要が出てきて、自分でも久々に言われるとパッと説明できなかったので、自分なりに理解できた方法を紹介した。\nもし改善すべき点あれば、教えてください〜。\n\n【改訂版】小学校6年間の算数が1冊でしっかりわかる問題集\n\n作者:小杉 拓也\nかんき出版\nAmazon\n\n\n小学校6年間の算数が1冊でしっかりわかる本\n\n作者:小杉拓也\nかんき出版\nAmazon\n\n\nおうちで完全マスター！「算数の教え方」がわかる本　改訂版　小学校6年間・全学年に対応 パパママ教えて\n\n作者:子ども学力向上研究会\nメイツ出版\nAmazon",

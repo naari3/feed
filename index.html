@@ -78,6 +78,49 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SwiftUI でのローディングアイコン表示</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/06/14/135629" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+SwiftUI を使ってローディングアイコン(くるくる)を表示させようとした時、まず真っ先に GIF を使おうと思うだろうが、残念ながら GIF サポートは現状ない。何かしらのライブラリを使ったり、自前で動かす実装が必要になる。
+ということで、現状の最適な方法としては GIF に代わる自前実装となるのがベストだろう。
+参考サイト
+まず以下の StackOverflow を参考にさせてもらった。
+Activity indicator in SwiftUI - Stack Overflow
+ただ、この通りに実装すると最新の iOS 15 だと正しく動作しない部分があったので補足として本記事を記す。
+SwiftUI コード
+まずは改善版のコードを記しておく。
+import Foundation
+import SwiftUI
+
+struct ActivityIndicator: View {
+    @State private var isAnimating: Bool &#x3D; false
+
+    var body: some View {
+        GeometryReader { (geometry: GeometryProxy) in
+            ForEach(0..&lt;5) { index in
+                Group {
+                    Circle()
+                        .frame(width: geometry.size.width / 5, height: geometry.size.height / 5)
+                        .scaleEffect(calcScale(index: index))
+     …</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220614/20220614135406.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://nkaoobt.hatenablog.com/" target="_blank"
               rel="noopener">音MADとポケモンと私</a></h3>
           <section class="articles-per-source">
@@ -24664,7 +24707,7 @@ synodos.jp
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-14T04:22:46.783Z">2022-06-14T04:22:46.783Z</time>
+    <time id="build-timestamp" datetime="2022-06-14T05:11:36.353Z">2022-06-14T05:11:36.353Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
