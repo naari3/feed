@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-14T06:01:59.378Z</updated>
+    <updated>2022-06-14T07:01:51.808Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[面倒くさいから nginx の LDAP 認証モジュール公開したよ]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=13747</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/13747"/>
+        <updated>2022-06-14T06:01:15.000Z</updated>
+        <summary type="html"><![CDATA[おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 今回紹介するのは nginx で利用できる LDAP 認証モジュール（ngx_auth_mod）です。 nginx は Web サ...]]></summary>
+        <author>
+            <name>ふぇにっくちゅん（守田 瞬）</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[情報を流れに乗せよう：セキュリティ調査の共有方法]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=13727</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/13727"/>
+        <updated>2022-06-14T06:01:13.000Z</updated>
+        <summary type="html"><![CDATA[おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 今回フォーカスする話題は“情報共有”です。 以前は、わたしのセキュリティ分野の分析について「Introduction/分析はパズル...]]></summary>
+        <author>
+            <name>ふぇにっくちゅん（守田 瞬）</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SwiftUI でのローディングアイコン表示]]></title>
         <id>hatenablog://entry/13574176438102075199</id>
