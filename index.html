@@ -78,6 +78,50 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
+              rel="noopener">fumiLab</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ZYBO Z7-20でHDMIディスプレイの遅延測定器を作りました</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2022/06/14/205526?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>あなたの使っているそのモニターの遅延，一体どれだけあるのでしょうか？気になりますよね？
+ということで，HDMIディスプレイの遅延測定器のプロジェクトを作りました．せっかくなので公開しました．ZYBO持っている方はぜひご利用ください．
+github.com
+1.概要
+HDMIディスプレイの遅延を測定することができるシステムを作りました．HDMI信号を出力し，ディスプレイが発光し，光として帰ってくるまでの遅延時間を測定します．フォトトランジスタと抵抗，ブレッドボードなどが必要です．（4章参照）
+また，スライドスイッチ[2:0]をHにするとテストモードとしてRGBの信号がHDMI出力されます．
+
+
+2.Environments
+本システムでは以下の環境で動くことを確認しています．
+Vivado 2019.2
+Vitis 2019.2
+Vivado HLS 2019.2
+Digilent ZYBO Z7-20
+3.FPGA周りの構築
+3-1. clone or download
+git clone https://github.com/fumimaker/display_latency.git
+3-2. Digilentのライブラリをダウンロード
+本プロジェクトではDigilentのvivado-libraryを使用しています．ダウンロードし，vivado-library/ip/rgb2dviをdisplay_latency/ip_repoにコピーしてください．
+git clone https://github.com/Digilent/vivado-library.git
+https://github.com/Digilent/vivado-library
+
+3-3.Vivadoでtclを読み込む．
+cd ~/.display_latencyで移動
+source ./displa…</span>
+                  </div>
+                  <img src="https://raw.githubusercontent.com/fumimaker/Public_Images/main/Images/20220614_1655132423_2022-06-13%2023.57.15.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
               rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
           <section class="articles-per-source">
@@ -24691,45 +24735,6 @@ Dr.「この動脈瘤、破裂するとくも膜下出血を引き起こした�
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">nikki_20220315「もう片方の林檎」</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://isitsutbustu-todoke.hatenablog.com/entry/2022/03/17/090047" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>次の日の日記に詳述する理由から短いです。
- 
- 
- 
- 
-この日は月曜と似た感じで作業していた。作品に触れる一週間にする、などとほざいていたのは完全に未達成になっている。作業する→横になって音madを見る→作業する、を延々と繰り返していた。近いスーパーに行きすぎて食費が逼迫したので、途中で少し足を伸ばしてスーパーに行った。といっても徒歩で10分ほどのところですが…。食材を切るのも面倒な気分ではあったのと、スーパーの特性を生かして冷凍野菜などをいくつか買ってミネストローネにした。
- 
- 
- 
- 
-先日祖父母から食料が送られてきたのだけど、結果としてその中に入っていた果物を私は捨てるに至った。腐っていたからである。苺と林檎が入っていたのだが、苺は部分的にカビが生えていた。最初はカビを摘出して安全な範囲だけ食べていたが、半量ほど食べてから冷蔵庫に放置して、また見るとカビが悪化していたので捨てた。やはり遠くから送るものではないのだろう。
- 
-林檎の方は2つあり、片方を食べたところ線香のような味が口内に充満したので捨ててしまった。仏壇に供えられていたのか、それとも線香の炊いてある部屋に放置されていたのか。（祖父母の家に仏壇はあるが食べ物は備えていない為、可能性としては後者のほうが高いと考える。）もう片方の林檎はまだ冷蔵庫に放置されているのだけど、食べられずにいる。
- 
-私は祖父母からこうして送られてくる果物を長い間食べずに腐らせてしまう過ちを数回侵しているため、今回はなるべく早く食べようと思ったらそうなっていた。しかし、もう片方の林檎も腐らせて捨てるより数口食べて新鮮なうちに判断して捨てた方がよいのだろう。早く食べます。
- 
- 
- 
- 
-「結果として…」と話の結末を先に提示する書き方というのは面白いと感じたので上の文章に入れてみた。最近ネットで見かけてこちらの記事の冒頭の書き出しがそうなっていたのだ。内容はいたって真面目かつ気になる話なのだけど（問題と照合しながら読まないと面白くないのでまだ全部に目を通してはいない）、この書き出しはちょっと翻訳小説というかアメリカンジョークみたいな面白みがある。
- 
-
-それについて、はじめは何の気なしに問題を解いてみた私は、結果的に以下の問い合わせを早稲田大学入学センターに行うことになった（3月4日。メールの一部を改変なしに引用）。
-synodos.jp
- 
- 
- 
-倉庫で労働をしていると周辺の環境上、子供が前を通って話し声が聴こえることが多い。子供、といっても幼児から中学生まで様々だが、特に小学生の話し方はどれだけ流暢でも「周囲の人間からこの話し方を学んだんだろうな」と思わせる付け焼刃感があって面白いと感じる。なぜだろう。年相応に見えなかったり、さながらつぎはぎのパッチワークみたく、どこかに一貫性のなさみたいなのがあるのかもしれない。結果として長くなりました。おやすみなさい。</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20220119/20220119035933.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -24737,7 +24742,7 @@ synodos.jp
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-14T11:02:22.651Z">2022-06-14T11:02:22.651Z</time>
+    <time id="build-timestamp" datetime="2022-06-14T12:01:55.961Z">2022-06-14T12:01:55.961Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -1015,6 +1015,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438102189420",
+          "author": null,
+          "description": "あなたの使っているそのモニターの遅延，一体どれだけあるのでしょうか？気になりますよね？\nということで，HDMIディスプレイの遅延測定器のプロジェクトを作りました．せっかくなので公開しました．ZYBO持っている方はぜひご利用ください．\ngithub.com\n1.概要\nHDMIディスプレイの遅延を測定することができるシステムを作りました．HDMI信号を出力し，ディスプレイが発光し，光として帰ってくるまでの遅延時間を測定します．フォトトランジスタと抵抗，ブレッドボードなどが必要です．（4章参照）\nまた，スライドスイッチ[2:0]をHにするとテストモードとしてRGBの信号がHDMI出力されます．\n\n\n2.Environments\n本システムでは以下の環境で動くことを確認しています．\nVivado 2019.2\nVitis 2019.2\nVivado HLS 2019.2\nDigilent ZYBO Z7-20\n3.FPGA周りの構築\n3-1. clone or download\ngit clone https://github.com/fumimaker/display_latency.git\n3-2. Digilentのライブラリをダウンロード\n本プロジェクトではDigilentのvivado-libraryを使用しています．ダウンロードし，vivado-library/ip/rgb2dviをdisplay_latency/ip_repoにコピーしてください．\ngit clone https://github.com/Digilent/vivado-library.git\nhttps://github.com/Digilent/vivado-library\n\n3-3.Vivadoでtclを読み込む．\ncd ~/.display_latencyで移動\nsource ./displa…",
+          "link": "https://fumimaker.net/entry/2022/06/14/205526?utm_source=feed",
+          "publishedOn": "2022-06-14T11:55:26.000Z",
+          "wordCount": null,
+          "title": "ZYBO Z7-20でHDMIディスプレイの遅延測定器を作りました",
+          "enclosure": {
+            "url": "https://raw.githubusercontent.com/fumimaker/Public_Images/main/Images/20220614_1655132423_2022-06-13%2023.57.15.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://raw.githubusercontent.com/fumimaker/Public_Images/main/Images/20220614_1655132423_2022-06-13%2023.57.15.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438101212971",
           "author": null,
           "description": "GitHubとかにあげたくなったらどうすればいいのか調べてやってみたので記録しておきます．\nまず，参考になるのはこちらのサイト方です．\nmarsee101.blog.fc2.com\nwakky.tech\nqiita.com\n自分でもやってみて，うまくいかない事があったので，やり方をメモします．\n環境\nVivado 2019.2\nWindows 10 Pro\nやりかた\nとりあえず，VivadoでWrite Tclします．\n\nオプションはこのようにしました．Recreate block designとすることでBDも一緒に作ってくれる．この出力ディレクトリの関係をもとにTCLが作られるので，出力ディレクトリは配布するときと同じ関係になるようにする必要があります．\n\n出力されたものを確認できました．\n\n配布するディレクトリ(vivado_test)を新たに作ってそこにTCLやsrcをコピーし，VivadoでそのディレクトリにCDしsource ./display_lantency.tclしました．\n\npwd\nC:/Github/vivado_test\nls\nWARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.\ndisplay_latency.tcl\ndisplay_latency_def_val.txt\ndisplay_latency_dump.txt\nip_repo\nsrc\n\n\n\nERROR: [Vivado 12-172] File or Directory 'C:/Github/vivado_test/vivado/display_latency/display_latency.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v' does not existというエラーが発生．どうやらbdファイルがないようだ．確かにsrcには含まれていない．これってVivadoが勝手に生成してくれるやつなのでプロジェクト内部のものを自分でコピーしてやる必要がある．\n自分の環境だとC:\\Github\\pubtest\\vivado\\display_latency\\display_latency.srcs\\sources_1\\bd\\design_1にdbファイルがあった．このディレクトリを崩してはいけないようなので仕方なくこの構造のまま持っていきます．\nなお，display_latency.srcsには色々ありますが，生成されたtclを見ると\n\"vivado_test\\vivado\\display_latency\\display_latency.srcs\\sources_1\\bd\\design_1\\hdl\\design_1_wrapper.v\"\n\"vivado_test\\vivado\\display_latency\\display_latency.srcs\\sources_1\\bd\\design_1\\design_1.bd\"\n\"vivado_test\\vivado\\display_latency\\display_latency.srcs\\sources_1\\bd\\design_1\\synth\\design_1.v\"\nの3つが必要そうなのでそれ以外は全部消しておきます．これら3つのファイルが正しいパスにある状態で再度開いてみます．\n正常にいけました．\n\nHLS で作ったIPは予め含んで於けばOKっぽい．\nおわりに\nこのやり方で正しいのかわからないですし，正常に言ってるのもたまたまかもしれません．そもそもなんでこんなクソめんどくさいやり方をしなければいけないのかというと，プロジェクトに含まれるXilinxのIPをそのまま公開するわけにいかない，ということらしい．確かにそうだけど，もうちょっとなんかやり方ないのかなと思います．(大変すぎる)．プロの方は自前のスクリプトを描いて自動化しているとかなんとか．\nあれいまどうなってるか分からんですが、前は使い物にならなかったので、ウチではプロジェクト復元まわりは自前でtcl書いてその中でBDのtclをsourceしてる感じです。\n同じことしてる人多いんじゃないかなとおもいます。\n— Kenta IDA (@ciniml) June 11, 2022\n \nはやくこれになりたい．今日はそんなところです．",
@@ -2768,21 +2783,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20220123/20220123054655.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438073762136",
-          "author": null,
-          "description": "次の日の日記に詳述する理由から短いです。\n \n \n \n \nこの日は月曜と似た感じで作業していた。作品に触れる一週間にする、などとほざいていたのは完全に未達成になっている。作業する→横になって音madを見る→作業する、を延々と繰り返していた。近いスーパーに行きすぎて食費が逼迫したので、途中で少し足を伸ばしてスーパーに行った。といっても徒歩で10分ほどのところですが…。食材を切るのも面倒な気分ではあったのと、スーパーの特性を生かして冷凍野菜などをいくつか買ってミネストローネにした。\n \n \n \n \n先日祖父母から食料が送られてきたのだけど、結果としてその中に入っていた果物を私は捨てるに至った。腐っていたからである。苺と林檎が入っていたのだが、苺は部分的にカビが生えていた。最初はカビを摘出して安全な範囲だけ食べていたが、半量ほど食べてから冷蔵庫に放置して、また見るとカビが悪化していたので捨てた。やはり遠くから送るものではないのだろう。\n \n林檎の方は2つあり、片方を食べたところ線香のような味が口内に充満したので捨ててしまった。仏壇に供えられていたのか、それとも線香の炊いてある部屋に放置されていたのか。（祖父母の家に仏壇はあるが食べ物は備えていない為、可能性としては後者のほうが高いと考える。）もう片方の林檎はまだ冷蔵庫に放置されているのだけど、食べられずにいる。\n \n私は祖父母からこうして送られてくる果物を長い間食べずに腐らせてしまう過ちを数回侵しているため、今回はなるべく早く食べようと思ったらそうなっていた。しかし、もう片方の林檎も腐らせて捨てるより数口食べて新鮮なうちに判断して捨てた方がよいのだろう。早く食べます。\n \n \n \n \n「結果として…」と話の結末を先に提示する書き方というのは面白いと感じたので上の文章に入れてみた。最近ネットで見かけてこちらの記事の冒頭の書き出しがそうなっていたのだ。内容はいたって真面目かつ気になる話なのだけど（問題と照合しながら読まないと面白くないのでまだ全部に目を通してはいない）、この書き出しはちょっと翻訳小説というかアメリカンジョークみたいな面白みがある。\n \n\nそれについて、はじめは何の気なしに問題を解いてみた私は、結果的に以下の問い合わせを早稲田大学入学センターに行うことになった（3月4日。メールの一部を改変なしに引用）。\nsynodos.jp\n \n \n \n倉庫で労働をしていると周辺の環境上、子供が前を通って話し声が聴こえることが多い。子供、といっても幼児から中学生まで様々だが、特に小学生の話し方はどれだけ流暢でも「周囲の人間からこの話し方を学んだんだろうな」と思わせる付け焼刃感があって面白いと感じる。なぜだろう。年相応に見えなかったり、さながらつぎはぎのパッチワークみたく、どこかに一貫性のなさみたいなのがあるのかもしれない。結果として長くなりました。おやすみなさい。",
-          "link": "https://isitsutbustu-todoke.hatenablog.com/entry/2022/03/17/090047",
-          "publishedOn": "2022-03-17T00:00:47.000Z",
-          "wordCount": null,
-          "title": "nikki_20220315「もう片方の林檎」",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20220119/20220119035933.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20220119/20220119035933.jpg"
         }
       ]
     },
