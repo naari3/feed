@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-15T17:04:32.583Z</updated>
+    <updated>2022-06-15T18:04:41.749Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[HTTP 関連 RFC が大量に出た話と 3 行まとめ]]></title>
+        <id>https://blog.jxck.io/entries/2022-06-16/HTTP-RFCs.html</id>
+        <link href="https://blog.jxck.io/entries/2022-06-16/HTTP-RFCs.html"/>
+        <updated>2022-06-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[2022/06/06 ~ 9 あたりに、長きに渡って策定作業が行われていた HTTP 関連の RFC が大量に公開された。RFC 9110: HTTP SemanticsRFC 9111: HTTP CachingRFC 9112: HTTP/1.1RFC 9113: HTTP/2RFC 9114: HTTP/3RFC 9163: Expect-CT Extension for HTTPRFC 9204: QPACK: Field Compression for HTTP/3RFC 9205: Building Protocols with HTTPRFC 9209: The Proxy\-Status HTTP Response Header FieldRFC 9211: The Cache-Status HTTP Response Header FieldRFC 9213: Targeted HTTP Cache ControlRFC 9218: Extensible Prioritization Scheme for HTTPRFC 9220: Bootstrapping WebSockets with HTTP/3RFC 9230: Oblivious DNS over HTTPSいったい何が起こっているのか、それぞれの経緯と開発者が知っておいた方がいいこと、そうでもないことを解説する。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記：22/6/15]]></title>
         <id>https://note.com/sizes/n/n673a9a683656</id>
