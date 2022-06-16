@@ -2,10 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-16T13:13:43.698Z</updated>
+    <updated>2022-06-16T14:01:57.029Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[レースドローン向け低遅延映像伝送システムのご紹介]]></title>
+        <id>hatenablog://entry/13574176438102849557</id>
+        <link href="https://fumimaker.net/entry/2022/06/16/225653?utm_source=feed"/>
+        <updated>2022-06-16T13:56:53.000Z</updated>
+        <summary type="html"><![CDATA[本記事では2021年度IPA未踏プロジェクトで採択されたプロジェクトの実装物について簡単にご紹介させて頂きたいと思います．まずは実装物をご覧ください．
+
+
+
+えっこれだけ！？と思われたかもしれませんが，これだけですorz
+でも，これを作るのに非常に苦労しました．本システムの性能を以下に示します．
+ 項目         
+              
+
+
+
+
+ FPGAボード         
+ Ultra96-V2             
+
+
+ FPGA               
+ Ultrascale+ Zynq MPSoC 
+
+
+ CPU                
+ ARM Cortex-A53         
+
+
+ カメラ             
+ Digilent Pcam 5C       
+
+
+ 解像度             
+ 1280*720 px            
+
+
+ カメラ周波数       
+ 30Hz                   
+
+
+ 帯域               
+ 100Mbps程度            
+
+
+ レイテンシ(送信機) 
+ 0.74ms                 
+
+
+
+
+
+背景
+レースドローンというものがあります．これは結構高速に飛行していてクラスによっては150km/h以上で飛行することもあります．レースドローンはオンボードカメラ（FPVカメラ）映像をヘッドマウントディスプレイやモニターで見ながら一人称視点で操縦します．レースドローンにおいて，映像伝送遅延は重要で低遅延はパイロットの快適な操縦体験に繋がります．
+
+現状のレースドローンではアマチュア無線バンドを使った5.8GHzアナログ映像伝送システムというものが使われており，低遅延に映像伝送ができる反面，ドローン自身のモーターや…]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「問題」と一緒に生きるか「仮想問題」と一緒に生きるか]]></title>
         <id>https://note.com/kazumakawauchi/n/nd4e3abbbd22b</id>

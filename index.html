@@ -78,6 +78,76 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
+              rel="noopener">fumiLab</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">レースドローン向け低遅延映像伝送システムのご紹介</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2022/06/16/225653?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>本記事では2021年度IPA未踏プロジェクトで採択されたプロジェクトの実装物について簡単にご紹介させて頂きたいと思います．まずは実装物をご覧ください．
+
+
+
+えっこれだけ！？と思われたかもしれませんが，これだけですorz
+でも，これを作るのに非常に苦労しました．本システムの性能を以下に示します．
+ 項目         
+              
+
+
+
+
+ FPGAボード         
+ Ultra96-V2             
+
+
+ FPGA               
+ Ultrascale+ Zynq MPSoC 
+
+
+ CPU                
+ ARM Cortex-A53         
+
+
+ カメラ             
+ Digilent Pcam 5C       
+
+
+ 解像度             
+ 1280*720 px            
+
+
+ カメラ周波数       
+ 30Hz                   
+
+
+ 帯域               
+ 100Mbps程度            
+
+
+ レイテンシ(送信機) 
+ 0.74ms                 
+
+
+
+
+
+背景
+レースドローンというものがあります．これは結構高速に飛行していてクラスによっては150km/h以上で飛行することもあります．レースドローンはオンボードカメラ（FPVカメラ）映像をヘッドマウントディスプレイやモニターで見ながら一人称視点で操縦します．レースドローンにおいて，映像伝送遅延は重要で低遅延はパイロットの快適な操縦体験に繋がります．
+
+現状のレースドローンではアマチュア無線バンドを使った5.8GHzアナログ映像伝送システムというものが使われており，低遅延に映像伝送ができる反面，ドローン自身のモーターや…</span>
+                  </div>
+                  <img src="https://github.com/fumimaker/Public_Images/blob/main/Images/20220512170402%E5%9B%B31.png?raw&#x3D;true" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -24676,7 +24746,7 @@ MCU第1作目であるアイアンマンでトニーがテロリストから逃�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-16T13:13:43.619Z">2022-06-16T13:13:43.619Z</time>
+    <time id="build-timestamp" datetime="2022-06-16T14:01:56.956Z">2022-06-16T14:01:56.956Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
