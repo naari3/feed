@@ -78,6 +78,65 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Swift アプリでどんなケースでもログを出す方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/06/18/134130" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+iOSアプリの開発をしていると、以下のようなケースでログが見れないことに不便さを感じることがある。
+バックグラウンドで動作している時のログを見たい
+iOS の電源を再起動した後のログを見たい
+その他 アプリを開いた状態 以外でのログを見たい
+これらのケースでログを見ることはできないと諦めていたのだけど、調べると方法があったのでまとめておく。
+OSLog の利用
+シンプルに1つのクラスを作るのが良さそうだ。
+import os
+
+class MyLog {
+    static let nsLog &#x3D; OSLog(subsystem: &quot;jp.co.myapp&quot;, category: &quot;ログ&quot;)
+
+    static func p(_ log: String) {
+        os_log(&quot;%@&quot;, log: nsLog, type: .default, log)
+    }
+}
+
+
+// 実際の利用
+MyLog.p(&quot;sample&quot;)
+
+
+
+まず、このログが Xcode でのアプリ実行で出力される通常のログを確認しよう。
+MyApp[29609:10452863] [ログ] sample
+というようなログが出ていればOKだ。
+他の方法でログを見る
+Xcode 13 でのログ確認の方法
+Xcodeメニュー &gt; Window &gt; Devises and Simulators &gt; iPhoneを選択 &gt; Open Console
+コンソールアプリを起動する方法
+Mac メニューより &quot;コンソール&quot; を起動 &gt; デバイスを iPhone に指定
+その後、検索に &quot;ログ&quot; として 開始 を押す。
+すると、このコンソールでのログに、出力されるようになる。これによって、どんな状態でもログを確認することができるようになった。
+&quot;ログ&quot; と日本語のカタカナで指定した理由はここで、&quot;log&quot; とかで指定すると大量のiPhoneのログが出てきてしまうことになる。
+
+終わりに
+アプリのログだけだとどうしても見れなくて困ったケースがあり、同じように悩んだ方は是非試してみていただければと思う。
+引き続きiOSアプリ開発を続けていこう。</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220618/20220618134005.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/leaf_62289" target="_blank"
               rel="noopener">阿保草</a></h3>
           <section class="articles-per-source">
@@ -24462,7 +24521,7 @@ ruby-jpでのアンケート
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-18T04:06:02.145Z">2022-06-18T04:06:02.145Z</time>
+    <time id="build-timestamp" datetime="2022-06-18T05:01:53.607Z">2022-06-18T05:01:53.607Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a></span>
   </footer>
   <script src="./index.js"></script>
