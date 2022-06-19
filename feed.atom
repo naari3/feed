@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-19T21:01:40.150Z</updated>
+    <updated>2022-06-19T22:01:50.038Z</updated>
     <generator>osmosfeed 1.15.0</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Rustのコードチェックを強力にする3つのツール]]></title>
+        <id>https://KeenS.github.io/blog/2022/06/20/rustnoko_dochekkuwokyouryokunisuru3tsunotsu_ru/</id>
+        <link href="https://keens.github.io/blog/2022/06/20/rustnoko_dochekkuwokyouryokunisuru3tsunotsu_ru/"/>
+        <updated>2022-06-19T18:53:40.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。
+Rustaceanのみなさんは普段書いてるRustのコードを検証するのに cargo check や cargo test などのツールを使っているかと思いますが、それらを強力にするツールの miri 、 MIRAI 、 kani をそれぞれ紹介します。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022.6.19 父の日]]></title>
         <id>hatenablog://entry/13574176438103730937</id>
