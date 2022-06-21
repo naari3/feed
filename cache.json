@@ -5425,6 +5425,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438104265162",
+          "author": null,
+          "description": "こんにちは、クックパッドで最近はモバイルアプリを離れもっぱらウェブアプリを作っている @morishin です。\n先日、社内で「モダンウェブフロントエンド勉強会」と題して React, Next.js, Core Web Vitals, SSR, CSR, SSG, ISR, SSR Streaming, React Server Component といったキーワードに触れつつ、昨今のウェブ開発事情について話をしました。せっかくなのでその内容の共有と、勉強会を開催した動機などを紹介したいと思います。\n背景・動機\nクックパッドのウェブアプリケーションは10年以上もの間 Ruby on Rails で開発されてきましたが、2020年から一部のページは Next.js のアプリケーションがホストするようになりました。具体的な構成については次の記事をご覧ください。\ntechlife.cookpad.com\nNext.js を使うようになると全てのビューは React コンポーネントで記述し、スタイルも JavaScript で記述するようになり、これまでの Rails での開発とは大きく異なるものになりました。それに加えてパフォーマンスを意識する必要性も増し、React の再レンダリングの回数を気にしたり、SSR (サーバーサイドレンダリング) を活用したり、バンドルサイズを気にしたりしなければならなくなりました。Rails の時は気にしなくてよかったというわけではないですが、ブラウザで実行される JavaScript がぐっと増えたことや、開発者の工夫の余地が増えたことで、パフォーマンスについて考えることが増えたのを実感しています。\nそんな中 React 18 や Next.js 12 という大幅なアップデートがやってきて、このアップデートの内容や背景を理解するには必要な前提知識が多すぎると思ったため、自分の理解を補強する目的も込みで勉強会を開催しようと考えました。\n内容\nというわけで内容としては「React 18 や Next.js 12 の新しい提案の裏にある動機を理解する」をゴールに置き、そのためにウェブ技術のこれまでの進化を順を追って紹介していくというものにしました。資料のみで恐縮ですがここに貼っておきますので、興味のある方はご覧ください。\n資料 URL: https://static.cookpad.com/techlife/202205-web-frontend-study/2\n喋った内容の情報源はこのあたりです。資料の内容が疑わしかったりわからないところがあればこちらの一次情報源もご参照ください。\nNew Suspense SSR Architecture in React 18 · Discussion #37 · reactwg/react-18\n我々向けの Algebraic Effects 入門 — Overreacted\nrfcs/0000-server-components.md at server-components · josephsavona/rfcs\nHotwireの良かった点、辛かった点、向いているケース、向いていないケース - 猫Rails\n社内勉強会\nクックパッドではエンジニアがしばしば野良勉強会を開催していて、最近だとこれの他に GraphQL 勉強会をやったりしました。他の人がやっていたのだと「RBS 勉強会」「検索勉強会(社内の検索システムが対象)」「Production Ready GraphQL 輪読会」などが開催されているのを見かけました。勉強会がある会社って楽しいですよね。そう思って自分も積極的に開催しています。\nクックパッドでは技術を学んだり好きな技術について早口で喋ったりするのが好きなエンジニアを募集しています！クックパッドのエンジニアと早口オタクトークをしたい方はカジュアル面談でもどうですか。下記の Meety からご連絡いただけます。(僕もいます)\nmeety.net\nクックパッドで働くことに興味を持ってくださった方はこちらもご覧ください。\ninfo.cookpad.com",
+          "link": "https://techlife.cookpad.com/entry/2022/06/21/130736",
+          "publishedOn": "2022-06-21T04:07:36.000Z",
+          "wordCount": null,
+          "title": "モダンウェブフロントエンド勉強会を開催しました",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/morishin127/20220621/20220621125556.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/morishin127/20220621/20220621125556.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438095612911",
           "author": null,
           "description": "こんにちは、モバイル基盤部のヴァンサン(@vincentisambart)です。\nSwift Package ManagerはAppleがXcodeで公式にサポートしている唯一のパッケージマネージャーです。Xcode公式サポートの他に、Swift Package Manager形式でのみ提供されているswift-algorithms、swift-atomics、将来的に期待されているswift-async-algorithmsといった準標準ライブラリを利用できるようになるという大きなメリットがあります。\nクックパッドiOSアプリ(以下クックパッドアプリ)で一部の依存パッケージをXcodeのSwift Package Manager対応を使って入れるようにしました。この導入で得たいくつかの知見をまとめました。\nXcodeのSwift Package Manager対応\n本来のSwift Package ManagerがSwiftプロジェクトの一部です。コマンドラインでswift packageで使えます。活用するプロジェクトの構成をPackage.swiftで定義します。\nですが、今回話したいのはSwift Package ManagerのパッケージをXcodeのプロジェクトで使う時の話です。依存されているパッケージのプロジェクト構成がPackage.swiftで定義されていますが、メインのプロジェクトの構成がXcodeプロジェクト(xcworkspaceまたはxcodeproj)で定義されています。\nSwift Package Managerがオープンソースであるのに対し、Xcode側の実装はオープンソースのSwift Package Managerの一部を使いながらもクローズドソースです。\nプロジェクト構成の定義がPackage.swiftではないので、swift pac…",
