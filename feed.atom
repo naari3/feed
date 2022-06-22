@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-22T12:02:13.998Z</updated>
+    <updated>2022-06-22T13:13:37.037Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,49 @@
         <summary type="html"><![CDATA[※本記事は2022年5月19日に公開された記事の翻訳版です。 この記事は、Security Tech Blog シリーズ: Spring Cleaning for Security の一部で、Security Engin […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日本age・韓国sageホルホルジョークは本当に英語圏で流行っているのか検証]]></title>
+        <id>hatenablog://entry/13574176438104711409</id>
+        <link href="https://kimginyon.hatenablog.com/entry/2022/06/22/220018"/>
+        <updated>2022-06-22T13:00:18.000Z</updated>
+        <summary type="html"><![CDATA[「世界の日本人ジョーク集」みたいな本が売れていますが、日本人の中でもかなり英語圏のジョーク投稿サイトに目を通している私は「Korea」「Japan」が含まれるジョークなどほとんど見た事がありません。
+www.fsight.jp上リンク先に載っている
+ 
+問＝新型コロナの特効薬は、どうやって開発されるか？
+答＝ドイツ人が発明し、
+　　アメリカ人が投資し、
+　　フランス人がデザインし、
+　　日本人が小型化し、
+　　イギリス人が実用化し、
+　　イタリア人が宣伝し、
+　　中国人が海賊版を作り、
+　　韓国人が起源を主張する。
+これが実在するかを検証します。まあ実在しないでしょうが。
+そもそも英語圏の人間の一定数が韓国に詳しくて、しかも「韓国がよく起源主張をして問題を起こす」事を知っているのか疑問です。アイルランド人が昔「白い黒人」と呼ばれてて、アル中のステレオタイプを付与されている事を知っている日本人がどれだけいるでしょうか？
+----
+■１：upjokeを調査
+upjokeは他のジョークサイト同様、有名なジョークをポストしていいねを得ようとする人が多いので検証材料たり得る。
+The 30+ Best South Korea Jokes - ↑UPJOKE↑ ｢origin｣を含むジョーク0個　｢invent｣を含むジョーク0個　｢Japan｣を含むジョーク0個
+The 89+ Best Korean Jokes - ↑UPJOKE↑  ｢origin｣を含むジョーク0個　｢invent｣を含むジョーク0個　｢Japan｣を含むジョークが5個あるが、どれも日本を称えるジョークではない
+■２：reddit/r/Jokesを調査
+redditのジョーク系サブレディットは他のジョークサイト同様、有名なジョークをポストしていいねを得ようとする人が多いので検証材料たり得る。
+r/jokesを｢Korea invented｣で検索すると下のポスト一件のみがヒット
+Topical Jokes 4/18 : Jokes
+しかし含まれるのはデニスロッドマンがNorth"Korea"に行った事に関するジョークだけ
+｢Korea invent｣でも上のポストのみがヒットする
+｢Korea origin｣で検索すると三つのポストがヒットするがいずれも｢Japan｣は含まれないし起源主張に関するジョークではない。が、下のポストがヒット
+4 Passengers were sitting in a plane.. : Jokes
+韓国人の投稿者が小学生の時に聞いたジョークらしい。
+■３：reddit/r/DarkJokeを調査
+｢Korea origin｣｢Korea invent｣｢Korea invented｣いずれもヒットせず
+----
+おかしいです。このホルホルジョークは
+インターネットやSNSで拡散している
+のに、有名なジョークをしつこくポストするユーザー達が該当ジョークを一つも投稿していません。他のホルホルジョークについても調べようと思いましたが、どうせ実在しないのでしません。]]></summary>
+        <author>
+            <name>pythonと自然言語処理を学ぶ日記</name>
         </author>
     </entry>
     <entry>
@@ -17081,20 +17124,6 @@ EMS腹筋ベルトを装着して洗濯物を干す
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022-03-24]]></title>
-        <id>hatenablog://entry/13574176438076362351</id>
-        <link href="https://commits.hatenablog.com/entry/2022/03/25/100007"/>
-        <updated>2022-03-25T01:00:07.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-rbs_railsで、rake taskのインストールをrails generatorを使って行うようにした。
-今まではこれ相当のことをユーザーに手で書かせていたのだけど、それだと不便だし、自動化されていると説明も楽なのでgeneratorを用意した。
-github.com
-rbs_railsで、不要なRBSをexposeしていたのをなおした。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
 </feed>
