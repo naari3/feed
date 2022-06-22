@@ -10197,6 +10197,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2022/06/19/jsprimer-4/",
+          "author": null,
+          "description": "JavaScript Primer(jsprimer.net)が、ECMAScript 2022(ES2022)に対応しました。\nリリースノート: Release v4.0.0: ES2022 · asciidwango/js-primer\nこれまでのjsprimer\nECMAScriptの仕様書は毎年更新されるので、それに合わせてjsprimerも更新しています。\n1.0.0(ES2019): JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？\n2.0.0(ES2020): JavaScript Primer 2.0 - ECMAScript 2020に対応した入門書を公開しました\n3.0.0(ES2021): ES2021に対応したJavaScript Primer 3.0を公開しました - JavaScript入門\n今回のアップデートでは、2022-6-22にリリースされたES2022に対応した変更をしています。\nhttps://www.ecma-international.org/news/ecma-international-approves-new-standards-5/\n今後GitHubで更新情報を購読したい人は、asciidwango/js-primerリポジトリを\"Watch\"してください。\n\"Custom\"からリリースのみを購読も可能です。\n\n更新通知をメールで受け取り方は、次のフォームからメールアドレスを登録してください。\n\n\n    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\n\n\n    \nJavaScript Primerの更新情報を購読\n indicates r…",
+          "link": "https://efcl.info/2022/06/19/jsprimer-4/",
+          "publishedOn": "2022-06-19T12:38:00.000Z",
+          "wordCount": null,
+          "title": "JavaScript Primer 4.0.0: ECMAScript 2022に対応したJS本",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2022/04/17/fz-browse/",
           "author": null,
           "description": "fz-browseという、fzfライクなインタラクティブな検索ツールを書きました。\nfz-browse自体は検索エンジンを持っているわけではなく、既存のripgrepやripgrep-allなどのツールと組み合わせて、インタラクティブな検索体験を自分で組み立てるツールです。\nコマンドを組みわせたインタラクティブな検索(絞り込み)はpercol、peco、fzfなどが有名ですが、これらは検索の結果や操作もターミナル上で行います。\nターミナルは、書籍や画像などのコンテンツを検索した結果を表示してもあまり楽しくない場合があります。\nfz-browserでは既存のコマンドラインツールを組み合わせて検索するのは同じですが、この検索結果の表示や操作をウェブブラウザ上で行います。\nブラウザで表示できるので、検索結果がPDFやEpubの書籍だったらそのままビューアで開いたり、画像だったらそのまま表示できるようになっていて、テキスト以外の結果にも対応しています。\n\n\n\nripgrep-allを使って、PDFやEpub、Markdownを検索している様子\n\n\n\nExifToolを使って、画像のExifに含まれるコメントや日付を検索している様子\n使い方\nfz-browseはNode.jsで動いているツールなので、npmでインストールします。\nnpm install --global fz-browse\n\n\n最初に書いていたように、fz-browse自体は検索エンジンではなく、既存のコマンドを組み合わせます。\nテキストを検索する\nripgrepで検索する例です。\n必要なもの:\n\n\nripgrep\njq\n\n\n\n次のコマンドを実行すると、検索欄に入力するたびに--runフラグに指定されているrgコマンドで検索した結果が表示されます。\nまた、検索したファイルのリンクを開くと、--previewフラグで指…",
