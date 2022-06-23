@@ -986,6 +986,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/13574176438104645405",
+          "author": null,
+          "description": "KV260について\n届いたので色々調べていきます．ここを参考にしています．\nhttps://japan.xilinx.com/content/dam/xilinx/support/documents/user_guides/som/1_0/j_ug1089-kv260-starter-kit.pdf\n仕様\n以下引用\n パラメーター                         \n                            KV260                             \n\n\n\n\n デバイス                             \n                   Zynq® UltraScale+™ MPSoC                   \n\n\n フォーム ファクター                  \n         SOM + キャリア カード + 熱管理ソリューション         \n\n\n スターター キット サイズ             \n                     119mm x 140mm x 36mm                     \n\n\n 熱冷却ソリューション                 \n              アクティブ (ファン + ヒートシンク)              \n\n\n システム ロジック セル               \n                             256K                             \n\n\n ブロック RAM ブロック                \n                             144                              \n\n\n…",
+          "link": "https://fumimaker.net/entry/2022/06/23/194935?utm_source=feed",
+          "publishedOn": "2022-06-23T10:49:35.000Z",
+          "wordCount": 594,
+          "title": "KV260が届きました / 仕様を調べる",
+          "enclosure": {
+            "url": "https://i.gyazo.com/6102c70e0db996ab3185626a1b461607.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://i.gyazo.com/6102c70e0db996ab3185626a1b461607.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438102849557",
           "author": null,
           "description": "本記事では2021年度IPA未踏プロジェクトで採択されたプロジェクトの実装物について簡単にご紹介させて頂きたいと思います．まずは実装物をご覧ください．\n\n\n\nえっこれだけ！？と思われたかもしれませんが，これだけですorz\nでも，これを作るのに非常に苦労しました．本システムの性能を以下に示します．\n 項目         \n              \n\n\n\n\n FPGAボード         \n Ultra96-V2             \n\n\n FPGA               \n Ultrascale+ Zynq MPSoC \n\n\n CPU                \n ARM Cortex-A53         \n\n\n カメラ             \n Digilent Pcam 5C       \n\n\n 解像度             \n 1280*720 px            \n\n\n カメラ周波数       \n 30Hz                   \n\n\n 帯域               \n 100Mbps程度            \n\n\n レイテンシ(送信機) \n 0.74ms                 \n\n\n\n\n\n背景\nレースドローンというものがあります．これは結構高速に飛行していてクラスによっては150km/h以上で飛行することもあります．レースドローンはオンボードカメラ（FPVカメラ）映像をヘッドマウントディスプレイやモニターで見ながら一人称視点で操縦します．レースドローンにおいて，映像伝送遅延は重要で低遅延はパイロットの快適な操縦体験に繋がります．\n\n現状のレースドローンではアマチュア無線バンドを使った5.8GHzアナログ映像伝送システムというものが使われており，低遅延に映像伝送ができる反面，ドローン自身のモーターや…",
@@ -7817,6 +7832,16 @@
       "siteUrl": "https://note.com/sizes",
       "articles": [
         {
+          "id": "https://note.com/sizes/n/nb95ea0398c4a",
+          "author": null,
+          "description": "・3500円のカツカレーってどんな感じ？\n・3500円のカツカレーより居酒屋の方が高そうな気がする\n続きをみる",
+          "link": "https://note.com/sizes/n/nb95ea0398c4a",
+          "publishedOn": "2022-06-23T10:48:07.000Z",
+          "wordCount": null,
+          "title": "日記:22/6/23",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/81274714/rectangle_large_type_2_669601e4914dd0e0dd17d9c15fa31465.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/sizes/n/n1918389900eb",
           "author": null,
           "description": "vtuber・歌い手・配信者・声優が、今すごいいっぱいいる。その多くはゲーム実況用のアカウントを持っていたり、「#〇〇あーと」みたいなハッシュタグを載せてファンアートを希求していたり、絵が描けたりMIXができたりする。つらつら並べたけど、ようは全員同じです。\nこれを書いている僕も、ベクトルは違えど「同じ」感がある。僕はいつでも絵を描きたいと思っている。でも一本槍でエイヤと突き進むプロ意識も価値観もないし、親族の多くがうだつの上がらない現代美術家だったのもあって、イラストレーターとか画家になりたいと思わない。となると、ひとつの表現で100点を取ることを諦めて、33点の表現を3つ並べて99点を取ろうとする。で、残りの1点は「3本足だからすごい」という言い分で足す。そういう人は、結構いるのではないかな。\n続きをみる",
@@ -9605,16 +9630,6 @@
           "wordCount": null,
           "title": "エッセイ：「ズレている会話」の正体の話",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/75131122/rectangle_large_type_2_ef4d72c444a7cc2d9e05a116c4720a33.png?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/nb273508f6110",
-          "author": null,
-          "description": "僕は典型的な文系人間で、現代文や暗記科目の成績は伸びても、理数科目はからっきしダメだった(立体図形の問題とか中学生レベルでも怪しいのではないかな？)。だからおのずから周りには「文系のオタク」が増えていったし、またその人たちと話すことでコミュニケーションにありついていたという自覚もある。\n僕は文字媒体が好きではない。けれどもふつうの人よりかは文字媒体を読むほうで、そのなかには小説やエッセイも多少含まれている。村上春樹、星新一、トルーマン・カポーティ、ミシェル・ウエルベック、レイモンド・カーヴァーなんかは楽しく読んだし、好きな小説家と言えるかもしれない。\n続きをみる",
-          "link": "https://note.com/sizes/n/nb273508f6110",
-          "publishedOn": "2022-03-25T22:29:55.000Z",
-          "wordCount": 45,
-          "title": "エッセイ：「文学青年」との縁と心理的な壁",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/75041914/rectangle_large_type_2_d4e79e84f4d0f52ae2676125343abf58.png?width=800"
         }
       ]
     },
