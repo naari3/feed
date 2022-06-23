@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-23T17:06:06.731Z</updated>
+    <updated>2022-06-23T18:02:03.235Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17580,52 +17580,6 @@ EMSを装着
 続きをみる]]></summary>
         <author>
             <name>上手な人</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SwiftUI で快適なログインUIを作ろう]]></title>
-        <id>hatenablog://entry/13574176438076811890</id>
-        <link href="https://www.bokukoko.info/entry/2022/03/26/144604"/>
-        <updated>2022-03-26T05:46:04.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-SwiftUI を使ってログインをより快適にする対応をしたので、その実施内容についてまとめておこう。
-テキストフォーカス
-ログインをしようとするページの場合、ほぼ必ず最初はメールアドレスなどの入力から始まることだろう。iOS の場合、フォーカスが当たってない状態でタイプしても反映されない形となる。
-最初からフォーカスが当たっているのは、利用ユーザーのことを考えた改善と言える。
-さて、このフォーカスだけど SwiftUI でできるようになったのは iOS 15.0 からである。focused) が登場した。
-struct SigninView: View {
-    enum Field: Hashable {
-        case email
-        case password
-    }
-
-    @State private var email = ""
-    @State private var password = ""
-    @FocusState private var focusedField: Field?
-
-    var body: some View {
-        ZStack {
-            TextField("メールアドレス", text: $email)
-                .keyboardType(.emailAddress)
-                .focused($focusedField, equals: .email)
-                .onAppear(perform: {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-   …]]></summary>
-        <author>
-            <name>ボクココ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[かきやま式わかってきた（map1パイナップルINのあれ）]]></title>
-        <id>https://note.com/izumi_pogo/n/n7ae2a5b114ff</id>
-        <link href="https://note.com/izumi_pogo/n/n7ae2a5b114ff"/>
-        <updated>2022-03-26T05:25:43.000Z</updated>
-        <summary type="html"><![CDATA[ポゴレジェ試験以来しばらくmap1を触ってなかったのにこないだ（といってもNASより前）久しぶりにやったら、map1全体でみると多少下手になってるけど、かきやま式だけはべらぼうに上手くなってて「なんで？？？？？」と、そのあとmap3の練習に行ったらすぐわかった。
-
-続きをみる]]></summary>
-        <author>
-            <name>izumi🦆</name>
         </author>
     </entry>
 </feed>

@@ -25201,77 +25201,11 @@ EMSを装着
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
-              rel="noopener">ボクココ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">SwiftUI で快適なログインUIを作ろう</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/03/26/144604" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ども、@kimihom です。
-
-SwiftUI を使ってログインをより快適にする対応をしたので、その実施内容についてまとめておこう。
-テキストフォーカス
-ログインをしようとするページの場合、ほぼ必ず最初はメールアドレスなどの入力から始まることだろう。iOS の場合、フォーカスが当たってない状態でタイプしても反映されない形となる。
-最初からフォーカスが当たっているのは、利用ユーザーのことを考えた改善と言える。
-さて、このフォーカスだけど SwiftUI でできるようになったのは iOS 15.0 からである。focused) が登場した。
-struct SigninView: View {
-    enum Field: Hashable {
-        case email
-        case password
-    }
-
-    @State private var email &#x3D; &quot;&quot;
-    @State private var password &#x3D; &quot;&quot;
-    @FocusState private var focusedField: Field?
-
-    var body: some View {
-        ZStack {
-            TextField(&quot;メールアドレス&quot;, text: $email)
-                .keyboardType(.emailAddress)
-                .focused($focusedField, equals: .email)
-                .onAppear(perform: {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-   …</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220326/20220326144057.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/izumi_pogo" target="_blank"
-              rel="noopener">izumi🦆</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">かきやま式わかってきた（map1パイナップルINのあれ）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/izumi_pogo/n/n7ae2a5b114ff" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ポゴレジェ試験以来しばらくmap1を触ってなかったのにこないだ（といってもNASより前）久しぶりにやったら、map1全体でみると多少下手になってるけど、かきやま式だけはべらぼうに上手くなってて「なんで？？？？？」と、そのあとmap3の練習に行ったらすぐわかった。
-
-続きをみる</span>
-                  </div>
-                  <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/271fe147359f10e1f39d42d4d0b28e724f5643e3.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-23T17:06:06.671Z">2022-06-23T17:06:06.671Z</time>
+    <time id="build-timestamp" datetime="2022-06-23T18:02:03.156Z">2022-06-23T18:02:03.156Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

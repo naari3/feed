@@ -5949,21 +5949,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220402/20220402140412.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438076811890",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nSwiftUI を使ってログインをより快適にする対応をしたので、その実施内容についてまとめておこう。\nテキストフォーカス\nログインをしようとするページの場合、ほぼ必ず最初はメールアドレスなどの入力から始まることだろう。iOS の場合、フォーカスが当たってない状態でタイプしても反映されない形となる。\n最初からフォーカスが当たっているのは、利用ユーザーのことを考えた改善と言える。\nさて、このフォーカスだけど SwiftUI でできるようになったのは iOS 15.0 からである。focused) が登場した。\nstruct SigninView: View {\n    enum Field: Hashable {\n        case email\n        case password\n    }\n\n    @State private var email = \"\"\n    @State private var password = \"\"\n    @FocusState private var focusedField: Field?\n\n    var body: some View {\n        ZStack {\n            TextField(\"メールアドレス\", text: $email)\n                .keyboardType(.emailAddress)\n                .focused($focusedField, equals: .email)\n                .onAppear(perform: {\n                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {\n   …",
-          "link": "https://www.bokukoko.info/entry/2022/03/26/144604",
-          "publishedOn": "2022-03-26T05:46:04.000Z",
-          "wordCount": 352,
-          "title": "SwiftUI で快適なログインUIを作ろう",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220326/20220326144057.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220326/20220326144057.jpg"
         }
       ]
     },
@@ -7165,18 +7150,7 @@
       "title": "izumi🦆",
       "feedUrl": "https://note.com/izumi_pogo/rss",
       "siteUrl": "https://note.com/izumi_pogo",
-      "articles": [
-        {
-          "id": "https://note.com/izumi_pogo/n/n7ae2a5b114ff",
-          "author": null,
-          "description": "ポゴレジェ試験以来しばらくmap1を触ってなかったのにこないだ（といってもNASより前）久しぶりにやったら、map1全体でみると多少下手になってるけど、かきやま式だけはべらぼうに上手くなってて「なんで？？？？？」と、そのあとmap3の練習に行ったらすぐわかった。\n\n続きをみる",
-          "link": "https://note.com/izumi_pogo/n/n7ae2a5b114ff",
-          "publishedOn": "2022-03-26T05:25:43.000Z",
-          "wordCount": 41,
-          "title": "かきやま式わかってきた（map1パイナップルINのあれ）",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/271fe147359f10e1f39d42d4d0b28e724f5643e3.jpg"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "jasrnine49",
