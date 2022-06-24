@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-24T19:01:43.290Z</updated>
+    <updated>2022-06-24T20:02:04.045Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -184,6 +184,16 @@ Amazon
 　濡れた服を乾かすのは、小学校のころの雨の朝を連想させた。鉛色の空と校庭が窓外にひろがり、教室の電灯だけがすこし黄色がかって世界を照らす。滑りそうな廊下を歩いて教室に入ると湿気た空気が立ち込め、靴下が濡れたと騒ぐ同級生が窓辺に干したり、僕は持ってきた替えの靴下を履いたりする。不快感がまっさきに思い出される記憶だけど、懐かしくもある。おやすみなさい。]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[昔はrubygems orgからURLを設定できた]]></title>
+        <id>https://r7kamura.com/articles/2022-06-24-rubygems-metadata</id>
+        <link href="https://r7kamura.com/articles/2022-06-24-rubygems-metadata"/>
+        <updated>2022-06-23T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[mailgun-ruby gemはgemspecにURLを記載していないのに、どうしてrubygems.orgにソースコードやドキュメントへのリンクを表示できているのだろうか。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
