@@ -100,6 +100,49 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Maintainer Month: epubリーダーアプリ bi-epub-readerを作った</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/06/25/bi-epub-reader/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Bibiを単独のアプリとして使えるbi-epub-readerを作りました。
+azu/bi-epub-reader: Standalone Epub reader using Bibi.
+Bibiはepub形式の電子書籍に対応したepubリーダで、bi-epub-readerはElectronでBibiをラップしたスタンドアローンなアプリケーションです。
+mu-epub-readerなども作っていましたが、縦書きのepubファイルは対応していませんでした。
+縦書きの表示を色々調べてみるとBibiが綺麗な表示だったので、単独で動くアプリケーションが欲しくなってbi-epub-readerを作成しました。
+インストール
+The latest binaryをダウンロード
+アプリを開く
+⚠️ このアプリは署名してないので、開くときに警告が出ると思います。
+たとえば、macOSの場合は、次のような手順で開かないと署名がないのでひらけないと思います。
+bi-epub-reader.appを選択
+右クリックから”開く”を選択して開く
+使い方
+書籍の開き方は2つあります。
+bi-epub-readerを開いてから、epubをD&amp;Dで開く
+epubファイルに関連付けて、bi-epub-readerを開く
+前者の方法は、Bibi自体が持ってる機能です。
+
+後者の機能は、bi-epub-readerが実装している機能です。
+epubの関連付けて開く仕組み
+bi-epub-readerではBibiをそのままiframeで表示しているだけです。
+Bibiはソースコードも公開されているオープンソースですが、npmパッケージとして公開されているわけではありません。
+そのため、Bibiを使うにはHTMLやJSを含んだソースコードをアプリにコピーして利用する必要があります。
+satorumurmur/bib…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
               rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
           <section class="articles-per-source">
@@ -25260,31 +25303,11 @@ forms.gle</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank"
-              rel="noopener">okazsystem</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">20220327</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/dak/n/n8ba075a9c998" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/75200531/rectangle_large_type_2_4e4dfa984e537e7ad579cd7e0223c94a.jpg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-25T14:01:47.487Z">2022-06-25T14:01:47.487Z</time>
+    <time id="build-timestamp" datetime="2022-06-25T15:02:06.138Z">2022-06-25T15:02:06.138Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

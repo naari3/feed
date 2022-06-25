@@ -6625,16 +6625,6 @@
           "wordCount": null,
           "title": "20220328/0329/0330",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/75377299/rectangle_large_type_2_ca8b8c12cb4378aedda70ef90b2f09eb.jpg?width=800"
-        },
-        {
-          "id": "https://note.com/dak/n/n8ba075a9c998",
-          "author": null,
-          "description": "続きをみる",
-          "link": "https://note.com/dak/n/n8ba075a9c998",
-          "publishedOn": "2022-03-28T02:06:59.000Z",
-          "wordCount": 39,
-          "title": "20220327",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/75200531/rectangle_large_type_2_4e4dfa984e537e7ad579cd7e0223c94a.jpg?width=800"
         }
       ]
     },
@@ -10319,6 +10309,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2022/06/25/bi-epub-reader/",
+          "author": null,
+          "description": "Bibiを単独のアプリとして使えるbi-epub-readerを作りました。\nazu/bi-epub-reader: Standalone Epub reader using Bibi.\nBibiはepub形式の電子書籍に対応したepubリーダで、bi-epub-readerはElectronでBibiをラップしたスタンドアローンなアプリケーションです。\nmu-epub-readerなども作っていましたが、縦書きのepubファイルは対応していませんでした。\n縦書きの表示を色々調べてみるとBibiが綺麗な表示だったので、単独で動くアプリケーションが欲しくなってbi-epub-readerを作成しました。\nインストール\nThe latest binaryをダウンロード\nアプリを開く\n⚠️ このアプリは署名してないので、開くときに警告が出ると思います。\nたとえば、macOSの場合は、次のような手順で開かないと署名がないのでひらけないと思います。\nbi-epub-reader.appを選択\n右クリックから”開く”を選択して開く\n使い方\n書籍の開き方は2つあります。\nbi-epub-readerを開いてから、epubをD&Dで開く\nepubファイルに関連付けて、bi-epub-readerを開く\n前者の方法は、Bibi自体が持ってる機能です。\n\n後者の機能は、bi-epub-readerが実装している機能です。\nepubの関連付けて開く仕組み\nbi-epub-readerではBibiをそのままiframeで表示しているだけです。\nBibiはソースコードも公開されているオープンソースですが、npmパッケージとして公開されているわけではありません。\nそのため、Bibiを使うにはHTMLやJSを含んだソースコードをアプリにコピーして利用する必要があります。\nsatorumurmur/bib…",
+          "link": "https://efcl.info/2022/06/25/bi-epub-reader/",
+          "publishedOn": "2022-06-25T12:40:00.000Z",
+          "wordCount": 631,
+          "title": "Maintainer Month: epubリーダーアプリ bi-epub-readerを作った",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
         {
           "id": "https://efcl.info/2022/06/19/jsprimer-4/",
           "author": null,

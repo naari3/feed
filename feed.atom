@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-25T14:01:47.544Z</updated>
+    <updated>2022-06-25T15:02:06.224Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -16,6 +16,39 @@
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Maintainer Month: epubリーダーアプリ bi-epub-readerを作った]]></title>
+        <id>https://efcl.info/2022/06/25/bi-epub-reader/</id>
+        <link href="https://efcl.info/2022/06/25/bi-epub-reader/"/>
+        <updated>2022-06-25T12:40:00.000Z</updated>
+        <summary type="html"><![CDATA[Bibiを単独のアプリとして使えるbi-epub-readerを作りました。
+azu/bi-epub-reader: Standalone Epub reader using Bibi.
+Bibiはepub形式の電子書籍に対応したepubリーダで、bi-epub-readerはElectronでBibiをラップしたスタンドアローンなアプリケーションです。
+mu-epub-readerなども作っていましたが、縦書きのepubファイルは対応していませんでした。
+縦書きの表示を色々調べてみるとBibiが綺麗な表示だったので、単独で動くアプリケーションが欲しくなってbi-epub-readerを作成しました。
+インストール
+The latest binaryをダウンロード
+アプリを開く
+⚠️ このアプリは署名してないので、開くときに警告が出ると思います。
+たとえば、macOSの場合は、次のような手順で開かないと署名がないのでひらけないと思います。
+bi-epub-reader.appを選択
+右クリックから”開く”を選択して開く
+使い方
+書籍の開き方は2つあります。
+bi-epub-readerを開いてから、epubをD&Dで開く
+epubファイルに関連付けて、bi-epub-readerを開く
+前者の方法は、Bibi自体が持ってる機能です。
+
+後者の機能は、bi-epub-readerが実装している機能です。
+epubの関連付けて開く仕組み
+bi-epub-readerではBibiをそのままiframeで表示しているだけです。
+Bibiはソースコードも公開されているオープンソースですが、npmパッケージとして公開されているわけではありません。
+そのため、Bibiを使うにはHTMLやJSを含んだソースコードをアプリにコピーして利用する必要があります。
+satorumurmur/bib…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -17628,16 +17661,6 @@ forms.gle]]></summary>
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[20220327]]></title>
-        <id>https://note.com/dak/n/n8ba075a9c998</id>
-        <link href="https://note.com/dak/n/n8ba075a9c998"/>
-        <updated>2022-03-28T02:06:59.000Z</updated>
-        <summary type="html"><![CDATA[続きをみる]]></summary>
-        <author>
-            <name>okazsystem</name>
         </author>
     </entry>
 </feed>
