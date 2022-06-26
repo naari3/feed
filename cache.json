@@ -5772,6 +5772,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889893388574",
+          "author": null,
+          "description": "ども、@kimihom です。\n\niOSアプリ開発でSwiftUIを使っていると、XcodeのCanvas機能を利用することができる。これを使うとわざわざエミュレーターやiPhoneで見ずとも、UIの調整が可能だ。\n最初のセットアップさえうまくできれば、かなり便利に利用できるので、SwiftUIを使っているなら必ずマスターしたいものである。\n\nプレビューの表示\n私が一番ハマったのが、「ViewModel側で色々と変数を定義しているけど、その変数をどうやってプレビューに渡すのか」という点だった。例えば以下のようなコードがあったとしよう。\n// MyView.swift\nstruct MyView: View {\n    @EnvironmentObject var myViewModel : MyViewModel\n\n    var body: some View {\n        ZStack {\n            if let name = myViewModel.name {\n                Text(\"こんにちは\\(name)さん\")\n            } else {\n                Text(\"初めまして ゲストさん\")\n            }\n        }\n    }\n}\n\nstruct MyView_Previews: PreviewProvider {\n    static var previews: some View {\n        MyView().environmentObject(MyViewModel())\n    }\n}\n\n\n\n\n\n// MyViewModel.swift\nfinal class MyViewModel: NSObject, ObservableObject {\n   …",
+          "link": "https://www.bokukoko.info/entry/2022/06/26/162613",
+          "publishedOn": "2022-06-26T07:26:13.000Z",
+          "wordCount": 561,
+          "title": "SwiftUIでのプレビュー機能を使えるようにしよう",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220626/20220626162149.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220626/20220626162149.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438103293059",
           "author": null,
           "description": "ども、@kimihom です。\n\niOSアプリの開発をしていると、以下のようなケースでログが見れないことに不便さを感じることがある。\nバックグラウンドで動作している時のログを見たい\niOS の電源を再起動した後のログを見たい\nその他 アプリを開いた状態 以外でのログを見たい\nこれらのケースでログを見ることはできないと諦めていたのだけど、調べると方法があったのでまとめておく。\nOSLog の利用\nシンプルに1つのクラスを作るのが良さそうだ。\nimport os\n\nclass MyLog {\n    static let nsLog = OSLog(subsystem: \"jp.co.myapp\", category: \"ログ\")\n\n    static func p(_ log: String) {\n        os_log(\"%@\", log: nsLog, type: .default, log)\n    }\n}\n\n\n// 実際の利用\nMyLog.p(\"sample\")\n\n\n\nまず、このログが Xcode でのアプリ実行で出力される通常のログを確認しよう。\nMyApp[29609:10452863] [ログ] sample\nというようなログが出ていればOKだ。\n他の方法でログを見る\nXcode 13 でのログ確認の方法\nXcodeメニュー > Window > Devises and Simulators > iPhoneを選択 > Open Console\nコンソールアプリを起動する方法\nMac メニューより \"コンソール\" を起動 > デバイスを iPhone に指定\nその後、検索に \"ログ\" として 開始 を押す。\nすると、このコンソールでのログに、出力されるようになる。これによって、どんな状態でもログを確認することができるようになった。\n\"ログ\" と日本語のカタカナで指定した理由はここで、\"log\" とかで指定すると大量のiPhoneのログが出てきてしまうことになる。\n\n終わりに\nアプリのログだけだとどうしても見れなくて困ったケースがあり、同じように悩んだ方は是非試してみていただければと思う。\n引き続きiOSアプリ開発を続けていこう。",

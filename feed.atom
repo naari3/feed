@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-26T07:02:21.056Z</updated>
+    <updated>2022-06-26T08:02:16.277Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[SwiftUIでのプレビュー機能を使えるようにしよう]]></title>
+        <id>hatenablog://entry/4207112889893388574</id>
+        <link href="https://www.bokukoko.info/entry/2022/06/26/162613"/>
+        <updated>2022-06-26T07:26:13.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+iOSアプリ開発でSwiftUIを使っていると、XcodeのCanvas機能を利用することができる。これを使うとわざわざエミュレーターやiPhoneで見ずとも、UIの調整が可能だ。
+最初のセットアップさえうまくできれば、かなり便利に利用できるので、SwiftUIを使っているなら必ずマスターしたいものである。
+
+プレビューの表示
+私が一番ハマったのが、「ViewModel側で色々と変数を定義しているけど、その変数をどうやってプレビューに渡すのか」という点だった。例えば以下のようなコードがあったとしよう。
+// MyView.swift
+struct MyView: View {
+    @EnvironmentObject var myViewModel : MyViewModel
+
+    var body: some View {
+        ZStack {
+            if let name = myViewModel.name {
+                Text("こんにちは\(name)さん")
+            } else {
+                Text("初めまして ゲストさん")
+            }
+        }
+    }
+}
+
+struct MyView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyView().environmentObject(MyViewModel())
+    }
+}
+
+
+
+
+
+// MyViewModel.swift
+final class MyViewModel: NSObject, ObservableObject {
+   …]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[20220626（冷麺の作り方）]]></title>
         <id>https://note.com/dak/n/n04b5deb1bc27</id>

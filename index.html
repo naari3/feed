@@ -78,6 +78,60 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SwiftUIでのプレビュー機能を使えるようにしよう</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/06/26/162613" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+iOSアプリ開発でSwiftUIを使っていると、XcodeのCanvas機能を利用することができる。これを使うとわざわざエミュレーターやiPhoneで見ずとも、UIの調整が可能だ。
+最初のセットアップさえうまくできれば、かなり便利に利用できるので、SwiftUIを使っているなら必ずマスターしたいものである。
+
+プレビューの表示
+私が一番ハマったのが、「ViewModel側で色々と変数を定義しているけど、その変数をどうやってプレビューに渡すのか」という点だった。例えば以下のようなコードがあったとしよう。
+// MyView.swift
+struct MyView: View {
+    @EnvironmentObject var myViewModel : MyViewModel
+
+    var body: some View {
+        ZStack {
+            if let name &#x3D; myViewModel.name {
+                Text(&quot;こんにちは\(name)さん&quot;)
+            } else {
+                Text(&quot;初めまして ゲストさん&quot;)
+            }
+        }
+    }
+}
+
+struct MyView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyView().environmentObject(MyViewModel())
+    }
+}
+
+
+
+
+
+// MyViewModel.swift
+final class MyViewModel: NSObject, ObservableObject {
+   …</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220626/20220626162149.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank"
               rel="noopener">okazsystem</a></h3>
           <section class="articles-per-source">
@@ -25284,7 +25338,7 @@ knqyf263.hatenablog.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-26T07:02:20.970Z">2022-06-26T07:02:20.970Z</time>
+    <time id="build-timestamp" datetime="2022-06-26T08:02:16.218Z">2022-06-26T08:02:16.218Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
