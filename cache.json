@@ -3826,23 +3826,7 @@
       "title": "knqyf263's blog",
       "feedUrl": "https://knqyf263.hatenablog.com/rss",
       "siteUrl": "https://knqyf263.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438076120072",
-          "author": null,
-          "description": "最初に断っておくと今回は万人向けの記事ではないです。面白かったので自分が忘れないようにまとめているだけです。\n本記事の位置付け\nはじめに\n発見経緯\nCRCのエラー\nHTTPアクセスログ\n壊れたgzipのtrailerを見てみる\n壊れたファイルの法則性\n月次ログファイルの生成\nLinuxカーネルのバグの可能性\nバグ混入の歴史\nログ破損の原因\n8バイトの謎\nPoCの制約\nまとめ\n本記事の位置付け\nDirty Pipe（CVE-2022-0847）三部作の最後です。ダークナイト三部作で言うとダークナイト ライジングにあたります。ダーティとダークって似てませんか。\nspliceを使って高速・省メモリでGzipからZIPを作る\n20分で分かるDirty Pipe（CVE-2022-0847）\nDirty Pipe（CVE-2022-0847）の発見経緯が面白かった（本記事）\n上の1, 2を前提知識として要求します。二作品目であるダークナイトが一番面白いところも同じですね(?)\nダークナイトと比べたダークナイト ライジングの評価を思い出しながらこの記事を読んでもらえると優しい気持ちになれると思います。\nはじめに\n以前Linuxカーネルの脆弱性であるDirty Pipe（CVE-2022-0847）の解説記事を書きました。\nknqyf263.hatenablog.com\nこの記事はなるべく概要を掴んでもらおうと思って書いた記事で、本当は書きたかったことをかなり省略しています。特に報告者のブログに書いてあった発見経緯は個人的に面白かったのですが、その辺はまるっと省きました。今回はその辺を全部書き記しておこうという趣旨です。本家ブログの内容そのままならそっち読めばいいとなるのですが、理解するのに少し時間がかかったのと不明点を報告者にメールして教えてもらったので自分の言葉でまとめ直しておきます…",
-          "link": "https://knqyf263.hatenablog.com/entry/2022/03/29/050815",
-          "publishedOn": "2022-03-28T20:08:15.000Z",
-          "wordCount": null,
-          "title": "Dirty Pipe（CVE-2022-0847）の発見経緯が面白かった",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220329/20220329042944.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220329/20220329042944.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "打ち首こくまろ",

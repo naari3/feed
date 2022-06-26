@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-26T08:02:16.277Z</updated>
+    <updated>2022-06-26T09:01:47.085Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17662,41 +17662,6 @@ Amazon
         <summary type="html"><![CDATA[このウェブサイトも、さまざまなサービスで書いてきたテキストを1つにまとめているせいで、いろいろとマークアップが崩れたり、画像のリンクが切れてしまったりしている。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dirty Pipe（CVE-2022-0847）の発見経緯が面白かった]]></title>
-        <id>hatenablog://entry/13574176438076120072</id>
-        <link href="https://knqyf263.hatenablog.com/entry/2022/03/29/050815"/>
-        <updated>2022-03-28T20:08:15.000Z</updated>
-        <summary type="html"><![CDATA[最初に断っておくと今回は万人向けの記事ではないです。面白かったので自分が忘れないようにまとめているだけです。
-本記事の位置付け
-はじめに
-発見経緯
-CRCのエラー
-HTTPアクセスログ
-壊れたgzipのtrailerを見てみる
-壊れたファイルの法則性
-月次ログファイルの生成
-Linuxカーネルのバグの可能性
-バグ混入の歴史
-ログ破損の原因
-8バイトの謎
-PoCの制約
-まとめ
-本記事の位置付け
-Dirty Pipe（CVE-2022-0847）三部作の最後です。ダークナイト三部作で言うとダークナイト ライジングにあたります。ダーティとダークって似てませんか。
-spliceを使って高速・省メモリでGzipからZIPを作る
-20分で分かるDirty Pipe（CVE-2022-0847）
-Dirty Pipe（CVE-2022-0847）の発見経緯が面白かった（本記事）
-上の1, 2を前提知識として要求します。二作品目であるダークナイトが一番面白いところも同じですね(?)
-ダークナイトと比べたダークナイト ライジングの評価を思い出しながらこの記事を読んでもらえると優しい気持ちになれると思います。
-はじめに
-以前Linuxカーネルの脆弱性であるDirty Pipe（CVE-2022-0847）の解説記事を書きました。
-knqyf263.hatenablog.com
-この記事はなるべく概要を掴んでもらおうと思って書いた記事で、本当は書きたかったことをかなり省略しています。特に報告者のブログに書いてあった発見経緯は個人的に面白かったのですが、その辺はまるっと省きました。今回はその辺を全部書き記しておこうという趣旨です。本家ブログの内容そのままならそっち読めばいいとなるのですが、理解するのに少し時間がかかったのと不明点を報告者にメールして教えてもらったので自分の言葉でまとめ直しておきます…]]></summary>
-        <author>
-            <name>knqyf263's blog</name>
         </author>
     </entry>
 </feed>
