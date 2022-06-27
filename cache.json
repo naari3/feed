@@ -1036,21 +1036,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438078074955",
-          "author": null,
-          "description": "追記: これをしてもはてなブログのヘッダでログイン状態にならない現象が起きてしまうようです。もはやFirefoxのバグなのかはてなブログのバグなのかわかりませんが…。\nFirefoxの「プライバシーとセキュリティ」を変えると次のようにタブの再読み込みを行うUIが出ますが、少なくともFirefox v98現在はタブの再読み込みだけではなく Firefox自体の再起動が必要です。\n\nそうしないと少なくとも一部のクッキーの挙動などが変わり、「はてなブログ」のヘッダではてなアカウントがログイン状態にならないようです（はてなブログはFirefoxのプライバシー設定が「厳格」だとヘッダがログイン状態になりません）。\nこのせいでずっとはてなブログがFirefox未対応だと勘違いしていたのですが、実際にはどうもFirefoxのバグっぽいなということがわかった次第です。",
-          "link": "https://gfx.hatenablog.com/entry/2022/03/30/094811",
-          "publishedOn": "2022-03-30T00:48:11.000Z",
-          "wordCount": 116,
-          "title": "Firefoxの「プライバシーとセキュリティ」の設定を変えたらアプリの再起動が必要",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20220330/20220330094159.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20220330/20220330094159.png"
         }
       ]
     },
@@ -10285,6 +10270,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2022/06/27/maintenance-open-source/",
+          "author": null,
+          "description": "自分(@azu)は、大体2010年ぐらいからオープソースソフトウェアなどにコミットし始めて、\n2013年後半ぐらいからほぼ毎日GitHubへコミットをpushしています。\n毎年オープンソース活動の振り返り記事も書いています。\n今年のオープンソース活動振り返り @ 2021 | Web Scratch\n今年のオープンソース活動振り返り @ 2020 | Web Scratch\n今年のOSS活動振り返り @ 2019 | Web Scratch\n今年のOSS活動振り返り @ 2018 | Web Scratch\n今年のOSS活動振り返り @ 2017 | Web Scratch\n今年のOSS活動振り返り @ 2016 | Web Scratch\n今年のOSS活動振り返り @ 2015 | Web Scratch\n今年のOSS活動振り返り @ 2014 | Web Scratch\npushしたものの中にはただのサンプルコードなども多くありますが、作ったGitHubリポジトリは1000コ(forkを除く)ほどあり、\nここ数年はJavaScript関係が多かったため、npmへ公開しているパッケージは600コほどありました。\nまた、JSer.infoというJavaScriptの情報サイトを10年以上やっていて、このサイトもMITライセンスとCC-BYで記事やデータを公開しているのでオープンソースです(継続して集めたデータをjser/datasetとして公開もしています)。\nJSer.info 10周年: JavaScript情報の集め方、書き方、まとめ方 - JSer.info\nこの記事では、Maintainer Monthに乗っかる形で、普段オープンソースのメンテナンスをするときに考えていることなどを書いてみたいと思います。\nMaintainer Month\n6月はMaintaine…",
+          "link": "https://efcl.info/2022/06/27/maintenance-open-source/",
+          "publishedOn": "2022-06-27T03:51:00.000Z",
+          "wordCount": null,
+          "title": "Maintainer Month: オープンソースをメンテナンスするコツ",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2022/06/25/bi-epub-reader/",
           "author": null,
           "description": "Bibiを単独のアプリとして使えるbi-epub-readerを作りました。\nazu/bi-epub-reader: Standalone Epub reader using Bibi.\nBibiはepub形式の電子書籍に対応したepubリーダで、bi-epub-readerはElectronでBibiをラップしたスタンドアローンなアプリケーションです。\nmu-epub-readerなども作っていましたが、縦書きのepubファイルは対応していませんでした。\n縦書きの表示を色々調べてみるとBibiが綺麗な表示だったので、単独で動くアプリケーションが欲しくなってbi-epub-readerを作成しました。\nインストール\nThe latest binaryをダウンロード\nアプリを開く\n⚠️ このアプリは署名してないので、開くときに警告が出ると思います。\nたとえば、macOSの場合は、次のような手順で開かないと署名がないのでひらけないと思います。\nbi-epub-reader.appを選択\n右クリックから”開く”を選択して開く\n使い方\n書籍の開き方は2つあります。\nbi-epub-readerを開いてから、epubをD&Dで開く\nepubファイルに関連付けて、bi-epub-readerを開く\n前者の方法は、Bibi自体が持ってる機能です。\n\n後者の機能は、bi-epub-readerが実装している機能です。\nepubの関連付けて開く仕組み\nbi-epub-readerではBibiをそのままiframeで表示しているだけです。\nBibiはソースコードも公開されているオープンソースですが、npmパッケージとして公開されているわけではありません。\nそのため、Bibiを使うにはHTMLやJSを含んだソースコードをアプリにコピーして利用する必要があります。\nsatorumurmur/bib…",
@@ -10600,16 +10595,6 @@
           "wordCount": 938,
           "title": "IIJ IoT サービスにガチャ登場",
           "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2022/03/a11b4bb3ba448d1fa402ac3dc62cc91f-1.jpg"
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=12969",
-          "author": "ふぇにっくちゅん",
-          "description": "おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 IIJに入社したのは2017年で、中途入社のわたしです。 入社してからは、セキュリティの分野で分析業務を行っています。 この 分析...",
-          "link": "https://eng-blog.iij.ad.jp/archives/12969",
-          "publishedOn": "2022-03-30T00:16:15.000Z",
-          "wordCount": null,
-          "title": "Introduction/分析はパズル感覚で！：セキュリティ分野の分析(1)",
-          "imageUrl": null
         }
       ]
     },
