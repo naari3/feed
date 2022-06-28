@@ -911,6 +911,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889894242676",
+          "author": null,
+          "description": "前回の続きです．\nfumimaker.net\n\nhttps://japan.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/getting-started.html\nこれにそってとりあえず動かしてみたいと思います．どうやらSmartcamというデモを動かすことができるみたいです．IASコネクタのカメラ以外にもUSBカメラが使えるみたいです．これは助かる．(ただしRAWで出力できる解像度とフレームレートに制限されます．普通のUSB2.0の安価なカメラだと720p5fpsくらいしか出力できないかも．)\nUbuntu版とPetalinux版が提供されているようです．せっかくなのでUbuntu版を動かしてみることにしましたが動きませんでした←結論\nUbuntu版を試す\nhttps://japan.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started-ubuntu/setting-up-the-sd-card-image.html\n基本的にはこれ通りやっていくだけです．\nイメージをSDに書き込み\nこれを使って書き込みました．Windows版もMac版もあって助かる．イメージはここにあります．\nhttps://www.balena.io/etcher/\n各種接続\nHDMIやSDカード，LANケーブル，USBケーブルなどを接続し最後にACアダプタを差し込みます，電源ボタンはありません．そのまま電源が入ります．電源を入れる前にTeraTermなどのシリアルポートターミナルを開いておくとログが見れます．\n自分の場合，WindowsですがUSBケーブルを接続すると開発ボード上のFT4232HLに…",
+          "link": "https://fumimaker.net/entry/2022/06/29/010708?utm_source=feed",
+          "publishedOn": "2022-06-28T16:07:08.000Z",
+          "wordCount": 5397,
+          "title": "KV260のデモを動かす",
+          "enclosure": {
+            "url": "https://i.gyazo.com/4eae3d37d54f48a5bca581008eae17b5.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://i.gyazo.com/4eae3d37d54f48a5bca581008eae17b5.jpg"
+        },
+        {
           "id": "hatenablog://entry/13574176438104645405",
           "author": null,
           "description": "KV260について\n届いたので色々調べていきます．ここを参考にしています．\nhttps://japan.xilinx.com/content/dam/xilinx/support/documents/user_guides/som/1_0/j_ug1089-kv260-starter-kit.pdf\n仕様\n以下引用\n パラメーター                         \n                            KV260                             \n\n\n\n\n デバイス                             \n                   Zynq® UltraScale+™ MPSoC                   \n\n\n フォーム ファクター                  \n         SOM + キャリア カード + 熱管理ソリューション         \n\n\n スターター キット サイズ             \n                     119mm x 140mm x 36mm                     \n\n\n 熱冷却ソリューション                 \n              アクティブ (ファン + ヒートシンク)              \n\n\n システム ロジック セル               \n                             256K                             \n\n\n ブロック RAM ブロック                \n                             144                              \n\n\n…",
@@ -7215,6 +7230,16 @@
       "feedUrl": "https://note.com/massmasaoki/rss",
       "siteUrl": "https://note.com/massmasaoki",
       "articles": [
+        {
+          "id": "https://note.com/massmasaoki/n/n415004402b74",
+          "author": null,
+          "description": "さて、月末更新第二弾である。\n今回はアップデートして新しくなったRubber Band Compressor v2について書いていこうかな、と思います。\nv１の記事はこちらからどうぞ！\n\n続きをみる",
+          "link": "https://note.com/massmasaoki/n/n415004402b74",
+          "publishedOn": "2022-06-28T16:15:10.000Z",
+          "wordCount": null,
+          "title": "【週刊プラグインレビュー】Mixland / Rubber Band Compressor V2",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/81621463/rectangle_large_type_2_cd1f5221572c3d4e0781201d7eefac52.png?width=800"
+        },
         {
           "id": "https://note.com/massmasaoki/n/n3428d5110f21",
           "author": null,

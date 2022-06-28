@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-28T16:02:08.983Z</updated>
+    <updated>2022-06-28T17:07:09.574Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【週刊プラグインレビュー】Mixland / Rubber Band Compressor V2]]></title>
+        <id>https://note.com/massmasaoki/n/n415004402b74</id>
+        <link href="https://note.com/massmasaoki/n/n415004402b74"/>
+        <updated>2022-06-28T16:15:10.000Z</updated>
+        <summary type="html"><![CDATA[さて、月末更新第二弾である。
+今回はアップデートして新しくなったRubber Band Compressor v2について書いていこうかな、と思います。
+v１の記事はこちらからどうぞ！
+
+続きをみる]]></summary>
+        <author>
+            <name>moroishimasaoki</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[KV260のデモを動かす]]></title>
+        <id>hatenablog://entry/4207112889894242676</id>
+        <link href="https://fumimaker.net/entry/2022/06/29/010708?utm_source=feed"/>
+        <updated>2022-06-28T16:07:08.000Z</updated>
+        <summary type="html"><![CDATA[前回の続きです．
+fumimaker.net
+
+https://japan.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/getting-started.html
+これにそってとりあえず動かしてみたいと思います．どうやらSmartcamというデモを動かすことができるみたいです．IASコネクタのカメラ以外にもUSBカメラが使えるみたいです．これは助かる．(ただしRAWで出力できる解像度とフレームレートに制限されます．普通のUSB2.0の安価なカメラだと720p5fpsくらいしか出力できないかも．)
+Ubuntu版とPetalinux版が提供されているようです．せっかくなのでUbuntu版を動かしてみることにしましたが動きませんでした←結論
+Ubuntu版を試す
+https://japan.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started-ubuntu/setting-up-the-sd-card-image.html
+基本的にはこれ通りやっていくだけです．
+イメージをSDに書き込み
+これを使って書き込みました．Windows版もMac版もあって助かる．イメージはここにあります．
+https://www.balena.io/etcher/
+各種接続
+HDMIやSDカード，LANケーブル，USBケーブルなどを接続し最後にACアダプタを差し込みます，電源ボタンはありません．そのまま電源が入ります．電源を入れる前にTeraTermなどのシリアルポートターミナルを開いておくとログが見れます．
+自分の場合，WindowsですがUSBケーブルを接続すると開発ボード上のFT4232HLに…]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220627「無題」]]></title>
         <id>hatenablog://entry/4207112889894240186</id>
