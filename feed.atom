@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-28T13:15:26.471Z</updated>
+    <updated>2022-06-28T14:01:59.893Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ネットレーベルに適した音楽デジタルディストリビューターを探した]]></title>
+        <id>https://note.com/ocha307/n/nf1299082d3a4</id>
+        <link href="https://note.com/ocha307/n/nf1299082d3a4"/>
+        <updated>2022-06-28T13:28:35.000Z</updated>
+        <summary type="html"><![CDATA[注：現状でもどのディストリビューターが最適かという結論は出てません。更なる有識者求むという記事でもあります。つらいぜ
+こんにちは。
+続きをみる]]></summary>
+        <author>
+            <name>sanmal</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[一問一答：温度感のないオタクになってしまうこととその辛さへの回答]]></title>
         <id>https://note.com/sizes/n/ne413d7396f20</id>
@@ -17416,27 +17428,6 @@ GWにバイクで何泊か遠出をしようと思っているのですが、SV6
 　おやすみなさい。]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[複数リージョンへの Alexa Skill のデプロイを可能な限り自動化する]]></title>
-        <id>hatenablog://entry/13574176438078386372</id>
-        <link href="https://techlife.cookpad.com/entry/2022/03/31/103220"/>
-        <updated>2022-03-31T01:32:20.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、ボイスサービス部の ymd (@y_am_a_da) です。今年からは採用にも関わっています。
-クックパッドは日本で No.1 のレシピサービス*1ですが、ここ数年は海外展開にも注力しており、世界 74 ヶ国 32 言語で展開しています。
-ボイスサービス部は、もともとクックパッドのひとつのプロジェクトとして音声 UI を利用したサービスの開発だったり、デモを作成*2していたのですが、サービスの拡大などにより最近独立した部署として設立されました。
-規模が一番大きい Amazon Alexa (以下 Alexa) 向けのサービスは、レシピサービスと比較するとまだまだ小規模ですが現在 9 ヶ国 3 言語で展開をしています。
-Alexa 向けのサービスも、このくらいのサービス規模になってくるとコードのデプロイや、サービスのメタデータの更新など、手動でやるのはなかなかに大変な規模になってきています。
-この記事では、 Alexa 向けサービスのデプロイを省力化するために、クックパッドで実際に行っている自動化のテクニックについて紹介をさせていただきます。
-クックパッドスキルの全体像
-Amazon Alexa では、いわゆるモバイルアプリケーションにおけるアプリに相当するものとしてスキルというものがあり、ユーザーはこれを有効化してサービスを利用します。クックパッドでもこのスキルを介してサービスを提供しています。
-具体的なデプロイのプロセスのお話をする前に、まずはこのスキルの全体像を紹介し、この記事で紹介するデプロイとはそもそも何をすることなのかを説明します。
-以下の画像が、クックパッドスキルの全体像になります。実際にはもう少し複雑なのですが、デプロイの説明をするために必要最小限のリソースを記載しています。
-
-Alexa は基本的にクラウドベースで稼働しており、 Amazon E…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>
