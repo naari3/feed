@@ -4939,6 +4939,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889894405165",
+          "author": null,
+          "description": "2022年6月29日（水）15時38分頃から16時13分頃まで、はてなブログ全域で閲覧できない障害が発生していました。\nまた、復旧対応を進める中で、設定の不備により過去のメンテナンス告知が表示される状態になっていました。\n誤った情報をお知らせすることとなり誠に申し訳ございませんでした。\n再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2022/06/29/163225",
+          "publishedOn": "2022-06-29T07:32:25.000Z",
+          "wordCount": 373,
+          "title": "【復旧済み】はてなブログ全体が閲覧できない障害が発生していました",
+          "enclosure": {
+            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
+        },
+        {
           "id": "hatenablog://entry/13574176438102968569",
           "author": null,
           "description": "はてなブログでは、1つのブログを複数のユーザーで共同して編集・管理するための機能「ブログメンバー機能」を提供しています。\n\nこれまでブログメンバーは AtomPub API を利用する事ができませんでしたが、この変更により、ブログメンバー自身のAPIキーを利用して、権限を保有しているブログに対して AtomPub API を利用して操作できるようになりました。\n例として、\n企業の利用などで複数のブログメンバーが AtomPub API を利用したい\n記事公開のためのワークフローを組みたい\nAPIキーの共用をやめAPIキーの権限を適切に管理したい\nなどの状況で便利にご利用いただけるかと考えております。\nこの機能はユーザー様よりご要望いただき実装いたしました。ご要望いただきありがとうございました。\n参考リンク\nはてなブログAtomPub - Hatena Developer Center",
