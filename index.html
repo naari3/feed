@@ -78,6 +78,41 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nazenaninadesico.hatenablog.jp/" target="_blank"
+              rel="noopener">アプリ置き場</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">LightGBMでモデルの作成と保存と読込方法 (python)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nazenaninadesico.hatenablog.jp/entry/2022/06/29/110043" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>モデルの作成
+model &#x3D; lgb.train(
+        params,
+        trains,
+        valid_sets&#x3D;valids,
+        callbacks&#x3D;[
+            lgb.early_stopping(stopping_rounds&#x3D;100, verbose&#x3D;True),
+            lgb.log_evaluation(10),
+        ],
+    )
+
+モデルの保存
+model.save_model(&quot;model.txt&quot;, num_iteration&#x3D;model.best_iteration)
+
+モデルの読込
+model &#x3D; lgb.Booster(model_file&#x3D;&quot;model.txt&quot;)</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -24652,31 +24687,6 @@ www.tokyodisneyresort.jp
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">なんとなく考えてること</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/seshiapple/n/n82c8674b954f" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>いろいろ飽きたが、そのわりに思ったよりなんかはやりたい感じがあって、その気持ちについてメモをつけた。固有名詞だけハブいたものをアップしておく。
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">身辺雑記（3月）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/seshiapple/n/ned376cf6a6d9" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>今月は仕事のことを書きます。前半は花粉でキツかったが、後半は少し収まったのでいろいろやれた。いまは気分いいっす。
-締切
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -24790,33 +24800,11 @@ YouTube Music Charts 地球で踊る
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank"
-              rel="noopener">okazsystem</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">20220331</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/dak/n/n16e9f38c90a9" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>https://www.youtube.com/watch?v&#x3D;BagTEec6H7o
-最近再生している動画
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/75454940/rectangle_large_type_2_5847850ace176e68c8b5e0bd00465367.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-06-29T01:29:52.872Z">2022-06-29T01:29:52.872Z</time>
+    <time id="build-timestamp" datetime="2022-06-29T02:47:43.278Z">2022-06-29T02:47:43.278Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

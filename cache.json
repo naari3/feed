@@ -3894,7 +3894,23 @@
       "title": "アプリ置き場",
       "feedUrl": "https://nazenaninadesico.hatenablog.jp/rss",
       "siteUrl": "https://nazenaninadesico.hatenablog.jp/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/4207112889894326254",
+          "author": null,
+          "description": "モデルの作成\nmodel = lgb.train(\n        params,\n        trains,\n        valid_sets=valids,\n        callbacks=[\n            lgb.early_stopping(stopping_rounds=100, verbose=True),\n            lgb.log_evaluation(10),\n        ],\n    )\n\nモデルの保存\nmodel.save_model(\"model.txt\", num_iteration=model.best_iteration)\n\nモデルの読込\nmodel = lgb.Booster(model_file=\"model.txt\")",
+          "link": "https://nazenaninadesico.hatenablog.jp/entry/2022/06/29/110043",
+          "publishedOn": "2022-06-29T02:00:43.000Z",
+          "wordCount": 263,
+          "title": "LightGBMでモデルの作成と保存と読込方法 (python)",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "終了済",
@@ -6410,16 +6426,6 @@
           "wordCount": 43,
           "title": "20220412",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/76302884/rectangle_large_type_2_31b9a6212cd657660b0de8ca70b4fada.png?width=800"
-        },
-        {
-          "id": "https://note.com/dak/n/n16e9f38c90a9",
-          "author": null,
-          "description": "https://www.youtube.com/watch?v=BagTEec6H7o\n最近再生している動画\n続きをみる",
-          "link": "https://note.com/dak/n/n16e9f38c90a9",
-          "publishedOn": "2022-03-31T13:51:39.000Z",
-          "wordCount": 40,
-          "title": "20220331",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/75454940/rectangle_large_type_2_5847850ace176e68c8b5e0bd00465367.png?width=800"
         }
       ]
     },
@@ -7588,26 +7594,6 @@
           "publishedOn": "2022-03-31T15:04:57.000Z",
           "wordCount": null,
           "title": "あと最近読んだ本について書きたい。",
-          "imageUrl": null
-        },
-        {
-          "id": "https://note.com/seshiapple/n/n82c8674b954f",
-          "author": null,
-          "description": "いろいろ飽きたが、そのわりに思ったよりなんかはやりたい感じがあって、その気持ちについてメモをつけた。固有名詞だけハブいたものをアップしておく。\n続きをみる",
-          "link": "https://note.com/seshiapple/n/n82c8674b954f",
-          "publishedOn": "2022-03-31T14:33:13.000Z",
-          "wordCount": null,
-          "title": "なんとなく考えてること",
-          "imageUrl": null
-        },
-        {
-          "id": "https://note.com/seshiapple/n/ned376cf6a6d9",
-          "author": null,
-          "description": "今月は仕事のことを書きます。前半は花粉でキツかったが、後半は少し収まったのでいろいろやれた。いまは気分いいっす。\n締切\n続きをみる",
-          "link": "https://note.com/seshiapple/n/ned376cf6a6d9",
-          "publishedOn": "2022-03-31T14:13:59.000Z",
-          "wordCount": null,
-          "title": "身辺雑記（3月）",
           "imageUrl": null
         }
       ]

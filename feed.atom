@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-29T01:29:52.944Z</updated>
+    <updated>2022-06-29T02:47:43.351Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[LightGBMでモデルの作成と保存と読込方法 (python)]]></title>
+        <id>hatenablog://entry/4207112889894326254</id>
+        <link href="https://nazenaninadesico.hatenablog.jp/entry/2022/06/29/110043"/>
+        <updated>2022-06-29T02:00:43.000Z</updated>
+        <summary type="html"><![CDATA[モデルの作成
+model = lgb.train(
+        params,
+        trains,
+        valid_sets=valids,
+        callbacks=[
+            lgb.early_stopping(stopping_rounds=100, verbose=True),
+            lgb.log_evaluation(10),
+        ],
+    )
+
+モデルの保存
+model.save_model("model.txt", num_iteration=model.best_iteration)
+
+モデルの読込
+model = lgb.Booster(model_file="model.txt")]]></summary>
+        <author>
+            <name>アプリ置き場</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ハロー、何もしない人]]></title>
         <id>https://note.com/kazumakawauchi/n/n72d4ac1e99c9</id>
@@ -17283,41 +17308,6 @@ YouTube Music Charts 地球で踊る
         <summary type="html"><![CDATA[ハ〜イ、κeenさんだよー。FizzBuzzを高速化したから紹介するねー。]]></summary>
         <author>
             <name>κeenのHappy Hacκing Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[なんとなく考えてること]]></title>
-        <id>https://note.com/seshiapple/n/n82c8674b954f</id>
-        <link href="https://note.com/seshiapple/n/n82c8674b954f"/>
-        <updated>2022-03-31T14:33:13.000Z</updated>
-        <summary type="html"><![CDATA[いろいろ飽きたが、そのわりに思ったよりなんかはやりたい感じがあって、その気持ちについてメモをつけた。固有名詞だけハブいたものをアップしておく。
-続きをみる]]></summary>
-        <author>
-            <name>せしも</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[身辺雑記（3月）]]></title>
-        <id>https://note.com/seshiapple/n/ned376cf6a6d9</id>
-        <link href="https://note.com/seshiapple/n/ned376cf6a6d9"/>
-        <updated>2022-03-31T14:13:59.000Z</updated>
-        <summary type="html"><![CDATA[今月は仕事のことを書きます。前半は花粉でキツかったが、後半は少し収まったのでいろいろやれた。いまは気分いいっす。
-締切
-続きをみる]]></summary>
-        <author>
-            <name>せしも</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[20220331]]></title>
-        <id>https://note.com/dak/n/n16e9f38c90a9</id>
-        <link href="https://note.com/dak/n/n16e9f38c90a9"/>
-        <updated>2022-03-31T13:51:39.000Z</updated>
-        <summary type="html"><![CDATA[https://www.youtube.com/watch?v=BagTEec6H7o
-最近再生している動画
-続きをみる]]></summary>
-        <author>
-            <name>okazsystem</name>
         </author>
     </entry>
 </feed>
