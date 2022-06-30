@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-06-30T20:02:03.974Z</updated>
+    <updated>2022-06-30T21:02:03.818Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17212,26 +17212,6 @@ youtu.be]]></summary>
 続きをみる]]></summary>
         <author>
             <name>上手な人</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Slack App 移行メモ]]></title>
-        <id>hatenablog://entry/13574176438079043919</id>
-        <link href="https://www.bokukoko.info/entry/2022/04/02/180000"/>
-        <updated>2022-04-02T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-旧式 Slack App を公開している場合、2022年5月27日までに対応しなければ、App ディレクトリから除外するよ というお知らせが届いた。本記事ではその対応についてまとめよう。
-注意 : 移行期限が 2022 年 5 月 27 日まで延長されました。
-App ディレクトリにご登録いただいている Slack アプリについてのお知らせです。アプリで詳細な権限を使用するための変更が行われていない場合、そのアプリは 2022 年 5 月 27 日以降 App ディレクトリから除外されます。詳細な権限によって、アプリが機能するのに必要な最低限の情報のみを要求できるため、セキュリティを心配するユーザーにも広くアプリを使用してもらえるようになります。
-2020 年 1 月 1 日にお知らせしたとおり、まもなく従来のトークンモデルが新しい権限モデルに置き換わります。アプリで詳細な権限を使用するための変更が行われていない場合、そのアプリは 2021 年 11 月 18 日以降 App ディレクトリから除外されます。除外されると、ユーザーは App ディレクトリを介してアプリにアクセスできなくなり、Slack による審査が完了していないことが示されます。
-
-
-いよいよこの期限が迫ってきたこともあり、新しいSlack App申請をすることにした。
-今回の申請したSlack Appは、単に サーバー側から Slack にメッセージを投稿するだけのシンプルなものになっている。
-それなのに、なぜ Incoming Webhook という最もシンプルな Slack 投稿の方法を使っていないのか？ それは、Webhook だけだと @ メンションをつけてユーザーに Slack メッセージを投稿できない というクリティカルな欠点があったためである。このこだわりだけ…]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>
