@@ -10202,6 +10202,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2022/07/01/maintainer-month/",
+          "author": null,
+          "description": "2022年の6月は、GitHub主催でMaintainer Monthは、オープンソースのメンテナーが集まって情報共有したり、メンテナーを祝ったり、支援したりするイベントが行われていました。\nWelcome to Maintainer Month! 🎉 | The GitHub Blog\nMaintainer Monthに気づいたのはThank you to our maintainers | The GitHub Blogのとき(6/24)なのだったので、残り一週間でしたがオープンソースのメンテナンスとメンテナーについて色々書いていました。\nMaintainer Month: epubリーダーアプリ bi-epub-readerを作った | Web Scratch\nMaintainer Month: オープンソースをメンテナンスするコツ | Web Scratch\nMaintainer Month: なぜtextlintを作ったか | Web Scratch\n初めてでもわかる、GitHub Sponsorsでオープンソースを支援する方法\nオープンソースのメンテナーそのものに関する話って意外と書く機会がないので、ちょうどいい機会だと思って書いてみました。\nMaintainer Monthのイベントの目的もそうですが、メンテナーとしての自分の話を色々書いてみたので興味があったら読んでみてください。\nオープンソースのメンテナーがやっている仕事(タスク)\nMaintainer Monthは6月で終わったので、6月にやっていたオープンソースのメンテナンス関係のタスクを振り返ってみます。\n実際オープンソースのメンテナンスでどういうことやってるのかを参考になるかなーと思います。\n自分は色々なオープンソースをやるタイプなので、それぞれライブラリ/ツール/プロダクトなどで書いていきます。…",
+          "link": "https://efcl.info/2022/07/01/maintainer-month/",
+          "publishedOn": "2022-07-01T11:48:00.000Z",
+          "wordCount": null,
+          "title": "Maintainer Month: オープンソースのメンテナーがやっている仕事",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2022/06/29/why-create-textlint/",
           "author": null,
           "description": "今では200以上のルールがある自然言語のLintツールであるtextlintがどのように作られたかを振り返る記事です。\nMaintainer Month\n6月はMaintainer MonthというイベントをGitHubが主催しています。\nMaintainer Month is a reminder for the ecosystem to support, celebrate, and compensate open source maintainers.\nMaintainer Month\nMaintainer Monthは、オープンソースのメンテナーが集まって情報共有したり、メンテナーを祝ったり、支援したりするイベントです。\nメンテナーがどういうサポートを求めているかを知る、負荷が特定の箇所に集中するエコシステムはバランスが悪いのでそれを支援する方法を知るといったことを思い出すのがMaintainer Monthの目的です。\nWelcome to Maintainer Month! 🎉 | The GitHub Blog\ntextlintの誕生…の前に\n2014年2月ごろに、JSer.infoであなたが読むべきJavaScript Promises - JSer.infoという記事を書いて、Promisesについてもっと知らないといけなさそうだなと考えました。\n調べてもPromiseについてまとまったものはなかったので、ないなら書くかーと思ってJavaScript Promiseの本を書き始めました。\nPromise本の最初のコミットは、2014年3月だったのでこの頃に書き始めたのだと思います。\nhttps://github.com/azu/promises-book/commit/883538b2a5fab5846d415fe0ef1abc1f125217dc\n細か…",
