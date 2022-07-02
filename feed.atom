@@ -2,10 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-02T01:29:30.479Z</updated>
+    <updated>2022-07-02T02:45:13.241Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Swift で複数の型のJSON配列をデコードする方法]]></title>
+        <id>hatenablog://entry/4207112889895282137</id>
+        <link href="https://www.bokukoko.info/entry/2022/07/02/113844"/>
+        <updated>2022-07-02T02:38:44.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+Ruby とかの型の緩い言語だと、一つの配列に String や Int を詰め込んでも特に実装の手間にはならないのだけど、そのような環境で作った複数の型のあるJSON配列を、Swift 側で処理するのに少し手間取ったので記事しておこう。
+実装の例
+たとえば、とある API で以下のようなJSONが返ってきたとしよう。
+{
+  "status": "ok",
+  "data": [
+    [1, "taro"],
+    [2, "jiro"]
+  ]
+}
+
+{
+  "status": "ng",
+  "message": "何かに失敗"
+}
+
+
+
+ここでの data は、配列0番目がid で 1番目に名前の配列になっている。これを Swift 側で処理するのと、どうするとなる。。
+struct APIResponse: Decodable {
+    let status: String
+    let message: String?
+    let data: [[String]]?        // NG
+    let data: [[Int, String]]? // NG
+}
+
+
+
+答え: 独自の型を定義する
+enum StringOrIntType: Codable, Hashable {
+    case string(String)
+    case int(Int)
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        do {
+            self = try .string(container.decode(String.self))
+ …]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ヘンな手法とアマチュア性]]></title>
         <id>https://note.com/seshiapple/n/n99f5e2612281</id>
@@ -17246,24 +17295,6 @@ R4-1試験まで80日を切りましたが、勉強の進捗はいかがでし�
 1999年12月、No-17…]]></summary>
         <author>
             <name>本しゃぶり</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022/04/03(日)]]></title>
-        <id>https://note.com/aesthetic_milo/n/n875e5c649c39</id>
-        <link href="https://note.com/aesthetic_milo/n/n875e5c649c39"/>
-        <updated>2022-04-03T13:33:39.000Z</updated>
-        <summary type="html"><![CDATA[午前は数1Aと2Bをやった　
-図形と方程式は復習をしたからサラサラ解けたけど　確率が鬼意味不明なところに入って全く分からなかった
-確率の最大値が意味不明 明日YouTubeででも授業動画見ようと思う
-昼にマックを食べたあと本屋に行って現代文の参考書を数冊買った
-古典文法一通りやったら古文読解はとりあえず後回しで 先に現代文をやろうと思う
-あと参考書買ったら レジの人に 勉強がんばってください！みたいなこと言われて
-ウヘwありがとうございますwえがんばりますwｼﾞｭﾙみたいにしか返事できなかった
-もっと気の利いたこと言えればよかったけど
-続きをみる]]></summary>
-        <author>
-            <name>上手な人</name>
         </author>
     </entry>
 </feed>

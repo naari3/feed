@@ -5583,6 +5583,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889895282137",
+          "author": null,
+          "description": "ども、@kimihom です。\n\nRuby とかの型の緩い言語だと、一つの配列に String や Int を詰め込んでも特に実装の手間にはならないのだけど、そのような環境で作った複数の型のあるJSON配列を、Swift 側で処理するのに少し手間取ったので記事しておこう。\n実装の例\nたとえば、とある API で以下のようなJSONが返ってきたとしよう。\n{\n  \"status\": \"ok\",\n  \"data\": [\n    [1, \"taro\"],\n    [2, \"jiro\"]\n  ]\n}\n\n{\n  \"status\": \"ng\",\n  \"message\": \"何かに失敗\"\n}\n\n\n\nここでの data は、配列0番目がid で 1番目に名前の配列になっている。これを Swift 側で処理するのと、どうするとなる。。\nstruct APIResponse: Decodable {\n    let status: String\n    let message: String?\n    let data: [[String]]?        // NG\n    let data: [[Int, String]]? // NG\n}\n\n\n\n答え: 独自の型を定義する\nenum StringOrIntType: Codable, Hashable {\n    case string(String)\n    case int(Int)\n\n    init(from decoder: Decoder) throws {\n        let container = try decoder.singleValueContainer()\n        do {\n            self = try .string(container.decode(String.self))\n …",
+          "link": "https://www.bokukoko.info/entry/2022/07/02/113844",
+          "publishedOn": "2022-07-02T02:38:44.000Z",
+          "wordCount": null,
+          "title": "Swift で複数の型のJSON配列をデコードする方法",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220702/20220702113135.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220702/20220702113135.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889893388574",
           "author": null,
           "description": "ども、@kimihom です。\n\niOSアプリ開発でSwiftUIを使っていると、XcodeのCanvas機能を利用することができる。これを使うとわざわざエミュレーターやiPhoneで見ずとも、UIの調整が可能だ。\n最初のセットアップさえうまくできれば、かなり便利に利用できるので、SwiftUIを使っているなら必ずマスターしたいものである。\n\nプレビューの表示\n私が一番ハマったのが、「ViewModel側で色々と変数を定義しているけど、その変数をどうやってプレビューに渡すのか」という点だった。例えば以下のようなコードがあったとしよう。\n// MyView.swift\nstruct MyView: View {\n    @EnvironmentObject var myViewModel : MyViewModel\n\n    var body: some View {\n        ZStack {\n            if let name = myViewModel.name {\n                Text(\"こんにちは\\(name)さん\")\n            } else {\n                Text(\"初めまして ゲストさん\")\n            }\n        }\n    }\n}\n\nstruct MyView_Previews: PreviewProvider {\n    static var previews: some View {\n        MyView().environmentObject(MyViewModel())\n    }\n}\n\n\n\n\n\n// MyViewModel.swift\nfinal class MyViewModel: NSObject, ObservableObject {\n   …",
@@ -6180,16 +6195,6 @@
           "wordCount": 51,
           "title": "2022/04/04(月)",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/75749096/rectangle_large_type_2_6cb2868581ec9a98bdefda53fdea07b3.png?width=800"
-        },
-        {
-          "id": "https://note.com/aesthetic_milo/n/n875e5c649c39",
-          "author": null,
-          "description": "午前は数1Aと2Bをやった　\n図形と方程式は復習をしたからサラサラ解けたけど　確率が鬼意味不明なところに入って全く分からなかった\n確率の最大値が意味不明 明日YouTubeででも授業動画見ようと思う\n昼にマックを食べたあと本屋に行って現代文の参考書を数冊買った\n古典文法一通りやったら古文読解はとりあえず後回しで 先に現代文をやろうと思う\nあと参考書買ったら レジの人に 勉強がんばってください！みたいなこと言われて\nウヘwありがとうございますwえがんばりますwｼﾞｭﾙみたいにしか返事できなかった\nもっと気の利いたこと言えればよかったけど\n続きをみる",
-          "link": "https://note.com/aesthetic_milo/n/n875e5c649c39",
-          "publishedOn": "2022-04-03T13:33:39.000Z",
-          "wordCount": 44,
-          "title": "2022/04/03(日)",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/75676818/rectangle_large_type_2_eb030ec62483bdd5c647bb9d44c3b671.png?width=800"
         }
       ]
     },

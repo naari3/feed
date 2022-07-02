@@ -74,6 +74,70 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-07-02">2022-07-02</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Swift で複数の型のJSON配列をデコードする方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/07/02/113844" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+Ruby とかの型の緩い言語だと、一つの配列に String や Int を詰め込んでも特に実装の手間にはならないのだけど、そのような環境で作った複数の型のあるJSON配列を、Swift 側で処理するのに少し手間取ったので記事しておこう。
+実装の例
+たとえば、とある API で以下のようなJSONが返ってきたとしよう。
+{
+  &quot;status&quot;: &quot;ok&quot;,
+  &quot;data&quot;: [
+    [1, &quot;taro&quot;],
+    [2, &quot;jiro&quot;]
+  ]
+}
+
+{
+  &quot;status&quot;: &quot;ng&quot;,
+  &quot;message&quot;: &quot;何かに失敗&quot;
+}
+
+
+
+ここでの data は、配列0番目がid で 1番目に名前の配列になっている。これを Swift 側で処理するのと、どうするとなる。。
+struct APIResponse: Decodable {
+    let status: String
+    let message: String?
+    let data: [[String]]?        // NG
+    let data: [[Int, String]]? // NG
+}
+
+
+
+答え: 独自の型を定義する
+enum StringOrIntType: Codable, Hashable {
+    case string(String)
+    case int(Int)
+
+    init(from decoder: Decoder) throws {
+        let container &#x3D; try decoder.singleValueContainer()
+        do {
+            self &#x3D; try .string(container.decode(String.self))
+ …</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220702/20220702113135.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-07-01">2022-07-01</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -24728,39 +24792,11 @@ R4-1試験まで80日を切りましたが、勉強の進捗はいかがでし�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/aesthetic_milo" target="_blank"
-              rel="noopener">上手な人</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2022/04/03(日)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/aesthetic_milo/n/n875e5c649c39" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>午前は数1Aと2Bをやった　
-図形と方程式は復習をしたからサラサラ解けたけど　確率が鬼意味不明なところに入って全く分からなかった
-確率の最大値が意味不明 明日YouTubeででも授業動画見ようと思う
-昼にマックを食べたあと本屋に行って現代文の参考書を数冊買った
-古典文法一通りやったら古文読解はとりあえず後回しで 先に現代文をやろうと思う
-あと参考書買ったら レジの人に 勉強がんばってください！みたいなこと言われて
-ウヘwありがとうございますwえがんばりますwｼﾞｭﾙみたいにしか返事できなかった
-もっと気の利いたこと言えればよかったけど
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/75676818/rectangle_large_type_2_eb030ec62483bdd5c647bb9d44c3b671.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-07-02T01:29:30.428Z">2022-07-02T01:29:30.428Z</time>
+    <time id="build-timestamp" datetime="2022-07-02T02:45:13.172Z">2022-07-02T02:45:13.172Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
