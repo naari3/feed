@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-03T01:31:12.442Z</updated>
+    <updated>2022-07-03T02:44:56.744Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[22/7/2 【第12回サイゼミ】NP完全性について/有限性の後で]]></title>
+        <id>hatenablog://entry/4207112889893118074</id>
+        <link href="https://saize-lw.hatenablog.com/entry/2022/07/03/110349"/>
+        <updated>2022-07-03T02:03:49.000Z</updated>
+        <summary type="html"><![CDATA[第12回サイゼミ
+2022年6月19日に木場で第12回サイゼミを催した。
+前回（→■）もコロナ禍の影響で半年空いたが、今回もコロナ禍で更に半年空いた。
+
+サイゼミのために大阪から来た人が二人も参戦しており、大阪勢が勢力を伸ばしている（これで大阪勢は三人目となる）。
+第12回サイゼミ
+NP完全性について
+有限性の後で
+ブログとか飲み会について
+NP完全性について
+あの人気ブログ「みそは入ってませんけど→■」のみそ氏が担当。
+補足416：みそ氏とは今では普通に仲良くなっていてサイゼミにも割とよく来ているし、サイゼミ外でカードゲームで遊んだりもしているので、スペシャルゲストというよりはいつメン感がある。
+「計算量クラッシュコース」と題された36ページもの解説資料が用意されていて気合が入っていた。ざっくり「計算量の概要→P問題とNP問題の区別→P≠NP予想→NP完全性」という流れで、定義した概念に対して定理を提示して証明を追うという割とオーソドックスな理系ゼミスタイルで進行する（例えばこれはNP完全性の二つの定義が等価であることの証明部分）。
+
+miso_np
+
+とはいえサイゼミは理系研究室ではなくオタクの集まりなので、理論的な基礎を踏まえた上で、工学的な応用よりは「結局この話はエンタメとしてどのように面白いのか」に関心があり、市販の解説書よりもみそ氏謹製の資料で説明を聞く価値もそのあたりにある。
+具体的にはP≠NP予想のコアが「創作と批評はどちらが難しいのだろうか？」と表現されるところがそれだ。これが本質。
+我々の興味がある言明P/NPとは、次のような言明である。
+1. 決定問題に対する多項式時間のプログラムに関して、解くこと(solve)と検証(verify)の間には違いがあるのだろうか？
+詩的な表現：創作と批評はどちらが難しいのだろうか？
+ 
+（「計算量クラッシュコース」より…]]></summary>
+        <author>
+            <name>LWのサイゼリヤ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[エッセイ：やってることも年々親と似てくる]]></title>
         <id>https://note.com/sizes/n/n10324adb0efe</id>
@@ -17536,19 +17568,6 @@ SNSで超話題の陰キャ少年と陽キャ美少女の
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022/04/04(月)]]></title>
-        <id>https://note.com/aesthetic_milo/n/nf5a87670beab</id>
-        <link href="https://note.com/aesthetic_milo/n/nf5a87670beab"/>
-        <updated>2022-04-04T13:51:14.000Z</updated>
-        <summary type="html"><![CDATA[今日は午前中に英検の過去問を解いた
-
-
-続きをみる]]></summary>
-        <author>
-            <name>上手な人</name>
         </author>
     </entry>
 </feed>
