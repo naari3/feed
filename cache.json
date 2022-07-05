@@ -10151,18 +10151,7 @@
       "title": "Wesley Aptekar-Cassels",
       "feedUrl": "https://blog.wesleyac.com/feed.xml",
       "siteUrl": "https://blog.wesleyac.com",
-      "articles": [
-        {
-          "id": "https://blog.wesleyac.com/posts/subdomains-as-identity",
-          "author": null,
-          "description": "A common identity scheme for websites is to give users pages like example.com/username. Twitter, Instagram, Twitch, Pinterest, and many other websites use this model. Reddit, TikTok, Mastodon, Lobsters, and several others use a slightly more conservative version of this, with a prefix (either @ or u/) before the username.\nI think that in many cases, this is a mistake, and using subdomains, like username.example.com is better. Particularly, I think that the subdomain-based model is best for websites where there is minimal interaction between users (blogging, publishing, etc), or where that interaction happens via an open protocol.\nUsing subdomains for identity offers a few advantages:\nIt makes it easier for users to own their own identities, since you can very easily support using custom do…",
-          "link": "https://blog.wesleyac.com/posts/subdomains-as-identity",
-          "publishedOn": "2022-04-06T16:00:00.000Z",
-          "wordCount": null,
-          "title": "Subdomains as identity",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Your Site's RSS Feed",
