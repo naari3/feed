@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-05T23:02:22.534Z</updated>
+    <updated>2022-07-06T00:03:02.808Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17397,22 +17397,6 @@ youtu.be
 続きをみる]]></summary>
         <author>
             <name>スタジオVK 神長タクミ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[BPF CO-RE は GitHub Actions の Ubuntu 20.04 インスタンスでテストできそう]]></title>
-        <id>hatenablog://entry/13574176438080750576</id>
-        <link href="https://gfx.hatenablog.com/entry/2022/04/07/205910"/>
-        <updated>2022-04-07T11:59:10.000Z</updated>
-        <summary type="html"><![CDATA[BPF CO-RE (CO-RE: Compile Once , Run Everywhere) を実行するにはLinux kernelがBTF (BPF Type Format) つきでビルドされている必要があります。
-Ubunt 20.04 の最初のリリースではBTFは有効になっていませんでしたが、アップデートで配信されているカーネル 5.13.0-39-generic ではBTFが有効なのでカーネルのアップデートをするだけでBPF CO-REが使えます。
-GitHub Actionsの場合、デフォルトのカーネルではなくAzureのためのカスタムカーネルですが、こちらも最近のインスタンスはBTFが有効になっているので、特別なことをしなくても BPF CO-RE をテストできそうです。
-github.com
-ci.yml - workflow file、ただし実際には make を呼ぶだけ
-Makefile - 依存関係のインストールやビルドなど
-これで BPF CO-RE を使ったツールも開発し放題ですね！]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
         </author>
     </entry>
 </feed>
