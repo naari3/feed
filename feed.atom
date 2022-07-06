@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-06T03:36:52.756Z</updated>
+    <updated>2022-07-06T04:22:42.344Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -31,6 +31,16 @@
         <summary type="html"><![CDATA[この記事について この記事では、ファイルに書き込みを行うプログラムを実装する時の注意点について説明します。 ファイル書き込みは、プログラミングにおいて比較的よく利用される機能でありながら、実装時に注意...]]></summary>
         <author>
             <name>安形</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[wsl をDドライブに入れ直してディスク拡張する]]></title>
+        <id>https://blog.ojisan.io/wsl-reinstall-d</id>
+        <link href="https://blog.ojisan.io/wsl-reinstall-d"/>
+        <updated>2022-07-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[WSL で AOSP をビルドしようとしたら容量が足りなかったので、WSL 環境を D ドライブで作り直す。 入れ直しなので wsl コマンドは入っている前提。また移行はせずに作り直す。 OGP は http://tsukuru-hito.com/e2482904.html…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
         </author>
     </entry>
     <entry>
