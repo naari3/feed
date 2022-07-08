@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-08T01:30:08.452Z</updated>
+    <updated>2022-07-08T02:45:33.516Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Fluentd 集約ノードのオートスケール]]></title>
+        <id>hatenablog://entry/4207112889896648890</id>
+        <link href="https://techlife.cookpad.com/entry/2022/07/08/110000"/>
+        <updated>2022-07-08T02:00:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、技術部 SRE グループ アルバイトの小川です。この記事では、クックパッドでコンテナログの処理に利用している Fluentd ノードのオートスケール対応について紹介します。
+クックパッドでは Amazon ECS を用いてコンテナ化されたアプリケーションをデプロイしています。クックパッドでの ECS の利用については過去の記事をご覧ください。
+ECS 上で動くコンテナのログを閲覧するために、標準的には Amazon CloudWatch Logs を利用する方法があります。しかし、クックパッドではログ量やコストの問題で CloudWatch Logs は利用せず、独自のログ配送基盤を構築して運用しています。具体的には、ECS のコンテナインスタンスで実行している Fluentd から複数の Amazon EC2 インスタンスで構成される Fluentd 集約ノードにログを転送し、最後に Fluentd 集約ノードが Amazon S3 にログを圧縮して転送、最終的に Amazon Athena 経由でログが閲覧できるようになっています。この仕組みについては Cookpad Tech Kitchen #20 での Amazon ECS の安定運用についてのスライドが詳しいです。
+ECS コンテナインスタンスと Fluentd 集約ノード
+各コンテナインスタンスから直接 S3 にログを転送するのではなく集約ノードを挟んでいるもっとも大きな理由は、コンテナインスタンスを跨いだバッファリングが必要だからです。コンテナインスタンスから出力されるログの合計は平均して約 60MB/sec (150TB/month) にものぼり、これをそのまま S3 に格納することはコスト上の観点から好ましくありません。そのため gzip 圧縮をおこなっているのですが、各コンテナインスタンスの…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[はてなブログの2022年6月の機能修正・改善をお知らせします（6件）]]></title>
+        <id>hatenablog://entry/4207112889896945281</id>
+        <link href="https://staff.hatenablog.com/entry/2022/07/08/105603"/>
+        <updated>2022-07-08T01:56:03.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、日々さまざまな機能修正・改善を行っています。多くのユーザーさまに関係する機能は、この開発ブログにて個別にお知らせしています。その一方で、目に見えづらい改善や、影響する方が少ない機能の修正も進めています。本記事では、2022年6月に実施した機能修正・改善をダイジェストでお届けします。
+細かな機能修正・改善
+1.APIキーをアカウント設定から確認できるようにしました
+これまでは詳細設定の投稿用メールアドレスからAPIキーを確認していただく必要がございましたが、ブログメンバーが AtomPub API を利用できるようにした際に、アカウント設定からもAPIキーが確認できるようになりました。
+ブログメンバーが AtomPub API を利用できるようになった詳細は下記をご参照ください。
+staff.hatenablog.com
+2.スマートフォン版の管理画面にトグルメニューを追加しました
+左上にトグルメニューを追加し、個別のブログの管理画面を開いているときでも「購読リスト」や「トピック」に遷移できるようになりました。
+スマートフォン版の管理画面
+
+    
+3.Internet Explorer 対応用の設定を削除しました
+Internet Explorer のサポートが、2022年6月16日（日本時間）に終了したことに伴いまして、Internet Explorer 対応用の設定を一部削除いたしました。今後も、保守性の向上やパフォーマンスの改善を目的として、Internet Explorer のための設定を削除していく予定です。
+はてなブログでの使用を推奨するWebブラウザ - はてなブログ ヘルプ
+4.「ブログを開設して〇年が経ちました」のメールが届かなくなっていたのを修正しました
+はてなブログでは、利用開始から1年ごとに「ブログを開設して〇年が経ちました」という件名のメールを送信しておりましたが、送信されていなかったため修正対応を行いました。
+5. ダッシュボードへのアクセス時の表示不具合を修正しました（Firefoxのみ）
+Firefoxのみ、ダッシュボードにアクセスした際に読み込みが完了するまでの間に、アイコンの画像が大きく表示されて画面にちらつきが発生しておりましたので、修正対応を行いました。
+6.言語設定を日本語に設定していても英語になることがある不具合を修正しました
+はてなブログの基本設定にある言語を「日本語」に設定していても、ブラウザの言語設定で第二言語を英語にしていると、英語表示になっていたため修正対応を行いました。
+4～6の不具合につきましては、ユーザー様からご報告をいただき修正対応を行いました。お知らせいただきまして、ありがとうございました。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[エッセイ：二次元キャラと三次元人間の相互依存性]]></title>
         <id>https://note.com/sizes/n/n547dd95807f1</id>
@@ -17427,21 +17471,6 @@ youtu.be
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022/04/09(土)]]></title>
-        <id>https://note.com/aesthetic_milo/n/n9396aaa67639</id>
-        <link href="https://note.com/aesthetic_milo/n/n9396aaa67639"/>
-        <updated>2022-04-09T13:56:28.000Z</updated>
-        <summary type="html"><![CDATA[午前中まじでずっとパソコンにへばりついてDLsiteを漁りまくってて時間溶けた
-結局午後から焦って勉強したけど2時間ぐらいしかやれてない泣 終わった 色欲は人を狂わせる
-あと、めちゃ好きなイラストレーターのFanboxに入った
-特典としてフォーム入力してリクエスト送れば 過去イラストのデータ送ります みたいなサービスがあって 今日の午前にリクエスト送信してみたけど まだ返事こない泣
-ちゃんとフォーム送れてたかな
-続きをみる]]></summary>
-        <author>
-            <name>上手な人</name>
         </author>
     </entry>
 </feed>
