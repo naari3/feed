@@ -5627,6 +5627,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889897468399",
+          "author": null,
+          "description": "ども、@kimihom です。\n\nSwiftUI でアプリ開発をしていると、その情報はもう古かったりして正しく動作しないことが多々あるので、執筆した現時点で動作を確認できたコードとともに解説していこうと思う。\nやりたいこと\nAPI で取ってきた 音声URLを再生させる\n再生した録音を停止ボタンで停止、再開ボタンで再開させる\n音声の再生速度を早めたり遅めたりする\n15秒先に進んだり、15秒前に戻れたりする\nSwift でのAudio実装を調べていると、AVPlayer を使う方法と AVAudioPlayer を使う方法がある。ぱっと見 AVAudioPlayer を使うのが正解に見えそうだが、どうやら AVAudioPlayer は Web経由でのHTTPでの再生が実装できない?ようで、AVPlayer を使うのが正解だった。\nApple Developer Documentation\niOS 公式ドキュメントでは標準の定義しか書かれておらず、実際に実装するには、Web上にあるいろいろな事例を見ながら組み合わせていく流れになるだろう・・。\n実装\nvar audioPlayer: AVPlayer?\n\nfunc startPlay() {\n    let url = URL.init(string: \"https://www.hello.com/sample.wav\")\n    audioPlayer = AVPlayer.init(playerItem: AVPlayerItem(url: url))\n\n    // 再生が終わった際のイベント定義\n    NotificationCenter.default\n        .addObserver(self, selector: #selector(playerDidFinishPlaying),\n           …",
+          "link": "https://www.bokukoko.info/entry/2022/07/09/142535",
+          "publishedOn": "2022-07-09T05:25:35.000Z",
+          "wordCount": 679,
+          "title": "Swift での HTTPS での音声再生をさせる方法",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220611/20220611214228.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220611/20220611214228.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889895282137",
           "author": null,
           "description": "ども、@kimihom です。\n\nRuby とかの型の緩い言語だと、一つの配列に String や Int を詰め込んでも特に実装の手間にはならないのだけど、そのような環境で作った複数の型のあるJSON配列を、Swift 側で処理するのに少し手間取ったので記事しておこう。\n実装の例\nたとえば、とある API で以下のようなJSONが返ってきたとしよう。\n{\n  \"status\": \"ok\",\n  \"data\": [\n    [1, \"taro\"],\n    [2, \"jiro\"]\n  ]\n}\n\n{\n  \"status\": \"ng\",\n  \"message\": \"何かに失敗\"\n}\n\n\n\nここでの data は、配列0番目がid で 1番目に名前の配列になっている。これを Swift 側で処理するのと、どうするとなる。。\nstruct APIResponse: Decodable {\n    let status: String\n    let message: String?\n    let data: [[String]]?        // NG\n    let data: [[Int, String]]? // NG\n}\n\n\n\n答え: 独自の型を定義する\nenum StringOrIntType: Codable, Hashable {\n    case string(String)\n    case int(Int)\n\n    init(from decoder: Decoder) throws {\n        let container = try decoder.singleValueContainer()\n        do {\n            self = try .string(container.decode(String.self))\n …",

@@ -78,6 +78,47 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Swift での HTTPS での音声再生をさせる方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/07/09/142535" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+SwiftUI でアプリ開発をしていると、その情報はもう古かったりして正しく動作しないことが多々あるので、執筆した現時点で動作を確認できたコードとともに解説していこうと思う。
+やりたいこと
+API で取ってきた 音声URLを再生させる
+再生した録音を停止ボタンで停止、再開ボタンで再開させる
+音声の再生速度を早めたり遅めたりする
+15秒先に進んだり、15秒前に戻れたりする
+Swift でのAudio実装を調べていると、AVPlayer を使う方法と AVAudioPlayer を使う方法がある。ぱっと見 AVAudioPlayer を使うのが正解に見えそうだが、どうやら AVAudioPlayer は Web経由でのHTTPでの再生が実装できない?ようで、AVPlayer を使うのが正解だった。
+Apple Developer Documentation
+iOS 公式ドキュメントでは標準の定義しか書かれておらず、実際に実装するには、Web上にあるいろいろな事例を見ながら組み合わせていく流れになるだろう・・。
+実装
+var audioPlayer: AVPlayer?
+
+func startPlay() {
+    let url &#x3D; URL.init(string: &quot;https://www.hello.com/sample.wav&quot;)
+    audioPlayer &#x3D; AVPlayer.init(playerItem: AVPlayerItem(url: url))
+
+    // 再生が終わった際のイベント定義
+    NotificationCenter.default
+        .addObserver(self, selector: #selector(playerDidFinishPlaying),
+           …</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220611/20220611214228.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -24830,7 +24871,7 @@ support.google.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-07-09T05:02:12.901Z">2022-07-09T05:02:12.901Z</time>
+    <time id="build-timestamp" datetime="2022-07-09T06:02:07.189Z">2022-07-09T06:02:07.189Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
