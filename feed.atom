@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-09T13:07:59.454Z</updated>
+    <updated>2022-07-09T14:01:56.951Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17439,24 +17439,6 @@ docs.google.com
 19:17 - DANI || BZRP …]]></summary>
         <author>
             <name>電子計算機舞踏音楽</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Google アナリティクス ユニバーサル アナリティクスの終了に関するはてなブログの対応について]]></title>
-        <id>hatenablog://entry/13574176438081842202</id>
-        <link href="https://staff.hatenablog.com/entry/2022/04/11/103334"/>
-        <updated>2022-04-11T01:33:34.000Z</updated>
-        <summary type="html"><![CDATA[先日、Google より Google アナリティクス ユニバーサル アナリティクス(以降 ユニバーサルアナリティクス)の終了とGoogle アナリティクス 4 (以降 GA4)への準備についてアナウンスがありました。2023年7月1日をもって、新しいヒットの処理が停止される旨*1が記載されています。
-support.google.com
-はてなブログでは、設定画面にて簡単にユニバーサル アナリティクスを導入できる設定を提供しており、多くのユーザー様にアクセス解析ツールとしてご利用いただいております。つきましては、はてなブログにおける、GA4に関する今後の方針について説明いたします。
-はてなブログのGA4対応について
-現在のところ、はてなブログの詳細設定の「Google Analytics 埋め込み」設定は、GA4の計測には対応していません。こちらについては、ユニバーサルアナリティクスと同時に計測できるように、GA4用の設定フォームの導入を検討しており、2022年5月中には実装できる見込みです。
-この設定はユニバーサルアナリティクス専用です
-なお、はてなブログでは、<head>要素の編集設定やGoogle タグ マネージャ(以降 GTM)の導入設定を提供しております。そのため、現状でもgtag.jsによるGA4の計測やGTMを経由してGA4による計測を実施することが可能です。もし、早めにユニバーサルアナリティクスとGA4の両方で計測しておきたいという場合には、gtag.jsやGTMからの計測をご検討ください。ただし、いずれの設定も上級者向けとなりますので、はてなブログによるGA4設定用フォームの実装をお待ちいただけますと幸いです。
-
-*1:アクセスが記録されなくなります]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
 </feed>
