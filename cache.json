@@ -5575,21 +5575,6 @@
             "length": "0"
           },
           "imageUrl": null
-        },
-        {
-          "id": "hatenablog://entry/13574176438082239319",
-          "author": null,
-          "description": "こんにちは。\nレシピサービス開発部でエンジニアを担当しているnaraです。 \n今回は転職間もない自分が、クックパッドで\"実際に働いてみて感じたこと\"を紹介したいと思います。\n働き方が柔軟\n突然ですが、私は現在イギリスの大学でComputer Scienceを専攻しています。\n特に、試験期間中は学業に専念したくなるのですが、クックパッドはフルフレックスで働けるので、\n業務時間を柔軟に調整できています。\nこのように、柔軟に働き方を調整できるため、自分のような社会人学生も\nあらゆる情報がオープン\nクックパッドでは、あらゆる情報がオープンに発信されています。\nまた、コミュニケーションだけでなく、データもオープンにされており\nDWHにアクセスして、分析SQLを発行できます。\nSQLの実行結果を共有する仕組みも存在しており、デザイナーが分析SQLを共有しているのを見たときは驚愕しました....\nユーザとの距離がとても近い\nクックパッドで働いていると、社員同士だけでなくユーザとの距離も近いと感じます。\n前職でもインタビューは実施されていましたが、年に数回行われるレベルだったため\nこの点、クックパッドではユーザインタビューの仕組みが整っているため\nユーザーインタビューに関する取り組みは、以下の記事を読むと面白いと思います。\nnote.com\n業務の域を超えて仕事ができる\n個人的に入社して最も驚いたのは、業務の域に制限がないことです。\nしかし、クックパッドでは「何をやって欲しいか？」より「何をやりたいか？」が問われ\nそのため、業務の域を超えて仕事に携わることができ\nまた、エンジニアとして業務の幅も広く\nもちろん「複数の業務に携わる」 = 「仕事の範囲が増える」ので、\n助け合いの文化である\n前述のように、何でもチャレンできる職場ではあるのですが\n実際にエンジニアとして開発に携わってみて、設計・実装に日々難しさを感じています。\nしかし、クックパッドではSlackで雑に助けを求めると、誰かがすぐに助けてくれたり\n個人的にはこの助け合いの文化のおかげで、経験のない言語が使用されたアプリケーションでも、\n率先して開発にチャレンジする事ができています。\nまとめ\n本エントリーでは、クックパッドで\"実際に働いて感じた事\"を書いてみました。\nまた、エンジニアとして課題にぶち当たることも多いですが、\n職種やチームを超えて助けあう文化があるので、楽しく開発にチャレンジする事ができています！\n最後に\nクックパッドではエンジニアを絶賛募集しています。\nぜひ、お気軽にご応募ください！\ninfo.cookpad.com",
-          "link": "https://techlife.cookpad.com/entry/2022/04/12/210205",
-          "publishedOn": "2022-04-12T12:02:05.000Z",
-          "wordCount": null,
-          "title": "クックパッドに転職して感じたこと",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -6366,16 +6351,6 @@
           "wordCount": 39,
           "title": "20220526",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/f066f9db801ce6fad1747834d5519a8f7cf70188.jpg"
-        },
-        {
-          "id": "https://note.com/dak/n/n81d2acd27195",
-          "author": null,
-          "description": "3/29にIQテストを受けて返却、IQが平均から少し下で、一番下が87というまぁなるほどなという結果に\nそこまでショックではなかった　予想はしていたので\nよく大学生をやってこれたなとある意味で感心してしまった　よく頑張って生きてこれたなまじで\n続きをみる",
-          "link": "https://note.com/dak/n/n81d2acd27195",
-          "publishedOn": "2022-04-12T12:08:54.000Z",
-          "wordCount": 43,
-          "title": "20220412",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/76302884/rectangle_large_type_2_31b9a6212cd657660b0de8ca70b4fada.png?width=800"
         }
       ]
     },
@@ -10246,6 +10221,16 @@
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/rust-mosaic-web-app",
+          "author": null,
+          "description": "Twitter…",
+          "link": "https://blog.ojisan.io/rust-mosaic-web-app",
+          "publishedOn": "2022-07-11T00:00:00.000Z",
+          "wordCount": 1627,
+          "title": "Rust でモザイク加工を実装し、それを WebAssembly として Web アプリから利用する",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/wsl-reinstall-d",
           "author": null,
           "description": "WSL で AOSP をビルドしようとしたら容量が足りなかったので、WSL 環境を D ドライブで作り直す。 入れ直しなので wsl コマンドは入っている前提。また移行はせずに作り直す。 OGP は http://tsukuru-hito.com/e2482904.html…",
@@ -10469,6 +10454,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=14198",
+          "author": "やまぐち",
+          "description": "はじめに SoftwareDesign 8月号のDNS特集にて記事を書かせていただきました。みんな買ってね。 で、実は最初に書いてた原稿はもっと長かったんですけど、紙幅の都合で一部の内容については掲載...",
+          "link": "https://eng-blog.iij.ad.jp/archives/14198",
+          "publishedOn": "2022-07-11T00:07:04.000Z",
+          "wordCount": 1830,
+          "title": "Let’s Encryptでワイルドカード証明書を取得する話",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2022/07/a11b4bb3ba448d1fa402ac3dc62cc91f.png"
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=13937",
           "author": "安形",
