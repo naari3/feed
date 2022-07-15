@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-15T01:30:16.890Z</updated>
+    <updated>2022-07-15T02:52:10.553Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -36,6 +36,16 @@ Amazon
         <summary type="html"><![CDATA[⇒ 前置きは飛ばして手順を見たい方はこちら みなさん、こんにちは。 Power Automate エバンジェリスト(自称)の古賀です。 Microsoft Teams のチャットで、 忘れずに返してお...]]></summary>
         <author>
             <name>古賀 勇</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[rubocop-rails_deprecationをsevencopへ統合]]></title>
+        <id>https://r7kamura.com/articles/2022-07-15-rubocop-rails-deprecation-deprecated</id>
+        <link href="https://r7kamura.com/articles/2022-07-15-rubocop-rails-deprecation-deprecated"/>
+        <updated>2022-07-14T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[rubocop-rails_deprecationを廃止し、既存のCopはsevencopで引き取ることにした。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
