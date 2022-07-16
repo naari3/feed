@@ -705,6 +705,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889899618165",
+          "author": null,
+          "description": "会話はカードゲームに似ている。会話には「プレイヤー」「場」「ルール」「手札」の要素がある：\n \n①プレイヤー\n→会話に参加する主体のこと。手札を考えたり、ルールを把握する際に、最初に考慮すべき要素。例えば、相手が会社の上司なのか、学校の同級生なのかで効果的な手札は変わる。ルールも変化する。学校の同級生に言ってよいことでも会社の上司に言ってはいけないこともあるように。\n \n②場\n→会話が展開される場所のこと。例えば、安めの居酒屋、高級なバー、オンライン（ビデオオフ）、オンライン（ビデオあり）など。会話が展開される場所によってルールは変化する。安めの居酒屋であれば下品な話題を口にしても問題はないが、高級なバーで具体的なセックスの話をすることは推奨されない。常に有効なルールや手札は存在しない。\n \n③手札\n→具体的発言のこと。愚痴に対する共感などの「相手の動作に対する返答」と、「話題提供」の2種類がある。\n \n④ルール\n→「やってはいけないこと」「やらなくてはいけないこと」「やったほうが良いこと」「やらないほうがいいこと」4種類の集合。「状況」から「適切な振る舞い」を導くルールの集合のこと。例えば、「相手が愚痴を言った場合、共感を示さずいきなり解決策を提示してはいけない」など。健常者エミュレータ事例集Wikiが参考になる。",
+          "link": "https://contradiction29.hatenablog.com/entry/2022/07/16/213556",
+          "publishedOn": "2022-07-16T12:35:56.000Z",
+          "wordCount": 233,
+          "title": "日記2022/07/16:会話＝カードゲーム",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889897580214",
           "author": null,
           "description": "独り暮らしでは、ミスの責任を自分で負う。洗濯物を放置すれば着るものが無くなる。掃除しなければハウスダストで死ぬ。買い出しに行かないと食べるものがない。\n何もしないでいることは許されない。必ずやることがある。\n仕事も同じ。できるようにならないといけないことは多い。その訓練のために時間を費やす。\nフルタイムで働く社会人は可処分時間が少ない。少ない可処分時間は家事や技術の勉強に使う。\n考える時間が減った。\n一方で可処分所得は増えた。生や死について考えるより、今日の夕飯をどうするかについて考えるようになった。プライムデーに何を買おう？休暇の旅行予定はどうしよう？\nいかにして（How）健常者エミュレータ事例集Wikiの新規投稿を増やすか？考えに基づいてプログラムを書く。\n余計なことについて考えなくてもよくなった。脳が救われた。",
@@ -5607,21 +5622,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/mokuzon/20220418/20220418171746.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438083124211",
-          "author": null,
-          "description": "研究開発部の原島です。去年からはレシピサービス開発部も兼務しています。そちらの話（検索の話）はおいおいするとして、今日は研究開発部の話（機械学習の話）をします。\nfastText\n単語の分散表現、重要ですよね。ニューラル全盛期の現代において、使わないという選択肢はほとんどないように思います。\n最初に話題になったのは、2013 年に発表された word2vec でしょう。「king」のベクトルから「man」のベクトルを引き、「woman」のベクトルを足したら「queen」のベクトルになったという話は有名です。一方、最近は、2018 年に発表された BERT（及び、それに類するモデル）の話題で持ちきりですね。\nfastText は、ご存知の方も多いと思いますが、分散表現を学習するためのライブラリです。学習のアルゴリズム自体を指すこともあるように思います。fastText の論文は以下です。2017 年に発表されたものなので、発展が速いこの業界においてはもう古い論文なのかもしれません。\nEnriching Word Vectors with Subword Information. Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov.\nなぜ fastText なのか？\nクックパッドでは fastText をよく使っています。では、なぜ fastText なのでしょう？上でも触れたように、word2vec や BERT などの選択肢もあります。もちろん、fastText も主要な選択肢の一つではありますが、どうして fastText なのでしょうか？\n様々な理由がありますが、まとめると、「性能と運用のバランスがよい」といったところでしょうか。\n性能の面では、サブワード（部分文字列）が考慮できる分、word2ve…",
-          "link": "https://techlife.cookpad.com/entry/2022/04/18/093000",
-          "publishedOn": "2022-04-18T00:30:00.000Z",
-          "wordCount": null,
-          "title": "fastText in Cookpad",
-          "enclosure": {
-            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -9651,6 +9651,16 @@
       "feedUrl": "https://note.com/ssaymds/rss",
       "siteUrl": "https://note.com/ssaymds",
       "articles": [
+        {
+          "id": "https://note.com/ssaymds/n/n5a4465b895cb",
+          "author": null,
+          "description": "続きをみる",
+          "link": "https://note.com/ssaymds/n/n5a4465b895cb",
+          "publishedOn": "2022-07-16T12:27:10.000Z",
+          "wordCount": null,
+          "title": "記事の更新に失敗しました",
+          "imageUrl": null
+        },
         {
           "id": "https://note.com/ssaymds/n/n51e0be2c4c49",
           "author": null,
