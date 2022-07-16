@@ -7553,6 +7553,16 @@
       "siteUrl": "https://note.com/sizes",
       "articles": [
         {
+          "id": "https://note.com/sizes/n/n9666d2630c58",
+          "author": null,
+          "description": "こないだガストに行ったら、猫型の配膳ロボットを見かけた。ニュースやSNSで話題になっていたやつだ。どうやら一般向けに売られてるものらしかったが、400万近くする。買う人はいるのだろうか。\n\n続きをみる",
+          "link": "https://note.com/sizes/n/n9666d2630c58",
+          "publishedOn": "2022-07-16T02:28:42.000Z",
+          "wordCount": 2317,
+          "title": "エッセイ：慢性化する労働",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/82748553/rectangle_large_type_2_428866000e36a181ffee7bfe5f085dfd.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/sizes/n/n6e9b1f1f3d08",
           "author": null,
           "description": "昨日いろいろあってラジオとれなかったので、今日は二本立てです(スミマセン) 続きをみる",
@@ -10318,16 +10328,6 @@
           "wordCount": null,
           "title": "JavaScript Primer 4.0.0: ECMAScript 2022に対応したJS本",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2022/04/17/fz-browse/",
-          "author": null,
-          "description": "fz-browseという、fzfライクなインタラクティブな検索ツールを書きました。\nfz-browse自体は検索エンジンを持っているわけではなく、既存のripgrepやripgrep-allなどのツールと組み合わせて、インタラクティブな検索体験を自分で組み立てるツールです。\nコマンドを組みわせたインタラクティブな検索(絞り込み)はpercol、peco、fzfなどが有名ですが、これらは検索の結果や操作もターミナル上で行います。\nターミナルは、書籍や画像などのコンテンツを検索した結果を表示してもあまり楽しくない場合があります。\nfz-browserでは既存のコマンドラインツールを組み合わせて検索するのは同じですが、この検索結果の表示や操作をウェブブラウザ上で行います。\nブラウザで表示できるので、検索結果がPDFやEpubの書籍だったらそのままビューアで開いたり、画像だったらそのまま表示できるようになっていて、テキスト以外の結果にも対応しています。\n\n\n\nripgrep-allを使って、PDFやEpub、Markdownを検索している様子\n\n\n\nExifToolを使って、画像のExifに含まれるコメントや日付を検索している様子\n使い方\nfz-browseはNode.jsで動いているツールなので、npmでインストールします。\nnpm install --global fz-browse\n\n\n最初に書いていたように、fz-browse自体は検索エンジンではなく、既存のコマンドを組み合わせます。\nテキストを検索する\nripgrepで検索する例です。\n必要なもの:\n\n\nripgrep\njq\n\n\n\n次のコマンドを実行すると、検索欄に入力するたびに--runフラグに指定されているrgコマンドで検索した結果が表示されます。\nまた、検索したファイルのリンクを開くと、--previewフラグで指…",
-          "link": "https://efcl.info/2022/04/17/fz-browse/",
-          "publishedOn": "2022-04-17T13:50:00.000Z",
-          "wordCount": 264,
-          "title": "fz-browse: fzfライクな自由度の高いインタラクティブな検索ツール、ただしブラウザに表示する",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },

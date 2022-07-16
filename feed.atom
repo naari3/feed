@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-16T01:30:15.715Z</updated>
+    <updated>2022-07-16T02:42:22.061Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[エッセイ：慢性化する労働]]></title>
+        <id>https://note.com/sizes/n/n9666d2630c58</id>
+        <link href="https://note.com/sizes/n/n9666d2630c58"/>
+        <updated>2022-07-16T02:28:42.000Z</updated>
+        <summary type="html"><![CDATA[こないだガストに行ったら、猫型の配膳ロボットを見かけた。ニュースやSNSで話題になっていたやつだ。どうやら一般向けに売られてるものらしかったが、400万近くする。買う人はいるのだろうか。
+
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[昨日いろいろあってラジオとれなかっ...]]></title>
         <id>https://note.com/sizes/n/n6e9b1f1f3d08</id>
@@ -17391,47 +17403,6 @@ Mother、FE、悪魔城とより取り見取り。どれからやりましょう
 しかし金カムがかなり面白い… 正直今のところ春アニメよりこっちの方を優先して観たいレベル。]]></summary>
         <author>
             <name>kaikityouの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[fz-browse: fzfライクな自由度の高いインタラクティブな検索ツール、ただしブラウザに表示する]]></title>
-        <id>https://efcl.info/2022/04/17/fz-browse/</id>
-        <link href="https://efcl.info/2022/04/17/fz-browse/"/>
-        <updated>2022-04-17T13:50:00.000Z</updated>
-        <summary type="html"><![CDATA[fz-browseという、fzfライクなインタラクティブな検索ツールを書きました。
-fz-browse自体は検索エンジンを持っているわけではなく、既存のripgrepやripgrep-allなどのツールと組み合わせて、インタラクティブな検索体験を自分で組み立てるツールです。
-コマンドを組みわせたインタラクティブな検索(絞り込み)はpercol、peco、fzfなどが有名ですが、これらは検索の結果や操作もターミナル上で行います。
-ターミナルは、書籍や画像などのコンテンツを検索した結果を表示してもあまり楽しくない場合があります。
-fz-browserでは既存のコマンドラインツールを組み合わせて検索するのは同じですが、この検索結果の表示や操作をウェブブラウザ上で行います。
-ブラウザで表示できるので、検索結果がPDFやEpubの書籍だったらそのままビューアで開いたり、画像だったらそのまま表示できるようになっていて、テキスト以外の結果にも対応しています。
-
-
-
-ripgrep-allを使って、PDFやEpub、Markdownを検索している様子
-
-
-
-ExifToolを使って、画像のExifに含まれるコメントや日付を検索している様子
-使い方
-fz-browseはNode.jsで動いているツールなので、npmでインストールします。
-npm install --global fz-browse
-
-
-最初に書いていたように、fz-browse自体は検索エンジンではなく、既存のコマンドを組み合わせます。
-テキストを検索する
-ripgrepで検索する例です。
-必要なもの:
-
-
-ripgrep
-jq
-
-
-
-次のコマンドを実行すると、検索欄に入力するたびに--runフラグに指定されているrgコマンドで検索した結果が表示されます。
-また、検索したファイルのリンクを開くと、--previewフラグで指…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
