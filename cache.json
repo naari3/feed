@@ -5660,6 +5660,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889899844700",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n時間ある時にコツコツ改善を続けている 詠みラボ。\nまだ全然 俳句の投稿がない寂しい感じではあるけど、技術的に思いついたのをどんどん作っていく楽しさでサービスが続いているw。\n最近アップデートした内容をご紹介しよう。\nwww.yomilab.com\nいいなと思った句を何度も見れるように\n今まではランダムで1つ未読の俳句を1つずつ表示していたが、それだと一度見た俳句で良かったと思った俳句を見にいくのができなかった。\n現在は今まで出てきた俳句をリスト的に表示して、気になった俳句をクリックでより詳細が見れるようになった。これであればいつでも見たい俳句を見にいくことが可能だ。\n\n自分がいいねした俳句、他の人がいいねした俳句を見れるように\nこれは Twitter でその人が誰をフォローしているのかがわかるように、詠みラボで他の人がどんな俳句をいいねしたのがが見れるようになっている。\nもちろん自分がいいねした俳句もリストとして表示されているので、ユーザー登録してもらったら それを見ることが可能となる。\nリアルタイムで今書いている俳句を縦表示にさせる\n\n左で書いた横テキストを、実際に表示される縦型の俳句としてリアルタイムで変わる機能を実装。\n縦で書いてみたらちょっとイメージが違うということが意外と起こるので、なかなか便利な機能だと満足している。\n称号の登録\n俳句の称号を取れるようになった。この俳句の称号はシンプルに「今までもらったいいねの数の総数」となる。だからこそものすごくセンスのある人が1つの俳句で大量にいいねもらうでも良し、素人でもコツコツ俳句を作って投稿していっていいねをもらうでもいい。\n現在 レベル8 までの称号を実装している。\nユーザー数が増えない限り、みんな俳句入門のままなので、ぜひいいねしていってください。\n終わりに\n少しずつ改善を続けているので、もし俳句を詠みたくなってきたらぜひ使ってみてください。",
+          "link": "https://www.bokukoko.info/entry/2022/07/17/171542",
+          "publishedOn": "2022-07-17T08:15:42.000Z",
+          "wordCount": null,
+          "title": "詠みラボ 俳句 UI 改善、称号の機能追加など",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220717/20220717171459.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220717/20220717171459.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889897468399",
           "author": null,
           "description": "ども、@kimihom です。\n\nSwiftUI でアプリ開発をしていると、その情報はもう古かったりして正しく動作しないことが多々あるので、執筆した現時点で動作を確認できたコードとともに解説していこうと思う。\nやりたいこと\nAPI で取ってきた 音声URLを再生させる\n再生した録音を停止ボタンで停止、再開ボタンで再開させる\n音声の再生速度を早めたり遅めたりする\n15秒先に進んだり、15秒前に戻れたりする\nSwift でのAudio実装を調べていると、AVPlayer を使う方法と AVAudioPlayer を使う方法がある。ぱっと見 AVAudioPlayer を使うのが正解に見えそうだが、どうやら AVAudioPlayer は Web経由でのHTTPでの再生が実装できない?ようで、AVPlayer を使うのが正解だった。\nApple Developer Documentation\niOS 公式ドキュメントでは標準の定義しか書かれておらず、実際に実装するには、Web上にあるいろいろな事例を見ながら組み合わせていく流れになるだろう・・。\n実装\nvar audioPlayer: AVPlayer?\n\nfunc startPlay() {\n    let url = URL.init(string: \"https://www.hello.com/sample.wav\")\n    audioPlayer = AVPlayer.init(playerItem: AVPlayerItem(url: url))\n\n    // 再生が終わった際のイベント定義\n    NotificationCenter.default\n        .addObserver(self, selector: #selector(playerDidFinishPlaying),\n           …",
