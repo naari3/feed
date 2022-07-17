@@ -883,6 +883,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889899942604",
+          "author": null,
+          "description": "映像伝送実験でH.264を使ったRTP通信したくなったのでGstreamerでやってみました．備忘録です．\nhttps://gstreamer.freedesktop.org/\n環境\nUbuntu Linux 20.04\nRoland UVC-01\n受信側\ngst-launch-1.0 -v v4l2src device=/dev/video0 ! video/x-raw,width=1280,height=720,framerate=30/1,format=YUY2 ! videoconvert ! video/x-raw,format=NV12 ! x264enc ! rtph264pay ! udpsink host=127.0.0.1 port=5005 sync=false\n\n\n\nやっていることとしては，RAWで1280*720 30fpsを入力してx264encのソースとして対応してるNV12に変換したあとX264encに入れてrtph264pay udpsinkでrtp送信しています．\n今回はHDMI入力した映像を出力したかったのでRolandのお高いまあまあ良いキャプチャボードを使っています．これなにが良いってRAW(YUV)で1080p60とか出力できるところなんですよね．Mjpegとかじゃないので実験や研究段階で非常に重宝します．\n\nRoland/UVC-01 USB VIDEO CAPTURE\n\nRoland(ローランド)\nAmazon\n\nちなみに，普通のUSBカメラだとMjpegで720p30などで出力されることが多く，RAWで出力しようとすると8fpsとか3fpsとかしか出力できないことが多いです(USB2.0はたった480Mbpsなので帯域的にも仕方ない)．手持ちのカメラがどんなものを出力できるのか調べる方法は余談で述べます．\nMjpegで入力し…",
+          "link": "https://fumimaker.net/entry/2022/07/17/231342?utm_source=feed",
+          "publishedOn": "2022-07-17T14:13:42.000Z",
+          "wordCount": 6265,
+          "title": "GstreamerでH.264 RTP送受信する",
+          "enclosure": {
+            "url": "https://i.gyazo.com/a665bb57142ca45947e85f08b0fcabe6.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://i.gyazo.com/a665bb57142ca45947e85f08b0fcabe6.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889894242676",
           "author": null,
           "description": "前回の続きです．\nfumimaker.net\n\nhttps://japan.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/getting-started.html\nこれにそってとりあえず動かしてみたいと思います．どうやらSmartcamというデモを動かすことができるみたいです．IASコネクタのカメラ以外にもUSBカメラが使えるみたいです．これは助かる．(ただしRAWで出力できる解像度とフレームレートに制限されます．普通のUSB2.0の安価なカメラだと720p5fpsくらいしか出力できないかも．)\nUbuntu版とPetalinux版が提供されているようです．せっかくなのでUbuntu版を動かしてみることにしましたが動きませんでした←結論\nUbuntu版を試す\nhttps://japan.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started-ubuntu/setting-up-the-sd-card-image.html\n基本的にはこれ通りやっていくだけです．\nイメージをSDに書き込み\nこれを使って書き込みました．Windows版もMac版もあって助かる．イメージはここにあります．\nhttps://www.balena.io/etcher/\n各種接続\nHDMIやSDカード，LANケーブル，USBケーブルなどを接続し最後にACアダプタを差し込みます，電源ボタンはありません．そのまま電源が入ります．電源を入れる前にTeraTermなどのシリアルポートターミナルを開いておくとログが見れます．\n自分の場合，WindowsですがUSBケーブルを接続すると開発ボード上のFT4232HLに…",
@@ -2663,6 +2678,21 @@
       "feedUrl": "https://kaikityou.hatenablog.com/rss",
       "siteUrl": "https://kaikityou.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/4207112889899955882",
+          "author": null,
+          "description": "少し前にセールで安売りしてた本を今日読み終わった。\n\n\n習慣の力〔新版〕 (ハヤカワ文庫NF)\n作者:チャールズ デュヒッグ\n早川書房\nAmazon\nタイトルの通り「習慣って凄いんだぜ」みたいな内容の本なのだが、習慣の治し方や変え方に関しての部分が肝だったように思う。\"きっかけ\"と\"報酬\"というキーワードを用いて凄く分かりやすく実践的に提案されています。\n少し脱線感はあったけど歯磨き粉とファブリーズの話も面白かった。歯磨き粉の清涼感って別に必要ないけど、その清涼感を\"報酬\"と勘違いさせることで歯磨きをさせるという寸法らしいですよ。おもしれ～。\n前に読んだ『スイッチ！』とかもそうなんですが、小さい成功体験ベースに語られる話って自分でも試せそうでかなり参考になりそうだなって思います。\n \n\n話題のヤクルト1000を購入した。なんかファミマで売ってた。\nとりあえず一本飲んだので明日の朝が楽しみ。\n \n前々からやろうと思っていることの実現に必要そうだったので、PHPの勉強を始めた。\n久しぶりに参考書なんか買ってみた。技術関係の話はネットに腐るほど情報が出ているというのはそうなのだが、個人的には少なくとも基礎の基礎みたいな部分は紙媒体の方が理解しやすい。\nあと本棚の中にその言語の本があると何となくやり遂げた感じがあって良い。\n \n全裸監督のシーズン1をようやく見終わった。\n最近は一周に一回更新される春アニメのマラソンに追われていてエンタメを素直に楽しめない感じがあったのだが、一度それらから開放されると色々なものが楽しく見えるようになった気がする。\n週一回更新されるアニメって実はあんまり自分に合ってない気がして、今季は結構見たいアニメがあるのですが試しに全部終わるまで待ってみようかと思ってます。\nただそれやると放送中特有の諸々のキャンペーンとかに乗り遅れちゃったりするんですよね。難しいところではあります。",
+          "link": "https://kaikityou.hatenablog.com/entry/2022/07/17/235823",
+          "publishedOn": "2022-07-17T14:58:23.000Z",
+          "wordCount": 283,
+          "title": "2022.7.17 PHPの勉強を始めた",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/41HddT74fuL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/41HddT74fuL._SL500_.jpg"
+        },
         {
           "id": "hatenablog://entry/4207112889899383856",
           "author": null,
@@ -9561,16 +9591,6 @@
           "wordCount": null,
           "title": "エッセイ：なぜこどもびいるはゴミでココアシガレットは神なのか",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/76753278/rectangle_large_type_2_02930da8a8a94cf36e5ff0b224873cc6.png?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n699d2649549e",
-          "author": null,
-          "description": "noteを1日数回更新するようになってから数日経つけれど、ネタはむしろ溢れていて、処理に困っている。そのほとんどが身の回りのことに対する考え方だったり感じ方のようなもので、体験談をネタにすることは滅多にないし(覚えてないこと多いです)、論考を書きたいとはゆめゆめ思わない。\n社会生活で意見を呈したり、固有の考えを述べたりするのってリスクじゃないですか。みんな簡潔なトピックを求めているから、意見を大きくすればするほどお口チャックを強いられる。その反動がきているのかもしれない？アスペあるあるですかね。\n続きをみる",
-          "link": "https://note.com/sizes/n/n699d2649549e",
-          "publishedOn": "2022-04-19T02:54:07.000Z",
-          "wordCount": 47,
-          "title": "エッセイ：僕は意見の総量がおかしいのかもしれない",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/76751062/rectangle_large_type_2_8f5047a82d7673bb1e568949059a81e2.png?width=800"
         }
       ]
     },

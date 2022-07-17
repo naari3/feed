@@ -78,6 +78,87 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://kaikityou.hatenablog.com/" target="_blank"
+              rel="noopener">kaikityouの日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2022.7.17 PHPの勉強を始めた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://kaikityou.hatenablog.com/entry/2022/07/17/235823" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>少し前にセールで安売りしてた本を今日読み終わった。
+
+
+習慣の力〔新版〕 (ハヤカワ文庫NF)
+作者:チャールズ デュヒッグ
+早川書房
+Amazon
+タイトルの通り「習慣って凄いんだぜ」みたいな内容の本なのだが、習慣の治し方や変え方に関しての部分が肝だったように思う。&quot;きっかけ&quot;と&quot;報酬&quot;というキーワードを用いて凄く分かりやすく実践的に提案されています。
+少し脱線感はあったけど歯磨き粉とファブリーズの話も面白かった。歯磨き粉の清涼感って別に必要ないけど、その清涼感を&quot;報酬&quot;と勘違いさせることで歯磨きをさせるという寸法らしいですよ。おもしれ～。
+前に読んだ『スイッチ！』とかもそうなんですが、小さい成功体験ベースに語られる話って自分でも試せそうでかなり参考になりそうだなって思います。
+ 
+
+話題のヤクルト1000を購入した。なんかファミマで売ってた。
+とりあえず一本飲んだので明日の朝が楽しみ。
+ 
+前々からやろうと思っていることの実現に必要そうだったので、PHPの勉強を始めた。
+久しぶりに参考書なんか買ってみた。技術関係の話はネットに腐るほど情報が出ているというのはそうなのだが、個人的には少なくとも基礎の基礎みたいな部分は紙媒体の方が理解しやすい。
+あと本棚の中にその言語の本があると何となくやり遂げた感じがあって良い。
+ 
+全裸監督のシーズン1をようやく見終わった。
+最近は一周に一回更新される春アニメのマラソンに追われていてエンタメを素直に楽しめない感じがあったのだが、一度それらから開放されると色々なものが楽しく見えるようになった気がする。
+週一回更新されるアニメって実はあんまり自分に合ってない気がして、今季は結構見たいアニメがあるのですが試しに全部終わるまで待ってみようかと思ってます。
+ただそれやると放送中特有の諸々のキャンペーンとかに乗り遅れちゃったりするんですよね。難しいところではあります。</span>
+                  </div>
+                  <img src="https://m.media-amazon.com/images/I/41HddT74fuL._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
+              rel="noopener">fumiLab</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GstreamerでH.264 RTP送受信する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2022/07/17/231342?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>映像伝送実験でH.264を使ったRTP通信したくなったのでGstreamerでやってみました．備忘録です．
+https://gstreamer.freedesktop.org/
+環境
+Ubuntu Linux 20.04
+Roland UVC-01
+受信側
+gst-launch-1.0 -v v4l2src device&#x3D;/dev/video0 ! video/x-raw,width&#x3D;1280,height&#x3D;720,framerate&#x3D;30/1,format&#x3D;YUY2 ! videoconvert ! video/x-raw,format&#x3D;NV12 ! x264enc ! rtph264pay ! udpsink host&#x3D;127.0.0.1 port&#x3D;5005 sync&#x3D;false
+
+
+
+やっていることとしては，RAWで1280*720 30fpsを入力してx264encのソースとして対応してるNV12に変換したあとX264encに入れてrtph264pay udpsinkでrtp送信しています．
+今回はHDMI入力した映像を出力したかったのでRolandのお高いまあまあ良いキャプチャボードを使っています．これなにが良いってRAW(YUV)で1080p60とか出力できるところなんですよね．Mjpegとかじゃないので実験や研究段階で非常に重宝します．
+
+Roland/UVC-01 USB VIDEO CAPTURE
+
+Roland(ローランド)
+Amazon
+
+ちなみに，普通のUSBカメラだとMjpegで720p30などで出力されることが多く，RAWで出力しようとすると8fpsとか3fpsとかしか出力できないことが多いです(USB2.0はたった480Mbpsなので帯域的にも仕方ない)．手持ちのカメラがどんなものを出力できるのか調べる方法は余談で述べます．
+Mjpegで入力し…</span>
+                  </div>
+                  <img src="https://i.gyazo.com/a665bb57142ca45947e85f08b0fcabe6.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -24436,20 +24517,6 @@ The HUが語るモンゴルの誇り、伝統とモダンの融合、BABYMETAL�
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">エッセイ：僕は意見の総量がおかしいのかもしれない</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n699d2649549e" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>noteを1日数回更新するようになってから数日経つけれど、ネタはむしろ溢れていて、処理に困っている。そのほとんどが身の回りのことに対する考え方だったり感じ方のようなもので、体験談をネタにすることは滅多にないし(覚えてないこと多いです)、論考を書きたいとはゆめゆめ思わない。
-社会生活で意見を呈したり、固有の考えを述べたりするのってリスクじゃないですか。みんな簡潔なトピックを求めているから、意見を大きくすればするほどお口チャックを強いられる。その反動がきているのかもしれない？アスペあるあるですかね。
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/76751062/rectangle_large_type_2_8f5047a82d7673bb1e568949059a81e2.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -24562,7 +24629,7 @@ MTGは、入り口は狭いけど出口がない、カードゲーマーの終�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-07-17T14:01:51.029Z">2022-07-17T14:01:51.029Z</time>
+    <time id="build-timestamp" datetime="2022-07-17T15:02:09.977Z">2022-07-17T15:02:09.977Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
