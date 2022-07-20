@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-20T14:04:23.469Z</updated>
+    <updated>2022-07-20T15:02:00.953Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ラジオ：経験の最大のメリットは不必要なものの確認作業にあるのかもしれない]]></title>
+        <id>https://note.com/sizes/n/nafebcd14cc0c</id>
+        <link href="https://note.com/sizes/n/nafebcd14cc0c"/>
+        <updated>2022-07-20T14:53:33.000Z</updated>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20220720]]></title>
+        <id>https://note.com/dak/n/n5fd8921e6daf</id>
+        <link href="https://note.com/dak/n/n5fd8921e6daf"/>
+        <updated>2022-07-20T14:38:33.000Z</updated>
+        <summary type="html"><![CDATA[特になし　晴れ
+数ヶ月失踪予定なので部屋の片付けをした
+続きをみる]]></summary>
+        <author>
+            <name>okazsystem</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[クックパッドマートアプリにおけるログイン体験の実現]]></title>
         <id>hatenablog://entry/4207112889900508946</id>
@@ -17216,33 +17237,6 @@ TCGにおいてプレイヤー間で使用される用語。
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[クックパッドマート最難解ロジック!?「採番」]]></title>
-        <id>hatenablog://entry/13574176438085203689</id>
-        <link href="https://techlife.cookpad.com/entry/cookpad-mart-assignments-2022"/>
-        <updated>2022-04-22T02:23:52.000Z</updated>
-        <summary type="html"><![CDATA[クックパッドマート流通基盤アプリケーション開発グループでバックエンドエンジニアをしている奥薗 ( @mokuzon )です。今日まで 4 日間連載でクックパッドマートの流通についてご紹介してきました。最後のこのエントリーではマート内で 1,2 を争う難解かつ重要な処理と言われている「採番」についてご紹介します。
-先に クックパッド生鮮 EC お届けの裏側 2022 年版  を読むとよりイメージがつきやすいです。
-採番とは
-マートでは
-商品はハブという大規模拠点に出荷され
-ハブ便でハブからハブへ移動し
-ステーション便でハブからステーションと呼ばれる拠点に移動して
-ユーザーはステーションに商品を受け取りに行く
-というのが基本の流通になっています。
-マート流通の概略図
-採番とは、この商品がどのようなスケジュールで出荷されどういった経路でユーザーまで運ばれるかを計画する処理です。多くは注文時にオンラインで、一部特定時刻にバッチ処理で行っています。
-出荷された商品やそれが入ったコンテナには以下のようなラベルが貼られています。
-
-枠で囲った部分は実際のハブとステーションにある番地名です。商品の配送計画をするにあたってこのように番地などを決定していくため「採番」と呼ばれています。
-この採番はドメイン知識の集合体かつ非常に手続き的な処理のため、物理的な流通の仕組みが大きく変わるとこの採番もほぼ作り直しになるなど、改善も含めてこれまでに 3 回リプレースしました。
-なかなかに難解な処理でずっと職人と呼ばれる人たちの独断場でしたが、3 年強の運用で大分こなれて勝ちパターンが見えてきたのでこのタイミングでご紹介することにしました。
-なにが難しいか
-ひとえにマート流通のあらゆるドメイン知識が詰め込まれていることです。3 日かけてマート流通を紹介してきましたが、これだけでも複雑ですし、実際には紹介し…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>
