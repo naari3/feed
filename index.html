@@ -78,6 +78,38 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">クックパッドマートアプリにおけるログイン体験の実現</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/cookpad-mart-accounts-ec-app" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。買物プロダクト開発部の大川（@aomathwift）です。クックパッドマートのiOSアプリ（以下マートアプリ）の開発に携わっています。
+マートアプリ
+この記事は、「クックパッドマートを支えるアカウントたち」連載2本目の記事で、マートアプリでの認証にフォーカスを当てたものです。
+シリーズの全貌については以下の記事を御覧ください。
+クックパッドマートを支えるアカウントたち - クックパッド開発者ブログ
+本稿では、2022年4月に完全導入されたマートアプリでのログイン体験の実現について紹介します。
+クックパッドマートにおけるユーザー登録
+多くのECサービスでは、最初にユーザー登録をして決済情報や配送先情報等を登録した上で利用開始するものが多いと思います。
+しかし、マートアプリでは利用開始時にユーザー登録のフローはありません。アプリインストール後に気軽に買い物を始めてもらうため、クレジットカード情報と商品を配送するマートステーションという名の冷蔵庫の場所（以下受け取り場所）、受け取り名*1のみを入力するだけで商品を購入できる体験設計をしていました。
+「ユーザー登録無し」の課題
+しかし、この「ユーザー登録無し」という方針には課題があります。
+まず、機種変更の際のデータ引き継ぎができないという点です。マートアプリでは、明示的なユーザー登録を行わないため、購入履歴や注文状況といったユーザーデータは端末に紐付いて保存されます。そのため、アプリがインストールされている端末が変わった場合、必然的にデータを参照できなくなり、強制的に新規ユーザーとしてやり直すことになります。すなわち、機種変更の際のデータ引き継ぎができません。
+また、明示的なユーザー登録をしない場合、電話番号やメールアドレスといったユーザーの連絡先情報を取得できず、ユーザーへのコミュニケーション手段としてメールやSMS…</span>
+                  </div>
+                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773" class="card article-thumbnail" data-enclosure />
+                                  </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -24520,7 +24552,7 @@ TCGにおいてプレイヤー間で使用される用語。
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-07-20T02:45:09.688Z">2022-07-20T02:45:09.688Z</time>
+    <time id="build-timestamp" datetime="2022-07-20T03:32:03.890Z">2022-07-20T03:32:03.890Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
