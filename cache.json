@@ -9526,16 +9526,6 @@
           "wordCount": null,
           "title": "エッセイ：他人に人生を捧げるのはやめたほうがいいという話",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/77013301/rectangle_large_type_2_4f569e8e56d22261a74fbf4394989b73.png?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n932320b8c697",
-          "author": null,
-          "description": "・サウナ最強\n・通ってる銭湯結構貧乏くさいところなんだけど、だんだん居心地良くなってきた　サウナから上がったあとの気持ちよさで印象が形作られてるから\n・実写の広告全部ぬくぬくにぎりめしの絵にしてほしい\n・「グミ・チョコレート・パイン」と「いちごの入ったソーダ水」は似ている\n・サブスクでいきなり娯楽見放題になったみたいな風潮あるけどゼロ年代にDVD借り放題プランみたいなのあったよね\n\n続きをみる",
-          "link": "https://note.com/sizes/n/n932320b8c697",
-          "publishedOn": "2022-04-22T09:44:43.000Z",
-          "wordCount": null,
-          "title": "日記:22/4/22",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/76970903/rectangle_large_type_2_f17e6bc53b4cae56ee61c6f4656dfaa7.png?width=800"
         }
       ]
     },
@@ -10878,6 +10868,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2022-07-21-bash-special-parameters-expansion",
+          "author": null,
+          "description": "Bashで、\"$@\" のように二重引用符の中でこの特殊なパラメーターを展開すると、普通の変数展開とは異なり、word-splittingが有効な状況においては、実際には中身がwordごとに \"$1\" \"$2\" \"$3\" というように分かれて展開されるらしい。",
+          "link": "https://r7kamura.com/articles/2022-07-21-bash-special-parameters-expansion",
+          "publishedOn": "2022-07-20T15:00:00.000Z",
+          "wordCount": null,
+          "title": "Bashの$@の変数展開",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2022-07-18-release-notes-management",
           "author": null,
