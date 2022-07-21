@@ -2,10 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-21T10:02:05.980Z</updated>
+    <updated>2022-07-21T11:01:47.027Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[CVE-2022-32224（Railsの脆弱性）を試す]]></title>
+        <id>hatenablog://entry/4207112889901100820</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2022/07/21/192352"/>
+        <updated>2022-07-21T10:23:52.000Z</updated>
+        <summary type="html"><![CDATA[前回の記事は割と濃い味付けでしたが、今回は薄味です。
+脆弱性自体は簡単なやつなのですが、調べている過程でRuby 3.1からYAMLのパースが安全になったことを知ったのでその共有がてら書きました。最近はあまりRubyを触る機会がなかったのでリハビリを兼ねて触っているところもあり、間違いがあれば教えて下さい。
+要約
+背景
+RubyのYAML.load
+Railsのデシリアライゼーションを試す
+準備
+クラスの復元
+任意コード実行
+まとめ
+要約
+Rubyの YAML.load （正確には Psych.load ）をユーザ入力など信頼できない値に対して実行するのは危険でした。
+Do not use YAML to load untrusted data. Doing so is unsafe and could allow malicious input to execute arbitrary code inside your application. Please see doc/security.rdoc for more information.
+
+
+Module: YAML (Ruby 3.1.0)
+YAMLのタグとして !ruby/object:Foo のように指定されたクラス等を復元するため、いわゆる「安全でないデシリアライゼージョン」になり、結果として任意コード実行に繋がる可能性があります。これを防ぐために YAML.safe_load が提供されていたのですが、Ruby 3.1からは YAML.load のデフォルトが YAML.safe_load に変更されました。つまりデフォルトで安全になりました。 safe_load では任意オブジェクトの読み込みが無効化され、デフォルトで許可された複数のクラスと明示的に指定されたクラスのみが復元可能になります。
+今後はRu…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[クックパッドマートアプリのログインの裏側〜Android アプリの実装を添えて〜]]></title>
         <id>hatenablog://entry/4207112889901065019</id>

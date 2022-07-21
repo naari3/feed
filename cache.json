@@ -3841,7 +3841,23 @@
       "title": "knqyf263's blog",
       "feedUrl": "https://knqyf263.hatenablog.com/rss",
       "siteUrl": "https://knqyf263.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/4207112889901100820",
+          "author": null,
+          "description": "前回の記事は割と濃い味付けでしたが、今回は薄味です。\n脆弱性自体は簡単なやつなのですが、調べている過程でRuby 3.1からYAMLのパースが安全になったことを知ったのでその共有がてら書きました。最近はあまりRubyを触る機会がなかったのでリハビリを兼ねて触っているところもあり、間違いがあれば教えて下さい。\n要約\n背景\nRubyのYAML.load\nRailsのデシリアライゼーションを試す\n準備\nクラスの復元\n任意コード実行\nまとめ\n要約\nRubyの YAML.load （正確には Psych.load ）をユーザ入力など信頼できない値に対して実行するのは危険でした。\nDo not use YAML to load untrusted data. Doing so is unsafe and could allow malicious input to execute arbitrary code inside your application. Please see doc/security.rdoc for more information.\n\n\nModule: YAML (Ruby 3.1.0)\nYAMLのタグとして !ruby/object:Foo のように指定されたクラス等を復元するため、いわゆる「安全でないデシリアライゼージョン」になり、結果として任意コード実行に繋がる可能性があります。これを防ぐために YAML.safe_load が提供されていたのですが、Ruby 3.1からは YAML.load のデフォルトが YAML.safe_load に変更されました。つまりデフォルトで安全になりました。 safe_load では任意オブジェクトの読み込みが無効化され、デフォルトで許可された複数のクラスと明示的に指定されたクラスのみが復元可能になります。\n今後はRu…",
+          "link": "https://knqyf263.hatenablog.com/entry/2022/07/21/192352",
+          "publishedOn": "2022-07-21T10:23:52.000Z",
+          "wordCount": null,
+          "title": "CVE-2022-32224（Railsの脆弱性）を試す",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "打ち首こくまろ",

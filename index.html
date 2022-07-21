@@ -78,6 +78,43 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank"
+              rel="noopener">knqyf263&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">CVE-2022-32224（Railsの脆弱性）を試す</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2022/07/21/192352" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前回の記事は割と濃い味付けでしたが、今回は薄味です。
+脆弱性自体は簡単なやつなのですが、調べている過程でRuby 3.1からYAMLのパースが安全になったことを知ったのでその共有がてら書きました。最近はあまりRubyを触る機会がなかったのでリハビリを兼ねて触っているところもあり、間違いがあれば教えて下さい。
+要約
+背景
+RubyのYAML.load
+Railsのデシリアライゼーションを試す
+準備
+クラスの復元
+任意コード実行
+まとめ
+要約
+Rubyの YAML.load （正確には Psych.load ）をユーザ入力など信頼できない値に対して実行するのは危険でした。
+Do not use YAML to load untrusted data. Doing so is unsafe and could allow malicious input to execute arbitrary code inside your application. Please see doc/security.rdoc for more information.
+
+
+Module: YAML (Ruby 3.1.0)
+YAMLのタグとして !ruby/object:Foo のように指定されたクラス等を復元するため、いわゆる「安全でないデシリアライゼージョン」になり、結果として任意コード実行に繋がる可能性があります。これを防ぐために YAML.safe_load が提供されていたのですが、Ruby 3.1からは YAML.load のデフォルトが YAML.safe_load に変更されました。つまりデフォルトで安全になりました。 safe_load では任意オブジェクトの読み込みが無効化され、デフォルトで許可された複数のクラスと明示的に指定されたクラスのみが復元可能になります。
+今後はRu…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
               rel="noopener">クックパッド開発者ブログ</a></h3>
           <section class="articles-per-source">
@@ -24290,7 +24327,7 @@ FKA twigs - Tears In The Club (feat. The Weeknd)</span>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-07-21T10:02:05.907Z">2022-07-21T10:02:05.907Z</time>
+    <time id="build-timestamp" datetime="2022-07-21T11:01:46.941Z">2022-07-21T11:01:46.941Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
