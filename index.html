@@ -74,6 +74,44 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-07-21">2022-07-21</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">クックパッドマートアプリのログインの裏側〜Android アプリの実装を添えて〜</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/cookpad-mart-login-android" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。クックパッドマートの Android アプリを開発しています、門田です。
+1日目: クックパッドマートを支えるアカウントたち - クックパッド開発者ブログ
+クックパッドマートアプリにおけるログイン体験の実現
+今回は、2日目の記事の中であった「ログイン画面の状態管理」について、実際の Android アプリの実装の紹介を交えながら説明します。
+おさらい
+クックパッドマートにログイン機能が導入されました。
+これは、メールアドレスや電話番号を利用してクックパッドのユーザーを作成して、そのユーザーにログインすることで、機種変更時などにユーザーデータを引き継げるようにするものでした。
+その際、ログイン前のユーザーデータをログイン後のユーザーに統合する必要があり、その処理が非同期で行われるために画面の見せ方などを工夫しているという話を前日の記事でご紹介しています。
+クックパッドマートでは、アプリを利用し始める際に「受け取り場所」を設定する必要があります。これは、サービスの特性上それぞれの「受け取り場所」によってその日配送できる（注文できる）商品が異なる場合があり、どういう商品が受け取れるのかをユーザーに正しく見せるために設定しています。
+たとえばここで、ログイン先のユーザーが一度もクックパッドマートを利用したことがないとします。
+その場合、ユーザーデータを統合する処理が非同期で行われているため、ログインをしたときにユーザーの「受け取り場所」が一時的に設定されていない状態になってしまいます。
+このままアプリを利用するためには、もう一度ユーザーに「受け取り場所」を設定してもらう必要があります。しかし、それではユーザーの行動を阻害してしまうことになり、サービスのコアの体験を損なってしまうことが懸念として挙げられていました。
+
+そこで、「ログイン時に非同期のデータ統合処理が完了する…</span>
+                  </div>
+                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-07-20">2022-07-20</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -24402,7 +24440,7 @@ microsoftタブからはyoutubeとgoogleは見られるけど再生だけでき�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-07-21T08:02:05.225Z">2022-07-21T08:02:05.225Z</time>
+    <time id="build-timestamp" datetime="2022-07-21T09:02:29.345Z">2022-07-21T09:02:29.345Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
