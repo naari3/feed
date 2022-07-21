@@ -10859,6 +10859,16 @@
       "siteUrl": "https://r7kamura.com/",
       "articles": [
         {
+          "id": "https://r7kamura.com/articles/2022-07-21-chrome-extension-in-20-min",
+          "author": null,
+          "description": "20分でつくるChrome拡張 (字幕解説付き) という動画をYouTubeに投稿した。",
+          "link": "https://r7kamura.com/articles/2022-07-21-chrome-extension-in-20-min",
+          "publishedOn": "2022-07-20T15:00:00.000Z",
+          "wordCount": 64,
+          "title": "20分でつくるChrome拡張",
+          "imageUrl": null
+        },
+        {
           "id": "https://r7kamura.com/articles/2022-07-21-bash-special-parameters-expansion",
           "author": null,
           "description": "Bashで、\"$@\" のように二重引用符の中でこの特殊なパラメーターを展開すると、普通の変数展開とは異なり、word-splittingが有効な状況においては、実際には中身がwordごとに \"$1\" \"$2\" \"$3\" というように分かれて展開されるらしい。",
