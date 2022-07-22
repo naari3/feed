@@ -5460,6 +5460,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889901124148",
+          "author": null,
+          "description": "こんにちは、買物プロダクト開発部の岸谷です。\nクックパッドマートという生鮮 EC サービスのバックエンドエンジニアをやっています。\nこの記事は「クックパッドマートを支えるアカウントたち」の連載記事4日目です。\n1日目: クックパッドマートを支えるアカウントたち - クックパッド開発者ブログ\n2日目: クックパッドマートアプリにおけるログイン体験の実現\n3日目: クックパッドマートアプリのログインの裏側〜Android アプリの実装を添えて〜\n今回は、2-3 日目の記事にあったログイン機能にまつわるバックエンドの仕組みについて紹介していきます。\nユーザー登録無しでもアプリが使える、けど…\nクックパッドマートのアプリはユーザー登録しなくても、アプリをインストールして、商品を選んで、受け取り場所を選択して、購入ボタンを押せば商品を購入することができます。\nそしてこの情報は揮発することなく、前回買った商品を確認したり、次回のお買い物で同じ受け取り場所を使ったりすることができます。\n当然ながらこういったユーザー情報はサーバーに格納されており、そのユーザー情報は iOS/Android の端末と紐付けられています。\n端末と直接紐付いたユーザー\nこの認証の仕組みはユーザーにとって手軽なのがいいところですが、ユーザーが機種変更するときに情報を引き継ぐことができないという問題がありました。\nそこでユーザーに明示的にアカウントを作成してもらい、そのアカウントで認証することによって、端末と切り離したユーザー情報を保持できるようにしました。\nこの仕組みをログインと呼んでいます。\nログインユーザー\nログインとアカウント統合\nユーザーに作成してもらったアカウントにユーザー情報を紐付けることによって、ユーザーは機種変更してもユーザー情報を持ち越すことができるようになりました。\nですが、ログインするとき、…",
+          "link": "https://techlife.cookpad.com/entry/cookpad-mart-accounts-login-server",
+          "publishedOn": "2022-07-22T03:00:00.000Z",
+          "wordCount": null,
+          "title": "クックパッドマートにおけるアカウント統合",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/d/daichi-kishitani/20220721/20220721192726.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/d/daichi-kishitani/20220721/20220721192726.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889901065019",
           "author": null,
           "description": "こんにちは。クックパッドマートの Android アプリを開発しています、門田です。\n1日目: クックパッドマートを支えるアカウントたち - クックパッド開発者ブログ\nクックパッドマートアプリにおけるログイン体験の実現\n今回は、2日目の記事の中であった「ログイン画面の状態管理」について、実際の Android アプリの実装の紹介を交えながら説明します。\nおさらい\nクックパッドマートにログイン機能が導入されました。\nこれは、メールアドレスや電話番号を利用してクックパッドのユーザーを作成して、そのユーザーにログインすることで、機種変更時などにユーザーデータを引き継げるようにするものでした。\nその際、ログイン前のユーザーデータをログイン後のユーザーに統合する必要があり、その処理が非同期で行われるために画面の見せ方などを工夫しているという話を前日の記事でご紹介しています。\nクックパッドマートでは、アプリを利用し始める際に「受け取り場所」を設定する必要があります。これは、サービスの特性上それぞれの「受け取り場所」によってその日配送できる（注文できる）商品が異なる場合があり、どういう商品が受け取れるのかをユーザーに正しく見せるために設定しています。\nたとえばここで、ログイン先のユーザーが一度もクックパッドマートを利用したことがないとします。\nその場合、ユーザーデータを統合する処理が非同期で行われているため、ログインをしたときにユーザーの「受け取り場所」が一時的に設定されていない状態になってしまいます。\nこのままアプリを利用するためには、もう一度ユーザーに「受け取り場所」を設定してもらう必要があります。しかし、それではユーザーの行動を阻害してしまうことになり、サービスのコアの体験を損なってしまうことが懸念として挙げられていました。\n\nそこで、「ログイン時に非同期のデータ統合処理が完了する…",
@@ -10764,26 +10779,6 @@
           "wordCount": 261,
           "title": "Rustで設定値を持つにはどうしたらいいですか",
           "imageUrl": "https://KeenS.github.io/images/ogp/post/Rustdesetteichiwomotsunihadoushitaraiidesuka.png"
-        },
-        {
-          "id": "https://KeenS.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/",
-          "author": null,
-          "description": "κeenです。fcitxユーザになってfcitx-skkの設定頑張ってるので記録に残します。",
-          "link": "https://keens.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/",
-          "publishedOn": "2022-04-23T15:21:58.000Z",
-          "wordCount": 141,
-          "title": "fcitx-skkで変換/無変換キーで日本語/ラテンを切り替える",
-          "imageUrl": "https://KeenS.github.io/images/ogp/post/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru.png"
-        },
-        {
-          "id": "https://KeenS.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/",
-          "author": null,
-          "description": "κeenです。fcitxユーザになってfcitx-skkの設定頑張ってるので記録に残します。",
-          "link": "https://KeenS.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/",
-          "publishedOn": "2022-04-23T15:21:58.000Z",
-          "wordCount": null,
-          "title": "fcitx-skkで変換/無変換キーで日本語/ラテンを切り替える",
-          "imageUrl": null
         }
       ]
     },

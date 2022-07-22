@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-22T02:46:48.581Z</updated>
+    <updated>2022-07-22T03:35:33.126Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[クックパッドマートにおけるアカウント統合]]></title>
+        <id>hatenablog://entry/4207112889901124148</id>
+        <link href="https://techlife.cookpad.com/entry/cookpad-mart-accounts-login-server"/>
+        <updated>2022-07-22T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、買物プロダクト開発部の岸谷です。
+クックパッドマートという生鮮 EC サービスのバックエンドエンジニアをやっています。
+この記事は「クックパッドマートを支えるアカウントたち」の連載記事4日目です。
+1日目: クックパッドマートを支えるアカウントたち - クックパッド開発者ブログ
+2日目: クックパッドマートアプリにおけるログイン体験の実現
+3日目: クックパッドマートアプリのログインの裏側〜Android アプリの実装を添えて〜
+今回は、2-3 日目の記事にあったログイン機能にまつわるバックエンドの仕組みについて紹介していきます。
+ユーザー登録無しでもアプリが使える、けど…
+クックパッドマートのアプリはユーザー登録しなくても、アプリをインストールして、商品を選んで、受け取り場所を選択して、購入ボタンを押せば商品を購入することができます。
+そしてこの情報は揮発することなく、前回買った商品を確認したり、次回のお買い物で同じ受け取り場所を使ったりすることができます。
+当然ながらこういったユーザー情報はサーバーに格納されており、そのユーザー情報は iOS/Android の端末と紐付けられています。
+端末と直接紐付いたユーザー
+この認証の仕組みはユーザーにとって手軽なのがいいところですが、ユーザーが機種変更するときに情報を引き継ぐことができないという問題がありました。
+そこでユーザーに明示的にアカウントを作成してもらい、そのアカウントで認証することによって、端末と切り離したユーザー情報を保持できるようにしました。
+この仕組みをログインと呼んでいます。
+ログインユーザー
+ログインとアカウント統合
+ユーザーに作成してもらったアカウントにユーザー情報を紐付けることによって、ユーザーは機種変更してもユーザー情報を持ち越すことができるようになりました。
+ですが、ログインするとき、…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220721「オモコロチャンネルの好きな回　その１」]]></title>
         <id>hatenablog://entry/4207112889901240892</id>
@@ -16967,26 +16995,6 @@ Amazon
 つまり React 単体と Next の差分をまとめる。 React…]]></summary>
         <author>
             <name>Your Site's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[fcitx-skkで変換/無変換キーで日本語/ラテンを切り替える]]></title>
-        <id>https://KeenS.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/</id>
-        <link href="https://keens.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/"/>
-        <updated>2022-04-23T15:21:58.000Z</updated>
-        <summary type="html"><![CDATA[κeenです。fcitxユーザになってfcitx-skkの設定頑張ってるので記録に残します。]]></summary>
-        <author>
-            <name>κeenのHappy Hacκing Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[fcitx-skkで変換/無変換キーで日本語/ラテンを切り替える]]></title>
-        <id>https://KeenS.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/</id>
-        <link href="https://KeenS.github.io/blog/2022/04/24/fcitx_skkdehenkan_muhenkanki_denihongo_ratenwokirikaeru/"/>
-        <updated>2022-04-23T15:21:58.000Z</updated>
-        <summary type="html"><![CDATA[κeenです。fcitxユーザになってfcitx-skkの設定頑張ってるので記録に残します。]]></summary>
-        <author>
-            <name>κeenのHappy Hacκing Blog</name>
         </author>
     </entry>
 </feed>
