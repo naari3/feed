@@ -5854,21 +5854,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220504/20220504135909.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438085867520",
-          "author": null,
-          "description": "ども、@kimihom です。\n\n先日の TwilioJP-UG Online Vol.6 はモバイル特集。私からは iOS CallKit と Twilio Voice iOS 徹底攻略として話をしたので、こちらの内容をブログに記しておこう。\nなお、今回のスライドはかなりコアな iOS CallKit 内容となっており、実際に CallKit x Twilio Voice iOS を開発した人をターゲットとしている。\n資料\n speakerdeck.com\nCallKit の役割\nCallKit は iPhone/iPad における通話(電話/ビデオ)のやりとりを管理するプラットフォームと言える。CallKit を用いた実装をすると、他のCallKitアプリとうまく連携して、ユーザー体験をより良くさせることが可能だ。例えば LINE 通話中に自分のiOSアプリから着信が来た時、その着信に出るか、今のLINE通話を続けるかの選択などが可能になる。\n\nそして CallKit UI により、UIの実装はiOS側で共通のものが使えるようになる。ユーザーはスリープ状態でキーロックをかけていても、着信が来た時に着信を鳴らすことが可能になる。iOS側でキーロックをかけていても音声をミュートする、音量を上げる、キーパッドを入力するなどの動作を動かすことができる。CallKit UI で通話中の右下のエリアには、呼び出し元のアプリボタンが出てきているので、それをタップしてパスコードを入力すると、自前アプリを起動させることができる。\nTwilio Voice SDK\nTwilio Voice SDK の構成についてスライドに掲示している。\n自前アプリの中に Twilio Voice SDK を埋め込み、そのTwilio Voice SDK には実際に通話した時のオブジェクト(TVOCall)…",
-          "link": "https://www.bokukoko.info/entry/2022/04/24/151955",
-          "publishedOn": "2022-04-24T06:19:55.000Z",
-          "wordCount": 364,
-          "title": "iOS CallKit と Twilio Voice iOS 徹底攻略",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg"
         }
       ]
     },
@@ -10754,26 +10739,6 @@
           "wordCount": 351,
           "title": "Dropboxにtarを使ったバックアップを毎週取る",
           "imageUrl": "https://KeenS.github.io/images/ogp/post/tarwotsukattabakkuappuwomaishuutoru.png"
-        },
-        {
-          "id": "https://KeenS.github.io/blog/2022/04/24/rustdesetteichiwomotsunihadoushitaraiidesuka/",
-          "author": null,
-          "description": "κeenです。Rustではじめてアプリケーションを書くときに困りがちなことの1つにグローバルな値を持つにはどうしたらいいか分からないというのがあるようです。\nその書き方を何パターンか紹介しできたらなと。\n一応この記事には元ネタというかインスパイア元があり、以下のリポジトリも見ながら書かれています。\nhttps://github.com/paulkernfeld/global-data-in-rust",
-          "link": "https://keens.github.io/blog/2022/04/24/rustdesetteichiwomotsunihadoushitaraiidesuka/",
-          "publishedOn": "2022-04-24T06:54:37.000Z",
-          "wordCount": 305,
-          "title": "Rustで設定値を持つにはどうしたらいいですか",
-          "imageUrl": "https://KeenS.github.io/images/ogp/post/Rustdesetteichiwomotsunihadoushitaraiidesuka.png"
-        },
-        {
-          "id": "https://KeenS.github.io/blog/2022/04/24/rustdesetteichiwomotsunihadoushitaraiidesuka/",
-          "author": null,
-          "description": "κeenです。Rustではじめてアプリケーションを書くときに困りがちなことの1つにグローバルな値を持つにはどうしたらいいか分からないというのがあるようです。\nその書き方を何パターンか紹介しできたらなと。\n一応この記事には元ネタというかインスパイア元があり、以下のリポジトリも見ながら書かれています。\nhttps://github.com/paulkernfeld/global-data-in-rust",
-          "link": "https://KeenS.github.io/blog/2022/04/24/rustdesetteichiwomotsunihadoushitaraiidesuka/",
-          "publishedOn": "2022-04-24T06:54:37.000Z",
-          "wordCount": 261,
-          "title": "Rustで設定値を持つにはどうしたらいいですか",
-          "imageUrl": "https://KeenS.github.io/images/ogp/post/Rustdesetteichiwomotsunihadoushitaraiidesuka.png"
         }
       ]
     },
