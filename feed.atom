@@ -2,10 +2,94 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-25T17:06:17.636Z</updated>
+    <updated>2022-07-25T18:01:54.824Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ISUCON12予選にRubyで出場して8位で予選通過した（ソレイユ）]]></title>
+        <id>hatenablog://entry/4207112889902648885</id>
+        <link href="https://diary.hatenablog.jp/entry/2022/07/26/022213"/>
+        <updated>2022-07-25T17:22:13.000Z</updated>
+        <summary type="html"><![CDATA[霧矢あおい（KOBA789）です。
+タイトルのとおり、ISUCON12予選に Ruby で出場して8位で予選通過しました。最終スコアは34635(ベストと等しい)です。
+本戦出場は ISUCON9 ぶり2回目です。
+チーム「ソレイユ」
+今年は私の多忙もあってチーム解散の危機だったんですが（チームメイトにはご迷惑をおかけしました）、無事いつものチームで出場することができました。
+ひとりチームからソレイユへの移籍に際して運営さんにお手伝いいただき、無事移籍を成功させたときの様子。
+というわけでメンバーは以下:
+- 星宮いちご（osyoyu id:tomo_ari）
+- 霧矢あおい（KOBA789 id:koba789）
+- 紫吹蘭（s4ichi id:everysick）
+アイカツ劇場版公開おめでとうございます。忙しくてまだ観られていません。
+たたかいのきろく
+うちのチームは例によって Git をほぼ使っていないので正確な記録はないのですが、今回は私が ToDo リストを書きながらマネージャーっぽいことをしていたのでそれをベースに書きます。
+10:00 競技開始
+
+
+KOBA789 & s4ichi: レギュレーション読み合わせ開始
+osyoyu: 競技用サーバーに入って開発環境構築開始
+10:20 頃
+
+
+KOBA789 & s4ichi: とりあえずブラウザでアプリケーションを触ってメンタルモデルを構築
+10:30 頃
+
+
+KOBA789 & s4ichi: とりあえずコードを上から下まで流し読み。雰囲気を掴む
+KOBA789: 「SQLite3 がいつもの戦い方を阻害するので MySQL への移行を視野に入れた方がいい」
+10:50
+
+
+osyoyu: 開発環境構築完了
+all: KOBA789 から osyoyu へ、課題のアプリケーションのメンタルモデルを共有
+osy…]]></summary>
+        <author>
+            <name>Write and Run</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ISUCON12予選にRubyで出場して8位で予選通過した（ソレイユ）]]></title>
+        <id>hatenablog://entry/4207112889902648790</id>
+        <link href="https://diary.hatenablog.jp/entry/2022/07/26/022052"/>
+        <updated>2022-07-25T17:20:52.000Z</updated>
+        <summary type="html"><![CDATA[霧矢あおい（KOBA789）です。
+タイトルのとおり、ISUCON12予選に Ruby で出場して8位で予選通過しました。最終スコアは34635(ベストと等しい)です。
+本戦出場は ISUCON9 ぶり2回目です。
+チーム「ソレイユ」
+今年は私の多忙もあってチーム解散の危機だったんですが（チームメイトにはご迷惑をおかけしました）、無事いつものチームで出場することができました。
+ひとりチームからソレイユへの移籍に際して運営さんにお手伝いいただき、無事移籍を成功させたときの様子。
+というわけでメンバーは以下:
+星宮いちご（osyoyu id:tomo_ari）
+霧矢あおい（KOBA789 id:koba789）
+紫吹蘭（s4ichi id:everysick）
+アイカツ劇場版公開おめでとうございます。忙しくてまだ観られていません。
+たたかいのきろく
+うちのチームは例によって Git をほぼ使っていないので正確な記録はないのですが、今回は私が ToDo リストを書きながらマネージャーっぽいことをしていたのでそれをベースに書きます。
+10:00 競技開始
+
+
+KOBA789 & s4ichi: レギュレーション読み合わせ開始
+osyoyu: 競技用サーバーに入って開発環境構築開始
+10:20 頃
+
+
+KOBA789 & s4ichi: とりあえずブラウザでアプリケーションを触ってメンタルモデルを構築
+10:30 頃
+
+
+KOBA789 & s4ichi: とりあえずコードを上から下まで流し読み。雰囲気を掴む
+KOBA789: 「SQLite3 がいつもの戦い方を阻害するので MySQL への移行を視野に入れた方がいい」
+10:50
+
+
+osyoyu: 開発環境構築完了
+all: KOBA789 から osyoyu へ、課題のアプリケーションのメンタルモデルを共有
+osyoyu: 「…]]></summary>
+        <author>
+            <name>Write and Run</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ラジオ：将来の夢とかいう謎概念]]></title>
         <id>https://note.com/sizes/n/n5334d06a95b3</id>
