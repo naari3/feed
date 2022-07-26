@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-26T02:52:52.874Z</updated>
+    <updated>2022-07-26T03:46:11.574Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,31 @@
         <summary type="html"><![CDATA[こんにちは！Merpay Engineering Engagement Team の mikichinです。8月23日（火）から「Merpay Tech Fest 2022」を開催します！ Merpay Tech Fes […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[クックパッドマートのドライバー向けWebサービスのアカウントの仕組み]]></title>
+        <id>hatenablog://entry/4207112889901284042</id>
+        <link href="https://techlife.cookpad.com/entry/cookpad-mart-accounts-driver"/>
+        <updated>2022-07-26T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[買物プロダクト開発部の中村です。クックパッドマートという生鮮食品のECサービスでサーバーサイドエンジニアとして流通のシステム開発に携わっています。
+この記事は、「クックパッドマートを支えるアカウントたち」連載6本目の記事で、ドライバー向けWebサービスのアカウントの仕組みについて紹介します。
+シリーズの全貌については以下の記事を御覧ください。
+クックパッドマートを支えるアカウントたち - クックパッド開発者ブログ
+クックパッドマートでは実際に商品を購入するユーザーはもちろんのこと、商品を販売する販売者や、販売者からユーザーまで商品を運ぶドライバーなど様々な立場の人が関わってサービスが成り立っています。
+それぞれの立場の人に向けて異なるシステムを開発して提供していますが、今回はその中でもドライバーが配送を行うために利用するサービスの概要とアカウントの取り扱い方について紹介します。
+ドライバー向けのサービス
+ドライバーは商品を届けるために、いつ、何を、どこから、どこに運ぶか知る必要があります。これらの情報をドライバーに提供するため専用のWebサービスを開発しています。商品が流通していく過程では複数の流通経路を辿っており、各流通経路で異なる運び方が必要になるため、それぞれ別のドライバーが担当し、Webサービスも流通経路毎に用意しています。
+こちらの記事でより詳細に紹介しています。
+
+特性と制限
+前述のドライバー向けWebサービスの要件を満たすため、アカウントは次のような特性や制限があります。
+全てのアカウントを管理
+運送会社のドライバーに対して個別にアカウントを発行する必要があります。新しい担当ドライバーに対してアクセスする許可を与えたり、担当から外れたドライバーはアクセスできないようにしたりと細かく制御する必要があります。
+流通経路別のアクセス権限をつける
+流通経路別に別のサー…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
