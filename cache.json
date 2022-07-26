@@ -5180,21 +5180,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1630045901186054"
-        },
-        {
-          "id": "hatenablog://entry/13574176438087101122",
-          "author": null,
-          "description": "はてなブログでは、日々さまざまな機能修正・改善を行っています。多くのユーザーさまに関係する機能は、この開発ブログにて個別にお知らせしています。その一方で、目に見えづらい改善や、影響する方が少ない機能の修正も進めています。本記事では、2022年4月に実施した機能修正・改善をダイジェストでお届けします。\n細かな機能修正・改善\n1. Amazon商品紹介のカテゴリーにPrime Videoを追加しました\n編集サイドバーのAmazon商品紹介で、Prime Videoの商品情報を検索して貼り付けることができるようになりました。\n2. 複数のブログタグをスペース区切りで入力できるようになりました\nこれまでは記事に対して複数のブログタグをつけたいときに、スペース区切りで入力すると1つのブログタグとして扱っておりましたが、スペース区切りで入力しても複数のブログタグとして入力できるようになりました。\n\n3. 画像貼り付け時に不要なalt属性を入れないようにしました\n写真を投稿からの画像貼り付け時に詳細設定から画像にalt属性を指定しなかった場合に、これまでは alt=\"f:id:user~~~\" を挿入してましたが、alt属性を含めないようにしました。\nf:id:user~~~ という内容は画像の代替テキストとして意味のあるものではなく、指定しないほうがアクセシビリティの向上につながると判断したためです。\n（参考情報）alt属性を指定する場合、どのような内容を指定すればよいかについては下記ドキュメントをご参照ください。\njis8341.net\n4. 見たままモードでdl要素の子要素にdiv要素が使えるようになりました\n見たままモードの「HTML編集」タブでdl要素の子要素にdiv要素を入れると、div以外が消えてしまう挙動になっておりましたが、使えるようにしました。\n\n（参考情報）dl要素内でのdiv要素の使い方については下記ドキュメントの「名前と値のグループを div 要素で包む」 をご参照ください。\ndeveloper.mozilla.org",
-          "link": "https://staff.hatenablog.com/entry/2022/04/28/182526",
-          "publishedOn": "2022-04-28T09:25:26.000Z",
-          "wordCount": null,
-          "title": "はてなブログの2022年4月の機能修正・改善をお知らせします（4件）",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20220428/20220428164204.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20220428/20220428164204.png"
         }
       ]
     },
@@ -9325,16 +9310,6 @@
           "wordCount": 52,
           "title": "日記:22/4/28",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/77416535/rectangle_large_type_2_0d9b7cd141eefdf05d56322252419933.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n3a1bba8b0caf",
-          "author": null,
-          "description": "一昨年の冬くらいに、何をするわけでもなく外をうろついてた時期があった。大抵は砧公園という世田谷の広い公園に行くか、駅前に行ってマクドナルドに寄ってせかせかとハンバーガーを食べるかのどちらかだった。多動癖が出ていたのだと思う。\nいつも通り徘徊をしていると、近くのつけ麺屋に並んでる客がいないことに気づいた。そのつけ麺屋は名店で、基本的に平日の昼間だろうが行列ができていたのだ。これはチャンスです。\n続きをみる",
-          "link": "https://note.com/sizes/n/n3a1bba8b0caf",
-          "publishedOn": "2022-04-28T09:25:45.000Z",
-          "wordCount": null,
-          "title": "エッセイ：全く同じ1日を繰り返すことの恐怖",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/77379784/rectangle_large_type_2_6a0332d434b8886abd5493c90b932764.png?width=800"
         }
       ]
     },
@@ -10518,16 +10493,6 @@
           "wordCount": 231,
           "title": "人手による確認を組み込んだ機械学習パイプラインの実現",
           "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2022/04/12039f04-after_architecture.png"
-        },
-        {
-          "id": "21012",
-          "author": null,
-          "description": "こんにちは、Product Securityチームの@gloriaです。前回は、昨年のAdvent Calendarイベントでセキュリティテストについて記事を書きました。 今回は、メルカリSecurity TeamのSe […]",
-          "link": "https://engineering.mercari.com/blog/entry/20220426-threat-modeling-at-mercari/",
-          "publishedOn": "2022-04-28T10:00:46.000Z",
-          "wordCount": null,
-          "title": "メルカリの脅威モデリングプロセス",
-          "imageUrl": null
         }
       ]
     },
