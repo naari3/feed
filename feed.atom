@@ -2,10 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-28T17:09:50.270Z</updated>
+    <updated>2022-07-28T18:02:16.089Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Fusion統合版 EagleでDXF Importする]]></title>
+        <id>hatenablog://entry/4207112889903773383</id>
+        <link href="https://fumimaker.net/entry/2022/07/29/023443?utm_source=feed"/>
+        <updated>2022-07-28T17:34:43.000Z</updated>
+        <summary type="html"><![CDATA[Eagleで基板外形にこだわるために貧弱なEagleのCADでやりたくない，ということありますよね．しかしulpのdxf importerがまともに使えずブチギレていたが，Fusionを使ってやればできることがわかった．Fusion360で書いたスケッチがそのままアウトラインとする事ができる．
+ちなみに，EagleのULP dxf importでお手軽にやる場合はこの辺が参考になる．(が，自分の場合は全然うまくいかなかった．一部の直線しか入らず曲線や直線が反映されない．パスの問題やグループ化？の問題，ポリゴンの問題やdxfの書き出しバージョンの問題などいろいろあるようだ．
+forums.autodesk.com
+todbot.com
+forum.freecadweb.org
+eagle dxf import problemとかで調べると色々でてくる．解決策はわかりませんでした・・・いろいろ試したけどダメでした．
+しかし，Fuision360を使うことで解決している例があり試してみた．
+環境
+Eagle (Fusion360統合版)
+Windows10
+Fusion360で図面を引く
+基板のアウトラインを引いていきます．
+
+関連付けのあるPCBを作成を選択
+基板にしたい部分を選択してOKを押しします
+
+
+基板が生成される
+基板が生成されます．これはPCBの3DViewという形になります．回路図やアートワークとは独立している状態です．
+
+関連付ける
+まずはこの3Dモデルを保存してやります．
+次にこの基板のリンクマークのボタンを押して作ってきた回路とリンクさせます．今回はtakakukeiというものを作ったのでこれとリンクします．
+なお，ここで間違えるとかなり面倒なことになるので気をつけましょう．(リンク解除ってどうやるの？)
+
+
+回路ができる
+するとこのようにアートワークをやる画面に行って形状が反映される．良い感じです．
+
+なお，上に同期できませんという，can't backannotate this operation的なEagle使いにとって悪魔のような文字列がでてきますが一度すべて保存してすべて閉じて開き直すと消えます．バグ？
+参考
+これはFusion360にインテグレートされる前のスタンドアロンのEagleでやる例．こっちのほうがちょっと大変ですね．
+
+
+
+まとめ
+統合版のEagleってどうなのと思いましたが，3D連携やライブラリの連携などいままで無理やりやってたところがシームレスになってわかりやすくなったと思います．また，ライブラリもこのPCには入ってるけどこのPCにはない，みたいなことが発生せず全部オンラインで同期できるようになったので便利ですね．ライセンスもFusionに含まれるようになったようです．
+ただし，DXF Importしたいだけでこれだけ大変なので，相変わらずのEagle節全開という感じでちょっと辛くなります．]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ラジオ:どうぶつの森を楽しそうにプレイする人に嫉妬している]]></title>
         <id>https://note.com/sizes/n/n105b376a04d9</id>
