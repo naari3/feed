@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-07-31T12:03:18.716Z</updated>
+    <updated>2022-07-31T13:08:48.574Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17616,51 +17616,6 @@ M3お疲れさまでした
 M3お疲れさまでした。無責任レコーズのブースにわざわざ足を運んで頂きありがとうございました、なんか久しぶりに色んな人に会えた感じがあったり、また今回からコロナ前のM3みたいに午前午後で分けるんじゃなくて一括にしたことも…]]></summary>
         <author>
             <name>思い出したら書きます</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022-05-02]]></title>
-        <id>hatenablog://entry/13574176438088606247</id>
-        <link href="https://commits.hatenablog.com/entry/2022/05/03/100001"/>
-        <updated>2022-05-03T01:00:01.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-Rails 7のリリースノートを読んでいて、Active Recordの変更が一部Active Jobのセクションに書かれていたのに気がついたので修正した。
-AR::Relation#mergeは、同じカラムに対するwhereがあった時は引数の方の条件で上書きする、という挙動を知った。
-User.where(name: 'foo', id: 1).where(id: 2)             # WHERE name = 'foo' AND id = 1 AND id = 2
-User.where(name: 'foo', id: 1).merge(User.where(id: 2)) # WHERE name = 'foo' AND id = 2
-
-
-
-mergeを使った場合もwhereを直接書いたのと同じ結果になると思っていたので驚いた。mergeは2つのクエリの積を取るようなメソッドだと誤解していた。
-AR::Relation#mergeはHash#mergeなどと同じような挙動をする、ということっぽい。
-この挙動は、Rails 7のリリースノートの#mergeの非互換を読んでいて知った。
-https://railsguides.jp/7_0_release_notes.html#active-record-%E4%B8%BB%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9]]></summary>
-        <author>
-            <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Karte.96 | 僕は後ろめたい]]></title>
-        <id>https://mangacross.jp/comics/yabai/101</id>
-        <link href="https://mangacross.jp/comics/yabai/101"/>
-        <updated>2022-05-03T01:00:00.000Z</updated>
-        <author>
-            <name>桜井のりお</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[結局、音声入力はSimejiと外部マイクの組み合わせに戻しています]]></title>
-        <id>hatenablog://entry/13574176438088680431</id>
-        <link href="https://katsumakazuyo.hatenablog.com/entry/2022/05/03/094244"/>
-        <updated>2022-05-03T00:42:44.000Z</updated>
-        <summary type="html"><![CDATA[半年以上、GoogleのPixel6に初めて搭載された句読点が自動で入るGoogleの音声入力を試してきましたが、結局Simejiにはかなわないと言う結論になってSimejiに戻しました。
-Pixel6の方でも、外部マイクを使うとそこそこましになったので、しばらく外部マイクで使っていたのですが、よく考えたら、Simejiと外部マイクの組み合わせの方がより正確なのではないかと思って試してみたところ、それが正解でして、今ではせっかく買ったPixel6ですが、結局Simejiで運用しています。
-Pixel6の音声入力はなぜか音声入力の時に半角スペースが山のように入ってしまうとか、あるいは語尾を一部聞き逃す、そして何と言っても厳しかったのが、文脈の中で正しい同音異語を選択してくれないことが多く、１パラグラフで1回ぐらいは修正が必要になってしまったのでちょっと実用的に厳しかったのです。
-また細かい話ですが、Simejiの場合にも音声入力をしてる時にかなり音声入力の波形が明確に見えるのですが、Pixel6の場合には輪っかがちょっとグラグラ動くぐらいなので、その音声フィードバックの仕組みもちょっと弱かったのです。
-まあ、いずれにしても、フットスイッチも手に入りましたし、外部マイクの組み合わせで非常に正確に入力できるということもわかりましたので、実用上問題はないのでしばらくはこの流れでいきたいと思います。
-どうせSimejiで入力するのであれば、Pixel6ではなくもっと安いAndroidで良かったのですが、まあこれはこれで色々試したので良しとしましょう。]]></summary>
-        <author>
-            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
         </author>
     </entry>
 </feed>

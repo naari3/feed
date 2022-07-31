@@ -1153,21 +1153,6 @@
             "length": "0"
           },
           "imageUrl": "https://m.media-amazon.com/images/I/510NqeMyfeL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438088606247",
-          "author": null,
-          "description": "github.com\nRails 7のリリースノートを読んでいて、Active Recordの変更が一部Active Jobのセクションに書かれていたのに気がついたので修正した。\nAR::Relation#mergeは、同じカラムに対するwhereがあった時は引数の方の条件で上書きする、という挙動を知った。\nUser.where(name: 'foo', id: 1).where(id: 2)             # WHERE name = 'foo' AND id = 1 AND id = 2\nUser.where(name: 'foo', id: 1).merge(User.where(id: 2)) # WHERE name = 'foo' AND id = 2\n\n\n\nmergeを使った場合もwhereを直接書いたのと同じ結果になると思っていたので驚いた。mergeは2つのクエリの積を取るようなメソッドだと誤解していた。\nAR::Relation#mergeはHash#mergeなどと同じような挙動をする、ということっぽい。\nこの挙動は、Rails 7のリリースノートの#mergeの非互換を読んでいて知った。\nhttps://railsguides.jp/7_0_release_notes.html#active-record-%E4%B8%BB%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9",
-          "link": "https://commits.hatenablog.com/entry/2022/05/03/100001",
-          "publishedOn": "2022-05-03T01:00:01.000Z",
-          "wordCount": 189,
-          "title": "2022-05-02",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -4055,21 +4040,6 @@
           "publishedOn": "2022-05-04T06:59:51.000Z",
           "wordCount": 196,
           "title": "都内、大型バイク運用のボトルネックは狭い駐輪場に尽きることが分かってきました",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438088680431",
-          "author": null,
-          "description": "半年以上、GoogleのPixel6に初めて搭載された句読点が自動で入るGoogleの音声入力を試してきましたが、結局Simejiにはかなわないと言う結論になってSimejiに戻しました。\nPixel6の方でも、外部マイクを使うとそこそこましになったので、しばらく外部マイクで使っていたのですが、よく考えたら、Simejiと外部マイクの組み合わせの方がより正確なのではないかと思って試してみたところ、それが正解でして、今ではせっかく買ったPixel6ですが、結局Simejiで運用しています。\nPixel6の音声入力はなぜか音声入力の時に半角スペースが山のように入ってしまうとか、あるいは語尾を一部聞き逃す、そして何と言っても厳しかったのが、文脈の中で正しい同音異語を選択してくれないことが多く、１パラグラフで1回ぐらいは修正が必要になってしまったのでちょっと実用的に厳しかったのです。\nまた細かい話ですが、Simejiの場合にも音声入力をしてる時にかなり音声入力の波形が明確に見えるのですが、Pixel6の場合には輪っかがちょっとグラグラ動くぐらいなので、その音声フィードバックの仕組みもちょっと弱かったのです。\nまあ、いずれにしても、フットスイッチも手に入りましたし、外部マイクの組み合わせで非常に正確に入力できるということもわかりましたので、実用上問題はないのでしばらくはこの流れでいきたいと思います。\nどうせSimejiで入力するのであれば、Pixel6ではなくもっと安いAndroidで良かったのですが、まあこれはこれで色々試したので良しとしましょう。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2022/05/03/094244",
-          "publishedOn": "2022-05-03T00:42:44.000Z",
-          "wordCount": 196,
-          "title": "結局、音声入力はSimejiと外部マイクの組み合わせに戻しています",
           "enclosure": {
             "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
             "type": "image/png",
@@ -11982,21 +11952,6 @@
             "type": "image/png"
           },
           "imageUrl": "https://mangacross.jp/images/episode/tvy4MaCnNfpdWp6hirXbjH3sr_bCZNLNO1L6s-iv7rc/episode_thumbnail/thumb_double.png?1653025288"
-        },
-        {
-          "id": "https://mangacross.jp/comics/yabai/101",
-          "author": "桜井のりお",
-          "description": "",
-          "link": "https://mangacross.jp/comics/yabai/101",
-          "publishedOn": "2022-05-03T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Karte.96 | 僕は後ろめたい",
-          "enclosure": {
-            "url": "https://mangacross.jp/images/episode/H5JW-aqUN65N5Qg9exfq-aPuLTGomcUP4ZdwPW7dfhs/episode_thumbnail/thumb_double.png?1651123786",
-            "length": "87697",
-            "type": "image/png"
-          },
-          "imageUrl": "https://mangacross.jp/images/episode/H5JW-aqUN65N5Qg9exfq-aPuLTGomcUP4ZdwPW7dfhs/episode_thumbnail/thumb_double.png?1651123786"
         }
       ]
     }
