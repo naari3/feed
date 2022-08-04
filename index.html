@@ -103,6 +103,37 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Node.jsのツールで--cacheフラグを実装するためのライブラリを書いた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/08/04/file-cache/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ESLint、Prettierなどは--cacheフラグという一度チェックしたファイルは、ファイルが変更されるまで再チェックしないキャッシュの仕組みを実装しています。
+同様の仕組みをtextlintを実装したことはありますが、file-entry-cacheを使い結構煩雑な実装が必要になります。ファイル変更を元に処理結果をキャッシュする仕組みはある程度定型化されているのに、毎回同じような実装をツールごとに書くのは微妙だなと思ったので、ライブラリを書きました。
+azu/file-cache: Node.js library that provide a cache for file metadata or file content.
+--cacheフラグの仕組み
+--cacheフラグの仕組みとしては、ファイルの内容のハッシュ値 or ファイルの更新時刻をキャッシュファイルとして保存して置きます。
+次回に実行する際には、キャッシュファイルと実際のファイルの情報を比較して、変更がなければ変更をスキップするという仕組みで、処理時間の短縮を目的にしています。
+たとえば、A.jsに対してLintする場合には、A.jsにLintの処理をしてパスした場合はキャッシュに保存しておきます。
+次回、LintしたときにA.jsの内容が変更されていない場合は、あらためてチェックはせずにそのままスキップします。
+これに加えて、強制的にキャッシュをクリアしたいパターンもあります。
+たとえば、ツール自体のバージョンを更新した場合は処理内容が変わる可能性があるので、キャッシュを利用せずに常に再チェックするのが正しいです。
+また、ツールの設定内容が変更された場合も処理結果が変わる可能性があるので、キャッシュを利用せずに常に再チェックするのが正しいです。
+@file-cacheでの実装
+@file-cacheは…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://niryuu.hatenablog.com/" target="_blank"
               rel="noopener">表道具</a></h3>
           <section class="articles-per-source">
@@ -24625,32 +24656,11 @@ nana-music.com
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://ytpmv.info" target="_blank"
-              rel="noopener">YTPMV.info</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Aviutl最強の(?)出力プラグイン「ffmpegOut」の使い方</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://ytpmv.info/how-to-use-ffmpegout" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>多数の形式の出力に対応したAviutlの出力プラグイン「ffmpegOUT」の導入方法から使用法、詳しい設定まで幅広く解説します。
-The post Aviutl最強の(?)出力プラグイン「ffmpegOut」の使い方 first appeared on YTPMV.info.</span>
-                  </div>
-                  <img src="https://ytpmv.info/wp-content/uploads/2022/05/2022-05-07_031244.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-08-04T14:01:53.962Z">2022-08-04T14:01:53.962Z</time>
+    <time id="build-timestamp" datetime="2022-08-04T15:02:02.807Z">2022-08-04T15:02:02.807Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

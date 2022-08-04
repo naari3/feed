@@ -10345,6 +10345,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2022/08/04/file-cache/",
+          "author": null,
+          "description": "ESLint、Prettierなどは--cacheフラグという一度チェックしたファイルは、ファイルが変更されるまで再チェックしないキャッシュの仕組みを実装しています。\n同様の仕組みをtextlintを実装したことはありますが、file-entry-cacheを使い結構煩雑な実装が必要になります。ファイル変更を元に処理結果をキャッシュする仕組みはある程度定型化されているのに、毎回同じような実装をツールごとに書くのは微妙だなと思ったので、ライブラリを書きました。\nazu/file-cache: Node.js library that provide a cache for file metadata or file content.\n--cacheフラグの仕組み\n--cacheフラグの仕組みとしては、ファイルの内容のハッシュ値 or ファイルの更新時刻をキャッシュファイルとして保存して置きます。\n次回に実行する際には、キャッシュファイルと実際のファイルの情報を比較して、変更がなければ変更をスキップするという仕組みで、処理時間の短縮を目的にしています。\nたとえば、A.jsに対してLintする場合には、A.jsにLintの処理をしてパスした場合はキャッシュに保存しておきます。\n次回、LintしたときにA.jsの内容が変更されていない場合は、あらためてチェックはせずにそのままスキップします。\nこれに加えて、強制的にキャッシュをクリアしたいパターンもあります。\nたとえば、ツール自体のバージョンを更新した場合は処理内容が変わる可能性があるので、キャッシュを利用せずに常に再チェックするのが正しいです。\nまた、ツールの設定内容が変更された場合も処理結果が変わる可能性があるので、キャッシュを利用せずに常に再チェックするのが正しいです。\n@file-cacheでの実装\n@file-cacheは…",
+          "link": "https://efcl.info/2022/08/04/file-cache/",
+          "publishedOn": "2022-08-04T12:38:00.000Z",
+          "wordCount": null,
+          "title": "Node.jsのツールで--cacheフラグを実装するためのライブラリを書いた",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2022/07/01/maintainer-month/",
           "author": null,
           "description": "2022年の6月は、GitHub主催でMaintainer Monthは、オープンソースのメンテナーが集まって情報共有したり、メンテナーを祝ったり、支援したりするイベントが行われていました。\nWelcome to Maintainer Month! 🎉 | The GitHub Blog\nMaintainer Monthに気づいたのはThank you to our maintainers | The GitHub Blogのとき(6/24)なのだったので、残り一週間でしたがオープンソースのメンテナンスとメンテナーについて色々書いていました。\nMaintainer Month: epubリーダーアプリ bi-epub-readerを作った | Web Scratch\nMaintainer Month: オープンソースをメンテナンスするコツ | Web Scratch\nMaintainer Month: なぜtextlintを作ったか | Web Scratch\n初めてでもわかる、GitHub Sponsorsでオープンソースを支援する方法\nオープンソースのメンテナーそのものに関する話って意外と書く機会がないので、ちょうどいい機会だと思って書いてみました。\nMaintainer Monthのイベントの目的もそうですが、メンテナーとしての自分の話を色々書いてみたので興味があったら読んでみてください。\nオープンソースのメンテナーがやっている仕事(タスク)\nMaintainer Monthは6月で終わったので、6月にやっていたオープンソースのメンテナンス関係のタスクを振り返ってみます。\n実際オープンソースのメンテナンスでどういうことやってるのかを参考になるかなーと思います。\n自分は色々なオープンソースをやるタイプなので、それぞれライブラリ/ツール/プロダクトなどで書いていきます。…",
@@ -11776,18 +11786,7 @@
       "title": "YTPMV.info",
       "feedUrl": "https://ytpmv.info/?feed=rss2",
       "siteUrl": "https://ytpmv.info",
-      "articles": [
-        {
-          "id": "https://ytpmv.info/?p=1264",
-          "author": "maimai",
-          "description": "多数の形式の出力に対応したAviutlの出力プラグイン「ffmpegOUT」の導入方法から使用法、詳しい設定まで幅広く解説します。\nThe post Aviutl最強の(?)出力プラグイン「ffmpegOut」の使い方 first appeared on YTPMV.info.",
-          "link": "https://ytpmv.info/how-to-use-ffmpegout",
-          "publishedOn": "2022-05-07T02:03:11.000Z",
-          "wordCount": 383,
-          "title": "Aviutl最強の(?)出力プラグイン「ffmpegOut」の使い方",
-          "imageUrl": "https://ytpmv.info/wp-content/uploads/2022/05/2022-05-07_031244.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "潮が舞い子が舞い",
