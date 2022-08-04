@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-04T12:02:05.912Z</updated>
+    <updated>2022-08-04T13:13:37.398Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[20220804]]></title>
+        <id>https://note.com/dak/n/n83b9138f88f3</id>
+        <link href="https://note.com/dak/n/n83b9138f88f3"/>
+        <updated>2022-08-04T13:03:01.000Z</updated>
+        <summary type="html"><![CDATA[今日は一日中雷雨で、寝るか起きるかしていた。
+午前中は母親を車に乗せて買い物に出かけた。
+午後は爆睡した。５時間くらい寝たと思う。雨がいい感じなんだよな。
+たぶん昔も雨降ってるときは寝てたと思う。気持ちがとてもいいので。
+起きて日記を書く。今日は本当に行ったことがない。
+昼飯はパスコのダブルメロンオンリー。結構カロリーがあるのでそれ食って寝ればちょうどいい感じになるってわけ。
+続きをみる]]></summary>
+        <author>
+            <name>okazsystem</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[UoPeopleのMSITとレジリエンスについて]]></title>
         <id>hatenablog://entry/4207112889905767969</id>
@@ -17527,45 +17543,6 @@ Residente - This is Not America
 あなたが…]]></summary>
         <author>
             <name>電子計算機舞踏音楽</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022-05-06]]></title>
-        <id>hatenablog://entry/13574176438089857868</id>
-        <link href="https://commits.hatenablog.com/entry/2022/05/07/100007"/>
-        <updated>2022-05-07T01:00:07.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-Active Record Validation のRails Guideを読んでいて、気になったところがいくつかあったのでPRした。
-上記Rails Guideを読んでいて、NumericalityValidatorがよくわからなかったので調べていた。
-Rails Guideで次のように書かれているところに引っかかった。
-それ以外の場合は、Floatを用いる数値の変換を試みます。Floatは、カラムの精度または15を用いてBigDecimalにキャストされます。
-https://railsguides.jp/active_record_validations.html#numericality
-
-
-原文だと以下のように書かれている
-Otherwise, it will try to convert the value to a number using Float. Floats are casted to BigDecimal using the column's precision value or 15.
-https://guides.rubyonrails.org/active_record_validations.html#numericality
-
-
-ここでは、「値をFloatに変換したあと、BigDecimalに変換する」と書かれている。
-Floatに変換した段階で情報が落ちるので、なぜ直接BigDecimalに変換しないのだろうと気になった。
-この実装は次のあたりにある。
-github.com
-どうやら'0.12345'のような値がこのvalidatorに渡ってきたときに、この「FloatにしてからBigDecimalにする」という処理を通りそうということがわかった。
-経緯を追っていると、次のPRが見つかった。
-github.com
-このPRでは、もともとKernel.BigDecimalを呼んでいたところで、Kernel.Floatを呼んだあとto_dを呼ぶように変更されている。その意図は、to_fを定義したPOROをこのvalidatorに渡したときにうまく動くようにするため、のよう。
-この挙動については、意図した挙動のように見える。次のドキュメントでは「Precision of Kernel.Float values are guaranteed up to 15 digits.」と言っていて、15以上の精度が保証されているとは言っていない。
-github.com
-また、Active Record側のコードを見ると、精度をFloat::DIG( == 15)で打ち切っている。
-github.com
-ということで、まあこれは意図した挙動なのではないかという気がしている。
-実際これが問題になるのは、'0.1234567890123456789'のような15桁を超える値がユーザーから送られてきて、かつそれを15桁を超える精度で比較したいときだけだと思う。validationという文脈ではそこまで細かい精度が必要になることはあまりない気がするので、問題にはなりづらい気がしている。
-ちなみに、DB上ではこの精度は15より大きい値が許されているので(Floatより高い精度で計算したいのだからそれはそうか)、例えば20桁の精度で定義したカラムを持っているRails appとかはなにか問題を踏んだりしないのだろうか、とかはちょっと気になる。
-www.postgresql.jp
-dev.mysql.com]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
 </feed>

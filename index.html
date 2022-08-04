@@ -78,6 +78,31 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank"
+              rel="noopener">okazsystem</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">20220804</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/dak/n/n83b9138f88f3" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今日は一日中雷雨で、寝るか起きるかしていた。
+午前中は母親を車に乗せて買い物に出かけた。
+午後は爆睡した。５時間くらい寝たと思う。雨がいい感じなんだよな。
+たぶん昔も雨降ってるときは寝てたと思う。気持ちがとてもいいので。
+起きて日記を書く。今日は本当に行ったことがない。
+昼飯はパスコのダブルメロンオンリー。結構カロリーがあるのでそれ食って寝ればちょうどいい感じになるってわけ。
+続きをみる</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://niryuu.hatenablog.com/" target="_blank"
               rel="noopener">表道具</a></h3>
           <section class="articles-per-source">
@@ -24711,60 +24736,11 @@ Residente - This is Not America
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2022-05-06</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/05/07/100007" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>github.com
-Active Record Validation のRails Guideを読んでいて、気になったところがいくつかあったのでPRした。
-上記Rails Guideを読んでいて、NumericalityValidatorがよくわからなかったので調べていた。
-Rails Guideで次のように書かれているところに引っかかった。
-それ以外の場合は、Floatを用いる数値の変換を試みます。Floatは、カラムの精度または15を用いてBigDecimalにキャストされます。
-https://railsguides.jp/active_record_validations.html#numericality
-
-
-原文だと以下のように書かれている
-Otherwise, it will try to convert the value to a number using Float. Floats are casted to BigDecimal using the column&#x27;s precision value or 15.
-https://guides.rubyonrails.org/active_record_validations.html#numericality
-
-
-ここでは、「値をFloatに変換したあと、BigDecimalに変換する」と書かれている。
-Floatに変換した段階で情報が落ちるので、なぜ直接BigDecimalに変換しないのだろうと気になった。
-この実装は次のあたりにある。
-github.com
-どうやら&#x27;0.12345&#x27;のような値がこのvalidatorに渡ってきたときに、この「FloatにしてからBigDecimalにする」という処理を通りそうということがわかった。
-経緯を追っていると、次のPRが見つかった。
-github.com
-このPRでは、もともとKernel.BigDecimalを呼んでいたところで、Kernel.Floatを呼んだあとto_dを呼ぶように変更されている。その意図は、to_fを定義したPOROをこのvalidatorに渡したときにうまく動くようにするため、のよう。
-この挙動については、意図した挙動のように見える。次のドキュメントでは「Precision of Kernel.Float values are guaranteed up to 15 digits.」と言っていて、15以上の精度が保証されているとは言っていない。
-github.com
-また、Active Record側のコードを見ると、精度をFloat::DIG( &#x3D;&#x3D; 15)で打ち切っている。
-github.com
-ということで、まあこれは意図した挙動なのではないかという気がしている。
-実際これが問題になるのは、&#x27;0.1234567890123456789&#x27;のような15桁を超える値がユーザーから送られてきて、かつそれを15桁を超える精度で比較したいときだけだと思う。validationという文脈ではそこまで細かい精度が必要になることはあまりない気がするので、問題にはなりづらい気がしている。
-ちなみに、DB上ではこの精度は15より大きい値が許されているので(Floatより高い精度で計算したいのだからそれはそうか)、例えば20桁の精度で定義したカラムを持っているRails appとかはなにか問題を踏んだりしないのだろうか、とかはちょっと気になる。
-www.postgresql.jp
-dev.mysql.com</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-08-04T12:02:05.796Z">2022-08-04T12:02:05.796Z</time>
+    <time id="build-timestamp" datetime="2022-08-04T13:13:37.329Z">2022-08-04T13:13:37.329Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -1183,21 +1183,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/P/Pocke/20220508/20220508111203.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438089857868",
-          "author": null,
-          "description": "github.com\nActive Record Validation のRails Guideを読んでいて、気になったところがいくつかあったのでPRした。\n上記Rails Guideを読んでいて、NumericalityValidatorがよくわからなかったので調べていた。\nRails Guideで次のように書かれているところに引っかかった。\nそれ以外の場合は、Floatを用いる数値の変換を試みます。Floatは、カラムの精度または15を用いてBigDecimalにキャストされます。\nhttps://railsguides.jp/active_record_validations.html#numericality\n\n\n原文だと以下のように書かれている\nOtherwise, it will try to convert the value to a number using Float. Floats are casted to BigDecimal using the column's precision value or 15.\nhttps://guides.rubyonrails.org/active_record_validations.html#numericality\n\n\nここでは、「値をFloatに変換したあと、BigDecimalに変換する」と書かれている。\nFloatに変換した段階で情報が落ちるので、なぜ直接BigDecimalに変換しないのだろうと気になった。\nこの実装は次のあたりにある。\ngithub.com\nどうやら'0.12345'のような値がこのvalidatorに渡ってきたときに、この「FloatにしてからBigDecimalにする」という処理を通りそうということがわかった。\n経緯を追っていると、次のPRが見つかった。\ngithub.com\nこのPRでは、もともとKernel.BigDecimalを呼んでいたところで、Kernel.Floatを呼んだあとto_dを呼ぶように変更されている。その意図は、to_fを定義したPOROをこのvalidatorに渡したときにうまく動くようにするため、のよう。\nこの挙動については、意図した挙動のように見える。次のドキュメントでは「Precision of Kernel.Float values are guaranteed up to 15 digits.」と言っていて、15以上の精度が保証されているとは言っていない。\ngithub.com\nまた、Active Record側のコードを見ると、精度をFloat::DIG( == 15)で打ち切っている。\ngithub.com\nということで、まあこれは意図した挙動なのではないかという気がしている。\n実際これが問題になるのは、'0.1234567890123456789'のような15桁を超える値がユーザーから送られてきて、かつそれを15桁を超える精度で比較したいときだけだと思う。validationという文脈ではそこまで細かい精度が必要になることはあまりない気がするので、問題にはなりづらい気がしている。\nちなみに、DB上ではこの精度は15より大きい値が許されているので(Floatより高い精度で計算したいのだからそれはそうか)、例えば20桁の精度で定義したカラムを持っているRails appとかはなにか問題を踏んだりしないのだろうか、とかはちょっと気になる。\nwww.postgresql.jp\ndev.mysql.com",
-          "link": "https://commits.hatenablog.com/entry/2022/05/07/100007",
-          "publishedOn": "2022-05-07T01:00:07.000Z",
-          "wordCount": 215,
-          "title": "2022-05-06",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -6514,6 +6499,16 @@
       "feedUrl": "https://note.com/dak/rss",
       "siteUrl": "https://note.com/dak",
       "articles": [
+        {
+          "id": "https://note.com/dak/n/n83b9138f88f3",
+          "author": null,
+          "description": "今日は一日中雷雨で、寝るか起きるかしていた。\n午前中は母親を車に乗せて買い物に出かけた。\n午後は爆睡した。５時間くらい寝たと思う。雨がいい感じなんだよな。\nたぶん昔も雨降ってるときは寝てたと思う。気持ちがとてもいいので。\n起きて日記を書く。今日は本当に行ったことがない。\n昼飯はパスコのダブルメロンオンリー。結構カロリーがあるのでそれ食って寝ればちょうどいい感じになるってわけ。\n続きをみる",
+          "link": "https://note.com/dak/n/n83b9138f88f3",
+          "publishedOn": "2022-08-04T13:03:01.000Z",
+          "wordCount": null,
+          "title": "20220804",
+          "imageUrl": null
+        },
         {
           "id": "https://note.com/dak/n/ncbd268d83632",
           "author": null,
