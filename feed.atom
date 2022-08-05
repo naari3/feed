@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-05T20:02:08.405Z</updated>
+    <updated>2022-08-05T21:01:54.856Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17331,37 +17331,6 @@ Amazon
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Chromeでネットの弱い環境を再現する方法]]></title>
-        <id>hatenablog://entry/13574176438090464879</id>
-        <link href="https://www.bokukoko.info/entry/2022/05/08/172659"/>
-        <updated>2022-05-08T08:26:59.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-とりわけ WebRTCを使ってリアルタイムな通話をしていると、ネット環境の弱いことが原因で、ろくに通話できないという問題が発生する。そのため、ネットの弱い環境を再現して動作を確認する必要が出てくる。本記事ではネットの弱い環境を簡単に設定できる方法を紹介しておく。
-Chrome console より設定の流れ
-1: Chrome consoleを起動する。
-Chromeページ内で右クリック > 検証
-
-
-2: 上部タブの >> より、Networkを選択
-
-3: No throttling のエリアをクリックしてAdd... で新規追加
-
-好きなようにセットできるが、およそネットワークの"弱い環境"は以下。
-Download: 10kbit/s
-Upload: 10kbit/s
-Latency: 1000ms
-4: 右上 x で戻り、No throttling のエリアを作成したネット環境に適用
-5: 確認後、戻すことをお忘れなく
-実際のスピードは Googleインターネット速度テスト にて確認しよう。
-終わりに
-ユーザーのことを考えると、現時点ではネットの弱い環境を再現してテストすることは必須と言えよう。
-早く世間一般のネットワーク速度が速く快適になることを祈る。]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>

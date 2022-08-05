@@ -6143,21 +6143,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220514/20220514145447.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438090464879",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nとりわけ WebRTCを使ってリアルタイムな通話をしていると、ネット環境の弱いことが原因で、ろくに通話できないという問題が発生する。そのため、ネットの弱い環境を再現して動作を確認する必要が出てくる。本記事ではネットの弱い環境を簡単に設定できる方法を紹介しておく。\nChrome console より設定の流れ\n1: Chrome consoleを起動する。\nChromeページ内で右クリック > 検証\n\n\n2: 上部タブの >> より、Networkを選択\n\n3: No throttling のエリアをクリックしてAdd... で新規追加\n\n好きなようにセットできるが、およそネットワークの\"弱い環境\"は以下。\nDownload: 10kbit/s\nUpload: 10kbit/s\nLatency: 1000ms\n4: 右上 x で戻り、No throttling のエリアを作成したネット環境に適用\n5: 確認後、戻すことをお忘れなく\n実際のスピードは Googleインターネット速度テスト にて確認しよう。\n終わりに\nユーザーのことを考えると、現時点ではネットの弱い環境を再現してテストすることは必須と言えよう。\n早く世間一般のネットワーク速度が速く快適になることを祈る。",
-          "link": "https://www.bokukoko.info/entry/2022/05/08/172659",
-          "publishedOn": "2022-05-08T08:26:59.000Z",
-          "wordCount": null,
-          "title": "Chromeでネットの弱い環境を再現する方法",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220508/20220508172120.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220508/20220508172120.jpg"
         }
       ]
     },
