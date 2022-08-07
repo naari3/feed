@@ -78,6 +78,55 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank"
+              rel="noopener">knqyf263&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">cargo-auditableで依存するcrateをバイナリに埋め込む</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2022/08/07/212856" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>概要
+詳細
+事前準備
+プロジェクトのビルド
+.dep-v0 section
+解凍
+余談
+まとめ
+概要
+cargo-auditable というものがあるというのをGitHubで教えてもらいました。
+github.com
+これを使ってRustプロジェクトをビルドすると依存するcrateの情報をバイナリに埋め込むことが出来ます。ちなみにGoでは既に以前からやっており、詳細はこちらのブログに書いています。
+knqyf263.hatenablog.com
+cargo-auditable の使い方はREADMEをそのままパクると以下のようになっています。
+# Install the tooling
+cargo install cargo-auditable rust-audit-info
+# Open your Rust project
+cd your_project
+# Build your project with dependency lists embedded in the binaries
+cargo auditable build --release
+# Recover the dependency info from the compiled binary
+rust-audit-info target/release/your-project
+
+
+
+cargo auditable で埋め込み、 rust-audit-info で情報を表示できます。まだCargo本体には入っていないようですが、既にGitHub上で提案はされています。ただ議論は長引いているのでどうなるかは分かりません。脆弱性スキャナの開発者としてはぜひ取り込まれて欲しいと思っています。
+github.com
+また、フォーマットもまだ定まっていないようなので今後変更される可能性があります。
+詳細
+では内部が…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -24471,32 +24520,11 @@ TVerで見る人はサムネが目に入るので普通の番組じゃないっ�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2022-05-09</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2022/05/10/100002" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>github.com
-Rails のload_defaultsのAPI docを読んでいて、ガイドへのリンクにanchorがほしいなと思ったので足した。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-08-07T12:02:04.271Z">2022-08-07T12:02:04.271Z</time>
+    <time id="build-timestamp" datetime="2022-08-07T13:08:22.266Z">2022-08-07T13:08:22.266Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

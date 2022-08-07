@@ -1152,21 +1152,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/13574176438090915869",
-          "author": null,
-          "description": "github.com\nRails のload_defaultsのAPI docを読んでいて、ガイドへのリンクにanchorがほしいなと思ったので足した。",
-          "link": "https://commits.hatenablog.com/entry/2022/05/10/100002",
-          "publishedOn": "2022-05-10T01:00:02.000Z",
-          "wordCount": 150,
-          "title": "2022-05-09",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -4251,6 +4236,21 @@
       "feedUrl": "https://knqyf263.hatenablog.com/rss",
       "siteUrl": "https://knqyf263.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/4207112889906569175",
+          "author": null,
+          "description": "概要\n詳細\n事前準備\nプロジェクトのビルド\n.dep-v0 section\n解凍\n余談\nまとめ\n概要\ncargo-auditable というものがあるというのをGitHubで教えてもらいました。\ngithub.com\nこれを使ってRustプロジェクトをビルドすると依存するcrateの情報をバイナリに埋め込むことが出来ます。ちなみにGoでは既に以前からやっており、詳細はこちらのブログに書いています。\nknqyf263.hatenablog.com\ncargo-auditable の使い方はREADMEをそのままパクると以下のようになっています。\n# Install the tooling\ncargo install cargo-auditable rust-audit-info\n# Open your Rust project\ncd your_project\n# Build your project with dependency lists embedded in the binaries\ncargo auditable build --release\n# Recover the dependency info from the compiled binary\nrust-audit-info target/release/your-project\n\n\n\ncargo auditable で埋め込み、 rust-audit-info で情報を表示できます。まだCargo本体には入っていないようですが、既にGitHub上で提案はされています。ただ議論は長引いているのでどうなるかは分かりません。脆弱性スキャナの開発者としてはぜひ取り込まれて欲しいと思っています。\ngithub.com\nまた、フォーマットもまだ定まっていないようなので今後変更される可能性があります。\n詳細\nでは内部が…",
+          "link": "https://knqyf263.hatenablog.com/entry/2022/08/07/212856",
+          "publishedOn": "2022-08-07T12:28:56.000Z",
+          "wordCount": 790,
+          "title": "cargo-auditableで依存するcrateをバイナリに埋め込む",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/4207112889901100820",
           "author": null,
