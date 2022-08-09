@@ -10763,6 +10763,16 @@
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
         {
+          "id": "21903",
+          "author": null,
+          "description": "※本記事は2022年1月22日に公開された記事の翻訳版です。 この記事は、Developer Productivity Engineering Campブログシリーズの一環として、Platform Infraチームの D […]",
+          "link": "https://engineering.mercari.com/blog/entry/20220121-securing-terraform-monorepo-ci/",
+          "publishedOn": "2022-08-09T12:00:00.000Z",
+          "wordCount": 1185,
+          "title": "TerraformモノレポCIのセキュア化",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2022/08/0517da96-former-terraform-ci.png"
+        },
+        {
           "id": "21857",
           "author": null,
           "description": "こんにちは！Merpay Engineering Engagement Team の mikichinです。8月23日（火）から「Merpay Tech Fest 2022」を開催します！ Merpay Tech Fes […]",
@@ -11720,16 +11730,6 @@
           "publishedOn": "2022-05-12T15:00:00.000Z",
           "wordCount": null,
           "title": ".rubocop_todo.ymlを解消するPull RequestをGitHub Actionsで自動生成する",
-          "imageUrl": null
-        },
-        {
-          "id": "https://r7kamura.com/articles/2022-05-12-gemfile-diff",
-          "author": null,
-          "description": "というGitHub ActionsのCustom actionを書いた。",
-          "link": "https://r7kamura.com/articles/2022-05-12-gemfile-diff",
-          "publishedOn": "2022-05-11T15:00:00.000Z",
-          "wordCount": null,
-          "title": "2つのGemfile.lockの差分を検知する",
           "imageUrl": null
         }
       ]

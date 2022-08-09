@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-09T02:46:39.304Z</updated>
+    <updated>2022-08-09T03:31:43.280Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[TerraformモノレポCIのセキュア化]]></title>
+        <id>21903</id>
+        <link href="https://engineering.mercari.com/blog/entry/20220121-securing-terraform-monorepo-ci/"/>
+        <updated>2022-08-09T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[※本記事は2022年1月22日に公開された記事の翻訳版です。 この記事は、Developer Productivity Engineering Campブログシリーズの一環として、Platform Infraチームの D […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[死は幸福]]></title>
         <id>https://note.com/aun6june/n/n80778e2bf70e</id>
@@ -17463,16 +17473,6 @@ open.spotify.com
 どうぞよろしくお願い致します。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2つのGemfile.lockの差分を検知する]]></title>
-        <id>https://r7kamura.com/articles/2022-05-12-gemfile-diff</id>
-        <link href="https://r7kamura.com/articles/2022-05-12-gemfile-diff"/>
-        <updated>2022-05-11T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[というGitHub ActionsのCustom actionを書いた。]]></summary>
-        <author>
-            <name>r7kamura.com</name>
         </author>
     </entry>
 </feed>
