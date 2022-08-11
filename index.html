@@ -24827,60 +24827,11 @@ Amazon</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
-              rel="noopener">ボクココ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">外部サービスのAPIやWebhook連携をするときに便利なもの</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/05/14/145844" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ども、@kimihom です。
-
-仕事を効率化させたり、Webサービスをより快適に使えるようにしたいときに便利なAPIやWebhook。これらを活用する上で必須とも言えるツールを改めて紹介しよう。
-API
-API のメリット
-API を利用することで、こちらから好きなタイミングでAPIを使って外部サービスにアクセスし、そこで情報の取得や作成、更新などができる。それにとどまらず、APIの種類によっては何かしら重要なアクションの実行をさせることもできる。もちろん、WebサービスだったらWebページ上で同じことができるけども、そのWebページで毎回ポチポチとクリックしたりタイピングしなければならない手間が発生する。APIを活用できれば、1つのイベント(アイテム購入や毎日9:00、異常検出など)が発生したら、それ以降でやらなければならないタスクを全て自動で完了させて手作業が不要にさせることができる。今までの手作業にかけていた時間を、他の大切な時間に使うことができるようになる。
-APIを使う場合、大抵の場合 Webのリクエストを送ることになる。そこで GET/POST/PUT/DELETE のHTTPメソッドを指定したり、URLにパラメータを付与したり、ヘッダに指定された認証を付与させたりする必要が出てくる。とりあえずどんなAPIなのかな？を確認したいときに、これらをわざわざ考慮してプログラムを０から書いていくのは手間のかかることである。そこで紹介したいのが Postman である。
-Postman
-Postman を使うことで、URLを指定し、パラメータを付与し、特定のヘッダを入力し、リクエストを送ってみて、そのレスポンスを確認することができるようになる。いろいろなメニューがあるけども、個人的には&quot;New&quot;と&quot;History&quot; 履歴だけで十分だ。
-
-今まで作ってリクエストしてみた履歴が History に表示され、試行錯誤しながら最終的に思い通りのレスポンスが返ってくるように調整していくことになる。
-APIで最も苦戦を強いられるのは、OAuth連携時のAccess Tokenの取得だ。今ではPostmanからOAuthに必要な情報を入力して、最終的にAccess Tokenの取得まで自動で取得できるようになっている。ただこれは、OAuthのリダイレクトで渡ってきたコールバックのデータを取得して、APIリクエストに使う必要があったりするので、Postmanだけで完結させることは難しい。最初のOAuth利用は難しく見えるけども、1度理解できれば他のOAuthも似た実装となる。
-
-最終的にOK! となったリクエストは、プログラムのコードに落とし込む必要がある。実装が本当に最初で、どうやってリクエスト送ればいいかわからないというケースでは、Postman側でサンプルコードを自動で作ってくれたものを参考にできる。
-
-Webhook
-Webhookのメリット
-APIとWebhookの違いは何かというと、APIは自分達が好きなタイミングで&quot;リクエストを送る&quot;ものであるのに対し、Webhookは相手側の特定のイベントのタイミングで、&quot;リクエストが渡ってくる&quot;ものとなる。方向が逆ということになる。
-この場合、Webhookで実際に受け取ることのできるドメインとサーバーが必要になる。とはいえ、まず最初にどんなデータが実際に来るのかを試したいというときに、その用意は手間なものである。そこで便利なのが webhook.site だ。
-
-ここで表示される http:// のURLにcurlで実際にアクセスしてみる。
-curl https://webhook.site/bde52ca****
-
-この例だとパラメータなど何も付与していないが、何もないリクエストが来たことを自動で検出し、そのリクエスト内容を見やすく表示してくれる。
-クエリの中にデータがきているのか、POST の body に入っているのか、どんなフォーマットでリクエストが来るのかなどを確認した後に、実際にそのリクエストを受け取る実装をした方が効率が良いのでおすすめである。
-終わりに
-私自身、今まで様々なWebサービス連携でAPIやWebhookを実装してきた。
-最初は外部サービス連携の利点をイメージしづらいかもしれないけど、実際に1度でも外部サービスと連携をしてみたら、その便利さに感動すら覚えることだろう。
-最近は Zapier をはじめとして、連携専門の SaaS などが出てきている。これらを使うのでもいいし、自分で実装するとより柔軟な実装が可能となる。
-さて、そろそろ単純作業は終わりにして、よりイノヴェイティブ?なことに頭を使っていこうではないか。</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220514/20220514145447.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-08-11T17:04:53.895Z">2022-08-11T17:04:53.895Z</time>
+    <time id="build-timestamp" datetime="2022-08-11T18:02:03.846Z">2022-08-11T18:02:03.846Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
