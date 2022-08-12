@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-12T09:01:59.859Z</updated>
+    <updated>2022-08-12T10:02:11.670Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[はてなブログの2022年7月の機能修正・改善をお知らせします（4件）]]></title>
+        <id>hatenablog://entry/4207112889907924124</id>
+        <link href="https://staff.hatenablog.com/entry/2022/08/12/182312"/>
+        <updated>2022-08-12T09:23:12.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、日々さまざまな機能修正・改善を行っています。多くのユーザーさまに関係する機能は、この開発ブログにて個別にお知らせしています。その一方で、目に見えづらい改善や、影響する方が少ない機能の修正も進めています。本記事では、2022年7月に実施した機能修正・改善をダイジェストでお届けします
+細かな機能修正・改善
+1.シンタックスハイライトに Zig と ZIR を追加しました
+ソースコードを色づけするシンタックスハイライトに Zig と ZIR を追加しました。
+お問い合わせよりお願いします。
+2.ブログカードの遅延読み込み(lazy load)に対応しました
+以前にフォトライフの画像の遅延読み込みに対応しましたが、ブログカードでも遅延読み込み(lazy load)に対応しました。
+*1
+3. 見出し（hタグ）にid属性が自動で付与されるようになりました
+本文中に見出し（hタグ）が含まれる場合、見出しのテキストがid属性として付与されるようになりました。
+4.デザイン設定の記事本文末尾設定に活用方法のヘルプを追加しました
+デザイン設定の「記事本文末尾」に活用方法のヘルプを追加しました。
+記事本文末尾
+記事本文末尾枠が重要性や活用方法について、以前にSEOの専門家、辻正浩さんの寄稿で解説しておりますので紹介いたします。
+staff.hatenablog.com
+
+*1:iframeのloading属性による遅延読み込みに対応していないブラウザではご利用いただけません]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[あなたにとって「SFといえば」？ 心惹かれるそれぞれの「SF」]]></title>
         <id>hatenablog://entry/4207112889907914052</id>
