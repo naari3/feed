@@ -4454,21 +4454,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20220519/20220519100052.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438092441635",
-          "author": null,
-          "description": "Value Objectとは何であるか?\nマーチン・ファウラーのPatterns of Enterprise Application Architecture(PofEAA)やエヴァンス・エリックのDomain Driven Design: Tackling Complexity in the Heart of Software(DDD)が原典であるが、PofEAAではこう切り出している。\nWhen programming, I often find it's useful to represent things as a compound.\nプログラミング時は物をcompound(合成物)として表現すると便利なことがしばしばある。\n例えば2次元空間上での座標のように複数のメンバ(属性)を持つ物は便利である、と。しかしそれらを比較する方法は一意ではない、そこで\nObjects that are equal due to the value of their properties, in this case their x and y coordinates, are called value objects.\nそのプロパティ(この場合ではxとy座標)によって等価比較されるオブジェクトをvalue objectと呼ぶ。\nとValue Objectの定義を行っている。そして各言語でそれぞれ比較の挙動が違う点について話が続く。\n比較演算子==を用いて比較をする際、オブジェクト指向な言語の中でも挙動が変わる。JavaScriptでは {x: 1} === {x: 1} は False を返す。それら2つのオブジェクトはメモリ上で別の場所に存在する別々の物体であるとして処理され、値に基づいた比較は実施されない。Rubyでは {x:1} == {x:1} はtrueであるし、Pytho…",
-          "link": "https://kumagi.hatenablog.com/entry/value-object",
-          "publishedOn": "2022-05-15T00:00:00.000Z",
-          "wordCount": 384,
-          "title": "Value Objectについて整理しよう",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20220515/20220515054636.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20220515/20220515054636.jpg"
         }
       ]
     },

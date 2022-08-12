@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-12T11:02:37.496Z</updated>
+    <updated>2022-08-12T12:02:17.516Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17519,24 +17519,6 @@ Amazon
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Value Objectについて整理しよう]]></title>
-        <id>hatenablog://entry/13574176438092441635</id>
-        <link href="https://kumagi.hatenablog.com/entry/value-object"/>
-        <updated>2022-05-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Value Objectとは何であるか?
-マーチン・ファウラーのPatterns of Enterprise Application Architecture(PofEAA)やエヴァンス・エリックのDomain Driven Design: Tackling Complexity in the Heart of Software(DDD)が原典であるが、PofEAAではこう切り出している。
-When programming, I often find it's useful to represent things as a compound.
-プログラミング時は物をcompound(合成物)として表現すると便利なことがしばしばある。
-例えば2次元空間上での座標のように複数のメンバ(属性)を持つ物は便利である、と。しかしそれらを比較する方法は一意ではない、そこで
-Objects that are equal due to the value of their properties, in this case their x and y coordinates, are called value objects.
-そのプロパティ(この場合ではxとy座標)によって等価比較されるオブジェクトをvalue objectと呼ぶ。
-とValue Objectの定義を行っている。そして各言語でそれぞれ比較の挙動が違う点について話が続く。
-比較演算子==を用いて比較をする際、オブジェクト指向な言語の中でも挙動が変わる。JavaScriptでは {x: 1} === {x: 1} は False を返す。それら2つのオブジェクトはメモリ上で別の場所に存在する別々の物体であるとして処理され、値に基づいた比較は実施されない。Rubyでは {x:1} == {x:1} はtrueであるし、Pytho…]]></summary>
-        <author>
-            <name>Software Transactional Memo</name>
         </author>
     </entry>
 </feed>
