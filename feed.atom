@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-12T06:02:00.826Z</updated>
+    <updated>2022-08-12T07:01:57.735Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GoのWasmランタイム上でZigで作ったWasmモジュールを動かす]]></title>
+        <id>hatenablog://entry/4207112889906726326</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2022/08/12/153419"/>
+        <updated>2022-08-12T06:34:19.000Z</updated>
+        <summary type="html"><![CDATA[Zigのコミッタの方から有益なフィードバックを頂いたり、Wasmランタイムのメンテナからコメントしてもらったり、Twitterでプロ開発者に助けてもらったり、と良い話が多かったのでそのへんの話も含めつつメモとして残しておきます。
+最初に断っておきますがWasmにもZigにも特に詳しくないです。
+概要
+実装
+GoのWasmランタイム
+TinyGoのExample
+ランタイムの初期化
+関数の実行
+別の渡し方
+Zigの実装
+malloc
+free
+ptrToString
+stringToPtr
+呼び出し側
+サンプル
+まとめ
+概要
+自分の開発しているOSSでWebAssemblyによるプラグイン機能に対応したのですが*1、Wasmは仕様が小さく関数の引数や戻り値もi32/i64/f32/f64だけで頑張るみたいな世界なので直接ユーザに生のWasm用コードを書いてもらうのは利便性の面で厳しいです。*2
+そうなると各言語ごとにSDKを用意する必要があるわけですが、自分の開発しているOSSがGoで書かれていることもあり最初はTinyGoに対応しました。GoだとWASI対応していないのでGo+WASIをやりたい場合は必然的にTinyGoになるかと思われます。TinyGoだとWasmもシュッとビルドできて便利なのですが、Goの標準パッケージで対応されていないものがそこそこあって（v0.25.0時点）何も考えずに普通にGoを書くときの気持ちでいるとビルドできないことが多いです。
+tinygo.org
+上のドキュメントを見てもらえれば分かりますが encoding/json などが使えなかったりします。あと自分が開発していた時はTinyGo v0.23.0だったためGoのジェネリクスに対応しておらず、適当にパッケージをimportすると死ぬということが多発しました。さらにエラーだとジェネリクスが…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NHK党　立花孝志党首への公開質問状]]></title>
         <id>hatenablog://entry/4207112889907889427</id>

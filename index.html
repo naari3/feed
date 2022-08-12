@@ -78,6 +78,47 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank"
+              rel="noopener">knqyf263&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GoのWasmランタイム上でZigで作ったWasmモジュールを動かす</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2022/08/12/153419" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Zigのコミッタの方から有益なフィードバックを頂いたり、Wasmランタイムのメンテナからコメントしてもらったり、Twitterでプロ開発者に助けてもらったり、と良い話が多かったのでそのへんの話も含めつつメモとして残しておきます。
+最初に断っておきますがWasmにもZigにも特に詳しくないです。
+概要
+実装
+GoのWasmランタイム
+TinyGoのExample
+ランタイムの初期化
+関数の実行
+別の渡し方
+Zigの実装
+malloc
+free
+ptrToString
+stringToPtr
+呼び出し側
+サンプル
+まとめ
+概要
+自分の開発しているOSSでWebAssemblyによるプラグイン機能に対応したのですが*1、Wasmは仕様が小さく関数の引数や戻り値もi32/i64/f32/f64だけで頑張るみたいな世界なので直接ユーザに生のWasm用コードを書いてもらうのは利便性の面で厳しいです。*2
+そうなると各言語ごとにSDKを用意する必要があるわけですが、自分の開発しているOSSがGoで書かれていることもあり最初はTinyGoに対応しました。GoだとWASI対応していないのでGo+WASIをやりたい場合は必然的にTinyGoになるかと思われます。TinyGoだとWasmもシュッとビルドできて便利なのですが、Goの標準パッケージで対応されていないものがそこそこあって（v0.25.0時点）何も考えずに普通にGoを書くときの気持ちでいるとビルドできないことが多いです。
+tinygo.org
+上のドキュメントを見てもらえれば分かりますが encoding/json などが使えなかったりします。あと自分が開発していた時はTinyGo v0.23.0だったためGoのジェネリクスに対応しておらず、適当にパッケージをimportすると死ぬということが多発しました。さらにエラーだとジェネリクスが…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://kawango.hatenablog.com/" target="_blank"
               rel="noopener">続・はてなポイント３万を使い切るまで死なない日記</a></h3>
           <section class="articles-per-source">
@@ -24617,7 +24658,7 @@ Objects that are equal due to the value of their properties, in this case their 
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-08-12T06:02:00.753Z">2022-08-12T06:02:00.753Z</time>
+    <time id="build-timestamp" datetime="2022-08-12T07:01:57.677Z">2022-08-12T07:01:57.677Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
