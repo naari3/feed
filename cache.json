@@ -6234,21 +6234,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220604/20220604142106.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438093472515",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nSendGrid には、”Email Marketing” と \"Email API\" の2つが提供されている。その2つの説明と、どちらも使うようにする方法などを紹介する。\nEmail Marketing と Email API\nタイトルだけで想像がつくと思うけど、Email Marketing は、SendGrid 上でメールのデザインなどを作り上げて、そのメールを指定した複数のメールアドレス宛にメールを送るマーケティング機能となる。\nEmail API は、自分のシステム側から特定の相手にメールを送るためのものとなっていて、送信元となるシステムの用意が必要となる。\n今回の課題\n同じメールアドレスで、マーケティングのメールを送りたいし、システムから送信するメールも送りたい。このときに問題になるのが、SendGrid 側でのドメイン登録だ。\nドメインが自分の所有するものであることを証明するために、例えば Amazon Route53 などで SendGrid からセットする必要のあるサブドメインが出てくる。\n\nSendGrid Marketing でまずこの s1.domainkey.** のドメイン登録をしたとしよう。その後で、SendGrid Email API の登録をするときも、同じドメイン登録を登録したいとき、 s1.domainkey.** は既に登録されてて無理なのか・・。と思われるかもしれない。\n\nこの回答は \"Advanced Settings\" の \"Use a custom DKIM selector\" をセットすることとなる。この欄にチェックを入れると、\"s1.\" ではない、他のアルファベット3文字のドメインを登録することができる。これにより、Rouote53 では *.s1._domainkey.* のドメインがそれぞれ登録可能となり、SendGrid Marketing と SendGrid API の2つが同じドメインで使えるようになった。\n英語表記でかつ、このAdvanced Setting はクリックしないと項目を見ることもできないので、同じことをしようとするとほぼ確実に迷うことになるだろう。\nおまけ: SendGrid Webhook\nメールを送ったら、そのメールがちゃんと相手に届いたのか、それともキャンセルされて届かなかったのか。送っただけで「基本的に読んでくれるでしょう」という判断はかなり危ないものだ。\nSendGrid でメールを送った後、そのメールのステータスを通知させることがSendGrid Webhook で可能とのことだ。\nEvent Webhook Reference | Twilio\nこれを使って、ちゃんと届かなかったメールを把握し、そのときには別の方法で連絡するなどの対応で、より良いメール対応ができるようになるだろう。\n終わりに\nコミュニケーションの中で一般的な連絡方法の1つであるメール。\n普段から Twilio と触れ合っている私だからこそ、メールもTwilio SendGrid を使っていきましょうという話。",
-          "link": "https://www.bokukoko.info/entry/2022/05/18/144834",
-          "publishedOn": "2022-05-18T05:48:34.000Z",
-          "wordCount": null,
-          "title": "SendGrid の2つのサービスを同じメールアドレスで利用する方法",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220518/20220518144547.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220518/20220518144547.jpg"
         }
       ]
     },

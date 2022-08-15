@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-15T17:07:15.253Z</updated>
+    <updated>2022-08-15T18:01:53.093Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17363,37 +17363,6 @@ Amazon
         <summary type="html"><![CDATA[こんにちは、名古屋支社 技術部のkmmt-tです。 パソコンを使ってお仕事をしている我々にとって、入力デバイスはとても大事なツールの1つです。1日8時間前後の業務を快適に遂行するためであれば、こういっ...]]></summary>
         <author>
             <name>熊本 祐</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SendGrid の2つのサービスを同じメールアドレスで利用する方法]]></title>
-        <id>hatenablog://entry/13574176438093472515</id>
-        <link href="https://www.bokukoko.info/entry/2022/05/18/144834"/>
-        <updated>2022-05-18T05:48:34.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-SendGrid には、”Email Marketing” と "Email API" の2つが提供されている。その2つの説明と、どちらも使うようにする方法などを紹介する。
-Email Marketing と Email API
-タイトルだけで想像がつくと思うけど、Email Marketing は、SendGrid 上でメールのデザインなどを作り上げて、そのメールを指定した複数のメールアドレス宛にメールを送るマーケティング機能となる。
-Email API は、自分のシステム側から特定の相手にメールを送るためのものとなっていて、送信元となるシステムの用意が必要となる。
-今回の課題
-同じメールアドレスで、マーケティングのメールを送りたいし、システムから送信するメールも送りたい。このときに問題になるのが、SendGrid 側でのドメイン登録だ。
-ドメインが自分の所有するものであることを証明するために、例えば Amazon Route53 などで SendGrid からセットする必要のあるサブドメインが出てくる。
-
-SendGrid Marketing でまずこの s1.domainkey.** のドメイン登録をしたとしよう。その後で、SendGrid Email API の登録をするときも、同じドメイン登録を登録したいとき、 s1.domainkey.** は既に登録されてて無理なのか・・。と思われるかもしれない。
-
-この回答は "Advanced Settings" の "Use a custom DKIM selector" をセットすることとなる。この欄にチェックを入れると、"s1." ではない、他のアルファベット3文字のドメインを登録することができる。これにより、Rouote53 では *.s1._domainkey.* のドメインがそれぞれ登録可能となり、SendGrid Marketing と SendGrid API の2つが同じドメインで使えるようになった。
-英語表記でかつ、このAdvanced Setting はクリックしないと項目を見ることもできないので、同じことをしようとするとほぼ確実に迷うことになるだろう。
-おまけ: SendGrid Webhook
-メールを送ったら、そのメールがちゃんと相手に届いたのか、それともキャンセルされて届かなかったのか。送っただけで「基本的に読んでくれるでしょう」という判断はかなり危ないものだ。
-SendGrid でメールを送った後、そのメールのステータスを通知させることがSendGrid Webhook で可能とのことだ。
-Event Webhook Reference | Twilio
-これを使って、ちゃんと届かなかったメールを把握し、そのときには別の方法で連絡するなどの対応で、より良いメール対応ができるようになるだろう。
-終わりに
-コミュニケーションの中で一般的な連絡方法の1つであるメール。
-普段から Twilio と触れ合っている私だからこそ、メールもTwilio SendGrid を使っていきましょうという話。]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>
