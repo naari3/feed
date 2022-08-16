@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-16T13:10:34.857Z</updated>
+    <updated>2022-08-16T14:02:05.332Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17185,34 +17185,6 @@ Damián Ortega Conjures Visual Poetry from the Everyday - ELEPHANT
         <updated>2022-05-19T06:50:29.000Z</updated>
         <author>
             <name>Kohei Tokunaga</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Re: ドメイン固有型(値オブジェクト含む)を再考する]]></title>
-        <id>hatenablog://entry/13574176438093354889</id>
-        <link href="https://kumagi.hatenablog.com/entry/re-rethink-domain-object"/>
-        <updated>2022-05-19T01:12:34.000Z</updated>
-        <summary type="html"><![CDATA[blog.j5ik2o.me
-値オブジェクトはドメイン固有型の一種です。なので、不変と等価判定だけではなく、なにかしらのドメイン固有の不変条件(invariant)を維持する責任があると考えます(もちろん型として切り出すわけですからその投資に見合うだけの見返りがないといけません)。
-違う。値オブジェクトとはID以外で等価判定をするオブジェクトの事であって、RubyのHash、Pythonのdict、C++のstd::unordered_setすらも値によって等価判定を行うのでこれらは値オブジェクトであるがドメイン固有型ではない。RubyでHashに入れて渡されたユーザ入力値をValidationしてドメイン固有型に詰め直すのはもちろん必要ならやれば良いが、Hashクラスそのものにモンキーパッチなり特異クラスなりを行って不変条件を維持する責任を負った自分専用Hashを作って普通のHashクラスの使用を禁じ始めたら流石に不味いコードに見える。
-使える言語が限られますが、型クラスを使えば既存の値型に振る舞いを追加することも可能です。
-型クラスを既存の値型にバリデーションを足すために使う人を見たことが無いけれど（やりたいことは素直なのだから素直にif文やクラスを作るほうがまだわかる）Scalaだとよくある文化なのかしら？
-開発者間の合意が必要なケースでは、問題のコンテキストに合致していないのに方法論だけ都合よく抜き取って対策したつもりになるのは避けたいですね。
-開発者は何らかのレイヤーで合意に至らないと開発は進まないし、そのために共通の語彙を使って会話するのはコンテキストを合わせるためにも重要な大前提である。それなのに
-ドメイン固有型はモデリングツールでもある
-これは僕の解釈です。値オブジェクトはドメイン固有型の一種です。
-このように定義済みの用語に対して独自解釈をオーバーライドしていくのはちょっとどうかと思う。ドメイン固有型はエンティティや値オブジェクトから構成されうるけれど、Pythonのdictのようにドメイン固有型でない値オブジェクトという反例があるため、値オブジェクトはドメイン固有型の一種とは限らない。部分集合ではなく直交した概念である。
-モデリングツールとして（少なくともコンストラクトの瞬間に）正当な値しか持ちえないオブジェクト*1が欲しければ作れば良いけれど、それには適切な名称を付けるべきであって、値オブジェクトの定義を独自解釈で拡張すべきではない。少なくとも既存の値オブジェクトの定義を否定する方向に独自解釈を挟んだら混乱を招く。「String型とは日本語を代入した変数の事を言います」とか言ってたらどう思うか想像して欲しい。
-値オブジェクトの応用法の粒度は提唱者によって違いがあるかも知れないけれどその二者の間ですら「値によって等価判定するオブジェクト」という定義そのもので争っている様子はない。
-PofEAAやDDDの説明だとIDに基づかない等価性を持つオブジェクトなので、特定のドメインに依存しない汎用的なDateやPointも値オブジェクトだけど、記事の値オブジェクトの解釈とは矛盾しないのかな？
-ドメイン固有型(値オブジェクト含む)を再考する - かとじゅんの技術日誌 https://t.co/gcjvAugxD1
-コダック (@ryoaita) 2022年5月17日
-ヘッダ画像はFlickrでMike Cohenさんの作品をCC BY 2.0に基づいて利用しています。
-
-
-*1:完全コンストラクタ？？]]></summary>
-        <author>
-            <name>Software Transactional Memo</name>
         </author>
     </entry>
 </feed>
