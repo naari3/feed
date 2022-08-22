@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-22T07:02:25.137Z</updated>
+    <updated>2022-08-22T08:02:51.102Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[法人向け有料プランを対象に、自動で画像をブログオーナーアカウントにアップロードし直す設定を追加しました]]></title>
+        <id>hatenablog://entry/4207112889909827839</id>
+        <link href="https://staff.hatenablog.com/entry/2022/08/22/162047"/>
+        <updated>2022-08-22T07:20:47.000Z</updated>
+        <summary type="html"><![CDATA[法人向け有料プラン(はてなブログBusiness、はてなブログ for DevBlog、はてなブログMedia) をご利用のブログ向けに、記事に含まれるフォトライフの画像を自動でブログのオーナーアカウントにアップロードし直すオプションを追加しました。
+この機能は、はてなブログを企業のメディアとして運用している場合を想定して提供しています。
+この設定は、ブログのオーナーアカウントでログイン後「ブログの詳細設定 > 共同編集」より有効にすることができます。
+
+
+細かい挙動や注意点については以下のとおりです。
+記事の公開時に再アップロードと差し替えが非同期に実行されます
+
+下書き保存や予約投稿時点では差し替えは行われません
+公開から差し替えまでに時間がかかる場合があります
+新規記事のみでなく、過去記事についても編集して公開すると差し替えが行われます
+オーナーアカウントへアップロードし直す際に、元のユーザーのフォトライフからの削除は行なわれません
+
+ブログオーナーへのアップロードの対象となるのは、フォトライフの画像のみです。権利関係を考慮し、他サイトの画像はアップロードいたしません
+オーナーアカウントの当月のアップロード容量を超える場合、差し替えは行われません
+アップロード容量オーバーやその他何らかの理由でアップロードに失敗した場合は、オーナアカウントへその旨のメールが送信されます]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2022年8月第3週〕]]></title>
         <id>hatenablog://entry/4207112889910879985</id>
