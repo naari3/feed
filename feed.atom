@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-23T19:01:44.907Z</updated>
+    <updated>2022-08-23T20:01:49.946Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[mp3 を fastify から返す]]></title>
+        <id>https://blog.ojisan.io/fastify-mp3</id>
+        <link href="https://blog.ojisan.io/fastify-mp3"/>
+        <updated>2022-08-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[実験のセットアップ とりあえずサーバーが立つようにする ファイルから読み込んだ mp3 をクライアントに返す ローカルに mp3 ファイルがあるとして、そのファイルをクライアントに返すとする。 このようにファイルをサーバーに send…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[100の質問に答えてみる]]></title>
         <id>hatenablog://entry/4207112889911372840</id>
