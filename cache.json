@@ -9968,6 +9968,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2022-08-25/hpke.html",
+          "author": null,
+          "description": "HPKE (Hybrid Public Key Encryption) が RFC 9180 として公開された。RFC 9180: Hybrid Public Key Encryptionhttps://www.rfc-editor.org/rfc/rfc9180.htmlHPKE は、公開鍵暗号方式と共通鍵暗号方式を組み合わせて(ハイブリッド)任意の平文を暗号化するための、汎用的な枠組みとして標準化されている。この仕様は、多くのユースケースが想定されており、 RFC になる前から ECH (Encrypt Client Hello), MLS (Message Layer Security), OHTTP (Oblivious HTTP) など、さまざまな仕様から採用を検討されている。本サイトで書く予定の他の記事でも HPKE は頻出する予定であり、今後より多くの場面でこの仕様を見ることになると思われるため、一度この仕様の概観について解説する。(筆者は暗号の専門家ではないため、解釈や語彙使用の間違いがあるかもしれない。)",
+          "link": "https://blog.jxck.io/entries/2022-08-25/hpke.html",
+          "publishedOn": "2022-08-25T00:00:00.000Z",
+          "wordCount": 858,
+          "title": "HPKE とは何か",
+          "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
+        },
+        {
           "id": "https://blog.jxck.io/entries/2022-06-16/HTTP-RFCs.html",
           "author": null,
           "description": "2022/06/06 ~ 9 あたりに、長きに渡って策定作業が行われていた HTTP 関連の RFC が大量に公開された。RFC 9110: HTTP SemanticsRFC 9111: HTTP CachingRFC 9112: HTTP/1.1RFC 9113: HTTP/2RFC 9114: HTTP/3RFC 9163: Expect-CT Extension for HTTPRFC 9204: QPACK: Field Compression for HTTP/3RFC 9205: Building Protocols with HTTPRFC 9209: The Proxy\\-Status HTTP Response Header FieldRFC 9211: The Cache-Status HTTP Response Header FieldRFC 9213: Targeted HTTP Cache ControlRFC 9218: Extensible Prioritization Scheme for HTTPRFC 9220: Bootstrapping WebSockets with HTTP/3RFC 9230: Oblivious DNS over HTTPSいったい何が起こっているのか、それぞれの経緯と開発者が知っておいた方がいいこと、そうでもないことを解説する。",
