@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-27T02:51:20.561Z</updated>
+    <updated>2022-08-27T03:44:37.053Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -16721,16 +16721,6 @@ chike0905.hatenablog.com
 この中で参加ノードはそれぞれ独立して自分のルールで「データベースとしての自分」が実行する次のredoログを決定しているに過ぎない。ここの面白い点は、redo処理はそれぞれの参加者が独立して行う動作なのでチェーンの中で完結する動作しか基本的に行えない事である。仮にここで「Googleで『あばばば』で検索して出てきた件数だけAliceからBobに送金する」なんて処理が許されたら全参加ノードがGoogle検索にリクエストを飛ばすし、件数が全員から見て一貫している保証は無いので送金額が一致しなくて復旧不能な矛盾が発生する(ので永劫許されないだろう)。チェーンの中で完結する処理だからこ…]]></summary>
         <author>
             <name>Software Transactional Memo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[サプリ]]></title>
-        <id>https://r7kamura.com/articles/2022-05-30-supplement</id>
-        <link href="https://r7kamura.com/articles/2022-05-30-supplement"/>
-        <updated>2022-05-29T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[とある本を読んでいたらサプリ（栄養補助食品; サプリメントの略称）についてものすごい熱量で語っていたので、根負けして試しにサプリを飲んでみることにした。]]></summary>
-        <author>
-            <name>r7kamura.com</name>
         </author>
     </entry>
 </feed>
