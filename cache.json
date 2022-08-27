@@ -1342,6 +1342,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889912479912",
+          "author": null,
+          "description": "健常者エミュレータ事例集Wikiで「記事をランダムに表示できるようにしてみたらどうか」とのユーザーの意見があった。記事が出てくるAPIにしてしまうのがよさそうだな、と思ったので、Lambda function URLとPythonを用いて実装した。\n \n使い方\nhttps://kadupzcc7ll3i2jn7uinqljm7q0yvxpk.lambda-url.ap-northeast-1.on.aws/にリクエストを飛ばす。\n入力→パラメータlength(ほしい記事の数)\n例)記事が4つほしい場合\nhttps://kadupzcc7ll3i2jn7uinqljm7q0yvxpk.lambda-url.ap-northeast-1.on.aws/?length=4\n下はTalend API Tester(Chrome拡張機能)の画面\n\n \n出力結果",
+          "link": "https://contradiction29.hatenablog.com/entry/2022/08/27/202737",
+          "publishedOn": "2022-08-27T11:27:37.000Z",
+          "wordCount": 236,
+          "title": "健常者エミュレータ事例集Wikiの記事をランダムに返すAPIを作った",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20220827/20220827201854.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20220827/20220827201854.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889899618165",
           "author": null,
           "description": "会話はカードゲームに似ている。会話には「プレイヤー」「場」「ルール」「手札」の要素がある：\n \n①プレイヤー\n→会話に参加する主体のこと。手札を考えたり、ルールを把握する際に、最初に考慮すべき要素。例えば、相手が会社の上司なのか、学校の同級生なのかで効果的な手札は変わる。ルールも変化する。学校の同級生に言ってよいことでも会社の上司に言ってはいけないこともあるように。\n \n②場\n→会話が展開される場所のこと。例えば、安めの居酒屋、高級なバー、オンライン（ビデオオフ）、オンライン（ビデオあり）など。会話が展開される場所によってルールは変化する。安めの居酒屋であれば下品な話題を口にしても問題はないが、高級なバーで具体的なセックスの話をすることは推奨されない。常に有効なルールや手札は存在しない。\n \n③手札\n→具体的発言のこと。愚痴に対する共感などの「相手の動作に対する返答」と、「話題提供」の2種類がある。\n \n④ルール\n→「やってはいけないこと」「やらなくてはいけないこと」「やったほうが良いこと」「やらないほうがいいこと」4種類の集合。「状況」から「適切な振る舞い」を導くルールの集合のこと。例えば、「相手が愚痴を言った場合、共感を示さずいきなり解決策を提示してはいけない」など。健常者エミュレータ事例集Wikiが参考になる。",
