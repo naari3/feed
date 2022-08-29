@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-29T11:02:15.586Z</updated>
+    <updated>2022-08-29T12:02:09.334Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -16663,23 +16663,6 @@ Tokischaはこれまで、J Balvin、Rosalía、Marshmelloとコラボしてい�
 続きをみる]]></summary>
         <author>
             <name>河内一馬</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[XcodeでSwift Package Manager実用段階]]></title>
-        <id>hatenablog://entry/13574176438095612911</id>
-        <link href="https://techlife.cookpad.com/entry/2022/06/01/090000"/>
-        <updated>2022-06-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、モバイル基盤部のヴァンサン(@vincentisambart)です。
-Swift Package ManagerはAppleがXcodeで公式にサポートしている唯一のパッケージマネージャーです。Xcode公式サポートの他に、Swift Package Manager形式でのみ提供されているswift-algorithms、swift-atomics、将来的に期待されているswift-async-algorithmsといった準標準ライブラリを利用できるようになるという大きなメリットがあります。
-クックパッドiOSアプリ(以下クックパッドアプリ)で一部の依存パッケージをXcodeのSwift Package Manager対応を使って入れるようにしました。この導入で得たいくつかの知見をまとめました。
-XcodeのSwift Package Manager対応
-本来のSwift Package ManagerがSwiftプロジェクトの一部です。コマンドラインでswift packageで使えます。活用するプロジェクトの構成をPackage.swiftで定義します。
-ですが、今回話したいのはSwift Package ManagerのパッケージをXcodeのプロジェクトで使う時の話です。依存されているパッケージのプロジェクト構成がPackage.swiftで定義されていますが、メインのプロジェクトの構成がXcodeプロジェクト(xcworkspaceまたはxcodeproj)で定義されています。
-Swift Package Managerがオープンソースであるのに対し、Xcode側の実装はオープンソースのSwift Package Managerの一部を使いながらもクローズドソースです。
-プロジェクト構成の定義がPackage.swiftではないので、swift pac…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>
