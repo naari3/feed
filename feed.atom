@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-29T20:02:08.473Z</updated>
+    <updated>2022-08-29T21:01:48.042Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[至高のGoプラグイン用ツールを作った]]></title>
+        <id>hatenablog://entry/4207112889912897119</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2022/08/30/052303"/>
+        <updated>2022-08-29T20:23:03.000Z</updated>
+        <summary type="html"><![CDATA[最近YouTuberのリュウジの料理を毎日作っているので至高とか無限とか言いがちですが個人の感想です。万人にとって美味しい料理はないように、万人にとって至高のツールは存在しません（何の話？）。ちなみに公開してすぐバグを見つけてしまったので全然至高じゃありませんでした。
+要約
+概要
+特徴
+使い方
+流れ
+事前準備
+インタフェースの定義
+SDKの生成
+プラグインの実装
+ホストの実装
+実行
+発展
+Host Functions
+ファイルアクセス
+その他
+苦労した点
+まとめ
+要約
+Goでプラグイン機構を実現するためのツールを作りました。Protocol Buffersのスキーマからコードを自動生成するので簡単にプラグイン機構を実現可能です。内部的にはWebAssembly（Wasm）を使っています。最近はWasmはブラウザ外での利活用が進んでおり、今回のツールもブラウザは一切関係ないです。Wasmはサンドボックス内で実行されるためファイルアクセスやネットワークアクセスはホストが許可しなければプラグインは行えずセキュリティ的に安全ですし、異なるアーキテクチャ用に複数バイナリを用意しなくてもプラグイン用にWasmバイナリを1つだけ作れば良いので配布も簡単です。これらの特徴から、サードパーティ製のコードを動かす必要のあるプラグイン用途に向いている気がしたので作りました。
+github.com
+概要
+Goでプラグインを実現する方法はいくつかありますが、どれも一長一短でこれだ！というものがないのが現状かと思います。分かりやすく比較を載せてくださっている記事があったので置いておきます。
+zenn.dev
+Goには plugin パッケージがありますが自由度が高すぎてシグネチャのズレが容易に生じてしまいますし、あまり実例も少ないです。
+上のブログ内でも言及されていますが、サードパーティ製で一番普及し…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20220823～nikki_20220829「傾向と対策」]]></title>
         <id>hatenablog://entry/4207112889913208192</id>

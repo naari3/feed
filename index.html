@@ -78,6 +78,51 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank"
+              rel="noopener">knqyf263&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">至高のGoプラグイン用ツールを作った</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2022/08/30/052303" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>最近YouTuberのリュウジの料理を毎日作っているので至高とか無限とか言いがちですが個人の感想です。万人にとって美味しい料理はないように、万人にとって至高のツールは存在しません（何の話？）。ちなみに公開してすぐバグを見つけてしまったので全然至高じゃありませんでした。
+要約
+概要
+特徴
+使い方
+流れ
+事前準備
+インタフェースの定義
+SDKの生成
+プラグインの実装
+ホストの実装
+実行
+発展
+Host Functions
+ファイルアクセス
+その他
+苦労した点
+まとめ
+要約
+Goでプラグイン機構を実現するためのツールを作りました。Protocol Buffersのスキーマからコードを自動生成するので簡単にプラグイン機構を実現可能です。内部的にはWebAssembly（Wasm）を使っています。最近はWasmはブラウザ外での利活用が進んでおり、今回のツールもブラウザは一切関係ないです。Wasmはサンドボックス内で実行されるためファイルアクセスやネットワークアクセスはホストが許可しなければプラグインは行えずセキュリティ的に安全ですし、異なるアーキテクチャ用に複数バイナリを用意しなくてもプラグイン用にWasmバイナリを1つだけ作れば良いので配布も簡単です。これらの特徴から、サードパーティ製のコードを動かす必要のあるプラグイン用途に向いている気がしたので作りました。
+github.com
+概要
+Goでプラグインを実現する方法はいくつかありますが、どれも一長一短でこれだ！というものがないのが現状かと思います。分かりやすく比較を載せてくださっている記事があったので置いておきます。
+zenn.dev
+Goには plugin パッケージがありますが自由度が高すぎてシグネチャのズレが容易に生じてしまいますし、あまり実例も少ないです。
+上のブログ内でも言及されていますが、サードパーティ製で一番普及し…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220829/20220829041806.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://isitsutbustu-todoke.hatenablog.com/" target="_blank"
               rel="noopener">遺失物取扱所</a></h3>
           <section class="articles-per-source">
@@ -23424,7 +23469,7 @@ Tokischaはこれまで、J Balvin、Rosalía、Marshmelloとコラボしてい�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-08-29T20:02:08.397Z">2022-08-29T20:02:08.397Z</time>
+    <time id="build-timestamp" datetime="2022-08-29T21:01:47.990Z">2022-08-29T21:01:47.990Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
