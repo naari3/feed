@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-08-30T19:01:39.288Z</updated>
+    <updated>2022-08-30T20:01:59.423Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[axum で template engine]]></title>
+        <id>https://blog.ojisan.io/use-template-for-axum</id>
+        <link href="https://blog.ojisan.io/use-template-for-axum"/>
+        <updated>2022-08-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[OGP は "rust with template engine" で生成したもの。HTML が錆び付いた感じがして良い。
+axum からテンプレートエンジンを返す方法はaxum/examples/templates/ を見れば事例があるのだが、これに気づかずに「axum…]]></summary>
+        <author>
+            <name>Your Site's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【週刊プラグインレビュー】sonible / smart:comp2]]></title>
+        <id>https://note.com/massmasaoki/n/n306ba24089d1</id>
+        <link href="https://note.com/massmasaoki/n/n306ba24089d1"/>
+        <updated>2022-08-30T19:32:32.000Z</updated>
+        <summary type="html"><![CDATA[さて、今月最後のプラグインレビューになります。
+今回は、発表当初より話題沸騰のsonible smartcomp2について触れていきたいと思います。
+最近、AIにまつわる議論が僕のタイムライン上では活発に議論をされていますが、sonibleもまた、程度の問題はあれ学習を反映するという意味では先進的にAIでの判断で仕事の効率化を行おうとしているメーカーです。
+今回の”2”は一体何を効率化してくれるのか？
+そして、それがあることで使うときに、どうラクになったのか？
+などを解説していきたいと思います。
+特に、「コンプレッサーを使う前のお作法がわからない・・・。」「そもそもコンプレッサーをかけるとなんか変になるから嫌い。」そういう方に大変おすすめできるエフェクターです。その魅力を少しでもお伝えできればうれしいです。
+続きをみる]]></summary>
+        <author>
+            <name>moroishimasaoki</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今日のメン限はおやすみです。😞]]></title>
         <id>https://note.com/sizes/n/nb42678855638</id>
