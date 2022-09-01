@@ -2,10 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-01T01:34:31.377Z</updated>
+    <updated>2022-09-01T02:52:31.411Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【RubyKaigi発表予告】error_highlight: user-friendly error diagnostics]]></title>
+        <id>hatenablog://entry/4207112889913318856</id>
+        <link href="https://techlife.cookpad.com/entry/2022/09/01/104312"/>
+        <updated>2022-09-01T01:43:12.000Z</updated>
+        <summary type="html"><![CDATA[技術部の遠藤です。2日連続の投稿です。
+今年のRubyKaigi 2022ではTRICKの発表をしますが、もうひとつ真面目な発表もします。Ruby 3.1の目玉機能であったerror_highlightについてです。
+この発表内容について、あらすじを紹介したいと思います。
+Ruby 3.1のerror_highlightとは
+Ruby 3.1でNoMethodErrorが発生すると、次のようなエラーが表示されます。
+$ ruby test.rb
+test.rb:1:in `<main>': undefined method `time' for 42:Integer (NoMethodError)
+
+42.time { print "Hello" }
+  ^^^^^
+Did you mean?  times
+この42.time { print "Hello" }とその下線を出しているのがerror_highlightという機能です。
+当日は実装をかんたんに発表しますが、この内容はすでに記事を書いているので、興味があれば読んでください。
+techlife.cookpad.com
+Ruby 3.2で何が変わるか
+ざっくり言えば2つです。
+ArgumentErrorやTypeErrorでも下線が出るようになる
+$ ruby test.rb
+test.rb:1:in `+': nil can't be coerced into Integer (TypeError)
+
+1 + nil
+    ^^^
+Railsのエラーページでも下線が出るようになる
+Railsのエラー画面のerror_highlight
+これだけなんですが、これらを実現するためにRubyインタプリタのエラー処理まわりをいろいろと整理する必要がありました。
+何がむずかしかったか
+一言で言えば、「エラーメッセージの変更…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PHPを勉強した話【音MAD Advent Calendar 2022 in Summer】]]></title>
         <id>hatenablog://entry/4207112889911910095</id>
@@ -16847,19 +16883,6 @@ www.yomilab.com
         <summary type="html"><![CDATA[r7kamura.comをダークモードに対応した。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[日記：22/6/3]]></title>
-        <id>https://note.com/sizes/n/nece74e59ed5a</id>
-        <link href="https://note.com/sizes/n/nece74e59ed5a"/>
-        <updated>2022-06-03T13:40:43.000Z</updated>
-        <summary type="html"><![CDATA[・近所のカレー屋、特別美味しいわけでもないがまずいわけでもないので通ってしまう
-・そのくらいのレベルって一番通いやすい　がっかりすることないし味が想定できるから
-
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>

@@ -74,6 +74,57 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-09-01">2022-09-01</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">【RubyKaigi発表予告】error_highlight: user-friendly error diagnostics</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/09/01/104312" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>技術部の遠藤です。2日連続の投稿です。
+今年のRubyKaigi 2022ではTRICKの発表をしますが、もうひとつ真面目な発表もします。Ruby 3.1の目玉機能であったerror_highlightについてです。
+この発表内容について、あらすじを紹介したいと思います。
+Ruby 3.1のerror_highlightとは
+Ruby 3.1でNoMethodErrorが発生すると、次のようなエラーが表示されます。
+$ ruby test.rb
+test.rb:1:in &#x60;&#x27;: undefined method &#x60;time&#x27; for 42:Integer (NoMethodError)
+
+42.time { print &quot;Hello&quot; }
+  ^^^^^
+Did you mean?  times
+この42.time { print &quot;Hello&quot; }とその下線を出しているのがerror_highlightという機能です。
+当日は実装をかんたんに発表しますが、この内容はすでに記事を書いているので、興味があれば読んでください。
+techlife.cookpad.com
+Ruby 3.2で何が変わるか
+ざっくり言えば2つです。
+ArgumentErrorやTypeErrorでも下線が出るようになる
+$ ruby test.rb
+test.rb:1:in &#x60;+&#x27;: nil can&#x27;t be coerced into Integer (TypeError)
+
+1 + nil
+    ^^^
+Railsのエラーページでも下線が出るようになる
+Railsのエラー画面のerror_highlight
+これだけなんですが、これらを実現するためにRubyインタプリタのエラー処理まわりをいろいろと整理する必要がありました。
+何がむずかしかったか
+一言で言えば、「エラーメッセージの変更…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20220830/20220830151040.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-08-31">2022-08-31</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -23428,34 +23479,11 @@ www.yomilab.com
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
-              rel="noopener">自由さ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">日記：22/6/3</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/nece74e59ed5a" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>・近所のカレー屋、特別美味しいわけでもないがまずいわけでもないので通ってしまう
-・そのくらいのレベルって一番通いやすい　がっかりすることないし味が想定できるから
-
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/79922608/rectangle_large_type_2_c6671aec816aa4a07488ce9377d34a86.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-09-01T01:34:31.304Z">2022-09-01T01:34:31.304Z</time>
+    <time id="build-timestamp" datetime="2022-09-01T02:52:31.344Z">2022-09-01T02:52:31.344Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
