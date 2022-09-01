@@ -2,10 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-01T10:01:52.707Z</updated>
+    <updated>2022-09-01T11:01:46.651Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[VMware Workstation PlayerでVMware Toolsがグレーアウトしてインストールできない時]]></title>
+        <id>hatenablog://entry/4207112889914008435</id>
+        <link href="https://fumimaker.net/entry/2022/09/01/194744?utm_source=feed"/>
+        <updated>2022-09-01T10:47:44.000Z</updated>
+        <summary type="html"><![CDATA[概要
+完全に備忘録です．
+sudo apt install open-vm-tools-desktop or sudo apt install open-vm-toolsをするとそのまま入ります．
+環境
+Host: Windows10 Pro
+VMware workstation player
+ubuntu22.04, 20.04
+現象
+VMwareくんとっても便利なんですが，たまにVMware toolsがインストールできないことがあります．
+グレーアウトしてクリックできない・・・という現象が発生しました．
+解決できなかった方法
+フロッピーを自動接続外してやることで解決するらしい，
+pc-oogaki.com
+aresei-note.com
+jitakudesoho.jp
+it-study.info
+しかし，解決できなかった．
+解決できた方法
+sudo apt install open-vm-tools-desktop or sudo apt install open-vm-tools
+desktopの場合はdesktopというほうを入れれば良いです．
+sudo reboot now
+再起動して完了．
+まとめ
+sudo apt install open-vm-tools-desktop or sudo apt install open-vm-tools
+を使おう．]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最近読んだ、面白いマンガを教えて。読むと読みたくなる「マンガ紹介エントリー」]]></title>
+        <id>hatenablog://entry/4207112889913844961</id>
+        <link href="https://blog.hatenablog.com/entry/2022/09/01/180000"/>
+        <updated>2022-09-01T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[人がオススメするマンガって、無性に読みたくなる
+
+こんにちは、はてな編集部の谷口です。
+突然ですが、みなさん「マンガ」はお好きですか？ 私は大好きです。
+私は山と川に四方を囲まれた自然たっぷりの環境で育ちました。今振り返るととても貴重な幼少期だった一方で、エンターテインメントは常に枯渇していました。
+そんな環境でも、月に一度だけ、ドキドキとワクワクが止まらないエンターテインメントを近所の駄菓子屋で手に入れていました。少女マンガ雑誌の『りぼん』（集英社）です。
+クラスの人気者を描いた学園マンガに幼なじみとの恋愛マンガ、ちょっと不思議でかわいいファンタジーに、もろいけど強い変身ヒロイン、くすっと笑えるギャグマンガ。分厚い1冊は毎月、日常にはない極上のきらめきを見せてくれました。
+今でも私の生活には、いろんな世界に連れて行ってくれる「マンガ」が欠かせません。なので、常に「面白いマンガ」を探し求めています。
+しかし、Webマンガやマンガアプリの台頭もあり常に新しい作品がどんどんと生まれ続けているマンガ大国NIPPON。何かと忙しい日常の中で、星の数ほどあるマンガから好みのマンガを探し当てるのはわりと大変なのです。
+そんなとき、参考になるのが書評ブログ。気になっている作品のおすすめポイントをまとめてくれていたり、射程圏外にある作品の存在を教えてくれたり、ものすごく参考になるのです。
+そして何より、誰かがオススメするマンガって、無性に読みたくなるんです。
+というわけで今回は、私が最近好んでいるマンガをもっと多くの人に読んでほしい……！ という思いで、いくつかの書評エントリーを作品別にピックアップしました。
+税金で買った本（原作：ずいの／著：系山冏）
+ゆりあ先生の赤い糸（入江喜和）
+思えば遠くにオブスクラ（靴下ぬぎ子）
+ビターエンドロール（佐倉 旬）
+ブランチライン（池辺 葵）
+この記事…]]></summary>
+        <author>
+            <name>週刊はてなブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[エッセイ：「清潔感」という恣意的なのか規律的なのかわからない評価軸]]></title>
         <id>https://note.com/sizes/n/nad5620d9d041</id>
