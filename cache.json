@@ -9796,6 +9796,16 @@
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/fcm-push",
+          "author": null,
+          "description": "なにを作ったか それは秘密です。とある何かを作ったのですが、公式から DM で怒られたので公開を停止しています。その供養も兼ねて、そのときの学びを書いていきます。 Web の Push 通知についての全体的な解説 通知と Push さて、Push…",
+          "link": "https://blog.ojisan.io/fcm-push",
+          "publishedOn": "2022-09-05T00:00:00.000Z",
+          "wordCount": null,
+          "title": "FCM で実現する Web push 通知 の解説",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/simple-classname-cat",
           "author": null,
           "description": "CSS classname CSS の class 名を連結させるライブラリがある。classnames や clsx だ。\nこれは配列や可変長引数を引数にとって、それを連結した文字列を返す。 ところでこの手のライブラリはただ classname を連結するだけでなく、falsy…",
