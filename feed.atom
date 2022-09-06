@@ -2,10 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-06T10:01:59.415Z</updated>
+    <updated>2022-09-06T11:02:18.269Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[音MADの対戦型イベントが久しぶりに観たい【音MAD Advent Calendar 2022 in Summer】]]></title>
+        <id>hatenablog://entry/4207112889914851936</id>
+        <link href="https://kaikityou.hatenablog.com/entry/2022/09/06/200000"/>
+        <updated>2022-09-06T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[この記事は音MAD Advent Calendar 2022 in Summerの六日目の記事です！！！！！
+なんと今日以降全部空いてます！！！！！！
+何か書きたいことがある方は是非参加お願いします！！！！！！
+『獣道』の紹介
+プロゲーマーの梅原大吾がやっている企画に獣道というものがあります。
+これは特定のゲームタイトルにおいての最高峰の対決を実現するという企画です。
+
+恐らく獣道を説明する上で一番分かりやすい対決がこれです。
+左のウメハラは「世界で最も長く賞金を稼いでいる」としてギネス世界記録に登録されている説明不要のプレイヤーで、"格ゲーの歴史"なんて言われてたりします。日本初のプロゲーマー。
+対戦相手のときどは東大生プロゲーマーという肩書を持ち、近年はウメハラを超える実績を持つトッププレイヤー。今の収入はウメハラを超えてるとか言われてます(未確認情報)。日本三人目のプロ格闘ゲーマー。
+いわばこの試合は世代交代をかけた対決とも言えます。結果は自分で調べてください。
+ 
+試合に付随して、各選手へのインタビューや、その周りの人間からの応援コメントのPVなんかも投稿されていたりします。
+他にも上述のときど戦においては獣道Ⅰのエンディングで匂わせ演出があったり、エンタメ性の高いイベントと言えます。
+Daigo Umehara Presents: Kemonomichi 2 - Daigo vs Tokido PV - YouTube
+Daigo Presents Kemonomichi 2 - Interview with SFV Players! - YouTube
+https://clips.twitch.tv/WiseInnocentLeopardFUNgineer?tt_content=url&tt_medium=clips_api
+ 
+他にも獣道では「全一テトリスプレ…]]></summary>
+        <author>
+            <name>kaikityouの日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ESP32でCO2・環境測定をする-Part2]]></title>
+        <id>hatenablog://entry/4207112889912252551</id>
+        <link href="https://fumimaker.net/entry/2022/09/06/193907?utm_source=feed"/>
+        <updated>2022-09-06T10:39:07.000Z</updated>
+        <summary type="html"><![CDATA[前回の記事はこちら
+fumimaker.net
+特徴
+CO2濃度測定
+温度・湿度・大気圧測定
+LCDで表示
+データをネットワーク経由でアップロード
+
+基板が届きました
+こんな感じで届きました．タイムライン的にはこんな感じです．時期にもよると思うので参考までに．今回一番安いEconomical Global Direct Lineにしましたが11日で届きました．早すぎるw 30日くらいは覚悟していたので驚きです．というか早すぎてまだ部品発注していません．急いで秋月電子通商で発注してきます．
+7月25日 基板発注
+7月27日 製造完了(PCB・ステンシル)
+7月27日 発送
+8月3日 日本到着
+8月5日 家に到着
+梱包
+見ていきましょう．
+梱包です．ビニールに包まれてきました．
+
+
+基板は袋にはいっていました．
+
+ステンシルです．特に問題はありません．
+
+基板の拡大図です．シルクなどきれいで特に問題はないと思います．文字をあえて印字の厳しい游ゴシック体にしてみましたが普通にきれいです．その他パターンがつながってしまっているなどはなく品質も良好でした．
+この基板をみて，なんかチップ部品のサイズでかくね？と思ったあなた．鋭いですね．前編でも書きましたが，通常では1608サイズを使うところ今回は2012サイズとしてみました．理由は手動チップマウントするときに楽かな～と思ったためです．結論としてはあまりにもでかすぎて，ちょっと微妙だなという感じでした．表面実装のメリットが薄れてしまいますが，十分な基板のサイズが有るときは良い選択肢だと思いました．基板のサイズを小さくして高密度にしたいんだったら結構レイアウトが大変になるので考えものです．
+
+基板の実装
+ここまでやりましたが，部品がありません．ということで秋月電子通商で発注中です．(2022-08-09)
+お盆休みが終わり，届きました．と…]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[はてなブログの2022年8月の機能修正・改善をお知らせします（3件）]]></title>
         <id>hatenablog://entry/4207112889915498652</id>
