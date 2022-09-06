@@ -5214,6 +5214,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889915355535",
+          "author": null,
+          "description": "Fluentd実践入門\nFluentdの現バージョン(v1.15)について世界で一番詳しい本です。というか、Fluentdそのものだけについての、おそらく世界で唯一の技術書です。\n出版社は技術評論社です。電子版もGihyo.jpやKindleはじめ各社で出ます。買ってね!\ngihyo.jp\nTL;DR\n発売日は10月8日です\n\n\n一部書店ではちょっと早く9月末に並ぶかも\n電子版は発売日よりちょっと前に出るかも1\n544ページ、Fluentd本体については考えられる限り盛り込みました\n\n\nFluentdをなんとなく使っている人が確信を持って使えるようになれるはず\n組込みプラグインの頻出用法、本番環境での運用ノウハウ、プラグイン開発からテストなどまで\nエコシステム的な部分についてはカバーできていません\n\n\nKubernetes上での運用やFluent Bitとの組み合わせとか\nAWS FireLensやGCP CloudLoggingなどで使うときのノウハウとか\nでもそのへんを調べるときの基礎的な知識が得られるでしょう\n最後のゲラのチェックと修正はさっき終わらせたぞ!\nなお、本の一部に見開きで左右ぶち抜きの表があります。まあまあな数あります。これがもしかしたら、電子版ではちょっと見にくいかもしれません。残念ですが各ページには収まらなかったのでこうなっています。電子版を購入される方にはすみません。\nアピールポイント\nFluentdについて、前にけっこうやったしだいたい知ってる、と思う人もいると思います。おそらくその人達の多くは次のことを知らないでしょう。\nout_forwardの送信先リスト2、今では再起動なしで増やしたり減らしたりできる\nFluentdの設定ファイルはYAMLで書ける\nひとつめはFluentd v1.8でサポートされたService Discoveryプラグイン…",
+          "link": "https://tagomoris.hatenablog.com/entry/2022/09/06/092458",
+          "publishedOn": "2022-09-06T00:24:58.000Z",
+          "wordCount": null,
+          "title": "「Fluentd実践入門」を10月8日に出版します",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20220905/20220905232914.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20220905/20220905232914.png"
+        },
+        {
           "id": "hatenablog://entry/13574176438100766936",
           "author": null,
           "description": "react-scripts startで使えるDevelopment modeだとなんか変なことがちょいちょい起きるので、動作確認をProduction modeでやりたい。\nところでこのアプリからはCORSリクエストを送りまくるのでHTTPSのサイトとしてlocalhostにアクセスしたい。Development modeについては、これはpackage.jsonに以下のように書いておいてnpm startすることで実現できる。\n...\n  \"scripts\": {\n    \"start\": \"HTTPS=true react-scripts start\",\n...\n\n\n\nReact appをProduction modeで動かす\n単に動かすならドキュメントにあるようにnpm run buildでビルドしたあと、それを配信するサーバを実行すればいい。\n$ npm run build\n$ npm install -g serve\n$ serve -s build\nserveコマンドをHTTPSを有効にして実行する\nところがこれだとHTTPなので、HTTPSにしたいときには困る。見てみたらserveコマンドには--ssl-certと--ssl-keyオプションがあって、このふたつを指定してあればHTTPSで動いてくれるっぽい。ちょいちょいと鍵と証明書を作って実行する。\n$ openssl genrsa -out key.pem\n$ openssl req -new -key key.pem -out csr.pem\n(色々聞かれるが、全部Enter連打でいい)\n$ openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem\n$ serve -s build --ssl-cert cert.pem --ssl-key key.pem \n\n   ┌─────────────────────────────────────────────────────┐\n   │                                                     │\n   │   Serving!                                          │\n   │                                                     │\n   │   - Local:            https://localhost:3000        │\n   │   - On Your Network:  https://192.168.68.103:3000   │\n   │                                                     │\n   │   Copied local address to clipboard!                │\n   │                                                     │\n   └─────────────────────────────────────────────────────┘\nできた。\nChromeで証明書チェックをスキップする\nできたと思ってChromeでhttps://localhost:3000を開くと証明書チェックにひっかかって進めない。Development modeのときはAdvanced以下に開くリンクが出るんだけど、こっちでは出ないのは何の違いによるものなのか。\nなんでだよと思って調べてみたら、このページ上で(どこかをクリックしてから?) thisisunsafe とタイプすると開けるとのこと。マジかよと思ってやってみたら、できた。マジかよ。\nyuki.world\nまとめ\nできた。やれやれ。",
@@ -6362,16 +6377,6 @@
           "wordCount": null,
           "title": "「ディグディガ」元ネタ紹介：15.5話",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/81007241/rectangle_large_type_2_ac25a98756633dbbf98f7a2939c2bcbf.png?width=800"
-        },
-        {
-          "id": "https://note.com/diginthedigger/n/n6c018ca6fbc7",
-          "author": null,
-          "description": "これは、漫画「ディグインザディガー」第15話公開に際して、原作の栄免建設と漫画の駒澤零（と、たまにゲスト）が淡々と元ネタ紹介をしていくコーナーです。\n\nゲスト：ネムレス\n\n続きをみる",
-          "link": "https://note.com/diginthedigger/n/n6c018ca6fbc7",
-          "publishedOn": "2022-06-08T12:12:31.000Z",
-          "wordCount": null,
-          "title": "「ディグディガ」元ネタ紹介：第15話",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/79944138/rectangle_large_type_2_47d87365e5210754a5ab2f26603d91c0.png?width=800"
         }
       ]
     },
