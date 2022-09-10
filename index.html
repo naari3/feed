@@ -74,6 +74,61 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2022-09-10">2022-09-10</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Google Search Console でのブログ改善</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/09/10/142629" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+Google Search Console という Google のツールを使ったら、自分のブログの改善点が出てきたので対応することにした。
+AMP
+詳しくははてなブログの特設サイトに譲るとして、簡単に言えば Google etc がより速くWebサイトを表示させるために、AMP に対応したWebサイトは特別に扱われるようになるものである。CSS などのUIが特別になるので、提供元は AMP でのUIをしっかりと確認しておく必要がある。
+はてなブログの場合、設定 &gt; 詳細設定 &gt; 高度な設定 &gt; AMPを配信する を ON にするだけでOKだ。(はてなブログProのみ)
+すると、ブログの URL に ?amp&#x3D;1 の特別なURLが作られる。
+例えば AMP 付きのWebサイトは以下のような形だ。
+娘が声優になりたいと言い出した時に私ならこう言う - ボクココ
+ちなみに、AMP でない通常の URL は以下となる。
+娘が声優になりたいと言い出した時に私ならこう言う - ボクココ
+AMP が入っていると、よりシンプルな表示になっていることが確認できるだろう。AMP で Google 側にキャッシュをさせることで、より検索結果を早く表示されるようになるとのことで、やれるならやったほうがいいに違いない。
+AMP 警告
+さてこの AMP だが、単に はてなブログで 有効にするだけでは 大量の NG が発生する。
+私がNGくらった項目は、ほぼ全て画像の画質問題の警告だった。どうやらある一定の画質のブログ記事のメイン画像でないと、それは正しくAMP化されないようである。
+警告表示されている記事を1つ1つ編集する必要がある。
+まず記事に合う高画質画像を用意
+記事ページに貼り付ける
+はてなブログ設定 &gt; アイキャッチ画像 にて その高画質画像を適用させる
+アイキャッチ画像の登録が必要なので、お忘れなく。
+最終的に全て OK となるように記事を更新した。更新した後、Google に審査リクエストを送ることで、数日待つとちゃんと正しく更新されたページとして登録される。
+全てが正しくAMP化されると、とても気持ちの良いUIが表示される。
+
+広告が表示されない
+お金目当てでブログを書いてる人は、きっとやる気が出ない点となるが、AMP化されたページは広告が表示されない。
+収益を優先させるより、より多くの人々に 自分が書いた記事が届く。それを喜びとする必要があろう。
+終わりに
+サイトの改善案として提供してくれている Google Search Console を紹介した。
+Google Search Console では、今回紹介した AMP の確認以外にも、ページのインデックス登録確認、パンくずリストの確認なども可能となっている。
+やらないよりはやったほうがいいに違いないので、時間ある時に見てみていただければ幸いだ。
+Amazon | Google グーグル GA02213-GB [Google Pixel Buds A-Series フルワイヤレスイヤホン Clearly White] | Google(グーグル) | パソコン・周辺機器 通販</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220910/20220910142226.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-09-09">2022-09-09</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -22831,7 +22886,7 @@ blog.kyanny.me
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-09-10T05:22:54.725Z">2022-09-10T05:22:54.725Z</time>
+    <time id="build-timestamp" datetime="2022-09-10T06:06:07.692Z">2022-09-10T06:06:07.692Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
