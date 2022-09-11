@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-11T19:01:42.214Z</updated>
+    <updated>2022-09-11T20:02:21.195Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Gatsby で React の import なしで利用する]]></title>
+        <id>https://blog.ojisan.io/gatsby-auto-react</id>
+        <link href="https://blog.ojisan.io/gatsby-auto-react"/>
+        <updated>2022-09-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[createElement はもう不要 昔 どうして JSX を使ってもエラーにならないのか？ に書いたのですが、JSX と React を動かすためには React モジュールそのものもしくは、createElement が import…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gatsby は設定ファイルを TypeScript で書ける]]></title>
+        <id>https://blog.ojisan.io/getsby-ts-config</id>
+        <link href="https://blog.ojisan.io/getsby-ts-config"/>
+        <updated>2022-09-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[これまでの TS 化 Gatsby.js を完全 TypeScript 化する などでも紹介されているが(これを参考にして実装した記憶がある)、このブログでも実装しているように、設定自体は TS で行って、実行時に ts-node…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[220911]]></title>
         <id>hatenablog://entry/4207112889915169408</id>
