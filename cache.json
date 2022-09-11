@@ -5723,21 +5723,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220618/20220618134005.jpg"
-        },
-        {
-          "id": "hatenablog://entry/13574176438102075199",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nSwiftUI を使ってローディングアイコン(くるくる)を表示させようとした時、まず真っ先に GIF を使おうと思うだろうが、残念ながら GIF サポートは現状ない。何かしらのライブラリを使ったり、自前で動かす実装が必要になる。\nということで、現状の最適な方法としては GIF に代わる自前実装となるのがベストだろう。\n参考サイト\nまず以下の StackOverflow を参考にさせてもらった。\nActivity indicator in SwiftUI - Stack Overflow\nただ、この通りに実装すると最新の iOS 15 だと正しく動作しない部分があったので補足として本記事を記す。\nSwiftUI コード\nまずは改善版のコードを記しておく。\nimport Foundation\nimport SwiftUI\n\nstruct ActivityIndicator: View {\n    @State private var isAnimating: Bool = false\n\n    var body: some View {\n        GeometryReader { (geometry: GeometryProxy) in\n            ForEach(0..<5) { index in\n                Group {\n                    Circle()\n                        .frame(width: geometry.size.width / 5, height: geometry.size.height / 5)\n                        .scaleEffect(calcScale(index: index))\n     …",
-          "link": "https://www.bokukoko.info/entry/2022/06/14/135629",
-          "publishedOn": "2022-06-14T04:56:29.000Z",
-          "wordCount": null,
-          "title": "SwiftUI でのローディングアイコン表示",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220614/20220614135406.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220614/20220614135406.jpg"
         }
       ]
     },
