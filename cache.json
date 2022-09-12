@@ -1638,21 +1638,6 @@
             "length": "0"
           },
           "imageUrl": "https://github.com/fumimaker/Public_Images/blob/main/Images/20220512170402%E5%9B%B31.png?raw=true"
-        },
-        {
-          "id": "hatenablog://entry/13574176438102189420",
-          "author": null,
-          "description": "あなたの使っているそのモニターの遅延，一体どれだけあるのでしょうか？気になりますよね？\nということで，HDMIディスプレイの遅延測定器のプロジェクトを作りました．せっかくなので公開しました．ZYBO持っている方はぜひご利用ください．\ngithub.com\n1.概要\nHDMIディスプレイの遅延を測定することができるシステムを作りました．HDMI信号を出力し，ディスプレイが発光し，光として帰ってくるまでの遅延時間を測定します．フォトトランジスタと抵抗，ブレッドボードなどが必要です．（4章参照）\nまた，スライドスイッチ[2:0]をHにするとテストモードとしてRGBの信号がHDMI出力されます．\n\n\n2.Environments\n本システムでは以下の環境で動くことを確認しています．\nVivado 2019.2\nVitis 2019.2\nVivado HLS 2019.2\nDigilent ZYBO Z7-20\n3.FPGA周りの構築\n3-1. clone or download\ngit clone https://github.com/fumimaker/display_latency.git\n3-2. Digilentのライブラリをダウンロード\n本プロジェクトではDigilentのvivado-libraryを使用しています．ダウンロードし，vivado-library/ip/rgb2dviをdisplay_latency/ip_repoにコピーしてください．\ngit clone https://github.com/Digilent/vivado-library.git\nhttps://github.com/Digilent/vivado-library\n\n3-3.Vivadoでtclを読み込む．\ncd ~/.display_latencyで移動\nsource ./displa…",
-          "link": "https://fumimaker.net/entry/2022/06/14/205526?utm_source=feed",
-          "publishedOn": "2022-06-14T11:55:26.000Z",
-          "wordCount": null,
-          "title": "ZYBO Z7-20でHDMIディスプレイの遅延測定器を作りました",
-          "enclosure": {
-            "url": "https://raw.githubusercontent.com/fumimaker/Public_Images/main/Images/20220614_1655132423_2022-06-13%2023.57.15.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://raw.githubusercontent.com/fumimaker/Public_Images/main/Images/20220614_1655132423_2022-06-13%2023.57.15.jpg"
         }
       ]
     },

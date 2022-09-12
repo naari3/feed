@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-11T23:01:57.016Z</updated>
+    <updated>2022-09-12T00:03:00.649Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -16295,40 +16295,6 @@ www.amazon.co.jp]]></summary>
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ZYBO Z7-20でHDMIディスプレイの遅延測定器を作りました]]></title>
-        <id>hatenablog://entry/13574176438102189420</id>
-        <link href="https://fumimaker.net/entry/2022/06/14/205526?utm_source=feed"/>
-        <updated>2022-06-14T11:55:26.000Z</updated>
-        <summary type="html"><![CDATA[あなたの使っているそのモニターの遅延，一体どれだけあるのでしょうか？気になりますよね？
-ということで，HDMIディスプレイの遅延測定器のプロジェクトを作りました．せっかくなので公開しました．ZYBO持っている方はぜひご利用ください．
-github.com
-1.概要
-HDMIディスプレイの遅延を測定することができるシステムを作りました．HDMI信号を出力し，ディスプレイが発光し，光として帰ってくるまでの遅延時間を測定します．フォトトランジスタと抵抗，ブレッドボードなどが必要です．（4章参照）
-また，スライドスイッチ[2:0]をHにするとテストモードとしてRGBの信号がHDMI出力されます．
-
-
-2.Environments
-本システムでは以下の環境で動くことを確認しています．
-Vivado 2019.2
-Vitis 2019.2
-Vivado HLS 2019.2
-Digilent ZYBO Z7-20
-3.FPGA周りの構築
-3-1. clone or download
-git clone https://github.com/fumimaker/display_latency.git
-3-2. Digilentのライブラリをダウンロード
-本プロジェクトではDigilentのvivado-libraryを使用しています．ダウンロードし，vivado-library/ip/rgb2dviをdisplay_latency/ip_repoにコピーしてください．
-git clone https://github.com/Digilent/vivado-library.git
-https://github.com/Digilent/vivado-library
-
-3-3.Vivadoでtclを読み込む．
-cd ~/.display_latencyで移動
-source ./displa…]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
 </feed>
