@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-13T11:02:02.126Z</updated>
+    <updated>2022-09-13T12:02:05.745Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,26 @@
         <summary type="html"><![CDATA[この記事は「連載：連載：技術基盤強化プロジェクト「RFS」の現在と未来」として書かれたものです。 メルカリのトランザクションチームでバックエンドエンジニアをしている @adachang です。今回は前回の記事に引き続き、 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[週記#24 9月2週]]></title>
+        <id>hatenablog://entry/4207112889917798748</id>
+        <link href="https://nkaoobt.hatenablog.com/entry/2022/09/13/204347"/>
+        <updated>2022-09-13T11:43:47.000Z</updated>
+        <summary type="html"><![CDATA[今週末（先週末？）は家にいる間はずっとスプラトゥーンをしていた。
+散々言われているけど、負けた時のストレスは表彰システムでかなり緩和されている気がする。ただ負けりゃイライラはするので、そんな感じのツイートをしていても温かい目で見てください。
+発売前はナワバトラーやサーモンランにハマるだろうな、と思っていたが、ギアパワー厳選にハマりつつある。前作では真剣にやってなかったどころか仕様も全然知らなかったんだけど、仕様を調べたらかなり面白そうだった。それなりに苦行そうなのも良い。
+いろいろ考えることが多いので、ここをメモ代わりに使ってギアパ関連の色々を記事にするかもしれない。
+ナワバトラーにもしっかりハマってはいます。オンラインが来たらブチギレながらプレイしてる様子が目に浮かびますが、今のところは超楽しいです。
+サーモンランは2ではたつじんに乗せて辞めていたが、3ではそれを超えてたつじん+1まで来れた。ここまでは割と楽に来れたがたつじん+1になって急にクリアできなくなった。ただまだ流石に伸びしろあるとは思ってるので、ほどほどに頑張りたい。
+ 
+1万円くらいの筆文字フォントセットを買った。セール中でめっちゃお得になってたからつい買っちゃったけど、よく考えたら1万円は僕の中では大きかった。
+ただ内容と比べると激安だと思うので良い。いっぱい使って元を取りたい。（商用利用的な意味ではなく）
+今回もだけど、「社会人になったらもっと給料増えるし今のうちにこのくらいのお金使っても問題ないか！」みたいなノリで買い物しがちだから危険な気がする。高校生の時にも、「大学生になったら～」と思ってポケカに3万突っ込んでしまった。が、対戦相手がおらず、友達と1、2回遊んだだけで終わってしまった。
+もちろん今でも3万円は大金。まあ社会人になったらもっと貰えるだろうしいいか！]]></summary>
+        <author>
+            <name>音MADとポケモンと私</name>
         </author>
     </entry>
     <entry>
@@ -16318,16 +16338,6 @@ APIキーの共用をやめAPIキーの権限を適切に管理したい
         <updated>2022-06-16T01:00:00.000Z</updated>
         <author>
             <name>阿部共実</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HTTP 関連 RFC が大量に出た話と 3 行まとめ]]></title>
-        <id>https://blog.jxck.io/entries/2022-06-16/HTTP-RFCs.html</id>
-        <link href="https://blog.jxck.io/entries/2022-06-16/HTTP-RFCs.html"/>
-        <updated>2022-06-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2022/06/06 ~ 9 あたりに、長きに渡って策定作業が行われていた HTTP 関連の RFC が大量に公開された。RFC 9110: HTTP SemanticsRFC 9111: HTTP CachingRFC 9112: HTTP/1.1RFC 9113: HTTP/2RFC 9114: HTTP/3RFC 9163: Expect-CT Extension for HTTPRFC 9204: QPACK: Field Compression for HTTP/3RFC 9205: Building Protocols with HTTPRFC 9209: The Proxy\-Status HTTP Response Header FieldRFC 9211: The Cache-Status HTTP Response Header FieldRFC 9213: Targeted HTTP Cache ControlRFC 9218: Extensible Prioritization Scheme for HTTPRFC 9220: Bootstrapping WebSockets with HTTP/3RFC 9230: Oblivious DNS over HTTPSいったい何が起こっているのか、それぞれの経緯と開発者が知っておいた方がいいこと、そうでもないことを解説する。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
         </author>
     </entry>
 </feed>
