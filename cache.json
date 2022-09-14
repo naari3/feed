@@ -5172,21 +5172,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
-        },
-        {
-          "id": "hatenablog://entry/13574176438102968569",
-          "author": null,
-          "description": "はてなブログでは、1つのブログを複数のユーザーで共同して編集・管理するための機能「ブログメンバー機能」を提供しています。\n\nこれまでブログメンバーは AtomPub API を利用する事ができませんでしたが、この変更により、ブログメンバー自身のAPIキーを利用して、権限を保有しているブログに対して AtomPub API を利用して操作できるようになりました。\n例として、\n企業の利用などで複数のブログメンバーが AtomPub API を利用したい\n記事公開のためのワークフローを組みたい\nAPIキーの共用をやめAPIキーの権限を適切に管理したい\nなどの状況で便利にご利用いただけるかと考えております。\nこの機能はユーザー様よりご要望いただき実装いたしました。ご要望いただきありがとうございました。\n参考リンク\nはてなブログAtomPub - Hatena Developer Center",
-          "link": "https://staff.hatenablog.com/entry/2022/06/17/110608",
-          "publishedOn": "2022-06-17T02:06:08.000Z",
-          "wordCount": null,
-          "title": "ブログメンバーが AtomPub APIを利用できるようにしました",
-          "enclosure": {
-            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1630045901186054",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1630045901186054"
         }
       ]
     },
@@ -10167,16 +10152,6 @@
           "publishedOn": "2022-06-30T02:11:47.000Z",
           "wordCount": null,
           "title": "IIR vol.55 発行のご挨拶",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=13861",
-          "author": "其田 学",
-          "description": "はじめに 先日、ACMEクライアントであるlegoが、IIJ DNSプラットフォームサービス(略称DPF)に対応しました。これにより、ACME対応の認証局で発行できる、ドメイン名認証のTLS証明書の発...",
-          "link": "https://eng-blog.iij.ad.jp/archives/13861",
-          "publishedOn": "2022-06-17T02:00:38.000Z",
-          "wordCount": null,
-          "title": "legoのIIJ DNSプラットフォームサービスへの対応について",
           "imageUrl": null
         }
       ]
