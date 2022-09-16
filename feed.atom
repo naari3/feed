@@ -2,10 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-16T01:32:20.075Z</updated>
+    <updated>2022-09-16T02:57:48.504Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Cookpad Code Puzzle for RubyKaigi 2022の解説（表ステージ）]]></title>
+        <id>hatenablog://entry/4207112889917399461</id>
+        <link href="https://techlife.cookpad.com/entry/2022/09/16/104443"/>
+        <updated>2022-09-16T01:44:43.000Z</updated>
+        <summary type="html"><![CDATA[技術部の遠藤（@mametter）です。RubyKaigiお疲れ様でした！
+クックパッドはRubyKaigiで、Rubyを使ったパズルを出してました。この記事では、出題者が想定していた解き方を公開します。自力で遊びたい人は解いた後で読んでください。
+Cookpad Code Puzzle for RubyKaigi 2022
+どんなパズル？
+あらかじめ定義された謎の関数の中身を当てるパズルです。適当な引数で呼び出してみて、結果を観察して、中身を想像します。あたりがついたら、同じ関数を定義してみて、テストをパスしたらクリア。
+次のURLでブラウザでプレイできます。もう賞品はもらえませんが、解きたい人は今からでも挑戦してみてください。
+ruby-puzzles-2022.cookpad.tech
+以下、ネタバレで各問題を解説していきます。
+1問目
+あらかじめヒントが書かれています。
+# You can call `func1`
+
+p func1(0)  #=> 1
+p func1(1)  #=> 2
+p func1(2)  #=> 3
+
+# Can you tell how `func1` is defined?
+# Hint: def func1(n) = n + ???
+
+# Define `answer1` that works like `func1`
+def answer1(n)
+  n
+end
+
+
+
+func1は引数に1足したものを返しているので、それをanswer1にそのまま実装するだけです。
+def answer1(n)
+  n + 1
+end
+
+
+
+これで実行ボタンを押したらクリア。
+2問目
+# Congrats! You've solved the first puzzle!
+# Next, challenge func2!
+
+p func2("Hello"…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[不沈艦前夜 後半パート映像 編集後記]]></title>
         <id>hatenablog://entry/4207112889918439057</id>
@@ -16151,30 +16199,6 @@ isitsutbustu-todoke.hatenablog.com
 　観光センター。若者の姿もちらほらあったのと、修学旅行生が自由散策しているぽかった。しかし聖地巡礼しているような学生はいなかった。当然か…。平等院もあるし。そもそも宇治に来たのに、平等院鳳凰堂を完全無視して行動している方が少数派説がある。たしかに平坦な土地と穏やかめな気候でゲームのフィールドマップっぽく、自由散策…]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[日記：22/6/18]]></title>
-        <id>https://note.com/sizes/n/nbcf7f2505b12</id>
-        <link href="https://note.com/sizes/n/nbcf7f2505b12"/>
-        <updated>2022-06-18T14:38:17.000Z</updated>
-        <summary type="html"><![CDATA[・ラーメンにチーズ入れるやつナニモンだよ
-・未確認で進行形のOPのEDが今見たらちょっと古くて悲しくなった
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エッセイ：アイデンティティとしての立体盲の話]]></title>
-        <id>https://note.com/sizes/n/n380bff53a107</id>
-        <link href="https://note.com/sizes/n/n380bff53a107"/>
-        <updated>2022-06-18T14:31:50.000Z</updated>
-        <summary type="html"><![CDATA[人間の目は二つあるけれど、実はその目に映った二つの映像を脳で統合して処理している。片方の目を閉じてみればわかるけれど、左目に映った映像と右目に映った映像はまるで違う。つぶさに観察してみると、印象や意識する対象なども異なることがわかるはずだ。
-立体感や奥行き感と言った感覚は、左右の目に映った映像が統合されることよって起こる。これは両眼視機能おける、立体視だ。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>
