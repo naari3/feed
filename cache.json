@@ -5530,6 +5530,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889919194260",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n先日  TwilioJP-UG Online Vol.8 - TwilioJP-UG | Doorkeeper が開催された。当日のイベントで急遽プログラム内容が変更となり、最新情報を見ていく時間を取れなかったのでブログとしてまとめておこう。\n大枠\nまず、以下のページに大きなのアップデートが記載されている。細かいライブラリの変更は別途それぞれのライブラリ側のChangelog の確認が必要だけど、大きな修正変更に関しては Twilio Changelog で十分である。\nTwilio Changelog\n11/3 ~ 4 にかけて、年１のビッグイベント Twilio SIGNAL  での大きな発表があるだろうと思われている直近では、大きな追加更新などはなかった。以下、ここ3ヶ月で気になったアップデートを取り上げておこう。\nVideo Diagnostics\nThe Video Diagnostics App is now Generally Available\nビデオ通話にはトラブルがつきものだ。両方のネットワーク、PC、映像・音声デバイスが完璧に動作して、ようやく通話ができる。\nそれを、実際にミーティング当日に確認してダメだったらどうなるか。その原因を調べるだけでミーティングが終わるという悲しい結果となってしまう。そうならないためにも、事前に動作環境のテストは必須と言えよう。\nインターネット上で使えるものと、好きなようにカスタマイズできるSDKの2つが提供されている。英語絶対無理な場合には、翻訳して提供することもできるというわけだ。\nTwilio Video Diagnostics App\nAI-Based Noise Cancellation in Twilio Video\n一番 興味深いリリースだ。AIベースのノイズキャンセリングが使えるようになったリリース。\nIntroducing AI-Based Noise Cancellation in Twilio Video\nこの裏側では Krisp という外部サービスが動作しており、このページの中央くらいにある \"Try out the magic of Krisp\" はぜひ参加者の皆さんに見せたかった。\n実際にアクセスしてみてもらえば分かるように、雑音を完全に消すことのできるものとなっている。どんな雑音でもクリアされていて、ビデオ通信に便利だと思わせてくれる。\nTwilio Frontline\nSMS と 電話の機能をさっと使いたい時に、UI込みで提供されている Frontline というサービスがある。\n今までは iOS/Android 限定だったのが、Webでも使えるようになったとのこと。Frontline周りのリリースがそれなりの頻度で来ているので、今後は日本語対応やLINE対応、メール対応まで来ればといったところか。。\nTwilio Connect TwiML\nTwiML といえば、Twilio Voice を使う上でマストな機能となっているが、ここに新しい Connect という TwiML が追加されたようだ。\nTwilio <Connect> TwiML verb Enhancements\nどんなものか気になったものの、これは上記の Twilio Frontline で使えるようになるもののようで、期待していたものではなかった。\n終わりに\n定期的に Twilio Meetup やってるので、こうした最新情報を追っていきたい方は是非ご参加いただければと。\nTwilioJP-UG | Doorkeeper\n何より、11月に開催される Twilio SIGNAL で、どんな新しいものが出てくるか、楽しみである。",
+          "link": "https://www.bokukoko.info/entry/2022/09/18/171923",
+          "publishedOn": "2022-09-18T08:19:23.000Z",
+          "wordCount": 606,
+          "title": "直近のTwilioアップデート確認 2022/09",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889916818345",
           "author": null,
           "description": "ども、@kimihom です。\n\nGoogle Search Console という Google のツールを使ったら、自分のブログの改善点が出てきたので対応することにした。\nAMP\n詳しくははてなブログの特設サイトに譲るとして、簡単に言えば Google etc がより速くWebサイトを表示させるために、AMP に対応したWebサイトは特別に扱われるようになるものである。CSS などのUIが特別になるので、提供元は AMP でのUIをしっかりと確認しておく必要がある。\nはてなブログの場合、設定 > 詳細設定 > 高度な設定 > AMPを配信する を ON にするだけでOKだ。(はてなブログProのみ)\nすると、ブログの URL に ?amp=1 の特別なURLが作られる。\n例えば AMP 付きのWebサイトは以下のような形だ。\n娘が声優になりたいと言い出した時に私ならこう言う - ボクココ\nちなみに、AMP でない通常の URL は以下となる。\n娘が声優になりたいと言い出した時に私ならこう言う - ボクココ\nAMP が入っていると、よりシンプルな表示になっていることが確認できるだろう。AMP で Google 側にキャッシュをさせることで、より検索結果を早く表示されるようになるとのことで、やれるならやったほうがいいに違いない。\nAMP 警告\nさてこの AMP だが、単に はてなブログで 有効にするだけでは 大量の NG が発生する。\n私がNGくらった項目は、ほぼ全て画像の画質問題の警告だった。どうやらある一定の画質のブログ記事のメイン画像でないと、それは正しくAMP化されないようである。\n警告表示されている記事を1つ1つ編集する必要がある。\nまず記事に合う高画質画像を用意\n記事ページに貼り付ける\nはてなブログ設定 > アイキャッチ画像 にて その高画質画像を適用させる\nアイキャッチ画像の登録が必要なので、お忘れなく。\n最終的に全て OK となるように記事を更新した。更新した後、Google に審査リクエストを送ることで、数日待つとちゃんと正しく更新されたページとして登録される。\n全てが正しくAMP化されると、とても気持ちの良いUIが表示される。\n\n広告が表示されない\nお金目当てでブログを書いてる人は、きっとやる気が出ない点となるが、AMP化されたページは広告が表示されない。\n収益を優先させるより、より多くの人々に 自分が書いた記事が届く。それを喜びとする必要があろう。\n終わりに\nサイトの改善案として提供してくれている Google Search Console を紹介した。\nGoogle Search Console では、今回紹介した AMP の確認以外にも、ページのインデックス登録確認、パンくずリストの確認なども可能となっている。\nやらないよりはやったほうがいいに違いないので、時間ある時に見てみていただければ幸いだ。\nAmazon | Google グーグル GA02213-GB [Google Pixel Buds A-Series フルワイヤレスイヤホン Clearly White] | Google(グーグル) | パソコン・周辺機器 通販",

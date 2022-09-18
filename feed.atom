@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-18T08:01:59.290Z</updated>
+    <updated>2022-09-18T09:01:48.281Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[直近のTwilioアップデート確認 2022/09]]></title>
+        <id>hatenablog://entry/4207112889919194260</id>
+        <link href="https://www.bokukoko.info/entry/2022/09/18/171923"/>
+        <updated>2022-09-18T08:19:23.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+先日  TwilioJP-UG Online Vol.8 - TwilioJP-UG | Doorkeeper が開催された。当日のイベントで急遽プログラム内容が変更となり、最新情報を見ていく時間を取れなかったのでブログとしてまとめておこう。
+大枠
+まず、以下のページに大きなのアップデートが記載されている。細かいライブラリの変更は別途それぞれのライブラリ側のChangelog の確認が必要だけど、大きな修正変更に関しては Twilio Changelog で十分である。
+Twilio Changelog
+11/3 ~ 4 にかけて、年１のビッグイベント Twilio SIGNAL  での大きな発表があるだろうと思われている直近では、大きな追加更新などはなかった。以下、ここ3ヶ月で気になったアップデートを取り上げておこう。
+Video Diagnostics
+The Video Diagnostics App is now Generally Available
+ビデオ通話にはトラブルがつきものだ。両方のネットワーク、PC、映像・音声デバイスが完璧に動作して、ようやく通話ができる。
+それを、実際にミーティング当日に確認してダメだったらどうなるか。その原因を調べるだけでミーティングが終わるという悲しい結果となってしまう。そうならないためにも、事前に動作環境のテストは必須と言えよう。
+インターネット上で使えるものと、好きなようにカスタマイズできるSDKの2つが提供されている。英語絶対無理な場合には、翻訳して提供することもできるというわけだ。
+Twilio Video Diagnostics App
+AI-Based Noise Cancellation in Twilio Video
+一番 興味深いリリースだ。AIベースのノイズキャンセリングが使えるようになったリリース。
+Introducing AI-Based Noise Cancellation in Twilio Video
+この裏側では Krisp という外部サービスが動作しており、このページの中央くらいにある "Try out the magic of Krisp" はぜひ参加者の皆さんに見せたかった。
+実際にアクセスしてみてもらえば分かるように、雑音を完全に消すことのできるものとなっている。どんな雑音でもクリアされていて、ビデオ通信に便利だと思わせてくれる。
+Twilio Frontline
+SMS と 電話の機能をさっと使いたい時に、UI込みで提供されている Frontline というサービスがある。
+今までは iOS/Android 限定だったのが、Webでも使えるようになったとのこと。Frontline周りのリリースがそれなりの頻度で来ているので、今後は日本語対応やLINE対応、メール対応まで来ればといったところか。。
+Twilio Connect TwiML
+TwiML といえば、Twilio Voice を使う上でマストな機能となっているが、ここに新しい Connect という TwiML が追加されたようだ。
+Twilio <Connect> TwiML verb Enhancements
+どんなものか気になったものの、これは上記の Twilio Frontline で使えるようになるもののようで、期待していたものではなかった。
+終わりに
+定期的に Twilio Meetup やってるので、こうした最新情報を追っていきたい方は是非ご参加いただければと。
+TwilioJP-UG | Doorkeeper
+何より、11月に開催される Twilio SIGNAL で、どんな新しいものが出てくるか、楽しみである。]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022年8月]]></title>
         <id>https://5h4ru.com/blog/202208/</id>
