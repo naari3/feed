@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-21T04:37:12.424Z</updated>
+    <updated>2022-09-21T05:29:12.689Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メルカリCSツールにおけるDBの疎結合化への取り組み]]></title>
+        <id>22242</id>
+        <link href="https://engineering.mercari.com/blog/entry/loosely-coupled-db-in-cstools/"/>
+        <updated>2022-09-21T14:15:25.000Z</updated>
+        <summary type="html"><![CDATA[この記事は「連載：連載：技術基盤強化プロジェクト「RFS」の現在と未来」として書かれたものです。 メルカリCS Tool チームでTech Leadをしている @hukurou です。前回はトランザクションチームの取り組 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Cookpad Code Puzzle for RubyKaigi 2022の解説（裏ステージ）]]></title>
         <id>hatenablog://entry/4207112889918034603</id>
@@ -15475,16 +15485,6 @@ Amazon
 稲尾さんと最後に仕事をしたのは WEB+DB …]]></summary>
         <author>
             <name>t-wadaのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[持続可能なリモートOnboardingを支えるEngineering Onboardingの全て]]></title>
-        <id>21538</id>
-        <link href="https://engineering.mercari.com/blog/entry/20220623-sustainable-remote-onboarding-for-engineers/"/>
-        <updated>2022-06-23T16:43:07.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは！メルカリ Engineering Office チームの@aisakaです。 私達のチームは「全てのエンジニアに最高の従業員体験を」というミッションを元に、様々な活動を行なっています。私はその中でも、よりよい […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
