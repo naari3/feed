@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-22T18:01:56.520Z</updated>
+    <updated>2022-09-22T19:03:19.881Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -561,6 +561,16 @@ GOGOGOGOGOGOGOGO
     明治時代の苦学生を騙…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[debian:stable-slim で作ったコンテナに MySQL を入れる]]></title>
+        <id>https://blog.ojisan.io/install-mysql-server-to-debian-slim</id>
+        <link href="https://blog.ojisan.io/install-mysql-server-to-debian-slim"/>
+        <updated>2022-09-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに どこかから、 というコードを拾ってきたので動かそうとしていた。 ただ最近の Docker イメージは slim というのを使えばいいと何かで見たので、 を指定して docker build してみたらどうもビルドに失敗する mysql-server がない mysql…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>

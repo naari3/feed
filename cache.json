@@ -9356,6 +9356,16 @@
           "imageUrl": null
         },
         {
+          "id": "https://blog.ojisan.io/install-mysql-server-to-debian-slim",
+          "author": null,
+          "description": "はじめに どこかから、 というコードを拾ってきたので動かそうとしていた。 ただ最近の Docker イメージは slim というのを使えばいいと何かで見たので、 を指定して docker build してみたらどうもビルドに失敗する mysql-server がない mysql…",
+          "link": "https://blog.ojisan.io/install-mysql-server-to-debian-slim",
+          "publishedOn": "2022-09-20T00:00:00.000Z",
+          "wordCount": 717,
+          "title": "debian:stable-slim で作ったコンテナに MySQL を入れる",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/gatsby-auto-react",
           "author": null,
           "description": "createElement はもう不要 昔 どうして JSX を使ってもエラーにならないのか？ に書いたのですが、JSX と React を動かすためには React モジュールそのものもしくは、createElement が import…",
