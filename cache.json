@@ -5540,21 +5540,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220702/20220702113135.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889893388574",
-          "author": null,
-          "description": "ども、@kimihom です。\n\niOSアプリ開発でSwiftUIを使っていると、XcodeのCanvas機能を利用することができる。これを使うとわざわざエミュレーターやiPhoneで見ずとも、UIの調整が可能だ。\n最初のセットアップさえうまくできれば、かなり便利に利用できるので、SwiftUIを使っているなら必ずマスターしたいものである。\n\nプレビューの表示\n私が一番ハマったのが、「ViewModel側で色々と変数を定義しているけど、その変数をどうやってプレビューに渡すのか」という点だった。例えば以下のようなコードがあったとしよう。\n// MyView.swift\nstruct MyView: View {\n    @EnvironmentObject var myViewModel : MyViewModel\n\n    var body: some View {\n        ZStack {\n            if let name = myViewModel.name {\n                Text(\"こんにちは\\(name)さん\")\n            } else {\n                Text(\"初めまして ゲストさん\")\n            }\n        }\n    }\n}\n\nstruct MyView_Previews: PreviewProvider {\n    static var previews: some View {\n        MyView().environmentObject(MyViewModel())\n    }\n}\n\n\n\n\n\n// MyViewModel.swift\nfinal class MyViewModel: NSObject, ObservableObject {\n   …",
-          "link": "https://www.bokukoko.info/entry/2022/06/26/162613",
-          "publishedOn": "2022-06-26T07:26:13.000Z",
-          "wordCount": 561,
-          "title": "SwiftUIでのプレビュー機能を使えるようにしよう",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220626/20220626162149.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220626/20220626162149.jpg"
         }
       ]
     },

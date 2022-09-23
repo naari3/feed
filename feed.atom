@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-23T19:04:54.702Z</updated>
+    <updated>2022-09-23T20:01:43.563Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -15390,50 +15390,6 @@ Steamの無料化もあって、プレイしている人全員Steamで統一す�
 　とはいえ、700円も680円も大した差ではないといえばそうである。大盛自体が僕の「夜ご飯にガツンと食べる」に向いてないのかも、という教訓を得られた。だから800円とか900円かけても特盛にトッピングしたほうが楽しめるのだ、僕にとっては。ちなみに本当に足りなかったのでコンビニでおにぎりを買って食べたら牛丼と合わせて900円くらいになってしまった。「ふつうの牛丼にすればよかった」「やはり外食で夜ご飯を食べると1000円近くかかる」と後悔しつつ帰宅し、いろいろしていたら朝になった。おやすみなさい。]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SwiftUIでのプレビュー機能を使えるようにしよう]]></title>
-        <id>hatenablog://entry/4207112889893388574</id>
-        <link href="https://www.bokukoko.info/entry/2022/06/26/162613"/>
-        <updated>2022-06-26T07:26:13.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-iOSアプリ開発でSwiftUIを使っていると、XcodeのCanvas機能を利用することができる。これを使うとわざわざエミュレーターやiPhoneで見ずとも、UIの調整が可能だ。
-最初のセットアップさえうまくできれば、かなり便利に利用できるので、SwiftUIを使っているなら必ずマスターしたいものである。
-
-プレビューの表示
-私が一番ハマったのが、「ViewModel側で色々と変数を定義しているけど、その変数をどうやってプレビューに渡すのか」という点だった。例えば以下のようなコードがあったとしよう。
-// MyView.swift
-struct MyView: View {
-    @EnvironmentObject var myViewModel : MyViewModel
-
-    var body: some View {
-        ZStack {
-            if let name = myViewModel.name {
-                Text("こんにちは\(name)さん")
-            } else {
-                Text("初めまして ゲストさん")
-            }
-        }
-    }
-}
-
-struct MyView_Previews: PreviewProvider {
-    static var previews: some View {
-        MyView().environmentObject(MyViewModel())
-    }
-}
-
-
-
-
-
-// MyViewModel.swift
-final class MyViewModel: NSObject, ObservableObject {
-   …]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>
