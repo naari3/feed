@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-23T00:03:20.431Z</updated>
+    <updated>2022-09-23T01:30:33.346Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -15400,51 +15400,6 @@ ViacomCBS, Inc., James Doohan, Marc Okran…]]></summary>
         <summary type="html"><![CDATA[電子機器に囲まれて生きているみなさまへ。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エッセイ：嫌いなアカウントをわざわざ覗きに行くことの不快さと快楽]]></title>
-        <id>https://note.com/sizes/n/n3c6fa05f57db</id>
-        <link href="https://note.com/sizes/n/n3c6fa05f57db"/>
-        <updated>2022-06-25T13:26:10.000Z</updated>
-        <summary type="html"><![CDATA[僕は、オーバードーズや自傷をするメンヘラのツイートやスレッドをよく見てしまう。最近はあんまり見てなかったのだけれど、再発した。見てて愉快なものではないし、オーバードーズや自傷をやめたいと願わない人とは絶対に相容れないと思う。だけれども、何かしら引っ掛かりがあるとずっと見てしまう。自分が間違ってると思う物事を手に取って聖典を誦じるのは、不快でもあっても快でもある。予想通りにいくうちは、成功体験なのだし。
-ところで、何か適当な単語を入れるとサジェストに「なんj」と出てくることがめちゃくちゃある。サジェスト通りに検索すると、100%その単語について語ったなんjのまとめブログが出てくる。これもやはり不快だ。不誠実な推測、浅い洞察、詭弁、レッテル張り、暴言にヘイトスピーチ‥‥多くはそれに溢れていて、肥溜めみたいになっている。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Maintainer Month: epubリーダーアプリ bi-epub-readerを作った]]></title>
-        <id>https://efcl.info/2022/06/25/bi-epub-reader/</id>
-        <link href="https://efcl.info/2022/06/25/bi-epub-reader/"/>
-        <updated>2022-06-25T12:40:00.000Z</updated>
-        <summary type="html"><![CDATA[Bibiを単独のアプリとして使えるbi-epub-readerを作りました。
-azu/bi-epub-reader: Standalone Epub reader using Bibi.
-Bibiはepub形式の電子書籍に対応したepubリーダで、bi-epub-readerはElectronでBibiをラップしたスタンドアローンなアプリケーションです。
-mu-epub-readerなども作っていましたが、縦書きのepubファイルは対応していませんでした。
-縦書きの表示を色々調べてみるとBibiが綺麗な表示だったので、単独で動くアプリケーションが欲しくなってbi-epub-readerを作成しました。
-インストール
-The latest binaryをダウンロード
-アプリを開く
-⚠️ このアプリは署名してないので、開くときに警告が出ると思います。
-たとえば、macOSの場合は、次のような手順で開かないと署名がないのでひらけないと思います。
-bi-epub-reader.appを選択
-右クリックから”開く”を選択して開く
-使い方
-書籍の開き方は2つあります。
-bi-epub-readerを開いてから、epubをD&Dで開く
-epubファイルに関連付けて、bi-epub-readerを開く
-前者の方法は、Bibi自体が持ってる機能です。
-
-後者の機能は、bi-epub-readerが実装している機能です。
-epubの関連付けて開く仕組み
-bi-epub-readerではBibiをそのままiframeで表示しているだけです。
-Bibiはソースコードも公開されているオープンソースですが、npmパッケージとして公開されているわけではありません。
-そのため、Bibiを使うにはHTMLやJSを含んだソースコードをアプリにコピーして利用する必要があります。
-satorumurmur/bib…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
