@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-23T12:02:25.164Z</updated>
+    <updated>2022-09-23T13:15:41.206Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[1Password for Open Source Projectsの申請をした]]></title>
+        <id>https://efcl.info/2022/09/23/1password-teams-open-source/</id>
+        <link href="https://efcl.info/2022/09/23/1password-teams-open-source/"/>
+        <updated>2022-09-23T12:18:00.000Z</updated>
+        <summary type="html"><![CDATA[1Passwordは、オープンソースプロジェクトの開発者が無料で1Passwordを利用できる1Password for Open Source Projectsというものをやっています。
+1Password for Open Source Projectsで申請が通ると、Teamプラン相当が無料(無期限)で利用できるようになります。
+1PasswordのAccount(組織/チームのこと)に所属してるMemberは、それぞれ個人のパスワード管理機能とAccount(チーム)で共有するパスワード管理機能が利用できるようになります。
+1Password/1password-teams-open-source: Get a free 1Password Teams membership for your open source project
+チームのための手間いらずで安全なパスワード管理 | 1Password
+1Password Teamsを使ったパスワード管理・運用 - ヴェルク - IT起業の記録
+申請できるプロジェクトの要件は、オープンソースに関わるもので非営利なら、柔軟に対応してくれるそうです。
+オープンソースソフトウェアのプロジェクトだったり、コミュニティやイベントの主催してる場合でも良いらしいです。
+Requirements
+また、そのプロジェクトで実際に1Passwordを使って共有するものがなくても、プロジェクトを安全に保つのに役立つなら申請してもOKとのことです。
+OSS maintainer that uses 1Password, but not needed for project…. · Issue #555 · 1Password/1password-teams-open-source
+自分は色々なオープンソースのメンテナンスをしていますが、textlintが結構大きめなプロジェクトなので、textlintで申請して承認されました。
+https://github.com/1Password/1password-teams-open-source#textlint
+1Password for Open Source Projectsの申請方法
+READMEのHow to applyの手順通りにやれば問題ないと思います。
+https://start.1password.com/sign-up/team?t=B からTeamプランのアカウントを作成する
+アカウントの設定をしてアプリをダウンロードしたり、2要素認証などをセットアップする
+この段階では試用期間なので14日以内に申請する
+この段階で他の人を招待しなくてもOKだった
+https://github.com/1Password/1password-teams-open-source をForkして、申請するプロジェクトの情報をREADMEに足してPRを出す
+PRに書く内容は https://github.com/1Password/1password-teams-open-source/pulls?q=is%3Apr+is%3Aclosed を参考にすれば良さそう
+マージされるのを待つ
+マージされると、申請した1Passwordのアカウント(チーム)がTeamプランになります。
+そうしたら、プロジェクトで関連する他の人を招待すればOKだと思います。
+📝 textlintのcollaborators向けの情報
+textlintのcollaboratorsの方は、次のDiscussionsに詳細を書いてあるので、1Passwordを利用したい場合はコメントしてください。
+https://github.com/orgs/textlint/teams/collaborator/discussions/1
+
+textlintのcollaboratorsとなっている人なら見えるページ
+おわりに
+1Password for Open Source Projectsという1Passwordをオープンソースの開発者などが無料できるプランについて紹介しました。
+申請してから結構すぐ承認されたのでよかったです。
+textlintでは、npmにpublishする向けのマシンアカウントとかがあるので、その管理に利用しようかなと思っています。]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[女性が選んだ女性日本語ラップ female Japanese rap]]></title>
         <id>hatenablog://entry/4207112889919957230</id>

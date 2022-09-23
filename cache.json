@@ -9594,6 +9594,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2022/09/23/1password-teams-open-source/",
+          "author": null,
+          "description": "1Passwordは、オープンソースプロジェクトの開発者が無料で1Passwordを利用できる1Password for Open Source Projectsというものをやっています。\n1Password for Open Source Projectsで申請が通ると、Teamプラン相当が無料(無期限)で利用できるようになります。\n1PasswordのAccount(組織/チームのこと)に所属してるMemberは、それぞれ個人のパスワード管理機能とAccount(チーム)で共有するパスワード管理機能が利用できるようになります。\n1Password/1password-teams-open-source: Get a free 1Password Teams membership for your open source project\nチームのための手間いらずで安全なパスワード管理 | 1Password\n1Password Teamsを使ったパスワード管理・運用 - ヴェルク - IT起業の記録\n申請できるプロジェクトの要件は、オープンソースに関わるもので非営利なら、柔軟に対応してくれるそうです。\nオープンソースソフトウェアのプロジェクトだったり、コミュニティやイベントの主催してる場合でも良いらしいです。\nRequirements\nまた、そのプロジェクトで実際に1Passwordを使って共有するものがなくても、プロジェクトを安全に保つのに役立つなら申請してもOKとのことです。\nOSS maintainer that uses 1Password, but not needed for project…. · Issue #555 · 1Password/1password-teams-open-source\n自分は色々なオープンソースのメンテナンスをしていますが、textlintが結構大きめなプロジェクトなので、textlintで申請して承認されました。\nhttps://github.com/1Password/1password-teams-open-source#textlint\n1Password for Open Source Projectsの申請方法\nREADMEのHow to applyの手順通りにやれば問題ないと思います。\nhttps://start.1password.com/sign-up/team?t=B からTeamプランのアカウントを作成する\nアカウントの設定をしてアプリをダウンロードしたり、2要素認証などをセットアップする\nこの段階では試用期間なので14日以内に申請する\nこの段階で他の人を招待しなくてもOKだった\nhttps://github.com/1Password/1password-teams-open-source をForkして、申請するプロジェクトの情報をREADMEに足してPRを出す\nPRに書く内容は https://github.com/1Password/1password-teams-open-source/pulls?q=is%3Apr+is%3Aclosed を参考にすれば良さそう\nマージされるのを待つ\nマージされると、申請した1Passwordのアカウント(チーム)がTeamプランになります。\nそうしたら、プロジェクトで関連する他の人を招待すればOKだと思います。\n📝 textlintのcollaborators向けの情報\ntextlintのcollaboratorsの方は、次のDiscussionsに詳細を書いてあるので、1Passwordを利用したい場合はコメントしてください。\nhttps://github.com/orgs/textlint/teams/collaborator/discussions/1\n\ntextlintのcollaboratorsとなっている人なら見えるページ\nおわりに\n1Password for Open Source Projectsという1Passwordをオープンソースの開発者などが無料できるプランについて紹介しました。\n申請してから結構すぐ承認されたのでよかったです。\ntextlintでは、npmにpublishする向けのマシンアカウントとかがあるので、その管理に利用しようかなと思っています。",
+          "link": "https://efcl.info/2022/09/23/1password-teams-open-source/",
+          "publishedOn": "2022-09-23T12:18:00.000Z",
+          "wordCount": null,
+          "title": "1Password for Open Source Projectsの申請をした",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2022/09/08/nreal-air/",
           "author": null,
           "description": "最近は、Nreal Airというサングラス型のディスプレイを使って、プログラミングしたり文章を書いたりしています。\nNreal Airは、いわゆるARグラスというジャンルのガジェットです。\nただし、自分の場合はiPad ProやMacbook ProなどのUSB Cで接続できるデバイスから、ただの外部ディスプレイとしてNreal Airを使っています。(AR的な使い方は実質Androidの特定の端末のみが現時点では対応しています。)\nOculusなどのVRでも同じようなことをやっているので、VRでやる人は次の記事を参照してください。\nImmersed + Meta Quest(Oculus Quest) + Macbook Proで、文章やコードを書く | Web Scratch\n必要な道具\nNreal Air\n\nサングラス型のディスプレイとUSB Cケーブルが同梱されています\nNreal Air 度付きインサートレンズ\n\nメガネを利用している人は、インサートレンズを別途購入する必要があります\nコンタクトや裸眼で普通にモニターが見える人はいらないです\nMacBook Pro/iPad Pro\n\nUSB Cで外部ディスプレイ出力できるデバイス\niPhoneやHDMIで接続するようなタイプのデバイスは9月に発売されるNreal Adapterが必要なので、現時点ではUSB Cでディスプレイ出力できるデバイスが必要\n使い方\n📝 自分はARグラスとしてよりも、外部ディスプレイとして使ってるので、そういう使い方の話です。\nNreal AirはUSB Cで接続できる外部ディスプレイとして利用できます。\nNreal Airの外部バッテリーなどは不要で、MacBook ProなどとUSB Cで繋げば、ディスプレイとして認識されます。\n一番最初だけ、Nreal Airのアクティベーションが…",
