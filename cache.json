@@ -5359,23 +5359,7 @@
       "title": "六代目：生活の困難",
       "feedUrl": "https://umector.hatenablog.jp/rss",
       "siteUrl": "https://umector.hatenablog.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/13574176438096912317",
-          "author": null,
-          "description": "こんにちは。こばると（https://twitter.com/428sk1_guardian）です。\n突然ですが、ひらがなって難しくないですか？\n\n奈良時代に用いられた万葉仮名の草書体を原型として生まれた表音文字であるひらがな。その曲線的構造は、楷書に近いカタカナ・漢字とは違った複雑さを持っています。多くの日本語学習者がこのつぶらなフォルムにやられてしまうと言っても過言ではないでしょう。\njapanese.stackexchange.com\njapanese.stackexchange.com\n今や日本語を母語とする国民も少子化の一途を辿っているなか、古き良き日本語の系譜を繋いでいくためには、こうした学習者が不安を感じずに日本語を楽しく学んでいこうと思える環境を作っていかなければなりません。\nすなわち、一番難しいひらがなとは何なのか、それをいち早く特定し、可能な限り五十音の後ろの方に配置することで、ひらがな学習の障壁を取っつきやすいものにしていくことが令和の今、求められているのです。\nところがこのたび、この事実を友人たちに提起したところ、大変な論争を呼ぶ事態となってしまいました。\n\n大の大人が3人やいのやいのと\n\nこの議論に一刻も早く明確な結論を出し、終止符を打つことができなければ、我々の日本語文化はいずれ消滅してしまうでしょう。この世界にとって非常に大きな損失を食い止めるため、われわれは何としても「一番難しいひらがな」を決める審査会を開かなければなりません。\nやるぞ。今すぐ\n深夜1時になに言い出してんのこいつ\nこじつけのイーロン・マスク？\n審査員紹介\nこばると(@428sk1_guardian)\nういお(@meshmesh_tk69)\nたぎょう(@nei_145)\n審査ルール\n【あ行】「あ」「い」「う」「え」「お」\nエントリーNo.001「あ」審査結果\nエントリーNo.0…",
-          "link": "https://umector.hatenablog.jp/entry/2022/06/26/230339",
-          "publishedOn": "2022-06-26T14:03:39.000Z",
-          "wordCount": null,
-          "title": "徹夜で一番難しいひらがなを決めたい",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/u/umector/20220624/20220624132239.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/u/umector/20220624/20220624132239.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "好きなことした軌跡",
@@ -9296,6 +9280,16 @@
       "feedUrl": "https://blog.ojisan.io/rss.xml",
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
+        {
+          "id": "https://blog.ojisan.io/django-cloud-run",
+          "author": null,
+          "description": "ベースとなるイメージ作成 とりあえずローカルにあるもの全部コンテナにつっこんでいます。 不要なものは適宜 dockerignore などで除けておいてください。  は引数でホストやポートを指定できます。インターネットに公開する + Cloud Run…",
+          "link": "https://blog.ojisan.io/django-cloud-run",
+          "publishedOn": "2022-09-23T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Django 製アプリを Cloud Run で動かすまで",
+          "imageUrl": null
+        },
         {
           "id": "https://blog.ojisan.io/pwa-night",
           "author": null,
