@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-29T14:11:33.191Z</updated>
+    <updated>2022-09-29T15:02:37.344Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14899,55 +14899,6 @@ switchスポーツとかボドゲとかクイズとか、色んなことをし�
 「あああああああああああああああああああああ…]]></summary>
         <author>
             <name>竹達アーカイブ通信</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Swift で複数の型のJSON配列をデコードする方法]]></title>
-        <id>hatenablog://entry/4207112889895282137</id>
-        <link href="https://www.bokukoko.info/entry/2022/07/02/113844"/>
-        <updated>2022-07-02T02:38:44.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-Ruby とかの型の緩い言語だと、一つの配列に String や Int を詰め込んでも特に実装の手間にはならないのだけど、そのような環境で作った複数の型のあるJSON配列を、Swift 側で処理するのに少し手間取ったので記事しておこう。
-実装の例
-たとえば、とある API で以下のようなJSONが返ってきたとしよう。
-{
-  "status": "ok",
-  "data": [
-    [1, "taro"],
-    [2, "jiro"]
-  ]
-}
-
-{
-  "status": "ng",
-  "message": "何かに失敗"
-}
-
-
-
-ここでの data は、配列0番目がid で 1番目に名前の配列になっている。これを Swift 側で処理するのと、どうするとなる。。
-struct APIResponse: Decodable {
-    let status: String
-    let message: String?
-    let data: [[String]]?        // NG
-    let data: [[Int, String]]? // NG
-}
-
-
-
-答え: 独自の型を定義する
-enum StringOrIntType: Codable, Hashable {
-    case string(String)
-    case int(Int)
-
-    init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        do {
-            self = try .string(container.decode(String.self))
- …]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>

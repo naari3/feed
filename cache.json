@@ -5463,21 +5463,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220611/20220611214228.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889895282137",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nRuby とかの型の緩い言語だと、一つの配列に String や Int を詰め込んでも特に実装の手間にはならないのだけど、そのような環境で作った複数の型のあるJSON配列を、Swift 側で処理するのに少し手間取ったので記事しておこう。\n実装の例\nたとえば、とある API で以下のようなJSONが返ってきたとしよう。\n{\n  \"status\": \"ok\",\n  \"data\": [\n    [1, \"taro\"],\n    [2, \"jiro\"]\n  ]\n}\n\n{\n  \"status\": \"ng\",\n  \"message\": \"何かに失敗\"\n}\n\n\n\nここでの data は、配列0番目がid で 1番目に名前の配列になっている。これを Swift 側で処理するのと、どうするとなる。。\nstruct APIResponse: Decodable {\n    let status: String\n    let message: String?\n    let data: [[String]]?        // NG\n    let data: [[Int, String]]? // NG\n}\n\n\n\n答え: 独自の型を定義する\nenum StringOrIntType: Codable, Hashable {\n    case string(String)\n    case int(Int)\n\n    init(from decoder: Decoder) throws {\n        let container = try decoder.singleValueContainer()\n        do {\n            self = try .string(container.decode(String.self))\n …",
-          "link": "https://www.bokukoko.info/entry/2022/07/02/113844",
-          "publishedOn": "2022-07-02T02:38:44.000Z",
-          "wordCount": null,
-          "title": "Swift で複数の型のJSON配列をデコードする方法",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220702/20220702113135.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220702/20220702113135.jpg"
         }
       ]
     },

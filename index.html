@@ -20946,70 +20946,11 @@ switchスポーツとかボドゲとかクイズとか、色んなことをし�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
-              rel="noopener">ボクココ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Swift で複数の型のJSON配列をデコードする方法</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/07/02/113844" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ども、@kimihom です。
-
-Ruby とかの型の緩い言語だと、一つの配列に String や Int を詰め込んでも特に実装の手間にはならないのだけど、そのような環境で作った複数の型のあるJSON配列を、Swift 側で処理するのに少し手間取ったので記事しておこう。
-実装の例
-たとえば、とある API で以下のようなJSONが返ってきたとしよう。
-{
-  &quot;status&quot;: &quot;ok&quot;,
-  &quot;data&quot;: [
-    [1, &quot;taro&quot;],
-    [2, &quot;jiro&quot;]
-  ]
-}
-
-{
-  &quot;status&quot;: &quot;ng&quot;,
-  &quot;message&quot;: &quot;何かに失敗&quot;
-}
-
-
-
-ここでの data は、配列0番目がid で 1番目に名前の配列になっている。これを Swift 側で処理するのと、どうするとなる。。
-struct APIResponse: Decodable {
-    let status: String
-    let message: String?
-    let data: [[String]]?        // NG
-    let data: [[Int, String]]? // NG
-}
-
-
-
-答え: 独自の型を定義する
-enum StringOrIntType: Codable, Hashable {
-    case string(String)
-    case int(Int)
-
-    init(from decoder: Decoder) throws {
-        let container &#x3D; try decoder.singleValueContainer()
-        do {
-            self &#x3D; try .string(container.decode(String.self))
- …</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220702/20220702113135.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-09-29T14:11:33.122Z">2022-09-29T14:11:33.122Z</time>
+    <time id="build-timestamp" datetime="2022-09-29T15:02:37.293Z">2022-09-29T15:02:37.293Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
