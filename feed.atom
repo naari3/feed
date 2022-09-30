@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-09-30T09:07:46.884Z</updated>
+    <updated>2022-09-30T10:03:24.886Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,44 @@
         <summary type="html"><![CDATA[メルペイでバックエンドエンジニアをしている@ryuyamaです。 2022年8月23日(火)から3日間のオンライン技術カンファレンス「Merpay Tech Fest 2022」を開催しました。 今年のMerpay Te […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[curlでKeyless Signingする (1) - OpenID Connect編]]></title>
+        <id>hatenablog://entry/4207112889919681594</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2022/09/30/184900"/>
+        <updated>2022-09-30T09:49:00.000Z</updated>
+        <summary type="html"><![CDATA[確実に忘れるであろう将来の自分と、Keyless Signingに異常な興味を持つ日本に数人しかいないであろう人達のための記事です。
+背景
+前提
+Keyless Signing全体のフロー
+OIDCのフロー
+認可コードの取得
+IDトークンの取得
+手動で試す
+OpenIDプロバイダーの情報取得
+認可コードの取得
+code_verifierの生成
+code_challengeの生成
+Authorization Endpointへのアクセス
+IDトークンの取得
+IDトークンの検証
+公開鍵の取得
+公開鍵の生成
+検証
+参考
+まとめ
+背景
+以前sigstoreのソフトウェア署名についてブログを書きました。
+knqyf263.hatenablog.com
+その中でKeyless Signingについては別ブログにすると言っていたのですがサボり続けた結果、全て忘れ去り再び調べる羽目になりました。これはまた忘れるだろうなということで今回はちゃんと書いておきます。ただ概要ではなく理解を深めるために、sigstoreにより提供されているCosignコマンドを使わずに、自分でcurlなどのCLIを使って署名をしてみます。タイトルにはcurlで〜と書きましたが実際にはopensslなど他のコマンドのほうが多分多いです。
+curlでやってみるシリーズは過去にいくつかあります。
+curlでdocker pullをする - knqyf263's blog
+curlで始めるDockerコンテナからの脱出 - knqyf263's blog
+コンテナイメージのlazy pullingをcurlで試してみる - knqyf263's blog
+Keyless Signingと言っても構成要素は既存技術を用いているので、Keyless Signingを通してOpenID ConnectやCertificate T…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
         </author>
     </entry>
     <entry>
