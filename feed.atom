@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-01T16:02:26.592Z</updated>
+    <updated>2022-10-01T17:08:03.804Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -296,6 +296,16 @@ Keyless Signingと言っても構成要素は既存技術を用いているの�
         <summary type="html"><![CDATA[enikki_20220924 - 遺失物取扱所]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[XMLHttpRequest とはなんだったのか]]></title>
+        <id>https://blog.jxck.io/entries/2022-09-30/XMLHttpRequest.html</id>
+        <link href="https://blog.jxck.io/entries/2022-09-30/XMLHttpRequest.html"/>
+        <updated>2022-09-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fetch API の実装が広まり、 IE もリタイアを迎えたことで、今後忘れ去られていくことになるだろう XMLHttpRequest について。どのように始まり、どのように広まり、どのように使われなくなっていくのか。その間に残した多大な功績を残す。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
