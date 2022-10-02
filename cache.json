@@ -8956,6 +8956,16 @@
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/next-astro",
+          "author": null,
+          "description": "最近 Astro を触ったのでそのときに調べたこと。 Dynamic Routing Routing 自体は NextJS と同じようにできる。つまり  に  のようなものを作れば良い。それが URL になる。\nこの id は  のようにして取れる。Next…",
+          "link": "https://blog.ojisan.io/next-astro",
+          "publishedOn": "2022-10-03T00:00:00.000Z",
+          "wordCount": 852,
+          "title": "NextJS にあるアレ、Astro でどうするか",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/django-swagger",
           "author": null,
           "description": "Django から Swagger で吐きたいというニーズは Django で API を作っている時であろう。\nそのときに使われるライブラリに Django REST framework があるが、このライブラリ自体に Swagger…",

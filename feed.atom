@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-02T16:02:06.455Z</updated>
+    <updated>2022-10-02T17:07:57.248Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[NextJS にあるアレ、Astro でどうするか]]></title>
+        <id>https://blog.ojisan.io/next-astro</id>
+        <link href="https://blog.ojisan.io/next-astro"/>
+        <updated>2022-10-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[最近 Astro を触ったのでそのときに調べたこと。 Dynamic Routing Routing 自体は NextJS と同じようにできる。つまり  に  のようなものを作れば良い。それが URL になる。
+この id は  のようにして取れる。Next…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[9月終わりに]]></title>
         <id>hatenablog://entry/4207112889921606004</id>
