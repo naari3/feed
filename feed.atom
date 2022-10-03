@@ -2,10 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-03T15:03:44.651Z</updated>
+    <updated>2022-10-03T16:05:16.032Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Video Codec Unit(VCU) Xilinx Low latencyモードについて]]></title>
+        <id>hatenablog://entry/4207112889924315937</id>
+        <link href="https://fumimaker.net/entry/2022/10/04/003751?utm_source=feed"/>
+        <updated>2022-10-03T15:37:51.000Z</updated>
+        <summary type="html"><![CDATA[https://docs.xilinx.com/r/en-US/pg252-vcu/VCU-Latency-Modes
+遅延モード
+4種類ある．
+通常モード(normal mode)
+フレーム単位処理
+GOPフル機能使える．IPBで動く．
+フレーム間の並び替えや予測など可能
+並び替えなしモード(no-reordering)
+フレーム単位処理
+ハードウェアレートコントロール使える．
+I-onlyとIPPP(?)，Low-delay-Pが使える
+並び替えがない分レイテンシが低い．
+低レイテンシモード
+フレームはスライスに分割されて処理されるが入力と出力はフレーム単位で動く．
+エンコーダとデコーダはスライス単位で動作するが映像入力(カメラ)DMAや映像出力(ディスプレイ)DMAはフレーム単位で動く．
+スライスの終了毎に完了割り込みが発生，スライス分のストリームを出力する
+エンコーダでは4，デコードでは2ストリームあるので並列に処理することで早くなる．
+Xilinx 低レイテンシモード
+このモードではSync IPという別のIPを使うことによって映像入力DMAとエンコーダDMAが同じバッファから同時に読み書きすることができ，サブフレーム(スライス)で動作することができる．
+デコーダとディスプレイも同じバッファにアクセスできるが同期IPはないため，デコーダが半フレームを書き込んだ時にディスプレイの表示を開始するようにソフトウェアで処理している．
+VCU自体の機能ではないが，Sync IPを使うことでカメラキャプチャデータされたDMA書き込みとVCUエンコーダ読み出しの調停をやってくれるみたい．これらのデータはDRAMを介している．(パイプラインではない)
+
+この表の見方がわからなかった・・・．単位はms? 1xのときは2-3msのイベントが1818回あったという意味？
+End to End遅延の例
+
+通常モードだとフレーム単位で遅延が乗るのがわかる．また，低遅延モードではEncodeまでスライス単位の処理ができている．
+Sync IPを使ったXilinx低遅延モードではCapture-Encode間とDecodeはうまくいっているけどDisplay出力の方は普通に1フレームかかってしまっている．このDisplayがどこからどこまでの遅延を指すのかは示されていないけど，ディスプレイ送信で1フレームかかってしまっているということだと(自分は)思っている．また，ディスプレイ自体も早いものでも8ms程度遅延が乗ってくると思われる．(オフィス用だとそれ以上)
+Sync IPを使ってやらないといけないなどある程度の制約はあるものの，これだけ早く動くのは良いね．(しかもH.264やH.265の高圧縮映像) 使ってみたいけど，Sync IPがなかなか厄介そうでこれだったら自作したほうがいいのではという気もしてくる．
+Xilinx synchronization IP
+https://docs.xilinx.com/r/en-US/pg252-vcu/VCU-Sync-IP-v1.0
+実際使うときはGstreamerのAPIを使ってやることがかかれている．gst-plugins-good/sys/v4l2/ext/xlnx-ll/xvfbsync.cが実体っぽい．流れ的にはv4l2がバッファをomxEncoderに送り，v4l2に則りDMAを開始(カメラ映像受信)，SyncIPはDMA書き込みが完了するまでOMXエンコーダをブロックする．こんな感じで同期を保ちつつけるようだ．
+エンコーダの例
+
+デコーダの例
+
+あまり良くわかっていないが一度くらいはVCU+SyncIPでXilinx Low latency Modeでやってみたいと思う．]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[クライアント・サーバサイドに分散する計算ロジックのマイクロサービス化]]></title>
         <id>22391</id>
