@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-03T06:07:13.985Z</updated>
+    <updated>2022-10-03T07:09:36.946Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[クライアント・サーバサイドに分散する計算ロジックのマイクロサービス化]]></title>
+        <id>22391</id>
+        <link href="https://engineering.mercari.com/blog/entry/microservices-for-computational-logic/"/>
+        <updated>2022-10-03T15:13:53.000Z</updated>
+        <summary type="html"><![CDATA[この記事は「連載：技術基盤強化プロジェクト「RFS」の現在と未来」として書かれたものです。 こんにちは、メルカリの Transaction チームでバックエンドエンジニアをしている @oklahomer です。今回は、各 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[インフラ一筋のおじさんが画像生成AI“Stable-Diffusion”を読み込んでみる件]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=14969</id>
