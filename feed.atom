@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-04T02:46:32.077Z</updated>
+    <updated>2022-10-04T03:30:49.246Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,40 @@
         <summary type="html"><![CDATA[こんにちは、メルカリのレコメンドチームで ML Engineer をしている ML_Bear です。 普段はメルカリのホーム画面などに表示されるレコメンドパーツの改善を担当しています。今回はメルカリの莫大なユーザーログデ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kyoto.Mokumoku Vol.3開催しました]]></title>
+        <id>hatenablog://entry/4207112889924395297</id>
+        <link href="https://kmizu.hatenablog.com/entry/2022/10/04/120032"/>
+        <updated>2022-10-04T03:00:32.000Z</updated>
+        <summary type="html"><![CDATA[開催したのが9月14日（水）なので、半月以上経ってから書くのもどうかと思うのですが、こういうのはやっぱり書き留めておくのが重要ですよね、ということで。
+　BonBon株式会社様のオフィスをお借りして開催している、京都でのもくもく会イベント「Kyoto.Mokumoku」も早くも三回目。
+kyoto-mokumoku.connpass.com
+　そろそろ秋の訪れを感じる9月中旬、築200年の町家を使ったオフィスで例によってもくもくと作業をしたのでした。参加メンバー（敬称略）は
+kmizu：主催者
+ManoSoshi：場所提供（スポンサー）
+ぽっくん
+えび
+pinzolo
+KENICHI NAKAHARA
+RyosukeKojima
+　の7名。Kyoto.Mokumokuは結構適当でして、
+19:00までに会場に集合
+一通りメンバーが集ったら自己紹介と今日何やるかを一人1分くらいでしゃべる
+21:10頃までもくもくと作業
+一人1分くらいで成果発表
+懇親会（任意参加）
+というノリです。で、4.まではいつもと同じだったのですが、今回の懇親会はなんと、会場提供のManoSoshiさんがオーナーをされているカレー屋さんであるPAKUPAKU WINE & CURRY LABORATORY（パクパクワインアンドカリーラボラトリー）でカレー懇親会！（しかもプレオープンなので貸し切り！）雰囲気の良い店内で、美味しいキーマカレーや肉（何の肉か忘れたけどとにかく美味しかったです）、ポテトなどに舌鼓を打ちながら楽しいひとときを過ごすことができました。
+キーマカレー
+ポテト
+肉！
+カレーその２
+内装
+第四回は10月11日（火）19:00～を予定していますので、京都市内にお住まいの方、あるいはそうでなくても比較的アクセスしやすい方は参加をご検討いただければと思います。
+kyoto-mokumoku.connpass.com]]></summary>
+        <author>
+            <name>kmizuの日記</name>
         </author>
     </entry>
     <entry>
@@ -14786,26 +14820,6 @@ Firefoxのみ、ダッシュボードにアクセスした際に読み込みが�
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[r7kamura.comのマイナーチェンジ]]></title>
-        <id>https://r7kamura.com/articles/2022-07-07-r7kamura-com-design-change</id>
-        <link href="https://r7kamura.com/articles/2022-07-07-r7kamura-com-design-change"/>
-        <updated>2022-07-06T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[サイトに細かい変更を加えた。]]></summary>
-        <author>
-            <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ActiveSupport::Deprecation.behavior]]></title>
-        <id>https://r7kamura.com/articles/2022-07-07-active-support-deprecation-behavior</id>
-        <link href="https://r7kamura.com/articles/2022-07-07-active-support-deprecation-behavior"/>
-        <updated>2022-07-06T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[RailsのDeprecation Warningを独自の方法で出力する方法について。]]></summary>
-        <author>
-            <name>r7kamura.com</name>
         </author>
     </entry>
 </feed>
