@@ -98,6 +98,65 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Androidアプリ開発を効率的に行うための仕組み</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/10/04/140033" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、サーバーサイドエンジニアをしつつ、最近はAndroid開発初学者のhyogaです。
+入門してからそろそろ1年経とうとしているので、もう初学者と言えないかもしれないですね。
+クックパッドでは、開発を効率的に行うために、様々な仕組みやツールが導入されています。
+この記事ではクックパッドでのAndroidアプリの開発中からアプリのリリースまでに使われる以下のような仕組みやツールについて広くお伝えできればと思います。
+Flipper
+開発者用のデバッグツール
+Android StudioのFile and Code Templates
+haneda: 開発中のアプリを簡単にインストールできる仕組み
+おわりに
+Flipper
+Flipper
+Meta社の作っているFlipperというツールです。
+クライアント側でセットアップし、使いたいPluginごとの対応が必要ですが
+対応さえ済んでしまえばFlipperを開くだけで、以下の内容などが見れるようになります。
+Network
+Shared Preferences
+Layout
+Database
+など
+ネットワークViewerでは、
+APIリクエストをmockして特定のAPIリクエストでエラーを起こしたり、レスポンスを任意の値に置き換えたりすることができます。
+APIリクエストエラー時の挙動が簡単に確認できたりして、とても便利ですね。
+APIレスポンスを書き換えている様子 
+ モックされたAPIレスポンスにより部分的にエラーになっている様子
+
+
+
+
+ 
+ 
+
+
+
+
+
+他にもShared Preferencesの内容を確認して、書き換えたりもできます。
+クックパッドのAndroidエンジニアの中では必須ツールになっています。
+Shared Preferencesの中身を書き換えている様子
+開発者用のデバッグツール
+デバッグビル…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cd_glacier/20220909/20220909171201.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://kmizu.hatenablog.com/" target="_blank"
               rel="noopener">kmizuの日記</a></h3>
           <section class="articles-per-source">
@@ -20853,21 +20912,6 @@ Firefoxのみ、ダッシュボードにアクセスした際に読み込みが�
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">日記:22/7/6</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n640f5190be14" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>・^ ̳&gt;𖥦&lt; ̳^
-・このまま毎日サウナに行くと 丁寧丁寧丁寧に
-・気力がそこを尽きてる
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/82165937/rectangle_large_type_2_8f4c7364c544c9b92b10d63630c27bc8.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -20875,7 +20919,7 @@ Firefoxのみ、ダッシュボードにアクセスした際に読み込みが�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-10-04T04:22:43.897Z">2022-10-04T04:22:43.897Z</time>
+    <time id="build-timestamp" datetime="2022-10-04T05:19:48.554Z">2022-10-04T05:19:48.554Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
