@@ -1534,6 +1534,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889924498911",
+          "author": null,
+          "description": "I couldn't find a list of test patterns in the test pattern generator, so I changed the backugroundid and made it output video. To get the actual image, TPG was written to DRAM using VDMA and read and saved by the CPU, BackgroundId(0x0020) was changed from 0x01 to 0x13. No pass-through or video output patterns are implemented.\n映像伝送とかカメラとか使う時絶対テストで使うIPですが，これのパターン一覧を出してみました．TPGはこれらのテスト画像を出力できると言っていますが実際の映像はデータシートに乗っていません．\nhttps://docs.xilinx.com/r/en-US/pg103-v-tpg/Register-Space\nVideo input pass through\nHorizontal ramp\nVertical ramp\nTemporal ramp\nFlat fields (red, green, blue, black and white)\nCombined vertical and horizontal ramp\nColor bars\nColor sweep\nTartan bars\nDisplayPort\nZone plate\nCross hairs\nCross hatch\nSolid box\nMotion effect for ramps, zone plate, and solid box\n実際の画像をしりたかったのでTPGをV…",
+          "link": "https://fumimaker.net/entry/2022/10/04/221726?utm_source=feed",
+          "publishedOn": "2022-10-04T13:17:26.000Z",
+          "wordCount": 674,
+          "title": "Xilinx Test Pattern Generatorのパターン画像",
+          "enclosure": {
+            "url": "https://user-images.githubusercontent.com/25518367/148981929-cd707e1b-ba47-48d3-909a-3f235f0007d2.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://user-images.githubusercontent.com/25518367/148981929-cd707e1b-ba47-48d3-909a-3f235f0007d2.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889924315937",
           "author": null,
           "description": "https://docs.xilinx.com/r/en-US/pg252-vcu/VCU-Latency-Modes\n遅延モード\n4種類ある．\n通常モード(normal mode)\nフレーム単位処理\nGOPフル機能使える．IPBで動く．\nフレーム間の並び替えや予測など可能\n並び替えなしモード(no-reordering)\nフレーム単位処理\nハードウェアレートコントロール使える．\nI-onlyとIPPP(?)，Low-delay-Pが使える\n並び替えがない分レイテンシが低い．\n低レイテンシモード\nフレームはスライスに分割されて処理されるが入力と出力はフレーム単位で動く．\nエンコーダとデコーダはスライス単位で動作するが映像入力(カメラ)DMAや映像出力(ディスプレイ)DMAはフレーム単位で動く．\nスライスの終了毎に完了割り込みが発生，スライス分のストリームを出力する\nエンコーダでは4，デコードでは2ストリームあるので並列に処理することで早くなる．\nXilinx 低レイテンシモード\nこのモードではSync IPという別のIPを使うことによって映像入力DMAとエンコーダDMAが同じバッファから同時に読み書きすることができ，サブフレーム(スライス)で動作することができる．\nデコーダとディスプレイも同じバッファにアクセスできるが同期IPはないため，デコーダが半フレームを書き込んだ時にディスプレイの表示を開始するようにソフトウェアで処理している．\nVCU自体の機能ではないが，Sync IPを使うことでカメラキャプチャデータされたDMA書き込みとVCUエンコーダ読み出しの調停をやってくれるみたい．これらのデータはDRAMを介している．(パイプラインではない)\n\nこの表の見方がわからなかった・・・．単位はms? 1xのときは2-3msのイベントが1818回あったという意味？\nEnd to End遅延の例\n\n通常モードだとフレーム単位で遅延が乗るのがわかる．また，低遅延モードではEncodeまでスライス単位の処理ができている．\nSync IPを使ったXilinx低遅延モードではCapture-Encode間とDecodeはうまくいっているけどDisplay出力の方は普通に1フレームかかってしまっている．このDisplayがどこからどこまでの遅延を指すのかは示されていないけど，ディスプレイ送信で1フレームかかってしまっているということだと(自分は)思っている．また，ディスプレイ自体も早いものでも8ms程度遅延が乗ってくると思われる．(オフィス用だとそれ以上)\nSync IPを使ってやらないといけないなどある程度の制約はあるものの，これだけ早く動くのは良いね．(しかもH.264やH.265の高圧縮映像) 使ってみたいけど，Sync IPがなかなか厄介そうでこれだったら自作したほうがいいのではという気もしてくる．\nXilinx synchronization IP\nhttps://docs.xilinx.com/r/en-US/pg252-vcu/VCU-Sync-IP-v1.0\n実際使うときはGstreamerのAPIを使ってやることがかかれている．gst-plugins-good/sys/v4l2/ext/xlnx-ll/xvfbsync.cが実体っぽい．流れ的にはv4l2がバッファをomxEncoderに送り，v4l2に則りDMAを開始(カメラ映像受信)，SyncIPはDMA書き込みが完了するまでOMXエンコーダをブロックする．こんな感じで同期を保ちつつけるようだ．\nエンコーダの例\n\nデコーダの例\n\nあまり良くわかっていないが一度くらいはVCU+SyncIPでXilinx Low latency Modeでやってみたいと思う．",
@@ -8471,16 +8486,6 @@
           "wordCount": null,
           "title": "日記:22/7/7",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/82229969/rectangle_large_type_2_0167007a430bacf36635a83e02db2fec.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/ne8fae7837839",
-          "author": null,
-          "description": "僕は常々油ものや糖質だらけのもの、味付けの濃いものを食べるのを控えようと思っているけれど、なかなか実現しない。とりわけ裕福でもない一人暮らしとなると、体に悪いものが第一の選択肢として上がってくるのだ。そういう商品の広告ってまず自分に向けたものだから、広告を目にする機会が多いと言うのもある。これは逆に言うとヘルシーで格調高い食べ物の実態をよく知らないと言うことでもある。実際目黒にある高級スーパーなんか何売ってるのかも知らないし。\n一人暮らしを始めてから、太ってしまった。デブってほどではないんだけど露骨に贅肉が増え、なんとか運動して体を絞ろうと頑張っている。\n続きをみる",
-          "link": "https://note.com/sizes/n/ne8fae7837839",
-          "publishedOn": "2022-07-07T01:08:28.000Z",
-          "wordCount": null,
-          "title": "エッセイ：欲にかまけると後が虚しくなるね",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/82177175/rectangle_large_type_2_2f55b5c7b58f543e6b01158214ea0ff8.jpeg?width=800"
         }
       ]
     },

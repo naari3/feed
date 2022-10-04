@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-04T12:02:33.319Z</updated>
+    <updated>2022-10-04T13:19:27.812Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Xilinx Test Pattern Generatorのパターン画像]]></title>
+        <id>hatenablog://entry/4207112889924498911</id>
+        <link href="https://fumimaker.net/entry/2022/10/04/221726?utm_source=feed"/>
+        <updated>2022-10-04T13:17:26.000Z</updated>
+        <summary type="html"><![CDATA[I couldn't find a list of test patterns in the test pattern generator, so I changed the backugroundid and made it output video. To get the actual image, TPG was written to DRAM using VDMA and read and saved by the CPU, BackgroundId(0x0020) was changed from 0x01 to 0x13. No pass-through or video output patterns are implemented.
+映像伝送とかカメラとか使う時絶対テストで使うIPですが，これのパターン一覧を出してみました．TPGはこれらのテスト画像を出力できると言っていますが実際の映像はデータシートに乗っていません．
+https://docs.xilinx.com/r/en-US/pg103-v-tpg/Register-Space
+Video input pass through
+Horizontal ramp
+Vertical ramp
+Temporal ramp
+Flat fields (red, green, blue, black and white)
+Combined vertical and horizontal ramp
+Color bars
+Color sweep
+Tartan bars
+DisplayPort
+Zone plate
+Cross hairs
+Cross hatch
+Solid box
+Motion effect for ramps, zone plate, and solid box
+実際の画像をしりたかったのでTPGをV…]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Item2vecを用いた商品レコメンド精度改善の試み]]></title>
         <id>22325</id>
@@ -14873,18 +14901,6 @@ Firefoxのみ、ダッシュボードにアクセスした際に読み込みが�
 …]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エッセイ：欲にかまけると後が虚しくなるね]]></title>
-        <id>https://note.com/sizes/n/ne8fae7837839</id>
-        <link href="https://note.com/sizes/n/ne8fae7837839"/>
-        <updated>2022-07-07T01:08:28.000Z</updated>
-        <summary type="html"><![CDATA[僕は常々油ものや糖質だらけのもの、味付けの濃いものを食べるのを控えようと思っているけれど、なかなか実現しない。とりわけ裕福でもない一人暮らしとなると、体に悪いものが第一の選択肢として上がってくるのだ。そういう商品の広告ってまず自分に向けたものだから、広告を目にする機会が多いと言うのもある。これは逆に言うとヘルシーで格調高い食べ物の実態をよく知らないと言うことでもある。実際目黒にある高級スーパーなんか何売ってるのかも知らないし。
-一人暮らしを始めてから、太ってしまった。デブってほどではないんだけど露骨に贅肉が増え、なんとか運動して体を絞ろうと頑張っている。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>

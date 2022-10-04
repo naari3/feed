@@ -78,6 +78,44 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
+              rel="noopener">fumiLab</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Xilinx Test Pattern Generatorのパターン画像</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2022/10/04/221726?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>I couldn&#x27;t find a list of test patterns in the test pattern generator, so I changed the backugroundid and made it output video. To get the actual image, TPG was written to DRAM using VDMA and read and saved by the CPU, BackgroundId(0x0020) was changed from 0x01 to 0x13. No pass-through or video output patterns are implemented.
+映像伝送とかカメラとか使う時絶対テストで使うIPですが，これのパターン一覧を出してみました．TPGはこれらのテスト画像を出力できると言っていますが実際の映像はデータシートに乗っていません．
+https://docs.xilinx.com/r/en-US/pg103-v-tpg/Register-Space
+Video input pass through
+Horizontal ramp
+Vertical ramp
+Temporal ramp
+Flat fields (red, green, blue, black and white)
+Combined vertical and horizontal ramp
+Color bars
+Color sweep
+Tartan bars
+DisplayPort
+Zone plate
+Cross hairs
+Cross hatch
+Solid box
+Motion effect for ramps, zone plate, and solid box
+実際の画像をしりたかったのでTPGをV…</span>
+                  </div>
+                  <img src="https://user-images.githubusercontent.com/25518367/148981929-cd707e1b-ba47-48d3-909a-3f235f0007d2.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank"
               rel="noopener">メルカリエンジニアリングブログ</a></h3>
           <section class="articles-per-source">
@@ -20753,20 +20791,6 @@ Firefoxのみ、ダッシュボードにアクセスした際に読み込みが�
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">エッセイ：欲にかまけると後が虚しくなるね</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/ne8fae7837839" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>僕は常々油ものや糖質だらけのもの、味付けの濃いものを食べるのを控えようと思っているけれど、なかなか実現しない。とりわけ裕福でもない一人暮らしとなると、体に悪いものが第一の選択肢として上がってくるのだ。そういう商品の広告ってまず自分に向けたものだから、広告を目にする機会が多いと言うのもある。これは逆に言うとヘルシーで格調高い食べ物の実態をよく知らないと言うことでもある。実際目黒にある高級スーパーなんか何売ってるのかも知らないし。
-一人暮らしを始めてから、太ってしまった。デブってほどではないんだけど露骨に贅肉が増え、なんとか運動して体を絞ろうと頑張っている。
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/82177175/rectangle_large_type_2_2f55b5c7b58f543e6b01158214ea0ff8.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -20961,7 +20985,7 @@ Firefoxのみ、ダッシュボードにアクセスした際に読み込みが�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-10-04T12:02:33.248Z">2022-10-04T12:02:33.248Z</time>
+    <time id="build-timestamp" datetime="2022-10-04T13:19:27.755Z">2022-10-04T13:19:27.755Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
