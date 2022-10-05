@@ -78,6 +78,39 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">クックパッドマートにおける item-to-item レコメンデーションの変遷</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/cookpad-mart-item-recommendation" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。研究開発部の深澤(@fufufukakaka)です。
+ 本記事ではクックパッドマートにおける item-to-item レコメンデーションについて、その概要とアルゴリズムの変遷についてお話したいと思います。
+item-to-item レコメンデーションとは
+レコメンデーションにはいくつかタスクが存在しますが、今回はその中でも item-to-item レコメンデーションについてお話します。
+item-to-item レコメンデーションでは、「ある商品について、その商品を軸におすすめできるアイテム」を表出します。表現の仕方はサービスによって様々ですが、よく この商品を買っている人にはこちらもおすすめです ,  この商品に関連する商品 などと表現されています。
+さて、その item-to-item レコメンデーションの中にも実は更に種類があります。それは商品間のスコア(距離,類似度,etc) をどの軸で表現するか、です。大きく分けて以下の2種類になるかと思います。
+ある商品について、その商品に関する行動データ(商品a を買った後によく商品b が買われている、など) を利用してスコアを計算する行動データを使った方式。 この商品を買っている人にはこちらもおすすめです といったレコメンドを実現する際に選択されます
+
+
+行動データを使って似ている商品を出すことを目的としたモデルもあります
+商品名や商品画像を使って商品間の類似度を使うコンテンツデータを使った方式。この方式でおすすめ商品を表出している場合は この商品に関連する商品 に適したレコメンドになります
+今回は item-to-item レコメンデーションかつ行動データを使ったモデルの話になります。
+クックパッドマートにおける item-to-item レコメンデーション
+クックパッドマートでは早くから item-to-…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/f/fufufukakaka/20221005/20221005140730.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
               rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
           <section class="articles-per-source">
@@ -21038,7 +21071,7 @@ Firefoxのみ、ダッシュボードにアクセスした際に読み込みが�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-10-05T05:17:23.016Z">2022-10-05T05:17:23.016Z</time>
+    <time id="build-timestamp" datetime="2022-10-05T06:10:40.006Z">2022-10-05T06:10:40.006Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
