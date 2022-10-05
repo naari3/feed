@@ -3283,6 +3283,21 @@
       "siteUrl": "https://katsumakazuyo.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889924656408",
+          "author": null,
+          "description": "先日紹介したブルートゥースで繋がるパソコン用のリモコン、Relaconですが、おかげさまで日々愛用しています。\n\n\nエレコム トラックボールマウス ハンディタイプ Relacon メディアコントロールボタン搭載 スタンド付 静音 Bluetooth ブラック M-RT1BRXBK\nエレコム\nAmazon\nそしてこのリモコンの一番真ん中のメディアボタンに、私はwindowsの音声入力のキーを今割り当てているので、これをポチポチとオンオフすることで、音声入力がとても楽にできるようになりました。\nWindows 11の音声入力の最大の利点は何かというと同音異義語の変換がおそらくほかのいくつかの音声入力の中で一番優秀だということです。一つだけ難点を挙げるとしたらやたらと句読点が入ってしまうので、句読点を何度か削除する必要があるんですが、やっていて分かるのですが、削除する方が入れるよりは簡単なので、まあ入れすぎはいいことにします。\nそうすると、このリモコンとあと矢印キーと削除キーがあれば、ほとんどキーボードを使わなくても入力ができるようになりました。\nしかも家の中であれば、ノートパソコン付属のマイクで、ほとんど間違えずに拾ってくれるので、それも楽です。昔は色々複雑な機器を使っていたのですが、ずいぶんシンプルになったなと思います。 9月に2週間ほどWindows11の音声入力が使えないことがありました。が、またそういう事が無いことを願っています。",
+          "link": "https://katsumakazuyo.hatenablog.com/entry/2022/10/05/091435",
+          "publishedOn": "2022-10-05T00:14:35.000Z",
+          "wordCount": null,
+          "title": "音声入力はWindows11とRelaconの組み合わせにすることでものすごく仕組みがシンプルになりました",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/41VwGFNjXeL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/41VwGFNjXeL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889923074088",
           "author": null,
           "description": "ここ最近、ゴルフのし過ぎとバイクの乗りすぎで肘を痛めています。それで肘をどうやって大事にしようかという流れの一環で、パソコン用のリモコンを買ったのですが、ついでに私のキーボードはbluetoothなのでよく考えたら遠くからでも入力ができるので、膝の上に置いて入力をしてみました。\nそうするとキーボードを打っている間じゅう手を前にして肘を前に出しっぱなしにしなくてよいのでなかなかいい感じです。\nPCスタンドにノートパソコンを立てて、目の位置まで相当画面をあげているので、目はまっすぐ見ることができます。そして、手は膝の上に置いておけるので、こんな感じでリラックスした状態でパソコンを使えるのが良いのではないかという気がしてきました。\nまあ、とりあえずうまくいくかどうかわかりませんが、しばらくやってみます。",
@@ -5480,6 +5495,21 @@
       "feedUrl": "https://www.bokukoko.info/rss",
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
+        {
+          "id": "hatenablog://entry/4207112889924656127",
+          "author": null,
+          "description": "ども、@kimihom です。\n\nRails アプリを作っていて「遅くなったな」と感じる場合、真っ先に原因となりうるのが N+1 なコードを書いてしまっていることだろう。その時の理想の対応は何か、考える機会があったのでブログとしてまとめておく。\nモデル例\nまずわかりやすいようにこういうクラスを作ったとしよう。\n**Company**\nid\nname\n\nhas_many :users, dependent: :delete_all | destroy | nullify\n\n**User**\nid\nname\ncompany_id\n\nbelongs_to :contract\n実際に使う時のサンプルコード\ncompany = Company.create(name: \"サンプル株式会社\")\nuser = company.users.create(name: \"斎藤太郎\")\n\n\n\nN+1 の概念\n今日の内容は N+1 問題なので、まずこれに関して説明しよう。上記の関係があったときに、たとえば以下のようなコードを書いたとしよう。\nusers = User.all\n\nusers.each do |u|\n  puts users.company.id\nend\n\n# User Load (0.6ms)  SELECT \"users\".* FROM \"users\"\n# Contract Load (1.1ms)  SELECT \"contracts\".* FROM \"contracts\" WHERE \"contracts\".\"id\" = $1 LIMIT $2  [[\"id\", 1], [\"LIMIT\", 1]]\n# Contract Load (1.1ms)  SELECT \"contracts\".* FROM \"contracts\" WHERE \"contracts\".\"id\" = $1 …",
+          "link": "https://www.bokukoko.info/entry/2022/10/05/091310",
+          "publishedOn": "2022-10-05T00:13:10.000Z",
+          "wordCount": null,
+          "title": "Rails での N+1 の見つけ方と dependent 指定の選択に関して",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221005/20221005091141.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221005/20221005091141.jpg"
+        },
         {
           "id": "hatenablog://entry/4207112889919194260",
           "author": null,

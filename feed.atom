@@ -2,10 +2,72 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-05T00:04:59.717Z</updated>
+    <updated>2022-10-05T01:29:53.694Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[音声入力はWindows11とRelaconの組み合わせにすることでものすごく仕組みがシンプルになりました]]></title>
+        <id>hatenablog://entry/4207112889924656408</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2022/10/05/091435"/>
+        <updated>2022-10-05T00:14:35.000Z</updated>
+        <summary type="html"><![CDATA[先日紹介したブルートゥースで繋がるパソコン用のリモコン、Relaconですが、おかげさまで日々愛用しています。
+
+
+エレコム トラックボールマウス ハンディタイプ Relacon メディアコントロールボタン搭載 スタンド付 静音 Bluetooth ブラック M-RT1BRXBK
+エレコム
+Amazon
+そしてこのリモコンの一番真ん中のメディアボタンに、私はwindowsの音声入力のキーを今割り当てているので、これをポチポチとオンオフすることで、音声入力がとても楽にできるようになりました。
+Windows 11の音声入力の最大の利点は何かというと同音異義語の変換がおそらくほかのいくつかの音声入力の中で一番優秀だということです。一つだけ難点を挙げるとしたらやたらと句読点が入ってしまうので、句読点を何度か削除する必要があるんですが、やっていて分かるのですが、削除する方が入れるよりは簡単なので、まあ入れすぎはいいことにします。
+そうすると、このリモコンとあと矢印キーと削除キーがあれば、ほとんどキーボードを使わなくても入力ができるようになりました。
+しかも家の中であれば、ノートパソコン付属のマイクで、ほとんど間違えずに拾ってくれるので、それも楽です。昔は色々複雑な機器を使っていたのですが、ずいぶんシンプルになったなと思います。 9月に2週間ほどWindows11の音声入力が使えないことがありました。が、またそういう事が無いことを願っています。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rails での N+1 の見つけ方と dependent 指定の選択に関して]]></title>
+        <id>hatenablog://entry/4207112889924656127</id>
+        <link href="https://www.bokukoko.info/entry/2022/10/05/091310"/>
+        <updated>2022-10-05T00:13:10.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+Rails アプリを作っていて「遅くなったな」と感じる場合、真っ先に原因となりうるのが N+1 なコードを書いてしまっていることだろう。その時の理想の対応は何か、考える機会があったのでブログとしてまとめておく。
+モデル例
+まずわかりやすいようにこういうクラスを作ったとしよう。
+**Company**
+id
+name
+
+has_many :users, dependent: :delete_all | destroy | nullify
+
+**User**
+id
+name
+company_id
+
+belongs_to :contract
+実際に使う時のサンプルコード
+company = Company.create(name: "サンプル株式会社")
+user = company.users.create(name: "斎藤太郎")
+
+
+
+N+1 の概念
+今日の内容は N+1 問題なので、まずこれに関して説明しよう。上記の関係があったときに、たとえば以下のようなコードを書いたとしよう。
+users = User.all
+
+users.each do |u|
+  puts users.company.id
+end
+
+# User Load (0.6ms)  SELECT "users".* FROM "users"
+# Contract Load (1.1ms)  SELECT "contracts".* FROM "contracts" WHERE "contracts"."id" = $1 LIMIT $2  [["id", 1], ["LIMIT", 1]]
+# Contract Load (1.1ms)  SELECT "contracts".* FROM "contracts" WHERE "contracts"."id" = $1 …]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[創作のシュリンクフレーション]]></title>
         <id>https://note.com/sizes/n/n6d87c1babd53</id>
