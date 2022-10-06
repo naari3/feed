@@ -5569,21 +5569,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220717/20220717171459.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889897468399",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nSwiftUI でアプリ開発をしていると、その情報はもう古かったりして正しく動作しないことが多々あるので、執筆した現時点で動作を確認できたコードとともに解説していこうと思う。\nやりたいこと\nAPI で取ってきた 音声URLを再生させる\n再生した録音を停止ボタンで停止、再開ボタンで再開させる\n音声の再生速度を早めたり遅めたりする\n15秒先に進んだり、15秒前に戻れたりする\nSwift でのAudio実装を調べていると、AVPlayer を使う方法と AVAudioPlayer を使う方法がある。ぱっと見 AVAudioPlayer を使うのが正解に見えそうだが、どうやら AVAudioPlayer は Web経由でのHTTPでの再生が実装できない?ようで、AVPlayer を使うのが正解だった。\nApple Developer Documentation\niOS 公式ドキュメントでは標準の定義しか書かれておらず、実際に実装するには、Web上にあるいろいろな事例を見ながら組み合わせていく流れになるだろう・・。\n実装\nvar audioPlayer: AVPlayer?\n\nfunc startPlay() {\n    let url = URL.init(string: \"https://www.hello.com/sample.wav\")\n    audioPlayer = AVPlayer.init(playerItem: AVPlayerItem(url: url))\n\n    // 再生が終わった際のイベント定義\n    NotificationCenter.default\n        .addObserver(self, selector: #selector(playerDidFinishPlaying),\n           …",
-          "link": "https://www.bokukoko.info/entry/2022/07/09/142535",
-          "publishedOn": "2022-07-09T05:25:35.000Z",
-          "wordCount": 679,
-          "title": "Swift での HTTPS での音声再生をさせる方法",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220611/20220611214228.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220611/20220611214228.jpg"
         }
       ]
     },

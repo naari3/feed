@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-06T17:11:31.000Z</updated>
+    <updated>2022-10-06T18:04:02.195Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14903,37 +14903,6 @@ MEGAWEBや青海展示場が完全に無くなってた。お台場の新陳代�
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Swift での HTTPS での音声再生をさせる方法]]></title>
-        <id>hatenablog://entry/4207112889897468399</id>
-        <link href="https://www.bokukoko.info/entry/2022/07/09/142535"/>
-        <updated>2022-07-09T05:25:35.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-SwiftUI でアプリ開発をしていると、その情報はもう古かったりして正しく動作しないことが多々あるので、執筆した現時点で動作を確認できたコードとともに解説していこうと思う。
-やりたいこと
-API で取ってきた 音声URLを再生させる
-再生した録音を停止ボタンで停止、再開ボタンで再開させる
-音声の再生速度を早めたり遅めたりする
-15秒先に進んだり、15秒前に戻れたりする
-Swift でのAudio実装を調べていると、AVPlayer を使う方法と AVAudioPlayer を使う方法がある。ぱっと見 AVAudioPlayer を使うのが正解に見えそうだが、どうやら AVAudioPlayer は Web経由でのHTTPでの再生が実装できない?ようで、AVPlayer を使うのが正解だった。
-Apple Developer Documentation
-iOS 公式ドキュメントでは標準の定義しか書かれておらず、実際に実装するには、Web上にあるいろいろな事例を見ながら組み合わせていく流れになるだろう・・。
-実装
-var audioPlayer: AVPlayer?
-
-func startPlay() {
-    let url = URL.init(string: "https://www.hello.com/sample.wav")
-    audioPlayer = AVPlayer.init(playerItem: AVPlayerItem(url: url))
-
-    // 再生が終わった際のイベント定義
-    NotificationCenter.default
-        .addObserver(self, selector: #selector(playerDidFinishPlaying),
-           …]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>
