@@ -78,6 +78,33 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
+              rel="noopener">たごもりすメモ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Fluentdのflush_mode immediateはいつ使うのか</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2022/10/11/145838" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Fluentd実践入門をあらためて手元でぱらぱらやってたら、しまった! この話をどこかにちょっとでも書こうと思ってたのに忘れてた! という話が出てきたので、忘れないうちに書いて放流する。
+flush_modeとはなにか
+FluentdのOutputプラグインにはセクションで指定できるflush_modeというパラメータがあって、これはOutputプラグインがどういう基準でバッファ内のデータを書き出す(writeメソッドを呼ぶ)かという戦略をコントロールする。有効な値はdefault、immediate、interval、lazyの4つ。
+ただし多くのケースでこのパラメータは明示的には指定されていないはず。というのも、デフォルト値であるところのdefaultの場合には、セクションに指定されている他のパラメータ((と、例外的にセクションの外側に指定されているflush_intervalも見ている。これはFluentd v0.12以前のプラグインの使い方をそのまま踏襲している設定について、動作を壊さないための措置。))を確認して適切なモードを自動的に選ぶようになっているからだ。たとえばバッファのチャンクキーにtimeが指定されている場合にはlazyが選ばれる。
+といったようなことは「Fluentd実践入門」のp166-167あたりにもちろん書いてある。みんな買って読もう!(宣伝)
+flush_mode immediateとは何か
+ところで、flush_modeのうちには、他のパラメータをどうセットしても暗黙には選ばれないものがあって、それがimmediateだ。これはFluentd v1系*1における完全に新しい機能・挙動なので、特に過去の設定パターンとの互換性を考える必要がないため。
+これがどう動作するかというと、バッファリングは…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -20237,7 +20264,7 @@ ONEPIECE無料公開第1弾が終わった。
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-10-11T05:28:27.582Z">2022-10-11T05:28:27.582Z</time>
+    <time id="build-timestamp" datetime="2022-10-11T06:17:56.307Z">2022-10-11T06:17:56.307Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

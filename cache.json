@@ -4756,6 +4756,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889926480985",
+          "author": null,
+          "description": "Fluentd実践入門をあらためて手元でぱらぱらやってたら、しまった! この話をどこかにちょっとでも書こうと思ってたのに忘れてた! という話が出てきたので、忘れないうちに書いて放流する。\nflush_modeとはなにか\nFluentdのOutputプラグインには<buffer>セクションで指定できるflush_modeというパラメータがあって、これはOutputプラグインがどういう基準でバッファ内のデータを書き出す(writeメソッドを呼ぶ)かという戦略をコントロールする。有効な値はdefault、immediate、interval、lazyの4つ。\nただし多くのケースでこのパラメータは明示的には指定されていないはず。というのも、デフォルト値であるところのdefaultの場合には、<buffer>セクションに指定されている他のパラメータ((と、例外的に<buffer>セクションの外側に指定されているflush_intervalも見ている。これはFluentd v0.12以前のプラグインの使い方をそのまま踏襲している設定について、動作を壊さないための措置。))を確認して適切なモードを自動的に選ぶようになっているからだ。たとえばバッファのチャンクキーにtimeが指定されている場合にはlazyが選ばれる。\nといったようなことは「Fluentd実践入門」のp166-167あたりにもちろん書いてある。みんな買って読もう!(宣伝)\nflush_mode immediateとは何か\nところで、flush_modeのうちには、他のパラメータをどうセットしても暗黙には選ばれないものがあって、それがimmediateだ。これはFluentd v1系*1における完全に新しい機能・挙動なので、特に過去の設定パターンとの互換性を考える必要がないため。\nこれがどう動作するかというと、バッファリングは…",
+          "link": "https://tagomoris.hatenablog.com/entry/2022/10/11/145838",
+          "publishedOn": "2022-10-11T05:58:38.000Z",
+          "wordCount": 305,
+          "title": "Fluentdのflush_mode immediateはいつ使うのか",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889915355535",
           "author": null,
           "description": "Fluentd実践入門\nFluentdの現バージョン(v1.15)について世界で一番詳しい本です。というか、Fluentdそのものだけについての、おそらく世界で唯一の技術書です。\n出版社は技術評論社です。電子版もGihyo.jpやKindleはじめ各社で出ます。買ってね!\ngihyo.jp\nTL;DR\n発売日は10月8日です\n\n\n一部書店ではちょっと早く9月末に並ぶかも\n電子版は発売日よりちょっと前に出るかも1\n544ページ、Fluentd本体については考えられる限り盛り込みました\n\n\nFluentdをなんとなく使っている人が確信を持って使えるようになれるはず\n組込みプラグインの頻出用法、本番環境での運用ノウハウ、プラグイン開発からテストなどまで\nエコシステム的な部分についてはカバーできていません\n\n\nKubernetes上での運用やFluent Bitとの組み合わせとか\nAWS FireLensやGCP CloudLoggingなどで使うときのノウハウとか\nでもそのへんを調べるときの基礎的な知識が得られるでしょう\n最後のゲラのチェックと修正はさっき終わらせたぞ!\nなお、本の一部に見開きで左右ぶち抜きの表があります。まあまあな数あります。これがもしかしたら、電子版ではちょっと見にくいかもしれません。残念ですが各ページには収まらなかったのでこうなっています。電子版を購入される方にはすみません。\nアピールポイント\nFluentdについて、前にけっこうやったしだいたい知ってる、と思う人もいると思います。おそらくその人達の多くは次のことを知らないでしょう。\nout_forwardの送信先リスト2、今では再起動なしで増やしたり減らしたりできる\nFluentdの設定ファイルはYAMLで書ける\nひとつめはFluentd v1.8でサポートされたService Discoveryプラグイン…",
