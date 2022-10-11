@@ -2,10 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-11T14:13:51.379Z</updated>
+    <updated>2022-10-11T15:03:27.329Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[curlでKeyless Signingする (2) - Fulcio編]]></title>
+        <id>hatenablog://entry/4207112889920222222</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2022/10/11/231521"/>
+        <updated>2022-10-11T14:15:21.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+証明書発行の流れ
+Certificate Request Input
+Authentication
+Verifying the challenge
+Constructing a certificate
+Signing the certificate
+Certificate Transparency log inclusion
+Return certificate to client
+手動で発行する
+Certificate Request Input
+IDトークン
+鍵ペアの作成
+チャレンジの作成
+リクエストの作成
+リクエストをFulcioに送る
+証明書の中身確認
+Authentication
+Verifying the challenge
+まとめ
+はじめに
+本記事はKeyless Signing連載の二本目です。
+curlでKeyless Signingする (1) - OpenID Connect編
+curlでKeyless Signingする (2) - Fulcio編 （本記事）
+curlでKeyless Signingする (3) - Signed Certificate Timestamp編
+curlでKeyless Signingする (4) - Rekor編
+curlでKeyless Signingする (5) - Verify編
+curlでKeyless Signingする (6) - Trillian編
+前回 はKeyless SigningのうちOpenID Connect（OIDC）によるIDトークンの発行までを行いました。この記事ではFulcioに証明書を発行してもらうところまで行います。
+docs.sigstore.dev
+Fulcioはコード署名のためのルート認証局（CA）という位置づけです。自分で作った公開鍵を投げると証明書を発行してく…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[自責思考の末路って死とは反対じゃな...]]></title>
         <id>https://note.com/dak/n/n508d3850657b</id>
