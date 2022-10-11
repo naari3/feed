@@ -78,36 +78,43 @@
     <ul class="sources card">
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
-              rel="noopener">たごもりすメモ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Fluentdのflush_mode immediateはいつ使うのか</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2022/10/11/145838" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Fluentd実践入門をあらためて手元でぱらぱらやってたら、しまった! この話をどこかにちょっとでも書こうと思ってたのに忘れてた! という話が出てきたので、忘れないうちに書いて放流する。
-flush_modeとはなにか
-FluentdのOutputプラグインにはセクションで指定できるflush_modeというパラメータがあって、これはOutputプラグインがどういう基準でバッファ内のデータを書き出す(writeメソッドを呼ぶ)かという戦略をコントロールする。有効な値はdefault、immediate、interval、lazyの4つ。
-ただし多くのケースでこのパラメータは明示的には指定されていないはず。というのも、デフォルト値であるところのdefaultの場合には、セクションに指定されている他のパラメータ((と、例外的にセクションの外側に指定されているflush_intervalも見ている。これはFluentd v0.12以前のプラグインの使い方をそのまま踏襲している設定について、動作を壊さないための措置。))を確認して適切なモードを自動的に選ぶようになっているからだ。たとえばバッファのチャンクキーにtimeが指定されている場合にはlazyが選ばれる。
-といったようなことは「Fluentd実践入門」のp166-167あたりにもちろん書いてある。みんな買って読もう!(宣伝)
-flush_mode immediateとは何か
-ところで、flush_modeのうちには、他のパラメータをどうセットしても暗黙には選ばれないものがあって、それがimmediateだ。これはFluentd v1系*1における完全に新しい機能・挙動なので、特に過去の設定パターンとの互換性を考える必要がないため。
-これがどう動作するかというと、バッファリングは…</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">【第6回】はてなブログお知らせレター：「グループ」をリニューアルしました</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.hatenablog.com/entry/2022/10/11/170000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>「読みたいブログを読みたい」「読んでほしい人に読んでほしい」を叶えたい
+いつもはてなブログをお使いいただきありがとうございます。はてなブログ プロデューサーの永田です。先週に続き、6回目のお知らせレターです。
+「グループ」をリニューアルしました
+グループの使い方
+グループに記事の更新について流すには、「カテゴリー」をひも付けましょう
+まずはグループに入ってみましょう！開設時期グループも作りました
+興味のあるグループを見つけよう
+編集部おすすめグループ
+新しくなったグループをよろしくお願いします
+はてなブログお知らせレター バックナンバー
+「グループ」をリニューアルしました
+これまでも「ブログ グループ」という名前で提供していた機能ですが、名前を「グループ」と改め、グループのトップもリニューアルしました。
+
+「グループ」は、共通の話題について書いているブログ同士が集まって交流できるコミュニティです。自分の興味があるキーワードについて書いているブログをまとめて読めたり、同じことを書いている人とつながったりできます。
+はてなブログのトップページや、ダッシュボードの左サイドバーから見ることができます。
+グループの使い方
+書いた記事につけたカテゴリーとグループをひも付けておくと、自分のブログを更新した際に、参加しているグループにも記事が更新されたことが表示されます。「1つのブログでいろいろなことを書きたいけど、違う話題の記事は興味のある人に読んでほしい」を叶えます。
+
+
+グループに記事の更新について流すには、「カテゴリー」をひも付けましょう
+グループは、あなたのブログの記事カテゴリーとひも付きます。記事に付けるカテゴリーと、流したいグループのひも付けをしましょう。
+
+各グループにのページにある「グループに参加」をクリックすると、参加するブログを選べます。次に、「参加する記事のカテゴリ…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20221007/20221007152121.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander" open>
                 <summary class="article-expander__title">今週のはてなブログランキング〔2022年10月第2週〕</summary>
@@ -154,6 +161,33 @@ flush_mode immediateとは何か
     担当回が「作画崩壊」になるアニメ演出家の佐々木純人へのインタビュー記事と、それに対するアニメ関係者の反応まとめ - 法華狼の…</span>
                   </div>
                   <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20221011/20221011090350.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
+              rel="noopener">たごもりすメモ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Fluentdのflush_mode immediateはいつ使うのか</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2022/10/11/145838" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Fluentd実践入門をあらためて手元でぱらぱらやってたら、しまった! この話をどこかにちょっとでも書こうと思ってたのに忘れてた! という話が出てきたので、忘れないうちに書いて放流する。
+flush_modeとはなにか
+FluentdのOutputプラグインにはセクションで指定できるflush_modeというパラメータがあって、これはOutputプラグインがどういう基準でバッファ内のデータを書き出す(writeメソッドを呼ぶ)かという戦略をコントロールする。有効な値はdefault、immediate、interval、lazyの4つ。
+ただし多くのケースでこのパラメータは明示的には指定されていないはず。というのも、デフォルト値であるところのdefaultの場合には、セクションに指定されている他のパラメータ((と、例外的にセクションの外側に指定されているflush_intervalも見ている。これはFluentd v0.12以前のプラグインの使い方をそのまま踏襲している設定について、動作を壊さないための措置。))を確認して適切なモードを自動的に選ぶようになっているからだ。たとえばバッファのチャンクキーにtimeが指定されている場合にはlazyが選ばれる。
+といったようなことは「Fluentd実践入門」のp166-167あたりにもちろん書いてある。みんな買って読もう!(宣伝)
+flush_mode immediateとは何か
+ところで、flush_modeのうちには、他のパラメータをどうセットしても暗黙には選ばれないものがあって、それがimmediateだ。これはFluentd v1系*1における完全に新しい機能・挙動なので、特に過去の設定パターンとの互換性を考える必要がないため。
+これがどう動作するかというと、バッファリングは…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -20264,7 +20298,7 @@ ONEPIECE無料公開第1弾が終わった。
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-10-11T07:13:23.236Z">2022-10-11T07:13:23.236Z</time>
+    <time id="build-timestamp" datetime="2022-10-11T08:05:45.806Z">2022-10-11T08:05:45.806Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
