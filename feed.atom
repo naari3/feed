@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-12T19:06:35.234Z</updated>
+    <updated>2022-10-12T20:01:52.958Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -109,6 +109,16 @@ www.…]]></summary>
         <summary type="html"><![CDATA[授業中に発狂して喫煙所に行ってタバコを吸った 続きをみる]]></summary>
         <author>
             <name>okazsystem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vite で楽々 lit 環境構築]]></title>
+        <id>https://blog.ojisan.io/create-lit-app-with-vite</id>
+        <link href="https://blog.ojisan.io/create-lit-app-with-vite"/>
+        <updated>2022-10-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[lit の環境構築はめんどくさい lit のドキュメント を読むと rollup でのビルド環境構築をしていたり、decorator 入れる入れないにしろそれぞれ TS や Babel の設定が必要になるので、実は動かすまでの手順はそれなりにある。 vite…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -450,6 +460,16 @@ flush_mode immediateとは何か
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[React ユーザーのための lit]]></title>
+        <id>https://blog.ojisan.io/lit-for-react-user</id>
+        <link href="https://blog.ojisan.io/lit-for-react-user"/>
+        <updated>2022-10-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[lit を使う機会があったので、「React でやる、あれをどうするのか」というメモを残しておく。 前提 環境構築めんどくさいのでplayground で試す。 state Reactive properties という章がドキュメントにある通り、Lit には Reactive…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
@@ -14604,18 +14624,6 @@ ViacomCBS, Inc., James Doohan, Marc …]]></summary>
         <summary type="html"><![CDATA[window.newWindowDimensionsで調整できて嬉しい。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エッセイ：インターネットに居場所のない人の生の声について]]></title>
-        <id>https://note.com/sizes/n/nac36e0fbe49a</id>
-        <link href="https://note.com/sizes/n/nac36e0fbe49a"/>
-        <updated>2022-07-15T07:42:21.000Z</updated>
-        <summary type="html"><![CDATA[明確に言えることなのだが、僕は今のインターネットにウンザリしている。倫理や秩序はないのに好き勝手言える訳ではなく、むしろ倫理や秩序がないからこそ、何を言ってもリスクが付きまとい、自己検閲を強いられる息苦しい空間になっているからだ。
-倫理や秩序って昔からなかったのかもしれないけれど、みんな発言の責任はなかったと言えるから、レスバトルなり荒らし行為は、ある種フェアではあった。むかし敵対していた人に、自分の育てたパートスレを「報復として荒らすわ」と宣言されたことがあったけれど、居直ったクズと居直ったクズのバーリトゥードができる場ではあったのだ。この点で言うと、鍵引RTとか捨て垢での謗りでネチネチやっている今よりはスカッとしてる。多田野数人や米倉涼子には同意してくれないであろう話だろうが。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>
