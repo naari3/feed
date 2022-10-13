@@ -78,6 +78,53 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank"
+              rel="noopener">knqyf263&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">curlでKeyless Signingする (3) - Signed Certificate Timestamp編</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2022/10/13/201913" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はじめに
+SCTとは？
+sigstoreにおけるSCT
+SCTの確認
+CTログサーバの公開鍵取得
+Log IDの検証
+署名検証
+SCTのデータフォーマット
+sct_version
+signature_type
+timestamp
+entry_type
+signed_entry
+tbs_certificate
+extensions
+SCT署名対象の作成
+SCTの検証
+まとめ
+はじめに
+sigstoreのKeyless SigningをCosignコマンドを使わずに手動で頑張るシリーズの三本目です。誰にも望まれてないけどやりきります。
+curlでKeyless Signingする (1) - OpenID Connect編
+curlでKeyless Signingする (2) - Fulcio編
+curlでKeyless Signingする (3) - Signed Certificate Timestamp編 （本記事）
+curlでKeyless Signingする (4) - Rekor編
+curlでKeyless Signingする (5) - Verify編
+curlでKeyless Signingする (6) - Trillian編
+前回はFulcioで証明書の発行までを行いました。Fulcioから返された署名の中にSigned Certificate Timestamp (SCT) が含まれているので、今回はそれの検証をしてみます。シュッと終わらせるつもりがドチャクソハマったので1つの記事にしました。一つだけ言っておきたいのは手動でCLIで検証するとかわけのわからないことを言ってないでおとなしくプログラムを書いたほうが良いということです。
+あとKeylessとか言ってますがもはや関係なくてただのSCT検証になっています。ただCosignのコードを読んで挙動を理解した…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220920/20220920233749.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://nkaoobt.hatenablog.com/" target="_blank"
               rel="noopener">音MADとポケモンと私</a></h3>
           <section class="articles-per-source">
@@ -20667,33 +20714,9 @@ March 12, 2017
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2022-07-15">2022-07-15</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
-              rel="noopener">自由さ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">昨日いろいろあってラジオとれなかっ...</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n6e9b1f1f3d08" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>昨日いろいろあってラジオとれなかったので、今日は二本立てです(スミマセン) 続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-10-13T11:02:47.901Z">2022-10-13T11:02:47.901Z</time>
+    <time id="build-timestamp" datetime="2022-10-13T12:02:27.027Z">2022-10-13T12:02:27.027Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

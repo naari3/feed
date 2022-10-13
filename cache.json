@@ -3680,6 +3680,21 @@
       "siteUrl": "https://knqyf263.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889920029575",
+          "author": null,
+          "description": "はじめに\nSCTとは？\nsigstoreにおけるSCT\nSCTの確認\nCTログサーバの公開鍵取得\nLog IDの検証\n署名検証\nSCTのデータフォーマット\nsct_version\nsignature_type\ntimestamp\nentry_type\nsigned_entry\ntbs_certificate\nextensions\nSCT署名対象の作成\nSCTの検証\nまとめ\nはじめに\nsigstoreのKeyless SigningをCosignコマンドを使わずに手動で頑張るシリーズの三本目です。誰にも望まれてないけどやりきります。\ncurlでKeyless Signingする (1) - OpenID Connect編\ncurlでKeyless Signingする (2) - Fulcio編\ncurlでKeyless Signingする (3) - Signed Certificate Timestamp編 （本記事）\ncurlでKeyless Signingする (4) - Rekor編\ncurlでKeyless Signingする (5) - Verify編\ncurlでKeyless Signingする (6) - Trillian編\n前回はFulcioで証明書の発行までを行いました。Fulcioから返された署名の中にSigned Certificate Timestamp (SCT) が含まれているので、今回はそれの検証をしてみます。シュッと終わらせるつもりがドチャクソハマったので1つの記事にしました。一つだけ言っておきたいのは手動でCLIで検証するとかわけのわからないことを言ってないでおとなしくプログラムを書いたほうが良いということです。\nあとKeylessとか言ってますがもはや関係なくてただのSCT検証になっています。ただCosignのコードを読んで挙動を理解した…",
+          "link": "https://knqyf263.hatenablog.com/entry/2022/10/13/201913",
+          "publishedOn": "2022-10-13T11:19:13.000Z",
+          "wordCount": 1387,
+          "title": "curlでKeyless Signingする (3) - Signed Certificate Timestamp編",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220920/20220920233749.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20220920/20220920233749.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889920222222",
           "author": null,
           "description": "はじめに\n証明書発行の流れ\nCertificate Request Input\nAuthentication\nVerifying the challenge\nConstructing a certificate\nSigning the certificate\nCertificate Transparency log inclusion\nReturn certificate to client\n手動で発行する\nCertificate Request Input\nIDトークン\n鍵ペアの作成\nチャレンジの作成\nリクエストの作成\nリクエストをFulcioに送る\n証明書の中身確認\nAuthentication\nVerifying the challenge\nまとめ\nはじめに\n本記事はKeyless Signing連載の二本目です。\ncurlでKeyless Signingする (1) - OpenID Connect編\ncurlでKeyless Signingする (2) - Fulcio編 （本記事）\ncurlでKeyless Signingする (3) - Signed Certificate Timestamp編\ncurlでKeyless Signingする (4) - Rekor編\ncurlでKeyless Signingする (5) - Verify編\ncurlでKeyless Signingする (6) - Trillian編\n前回 はKeyless SigningのうちOpenID Connect（OIDC）によるIDトークンの発行までを行いました。この記事ではFulcioに証明書を発行してもらうところまで行います。\ndocs.sigstore.dev\nFulcioはコード署名のためのルート認証局（CA）という位置づけです。自分で作った公開鍵を投げると証明書を発行してく…",
@@ -8428,16 +8443,6 @@
           "wordCount": 2317,
           "title": "エッセイ：慢性化する労働",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/82748553/rectangle_large_type_2_428866000e36a181ffee7bfe5f085dfd.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n6e9b1f1f3d08",
-          "author": null,
-          "description": "昨日いろいろあってラジオとれなかったので、今日は二本立てです(スミマセン) 続きをみる",
-          "link": "https://note.com/sizes/n/n6e9b1f1f3d08",
-          "publishedOn": "2022-07-15T23:55:41.000Z",
-          "wordCount": null,
-          "title": "昨日いろいろあってラジオとれなかっ...",
-          "imageUrl": null
         }
       ]
     },
