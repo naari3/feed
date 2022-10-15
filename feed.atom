@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-15T00:04:49.360Z</updated>
+    <updated>2022-10-15T01:30:17.586Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Stable DiffusionのリモートデスクトップとGPUボックスの使い勝手の違い]]></title>
+        <id>hatenablog://entry/4207112889927584318</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2022/10/15/094147"/>
+        <updated>2022-10-15T00:41:47.000Z</updated>
+        <summary type="html"><![CDATA[この記事を書いたところ、たくさんの方から「リモートデスクトップを使えばいいしゃん」とツッコミを受けたので、比較してみました
+katsumakazuyo.hatenablog.com
+結論から言いますと私の14インチのノートパソコンだと画面が、NMKDのGUIの画面が小さすぎてちょっと厳しいというのがいまのところの判断です。こんな感じ。
+
+リモートデスクトップの画面が当たり前ですが、通常のノートより一回り小さくて、さらにその内周にNMKDがはいるので、フォントの文字が極小サイズになってしまいます。
+デスクトップ側の画面を175％とかにしたら、ギリいける感じでしたので、たぶん、そういった工夫が必要みたいです。
+あと、Promptに文字を入れるのも、日本語モードになっていると、キーボード入力受け付けないみたいです。これ、気をつけないと。
+あと、超当たり前ですが、できあがったファイルもリモート側に保存されるので、コピーとか、それを元絵にした再作成などはもちろん簡単ですが、もう一度それをこっちにもってくるのにもそこそこ面倒です。
+たぶん、外付けのディスプレイがなんとかなりそうなのと、もともとのデスクトップ側の文字をもう少し大きくしておけばなんとかなるかもしれませんが、ノート側の文字を拡大してもリモート側は拡大されないので、この辺も試行錯誤が必要ですね。
+また、当たり前ですが、GPUを繋いだノートにノートからつないだら、気持ちのいい大きさで作業ができそうでした。これはよいっ。
+まぁ、無料でできますので、いろいろ制約はありますが工夫をすればなんとかなりそうです。GPU Boxを持ち歩かなくていいのも魅力ですよね。まぁ、ここまでやるのなら、クラウドのサービスでもいいような気がしますが。
+みなさま、ありがとうございました。いろいろ使い分けてみます。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[深夜徘徊1-2]]></title>
         <id>https://note.com/ecolidelvsvc11/n/nab43c1a7d1f1</id>
