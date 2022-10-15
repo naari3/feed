@@ -78,6 +78,30 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/tarent26" target="_blank"
+              rel="noopener">チャーミングじろうちゃん</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">新連載始まりました。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/tarent26/n/na7d57a37aa23" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>しくじりサウナ店長　第1話「ボク、サウナ大嫌い」しくじり続けたあの男のその後、閑職への左遷人事から物語は再び動き出す。pachiseven.jp
+        
+    
+
+
+続きをみる</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
               rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
           <section class="articles-per-source">
@@ -20527,69 +20551,11 @@ Amazon
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
-              rel="noopener">fumiLab</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GstreamerでH.264 RTP送受信する</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2022/07/17/231342?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>映像伝送実験でH.264を使ったRTP通信したくなったのでGstreamerでやってみました．備忘録です．
-https://gstreamer.freedesktop.org/
-環境
-Ubuntu Linux 20.04
-Roland UVC-01
-受信側
-gst-launch-1.0 -v v4l2src device&#x3D;/dev/video0 ! video/x-raw,width&#x3D;1280,height&#x3D;720,framerate&#x3D;30/1,format&#x3D;YUY2 ! videoconvert ! video/x-raw,format&#x3D;NV12 ! x264enc ! rtph264pay ! udpsink host&#x3D;127.0.0.1 port&#x3D;5005 sync&#x3D;false
-
-
-
-やっていることとしては，RAWで1280*720 30fpsを入力してx264encのソースとして対応してるNV12に変換したあとX264encに入れてrtph264pay udpsinkでrtp送信しています．
-今回はHDMI入力した映像を出力したかったのでRolandのお高いまあまあ良いキャプチャボードを使っています．これなにが良いってRAW(YUV)で1080p60とか出力できるところなんですよね．Mjpegとかじゃないので実験や研究段階で非常に重宝します．
-
-Roland/UVC-01 USB VIDEO CAPTURE
-
-Roland(ローランド)
-Amazon
-
-ちなみに，普通のUSBカメラだとMjpegで720p30などで出力されることが多く，RAWで出力しようとすると8fpsとか3fpsとかしか出力できないことが多いです(USB2.0はたった480Mbpsなので帯域的にも仕方ない)．手持ちのカメラがどんなものを出力できるのか調べる方法は余談で述べます．
-Mjpegで入力し…</span>
-                  </div>
-                  <img src="https://i.gyazo.com/a665bb57142ca45947e85f08b0fcabe6.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
-              rel="noopener">自由さ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">ラジオ：老人福祉のおこぼれにあずかる生き方</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n2ad840fbc236" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>No content preview</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-10-15T01:30:17.515Z">2022-10-15T01:30:17.515Z</time>
+    <time id="build-timestamp" datetime="2022-10-15T02:55:43.157Z">2022-10-15T02:55:43.157Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
