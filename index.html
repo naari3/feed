@@ -78,6 +78,36 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Swift Concurrencyでセマフォを作る</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/10/24/090000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、レシピサービス開発部と技術部兼務のヴァンサン(@vincentisambart)です。
+Swift Concurrencyに関する中級の記事がまだ多くない気がしていたので、そういう記事を書くことにしました。
+Swift Concurrencyの理解を深めたい人にはWWDC21の「Swift concurrency: Behind the scenes」がおすすめです。そのプレゼンの中でDispatchSemaphoreをSwift Concurrencyで使うべきではないと述べられました。
+
+Swift Concurrencyに提供されているツールを見ると、セマフォがありません。でも提供されたものでセマフォを作れないでしょうか？セマフォを使いたい場面が多いわけではありませんが、良い勉強になると思います。
+どういうツールが標準で提供されているのでしょうか？safe(安全に使えるもの)はactor、Task、TaskGroup、async let、AsyncStream、CheckedContinuation、くらいですかね。
+セマフォ自体の説明をすると長くなるので、下記はセマフォをある程度知っている前提で書いています。セマフォのメソッド名はセマフォの説明でたまに使われる分かりにくいPとVではなく、DispatchSemaphoreも使っているwait()(待つ)とsignal()(合図を送る)を使います。
+セマフォの値が0以下だったらwait()が次のsignal()まで待つ必要があるので、待たせる仕組み、もう待たなくて良いという合図を送る仕組み、が必要です。Swift Concurrencyのそれぞれのツールで実装できないか検討してみましょう。
+actor
+actor自体でできることを色々見ても、何かを待たせるすべはなさそうです(ビジーウェイトは論外)。
+とはい…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/v/vincentisambart/20221021/20221021080559.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.ojisan.io" target="_blank"
               rel="noopener">blog.ojisan.io&#x27;s RSS Feed</a></h3>
           <section class="articles-per-source">
@@ -101,6 +131,28 @@
   <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2022-10-23">2022-10-23</time></h2>
     <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
+              rel="noopener">自由さ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">多作になるとめちゃくちゃ楽だという話</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/na63df72f6ea8" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Twitterを見ている人ならよくご存知かもしれないが、ixyさんというイラストレーターがいる。この人はもともと大学を辞めてプログラマーをやっていた人で、絵を描き始めたきっかけも「目立ちたかったから」だという。
+ixyさんは多作なのが特徴で、基本的に毎日1枚絵が投稿される。それもかなりクオリティが高く、普通に万バズすることもザラだ。
+続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/89642177/rectangle_large_type_2_305e8613ad16691b16afc0d4d0a31e45.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
@@ -20458,7 +20510,7 @@ open.spotify.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-10-23T23:02:07.600Z">2022-10-23T23:02:07.600Z</time>
+    <time id="build-timestamp" datetime="2022-10-24T00:05:07.954Z">2022-10-24T00:05:07.954Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
