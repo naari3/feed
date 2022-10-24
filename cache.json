@@ -8771,6 +8771,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2022-10-25/corb-to-orb.html",
+          "author": null,
+          "description": "CORB (Cross Origin Read Blocking) が Fetch の仕様から消え、後継の ORB (Opaque Response Blocking) が策定作業中である。ここでどのような変更が起こっているのかを調査し、記録する。",
+          "link": "https://blog.jxck.io/entries/2022-10-25/corb-to-orb.html",
+          "publishedOn": "2022-10-25T00:00:00.000Z",
+          "wordCount": null,
+          "title": "CORB から ORB へ",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2022-09-30/XMLHttpRequest.html",
           "author": null,
           "description": "Fetch API の実装が広まり、 IE もリタイアを迎えたことで、今後忘れ去られていくことになるだろう XMLHttpRequest について。どのように始まり、どのように広まり、どのように使われなくなっていくのか。その間に残した多大な功績を残す。",
