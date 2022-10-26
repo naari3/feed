@@ -1590,21 +1590,6 @@
             "length": "0"
           },
           "imageUrl": "https://i.gyazo.com/91e2c195c83a95b2309780b06d23b645.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889903773383",
-          "author": null,
-          "description": "Eagleで基板外形にこだわるために貧弱なEagleのCADでやりたくない，ということありますよね．しかしulpのdxf importerがまともに使えずブチギレていたが，Fusionを使ってやればできることがわかった．Fusion360で書いたスケッチがそのままアウトラインとする事ができる．\nちなみに，EagleのULP dxf importでお手軽にやる場合はこの辺が参考になる．(が，自分の場合は全然うまくいかなかった．一部の直線しか入らず曲線や直線が反映されない．パスの問題やグループ化？の問題，ポリゴンの問題やdxfの書き出しバージョンの問題などいろいろあるようだ．\nforums.autodesk.com\ntodbot.com\nforum.freecadweb.org\neagle dxf import problemとかで調べると色々でてくる．解決策はわかりませんでした・・・いろいろ試したけどダメでした．\nしかし，Fuision360を使うことで解決している例があり試してみた．\n環境\nEagle (Fusion360統合版)\nWindows10\nFusion360で図面を引く\n基板のアウトラインを引いていきます．\n\n関連付けのあるPCBを作成を選択\n基板にしたい部分を選択してOKを押しします\n\n\n基板が生成される\n基板が生成されます．これはPCBの3DViewという形になります．回路図やアートワークとは独立している状態です．\n\n関連付ける\nまずはこの3Dモデルを保存してやります．\n次にこの基板のリンクマークのボタンを押して作ってきた回路とリンクさせます．今回はtakakukeiというものを作ったのでこれとリンクします．\nなお，ここで間違えるとかなり面倒なことになるので気をつけましょう．(リンク解除ってどうやるの？)\n\n\n回路ができる\nするとこのようにアートワークをやる画面に行って形状が反映される．良い感じです．\n\nなお，上に同期できませんという，can't backannotate this operation的なEagle使いにとって悪魔のような文字列がでてきますが一度すべて保存してすべて閉じて開き直すと消えます．バグ？\n参考\nこれはFusion360にインテグレートされる前のスタンドアロンのEagleでやる例．こっちのほうがちょっと大変ですね．\n\n\n\nまとめ\n統合版のEagleってどうなのと思いましたが，3D連携やライブラリの連携などいままで無理やりやってたところがシームレスになってわかりやすくなったと思います．また，ライブラリもこのPCには入ってるけどこのPCにはない，みたいなことが発生せず全部オンラインで同期できるようになったので便利ですね．ライセンスもFusionに含まれるようになったようです．\nただし，DXF Importしたいだけでこれだけ大変なので，相変わらずのEagle節全開という感じでちょっと辛くなります．",
-          "link": "https://fumimaker.net/entry/2022/07/29/023443?utm_source=feed",
-          "publishedOn": "2022-07-28T17:34:43.000Z",
-          "wordCount": 384,
-          "title": "Fusion統合版 EagleでDXF Importする",
-          "enclosure": {
-            "url": "https://i.gyazo.com/3bbd34666b388ab12eda3ddbf925e016.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://i.gyazo.com/3bbd34666b388ab12eda3ddbf925e016.png"
         }
       ]
     },
