@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-27T10:02:00.370Z</updated>
+    <updated>2022-10-27T11:01:53.333Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ubuntuマシンにRDPしてvivadoをinstallする]]></title>
+        <id>hatenablog://entry/4207112889931307180</id>
+        <link href="https://fumimaker.net/entry/2022/10/27/191211?utm_source=feed"/>
+        <updated>2022-10-27T10:12:11.000Z</updated>
+        <summary type="html"><![CDATA[UbuntuがインストールされたマシンにRDPしてVivadoをインストールしたい時にエラーが発生して困った．
+このようなエラーが出た．
+ubuntu@fumi-test:~/Downloads$ sudo ./Xilinx_Unified_2021.2_1021_0703_Lin64.bin 
+Verifying archive integrity... All good.
+Uncompressing Xilinx Installer....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................…]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ブログで広がる家飲みの世界。今晩はどのお酒にしよう]]></title>
         <id>hatenablog://entry/4207112889931264091</id>
