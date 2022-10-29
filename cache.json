@@ -5184,6 +5184,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889931767600",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n最近、Twilio コンソールが一気に変わったので、頻繁に利用する自分からの目線としてレポートしておこう。\n日本語 Good bye\n以前のバージョンは頑張って日本語に翻訳されていたのが、新バージョンで日本語は完全に振り出しに戻った。コンソールは基本的に英語しかない状態となった。自分自身はもう何年もTwilioを利用しているため、英語だけでも慣れたものだが、これから Twilio を始めようとしている方が、全て英語しかない管理画面を見たときに辛いと思うのではないだろうか。\nちなみに Twilio APIドキュメントに関しては一部日本語化されている。今後日本語訳が増えていくことに期待している。とはいえ、ドキュメント自体がどんどん更新されていくから、常に完璧な日本語訳を期待するのは難しいだろう。結局のところ、英語が一番最新の記事であり、必要に応じて英語を読まないといけないことは間違いない。\nログの管理が全て共通化された\n\n上の画像を見ると、ログとしてまとめられ、どのログを見たいのかを指定することでログを見れるようになった。\n今までは Twilio Voice だったら Voice 内でログがみれていたのが変更となった。\nなるほど、Twilio Flex を使ってる場合、あらゆる Twilio サービスを使うので、Log としてまとめられているのは便利になったのかもしれない。反対に自分としてはTwilio Voice(電話) を極めてきているので、全く利用していない Twilio Video や Conversations まで出てきているので、前回のUIの方が良かったことは否めない。英語と同じで慣れれば問題なしという話か。\n実際の詳細ページに変更はなし\n以前は日本語だったのが英語になったことを除けば、「今まで見れていたページが見れなくなった」ということはなかった。\nずっと Twilio を利用していた側からすると、それだけでまず一安心と言える。\nTwilio 関連で困った？\nもちろん運営の中の方に問い合わせるということが、まず最初のステップだろう。\nそれ以外に、Twilio を使っている他のエンジニアに聞きたいことなどもあるかもしれない。その場合は ぜひ Slack チャンネルに来てもらえたらと思う。私やその他、長年Twilioを触ってきた熟練が喜んでサポートしている。\nTwilioコミュニティSlack\nさらに！11月11日に Twilio オフラインのMeetup 開催が決定しているので、よければお会いしましょう！\ntwiliojp-ug.doorkeeper.jp\n終わりに\n今回は直近の Twilio コンソールアップデートの報告としつつ、一番紹介したかったのは年1回のビッグイベント Twilio SIGNAL の内容を語り合うイベントを 何年振りか オフラインでやることになったので紹介させていただいた。\nもし都合が空いていれば、参加申込していただければと思う。",
+          "link": "https://www.bokukoko.info/entry/2022/10/29/120643",
+          "publishedOn": "2022-10-29T03:06:43.000Z",
+          "wordCount": null,
+          "title": "Twilio コンソールのアップデートに関して",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221029/20221029120549.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221029/20221029120549.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889929213608",
           "author": null,
           "description": "ども、@kimihom です。\n\nRails の form_with を使っているだろうか？だいぶ前から form 系はフロントエンド側の実装に任せるというのが一般的になりつつあるが、やはり form_with でささっと作れる便利さは大きい。\nform_with サンプルコード\nja:\n  activerecord:\n    attributes:\n      item:\n        title: \"タイトル\"\n\n\n\n\n\n<%= form_with model: @item, url: item_path, method: :post, local: false, class: \"simple-form\" do |f| %>\n  <%= f.label :title, class: \"titleLabel\" %>\n  <%= f.text_field :title, class: \"title\", required: \"requierd\", maxlength: \"30\" %>\n\n  <%= f.submit \"更新\", data: { disable_with: '送信中', confirm: \"本当によろしいですか？\"}, class: \"update\" %>\n<% end %>\n\n\n\n\n\nclass ItemsController < ApplicationController\n  def new\n    @item = Item.new\n  end\n\n  def create\n    item = Item.create!(item_param)\n    render json: {result: \"ok\"}\n  rescue => e\n    render json: {result: \"ng\"}\n  end\n\n  private\n  def item_param\n    params.require(:item).permit(:title)\n  end\nend\n\n\n\n\n\n$(document).on(\"ajax:success\", '.simple-form', function(e){\n  let data = e.detail[0];\n  if (data.result == \"ok\") {\n    // success\n  } else {\n    alert(\"error\");\n  }\n});\n\n$(document).on(\"ajax:error\", function(e) {\n  alert(\"error\")\n});\n\n\n\nこのサンプルコードで色々なことが示されている。それぞれ見ていこう。\ntitle label\nconfig/locales/ja.yml にて、それぞれのモデルの attributes の名前を定義しておけば、自動でそれを見にいってくれる。form 送信でエラー時の表示の時など、単にフォームを入力するフォームとしてだけでなく使える。\nform_with model\nmodel に適したデータが既に入っていた場合、そのデータがフォームに入力されたフォームを作ってくれる。new だと新規なので少ないかもしれないが、edit の時はものすごく便利というか必須の指定となる。\nlocal: false\nこの指定により、ajax 経由で form 送信することを指定している。この指定がないと、ajax ではない通常の form 送信となるため、redirect_to でどこかに飛ばす必要が出てくる。\nlocal: false を指定することで、Ajax として$(document).on(\"ajax:success\", '.simple-form', function(e){ の イベントが発生する。そこで レスポンス内容を元に動作を定義することが可能となる。\nsubmit の disable_with, confirm\nform で実際に登録しようとするときに、disable_with はもはや必須と言えるかもしれない。form を1度クリックした時点で、もう一度クリックさせないようにするための設定となる。これをセットしておかないと、大切な処理をダブルクリックで2回連続実行されてしまうケースが発生する。\nconfirm は大切なform処理である場合、いいですかの確認が可能となる。必要に応じてこちらもセットしておくと便利なパラメータである。\n終わりに\nform に関する実装が一通り綺麗に実装されている。この美しさが Rails だと感じられる瞬間である。\nぜひ知らないことがあれば実装を試してもらえればと思う。",
@@ -8043,16 +8058,6 @@
           "wordCount": 2186,
           "title": "エッセイ：本を読むことは肯定されるべきことなのか？",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/83809703/rectangle_large_type_2_c643f3b6ae9ab9a4cf76092bea1bf2b0.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/nb18310a8c721",
-          "author": null,
-          "description": "8月ですね！メンバーシップのほう、どしどしコンテンツを増やしていくので是非とも継続の方をお願いします！昨日はラジオ投稿できませんでしたが、例によって二本立てでお送りするのでご容赦ください🙇 続きをみる",
-          "link": "https://note.com/sizes/n/nb18310a8c721",
-          "publishedOn": "2022-07-31T15:14:48.000Z",
-          "wordCount": null,
-          "title": "8月ですね！メンバーシップのほう、...",
-          "imageUrl": null
         }
       ]
     },
