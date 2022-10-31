@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-31T09:03:43.223Z</updated>
+    <updated>2022-10-31T10:02:18.259Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,29 @@
         <summary type="html"><![CDATA[※本記事は2022年1月26日に公開された記事の翻訳版です。 筆者：Dylan Lau (@aidiruu), Platform DXチーム Zero Touch Production (ZTP)は、本番環境に加えられる […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kaigi on Rails 2022 にて『森羅万象に「いいね」するためのデータ構造』の発表をしました]]></title>
+        <id>hatenablog://entry/4207112889932423481</id>
+        <link href="https://techlife.cookpad.com/entry/2022/10/31/181000"/>
+        <updated>2022-10-31T09:10:00.000Z</updated>
+        <summary type="html"><![CDATA[メディアプロダクト開発部で Rails を書いているなどやま ( @pndcat ) です。業務では、広告基盤の開発、運用から新規サービス開発など、マーケティングソリューション領域に関する開発をしています。趣味は、スプラトゥーンと推し活動をがんばっています。
+Kaigi on Rails 2022 にて、森羅万象に「いいね」するためのデータ構造 というタイトルで発表をしました。この記事では、Twitter などで寄せられた質問に回答したいと思います。発表中にあった「いいね」のリファクタリングについてのさらなる詳細については、後日公開する予定です。
+After Kaigi on Rails イベントの開催のお知らせ
+本日 (10/31) の19時から Cookpad Lounge #15 After Kaigi on Rails を開催します！イベントでは、Kaigi on Rails に登壇した3人の振り返りや、発表では話せなかったことにも触れます。また、惜しくもプロポーザルが落ちてしまった社員による発表もありますので、ぜひ遊びに来てください！（アーカイブもあるのでよろしくお願いします）
+cookpad.connpass.com
+資料
+ speakerdeck.com
+動画
+www.youtube.com
+Q&A
+以下、今回の発表に関して Twitter などで寄せられた質問への回答です。いろいろな感想や質問があり、とても嬉しかったです。ありがとうございました！
+リファクタリングはどうやって進めたのか？リファクタリングの工数はどうしているのか？
+メーカーズタウン（今回の発表の題材となったサービスです）の開発チームでは、週に1回、モブプロをする日を作っています。
+モブプロには、開発メンバー4人に加え、えにしテック の @darashi さんと、@cafedomancer さん…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>

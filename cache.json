@@ -4775,6 +4775,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889932423481",
+          "author": null,
+          "description": "メディアプロダクト開発部で Rails を書いているなどやま ( @pndcat ) です。業務では、広告基盤の開発、運用から新規サービス開発など、マーケティングソリューション領域に関する開発をしています。趣味は、スプラトゥーンと推し活動をがんばっています。\nKaigi on Rails 2022 にて、森羅万象に「いいね」するためのデータ構造 というタイトルで発表をしました。この記事では、Twitter などで寄せられた質問に回答したいと思います。発表中にあった「いいね」のリファクタリングについてのさらなる詳細については、後日公開する予定です。\nAfter Kaigi on Rails イベントの開催のお知らせ\n本日 (10/31) の19時から Cookpad Lounge #15 After Kaigi on Rails を開催します！イベントでは、Kaigi on Rails に登壇した3人の振り返りや、発表では話せなかったことにも触れます。また、惜しくもプロポーザルが落ちてしまった社員による発表もありますので、ぜひ遊びに来てください！（アーカイブもあるのでよろしくお願いします）\ncookpad.connpass.com\n資料\n speakerdeck.com\n動画\nwww.youtube.com\nQ&A\n以下、今回の発表に関して Twitter などで寄せられた質問への回答です。いろいろな感想や質問があり、とても嬉しかったです。ありがとうございました！\nリファクタリングはどうやって進めたのか？リファクタリングの工数はどうしているのか？\nメーカーズタウン（今回の発表の題材となったサービスです）の開発チームでは、週に1回、モブプロをする日を作っています。\nモブプロには、開発メンバー4人に加え、えにしテック の @darashi さんと、@cafedomancer さん…",
+          "link": "https://techlife.cookpad.com/entry/2022/10/31/181000",
+          "publishedOn": "2022-10-31T09:10:00.000Z",
+          "wordCount": 499,
+          "title": "Kaigi on Rails 2022 にて『森羅万象に「いいね」するためのデータ構造』の発表をしました",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/marin72_com/20221031/20221031172459.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/marin72_com/20221031/20221031172459.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889931475473",
           "author": null,
           "description": "Androidエンジニアのこやまカニ大好きです。\n10/19 に弊社で開催した After Party DroidKaigi 2022 というイベントで、クックパッドアプリの画面遷移について発表しました。\n当日のセッションでは時間が限られていたりスライドでのコード表示の制約から実装面の説明をかなり省略していたので、この記事で補足しつつ説明しようと思います。\n\n\n\nクックパッドアプリの構成\n実装の内容に入る前に、前提としてクックパッドアプリのプロジェクト構造を説明していきます。\nモジュール構成\nこれまでの技術ブログでも何度か説明してきた通り、クックパッドアプリは2018年ごろからマルチモジュールプロジェクトになっています。\n画面実装は View(Compose)と関連ロジックを Scene という単位で構成\n関連のある複数 Scene で機能モジュール(feature module) を構成\n共通ロジックやドメイン層は役割ごとにモジュール分割(library module)\n全体的なモジュール構造は以下のようになっています。\nfeature ｍodule から library module への参照はありますが、feature module 同士に参照はありません。\n(この図は過去の技術記事から持ってきたため、 legacy モジュールが重要そうな感じで見えていますが今回の内容には関係ありません)\n\n画面遷移実装\nクックパッドアプリでは以下の理由から Navigation Component を利用していません。\nNavigation Component が出る前からマルチモジュール化されていて登場当時導入が難しかった\nクックパッドアプリの画面遷移が複雑で Navigation Component を利用できる箇所が限られていた\n特にボトムタブに Multiple Back …",
