@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-10-31T17:11:18.569Z</updated>
+    <updated>2022-10-31T18:03:58.898Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Monad は継続、Applicative は並列]]></title>
+        <id>https://blog.ojisan.io/monad-applicative</id>
+        <link href="https://blog.ojisan.io/monad-applicative"/>
+        <updated>2022-11-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Scala の cats のドキュメント群が Monad に関する説明としてすごくわかりやすかったので、そこで学んだことをまとめておこうと思った。 モナドを理解したい モナドを理解したいというモチベーションをずっと持っている。Wasm 文脈で Rust…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ハロウィンあるある]]></title>
         <id>hatenablog://entry/4207112889932585960</id>
