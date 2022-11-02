@@ -1501,6 +1501,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889932585233",
+          "author": null,
+          "description": "いつもお世話になっております．\n今回はこれを構築してみます．基本的にはGithubの内容通りになります．\nhttps://github.com/ikwzm/ZynqMP-FPGA-Linux/blob/master/doc/install/kv260.md\n一部ハマったところもありました．\nUbuntu18(vmware)で作業しています．\nSDカードの準備\nubuntuのdisk toolsからFAT 100MB, EXT4残り容量でパーティションを作りました．名前はそれぞれBootとRootfsとしています．本当はコマンドラインでやるべきなんですけどね・・・便利すぎてやめられない．\n画像ではすでに書き込まれていますが気にしないでください．フォーマットできたらマウントしましょう．それぞれ/media/fumi/boot, rootfsにマウントされています．\n\nBootに書き込む\nwget https://github.com/ikwzm/ZynqMP-FPGA-Linux/archive/refs/tags/v2021.1.2.tar.gz\ntar xfz v2021.1.2.tar.gz\n\n\n\nしてダウンロードしておきます．GithubからZIPを落としてもOK．\ncp target/Kv260/boot/* /media/fumi/boot\ncp image-5.10.0-xlnx-v2021.1-zynqmp-fpga /media/fumi/boot\n\n\n\nもしくはD&Dでコピーします．\nRootfsに書き込む\n説明では\ncat debian11-rootfs-vanilla.tgz.files/* | tar xfz - -C             /mnt/usb2\n\n\n\nとなっていますが，自分の環境だとこの様になってできませんでした．なんででしょう．\nf…",
+          "link": "https://fumimaker.net/entry/2022/11/02/141001?utm_source=feed",
+          "publishedOn": "2022-11-02T05:10:01.000Z",
+          "wordCount": null,
+          "title": "ikwzmさんのdebian image for KV260を構築する",
+          "enclosure": {
+            "url": "https://i.gyazo.com/a86eb14406d8159881950bd8cf5c007f.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://i.gyazo.com/a86eb14406d8159881950bd8cf5c007f.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889931307180",
           "author": null,
           "description": "UbuntuがインストールされたマシンにRDPしてVivadoをインストールしたい時にエラーが発生して困った．\nこのようなエラーが出た．\nubuntu@fumi-test:~/Downloads$ sudo ./Xilinx_Unified_2021.2_1021_0703_Lin64.bin \nVerifying archive integrity... All good.\nUncompressing Xilinx Installer....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................…",
