@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-02T00:03:25.018Z</updated>
+    <updated>2022-11-02T01:30:52.851Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13865,44 +13865,6 @@ necomimii さん→にな さん
 続きをみる]]></summary>
         <author>
             <name>Lixy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[20220804]]></title>
-        <id>https://note.com/dak/n/n83b9138f88f3</id>
-        <link href="https://note.com/dak/n/n83b9138f88f3"/>
-        <updated>2022-08-04T13:03:01.000Z</updated>
-        <summary type="html"><![CDATA[今日は一日中雷雨で、寝るか起きるかしていた。
-午前中は母親を車に乗せて買い物に出かけた。
-午後は爆睡した。５時間くらい寝たと思う。雨がいい感じなんだよな。
-たぶん昔も雨降ってるときは寝てたと思う。気持ちがとてもいいので。
-起きて日記を書く。今日は本当に行ったことがない。
-昼飯はパスコのダブルメロンオンリー。結構カロリーがあるのでそれ食って寝ればちょうどいい感じになるってわけ。
-続きをみる]]></summary>
-        <author>
-            <name>okazsystem</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Node.jsのツールで--cacheフラグを実装するためのライブラリを書いた]]></title>
-        <id>https://efcl.info/2022/08/04/file-cache/</id>
-        <link href="https://efcl.info/2022/08/04/file-cache/"/>
-        <updated>2022-08-04T12:38:00.000Z</updated>
-        <summary type="html"><![CDATA[ESLint、Prettierなどは--cacheフラグという一度チェックしたファイルは、ファイルが変更されるまで再チェックしないキャッシュの仕組みを実装しています。
-同様の仕組みをtextlintを実装したことはありますが、file-entry-cacheを使い結構煩雑な実装が必要になります。ファイル変更を元に処理結果をキャッシュする仕組みはある程度定型化されているのに、毎回同じような実装をツールごとに書くのは微妙だなと思ったので、ライブラリを書きました。
-azu/file-cache: Node.js library that provide a cache for file metadata or file content.
---cacheフラグの仕組み
---cacheフラグの仕組みとしては、ファイルの内容のハッシュ値 or ファイルの更新時刻をキャッシュファイルとして保存して置きます。
-次回に実行する際には、キャッシュファイルと実際のファイルの情報を比較して、変更がなければ変更をスキップするという仕組みで、処理時間の短縮を目的にしています。
-たとえば、A.jsに対してLintする場合には、A.jsにLintの処理をしてパスした場合はキャッシュに保存しておきます。
-次回、LintしたときにA.jsの内容が変更されていない場合は、あらためてチェックはせずにそのままスキップします。
-これに加えて、強制的にキャッシュをクリアしたいパターンもあります。
-たとえば、ツール自体のバージョンを更新した場合は処理内容が変わる可能性があるので、キャッシュを利用せずに常に再チェックするのが正しいです。
-また、ツールの設定内容が変更された場合も処理結果が変わる可能性があるので、キャッシュを利用せずに常に再チェックするのが正しいです。
-@file-cacheでの実装
-@file-cacheは…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
