@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-04T13:15:15.021Z</updated>
+    <updated>2022-11-04T14:01:47.645Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -109,6 +109,16 @@
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[お気軽に Wasm の動作確認する用のテンプレート作った]]></title>
+        <id>https://blog.ojisan.io/wasm-vite-template</id>
+        <link href="https://blog.ojisan.io/wasm-vite-template"/>
+        <updated>2022-11-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[OGP は 「顔パックに噛み付く人」で AI 生成した。標準の webpack を vite で置き換えるものということでそうしたのだが、なんかすごいのが出来上がった。バンドラの箱を開けたってコト！？ 「Rust のこの機能やこの Crate って Wasm…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>

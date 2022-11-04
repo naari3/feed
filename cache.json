@@ -8514,6 +8514,16 @@
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/wasm-vite-template",
+          "author": null,
+          "description": "OGP は 「顔パックに噛み付く人」で AI 生成した。標準の webpack を vite で置き換えるものということでそうしたのだが、なんかすごいのが出来上がった。バンドラの箱を開けたってコト！？ 「Rust のこの機能やこの Crate って Wasm…",
+          "link": "https://blog.ojisan.io/wasm-vite-template",
+          "publishedOn": "2022-11-04T00:00:00.000Z",
+          "wordCount": null,
+          "title": "お気軽に Wasm の動作確認する用のテンプレート作った",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/monad-applicative",
           "author": null,
           "description": "Scala の cats のドキュメント群が Monad に関する説明としてすごくわかりやすかったので、そこで学んだことをまとめておこうと思った。 モナドを理解したい モナドを理解したいというモチベーションをずっと持っている。Wasm 文脈で Rust…",
