@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-05T00:02:51.018Z</updated>
+    <updated>2022-11-05T01:29:52.358Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13951,45 +13951,6 @@ World Economic Forum from Cologny, Switzerland, CC BY-SA 2.0, via Wikimedia Comm
 続きをみる]]></summary>
         <author>
             <name>スタジオVK 神長タクミ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[cargo-auditableで依存するcrateをバイナリに埋め込む]]></title>
-        <id>hatenablog://entry/4207112889906569175</id>
-        <link href="https://knqyf263.hatenablog.com/entry/2022/08/07/212856"/>
-        <updated>2022-08-07T12:28:56.000Z</updated>
-        <summary type="html"><![CDATA[概要
-詳細
-事前準備
-プロジェクトのビルド
-.dep-v0 section
-解凍
-余談
-まとめ
-概要
-cargo-auditable というものがあるというのをGitHubで教えてもらいました。
-github.com
-これを使ってRustプロジェクトをビルドすると依存するcrateの情報をバイナリに埋め込むことが出来ます。ちなみにGoでは既に以前からやっており、詳細はこちらのブログに書いています。
-knqyf263.hatenablog.com
-cargo-auditable の使い方はREADMEをそのままパクると以下のようになっています。
-# Install the tooling
-cargo install cargo-auditable rust-audit-info
-# Open your Rust project
-cd your_project
-# Build your project with dependency lists embedded in the binaries
-cargo auditable build --release
-# Recover the dependency info from the compiled binary
-rust-audit-info target/release/your-project
-
-
-
-cargo auditable で埋め込み、 rust-audit-info で情報を表示できます。まだCargo本体には入っていないようですが、既にGitHub上で提案はされています。ただ議論は長引いているのでどうなるかは分かりません。脆弱性スキャナの開発者としてはぜひ取り込まれて欲しいと思っています。
-github.com
-また、フォーマットもまだ定まっていないようなので今後変更される可能性があります。
-詳細
-では内部が…]]></summary>
-        <author>
-            <name>knqyf263's blog</name>
         </author>
     </entry>
 </feed>
