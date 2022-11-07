@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-07T03:29:19.801Z</updated>
+    <updated>2022-11-07T04:15:45.270Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Amazon ECS と AWS Lambda で汎用 self-hosted runner を提供する基盤]]></title>
+        <id>hatenablog://entry/4207112889933678890</id>
+        <link href="https://techlife.cookpad.com/entry/2022/11/07/124025"/>
+        <updated>2022-11-07T03:40:25.000Z</updated>
+        <summary type="html"><![CDATA[技術部 SRE グループの @s4ichi です。ここ最近は本業に加えて Overwatch2 のヒーローとして戦いに明け暮れています。救わなければならないレートがある。
+GitHub flow に従った開発では GitHub Actions が非常に便利です。特に最近では CI 用途だけでなく、ソフトウェアのデリバリーなども Actions で完結させる事例も見かけます。しかしながら、クックパッド社内では GitHub Enterprise Server を使っているため、GtiHub Actions の利用には self-hosted runnner の利用が不可欠になっています。
+そこで、社内では Amazon ECS 上に ephemeral で汎用的な self-hosted runner を提供しています。実行する job の数に応じた autoscaling を備え、runner の起動を司る部分は AWS Lambda を用いたサーバーレスな構成です。今日はその基盤についての構成やチャレンジ、そして独自拡張の話をします。
+クックパッドにおける GitHub Actions
+社内では、ほとんどのチームの開発に GitHub Enterprise Server（以下、GHES）が使われています。GHES は EC2 上にデプロイされており、開発者に不自由が無いよう、利用規模や用途に合わせて調整する形で SRE チームが運用をしています。ただし、最新のバージョン 3.7.0 現在においても GHES には GitHub-hosted runner が提供されていないため、self-hosted runner を用意しないことには GitHub Actions を使えませんでした。
+そんな中、昨年12月にリリースされた GHES のバージョン 3.3.0 にて、se…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2022年11月第1週〕]]></title>
         <id>hatenablog://entry/4207112889934395847</id>
