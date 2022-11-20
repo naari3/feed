@@ -2,10 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-20T08:02:04.785Z</updated>
+    <updated>2022-11-20T09:01:39.963Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[サーモンラン　7週目]]></title>
+        <id>https://note.com/izumi_pogo/n/n061724cbb194</id>
+        <link href="https://note.com/izumi_pogo/n/n061724cbb194"/>
+        <updated>2022-11-20T08:57:13.000Z</updated>
+        <summary type="html"><![CDATA[苦手なブキから逃げちゃいけないなって、シェケナダムダイナモ回をある程度やった。
+ダイナモやればやるほどアメフラシの凶悪さがわかるね。何のブキ使ってもアメは強いから侮っちゃダメってわかってるけど、つい甘くなっちゃうんだよなあ。
+続きをみる]]></summary>
+        <author>
+            <name>izumi🦆</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rails でシンプルな無限スクロール実装]]></title>
+        <id>hatenablog://entry/4207112889938275861</id>
+        <link href="https://www.bokukoko.info/entry/2022/11/20/172630"/>
+        <updated>2022-11-20T08:26:30.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+久々に無限スクロールを実装する機会が 詠みラボで発生しました。そこで、振り返りがてら、こんな感じで実装するのが個人的に一番シンプルだったコードをご紹介します。
+サーバー側実装
+俳句(Haiku) をそれぞれ20句ごとに毎回取得し、スクロール下部についたら新しく20件を取得します。HTMLの生成は Rails サーバー側で実施し、それをフロントエンド側では単に HTML を追加するだけの処理になっています。
+# Gemfile
+gem "kaminari"
+
+# config/routes.rb
+resources :haiku
+
+# app/models/haiku.rb
+class Haiku < ApplicationRecord
+  paginates_per 20
+end
+
+# app/controllers/haiku_controller.rb
+class HaikuController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create, :update]
+
+  def index
+    @haikus = Haiku
+      .page(params[:page])
+      .order("created_at DESC")
+
+    # 重要. スクロール時はlayoutを含めない
+    return render layout: false if params[:no_layout]
+  end
+
+end
+
+
+
+
+
+<%# app/views/haiku/index.html.erb %>
+<div id="haikuCmp">
+  <% @haikus.each do |haiku| %>
+   …]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20221119「ピザ」]]></title>
         <id>hatenablog://entry/4207112889938258684</id>

@@ -5416,6 +5416,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889938275861",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n久々に無限スクロールを実装する機会が 詠みラボで発生しました。そこで、振り返りがてら、こんな感じで実装するのが個人的に一番シンプルだったコードをご紹介します。\nサーバー側実装\n俳句(Haiku) をそれぞれ20句ごとに毎回取得し、スクロール下部についたら新しく20件を取得します。HTMLの生成は Rails サーバー側で実施し、それをフロントエンド側では単に HTML を追加するだけの処理になっています。\n# Gemfile\ngem \"kaminari\"\n\n# config/routes.rb\nresources :haiku\n\n# app/models/haiku.rb\nclass Haiku < ApplicationRecord\n  paginates_per 20\nend\n\n# app/controllers/haiku_controller.rb\nclass HaikuController < ApplicationController\n  before_action :authenticate_user!, only: [:new, :create, :update]\n\n  def index\n    @haikus = Haiku\n      .page(params[:page])\n      .order(\"created_at DESC\")\n\n    # 重要. スクロール時はlayoutを含めない\n    return render layout: false if params[:no_layout]\n  end\n\nend\n\n\n\n\n\n<%# app/views/haiku/index.html.erb %>\n<div id=\"haikuCmp\">\n  <% @haikus.each do |haiku| %>\n   …",
+          "link": "https://www.bokukoko.info/entry/2022/11/20/172630",
+          "publishedOn": "2022-11-20T08:26:30.000Z",
+          "wordCount": null,
+          "title": "Rails でシンプルな無限スクロール実装",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221119/20221119173208.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221119/20221119173208.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889931767600",
           "author": null,
           "description": "ども、@kimihom です。\n\n最近、Twilio コンソールが一気に変わったので、頻繁に利用する自分からの目線としてレポートしておこう。\n日本語 Good bye\n以前のバージョンは頑張って日本語に翻訳されていたのが、新バージョンで日本語は完全に振り出しに戻った。コンソールは基本的に英語しかない状態となった。自分自身はもう何年もTwilioを利用しているため、英語だけでも慣れたものだが、これから Twilio を始めようとしている方が、全て英語しかない管理画面を見たときに辛いと思うのではないだろうか。\nちなみに Twilio APIドキュメントに関しては一部日本語化されている。今後日本語訳が増えていくことに期待している。とはいえ、ドキュメント自体がどんどん更新されていくから、常に完璧な日本語訳を期待するのは難しいだろう。結局のところ、英語が一番最新の記事であり、必要に応じて英語を読まないといけないことは間違いない。\nログの管理が全て共通化された\n\n上の画像を見ると、ログとしてまとめられ、どのログを見たいのかを指定することでログを見れるようになった。\n今までは Twilio Voice だったら Voice 内でログがみれていたのが変更となった。\nなるほど、Twilio Flex を使ってる場合、あらゆる Twilio サービスを使うので、Log としてまとめられているのは便利になったのかもしれない。反対に自分としてはTwilio Voice(電話) を極めてきているので、全く利用していない Twilio Video や Conversations まで出てきているので、前回のUIの方が良かったことは否めない。英語と同じで慣れれば問題なしという話か。\n実際の詳細ページに変更はなし\n以前は日本語だったのが英語になったことを除けば、「今まで見れていたページが見れなくなった」ということはなかった。\nずっと Twilio を利用していた側からすると、それだけでまず一安心と言える。\nTwilio 関連で困った？\nもちろん運営の中の方に問い合わせるということが、まず最初のステップだろう。\nそれ以外に、Twilio を使っている他のエンジニアに聞きたいことなどもあるかもしれない。その場合は ぜひ Slack チャンネルに来てもらえたらと思う。私やその他、長年Twilioを触ってきた熟練が喜んでサポートしている。\nTwilioコミュニティSlack\nさらに！11月11日に Twilio オフラインのMeetup 開催が決定しているので、よければお会いしましょう！\ntwiliojp-ug.doorkeeper.jp\n終わりに\n今回は直近の Twilio コンソールアップデートの報告としつつ、一番紹介したかったのは年1回のビッグイベント Twilio SIGNAL の内容を語り合うイベントを 何年振りか オフラインでやることになったので紹介させていただいた。\nもし都合が空いていれば、参加申込していただければと思う。",
@@ -6424,6 +6439,16 @@
       "feedUrl": "https://note.com/izumi_pogo/rss",
       "siteUrl": "https://note.com/izumi_pogo",
       "articles": [
+        {
+          "id": "https://note.com/izumi_pogo/n/n061724cbb194",
+          "author": null,
+          "description": "苦手なブキから逃げちゃいけないなって、シェケナダムダイナモ回をある程度やった。\nダイナモやればやるほどアメフラシの凶悪さがわかるね。何のブキ使ってもアメは強いから侮っちゃダメってわかってるけど、つい甘くなっちゃうんだよなあ。\n続きをみる",
+          "link": "https://note.com/izumi_pogo/n/n061724cbb194",
+          "publishedOn": "2022-11-20T08:57:13.000Z",
+          "wordCount": null,
+          "title": "サーモンラン　7週目",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/91591718/rectangle_large_type_2_33c25139e774d4d7864d0dae5ed23ecc.png?width=800"
+        },
         {
           "id": "https://note.com/izumi_pogo/n/nbda781b88ab6",
           "author": null,
