@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-22T11:01:58.557Z</updated>
+    <updated>2022-11-22T12:02:05.479Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14616,16 +14616,6 @@ Pixel Buds Pro : 23800円
 近いうちにバトルドームの音MADを投稿します。]]></summary>
         <author>
             <name>音MADとポケモンと私</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HPKE とは何か]]></title>
-        <id>https://blog.jxck.io/entries/2022-08-25/hpke.html</id>
-        <link href="https://blog.jxck.io/entries/2022-08-25/hpke.html"/>
-        <updated>2022-08-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[HPKE (Hybrid Public Key Encryption) が RFC 9180 として公開された。RFC 9180: Hybrid Public Key Encryptionhttps://www.rfc-editor.org/rfc/rfc9180.htmlHPKE は、公開鍵暗号方式と共通鍵暗号方式を組み合わせて(ハイブリッド)任意の平文を暗号化するための、汎用的な枠組みとして標準化されている。この仕様は、多くのユースケースが想定されており、 RFC になる前から ECH (Encrypt Client Hello), MLS (Message Layer Security), OHTTP (Oblivious HTTP) など、さまざまな仕様から採用を検討されている。本サイトで書く予定の他の記事でも HPKE は頻出する予定であり、今後より多くの場面でこの仕様を見ることになると思われるため、一度この仕様の概観について解説する。(筆者は暗号の専門家ではないため、解釈や語彙使用の間違いがあるかもしれない。)]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
         </author>
     </entry>
 </feed>
