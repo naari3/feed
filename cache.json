@@ -1233,21 +1233,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889912479912",
-          "author": null,
-          "description": "健常者エミュレータ事例集Wikiで「記事をランダムに表示できるようにしてみたらどうか」とのユーザーの意見があった。記事が出てくるAPIにしてしまうのがよさそうだな、と思ったので、Lambda function URLとPythonを用いて実装した。\n \n使い方\nhttps://kadupzcc7ll3i2jn7uinqljm7q0yvxpk.lambda-url.ap-northeast-1.on.aws/にリクエストを飛ばす。\n入力→パラメータlength(ほしい記事の数)\n例)記事が4つほしい場合\nhttps://kadupzcc7ll3i2jn7uinqljm7q0yvxpk.lambda-url.ap-northeast-1.on.aws/?length=4\n下はTalend API Tester(Chrome拡張機能)の画面\n\n \n出力結果",
-          "link": "https://contradiction29.hatenablog.com/entry/2022/08/27/202737",
-          "publishedOn": "2022-08-27T11:27:37.000Z",
-          "wordCount": 236,
-          "title": "健常者エミュレータ事例集Wikiの記事をランダムに返すAPIを作った",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20220827/20220827201854.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20220827/20220827201854.png"
         }
       ]
     },

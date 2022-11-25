@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-24T23:01:50.494Z</updated>
+    <updated>2022-11-25T00:03:28.269Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14517,26 +14517,6 @@ ima.hatenablog.jp
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[健常者エミュレータ事例集Wikiの記事をランダムに返すAPIを作った]]></title>
-        <id>hatenablog://entry/4207112889912479912</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2022/08/27/202737"/>
-        <updated>2022-08-27T11:27:37.000Z</updated>
-        <summary type="html"><![CDATA[健常者エミュレータ事例集Wikiで「記事をランダムに表示できるようにしてみたらどうか」とのユーザーの意見があった。記事が出てくるAPIにしてしまうのがよさそうだな、と思ったので、Lambda function URLとPythonを用いて実装した。
- 
-使い方
-https://kadupzcc7ll3i2jn7uinqljm7q0yvxpk.lambda-url.ap-northeast-1.on.aws/にリクエストを飛ばす。
-入力→パラメータlength(ほしい記事の数)
-例)記事が4つほしい場合
-https://kadupzcc7ll3i2jn7uinqljm7q0yvxpk.lambda-url.ap-northeast-1.on.aws/?length=4
-下はTalend API Tester(Chrome拡張機能)の画面
-
- 
-出力結果]]></summary>
-        <author>
-            <name>contradiction29’s blog</name>
         </author>
     </entry>
 </feed>
