@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-27T00:03:28.603Z</updated>
+    <updated>2022-11-27T01:29:15.270Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14506,34 +14506,6 @@ note.com
 ツイキャス配信ならもっと頻度上げて出来るかも。楽なので。]]></summary>
         <author>
             <name>音MADとポケモンと私</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ESP32でCO2濃度・環境測定計を作る-Part1]]></title>
-        <id>hatenablog://entry/4207112889912252454</id>
-        <link href="https://fumimaker.net/entry/2022/08/29/211143?utm_source=feed"/>
-        <updated>2022-08-29T12:11:43.000Z</updated>
-        <summary type="html"><![CDATA[コロナがとんでもない事になっていますが，ご機嫌お過ごしでしょうか．本稿では2部にわけてCO2濃度，大気圧，温度，湿度を測定し表示できるシステムを設計し，基板化します．
-n番煎じネタで新規性がまったくないですがやっていきます
-
-機能
-CO2濃度測定
-温度・湿度・大気圧測定
-LCDで表示
-データを無線ネットワーク経由でアップロード
-背景
-私事ですが，ハードウェアを作ったり開発したりする都合上，やっぱり研究室には行く必要があり換気がしっかりできているか知りたいと思うことは多いです．CO2は換気ができるかを知るために指標の一つとして使うことができ，飲食店でも設置されているようすが見られます．1000ppm以下を保つことが一つの指標となっています．
-例えば島根大学では講義室が定員の状態で空調換気扇を動作させても二酸化炭素濃度が1000ppmを超え換気が不十分であるという報告があります[1]．人間の密度によりCO2濃度が上昇することが示されています[2]．
-出来合いのものを買うこともできますが，精度が不十分であるという報告もあります[3]．というのは言い訳で，やはりここは自作して自由にいじれるものがほしいと思ったのがきっかけです．
-即席で作ったCO2もろもろ測定器意外と研究室で重宝している pic.twitter.com/S5IG8zsh1s
-— fumi (@fumi_maker) May 9, 2022
- 
-プロトタイプの実装
-…というを1年前くらいに思い，ブレッドボードに組んで放置しています．問題なく動いており，現在も研究室で動いています．ブレッドボードを落としてしまったり電源抜けたりして流石に良くないなと思ったので重い腰を上げて基板化しようと決意しました．
-前作って放置してたCO2メータ，自宅にいることが増えるこの時勢のために基板に起こそうかしら
-— fumi (@fumi_m…]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
 </feed>
