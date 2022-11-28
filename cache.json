@@ -5328,21 +5328,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20220830/20220830151040.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889911358654",
-          "author": null,
-          "description": "技術部の遠藤です。CookpadのフルタイムRubyコミッタの1人です。RubyKaigiまであと1週間ですね！\n今年のRubyKaigiでは、\"TRICK\"の発表をします。TRICKとは何か。まずはこのRubyコードを見てください。\n->\\\n&\\\nw{\na=\n?a\nb=\n?b\nc=\n?,\nd=\n?.\ne=\n?e\ng=\n?g\nh=\n?/\ni=\n?{\nl=\n?l\nm=\n?_\nn=\n?$\no=\n?1\nq=\n?'\nr=\n?<\ns=\n?s\nt=\n?>\nu=\n?u\nv=\n?v\nx=\n?(\ny=\n?)\nz=\n?-\n_=\n\"\"\nf=\nw[\nw,\nz+\nt+\ni+\nm+\nr+\nr+\nm+\no+\nd+\ng+\ns+\nu+\nb+\nx+\nn+\nh+\nc+\nq+\nq+\ny+\n?}\n];\nf[\n'p\nut\ns\"\nHe\nll\no,\n']\n_\\\n<<\n32\nf[\n'w\nor\nld\n!\"\n']\nw[\nw,\ne+\nv+\na+\nl+\nx+\nm+\ny]\n}[\n&[\n*(\n:\\\na\\\n..\n:\\\nÀÀ\n)%\n(0\n3\\\n**\n7*\n47\n;)\n][\n+1\n]]\nもう一度いいますが、これは「Rubyコード」です。保存して実行すると、\"Hello, world!\"と出ます。\n$ ruby hello.rb\nHello, world!\nTRICKとは、こういう変なRubyコードで競い合うプログラミングコンテストです *1 。読めないけれど面白い投稿作品（プログラム）が選定され、表彰されます。\nTRICKは2013年、2015年、2018年とやってきて、今回は4年ぶり4回目の開催になりますが、いままでで一番レベルの高い戦いになったと思います。というのも、上のプログラムは、TRICK 2022に落選したプログラムです。*2\nつまり、当日はこれよりすごい入賞作品たちが紹介されます。TRICK 2022 Resultsは1日目の夕方です。ご期待ください！\nrubykaigi.org\nおまけ\n開発者ブログなので、上記のプログラムの技術解説を軽く書いておきます。\n基本構造はこうなってます。\n-> &b { b[\"dummy\", \"<main code>\"] }[&:eval]\nラムダ式に:evalをブロックとして渡すことで、:evalが暗黙的にto_procでProcに変換されます。そのProcに\"<main code>\"が渡されることで、Kernel#evalが呼び出されて、最終的にmain codeが実行されます。\n<main code>のところは、↓のような感じで縦長にしています。\na = ?p\nb = ?u\nc = ?t\nd = ?s\na +\nb +\nc +\nd   #=> \"puts\"\n一番むずかしかったのが:evalというシンボルを作り出すところです。あっさりネタをばらすと、:aから始まるシンボルのRangeを列挙すると、102,789番目が:evalです。\n(:a..:ÀÀ).to_a[102789] #=> :eval\n:ÀÀというUnicodeなシンボルを使うところが肝。2文字分でありながら4バイト超なので、列挙が途中で打ち切られずに:aから:zzzzまでの配列が得られます。\nあとは読み解いてみてください。\nなお、実際に投稿したのはHello, world!ではなく、任意のRubyコードを縦長に変換するコードでした。完全な投稿は↓に置いたので興味あればどうぞ。\ngithub.com\nおまけのおまけ\nぜんぜん別の宣伝ですが、RubyKaigi当日はぜひ会場内のクックパッドブースに来てみてください！ 今年もなんか企画が用意されているはず。\n*1:Transcendental Ruby Imbroglio Contest for rubyKaigi の略ですが、この正式名称は遠藤も覚えてないです。\n*2:投稿者には採否の連絡をしていないのですが、これは遠藤自身が投稿して落選したコードなので、特別に先出ししています。",
-          "link": "https://techlife.cookpad.com/entry/2022/08/31/105011",
-          "publishedOn": "2022-08-31T01:50:11.000Z",
-          "wordCount": 578,
-          "title": "【RubyKaigi発表予告】超絶技巧コードコンテストTRICK 2022結果発表",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -7960,16 +7945,6 @@
           "wordCount": 2241,
           "title": "【メン限】エッセイ：失恋にはさまざまな形がある",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/85895832/rectangle_large_type_2_ffe2549cbd281a9fa84f5afb3692ca0d.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n513e0afddde1",
-          "author": null,
-          "description": "「果糖中毒―――19億人が太り過ぎの世界はどのように生まれたのか？」という本を読んだ。要点だけを掻い摘むと、肥満の爆発的流行のには糖分(とりわけ果糖)が原因にあるということだった。なにかしらの害をストーリーテリングで啓蒙する本は陰謀論じみている可能性があるので鵜呑みにはしなかったが、米国農務省が低所得者にジュースを配っているとか、正常体重の人の4割がインスリンの効き目が悪い状態にあるとか、種々の知識は興味深かった。\nこの本のいいところとして、危険性を啓蒙した後に適切な対処法を教えてくれることである。適切な運動をして、加工食品を食べないようにして、食物繊維を摂る。‥‥一般論的だけれど、いずれも重要そうなことだ。\n続きをみる",
-          "link": "https://note.com/sizes/n/n513e0afddde1",
-          "publishedOn": "2022-08-31T01:31:25.000Z",
-          "wordCount": 2214,
-          "title": "エッセイ：中毒と好意が両立した時のこと",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/85850139/rectangle_large_type_2_2dc42d98857026f48f6eaee5de3f3209.jpeg?width=800"
         }
       ]
     },
