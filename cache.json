@@ -1409,21 +1409,6 @@
             "length": "0"
           },
           "imageUrl": "https://i.gyazo.com/fe40d9a0a7c02343b2658f0b5624caa4.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889914008435",
-          "author": null,
-          "description": "概要\n完全に備忘録です．\nsudo apt install open-vm-tools-desktop or sudo apt install open-vm-toolsをするとそのまま入ります．\n環境\nHost: Windows10 Pro\nVMware workstation player\nubuntu22.04, 20.04\n現象\nVMwareくんとっても便利なんですが，たまにVMware toolsがインストールできないことがあります．\nグレーアウトしてクリックできない・・・という現象が発生しました．\n解決できなかった方法\nフロッピーを自動接続外してやることで解決するらしい，\npc-oogaki.com\naresei-note.com\njitakudesoho.jp\nit-study.info\nしかし，解決できなかった．\n解決できた方法\nsudo apt install open-vm-tools-desktop or sudo apt install open-vm-tools\ndesktopの場合はdesktopというほうを入れれば良いです．\nsudo reboot now\n再起動して完了．\nまとめ\nsudo apt install open-vm-tools-desktop or sudo apt install open-vm-tools\nを使おう．",
-          "link": "https://fumimaker.net/entry/2022/09/01/194744?utm_source=feed",
-          "publishedOn": "2022-09-01T10:47:44.000Z",
-          "wordCount": null,
-          "title": "VMware Workstation PlayerでVMware Toolsがグレーアウトしてインストールできない時",
-          "enclosure": {
-            "url": "https://pc-oogaki.com/swfu/d/20210624_vmware_01.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://pc-oogaki.com/swfu/d/20210624_vmware_01.png"
         }
       ]
     },

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-29T22:01:54.742Z</updated>
+    <updated>2022-11-29T23:01:48.379Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14456,40 +14456,6 @@ Twitterの流行り廃り的には、動いてないのに暑いよ→美味し�
 あと素材の味をそのまま使った…]]></summary>
         <author>
             <name>思い出したら書きます</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VMware Workstation PlayerでVMware Toolsがグレーアウトしてインストールできない時]]></title>
-        <id>hatenablog://entry/4207112889914008435</id>
-        <link href="https://fumimaker.net/entry/2022/09/01/194744?utm_source=feed"/>
-        <updated>2022-09-01T10:47:44.000Z</updated>
-        <summary type="html"><![CDATA[概要
-完全に備忘録です．
-sudo apt install open-vm-tools-desktop or sudo apt install open-vm-toolsをするとそのまま入ります．
-環境
-Host: Windows10 Pro
-VMware workstation player
-ubuntu22.04, 20.04
-現象
-VMwareくんとっても便利なんですが，たまにVMware toolsがインストールできないことがあります．
-グレーアウトしてクリックできない・・・という現象が発生しました．
-解決できなかった方法
-フロッピーを自動接続外してやることで解決するらしい，
-pc-oogaki.com
-aresei-note.com
-jitakudesoho.jp
-it-study.info
-しかし，解決できなかった．
-解決できた方法
-sudo apt install open-vm-tools-desktop or sudo apt install open-vm-tools
-desktopの場合はdesktopというほうを入れれば良いです．
-sudo reboot now
-再起動して完了．
-まとめ
-sudo apt install open-vm-tools-desktop or sudo apt install open-vm-tools
-を使おう．]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
 </feed>
