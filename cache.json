@@ -5328,21 +5328,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tmidorikawa/20220902/20220902123643.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889913318856",
-          "author": null,
-          "description": "技術部の遠藤です。2日連続の投稿です。\n今年のRubyKaigi 2022ではTRICKの発表をしますが、もうひとつ真面目な発表もします。Ruby 3.1の目玉機能であったerror_highlightについてです。\nこの発表内容について、あらすじを紹介したいと思います。\nRuby 3.1のerror_highlightとは\nRuby 3.1でNoMethodErrorが発生すると、次のようなエラーが表示されます。\n$ ruby test.rb\ntest.rb:1:in `<main>': undefined method `time' for 42:Integer (NoMethodError)\n\n42.time { print \"Hello\" }\n  ^^^^^\nDid you mean?  times\nこの42.time { print \"Hello\" }とその下線を出しているのがerror_highlightという機能です。\n当日は実装をかんたんに発表しますが、この内容はすでに記事を書いているので、興味があれば読んでください。\ntechlife.cookpad.com\nRuby 3.2で何が変わるか\nざっくり言えば2つです。\nArgumentErrorやTypeErrorでも下線が出るようになる\n$ ruby test.rb\ntest.rb:1:in `+': nil can't be coerced into Integer (TypeError)\n\n1 + nil\n    ^^^\nRailsのエラーページでも下線が出るようになる\nRailsのエラー画面のerror_highlight\nこれだけなんですが、これらを実現するためにRubyインタプリタのエラー処理まわりをいろいろと整理する必要がありました。\n何がむずかしかったか\n一言で言えば、「エラーメッセージの変更…",
-          "link": "https://techlife.cookpad.com/entry/2022/09/01/104312",
-          "publishedOn": "2022-09-01T01:43:12.000Z",
-          "wordCount": 526,
-          "title": "【RubyKaigi発表予告】error_highlight: user-friendly error diagnostics",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20220830/20220830151040.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20220830/20220830151040.png"
         }
       ]
     },
