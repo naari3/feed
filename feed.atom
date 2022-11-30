@@ -2,10 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-11-29T23:01:48.379Z</updated>
+    <updated>2022-11-30T00:03:14.927Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Docker Swarmでお手軽に冗長なMariaDBを作る]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=16370</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/16370"/>
+        <updated>2022-11-30T00:00:38.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、九州支社技術部(九州・中四国事業部)所属のy-morimotoです。 最近は、AWSのRDSなどで、冗長なDBはクリックポンで作れてしまいますが、自前で冗長なDBを作ろうとすると、何気に大...]]></summary>
+        <author>
+            <name>y-morimoto</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cookpad Summer Internship 2022 を開催しました！]]></title>
+        <id>hatenablog://entry/4207112889940732617</id>
+        <link href="https://techlife.cookpad.com/entry/2022/11/30/090000"/>
+        <updated>2022-11-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、ボイスサービス部の ymd (@y_am_a_da) です。今年は新卒採用エンジニアリーダーもやっています。
+さて、 https://techlife.cookpad.com/entry/2022/02/25/100000 でも告知させていただいた通り、今年の夏は 15-day Tech Course と 3-day Tech Course の 2 種類のエンジニア向けインターンシップを開催しました。この記事ではその内容を紹介します。
+15-day Tech Course
+15-day Tech Course は前半 5 日間が講義形式、後半 10 日間が実戦形式でした。また、今年も前半の講義パートはオンラインのみ、後半の実践パートではオフィスに来訪されることを希望した方にはオフィスで、それ以外の方々は前半から引き続きオンラインで参加する形式を取りました。また、昨年と違う点として今年のオンライン講義は Gather を利用しました。
+講義の際には右側に集まり、サービス開発講義などでグループワークをする際には左の小部屋に集まり作業をしました。参加者全員にビルダー権限を付与したおかげで日々画面が賑やかになっていく様が見ていて楽しかったです。
+
+1日目: オンボーディング & Git/GitHub 講義
+初日はまず午前中にイントロダクションとしてクックパッドの取り組みの紹介や自己紹介などを行いました。
+また、例年と違い今年は全ての参加者が後半の 10 日間では OJT に取り組むため、それに必要なセットアップなどもこの時間にやりました。
+イントロダクションを終えランチをした後、 Git/GitHub 講義から技術講義がスタートしました。
+
+
+
+講義の後は、引き続き OJT を進める上での各種説明や、 CTO の成田による技術組織の紹介などがありました。
+2 日目: i…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「エンジョイ」も「ガチ」も真剣にやってこそ‥‥]]></title>
+        <id>https://note.com/sizes/n/n77d6b6ae9490</id>
+        <link href="https://note.com/sizes/n/n77d6b6ae9490"/>
+        <updated>2022-11-29T23:55:42.000Z</updated>
+        <summary type="html"><![CDATA[対人ゲームのマッチングシステムに不満を持つ人は結構いるけれど、それは他のゲームと比べた時に持つ不満なんじゃないだろうか。少なくとも、昔とは比べ物にならないほど「適正マッチ」になってるはずだ。
+かの大乱闘スマッシュブラザーズが「エンジョイ部屋」「ガチ部屋」という切り分けをしたのが鏑矢だったのか、「エンジョイ勢」「ガチ勢」という切り分けはより克明な形で行われるようになった。Twitterの固定ツイートに自己紹介カードを書くか、bioにゲームの実績を書くか、その違いで住む世界は異次元になる。
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【週刊プラグインレビュー】Slate Digital / FG-X 2]]></title>
         <id>https://note.com/massmasaoki/n/n1a6900ec5ef1</id>
