@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-02T11:01:50.089Z</updated>
+    <updated>2022-12-02T12:02:04.438Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -189,6 +189,16 @@ Phasmophobiaに関しては余裕があればとりあえずやってます。�
         <link href="https://engineering.mercari.com/blog/entry/20221201-mercard-behind-the-scenes/"/>
         <updated>2022-12-01T11:30:07.000Z</updated>
         <summary type="html"><![CDATA[こんにちは。メルペイ Engineering Engagement チームの mikichin です。 先日、11月8日にメルカリとして初めてとなるクレジットカード「メルカード」の提供を開始 しました。 「メルカード」に […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「Mercari Hack Fest」 無限の可能性を追求するイベントの結果報告！]]></title>
+        <id>24029</id>
+        <link href="https://engineering.mercari.com/blog/entry/20221118-mercari-hack-fest-unlimited-hacktivity-the-result/"/>
+        <updated>2022-12-01T11:00:45.000Z</updated>
+        <summary type="html"><![CDATA[皆さん、こんにちは。Engineering OfficeのYozaです。こちらの記事は「Mercari Advent Advent Calendar」1日目のために作成しました。 メルカリでは、2022年11月9～11日 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
         </author>
@@ -14573,17 +14583,6 @@ www.rentio.jp
 Amazonセールでクーポンと…]]></summary>
         <author>
             <name>僕とネットショッピング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[TSプロジェクトにコピペするだけの classname 連結関数]]></title>
-        <id>https://blog.ojisan.io/simple-classname-cat</id>
-        <link href="https://blog.ojisan.io/simple-classname-cat"/>
-        <updated>2022-09-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[CSS classname CSS の class 名を連結させるライブラリがある。classnames や clsx だ。
-これは配列や可変長引数を引数にとって、それを連結した文字列を返す。 ところでこの手のライブラリはただ classname を連結するだけでなく、falsy…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
 </feed>
