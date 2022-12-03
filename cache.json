@@ -5386,6 +5386,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889941950608",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n本記事で伝えたいのは、技術関連で参考になった記事があれば、それは素直に感謝するとみんなハッピーになるということです。\n英語でのフィードバック\n先日、自分の書いた iOS に関するブログで、嬉しい反応を海外から頂きました。\n\nWhile @twostraws provided the basic framework, there were many challenges. \nA big one was getting audio to play. I have to thank @kimihom whose blog (Japanese) had the one solution that was simple & just worked after lots of time trying others. pic.twitter.com/KIKN1e6pXc\n— Jonathan Webb (@Jonathan_Webb__) 2022年10月27日\n  \n@kimihom whose blog (Japanese) had the one solution that was simple & just worked after lots of time trying others.\n\n\n記事は日本語で書いたブログだったのですが、iOS でのオーディオ実装に関して、シンプルに動作する方法だと紹介いただきました。\n個人的な感覚ですが、日本人はこうやってシンプルに感謝のツイートしようって思うことが少ないんじゃないかと思いました。もっとそれぞれが意識的に参考になるブログに「助かりました！」と伝えることで、より良いエンジニアコミュニティができるのではないかと思いました。\n自分でも試してみた\nそう思い、早速自分も参考になったQiitaの記事に感謝をしてみました。\n\nついに長らく不便と思ってたのを解決できた。感謝の意を込めて。\n- Ruby3.1にしたらRails consoleもオートコンプリートされるようになったので無効化する https://t.co/RL1hwrYZYe @hamchance0215より\n— kimihom (@kimihom) 2022年10月31日\n  \nすると、「記事を書いた甲斐がありました」と 執筆者の方から連絡をいただきました。\n純粋に「ありがとう」って伝えるの、良いことだな〜と思いました。\n終わりに\n何か参考になる記事が出てきたら、素直に感謝するツイートをしてみましょう。\nこれだけで、皆さんのモチベがアップします。\nみんなが感謝を示すようになったら、日本全体のエンジニアのレベルがアップすると信じています。",
+          "link": "https://www.bokukoko.info/entry/2022/12/03/160339",
+          "publishedOn": "2022-12-03T07:03:39.000Z",
+          "wordCount": null,
+          "title": "参考になった技術ブログに感謝すると幸せ",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221203/20221203160227.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221203/20221203160227.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889938275861",
           "author": null,
           "description": "ども、@kimihom です。\n\n久々に無限スクロールを実装する機会が 詠みラボで発生しました。そこで、振り返りがてら、こんな感じで実装するのが個人的に一番シンプルだったコードをご紹介します。\nサーバー側実装\n俳句(Haiku) をそれぞれ20句ごとに毎回取得し、スクロール下部についたら新しく20件を取得します。HTMLの生成は Rails サーバー側で実施し、それをフロントエンド側では単に HTML を追加するだけの処理になっています。\n# Gemfile\ngem \"kaminari\"\n\n# config/routes.rb\nresources :haiku\n\n# app/models/haiku.rb\nclass Haiku < ApplicationRecord\n  paginates_per 20\nend\n\n# app/controllers/haiku_controller.rb\nclass HaikuController < ApplicationController\n  before_action :authenticate_user!, only: [:new, :create, :update]\n\n  def index\n    @haikus = Haiku\n      .page(params[:page])\n      .order(\"created_at DESC\")\n\n    # 重要. スクロール時はlayoutを含めない\n    return render layout: false if params[:no_layout]\n  end\n\nend\n\n\n\n\n\n<%# app/views/haiku/index.html.erb %>\n<div id=\"haikuCmp\">\n  <% @haikus.each do |haiku| %>\n   …",

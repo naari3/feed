@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-03T07:01:43.948Z</updated>
+    <updated>2022-12-03T08:01:43.351Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,43 @@
         <summary type="html"><![CDATA[この記事は、Mercari Advent Calendar 2022 の3日目および Developer Productivity Engineering Campブログシリーズの一環で、メルカリCI/CDチームのMic […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[参考になった技術ブログに感謝すると幸せ]]></title>
+        <id>hatenablog://entry/4207112889941950608</id>
+        <link href="https://www.bokukoko.info/entry/2022/12/03/160339"/>
+        <updated>2022-12-03T07:03:39.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+本記事で伝えたいのは、技術関連で参考になった記事があれば、それは素直に感謝するとみんなハッピーになるということです。
+英語でのフィードバック
+先日、自分の書いた iOS に関するブログで、嬉しい反応を海外から頂きました。
+
+While @twostraws provided the basic framework, there were many challenges. 
+A big one was getting audio to play. I have to thank @kimihom whose blog (Japanese) had the one solution that was simple & just worked after lots of time trying others. pic.twitter.com/KIKN1e6pXc
+— Jonathan Webb (@Jonathan_Webb__) 2022年10月27日
+  
+@kimihom whose blog (Japanese) had the one solution that was simple & just worked after lots of time trying others.
+
+
+記事は日本語で書いたブログだったのですが、iOS でのオーディオ実装に関して、シンプルに動作する方法だと紹介いただきました。
+個人的な感覚ですが、日本人はこうやってシンプルに感謝のツイートしようって思うことが少ないんじゃないかと思いました。もっとそれぞれが意識的に参考になるブログに「助かりました！」と伝えることで、より良いエンジニアコミュニティができるのではないかと思いました。
+自分でも試してみた
+そう思い、早速自分も参考になったQiitaの記事に感謝をしてみました。
+
+ついに長らく不便と思ってたのを解決できた。感謝の意を込めて。
+- Ruby3.1にしたらRails consoleもオートコンプリートされるようになったので無効化する https://t.co/RL1hwrYZYe @hamchance0215より
+— kimihom (@kimihom) 2022年10月31日
+  
+すると、「記事を書いた甲斐がありました」と 執筆者の方から連絡をいただきました。
+純粋に「ありがとう」って伝えるの、良いことだな〜と思いました。
+終わりに
+何か参考になる記事が出てきたら、素直に感謝するツイートをしてみましょう。
+これだけで、皆さんのモチベがアップします。
+みんなが感謝を示すようになったら、日本全体のエンジニアのレベルがアップすると信じています。]]></summary>
+        <author>
+            <name>ボクココ</name>
         </author>
     </entry>
     <entry>
