@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-03T11:01:47.347Z</updated>
+    <updated>2022-12-03T12:01:40.394Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14560,30 +14560,6 @@ MySQL ネックではなくなったので、この後 pt-query-digest は使わ
         <summary type="html"><![CDATA[こんにちは。IIJ Engineers Blog編集部です。 IIJの社内掲示板では、エンジニアのちょっとした技術ネタが好評となって多くのコメントが付いたり、お役立ち情報が掲載されています。 今回は、...]]></summary>
         <author>
             <name>IIJ Engineers Blog編集部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AWS GameDay を社内開催しました]]></title>
-        <id>hatenablog://entry/4207112889914304962</id>
-        <link href="https://techlife.cookpad.com/entry/2022/09/05/090000"/>
-        <updated>2022-09-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[技術部 SRE グループの奥村 (@hfm) です。クックパッドでは Hackarade というエンジニアの技術力の底上げを目的とした社内ハッカソンを不定期に開催しています。テーマは毎回異なり、2022 年 8 月 3 日に開催された Hackarade では AWS GameDay を題材としました。本記事ではそのイベントをレポートします。
-AWS GameDay と開催経緯
-AWS GameDay は ISUCON のようにスコア計測があるトレーニングプログラムで、テーマに沿って自分で考えながらシステムを構築しつつ、時に障害に対処したり、スキルアップを図る実践的な内容になっています。AWS re:Invent などで開催されるものに任意参加するのが一般的ですが、今回は社内向けに開催してもらいました。GameDay という名の通り、AWS に関するクイズだけにとどまらないゲーム要素もあり、全くの AWS 初心者でもルールの範囲内である程度戦いようがあるように設計されています。
-クックパッドは AWS をフル活用しており、SRE グループは社内でもとりわけ使い込んでいます。一方他の部署では、Solution Architect の Associate や Professional の資格を持っているエンジニアも何人かいますし、AWS に馴染みのあるエンジニアもいる一方で、例えば「なんとなく S3 などを使ってはいるけど、マニュアルやドキュメントをちゃんと読んで機能を把握した上で使いこなせているわけではない」といった人たちもいます。仕事の関係上、AWS に触れる機会が少ないエンジニアの方々にも AWS への理解を深めてもらうことで、クラウドを使い倒すスキルを向上に貢献したいという思いが開催の一番大きな理由でした。
-AWS GameDay はチーム戦となっており、今回は合計 6…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FCM で実現する Web push 通知 の解説]]></title>
-        <id>https://blog.ojisan.io/fcm-push</id>
-        <link href="https://blog.ojisan.io/fcm-push"/>
-        <updated>2022-09-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[なにを作ったか それは秘密です。とある何かを作ったのですが、公式から DM で怒られたので公開を停止しています。その供養も兼ねて、そのときの学びを書いていきます。 Web の Push 通知についての全体的な解説 通知と Push さて、Push…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
 </feed>
