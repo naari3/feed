@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-04T02:24:40.459Z</updated>
+    <updated>2022-12-04T03:02:59.540Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ChatGPTで日本語プログラミング（本当）をやってみた]]></title>
+        <id>hatenablog://entry/4207112889942169951</id>
+        <link href="https://kmizu.hatenablog.com/entry/2022/12/04/114244"/>
+        <updated>2022-12-04T02:42:44.000Z</updated>
+        <summary type="html"><![CDATA[さて、相変わらずChatGPTにハマっておりますが、ふと思いついたアイデアがあります。どうも、ChatGPT君はプログラミング言語「そのもの」の普遍的な理解があるのではと思えてきたので、それを考えると自然言語をプログラムとして解釈させることも可能な気がしてきたのですよね。というわけで、以下がスクショです。階乗を計算させるのが目的ですが、階乗と書くと空気読まれそうなので「ほげ数」にしてあります。
+
+　なんか「どのプログラミング言語で解釈すればいいかわからないタスク」についてはどうもPythonに内部的に変換して解釈してる節があります。ともあれ、再帰を含む日本語疑似コード（表記ゆれあり）をそのまま解釈できるのは凄いですね。
+　不完全ですが対話ログを gist に保存しておきました。回答はプロンプトごとに微妙に違うものが返ってくる可能性があるのでご注意をば。]]></summary>
+        <author>
+            <name>kmizuの日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2022年12月 第1週の日記]]></title>
         <id>hatenablog://entry/4207112889941824185</id>
