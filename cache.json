@@ -4928,21 +4928,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889915355535",
-          "author": null,
-          "description": "Fluentd実践入門\nFluentdの現バージョン(v1.15)について世界で一番詳しい本です。というか、Fluentdそのものだけについての、おそらく世界で唯一の技術書です。\n出版社は技術評論社です。電子版もGihyo.jpやKindleはじめ各社で出ます。買ってね!\ngihyo.jp\nTL;DR\n発売日は10月8日です\n\n\n一部書店ではちょっと早く9月末に並ぶかも\n電子版は発売日よりちょっと前に出るかも1\n544ページ、Fluentd本体については考えられる限り盛り込みました\n\n\nFluentdをなんとなく使っている人が確信を持って使えるようになれるはず\n組込みプラグインの頻出用法、本番環境での運用ノウハウ、プラグイン開発からテストなどまで\nエコシステム的な部分についてはカバーできていません\n\n\nKubernetes上での運用やFluent Bitとの組み合わせとか\nAWS FireLensやGCP CloudLoggingなどで使うときのノウハウとか\nでもそのへんを調べるときの基礎的な知識が得られるでしょう\n最後のゲラのチェックと修正はさっき終わらせたぞ!\nなお、本の一部に見開きで左右ぶち抜きの表があります。まあまあな数あります。これがもしかしたら、電子版ではちょっと見にくいかもしれません。残念ですが各ページには収まらなかったのでこうなっています。電子版を購入される方にはすみません。\nアピールポイント\nFluentdについて、前にけっこうやったしだいたい知ってる、と思う人もいると思います。おそらくその人達の多くは次のことを知らないでしょう。\nout_forwardの送信先リスト2、今では再起動なしで増やしたり減らしたりできる\nFluentdの設定ファイルはYAMLで書ける\nひとつめはFluentd v1.8でサポートされたService Discoveryプラグイン…",
-          "link": "https://tagomoris.hatenablog.com/entry/2022/09/06/092458",
-          "publishedOn": "2022-09-06T00:24:58.000Z",
-          "wordCount": null,
-          "title": "「Fluentd実践入門」を10月8日に出版します",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20220905/20220905232914.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20220905/20220905232914.png"
         }
       ]
     },

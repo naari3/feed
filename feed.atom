@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-04T12:02:22.107Z</updated>
+    <updated>2022-12-04T13:05:18.896Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14584,43 +14584,6 @@ LCDで表示
 記事本文内の見出し要素 (h1～h6) 内にルビ関連要素 (ruby、rt など) を記述していた場合、そのルビ関連要素が消えるようになっていたため修正しました。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「Fluentd実践入門」を10月8日に出版します]]></title>
-        <id>hatenablog://entry/4207112889915355535</id>
-        <link href="https://tagomoris.hatenablog.com/entry/2022/09/06/092458"/>
-        <updated>2022-09-06T00:24:58.000Z</updated>
-        <summary type="html"><![CDATA[Fluentd実践入門
-Fluentdの現バージョン(v1.15)について世界で一番詳しい本です。というか、Fluentdそのものだけについての、おそらく世界で唯一の技術書です。
-出版社は技術評論社です。電子版もGihyo.jpやKindleはじめ各社で出ます。買ってね!
-gihyo.jp
-TL;DR
-発売日は10月8日です
-
-
-一部書店ではちょっと早く9月末に並ぶかも
-電子版は発売日よりちょっと前に出るかも1
-544ページ、Fluentd本体については考えられる限り盛り込みました
-
-
-Fluentdをなんとなく使っている人が確信を持って使えるようになれるはず
-組込みプラグインの頻出用法、本番環境での運用ノウハウ、プラグイン開発からテストなどまで
-エコシステム的な部分についてはカバーできていません
-
-
-Kubernetes上での運用やFluent Bitとの組み合わせとか
-AWS FireLensやGCP CloudLoggingなどで使うときのノウハウとか
-でもそのへんを調べるときの基礎的な知識が得られるでしょう
-最後のゲラのチェックと修正はさっき終わらせたぞ!
-なお、本の一部に見開きで左右ぶち抜きの表があります。まあまあな数あります。これがもしかしたら、電子版ではちょっと見にくいかもしれません。残念ですが各ページには収まらなかったのでこうなっています。電子版を購入される方にはすみません。
-アピールポイント
-Fluentdについて、前にけっこうやったしだいたい知ってる、と思う人もいると思います。おそらくその人達の多くは次のことを知らないでしょう。
-out_forwardの送信先リスト2、今では再起動なしで増やしたり減らしたりできる
-Fluentdの設定ファイルはYAMLで書ける
-ひとつめはFluentd v1.8でサポートされたService Discoveryプラグイン…]]></summary>
-        <author>
-            <name>たごもりすメモ</name>
         </author>
     </entry>
 </feed>
