@@ -108,6 +108,31 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://diary.hatenablog.jp/" target="_blank"
+              rel="noopener">Write and Run</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">リモートマシンから手元に向かってコマンドを実行できるやつを作った</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://diary.hatenablog.jp/entry/2022/12/05/212228" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>KOBA789 です。寒い日が続きますね。こうもあまりに寒いとアイスを食べたくなるものです。昨日の私はその衝動に抗えず、コンビニでソフトクリーム（チョコ味とのミックス）を買ってきて食べました。余計に寒くなったのでもう二度とやりません。今はおでんが食べたいです。よろしくお願いします。
+リモートから手元に向かってコマンドを実行したい
+さて、寒いとアイスが食べたくなるように、リモートマシンに SSH でログインしていると手元でコマンドを実行したくなるものです。せっかくリモート接続してるのにね。人って不思議です。
+たとえば、SSH 先の Linux マシンで code って打ったら手元の MacBook Air で VS Code が起動してほしいわけです。VS Code の Integrated Terminal 内ならできますけど、そもそも VS Code のウィンドウが1枚も開いていないときには使えない技です。
+Alacritty で SSH して、cd でプロジェクトのディレクトリまで潜って、さぁやるぞと思って code . と叩くと zsh: command not found: code の響きあり。がーんだな……出鼻をくじかれた。ただでさえ寒くてお布団から出たくない*1のにこれでは仕事する気になるわけがありません。エンジニアリングでなんとかしましょう。MacBook Air を Linux サーバーを併用するなんていうトリッキーな開発環境でなければ困らない問題ですが、困っているのでなんとかするしかありません。
+さらにいうと、KOBA789 は AWS の認証情報管理に aws-vault というツールを使っています。これはアクセスキーやセッショントークンを OS のセキュアなキーチェーンに保存してくれて Credential Provider の一種である Proce…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -20595,35 +20620,11 @@ Y2Kリバイバルが影響したのか、潜在的需要があったのか、�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/studio_vk" target="_blank"
-              rel="noopener">スタジオVK 神長タクミ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">ローカルタレントが地元メディアに出てない場合の生活方法について</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/studio_vk/n/n033e3bcc0e59" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>見ろよ！また変な動画がupされてるぜ！
-どうも、秋田最後の男性タレントこと神長タクミです。
-これは困りましたね。ますます女性ファンが減ってしまうじゃないですか。元々学生を中心に黄色い声を得るべく活動しているので、二十歳の頃から自称ローカルタレントだったのにもうおじさんカテゴリの仲間入りですよ…
-1,どういう生活なの
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/86351762/rectangle_large_type_2_cb32e34047915c553b25586b90447356.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-05T12:02:07.650Z">2022-12-05T12:02:07.650Z</time>
+    <time id="build-timestamp" datetime="2022-12-05T13:06:33.782Z">2022-12-05T13:06:33.782Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

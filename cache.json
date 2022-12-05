@@ -1217,7 +1217,23 @@
       "title": "Write and Run",
       "feedUrl": "https://diary.hatenablog.jp/rss",
       "siteUrl": "https://diary.hatenablog.jp/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/4207112889942600510",
+          "author": null,
+          "description": "KOBA789 です。寒い日が続きますね。こうもあまりに寒いとアイスを食べたくなるものです。昨日の私はその衝動に抗えず、コンビニでソフトクリーム（チョコ味とのミックス）を買ってきて食べました。余計に寒くなったのでもう二度とやりません。今はおでんが食べたいです。よろしくお願いします。\nリモートから手元に向かってコマンドを実行したい\nさて、寒いとアイスが食べたくなるように、リモートマシンに SSH でログインしていると手元でコマンドを実行したくなるものです。せっかくリモート接続してるのにね。人って不思議です。\nたとえば、SSH 先の Linux マシンで code って打ったら手元の MacBook Air で VS Code が起動してほしいわけです。VS Code の Integrated Terminal 内ならできますけど、そもそも VS Code のウィンドウが1枚も開いていないときには使えない技です。\nAlacritty で SSH して、cd でプロジェクトのディレクトリまで潜って、さぁやるぞと思って code . と叩くと zsh: command not found: code の響きあり。がーんだな……出鼻をくじかれた。ただでさえ寒くてお布団から出たくない*1のにこれでは仕事する気になるわけがありません。エンジニアリングでなんとかしましょう。MacBook Air を Linux サーバーを併用するなんていうトリッキーな開発環境でなければ困らない問題ですが、困っているのでなんとかするしかありません。\nさらにいうと、KOBA789 は AWS の認証情報管理に aws-vault というツールを使っています。これはアクセスキーやセッショントークンを OS のセキュアなキーチェーンに保存してくれて Credential Provider の一種である Proce…",
+          "link": "https://diary.hatenablog.jp/entry/2022/12/05/212228",
+          "publishedOn": "2022-12-05T12:22:28.000Z",
+          "wordCount": null,
+          "title": "リモートマシンから手元に向かってコマンドを実行できるやつを作った",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "dsaki",
@@ -8072,16 +8088,6 @@
           "wordCount": null,
           "title": "地方のテレビに新しいローカルタレントが現れない理由とその対策",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/86797554/rectangle_large_type_2_98853684678e6079b865d7f3b4e460c8.png?width=800"
-        },
-        {
-          "id": "https://note.com/studio_vk/n/n033e3bcc0e59",
-          "author": null,
-          "description": "見ろよ！また変な動画がupされてるぜ！\nどうも、秋田最後の男性タレントこと神長タクミです。\nこれは困りましたね。ますます女性ファンが減ってしまうじゃないですか。元々学生を中心に黄色い声を得るべく活動しているので、二十歳の頃から自称ローカルタレントだったのにもうおじさんカテゴリの仲間入りですよ…\n1,どういう生活なの\n続きをみる",
-          "link": "https://note.com/studio_vk/n/n033e3bcc0e59",
-          "publishedOn": "2022-09-07T00:02:09.000Z",
-          "wordCount": 2285,
-          "title": "ローカルタレントが地元メディアに出てない場合の生活方法について",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/86351762/rectangle_large_type_2_cb32e34047915c553b25586b90447356.jpeg?width=800"
         }
       ]
     },
