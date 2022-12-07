@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-07T17:01:52.472Z</updated>
+    <updated>2022-12-07T18:01:49.144Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[正しいクラウドはある意味で遅い]]></title>
+        <id>hatenablog://entry/4207112889917287812</id>
+        <link href="https://kumagi.hatenablog.com/entry/cloud-is-slow"/>
+        <updated>2022-12-07T17:22:32.000Z</updated>
+        <summary type="html"><![CDATA[TL;DR 正しく設計するとキャパシティは常にカツカツになる
+これはpyspaアドベントカレンダーの8日目の記事です。前日はShibukawaさんです。
+ 
+世はクラウド時代、ソフトウェアはひとたび作られたら何億回実行されても摩耗するものではないので、どんな間抜けなロジックであろうと動く以上は別のどこかで瑕疵が出てくるまで使い倒されるのは日常茶飯事である。
+サービスを負荷の前提の上に定義する
+クラウドより前の時代においてサービスを支えるマシンは「ロードアベレージが1.0を超えてなければとりあえずOK、超えたらマシンを増やして負荷を分散する」というノリのベストプラクティスがよく言われていたがそれはサーバ資源の確保にそれなりに時間がかかる時代の常識であって、クラウド時代でサーバは分単位で確保できるようになった。
+クラウドの利点としてその即時的なスケーラビリティが常套句として使われて久しいが、これは裏から見れば必要がない時はあらん限り縮退して走ってて欲しいという前提と表裏一体である。極端なことを言うとサービスがまともに動く限りにおいてロードアベレージは高ければ高いほど良い、その方がクラウドに払うお金が安いから。そうなるとサービスが過負荷になっているかはロードアベレージの数字ではなく別の指標（i.e. SLO）で「まともに動く」を再定義した上で決定することになる。
+古典的な分散システムあるあるな議論の典型の一つとして「負荷分散は忙しい奴がタスクを押し付ける(push)か、暇な奴がタスクを取っていく(pull)か」という設計判断があるが、クラウド時代において少なくとも前者はナンセンスである。なぜなら正しくスケーリングしているクラウドであれば自分以外の全てのワーカーは忙しくなければおかしいのであり、自サーバの忙しさは他サーバに負荷を押し付ける根拠ではないからである。当然他サーバもフルに…]]></summary>
+        <author>
+            <name>Software Transactional Memo</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[メルカード常時ポイント還元開発の話]]></title>
         <id>24704</id>
