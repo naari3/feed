@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-07T01:28:36.440Z</updated>
+    <updated>2022-12-07T02:28:02.638Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[FinOpsへの取組 地道な計数管理とデーター加工の日々]]></title>
+        <id>24554</id>
+        <link href="https://engineering.mercari.com/blog/entry/20221206-bae8250a5e/"/>
+        <updated>2022-12-07T11:00:17.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリ Infrastructure & Procurement Management Team(IPM)の@bungoです。約1年前の2021年夏からメルカリにJoinして、エンジニア組織のお金の […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[呼び込み君音源カード書き換え機　第一関門（ハードウェア編）]]></title>
+        <id>hatenablog://entry/4207112889942984931</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2022/12/07/104244"/>
+        <updated>2022-12-07T01:42:44.000Z</updated>
+        <summary type="html"><![CDATA[前回の記事、思ったよりたくさんの人に読んでもらい、面白いと言ってもらったので
+調子に乗ってどんどん書いていきます。
+ 
+honeylab.hatenablog.jp
+↓いただいてる はてブコメント
+b.hatena.ne.jp
+前回まででカードからの読み込みと、内部フォーマットの大体の解析ができました。
+改めて要求仕様を確認すると
+息子「ドン・キホーテの音源カードが欲しい」
+ということです。
+これを目指すために、純正の音源カードの中身を書き換えることを目指します。
+まず、音源カードのオリジナルのICはそれなりに大事なものですので、できれば別の書き込み可能なFlashに書き込み、前ページに書いてあるようなチップ選択方式を使ってスイッチなどで切り替えられれば最高です。
+そのために、手持ちのジャンク基板から、同じ方法で読み出せるSPI Flashを外し、
+この中に元の音源チップから吸い出したものをそのまま書き込み、このチップから再生できるかどうかということを試すことにしました。
+もともと載っているFlashはMicrochip製 SST26VF032B ですが、試しに使ってみたのは全く違うメーカのXT25F128というものです。
+基本的なアクセス方法は同じ(互換モード)ですので、単純なREADだけ使っているなら中身は同じように読み出せるはずです。
+
+ 
+
+呼び込み君にセットしてみると…再生されません。。残念です。
+このようなFlashメモリ、基本的なコマンドは同じですが、上位のコマンドや特性など、専用の機能を使ったりする場合にチップを判別するためのID「JEDEC ID」という３バイトのコードが埋め込まれています。
+推測ですが、電源投入直後にこのコードを確認し、違うチップの場合拒絶するか、読み込みエラーとして作業を中断する仕様になっている可能性があります。
+呼び込み君のマイコンの…]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[週記#36 12月1週]]></title>
         <id>hatenablog://entry/4207112889942816357</id>

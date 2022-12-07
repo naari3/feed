@@ -78,6 +78,67 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank"
+              rel="noopener">メルカリエンジニアリングブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">FinOpsへの取組 地道な計数管理とデーター加工の日々</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://engineering.mercari.com/blog/entry/20221206-bae8250a5e/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。メルカリ Infrastructure &amp; Procurement Management Team(IPM)の@bungoです。約1年前の2021年夏からメルカリにJoinして、エンジニア組織のお金の […]</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
+              rel="noopener">honeylab&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">呼び込み君音源カード書き換え機　第一関門（ハードウェア編）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2022/12/07/104244" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前回の記事、思ったよりたくさんの人に読んでもらい、面白いと言ってもらったので
+調子に乗ってどんどん書いていきます。
+ 
+honeylab.hatenablog.jp
+↓いただいてる はてブコメント
+b.hatena.ne.jp
+前回まででカードからの読み込みと、内部フォーマットの大体の解析ができました。
+改めて要求仕様を確認すると
+息子「ドン・キホーテの音源カードが欲しい」
+ということです。
+これを目指すために、純正の音源カードの中身を書き換えることを目指します。
+まず、音源カードのオリジナルのICはそれなりに大事なものですので、できれば別の書き込み可能なFlashに書き込み、前ページに書いてあるようなチップ選択方式を使ってスイッチなどで切り替えられれば最高です。
+そのために、手持ちのジャンク基板から、同じ方法で読み出せるSPI Flashを外し、
+この中に元の音源チップから吸い出したものをそのまま書き込み、このチップから再生できるかどうかということを試すことにしました。
+もともと載っているFlashはMicrochip製 SST26VF032B ですが、試しに使ってみたのは全く違うメーカのXT25F128というものです。
+基本的なアクセス方法は同じ(互換モード)ですので、単純なREADだけ使っているなら中身は同じように読み出せるはずです。
+
+ 
+
+呼び込み君にセットしてみると…再生されません。。残念です。
+このようなFlashメモリ、基本的なコマンドは同じですが、上位のコマンドや特性など、専用の機能を使ったりする場合にチップを判別するためのID「JEDEC ID」という３バイトのコードが埋め込まれています。
+推測ですが、電源投入直後にこのコードを確認し、違うチップの場合拒絶するか、読み込みエラーとして作業を中断する仕様になっている可能性があります。
+呼び込み君のマイコンの…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20221207/20221207100556.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://nkaoobt.hatenablog.com/" target="_blank"
               rel="noopener">音MADとポケモンと私</a></h3>
           <section class="articles-per-source">
@@ -20474,7 +20535,7 @@ Let OpenAPI generate your Android network layer by leveraging Retrofit, Moshi, a
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-07T01:28:36.387Z">2022-12-07T01:28:36.387Z</time>
+    <time id="build-timestamp" datetime="2022-12-07T02:28:02.586Z">2022-12-07T02:28:02.586Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
