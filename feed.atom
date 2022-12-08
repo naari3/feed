@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-08T10:01:51.045Z</updated>
+    <updated>2022-12-08T11:01:48.166Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[いらつくこと]]></title>
+        <id>hatenablog://entry/4207112889943375963</id>
+        <link href="https://kimginyon.hatenablog.com/entry/2022/12/08/193253"/>
+        <updated>2022-12-08T10:32:53.000Z</updated>
+        <summary type="html"><![CDATA[コメディAIを開発している理由の一つに、”婉曲距離が短いコメディの方が、婉曲距離が長いコメディよりも商業的に成功している”というものがある。
+もし開発に成功した場合、婉曲距離が長いコメディを作っているまともなクリエイターも巻き添えで失業するだろう。
+センシティブなワードを羅列するだけだった頃の自分の漫画があんなにバズった事が恐ろしい。あの頃の自分の漫画を消費していた人間は、ジャンプルーキーの例の漫画とかテコンダー朴を消費している。
+川崎国の1話目を作り始めた時、なんとなく自分が将来的にAIを作る事になるのだろうと思い、試験的にコーディングのような工程をとった。当時は”コメディがAIに代替される”という予感を黙殺していたが、黙殺が不足してそのような行動をとった。
+川崎国は3話目からは”AI制作の過程で出た副産物と主産物を詰め込んだ物”になる。
+2030年までに誰かがAIによるコメディの代替に成功する。
+今コードをせっせと書いている。完成した場合、その核心的な部分、つまりボケを生成するという最も重要な作業を担う行の容量は何KBになるのだろうか？
+自分が今描いている設計図が正しいとすれば、512KB(国内版ポケモン赤青緑のrom容量)を超えるかどうか怪しい。少なくとも1MB(国内版ポケモン金銀)は超えない。人間の芸術の一分野が、ポケモン赤青緑未満の容量だとしたら、人間が大したことないのか、それとも凄いのか？]]></summary>
+        <author>
+            <name>pythonと自然言語処理を学ぶ日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「はてなブログのリトルプレスパック」をリリースしました。第2回 日記祭でサンプルをご覧になれます。]]></title>
         <id>hatenablog://entry/4207112889942803519</id>
