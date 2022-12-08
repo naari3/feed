@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-08T17:01:41.498Z</updated>
+    <updated>2022-12-08T18:01:56.947Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14882,46 +14882,6 @@ github.com
 僕が定期的に「全身が千代田桃になってきた」とツイートしていたのは別に合目的的な目的意識故ではなく千代田桃の気持ちが100%わかるから…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Google Search Console でのブログ改善]]></title>
-        <id>hatenablog://entry/4207112889916818345</id>
-        <link href="https://www.bokukoko.info/entry/2022/09/10/142629"/>
-        <updated>2022-09-10T05:26:29.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-Google Search Console という Google のツールを使ったら、自分のブログの改善点が出てきたので対応することにした。
-AMP
-詳しくははてなブログの特設サイトに譲るとして、簡単に言えば Google etc がより速くWebサイトを表示させるために、AMP に対応したWebサイトは特別に扱われるようになるものである。CSS などのUIが特別になるので、提供元は AMP でのUIをしっかりと確認しておく必要がある。
-はてなブログの場合、設定 > 詳細設定 > 高度な設定 > AMPを配信する を ON にするだけでOKだ。(はてなブログProのみ)
-すると、ブログの URL に ?amp=1 の特別なURLが作られる。
-例えば AMP 付きのWebサイトは以下のような形だ。
-娘が声優になりたいと言い出した時に私ならこう言う - ボクココ
-ちなみに、AMP でない通常の URL は以下となる。
-娘が声優になりたいと言い出した時に私ならこう言う - ボクココ
-AMP が入っていると、よりシンプルな表示になっていることが確認できるだろう。AMP で Google 側にキャッシュをさせることで、より検索結果を早く表示されるようになるとのことで、やれるならやったほうがいいに違いない。
-AMP 警告
-さてこの AMP だが、単に はてなブログで 有効にするだけでは 大量の NG が発生する。
-私がNGくらった項目は、ほぼ全て画像の画質問題の警告だった。どうやらある一定の画質のブログ記事のメイン画像でないと、それは正しくAMP化されないようである。
-警告表示されている記事を1つ1つ編集する必要がある。
-まず記事に合う高画質画像を用意
-記事ページに貼り付ける
-はてなブログ設定 > アイキャッチ画像 にて その高画質画像を適用させる
-アイキャッチ画像の登録が必要なので、お忘れなく。
-最終的に全て OK となるように記事を更新した。更新した後、Google に審査リクエストを送ることで、数日待つとちゃんと正しく更新されたページとして登録される。
-全てが正しくAMP化されると、とても気持ちの良いUIが表示される。
-
-広告が表示されない
-お金目当てでブログを書いてる人は、きっとやる気が出ない点となるが、AMP化されたページは広告が表示されない。
-収益を優先させるより、より多くの人々に 自分が書いた記事が届く。それを喜びとする必要があろう。
-終わりに
-サイトの改善案として提供してくれている Google Search Console を紹介した。
-Google Search Console では、今回紹介した AMP の確認以外にも、ページのインデックス登録確認、パンくずリストの確認なども可能となっている。
-やらないよりはやったほうがいいに違いないので、時間ある時に見てみていただければ幸いだ。
-Amazon | Google グーグル GA02213-GB [Google Pixel Buds A-Series フルワイヤレスイヤホン Clearly White] | Google(グーグル) | パソコン・周辺機器 通販]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>
