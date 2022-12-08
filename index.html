@@ -78,6 +78,47 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
+              rel="noopener">honeylab&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">呼び込み君音源カード書き換え機　ソフトウェア編～書き換え成功</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2022/12/09/031053" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>honeylab.hatenablog.jp
+honeylab.hatenablog.jp
+ 
+前回の記事からの続きです。
+前回までで、RaspberryPiに接続して音源カードのメモリを読み書きするハードウェアの準備ができました。
+これから、そこに書き込むためのメモリのファイルを準備します。
+USBメモリや高機能なマイコンを搭載した機器、例えばmp3プレイヤーなどの場合、
+Windowsなどで&quot;ファイルシステム&quot;、例えばFATなどでフォーマットし、
+ファイル名を持ったファイルがおかれることが多いですが、
+このような機器の場合、フラッシュメモリ内の領域に、ファイルシステムのない領域が広がっているだけ、ということが多いです。
+初回のところで吸い出しのために構造体を作って確認していましたが、
+書き込むとなるとさらにファイル構造の厳密な検定を行う必要があります。
+なぜなら、我々はある仕様に従って作成されたファイルを持っているだけで、
+このファイルがどういう仕様で作成されたか、ということを知ることができないため、
+意味のあるデータのほかに、「不明」や「マジックナンバー」そして、「マジックナンバーとして扱う」と推測する、などといった部分が多く発生します。
+そういった部分は、自分がこの機器を作るのであれば、どのようなデータ構造にするべきか、などといったことをよく考えながら検証する必要があります。
+わからない部分は、「マジックナンバーとして固定」し、それでうまくいけば良し、とするしかないのです。
+では、改めてファイル構造についてチェックしていきましょう。
+
+デフォルトのカードから吸い出したメモリの先頭部分です。
+このバイナリダンプを見ながら、どんな情報が埋まっているか考えていきます。
+数値として意味を持つのは２バイトおよび４バイトからが多いので、そのぐらいのブロックに分けて読んでいきます…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20221209/20221209020201.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kochi928" target="_blank"
               rel="noopener">こち横</a></h3>
           <section class="articles-per-source">
@@ -20907,7 +20948,7 @@ github.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-08T18:01:56.873Z">2022-12-08T18:01:56.873Z</time>
+    <time id="build-timestamp" datetime="2022-12-08T19:02:00.919Z">2022-12-08T19:02:00.919Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

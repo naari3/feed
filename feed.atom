@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-08T18:01:56.947Z</updated>
+    <updated>2022-12-08T19:02:00.991Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[呼び込み君音源カード書き換え機　ソフトウェア編～書き換え成功]]></title>
+        <id>hatenablog://entry/4207112889943473997</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2022/12/09/031053"/>
+        <updated>2022-12-08T18:10:53.000Z</updated>
+        <summary type="html"><![CDATA[honeylab.hatenablog.jp
+honeylab.hatenablog.jp
+ 
+前回の記事からの続きです。
+前回までで、RaspberryPiに接続して音源カードのメモリを読み書きするハードウェアの準備ができました。
+これから、そこに書き込むためのメモリのファイルを準備します。
+USBメモリや高機能なマイコンを搭載した機器、例えばmp3プレイヤーなどの場合、
+Windowsなどで"ファイルシステム"、例えばFATなどでフォーマットし、
+ファイル名を持ったファイルがおかれることが多いですが、
+このような機器の場合、フラッシュメモリ内の領域に、ファイルシステムのない領域が広がっているだけ、ということが多いです。
+初回のところで吸い出しのために構造体を作って確認していましたが、
+書き込むとなるとさらにファイル構造の厳密な検定を行う必要があります。
+なぜなら、我々はある仕様に従って作成されたファイルを持っているだけで、
+このファイルがどういう仕様で作成されたか、ということを知ることができないため、
+意味のあるデータのほかに、「不明」や「マジックナンバー」そして、「マジックナンバーとして扱う」と推測する、などといった部分が多く発生します。
+そういった部分は、自分がこの機器を作るのであれば、どのようなデータ構造にするべきか、などといったことをよく考えながら検証する必要があります。
+わからない部分は、「マジックナンバーとして固定」し、それでうまくいけば良し、とするしかないのです。
+では、改めてファイル構造についてチェックしていきましょう。
+
+デフォルトのカードから吸い出したメモリの先頭部分です。
+このバイナリダンプを見ながら、どんな情報が埋まっているか考えていきます。
+数値として意味を持つのは２バイトおよび４バイトからが多いので、そのぐらいのブロックに分けて読んでいきます…]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【実写】1週間音MAD作者の名前かアイコンの食べ物しか食べられない生活したら高い食べ物や入手しずらい食べ物ばっかで破産した]]></title>
         <id>https://note.com/kochi928/n/ne23e0fa43684</id>
