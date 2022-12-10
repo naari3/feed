@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-10T11:01:42.706Z</updated>
+    <updated>2022-12-10T12:01:46.826Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14902,26 +14902,6 @@ WIPE OUT が表示されるようになったのはありがたい。攻め時�
 また、今作はサーモンランのような1人ではできないゲームもやりたいです。フォロワー誘って随時やっていきたいと思います。]]></summary>
         <author>
             <name>noreply@blogger.com (kirarajumper)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gatsby で React の import なしで利用する]]></title>
-        <id>https://blog.ojisan.io/gatsby-auto-react</id>
-        <link href="https://blog.ojisan.io/gatsby-auto-react"/>
-        <updated>2022-09-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[createElement はもう不要 昔 どうして JSX を使ってもエラーにならないのか？ に書いたのですが、JSX と React を動かすためには React モジュールそのものもしくは、createElement が import…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gatsby は設定ファイルを TypeScript で書ける]]></title>
-        <id>https://blog.ojisan.io/getsby-ts-config</id>
-        <link href="https://blog.ojisan.io/getsby-ts-config"/>
-        <updated>2022-09-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[これまでの TS 化 Gatsby.js を完全 TypeScript 化する などでも紹介されているが(これを参考にして実装した記憶がある)、このブログでも実装しているように、設定自体は TS で行って、実行時に ts-node…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
 </feed>
