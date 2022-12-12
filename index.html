@@ -97,6 +97,44 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">キャッシュによるRubyの正規表現のマッチングの高速化の紹介</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/12/12/162023" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>9月からRuby開発チームにインターンシップとして参加している@makenowjustです。
+総合研究大学院大学の学生で、普段は情報セキュリティに関する研究をしています。
+インターンシップでは、キャッシュ (メモ化) を利用したRubyの正規表現の高速化を行いました。
+ReDoSと呼ばれる、バックトラックが爆発することでマッチング時間が膨大になる脆弱性があります (ReDoSについては、拙作ですがWEB+DB PRESSに掲載された記事があります)。
+近年、ReDoSは多く報告されており、Rubyもその例外ではありません (参考1、参考2)。
+今回実装した最適化は、ReDoSを防ぐことを目的としたもので、多くの正規表現のマッチング時間が文字列の長さに対して線形となります。
+ReDoSが起こる正規表現の例として、/^(a|a)*$/が挙げられます。
+今回の修正の前後での実行時間を比較すると、次のようになります。
+$ ruby --version
+ruby 3.2.0preview2 (2022-09-09 master 35cfc9a3bb) [arm64-darwin21]
+
+$ time ruby -e &#x27;/^(a|a)*$/ &#x3D;~ &quot;a&quot; * 28 + &quot;b&quot;&#x27;
+ruby -e &#x27;/^(a|a)*$/ &#x3D;~ &quot;a&quot; * 28 + &quot;b&quot;&#x27;  8.49s user 0.04s system 98% cpu 8.663 total
+
+$ ./miniruby --version
+ruby 3.2.0dev (2022-10-27T13:39:56Z recache bc59b7cc1e) [arm64-darwin21]
+
+$ time ./miniruby -e &#x27;/^(a|a)*$/ &#x3D;~ &quot;a&quot; * 28 + &quot;b&quot;&#x27;
+./miniruby -e &#x27;/^(a|a)*$…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20221212/20221212133414.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -21191,7 +21229,7 @@ S…</span>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-12T07:02:00.898Z">2022-12-12T07:02:00.898Z</time>
+    <time id="build-timestamp" datetime="2022-12-12T08:02:10.279Z">2022-12-12T08:02:10.279Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-12T07:02:00.948Z</updated>
+    <updated>2022-12-12T08:02:10.323Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,34 @@
         <summary type="html"><![CDATA[こんにちは、メルカリのレコメンデーションチームで Software Engineer をしている @yaginuuun です。主に推薦を通じたホーム画面における体験改善に取り組んでいます。 元々はデータアナリストとしてデ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[キャッシュによるRubyの正規表現のマッチングの高速化の紹介]]></title>
+        <id>hatenablog://entry/4207112889944419389</id>
+        <link href="https://techlife.cookpad.com/entry/2022/12/12/162023"/>
+        <updated>2022-12-12T07:20:23.000Z</updated>
+        <summary type="html"><![CDATA[9月からRuby開発チームにインターンシップとして参加している@makenowjustです。
+総合研究大学院大学の学生で、普段は情報セキュリティに関する研究をしています。
+インターンシップでは、キャッシュ (メモ化) を利用したRubyの正規表現の高速化を行いました。
+ReDoSと呼ばれる、バックトラックが爆発することでマッチング時間が膨大になる脆弱性があります (ReDoSについては、拙作ですがWEB+DB PRESSに掲載された記事があります)。
+近年、ReDoSは多く報告されており、Rubyもその例外ではありません (参考1、参考2)。
+今回実装した最適化は、ReDoSを防ぐことを目的としたもので、多くの正規表現のマッチング時間が文字列の長さに対して線形となります。
+ReDoSが起こる正規表現の例として、/^(a|a)*$/が挙げられます。
+今回の修正の前後での実行時間を比較すると、次のようになります。
+$ ruby --version
+ruby 3.2.0preview2 (2022-09-09 master 35cfc9a3bb) [arm64-darwin21]
+
+$ time ruby -e '/^(a|a)*$/ =~ "a" * 28 + "b"'
+ruby -e '/^(a|a)*$/ =~ "a" * 28 + "b"'  8.49s user 0.04s system 98% cpu 8.663 total
+
+$ ./miniruby --version
+ruby 3.2.0dev (2022-10-27T13:39:56Z recache bc59b7cc1e) [arm64-darwin21]
+
+$ time ./miniruby -e '/^(a|a)*$/ =~ "a" * 28 + "b"'
+./miniruby -e '/^(a|a)*$…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
