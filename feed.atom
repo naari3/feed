@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-12T13:06:39.048Z</updated>
+    <updated>2022-12-12T14:01:49.725Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,28 @@
         <summary type="html"><![CDATA[こんにちは、メルカリのレコメンデーションチームで Software Engineer をしている @yaginuuun です。主に推薦を通じたホーム画面における体験改善に取り組んでいます。 元々はデータアナリストとしてデ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[textlintとGitHubのCode Scanningを組み合わせてリンク切れをチェックする]]></title>
+        <id>https://efcl.info/2022/12/12/textlint-no-dead-link/</id>
+        <link href="https://efcl.info/2022/12/12/textlint-no-dead-link/"/>
+        <updated>2022-12-12T12:55:00.000Z</updated>
+        <summary type="html"><![CDATA[textlintのルールにリンク先のURLがアクセスできなくなってないかをチェックするtextlint-rule-no-dead-linkというルールがあります。
+textlint-rule-no-dead-linkは実際にURLにリクエストを送ることでアクセスできるかをチェックするため、URLの数が多くなるとものすごく時間がかかります。
+また、GitHubのように同一IPからのアクセスが連続すると429 too many requestsなどのエラーを返すサイトもあります。
+textlint-rule-no-dead-linkはRetry-Afterヘッダを見てリトライにも対応していますが、このリトライの間隔が長いサイトもあるため、リンク切れのチェックはコミット時にやるのには向いてない作業と言えます。
+GitHubでは、GitHub Actionsを使ってschedule実行に対応しています。
+一方で、scheduleで毎日特定の時間に実行しても、その結果を保存先をどうするかという問題がありました。
+最近のGitHubではcode scanningという機能があります。
+code scanningはDependabotなどのセキュリティアラートとほぼ同じ仕組みとなっていて、アラートをServerityやコミットに紐付けて管理できます。
+Dependabotと異なるのは、SARIF形式でLintなどのチェック結果をアップロードすれば、任意のチェック結果をcode scanningに表示できるようになっています。
+
+この仕組みを利用して、textlintのチェック結果をcode scanningに表示することもできます。
+リンク切れの結果をcode scanningにアップロード
+具体的には、次のようにtextlintでtextlint-rule-no-dead-linkを利…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -15228,26 +15250,6 @@ S…]]></summary>
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[日記の「オンリーイベント」で面白さをもっと広めたい。日記屋 月日・内沼晋太郎さんインタビュー]]></title>
-        <id>hatenablog://entry/4207112889917651409</id>
-        <link href="https://blog.hatenablog.com/entry/2022/09/14/110000"/>
-        <updated>2022-09-14T02:00:00.000Z</updated>
-        <summary type="html"><![CDATA[日記には、楽しみ方がいろいろある！
-
-はてなブログは、日記の専門店「日記屋 月日」（東京・下北沢）が主催する「第2回 日記祭」（2022年12月11日（日）開催）に協賛します。「日記祭」の主催者であり「日記屋 月日」の店主でもある内沼晋太郎さんに、日記の楽しみ方や日記に対する考え方、そして日記祭に込める思いなどについてインタビューしました！ 聞き手は週刊はてなブログ編集部の藤沢智子です。
-
-内沼晋太郎さん
-1980年生まれ。一橋大学商学部卒。NUMABOOKS代表、ブック・コーディネーター。株式会社バリューブックス取締役。2012年にビールが飲めて毎日イベントを開催する新刊書店「本屋B&B」を、2017年に出版社「NUMABOOKS出版部」を、2020年に日記専門店「日記屋 月日」をそれぞれ開業。また、東京・下北沢「BONUS TRACK」の運営を行う株式会社散歩社の取締役もつとめる。著書に『これからの本屋読本』（NHK出版）『本の未来を探す旅 台北』『本の未来を探す旅 ソウル』『本の逆襲』（朝日出版社）などがある。現在、東京・下北沢と長野・御代田の二拠点生活。二児の父。
-日記の魅力は「書く」「読む」どちらにもある
-──内沼さんは「日記」をテーマに日記屋 月日という店舗を作ったり、日記祭というイベントを開催したりと、日記に対して非常に多くの熱量を持っていると感じます。内沼さんの目を通した「日記の魅力」を教えてください。
-内沼さん（以下、内沼）　大きく「書く」と「読む」の2つに分けられます。
-「書く」ことについては、僕は手帳と日記の違いの話をよくします。手帳は予定を記すものですが、同時に「自分の成長」のような、未来に向かっていく要素がありますよね。将来に向けて何かを準備する、自分をスキルアップするなど、「未来への期待」が、手帳にはあるわけです。
-けれどそれは「未来への不安」か…]]></summary>
-        <author>
-            <name>週刊はてなブログ</name>
         </author>
     </entry>
 </feed>
