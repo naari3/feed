@@ -5443,21 +5443,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cookpadtech/20220916/20220916023306.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889917399461",
-          "author": null,
-          "description": "技術部の遠藤（@mametter）です。RubyKaigiお疲れ様でした！\nクックパッドはRubyKaigiで、Rubyを使ったパズルを出してました。この記事では、出題者が想定していた解き方を公開します。自力で遊びたい人は解いた後で読んでください。\nCookpad Code Puzzle for RubyKaigi 2022\nどんなパズル？\nあらかじめ定義された謎の関数の中身を当てるパズルです。適当な引数で呼び出してみて、結果を観察して、中身を想像します。あたりがついたら、同じ関数を定義してみて、テストをパスしたらクリア。\n次のURLでブラウザでプレイできます。もう賞品はもらえませんが、解きたい人は今からでも挑戦してみてください。\nruby-puzzles-2022.cookpad.tech\n以下、ネタバレで各問題を解説していきます。\n1問目\nあらかじめヒントが書かれています。\n# You can call `func1`\n\np func1(0)  #=> 1\np func1(1)  #=> 2\np func1(2)  #=> 3\n\n# Can you tell how `func1` is defined?\n# Hint: def func1(n) = n + ???\n\n# Define `answer1` that works like `func1`\ndef answer1(n)\n  n\nend\n\n\n\nfunc1は引数に1足したものを返しているので、それをanswer1にそのまま実装するだけです。\ndef answer1(n)\n  n + 1\nend\n\n\n\nこれで実行ボタンを押したらクリア。\n2問目\n# Congrats! You've solved the first puzzle!\n# Next, challenge func2!\n\np func2(\"Hello\"…",
-          "link": "https://techlife.cookpad.com/entry/2022/09/16/104443",
-          "publishedOn": "2022-09-16T01:44:43.000Z",
-          "wordCount": 1193,
-          "title": "Cookpad Code Puzzle for RubyKaigi 2022の解説（表ステージ）",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20220912/20220912152350.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20220912/20220912152350.png"
         }
       ]
     },
@@ -5870,7 +5855,18 @@
       "title": "aun6june",
       "feedUrl": "https://note.com/aun6june/rss",
       "siteUrl": "https://note.com/aun6june",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/aun6june/n/n460722ce58a3",
+          "author": null,
+          "description": "DJをさせて頂きました。ありがとうございました。\nちょっとミックスのコンセプトとか書いた後、思い出を箇条書きしようと思います。\nミックスの話\n続きをみる",
+          "link": "https://note.com/aun6june/n/n460722ce58a3",
+          "publishedOn": "2022-12-14T13:35:16.000Z",
+          "wordCount": null,
+          "title": "nerdtronics2の思い出箇条書き",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/93318161/rectangle_large_type_2_d47dbfaf75939562830d348bbc83e033.jpeg?width=800"
+        }
+      ]
     },
     {
       "title": "BaN長",

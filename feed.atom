@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-14T13:06:32.288Z</updated>
+    <updated>2022-12-14T14:01:53.842Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[nerdtronics2の思い出箇条書き]]></title>
+        <id>https://note.com/aun6june/n/n460722ce58a3</id>
+        <link href="https://note.com/aun6june/n/n460722ce58a3"/>
+        <updated>2022-12-14T13:35:16.000Z</updated>
+        <summary type="html"><![CDATA[DJをさせて頂きました。ありがとうございました。
+ちょっとミックスのコンセプトとか書いた後、思い出を箇条書きしようと思います。
+ミックスの話
+続きをみる]]></summary>
+        <author>
+            <name>aun6june</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[キャンペーンのためのCloud Dataflow によるニアリアルタイムなイベント処理]]></title>
         <id>25059</id>
@@ -15818,54 +15831,6 @@ ruby-puzzles-2022.cookpad.tech
 ちょうど本日、表ステージ (func1 から func10 まで) の解説を公開しましたので、答え合わせチャンスです。
 techlife.cookpad.com
 ところでこのパズル、実は隠しステージとして func11 から func20 まであるのです。腕に自信のある Rubyist の皆様の挑戦をお待ちして…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cookpad Code Puzzle for RubyKaigi 2022の解説（表ステージ）]]></title>
-        <id>hatenablog://entry/4207112889917399461</id>
-        <link href="https://techlife.cookpad.com/entry/2022/09/16/104443"/>
-        <updated>2022-09-16T01:44:43.000Z</updated>
-        <summary type="html"><![CDATA[技術部の遠藤（@mametter）です。RubyKaigiお疲れ様でした！
-クックパッドはRubyKaigiで、Rubyを使ったパズルを出してました。この記事では、出題者が想定していた解き方を公開します。自力で遊びたい人は解いた後で読んでください。
-Cookpad Code Puzzle for RubyKaigi 2022
-どんなパズル？
-あらかじめ定義された謎の関数の中身を当てるパズルです。適当な引数で呼び出してみて、結果を観察して、中身を想像します。あたりがついたら、同じ関数を定義してみて、テストをパスしたらクリア。
-次のURLでブラウザでプレイできます。もう賞品はもらえませんが、解きたい人は今からでも挑戦してみてください。
-ruby-puzzles-2022.cookpad.tech
-以下、ネタバレで各問題を解説していきます。
-1問目
-あらかじめヒントが書かれています。
-# You can call `func1`
-
-p func1(0)  #=> 1
-p func1(1)  #=> 2
-p func1(2)  #=> 3
-
-# Can you tell how `func1` is defined?
-# Hint: def func1(n) = n + ???
-
-# Define `answer1` that works like `func1`
-def answer1(n)
-  n
-end
-
-
-
-func1は引数に1足したものを返しているので、それをanswer1にそのまま実装するだけです。
-def answer1(n)
-  n + 1
-end
-
-
-
-これで実行ボタンを押したらクリア。
-2問目
-# Congrats! You've solved the first puzzle!
-# Next, challenge func2!
-
-p func2("Hello"…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
         </author>
