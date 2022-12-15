@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-15T06:02:33.848Z</updated>
+    <updated>2022-12-15T07:01:49.257Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -34,6 +34,27 @@
         <summary type="html"><![CDATA[※この記事は、Mercari Advent Calendar 2022 の15日目の記事です。 こんにちは。メルカリのPlatform DXチームの@masartzです。 今日はPlatform DX チームで取り組んで […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022年12月15日現在、何か致命的に使いにくいアップデートが Windows 11の音声入力に入った気がします]]></title>
+        <id>hatenablog://entry/4207112889945306131</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2022/12/15/151918"/>
+        <updated>2022-12-15T06:19:18.000Z</updated>
+        <summary type="html"><![CDATA[相変わらず毎日音声入力で仕事をしています。そして、最近はずっとWindows 11の音声入力を使っていたのですが、昨日まではそんなことがなかったと思うのですが、今日から致命的に使いにくい、音声入力のアップデートが Windows 11に入った気がします。
+何が致命的に使いにくいかというとありと、あらゆる漢数字を全て半角数字に直してしまうのです。
+だから、
+一定確率
+を入力すると
+1定確率
+になってしまいます。
+これをいちいち直すのは相当な手間です。しかもこれまで？は全角で入っていたのですが、なぜか文末に入るときには半角になってしまいます。
+また、固有名詞に関しても、これまでよりもどうも誤認識が多くなりました。
+何かエンジンを変えたのだと思いますが、少なくとも日本語にとってはあまりプラスの方向に変わっていない気がしますが、どうなのでしょうか。
+これぐらい使いにくいとちょっとGoogleのピクセルの音声入力に戻したくなります。
+元のエンジンに戻るか、早く改良してくれるといいのですが。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
         </author>
     </entry>
     <entry>
