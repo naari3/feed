@@ -5103,6 +5103,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889945284370",
+          "author": null,
+          "description": "この記事はRubyアドベントカレンダー2022の15日目の記事です。\n以下のような話をお送りします:\nAWS Lambda + API Gatewayを使ってる話\nLFAというWeb frameworkをガッと書いた話\nLFAでLambdaの手元開発が楽になるのではという話\nRuby 3.1で導入されたKernel#loadの便利機能が超便利という話\nLambda関数ごとに環境変数ENVの内容を変えたいという話\n最近AWS Lambdaべったりな話\n最近自分でサービスを作ってるんですが、サーバサイドは全部AWS Lambda + API Gatewayでやっつけてます。\nEC2を常時起動して管理するのもやだし、大した規模でもないからゴツいビルドパイプラインをセットアップしてコンテナイメージをビルドするのも面倒だし、みたいなことを考えると、コードをそのまま送り付けるとあとは動きつづけてくれるAWS Lambda + API Gatewayの組み合わせが便利だなってことで。ただしRubyのバージョンが2.7だけなのがちょっとアレですよね。\nアーキテクチャは手元がM1 macなのと、なんとなく以前所属した感慨もあってarmにしてるんですが、bundleするライブラリにmysql2を使ったところネイティブビルドされた部分の読み込みが実行時にちょっと理解不能なエラーを起こしてうまく動作しませんでした*1。これを追ったりデプロイ用の環境をガチャガチャやったりというのがちょっと面倒だったんで、pure Rubyなruby-mysqlを使ったりしてます。(4.0に上げるのはこれからだけど)使ってますよ!!! Pure Rubyなライブラリはすばらしい。JITで速くなるともっといいんだけど……。\nで、LambdaなのはAPIハンドラの数もリクエスト数も少ない今のうちはいいんだけど、もしサービ…",
+          "link": "https://tagomoris.hatenablog.com/entry/2022/12/15/133450",
+          "publishedOn": "2022-12-15T04:34:50.000Z",
+          "wordCount": 660,
+          "title": "LFAというAWS API Gateway用Lambdaをそのまま動かすRuby用Web frameworkを作った",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889926480985",
           "author": null,
           "description": "Fluentd実践入門をあらためて手元でぱらぱらやってたら、しまった! この話をどこかにちょっとでも書こうと思ってたのに忘れてた! という話が出てきたので、忘れないうちに書いて放流する。\nflush_modeとはなにか\nFluentdのOutputプラグインには<buffer>セクションで指定できるflush_modeというパラメータがあって、これはOutputプラグインがどういう基準でバッファ内のデータを書き出す(writeメソッドを呼ぶ)かという戦略をコントロールする。有効な値はdefault、immediate、interval、lazyの4つ。\nただし多くのケースでこのパラメータは明示的には指定されていないはず。というのも、デフォルト値であるところのdefaultの場合には、<buffer>セクションに指定されている他のパラメータ((と、例外的に<buffer>セクションの外側に指定されているflush_intervalも見ている。これはFluentd v0.12以前のプラグインの使い方をそのまま踏襲している設定について、動作を壊さないための措置。))を確認して適切なモードを自動的に選ぶようになっているからだ。たとえばバッファのチャンクキーにtimeが指定されている場合にはlazyが選ばれる。\nといったようなことは「Fluentd実践入門」のp166-167あたりにもちろん書いてある。みんな買って読もう!(宣伝)\nflush_mode immediateとは何か\nところで、flush_modeのうちには、他のパラメータをどうセットしても暗黙には選ばれないものがあって、それがimmediateだ。これはFluentd v1系*1における完全に新しい機能・挙動なので、特に過去の設定パターンとの互換性を考える必要がないため。\nこれがどう動作するかというと、バッファリングは…",

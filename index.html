@@ -120,6 +120,37 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
+              rel="noopener">たごもりすメモ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">LFAというAWS API Gateway用Lambdaをそのまま動かすRuby用Web frameworkを作った</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2022/12/15/133450" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>この記事はRubyアドベントカレンダー2022の15日目の記事です。
+以下のような話をお送りします:
+AWS Lambda + API Gatewayを使ってる話
+LFAというWeb frameworkをガッと書いた話
+LFAでLambdaの手元開発が楽になるのではという話
+Ruby 3.1で導入されたKernel#loadの便利機能が超便利という話
+Lambda関数ごとに環境変数ENVの内容を変えたいという話
+最近AWS Lambdaべったりな話
+最近自分でサービスを作ってるんですが、サーバサイドは全部AWS Lambda + API Gatewayでやっつけてます。
+EC2を常時起動して管理するのもやだし、大した規模でもないからゴツいビルドパイプラインをセットアップしてコンテナイメージをビルドするのも面倒だし、みたいなことを考えると、コードをそのまま送り付けるとあとは動きつづけてくれるAWS Lambda + API Gatewayの組み合わせが便利だなってことで。ただしRubyのバージョンが2.7だけなのがちょっとアレですよね。
+アーキテクチャは手元がM1 macなのと、なんとなく以前所属した感慨もあってarmにしてるんですが、bundleするライブラリにmysql2を使ったところネイティブビルドされた部分の読み込みが実行時にちょっと理解不能なエラーを起こしてうまく動作しませんでした*1。これを追ったりデプロイ用の環境をガチャガチャやったりというのがちょっと面倒だったんで、pure Rubyなruby-mysqlを使ったりしてます。(4.0に上げるのはこれからだけど)使ってますよ!!! Pure Rubyなライブラリはすばらしい。JITで速くなるともっといいんだけど……。
+で、LambdaなのはAPIハンドラの数もリクエスト数も少ない今のうちはいいんだけど、もしサービ…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -21946,7 +21977,7 @@ www.reddit.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-15T04:01:42.061Z">2022-12-15T04:01:42.061Z</time>
+    <time id="build-timestamp" datetime="2022-12-15T05:02:02.909Z">2022-12-15T05:02:02.909Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
