@@ -6023,21 +6023,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221005/20221005091141.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889919194260",
-          "author": null,
-          "description": "ども、@kimihom です。\n\n先日  TwilioJP-UG Online Vol.8 - TwilioJP-UG | Doorkeeper が開催された。当日のイベントで急遽プログラム内容が変更となり、最新情報を見ていく時間を取れなかったのでブログとしてまとめておこう。\n大枠\nまず、以下のページに大きなのアップデートが記載されている。細かいライブラリの変更は別途それぞれのライブラリ側のChangelog の確認が必要だけど、大きな修正変更に関しては Twilio Changelog で十分である。\nTwilio Changelog\n11/3 ~ 4 にかけて、年１のビッグイベント Twilio SIGNAL  での大きな発表があるだろうと思われている直近では、大きな追加更新などはなかった。以下、ここ3ヶ月で気になったアップデートを取り上げておこう。\nVideo Diagnostics\nThe Video Diagnostics App is now Generally Available\nビデオ通話にはトラブルがつきものだ。両方のネットワーク、PC、映像・音声デバイスが完璧に動作して、ようやく通話ができる。\nそれを、実際にミーティング当日に確認してダメだったらどうなるか。その原因を調べるだけでミーティングが終わるという悲しい結果となってしまう。そうならないためにも、事前に動作環境のテストは必須と言えよう。\nインターネット上で使えるものと、好きなようにカスタマイズできるSDKの2つが提供されている。英語絶対無理な場合には、翻訳して提供することもできるというわけだ。\nTwilio Video Diagnostics App\nAI-Based Noise Cancellation in Twilio Video\n一番 興味深いリリースだ。AIベースのノイズキャンセリングが使えるようになったリリース。\nIntroducing AI-Based Noise Cancellation in Twilio Video\nこの裏側では Krisp という外部サービスが動作しており、このページの中央くらいにある \"Try out the magic of Krisp\" はぜひ参加者の皆さんに見せたかった。\n実際にアクセスしてみてもらえば分かるように、雑音を完全に消すことのできるものとなっている。どんな雑音でもクリアされていて、ビデオ通信に便利だと思わせてくれる。\nTwilio Frontline\nSMS と 電話の機能をさっと使いたい時に、UI込みで提供されている Frontline というサービスがある。\n今までは iOS/Android 限定だったのが、Webでも使えるようになったとのこと。Frontline周りのリリースがそれなりの頻度で来ているので、今後は日本語対応やLINE対応、メール対応まで来ればといったところか。。\nTwilio Connect TwiML\nTwiML といえば、Twilio Voice を使う上でマストな機能となっているが、ここに新しい Connect という TwiML が追加されたようだ。\nTwilio <Connect> TwiML verb Enhancements\nどんなものか気になったものの、これは上記の Twilio Frontline で使えるようになるもののようで、期待していたものではなかった。\n終わりに\n定期的に Twilio Meetup やってるので、こうした最新情報を追っていきたい方は是非ご参加いただければと。\nTwilioJP-UG | Doorkeeper\n何より、11月に開催される Twilio SIGNAL で、どんな新しいものが出てくるか、楽しみである。",
-          "link": "https://www.bokukoko.info/entry/2022/09/18/171923",
-          "publishedOn": "2022-09-18T08:19:23.000Z",
-          "wordCount": 606,
-          "title": "直近のTwilioアップデート確認 2022/09",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20220424/20220424151003.jpg"
         }
       ]
     },
