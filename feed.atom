@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-18T11:01:40.596Z</updated>
+    <updated>2022-12-18T12:02:00.023Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,40 @@
         <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2022 の18日目の記事です。 こんにちは。メルペイ PaymentPlatform Engineering Manger のabcdefujiです。 我々メル […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022年12月 第3週の日記]]></title>
+        <id>hatenablog://entry/4207112889946226386</id>
+        <link href="https://all-is-vanity.hatenablog.com/entry/2022/12/18/205656"/>
+        <updated>2022-12-18T11:56:56.000Z</updated>
+        <summary type="html"><![CDATA[12/11
+・過糖過眠していた。
+・フォートナイトを久しぶりにやり，デュオで5回やって4連続1位で最後に強い敵と当たって16位になった。
+・ソシャゲと原神をやってしまった。日課の周回に最短何分かかるか測るつもりだったが，溜まってるタスクが多過ぎて2時間くらいかかった。その上で他のことまでしたので寝る時間が普通に遅くなった。
+・Blenderでライティングとポージングいじってたら間違えてレンダーから AMD RPR を適用してしまい，アプリがクラッシュした。
+Cycles と Eevee の下に押すとクラッシュするボタン置きっぱなしなの危なすぎるだろ！明日直す。
+ 
+
+12/12
+・レンダリングのアルゴリズムまとめみたいなのを読みラスタライズもアイディアは面白いなと思うようになった。
+・実装の勉強までしたかったが眠過ぎて寝ることに。
+・ChatGPTに回答が長くなる質問をすると高確率でエラーが起こり答えてくれない。
+エラーコード303はSafari使ってると起こりやすいそうなのでEdgeを使ってみたがどっちにしろネットワークエラーが起こった。しかもこっちはエラーメッセージがないので原因がわからない。
+・ChatGPTに「これを悪くしてください」「非効率なやり方で行ってください」と言うと無視して改善を施してくるのでちょっと面白かった。
+・セブンイレブンのコーヒーが全て20~30円くらい高くなっていた。
+・今まで3話くらいまでしか読んでこなかった「ハイパーインフレーション」を20話くらいまで集中して読んだ。面白すぎる……。
+・早寝する。
+ 
+
+12/13
+・早起きしなかった。
+・早寝はしたのだが頻繁に中途覚醒した。耳栓してないのもあったが物音で起きた。深く寝ているときはうるさくても寝てるので眠りが浅かった。
+・父親がPS5のせどりをしようとしていた。
+・給付金が手に入った。
+・ワ…]]></summary>
+        <author>
+            <name>読む毒</name>
         </author>
     </entry>
     <entry>
@@ -17143,16 +17177,6 @@ GOGOGOGOGOGOGOGO
     明治時代の苦学生を騙…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[debian:stable-slim で作ったコンテナに MySQL を入れる]]></title>
-        <id>https://blog.ojisan.io/install-mysql-server-to-debian-slim</id>
-        <link href="https://blog.ojisan.io/install-mysql-server-to-debian-slim"/>
-        <updated>2022-09-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[はじめに どこかから、 というコードを拾ってきたので動かそうとしていた。 ただ最近の Docker イメージは slim というのを使えばいいと何かで見たので、 を指定して docker build してみたらどうもビルドに失敗する mysql-server がない mysql…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
 </feed>
