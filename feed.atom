@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-19T04:02:22.320Z</updated>
+    <updated>2022-12-19T05:01:48.214Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メルカリiOSアプリのBazelを使った高速・高信頼性ビルド]]></title>
+        <id>25207</id>
+        <link href="https://engineering.mercari.com/blog/entry/20221215-16cdd59909/"/>
+        <updated>2022-12-19T13:00:29.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、メルカリの iOS リードアーキテクトを担当する青山 (Ryo Aoyama, @ra1028fe5)です。 今回は、私と同じモバイルアーキテクトチームでビルドシステムを担当する Thi ( Thi Doãn […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Goの抽象構文木（AST）でBoilerplate Codeを自動生成する]]></title>
         <id>25334</id>
