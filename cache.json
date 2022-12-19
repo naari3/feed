@@ -3515,6 +3515,21 @@
       "siteUrl": "https://katsumakazuyo.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889946373639",
+          "author": null,
+          "description": "数日前からwindows11の音声入力でなんでもかんでも数字を漢数字にしてしまう状況があって困っていたのですが、\n一定確率\n一定割合\nなどが、ぶじ、漢数字のままになりました。これでまたメインの音声入力に戻すことができます、よかったよかった。",
+          "link": "https://katsumakazuyo.hatenablog.com/entry/2022/12/19/122221",
+          "publishedOn": "2022-12-19T03:22:21.000Z",
+          "wordCount": 341,
+          "title": "Windows11の音声入力の、むやみやたらに漢数字にしてしまうの直りましたね。",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889945789884",
           "author": null,
           "description": "相変わらずwindowsと androidの音声入力のどちらを使うかということを考えていたのですが、そうだ、どちらも使えば良いということに気づきました。\n初めのうちは左手側に両方のリモコンを置いていたのですが、そのうちどっちがどちらかわからなくなるので、とりあえず、家においてはより使うウィンドウズ11の音声入力のリモコンを左手に持ちっぱなしにして、それでうまくいかなくなった時だけ右手のアンドロイド側のリモコンを使うようなイメージで併用しています。\nそうしますと結果としてキーボードで入力をすることがほとんどなくなりました。どちらの音声入力にも得意不得意があるので、片方が不得意なものはもう片方で押さえてあげれば良いわけです。\n特に長文はwindows 11のは得意ですがちょっと反応が遅いですし、グーグルは短文が得意ですが、同音異義語をよく間違えてしまうので、メインの文章はwindows 11に作らせて、そこでエラーが起きた分だけをちょこちょことグーグルで短文で直すようにしています。\nまあ、こういうことを書くと、そのうちyoutubeか何かで画像を見せてくださいというリクエストが出ると思うので、そのうちどっかで撮ろうかなと思います。",
@@ -9836,6 +9851,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml/",
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
+        {
+          "id": "25334",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2022 の19日目の記事です。 　こんにちは。メルペイのPayment PlatformチームでPaymentServiceの開発を担当するエンジニアの @hu […]",
+          "link": "https://engineering.mercari.com/blog/entry/20221219-cf1e076c7c/",
+          "publishedOn": "2022-12-19T12:00:58.000Z",
+          "wordCount": null,
+          "title": "Goの抽象構文木（AST）でBoilerplate Codeを自動生成する",
+          "imageUrl": null
+        },
         {
           "id": "25331",
           "author": null,
