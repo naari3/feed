@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-19T06:02:12.509Z</updated>
+    <updated>2022-12-19T07:02:25.802Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[mercari.go #20 を開催しました #mercarigo]]></title>
+        <id>25286</id>
+        <link href="https://engineering.mercari.com/blog/entry/20221216-4646756013/"/>
+        <updated>2022-12-19T15:00:19.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは、mercari.goスタッフのshota sugiuraです 12月2日にメルカリ主催のGo勉強会 mercari.go #20 をYouTubeでのオンライン配信にて開催しました。この記事では、当 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[メルカリiOSアプリのBazelを使った高速・高信頼性ビルド]]></title>
         <id>25207</id>
@@ -34,6 +44,36 @@
         <summary type="html"><![CDATA[こんにちは、メルカリUS でData Engineerをしている @hatone です。 メルカリUSのData Engineering Team(DEチーム) では、MLやBI、会計、マーケティングなど、多岐にわたるチ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[アイデアという言葉の定義]]></title>
+        <id>https://note.com/sizes/n/n94ec74864d7f</id>
+        <link href="https://note.com/sizes/n/n94ec74864d7f"/>
+        <updated>2022-12-19T06:09:48.000Z</updated>
+        <summary type="html"><![CDATA[宮本茂の言葉に、「アイデアとは複数の問題を同時に解決する考えのこと」という言葉がある。すごく現場主義な言葉であって、同時にゲームクリエイターらしい言葉でもあると思うんだけど、個人的にはしっくりくる。社会における問題や困難が生じたときって、その問題は本質的にはトレードオフの問題であることが多いからだ。めちゃくちゃざっくり言うと、貧乏な人をストレートに救う政策を施行すると、中流階級の人が貧乏になってしまって本末転倒になる‥‥みたいなことは誰もが想像できると思う。このあちらが立てばこちらが立たず、という問題を解決するのがアイデア。そう言う考えである。
+僕は対人ゲーム全般をやるときに、宮本茂の「アイデア論」を無意識的に使ってる人がいっぱいいるな、と思う。例えば、チームやスキルのビルディングっていかにトレードオフの問題を解決するかの営みと言って良い。要素に強さと弱点が設定されているのなら、〇〇の対策をしたら、その分××には弱くなる‥‥という構造は必ずできるからだ。強力なビルディングができる人は、そのトレードオフの問題を解決するのがうまい。
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[XcodeがMain.storyboardを見付けられずiOSアプリが落ちる]]></title>
+        <id>hatenablog://entry/4207112889946407985</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2022/12/19/150427"/>
+        <updated>2022-12-19T06:04:27.000Z</updated>
+        <summary type="html"><![CDATA[……ことがたまにあって、なんでかなと思ったけどgit checkoutなんかでstoryboardのリビジョンをXcode外部から操作してると起きるのかなという気がする。アプリが起動しかけてから以下のようなエラーメッセージ出して落ちるのがタチ悪い。
+"Could not find a storyboard named 'Main' in bundle NSBundle"
+
+
+Clean Build Folderとかやっても直らないので、以下のようにして直す。
+Main.storyboardを選択して "Delete" -> "Remove Reference"
+外部でやる必要のあるgit操作など実行
+"File" -> "Add File to ..." してstoryboardを再度追加
+起きるたびに時間を無駄にしてる気がするんでメモ。]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
         </author>
     </entry>
     <entry>
