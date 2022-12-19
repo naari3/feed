@@ -4214,6 +4214,21 @@
       "siteUrl": "https://knqyf263.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889926037582",
+          "author": null,
+          "description": "はじめに\nTrillianとは\nVerifiable Data Structures\nTree head hash\nSigned tree head\nInclusion proof\n検証方法\nInclusion proof\nハッシュ計算\nLeaf hash\nNode\nlogIndex\n完全二分木でない場合\n概要\n計算方法\n手動で試す\nSigned tree head (STH)\nInclusion proof\nまとめ\nはじめに\n前回のVerify編でRekorから返されたtlogの検証を行いましたが、そのうちTrillianに関連する部分はスキップしました。今回はそのTrillianに関しての記事です。Keyless Signing連載の最後です。\ncurlでKeyless Signingする (1) - OpenID Connect編\ncurlでKeyless Signingする (2) - Fulcio編\ncurlでKeyless Signingする (3) - Signed Certificate Timestamp編\ncurlでKeyless Signingする (4) - Rekor編\ncurlでKeyless Signingする (5) - Verify編\ncurlでKeyless Signingする (6) - Trillian編 （本記事）\nRekorはドキュメントで以下のように書いています。\nRekor aims to provide an immutable, tamper-resistant ledger of metadata generated within a software project’s supply chain.\n\n\ndocs.sigstore.dev\nこのimmutable, tamper-resistant ledgerの部分はT…",
+          "link": "https://knqyf263.hatenablog.com/entry/2022/12/19/234539",
+          "publishedOn": "2022-12-19T14:45:39.000Z",
+          "wordCount": null,
+          "title": "curlでKeyless Signingする (6) - Trillian編",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20221010/20221010004835.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20221010/20221010004835.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889923335125",
           "author": null,
           "description": "はじめに\n全体像\n手動で試す\nFulcioのルート証明書と中間証明書を取得する\nRekorでtlogを検索する\n検索API\n取得API\nUUIDの検証\ntlog内の証明書を取り出して検証する\n証明書チェーンの検証\nメールアドレスやワークフロー情報の検証\nSCTの検証\n渡された署名を検証する\ntlogの検証を行う\nroot hash/inclusion proofの検証\nSETの検証\ntlogの登録時刻が証明書の有効期限内であったことを確認\n所感\nユーザの負担\nセキュリティ上の懸念\nまとめ\nはじめに\nKeyless Signing連載の最後の予定でしたが、もう一つ次にTrillianに関する記事を書いたので最後から二番目の記事です。\ncurlでKeyless Signingする (1) - OpenID Connect編\ncurlでKeyless Signingする (2) - Fulcio編\ncurlでKeyless Signingする (3) - Signed Certificate Timestamp編\ncurlでKeyless Signingする (4) - Rekor編\ncurlでKeyless Signingする (5) - Verify編 （本記事）\ncurlでKeyless Signingする (6) - Trillian編\n前回までで無事に署名を行うことができました。今回はそれを検証する側の処理を見ていきます。Cosign CLIを使った以下のコマンド相当になります。\nCOSIGN_EXPERIMENTAL=1 cosign verify-blob --signature foo.txt.sig foo.txt\n\n\n\nこの foo.txt.sig は cosign sign-blob で生成されたものです。 foo.txt に対して署名が正しいかを検証してい…",
@@ -5893,21 +5908,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tmidorikawa/20220929/20220929134429.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889918034603",
-          "author": null,
-          "description": "技術部の遠藤（@mametter）です。おまたせしました、RubyKaigi 2022で出題したクックパッドブースの企画、Cookpad Code Puzzle for RubyKaigi 2022の裏ステージの解説です。\nこのパズル自体の解説は前編の記事をごらんください。\ntechlife.cookpad.com\nさっそく11問目から解説していきます。\n11問目\np func11(0)     #=> -510240563\np func11(1)     #=> -171748573\np func11(2)     #=> 405559065\np func11(\"foo\") #=> -62024031\n\n\n\n何を与えてもよくわからない整数が帰ってきますね。リロードすると結果が変わることにも気づくかもしれません。つまり、これはハッシュ値であろうと当たりがつきます。ということで答えはこちら。\ndef answer11(v)\n  v.hash\nend\n\n\n\n11問目からは問題文もないし、知らないと解けない問題が多めになります。\n12問目\np func12(0) #=> 1\np func12(1) #=> 1\np func12(2) #=> 1\n\n\n\nこの辺を見てても1ばかり帰ってきますね。1以外になるところを探してみましょう。\n300.times { p [_1, func12(_1)] if func12(_1) != 1 }\n\n\n\n\n\n[11, 2]\n[22, 2]\n[33, 2]\n[44, 2]\n[55, 2]\n[66, 2]\n[77, 2]\n[88, 2]\n[99, 2]\n[100, 2]\n[101, 2]\n[110, 2]\n[111, 3]\n[112, 2]\n[113, 2]\n...\nゾロ目が目に付きますが、100や101も2になることから、同じ数字の出現数が関係しそ…",
-          "link": "https://techlife.cookpad.com/entry/2022/09/21/112017",
-          "publishedOn": "2022-09-21T02:20:17.000Z",
-          "wordCount": null,
-          "title": "Cookpad Code Puzzle for RubyKaigi 2022の解説（裏ステージ）",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
