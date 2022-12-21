@@ -97,6 +97,38 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gfx.hatenablog.com/" target="_blank"
+              rel="noopener">Islands in the byte stream</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">vscodeの設定ファイル .vsocde/*.json をGitHubでJSONCとしてハイライトさせる</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gfx.hatenablog.com/entry/2022/12/21/112105" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>.gitattributes に次の1行を足すと、vscodeの設定ファイルがGitHubでJSONC (JSON with Comments) としてsyntax highlightされるようになります。
+.vscode/*.json linguist-language&#x3D;jsonc
+GitHubのsyntax highlightは github/linguist で制御されています。これに同梱されている overrides.md というドキュメントに、repoごとのカスタマイズ方法が載っています。
+https://github.com/github/linguist/blob/master/docs/overrides.md
+syntax highlightだけでなく、GitHub repoの統計（どの言語がN%、みたいなやつ）からの除外、自動生成されたかどうかのフラグ（統計から除外されるのと、PRでdiffがデフォルトで展開されなくなる）、などを制御できます。
+syntax highlightのデフォルトおよび利用可能な値は languages.yml に定義されているので、そこを参考にして設定できます。
+https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
+ハイライトの実例はこんな感じ: https://github.com/msgpack/msgpack-javascript/blob/main/.vscode/launch.json
+そもそもGitHubがデフォルトで .vscode/*.json をJSONCとしてもいいんじゃないか？とおもってpull-req github/linguist#6221も提案してみたのですが、これは採用予定なしと。理由は次の通り:
+basenameだけでなくpathnameをみるというのは破壊的変更で影響範囲が大きすぎる。もし本当にやるなら慎重な検討が必要だが、いまのところ恩恵を受けるのは .gitattributes を指定していないvscode userだけ
+GitHub 11年の歴史でsyntax highlightの際にpathname全体をみるという要求はvscodeの設定ファイルだけ
+そもそもvscodeが *.json ファイルにJSONと非互換なフォーマット（JSONC）を書けるというのは慣習に違反していて無作法では？もしこの件について何かしたいならvscodeが .vsocde/*.jsonc をサポートするべきではないか
+正論すぎますね。個人的には、JSONがコメントと末尾コンマを許容するようになるとこの件のみならずJSON/JSONCにまつわる様々な問題が解決してみんな幸せになれるので、Microsoftのvscode teamがそういう提案をしてくれるといいなと思います（いや提案するのは誰でもいいですが）。逆に、そういう未来を想定するならばvscodeが .vscode/*.jsonc をサポートする必要はないのかなとも思います。現状だといずれにせよ .gitattibutes でカスタマイズできますしね。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
               rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
           <section class="articles-per-source">
@@ -23778,36 +23810,11 @@ Amazon
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/dak" target="_blank"
-              rel="noopener">okazsystem</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">何がいくんだ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/dak/n/n87157e1b3809" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>俺はいつもみたいにポルノを聴いた
-女の喘ぎ声が脳内に響く
-「いく」という声
-なにがいくんだ？
-なにがいくんだよ
-続きをみる</span>
-                  </div>
-                  <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/8aa612c25703d4cbfb0fbeca79d2c6b4b35ebe62.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-21T02:18:21.310Z">2022-12-21T02:18:21.310Z</time>
+    <time id="build-timestamp" datetime="2022-12-21T03:02:37.853Z">2022-12-21T03:02:37.853Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

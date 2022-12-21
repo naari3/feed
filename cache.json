@@ -1667,6 +1667,21 @@
       "siteUrl": "https://gfx.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889946934234",
+          "author": null,
+          "description": ".gitattributes に次の1行を足すと、vscodeの設定ファイルがGitHubでJSONC (JSON with Comments) としてsyntax highlightされるようになります。\n.vscode/*.json linguist-language=jsonc\nGitHubのsyntax highlightは github/linguist で制御されています。これに同梱されている overrides.md というドキュメントに、repoごとのカスタマイズ方法が載っています。\nhttps://github.com/github/linguist/blob/master/docs/overrides.md\nsyntax highlightだけでなく、GitHub repoの統計（どの言語がN%、みたいなやつ）からの除外、自動生成されたかどうかのフラグ（統計から除外されるのと、PRでdiffがデフォルトで展開されなくなる）、などを制御できます。\nsyntax highlightのデフォルトおよび利用可能な値は languages.yml に定義されているので、そこを参考にして設定できます。\nhttps://github.com/github/linguist/blob/master/lib/linguist/languages.yml\nハイライトの実例はこんな感じ: https://github.com/msgpack/msgpack-javascript/blob/main/.vscode/launch.json\nそもそもGitHubがデフォルトで .vscode/*.json をJSONCとしてもいいんじゃないか？とおもってpull-req github/linguist#6221も提案してみたのですが、これは採用予定なしと。理由は次の通り:\nbasenameだけでなくpathnameをみるというのは破壊的変更で影響範囲が大きすぎる。もし本当にやるなら慎重な検討が必要だが、いまのところ恩恵を受けるのは .gitattributes を指定していないvscode userだけ\nGitHub 11年の歴史でsyntax highlightの際にpathname全体をみるという要求はvscodeの設定ファイルだけ\nそもそもvscodeが *.json ファイルにJSONと非互換なフォーマット（JSONC）を書けるというのは慣習に違反していて無作法では？もしこの件について何かしたいならvscodeが .vsocde/*.jsonc をサポートするべきではないか\n正論すぎますね。個人的には、JSONがコメントと末尾コンマを許容するようになるとこの件のみならずJSON/JSONCにまつわる様々な問題が解決してみんな幸せになれるので、Microsoftのvscode teamがそういう提案をしてくれるといいなと思います（いや提案するのは誰でもいいですが）。逆に、そういう未来を想定するならばvscodeが .vscode/*.jsonc をサポートする必要はないのかなとも思います。現状だといずれにせよ .gitattibutes でカスタマイズできますしね。",
+          "link": "https://gfx.hatenablog.com/entry/2022/12/21/112105",
+          "publishedOn": "2022-12-21T02:21:05.000Z",
+          "wordCount": 322,
+          "title": "vscodeの設定ファイル .vsocde/*.json をGitHubでJSONCとしてハイライトさせる",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889945562743",
           "author": null,
           "description": "3行で\nキウィフルーツなどのぬめりのある果物を切ったあとは、別の作業に取り掛かるまえに手を洗うべし\nリンゴなどの硬めの果物を手の上で切るのはハイリスクなので、可能であればまな板を使うべし\n切り傷を負ったとき、5分経っても血が止まらなければ即病院へ（行きつけのクリニックでよい）。ナイフによる切り傷はよくあることなので医者も処置に慣れている\n詳細\n2022年6月に、果物ナイフで左の人差し指をばっさり切って縫合する羽目になりました。抜糸まで10日、その後キーボードをタイピングできるようになるまで数週間、だいたい全治一ヶ月くらいでした。そこからさらに半年ほど経過した今でも縫合痕は残っていますが、日常的にはまったく問題ないくらい回復しました。怪我の場所に意識を集中すると、違和感が多少残っているかな、という程度です。\nこれは朝キウィフルーツとリンゴをナイフで剥いているときに起こった事故です。この2種の果物は我が家の定番の組み合わせで、100回以上この組み合わせで皮を剥いてきています。ぼくはいつも「キウィフルーツ→リンゴ」の順で皮をむいていて、これはリンゴを先に剥くことで変色させたくないからです*1。このときまで、キウィとリンゴの間に手を洗うこともなければ、リンゴを切るときにまな板もまったく使っていませんでした。果物ナイフの扱いには自信があったし、頻繁にする作業で十分に慣れていると思っていたし、本質的でない作業をするのは面倒ですからね！\nこの日は、数日前に第二子誕生からの妻と第二子の退院を迎えたばかりでした。つまり、深夜未明にたびたび発生する新生児の授乳がはじまり、とくにこの日はぼくが夜の授乳を担当した日でした。それによって、朝は徹夜明けのごとくぼーっとしていました。\nそしてキウィを切ったあとのヌルヌルの手のまま、リンゴを手のひらの上でナイフで半分に割ろうとしているときに、手を滑らせて件の事故がおきました。かなり力を入れていたので、指先に数ミリの深さの切り傷ができ、一見すると「ナイフで指先を切っただけなのにこんなに！？」と思うくらいの出血がありました。\n最初は普通の些細な怪我だと思ってしばらく傷を圧迫して様子をみていたのですが、数分たっても出血が止まりません。しかたなく行きつけのクリニックで診てもらったところ、傷を見るなりお医者さんが「縫いましょう」と宣言。そして10分ほどで縫合完了。10日後に抜糸する旨を聞く。あっという間に治療完了でした。その後は多少腫れたりはしたものの、順調に回復。すぐにクリニックに行って治療したのが功を奏したのかのかもしれません。よかったですね。\n教訓としては、寝不足や体調不良などのときはなるべく刃物を扱わない、刃物を扱うときはぬめりに注意する、硬いものを切るときにはまな板を使う、もし怪我をして数分間出血が止まらないときはちゃんと医者に診てもらう、という感じですかね……。第二子誕生直後のバタバタしたタイミングだったからこそのでやらかしですが、結果的に今年二番目くらいにインパクトのある事件となりました（一番は第二子の誕生）。\n*1:かといって塩水やレモン水につけるとリンゴ本来の風味が抜けるので嫌なのです。第一、水につけておくのも面倒ですし。",
@@ -6668,16 +6683,6 @@
           "wordCount": 2206,
           "title": "20221004",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/0749f82938488e365594b6f303af3eb560422857.jpg"
-        },
-        {
-          "id": "https://note.com/dak/n/n87157e1b3809",
-          "author": null,
-          "description": "俺はいつもみたいにポルノを聴いた\n女の喘ぎ声が脳内に響く\n「いく」という声\nなにがいくんだ？\nなにがいくんだよ\n続きをみる",
-          "link": "https://note.com/dak/n/n87157e1b3809",
-          "publishedOn": "2022-09-22T14:54:07.000Z",
-          "wordCount": 783,
-          "title": "何がいくんだ",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/8aa612c25703d4cbfb0fbeca79d2c6b4b35ebe62.jpg"
         }
       ]
     },
