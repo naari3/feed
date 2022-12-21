@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-21T11:01:49.232Z</updated>
+    <updated>2022-12-21T12:02:19.850Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,25 @@
         <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2022 の21日目の記事です。 こんにちは。メルペイBackendエンジニアのfivestar（@fivestr）です。 本記事では「SOLID原則」と呼ばれる […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[週記#38 12月3週]]></title>
+        <id>hatenablog://entry/4207112889947062175</id>
+        <link href="https://nkaoobt.hatenablog.com/entry/2022/12/21/203112"/>
+        <updated>2022-12-21T11:31:12.000Z</updated>
+        <summary type="html"><![CDATA[かなり年末になってきた。恐ろしい。
+急に寒くもなってきた。でも夏より冬の方が好きなので、全然耐えれる。
+ 
+M-1を見た。
+敗者復活の令和ロマンがめちゃくちゃ面白くて、YouTubeでネタを探して見てみたらどれも面白かった。来年は決勝行ってほしい。
+決勝進出コンビでは真空ジェシカ、ロングコートダディ、男性ブランコに注目してた。3組とも面白かった。
+ロコディ、KOCはいつか取るだろうから、早めにM-1優勝して欲しい。M-1KOCの2冠を見てみたい。
+ 
+ぼっち・ざ・ろっく！を見る見ると言ってまだ見れていない。勉強シロイド誕生祭の終わりが近付いているのでしょうがない。
+最終回までには追い付く。残り3日。]]></summary>
+        <author>
+            <name>音MADとポケモンと私</name>
         </author>
     </entry>
     <entry>
@@ -17273,16 +17292,6 @@ Amazon
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Django 製アプリを Cloud Run で動かすまで]]></title>
-        <id>https://blog.ojisan.io/django-cloud-run</id>
-        <link href="https://blog.ojisan.io/django-cloud-run"/>
-        <updated>2022-09-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ベースとなるイメージ作成 とりあえずローカルにあるもの全部コンテナにつっこんでいます。 不要なものは適宜 dockerignore などで除けておいてください。  は引数でホストやポートを指定できます。インターネットに公開する + Cloud Run…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
 </feed>
