@@ -78,6 +78,50 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Twilio Voice での音質改善トライ 2022</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/12/23/070000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども@kimihomです。
+
+このブログ記事は Twilio Advent Calendar 2022 の記事となります。
+毎年、Advent Calendar の記事は「まとめ」の内容が多かったですが、今回は最近見つけてやってみた系の記事を記します。
+着信音が遅くなる問題
+本件は、Twilio Voice JavaScript SDK を利用した際に発生しました。TwiML にて、 で  を指定したとします。
+
+
+    
+        joey
+    
+
+
+
+
+Twilio Voice JavaScript SDK を使い、正しくWebブラウザ上で電話の発着信ができるような環境があったとします。そして、Twilio Voice Audio にて、以下の要望を実現したとします。
+着信音はPCから鳴らす
+通話音はヘッドセットから鳴らす
+ドキュメントには、以下の記載があります。
+const device &#x3D; new Device(token);
+
+device.audio.ringtoneDevices.set(&#x27;default&#x27;); // Set active device
+device.audio.ringtoneDevices.set([&#x27;default&#x27;, &#x27;ABC123&#x27;]); // Set active devices
+上記の2つのデバイス指定を試すと、着信音がPCとヘッドセットそれぞれから鳴ることになります。
+しかし、これは本来のゴールではありません。着信の時は「パソコンだけを鳴らす」ということがしたくなり…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221215/20221215113042.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/ecolidelvsvc11" target="_blank"
               rel="noopener">大腸菌デリバリーサービス</a></h3>
           <section class="articles-per-source">
@@ -23942,7 +23986,7 @@ Bluetoothのでパソコンでもスマホでも繋げますが、私はパソ�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-22T21:01:54.387Z">2022-12-22T21:01:54.387Z</time>
+    <time id="build-timestamp" datetime="2022-12-22T22:02:05.810Z">2022-12-22T22:02:05.810Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
