@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-22T03:02:01.886Z</updated>
+    <updated>2022-12-22T04:01:58.708Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メルペイにおけるインシデントマネジメントとナレッジシェア]]></title>
+        <id>25469</id>
+        <link href="https://engineering.mercari.com/blog/entry/20221220-5040a56d02/"/>
+        <updated>2022-12-22T12:00:59.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2022 の22日目の記事です。 こんにちは、メルペイSREチームでEM（Engineering Manager）をしているfoostanです。今回はメルペイにお […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Droidkaigiスポンサーブース運営の裏側と振り返り2022版]]></title>
         <id>25079</id>
@@ -59,6 +69,34 @@
 続きをみる]]></summary>
         <author>
             <name>レ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Sponsorsの収入 @ 2022]]></title>
+        <id>https://efcl.info/2022/12/22/github-sponsors-report/</id>
+        <link href="https://efcl.info/2022/12/22/github-sponsors-report/"/>
+        <updated>2022-12-21T15:32:00.000Z</updated>
+        <summary type="html"><![CDATA[2022年に得たGitHub Sponsorsの収入1をまとめたものです。
+GitHub Sponsorsは、主にオープンソース活動に対して金銭的に支援をする仕組みです。
+GitHub Sponsorsは個人と組織への支援がありますが、ここでは自分個人に対するGitHub Sponsorsについてまとめています。
+自分(@azu)のGitHub Sponsorsは、次のページに公開されています。
+Sponsor @azu on GitHub Sponsors
+オープンソース活動の種類
+自分のオープンソース活動の種類として次のようなものがあると思います。
+ソフトウェア開発: textlint、Secretlint、HonKitなどの開発やメンテナンス
+ウェブサービス開発: philan.net、Komesan、Irodrなどの開発やメンテナンス
+ブログ: JSer.infoやECMAScript Dailyのブログの投稿
+書籍: JavaScript PrimerやJavaScript Promiseの本の執筆
+どれも仕事とは関係なく、趣味でやっているものです。
+趣味でやってることなので、スポンサーに対する見返りはほぼ設定していません(特定のプロジェクトの支援という形をできるだけ避けています)。
+自分のGitHub SponsorsのTier設計についての詳細は、次の記事にまとめてあります。
+GitHub Sponsorsの募集を始めてから2年が経ったので振り返る | Web Scratch
+収入の種類
+自分のオープンソース関係の収入は、ほぼGitHub Sponsors経由となっています。
+@azuのGitHub Sponsorsページでは、MonthlyとOne-Timeでのサポートができます。
+自分の場合は、GitHub SponsorsのMonthlyでの支援がベース…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
