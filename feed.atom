@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-23T14:01:43.392Z</updated>
+    <updated>2022-12-23T15:01:48.145Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,55 @@
         <summary type="html"><![CDATA[はじめに こんにちは、メルカリのネットワークチームでエンジニアをしているkakkyです。 普段は主にCDN領域を担当しており、新規サービスで使うCDN環境の構築や既存環境の動作内容のカスタマイズ、各種契約周りの業務などを […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メールの受信トレイを空にするInbox Zeroを始めた]]></title>
+        <id>https://efcl.info/2022/12/23/inbox-zero/</id>
+        <link href="https://efcl.info/2022/12/23/inbox-zero/"/>
+        <updated>2022-12-23T13:59:00.000Z</updated>
+        <summary type="html"><![CDATA[Gmailをメーラーとして使ってますが、メールを開くのがいまだに苦手です。
+これをどうにかしようと、メールをもっと気軽に消せる方法はないかなーと思ってInbox Zeroを思い出したのでやり始めました。
+次の記事や動画を参考にしています。
+Inbox Zero and the Inbox Zero Method — everything you need to know
+【15分で完了】1度設定したら戻れない、受信トレイ0生活 | おかんの給湯室
+My Complete Inbox Zero Workflow (in 2022)! - YouTube
+基本的には、この動画を参考にして設定しました。
+
+
+Inbox Zeroの設定方法
+細かい設定は参考にした動画や記事の方に任せます。
+Gmailの”設定”でやること
+詳細タブ
+
+[ ] 自動表示 を有効化(アーカイブしたときに次のメールを自動で開く)
+[ ] カスタム キーボード ショートカット を有効化
+
+“キーボード ショートカット”というタブが増えて、ショートカットをカスタマイズできる
+全般タブ
+
+[ ] 送信＆アーカイブ を 表示する(送信したらアーカイブできる)
+[ ] 自動表示: 前と次は好みで
+[ ] キーボード ショートカット: ON
+ラベルタブ(ラベルはお好みで)
+
+[ ] Action Required ラベルを追加
+[ ] Read Later ラベルを追加
+[ ] Waiting ラベルを追加
+受信トレイタブ
+
+[ ] マルチ受信トレイ を選択
+[ ] セクション1,2,3に、次のラベル検索を追加
+
+l:Action Required
+l:Waiting
+l:Read Later
+これで設定は完了して、ホームに戻ると左右にトレイが並んだ感じの画面になります。
+
+Inbox Zeroの運用
+Inbox Z…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

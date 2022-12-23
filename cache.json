@@ -9418,6 +9418,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2022/12/23/inbox-zero/",
+          "author": null,
+          "description": "Gmailをメーラーとして使ってますが、メールを開くのがいまだに苦手です。\nこれをどうにかしようと、メールをもっと気軽に消せる方法はないかなーと思ってInbox Zeroを思い出したのでやり始めました。\n次の記事や動画を参考にしています。\nInbox Zero and the Inbox Zero Method — everything you need to know\n【15分で完了】1度設定したら戻れない、受信トレイ0生活 | おかんの給湯室\nMy Complete Inbox Zero Workflow (in 2022)! - YouTube\n基本的には、この動画を参考にして設定しました。\n\n\nInbox Zeroの設定方法\n細かい設定は参考にした動画や記事の方に任せます。\nGmailの”設定”でやること\n詳細タブ\n\n[ ] 自動表示 を有効化(アーカイブしたときに次のメールを自動で開く)\n[ ] カスタム キーボード ショートカット を有効化\n\n“キーボード ショートカット”というタブが増えて、ショートカットをカスタマイズできる\n全般タブ\n\n[ ] 送信＆アーカイブ を 表示する(送信したらアーカイブできる)\n[ ] 自動表示: 前と次は好みで\n[ ] キーボード ショートカット: ON\nラベルタブ(ラベルはお好みで)\n\n[ ] Action Required ラベルを追加\n[ ] Read Later ラベルを追加\n[ ] Waiting ラベルを追加\n受信トレイタブ\n\n[ ] マルチ受信トレイ を選択\n[ ] セクション1,2,3に、次のラベル検索を追加\n\nl:Action Required\nl:Waiting\nl:Read Later\nこれで設定は完了して、ホームに戻ると左右にトレイが並んだ感じの画面になります。\n\nInbox Zeroの運用\nInbox Z…",
+          "link": "https://efcl.info/2022/12/23/inbox-zero/",
+          "publishedOn": "2022-12-23T13:59:00.000Z",
+          "wordCount": null,
+          "title": "メールの受信トレイを空にするInbox Zeroを始めた",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2022/12/22/github-sponsors-report/",
           "author": null,
           "description": "2022年に得たGitHub Sponsorsの収入1をまとめたものです。\nGitHub Sponsorsは、主にオープンソース活動に対して金銭的に支援をする仕組みです。\nGitHub Sponsorsは個人と組織への支援がありますが、ここでは自分個人に対するGitHub Sponsorsについてまとめています。\n自分(@azu)のGitHub Sponsorsは、次のページに公開されています。\nSponsor @azu on GitHub Sponsors\nオープンソース活動の種類\n自分のオープンソース活動の種類として次のようなものがあると思います。\nソフトウェア開発: textlint、Secretlint、HonKitなどの開発やメンテナンス\nウェブサービス開発: philan.net、Komesan、Irodrなどの開発やメンテナンス\nブログ: JSer.infoやECMAScript Dailyのブログの投稿\n書籍: JavaScript PrimerやJavaScript Promiseの本の執筆\nどれも仕事とは関係なく、趣味でやっているものです。\n趣味でやってることなので、スポンサーに対する見返りはほぼ設定していません(特定のプロジェクトの支援という形をできるだけ避けています)。\n自分のGitHub SponsorsのTier設計についての詳細は、次の記事にまとめてあります。\nGitHub Sponsorsの募集を始めてから2年が経ったので振り返る | Web Scratch\n収入の種類\n自分のオープンソース関係の収入は、ほぼGitHub Sponsors経由となっています。\n@azuのGitHub Sponsorsページでは、MonthlyとOne-Timeでのサポートができます。\n自分の場合は、GitHub SponsorsのMonthlyでの支援がベース…",
