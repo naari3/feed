@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-25T08:01:56.964Z</updated>
+    <updated>2022-12-25T09:02:16.847Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,43 @@
         <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2022 の25日目の記事です。 こんにちは。メルペイCTOのnozaq（@nozaq）です。 メルペイのシステムはマイクロサービスアーキテクチャを採用し、ドメイ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022年12月 第4週の日記]]></title>
+        <id>hatenablog://entry/4207112889948119995</id>
+        <link href="https://all-is-vanity.hatenablog.com/entry/2022/12/25/171635"/>
+        <updated>2022-12-25T08:16:35.000Z</updated>
+        <summary type="html"><![CDATA[12/18
+・起きて，本社に来た。
+・AR スポーツの大会に来た。
+・人間関係というのはお互いに遠慮しあってるときの方が事故が少ない。
+・小高いイタリアンレストランに入ってしまい，搾り取られた。
+・帰りにパン屋で買った素のパンが美味しかった。また買いたい。
+・眠かったので早めに寝ることに。
+ 
+
+12/19
+・早起きが出来なかった。
+・汚めのラーメンを食べた。
+・スプラトゥーン3を闇雲にやったら全然勝てなくてほんまにつまらなかった。泣
+・AMD が開発した FRS というアップスケーリング技術に興味を持ったので調べていた。何ができるかは分かったが原理はまだ分かっていない。もっと調べないといけない。
+とりあえず原神含めていくつかのゲームタイトルで既に採用されてるようだ。
+また Nvidia の DLSS と異なり，レンダリングパイプラインの後方に位置するポストエフェクトのシェーダーらしい。そして対応しているハードウェアと API が広い。
+つまり汎用性が高すぎるのだ。
+・Blender の教科書を読み進めたかったが途中で間違った工程が混入していてそこまでやり直さないと後でかけるエフェクトとかが上手くいかなくてやり直すのに1日使った。ガチ最悪だった。
+ 
+
+12/20
+・汚めのラーメンが胃腸や血液や内臓を汚している感覚が常にする。
+・Fall Guysの大会をやることになった。
+・昨日？一昨日？買ったパンがカチカチになっていた。
+・すき焼き弁当を食べた。色々入ってるので面白い。
+・オレンジジュースにはちみつを溶かして飲んだ。
+・Fall Guysしばらくやってみたけど新ルール多すぎた。
+・GLSL に4次元ベクトルに 3次元と2次元のベクトルの連結を代入できるところがあって意味がわからなくてSAN値が下がった。おそらく2次元ベクトルがデフォルトだとx軸に射影されるか，余った分の…]]></summary>
+        <author>
+            <name>読む毒</name>
         </author>
     </entry>
     <entry>
