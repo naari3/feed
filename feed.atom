@@ -2,10 +2,81 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-26T08:02:10.258Z</updated>
+    <updated>2022-12-26T09:02:19.474Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【年末年始まとめ読み】2022年の「年間総合はてなブログランキング」トップ100と「はてな匿名ダイアリー」トップ50を公開しました！]]></title>
+        <id>hatenablog://entry/4207112889948386049</id>
+        <link href="https://blog.hatenablog.com/entry/2022/12/26/180000"/>
+        <updated>2022-12-26T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[お正月休みに読みたおそう！
+
+
+気づけば今年もあっという間に年の瀬ですね！ 皆さんにとってこの1年はどのような年でしたか？ はてなブログでは2022年もさまざまな話題が書き残されています。
+特に週刊はてなブログで、毎週月曜日に公開している「今週のはてなブログランキング*1」には、そのときどきの注目記事が集まっています！
+今回は、その総決算として2022年にもっとも注目を集めた「年間総合はてなブログランキング」トップ100の記事と、「はてな匿名ダイアリー」トップ50の記事を発表します*2！ 集計期間は2022年1月1日～同12月19日です。
+#
+    タイトル／著者とブックマーク
+    
+1
+    逮捕にそなえる人生継続計画 - やしお
+ by id:Yashio 
+    
+2
+    なぜ投資をさっさと始めないのか - 本しゃぶり
+ by id:honeshabri 
+    
+3
+    新NISAとは。新NISAつみたて投資枠、成長投資枠と旧NISAの徹底比較 - たぱぞうの米国株投資
+ by id:tapazou 
+    
+4
+    ソフトウェアエンジニアでテストマンな私が家を買う際にやったこと - 若くない何かの悩み
+ by id:devorgachem 
+    
+5
+    ジャズのコード進行の原理 -
+ by id:Arakur 
+    
+6
+    最近Amazonプライムで観た面白かったけど胸糞悪くて二度と観たくない邦画5選 - kansou
+ by id:ikdhkr 
+    
+7
+    ロシアの攻勢と新世界の到来 (2022/02/26): 侵略成功時のロシアの予定稿 全訳 - 山形浩生の「経済のトリセツ」
+ by id:wlj-Friday 
+    
+8
+    共感格差 - データをいろいろ見てみる
+ by id:shioshi…]]></summary>
+        <author>
+            <name>週刊はてなブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rubyインタプリタの品質向上のために個人的にやっていること]]></title>
+        <id>hatenablog://entry/4207112889948396181</id>
+        <link href="https://techlife.cookpad.com/entry/2022/12/26/175343"/>
+        <updated>2022-12-26T08:53:43.000Z</updated>
+        <summary type="html"><![CDATA[技術部の笹田です。Ruby 3.2 無事にリリースされて良かったよかった。
+Rubyインタプリタは複雑なプログラムなので、当然のごとくバグが入ってきます。Rubyインタプリタ開発者は、これに対していろんな対策をしています。たとえば、テストを書いて、CI環境でチェックするとか、今となっては当然のことを、当然のごとくやっています（RubyCIやchkbuild、ruby/spec: The Ruby Spec Suite aka ruby/specなどの整備や、実行環境の日々のメンテナンスの成果です）。
+これに追加して、個人的にテストをとにかくたくさん繰り返し行うマシン群を用意しています。テストの実行頻度をなるべくあげて、「時々しか発生しない」というバグを炙り出して、Rubyインタプリタの品質向上を目指すためです。本稿ではそんな、ちょっとだけ変わったテスト環境についての話をご紹介します。
+このテスト環境を用意するために、いろいろな方にご支援いただいております。本稿では感謝の意をこめて、そのご支援をご紹介させていただきます。
+バグを「炙り出す」必要性
+定期的にテストを実行する環境
+よくある CI/CD の文脈では、リポジトリへのコミット（PR）単位でテストを実行します。もし問題がでたら、そのコミットに問題があることがわかるためです。GitHub Actions などでよく対象にするのはそんなテストです。
+つまり、
+「バグは修正に混入する → 修正ごとにテストを走らせることで、そのバグを見つけることができる」
+という仮説のもとに定期的にテストする環境を用意するわけです。
+この問題に対処するため、Ruby インタプリタ開発では、次のようなテスト環境を用意して利用しています。
+GitHub Actions による PR 単位、push 単位でのテスト環境
+chkbuild による網羅的…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[社内情報分析基盤「illumino」（IIR vol.57 3章）]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=17524</id>
