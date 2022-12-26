@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-26T11:01:56.656Z</updated>
+    <updated>2022-12-26T12:02:29.863Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -207,6 +207,17 @@ ReDoSに対するRegexpの改善
 SyntaxSuggest の導…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[色々知りたいことがあってmoment を読んだ]]></title>
+        <id>https://blog.ojisan.io/last-moment</id>
+        <link href="https://blog.ojisan.io/last-moment"/>
+        <updated>2022-12-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[moment.js アドベントカレンダー -1 日目は sadnessOjisan が担当します。
+必要性に駆られて moment を理解する必要があったので読んでみました。 エントリポイントはどこか package.json の main は moment.js…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
