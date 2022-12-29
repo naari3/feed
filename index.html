@@ -78,6 +78,59 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">エンジニアリングマニフェストを刷新しました: クックパッドの開発者文化をあらわす3つの言葉</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/12/29/engineering_manifesto" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>CTO の成田（@mirakui）です。
+クックパッドはいま、2017年からの10年間を投資フェーズとして位置づけていて、ミッションである「毎日の料理を楽しみにする」を実現するため、長期的に成長していけるための事業づくり、組織づくりに投資をしています。
+クックパッドは価値のあるプロダクトをユーザに届け続けることが事業の中心にあり、そのためにはエンジニアの活躍が不可欠です。クックパッドにおけるエンジニアというのは、単なる「実装担当」ではなく、自発的に課題を発見し、一人ひとりの専門性や創意工夫をもって開発をしていくことが求められます。強い個人が集まって、それぞれの能力のうちの高い部分をお互いに引き立て合って、一人ひとりでは解決できないような大きな課題に取り組めるようになる。私は CTO として、クックパッドのエンジニア組織をそのように強化していきたいと考えてきました。
+エンジニアリングにおいては、エンジニアの人数を増やしていくことが組織の生産性をあげるかというと、私はそうではありません。エンジニア10人の組織と100人の組織とでは、プロダクトの品質という意味では差が出てくるかとは思いますが、突破できる事業課題の大きさにはあまり人数は関係ないのではないかと考えています。それよりも一人ひとりが重要な課題に取り組めているかどうかが重要です。平均的な100人よりは精鋭の10人の組織でありたいですし、少数精鋭の10人が集まった100人の組織でありたいと考えています。そういったエンジニア組織を目指すため、チームワークによる生産性を目指すよりも先に、個々人の能力、リーダーシップを高めることを重要視しています。
+私は今年、一人ひとりが自律的で卓越したエンジニアの集団を目指すために、クックパッドのエンジニアとしてのあるべき考え方・文化を言語化した「エンジニアリングマニフェスト」を制定しました。実…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mirakui/20221229/20221229174944.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Next.js アプリケーションの共通コンポーネント開発</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/12/29/090000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。レシピサービス開発部のkaorun343です。クックパッドではスマートフォン向けページにおける開発者体験向上のために、レシピサービスのフロントエンドを Next.js と GraphQL のシステムに置き換えている話にて紹介したとおり、Next.jsとGraphQLを用いたモダンな環境へと移行を進めています。例えばモバイル端末からのアクセスでURLがトップページの / であれば Rails、レシピ詳細ページの /recipe/:id であれば Next.js アプリにルーティングされるようになっています。現在ではレシピ詳細ページだけではなく検索結果ページやつくれぽ詳細ページ、MYフォルダページなどもNext.jsアプリケーションに置き換わっています。今回はその移行により生じた課題と取り組み方、それから併せて実施したモノレポ環境整備について紹介します。
+共通コンポーネントの導入背景
+実装方法
+Reactによる共通コンポーネント作成
+Storybookによる開発環境
+リソース取得のためのAPIサーバー
+ウェブコンポーネント作成
+カスタムエレメント
+Shadow DOM
+実装例
+モノレポ環境整備
+モノレポ環境整備を整備する前の状況
+Yarn Workspacesの導入
+Turborepoの導入
+さいごに
+共通コンポーネントの導入背景
+cookpad.com では上述の通りページによってホストするアプリケーションが異なる一方で、ヘッダーやサイドメニュー、フッターといった全てのページに共通して表示されているコンポーネントがあります。このような、Next.js と Rails アプリの両方から利用される UI コンポーネントのことをこの記事では &quot;共通コンポーネント&quot; と呼ぶこととします。
+クックパッドではハロウィンやクリスマスにあわせてヘッダーやフッターのデザインを変更す…</span>
+                  </div>
+                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773" class="card article-thumbnail" data-enclosure />
+                                  </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
               rel="noopener">ボクココ</a></h3>
           <section class="articles-per-source">
@@ -181,43 +234,6 @@ extension View {
                     <span>No content preview</span>
                   </div>
                 </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
-              rel="noopener">クックパッド開発者ブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Next.js アプリケーションの共通コンポーネント開発</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/12/29/090000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>こんにちは。レシピサービス開発部のkaorun343です。クックパッドではスマートフォン向けページにおける開発者体験向上のために、レシピサービスのフロントエンドを Next.js と GraphQL のシステムに置き換えている話にて紹介したとおり、Next.jsとGraphQLを用いたモダンな環境へと移行を進めています。例えばモバイル端末からのアクセスでURLがトップページの / であれば Rails、レシピ詳細ページの /recipe/:id であれば Next.js アプリにルーティングされるようになっています。現在ではレシピ詳細ページだけではなく検索結果ページやつくれぽ詳細ページ、MYフォルダページなどもNext.jsアプリケーションに置き換わっています。今回はその移行により生じた課題と取り組み方、それから併せて実施したモノレポ環境整備について紹介します。
-共通コンポーネントの導入背景
-実装方法
-Reactによる共通コンポーネント作成
-Storybookによる開発環境
-リソース取得のためのAPIサーバー
-ウェブコンポーネント作成
-カスタムエレメント
-Shadow DOM
-実装例
-モノレポ環境整備
-モノレポ環境整備を整備する前の状況
-Yarn Workspacesの導入
-Turborepoの導入
-さいごに
-共通コンポーネントの導入背景
-cookpad.com では上述の通りページによってホストするアプリケーションが異なる一方で、ヘッダーやサイドメニュー、フッターといった全てのページに共通して表示されているコンポーネントがあります。このような、Next.js と Rails アプリの両方から利用される UI コンポーネントのことをこの記事では &quot;共通コンポーネント&quot; と呼ぶこととします。
-クックパッドではハロウィンやクリスマスにあわせてヘッダーやフッターのデザインを変更す…</span>
-                  </div>
-                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773" class="card article-thumbnail" data-enclosure />
-                                  </a>
               </details>
             </article>
           </section>
@@ -24431,7 +24447,7 @@ Rosalía Performs &#x27;Candy&#x27; | Global Citizen Festival: NYC
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-29T08:02:00.631Z">2022-12-29T08:02:00.631Z</time>
+    <time id="build-timestamp" datetime="2022-12-29T09:01:47.930Z">2022-12-29T09:01:47.930Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
