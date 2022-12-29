@@ -5968,6 +5968,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889949220369",
+          "author": null,
+          "description": "ども、@kimihom です。\n\n今年ももう終わりですね。\n去年、ボクココで書いた記事数は39記事でした。そして、今年も39時目となるこの記事を公開します。サンキュー！\n大量の警告通知\n今年、SwiftUI4がリリースされ、SwiftUI3で書いていたコードから大量の警告が届きました。\nXcodeでアプリを繋ぎ、アプリを色々とタップすると、以下の文言が大量に出力されるようになりました。\nPublishing changes from within view updates is not allowed, this will cause undefined behavior.\n上記の文言で Google 検索すると、英語でさまざまな対応方法が記されています。私が調べた結果、YouTubeの配信が最もわかりやすく解説してましたので、紹介します。英語ではありますが、ソースコードを読むだけでも理解が進みました。\n\n\n\nコード改善\nまず、上記ビデオを見ると、最終的には sync 関数を自前定義しています。Boolのみの定義であるため、これを他の型でも sync できるように改善しました。\nextension View {\n    func sync<T: Equatable>(_ published: Binding<T>, with binding: Binding<T>) -> some View {\n        self\n            .onChange(of: published.wrappedValue) { published in\n                binding.wrappedValue = published\n            }\n            .onChange(of: binding.wrappedValue) { b…",
+          "link": "https://www.bokukoko.info/entry/2022/12/29/162535",
+          "publishedOn": "2022-12-29T07:25:35.000Z",
+          "wordCount": null,
+          "title": "SwiftUI4での@Published警告に対応した話",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221229/20221229162417.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221229/20221229162417.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889935625686",
           "author": null,
           "description": "ども@kimihomです。\n\nこのブログ記事は Twilio Advent Calendar 2022 の記事となります。\n毎年、Advent Calendar の記事は「まとめ」の内容が多かったですが、今回は最近見つけてやってみた系の記事を記します。\n着信音が遅くなる問題\n本件は、Twilio Voice JavaScript SDK を利用した際に発生しました。TwiML にて、<Dial> で <Client> を指定したとします。\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Response>\n    <Dial callerId=\"+8150++++++++\">\n        <Client>joey</Client>\n    </Dial>\n</Response>\n\n\n\nTwilio Voice JavaScript SDK を使い、正しくWebブラウザ上で電話の発着信ができるような環境があったとします。そして、Twilio Voice Audio にて、以下の要望を実現したとします。\n着信音はPCから鳴らす\n通話音はヘッドセットから鳴らす\nドキュメントには、以下の記載があります。\nconst device = new Device(token);\n\ndevice.audio.ringtoneDevices.set('default'); // Set active device\ndevice.audio.ringtoneDevices.set(['default', 'ABC123']); // Set active devices\n上記の2つのデバイス指定を試すと、着信音がPCとヘッドセットそれぞれから鳴ることになります。\nしかし、これは本来のゴールではありません。着信の時は「パソコンだけを鳴らす」ということがしたくなり…",

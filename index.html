@@ -78,6 +78,46 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SwiftUI4での@Published警告に対応した話</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/12/29/162535" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+今年ももう終わりですね。
+去年、ボクココで書いた記事数は39記事でした。そして、今年も39時目となるこの記事を公開します。サンキュー！
+大量の警告通知
+今年、SwiftUI4がリリースされ、SwiftUI3で書いていたコードから大量の警告が届きました。
+Xcodeでアプリを繋ぎ、アプリを色々とタップすると、以下の文言が大量に出力されるようになりました。
+Publishing changes from within view updates is not allowed, this will cause undefined behavior.
+上記の文言で Google 検索すると、英語でさまざまな対応方法が記されています。私が調べた結果、YouTubeの配信が最もわかりやすく解説してましたので、紹介します。英語ではありますが、ソースコードを読むだけでも理解が進みました。
+
+
+
+コード改善
+まず、上記ビデオを見ると、最終的には sync 関数を自前定義しています。Boolのみの定義であるため、これを他の型でも sync できるように改善しました。
+extension View {
+    func sync(_ published: Binding, with binding: Binding) -&gt; some View {
+        self
+            .onChange(of: published.wrappedValue) { published in
+                binding.wrappedValue &#x3D; published
+            }
+            .onChange(of: binding.wrappedValue) { b…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221229/20221229162417.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -24391,7 +24431,7 @@ Rosalía Performs &#x27;Candy&#x27; | Global Citizen Festival: NYC
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-29T07:01:45.013Z">2022-12-29T07:01:45.013Z</time>
+    <time id="build-timestamp" datetime="2022-12-29T08:02:00.631Z">2022-12-29T08:02:00.631Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
