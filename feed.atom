@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-30T12:02:31.110Z</updated>
+    <updated>2022-12-30T13:04:32.650Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[textlint v12.3.0リリース： ESMで書かれたルールを読み込めるように]]></title>
+        <id>https://efcl.info/2022/12/30/textlint-v12.3.0-esm/</id>
+        <link href="https://efcl.info/2022/12/30/textlint-v12.3.0-esm/"/>
+        <updated>2022-12-30T11:42:00.000Z</updated>
+        <summary type="html"><![CDATA[textlint v12.3.0をリリースして、
+ECMAScript Modules(ESM)で書かれたルールやプラグインを扱えるように対応しました。
+Release v12.3.0 · textlint/textlint
+
+v12時点では、 TEXTLINT_USE_NEW_CLI=1 textlint README.md または
+textlint-esm README.md でのみESMを扱えます
+新しい仕組みには細かい互換性がないところがあるので、v12.3.0の段階ではフラグ付きで利用できるようにしています。
+次のメージャーバージョンであるv13で、デフォルトに切り替える予定です。
+コマンドラインユーザー向け
+textlintをコマンドラインから利用している場合は、次のように環境変数を指定すると新しい実装に切り替わります。
+
+TEXTLINT_USE_NEW_CLI=1 textlint README.md
+
+
+または、textlint-esmというコマンドが増えているので、次のコマンドでも同じ結果になります。
+
+textlint-esm README.md
+
+
+コマンドラインレベルでは、基本的に新しい実装でも結果は同じになるはずです。
+同じ結果にならなかったり、新しい実装にするとエラーが出たら報告してください。
+エディタユーザー向け
+vscode-textlintなどエディタプラグインは、おそらく古いAPIを使ってる場合があるので、プラグイン開発者の対応が必要です。
+もし、プラグイン開発をしている際にtextlintパッケージを使っていて、新しいAPIだと実装できないケースがあったらおしらせください。
+(.textlintrcを読み込まない場合は、@textlint/kernelパッケージが一番低レベルなAPIなので最適です。)
+Feedback for new…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[3人で振り返る2022年の出来事と合作③（ウマ娘競奏曲篇）]]></title>
         <id>hatenablog://entry/4207112889949370363</id>

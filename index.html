@@ -78,6 +78,50 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">textlint v12.3.0リリース： ESMで書かれたルールを読み込めるように</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/12/30/textlint-v12.3.0-esm/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>textlint v12.3.0をリリースして、
+ECMAScript Modules(ESM)で書かれたルールやプラグインを扱えるように対応しました。
+Release v12.3.0 · textlint/textlint
+
+v12時点では、 TEXTLINT_USE_NEW_CLI&#x3D;1 textlint README.md または
+textlint-esm README.md でのみESMを扱えます
+新しい仕組みには細かい互換性がないところがあるので、v12.3.0の段階ではフラグ付きで利用できるようにしています。
+次のメージャーバージョンであるv13で、デフォルトに切り替える予定です。
+コマンドラインユーザー向け
+textlintをコマンドラインから利用している場合は、次のように環境変数を指定すると新しい実装に切り替わります。
+
+TEXTLINT_USE_NEW_CLI&#x3D;1 textlint README.md
+
+
+または、textlint-esmというコマンドが増えているので、次のコマンドでも同じ結果になります。
+
+textlint-esm README.md
+
+
+コマンドラインレベルでは、基本的に新しい実装でも結果は同じになるはずです。
+同じ結果にならなかったり、新しい実装にするとエラーが出たら報告してください。
+エディタユーザー向け
+vscode-textlintなどエディタプラグインは、おそらく古いAPIを使ってる場合があるので、プラグイン開発者の対応が必要です。
+もし、プラグイン開発をしている際にtextlintパッケージを使っていて、新しいAPIだと実装できないケースがあったらおしらせください。
+(.textlintrcを読み込まない場合は、@textlint/kernelパッケージが一番低レベルなAPIなので最適です。)
+Feedback for new…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://crabgot.hatenablog.com/" target="_blank"
               rel="noopener">なんて巨大なカニゴット</a></h3>
           <section class="articles-per-source">
@@ -24533,7 +24577,7 @@ https://www.nicovideo.jp/watch/sm41065734
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-12-30T12:02:31.031Z">2022-12-30T12:02:31.031Z</time>
+    <time id="build-timestamp" datetime="2022-12-30T13:04:32.591Z">2022-12-30T13:04:32.591Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
