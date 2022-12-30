@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-30T11:01:49.831Z</updated>
+    <updated>2022-12-30T12:02:31.110Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17898,27 +17898,6 @@ https://www.nicovideo.jp/watch/sm41065734
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DRF で association を持ったデータを serialize する]]></title>
-        <id>https://blog.ojisan.io/drf-serialize-association</id>
-        <link href="https://blog.ojisan.io/drf-serialize-association"/>
-        <updated>2022-10-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Django REST framework の serializer で関連情報を扱う。 今日は簡略化したモデルで考える。Author has many books…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Django 製 API 仕様書を Swagger で作る]]></title>
-        <id>https://blog.ojisan.io/django-swagger</id>
-        <link href="https://blog.ojisan.io/django-swagger"/>
-        <updated>2022-10-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Django から Swagger で吐きたいというニーズは Django で API を作っている時であろう。
-そのときに使われるライブラリに Django REST framework があるが、このライブラリ自体に Swagger…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
 </feed>
