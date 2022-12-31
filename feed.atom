@@ -2,10 +2,139 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-31T13:03:51.318Z</updated>
+    <updated>2022-12-31T14:01:41.064Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2022年を振り返る]]></title>
+        <id>hatenablog://entry/4207112889949955236</id>
+        <link href="https://kiyo-shit.hatenablog.com/entry/2022/12/31/225612"/>
+        <updated>2022-12-31T13:56:12.000Z</updated>
+        <summary type="html"><![CDATA[人々の振り返りエントリを読んでたら急に何か書かねば！という気持ちになったのでなんの準備もなく、天覧山を飲みながら、まさに時系列関係なくTop of the Headに今年を振り返っていくぜ。
+www.tenranzan.jp
+転職した
+「転職した」という間もなく転職した。キッチリ365日。人生最短。まあ特に感想はナシ。飲酒機会があれば色々お話しします。
+mastodon使い始めた
+思い切ってiPhoneからTwitterクライアントを削除してmastodon中心の生活にしている。今のところ不便はないのだが、強いて言うなら@hatebuが無いくらい。これは@hatebuのActivityPub実装があれば良いし、自分で作ろうかな〜と思ってちょいちょいその方面を触り出している。
+想像以上に不便が発生してなくて驚いているし、まあ寂しくもある。
+マンションの管理組合理事長になった
+輪番制で役員をやらねばならんのだけど、くじ引きの結果理事長になってしまった。とにかく押印を無限にする仕事で、事務作業をやりたくないし全てが紙ベースなので最悪。休日に管理組合周りのイベントが入りがちで家族のヘイトも高い。
+ネガポジで言えば圧倒的にネガ要素満載なのだけども、とは言え自分も家族も生活する場所の自治に関わることなのでコミットメントすることそのものは極めて重要だし、高齢化の気配もあるのでやるべきことはやっておくか、というテンションではある。
+なんというか、このあたりの関わりに距離を置いた結果、区分所有者がアンコントローラブル管理組合が仕上がると最悪やな、という防衛姿勢が根底にはある。
+kabumatome.doorblog.jp
+自炊に積極的になった
+料理に対する苦手意識が強くて全くやらずに生き抜いてきたのだけども、前回の転職時には1ヶ月くらいの有給消化があり、毎日夕飯を作るぞ！と家族にコミットメン…]]></summary>
+        <author>
+            <name>Robot Checkerboard</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022年を振り返る]]></title>
+        <id>https://note.com/seshiapple/n/n80780b18dd84</id>
+        <link href="https://note.com/seshiapple/n/n80780b18dd84"/>
+        <updated>2022-12-31T13:40:09.000Z</updated>
+        <summary type="html"><![CDATA[久々にひとりで大晦日を過ごしています。年末年始の間にやらないといけない仕事もあるにはあるのですが、修羅っているというわけではなく、穏やかな感じ。そういうわけで、今年の仕事や活動を振り返りたいと思います。
+2022年の振り返り
+続きをみる]]></summary>
+        <author>
+            <name>せしも</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goodbye 2022]]></title>
+        <id>https://blog.sakamo.dev/post/review-2022/</id>
+        <link href="https://blog.sakamo.dev/post/review-2022/"/>
+        <updated>2022-12-31T13:04:20.000Z</updated>
+        <summary type="html"><![CDATA[2022 年も終わりなので振り返る。
+
+
+
+
+    
+
+Tweet
+
+
+去年はもうちょっと余裕を持って書いていたが、今年はもう年越し直前で蕎麦を食べながら書いている。
+プライベート
+
+    
+        
+
+    
+
+
+去年と同様に、今年もそこそこ経済を回した。
+仕事
+
+    
+        
+
+    
+
+
+転職して 1 年 4 ヶ月が経過した。ソフトウェアエンジニアではなくなったので、仕事としてコードを書くことはないが、今のところそれ自体が苦しいことはない。仕事内容は良く同僚にも恵まれており日々の学びが多いためとても充実している。
+技術
+
+    
+        
+
+    
+
+
+主な領域としては、コンテナというのは変わらず。あとは IaC だったり、興味のある分野とかやりたい分野は一貫して変わっていない。
+久しぶりに本をちゃんと読んだ。この本は、Kubernetes の基本的なネットワークについて学ぶことができ、netns とか iptables がどう使われているのかわかる。
+Networking and Kubernetes 読み始めたhttps://t.co/BzDG3gmyR1
+— さかもとりょーた(24) (@let_constant) April 8, 2022
+
+
+個人的に記憶にあるのが Zig とか Erlang を触ったことである。Zig は手に馴染む感じがせず Rust で良くねと思った。Erlang はパターンマッチが強く、Scala を初めて書いた時と同じような面白さを感じたし、多分 2023 年も触っている気がする。
+Zig が流行ってるのでとりあえず触ってみた pic.twitter.com/cHXcTePYAG
+— さかもとりょーた(24) (@let_constant) July 17, 2022
+
+
+
+Erlang おさわりしてる
+— さかもとりょーた(24) (@let_constant) December 17, 2022
+
+
+あとは、DNS とかいろいろ作りかけのものが今年も完成しなかったので、来年こそは完成させたい。
+　資格
+
+    
+        
+
+    
+
+
+去年のサイバーマンデーで買っていた CKAD をやっと受けた。2020 年ぐらいから受けようと思っていたのでついにという感じではある。
+受けた pic.twitter.com/6rztMu0fwy
+— さかもとりょーた(24) (@let_constant) November 29, 2022
+
+
+筋トレ
+
+    
+        
+
+    
+
+
+筋トレ 2022 に書いた通り、真面目に続けているので継続したいし、懸垂を頑張りたい。
+総括
+
+    
+        
+
+    
+
+
+来年もプライベートも仕事も頑張りましょう。あとは英語を頑張りたい。]]></summary>
+        <author>
+            <name>Posts on ストイックに生きたい</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[かっぱずしの２０２２]]></title>
         <id>https://note.com/somethingofmok/n/nf417ddedd079</id>
