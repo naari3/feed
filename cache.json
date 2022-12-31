@@ -9321,6 +9321,16 @@
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/jscodeshift-test-rule",
+          "author": null,
+          "description": "jscodeshift という codemod を作るための素晴らしいライブラリがあるのですが、この transformer のテストの書き方がいまいち分からなかったので、同梱されているテストの util…",
+          "link": "https://blog.ojisan.io/jscodeshift-test-rule",
+          "publishedOn": "2022-12-31T00:00:00.000Z",
+          "wordCount": null,
+          "title": "jscodeshift に付随するテストツールである defineTest の規則を調べてみた",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/dayjs-plugin",
           "author": null,
           "description": "day.js アドベントカレンダー -3 日目は sadnessOjisan が担当します。\n必要性に駆られて dayjs を理解する必要があったので読んでみました。 dayjs とは dayjs は momentjs…",

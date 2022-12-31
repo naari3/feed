@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2022-12-31T06:02:11.783Z</updated>
+    <updated>2022-12-31T07:01:42.902Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -78,6 +78,16 @@ www.youtube.com
 これが前からずっと好きで、ただオリジナル曲だと思ってたんですよね。Spot…]]></summary>
         <author>
             <name>nomolkのブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[jscodeshift に付随するテストツールである defineTest の規則を調べてみた]]></title>
+        <id>https://blog.ojisan.io/jscodeshift-test-rule</id>
+        <link href="https://blog.ojisan.io/jscodeshift-test-rule"/>
+        <updated>2022-12-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[jscodeshift という codemod を作るための素晴らしいライブラリがあるのですが、この transformer のテストの書き方がいまいち分からなかったので、同梱されているテストの util…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
