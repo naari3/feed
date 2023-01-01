@@ -1657,21 +1657,6 @@
             "length": "0"
           },
           "imageUrl": "https://user-images.githubusercontent.com/25518367/148981929-cd707e1b-ba47-48d3-909a-3f235f0007d2.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889924315937",
-          "author": null,
-          "description": "https://docs.xilinx.com/r/en-US/pg252-vcu/VCU-Latency-Modes\n遅延モード\n4種類ある．\n通常モード(normal mode)\nフレーム単位処理\nGOPフル機能使える．IPBで動く．\nフレーム間の並び替えや予測など可能\n並び替えなしモード(no-reordering)\nフレーム単位処理\nハードウェアレートコントロール使える．\nI-onlyとIPPP(?)，Low-delay-Pが使える\n並び替えがない分レイテンシが低い．\n低レイテンシモード\nフレームはスライスに分割されて処理されるが入力と出力はフレーム単位で動く．\nエンコーダとデコーダはスライス単位で動作するが映像入力(カメラ)DMAや映像出力(ディスプレイ)DMAはフレーム単位で動く．\nスライスの終了毎に完了割り込みが発生，スライス分のストリームを出力する\nエンコーダでは4，デコードでは2ストリームあるので並列に処理することで早くなる．\nXilinx 低レイテンシモード\nこのモードではSync IPという別のIPを使うことによって映像入力DMAとエンコーダDMAが同じバッファから同時に読み書きすることができ，サブフレーム(スライス)で動作することができる．\nデコーダとディスプレイも同じバッファにアクセスできるが同期IPはないため，デコーダが半フレームを書き込んだ時にディスプレイの表示を開始するようにソフトウェアで処理している．\nVCU自体の機能ではないが，Sync IPを使うことでカメラキャプチャデータされたDMA書き込みとVCUエンコーダ読み出しの調停をやってくれるみたい．これらのデータはDRAMを介している．(パイプラインではない)\n\nこの表の見方がわからなかった・・・．単位はms? 1xのときは2-3msのイベントが1818回あったという意味？\nEnd to End遅延の例\n\n通常モードだとフレーム単位で遅延が乗るのがわかる．また，低遅延モードではEncodeまでスライス単位の処理ができている．\nSync IPを使ったXilinx低遅延モードではCapture-Encode間とDecodeはうまくいっているけどDisplay出力の方は普通に1フレームかかってしまっている．このDisplayがどこからどこまでの遅延を指すのかは示されていないけど，ディスプレイ送信で1フレームかかってしまっているということだと(自分は)思っている．また，ディスプレイ自体も早いものでも8ms程度遅延が乗ってくると思われる．(オフィス用だとそれ以上)\nSync IPを使ってやらないといけないなどある程度の制約はあるものの，これだけ早く動くのは良いね．(しかもH.264やH.265の高圧縮映像) 使ってみたいけど，Sync IPがなかなか厄介そうでこれだったら自作したほうがいいのではという気もしてくる．\nXilinx synchronization IP\nhttps://docs.xilinx.com/r/en-US/pg252-vcu/VCU-Sync-IP-v1.0\n実際使うときはGstreamerのAPIを使ってやることがかかれている．gst-plugins-good/sys/v4l2/ext/xlnx-ll/xvfbsync.cが実体っぽい．流れ的にはv4l2がバッファをomxEncoderに送り，v4l2に則りDMAを開始(カメラ映像受信)，SyncIPはDMA書き込みが完了するまでOMXエンコーダをブロックする．こんな感じで同期を保ちつつけるようだ．\nエンコーダの例\n\nデコーダの例\n\nあまり良くわかっていないが一度くらいはVCU+SyncIPでXilinx Low latency Modeでやってみたいと思う．",
-          "link": "https://fumimaker.net/entry/2022/10/04/003751?utm_source=feed",
-          "publishedOn": "2022-10-03T15:37:51.000Z",
-          "wordCount": null,
-          "title": "Video Codec Unit(VCU) Xilinx Low latencyモードについて",
-          "enclosure": {
-            "url": "https://i.gyazo.com/f049e616605e8fe9d1bdfb074f8715d4.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://i.gyazo.com/f049e616605e8fe9d1bdfb074f8715d4.png"
         }
       ]
     },
@@ -3514,6 +3499,21 @@
       "feedUrl": "https://katsumakazuyo.hatenablog.com/rss",
       "siteUrl": "https://katsumakazuyo.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/4207112889950080639",
+          "author": null,
+          "description": "アイリスオーヤマ 自動調理鍋 自動かくはん式調理機 シェフドラム 電気鍋 揚げ物 CHEF DRUM DAC-IA2-H グレー\nアイリスオーヤマ(IRIS OHYAMA)\nAmazon\nアイリスオーヤマにシェフドラムという自動調理器があります。任意の傾きに変えて任意の温度でくるくる回転させながらいろんなものを調理してくれる機械です。\nもともとこれを買った目的はホットクックが苦手な炒め物をさせようと思って炒飯とか麻婆豆腐のために買ったんですが、残念ながら\n・日本の100Vという電気の規格による鍋型調理器の火力の限界（せいぜい1000wか、最大でも1400wくらいにしか上げられない。シェフドラムは900wなので、炒め物には不向き）\n・無水系ではないので、伝導熱が中心であまり、美味しい炒めものものができないこと（炒めものはある程度輻射熱がないと美味しくない）\nということで、早々に、いくつか作って炒め物系は諦めてしまったのですが、思いの外得意だったのが\n「低温のスープづくり」\nでした。\nこれまでホットクックや煮込み自慢でも70-90度の任意の温度で機能があったのですが、唯一最大の弱点が\n「かきまぜてくれないこと」\nでした。\nそのため、味噌汁でも野菜スープでも結局、私が最終的にかき混ぜる必要がありますし、そもそも煮込んでる間にかき混ぜてくれないので、味が均一になりません。\nところが、シェフドラムは80度とか90度とかでも、結構な速さでぐるぐるかき混ぜてくれます。加えて具が少ない時には傾きを変えることができるので、少量のスープでも上手に作ってくれます。\n写真は、トマト２つと、しめじとマッシュルームを１パックずつ入れて、80度で20分ほど、かきまぜてもらったもので、ちゃんとトマトの酸味がしめじ・マッシュルームと調和していて、別々感がなくてばっちりです。\n今年は、雑煮の汁もシェフドラムで作りました。みつばとしいたけと鶏肉を入れて、水と醤油を少々で、ぐるぐる80度でかき混ぜてもらってばっちりです。\nスープメーカーとしてこの値段を出すかどうかというのは多少疑問ですが、でも最近は下手すると、ホットクックよりもよく稼働してます。稼働率で言うと\nヘルシオ＞シェフドラム＞ホットクック\nという感じです。\n沸騰しない温度でコツコツとスープを作りたい、という需要がどのぐらいあるかわかりませんが、それがある人にはおすすめです。",
+          "link": "https://katsumakazuyo.hatenablog.com/entry/2023/01/01/121306",
+          "publishedOn": "2023-01-01T03:13:06.000Z",
+          "wordCount": null,
+          "title": "なんだかんだ言って、低温調理スープメーカーとして意外と活躍している、アイリスオーヤマのシェフドラム。",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/414bwNsjpEL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/414bwNsjpEL._SL500_.jpg"
+        },
         {
           "id": "hatenablog://entry/4207112889948982115",
           "author": null,
@@ -11129,16 +11129,6 @@
           "wordCount": 1425,
           "title": "Item2vecを用いた商品レコメンド精度改善の試み",
           "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2022/09/f7c4902a-ogp.png"
-        },
-        {
-          "id": "22391",
-          "author": null,
-          "description": "この記事は「連載：技術基盤強化プロジェクト「RFS」の現在と未来」として書かれたものです。 こんにちは、メルカリの Transaction チームでバックエンドエンジニアをしている @oklahomer です。今回は、各 […]",
-          "link": "https://engineering.mercari.com/blog/entry/microservices-for-computational-logic/",
-          "publishedOn": "2022-10-03T15:13:53.000Z",
-          "wordCount": null,
-          "title": "クライアント・サーバサイドに分散する計算ロジックのマイクロサービス化",
-          "imageUrl": null
         }
       ]
     },
