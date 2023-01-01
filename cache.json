@@ -5985,21 +5985,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fufufukakaka/20221005/20221005140730.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889916589207",
-          "author": null,
-          "description": "こんにちは、サーバーサイドエンジニアをしつつ、最近はAndroid開発初学者のhyogaです。\n入門してからそろそろ1年経とうとしているので、もう初学者と言えないかもしれないですね。\nクックパッドでは、開発を効率的に行うために、様々な仕組みやツールが導入されています。\nこの記事ではクックパッドでのAndroidアプリの開発中からアプリのリリースまでに使われる以下のような仕組みやツールについて広くお伝えできればと思います。\nFlipper\n開発者用のデバッグツール\nAndroid StudioのFile and Code Templates\nhaneda: 開発中のアプリを簡単にインストールできる仕組み\nおわりに\nFlipper\nFlipper\nMeta社の作っているFlipperというツールです。\nクライアント側でセットアップし、使いたいPluginごとの対応が必要ですが\n対応さえ済んでしまえばFlipperを開くだけで、以下の内容などが見れるようになります。\nNetwork\nShared Preferences\nLayout\nDatabase\nなど\nネットワークViewerでは、\nAPIリクエストをmockして特定のAPIリクエストでエラーを起こしたり、レスポンスを任意の値に置き換えたりすることができます。\nAPIリクエストエラー時の挙動が簡単に確認できたりして、とても便利ですね。\nAPIレスポンスを書き換えている様子 \n モックされたAPIレスポンスにより部分的にエラーになっている様子\n\n\n\n\n \n \n\n\n\n\n\n他にもShared Preferencesの内容を確認して、書き換えたりもできます。\nクックパッドのAndroidエンジニアの中では必須ツールになっています。\nShared Preferencesの中身を書き換えている様子\n開発者用のデバッグツール\nデバッグビル…",
-          "link": "https://techlife.cookpad.com/entry/2022/10/04/140033",
-          "publishedOn": "2022-10-04T05:00:33.000Z",
-          "wordCount": null,
-          "title": "Androidアプリ開発を効率的に行うための仕組み",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cd_glacier/20220909/20220909171201.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cd_glacier/20220909/20220909171201.png"
         }
       ]
     },

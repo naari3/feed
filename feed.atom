@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-01T16:01:51.084Z</updated>
+    <updated>2023-01-01T17:01:44.909Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -18406,55 +18406,6 @@ blog.hatenablog.com
 ブログで使用しているカテゴリーの数が多い場合に、スマートフォン版の編集画面にて「下書き保存する」ボタンや「ゴミ箱に入れる」ボタンにカテゴリーの表示が重なっていた不具合を修正しました。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Androidアプリ開発を効率的に行うための仕組み]]></title>
-        <id>hatenablog://entry/4207112889916589207</id>
-        <link href="https://techlife.cookpad.com/entry/2022/10/04/140033"/>
-        <updated>2022-10-04T05:00:33.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、サーバーサイドエンジニアをしつつ、最近はAndroid開発初学者のhyogaです。
-入門してからそろそろ1年経とうとしているので、もう初学者と言えないかもしれないですね。
-クックパッドでは、開発を効率的に行うために、様々な仕組みやツールが導入されています。
-この記事ではクックパッドでのAndroidアプリの開発中からアプリのリリースまでに使われる以下のような仕組みやツールについて広くお伝えできればと思います。
-Flipper
-開発者用のデバッグツール
-Android StudioのFile and Code Templates
-haneda: 開発中のアプリを簡単にインストールできる仕組み
-おわりに
-Flipper
-Flipper
-Meta社の作っているFlipperというツールです。
-クライアント側でセットアップし、使いたいPluginごとの対応が必要ですが
-対応さえ済んでしまえばFlipperを開くだけで、以下の内容などが見れるようになります。
-Network
-Shared Preferences
-Layout
-Database
-など
-ネットワークViewerでは、
-APIリクエストをmockして特定のAPIリクエストでエラーを起こしたり、レスポンスを任意の値に置き換えたりすることができます。
-APIリクエストエラー時の挙動が簡単に確認できたりして、とても便利ですね。
-APIレスポンスを書き換えている様子 
- モックされたAPIレスポンスにより部分的にエラーになっている様子
-
-
-
-
- 
- 
-
-
-
-
-
-他にもShared Preferencesの内容を確認して、書き換えたりもできます。
-クックパッドのAndroidエンジニアの中では必須ツールになっています。
-Shared Preferencesの中身を書き換えている様子
-開発者用のデバッグツール
-デバッグビル…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>
