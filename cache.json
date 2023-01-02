@@ -5880,21 +5880,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773"
-        },
-        {
-          "id": "hatenablog://entry/4207112889924719910",
-          "author": null,
-          "description": "こんにちは。研究開発部の深澤(@fufufukakaka)です。\n 本記事ではクックパッドマートにおける item-to-item レコメンデーションについて、その概要とアルゴリズムの変遷についてお話したいと思います。\nitem-to-item レコメンデーションとは\nレコメンデーションにはいくつかタスクが存在しますが、今回はその中でも item-to-item レコメンデーションについてお話します。\nitem-to-item レコメンデーションでは、「ある商品について、その商品を軸におすすめできるアイテム」を表出します。表現の仕方はサービスによって様々ですが、よく この商品を買っている人にはこちらもおすすめです ,  この商品に関連する商品 などと表現されています。\nさて、その item-to-item レコメンデーションの中にも実は更に種類があります。それは商品間のスコア(距離,類似度,etc) をどの軸で表現するか、です。大きく分けて以下の2種類になるかと思います。\nある商品について、その商品に関する行動データ(商品a を買った後によく商品b が買われている、など) を利用してスコアを計算する行動データを使った方式。 この商品を買っている人にはこちらもおすすめです といったレコメンドを実現する際に選択されます\n\n\n行動データを使って似ている商品を出すことを目的としたモデルもあります\n商品名や商品画像を使って商品間の類似度を使うコンテンツデータを使った方式。この方式でおすすめ商品を表出している場合は この商品に関連する商品 に適したレコメンドになります\n今回は item-to-item レコメンデーションかつ行動データを使ったモデルの話になります。\nクックパッドマートにおける item-to-item レコメンデーション\nクックパッドマートでは早くから item-to-…",
-          "link": "https://techlife.cookpad.com/entry/cookpad-mart-item-recommendation",
-          "publishedOn": "2022-10-05T06:00:00.000Z",
-          "wordCount": null,
-          "title": "クックパッドマートにおける item-to-item レコメンデーションの変遷",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fufufukakaka/20221005/20221005140730.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fufufukakaka/20221005/20221005140730.png"
         }
       ]
     },
@@ -6839,7 +6824,18 @@
       "title": "えびです",
       "feedUrl": "https://note.com/ebideath/rss",
       "siteUrl": "https://note.com/ebideath",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/ebideath/n/nb3bd23214dba",
+          "author": null,
+          "description": "こんちわ\nYOー\n続きをみる",
+          "link": "https://note.com/ebideath/n/nb3bd23214dba",
+          "publishedOn": "2023-01-02T17:20:29.000Z",
+          "wordCount": null,
+          "title": "久しぶり！ノート",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "大腸菌デリバリーサービス",
