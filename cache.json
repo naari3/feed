@@ -1627,21 +1627,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20221027/20221027191123.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889924498911",
-          "author": null,
-          "description": "I couldn't find a list of test patterns in the test pattern generator, so I changed the backugroundid and made it output video. To get the actual image, TPG was written to DRAM using VDMA and read and saved by the CPU, BackgroundId(0x0020) was changed from 0x01 to 0x13. No pass-through or video output patterns are implemented.\n映像伝送とかカメラとか使う時絶対テストで使うIPですが，これのパターン一覧を出してみました．TPGはこれらのテスト画像を出力できると言っていますが実際の映像はデータシートに乗っていません．\nhttps://docs.xilinx.com/r/en-US/pg103-v-tpg/Register-Space\nVideo input pass through\nHorizontal ramp\nVertical ramp\nTemporal ramp\nFlat fields (red, green, blue, black and white)\nCombined vertical and horizontal ramp\nColor bars\nColor sweep\nTartan bars\nDisplayPort\nZone plate\nCross hairs\nCross hatch\nSolid box\nMotion effect for ramps, zone plate, and solid box\n実際の画像をしりたかったのでTPGをV…",
-          "link": "https://fumimaker.net/entry/2022/10/04/221726?utm_source=feed",
-          "publishedOn": "2022-10-04T13:17:26.000Z",
-          "wordCount": 674,
-          "title": "Xilinx Test Pattern Generatorのパターン画像",
-          "enclosure": {
-            "url": "https://user-images.githubusercontent.com/25518367/148981929-cd707e1b-ba47-48d3-909a-3f235f0007d2.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://user-images.githubusercontent.com/25518367/148981929-cd707e1b-ba47-48d3-909a-3f235f0007d2.jpg"
         }
       ]
     },
