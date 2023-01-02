@@ -24881,27 +24881,6 @@ item-to-item レコメンデーションでは、「ある商品について、�
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">音声入力はWindows11とRelaconの組み合わせにすることでものすごく仕組みがシンプルになりました</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2022/10/05/091435" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>先日紹介したブルートゥースで繋がるパソコン用のリモコン、Relaconですが、おかげさまで日々愛用しています。
-
-
-エレコム トラックボールマウス ハンディタイプ Relacon メディアコントロールボタン搭載 スタンド付 静音 Bluetooth ブラック M-RT1BRXBK
-エレコム
-Amazon
-そしてこのリモコンの一番真ん中のメディアボタンに、私はwindowsの音声入力のキーを今割り当てているので、これをポチポチとオンオフすることで、音声入力がとても楽にできるようになりました。
-Windows 11の音声入力の最大の利点は何かというと同音異義語の変換がおそらくほかのいくつかの音声入力の中で一番優秀だということです。一つだけ難点を挙げるとしたらやたらと句読点が入ってしまうので、句読点を何度か削除する必要があるんですが、やっていて分かるのですが、削除する方が入れるよりは簡単なので、まあ入れすぎはいいことにします。
-そうすると、このリモコンとあと矢印キーと削除キーがあれば、ほとんどキーボードを使わなくても入力ができるようになりました。
-しかも家の中であれば、ノートパソコン付属のマイクで、ほとんど間違えずに拾ってくれるので、それも楽です。昔は色々複雑な機器を使っていたのですが、ずいぶんシンプルになったなと思います。 9月に2週間ほどWindows11の音声入力が使えないことがありました。が、またそういう事が無いことを願っています。</span>
-                  </div>
-                  <img src="https://m.media-amazon.com/images/I/41VwGFNjXeL._SL500_.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -24965,64 +24944,11 @@ JRAより海外のブックメーカーの方が日本馬のオッズが高い�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
-              rel="noopener">ボクココ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Rails での N+1 の見つけ方と dependent 指定の選択に関して</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2022/10/05/091310" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ども、@kimihom です。
-
-Rails アプリを作っていて「遅くなったな」と感じる場合、真っ先に原因となりうるのが N+1 なコードを書いてしまっていることだろう。その時の理想の対応は何か、考える機会があったのでブログとしてまとめておく。
-モデル例
-まずわかりやすいようにこういうクラスを作ったとしよう。
-**Company**
-id
-name
-
-has_many :users, dependent: :delete_all | destroy | nullify
-
-**User**
-id
-name
-company_id
-
-belongs_to :contract
-実際に使う時のサンプルコード
-company &#x3D; Company.create(name: &quot;サンプル株式会社&quot;)
-user &#x3D; company.users.create(name: &quot;斎藤太郎&quot;)
-
-
-
-N+1 の概念
-今日の内容は N+1 問題なので、まずこれに関して説明しよう。上記の関係があったときに、たとえば以下のようなコードを書いたとしよう。
-users &#x3D; User.all
-
-users.each do |u|
-  puts users.company.id
-end
-
-# User Load (0.6ms)  SELECT &quot;users&quot;.* FROM &quot;users&quot;
-# Contract Load (1.1ms)  SELECT &quot;contracts&quot;.* FROM &quot;contracts&quot; WHERE &quot;contracts&quot;.&quot;id&quot; &#x3D; $1 LIMIT $2  [[&quot;id&quot;, 1], [&quot;LIMIT&quot;, 1]]
-# Contract Load (1.1ms)  SELECT &quot;contracts&quot;.* FROM &quot;contracts&quot; WHERE &quot;contracts&quot;.&quot;id&quot; &#x3D; $1 …</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221005/20221005091141.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-02T12:02:12.657Z">2023-01-02T12:02:12.657Z</time>
+    <time id="build-timestamp" datetime="2023-01-02T13:05:44.558Z">2023-01-02T13:05:44.558Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
