@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-03T12:02:17.619Z</updated>
+    <updated>2023-01-03T13:06:21.525Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -100,6 +100,28 @@ www.nicovideo.jp
 要約する…]]></summary>
         <author>
             <name>竹達アーカイブ通信</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Secretlint 6リリース: .bash_historyや.zsh_historyに残ったトークンをマスキングする]]></title>
+        <id>https://efcl.info/2023/01/03/secretlint-6/</id>
+        <link href="https://efcl.info/2023/01/03/secretlint-6/"/>
+        <updated>2023-01-03T10:18:00.000Z</updated>
+        <summary type="html"><![CDATA[ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlint v6をリリースしました。
+Release v6.0.1 · secretlint/secretlint
+Secretlintは secretlint "**/*"のようにglobやファイルを指定して実行すると、ファイルに含まれる機密情報を見つけて標準出力に表示します。
+一方で、SecretlintはESLintやtextlintなどと違って、--fixといった自動修正はできません。
+なぜなら、APIトークンなどを見つけて消しても、ただ単に壊れるだけだからです。
+そのため、見つけた機密情報は報告して、ユーザーがそれを手動で修正する必要があります。
+たとえば、ソースコードにハードコードするのではなく、環境変数などで受け取るように変更するといった修正をします。
+secretlint/credentials-is-secret.md at master · secretlint/secretlint · GitHub
+多くの場合、機密情報を見つけても自動修正はできないのですが、.bash_historyや.zsh_historyに残ってしまった機密情報は自動的に削除したりマスキングしても問題ないことに気づきました。
+ヒストリーファイルに残ったAPIトークンを自動修正するために、Secretlint v6では --format=mask-result というフォーマッターが追加されています。
+使い方: .zsh_historyの機密情報をマスキングする
+secretlintパッケージ自体にはルールは含まれていませんが、@secretlint/quick-startパッケージには推奨ルールが同梱されているので、@secretlint/quick-startを使ったやり方を紹介します。
+HOMEディ…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

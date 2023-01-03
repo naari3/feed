@@ -9509,6 +9509,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/01/03/secretlint-6/",
+          "author": null,
+          "description": "ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlint v6をリリースしました。\nRelease v6.0.1 · secretlint/secretlint\nSecretlintは secretlint \"**/*\"のようにglobやファイルを指定して実行すると、ファイルに含まれる機密情報を見つけて標準出力に表示します。\n一方で、SecretlintはESLintやtextlintなどと違って、--fixといった自動修正はできません。\nなぜなら、APIトークンなどを見つけて消しても、ただ単に壊れるだけだからです。\nそのため、見つけた機密情報は報告して、ユーザーがそれを手動で修正する必要があります。\nたとえば、ソースコードにハードコードするのではなく、環境変数などで受け取るように変更するといった修正をします。\nsecretlint/credentials-is-secret.md at master · secretlint/secretlint · GitHub\n多くの場合、機密情報を見つけても自動修正はできないのですが、.bash_historyや.zsh_historyに残ってしまった機密情報は自動的に削除したりマスキングしても問題ないことに気づきました。\nヒストリーファイルに残ったAPIトークンを自動修正するために、Secretlint v6では --format=mask-result というフォーマッターが追加されています。\n使い方: .zsh_historyの機密情報をマスキングする\nsecretlintパッケージ自体にはルールは含まれていませんが、@secretlint/quick-startパッケージには推奨ルールが同梱されているので、@secretlint/quick-startを使ったやり方を紹介します。\nHOMEディ…",
+          "link": "https://efcl.info/2023/01/03/secretlint-6/",
+          "publishedOn": "2023-01-03T10:18:00.000Z",
+          "wordCount": 681,
+          "title": "Secretlint 6リリース: .bash_historyや.zsh_historyに残ったトークンをマスキングする",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2022/12/31/open-source-in-2022/",
           "author": null,
           "description": "2022年のオープンソース活動の振り返り記事です。\n今までの振り返りの一覧です。\n今年のオープンソース活動振り返り @ 2021 | Web Scratch\n今年のオープンソース活動振り返り @ 2020 | Web Scratch\n今年のOSS活動振り返り @ 2019 | Web Scratch\n今年のOSS活動振り返り @ 2018 | Web Scratch\n今年のOSS活動振り返り @ 2017 | Web Scratch\n今年のOSS活動振り返り @ 2016 | Web Scratch\n今年のOSS活動振り返り @ 2015 | Web Scratch\n今年のOSS活動振り返り @ 2014 | Web Scratch\n2022年のGitHubのPublicなContributionsは7000~8000ぐらいを推移していました。\n\nPrivateリポジトリも含めると大体1.5倍ぐらいなので、あんまり変わってない感じがします。\nデータの取得には次のツールを使いました。\nGitHub Contributions Chart Generator\nIssue/PR\n作ったリポジトリ数: 53\n作ったIssue: 231\n作ったPR: 318\nグラフにすると次のようになってます。\nhttps://notion-plotly.netlify.app/line.html?Repository.y=95,112,95,111,81,98,69,85,53&Repository.x=2014,2015,2017,2020,2019,2016,2018,2021,2022&Issue.y=236,299,485,379,249,392,245,226,231&Issue.x=2014,2015,2017,2020,2019,2016,2018,2021,2022&PR.y=36…",
