@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-04T10:01:56.349Z</updated>
+    <updated>2023-01-04T11:01:47.651Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[特徴的な素因数分解アルゴリズムを実装してみる]]></title>
+        <id>hatenablog://entry/4207112889951073765</id>
+        <link href="https://inaz2.hatenablog.com/entry/2023/01/04/191300"/>
+        <updated>2023-01-04T10:13:00.000Z</updated>
+        <summary type="html"><![CDATA[「単純な素因数分解アルゴリズムを実装してみる」 では、試し割り、Pollard-Rhoアルゴリズム、フェルマー法、Common Factor Attacksといった素因数分解アルゴリズムの実装と評価を行った。
+ここでは、上記以外の素因数分解アルゴリズムをPythonで実装し、一般的なPCで解くことができるbit数などを調べてみる。
+環境
+$ uname -a
+Linux vm-ubuntu64 5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+
+$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04.1 LTS
+Release:        22.04
+Codename:       jammy
+
+$ grep "processor\|model name" /proc/cpuinfo 
+processor   : 0
+model name  : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+processor   : 1
+model name  : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+processor   : 2
+model name  : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+processor   : 3
+model name  : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+素数の生成
+素数とその積については、「単純な素因数分解アルゴリ…]]></summary>
+        <author>
+            <name>ももいろテクノロジー</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「noteマガジン廃刊」のお知らせと、新年のご挨拶。]]></title>
         <id>https://note.com/kazumakawauchi/n/nffda8bf9eaef</id>
@@ -18278,29 +18311,6 @@ youtu.be
         <summary type="html"><![CDATA[仕事の都合上、Django を覚える必要が出たので、その素振り課題が欲しい + スプラトゥーンを強くなりたいというニーズが出会って スプラトゥーン 3 反省会会場 を作りました。  色々技術的な挑戦をしたのでそのまとめをします。 スプラトゥーン…]]></summary>
         <author>
             <name>blog.ojisan.io's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アイリスオーヤマのクッキングケトルとホットクックを組み合わせるとものすごく便利になります]]></title>
-        <id>hatenablog://entry/4207112889925209919</id>
-        <link href="https://katsumakazuyo.hatenablog.com/entry/2022/10/07/080011"/>
-        <updated>2022-10-06T23:00:11.000Z</updated>
-        <summary type="html"><![CDATA[アイリスオーヤマにはクッキングケトルという地味な商品があります。まぁ、小鍋の電気版です。40－100度の好きな温度で好きな分数をセットすることができます。
-
-
-アイリスオーヤマ 電気ケトル ケトル おりょうり 丸洗い可能 湯切り機能付 丸洗い可 温度調整40℃~100℃ 1L 1000ml マグネット式コード マルチポット クッキングケトル ICK-M1200-B ブラック
-アイリスオーヤマ(IRIS OHYAMA)
-Amazon
-そして、これ、何に役に立つかというと、いろいろな用途があるのですが、私が一番気に入っているのが
-「ホットクックで一度作った食べものを冷蔵庫に入れたときに、翌日温め直す機械」
-です。ホットクックだと、鍋が一人分の温め直しには大きすぎるし、時間もかかるし、だいいち、温め過ぎるのですが、このケトルで
-「80度8分」
-とかにセットすると、翌日のバラ肉大根とかも上手にあたためてくれます。ホットクックで作るような水分量の多い食べ物は、電子レンジだとどうしてもむらにあたたまるので鍋で温め直しをするほうが好きなのですが、それがぐっと楽になりました。
-これまでも、同じコンセプトでは煮込み自慢とか、パナソニックの圧力鍋などがありましたが、洗う部品も少ないし、コンパクトなので台所でもじゃまになりません。
-これを使って、ロイヤルミルクティーもつくります。80度とかにセットすると、沸騰することがないので、そばについている必要がないからです。
-もともと、旅行用に買ったのですが、便利なので、レギュラーになりました。そんなに高くない商品なので、こういうものがほしいなーーー、と思っている人にはおすすめです。]]></summary>
-        <author>
-            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
         </author>
     </entry>
 </feed>
