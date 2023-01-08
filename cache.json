@@ -5661,21 +5661,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889926480985",
-          "author": null,
-          "description": "Fluentd実践入門をあらためて手元でぱらぱらやってたら、しまった! この話をどこかにちょっとでも書こうと思ってたのに忘れてた! という話が出てきたので、忘れないうちに書いて放流する。\nflush_modeとはなにか\nFluentdのOutputプラグインには<buffer>セクションで指定できるflush_modeというパラメータがあって、これはOutputプラグインがどういう基準でバッファ内のデータを書き出す(writeメソッドを呼ぶ)かという戦略をコントロールする。有効な値はdefault、immediate、interval、lazyの4つ。\nただし多くのケースでこのパラメータは明示的には指定されていないはず。というのも、デフォルト値であるところのdefaultの場合には、<buffer>セクションに指定されている他のパラメータ((と、例外的に<buffer>セクションの外側に指定されているflush_intervalも見ている。これはFluentd v0.12以前のプラグインの使い方をそのまま踏襲している設定について、動作を壊さないための措置。))を確認して適切なモードを自動的に選ぶようになっているからだ。たとえばバッファのチャンクキーにtimeが指定されている場合にはlazyが選ばれる。\nといったようなことは「Fluentd実践入門」のp166-167あたりにもちろん書いてある。みんな買って読もう!(宣伝)\nflush_mode immediateとは何か\nところで、flush_modeのうちには、他のパラメータをどうセットしても暗黙には選ばれないものがあって、それがimmediateだ。これはFluentd v1系*1における完全に新しい機能・挙動なので、特に過去の設定パターンとの互換性を考える必要がないため。\nこれがどう動作するかというと、バッファリングは…",
-          "link": "https://tagomoris.hatenablog.com/entry/2022/10/11/145838",
-          "publishedOn": "2022-10-11T05:58:38.000Z",
-          "wordCount": 305,
-          "title": "Fluentdのflush_mode immediateはいつ使うのか",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
