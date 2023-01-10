@@ -5633,6 +5633,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889952571238",
+          "author": null,
+          "description": "ちょっとTwitterに書いたら食い付いてくる人が多かったので、ではアピールしとこうと思った。\n\n象印の加湿器、とにかく手入れが簡単でこれ以外の加湿器はもう二度と買う気がないというくらい最高\n— tagomoris (@tagomoris) 2023年1月7日\n  \nTL;DR\n衛生面などを考えると加熱式加湿器*1を使いたい\n加熱式加湿器は加熱部に残留物が結晶化して固まるので手入れがめちゃ面倒\n象印のやつは電熱ポットと同じなので、たまにクエン酸ぶちこむだけで超ラク、最高です\n加湿器運用の手間を減らしたい人にとにかくお勧めです\n自分が使ってるのはこれ。今年大きいのを買い足した。旧モデルの小さい方とあわせて2台とも使ってます。\n\n\n\nEE-DC35・50 | 加湿器 | 生活家電 ｜ 商品情報 ｜ 象印マホービン\n加湿器を加熱式のに替えるとき、某社従来型*2と象印の(2020年モデル)と2台買ったんだけど、手入れの手間があまりに違いすぎて従来型のは春先に廃棄、今年象印のを買い足しました。当分このタイプしか買わないつもり。以下詳細。\nなお、この記事で「従来型の加熱式加湿器」と表現する場合、これは加湿器本体と水タンクが分離する形で、かつ加湿器本体側に(あまり大きくない)加熱部が存在するもののことを指します。加熱式加湿器で象印以外のものはたいていこのタイプのはず*3。\n加熱式の加湿器を使いたい\n加湿器にはいくつかタイプがあるが、前はそのうち超音波式のものをメインで使っていた。ただしこれは加湿器がカビたりすると、その菌をそのまま水蒸気といっしょに空気中に放出したりすることがあって、手入れをきちんとしないと健康によくないという話がある。気化式も同じ問題があるとされる。あちこちでいっぱい書かれてるので詳しくはググれ。\nまた超音波式は水道水の不純物もそのまま水蒸気にする。このため最終的に室内…",
+          "link": "https://tagomoris.hatenablog.com/entry/2023/01/10/093558",
+          "publishedOn": "2023-01-10T00:35:58.000Z",
+          "wordCount": null,
+          "title": "象印の加湿器が最高で当面これしか使いたくないという話",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889946407985",
           "author": null,
           "description": "……ことがたまにあって、なんでかなと思ったけどgit checkoutなんかでstoryboardのリビジョンをXcode外部から操作してると起きるのかなという気がする。アプリが起動しかけてから以下のようなエラーメッセージ出して落ちるのがタチ悪い。\n\"Could not find a storyboard named 'Main' in bundle NSBundle\"\n\n\nClean Build Folderとかやっても直らないので、以下のようにして直す。\nMain.storyboardを選択して \"Delete\" -> \"Remove Reference\"\n外部でやる必要のあるgit操作など実行\n\"File\" -> \"Add File to ...\" してstoryboardを再度追加\n起きるたびに時間を無駄にしてる気がするんでメモ。",
@@ -7780,6 +7795,16 @@
       "feedUrl": "https://note.com/sizes/rss",
       "siteUrl": "https://note.com/sizes",
       "articles": [
+        {
+          "id": "https://note.com/sizes/n/n8a8eade01adc",
+          "author": null,
+          "description": "論理学の入門本を読んだことなら知っていると思うけれど、論理学って恐ろしくつまらないことをつぶさに説明する学問だ。「好きじゃない」は嫌いということを意味しないとか、「好きじゃない」と「好き以外のどれか」は同じ、とか。\n人文学って多分に主観があるし、本なんかはそれこそ著者の仮説や持論で成り立っているものが多い。だからこそ面白いのかもしれないけれど、翻って論理学って学問のための学問であって、正確さを炙り出すツールでしかない。だから主観がなにもないし、主観に由来したスリルとか考察の余地がなにも無いのだ。\n続きをみる",
+          "link": "https://note.com/sizes/n/n8a8eade01adc",
+          "publishedOn": "2023-01-10T00:13:17.000Z",
+          "wordCount": null,
+          "title": "主観が抜かれたものはつまらない？",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/95302910/rectangle_large_type_2_2acd0b7c825911942342b6ca59976901.jpeg?width=800"
+        },
         {
           "id": "https://note.com/sizes/n/n1d2a44b9c3f5",
           "author": null,
@@ -11032,6 +11057,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2023-01-10-shiren-5-plus",
+          "author": null,
+          "description": "年始にシレン5 Plusを原始99Fクリアまで遊んだ。",
+          "link": "https://r7kamura.com/articles/2023-01-10-shiren-5-plus",
+          "publishedOn": "2023-01-09T15:00:00.000Z",
+          "wordCount": null,
+          "title": "『不思議のダンジョン 風来のシレン5 Plus フォーチュンタワーと運命のダイス』をやった",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2022-12-26-good-buy-2022",
           "author": null,
