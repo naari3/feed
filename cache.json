@@ -6107,6 +6107,21 @@
       "siteUrl": "https://www.bokukoko.info/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889953174031",
+          "author": null,
+          "description": "ども、@kimihom です。\n\nTwitterシェアのURLを手動で作るケースで、正しく動かないシェアの実装方法をよく見かけました。最新版として、正しくシェアできた方法を本記事に記します。\nNG シェアURL\nまずこの方法は正しく動かないとして URL をシェアします。\nhttp://twitter.com/share?...\nこの書き方は、PCのブラウザだけを見ると問題なく見えます。\nしかし、Android でこのURLを叩くと、「入力した内容の検索結果はありませんでした。しばらくしてからやり直してください。」というメッセージでシェアができません！\n\nOK シェアURL\n正しく動作するは以下です。\nhttps://twitter.com/intent/tweet?...\nより詳細を示します。(Ruby リンクを作る場合)\nurl = \"https://www.bokukoko.info/\"\n\ntext = \"こんにちは%0Aテストです。\" # 改行は %0A を指定\nencodedText = URI.encode_www_form_component(text)\n\ntags = [\"テスト１\", \"テスト2\"]\nhashtags = URI.encode_www_form_component(tags.join(\",\"))\n\n\"https://twitter.com/intent/tweet?url=#{url}&text=#{encodedText}&hashtags=#{hashtags}\"\n\n\n\n終わりに\nTwitterシェアで無駄に時間をかけてしまわぬよう、このブログ記事を参考にURLを生成いただければ幸いです。\nシェアするものがなければ、ぜひ気に入った俳句をシェアしてみてはいかがでしょう？\nwww.yomilab.com",
+          "link": "https://www.bokukoko.info/entry/2023/01/11/152635",
+          "publishedOn": "2023-01-11T06:26:35.000Z",
+          "wordCount": null,
+          "title": "TwitterシェアのURL作成 プログラム",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20230111/20230111152311.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20230111/20230111152311.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889949220369",
           "author": null,
           "description": "ども、@kimihom です。\n\n今年ももう終わりですね。\n去年、ボクココで書いた記事数は39記事でした。そして、今年も39時目となるこの記事を公開します。サンキュー！\n大量の警告通知\n今年、SwiftUI4がリリースされ、SwiftUI3で書いていたコードから大量の警告が届きました。\nXcodeでアプリを繋ぎ、アプリを色々とタップすると、以下の文言が大量に出力されるようになりました。\nPublishing changes from within view updates is not allowed, this will cause undefined behavior.\n上記の文言で Google 検索すると、英語でさまざまな対応方法が記されています。私が調べた結果、YouTubeの配信が最もわかりやすく解説してましたので、紹介します。英語ではありますが、ソースコードを読むだけでも理解が進みました。\n\n\n\nコード改善\nまず、上記ビデオを見ると、最終的には sync 関数を自前定義しています。Boolのみの定義であるため、これを他の型でも sync できるように改善しました。\nextension View {\n    func sync<T: Equatable>(_ published: Binding<T>, with binding: Binding<T>) -> some View {\n        self\n            .onChange(of: published.wrappedValue) { published in\n                binding.wrappedValue = published\n            }\n            .onChange(of: binding.wrappedValue) { b…",

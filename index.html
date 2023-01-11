@@ -78,6 +78,54 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.bokukoko.info/" target="_blank"
+              rel="noopener">ボクココ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">TwitterシェアのURL作成 プログラム</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.bokukoko.info/entry/2023/01/11/152635" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ども、@kimihom です。
+
+TwitterシェアのURLを手動で作るケースで、正しく動かないシェアの実装方法をよく見かけました。最新版として、正しくシェアできた方法を本記事に記します。
+NG シェアURL
+まずこの方法は正しく動かないとして URL をシェアします。
+http://twitter.com/share?...
+この書き方は、PCのブラウザだけを見ると問題なく見えます。
+しかし、Android でこのURLを叩くと、「入力した内容の検索結果はありませんでした。しばらくしてからやり直してください。」というメッセージでシェアができません！
+
+OK シェアURL
+正しく動作するは以下です。
+https://twitter.com/intent/tweet?...
+より詳細を示します。(Ruby リンクを作る場合)
+url &#x3D; &quot;https://www.bokukoko.info/&quot;
+
+text &#x3D; &quot;こんにちは%0Aテストです。&quot; # 改行は %0A を指定
+encodedText &#x3D; URI.encode_www_form_component(text)
+
+tags &#x3D; [&quot;テスト１&quot;, &quot;テスト2&quot;]
+hashtags &#x3D; URI.encode_www_form_component(tags.join(&quot;,&quot;))
+
+&quot;https://twitter.com/intent/tweet?url&#x3D;#{url}&amp;text&#x3D;#{encodedText}&amp;hashtags&#x3D;#{hashtags}&quot;
+
+
+
+終わりに
+Twitterシェアで無駄に時間をかけてしまわぬよう、このブログ記事を参考にURLを生成いただければ幸いです。
+シェアするものがなければ、ぜひ気に入った俳句をシェアしてみてはいかがでしょう？
+www.yomilab.com</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20230111/20230111152311.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
               rel="noopener">honeylab&#x27;s blog</a></h3>
           <section class="articles-per-source">
@@ -25127,7 +25175,7 @@ RTX 3060
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-11T06:01:50.367Z">2023-01-11T06:01:50.367Z</time>
+    <time id="build-timestamp" datetime="2023-01-11T07:01:45.475Z">2023-01-11T07:01:45.475Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

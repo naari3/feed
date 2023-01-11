@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-11T06:01:50.426Z</updated>
+    <updated>2023-01-11T07:01:45.527Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[TwitterシェアのURL作成 プログラム]]></title>
+        <id>hatenablog://entry/4207112889953174031</id>
+        <link href="https://www.bokukoko.info/entry/2023/01/11/152635"/>
+        <updated>2023-01-11T06:26:35.000Z</updated>
+        <summary type="html"><![CDATA[ども、@kimihom です。
+
+TwitterシェアのURLを手動で作るケースで、正しく動かないシェアの実装方法をよく見かけました。最新版として、正しくシェアできた方法を本記事に記します。
+NG シェアURL
+まずこの方法は正しく動かないとして URL をシェアします。
+http://twitter.com/share?...
+この書き方は、PCのブラウザだけを見ると問題なく見えます。
+しかし、Android でこのURLを叩くと、「入力した内容の検索結果はありませんでした。しばらくしてからやり直してください。」というメッセージでシェアができません！
+
+OK シェアURL
+正しく動作するは以下です。
+https://twitter.com/intent/tweet?...
+より詳細を示します。(Ruby リンクを作る場合)
+url = "https://www.bokukoko.info/"
+
+text = "こんにちは%0Aテストです。" # 改行は %0A を指定
+encodedText = URI.encode_www_form_component(text)
+
+tags = ["テスト１", "テスト2"]
+hashtags = URI.encode_www_form_component(tags.join(","))
+
+"https://twitter.com/intent/tweet?url=#{url}&text=#{encodedText}&hashtags=#{hashtags}"
+
+
+
+終わりに
+Twitterシェアで無駄に時間をかけてしまわぬよう、このブログ記事を参考にURLを生成いただければ幸いです。
+シェアするものがなければ、ぜひ気に入った俳句をシェアしてみてはいかがでしょう？
+www.yomilab.com]]></summary>
+        <author>
+            <name>ボクココ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[父「父さんな、YouTubeで食っていこうと思うんだ」]]></title>
         <id>hatenablog://entry/4207112889953113204</id>
