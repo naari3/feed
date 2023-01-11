@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-10T23:01:47.286Z</updated>
+    <updated>2023-01-11T00:02:59.783Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -18443,43 +18443,6 @@ RTX 3060
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[curlでKeyless Signingする (3) - Signed Certificate Timestamp編]]></title>
-        <id>hatenablog://entry/4207112889920029575</id>
-        <link href="https://knqyf263.hatenablog.com/entry/2022/10/13/201913"/>
-        <updated>2022-10-13T11:19:13.000Z</updated>
-        <summary type="html"><![CDATA[はじめに
-SCTとは？
-sigstoreにおけるSCT
-SCTの確認
-CTログサーバの公開鍵取得
-Log IDの検証
-署名検証
-SCTのデータフォーマット
-sct_version
-signature_type
-timestamp
-entry_type
-signed_entry
-tbs_certificate
-extensions
-SCT署名対象の作成
-SCTの検証
-まとめ
-はじめに
-sigstoreのKeyless SigningをCosignコマンドを使わずに手動で頑張るシリーズの三本目です。誰にも望まれてないけどやりきります。
-curlでKeyless Signingする (1) - OpenID Connect編
-curlでKeyless Signingする (2) - Fulcio編
-curlでKeyless Signingする (3) - Signed Certificate Timestamp編 （本記事）
-curlでKeyless Signingする (4) - Rekor編
-curlでKeyless Signingする (5) - Verify編
-curlでKeyless Signingする (6) - Trillian編
-前回はFulcioで証明書の発行までを行いました。Fulcioから返された署名の中にSigned Certificate Timestamp (SCT) が含まれているので、今回はそれの検証をしてみます。シュッと終わらせるつもりがドチャクソハマったので1つの記事にしました。一つだけ言っておきたいのは手動でCLIで検証するとかわけのわからないことを言ってないでおとなしくプログラムを書いたほうが良いということです。
-あとKeylessとか言ってますがもはや関係なくてただのSCT検証になっています。ただCosignのコードを読んで挙動を理解した…]]></summary>
-        <author>
-            <name>knqyf263's blog</name>
         </author>
     </entry>
 </feed>
