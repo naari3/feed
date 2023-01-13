@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-13T17:02:15.537Z</updated>
+    <updated>2023-01-13T18:02:30.082Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -18491,28 +18491,6 @@ Amazon
         <summary type="html"><![CDATA[今週はお休み!!]]></summary>
         <author>
             <name>思い出したら書きます</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twilio での録音から Amazon Transcribe で話者判断]]></title>
-        <id>hatenablog://entry/4207112889928005495</id>
-        <link href="https://www.bokukoko.info/entry/2022/10/16/145408"/>
-        <updated>2022-10-16T05:54:08.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-先日の CallConnect リリースで、文字化した話者の判断ができるようになった。文字化を見た瞬間に、どちらが担当者で、どちらが顧客の発言かを、すぐに判断できるようになった。これにより、録音音声をわざわざ聞かなくとも、文字化を読むだけで内容をより正確に把握できるようになった。
-ここまでに至るには長いTwilioとの実装やりとり、そしてAmazon Transcribe への操作が必要で、本記事ではその流れについて紹介しようと思う。
-録音ファイルの自前管理
-まず音声を文字化をする上で、元の音声をどこに置くかを決める必要がある。これから始める場合には、Twilio が今年リリースした Twilio Voiceの通話録音向け外部ストレージ機能 を使うのが一番早い。Twilio 側で AWS S3 の認証情報を貼り付けるだけで、勝手に S3 へ書き出されるようになる。これが出てくる前までは、わざわざ録音をDLして新しく自前S3にアップロードさせる実装が必須であったが、便利になったものである。
-Twilio の標準の書き出し先が Amazon S3 である以上、音声の文字化も 同じ AWS にある Transcribe を使うというのは一般的な判断となろう。
-もちろん、Amazon Transcribe 以外にも音声を文字化する外部サービスは複数あるので、実際に文字化した時のクオリティに関しては事前に確認しておいた方がいいに違いない。
-Transcribe での文字化結果
-では Twilio から AWS S3 の録音URL を取ってきて、録音再生までできるようになったとした時、どんな流れで実装していくのかを簡単に示そう。
-Amazon Transcribe へリクエスト送信
-まずは録音URL を指定して、文字化するリクエストを送る。
-const…]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>

@@ -6225,21 +6225,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221020/20221020181749.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889928005495",
-          "author": null,
-          "description": "ども、@kimihom です。\n\n先日の CallConnect リリースで、文字化した話者の判断ができるようになった。文字化を見た瞬間に、どちらが担当者で、どちらが顧客の発言かを、すぐに判断できるようになった。これにより、録音音声をわざわざ聞かなくとも、文字化を読むだけで内容をより正確に把握できるようになった。\nここまでに至るには長いTwilioとの実装やりとり、そしてAmazon Transcribe への操作が必要で、本記事ではその流れについて紹介しようと思う。\n録音ファイルの自前管理\nまず音声を文字化をする上で、元の音声をどこに置くかを決める必要がある。これから始める場合には、Twilio が今年リリースした Twilio Voiceの通話録音向け外部ストレージ機能 を使うのが一番早い。Twilio 側で AWS S3 の認証情報を貼り付けるだけで、勝手に S3 へ書き出されるようになる。これが出てくる前までは、わざわざ録音をDLして新しく自前S3にアップロードさせる実装が必須であったが、便利になったものである。\nTwilio の標準の書き出し先が Amazon S3 である以上、音声の文字化も 同じ AWS にある Transcribe を使うというのは一般的な判断となろう。\nもちろん、Amazon Transcribe 以外にも音声を文字化する外部サービスは複数あるので、実際に文字化した時のクオリティに関しては事前に確認しておいた方がいいに違いない。\nTranscribe での文字化結果\nでは Twilio から AWS S3 の録音URL を取ってきて、録音再生までできるようになったとした時、どんな流れで実装していくのかを簡単に示そう。\nAmazon Transcribe へリクエスト送信\nまずは録音URL を指定して、文字化するリクエストを送る。\nconst…",
-          "link": "https://www.bokukoko.info/entry/2022/10/16/145408",
-          "publishedOn": "2022-10-16T05:54:08.000Z",
-          "wordCount": null,
-          "title": "Twilio での録音から Amazon Transcribe で話者判断",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221016/20221016145206.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221016/20221016145206.jpg"
         }
       ]
     },
