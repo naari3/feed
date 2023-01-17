@@ -6197,21 +6197,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221029/20221029120549.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889929213608",
-          "author": null,
-          "description": "ども、@kimihom です。\n\nRails の form_with を使っているだろうか？だいぶ前から form 系はフロントエンド側の実装に任せるというのが一般的になりつつあるが、やはり form_with でささっと作れる便利さは大きい。\nform_with サンプルコード\nja:\n  activerecord:\n    attributes:\n      item:\n        title: \"タイトル\"\n\n\n\n\n\n<%= form_with model: @item, url: item_path, method: :post, local: false, class: \"simple-form\" do |f| %>\n  <%= f.label :title, class: \"titleLabel\" %>\n  <%= f.text_field :title, class: \"title\", required: \"requierd\", maxlength: \"30\" %>\n\n  <%= f.submit \"更新\", data: { disable_with: '送信中', confirm: \"本当によろしいですか？\"}, class: \"update\" %>\n<% end %>\n\n\n\n\n\nclass ItemsController < ApplicationController\n  def new\n    @item = Item.new\n  end\n\n  def create\n    item = Item.create!(item_param)\n    render json: {result: \"ok\"}\n  rescue => e\n    render json: {result: \"ng\"}\n  end\n\n  private\n  def item_param\n    params.require(:item).permit(:title)\n  end\nend\n\n\n\n\n\n$(document).on(\"ajax:success\", '.simple-form', function(e){\n  let data = e.detail[0];\n  if (data.result == \"ok\") {\n    // success\n  } else {\n    alert(\"error\");\n  }\n});\n\n$(document).on(\"ajax:error\", function(e) {\n  alert(\"error\")\n});\n\n\n\nこのサンプルコードで色々なことが示されている。それぞれ見ていこう。\ntitle label\nconfig/locales/ja.yml にて、それぞれのモデルの attributes の名前を定義しておけば、自動でそれを見にいってくれる。form 送信でエラー時の表示の時など、単にフォームを入力するフォームとしてだけでなく使える。\nform_with model\nmodel に適したデータが既に入っていた場合、そのデータがフォームに入力されたフォームを作ってくれる。new だと新規なので少ないかもしれないが、edit の時はものすごく便利というか必須の指定となる。\nlocal: false\nこの指定により、ajax 経由で form 送信することを指定している。この指定がないと、ajax ではない通常の form 送信となるため、redirect_to でどこかに飛ばす必要が出てくる。\nlocal: false を指定することで、Ajax として$(document).on(\"ajax:success\", '.simple-form', function(e){ の イベントが発生する。そこで レスポンス内容を元に動作を定義することが可能となる。\nsubmit の disable_with, confirm\nform で実際に登録しようとするときに、disable_with はもはや必須と言えるかもしれない。form を1度クリックした時点で、もう一度クリックさせないようにするための設定となる。これをセットしておかないと、大切な処理をダブルクリックで2回連続実行されてしまうケースが発生する。\nconfirm は大切なform処理である場合、いいですかの確認が可能となる。必要に応じてこちらもセットしておくと便利なパラメータである。\n終わりに\nform に関する実装が一通り綺麗に実装されている。この美しさが Rails だと感じられる瞬間である。\nぜひ知らないことがあれば実装を試してもらえればと思う。",
-          "link": "https://www.bokukoko.info/entry/2022/10/20/181837",
-          "publishedOn": "2022-10-20T09:18:37.000Z",
-          "wordCount": 703,
-          "title": "Rails の form_with の submit 時に定義したいオプション",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221020/20221020181749.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221020/20221020181749.jpg"
         }
       ]
     },
@@ -9143,16 +9128,6 @@
           "wordCount": 1755,
           "title": "Released nerdctl v1.0",
           "imageUrl": "https://miro.medium.com/max/1200/1*WSX_ki-Bmu6CHoI5W1dBZw.png"
-        },
-        {
-          "id": "https://medium.com/p/90aff42c2610",
-          "author": "長谷川直哉",
-          "description": "",
-          "link": "https://medium.com/nttlabs/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88-%E7%94%BB%E5%83%8F%E5%BC%B7%E8%AA%BF%E3%83%A2%E3%83%87%E3%83%AB%E3%81%B8%E3%81%AEtest-timeadaptation%E3%81%AE%E9%81%A9%E7%94%A8%E6%A4%9C%E8%A8%BC-90aff42c2610?source=rss----74f667786e9f---4",
-          "publishedOn": "2022-10-20T09:12:46.000Z",
-          "wordCount": null,
-          "title": "インターンレポート: 画像強調モデルへのTest-timeAdaptationの適用検証",
-          "imageUrl": null
         }
       ]
     },

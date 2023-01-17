@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-17T21:02:30.588Z</updated>
+    <updated>2023-01-17T22:01:54.323Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -18297,100 +18297,6 @@ Cygames
 当然だが商用利…]]></summary>
         <author>
             <name>ximcoの部屋</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rails の form_with の submit 時に定義したいオプション]]></title>
-        <id>hatenablog://entry/4207112889929213608</id>
-        <link href="https://www.bokukoko.info/entry/2022/10/20/181837"/>
-        <updated>2022-10-20T09:18:37.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-Rails の form_with を使っているだろうか？だいぶ前から form 系はフロントエンド側の実装に任せるというのが一般的になりつつあるが、やはり form_with でささっと作れる便利さは大きい。
-form_with サンプルコード
-ja:
-  activerecord:
-    attributes:
-      item:
-        title: "タイトル"
-
-
-
-
-
-<%= form_with model: @item, url: item_path, method: :post, local: false, class: "simple-form" do |f| %>
-  <%= f.label :title, class: "titleLabel" %>
-  <%= f.text_field :title, class: "title", required: "requierd", maxlength: "30" %>
-
-  <%= f.submit "更新", data: { disable_with: '送信中', confirm: "本当によろしいですか？"}, class: "update" %>
-<% end %>
-
-
-
-
-
-class ItemsController < ApplicationController
-  def new
-    @item = Item.new
-  end
-
-  def create
-    item = Item.create!(item_param)
-    render json: {result: "ok"}
-  rescue => e
-    render json: {result: "ng"}
-  end
-
-  private
-  def item_param
-    params.require(:item).permit(:title)
-  end
-end
-
-
-
-
-
-$(document).on("ajax:success", '.simple-form', function(e){
-  let data = e.detail[0];
-  if (data.result == "ok") {
-    // success
-  } else {
-    alert("error");
-  }
-});
-
-$(document).on("ajax:error", function(e) {
-  alert("error")
-});
-
-
-
-このサンプルコードで色々なことが示されている。それぞれ見ていこう。
-title label
-config/locales/ja.yml にて、それぞれのモデルの attributes の名前を定義しておけば、自動でそれを見にいってくれる。form 送信でエラー時の表示の時など、単にフォームを入力するフォームとしてだけでなく使える。
-form_with model
-model に適したデータが既に入っていた場合、そのデータがフォームに入力されたフォームを作ってくれる。new だと新規なので少ないかもしれないが、edit の時はものすごく便利というか必須の指定となる。
-local: false
-この指定により、ajax 経由で form 送信することを指定している。この指定がないと、ajax ではない通常の form 送信となるため、redirect_to でどこかに飛ばす必要が出てくる。
-local: false を指定することで、Ajax として$(document).on("ajax:success", '.simple-form', function(e){ の イベントが発生する。そこで レスポンス内容を元に動作を定義することが可能となる。
-submit の disable_with, confirm
-form で実際に登録しようとするときに、disable_with はもはや必須と言えるかもしれない。form を1度クリックした時点で、もう一度クリックさせないようにするための設定となる。これをセットしておかないと、大切な処理をダブルクリックで2回連続実行されてしまうケースが発生する。
-confirm は大切なform処理である場合、いいですかの確認が可能となる。必要に応じてこちらもセットしておくと便利なパラメータである。
-終わりに
-form に関する実装が一通り綺麗に実装されている。この美しさが Rails だと感じられる瞬間である。
-ぜひ知らないことがあれば実装を試してもらえればと思う。]]></summary>
-        <author>
-            <name>ボクココ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[インターンレポート: 画像強調モデルへのTest-timeAdaptationの適用検証]]></title>
-        <id>https://medium.com/p/90aff42c2610</id>
-        <link href="https://medium.com/nttlabs/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88-%E7%94%BB%E5%83%8F%E5%BC%B7%E8%AA%BF%E3%83%A2%E3%83%87%E3%83%AB%E3%81%B8%E3%81%AEtest-timeadaptation%E3%81%AE%E9%81%A9%E7%94%A8%E6%A4%9C%E8%A8%BC-90aff42c2610?source=rss----74f667786e9f---4"/>
-        <updated>2022-10-20T09:12:46.000Z</updated>
-        <author>
-            <name>長谷川直哉</name>
         </author>
     </entry>
 </feed>
