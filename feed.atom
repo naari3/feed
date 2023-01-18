@@ -2,10 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-18T12:01:55.677Z</updated>
+    <updated>2023-01-18T13:06:08.729Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[エクセルの図表だけをpdfとして出力したい]]></title>
+        <id>hatenablog://entry/4207112889955418016</id>
+        <link href="https://fumimaker.net/entry/2023/01/18/211043?utm_source=feed"/>
+        <updated>2023-01-18T12:10:43.000Z</updated>
+        <summary type="html"><![CDATA[概要
+エクセルの図を右クリック→図として保存[svg] draw.ioにsvgをD&Dして図だけ選択，エクスポートする
+背景
+修論を書いていると図表をLatexにインポートしたいことがあります．Latexではできればpdfもしくはepsが面倒事少なくて良いです．
+エクセルから直接PDF出力してみる
+普通に書き出すと・・・面長になってしまう．多分A4の形で書き出されている．グラフだけ選択した状態でエクスポートからPDF書き出しをやってみる．グラフだけ選択した状態で書き出すとうまくいくこともあるがどう頑張ってもA4のままになってしまうものがある．なんでや・・・
+
+普通にPDF出力するとこうなる
+A4で出力されずうまく行った例．それでも若干スペースが生まれてて気持ち悪い．論文に入れると不自然な隙間がでてしまって非常に見栄えが悪いです．
+
+
+エクセルからSVG出力
+エクセルから書き出せないか．図を右クリックして「図として保存」．拡張子を見ているとsvgならある．svgはベクターなのでこれは良さそう．
+
+しかし，svgでもベクターとしてLatexに入れられるけど，直接入れることができずink-spaceで変換する必要があります．svg用にsvgパッケージが用意されているがsvgのためにコマンド変えるのがめんどくさすぎるという問題があります．
+konoyonohana.blog.fc2.com
+SVGをPDFに変換
+svgからpdfにならないかと思い調べてみるといくつかやり方があります．
+謎のオンラインツール
+オンライン変換ツールがある．例えばこれ ．でもできればこういうツールは使いたくないが・・・
+SVG PDF 変換。オンライン フリー - Convertio
+
+いい感じだけど，日本語が消えてしまってるし文字のフォント，ポイントも変わっている．だめそう．
+imagemagic
+imagemagicで変換することができる．シェルスクリプトとかにしておけば便利そうと思って作ってみた(結局使わなかった)．同じディレクトリにあるsvgを変換するやつ．そのままやったら案の定日本語消えたのでフォントファイルを指定してやりました．ここを任意に変えると好きなフォントにできます．自分はWindowsなのでwsl環境で/mnt/c/USERS/FUMI/APPDATA/LOCAL/MICROSOFT/WINDOWS/FONTS/にありました．SOURCEHANSは普通に使いやすいのでおすすめです．無料でgithubからダウンロードできます．
+https://fonts.adobe.com/fonts/source-han-sans-japanese
+https://github.com/adobe-fonts/source-han-sans
+dir_path=`pwd`
+dirs=`find -type f -name "*.svg"`
+
+for dir in $dirs;
+do
+    echo $dir
+    filename=`basename $dir .svg`
+    convert -font '/mnt/c/USERS/FUMI/APPDATA/LOCAL/MICROSOFT/WINDOWS/FONTS/SOURCEHANSANS.TTC' $dir $filename.pdf
+done
+
+echo done
+やっぱりレイアウトがきれいにならない．フォントは自分で指定できるがポイントやレイアウトが崩れてしまう．謎の輪郭もついてしまっているしだめか・・・．
+
+draw.io
+いつも使ってるdraw.ioにsvgを食わせられることに気づいた．これにD&Dして選択，エクスポートしてみたところきれいなものがpdfで出力できた！少し手間はかかるけどこれは良い．draw.io，図表を作るのに非常に便利なのでおすすめです．
+Flowchart Maker & Online Diagram Software
+
+
+
+
+ちゃんとベクターになってますよ
+
+まあ普通にlatexでsvg入れればいい話なんですけどね．]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[アクセス数を増やしたい？ それとも「友達をつくりたい」？ 第1回 はてなブログなんでも相談室]]></title>
         <id>hatenablog://entry/4207112889955333514</id>
