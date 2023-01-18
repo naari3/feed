@@ -78,6 +78,71 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">eslint-cjs-to-esm: CJSをESMへとマイグレーションするツールを書いた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/01/18/eslint-cjs-to-esm/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>最近、色々なライブラリをCommonJS(CJS)からECMAScript Module(ESM)へとマイグレーションしています。
+その際に、ESMでは__dirnameやrequireなどCommonJS特有の機能は使えなくなっています。
+また、TypeScriptやBabelなど多くのツールはCJSではimport時に拡張子はなくても大丈夫ですが、ESMの場合はimport時に拡張子が必要になります。
+
+import url from &quot;node:url&quot;;
+- import { mdEscape } from &quot;./mdEscape&quot;;
++ import { mdEscape } from &quot;./mdEscape.js&quot;; // ESMでは相対パスに拡張子は省略できない
++ const __filename &#x3D; url.fileURLToPath(import.meta.url); // __filenameはESMにはないためimport.meta.urlから取得する
++ const __dirname &#x3D; path.dirname(__filename);　// __dirnameはESMにはない
+
+console.log(__filename, __dirname)
+
+
+具体的にAPIや構文などでCJSからESMへと移行する際に気を付けるNode.jsのAPIは次にまとめてあります。
+Node.jsライブラリ/ツールをESMに移行する[Node.js 12+]
+ほとんど対応する構文や機能があるので機械的に置き換えたり、チェックできるものばかりです。
+そのため、CJSとESMへと機械的に移行するのを補助するツールを書きました
+eslint-cjs-to-esm
+eslint-cjs-to-esmは、名前の通りESLintを使ってCJSをESMへと移行するためのツー…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/calpisco" target="_blank"
+              rel="noopener">calpisco</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">身内向けに運用しているサービスのDBが死んだ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/calpisco/n/nc446390ab7a4" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ど～～～も～～～～
+calpiscoで～～～～～～す
+先日新しいPCを買ったんですよ！！
+そしたら～～～
+SO!!!
+誤作動が置きまくっちゃったんだヨ～～
+ア～イ　トゥイマ　テ～～ン
+続きをみる</span>
+                  </div>
+                  <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/c12d110fe3e59e5c7979f865a3959c011376e961.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
               rel="noopener">fumiLab</a></h3>
           <section class="articles-per-source">
@@ -25029,49 +25094,11 @@ VC版クリスタルでカモネギ捕まえるために朝起きてすぐ捕獲
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
-              rel="noopener">クックパッド開発者ブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">VOICE 22 イベントレポート</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2022/10/21/110000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>こんにちは、ボイスサービス部の ymd (@y_am_a_da) です。
-今回は私と、 Cookpad inc (UK) の Global CTO である miles (@tapster) が VOICE 22 に登壇をしてきたのでそのレポートです。
-VOICE 22 とは
-2018 年から開催されている世界的な対話型 AI *1 に関するカンファレンスです。2021 年までで世界で 10 万人以上が参加しており、この界隈の中では非常に大きなカンファレンスであると言えます。
-世界的な情勢もありここ数年はオンラインのみでの開催となっていましたが、今年は久しぶりにオンラインとオフライン混合での開催となっていました。
-対話型 AI に関わるベンチャーの CEO や、音声ユーザーインターフェースのデザインに関わるデザイナー、対話型 AIを活用するサービスを開発するエンジニアなどが様々な観点から発表をしていました。
-www.voicesummit.ai
-クックパッドは海外展開にも注力しており、世界 74 ヶ国 32 言語で展開をしています。私の所属するボイスサービス部でも複数の国でサービスを展開しており、今回のイベントではそのサービスを運営して得られた知見をもとに音声対話型 AI やスマートスピーカーが料理のシーンをどのように変えられるのか、その可能性について &quot;Introduce VUI to Make Everyday Cooking Fun&quot; というタイトルで発表をいたしました。
-
-
-登壇資料はこちらになります。
-
-
-
-参加者について
-今回登壇やブースを出展していた企業は大まかに 2 種類に分類することができました。
-対話型 AI を簡単に導入できるサービス
-音声コンテンツを生成するサービス
-また、登壇者以外の来場者の層は、私達と同じようにスマートスピーカーや対話型 AI 向け…</span>
-                  </div>
-                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-18T13:06:08.662Z">2023-01-18T13:06:08.662Z</time>
+    <time id="build-timestamp" datetime="2023-01-18T14:01:59.640Z">2023-01-18T14:01:59.640Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
