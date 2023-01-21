@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-21T11:01:41.745Z</updated>
+    <updated>2023-01-21T12:02:15.690Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -18221,48 +18221,6 @@ TA-Track
 眠いので唐突に終わる。おやすみなさい。]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Swift Concurrencyでセマフォを作る]]></title>
-        <id>hatenablog://entry/4207112889929354029</id>
-        <link href="https://techlife.cookpad.com/entry/2022/10/24/090000"/>
-        <updated>2022-10-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、レシピサービス開発部と技術部兼務のヴァンサン(@vincentisambart)です。
-Swift Concurrencyに関する中級の記事がまだ多くない気がしていたので、そういう記事を書くことにしました。
-Swift Concurrencyの理解を深めたい人にはWWDC21の「Swift concurrency: Behind the scenes」がおすすめです。そのプレゼンの中でDispatchSemaphoreをSwift Concurrencyで使うべきではないと述べられました。
-
-Swift Concurrencyに提供されているツールを見ると、セマフォがありません。でも提供されたものでセマフォを作れないでしょうか？セマフォを使いたい場面が多いわけではありませんが、良い勉強になると思います。
-どういうツールが標準で提供されているのでしょうか？safe(安全に使えるもの)はactor、Task、TaskGroup、async let、AsyncStream、CheckedContinuation、くらいですかね。
-セマフォ自体の説明をすると長くなるので、下記はセマフォをある程度知っている前提で書いています。セマフォのメソッド名はセマフォの説明でたまに使われる分かりにくいPとVではなく、DispatchSemaphoreも使っているwait()(待つ)とsignal()(合図を送る)を使います。
-セマフォの値が0以下だったらwait()が次のsignal()まで待つ必要があるので、待たせる仕組み、もう待たなくて良いという合図を送る仕組み、が必要です。Swift Concurrencyのそれぞれのツールで実装できないか検討してみましょう。
-actor
-actor自体でできることを色々見ても、何かを待たせるすべはなさそうです(ビジーウェイトは論外)。
-とはい…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[pyenv install battle]]></title>
-        <id>https://blog.ojisan.io/pyenv-install-battle</id>
-        <link href="https://blog.ojisan.io/pyenv-install-battle"/>
-        <updated>2022-10-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Python 入れたけど切り替わらなくて困ったという話。 私はフロントエンドエンジニアロールであり普段は Python を書かないのだが、たまにローカルで API サーバーを動かす必要が生まれる時がある。そのため Python 環境を作りたい時がある。 Mac と Python…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[多作になるとめちゃくちゃ楽だという話]]></title>
-        <id>https://note.com/sizes/n/na63df72f6ea8</id>
-        <link href="https://note.com/sizes/n/na63df72f6ea8"/>
-        <updated>2022-10-23T23:11:21.000Z</updated>
-        <summary type="html"><![CDATA[Twitterを見ている人ならよくご存知かもしれないが、ixyさんというイラストレーターがいる。この人はもともと大学を辞めてプログラマーをやっていた人で、絵を描き始めたきっかけも「目立ちたかったから」だという。
-ixyさんは多作なのが特徴で、基本的に毎日1枚絵が投稿される。それもかなりクオリティが高く、普通に万バズすることもザラだ。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
 </feed>
