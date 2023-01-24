@@ -2,10 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-24T00:03:30.687Z</updated>
+    <updated>2023-01-24T01:28:56.487Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[EmacsでTypeScript/React開発する2023]]></title>
+        <id>hatenablog://entry/4207112889957068718</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2023/01/24/102616"/>
+        <updated>2023-01-24T01:26:16.000Z</updated>
+        <summary type="html"><![CDATA[世間に死ぬほど色々な方法があるのはわかっているがとにかくまっさらな状態から最短手順でEmacsでJSX/TSXが書けるようになりたい! という話。VSCodeとかそういう話には目を背ける。
+
+tsxファイルはweb-modeで起動するようにすればシンタックスハイライトとインデントはうまくいくので、あとはlspを起動するようにすれば快適です！
+— つかもとたけし (@itometeam) 2023年1月23日
+  
+自分で調べつつ試行錯誤したんだけど、最終的にはこのtweetで教えてもらった通りになった。メジャーモードとしてweb-modeを使いつつflycheckとLSPで開発支援。
+macOSにインストールしたEmacs*1、およびMELPAにあるパッケージだけで、以下のようになった。
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.ts[x]?\\'" . web-mode))
+(add-hook 'web-mode-hook 'lsp)
+  
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
+
+
+
+Emacs + web-mode + lsp
+補完も効く
+事前にM-x list-packagesしてweb-mode、lsp-modeをインストール後に上記の設定をした。あとlanguage-serverをnpm install -g typescript-language-server typescriptしてインストールしてある。
+他に関係あるのはcompanyとflycheckかな? companyは以下のように読み込みと余計なこと…]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[たまごかけご飯を飲んじゃう癖をやめたい]]></title>
+        <id>hatenablog://entry/4207112889957068480</id>
+        <link href="https://kiyo-shit.hatenablog.com/entry/2023/01/24/102500"/>
+        <updated>2023-01-24T01:25:00.000Z</updated>
+        <summary type="html"><![CDATA[咀嚼したいんだけど、どうしても飲んじゃう。なんか良い方法無いですか？]]></summary>
+        <author>
+            <name>Robot Checkerboard</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20230122「ナナロク社『第二回 あたらしい歌集選考会の記録』」]]></title>
         <id>hatenablog://entry/4207112889956972653</id>

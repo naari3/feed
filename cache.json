@@ -4009,6 +4009,21 @@
       "siteUrl": "https://kiyo-shit.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889957068480",
+          "author": null,
+          "description": "咀嚼したいんだけど、どうしても飲んじゃう。なんか良い方法無いですか？",
+          "link": "https://kiyo-shit.hatenablog.com/entry/2023/01/24/102500",
+          "publishedOn": "2023-01-24T01:25:00.000Z",
+          "wordCount": 230,
+          "title": "たまごかけご飯を飲んじゃう癖をやめたい",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889949955236",
           "author": null,
           "description": "人々の振り返りエントリを読んでたら急に何か書かねば！という気持ちになったのでなんの準備もなく、天覧山を飲みながら、まさに時系列関係なくTop of the Headに今年を振り返っていくぜ。\nwww.tenranzan.jp\n転職した\n「転職した」という間もなく転職した。キッチリ365日。人生最短。まあ特に感想はナシ。飲酒機会があれば色々お話しします。\nmastodon使い始めた\n思い切ってiPhoneからTwitterクライアントを削除してmastodon中心の生活にしている。今のところ不便はないのだが、強いて言うなら@hatebuが無いくらい。これは@hatebuのActivityPub実装があれば良いし、自分で作ろうかな〜と思ってちょいちょいその方面を触り出している。\n想像以上に不便が発生してなくて驚いているし、まあ寂しくもある。\nマンションの管理組合理事長になった\n輪番制で役員をやらねばならんのだけど、くじ引きの結果理事長になってしまった。とにかく押印を無限にする仕事で、事務作業をやりたくないし全てが紙ベースなので最悪。休日に管理組合周りのイベントが入りがちで家族のヘイトも高い。\nネガポジで言えば圧倒的にネガ要素満載なのだけども、とは言え自分も家族も生活する場所の自治に関わることなのでコミットメントすることそのものは極めて重要だし、高齢化の気配もあるのでやるべきことはやっておくか、というテンションではある。\nなんというか、このあたりの関わりに距離を置いた結果、区分所有者がアンコントローラブル管理組合が仕上がると最悪やな、という防衛姿勢が根底にはある。\nkabumatome.doorblog.jp\n自炊に積極的になった\n料理に対する苦手意識が強くて全くやらずに生き抜いてきたのだけども、前回の転職時には1ヶ月くらいの有給消化があり、毎日夕飯を作るぞ！と家族にコミットメン…",
@@ -5694,6 +5709,21 @@
       "feedUrl": "https://tagomoris.hatenablog.com/rss",
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/4207112889957068718",
+          "author": null,
+          "description": "世間に死ぬほど色々な方法があるのはわかっているがとにかくまっさらな状態から最短手順でEmacsでJSX/TSXが書けるようになりたい! という話。VSCodeとかそういう話には目を背ける。\n\ntsxファイルはweb-modeで起動するようにすればシンタックスハイライトとインデントはうまくいくので、あとはlspを起動するようにすれば快適です！\n— つかもとたけし (@itometeam) 2023年1月23日\n  \n自分で調べつつ試行錯誤したんだけど、最終的にはこのtweetで教えてもらった通りになった。メジャーモードとしてweb-modeを使いつつflycheckとLSPで開発支援。\nmacOSにインストールしたEmacs*1、およびMELPAにあるパッケージだけで、以下のようになった。\n(require 'web-mode)\n(add-to-list 'auto-mode-alist '(\"\\\\.ts[x]?\\\\'\" . web-mode))\n(add-hook 'web-mode-hook 'lsp)\n  \n(setq web-mode-markup-indent-offset 2)\n(setq web-mode-css-indent-offset 2)\n(setq web-mode-code-indent-offset 2)\n\n\n\nEmacs + web-mode + lsp\n補完も効く\n事前にM-x list-packagesしてweb-mode、lsp-modeをインストール後に上記の設定をした。あとlanguage-serverをnpm install -g typescript-language-server typescriptしてインストールしてある。\n他に関係あるのはcompanyとflycheckかな? companyは以下のように読み込みと余計なこと…",
+          "link": "https://tagomoris.hatenablog.com/entry/2023/01/24/102616",
+          "publishedOn": "2023-01-24T01:26:16.000Z",
+          "wordCount": null,
+          "title": "EmacsでTypeScript/React開発する2023",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230124/20230124102044.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230124/20230124102044.png"
+        },
         {
           "id": "hatenablog://entry/4207112889952571238",
           "author": null,
