@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-25T14:02:15.688Z</updated>
+    <updated>2023-01-25T15:02:28.542Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「毒親モノ」が消費されるのは、人生をコントロールできない感覚に苦しんでるからなんじゃない？]]></title>
+        <id>https://note.com/sizes/n/nfb9198f2bc46</id>
+        <link href="https://note.com/sizes/n/nfb9198f2bc46"/>
+        <updated>2023-01-25T14:57:23.000Z</updated>
+        <summary type="html"><![CDATA[ジャンプ＋の漫画を読んでみると、やたらと毒親が登場する。それもリアリティを描くことが目的ではなくて、身近にある不条理の象徴として消費されてる感じだ。
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[昔見て印象に残っているミュージックビデオの話]]></title>
         <id>hatenablog://entry/4207112889957498651</id>
@@ -18679,37 +18690,6 @@ twiliojp-ug.doorkeeper.jp
         <summary type="html"><![CDATA[この記事は「連載：技術基盤強化プロジェクト「RFS」の現在と未来」として書かれたものです。 メルカリ JP の CS Tool チームにバックエンドエンジニアとして 2022 年に新卒入社した @monkukui です。 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Android クックパッドアプリの画面遷移実装]]></title>
-        <id>hatenablog://entry/4207112889931475473</id>
-        <link href="https://techlife.cookpad.com/entry/2022/10/28/111251"/>
-        <updated>2022-10-28T02:12:51.000Z</updated>
-        <summary type="html"><![CDATA[Androidエンジニアのこやまカニ大好きです。
-10/19 に弊社で開催した After Party DroidKaigi 2022 というイベントで、クックパッドアプリの画面遷移について発表しました。
-当日のセッションでは時間が限られていたりスライドでのコード表示の制約から実装面の説明をかなり省略していたので、この記事で補足しつつ説明しようと思います。
-
-
-
-クックパッドアプリの構成
-実装の内容に入る前に、前提としてクックパッドアプリのプロジェクト構造を説明していきます。
-モジュール構成
-これまでの技術ブログでも何度か説明してきた通り、クックパッドアプリは2018年ごろからマルチモジュールプロジェクトになっています。
-画面実装は View(Compose)と関連ロジックを Scene という単位で構成
-関連のある複数 Scene で機能モジュール(feature module) を構成
-共通ロジックやドメイン層は役割ごとにモジュール分割(library module)
-全体的なモジュール構造は以下のようになっています。
-feature ｍodule から library module への参照はありますが、feature module 同士に参照はありません。
-(この図は過去の技術記事から持ってきたため、 legacy モジュールが重要そうな感じで見えていますが今回の内容には関係ありません)
-
-画面遷移実装
-クックパッドアプリでは以下の理由から Navigation Component を利用していません。
-Navigation Component が出る前からマルチモジュール化されていて登場当時導入が難しかった
-クックパッドアプリの画面遷移が複雑で Navigation Component を利用できる箇所が限られていた
-特にボトムタブに Multiple Back …]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>
