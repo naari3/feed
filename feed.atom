@@ -2,10 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-25T10:01:55.878Z</updated>
+    <updated>2023-01-25T11:02:11.429Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GitコミットをNotionに記録してみてる]]></title>
+        <id>https://efcl.info/2023/01/25/gil-notion-git-log/</id>
+        <link href="https://efcl.info/2023/01/25/gil-notion-git-log/"/>
+        <updated>2023-01-25T10:03:00.000Z</updated>
+        <summary type="html"><![CDATA[Gitのコミットフックを使って、コミット内容をNotionに記録してみています。
+Gitコミットを自動的にNotionに記録するcommit hookを書いてみた。https://t.co/jb2U68PbMB
+しばらく遊んでみる pic.twitter.com/rnlKJgVMtk
+— azu (@azu_re) December 28, 2022
+ 
+ 
+実際に使ってるコミットフックは、次のリポジトリにあります。
+azu/git-hooks: @azu’s global git hooks
+Git 2.9+からcore.hooksPathというglobalなGit Hookを設定できます。
+このglobal hookを使い、どのリポジトリでもpre-commitやpost-commitなどのコミットフックのスクリプトを実行できます。
+Notionにコミットログを送るGitフックの作り方
+Notionに書き込み用のデータベースを作成し、次のカラムを作りました。
+Repo
+Hash
+Message
+.envファイルに次のようにNotionデータベースとAPIトークンを定義します。
+
+GIL_NOTION_GIL_DATABASE_ID='xxx'
+GIL_NOTION_GIL_API_TOKEN='xxx'
+
+
+そして、post-commitに次のようなスクリプトを書きます。
+
+# License: MIT ©️ azu
+# https://efcl.info/2023/01/25/gil-notion-git-log/
+# .env にNotionの情報を入れる必要があります
+# 中で.envを読み込んでいます。
+declare scriptDir
+declare DOT_ENV
+# GIL: Git CommitをNotionに記録する仕組み
+declare GIT_C…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[その証明書、安全ですか？]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=17668</id>

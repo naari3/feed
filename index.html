@@ -78,6 +78,56 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GitコミットをNotionに記録してみてる</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/01/25/gil-notion-git-log/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Gitのコミットフックを使って、コミット内容をNotionに記録してみています。
+Gitコミットを自動的にNotionに記録するcommit hookを書いてみた。https://t.co/jb2U68PbMB
+しばらく遊んでみる pic.twitter.com/rnlKJgVMtk
+— azu (@azu_re) December 28, 2022
+ 
+ 
+実際に使ってるコミットフックは、次のリポジトリにあります。
+azu/git-hooks: @azu’s global git hooks
+Git 2.9+からcore.hooksPathというglobalなGit Hookを設定できます。
+このglobal hookを使い、どのリポジトリでもpre-commitやpost-commitなどのコミットフックのスクリプトを実行できます。
+Notionにコミットログを送るGitフックの作り方
+Notionに書き込み用のデータベースを作成し、次のカラムを作りました。
+Repo
+Hash
+Message
+.envファイルに次のようにNotionデータベースとAPIトークンを定義します。
+
+GIL_NOTION_GIL_DATABASE_ID&#x3D;&#x27;xxx&#x27;
+GIL_NOTION_GIL_API_TOKEN&#x3D;&#x27;xxx&#x27;
+
+
+そして、post-commitに次のようなスクリプトを書きます。
+
+# License: MIT ©️ azu
+# https://efcl.info/2023/01/25/gil-notion-git-log/
+# .env にNotionの情報を入れる必要があります
+# 中で.envを読み込んでいます。
+declare scriptDir
+declare DOT_ENV
+# GIL: Git CommitをNotionに記録する仕組み
+declare GIT_C…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
               rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
           <section class="articles-per-source">
@@ -25379,7 +25429,7 @@ Navigation Component が出る前からマルチモジュール化されてい�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-25T10:01:55.798Z">2023-01-25T10:01:55.798Z</time>
+    <time id="build-timestamp" datetime="2023-01-25T11:02:11.356Z">2023-01-25T11:02:11.356Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
