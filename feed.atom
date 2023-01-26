@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-26T12:02:30.271Z</updated>
+    <updated>2023-01-26T13:07:37.803Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,48 @@
         <summary type="html"><![CDATA[※本記事は2023年1月1日に公開された記事の翻訳版です。 メルカリのマーケットプレイスにおける商品検索は、お客さまが欲しい物を発見する最も基本的な方法です。この中核となる機能は、テキストマッチングによる情報検索システム […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JavaScript Primer 第二版のレビュアーを募集]]></title>
+        <id>https://efcl.info/2023/01/26/jsprimer-v2-rfc/</id>
+        <link href="https://efcl.info/2023/01/26/jsprimer-v2-rfc/"/>
+        <updated>2023-01-26T11:52:00.000Z</updated>
+        <summary type="html"><![CDATA[今、JavaScript Primer - 迷わないための入門書 #jsprimerの第二版の出版に向けて準備しています。
+そこで、第二版のレビュアーをしてくれる方を募集しています。次のDisucssionで募集しています。
+第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primer
+初版である第一版のリリース内容は次の記事にまとめています。
+JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch
+初版からの主な変更点をまとめると、次のようになります。
+ECMAScriptの新しいバージョンであるES2020、ES2021、ES2022に対応した
+新しいECMAScriptの機能によって、使う必要がなくなった機能は非推奨へと変更した
+文字では想像しにくいビット演算、非同期処理などに図を追加した
+PromiseとAsync Functionを非同期の処理の中心として書き直した
+一方で、エラーファーストコールバックは非同期処理としてはメインではなくなった
+Array#includesという表記は、Private Classs Fields(#field)と記号が被るため廃止した
+Node.jsでもECMAScript Modulesを使うようになり、CommonJSはメインではなくなった
+Node.jsが12から18までアップデートし、npmは6から8までアップデート、各種ライブラリも最新にアップデート
+読者からのフィードバックを受けて、全体をより分かりやすく読みやすくなるように書き直した
+リリースノート的には、次のものが第二版には含まれています。
+v2.0.0: ECMAScript 2020対応
+v3.0.0: ECMAScript 2021対応
+v4.0.0: ECMAScript 2022対応
+かなり全体的に書き直しているため、再度レビューをしてくれる方を募集したいと思います。
+期間
+2月中いっぱい
+少し変動する可能性はあります。
+レビューする内容
+ウェブ版(または第二版のPDFをお渡しする)を見て、気になったことをコメント/Issue/Pull Requestしてもらう
+ウェブ版と書籍版の内容自体は同じもので、レイアウトなどの組版が異なります。
+ウェブ版と書籍版の違い
+レビュアーの方へ
+レビューする方は、JavaScriptに詳しくなくても問題ありません。
+レビューをしてくれる方は、第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primerにコメント または info@jsprimer.net にメール または @azu_re にMentionしてください。
+レビュアーの方は、ウェブと書籍両方の謝辞に掲載させていただきます
+出版準備が完了したら、書籍を献本させていただきます(希望者のみ)
+JavaScript Primerをより読みやすく、より分かりやすくするために、レビューをしてくれる方を募集しています！]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

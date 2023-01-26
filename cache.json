@@ -9734,6 +9734,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/01/26/jsprimer-v2-rfc/",
+          "author": null,
+          "description": "今、JavaScript Primer - 迷わないための入門書 #jsprimerの第二版の出版に向けて準備しています。\nそこで、第二版のレビュアーをしてくれる方を募集しています。次のDisucssionで募集しています。\n第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primer\n初版である第一版のリリース内容は次の記事にまとめています。\nJavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch\n初版からの主な変更点をまとめると、次のようになります。\nECMAScriptの新しいバージョンであるES2020、ES2021、ES2022に対応した\n新しいECMAScriptの機能によって、使う必要がなくなった機能は非推奨へと変更した\n文字では想像しにくいビット演算、非同期処理などに図を追加した\nPromiseとAsync Functionを非同期の処理の中心として書き直した\n一方で、エラーファーストコールバックは非同期処理としてはメインではなくなった\nArray#includesという表記は、Private Classs Fields(#field)と記号が被るため廃止した\nNode.jsでもECMAScript Modulesを使うようになり、CommonJSはメインではなくなった\nNode.jsが12から18までアップデートし、npmは6から8までアップデート、各種ライブラリも最新にアップデート\n読者からのフィードバックを受けて、全体をより分かりやすく読みやすくなるように書き直した\nリリースノート的には、次のものが第二版には含まれています。\nv2.0.0: ECMAScript 2020対応\nv3.0.0: ECMAScript 2021対応\nv4.0.0: ECMAScript 2022対応\nかなり全体的に書き直しているため、再度レビューをしてくれる方を募集したいと思います。\n期間\n2月中いっぱい\n少し変動する可能性はあります。\nレビューする内容\nウェブ版(または第二版のPDFをお渡しする)を見て、気になったことをコメント/Issue/Pull Requestしてもらう\nウェブ版と書籍版の内容自体は同じもので、レイアウトなどの組版が異なります。\nウェブ版と書籍版の違い\nレビュアーの方へ\nレビューする方は、JavaScriptに詳しくなくても問題ありません。\nレビューをしてくれる方は、第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primerにコメント または info@jsprimer.net にメール または @azu_re にMentionしてください。\nレビュアーの方は、ウェブと書籍両方の謝辞に掲載させていただきます\n出版準備が完了したら、書籍を献本させていただきます(希望者のみ)\nJavaScript Primerをより読みやすく、より分かりやすくするために、レビューをしてくれる方を募集しています！",
+          "link": "https://efcl.info/2023/01/26/jsprimer-v2-rfc/",
+          "publishedOn": "2023-01-26T11:52:00.000Z",
+          "wordCount": null,
+          "title": "JavaScript Primer 第二版のレビュアーを募集",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/01/25/gil-notion-git-log/",
           "author": null,
           "description": "Gitのコミットフックを使って、コミット内容をNotionに記録してみています。\nGitコミットを自動的にNotionに記録するcommit hookを書いてみた。https://t.co/jb2U68PbMB\nしばらく遊んでみる pic.twitter.com/rnlKJgVMtk\n— azu (@azu_re) December 28, 2022\n \n \n実際に使ってるコミットフックは、次のリポジトリにあります。\nazu/git-hooks: @azu’s global git hooks\nGit 2.9+からcore.hooksPathというglobalなGit Hookを設定できます。\nこのglobal hookを使い、どのリポジトリでもpre-commitやpost-commitなどのコミットフックのスクリプトを実行できます。\nNotionにコミットログを送るGitフックの作り方\nNotionに書き込み用のデータベースを作成し、次のカラムを作りました。\nRepo\nHash\nMessage\n.envファイルに次のようにNotionデータベースとAPIトークンを定義します。\n\nGIL_NOTION_GIL_DATABASE_ID='xxx'\nGIL_NOTION_GIL_API_TOKEN='xxx'\n\n\nそして、post-commitに次のようなスクリプトを書きます。\n\n# License: MIT ©️ azu\n# https://efcl.info/2023/01/25/gil-notion-git-log/\n# .env にNotionの情報を入れる必要があります\n# 中で.envを読み込んでいます。\ndeclare scriptDir\ndeclare DOT_ENV\n# GIL: Git CommitをNotionに記録する仕組み\ndeclare GIT_C…",
