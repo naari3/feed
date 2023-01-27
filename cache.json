@@ -1546,6 +1546,21 @@
       "siteUrl": "https://gfx.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889957898185",
+          "author": null,
+          "description": "vscodeはTypeScriptの構文ハイライトのために TypeScript.tmLanguage という定義ファイルをもっています。\nGitHub - microsoft/TypeScript-TmLanguage: TextMate grammar files for TypeScript for VS Code, Sublime Text, and Atom.\nこの tmLanguage はもともとTextmate用の構文定義言語のようですが、vscodeプロジェクト群はこれを利用する構文ハイライトエンジンも提供しています。\nGitHub - microsoft/vscode-textmate: A library that helps tokenize text using Text Mate grammars.\nつまりこれらを使うと、vscodeと同じ構文ハイライトを実装できるということ！所用でTypeScriptのカスタム構文ハイライト（モノクロ）が必要なったので、ためしに実装してみました。CSSクラスが多様でまじめに実装するのはけっこう面倒くさいので、今回はCSSクラスの名前ベースで適当にパターンマッチでやっつけました。モノクロとはいうものの、といらえず「薄くする（color: gray）」「濃くする（color: bold）」くらいしかしない想定です。\n仕上がりはこんな感じです。\n\nコードはここにあります。\ngithub.com",
+          "link": "https://gfx.hatenablog.com/entry/2023/01/27/111846",
+          "publishedOn": "2023-01-27T02:18:46.000Z",
+          "wordCount": 300,
+          "title": "vscodeが使うTypeScript.tmLanguageに基づいて構文ハイライトを実現する",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20230127/20230127111133.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20230127/20230127111133.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889946934234",
           "author": null,
           "description": ".gitattributes に次の1行を足すと、vscodeの設定ファイルがGitHubでJSONC (JSON with Comments) としてsyntax highlightされるようになります。\n.vscode/*.json linguist-language=jsonc\nGitHubのsyntax highlightは github/linguist で制御されています。これに同梱されている overrides.md というドキュメントに、repoごとのカスタマイズ方法が載っています。\nhttps://github.com/github/linguist/blob/master/docs/overrides.md\nsyntax highlightだけでなく、GitHub repoの統計（どの言語がN%、みたいなやつ）からの除外、自動生成されたかどうかのフラグ（統計から除外されるのと、PRでdiffがデフォルトで展開されなくなる）、などを制御できます。\nsyntax highlightのデフォルトおよび利用可能な値は languages.yml に定義されているので、そこを参考にして設定できます。\nhttps://github.com/github/linguist/blob/master/lib/linguist/languages.yml\nハイライトの実例はこんな感じ: https://github.com/msgpack/msgpack-javascript/blob/main/.vscode/launch.json\nそもそもGitHubがデフォルトで .vscode/*.json をJSONCとしてもいいんじゃないか？とおもってpull-req github/linguist#6221も提案してみたのですが、これは採用予定なしと。理由は次の通り:\nbasenameだけでなくpathnameをみるというのは破壊的変更で影響範囲が大きすぎる。もし本当にやるなら慎重な検討が必要だが、いまのところ恩恵を受けるのは .gitattributes を指定していないvscode userだけ\nGitHub 11年の歴史でsyntax highlightの際にpathname全体をみるという要求はvscodeの設定ファイルだけ\nそもそもvscodeが *.json ファイルにJSONと非互換なフォーマット（JSONC）を書けるというのは慣習に違反していて無作法では？もしこの件について何かしたいならvscodeが .vsocde/*.jsonc をサポートするべきではないか\n正論すぎますね。個人的には、JSONがコメントと末尾コンマを許容するようになるとこの件のみならずJSON/JSONCにまつわる様々な問題が解決してみんな幸せになれるので、Microsoftのvscode teamがそういう提案をしてくれるといいなと思います（いや提案するのは誰でもいいですが）。逆に、そういう未来を想定するならばvscodeが .vscode/*.jsonc をサポートする必要はないのかなとも思います。現状だといずれにせよ .gitattibutes でカスタマイズできますしね。",

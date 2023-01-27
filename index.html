@@ -78,6 +78,34 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gfx.hatenablog.com/" target="_blank"
+              rel="noopener">Islands in the byte stream</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">vscodeが使うTypeScript.tmLanguageに基づいて構文ハイライトを実現する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gfx.hatenablog.com/entry/2023/01/27/111846" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>vscodeはTypeScriptの構文ハイライトのために TypeScript.tmLanguage という定義ファイルをもっています。
+GitHub - microsoft/TypeScript-TmLanguage: TextMate grammar files for TypeScript for VS Code, Sublime Text, and Atom.
+この tmLanguage はもともとTextmate用の構文定義言語のようですが、vscodeプロジェクト群はこれを利用する構文ハイライトエンジンも提供しています。
+GitHub - microsoft/vscode-textmate: A library that helps tokenize text using Text Mate grammars.
+つまりこれらを使うと、vscodeと同じ構文ハイライトを実装できるということ！所用でTypeScriptのカスタム構文ハイライト（モノクロ）が必要なったので、ためしに実装してみました。CSSクラスが多様でまじめに実装するのはけっこう面倒くさいので、今回はCSSクラスの名前ベースで適当にパターンマッチでやっつけました。モノクロとはいうものの、といらえず「薄くする（color: gray）」「濃くする（color: bold）」くらいしかしない想定です。
+仕上がりはこんな感じです。
+
+コードはここにあります。
+github.com</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20230127/20230127111133.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -25460,7 +25488,7 @@ www.youtube.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-27T01:29:05.314Z">2023-01-27T01:29:05.314Z</time>
+    <time id="build-timestamp" datetime="2023-01-27T02:24:15.209Z">2023-01-27T02:24:15.209Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

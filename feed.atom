@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-27T01:29:05.387Z</updated>
+    <updated>2023-01-27T02:24:15.262Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[vscodeが使うTypeScript.tmLanguageに基づいて構文ハイライトを実現する]]></title>
+        <id>hatenablog://entry/4207112889957898185</id>
+        <link href="https://gfx.hatenablog.com/entry/2023/01/27/111846"/>
+        <updated>2023-01-27T02:18:46.000Z</updated>
+        <summary type="html"><![CDATA[vscodeはTypeScriptの構文ハイライトのために TypeScript.tmLanguage という定義ファイルをもっています。
+GitHub - microsoft/TypeScript-TmLanguage: TextMate grammar files for TypeScript for VS Code, Sublime Text, and Atom.
+この tmLanguage はもともとTextmate用の構文定義言語のようですが、vscodeプロジェクト群はこれを利用する構文ハイライトエンジンも提供しています。
+GitHub - microsoft/vscode-textmate: A library that helps tokenize text using Text Mate grammars.
+つまりこれらを使うと、vscodeと同じ構文ハイライトを実装できるということ！所用でTypeScriptのカスタム構文ハイライト（モノクロ）が必要なったので、ためしに実装してみました。CSSクラスが多様でまじめに実装するのはけっこう面倒くさいので、今回はCSSクラスの名前ベースで適当にパターンマッチでやっつけました。モノクロとはいうものの、といらえず「薄くする（color: gray）」「濃くする（color: bold）」くらいしかしない想定です。
+仕上がりはこんな感じです。
+
+コードはここにあります。
+github.com]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[能力はすぐに伸びないけれど、メリットはすぐに提供することができる]]></title>
         <id>https://note.com/sizes/n/n7df325ee7231</id>
