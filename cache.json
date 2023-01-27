@@ -9694,6 +9694,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/01/27/textlint-v13/",
+          "author": null,
+          "description": "textlint v13をリリースしました！\ntextlint v13.0.0 · textlint\ntextlint v13では、ECMAScript\nModules(ESM)で書かれたrulesやpluginsを直接読み込めるようになっています。\nまた、textlintパッケージ(コマンド)を書き直してたり、内部的に新しいAPIを使うようになっています。\nただし、textlint\nv12とCLIの互換性はあるはずなので、textlintをコマンドとして使ってるユーザーは特にオプションなどに変更はありません。\nSummary\nFor textlint user\n次のコマンドでアップデートするだけです！\n\nnpm install textlint@13 --save-dev\n# or\nyarn install textlint@13 --dev\n\n\ntextlint 13.0.0 は Node.js 16以上を要求します。 そのため、Node.js\n14を使っている場合は、Node.js 16以上にアップデートする必要があります。\nDownload | Node.js\n📝 まだNode.js14でも動きはしますが、minor\nupdatesで動かなくなるケースが出てくると思います。\nFor textlint rule creator\ntextlint v13.0.0からは、ESMで書かれたルールを直接読み込めるようになりました。\nそのため、ルールをESMで書く場合は、CommonJSにトランスパイルしなくても、textlintのルールとして動くようになりました。\n⚠️\nvscode-textlintなどのエディタは、CLIではなくtextlintをモジュールとして利用しています。\n互換性のために古いAPIもtextlint\nv13ではサポートしていますが、古いAPIはES…",
+          "link": "https://efcl.info/2023/01/27/textlint-v13/",
+          "publishedOn": "2023-01-27T13:08:00.000Z",
+          "wordCount": 1070,
+          "title": "textlint v13.0.0 - ESMで書かれたルールを扱えるように",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2023/01/26/jsprimer-v2-rfc/",
           "author": null,
           "description": "今、JavaScript Primer - 迷わないための入門書 #jsprimerの第二版の出版に向けて準備しています。\nそこで、第二版のレビュアーをしてくれる方を募集しています。次のDisucssionで募集しています。\n第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primer\n初版である第一版のリリース内容は次の記事にまとめています。\nJavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch\n初版からの主な変更点をまとめると、次のようになります。\nECMAScriptの新しいバージョンであるES2020、ES2021、ES2022に対応した\n新しいECMAScriptの機能によって、使う必要がなくなった機能は非推奨へと変更した\n文字では想像しにくいビット演算、非同期処理などに図を追加した\nPromiseとAsync Functionを非同期の処理の中心として書き直した\n一方で、エラーファーストコールバックは非同期処理としてはメインではなくなった\nArray#includesという表記は、Private Classs Fields(#field)と記号が被るため廃止した\nNode.jsでもECMAScript Modulesを使うようになり、CommonJSはメインではなくなった\nNode.jsが12から18までアップデートし、npmは6から8までアップデート、各種ライブラリも最新にアップデート\n読者からのフィードバックを受けて、全体をより分かりやすく読みやすくなるように書き直した\nリリースノート的には、次のものが第二版には含まれています。\nv2.0.0: ECMAScript 2020対応\nv3.0.0: ECMAScript 2021対応\nv4.0.0: ECMAScript 2022対応\nかなり全体的に書き直しているため、再度レビューをしてくれる方を募集したいと思います。\n期間\n2月中いっぱい\n少し変動する可能性はあります。\nレビューする内容\nウェブ版(または第二版のPDFをお渡しする)を見て、気になったことをコメント/Issue/Pull Requestしてもらう\nウェブ版と書籍版の内容自体は同じもので、レイアウトなどの組版が異なります。\nウェブ版と書籍版の違い\nレビュアーの方へ\nレビューする方は、JavaScriptに詳しくなくても問題ありません。\nレビューをしてくれる方は、第二版のレビュアーを募集 · Discussion #1546 · asciidwango/js-primerにコメント または info@jsprimer.net にメール または @azu_re にMentionしてください。\nレビュアーの方は、ウェブと書籍両方の謝辞に掲載させていただきます\n出版準備が完了したら、書籍を献本させていただきます(希望者のみ)\nJavaScript Primerをより読みやすく、より分かりやすくするために、レビューをしてくれる方を募集しています！",

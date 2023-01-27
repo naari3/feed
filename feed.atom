@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-27T13:05:29.680Z</updated>
+    <updated>2023-01-27T14:02:21.606Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[textlint v13.0.0 - ESMで書かれたルールを扱えるように]]></title>
+        <id>https://efcl.info/2023/01/27/textlint-v13/</id>
+        <link href="https://efcl.info/2023/01/27/textlint-v13/"/>
+        <updated>2023-01-27T13:08:00.000Z</updated>
+        <summary type="html"><![CDATA[textlint v13をリリースしました！
+textlint v13.0.0 · textlint
+textlint v13では、ECMAScript
+Modules(ESM)で書かれたrulesやpluginsを直接読み込めるようになっています。
+また、textlintパッケージ(コマンド)を書き直してたり、内部的に新しいAPIを使うようになっています。
+ただし、textlint
+v12とCLIの互換性はあるはずなので、textlintをコマンドとして使ってるユーザーは特にオプションなどに変更はありません。
+Summary
+For textlint user
+次のコマンドでアップデートするだけです！
+
+npm install textlint@13 --save-dev
+# or
+yarn install textlint@13 --dev
+
+
+textlint 13.0.0 は Node.js 16以上を要求します。 そのため、Node.js
+14を使っている場合は、Node.js 16以上にアップデートする必要があります。
+Download | Node.js
+📝 まだNode.js14でも動きはしますが、minor
+updatesで動かなくなるケースが出てくると思います。
+For textlint rule creator
+textlint v13.0.0からは、ESMで書かれたルールを直接読み込めるようになりました。
+そのため、ルールをESMで書く場合は、CommonJSにトランスパイルしなくても、textlintのルールとして動くようになりました。
+⚠️
+vscode-textlintなどのエディタは、CLIではなくtextlintをモジュールとして利用しています。
+互換性のために古いAPIもtextlint
+v13ではサポートしていますが、古いAPIはES…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[書籍「ザ・パターン・シーカー 自閉症がいかに人類の発明を促したか」、ものの認知に関する視点が目鱗でお勧めです]]></title>
         <id>hatenablog://entry/4207112889957996163</id>

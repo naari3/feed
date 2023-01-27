@@ -78,6 +78,53 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">textlint v13.0.0 - ESMで書かれたルールを扱えるように</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/01/27/textlint-v13/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>textlint v13をリリースしました！
+textlint v13.0.0 · textlint
+textlint v13では、ECMAScript
+Modules(ESM)で書かれたrulesやpluginsを直接読み込めるようになっています。
+また、textlintパッケージ(コマンド)を書き直してたり、内部的に新しいAPIを使うようになっています。
+ただし、textlint
+v12とCLIの互換性はあるはずなので、textlintをコマンドとして使ってるユーザーは特にオプションなどに変更はありません。
+Summary
+For textlint user
+次のコマンドでアップデートするだけです！
+
+npm install textlint@13 --save-dev
+# or
+yarn install textlint@13 --dev
+
+
+textlint 13.0.0 は Node.js 16以上を要求します。 そのため、Node.js
+14を使っている場合は、Node.js 16以上にアップデートする必要があります。
+Download | Node.js
+📝 まだNode.js14でも動きはしますが、minor
+updatesで動かなくなるケースが出てくると思います。
+For textlint rule creator
+textlint v13.0.0からは、ESMで書かれたルールを直接読み込めるようになりました。
+そのため、ルールをESMで書く場合は、CommonJSにトランスパイルしなくても、textlintのルールとして動くようになりました。
+⚠️
+vscode-textlintなどのエディタは、CLIではなくtextlintをモジュールとして利用しています。
+互換性のために古いAPIもtextlint
+v13ではサポートしていますが、古いAPIはES…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
               rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
           <section class="articles-per-source">
@@ -25451,7 +25498,7 @@ ayako_m（id:ayakoya）の場合は「Webメディアの編集」という仕事
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-27T13:05:29.619Z">2023-01-27T13:05:29.619Z</time>
+    <time id="build-timestamp" datetime="2023-01-27T14:02:21.517Z">2023-01-27T14:02:21.517Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
