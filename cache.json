@@ -1561,6 +1561,21 @@
       "siteUrl": "https://gfx.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889958211044",
+          "author": null,
+          "description": "ふと思い立って『日経サイエンス』誌を読んだらけっこうよくて軽く感動しました。\nこれまではTwitter至上主義だったので情報はTwitterから仕入れればよいと思っていたのですが、最近のTwitterのサードパーティ・マイノリティ排除の様子に辟易してTwitterをやめて以来、情報に飢えていたのでした。そこでたまたま目にした科学雑誌を読んだら満足感が高かったという感じです。\n自分の専門分野（ソフトウェアエンジニアリング）ではない専門誌を読むという発想があまりなかったのですが、子供が生物に関心をもったのをきっかけに真面目に理科・科学を学び直すのもよいなあと思ってたのでちょうどよいというのもあります。こと学術系の記事に関しては、有料コンテンツも捨てたものじゃないですね（当たり前）。\namzn.to",
+          "link": "https://gfx.hatenablog.com/entry/2023/01/28/144541",
+          "publishedOn": "2023-01-28T05:45:41.000Z",
+          "wordCount": 227,
+          "title": "『日経サイエンス』誌を読んだら思いの外よかった",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889957898185",
           "author": null,
           "description": "vscodeはTypeScriptの構文ハイライトのために TypeScript.tmLanguage という定義ファイルをもっています。\nGitHub - microsoft/TypeScript-TmLanguage: TextMate grammar files for TypeScript for VS Code, Sublime Text, and Atom.\nこの tmLanguage はもともとTextmate用の構文定義言語のようですが、vscodeプロジェクト群はこれを利用する構文ハイライトエンジンも提供しています。\nGitHub - microsoft/vscode-textmate: A library that helps tokenize text using Text Mate grammars.\nつまりこれらを使うと、vscodeと同じ構文ハイライトを実装できるということ！所用でTypeScriptのカスタム構文ハイライト（モノクロ）が必要なったので、ためしに実装してみました。CSSクラスが多様でまじめに実装するのはけっこう面倒くさいので、今回はCSSクラスの名前ベースで適当にパターンマッチでやっつけました。モノクロとはいうものの、といらえず「薄くする（color: gray）」「濃くする（color: bold）」くらいしかしない想定です。\n仕上がりはこんな感じです。\n\nコードはここにあります。\ngithub.com",
@@ -7753,6 +7768,16 @@
       "siteUrl": "https://note.com/sizes",
       "articles": [
         {
+          "id": "https://note.com/sizes/n/nbf034350be33",
+          "author": null,
+          "description": "治安の悪い場所に行くと、万引きや自転車泥棒を警告する張り紙が貼られている。高齢者の多い場所に行くと、表向き詐欺防止の張り紙が貼られていたりするけれど、逆に健康商法やロクでもなさそうな保険の広告もある。大学進学率が高いようなベッドタウンに行くと、塾や英会話レッスンの広告がある。前にも書いたけれど、広告や看板はその街やその場所の性質を物語っている。\n前提として広告というのはゴミだが、インターネットの広告はおぞましいゴミだ。追跡情報によって広告がカスタマイズされるようになったけれど、結局のところ「パワーの高い」広告ってコンプレックス煽りやサラ金、投資信託や英会話の教材みたいな、判断能力の乏しさに付け入る「オイシイ話」出会ったりする。\n続きをみる",
+          "link": "https://note.com/sizes/n/nbf034350be33",
+          "publishedOn": "2023-01-28T05:17:03.000Z",
+          "wordCount": 2306,
+          "title": "知性とは落とし穴を求めない心のことなのかもしれない",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/96657875/rectangle_large_type_2_20db7e785e3fb4ecc283885c5ba3c4bb.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/sizes/n/n7df325ee7231",
           "author": null,
           "description": "僕は一人暮らしをしていた時、老人とか引きこもりの人の話し相手になる、ボランティア活動をしていた。別に救世主願望があったわけでも世のため人のためと考えていたわけでもないけれど、違う立場の他人と話すことや、その人たちの役に立つことが、自分のいろいろに役立つと思ったのだ。いろいろって曖昧だけれど、こういうのって複雑な形でメリットが出てくるもんなんです。実際適当に喋ってるだけで許されるし‥‥なぜか組員の人にあんま歓迎されなかったのは不服だったけれど。ボランティアなんだからいーじゃーん。\nところで、「絵はすぐに上手くならない」という本がある。以前にも引いたけれど、僕はこの本が好きなので再度引く。\n続きをみる",
@@ -9456,6 +9481,16 @@
       "feedUrl": "https://blog.ojisan.io/rss.xml",
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
+        {
+          "id": "https://blog.ojisan.io/yapc-deruyo-2023",
+          "author": null,
+          "description": "YAPC::Kyoto 2023 に採択されました！初めての YAPC なので楽しみです。 YAPC に対する思い入れ、なぜ応募したか いまから…",
+          "link": "https://blog.ojisan.io/yapc-deruyo-2023",
+          "publishedOn": "2023-01-28T00:00:00.000Z",
+          "wordCount": 788,
+          "title": "YAPC::Kyoto 2023にで話します！そしてチケットを今すぐに購入しましょう！！",
+          "imageUrl": "https://blog.ojisan.io/static/9e1b66260c58e354f860a8fef4962ace/1372f/visual.png"
+        },
         {
           "id": "https://blog.ojisan.io/oreha-createElement-wo-mitai",
           "author": null,
