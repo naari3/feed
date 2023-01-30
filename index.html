@@ -25617,60 +25617,11 @@ https://getnavi.jp/comic/800915/ 続きをみる</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
-              rel="noopener">fumiLab</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">ikwzmさんのdebian image for KV260を構築する</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2022/11/02/141001?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>いつもお世話になっております．
-今回はこれを構築してみます．基本的にはGithubの内容通りになります．
-https://github.com/ikwzm/ZynqMP-FPGA-Linux/blob/master/doc/install/kv260.md
-一部ハマったところもありました．
-Ubuntu18(vmware)で作業しています．
-SDカードの準備
-ubuntuのdisk toolsからFAT 100MB, EXT4残り容量でパーティションを作りました．名前はそれぞれBootとRootfsとしています．本当はコマンドラインでやるべきなんですけどね・・・便利すぎてやめられない．
-画像ではすでに書き込まれていますが気にしないでください．フォーマットできたらマウントしましょう．それぞれ/media/fumi/boot, rootfsにマウントされています．
-
-Bootに書き込む
-wget https://github.com/ikwzm/ZynqMP-FPGA-Linux/archive/refs/tags/v2021.1.2.tar.gz
-tar xfz v2021.1.2.tar.gz
-
-
-
-してダウンロードしておきます．GithubからZIPを落としてもOK．
-cp target/Kv260/boot/* /media/fumi/boot
-cp image-5.10.0-xlnx-v2021.1-zynqmp-fpga /media/fumi/boot
-
-
-
-もしくはD&amp;Dでコピーします．
-Rootfsに書き込む
-説明では
-cat debian11-rootfs-vanilla.tgz.files/* | tar xfz - -C             /mnt/usb2
-
-
-
-となっていますが，自分の環境だとこの様になってできませんでした．なんででしょう．
-f…</span>
-                  </div>
-                  <img src="https://i.gyazo.com/a86eb14406d8159881950bd8cf5c007f.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-30T17:02:17.866Z">2023-01-30T17:02:17.866Z</time>
+    <time id="build-timestamp" datetime="2023-01-30T18:01:52.286Z">2023-01-30T18:01:52.286Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

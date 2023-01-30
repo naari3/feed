@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-30T17:02:17.930Z</updated>
+    <updated>2023-01-30T18:01:52.344Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -18835,45 +18835,6 @@ RedMuffleR『*sigh*』
 https://getnavi.jp/comic/800915/ 続きをみる]]></summary>
         <author>
             <name>チャーミングじろうちゃん</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ikwzmさんのdebian image for KV260を構築する]]></title>
-        <id>hatenablog://entry/4207112889932585233</id>
-        <link href="https://fumimaker.net/entry/2022/11/02/141001?utm_source=feed"/>
-        <updated>2022-11-02T05:10:01.000Z</updated>
-        <summary type="html"><![CDATA[いつもお世話になっております．
-今回はこれを構築してみます．基本的にはGithubの内容通りになります．
-https://github.com/ikwzm/ZynqMP-FPGA-Linux/blob/master/doc/install/kv260.md
-一部ハマったところもありました．
-Ubuntu18(vmware)で作業しています．
-SDカードの準備
-ubuntuのdisk toolsからFAT 100MB, EXT4残り容量でパーティションを作りました．名前はそれぞれBootとRootfsとしています．本当はコマンドラインでやるべきなんですけどね・・・便利すぎてやめられない．
-画像ではすでに書き込まれていますが気にしないでください．フォーマットできたらマウントしましょう．それぞれ/media/fumi/boot, rootfsにマウントされています．
-
-Bootに書き込む
-wget https://github.com/ikwzm/ZynqMP-FPGA-Linux/archive/refs/tags/v2021.1.2.tar.gz
-tar xfz v2021.1.2.tar.gz
-
-
-
-してダウンロードしておきます．GithubからZIPを落としてもOK．
-cp target/Kv260/boot/* /media/fumi/boot
-cp image-5.10.0-xlnx-v2021.1-zynqmp-fpga /media/fumi/boot
-
-
-
-もしくはD&Dでコピーします．
-Rootfsに書き込む
-説明では
-cat debian11-rootfs-vanilla.tgz.files/* | tar xfz - -C             /mnt/usb2
-
-
-
-となっていますが，自分の環境だとこの様になってできませんでした．なんででしょう．
-f…]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
 </feed>
