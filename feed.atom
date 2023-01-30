@@ -2,10 +2,89 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-30T02:20:47.014Z</updated>
+    <updated>2023-01-30T03:02:20.778Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[今週のはてなブログランキング〔2023年1月第4週〕]]></title>
+        <id>hatenablog://entry/4207112889958745097</id>
+        <link href="https://blog.hatenablog.com/entry/2023/01/30/120000"/>
+        <updated>2023-01-30T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログ独自の集計による人気記事のランキング。1月22日（日）から1月28日（土）〔2023年1月第4週〕のトップ30です*1。
+#
+    タイトル／著者とブックマーク
+    
+1
+    ネットの音楽オタクが選んだ2022年のベストアルバム 50→1 - 音楽だいすきクラブ
+ by id:ongakudaisukiclub 
+    
+2
+    なぜ一見何の利益もない嫌がらせ行為を行う人間が存在するのか？──『悪意の科学: 意地悪な行動はなぜ進化し社会を動かしているのか？』 - 基本読書
+ by id:huyukiitoichi 
+    
+3
+    3万円で買えるPanasonicのミニコンポSC-PMX90はPCやテレビの高音質化ができてオーディオ入門に最適 - ARTIFACT@はてブロ
+ by id:kanose 
+    
+4
+    婚活の場はなぜあんなにもつらいのか、マルクスを使って解説する - 自意識高い系男子
+ by id:Ta-nishi 
+    
+5
+    ソフトウェアアーキテクトに必要なシステム設計知識を学んだ17冊 - yoshikipom Tech Blog
+ by id:yoshikipom 
+    
+6
+    ネットの音楽オタクが選んだ2022年のベストアルバム150→101 - 音楽だいすきクラブ
+ by id:ongakudaisukiclub 
+    
+7
+    『マスタリングLinuxシェルスクリプト 第2版』、こういう1冊手元に有るとずっと使える本はちゃんと買っておきたいですね - Magnolia Tech
+ by id:magnoliak 
+    
+8
+    ChatGPTがGoogle検索を使いものにならなくする未来 - きしだのHatena
+ by id:nowokay 
+    
+9
+    …]]></summary>
+        <author>
+            <name>週刊はてなブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[textlint-plugin-html v1をリリースした]]></title>
+        <id>https://efcl.info/2023/01/30/textlint-html-plugin-v1/</id>
+        <link href="https://efcl.info/2023/01/30/textlint-html-plugin-v1/"/>
+        <updated>2023-01-30T02:15:00.000Z</updated>
+        <summary type="html"><![CDATA[textlintでHTMLファイルを扱うtextlint-plugin-html v1をリリースしました！
+Release v1.0.0 · textlint/textlint-plugin-html
+自分が使うプロジェクトを持ってないのでずっと放置していましたが、textlint v13.0.0のリリースに合わせて全部書き直しました。
+textlint v13.0.0 - ESMで書かれたルールを扱えるように
+🔥 Breaking Changes
+textlint v13.0.0以降が必要になりました
+
+Pure ESMで書かれたプラグインなので、ESMで書かれたプラグインを扱えるtextlint v13.0.0以降が必要になります
+Node.js 16.6.0以降が必要になりました
+TypeScriptに書き直しました
+🆕　Features
+HTMLのパーサにrehypeを使うようになりました
+
+rehypeはparse5を使ってるので、parse5を直接でもよかったかもしれません
+<h1> … <h6>の levels プロパティをサポートしました。
+<ul> と <ol> をサポートしました。
+<img />の alt と title をサポートしました。
+<a>の title をサポートしました。
+この辺のNodeのプロパティは、textlint v13.0.0でちゃんと定義するようにしたので、既存のルールとの互換性が上がっていると思います。
+TxtAST Interface · textlint
+🐛　Bug Fixes
+多くのルールはHtmlノードをLint対象から外しています。
+今までのHTMLプラグインでは <html> タグを Html Nodeに変換してしまっていたため、<html>以下のNodeがLint対象から外れてしまう問題が起きていました。…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[インプットと無意識と効果]]></title>
         <id>https://note.com/sizes/n/n26e3c25e8378</id>
