@@ -78,6 +78,72 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SwiftUIで画面内の各コンテンツの表示ログを送る</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2023/01/31/swiftui-show-content-log" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、レシピサービス開発部の@miichan_ochaです。普段はiOS版クックパッドアプリの開発をしています。
+クックパッドアプリでは開発した機能の評価を行うために、画面のPVログや画面内の各コンテンツの表示・タップログなどの様々な行動ログを送っています。
+今回は、SwiftUIで新たに作った画面内の各コンテンツの表示ログを送る仕組み（ShowContentLog）についてご紹介します。この仕組みは昨年7月にリリースされたiOS版クックパッドアプリ「のせる」タブ開発時に作られたもので、現在約半年ほど運用しています。
+ShowContentLogの仕組み
+ログの要件
+レシピサービス開発部では、iOS版クックパッドアプリの画面内の各コンテンツの表示ログを以下の要件で取っています。
+コンテンツが初めて画面に表示される時に、そのコンテンツの表示ログを送る
+画面のスクロールによって、コンテンツが一度画面外に出てから再度画面内に表示された時には、そのコンテンツの表示ログは送らない
+一定時間経過後の画面自動更新やPull to Refreshによる画面更新を行った時は、更新後の画面に表示されているコンテンツの表示ログを送る
+別画面にプッシュ遷移した後、遷移先から戻ってきて画面が再度表示された時に、その画面に表示されているコンテンツの表示ログを送る
+タブの切り替えによって画面が再度表示された時に、その画面に表示されているコンテンツの表示ログを送る
+アプリがバックグラウンドからフォアグラウンドに復帰した時に、復帰時の画面に表示されているコンテンツの表示ログを送る
+各要件に対応するデモ動画
+ 1 
+ 2 
+ 3 
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+ 4 
+ 5 
+ 6 
+
+
+
+
+  
+  
+  
+
+
+
+
+
+なお、ここでいう各コンテンツとは「表示・タップ回数を計測したいViewの…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/miichan_ocha_tech/20230130/20230130172833.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
               rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
           <section class="articles-per-source">
@@ -25472,7 +25538,7 @@ youtu.be
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-31T05:02:11.264Z">2023-01-31T05:02:11.264Z</time>
+    <time id="build-timestamp" datetime="2023-01-31T06:02:22.616Z">2023-01-31T06:02:22.616Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,10 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-31T05:02:11.319Z</updated>
+    <updated>2023-01-31T06:02:22.677Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[SwiftUIで画面内の各コンテンツの表示ログを送る]]></title>
+        <id>hatenablog://entry/4207112889958827839</id>
+        <link href="https://techlife.cookpad.com/entry/2023/01/31/swiftui-show-content-log"/>
+        <updated>2023-01-31T06:00:22.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、レシピサービス開発部の@miichan_ochaです。普段はiOS版クックパッドアプリの開発をしています。
+クックパッドアプリでは開発した機能の評価を行うために、画面のPVログや画面内の各コンテンツの表示・タップログなどの様々な行動ログを送っています。
+今回は、SwiftUIで新たに作った画面内の各コンテンツの表示ログを送る仕組み（ShowContentLog）についてご紹介します。この仕組みは昨年7月にリリースされたiOS版クックパッドアプリ「のせる」タブ開発時に作られたもので、現在約半年ほど運用しています。
+ShowContentLogの仕組み
+ログの要件
+レシピサービス開発部では、iOS版クックパッドアプリの画面内の各コンテンツの表示ログを以下の要件で取っています。
+コンテンツが初めて画面に表示される時に、そのコンテンツの表示ログを送る
+画面のスクロールによって、コンテンツが一度画面外に出てから再度画面内に表示された時には、そのコンテンツの表示ログは送らない
+一定時間経過後の画面自動更新やPull to Refreshによる画面更新を行った時は、更新後の画面に表示されているコンテンツの表示ログを送る
+別画面にプッシュ遷移した後、遷移先から戻ってきて画面が再度表示された時に、その画面に表示されているコンテンツの表示ログを送る
+タブの切り替えによって画面が再度表示された時に、その画面に表示されているコンテンツの表示ログを送る
+アプリがバックグラウンドからフォアグラウンドに復帰した時に、復帰時の画面に表示されているコンテンツの表示ログを送る
+各要件に対応するデモ動画
+ 1 
+ 2 
+ 3 
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+ 4 
+ 5 
+ 6 
+
+
+
+
+  
+  
+  
+
+
+
+
+
+なお、ここでいう各コンテンツとは「表示・タップ回数を計測したいViewの…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[アリア B9 e-4ORCE limited きましたーーー。申込日初日に申し込んだかいがあった。eペダル+プロパイロット楽しい。]]></title>
         <id>hatenablog://entry/4207112889959032489</id>
