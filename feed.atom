@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-01-31T09:01:53.377Z</updated>
+    <updated>2023-01-31T10:01:58.052Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[1Passwordを使って、ローカルにファイル(~/.configや.env)として置かれてる生のパスワードなどを削除した]]></title>
+        <id>https://efcl.info/2023/01/31/remove-secret-from-local/</id>
+        <link href="https://efcl.info/2023/01/31/remove-secret-from-local/"/>
+        <updated>2023-01-31T08:31:00.000Z</updated>
+        <summary type="html"><![CDATA[最近、コミットはされないがローカルのディレクトリに置かれている.envのようなファイルから生のパスワードやAPI Tokenを削除しました。
+これは、ローカルでマルウェアを実行した場合に、ローカルに置かれている生のパスワードやAPI Tokenを盗まれる可能性があるためです。
+最近は、npm install時のpostinstallでのデータを盗むようなマルウェアを仕込んだりするソフトウェアサプライチェーン攻撃が多様化しています。
+Compromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. | PyTorch
+Microsoft spots malicious npm package stealing data from UNIX systems | ZDNET
+これは、次の記事とも関係しています。
+パスワード管理/MFA管理の戦略 | Web Scratch
+Secretlint 6リリース: .bash_historyや.zsh_historyに残ったトークンをマスキングする | Web Scratch
+自分は、1Passwordを使っているので、.envに書くようなパスワードやAPI Tokenも1Passwordに集約することで、
+ファイルとして置かれている生のパスワードやAPI Tokenの大部分を削除しました。
+1Password for Open Source Projectsの申請をした | Web Scratch
+ローカルにファイルとして置かれる生のパスワードやAPI Tokenにはいくつか種類があるので、それぞれの対応を書いていきます。
+実際には全てのものは対応できていませんが、できるだけファイルに生のパスワードやAPI Token…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[人間関係をゲーム化することについて]]></title>
         <id>https://note.com/sizes/n/nfb24365a3086</id>

@@ -9668,6 +9668,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/01/31/remove-secret-from-local/",
+          "author": null,
+          "description": "最近、コミットはされないがローカルのディレクトリに置かれている.envのようなファイルから生のパスワードやAPI Tokenを削除しました。\nこれは、ローカルでマルウェアを実行した場合に、ローカルに置かれている生のパスワードやAPI Tokenを盗まれる可能性があるためです。\n最近は、npm install時のpostinstallでのデータを盗むようなマルウェアを仕込んだりするソフトウェアサプライチェーン攻撃が多様化しています。\nCompromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. | PyTorch\nMicrosoft spots malicious npm package stealing data from UNIX systems | ZDNET\nこれは、次の記事とも関係しています。\nパスワード管理/MFA管理の戦略 | Web Scratch\nSecretlint 6リリース: .bash_historyや.zsh_historyに残ったトークンをマスキングする | Web Scratch\n自分は、1Passwordを使っているので、.envに書くようなパスワードやAPI Tokenも1Passwordに集約することで、\nファイルとして置かれている生のパスワードやAPI Tokenの大部分を削除しました。\n1Password for Open Source Projectsの申請をした | Web Scratch\nローカルにファイルとして置かれる生のパスワードやAPI Tokenにはいくつか種類があるので、それぞれの対応を書いていきます。\n実際には全てのものは対応できていませんが、できるだけファイルに生のパスワードやAPI Token…",
+          "link": "https://efcl.info/2023/01/31/remove-secret-from-local/",
+          "publishedOn": "2023-01-31T08:31:00.000Z",
+          "wordCount": null,
+          "title": "1Passwordを使って、ローカルにファイル(~/.configや.env)として置かれてる生のパスワードなどを削除した",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/01/30/textlint-html-plugin-v1/",
           "author": null,
           "description": "textlintでHTMLファイルを扱うtextlint-plugin-html v1をリリースしました！\nRelease v1.0.0 · textlint/textlint-plugin-html\n自分が使うプロジェクトを持ってないのでずっと放置していましたが、textlint v13.0.0のリリースに合わせて全部書き直しました。\ntextlint v13.0.0 - ESMで書かれたルールを扱えるように\n🔥 Breaking Changes\ntextlint v13.0.0以降が必要になりました\n\nPure ESMで書かれたプラグインなので、ESMで書かれたプラグインを扱えるtextlint v13.0.0以降が必要になります\nNode.js 16.6.0以降が必要になりました\nTypeScriptに書き直しました\n🆕　Features\nHTMLのパーサにrehypeを使うようになりました\n\nrehypeはparse5を使ってるので、parse5を直接でもよかったかもしれません\n<h1> … <h6>の levels プロパティをサポートしました。\n<ul> と <ol> をサポートしました。\n<img />の alt と title をサポートしました。\n<a>の title をサポートしました。\nこの辺のNodeのプロパティは、textlint v13.0.0でちゃんと定義するようにしたので、既存のルールとの互換性が上がっていると思います。\nTxtAST Interface · textlint\n🐛　Bug Fixes\n多くのルールはHtmlノードをLint対象から外しています。\n今までのHTMLプラグインでは <html> タグを Html Nodeに変換してしまっていたため、<html>以下のNodeがLint対象から外れてしまう問題が起きていました。…",

@@ -78,6 +78,37 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">1Passwordを使って、ローカルにファイル(~/.configや.env)として置かれてる生のパスワードなどを削除した</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/01/31/remove-secret-from-local/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>最近、コミットはされないがローカルのディレクトリに置かれている.envのようなファイルから生のパスワードやAPI Tokenを削除しました。
+これは、ローカルでマルウェアを実行した場合に、ローカルに置かれている生のパスワードやAPI Tokenを盗まれる可能性があるためです。
+最近は、npm install時のpostinstallでのデータを盗むようなマルウェアを仕込んだりするソフトウェアサプライチェーン攻撃が多様化しています。
+Compromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. | PyTorch
+Microsoft spots malicious npm package stealing data from UNIX systems | ZDNET
+これは、次の記事とも関係しています。
+パスワード管理/MFA管理の戦略 | Web Scratch
+Secretlint 6リリース: .bash_historyや.zsh_historyに残ったトークンをマスキングする | Web Scratch
+自分は、1Passwordを使っているので、.envに書くようなパスワードやAPI Tokenも1Passwordに集約することで、
+ファイルとして置かれている生のパスワードやAPI Tokenの大部分を削除しました。
+1Password for Open Source Projectsの申請をした | Web Scratch
+ローカルにファイルとして置かれる生のパスワードやAPI Tokenにはいくつか種類があるので、それぞれの対応を書いていきます。
+実際には全てのものは対応できていませんが、できるだけファイルに生のパスワードやAPI Token…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -25560,7 +25591,7 @@ youtu.be
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-01-31T09:01:53.316Z">2023-01-31T09:01:53.316Z</time>
+    <time id="build-timestamp" datetime="2023-01-31T10:01:57.950Z">2023-01-31T10:01:57.950Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
