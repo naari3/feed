@@ -78,6 +78,36 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">update-github-actions-permissions v2をリリース: 500種類のGitHub Actionsのpermissionsに対応</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/02/01/update-github-actions-permissions-v2/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>GitHub Actionsのworkflowsファイルに自動的にpermissionsを追加する@pkgdeps/update-github-actions-permissions v2をリリースしました。
+Release v2.0.0 · pkgdeps/update-github-actions-permissions
+update-github-actions-permissionsは .github/workflow/*.ymlのWorkflowファイルに対して、利用してるActionから最小限のpermissionsを自動的に設定するツールです。
+GitHub Actionsのデフォルトパーミッションはwrite-allです。 つまり、GitHub Actionsから対象のリポジトリの読み書き、IssueやPRの読み書きなど全部の権限がデフォルトでついています。そのため、uses: actions/checkout@v3 のようにread onlyでよいGitHub Actionsも、実際にはリポジトリやIssueへの書き込みできる権限も持ってしまっています。
+この問題に最小権限の原則を使って修正するには、次の2つのステップが必要です。
+Workflow(yamlファイル)ごとに必要なpermissionsを設定する
+リポジトリ or Organizationのデフォルトパーミッションを “Read repository contents permission”　にする
+詳しくは次の記事で解説しています。
+GitHub Actionsのpermissionsを自動で設定するツールを書いた | Web Scratch
+使い方
+update-github-actions-permissionsの使い方は単純です。
+次のコマンドで、.github/workflows/…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -25737,30 +25767,11 @@ marshmallow-qa.com
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.ojisan.io" target="_blank"
-              rel="noopener">blog.ojisan.io&#x27;s RSS Feed</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">お気軽に Wasm の動作確認する用のテンプレート作った</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.ojisan.io/wasm-vite-template" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>OGP は 「顔パックに噛み付く人」で AI 生成した。標準の webpack を vite で置き換えるものということでそうしたのだが、なんかすごいのが出来上がった。バンドラの箱を開けたってコト！？ 「Rust のこの機能やこの Crate って Wasm…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-02-01T11:02:26.933Z">2023-02-01T11:02:26.933Z</time>
+    <time id="build-timestamp" datetime="2023-02-01T12:01:53.741Z">2023-02-01T12:01:53.741Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

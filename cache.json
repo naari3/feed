@@ -9709,16 +9709,6 @@
           "wordCount": null,
           "title": "入門 アル中カラカラ",
           "imageUrl": null
-        },
-        {
-          "id": "https://blog.ojisan.io/wasm-vite-template",
-          "author": null,
-          "description": "OGP は 「顔パックに噛み付く人」で AI 生成した。標準の webpack を vite で置き換えるものということでそうしたのだが、なんかすごいのが出来上がった。バンドラの箱を開けたってコト！？ 「Rust のこの機能やこの Crate って Wasm…",
-          "link": "https://blog.ojisan.io/wasm-vite-template",
-          "publishedOn": "2022-11-04T00:00:00.000Z",
-          "wordCount": null,
-          "title": "お気軽に Wasm の動作確認する用のテンプレート作った",
-          "imageUrl": null
         }
       ]
     },
@@ -9727,6 +9717,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2023/02/01/update-github-actions-permissions-v2/",
+          "author": null,
+          "description": "GitHub Actionsのworkflowsファイルに自動的にpermissionsを追加する@pkgdeps/update-github-actions-permissions v2をリリースしました。\nRelease v2.0.0 · pkgdeps/update-github-actions-permissions\nupdate-github-actions-permissionsは .github/workflow/*.ymlのWorkflowファイルに対して、利用してるActionから最小限のpermissionsを自動的に設定するツールです。\nGitHub Actionsのデフォルトパーミッションはwrite-allです。 つまり、GitHub Actionsから対象のリポジトリの読み書き、IssueやPRの読み書きなど全部の権限がデフォルトでついています。そのため、uses: actions/checkout@v3 のようにread onlyでよいGitHub Actionsも、実際にはリポジトリやIssueへの書き込みできる権限も持ってしまっています。\nこの問題に最小権限の原則を使って修正するには、次の2つのステップが必要です。\nWorkflow(yamlファイル)ごとに必要なpermissionsを設定する\nリポジトリ or Organizationのデフォルトパーミッションを “Read repository contents permission”　にする\n詳しくは次の記事で解説しています。\nGitHub Actionsのpermissionsを自動で設定するツールを書いた | Web Scratch\n使い方\nupdate-github-actions-permissionsの使い方は単純です。\n次のコマンドで、.github/workflows/…",
+          "link": "https://efcl.info/2023/02/01/update-github-actions-permissions-v2/",
+          "publishedOn": "2023-02-01T11:17:00.000Z",
+          "wordCount": null,
+          "title": "update-github-actions-permissions v2をリリース: 500種類のGitHub Actionsのpermissionsに対応",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2023/01/31/remove-secret-from-local/",
           "author": null,
