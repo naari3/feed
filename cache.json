@@ -9892,16 +9892,6 @@
           "wordCount": 562,
           "title": "Lint NightでtextlintとLinterの作り方について発表した",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2022/11/06/github-releases-as-a-blog/",
-          "author": null,
-          "description": "GitHubリリースという、GitHubでタグに対してリリースノートを書ける機能があります。\nこのリリースノート機能は、パーマネントリンクもあるし、Markdownも書けるし、画像もアップロードできるし、絵文字でリアクションもできるし、RSSもあるし、通知機能もあるし、GitHub Discussion連携すればコメントも書けるし、全文検索もついてくるしこれブログとして使えるんじゃないかと思いました。\nそういう発想から、GitHubリリースノートをブログとして運用するためのちょっとしたブログシステムを作って使っています。\n次のリポジトリが実際に動いてるものです。\nazu/book-review: 本を読んだ感想を書くブログです。\nリリースの一覧を見ると本の感想の記事が並んでいます。\nReleases · azu/book-review\n\nRelease 伴走型支援: 新しい支援と社会のカタチ を読んだ。 · azu/book-review\n単純にリリースノート機能を使うのとは若干フローを変えていて、GitHub Issueにドラフトを管理できるようにしていて、\n複数のIssueで書いたドラフトをまとめて一つの記事としてリリースノートに公開できるワークフローを実装しています。\n(Zennのスクラップ機能や1日に複数の記事を書けるはてなダイアリーとかに近いようなイメージです)\nこのリポジトリはテンプレートリポジトリになっていて、ワンクリックで同じ仕組みを持ったリポジトリブログを作成できます。\nGitHub Releasesブログのセットアップ方法\nこのブログシステムを使いたい人向けのガイドです。\n次のリンクからリポジトリをテンプレートにして新しいリポジトリを作成: https://github.com/azu/book-review/generate\n作成したリポジトリの ht…",
-          "link": "https://efcl.info/2022/11/06/github-releases-as-a-blog/",
-          "publishedOn": "2022-11-06T11:31:00.000Z",
-          "wordCount": null,
-          "title": "1クリックで始めるGitHubリリース as a ブログ",
-          "imageUrl": null
         }
       ]
     },
