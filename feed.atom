@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-07T03:02:09.828Z</updated>
+    <updated>2023-02-07T04:01:54.022Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[マートステーション進化の歴史2023]]></title>
+        <id>hatenablog://entry/4207112889960962736</id>
+        <link href="https://techlife.cookpad.com/entry/2023/02/07/123000"/>
+        <updated>2023-02-07T03:30:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、クックパッドの齋藤です。
+私はハードウェアPdMとして、生鮮食品のECプラットフォーム、クックパッドマートで事業に関わるハードウェア（マートステーション、プリンタ、温度監視システム等）の企画開発・開発ディレクション・調達・保守等を担当しています。
+cookpad-mart.com
+クックパッドマートはiOSおよびAndroidの専用アプリで利用可能なサービスです。このアプリで商品を購入して、街中のスマート冷蔵庫「マートステーション」で受け取れます。
+マートステーションは駅やコンビニエンスストア、マンションの共用部といった人々の生活動線に設置し、共同納品を行っています。そのため自宅に個別配送をする他の生鮮食品ECに比べ、より物流コストを抑えた配送を実現しています *1 。
+クックパッドマートは食材の輸配送や保管をはじめとした現実世界を相手に展開しているビジネスです。
+そのためマートステーションや温度センサをはじめとした様々な機材が必要なこと、加えて社内にはハードウェアチームがあり、ハードウェアエンジニアや組込エンジニア等の普通のWeb系企業にはいない、ユニークな人材がいることを、前回下記の記事でお話ししました。
+techlife.cookpad.com
+本稿ではマートステーションの開発、進化の歴史をご紹介します。
+
+前述したとおり、クックパッドマートでは駅やコンビニエンスストア、マンションの共用部等に設置し、配送した食材を保管するためのスマート冷蔵庫「マートステーション」を独自開発・運用しています。
+マートステーションは単なる冷蔵庫として機能するのみならず、盗難防止用の電子錠や鍵として機能するQRコードのリーダー、さらには温度監視や死活監視の機能を搭載しています。
+サービス開発初期、私たちの用途にかなう機材を探したものの、残念ながら世の中に存在しませんでした。従っ…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2023-02-06]]></title>
         <id>hatenablog://entry/4207112889960940612</id>
