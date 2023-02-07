@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-07T00:03:36.512Z</updated>
+    <updated>2023-02-07T01:28:58.008Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2023-02-06]]></title>
+        <id>hatenablog://entry/4207112889960940612</id>
+        <link href="https://commits.hatenablog.com/entry/2023/02/07/100005"/>
+        <updated>2023-02-07T01:00:05.000Z</updated>
+        <summary type="html"><![CDATA[rbs collectionのlocal sourceを実装していた。大体動くようになったのだけど、GHAからubuntuのarchiveにアクセスするのが不調で一回休み。
+www.rails-graphql.dev
+GraphQL関連の新しいgemがリリースされたようなのでちょっと眺めていた。
+なんでgraphql gemじゃなくてこれを作りたかったのかよくわからない。名前からしてRailsと密結合にしたいのだろうけど、嬉しいのかな… subscriptionを有効活用したいと嬉しいかな。知らんけど。
+パーサをCで書き直しているようですごい。あまり真面目にGraphQLのパーサって考えたことがなかったけど、どれくらい簡単なのかな。
+しかしパーサってgraphql-rubyでもそこまでボトルネックじゃなかった気もするし、速度影響どれくらいあるのかなあ。
+DSLはなんかちょっとうーんという感じで、あんまり魅力的じゃなかった。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetesのバージョンアップとの付き合い方]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=17944</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/17944"/>
+        <updated>2023-02-07T00:38:57.000Z</updated>
+        <summary type="html"><![CDATA[Kubernetesは現在は4ヶ月に一回マイナーアップグレードリリースが実施されています。そして、基本的には最新の3つのマイナーリリースについてサポートが行われるポリシーとなっています（深刻なセキュリ...]]></summary>
+        <author>
+            <name>田口 景介</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2023.02.06 健常者エミュレータにハマってます]]></title>
         <id>hatenablog://entry/4207112889960670191</id>

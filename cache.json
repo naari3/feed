@@ -1399,7 +1399,23 @@
       "title": "diary",
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/4207112889960940612",
+          "author": null,
+          "description": "rbs collectionのlocal sourceを実装していた。大体動くようになったのだけど、GHAからubuntuのarchiveにアクセスするのが不調で一回休み。\nwww.rails-graphql.dev\nGraphQL関連の新しいgemがリリースされたようなのでちょっと眺めていた。\nなんでgraphql gemじゃなくてこれを作りたかったのかよくわからない。名前からしてRailsと密結合にしたいのだろうけど、嬉しいのかな… subscriptionを有効活用したいと嬉しいかな。知らんけど。\nパーサをCで書き直しているようですごい。あまり真面目にGraphQLのパーサって考えたことがなかったけど、どれくらい簡単なのかな。\nしかしパーサってgraphql-rubyでもそこまでボトルネックじゃなかった気もするし、速度影響どれくらいあるのかなあ。\nDSLはなんかちょっとうーんという感じで、あんまり魅力的じゃなかった。",
+          "link": "https://commits.hatenablog.com/entry/2023/02/07/100005",
+          "publishedOn": "2023-02-07T01:00:05.000Z",
+          "wordCount": 321,
+          "title": "2023-02-06",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "contradiction29’s blog",
@@ -9799,6 +9815,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=17944",
+          "author": "田口 景介",
+          "description": "Kubernetesは現在は4ヶ月に一回マイナーアップグレードリリースが実施されています。そして、基本的には最新の3つのマイナーリリースについてサポートが行われるポリシーとなっています（深刻なセキュリ...",
+          "link": "https://eng-blog.iij.ad.jp/archives/17944",
+          "publishedOn": "2023-02-07T00:38:57.000Z",
+          "wordCount": 1443,
+          "title": "Kubernetesのバージョンアップとの付き合い方",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2023/02/a11b4bb3ba448d1fa402ac3dc62cc91f.png"
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=17746",
           "author": "y-morimoto",
