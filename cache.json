@@ -3534,6 +3534,21 @@
       "siteUrl": "https://katsumakazuyo.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889963318651",
+          "author": null,
+          "description": "相変わらず毎日2時間ぐらい、音声入力で仕事をしています。\nしばらくPixelとWindows11の音声入力の間で動いていたのですが、最近ちょっとブレークスルーを発見しました、それは何かというと\n「音声入力をSimejiに戻す」\nということです。\n元々Simejiをやめてしまった背景の一つは、どうも入力の最初にちょっと引っかかることがあったのですが（これは、バイドゥも認めていて、原因不明だそうです）、理由はわかりませんがPixelで入力するとその引っ掛かりが全くなくなりました。\n加えて、文脈の中からどの同音異語が正しいかとか、あるいはちょっと口の中でもごもした時に一体何の発音をしたのかということについての判断が、三つの音声入力の中ではSimejiが圧倒的に優秀なのです。\nこれは結局多国語対応をしているグーグルやマイクロソフトは当たり前ですが、アメリカの会社ですので、英語を中心に開発していることが原因なのですが、Simejiは中国の会社ですので、漢字に強いようです。\nこれはどちらが優秀どちらが優秀でないということではなく、単純に日本語を使う場合にはSimejiの方が私にとって手間暇がかからず、修正の回数や時間も短いということになれば、もうこれでいいのかなという気がしてきました。\nせっかくPixelを買ったのに、Pixelを使ってSimejiで音声入力をするのは本末転倒のような気がしますが、まぁさまざまな、埋没原価にこだわらず一番良い方法を選ぶようにしたいと思っています。",
+          "link": "https://katsumakazuyo.hatenablog.com/entry/2023/02/15/074920",
+          "publishedOn": "2023-02-14T22:49:20.000Z",
+          "wordCount": null,
+          "title": "そして、音声入力を、結局またSimejiに戻してる私",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889963109298",
           "author": null,
           "description": "タイムパフォーマンスに特化した新作、本日発売です。よかったら、ぜひ、ご一読ください！！\n\n\n仕事も人生もうまくいく！ 勝間式 タイムパフォーマンスを上げる習慣\n作者:勝間和代\n宝島社\nAmazon\n \n勝間式 タイムパフォーマンスを上げる習慣",
@@ -7743,6 +7758,16 @@
       "siteUrl": "https://note.com/sizes",
       "articles": [
         {
+          "id": "https://note.com/sizes/n/nb9a66d93db39",
+          "author": null,
+          "description": "健常者の方々はもうポケモンSVの話をしていないのですが、実はポケモンオタクもポケモンSVの話をしていないのかもしれない。ポケモンオタクはポケモンを辞めてもポケモンオタクでいられるからです。\n僕は最初の1シーズンに600戦して、売りました。ちなみにデータも消したのでもう復帰することはありません。今はもう辛くないんですが‥‥明確に時間の無駄だと痛感したし、20日に中間1位とかになって最後に負け込んだのは死ぬほど辛かったです。\n続きをみる",
+          "link": "https://note.com/sizes/n/nb9a66d93db39",
+          "publishedOn": "2023-02-14T22:52:44.000Z",
+          "wordCount": null,
+          "title": "自己洗脳して1ヶ月でポケモンを600戦してた謎の1ヶ月間と、そこから得た気づき",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/98053343/rectangle_large_type_2_af2394b4e27f939619a0a0467d11a9eb.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/sizes/n/n1b20675b37c1",
           "author": null,
           "description": "僕は昔6歳年下の子に奢られたことがある‥‥2000円くらい。\n要するに財布を忘れてしまったから奢られたのだけれど、「今度会った時返すね」と言ったら、鼻にデコピンされてしまった。「これでチャラね」みたいなことを言われて、そのまま帰った。2000円は返してないです。\n男が女性や年下に奢るのって、男側が損をしているように見える。ただ男には甲斐性という不可視な概念があり、「甲斐性値」が下がってしまうと、自己評価も連動して下がる‥‥というめんどくさいシステムを持ち合わせているのだ。だから奢ることって手っ取り早く「甲斐性値」を上げる方法だし、身もフタもないことを言うと、何もステータスがなくてもポイントを稼げる貴重な手段なのだ。\n続きをみる",
@@ -10761,16 +10786,6 @@
           "wordCount": null,
           "title": "得意領域を超えるためのフロントエンド勉強会を実施した際の工夫",
           "imageUrl": null
-        },
-        {
-          "id": "23549",
-          "author": null,
-          "description": "はじめに こんにちは！ソウゾウのProduct Managerの@toshikiです。 「メルカリShops [フライング] アドベントカレンダー2022」の9日目を担当します。 この記事では、ソウゾウのProduct  […]",
-          "link": "https://engineering.mercari.com/blog/entry/20221117-pm-development/",
-          "publishedOn": "2022-11-17T11:00:08.000Z",
-          "wordCount": 931,
-          "title": "ソウゾウではPMも含めて全員ソフトウェアエンジニアやで",
-          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2022/11/0f485501-flyingadventcalendar_09.png"
         }
       ]
     },
