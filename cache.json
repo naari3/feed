@@ -9853,16 +9853,6 @@
           "wordCount": null,
           "title": "パスワード管理/MFA管理の戦略",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2022/11/18/lint-night/",
-          "author": null,
-          "description": "Lint Night #1でtextlintについて発表してきました。\nスライド: textlint - Linterの作り方\ntextlint - Linterの作り方では、textlintを作った背景や自然言語に大統一フォーマットは無理であるためプラガブルなアーキテクチャをとった理由などについて話しています。\nまた、プラガブルなアーキテクチャのメリットやデメリット、プラガブルにすることでコアの責務をはっきりさせることができます。\n一方で、メンテナンスも分離されてしまうという問題に対応するコミュニティの話などを話しています。\ntextlintでは、パーサ、ルール、フォーマッターが全てプラグインとして実装できます。\nパーサはコアに近いものにしてtextlint organizationにプラグインコミュニティを作り、ルールなどは別のOrganizationに分けている話なども紹介しています。\ntextlint plugin ownership · Discussion #1 · textlint\n1Password for Open Source Projectsの申請をした | Web Scratch\n最後にLinterなどを開発するためには、使わないと作れないという話をしています。\n自分が作ってるもう一つのLinterdであるSecretlintなどの事例も一緒に紹介しています。\n懇親会では、プラグインアーキテクチャの話が多い感じでした。\n次の書籍で、JavaScriptでよくみるプラグインの仕組みを紹介しているので、参考にしてみてください。\nJSのプラグインシステムについて書くJavaScript Plugin Architecture 2.0をリリースしました | Web Scratch\nこの書籍について · JavaScript Plugin Architecture\nおわりに\nLint Night #1 - connpass 運営ありがとうございました。",
-          "link": "https://efcl.info/2022/11/18/lint-night/",
-          "publishedOn": "2022-11-18T12:52:00.000Z",
-          "wordCount": 562,
-          "title": "Lint NightでtextlintとLinterの作り方について発表した",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
