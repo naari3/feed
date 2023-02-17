@@ -1402,6 +1402,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889963672517",
+          "author": null,
+          "description": "defined?の中で代入をすると、バイトコードには変数定義が現れないけれど、変数が定義されると知った。\n$ ruby --dump=insns -e 'defined? a=1; p a'\n== disasm: #<ISeq:<main>@-e:1 (1,0)-(1,17)> (catch: false)\nlocal table (size: 1, argc: 0 [opts: 0, rest: -1, post: 0, block: -1, kw: -1@-1, kwrest: -1])\n[ 1] a@0\n0000 putself                                                          (   1)[Li]\n0001 getlocal_WC_0                          a@0\n0003 opt_send_without_block                 <calldata!mid:p, argc:1, FCALL|ARGS_SIMPLE>\n0005 leave\n\n# 変数定義はしっかりある\n$ ruby -e 'defined? a=1; p a; p binding.local_variables'\nnil\n[:a]\nruby-jpで「特定のローカル変数への代入がバイトコード上にあらわれないもの」は何があるか、という質問がしばらく前にあったので、それを思い出して挙動を眺めていた。\n↑を思い出したきっかけが、コードを読んでいてdefined? yieldがあり、「yieldという名前のメソッドが定義されているかどうかをdefined?で検査できないのでは…？」と思いついたからだった。\nこれをきっかけにdefined?のドキュメントを読んでいて、ローカル変数のことに思い至った。",
+          "link": "https://commits.hatenablog.com/entry/2023/02/17/100002",
+          "publishedOn": "2023-02-17T01:00:02.000Z",
+          "wordCount": null,
+          "title": "2023-02-16",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889962168807",
           "author": null,
           "description": "福岡Rubyist会議03の資料を作っている。\n\n買っちった pic.twitter.com/CIKqVu8TCU\n— 🎹 (@p_ck_) February 11, 2023\n  twitter.com\n\nVinut 紅毛榴蓮汁 330ml×24缶 サワーソップジュース 清涼飲料水\n\nVinut\nAmazon\n\nグヤバノジュース(ジュースではない)が美味しかったのでAmazonで箱で買った。\n\nグヤバノ・ホリデー (楽園コミックス)\n\n作者:panpanya\n白泉社\nAmazon\n\n合わせて読みたい\n\nMy new gear... pic.twitter.com/qPeL9yr86b\n— 🎹 (@p_ck_) February 11, 2023\n  twitter.com\n社で「記念日ごとに眼鏡を買っている」という話を聞いて、記念日(誕生日)なので眼鏡を買ってみた。",

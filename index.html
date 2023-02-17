@@ -74,6 +74,47 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2023-02-17">2023-02-17</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2023-02-16</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2023/02/17/100002" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>defined?の中で代入をすると、バイトコードには変数定義が現れないけれど、変数が定義されると知った。
+$ ruby --dump&#x3D;insns -e &#x27;defined? a&#x3D;1; p a&#x27;
+&#x3D;&#x3D; disasm: #@-e:1 (1,0)-(1,17)&gt; (catch: false)
+local table (size: 1, argc: 0 [opts: 0, rest: -1, post: 0, block: -1, kw: -1@-1, kwrest: -1])
+[ 1] a@0
+0000 putself                                                          (   1)[Li]
+0001 getlocal_WC_0                          a@0
+0003 opt_send_without_block                 
+0005 leave
+
+# 変数定義はしっかりある
+$ ruby -e &#x27;defined? a&#x3D;1; p a; p binding.local_variables&#x27;
+nil
+[:a]
+ruby-jpで「特定のローカル変数への代入がバイトコード上にあらわれないもの」は何があるか、という質問がしばらく前にあったので、それを思い出して挙動を眺めていた。
+↑を思い出したきっかけが、コードを読んでいてdefined? yieldがあり、「yieldという名前のメソッドが定義されているかどうかをdefined?で検査できないのでは…？」と思いついたからだった。
+これをきっかけにdefined?のドキュメントを読んでいて、ローカル変数のことに思い至った。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2023-02-16">2023-02-16</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -25572,7 +25613,7 @@ Phasmophobiaについて
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-02-17T00:02:58.898Z">2023-02-17T00:02:58.898Z</time>
+    <time id="build-timestamp" datetime="2023-02-17T01:29:24.543Z">2023-02-17T01:29:24.543Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-17T00:02:58.963Z</updated>
+    <updated>2023-02-17T01:29:24.601Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2023-02-16]]></title>
+        <id>hatenablog://entry/4207112889963672517</id>
+        <link href="https://commits.hatenablog.com/entry/2023/02/17/100002"/>
+        <updated>2023-02-17T01:00:02.000Z</updated>
+        <summary type="html"><![CDATA[defined?の中で代入をすると、バイトコードには変数定義が現れないけれど、変数が定義されると知った。
+$ ruby --dump=insns -e 'defined? a=1; p a'
+== disasm: #<ISeq:<main>@-e:1 (1,0)-(1,17)> (catch: false)
+local table (size: 1, argc: 0 [opts: 0, rest: -1, post: 0, block: -1, kw: -1@-1, kwrest: -1])
+[ 1] a@0
+0000 putself                                                          (   1)[Li]
+0001 getlocal_WC_0                          a@0
+0003 opt_send_without_block                 <calldata!mid:p, argc:1, FCALL|ARGS_SIMPLE>
+0005 leave
+
+# 変数定義はしっかりある
+$ ruby -e 'defined? a=1; p a; p binding.local_variables'
+nil
+[:a]
+ruby-jpで「特定のローカル変数への代入がバイトコード上にあらわれないもの」は何があるか、という質問がしばらく前にあったので、それを思い出して挙動を眺めていた。
+↑を思い出したきっかけが、コードを読んでいてdefined? yieldがあり、「yieldという名前のメソッドが定義されているかどうかをdefined?で検査できないのでは…？」と思いついたからだった。
+これをきっかけにdefined?のドキュメントを読んでいて、ローカル変数のことに思い至った。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「第1回15秒以下音MAD晒しイベント」とは何だったのか]]></title>
         <id>https://note.com/nanana555/n/n0e3bf497a92a</id>
