@@ -6409,21 +6409,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221203/20221203160227.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889938275861",
-          "author": null,
-          "description": "ども、@kimihom です。\n\n久々に無限スクロールを実装する機会が 詠みラボで発生しました。そこで、振り返りがてら、こんな感じで実装するのが個人的に一番シンプルだったコードをご紹介します。\nサーバー側実装\n俳句(Haiku) をそれぞれ20句ごとに毎回取得し、スクロール下部についたら新しく20件を取得します。HTMLの生成は Rails サーバー側で実施し、それをフロントエンド側では単に HTML を追加するだけの処理になっています。\n# Gemfile\ngem \"kaminari\"\n\n# config/routes.rb\nresources :haiku\n\n# app/models/haiku.rb\nclass Haiku < ApplicationRecord\n  paginates_per 20\nend\n\n# app/controllers/haiku_controller.rb\nclass HaikuController < ApplicationController\n  before_action :authenticate_user!, only: [:new, :create, :update]\n\n  def index\n    @haikus = Haiku\n      .page(params[:page])\n      .order(\"created_at DESC\")\n\n    # 重要. スクロール時はlayoutを含めない\n    return render layout: false if params[:no_layout]\n  end\n\nend\n\n\n\n\n\n<%# app/views/haiku/index.html.erb %>\n<div id=\"haikuCmp\">\n  <% @haikus.each do |haiku| %>\n   …",
-          "link": "https://www.bokukoko.info/entry/2022/11/20/172630",
-          "publishedOn": "2022-11-20T08:26:30.000Z",
-          "wordCount": null,
-          "title": "Rails でシンプルな無限スクロール実装",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221119/20221119173208.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221119/20221119173208.jpg"
         }
       ]
     },
@@ -7195,16 +7180,6 @@
           "wordCount": null,
           "title": "サーモンラン　8週目",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/92220104/rectangle_large_type_2_f640c3fdccc4170ff22c52a38f0b7ad1.png?width=800"
-        },
-        {
-          "id": "https://note.com/izumi_pogo/n/n061724cbb194",
-          "author": null,
-          "description": "苦手なブキから逃げちゃいけないなって、シェケナダムダイナモ回をある程度やった。\nダイナモやればやるほどアメフラシの凶悪さがわかるね。何のブキ使ってもアメは強いから侮っちゃダメってわかってるけど、つい甘くなっちゃうんだよなあ。\n続きをみる",
-          "link": "https://note.com/izumi_pogo/n/n061724cbb194",
-          "publishedOn": "2022-11-20T08:57:13.000Z",
-          "wordCount": null,
-          "title": "サーモンラン　7週目",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/91591718/rectangle_large_type_2_33c25139e774d4d7864d0dae5ed23ecc.png?width=800"
         }
       ]
     },
