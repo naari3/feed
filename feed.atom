@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-20T06:02:05.059Z</updated>
+    <updated>2023-02-20T07:01:52.397Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[小さいけれども、スーパー大発見。ピクセルの音声入力ボタンが右クリックでも押せました]]></title>
+        <id>hatenablog://entry/4207112889964842189</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/02/20/154254"/>
+        <updated>2023-02-20T06:42:54.000Z</updated>
+        <summary type="html"><![CDATA[私は音声入力を使う時によくピクセルを立ち上げて、こちらをリモートマウスというソフトウェアを使ってパソコンに流し込んでいます。
+そして音声入力のボタンがとても小さいので、普段マウスでクリックしているのですが、だいたい右手にはパソコン用のマウスを持ってるので、左手に Android につなげた別のマウスを使っていました。
+そして当たり前のように左手に繋がってるとはいえ、Android の使用で左右のボタンの切り替えができないので、仕方がなく左クリックすなわち中指でこれまでクリックをしていたのですが、ふと、なんとなく右クリックすなわち人差し指でクリックをしたらなんとちゃんと動くじゃないですか。
+これまでわざわざ左手専用のトラックボールを入手しようとしたり、色々大変だったのですが、これで Bluetooth のマイクロソフトが出てるような左右対称の普通のマウスでも何でも普通に使えることになりました
+まあ、普段ピクセルで音声入力をパソコンに流し込んでる人がそんなに多いとは思えませんが、もし左手でマウスを使ってる人がいたら右クリックでもこれ入力できますので、人差し指が使えますので是非お勧めです。細かいけれどもやってみてください。とにかく普段の生産性を上げるのに、こういうスーパー細かいことが1つ1つ大事だと私を思っています。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[amplify-swiftを使ってAmazon CognitoでFederated Loginするときにクライアント設定で不必要なIdentity Providerを有効にしない]]></title>
         <id>hatenablog://entry/4207112889964820587</id>
