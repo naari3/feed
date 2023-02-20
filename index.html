@@ -78,63 +78,46 @@
     <ul class="sources card">
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
-              rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">小さいけれども、スーパー大発見。ピクセルの音声入力ボタンが右クリックでも押せました</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2023/02/20/154254" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>私は音声入力を使う時によくピクセルを立ち上げて、こちらをリモートマウスというソフトウェアを使ってパソコンに流し込んでいます。
-そして音声入力のボタンがとても小さいので、普段マウスでクリックしているのですが、だいたい右手にはパソコン用のマウスを持ってるので、左手に Android につなげた別のマウスを使っていました。
-そして当たり前のように左手に繋がってるとはいえ、Android の使用で左右のボタンの切り替えができないので、仕方がなく左クリックすなわち中指でこれまでクリックをしていたのですが、ふと、なんとなく右クリックすなわち人差し指でクリックをしたらなんとちゃんと動くじゃないですか。
-これまでわざわざ左手専用のトラックボールを入手しようとしたり、色々大変だったのですが、これで Bluetooth のマイクロソフトが出てるような左右対称の普通のマウスでも何でも普通に使えることになりました
-まあ、普段ピクセルで音声入力をパソコンに流し込んでる人がそんなに多いとは思えませんが、もし左手でマウスを使ってる人がいたら右クリックでもこれ入力できますので、人差し指が使えますので是非お勧めです。細かいけれどもやってみてください。とにかく普段の生産性を上げるのに、こういうスーパー細かいことが1つ1つ大事だと私を思っています。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
-              rel="noopener">たごもりすメモ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">amplify-swiftを使ってAmazon CognitoでFederated Loginするときにクライアント設定で不必要なIdentity Providerを有効にしない</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/02/20/140702" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ていうか有効にしていたつもりもなかったんだけどamplify-swiftがそう動いてしまう、そしてエラーになる、という話。
-結論としては、iOSアプリ側にあるamplifyconfiguration.jsonにおいて不必要なキーCredentialsProviderが存在すると自動的に使われてしまいエラーになるので、キーそのものを削除しなければならない。
-経緯
-Amazon Cognitoを、Google/Facebookその他IDプロバイダーのOAuth認証を通すために使っているが、IdentityProviderとしては使っていない。Web(React)で作っている画面の方ではJS用のAmplifyライブラリを経由していてログインができるんだけど、iOSアプリでSwiftからログイン用の機能を呼び出すと、なんかうまくいかない。認証用の画面が出てきてIDプロバイダー(Google)での認証が通ったあとに画面が閉じて成功も失敗も処理が走らない、という状況になってしまう。
-該当のコードはこんな感じなんだけど、signInWithWebUIが呼ばれたあとのsignInResultが返ってこず、また例外も出てない。:
-    @IBAction func tapSignInButton() {
-        Task {
-            do {
-                print(&quot;Signing in...&quot;)
-                let signInResult &#x3D; try await Amplify.Auth.signInWithWebUI(for: .google, presentationAnchor: self.view.window!, options: .preferPrivateSession())
-               …</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">筋トレで、自分が変わっていくことを感じる。自分に集中する。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.hatenablog.com/entry/change_shiyou" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>わたしも寒くてサボってたランニングを再開してみます！
+
+毎日さまざまな話題のエントリーが生まれるはてなブログの中から「旬な話題」をピックアップする企画「はてなブログで話題」。今回は「自分が変わっていくこと」をテーマに記事を紹介します。
+
+「今年は体を鍛えるぞ」と新年の目標をたてたみなさん！ その後、トレーニングは順調でしょうか。わたしはサボり気味です。外も寒いし、なかなか続けるのも難しいですよね。
+そんなとき、筋トレを続けていそうな方のブログを読んでいると、なんとなく傾向があるように思えてきたんです。
+それは、自分が変わっていくことを意識したり、その時間に集中したりしていること。
+続けることを目的にすると苦しくなってしまいがちですが、自分の体に起こる変化を楽しんだり、トレーニングのあいだに起きていることや、そこで得られるものに注目したりしている方は、自然と習慣化できているように思えました。
+この記事では、そんなみなさんのエントリーをピックアップして紹介します。
+筋トレ以外にも「勉強の習慣を作りたい」「ブログを書き続けたい」と思っている方にも、ヒントがあるかもしれません！
+自分が変わっていくこと
+ただ変わっていくことを認めて、楽しむ
+トレーニングも語学も自分との対話だから、人と比べなくていい
+それだけに集中すること
+デジタルデトックスにもなる
+一人で考える時間を確保する
+筋トレに関するグループに参加してみませんか？
+はてなブログで話題になっているモノ・ヒト・コトを募集しています
+今回紹介したブログ
+この記事の関連商品
+自分が変わっていくこと
+ただ変わっていくことを認めて、楽しむ
+そのようにして日々を過ごしていくと、自分が変わっていくのが文字通り目に見えて分かる。
+変わっていくことのたのしさについて - つのへび日記
+    
+数学者・石井志保子さんのインタビュー記事をきっかけ…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230217/20230217161625.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander" open>
                 <summary class="article-expander__title">今週のはてなブログランキング〔2023年2月第2週〕</summary>
@@ -181,6 +164,60 @@ Amazon Cognitoを、Google/Facebookその他IDプロバイダーのOAuth認証�
     ホロライブ運営「カバー」とにじさんじ運営「ANYCOLOR…</span>
                   </div>
                   <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230220/20230220091541.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
+              rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">小さいけれども、スーパー大発見。ピクセルの音声入力ボタンが右クリックでも押せました</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2023/02/20/154254" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>私は音声入力を使う時によくピクセルを立ち上げて、こちらをリモートマウスというソフトウェアを使ってパソコンに流し込んでいます。
+そして音声入力のボタンがとても小さいので、普段マウスでクリックしているのですが、だいたい右手にはパソコン用のマウスを持ってるので、左手に Android につなげた別のマウスを使っていました。
+そして当たり前のように左手に繋がってるとはいえ、Android の使用で左右のボタンの切り替えができないので、仕方がなく左クリックすなわち中指でこれまでクリックをしていたのですが、ふと、なんとなく右クリックすなわち人差し指でクリックをしたらなんとちゃんと動くじゃないですか。
+これまでわざわざ左手専用のトラックボールを入手しようとしたり、色々大変だったのですが、これで Bluetooth のマイクロソフトが出てるような左右対称の普通のマウスでも何でも普通に使えることになりました
+まあ、普段ピクセルで音声入力をパソコンに流し込んでる人がそんなに多いとは思えませんが、もし左手でマウスを使ってる人がいたら右クリックでもこれ入力できますので、人差し指が使えますので是非お勧めです。細かいけれどもやってみてください。とにかく普段の生産性を上げるのに、こういうスーパー細かいことが1つ1つ大事だと私を思っています。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
+              rel="noopener">たごもりすメモ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">amplify-swiftを使ってAmazon CognitoでFederated Loginするときにクライアント設定で不必要なIdentity Providerを有効にしない</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/02/20/140702" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ていうか有効にしていたつもりもなかったんだけどamplify-swiftがそう動いてしまう、そしてエラーになる、という話。
+結論としては、iOSアプリ側にあるamplifyconfiguration.jsonにおいて不必要なキーCredentialsProviderが存在すると自動的に使われてしまいエラーになるので、キーそのものを削除しなければならない。
+経緯
+Amazon Cognitoを、Google/Facebookその他IDプロバイダーのOAuth認証を通すために使っているが、IdentityProviderとしては使っていない。Web(React)で作っている画面の方ではJS用のAmplifyライブラリを経由していてログインができるんだけど、iOSアプリでSwiftからログイン用の機能を呼び出すと、なんかうまくいかない。認証用の画面が出てきてIDプロバイダー(Google)での認証が通ったあとに画面が閉じて成功も失敗も処理が走らない、という状況になってしまう。
+該当のコードはこんな感じなんだけど、signInWithWebUIが呼ばれたあとのsignInResultが返ってこず、また例外も出てない。:
+    @IBAction func tapSignInButton() {
+        Task {
+            do {
+                print(&quot;Signing in...&quot;)
+                let signInResult &#x3D; try await Amplify.Auth.signInWithWebUI(for: .google, presentationAnchor: self.view.window!, options: .preferPrivateSession())
+               …</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -25911,7 +25948,7 @@ OGP は AI が考えるニコニコ動画です。 ブログに動画を埋め�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-02-20T08:02:03.642Z">2023-02-20T08:02:03.642Z</time>
+    <time id="build-timestamp" datetime="2023-02-20T09:02:01.182Z">2023-02-20T09:02:01.182Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
