@@ -78,6 +78,36 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
+              rel="noopener">たごもりすメモ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">amplify-swiftを使ってAmazon CognitoでFederated Loginするときにクライアント設定で不必要なIdentity Providerを有効にしない</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/02/20/140702" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ていうか有効にしていたつもりもなかったんだけどamplify-swiftがそう動いてしまう、そしてエラーになる、という話。
+結論としては、iOSアプリ側にあるamplifyconfiguration.jsonにおいて不必要なキーCredentialsProviderが存在すると自動的に使われてしまいエラーになるので、キーそのものを削除しなければならない。
+経緯
+Amazon Cognitoを、Google/Facebookその他IDプロバイダーのOAuth認証を通すために使っているが、IdentityProviderとしては使っていない。Web(React)で作っている画面の方ではJS用のAmplifyライブラリを経由していてログインができるんだけど、iOSアプリでSwiftからログイン用の機能を呼び出すと、なんかうまくいかない。認証用の画面が出てきてIDプロバイダー(Google)での認証が通ったあとに画面が閉じて成功も失敗も処理が走らない、という状況になってしまう。
+該当のコードはこんな感じなんだけど、signInWithWebUIが呼ばれたあとのsignInResultが返ってこず、また例外も出てない。:
+    @IBAction func tapSignInButton() {
+        Task {
+            do {
+                print(&quot;Signing in...&quot;)
+                let signInResult &#x3D; try await Amplify.Auth.signInWithWebUI(for: .google, presentationAnchor: self.view.window!, options: .preferPrivateSession())
+               …</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -25902,7 +25932,7 @@ Twitterをしていると似た人が自分の周りに集まって来る。そ�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-02-20T05:01:47.178Z">2023-02-20T05:01:47.178Z</time>
+    <time id="build-timestamp" datetime="2023-02-20T06:02:05.011Z">2023-02-20T06:02:05.011Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -6027,6 +6027,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889964820587",
+          "author": null,
+          "description": "ていうか有効にしていたつもりもなかったんだけどamplify-swiftがそう動いてしまう、そしてエラーになる、という話。\n結論としては、iOSアプリ側にあるamplifyconfiguration.jsonにおいて不必要なキーCredentialsProviderが存在すると自動的に使われてしまいエラーになるので、キーそのものを削除しなければならない。\n経緯\nAmazon Cognitoを、Google/Facebookその他IDプロバイダーのOAuth認証を通すために使っているが、IdentityProviderとしては使っていない。Web(React)で作っている画面の方ではJS用のAmplifyライブラリを経由していてログインができるんだけど、iOSアプリでSwiftからログイン用の機能を呼び出すと、なんかうまくいかない。認証用の画面が出てきてIDプロバイダー(Google)での認証が通ったあとに画面が閉じて成功も失敗も処理が走らない、という状況になってしまう。\n該当のコードはこんな感じなんだけど、signInWithWebUIが呼ばれたあとのsignInResultが返ってこず、また例外も出てない。:\n    @IBAction func tapSignInButton() {\n        Task {\n            do {\n                print(\"Signing in...\")\n                let signInResult = try await Amplify.Auth.signInWithWebUI(for: .google, presentationAnchor: self.view.window!, options: .preferPrivateSession())\n               …",
+          "link": "https://tagomoris.hatenablog.com/entry/2023/02/20/140702",
+          "publishedOn": "2023-02-20T05:07:02.000Z",
+          "wordCount": 874,
+          "title": "amplify-swiftを使ってAmazon CognitoでFederated Loginするときにクライアント設定で不必要なIdentity Providerを有効にしない",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889957068718",
           "author": null,
           "description": "世間に死ぬほど色々な方法があるのはわかっているがとにかくまっさらな状態から最短手順でEmacsでJSX/TSXが書けるようになりたい! という話。VSCodeとかそういう話には目を背ける。\n\ntsxファイルはweb-modeで起動するようにすればシンタックスハイライトとインデントはうまくいくので、あとはlspを起動するようにすれば快適です！\n— つかもとたけし (@itometeam) 2023年1月23日\n  \n自分で調べつつ試行錯誤したんだけど、最終的にはこのtweetで教えてもらった通りになった。メジャーモードとしてweb-modeを使いつつflycheckとLSPで開発支援。\nmacOSにインストールしたEmacs*1、およびMELPAにあるパッケージだけで、以下のようになった。\n(require 'web-mode)\n(add-to-list 'auto-mode-alist '(\"\\\\.ts[x]?\\\\'\" . web-mode))\n(add-hook 'web-mode-hook 'lsp)\n  \n(setq web-mode-markup-indent-offset 2)\n(setq web-mode-css-indent-offset 2)\n(setq web-mode-code-indent-offset 2)\n\n\n\nEmacs + web-mode + lsp\n補完も効く\n事前にM-x list-packagesしてweb-mode、lsp-modeをインストール後に上記の設定をした。あとlanguage-serverをnpm install -g typescript-language-server typescriptしてインストールしてある。\n他に関係あるのはcompanyとflycheckかな? companyは以下のように読み込みと余計なこと…",

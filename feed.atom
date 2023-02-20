@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-20T05:01:47.237Z</updated>
+    <updated>2023-02-20T06:02:05.059Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[amplify-swiftを使ってAmazon CognitoでFederated Loginするときにクライアント設定で不必要なIdentity Providerを有効にしない]]></title>
+        <id>hatenablog://entry/4207112889964820587</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2023/02/20/140702"/>
+        <updated>2023-02-20T05:07:02.000Z</updated>
+        <summary type="html"><![CDATA[ていうか有効にしていたつもりもなかったんだけどamplify-swiftがそう動いてしまう、そしてエラーになる、という話。
+結論としては、iOSアプリ側にあるamplifyconfiguration.jsonにおいて不必要なキーCredentialsProviderが存在すると自動的に使われてしまいエラーになるので、キーそのものを削除しなければならない。
+経緯
+Amazon Cognitoを、Google/Facebookその他IDプロバイダーのOAuth認証を通すために使っているが、IdentityProviderとしては使っていない。Web(React)で作っている画面の方ではJS用のAmplifyライブラリを経由していてログインができるんだけど、iOSアプリでSwiftからログイン用の機能を呼び出すと、なんかうまくいかない。認証用の画面が出てきてIDプロバイダー(Google)での認証が通ったあとに画面が閉じて成功も失敗も処理が走らない、という状況になってしまう。
+該当のコードはこんな感じなんだけど、signInWithWebUIが呼ばれたあとのsignInResultが返ってこず、また例外も出てない。:
+    @IBAction func tapSignInButton() {
+        Task {
+            do {
+                print("Signing in...")
+                let signInResult = try await Amplify.Auth.signInWithWebUI(for: .google, presentationAnchor: self.view.window!, options: .preferPrivateSession())
+               …]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2023年2月第2週〕]]></title>
         <id>hatenablog://entry/4207112889964759138</id>
