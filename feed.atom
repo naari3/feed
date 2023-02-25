@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-24T23:01:55.484Z</updated>
+    <updated>2023-02-25T00:03:20.020Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[必然性をぶっ壊そう]]></title>
+        <id>https://note.com/sizes/n/nb37b1b007eb8</id>
+        <link href="https://note.com/sizes/n/nb37b1b007eb8"/>
+        <updated>2023-02-24T23:21:03.000Z</updated>
+        <summary type="html"><![CDATA[どうも、現実チャンネルの自由さコンです 今回はプレデター帯でも知る人ぞ知る立ち回り、中身が誰がもわかんねえ鍵垢にフォロリク送る を実践していこうと思います まず素人さんはついついアイコンを適当にしてしまいがちですが、ここで必ずアイコンを媚び系萌え絵顔アップにしてください
+— 自由さのサブ (@toukashitekure) February 23, 2023
+
+Kiite Cafeというサービスに登録してみた。まずニコニコに投稿されたボカロ曲をザッピングするインターフェイスで好みの曲を「発掘」して、参加者の立場からプレイリストにまとめる‥‥ということができるコンテンツなんだけれど、このインターフェイスがすごい。再生数の多寡やマイリスト率などの定量化できるデータのほか、曲を「激しい」「抒情的」みたいな感性レベルの性質で絞り込めたり、「踊りたくなる・ならない」という、観測はできないけど確かに存在する二項対立を条件付けできたりする。
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ひとくちアニメ紹介004．宝島]]></title>
         <id>hatenablog://entry/4207112889964618756</id>
@@ -19054,34 +19068,6 @@ Amazon
 上の記事でも紹介しているが、改めて書いておこう。日本で売れているビジネス書を100冊選び、それらを厳選した27の教えにまとめた本だ。この1冊があれば他にはいらない。組入書籍として採用されたのは刊行が2016年以降*3、推定発行10万部以上*4など、複数の条件*5を満たした本であり、その内訳は国内82%、外…]]></summary>
         <author>
             <name>本しゃぶり</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[パスワード管理/MFA管理の戦略]]></title>
-        <id>https://efcl.info/2022/11/27/password-mfa-strategy/</id>
-        <link href="https://efcl.info/2022/11/27/password-mfa-strategy/"/>
-        <updated>2022-11-27T11:43:00.000Z</updated>
-        <summary type="html"><![CDATA[自分のパスワードやMFA(多要素認証)の管理方法についてまとめた記事です。
-パスワード管理とTOTP(Time-based One-time Password)の管理として1Passwordを使い、MFA(多要素認証)の2要素目としてYubiKeyを2枚使っています。
-パスワード管理とMFA管理を安全で使いやすくするのはかなり複雑で難しいため、完璧にやるのが難しいです。
-そのため、その難しさから二要素認証を設定するべきアカウントも手間などから設定を省いてしまったり、管理方法に一貫性がないことがありました。
-この記事では、パスワード管理/MFA管理の戦略を決めることで、どのサイトのどのアカウントのパスワード管理をあまり頭を使わなくてもできるようにするのが目的です。利便性と安全性のバランスを意識はしていますが、この記事のやり方が正解ではないので、各自の目的に合わせて読み替えると良いと思います。
-パスワード管理方法のNotionテンプレート
-この記事で書いている管理方法をまとめたNotionテンプレートを公開しています。
-[テンプレート] MFAの管理方法
-右上の複製ボタンから、Notionにコピーして利用できます。
-テンプレートでは、アカウントが重要アカウントかサイトがセキュリティキーに対応していかなどにチェックを入れると、自動的に管理方法を出してくれます。
-
-テンプレートを見れば大体やりたいことはわかると思いますが、どのような流れになっているかを解説していきます。
-必要なもの
-このパスワード管理/MFA管理をするには、次の2つのものが必要です。
-1Password、LastPass、BitwardenのようなTOTPに対応したパスワードマネジャー
-Yubikey などのセキュリティキー を 2枚
-
-セキュリティーキーを2枚使うのは、紛失対策で片方はバックアップ用途です
-iOS…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
