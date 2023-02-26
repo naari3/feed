@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-26T07:01:51.562Z</updated>
+    <updated>2023-02-26T08:01:46.335Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[アンドロイドの親指シフトの同時打鍵の秒数を調整してみました。いい感じです。]]></title>
+        <id>hatenablog://entry/4207112889966652793</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/02/26/161644"/>
+        <updated>2023-02-26T07:16:44.000Z</updated>
+        <summary type="html"><![CDATA[私がアンドロイドを使っている大きな理由の一つは、
+Oyamozc
+という、親指シフトがBluetoothで使えるためです。iOS系だと、かえうちのような物理変換キーを入れないと、親指シフトできないので。
+ただ、同時打鍵について、自分が一番間違えない秒数を丁寧に設定しないと、ミスタッチが多くなって使いにくくなってしまいます。
+親指シフトの同時打鍵を
+・親指キーを押したあとで本来のキー
+・本来のキーを押したあとで親指キー
+の２種類の判定があるのですが、私は前者をデフォルトの200msより長めに、後者を短めにすると、ちょうどミスタッチが減りました。
+これは人によって調整が違うと思うので、いろいろミスタッチが出たときに、試してみてください。
+とにかく、親指シフトがスマホでもできると本当に幸せです。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2023年2月-④】U]]></title>
         <id>hatenablog://entry/4207112889966620679</id>
