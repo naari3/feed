@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-28T07:01:45.987Z</updated>
+    <updated>2023-02-28T08:02:08.388Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[SwiftUIでStickyなタブを実現する]]></title>
+        <id>hatenablog://entry/4207112889967248624</id>
+        <link href="https://techlife.cookpad.com/entry/2023/02/28/163645"/>
+        <updated>2023-02-28T07:36:45.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。クックパッド事業部でiOSアプリの開発をしている新堀(@tk108gabalian)です。
+導入の背景
+2022年7月にリリースした「のせる」画面には以下の要件がありました。
+画面上部にユーザー情報を表示する。
+ユーザー情報の下にタブを表示する。
+タブをタップするか、タブより下を横にスワイプすることでタブの切り替えが可能。
+画面全体をスクロールできるが、ユーザー情報が隠れるまでスクロールしたら画面上部にタブが固着し、以降はタブより下の部分のみスクロールする。（逆方向にスクロールする場合は再度ユーザー情報が表出する。）
+
+また、事業的な希望ではありませんが、開発メンバー達の中ではSwiftUIで画面を実装したいという気持ちがありました。
+というのも、この「のせる」以前の画面は基本的にUIKitで作られており、SwiftUIと比べてUIの変更に時間がかかることが課題としてあったからです。
+UIKitでこのStickyHeader実現することは可能だと分かっていました。
+TabViewなしのStickyHeaderの実現方法
+横スクロールによるタブの切り替えを実現するため、SwiftUIのTabViewを使うことを検討していました。
+しかし、検証を進めると、TabViewを使いつつStickyHeaderを実現する難しさが分かってきました。
+まずはTabViewを使わない場合のStickyHeaderの実現方法を見てみます。
+pinnedViewsに.sectionHeadersを指定した上で、LazyVStackの中のSectionにheaderとなるViewを指定するだけです。
+struct ContentView: View {
+    var body: some View {
+        ScrollView {
+            LazyVSta…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[こちらもスーパー細かいことですが、黒いマウスパッドの上に載せるマウスの色を白くしてみました視認性が良くなりました]]></title>
         <id>hatenablog://entry/4207112889967208940</id>
