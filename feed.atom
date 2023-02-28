@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-02-28T08:02:08.388Z</updated>
+    <updated>2023-02-28T09:01:57.765Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Windows 11のデベロッパーモードをやめて製品版にしたら音声入力がまともになりました]]></title>
+        <id>hatenablog://entry/4207112889967285448</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/02/28/172753"/>
+        <updated>2023-02-28T08:27:53.000Z</updated>
+        <summary type="html"><![CDATA[ある時から突然、Windows11の音声入力が調子が悪くなりました。その理由はどうも私がベータチャンネルに参加しているのでそのアップデートでおかしくなったようでした。
+とりあえずベータチャンネルはキャンセルしたのですが、次の大型アップデートが来るまで製品版に戻ることができません。しばらく様子を見ていたのですが、とても製品版に戻る感じがしなかったので、とりあえずデベロッパーモードをやめてクリーンインストールすることにしました。
+ユーザーデータを残したままWindows11の製品版に入れ替えるものは、１時間足らずで終わってしまいますし、その後、ChromeとかGoogleドライブとか主要なソフトウェアをいくつか入れるだけなので、実は大した手間暇がかからないということをやってみてわかりました。
+そして一番やりたかったことは何かというと、やたらめったら算用数字と漢数字が入れ替わってしまうのがやっとなくなりました。
+「一定割合」と入力したときに、毎回毎回
+「1定割合」
+みたいになってしまうのが、ものすごいストレスだったのです。
+あと理由も分かりませんが、なぜか固有名詞が全然聞き取れなくなって、私の名前などもうまく変換できなくなってしまっていたのです。
+とりあえず製品版に戻して落ち着いたのでホッとしました。
+しばらくあのソフトウェアがないと、このドライバーがないとか、ちょっとパタパタするかと思いますが、それはそれでまたやり直したいと思います。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SwiftUIでStickyなタブを実現する]]></title>
         <id>hatenablog://entry/4207112889967248624</id>
