@@ -78,6 +78,95 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://staff.hatenablog.com/" target="_blank"
+              rel="noopener">はてなブログ開発ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">技術者向けTips: はてなブログでMermaid記法を利用する方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://staff.hatenablog.com/entry/2023/03/01/164316" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>いつもはてなブログをご利用いただきありがとうございます。
+さて、はてなブログには、
+はてなブログは、Mermaid記法に対応する予定はないでしょうか？
+というご質問をいただくことがあります。はてなブログはJavaScriptやCSSなどをご自身で記載し、自由にカスタムできるプラットフォームです。Mermaidの対応も、少し設定を加えることでご自身のブログに導入することが可能です。
+Mermaidとは
+Mermaidとは、テキストでダイアグラムやチャートを記述する仕様のことです。また、その記述方法がMermaid記法と呼ばれています。
+例えば、以下の記述が、
+graph LR;
+    書く-- 読みたくなる --&gt;読む;
+    読む-- 書きたくなる --&gt;書く;
+    読む-- 共感する --&gt;はてなスター;
+    はてなスター-- モチベート --&gt;書く;
+以下のようなグラフとして展開されます。
+graph LR;
+    書く-- 読みたくなる --&gt;読む;
+    読む-- 書きたくなる --&gt;書く;
+    読む-- 共感する --&gt;はてなスター;
+    はてなスター-- モチベート --&gt;書く;
+最近ではGithubやQiita、エディタでのリアルタイムレンダリングなど、Mermaid記法が利用できる環境が増えており、テキストによるダイアグラム表示のデファクトスタンダードとなっています。
+より詳しい使い方については、下記の記事をご参照ください。
+mermaid.js.org
+
+
+はてなブログへの導入方法
+はてなブログにて利用する場合、ブログの詳細設定 
+要素にメタデータを追加 に以下のスクリプトを挿入してください。
+
+  import mermaid from &#x27;https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs&#x27;;
+  mermaid.initialize({ startOnLoad: true });
+
+
+「
+要素にメタデータを追加」設定は開発者向けの設定となります。正しくない設定を保存した場合、ご自身のブログのデザインが崩れたり正常に閲覧できなくなってしまう可能性があります。ご注意ください。
+
+
+
+
+    
+使い方
+編集モード:Markdownをご利用の場合は、コードブロック構文の言語識別子にmermaidを指定してください。
+&#x60;&#x60;&#x60;mermaid
+graph LR;
+  hoge --&gt; fuga;
+&#x60;&#x60;&#x60;
+編集モード:はてな記法をご利用の場合はスーパーPre記法のファイルタイプにmermaidを指定してください。
+ fuga;
+||&lt;
+
+なお、いずれの書き方も通常は構文を強調する際の記法ですが、Github等の先行してMermaidに対応したウェブサイトとの互換を考慮し、例外的な挙動としてご利用いただけます。
+よくある質問
+はてなブログのオプションとしてMermaid記法に対応しないのでしょうか？
+
+現在のところ、はてなブログとしてMermaid記法に対応する予定はございません。これはMermaid記法が主に技術者に向けた機能であり、一般に広く使われることを想定しないこと、利用ライブラリの変更、バージョンを指定したいなどの事情を考慮したものです。
+
+Mermaid記法のシンタックスハイライトを行いたいときはどうしたら良いでしょうか？
+
+現在のところ、はてなブログではMermaid記法のシンタックスハイライトには対応していません。対応する際には mermaid-code など、別のファイルタイプを用意し、レンダリングとシンタックスハイライトを使い分けられるようにしたいと考えています。
+
+
+
+
+    
+技術ブログを書くならはてなブログ
+はてなブログは、上記の通りMermaid記法に対応でき、Texによる数式の対応も可能、API経由での更新も可能など、技術ブログを書きやすいプラットフォームです。技術ブログにはてなブログをどうぞよろしくおねがいします。
+hatena.blog
+どうぞご利用ください。
+
+
+  import mermaid from &#x27;https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs&#x27;;
+  mermaid.initialize({ startOnLoad: true });</span>
+                  </div>
+                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -25716,7 +25805,7 @@ Phasmophobiaに関しては余裕があればとりあえずやってます。�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-03-01T07:01:47.830Z">2023-03-01T07:01:47.830Z</time>
+    <time id="build-timestamp" datetime="2023-03-01T08:02:13.944Z">2023-03-01T08:02:13.944Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
