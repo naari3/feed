@@ -1492,6 +1492,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889967699518",
+          "author": null,
+          "description": "ぜんぜんわからない、俺たちは雰囲気で英語をやっている pic.twitter.com/j8nAdBZMxC\n— 🎹 (@p_ck_) March 1, 2023\n  twitter.com\nTOEICを受験して、880点の結果となった。会社で3ヶ月ほど受けていた英語研修が一旦終わり、その効果を見るための受験だった。\nスコアは680点(L320, R360, 2022-04) → 795点(L430, R365, 2022-11) → 880点(L430, R450 2023-03)と推移していた。1年弱で200点伸びたことになる。\n実際業務での会話やドキュメント読み書きがスムーズになったかと言うと、あんまりわからんですねという気持ち…。正直これだけ取れても英語がスラスラ読めたりするのには程遠いし、まだまだ先は長いなと感じる。\nずっと英語に苦手意識があったので、ある程度の点数が出たのは嬉しい。\n高校英語も大学受験も通って来なかったから結構コンプレックスがあった。今の英語力の下地は、2018年頃に1年ちょっとぐらいマンツーマン英会話教室に通っていたのと、OSSを中心に英語でテキストコミュニケーションする機会が多かったのに支えられていそう。\n反面まともに英語教育を受けてこなかったのもあり、構文などは未だに怪しい。コミュニケーションできることを優先してきたから、すべてを雰囲気で理解している。自分の中では野生児と呼んでいる。\n英会話教室に通っていた頃からの目標の1つに、カンファレンスで英語で登壇することがあった。どうやら今年の5月に松本で英語で登壇することになりそうです。",
+          "link": "https://commits.hatenablog.com/entry/2023/03/02/100009",
+          "publishedOn": "2023-03-02T01:00:09.000Z",
+          "wordCount": 423,
+          "title": "2023-03-01",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889964370874",
           "author": null,
           "description": "福岡Rubyist会議に参加していた。登壇報告ブログは別に書いたので、こっちでは参加報告を書く。夜遅くなってしまったので、てきとーに書いていく。\nそもそも今回の登壇をしようと思ったのは、キーノートスピーカーが魅力的だったからだった。sorahさんとぺんさんがキーノートスピーカーというのが発表されて、めちゃくちゃワクワクしたのを覚えている。sorahさんの発表はあまり聞く機会が今までなかったし、ぺんさんがtrickで異次元の強さを見せつけて優勝したのは記憶に新しく、それらの発表をどうしても見たい気持ちになった。ということで、絶対に発表を見に行くぞと言うつもりでプロポーザルを出した。落ちても1参加者として見に行くつもりだった。\n実際、キーノートはとても良かった。とくにぺんさんの発表良かったですね、よかった…。あれは生の発表で聞いてあのめちゃくちゃさをリアルタイムで感じることができたのは本当に幸せなことだと思う。\n他の人の発表だと、安川さんの発表はタイムテーブルが出たときからとても気になっていた。安川さんの発表は以前にもほかのカンファレンスで何度か見ているのだけど、どの発表も「安川さんだからできる発表」だなあと強く感じる。今回もそれが感じられる発表で、聞けてよかった。配信チャレンジしてみたいなあ。\n質疑応答で松田さんがbefore_allについて突っ込んでいたり、Rubyist Hotlinks について議論が盛り上がったり、これはオフラインだからこその体験だなあと思ってみていた。こういう議論の深まりが表れるのがすごくいい。\n久しぶりに会えていなかった知り合いとお話できたのも良かった。みなさんありがとうございました\n夜は主催者の甚六さんなどと一緒にご飯に行った。こうやって食事に行って会話をするのもすごく懐かしい体験で、良いですね‥。ごはんも美味しかった。\n今私が所属しているマネーフォワードは福岡にも拠点があり、そこの拠点の人々とも話せたりご飯に行けたりしたのも良かった。Slackではいつも話しているのだけど、やっと実在を確認できた。",
@@ -4377,6 +4392,21 @@
       "feedUrl": "https://kmizu.hatenablog.com/rss",
       "siteUrl": "https://kmizu.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/4207112889967755862",
+          "author": null,
+          "description": "今朝未明、ChatGPT APIのリリースが告知されたわけですが、\nopenai.com\n　色々あって手早くとりあえず動くBOTを作ってみました（元々、GPT-3 BOTを作ってあったのでそれの微修正ですが）。ドキュメントは最低限ですが、\nコマンドラインで動く簡易BOT （chat.sh のexport OPENAI_API_KEYを修正した上、sh chat.sh`でいける）\nSlack Bot（こっちはSlack Botを作る知識が多少いる）\n　として使えます。試したいけどコード書くのめんどいなーという人の参考になれば。\ngithub.com\nChatGPT-BOTのデモ",
+          "link": "https://kmizu.hatenablog.com/entry/2023/03/02/090817",
+          "publishedOn": "2023-03-02T00:08:17.000Z",
+          "wordCount": null,
+          "title": "ChatGPT API (gpt-3.5-turbo) をお試しできる簡易アプリを作ってみました",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kmizushima/20230302/20230302090752.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kmizushima/20230302/20230302090752.png"
+        },
         {
           "id": "hatenablog://entry/4207112889949159105",
           "author": null,
@@ -7977,6 +8007,16 @@
       "siteUrl": "https://note.com/sizes",
       "articles": [
         {
+          "id": "https://note.com/sizes/n/n620eefc3c1a9",
+          "author": null,
+          "description": "ぼっち・ざ・ろっく！を見ていない人はいないでしょう。いませんね？一応説明しておくと、あれはネクラだけど眠れる獅子的なギタリストであるぼっちちゃんが、明るくて快活な伊地知虹夏さんというキャラクターに誘われ、社会性を獲得していく物語です。\n伊地知虹夏さんはマニック・ピクシー・ドリーム・ガール(根暗の前に現れるグイグイ系の不思議ちゃんヒロイン)ではないですけれど、NHKにようこそ！の岬ちゃんとか、とらドラのみのりんに見られるヒロイン像をなぞっていると思います。主人公を物語へと誘う天使、と言いますか。\n続きをみる",
+          "link": "https://note.com/sizes/n/n620eefc3c1a9",
+          "publishedOn": "2023-03-02T00:16:08.000Z",
+          "wordCount": null,
+          "title": "「根暗の主人公をグイグイ引っ張ってくれる陽気なヒロイン」って現実にいるしそれこそ原体験やねん",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/99258270/rectangle_large_type_2_192c4e637821ff13f5d2860cb172c1ad.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/sizes/n/n7721395fd394",
           "author": null,
           "description": "3月もよろしくお願いします！これからもどんどん書いていきますので、メンバーシップの継続のほうも、なにとぞ〜。 続きをみる",
@@ -9998,6 +10038,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=18159",
+          "author": "北河 直樹",
+          "description": "どうも名古屋支社の北河です。 普段はアジャイルな日々で情報発信をしていますが、今回はいつもと趣向を変えて位置情報に関係する話をしたいと思います。 位置情報は私が所属している名古屋技術4課が得意とする「...",
+          "link": "https://eng-blog.iij.ad.jp/archives/18159",
+          "publishedOn": "2023-03-02T00:48:18.000Z",
+          "wordCount": null,
+          "title": "みまもりを支える位置情報の “ちょっと怖い話”",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=18261",
           "author": "井田 明",
