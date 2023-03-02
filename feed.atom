@@ -2,10 +2,107 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-02T05:01:54.019Z</updated>
+    <updated>2023-03-02T06:02:26.328Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[はてなブログなら、ブログに原稿を書きためるだけで、そのままリトルプレス（同人誌）が作れます！]]></title>
+        <id>hatenablog://entry/4207112889967827905</id>
+        <link href="https://blog.hatenablog.com/entry/littlepresspack-202303"/>
+        <updated>2023-03-02T05:58:11.000Z</updated>
+        <summary type="html"><![CDATA[リトルプレス初心者にこそ使ってほしい
+はてなブログでは、ブログに原稿を書きためるだけで、そのまま “いい感じのリトルプレス（同人誌）” が作れる「はてなブログのリトルプレスパック」をご用意しています。
+「いつかはリトルプレスを作ってみたいな〜」と思っている方
+「作ってみたいけどやり方がわからないな〜」と思っている方
+「編集ソフトとか持っていないしな〜」と思っている方
+「結構お金かかるんだろうな〜」と思っている方
+「今後出るイベントのリトルプレスどうしようかな〜」と思っている方
+「はてなブログのリトルプレスパック」なら、それらのお悩みを全部解決できます！
+
+はてなブログをはじめる
+
+
+
+    
+はてなブログのリトルプレスパックとは？
+「はてなブログのリトルプレスパック」のポイントを3行で紹介すると、
+
+
+はてなブログに書くだけでリトルプレスが入稿できる
+
+
+本の仕様も部数も価格もはじめから決まっている
+
+
+一冊500円と明朗会計
+
+
+ブログで文章を書く方のリトルプレス（同人誌）を、より簡単に作れる仕組みです。
+はてなブログに書くだけでリトルプレスが入稿できる
+このパックの強みは、はてなブログに書いた原稿のデータをエクスポートすると、そのままMyBooks.jp側の入稿画面に移動し、編集・入稿作業が行えること。
+手順も、
+はてなブログの設定画面からブログ記事をエクスポート（ワンクリック）
+そのまま編集画面に遷移
+編集画面で本と文章の編集・入稿をする
+と非常にシンプルな操作です。
+入稿データを作成するためのInDesignやIllustratorなどの編集ソフトも必要ありません。全部パソコンのブラウザからできます！
+本の仕様も部数も価格もはじめから決まっている
+同人誌を作るときに迷いがちな「サイズ」「紙」「ページ数」「製本方法」「冊数」などが、始めから決まっているため、仕様に迷…]]></summary>
+        <author>
+            <name>週刊はてなブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最適輸送本イベントに寄せて学ぶ]]></title>
+        <id>hatenablog://entry/4207112889967830266</id>
+        <link href="https://vaaaaaanquish.hatenablog.com/entry/2023/03/02/143452"/>
+        <updated>2023-03-02T05:34:52.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+Forkwell Libraryという書籍の著者が登壇するイベントにて、最適輸送の理論とアルゴリズム (機械学習プロフェッショナルシリーズ) の佐藤さん(@joisino_)と話す時間を頂いた。
+forkwell.connpass.com
+スライド
+動画
+その時に事前に学んだメモの公開と、当日のイベントの肌感を残す。
+はじめに
+最適輸送の理論とアルゴリズム
+事前学習
+何に使われているか。
+何が嬉しくて使われているのか
+事前、並行して読むと良いもの
+触ってみる
+イベント当日のQ&A
+おわりに
+最適輸送の理論とアルゴリズム
+MLPシリーズの書籍
+
+最適輸送の理論とアルゴリズム (機械学習プロフェッショナルシリーズ)
+
+作者:佐藤 竜馬
+講談社
+Amazon
+
+最適輸送の理論的な背景から応用まで書かれている。
+機械学習、コンピュータサイエンスなら少しわかる、くらいの私でもちゃんと読めるように、深く入り込まず難しい所に例示を出して優しく書いてくれている上、応用事例まで付いてくるありがたい本。
+
+サポートページとしてGitHubリポジトリも用意されている。
+github.com
+アルゴリズム、最適輸送での画像操作事例など、jupyter notebookで各サンプルが動かせるようになっている。
+
+ざっくりこんな感じになっている。
+1章　各種定義
+2章　最適化問題としての定式化
+    輸送計画とリサイクル業者のイメージ、双対問題
+    ボールによる物理的解釈
+    最適輸送問題の疎性
+    組み合わせ最適化、線形計画法、最小費用流問題（minimum flow cost problem）
+3章　エントロピー正則化、シンクホーンアルゴリズム
+    エントロピー正則化つき問題は強凸、最適解が一意に定まる、微分可能
+    シンクホーンアルゴリズムは「ソフトなC変換」であ…]]></summary>
+        <author>
+            <name>Stimulator</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2023-03-01]]></title>
         <id>hatenablog://entry/4207112889967699518</id>
@@ -19179,16 +19276,6 @@ Javaの文法にHaskellぽい型推論と標準関数をくっつけてみたら
 　こちらは型クラスを推論してくれなかったのですが、たぶんadd()の返り値型がintなの…]]></summary>
         <author>
             <name>kmizuの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[メルカードのマイクロサービスとカード利用開始まで]]></title>
-        <id>24251</id>
-        <link href="https://engineering.mercari.com/blog/entry/20221202-mercard-behind-the-scenes-02/"/>
-        <updated>2022-12-02T18:00:41.000Z</updated>
-        <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2022 の2日目の記事です。 こんにちは。メルペイ バックエンドエンジニアのyuichi.shiwakuです。 はじめに この記事では、今年の11月に新たにメル […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
