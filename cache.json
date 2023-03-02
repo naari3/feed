@@ -4541,21 +4541,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kmizushima/20221204/20221204113515.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889941865681",
-          "author": null,
-          "description": "皆さんおはようございます。見ている人は見ていたかもしれませんが、昨夜はかなり遅くまで巷で話題沸騰のChatGPTによくわからんクエリを投げて、その結果をみてげらげら笑っていました。特に存在しないプログラミング言語であり「ScalaにHaskellと同じ型推論を加えた」言語Scalayがあることにしたら、ChatGPTが本当にHaskellぽい（単なるHMでなく、Haskellぽいというのは型クラスまで推論される辺り）型推論を持つ架空のScalayコードを解釈実行してくれたりしたところは、控えめに言っても予想外の結果で深夜なのに部屋で忍び笑いをしていました。\n\nScalaに引数の型推論を追加したようなパチもんのプログラミング言語Scalay（仮）ができてしまった（ChatGPTと対話してる間だけの短い命）。\n一応、add: (Int, Int) => Int が推論されてるのすばらですね。 pic.twitter.com/ye1g4qdkH2\n— kmizu (@kmizu) 2022年12月2日\n  \n　ちなみに、Javaの文法にHaskellぽい型推論と関数を加えた架空言語Jaskellも無理やり主張してみたのですが、こちらはあくまで「架空言語Jaskellが存在したとして」型推論してくれただけで、存在を認めてもらうには至りませんでした。たぶんちょっとした語尾とかで相手のクエリをそのまま受け入れるかそうじゃないかが変わりそうですが、それはともかくこちらも大変楽しい結果でした。\n\nJavaの文法にHaskellぽい型推論と標準関数をくっつけてみたらこんな感じになりました。 pic.twitter.com/gLwfUlkuTO\n— kmizu (@kmizu) 2022年12月2日\n  \n　こちらは型クラスを推論してくれなかったのですが、たぶんadd()の返り値型がintなの…",
-          "link": "https://kmizu.hatenablog.com/entry/2022/12/03/094737",
-          "publishedOn": "2022-12-03T00:47:37.000Z",
-          "wordCount": null,
-          "title": "ChatGPTはプログラミング言語マスター（語弊ありまくり）",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
