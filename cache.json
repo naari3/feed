@@ -4343,21 +4343,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889942049457",
-          "author": null,
-          "description": "GoogleのPixelが6から7になってスピードがアップしました。\nPixelの音声入力よりも Windows11 の音声入力の方が微妙に同音異義語に対する正確性が上なので、最近はずっと Windows 11の音声入力を使っていたのですが、さすがにPixel 7の音声入力がここまで速くなると多少間違えたとしても、その修正のスピードを考えたらどうもピクセルの方が良さそうです。\nどれぐらい速いかと言うと、 Windows 11の場合は入力してから少し考えて修正しながら入力が始まってピッと出てくるのですが、Pixel7の場合には音声入力ボタンを押し、終わった瞬間にほぼリアルタイムで出ます。\nまあ、さすがにこれはサーバー側で処理をしてるのか、それとも手元のスマホのチップ側で処理をしてるかの差なのでハードウェアで組み込まれた方にはかなわないのかな？と言った印象です。\n遅いけれどもちょっと待ったないと正確に出てこないタイプのものよりは、さすがにさっさと早く出てきてくれたものの方が修正も早いですし、私の音声入力のテンポも良くなります。\nまたちょっとしばらくPixel 7の音声入力を使ってから Windows 11に戻すかどうかは考えようかなと思います。とにかくそれぐらい早いです。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2022/12/03/221754",
-          "publishedOn": "2022-12-03T13:17:54.000Z",
-          "wordCount": null,
-          "title": "Windows 11の音声入力をメインにするのか、Pixel 7の音声入力をメインにするのかいまだに悩んでいます",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -9526,7 +9511,18 @@
       "title": "プリコネの年末年始はヤバイわよ！",
       "feedUrl": "https://note.com/yabaiwayo/rss",
       "siteUrl": "https://note.com/yabaiwayo",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/yabaiwayo/n/nfc7f717309ba",
+          "author": null,
+          "description": "ゲームって面白いですね。\n後編へ続く…\n続きをみる",
+          "link": "https://note.com/yabaiwayo/n/nfc7f717309ba",
+          "publishedOn": "2023-03-03T00:44:52.000Z",
+          "wordCount": null,
+          "title": "好きなゲームについて語ります　前編",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/99336222/rectangle_large_type_2_2438ca8e4c01cbdae3cb4912e96fd15f.jpeg?width=800"
+        }
+      ]
     },
     {
       "title": "山田 航平",
@@ -10884,16 +10880,6 @@
           "publishedOn": "2022-12-04T12:00:32.000Z",
           "wordCount": null,
           "title": "メルペイでのマイクロサービス開発プロセス〜メルカード編〜",
-          "imageUrl": null
-        },
-        {
-          "id": "24255",
-          "author": null,
-          "description": "この記事は、Merpay Advent Calendar 2022 の3日目の記事 メルカードの舞台裏編です。 株式会社メルペイでメルカードのバックエンドサービスを担当している @uechoco です。 「メルカード」は […]",
-          "link": "https://engineering.mercari.com/blog/entry/20221203-mercard-behind-the-scenes-03/",
-          "publishedOn": "2022-12-03T12:00:51.000Z",
-          "wordCount": null,
-          "title": "クレジットカード取引とメルカードマイクロサービスについて",
           "imageUrl": null
         }
       ]
