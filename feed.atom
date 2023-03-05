@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-04T23:01:45.874Z</updated>
+    <updated>2023-03-05T00:03:14.393Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -19204,16 +19204,6 @@ Alacritty で SSH して、cd でプロジェクトのディレクトリまで�
 さらにいうと、KOBA789 は AWS の認証情報管理に aws-vault というツールを使っています。これはアクセスキーやセッショントークンを OS のセキュアなキーチェーンに保存してくれて Credential Provider の一種である Proce…]]></summary>
         <author>
             <name>Write and Run</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[決済システムを壊さずに拡張した話]]></title>
-        <id>24411</id>
-        <link href="https://engineering.mercari.com/blog/entry/20221205-mercard-behind-the-scenes-05/"/>
-        <updated>2022-12-05T12:00:41.000Z</updated>
-        <summary type="html"><![CDATA[メルペイのBackend Engineerの @Hiraku です。与信決済システムのmicroserviceのTech Leadをしております。 この記事は、Merpay Advent Calendar 2022 の5 […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
