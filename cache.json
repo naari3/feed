@@ -6015,6 +6015,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889968933279",
+          "author": null,
+          "description": "2023年3月6日（月）6時4分ごろから8時38分ごろまで、一部のエントリーで更新が反映されない障害が発生しました。\n原因はアプリケーションの不具合によるもので、現在は解消しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2023/03/06/084833",
+          "publishedOn": "2023-03-05T23:48:33.000Z",
+          "wordCount": null,
+          "title": "【復旧済み】はてなブログの一部のエントリーで更新が反映されない障害が発生していました",
+          "enclosure": {
+            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
+        },
+        {
           "id": "hatenablog://entry/4207112889967260250",
           "author": null,
           "description": "いつもはてなブログをご利用いただきありがとうございます。\nさて、はてなブログには、\nはてなブログは、Mermaid記法に対応する予定はないでしょうか？\nというご質問をいただくことがあります。はてなブログはJavaScriptやCSSなどをご自身で記載し、自由にカスタムできるプラットフォームです。Mermaidの対応も、少し設定を加えることでご自身のブログに導入することが可能です。\nMermaidとは\nMermaidとは、テキストでダイアグラムやチャートを記述する仕様のことです。また、その記述方法がMermaid記法と呼ばれています。\n例えば、以下の記述が、\ngraph LR;\n    書く-- 読みたくなる -->読む;\n    読む-- 書きたくなる -->書く;\n    読む-- 共感する -->はてなスター;\n    はてなスター-- モチベート -->書く;\n以下のようなグラフとして展開されます。\ngraph LR;\n    書く-- 読みたくなる -->読む;\n    読む-- 書きたくなる -->書く;\n    読む-- 共感する -->はてなスター;\n    はてなスター-- モチベート -->書く;\n最近ではGithubやQiita、エディタでのリアルタイムレンダリングなど、Mermaid記法が利用できる環境が増えており、テキストによるダイアグラム表示のデファクトスタンダードとなっています。\nより詳しい使い方については、下記の記事をご参照ください。\nmermaid.js.org\n\n\nはてなブログへの導入方法\nはてなブログにて利用する場合、ブログの詳細設定 <head>要素にメタデータを追加 に以下のスクリプトを挿入してください。\n<script type=\"module\">\n  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';\n  mermaid.initialize({ startOnLoad: true });\n</script>\n\n「<head>要素にメタデータを追加」設定は開発者向けの設定となります。正しくない設定を保存した場合、ご自身のブログのデザインが崩れたり正常に閲覧できなくなってしまう可能性があります。ご注意ください。\n\n\n\n\n    \n使い方\n編集モード:Markdownをご利用の場合は、コードブロック構文の言語識別子にmermaidを指定してください。\n```mermaid\ngraph LR;\n  hoge --> fuga;\n```\n編集モード:はてな記法をご利用の場合はスーパーPre記法のファイルタイプにmermaidを指定してください。\n fuga;\n||<\n\nなお、いずれの書き方も通常は構文を強調する際の記法ですが、Github等の先行してMermaidに対応したウェブサイトとの互換を考慮し、例外的な挙動としてご利用いただけます。\nよくある質問\nはてなブログのオプションとしてMermaid記法に対応しないのでしょうか？\n\n現在のところ、はてなブログとしてMermaid記法に対応する予定はございません。これはMermaid記法が主に技術者に向けた機能であり、一般に広く使われることを想定しないこと、利用ライブラリの変更、バージョンを指定したいなどの事情を考慮したものです。\n\nMermaid記法のシンタックスハイライトを行いたいときはどうしたら良いでしょうか？\n\n現在のところ、はてなブログではMermaid記法のシンタックスハイライトには対応していません。対応する際には mermaid-code など、別のファイルタイプを用意し、レンダリングとシンタックスハイライトを使い分けられるようにしたいと考えています。\n\n\n\n\n    \n技術ブログを書くならはてなブログ\nはてなブログは、上記の通りMermaid記法に対応でき、Texによる数式の対応も可能、API経由での更新も可能など、技術ブログを書きやすいプラットフォームです。技術ブログにはてなブログをどうぞよろしくおねがいします。\nhatena.blog\nどうぞご利用ください。\n\n\n  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';\n  mermaid.initialize({ startOnLoad: true });",
@@ -10841,26 +10856,6 @@
           "publishedOn": "2022-12-06T16:00:19.000Z",
           "wordCount": null,
           "title": "SIG-Scheduling Deep Dive (Kubecon Recap)",
-          "imageUrl": null
-        },
-        {
-          "id": "24389",
-          "author": null,
-          "description": "この記事は、Merpay Advent Calendar 2022 の6日目の記事 メルカードの舞台裏編です。 こんにちは。 株式会社メルペイ バックエンドエンジニアの norifumi です。今回は、11月8日に発表さ […]",
-          "link": "https://engineering.mercari.com/blog/entry/20221206-mercard-behind-the-scenes-06/",
-          "publishedOn": "2022-12-06T12:00:53.000Z",
-          "wordCount": null,
-          "title": "メルカードの還元率管理の仕組み",
-          "imageUrl": null
-        },
-        {
-          "id": "24516",
-          "author": null,
-          "description": "こんにちは。メルカリ Infrastructure & Procurement Management Teamの＠bungoです。約1年ちょっと前の2021年夏からメルカリにJoinして、エンジニア組織のお金の問 […]",
-          "link": "https://engineering.mercari.com/blog/entry/20221205-02701ed73d/",
-          "publishedOn": "2022-12-06T11:00:56.000Z",
-          "wordCount": null,
-          "title": "FinOpsへの取組 エンジニア組織の意識を変えた「データストーリーテリングに基づいたコスト可視化」",
           "imageUrl": null
         }
       ]
