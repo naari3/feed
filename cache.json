@@ -4787,23 +4787,7 @@
       "title": "Software Transactional Memo",
       "feedUrl": "https://kumagi.hatenablog.com/rss",
       "siteUrl": "https://kumagi.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/4207112889917287812",
-          "author": null,
-          "description": "TL;DR 正しく設計するとキャパシティは常にカツカツになる\nこれはpyspaアドベントカレンダーの8日目の記事です。前日はShibukawaさんです。\n \n世はクラウド時代、ソフトウェアはひとたび作られたら何億回実行されても摩耗するものではないので、どんな間抜けなロジックであろうと動く以上は別のどこかで瑕疵が出てくるまで使い倒されるのは日常茶飯事である。\nサービスを負荷の前提の上に定義する\nクラウドより前の時代においてサービスを支えるマシンは「ロードアベレージが1.0を超えてなければとりあえずOK、超えたらマシンを増やして負荷を分散する」というノリのベストプラクティスがよく言われていたがそれはサーバ資源の確保にそれなりに時間がかかる時代の常識であって、クラウド時代でサーバは分単位で確保できるようになった。\nクラウドの利点としてその即時的なスケーラビリティが常套句として使われて久しいが、これは裏から見れば必要がない時はあらん限り縮退して走ってて欲しいという前提と表裏一体である。極端なことを言うとサービスがまともに動く限りにおいてロードアベレージは高ければ高いほど良い、その方がクラウドに払うお金が安いから。そうなるとサービスが過負荷になっているかはロードアベレージの数字ではなく別の指標（i.e. SLO）で「まともに動く」を再定義した上で決定することになる。\n古典的な分散システムあるあるな議論の典型の一つとして「負荷分散は忙しい奴がタスクを押し付ける(push)か、暇な奴がタスクを取っていく(pull)か」という設計判断があるが、クラウド時代において少なくとも前者はナンセンスである。なぜなら正しくスケーリングしているクラウドであれば自分以外の全てのワーカーは忙しくなければおかしいのであり、自サーバの忙しさは他サーバに負荷を押し付ける根拠ではないからである。当然他サーバもフルに…",
-          "link": "https://kumagi.hatenablog.com/entry/cloud-is-slow",
-          "publishedOn": "2022-12-07T17:22:32.000Z",
-          "wordCount": null,
-          "title": "正しいクラウドはある意味で遅い",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20221208/20221208022136.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20221208/20221208022136.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "ぷもも園",
@@ -8103,6 +8087,16 @@
       "feedUrl": "https://note.com/sizes/rss",
       "siteUrl": "https://note.com/sizes",
       "articles": [
+        {
+          "id": "https://note.com/sizes/n/nf2216e9e36c2",
+          "author": null,
+          "description": "・たいていの人は、批評に興味がないか嫌いだと思う。批評家も同じ。\n・ぶっちゃけ、批評をするメリットってない。自分もただ思いついたから書いてるだけであって‥‥便意がきたからウンコする、みたいな感じ。そのウンコの綺麗さを求めていくと、激臭ウンコをひねり出したガラクタ人間として、大衆から迫害されてしまう。ぐすん。\n続きをみる",
+          "link": "https://note.com/sizes/n/nf2216e9e36c2",
+          "publishedOn": "2023-03-07T05:40:31.000Z",
+          "wordCount": null,
+          "title": "5.批評について",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/99678756/rectangle_large_type_2_5d22f611fdf8f271cedb13be0840f467.jpeg?width=800"
+        },
         {
           "id": "https://note.com/sizes/n/n3b8f42dfacb6",
           "author": null,
