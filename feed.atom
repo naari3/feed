@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-07T01:29:41.752Z</updated>
+    <updated>2023-03-07T02:31:00.520Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -19025,16 +19025,6 @@ STEP4：MyBooks.jp上で入稿データを編集する
 古典的な分散システムあるあるな議論の典型の一つとして「負荷分散は忙しい奴がタスクを押し付ける(push)か、暇な奴がタスクを取っていく(pull)か」という設計判断があるが、クラウド時代において少なくとも前者はナンセンスである。なぜなら正しくスケーリングしているクラウドであれば自分以外の全てのワーカーは忙しくなければおかしいのであり、自サーバの忙しさは他サーバに負荷を押し付ける根拠ではないからである。当然他サーバもフルに…]]></summary>
         <author>
             <name>Software Transactional Memo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[メルカード常時ポイント還元開発の話]]></title>
-        <id>24704</id>
-        <link href="https://engineering.mercari.com/blog/entry/20221207-mercard-behind-the-scenes-07/"/>
-        <updated>2022-12-07T13:55:22.000Z</updated>
-        <summary type="html"><![CDATA[はじめに この記事は、Merpay Advent Calendar 2022 の7日目の記事 メルカードの舞台裏編です。 こんにちは。 株式会社メルペイ Growth Platform Teamのバックエンドエンジニアの […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
