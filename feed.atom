@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-11T12:02:03.963Z</updated>
+    <updated>2023-03-11T13:05:14.961Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17,6 +17,28 @@
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHubのリリースノートを自動化する仕組み]]></title>
+        <id>https://efcl.info/2023/03/11/auto-release-note/</id>
+        <link href="https://efcl.info/2023/03/11/auto-release-note/"/>
+        <updated>2023-03-11T05:05:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub のAutomatically generated release notesを使ってリリースノートの内容を PR に基づいて自動生成するフローを作りました。
+今までは、コミットメッセージのルールであるConventional Commitsとconventional-github-releaserを使って、コミットからリリースノートを自動生成していました。
+他の人の PR でも、squah merge でコミットメッセージを書き換えることで、リリースノートに反映されるようにしていました。
+ただ GitHub に仕組みは違うけどほぼ似たことをするAutomatically generated release notesという機能が実装されているので、これをベースに移行しようと思って、そのワークフローを作っていました。
+リリースノート自動生成テクニック - mizdra’s blog
+リリースノート管理術
+GitHub Actions でいい感じのリリースノートを完全自動で作成する
+目的
+目的としては、次を目標にしていました。
+Convential commit でやっているものをAutomatically generated release notesベースに移行する
+自分は大量のリポジトリを持っているので、段階的に移行できるようにしました。
+Convential commitとAutomatically generated release notesは同時に使っても競合はしないので、実際にはConventional Commitsでコミットしながら、リリースするときに Convential commit かAutomatically generated release notesどちらを使うかを選択できるようにしています。
+(たまに、PR を経由せずにコミット…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -18620,19 +18642,6 @@ Amazon
 Logicool G ロジクール G ゲーミングマウス ワイヤレス G304 HERO センサー LIGHTSPEED 無線 99g 軽量…]]></summary>
         <author>
             <name>思い出したら書きます</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[今後の活動とやりたいことリスト]]></title>
-        <id>https://note.com/binetsu0904/n/n72723c653ce4</id>
-        <link href="https://note.com/binetsu0904/n/n72723c653ce4"/>
-        <updated>2022-12-12T00:29:40.000Z</updated>
-        <summary type="html"><![CDATA[独り言です。
-ここ3年弱ほど不調だったけど、生活が少し良い方向に進みそうなので、2018・2019年くらいの調子に戻れるかもしれない。
-でも音MAD以外の時間も確保したいので、頻度は落ちるかも。
-続きをみる]]></summary>
-        <author>
-            <name>微熱</name>
         </author>
     </entry>
 </feed>

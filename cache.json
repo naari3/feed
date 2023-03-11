@@ -7045,16 +7045,6 @@
           "wordCount": null,
           "title": "2022年の音MAD活動振り返りと音MDM天出場",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/98381198/rectangle_large_type_2_afdda4b46bcfea5ebd42802d3a088ad1.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/binetsu0904/n/n72723c653ce4",
-          "author": null,
-          "description": "独り言です。\nここ3年弱ほど不調だったけど、生活が少し良い方向に進みそうなので、2018・2019年くらいの調子に戻れるかもしれない。\nでも音MAD以外の時間も確保したいので、頻度は落ちるかも。\n続きをみる",
-          "link": "https://note.com/binetsu0904/n/n72723c653ce4",
-          "publishedOn": "2022-12-12T00:29:40.000Z",
-          "wordCount": null,
-          "title": "今後の活動とやりたいことリスト",
-          "imageUrl": null
         }
       ]
     },
@@ -9925,6 +9915,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2023/03/11/auto-release-note/",
+          "author": null,
+          "description": "GitHub のAutomatically generated release notesを使ってリリースノートの内容を PR に基づいて自動生成するフローを作りました。\n今までは、コミットメッセージのルールであるConventional Commitsとconventional-github-releaserを使って、コミットからリリースノートを自動生成していました。\n他の人の PR でも、squah merge でコミットメッセージを書き換えることで、リリースノートに反映されるようにしていました。\nただ GitHub に仕組みは違うけどほぼ似たことをするAutomatically generated release notesという機能が実装されているので、これをベースに移行しようと思って、そのワークフローを作っていました。\nリリースノート自動生成テクニック - mizdra’s blog\nリリースノート管理術\nGitHub Actions でいい感じのリリースノートを完全自動で作成する\n目的\n目的としては、次を目標にしていました。\nConvential commit でやっているものをAutomatically generated release notesベースに移行する\n自分は大量のリポジトリを持っているので、段階的に移行できるようにしました。\nConvential commitとAutomatically generated release notesは同時に使っても競合はしないので、実際にはConventional Commitsでコミットしながら、リリースするときに Convential commit かAutomatically generated release notesどちらを使うかを選択できるようにしています。\n(たまに、PR を経由せずにコミット…",
+          "link": "https://efcl.info/2023/03/11/auto-release-note/",
+          "publishedOn": "2023-03-11T05:05:00.000Z",
+          "wordCount": null,
+          "title": "GitHubのリリースノートを自動化する仕組み",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2023/02/23/textlint-sentence-rule/",
           "author": null,

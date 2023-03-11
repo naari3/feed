@@ -99,6 +99,37 @@
           </section>
         </section>
       </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GitHubのリリースノートを自動化する仕組み</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/03/11/auto-release-note/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>GitHub のAutomatically generated release notesを使ってリリースノートの内容を PR に基づいて自動生成するフローを作りました。
+今までは、コミットメッセージのルールであるConventional Commitsとconventional-github-releaserを使って、コミットからリリースノートを自動生成していました。
+他の人の PR でも、squah merge でコミットメッセージを書き換えることで、リリースノートに反映されるようにしていました。
+ただ GitHub に仕組みは違うけどほぼ似たことをするAutomatically generated release notesという機能が実装されているので、これをベースに移行しようと思って、そのワークフローを作っていました。
+リリースノート自動生成テクニック - mizdra’s blog
+リリースノート管理術
+GitHub Actions でいい感じのリリースノートを完全自動で作成する
+目的
+目的としては、次を目標にしていました。
+Convential commit でやっているものをAutomatically generated release notesベースに移行する
+自分は大量のリポジトリを持っているので、段階的に移行できるようにしました。
+Convential commitとAutomatically generated release notesは同時に使っても競合はしないので、実際にはConventional Commitsでコミットしながら、リリースするときに Convential commit かAutomatically generated release notesどちらを使うかを選択できるようにしています。
+(たまに、PR を経由せずにコミット…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -25147,33 +25178,11 @@ Logicool G ロジクール G ゲーミングマウス ワイヤレス G304 HERO 
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/binetsu0904" target="_blank"
-              rel="noopener">微熱</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">今後の活動とやりたいことリスト</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/binetsu0904/n/n72723c653ce4" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>独り言です。
-ここ3年弱ほど不調だったけど、生活が少し良い方向に進みそうなので、2018・2019年くらいの調子に戻れるかもしれない。
-でも音MAD以外の時間も確保したいので、頻度は落ちるかも。
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-03-11T12:02:03.890Z">2023-03-11T12:02:03.890Z</time>
+    <time id="build-timestamp" datetime="2023-03-11T13:05:14.878Z">2023-03-11T13:05:14.878Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
