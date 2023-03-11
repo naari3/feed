@@ -6499,21 +6499,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tmidorikawa/20221215/20221215170915.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889944419389",
-          "author": null,
-          "description": "9月からRuby開発チームにインターンシップとして参加している@makenowjustです。\n総合研究大学院大学の学生で、普段は情報セキュリティに関する研究をしています。\nインターンシップでは、キャッシュ (メモ化) を利用したRubyの正規表現の高速化を行いました。\nReDoSと呼ばれる、バックトラックが爆発することでマッチング時間が膨大になる脆弱性があります (ReDoSについては、拙作ですがWEB+DB PRESSに掲載された記事があります)。\n近年、ReDoSは多く報告されており、Rubyもその例外ではありません (参考1、参考2)。\n今回実装した最適化は、ReDoSを防ぐことを目的としたもので、多くの正規表現のマッチング時間が文字列の長さに対して線形となります。\nReDoSが起こる正規表現の例として、/^(a|a)*$/が挙げられます。\n今回の修正の前後での実行時間を比較すると、次のようになります。\n$ ruby --version\nruby 3.2.0preview2 (2022-09-09 master 35cfc9a3bb) [arm64-darwin21]\n\n$ time ruby -e '/^(a|a)*$/ =~ \"a\" * 28 + \"b\"'\nruby -e '/^(a|a)*$/ =~ \"a\" * 28 + \"b\"'  8.49s user 0.04s system 98% cpu 8.663 total\n\n$ ./miniruby --version\nruby 3.2.0dev (2022-10-27T13:39:56Z recache bc59b7cc1e) [arm64-darwin21]\n\n$ time ./miniruby -e '/^(a|a)*$/ =~ \"a\" * 28 + \"b\"'\n./miniruby -e '/^(a|a)*$…",
-          "link": "https://techlife.cookpad.com/entry/2022/12/12/162023",
-          "publishedOn": "2022-12-12T07:20:23.000Z",
-          "wordCount": 1035,
-          "title": "キャッシュによるRubyの正規表現のマッチングの高速化の紹介",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20221212/20221212133414.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/ku-ma-me/20221212/20221212133414.png"
         }
       ]
     },
