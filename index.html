@@ -24926,42 +24926,11 @@ MVの影響…</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">textlintとGitHubのCode Scanningを組み合わせてリンク切れをチェックする</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/12/12/textlint-no-dead-link/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>textlintのルールにリンク先のURLがアクセスできなくなってないかをチェックするtextlint-rule-no-dead-linkというルールがあります。
-textlint-rule-no-dead-linkは実際にURLにリクエストを送ることでアクセスできるかをチェックするため、URLの数が多くなるとものすごく時間がかかります。
-また、GitHubのように同一IPからのアクセスが連続すると429 too many requestsなどのエラーを返すサイトもあります。
-textlint-rule-no-dead-linkはRetry-Afterヘッダを見てリトライにも対応していますが、このリトライの間隔が長いサイトもあるため、リンク切れのチェックはコミット時にやるのには向いてない作業と言えます。
-GitHubでは、GitHub Actionsを使ってschedule実行に対応しています。
-一方で、scheduleで毎日特定の時間に実行しても、その結果を保存先をどうするかという問題がありました。
-最近のGitHubではcode scanningという機能があります。
-code scanningはDependabotなどのセキュリティアラートとほぼ同じ仕組みとなっていて、アラートをServerityやコミットに紐付けて管理できます。
-Dependabotと異なるのは、SARIF形式でLintなどのチェック結果をアップロードすれば、任意のチェック結果をcode scanningに表示できるようになっています。
-
-この仕組みを利用して、textlintのチェック結果をcode scanningに表示することもできます。
-リンク切れの結果をcode scanningにアップロード
-具体的には、次のようにtextlintでtextlint-rule-no-dead-linkを利…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-03-12T00:02:59.687Z">2023-03-12T00:02:59.687Z</time>
+    <time id="build-timestamp" datetime="2023-03-12T01:29:18.810Z">2023-03-12T01:29:18.810Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

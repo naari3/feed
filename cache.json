@@ -10014,16 +10014,6 @@
           "wordCount": null,
           "title": "JavaScriptでURLを文字列操作しないために、url-cheatsheetを作った",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2022/12/12/textlint-no-dead-link/",
-          "author": null,
-          "description": "textlintのルールにリンク先のURLがアクセスできなくなってないかをチェックするtextlint-rule-no-dead-linkというルールがあります。\ntextlint-rule-no-dead-linkは実際にURLにリクエストを送ることでアクセスできるかをチェックするため、URLの数が多くなるとものすごく時間がかかります。\nまた、GitHubのように同一IPからのアクセスが連続すると429 too many requestsなどのエラーを返すサイトもあります。\ntextlint-rule-no-dead-linkはRetry-Afterヘッダを見てリトライにも対応していますが、このリトライの間隔が長いサイトもあるため、リンク切れのチェックはコミット時にやるのには向いてない作業と言えます。\nGitHubでは、GitHub Actionsを使ってschedule実行に対応しています。\n一方で、scheduleで毎日特定の時間に実行しても、その結果を保存先をどうするかという問題がありました。\n最近のGitHubではcode scanningという機能があります。\ncode scanningはDependabotなどのセキュリティアラートとほぼ同じ仕組みとなっていて、アラートをServerityやコミットに紐付けて管理できます。\nDependabotと異なるのは、SARIF形式でLintなどのチェック結果をアップロードすれば、任意のチェック結果をcode scanningに表示できるようになっています。\n\nこの仕組みを利用して、textlintのチェック結果をcode scanningに表示することもできます。\nリンク切れの結果をcode scanningにアップロード\n具体的には、次のようにtextlintでtextlint-rule-no-dead-linkを利…",
-          "link": "https://efcl.info/2022/12/12/textlint-no-dead-link/",
-          "publishedOn": "2022-12-12T12:55:00.000Z",
-          "wordCount": null,
-          "title": "textlintとGitHubのCode Scanningを組み合わせてリンク切れをチェックする",
-          "imageUrl": null
         }
       ]
     },

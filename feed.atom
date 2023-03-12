@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-12T00:02:59.742Z</updated>
+    <updated>2023-03-12T01:29:18.868Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -18445,28 +18445,6 @@ MVの影響…]]></summary>
         <summary type="html"><![CDATA[こんにちは、メルカリのレコメンデーションチームで Software Engineer をしている @yaginuuun です。主に推薦を通じたホーム画面における体験改善に取り組んでいます。 元々はデータアナリストとしてデ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[textlintとGitHubのCode Scanningを組み合わせてリンク切れをチェックする]]></title>
-        <id>https://efcl.info/2022/12/12/textlint-no-dead-link/</id>
-        <link href="https://efcl.info/2022/12/12/textlint-no-dead-link/"/>
-        <updated>2022-12-12T12:55:00.000Z</updated>
-        <summary type="html"><![CDATA[textlintのルールにリンク先のURLがアクセスできなくなってないかをチェックするtextlint-rule-no-dead-linkというルールがあります。
-textlint-rule-no-dead-linkは実際にURLにリクエストを送ることでアクセスできるかをチェックするため、URLの数が多くなるとものすごく時間がかかります。
-また、GitHubのように同一IPからのアクセスが連続すると429 too many requestsなどのエラーを返すサイトもあります。
-textlint-rule-no-dead-linkはRetry-Afterヘッダを見てリトライにも対応していますが、このリトライの間隔が長いサイトもあるため、リンク切れのチェックはコミット時にやるのには向いてない作業と言えます。
-GitHubでは、GitHub Actionsを使ってschedule実行に対応しています。
-一方で、scheduleで毎日特定の時間に実行しても、その結果を保存先をどうするかという問題がありました。
-最近のGitHubではcode scanningという機能があります。
-code scanningはDependabotなどのセキュリティアラートとほぼ同じ仕組みとなっていて、アラートをServerityやコミットに紐付けて管理できます。
-Dependabotと異なるのは、SARIF形式でLintなどのチェック結果をアップロードすれば、任意のチェック結果をcode scanningに表示できるようになっています。
-
-この仕組みを利用して、textlintのチェック結果をcode scanningに表示することもできます。
-リンク切れの結果をcode scanningにアップロード
-具体的には、次のようにtextlintでtextlint-rule-no-dead-linkを利…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
 </feed>
