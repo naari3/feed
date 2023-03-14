@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-14T10:01:53.622Z</updated>
+    <updated>2023-03-14T11:02:00.720Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[OCI Referrers APIを試す]]></title>
+        <id>hatenablog://entry/4207112889968006398</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2023/03/14/192051"/>
+        <updated>2023-03-14T10:20:51.000Z</updated>
+        <summary type="html"><![CDATA[まだどのOCIレジストリも対応していないのですが、新しく仕様が策定されたOCI Referrers APIを試してみた記事です。SBOMなどが話題になる一方で活用方法が不明なまま数年が経過しましたが、この新仕様によってその辺りが多少改善されると思っています。
+背景
+OCI Reference Types
+提案 1: OCI Artifact Manifest
+提案 2: OCI Image Manifestへのsubjectの追加
+提案 3: Custom Tag
+採用された案
+検証
+Custom Tag
+OCIレジストリのセットアップ
+イメージのコピー
+Referrerの保存
+Referrerの表示
+Referrers API
+OCIレジストリのセットアップ
+イメージのコピー
+Referrerの表示
+Referrers API
+OCI Artifact Manifestについて
+その他
+まとめ
+背景
+DockerイメージはDocker HubなどのDocker Registry HTTP APIに対応したレジストリで配布されるのが一般的でした。しかしコンテナ技術が普及する中でコンテナ仕様の標準化をしようということで"Open Container Initiative (OCI)"が発足しました。OCIによりコンテナランタイムやコンテナイメージの標準仕様が策定され、その後コンテナイメージの配布方法もOCI Distribution Specificationによって定義されました。その辺はもはや昔話になりますし記事だけ置いておきます。
+www.publickey1.jp
+OCI Distribution Specificationに準拠しているレジストリはOCIレジストリと呼ばれるのですが、クラウドネイティブの普及に伴いコンテナイメージ以外もOCIレジストリで配布可能なよう…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[mercari.go #21 を開催しました #mercarigo]]></title>
         <id>25929</id>
