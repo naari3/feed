@@ -9701,16 +9701,6 @@
           "wordCount": null,
           "title": "GitHub Sponsorsの収入 @ 2022",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2022/12/17/notion-plotly/",
-          "author": null,
-          "description": "Notionにはデータベースのデータをグラフとして表示する機能がありません。\n外部サービスなどを使えばグラフを埋め込むことは可能ですが、それだけのために外部にデータベースの値を渡すのは微妙です。\nNotion2Charts - Create Embeddable Charts From Your Notion Tables\nCreate customizable notion charts | Nochart\nそこまで高機能なものが欲しいわけでも無かったので、作ることにしました。\nNotion Plotly\nNotion Plotlyというサイトを作りました。\nこのサイトは、URLのパラメータに描画したいデータを渡すことで、Plotlyでグラフとして描画する単純なサイトです。\nたとえば、次のようにx軸とy軸の値をURLで渡して棒グラフで表示できます。\nhttps://notion-plotly.netlify.app/bar.html?x=2000年1月1日,2001年2月1日,2003年3月1日&y=100,200,300,400\n\nNotion Plotly自体は特にNotionのAPIを使ったサイトではないです。\nNotionのデータベースからNotion Plotly]に渡すパラメータを作って、グラフを描画できるページを作るだけのサイトです。\nそのため、外部からAPIでデータベースの値を読み取ることもないし、シンプルなHTMLとJSで動いてるのでForkして利用できます。\nazu/notion-plotly: Create embed graph page from Notion Database.\nNotionのデータベースからグラフURLを作る\nNotionの実際のデータベースなどは、次のテンプレートを参照してみてください。\nテンプレート: Notion Plotly\nNotionには特定のデータベースの値を全て検索して集めるような関数はありません。\n集計用データベースを作り、その集計用データベースから集計したい対象のデータベースの全ての項目にRelationを作ります。\n\nそうすることで、集計用データベースからRelationで”集計したい対象のデータベース”のアイテムを参照できます。\nその後、集計用データベースにRollupで項目を追加すると、項目には”集計したい対象のデータベース”のアイテムが,区切りで入ります。\n\nあとは、関数を使ってグラフURLを組み立てるだけです。\nサンプルのデータベースでは、次のようにRollupした”数値”と”支出項目”を使って、円グラフのURLを作成しています。\nこのprop(\"数値\")には自動的に,で値が並ぶように入ります。&などは入るとダメなので、replaceAllなどでエスケープする必要があります。\n\n\"https://notion-plotly.netlify.app/pie.html?values=\" + prop(\"数値\") + \"&labels=\" + prop(\"支出項目\")\n\n\nあとは、関数が組み上げたURLを開くだけです。\nhttps://notion-plotly.netlify.app/pie.html?values=30000,100000,100000,10000,5000,5000,10000,50000&labels=%E9%A3%9F%E8%B2%BB,%E5%AE%B6%E8%B3%83,%E8%B2%AF%E8%93%84,%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E8%B2%BB,%E5%85%89%E7%86%B1%E8%B2%BB,%E9%80%9A%E4%BF%A1%E8%B2%BB,%E6%97%A5%E7%94%A8%E5%93%81,%E3%81%9D%E3%81%AE%E4%BB%96\nNotionの、埋め込みでこのURLを埋め込めばグラフ自体をNotionに表示することもできます。\n\nただし、他のグラフサービスと違って埋め込んだグラフが自動的には更新されません。\nこれは、Notion PlotlyがAPIを使ってNotionからデータを読み取ってるわけじゃないからです。\n関数で組み上げたグラフURL自体は、データベースの内容が変われば自動的に変更されて新しいURLになるので、クリックしてみるグラフは常に最新という形です。\n個人的には、Notionでダッシュボード的なのはあまり作ってないので、これぐらいで十分かなと思いました。\nNotionからCSVにしてSpreadSheetにしてビジュアライズとかは流石に遠かったので、それを簡略化するイメージでNotion Plotlyは作っています。",
-          "link": "https://efcl.info/2022/12/17/notion-plotly/",
-          "publishedOn": "2022-12-17T12:25:00.000Z",
-          "wordCount": null,
-          "title": "Notionのデータベースのデータを可視化するグラフURLを作成する",
-          "imageUrl": null
         }
       ]
     },

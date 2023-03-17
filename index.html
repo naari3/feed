@@ -23581,69 +23581,11 @@ music.apple.com
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Notionのデータベースのデータを可視化するグラフURLを作成する</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2022/12/17/notion-plotly/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Notionにはデータベースのデータをグラフとして表示する機能がありません。
-外部サービスなどを使えばグラフを埋め込むことは可能ですが、それだけのために外部にデータベースの値を渡すのは微妙です。
-Notion2Charts - Create Embeddable Charts From Your Notion Tables
-Create customizable notion charts | Nochart
-そこまで高機能なものが欲しいわけでも無かったので、作ることにしました。
-Notion Plotly
-Notion Plotlyというサイトを作りました。
-このサイトは、URLのパラメータに描画したいデータを渡すことで、Plotlyでグラフとして描画する単純なサイトです。
-たとえば、次のようにx軸とy軸の値をURLで渡して棒グラフで表示できます。
-https://notion-plotly.netlify.app/bar.html?x&#x3D;2000年1月1日,2001年2月1日,2003年3月1日&amp;y&#x3D;100,200,300,400
-
-Notion Plotly自体は特にNotionのAPIを使ったサイトではないです。
-NotionのデータベースからNotion Plotly]に渡すパラメータを作って、グラフを描画できるページを作るだけのサイトです。
-そのため、外部からAPIでデータベースの値を読み取ることもないし、シンプルなHTMLとJSで動いてるのでForkして利用できます。
-azu/notion-plotly: Create embed graph page from Notion Database.
-NotionのデータベースからグラフURLを作る
-Notionの実際のデータベースなどは、次のテンプレートを参照してみてください。
-テンプレート: Notion Plotly
-Notionには特定のデータベースの値を全て検索して集めるような関数はありません。
-集計用データベースを作り、その集計用データベースから集計したい対象のデータベースの全ての項目にRelationを作ります。
-
-そうすることで、集計用データベースからRelationで”集計したい対象のデータベース”のアイテムを参照できます。
-その後、集計用データベースにRollupで項目を追加すると、項目には”集計したい対象のデータベース”のアイテムが,区切りで入ります。
-
-あとは、関数を使ってグラフURLを組み立てるだけです。
-サンプルのデータベースでは、次のようにRollupした”数値”と”支出項目”を使って、円グラフのURLを作成しています。
-このprop(&quot;数値&quot;)には自動的に,で値が並ぶように入ります。&amp;などは入るとダメなので、replaceAllなどでエスケープする必要があります。
-
-&quot;https://notion-plotly.netlify.app/pie.html?values&#x3D;&quot; + prop(&quot;数値&quot;) + &quot;&amp;labels&#x3D;&quot; + prop(&quot;支出項目&quot;)
-
-
-あとは、関数が組み上げたURLを開くだけです。
-https://notion-plotly.netlify.app/pie.html?values&#x3D;30000,100000,100000,10000,5000,5000,10000,50000&amp;labels&#x3D;%E9%A3%9F%E8%B2%BB,%E5%AE%B6%E8%B3%83,%E8%B2%AF%E8%93%84,%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E8%B2%BB,%E5%85%89%E7%86%B1%E8%B2%BB,%E9%80%9A%E4%BF%A1%E8%B2%BB,%E6%97%A5%E7%94%A8%E5%93%81,%E3%81%9D%E3%81%AE%E4%BB%96
-Notionの、埋め込みでこのURLを埋め込めばグラフ自体をNotionに表示することもできます。
-
-ただし、他のグラフサービスと違って埋め込んだグラフが自動的には更新されません。
-これは、Notion PlotlyがAPIを使ってNotionからデータを読み取ってるわけじゃないからです。
-関数で組み上げたグラフURL自体は、データベースの内容が変われば自動的に変更されて新しいURLになるので、クリックしてみるグラフは常に最新という形です。
-個人的には、Notionでダッシュボード的なのはあまり作ってないので、これぐらいで十分かなと思いました。
-NotionからCSVにしてSpreadSheetにしてビジュアライズとかは流石に遠かったので、それを簡略化するイメージでNotion Plotlyは作っています。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-03-17T00:03:26.480Z">2023-03-17T00:03:26.480Z</time>
+    <time id="build-timestamp" datetime="2023-03-17T01:28:42.385Z">2023-03-17T01:28:42.385Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
