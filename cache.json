@@ -5628,21 +5628,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889946407985",
-          "author": null,
-          "description": "……ことがたまにあって、なんでかなと思ったけどgit checkoutなんかでstoryboardのリビジョンをXcode外部から操作してると起きるのかなという気がする。アプリが起動しかけてから以下のようなエラーメッセージ出して落ちるのがタチ悪い。\n\"Could not find a storyboard named 'Main' in bundle NSBundle\"\n\n\nClean Build Folderとかやっても直らないので、以下のようにして直す。\nMain.storyboardを選択して \"Delete\" -> \"Remove Reference\"\n外部でやる必要のあるgit操作など実行\n\"File\" -> \"Add File to ...\" してstoryboardを再度追加\n起きるたびに時間を無駄にしてる気がするんでメモ。",
-          "link": "https://tagomoris.hatenablog.com/entry/2022/12/19/150427",
-          "publishedOn": "2022-12-19T06:04:27.000Z",
-          "wordCount": null,
-          "title": "XcodeがMain.storyboardを見付けられずiOSアプリが落ちる",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -8782,16 +8767,6 @@
           "wordCount": null,
           "title": "ポケモン対戦の敷居が高いのは‥‥",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/93704306/rectangle_large_type_2_457fd8aef6f14f69a18deb86b8ccf910.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n94ec74864d7f",
-          "author": null,
-          "description": "宮本茂の言葉に、「アイデアとは複数の問題を同時に解決する考えのこと」という言葉がある。すごく現場主義な言葉であって、同時にゲームクリエイターらしい言葉でもあると思うんだけど、個人的にはしっくりくる。社会における問題や困難が生じたときって、その問題は本質的にはトレードオフの問題であることが多いからだ。めちゃくちゃざっくり言うと、貧乏な人をストレートに救う政策を施行すると、中流階級の人が貧乏になってしまって本末転倒になる‥‥みたいなことは誰もが想像できると思う。このあちらが立てばこちらが立たず、という問題を解決するのがアイデア。そう言う考えである。\n僕は対人ゲーム全般をやるときに、宮本茂の「アイデア論」を無意識的に使ってる人がいっぱいいるな、と思う。例えば、チームやスキルのビルディングっていかにトレードオフの問題を解決するかの営みと言って良い。要素に強さと弱点が設定されているのなら、〇〇の対策をしたら、その分××には弱くなる‥‥という構造は必ずできるからだ。強力なビルディングができる人は、そのトレードオフの問題を解決するのがうまい。\n続きをみる",
-          "link": "https://note.com/sizes/n/n94ec74864d7f",
-          "publishedOn": "2022-12-19T06:09:48.000Z",
-          "wordCount": 2225,
-          "title": "アイデアという言葉の定義",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/93637818/rectangle_large_type_2_f5e8ce4b99569bff5a959f640d75cbf5.png?width=800"
         }
       ]
     },
