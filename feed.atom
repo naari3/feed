@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-18T01:28:47.101Z</updated>
+    <updated>2023-03-18T02:19:49.177Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[TypeScriptの型情報を使ったサポート対象のブラウザが実装してないメソッドの利用をエラーにするESLintルール]]></title>
+        <id>https://efcl.info/2023/03/18/eslint-plugin-typescript-compat/</id>
+        <link href="https://efcl.info/2023/03/18/eslint-plugin-typescript-compat/"/>
+        <updated>2023-03-18T01:18:00.000Z</updated>
+        <summary type="html"><![CDATA[eslint-plugin-typescript-compatはTypeScriptプロジェクト向けのESLintルールです。
+このESLintではサポートしているブラウザが、実装していないメソッドを検知してLintエラーにしてくれます。
+JavaScriptではメソッドの静的解析は難しい(メソッド名が同じでも独自実装の可能性があるため)ですが、TypeScriptの型情報を使って静的解析をしています。
+サポートしている機能
+[ ] JavaScriptのビルトインオブジェクト
+
+[x] プロトタイプメソッド Array.prototype.find
+[x] 静的メソッド Array.from
+[ ] オブジェクト Promise
+[ ] DOM API
+基本的にメソッドのみを使っています。
+他のオブジェクトなども原理的には実装できるはずですが、実装していません。
+オブジェクトに関してはamilajack/eslint-plugin-compat: Check the browser compatibility of your codeがあるので、併用するのが良さそうです。ルール的にマージしてしまうのが良い気はしますが、特に動きはないです。
+Merge to similar project? · Issue #1 · azu/eslint-plugin-typescript-compat
+必要な人はこのIssueを進めていくと良いかもしれません。
+インストール
+npmを使ってインストールします。
+
+$ npm install eslint-plugin-typescript-compat typescript @typescript-eslint/parser --save-dev
+
+
+TypeScriptの型情報を使うためにtypescriptと@typescript-e…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[フォロワーのアイコンを大体20枚描いて思ったこと]]></title>
         <id>https://note.com/sizes/n/nc6a8cf6dbaaa</id>

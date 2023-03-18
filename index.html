@@ -78,6 +78,46 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">TypeScriptの型情報を使ったサポート対象のブラウザが実装してないメソッドの利用をエラーにするESLintルール</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/03/18/eslint-plugin-typescript-compat/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>eslint-plugin-typescript-compatはTypeScriptプロジェクト向けのESLintルールです。
+このESLintではサポートしているブラウザが、実装していないメソッドを検知してLintエラーにしてくれます。
+JavaScriptではメソッドの静的解析は難しい(メソッド名が同じでも独自実装の可能性があるため)ですが、TypeScriptの型情報を使って静的解析をしています。
+サポートしている機能
+[ ] JavaScriptのビルトインオブジェクト
+
+[x] プロトタイプメソッド Array.prototype.find
+[x] 静的メソッド Array.from
+[ ] オブジェクト Promise
+[ ] DOM API
+基本的にメソッドのみを使っています。
+他のオブジェクトなども原理的には実装できるはずですが、実装していません。
+オブジェクトに関してはamilajack/eslint-plugin-compat: Check the browser compatibility of your codeがあるので、併用するのが良さそうです。ルール的にマージしてしまうのが良い気はしますが、特に動きはないです。
+Merge to similar project? · Issue #1 · azu/eslint-plugin-typescript-compat
+必要な人はこのIssueを進めていくと良いかもしれません。
+インストール
+npmを使ってインストールします。
+
+$ npm install eslint-plugin-typescript-compat typescript @typescript-eslint/parser --save-dev
+
+
+TypeScriptの型情報を使うためにtypescriptと@typescript-e…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -23019,7 +23059,7 @@ Taras Shevchenko, Public domain, via Wikimedia Commons, Link
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-03-18T01:28:47.028Z">2023-03-18T01:28:47.028Z</time>
+    <time id="build-timestamp" datetime="2023-03-18T02:19:49.098Z">2023-03-18T02:19:49.098Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

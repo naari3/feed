@@ -9459,6 +9459,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/03/18/eslint-plugin-typescript-compat/",
+          "author": null,
+          "description": "eslint-plugin-typescript-compatはTypeScriptプロジェクト向けのESLintルールです。\nこのESLintではサポートしているブラウザが、実装していないメソッドを検知してLintエラーにしてくれます。\nJavaScriptではメソッドの静的解析は難しい(メソッド名が同じでも独自実装の可能性があるため)ですが、TypeScriptの型情報を使って静的解析をしています。\nサポートしている機能\n[ ] JavaScriptのビルトインオブジェクト\n\n[x] プロトタイプメソッド Array.prototype.find\n[x] 静的メソッド Array.from\n[ ] オブジェクト Promise\n[ ] DOM API\n基本的にメソッドのみを使っています。\n他のオブジェクトなども原理的には実装できるはずですが、実装していません。\nオブジェクトに関してはamilajack/eslint-plugin-compat: Check the browser compatibility of your codeがあるので、併用するのが良さそうです。ルール的にマージしてしまうのが良い気はしますが、特に動きはないです。\nMerge to similar project? · Issue #1 · azu/eslint-plugin-typescript-compat\n必要な人はこのIssueを進めていくと良いかもしれません。\nインストール\nnpmを使ってインストールします。\n\n$ npm install eslint-plugin-typescript-compat typescript @typescript-eslint/parser --save-dev\n\n\nTypeScriptの型情報を使うためにtypescriptと@typescript-e…",
+          "link": "https://efcl.info/2023/03/18/eslint-plugin-typescript-compat/",
+          "publishedOn": "2023-03-18T01:18:00.000Z",
+          "wordCount": null,
+          "title": "TypeScriptの型情報を使ったサポート対象のブラウザが実装してないメソッドの利用をエラーにするESLintルール",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/03/11/auto-release-note/",
           "author": null,
           "description": "GitHub のAutomatically generated release notesを使ってリリースノートの内容を PR に基づいて自動生成するフローを作りました。\n今までは、コミットメッセージのルールであるConventional Commitsとconventional-github-releaserを使って、コミットからリリースノートを自動生成していました。\n他の人の PR でも、squah merge でコミットメッセージを書き換えることで、リリースノートに反映されるようにしていました。\nただ GitHub に仕組みは違うけどほぼ似たことをするAutomatically generated release notesという機能が実装されているので、これをベースに移行しようと思って、そのワークフローを作っていました。\nリリースノート自動生成テクニック - mizdra’s blog\nリリースノート管理術\nGitHub Actions でいい感じのリリースノートを完全自動で作成する\n目的\n目的としては、次を目標にしていました。\nConvential commit でやっているものをAutomatically generated release notesベースに移行する\n自分は大量のリポジトリを持っているので、段階的に移行できるようにしました。\nConvential commitとAutomatically generated release notesは同時に使っても競合はしないので、実際にはConventional Commitsでコミットしながら、リリースするときに Convential commit かAutomatically generated release notesどちらを使うかを選択できるようにしています。\n(たまに、PR を経由せずにコミット…",
