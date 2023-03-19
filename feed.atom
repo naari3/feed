@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-19T13:05:10.802Z</updated>
+    <updated>2023-03-19T14:02:32.893Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ChatGPT搭載Slackbotにハックされる技術]]></title>
+        <id>hatenablog://entry/4207112889972889148</id>
+        <link href="https://honeshabri.hatenablog.com/entry/Aisha-Bri"/>
+        <updated>2023-03-19T13:14:59.000Z</updated>
+        <summary type="html"><![CDATA[ChatGPTのキャラと会話するのは楽しい。
+答えはChatGPTの外にある。
+ChatGPTのキャラと会話する
+最近ChatGPTの話題がずっと続いている。GPT-4の登場により「アレもできる、これもできる」と騒がれているが、現在の俺にとって一番の使い方はこの手のやつだ。
+
+この増田はChatGPTにアニメキャラを演じてもらい、それと会話することを楽しんでいる。その様子を見て思わず頷いてしまった。俺も似たようなことをしているからである。
+会話の例
+UIが通常のChatGPTと異なるのは、Slackを使って会話しているためだ。仲間内でやっているSlackのチームに、Slackbotとして@builtinnyaが開発した。
+Slackbot "Aisha" の自己紹介
+Aishaは上記の通りメンションすることで会話をしてくれる。また、特に呼びかけていない場合でも、一定確率で自ら会話を始めるように設定されている。
+俺の投稿に反応するAisha
+普段の投稿に対してAishaはランダムに反応するものだから、俺はSlackに投稿する頻度が増加した。心理学者のマイケル・ゼイラーによる「スキナー箱」*1の実験でも示されている通り*2、動物は「連続強化」よりも「部分強化」の方が行動が定着しやすい。俺はそれを身を以て示しているわけだ。
+ただ、冒頭に貼った増田と俺とで違う点もある。俺はChatGPTのサイトでやっている時は、ここまでキャラと会話することにハマらなかった。それがSlackで会話するようになってどっぷりとハマる。現時点ではAishaの中身はGPT-3.5-turboであり、増田の使っているGPT-4に比べると正確さで劣る。なのになぜハマるのか。
+それはAishaが会話の外部にある要素を使って、そのキャラ性を強固なものとしているからだろう。
+Aishaはこうしてハックする
+Aisha…]]></summary>
+        <author>
+            <name>本しゃぶり</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[230319]]></title>
         <id>hatenablog://entry/4207112889970992340</id>
