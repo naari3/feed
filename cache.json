@@ -4171,21 +4171,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889926037582",
-          "author": null,
-          "description": "はじめに\nTrillianとは\nVerifiable Data Structures\nTree head hash\nSigned tree head\nInclusion proof\n検証方法\nInclusion proof\nハッシュ計算\nLeaf hash\nNode\nlogIndex\n完全二分木でない場合\n概要\n計算方法\n手動で試す\nSigned tree head (STH)\nInclusion proof\nまとめ\nはじめに\n前回のVerify編でRekorから返されたtlogの検証を行いましたが、そのうちTrillianに関連する部分はスキップしました。今回はそのTrillianに関しての記事です。Keyless Signing連載の最後です。\ncurlでKeyless Signingする (1) - OpenID Connect編\ncurlでKeyless Signingする (2) - Fulcio編\ncurlでKeyless Signingする (3) - Signed Certificate Timestamp編\ncurlでKeyless Signingする (4) - Rekor編\ncurlでKeyless Signingする (5) - Verify編\ncurlでKeyless Signingする (6) - Trillian編 （本記事）\nRekorはドキュメントで以下のように書いています。\nRekor aims to provide an immutable, tamper-resistant ledger of metadata generated within a software project’s supply chain.\n\n\ndocs.sigstore.dev\nこのimmutable, tamper-resistant ledgerの部分はT…",
-          "link": "https://knqyf263.hatenablog.com/entry/2022/12/19/234539",
-          "publishedOn": "2022-12-19T14:45:39.000Z",
-          "wordCount": null,
-          "title": "curlでKeyless Signingする (6) - Trillian編",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20221010/20221010004835.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20221010/20221010004835.png"
         }
       ]
     },
@@ -10011,16 +9996,6 @@
           "publishedOn": "2022-12-20T13:00:07.000Z",
           "wordCount": null,
           "title": "Mimicking a Holographic Effect for Mercard",
-          "imageUrl": null
-        },
-        {
-          "id": "25286",
-          "author": null,
-          "description": "はじめに こんにちは、mercari.goスタッフのshota sugiuraです 12月2日にメルカリ主催のGo勉強会 mercari.go #20 をYouTubeでのオンライン配信にて開催しました。この記事では、当 […]",
-          "link": "https://engineering.mercari.com/blog/entry/20221216-4646756013/",
-          "publishedOn": "2022-12-19T15:00:19.000Z",
-          "wordCount": null,
-          "title": "mercari.go #20 を開催しました #mercarigo",
           "imageUrl": null
         }
       ]

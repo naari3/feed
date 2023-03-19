@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-19T02:26:24.647Z</updated>
+    <updated>2023-03-19T03:04:25.208Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -16668,58 +16668,6 @@ www.hatena.ne.jp
         <summary type="html"><![CDATA[17、18ともずっと予定のある休日であり、せわしなかった。しかし義務というより趣味の方の予定であり、人とあって話すものばかりであった。18日は数人で美術館を訪問したのち適当な担々麺のお店と喫茶店を訪れた。担々麺のお店が存外に当たりであり、こういうときになんとなく選んだものがおいしいのはいいねとなっていた。美術館とか博物館にもっと積極的に訪れたいということを前も書いたけれど、今回もそう思った。来年の目標として10回以上は美術館や博物館に訪れることを目指したい。]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[mercari.go #20 を開催しました #mercarigo]]></title>
-        <id>25286</id>
-        <link href="https://engineering.mercari.com/blog/entry/20221216-4646756013/"/>
-        <updated>2022-12-19T15:00:19.000Z</updated>
-        <summary type="html"><![CDATA[はじめに こんにちは、mercari.goスタッフのshota sugiuraです 12月2日にメルカリ主催のGo勉強会 mercari.go #20 をYouTubeでのオンライン配信にて開催しました。この記事では、当 […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[curlでKeyless Signingする (6) - Trillian編]]></title>
-        <id>hatenablog://entry/4207112889926037582</id>
-        <link href="https://knqyf263.hatenablog.com/entry/2022/12/19/234539"/>
-        <updated>2022-12-19T14:45:39.000Z</updated>
-        <summary type="html"><![CDATA[はじめに
-Trillianとは
-Verifiable Data Structures
-Tree head hash
-Signed tree head
-Inclusion proof
-検証方法
-Inclusion proof
-ハッシュ計算
-Leaf hash
-Node
-logIndex
-完全二分木でない場合
-概要
-計算方法
-手動で試す
-Signed tree head (STH)
-Inclusion proof
-まとめ
-はじめに
-前回のVerify編でRekorから返されたtlogの検証を行いましたが、そのうちTrillianに関連する部分はスキップしました。今回はそのTrillianに関しての記事です。Keyless Signing連載の最後です。
-curlでKeyless Signingする (1) - OpenID Connect編
-curlでKeyless Signingする (2) - Fulcio編
-curlでKeyless Signingする (3) - Signed Certificate Timestamp編
-curlでKeyless Signingする (4) - Rekor編
-curlでKeyless Signingする (5) - Verify編
-curlでKeyless Signingする (6) - Trillian編 （本記事）
-Rekorはドキュメントで以下のように書いています。
-Rekor aims to provide an immutable, tamper-resistant ledger of metadata generated within a software project’s supply chain.
-
-
-docs.sigstore.dev
-このimmutable, tamper-resistant ledgerの部分はT…]]></summary>
-        <author>
-            <name>knqyf263's blog</name>
         </author>
     </entry>
 </feed>
