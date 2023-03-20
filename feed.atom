@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-20T14:02:17.478Z</updated>
+    <updated>2023-03-20T15:02:16.515Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -16774,28 +16774,6 @@ M-1を見た。
 続きをみる]]></summary>
         <author>
             <name>aun6june</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[vscodeの設定ファイル .vsocde/*.json をGitHubでJSONCとしてハイライトさせる]]></title>
-        <id>hatenablog://entry/4207112889946934234</id>
-        <link href="https://gfx.hatenablog.com/entry/2022/12/21/112105"/>
-        <updated>2022-12-21T02:21:05.000Z</updated>
-        <summary type="html"><![CDATA[.gitattributes に次の1行を足すと、vscodeの設定ファイルがGitHubでJSONC (JSON with Comments) としてsyntax highlightされるようになります。
-.vscode/*.json linguist-language=jsonc
-GitHubのsyntax highlightは github/linguist で制御されています。これに同梱されている overrides.md というドキュメントに、repoごとのカスタマイズ方法が載っています。
-https://github.com/github/linguist/blob/master/docs/overrides.md
-syntax highlightだけでなく、GitHub repoの統計（どの言語がN%、みたいなやつ）からの除外、自動生成されたかどうかのフラグ（統計から除外されるのと、PRでdiffがデフォルトで展開されなくなる）、などを制御できます。
-syntax highlightのデフォルトおよび利用可能な値は languages.yml に定義されているので、そこを参考にして設定できます。
-https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
-ハイライトの実例はこんな感じ: https://github.com/msgpack/msgpack-javascript/blob/main/.vscode/launch.json
-そもそもGitHubがデフォルトで .vscode/*.json をJSONCとしてもいいんじゃないか？とおもってpull-req github/linguist#6221も提案してみたのですが、これは採用予定なしと。理由は次の通り:
-basenameだけでなくpathnameをみるというのは破壊的変更で影響範囲が大きすぎる。もし本当にやるなら慎重な検討が必要だが、いまのところ恩恵を受けるのは .gitattributes を指定していないvscode userだけ
-GitHub 11年の歴史でsyntax highlightの際にpathname全体をみるという要求はvscodeの設定ファイルだけ
-そもそもvscodeが *.json ファイルにJSONと非互換なフォーマット（JSONC）を書けるというのは慣習に違反していて無作法では？もしこの件について何かしたいならvscodeが .vsocde/*.jsonc をサポートするべきではないか
-正論すぎますね。個人的には、JSONがコメントと末尾コンマを許容するようになるとこの件のみならずJSON/JSONCにまつわる様々な問題が解決してみんな幸せになれるので、Microsoftのvscode teamがそういう提案をしてくれるといいなと思います（いや提案するのは誰でもいいですが）。逆に、そういう未来を想定するならばvscodeが .vscode/*.jsonc をサポートする必要はないのかなとも思います。現状だといずれにせよ .gitattibutes でカスタマイズできますしね。]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
         </author>
     </entry>
 </feed>
