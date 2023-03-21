@@ -9400,6 +9400,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/03/21/github-sponsors-paypal/",
+          "author": null,
+          "description": "タイトル通りですが、GitHub Sponsorsで誰かをスポンサーするときにPayPalが利用できなくなっています。\n2023年2月23日にPayPalの支払いができなっているので、スポンサーを継続したい場合は支払い方法をクレジットカードに切り替える必要があります。\nGitHub Sponsors will stop supporting PayPal | GitHub Changelog\n2023年2月23日までクレジットカードに切り替えていなかった場合は、自動的にスポンサーをキャンセルした扱いになっています。\n支払い方法の変更\n次の手順で、GitHub(Sponsorsを含む)の支払い方法をクレジットカードに変更できます。\nhttps://github.com/settings/billing/payment_information\nPayment methodsから”Credit or debit card”を選択\nクレジットカード情報を入力して保存\n\nこのときにPayment Informationとして、クレジットカードに対応する名前や住所などを入れる必要があります。\nこの情報は、GitHub社以外は見ることはできないため、スポンサーされた人にも通知されません。\n初めてでもわかる、GitHub Sponsorsでオープンソースを支援する方法\n支払い方法を追加または編集する - GitHub Docs\nキャンセルしたスポンサーを再開する方法(する側)\n2023年2月23日までクレジットカードに切り替えていなかった場合は、自動的にスポンサーをキャンセルした扱いになっています。\nキャンセルしたスポンサーは次のページで確認できます。\nSponsorship Logにアクセス\n2023年2月23日前後に”Cancel”の表示があるアカウントを選択\n再度スポンサーになる\n意図せずにキャンセルしてしまった場合は、再度スポンサーになってみてください。\nキャンセルされたスポンサーの見つけ方(される側)\nこれはスポンサーされる側の方ですが、次のページでGitHubのスポンサーがキャンセルされたかどうかを確認できます。\nhttps://github.com/sponsors/{user}/dashboard/activity\n大体2023年2月23日 ~ 3月前半にCancelの表示が出ていたら、この影響だと思います。\nSeeing lots of GitHub Sponsors cancellations this week. Likely due to GH removing PayPal support. It's sad, but nothing I can do about it.\nI'm just grateful for all the support I've received over the years, and for the folks that continue to support me! 🤓🙏❤️ https://t.co/kUpL6DeTBi pic.twitter.com/EgWAFrrbal\n— Andreas Kling (@awesomekling) March 8, 2023\n  \nGitHubにはスポンサーしている人にメッセージを送る機能はありますが、キャンセル済みの人へ送る機能はないようです。\nまとめ\nGitHub SponsorsではPayPalを使った支払いはできなくなったので、クレジットカードに切り替える必要があります。\nただし、GitHub自体への支払い(Pro機能など)はPayPalが継続して利用できるようです。\nGitHub Sponsors will stop supporting PayPal | GitHub Changelog\n意図せずにスポンサーをキャンセルしてしまった場合は、再度スポンサーになってみてください。喜ばれます。",
+          "link": "https://efcl.info/2023/03/21/github-sponsors-paypal/",
+          "publishedOn": "2023-03-21T08:27:00.000Z",
+          "wordCount": null,
+          "title": "GitHub SponsorsではPayPalを使った支払いはできなくなったので、クレジットカードに切り替える必要があります",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/03/18/eslint-plugin-typescript-compat/",
           "author": null,
           "description": "eslint-plugin-typescript-compatはTypeScriptプロジェクト向けのESLintルールです。\nこのESLintではサポートしているブラウザが、実装していないメソッドを検知してLintエラーにしてくれます。\nJavaScriptではメソッドの静的解析は難しい(メソッド名が同じでも独自実装の可能性があるため)ですが、TypeScriptの型情報を使って静的解析をしています。\nサポートしている機能\n[ ] JavaScriptのビルトインオブジェクト\n\n[x] プロトタイプメソッド Array.prototype.find\n[x] 静的メソッド Array.from\n[ ] オブジェクト Promise\n[ ] DOM API\n基本的にメソッドのみを使っています。\n他のオブジェクトなども原理的には実装できるはずですが、実装していません。\nオブジェクトに関してはamilajack/eslint-plugin-compat: Check the browser compatibility of your codeがあるので、併用するのが良さそうです。ルール的にマージしてしまうのが良い気はしますが、特に動きはないです。\nMerge to similar project? · Issue #1 · azu/eslint-plugin-typescript-compat\n必要な人はこのIssueを進めていくと良いかもしれません。\nインストール\nnpmを使ってインストールします。\n\n$ npm install eslint-plugin-typescript-compat typescript @typescript-eslint/parser --save-dev\n\n\nTypeScriptの型情報を使うためにtypescriptと@typescript-e…",
