@@ -78,6 +78,50 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/blog/feed.xml" target="_blank"
+              rel="noopener">メルカリエンジニアリングブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">仲間たちをエンパワーメントする取り組みはつづくよ #WomenCareerTalk</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://engineering.mercari.com/blog/entry/20230320-a4d3d57996/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はじめに こんにちは！わたしはメルペイでエンジニアリングマネージャーをやっている micchie です。わたしたちは「メルペイ女性エンジニアアトラクトプロジェクト」 を運営しています。このプロジェクトは、共感や元気をシェ […]</span>
+                  </div>
+                  <img src="https://storage.googleapis.com/prd-engineering-asset/2023/03/37874c66-002.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/massmasaoki" target="_blank"
+              rel="noopener">moroishimasaoki</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">【週刊プラグインレビュー】DDMF / GrandEQ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/massmasaoki/n/n00f7a4722bcd" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>３月も終わりに近づいてきましたが、皆さんいかがお過ごしでしょうか？
+もうそろそろ桜の季節ということで、お花見を楽しみにしつつstudioMASSの事業のこざこざを順次処理していく毎日であります笑
+話は変わりますが、またもやデジタルEQでなかなか出来なかったフィーリングを得られるプラグインが出てきてしまいました。
+今年はEQ、豊作なんじゃないかなと思います
+続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/100772400/rectangle_large_type_2_6a983986ee4edb609a39a58e79a69d52.png?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.ojisan.io" target="_blank"
               rel="noopener">blog.ojisan.io&#x27;s RSS Feed</a></h3>
           <section class="articles-per-source">
@@ -308,6 +352,55 @@ GitHub Sponsors will stop supporting PayPal | GitHub Changelog
 しばらくシャバにとどまってないといけないみたいです　俺はそっちのほうが怖い 続きをみる</span>
                   </div>
                   <img src="https://assets.st-note.com/production/uploads/images/88795467/profile_b8ab8be6d7fb9a22375f79ac4c913fea.png?fit&#x3D;bounds&amp;format&#x3D;jpeg&amp;quality&#x3D;85&amp;width&#x3D;330" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GPTの仕組みと限界についての考察（１）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2023/03/20/215000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>GPT4が登場してChatGPTが盛り上がってますね。
+本記事は、GPT（を支えるTransformerという仕組み）をChatGPTユーザにとって分かりやすく説明し、その能力と限界についての見通しをよくしよう、という趣旨になります。
+ 
+少し長くなりそうなので、全部で記事を3回に分けようと思います。
+ 
+（１）大まかな背景と概要：本記事
+（２）GPTの能力と可能性：実際の使用例とTransformerの仕組みを踏まえて説明
+（３）GPTの限界と未来展望：Transformerの仕組みが持つ限界と研究の進展を予想
+ 
+GPT3と4の違い： トークン長とは何か？
+まずここから話を始めます。GPT-3は、パラメータ数が750億個（850GBの容量を食う）でトークン長が4097(GPT-3.5)でした。GPT-4は、パラメータ数は非公開でトークン長は32768ですので、ちょうど8倍になります。
+さて、トークン長とはいったい何なのでしょう？これは平たく言うと「GPTが文脈を意識できる過去の単語数」です。
+例えば、ChatGPTに何か言葉を投げかけると返事を返してくれますが、このときに「文脈」としてそれ以前の単語を参照します。トークン長が4097でしたら、4097個前の単語までを参照しながら、返事を生成します。
+逆に言うと、これが非常に大事なことですが、トークン長を超えるような過去の単語は参照しないということです。だから、何か新しいことを教えて、それを踏まえたふるまいをChatGPTにさせたいとしても、32768単語以内で教える必要があるし、さらに教えたことを応用してチャットを進めて行った末に32768のトークン長をオーバーしてしまったら、せっかく教えた内容を忘れてしま（というか正確に言うと参照しなくなってしま）います。
+ 
+ここが凄く直観に反するところかもしれません。GPTは何か「文脈」のような抽象的な一塊の「記憶」をもって動作しているわけではないのです。
+そうではなく、直前の「トークン長ぶんの単語」を「まるっと」参照したうえで、次の単語を計算して出す、というのをひたすら繰り返すシステムなのです。
+何故そんな単純な仕組みであんなに賢いのか
+人間でも、会話していて脊髄反射のような「考えてない」受け答えをする人ってたまにいませんか？また、普段はちゃんと考えて会話をする人でも、疲れてくると「相手が言ったこと」に対して「あるあるな返事」でお茶を濁すことってよくありませんか？
+つまり、パターンに対して、パターンを返すような会話です。
+GPTは、いわば、そのおざなりな返事を「すご～く長いトークン長を踏まえ」て、パターンの抽象度も「コンピュータの計算パワーの暴力で飛躍的に高め」て、言葉を紡いでいけるので、脊髄反射な返答をしているだけなのにも関わらず、かなり賢くみえるのです。
+ 
+ではどう賢くて、どう馬鹿なのか。それを原理的に理解するためにはやはりGPTを支えるTransformer及びその根幹となるAttentionの仕組みをざっくり把握するのが良いと思います。本シリーズではめっちゃ（何なら文系の人でも）わかりやすく説明するのでご期待ください。
+歴史的経緯
+歴史的経緯としては、「記憶」をもって動作する仕組み（リカレントネットワーク）が良く研究されていたのですが、それだと(A)「凄く前に言われたことが文脈を強く決定づける」みたいなケースに対応するのが難しく、また(B)記憶を通じて順番に計算していく必要があるためにコンピュータの力を引き出す上で重要な「並列化」が難しい、というAとBの課題が相互に悪影響を与えあってて研究が進みづらい状況にあったのだと思います。
+そこで、「記憶」みたいな情報のパッケージングというか圧縮というかそういうことをせずに、単にずっと前の単語も「そのまんま加味」してあげる機械学習モデルにする方法（アテンション機構およびそれを最大限に組み入れたトランスフォーマーという仕組み）がすごく有効であることが分かり研究が急速に進展したようです。この方法ですと、(A)凄く前に言われたこともトークン長の範囲内であればちゃんと加味するので文脈を的確にとらえることが可能、(B)文脈を「記憶」にパッケージングして順番に計算していく方式ではなく、過去のトークン長の全単語を一斉にわ～っと計算しちゃうので「並列化」がしやすい、という風になりAとBが今度は好影響を与えあって研究がガンガン進んだというわけです。
+経済学的に考えても、コンピューティングパワーを存分に引き出すアルゴリズムがあると、R&amp;Dタスクが資本集約的になり大資本のあるところが資金を投じることで一気に技術を進歩させることができますね。それで、起爆剤に火がつけられたのが今、ということでしょう。
+ 
+というわけで
+（２）へ続きます。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -5841,6 +5934,56 @@ AE
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">自分の「嫌いな人の共通点を考える」ことのススメ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2023/02/25/140758" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>社会人をやっていると誰しも、（特に仕事において）
+ 
+「この人とは価値観が合わないなぁ。すごく嫌いだなぁ。」
+ 
+と思う人に出会うことはあるだろう。僕もそうである。それで今日ふと、
+ 
+「そういう僕の嫌いな人には、なんだか共通点があるぞ」
+ 
+ということに気づいた。嫌いな人のことを想像してなぜ嫌いかを考えることは、裏を返せば「自分が気づいてない自分の欠点」を自覚することにつながる。
+ 
+で、今日気づいたのは以下の点だった。
+ 
+１．僕はどちらかといえば、チームで何かを成し遂げることよりも、独力で何かを成し遂げることの方が価値があると思っている。
+ 
+２．僕はどちらかといえば、他者から口頭で教わるよりも、書物から読書や自分の思索で学ぶことのほうが質が高く量も多いと思っている。
+ 
+そして、「僕の嫌いなタイプの人」というのはいわば上記2点について、どうやら真逆なのだ。
+ 
+つまり、「チームで何かを成し遂げようとしその過程でコミュニケーション含めて経験から学びとっていく」というタイプの人を僕は嫌いになることが多い。
+ 
+そういう人に対して僕は「愚者は経験に学び、賢者は歴史に学ぶ」とか「一人では何もできない人に価値はないのでは」といった、思いっきりバイアスの入った偏見のまなざしを（心の中で）向けてしまう。
+ 
+これは以下のように、僕の短所でもあるし長所でもあると思う。
+ 
+僕は経験の機会が少ない代わりに、本を読んで理論や歴史を知ることでその少ない経験を補完できること。
+ 
+僕は器用貧乏で依頼下手ではあるけど、専門外のことも自分の中に取り込んでそれなりのレベルでこなせる自信があること。
+ 
+そんな感じで、「嫌いな人」のことを考えることで、自分の短所を改めて見つめるきっかけになることもあると思うので、みなさんもいかがでしょうか？
+ 
+ではまた。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://cild.hatenablog.com/" target="_blank"
               rel="noopener">ちるろぐ</a></h3>
           <section class="articles-per-source">
@@ -7678,6 +7821,48 @@ www.sirogohan.com</span>
 続きをみる</span>
                   </div>
                   <img src="https://assets.st-note.com/production/uploads/images/97580511/rectangle_large_type_2_be56a87de65938f25ab89ffbdddb3ba9.png?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">東京</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2023/02/18/171325" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>小さい頃、僕の実家がある埼玉県北部、熊谷市に住んでいたとき、東京は未知の都会だった。
+ 
+親戚の殆どが埼玉県に住んでいたけど、遠い親戚に一人だけ東京に住むおばさん（父の叔母）がいた。父も母もその方のことを「東京のおばさん」と呼んでいたけど、本当の苗字も名前も僕は知らない。
+ 
+その東京のおばさんの家に、一度だけ家族で日帰りで訪問したことがある。季節がいつだったかは覚えてないが、良く晴れた日だった。そこの家の知らない遠い親戚の子と一言二言話をした後、外に出て一人で散策した。なだらかな坂になっているアスファルトの道とコンクリートの塀に囲まれた住宅がいくつも並ぶ静かなところだった。
+ 
+いつも僕が実家近くの荒川の河川敷で眺めている遠くまで開けた空の夕日と違って、その東京のおばさんの家の前で浴びた夕日は、知らないところから差し込んきて、見たことのない形の影を刻んでいて、まるで絵画を見ているかのようだった。
+ 
+東京のおばさんの家には、父の運転する車で行った。車窓から見える景色は、東京に近づくにつれて次第に未知のものに変わっていった。高いビルや大きな建物が遠くに密集していたり、何層も立体交差する高速道路のジャンクションが間近に迫ってきたりして、東京って凄いところだなと幼心に感動を覚えたのだった。
+ 
+東京のおばさんがどんな人であったかは、まったく覚えてない。お小遣いをいくらか、もらったような気がするくらいか。今思えば、そこで出された「東京のお菓子」などのことも覚えていても良さそうに思えるが、その家の中での出来事は全く記憶にない。
+ 
+ただただ、その東京のおばさんの家の外で感じた東京の空気と空と光と影とが、時間を止めた映画のワンシーンのように僕の記憶にこびりついている。
+ 
+何度か、あれはどこだったの？と、両親に聞きたくなったこともあった。しかしそのたびに、無意識にその質問を胸にしまい込んできた。あのとき感じた東京が、あのときのままでいて欲しかったからかもしれない。
+ 
+僕は東京に住んで、もう20年近く経つ。もしかしたら、その記憶の中にある東京のおばさんの家の近くに知らずに行ったこともあったのかもしれない。また、今でもときどき、小さい頃のあの東京のイメージが一瞬だけよみがえることもある。その感情は筆舌に尽くしがたいものがあるが、そのイメージが持続することはなく、いつも一瞬で終わってしまい寂しい気持ちになる。
+ 
+「これがずっと続いたらなぁ。「僕の知らない東京」に、ずっと住めたらよいのになぁ。」
+ 
+そういう憧れを憧れのままに、大人になってもう慣れ親しんでしまった東京の空は、今日もオレンジ色の夕焼けに染まっていく。
+ 
+記憶の中のあの東京には、温かさも寒さも季節も残ってないけれど、いま僕が生きている今日という日の東京は、まだ二月だからと着こんでいたら少し汗ばんでしまうくらいのとても暖かい日だった。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -13898,6 +14083,49 @@ EDなんだよこれ、頭おかしくなるって
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ワイン初心者がオススメする赤ワインTop5</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2023/01/22/232638" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>昨年11月からワインに少しハマり、この2か月半でボトル20本ほど飲んできた中でオススメワインを紹介したいと思います。
+ 
+第５位 ベリンジャー・カヴェルネソーヴィニオン（約1000円）
+
+「いきなりステーキ」でグラス赤ワインを注文して、特に銘柄を選ばずに「なんでもいいです」って言えばたぶんこれが出てきます。しっかりとタンニンが効いてステーキに合う味ですし、大衆向けワインという位置づけの商品なので少し「ぶどうジュースっぽさ」があったりもします。「ぶどうジュースは好きだけどワインはそんなに好きじゃない」みたいなタイプの人は、ぜひこのワインを料理と一緒に味わってみることをお勧めします。マリアージュっていう楽しさを垣間見れること請け合い。ベリンジャーというのはアメリカのカリフォルニアにある大規模ワイナリーです。
+ 
+第４位 シャトーレゾリュー青ラベル （約3000円）
+
+しっかりと効いた酸味とこの価格帯としてはかなり芳醇なアロマ。タンニンもしっかり効いて料理とのマリアージュもピッタリです。ブーケ香は殆ど感じないのでバニラなどが好きな人にとっては物足りないかもしれませんが、「ワインは香ではなく味だ」と考える人にとっては複雑で高級な味を愉しめるお値打ちワインです。ヴィノスやまざきというワイン販売チェーンのロングセラーとして親しまれています。フランスのワインです。
+ 
+第３位 テッレデルバローロ（約3500円）
+
+ここからは３～１位すべてイタリアンワインです。バローロというのはいわば「松坂牛」みたいな感じのワインの地域ブランド名です。バローロは「ワインの王様」と呼ばれたりもしますが、このテッレデルバローロはふつうにスーパーマーケットで売ってたりもする、リーズナブルなバローロです。バローロは熟成期間が長くバニラのようないい香り（ブーケと言います）がするのが特徴で、このテッレデルバローロもちゃんとそういう香りがします。そのまま飲んでもちゃんと美味しいですし、タンニンもしっかり効いてるのでマリアージュにも適してると思います。
+ 
+第２位 パタレイナ社のランゲ・ネッビオーロ （約4000円）
+
+バローロやバルバレスコは、高級ワイン向けのブドウ品種である「ネッビオーロ」から作られます。このランゲ・ネッビオーロというのは、その品種を使いながら、熟成期間を（半年とか）短くして早く出荷することで、管理コストを抑えてリーズナブルな価格で提供するというコンセプトのワインです。それでも、ボジョレーヌーボーとかとは違って、熟成期間がちゃんとあったうえでの出荷なので、バローロやバルバレスコに勝るとも劣らない香りと味がちゃんとします。ワイン通販サイトでは「普段飲みのバローロ」などと書かれていたりもします。ランゲ・ネッビオーロ自体もピンキリで値段が色々あるようですが、このパタレイナ社のランゲ・ネッビオーロは、本格的にバローロに似たいい香りが一回りリーズナブルな価格で愉しめます。
+ 
+第１位 パタレイナ社のバルバレスコ （約7000円）
+
+今のところ、僕が飲んだ中でこれが一番おいしかったです。定価7000円くらいするので、このランキングの中でも高価ではあるのですが…（パタレイナ社のネッビオーロワインが単純に僕の好みなだけかもしれません）。このバルバレスコは、しっかりとしたボディにタンニンも効いてて、何よりも芳醇なブーケ香が立つのが特長です。このワインを飲んだ時の僕の感想は「こんな美味しいワイン生まれて初めてだわ」、です。
+ 
+番外編
+「俺のイタリアン」にあるワインリストは、かなり品質が良いと思います。俺のイタリアンにいったらぜひワインをボトルで注文してください。一番安いやつでもかなり美味しいです。ふつう、レストランでワインをボトルで注文すると、レストラン価格というマージンが乗ってるケースが多いと思いますが、俺イタのワインは通販で買うのと同程度の価格で普通に飲めますし、セレクトがかなり良いと思います。</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/isobe324649/20230122/20230122232756.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://honeshabri.hatenablog.com/" target="_blank"
               rel="noopener">本しゃぶり</a></h3>
           <section class="articles-per-source">
@@ -15976,6 +16204,50 @@ TwitterのIDはずっとkaikityouだったので、無記名状態みたいな�
                   <div class="article-summary-box-inner">
                     <span>ポストアポカリプスな世界を探索するオープンワールド型のアクションRPG、Horizon Zero Dawnをやった。</span>
                   </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">語彙力シリーズNo.1 「機序」</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2023/01/15/230636" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今日は新しいテイストの記事を書いてみます。
+ 
+日本語の語彙をみんなで増やしていこう！という趣旨のシリーズ第一回として、「機序（きじょ）」という言葉を取り上げてみます。
+ 
+機序とは？
+この言葉は、とくに「作用」という言葉を伴う「作用機序（さようきじょ）」という熟語で使われることが多いです。作用機序は典型的には「薬が効くメカニズム」を指すときに使います。
+これに代表されるように、機序という言葉は医事・薬事（いじ・やくじ）において使われることが多いです。
+ 
+機構や機能と何が違うのか？
+機構という言葉には、何か静的な事物であって、仮に動きがあってもその動きの前後で変化せずもとに戻る、というニュアンスがあります。
+例えば、社会的な組織で「何とか機構」みたいな団体があったりしますが、それは何らかの社会的機能を持っていたとしても、その機能を果たすことでその組織自身が変化してしまうことはふつう想定しません。
+ 
+機能という言葉は、「能」という漢字が持つ「能動的」「主体的に働きかける」をニュアンスとして強く含んでいます。逆に言うと、機能する対象のほうが「受動的」であるというニュアンスも含むことになります。
+例えば自動車でしたら「人や物を運ぶ」という機能がありますが、自動車の機能の対象は、「人や物」「出発地や目的地」になりますが、これらの対象はそれ自体では能動性をもっていません。また例えば車のハンドルには運転者の手動操作を車の動力機構（ここは機構という言葉ですね！）に伝えるという機能がありますが、この「伝えるという機能」を主体的に果たすのはハンドルであって運転者ではありません。（運転者は単に操作をハンドルに示しただけで、タイヤにそれを伝えてはいません）
+ 
+それに対して、機序という言葉には、機構と比べて「働きの前後で状態が変化する」というニュアンスを持つこと、機能と比べて「主体が能動的に何かに働きかける」というニュアンスが薄く「主体や対象といった区別を超えた全体図を指し示す」ニュアンスがあること、という違いがあります。薬の作用機序というのは、薬そのものに機能があるわけではなくて、生体にもともと備わっている仕組みをうまくテコ入れすることで全体として望ましい働きをさせているのだ、ってわけです。
+ 
+「機序」を使う場面
+特に生理的なメカニズムについていう時にはピッタリの言葉です。（物理法則に基づいて動く）機械や（法律などルールに基づいて運用される）社会的組織と違って、生体内の仕組みは何かが働くと状態が変化することが多いためです。
+ 
+なのでそうしたニュアンスをふまえると、比喩的に「機序」という言葉を（例えばビジネスでの提案書などを想定して）使う場面としては、説明したい事柄が生理現象によく似ているようなケース、薬の開発が生物の体内という複雑で変化に富むものを相手取るために正当性があくまでも経験則（治験とか）にゆだねられがちであるのに似た現象を説明したいようなケース、などが相応しいでしょう。
+ 
+というわけで
+また次の言葉でお会いしましょう。
+ではまた。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -19072,6 +19344,54 @@ Amazon
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">死と他者性</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2023/01/01/161512" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>明けましておめでとうございます。今年も本ブログをよろしくお願いします。
+ 
+で、正月早々縁起でもないタイトルで申し訳ない限りですが、今朝は少しだけ「将来の自分の葬式」について考えたりしてました。
+ 
+小さい頃から「自分のことは自分でやりなさい」って親に良く言われて育ったという人は僕だけじゃないはず。じゃあ「自分の葬式」を「自分でちゃんとやる」にはどうしたら良いのでしょうか？
+ 
+最近は終活という言葉があるとおり、いくら独り身で旅立ったとしても、自分の葬式代くらいは個人資産から出せるくらいのお金を残すのがマナーだろうとは思います。つまり自分の「さよならセレモニー」のスポンサーは自分ですよと、それはいい。
+ 
+でも、そのセレモニーを自分自身では執り行うことはどうしても出来ない。自分のことなのに、自分ではできない。絶対的な他者依存性が、人生の最後の最後に置かれている。
+ 
+さらに良く考えると一つ面白いことに気づきます。出生は必ず母との2者の間で行われる＝他者性と物理的に不可分の出来事であるのに、死亡は物理的に自分自身という1者のみで行われる出来事であることです。この非対称性は当たり前なんだけど、凄く興味深いことです。
+ 
+そして葬儀を含めて考えると、この非対称性は消え、対称的になります。すなわち、「始めと終わり」がどちらも他者との関わりを物理的に含むものになります。では、その対称性をもつ始めと終わりをひとつなぎに眺めたら、人の生涯はどのようにみえるのでしょう？
+ 
+（１）最初の自立とは自身の生誕であり、それは母からの分離であり「最初の他者の誕生」でもあります。
+ 
+（２）そして青年期にまで成長する中で社会的な自立を目指します。それはいわば「依存先となる他者の分散化」です。大人になるというのは、多様な価値観を持つ様々な他者との関わり合いのなかで自己を生きることです。
+ 
+（３）そして最後に、自身が死滅します。ここで、自立は究極の形、すなわち「自己の、絶対的な他者への完全な依託」という形をとることになります。
+ 
+つまり、人の生涯を他者性の側から見ると、「１．他者の生誕」「２．他者への依存」「３．他者への依託」という流れがあるわけです。
+ 
+僕はティーンエイジャーから20歳過ぎくらいまで「自分がいつか死ぬ」ということが怖くて悲しくて仕方がありませんでした。いまでも本当に怖いです。でもそれは、自分の生涯を自分自身から見た視点において抱く感情なのかもしれません。
+ 
+生涯を他者視点でみたとき、上で述べた「流れ」をふまえると、それは小さい兆しのようなものがポッと出て少しずつ大きくなりどんどん広がってついにはそれが生まれて自身と一体化するような、そういう流れにあるものと認識できるかもしれません。そういう認識のもとでは、恐怖とは無縁の希望に満ち溢れた人生観をもって生きられるのかもしれません。
+ 
+僕も40代。ずっとこれまで自分が全て、自分が一番大事、自分が世界の王者だ、という心を大事にしてきました。それ自体は悪いことではないと思いますが、僕も本当にイイ歳なので、死の準備というわけでもないですが、そういった他者視点での人生観も自分の中にきちんと確立していかなければなぁと思います。
+ 
+今日はこの辺で、ではまた。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/seirontea" target="_blank"
               rel="noopener">セイロンティー</a></h3>
           <section class="articles-per-source">
@@ -20297,6 +20617,36 @@ DPに関しては正直全然やれてないです……SPのリハビリを延�
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ワイン雑感</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2022/12/30/220612" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>年末年始と言えば、おせちとお酒。おせち料理にはまぁビールや日本酒が定番なんでしょうけど、おせちなどとは無縁の独り身としては「飲みたい酒を飲む」、これに尽きます。
+ 
+僕はビールが一番好きではありますが、ワインも好きです。醸造酒はちびちび飲めるのが良いですね。静かに本を読みながら一人で部屋でやるのにぴったりです。
+ 
+ワインというと、種類が本当にいっぱいあって圧倒されてしまうし、どれが美味しくてどれがお買い得でどれがまずくて、みたいなことが本当に分かりにくい。そこで僕は６，７年前、ワインの入門書を読むことにしました。3冊ほど読めば、ブドウの品種やワインの銘柄、産地、国によって存在するある程度の傾向（ただフランスだけは例外でフランスの中での産地でカテゴリ分けした方が良い）など、基本的な知識を身に着けることが出来ます。将棋で言うと駒の動かし方を覚えて、基本的な戦法を試してみるような段階まできた、という感じでしょうか。
+ 
+それでワインの試飲イベント（参加費7000～8000円くらいの飲み放題イベントが定期的に都内で開催されてたりします。でもコロナ後は減ってしまったんだろうか）に何回か行ったりした時期がありました。それは半年ほどの「マイブーム」で、少し熱が冷めてからはあまりワインを積極的に飲まなくなってしまいました。
+ 
+最近になって、近所にある（友達がオススメという）ワインショップに行き、一本6000円ほどのバルバレスコというイタリアンワインを買って一人で部屋で飲んだのがきっかけで、またワインを少し飲むようになりました。バルバレスコというのは分かりやすく言うと、「松坂牛」みたいな産地とブランドを合わせたような意味の言葉で、生産者（ワイナリー）は一つではないですが一定の味と品質を提供するワインの種類というかブランドを指しています。
+ 
+そのバルバレスコが、本当に美味しかった。ワイン…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
               rel="noopener">Web Scratch</a></h3>
           <section class="articles-per-source">
@@ -20542,6 +20892,57 @@ chasさんからニコニコのユーザーアイコンが咲キャラ(モブ)�
 でも自分の作風って咲合作と合わないよなと不安を感じながらどのパートを選ぶのか決めることになって。そこにあったのが住所不定さんのタタタタ多治比パートだったんです。残念ながら合作制作中に住所不定さんはユーザー削除なされたらしくタタタタ多治…</span>
                   </div>
                   <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kotsurend/20221229/20221229220548.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2023年にやりたいこと</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2022/12/29/203300" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>2022年も年の瀬ですね。
+今日は個人的に来年（仕事以外で）やりたいことをリストアップしてみます。
+ 
+・深センに旅行する
+世界で一番進歩の速い場所ではないかと思う。その空気だけでも吸ってみたい。
+ 
+・1日バーのマスターをやる
+キッチンカーを何台も自作してる友達に協力してもらい（すでに約束はしてある）、どこかのスペースを借りてやる。イベントを色々企画してお客さんを楽しませたい。イベントの内容は例えば、利き酒や利きチョコレート、目隠しして手に持った物体が何かを当てるゲーム、男性／女性の顔と声の対応を当てるゲーム、激辛たこ焼きロシアンルーレット、等々。屋外になると思うので、温かく風も少ないゴールデンウィークあたりが目安。
+ 
+・エレクトーン7級レベルの曲の演奏をマスターする
+今のレベルから一つジャンプしたようなレベルが7級なのでそのレベルの曲をしっかり弾けるくらいまで上達したい。
+ 
+・NHKのど自慢に出場する
+抽選にあたるか問題はあるが、多少旅行も含めて全国の開催地でいけそうな回を狙って応募。カラオケでいっぱい歌って練習する。 
+ 
+・ハーフマラソン完走
+春にどこか10キロマラソンのイベントに参加して、ジムでトレーニングして秋くらいにハーフマラソンという運びで行きたい。今のところジムではエアロバイクと筋トレを60分したあとにランニングマシンで約8km/hで30分（約4km）走る計90分のトレーニングを週2ペースでやってるけどハーフマラソン完走するにはちょっと足りない気もする。年明けから徐々に負荷を少しずつ上げていきたい。
+ 
+・週一以上のペースでブログを書く
+普通に生活してる中からネタを考えてコラムやエッセイを書いても良いのだけど、美術展にいったり旅行したり本を読んだりという「自分の外との関わり」によって得られる「自分の中との共鳴」を文章に書き起こすような内容を来年は志向したい。
+ 
+・数学書を1か月1冊以上のペースで読む
+恐らく本リストでこれが一番大変なのだけど一番充実感と達成感が得られるものなのでちゃんとやっていきたい。2023年の終わりに振り返ったとき、他がイマイチでもこれだけは結構できたといえるように一番メインにエネルギーを注ぐ。
+ 
+・平日の夜はしっかり本を読む
+これだけやりたいことがあると、積読本の消化は平日メインでやらなければならない。お酒は飲んでもいいから飲みながらでもちゃんと本を読む。
+ 
+・月に1本以上のペースで小説を書く
+今年は小説を書くのにチャレンジしたものの、なかなか上手く筆が進まなかった。下手でもいいから書いて小説投稿サイトで公開するってのをちゃんとやる。
+ 
+・月に1曲以上のペースで作曲する
+オリジナルの楽曲1ダースくらい作ってライブをやるのが夢なので、最初は下手でもいいからどんどん曲を作る。エレクトーンを習い始めたのも半分は作曲のためなのだし。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -22691,7 +23092,7 @@ device.audio.ringtoneDevices.set([&#x27;default&#x27;, &#x27;ABC123&#x27;]); // 
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-03-22T03:01:44.941Z">2023-03-22T03:01:44.941Z</time>
+    <time id="build-timestamp" datetime="2023-03-22T03:35:41.494Z">2023-03-22T03:35:41.494Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
