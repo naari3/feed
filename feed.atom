@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-22T09:02:00.456Z</updated>
+    <updated>2023-03-22T10:02:03.563Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,17 @@
         <summary type="html"><![CDATA[はじめに こんにちは！わたしはメルペイでエンジニアリングマネージャーをやっている micchie です。わたしたちは「メルペイ女性エンジニアアトラクトプロジェクト」 を運営しています。このプロジェクトは、共感や元気をシェ […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20230321]]></title>
+        <id>https://note.com/hory_nico/n/n130608dad376</id>
+        <link href="https://note.com/hory_nico/n/n130608dad376"/>
+        <updated>2023-03-22T09:42:50.000Z</updated>
+        <summary type="html"><![CDATA[20230320、東京タワー
+続きをみる]]></summary>
+        <author>
+            <name>ホーリィ</name>
         </author>
     </entry>
     <entry>
@@ -16976,40 +16987,6 @@ Profile
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twilio Voice での音質改善トライ 2022]]></title>
-        <id>hatenablog://entry/4207112889935625686</id>
-        <link href="https://www.bokukoko.info/entry/2022/12/23/070000"/>
-        <updated>2022-12-22T22:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ども@kimihomです。
-
-このブログ記事は Twilio Advent Calendar 2022 の記事となります。
-毎年、Advent Calendar の記事は「まとめ」の内容が多かったですが、今回は最近見つけてやってみた系の記事を記します。
-着信音が遅くなる問題
-本件は、Twilio Voice JavaScript SDK を利用した際に発生しました。TwiML にて、<Dial> で <Client> を指定したとします。
-<?xml version="1.0" encoding="UTF-8"?>
-<Response>
-    <Dial callerId="+8150++++++++">
-        <Client>joey</Client>
-    </Dial>
-</Response>
-
-
-
-Twilio Voice JavaScript SDK を使い、正しくWebブラウザ上で電話の発着信ができるような環境があったとします。そして、Twilio Voice Audio にて、以下の要望を実現したとします。
-着信音はPCから鳴らす
-通話音はヘッドセットから鳴らす
-ドキュメントには、以下の記載があります。
-const device = new Device(token);
-
-device.audio.ringtoneDevices.set('default'); // Set active device
-device.audio.ringtoneDevices.set(['default', 'ABC123']); // Set active devices
-上記の2つのデバイス指定を試すと、着信音がPCとヘッドセットそれぞれから鳴ることになります。
-しかし、これは本来のゴールではありません。着信の時は「パソコンだけを鳴らす」ということがしたくなり…]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>

@@ -6125,21 +6125,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221229/20221229162417.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889935625686",
-          "author": null,
-          "description": "ども@kimihomです。\n\nこのブログ記事は Twilio Advent Calendar 2022 の記事となります。\n毎年、Advent Calendar の記事は「まとめ」の内容が多かったですが、今回は最近見つけてやってみた系の記事を記します。\n着信音が遅くなる問題\n本件は、Twilio Voice JavaScript SDK を利用した際に発生しました。TwiML にて、<Dial> で <Client> を指定したとします。\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Response>\n    <Dial callerId=\"+8150++++++++\">\n        <Client>joey</Client>\n    </Dial>\n</Response>\n\n\n\nTwilio Voice JavaScript SDK を使い、正しくWebブラウザ上で電話の発着信ができるような環境があったとします。そして、Twilio Voice Audio にて、以下の要望を実現したとします。\n着信音はPCから鳴らす\n通話音はヘッドセットから鳴らす\nドキュメントには、以下の記載があります。\nconst device = new Device(token);\n\ndevice.audio.ringtoneDevices.set('default'); // Set active device\ndevice.audio.ringtoneDevices.set(['default', 'ABC123']); // Set active devices\n上記の2つのデバイス指定を試すと、着信音がPCとヘッドセットそれぞれから鳴ることになります。\nしかし、これは本来のゴールではありません。着信の時は「パソコンだけを鳴らす」ということがしたくなり…",
-          "link": "https://www.bokukoko.info/entry/2022/12/23/070000",
-          "publishedOn": "2022-12-22T22:00:00.000Z",
-          "wordCount": 776,
-          "title": "Twilio Voice での音質改善トライ 2022",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221215/20221215113042.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cevid_cpp/20221215/20221215113042.jpg"
         }
       ]
     },
@@ -6981,7 +6966,18 @@
       "title": "ホーリィ",
       "feedUrl": "https://note.com/hory_nico/rss",
       "siteUrl": "https://note.com/hory_nico",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/hory_nico/n/n130608dad376",
+          "author": null,
+          "description": "20230320、東京タワー\n続きをみる",
+          "link": "https://note.com/hory_nico/n/n130608dad376",
+          "publishedOn": "2023-03-22T09:42:50.000Z",
+          "wordCount": 2286,
+          "title": "20230321",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/100900231/rectangle_large_type_2_221aa2e69eb34f8f104806068b2c1413.jpeg?width=800"
+        }
+      ]
     },
     {
       "title": "8bit",
