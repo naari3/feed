@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-23T17:02:07.850Z</updated>
+    <updated>2023-03-23T18:02:18.632Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[OpenAI API を用いた文書校正(誤字脱字検出)]]></title>
+        <id>https://blog.jxck.io/entries/2023-03-24/proofreading-via-openai.html</id>
+        <link href="https://blog.jxck.io/entries/2023-03-24/proofreading-via-openai.html"/>
+        <updated>2023-03-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[OpenAI の API を用いて、長年の課題だった文書校正を VSCode 上で実現するプラグインを修作したところ、思った以上の成果だった。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[FEエンゲージをクリアしました　―エンゲージ世界最遅レビュー―]]></title>
         <id>https://note.com/howtopourbeer/n/nc39572644937</id>

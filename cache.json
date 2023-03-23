@@ -9320,6 +9320,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2023-03-24/proofreading-via-openai.html",
+          "author": null,
+          "description": "OpenAI の API を用いて、長年の課題だった文書校正を VSCode 上で実現するプラグインを修作したところ、思った以上の成果だった。",
+          "link": "https://blog.jxck.io/entries/2023-03-24/proofreading-via-openai.html",
+          "publishedOn": "2023-03-24T00:00:00.000Z",
+          "wordCount": null,
+          "title": "OpenAI API を用いた文書校正(誤字脱字検出)",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2023-02-28/jquery-has-forgiving-problem.html",
           "author": null,
           "description": "Interop 2022 の目覚ましい成果の一つとして :has() の存在がある。これまでの CSS の限界を突破する、革新的な仕様であり、多くの開発者が期待を寄せる機能の一つだろう。こうした仕様策定の裏には、必ずと言って良いほど互換性の問題がつきまとい、時にそれはそこまでの作業の蓄積を無に帰すレベルで影響を与える場合がある。一方それらは Web 開発者が使う時点では解決されており、基本的に気にされることはない。だからといって、気にする必要がないわけではない。ということを象徴する事件が、今回も裏で起こっていた。",
