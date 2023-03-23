@@ -78,6 +78,83 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://kmizu.hatenablog.com/" target="_blank"
+              rel="noopener">kmizuの日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ChatGPT APIベースの多言語トランスパイラGPTranslatorを公開しました！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://kmizu.hatenablog.com/entry/2023/03/23/132157" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>この日記やTwitterなどで、ChatGPT (GPT-3.5, GPT-4）はプログラミング言語間の変換（に限らないですが）が得意ということを書きましたが、試している内に「毎回似たような指示するのだるいな」と思うようになりました。というわけで、Reactベースで動くChatGPT APIを使ったトランスパイラGPTranslatorを作ってみました。ちなみに最近はトランスパイラという言い方がすっかり主流になった気がするのですが、一昔前だとトランスレータと呼ばれてた気がしますね……。
+github.com
+　といっても、要はChatGPT APIに投げる前に適当なプロンプトを付加しているだけという代物です。ただ、コードフラグメントを別言語に変換するときや、YAML -&gt; JSONみたいな設定ファイルの形式を変換するときなんかには多少役に立つのではないかなと思います。
+　詳細はGitHubのリポジトリを見てもらうとして、OpenAIのAPI KEYを
+export REACT_APP_OPENAI_API_KEY&#x3D; # this must be set before npm start
+
+
+
+　という形で指定しなければいけないところは多少使い勝手が悪いかもしれません（設定ファイルに書けた方がいいような気もします）。ともあれ、使ってみてバグや改良点などあればPull Requestなどがんがんいただければと思います。言うまでもないですが、ChatGPTベースということで精度は完璧ではありませんし、変換元や変換先の言語によってはうまくいかなかったりすることもあります。
+以下のスクリーンショットだと、Javaにはメソッドの中に直接メソッドを書く機能はないのになんか入っちゃってますね。そもそも型がないJavaScriptをそのままJavaに変換しようと思うと無理が生じるのは必然でもありますが。
+JavaScript to Java
+一方、PythonからJavaScriptへの変換は比較的素直に行きやすいようです（もっと複雑なサンプルになればまた別ですが）。
+aPython to JavaScript</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kmizushima/20230323/20230323131644.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
+              rel="noopener">たごもりすメモ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SwiftUIでNavigationStackを使っているとNavigation BarやBackボタンが隠せない?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/03/23/132114" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>タイトルに書いたままなんだけど。
+iOSアプリの作り直しをやってて、まあiOS16以降のみ対応でもいいかなと思ったのでビュー遷移に最初からNavigationStackを使おうと思ったんだけど、ユーザに勝手に戻ってほしくない遷移があるのでBackボタンを隠そうと思って以下のようなコードを書いた。
+NavigationStack(path: $path) {
+    SplashView()
+        .navigationBarTitleDisplayMode(.automatic)
+        .navigationBarBackButtonHidden(true)
+        .navigationDestination(for: SigninState.self) { state in
+            Group {
+                switch state {
+                case .notsignedin:
+                    SigninView()
+                case .signedin:
+                    MainView()
+                }
+            }
+        }
+    }
+}
+
+
+
+んだけど、navigationBarBackButtonHidden(true)はドキュメントにもある通り、どうもNavigationView内でしか効かないみたい。NavigationStackといっしょに指定してもやっぱり遷移先でBackボタンが表示されてしまう。
+SwiftUI慣れてないから修飾するビューが違うのかな、と思ってGroup{ ... }の部分に指定してもやっぱりダメ。
+あとドキュメントをあれこれ見てると.toolbarで指定しろってあるものもあるので .toolbar(.hidden, for: .navigationBar) を指定してみたりもしたんだけど、やっぱりダメ。なぜだ。現状ナビゲーションバーを隠したりBackボタンを非表示にしたりする方法がないのかな。
+なんもわからんのでDeveloper Forumに質問を投げておいた。投げる前に同じ問題が投稿されてなさそうなのはいちおう見てる。
+How can I hide navigation bars (or… | Apple Developer Forums</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -22979,41 +23056,9 @@ saize-lw.hatenablog.com
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2022-12-23">2022-12-23</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/hercelot" target="_blank"
-              rel="noopener">Hercelot</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Abletonのパラ書き出しで何が起きるのか</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/hercelot/n/nc6393e3865aa" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Ableton の細かい話は以下にまとめてます。
-    
-        
-            
-Abletonメモまとめ｜Hercelot｜note「けっこう使いこなしてるつもりだけど、細かくは知らん」「ノリで使ってたけどあれって実際なんなん？」みたいな中級者サポートとnote.com
-        
-    
-
-続きをみる</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-03-23T04:02:26.893Z">2023-03-23T04:02:26.893Z</time>
+    <time id="build-timestamp" datetime="2023-03-23T05:01:48.538Z">2023-03-23T05:01:48.538Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

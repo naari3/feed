@@ -4248,6 +4248,21 @@
       "siteUrl": "https://kmizu.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889974089441",
+          "author": null,
+          "description": "この日記やTwitterなどで、ChatGPT (GPT-3.5, GPT-4）はプログラミング言語間の変換（に限らないですが）が得意ということを書きましたが、試している内に「毎回似たような指示するのだるいな」と思うようになりました。というわけで、Reactベースで動くChatGPT APIを使ったトランスパイラGPTranslatorを作ってみました。ちなみに最近はトランスパイラという言い方がすっかり主流になった気がするのですが、一昔前だとトランスレータと呼ばれてた気がしますね……。\ngithub.com\n　といっても、要はChatGPT APIに投げる前に適当なプロンプトを付加しているだけという代物です。ただ、コードフラグメントを別言語に変換するときや、YAML -> JSONみたいな設定ファイルの形式を変換するときなんかには多少役に立つのではないかなと思います。\n　詳細はGitHubのリポジトリを見てもらうとして、OpenAIのAPI KEYを\nexport REACT_APP_OPENAI_API_KEY=<api key> # this must be set before npm start\n\n\n\n　という形で指定しなければいけないところは多少使い勝手が悪いかもしれません（設定ファイルに書けた方がいいような気もします）。ともあれ、使ってみてバグや改良点などあればPull Requestなどがんがんいただければと思います。言うまでもないですが、ChatGPTベースということで精度は完璧ではありませんし、変換元や変換先の言語によってはうまくいかなかったりすることもあります。\n以下のスクリーンショットだと、Javaにはメソッドの中に直接メソッドを書く機能はないのになんか入っちゃってますね。そもそも型がないJavaScriptをそのままJavaに変換しようと思うと無理が生じるのは必然でもありますが。\nJavaScript to Java\n一方、PythonからJavaScriptへの変換は比較的素直に行きやすいようです（もっと複雑なサンプルになればまた別ですが）。\naPython to JavaScript",
+          "link": "https://kmizu.hatenablog.com/entry/2023/03/23/132157",
+          "publishedOn": "2023-03-23T04:21:57.000Z",
+          "wordCount": 707,
+          "title": "ChatGPT APIベースの多言語トランスパイラGPTranslatorを公開しました！",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kmizushima/20230323/20230323131644.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kmizushima/20230323/20230323131644.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889967755862",
           "author": null,
           "description": "今朝未明、ChatGPT APIのリリースが告知されたわけですが、\nopenai.com\n　色々あって手早くとりあえず動くBOTを作ってみました（元々、GPT-3 BOTを作ってあったのでそれの微修正ですが）。ドキュメントは最低限ですが、\nコマンドラインで動く簡易BOT （chat.sh のexport OPENAI_API_KEYを修正した上、sh chat.sh`でいける）\nSlack Bot（こっちはSlack Botを作る知識が多少いる）\n　として使えます。試したいけどコード書くのめんどいなーという人の参考になれば。\ngithub.com\nChatGPT-BOTのデモ",
@@ -5682,6 +5697,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889974089280",
+          "author": null,
+          "description": "タイトルに書いたままなんだけど。\niOSアプリの作り直しをやってて、まあiOS16以降のみ対応でもいいかなと思ったのでビュー遷移に最初からNavigationStackを使おうと思ったんだけど、ユーザに勝手に戻ってほしくない遷移があるのでBackボタンを隠そうと思って以下のようなコードを書いた。\nNavigationStack(path: $path) {\n    SplashView()\n        .navigationBarTitleDisplayMode(.automatic)\n        .navigationBarBackButtonHidden(true)\n        .navigationDestination(for: SigninState.self) { state in\n            Group {\n                switch state {\n                case .notsignedin:\n                    SigninView()\n                case .signedin:\n                    MainView()\n                }\n            }\n        }\n    }\n}\n\n\n\nんだけど、navigationBarBackButtonHidden(true)はドキュメントにもある通り、どうもNavigationView内でしか効かないみたい。NavigationStackといっしょに指定してもやっぱり遷移先でBackボタンが表示されてしまう。\nSwiftUI慣れてないから修飾するビューが違うのかな、と思ってGroup{ ... }の部分に指定してもやっぱりダメ。\nあとドキュメントをあれこれ見てると.toolbarで指定しろってあるものもあるので .toolbar(.hidden, for: .navigationBar) を指定してみたりもしたんだけど、やっぱりダメ。なぜだ。現状ナビゲーションバーを隠したりBackボタンを非表示にしたりする方法がないのかな。\nなんもわからんのでDeveloper Forumに質問を投げておいた。投げる前に同じ問題が投稿されてなさそうなのはいちおう見てる。\nHow can I hide navigation bars (or… | Apple Developer Forums",
+          "link": "https://tagomoris.hatenablog.com/entry/2023/03/23/132114",
+          "publishedOn": "2023-03-23T04:21:14.000Z",
+          "wordCount": null,
+          "title": "SwiftUIでNavigationStackを使っているとNavigation BarやBackボタンが隠せない?",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889964820587",
           "author": null,
           "description": "ていうか有効にしていたつもりもなかったんだけどamplify-swiftがそう動いてしまう、そしてエラーになる、という話。\n結論としては、iOSアプリ側にあるamplifyconfiguration.jsonにおいて不必要なキーCredentialsProviderが存在すると自動的に使われてしまいエラーになるので、キーそのものを削除しなければならない。\n経緯\nAmazon Cognitoを、Google/Facebookその他IDプロバイダーのOAuth認証を通すために使っているが、IdentityProviderとしては使っていない。Web(React)で作っている画面の方ではJS用のAmplifyライブラリを経由していてログインができるんだけど、iOSアプリでSwiftからログイン用の機能を呼び出すと、なんかうまくいかない。認証用の画面が出てきてIDプロバイダー(Google)での認証が通ったあとに画面が閉じて成功も失敗も処理が走らない、という状況になってしまう。\n該当のコードはこんな感じなんだけど、signInWithWebUIが呼ばれたあとのsignInResultが返ってこず、また例外も出てない。:\n    @IBAction func tapSignInButton() {\n        Task {\n            do {\n                print(\"Signing in...\")\n                let signInResult = try await Amplify.Auth.signInWithWebUI(for: .google, presentationAnchor: self.view.window!, options: .preferPrivateSession())\n               …",
@@ -6964,18 +6994,7 @@
       "title": "Hercelot",
       "feedUrl": "https://note.com/hercelot/rss",
       "siteUrl": "https://note.com/hercelot",
-      "articles": [
-        {
-          "id": "https://note.com/hercelot/n/nc6393e3865aa",
-          "author": null,
-          "description": "Ableton の細かい話は以下にまとめてます。\n    \n        \n            \nAbletonメモまとめ｜Hercelot｜note「けっこう使いこなしてるつもりだけど、細かくは知らん」「ノリで使ってたけどあれって実際なんなん？」みたいな中級者サポートとnote.com\n        \n    \n\n続きをみる",
-          "link": "https://note.com/hercelot/n/nc6393e3865aa",
-          "publishedOn": "2022-12-23T16:50:30.000Z",
-          "wordCount": null,
-          "title": "Abletonのパラ書き出しで何が起きるのか",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "ホーリィ",
