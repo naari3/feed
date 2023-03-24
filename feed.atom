@@ -2,10 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-24T22:02:27.214Z</updated>
+    <updated>2023-03-24T23:02:24.654Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[翔丸7のApex 解説の動画のノート]]></title>
+        <id>hatenablog://entry/4207112889974596721</id>
+        <link href="https://all-is-vanity.hatenablog.com/entry/2023/03/25/072956"/>
+        <updated>2023-03-24T22:29:56.000Z</updated>
+        <summary type="html"><![CDATA[■屋内戦の話
+建物は中に閉じ込められてるチームは弱い。
+→ 中に籠るのは回復の時間稼ぎなどの一時的な最終手段。
+閉じ込められた状態からカウンターするには，囲もうとしている敵の孤立を見つけて3人で同じ場所から飛び出す。(→固まって動く)
+ 
+
+動画 4:05~
+https://m.youtube.com/watch?v=LyujXm7V4ec
+ 
+
+動画 4:10~
+ 
+
+https://m.youtube.com/watch?v=BMbLwXat_RQ&t=242s
+ 
+
+■残り4部隊なら戦闘しても良い
+残り4部隊の場合は倒せる敵部隊や，次の縮小で行き先のかぶるお隣さん部隊は戦闘しても良い。
+(→ 自分ら(部隊A)が部隊Bに戦闘をしかけたとき，部隊Cは漁夫に来るか？
+→ 部隊Cは部隊Dからの漁夫を警戒するので来ない)
+残り3部隊の場合は漁夫られるから戦闘を最大限回避して，敵同士に当たらせる。
+ 
+
+動画 17:35~
+https://m.youtube.com/watch?v=LyujXm7V4ec
+ 
+
+■エリアを広く守ると強い/固まったら弱いの意味
+ 
+
+野外戦の話で，広く展開してると自分たちの行動の選択肢が増えると同時に，敵の行動範囲を圧迫できる。
+味方同士での見れる範囲・敵の射線から身を隠せる場所が広がるので，敵を寄せ付けにくい。また敵へ通せる射線も増えてチャンスも増える。
+お互いにカバーし合える距離と角度にいるといい。(離れ過ぎてるとか，自分と味方の間にデカい遮蔽があって味方や自分に敵が寄ってきてもカバーし合えないとかは NG)
+ 
+
+顕著な例
+動画 5:55~
+https://m.youtube.com/watch?v=vbM7d3eg3eo
+ 
+
+動画 6:40~
+https://m.youtube.com/watch?v=CnHB5IWjHTs
+ 
+
+■索敵の話
+動画 7:00~
+https://m.youtube.com/watch?v=CnHB5IWjHTs
+ 
+
+スキャンがないときは敵がどこにいるかの3人分の位置情報をちゃんと共有する。分かってない場合は，裏や横から撃たれるかもしれないので警戒する。
+(→ 逆に敵の位置情報が頻繁に変化して，「3人分の情報を毎回共有をすること」がほぼ無理なのが屋内の乱戦なので，最初から3人で固まってればパーティ内で見えてる敵は常に一致してフォーカスも合わせやすい。これが「屋内戦は固まって動くと強い」の意味だと考えている。→ それで外に出れるなら敵を室内に閉じ込めると勝ち筋)]]></summary>
+        <author>
+            <name>読む毒</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2023年3月-④】P]]></title>
         <id>hatenablog://entry/4207112889974269938</id>
@@ -17082,16 +17142,6 @@ www.youtube.com
 以上です。]]></summary>
         <author>
             <name>思い出したら書きます</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mercari Engineeringの2022年振り返り]]></title>
-        <id>25505</id>
-        <link href="https://engineering.mercari.com/blog/entry/20221225-mercari-engineering-lookback-2022/"/>
-        <updated>2022-12-25T11:00:10.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは。メルカリEngineering Officeの@yasu_shiwakuです。 この記事は、Mercari Advent Calendar 2022 の25日目、最後の記事です。 2022年も残すところわずか […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
 </feed>
