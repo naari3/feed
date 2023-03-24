@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-24T13:04:53.524Z</updated>
+    <updated>2023-03-24T14:01:55.836Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[npm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた]]></title>
+        <id>https://efcl.info/2023/03/24/ni/</id>
+        <link href="https://efcl.info/2023/03/24/ni/"/>
+        <updated>2023-03-24T13:21:00.000Z</updated>
+        <summary type="html"><![CDATA[niという npm/yarn/pnpm/bun を同じコマンドでインストール/アンストールコマンドを実行できるツールがあります。
+antfu/ni: 💡 Use the right package manager
+仕組み的には、各パッケージのロックファイルやCorepackで決められたpackageManagerフィールドの値から、どのパッケージマネージャを使うかを判断しています。
+たとえば、package-lock.jsonがあるプロジェクトなら npm を使ってるので、niコマンドは npm のコマンドを実行します。
+また、packageManagerフィールドがyarn@<version>になっている場合は、niコマンドは yarn コマンドを実行します。
+なぜこういうツールが必要になるかというと、npm や yarn などのパッケージマネージャは、それぞれのパッケージマネージャのコマンドが異なるためです。
+たとえば、npm ではnpm install <pkg>でパッケージを追加できますが、yarn ではyarn add <pkg>でパッケージを追加します。
+色々なオープンソースプロジェクトをやっているとこの npm/yarn/pnpm/bun などがプロジェクトで異なるので、コマンドを意識して使い分ける必要が出てきて大変です。
+niはこれをn?というコマンド一つにまとめるというものです。
+antfu/niを使うのも良いと思ったのですが、Node.js である必要性もあんまりないのと、それぞれがコマンドとして実装されていて名前が被りそうな問題が気になりました。
+たとえば、npm runに相当するのがnrで、npm upgradeに相当するのがnuという形になっています。
+これだと、コマンドが増えると別のコマンドと被りそうなので、ni runのようにサブコマンドにし…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[海外でビールをたかられたり、BTSのコンサートを見たりする！ 「行きたい国・行った国」のエピソードを集めました]]></title>
         <id>hatenablog://entry/4207112889974427314</id>
