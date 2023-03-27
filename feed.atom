@@ -2,10 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-27T15:02:05.017Z</updated>
+    <updated>2023-03-27T16:01:47.268Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[秋月謎SoC基板のボタンを使いこなす]]></title>
+        <id>hatenablog://entry/4207112889975455717</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2023/03/28/002957"/>
+        <updated>2023-03-27T15:29:57.000Z</updated>
+        <summary type="html"><![CDATA[前回までの記事
+honeylab.hatenablog.jp
+で、Wi-SUNと3Gモジュールの基本的な機能を確認することができました。
+あと少し、本体には謎のA・Bのボタン（ケースを付けると細い棒などで押さないといけない）があります。
+ 
+ボタンをinputデバイスとして設定することもできますが、とりあえずはまずGPIOとして使ってみましょう。
+A/BボタンはSoCのGPIO 19番と20番に接続されています。
+GPIOの使い方は、Raspiなどで慣れている方にはわかりやすいと思いますが、初めて触る方にはわかりにくいので、書き方とコメントを付けて少し解説したいと思います。
+まず、GPIOのデバイスは
+/sys/class/gpio 以下を使用していきます。
+# cd /sys/class/gpio
+# ls
+export      gpiochip0   gpiochip32  gpiochip64  gpiochip96  unexport
+ここで/sys/class/gpio/export というデバイスファイルがあります。
+このファイルに、echo コマンドで、使用したいGPIOの番号を書き込むと、
+/sys/class/gpio/gpio[xx]　というディレクトリが発生します。
+19番を使用します、と宣言します。
+# echo 19 > export
+[  119.077251] gpio gpiochip0: Persistence not supported for GPIO 19
+# ls
+export      gpiochip0   gpiochip64  unexport
+gpio19      gpiochip32  gpiochip96
+gpio19ができました。この中には
+# ls gpio19
+active_low  direction   power       uevent
+device      edge        subsystem   value
+いくつかのファイルとディレクトリができます。
+GPIOの使い方を決めます。ボタンですので入力です。
+このために "in" という文字を direction というファイルに書き込みます
+# echo in > gpio19/direction
+# cat gpio19/direction
+in
+これで、準備ができました。ボタンの状態はいつでも"value"を見ることで判別できます。
+# cat gpio19/value　　　　　　←ボタンを押していない状態
+1# cat gpio19/value　　　　　　←ボタンを押した状態
+0
+
+ボタンは、押されたときにGNDに接して０になるように配線されています。
+このように、デバイスファイルを介してGPIOを設定し、値を読み込みます。
+ 
+ついでに、ボタンを押したときに何かが起きるようにしてみましょう。
+しかし、こいつにはディスプレイもついていないので、あなたの携帯にSMSを送ることにします。
+基板の電源を切り、お手持ちの２枚目のSIMカードを挿入して再度電源を入れます。
+このシェルスクリプトをターミナルから保存して動かすと…
+ 
+gist.github.com
+ボタンを押すと、SMSが送信されます。
+なんて素敵！
+秋月SoC基板のユーザーボタンを押すとSMSを送るシェルスクリプトが書けた pic.twitter.com/bqD2lna10W
+March 27, 2023
+
+
+ 
+ 
+普通のLinuxの端末から何か送信する場合、インターネット経由で何かしらのサーバを経由し、メッセージを送信することが多いと思います。
+この基板でも、pppdを設定してインターネットとして接続すればそのような設定も可能ですが、直でSMSをコマンドで送信することってなかなか体験しないじゃないですかね。（pppdでダイヤルアップを設定して…っていうのをあんまりやったことが無くて、うまくいくかわかんないのでとりあえずSMSにしてみた、というわけでは…あぁっ）
+興味のある方はぜひ一度やってみてください。
+尚、キャリアロックはないはずですが、対応しているバンド外のSIMだとだめかもしれません。私はIIJmioの音声/SMS対応のカードを使用しています。]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[週記#52 3月4週]]></title>
         <id>hatenablog://entry/4207112889975354405</id>
