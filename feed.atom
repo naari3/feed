@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-28T19:01:51.576Z</updated>
+    <updated>2023-03-28T20:01:59.495Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -17177,36 +17177,6 @@ chasさんからニコニコのユーザーアイコンが咲キャラ(モブ)�
 私は今年、一人ひとりが自律的で卓越したエンジニアの集団を目指すために、クックパッドのエンジニアとしてのあるべき考え方・文化を言語化した「エンジニアリングマニフェスト」を制定しました。実…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SwiftUI4での@Published警告に対応した話]]></title>
-        <id>hatenablog://entry/4207112889949220369</id>
-        <link href="https://www.bokukoko.info/entry/2022/12/29/162535"/>
-        <updated>2022-12-29T07:25:35.000Z</updated>
-        <summary type="html"><![CDATA[ども、@kimihom です。
-
-今年ももう終わりですね。
-去年、ボクココで書いた記事数は39記事でした。そして、今年も39時目となるこの記事を公開します。サンキュー！
-大量の警告通知
-今年、SwiftUI4がリリースされ、SwiftUI3で書いていたコードから大量の警告が届きました。
-Xcodeでアプリを繋ぎ、アプリを色々とタップすると、以下の文言が大量に出力されるようになりました。
-Publishing changes from within view updates is not allowed, this will cause undefined behavior.
-上記の文言で Google 検索すると、英語でさまざまな対応方法が記されています。私が調べた結果、YouTubeの配信が最もわかりやすく解説してましたので、紹介します。英語ではありますが、ソースコードを読むだけでも理解が進みました。
-
-
-
-コード改善
-まず、上記ビデオを見ると、最終的には sync 関数を自前定義しています。Boolのみの定義であるため、これを他の型でも sync できるように改善しました。
-extension View {
-    func sync<T: Equatable>(_ published: Binding<T>, with binding: Binding<T>) -> some View {
-        self
-            .onChange(of: published.wrappedValue) { published in
-                binding.wrappedValue = published
-            }
-            .onChange(of: binding.wrappedValue) { b…]]></summary>
-        <author>
-            <name>ボクココ</name>
         </author>
     </entry>
 </feed>
