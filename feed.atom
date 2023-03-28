@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-03-28T11:01:51.912Z</updated>
+    <updated>2023-03-28T12:02:21.969Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[あ]]></title>
+        <id>https://note.com/dak/n/n12f6aa28ed8d</id>
+        <link href="https://note.com/dak/n/n12f6aa28ed8d"/>
+        <updated>2023-03-28T11:39:22.000Z</updated>
+        <summary type="html"><![CDATA[あ続きをみる]]></summary>
+        <author>
+            <name>疒</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[被害妄想が強すぎる]]></title>
         <id>https://note.com/dak/n/nb1e9363149e7</id>
@@ -17191,33 +17201,6 @@ extension View {
         <updated>2022-12-29T00:34:35.000Z</updated>
         <author>
             <name>FUJITA Tomonori</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Next.js アプリケーションの共通コンポーネント開発]]></title>
-        <id>hatenablog://entry/4207112889948956718</id>
-        <link href="https://techlife.cookpad.com/entry/2022/12/29/090000"/>
-        <updated>2022-12-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは。レシピサービス開発部のkaorun343です。クックパッドではスマートフォン向けページにおける開発者体験向上のために、レシピサービスのフロントエンドを Next.js と GraphQL のシステムに置き換えている話にて紹介したとおり、Next.jsとGraphQLを用いたモダンな環境へと移行を進めています。例えばモバイル端末からのアクセスでURLがトップページの / であれば Rails、レシピ詳細ページの /recipe/:id であれば Next.js アプリにルーティングされるようになっています。現在ではレシピ詳細ページだけではなく検索結果ページやつくれぽ詳細ページ、MYフォルダページなどもNext.jsアプリケーションに置き換わっています。今回はその移行により生じた課題と取り組み方、それから併せて実施したモノレポ環境整備について紹介します。
-共通コンポーネントの導入背景
-実装方法
-Reactによる共通コンポーネント作成
-Storybookによる開発環境
-リソース取得のためのAPIサーバー
-ウェブコンポーネント作成
-カスタムエレメント
-Shadow DOM
-実装例
-モノレポ環境整備
-モノレポ環境整備を整備する前の状況
-Yarn Workspacesの導入
-Turborepoの導入
-さいごに
-共通コンポーネントの導入背景
-cookpad.com では上述の通りページによってホストするアプリケーションが異なる一方で、ヘッダーやサイドメニュー、フッターといった全てのページに共通して表示されているコンポーネントがあります。このような、Next.js と Rails アプリの両方から利用される UI コンポーネントのことをこの記事では "共通コンポーネント" と呼ぶこととします。
-クックパッドではハロウィンやクリスマスにあわせてヘッダーやフッターのデザインを変更す…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
 </feed>

@@ -6141,21 +6141,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/mirakui/20221229/20221229174944.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889948956718",
-          "author": null,
-          "description": "こんにちは。レシピサービス開発部のkaorun343です。クックパッドではスマートフォン向けページにおける開発者体験向上のために、レシピサービスのフロントエンドを Next.js と GraphQL のシステムに置き換えている話にて紹介したとおり、Next.jsとGraphQLを用いたモダンな環境へと移行を進めています。例えばモバイル端末からのアクセスでURLがトップページの / であれば Rails、レシピ詳細ページの /recipe/:id であれば Next.js アプリにルーティングされるようになっています。現在ではレシピ詳細ページだけではなく検索結果ページやつくれぽ詳細ページ、MYフォルダページなどもNext.jsアプリケーションに置き換わっています。今回はその移行により生じた課題と取り組み方、それから併せて実施したモノレポ環境整備について紹介します。\n共通コンポーネントの導入背景\n実装方法\nReactによる共通コンポーネント作成\nStorybookによる開発環境\nリソース取得のためのAPIサーバー\nウェブコンポーネント作成\nカスタムエレメント\nShadow DOM\n実装例\nモノレポ環境整備\nモノレポ環境整備を整備する前の状況\nYarn Workspacesの導入\nTurborepoの導入\nさいごに\n共通コンポーネントの導入背景\ncookpad.com では上述の通りページによってホストするアプリケーションが異なる一方で、ヘッダーやサイドメニュー、フッターといった全てのページに共通して表示されているコンポーネントがあります。このような、Next.js と Rails アプリの両方から利用される UI コンポーネントのことをこの記事では \"共通コンポーネント\" と呼ぶこととします。\nクックパッドではハロウィンやクリスマスにあわせてヘッダーやフッターのデザインを変更す…",
-          "link": "https://techlife.cookpad.com/entry/2022/12/29/090000",
-          "publishedOn": "2022-12-29T00:00:00.000Z",
-          "wordCount": null,
-          "title": "Next.js アプリケーションの共通コンポーネント開発",
-          "enclosure": {
-            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -6656,6 +6641,16 @@
       "feedUrl": "https://note.com/dak/rss",
       "siteUrl": "https://note.com/dak",
       "articles": [
+        {
+          "id": "https://note.com/dak/n/n12f6aa28ed8d",
+          "author": null,
+          "description": "あ続きをみる",
+          "link": "https://note.com/dak/n/n12f6aa28ed8d",
+          "publishedOn": "2023-03-28T11:39:22.000Z",
+          "wordCount": 1178,
+          "title": "あ",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/101395294/picture_pc_fe8497e75086e4a57a42b68d4fdc1e7d.jpg?width=800"
+        },
         {
           "id": "https://note.com/dak/n/nb1e9363149e7",
           "author": null,
