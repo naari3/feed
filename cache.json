@@ -10355,16 +10355,6 @@
           "wordCount": null,
           "title": "今年のオープンソース活動振り返り @ 2022",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2022/12/30/textlint-v12.3.0-esm/",
-          "author": null,
-          "description": "textlint v12.3.0をリリースして、\nECMAScript Modules(ESM)で書かれたルールやプラグインを扱えるように対応しました。\nRelease v12.3.0 · textlint/textlint\n\nv12時点では、 TEXTLINT_USE_NEW_CLI=1 textlint README.md または\ntextlint-esm README.md でのみESMを扱えます\n新しい仕組みには細かい互換性がないところがあるので、v12.3.0の段階ではフラグ付きで利用できるようにしています。\n次のメージャーバージョンであるv13で、デフォルトに切り替える予定です。\nコマンドラインユーザー向け\ntextlintをコマンドラインから利用している場合は、次のように環境変数を指定すると新しい実装に切り替わります。\n\nTEXTLINT_USE_NEW_CLI=1 textlint README.md\n\n\nまたは、textlint-esmというコマンドが増えているので、次のコマンドでも同じ結果になります。\n\ntextlint-esm README.md\n\n\nコマンドラインレベルでは、基本的に新しい実装でも結果は同じになるはずです。\n同じ結果にならなかったり、新しい実装にするとエラーが出たら報告してください。\nエディタユーザー向け\nvscode-textlintなどエディタプラグインは、おそらく古いAPIを使ってる場合があるので、プラグイン開発者の対応が必要です。\nもし、プラグイン開発をしている際にtextlintパッケージを使っていて、新しいAPIだと実装できないケースがあったらおしらせください。\n(.textlintrcを読み込まない場合は、@textlint/kernelパッケージが一番低レベルなAPIなので最適です。)\nFeedback for new…",
-          "link": "https://efcl.info/2022/12/30/textlint-v12.3.0-esm/",
-          "publishedOn": "2022-12-30T11:42:00.000Z",
-          "wordCount": null,
-          "title": "textlint v12.3.0リリース： ESMで書かれたルールを読み込めるように",
-          "imageUrl": null
         }
       ]
     },
