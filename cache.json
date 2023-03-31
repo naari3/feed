@@ -8178,6 +8178,16 @@
       "siteUrl": "https://note.com/sizes",
       "articles": [
         {
+          "id": "https://note.com/sizes/n/n116e5814193f",
+          "author": null,
+          "description": "カメラというのは人間の目を模倣したものだけれど、カメラがこの世に広まったとき、「人工の目が作られた」と思った人はあまりいなかったのではないか。なにしろ、使い方を100%理解していたわけじゃなかったから。とりあえず肖像画の代わりになることはわかったし、歴史も図像的に記録できる。けれども、決められた用途のために決められた役割を果たす、そういうマシーンだと思っていたんじゃないか。\nスマートフォンが普及してよくわかることだけれど、カメラをみんな持ち出すと、ほんとうに「目」そのものになる。道すがら怪しい人を見かけたら。何かの事件に出くわしたら。美味しい食事を前にしたら。それらは目で記憶する代わりに写真として残り、ほんらいであれば意識の中に漂う残り滓であったものが、実体化される。\n続きをみる",
+          "link": "https://note.com/sizes/n/n116e5814193f",
+          "publishedOn": "2023-03-31T01:03:44.000Z",
+          "wordCount": 2313,
+          "title": "カメラは人工の目だけれど、人工知能が見ている景色でもあるだろう",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/101630727/rectangle_large_type_2_a10b0655822558c569c45436b3c62cba.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/sizes/n/n4a723f76f31e",
           "author": null,
           "description": "コロナ禍が始まりたての頃って、明らかに異様だった。今も災厄は続いているけれど、ようやっと付き合い方やバランス感覚が判明した感じだ。特に2020年あたりはとんでもなくて、今思うと周りも自分も全員気を悪くしていたような気がする。「変化」という、人間にとって一番ストレスなものが連続的に起こったから、誰しもが多かれ少なかれ辛い思いをしたと思う。正月とか身内の結婚式で体調を崩すのと同じで、無意識に受けるストレスが大きいと思う。\n「みんな無意識にストレスを溜め込んでいる」ということをとみに感じたのは、やはり2020年頃にみんなの食べるものの嗜好が変わったことだ。あの頃のコンビニって、「特濃」「激辛」「強炭酸」みたいな刺激の強い新商品やニンニクや脂を売りにしたジャンクフードがぽこじゃが出ていたし、エナジードリンクの容量がどんどんインフレしていた。商品棚がどんどん過激になっていく様はゾクっとさせられる恐怖感があったし、無意識が作り出した欠乏の塊のようにも見えた。\n続きをみる",
@@ -9529,18 +9539,7 @@
       "title": "かっぱずしのnote",
       "feedUrl": "https://note.com/somethingofmok/rss",
       "siteUrl": "https://note.com/somethingofmok",
-      "articles": [
-        {
-          "id": "https://note.com/somethingofmok/n/nf417ddedd079",
-          "author": null,
-          "description": "１０選に参加しなかったので、参加してたらこれに入れてたなーのやつ\n簡潔に！！\n①コレハイト・ディスコ\n続きをみる",
-          "link": "https://note.com/somethingofmok/n/nf417ddedd079",
-          "publishedOn": "2022-12-31T12:14:14.000Z",
-          "wordCount": null,
-          "title": "かっぱずしの２０２２",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "ておつく",
@@ -9933,18 +9932,7 @@
       "title": "Posts on ストイックに生きたい",
       "feedUrl": "https://blog.sakamo.dev/post/index.xml",
       "siteUrl": "https://blog.sakamo.dev/post/",
-      "articles": [
-        {
-          "id": "https://blog.sakamo.dev/post/review-2022/",
-          "author": null,
-          "description": "2022 年も終わりなので振り返る。\n\n\n\n\n    \n\nTweet\n\n\n去年はもうちょっと余裕を持って書いていたが、今年はもう年越し直前で蕎麦を食べながら書いている。\nプライベート\n\n    \n        \n\n    \n\n\n去年と同様に、今年もそこそこ経済を回した。\n仕事\n\n    \n        \n\n    \n\n\n転職して 1 年 4 ヶ月が経過した。ソフトウェアエンジニアではなくなったので、仕事としてコードを書くことはないが、今のところそれ自体が苦しいことはない。仕事内容は良く同僚にも恵まれており日々の学びが多いためとても充実している。\n技術\n\n    \n        \n\n    \n\n\n主な領域としては、コンテナというのは変わらず。あとは IaC だったり、興味のある分野とかやりたい分野は一貫して変わっていない。\n久しぶりに本をちゃんと読んだ。この本は、Kubernetes の基本的なネットワークについて学ぶことができ、netns とか iptables がどう使われているのかわかる。\nNetworking and Kubernetes 読み始めたhttps://t.co/BzDG3gmyR1\n— さかもとりょーた(24) (@let_constant) April 8, 2022\n\n\n個人的に記憶にあるのが Zig とか Erlang を触ったことである。Zig は手に馴染む感じがせず Rust で良くねと思った。Erlang はパターンマッチが強く、Scala を初めて書いた時と同じような面白さを感じたし、多分 2023 年も触っている気がする。\nZig が流行ってるのでとりあえず触ってみた pic.twitter.com/cHXcTePYAG\n— さかもとりょーた(24) (@let_constant) July 17, 2022\n\n\n\nErlang おさわりしてる\n— さかもとりょーた(24) (@let_constant) December 17, 2022\n\n\nあとは、DNS とかいろいろ作りかけのものが今年も完成しなかったので、来年こそは完成させたい。\n　資格\n\n    \n        \n\n    \n\n\n去年のサイバーマンデーで買っていた CKAD をやっと受けた。2020 年ぐらいから受けようと思っていたのでついにという感じではある。\n受けた pic.twitter.com/6rztMu0fwy\n— さかもとりょーた(24) (@let_constant) November 29, 2022\n\n\n筋トレ\n\n    \n        \n\n    \n\n\n筋トレ 2022 に書いた通り、真面目に続けているので継続したいし、懸垂を頑張りたい。\n総括\n\n    \n        \n\n    \n\n\n来年もプライベートも仕事も頑張りましょう。あとは英語を頑張りたい。",
-          "link": "https://blog.sakamo.dev/post/review-2022/",
-          "publishedOn": "2022-12-31T13:04:20.000Z",
-          "wordCount": 319,
-          "title": "Goodbye 2022",
-          "imageUrl": "https://blog.sakamo.dev/ogp.jpg"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Wesley Aptekar-Cassels",
