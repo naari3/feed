@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-03T22:01:48.246Z</updated>
+    <updated>2023-04-03T23:01:54.747Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -16635,39 +16635,6 @@ DTMものニッチ需要
 しかしいざ読み始めてみると、思ったよりも遥かにサクサクと読書が進むことに気付く。むしろ手頃なペースで手頃なタスクをやっつけていく感じがかなり気持ちいい。思えば、あまり頭を使わずに読めるラノベほど淡々と読む消化作業に適した小説ジャンルも無い。会社や研究室からの指示がない中で自分で自分の人生の目標を立て…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[特徴的な素因数分解アルゴリズムを実装してみる]]></title>
-        <id>hatenablog://entry/4207112889951073765</id>
-        <link href="https://inaz2.hatenablog.com/entry/2023/01/04/191300"/>
-        <updated>2023-01-04T10:13:00.000Z</updated>
-        <summary type="html"><![CDATA[「単純な素因数分解アルゴリズムを実装してみる」 では、試し割り、Pollard-Rhoアルゴリズム、フェルマー法、Common Factor Attacksといった素因数分解アルゴリズムの実装と評価を行った。
-ここでは、上記以外の素因数分解アルゴリズムをPythonで実装し、一般的なPCで解くことができるbit数などを調べてみる。
-環境
-$ uname -a
-Linux vm-ubuntu64 5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
-
-$ lsb_release -a
-No LSB modules are available.
-Distributor ID: Ubuntu
-Description:    Ubuntu 22.04.1 LTS
-Release:        22.04
-Codename:       jammy
-
-$ grep "processor\|model name" /proc/cpuinfo 
-processor   : 0
-model name  : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
-processor   : 1
-model name  : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
-processor   : 2
-model name  : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
-processor   : 3
-model name  : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
-素数の生成
-素数とその積については、「単純な素因数分解アルゴリ…]]></summary>
-        <author>
-            <name>ももいろテクノロジー</name>
         </author>
     </entry>
 </feed>
