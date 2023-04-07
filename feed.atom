@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-07T19:02:28.478Z</updated>
+    <updated>2023-04-07T20:01:54.965Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -255,6 +255,16 @@ Tech Workshop Course と Tech OJT Course のどちらも、参加者の皆さん
 ↓↓↓皆さんのご応募をお待ちしております！]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[yarn v3, berry で astro 使う]]></title>
+        <id>https://blog.ojisan.io/astro-yarn-v3</id>
+        <link href="https://blog.ojisan.io/astro-yarn-v3"/>
+        <updated>2023-04-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[astro で yarn v3 が動かない yarn v3 環境下で astro を入れたときに astro を呼び出そうとすると、  となる。ちなみに別ライブラリの呼び出しも失敗する。 解決策 troubleshooting を読む。 FYI: https://docs…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
