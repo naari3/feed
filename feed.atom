@@ -2,10 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-09T23:02:19.007Z</updated>
+    <updated>2023-04-10T00:03:08.432Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[OS のメモリ管理の仕組み]]></title>
+        <id>hatenablog://entry/4207112889978608056</id>
+        <link href="https://yasukata.hatenablog.com/entry/2023/04/10/085714"/>
+        <updated>2023-04-09T23:57:14.000Z</updated>
+        <summary type="html"><![CDATA[OS のメモリ管理の仕組みについて調べたことをまとめました。
+読んでいただくと、以下のようなことについて少し詳しくわかるかもしれません。
+あるユーザー空間プロセスが他のユーザー空間プロセスのメモリにアクセスできない理由
+ユーザー空間プロセスがカーネル空間のメモリにアクセスできない理由
+ユーザー空間のプロセスとスレッドの違いはどのように実装できるか
+共有メモリはどのように実装できるか
+メモリマップトファイルはどのように実装できるか
+malloc は何故必要か
+あるコンテナが別のコンテナのメモリにアクセスできない理由
+コンテナと仮想マシンのメモリ領域の分離についての違い
+上記の全ての点について、仮想メモリという一つの機構で概ね説明可能である、というのが今回のポイントです。
+また、そもそものユーザー空間プロセスとメモリの関係についても、少しわかるかもしれません。
+当記事は、x86-64 CPU で動作する汎用 OS 環境を想定しています。
+メモリ
+当記事では、Dynamic Random Access Memory (DRAM) についてメモリと呼ぶとします。
+メモリは、ハードウェアの仕様上、CPU からアクセス可能な記憶領域で、パソコンには基本的なパーツとして付属しています。
+メモリには、各バイト（8-bit）ごとに 0 からメモリの最大容量まで番地（アドレス）が振ってあり、CPU からメモリへのデータの書き出し・読み込みは、アドレスを元に行います。（後述しますが、このアドレスは物理メモリアドレスと呼ばれます。）
+CPU からメモリへのアクセスはいつどのように発生するか
+まず、プログラムがどのようにメモリを利用しているか、具体的には、メモリへのアクセスがどのように発生するかということについて見ていきます。
+前提として、
+CPU はプログラムを実行するハードウェアで、
+CPU は…]]></summary>
+        <author>
+            <name>かーねるさんとか</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新連載よろしくお願いします！
+ht...]]></title>
+        <id>https://note.com/tarent26/n/n80c235cff715</id>
+        <link href="https://note.com/tarent26/n/n80c235cff715"/>
+        <updated>2023-04-09T23:09:29.000Z</updated>
+        <summary type="html"><![CDATA[新連載よろしくお願いします！
+https://www.47news.jp/9174852.html 続きをみる]]></summary>
+        <author>
+            <name>チャーミングじろうちゃん</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[オタクに旅行の写真を見せてたら架空の旅行記を書かれました]]></title>
         <id>hatenablog://entry/13574176438039383947</id>

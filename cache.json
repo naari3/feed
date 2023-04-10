@@ -6093,7 +6093,23 @@
       "title": "かーねるさんとか",
       "feedUrl": "https://yasukata.hatenablog.com/rss",
       "siteUrl": "https://yasukata.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/4207112889978608056",
+          "author": null,
+          "description": "OS のメモリ管理の仕組みについて調べたことをまとめました。\n読んでいただくと、以下のようなことについて少し詳しくわかるかもしれません。\nあるユーザー空間プロセスが他のユーザー空間プロセスのメモリにアクセスできない理由\nユーザー空間プロセスがカーネル空間のメモリにアクセスできない理由\nユーザー空間のプロセスとスレッドの違いはどのように実装できるか\n共有メモリはどのように実装できるか\nメモリマップトファイルはどのように実装できるか\nmalloc は何故必要か\nあるコンテナが別のコンテナのメモリにアクセスできない理由\nコンテナと仮想マシンのメモリ領域の分離についての違い\n上記の全ての点について、仮想メモリという一つの機構で概ね説明可能である、というのが今回のポイントです。\nまた、そもそものユーザー空間プロセスとメモリの関係についても、少しわかるかもしれません。\n当記事は、x86-64 CPU で動作する汎用 OS 環境を想定しています。\nメモリ\n当記事では、Dynamic Random Access Memory (DRAM) についてメモリと呼ぶとします。\nメモリは、ハードウェアの仕様上、CPU からアクセス可能な記憶領域で、パソコンには基本的なパーツとして付属しています。\nメモリには、各バイト（8-bit）ごとに 0 からメモリの最大容量まで番地（アドレス）が振ってあり、CPU からメモリへのデータの書き出し・読み込みは、アドレスを元に行います。（後述しますが、このアドレスは物理メモリアドレスと呼ばれます。）\nCPU からメモリへのアクセスはいつどのように発生するか\nまず、プログラムがどのようにメモリを利用しているか、具体的には、メモリへのアクセスがどのように発生するかということについて見ていきます。\n前提として、\nCPU はプログラムを実行するハードウェアで、\nCPU は…",
+          "link": "https://yasukata.hatenablog.com/entry/2023/04/10/085714",
+          "publishedOn": "2023-04-09T23:57:14.000Z",
+          "wordCount": null,
+          "title": "OS のメモリ管理の仕組み",
+          "enclosure": {
+            "url": "https://raw.githubusercontent.com/yasukata/asset/master/img/osmem_20230410/memaccess.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://raw.githubusercontent.com/yasukata/asset/master/img/osmem_20230410/memaccess.png"
+        }
+      ]
     },
     {
       "title": "膳（仮）",
@@ -9570,6 +9586,16 @@
       "feedUrl": "https://note.com/tarent26/rss",
       "siteUrl": "https://note.com/tarent26",
       "articles": [
+        {
+          "id": "https://note.com/tarent26/n/n80c235cff715",
+          "author": null,
+          "description": "新連載よろしくお願いします！\nhttps://www.47news.jp/9174852.html 続きをみる",
+          "link": "https://note.com/tarent26/n/n80c235cff715",
+          "publishedOn": "2023-04-09T23:09:29.000Z",
+          "wordCount": 1217,
+          "title": "新連載よろしくお願いします！\nht...",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/31920906/profile_fd23b3229e83cdf4ccc0096cdd25b160.png?fit=bounds&format=jpeg&quality=85&width=330"
+        },
         {
           "id": "https://note.com/tarent26/n/n419bfeed6c63",
           "author": null,

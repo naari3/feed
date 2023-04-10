@@ -78,6 +78,69 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://yasukata.hatenablog.com/" target="_blank"
+              rel="noopener">かーねるさんとか</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">OS のメモリ管理の仕組み</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://yasukata.hatenablog.com/entry/2023/04/10/085714" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>OS のメモリ管理の仕組みについて調べたことをまとめました。
+読んでいただくと、以下のようなことについて少し詳しくわかるかもしれません。
+あるユーザー空間プロセスが他のユーザー空間プロセスのメモリにアクセスできない理由
+ユーザー空間プロセスがカーネル空間のメモリにアクセスできない理由
+ユーザー空間のプロセスとスレッドの違いはどのように実装できるか
+共有メモリはどのように実装できるか
+メモリマップトファイルはどのように実装できるか
+malloc は何故必要か
+あるコンテナが別のコンテナのメモリにアクセスできない理由
+コンテナと仮想マシンのメモリ領域の分離についての違い
+上記の全ての点について、仮想メモリという一つの機構で概ね説明可能である、というのが今回のポイントです。
+また、そもそものユーザー空間プロセスとメモリの関係についても、少しわかるかもしれません。
+当記事は、x86-64 CPU で動作する汎用 OS 環境を想定しています。
+メモリ
+当記事では、Dynamic Random Access Memory (DRAM) についてメモリと呼ぶとします。
+メモリは、ハードウェアの仕様上、CPU からアクセス可能な記憶領域で、パソコンには基本的なパーツとして付属しています。
+メモリには、各バイト（8-bit）ごとに 0 からメモリの最大容量まで番地（アドレス）が振ってあり、CPU からメモリへのデータの書き出し・読み込みは、アドレスを元に行います。（後述しますが、このアドレスは物理メモリアドレスと呼ばれます。）
+CPU からメモリへのアクセスはいつどのように発生するか
+まず、プログラムがどのようにメモリを利用しているか、具体的には、メモリへのアクセスがどのように発生するかということについて見ていきます。
+前提として、
+CPU はプログラムを実行するハードウェアで、
+CPU は…</span>
+                  </div>
+                  <img src="https://raw.githubusercontent.com/yasukata/asset/master/img/osmem_20230410/memaccess.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/tarent26" target="_blank"
+              rel="noopener">チャーミングじろうちゃん</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">新連載よろしくお願いします！
+ht...</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/tarent26/n/n80c235cff715" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>新連載よろしくお願いします！
+https://www.47news.jp/9174852.html 続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/31920906/profile_fd23b3229e83cdf4ccc0096cdd25b160.png?fit&#x3D;bounds&amp;format&#x3D;jpeg&amp;quality&#x3D;85&amp;width&#x3D;330" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://rokkan2235500.hatenablog.com/" target="_blank"
               rel="noopener">若宮イヴだいすきクラブ</a></h3>
           <section class="articles-per-source">
@@ -22545,7 +22608,7 @@ www.youtube.com
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-04-09T23:02:18.940Z">2023-04-09T23:02:18.940Z</time>
+    <time id="build-timestamp" datetime="2023-04-10T00:03:08.386Z">2023-04-10T00:03:08.386Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
