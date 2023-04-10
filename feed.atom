@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-10T03:01:40.818Z</updated>
+    <updated>2023-04-10T04:01:47.310Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -55,6 +55,16 @@
     GitHub に漏れ出た内部コードを探す ~ 上場企業 3900社編 ~…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Starlink(スターリンク)で自宅サーバ、IPv6ならできます！]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=18855</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/18855"/>
+        <updated>2023-04-10T02:20:54.000Z</updated>
+        <summary type="html"><![CDATA[Starlinkで自宅サーバを実現するには、CGNAT経由で接続されている環境をなんとかするしかありません。またIPv6が使えるようになってグローバルユニキャストアドレスが使えるようになりましたがイン...]]></summary>
+        <author>
+            <name>谷口 崇</name>
         </author>
     </entry>
     <entry>
