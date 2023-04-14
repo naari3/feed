@@ -1734,6 +1734,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889981217266",
+          "author": null,
+          "description": "今回はFPGAボードUltra96-V2のカメラ基板兼Pmod拡張基板を作ります。\n\n背景\nUltra96-V2はMPSoCを搭載した便利なボードです。ただし、Zyboと違ってPmod等が出ておらず拡張性に乏しいのが問題です。自分の使い方ではRaspiカメラのようなMIPI CSI-2を接続したいと考えていましたが、残念ながらIOが出ておりません。今回はCSI-2と余っているIOを出す基板を設計します。\nなお、この基板はRyuzi氏のultra96_multi_ioを参考にして開発されています。ここでお礼を申し上げます。\n目標\nUltra96はHS HeaderとLS Headerからそれぞれ差動信号系とそれ以外のGPIOが出ています。MIPIはHSから出ているようです。\n以下のような性能を持ったボードを設計することを目指します。\nCSI-2 4Lane\nCSI-2 2Lane\n電源ボタン・リセットボタンが出てること\nPL系LED 4ch\nPL系ボタン2ch\nPS系LED 2ch\nPS系ボタン2ch\nMIO SPI2ch\nそれ以外をPmodとして外部に出すこと\n裏目標として、LCSCを使って見るというのがあります。LCSCは中国版Digikey的なもので、パーツが安く、自分がよく使っている基板メーカーのJLCPCBも対応しています。なんだかんだいって使ったことがなかったので今回これをベースにパーツ選定を行います。\nこれについての記事を別で書いてるので見てみてください。\nfumimaker.net\n設計\nEagleを使って設計します。本当はKicadを勉強したいと思っていたのですが、気づいたら手癖でEagleで作り始めてしまっていました。次は絶対にKicadでやります。(Eagleは使いやすくはないと思いますので今からやるなら、理由がないならKicadが良いと思います。)\n電…",
+          "link": "https://fumimaker.net/entry/2023/04/14/211615?utm_source=feed",
+          "publishedOn": "2023-04-14T12:16:15.000Z",
+          "wordCount": 572,
+          "title": "Ultra96-V2向けMIPI CSI-2拡張基板の設計と実装 (前編)",
+          "enclosure": {
+            "url": "https://cdn.jsdelivr.net/gh/fumimaker/Public_Images@main/uPic/20230414_1681473993591IMG_4198%201.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.jsdelivr.net/gh/fumimaker/Public_Images@main/uPic/20230414_1681473993591IMG_4198%201.jpg"
+        },
+        {
           "id": "hatenablog://entry/4207112889968228728",
           "author": null,
           "description": "Twitterに書くような内容なんですが、一応こちらでも投稿しておきます。\n普通に使えました←結論\n概要\nLCSCで電子部品を買ってみました\n発注して5日で出荷\nDHLで6日で日本到着、佐川で届いた\n送料は20-30ドル程度\n部品が非常に安いのでたくさん買うことをお勧め\n普通にパーツ使える・問題ありませんでした\nたくさん部品が必要なときは選択肢としてあり\nLCSCとはDigikey中国版みたいなサイトです。\nwww.lcsc.com\n電子部品を買う場所といったら秋月電子、千石電商、マルツパーツなどありますが、最近は中国のサイトLCSCというものが流行っているそうです。\nLCSCの特徴\n安い\n取扱部品が多い（コンパチがたくさんある）\n送料がかかる（10-20ドル程度、発送してから1週間）\nJLCPCBと連携している\n「なぜか」非常に安いのでおすすめです。本物かどうかは不明ですが一応使えています。送料が15-20ドル程度かかってしまうのでたくさん部品を買うことをお勧めします。\n実際に頼んでみた\n部品の選び方\nLCSCからパーツを選択してカートに入れます。マイコンからコネクタまでなんでもありますね・・・\n\nパーツの探し方はいうまでもないと思いますが一応説明しておきます。ここではチップ抵抗を買うことを例に挙げます。\n上のパーツ検索欄からresistorを検索。するとカテゴリのところにChip resistorが出てくるのでクリック。\n\n絞り込み欄からサイズ（0603）と抵抗値（10ｋ）を選択してApplyを押す。ここでたとえばBOURNSなど欲しいブランドがあれば選択することもできますし、特にこだわりがなければ未選択にすると安いものが見つかります。\n\n並び替えでAvailablityの下矢印を押して在庫数が多いもの順にすると良いです。すると100個単位で販売していることがわかります…",
@@ -9596,16 +9611,6 @@
           "wordCount": 2241,
           "title": "「ホンモノ」と「ニセモノ」の線引きについて",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/95742368/rectangle_large_type_2_3596283e1e0bc4f99285a5033c4d18a0.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n125116e19a49",
-          "author": null,
-          "description": "ホテルの朝食を食べ続けて14日目になるが、割と毎日メニューが変わっている。常在してるメニューはあるけれど、日替わりのやつは「これ前にも出たな」と思うことが少ない感じだ。\nただ、飽きてる。メチャクチャに、飽きてる。\n続きをみる",
-          "link": "https://note.com/sizes/n/n125116e19a49",
-          "publishedOn": "2023-01-15T00:35:02.000Z",
-          "wordCount": null,
-          "title": "人生が変わったと思っても構造が前と変わらないことがある",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/95668498/rectangle_large_type_2_5277866de7b44403023fa866ae3bde4d.jpeg?width=800"
         }
       ]
     },

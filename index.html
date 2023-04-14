@@ -78,6 +78,48 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
+              rel="noopener">fumiLab</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Ultra96-V2向けMIPI CSI-2拡張基板の設計と実装 (前編)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2023/04/14/211615?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今回はFPGAボードUltra96-V2のカメラ基板兼Pmod拡張基板を作ります。
+
+背景
+Ultra96-V2はMPSoCを搭載した便利なボードです。ただし、Zyboと違ってPmod等が出ておらず拡張性に乏しいのが問題です。自分の使い方ではRaspiカメラのようなMIPI CSI-2を接続したいと考えていましたが、残念ながらIOが出ておりません。今回はCSI-2と余っているIOを出す基板を設計します。
+なお、この基板はRyuzi氏のultra96_multi_ioを参考にして開発されています。ここでお礼を申し上げます。
+目標
+Ultra96はHS HeaderとLS Headerからそれぞれ差動信号系とそれ以外のGPIOが出ています。MIPIはHSから出ているようです。
+以下のような性能を持ったボードを設計することを目指します。
+CSI-2 4Lane
+CSI-2 2Lane
+電源ボタン・リセットボタンが出てること
+PL系LED 4ch
+PL系ボタン2ch
+PS系LED 2ch
+PS系ボタン2ch
+MIO SPI2ch
+それ以外をPmodとして外部に出すこと
+裏目標として、LCSCを使って見るというのがあります。LCSCは中国版Digikey的なもので、パーツが安く、自分がよく使っている基板メーカーのJLCPCBも対応しています。なんだかんだいって使ったことがなかったので今回これをベースにパーツ選定を行います。
+これについての記事を別で書いてるので見てみてください。
+fumimaker.net
+設計
+Eagleを使って設計します。本当はKicadを勉強したいと思っていたのですが、気づいたら手癖でEagleで作り始めてしまっていました。次は絶対にKicadでやります。(Eagleは使いやすくはないと思いますので今からやるなら、理由がないならKicadが良いと思います。)
+電…</span>
+                  </div>
+                  <img src="https://cdn.jsdelivr.net/gh/fumimaker/Public_Images@main/uPic/20230414_1681473993591IMG_4198%201.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -22507,20 +22549,6 @@ open.spotify.com
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">人生が変わったと思っても構造が前と変わらないことがある</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n125116e19a49" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ホテルの朝食を食べ続けて14日目になるが、割と毎日メニューが変わっている。常在してるメニューはあるけれど、日替わりのやつは「これ前にも出たな」と思うことが少ない感じだ。
-ただ、飽きてる。メチャクチャに、飽きてる。
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/95668498/rectangle_large_type_2_5277866de7b44403023fa866ae3bde4d.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -22805,7 +22833,7 @@ TwitterのIDはずっとkaikityouだったので、無記名状態みたいな�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-04-14T12:02:29.257Z">2023-04-14T12:02:29.257Z</time>
+    <time id="build-timestamp" datetime="2023-04-14T13:04:10.473Z">2023-04-14T13:04:10.473Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
