@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-14T00:03:44.015Z</updated>
+    <updated>2023-04-14T01:28:30.183Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2023年5月17日（水）13:00 から 16:00 ごろまで、はてなブログの投稿・更新・設定を含む一部機能を停止するメンテナンスを行います]]></title>
+        <id>hatenablog://entry/4207112889980846559</id>
+        <link href="https://staff.hatenablog.com/entry/2023/04/14/100828"/>
+        <updated>2023-04-14T01:08:28.000Z</updated>
+        <summary type="html"><![CDATA[2023年5月17日（水）13:00 から 16:00 ごろまで、はてなブログのメンテナンスを行います。
+メンテナンスの影響範囲
+ 
+
+
+はてなブログの管理画面の全ての機能が使えなくなります
+
+ブログの投稿・削除・変更を含む、自分のブログの管理・はてなブログのアカウント設定全般を行うことができなくなります
+管理画面から自分のブログの情報を確認することもできなくなります
+
+ブログの購読・コメント投稿・引用が行えなくなります
+スマートフォンアプリが停止します
+AtomPub の API が停止します
+その他 https://blog.hatena.ne.jp 配下で提供している全ての機能が使えなくなりますので、ブログの閲覧以外の操作は非推奨とします。
+
+例： はてなブロググループの一覧ページ, お題をさがすページ, 購読リスト
+
+できることは以下の通りです
+
+ブログの閲覧
+https://hatenablog.com の閲覧
+メンテナンス期間中に投稿するように予約されていた記事は、メンテナンス終了後に一斉に投稿されます
+
+投稿日時は本来予約されていた日時で表示されます]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GitHub の通知、見てない]]></title>
         <id>https://blog.ojisan.io/i-dont-watch-github-notification</id>
