@@ -2,10 +2,68 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-19T14:02:04.811Z</updated>
+    <updated>2023-04-19T15:01:53.056Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Nodelocal DNSCache とはなにか]]></title>
+        <id>https://blog.sakamo.dev/post/node-local-dns-cache/</id>
+        <link href="https://blog.sakamo.dev/post/node-local-dns-cache/"/>
+        <updated>2023-04-19T14:13:48.000Z</updated>
+        <summary type="html"><![CDATA[Using NodeLocal DNSCache in Kubernetes Clusters に書いてある
+
+
+
+
+    
+
+Tweet
+
+
+
+  
+概要
+仕組み
+インストール方法
+      
+通常
+cilium
+検証
+      
+内部ドメイン
+外部ドメイン
+cilium
+概要
+
+    
+        
+
+    
+
+
+公式ドキュメント で紹介されているとおり、DNS のキャッシュ用エージェント（CoreDNS）を DaemonSet で各 Node に配置することで、DNS のパフォーマンスを改善しようというものである。やってること自体はシンプルで、キャッシュがあればそれを返すし、なければ kube-dns に問い合わせたり、Node 上の /etc/resolv.conf を参照して名前解決をしたりする。
+Kubernetes DNS にある。
+仕組み
+
+    
+        
+
+    
+
+
+
+公式ドキュメントの図がわかりやすいので引用した。
+デフォルト（clusterDNS: kube-dns）では、クライアント側の Pod の dnsPolicy が ClusterFirst の場合、kubelet に指定されている clusterDNS で名前解決を行う。
+17: nodelocaldns: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default
+    link/ether c6:df:93:00:8f:3a brd ff:ff:ff:ff:ff:ff
+    inet 169.254.20.10/32 scope global nodelocaldns
+       valid_lft forever preferred_lft forever
+    inet 172.2…]]></summary>
+        <author>
+            <name>Posts on ストイックに生きたい</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ブログをひっそり運営したいなら「検索エンジンに登録させない」設定を知っておこう 第5回 はてなブログなんでも相談室]]></title>
         <id>hatenablog://entry/4207112889982692395</id>
@@ -16488,30 +16546,6 @@ Hirvikoski, T., Mittendorfer-Rutz, E., Boman, M., Larsson, H., Lichtenstein, P.,
 最近、明治時代の人の日記を国会図書館デジタルコレクションで見ることがある。その中で、当時不治の病だった「肺結核(テーベー)」がキーワードになる。肺結核で死に瀕した人の日記は、どこかしら現代の発達障害の人が書いているブログ記事に似ている気がする。恐らく社会における病気の立ち位置というのが似ているのだろう。]]></summary>
         <author>
             <name>表道具</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ネットの情報総チラシ化]]></title>
-        <id>https://note.com/sizes/n/n44e1321afd74</id>
-        <link href="https://note.com/sizes/n/n44e1321afd74"/>
-        <updated>2023-01-20T02:56:02.000Z</updated>
-        <summary type="html"><![CDATA[さいきんぼちぼち絵の練習を始めたので、手始めにTwitterでお絵描きに役立つ情報を発信しているアカウントをフォローしてみた。そして、いわゆる中堅YouTuberくらいのお絵描きchannelもいくつかフォローして、評判が良かったりコンテンツ量が多いFANBOXにも入った。
-一切合切がっかりしたわけでもないけれど、「別に必死こいて集めなくていいなこれ」とはなった。たぶん情報の質(コンテンツ)じたいは多分悪く無いんだろうし、インプットしたらそれなりのプラスになると思った。練習会とかアーティストの情報も、知っておいて損はないでしょう。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[yay!とか荒野行動とかP丸様。とかメディバンペイントみたいなアレに対するオリエンタリズム]]></title>
-        <id>https://note.com/sizes/n/n27cb943d476b</id>
-        <link href="https://note.com/sizes/n/n27cb943d476b"/>
-        <updated>2023-01-20T02:01:22.000Z</updated>
-        <summary type="html"><![CDATA[https://youtu.be/hoGtcEXiK3A
-  
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
     <entry>

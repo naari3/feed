@@ -9545,26 +9545,6 @@
           "wordCount": null,
           "title": "世の中って割と「成人式マジック」みたいなもんでできてるんだなあと思った",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/96121203/rectangle_large_type_2_8028f7711cbc9d736e330111ed58274f.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n44e1321afd74",
-          "author": null,
-          "description": "さいきんぼちぼち絵の練習を始めたので、手始めにTwitterでお絵描きに役立つ情報を発信しているアカウントをフォローしてみた。そして、いわゆる中堅YouTuberくらいのお絵描きchannelもいくつかフォローして、評判が良かったりコンテンツ量が多いFANBOXにも入った。\n一切合切がっかりしたわけでもないけれど、「別に必死こいて集めなくていいなこれ」とはなった。たぶん情報の質(コンテンツ)じたいは多分悪く無いんだろうし、インプットしたらそれなりのプラスになると思った。練習会とかアーティストの情報も、知っておいて損はないでしょう。\n続きをみる",
-          "link": "https://note.com/sizes/n/n44e1321afd74",
-          "publishedOn": "2023-01-20T02:56:02.000Z",
-          "wordCount": null,
-          "title": "ネットの情報総チラシ化",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/96046992/rectangle_large_type_2_30067c2b2ca598fc8e9e0ada01021a5b.png?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n27cb943d476b",
-          "author": null,
-          "description": "https://youtu.be/hoGtcEXiK3A\n  \n続きをみる",
-          "link": "https://note.com/sizes/n/n27cb943d476b",
-          "publishedOn": "2023-01-20T02:01:22.000Z",
-          "wordCount": null,
-          "title": "yay!とか荒野行動とかP丸様。とかメディバンペイントみたいなアレに対するオリエンタリズム",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/96043678/rectangle_large_type_2_c306f2c0236adb432c5f365b64e749d7.jpeg?width=800"
         }
       ]
     },
@@ -9919,7 +9899,18 @@
       "title": "Posts on ストイックに生きたい",
       "feedUrl": "https://blog.sakamo.dev/post/index.xml",
       "siteUrl": "https://blog.sakamo.dev/post/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://blog.sakamo.dev/post/node-local-dns-cache/",
+          "author": null,
+          "description": "Using NodeLocal DNSCache in Kubernetes Clusters に書いてある\n\n\n\n\n    \n\nTweet\n\n\n\n  \n概要\n仕組み\nインストール方法\n      \n通常\ncilium\n検証\n      \n内部ドメイン\n外部ドメイン\ncilium\n概要\n\n    \n        \n\n    \n\n\n公式ドキュメント で紹介されているとおり、DNS のキャッシュ用エージェント（CoreDNS）を DaemonSet で各 Node に配置することで、DNS のパフォーマンスを改善しようというものである。やってること自体はシンプルで、キャッシュがあればそれを返すし、なければ kube-dns に問い合わせたり、Node 上の /etc/resolv.conf を参照して名前解決をしたりする。\nKubernetes DNS にある。\n仕組み\n\n    \n        \n\n    \n\n\n\n公式ドキュメントの図がわかりやすいので引用した。\nデフォルト（clusterDNS: kube-dns）では、クライアント側の Pod の dnsPolicy が ClusterFirst の場合、kubelet に指定されている clusterDNS で名前解決を行う。\n17: nodelocaldns: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default\n    link/ether c6:df:93:00:8f:3a brd ff:ff:ff:ff:ff:ff\n    inet 169.254.20.10/32 scope global nodelocaldns\n       valid_lft forever preferred_lft forever\n    inet 172.2…",
+          "link": "https://blog.sakamo.dev/post/node-local-dns-cache/",
+          "publishedOn": "2023-04-19T14:13:48.000Z",
+          "wordCount": null,
+          "title": "Nodelocal DNSCache とはなにか",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "Wesley Aptekar-Cassels",
