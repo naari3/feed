@@ -78,6 +78,34 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">NLP2023 に参加しました：聴講編</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/nlp2023-attendance" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。技術部機械学習グループの深澤(@fukkaa1225)です。
+3月に沖縄で行われた言語処理学会2023に参加してきました。本連載の1つ目ではクックパッドとして「レシピに含まれる不使用な材料等に関する記述の抽出」という発表を山口(@altescy)がしてくれた様子をお伝えしました。自分は共著者兼聴講参加です。
+本連載の2つ目となるこの記事では気になったり面白いと感じた論文やセッションを紹介していきます。
+印象に残ったセッション1: 形態素・構文解析
+形態素解析といえば MeCab ですが、一強というわけではもちろんなく、様々なアプローチが提案されています。今回のセッションでは KWJA・vibrato、そして新たに提案された Jagger という多様な発表を一度に聞くことができたのは非常に貴重な経験でした。
+テキスト生成モデルによる日本語形態素解析
+https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C2-3.pdf
+京都・早稲田発の汎用言語モデルを用いて日本語を統合的に解析するツール KWJA についての発表です。本発表は KWJA 1.0 でトークン分類問題として定式化した形態素解析ではなく、単語の読み・原形等の推定を生成問題として定式化した、という内容でした。用いられている汎用言語モデルは T5 の他言語版である mT5 のXLサイズで、既存手法を上回る精度を達成したと報告されています。
+感想: 見出し語強制デコーディング・疑似データによる曖昧性解消など、モデルの入力と出力それぞれについて必要な処理を加えており試行錯誤に基づく工夫も見られてとても勉強になりました。KWJA 2.0 は https://github.com/ku-nlp/kwja で既に公開されており、少し試してみましたが、速…</span>
+                  </div>
+                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773" class="card article-thumbnail" data-enclosure />
+                                  </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -22754,7 +22782,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-04-20T04:01:54.873Z">2023-04-20T04:01:54.873Z</time>
+    <time id="build-timestamp" datetime="2023-04-20T05:01:47.474Z">2023-04-20T05:01:47.474Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
