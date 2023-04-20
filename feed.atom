@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-20T17:01:39.757Z</updated>
+    <updated>2023-04-20T18:01:45.955Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[firestore を zod でバリデーションする]]></title>
+        <id>https://blog.ojisan.io/firestore-schema-with-zod</id>
+        <link href="https://blog.ojisan.io/firestore-schema-with-zod"/>
+        <updated>2023-04-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[encraft #2 までの間、スキーマスキーマした話をたくさん書きたい。 OGP は昨日食べた火鍋だ。Fire 感があるのでこれを使おうと思った。（Firebase…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[zod ではなく ajv を使っている話]]></title>
+        <id>https://blog.ojisan.io/i-use-ajv-instead-of-zod</id>
+        <link href="https://blog.ojisan.io/i-use-ajv-instead-of-zod"/>
+        <updated>2023-04-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[encraft #2 までの間、スキーマスキーマした話をたくさん書きたい。好き好きスキーマと言いたいところだが、zod に対しては人気に対して逆張り意見的なのを持っているのでそれを書いていきたい。 OGP は Ajv…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[サルベージですよ、奥さん]]></title>
         <id>hatenablog://entry/4207112889983079057</id>
