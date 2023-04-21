@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-20T23:02:08.900Z</updated>
+    <updated>2023-04-21T00:02:50.967Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[NLP2023 に参加しました：座長編]]></title>
+        <id>hatenablog://entry/4207112889983146577</id>
+        <link href="https://techlife.cookpad.com/entry/2023/04/21/090004"/>
+        <updated>2023-04-21T00:00:04.000Z</updated>
+        <summary type="html"><![CDATA[技術部機械学習グループの原島です。本連載では山口（@altescy）が発表編を、深澤（@fukkaa1225）が聴講編をお届けしてきました。最後にお届けするのは座長編です。
+学会があれば発表があり、発表があればセッションがあり、セッションがあれば座長がいます。今年の言語処理学会であれば、延べ 80 人以上もの座長がいたようです。
+このように沢山の座長がいるわけですが、その仕事には馴染みがない人も多いのではないでしょうか。そんな人にも、ある日突然、座長の依頼はやってきます。
+このブログでは、単なる一つの事例ではありますが、今年の言語処理学会において私が座長として行なったことや気をつけたことについてお話します。
+座長の仕事
+座長の仕事はおおきく会期前と会期中にわかれます。会期中に関しては、さらに、セッション前とセッション直前、セッション中にわかれます。
+会期前
+例年、座長の依頼は会期の一ヶ月くらい前にきます。セッションの名前と日時、仮のプログラムが伝えられるので、特に問題がなければ、了承の旨を伝えます。会期の三週間くらい前から大会参加マニュアル等の情報が公開されるので、しっかり目を通しておきます。
+もちろん、担当セッションの論文にも目を通しておきます。余談ですが、今年は会期の一週間前に予稿集が一般公開されましたね。私は去年と一昨年のプログラム委員を務めており、予稿集の一般公開にも関わっていた（というか、実作業を担っていた）のですが、一般公開されたのは会期の一ヶ月後だった記憶があります。今年のように論文のアクセシビリティが上がるのはすごくいいですね。
+また、予稿集の一般公開と同時に slack がオープンしたので、担当セッションのチャンネルに入っておきます。自分の自己紹介を書いたり、発表者の自己紹介や論文紹介を促します。これはオンライン開催やハイブリッド開催ならではの文化ですね。…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[firestore を zod でバリデーションする]]></title>
         <id>https://blog.ojisan.io/firestore-schema-with-zod</id>
