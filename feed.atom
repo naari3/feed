@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-21T13:03:29.141Z</updated>
+    <updated>2023-04-21T14:01:48.155Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -79,6 +79,17 @@ Image: 我が家の侍JAPANにスイッチが入った！ - 人と食
 また、予稿集の一般公開と同時に slack がオープンしたので、担当セッションのチャンネルに入っておきます。自分の自己紹介を書いたり、発表者の自己紹介や論文紹介を促します。これはオンライン開催やハイブリッド開催ならではの文化ですね。…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[fastify v4 で schema 周りが強化されたので試す]]></title>
+        <id>https://blog.ojisan.io/fastify-v4-schema</id>
+        <link href="https://blog.ojisan.io/fastify-v4-schema"/>
+        <updated>2023-04-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[最近 fastify v4 移行してる知人の話を聞いて、JSON SChema の推論めちゃくちゃ便利になってそうだなと思って試してみた。
+V4 GA が 2022-06 なので何を今更と思われるかもしれないが、正直最近 fastify…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
