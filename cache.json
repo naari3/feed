@@ -9525,16 +9525,6 @@
           "wordCount": 2312,
           "title": "幼少期の「みんなで食べるとおいしいね」への違和感の話",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/96232599/rectangle_large_type_2_2105b886fbceb27cd8536da9819c5340.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n54d15c8c1393",
-          "author": null,
-          "description": "「ぼっち・ざ・ろっく！」は「ぼっちちゃん」がバンド活動を通していろいろなものを獲得していくサクセスストーリーだけれど、主人公のパラメーターは最初から高い。プロレベルのギターの腕と動画投稿者としての名声を最初から持っていたからだ。ぼざろ自体、構造的には主人公の封印されていた能力が社会的経験によって解き放たれる‥‥という物語だ。\nぼざろを見てギターを弾くオタクはいっぱいいる。「オタクがいかにもやりそうなこと」という前提が共有された上で、「ぼざろを見てギターを弾くオタク」という文言がミーム化されているからだ。そして実際に弾いてみたを投稿するオタクもいるだろうし、バンドを結成するオタクもいるだろうし、ミック・トムソンの教えを内面化するオタクもいるだろう。\n続きをみる",
-          "link": "https://note.com/sizes/n/n54d15c8c1393",
-          "publishedOn": "2023-01-22T04:26:54.000Z",
-          "wordCount": 2310,
-          "title": "オタクが趣味や自己実現を通じて成長することについて",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/96204950/rectangle_large_type_2_61b19f0de5cbbb51392bd586cef6a6da.jpeg?width=800"
         }
       ]
     },
@@ -10198,16 +10188,6 @@
           "publishedOn": "2023-01-25T10:03:00.000Z",
           "wordCount": 755,
           "title": "GitコミットをNotionに記録してみてる",
-          "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2023/01/22/find-node-modules-import/",
-          "author": null,
-          "description": "find-node-modules-importという、ソースコードからimportsしてるパッケージ名を検索するシンプルなCLIを書きました。\nazu/find-node-modules-import: Find specific node modules import statement in your source code\n特徴\nインポートしてるパッケージ名を全て検出できる\nインポートしてる特定のパッケージ名を検出できる\nnode:fsやassertのようなNode.jsのコアモジュールを検出できる\n📝 このツールは、ESMのimportのみに対応しています。\nJavaScriptとTypeScriptどちらも対応しています。\n使い方\n\nUsage\n  $ npx find-node-modules-import [file|glob*]\n\nOptions\n  --module              [String] filter the result by module name\n  --builtinModules      [Boolean] filter the result by Node.js builtin modules. Default: false\n  --verbose             [Boolean] show warning/error output. Default: false\n\nExamples\n  # show all imports\n  $ find-node-modules-import \"src/**/*.{js,ts}\"\n  # show Node.js builtin modules\n  $ find-node-modules-import \"src/**/*.{js,ts}\" --builtinModules\n  # show specific module\n  $ find-node-modules-import \"src/**/*.{js,ts}\" --module \"lodash\"\n\n\n使い方はシンプルで、次のコマンドでインポートしてる全てのモジュール名を検出できます。\n\n  $ npx find-node-modules-import \"src/**/*.{js,ts}\"\n\n\n次のコマンドで、node:fsやassertのようなNode.jsのコアモジュールを検出できます。\n\n  $ npx find-node-modules-import \"src/**/*.{js,ts}\" --builtinModules\n\n\n次のコマンドで、特定のパッケージ名を検出できます。\n\n  $ npx find-node-modules-import \"src/**/*.{js,ts}\" --module \"lodash\"\n\n\n作った理由\ntextlint の@textlint/kernelでは、Node.jsのコアモジュールを使っている部分がありました。\nwebpackやViteなどはもうNode.jsのコアモジュールを自動でpolyfillしなくなったのもあり、Node.jsのコアモジュールを使っている部分を無くしたいと思いました。\nそのため、Node.jsのコアモジュールを使っている部分を検出するために、このツールを作りました。\nMigrate assert to invariant function · Issue #985 · textlint/textlint\nRemove events modules from @textlint/kernel · Issue #996 · textlint/textlint\nimportしてるモジュールの抽出にはES Module Lexerを使っています。\n最初は、Dependency cruiserを使ってやろうと思いましたがそこまでリッチじゃなくていいと思ったので、かなりシンプルな実装になってます。\n普通のコマンドと同じようにストリーム処理できるように、見つけるたびに標準出力に出してるので、パイプ処理と相性良いと思います。\n\n# textlintっぽいやつだけ出す\n$ npx find-node-modules-import \"**/*.{js,ts}\" | grep \"textlint\"\n\n\n\n# モジュール名だけを取り出す\n$ npx find-node-modules-import \"**/*.{js,ts}\" | cut -f 2",
-          "link": "https://efcl.info/2023/01/22/find-node-modules-import/",
-          "publishedOn": "2023-01-22T04:06:00.000Z",
-          "wordCount": 660,
-          "title": "find-node-modules-import: importsしてるパッケージ名やNode.jsのコアモジュールを検出するツール",
           "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]

@@ -22380,20 +22380,6 @@ EDなんだよこれ、頭おかしくなるって
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">オタクが趣味や自己実現を通じて成長することについて</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n54d15c8c1393" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>「ぼっち・ざ・ろっく！」は「ぼっちちゃん」がバンド活動を通していろいろなものを獲得していくサクセスストーリーだけれど、主人公のパラメーターは最初から高い。プロレベルのギターの腕と動画投稿者としての名声を最初から持っていたからだ。ぼざろ自体、構造的には主人公の封印されていた能力が社会的経験によって解き放たれる‥‥という物語だ。
-ぼざろを見てギターを弾くオタクはいっぱいいる。「オタクがいかにもやりそうなこと」という前提が共有された上で、「ぼざろを見てギターを弾くオタク」という文言がミーム化されているからだ。そして実際に弾いてみたを投稿するオタクもいるだろうし、バンドを結成するオタクもいるだろうし、ミック・トムソンの教えを内面化するオタクもいるだろう。
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/96204950/rectangle_large_type_2_61b19f0de5cbbb51392bd586cef6a6da.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -22594,84 +22580,6 @@ M3以外で久しぶりに色んな人とも会えたし喋ることもできた
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">find-node-modules-import: importsしてるパッケージ名やNode.jsのコアモジュールを検出するツール</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/01/22/find-node-modules-import/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>find-node-modules-importという、ソースコードからimportsしてるパッケージ名を検索するシンプルなCLIを書きました。
-azu/find-node-modules-import: Find specific node modules import statement in your source code
-特徴
-インポートしてるパッケージ名を全て検出できる
-インポートしてる特定のパッケージ名を検出できる
-node:fsやassertのようなNode.jsのコアモジュールを検出できる
-📝 このツールは、ESMのimportのみに対応しています。
-JavaScriptとTypeScriptどちらも対応しています。
-使い方
-
-Usage
-  $ npx find-node-modules-import [file|glob*]
-
-Options
-  --module              [String] filter the result by module name
-  --builtinModules      [Boolean] filter the result by Node.js builtin modules. Default: false
-  --verbose             [Boolean] show warning/error output. Default: false
-
-Examples
-  # show all imports
-  $ find-node-modules-import &quot;src/**/*.{js,ts}&quot;
-  # show Node.js builtin modules
-  $ find-node-modules-import &quot;src/**/*.{js,ts}&quot; --builtinModules
-  # show specific module
-  $ find-node-modules-import &quot;src/**/*.{js,ts}&quot; --module &quot;lodash&quot;
-
-
-使い方はシンプルで、次のコマンドでインポートしてる全てのモジュール名を検出できます。
-
-  $ npx find-node-modules-import &quot;src/**/*.{js,ts}&quot;
-
-
-次のコマンドで、node:fsやassertのようなNode.jsのコアモジュールを検出できます。
-
-  $ npx find-node-modules-import &quot;src/**/*.{js,ts}&quot; --builtinModules
-
-
-次のコマンドで、特定のパッケージ名を検出できます。
-
-  $ npx find-node-modules-import &quot;src/**/*.{js,ts}&quot; --module &quot;lodash&quot;
-
-
-作った理由
-textlint の@textlint/kernelでは、Node.jsのコアモジュールを使っている部分がありました。
-webpackやViteなどはもうNode.jsのコアモジュールを自動でpolyfillしなくなったのもあり、Node.jsのコアモジュールを使っている部分を無くしたいと思いました。
-そのため、Node.jsのコアモジュールを使っている部分を検出するために、このツールを作りました。
-Migrate assert to invariant function · Issue #985 · textlint/textlint
-Remove events modules from @textlint/kernel · Issue #996 · textlint/textlint
-importしてるモジュールの抽出にはES Module Lexerを使っています。
-最初は、Dependency cruiserを使ってやろうと思いましたがそこまでリッチじゃなくていいと思ったので、かなりシンプルな実装になってます。
-普通のコマンドと同じようにストリーム処理できるように、見つけるたびに標準出力に出してるので、パイプ処理と相性良いと思います。
-
-# textlintっぽいやつだけ出す
-$ npx find-node-modules-import &quot;**/*.{js,ts}&quot; | grep &quot;textlint&quot;
-
-
-
-# モジュール名だけを取り出す
-$ npx find-node-modules-import &quot;**/*.{js,ts}&quot; | cut -f 2</span>
-                  </div>
-                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -22790,7 +22698,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-04-21T16:01:51.359Z">2023-04-21T16:01:51.359Z</time>
+    <time id="build-timestamp" datetime="2023-04-21T17:01:44.990Z">2023-04-21T17:01:44.990Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
