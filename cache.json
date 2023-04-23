@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889983896697",
+          "author": null,
+          "description": "今日は何も成果が得られませんでした。。悲しい。えーと、GBSの演奏終了フラグってどういう実装してるのかなと思って調べていたわけです。公式ドキュメント読んだり、GBSPLAYのソースコードを読んだりしていて、おかしいなあ？どうやってループ止めてるの？という状態でした。詳しい人ならわかることですけれど、そもそも無いものを探そうとしていたわけです。私あほ過ぎる。このファイルの由来というか歴史は、ゲームROMの音楽ドライバと曲データを吸い出して作られてるものだからフラグなんてあるわけないんですよ。GBSPLAYやkbmedia playerは2分固定で強制フェードアウトしてるのはその為。2分より短いと無音になっているわけです。今さっき風呂入っていたら思い出しました。もういやすぎます、今日はふて寝！決定です。\ngithub.com\n供養で無駄に調べた話。GBSPLAYは「この位置から関数最後まで」の間で見ています。右と左の音量、クロックカウント数を見て時間を短くすることはしているようです。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/04/23/221103",
+          "publishedOn": "2023-04-23T13:11:03.000Z",
+          "wordCount": 377,
+          "title": "チュートリアルのサウンドを考える2",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889983263616",
           "author": null,
           "description": "昨日からWikiのチュートリアルの項目を書き直しています。加筆したいところといえばDMGサウンド。どうやって書こうか何年も前から悩んでいて結局手つかずなんですよね。なんといっても私にはサウンドの知識が壊滅的！さらに言うとmidiやmodなどの作曲経験もない！・・・なんというか、仕様書な意味なら理解できるんです。でもファミコンのマリオを耳コピしてみなさいと言われて書けないのですよ。そもそもテンポもわからないし。そういうわけでして、無い知恵絞った結果２つの候補が脳内に駆け巡ったわけです。１つはLSDjの.savファイルを解析して移植するという方法。候補はgithubにありました。\ngithub.com\nDOSプロンプト上で走らせて、そのログファイルを生成してしまおうという魂胆です。そもそも私はGBのCPUを自作しているのでコード持っていますし、vblank毎に区切ってサウンドレジスタに放り込んでいるログを保存しとけばいいはずです。GBとGBAに互換があってめっちゃありがたいと思う瞬間ですね。サイズが増大しそうですけど楽な方法といえばこちらかなあ。bookwormさんのリーフ３部作のGBSファイルをパクって鳴らせてみせるところまでをゴールにしてみようかと思います。",
@@ -4344,23 +4359,7 @@
       "title": "Robot Checkerboard",
       "feedUrl": "https://kiyo-shit.hatenablog.com/rss",
       "siteUrl": "https://kiyo-shit.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/4207112889957068480",
-          "author": null,
-          "description": "咀嚼したいんだけど、どうしても飲んじゃう。なんか良い方法無いですか？",
-          "link": "https://kiyo-shit.hatenablog.com/entry/2023/01/24/102500",
-          "publishedOn": "2023-01-24T01:25:00.000Z",
-          "wordCount": 230,
-          "title": "たまごかけご飯を飲んじゃう癖をやめたい",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "kmizuの日記",
@@ -5678,21 +5677,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889957068718",
-          "author": null,
-          "description": "世間に死ぬほど色々な方法があるのはわかっているがとにかくまっさらな状態から最短手順でEmacsでJSX/TSXが書けるようになりたい! という話。VSCodeとかそういう話には目を背ける。\n\ntsxファイルはweb-modeで起動するようにすればシンタックスハイライトとインデントはうまくいくので、あとはlspを起動するようにすれば快適です！\n— つかもとたけし (@itometeam) 2023年1月23日\n  \n自分で調べつつ試行錯誤したんだけど、最終的にはこのtweetで教えてもらった通りになった。メジャーモードとしてweb-modeを使いつつflycheckとLSPで開発支援。\nmacOSにインストールしたEmacs*1、およびMELPAにあるパッケージだけで、以下のようになった。\n(require 'web-mode)\n(add-to-list 'auto-mode-alist '(\"\\\\.ts[x]?\\\\'\" . web-mode))\n(add-hook 'web-mode-hook 'lsp)\n  \n(setq web-mode-markup-indent-offset 2)\n(setq web-mode-css-indent-offset 2)\n(setq web-mode-code-indent-offset 2)\n\n\n\nEmacs + web-mode + lsp\n補完も効く\n事前にM-x list-packagesしてweb-mode、lsp-modeをインストール後に上記の設定をした。あとlanguage-serverをnpm install -g typescript-language-server typescriptしてインストールしてある。\n他に関係あるのはcompanyとflycheckかな? companyは以下のように読み込みと余計なこと…",
-          "link": "https://tagomoris.hatenablog.com/entry/2023/01/24/102616",
-          "publishedOn": "2023-01-24T01:26:16.000Z",
-          "wordCount": null,
-          "title": "EmacsでTypeScript/React開発する2023",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230124/20230124102044.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230124/20230124102044.png"
         }
       ]
     },
