@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-24T12:02:03.054Z</updated>
+    <updated>2023-04-24T13:03:54.946Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[gccの-nostdlibオプション]]></title>
+        <id>hatenablog://entry/4207112889984196731</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/04/24/213952"/>
+        <updated>2023-04-24T12:39:52.000Z</updated>
+        <summary type="html"><![CDATA[昔から、私のGBA開発はgccライブラリなどを使わないまっさらな状態をモットーにしていました。ええ、printfとかdivとか既存のものを使ったらGBA開発を堪能できないじゃないですか、というひねくれた理由だけなんですけど。たとえばforループでテーブルを0クリアするコードを書くと、コンパイラがmemset関数に置き換えてくれたり、除算のコードを書くとCPUに命令がないものだからライブラリで肩代わりしてくれたりしていました。ただし黙って置換しないでほしいという気持ちで昔から一杯だったわけです。mapファイルを見ないと結果が分からない状態でいました。たしか当時も調べていてオプションにないものか探していたのですけど結局見つからずだったのです。そして今更、というか今日もういちど覗いてみたら何とみつけてしまいました。私の調査不足、という笑い話です。とりあえず今日のネタとさせていただきます。
+gcc.gnu.org]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[TwitterのAPI変更に伴い、編集画面のTwitter貼り付け機能の廃止、記事公開時のTwitter投稿ボタンの仕様変更を行います]]></title>
         <id>hatenablog://entry/4207112889984105178</id>
