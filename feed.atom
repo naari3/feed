@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-27T12:01:51.581Z</updated>
+    <updated>2023-04-27T13:03:15.816Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AI開発日記.5]]></title>
+        <id>hatenablog://entry/4207112889985045230</id>
+        <link href="https://kimginyon.hatenablog.com/entry/2023/04/27/212303"/>
+        <updated>2023-04-27T12:23:03.000Z</updated>
+        <summary type="html"><![CDATA[私が、無関係の別の漫画家に転生したと思っている人がいてあまりにも腹が立ちました！私がギンガムと同一人物だと思っている人は感受性と目が腐っています。貴方のようなゴミがいるから私は書くのをやめた訳です。
+開発進捗です。gpt4を色々と検証してたのですが、こいつはプロンプトを工夫しても上位下位同位概念の検出に頻繁に失敗しますし、類語検出も問題山積です(MaskとBusiness wearに一切の類似度を認めません)。ジョークのパンチライン検出も同様です。「PaLMがジョークのパンチラインを説明できる」というニュースを聞いて私はAIの勉強を開始した訳ですが、今のgpt4がこのレベルであるのなら、当時のPaLMはもっと精度が低かったんでしょう。当時の私は恐れすぎていたようです。
+ちなみに、皆さんが思うようなプロンプトで私はgpt4と協働していません。第三者が私のチャットログを見てもお笑いを作る過程だとは思わないでしょう。
+私はAIとプログラムにお笑いを自動で作らせていると言っている訳ですが、果たしてこれは自動で作った出力結果なのか、自動と手動で作ったのか、手動で作る過程をいくらか自動化しているから自動で作ったとも言えるよねという話なのか、未だによくわかりません。
+いま世界中のエンジニアが、この葛藤を腹の中に隠して、投資家の前で平静を装っているんでしょう。
+少なくとも、今書いているコードおよび手順書に則れば、私が人力でやるよりも素早くジョークを生成可能である事は確かです。
+また、私はお笑いのパターンが既に枯渇しているという前提で開発を進めている訳ですが、DCガレージの直火ローストのコーナー、かもめんたるのネタ、これらはAIが攻略するまでだいぶ時間がかかると思います。]]></summary>
+        <author>
+            <name>pythonと自然言語処理を学ぶ日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【週刊プラグインレビュー】amalgamatedsignals / Clean Machine]]></title>
         <id>https://note.com/massmasaoki/n/n0bbad1306bed</id>
