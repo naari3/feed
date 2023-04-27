@@ -10001,16 +10001,6 @@
           "wordCount": null,
           "title": "textlint-plugin-html v1をリリースした",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/01/27/textlint-v13/",
-          "author": null,
-          "description": "textlint v13をリリースしました！\ntextlint v13.0.0 · textlint\ntextlint v13では、ECMAScript\nModules(ESM)で書かれたrulesやpluginsを直接読み込めるようになっています。\nまた、textlintパッケージ(コマンド)を書き直してたり、内部的に新しいAPIを使うようになっています。\nただし、textlint\nv12とCLIの互換性はあるはずなので、textlintをコマンドとして使ってるユーザーは特にオプションなどに変更はありません。\nSummary\nFor textlint user\n次のコマンドでアップデートするだけです！\n\nnpm install textlint@13 --save-dev\n# or\nyarn install textlint@13 --dev\n\n\ntextlint 13.0.0 は Node.js 16以上を要求します。 そのため、Node.js\n14を使っている場合は、Node.js 16以上にアップデートする必要があります。\nDownload | Node.js\n📝 まだNode.js14でも動きはしますが、minor\nupdatesで動かなくなるケースが出てくると思います。\nFor textlint rule creator\ntextlint v13.0.0からは、ESMで書かれたルールを直接読み込めるようになりました。\nそのため、ルールをESMで書く場合は、CommonJSにトランスパイルしなくても、textlintのルールとして動くようになりました。\n⚠️\nvscode-textlintなどのエディタは、CLIではなくtextlintをモジュールとして利用しています。\n互換性のために古いAPIもtextlint\nv13ではサポートしていますが、古いAPIはES…",
-          "link": "https://efcl.info/2023/01/27/textlint-v13/",
-          "publishedOn": "2023-01-27T13:08:00.000Z",
-          "wordCount": 1070,
-          "title": "textlint v13.0.0 - ESMで書かれたルールを扱えるように",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
