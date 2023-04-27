@@ -2,10 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-27T03:01:55.314Z</updated>
+    <updated>2023-04-27T04:01:58.410Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[HackTheBoxにてペネトレーションテストを学ぶ]]></title>
+        <id>hatenablog://entry/4207112889982969061</id>
+        <link href="https://www.ninjastars-net.com/entry/2023/04/27/125301"/>
+        <updated>2023-04-27T03:53:01.000Z</updated>
+        <summary type="html"><![CDATA[株式会社Ninjastars
+今回はHackTheBoxと呼ばれるプラットフォームにて、ペネトレーションテストやOffensive Securityを学ぶことができるCTF「machines」のWriteupを書きたいと思います。
+レーニングのためのオンラインプラットフォームであり、ペネトレーションテストだけでなくサイバーセキュリティに関する様々なスキルを身に付けることが可能です。
+app.hackthebox.com
+今回はペネトレーションテストについて学ぶために、「machines」の中の１つである「Ambassador」のWriteupを書きます。
+ペネトレーションテストを知らないエンジニアの方に、ペネトレーションテストのイメージをしていただければ幸いです。また、セキュリティエンジニアの方にとっても本記事より何か学ぶ点などがありましたらありがたい限りです。
+＊「Ambassador」は retired machine であり、ご自身で挑戦される際にはHackTheBoxのサブスクリプションに登録する必要があります。
+Ambassador
+
+    
+環境
+Linux kali 6.1.0-kali5-amd64
+筆者の環境では Kali Linux を使用したため、本記事で使用しているツールが読者の方の環境にインストールされていない可能性がありますが、ご了承ください。
+Linux にインストールされていないツールも使用していますが、適宜皆様でインストールお願いいたします。
+Writeup
+では早速始めていきましょう。
+ペネトレーションテスト（外部サーバーへの侵入）の大まかな流れを整理したいと思います。
+ポートスキャンを実行
+開放された各ポートにて稼働するサービスの調査
+各サービスの既知の脆弱性(CVE)を調査
+各サービスのゼロデイの脆弱性を調査
+発見した脆弱性をエクス…]]></summary>
+        <author>
+            <name>株式会社Ninjastars 技術系ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【週刊プラグインレビュー】Tone Empire / TM700]]></title>
+        <id>https://note.com/massmasaoki/n/naa1fe8f4ee20</id>
+        <link href="https://note.com/massmasaoki/n/naa1fe8f4ee20"/>
+        <updated>2023-04-27T03:32:51.000Z</updated>
+        <summary type="html"><![CDATA[今月２記事目です。
+昨今、AIがタイムラインをにぎわせがちですが、今回紹介するTM700もまた機械学習を使ったプラグインとのことで、試してみたところこれまでのテープシミュとはまた違った手ごたえがあったのでご紹介してみたいと思います。
+それではやっていきましょう！
+プラグインレビュー！
+続きをみる]]></summary>
+        <author>
+            <name>moroishimasaoki</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ChatGPT に「形式が整った俳句」を作ってもらう（あるいは「文字数指定」をする）]]></title>
         <id>hatenablog://entry/4207112889984871815</id>
@@ -15895,25 +15940,6 @@ www.youtube.com
         <summary type="html"><![CDATA[YAPC::Kyoto 2023 に採択されました！初めての YAPC なので楽しみです。 YAPC に対する思い入れ、なぜ応募したか いまから…]]></summary>
         <author>
             <name>blog.ojisan.io's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[日記（1月分）]]></title>
-        <id>hatenablog://entry/4207112889958089376</id>
-        <link href="https://lixy.hatenablog.com/entry/2023/01/28/%E6%97%A5%E8%A8%98%EF%BC%881%E6%9C%88%E5%88%86%EF%BC%89"/>
-        <updated>2023-01-27T15:39:16.000Z</updated>
-        <summary type="html"><![CDATA[今年の頭から個人的に書き溜めていた日記のうち、他の人に見せても問題ないだろうという(≒非プライベートな)部分だけ抜粋してここに載せておきます。アウトプットを報酬系に繋げないと来月以降あんまり続く気がしません。
- 
-1/8
-ここ数日「OMORI」をプレイしてから、「個々人の原体験と強く結びつく創作物は強い」ということを考えています。例えば、僕の大好きな「ハーモニー」は部分的に僕の体験と重なっていますし(詳述するといろいろダメなので控えますが)、そもそも普遍的なシチュエーションのフィクションが広く受け入れられているのもきっとそういうことなんでしょう(理解が浅い)。
-バズを意識する創作物にそうしたエッセンスを取り入れるのは有力な手法として挙げられると思うのですが、一方で僕は(主に小説に)素っ頓狂な舞台設定や人間を求めている節があります。何もかもが僕らの常識とかけ離れている世界はフィクションとして記憶の中で区別しやすいので、どれだけ悲しい物語でも安心して傷つくことができるんです。もしかしたら一種の防衛機制なのかもしれません。ああお腹痛すぎて文章が・・・。
- 
-1/18
-地元で同窓会があったそうで、友人から写真が送られてきました。僕も招待こそされていたものの、地元を離れているために物理的に参加できず今に至ります。恩師も来ていたようで本当に顔を出したかった。
-話を戻すと、その友人から送られてきた画像は会の終わりに撮ったであろう集合写真だったんですが、僕の記憶の中には15歳までのみんなの姿しかないわけです。特別仲の良かった友人ら(今回画像を送ってくれたやつもこれにあたります)とは今でも時々遊んだりするものの、やはり元クラスメイトの大多数は今どうしているのかもお互い知らないままで、いざこうして容姿を目にして初めて5年という月日の残酷さを理解したような気がします。
-これまでなるべく悔いのない…]]></summary>
-        <author>
-            <name>空回り</name>
         </author>
     </entry>
     <entry>
