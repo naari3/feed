@@ -9774,7 +9774,18 @@
       "title": "Wesley Aptekar-Cassels",
       "feedUrl": "https://blog.wesleyac.com/feed.xml",
       "siteUrl": "https://blog.wesleyac.com",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://blog.wesleyac.com/posts/bluesky",
+          "author": null,
+          "description": "Bluesky is a purportedly-decentralized social media company that spun out of Twitter, beginning in 2019. It makes sense that people are hunting for new social media platforms right now — Elon Musk's disastrous takeover of Twitter has demonstrated how fragile relying on private VC-funded companies is for something so critical as communication infrastructure. BlueSky's answer to this is that they are decentralized — thanks to the AT Protocol, anyone can run a server. Unfortunately, it's decentralized in name only:\nThe AT Protocol is entirely controlled by Bluesky the company, with no governance structure or plans for a governance structure. Want to change how it works? Tough luck, buddy.\nWant to run a server yourself? Well, the server is closed-source, so you'd better enjoy reimplementing it all yourself.1\nThe apps? Also closed source, you don't have any control over them.2\nThis isn't how you build a decentralized ecosystem, it's how you build a system that you can claim is decentralized while still holding all the power yourself.\nThere's a lot more that's wrong with Bluesky that I'm not going to get into, since I honestly don't really care. But if you care about not giving more power in your life to a VC-funded company started by a guy who said that \"Elon is the singular solution I trust\" to running Twitter, you probably want to stay away from Bluesky.\nYou might reasonably be fooled into thinking that indigo is the server, but a closer look reveals that this does not seem to be the case. ↩\nThere does appear to be one open-source Android app from a third-party, but there doesn't seem to be any plan to open-source the official apps. ↩",
+          "link": "https://blog.wesleyac.com/posts/bluesky",
+          "publishedOn": "2023-04-28T04:00:00.000Z",
+          "wordCount": null,
+          "title": "If you think Bluesky is decentralized, you’ve been conned",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "blog.ojisan.io's RSS Feed",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-28T17:01:41.202Z</updated>
+    <updated>2023-04-28T18:01:59.695Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -199,6 +199,23 @@ Workflowyは継ぎ足しながら使う秘伝のタレのようなメモツー�
 このようにキッチンとIoTは非常に相性がよくユーザの調理行動を変容させる可能性を秘めています。今回は技術視点でスマートキッチンの取り組みについて少し公開してみました。クックパッドではもちろん技術開発だけでなく体験を軸に活動をしております。]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[If you think Bluesky is decentralized, you’ve been conned]]></title>
+        <id>https://blog.wesleyac.com/posts/bluesky</id>
+        <link href="https://blog.wesleyac.com/posts/bluesky"/>
+        <updated>2023-04-28T04:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Bluesky is a purportedly-decentralized social media company that spun out of Twitter, beginning in 2019. It makes sense that people are hunting for new social media platforms right now — Elon Musk's disastrous takeover of Twitter has demonstrated how fragile relying on private VC-funded companies is for something so critical as communication infrastructure. BlueSky's answer to this is that they are decentralized — thanks to the AT Protocol, anyone can run a server. Unfortunately, it's decentralized in name only:
+The AT Protocol is entirely controlled by Bluesky the company, with no governance structure or plans for a governance structure. Want to change how it works? Tough luck, buddy.
+Want to run a server yourself? Well, the server is closed-source, so you'd better enjoy reimplementing it all yourself.1
+The apps? Also closed source, you don't have any control over them.2
+This isn't how you build a decentralized ecosystem, it's how you build a system that you can claim is decentralized while still holding all the power yourself.
+There's a lot more that's wrong with Bluesky that I'm not going to get into, since I honestly don't really care. But if you care about not giving more power in your life to a VC-funded company started by a guy who said that "Elon is the singular solution I trust" to running Twitter, you probably want to stay away from Bluesky.
+You might reasonably be fooled into thinking that indigo is the server, but a closer look reveals that this does not seem to be the case. ↩
+There does appear to be one open-source Android app from a third-party, but there doesn't seem to be any plan to open-source the official apps. ↩]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
     <entry>
