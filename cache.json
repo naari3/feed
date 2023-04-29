@@ -1340,21 +1340,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230127/20230127102147.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889958745097",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。1月22日（日）から1月28日（土）〔2023年1月第4週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    ネットの音楽オタクが選んだ2022年のベストアルバム 50→1 - 音楽だいすきクラブ\n by id:ongakudaisukiclub \n    \n2\n    なぜ一見何の利益もない嫌がらせ行為を行う人間が存在するのか？──『悪意の科学: 意地悪な行動はなぜ進化し社会を動かしているのか？』 - 基本読書\n by id:huyukiitoichi \n    \n3\n    3万円で買えるPanasonicのミニコンポSC-PMX90はPCやテレビの高音質化ができてオーディオ入門に最適 - ARTIFACT@はてブロ\n by id:kanose \n    \n4\n    婚活の場はなぜあんなにもつらいのか、マルクスを使って解説する - 自意識高い系男子\n by id:Ta-nishi \n    \n5\n    ソフトウェアアーキテクトに必要なシステム設計知識を学んだ17冊 - yoshikipom Tech Blog\n by id:yoshikipom \n    \n6\n    ネットの音楽オタクが選んだ2022年のベストアルバム150→101 - 音楽だいすきクラブ\n by id:ongakudaisukiclub \n    \n7\n    『マスタリングLinuxシェルスクリプト 第2版』、こういう1冊手元に有るとずっと使える本はちゃんと買っておきたいですね - Magnolia Tech\n by id:magnoliak \n    \n8\n    ChatGPTがGoogle検索を使いものにならなくする未来 - きしだのHatena\n by id:nowokay \n    \n9\n    …",
-          "link": "https://blog.hatenablog.com/entry/2023/01/30/120000",
-          "publishedOn": "2023-01-30T03:00:00.000Z",
-          "wordCount": 557,
-          "title": "今週のはてなブログランキング〔2023年1月第4週〕",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230130/20230130104932.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230130/20230130104932.jpg"
         }
       ]
     },
@@ -10022,16 +10007,6 @@
           "publishedOn": "2023-01-31T08:31:00.000Z",
           "wordCount": null,
           "title": "1Passwordを使って、ローカルにファイル(~/.configや.env)として置かれてる生のパスワードなどを削除した",
-          "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/01/30/textlint-html-plugin-v1/",
-          "author": null,
-          "description": "textlintでHTMLファイルを扱うtextlint-plugin-html v1をリリースしました！\nRelease v1.0.0 · textlint/textlint-plugin-html\n自分が使うプロジェクトを持ってないのでずっと放置していましたが、textlint v13.0.0のリリースに合わせて全部書き直しました。\ntextlint v13.0.0 - ESMで書かれたルールを扱えるように\n🔥 Breaking Changes\ntextlint v13.0.0以降が必要になりました\n\nPure ESMで書かれたプラグインなので、ESMで書かれたプラグインを扱えるtextlint v13.0.0以降が必要になります\nNode.js 16.6.0以降が必要になりました\nTypeScriptに書き直しました\n🆕　Features\nHTMLのパーサにrehypeを使うようになりました\n\nrehypeはparse5を使ってるので、parse5を直接でもよかったかもしれません\n<h1> … <h6>の levels プロパティをサポートしました。\n<ul> と <ol> をサポートしました。\n<img />の alt と title をサポートしました。\n<a>の title をサポートしました。\nこの辺のNodeのプロパティは、textlint v13.0.0でちゃんと定義するようにしたので、既存のルールとの互換性が上がっていると思います。\nTxtAST Interface · textlint\n🐛　Bug Fixes\n多くのルールはHtmlノードをLint対象から外しています。\n今までのHTMLプラグインでは <html> タグを Html Nodeに変換してしまっていたため、<html>以下のNodeがLint対象から外れてしまう問題が起きていました。…",
-          "link": "https://efcl.info/2023/01/30/textlint-html-plugin-v1/",
-          "publishedOn": "2023-01-30T02:15:00.000Z",
-          "wordCount": null,
-          "title": "textlint-plugin-html v1をリリースした",
           "imageUrl": null
         }
       ]
