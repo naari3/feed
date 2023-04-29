@@ -78,6 +78,49 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Node.js 14から18へアップデートする方法について</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/04/29/node.js-14-to-18/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Corepackを使ってNode.jsをアップデートする ⬆️⬆️というタイトルで、Node.js 14からNode.js 18へのアップデートする方法について話した。
+Node.js 14は4月末でEOLで、Node.js 18までアップデートする必要があるけど、npmの変更が混ざって大変です。
+Corepackを使うことで、Node.jsとnpmのアップデートを同時にやらなくても良くなり、問題を分割して対応できます！
+Corepackを使ってNode.jsをアップデートする ⬆️⬆️https://t.co/mRHsBcYbpn pic.twitter.com/HiiCe7c5YE
+— azu (@azu_re) April 28, 2023
+  
+
+スライド: Corepackを使ってNode.jsをアップデートする ⬆️⬆️
+Node.jsのアップデートの難しさはライブラリにある
+Node.jsをアップデートするときに、一緒に直さないといけない問題は次のようなものがあると思います。
+OSの問題
+
+Node.js 18はglibc 2.28+が必要になるので、古いOSだとNode.jsがインストールできないことがあります
+Native Addonの問題
+
+Node-APIという抽象レイヤーがあるとはいえ、Native AddonはNode.jsのバージョンアップでよく壊れます
+peerDependenciesの問題
+
+これはNode.jsではなく、npmが6から8でpeerDependenciesの扱い方が変わったことに起因する問題です
+Node.js Runtimeの問題
+
+Node.jsのRuntimeが変わったり、fsといったコアモジュールの変更による影響を受けることがあります
+利用してるライブラリがサポートしていない問題
+
+Node.js Runtimeが変わ…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://isitsutbustu-todoke.hatenablog.com/" target="_blank"
               rel="noopener">遺失物取扱所</a></h3>
           <section class="articles-per-source">
@@ -22134,7 +22177,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-04-29T12:02:11.217Z">2023-04-29T12:02:11.217Z</time>
+    <time id="build-timestamp" datetime="2023-04-29T13:02:09.587Z">2023-04-29T13:02:09.587Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-29T12:02:11.304Z</updated>
+    <updated>2023-04-29T13:02:09.651Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Node.js 14から18へアップデートする方法について]]></title>
+        <id>https://efcl.info/2023/04/29/node.js-14-to-18/</id>
+        <link href="https://efcl.info/2023/04/29/node.js-14-to-18/"/>
+        <updated>2023-04-29T10:46:00.000Z</updated>
+        <summary type="html"><![CDATA[Corepackを使ってNode.jsをアップデートする ⬆️⬆️というタイトルで、Node.js 14からNode.js 18へのアップデートする方法について話した。
+Node.js 14は4月末でEOLで、Node.js 18までアップデートする必要があるけど、npmの変更が混ざって大変です。
+Corepackを使うことで、Node.jsとnpmのアップデートを同時にやらなくても良くなり、問題を分割して対応できます！
+Corepackを使ってNode.jsをアップデートする ⬆️⬆️https://t.co/mRHsBcYbpn pic.twitter.com/HiiCe7c5YE
+— azu (@azu_re) April 28, 2023
+  
+
+スライド: Corepackを使ってNode.jsをアップデートする ⬆️⬆️
+Node.jsのアップデートの難しさはライブラリにある
+Node.jsをアップデートするときに、一緒に直さないといけない問題は次のようなものがあると思います。
+OSの問題
+
+Node.js 18はglibc 2.28+が必要になるので、古いOSだとNode.jsがインストールできないことがあります
+Native Addonの問題
+
+Node-APIという抽象レイヤーがあるとはいえ、Native AddonはNode.jsのバージョンアップでよく壊れます
+peerDependenciesの問題
+
+これはNode.jsではなく、npmが6から8でpeerDependenciesの扱い方が変わったことに起因する問題です
+Node.js Runtimeの問題
+
+Node.jsのRuntimeが変わったり、fsといったコアモジュールの変更による影響を受けることがあります
+利用してるライブラリがサポートしていない問題
+
+Node.js Runtimeが変わ…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20230429「muji／寂しいけど好きな歌を」]]></title>
         <id>hatenablog://entry/4207112889985468382</id>

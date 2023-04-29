@@ -9955,6 +9955,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/04/29/node.js-14-to-18/",
+          "author": null,
+          "description": "Corepackを使ってNode.jsをアップデートする ⬆️⬆️というタイトルで、Node.js 14からNode.js 18へのアップデートする方法について話した。\nNode.js 14は4月末でEOLで、Node.js 18までアップデートする必要があるけど、npmの変更が混ざって大変です。\nCorepackを使うことで、Node.jsとnpmのアップデートを同時にやらなくても良くなり、問題を分割して対応できます！\nCorepackを使ってNode.jsをアップデートする ⬆️⬆️https://t.co/mRHsBcYbpn pic.twitter.com/HiiCe7c5YE\n— azu (@azu_re) April 28, 2023\n  \n\nスライド: Corepackを使ってNode.jsをアップデートする ⬆️⬆️\nNode.jsのアップデートの難しさはライブラリにある\nNode.jsをアップデートするときに、一緒に直さないといけない問題は次のようなものがあると思います。\nOSの問題\n\nNode.js 18はglibc 2.28+が必要になるので、古いOSだとNode.jsがインストールできないことがあります\nNative Addonの問題\n\nNode-APIという抽象レイヤーがあるとはいえ、Native AddonはNode.jsのバージョンアップでよく壊れます\npeerDependenciesの問題\n\nこれはNode.jsではなく、npmが6から8でpeerDependenciesの扱い方が変わったことに起因する問題です\nNode.js Runtimeの問題\n\nNode.jsのRuntimeが変わったり、fsといったコアモジュールの変更による影響を受けることがあります\n利用してるライブラリがサポートしていない問題\n\nNode.js Runtimeが変わ…",
+          "link": "https://efcl.info/2023/04/29/node.js-14-to-18/",
+          "publishedOn": "2023-04-29T10:46:00.000Z",
+          "wordCount": null,
+          "title": "Node.js 14から18へアップデートする方法について",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/03/24/ni/",
           "author": null,
           "description": "niという npm/yarn/pnpm/bun を同じコマンドでインストール/アンストールコマンドを実行できるツールがあります。\nantfu/ni: 💡 Use the right package manager\n仕組み的には、各パッケージのロックファイルやCorepackで決められたpackageManagerフィールドの値から、どのパッケージマネージャを使うかを判断しています。\nたとえば、package-lock.jsonがあるプロジェクトなら npm を使ってるので、niコマンドは npm のコマンドを実行します。\nまた、packageManagerフィールドがyarn@<version>になっている場合は、niコマンドは yarn コマンドを実行します。\nなぜこういうツールが必要になるかというと、npm や yarn などのパッケージマネージャは、それぞれのパッケージマネージャのコマンドが異なるためです。\nたとえば、npm ではnpm install <pkg>でパッケージを追加できますが、yarn ではyarn add <pkg>でパッケージを追加します。\n色々なオープンソースプロジェクトをやっているとこの npm/yarn/pnpm/bun などがプロジェクトで異なるので、コマンドを意識して使い分ける必要が出てきて大変です。\nniはこれをn?というコマンド一つにまとめるというものです。\nantfu/niを使うのも良いと思ったのですが、Node.js である必要性もあんまりないのと、それぞれがコマンドとして実装されていて名前が被りそうな問題が気になりました。\nたとえば、npm runに相当するのがnrで、npm upgradeに相当するのがnuという形になっています。\nこれだと、コマンドが増えると別のコマンドと被りそうなので、ni runのようにサブコマンドにし…",
