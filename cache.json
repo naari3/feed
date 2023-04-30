@@ -10023,16 +10023,6 @@
           "wordCount": null,
           "title": "update-github-actions-permissions v2をリリース: 500種類のGitHub Actionsのpermissionsに対応",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/01/31/remove-secret-from-local/",
-          "author": null,
-          "description": "最近、コミットはされないがローカルのディレクトリに置かれている.envのようなファイルから生のパスワードやAPI Tokenを削除しました。\nこれは、ローカルでマルウェアを実行した場合に、ローカルに置かれている生のパスワードやAPI Tokenを盗まれる可能性があるためです。\n最近は、npm install時のpostinstallでのデータを盗むようなマルウェアを仕込んだりするソフトウェアサプライチェーン攻撃が多様化しています。\nCompromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. | PyTorch\nMicrosoft spots malicious npm package stealing data from UNIX systems | ZDNET\nこれは、次の記事とも関係しています。\nパスワード管理/MFA管理の戦略 | Web Scratch\nSecretlint 6リリース: .bash_historyや.zsh_historyに残ったトークンをマスキングする | Web Scratch\n自分は、1Passwordを使っているので、.envに書くようなパスワードやAPI Tokenも1Passwordに集約することで、\nファイルとして置かれている生のパスワードやAPI Tokenの大部分を削除しました。\n1Password for Open Source Projectsの申請をした | Web Scratch\nローカルにファイルとして置かれる生のパスワードやAPI Tokenにはいくつか種類があるので、それぞれの対応を書いていきます。\n実際には全てのものは対応できていませんが、できるだけファイルに生のパスワードやAPI Token…",
-          "link": "https://efcl.info/2023/01/31/remove-secret-from-local/",
-          "publishedOn": "2023-01-31T08:31:00.000Z",
-          "wordCount": null,
-          "title": "1Passwordを使って、ローカルにファイル(~/.configや.env)として置かれてる生のパスワードなどを削除した",
-          "imageUrl": null
         }
       ]
     },
