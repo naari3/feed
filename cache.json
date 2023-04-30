@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207112889985888612",
+          "author": null,
+          "description": "久しぶりのGBA開発の洗礼・・・バグに６時間使いました。。ＧＷ初動に何やってるんだか。。えーと、今ToncとThe Audio Advanceから一部のサンプルソースを流用してdevkitPro用に変換しているところです。音楽関係も考えてるのに、あっちもやりたいこっちもやりたい。おかげでWikiの進捗が激落ちして月末まで終わるのは不可能になってしまいました。申し訳ありません。おそらく５月中旬か下旬までズレそうです。サボってるってことはなくて、2日に1回のペースでちょいちょい書います。日本語の手直しを少しやろうと思っていたら新規に書いていたりして何をやっているんだ、という状態です。今日はその成果の１つ。\n\nToncのHBLANK DMAとウィンドウ機能を使った表示例です。mode0 bg0,1,2を使っています。メトロイドの最初の方で見るトリックですね。HBLANK毎にウィンドウのラインを決定するのですけど、このコードでどこがおかしいかわかりますか？変数の範囲が足りていないとかそんなちゃちなもんではありません。ハードウェア的問題です。あと、このコードはVBLANK毎に呼んでいて、このままだと昔のテレビのような砂漠映像になります。答えはリンク先のgithubでどうぞ。この問いをノータイムで分かった方は私から拍手を送らせていただきます。\n// u16 BgWinh[SCREEN_HEIGHT+1]\n\nREG_DMA3SAD = (u32)&BgWinh[1];\nREG_DMA3DAD = (u32)&REG_WIN0H;\nREG_DMA3CNT = 1 | (DMA_DST_RELOAD | DMA_REPEAT | DMA_HBLANK | DMA_ENABLE);\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2023/04/30/191526",
+          "publishedOn": "2023-04-30T10:15:26.000Z",
+          "wordCount": 399,
+          "title": "作業中",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230430/20230430190558.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230430/20230430190558.png"
+        },
+        {
           "id": "hatenablog://entry/4207112889984196731",
           "author": null,
           "description": "昔から、私のGBA開発はgccライブラリなどを使わないまっさらな状態をモットーにしていました。ええ、printfとかdivとか既存のものを使ったらGBA開発を堪能できないじゃないですか、というひねくれた理由だけなんですけど。たとえばforループでテーブルを0クリアするコードを書くと、コンパイラがmemset関数に置き換えてくれたり、除算のコードを書くとCPUに命令がないものだからライブラリで肩代わりしてくれたりしていました。ただし黙って置換しないでほしいという気持ちで昔から一杯だったわけです。mapファイルを見ないと結果が分からない状態でいました。たしか当時も調べていてオプションにないものか探していたのですけど結局見つからずだったのです。そして今更、というか今日もういちど覗いてみたら何とみつけてしまいました。私の調査不足、という笑い話です。とりあえず今日のネタとさせていただきます。\ngcc.gnu.org",

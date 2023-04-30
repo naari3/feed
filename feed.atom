@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-04-30T10:02:00.984Z</updated>
+    <updated>2023-04-30T11:01:53.194Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[作業中]]></title>
+        <id>hatenablog://entry/4207112889985888612</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/04/30/191526"/>
+        <updated>2023-04-30T10:15:26.000Z</updated>
+        <summary type="html"><![CDATA[久しぶりのGBA開発の洗礼・・・バグに６時間使いました。。ＧＷ初動に何やってるんだか。。えーと、今ToncとThe Audio Advanceから一部のサンプルソースを流用してdevkitPro用に変換しているところです。音楽関係も考えてるのに、あっちもやりたいこっちもやりたい。おかげでWikiの進捗が激落ちして月末まで終わるのは不可能になってしまいました。申し訳ありません。おそらく５月中旬か下旬までズレそうです。サボってるってことはなくて、2日に1回のペースでちょいちょい書います。日本語の手直しを少しやろうと思っていたら新規に書いていたりして何をやっているんだ、という状態です。今日はその成果の１つ。
+
+ToncのHBLANK DMAとウィンドウ機能を使った表示例です。mode0 bg0,1,2を使っています。メトロイドの最初の方で見るトリックですね。HBLANK毎にウィンドウのラインを決定するのですけど、このコードでどこがおかしいかわかりますか？変数の範囲が足りていないとかそんなちゃちなもんではありません。ハードウェア的問題です。あと、このコードはVBLANK毎に呼んでいて、このままだと昔のテレビのような砂漠映像になります。答えはリンク先のgithubでどうぞ。この問いをノータイムで分かった方は私から拍手を送らせていただきます。
+// u16 BgWinh[SCREEN_HEIGHT+1]
+
+REG_DMA3SAD = (u32)&BgWinh[1];
+REG_DMA3DAD = (u32)&REG_WIN0H;
+REG_DMA3CNT = 1 | (DMA_DST_RELOAD | DMA_REPEAT | DMA_HBLANK | DMA_ENABLE);
+github.com]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2023年4月-④】見たアニメ、好きなサムネ]]></title>
         <id>hatenablog://entry/4207112889985837279</id>
