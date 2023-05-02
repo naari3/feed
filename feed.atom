@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-02T12:02:12.882Z</updated>
+    <updated>2023-05-02T13:03:55.924Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[sqldefをMySQLに対してAWS Lambdaから実行するパッケージを作った]]></title>
+        <id>hatenablog://entry/4207575160645415873</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2023/05/02/215654"/>
+        <updated>2023-05-02T12:56:54.000Z</updated>
+        <summary type="html"><![CDATA[k0kubun/sqldefはすばらしいプロダクトで便利に使ってるんだけど、もちろんDBに接続できる場所から実行する必要がある。で、DBはAWSのprivate VPCにあるのでラップトップやCI環境からやるというわけにはいかない。しょうがないので、現在はEC2インスタンスを作成して使うときだけ起動、終了したら停止してた。んだけど、これがまた面倒なんだよね。起動と停止も面倒だし、なんかあったときに確実に作り直せるようにするには……とか考えるのもダルいし、EC2へのSSHする方法やEC2へリポジトリをチェックアウトする方法も考えないといけないし。
+なのでしばらく考えてたんだけど、Lambdaでやれるといいんだよな、という希望を現実的に考えて実装してみた。のがこちら。
+github.com
+こいつは大変便利。リポジトリをcloneして、プライベートリポジトリからスキーマファイルを読み込むならデプロイキーのファイルをぶちこんだ状態で./build.shを叩けばLambda用のzipファイルが完成するから、あとはこれを指定してLambda関数を作成すればいい。あとはtestでもaws lambda invokeでも他のなんのトリガーででも起動すればよい。どんなプロジェクト向けに作り直すのも簡単。やったね!]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[汎用説明記事] REAPERでのVSTの導入方法]]></title>
         <id>https://ytpmv.info/?p=1748</id>
