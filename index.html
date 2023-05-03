@@ -78,6 +78,44 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">アフィン変換</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2023/05/03/205728" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>GBAのレジスタは4つの16bit（PA,PB,PC,PD）を使います。これらが行列の座標を意味していて、Identity（移動）、Rotation（回転）、Scaling（拡大縮小）、Shear（せん断）をします。この辺りはToncの「10.2.2. Affine transformations」がわかりやすいですね。
+www.coranac.com
+回転の場合は以下のとおり。
+		s32 angle &#x3D; 角度10;
+
+		s32 ss &#x3D; MathSin(angle);
+		s32 cc &#x3D; MathCos(angle);
+
+		s32 sa &#x3D;  cc;
+		s32 sb &#x3D; -ss;
+		s32 sc &#x3D;  ss;
+		s32 sd &#x3D;  cc;
+
+		pa &#x3D; (ta*sa + tb*sc);
+		pb &#x3D; (ta*sb + tb*sd);
+		pc &#x3D; (tc*sa + td*sc);
+		pd &#x3D; (tc*sb + td*sd);
+ta～tdは現在のPA～PDの値です。整数部や分数部については省略しましたけれど雰囲気だけでも分かっていただければ幸いです。
+github.com</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230503/20230503202014.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
               rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
           <section class="articles-per-source">
@@ -22213,102 +22251,6 @@ HTMLモジュールに含まれるHeading要素に自動で付与されるid属�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.ojisan.io" target="_blank"
-              rel="noopener">blog.ojisan.io&#x27;s RSS Feed</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">グリーンスレッドの自作に必要なものは何か</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.ojisan.io/multi-green-thread" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>定期的に並行プログラミング入門 を丸パクリするようなブログを書いているが、1 年以上かけて最近ようやく 6 章を理解できて自分の言葉で説明できるようになったので書く。これ本当に良い本だから買ってね。6 章 マルチタスク は初めて読んだ時は何も分からなかった。いきなり FFI…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2023-02-02">2023-02-02</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://crabgot.hatenablog.com/" target="_blank"
-              rel="noopener">なんて巨大なカニゴット</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">【2023年2月-①】炎</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://crabgot.hatenablog.com/entry/2023/02/03/081553" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>今こんな感じです。
-いよいよ無の時間が増えて日記に書くことなくなってきたな。今までもまあそんな感じだったな。じゃあいいか…
-無性にハリーポッターが見たい
-AutoParallax2買った。めちゃくちゃ楽しい。なんでZ軸動かしてもスケール変化しないの？魔法？
-映画
-見たわよ。SINGを。
-ミュージカル映画が見たい × 楽しい気持ちになりたい &#x3D; 我慢できない！
-アマプラで映画を漁る淫乱ダディに大変身！
-↓めっちゃネタバレのレビューあるで！
-
-■SING
-ネズミが不快すぎん？
-ライブシーンとかオーディションのあたりはずっと好き。多様な音楽ジャンルをエンタメとしてムシャムシャと貪れる。
-細かいところが気になる（コメディリリーフにしてはネズミが不快すぎる、ゴリラの親父がめちゃくちゃすぎる）けど、それはそれとして見てて楽しい映画ではあった。
-コアラろくでもなさすぎる…よくコイツについていこうってなったな
-特に説明ないけど同級生？のヒツジがムーンのために体張って手伝ってくれるのユウジョウ！って感じで好き
-一番好きなキャラはミスクローリーでした。頑張ってるから。ゴリラも好き！
-ネズミが不快すぎた。
-劇伴はずっと最高！
- 
-■SING2
-いきなりBad guy流れ始めてオションコポンポンだった。
-Duhじゃないんだよ
-急にスケベなメスケモが増えた
-急にスケベなメスケモが増えた2
-急にスケベなメスケモが増えた3
-↑これに尽きるかも
-ロックスターの復活はめちゃくちゃアツい演出なんだけど歌声がB&#x27;zすぎる
-やばいヤツではあったけどオオカミの社長が逮捕されるの…？
-嘘吐いてたコアラのせいで…？悪役が気の毒すぎるのが超気になる！！
-殺そうとしたし監禁しようとしたけどコアラが嘘吐いたのが原因だし、なんならコアラ陣営は警備員ボコボコにしたりホテルめちゃくちゃにしてたりするから逮捕されるのはこっちじゃね…？となってしまった
-細かい事気にする映画じゃないんだろうけどさあ！
-悪役として描くなら徹底的に悪いことやってほしかったな…
-前作のときはそこまで気にならなかったけど、ライオンの演技はどうしても吹き替え～～～って感じしちゃった。だから字幕版も見るかってなったからいいんだけども。
-2より無印の方が好きだけど、めっっっちゃスケベなメスケモが出てきます
-それだけは事実を伝えたかった
-EDで気づいたけどムーンのCVウッチャンなのかよ 
-テングザルの振付師はまあ…なんか私怨で暴れたけど納得したみたいだしいいか…
-ゾウはなんか幻覚でショーを成功させたんだけど…まあいいか…
-ブタさんのコンビはめちゃくちゃ良かった。オオカミの子も。
-劇伴は全部最高なんだよな～！
-あとなんか前作のネズミ（カス）が出てこなかったのは流石に不評だったからだろうか。出てきてほしくなかったので別にいいけど…
- 
-ちょっと待てや
-見終わってから気づいたけどヒツジの幼馴染が出てきてねえ！前作であんなに友情を見せつけたのに！？
-なんか凄い細かいところで引っかかる映画だな… 
-スケベなメスメモが見たい方にオススメです。字幕版をオススメするかも
-映像
-楽しい。
-Twitter
-凍結された。
- 
-じゃ！</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/comariai/20230203/20230203080201.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -22452,7 +22394,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-05-03T11:01:40.933Z">2023-05-03T11:01:40.933Z</time>
+    <time id="build-timestamp" datetime="2023-05-03T12:02:08.630Z">2023-05-03T12:02:08.630Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

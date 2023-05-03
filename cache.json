@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207575160645691012",
+          "author": null,
+          "description": "GBAのレジスタは4つの16bit（PA,PB,PC,PD）を使います。これらが行列の座標を意味していて、Identity（移動）、Rotation（回転）、Scaling（拡大縮小）、Shear（せん断）をします。この辺りはToncの「10.2.2. Affine transformations」がわかりやすいですね。\nwww.coranac.com\n回転の場合は以下のとおり。\n\t\ts32 angle = 角度10;\n\n\t\ts32 ss = MathSin(angle);\n\t\ts32 cc = MathCos(angle);\n\n\t\ts32 sa =  cc;\n\t\ts32 sb = -ss;\n\t\ts32 sc =  ss;\n\t\ts32 sd =  cc;\n\n\t\tpa = (ta*sa + tb*sc);\n\t\tpb = (ta*sb + tb*sd);\n\t\tpc = (tc*sa + td*sc);\n\t\tpd = (tc*sb + td*sd);\nta～tdは現在のPA～PDの値です。整数部や分数部については省略しましたけれど雰囲気だけでも分かっていただければ幸いです。\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2023/05/03/205728",
+          "publishedOn": "2023-05-03T11:57:28.000Z",
+          "wordCount": 431,
+          "title": "アフィン変換",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230503/20230503202014.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230503/20230503202014.png"
+        },
+        {
           "id": "hatenablog://entry/4207575160645465057",
           "author": null,
           "description": "GBAの日本語仕様書を読めるって頭にスッと入ってきますし数学できない自分でも理解できるのがありがたい。ほんと大助かりです。これでToncのサンプルコードを組み合わせるといい感じのものが・・・ふっふっふ。\ngithub.com",
@@ -1600,21 +1615,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/comariai/20230210/20230210202950.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889959855131",
-          "author": null,
-          "description": "今こんな感じです。\nいよいよ無の時間が増えて日記に書くことなくなってきたな。今までもまあそんな感じだったな。じゃあいいか…\n無性にハリーポッターが見たい\nAutoParallax2買った。めちゃくちゃ楽しい。なんでZ軸動かしてもスケール変化しないの？魔法？\n映画\n見たわよ。SINGを。\nミュージカル映画が見たい × 楽しい気持ちになりたい = 我慢できない！\nアマプラで映画を漁る淫乱ダディに大変身！\n↓めっちゃネタバレのレビューあるで！\n\n■SING\nネズミが不快すぎん？\nライブシーンとかオーディションのあたりはずっと好き。多様な音楽ジャンルをエンタメとしてムシャムシャと貪れる。\n細かいところが気になる（コメディリリーフにしてはネズミが不快すぎる、ゴリラの親父がめちゃくちゃすぎる）けど、それはそれとして見てて楽しい映画ではあった。\nコアラろくでもなさすぎる…よくコイツについていこうってなったな\n特に説明ないけど同級生？のヒツジがムーンのために体張って手伝ってくれるのユウジョウ！って感じで好き\n一番好きなキャラはミスクローリーでした。頑張ってるから。ゴリラも好き！\nネズミが不快すぎた。\n劇伴はずっと最高！\n \n■SING2\nいきなりBad guy流れ始めてオションコポンポンだった。\nDuhじゃないんだよ\n急にスケベなメスケモが増えた\n急にスケベなメスケモが増えた2\n急にスケベなメスケモが増えた3\n↑これに尽きるかも\nロックスターの復活はめちゃくちゃアツい演出なんだけど歌声がB'zすぎる\nやばいヤツではあったけどオオカミの社長が逮捕されるの…？\n嘘吐いてたコアラのせいで…？悪役が気の毒すぎるのが超気になる！！\n殺そうとしたし監禁しようとしたけどコアラが嘘吐いたのが原因だし、なんならコアラ陣営は警備員ボコボコにしたりホテルめちゃくちゃにしてたりするから逮捕されるのはこっちじゃね…？となってしまった\n細かい事気にする映画じゃないんだろうけどさあ！\n悪役として描くなら徹底的に悪いことやってほしかったな…\n前作のときはそこまで気にならなかったけど、ライオンの演技はどうしても吹き替え～～～って感じしちゃった。だから字幕版も見るかってなったからいいんだけども。\n2より無印の方が好きだけど、めっっっちゃスケベなメスケモが出てきます\nそれだけは事実を伝えたかった\nEDで気づいたけどムーンのCVウッチャンなのかよ \nテングザルの振付師はまあ…なんか私怨で暴れたけど納得したみたいだしいいか…\nゾウはなんか幻覚でショーを成功させたんだけど…まあいいか…\nブタさんのコンビはめちゃくちゃ良かった。オオカミの子も。\n劇伴は全部最高なんだよな～！\nあとなんか前作のネズミ（カス）が出てこなかったのは流石に不評だったからだろうか。出てきてほしくなかったので別にいいけど…\n \nちょっと待てや\n見終わってから気づいたけどヒツジの幼馴染が出てきてねえ！前作であんなに友情を見せつけたのに！？\nなんか凄い細かいところで引っかかる映画だな… \nスケベなメスメモが見たい方にオススメです。字幕版をオススメするかも\n映像\n楽しい。\nTwitter\n凍結された。\n \nじゃ！",
-          "link": "https://crabgot.hatenablog.com/entry/2023/02/03/081553",
-          "publishedOn": "2023-02-02T23:15:53.000Z",
-          "wordCount": 263,
-          "title": "【2023年2月-①】炎",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/comariai/20230203/20230203080201.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/comariai/20230203/20230203080201.jpg"
         }
       ]
     },
@@ -9995,16 +9995,6 @@
           "wordCount": 998,
           "title": "DIP(依存性逆転の原則)を守っていない話",
           "imageUrl": "https://blog.ojisan.io/static/a7258c03179e0cbc99d097760e73d223/493f9/visual.jpg"
-        },
-        {
-          "id": "https://blog.ojisan.io/multi-green-thread",
-          "author": null,
-          "description": "定期的に並行プログラミング入門 を丸パクリするようなブログを書いているが、1 年以上かけて最近ようやく 6 章を理解できて自分の言葉で説明できるようになったので書く。これ本当に良い本だから買ってね。6 章 マルチタスク は初めて読んだ時は何も分からなかった。いきなり FFI…",
-          "link": "https://blog.ojisan.io/multi-green-thread",
-          "publishedOn": "2023-02-03T00:00:00.000Z",
-          "wordCount": null,
-          "title": "グリーンスレッドの自作に必要なものは何か",
-          "imageUrl": null
         }
       ]
     },
