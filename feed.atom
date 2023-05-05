@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-05T13:02:54.791Z</updated>
+    <updated>2023-05-05T14:01:45.691Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[CloudRun 起動時の8080PORT空いてませんよエラーの原因はPORT8080が空いていないことが原因とは限らない]]></title>
+        <id>https://blog.ojisan.io/cloudrun-8080-error-reason</id>
+        <link href="https://blog.ojisan.io/cloudrun-8080-error-reason"/>
+        <updated>2023-05-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Cloudrun でよくみるエラー Cloudrun でよくみるエラーと言えば、 The user-provided container failed to start and listen on the port defined provided by the PORT…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dockerfile 内の ls とか echo の出力をみたい]]></title>
+        <id>https://blog.ojisan.io/ls-in-dockerfile</id>
+        <link href="https://blog.ojisan.io/ls-in-dockerfile"/>
+        <updated>2023-05-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dockerfile を書く時にいつも調べているのでメモ。 Dockerfile のデバッグをしたい 僕だけかもしれませんが、node_modules フォルダをコンテナに COPY…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[そうだ、デスクDIYしよう。]]></title>
         <id>https://note.com/dokozonosyake/n/nc7041f744fa0</id>

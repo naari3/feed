@@ -9782,6 +9782,26 @@
       "siteUrl": "https://blog.ojisan.io",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/cloudrun-8080-error-reason",
+          "author": null,
+          "description": "Cloudrun でよくみるエラー Cloudrun でよくみるエラーと言えば、 The user-provided container failed to start and listen on the port defined provided by the PORT…",
+          "link": "https://blog.ojisan.io/cloudrun-8080-error-reason",
+          "publishedOn": "2023-05-05T00:00:00.000Z",
+          "wordCount": 716,
+          "title": "CloudRun 起動時の8080PORT空いてませんよエラーの原因はPORT8080が空いていないことが原因とは限らない",
+          "imageUrl": "https://blog.ojisan.io/static/619ae9088fe692a9cae0d4a37fdea005/f97ae/visual.jpg"
+        },
+        {
+          "id": "https://blog.ojisan.io/ls-in-dockerfile",
+          "author": null,
+          "description": "Dockerfile を書く時にいつも調べているのでメモ。 Dockerfile のデバッグをしたい 僕だけかもしれませんが、node_modules フォルダをコンテナに COPY…",
+          "link": "https://blog.ojisan.io/ls-in-dockerfile",
+          "publishedOn": "2023-05-05T00:00:00.000Z",
+          "wordCount": 698,
+          "title": "Dockerfile 内の ls とか echo の出力をみたい",
+          "imageUrl": "https://blog.ojisan.io/static/c3116d0008a47bc93e7b659cc21d9ac4/f97ae/visual.jpg"
+        },
+        {
           "id": "https://blog.ojisan.io/fastify-v4-schema",
           "author": null,
           "description": "最近 fastify v4 移行してる知人の話を聞いて、JSON SChema の推論めちゃくちゃ便利になってそうだなと思って試してみた。\nV4 GA が 2022-06 なので何を今更と思われるかもしれないが、正直最近 fastify…",
