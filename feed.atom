@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-06T07:02:04.307Z</updated>
+    <updated>2023-05-06T08:02:55.161Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[FireTV Stickを接続して、ものすごいノイズがあるときにはオプションを変更しよう]]></title>
+        <id>hatenablog://entry/4207575160646488403</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/05/06/163314"/>
+        <updated>2023-05-06T07:33:14.000Z</updated>
+        <summary type="html"><![CDATA[新しいプロジェクターにこれまで、Chromecast TVをつないでいたのですが、LeminoのソフトのできがFireの方がずっといいので、取り替えることにしました。
+そうしたら、つないだら、ずーーーっとセットアップの頃から
+「ジーーーー」
+というノイズが乗っていて、電源その他を変更してもあんまりうまくいかなかったので、ググったら、こちらの記事を見つけました。
+要は、デフォルトだとドルビーなど、ふつうのステレオではないので、そのせいでノイズが乗る、ということでした。
+さっそく、サウンドのオプションをPCMに変更してみたら、ピタッと収まりました。多分、同じ事ではまる人がいそうなので、ブログに残しておきます。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[WebRTC を理解するためにカメラ映像を送るだけの最小実装を探る]]></title>
         <id>https://blog.ojisan.io/webrtc-video-minimal-impl</id>
@@ -26,6 +41,16 @@
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AdBlockとYouTubeの動画URL]]></title>
+        <id>https://r7kamura.com/articles/2023-05-06-adblock-youtube</id>
+        <link href="https://r7kamura.com/articles/2023-05-06-adblock-youtube"/>
+        <updated>2023-05-05T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[2023年5月6日現在、Google Chrome用の拡張AdBlockを入れると、デフォルトでこのオプションが有効化されている。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>

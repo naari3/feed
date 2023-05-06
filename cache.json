@@ -3538,6 +3538,21 @@
       "siteUrl": "https://katsumakazuyo.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/4207575160646488403",
+          "author": null,
+          "description": "新しいプロジェクターにこれまで、Chromecast TVをつないでいたのですが、LeminoのソフトのできがFireの方がずっといいので、取り替えることにしました。\nそうしたら、つないだら、ずーーーっとセットアップの頃から\n「ジーーーー」\nというノイズが乗っていて、電源その他を変更してもあんまりうまくいかなかったので、ググったら、こちらの記事を見つけました。\n要は、デフォルトだとドルビーなど、ふつうのステレオではないので、そのせいでノイズが乗る、ということでした。\nさっそく、サウンドのオプションをPCMに変更してみたら、ピタッと収まりました。多分、同じ事ではまる人がいそうなので、ブログに残しておきます。",
+          "link": "https://katsumakazuyo.hatenablog.com/entry/2023/05/06/163314",
+          "publishedOn": "2023-05-06T07:33:14.000Z",
+          "wordCount": 559,
+          "title": "FireTV Stickを接続して、ものすごいノイズがあるときにはオプションを変更しよう",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207575160645634359",
           "author": null,
           "description": "休みの日は、せっせとパンを焼いていますが、HBで焼くとパン屋さんほどはおいしくできないので、だいたいヘルシオで焼いています。\nそしてヘルシオで焼くときも、食パン型のような型を使った時と、手で丸めて焼いた時の味の差があるなと思っていたのですが、やっと原因に気付きました。\n結局、型を使ってしまうと、どうしても伝導熱の部分が出てきてしまうからです。食べ物は伝導熱よりも輻射熱の方が圧倒的においしいので、やはり、パンも輻射熱がいいです。\nそういうわけで、ちょっと手間がかかりますが、これからはなるべく、手で分割して丸めて焼く方を主流にしたいと思います。\nちなみに、HBも構造上、伝導熱なので、いまいちなんですねーーー。なんとなくわかってきました。",
@@ -10443,6 +10458,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2023-05-06-adblock-youtube",
+          "author": null,
+          "description": "2023年5月6日現在、Google Chrome用の拡張AdBlockを入れると、デフォルトでこのオプションが有効化されている。",
+          "link": "https://r7kamura.com/articles/2023-05-06-adblock-youtube",
+          "publishedOn": "2023-05-05T15:00:00.000Z",
+          "wordCount": null,
+          "title": "AdBlockとYouTubeの動画URL",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2023-04-28-windows-mouse-dpi",
           "author": null,
