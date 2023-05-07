@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-07T12:02:22.801Z</updated>
+    <updated>2023-05-07T13:01:58.006Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[着工できなかった音MADアイデアを晒す回]]></title>
+        <id>https://note.com/fourangle/n/na4e5970e1b0a</id>
+        <link href="https://note.com/fourangle/n/na4e5970e1b0a"/>
+        <updated>2023-05-07T12:45:12.000Z</updated>
+        <summary type="html"><![CDATA[四角です。前回ちょっと落ち込んでる記事だったので申し訳ないですが、ちょっと延長線上にもある記事です。けど今回の内容自体はそこまで落ち込んでるやつではないので気楽に見て頂いても構いません。
+実際の初投稿から8年、ニコニコ初投稿から6年を過ごしてるなか、本当に沢山「作りたい！」と強烈に思ってしまうアイデアがいくつがあります。ただし、能力不足で欲しい表現ができないのを恐れて着工すらできなかったものがだいたいです。そんなかでは今までも「これはやりたいな～」ってなってるやつもいますが、表現力が整った最近はまた時間とやる気の不足に恐れてまた手を出せずに眠らせてる状態です。
+続きをみる]]></summary>
+        <author>
+            <name>四角</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GBA本体でマルチブート]]></title>
         <id>hatenablog://entry/4207575160646826226</id>
@@ -15677,42 +15689,6 @@ techlife.cookpad.com
 サービス開発初期、私たちの用途にかなう機材を探したものの、残念ながら世の中に存在しませんでした。従っ…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2023-02-06]]></title>
-        <id>hatenablog://entry/4207112889960940612</id>
-        <link href="https://commits.hatenablog.com/entry/2023/02/07/100005"/>
-        <updated>2023-02-07T01:00:05.000Z</updated>
-        <summary type="html"><![CDATA[rbs collectionのlocal sourceを実装していた。大体動くようになったのだけど、GHAからubuntuのarchiveにアクセスするのが不調で一回休み。
-www.rails-graphql.dev
-GraphQL関連の新しいgemがリリースされたようなのでちょっと眺めていた。
-なんでgraphql gemじゃなくてこれを作りたかったのかよくわからない。名前からしてRailsと密結合にしたいのだろうけど、嬉しいのかな… subscriptionを有効活用したいと嬉しいかな。知らんけど。
-パーサをCで書き直しているようですごい。あまり真面目にGraphQLのパーサって考えたことがなかったけど、どれくらい簡単なのかな。
-しかしパーサってgraphql-rubyでもそこまでボトルネックじゃなかった気もするし、速度影響どれくらいあるのかなあ。
-DSLはなんかちょっとうーんという感じで、あんまり魅力的じゃなかった。]]></summary>
-        <author>
-            <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Karte.114 | 僕らは付き合っている]]></title>
-        <id>https://mangacross.jp/comics/yabai/121</id>
-        <link href="https://mangacross.jp/comics/yabai/121"/>
-        <updated>2023-02-07T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[僕の心のヤバイやつ Karte.114 僕らは付き合っている - 2023年4月TVアニメ放送スタート!! 累計260万部突破！SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!!]]></summary>
-        <author>
-            <name>桜井のりお</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Kubernetesのバージョンアップとの付き合い方]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=17944</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/17944"/>
-        <updated>2023-02-07T00:38:57.000Z</updated>
-        <summary type="html"><![CDATA[Kubernetesは現在は4ヶ月に一回マイナーアップグレードリリースが実施されています。そして、基本的には最新の3つのマイナーリリースについてサポートが行われるポリシーとなっています（深刻なセキュリ...]]></summary>
-        <author>
-            <name>田口 景介</name>
         </author>
     </entry>
     <entry>
