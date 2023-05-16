@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-16T16:02:34.447Z</updated>
+    <updated>2023-05-16T17:02:00.412Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[IETF RFC における ABNF と Parsing Algorithm の関係]]></title>
+        <id>https://blog.jxck.io/entries/2023-05-17/abnf-or-algorithm-in-rfc.html</id>
+        <link href="https://blog.jxck.io/entries/2023-05-17/abnf-or-algorithm-in-rfc.html"/>
+        <updated>2023-05-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[HTTPBis では、 RFC 8941: Structured Field Values (以下 SFV) の更新作業が行われている。RFC 8941: Structured Field Values for HTTPhttps://www.rfc-editor.org/rfc/rfc8941.html機能面では Date 型が追加されるという点が大きいが、個人的にはその裏で行われるもっと興味深い議論に注目したい。それは、「RFC における ABNF の立ち位置」に関するものだ。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ぼんやり考えたこと]]></title>
         <id>hatenablog://entry/4207575160649490762</id>
@@ -15340,16 +15350,6 @@ ruby-jpで「特定のローカル変数への代入がバイトコード上に�
 ゲーム機器を使うというのはちょっと盲点だったのでもうちょっと研究してみたいと思います。]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hugging Face Pipelineを使ったお手軽AIプログラミング]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=17980</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/17980"/>
-        <updated>2023-02-16T04:55:23.000Z</updated>
-        <summary type="html"><![CDATA[Hugging Faceってご存じですか？ AIを使用したプログラム・スクリプトを作る際、ゼロから起こす場合は以下のような部分を作り込んだり、Githubなどのリポジトリサイトからソースを入手したりす...]]></summary>
-        <author>
-            <name>とみ（とみーとも言う）</name>
         </author>
     </entry>
     <entry>
