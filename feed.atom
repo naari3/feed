@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-18T03:02:12.157Z</updated>
+    <updated>2023-05-18T04:02:00.525Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[RubyKaigi 2023の冷蔵庫は何だったのか]]></title>
+        <id>hatenablog://entry/820878482933525039</id>
+        <link href="https://techlife.cookpad.com/entry/2023/05/18/121547"/>
+        <updated>2023-05-18T03:15:47.000Z</updated>
+        <summary type="html"><![CDATA[エンジニアの成田（@mirakui）です。最近はクックパッドマートの流通基盤エンジニアとして、商品の流通に関わるソフトウェアやハードウェアに携わっています。
+さて、クックパッドは先日長野県の松本で開催された RubyKaigi 2023 にスポンサーとして参加しました。そのスポンサーシップの一環として、参加者に配られるドリンクを冷やすための冷蔵庫を提供しました。
+会場に設置した6台の冷蔵庫は、私たちが「マートステーション」と呼ぶ、クックパッドマートにおいてユーザーが購入した商品を受け取るための冷蔵庫です。現在は都内を中心に、駅やコンビニエンスストア、マンションの共用部といった生活動線に設置しています。マートステーションの技術的な詳細は下記の記事をご覧下さい。
+techlife.cookpad.com
+今回設置したのは、上記の記事中で "JCM-Mk4" と呼んでいる、現行型である第4世代の冷蔵庫です。それまでのモデル第3世代とはベースとなる冷蔵庫は同じですが、断熱性能を高めて結露対策を行ったり、Raspberry Pi を使うのを止めて、より安定性の高い産業用の機材に変更したりといった改良が加わっています。
+冷蔵庫監視ダッシュボード
+会場のクックパッドブースでは、6台の冷蔵庫をリアルタイムに監視する Grafana ダッシュボードを展示していました。
+会場で展示した冷蔵庫のダッシュボード
+ダッシュボードには、会場に設置したそれぞれの冷蔵庫において、主に以下のような値を表示していました。
+冷蔵庫の庫内温度
+解錠状態
+ドアの開け閉めの状態
+各冷蔵庫には産業用IoTゲートウェイであるFutureNet MA-S110 が取り付けられています。これは簡単に言うと小型 Linux PC であり、SIM カードやアンテナを取り付けることで、LTE 回線を通じてインターネットに繋がること…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[JavaScript Primer 改訂2版の予約が開始されました]]></title>
         <id>https://efcl.info/2023/05/18/jsprimer-v2-yoyaku/</id>
