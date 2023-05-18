@@ -9910,6 +9910,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/05/18/jsprimer-v2-yoyaku/",
+          "author": null,
+          "description": "https://jsprimer.net/ で公開している「JavaScript Primer(jsprimer)」の改訂2版の予約が開始されました。\njsprimer 改訂2版の発売日は2023年6月9日の予定です。\nKADOKAWA: 「JavaScript Primer 改訂2版 迷わないための入門書」azu [ＰＣ・理工科学書] - KADOKAWA\nAmazon: JavaScript Primer 改訂2版 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon\n楽天: 楽天ブックス: JavaScript Primer 改訂2版 迷わないための入門書 - azu - 9784048931106 : 本\nヨドバシ: ヨドバシ.com - JavaScript Primer 改訂2版 迷わないための入門書 [単行本] 通販【全品無料配達】\njsprimerの初版は2020年4月に出版されたので、3年ぶりの改訂となります。\nJavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch\njsprimerはhttps://jsprimer.net/のウェブ上でも公開していて、ウェブ版は常に更新されているLiving Bookとして公開しています。\n一方で、書籍版はその時点のウェブ版をベースにしたスナップショットになっていて、出版に合わせて校正、書籍に向けたレイアウト変更、索引の追加などを行なっています。\n簡単にまとめると、ウェブ版は常に最新ですが読んでる途中でも内容が更新される可能性はあります。一方で、書籍はその時点のスナップショットとして色々チェックやレイアウト改善をして安定させたバージョンになります。まとめて読むなら書籍版の方がおすすめです！\n詳しく…",
+          "link": "https://efcl.info/2023/05/18/jsprimer-v2-yoyaku/",
+          "publishedOn": "2023-05-18T00:16:00.000Z",
+          "wordCount": 860,
+          "title": "JavaScript Primer 改訂2版の予約が開始されました",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2023/04/29/node.js-14-to-18/",
           "author": null,
           "description": "Corepackを使ってNode.jsをアップデートする ⬆️⬆️というタイトルで、Node.js 14からNode.js 18へのアップデートする方法について話した。\nNode.js 14は4月末でEOLで、Node.js 18までアップデートする必要があるけど、npmの変更が混ざって大変です。\nCorepackを使うことで、Node.jsとnpmのアップデートを同時にやらなくても良くなり、問題を分割して対応できます！\nCorepackを使ってNode.jsをアップデートする ⬆️⬆️https://t.co/mRHsBcYbpn pic.twitter.com/HiiCe7c5YE\n— azu (@azu_re) April 28, 2023\n  \n\nスライド: Corepackを使ってNode.jsをアップデートする ⬆️⬆️\nNode.jsのアップデートの難しさはライブラリにある\nNode.jsをアップデートするときに、一緒に直さないといけない問題は次のようなものがあると思います。\nOSの問題\n\nNode.js 18はglibc 2.28+が必要になるので、古いOSだとNode.jsがインストールできないことがあります\nNative Addonの問題\n\nNode-APIという抽象レイヤーがあるとはいえ、Native AddonはNode.jsのバージョンアップでよく壊れます\npeerDependenciesの問題\n\nこれはNode.jsではなく、npmが6から8でpeerDependenciesの扱い方が変わったことに起因する問題です\nNode.js Runtimeの問題\n\nNode.jsのRuntimeが変わったり、fsといったコアモジュールの変更による影響を受けることがあります\n利用してるライブラリがサポートしていない問題\n\nNode.js Runtimeが変わ…",
