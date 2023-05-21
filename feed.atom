@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-21T05:02:11.743Z</updated>
+    <updated>2023-05-21T06:01:56.488Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -16,6 +16,16 @@
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[初期化後にMacのバッテリーの充放電回数を調べる]]></title>
+        <id>https://r7kamura.com/articles/2023-05-21-mac-cycle-count</id>
+        <link href="https://r7kamura.com/articles/2023-05-21-mac-cycle-count"/>
+        <updated>2023-05-20T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[初期化後でもターミナルを起動でき、 コマンドの出力から充電回数を確認できる。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
