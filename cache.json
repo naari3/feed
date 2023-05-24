@@ -9874,16 +9874,6 @@
           "wordCount": null,
           "title": "GitHubのリリースノートを自動化する仕組み",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/02/23/textlint-sentence-rule/",
-          "author": null,
-          "description": "読みやすい文章を書くためには、文(センテンス)の長さを意識する必要があります。\n1文が長いと読みにくくなる傾向があるため、1文を一定の長さ以下にすることが推奨されています。\n読みやすいドキュメントを書くために今日からできる7つのこと｜壮｜note\n文書執筆の指南書で解説されている問題点を textlint で発見する - Qiita\nたとえば、上記の記事では、文の長さを意識するために、1文の長さを50文字や100文字以下にすることを推奨していますが、\nこれは、1文1文が長すぎると、1文の中に色々なことが書かれてしまい、この文のように何を言いたのかわかりにくくなるためです。\nそのため、1文の長さを制限することで、それぞれの文の主張が明確になり、読みやすくなります。\ntextlintでは、次のルールで1文の長さを制限することができます。\ntextlint-rule-sentence-length\ntextlint-rule-first-sentence-length\n1文の長さだけではなく、1文内にある読点（、）の数も意識することで、読みやすさを向上させることができます。\n1文に、の数が多いと、その文の主張が複雑になりやすいため、読みにくくなります。\ntextlintでは、次のルールで1文の、や,の数を制限することができます。\ntextlint-rule-max-ten\ntextlint-rule-max-comma\nその他にも、1文を扱うルールは色々とあります。\ntextlint-ja/textlint-rule-no-doubled-joshi: 文中に同じ助詞が複数出てくるのをチェックするtextlintルール\ntextlint-ja/textlint-rule-no-doubled-conjunctive-particle-ga: textlint rule plugi…",
-          "link": "https://efcl.info/2023/02/23/textlint-sentence-rule/",
-          "publishedOn": "2023-02-23T13:34:00.000Z",
-          "wordCount": 847,
-          "title": "textlintでセンテンスを扱うルールの書き方",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
