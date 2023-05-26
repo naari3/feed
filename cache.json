@@ -3894,21 +3894,6 @@
             "length": "0"
           },
           "imageUrl": "https://m.media-amazon.com/images/I/319fL7lcpNL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889966652793",
-          "author": null,
-          "description": "私がアンドロイドを使っている大きな理由の一つは、\nOyamozc\nという、親指シフトがBluetoothで使えるためです。iOS系だと、かえうちのような物理変換キーを入れないと、親指シフトできないので。\nただ、同時打鍵について、自分が一番間違えない秒数を丁寧に設定しないと、ミスタッチが多くなって使いにくくなってしまいます。\n親指シフトの同時打鍵を\n・親指キーを押したあとで本来のキー\n・本来のキーを押したあとで親指キー\nの２種類の判定があるのですが、私は前者をデフォルトの200msより長めに、後者を短めにすると、ちょうどミスタッチが減りました。\nこれは人によって調整が違うと思うので、いろいろミスタッチが出たときに、試してみてください。\nとにかく、親指シフトがスマホでもできると本当に幸せです。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2023/02/26/161644",
-          "publishedOn": "2023-02-26T07:16:44.000Z",
-          "wordCount": null,
-          "title": "アンドロイドの親指シフトの同時打鍵の秒数を調整してみました。いい感じです。",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -10440,6 +10425,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2023-05-27-github-pages-deploy-direct",
+          "author": null,
+          "description": "このサイトのGitHub Pagesへのデプロイ方式を、GitHub Actionsを使って直接デプロイする方式に変更した。",
+          "link": "https://r7kamura.com/articles/2023-05-27-github-pages-deploy-direct",
+          "publishedOn": "2023-05-26T15:00:00.000Z",
+          "wordCount": 463,
+          "title": "GitHub Pagesへ直接デプロイする方式に変更",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2023-05-26-site-architecture-2023",
           "author": null,
