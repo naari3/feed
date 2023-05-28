@@ -9677,6 +9677,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/05/28/rss-to-twitter/",
+          "author": null,
+          "description": "RSSの新しい投稿をTwitterに投稿するGitHub Actionsを作りました。\nazu/rss-to-twitter: GitHub Actions: RSS to Twitter\nIFTTTでRSSをTwitterに投稿していたのですが、2023年に無料プランが終了するので代替手段を探していました。\n色々探したけど欲しいものがなかったので作りました。\nUpdates to IFTTT free tier - IFTTT\nRSSでTwitterに投稿してたのが、GitHub Pagesで管理してるブログだけだったのでGitHub ActionsでRSSをチェックしてTwitterに投稿するアクションを作りました。\n準備\nTwitter API Keyの取得\n投稿するアカウントでTwitter Appsを作り、API KeyやAccess Tokenを取得する必要があります。\n投稿したいアカウントでログインする\nTwitter Appをつくります - https://developer.twitter.com/en/portal/dashboard\nデフォルトのパーミッションがReadのみになってることがあるのでRead and Writeに変更します\nUser authentication settings という場所から設定できるので、パーミッションをRead and Writeに変更します\n\n\nAPI Key/API Key Secret と Access Token/Access Token Secretを取得します\nそれぞれAPI KeyといAccess Tokenをregenerateするなどでコピーしておきます\n\nTWITTER_APIKEY と TWITTER_APIKEY_SECRET\n\nTWITTER_ACCESS_TOKEN と TWITTER_…",
+          "link": "https://efcl.info/2023/05/28/rss-to-twitter/",
+          "publishedOn": "2023-05-28T01:49:00.000Z",
+          "wordCount": null,
+          "title": "GitHub ActionsでRSSをTwitterに投稿するアクションを作った",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/05/18/jsprimer-v2-yoyaku/",
           "author": null,
           "description": "https://jsprimer.net/ で公開している「JavaScript Primer(jsprimer)」の改訂2版の予約が開始されました。\njsprimer 改訂2版の発売日は2023年6月9日の予定です。\nKADOKAWA: 「JavaScript Primer 改訂2版 迷わないための入門書」azu [ＰＣ・理工科学書] - KADOKAWA\nAmazon: JavaScript Primer 改訂2版 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon\n楽天: 楽天ブックス: JavaScript Primer 改訂2版 迷わないための入門書 - azu - 9784048931106 : 本\nヨドバシ: ヨドバシ.com - JavaScript Primer 改訂2版 迷わないための入門書 [単行本] 通販【全品無料配達】\njsprimerの初版は2020年4月に出版されたので、3年ぶりの改訂となります。\nJavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch\njsprimerはhttps://jsprimer.net/のウェブ上でも公開していて、ウェブ版は常に更新されているLiving Bookとして公開しています。\n一方で、書籍版はその時点のウェブ版をベースにしたスナップショットになっていて、出版に合わせて校正、書籍に向けたレイアウト変更、索引の追加などを行なっています。\n簡単にまとめると、ウェブ版は常に最新ですが読んでる途中でも内容が更新される可能性はあります。一方で、書籍はその時点のスナップショットとして色々チェックやレイアウト改善をして安定させたバージョンになります。まとめて読むなら書籍版の方がおすすめです！\n詳しく…",
