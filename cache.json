@@ -5566,21 +5566,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tmidorikawa/20230330/20230330111048.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889967248624",
-          "author": null,
-          "description": "こんにちは。クックパッド事業部でiOSアプリの開発をしている新堀(@tk108gabalian)です。\n導入の背景\n2022年7月にリリースした「のせる」画面には以下の要件がありました。\n画面上部にユーザー情報を表示する。\nユーザー情報の下にタブを表示する。\nタブをタップするか、タブより下を横にスワイプすることでタブの切り替えが可能。\n画面全体をスクロールできるが、ユーザー情報が隠れるまでスクロールしたら画面上部にタブが固着し、以降はタブより下の部分のみスクロールする。（逆方向にスクロールする場合は再度ユーザー情報が表出する。）\n\nまた、事業的な希望ではありませんが、開発メンバー達の中ではSwiftUIで画面を実装したいという気持ちがありました。\nというのも、この「のせる」以前の画面は基本的にUIKitで作られており、SwiftUIと比べてUIの変更に時間がかかることが課題としてあったからです。\nUIKitでこのStickyHeader実現することは可能だと分かっていました。\nTabViewなしのStickyHeaderの実現方法\n横スクロールによるタブの切り替えを実現するため、SwiftUIのTabViewを使うことを検討していました。\nしかし、検証を進めると、TabViewを使いつつStickyHeaderを実現する難しさが分かってきました。\nまずはTabViewを使わない場合のStickyHeaderの実現方法を見てみます。\npinnedViewsに.sectionHeadersを指定した上で、LazyVStackの中のSectionにheaderとなるViewを指定するだけです。\nstruct ContentView: View {\n    var body: some View {\n        ScrollView {\n            LazyVSta…",
-          "link": "https://techlife.cookpad.com/entry/2023/02/28/163645",
-          "publishedOn": "2023-02-28T07:36:45.000Z",
-          "wordCount": null,
-          "title": "SwiftUIでStickyなタブを実現する",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/toya108_climbing/20230228/20230228144117.gif",
-            "type": "image/gif",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/toya108_climbing/20230228/20230228144117.gif"
         }
       ]
     },
@@ -10350,6 +10335,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2023-05-29-pc-case",
+          "author": null,
+          "description": "自宅で使っているメインPCのケースとファンを換装した。",
+          "link": "https://r7kamura.com/articles/2023-05-29-pc-case",
+          "publishedOn": "2023-05-28T15:00:00.000Z",
+          "wordCount": null,
+          "title": "PCケースとファンを換装",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2023-05-27-github-pages-deploy-direct",
           "author": null,
