@@ -5313,6 +5313,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482937160246",
+          "author": null,
+          "description": "id:sora_h です。最近は RubyKaigi の Organizer や Wi-Fi NOC をやっていましたが… 何屋なんだろう? 一応 Software Engineer (Site Reliability, Corporate Engineering) を名乗っていますが…。あっ RubyKaigi から戻ってからは学者をやってますね。落ち着いたら本業を思い出していこうと思います。\nさて、Cookpad は 2010 年より RubyKaigi に協賛していますが、近年は Wi-Fi Sponsor など*1として携わっています。実体的には、 id:sora_h (筆者) が RubyKaigi 前にほぼフルタイムで Wi-Fi の準備に提供されたり、細々とした機材、一部の回線・ラックスペースの提供を行っています *2。\n本稿では RubyKaigi 2023 Wi-Fi ネットワークの L1～L4 設計について解説します *3。Wi-Fi についてというより、Wi-Fi AP より先の足回り、会場のルータからインターネットまでの区間についてがメイントピックです。\n実績\n概要\nAWS VPC 上に構築される機能\nエクスターナル\n対外回線\n中継拠点 (Point of Presence)\nインターネット接続\nおまけ: NTT西日本エリアでの開催の場合\nL3-L4 設計\n構造\n会場→エクスターナル向き通信 (outbound)\nエクスターナル→会場向き通信 (inbound)\nパケットフィルタ\nNAPT\nL1-L2 設計\nWi-Fi 区間\nその他の取り組み\n802.1X (WPA2/3 Enterprise)\nPublic dashboard と timelapse\nDNS over HTTPS\nAcknowledgements\nまとめ\nあわせて読みたい\n実績\n会…",
+          "link": "https://techlife.cookpad.com/entry/2023/05/31/113000",
+          "publishedOn": "2023-05-31T02:30:00.000Z",
+          "wordCount": 2657,
+          "title": "RubyKaigi 2023 Wi-Fi: 足回り徹底解説",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/sora_h/20230531/20230531000605.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/sora_h/20230531/20230531000605.jpg"
+        },
+        {
           "id": "hatenablog://entry/820878482933525039",
           "author": null,
           "description": "エンジニアの成田（@mirakui）です。最近はクックパッドマートの流通基盤エンジニアとして、商品の流通に関わるソフトウェアやハードウェアに携わっています。\nさて、クックパッドは先日長野県の松本で開催された RubyKaigi 2023 にスポンサーとして参加しました。そのスポンサーシップの一環として、参加者に配られるドリンクを冷やすための冷蔵庫を提供しました。\n会場に設置した6台の冷蔵庫は、私たちが「マートステーション」と呼ぶ、クックパッドマートにおいてユーザーが購入した商品を受け取るための冷蔵庫です。現在は都内を中心に、駅やコンビニエンスストア、マンションの共用部といった生活動線に設置しています。マートステーションの技術的な詳細は下記の記事をご覧下さい。\ntechlife.cookpad.com\n今回設置したのは、上記の記事中で \"JCM-Mk4\" と呼んでいる、現行型である第4世代の冷蔵庫です。それまでのモデル第3世代とはベースとなる冷蔵庫は同じですが、断熱性能を高めて結露対策を行ったり、Raspberry Pi を使うのを止めて、より安定性の高い産業用の機材に変更したりといった改良が加わっています。\n冷蔵庫監視ダッシュボード\n会場のクックパッドブースでは、6台の冷蔵庫をリアルタイムに監視する Grafana ダッシュボードを展示していました。\n会場で展示した冷蔵庫のダッシュボード\nダッシュボードには、会場に設置したそれぞれの冷蔵庫において、主に以下のような値を表示していました。\n冷蔵庫の庫内温度\n解錠状態\nドアの開け閉めの状態\n各冷蔵庫には産業用IoTゲートウェイであるFutureNet MA-S110 が取り付けられています。これは簡単に言うと小型 Linux PC であり、SIM カードやアンテナを取り付けることで、LTE 回線を通じてインターネットに繋がること…",
@@ -9663,6 +9678,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=19756",
+          "author": "田口 景介",
+          "description": "もう２年前のエントリになりますが、IIJがKubernetesの活用を始めたきっかけを紹介したのがこの記事でした。 ようこそ、Kubernetes沼へ。商用サービスSREの現場から このとき、「不安を...",
+          "link": "https://eng-blog.iij.ad.jp/archives/19756",
+          "publishedOn": "2023-05-31T02:33:52.000Z",
+          "wordCount": 1814,
+          "title": "Kubernetesを止めてもワークロードは止まらない？",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2023/05/a11b4bb3ba448d1fa402ac3dc62cc91f-2.png"
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=19327",
           "author": "電鍵一級",

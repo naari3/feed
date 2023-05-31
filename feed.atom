@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-31T02:28:23.035Z</updated>
+    <updated>2023-05-31T03:06:16.371Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,53 @@
         <summary type="html"><![CDATA[こんにちは。メルペイ Engineering Engagement チームの mikichin です。 メルペイは単なる決済サービスではなく、新しい「信用」を基盤として、それに基づく循環型社会、なめらかな社会を創ることを […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetesを止めてもワークロードは止まらない？]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=19756</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/19756"/>
+        <updated>2023-05-31T02:33:52.000Z</updated>
+        <summary type="html"><![CDATA[もう２年前のエントリになりますが、IIJがKubernetesの活用を始めたきっかけを紹介したのがこの記事でした。 ようこそ、Kubernetes沼へ。商用サービスSREの現場から このとき、「不安を...]]></summary>
+        <author>
+            <name>田口 景介</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RubyKaigi 2023 Wi-Fi: 足回り徹底解説]]></title>
+        <id>hatenablog://entry/820878482937160246</id>
+        <link href="https://techlife.cookpad.com/entry/2023/05/31/113000"/>
+        <updated>2023-05-31T02:30:00.000Z</updated>
+        <summary type="html"><![CDATA[id:sora_h です。最近は RubyKaigi の Organizer や Wi-Fi NOC をやっていましたが… 何屋なんだろう? 一応 Software Engineer (Site Reliability, Corporate Engineering) を名乗っていますが…。あっ RubyKaigi から戻ってからは学者をやってますね。落ち着いたら本業を思い出していこうと思います。
+さて、Cookpad は 2010 年より RubyKaigi に協賛していますが、近年は Wi-Fi Sponsor など*1として携わっています。実体的には、 id:sora_h (筆者) が RubyKaigi 前にほぼフルタイムで Wi-Fi の準備に提供されたり、細々とした機材、一部の回線・ラックスペースの提供を行っています *2。
+本稿では RubyKaigi 2023 Wi-Fi ネットワークの L1～L4 設計について解説します *3。Wi-Fi についてというより、Wi-Fi AP より先の足回り、会場のルータからインターネットまでの区間についてがメイントピックです。
+実績
+概要
+AWS VPC 上に構築される機能
+エクスターナル
+対外回線
+中継拠点 (Point of Presence)
+インターネット接続
+おまけ: NTT西日本エリアでの開催の場合
+L3-L4 設計
+構造
+会場→エクスターナル向き通信 (outbound)
+エクスターナル→会場向き通信 (inbound)
+パケットフィルタ
+NAPT
+L1-L2 設計
+Wi-Fi 区間
+その他の取り組み
+802.1X (WPA2/3 Enterprise)
+Public dashboard と timelapse
+DNS over HTTPS
+Acknowledgements
+まとめ
+あわせて読みたい
+実績
+会…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
