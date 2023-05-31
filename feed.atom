@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-05-31T15:02:21.919Z</updated>
+    <updated>2023-05-31T16:02:02.704Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AbortSignal.any(), AbortSignal.timeout(), そして addEvnetListener の Signal]]></title>
+        <id>https://blog.jxck.io/entries/2023-06-01/abort-signal-any.html</id>
+        <link href="https://blog.jxck.io/entries/2023-06-01/abort-signal-any.html"/>
+        <updated>2023-06-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[最近 AbortSignal.any() が提案され、急速に実装が進んでいる。すでに定義されている AbortSignal.timeout() や addEventListener への Signal なども含め、非同期処理の中断を実装する際の API はかなり整備されてきた。これら API のモチベーションと設計を中心にまとめる。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日記6/1]]></title>
+        <id>https://note.com/hercelot/n/n5f6839918cc9</id>
+        <link href="https://note.com/hercelot/n/n5f6839918cc9"/>
+        <updated>2023-05-31T15:45:46.000Z</updated>
+        <summary type="html"><![CDATA[今作ってるEP絶対に5月中に出す←これをlikeして逃げ場ないようにしてください
+— Hercelot (@Hercelot) May 2, 2023
+
+むりかもぉ
+— Hercelot (@Hercelot) May 11, 2023
+
+続きをみる]]></summary>
+        <author>
+            <name>Hercelot</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[文が書きたい]]></title>
         <id>https://note.com/ecolidelvsvc11/n/nc5b8f0800389</id>
