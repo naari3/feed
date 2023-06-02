@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-02T10:01:54.283Z</updated>
+    <updated>2023-06-02T11:02:03.041Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[サウンド1～4を演奏する自作ゲームはvgmで決まり]]></title>
+        <id>hatenablog://entry/820878482938012284</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/06/02/193300"/>
+        <updated>2023-06-02T10:33:00.000Z</updated>
+        <summary type="html"><![CDATA[ようやく探し求めていたものが見つかったというか、vgmフォーマットを見たときはびっくりしました。内容はサウンドレジスタへのログファイルなのですけど、実装がどれほど簡単か狂喜乱舞しちゃいます。これでGBサウンドをGBAへラクに実装できます。
+github.com
+vgmrips.net
+コマンドはたったの３つ。
+レジスタに書き込むコマンド：0xB3＋レジスタアドレス1バイト＋書き込む内容1バイト
+しかもネットをさまようとvgm形式の市販ゲームのrippingがけっこうありますし、これはヤバい。自作ゲームはhUGETrackerでVGM出力して、それを本体で演奏するだけというのが王道になりそうです。早くツールとドライバ作ろうっと。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[体温計をバラしただけなのにテレビに出ました]]></title>
         <id>hatenablog://entry/820878482937876134</id>
