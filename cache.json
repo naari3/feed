@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482938494563",
+          "author": null,
+          "description": "github.com\n作業もひと段落したので投下します。心残りといえばtempoが完璧でなくて体感で数値を合わせたことです。計算したのになんでか合わないんですよねー。諦めましたどなたか直せる方いたらお願いします。。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/06/03/232007",
+          "publishedOn": "2023-06-03T14:20:07.000Z",
+          "wordCount": 381,
+          "title": "vgmキタコレ",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482938012284",
           "author": null,
           "description": "ようやく探し求めていたものが見つかったというか、vgmフォーマットを見たときはびっくりしました。内容はサウンドレジスタへのログファイルなのですけど、実装がどれほど簡単か狂喜乱舞しちゃいます。これでGBサウンドをGBAへラクに実装できます。\ngithub.com\nvgmrips.net\nコマンドはたったの３つ。\nレジスタに書き込むコマンド：0xB3＋レジスタアドレス1バイト＋書き込む内容1バイト\nしかもネットをさまようとvgm形式の市販ゲームのrippingがけっこうありますし、これはヤバい。自作ゲームはhUGETrackerでVGM出力して、それを本体で演奏するだけというのが王道になりそうです。早くツールとドライバ作ろうっと。",
@@ -1430,21 +1445,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230306/20230306145053.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889968938991",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。2月26日（日）から3月4日（土）〔2023年3月第1週〕のトップ30です*1。\n1\n    ソフトウェアエンジニアとしての能力を高める方法について考えてみた - joker1007’s diary\n by id:joker1007 \n    \n2\n    はてブの民度をあげる方法を考えよう - ヨッピーのブログ\n by id:yoppymodel \n    \n3\n    若者「パタゴニアってダサいですよ・・」ワイ「は？」 - カモシカロングトレイル\n by id:ultratrail \n    \n4\n    Twitter で医師が拾われて Google のソフトウェアエンジニアになって 3 年半が過ぎました - nodchipの日記\n by id:nodchip \n    \n5\n    最近のDHH「サーバーレスをやめろ」 - laiso\n by id:laiso \n    \n6\n    【マジで革命的な作り方!】簡単すぎてもう普通の作り方に戻れない..！『ブロッコリーと卵のデリサラダ』の作り方 - てぬキッチン\n by id:tenukitchen \n    \n7\n    オタクのせいで公式の企画が1つ潰れた『かもしれない』話 - ひさろぐ分館\n by id:hisame2501 \n    \n8\n    おまえは便所の落書きのつもりでブコメを書いているのかも知れないが、その便所の落書きには受け取り人がいるんだよネットでは - 自意識高い系男子\n by id:Ta-nishi \n    \n9\n    哲学の問題に数学で挑むってどういうかんじ？ - I'm Ko !\n by id:KoHarada \n    \n10\n    国内で発生したSIMスワップによる不正送金事案についてまとめてみた - piyolog\n by id…",
-          "link": "https://blog.hatenablog.com/entry/2023/03/06/120000",
-          "publishedOn": "2023-03-06T03:00:00.000Z",
-          "wordCount": null,
-          "title": "今週のはてなブログランキング〔2023年3月第1週〕",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230306/20230306092107.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230306/20230306092107.jpg"
         }
       ]
     },
@@ -8912,6 +8912,16 @@
       "feedUrl": "https://note.com/ssaymds/rss",
       "siteUrl": "https://note.com/ssaymds",
       "articles": [
+        {
+          "id": "https://note.com/ssaymds/n/nbd50c4894977",
+          "author": null,
+          "description": "巨大挨拶で申し訳ありません、こんにちはておつくと申します\n\n\n続きをみる",
+          "link": "https://note.com/ssaymds/n/nbd50c4894977",
+          "publishedOn": "2023-06-03T14:03:32.000Z",
+          "wordCount": null,
+          "title": "尿々糞々(にょにょぷんぷん)",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/106518132/rectangle_large_type_2_fe6311a7f1ad90f90a3d45b5f0fe47b5.png?width=800"
+        },
         {
           "id": "https://note.com/ssaymds/n/n7307bbb14c8b",
           "author": null,
