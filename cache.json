@@ -2159,6 +2159,21 @@
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482939192006",
+          "author": null,
+          "description": "Qrioハック用のリポジトリを作りました\n \ngithub.com\n \nもう我慢できない今からやるぜっていう人はここにある情報だけでどうにかできますが、\nちょっとつないでポチポチしたらできるぐらい、の人はもうちょっと待っててね。",
+          "link": "https://honeylab.hatenablog.jp/entry/2023/06/06/124933",
+          "publishedOn": "2023-06-06T03:49:33.000Z",
+          "wordCount": 486,
+          "title": "Qrio Hack情報",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482938892433",
           "author": null,
           "description": "honeylab.hatenablog.jp\n前の記事を読まれてない方は↑からどうぞ\n \nさて、第一世代のハックはほぼほぼ完了し、あとはどういう風に生かしていくか、というところまで到達しました。\n現在、第二世代のQrio Lock(Q-SL2)が販売中ですので、こいつも実は気になります。\n第一世代が開発環境の関係でサポート切れてるので、第二世代は明らかに更新されているはずです。\n早速メルカリでポチって見ました。故障品を。\n \n\n届いたので、開けてみます。\n2nd season pic.twitter.com/ZPm7MJQERv\nJune 5, 2023\n\n\n \nおおおおお、すごい、きれい\nいや、マイコン乗ってない。中のソフトカスタムしてるな。SDK一般人無理かな？\n1よりだいぶ洗練されてる。 pic.twitter.com/sC5LnzYKQg\nJune 5, 2023\n\n\n \n全体的に洗練されています。さすが第２世代。\n引き続き、別途マイコンではなく、RF内蔵のSIPを使っているようです。\n今回使われているのは、ホシデンというメーカーのBLEモジュールです。\n技適で検索すると、なぜかDualSock用のPC用USBドングルが出てくるのでSonyと仲良しさんなんでしょうか。\nhttps://manuals.playstation.net/document/pdf/CUH-ZWA1J-1.pdf\n型番から引くと、シリアル通信対応、MCU外付けでの開発用BLEモジュールが出てきますが、この製品にはほかにマイコンが載っていないため、内蔵のnRFモジュールに対してのソフトウェアを書き込んで使用しているんだと思います。\nということは、やはりnRF用の開発環境を準備し、周辺部品を制御すれば同様にハックできると思います。\n10ピンフレキにnRFプログラミング用のピンが出てるだけっぽいな。最終的に、そのプログラミングができればなんでも書けるんやろな。 pic.twitter.com/rvX66fWOri\nJune 5, 2023\n\n\n \nが、当面販売が続いていますし、値段も全然高いですのでハックするにはまだまだ早いです。何年後か、サービスが止まるころにまたお会いしましょうね。おやすみ。",
