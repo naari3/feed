@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-07T05:02:00.372Z</updated>
+    <updated>2023-06-07T06:02:13.890Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,29 @@
         <summary type="html"><![CDATA[この記事は、Merpay Tech Openness Month 2023 の2日目の記事です。 メルペイFrontendエンジニアの@togami2864です。普段はPartner Platformというチームで加盟店 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[バグが取れない問題]]></title>
+        <id>hatenablog://entry/820878482939498048</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/06/07/145455"/>
+        <updated>2023-06-07T05:54:55.000Z</updated>
+        <summary type="html"><![CDATA[うーん完全にお手上げ状態。テンポが高速になっていて計算式がおかしい、ということはわかります。
+	// GBA timer0,1(cascade) = (GBA clock / samples rate) * samples
+	uint32_t time = 0x100000000 - (16800000 / 44100) * ((d3 << 8) | d2);
+
+	fputc(0x61, fp);
+	fputc((uint8_t)(time >>  0), fp);
+	fputc((uint8_t)(time >>  8), fp);
+	fputc((uint8_t)(time >> 16), fp);
+	fputc((uint8_t)(time >> 24), fp);
+	fputcCnt += 5;
+
+	continue;
+GBA側への受け渡しも問題ないし。というか決め打ちするとテンポ変わるのは確認済。
+github.com]]></summary>
+        <author>
+            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
@@ -831,6 +854,15 @@ May 16, 2023
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RailsアプリのCIの細かい高速化]]></title>
+        <id>https://r7kamura.com/articles/2023-06-03-diary</id>
+        <link href="https://r7kamura.com/articles/2023-06-03-diary"/>
+        <updated>2023-06-02T15:00:00.000Z</updated>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
