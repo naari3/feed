@@ -9555,16 +9555,6 @@
           "wordCount": null,
           "title": "TypeScriptの型情報を使ったサポート対象のブラウザが実装してないメソッドの利用をエラーにするESLintルール",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/03/11/auto-release-note/",
-          "author": null,
-          "description": "GitHub のAutomatically generated release notesを使ってリリースノートの内容を PR に基づいて自動生成するフローを作りました。\n今までは、コミットメッセージのルールであるConventional Commitsとconventional-github-releaserを使って、コミットからリリースノートを自動生成していました。\n他の人の PR でも、squah merge でコミットメッセージを書き換えることで、リリースノートに反映されるようにしていました。\nただ GitHub に仕組みは違うけどほぼ似たことをするAutomatically generated release notesという機能が実装されているので、これをベースに移行しようと思って、そのワークフローを作っていました。\nリリースノート自動生成テクニック - mizdra’s blog\nリリースノート管理術\nGitHub Actions でいい感じのリリースノートを完全自動で作成する\n目的\n目的としては、次を目標にしていました。\nConvential commit でやっているものをAutomatically generated release notesベースに移行する\n自分は大量のリポジトリを持っているので、段階的に移行できるようにしました。\nConvential commitとAutomatically generated release notesは同時に使っても競合はしないので、実際にはConventional Commitsでコミットしながら、リリースするときに Convential commit かAutomatically generated release notesどちらを使うかを選択できるようにしています。\n(たまに、PR を経由せずにコミット…",
-          "link": "https://efcl.info/2023/03/11/auto-release-note/",
-          "publishedOn": "2023-03-11T05:05:00.000Z",
-          "wordCount": null,
-          "title": "GitHubのリリースノートを自動化する仕組み",
-          "imageUrl": null
         }
       ]
     },
