@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482940153654",
+          "author": null,
+          "description": "いつもよく目にする動画を取り上げていないので貼っときます。\nゲームボーイの仕様書説明しています。\nwww.youtube.com\n発表プラットフォームが完成していてすごい！\nitch.io\nitch.io\n\n一方のGBAはGBA JAMが有名かもしれません。\nitch.io",
+          "link": "https://akkera102.hatenablog.com/entry/2023/06/09/191744",
+          "publishedOn": "2023-06-09T10:17:44.000Z",
+          "wordCount": 387,
+          "title": "GBの仕様動画とかいろいろ",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482939857386",
           "author": null,
           "description": "終わったヤッター。原因はタイマー2,3のカスケード処理でした。たとえば初期値を\ntimer2:0xfff0\ntimer3:0xfff0\nで考えてカスケードした時、timer2がカウントアップしていきます。あふれる直後、\ntimer2:0xffff\ntimer3:0xfff0\nとこうなって、次は\ntimer2:0xfff0\ntimer3:0xfff1\nとなってtimer2は初期値に戻ります。私の想定ではtimer2は0x0000になるでしょ、ってずっと考えていました。たったこれだけのことに６日間と計１０時間以上は投入していたのですから恥ずかしい。もう頭かたすぎでしょ！",
