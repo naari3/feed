@@ -9497,6 +9497,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/06/09/jsprimer-v2/",
+          "author": null,
+          "description": "JavaScriptの入門書であるJavaScript Primer 改訂2版 迷わないための入門書がリリースされました。\n\n書店やオンライン書店で購入できます。\nKADOKAWA: 「JavaScript Primer 改訂2版 迷わないための入門書」azu [ＰＣ・理工科学書] - KADOKAWA\nAmazon: JavaScript Primer 改訂2版 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon\n楽天: 楽天ブックス: JavaScript Primer 改訂2版 迷わないための入門書 - azu - 9784048931106 : 本\nヨドバシ: ヨドバシ.com - JavaScript Primer 改訂2版 迷わないための入門書 [単行本] 通販【全品無料配達】\n📝 紙の書籍を大量にまとめて購入したい場合は、Contactに連絡ください。\nまた、電子版(PDFとepub)のリリースも予定しています。\nこのブログや次のフォームから登録したメールアドレスに、電子版のリリース情報をお知らせします。\nJavaScript Primerの更新情報を購読\n* indicates required\nEmail Address  *\n\n\t\n\t\n\n\t\n\n\t\t\n\n\t\n    \n    \n\n\n(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);\n\nフォームが表示されない人は https://github.us13.list-manage.com/subscribe/po…",
+          "link": "https://efcl.info/2023/06/09/jsprimer-v2/",
+          "publishedOn": "2023-06-08T15:00:00.000Z",
+          "wordCount": null,
+          "title": "JavaScript Primer 改訂2版をリリースしました！/JavaScript Primerはなぜ更新され続けるのか？",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/05/28/rss-to-twitter/",
           "author": null,
           "description": "RSSの新しい投稿をTwitterに投稿するGitHub Actionsを作りました。\nazu/rss-to-twitter: GitHub Actions: RSS to Twitter\nIFTTTでRSSをTwitterに投稿していたのですが、2023年に無料プランが終了するので代替手段を探していました。\n色々探したけど欲しいものがなかったので作りました。\nUpdates to IFTTT free tier - IFTTT\nRSSでTwitterに投稿してたのが、GitHub Pagesで管理してるブログだけだったのでGitHub ActionsでRSSをチェックしてTwitterに投稿するアクションを作りました。\n準備\nTwitter API Keyの取得\n投稿するアカウントでTwitter Appsを作り、API KeyやAccess Tokenを取得する必要があります。\n投稿したいアカウントでログインする\nTwitter Appをつくります - https://developer.twitter.com/en/portal/dashboard\nデフォルトのパーミッションがReadのみになってることがあるのでRead and Writeに変更します\nUser authentication settings という場所から設定できるので、パーミッションをRead and Writeに変更します\n\n\nAPI Key/API Key Secret と Access Token/Access Token Secretを取得します\nそれぞれAPI KeyといAccess Tokenをregenerateするなどでコピーしておきます\n\nTWITTER_APIKEY と TWITTER_APIKEY_SECRET\n\nTWITTER_ACCESS_TOKEN と TWITTER_…",
@@ -10040,6 +10050,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml/",
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
+        {
+          "id": "26497",
+          "author": null,
+          "description": "この記事は、Merpay Tech Openness Month 2023 の4日目の記事です。 こんにちは。メルコインのバックエンドエンジニアの@goroです。 はじめに このGitHub Actionsのセキュリティ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20230608-a03e11f008/",
+          "publishedOn": "2023-06-09T10:00:16.000Z",
+          "wordCount": null,
+          "title": "社内用GitHub Actionsのセキュリティガイドラインを公開します",
+          "imageUrl": null
+        },
         {
           "id": "26489",
           "author": null,
