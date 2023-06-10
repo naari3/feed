@@ -2,10 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-10T10:02:00.912Z</updated>
+    <updated>2023-06-10T11:02:31.268Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[めも]]></title>
+        <id>hatenablog://entry/820878482940423959</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/06/10/190625"/>
+        <updated>2023-06-10T10:06:25.000Z</updated>
+        <summary type="html"><![CDATA[PS2版『ToHeart2』をP/ECE用にコンバートして実行『好き好きタマお姉ちゃん』 
+github.com
+ラブエスカレーターのx window移植、ソースコードが同人で販売されていたのか～。ほしいけどもう不可能ですよね。
+web.archive.org
+DNML。懐かしい・・・。
+ja.wikipedia.org]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[23/6/10 『入門 統計的因果推論（Judea Pearl）』メモ]]></title>
+        <id>hatenablog://entry/820878482939177588</id>
+        <link href="https://saize-lw.hatenablog.com/entry/2023/06/10/190513"/>
+        <updated>2023-06-10T10:05:13.000Z</updated>
+        <summary type="html"><![CDATA[読んだ本
+1. 序論：統計モデルと因果モデル
+因果グラフのノードは変数である
+因果グラフが成立している場合の条件付き確率を比較
+モンティホール問題を因果モデルで解釈する
+2. グラフィカルモデルとその応用
+因果グラフ上で従属関係を可視化する
+因果グラフを構築する際の恣意性
+3. 介入効果
+4. 反事実とその応用
+全体の感想
+構造方程式と回帰式の違いをもっと早く書け
+まあ良著でした
+ちょうど一ヶ月前くらいに，昨年から延期に延期を重ねていたデータサイエンスエキスパート試験が遂に配信開始となった．
+www.toukei-kentei.jp
+とりあえず受けるのは確定として，いい機会なので今までなあなあに誤魔化してきた因果推論と時系列解析をちゃんとやることにした．まず因果推論の方から本を読むことにして，誰かに解説する体でやるのが一番理解が深まるので読みながら取ったメモを軽く清書して投稿している．
+内容の解説ではなく読みながら思ったことのメモなので，ちゃんと因果推論を知りたい人は普通に本を読んでほしい．俺の推測も多いので誤りを含んでいるかもしれない．また門外漢にわかるようには書いていないので，統計に関心がないブログ読者にとっては残念ながらこの記事は読む価値のない外れ回である．
+読んだ本
+
+入門 統計的因果推論
+
+作者:Judea Pearl,Madelyn Glymour,Nicholas P. Jewell
+朝倉書店
+Amazon
+
+『入門 統計的因果推論』．いくつかある因果推論の流派のうち，家元の一人であるPearl自身の著．入門の名を冠している通り，数学書にしては割とラフに書かれていて読みやすく，厳密な条件や証明が削られている分だけ直観や解釈に紙面が割かれている優しい書．ただ読みやすさと正確さは表裏ではあって，定義が曖昧だったり未定義のタームを使ったりしていて混乱することも多い（…]]></summary>
+        <author>
+            <name>LWのサイゼリヤ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[著作の英訳版を出すための取り組みを始めた]]></title>
         <id>hatenablog://entry/820878482940369402</id>
