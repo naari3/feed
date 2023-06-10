@@ -2,10 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-10T16:02:41.123Z</updated>
+    <updated>2023-06-10T17:01:42.012Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[アイリスオーヤマの検温カメラをばらしてみた話]]></title>
+        <id>hatenablog://entry/820878482940532515</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2023/06/11/012308"/>
+        <updated>2023-06-10T16:23:08.000Z</updated>
+        <summary type="html"><![CDATA[honeylab.hatenablog.jp
+長くなってしまったのでエントリ分け
+ 
+続いて、国内大手メーカーのアイリスオーヤマのやつ。
+実はこれ、中身はHikVisionのもので、型番シールとかもそのままの上に、
+アイリスオーヤマのシールを貼ったりしてるやつで、
+箱の型番もそのままなんですよね。
+ 
+これはまず、最近デッドストックが出回りすぎてて
+本当の中古か在庫なのかわからない状況です。
+私が買ったやつは見事に使用前のデッドストックでしたので特に面白いことはありませんでした。ざんねん。
+ 
+HikVisionは使用前に必ずパスワードを決めないと先に進めないので、
+東亜産業のやつみたいなガバガバよりは割とちゃんとしてると思います。
+あと、しっかりGUIがあるのにこれはAndroidとかじゃなくてHikVision自前のディストリで、シェルもbusyboxでなかったりなどちょっと硬いんです。
+一応、ファームウェアをばらしたり再構築したりすることはできるみたいなんですが、
+ちょっとそこまで余裕がありませんのでしばらく寝かせておきます。
+ 
+開封からの流れはこちらに
+次のやつ　アイリスオーヤマの安い方？
+箱には顔認識機としか書いてないしなw pic.twitter.com/rHBa6i0qsq
+May 25, 2023
+
+
+あと、分解してたらなぜかサーマルカメラと思われる部品を認識しなくなってしまったように見える…なんでだ…
+ 
+次！（まだあんの…？）]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[それだけでよかったのに]]></title>
         <id>hatenablog://entry/820878482940525068</id>
