@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-12T01:29:30.150Z</updated>
+    <updated>2023-06-12T02:28:28.177Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[協調フィルタリングとベクトル検索エンジンを利用した商品推薦精度改善の試み]]></title>
+        <id>26569</id>
+        <link href="https://engineering.mercari.com/blog/entry/20230612-cf-similar-item/"/>
+        <updated>2023-06-12T11:00:10.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、メルカリのレコメンドチームで ML Engineer をしている ML_Bear です。 以前の記事 [1] では、item2vecと商品メタデータを用いた、メルカリのホーム画面のレコメンド改善のお話をさせて […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[新人編集長の技術書典14参戦記]]></title>
         <id>26533</id>
@@ -14,6 +24,16 @@
         <summary type="html"><![CDATA[この記事は、Merpay Tech Openness Month 2023 の5日目の記事です。 はじめに メルカリ技術書典部の knsh14 です。 6月4日まで行われていた技術書典14に参加しました。 技術書典14は […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[サーバ不要（無料）なホームページの作り方 ~ cats_dogs 編 ~]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=20023</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/20023"/>
+        <updated>2023-06-12T02:11:41.000Z</updated>
+        <summary type="html"><![CDATA[おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 まず、「GitHub から Markdown だけ切除してみた」を公開し、様々な反応を頂きました。ありがとうございました。 今回は...]]></summary>
+        <author>
+            <name>ふぇにっくちゅん（守田 瞬）</name>
         </author>
     </entry>
     <entry>
@@ -14966,18 +14986,6 @@ Amazonポイントはセールでも実質有効期限なし？期間限定ポ�
         <updated>2023-03-15T00:13:03.000Z</updated>
         <summary type="html"><![CDATA[きのう、下北沢の古着屋を22店回ってきた。僕は服というものにとんと興味がなく、古着屋が多い地域に住んでいながら一度も利用したことがなかったのだけれど、タロット占いの解釈によって服を買いに行くことになったのだ(え？)。
 僕が浅瀬をちゃぷちゃぷした限りでは、下北沢駅前にあるようなメンズの古着屋って似たような服しかない。薄ぼんやりしたチェックやストライプのシャツとか、くたびれたアメカジ風の服、あとは凡庸なグラフィックシャツ、デニム、たぶん健常者の世界ではオワコンのセットアップ。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[12.できることについて]]></title>
-        <id>https://note.com/sizes/n/n2d4a9184d42a</id>
-        <link href="https://note.com/sizes/n/n2d4a9184d42a"/>
-        <updated>2023-03-14T13:42:53.000Z</updated>
-        <summary type="html"><![CDATA[・「今出来ることの寄せ集め」を「計画」と言う。最近まざまざとこのことを実感していて、無理をしなくなった。でも、今出来ることを正確に推し量るのが難しい。
-・カービィを描くのが好きな子供をバカにする人に、怒っています。なぜならば僕もカービィを描くのが好きだったし、「丸」や「可愛いもの」を描くことって、プリミティブな表現のひとつですから。みんな起点は簡単ものを満足に描くことから始まるんです。絵描きにも色々タイプはあるけれど、簡単なモチーフに執着する子供って将来的に絵が上手くなりやすいと思う。書き続けることができますから。
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>

@@ -8876,16 +8876,6 @@
           "wordCount": null,
           "title": "コンテンツの底に潜むドロドロしたあの領域",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/100305178/rectangle_large_type_2_cea0d69c79ddf04ade30edbebdc6f624.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n2d4a9184d42a",
-          "author": null,
-          "description": "・「今出来ることの寄せ集め」を「計画」と言う。最近まざまざとこのことを実感していて、無理をしなくなった。でも、今出来ることを正確に推し量るのが難しい。\n・カービィを描くのが好きな子供をバカにする人に、怒っています。なぜならば僕もカービィを描くのが好きだったし、「丸」や「可愛いもの」を描くことって、プリミティブな表現のひとつですから。みんな起点は簡単ものを満足に描くことから始まるんです。絵描きにも色々タイプはあるけれど、簡単なモチーフに執着する子供って将来的に絵が上手くなりやすいと思う。書き続けることができますから。\n続きをみる",
-          "link": "https://note.com/sizes/n/n2d4a9184d42a",
-          "publishedOn": "2023-03-14T13:42:53.000Z",
-          "wordCount": null,
-          "title": "12.できることについて",
-          "imageUrl": null
         }
       ]
     },
@@ -9633,6 +9623,16 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=20023",
+          "author": "ふぇにっくちゅん（守田 瞬）",
+          "description": "おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 まず、「GitHub から Markdown だけ切除してみた」を公開し、様々な反応を頂きました。ありがとうございました。 今回は...",
+          "link": "https://eng-blog.iij.ad.jp/archives/20023",
+          "publishedOn": "2023-06-12T02:11:41.000Z",
+          "wordCount": null,
+          "title": "サーバ不要（無料）なホームページの作り方 ~ cats_dogs 編 ~",
+          "imageUrl": null
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=19975",
           "author": "加藤 佳則",
           "description": "電気に触れて育つ 小さい頃から電気に興味を持つ子供でした。乾電池に豆電球を繋いだりモーターを繋いだり。電気って形もなく目にも見えないのに、光に化けたり熱に化けたり動きに化けたり、不思議ですよね。コンセ...",
@@ -10099,6 +10099,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml/",
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
+        {
+          "id": "26569",
+          "author": null,
+          "description": "こんにちは、メルカリのレコメンドチームで ML Engineer をしている ML_Bear です。 以前の記事 [1] では、item2vecと商品メタデータを用いた、メルカリのホーム画面のレコメンド改善のお話をさせて […]",
+          "link": "https://engineering.mercari.com/blog/entry/20230612-cf-similar-item/",
+          "publishedOn": "2023-06-12T11:00:10.000Z",
+          "wordCount": null,
+          "title": "協調フィルタリングとベクトル検索エンジンを利用した商品推薦精度改善の試み",
+          "imageUrl": null
+        },
         {
           "id": "26533",
           "author": null,
