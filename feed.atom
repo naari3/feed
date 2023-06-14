@@ -2,10 +2,64 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-14T22:02:42.021Z</updated>
+    <updated>2023-06-14T23:01:47.410Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[そんなにカメラばっかり買ってどうすんのって言われてないとでも思ってます？]]></title>
+        <id>hatenablog://entry/820878482941768187</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2023/06/15/070846"/>
+        <updated>2023-06-14T22:08:46.000Z</updated>
+        <summary type="html"><![CDATA[さて、次のやつです。
+また魅力的な奴を見つけてしまいました。
+ワクワクすんぞ pic.twitter.com/SXvCtY1abA
+June 12, 2023
+
+
+難あり検温カメラ（みんな「サーモマネージャ」って書くけど、別の製品です。そのぐらい東亜のアレは普及してるやつなんです）を発見。
+難あり項目は…
+　・画面が映らない
+なるほど大変面白そう。
+そしてさらに、
+　・型番不明
+うわぁすごい面白そう。ぽちーーーーー。4000円までなら出すでーーーー
+無事3200円で落札
+ 
+届きました。
+
+画面が映らない、とは言いますが、そんなこと全く私には関係ないですし、
+何なら直しますし。
+とりあえず、電源を一応入れてみます
+…
+
+映っとるやんけ！！！！！
+ 
+あれーーーーー？
+どうも、この手のカメラ電源投入後画面表示までは１０秒程度かかるのと、
+こいつはその間に何回かLEDが点灯するのでその間に液晶が点かなかったため、
+こいつは画面が壊れている、と判断された可能性があります。
+そのレベルの検品でしたら、中身が初期化されているとは思えません。
+しかし、本当に型番はどこにも書かれていません。
+
+おそらくこいつが取り付けられていたスタンドについていたんだと思います。
+写真からいろいろ製品を推測してみますが、どれもなんか違う感じです。
+ 
+とりあえず、あちこちいじってみます。
+検温はとりあえず普通にできました。
+では、早速ネットワークケーブルを繋いでみます。
+DHCP offerが出ているので、DHCPの配下につないでIPスキャンすると無事取得できていました。
+Zenmapでポートスキャンして、空いているサービスを調べます。
+
+お、80番(HTTP)あるね。
+…えぇ？22(ssh)と23(telnet)？？？まじか。
+とりあえずHTTPでつないでみます。
+ 
+おおお。なんかすごいフェードイン…]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20230615「読書日記（短歌篇）」]]></title>
         <id>hatenablog://entry/820878482941760165</id>
