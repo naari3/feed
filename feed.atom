@@ -2,10 +2,105 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-14T11:02:27.623Z</updated>
+    <updated>2023-06-14T12:02:03.401Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[スプライトの1次元書き込み]]></title>
+        <id>hatenablog://entry/820878482941621911</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/06/14/200438"/>
+        <updated>2023-06-14T11:04:38.000Z</updated>
+        <summary type="html"><![CDATA[今日はスプライトバッファに直接ドット描画する1次元テーブルを用意しました。雫GBAは2次元で16x16の4キャラクタしか使えなくてカーソル表示しかできませんでした。しかーし今回は96キャラクタまで使えます。紙と鉛筆でヒーヒーいいながら書いていたので疲れました。たったこれだけのことなのですけどねー。昔のは無駄がありまくりでした。
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+
+//---------------------------------------------------------------------------
+uint32_t tbl[16+16+16+4][128];
+uint32_t i = 0;
+
+
+//---------------------------------------------------------------------------
+void spr8x8(int x, int y)
+{
+	// 8x8
+	uint32_t ix, iy;
+
+	for(iy=y; iy<y+8; iy++)
+	{
+		for(ix=x; ix<x+2; ix++)
+		{
+			tbl[ix][iy] = i;
+			i += 2;
+		}
+	}
+}
+//---------------------------------------------------------------------------
+void spr64x64(int x, int y)
+{
+	// 64x64
+	uint32_t ix, iy;
+
+	for(iy=y; iy<y+64; iy+=8)
+	{
+		for(ix=x; ix<x+16; ix+=2)
+		{
+			spr8x8(ix, iy);
+		}
+	}
+}
+//---------------------------------------------------------------------------
+void spr16x32(int x, int y)
+{
+	// 16x32
+	uint32_t ix, iy;
+
+	for(iy=y; iy<y+32; iy+=8)
+	{
+		for(ix=x; ix<x+4; ix+=2)
+		{
+			spr8x8(ix, iy);
+		}
+	}
+}
+//---------------------------------------------------------------------------
+int main(int argc, char* argv[])
+{
+	spr64x64( 0,  0);
+	spr64x64(16,  0);
+	spr64x64(32,  0);
+	spr16x32(48,  0);
+	spr16x32(48, 32);
+
+
+	spr64x64( 0, 64);
+	spr64x64(16, 64);
+	spr64x64(32, 64);
+	spr16x32(48, 64);
+	spr16x32(48, 96);
+
+
+	uint32_t x, y;
+
+	for(y=0; y<128; y++)
+	{
+		for(x=0; x<16+16+16+4; x++)
+		{
+			printf("0x%x, ", tbl[x][y]);
+		}
+		printf("\n");
+	}
+
+    return 0;
+}]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[メルコイン決済基盤における分散トランザクション管理]]></title>
         <id>26595</id>
@@ -14916,38 +15011,6 @@ TypeScriptの型情報を使うためにtypescriptと@typescript-e…]]></summar
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sentry SDK 完全理解]]></title>
-        <id>https://blog.ojisan.io/sentry-sdk-kanzen-rikai</id>
-        <link href="https://blog.ojisan.io/sentry-sdk-kanzen-rikai"/>
-        <updated>2023-03-17T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ドタバタしてたら 1 ヶ月以上期間が空いてしまった。仕事の都合で Sentry を完全理解する必要があったので SDK 読んでみた。 知りたいことは エラーの収集方法 どこにエラーを送っているのか エラーの情報として何を送っているのか だ。そこで SDK…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HHKBがどうしても、最新版が苦手な話]]></title>
-        <id>hatenablog://entry/4207112889972129167</id>
-        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/03/17/082922"/>
-        <updated>2023-03-16T23:29:22.000Z</updated>
-        <summary type="html"><![CDATA[私は毎日、HHKBというキーボードを使っています。だいたい家に常時５つくらい出ていまして、昔のものも含めると、家に１０はあると思います。
-そしてここ数年の問題は何かというと
-「最新版のHHKB Hybridの感触が、通常版もType Sも苦手である」
-ということです。
-1つ前のProfessional BT 版であれば、音も感触も気持ちが良いのですが、最新版は何度も試しているのですが、どうしても1日2日でやめてお蔵入りになってしまうのです。
-理由はなんだろうと考えた場合に
-・打感
-・打音
-が苦手でして、特にHybridはType Sはふわーーっとなりますし、Type Sでないほうも、もさもさもさ（と私には聞こえる）音がします。
-なぜそうなるのかは分からないのですが、おそらく素材が変わったり、製法が変わったりしてそうなってるんだと思います。
-特に最新版は複数機器で使えるようになっていたり、ソフトウェアでプログラムを使ってキーボードのキーの入れ替えができるようになっていますから、そのような高性能化が、本来のキーボードの打感や感触を一部犠牲にしてる可能性があるというのが私の仮説です。
-今のところ中古であればProfessional BTは手に入るので、最近は中古を買ってキートップを全部外して、念入りに掃除をしてから使っているのですが、今のうちに、いくつか状態が良さそうなものをキープで買っておいたほうがいいのではないかとすら、思っています。
-まぁ、こういうのも好き嫌いがありますので、難しいとは思いますが、なかなかキーボードも楽器の選択と同じなので、好みがわかれますねーーーー。]]></summary>
-        <author>
-            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
         </author>
     </entry>
     <entry>

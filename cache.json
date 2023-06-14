@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482941621911",
+          "author": null,
+          "description": "今日はスプライトバッファに直接ドット描画する1次元テーブルを用意しました。雫GBAは2次元で16x16の4キャラクタしか使えなくてカーソル表示しかできませんでした。しかーし今回は96キャラクタまで使えます。紙と鉛筆でヒーヒーいいながら書いていたので疲れました。たったこれだけのことなのですけどねー。昔のは無駄がありまくりでした。\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <stdint.h>\n#include <stdbool.h>\n\n//---------------------------------------------------------------------------\nuint32_t tbl[16+16+16+4][128];\nuint32_t i = 0;\n\n\n//---------------------------------------------------------------------------\nvoid spr8x8(int x, int y)\n{\n\t// 8x8\n\tuint32_t ix, iy;\n\n\tfor(iy=y; iy<y+8; iy++)\n\t{\n\t\tfor(ix=x; ix<x+2; ix++)\n\t\t{\n\t\t\ttbl[ix][iy] = i;\n\t\t\ti += 2;\n\t\t}\n\t}\n}\n//---------------------------------------------------------------------------\nvoid spr64x64(int x, int y)\n{\n\t// 64x64\n\tuint32_t ix, iy;\n\n\tfor(iy=y; iy<y+64; iy+=8)\n\t{\n\t\tfor(ix=x; ix<x+16; ix+=2)\n\t\t{\n\t\t\tspr8x8(ix, iy);\n\t\t}\n\t}\n}\n//---------------------------------------------------------------------------\nvoid spr16x32(int x, int y)\n{\n\t// 16x32\n\tuint32_t ix, iy;\n\n\tfor(iy=y; iy<y+32; iy+=8)\n\t{\n\t\tfor(ix=x; ix<x+4; ix+=2)\n\t\t{\n\t\t\tspr8x8(ix, iy);\n\t\t}\n\t}\n}\n//---------------------------------------------------------------------------\nint main(int argc, char* argv[])\n{\n\tspr64x64( 0,  0);\n\tspr64x64(16,  0);\n\tspr64x64(32,  0);\n\tspr16x32(48,  0);\n\tspr16x32(48, 32);\n\n\n\tspr64x64( 0, 64);\n\tspr64x64(16, 64);\n\tspr64x64(32, 64);\n\tspr16x32(48, 64);\n\tspr16x32(48, 96);\n\n\n\tuint32_t x, y;\n\n\tfor(y=0; y<128; y++)\n\t{\n\t\tfor(x=0; x<16+16+16+4; x++)\n\t\t{\n\t\t\tprintf(\"0x%x, \", tbl[x][y]);\n\t\t}\n\t\tprintf(\"\\n\");\n\t}\n\n    return 0;\n}",
+          "link": "https://akkera102.hatenablog.com/entry/2023/06/14/200438",
+          "publishedOn": "2023-06-14T11:04:38.000Z",
+          "wordCount": 526,
+          "title": "スプライトの1次元書き込み",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230614/20230614195914.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230614/20230614195914.png"
+        },
+        {
           "id": "hatenablog://entry/820878482941390438",
           "author": null,
           "description": "スプライトの２次元取り出しをやめて１次元に変更中。そうでないと桜や雨が降らない為。\nもーアドレスの計算めんどくさい。テスト環境作るだけで１日潰すってどんだけ遅いのやら（泣。",
@@ -3773,21 +3788,6 @@
             "length": "0"
           },
           "imageUrl": "https://m.media-amazon.com/images/I/51er+X2AjiL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889972129167",
-          "author": null,
-          "description": "私は毎日、HHKBというキーボードを使っています。だいたい家に常時５つくらい出ていまして、昔のものも含めると、家に１０はあると思います。\nそしてここ数年の問題は何かというと\n「最新版のHHKB Hybridの感触が、通常版もType Sも苦手である」\nということです。\n1つ前のProfessional BT 版であれば、音も感触も気持ちが良いのですが、最新版は何度も試しているのですが、どうしても1日2日でやめてお蔵入りになってしまうのです。\n理由はなんだろうと考えた場合に\n・打感\n・打音\nが苦手でして、特にHybridはType Sはふわーーっとなりますし、Type Sでないほうも、もさもさもさ（と私には聞こえる）音がします。\nなぜそうなるのかは分からないのですが、おそらく素材が変わったり、製法が変わったりしてそうなってるんだと思います。\n特に最新版は複数機器で使えるようになっていたり、ソフトウェアでプログラムを使ってキーボードのキーの入れ替えができるようになっていますから、そのような高性能化が、本来のキーボードの打感や感触を一部犠牲にしてる可能性があるというのが私の仮説です。\n今のところ中古であればProfessional BTは手に入るので、最近は中古を買ってキートップを全部外して、念入りに掃除をしてから使っているのですが、今のうちに、いくつか状態が良さそうなものをキープで買っておいたほうがいいのではないかとすら、思っています。\nまぁ、こういうのも好き嫌いがありますので、難しいとは思いますが、なかなかキーボードも楽器の選択と同じなので、好みがわかれますねーーーー。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2023/03/17/082922",
-          "publishedOn": "2023-03-16T23:29:22.000Z",
-          "wordCount": 559,
-          "title": "HHKBがどうしても、最新版が苦手な話",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -9522,16 +9522,6 @@
           "wordCount": null,
           "title": "YAPC 2023 に登壇しました",
           "imageUrl": null
-        },
-        {
-          "id": "https://blog.ojisan.io/sentry-sdk-kanzen-rikai",
-          "author": null,
-          "description": "ドタバタしてたら 1 ヶ月以上期間が空いてしまった。仕事の都合で Sentry を完全理解する必要があったので SDK 読んでみた。 知りたいことは エラーの収集方法 どこにエラーを送っているのか エラーの情報として何を送っているのか だ。そこで SDK…",
-          "link": "https://blog.ojisan.io/sentry-sdk-kanzen-rikai",
-          "publishedOn": "2023-03-17T00:00:00.000Z",
-          "wordCount": 7119,
-          "title": "Sentry SDK 完全理解",
-          "imageUrl": "https://blog.ojisan.io/static/6cee9c24e69012559fd84c4031728873/9ccd2/visual.jpg"
         }
       ]
     },
