@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482942226547",
+          "author": null,
+          "description": "今日はひたすら整理整頓。お見せできるものがないと書くこともないですね。。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/06/16/232003",
+          "publishedOn": "2023-06-16T14:20:03.000Z",
+          "wordCount": 381,
+          "title": "コード整理",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482941621911",
           "author": null,
           "description": "今日はスプライトバッファに直接ドット描画する1次元テーブルを用意しました。雫GBAは2次元で16x16の4キャラクタしか使えなくてカーソル表示しかできませんでした。しかーし今回は96キャラクタまで使えます。紙と鉛筆でヒーヒーいいながら書いていたので疲れました。たったこれだけのことなのですけどねー。昔のは無駄がありまくりでした。\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <stdint.h>\n#include <stdbool.h>\n\n//---------------------------------------------------------------------------\nuint32_t tbl[16+16+16+4][128];\nuint32_t i = 0;\n\n\n//---------------------------------------------------------------------------\nvoid spr8x8(int x, int y)\n{\n\t// 8x8\n\tuint32_t ix, iy;\n\n\tfor(iy=y; iy<y+8; iy++)\n\t{\n\t\tfor(ix=x; ix<x+2; ix++)\n\t\t{\n\t\t\ttbl[ix][iy] = i;\n\t\t\ti += 2;\n\t\t}\n\t}\n}\n//---------------------------------------------------------------------------\nvoid spr64x64(int x, int y)\n{\n\t// 64x64\n\tuint32_t ix, iy;\n\n\tfor(iy=y; iy<y+64; iy+=8)\n\t{\n\t\tfor(ix=x; ix<x+16; ix+=2)\n\t\t{\n\t\t\tspr8x8(ix, iy);\n\t\t}\n\t}\n}\n//---------------------------------------------------------------------------\nvoid spr16x32(int x, int y)\n{\n\t// 16x32\n\tuint32_t ix, iy;\n\n\tfor(iy=y; iy<y+32; iy+=8)\n\t{\n\t\tfor(ix=x; ix<x+4; ix+=2)\n\t\t{\n\t\t\tspr8x8(ix, iy);\n\t\t}\n\t}\n}\n//---------------------------------------------------------------------------\nint main(int argc, char* argv[])\n{\n\tspr64x64( 0,  0);\n\tspr64x64(16,  0);\n\tspr64x64(32,  0);\n\tspr16x32(48,  0);\n\tspr16x32(48, 32);\n\n\n\tspr64x64( 0, 64);\n\tspr64x64(16, 64);\n\tspr64x64(32, 64);\n\tspr16x32(48, 64);\n\tspr16x32(48, 96);\n\n\n\tuint32_t x, y;\n\n\tfor(y=0; y<128; y++)\n\t{\n\t\tfor(x=0; x<16+16+16+4; x++)\n\t\t{\n\t\t\tprintf(\"0x%x, \", tbl[x][y]);\n\t\t}\n\t\tprintf(\"\\n\");\n\t}\n\n    return 0;\n}",
@@ -8931,16 +8946,6 @@
           "wordCount": null,
           "title": "選手より観客の方がエゴイストである",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/100705616/rectangle_large_type_2_218a7e755251867e633e96d0d633b0bf.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n06df3da65a25",
-          "author": null,
-          "description": "きのうホテルを取らずに大阪に来たんだけど、卒業旅行のシーズンとダブってしまって、大阪市内の宿が殆ど満室だった。うだつの上がらないホテルや怪しげなモーテルに泊まるのは絶対にゴメンだし、ネットカフェって寝られない。で、Twitterで泊めてくれる人を募集した。泊めてもらえた。ありがとう！\n僕自身に失うものが全くないので、ちゃらんぽらんに生きている。\n続きをみる",
-          "link": "https://note.com/sizes/n/n06df3da65a25",
-          "publishedOn": "2023-03-19T02:07:10.000Z",
-          "wordCount": 2306,
-          "title": "大切なものがいっぱいあるから何も選択肢がないように感じるのかもしれない",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/100624597/rectangle_large_type_2_3a41b3ee674868f02fc9906823b9fec8.jpeg?width=800"
         }
       ]
     },
