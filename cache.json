@@ -9266,6 +9266,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2023-06-18/cookie-store-api.html",
+          "author": null,
+          "description": "JS から Cookie を操作する document.cookie の改善を目的とした Cookie Store API についてまとめる。",
+          "link": "https://blog.jxck.io/entries/2023-06-18/cookie-store-api.html",
+          "publishedOn": "2023-06-18T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Cookie Store API による document.cookie の改善",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2023-06-01/abort-signal-any.html",
           "author": null,
           "description": "最近 AbortSignal.any() が提案され、急速に実装が進んでいる。すでに定義されている AbortSignal.timeout() や addEventListener への Signal なども含め、非同期処理の中断を実装する際の API はかなり整備されてきた。これら API のモチベーションと設計を中心にまとめる。",
