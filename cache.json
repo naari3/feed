@@ -9584,6 +9584,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/06/18/bluesky-post/",
+          "author": null,
+          "description": "自分用の投稿専用クライアントであるpostemとpost-tweetをそれぞれBlueskyに対応しました。\nazu/postem: Cross posting client for twitter, hatebu, and own services.\nazu/post-tweet: Simple post client for twitter and bluesky.\n\nそれぞれ紹介記事を書いてありますが、多分自分しか使ってないとは思います。\nただ、投稿の8割ぐらいはこれ経由な気がするので、かなり使っているツールです。\nURLスキームで起動できる投稿専用のTwitterクライアントを書いた | Web Scratch\nTwitterやはてなブックマークにクロスポストできるクライアントアプリを書いた | Web Scratch\nJSer.infoの更新のためのデータを入れるのは、postemが99%ぐらいなので、ほぼ毎日使ってる感じです。\nJSer.info 10周年: JavaScript情報の集め方、書き方、まとめ方 - JSer.info\nBlueskyの対応\nBlueskyは、裏側の仕組みが違う見た目がTwitterみたいなサービスです。\nまたPrivate Betaですが、@s7tyaさんに招待コードをもらったので、アカウントを作っていじっています。\nazu (@azu.bsky.social) - Bluesky\nTwitterみたいなものなので、Twitterに投稿するときのリンク投稿用クライアントであるそれぞれもBlueskyに対応してみました。\nazu/postem: Cross posting client for twitter, hatebu, and own services.\nazu/post-tweet: Simple post client …",
+          "link": "https://efcl.info/2023/06/18/bluesky-post/",
+          "publishedOn": "2023-06-18T05:40:00.000Z",
+          "wordCount": null,
+          "title": "投稿専用クライアントのpostemとpost-tweetをBlueskyに対応した",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/06/09/jsprimer-v2/",
           "author": null,
           "description": "JavaScriptの入門書であるJavaScript Primer 改訂2版 迷わないための入門書がリリースされました。\n\n書店やオンライン書店で購入できます。\nKADOKAWA: 「JavaScript Primer 改訂2版 迷わないための入門書」azu [ＰＣ・理工科学書] - KADOKAWA\nAmazon: JavaScript Primer 改訂2版 迷わないための入門書 | azu, Suguru Inatomi |本 | 通販 | Amazon\n楽天: 楽天ブックス: JavaScript Primer 改訂2版 迷わないための入門書 - azu - 9784048931106 : 本\nヨドバシ: ヨドバシ.com - JavaScript Primer 改訂2版 迷わないための入門書 [単行本] 通販【全品無料配達】\n📝 紙の書籍を大量にまとめて購入したい場合は、Contactに連絡ください。\nまた、電子版(PDFとepub)のリリースも予定しています。\nこのブログや次のフォームから登録したメールアドレスに、電子版のリリース情報をお知らせします。\nJavaScript Primerの更新情報を購読\n* indicates required\nEmail Address  *\n\n\t\n\t\n\n\t\n\n\t\t\n\n\t\n    \n    \n\n\n(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);\n\nフォームが表示されない人は https://github.us13.list-manage.com/subscribe/po…",

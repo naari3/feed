@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-18T06:01:51.166Z</updated>
+    <updated>2023-06-18T07:02:19.134Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[投稿専用クライアントのpostemとpost-tweetをBlueskyに対応した]]></title>
+        <id>https://efcl.info/2023/06/18/bluesky-post/</id>
+        <link href="https://efcl.info/2023/06/18/bluesky-post/"/>
+        <updated>2023-06-18T05:40:00.000Z</updated>
+        <summary type="html"><![CDATA[自分用の投稿専用クライアントであるpostemとpost-tweetをそれぞれBlueskyに対応しました。
+azu/postem: Cross posting client for twitter, hatebu, and own services.
+azu/post-tweet: Simple post client for twitter and bluesky.
+
+それぞれ紹介記事を書いてありますが、多分自分しか使ってないとは思います。
+ただ、投稿の8割ぐらいはこれ経由な気がするので、かなり使っているツールです。
+URLスキームで起動できる投稿専用のTwitterクライアントを書いた | Web Scratch
+Twitterやはてなブックマークにクロスポストできるクライアントアプリを書いた | Web Scratch
+JSer.infoの更新のためのデータを入れるのは、postemが99%ぐらいなので、ほぼ毎日使ってる感じです。
+JSer.info 10周年: JavaScript情報の集め方、書き方、まとめ方 - JSer.info
+Blueskyの対応
+Blueskyは、裏側の仕組みが違う見た目がTwitterみたいなサービスです。
+またPrivate Betaですが、@s7tyaさんに招待コードをもらったので、アカウントを作っていじっています。
+azu (@azu.bsky.social) - Bluesky
+Twitterみたいなものなので、Twitterに投稿するときのリンク投稿用クライアントであるそれぞれもBlueskyに対応してみました。
+azu/postem: Cross posting client for twitter, hatebu, and own services.
+azu/post-tweet: Simple post client …]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[仕事中の思考]]></title>
         <id>hatenablog://entry/820878482942511117</id>
