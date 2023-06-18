@@ -78,6 +78,26 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Atmosphère 1.5.4(3cb54e2b4) プレリリースから正式版に</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2023061838867/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Nintendo SwitchのカスタムファームウェアAtmosphere 1.5.4がプレリリースから正式版となりました。→→→この記事の続きを読む
+Atmosphère 1.5.4(3cb54e2b4) プレリリースから正式版に first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
               rel="noopener">自由さ</a></h3>
           <section class="articles-per-source">
@@ -21437,90 +21457,6 @@ GitHub Sponsors will stop supporting PayPal | GitHub Changelog
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
-              rel="noopener">conceptualization</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GPTの仕組みと限界についての考察（１）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2023/03/20/215000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>GPT4が登場してChatGPTが盛り上がってますね。
-本記事は、GPT（を支えるTransformerという仕組み）をChatGPTユーザにとって分かりやすく説明し、その能力と限界についての見通しをよくしよう、という趣旨になります。
- 
-少し長くなりそうなので、全部で記事を3回に分けようと思います。
- 
-（１）大まかな背景と概要：本記事
-（２）GPTの能力と可能性：実際の使用例とTransformerの仕組みを踏まえて説明
-（３）GPTの限界と未来展望：Transformerの仕組みが持つ限界と研究の進展を予想
- 
-GPT3と4の違い： トークン長とは何か？
-まずここから話を始めます。GPT-3は、パラメータ数が750億個（850GBの容量を食う）でトークン長が4097(GPT-3.5)でした。GPT-4は、パラメータ数は非公開でトークン長は32768ですので、ちょうど8倍になります。
-さて、トークン長とはいったい何なのでしょう？これは平たく言うと「GPTが文脈を意識できる過去の単語数」です。
-例えば、ChatGPTに何か言葉を投げかけると返事を返してくれますが、このときに「文脈」としてそれ以前の単語を参照します。トークン長が4097でしたら、4097個前の単語までを参照しながら、返事を生成します。
-逆に言うと、これが非常に大事なことですが、トークン長を超えるような過去の単語は参照しないということです。だから、何か新しいことを教えて、それを踏まえたふるまいをChatGPTにさせたいとしても、32768単語以内で教える必要があるし、さらに教えたことを応用してチャットを進めて行った末に32768のトークン長をオーバーしてしまったら、せっかく教えた内容を忘れてしま（というか正確に言うと参照しなくなってしま）います。
- 
-ここが凄く直観に反するところかもしれません。GPTは何か「文脈」のような抽象的な一塊の「記憶」をもって動作しているわけではないのです。
-そうではなく、直前の「トークン長ぶんの単語」を「まるっと」参照したうえで、次の単語を計算して出す、というのをひたすら繰り返すシステムなのです。
-何故そんな単純な仕組みであんなに賢いのか
-人間でも、会話していて脊髄反射のような「考えてない」受け答えをする人ってたまにいませんか？また、普段はちゃんと考えて会話をする人でも、疲れてくると「相手が言ったこと」に対して「あるあるな返事」でお茶を濁すことってよくありませんか？
-つまり、パターンに対して、パターンを返すような会話です。
-GPTは、いわば、そのおざなりな返事を「すご～く長いトークン長を踏まえ」て、パターンの抽象度も「コンピュータの計算パワーの暴力で飛躍的に高め」て、言葉を紡いでいけるので、脊髄反射な返答をしているだけなのにも関わらず、かなり賢くみえるのです。
- 
-ではどう賢くて、どう馬鹿なのか。それを原理的に理解するためにはやはりGPTを支えるTransformer及びその根幹となるAttentionの仕組みをざっくり把握するのが良いと思います。本シリーズではめっちゃ（何なら文系の人でも）わかりやすく説明するのでご期待ください。
-歴史的経緯
-歴史的経緯としては、「記憶」をもって動作する仕組み（リカレントネットワーク）が良く研究されていたのですが、それだと(A)「凄く前に言われたことが文脈を強く決定づける」みたいなケースに対応するのが難しく、また(B)記憶を通じて順番に計算していく必要があるためにコンピュータの力を引き出す上で重要な「並列化」が難しい、というAとBの課題が相互に悪影響を与えあってて研究が進みづらい状況にあったのだと思います。
-そこで、「記憶」みたいな情報のパッケージングというか圧縮というかそういうことをせずに、単にずっと前の単語も「そのまんま加味」してあげる機械学習モデルにする方法（アテンション機構およびそれを最大限に組み入れたトランスフォーマーという仕組み）がすごく有効であることが分かり研究が急速に進展したようです。この方法ですと、(A)凄く前に言われたこともトークン長の範囲内であればちゃんと加味するので文脈を的確にとらえることが可能、(B)文脈を「記憶」にパッケージングして順番に計算していく方式ではなく、過去のトークン長の全単語を一斉にわ～っと計算しちゃうので「並列化」がしやすい、という風になりAとBが今度は好影響を与えあって研究がガンガン進んだというわけです。
-経済学的に考えても、コンピューティングパワーを存分に引き出すアルゴリズムがあると、R&amp;Dタスクが資本集約的になり大資本のあるところが資金を投じることで一気に技術を進歩させることができますね。それで、起爆剤に火がつけられたのが今、ということでしょう。
- 
-というわけで
-（２）へ続きます。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/cmblg" target="_blank"
-              rel="noopener">Camille</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">白って200色あるらしいから白文字で記事書いてみた！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/cmblg/n/n6fdebf3eebc2" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ㅤ
-ㅤㅤ
-ㅤㅤ
-ㅤㅤ
-ㅤㅤ
-ㅤㅤ
-ㅤㅤ
-ㅤ
-ㅤㅤ
-ㅤㅤ
-ㅤㅤㅤ
-ㅤㅤ
-ㅤㅤ
-ㅤㅤ
-ㅤ
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/100753936/rectangle_large_type_2_52e5dea5c84169a4f0637c51c21e37fb.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21954,7 +21890,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-06-18T00:04:31.722Z">2023-06-18T00:04:31.722Z</time>
+    <time id="build-timestamp" datetime="2023-06-18T01:29:28.438Z">2023-06-18T01:29:28.438Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
