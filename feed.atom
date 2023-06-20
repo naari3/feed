@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-20T16:02:11.221Z</updated>
+    <updated>2023-06-20T17:01:51.673Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -15055,63 +15055,6 @@ March 17, 2023
 秋月のSoC基板を歯ぎしりしながら見てたらまさに今日アキバから買って持って帰ってきたフォロワーさんが徒歩圏内に住んでて一枚売ってもらってきたんだけどそんなミラク…]]></summary>
         <author>
             <name>honeylab's blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ChatGPT APIベースの多言語トランスパイラGPTranslatorを公開しました！]]></title>
-        <id>hatenablog://entry/4207112889974089441</id>
-        <link href="https://kmizu.hatenablog.com/entry/2023/03/23/132157"/>
-        <updated>2023-03-23T04:21:57.000Z</updated>
-        <summary type="html"><![CDATA[この日記やTwitterなどで、ChatGPT (GPT-3.5, GPT-4）はプログラミング言語間の変換（に限らないですが）が得意ということを書きましたが、試している内に「毎回似たような指示するのだるいな」と思うようになりました。というわけで、Reactベースで動くChatGPT APIを使ったトランスパイラGPTranslatorを作ってみました。ちなみに最近はトランスパイラという言い方がすっかり主流になった気がするのですが、一昔前だとトランスレータと呼ばれてた気がしますね……。
-github.com
-　といっても、要はChatGPT APIに投げる前に適当なプロンプトを付加しているだけという代物です。ただ、コードフラグメントを別言語に変換するときや、YAML -> JSONみたいな設定ファイルの形式を変換するときなんかには多少役に立つのではないかなと思います。
-　詳細はGitHubのリポジトリを見てもらうとして、OpenAIのAPI KEYを
-export REACT_APP_OPENAI_API_KEY=<api key> # this must be set before npm start
-
-
-
-　という形で指定しなければいけないところは多少使い勝手が悪いかもしれません（設定ファイルに書けた方がいいような気もします）。ともあれ、使ってみてバグや改良点などあればPull Requestなどがんがんいただければと思います。言うまでもないですが、ChatGPTベースということで精度は完璧ではありませんし、変換元や変換先の言語によってはうまくいかなかったりすることもあります。
-以下のスクリーンショットだと、Javaにはメソッドの中に直接メソッドを書く機能はないのになんか入っちゃってますね。そもそも型がないJavaScriptをそのままJavaに変換しようと思うと無理が生じるのは必然でもありますが。
-JavaScript to Java
-一方、PythonからJavaScriptへの変換は比較的素直に行きやすいようです（もっと複雑なサンプルになればまた別ですが）。
-aPython to JavaScript]]></summary>
-        <author>
-            <name>kmizuの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SwiftUIでNavigationStackを使っているとNavigation BarやBackボタンが隠せない?]]></title>
-        <id>hatenablog://entry/4207112889974089280</id>
-        <link href="https://tagomoris.hatenablog.com/entry/2023/03/23/132114"/>
-        <updated>2023-03-23T04:21:14.000Z</updated>
-        <summary type="html"><![CDATA[タイトルに書いたままなんだけど。
-iOSアプリの作り直しをやってて、まあiOS16以降のみ対応でもいいかなと思ったのでビュー遷移に最初からNavigationStackを使おうと思ったんだけど、ユーザに勝手に戻ってほしくない遷移があるのでBackボタンを隠そうと思って以下のようなコードを書いた。
-NavigationStack(path: $path) {
-    SplashView()
-        .navigationBarTitleDisplayMode(.automatic)
-        .navigationBarBackButtonHidden(true)
-        .navigationDestination(for: SigninState.self) { state in
-            Group {
-                switch state {
-                case .notsignedin:
-                    SigninView()
-                case .signedin:
-                    MainView()
-                }
-            }
-        }
-    }
-}
-
-
-
-んだけど、navigationBarBackButtonHidden(true)はドキュメントにもある通り、どうもNavigationView内でしか効かないみたい。NavigationStackといっしょに指定してもやっぱり遷移先でBackボタンが表示されてしまう。
-SwiftUI慣れてないから修飾するビューが違うのかな、と思ってGroup{ ... }の部分に指定してもやっぱりダメ。
-あとドキュメントをあれこれ見てると.toolbarで指定しろってあるものもあるので .toolbar(.hidden, for: .navigationBar) を指定してみたりもしたんだけど、やっぱりダメ。なぜだ。現状ナビゲーションバーを隠したりBackボタンを非表示にしたりする方法がないのかな。
-なんもわからんのでDeveloper Forumに質問を投げておいた。投げる前に同じ問題が投稿されてなさそうなのはいちおう見てる。
-How can I hide navigation bars (or… | Apple Developer Forums]]></summary>
-        <author>
-            <name>たごもりすメモ</name>
         </author>
     </entry>
     <entry>
