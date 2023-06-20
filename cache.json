@@ -10082,6 +10082,16 @@
       "siteUrl": "https://engineering.mercari.com/blog/feed.xml",
       "articles": [
         {
+          "id": "26810",
+          "author": null,
+          "description": "こんにちは。search infraチームのmrkm4ntrです。我々のチームでは検索基盤としてElasticsearchクラスタをKubernetes上で多数運用しています。これらのElasticsearchクラスタを […]",
+          "link": "https://engineering.mercari.com/blog/entry/20230620-f0782fd75f/",
+          "publishedOn": "2023-06-20T11:02:53.000Z",
+          "wordCount": null,
+          "title": "ElasticsearchをCPU利用率でオートスケールさせる",
+          "imageUrl": null
+        },
+        {
           "id": "26782",
           "author": null,
           "description": "この記事は、Merpay Tech Openness Month 2023 の11日目の記事です。 こんにちは。メルペイのデータマネージャー@katsukitです。 本日は、現在メルペイで取り組んでいる非エンジニアのため […]",
@@ -11001,6 +11011,21 @@
       "feedUrl": "https://naari3.github.io/mangacross-rss/yabai/feed.xml",
       "siteUrl": "https://mangacross.jp/comics/yabai/",
       "articles": [
+        {
+          "id": "https://mangacross.jp/comics/yabai/131",
+          "author": "桜井のりお",
+          "description": "",
+          "link": "https://mangacross.jp/comics/yabai/131",
+          "publishedOn": "2023-06-20T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Karte.123 | 僕は聞きたい",
+          "enclosure": {
+            "url": "https://mangacross.jp/images/episode/48C9sysYyEWAvVVJ4S4LZat7hGZALHJ1swREuGtNdT8/episode_thumbnail/thumb_double.png?1686871856",
+            "length": "85014",
+            "type": "image/png"
+          },
+          "imageUrl": "https://mangacross.jp/images/episode/48C9sysYyEWAvVVJ4S4LZat7hGZALHJ1swREuGtNdT8/episode_thumbnail/thumb_double.png?1686871856"
+        },
         {
           "id": "https://mangacross.jp/comics/yabai/130",
           "author": "桜井のりお",
