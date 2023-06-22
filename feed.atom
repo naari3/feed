@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-22T00:02:44.185Z</updated>
+    <updated>2023-06-22T01:29:12.695Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[お手軽なグラフデータベース活用]]></title>
+        <id>26928</id>
+        <link href="https://engineering.mercari.com/blog/entry/20230622-easy-solution-for-utilizing-graph-database/"/>
+        <updated>2023-06-22T10:13:43.000Z</updated>
+        <summary type="html"><![CDATA[この記事は、Merpay Tech Openness Month 2023 の13日目の記事です。 こんにちは、メルペイ Solutionsチームのエンジニア@orfeonです。 メルペイ Solutionsチームでは社 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[釣り好きのおっさんとプロゲーマーにはあまり差が無く、釣りインフルエンサーとゲーム好きの兄ちゃんにもあまり差がない]]></title>
+        <id>https://note.com/sizes/n/n209473f79d05</id>
+        <link href="https://note.com/sizes/n/n209473f79d05"/>
+        <updated>2023-06-22T00:55:25.000Z</updated>
+        <summary type="html"><![CDATA[糸井重里は仕事がうまくいかなくなったある時期に、釣りしかできなくなったことがあるという。釣り「しか」できないと言うと明らかに抑うつ状態だったのだろうし、海や川でぼんやりする感じだったのかもしれない。
+僕も高校2年生のころ、デジタルカードゲームしかできなくなっていた時期がある。家庭環境の問題とか経済状況の問題とか学校の問題とか健康の問題が積み重なって、気分障害になってしまったのだ。バニラ味のMOWを1日4,5個食べてずっとカードゲームのランク戦を回している日々が、3ヶ月くらい続いた。
+続きをみる]]></summary>
+        <author>
+            <name>自由さ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2023.6.22]]></title>
+        <id>https://gamegaz.com/?p=38886</id>
+        <link href="https://gamegaz.com/2023062238886/"/>
+        <updated>2023-06-22T00:31:07.000Z</updated>
+        <summary type="html"><![CDATA[Xbox Series X値上げ,Retroarch PS2 for Mast1core PS4-PS5,Retroarch PS2 on PS4,ARK-4 v1687386868,RPCS3 v0.0.28-15208,StellaDS v6.6b,Vita3K Build: 3218,Egg NS Emulator 4.1.8→→→この記事の続きを読む
+GameGaz Daily 2023.6.22 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The internals and the latest trends of container runtimes (2023)]]></title>
         <id>https://medium.com/p/22aa111d7a93</id>
@@ -14708,27 +14741,6 @@ store.steampowered.com
 じゃ！]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[npm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた]]></title>
-        <id>https://efcl.info/2023/03/24/ni/</id>
-        <link href="https://efcl.info/2023/03/24/ni/"/>
-        <updated>2023-03-24T13:21:00.000Z</updated>
-        <summary type="html"><![CDATA[niという npm/yarn/pnpm/bun を同じコマンドでインストール/アンストールコマンドを実行できるツールがあります。
-antfu/ni: 💡 Use the right package manager
-仕組み的には、各パッケージのロックファイルやCorepackで決められたpackageManagerフィールドの値から、どのパッケージマネージャを使うかを判断しています。
-たとえば、package-lock.jsonがあるプロジェクトなら npm を使ってるので、niコマンドは npm のコマンドを実行します。
-また、packageManagerフィールドがyarn@<version>になっている場合は、niコマンドは yarn コマンドを実行します。
-なぜこういうツールが必要になるかというと、npm や yarn などのパッケージマネージャは、それぞれのパッケージマネージャのコマンドが異なるためです。
-たとえば、npm ではnpm install <pkg>でパッケージを追加できますが、yarn ではyarn add <pkg>でパッケージを追加します。
-色々なオープンソースプロジェクトをやっているとこの npm/yarn/pnpm/bun などがプロジェクトで異なるので、コマンドを意識して使い分ける必要が出てきて大変です。
-niはこれをn?というコマンド一つにまとめるというものです。
-antfu/niを使うのも良いと思ったのですが、Node.js である必要性もあんまりないのと、それぞれがコマンドとして実装されていて名前が被りそうな問題が気になりました。
-たとえば、npm runに相当するのがnrで、npm upgradeに相当するのがnuという形になっています。
-これだと、コマンドが増えると別のコマンドと被りそうなので、ni runのようにサブコマンドにし…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
