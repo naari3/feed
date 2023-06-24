@@ -2800,21 +2800,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isobe324649/20230402/20230402201646.jpg"
-        },
-        {
-          "id": "hatenablog://entry/4207112889974209170",
-          "author": null,
-          "description": "全３回のシリーズパート２の本記事では、GPTの能力と可能性をAttention/Transformerの仕組みをふまえて考察します。\nというつもりでしたが、凄く長くなってしまったのでパート2は以下の3回に分けようと思います。\n（2.1）各技術の定性的な説明（本記事）\n（2.2）Transformerのアルゴリズム詳細\n（2.3）GPTの能力と可能性について\n2.1 各技術の定性的な説明\n自然言語の構造を考えてみる\nまず我々が使う言語についてちょっと振り返るところから話を始めましょう。\n文や文章は、おおもとのデータである文字から始まって、単語、文節、句、節、文、文章、さらにその上の意味、という風に階層的な構造を持っていると我々は概念的に認識してますよね。\n\n構文の階層\n\nそして、各階層や階層間には、文法や語法といった言葉のルールがあります。\n深層学習はその名の通り、層を深くしたニューラルネットワークなので、文法や意味が織りなす各階層を深層学習の各レイヤー（＝層）に対応させるのは自然な発想ですよね。\n \nその意味でTransformerは凄く自然な形をしたアルゴリズムです。このレイヤー・層の1個分がTransformer1段に相当すると、ひとまず認識しておけば、まずは差し支えないです（そう認識してしまうとどう差し支えて、じゃあ正確にはどう認識すればよいかは本記事を読み進めれば分かります）。\n \nさっそくTransformer登場\nTransformerの解説記事を読んだことのある人ならたぶん1億回くらい見たことのある下の図を見てみましょう。（Transformerの原典「Attention Is All You Need」から転載）\n\nN個のTransformerが積まれた図\n\n \n\nこの図は、左下のInputsからトークン列が入力されて、（EmbeddingやEncoding…",
-          "link": "https://isobe324649.hatenablog.com/entry/2023/03/27/064121",
-          "publishedOn": "2023-03-26T21:41:21.000Z",
-          "wordCount": null,
-          "title": "GPTの仕組みと限界についての考察（2.1）",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isobe324649/20230327/20230327010622.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isobe324649/20230327/20230327010622.png"
         }
       ]
     },

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-06-24T09:02:02.024Z</updated>
+    <updated>2023-06-24T10:02:03.805Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14557,40 +14557,6 @@ Twitterに写真上げたりしてるのでまた見といてください。
 youtu.be]]></summary>
         <author>
             <name>遺失物取扱所</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GPTの仕組みと限界についての考察（2.1）]]></title>
-        <id>hatenablog://entry/4207112889974209170</id>
-        <link href="https://isobe324649.hatenablog.com/entry/2023/03/27/064121"/>
-        <updated>2023-03-26T21:41:21.000Z</updated>
-        <summary type="html"><![CDATA[全３回のシリーズパート２の本記事では、GPTの能力と可能性をAttention/Transformerの仕組みをふまえて考察します。
-というつもりでしたが、凄く長くなってしまったのでパート2は以下の3回に分けようと思います。
-（2.1）各技術の定性的な説明（本記事）
-（2.2）Transformerのアルゴリズム詳細
-（2.3）GPTの能力と可能性について
-2.1 各技術の定性的な説明
-自然言語の構造を考えてみる
-まず我々が使う言語についてちょっと振り返るところから話を始めましょう。
-文や文章は、おおもとのデータである文字から始まって、単語、文節、句、節、文、文章、さらにその上の意味、という風に階層的な構造を持っていると我々は概念的に認識してますよね。
-
-構文の階層
-
-そして、各階層や階層間には、文法や語法といった言葉のルールがあります。
-深層学習はその名の通り、層を深くしたニューラルネットワークなので、文法や意味が織りなす各階層を深層学習の各レイヤー（＝層）に対応させるのは自然な発想ですよね。
- 
-その意味でTransformerは凄く自然な形をしたアルゴリズムです。このレイヤー・層の1個分がTransformer1段に相当すると、ひとまず認識しておけば、まずは差し支えないです（そう認識してしまうとどう差し支えて、じゃあ正確にはどう認識すればよいかは本記事を読み進めれば分かります）。
- 
-さっそくTransformer登場
-Transformerの解説記事を読んだことのある人ならたぶん1億回くらい見たことのある下の図を見てみましょう。（Transformerの原典「Attention Is All You Need」から転載）
-
-N個のTransformerが積まれた図
-
- 
-
-この図は、左下のInputsからトークン列が入力されて、（EmbeddingやEncoding…]]></summary>
-        <author>
-            <name>conceptualization</name>
         </author>
     </entry>
     <entry>
