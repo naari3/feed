@@ -2381,21 +2381,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20230505/20230505020648.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889975455717",
-          "author": null,
-          "description": "前回までの記事\nhoneylab.hatenablog.jp\nで、Wi-SUNと3Gモジュールの基本的な機能を確認することができました。\nあと少し、本体には謎のA・Bのボタン（ケースを付けると細い棒などで押さないといけない）があります。\n \nボタンをinputデバイスとして設定することもできますが、とりあえずはまずGPIOとして使ってみましょう。\nA/BボタンはSoCのGPIO 19番と20番に接続されています。\nGPIOの使い方は、Raspiなどで慣れている方にはわかりやすいと思いますが、初めて触る方にはわかりにくいので、書き方とコメントを付けて少し解説したいと思います。\nまず、GPIOのデバイスは\n/sys/class/gpio 以下を使用していきます。\n# cd /sys/class/gpio\n# ls\nexport      gpiochip0   gpiochip32  gpiochip64  gpiochip96  unexport\nここで/sys/class/gpio/export というデバイスファイルがあります。\nこのファイルに、echo コマンドで、使用したいGPIOの番号を書き込むと、\n/sys/class/gpio/gpio[xx]　というディレクトリが発生します。\n19番を使用します、と宣言します。\n# echo 19 > export\n[  119.077251] gpio gpiochip0: Persistence not supported for GPIO 19\n# ls\nexport      gpiochip0   gpiochip64  unexport\ngpio19      gpiochip32  gpiochip96\ngpio19ができました。この中には\n# ls gpio19\nactive_low  direction   power       uevent\ndevice      edge        subsystem   value\nいくつかのファイルとディレクトリができます。\nGPIOの使い方を決めます。ボタンですので入力です。\nこのために \"in\" という文字を direction というファイルに書き込みます\n# echo in > gpio19/direction\n# cat gpio19/direction\nin\nこれで、準備ができました。ボタンの状態はいつでも\"value\"を見ることで判別できます。\n# cat gpio19/value　　　　　　←ボタンを押していない状態\n1# cat gpio19/value　　　　　　←ボタンを押した状態\n0\n\nボタンは、押されたときにGNDに接して０になるように配線されています。\nこのように、デバイスファイルを介してGPIOを設定し、値を読み込みます。\n \nついでに、ボタンを押したときに何かが起きるようにしてみましょう。\nしかし、こいつにはディスプレイもついていないので、あなたの携帯にSMSを送ることにします。\n基板の電源を切り、お手持ちの２枚目のSIMカードを挿入して再度電源を入れます。\nこのシェルスクリプトをターミナルから保存して動かすと…\n \ngist.github.com\nボタンを押すと、SMSが送信されます。\nなんて素敵！\n秋月SoC基板のユーザーボタンを押すとSMSを送るシェルスクリプトが書けた pic.twitter.com/bqD2lna10W\nMarch 27, 2023\n\n\n \n \n普通のLinuxの端末から何か送信する場合、インターネット経由で何かしらのサーバを経由し、メッセージを送信することが多いと思います。\nこの基板でも、pppdを設定してインターネットとして接続すればそのような設定も可能ですが、直でSMSをコマンドで送信することってなかなか体験しないじゃないですかね。（pppdでダイヤルアップを設定して…っていうのをあんまりやったことが無くて、うまくいくかわかんないのでとりあえずSMSにしてみた、というわけでは…あぁっ）\n興味のある方はぜひ一度やってみてください。\n尚、キャリアロックはないはずですが、対応しているバンド外のSIMだとだめかもしれません。私はIIJmioの音声/SMS対応のカードを使用しています。",
-          "link": "https://honeylab.hatenablog.jp/entry/2023/03/28/002957",
-          "publishedOn": "2023-03-27T15:29:57.000Z",
-          "wordCount": null,
-          "title": "秋月謎SoC基板のボタンを使いこなす",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
