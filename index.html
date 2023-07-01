@@ -78,6 +78,31 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">libmy</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2023/07/01/223241" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>自分のライブラリでCpuFastSet使っているのですけどなんでメモリ転送にDMA使っていなんだ？と思って調べてみました。結果はtonc先生が教えてくれたのですけれど当時こういうことを考慮していたかというと全く記憶にございません（爆。DMAでバグったからCpuFastSetを使った・・・？。ま、まあ気にしないで作業に戻ります。以下google翻訳です。
+Tonc: DMA
+DMA が高速であることには疑問の余地がありません。 配列のコピーよりも最大 10 倍高速になります。 ただし、すべてのコピーにこれを使用するかどうかはよく考えてください。 高速ではありますが、他のすべての転送ルーチンを完全に吹き飛ばすわけではありません。 CpuFastSet() はコピーの場合は 10% 以内で、フィルの場合は実際に 10% 高速です。 速度の向上はそれほど大きな問題ではありません。 もう 1 つの問題は、CPU を停止させることで割り込みが台無しになり、一見ランダムなバグが発生する可能性があることです。 通常、タイマーや割り込みと組み合わせて使用する特定の用途がありますが、一般的なコピーの場合は、他のことも考慮することをお勧めします。 CpuFastSet() は優れたルーチンですが、tonclib には、それより安全で制限の少ない memcpy16()/32() および memset16()/32() ルーチンも付属しています。 ただし、これらはアセンブリ ルーチンであるため、ライブラリのアセンブル方法や使用方法を知る必要があります。
+
+うーんbiosかtoncかagbapiのmemcpyを使う方が安全かもしれません。butanoライブラリの方もクラッシュしたと報告しているので間違いないでしょう。
+github.com</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://crabgot.hatenablog.com/" target="_blank"
               rel="noopener">なんて巨大なカニゴット</a></h3>
           <section class="articles-per-source">
@@ -20536,25 +20561,6 @@ LLMの登場で、AI/ML業界も一変していく事になりそうです。
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
-              rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">入れ子構造を自由に拡張する – TypeScript版「Trees that Grow」</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://eng-blog.iij.ad.jp/archives/18900" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>This is a Japanese translation of Flexiblly Extend Nested Structures – “Trees that Grow” in Ty...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21994,7 +22000,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-07-01T13:05:32.834Z">2023-07-01T13:05:32.834Z</time>
+    <time id="build-timestamp" datetime="2023-07-01T14:02:02.168Z">2023-07-01T14:02:02.168Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

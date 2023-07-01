@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-01T13:05:32.892Z</updated>
+    <updated>2023-07-01T14:02:02.238Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[libmy]]></title>
+        <id>hatenablog://entry/820878482946368193</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/07/01/223241"/>
+        <updated>2023-07-01T13:32:41.000Z</updated>
+        <summary type="html"><![CDATA[自分のライブラリでCpuFastSet使っているのですけどなんでメモリ転送にDMA使っていなんだ？と思って調べてみました。結果はtonc先生が教えてくれたのですけれど当時こういうことを考慮していたかというと全く記憶にございません（爆。DMAでバグったからCpuFastSetを使った・・・？。ま、まあ気にしないで作業に戻ります。以下google翻訳です。
+Tonc: DMA
+DMA が高速であることには疑問の余地がありません。 配列のコピーよりも最大 10 倍高速になります。 ただし、すべてのコピーにこれを使用するかどうかはよく考えてください。 高速ではありますが、他のすべての転送ルーチンを完全に吹き飛ばすわけではありません。 CpuFastSet() はコピーの場合は 10% 以内で、フィルの場合は実際に 10% 高速です。 速度の向上はそれほど大きな問題ではありません。 もう 1 つの問題は、CPU を停止させることで割り込みが台無しになり、一見ランダムなバグが発生する可能性があることです。 通常、タイマーや割り込みと組み合わせて使用する特定の用途がありますが、一般的なコピーの場合は、他のことも考慮することをお勧めします。 CpuFastSet() は優れたルーチンですが、tonclib には、それより安全で制限の少ない memcpy16()/32() および memset16()/32() ルーチンも付属しています。 ただし、これらはアセンブリ ルーチンであるため、ライブラリのアセンブル方法や使用方法を知る必要があります。
+
+うーんbiosかtoncかagbapiのmemcpyを使う方が安全かもしれません。butanoライブラリの方もクラッシュしたと報告しているので間違いないでしょう。
+github.com]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【雑記】良かった動画を振り返ろう（2023年6月）]]></title>
         <id>hatenablog://entry/820878482946251130</id>
@@ -14242,16 +14257,6 @@ LLMの登場で、AI/ML業界も一変していく事になりそうです。
 …]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[入れ子構造を自由に拡張する – TypeScript版「Trees that Grow」]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=18900</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/18900"/>
-        <updated>2023-04-03T01:10:29.000Z</updated>
-        <summary type="html"><![CDATA[This is a Japanese translation of Flexiblly Extend Nested Structures – “Trees that Grow” in Ty...]]></summary>
-        <author>
-            <name>山本 悠滋</name>
         </author>
     </entry>
     <entry>
