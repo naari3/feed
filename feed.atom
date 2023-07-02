@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-02T02:31:22.140Z</updated>
+    <updated>2023-07-02T03:13:08.952Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メモ]]></title>
+        <id>hatenablog://entry/820878482946480958</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/07/02/113223"/>
+        <updated>2023-07-02T02:32:23.000Z</updated>
+        <summary type="html"><![CDATA[昨日の話を一言でいうならDMAは割り込み中のみ使用するべし、ということになります。
+サウンド回り以外使うべきではないのかも。他にもちょっと豆知識を。
+
+・GBFSツールは16バイト境界処理をしている。padbinは不要
+https://github.com/devkitPro/gba-tools/blob/master/src/gbfs.c#L194
+・BIOSのLZ77はSWI 12h(Vram)よりSWI 11h(Wram)の方が早い
+・main関数はrom領域にあるのでゲームのメインループにするべきではない]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[終わったTwitter]]></title>
         <id>https://note.com/sizes/n/n9062e5c0649a</id>

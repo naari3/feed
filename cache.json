@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482946480958",
+          "author": null,
+          "description": "昨日の話を一言でいうならDMAは割り込み中のみ使用するべし、ということになります。\nサウンド回り以外使うべきではないのかも。他にもちょっと豆知識を。\n\n・GBFSツールは16バイト境界処理をしている。padbinは不要\nhttps://github.com/devkitPro/gba-tools/blob/master/src/gbfs.c#L194\n・BIOSのLZ77はSWI 12h(Vram)よりSWI 11h(Wram)の方が早い\n・main関数はrom領域にあるのでゲームのメインループにするべきではない",
+          "link": "https://akkera102.hatenablog.com/entry/2023/07/02/113223",
+          "publishedOn": "2023-07-02T02:32:23.000Z",
+          "wordCount": 391,
+          "title": "メモ",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482946368193",
           "author": null,
           "description": "自分のライブラリでCpuFastSet使っているのですけどなんでメモリ転送にDMA使っていなんだ？と思って調べてみました。結果はtonc先生が教えてくれたのですけれど当時こういうことを考慮していたかというと全く記憶にございません（爆。DMAでバグったからCpuFastSetを使った・・・？。ま、まあ気にしないで作業に戻ります。以下google翻訳です。\nTonc: DMA\nDMA が高速であることには疑問の余地がありません。 配列のコピーよりも最大 10 倍高速になります。 ただし、すべてのコピーにこれを使用するかどうかはよく考えてください。 高速ではありますが、他のすべての転送ルーチンを完全に吹き飛ばすわけではありません。 CpuFastSet() はコピーの場合は 10% 以内で、フィルの場合は実際に 10% 高速です。 速度の向上はそれほど大きな問題ではありません。 もう 1 つの問題は、CPU を停止させることで割り込みが台無しになり、一見ランダムなバグが発生する可能性があることです。 通常、タイマーや割り込みと組み合わせて使用する特定の用途がありますが、一般的なコピーの場合は、他のことも考慮することをお勧めします。 CpuFastSet() は優れたルーチンですが、tonclib には、それより安全で制限の少ない memcpy16()/32() および memset16()/32() ルーチンも付属しています。 ただし、これらはアセンブリ ルーチンであるため、ライブラリのアセンブル方法や使用方法を知る必要があります。\n\nうーんbiosかtoncかagbapiのmemcpyを使う方が安全かもしれません。butanoライブラリの方もクラッシュしたと報告しているので間違いないでしょう。\ngithub.com",
