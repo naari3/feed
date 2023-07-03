@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482946926543",
+          "author": null,
+          "description": "今日はセーブロードに対応しました。セーブデータの共通フラグは0x50と0x51と適当に決め内して保存しています。このデータは各キャラクタのエンディングフラグらしい。全10種類（ビット単位）のフラグが立つとおまけが見れるそうな。琴音さんの背中「天」が見れる唯一のメタシナリオ。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/07/03/224438",
+          "publishedOn": "2023-07-03T13:44:38.000Z",
+          "wordCount": 384,
+          "title": "進捗",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482946480958",
           "author": null,
           "description": "昨日の話を一言でいうならDMAは割り込み中のみ使用するべし、ということになります。\nサウンド回り以外使うべきではないのかも。他にもちょっと豆知識を。\n\n・GBFSツールは16バイト境界処理をしている。padbinは不要\nhttps://github.com/devkitPro/gba-tools/blob/master/src/gbfs.c#L194\n・BIOSのLZ77はSWI 12h(Vram)よりSWI 11h(Wram)の方が早い\n・main関数はrom領域にあるのでゲームのメインループにするべきではない",
