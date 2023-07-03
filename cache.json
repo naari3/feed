@@ -9336,6 +9336,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/07/03/mytweets-bluesky/",
+          "author": null,
+          "description": "以前TwitterのTwilogの代替えとして、mytweetsというツールキットを作りました。\n自分のTweetsをインクリメンタル検索できるサービス作成キット と Tweetsをまとめて削除するツールを書いた | Web Scratch\nazu/mytweets: Search all your tweets.\n今回、mytweetsをBlueskyにも対応させました。\n合わせて、Vercelで動くようにしたりとか色々変更したので紹介します。\n\n特徴\nTwitterのTwitter archive dataをインポートできます\n\n全部の履歴を取り込めます。\nTwitterとBlueskyをサポートしています。\nアーカイブからの差分をAPIを使って取得して、常に全部のTweetsをまとめて検索できます。\n\nこのデータの更新はGitHub Actionsで自動化できます\n専用のウェブフロントエンドがあります。\n\nデータに対して全文検索して、結果を表示できます\n全文検索にはS3 Selectを使っています\nNext.js and Vercelであなたしか検索できないようにできます\n使い方\n全部書くと長いので、詳細はREADMEを読んでください。\nローカルとCIどちらでも基本的に動くようになっています(設定方法が違うだけです)。\nazu/mytweets: Search all your tweets.\nおそらく基本的には、一度ローカルでTwitterのアーカイブを一度インポートして、\nその後はGitHub Actionde定期的に更新していくという流れになると思います。\nここでは、GitHub Actionsでのデータの更新とVercelにウェブフロントエンドをデプロイする方法を紹介します。\nデータを保存するS3のBucketとIAMユーザーを作成する\nS3でmytweets…",
+          "link": "https://efcl.info/2023/07/03/mytweets-bluesky/",
+          "publishedOn": "2023-07-03T04:49:00.000Z",
+          "wordCount": null,
+          "title": "Tweetsの全部検索できるmytweetsをBlueskyに対応した。自分用Twilogみたいなもの",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/06/18/bluesky-post/",
           "author": null,
           "description": "自分用の投稿専用クライアントであるpostemとpost-tweetをそれぞれBlueskyに対応しました。\nazu/postem: Cross posting client for twitter, hatebu, and own services.\nazu/post-tweet: Simple post client for twitter and bluesky.\n\nそれぞれ紹介記事を書いてありますが、多分自分しか使ってないとは思います。\nただ、投稿の8割ぐらいはこれ経由な気がするので、かなり使っているツールです。\nURLスキームで起動できる投稿専用のTwitterクライアントを書いた | Web Scratch\nTwitterやはてなブックマークにクロスポストできるクライアントアプリを書いた | Web Scratch\nJSer.infoの更新のためのデータを入れるのは、postemが99%ぐらいなので、ほぼ毎日使ってる感じです。\nJSer.info 10周年: JavaScript情報の集め方、書き方、まとめ方 - JSer.info\nBlueskyの対応\nBlueskyは、裏側の仕組みが違う見た目がTwitterみたいなサービスです。\nまたPrivate Betaですが、@s7tyaさんに招待コードをもらったので、アカウントを作っていじっています。\nazu (@azu.bsky.social) - Bluesky\nTwitterみたいなものなので、Twitterに投稿するときのリンク投稿用クライアントであるそれぞれもBlueskyに対応してみました。\nazu/postem: Cross posting client for twitter, hatebu, and own services.\nazu/post-tweet: Simple post client …",
@@ -9392,6 +9402,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=20414",
+          "author": "doumae",
+          "description": "IIJは2023年7月5日(水)～7日(金)に長崎で開催されるJANOG 52 meetingに参加いたします。 JANOG 52 meeting in nagasaki https://www.ja...",
+          "link": "https://eng-blog.iij.ad.jp/archives/20414",
+          "publishedOn": "2023-07-03T05:30:56.000Z",
+          "wordCount": null,
+          "title": "IIJ、JANOG 52 meeting展示ブース参加＆会場ネットワークにトランジット提供",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=20145",
           "author": "新 麗 (ray)",

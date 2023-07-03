@@ -2,10 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-03T05:02:15.021Z</updated>
+    <updated>2023-07-03T06:01:57.541Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[IIJ、JANOG 52 meeting展示ブース参加＆会場ネットワークにトランジット提供]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=20414</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/20414"/>
+        <updated>2023-07-03T05:30:56.000Z</updated>
+        <summary type="html"><![CDATA[IIJは2023年7月5日(水)～7日(金)に長崎で開催されるJANOG 52 meetingに参加いたします。 JANOG 52 meeting in nagasaki https://www.ja...]]></summary>
+        <author>
+            <name>doumae</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tweetsの全部検索できるmytweetsをBlueskyに対応した。自分用Twilogみたいなもの]]></title>
+        <id>https://efcl.info/2023/07/03/mytweets-bluesky/</id>
+        <link href="https://efcl.info/2023/07/03/mytweets-bluesky/"/>
+        <updated>2023-07-03T04:49:00.000Z</updated>
+        <summary type="html"><![CDATA[以前TwitterのTwilogの代替えとして、mytweetsというツールキットを作りました。
+自分のTweetsをインクリメンタル検索できるサービス作成キット と Tweetsをまとめて削除するツールを書いた | Web Scratch
+azu/mytweets: Search all your tweets.
+今回、mytweetsをBlueskyにも対応させました。
+合わせて、Vercelで動くようにしたりとか色々変更したので紹介します。
+
+特徴
+TwitterのTwitter archive dataをインポートできます
+
+全部の履歴を取り込めます。
+TwitterとBlueskyをサポートしています。
+アーカイブからの差分をAPIを使って取得して、常に全部のTweetsをまとめて検索できます。
+
+このデータの更新はGitHub Actionsで自動化できます
+専用のウェブフロントエンドがあります。
+
+データに対して全文検索して、結果を表示できます
+全文検索にはS3 Selectを使っています
+Next.js and Vercelであなたしか検索できないようにできます
+使い方
+全部書くと長いので、詳細はREADMEを読んでください。
+ローカルとCIどちらでも基本的に動くようになっています(設定方法が違うだけです)。
+azu/mytweets: Search all your tweets.
+おそらく基本的には、一度ローカルでTwitterのアーカイブを一度インポートして、
+その後はGitHub Actionde定期的に更新していくという流れになると思います。
+ここでは、GitHub Actionsでのデータの更新とVercelにウェブフロントエンドをデプロイする方法を紹介します。
+データを保存するS3のBucketとIAMユーザーを作成する
+S3でmytweets…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【復旧済み】はてなブログの決済関連機能において不具合が発生していました]]></title>
         <id>hatenablog://entry/820878482946785164</id>
