@@ -4871,6 +4871,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482946785164",
+          "author": null,
+          "description": "2023年7月3日9:00頃から13:25頃まで、はてなブログの決済関連機能において不具合が発生していました。サーバー構成の不備によるもので、現在は復旧しています。\n影響があった機能は下記の通りです。\nクレジットカード情報の登録、変更\nはてなブログの有料プラン（はてなブログPro、はてなブログBusiness、はてなブログ for DevBlog）の新規購入、決済失敗時の修正操作\nはてなブログ法人プランにおける「お支払い履歴」の表示\n障害発生中に上記を実行していただいた方は、お手数をおかけいたしますが再度操作をお願いいたします。\nご利用の皆様にはご不便をおかけし誠に申し訳ございません。再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2023/07/03/133435",
+          "publishedOn": "2023-07-03T04:34:35.000Z",
+          "wordCount": 809,
+          "title": "【復旧済み】はてなブログの決済関連機能において不具合が発生していました",
+          "enclosure": {
+            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
+        },
+        {
           "id": "hatenablog://entry/820878482945930592",
           "author": null,
           "description": "class名の設定は、モジュール設定の最下部、高度な設定内にあります\nこの改善により、同じ種類のモジュール配置し、それぞれ見た目を変えたい場合など、柔軟にデザインの指定を行うことが可能になります。\nデザイン設定にはCSSの知識が必要になるため、高度な設定としています。こだわったデザインを行いたい場合、ぜひご利用ください。",
