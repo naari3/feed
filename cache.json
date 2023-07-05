@@ -9296,6 +9296,26 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/07/05/convert-to-esm/",
+          "author": null,
+          "description": "Secretlint v7でCommonJS からES Modulesへの移行を行いました。\nSecretlint v7.0.0をリリースしました。Pure ESMへの書き直し\nこの記事では、CommonJS(CJS)からES Modules(ESM)への移行を行った経緯と、移行する方法について紹介します。\nCJSからESMへの移行は、率直に言えば単調な作業で、メリットが見えにくい作業です。\nしかし、将来的にCJSよりもESMが主流になることは間違いないので、移行することは必要です。\n移行の作業は、移行方法が決まれば大部分は機械的な書き換えが可能です。\nでは、実際にどうやって移行したのかを紹介します。\nESMへの移行の影響は依存元へと連鎖する\nSecretlintのリポジトリはmonorepoになっていて、だいたい40コぐらいのパッケージが含まれています。\nそしてパッケージ間で依存関係があります。\nたとえば、次のような依存関係がmonorepo内にあります。\n@secretlint/quick-startはsecretlintパッケージをラップしたものなので、secretlintに依存\nsecretlintは、Node.js向けのAPIを持つ@secretlint/nodeに依存\n@secretlint/nodeは、SecretlintのコアAPIを持つ@secretlint/coreに依存\n@secretlint/coreは、パッケージ間で参照する型定義だけをまとめた@secretlint/typesに依存\n\nESMへの移行は、必然的にこの依存関係全体的へ影響します。\nなぜなら、ESMのモジュールは基本的にESMのコードからしかインポートできないためです。\nそのため、CommonJS(CJS)からESMのモジュールをrequireで読み込むことはできません。\nCJSからE…",
+          "link": "https://efcl.info/2023/07/05/convert-to-esm/",
+          "publishedOn": "2023-07-05T12:47:00.000Z",
+          "wordCount": 1207,
+          "title": "CommonJSからES Modulesへの移行する方法。トップダウンかボトムアップか",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
+          "id": "https://efcl.info/2023/07/05/secretlint-v7/",
+          "author": null,
+          "description": "機密情報をLintできるSecretlintのv7.0.0をリリースしました！\nRelease v7.0.0 · secretlint/secretlint\nこのバージョンでは、SecretlintをESMモジュールとして書き直しました。\nどのように移行したかは別の記事で紹介しているので、移行方法について記事を参照してください\nCommonJSからES Modulesへの移行する方法。トップダウンかボトムアップか\nSecretlint v7.0.0の変更点\nルールと本体のコードを含めて、全部のパッケージをESMに書き直しました。\nその中で、いろいろ整理したりもしたので、変更点はいろいろあります。\nただし、secretlintコマンドや@secretlint/quick-start、Docker Imageとして使う場合は、そこまで目にみえる変化は少ないと思います。\n詳細はリリースノートも参照してください。\nRelease v7.0.0 · secretlint/secretlint\nBreaking Changes\nNode.js 18+を必要とするようになりました\n\nこれはパッケージのコードをES2022形式で出力するようにしたためです。\nNode.js 14は2023年4月でEOL、Node.js 16は2023年9月でEOLなので、Node.js 18を使うことをおすすめします\nnodejs/Release: Node.js Release Working Group\nDocker ImageのBase ImageをNode.js 18に更新しました\nExit Statusがあまり明確になっていなかったのを整理しました。\n\n基本的には次のようなExit Statusを返すようになりました\n0: Lintに成功し、問題なし\n1: Lintに失敗し、問題がある\n2: クラ…",
+          "link": "https://efcl.info/2023/07/05/secretlint-v7/",
+          "publishedOn": "2023-07-05T12:42:00.000Z",
+          "wordCount": 872,
+          "title": "Secretlint v7.0.0をリリースしました。Pure ESMへの書き直し",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2023/07/03/mytweets-bluesky/",
           "author": null,
           "description": "以前TwitterのTwilogの代替えとして、mytweetsというツールキットを作りました。\n自分のTweetsをインクリメンタル検索できるサービス作成キット と Tweetsをまとめて削除するツールを書いた | Web Scratch\nazu/mytweets: Search all your tweets.\n今回、mytweetsをBlueskyにも対応させました。\n合わせて、Vercelで動くようにしたりとか色々変更したので紹介します。\n\n特徴\nTwitterのTwitter archive dataをインポートできます\n\n全部の履歴を取り込めます。\nTwitterとBlueskyをサポートしています。\nアーカイブからの差分をAPIを使って取得して、常に全部のTweetsをまとめて検索できます。\n\nこのデータの更新はGitHub Actionsで自動化できます\n専用のウェブフロントエンドがあります。\n\nデータに対して全文検索して、結果を表示できます\n全文検索にはS3 Selectを使っています\nNext.js and Vercelであなたしか検索できないようにできます\n使い方\n全部書くと長いので、詳細はREADMEを読んでください。\nローカルとCIどちらでも基本的に動くようになっています(設定方法が違うだけです)。\nazu/mytweets: Search all your tweets.\nおそらく基本的には、一度ローカルでTwitterのアーカイブを一度インポートして、\nその後はGitHub Actionde定期的に更新していくという流れになると思います。\nここでは、GitHub Actionsでのデータの更新とVercelにウェブフロントエンドをデプロイする方法を紹介します。\nデータを保存するS3のBucketとIAMユーザーを作成する\nS3でmytweets…",

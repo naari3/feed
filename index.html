@@ -78,6 +78,80 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">CommonJSからES Modulesへの移行する方法。トップダウンかボトムアップか</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/07/05/convert-to-esm/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Secretlint v7でCommonJS からES Modulesへの移行を行いました。
+Secretlint v7.0.0をリリースしました。Pure ESMへの書き直し
+この記事では、CommonJS(CJS)からES Modules(ESM)への移行を行った経緯と、移行する方法について紹介します。
+CJSからESMへの移行は、率直に言えば単調な作業で、メリットが見えにくい作業です。
+しかし、将来的にCJSよりもESMが主流になることは間違いないので、移行することは必要です。
+移行の作業は、移行方法が決まれば大部分は機械的な書き換えが可能です。
+では、実際にどうやって移行したのかを紹介します。
+ESMへの移行の影響は依存元へと連鎖する
+Secretlintのリポジトリはmonorepoになっていて、だいたい40コぐらいのパッケージが含まれています。
+そしてパッケージ間で依存関係があります。
+たとえば、次のような依存関係がmonorepo内にあります。
+@secretlint/quick-startはsecretlintパッケージをラップしたものなので、secretlintに依存
+secretlintは、Node.js向けのAPIを持つ@secretlint/nodeに依存
+@secretlint/nodeは、SecretlintのコアAPIを持つ@secretlint/coreに依存
+@secretlint/coreは、パッケージ間で参照する型定義だけをまとめた@secretlint/typesに依存
+
+ESMへの移行は、必然的にこの依存関係全体的へ影響します。
+なぜなら、ESMのモジュールは基本的にESMのコードからしかインポートできないためです。
+そのため、CommonJS(CJS)からESMのモジュールをrequireで読み込むことはできません。
+CJSからE…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Secretlint v7.0.0をリリースしました。Pure ESMへの書き直し</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/07/05/secretlint-v7/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>機密情報をLintできるSecretlintのv7.0.0をリリースしました！
+Release v7.0.0 · secretlint/secretlint
+このバージョンでは、SecretlintをESMモジュールとして書き直しました。
+どのように移行したかは別の記事で紹介しているので、移行方法について記事を参照してください
+CommonJSからES Modulesへの移行する方法。トップダウンかボトムアップか
+Secretlint v7.0.0の変更点
+ルールと本体のコードを含めて、全部のパッケージをESMに書き直しました。
+その中で、いろいろ整理したりもしたので、変更点はいろいろあります。
+ただし、secretlintコマンドや@secretlint/quick-start、Docker Imageとして使う場合は、そこまで目にみえる変化は少ないと思います。
+詳細はリリースノートも参照してください。
+Release v7.0.0 · secretlint/secretlint
+Breaking Changes
+Node.js 18+を必要とするようになりました
+
+これはパッケージのコードをES2022形式で出力するようにしたためです。
+Node.js 14は2023年4月でEOL、Node.js 16は2023年9月でEOLなので、Node.js 18を使うことをおすすめします
+nodejs/Release: Node.js Release Working Group
+Docker ImageのBase ImageをNode.js 18に更新しました
+Exit Statusがあまり明確になっていなかったのを整理しました。
+
+基本的には次のようなExit Statusを返すようになりました
+0: Lintに成功し、問題なし
+1: Lintに失敗し、問題がある
+2: クラ…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://saize-lw.hatenablog.com/" target="_blank"
               rel="noopener">LWのサイゼリヤ</a></h3>
           <section class="articles-per-source">
@@ -22119,7 +22193,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-07-05T14:02:46.169Z">2023-07-05T14:02:46.169Z</time>
+    <time id="build-timestamp" datetime="2023-07-05T15:02:20.979Z">2023-07-05T15:02:20.979Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
