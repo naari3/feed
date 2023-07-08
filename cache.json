@@ -5518,23 +5518,7 @@
       "title": "かーねるさんとか",
       "feedUrl": "https://yasukata.hatenablog.com/rss",
       "siteUrl": "https://yasukata.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/4207112889978608056",
-          "author": null,
-          "description": "OS のメモリ管理の仕組みについて調べたことをまとめました。\n読んでいただくと、以下のようなことについて少し詳しくわかるかもしれません。\nあるユーザー空間プロセスが他のユーザー空間プロセスのメモリにアクセスできない理由\nユーザー空間プロセスがカーネル空間のメモリにアクセスできない理由\nユーザー空間のプロセスとスレッドの違いはどのように実装できるか\n共有メモリはどのように実装できるか\nメモリマップトファイルはどのように実装できるか\nmalloc は何故必要か\nあるコンテナが別のコンテナのメモリにアクセスできない理由\nコンテナと仮想マシンのメモリ領域の分離についての違い\n上記の全ての点について、仮想メモリという一つの機構で概ね説明可能である、というのが今回のポイントです。\nまた、そもそものユーザー空間プロセスとメモリの関係についても、少しわかるかもしれません。\n当記事は、x86-64 CPU で動作する汎用 OS 環境を想定しています。\nメモリ\n当記事では、Dynamic Random Access Memory (DRAM) についてメモリと呼ぶとします。\nメモリは、ハードウェアの仕様上、CPU からアクセス可能な記憶領域で、パソコンには基本的なパーツとして付属しています。\nメモリには、各バイト（8-bit）ごとに 0 からメモリの最大容量まで番地（アドレス）が振ってあり、CPU からメモリへのデータの書き出し・読み込みは、アドレスを元に行います。（後述しますが、このアドレスは物理メモリアドレスと呼ばれます。）\nCPU からメモリへのアクセスはいつどのように発生するか\nまず、プログラムがどのようにメモリを利用しているか、具体的には、メモリへのアクセスがどのように発生するかということについて見ていきます。\n前提として、\nCPU はプログラムを実行するハードウェアで、\nCPU は…",
-          "link": "https://yasukata.hatenablog.com/entry/2023/04/10/085714",
-          "publishedOn": "2023-04-09T23:57:14.000Z",
-          "wordCount": null,
-          "title": "OS のメモリ管理の仕組み",
-          "enclosure": {
-            "url": "https://raw.githubusercontent.com/yasukata/asset/master/img/osmem_20230410/memaccess.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://raw.githubusercontent.com/yasukata/asset/master/img/osmem_20230410/memaccess.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "膳（仮）",
@@ -8793,16 +8777,6 @@
           "wordCount": null,
           "title": "ドキュメント始まります。\nhttp...",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/tarent26/n/n80c235cff715",
-          "author": null,
-          "description": "新連載よろしくお願いします！\nhttps://www.47news.jp/9174852.html 続きをみる",
-          "link": "https://note.com/tarent26/n/n80c235cff715",
-          "publishedOn": "2023-04-09T23:09:29.000Z",
-          "wordCount": 1217,
-          "title": "新連載よろしくお願いします！\nht...",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/31920906/profile_fd23b3229e83cdf4ccc0096cdd25b160.png?fit=bounds&format=jpeg&quality=85&width=330"
         }
       ]
     },
@@ -9252,6 +9226,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2023/07/08/cloudflare-page-zero-trust/",
+          "author": null,
+          "description": "Cloudflare Pagesの {name}.pages.dev ドメインに自分だけアクセスできるようにアクセス制限をつける手順です。\nアプリケーション側の変更は不要で、Cloudflare Accessの機能を使ってアクセス制御ができます。\nカスタムドメイン(Cloudflare DNS)を設定している場合の方法は色々ありますが、デフォルトで用意されている {name}.pages.dev ドメインに対して設定する手順についてです。\nこの手順がかなりややこしいので、設定方法メモ書きです。\nプレビューブランチへのアクセス制御の有効化手順\nCloudflare Pagesでページを作る\nSettings -> Access policyでEnable access policyをONにする\nこれで、*.{name}.pages.dev に対するアクセス制御が有効化されます。\n*.{name}.pages.devとなっていることからも分かるように、これはプレビューブランチに対する制御だけしかできていません。\nhttps://{name}.pages.dev にアクセスした際にもアクセス制御をかけたい場合は、Zero Trust画面で別途設定する必要があります。\nメインドメインへのアクセス制御の有効化手順\n{name}.pages.devに対してアクセス制御を有効化する手順です。\nSettings -> Access policyのManage PoliciesポリシーからAccess/Applicationsのページへ移動する\n\nhttps://one.dash.cloudflare.com/{id}/access/apps のようなURLです\n\n先ほど追加された*.{name}.pages.devのポリシーがあるのを確認できます\n*.{name}.pages.devの右に…",
+          "link": "https://efcl.info/2023/07/08/cloudflare-page-zero-trust/",
+          "publishedOn": "2023-07-08T10:32:00.000Z",
+          "wordCount": null,
+          "title": "Cloudflare Pagesの`{name}.pages.dev`ドメインに自分だけアクセスできるようにアクセス制限をつける手順",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2023/07/05/convert-to-esm/",
           "author": null,

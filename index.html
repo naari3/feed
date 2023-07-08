@@ -107,6 +107,42 @@ SVシーズン7、滑り込みでマスボ級に到達した。
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Cloudflare Pagesの&#x60;{name}.pages.dev&#x60;ドメインに自分だけアクセスできるようにアクセス制限をつける手順</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/07/08/cloudflare-page-zero-trust/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Cloudflare Pagesの {name}.pages.dev ドメインに自分だけアクセスできるようにアクセス制限をつける手順です。
+アプリケーション側の変更は不要で、Cloudflare Accessの機能を使ってアクセス制御ができます。
+カスタムドメイン(Cloudflare DNS)を設定している場合の方法は色々ありますが、デフォルトで用意されている {name}.pages.dev ドメインに対して設定する手順についてです。
+この手順がかなりややこしいので、設定方法メモ書きです。
+プレビューブランチへのアクセス制御の有効化手順
+Cloudflare Pagesでページを作る
+Settings -&gt; Access policyでEnable access policyをONにする
+これで、*.{name}.pages.dev に対するアクセス制御が有効化されます。
+*.{name}.pages.devとなっていることからも分かるように、これはプレビューブランチに対する制御だけしかできていません。
+https://{name}.pages.dev にアクセスした際にもアクセス制御をかけたい場合は、Zero Trust画面で別途設定する必要があります。
+メインドメインへのアクセス制御の有効化手順
+{name}.pages.devに対してアクセス制御を有効化する手順です。
+Settings -&gt; Access policyのManage PoliciesポリシーからAccess/Applicationsのページへ移動する
+
+https://one.dash.cloudflare.com/{id}/access/apps のようなURLです
+
+先ほど追加された*.{name}.pages.devのポリシーがあるのを確認できます
+*.{name}.pages.devの右に…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/hercelot" target="_blank"
               rel="noopener">Hercelot</a></h3>
           <section class="articles-per-source">
@@ -20399,74 +20435,6 @@ Gboard やSimajiのような比較的音声入力を優秀なソフトウェア�
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2023-04-09">2023-04-09</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://yasukata.hatenablog.com/" target="_blank"
-              rel="noopener">かーねるさんとか</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">OS のメモリ管理の仕組み</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://yasukata.hatenablog.com/entry/2023/04/10/085714" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>OS のメモリ管理の仕組みについて調べたことをまとめました。
-読んでいただくと、以下のようなことについて少し詳しくわかるかもしれません。
-あるユーザー空間プロセスが他のユーザー空間プロセスのメモリにアクセスできない理由
-ユーザー空間プロセスがカーネル空間のメモリにアクセスできない理由
-ユーザー空間のプロセスとスレッドの違いはどのように実装できるか
-共有メモリはどのように実装できるか
-メモリマップトファイルはどのように実装できるか
-malloc は何故必要か
-あるコンテナが別のコンテナのメモリにアクセスできない理由
-コンテナと仮想マシンのメモリ領域の分離についての違い
-上記の全ての点について、仮想メモリという一つの機構で概ね説明可能である、というのが今回のポイントです。
-また、そもそものユーザー空間プロセスとメモリの関係についても、少しわかるかもしれません。
-当記事は、x86-64 CPU で動作する汎用 OS 環境を想定しています。
-メモリ
-当記事では、Dynamic Random Access Memory (DRAM) についてメモリと呼ぶとします。
-メモリは、ハードウェアの仕様上、CPU からアクセス可能な記憶領域で、パソコンには基本的なパーツとして付属しています。
-メモリには、各バイト（8-bit）ごとに 0 からメモリの最大容量まで番地（アドレス）が振ってあり、CPU からメモリへのデータの書き出し・読み込みは、アドレスを元に行います。（後述しますが、このアドレスは物理メモリアドレスと呼ばれます。）
-CPU からメモリへのアクセスはいつどのように発生するか
-まず、プログラムがどのようにメモリを利用しているか、具体的には、メモリへのアクセスがどのように発生するかということについて見ていきます。
-前提として、
-CPU はプログラムを実行するハードウェアで、
-CPU は…</span>
-                  </div>
-                  <img src="https://raw.githubusercontent.com/yasukata/asset/master/img/osmem_20230410/memaccess.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/tarent26" target="_blank"
-              rel="noopener">チャーミングじろうちゃん</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">新連載よろしくお願いします！
-ht...</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/tarent26/n/n80c235cff715" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>新連載よろしくお願いします！
-https://www.47news.jp/9174852.html 続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/31920906/profile_fd23b3229e83cdf4ccc0096cdd25b160.png?fit&#x3D;bounds&amp;format&#x3D;jpeg&amp;quality&#x3D;85&amp;width&#x3D;330" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2023-04-07">2023-04-07</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -22083,7 +22051,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-07-08T11:01:52.858Z">2023-07-08T11:01:52.858Z</time>
+    <time id="build-timestamp" datetime="2023-07-08T12:01:48.119Z">2023-07-08T12:01:48.119Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
