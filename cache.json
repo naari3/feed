@@ -5341,21 +5341,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/asonas/20230414/20230414162951.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889980534695",
-          "author": null,
-          "description": "こんにちは！メディアプロダクト開発部マーケティングサービス開発グループ (msdev) のなどやま (@pndcat) です。業務では、クックパッドの広告の開発・運用や、新規サービスの開発をしています。本業の推し活動では、今年の夏はたくさんのイベントに参加するため、推し活動もがんばっていく予定です。\n今週は msdev week として Techlife を更新しており、この記事は2日目になります。\nクックパッドの toB 向け事業における ChatGPT API の活用事例紹介」の投稿でした。\nはじめに\nこの記事では、Kaigi on Rails 2022 森羅万象に「いいね」するためのデータ構造 というタイトルで発表をした、Rails を用いたデータ構造のリファクタリングについて紹介します。ポリモーフィック関連を用いたリファクタリングにより、テーブルやコードの重複を排除し、メンテナンス性や拡張性を向上させることができました。データ構造をリファクタリングする背景や、具体的な手法、そしてなぜその変更を行うことができたのかについてを詳しく説明します。\n目次\nデータ構造の初期設計\n\n\n新機能の「いいね」を実装したい\n最初のデータ構造\nリリースをして1年... どうなったか...\nポリモーフィック関連を使ったデータ構造に変更\n\n\n新しいデータ構造: likes と anonymous_likes\nリファクタリングの手順\n\n\n新旧いいねのテーブルに書き込む (Write)\n旧いいねを新いいねにマイグレーションする (バッチ)\n新いいねを使う (Read)\n旧いいねのモデルとテーブルを削除する (Delete)\nまとめ\nデータ構造の初期設計\n新機能の「いいね」を実装したい\nmsdev では、中小の食関連メーカーとユーザーをつなぐコミュニケーションプラットフォーム「メーカーズタウン」を…",
-          "link": "https://techlife.cookpad.com/entry/2023/04/13/141200",
-          "publishedOn": "2023-04-13T05:12:00.000Z",
-          "wordCount": null,
-          "title": "ポリモーフィック関連を活用し、森羅万象の「いいね」を実現する手法",
-          "enclosure": {
-            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -8583,16 +8568,6 @@
           "wordCount": 2318,
           "title": "価値は感染力の高い感染症であり、それは２パターンに分かれる",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/102959949/rectangle_large_type_2_63f7753b531338f0a60c8d9f68f1cbf9.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/nd465191c92ae",
-          "author": null,
-          "description": "疲れていて何もできないと、すぐさまベッドに横たわってしまうのではないか。それ自体は致し方のないことだけれど、問題はここから起き上がれないことである。精神的にも即物的にも、休むだけでダラダラしてしまう。\n僕はむかしベッドから起き上がれなかった時期があり、その時は自分が学校を中退していたり、身内の病気があったりして凄くストレスが溜まっていた。\n続きをみる",
-          "link": "https://note.com/sizes/n/nd465191c92ae",
-          "publishedOn": "2023-04-13T06:00:52.000Z",
-          "wordCount": null,
-          "title": "過酷な自己啓発・言葉の魔法",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/102900533/rectangle_large_type_2_2ef887e6ada4b9be43e03bdffd4d11d8.jpeg?width=800"
         }
       ]
     },
