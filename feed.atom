@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-12T07:01:55.833Z</updated>
+    <updated>2023-07-12T08:02:10.869Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「記事の有料販売（codoc連携）」に関する機能追加（下書きプレビュー共有URL・限定公開サブスクリプション）]]></title>
+        <id>hatenablog://entry/820878482949172922</id>
+        <link href="https://staff.hatenablog.com/entry/2023/07/12/164520"/>
+        <updated>2023-07-12T07:45:20.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、「記事の有料販売（codoc連携）」に関する機能追加を行いましたのでお知らせいたします。
+「下書きのプレビューを共有する」機能で有料部分を確認できるようにしました
+「下書きのプレビューを共有する」機能で取得できるURLで、有料部分の内容が確認できるようにしました。有料販売記事の確認依頼の際などにご活用ください。
+限定公開のサブスクリプションも指定できるようにしました
+codoc上で公開設定を「限定公開」*1にしているサブスクリプションも指定できるようにしました。
+
+
+限定公開のサブスクリプションを設定した記事は、はてなブログの記事URLからは「記事を購入する」ボタンが表示されません。codoc上で確認できるサブスクリプションの公開ページURLから、該当の限定サブスクリプションを購入している人のみ有料部分を閲覧できます。
+
+
+特定の人だけに限定公開のディスカウントしたサブスクリプションがあり、その人たちだけが購入できる記事をブログ上に表示したい。
+特定の人には限定公開サブスクリプション価格で購入してもらいつつ、それ以外の人には単体販売したい（1つの記事に単体販売と限定公開のサブスクリプションの両方を設定する）
+といったシーンなどでご活用ください。
+
+*1:codoc側の公開URLを共有している人だけ購入できる機能]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[wip #2 ?]]></title>
         <id>https://note.com/ocha307/n/nef579ec3980d</id>
