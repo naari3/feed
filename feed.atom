@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-15T23:02:26.780Z</updated>
+    <updated>2023-07-16T00:03:31.070Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14058,24 +14058,6 @@ San Franciso - MIDCRONICA
         <summary type="html"><![CDATA[こんにちは！メルカリのセラーエンゲージメントチームのRakeshです。最近、インターン生のメンターを担当していました。インターン生の名前はPriyanshです。彼がメルカリで担当した仕事の一部である、Firebaseを使 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VivadoのBlock Designで特定の配線だけ消したい]]></title>
-        <id>hatenablog://entry/4207112889982175143</id>
-        <link href="https://fumimaker.net/entry/2023/04/17/201007?utm_source=feed"/>
-        <updated>2023-04-17T11:10:07.000Z</updated>
-        <summary type="html"><![CDATA[普通に配線選択してDeleteすると全部消えてしまって絶望。特にClock周りが全部消えて萎える。よくありませんか。ここではm00_axis_aclkを消したいというケースを想定して説明します。
-
-特定のポートだけ選択
-
-DisconnectPinを選択
-
-特定のピンから生えてる配線だけ削除することに成功。やったね。
-
-(これだけですすみません)]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
     <entry>
