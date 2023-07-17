@@ -78,6 +78,51 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">時期を決めて定期的に更新するnpmパッケージをChangesetsで管理する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/07/17/regular-updates-by-changesets/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>毎月や半年に一回といったように、リリースする時期(間隔)を決めて更新するタイプのパッケージがあります。
+具体的には、次のtextlintのプリセットルールは1月と7月という形で半年に一回リリースしています。
+textlint-ja/textlint-rule-preset-japanese: textlint rule preset for Japanese.
+textlint-ja/textlint-rule-preset-ja-technical-writing: 技術文書向けのtextlintルールプリセット
+なぜ、このようにリリースする時期を決めているかというと、これらのパッケージは他のパッケージに依存していて、他のパッケージの更新がそのままメジャーアップデートになりやすい性質があるためです。
+そのため、依存を更新してリリースすると、頻繁にメジャーアップデートしないといけなくなります。
+具体的には、Semantic Versioningに則っているので次のルールでバージョンを更新しています。
+Patch リリース
+
+各ルールのバグ修正 (警告を減らす方向への修正)
+ドキュメントの改善
+内部的な変更 (リファクタリングやテストの改善など)
+リリース失敗時の再リリース
+Minor リリース
+
+各ルールのバグ修正 (警告を増やす方向への修正)
+新オプションの追加
+既存ルールの非推奨化
+Major リリース
+
+プリセットへのルールの追加
+プリセットからルールの削除
+既存のオプション値の変更
+ルールの追加やルールのメジャーアップデートがあると、プリセットもメジャーアップデートが必要になります。
+頻繁にメジャーアップデートすると、ユーザーがメジャーアップデートをするのが面倒になるので、ある程度の間隔にまとめてリリースするようにしています。
+まとめてリリースすると、それまでの間に…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
               rel="noopener">あーさん日記</a></h3>
           <section class="articles-per-source">
@@ -21806,7 +21851,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-07-17T12:02:35.010Z">2023-07-17T12:02:35.010Z</time>
+    <time id="build-timestamp" datetime="2023-07-17T13:08:12.723Z">2023-07-17T13:08:12.723Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
