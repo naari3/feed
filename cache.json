@@ -8763,18 +8763,7 @@
       "title": "Posts on ストイックに生きたい",
       "feedUrl": "https://blog.sakamo.dev/post/index.xml",
       "siteUrl": "https://blog.sakamo.dev/post/",
-      "articles": [
-        {
-          "id": "https://blog.sakamo.dev/post/node-local-dns-cache/",
-          "author": null,
-          "description": "Using NodeLocal DNSCache in Kubernetes Clusters に書いてある\n\n\n\n\n    \n\nTweet\n\n\n\n  \n概要\n仕組み\nインストール方法\n      \n通常\ncilium\n検証\n      \n内部ドメイン\n外部ドメイン\ncilium\n概要\n\n    \n        \n\n    \n\n\n公式ドキュメント で紹介されているとおり、DNS のキャッシュ用エージェント（CoreDNS）を DaemonSet で各 Node に配置することで、DNS のパフォーマンスを改善しようというものである。やってること自体はシンプルで、キャッシュがあればそれを返すし、なければ kube-dns に問い合わせたり、Node 上の /etc/resolv.conf を参照して名前解決をしたりする。\nKubernetes DNS にある。\n仕組み\n\n    \n        \n\n    \n\n\n\n公式ドキュメントの図がわかりやすいので引用した。\nデフォルト（clusterDNS: kube-dns）では、クライアント側の Pod の dnsPolicy が ClusterFirst の場合、kubelet に指定されている clusterDNS で名前解決を行う。\n17: nodelocaldns: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default\n    link/ether c6:df:93:00:8f:3a brd ff:ff:ff:ff:ff:ff\n    inet 169.254.20.10/32 scope global nodelocaldns\n       valid_lft forever preferred_lft forever\n    inet 172.2…",
-          "link": "https://blog.sakamo.dev/post/node-local-dns-cache/",
-          "publishedOn": "2023-04-19T14:13:48.000Z",
-          "wordCount": null,
-          "title": "Nodelocal DNSCache とはなにか",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Wesley Aptekar-Cassels",
@@ -9826,6 +9815,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=39037",
+          "author": "mamosuke",
+          "description": "BwE PS4 NOR Validator 2.3.2.ARK-4 v1689626583,Nazi Zombies: Portable(nzportable) 2.0.0-indev+20230717071934,Vita3K Build: 3280,xemu v0.7.99,Ryujinx2023年6月の開発状況進捗レポート,Universal Dreamcast Patcher v1.6→→→この記事の続きを読む\nGameGaz Daily 2023.7.18 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023071839037/",
+          "publishedOn": "2023-07-18T00:25:49.000Z",
+          "wordCount": 1493,
+          "title": "GameGaz Daily 2023.7.18",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=39034",
           "author": "mamosuke",
@@ -10966,6 +10965,21 @@
       "feedUrl": "https://naari3.github.io/mangacross-rss/yabai/feed.xml",
       "siteUrl": "https://mangacross.jp/comics/yabai/",
       "articles": [
+        {
+          "id": "https://mangacross.jp/comics/yabai/133",
+          "author": "桜井のりお",
+          "description": "僕の心のヤバイやつ Karte.125 僕らは育児する - 2024年1月TVアニメ第二期放送決定!! 累計333万部突破！SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!!",
+          "link": "https://mangacross.jp/comics/yabai/133",
+          "publishedOn": "2023-07-18T01:00:00.000Z",
+          "wordCount": 602,
+          "title": "Karte.125 | 僕らは育児する",
+          "enclosure": {
+            "url": "https://mangacross.jp/images/episode/lyYYLflcOmIGtTIt3fGVHjr6px-JwvltpUwbi1Pl1Dk/episode_thumbnail/thumb_double.png?1689292477",
+            "length": "78510",
+            "type": "image/png"
+          },
+          "imageUrl": "https://mangacross.jp/images/episode/lyYYLflcOmIGtTIt3fGVHjr6px-JwvltpUwbi1Pl1Dk/episode_thumbnail/thumb_double.png?1689292477"
+        },
         {
           "id": "https://mangacross.jp/comics/yabai/132",
           "author": "桜井のりお",
