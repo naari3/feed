@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-19T08:02:09.260Z</updated>
+    <updated>2023-07-19T09:01:41.290Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[SwiftUI PhotosPickerで選択した項目からJPEG/PNGを取り出す]]></title>
+        <id>hatenablog://entry/820878482951102567</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2023/07/19/170838"/>
+        <updated>2023-07-19T08:08:38.000Z</updated>
+        <summary type="html"><![CDATA[SwiftUIで作るiOSアプリで、画像を選択し、その画像をどこかにアップロードしたい。アップロード先がHEICに対応してないのでJPEG/PNGあたりのフォーマットでやりたい。
+これを考えたとき、iOS 16.0+ ならPhotosPickerが使える。が、実際に選択したあとでどうやってJPEG/PNGのデータを取り出すかにだいぶ悩んだのでメモっておく。他にもっとマトモな方法ないの? と思っている。
+PhotosPickerを使う
+これは既存のビューでボタンを押すとシートで下から出てくる感じにしたかったので、こんなコードをざっと書けばよい。これは1枚だけ選ばせたい場合で、複数枚選ばせたい場合は呼び出しのシグネチャが少し変わるのに注意。
+@State var isPickingPhoto: Bool = false
+@State var selectedPhotoItem: PhotosPickerItem? = nil
+
+var body: some View {
+    AnyView()
+    .sheet(isPresented: $isPickingPhoto) {
+        PhotosPicker(
+            selection: $selectedPhotoItem,
+            matching: .images,
+            preferredItemEncoding: .current,
+            label: { Text("Choose your profile image") }
+        )
+        .onChange(of: selectedPhotoItem) { photoItem in
+            guard let photoItem else {
+…]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2023.7.19]]></title>
         <id>https://gamegaz.com/?p=39046</id>

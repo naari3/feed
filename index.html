@@ -78,6 +78,44 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
+              rel="noopener">たごもりすメモ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SwiftUI PhotosPickerで選択した項目からJPEG/PNGを取り出す</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/07/19/170838" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>SwiftUIで作るiOSアプリで、画像を選択し、その画像をどこかにアップロードしたい。アップロード先がHEICに対応してないのでJPEG/PNGあたりのフォーマットでやりたい。
+これを考えたとき、iOS 16.0+ ならPhotosPickerが使える。が、実際に選択したあとでどうやってJPEG/PNGのデータを取り出すかにだいぶ悩んだのでメモっておく。他にもっとマトモな方法ないの? と思っている。
+PhotosPickerを使う
+これは既存のビューでボタンを押すとシートで下から出てくる感じにしたかったので、こんなコードをざっと書けばよい。これは1枚だけ選ばせたい場合で、複数枚選ばせたい場合は呼び出しのシグネチャが少し変わるのに注意。
+@State var isPickingPhoto: Bool &#x3D; false
+@State var selectedPhotoItem: PhotosPickerItem? &#x3D; nil
+
+var body: some View {
+    AnyView()
+    .sheet(isPresented: $isPickingPhoto) {
+        PhotosPicker(
+            selection: $selectedPhotoItem,
+            matching: .images,
+            preferredItemEncoding: .current,
+            label: { Text(&quot;Choose your profile image&quot;) }
+        )
+        .onChange(of: selectedPhotoItem) { photoItem in
+            guard let photoItem else {
+…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -21811,7 +21849,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-07-19T08:02:09.187Z">2023-07-19T08:02:09.187Z</time>
+    <time id="build-timestamp" datetime="2023-07-19T09:01:41.233Z">2023-07-19T09:01:41.233Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

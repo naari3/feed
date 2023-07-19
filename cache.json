@@ -4897,6 +4897,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482951102567",
+          "author": null,
+          "description": "SwiftUIで作るiOSアプリで、画像を選択し、その画像をどこかにアップロードしたい。アップロード先がHEICに対応してないのでJPEG/PNGあたりのフォーマットでやりたい。\nこれを考えたとき、iOS 16.0+ ならPhotosPickerが使える。が、実際に選択したあとでどうやってJPEG/PNGのデータを取り出すかにだいぶ悩んだのでメモっておく。他にもっとマトモな方法ないの? と思っている。\nPhotosPickerを使う\nこれは既存のビューでボタンを押すとシートで下から出てくる感じにしたかったので、こんなコードをざっと書けばよい。これは1枚だけ選ばせたい場合で、複数枚選ばせたい場合は呼び出しのシグネチャが少し変わるのに注意。\n@State var isPickingPhoto: Bool = false\n@State var selectedPhotoItem: PhotosPickerItem? = nil\n\nvar body: some View {\n    AnyView()\n    .sheet(isPresented: $isPickingPhoto) {\n        PhotosPicker(\n            selection: $selectedPhotoItem,\n            matching: .images,\n            preferredItemEncoding: .current,\n            label: { Text(\"Choose your profile image\") }\n        )\n        .onChange(of: selectedPhotoItem) { photoItem in\n            guard let photoItem else {\n…",
+          "link": "https://tagomoris.hatenablog.com/entry/2023/07/19/170838",
+          "publishedOn": "2023-07-19T08:08:38.000Z",
+          "wordCount": 859,
+          "title": "SwiftUI PhotosPickerで選択した項目からJPEG/PNGを取り出す",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/4207575160649331805",
           "author": null,
           "description": "2020年に開催できなかったのち、3年を経て松本市で行われたRubyKaigiに行ってきた。自分は2020年のときはスポンサー企業の一人としてやることがある予定だったのが、3年経って、なんでもないいち参加者として行くことになったなど、いろんな変化を感じた。それでもほぼフルに参加者が戻ってきたいつものRubyKaigiでもあって、なんかもう、すごくよかった。\nRubyKaigiの成果\n聞いてきた\nImplementing \"++\" operator, stepping into parse.y\nImplementing \"++\" operator, stepping into parse.y - RubyKaigi 2023\nとにかく最高だったのはしおい(@coe401_)さんのやつ。これはやっている内容といい、プレゼンそのものの楽しさといい、本当に最高だった。\n speakerdeck.com\nスライドでもいいけど、動画が公開されたら見てない人にはぜひ見てほしい。自分ももう一度見たい。最高。「これを実装する」という目的に対して、とれそうな手段をRubyのいろんなレイヤであれこれ試してて、順を追ってRubyのすごく深いところまでどんどん潜っていっているし、あちこちで使ってる手段が本当に目的のためには手段を選んでいない感じで面白すぎる。ちゃんとオチまでつけていて、プレゼンとしての完成度もすばらしい。\n自分がいちばん好きだったのはBinding#local_variable_setをメソッドのレシーバ自身を置き換えるために使っているところで、普通そんなことはできないんだけど一度パーサを経由してるならパーサがレシーバ自身が格納されている変数の名前を知っているじゃん、っていう、もう最高としか言いようのない使いかたをしていた。\nこのトークを聞いていた他の人々と話していると、けっこうみん…",
