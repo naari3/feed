@@ -667,21 +667,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889983263616",
-          "author": null,
-          "description": "昨日からWikiのチュートリアルの項目を書き直しています。加筆したいところといえばDMGサウンド。どうやって書こうか何年も前から悩んでいて結局手つかずなんですよね。なんといっても私にはサウンドの知識が壊滅的！さらに言うとmidiやmodなどの作曲経験もない！・・・なんというか、仕様書な意味なら理解できるんです。でもファミコンのマリオを耳コピしてみなさいと言われて書けないのですよ。そもそもテンポもわからないし。そういうわけでして、無い知恵絞った結果２つの候補が脳内に駆け巡ったわけです。１つはLSDjの.savファイルを解析して移植するという方法。候補はgithubにありました。\ngithub.com\nDOSプロンプト上で走らせて、そのログファイルを生成してしまおうという魂胆です。そもそも私はGBのCPUを自作しているのでコード持っていますし、vblank毎に区切ってサウンドレジスタに放り込んでいるログを保存しとけばいいはずです。GBとGBAに互換があってめっちゃありがたいと思う瞬間ですね。サイズが増大しそうですけど楽な方法といえばこちらかなあ。bookwormさんのリーフ３部作のGBSファイルをパクって鳴らせてみせるところまでをゴールにしてみようかと思います。",
-          "link": "https://akkera102.hatenablog.com/entry/2023/04/21/183056",
-          "publishedOn": "2023-04-21T09:30:56.000Z",
-          "wordCount": 377,
-          "title": "wikiチュートリアルのサウンドを考える1",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

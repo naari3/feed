@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-19T21:02:34.927Z</updated>
+    <updated>2023-07-19T22:02:24.135Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13973,18 +13973,6 @@ rakuten_design="slide";rakuten_affiliateId="1021160d.db42c13d.1021160e.be2974e9"
 続きをみる]]></summary>
         <author>
             <name>sanmal</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[wikiチュートリアルのサウンドを考える1]]></title>
-        <id>hatenablog://entry/4207112889983263616</id>
-        <link href="https://akkera102.hatenablog.com/entry/2023/04/21/183056"/>
-        <updated>2023-04-21T09:30:56.000Z</updated>
-        <summary type="html"><![CDATA[昨日からWikiのチュートリアルの項目を書き直しています。加筆したいところといえばDMGサウンド。どうやって書こうか何年も前から悩んでいて結局手つかずなんですよね。なんといっても私にはサウンドの知識が壊滅的！さらに言うとmidiやmodなどの作曲経験もない！・・・なんというか、仕様書な意味なら理解できるんです。でもファミコンのマリオを耳コピしてみなさいと言われて書けないのですよ。そもそもテンポもわからないし。そういうわけでして、無い知恵絞った結果２つの候補が脳内に駆け巡ったわけです。１つはLSDjの.savファイルを解析して移植するという方法。候補はgithubにありました。
-github.com
-DOSプロンプト上で走らせて、そのログファイルを生成してしまおうという魂胆です。そもそも私はGBのCPUを自作しているのでコード持っていますし、vblank毎に区切ってサウンドレジスタに放り込んでいるログを保存しとけばいいはずです。GBとGBAに互換があってめっちゃありがたいと思う瞬間ですね。サイズが増大しそうですけど楽な方法といえばこちらかなあ。bookwormさんのリーフ３部作のGBSファイルをパクって鳴らせてみせるところまでをゴールにしてみようかと思います。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
