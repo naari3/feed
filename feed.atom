@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-21T06:01:47.193Z</updated>
+    <updated>2023-07-21T07:01:55.202Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[サブディレクトリオプションの設定例に AWS Amplify の事例を追加しました]]></title>
+        <id>hatenablog://entry/820878482951594951</id>
+        <link href="https://staff.hatenablog.com/entry/2023/07/21/155836"/>
+        <updated>2023-07-21T06:58:36.000Z</updated>
+        <summary type="html"><![CDATA[法人向けプラン「はてなブログBusiness」と「はてなブログ for DevBlog」向けの機能として、コーポレートサイトと同じドメインのサブディレクトリではてなブログを配信することができる「サブディレクトリオプション」機能を提供しております。
+
+今回、AWS Amplifyを使って構築したウェブサイトへ組み込むための設定例を追加いたしました。
+サブディレクトリオプション AWS Amplify の設定例
+組み込みの際にAWS Amplify に追加する設定はリダイレクト(書き換え)機能の設定のみのため、ブログ組み込みに伴う複雑性への影響を最小限に抑えることができます。
+はてなブログMedia利用中または導入検討中の方へ
+オウンドメディア運営に最適なはてなブログMediaプランでも、サブディレクトリ配信機能をご用意しております。営業担当またはお問い合わせください。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PS5システムソフトウェアアップデート バージョン 23.01-07.60.00]]></title>
         <id>https://gamegaz.com/?p=39055</id>
