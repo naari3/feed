@@ -652,21 +652,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889983896697",
-          "author": null,
-          "description": "今日は何も成果が得られませんでした。。悲しい。えーと、GBSの演奏終了フラグってどういう実装してるのかなと思って調べていたわけです。公式ドキュメント読んだり、GBSPLAYのソースコードを読んだりしていて、おかしいなあ？どうやってループ止めてるの？という状態でした。詳しい人ならわかることですけれど、そもそも無いものを探そうとしていたわけです。私あほ過ぎる。このファイルの由来というか歴史は、ゲームROMの音楽ドライバと曲データを吸い出して作られてるものだからフラグなんてあるわけないんですよ。GBSPLAYやkbmedia playerは2分固定で強制フェードアウトしてるのはその為。2分より短いと無音になっているわけです。今さっき風呂入っていたら思い出しました。もういやすぎます、今日はふて寝！決定です。\ngithub.com\n供養で無駄に調べた話。GBSPLAYは「この位置から関数最後まで」の間で見ています。右と左の音量、クロックカウント数を見て時間を短くすることはしているようです。",
-          "link": "https://akkera102.hatenablog.com/entry/2023/04/23/221103",
-          "publishedOn": "2023-04-23T13:11:03.000Z",
-          "wordCount": 377,
-          "title": "チュートリアルのサウンドを考える2",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -1736,6 +1721,21 @@
       "feedUrl": "https://contradiction29.hatenablog.com/rss",
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/820878482951771249",
+          "author": null,
+          "description": "ざっくりとだが、健常者エミュレータ事例集の維持費が月当たりどのくらいなのかまとめてみる。\nLightsailの費用\n健常者エミュレータ事例集は、AWSのLightsail上に構築されたWordpressサーバーの上で走っている。RAM4GB, vCPU2つのインスタンスを選択しているので、これが月額$20。最初は一番左の激安インスタンスだったが、さすがにスペック不足だった。今は$20のプランで落ち着いている。\n \n\n\nLightsailの料金プラン\n\nドメイン\nhealthy-person-emulator.orgのドメインをRoute 53経由で取得している。覚えてないが、多分年1000円から2000円くらいだった気がする。\n \nAWSのコストはそんなものだが、健常者エミュレータ事例集ではGoogle Cloudも使っているのでそのコストも見てみよう。\n \nGoogle Compute Engine\nDiscordサーバー「健常者エミュレータ事例集」で、合言葉を入れるとロールを自動で付与してくれるBotを運用しているが、その裏側にはGCEを使っている。一番安いインスタンスで、月¥150程度かかる。\n \nBigquery\n毎日投稿がいくつくらいあって、コメント数がどの程度あって、いいね・よくないねの数がどの程度なのか、日時で報告する仕組みをLINEで作っている。Wordpressのコンソール画面で見られる情報をプッシュ送信する仕組みだ。仕組みとしては、Cloud Functionsを使ってWordpressサーバーのMySQLからデータを取り出しBigqueryに入れて、dbt Cloudで変換している。\n\nこういう通知が毎朝届く\n\n維持費が、無料のCloud Functions + Bigquery + 無料のdbt cloudで合計月3円程度。\n \nまとめ\n月当たり大体2000円から3000円程度で動かしていることになる。Lightsailのインスタンス代が大半で、他がちょっとずつ、という割合になる。\n大したコストではない。今まで「サーバー維持費のため」という名目で健常者エミュレータ事例集にAdsense広告を出していたが、ユーザー体験を阻害しすぎなのと、そもそもそんなコストかかってないのにAdsenseする必要があるのか？と思い、広告を停止した。\nとはいえ寄付は欲しいが...",
+          "link": "https://contradiction29.hatenablog.com/entry/2023/07/22/100124",
+          "publishedOn": "2023-07-22T01:01:24.000Z",
+          "wordCount": 295,
+          "title": "健常者エミュレータ事例集の維持費",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230722/20230722093624.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230722/20230722093624.png"
+        },
         {
           "id": "hatenablog://entry/820878482951180578",
           "author": null,

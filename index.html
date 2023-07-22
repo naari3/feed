@@ -74,6 +74,57 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2023-07-22">2023-07-22</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
+              rel="noopener">contradiction29’s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">健常者エミュレータ事例集の維持費</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://contradiction29.hatenablog.com/entry/2023/07/22/100124" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ざっくりとだが、健常者エミュレータ事例集の維持費が月当たりどのくらいなのかまとめてみる。
+Lightsailの費用
+健常者エミュレータ事例集は、AWSのLightsail上に構築されたWordpressサーバーの上で走っている。RAM4GB, vCPU2つのインスタンスを選択しているので、これが月額$20。最初は一番左の激安インスタンスだったが、さすがにスペック不足だった。今は$20のプランで落ち着いている。
+ 
+
+
+Lightsailの料金プラン
+
+ドメイン
+healthy-person-emulator.orgのドメインをRoute 53経由で取得している。覚えてないが、多分年1000円から2000円くらいだった気がする。
+ 
+AWSのコストはそんなものだが、健常者エミュレータ事例集ではGoogle Cloudも使っているのでそのコストも見てみよう。
+ 
+Google Compute Engine
+Discordサーバー「健常者エミュレータ事例集」で、合言葉を入れるとロールを自動で付与してくれるBotを運用しているが、その裏側にはGCEを使っている。一番安いインスタンスで、月¥150程度かかる。
+ 
+Bigquery
+毎日投稿がいくつくらいあって、コメント数がどの程度あって、いいね・よくないねの数がどの程度なのか、日時で報告する仕組みをLINEで作っている。Wordpressのコンソール画面で見られる情報をプッシュ送信する仕組みだ。仕組みとしては、Cloud Functionsを使ってWordpressサーバーのMySQLからデータを取り出しBigqueryに入れて、dbt Cloudで変換している。
+
+こういう通知が毎朝届く
+
+維持費が、無料のCloud Functions + Bigquery + 無料のdbt cloudで合計月3円程度。
+ 
+まとめ
+月当たり大体2000円から3000円程度で動かしていることになる。Lightsailのインスタンス代が大半で、他がちょっとずつ、という割合になる。
+大したコストではない。今まで「サーバー維持費のため」という名目で健常者エミュレータ事例集にAdsense広告を出していたが、ユーザー体験を阻害しすぎなのと、そもそもそんなコストかかってないのにAdsenseする必要があるのか？と思い、広告を停止した。
+とはいえ寄付は欲しいが...</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230722/20230722093624.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2023-07-21">2023-07-21</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -20032,28 +20083,6 @@ Amazon
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">チュートリアルのサウンドを考える2</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2023/04/23/221103" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>今日は何も成果が得られませんでした。。悲しい。えーと、GBSの演奏終了フラグってどういう実装してるのかなと思って調べていたわけです。公式ドキュメント読んだり、GBSPLAYのソースコードを読んだりしていて、おかしいなあ？どうやってループ止めてるの？という状態でした。詳しい人ならわかることですけれど、そもそも無いものを探そうとしていたわけです。私あほ過ぎる。このファイルの由来というか歴史は、ゲームROMの音楽ドライバと曲データを吸い出して作られてるものだからフラグなんてあるわけないんですよ。GBSPLAYやkbmedia playerは2分固定で強制フェードアウトしてるのはその為。2分より短いと無音になっているわけです。今さっき風呂入っていたら思い出しました。もういやすぎます、今日はふて寝！決定です。
-github.com
-供養で無駄に調べた話。GBSPLAYは「この位置から関数最後まで」の間で見ています。右と左の音量、クロックカウント数を見て時間を短くすることはしているようです。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21673,7 +21702,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-07-22T00:02:40.999Z">2023-07-22T00:02:40.999Z</time>
+    <time id="build-timestamp" datetime="2023-07-22T01:29:15.446Z">2023-07-22T01:29:15.446Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
