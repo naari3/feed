@@ -1692,6 +1692,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482952079766",
+          "author": null,
+          "description": "最終的にできたもの。このレポートが毎朝送られるようになる。\n何がしたいのか？\n基盤概要\n各種コンポーネントについて\nCloud Functions\nBigQuery\nWordpressのデータモデリングとdbt Cloud\nWordpressのデータモデリングを理解する\nLooker Studio\nまとめ\n何がしたいのか？\n個人でサービスを作って運営していると、ユーザーのアクティビティが日次でどの程度あるのか知りたくなるのが人の性だろう。自分も健常者エミュレータ事例集というサービスを運営していて、投稿数がどの程度なのか、コメント数がどの程度なのかをできれば毎日知りたい。\n文化祭でゲイポルノビデオ作品を切り貼りしたポスターを作ってはいけない - 健常者エミュレータ事例集 学校\nSQLをたたけば集計はできる。でも毎日SQLを書くのは面倒くさい。だから、業務で培った知識をもとに「データ基盤」を作ることにした。\nまずはやりたいことを言語化してみる。\n「健常者エミュレータ事例集」（自分でやってる個人サービス）の日次の投稿数とかコメント数とかいいね・よくないね数を知りたい\nレポーティングまで自動化してほしい。自分で知りに行くのは面倒なので、プッシュで通知してほしい。\nコストはかけたくない\nこの記事では、上記のようなわがまま要件を満たすようなお手軽データ基盤を作った時の記録である。まずは基盤の全体像について説明したのち、個々のコンポーネントの詳細に入って説明してく。同様の基盤を作ろうとするエンジニアの参考になれば幸いである。\n基盤概要\nざっくりと概要を文字起こしする。\nまず、Cloud FunctionsでLightsailインスタンス上で動いているMySQLにアクセスし、データを取り出し、BigQueryに格納する\n\n\nこの際、INFORMATION_SCHEMAを利用する形で、すべて…",
+          "link": "https://contradiction29.hatenablog.com/entry/2023/07/23/144135",
+          "publishedOn": "2023-07-23T05:41:35.000Z",
+          "wordCount": 678,
+          "title": "dbt Cloud, BigQuery, Looker Studioで始めるお手軽データ基盤【個人サービス向け】",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230723/20230723134853.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230723/20230723134853.jpg"
+        },
+        {
           "id": "hatenablog://entry/820878482951771249",
           "author": null,
           "description": "ざっくりとだが、健常者エミュレータ事例集の維持費が月当たりどのくらいなのかまとめてみる。\nLightsailの費用\n健常者エミュレータ事例集は、AWSのLightsail上に構築されたWordpressサーバーの上で走っている。RAM4GB, vCPU2つのインスタンスを選択しているので、これが月額$20。最初は一番左の激安インスタンスだったが、さすがにスペック不足だった。今は$20のプランで落ち着いている。\n \n\n\nLightsailの料金プラン\n\nドメイン\nhealthy-person-emulator.orgのドメインをRoute 53経由で取得している。覚えてないが、多分年1000円から2000円くらいだった気がする。\n \nAWSのコストはそんなものだが、健常者エミュレータ事例集ではGoogle Cloudも使っているのでそのコストも見てみよう。\n \nGoogle Compute Engine\nDiscordサーバー「健常者エミュレータ事例集」で、合言葉を入れるとロールを自動で付与してくれるBotを運用しているが、その裏側にはGCEを使っている。一番安いインスタンスで、月¥150程度かかる。\n \nBigquery\n毎日投稿がいくつくらいあって、コメント数がどの程度あって、いいね・よくないねの数がどの程度なのか、日時で報告する仕組みをLINEで作っている。Wordpressのコンソール画面で見られる情報をプッシュ送信する仕組みだ。仕組みとしては、Cloud Functionsを使ってWordpressサーバーのMySQLからデータを取り出しBigqueryに入れて、dbt Cloudで変換している。\n\nこういう通知が毎朝届く\n\n維持費が、無料のCloud Functions + Bigquery + 無料のdbt cloudで合計月3円程度。\n \nまとめ\n月当たり大体2000円から3000円程度で動かしていることになる。Lightsailのインスタンス代が大半で、他がちょっとずつ、という割合になる。\n大したコストではない。今まで「サーバー維持費のため」という名目で健常者エミュレータ事例集にAdsense広告を出していたが、ユーザー体験を阻害しすぎなのと、そもそもそんなコストかかってないのにAdsenseする必要があるのか？と思い、広告を停止した。\nとはいえ寄付は欲しいが...",
