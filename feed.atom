@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-23T00:03:20.168Z</updated>
+    <updated>2023-07-23T01:28:47.208Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13853,17 +13853,6 @@ Horse kicks tree, farts on dogs then runs away.https://t.co/RA5rkDl9tI
 音MMDM Part2 / ニコ生視聴中 ht…]]></summary>
         <author>
             <name>ブログ名 - コピー (2) - コピー</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[gccの-nostdlibオプション]]></title>
-        <id>hatenablog://entry/4207112889984196731</id>
-        <link href="https://akkera102.hatenablog.com/entry/2023/04/24/213952"/>
-        <updated>2023-04-24T12:39:52.000Z</updated>
-        <summary type="html"><![CDATA[昔から、私のGBA開発はgccライブラリなどを使わないまっさらな状態をモットーにしていました。ええ、printfとかdivとか既存のものを使ったらGBA開発を堪能できないじゃないですか、というひねくれた理由だけなんですけど。たとえばforループでテーブルを0クリアするコードを書くと、コンパイラがmemset関数に置き換えてくれたり、除算のコードを書くとCPUに命令がないものだからライブラリで肩代わりしてくれたりしていました。ただし黙って置換しないでほしいという気持ちで昔から一杯だったわけです。mapファイルを見ないと結果が分からない状態でいました。たしか当時も調べていてオプションにないものか探していたのですけど結局見つからずだったのです。そして今更、というか今日もういちど覗いてみたら何とみつけてしまいました。私の調査不足、という笑い話です。とりあえず今日のネタとさせていただきます。
-gcc.gnu.org]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

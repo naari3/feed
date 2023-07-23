@@ -637,21 +637,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230430/20230430190558.png"
-        },
-        {
-          "id": "hatenablog://entry/4207112889984196731",
-          "author": null,
-          "description": "昔から、私のGBA開発はgccライブラリなどを使わないまっさらな状態をモットーにしていました。ええ、printfとかdivとか既存のものを使ったらGBA開発を堪能できないじゃないですか、というひねくれた理由だけなんですけど。たとえばforループでテーブルを0クリアするコードを書くと、コンパイラがmemset関数に置き換えてくれたり、除算のコードを書くとCPUに命令がないものだからライブラリで肩代わりしてくれたりしていました。ただし黙って置換しないでほしいという気持ちで昔から一杯だったわけです。mapファイルを見ないと結果が分からない状態でいました。たしか当時も調べていてオプションにないものか探していたのですけど結局見つからずだったのです。そして今更、というか今日もういちど覗いてみたら何とみつけてしまいました。私の調査不足、という笑い話です。とりあえず今日のネタとさせていただきます。\ngcc.gnu.org",
-          "link": "https://akkera102.hatenablog.com/entry/2023/04/24/213952",
-          "publishedOn": "2023-04-24T12:39:52.000Z",
-          "wordCount": 377,
-          "title": "gccの-nostdlibオプション",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
