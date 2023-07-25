@@ -5214,21 +5214,6 @@
             "length": "0"
           },
           "imageUrl": null
-        },
-        {
-          "id": "hatenablog://entry/4207112889982969061",
-          "author": null,
-          "description": "株式会社Ninjastars\n今回はHackTheBoxと呼ばれるプラットフォームにて、ペネトレーションテストやOffensive Securityを学ぶことができるCTF「machines」のWriteupを書きたいと思います。\nレーニングのためのオンラインプラットフォームであり、ペネトレーションテストだけでなくサイバーセキュリティに関する様々なスキルを身に付けることが可能です。\napp.hackthebox.com\n今回はペネトレーションテストについて学ぶために、「machines」の中の１つである「Ambassador」のWriteupを書きます。\nペネトレーションテストを知らないエンジニアの方に、ペネトレーションテストのイメージをしていただければ幸いです。また、セキュリティエンジニアの方にとっても本記事より何か学ぶ点などがありましたらありがたい限りです。\n＊「Ambassador」は retired machine であり、ご自身で挑戦される際にはHackTheBoxのサブスクリプションに登録する必要があります。\nAmbassador\n\n    \n環境\nLinux kali 6.1.0-kali5-amd64\n筆者の環境では Kali Linux を使用したため、本記事で使用しているツールが読者の方の環境にインストールされていない可能性がありますが、ご了承ください。\nLinux にインストールされていないツールも使用していますが、適宜皆様でインストールお願いいたします。\nWriteup\nでは早速始めていきましょう。\nペネトレーションテスト（外部サーバーへの侵入）の大まかな流れを整理したいと思います。\nポートスキャンを実行\n開放された各ポートにて稼働するサービスの調査\n各サービスの既知の脆弱性(CVE)を調査\n各サービスのゼロデイの脆弱性を調査\n発見した脆弱性をエクス…",
-          "link": "https://www.ninjastars-net.com/entry/2023/04/27/125301",
-          "publishedOn": "2023-04-27T03:53:01.000Z",
-          "wordCount": null,
-          "title": "HackTheBoxにてペネトレーションテストを学ぶ",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/N/Ninjastars/20230420/20230420170814.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/N/Ninjastars/20230420/20230420170814.png"
         }
       ]
     },
@@ -7032,16 +7017,6 @@
           "wordCount": null,
           "title": "【週刊プラグインレビュー】amalgamatedsignals / Clean Machine",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/104071729/rectangle_large_type_2_7871977365832dc2853ac7ea775026b5.png?width=800"
-        },
-        {
-          "id": "https://note.com/massmasaoki/n/naa1fe8f4ee20",
-          "author": null,
-          "description": "今月２記事目です。\n昨今、AIがタイムラインをにぎわせがちですが、今回紹介するTM700もまた機械学習を使ったプラグインとのことで、試してみたところこれまでのテープシミュとはまた違った手ごたえがあったのでご紹介してみたいと思います。\nそれではやっていきましょう！\nプラグインレビュー！\n続きをみる",
-          "link": "https://note.com/massmasaoki/n/naa1fe8f4ee20",
-          "publishedOn": "2023-04-27T03:32:51.000Z",
-          "wordCount": null,
-          "title": "【週刊プラグインレビュー】Tone Empire / TM700",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/103998360/rectangle_large_type_2_ba1d3ae0953d36968372b19c951dfcd8.png?width=800"
         }
       ]
     },
