@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-28T13:04:12.408Z</updated>
+    <updated>2023-07-28T14:02:08.209Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AWS LambdaのLayerをつくるためだけのDockerfile (Amazon Linux 2)]]></title>
+        <id>hatenablog://entry/820878482953524224</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2023/07/28/223124"/>
+        <updated>2023-07-28T13:31:24.000Z</updated>
+        <summary type="html"><![CDATA[めんどくさかったのでメモする
+Dockerfile本体
+FROM amazonlinux:2
+
+ARG PYTHON_VERSION=3.9.6
+
+RUN yum update -y && yum install -y tar gzip make gcc openssl-devel bzip2-devel libffi-devel zip \
+    && curl https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tgz | tar xz \
+    && cd Python-${PYTHON_VERSION} && ./configure && make && make install \
+    && cd - && rm -rf Python-${PYTHON_VERSION} \
+    && alternatives --install /usr/bin/python python /usr/local/bin/python3 1 \
+    && alternatives --install /usr/bin/pip pip /usr/local/bin/pip3 1
+
+
+
+使用例
+docker build . -t lambda_container
+docker run -it lambda_container
+cd ~
+mkdir python
+pip install snowflake-connector-python==3.0.4 -t ./python
+zip -r layer.zip python
+docker cp (コンテナID):/root/layer.zip layer.zip]]></summary>
+        <author>
+            <name>contradiction29’s blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2023年7月-4】蟹2]]></title>
         <id>hatenablog://entry/820878482953407234</id>
@@ -14013,19 +14045,6 @@ www.nicovideo.jp
 じゃ！]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【復旧済み】はてなブログとはてなブログタグに接続しにくい障害が発生していました]]></title>
-        <id>hatenablog://entry/4207112889985747131</id>
-        <link href="https://staff.hatenablog.com/entry/2023/04/30/105148"/>
-        <updated>2023-04-30T01:51:48.000Z</updated>
-        <summary type="html"><![CDATA[4月30日9:20から10:30の間、管理画面を含むはてなブログとはてなブログタグに接続しにくい障害が発生していました。原因は、過負荷によるものです。現在は復旧しております。
-ご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。
-関連記事
-maintenance.hatena.ne.jp]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>

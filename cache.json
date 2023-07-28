@@ -1767,6 +1767,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482953524224",
+          "author": null,
+          "description": "めんどくさかったのでメモする\nDockerfile本体\nFROM amazonlinux:2\n\nARG PYTHON_VERSION=3.9.6\n\nRUN yum update -y && yum install -y tar gzip make gcc openssl-devel bzip2-devel libffi-devel zip \\\n    && curl https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tgz | tar xz \\\n    && cd Python-${PYTHON_VERSION} && ./configure && make && make install \\\n    && cd - && rm -rf Python-${PYTHON_VERSION} \\\n    && alternatives --install /usr/bin/python python /usr/local/bin/python3 1 \\\n    && alternatives --install /usr/bin/pip pip /usr/local/bin/pip3 1\n\n\n\n使用例\ndocker build . -t lambda_container\ndocker run -it lambda_container\ncd ~\nmkdir python\npip install snowflake-connector-python==3.0.4 -t ./python\nzip -r layer.zip python\ndocker cp (コンテナID):/root/layer.zip layer.zip",
+          "link": "https://contradiction29.hatenablog.com/entry/2023/07/28/223124",
+          "publishedOn": "2023-07-28T13:31:24.000Z",
+          "wordCount": 375,
+          "title": "AWS LambdaのLayerをつくるためだけのDockerfile (Amazon Linux 2)",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482952079766",
           "author": null,
           "description": "最終的にできたもの。このレポートが毎朝送られるようになる。\n何がしたいのか？\n基盤概要\n各種コンポーネントについて\nCloud Functions\nBigQuery\nWordpressのデータモデリングとdbt Cloud\nWordpressのデータモデリングを理解する\nLooker Studio\nまとめ\n何がしたいのか？\n個人でサービスを作って運営していると、ユーザーのアクティビティが日次でどの程度あるのか知りたくなるのが人の性だろう。自分も健常者エミュレータ事例集というサービスを運営していて、投稿数がどの程度なのか、コメント数がどの程度なのかをできれば毎日知りたい。\n文化祭でゲイポルノビデオ作品を切り貼りしたポスターを作ってはいけない - 健常者エミュレータ事例集 学校\nSQLをたたけば集計はできる。でも毎日SQLを書くのは面倒くさい。だから、業務で培った知識をもとに「データ基盤」を作ることにした。\nまずはやりたいことを言語化してみる。\n「健常者エミュレータ事例集」（自分でやってる個人サービス）の日次の投稿数とかコメント数とかいいね・よくないね数を知りたい\nレポーティングまで自動化してほしい。自分で知りに行くのは面倒なので、プッシュで通知してほしい。\nコストはかけたくない\nこの記事では、上記のようなわがまま要件を満たすようなお手軽データ基盤を作った時の記録である。まずは基盤の全体像について説明したのち、個々のコンポーネントの詳細に入って説明してく。同様の基盤を作ろうとするエンジニアの参考になれば幸いである。\n基盤概要\nざっくりと概要を文字起こしする。\nまず、Cloud FunctionsでLightsailインスタンス上で動いているMySQLにアクセスし、データを取り出し、BigQueryに格納する\n\n\nこの際、INFORMATION_SCHEMAを利用する形で、すべて…",
@@ -4742,21 +4757,6 @@
           "publishedOn": "2023-05-09T01:28:05.000Z",
           "wordCount": null,
           "title": "【復旧済み】はてなブログの一部のエントリーで更新が反映されない障害が発生していました",
-          "enclosure": {
-            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
-        },
-        {
-          "id": "hatenablog://entry/4207112889985747131",
-          "author": null,
-          "description": "4月30日9:20から10:30の間、管理画面を含むはてなブログとはてなブログタグに接続しにくい障害が発生していました。原因は、過負荷によるものです。現在は復旧しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。\n関連記事\nmaintenance.hatena.ne.jp",
-          "link": "https://staff.hatenablog.com/entry/2023/04/30/105148",
-          "publishedOn": "2023-04-30T01:51:48.000Z",
-          "wordCount": 781,
-          "title": "【復旧済み】はてなブログとはてなブログタグに接続しにくい障害が発生していました",
           "enclosure": {
             "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008",
             "type": "image/png",
