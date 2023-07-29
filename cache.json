@@ -3483,6 +3483,21 @@
       "siteUrl": "https://kumagi.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482953561011",
+          "author": null,
+          "description": "リングバッファのイメージ図\n\n1. リングバッファとは何か\n機能的にはFirst In First Out (FIFO)とも呼ばれるキューの一種であるが、リング状にバッファを置いてそれの中でReadとWriteのインデックスがグルグルと回る構造をとる事によって容量に上限ができることと引き換えに高速な読み書き速度を得たものである。キューを単に実装するだけなら山ほど方法があって線形リストを使ってもいいしスタックを2つ使っても原理的には可能だ。その中でもリングバッファを用いた方法の利点はひとえに性能の高さでありメモリ確保などを行わないお陰でシステム系の様々な場所で使われている。\nこれの実装自体は情報系の大学生の演習レベルの難度であるが少し奥が深い。まずリングバッファのスタンダードなインタフェースと実装は以下のようなものである。\nclass RingBuffer {\npublic:\n  explicit RingBuffer(size_t size) : buffer_(size) {}\n\n  // Returns true on success. Fails if the buffer is empty.\n  bool enqueue(int item) {\n    if (write_idx_ - read_idx_ == buffer_.size()) {\n      return false;\n    }\n    buffer_[write_idx_ % buffer_.size()] = item;\n    write_idx_++;\n    return true;\n  }\n\n  // Returns true on success. Fails if the buffer is full.\n  bool dequeue(int *dest) {\n    if (wri…",
+          "link": "https://kumagi.hatenablog.com/entry/ring-buffer",
+          "publishedOn": "2023-07-29T23:00:00.000Z",
+          "wordCount": 756,
+          "title": "徐々に高度になるリングバッファの話",
+          "enclosure": {
+            "url": "https://th.bing.com/th/id/OIG.eTEYipySRwZFAvWDvzqq?pid=ImgGn",
+            "type": "",
+            "length": "0"
+          },
+          "imageUrl": "https://th.bing.com/th/id/OIG.eTEYipySRwZFAvWDvzqq?pid=ImgGn"
+        },
+        {
           "id": "hatenablog://entry/820878482949917234",
           "author": null,
           "description": "エンジニアの奇行\n嚢中の錐という言葉がある。有能な人物は自ずと傑出していくという意味だが、有能さとは例えば学歴の高さとは一致しない。\nたとえMIT卒であろうとも大成するとは限らないし、ましてや入試の点数などで見れる人間の側面は限定的である。\n企業などで採用する側からしてみたら当然ながら採用後の活躍を期待して雇用するのであり、入社をゴールとしてそれ以降働かなくなる人は望ましくないし、学歴や入試の点数によってそういう人かどうか判定する事はできない。\n活躍という観点で言うと長いキャリアにおいてより重要となるのはキャリア開始時での能力の高さよりも、険しく長い道のりを自己メンテナンスしながら歩み続けられる根気の強さが重要とされている。その根気の源泉は執着だったり崇拝だったり妄信だったりトラウマだったり原体験だったり人によって様々だが、ここではひっくるめて「やる気」と簡略化して呼ぶことにする。\nさて「やる気」のある人を採れば継続的な活躍が期待できるが残念ながら「やる気」を正確に測る方法は人類史上いまだ発見されていない。面接の場において「やる気なら誰にも負けません！」などと口先だけでいうなら簡単だし、それを口走った瞬間が少なくとも瞬発的なやる気に満ちていることに嘘はないしそれは継続的な「やる気」を保証しないからだ。\nそこで今は「やる気」の証拠となりうる客観的な指標をいくつも取り入れて推定する手法が一般的である。例えばコンピュータの業界だと以下のようなものが人気だ\nAtCoderで特定の色になる\n自作サービスのポートフォリオを作る\n知識と手間を要求されるソフトウェアを一人で作る\n自作OS\n独自プログラミング言語やそのコンパイラを作る\nネットワークのプロトコルスタックを実装する\n自宅に19インチラックを置く\n自宅でAS番号を取得するOSS活動をする\nKubernetesクラスタを構築・運用す…",
