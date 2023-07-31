@@ -74,6 +74,62 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2023-07-31">2023-07-31</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
+              rel="noopener">たごもりすメモ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">TokyuRuby会議14に参加してしゃべってきた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/07/31/102208" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>久し振りに開催されたTokyuRuby会議14に参加した。LTも申し込んでいて通ったので、LTもやってきた。なんかTokyuRuby会議が行われると、イベントが戻ってきたなあ、という気がする。よかった。
+しゃべった
+LTの内容は最近やっているNameSpaceまわりの話。
+
+
+
+5分LTを最後にやったのは2019年のRubyKaigiだった。5分のLTなんて体に染み付いてるから息をするようにやれるじゃろ、と思ったら完全にペースを間違ってぜんぜん終わらなかった。なんてこった。何でも、やらないと衰えるなあ。
+話の内容自体は、あとにあった3分追加でしゃべっていい枠で話せて満足。これは引き続きやってて、9月の松江Ruby会議10でも話す予定です。
+料理持っていった
+TokyuRuby会議14、おでんとローストビーフマリネ
+今回作って持っていったのはミニチュアおでん、ローストビーフのわさびマリネ。どっちも全部食べてもらったし、おいしかったと何度も言ってもらえて大満足。ミニチュアおでんは大根の型抜きして下茹でしてるところを前日Twitterに放り込んでいたら、あれなんだったんですかって何人もに聞かれたのが狙い通り。
+参加した
+あとはもう……いつものTokyuRuby会議だったので、何がどうだったとも言いがたいが、RubyKaigiで話せなかったなという人ともけっこう話せたり、今回の自分のネタについても追加で議論する機会が持てたりで、じつによいイベントだった。楽しかったです。</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230729/20230729140046.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
+              rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">30周年記念グッズ配布システムを作ってみたけど、失敗と学びの連続だった</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://eng-blog.iij.ad.jp/archives/20466" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>IIJ は2022年12月3日に30周年を迎えました。 この時、広報部が主導して約2,000人の社員に数種類のグッズを配布することになったのですが、社員それぞれに対しどのグッズを何個渡すかで複数のパタ...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2023-07-30">2023-07-30</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19951,29 +20007,6 @@ github.com</span>
       </li>
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
-              rel="noopener">たごもりすメモ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">sqldefをMySQLに対してAWS Lambdaから実行するパッケージを作った</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/05/02/215654" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>k0kubun/sqldefはすばらしいプロダクトで便利に使ってるんだけど、もちろんDBに接続できる場所から実行する必要がある。で、DBはAWSのprivate VPCにあるのでラップトップやCI環境からやるというわけにはいかない。しょうがないので、現在はEC2インスタンスを作成して使うときだけ起動、終了したら停止してた。んだけど、これがまた面倒なんだよね。起動と停止も面倒だし、なんかあったときに確実に作り直せるようにするには……とか考えるのもダルいし、EC2へのSSHする方法やEC2へリポジトリをチェックアウトする方法も考えないといけないし。
-なのでしばらく考えてたんだけど、Lambdaでやれるといいんだよな、という希望を現実的に考えて実装してみた。のがこちら。
-github.com
-こいつは大変便利。リポジトリをcloneして、プライベートリポジトリからスキーマファイルを読み込むならデプロイキーのファイルをぶちこんだ状態で./build.shを叩けばLambda用のzipファイルが完成するから、あとはこれを指定してLambda関数を作成すればいい。あとはtestでもaws lambda invokeでも他のなんのトリガーででも起動すればよい。どんなプロジェクト向けに作り直すのも簡単。やったね!</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://ytpmv.info" target="_blank"
               rel="noopener">YTPMV.info</a></h3>
           <section class="articles-per-source">
@@ -21642,7 +21675,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-07-31T00:03:24.474Z">2023-07-31T00:03:24.474Z</time>
+    <time id="build-timestamp" datetime="2023-07-31T01:28:13.072Z">2023-07-31T01:28:13.072Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

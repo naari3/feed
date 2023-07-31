@@ -4791,6 +4791,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482954152941",
+          "author": null,
+          "description": "久し振りに開催されたTokyuRuby会議14に参加した。LTも申し込んでいて通ったので、LTもやってきた。なんかTokyuRuby会議が行われると、イベントが戻ってきたなあ、という気がする。よかった。\nしゃべった\nLTの内容は最近やっているNameSpaceまわりの話。\n\n\n\n5分LTを最後にやったのは2019年のRubyKaigiだった。5分のLTなんて体に染み付いてるから息をするようにやれるじゃろ、と思ったら完全にペースを間違ってぜんぜん終わらなかった。なんてこった。何でも、やらないと衰えるなあ。\n話の内容自体は、あとにあった3分追加でしゃべっていい枠で話せて満足。これは引き続きやってて、9月の松江Ruby会議10でも話す予定です。\n料理持っていった\nTokyuRuby会議14、おでんとローストビーフマリネ\n今回作って持っていったのはミニチュアおでん、ローストビーフのわさびマリネ。どっちも全部食べてもらったし、おいしかったと何度も言ってもらえて大満足。ミニチュアおでんは大根の型抜きして下茹でしてるところを前日Twitterに放り込んでいたら、あれなんだったんですかって何人もに聞かれたのが狙い通り。\n参加した\nあとはもう……いつものTokyuRuby会議だったので、何がどうだったとも言いがたいが、RubyKaigiで話せなかったなという人ともけっこう話せたり、今回の自分のネタについても追加で議論する機会が持てたりで、じつによいイベントだった。楽しかったです。",
+          "link": "https://tagomoris.hatenablog.com/entry/2023/07/31/102208",
+          "publishedOn": "2023-07-31T01:22:08.000Z",
+          "wordCount": null,
+          "title": "TokyuRuby会議14に参加してしゃべってきた",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230729/20230729140046.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230729/20230729140046.jpg"
+        },
+        {
           "id": "hatenablog://entry/820878482951102567",
           "author": null,
           "description": "SwiftUIで作るiOSアプリで、画像を選択し、その画像をどこかにアップロードしたい。アップロード先がHEICに対応してないのでJPEG/PNGあたりのフォーマットでやりたい。\nこれを考えたとき、iOS 16.0+ ならPhotosPickerが使える。が、実際に選択したあとでどうやってJPEG/PNGのデータを取り出すかにだいぶ悩んだのでメモっておく。他にもっとマトモな方法ないの? と思っている。\nPhotosPickerを使う\nこれは既存のビューでボタンを押すとシートで下から出てくる感じにしたかったので、こんなコードをざっと書けばよい。これは1枚だけ選ばせたい場合で、複数枚選ばせたい場合は呼び出しのシグネチャが少し変わるのに注意。\n@State var isPickingPhoto: Bool = false\n@State var selectedPhotoItem: PhotosPickerItem? = nil\n\nvar body: some View {\n    AnyView()\n    .sheet(isPresented: $isPickingPhoto) {\n        PhotosPicker(\n            selection: $selectedPhotoItem,\n            matching: .images,\n            preferredItemEncoding: .current,\n            label: { Text(\"Choose your profile image\") }\n        )\n        .onChange(of: selectedPhotoItem) { photoItem in\n            guard let photoItem else {\n…",
@@ -4828,21 +4843,6 @@
           "publishedOn": "2023-05-15T08:46:52.000Z",
           "wordCount": null,
           "title": "ご意見募集: Rubyに名前空間サポート的なものが欲しいという話",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207575160645415873",
-          "author": null,
-          "description": "k0kubun/sqldefはすばらしいプロダクトで便利に使ってるんだけど、もちろんDBに接続できる場所から実行する必要がある。で、DBはAWSのprivate VPCにあるのでラップトップやCI環境からやるというわけにはいかない。しょうがないので、現在はEC2インスタンスを作成して使うときだけ起動、終了したら停止してた。んだけど、これがまた面倒なんだよね。起動と停止も面倒だし、なんかあったときに確実に作り直せるようにするには……とか考えるのもダルいし、EC2へのSSHする方法やEC2へリポジトリをチェックアウトする方法も考えないといけないし。\nなのでしばらく考えてたんだけど、Lambdaでやれるといいんだよな、という希望を現実的に考えて実装してみた。のがこちら。\ngithub.com\nこいつは大変便利。リポジトリをcloneして、プライベートリポジトリからスキーマファイルを読み込むならデプロイキーのファイルをぶちこんだ状態で./build.shを叩けばLambda用のzipファイルが完成するから、あとはこれを指定してLambda関数を作成すればいい。あとはtestでもaws lambda invokeでも他のなんのトリガーででも起動すればよい。どんなプロジェクト向けに作り直すのも簡単。やったね!",
-          "link": "https://tagomoris.hatenablog.com/entry/2023/05/02/215654",
-          "publishedOn": "2023-05-02T12:56:54.000Z",
-          "wordCount": null,
-          "title": "sqldefをMySQLに対してAWS Lambdaから実行するパッケージを作った",
           "enclosure": {
             "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
             "type": "image/png",
@@ -8781,6 +8781,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=20466",
+          "author": "坂口 和也",
+          "description": "IIJ は2022年12月3日に30周年を迎えました。 この時、広報部が主導して約2,000人の社員に数種類のグッズを配布することになったのですが、社員それぞれに対しどのグッズを何個渡すかで複数のパタ...",
+          "link": "https://eng-blog.iij.ad.jp/archives/20466",
+          "publishedOn": "2023-07-31T00:46:24.000Z",
+          "wordCount": null,
+          "title": "30周年記念グッズ配布システムを作ってみたけど、失敗と学びの連続だった",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=20534",
           "author": "doumae",

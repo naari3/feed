@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-07-31T00:03:24.522Z</updated>
+    <updated>2023-07-31T01:28:13.138Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[TokyuRuby会議14に参加してしゃべってきた]]></title>
+        <id>hatenablog://entry/820878482954152941</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2023/07/31/102208"/>
+        <updated>2023-07-31T01:22:08.000Z</updated>
+        <summary type="html"><![CDATA[久し振りに開催されたTokyuRuby会議14に参加した。LTも申し込んでいて通ったので、LTもやってきた。なんかTokyuRuby会議が行われると、イベントが戻ってきたなあ、という気がする。よかった。
+しゃべった
+LTの内容は最近やっているNameSpaceまわりの話。
+
+
+
+5分LTを最後にやったのは2019年のRubyKaigiだった。5分のLTなんて体に染み付いてるから息をするようにやれるじゃろ、と思ったら完全にペースを間違ってぜんぜん終わらなかった。なんてこった。何でも、やらないと衰えるなあ。
+話の内容自体は、あとにあった3分追加でしゃべっていい枠で話せて満足。これは引き続きやってて、9月の松江Ruby会議10でも話す予定です。
+料理持っていった
+TokyuRuby会議14、おでんとローストビーフマリネ
+今回作って持っていったのはミニチュアおでん、ローストビーフのわさびマリネ。どっちも全部食べてもらったし、おいしかったと何度も言ってもらえて大満足。ミニチュアおでんは大根の型抜きして下茹でしてるところを前日Twitterに放り込んでいたら、あれなんだったんですかって何人もに聞かれたのが狙い通り。
+参加した
+あとはもう……いつものTokyuRuby会議だったので、何がどうだったとも言いがたいが、RubyKaigiで話せなかったなという人ともけっこう話せたり、今回の自分のネタについても追加で議論する機会が持てたりで、じつによいイベントだった。楽しかったです。]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[30周年記念グッズ配布システムを作ってみたけど、失敗と学びの連続だった]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=20466</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/20466"/>
+        <updated>2023-07-31T00:46:24.000Z</updated>
+        <summary type="html"><![CDATA[IIJ は2022年12月3日に30周年を迎えました。 この時、広報部が主導して約2,000人の社員に数種類のグッズを配布することになったのですが、社員それぞれに対しどのグッズを何個渡すかで複数のパタ...]]></summary>
+        <author>
+            <name>坂口 和也</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[デカいゴミ箱を置いてもゴミを置いていくやつは置いていく]]></title>
         <id>https://note.com/sizes/n/nca9c0497fa7e</id>
@@ -13785,19 +13817,6 @@ github.com]]></summary>
 github.com]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[sqldefをMySQLに対してAWS Lambdaから実行するパッケージを作った]]></title>
-        <id>hatenablog://entry/4207575160645415873</id>
-        <link href="https://tagomoris.hatenablog.com/entry/2023/05/02/215654"/>
-        <updated>2023-05-02T12:56:54.000Z</updated>
-        <summary type="html"><![CDATA[k0kubun/sqldefはすばらしいプロダクトで便利に使ってるんだけど、もちろんDBに接続できる場所から実行する必要がある。で、DBはAWSのprivate VPCにあるのでラップトップやCI環境からやるというわけにはいかない。しょうがないので、現在はEC2インスタンスを作成して使うときだけ起動、終了したら停止してた。んだけど、これがまた面倒なんだよね。起動と停止も面倒だし、なんかあったときに確実に作り直せるようにするには……とか考えるのもダルいし、EC2へのSSHする方法やEC2へリポジトリをチェックアウトする方法も考えないといけないし。
-なのでしばらく考えてたんだけど、Lambdaでやれるといいんだよな、という希望を現実的に考えて実装してみた。のがこちら。
-github.com
-こいつは大変便利。リポジトリをcloneして、プライベートリポジトリからスキーマファイルを読み込むならデプロイキーのファイルをぶちこんだ状態で./build.shを叩けばLambda用のzipファイルが完成するから、あとはこれを指定してLambda関数を作成すればいい。あとはtestでもaws lambda invokeでも他のなんのトリガーででも起動すればよい。どんなプロジェクト向けに作り直すのも簡単。やったね!]]></summary>
-        <author>
-            <name>たごもりすメモ</name>
         </author>
     </entry>
     <entry>
