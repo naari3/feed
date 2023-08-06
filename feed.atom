@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-08-06T02:10:19.949Z</updated>
+    <updated>2023-08-06T03:01:53.779Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13812,45 +13812,6 @@ https://hatena.zendesk.com/hc/ja/requests/new
         <summary type="html"><![CDATA[IIJの佐藤雅子です。 普段は、エンジニア向け社内研修・ワークショップ等の学びや共有の場の運営、新規事業創出を実施しています。 今回は、エンジニアに役立つ資格というテーマです。私は、資格のために勉強し...]]></summary>
         <author>
             <name>佐藤 雅子</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[pythonで440Hz]]></title>
-        <id>hatenablog://entry/4207575160647256124</id>
-        <link href="https://akkera102.hatenablog.com/entry/2023/05/08/231908"/>
-        <updated>2023-05-08T14:19:08.000Z</updated>
-        <summary type="html"><![CDATA[pythonで1秒の440hz（ドレミファでいうラ音）を再現してみました。wikiで必要なネタなのでちょっと予習中です。ぶっちゃけなにこれ！超簡単じゃないですか！C言語に比べて圧倒的な簡略化じゃないですかヤダー！なんというか田舎者が都会に出てきて、最近の常識はコレですよ感を見せつけれたような心境です（泣。
-import numpy as np
-import wave
-import struct
-from matplotlib import pylab as plt
-
-fname = '440Hz.wav'
-
-fs  = 44100
-f   = 440
-sec = 1
-A   = 32767
-samples = sec * fs
-
-t = np.linspace(0, sec, samples)
-s = A * np.sin(2 * np.pi * f * t)
-s = np.rint(s)
-s = s.astype(np.int16)
-
-data = struct.pack("h" * samples , *s)
-
-wf = wave.open(fname, 'w')
-wf.setnchannels(1)
-wf.setsampwidth(2)
-wf.setframerate(fs)
-wf.writeframes(data)
-wf.close()
-
-plt.plot(s[0:441])
-plt.show()]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

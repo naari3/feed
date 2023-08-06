@@ -20035,55 +20035,6 @@ https://hatena.zendesk.com/hc/ja/requests/new
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">pythonで440Hz</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2023/05/08/231908" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>pythonで1秒の440hz（ドレミファでいうラ音）を再現してみました。wikiで必要なネタなのでちょっと予習中です。ぶっちゃけなにこれ！超簡単じゃないですか！C言語に比べて圧倒的な簡略化じゃないですかヤダー！なんというか田舎者が都会に出てきて、最近の常識はコレですよ感を見せつけれたような心境です（泣。
-import numpy as np
-import wave
-import struct
-from matplotlib import pylab as plt
-
-fname &#x3D; &#x27;440Hz.wav&#x27;
-
-fs  &#x3D; 44100
-f   &#x3D; 440
-sec &#x3D; 1
-A   &#x3D; 32767
-samples &#x3D; sec * fs
-
-t &#x3D; np.linspace(0, sec, samples)
-s &#x3D; A * np.sin(2 * np.pi * f * t)
-s &#x3D; np.rint(s)
-s &#x3D; s.astype(np.int16)
-
-data &#x3D; struct.pack(&quot;h&quot; * samples , *s)
-
-wf &#x3D; wave.open(fname, &#x27;w&#x27;)
-wf.setnchannels(1)
-wf.setsampwidth(2)
-wf.setframerate(fs)
-wf.writeframes(data)
-wf.close()
-
-plt.plot(s[0:441])
-plt.show()</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230508/20230508231717.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21785,7 +21736,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-08-06T02:10:19.861Z">2023-08-06T02:10:19.861Z</time>
+    <time id="build-timestamp" datetime="2023-08-06T03:01:53.720Z">2023-08-06T03:01:53.720Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

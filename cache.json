@@ -592,21 +592,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230510/20230510211505.png"
-        },
-        {
-          "id": "hatenablog://entry/4207575160647256124",
-          "author": null,
-          "description": "pythonで1秒の440hz（ドレミファでいうラ音）を再現してみました。wikiで必要なネタなのでちょっと予習中です。ぶっちゃけなにこれ！超簡単じゃないですか！C言語に比べて圧倒的な簡略化じゃないですかヤダー！なんというか田舎者が都会に出てきて、最近の常識はコレですよ感を見せつけれたような心境です（泣。\nimport numpy as np\nimport wave\nimport struct\nfrom matplotlib import pylab as plt\n\nfname = '440Hz.wav'\n\nfs  = 44100\nf   = 440\nsec = 1\nA   = 32767\nsamples = sec * fs\n\nt = np.linspace(0, sec, samples)\ns = A * np.sin(2 * np.pi * f * t)\ns = np.rint(s)\ns = s.astype(np.int16)\n\ndata = struct.pack(\"h\" * samples , *s)\n\nwf = wave.open(fname, 'w')\nwf.setnchannels(1)\nwf.setsampwidth(2)\nwf.setframerate(fs)\nwf.writeframes(data)\nwf.close()\n\nplt.plot(s[0:441])\nplt.show()",
-          "link": "https://akkera102.hatenablog.com/entry/2023/05/08/231908",
-          "publishedOn": "2023-05-08T14:19:08.000Z",
-          "wordCount": 452,
-          "title": "pythonで440Hz",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230508/20230508231717.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230508/20230508231717.png"
         }
       ]
     },
