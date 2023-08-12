@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-08-12T20:01:46.628Z</updated>
+    <updated>2023-08-12T21:02:01.474Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13812,23 +13812,6 @@ www.bscycle.co.jp
         <summary type="html"><![CDATA[GitHub Actionsでテストファイルを複数ノードに適切に分割するためのカスタムアクション、split-tests-by-timingsを作った。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ご意見募集: Rubyに名前空間サポート的なものが欲しいという話]]></title>
-        <id>hatenablog://entry/4207575160649134928</id>
-        <link href="https://tagomoris.hatenablog.com/entry/2023/05/15/174652"/>
-        <updated>2023-05-15T08:46:52.000Z</updated>
-        <summary type="html"><![CDATA[LFAを書いたときの話にあるKernel#loadの第2引数で名前空間的なものを作れるんだけど、loadした先のファイルでrequireされてたらダメなんだよね、という話の続き。ダメなんだよねー、で終わってたんだけどRubyKaigi2023で@shioyamaさんのMultiverse Rubyを聞いて、ここに仲間がいた!!! ってなって、さらにそのあとバーで飲みながらやろうやろうって盛り上がったので、なんか色々考えている。
-RubyKaigiの話は別途書くとして、いまはとりあえずこっち。
-後半に、こんなものが欲しい、という話、および読んだ人の意見が欲しいということが書いてあるので、このあたりに何か思うところがある人はぜひ読んでみてください。どっちかというと、自分以外のRubyユーザがどう考えているのかを、bugsに出す前にまず知りたいなと思っています。
-動機
-Rubyにはみなさんご存知の通り、名前空間的なものがない。どんなスクリプト・ライブラリ・アプリケーションでも、クラス・モジュールを定義するとき、基本的には名前空間のトップレベルに置くか、あるいは既存のモジュール・クラスの下に置く。しかしこれには以下に説明するような問題がある。
-名前の衝突
-複数のライブラリが同じ名前を使っている場合、もちろん競合する。同じ種類(クラスorモジュール)だった場合はお互いを上書きするし、異なる種類だった場合にはふたつめを読み込んだ時点で例外となる。
-またRubyの世界で支配的なRuby on Railsが「基本的にアプリケーションのクラス・モジュールはすべてトップレベルに置く」という規約を用いているのがこの制約を破滅的にしている。トップレベルの名前空間が膨大な数のユーザー定義クラスに消費されている「かもしれない」。このため、ライブラリ作者がライブラリを作るときには、トップレベルにはUse…]]></summary>
-        <author>
-            <name>たごもりすメモ</name>
         </author>
     </entry>
     <entry>
