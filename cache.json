@@ -3173,21 +3173,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482933350001",
-          "author": null,
-          "description": "最近はすっかりLLMにハマってるわけですが、ハマり過ぎたあまり一台のPCに複数のGPUを搭載（といっても、RTX A4000(VRAM 16GB)とQuadro M6000(VRAM 24GB)という妙な組み合わせですが）してたりするのですが、どうにもLLMの出力速度が遅いなーなどと思っていました。\n　感覚的には主にM6000の方が使われてる感じで、こいつはVRAMこそ多いもののRTX A4000より圧倒的に遅い（数世代前）ので、メインで使ってほしくない。というわけで、CUDA_VISIBLE_DEVICESという環境変数をいじってやればいいってところまではたどりついたのですが、CUDA_VISIBLE_DEVICES=2とかしてやってcuda:1みたいに指定すると妙なエラーが出る。色々調べてわかったのは、\nexport CUDA_VISIBLE_DEVICES=0,1\npython llm.py # この中でcuda:1なりcuda:0なりを指定する\n 　のようにすればいいらしいということ。この環境変数はデバイスの数ではなくて、GPUのリストを指定するものだったわけですね。盲点でした。",
-          "link": "https://kmizu.hatenablog.com/entry/2023/05/17/183237",
-          "publishedOn": "2023-05-17T09:32:37.000Z",
-          "wordCount": null,
-          "title": "環境変数CUDA_VISIBLE_DEVICESでハマったのでメモ",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

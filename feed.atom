@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-08-14T21:02:25.180Z</updated>
+    <updated>2023-08-14T22:01:42.389Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13678,20 +13678,6 @@ Oh, I love culture. I went to Berlin once and all my friends there had dreadlock
 If I were to wear my hair in dreadlocks and I went into work, say in an office 'I would get told t…]]></summary>
         <author>
             <name>pythonと自然言語処理を学ぶ日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[環境変数CUDA_VISIBLE_DEVICESでハマったのでメモ]]></title>
-        <id>hatenablog://entry/820878482933350001</id>
-        <link href="https://kmizu.hatenablog.com/entry/2023/05/17/183237"/>
-        <updated>2023-05-17T09:32:37.000Z</updated>
-        <summary type="html"><![CDATA[最近はすっかりLLMにハマってるわけですが、ハマり過ぎたあまり一台のPCに複数のGPUを搭載（といっても、RTX A4000(VRAM 16GB)とQuadro M6000(VRAM 24GB)という妙な組み合わせですが）してたりするのですが、どうにもLLMの出力速度が遅いなーなどと思っていました。
-　感覚的には主にM6000の方が使われてる感じで、こいつはVRAMこそ多いもののRTX A4000より圧倒的に遅い（数世代前）ので、メインで使ってほしくない。というわけで、CUDA_VISIBLE_DEVICESという環境変数をいじってやればいいってところまではたどりついたのですが、CUDA_VISIBLE_DEVICES=2とかしてやってcuda:1みたいに指定すると妙なエラーが出る。色々調べてわかったのは、
-export CUDA_VISIBLE_DEVICES=0,1
-python llm.py # この中でcuda:1なりcuda:0なりを指定する
- 　のようにすればいいらしいということ。この環境変数はデバイスの数ではなくて、GPUのリストを指定するものだったわけですね。盲点でした。]]></summary>
-        <author>
-            <name>kmizuの日記</name>
         </author>
     </entry>
     <entry>
