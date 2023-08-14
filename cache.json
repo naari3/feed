@@ -562,21 +562,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/4207575160649490762",
-          "author": null,
-          "description": "開発環境を整えてくれている中の人サイドで考えてみるとdevkitProは特殊かもしれません。たとえばGBDK, GB StdioはGBという１つのハードウェアをターゲットにしていて、実行環境の整備が済めばツール類に注力できるわけです。一方、devkitProはGBA開発以外にもDS, wii, switchなどを提供、メンテナンスしています。このことが開発環境に変化が少ない理由なのかもしれません。私の観測した限りGBA（もしくはdevkitPro全体）はWinterMuteさん一人でなりなっているように見えます。\nテキストエディタなんてやめてリアルタイムデバッグ環境にしてはどうか、という話は昔から何度もあります。今はVSCode+mGBAでできるようですね。でも標準的にはなっていません。なぜなら誰もメンテナンスしないから流行っては廃れてを繰り返しているのです。昔、私もどんな組み合わせだったか忘れましたが、エラーを吐いて徒労に終わったという経験を持ちます。２回以上はありますね。メンドイのはもう勘弁！ということで現在は秀丸エディタ１つでががんばっております。\ngithub.com",
-          "link": "https://akkera102.hatenablog.com/entry/2023/05/16/234157",
-          "publishedOn": "2023-05-16T14:41:57.000Z",
-          "wordCount": 384,
-          "title": "ぼんやり考えたこと",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -769,6 +754,21 @@
       "feedUrl": "https://blog.hatenablog.com/rss",
       "siteUrl": "https://blog.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/820878482958174076",
+          "author": null,
+          "description": "はてなブログ独自の集計による人気記事のランキング。8月6日（日）から8月12日（土）〔2023年8月第2週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    俺は「急にセリフから始まる曲」が好きで好きでたまらない男 - kansou\n by id:ikdhkr \n    \n2\n    米紙が報じた中国による日本の防衛ネットワークの侵害についてまとめてみた - piyolog\n by id:piyokango \n    \n3\n    ゼルダTotKで「普通」の挙動を実現するための特許がいろいろ出願されている件 - naoya2kの日記\n by id:naoya2k \n    \n4\n    男子も女子も日焼け止めを塗ろう、私だって塗ってるんだからさ - めんどくさいけどメイクしたい\n by id:tsumuri30 \n    \n5\n    『なっとく！関数型プログラミング』は読者の理解度の進捗を先読みして作り込まれた”プログラミング入門”の良書 - Magnolia Tech\n by id:magnoliak \n    \n6\n    なぜ規制派オタクは同じオタクを見下すのか。その「異常」な同族嫌悪の理由をわかりやすく説明するよ。 - Something Orange\n by id:kaien \n    \n7\n    「科博クラファンは美談ではない」と木曽崇氏。国の支援不足…？いや「寄付者優遇は前からやるべきだった」の意味で。 - INVISIBLE D.　ーQUIET & COLORFUL PLACE-\n by id:gryphon \n    \n8\n    なぜ就職氷河期世代にはタフな人が多いのか - orangeitems’s diary\n by id:orangeitems \n    \n9\n    転勤に関してブコメの頭が悪すぎて戦慄す…",
+          "link": "https://blog.hatenablog.com/entry/2023/08/14/120000",
+          "publishedOn": "2023-08-14T03:00:00.000Z",
+          "wordCount": 951,
+          "title": "今週のはてなブログランキング〔2023年8月第2週〕",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230814/20230814090239.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230814/20230814090239.jpg"
+        },
         {
           "id": "hatenablog://entry/820878482956846449",
           "author": null,
@@ -9318,16 +9318,6 @@
           "wordCount": null,
           "title": "メルカリの2023年技術研修DevDojoの資料と動画を公開します！",
           "imageUrl": null
-        },
-        {
-          "id": "https://engineering.mercari.com/blog/entry/20230512-127cd1f253/",
-          "author": null,
-          "description": "こんにちは！メルカリ Engineering Office チームの@aisakaと、HR Learning and Development チーム の@anzuです。 メルカリでは、新入社員の方が入社後から立ち上がるま […]",
-          "link": "https://engineering.mercari.com/blog/entry/20230512-127cd1f253/",
-          "publishedOn": "2023-05-16T14:20:06.000Z",
-          "wordCount": 288,
-          "title": "メルカリの新卒エンジニアはどう過ごす？2023年新卒研修の全貌を公開！",
-          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
         }
       ]
     },
