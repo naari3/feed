@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-08-21T01:21:42.908Z</updated>
+    <updated>2023-08-21T02:05:57.426Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14014,46 +14014,6 @@ wiki全部の誤字脱字確認2週分
 　他にも、とにかく…]]></summary>
         <author>
             <name>kmizuの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HDDがクラッシュしたので、バックアップサービスBackblazeからデータを復元する]]></title>
-        <id>hatenablog://entry/820878482934826287</id>
-        <link href="https://nomolk.hatenablog.com/entry/2023/05/23/223000"/>
-        <updated>2023-05-23T13:30:00.000Z</updated>
-        <summary type="html"><![CDATA[大事なデータがモリモリ詰まったHDDが死にました。若かりし頃の愚かだった自分であれば発狂もののアクシデントですが、齢を重ね守るべきものもできた私はデータバックアップサービスを利用しているので、穏やかな気持ちでいられます。そのバックアップサービスというのがBackblazeです。
-Backblazeの導入方法を説明したブログはたくさん見つかるのですが、復元作業についてレポートしているものがあまりないようだったので、レポートしていきます。
-Backblazeとは？
-Backblazeはストレージの容量無制限バックアップサービスです。コンピュータに内蔵／接続されたHDDやSSDのデータをすべてクラウドでバックアップしてくれます。
-※いわゆるクラウドストレージ（ファイル置き場）ではありません。保存されるのはローカルに存在するファイルのみで、手元で削除したファイルはバックアップからも削除されます
-データは常駐アプリケーションが勝手に同期してくれるので、バックアップに手間をかける必要はありません。同期を除外するドライブやフォルダの設定も可能です。
-料金は月額7ドル、年払いなら70ドル（5.83ドル/月）。なのですが国内ではソースネクストが年間ライセンスを7,700円で売っているのでそっちの方が安いです。これ、つい最近まで3,000円台の叩き売り価格だったのですが、一気に値上げされました。さすがに安すぎることに気づかれたか。
-
-↑ソースネクストの製品ページ
-
-↑Backblazeに直接課金する場合はこの招待リンクから登録すると1カ月無料になりますので何卒
-
-ちなみにIT系のメディアでメーカー別HDD故障率レポートの記事を読んだことがある方もいると思いますが、あれを出しているのがBackblazeです。
-ポルノサイトの blackblaze.com （backでなくblack）を、1,50…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[週記#60 5月3週]]></title>
-        <id>hatenablog://entry/820878482935003362</id>
-        <link href="https://nkaoobt.hatenablog.com/entry/2023/05/23/222144"/>
-        <updated>2023-05-23T13:21:44.000Z</updated>
-        <summary type="html"><![CDATA[参加した合作が投稿された。見てね。バズってるパートの一個前です。
-www.nicovideo.jp
- 
-この週末はずっと音MAD関連の作業をしていた。REAPERのTipsを2つ得たので共有しておきます。俺以外みんな知ってそう。
-・「アイテム内の選択範囲をコピー」のショートカットキー設定をすると……便利！
-・タイムラインのとこでコロコロしたら横方向に拡大・縮小されるけど、トラックパネル？のとこでコロコロすると縦に動く（マウスホイールを転がすのってなんかそれっぽい名前無いんですかね）
-2つ目のやつ、画面に収まりきらないトラック数になることが年一くらいでしかないので気付きませんでした。
-細かいテクニックとかVSTとかのことならともかく、9年目にもなってこんな基本操作っぽいことでもまだ知らないことがあるの、面白いですね。]]></summary>
-        <author>
-            <name>音MADとポケモンと私</name>
         </author>
     </entry>
     <entry>
