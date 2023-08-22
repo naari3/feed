@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482960731190",
+          "author": null,
+          "description": "来栖川先輩のスクリプトをテストしています。順調順調。４月１日（半分）まで来ました。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/08/22/224227",
+          "publishedOn": "2023-08-22T13:42:27.000Z",
+          "wordCount": 389,
+          "title": "テスト中",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230822/20230822224150.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230822/20230822224150.png"
+        },
+        {
           "id": "hatenablog://entry/820878482959546012",
           "author": null,
           "description": "残り71命令中残り7命令まで来ました。スクリプトが気持ちいいぐらいに通って最高です。来月中にはリリースできるかもしれません。\n・挙動不明なのでソースを追わないと・・・。\n// BGM NEXT 0x88\n\n・日めくりカレンダーだから表示が面倒かも。\n// 日付更新（カレンダー有） 0xf5\n\n・メンドイかも。さくらは降るところと降らないところ個別指定（予定）。\n// 雨 0xf7 0x01\n// さくら 0xf7 0x04\n\n・簡単\n// シナリオ終了 0x20\n// イベントエンド 0xff\n// ゲーム終了 0x94",
@@ -8810,106 +8825,6 @@
           "publishedOn": "2023-05-29T01:20:54.000Z",
           "wordCount": null,
           "title": "SIEMでの分析に特化した資格GCDAの紹介【エンジニアに役立つ資格】",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18760",
-          "author": "ふぇにっくちゅん（守田 瞬）",
-          "description": "おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 タイトルの通り、ふぇにっくちゅんが学生のときにあればよかったと思うのが cats_dogs です。 学生時代を思い起こしてみると、...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18760",
-          "publishedOn": "2023-05-25T01:49:51.000Z",
-          "wordCount": null,
-          "title": "学生時代にあればよかったアプリ",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18757",
-          "author": "ふぇにっくちゅん（守田 瞬）",
-          "description": "おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 普段仕事をする中で、様々な文章を書くと思います。 その文章は様々ですが、取り扱いが難しいものがあります。 たとえば、何かのプロジェ...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18757",
-          "publishedOn": "2023-05-25T01:49:33.000Z",
-          "wordCount": null,
-          "title": "共有できる文章を書くコツ",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18755",
-          "author": "ふぇにっくちゅん（守田 瞬）",
-          "description": "おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 みなさんは、普段文章をどこに置いているでしょうか？ 手元のパソコン、社内の共有ファイルシステム、Wiki サーバ、ブログサーバ、色...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18755",
-          "publishedOn": "2023-05-25T01:49:19.000Z",
-          "wordCount": null,
-          "title": "呪いのドキュメント（こわくないよ）",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18752",
-          "author": "ふぇにっくちゅん（守田 瞬）",
-          "description": "おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 現時点で、みなさんは cats_dogs にどのようなイメージを持っているでしょうか？ cats_dogs は、単体のアプリではあ...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18752",
-          "publishedOn": "2023-05-25T01:49:04.000Z",
-          "wordCount": null,
-          "title": "アプリをレゴ（LEGO）のように使おう",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18749",
-          "author": "ふぇにっくちゅん（守田 瞬）",
-          "description": "おはようございます。こんにちは。こんばんは。ふぇにっくちゅん です。 皆さんは普段どのような文章（ドキュメント）を書いていますか？ ふぇにっくちゅんは、調査した結果や分析の結果をまとめる、ブログを書く...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18749",
-          "publishedOn": "2023-05-25T01:48:49.000Z",
-          "wordCount": null,
-          "title": "あなたのドキュメント泣いてませんか？",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18747",
-          "author": "ふぇにっくちゅん（守田 瞬）",
-          "description": "お久しぶりです。ふぇにっくちゅん です。 いきなりですが、みなさんは普段文章を書くときに、Markdown を利用していますか？ ふぇにっくちゅんは、ほとんどのシーンで Markdown で文章を書い...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18747",
-          "publishedOn": "2023-05-25T01:48:24.000Z",
-          "wordCount": null,
-          "title": "GitHub から Markdown だけ切除してみた",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18584",
-          "author": "ヒラマツ",
-          "description": "cats_dogs開発者のヒラマツです。 HTTPキャッシュをうまく使う技術、HTTPキャッシュ制御を解説します。 HTTPキャッシュは、WebアプリなどのWebサービスの通信を最適化する技術です。 ...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18584",
-          "publishedOn": "2023-05-25T01:45:59.000Z",
-          "wordCount": null,
-          "title": "HTTPキャッシュを使いこなして、Webアプリを快適に(1)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18666",
-          "author": "ヒラマツ",
-          "description": "「続・HTTPキャッシュを使いこなして、Webアプリを快適に(1)」の後半です。 まだ読んでない方は、そちらを先に読んでください。 「HTTPキャッシュを使いこなして、Webアプリを快適に」の続編でも...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18666",
-          "publishedOn": "2023-05-25T01:45:31.000Z",
-          "wordCount": null,
-          "title": "続・HTTPキャッシュを使いこなして、Webアプリを快適に(2)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18642",
-          "author": "ヒラマツ",
-          "description": "「HTTPキャッシュを使いこなして、Webアプリを快適に(1)」の後半です。 まだ読んでない方は、そちらを先に読んでください。 cats_dogs開発者のヒラマツです。 今回は、HTTPのキャッシュ制...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18642",
-          "publishedOn": "2023-05-25T01:45:29.000Z",
-          "wordCount": null,
-          "title": "HTTPキャッシュを使いこなして、Webアプリを快適に(2)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=18657",
-          "author": "ヒラマツ",
-          "description": "「HTTPキャッシュを使いこなして、Webアプリを快適に」の続編です。 まだ読んでない方は、そちらを先に読んでください。 cats_dogs開発者のヒラマツです。 なんとか、HTTPキャッシュ制御の基...",
-          "link": "https://eng-blog.iij.ad.jp/archives/18657",
-          "publishedOn": "2023-05-25T01:45:29.000Z",
-          "wordCount": null,
-          "title": "続・HTTPキャッシュを使いこなして、Webアプリを快適に(1)",
           "imageUrl": null
         }
       ]
