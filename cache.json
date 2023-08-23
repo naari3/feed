@@ -4941,23 +4941,7 @@
       "title": "株式会社Ninjastars 技術系ブログ",
       "feedUrl": "https://www.ninjastars-net.com/rss",
       "siteUrl": "https://www.ninjastars-net.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/4207112889984696562",
-          "author": null,
-          "description": "株式会社Ninjastars\n今回はOWASPが提供するAndroid用のCTF「Android UnCrackable L2」のWriteupを書きたいと思います。\nmas.owasp.org\nAndroidのルート化検出を回避し、secret stringを見つけることが目標です。\n脆弱性を診断する上で強力なツールであるFridaの理解や知識を深めていきましょう。\nwww.ninjastars-net.com\n環境\nAndroid 13 Pixel 5 (root化済み)\nWindows 11 Home\n使用するツール\nFrida 16.0.10\njadx version: 1.4.5\nルート化検出の回避\n早速APKをAndroid端末にインストールしてアプリケーションを起動してみましょう。\n\nコンパイルするツールを用いてソースコードの解析を試みます。\n\nルート化検知のアラートダイアログを作成する。\n「OK」をタップするとJavaのSystemクラスからexitメソッドを呼び出し、アプリを終了させる。\nFridaを使用し2通りの方法で検知をバイパスしてみましょう！\n方法1　「a」メソッドを何もしないメソッドに置き換える\nおそらく最も簡単な方法は「a」メソッドを何もしないメソッドに置き換えて、アラートを表示させなくすることでしょう。\nスニペットを関数の中身をただreturnするだけに変更し、適当な名前のjsファイル（ここでは「bypass.js」）に保存します。\nJava.perform(() => {\n    let MainActivity = Java.use(\"sg.vantagepoint.uncrackable2.MainActivity\");\n    MainActivity[\"a\"].overload('java.lang.String').impleme…",
-          "link": "https://www.ninjastars-net.com/entry/2023/05/26/142959",
-          "publishedOn": "2023-05-26T05:29:59.000Z",
-          "wordCount": null,
-          "title": "Fridaを使用してOWASPが提供するAndroid用のCTFを解く",
-          "enclosure": {
-            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/153440106/1555295496467351",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "ximcoの部屋",
@@ -9426,6 +9410,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=39284",
+          "author": "mamosuke",
+          "description": "Project Qとして発売が発表されていたPS5のリモートプレイ専用デバイスが「PlayStation Portal リモートプレーヤー」として正式発表されました。→→→この記事の続きを読む\nこれ誰が買うの？リモートプレイ専用携帯機Project Qが待望の正式発表 その名も「PlayStation Portal リモートプレーヤー」 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023082439284/",
+          "publishedOn": "2023-08-23T17:20:22.000Z",
+          "wordCount": null,
+          "title": "これ誰が買うの？リモートプレイ専用携帯機Project Qが待望の正式発表 その名も「PlayStation Portal リモートプレーヤー」",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=39282",
           "author": "mamosuke",

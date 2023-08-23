@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-08-23T17:02:20.784Z</updated>
+    <updated>2023-08-23T18:01:42.262Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[これ誰が買うの？リモートプレイ専用携帯機Project Qが待望の正式発表 その名も「PlayStation Portal リモートプレーヤー」]]></title>
+        <id>https://gamegaz.com/?p=39284</id>
+        <link href="https://gamegaz.com/2023082439284/"/>
+        <updated>2023-08-23T17:20:22.000Z</updated>
+        <summary type="html"><![CDATA[Project Qとして発売が発表されていたPS5のリモートプレイ専用デバイスが「PlayStation Portal リモートプレーヤー」として正式発表されました。→→→この記事の続きを読む
+これ誰が買うの？リモートプレイ専用携帯機Project Qが待望の正式発表 その名も「PlayStation Portal リモートプレーヤー」 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[お皿の持ち方]]></title>
         <id>hatenablog://entry/820878482960966107</id>
@@ -14110,41 +14121,6 @@ gbdev.io]]></summary>
 続きをみる]]></summary>
         <author>
             <name>Hercelot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fridaを使用してOWASPが提供するAndroid用のCTFを解く]]></title>
-        <id>hatenablog://entry/4207112889984696562</id>
-        <link href="https://www.ninjastars-net.com/entry/2023/05/26/142959"/>
-        <updated>2023-05-26T05:29:59.000Z</updated>
-        <summary type="html"><![CDATA[株式会社Ninjastars
-今回はOWASPが提供するAndroid用のCTF「Android UnCrackable L2」のWriteupを書きたいと思います。
-mas.owasp.org
-Androidのルート化検出を回避し、secret stringを見つけることが目標です。
-脆弱性を診断する上で強力なツールであるFridaの理解や知識を深めていきましょう。
-www.ninjastars-net.com
-環境
-Android 13 Pixel 5 (root化済み)
-Windows 11 Home
-使用するツール
-Frida 16.0.10
-jadx version: 1.4.5
-ルート化検出の回避
-早速APKをAndroid端末にインストールしてアプリケーションを起動してみましょう。
-
-コンパイルするツールを用いてソースコードの解析を試みます。
-
-ルート化検知のアラートダイアログを作成する。
-「OK」をタップするとJavaのSystemクラスからexitメソッドを呼び出し、アプリを終了させる。
-Fridaを使用し2通りの方法で検知をバイパスしてみましょう！
-方法1　「a」メソッドを何もしないメソッドに置き換える
-おそらく最も簡単な方法は「a」メソッドを何もしないメソッドに置き換えて、アラートを表示させなくすることでしょう。
-スニペットを関数の中身をただreturnするだけに変更し、適当な名前のjsファイル（ここでは「bypass.js」）に保存します。
-Java.perform(() => {
-    let MainActivity = Java.use("sg.vantagepoint.uncrackable2.MainActivity");
-    MainActivity["a"].overload('java.lang.String').impleme…]]></summary>
-        <author>
-            <name>株式会社Ninjastars 技術系ブログ</name>
         </author>
     </entry>
     <entry>

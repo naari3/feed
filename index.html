@@ -78,6 +78,26 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">これ誰が買うの？リモートプレイ専用携帯機Project Qが待望の正式発表 その名も「PlayStation Portal リモートプレーヤー」</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2023082439284/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Project Qとして発売が発表されていたPS5のリモートプレイ専用デバイスが「PlayStation Portal リモートプレーヤー」として正式発表されました。→→→この記事の続きを読む
+これ誰が買うの？リモートプレイ専用携帯機Project Qが待望の正式発表 その名も「PlayStation Portal リモートプレーヤー」 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://ruiji.hatenablog.jp/" target="_blank"
               rel="noopener">ブログ名 - コピー (2) - コピー</a></h3>
           <section class="articles-per-source">
@@ -20232,51 +20252,6 @@ gbdev.io</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.ninjastars-net.com/" target="_blank"
-              rel="noopener">株式会社Ninjastars 技術系ブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Fridaを使用してOWASPが提供するAndroid用のCTFを解く</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.ninjastars-net.com/entry/2023/05/26/142959" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>株式会社Ninjastars
-今回はOWASPが提供するAndroid用のCTF「Android UnCrackable L2」のWriteupを書きたいと思います。
-mas.owasp.org
-Androidのルート化検出を回避し、secret stringを見つけることが目標です。
-脆弱性を診断する上で強力なツールであるFridaの理解や知識を深めていきましょう。
-www.ninjastars-net.com
-環境
-Android 13 Pixel 5 (root化済み)
-Windows 11 Home
-使用するツール
-Frida 16.0.10
-jadx version: 1.4.5
-ルート化検出の回避
-早速APKをAndroid端末にインストールしてアプリケーションを起動してみましょう。
-
-コンパイルするツールを用いてソースコードの解析を試みます。
-
-ルート化検知のアラートダイアログを作成する。
-「OK」をタップするとJavaのSystemクラスからexitメソッドを呼び出し、アプリを終了させる。
-Fridaを使用し2通りの方法で検知をバイパスしてみましょう！
-方法1　「a」メソッドを何もしないメソッドに置き換える
-おそらく最も簡単な方法は「a」メソッドを何もしないメソッドに置き換えて、アラートを表示させなくすることでしょう。
-スニペットを関数の中身をただreturnするだけに変更し、適当な名前のjsファイル（ここでは「bypass.js」）に保存します。
-Java.perform(() &#x3D;&gt; {
-    let MainActivity &#x3D; Java.use(&quot;sg.vantagepoint.uncrackable2.MainActivity&quot;);
-    MainActivity[&quot;a&quot;].overload(&#x27;java.lang.String&#x27;).impleme…</span>
-                  </div>
-                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/153440106/1555295496467351" class="card article-thumbnail" data-enclosure />
-                                  </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21964,7 +21939,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-08-23T17:02:20.707Z">2023-08-23T17:02:20.707Z</time>
+    <time id="build-timestamp" datetime="2023-08-23T18:01:42.192Z">2023-08-23T18:01:42.192Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
