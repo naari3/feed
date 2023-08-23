@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-08-23T03:01:45.461Z</updated>
+    <updated>2023-08-23T04:01:50.592Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,16 @@
         <summary type="html"><![CDATA[要約 ビジネス環境においてフィードバックを得るのは簡単なことではないかもしれません。その点、アンケートは良い方法のように思えますが、期待どおりの結果を得るには、注意しなければならないことがあります。 アンケートから得たい […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rust での tracing]]></title>
+        <id>https://blog.ojisan.io/rust-tracing</id>
+        <link href="https://blog.ojisan.io/rust-tracing"/>
+        <updated>2023-08-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[axum を始め、tower 系列でサーバーを作っているといくらでも例が出てきそうな話ではあるが、「ちょっと君、明日からRust でトレーシングしたまえ」って言われた時に欲しいまとまった情報は意外とない気がしたので書く。 基本的に tower 系列や、tower…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>

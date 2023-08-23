@@ -8284,6 +8284,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/rust-tracing",
+          "author": null,
+          "description": "axum を始め、tower 系列でサーバーを作っているといくらでも例が出てきそうな話ではあるが、「ちょっと君、明日からRust でトレーシングしたまえ」って言われた時に欲しいまとまった情報は意外とない気がしたので書く。 基本的に tower 系列や、tower…",
+          "link": "https://blog.ojisan.io/rust-tracing",
+          "publishedOn": "2023-08-23T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Rust での tracing",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/why-hyper",
           "author": null,
           "description": "Rust でWebサーバーを書く時の技術選定をするときに調べていると hyper に必ず出会うと思う。これは黎明期から存在しているライブラリで、Webサーバーにしては珍しく version 1 まで到達している老舗だ(…",
