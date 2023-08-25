@@ -8402,16 +8402,6 @@
           "wordCount": null,
           "title": "JavaScript Primer 改訂2版をリリースしました！/JavaScript Primerはなぜ更新され続けるのか？",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/05/28/rss-to-twitter/",
-          "author": null,
-          "description": "RSSの新しい投稿をTwitterに投稿するGitHub Actionsを作りました。\nazu/rss-to-twitter: GitHub Actions: RSS to Twitter\nIFTTTでRSSをTwitterに投稿していたのですが、2023年に無料プランが終了するので代替手段を探していました。\n色々探したけど欲しいものがなかったので作りました。\nUpdates to IFTTT free tier - IFTTT\nRSSでTwitterに投稿してたのが、GitHub Pagesで管理してるブログだけだったのでGitHub ActionsでRSSをチェックしてTwitterに投稿するアクションを作りました。\n準備\nTwitter API Keyの取得\n投稿するアカウントでTwitter Appsを作り、API KeyやAccess Tokenを取得する必要があります。\n投稿したいアカウントでログインする\nTwitter Appをつくります - https://developer.twitter.com/en/portal/dashboard\nデフォルトのパーミッションがReadのみになってることがあるのでRead and Writeに変更します\nUser authentication settings という場所から設定できるので、パーミッションをRead and Writeに変更します\n\n\nAPI Key/API Key Secret と Access Token/Access Token Secretを取得します\nそれぞれAPI KeyといAccess Tokenをregenerateするなどでコピーしておきます\n\nTWITTER_APIKEY と TWITTER_APIKEY_SECRET\n\nTWITTER_ACCESS_TOKEN と TWITTER_…",
-          "link": "https://efcl.info/2023/05/28/rss-to-twitter/",
-          "publishedOn": "2023-05-28T01:49:00.000Z",
-          "wordCount": null,
-          "title": "GitHub ActionsでRSSをTwitterに投稿するアクションを作った",
-          "imageUrl": null
         }
       ]
     },

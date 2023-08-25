@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-08-25T13:02:47.845Z</updated>
+    <updated>2023-08-25T14:02:04.907Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14017,36 +14017,6 @@ getsuaku.com
 じゃ！]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GitHub ActionsでRSSをTwitterに投稿するアクションを作った]]></title>
-        <id>https://efcl.info/2023/05/28/rss-to-twitter/</id>
-        <link href="https://efcl.info/2023/05/28/rss-to-twitter/"/>
-        <updated>2023-05-28T01:49:00.000Z</updated>
-        <summary type="html"><![CDATA[RSSの新しい投稿をTwitterに投稿するGitHub Actionsを作りました。
-azu/rss-to-twitter: GitHub Actions: RSS to Twitter
-IFTTTでRSSをTwitterに投稿していたのですが、2023年に無料プランが終了するので代替手段を探していました。
-色々探したけど欲しいものがなかったので作りました。
-Updates to IFTTT free tier - IFTTT
-RSSでTwitterに投稿してたのが、GitHub Pagesで管理してるブログだけだったのでGitHub ActionsでRSSをチェックしてTwitterに投稿するアクションを作りました。
-準備
-Twitter API Keyの取得
-投稿するアカウントでTwitter Appsを作り、API KeyやAccess Tokenを取得する必要があります。
-投稿したいアカウントでログインする
-Twitter Appをつくります - https://developer.twitter.com/en/portal/dashboard
-デフォルトのパーミッションがReadのみになってることがあるのでRead and Writeに変更します
-User authentication settings という場所から設定できるので、パーミッションをRead and Writeに変更します
-
-
-API Key/API Key Secret と Access Token/Access Token Secretを取得します
-それぞれAPI KeyといAccess Tokenをregenerateするなどでコピーしておきます
-
-TWITTER_APIKEY と TWITTER_APIKEY_SECRET
-
-TWITTER_ACCESS_TOKEN と TWITTER_…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
