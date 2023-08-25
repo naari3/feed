@@ -8223,6 +8223,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/oreha-private-func-nimo-test-kaku",
+          "author": null,
+          "description": "「private 関数にはテストを書かない」というのが多数派だと思う。だが昨日、仕事で In-source testing を書いていたらふと private 関数にテストを書きたくなった。そこで、In-source testingができる環境下でもprivate…",
+          "link": "https://blog.ojisan.io/oreha-private-func-nimo-test-kaku",
+          "publishedOn": "2023-08-25T00:00:00.000Z",
+          "wordCount": null,
+          "title": "private 関数にもテストを書きたいとき",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/rust-tracing",
           "author": null,
           "description": "axum を始め、tower 系列でサーバーを作っているといくらでも例が出てきそうな話ではあるが、「ちょっと君、明日からRust でトレーシングしたまえ」って言われた時に欲しいまとまった情報は意外とない気がしたので書く。 基本的に tower 系列や、tower…",
