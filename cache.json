@@ -3131,6 +3131,21 @@
       "siteUrl": "https://kmizu.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482962497236",
+          "author": null,
+          "description": "Scala 3、正式リリースされてからそこそこ経ってますが皆さん使ってますか？実は自分は、主にIntellij IDEAのScala 3対応に不安もあってScala 2.13系列をずっと使い続けて来たのですが、最近はScala 3対応も進んできたようなので乗り換えを始めることにしました。で、手始めにということで型レベル自然数（型レベルペアノ数）を定義してみることにしました。\n型レベル自然数は読んで字の如くで、型のレベルで自然数をエンコーディングしちゃおうって技です。依存型のある言語なら最初からあるので、わざわざ型レベル自然数とか大仰な言い方しなくてもいいのですが、それはそれとして論より証拠。早速、Scala 3で型レベル自然数を定義してみます。\nenum Nat {\n  case Zero\n  case Succ[A <: Nat](v: A)\n}\n\n\n\n定義はこれだけです。簡単ですね。Scala 2だと\nsealed trait Nat\nobject Nat {\n  case object Zero extends Nat\n  case class Succ[A <: Nat](V: A) extends Nat\n}\n\n\n\nのように書かなければいけなかったのでとっても面倒でした。さてさて、とりあえずこれで型レベル自然数の定義はできたのですが、よく使う一桁の自然数は別名定義しておきたいですというわけで、次にこんなん書きます：\ntype _0 = Zero.type\ntype _1 = Succ[_0]\ntype _2 = Succ[_1]\ntype _3 = Succ[_2]\ntype _4 = Succ[_3]\ntype _5 = Succ[_4]\ntype _6 = Succ[_5]\ntype _7 = Succ[_6]\ntype _8 = Succ[_7]\ntype …",
+          "link": "https://kmizu.hatenablog.com/entry/2023/08/28/202626",
+          "publishedOn": "2023-08-28T11:26:26.000Z",
+          "wordCount": null,
+          "title": "Scala 3で型レベル自然数をやってみたらすごく簡単になってた",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482947227232",
           "author": null,
           "description": "すっごく個人的な話なんですが、生まれてからもうすぐで40年になろうという歳になって思うわけです。\n「自分は嫉妬心ないなあ」と。\n　妬み嫉みは自分より遥か高みにいる人に対しては起きなくて、自分と拮抗する実力の持ち主との間で起こるともよく聞きますが、そういう相手に対しても\n「まあ、その人なりに頑張ったんだろうし」\n　くらいにしか思わないです。男女関係だって、かつて好きだった異性が結婚した話を聞いたときも別段ショックを受けた覚えがありません。「まあ良かったよね」くらい？\n　そんな風にしてずっと生きてきたものだから、他者の嫉妬心や嫉妬してしまって自己嫌悪する気持ちがイマイチ理解できなかったりします。\n　30代は結構ストレスが多い10年という一面はありましたが、嫉妬心がほとんどないので、誰かと比べて境遇を嘆くことがなかったのは良い事だった……のかもしれません。実際、メンタル的に一番しんどい的ですら、楽しそうな様子の誰かを見て心がしんどくなる、なんてことはなかったですし。\n　オチはないんですが、実際問題、嫉妬心が（ほとんど）ない人ってどのくらいいるんでしょう？ググっても時々いるくらいには珍しくない存在みたいですが。",
@@ -6569,16 +6584,6 @@
           "wordCount": 2196,
           "title": "夢日記",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/368012962244723681c37cc5435f891ddbc96c30.png"
-        },
-        {
-          "id": "https://note.com/klunakapa/n/n7117188d3e63",
-          "author": null,
-          "description": "タイトルの通り。場所毎の味を記してく。\n\n\n続きをみる",
-          "link": "https://note.com/klunakapa/n/n7117188d3e63",
-          "publishedOn": "2023-05-30T23:14:22.000Z",
-          "wordCount": 2215,
-          "title": "タバコって場所によって味変わる",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/106948614/rectangle_large_type_2_d8d8b1c3db12ed90e13860a425cabac2.png?width=800"
         }
       ]
     },
@@ -7778,16 +7783,6 @@
           "wordCount": null,
           "title": "アーティストって病んでた方が良い？",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/107043846/rectangle_large_type_2_eaa5bb4e7bcfa8bf53487f2bd6aaad83.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n84e252f3a0c5",
-          "author": null,
-          "description": "データ入力のバイトをしていたとき、とにかく「時間がない」が言い訳だった。あと、「疲れた」。\nというのも、映画も見たかったしジムにも行きたかったしnoteも描きたかったし、何よりもかによりも絵の練習をしたかったからだ。なかなか難しい願望で、8時間拘束されていると、8本足でも手が出ない。\n続きをみる",
-          "link": "https://note.com/sizes/n/n84e252f3a0c5",
-          "publishedOn": "2023-05-30T23:26:59.000Z",
-          "wordCount": 2318,
-          "title": "戦略を考えるのは時間をフルに使えるようになってからでいい",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/106949112/rectangle_large_type_2_5e59ac4a0c9594f084093e2346c663b8.jpeg?width=800"
         }
       ]
     },

@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-08-28T11:01:42.698Z</updated>
+    <updated>2023-08-28T12:02:02.164Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Scala 3で型レベル自然数をやってみたらすごく簡単になってた]]></title>
+        <id>hatenablog://entry/820878482962497236</id>
+        <link href="https://kmizu.hatenablog.com/entry/2023/08/28/202626"/>
+        <updated>2023-08-28T11:26:26.000Z</updated>
+        <summary type="html"><![CDATA[Scala 3、正式リリースされてからそこそこ経ってますが皆さん使ってますか？実は自分は、主にIntellij IDEAのScala 3対応に不安もあってScala 2.13系列をずっと使い続けて来たのですが、最近はScala 3対応も進んできたようなので乗り換えを始めることにしました。で、手始めにということで型レベル自然数（型レベルペアノ数）を定義してみることにしました。
+型レベル自然数は読んで字の如くで、型のレベルで自然数をエンコーディングしちゃおうって技です。依存型のある言語なら最初からあるので、わざわざ型レベル自然数とか大仰な言い方しなくてもいいのですが、それはそれとして論より証拠。早速、Scala 3で型レベル自然数を定義してみます。
+enum Nat {
+  case Zero
+  case Succ[A <: Nat](v: A)
+}
+
+
+
+定義はこれだけです。簡単ですね。Scala 2だと
+sealed trait Nat
+object Nat {
+  case object Zero extends Nat
+  case class Succ[A <: Nat](V: A) extends Nat
+}
+
+
+
+のように書かなければいけなかったのでとっても面倒でした。さてさて、とりあえずこれで型レベル自然数の定義はできたのですが、よく使う一桁の自然数は別名定義しておきたいですというわけで、次にこんなん書きます：
+type _0 = Zero.type
+type _1 = Succ[_0]
+type _2 = Succ[_1]
+type _3 = Succ[_2]
+type _4 = Succ[_3]
+type _5 = Succ[_4]
+type _6 = Succ[_5]
+type _7 = Succ[_6]
+type _8 = Succ[_7]
+type …]]></summary>
+        <author>
+            <name>kmizuの日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2023.8.28]]></title>
         <id>https://gamegaz.com/?p=39323</id>
@@ -13855,31 +13893,6 @@ Acknowledgements
 GameGaz Daily 2023.5.31 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[戦略を考えるのは時間をフルに使えるようになってからでいい]]></title>
-        <id>https://note.com/sizes/n/n84e252f3a0c5</id>
-        <link href="https://note.com/sizes/n/n84e252f3a0c5"/>
-        <updated>2023-05-30T23:26:59.000Z</updated>
-        <summary type="html"><![CDATA[データ入力のバイトをしていたとき、とにかく「時間がない」が言い訳だった。あと、「疲れた」。
-というのも、映画も見たかったしジムにも行きたかったしnoteも描きたかったし、何よりもかによりも絵の練習をしたかったからだ。なかなか難しい願望で、8時間拘束されていると、8本足でも手が出ない。
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[タバコって場所によって味変わる]]></title>
-        <id>https://note.com/klunakapa/n/n7117188d3e63</id>
-        <link href="https://note.com/klunakapa/n/n7117188d3e63"/>
-        <updated>2023-05-30T23:14:22.000Z</updated>
-        <summary type="html"><![CDATA[タイトルの通り。場所毎の味を記してく。
-
-
-続きをみる]]></summary>
-        <author>
-            <name>かっぱ</name>
         </author>
     </entry>
     <entry>

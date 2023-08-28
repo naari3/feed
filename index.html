@@ -78,6 +78,54 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://kmizu.hatenablog.com/" target="_blank"
+              rel="noopener">kmizuの日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Scala 3で型レベル自然数をやってみたらすごく簡単になってた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://kmizu.hatenablog.com/entry/2023/08/28/202626" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Scala 3、正式リリースされてからそこそこ経ってますが皆さん使ってますか？実は自分は、主にIntellij IDEAのScala 3対応に不安もあってScala 2.13系列をずっと使い続けて来たのですが、最近はScala 3対応も進んできたようなので乗り換えを始めることにしました。で、手始めにということで型レベル自然数（型レベルペアノ数）を定義してみることにしました。
+型レベル自然数は読んで字の如くで、型のレベルで自然数をエンコーディングしちゃおうって技です。依存型のある言語なら最初からあるので、わざわざ型レベル自然数とか大仰な言い方しなくてもいいのですが、それはそれとして論より証拠。早速、Scala 3で型レベル自然数を定義してみます。
+enum Nat {
+  case Zero
+  case Succ[A &lt;: Nat](v: A)
+}
+
+
+
+定義はこれだけです。簡単ですね。Scala 2だと
+sealed trait Nat
+object Nat {
+  case object Zero extends Nat
+  case class Succ[A &lt;: Nat](V: A) extends Nat
+}
+
+
+
+のように書かなければいけなかったのでとっても面倒でした。さてさて、とりあえずこれで型レベル自然数の定義はできたのですが、よく使う一桁の自然数は別名定義しておきたいですというわけで、次にこんなん書きます：
+type _0 &#x3D; Zero.type
+type _1 &#x3D; Succ[_0]
+type _2 &#x3D; Succ[_1]
+type _3 &#x3D; Succ[_2]
+type _4 &#x3D; Succ[_3]
+type _5 &#x3D; Succ[_4]
+type _6 &#x3D; Succ[_5]
+type _7 &#x3D; Succ[_6]
+type _8 &#x3D; Succ[_7]
+type …</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -19844,56 +19892,6 @@ Acknowledgements
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2023-05-30">2023-05-30</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
-              rel="noopener">自由さ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">戦略を考えるのは時間をフルに使えるようになってからでいい</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n84e252f3a0c5" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>データ入力のバイトをしていたとき、とにかく「時間がない」が言い訳だった。あと、「疲れた」。
-というのも、映画も見たかったしジムにも行きたかったしnoteも描きたかったし、何よりもかによりも絵の練習をしたかったからだ。なかなか難しい願望で、8時間拘束されていると、8本足でも手が出ない。
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/106949112/rectangle_large_type_2_5e59ac4a0c9594f084093e2346c663b8.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/klunakapa" target="_blank"
-              rel="noopener">かっぱ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">タバコって場所によって味変わる</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/klunakapa/n/n7117188d3e63" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>タイトルの通り。場所毎の味を記してく。
-
-
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/106948614/rectangle_large_type_2_d8d8b1c3db12ed90e13860a425cabac2.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2023-05-29">2023-05-29</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -21632,7 +21630,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-08-28T11:01:42.641Z">2023-08-28T11:01:42.641Z</time>
+    <time id="build-timestamp" datetime="2023-08-28T12:02:02.089Z">2023-08-28T12:02:02.089Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
