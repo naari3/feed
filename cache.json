@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482962800480",
+          "author": null,
+          "description": "マルチシナリオやりますか。。\n■完了\n・マルチのエアホッケー位置修正\n・エピローグの日付\n・４月　８日　桜表示\n・４月　９日　教室で２年目の最初の挨拶 選択肢がブツ切り。\n\n■残り\n・４月２１日ほか　雨表示\n・４月１日ほか　拡大エフェクト",
+          "link": "https://akkera102.hatenablog.com/entry/2023/08/29/205704",
+          "publishedOn": "2023-08-29T11:57:04.000Z",
+          "wordCount": 402,
+          "title": "今日の進捗",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482962529371",
           "author": null,
           "description": "・TODO\n・４月１日　執事などの拡大エフェクト\nf8 0 レミィシナリオ。アップ？\nf8 1 左側拡大？来栖川シナリオ。じーさんほか\nf8 2 右側拡大？来栖川シナリオ。じーさんほか\nf8 3 中央拡大？来栖川シナリオ。じーさんほか\nf8 4 マルチシナリオ。見せて？\nf8 5 琴音「天」\n\n・４月　９日　教室で２年目の最初の挨拶\n選択肢がブツ切り。\n\n・４月　８日　桜表示\n・４月２１日　雨表示\n\n・エンディング後の復帰処理\n・マルチのエアホッケー位置\n・エピローグの日付",
@@ -8114,16 +8129,6 @@
           "wordCount": null,
           "title": "Cookie Store API による document.cookie の改善",
           "imageUrl": null
-        },
-        {
-          "id": "https://blog.jxck.io/entries/2023-06-01/abort-signal-any.html",
-          "author": null,
-          "description": "最近 AbortSignal.any() が提案され、急速に実装が進んでいる。すでに定義されている AbortSignal.timeout() や addEventListener への Signal なども含め、非同期処理の中断を実装する際の API はかなり整備されてきた。これら API のモチベーションと設計を中心にまとめる。",
-          "link": "https://blog.jxck.io/entries/2023-06-01/abort-signal-any.html",
-          "publishedOn": "2023-06-01T00:00:00.000Z",
-          "wordCount": null,
-          "title": "AbortSignal.any(), AbortSignal.timeout(), そして addEvnetListener の Signal",
-          "imageUrl": null
         }
       ]
     },
@@ -8241,6 +8246,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2023/08/29/ni.zsh-socket.dev/",
+          "author": null,
+          "description": "npm/yarn/pnpm/bunを同じコマンドで扱えるni.zshに、npmで配布されているマルウェアを間違ってインストールするのを防ぐ機能を追加しました。\nni.zshについては、次の記事を参照してください。\nnpm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた | Web Scratch\nnpmパッケージのマルウェア\nnpmパッケージとしてマルウェアをpublishして開発者を狙うサプライチェーン攻撃が最近多くなっています。\nたとえば、次の記事ではemails-helperというもっともらしいパッケージ名でマルウェアが配布されていました。\nNPM Package Masquerading as Email Validator Contains C2 and Sophisticated Data Exfiltration\n他にもtyposquattingという有名なパッケージ名のtypoを狙ってマルウェアを配布しているケースも多いです。\nMalicious Packages in npm Targeting Azure Developers\nnpmは利用者が多いため、こういったマルウェアのパッケージが月に数百件とかの単位で増えています。\nVulnerability DB | Snyk\n最近では、1つのパッケージではなく、複数のパッケージを組み合わせて発動するようなマルウェアもあります。\nこれは、検知の回避などが目的だと思いますが、攻撃がどんどん複雑になってきています。\nPhylum Discovers Sophisticated Ongoing Attack on NPM\n現状のマルウェアの多くはローカルの環境変数やAPIキー、秘密鍵などを盗むようなものが多いです。\nそのため、これらを空振りさせることも一つの対策で、それについては次の記事…",
+          "link": "https://efcl.info/2023/08/29/ni.zsh-socket.dev/",
+          "publishedOn": "2023-08-29T10:46:00.000Z",
+          "wordCount": null,
+          "title": "ni.zsh: npmインストール時のサプライチェーン攻撃を検知する機能を追加",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2023/07/29/mubook-hon/",
           "author": null,
@@ -10541,16 +10556,6 @@
           "wordCount": 1953,
           "title": "GameGaz Daily 2023.6.1",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/vitesin.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=38781",
-          "author": "mamosuke",
-          "description": "yuzu開発チームが、Nintendo SwitchエミュレータyuzuのAndroid版を公開したことを発表していました。→→→この記事の続きを読む\nyuzu開発チーム SwitchエミュレータyuzuをAndroidへ移植 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023060138781/",
-          "publishedOn": "2023-05-31T23:07:58.000Z",
-          "wordCount": 1976,
-          "title": "yuzu開発チーム SwitchエミュレータyuzuをAndroidへ移植",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/yuzu-on-Android.png"
         }
       ]
     },
