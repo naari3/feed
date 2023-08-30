@@ -547,21 +547,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482938012284",
-          "author": null,
-          "description": "ようやく探し求めていたものが見つかったというか、vgmフォーマットを見たときはびっくりしました。内容はサウンドレジスタへのログファイルなのですけど、実装がどれほど簡単か狂喜乱舞しちゃいます。これでGBサウンドをGBAへラクに実装できます。\ngithub.com\nvgmrips.net\nコマンドはたったの３つ。\nレジスタに書き込むコマンド：0xB3＋レジスタアドレス1バイト＋書き込む内容1バイト\nしかもネットをさまようとvgm形式の市販ゲームのrippingがけっこうありますし、これはヤバい。自作ゲームはhUGETrackerでVGM出力して、それを本体で演奏するだけというのが王道になりそうです。早くツールとドライバ作ろうっと。",
-          "link": "https://akkera102.hatenablog.com/entry/2023/06/02/193300",
-          "publishedOn": "2023-06-02T10:33:00.000Z",
-          "wordCount": 386,
-          "title": "サウンド1～4を演奏する自作ゲームはvgmで決まり",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
