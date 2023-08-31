@@ -8207,6 +8207,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/08/31/jsprimer-v5/",
+          "author": null,
+          "description": "ECMAScript 2023(ES2023)をサポートしたJavaScript Primer v5.0.0をリリースしました。\nRelease v5.0.0: ES2023/CC BYライセンスに変更/Open Collective · asciidwango/js-primer\nJavaScript Primer(jsprimer)は、JavaScriptの文法や機能を一から学べるように書かれている入門書です。\n今回のウェブ版のアップデートでは、最新のECMAScriptに対応しました。\njsprimer v5.0.0リリースに合わせて、文章のライセンスをCC BY-NC 4.0からCC BY 4.0へと変更しています。\nまた、Open Collectiveのページを公開し、jsprimerプロジェクトを金銭的に支援できるようになりました！\nJavaScript Primer - Open Collective\nこれまでのjsprimer\nECMAScriptの仕様書は毎年更新されるので、それに合わせてjsprimerも更新しています。\n1.0.0(ES2019): JavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？\n2.0.0(ES2020): JavaScript Primer 2.0 - ECMAScript 2020に対応した入門書を公開しました\n3.0.0(ES2021): ES2021に対応したJavaScript Primer 3.0を公開しました - JavaScript入門\n4.0.0(ES2022): JavaScript Primer 4.0.0: ECMAScript 2022に対応したJS本 | Web Scratch\n今回のウェブ版のアップデートでは、2023年6月27日にリリースされた…",
+          "link": "https://efcl.info/2023/08/31/jsprimer-v5/",
+          "publishedOn": "2023-08-31T00:05:00.000Z",
+          "wordCount": null,
+          "title": "JavaScript Primer v5.0.0: ES2023の対応/CC BYライセンスに変更/Open Collectiveで支援できるようになりました",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/08/29/ni.zsh-socket.dev/",
           "author": null,
           "description": "npm/yarn/pnpm/bunを同じコマンドで扱えるni.zshに、npmで配布されているマルウェアを間違ってインストールするのを防ぐ機能を追加しました。\nni.zshについては、次の記事を参照してください。\nnpm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた | Web Scratch\nnpmパッケージのマルウェア\nnpmパッケージとしてマルウェアをpublishして開発者を狙うサプライチェーン攻撃が最近多くなっています。\nたとえば、次の記事ではemails-helperというもっともらしいパッケージ名でマルウェアが配布されていました。\nNPM Package Masquerading as Email Validator Contains C2 and Sophisticated Data Exfiltration\n他にもtyposquattingという有名なパッケージ名のtypoを狙ってマルウェアを配布しているケースも多いです。\nMalicious Packages in npm Targeting Azure Developers\nnpmは利用者が多いため、こういったマルウェアのパッケージが月に数百件とかの単位で増えています。\nVulnerability DB | Snyk\n最近では、1つのパッケージではなく、複数のパッケージを組み合わせて発動するようなマルウェアもあります。\nこれは、検知の回避などが目的だと思いますが、攻撃がどんどん複雑になってきています。\nPhylum Discovers Sophisticated Ongoing Attack on NPM\n現状のマルウェアの多くはローカルの環境変数やAPIキー、秘密鍵などを盗むようなものが多いです。\nそのため、これらを空振りさせることも一つの対策で、それについては次の記事…",
