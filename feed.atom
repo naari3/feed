@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-02T00:02:24.941Z</updated>
+    <updated>2023-09-02T01:20:54.527Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2023.9.2]]></title>
+        <id>https://gamegaz.com/?p=39357</id>
+        <link href="https://gamegaz.com/2023090239357/"/>
+        <updated>2023-09-02T01:12:40.000Z</updated>
+        <summary type="html"><![CDATA[新PS2エミュレータ開発中,PlayStation Plus値上げ,PS4CheaterNeo 0.9.8.9-beta,ff4_vita v1.3,Fahrenheit Vita v.0.9,PSGameSpider 2023.09,FreeMcBoot-Installer latest,duckstation Latest Preview Build,Nazi Zombies: Portable(nzportable) 2.0.0-indev+20230901155216,devilutionX v.1.5.1,DOSBox-X v2023.09.01→→→この記事の続きを読む
+GameGaz Daily 2023.9.2 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20230902「性癖２」]]></title>
         <id>hatenablog://entry/820878482963874727</id>
@@ -13700,29 +13711,6 @@ GameGaz Daily 2023.6.5 first appeared on 大人のためのゲーム講座.]]></
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[タスクの終了条件を理解していなかったことによる失敗]]></title>
-        <id>hatenablog://entry/820878482938753971</id>
-        <link href="https://satoru-takeuchi.hatenablog.com/entry/2023/06/04/211520"/>
-        <updated>2023-06-04T12:15:20.000Z</updated>
-        <summary type="html"><![CDATA[仕事してるとさまざまなタスクをこなすことになります。タスクの粒度、期限、難易度などは物によって異なりますが、共通しているのはタスクの終了条件を満たして初めてタスクは終えられるということです。本記事では、この当たり前過ぎて何をわざわざ…というところをわかってなかった社会人になりたての頃くらいの失敗を共有します。なお、当時を知っている人が「ああ、あの件ね」と特定できない程度に、適当に話を脚色してます。
-ことの発端はザクっと書くと次のようなものでした。
-あるシステムでトラブルが起きて、考えられるのはソフトウェアfooかbarか、いずれかの問題だった
-fooとbarは別のプロジェクトの管轄下にあった
-一週間以内に問題を解決するか、あるいは回避策を出すというタスクができた
-このタスクのfoo側の担当がわたし、bar側の担当がAさんになった
-このトラブルについて私が初期調査をすると、fooに問題があるように見えないことがわかりました。更に色々調べた上で「この現象はfooの問題では説明つきません。たとえばbarがこうなっていたら起こり得ます。barの挙動について確認してくれませんか」という連絡をトラブル発生当日にしました。ところがbar側の担当のAさんは「やってない」「忙しい」と何もしてくれず、催促をしてもそれは変わらないまま数日が経ちました。
-そんなある日、同じプロジェクトの先輩に「あのタスクはどうなったのか」と話を振られました。わたしは「自分の初期調査は終わってAさんに依頼した。でもAさんが動かないから先に進まない」と回答して、「Aさんはとんでもねえやつだな」と同意されるのを待っていました。しかし、返ってきたのは同意ではなく、「え、じゃあなんで上にエスカレーションしてbarのプロマネに動いてもらわないの？」という困惑混じりの再質問でした。そう言われて実際にそうすると話はさっさと動いて、期限内にタスクは無事解決しました。具体的にはbarのリーダーはこちらへの謝罪とともに担当者をすぐに替えて、代理の方は当日中に私の仮説が合っていたことを確認してくれて、かつ、回避策も見つけてくれました。
-ここで言いたいのは「Aさんがいなくなってスッキリ爽快＆俺の言ったことは正しかった」…ではもちろんなく、私はやること全然やってなかったねということです。
-このタスクにおいて私は2つの大きなミスをしました。
-「問題の解決あるいは回避」というタスクの終了条件を忘れて「犯人はfoo以外」とわかったところで半ば終わったつもりになっていた
-Aさんに正面から依頼し続けても無意味だとわかったところで別の手段(上へのエスカレーションや別の人への相談など)を考えなかった
-これはシステムのユーザ目線で見ると、わかりやすいです。目の前でトラブルが起きて早期解決をしたいシステムのユーザから見ると、fooとbarのどっちが悪かろうとAさんが何もしてなかろうと、そんなのは知ったことではないのです。自分がユーザだとして「fooじゃなくてbarにバグがあるっぽいんですがbarの担当者から反応がないんですよ」とか言い訳されるとめちゃくちゃ怒るでしょう。そこのところを当時の私は何もわかっちゃいなかったのです。
-我ながら、今書いているだけで背筋が凍るような意識の低さなんですが、社会人になりたてだとこんなやつもいるよねということで、ご容赦下さい。記事の中の「…同意されるのを待っていました。」のあたりまでを「そうだよね」とひっかかりを覚えずに読んでしまった方が将来私と同じ過ちを繰り返さないようにすることを願いまして終わりにします。]]></summary>
-        <author>
-            <name>覚書</name>
         </author>
     </entry>
     <entry>
