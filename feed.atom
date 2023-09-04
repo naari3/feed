@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-04T20:02:38.546Z</updated>
+    <updated>2023-09-04T21:01:41.027Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13674,45 +13674,6 @@ PS5システムソフトウェアアップデート バージョン 23.01-07.40.
         <summary type="html"><![CDATA[この記事は、Merpay Tech Openness Month 2023 の2日目の記事です。 メルペイFrontendエンジニアの@togami2864です。普段はPartner Platformというチームで加盟店 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[OSSをベースにしたサービス提供の難しさ]]></title>
-        <id>hatenablog://entry/820878482939478569</id>
-        <link href="https://knqyf263.hatenablog.com/entry/2023/06/07/175830"/>
-        <updated>2023-06-07T08:58:30.000Z</updated>
-        <summary type="html"><![CDATA[背景
-難しさ
-利益相反になりがち
-競合OSSの存在
-コミュニティからのPull Request
-競合サービスによる利用
-レベニューシェアにならない
-利用統計が取れない
-やっておくべきこと
-お金を払いたい機能を見極める
-境界線を決める
-ライセンスについて考える
-利用統計の取得方法について考える
-OSSから有償版へのスムーズな移行を考える
-まとめ
-背景
-弊社（Aqua Security）ではOSS開発をしており、そのOSSを組み込んだ有償サービスを売ることで利益を上げています。
-自分はその中のOSS開発をフルタイムで担当しています。
-会社は何を目的としてOSS開発をしているのか、というのは以前発表しました。
- speakerdeck.com
-フルタイムOSS開発者をやってみての感想なども書いています。
-knqyf263.hatenablog.com
-今回はOSSをベースにしたサービス提供の難しさについて最近感じていることをまとめておきたいと思います。
-こういうビジネスをしているのは弊社だけではないので同じような話はきっと既にどこかで語られていると思うのですが、愚者は経験に学ぶということで実際に自分で体験してみての感想です。
-巨大企業がサイドプロジェクトとしてOSSを開発しているとか、企業内で使うツールチェーンの改善をしているという話とは違い、OSSでより直接的にビジネスをやる場合の話です。
-最近会社では連日この辺りの議論しており自分でも観点を手元でまとめていたのですが、ちょうどOSSビジネスについてのブログが公開されていたので自分も公開しておきます。
-note.com
-弊社のビジネスモデルは上記ブログで挙げられている以下に該当します。クラウド以外でも提供しているのでOSSを組み込んだサービスという感じです。
-では、大きな利益を得るためにはどうすればよいのだろうか？
-一部の企業は…]]></summary>
-        <author>
-            <name>knqyf263's blog</name>
         </author>
     </entry>
     <entry>
