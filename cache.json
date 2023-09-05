@@ -1903,7 +1903,23 @@
       "title": "Islands in the byte stream",
       "feedUrl": "https://gfx.hatenablog.com/rss",
       "siteUrl": "https://gfx.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/820878482964976636",
+          "author": null,
+          "description": "エンジニアHubに「HTTP/3｜Webエンジニアが知るべき新常識 ─ QUICやコネクションマイグレーションなどを学ぶ 」という記事を寄稿しました。CDNとしてHTTP/3を提供しているFastlyで働いているという縁からです*1。\neh-career.com\n書きたいことはこの記事にすべて書いたので呼んでいただきたいのですが、この記事では「自分でHTTP/3サーバーを管理する」ということはまったく視野に入れていません。HTTP/3は現在のところCDNのための技術といっても差し支えないからです。\n一方で、これから数年かけて「非ブラウザのHTTPクライアントにおけるHTTP/3の活用術」といったことが研究され、広まっていくのでしょう。ちょうどHTTP/2が標準化されたあとで、HTTP/2を活用したgRPCが作られたように。これについては個人的には非常に楽しみにしています。非ブラウザのHTTPクライアントがよく使われるのはスマホアプリですし、スマホアプリの動作環境は必然的に通信が不安定であり、HTTP/3が得意とする環境だからです。まあしかし、これはまだ先の話です。\nこの記事に書いたように、これからしばらくHTTP/3との付き合い方は「CDNでHTTP/3を有効にする」で良いのではないかと思っています。\n*1:Fastly に入社しました - Islands in the byte stream -- そういえばFastlyで働き始めてからそろそろ4年になります。",
+          "link": "https://gfx.hatenablog.com/entry/2023/09/05/211737",
+          "publishedOn": "2023-09-05T12:17:37.000Z",
+          "wordCount": null,
+          "title": "エンジニアHubにHTTP/3の記事を寄稿しました",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "【ギュウひ】の夜泣き",
@@ -10492,16 +10508,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2023.6.9",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=38825",
-          "author": "mamosuke",
-          "description": "PS4Profile v0.4,Drum VR 1.00,WD_BLACK SN850P NVMe SSD for PS5,ARK-4 Version 4.20.54 Rev 2,fallout2-ce-vita Development Build,7月にNintendo Direct,Game Porting Toolkit,niversal Media Server 13.4.1,Vita3K Build: 3200→→→この記事の続きを読む\nGameGaz Daily 2023.6.8 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023060838825/",
-          "publishedOn": "2023-06-08T00:48:40.000Z",
-          "wordCount": 2093,
-          "title": "GameGaz Daily 2023.6.8",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/mqdefault-1142.jpg"
         }
       ]
     },
@@ -10711,21 +10717,6 @@
             "type": "image/png"
           },
           "imageUrl": "https://mangacross.jp/images/episode/fl77W-NkTgaEhWJOZf_TKq8QoKD5ze3zYK3dpzh1NE4/episode_thumbnail/thumb_double.png?1691111755"
-        },
-        {
-          "id": "https://mangacross.jp/comics/shiomai/37",
-          "author": "阿部共実",
-          "description": "",
-          "link": "https://mangacross.jp/comics/shiomai/37",
-          "publishedOn": "2023-06-08T01:00:00.000Z",
-          "wordCount": null,
-          "title": "クロス第27話 | 集団",
-          "enclosure": {
-            "url": "https://mangacross.jp/images/episode/UwSXh-FscPTKI64xnv9ioDYnYfuiEKtsg76fZ1bUnMo/episode_thumbnail/thumb_double.png?1685604231",
-            "length": "45712",
-            "type": "image/png"
-          },
-          "imageUrl": "https://mangacross.jp/images/episode/UwSXh-FscPTKI64xnv9ioDYnYfuiEKtsg76fZ1bUnMo/episode_thumbnail/thumb_double.png?1685604231"
         }
       ]
     },

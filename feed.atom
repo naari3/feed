@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-05T12:02:20.450Z</updated>
+    <updated>2023-09-05T13:03:15.536Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[エンジニアHubにHTTP/3の記事を寄稿しました]]></title>
+        <id>hatenablog://entry/820878482964976636</id>
+        <link href="https://gfx.hatenablog.com/entry/2023/09/05/211737"/>
+        <updated>2023-09-05T12:17:37.000Z</updated>
+        <summary type="html"><![CDATA[エンジニアHubに「HTTP/3｜Webエンジニアが知るべき新常識 ─ QUICやコネクションマイグレーションなどを学ぶ 」という記事を寄稿しました。CDNとしてHTTP/3を提供しているFastlyで働いているという縁からです*1。
+eh-career.com
+書きたいことはこの記事にすべて書いたので呼んでいただきたいのですが、この記事では「自分でHTTP/3サーバーを管理する」ということはまったく視野に入れていません。HTTP/3は現在のところCDNのための技術といっても差し支えないからです。
+一方で、これから数年かけて「非ブラウザのHTTPクライアントにおけるHTTP/3の活用術」といったことが研究され、広まっていくのでしょう。ちょうどHTTP/2が標準化されたあとで、HTTP/2を活用したgRPCが作られたように。これについては個人的には非常に楽しみにしています。非ブラウザのHTTPクライアントがよく使われるのはスマホアプリですし、スマホアプリの動作環境は必然的に通信が不安定であり、HTTP/3が得意とする環境だからです。まあしかし、これはまだ先の話です。
+この記事に書いたように、これからしばらくHTTP/3との付き合い方は「CDNでHTTP/3を有効にする」で良いのではないかと思っています。
+*1:Fastly に入社しました - Islands in the byte stream -- そういえばFastlyで働き始めてからそろそろ4年になります。]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記　2023/08]]></title>
         <id>hatenablog://entry/820878482964430718</id>
@@ -13745,26 +13760,6 @@ timer3:0xfff1
 V6人狼バトル〜V狼〜（49th Sin…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[クロス第27話 | 集団]]></title>
-        <id>https://mangacross.jp/comics/shiomai/37</id>
-        <link href="https://mangacross.jp/comics/shiomai/37"/>
-        <updated>2023-06-08T01:00:00.000Z</updated>
-        <author>
-            <name>阿部共実</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.6.8]]></title>
-        <id>https://gamegaz.com/?p=38825</id>
-        <link href="https://gamegaz.com/2023060838825/"/>
-        <updated>2023-06-08T00:48:40.000Z</updated>
-        <summary type="html"><![CDATA[PS4Profile v0.4,Drum VR 1.00,WD_BLACK SN850P NVMe SSD for PS5,ARK-4 Version 4.20.54 Rev 2,fallout2-ce-vita Development Build,7月にNintendo Direct,Game Porting Toolkit,niversal Media Server 13.4.1,Vita3K Build: 3200→→→この記事の続きを読む
-GameGaz Daily 2023.6.8 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
