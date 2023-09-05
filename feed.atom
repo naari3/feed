@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-05T22:02:42.217Z</updated>
+    <updated>2023-09-05T23:01:51.988Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13708,25 +13708,6 @@ Email Address  *
 フォームが表示されない人は https://github.us13.list-manage.com/subscribe/po…]]></summary>
         <author>
             <name>Web Scratch</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[バグ取れた！]]></title>
-        <id>hatenablog://entry/820878482939857386</id>
-        <link href="https://akkera102.hatenablog.com/entry/2023/06/08/192239"/>
-        <updated>2023-06-08T10:22:39.000Z</updated>
-        <summary type="html"><![CDATA[終わったヤッター。原因はタイマー2,3のカスケード処理でした。たとえば初期値を
-timer2:0xfff0
-timer3:0xfff0
-で考えてカスケードした時、timer2がカウントアップしていきます。あふれる直後、
-timer2:0xffff
-timer3:0xfff0
-とこうなって、次は
-timer2:0xfff0
-timer3:0xfff1
-となってtimer2は初期値に戻ります。私の想定ではtimer2は0x0000になるでしょ、ってずっと考えていました。たったこれだけのことに６日間と計１０時間以上は投入していたのですから恥ずかしい。もう頭かたすぎでしょ！]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
