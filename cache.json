@@ -8143,6 +8143,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/container-test-on-gha",
+          "author": null,
+          "description": "コンテナでサーバーを動かして、それに対するリクエストをするE2Eテストを GitHub Actions 上で動かすことに苦労したので書く。 成果物repo: https://github.com/sadnessOjisan/e2e-gha…",
+          "link": "https://blog.ojisan.io/container-test-on-gha",
+          "publishedOn": "2023-09-07T00:00:00.000Z",
+          "wordCount": null,
+          "title": "ありのままのコンテナを使って E2E テストを GitHub Actions 上で行う",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/oreha-private-func-nimo-test-kaku",
           "author": null,
           "description": "「private 関数にはテストを書かない」というのが多数派だと思う。だが昨日、仕事で In-source testing を書いていたらふと private 関数にテストを書きたくなった。そこで、In-source testingができる環境下でもprivate…",
