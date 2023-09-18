@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482968482627",
+          "author": null,
+          "description": "海外に新天地を求めるしかないみたいです（前からですけど。\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2023/09/18/124236",
+          "publishedOn": "2023-09-18T03:42:36.000Z",
+          "wordCount": 391,
+          "title": "unpacker",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482968445142",
           "author": null,
           "description": "モノ作るのだから裏テーマを決めてやってるのですけど、今回はウマみがあったかというわれると少な目な印象です。REG_BGxPAや、REG_BGxX、REG_BGxYに少し触ったおかげでエフェクト処理に自信がついたことや、エフェクト用画像をこしらえてラクして作れるようになったぐらいでしょうか。エフェクトはなんというか、自分がうまく書けないせいもありますけどコードが汚れるから嫌いです（汗。mode3で1frameにぎり収まるCPU性能は絶妙な感じがしてなかなか大変。後半は諦めて2frameまでならOKにしました。今ならひぐらしGBAのあのうずまきエフェクトも再現できるやもしれません。\n\nさてさて、このあと何を作ろうかなあー。ラブエスカレーターのソースコードが手に入ったらやりたいけど無理ですし。オリジナルゲームを作りたいかというとそういう熱はなんですし。GBA通信ライブラリを見つけたのでそれを組み合わせて何かするか、HBLANKでmodeを切り替えてマリオカートっぽいデモを作りたいような作りたくないような。oneのリメイクが12月に発売されるので手直しもアリっちゃありですけど日付表示エフェクトとアルファブレンド画像を加えるぐらいしかないというか。いやそれいったら過去作はけっこう恥ずかしいのでアトラク前は全部書き直したい衝動。CHIP-8移植は候補の１つ。サンプルゲームが豊富で面白そうです。ん－絵も音楽もかけないと自然と選択肢が限られるのもツラみですね。",
