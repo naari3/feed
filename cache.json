@@ -4751,21 +4751,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/sora_h/20230628/20230628155957.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482943197956",
-          "author": null,
-          "description": "Hi, this is Chris Trott (@twocentstudios) from Cookpad Mart's iOS team.\nIn this post I want to share a few tips for how to draw shapes using paths in SwiftUI, starting from the basics. The code in this post targets iOS 16 and Xcode 14, but is low-level enough that it should be relatively forward and backward compatible.\nDrawing paths manually is not a common task in day-to-day app work. It can be especially tedious for complex shapes. However, it can sometimes be a most prudent choice over bitmaps or 3rd party rendering libraries.\nYou can view the complete code from this post from this gist.\nContents\nBasic shapes\nStyling\nDrawing line-by-line\nHow to use arcs\nHow to use quadratic bezier curves\nPath operations\nCreating a chat bubble shape\nTrimming a path\nTransition animations\nBasic shapes\nSwi…",
-          "link": "https://techlife.cookpad.com/entry/2023/06/21/162523",
-          "publishedOn": "2023-06-21T07:25:23.000Z",
-          "wordCount": null,
-          "title": "Path Drawing in SwiftUI",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/christopher-trott/20230621/20230621143729.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/christopher-trott/20230621/20230621143729.png"
         }
       ]
     },

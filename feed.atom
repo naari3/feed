@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-18T19:02:06.556Z</updated>
+    <updated>2023-09-18T20:01:52.838Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13247,31 +13247,6 @@ GameGaz Daily 2023.6.22 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[この記事は、Merpay Tech Openness Month 2023 の12日目の記事です。 こんにちは。メルペイ Engineering Engagement Team の@mikichinです。 私たちのチーム […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Path Drawing in SwiftUI]]></title>
-        <id>hatenablog://entry/820878482943197956</id>
-        <link href="https://techlife.cookpad.com/entry/2023/06/21/162523"/>
-        <updated>2023-06-21T07:25:23.000Z</updated>
-        <summary type="html"><![CDATA[Hi, this is Chris Trott (@twocentstudios) from Cookpad Mart's iOS team.
-In this post I want to share a few tips for how to draw shapes using paths in SwiftUI, starting from the basics. The code in this post targets iOS 16 and Xcode 14, but is low-level enough that it should be relatively forward and backward compatible.
-Drawing paths manually is not a common task in day-to-day app work. It can be especially tedious for complex shapes. However, it can sometimes be a most prudent choice over bitmaps or 3rd party rendering libraries.
-You can view the complete code from this post from this gist.
-Contents
-Basic shapes
-Styling
-Drawing line-by-line
-How to use arcs
-How to use quadratic bezier curves
-Path operations
-Creating a chat bubble shape
-Trimming a path
-Transition animations
-Basic shapes
-Swi…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
