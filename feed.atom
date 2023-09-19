@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-19T08:02:20.724Z</updated>
+    <updated>2023-09-19T09:02:22.203Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[やっと、Huawei Watch Buds + Wena3 完成。ああ、大変だった。]]></title>
+        <id>hatenablog://entry/820878482968848562</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/09/19/175006"/>
+        <updated>2023-09-19T08:50:06.000Z</updated>
+        <summary type="html"><![CDATA[いろいろな紆余曲折ありましたが、やっとできました、当初の目的だった
+Huawei Watch Buds +Wena3
+これで、やっと、ヘッドフォン付電子マネー付時計の完成です。
+まず、何をしくったかというと、サービス終了間際で安くなったのでWena3を買ったのですが、最初、レザーのwena3にしたら、これつけると、なんと、Huaweiの時計の裏側の心拍センサーを塞いでしまう設計だったので、スマートウオッチと併用できずに断念、返品しようかどうしようか迷ったのですが、とりあえず、ものは試しで単独使用することにしました。
+そして、１つめのwena3、SuicaはAndroidから設定できたのですが、QUICPayその他はiOSからしか登録できないという謎仕様で、一度ペアリングを解除して、iOS（といっても、うちにあるのは古いiPhone 10ですが）につなぎ直して、やっと設定おわり。
+しかも、QUICPayを設定するためには、特定の対応しているカードブランドから、さらにIDとパスワードを取り寄せるというこれまた謎仕様。iDはすでに登録できなくなっていたので、しかたなく、手持ちの中でなんとかセゾンカードを探して、設定しました。
+そのまま、レザーだけ運用しても良かったのですが、実際、アップルウオッチと違って、毎回呼び出さなくてもカードのように使えるQUICPayとSuicaが手に着いているのはものすごく便利なのと、充電器の予備を買おうとしたら、純正のものがもうほとんど流通していなくて、メーカーからも買えないので、メルカリとかで売っているのはもう、ほとんど最近値引きして売られている本体が買えてしまう値段。
+まぁ、それだったら、メタルバンドに挑戦して、はじめのもくろみだったBudsにつなげるまでやってみようということにしました。半分、充電器目当てで２つめのwena３を購入。
+メタルはさっさと来たのですが、もうメインのAndroidはすでにレザーのwena3と紐付けしてしまっていますから、とりあえず、サブのAndroidにつなげて、さーー、Suica発行しようと思ったら、いきなりエラーで発行できません。
+？？？？？、と思いながら、サポートに連絡したら、なんと、最初に１万円チャージしようとしたのが失敗で、セキュリティロックがかかったそうです。だって、１つめのwena3は、１週間くらいたたないと次のチャージができなかったので、めんどうだから、最初から入れようと思ったんですよ。しくしく。しかも、今回のセキュリティロックもまた発行まで１週間まつ必要があるそうです。
+まぁ、待っている間にそれでは、QUICPayを登録しようとしたら、なんと、セゾンの１つのカードについて、１つのFelicaにしかひもつけできません。うぎゃーーー、しかたないので、またセゾンカードを１枚増やすところからスタート。道が長い。
+JAFカードを前から作ろうか迷っていたので、とりあえず、JAFカードを作って、発行されて、そこからまた、QUICpayのIDとパスワードを取り寄せ、wena３のメタルが来てから、２週間、やっと、QUICPayとSuicaが設定できました。
+そして、もともと私がメタルバンドを嫌ったのは、長さ調整が時計屋さんにいかないとできなさそうだったのが面倒だったからであって、でも、メタルしかうまくつかないとなると、そんなことは言っていられません。
+微妙な長さ調整は自分でもできるようにしておきたいので、アマゾンで別途、メタルバンドの調整器具を買って、ウェブサイトでじっくり勉強して、やっと、メタルバンドのコマの調整も自分でできるようになって、ほどよい長さにできました。
+あとは、別々の運用と、一体型の運用、どちらが便利かやってみたいと思います。ただ、寝るときにwenaがついているのはさすがにうっとうしそうなので、寝るときには、wenaなしの時計で睡眠管理をした方がよさそうです。
+いずれにしても、いろいろとパターンを試してみたいと思います。
+ああ、大変だった。UIが悪すぎますね、wena3。便利なのに、もったいない。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DKIM ADSP は廃止されています (HISTORIC です)]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=20946</id>
@@ -13373,15 +13399,6 @@ GameGaz Daily 2023.6.23 first appeared on 大人のためのゲーム講座.]]><
 GameGaz Daily 2023.6.22 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The internals and the latest trends of container runtimes (2023)]]></title>
-        <id>https://medium.com/p/22aa111d7a93</id>
-        <link href="https://medium.com/nttlabs/the-internals-and-the-latest-trends-of-container-runtimes-2023-22aa111d7a93?source=rss----74f667786e9f---4"/>
-        <updated>2023-06-21T20:38:01.000Z</updated>
-        <author>
-            <name>Akihiro Suda</name>
         </author>
     </entry>
     <entry>
