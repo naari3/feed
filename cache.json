@@ -2145,6 +2145,21 @@
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482969170005",
+          "author": null,
+          "description": "久しぶりに強化版のatomcam_toolsのソース見てたら\n明確に使用方法が書いてないような便利機能がいつの間にかたくさん実装されていたので紹介しておきます\n \n・画質調整機能　(videoコマンド)\nhttps://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/video_callback.c#L321\n上下反転・ミラー、コントラスト(cont)、明るさ、サチュレーション、シャープネス、\n2D,3Dノイズ低減の強さ、センサーのデジタル／アナログゲイン、等など\n \n\n\n\n第一引数\n第二引数\n役割\n\n\nflip\n[normal/flip/mirror/flip_mirror]\n上下・ミラー\n\n\ncont\n0-128-255\nコントラスト\n\n\nbri\n0-128-255\n明るさ\n\n\nsat\n0-128-255\n\n\nサチュレーション\nsharp\n0-128-255\nシャープネス\n\n\nsinter\n0-128-255\n２Dノイズ低減\n\n\ntemper\n0-128-255\n３Dノイズ低減\n\n\naecomp\n0-255\nAEパラメータ\n\n\naeitmax\n0-?\nAEパラメータ\n\n\ndpc\n0-255\n？\n\n\ndrc\n0-255\n\n\nダイナミックレンジコントロール\nhilight\n0-10\nハイライト\n\n\nagain\n0-?\n\n\nセンサゲイン（アナログ）\ndgain\n0-?\n\n\nセンサゲイン（デジタル）\n \nこのパラメータはATOMCam内部で4000番ポートにコマンドを送るか、\ncmd.cgiにexecコマンドを渡すことで実行できます。\n4000番ポートでの制御は127.0.0.1から以外はRejectされてます。\nhttps://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/command.c#L130\n第二引数を省略した場合、戻り値として現在の値が返されます\n \nATOMCam内のスクリプトなどで処理する場合\n[root@atomcam:~]# echo \"video bri 100\" | /usr/bin/nc localhost 4000\nok\n外部からcurlコマンドでcgiを呼び出す場合\ncurl -v -X POST -H \"Content-Type: application/json\"  -d '{\"exec\":\"video bri 128\"}' \"http://192.168.0.5/cgi-bin/cmd.cgi?port=socket\"\n※ \"exec\"と:とコマンドの間にスペースが入ると正しく動きませんでした\nCGI用のHTTPベースのコマンド制御が実装されてた　これ使うとオートメーションできると思う\nあとWAVファイル再生とか実装されてたわ　便利\nあとでコマンド一覧まとめるね pic.twitter.com/Qy7MMS3oIn\n2023年9月20日\n\n\n \n動かしている例はこんな感じです。\nよくわかんない役割も多いですので、実際に調整してみるのがいいと思います。\n多分再起動したら標準値に戻ると思います。\n何かしらいじったら天体用にいい値が出てくる気がするので私も試してみます。\n \n・そのほかのコマンドの実装がここにあるので色々できます\nhttps://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/command.c#L32\n使いそうなのは \"irled on\" \"irled off\" \"irled auto\" とかかな\nあと、\"aplay <wavファイル名の絶対パス>\"　でスピーカから音声再生ができました",
+          "link": "https://honeylab.hatenablog.jp/entry/2023/09/20/204059",
+          "publishedOn": "2023-09-20T11:40:59.000Z",
+          "wordCount": 588,
+          "title": "atomcam_toolsのコマンド制御",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482959563515",
           "author": null,
           "description": "３ヶ月にわたってお送りしていた検温カメラの案件、この度NHKで放映されました。\nhttps://www.nhk.jp/p/nw9/ts/V94JP16WGN/episode/te/LJGMY49Z1Q/\n今回TVに映っていた検温カメラは５種類\n①東亜産業「サーモマネージャ」\n②高昇「XThermo-C」　https://xthermo.jp/list/c/\n③AHA「SmartPass」\nマニュアルリンク：https://www.earthcast.co.jp/web/pdf/ASP19/ASP-19_manual.pdf\n④JVC「SensePass」\n⑤AIMEX「AM520RT」　https://www.aimex.co.jp/product/am520rt\nです。\nこのうち、①のサーモマネージャは、先日大阪の児童館で流出したものと同じメーカーです。（該当製品は「サーモマネージャEX」という上位機種ですが、中身は同じです）\nさらに、説明書に画像の撮影能力や消去方法について記載されていないギルティなメーカーの\nギルティな製品です。これだけ私がブログでボロクソに言っても何も言ってこないし、\n対応も変わらないのでそんなもんなメーカーです。\nヤフオクやメルカリでも最も多く取引されているものになります。\n出品者も全く意識していないので、ほぼ１００％画像が残っていると思われます。\n \n②〜⑤に関しては、説明書や設置マニュアルには画像の撮影や消去の方法がきちんと掲載されていますので、それに従って消去すれば、最低限画像が取り出されにくいようにはなっています。\nただし、私みたいなハッカーが本気で画像を取り出そうと思った場合、出てくる可能性もありますので、安易に中古流通に出さない方が賢明かと思われます。\n \nまた、逆に、このように画像を取り出すことを楽しみたい場合は、\n①のメーカの製品を試してみるのがいいと思います。\n今回の経緯について、同人誌にまとめてあります。\nhoneylab.booth.pm\n \nほか、当ブログの体温計分解ページへのリンクです\nカメラ付き顔認識体表温度計を中古で買ったら中に全員の顔写真以下略って全部言っちゃった！ - honeylab's blog\nさらに検温カメラをばらしてみたらの話 - honeylab's blog\nそんなにカメラばっかり買ってどうすんのって言われてないとでも思ってます？ - honeylab's blog\n素性のよくわからない検温カメラから画像を取り出す手口 - honeylab's blog",
@@ -10221,16 +10236,6 @@
           "wordCount": null,
           "title": "大規模ゲームショウはオワコンなのか この先2年間のE3の会場予約がキャンセル",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=38888",
-          "author": "mamosuke",
-          "description": "PS5 BD-JB FTP Server v1.2-Beta_5.xx-6.02,ps5-elf-loader,ARK-4 Version 4.20.57,NoPspEmuDrm v1.00,AutoPlugin II v2.05,PlayStation2-Basic-BootLoader(PS2BBL)+OpenTuna,EverPatcherVS 3.0.0,decky-loader v2.10.2-pre1,USB2PCE_2023_06_21,WiiStation(WiiSXRX_2022) Ver2.4,Vita3K Build: 3224→→→この記事の続きを読む\nGameGaz Daily 2023.6.23 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023062338888/",
-          "publishedOn": "2023-06-22T23:23:30.000Z",
-          "wordCount": 2046,
-          "title": "GameGaz Daily 2023.6.23",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/mqdefault-1144.jpg"
         }
       ]
     },
