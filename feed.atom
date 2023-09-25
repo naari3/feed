@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-25T08:02:18.479Z</updated>
+    <updated>2023-09-25T09:01:52.289Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[リンク挿入時に「リンクを新しいタブで開く」が選べるようになりました]]></title>
+        <id>hatenablog://entry/820878482970489867</id>
+        <link href="https://staff.hatenablog.com/entry/2023/09/25/171336"/>
+        <updated>2023-09-25T08:13:36.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログの編集画面にクリップボードからURLを貼り付けた時、または、入力補助ツールバーから利用できる「リンクを挿入」ウィンドウに「リンクを新しいタブで開く」チェックボックスを追加しました。
+「リンクを新しいタブで開く」を追加しました
+このチェックボックスをオンにした状態で「選択した形式でリンクを挿入」ボタンを押すと、リンクのtarget属性に_blankが指定され、リンクが新しいタブで開くようになります。詳しくはヘルプをご参照ください。
+補足情報
+編集モードについて
+
+「見たままモード」と「HTMLモード（有料プラン限定機能）」にて利用可能です
+「はてな記法モード」と「Markdownモード」では利用できません
+
+リンクの形式について
+
+「タイトル」と「URL」にて利用可能です
+「埋め込み」はこれまでも新しいタブで開く仕様だったため、チェックボックスをオンにする必要はございません
+「選択範囲」と「画像」では利用できません]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OPの話と感想]]></title>
         <id>https://note.com/wakigeurikire/n/nb3633e9c783f</id>
