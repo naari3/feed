@@ -4855,21 +4855,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482945343579",
-          "author": null,
-          "description": "コーポレートエンジニアリング部の id:sora_h です *1。今回は 3 ヵ月ほど前に実施した、Google Workspace テナントのプライマリドメイン変更について、記録を兼ねて説明します。\nクックパッドは 2009 年頃 *2 より Google Workspace *3 を利用しています。当社の対外的なメールアドレスは cookpad.com ですが、Google ではプライマリドメインとして cookpad.jp が設定されています。各ユーザーには cookpad.com のアドレスを別名 (エイリアス) として登録されていて、メールアドレスとしては cookpad.com を利用、ただ Google へログインする時だけ cookpad.jp を利用する運用になっていました。想像が出来ると思いますが、これが様々な面で不便・混乱を発生させていました。どうしてこうなった… *4。\nこの負債を解決すべく、2022/8 頃から緩やかに準備を始め、2023/3 上旬に全ユーザーのドメインとプライマリドメインを cookpad.com に変更しました。本稿では変更に踏み切った理由から下準備、当日～事後の作業について解説します。そこそこ長く様々なタスクがあったため乱雑な記事となっていますが、何かの役に立てば幸いです。\n変更のモチベーション\nGoogle Workspace におけるドメインとは\nエイリアス\nCookpad における Google Workspace ドメイン設定\nプライマリドメインまで変更するかどうか\n目標: 影響を最小に抑える\nプロジェクトの流れ\n事前準備: 内製システムの準備\n事前準備: 作業用データの準備\n作業当日: プライマリドメイン変更作業\n直前作業: MXレコードの切り替え\nドメインエイリアスとしての cookpad.com を削除\nセカンダ…",
-          "link": "https://techlife.cookpad.com/entry/2023/06/28/170451",
-          "publishedOn": "2023-06-28T08:04:51.000Z",
-          "wordCount": 2458,
-          "title": "Project Googrename: Google Workspace で 14 年運用されたドメインエイリアスをプライマリドメインに変更 & 全ユーザーを安全にリネームする",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/sora_h/20230628/20230628155957.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/sora_h/20230628/20230628155957.png"
         }
       ]
     },

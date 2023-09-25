@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-25T20:02:24.494Z</updated>
+    <updated>2023-09-25T21:01:54.695Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13403,31 +13403,6 @@ codocというサービスがある。手っ取り早く言えば、WordPressを
 これまでサブスクの問題というと、購読者が不満に感じた話ばかり目にしていた。「週に◯回更新します！」なんて約束しておきなが…]]></summary>
         <author>
             <name>本しゃぶり</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Project Googrename: Google Workspace で 14 年運用されたドメインエイリアスをプライマリドメインに変更 & 全ユーザーを安全にリネームする]]></title>
-        <id>hatenablog://entry/820878482945343579</id>
-        <link href="https://techlife.cookpad.com/entry/2023/06/28/170451"/>
-        <updated>2023-06-28T08:04:51.000Z</updated>
-        <summary type="html"><![CDATA[コーポレートエンジニアリング部の id:sora_h です *1。今回は 3 ヵ月ほど前に実施した、Google Workspace テナントのプライマリドメイン変更について、記録を兼ねて説明します。
-クックパッドは 2009 年頃 *2 より Google Workspace *3 を利用しています。当社の対外的なメールアドレスは cookpad.com ですが、Google ではプライマリドメインとして cookpad.jp が設定されています。各ユーザーには cookpad.com のアドレスを別名 (エイリアス) として登録されていて、メールアドレスとしては cookpad.com を利用、ただ Google へログインする時だけ cookpad.jp を利用する運用になっていました。想像が出来ると思いますが、これが様々な面で不便・混乱を発生させていました。どうしてこうなった… *4。
-この負債を解決すべく、2022/8 頃から緩やかに準備を始め、2023/3 上旬に全ユーザーのドメインとプライマリドメインを cookpad.com に変更しました。本稿では変更に踏み切った理由から下準備、当日～事後の作業について解説します。そこそこ長く様々なタスクがあったため乱雑な記事となっていますが、何かの役に立てば幸いです。
-変更のモチベーション
-Google Workspace におけるドメインとは
-エイリアス
-Cookpad における Google Workspace ドメイン設定
-プライマリドメインまで変更するかどうか
-目標: 影響を最小に抑える
-プロジェクトの流れ
-事前準備: 内製システムの準備
-事前準備: 作業用データの準備
-作業当日: プライマリドメイン変更作業
-直前作業: MXレコードの切り替え
-ドメインエイリアスとしての cookpad.com を削除
-セカンダ…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
