@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-09-26T21:01:43.348Z</updated>
+    <updated>2023-09-26T22:02:23.963Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[HTTPサーバーを書くための言語が不在だと思う]]></title>
+        <id>https://blog.ojisan.io/for-http-server-lang</id>
+        <link href="https://blog.ojisan.io/for-http-server-lang"/>
+        <updated>2023-09-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[最近いくつか新規開発をする機会があって言語の選定に頭を悩ませた。要件や状況やチームに応じて言語選択の正解は変わるとは思うので、現実に合わせて妥協するしかないのだが、選択に際してそもそも HTTP サーバーを書くことを意識して設計された言語がないような気がした。いま自分達がHTTP…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[非公式ISUCON練習プラットフォームISUNARABEを公開した]]></title>
         <id>hatenablog://entry/820878482970913859</id>
@@ -13538,26 +13548,6 @@ www.youtube.com
 ありがとうございました。]]></summary>
         <author>
             <name>メガネ好き好きクラブ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cloud ComposerとSecret ManagerでAirflowをセキュアにSlack連携する]]></title>
-        <id>https://engineering.mercari.com//blog/entry/20230629-secure-slack-connection-airflow-on-cloud-composer/</id>
-        <link href="https://engineering.mercari.com//blog/entry/20230629-secure-slack-connection-airflow-on-cloud-composer/"/>
-        <updated>2023-06-29T10:00:54.000Z</updated>
-        <summary type="html"><![CDATA[この記事は、Merpay Tech Openness Month 2023 の18日目の記事です。 はじめに メルペイでBackend Engineerをしている@champonです。 普段はApache Airflow […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cloud ComposerとSecret ManagerでAirflowをセキュアにSlack連携する]]></title>
-        <id>https://engineering.mercari.com/blog/entry/20230629-secure-slack-connection-airflow-on-cloud-composer/</id>
-        <link href="https://engineering.mercari.com/blog/entry/20230629-secure-slack-connection-airflow-on-cloud-composer/"/>
-        <updated>2023-06-29T10:00:54.000Z</updated>
-        <summary type="html"><![CDATA[この記事は、Merpay Tech Openness Month 2023 の18日目の記事です。 はじめに メルペイでBackend Engineerをしている@champonです。 普段はApache Airflow […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>

@@ -8214,6 +8214,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/for-http-server-lang",
+          "author": null,
+          "description": "最近いくつか新規開発をする機会があって言語の選定に頭を悩ませた。要件や状況やチームに応じて言語選択の正解は変わるとは思うので、現実に合わせて妥協するしかないのだが、選択に際してそもそも HTTP サーバーを書くことを意識して設計された言語がないような気がした。いま自分達がHTTP…",
+          "link": "https://blog.ojisan.io/for-http-server-lang",
+          "publishedOn": "2023-09-27T00:00:00.000Z",
+          "wordCount": null,
+          "title": "HTTPサーバーを書くための言語が不在だと思う",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/hyper-reading",
           "author": null,
           "description": "宣伝 rust.tokyo で かにさんタワーバトル という題で発表する。そのときの補助資料として hyper の簡単なコードリーディングについて書きたい。本当に書きたかった補助資料は axum のコードリーディングなのだが、先に hyper…",
@@ -8783,26 +8793,6 @@
           "wordCount": 463,
           "title": "Goでテスト用のフィクスチャを生成する",
           "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
-        },
-        {
-          "id": "https://engineering.mercari.com//blog/entry/20230629-secure-slack-connection-airflow-on-cloud-composer/",
-          "author": null,
-          "description": "この記事は、Merpay Tech Openness Month 2023 の18日目の記事です。 はじめに メルペイでBackend Engineerをしている@champonです。 普段はApache Airflow […]",
-          "link": "https://engineering.mercari.com//blog/entry/20230629-secure-slack-connection-airflow-on-cloud-composer/",
-          "publishedOn": "2023-06-29T10:00:54.000Z",
-          "wordCount": null,
-          "title": "Cloud ComposerとSecret ManagerでAirflowをセキュアにSlack連携する",
-          "imageUrl": null
-        },
-        {
-          "id": "https://engineering.mercari.com/blog/entry/20230629-secure-slack-connection-airflow-on-cloud-composer/",
-          "author": null,
-          "description": "この記事は、Merpay Tech Openness Month 2023 の18日目の記事です。 はじめに メルペイでBackend Engineerをしている@champonです。 普段はApache Airflow […]",
-          "link": "https://engineering.mercari.com/blog/entry/20230629-secure-slack-connection-airflow-on-cloud-composer/",
-          "publishedOn": "2023-06-29T10:00:54.000Z",
-          "wordCount": 414,
-          "title": "Cloud ComposerとSecret ManagerでAirflowをセキュアにSlack連携する",
-          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a_enjpg"
         }
       ]
     },
