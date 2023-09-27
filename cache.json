@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482971165749",
+          "author": null,
+          "description": "画像データのサイズが確定しました・・・LZ77圧縮して25.3 MB。うーんかなり微妙。mode3なのがキツいか・・・。とりあえずはめ込み画像はこんな感じになりそうです。ちょっとギザギザってますけど輪郭はアルファブレンド嚙ますのでマシになると思います。あくまで参考画像です。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/09/27/223904",
+          "publishedOn": "2023-09-27T13:39:04.000Z",
+          "wordCount": 391,
+          "title": "移植4",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230927/20230927223708.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230927/20230927223708.png"
+        },
+        {
           "id": "hatenablog://entry/820878482970890440",
           "author": null,
           "description": "感想しか垂れ流してないので今なにをしているのかといいますとGBAコンバータの作業中です。画像データをGBAに変換するわけですけど640x400を240x160にするような単純な話でなくて、なるべく枠部分を減らして背景は大きく！キャラクタも大きく！するようにしています。あとパレット操作。mode3に変換するにはRGB 0,255,0なものをRGB 0,0,0に変えてあげてアルファブレンド画像も用意しなくてはいけません。相当バラバラで無茶苦茶めんどうです。昔のゲームだからなのかsusieのような俯瞰したビューアがなかったのも要因かも。ちなみに移植で最高にプログラマの気持ちを理解してくれていたのはsystem3.5でした。画像の透明色やサイズミスが一切なくてスクリプトも階層構造になっていてノベルとシステム系が分かれていて素晴らしかったです。\n\n一方、フォアナインさんのSystem-98といいますと・・・疑似アセンブラです。スクリプターさんはアセンブラモドキを書いたのではないかと思います。というかこれは結構大変だったのではないでしょうか。。ジャンプアドレスの入れ子構造になっていて、セーブメニューが各ファイルにあったり26,86,midi判定が各ファイルにあったりプログラムに移譲すべき処理のものもあります。。\nhttp://akkera102.sakura.ne.jp/test3/cs01_01.txt",
@@ -10144,16 +10159,6 @@
           "publishedOn": "2023-06-30T23:45:50.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2023.7.1",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=38943",
-          "author": "mamosuke",
-          "description": "任天堂の次世代機の性能についての情報が思わぬところから出てきました。聞いてびっくりの「10年前ならハイパワーマシン」です。→→→この記事の続きを読む\nNintendo Switch後継機はハイパワーマシン(10年前なら) first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023063038943/",
-          "publishedOn": "2023-06-30T01:47:57.000Z",
-          "wordCount": null,
-          "title": "Nintendo Switch後継機はハイパワーマシン(10年前なら)",
           "imageUrl": null
         }
       ]
