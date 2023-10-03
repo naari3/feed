@@ -78,6 +78,35 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">クックパッドのフロントエンド CSS in JS をゼロランタイムに切り替えました</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2023/10/03/105240" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。レシピサービス開発部クックパッドサービス基盤グループのkaorun343です。我々のチームではレシピサービスのフロントエンドを Next.js と GraphQL のシステムに置き換えている話 - クックパッド開発者ブログにて紹介したとおり、レシピサービスを Next.js ベースの新システムへと移行しています。今回は、この新システムのCSS in JSをEmotionからゼロランタイムのvanilla-extractへ変更した話です。
+vanilla-extract.style
+背景
+以前書いた レシピサービスのフロントエンドに CSS in JS を採用した話 - クックパッド開発者ブログでは、CSS in JSライブラリとして Emotion（@emotion/react）を採用した経緯と開発環境整備を紹介しました。採用理由としては以下の通りでした。
+セレクタに一意なIDが割り振られるので、スタイルを適用した要素とは別の要素への、意図しないスタイル適用を防ぐことができる。
+ESLintやTypeScriptコンパイラといったJavaScriptの静的解析ツールの恩恵を受けることができ、タイポや機能削除時の削除漏れに気づきやすくなる。
+styled-componentsのようなスタイルではJSXのツリーを見たときに、機能を持つコンポーネントなのか装飾されたコンポーネントなのかわからず、コードレビューがしにくい。
+通常のCSSの記法に慣れたメンバーが多いので、String Styles、すなわちタグ付きテンプレートリテラルを採用する。
+このような方針でEmotionの導入を決め、stylelintやeslintを導入し、必要に応じてカスタムルールを作成して機能開発を進めました。
+しかしながら、Emotionを導入してから2年ほど経った結果、以下のような課題や懸…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -102,6 +131,26 @@ GameGaz Daily 2023.10.3 first appeared on 大人のためのゲーム講座.</sp
                     <span>Nintendo Switchの後継機は2023年後半(9月とか)に発売されるかもしれません。→→→この記事の続きを読む
 【噂】Nintendo Switch後継機 2024年の後半発売か first appeared on 大人のためのゲーム講座.</span>
                   </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://mangacross.jp/comics/yabai/" target="_blank"
+              rel="noopener">僕の心のヤバイやつ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Karte.130 | 僕は海に来た</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://mangacross.jp/comics/yabai/138" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>僕の心のヤバイやつ Karte.130 僕は海に来た - 2024年1月TVアニメ第二期放送決定!! 累計333万部突破！SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!!</span>
+                  </div>
+                  <img src="https://mangacross.jp/images/episode/zBLf5I-6FH0jXtm6WYQa-a_Xna_qdjNZ_uyFb5L6_4c/episode_thumbnail/thumb_double.png?1695945135" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -20804,7 +20853,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-10-03T01:23:23.244Z">2023-10-03T01:23:23.244Z</time>
+    <time id="build-timestamp" datetime="2023-10-03T02:08:40.343Z">2023-10-03T02:08:40.343Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

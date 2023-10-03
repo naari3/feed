@@ -4737,6 +4737,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/820878482972440079",
+          "author": null,
+          "description": "こんにちは。レシピサービス開発部クックパッドサービス基盤グループのkaorun343です。我々のチームではレシピサービスのフロントエンドを Next.js と GraphQL のシステムに置き換えている話 - クックパッド開発者ブログにて紹介したとおり、レシピサービスを Next.js ベースの新システムへと移行しています。今回は、この新システムのCSS in JSをEmotionからゼロランタイムのvanilla-extractへ変更した話です。\nvanilla-extract.style\n背景\n以前書いた レシピサービスのフロントエンドに CSS in JS を採用した話 - クックパッド開発者ブログでは、CSS in JSライブラリとして Emotion（@emotion/react）を採用した経緯と開発環境整備を紹介しました。採用理由としては以下の通りでした。\nセレクタに一意なIDが割り振られるので、スタイルを適用した要素とは別の要素への、意図しないスタイル適用を防ぐことができる。\nESLintやTypeScriptコンパイラといったJavaScriptの静的解析ツールの恩恵を受けることができ、タイポや機能削除時の削除漏れに気づきやすくなる。\nstyled-componentsのようなスタイルではJSXのツリーを見たときに、機能を持つコンポーネントなのか装飾されたコンポーネントなのかわからず、コードレビューがしにくい。\n通常のCSSの記法に慣れたメンバーが多いので、String Styles、すなわちタグ付きテンプレートリテラルを採用する。\nこのような方針でEmotionの導入を決め、stylelintやeslintを導入し、必要に応じてカスタムルールを作成して機能開発を進めました。\nしかしながら、Emotionを導入してから2年ほど経った結果、以下のような課題や懸…",
+          "link": "https://techlife.cookpad.com/entry/2023/10/03/105240",
+          "publishedOn": "2023-10-03T01:52:40.000Z",
+          "wordCount": null,
+          "title": "クックパッドのフロントエンド CSS in JS をゼロランタイムに切り替えました",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482967113840",
           "author": null,
           "description": "こんにちは、クックパッドマートプロダクト開発部の佐藤（@n_atmark）です。\n普段はクックパッドマートのモバイルアプリ開発に従事しています。\n今回、iOSアプリに実装されたUI要素のフレームやマージンを手軽に確認できるツールを作ってみたのでその紹介を行います。\n動作している物を見ていただくのが分かりやすいと思うので、早速ですが動作イメージがこちらになります。\n\nアプリに実装されたUI要素を長押しすると、スクリーンとの距離やUI要素のサイズ、角丸の半径を表示するようにしています。\nまた、2本指で二つのUI要素を長押しすると、長押ししたUI要素間のマージンを表示するようにしています。\n開発の背景\n私が普段開発に従事しているクックパッドマートiOSアプリでは元々5の倍数マージンを採用していたのですが、これを4の倍数マージンに変えたいという背景がありました。\n後発のクックパッドマートAndroidアプリで4の倍数マージンを採用しており、デザイナーが画面デザインを作成するために5の倍数マージン / 4の倍数マージンを切り替えてデザインを作らないといけないという課題があり、どちらかに統一したいという要望がありました。クックパッド社内の他のiOSアプリでも4の倍数マージンを採用していることもあり、クックパッドマートiOSアプリも4の倍数マージンに合わせることになりました。\nしかし、マージン値を機械的に置き換えるのは難しく、現在は気づいた箇所から徐々に置き換えていく方針で進めています。\nクックパッドマートiOSアプリにはUIKit (AutoLayout) で作られた画面もあればSwiftUIで作られた画面もあり、マージンを直接設定している箇所や変数に置いている箇所、アニメーションのためにマージン値を切り替えている箇所などがあるため、統一した方法で置き換えができないためです。また、10…",
@@ -10181,6 +10196,21 @@
       "feedUrl": "https://naari3.github.io/mangacross-rss/yabai/feed.xml",
       "siteUrl": "https://mangacross.jp/comics/yabai/",
       "articles": [
+        {
+          "id": "https://mangacross.jp/comics/yabai/138",
+          "author": "桜井のりお",
+          "description": "僕の心のヤバイやつ Karte.130 僕は海に来た - 2024年1月TVアニメ第二期放送決定!! 累計333万部突破！SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!!",
+          "link": "https://mangacross.jp/comics/yabai/138",
+          "publishedOn": "2023-10-03T01:00:00.000Z",
+          "wordCount": 603,
+          "title": "Karte.130 | 僕は海に来た",
+          "enclosure": {
+            "url": "https://mangacross.jp/images/episode/zBLf5I-6FH0jXtm6WYQa-a_Xna_qdjNZ_uyFb5L6_4c/episode_thumbnail/thumb_double.png?1695945135",
+            "length": "121585",
+            "type": "image/png"
+          },
+          "imageUrl": "https://mangacross.jp/images/episode/zBLf5I-6FH0jXtm6WYQa-a_Xna_qdjNZ_uyFb5L6_4c/episode_thumbnail/thumb_double.png?1695945135"
+        },
         {
           "id": "https://mangacross.jp/comics/yabai/137",
           "author": "桜井のりお",
