@@ -4039,21 +4039,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/saize_lw/20230521/20230521013001.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482943539700",
-          "author": null,
-          "description": "データサイエンスエキスパート　ゲームクリア\n攻略チートシート配布\n攻略指針\n図書館を巡ってアイテム収集\n図書館の初見殺しトラップ攻略\n参考書籍\n統計基礎\n統計学（初歩）\n統計学（高度）\nベイズ統計\n分散分析\n数学基礎\n線形代数\n微積分\n計算基礎\n情報全般\nデータベース\nアルゴリズム\nモデリング・AIと評価\n歴史・応用分野・AIなど\n多変量解析\n時系列解析\nグラフィカルモデル\nテキスト分析\n因果推論\n機械学習・モデル評価・ニューラルネットワーク\nデータサイエンスエキスパート　ゲームクリア\n日本統計学会が主催するデータサイエンスエキスパート試験に合格した。\nwww.toukei-kentei.jp\nデータサイエンスエキスパートは、統計検定より実践寄りであるデータサイエンスシリーズの最上位資格という位置付け。下位資格には「データサイエンス基礎」や「データサイエンス発展」があるが簡単そうだったので取得していない。\nデータサイエンスエキスパートの試験スケジュールは延期を繰り返しており、2021年に出題表が公開されてから2年越しでようやくの配信開始となった。俺にとっては新作ゲームみたいなものでリリースをずっと楽しみにしていて、早速6月に勉強を開始して7月頭に取得した。\n\n2年待った（公式サイトより）\n\n全体的な味わいとしては、統計検定の運営元が実施するだけあってエキスパートの名に恥じない良資格だった。\n統計検定を遥かに超える膨大な試験範囲が最大の特徴。クラシカルな統計学の知識として確率分布や検定論はもちろん、多変数解析や因果推論のような発展的な分野に加え、ニューラルネットワークやモデル評価を含む機械学習理論、更にはAIの歴史的な発展やビジネス活用についてまで出題範囲表に入っている。数学的な難易度も低くはなく、スカラーではなく行列を用いた議論ができるレベルが期待されている。\nしかし試験範…",
-          "link": "https://saize-lw.hatenablog.com/entry/2023/07/05/210304",
-          "publishedOn": "2023-07-05T12:03:04.000Z",
-          "wordCount": 1022,
-          "title": "23/7/5 データサイエンスエキスパート合格　チートシートと攻略ガイド",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/saize_lw/20230703/20230703125813.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/saize_lw/20230703/20230703125813.png"
         }
       ]
     },
@@ -8318,26 +8303,6 @@
           "wordCount": null,
           "title": "Cloudflare Pagesの`{name}.pages.dev`ドメインに自分だけアクセスできるようにアクセス制限をつける手順",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/07/05/convert-to-esm/",
-          "author": null,
-          "description": "Secretlint v7でCommonJS からES Modulesへの移行を行いました。\nSecretlint v7.0.0をリリースしました。Pure ESMへの書き直し\nこの記事では、CommonJS(CJS)からES Modules(ESM)への移行を行った経緯と、移行する方法について紹介します。\nCJSからESMへの移行は、率直に言えば単調な作業で、メリットが見えにくい作業です。\nしかし、将来的にCJSよりもESMが主流になることは間違いないので、移行することは必要です。\n移行の作業は、移行方法が決まれば大部分は機械的な書き換えが可能です。\nでは、実際にどうやって移行したのかを紹介します。\nESMへの移行の影響は依存元へと連鎖する\nSecretlintのリポジトリはmonorepoになっていて、だいたい40コぐらいのパッケージが含まれています。\nそしてパッケージ間で依存関係があります。\nたとえば、次のような依存関係がmonorepo内にあります。\n@secretlint/quick-startはsecretlintパッケージをラップしたものなので、secretlintに依存\nsecretlintは、Node.js向けのAPIを持つ@secretlint/nodeに依存\n@secretlint/nodeは、SecretlintのコアAPIを持つ@secretlint/coreに依存\n@secretlint/coreは、パッケージ間で参照する型定義だけをまとめた@secretlint/typesに依存\n\nESMへの移行は、必然的にこの依存関係全体的へ影響します。\nなぜなら、ESMのモジュールは基本的にESMのコードからしかインポートできないためです。\nそのため、CommonJS(CJS)からESMのモジュールをrequireで読み込むことはできません。\nCJSからE…",
-          "link": "https://efcl.info/2023/07/05/convert-to-esm/",
-          "publishedOn": "2023-07-05T12:47:00.000Z",
-          "wordCount": 1207,
-          "title": "CommonJSからES Modulesへの移行する方法。トップダウンかボトムアップか",
-          "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2023/07/05/secretlint-v7/",
-          "author": null,
-          "description": "機密情報をLintできるSecretlintのv7.0.0をリリースしました！\nRelease v7.0.0 · secretlint/secretlint\nこのバージョンでは、SecretlintをESMモジュールとして書き直しました。\nどのように移行したかは別の記事で紹介しているので、移行方法について記事を参照してください\nCommonJSからES Modulesへの移行する方法。トップダウンかボトムアップか\nSecretlint v7.0.0の変更点\nルールと本体のコードを含めて、全部のパッケージをESMに書き直しました。\nその中で、いろいろ整理したりもしたので、変更点はいろいろあります。\nただし、secretlintコマンドや@secretlint/quick-start、Docker Imageとして使う場合は、そこまで目にみえる変化は少ないと思います。\n詳細はリリースノートも参照してください。\nRelease v7.0.0 · secretlint/secretlint\nBreaking Changes\nNode.js 18+を必要とするようになりました\n\nこれはパッケージのコードをES2022形式で出力するようにしたためです。\nNode.js 14は2023年4月でEOL、Node.js 16は2023年9月でEOLなので、Node.js 18を使うことをおすすめします\nnodejs/Release: Node.js Release Working Group\nDocker ImageのBase ImageをNode.js 18に更新しました\nExit Statusがあまり明確になっていなかったのを整理しました。\n\n基本的には次のようなExit Statusを返すようになりました\n0: Lintに成功し、問題なし\n1: Lintに失敗し、問題がある\n2: クラ…",
-          "link": "https://efcl.info/2023/07/05/secretlint-v7/",
-          "publishedOn": "2023-07-05T12:42:00.000Z",
-          "wordCount": 872,
-          "title": "Secretlint v7.0.0をリリースしました。Pure ESMへの書き直し",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
@@ -8670,6 +8635,26 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=39542",
+          "author": "mamosuke",
+          "description": "ps4jb-payloads,libhijacker 1.105,BwE PS4 NOR Validator & Syscon Patcher 2.4.6,CXMLDecompilerRCO,PlayStation2-Basic-BootLoader(PS2BBL)+OpenTuna,Tonyhax International v1.4.2,NXUpdateTracker  v1.0,Ultrahand Overlay 1.3.3,PineCone v0.4.1b-CLI,fceux interim-build(2023-10-02T19:38:44.0000000Z),Xenia Canary fe7dc26 experimental,Cemu 2.0-55 (Experimental),Vita3K Android Release 8→→→この記事の続きを読む\nGameGaz Daily 2023.10.3 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023100339542/",
+          "publishedOn": "2023-10-03T01:01:52.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2023.10.3",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=39546",
+          "author": "mamosuke",
+          "description": "Nintendo Switchの後継機は2023年後半(9月とか)に発売されるかもしれません。→→→この記事の続きを読む\n【噂】Nintendo Switch後継機 2024年の後半発売か first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023100339546/",
+          "publishedOn": "2023-10-03T00:42:23.000Z",
+          "wordCount": null,
+          "title": "【噂】Nintendo Switch後継機 2024年の後半発売か",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=39538",
           "author": "mamosuke",
