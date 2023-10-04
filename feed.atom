@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-04T15:02:36.729Z</updated>
+    <updated>2023-10-04T16:01:50.683Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13239,43 +13239,6 @@ GameGaz Daily 2023.7.8 first appeared on 大人のためのゲーム講座.]]></
 行き方としては、JR新宿駅南口…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[はてなブログの閲覧体験改善の取り組みについて]]></title>
-        <id>hatenablog://entry/820878482947646916</id>
-        <link href="https://staff.hatenablog.com/entry/2023/07/07/122734"/>
-        <updated>2023-07-07T03:27:34.000Z</updated>
-        <summary type="html"><![CDATA[はてなブログでは、日々さまざまな機能修正・改善を行っています。本記事では、はてなブログでの閲覧体験の改善への取り組みを紹介いたします。
-はてなブログの閲覧体験改善プロジェクト
-「閲覧体験の改善」をひとことで言えば「快適にウェブページを閲覧するための改善施策」です。快適なウェブページの閲覧を妨げる要素は色々あります。
-ページの読み込み速度が遅い
-画像や要素の読み込みで画面にズレが発生する
-操作の反応が悪い
-ユーザーの操作意図に沿わない動作をする
-などです。
-快適にウェブページが閲覧できることは、著者にとっても読者にとっても嬉しいことであり、ブログの性能のなかでも重要な要素のひとつです。
-はてなフォトライフ貼り付け時のレイアウトシフトを生じないようにする変更と画像の遅延読み込みを行う変更など、閲覧体験を改善するための施策を行ってまいりました。
-プロジェクトの指標と成果
-プロジェクトでは、閲覧体験を定量的に測る指標として、Google が提唱する「Core Web Vitals」を使用し、この数値の改善を目標に進めています。
-Core Web Vitals と Google 検索の検索結果について | Google 検索セントラル  |  ドキュメント  |  Google for Developers
-また、具体的な施策の検討に際しては、Google PageSpeed Insights や Sentry などサードパーティの計測ツールでページごとの実際のページ読み込み速度などを計測し、対応に必要な工数や期待できる効果から施策の絞り込みを行いました。
-このような計測と分析を通して、最近いくつかの改善施策をリリースいたしました。
-新着記事、注目記事モジュールなどの画像の遅延読み込み
-ブログの表示に必要なJavaScriptを見直してファイルサイズを削減
-その他細かい改善
-その結果、モバイル環境における Core Web Vitals の数値が大きく改善いたしました。
-はてなブログのCore Web Vitalsの指標推移。モバイル環境での指標が大きく改善したことがわかります
-
-
-    
-引き続き改善していきます！
-上記の施策以降も閲覧体験の改善施策を進めており、今後も行っていく予定です。ぜひ今後の改善にご期待いただけますと幸いです。
-注意事項
-はてなブログはユーザー自身が自由にデザインを変更したり、自由に広告を挿入したりできる仕組みのため、ユーザー自身のカスタマイズが、閲覧体験を悪くしてしまうこともあります。
-その場合、はてなブログ側での改善は困難です。ご理解の上、カスタマイズを行っていただけますと幸いです。]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
