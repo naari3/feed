@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-05T00:02:56.676Z</updated>
+    <updated>2023-10-05T01:24:16.757Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DNS over HTTPS/TLS (DoH/DoT)の設定方法]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=21158</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/21158"/>
+        <updated>2023-10-05T01:04:17.000Z</updated>
+        <summary type="html"><![CDATA[はじめに DNS over HTTPS/TLS (DoH/DoT)の設定の話をします。何言ってやがんだ、設定なんて画面からポチポチいじるだけやろ読むまでもない、と思ったあなた、甘いです。 DoH/Do...]]></summary>
+        <author>
+            <name>やまぐち</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[wena3の設定は何が面倒なのか]]></title>
+        <id>hatenablog://entry/820878482973154963</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/10/05/095737"/>
+        <updated>2023-10-05T00:57:37.000Z</updated>
+        <summary type="html"><![CDATA[Huawei Watch Budsとwena3一体型の時計が便利なので、もう一つのHuawei Watch Budsにも、wena3が無事つきました。良かった、良かった。
+しかし、これだけ何回もセットアップをしてる。私でもそれでも結構面倒です。
+一番面倒なのは何と言っても Bluetooth の接続の不安定さだと思います。指示通り行ったとしても、必ずしも上手に機器が検出されるとは限らない。
+その時に例えば iPhone 側に原因があるのか、wena3側に原因があるのかを見極めるため、iPhone につながろうとして、うまく繋げない時にはAndroid も立ち上げて、 Android で Bluetooth 検索をした時にも出てこないときには、wena3の方に原因になると考え、もう一度初期化や再起動を繰り返します。
+逆に Android は検知できるけれどもiPhone で検知ができない時には iPhone 側の再起動をします。
+こんなのを繰り返して、何回かリセットや再起動を繰り返してるとようやく繋がる「とき」もあるという感じで、つながった隙に、おサイフアプリでQUICPayやdポイントを書き入れて、また、Androidに接続を戻したりしています。
+まぁ、一度、Felicaに書き込んでしまえば、どんなに初期化を繰り返してもこれからは使えるので、おサイフアプリのサービスがことしいっぱい、wena3のサービスがあと３年ということですが、QUICPayのカードの期限まではそのまま使えるし、Suicaは最悪、駅の券売機でチャージできます。
+そして、３年後くらいまでには、Pixel Watchの電池寿命が少しはましになっているでしょうから、そのときにはまとめて乗り換え、という感じですかねーーー。
+そういえば、wena3を使いはじめて、一番気に入っているのは、
+「時計ベルトとしての優秀さ」
+でした。メタルの質もいいし、バッグル部も使いやすい。時計はやはり、腕に着いているところが気持ちいいといいですね。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2023.10.5]]></title>
         <id>https://gamegaz.com/?p=39563</id>
@@ -13224,16 +13254,6 @@ GameGaz Daily 2023.7.8 first appeared on 大人のためのゲーム講座.]]></
         <summary type="html"><![CDATA[とりあえず作る→とりあえず動く→とりあえず系のコードで汚れる→書き直す→不具合でる→直す→妥協っぽいコードの完成→１日後、もっとうまいコード書き方があるはず→直す→不具合でる→それで、ようやく本採用・・・という感じ。ほんまド素人工事ですよ（泣。数十行で毎回これだからなかなか前に進まなんですよね。]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[桃の食べ方【令和最新版】]]></title>
-        <id>hatenablog://entry/820878482947956963</id>
-        <link href="https://kiyo-shit.hatenablog.com/entry/2023/07/07/211700"/>
-        <updated>2023-07-07T12:17:00.000Z</updated>
-        <summary type="html"><![CDATA[一口大に切った桃を、舌で上顎に押し付けて潰し、飲み込む。]]></summary>
-        <author>
-            <name>Robot Checkerboard</name>
         </author>
     </entry>
     <entry>
