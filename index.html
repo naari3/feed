@@ -78,6 +78,37 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">クックパッドの検索反映時間を 1/288 にしたシステム改修</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2023/10/05/150000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。レシピ事業部の新井（@SpicyCoffee）です。
+クックパッドではこれまで、レシピを投稿してから検索結果に反映されるまで最長で 24 時間程度の時間がかかっていました。今回、この時間を 5 分程度、最長でも 10 分程度に短縮することに成功しました。本記事では、プロジェクトオーナーの立場で関わった私が代表してその開発について紹介します。
+プロジェクトの目的と数値目標
+本プロジェクトでは上記の「レシピを投稿してから検索結果に反映されるまでの時間短縮」が目的とされました。しかし、時間短縮といっても現状 24 時間であるものを &quot;1 時間&quot; にするのか、&quot;1 分&quot; にするのか、&quot;1 秒&quot; にするのかでは話が全然違います。この数値目標は設計を始めとした後の意思決定に大きく影響を与えるため、しっかりとした意図を持った状態で明確に定めておく必要がありました。
+そこで、私とプロダクトオーナー*1が議論を重ね、まずは ”今回のプロジェクトで実現したいユーザー体験&quot; を定めました。その体験から必要となる検索結果の反映頻度を逆算し、最終的な数値目標を「中央値 5 分程度、最大でも 10 分以内の検索結果への反映」であると定めることとなりました。同時に定めたプロジェクトのスケジュールは 6 週間であり、見積もりの第一印象としてはかなりギリギリの設定でした。
+この記事では、今後本プロジェクトで実現された「検索結果が反映されるまでの時間の短縮」を “short-period indexing” と呼称することにします。
+旧システムの概要
+プロジェクト発足時点での検索周りのシステム(以下旧システム)を以下に示します。
+旧システムの構成
+旧システムの肝は以下の２点です。
+検索インデックスを生成する日次バッチ
+旧システムでは、検索結果の更新を 24 時間に一度でいいと割り切り、日次バッチで…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/spicycoffee/20231005/20231005140329.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
               rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
           <section class="articles-per-source">
@@ -18969,28 +19000,6 @@ GameGaz Daily 2023.7.8 first appeared on 大人のためのゲーム講座.</spa
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
-              rel="noopener">自由さ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">やって後悔しないことは大抵やるのがめんどくさい</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/nd63de784977b" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>最近Apple Watchを身につけているので、1日に1回はデバイスから深呼吸の提案が来る。正直作業に没頭してる時とか鬱陶しくて。スルーしてしまうことがある。息が詰まるタイミングを見計らって通知しているので、機能の良さをスポイルしているんだけど。
-でも3回に1回くらいキチンとやってみる。1分間深く呼吸をして、吐いて。これだけでやっぱり気分が良くなるものだし、頭も身体もクールダウンして、結果的に作業や思考の効率化につながる。イライラ、もやもやしてた頭が一時的にスッキリして、その時間を利用して思考の整理が行えたりね。やって後悔する深呼吸はない。
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/110231948/rectangle_large_type_2_2f4f13fe592e6ae28de1a55787e947d0.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20774,7 +20783,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-10-05T05:01:45.069Z">2023-10-05T05:01:45.069Z</time>
+    <time id="build-timestamp" datetime="2023-10-05T06:02:17.443Z">2023-10-05T06:02:17.443Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
