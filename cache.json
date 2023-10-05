@@ -3368,21 +3368,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482948005915",
-          "author": null,
-          "description": "6日遅れ更新なので、明日も更新することで元に戻します。\n \nとある人のスペースに聞き専で入ったら話の流れで自分の動画の話になった。\n粗品の音MADについて「粗品本人が歌いそうな替え歌だ」的なことを言われてて、かなり言われたい感想だったから嬉しかった。感想への感想をツイートしたけどちょうどTLが死んでたので誰にも見られてないと思う。\n \nTwitterが大変なことになったので、外部アプリ？を色々試したりした。\n使った中だとtweetpdが公式アプリとUIが似てたりおすすめツイートに切り替えられたりで良さげだった。\n \nSVシーズン7、滑り込みでマスボ級に到達した。\n前期上位のQRパ使ったのに1から自分で組んだシーズンと同じ試合数が掛かってしまった。なぜ？（両方ビギナー→マスボ）",
-          "link": "https://nkaoobt.hatenablog.com/entry/2023/07/08/193955",
-          "publishedOn": "2023-07-08T10:39:55.000Z",
-          "wordCount": 423,
-          "title": "週記#66 7月1週",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -6405,16 +6390,6 @@
           "wordCount": 2929,
           "title": "なんにでもDry/Wetを追加していいのか",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/038e696030fd1e532ed767c74c480485fa089ad3.png"
-        },
-        {
-          "id": "https://note.com/hercelot/n/n86b314ea64b1",
-          "author": null,
-          "description": "Hercelot - flat ramp to my end point \n1. mortal coil (rough)\n2. qupid on quilt\n3. quitsies\n4. at this late date\n続きをみる",
-          "link": "https://note.com/hercelot/n/n86b314ea64b1",
-          "publishedOn": "2023-07-08T10:16:40.000Z",
-          "wordCount": null,
-          "title": "新譜",
-          "imageUrl": null
         }
       ]
     },
@@ -8233,16 +8208,6 @@
           "wordCount": 924,
           "title": "時期を決めて定期的に更新するnpmパッケージをChangesetsで管理する",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2023/07/08/cloudflare-page-zero-trust/",
-          "author": null,
-          "description": "Cloudflare Pagesの {name}.pages.dev ドメインに自分だけアクセスできるようにアクセス制限をつける手順です。\nアプリケーション側の変更は不要で、Cloudflare Accessの機能を使ってアクセス制御ができます。\nカスタムドメイン(Cloudflare DNS)を設定している場合の方法は色々ありますが、デフォルトで用意されている {name}.pages.dev ドメインに対して設定する手順についてです。\nこの手順がかなりややこしいので、設定方法メモ書きです。\nプレビューブランチへのアクセス制御の有効化手順\nCloudflare Pagesでページを作る\nSettings -> Access policyでEnable access policyをONにする\nこれで、*.{name}.pages.dev に対するアクセス制御が有効化されます。\n*.{name}.pages.devとなっていることからも分かるように、これはプレビューブランチに対する制御だけしかできていません。\nhttps://{name}.pages.dev にアクセスした際にもアクセス制御をかけたい場合は、Zero Trust画面で別途設定する必要があります。\nメインドメインへのアクセス制御の有効化手順\n{name}.pages.devに対してアクセス制御を有効化する手順です。\nSettings -> Access policyのManage PoliciesポリシーからAccess/Applicationsのページへ移動する\n\nhttps://one.dash.cloudflare.com/{id}/access/apps のようなURLです\n\n先ほど追加された*.{name}.pages.devのポリシーがあるのを確認できます\n*.{name}.pages.devの右に…",
-          "link": "https://efcl.info/2023/07/08/cloudflare-page-zero-trust/",
-          "publishedOn": "2023-07-08T10:32:00.000Z",
-          "wordCount": null,
-          "title": "Cloudflare Pagesの`{name}.pages.dev`ドメインに自分だけアクセスできるようにアクセス制限をつける手順",
-          "imageUrl": null
         }
       ]
     },
