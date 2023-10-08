@@ -3532,7 +3532,23 @@
       "title": "owatax's blog",
       "feedUrl": "https://owatax00.hatenablog.com/rss",
       "siteUrl": "https://owatax00.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/820878482974073782",
+          "author": null,
+          "description": "PC買い替えに伴い作業環境の移行を進めていたのですが、Wavesのレガシープラグインの導入に躓いたので備忘として残しておきます。\n \n■Step1. Waves Centralのインストール\nこれは普通に公式サイトからインストールすればOK。\n2023/10/08時点で、V10移行のプラグインに関しては下記のWave Cenral上での来世薄認証＆インストールを行えば普通に認識されるはず。\nDownload Waves Central - Waves Audio\n \n \n■Step2. V9インストーラの入手\n躓きポイントその1。\n詳細は下記リンク先に書かれていますが、V9.92(v9系の最終バージョン)をインストールする場合は「最新版のWaves Central上からv9.92のオフラインインストーラを読み込む」必要があります。\nWaves V9製品のインストール (minet.jp)\n \n\nオフラインデータに付属するWaves Central Lは旧バージョンとなり、インストールには使用しません。\nよく読まずに適当に進めてたらここで詰まった。導入するWaves Centralは最新版だけで良いんですね。\n \n \n■Step3. Reaperでのパス追加\n躓きポイントその2。\nインストール完了後、C:\\Program Files\\VSTPlugIns 配下に「WaveShell1-VST 9.92_x64.dll」が追加されていたのでこれで読み込めるはず～と思っていたものの認識されず。\n\n \nおかしいな～と色々探してたら C:\\Program Files (x86)\\Waves\\Plug-Ins V9 配下にも.dllファイルがあるのを発見。\n \nということでReaperの設定＞VSTよりパスを追加して再スキャン。\n\n \n無事認識されました。よかった！\n\n \n（おわり）",
+          "link": "https://owatax00.hatenablog.com/entry/2023/10/08/200156",
+          "publishedOn": "2023-10-08T11:01:56.000Z",
+          "wordCount": 419,
+          "title": "【PC移行】ReaperへのWaves Gold(V9)の導入で躓いたメモ（解決済）",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "ろば電子が詰まつてゐる",
@@ -8581,6 +8597,21 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=39592",
+          "author": "mamosuke",
+          "description": "john-tornblom氏がWIPながらPS5向けのHomebrewローダーHomebrew BigApp loader for PS5(ps5-payload-hbldr)をリリースしていました。→→→この記事の続きを読む\nPS5向けHomebrewローダー john-tornblom氏が開発中 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023100839592/",
+          "publishedOn": "2023-10-08T11:32:50.000Z",
+          "wordCount": 1463,
+          "title": "PS5向けHomebrewローダー john-tornblom氏が開発中",
+          "enclosure": {
+            "url": "https://github.com/john-tornblom/ps5-payload-hbldr/blob/master/test.webm",
+            "length": "1817",
+            "type": "video/webm"
+          },
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/PS5-Jailbreak.png"
+        },
         {
           "id": "https://gamegaz.com/?p=39590",
           "author": "mamosuke",
