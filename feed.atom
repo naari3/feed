@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-11T14:01:45.522Z</updated>
+    <updated>2023-10-11T15:01:44.405Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[移植7]]></title>
+        <id>hatenablog://entry/6801883189049679087</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/10/11/231515"/>
+        <updated>2023-10-11T14:15:15.000Z</updated>
+        <summary type="html"><![CDATA[1スクリプトファイルだけ目視で読んだ限り、そのままGBAで走らせるのはちょっと無理かなあというのが結論でした。640x400に最適化されてますしアセンブラを走らせるのはスピードとしてどうだろう。たとえば
+テキスト１
+call エフェクト１
+テキスト２
+call キャラクタ表示
+call エフェクト２
+テキスト３
+が理想のスクリプトフォーマットというならアセンブラはこのようになります。
+TXT テキスト1のアドレス
+eff1:
+MOV レジスタ1, 8
+MOV レジスタ2, 8
+MOV レジスタ3, 16
+MOV レジスタ4, 152
+MOV レジスタ5, 20
+DRAW 変数1, 変数2, 変数3, 変数4
+ADD レジスタ1, 8
+ADD レジスタ3, 8
+DEC レジスタ5 
+JNZ eff1
+TXT テキスト2のアドレス
+
+以下略・・・
+これらのエフェクト命令がテキストの間に挟まっているわけです。むっちゃつらみ。なので一度DOS上でエンジン動かして上記の理想なフォーマットに変換しないといけないかもです。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「音リビアの泉」お疲れさまでした！～素晴らしきムダ話～]]></title>
         <id>https://note.com/studio_vk/n/ne9012461703c</id>

@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189049679087",
+          "author": null,
+          "description": "1スクリプトファイルだけ目視で読んだ限り、そのままGBAで走らせるのはちょっと無理かなあというのが結論でした。640x400に最適化されてますしアセンブラを走らせるのはスピードとしてどうだろう。たとえば\nテキスト１\ncall エフェクト１\nテキスト２\ncall キャラクタ表示\ncall エフェクト２\nテキスト３\nが理想のスクリプトフォーマットというならアセンブラはこのようになります。\nTXT テキスト1のアドレス\neff1:\nMOV レジスタ1, 8\nMOV レジスタ2, 8\nMOV レジスタ3, 16\nMOV レジスタ4, 152\nMOV レジスタ5, 20\nDRAW 変数1, 変数2, 変数3, 変数4\nADD レジスタ1, 8\nADD レジスタ3, 8\nDEC レジスタ5 \nJNZ eff1\nTXT テキスト2のアドレス\n\n以下略・・・\nこれらのエフェクト命令がテキストの間に挟まっているわけです。むっちゃつらみ。なので一度DOS上でエンジン動かして上記の理想なフォーマットに変換しないといけないかもです。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/10/11/231515",
+          "publishedOn": "2023-10-11T14:15:15.000Z",
+          "wordCount": 438,
+          "title": "移植7",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/820878482973028803",
           "author": null,
           "description": "デジピックめんどいのでスキル振らず。交渉とライフルに割り振ってすべて解決させます！",
