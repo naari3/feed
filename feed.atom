@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-11T18:02:31.593Z</updated>
+    <updated>2023-10-11T19:02:14.843Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[tower は何を実現するのか]]></title>
+        <id>https://blog.ojisan.io/about-tower</id>
+        <link href="https://blog.ojisan.io/about-tower"/>
+        <updated>2023-10-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[宣伝 10/21 に rust.tokyo でカニさんタワーバトルという発表をする。その事前資料として axum の内部実装の解説を書いているのだが、その解説を読むためには axum の Router は tower の Service…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[移植7]]></title>
         <id>hatenablog://entry/6801883189049679087</id>
@@ -13395,18 +13405,6 @@ poteto_jk’s diary
 Amazon]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[盗品の桃は美味いのか]]></title>
-        <id>https://note.com/sizes/n/n90428d37d4a7</id>
-        <link href="https://note.com/sizes/n/n90428d37d4a7"/>
-        <updated>2023-07-14T06:44:20.000Z</updated>
-        <summary type="html"><![CDATA[メルカリで盗品の桃が売られているという話を、毎年聞く。桃農家はお気の毒だけれど、盗む方もよくそこまでするよな。一個二個盗むんじゃなくて、何千個と盗むんだから。逮捕されたら実刑を食らうんだろうし、割に合ってない犯罪。
-盗品の桃は美味しいのか？たぶん杜撰な管理をされてるから、味のムラはあるだろう。そういう次元の話じゃなく、盗品と知って買う桃は美味いのか？
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
     <entry>

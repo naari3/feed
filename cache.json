@@ -7575,16 +7575,6 @@
           "wordCount": null,
           "title": "「ここではない知らないどこか」に辿り着いたら、そこに有るのは自分が一番よく知っているいつもの自分だけ",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/110811031/rectangle_large_type_2_30984dc9ac954e3d2114e71efefb5649.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n90428d37d4a7",
-          "author": null,
-          "description": "メルカリで盗品の桃が売られているという話を、毎年聞く。桃農家はお気の毒だけれど、盗む方もよくそこまでするよな。一個二個盗むんじゃなくて、何千個と盗むんだから。逮捕されたら実刑を食らうんだろうし、割に合ってない犯罪。\n盗品の桃は美味しいのか？たぶん杜撰な管理をされてるから、味のムラはあるだろう。そういう次元の話じゃなく、盗品と知って買う桃は美味いのか？\n続きをみる",
-          "link": "https://note.com/sizes/n/n90428d37d4a7",
-          "publishedOn": "2023-07-14T06:44:20.000Z",
-          "wordCount": null,
-          "title": "盗品の桃は美味いのか",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/110760327/rectangle_large_type_2_899139c415f779bbea27a911d6f12f99.jpeg?width=800"
         }
       ]
     },
@@ -8095,6 +8085,16 @@
       "feedUrl": "https://blog.ojisan.io/rss.xml",
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
+        {
+          "id": "https://blog.ojisan.io/about-tower",
+          "author": null,
+          "description": "宣伝 10/21 に rust.tokyo でカニさんタワーバトルという発表をする。その事前資料として axum の内部実装の解説を書いているのだが、その解説を読むためには axum の Router は tower の Service…",
+          "link": "https://blog.ojisan.io/about-tower",
+          "publishedOn": "2023-10-12T00:00:00.000Z",
+          "wordCount": 1985,
+          "title": "tower は何を実現するのか",
+          "imageUrl": "https://blog.ojisan.io/static/9b2ff54e3f8e2af95d11b9da0da45db5/aa395/visual.png"
+        },
         {
           "id": "https://blog.ojisan.io/laravel-docker-wakaran",
           "author": null,
