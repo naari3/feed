@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189050438476",
+          "author": null,
+          "description": "フォアナイン製System-98エンジンを作成中です・・・。変数処理、ジャンプ系はちゃんと実装して描画系は全部カット。たぶんスクリプト容量を半分以下に減らせるんじゃないかなと思っています。集中力がすぐ途切れるし、足しては消してはいつものこと。。気長にやるしかないですね。。\n\nそういえばなぜカナンを移植したいのかというと自分のゲームベスト３位以内に入るものだからです。たぶんプレイする時期もよかったと思います。暇な学生時代でしたし。X-GAME STATION（閉鎖）さんのページで高得点なのを目にして興味が湧いたのが最初のきっかけです。今はストーリもすっかり忘れていて思い出で語るとしたらどうなんだろう・・・プレイしてよかった、とても満足した、という充実感しか残っていないです。たぶんカナンは会話シーンと各キャラクタの関係性が心地いいんだと思います。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/10/14/220408",
+          "publishedOn": "2023-10-14T13:04:08.000Z",
+          "wordCount": 395,
+          "title": "移植8",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189049679087",
           "author": null,
           "description": "1スクリプトファイルだけ目視で読んだ限り、そのままGBAで走らせるのはちょっと無理かなあというのが結論でした。640x400に最適化されてますしアセンブラを走らせるのはスピードとしてどうだろう。たとえば\nテキスト１\ncall エフェクト１\nテキスト２\ncall キャラクタ表示\ncall エフェクト２\nテキスト３\nが理想のスクリプトフォーマットというならアセンブラはこのようになります。\nTXT テキスト1のアドレス\neff1:\nMOV レジスタ1, 8\nMOV レジスタ2, 8\nMOV レジスタ3, 16\nMOV レジスタ4, 152\nMOV レジスタ5, 20\nDRAW 変数1, 変数2, 変数3, 変数4\nADD レジスタ1, 8\nADD レジスタ3, 8\nDEC レジスタ5 \nJNZ eff1\nTXT テキスト2のアドレス\n\n以下略・・・\nこれらのエフェクト命令がテキストの間に挟まっているわけです。むっちゃつらみ。なので一度DOS上でエンジン動かして上記の理想なフォーマットに変換しないといけないかもです。",
@@ -7555,16 +7570,6 @@
           "wordCount": null,
           "title": "「暑い」とか「寒い」は娯楽のうち",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/111070031/rectangle_large_type_2_dbcc91b06fe521ec8cf26d490d406a1f.png?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/nbdcfb6c34792",
-          "author": null,
-          "description": "続きをみる",
-          "link": "https://note.com/sizes/n/nbdcfb6c34792",
-          "publishedOn": "2023-07-17T01:06:20.000Z",
-          "wordCount": null,
-          "title": "役者の絵、Vtuberの絵",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/110986371/rectangle_large_type_2_2f6a4742cddbbb3af63d455af92191da.png?width=800"
         }
       ]
     },
