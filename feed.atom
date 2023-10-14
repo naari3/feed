@@ -2,10 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-14T14:02:23.696Z</updated>
+    <updated>2023-10-14T15:01:43.752Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[#15]]></title>
+        <id>https://note.com/kazumakawauchi/n/n5e26420ad170</id>
+        <link href="https://note.com/kazumakawauchi/n/n5e26420ad170"/>
+        <updated>2023-10-14T14:44:57.000Z</updated>
+        <summary type="html"><![CDATA[続きをみる]]></summary>
+        <author>
+            <name>河内一馬</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Remix v2へアップデートした時のメモ]]></title>
+        <id>https://efcl.info/2023/10/14/remix-v2/</id>
+        <link href="https://efcl.info/2023/10/14/remix-v2/"/>
+        <updated>2023-10-14T13:53:00.000Z</updated>
+        <summary type="html"><![CDATA[Remixを使って作ったアプリケーションをRemix v2へアップデートした時のメモです。
+Remix v2 | Remix
+マイグレーションガイド: Upgrading to v2 | Remix
+アプリケーションは Remix + Cloudflare Pages で動かしてるアプリ。
+serverBuildTargetの変更
+結構前にテンプレートから生成したアプリだったので、それぞれのビルドターゲットの設定方法が変わっている。
+V2では、この初期値が結構変わるので、次のページを参考にしてビルドターゲットに合わせたものを設定する。
+serverBuildTarget
+Cloudflare Pages向けのビルドをするので、remix.config.jsに次のように設定する。
+この設定はV1でも動くので、まずはこれで動かす。(future.v2_devが有効である必要はあったのかも。忘れている)
+
+/** @type {import('@remix-run/dev').AppConfig} */
+module.exports = {
+-  serverBuildTarget: "cloudflare-pages",
+   server: "./server.js",
+   ignoredRouteFiles: [".*", "**/*.test.*"],
++  publicPath: "/build/", // default value, can be removed
++  serverBuildPath: "functions/[[path]].js",
++  serverConditions: ["worker"],
++  serverDependenciesToBundle: "all",
++  serverMainFields: ["browser", "mod…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[移植8]]></title>
         <id>hatenablog://entry/6801883189050438476</id>
@@ -13356,17 +13396,6 @@ Major リリース
 *1:変更後に3kg減ってるのですが、同時期に食事を変える、食事の記録を取るようにした、運動量を増やした、などの変化もあったので、どれがどれだけ効いたかわかりません]]></summary>
         <author>
             <name>覚書</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.7.17]]></title>
-        <id>https://gamegaz.com/?p=39030</id>
-        <link href="https://gamegaz.com/2023071739030/"/>
-        <updated>2023-07-17T02:34:40.000Z</updated>
-        <summary type="html"><![CDATA[ps3xploitとps3toolsetサイトアクセス不可,PS4 WEE Tools v0.7.5,PSX XMB Manager v2,chiaki4deck v1.3.3,GoldHEN Cheats Pack PKG cheats_ps4(16-07-2023),GoldHEN_Cheat_Repository(15-07-2023),ARK-4 v1689555135,PlayStation2-Basic-BootLoader(PS2BBL)+OpenTuna,RCE patches v1.1,BlocksDS 0.8,Vita3K Build: 3278,『コール オブ デューティ』PSヘ10年提供→→→この記事の続きを読む
-GameGaz Daily 2023.7.17 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

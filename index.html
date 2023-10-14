@@ -78,6 +78,65 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
+              rel="noopener">河内一馬</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">#15</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/kazumakawauchi/n/n5e26420ad170" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/118904555/rectangle_large_type_2_b3baf57150808e71ccef2dad7b79806f.png?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Remix v2へアップデートした時のメモ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/10/14/remix-v2/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Remixを使って作ったアプリケーションをRemix v2へアップデートした時のメモです。
+Remix v2 | Remix
+マイグレーションガイド: Upgrading to v2 | Remix
+アプリケーションは Remix + Cloudflare Pages で動かしてるアプリ。
+serverBuildTargetの変更
+結構前にテンプレートから生成したアプリだったので、それぞれのビルドターゲットの設定方法が変わっている。
+V2では、この初期値が結構変わるので、次のページを参考にしてビルドターゲットに合わせたものを設定する。
+serverBuildTarget
+Cloudflare Pages向けのビルドをするので、remix.config.jsに次のように設定する。
+この設定はV1でも動くので、まずはこれで動かす。(future.v2_devが有効である必要はあったのかも。忘れている)
+
+/** @type {import(&#x27;@remix-run/dev&#x27;).AppConfig} */
+module.exports &#x3D; {
+-  serverBuildTarget: &quot;cloudflare-pages&quot;,
+   server: &quot;./server.js&quot;,
+   ignoredRouteFiles: [&quot;.*&quot;, &quot;**/*.test.*&quot;],
++  publicPath: &quot;/build/&quot;, // default value, can be removed
++  serverBuildPath: &quot;functions/[[path]].js&quot;,
++  serverConditions: [&quot;worker&quot;],
++  serverDependenciesToBundle: &quot;all&quot;,
++  serverMainFields: [&quot;browser&quot;, &quot;mod…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
               rel="noopener">あーさん日記</a></h3>
           <section class="articles-per-source">
@@ -19003,19 +19062,6 @@ Hardwear.io事務局 SpecterDev氏のPS5セキュリティ報告発表動画を�
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2023.7.17</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2023071739030/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ps3xploitとps3toolsetサイトアクセス不可,PS4 WEE Tools v0.7.5,PSX XMB Manager v2,chiaki4deck v1.3.3,GoldHEN Cheats Pack PKG cheats_ps4(16-07-2023),GoldHEN_Cheat_Repository(15-07-2023),ARK-4 v1689555135,PlayStation2-Basic-BootLoader(PS2BBL)+OpenTuna,RCE patches v1.1,BlocksDS 0.8,Vita3K Build: 3278,『コール オブ デューティ』PSヘ10年提供→→→この記事の続きを読む
-GameGaz Daily 2023.7.17 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -20947,7 +20993,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-10-14T14:02:23.630Z">2023-10-14T14:02:23.630Z</time>
+    <time id="build-timestamp" datetime="2023-10-14T15:01:43.697Z">2023-10-14T15:01:43.697Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
