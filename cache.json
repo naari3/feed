@@ -8341,16 +8341,6 @@
           "wordCount": 736,
           "title": "mubook-hon: Dropboxに保存したepubやPDFを読むビューア、Notionにメモや読んでいる位置を記録できるMobile/PC対応のウェブアプリ",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2023/07/17/regular-updates-by-changesets/",
-          "author": null,
-          "description": "毎月や半年に一回といったように、リリースする時期(間隔)を決めて更新するタイプのパッケージがあります。\n具体的には、次のtextlintのプリセットルールは1月と7月という形で半年に一回リリースしています。\ntextlint-ja/textlint-rule-preset-japanese: textlint rule preset for Japanese.\ntextlint-ja/textlint-rule-preset-ja-technical-writing: 技術文書向けのtextlintルールプリセット\nなぜ、このようにリリースする時期を決めているかというと、これらのパッケージは他のパッケージに依存していて、他のパッケージの更新がそのままメジャーアップデートになりやすい性質があるためです。\nそのため、依存を更新してリリースすると、頻繁にメジャーアップデートしないといけなくなります。\n具体的には、Semantic Versioningに則っているので次のルールでバージョンを更新しています。\nPatch リリース\n\n各ルールのバグ修正 (警告を減らす方向への修正)\nドキュメントの改善\n内部的な変更 (リファクタリングやテストの改善など)\nリリース失敗時の再リリース\nMinor リリース\n\n各ルールのバグ修正 (警告を増やす方向への修正)\n新オプションの追加\n既存ルールの非推奨化\nMajor リリース\n\nプリセットへのルールの追加\nプリセットからルールの削除\n既存のオプション値の変更\nルールの追加やルールのメジャーアップデートがあると、プリセットもメジャーアップデートが必要になります。\n頻繁にメジャーアップデートすると、ユーザーがメジャーアップデートをするのが面倒になるので、ある程度の間隔にまとめてリリースするようにしています。\nまとめてリリースすると、それまでの間に…",
-          "link": "https://efcl.info/2023/07/17/regular-updates-by-changesets/",
-          "publishedOn": "2023-07-17T12:09:00.000Z",
-          "wordCount": 924,
-          "title": "時期を決めて定期的に更新するnpmパッケージをChangesetsで管理する",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
