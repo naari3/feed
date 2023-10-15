@@ -8081,6 +8081,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/dbg-dungling-pointer",
+          "author": null,
+          "description": "最近Pin を完全に理解したくて、色々なコードを実験して遊ぶのが日課になっている。これまでのRust人生では綺麗な世界しか知らず、raw pointerを使ったこともないしダングリングポインタと縁がなく、Pinに対するイメージがちゃんと持てなかった。ということで最近はraw…",
+          "link": "https://blog.ojisan.io/dbg-dungling-pointer",
+          "publishedOn": "2023-10-16T00:00:00.000Z",
+          "wordCount": null,
+          "title": "無効なポインタへのdbg!でクラッシュした",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/axum-response",
           "author": null,
           "description": "宣伝 10/21 に rust.tokyo でカニさんタワーバトルという発表をする。その発表の中では axum…",
