@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-16T12:02:09.422Z</updated>
+    <updated>2023-10-16T13:04:03.072Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[雑記：社内向けアプリケーションをすべて単色アイコンにしている話]]></title>
+        <id>hatenablog://entry/6801883189050966423</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2023/10/16/220000"/>
+        <updated>2023-10-16T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ノンデザイナーズ・デザインブックという本がある。
+https://www.amazon.co.jp/%E3%83%8E%E3%83%B3%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%83%BC%E3%82%BA%E3%83%BB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%96%E3%83%83%E3%82%AF-%E7%AC%AC4%E7%89%88-Robin-Williams/dp/4839955557
+著者らはこの本の中で、以下の４つのデザインの原則を提示した。
+コントラスト / Contrast
+反復 / Repetation
+整列 / Alingment
+近接 / Proximiy
+実際にはこの4つを組み合わせながら使うと効果的だが、特にこの「反復」の効果は効いてくる。きぬた歯科とか典型的だと思う。
+きぬた歯科
+「きぬた院長の顔」という共通するイメージが反復要素となり、単純接触効果を生み出している。広告としても成功しているらしい。*1
+同じことは社内向けのアプリケーションにも言える。
+自分はデータエンジニアを職業としてやっている。なので、データウェアハウス内に格納されたデータをSlackで定時報告するアプリなどを作っている。
+Slackのアプリにはアイコンが設定できる。そのアイコンを、すべて単色アイコンにしている。Webアプリケーションを作る場合は、ファビコンを単色アイコンにするようにしている。
+Slackアプリ一つ目。プロフィール画像をパステルグリーンにしている。
+Slackアプリ二つ目。プロフィール画像をパステルピンクにしている。
+Webアプリの例。ファビコンの色をパステルイエローにしている
+データを取り扱う仕事は専門職だ。専門職というのはほかの職種から見たらとっつきづらく、「何をやっているのかよくわからない」集団だと思われがちだ。弁護士とかもたぶんそうなんだと思う。
+だからこそ、統一的なシンボルを作る。アーマードコアVIの中で「レイブン」の名前が自由意志の象徴であるのと同じように。緑と白と赤の要素があればなんかイタリアっぽくなるのと同じように。
+象徴が象徴たりうるのは、一貫性をもって反復的に利用される場合に限られる。一貫して、反復して単色アイコンを利用する。そうすれば、社内のユーザーは「単色アイコン」それ自体をデータの象徴として認識してくれる。
+BotやWebアプリケーションならスケールするし、多くの人の目に触れられる。我らここにあり、ということになる。専門職特有のとっつき辛さも、多少はましになってくれるんじゃないだろうか。なってくれてるといいな。
+*1:business.nikkei.com]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[23/10/16 2023年7～9月消費コンテンツ]]></title>
         <id>hatenablog://entry/820878482971058831</id>
