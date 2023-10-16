@@ -4697,21 +4697,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230729/20230729140046.jpg"
-        },
-        {
-          "id": "hatenablog://entry/820878482951102567",
-          "author": null,
-          "description": "SwiftUIで作るiOSアプリで、画像を選択し、その画像をどこかにアップロードしたい。アップロード先がHEICに対応してないのでJPEG/PNGあたりのフォーマットでやりたい。\nこれを考えたとき、iOS 16.0+ ならPhotosPickerが使える。が、実際に選択したあとでどうやってJPEG/PNGのデータを取り出すかにだいぶ悩んだのでメモっておく。他にもっとマトモな方法ないの? と思っている。\nPhotosPickerを使う\nこれは既存のビューでボタンを押すとシートで下から出てくる感じにしたかったので、こんなコードをざっと書けばよい。これは1枚だけ選ばせたい場合で、複数枚選ばせたい場合は呼び出しのシグネチャが少し変わるのに注意。\n@State var isPickingPhoto: Bool = false\n@State var selectedPhotoItem: PhotosPickerItem? = nil\n\nvar body: some View {\n    AnyView()\n    .sheet(isPresented: $isPickingPhoto) {\n        PhotosPicker(\n            selection: $selectedPhotoItem,\n            matching: .images,\n            preferredItemEncoding: .current,\n            label: { Text(\"Choose your profile image\") }\n        )\n        .onChange(of: selectedPhotoItem) { photoItem in\n            guard let photoItem else {\n…",
-          "link": "https://tagomoris.hatenablog.com/entry/2023/07/19/170838",
-          "publishedOn": "2023-07-19T08:08:38.000Z",
-          "wordCount": 859,
-          "title": "SwiftUI PhotosPickerで選択した項目からJPEG/PNGを取り出す",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
