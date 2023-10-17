@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-17T04:01:58.804Z</updated>
+    <updated>2023-10-17T05:01:43.635Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[TCP/IP スタックを自作する]]></title>
+        <id>hatenablog://entry/6801883189050654173</id>
+        <link href="https://yasukata.hatenablog.com/entry/2023/10/17/133728"/>
+        <updated>2023-10-17T04:37:28.000Z</updated>
+        <summary type="html"><![CDATA[最近、TCP/IP スタックを自作しており、少し動くようになってきたので、それについて記事にしてみようと思いました。
+主に、ポータブル（特定の CPU、NIC、OS、ライブラリ、コンパイラ機能に依存しない）かつマルチコア環境で利用できる実装があればいいなと思ったことが、モチベーションになっています。
+まだ実装の途中ではありますが、ソースコードは GitHub に置いてありますので、よろしければお試しください。
+GitHub - yasukata/iip: iip: an integratable TCP/IP stackgithub.com
+モチベーション
+TCP/IP スタック実装はインターネット上でいくつか見つけることができるのですが、それらの多くが可搬性についてあまり意識されておらず、込み入ったことをしようと思うと取り回しが良くない、というような印象を持っていました。
+具体的には、既存の多くの TCP/IP スタック実装が、
+特定の OS、ライブラリやネットワーク I/O 機能の実装（例えば tap デバイスや DPDK 等）に依存し、
+更に、内部でそれらを利用するためのサブシステムが独自に実装されており、かつ、それらが外部から隠蔽されている
+また、TCP/IP スタック実装に、TCP/IP スタックの処理を実行するスレッドが含まれている
+結果として、
+他のシステムとの統合・コンパイルそのものが難しい場合がある
+機能の隠蔽により、最適化がしにくくなる場合がある
+TCP/IP のプロトコル処理を行うスレッドの実行形式が限定されてしまう
+ということがあると思いました。
+１. 他のシステムとの統合・コンパイルそのものが難しい場合がある
+例えば、ある TCP/IP スタック実装を、pthread （カーネルによって管理されるスレッド）をユーザー空間スレッドに置き換えるようなア…]]></summary>
+        <author>
+            <name>かーねるさんとか</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[17.0.0でbrickする問題の回避策実装 Atmosphère 1.6.1 prerelease(7f4450f93)]]></title>
         <id>https://gamegaz.com/?p=39661</id>
