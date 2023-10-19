@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-19T04:01:54.146Z</updated>
+    <updated>2023-10-19T05:02:14.845Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AWS 内で大規模言語モデルを利用できる Amazon Bedrock を使って作る RAG アプリケーション]]></title>
+        <id>hatenablog://entry/6801883189051716186</id>
+        <link href="https://techlife.cookpad.com/entry/bedrock"/>
+        <updated>2023-10-19T04:48:02.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。機械学習グループの深澤(@fukkaa1225)です。
+先日、Amazon Bedrock が一般利用できるよう(GA)になりました 。本記事ではこちらを用いて RAG(Retrieval-augmented generation) アプリケーションを作成してみた様子と、他 LLM モデルとの比較結果についてご紹介します。
+Amazon Bedrock とは
+aws.amazon.com
+公式サイトより文言を引用します。
+Amazon Bedrock は、Amazon や主要な AI スタートアップ企業が提供する基盤モデル (FM) を API を通じて利用できるようにする完全マネージド型サービスです。そのため、さまざまな FM から選択して、ユースケースに最も適したモデルを見つけることができます。Amazon Bedrock のサーバーレスエクスペリエンスにより、すぐに FM を開始したり、FM を簡単に試したり、独自のデータを使用して FM をプライベートにカスタマイズしたり、AWS のツールや機能を使用して FM をアプリケーションにシームレスに統合してデプロイしたりできます。Amazon Bedrock のエージェントはフルマネージド型で、デベロッパーは独自の知識源に基づいて最新の回答を提供し、幅広いユースケースのタスクを完了できる生成系 AI アプリケーションを簡単に作成できます。
+
+
+殆どの企業にとって、現時点で LLM を使うときには OpenAI が提供する GPT-3.5-turbo, GPT-4 を使うことがほぼ唯一の選択肢になっているかと思います。弊社も GPT シリーズの API を活用して社内版 ChatGPT を展開しています。
+一方で、OpenAI を用いる上でいくつか考えなくてはならない問題もあります。例えば、権限管理が API …]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[#16 ストローの先端に刺さった袋のように]]></title>
         <id>https://note.com/kazumakawauchi/n/n981759302697</id>
