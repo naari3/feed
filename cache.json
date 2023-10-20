@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189052078956",
+          "author": null,
+          "description": "現実逃避にlsdjをGBAに鳴らすツールを作成しました。失敗する曲もあるので何かしらバグってるとは思うのですけど、そこまでは考えるのをやめました。何やってるんでしょう自分。\n仕組みは改造GBエミュをDOS上で動かし、ログを吐き出します。そのログをGBAで使おうという話です。MAMEでVGMのログを取るのはGUIですが、こちらはCUIにしましたーというぐらいの違いしかありません。\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2023/10/20/203301",
+          "publishedOn": "2023-10-20T11:33:01.000Z",
+          "wordCount": 394,
+          "title": "lsdj2gba",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189050438476",
           "author": null,
           "description": "フォアナイン製System-98エンジンを作成中です・・・。変数処理、ジャンプ系はちゃんと実装して描画系は全部カット。たぶんスクリプト容量を半分以下に減らせるんじゃないかなと思っています。集中力がすぐ途切れるし、足しては消してはいつものこと。。気長にやるしかないですね。。\n\nそういえばなぜカナンを移植したいのかというと自分のゲームベスト３位以内に入るものだからです。たぶんプレイする時期もよかったと思います。暇な学生時代でしたし。X-GAME STATION（閉鎖）さんのページで高得点なのを目にして興味が湧いたのが最初のきっかけです。今はストーリもすっかり忘れていて思い出で語るとしたらどうなんだろう・・・プレイしてよかった、とても満足した、という充実感しか残っていないです。たぶんカナンは会話シーンと各キャラクタの関係性が心地いいんだと思います。",
@@ -2070,6 +2085,21 @@
       "feedUrl": "https://honeylab.hatenablog.jp/rss",
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6801883189052079624",
+          "author": null,
+          "description": "honeylab.hatenablog.jp\n前回までの記事で、JAM機能のためのリアルタイムコード送信からコードを拾う方法を実現しましたが、やはりこれだと再生実時間がかかる、テンポが取得できない、\n再生カーソルにある位置のコードが出力されるので、動かすとそれが出てしまう、という欠点がありました。\n「楽譜送信」機能さえ掴んでしまえば…と悩んで数日、\nありとあらゆる手を尽くして「楽譜送信」プロトコルを掌握し、\n標準MIDIファイルとして送信されるデータから店舗とコード進行をデコードすることに成功しました！！\n \nこのプロトコル、内部的には「MSD」と呼ばれるプロトコルで、『Yamaha SongDownloader』というソフトを使ってPCとキーボードを接続するときに使われるモノらしいです。\nとっかかりとして、こちらのブログで一部が解析されていたSysExの続きを必殺逆アセゲフンゲフンと試行錯誤で突破したモノです。\nhttps://sandsoftwaresound.net/hidden-arranger-smarts-file-system-sysex/\nAndroid,iOSのアプリなのでBLEoverMIDIが使われていて、実装先もiOSなので、\n始めたばかりのSwiftUIも含めて勉強することになってなかなかよいトレーニングになりました。\nリアルタイムコード取得にのみ対応したバージョンのiOSアプリをリリースしたばかりですが…\n\n\nCT Receiver\nHiromitsu Niituma\nミュージック\n無料\n\napps.apple.com\nコード正解率に定評があり愛用者の多いChordTracker、便利なのにコード書き出し機能が無い、どうやってもできない、鉛筆で書き写すしかなかったソフトからコードデータを拾ってテキスト化する非公式アプリができました。\n今のうちなら機能追加ができるのでなんかあったらコメントください。 pic.twitter.com/aqRwrZ9uRc\n2023年10月13日\n\n\n \nこの成果を生かした楽譜ごと転送、コード譜作成機能を実装した新バージョンを早いうちにリリースしたいと思っています。\nこのバージョン、意味がわからないぐらい手間をかけたので、\n耳コピとコード譜作成の時間をゴリっと圧縮するので、その分を何らかの形で課金していただく、というふうにしたいと思っています。\n \n練習も兼ねて、広告課金＋app内課金、ただし、一日に一曲ぐらいは使える、といった形でやればアプリの使い方もわかるし、払いたくなければ制限内で使ってもらえれば。\n \n新バージョンの動作風景はこちら（UIは変更される予定です）\nChordTracker完全に制圧した\n曲の読み込みからコード譜印刷まで1分だ！ pic.twitter.com/1Xu47NsPCb\n2023年10月20日\n\n\n早いでしょ？？？使えるでしょ？？？",
+          "link": "https://honeylab.hatenablog.jp/entry/2023/10/20/203548",
+          "publishedOn": "2023-10-20T11:35:48.000Z",
+          "wordCount": 519,
+          "title": "ChordTracker完全掌握",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/e69ab7fcfa14dd408ef97ee322f13a3edb275408/enlarge=0;height=200;version=1;width=200/https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple116%2Fv4%2F7c%2Fef%2Fd8%2F7cefd879-a686-3dcf-4318-0b7b9ee3e058%2FAppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png%2F100x100bb.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e69ab7fcfa14dd408ef97ee322f13a3edb275408/enlarge=0;height=200;version=1;width=200/https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple116%2Fv4%2F7c%2Fef%2Fd8%2F7cefd879-a686-3dcf-4318-0b7b9ee3e058%2FAppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png%2F100x100bb.jpg"
+        },
         {
           "id": "hatenablog://entry/6801883189050115164",
           "author": null,
@@ -7701,16 +7731,6 @@
           "wordCount": 2383,
           "title": "デバッグルームのような店",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/111551450/rectangle_large_type_2_2eb74564936798974e44ed773d8859af.png?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n7f007152d93b",
-          "author": null,
-          "description": "",
-          "link": "https://note.com/sizes/n/n7f007152d93b",
-          "publishedOn": "2023-07-22T23:37:48.000Z",
-          "wordCount": null,
-          "title": "今日で24歳になりました",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/111465511/rectangle_large_type_2_2e827ebbe1ddc9039d6598f429f6101e.png?width=800"
         }
       ]
     },
@@ -7790,16 +7810,6 @@
           "wordCount": null,
           "title": "M-1グランプリに出れませんでした",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/113977115/rectangle_large_type_2_e73a0482d16bc0ad7674ca2cd65964dd.png?width=800"
-        },
-        {
-          "id": "https://note.com/ssaymds/n/n1df5c2f543cc",
-          "author": null,
-          "description": "どうせ死ぬのに毎回フードコートで席についてからお冷とおしぼりの取り忘れに気づくみなさんこんにちは\n\n\n続きをみる",
-          "link": "https://note.com/ssaymds/n/n1df5c2f543cc",
-          "publishedOn": "2023-07-22T23:46:32.000Z",
-          "wordCount": null,
-          "title": "新型コロナウイルスに関する正しい情報",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/111463851/rectangle_large_type_2_baa257a98e8822a9d54ed394d4df7185.png?width=800"
         }
       ]
     },
@@ -10272,16 +10282,6 @@
           "publishedOn": "2023-07-23T03:31:09.000Z",
           "wordCount": null,
           "title": "本物？PS5のリモートプレイ専用携帯機Project Qリーク",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39074",
-          "author": "mamosuke",
-          "description": "PS5の高性能版と言われているPS5 Proは2024年11月発売が計画されているようです。→→→この記事の続きを読む\nPlayStation 5 Proはコードネーム”Project Trinity” 2024年11月か first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023072339074/",
-          "publishedOn": "2023-07-22T23:03:51.000Z",
-          "wordCount": null,
-          "title": "PlayStation 5 Proはコードネーム”Project Trinity” 2024年11月か",
           "imageUrl": null
         }
       ]

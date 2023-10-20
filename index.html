@@ -78,6 +78,87 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
+              rel="noopener">honeylab&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ChordTracker完全掌握</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2023/10/20/203548" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>honeylab.hatenablog.jp
+前回までの記事で、JAM機能のためのリアルタイムコード送信からコードを拾う方法を実現しましたが、やはりこれだと再生実時間がかかる、テンポが取得できない、
+再生カーソルにある位置のコードが出力されるので、動かすとそれが出てしまう、という欠点がありました。
+「楽譜送信」機能さえ掴んでしまえば…と悩んで数日、
+ありとあらゆる手を尽くして「楽譜送信」プロトコルを掌握し、
+標準MIDIファイルとして送信されるデータから店舗とコード進行をデコードすることに成功しました！！
+ 
+このプロトコル、内部的には「MSD」と呼ばれるプロトコルで、『Yamaha SongDownloader』というソフトを使ってPCとキーボードを接続するときに使われるモノらしいです。
+とっかかりとして、こちらのブログで一部が解析されていたSysExの続きを必殺逆アセゲフンゲフンと試行錯誤で突破したモノです。
+https://sandsoftwaresound.net/hidden-arranger-smarts-file-system-sysex/
+Android,iOSのアプリなのでBLEoverMIDIが使われていて、実装先もiOSなので、
+始めたばかりのSwiftUIも含めて勉強することになってなかなかよいトレーニングになりました。
+リアルタイムコード取得にのみ対応したバージョンのiOSアプリをリリースしたばかりですが…
+
+
+CT Receiver
+Hiromitsu Niituma
+ミュージック
+無料
+
+apps.apple.com
+コード正解率に定評があり愛用者の多いChordTracker、便利なのにコード書き出し機能が無い、どうやってもできない、鉛筆で書き写すしかなかったソフトからコードデータを拾ってテキスト化する非公式アプリができました。
+今のうちなら機能追加ができるのでなんかあったらコメントください。 pic.twitter.com/aqRwrZ9uRc
+2023年10月13日
+
+
+ 
+この成果を生かした楽譜ごと転送、コード譜作成機能を実装した新バージョンを早いうちにリリースしたいと思っています。
+このバージョン、意味がわからないぐらい手間をかけたので、
+耳コピとコード譜作成の時間をゴリっと圧縮するので、その分を何らかの形で課金していただく、というふうにしたいと思っています。
+ 
+練習も兼ねて、広告課金＋app内課金、ただし、一日に一曲ぐらいは使える、といった形でやればアプリの使い方もわかるし、払いたくなければ制限内で使ってもらえれば。
+ 
+新バージョンの動作風景はこちら（UIは変更される予定です）
+ChordTracker完全に制圧した
+曲の読み込みからコード譜印刷まで1分だ！ pic.twitter.com/1Xu47NsPCb
+2023年10月20日
+
+
+早いでしょ？？？使えるでしょ？？？</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/e69ab7fcfa14dd408ef97ee322f13a3edb275408/enlarge&#x3D;0;height&#x3D;200;version&#x3D;1;width&#x3D;200/https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple116%2Fv4%2F7c%2Fef%2Fd8%2F7cefd879-a686-3dcf-4318-0b7b9ee3e058%2FAppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png%2F100x100bb.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">lsdj2gba</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2023/10/20/203301" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>現実逃避にlsdjをGBAに鳴らすツールを作成しました。失敗する曲もあるので何かしらバグってるとは思うのですけど、そこまでは考えるのをやめました。何やってるんでしょう自分。
+仕組みは改造GBエミュをDOS上で動かし、ログを吐き出します。そのログをGBAで使おうという話です。MAMEでVGMのログを取るのはGUIですが、こちらはCUIにしましたーというぐらいの違いしかありません。
+github.com</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -19508,74 +19589,6 @@ SQLをたたけば集計はできる。でも毎日SQLを書くのは面倒く�
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2023-07-22">2023-07-22</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/ssaymds" target="_blank"
-              rel="noopener">ておつく</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">新型コロナウイルスに関する正しい情報</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/ssaymds/n/n1df5c2f543cc" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>どうせ死ぬのに毎回フードコートで席についてからお冷とおしぼりの取り忘れに気づくみなさんこんにちは
-
-
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/111463851/rectangle_large_type_2_baa257a98e8822a9d54ed394d4df7185.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
-              rel="noopener">自由さ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">今日で24歳になりました</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n7f007152d93b" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>No content preview</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/111465511/rectangle_large_type_2_2e827ebbe1ddc9039d6598f429f6101e.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">PlayStation 5 Proはコードネーム”Project Trinity” 2024年11月か</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2023072339074/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PS5の高性能版と言われているPS5 Proは2024年11月発売が計画されているようです。→→→この記事の続きを読む
-PlayStation 5 Proはコードネーム”Project Trinity” 2024年11月か first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2023-06-09">2023-06-09</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -21356,7 +21369,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-10-20T11:02:03.391Z">2023-10-20T11:02:03.391Z</time>
+    <time id="build-timestamp" datetime="2023-10-20T12:02:51.704Z">2023-10-20T12:02:51.704Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
