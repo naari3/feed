@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-20T17:02:18.810Z</updated>
+    <updated>2023-10-20T18:02:25.474Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13785,40 +13785,6 @@ GameGaz Daily 2023.7.23 first appeared on 大人のためのゲーム講座.]]><
 The post トラックがいっぱい REAPERでの5.1chオーディオの使い方 first appeared on YTPMV.info.]]></summary>
         <author>
             <name>maimai</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[dbt Cloud, BigQuery, Looker Studioで始めるお手軽データ基盤【個人サービス向け】]]></title>
-        <id>hatenablog://entry/820878482952079766</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2023/07/23/144135"/>
-        <updated>2023-07-23T05:41:35.000Z</updated>
-        <summary type="html"><![CDATA[最終的にできたもの。このレポートが毎朝送られるようになる。
-何がしたいのか？
-基盤概要
-各種コンポーネントについて
-Cloud Functions
-BigQuery
-Wordpressのデータモデリングとdbt Cloud
-Wordpressのデータモデリングを理解する
-Looker Studio
-まとめ
-何がしたいのか？
-個人でサービスを作って運営していると、ユーザーのアクティビティが日次でどの程度あるのか知りたくなるのが人の性だろう。自分も健常者エミュレータ事例集というサービスを運営していて、投稿数がどの程度なのか、コメント数がどの程度なのかをできれば毎日知りたい。
-文化祭でゲイポルノビデオ作品を切り貼りしたポスターを作ってはいけない - 健常者エミュレータ事例集 学校
-SQLをたたけば集計はできる。でも毎日SQLを書くのは面倒くさい。だから、業務で培った知識をもとに「データ基盤」を作ることにした。
-まずはやりたいことを言語化してみる。
-「健常者エミュレータ事例集」（自分でやってる個人サービス）の日次の投稿数とかコメント数とかいいね・よくないね数を知りたい
-レポーティングまで自動化してほしい。自分で知りに行くのは面倒なので、プッシュで通知してほしい。
-コストはかけたくない
-この記事では、上記のようなわがまま要件を満たすようなお手軽データ基盤を作った時の記録である。まずは基盤の全体像について説明したのち、個々のコンポーネントの詳細に入って説明してく。同様の基盤を作ろうとするエンジニアの参考になれば幸いである。
-基盤概要
-ざっくりと概要を文字起こしする。
-まず、Cloud FunctionsでLightsailインスタンス上で動いているMySQLにアクセスし、データを取り出し、BigQueryに格納する
-
-
-この際、INFORMATION_SCHEMAを利用する形で、すべて…]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>

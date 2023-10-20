@@ -1751,21 +1751,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482952079766",
-          "author": null,
-          "description": "最終的にできたもの。このレポートが毎朝送られるようになる。\n何がしたいのか？\n基盤概要\n各種コンポーネントについて\nCloud Functions\nBigQuery\nWordpressのデータモデリングとdbt Cloud\nWordpressのデータモデリングを理解する\nLooker Studio\nまとめ\n何がしたいのか？\n個人でサービスを作って運営していると、ユーザーのアクティビティが日次でどの程度あるのか知りたくなるのが人の性だろう。自分も健常者エミュレータ事例集というサービスを運営していて、投稿数がどの程度なのか、コメント数がどの程度なのかをできれば毎日知りたい。\n文化祭でゲイポルノビデオ作品を切り貼りしたポスターを作ってはいけない - 健常者エミュレータ事例集 学校\nSQLをたたけば集計はできる。でも毎日SQLを書くのは面倒くさい。だから、業務で培った知識をもとに「データ基盤」を作ることにした。\nまずはやりたいことを言語化してみる。\n「健常者エミュレータ事例集」（自分でやってる個人サービス）の日次の投稿数とかコメント数とかいいね・よくないね数を知りたい\nレポーティングまで自動化してほしい。自分で知りに行くのは面倒なので、プッシュで通知してほしい。\nコストはかけたくない\nこの記事では、上記のようなわがまま要件を満たすようなお手軽データ基盤を作った時の記録である。まずは基盤の全体像について説明したのち、個々のコンポーネントの詳細に入って説明してく。同様の基盤を作ろうとするエンジニアの参考になれば幸いである。\n基盤概要\nざっくりと概要を文字起こしする。\nまず、Cloud FunctionsでLightsailインスタンス上で動いているMySQLにアクセスし、データを取り出し、BigQueryに格納する\n\n\nこの際、INFORMATION_SCHEMAを利用する形で、すべて…",
-          "link": "https://contradiction29.hatenablog.com/entry/2023/07/23/144135",
-          "publishedOn": "2023-07-23T05:41:35.000Z",
-          "wordCount": 678,
-          "title": "dbt Cloud, BigQuery, Looker Studioで始めるお手軽データ基盤【個人サービス向け】",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230723/20230723134853.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230723/20230723134853.jpg"
         }
       ]
     },
