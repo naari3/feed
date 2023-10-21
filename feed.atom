@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-21T14:02:12.541Z</updated>
+    <updated>2023-10-21T15:01:55.810Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[データアナリストからアナリティクスエンジニアへ：スキルギャップと克服]]></title>
+        <id>hatenablog://entry/6801883189052341955</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2023/10/21/232549"/>
+        <updated>2023-10-21T14:25:49.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+前にも書いたが、「アナリティクスエンジニア」を採用するのは難しい。そもそもアナリティクスエンジニアの知名度が低いし、スキルを持っている人が採用市場に少ない。
+しかしニーズはある。以下のようなケースでは、アナリティクスエンジニアはかなりほしい人材だ。
+会社全体でデータ分析に対するニーズが高い場合
+例えば、競争環境の激しいマーケットを相手にしている状況など
+この場合、データに対する需要をアナリスト単体では満たすことができなくなるため、ダッシュボードを利用して分析環境をスケールさせるのが常套手段になる
+この段階でテーブル設計・パイプライン設計が行われるため、アナリティクスエンジニアの出番となる
+定常的なデータ分析が求められている場合
+日時でKPIを見る場合など、分析がパターン化できそうな場合
+アドホックにやるのが面倒になってきたタイミングでテーブル設計・パイプライン設計が行われるため、アナリティクスエンジニアの出番となる
+しかしニーズのわりに供給が足りていない。解決策をどうするかというと、パターンは2つある。
+データエンジニアを採用し、アナリティクスエンジニアを兼務してもらう
+データアナリストを採用し、アナリティクスエンジニアに育成する
+1については別の話なので一度置いておきたい。2について、自分は今まで小規模なチームでアナリティクスエンジニアの育成に一枚くらい噛んでいたので、いくつか知見がたまってきた。その知見を共有したいと思う。対象読者としては、今はデータアナリストをやっているが、アナリティクスエンジニアに興味が出ている方を想定している。
+はじめに
+そもそも「アナリティクスエンジニア」って何？
+What is analytics engineering?
+求人票を見てみる
+データアナリストからアナリティクスエンジニアになる際のスキルギャップ
+変更フローがわからない
+…]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[23/10/21 就活に苦しむインテリの学生に社会の真実を教える]]></title>
         <id>hatenablog://entry/6801883189052219978</id>
@@ -13623,59 +13653,6 @@ kame7802kame.h…]]></summary>
 PS5か海外で値下げ ドライブレスモデル発売前の在庫整理か first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[今週のはてなブログランキング〔2023年7月第4週〕]]></title>
-        <id>hatenablog://entry/820878482952303888</id>
-        <link href="https://blog.hatenablog.com/entry/2023/07/24/120000"/>
-        <updated>2023-07-24T03:00:00.000Z</updated>
-        <summary type="html"><![CDATA[はてなブログ独自の集計による人気記事のランキング。7月16日（日）から7月22日（土）〔2023年7月第4週〕のトップ30です*1。
-#
-    タイトル／著者とブックマーク
-    
-1
-    ROLLYのブチ切れ案件についてロックファンからの補助線（訂正・修正とお詫びあり） - はてブの出来事
- by id:Shin-Fedor 
-    
-2
-    あだち充『タッチ』を精読する。浅倉南はほんとうは何を考えていたのか。
- by id:kaien 
-    
-3
-    『ソフトウェア設計のトレードオフと誤り』を読んで、”日付や時刻”を扱うことの難しさについて考えた - Magnolia Tech
- by id:magnoliak 
-    
-4
-    宮﨑駿『君たちはどう生きるか』 - 青春ゾンビ
- by id:hiko1985 
-    
-5
-    twitterが自治体の情報発信として使えなくなったらnoteの時代がやってくる。 - orangestar2
- by id:orangestar 
-    
-6
-    漫画『スキップとローファー』のように俺も親友と「HUG…」したい人生だった - kansou
- by id:ikdhkr 
-    
-7
-    夏目漱石『こころ』の K はなぜ先生をぶん殴り車夫にならなかったのか - 山下泰平の趣味の方法
- by id:cocolog-nifty 
-    
-8
-    OSSすぐ死ぬ - kmuto’s blog
- by id:kmuto 
-    
-9
-    【映画感想】君たちはどう生きるか ☆☆☆☆ - 琥珀色の戯言
- by id:fujipon 
-    
-10
-    #マツダ #ロードスターRF を衝動買いしたい衝動をみんなにお裾分けして俺自身は我慢したい - #AQM
- by id:AQM 
- …]]></summary>
-        <author>
-            <name>週刊はてなブログ</name>
         </author>
     </entry>
     <entry>

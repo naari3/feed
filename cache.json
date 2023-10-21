@@ -1204,21 +1204,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/makoto1410/20230724/20230724123013.jpg"
-        },
-        {
-          "id": "hatenablog://entry/820878482952303888",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。7月16日（日）から7月22日（土）〔2023年7月第4週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    ROLLYのブチ切れ案件についてロックファンからの補助線（訂正・修正とお詫びあり） - はてブの出来事\n by id:Shin-Fedor \n    \n2\n    あだち充『タッチ』を精読する。浅倉南はほんとうは何を考えていたのか。\n by id:kaien \n    \n3\n    『ソフトウェア設計のトレードオフと誤り』を読んで、”日付や時刻”を扱うことの難しさについて考えた - Magnolia Tech\n by id:magnoliak \n    \n4\n    宮﨑駿『君たちはどう生きるか』 - 青春ゾンビ\n by id:hiko1985 \n    \n5\n    twitterが自治体の情報発信として使えなくなったらnoteの時代がやってくる。 - orangestar2\n by id:orangestar \n    \n6\n    漫画『スキップとローファー』のように俺も親友と「HUG…」したい人生だった - kansou\n by id:ikdhkr \n    \n7\n    夏目漱石『こころ』の K はなぜ先生をぶん殴り車夫にならなかったのか - 山下泰平の趣味の方法\n by id:cocolog-nifty \n    \n8\n    OSSすぐ死ぬ - kmuto’s blog\n by id:kmuto \n    \n9\n    【映画感想】君たちはどう生きるか ☆☆☆☆ - 琥珀色の戯言\n by id:fujipon \n    \n10\n    #マツダ #ロードスターRF を衝動買いしたい衝動をみんなにお裾分けして俺自身は我慢したい - #AQM\n by id:AQM \n …",
-          "link": "https://blog.hatenablog.com/entry/2023/07/24/120000",
-          "publishedOn": "2023-07-24T03:00:00.000Z",
-          "wordCount": 951,
-          "title": "今週のはてなブログランキング〔2023年7月第4週〕",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230724/20230724092930.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230724/20230724092930.jpg"
         }
       ]
     },
@@ -1632,6 +1617,21 @@
       "feedUrl": "https://contradiction29.hatenablog.com/rss",
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6801883189052341955",
+          "author": null,
+          "description": "はじめに\n前にも書いたが、「アナリティクスエンジニア」を採用するのは難しい。そもそもアナリティクスエンジニアの知名度が低いし、スキルを持っている人が採用市場に少ない。\nしかしニーズはある。以下のようなケースでは、アナリティクスエンジニアはかなりほしい人材だ。\n会社全体でデータ分析に対するニーズが高い場合\n例えば、競争環境の激しいマーケットを相手にしている状況など\nこの場合、データに対する需要をアナリスト単体では満たすことができなくなるため、ダッシュボードを利用して分析環境をスケールさせるのが常套手段になる\nこの段階でテーブル設計・パイプライン設計が行われるため、アナリティクスエンジニアの出番となる\n定常的なデータ分析が求められている場合\n日時でKPIを見る場合など、分析がパターン化できそうな場合\nアドホックにやるのが面倒になってきたタイミングでテーブル設計・パイプライン設計が行われるため、アナリティクスエンジニアの出番となる\nしかしニーズのわりに供給が足りていない。解決策をどうするかというと、パターンは2つある。\nデータエンジニアを採用し、アナリティクスエンジニアを兼務してもらう\nデータアナリストを採用し、アナリティクスエンジニアに育成する\n1については別の話なので一度置いておきたい。2について、自分は今まで小規模なチームでアナリティクスエンジニアの育成に一枚くらい噛んでいたので、いくつか知見がたまってきた。その知見を共有したいと思う。対象読者としては、今はデータアナリストをやっているが、アナリティクスエンジニアに興味が出ている方を想定している。\nはじめに\nそもそも「アナリティクスエンジニア」って何？\nWhat is analytics engineering?\n求人票を見てみる\nデータアナリストからアナリティクスエンジニアになる際のスキルギャップ\n変更フローがわからない\n…",
+          "link": "https://contradiction29.hatenablog.com/entry/2023/10/21/232549",
+          "publishedOn": "2023-10-21T14:25:49.000Z",
+          "wordCount": 612,
+          "title": "データアナリストからアナリティクスエンジニアへ：スキルギャップと克服",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/6801883189050966423",
           "author": null,
