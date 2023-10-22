@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-22T11:02:31.147Z</updated>
+    <updated>2023-10-22T12:02:35.949Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13591,38 +13591,6 @@ BDドライブ外付けPS5はPS5 Slimではない？その新型 サイズはあ
 GameGaz Daily 2023.7.25 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[iOS画像非同期取得]]></title>
-        <id>hatenablog://entry/820878482952300372</id>
-        <link href="https://techlife.cookpad.com/entry/2023/07/25/090000"/>
-        <updated>2023-07-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、モバイル基盤のヴァンサン(@vincentisambart)です。
-半年くらい前に、iOSクックパッドアプリで画像非同期取得を自作することになりました。導入してから何ヶ月も問題なく動いているので、どう動いているのか紹介しようと思います。でもその前に自作することになった経緯を説明しましょう。
-自作経緯
-長年画像非同期取得に既存のライブラリを使っていましたが、昨年ライブラリの不具合で画像の取得が稀に失敗していたバグがいくつかありました。バグが修正されて、その数ヶ月後にまた似た問題。
-この状態が好ましくなかったので、以下の選択肢のどれかにしようと議論しました。
-使っているライブラリのメンテナンスにもっと直接参加する
-
-
-コードが古くメンテナンスしやすくなさそうでした。
-使っているライブラリのバージョンを固定する
-
-
-自動的に更新をやめても、バグ修正や最新のOSの対応のために定期的に更新した方が良いでしょう。
-別のライブラリにするか
-
-
-選定が難しいでしょう。例えばアプリをリリースしないとライブラリの安定性が判断しづらいです。
-自作するか
-ライブラリを使っていたものの、複雑な機能は使っていませんでした。必要だったのは画像のダウンロード、キャッシュ、WebP対応、くらいです。
-クックパッドでモバイルアプリの画像はWebPを使っているので、画像取得を自作することになっても、WebP読み込みにライブラリが必要だと思っていました。でも議論中に、iOS 14以降UIImageがWebPを読み込めるのが発覚しました。その時点で最新のiOSクックパッドアプリの最小サポートバージョンはすでにiOS 15でした。
-画像ダウンロードとキャッシュだけが必要なら自作してみても良いかもという結論になりました。
-実装
-経緯の次は実装の詳細を説明しようと思います。その中で、まずは一番複雑そうなキャッ…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
