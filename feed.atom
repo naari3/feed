@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-23T13:03:41.524Z</updated>
+    <updated>2023-10-23T14:02:01.527Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[移植9]]></title>
+        <id>hatenablog://entry/6801883189052900990</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/10/23/224220"/>
+        <updated>2023-10-23T13:42:20.000Z</updated>
+        <summary type="html"><![CDATA[動いたけど早速バグってるー。これからが長いんです・・・。
+$ ./scn2txt cs01_02.scn
+scn2txt... cs01_02.scn
+[0100][000A] JP
+[010A][000C] CMPI 0 0 0
+[0110][0012] JNE
+[0114][0018] MOVI i187 1
+[011A][000A] JP
+[025E][0054] CALL
+[0018][0000] DOSEXIT]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[normalize.fm #50 付録]]></title>
+        <id>/?p=6647</id>
+        <link href="https://baku89.com/2023/10/23/normalizefm-appendix"/>
+        <updated>2023-10-23T13:20:28.000Z</updated>
+        <summary type="html"><![CDATA[Web業界だと知らない方は居ないであろうdoxasさんによるPodcast『normalize.fm』にお呼び頂いた。出演、というより、感覚としてはDiscordでの作業通話ではあったけれど。映像と同じく、考えについても […]]]></summary>
+        <author>
+            <name>mugi</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Merpay &#038; Mercoin Tech Fest 2023 セッション書き起こしまとめ]]></title>
         <id>https://engineering.mercari.com/blog/entry/20231023-mmtf2023-list/</id>

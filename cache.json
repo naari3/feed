@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189052900990",
+          "author": null,
+          "description": "動いたけど早速バグってるー。これからが長いんです・・・。\n$ ./scn2txt cs01_02.scn\nscn2txt... cs01_02.scn\n[0100][000A] JP\n[010A][000C] CMPI 0 0 0\n[0110][0012] JNE\n[0114][0018] MOVI i187 1\n[011A][000A] JP\n[025E][0054] CALL\n[0018][0000] DOSEXIT",
+          "link": "https://akkera102.hatenablog.com/entry/2023/10/23/224220",
+          "publishedOn": "2023-10-23T13:42:20.000Z",
+          "wordCount": 418,
+          "title": "移植9",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189052078956",
           "author": null,
           "description": "現実逃避にlsdjをGBAに鳴らすツールを作成しました。失敗する曲もあるので何かしらバグってるとは思うのですけど、そこまでは考えるのをやめました。何やってるんでしょう自分。\n仕組みは改造GBエミュをDOS上で動かし、ログを吐き出します。そのログをGBAで使おうという話です。MAMEでVGMのログを取るのはGUIですが、こちらはCUIにしましたーというぐらいの違いしかありません。\ngithub.com",
@@ -8210,7 +8225,18 @@
       "title": "麦 Baku",
       "feedUrl": "https://baku89.com/feed",
       "siteUrl": "https://baku89.com",
-      "articles": []
+      "articles": [
+        {
+          "id": "/?p=6647",
+          "author": "mugi",
+          "description": "Web業界だと知らない方は居ないであろうdoxasさんによるPodcast『normalize.fm』にお呼び頂いた。出演、というより、感覚としてはDiscordでの作業通話ではあったけれど。映像と同じく、考えについても […]",
+          "link": "https://baku89.com/2023/10/23/normalizefm-appendix",
+          "publishedOn": "2023-10-23T13:20:28.000Z",
+          "wordCount": 537,
+          "title": "normalize.fm #50 付録",
+          "imageUrl": "https://baku89.com/wp-content/uploads/2023/10/web-designing-scaled.jpg"
+        }
+      ]
     },
     {
       "title": "blog.jxck.io",
