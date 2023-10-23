@@ -8717,6 +8717,346 @@
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
         {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-list/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3日 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-list/",
+          "publishedOn": "2023-10-23T10:11:07.000Z",
+          "wordCount": 601,
+          "title": "Merpay &#038; Mercoin Tech Fest 2023 セッション書き起こしまとめ",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-11/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-11/",
+          "publishedOn": "2023-10-23T10:00:56.000Z",
+          "wordCount": 565,
+          "title": "【書き起こし】社内用GitHub Actionsのセキュリティガイドラインを作成した話 – Toshiki Kawamura【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-1/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-1/",
+          "publishedOn": "2023-10-23T10:00:54.000Z",
+          "wordCount": 599,
+          "title": "【書き起こし】Keynote – Shunya Kimura【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-4/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-4/",
+          "publishedOn": "2023-10-23T10:00:54.000Z",
+          "wordCount": 619,
+          "title": "【書き起こし】Merpay iOSのGroundUP Appへの移行 – kenmaz【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-10/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるEngineeringを知ることができるお祭りで、2023年8月22日（火）か […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-10/",
+          "publishedOn": "2023-10-23T10:00:53.000Z",
+          "wordCount": 516,
+          "title": "【書き起こし】Enabling ProgramのEngineering Headをちょっとやってみている – Masahiro Sano【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-8/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、Productやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）から […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-8/",
+          "publishedOn": "2023-10-23T10:00:53.000Z",
+          "wordCount": 490,
+          "title": "【書き起こし】Merpay Engineering Career Talk – Keigo Watanabe / Osamu Tonomori / Katsuhiro Ogawa【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-6/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-6/",
+          "publishedOn": "2023-10-23T10:00:48.000Z",
+          "wordCount": 503,
+          "title": "【書き起こし】SwiftUIでビットコインの価格チャートを改善・再実装した話 – andooown【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-12/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-12/",
+          "publishedOn": "2023-10-23T10:00:47.000Z",
+          "wordCount": 486,
+          "title": "【書き起こし】BigQueryのコンピューティングリソース管理の取り組み – Go Kojima【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-2/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-2/",
+          "publishedOn": "2023-10-23T10:00:45.000Z",
+          "wordCount": 489,
+          "title": "【書き起こし】拡張性を備えたソフトウェア設計 – Rupesh Agrawal【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-10/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-10/",
+          "publishedOn": "2023-10-23T10:00:44.000Z",
+          "wordCount": 473,
+          "title": "【書き起こし】BigQueryのデータ監視の社内サービスを作った話 – Hirobumi Takahashi【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-3/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-3/",
+          "publishedOn": "2023-10-23T10:00:42.000Z",
+          "wordCount": 536,
+          "title": "【書き起こし】メルコインにおけるシステム間のデータ分離を実現するための通信アーキテクチャ – Kohei Noda【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-6/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-6/",
+          "publishedOn": "2023-10-23T10:00:41.000Z",
+          "wordCount": 496,
+          "title": "【書き起こし】メルコイン決済基盤の実践話 – Junwei Liang【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-8/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-8/",
+          "publishedOn": "2023-10-23T10:00:37.000Z",
+          "wordCount": 478,
+          "title": "【書き起こし】メルペイMLにおける品質保証とリスク管理 – shuuk / haruki / yukis【MerFeatureay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-10/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-10/",
+          "publishedOn": "2023-10-23T10:00:35.000Z",
+          "wordCount": 481,
+          "title": "【書き起こし】日本におけるお客さま本人確認と今後の技術的課題 – Tim Tosi / Manpreet Kaur / Christophe Labonne 【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-5/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-5/",
+          "publishedOn": "2023-10-23T10:00:33.000Z",
+          "wordCount": 544,
+          "title": "【書き起こし】Merpay iOSにおけるSwift Concurrency対応の挫折と今後 – Takeshi Sato【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-3/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-3/",
+          "publishedOn": "2023-10-23T10:00:32.000Z",
+          "wordCount": 504,
+          "title": "【書き起こし】1週間リリースを支えるAndroid自動テスト運用のその後 – Kenta Takahashi / Shintaro Miyabe【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-8/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-8/",
+          "publishedOn": "2023-10-23T10:00:31.000Z",
+          "wordCount": 531,
+          "title": "【書き起こし】WYSIWYGウェブページビルダーを支える技術的マジックの裏側 – Hal Amano / Arvin Huang / Ben Hsieh / Jas Chen【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-1/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-1/",
+          "publishedOn": "2023-10-23T10:00:29.000Z",
+          "wordCount": 551,
+          "title": "【書き起こし】fake clock microservice -時刻をハックしてテストする方法- – vvakame / Hiraku Nakano / Hiroyuki Tanaka【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-7/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-7/",
+          "publishedOn": "2023-10-23T10:00:28.000Z",
+          "wordCount": 445,
+          "title": "【書き起こし】フロントエンドチームの技術課題評価システム改善の取り組み – tokuda109【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-3/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-3/",
+          "publishedOn": "2023-10-23T10:00:26.000Z",
+          "wordCount": 490,
+          "title": "【書き起こし】発行枚数100万枚を支えたメルカードGrowth施策の裏側 – kazuya / ksoichiro / mikael【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-4/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-4/",
+          "publishedOn": "2023-10-23T10:00:25.000Z",
+          "wordCount": 458,
+          "title": "【書き起こし】メルカードの常時ポイント還元開発の裏側 – keitaj【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-5/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-5/",
+          "publishedOn": "2023-10-23T10:00:23.000Z",
+          "wordCount": 429,
+          "title": "【書き起こし】メルペイ加盟店売上精算の仕組み – Takumi Shibazaki【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-9/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるEngineeringを知ることができるお祭りで、2023年8月22日（火）か […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-9/",
+          "publishedOn": "2023-10-23T10:00:18.000Z",
+          "wordCount": 621,
+          "title": "【書き起こし】gRPC Federation を利用した巨大なBFFに対するリアーキテクチャの試み – goccy【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-7/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-7/",
+          "publishedOn": "2023-10-23T10:00:16.000Z",
+          "wordCount": 504,
+          "title": "【書き起こし】メルコイン決済マイクロサービスのトランザクション管理を支える技術 – Shota Suzuki【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-9/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、Productやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）から […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-9/",
+          "publishedOn": "2023-10-23T10:00:15.000Z",
+          "wordCount": 517,
+          "title": "【書き起こし】Merpay &#038; MercoinにおけるLLM活用の取り組み – Yuki Ishikawa / Daisuke Torigoe / Noriaki Utsunomiya / hmj【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-9/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-9/",
+          "publishedOn": "2023-10-23T10:00:12.000Z",
+          "wordCount": 514,
+          "title": "【書き起こし】メルカリのカスタマージャーニーにおける不正防止の取り組み – codechaitu 【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-4/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-4/",
+          "publishedOn": "2023-10-23T10:00:12.000Z",
+          "wordCount": 542,
+          "title": "【書き起こし】Building a Global environment at Merpay: India &#038; Japan – Robert Jerovsek / Keigo Andrade / Sumil Panicker【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-2/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-2/",
+          "publishedOn": "2023-10-23T10:00:12.000Z",
+          "wordCount": 547,
+          "title": "【書き起こし】メルコインのインフラ設計・構築と、信頼性のあるサービスをリリースするためのSREの取り組み – Masaki Iino / Takaaki Yuhara【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-2/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-2/",
+          "publishedOn": "2023-10-23T10:00:10.000Z",
+          "wordCount": 589,
+          "title": "【書き起こし】How to Unleash Fintech – Shunya Kimura / Keigo Watanabe / Noriaki Utsunomiya 【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-1/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-1/",
+          "publishedOn": "2023-10-23T10:00:09.000Z",
+          "wordCount": 453,
+          "title": "【書き起こし】メルペイのあと払いとスマートマネーを支える返済基盤マイクロサービスの進化 – Cui Peichong【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-11/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day1-11/",
+          "publishedOn": "2023-10-23T10:00:09.000Z",
+          "wordCount": 477,
+          "title": "【書き起こし】メルカリへのFIDO導入の経緯とこれからの展望、課題から得た学び – koi / kokukuma / daichiro / hidey【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-5/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day3-5/",
+          "publishedOn": "2023-10-23T10:00:06.000Z",
+          "wordCount": 450,
+          "title": "【書き起こし】なめらかなFintech QAを実現するために テストケースフォーマットを標準化した話 – Masatoshi Sato / Yuki Sakamoto【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-7/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-7/",
+          "publishedOn": "2023-10-23T10:00:04.000Z",
+          "wordCount": 590,
+          "title": "【書き起こし】発生可能な取引の属性データを用いた素早い不正検知 – Liu / Li【MerFeatureay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-6/",
+          "author": null,
+          "description": "Merpay & Mercoin Tech Fest 2023 は、事業との関わりから技術への興味を深め、プロダクトやサービスを支えるエンジニアリングを知ることができるお祭りで、2023年8月22日（火）からの3 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231023-mmtf2023-day2-6/",
+          "publishedOn": "2023-10-23T10:00:03.000Z",
+          "wordCount": 440,
+          "title": "【書き起こし】GoによるSQLクエリテストの取り組み – Yuki Mukasa【Merpay &#038; Mercoin Tech Fest 2023】",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
           "id": "https://engineering.mercari.com/blog/entry/20230921-a08201e3a3/",
           "author": null,
           "description": "はじめに こんにちは、mercari.goスタッフの shota sugiura です。 9月7日にメルカリ主催のGo勉強会 mercari.go #23 をYouTubeでのオンライン配信にて開催しました。この記事では […]",
