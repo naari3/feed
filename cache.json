@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189053691138",
+          "author": null,
+          "description": "テキストキマシタワー。\n[1585] 0018 | MOVI i562 0\n[158B] 0055 | RET\n[15C1] 0054 | CALL 15A1\n[15A1] 0013 | JTBL i560 | 0\nDW 15B7\nDW 15A9\n[1579] 0004 | TBCLOSE\n[157D] 0004 | TBCLOSE\n[1581] 0004 | TBCLOSE\n[1585] 0018 | MOVI i562 0\n[158B] 0055 | RET\n[0A1E] 0015 | PRINT 見慣れた天井。見慣れた壁。見慣れた床。僕が赤ん坊の時からずっと、１７年\n間寝起きしてきた僕の部屋だ。正確には、１４年前に僕に弟ができてからは僕と弟の部屋だった。 k\ney",
+          "link": "https://akkera102.hatenablog.com/entry/2023/10/26/233008",
+          "publishedOn": "2023-10-26T14:30:08.000Z",
+          "wordCount": 449,
+          "title": "移植10",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189052900990",
           "author": null,
           "description": "動いたけど早速バグってるー。これからが長いんです・・・。\n$ ./scn2txt cs01_02.scn\nscn2txt... cs01_02.scn\n[0100][000A] JP\n[010A][000C] CMPI 0 0 0\n[0110][0012] JNE\n[0114][0018] MOVI i187 1\n[011A][000A] JP\n[025E][0054] CALL\n[0018][0000] DOSEXIT",
@@ -10540,16 +10555,6 @@
           "publishedOn": "2023-07-30T02:30:01.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2023.7.30",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39126",
-          "author": "mamosuke",
-          "description": "pkgrename v1.07,ARK-4 v1690591156,FreeMcBoot-Installer latest,PlayStation2-Basic-BootLoader(PS2BBL)+OpenTuna,TegraExplorer 4.1.0-b1,ArgonNX-SE v1.9,nimdsphax v1.0,ViXEn v1.4.1,Movian v5.0.744,melonDS Android Nightly Build,Project Nested v1.8.1,rehex(Reverse Engineers’ Hex Editor) 0.60.1,Vita3K Build: 3305,Universal Media Server 13.6.0,xemu v0.7.109→→→この記事の続きを読む\nGameGaz Daily 2023.7.29 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023072939126/",
-          "publishedOn": "2023-07-29T02:58:18.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2023.7.29",
           "imageUrl": null
         }
       ]
