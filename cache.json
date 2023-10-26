@@ -8515,16 +8515,6 @@
           "wordCount": null,
           "title": "ni.zsh: npmインストール時のサプライチェーン攻撃を検知する機能を追加",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/07/29/mubook-hon/",
-          "author": null,
-          "description": "mubook-honという読書用のウェブアプリを作りました。\n特徴として、Dropboxに保存しているepubやPDFをそのままブラウザで読むことができ、メモやどこまで読んだかをNotionに記録できます。\nウェブサイト: https://mubook-hon.vercel.app/\nソースコード: azu/mubook-hon: epub/PDF reader + Notion Sync + Memo\nドキュメント and サンプルデータベース: https://efcl.notion.site/mubook-hon-addce6c324d44d749a73748f92e3a1a6\n特徴\nDropboxに保存したepub/PDFをブラウザ読むことができる\nChromeのショートカットアプリやiOSのホームに追加などでアプリぽく使えます\nMobile/PC対応\n読んだ書籍の情報は自動的にNotionに記録される\n\nepubやPDFからメタデータを取得して、自動的にタイトル/著者/出版社の情報を入れたNotionのデータベースに追加されます\nNotionに読んでいる位置を記録して、別の端末から再開できる\nNotionにメモを追加できる\nNotionで読書履歴やメモを管理できるテンプレmートを用意している\nイメージ\n\nepub viewer by Bibi\n\nPDF viewer by PDF.js\n\nNotionのデータベースに本が自動で記録されます\n\nNotionにメモを追加できる、メモは本に自動的に紐づきます\nNotionに書籍ごとのページが自動的に作られ、その書籍のページに対してメモ(引用)が自動的にRelationとして追加されます。\n書籍に紐づくメモをデータベースとして管理できるようになってるので、メモの自由度がかなり高いのが特徴です。\nデフォルトのテンプレートでは…",
-          "link": "https://efcl.info/2023/07/29/mubook-hon/",
-          "publishedOn": "2023-07-29T07:19:00.000Z",
-          "wordCount": 736,
-          "title": "mubook-hon: Dropboxに保存したepubやPDFを読むビューア、Notionにメモや読んでいる位置を記録できるMobile/PC対応のウェブアプリ",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
