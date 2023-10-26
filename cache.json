@@ -1721,21 +1721,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230811/20230811122542.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482953524224",
-          "author": null,
-          "description": "めんどくさかったのでメモする\nDockerfile本体\nFROM amazonlinux:2\n\nARG PYTHON_VERSION=3.9.6\n\nRUN yum update -y && yum install -y tar gzip make gcc openssl-devel bzip2-devel libffi-devel zip \\\n    && curl https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tgz | tar xz \\\n    && cd Python-${PYTHON_VERSION} && ./configure && make && make install \\\n    && cd - && rm -rf Python-${PYTHON_VERSION} \\\n    && alternatives --install /usr/bin/python python /usr/local/bin/python3 1 \\\n    && alternatives --install /usr/bin/pip pip /usr/local/bin/pip3 1\n\n\n\n使用例\ndocker build . -t lambda_container\ndocker run -it lambda_container\ncd ~\nmkdir python\npip install snowflake-connector-python==3.0.4 -t ./python\nzip -r layer.zip python\ndocker cp (コンテナID):/root/layer.zip layer.zip",
-          "link": "https://contradiction29.hatenablog.com/entry/2023/07/28/223124",
-          "publishedOn": "2023-07-28T13:31:24.000Z",
-          "wordCount": 375,
-          "title": "AWS LambdaのLayerをつくるためだけのDockerfile (Amazon Linux 2)",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

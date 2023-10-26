@@ -19920,48 +19920,6 @@ Kindleも読みやすくなりましたし、 Googleドキュメントもかき�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
-              rel="noopener">現実モデリング</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">AWS LambdaのLayerをつくるためだけのDockerfile (Amazon Linux 2)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://contradiction29.hatenablog.com/entry/2023/07/28/223124" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>めんどくさかったのでメモする
-Dockerfile本体
-FROM amazonlinux:2
-
-ARG PYTHON_VERSION&#x3D;3.9.6
-
-RUN yum update -y &amp;&amp; yum install -y tar gzip make gcc openssl-devel bzip2-devel libffi-devel zip \
-    &amp;&amp; curl https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tgz | tar xz \
-    &amp;&amp; cd Python-${PYTHON_VERSION} &amp;&amp; ./configure &amp;&amp; make &amp;&amp; make install \
-    &amp;&amp; cd - &amp;&amp; rm -rf Python-${PYTHON_VERSION} \
-    &amp;&amp; alternatives --install /usr/bin/python python /usr/local/bin/python3 1 \
-    &amp;&amp; alternatives --install /usr/bin/pip pip /usr/local/bin/pip3 1
-
-
-
-使用例
-docker build . -t lambda_container
-docker run -it lambda_container
-cd ~
-mkdir python
-pip install snowflake-connector-python&#x3D;&#x3D;3.0.4 -t ./python
-zip -r layer.zip python
-docker cp (コンテナID):/root/layer.zip layer.zip</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21745,7 +21703,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-10-26T01:22:55.790Z">2023-10-26T01:22:55.790Z</time>
+    <time id="build-timestamp" datetime="2023-10-26T02:08:13.762Z">2023-10-26T02:08:13.762Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
