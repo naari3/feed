@@ -19779,52 +19779,6 @@ GameGaz Daily 2023.7.30 first appeared on 大人のためのゲーム講座.</sp
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2023-07-29">2023-07-29</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://kumagi.hatenablog.com/" target="_blank"
-              rel="noopener">Software Transactional Memo</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">徐々に高度になるリングバッファの話</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://kumagi.hatenablog.com/entry/ring-buffer" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>リングバッファのイメージ図
-
-1. リングバッファとは何か
-機能的にはFirst In First Out (FIFO)とも呼ばれるキューの一種であるが、リング状にバッファを置いてそれの中でReadとWriteのインデックスがグルグルと回る構造をとる事によって容量に上限ができることと引き換えに高速な読み書き速度を得たものである。キューを単に実装するだけなら山ほど方法があって線形リストを使ってもいいしスタックを2つ使っても原理的には可能だ。その中でもリングバッファを用いた方法の利点はひとえに性能の高さでありメモリ確保などを行わないお陰でシステム系の様々な場所で使われている。
-これの実装自体は情報系の大学生の演習レベルの難度であるが少し奥が深い。まずリングバッファのスタンダードなインタフェースと実装は以下のようなものである。
-class RingBuffer {
-public:
-  explicit RingBuffer(size_t size) : buffer_(size) {}
-
-  // Returns true on success. Fails if the buffer is empty.
-  bool enqueue(int item) {
-    if (write_idx_ - read_idx_ &#x3D;&#x3D; buffer_.size()) {
-      return false;
-    }
-    buffer_[write_idx_ % buffer_.size()] &#x3D; item;
-    write_idx_++;
-    return true;
-  }
-
-  // Returns true on success. Fails if the buffer is full.
-  bool dequeue(int *dest) {
-    if (wri…</span>
-                  </div>
-                  <img src="https://th.bing.com/th/id/OIG.eTEYipySRwZFAvWDvzqq?pid&#x3D;ImgGn" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2023-06-09">2023-06-09</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -21605,7 +21559,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-10-27T10:01:44.480Z">2023-10-27T10:01:44.480Z</time>
+    <time id="build-timestamp" datetime="2023-10-27T11:01:39.771Z">2023-10-27T11:01:39.771Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

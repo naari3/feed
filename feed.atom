@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-27T10:01:44.527Z</updated>
+    <updated>2023-10-27T11:01:39.819Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13841,37 +13841,6 @@ GameGaz Daily 2023.7.30 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>自由さ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[徐々に高度になるリングバッファの話]]></title>
-        <id>hatenablog://entry/820878482953561011</id>
-        <link href="https://kumagi.hatenablog.com/entry/ring-buffer"/>
-        <updated>2023-07-29T23:00:00.000Z</updated>
-        <summary type="html"><![CDATA[リングバッファのイメージ図
-
-1. リングバッファとは何か
-機能的にはFirst In First Out (FIFO)とも呼ばれるキューの一種であるが、リング状にバッファを置いてそれの中でReadとWriteのインデックスがグルグルと回る構造をとる事によって容量に上限ができることと引き換えに高速な読み書き速度を得たものである。キューを単に実装するだけなら山ほど方法があって線形リストを使ってもいいしスタックを2つ使っても原理的には可能だ。その中でもリングバッファを用いた方法の利点はひとえに性能の高さでありメモリ確保などを行わないお陰でシステム系の様々な場所で使われている。
-これの実装自体は情報系の大学生の演習レベルの難度であるが少し奥が深い。まずリングバッファのスタンダードなインタフェースと実装は以下のようなものである。
-class RingBuffer {
-public:
-  explicit RingBuffer(size_t size) : buffer_(size) {}
-
-  // Returns true on success. Fails if the buffer is empty.
-  bool enqueue(int item) {
-    if (write_idx_ - read_idx_ == buffer_.size()) {
-      return false;
-    }
-    buffer_[write_idx_ % buffer_.size()] = item;
-    write_idx_++;
-    return true;
-  }
-
-  // Returns true on success. Fails if the buffer is full.
-  bool dequeue(int *dest) {
-    if (wri…]]></summary>
-        <author>
-            <name>Software Transactional Memo</name>
         </author>
     </entry>
     <entry>

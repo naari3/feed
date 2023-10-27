@@ -3151,21 +3151,6 @@
             "length": "0"
           },
           "imageUrl": null
-        },
-        {
-          "id": "hatenablog://entry/820878482953561011",
-          "author": null,
-          "description": "リングバッファのイメージ図\n\n1. リングバッファとは何か\n機能的にはFirst In First Out (FIFO)とも呼ばれるキューの一種であるが、リング状にバッファを置いてそれの中でReadとWriteのインデックスがグルグルと回る構造をとる事によって容量に上限ができることと引き換えに高速な読み書き速度を得たものである。キューを単に実装するだけなら山ほど方法があって線形リストを使ってもいいしスタックを2つ使っても原理的には可能だ。その中でもリングバッファを用いた方法の利点はひとえに性能の高さでありメモリ確保などを行わないお陰でシステム系の様々な場所で使われている。\nこれの実装自体は情報系の大学生の演習レベルの難度であるが少し奥が深い。まずリングバッファのスタンダードなインタフェースと実装は以下のようなものである。\nclass RingBuffer {\npublic:\n  explicit RingBuffer(size_t size) : buffer_(size) {}\n\n  // Returns true on success. Fails if the buffer is empty.\n  bool enqueue(int item) {\n    if (write_idx_ - read_idx_ == buffer_.size()) {\n      return false;\n    }\n    buffer_[write_idx_ % buffer_.size()] = item;\n    write_idx_++;\n    return true;\n  }\n\n  // Returns true on success. Fails if the buffer is full.\n  bool dequeue(int *dest) {\n    if (wri…",
-          "link": "https://kumagi.hatenablog.com/entry/ring-buffer",
-          "publishedOn": "2023-07-29T23:00:00.000Z",
-          "wordCount": 756,
-          "title": "徐々に高度になるリングバッファの話",
-          "enclosure": {
-            "url": "https://th.bing.com/th/id/OIG.eTEYipySRwZFAvWDvzqq?pid=ImgGn",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": "https://th.bing.com/th/id/OIG.eTEYipySRwZFAvWDvzqq?pid=ImgGn"
         }
       ]
     },
