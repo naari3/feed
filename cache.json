@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189054175576",
+          "author": null,
+          "description": "チャプター28あるうち1個終わりました。ファイル数でいうと400個ぐらいあるうちの26個が変換できたということです。ここで制作に関してのザックリとした指針なのですが、ゲームの選択肢はプレイヤー操作しないことにしました。具体的にいうと、たとえばメイン選択肢３，サブ選択肢３が出現したとき、下ボタン３回押してAボタン、また下ボタン３回押してAボタンという操作が発生します。マウスならともかくキー入力のGBAでは楽しくありません。なのでGBAでは選択済みのログファイルを流す方式にしました。ワーパチパチパチ。そうするとどうなるとかというとなんと変数いらないんです！選択肢ジャンプもないんです！ひぐらしみたいにひたすらログが流れるだけという・・・。作り手としては究極的にラクできます。・・・ここ1週間ぐらいアセンブリ言語から選択肢フラグをどう回収しようか頭抱えてたのですけど、そもそもストレスになる機能ならなくしちゃえばいいという結論です。ようやくスッキリしました。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/10/28/221540",
+          "publishedOn": "2023-10-28T13:15:40.000Z",
+          "wordCount": 393,
+          "title": "移植11",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189053691138",
           "author": null,
           "description": "テキストキマシタワー。\n[1585] 0018 | MOVI i562 0\n[158B] 0055 | RET\n[15C1] 0054 | CALL 15A1\n[15A1] 0013 | JTBL i560 | 0\nDW 15B7\nDW 15A9\n[1579] 0004 | TBCLOSE\n[157D] 0004 | TBCLOSE\n[1581] 0004 | TBCLOSE\n[1585] 0018 | MOVI i562 0\n[158B] 0055 | RET\n[0A1E] 0015 | PRINT 見慣れた天井。見慣れた壁。見慣れた床。僕が赤ん坊の時からずっと、１７年\n間寝起きしてきた僕の部屋だ。正確には、１４年前に僕に弟ができてからは僕と弟の部屋だった。 k\ney",
@@ -2243,6 +2258,21 @@
       "feedUrl": "https://isitsutbustu-todoke.hatenablog.com/rss",
       "siteUrl": "https://isitsutbustu-todoke.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6801883189054185768",
+          "author": null,
+          "description": "ブログを始めたのは140文字ぎりぎりのツイートをよくするからという理由だが、前回の更新から日記を書く余裕がなく、最近はツイッターでは140字ぎりぎりのツイートばかりしてしまっていた。それらのツイートのアーカイブや補足も込めて書く。というかここに書くのはツイートの補足みたいなものがもともと多い。\n \nあったこと\n \nバンド「メランコリック写楽」のサブスクが配信された。2017年に解散したバンドがいまふたたび、というわけである。私は今年に存在を知り、プレミアのついたCDを買って聴いたりしていたのでとてもうれしい。cdについては過去の日記で書いた。とはいえまだcdは欲しい。私が持っているのは「月夜の超特急」のみだが、今回はじめてそれが解散前最後の作品だったことを知った。いまさらすぎる。全部で4つのEPを出していて、なんとなく最初の方のEPだと思っていたら違ったし、これが最後だったなら完成度の高さも納得できると再発見だった。\n \nもうすっかり消えてしまったが、金木犀の全盛期が今年も来ていた。外に出ない日が数日続いたあと早朝にごみ出しに行くと冷たいなかに甘い香りが充満していてびっくりしたわけである。そういうアイスみたいで気持ち良かった。やはり好きな匂い。いっぽうでカメムシが大量発生している地域もあるみたいだが、あれがくさいというのはいまだによく分かっていない。\n \n久しぶりに犬の糞を踏んだ。溝の浅い靴を履いていたので近くにあった公園の蛇口で流してことなきを得たが、ほんとうに久しぶりである。鳩の糞が落ちてくるのも長いこと経験していない。もちろんないに越したことはない。\n \nアレクサが「声を認識してその人にあった内容を答えるようにできますが、しますか」という質問をしたので（話しかける人間は私ひとりしかいないよ）などと思いながら「いいえ」と答えた。あれには自分が二、三年ひとりでずっと話しか…",
+          "link": "https://isitsutbustu-todoke.hatenablog.com/entry/2023/10/28/225213",
+          "publishedOn": "2023-10-28T13:52:13.000Z",
+          "wordCount": 369,
+          "title": "nikki_20231028「無題」",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20231028/20231028224814.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/i/isitsutbustu_todoke/20231028/20231028224814.jpg"
+        },
         {
           "id": "hatenablog://entry/6801883189051140366",
           "author": null,
@@ -4698,21 +4728,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230808/20230808221628.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482954152941",
-          "author": null,
-          "description": "久し振りに開催されたTokyuRuby会議14に参加した。LTも申し込んでいて通ったので、LTもやってきた。なんかTokyuRuby会議が行われると、イベントが戻ってきたなあ、という気がする。よかった。\nしゃべった\nLTの内容は最近やっているNameSpaceまわりの話。\n\n\n\n5分LTを最後にやったのは2019年のRubyKaigiだった。5分のLTなんて体に染み付いてるから息をするようにやれるじゃろ、と思ったら完全にペースを間違ってぜんぜん終わらなかった。なんてこった。何でも、やらないと衰えるなあ。\n話の内容自体は、あとにあった3分追加でしゃべっていい枠で話せて満足。これは引き続きやってて、9月の松江Ruby会議10でも話す予定です。\n料理持っていった\nTokyuRuby会議14、おでんとローストビーフマリネ\n今回作って持っていったのはミニチュアおでん、ローストビーフのわさびマリネ。どっちも全部食べてもらったし、おいしかったと何度も言ってもらえて大満足。ミニチュアおでんは大根の型抜きして下茹でしてるところを前日Twitterに放り込んでいたら、あれなんだったんですかって何人もに聞かれたのが狙い通り。\n参加した\nあとはもう……いつものTokyuRuby会議だったので、何がどうだったとも言いがたいが、RubyKaigiで話せなかったなという人ともけっこう話せたり、今回の自分のネタについても追加で議論する機会が持てたりで、じつによいイベントだった。楽しかったです。",
-          "link": "https://tagomoris.hatenablog.com/entry/2023/07/31/102208",
-          "publishedOn": "2023-07-31T01:22:08.000Z",
-          "wordCount": null,
-          "title": "TokyuRuby会議14に参加してしゃべってきた",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230729/20230729140046.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230729/20230729140046.jpg"
         }
       ]
     },
@@ -10438,16 +10453,6 @@
           "publishedOn": "2023-07-31T02:52:15.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2023.7.31",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39131",
-          "author": "mamosuke",
-          "description": "SKGleba氏とMathieulh氏がPS Vita市販機のブートROMダンプに成功しました。→→→この記事の続きを読む\nSKGleba氏とMathieulh氏 PlayStation VitaのブートROMダンプに成功 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023073139131/",
-          "publishedOn": "2023-07-31T01:36:22.000Z",
-          "wordCount": null,
-          "title": "SKGleba氏とMathieulh氏 PlayStation VitaのブートROMダンプに成功",
           "imageUrl": null
         }
       ]
