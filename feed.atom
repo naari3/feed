@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-30T05:01:40.688Z</updated>
+    <updated>2023-10-30T06:02:49.483Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How to measure network latency using hardware timestamps]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=21198</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/21198"/>
+        <updated>2023-10-30T05:02:15.000Z</updated>
+        <summary type="html"><![CDATA[This post was originally written by Arne Vogel, a PhD student from Germany who has been an intern at...]]></summary>
+        <author>
+            <name>Pierre Louis Aublin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ハードウェアのタイムスタンプを使用してネットワークの待ち時間を測定する方法]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=21208</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/21208"/>
+        <updated>2023-10-30T05:01:49.000Z</updated>
+        <summary type="html"><![CDATA[今回は、IIJの技術研究所にインターンシップとしてドイツから来日していたフォーゲル アーネさんの研究を紹介します。彼は博士号候補者で一緒に働いていました。研究内容は、ネットワークカードのハードウェアタ...]]></summary>
+        <author>
+            <name>Pierre Louis Aublin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2023年10月第4週〕]]></title>
         <id>hatenablog://entry/6801883189054568246</id>
