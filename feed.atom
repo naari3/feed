@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-30T01:23:31.606Z</updated>
+    <updated>2023-10-30T02:09:28.388Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[HatenaBlog Workflows Boilerplate が固定ページの操作に対応しました。また、下書きプレビュー共有URLが簡単に確認できるようになりました]]></title>
+        <id>hatenablog://entry/6801883189053793403</id>
+        <link href="https://staff.hatenablog.com/entry/2023/10/30/110546"/>
+        <updated>2023-10-30T02:05:46.000Z</updated>
+        <summary type="html"><![CDATA[先日ベータ版として公開いたしました、GitHub上ではてなブログ運営を可能にするテンプレートリポジトリ「HatenaBlog Workflows Boilerplate」にて
+固定ページの操作
+下書きプレビュー共有URLの生成・表示
+に対応いたしました。
+
+固定ページの操作
+固定ページは有料プラン(Pro, Business, for DevBlogなど)利用者限定の機能です
+固定ページの情報の取得、編集が可能になりました。編集・公開のフローは通常の記事と同様です。
+pull draft from hatenablog Actionを使って、編集用のPull Requestを作成する必要があります。
+下書きプレビュー共有URL
+本ツールから記事や固定ページを編集した場合、下書きプレビュー共有URLが発行されるようになりました。また、記事や固定ページに下書きプレビュー共有URLが存在する場合、メタデータ領域に下書きプレビュー共有URLが含まれるようになりました。
+現在のところ、下書きプレビュー共有URLを発行していない下書き記事をpull draft from hatenablogActionを使ってGitHubにpullしても、メタデータ領域に下書きプレビュー共有URLは記載されません。下書きプレビュー共有URLを発行してから当該Actionを実行するようにお願い致します。
+
+謝辞
+いずれの機能についても、はてなブログ側のAPIのアップデートに HatenaBlog Workflows Boilerplate にて利用しているツール blogsyncに素早く対応していただき実現したものです。メンテナの id:Songmu 様、コントリビュータのMahito様にお礼申し上げます。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2023.10.30]]></title>
         <id>https://gamegaz.com/?p=39755</id>
