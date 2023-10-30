@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-30T21:02:17.772Z</updated>
+    <updated>2023-10-30T22:01:53.909Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Xの広告収益分配金をしばらく受け取ったあとの感想]]></title>
+        <id>hatenablog://entry/6801883189054798501</id>
+        <link href="https://satoru-takeuchi.hatenablog.com/entry/2023/10/31/062724"/>
+        <updated>2023-10-30T21:27:24.000Z</updated>
+        <summary type="html"><![CDATA[Xには広告収益分配金を得られるという機能があります。X Premium(旧twitter blue)に登録して、かつ、機能を使う申請すれば、インプレッションの数とか色々なものを加味して毎月いくらかのお金をXから貰えるようになります。
+本記事は、わたしがこの機能を使い始めてから3ヶ月くらい経った今の現状と、それに伴って得た色々な知見を共有するものです。「あなたもインプレッションを稼いでお小遣い稼ぎ！」とかいうキラキラした話ではないです。
+3行まとめ
+かなりフォロワー数やインプレッションがないと全く儲からなさそう
+受取金額がしょぼいと海外送金手数料でほとんど消える
+手数料を安くしたいならWiseなどの仮想銀行口座は現在使えないので、日本の銀行口座を開設するのがよさそう
+自分の直近3回の分配金
+わたしのXはジャンルとしてはIT系で、フォロワー数が二万人くらい、直近一ヶ月のインプレッション200万くらいです。別に世間の耳目を集めようとはしてなくて好きなことをブツブツ言ってるだけです。それくらいのひとの直近3回の分配金は次のとおりでした。
+
+なかなか厳しいものがありますね。万単位ならちょっとうれしいけど数千円ということです。しかも右肩下がり。
+海外送金手数料
+上記の金額がそのまま貰えるかと言うとそうではありません。Xからの収益分配金の受け取りにはStripeというサービスを使うのですが、そのStripeから日本円の銀行に振り込む際に海外送金手数料がかかります。わたしが使っている銀行の手数料は2500円です。初回は手数料を引いた上で2400円ほど、二回目は41円を受け取りました3回目は分配金額が2500円を下回っているので、この場合どうなるか、楽しみにしています。
+手数料を安くするためにWiseを使おうとした
+X上で手数料が高いし新しい銀行口座作るのめんどくさいと言ってたらWiseとい…]]></summary>
+        <author>
+            <name>覚書</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ChordTrackerとYAMAHAのキーボードを無線(WiFi)で繋ぐ時のMIDI over RTPのメモ（随時追記）]]></title>
         <id>hatenablog://entry/6801883189054770670</id>
