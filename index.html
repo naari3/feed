@@ -78,6 +78,33 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
+              rel="noopener">honeylab&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ChordTrackerとYAMAHAのキーボードを無線(WiFi)で繋ぐ時のMIDI over RTPのメモ（随時追記）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2023/10/31/000827" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>もしかしたら同じようなことを調べる人が２０年後に現れるかもしれない
+・デバイス検出はAppleMIDI(bonjor)
+・ポート番号は5004(RTP-MIDI)と同じ
+・セッションプロトコルはAppleMidiと似ているが、
+zenn.dev
+にある「IN」は「YI」、「OK」は「YO」などの置き換えがある。BYは一緒。
+また、[FF]-[FF]-[XX]-[XX]の後の16バイトは全て０で埋まっている
+（AppleMidiではプロトコルバージョン、識別IDなどが入れられる）</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -19318,29 +19345,6 @@ ENLBufferPwn対策完了 Wii Uの『スプラトゥーン』と『マリオカ�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/sizes" target="_blank"
-              rel="noopener">自由さ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">「自由さ」です！＊自己紹介</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/sizes/n/n93b0d41f853e" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>*プロフィール紹介用の記事です。僕のことを知らない人向けに書いています。
-
-
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/112320203/rectangle_large_type_2_b3944d3b7ebf2ee72c8a0accf0483123.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21124,7 +21128,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-10-30T15:01:53.979Z">2023-10-30T15:01:53.979Z</time>
+    <time id="build-timestamp" datetime="2023-10-30T16:01:45.047Z">2023-10-30T16:01:45.047Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

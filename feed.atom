@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-10-30T15:01:54.027Z</updated>
+    <updated>2023-10-30T16:01:45.111Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ChordTrackerとYAMAHAのキーボードを無線(WiFi)で繋ぐ時のMIDI over RTPのメモ（随時追記）]]></title>
+        <id>hatenablog://entry/6801883189054770670</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2023/10/31/000827"/>
+        <updated>2023-10-30T15:08:27.000Z</updated>
+        <summary type="html"><![CDATA[もしかしたら同じようなことを調べる人が２０年後に現れるかもしれない
+・デバイス検出はAppleMIDI(bonjor)
+・ポート番号は5004(RTP-MIDI)と同じ
+・セッションプロトコルはAppleMidiと似ているが、
+zenn.dev
+にある「IN」は「YI」、「OK」は「YO」などの置き換えがある。BYは一緒。
+また、[FF]-[FF]-[XX]-[XX]の後の16バイトは全て０で埋まっている
+（AppleMidiではプロトコルバージョン、識別IDなどが入れられる）]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[#19 冬を知らせるレモンサワー]]></title>
         <id>https://note.com/kazumakawauchi/n/n538fd20f75fc</id>
@@ -13542,19 +13559,6 @@ ENLBufferPwn対策完了 Wii Uの『スプラトゥーン』と『マリオカ�
         <updated>2023-08-02T06:39:00.000Z</updated>
         <author>
             <name>sanmal</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「自由さ」です！＊自己紹介]]></title>
-        <id>https://note.com/sizes/n/n93b0d41f853e</id>
-        <link href="https://note.com/sizes/n/n93b0d41f853e"/>
-        <updated>2023-08-02T03:22:51.000Z</updated>
-        <summary type="html"><![CDATA[*プロフィール紹介用の記事です。僕のことを知らない人向けに書いています。
-
-
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
     <entry>

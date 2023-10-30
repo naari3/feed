@@ -2117,6 +2117,21 @@
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189054770670",
+          "author": null,
+          "description": "もしかしたら同じようなことを調べる人が２０年後に現れるかもしれない\n・デバイス検出はAppleMIDI(bonjor)\n・ポート番号は5004(RTP-MIDI)と同じ\n・セッションプロトコルはAppleMidiと似ているが、\nzenn.dev\nにある「IN」は「YI」、「OK」は「YO」などの置き換えがある。BYは一緒。\nまた、[FF]-[FF]-[XX]-[XX]の後の16バイトは全て０で埋まっている\n（AppleMidiではプロトコルバージョン、識別IDなどが入れられる）",
+          "link": "https://honeylab.hatenablog.jp/entry/2023/10/31/000827",
+          "publishedOn": "2023-10-30T15:08:27.000Z",
+          "wordCount": 475,
+          "title": "ChordTrackerとYAMAHAのキーボードを無線(WiFi)で繋ぐ時のMIDI over RTPのメモ（随時追記）",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189052079624",
           "author": null,
           "description": "honeylab.hatenablog.jp\n前回までの記事で、JAM機能のためのリアルタイムコード送信からコードを拾う方法を実現しましたが、やはりこれだと再生実時間がかかる、テンポが取得できない、\n再生カーソルにある位置のコードが出力されるので、動かすとそれが出てしまう、という欠点がありました。\n「楽譜送信」機能さえ掴んでしまえば…と悩んで数日、\nありとあらゆる手を尽くして「楽譜送信」プロトコルを掌握し、\n標準MIDIファイルとして送信されるデータから店舗とコード進行をデコードすることに成功しました！！\n \nこのプロトコル、内部的には「MSD」と呼ばれるプロトコルで、『Yamaha SongDownloader』というソフトを使ってPCとキーボードを接続するときに使われるモノらしいです。\nとっかかりとして、こちらのブログで一部が解析されていたSysExの続きを必殺逆アセゲフンゲフンと試行錯誤で突破したモノです。\nhttps://sandsoftwaresound.net/hidden-arranger-smarts-file-system-sysex/\nAndroid,iOSのアプリなのでBLEoverMIDIが使われていて、実装先もiOSなので、\n始めたばかりのSwiftUIも含めて勉強することになってなかなかよいトレーニングになりました。\nリアルタイムコード取得にのみ対応したバージョンのiOSアプリをリリースしたばかりですが…\n\n\nCT Receiver\nHiromitsu Niituma\nミュージック\n無料\n\napps.apple.com\nコード正解率に定評があり愛用者の多いChordTracker、便利なのにコード書き出し機能が無い、どうやってもできない、鉛筆で書き写すしかなかったソフトからコードデータを拾ってテキスト化する非公式アプリができました。\n今のうちなら機能追加ができるのでなんかあったらコメントください。 pic.twitter.com/aqRwrZ9uRc\n2023年10月13日\n\n\n \nこの成果を生かした楽譜ごと転送、コード譜作成機能を実装した新バージョンを早いうちにリリースしたいと思っています。\nこのバージョン、意味がわからないぐらい手間をかけたので、\n耳コピとコード譜作成の時間をゴリっと圧縮するので、その分を何らかの形で課金していただく、というふうにしたいと思っています。\n \n練習も兼ねて、広告課金＋app内課金、ただし、一日に一曲ぐらいは使える、といった形でやればアプリの使い方もわかるし、払いたくなければ制限内で使ってもらえれば。\n \n新バージョンの動作風景はこちら（UIは変更される予定です）\nChordTracker完全に制圧した\n曲の読み込みからコード譜印刷まで1分だ！ pic.twitter.com/1Xu47NsPCb\n2023年10月20日\n\n\n早いでしょ？？？使えるでしょ？？？",
@@ -7561,16 +7576,6 @@
           "wordCount": null,
           "title": "悲観っていらなくない？",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/112417765/rectangle_large_type_2_db31a52455e0e4b3a1739b2c5b677340.png?width=800"
-        },
-        {
-          "id": "https://note.com/sizes/n/n93b0d41f853e",
-          "author": null,
-          "description": "*プロフィール紹介用の記事です。僕のことを知らない人向けに書いています。\n\n\n続きをみる",
-          "link": "https://note.com/sizes/n/n93b0d41f853e",
-          "publishedOn": "2023-08-02T03:22:51.000Z",
-          "wordCount": null,
-          "title": "「自由さ」です！＊自己紹介",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/112320203/rectangle_large_type_2_b3944d3b7ebf2ee72c8a0accf0483123.png?width=800"
         }
       ]
     },
