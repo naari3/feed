@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189056097848",
+          "author": null,
+          "description": "冷静になって考えるとなんで今更”PC98”ゲームの移植を”GBA”でするのかなあと思います。常軌を逸しているとはまさにこのこと（＾＾；。うーん、これも昔の宿題というやつですかねー・・・。ToHeartGBAもカナンも時間的技術的に無理で諦めていたのに、今ならできるよって人参をぶら下げられて飛びついている感・・・。\n\nまあ、気を取り直して、ゲームの選択肢機能を排除する方向で作っているわけですが、コマンド一覧を作ってみて俯瞰するとやっぱりいらないなあというのが今日の感想です。\n// 選択肢コマンド一覧\nST_OPE_TABLE OpeTable[] = {\n\t{ \"cs01_01.scn\", \"11\" },\n\t{ \"cs01_02.scn\", \"11111\" },\n\t{ \"cs01_03.scn\", \"12122\" },\n\t{ \"cs01_04.scn\", \"1111\" },\n\t{ \"cs01_05.scn\", \"111\" },\n\t{ \"cs01_06.scn\", \"1111\" },\n\t{ \"cs01_07.scn\", \"122221\" },\n\t{ \"cs01_08.scn\", \"11112\" },\n\t{ \"cs01_09.scn\", \"111111121313212122222211123\" },\n\t{ \"cs01_10.scn\", \"1222\" },\n\t{ \"cs01_11.scn\", \"111213222231323232323333333334343434343434\" },\n\t{ \"cs01_12.scn\", \"1112222\" },\n\t{ \"cs01_13.scn\", \"12122223\" },\n\t{ \"cs01_14.scn\", \"1222\" },\n\t{ \"cs01_15.scn\", \"1222\" },\n\t{ \"cs01_16.scn\", \"122222\" },\n\t{ \"cs01_17.scn\", \"1112132\" },\n\t{ \"cs01_18.scn\", \"1213222222\" },\n\t{ \"cs01_19.scn\", \"1112222\" },\n\t{ \"cs01_20.scn\", \"11122222\" },\n\t{ \"cs01_21.scn\", \"11111112122221213132222\" },\n\t{ \"cs02_01.scn\", \"111111111\" },\n左のスクリプトファイルに対して右が操作コマンドです。122とあれば選択肢一覧から「1番目、決定ボタン、2番目、決定ボタン、2番目、決定ボタン」をしないと次のスクリプトに遷移しません。ポチポチしない作りにして良かったと思います。\n\n今日の進捗　464中279まで完了。+70",
+          "link": "https://akkera102.hatenablog.com/entry/2023/11/04/231936",
+          "publishedOn": "2023-11-04T14:19:36.000Z",
+          "wordCount": 494,
+          "title": "移植14",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189055776472",
           "author": null,
           "description": "今日の進捗　464中209まで完了。+67\nスクリプトを走らせて目視検査をしていると活版印刷前の時代をふと想像してしまいますね。。\n紙の劣化が避けられないわけですから新しい紙に筆で一字一句書き写さないといけないわけです。\n今のしていることとはちょっと違いますが親近感が湧きます。",
@@ -1265,21 +1280,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230804/20230804173120.jpg"
-        },
-        {
-          "id": "hatenablog://entry/820878482956115112",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。7月30日（日）から8月5日（土）〔2023年8月第1週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    コミュニティノートがTwitterを壊している - きしだのHatena\n by id:nowokay \n    \n2\n    徐々に高度になるリングバッファの話 - Software Transactional Memo\n by id:kumagi \n    \n3\n    幾つかのTwitterの移転先SNSを試してみたので、感想を書く - orangestar2\n by id:orangestar \n    \n4\n    「オタクに優しいギャル」って誰が創作し、どうジャンルになったんだ（一覧試作）【創作系譜論】 - INVISIBLE D.　ーQUIET & COLORFUL PLACE-\n by id:gryphon \n    \n5\n    ファミマの看板下にある「消えた女性のピクトグラム」は紫外線で消えただけだと思うよ - 電脳塵芥\n by id:nou_yunyun \n    \n6\n    ファミマ入店音の装置　パナソニックの「メロディサインW」EC5527W いつの間にか中身がリニューアルしてた件について - honeylab's blog\n by id:honeylab \n    \n7\n    Code Interpreterに自分のTweetを分析させたらだんだん怖くなってきた - toyoshiの日記\n by id:toyoshi \n    \n8\n    関東甲信越と静岡県でひとり旅初心者におすすめの極上湯の温泉宿28軒 - 温泉ブログ 山と温泉のきろく\n by id:happydust \n    \n9\n    認知機能がギリギリで保たれている高齢者について少し …",
-          "link": "https://blog.hatenablog.com/entry/2023/08/07/120000",
-          "publishedOn": "2023-08-07T03:00:00.000Z",
-          "wordCount": 973,
-          "title": "今週のはてなブログランキング〔2023年8月第1週〕",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230807/20230807094354.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230807/20230807094354.jpg"
         }
       ]
     },
