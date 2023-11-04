@@ -1678,6 +1678,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189051813344",
+          "author": null,
+          "description": "Architecture is Leadership\nJoe ReisとMatt Housleyの著書『Fundamentals of Data Engineering』はデータエンジニアリングにおける基本的な考え方を網羅的に説明した本で、その中にデータ・アーキテクチャの基本原則を説くチャプターがある。9つある基本原則の1つとして「Architecture is Leadership」という考え方が登場する。引用してみよう。\nData architects are responsible for technology decisions and architecture descriptions and disseminating these choices through effective leadership and training.\n Data architects should be highly technically competent but delegate most individual contributor work to others. Strong leadership skills combined with high technical competence are rare and extremely valuable. The best data architects take this duality seriously. (p.144)\n(日本語訳) データアーキテクトは技術的な意思決定とアーキテクチャの説明に責任を持ち、効果的なリーダーシップとトレーニングを通じてこれらを普及させる役割がある。データアーキテクトは高い技術的能力を持つべきであるが、ほとんどのインディビジュアル・コントリビューターとしての仕事は他の人に任せる。高い技術…",
+          "link": "https://contradiction29.hatenablog.com/entry/2023/11/04/213315",
+          "publishedOn": "2023-11-04T12:33:15.000Z",
+          "wordCount": 425,
+          "title": "雑記：Architecure is Leadership, and Architecture for Leadership",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20231104/20231104205044.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20231104/20231104205044.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189054287051",
           "author": null,
           "description": "はじめに\nダッシュボードをつくるのは難しい。「自分が本当に欲しいダッシュボード」を説明できるユーザーはめったにいない。本当に欲しいダッシュボードの要求定義を聞き出せるアナリスト・エンジニアだってそんなにいるものではない。本当に欲しいものが何か説明できないユーザー、理解する能力のないアナリスト・エンジニアのやり取りの結果生まれるダッシュボード。古典的な「顧客が本当に欲しかったもの」の図式とそっくりである。\nダッシュボードの要件をめぐる認識の相違\nそもそも三段のブランコって何に使うの？一段で良くない？\n過剰に要求を見積もりすぎていないか？本質的に解決したいことは何かわかっていないのでは？\nダッシュボード開発における難しさは要求定義だけではない。いかに素早く作るかも重要である。事業状況の変化が速い場合、素早くユーザーのニーズを満たすことは事業上の価値に直結する。要求定義が滅茶苦茶な状態で実装すれば手戻りが多く発生し、ユーザーに価値を届けるまでのリードタイムが長くなる。\nユーザーが本当に欲しいダッシュボードを素早く作るための方法論が必要だと思い、自分なりに考えて、実践してきた。その手法について書き下してみたい。\nダッシュボード・プロトタイピング\nユーザーの要求、つまりユーザーがダッシュボードで解決したいことを早期の段階でつかみ、手戻りを可能な限り抑えることに主眼を置く手法\n「手戻りがない」ことは、「素早くユーザーの本当の要求を満たすこと」と同義であるため、手戻りを抑えることに重点を置いている\n1. ラフスケッチをする\nラフスケッチの段階ならやり直しが素早く可能なため、高速でフィードバックを受けながらユーザーの要求を固めていくことができる。このラフスケッチ段階が一番重要であり、手戻りを抑えるためのポイントになる。\nラフスケッチをするうえで気にするポイント\nラフスケッチを見ながら合意を…",
@@ -7995,7 +8010,18 @@
       "title": "わっつー",
       "feedUrl": "https://note.com/watu_note/rss",
       "siteUrl": "https://note.com/watu_note",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/watu_note/n/n04f3fb2b7790",
+          "author": null,
+          "description": "※この記事は「熱戦！戦う英雄たち ～地獄からの使者と異世界からの道化師～」の動画のネタバレが含まれます。\n未視聴の方は先に視聴してから記事を読むことをおすすめします\n続きをみる",
+          "link": "https://note.com/watu_note/n/n04f3fb2b7790",
+          "publishedOn": "2023-11-04T12:07:08.000Z",
+          "wordCount": null,
+          "title": "音MDM天 二〇二〇からの使者 ~後日談編~",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/120685543/rectangle_large_type_2_33d7c70d4b9aee5ed2f2e7a87b224035.png?width=800"
+        }
+      ]
     },
     {
       "title": "Ximco",
@@ -8619,16 +8645,6 @@
           "publishedOn": "2023-08-15T01:43:07.000Z",
           "wordCount": null,
           "title": "スマート農業の現場でのデータ活用方法 ～ 宮城県登米総合産業高等学校【出張授業】",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=20571",
-          "author": "とみ（とみーとも言う）",
-          "description": "お久しぶりです。まずは近況から。 こんにちわ。九州支社のとみーです。 今回は過去に投稿したChatGPTでチャットボットを作る-OpenAI純正APIの利用 で制作したチャットボットの強化を行ってみま...",
-          "link": "https://eng-blog.iij.ad.jp/archives/20571",
-          "publishedOn": "2023-08-07T00:31:39.000Z",
-          "wordCount": null,
-          "title": "GPTチャットボットの賢さを引き上げる試み",
           "imageUrl": null
         }
       ]
@@ -10388,26 +10404,6 @@
           "publishedOn": "2023-08-07T23:43:18.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2023.8.8",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39180",
-          "author": "mamosuke",
-          "description": "Xbox Series Xのドライブレスモデル,PS Multi Tools v13.0.5,PS4 Edit RCO,PS-PSH v0.1.3,PS3 Disc Dumper v4.0.0-beta1,ARK-4 v1691359248,DaedalusX64-vitaGL改良,Ludo v0.17.0,NTON v1.3.0,SDL MAME Wii 0.6.0→→→この記事の続きを読む\nGameGaz Daily 2023.8.7 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023080739180/",
-          "publishedOn": "2023-08-07T00:57:33.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2023.8.7",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39176",
-          "author": "mamosuke",
-          "description": "JigKickサービスバッテリーエミュレーターBaryon Sweeperがハードウェアとsyscon通信プロトコルが他のPSPモデルと異なるPSP goでも使えるようになりそうです。→→→この記事の続きを読む\nバッテリー内蔵のPSP goでもBaryon Sweeper(パンドラバッテリー)が使えるようになりそう first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023080739176/",
-          "publishedOn": "2023-08-07T00:23:51.000Z",
-          "wordCount": null,
-          "title": "バッテリー内蔵のPSP goでもBaryon Sweeper(パンドラバッテリー)が使えるようになりそう",
           "imageUrl": null
         }
       ]
