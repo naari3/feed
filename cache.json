@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189056321404",
+          "author": null,
+          "description": "今日の進捗　464中344まで完了。+65\nGBA用に工夫して負担を少なくしないとです。具体的にはBGMSTOPが２回つづいたり、16色画像の重ね合わせはGBAでできないというか、すでに画像で重ねてmode3で減色済みなので、その指定に変えてあげないとダメですねー。今月いっぱいかかると思ったら以外や以外でした。うーん、音楽どうしよう。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/11/05/201557",
+          "publishedOn": "2023-11-05T11:15:57.000Z",
+          "wordCount": 398,
+          "title": "移植15",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189056097848",
           "author": null,
           "description": "冷静になって考えるとなんで今更”PC98”ゲームの移植を”GBA”でするのかなあと思います。常軌を逸しているとはまさにこのこと（＾＾；。うーん、これも昔の宿題というやつですかねー・・・。ToHeartGBAもカナンも時間的技術的に無理で諦めていたのに、今ならできるよって人参をぶら下げられて飛びついている感・・・。\n\nまあ、気を取り直して、ゲームの選択肢機能を排除する方向で作っているわけですが、コマンド一覧を作ってみて俯瞰するとやっぱりいらないなあというのが今日の感想です。\n// 選択肢コマンド一覧\nST_OPE_TABLE OpeTable[] = {\n\t{ \"cs01_01.scn\", \"11\" },\n\t{ \"cs01_02.scn\", \"11111\" },\n\t{ \"cs01_03.scn\", \"12122\" },\n\t{ \"cs01_04.scn\", \"1111\" },\n\t{ \"cs01_05.scn\", \"111\" },\n\t{ \"cs01_06.scn\", \"1111\" },\n\t{ \"cs01_07.scn\", \"122221\" },\n\t{ \"cs01_08.scn\", \"11112\" },\n\t{ \"cs01_09.scn\", \"111111121313212122222211123\" },\n\t{ \"cs01_10.scn\", \"1222\" },\n\t{ \"cs01_11.scn\", \"111213222231323232323333333334343434343434\" },\n\t{ \"cs01_12.scn\", \"1112222\" },\n\t{ \"cs01_13.scn\", \"12122223\" },\n\t{ \"cs01_14.scn\", \"1222\" },\n\t{ \"cs01_15.scn\", \"1222\" },\n\t{ \"cs01_16.scn\", \"122222\" },\n\t{ \"cs01_17.scn\", \"1112132\" },\n\t{ \"cs01_18.scn\", \"1213222222\" },\n\t{ \"cs01_19.scn\", \"1112222\" },\n\t{ \"cs01_20.scn\", \"11122222\" },\n\t{ \"cs01_21.scn\", \"11111112122221213132222\" },\n\t{ \"cs02_01.scn\", \"111111111\" },\n左のスクリプトファイルに対して右が操作コマンドです。122とあれば選択肢一覧から「1番目、決定ボタン、2番目、決定ボタン、2番目、決定ボタン」をしないと次のスクリプトに遷移しません。ポチポチしない作りにして良かったと思います。\n\n今日の進捗　464中279まで完了。+70",
@@ -10378,16 +10393,6 @@
           "publishedOn": "2023-08-08T22:09:33.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2023.8.9",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39185",
-          "author": "mamosuke",
-          "description": "PS3 Disc Dumper v4.0.0,BwE PS4 FW Revert Tool 1.0.4,BwE PS5 NOR Tool v1.1.4,pop-fe v1.0.15,ARK-4 Version 4.20.62,WiiUDownloader v2.16,devkitPPC release 44,devkitARM release 62→→→この記事の続きを読む\nGameGaz Daily 2023.8.8 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023080839185/",
-          "publishedOn": "2023-08-07T23:43:18.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2023.8.8",
           "imageUrl": null
         }
       ]
