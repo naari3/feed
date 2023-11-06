@@ -19415,77 +19415,6 @@ GameGaz Daily 2023.8.9 first appeared on 大人のためのゲーム講座.</spa
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
-              rel="noopener">たごもりすメモ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Xcode上のSwift(iOS App)プロジェクトでTestsターゲットのみビルドエラーが起きる</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/08/08/221755" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>iOSアプリを書いてるんだけどちょっと一部(データの変換とかで)ちゃんとユニットテスト書こうかなと思ったりしても、なんか変なエラーが起きてビルドできなかったりする。なんでだよ。
-おそらくAWS Amplifyへの依存、およびその依存ライブラリaws-crt-swiftなどが関係している。ちゃんと理屈のついた解決方法はまだ見付かっていない。
-Testsターゲットがビルドできない
-テストを書くためのTestsターゲット*1をビルドしようとすると、一部の依存関係が見付からないと出る。直接依存関係として指定したものではない。
-Xcode : missing required modules: &#x27;AwsCAuth&#x27;, &#x27;AwsCCal&#x27;, &#x27;AwsCCommon&#x27;, &#x27;AwsCHttp&#x27;, &#x27;AwsCIo&#x27;, &#x27;AwsCMqtt&#x27;, &#x27;AwsCSdkUtils&#x27;
-なんだこれ、と思ってあれこれ調べると、依存ライブラリを全部明示的にリンク対象としてセットすれば解決するぞ、みたいな話を読んだ(だいぶ前のことで、どこを参考にしたか今となっては不明)。
-この設定自体はプロジェクトを開いてから TARGETS → Testsターゲットを選択 → &quot;Build Phases&quot; → &quot;Link Binary With Libraries&quot; を開いて、そこで &quot;+&quot; して出てくるもの全部を選択していた。
-が、これをやると、今度は次の問題が出た。
-XCTestsが見付からない
-次は、テストコードファイル(*Tests.swift)の import XCTest 行でエラーが出たり出なかったりするようになった。出るときは &quot;No such module &#x27;XCTest&#x27;&quot;。エディタ上のエラーとして、あるいはビルド時のエラーとして出る。以下のようなエラーのこともある気がする。
-Cannot load underlying module for &#x27;XCTest&#x27;
-これが出たり出なかったりで、本当によくわからない。たまにテストが走るまでいくんだけど、いかないときは全然ダメ。Clean Build Folderしてからのビルドなども試したが、そんな単純な方法では回避できなかった。
-いくらか調べたところによると、*Tests.swiftファイルがテストじゃない通常ターゲットのビルド対象ファイルに入っているとそういうことが起きる、ことがあるらしいんだけど、自分の手元ではテストファイルが通常ターゲットのビルド対象に入ってたりはしなかった。
-最小限の依存ライブラリのみ明示的にリンクする
-いくらか試行錯誤したけれど、以下のようにしたら、テスト走行までできるようになった。
-Testsターゲットを新しく作りなおす(&quot;Unit Testing Bundle&quot;)
-ビルドエラーが出なくなるまで、ライブラリをひとつずつ、テストターゲットの明示的なリンク対象に追加する
-自分の場合、以下のものを追加したところでエラーが出なくなった。XCTestが見付からなくなることも(今のところ)ない。
-
-やれやれ。
-結論
-やれやれ。なんだろうね。ググってもほとんど同じような話が出てこない。
-対症療法でしかないんだけど、とりあえずはこんな感じで。
-*1:ProjプロジェクトであればProjTestsターゲット</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230808/20230808221628.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/hercelot" target="_blank"
-              rel="noopener">Hercelot</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">なんにでもDry/Wetを追加していいのか</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/hercelot/n/nb41a57a85ca5" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Abletonの細かい話は以下にまとめてます。
-    
-        
-            
-Abletonメモまとめ｜Hercelot｜note「割と使いこなしてるつもりだけど、あれって実際なにが起きてるの？」みたいな、細部仕様に興味ある中級者向けの読み物・覚書を目note.com
-        
-    
-
-続きをみる</span>
-                  </div>
-                  <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/038e696030fd1e532ed767c74c480485fa089ad3.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21269,7 +21198,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-11-06T00:03:32.043Z">2023-11-06T00:03:32.043Z</time>
+    <time id="build-timestamp" datetime="2023-11-06T01:25:13.885Z">2023-11-06T01:25:13.885Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

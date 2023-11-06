@@ -4742,21 +4742,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482956638033",
-          "author": null,
-          "description": "iOSアプリを書いてるんだけどちょっと一部(データの変換とかで)ちゃんとユニットテスト書こうかなと思ったりしても、なんか変なエラーが起きてビルドできなかったりする。なんでだよ。\nおそらくAWS Amplifyへの依存、およびその依存ライブラリaws-crt-swiftなどが関係している。ちゃんと理屈のついた解決方法はまだ見付かっていない。\nTestsターゲットがビルドできない\nテストを書くためのTestsターゲット*1をビルドしようとすると、一部の依存関係が見付からないと出る。直接依存関係として指定したものではない。\nXcode : missing required modules: 'AwsCAuth', 'AwsCCal', 'AwsCCommon', 'AwsCHttp', 'AwsCIo', 'AwsCMqtt', 'AwsCSdkUtils'\nなんだこれ、と思ってあれこれ調べると、依存ライブラリを全部明示的にリンク対象としてセットすれば解決するぞ、みたいな話を読んだ(だいぶ前のことで、どこを参考にしたか今となっては不明)。\nこの設定自体はプロジェクトを開いてから TARGETS → Testsターゲットを選択 → \"Build Phases\" → \"Link Binary With Libraries\" を開いて、そこで \"+\" して出てくるもの全部を選択していた。\nが、これをやると、今度は次の問題が出た。\nXCTestsが見付からない\n次は、テストコードファイル(*Tests.swift)の import XCTest 行でエラーが出たり出なかったりするようになった。出るときは \"No such module 'XCTest'\"。エディタ上のエラーとして、あるいはビルド時のエラーとして出る。以下のようなエラーのこともある気がする。\nCannot load underlying module for 'XCTest'\nこれが出たり出なかったりで、本当によくわからない。たまにテストが走るまでいくんだけど、いかないときは全然ダメ。Clean Build Folderしてからのビルドなども試したが、そんな単純な方法では回避できなかった。\nいくらか調べたところによると、*Tests.swiftファイルがテストじゃない通常ターゲットのビルド対象ファイルに入っているとそういうことが起きる、ことがあるらしいんだけど、自分の手元ではテストファイルが通常ターゲットのビルド対象に入ってたりはしなかった。\n最小限の依存ライブラリのみ明示的にリンクする\nいくらか試行錯誤したけれど、以下のようにしたら、テスト走行までできるようになった。\nTestsターゲットを新しく作りなおす(\"Unit Testing Bundle\")\nビルドエラーが出なくなるまで、ライブラリをひとつずつ、テストターゲットの明示的なリンク対象に追加する\n自分の場合、以下のものを追加したところでエラーが出なくなった。XCTestが見付からなくなることも(今のところ)ない。\n\nやれやれ。\n結論\nやれやれ。なんだろうね。ググってもほとんど同じような話が出てこない。\n対症療法でしかないんだけど、とりあえずはこんな感じで。\n*1:ProjプロジェクトであればProjTestsターゲット",
-          "link": "https://tagomoris.hatenablog.com/entry/2023/08/08/221755",
-          "publishedOn": "2023-08-08T13:17:55.000Z",
-          "wordCount": null,
-          "title": "Xcode上のSwift(iOS App)プロジェクトでTestsターゲットのみビルドエラーが起きる",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230808/20230808221628.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20230808/20230808221628.png"
         }
       ]
     },
@@ -6624,16 +6609,6 @@
           "wordCount": null,
           "title": "AbletonのMIDIエンベロープ自動リセット",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/hercelot/n/nb41a57a85ca5",
-          "author": null,
-          "description": "Abletonの細かい話は以下にまとめてます。\n    \n        \n            \nAbletonメモまとめ｜Hercelot｜note「割と使いこなしてるつもりだけど、あれって実際なにが起きてるの？」みたいな、細部仕様に興味ある中級者向けの読み物・覚書を目note.com\n        \n    \n\n続きをみる",
-          "link": "https://note.com/hercelot/n/nb41a57a85ca5",
-          "publishedOn": "2023-08-08T12:15:34.000Z",
-          "wordCount": 2929,
-          "title": "なんにでもDry/Wetを追加していいのか",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/038e696030fd1e532ed767c74c480485fa089ad3.png"
         }
       ]
     },
