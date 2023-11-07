@@ -2,10 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-07T09:01:52.090Z</updated>
+    <updated>2023-11-07T10:01:47.787Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[mambaやripのinstallが何故早いのか調べたメモ]]></title>
+        <id>hatenablog://entry/6801883189055586275</id>
+        <link href="https://vaaaaaanquish.hatenablog.com/entry/2023/11/07/180723"/>
+        <updated>2023-11-07T09:07:23.000Z</updated>
+        <summary type="html"><![CDATA[- はじめに -
+最近、PythonのパッケージインストーラーであるpipをRustで書き直したripというツールが公開された。
+github.com
+ripのREADME.mdには、flaskを題材に依存解決とインストールが1秒で終わるようなgifが貼られている。
+この速さは一体どこから来ているのか調べた。
+- はじめに -
+- 宣伝 -
+- ripの成り立ち -
+Anaconda
+mamba-org
+prefix.dev
+- condaがinstallで行うこと -
+- mambaでの速度改善 -
+- ripに応用されたこと -
+- おわりに -
+　
+- 宣伝 -
+来週開催の技術書典15で「エムスリーテックブック５」が出ます。
+私の内容は「自作Python Package Manager入門」で、CLIツールの作り方から始まって40ページでPyPIの仕様やその背景となっている要素を把握しながら、lock、install、run、build、uploadといったサブコマンドを実装してPackage Manager開発者になろうという内容です。Python開発経験2年くらいあれば作れると思います。
+本誌ではまさかの「いろんな言語のパッケージマネージャ比べてみた」というパッケージマネージャネタ被りが起きており、こちらでは同僚がCargoやnpm、poetry、go mod、pnpm、yarnといったツールの内部実装を比較しています。本記事と同様にPackage Manager完全理解者の道を歩む事ができる本になっています。
+techbookfest.org
+# オンライン開催
+会期：2023/11/11 (土) 〜2023/11/26（日）
+会場：技術書典オンラインマーケット
+# オフライン開催
+会期：2023/11/12 (日) 11:00～17:00
+会場：池袋・サンシャ…]]></summary>
+        <author>
+            <name>Stimulator</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Google, Yahoo の Sender Guidelines について]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=21788</id>
