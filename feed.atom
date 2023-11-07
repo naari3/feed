@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-07T18:01:43.548Z</updated>
+    <updated>2023-11-07T19:01:16.257Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13642,39 +13642,6 @@ PlayStation 4 システムソフトウェア バージョン 10.71 first appeare
 PS5システムソフトウェアアップデート バージョン 23.01-07.61.00 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[素性のよくわからない検温カメラから画像を取り出す手口]]></title>
-        <id>hatenablog://entry/820878482957115378</id>
-        <link href="https://honeylab.hatenablog.jp/entry/2023/08/10/150919"/>
-        <updated>2023-08-10T06:09:19.000Z</updated>
-        <summary type="html"><![CDATA[ここまで散々体温計付きカメラを分解してきましたが、久しぶりに面白い案件にぶち当たってしまいました。
-これにどれだけの何が残ってるかまだわかんないけど、このラベルが貼ってあるガラクタを、「これが検温カメラの型番だと思ってヤフオクに出品するレベルの人間の手に渡ってる」の何かしらの問題だと思う
-どっかのショップ店頭の備品を誰か売ったんかな、と思ってたんだけど... https://t.co/XN1g9XVBwQ pic.twitter.com/vv8Ja9VFL5
-2023年8月8日
-
-
- 
-大元の所有者に連絡を投げたつもりですが、お盆進行なのか全然返事が来ませんね。
-つまんないので、今回入手した検温カメラからどうやって画像を取り出したかを記録しておきましょう。
-このカメラ、普通に立ち上げるだけで、ネットワークインターフェイスは有効化され、
-192.168.1.18が割り当てられます。同じセグメントからLAN接続すれば、いろいろできそうですが…
-まずポートスキャンしてみたところ、23(telnet)、80(http)、554(RTSP)が空いていることがわかりました。
-早速ブラウザでアクセスしてみますが…
-
-認証が必要です。思いついたパスワードを入れてみますが、通りませんでした。
-このカメラ、いろいろ探してみると、「AM520RT」というのが見つかりました。
-メーカーのサイトを見てみます。
-www.aimex.co.jp
-みていると、どうやら３月のマスク規制解除のため、ユーザー設定でマスク警報を解除できるようにしてあるとのことです。
-そのための管理ソフトが準備してある…と書いてありますが、
-
-なんとリンク切れ。
-方法の説明を見ると、アプリをインストールするだけでパスワードなどを入れるところがありませんので、このアプリ内にパスワードが埋まっている可能性があります。
-webarchi…]]></summary>
-        <author>
-            <name>honeylab's blog</name>
         </author>
     </entry>
     <entry>
