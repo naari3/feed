@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-08T15:01:46.745Z</updated>
+    <updated>2023-11-08T16:02:33.184Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13578,37 +13578,6 @@ GameGaz Daily 2023.8.12 first appeared on 大人のためのゲーム講座.]]><
 インムガキ…]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【データ分析基盤】Notionをデータソースとして使う]]></title>
-        <id>hatenablog://entry/820878482957404674</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2023/08/11/123859"/>
-        <updated>2023-08-11T03:38:59.000Z</updated>
-        <summary type="html"><![CDATA[はじめに
-「Notion*1にしかない情報を使ってダッシュボードを構築してほしい」みたいな需要が出てきた。その需要にこたえるため、Notionからデータを取り込んでSnowflakeに取り込む仕組みを作ってみたら社内で案外評判が良かったので、やり方を記しておきたい。
-www.notion.so
-この記事では取り込む部分までしか書かない。ダッシュボードとして表示させるためには、もう二手間くらい必要になるので注意。
-どんな要望？
-Notionにデータベースがある
-そのデータベース内にダッシュボードで使えそうな情報があるから、表示できるようにしてほしい
-「データベース」のイメージ
-Notionのデータベースというのは要するにページの集合体、つまりはレコードの集合なので、一つ一つレコードを取り出して処理していけばいけそうだ。アプリ上から見てみるとよくわからないが、APIで操作してみると「ページの集合」だというのがよくわかる。
-www.notion.so
-ユースケース
-Notionは社内ドキュメントとして利用している
-「プロダクト側では取れないが、Notionにはある」情報が欲しいときに使う
-どうやる？
-Notion API (Python) を利用して、データベース(Notion用語)からデータを取得し、pandas.DataFrame 形式に変換してからCSVに落とし込む。
-CSV形式のデータをSnowflakeの内部ステージにPUTし、COPY INTO 文でテーブルに入れる。
-注意点
-Notionのデータベース内に「プロダクト側のデータと紐づけるキー」がないと使い物にならない
-人が更新するものなので、エラーよく発生する。なので、Slack通知をするなどして、エラーが発生した場合にわかるようにしておく必要がある。悲鳴ドリブンでやっても構わないと思う。
-
-
-Q: 悲鳴ドリブンって…]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>

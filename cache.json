@@ -1841,21 +1841,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482957404674",
-          "author": null,
-          "description": "はじめに\n「Notion*1にしかない情報を使ってダッシュボードを構築してほしい」みたいな需要が出てきた。その需要にこたえるため、Notionからデータを取り込んでSnowflakeに取り込む仕組みを作ってみたら社内で案外評判が良かったので、やり方を記しておきたい。\nwww.notion.so\nこの記事では取り込む部分までしか書かない。ダッシュボードとして表示させるためには、もう二手間くらい必要になるので注意。\nどんな要望？\nNotionにデータベースがある\nそのデータベース内にダッシュボードで使えそうな情報があるから、表示できるようにしてほしい\n「データベース」のイメージ\nNotionのデータベースというのは要するにページの集合体、つまりはレコードの集合なので、一つ一つレコードを取り出して処理していけばいけそうだ。アプリ上から見てみるとよくわからないが、APIで操作してみると「ページの集合」だというのがよくわかる。\nwww.notion.so\nユースケース\nNotionは社内ドキュメントとして利用している\n「プロダクト側では取れないが、Notionにはある」情報が欲しいときに使う\nどうやる？\nNotion API (Python) を利用して、データベース(Notion用語)からデータを取得し、pandas.DataFrame 形式に変換してからCSVに落とし込む。\nCSV形式のデータをSnowflakeの内部ステージにPUTし、COPY INTO 文でテーブルに入れる。\n注意点\nNotionのデータベース内に「プロダクト側のデータと紐づけるキー」がないと使い物にならない\n人が更新するものなので、エラーよく発生する。なので、Slack通知をするなどして、エラーが発生した場合にわかるようにしておく必要がある。悲鳴ドリブンでやっても構わないと思う。\n\n\nQ: 悲鳴ドリブンって…",
-          "link": "https://contradiction29.hatenablog.com/entry/2023/08/11/123859",
-          "publishedOn": "2023-08-11T03:38:59.000Z",
-          "wordCount": null,
-          "title": "【データ分析基盤】Notionをデータソースとして使う",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230811/20230811122542.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20230811/20230811122542.png"
         }
       ]
     },
