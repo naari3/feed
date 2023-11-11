@@ -1768,6 +1768,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189057840675",
+          "author": null,
+          "description": "会社入るまでのあらすじ：\ncontradiction29.hatenablog.com\nPMFした直後のスタートアップに入社してから大体1年経った。振り返ってみたいと思う。\n自分の中で変化したこと\n1. 変化への耐性が付いた\n「スタートアップは変化が激しい」は一般論だが、何の変化が激しいかについては会社や個人によってそれぞれに思うことがあると思う。自分の場合、特に変化が激しかったのは以下の3つだと思っている。\n組織の変化\n求められる能力の変化\n人の変化\n組織の変化\n自分が入ったころは「データ戦略部門」なるところがあったが、その部門はもうない。ほかにも、隣接する部門でも似たようなことがあったり、部門名がコロコロ変わったりする。新しい組織ができたり、組織が消えたりする。\n事業のフェーズや個人の能力の変化、人の出入り、様々な大人の事情が交錯し、組織の変化として体現していく。見た目の変化の根流にはいろいろな事情があったりするものらしい。ただし、組織が変化したとしても個人としてやるべきことはあまり変わらなかったりする。見た目の変化に臆することなく、やるべきことを見失わないようになった。\n求められる能力の変化\n人が出たり入ったり（後述）、取り組んでいる課題の性質が変わるするスピードが速い。そのため、求められるスキルも変化する。例えば、データアナリストとして求められる能力とアナリティクスエンジニアとして求められる能力は違う。前者はAirflowを触らないが、後者は触る。\n課題をベースにして、求められる能力をキャッチアップしていく。一度理解したものは簡単に忘れないので、相乗効果のようなものが出てくる。最終的なデータの利用者のことを考えながら技術選定ができるようになったりする。他のスキルホルダーとの協業を基本とするデータ系の職種にとっては、実に効率的にスキルを身に着けられる環境だったのだと思う。\n人の変化\nPMFした直後のフェーズには多くの人が入ってくる。全社会が月に1回あるが、毎回「知らない人」がいたりする。オフィス行くと大体知らない人がいる。挨拶はする。そして重要なことだが、来る者があれば去る者もいる。最初は慣れなかったが、今はもう慣れた。\n結局のところ、人が変化する前提で組織や仕組みを作る方が結局有益なのだと思う。\n2. 自信がついた\n実力と意志さえ示せれば挑戦の機会は大量にあるので、打席は大量にある。問題なのは立とうとする意志なので、「30点でも打席に立とう」というマインドが大事になる。\n speakerdeck.com\nずっとやっていたら、案外何とかなった。スキル的な意味で結構自身はついたのだと思う。どんな状況でも共通して必要とされるスキルは多くなく、そのスキルさえあれば紆余曲折あったとしても最終的に何とかなってしまう。重要なことだが、そういうのは大体先人が語っていたりする。巨人の肩に乗るだけでいい。\nAmazon.co.jp: SOFT SKILLS ソフトウェア開発者の人生マニュアル 第2版 eBook : ジョン・ソンメズ, 長尾 高弘, まつもとゆきひろ: 本\n最近は自信過剰になっている気がしているので、定期的にコミュニティの勉強会に参加して知識を仕入れている。謙虚であるより貪欲である方が性に合うっぽい。\n3. 給料が上がった\nやっぱりお金は大事\nこれからどうする？\nしばらくはエンジニア兼データアナリティクスチームのリードとして働きます。飽きたらもう少し考えようと思う。あともう少し現実世界を何とかしたい気持ちがある。",
+          "link": "https://contradiction29.hatenablog.com/entry/2023/11/11/213000",
+          "publishedOn": "2023-11-11T12:30:00.000Z",
+          "wordCount": 320,
+          "title": "雑記：スタートアップに来てから1年経った",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189051813344",
           "author": null,
           "description": "Architecture is Leadership\nJoe ReisとMatt Housleyの著書『Fundamentals of Data Engineering』はデータエンジニアリングにおける基本的な考え方を網羅的に説明した本で、その中にデータ・アーキテクチャの基本原則を説くチャプターがある。9つある基本原則の1つとして「Architecture is Leadership」という考え方が登場する。引用してみよう。\nData architects are responsible for technology decisions and architecture descriptions and disseminating these choices through effective leadership and training.\n Data architects should be highly technically competent but delegate most individual contributor work to others. Strong leadership skills combined with high technical competence are rare and extremely valuable. The best data architects take this duality seriously. (p.144)\n(日本語訳) データアーキテクトは技術的な意思決定とアーキテクチャの説明に責任を持ち、効果的なリーダーシップとトレーニングを通じてこれらを普及させる役割がある。データアーキテクトは高い技術的能力を持つべきであるが、ほとんどのインディビジュアル・コントリビューターとしての仕事は他の人に任せる。高い技術…",
