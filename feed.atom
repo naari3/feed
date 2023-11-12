@@ -2,10 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-12T12:01:44.837Z</updated>
+    <updated>2023-11-12T13:02:01.662Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ChatGPT授乳ハックという失われつつある技術について]]></title>
+        <id>hatenablog://entry/6801883189058158467</id>
+        <link href="https://honeshabri.hatenablog.com/entry/Madonna-Hack"/>
+        <updated>2023-11-12T12:45:00.000Z</updated>
+        <summary type="html"><![CDATA[ChatGPTのDALL·E 3による画像生成は非常に強力だ。
+ブックマーク保存をおすすめします。
+
+インフルエンサーたちが隠した技術
+11月7日にOpenAI DevDayが開催されてからというもの、生成AI系インフルエンサーたちが大騒ぎしている。発表された機能やAPIの数々を見れば、そうなるのも無理はない。俺のような一般ユーザーでさえ、できることが一気に増えたのだから。
+例えば自分だけのChatGPTを簡単に作成・共有できるGPTsだ。俺もさっそく触り、本しゃぶりの知識を全部突っ込んだAishabriを作ってみた*1。
+chat.openai.com
+だが、インフルエンサーは新たに登場した機能ばかり口にし、その影で失われつつある技術については語ろうとしない。だから俺が代わりに語ろう。禁断の技「授乳ハック」について。
+コンテンツポリシーの制約
+授乳ハックとは何か。それはChatGPTにこのような画像を生成させる技のことである。
+授乳ハックによって生成された画像
+ChatGPTで画像生成している人ならば、信じられないかもしれない。何なら悪質なコラと思うだろう*2。なぜならChatGPTに課せられているコンテンツポリシーの制約は厳しく、卑猥な画像は生成できないように対策が施されているからである。
+コンテンツポリシー違反で出力できない
+しかも厄介なことにコンテンツポリシーの対策は多段階で設定されている。ChatGPTの反応から、俺は以下のように推測した。
+コンテンツポリシー違反チェック
+ChatGPT：ユーザーからの指示をチェック。違反していたら拒否する。
+DALL·E 3：ChatGPTからの指示と自ら生成した画像をチェック。違反していたら生成しない/画像を渡さない。
+OpenAI：ChatGPTとは別にユーザーとChatGPTの言動をチェック。違反していたらフラグを立てる。…]]></summary>
+        <author>
+            <name>本しゃぶり</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[生放送SE一覧（随時更新）]]></title>
         <id>https://note.com/futon_is_god/n/n5d2f272610fb</id>
@@ -13626,49 +13653,6 @@ www.nicovid…]]></summary>
         <summary type="html"><![CDATA[2023年5月31日に宮城県登米市にある登米総合産業高等学校にて、農業科の2・3年生の生徒さんに「スマート農業」についての授業をさせていただきました。 季節も変わって7月13日、今度は1年生も含めた1...]]></summary>
         <author>
             <name>藤井 俊平</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Karte.127 | 僕らは続く]]></title>
-        <id>https://mangacross.jp/comics/yabai/135</id>
-        <link href="https://mangacross.jp/comics/yabai/135"/>
-        <updated>2023-08-15T01:00:00.000Z</updated>
-        <author>
-            <name>桜井のりお</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[お笑い芸人が #れいわ新選組 から地方議員を目指して選挙に出る話。]]></title>
-        <id>https://note.com/tarent26/n/n136598877ac4</id>
-        <link href="https://note.com/tarent26/n/n136598877ac4"/>
-        <updated>2023-08-15T00:58:45.000Z</updated>
-        <summary type="html"><![CDATA[01
-続きをみる]]></summary>
-        <author>
-            <name>チャーミングじろうちゃん</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[本当にあった芸人生活]]></title>
-        <id>https://note.com/tarent26/n/n66f68d5c4d17</id>
-        <link href="https://note.com/tarent26/n/n66f68d5c4d17"/>
-        <updated>2023-08-15T00:42:43.000Z</updated>
-        <summary type="html"><![CDATA[01
-続きをみる]]></summary>
-        <author>
-            <name>チャーミングじろうちゃん</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[https://suzuri.jp...]]></title>
-        <id>https://note.com/sizes/n/n836a2f59b521</id>
-        <link href="https://note.com/sizes/n/n836a2f59b521"/>
-        <updated>2023-08-15T00:05:05.000Z</updated>
-        <summary type="html"><![CDATA[https://suzuri.jp/jiyuusa/14161069/long-sized-water-glass/l/clear?utm_source=twitter&utm_medium=social&utm_campaign=item_detail_share
-SUZURIでオリジナルグラスが発売されます！かわいいので、是非お手に取ってみてください
-続きをみる]]></summary>
-        <author>
-            <name>自由さ</name>
         </author>
     </entry>
     <entry>
