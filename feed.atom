@@ -2,10 +2,61 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-16T14:01:50.376Z</updated>
+    <updated>2023-11-16T15:01:52.536Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Chord Trackerから楽譜を受信するアプリ「CT Receiver 」ver.2 できた！]]></title>
+        <id>hatenablog://entry/6801883189059377380</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2023/11/16/234207"/>
+        <updated>2023-11-16T14:42:07.000Z</updated>
+        <summary type="html"><![CDATA[honeylab.hatenablog.jp
+ 
+上のリンクにあるように、ChordTrackerの通信プロトコルを掌握したため、
+完全にYAMAHAのキーボードのフリをして楽譜を受信できるようになりました。
+受信した楽譜はコード情報を抽出したテキストデータ、もしくは
+コード情報と和音を配置した楽譜であるMusicXML形式のファイルとして出力できます。
+
+
+CT Receiver
+Hiromitsu Niituma
+Music
+Free
+
+apps.apple.com
+どうしても、２台の端末が必要になってしまうのが残念ですが、
+何かしらで音楽をがっつりやってるならどうにか２台調達できるんじゃないですかね。
+ホストPCがMacであれば、Mac上でこのiPhone用アプリを動かして、
+USBケーブルでiPhoneを接続してChordTrackerを起動して、
+Mac側で楽譜データを受信できます。
+（Mac側のAudioMIDI設定で、iPhoneをオーディオ・MIDIデバイスとして有効にさせると、Mac側で起動したCT ReceiverからiPhoneのChordTracker が見えるようになります。）
+AndoridのChordTrackerからでも送信できるはずです。
+こんな感じで接続します。
+
+どうにかしてChordTrackerとCT ReceiverをMIDIのレイヤで接続できれば
+あとはどうにかなるはずです。
+まず、「CT Receiver」を起動し、「BLE Start」でMIDIデバイスとして探索させます
+ChordTrackerからBLE MIDIデバイスを探して接続します。
+ChotdTrackerの楽器として「CT Receiver」が表示されたら成功です。
+もしくは、BLEではなく、USB－MIDIなどを経由して接続してもいいです。
+ 
+簡単に使ってみる手順の動画を作ってみました
+youtu.be
+ 
+CT Receiverで受信したファイルはアプリのデータフォルダ内に保存されています。
+Target Fileとして過去に受信したファイルを選択すると、そのデータを開いて
+コードデータと楽譜データを出力することができます
+（一度転送したデータを開くときはChord Trackerと接続する必要はありません）
+さて、これ使ってくれる人いるかな…
+わかんなかったらTwitterとかで聞いてね！
+Tweets by bakueikozo
+
+twitter.com]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[最近の日記3]]></title>
         <id>hatenablog://entry/6801883189056522596</id>

@@ -2147,6 +2147,21 @@
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189059377380",
+          "author": null,
+          "description": "honeylab.hatenablog.jp\n \n上のリンクにあるように、ChordTrackerの通信プロトコルを掌握したため、\n完全にYAMAHAのキーボードのフリをして楽譜を受信できるようになりました。\n受信した楽譜はコード情報を抽出したテキストデータ、もしくは\nコード情報と和音を配置した楽譜であるMusicXML形式のファイルとして出力できます。\n\n\nCT Receiver\nHiromitsu Niituma\nMusic\nFree\n\napps.apple.com\nどうしても、２台の端末が必要になってしまうのが残念ですが、\n何かしらで音楽をがっつりやってるならどうにか２台調達できるんじゃないですかね。\nホストPCがMacであれば、Mac上でこのiPhone用アプリを動かして、\nUSBケーブルでiPhoneを接続してChordTrackerを起動して、\nMac側で楽譜データを受信できます。\n（Mac側のAudioMIDI設定で、iPhoneをオーディオ・MIDIデバイスとして有効にさせると、Mac側で起動したCT ReceiverからiPhoneのChordTracker が見えるようになります。）\nAndoridのChordTrackerからでも送信できるはずです。\nこんな感じで接続します。\n\nどうにかしてChordTrackerとCT ReceiverをMIDIのレイヤで接続できれば\nあとはどうにかなるはずです。\nまず、「CT Receiver」を起動し、「BLE Start」でMIDIデバイスとして探索させます\nChordTrackerからBLE MIDIデバイスを探して接続します。\nChotdTrackerの楽器として「CT Receiver」が表示されたら成功です。\nもしくは、BLEではなく、USB－MIDIなどを経由して接続してもいいです。\n \n簡単に使ってみる手順の動画を作ってみました\nyoutu.be\n \nCT Receiverで受信したファイルはアプリのデータフォルダ内に保存されています。\nTarget Fileとして過去に受信したファイルを選択すると、そのデータを開いて\nコードデータと楽譜データを出力することができます\n（一度転送したデータを開くときはChord Trackerと接続する必要はありません）\nさて、これ使ってくれる人いるかな…\nわかんなかったらTwitterとかで聞いてね！\nTweets by bakueikozo\n\ntwitter.com",
+          "link": "https://honeylab.hatenablog.jp/entry/2023/11/16/234207",
+          "publishedOn": "2023-11-16T14:42:07.000Z",
+          "wordCount": 540,
+          "title": "Chord Trackerから楽譜を受信するアプリ「CT Receiver 」ver.2 できた！",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/9db0ad1dfd02e89673714a6507472578f843036d/enlarge=0;height=200;version=1;width=200/https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple116%2Fv4%2Fce%2F26%2F8e%2Fce268e04-3fd5-94c1-b67b-f3379d4ce486%2FAppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png%2F100x100bb.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9db0ad1dfd02e89673714a6507472578f843036d/enlarge=0;height=200;version=1;width=200/https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple116%2Fv4%2Fce%2F26%2F8e%2Fce268e04-3fd5-94c1-b67b-f3379d4ce486%2FAppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png%2F100x100bb.jpg"
+        },
+        {
           "id": "hatenablog://entry/6801883189054770670",
           "author": null,
           "description": "もしかしたら同じようなことを調べる人が２０年後に現れるかもしれない\n・デバイス検出はAppleMIDI(bonjor)\n・ポート番号は5004(RTP-MIDI)と同じ\n・セッションプロトコルはAppleMidiと似ているが、\nzenn.dev\nにある「IN」は「YI」、「OK」は「YO」などの置き換えがある。BYは一緒。\nまた、[FF]-[FF]-[XX]-[XX]の後の16バイトは全て０で埋まっている\n（AppleMidiではプロトコルバージョン、識別IDなどが入れられる）",
