@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-19T01:27:50.554Z</updated>
+    <updated>2023-11-19T02:13:42.594Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2023.11.19]]></title>
+        <id>https://gamegaz.com/?p=39876</id>
+        <link href="https://gamegaz.com/2023111939876/"/>
+        <updated>2023-11-19T01:57:13.000Z</updated>
+        <summary type="html"><![CDATA[PlayStation 5 Remote JAR Loader(ps5-jar-loader) v1.1,GDBStub(Nightly-gdbstub_plugin-20231118-195010),Ryujinxの2023年10月の開発状況進捗レポート→→→この記事の続きを読む
+GameGaz Daily 2023.11.19 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[自分でも3本えらんでみました]]></title>
         <id>https://note.com/yabaiwayo/n/n4dbd5e3131b7</id>
@@ -13301,24 +13312,6 @@ GameGaz Daily 2023.8.22 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>ておつく</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[低レイヤ技術を間接的に仕事で生かしてきた経験の共有。元Linuxカーネル開発技術者の場合]]></title>
-        <id>hatenablog://entry/820878482960431425</id>
-        <link href="https://satoru-takeuchi.hatenablog.com/entry/2023/08/21/222744"/>
-        <updated>2023-08-21T13:27:44.000Z</updated>
-        <summary type="html"><![CDATA[はじめに
-ITの世界で「低レイヤ技術」と呼ばれるものがあります。明確に定義されているわけではありませんが、アプリケーションのような直接エンドユーザに触れる部分ではなく、しかもなるべく生のコンピュータに近い部分、たとえばOSカーネルやコンパイラ、CPUを開発する技術などがあります。これらの技術に明るい人はそうそういないのですが、「やってみたい」という根強い人気があります。
-学生のかたでもセキュリティキャンプなどで実際にある程度身につけてしまうような人もいます。そしてますますこの手の技術に趣味としてのめり込んでいって楽しくなる…というところまではいいのですが、「ではこの技術を会得した先に何があるのか」と不安になる人も多いようです。とくに学生さんの場合は「低レイヤ技術を使って今後なんらかの仕事をして生きていけるのか？」といったことが気になるようです。今日もそのような話を少し耳にしたので、自分の経験を共有する記事を書くことにしました。
-わたしはかつて低レイヤ技術のうち、OSカーネル、もっと具体的にいうとLinuxカーネルの開発に15年ほど従事してきました。Webサービスを提供する会社のインフラ技術者として働いています。Linuxカーネル開発をしていたころの話は以下の記事ですでに書いたので*1、本記事では「低レイヤ技術(Linuxカーネル開発技術)を他の仕事でどうやって生かしてきたか」ということを書きます。
-satoru-takeuchi.hatenablog.com
-対象読者はこの手の技術を身に着けたいと思っている、すでにある程度身に着けている人です。社会人のかたでも役立つとは思いますが、とくに学生さん向けに書いています。
-前提
-昔の仕事で得たスキルセットをもう少し具体化すると次のようになります。
-Linuxカーネルの全体構造の概要がわかる。 一部サブシステムについてはソースコード…]]></summary>
-        <author>
-            <name>覚書</name>
         </author>
     </entry>
     <entry>
