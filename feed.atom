@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-23T05:01:41.190Z</updated>
+    <updated>2023-11-23T06:01:44.603Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AWS LambdaのRuby .zipパッケージでgitから取得したgemを使う]]></title>
+        <id>hatenablog://entry/6801883189061057826</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2023/11/23/144703"/>
+        <updated>2023-11-23T05:47:03.000Z</updated>
+        <summary type="html"><![CDATA[AWS LambdaでRubyランタイムを使っててzipアーカイブで関数コードをアップロードしてる人向け。
+基本的にはGemfileに依存関係書いてbundle config set --local path 'vendor/bundle'してbundle installすればいい。以下のドキュメントを読もう。
+docs.aws.amazon.com
+んだけど、Gemfileにrubygems.org以外から取得したgem、特にgitを指定したものを使っている場合にこれだけだとうまくいかないので、原因と対処を書いておく。
+そもそもLambdaは何をやってるか
+上述ドキュメントを読むとわかるが、zipファイルにはGemfile.lockもGemfileも入れない。それで動作する。これはどういうことかというと、AWS Lambdaのランタイム側ではBundlerを使わず(?)、vendor/bundle 以下にLambdaが想定しているパスで置かれているファイルを直接探索するように$LOAD_PATHが指定されてるんじゃないかと思う。*1
+で、通常rubygems.orgから取得したgemについては vendor/bundle/ruby/3.2.0/gems/ 以下にmyclient-1.1.0みたいなディレクトリでコード等が展開される。またvendor/bundle/ruby/3.2.0/specifications/ ディレクトリにgemspecファイルがmyclient-1.1.0.gemspecとして置かれる。試してみていた範囲では、gemspecを検出したらそれに対応するgemのディレクトリを$LOAD_PATHに追加してるんじゃないかと思う。
+gitから取得したgemの扱い
+gitから取得したgemについてはBundlerはrubygems.orgからのものとは異なり、vendor/bundle/ruby/3.2.0/bundler/gems/以下にmyclient-xxxxxxxのようなディレクトリで展開される。xxxxxの部分はcommit hash。
+これはLambdaランタイムが読み込むディレクトリと異なっているため、zipファイルに含まれていても実行時にロードパスが通らず、requireしてもエラーになる。なんということでしょう。
+無理矢理パスを通す
+しょうがないので、以下のようにしてzipアーカイブを作れば動くようになる。
+1. ruby/3.2.0/gems以下にシンボリックリンクを作成する
+bundle installしてgitから取得したgemが展開されたら、そのディレクトリに対して以下のようにシンボリックリンクを作る。
+$ ln -s vendor/bundle/ruby/3.2.0/bundler/gems/myclient-xxxxxx vendor/bundle/ruby/3.2.0/gems/myclient-1.1.0
+こうすれば手元で実行するときにも壊れない。zipアーカイブを作るときは*2シンボリックリンクだった部分はそこにコピーされたようになるはず。つまり、Lambda環境ではruby/3.2.0/gems以下に該当gemのコピーが展開される。
+2. specifications以下にgemspecをコピーする
+gemspecがないと動かないのでこれもオリジナルの場所からコピーする。コピー時にバージョン番号をつけたファイルにするのに注意。
+$ cp vendor/bundle/ruby/3.2.0/bundler/gems/myclient-xxxxx/myclient.gemspec vendor/bundle/ruby/3.2.0/specifications/myclient-1.1.0.gemspec
+(余談) pathで指定したgemはどうなる?
+Gemfileではgitで指定する他にもpathでローカルパスにあるgemを使うよう指定できる。開発中のgemを直接使うときに便利。
+が、この指定だとBundlerは該当パスを直接見に行ってライブラリをロードし、vendor/bundle以下にはコピーを作らない。このため、zipアーカイブにしようとしても入ってくれず、Lambdaランタイム上では使いようがないということになる。
+ローカルストレージ上のものをコピーしてzipアーカイブに入れてもいいけど、何が起きるかちょっとわからないのが怖い気もするので、開発中とはいえgitリポジトリ経由で入れるようにしたほうがいいかなと思います。
+*1:書きながら思ったけど実行環境にBundlerがロードされているかどうかはちょっとコード書けばするわかるな……やるのがめんどくさい
+*2:おそらく大多数の環境では]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2023.11.23]]></title>
         <id>https://gamegaz.com/?p=39899</id>
