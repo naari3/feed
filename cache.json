@@ -8176,16 +8176,6 @@
           "wordCount": null,
           "title": "JavaScript Primer v5.0.0: ES2023の対応/CC BYライセンスに変更/Open Collectiveで支援できるようになりました",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/08/29/ni.zsh-socket.dev/",
-          "author": null,
-          "description": "npm/yarn/pnpm/bunを同じコマンドで扱えるni.zshに、npmで配布されているマルウェアを間違ってインストールするのを防ぐ機能を追加しました。\nni.zshについては、次の記事を参照してください。\nnpm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた | Web Scratch\nnpmパッケージのマルウェア\nnpmパッケージとしてマルウェアをpublishして開発者を狙うサプライチェーン攻撃が最近多くなっています。\nたとえば、次の記事ではemails-helperというもっともらしいパッケージ名でマルウェアが配布されていました。\nNPM Package Masquerading as Email Validator Contains C2 and Sophisticated Data Exfiltration\n他にもtyposquattingという有名なパッケージ名のtypoを狙ってマルウェアを配布しているケースも多いです。\nMalicious Packages in npm Targeting Azure Developers\nnpmは利用者が多いため、こういったマルウェアのパッケージが月に数百件とかの単位で増えています。\nVulnerability DB | Snyk\n最近では、1つのパッケージではなく、複数のパッケージを組み合わせて発動するようなマルウェアもあります。\nこれは、検知の回避などが目的だと思いますが、攻撃がどんどん複雑になってきています。\nPhylum Discovers Sophisticated Ongoing Attack on NPM\n現状のマルウェアの多くはローカルの環境変数やAPIキー、秘密鍵などを盗むようなものが多いです。\nそのため、これらを空振りさせることも一つの対策で、それについては次の記事…",
-          "link": "https://efcl.info/2023/08/29/ni.zsh-socket.dev/",
-          "publishedOn": "2023-08-29T10:46:00.000Z",
-          "wordCount": null,
-          "title": "ni.zsh: npmインストール時のサプライチェーン攻撃を検知する機能を追加",
-          "imageUrl": null
         }
       ]
     },

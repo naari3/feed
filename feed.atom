@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-26T22:02:08.949Z</updated>
+    <updated>2023-11-26T23:02:04.487Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13037,31 +13037,6 @@ GameGaz Daily 2023.8.30 first appeared on 大人のためのゲーム講座.]]><
 ・４月１日ほか　拡大エフェクト]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ni.zsh: npmインストール時のサプライチェーン攻撃を検知する機能を追加]]></title>
-        <id>https://efcl.info/2023/08/29/ni.zsh-socket.dev/</id>
-        <link href="https://efcl.info/2023/08/29/ni.zsh-socket.dev/"/>
-        <updated>2023-08-29T10:46:00.000Z</updated>
-        <summary type="html"><![CDATA[npm/yarn/pnpm/bunを同じコマンドで扱えるni.zshに、npmで配布されているマルウェアを間違ってインストールするのを防ぐ機能を追加しました。
-ni.zshについては、次の記事を参照してください。
-npm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた | Web Scratch
-npmパッケージのマルウェア
-npmパッケージとしてマルウェアをpublishして開発者を狙うサプライチェーン攻撃が最近多くなっています。
-たとえば、次の記事ではemails-helperというもっともらしいパッケージ名でマルウェアが配布されていました。
-NPM Package Masquerading as Email Validator Contains C2 and Sophisticated Data Exfiltration
-他にもtyposquattingという有名なパッケージ名のtypoを狙ってマルウェアを配布しているケースも多いです。
-Malicious Packages in npm Targeting Azure Developers
-npmは利用者が多いため、こういったマルウェアのパッケージが月に数百件とかの単位で増えています。
-Vulnerability DB | Snyk
-最近では、1つのパッケージではなく、複数のパッケージを組み合わせて発動するようなマルウェアもあります。
-これは、検知の回避などが目的だと思いますが、攻撃がどんどん複雑になってきています。
-Phylum Discovers Sophisticated Ongoing Attack on NPM
-現状のマルウェアの多くはローカルの環境変数やAPIキー、秘密鍵などを盗むようなものが多いです。
-そのため、これらを空振りさせることも一つの対策で、それについては次の記事…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
