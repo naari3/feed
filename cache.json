@@ -3071,21 +3071,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482962497236",
-          "author": null,
-          "description": "Scala 3、正式リリースされてからそこそこ経ってますが皆さん使ってますか？実は自分は、主にIntellij IDEAのScala 3対応に不安もあってScala 2.13系列をずっと使い続けて来たのですが、最近はScala 3対応も進んできたようなので乗り換えを始めることにしました。で、手始めにということで型レベル自然数（型レベルペアノ数）を定義してみることにしました。\n型レベル自然数は読んで字の如くで、型のレベルで自然数をエンコーディングしちゃおうって技です。依存型のある言語なら最初からあるので、わざわざ型レベル自然数とか大仰な言い方しなくてもいいのですが、それはそれとして論より証拠。早速、Scala 3で型レベル自然数を定義してみます。\nenum Nat {\n  case Zero\n  case Succ[A <: Nat](v: A)\n}\n\n\n\n定義はこれだけです。簡単ですね。Scala 2だと\nsealed trait Nat\nobject Nat {\n  case object Zero extends Nat\n  case class Succ[A <: Nat](V: A) extends Nat\n}\n\n\n\nのように書かなければいけなかったのでとっても面倒でした。さてさて、とりあえずこれで型レベル自然数の定義はできたのですが、よく使う一桁の自然数は別名定義しておきたいですというわけで、次にこんなん書きます：\ntype _0 = Zero.type\ntype _1 = Succ[_0]\ntype _2 = Succ[_1]\ntype _3 = Succ[_2]\ntype _4 = Succ[_3]\ntype _5 = Succ[_4]\ntype _6 = Succ[_5]\ntype _7 = Succ[_6]\ntype _8 = Succ[_7]\ntype …",
-          "link": "https://kmizu.hatenablog.com/entry/2023/08/28/202626",
-          "publishedOn": "2023-08-28T11:26:26.000Z",
-          "wordCount": null,
-          "title": "Scala 3で型レベル自然数をやってみたらすごく簡単になってた",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

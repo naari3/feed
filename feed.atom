@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-25T23:01:36.699Z</updated>
+    <updated>2023-11-26T00:03:13.448Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13111,44 +13111,6 @@ f8 5 琴音「天」
 ・エピローグの日付]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scala 3で型レベル自然数をやってみたらすごく簡単になってた]]></title>
-        <id>hatenablog://entry/820878482962497236</id>
-        <link href="https://kmizu.hatenablog.com/entry/2023/08/28/202626"/>
-        <updated>2023-08-28T11:26:26.000Z</updated>
-        <summary type="html"><![CDATA[Scala 3、正式リリースされてからそこそこ経ってますが皆さん使ってますか？実は自分は、主にIntellij IDEAのScala 3対応に不安もあってScala 2.13系列をずっと使い続けて来たのですが、最近はScala 3対応も進んできたようなので乗り換えを始めることにしました。で、手始めにということで型レベル自然数（型レベルペアノ数）を定義してみることにしました。
-型レベル自然数は読んで字の如くで、型のレベルで自然数をエンコーディングしちゃおうって技です。依存型のある言語なら最初からあるので、わざわざ型レベル自然数とか大仰な言い方しなくてもいいのですが、それはそれとして論より証拠。早速、Scala 3で型レベル自然数を定義してみます。
-enum Nat {
-  case Zero
-  case Succ[A <: Nat](v: A)
-}
-
-
-
-定義はこれだけです。簡単ですね。Scala 2だと
-sealed trait Nat
-object Nat {
-  case object Zero extends Nat
-  case class Succ[A <: Nat](V: A) extends Nat
-}
-
-
-
-のように書かなければいけなかったのでとっても面倒でした。さてさて、とりあえずこれで型レベル自然数の定義はできたのですが、よく使う一桁の自然数は別名定義しておきたいですというわけで、次にこんなん書きます：
-type _0 = Zero.type
-type _1 = Succ[_0]
-type _2 = Succ[_1]
-type _3 = Succ[_2]
-type _4 = Succ[_3]
-type _5 = Succ[_4]
-type _6 = Succ[_5]
-type _7 = Succ[_6]
-type _8 = Succ[_7]
-type …]]></summary>
-        <author>
-            <name>kmizuの日記</name>
         </author>
     </entry>
     <entry>
