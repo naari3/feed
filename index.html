@@ -18639,34 +18639,6 @@ No titleを聴いてるうちに何となく雰囲気が村野さやかっぽい
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
-              rel="noopener">クックパッド開発者ブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Rubyの並列並行処理のこれまでとこれから</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2023/08/31/152511" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>技術部の笹田です。今日で退職するので、バタバタと返却などの準備をしています。
-本記事では、Rubyの並行並列処理の改善についての私の取り組みについて、おもに RubyKaigi 2022 と 2023 で発表した内容をもとにご紹介します。
-並行と並列はよく似た言葉ですが、本記事では次のような意味で使います。
-並行処理（concurrent processing）は、「複数の独立した実行単位が、待っていればいつか終わる（もしくは、処理が進む）」という論理的な概念で、古典的にはタイムシェアリングシステムなどが挙げられます。
-並列処理（parallel processing）は、「複数の独立した実行単位のうちのいくつかが、あるタイミングで同時に動いている」という物理的な概念で、古典的には複数のCPU上で同時に実行させる、というものです。最近では、1つのCPU上で複数コアが同時に動いている、というのが普通になってきましたね。
-Ruby（CRuby/MRI）は古くからThreadによる並行処理のための仕組みを提供しており、並列処理はUnixなどのプロセスなどを用いる、つまりRubyの外側（？）の機能と組み合わせて使う必要がありました。そして、Ruby 3.0から導入された Ractor で Ruby プロセス内で利用できる並列処理の仕組みが導入されました。まだまだ不十分なので、これからもっと頑張っていこう、っていう内容の記事になります。
-簡単な歴史
-Ruby 1.8 まで
-Ruby 1.8 までは、Rubyはユーザーレベルスレッドと呼ばれる仕組みで、OSなどが提供するネイティブスレッド（下記NTとも表記、PthreadやWindows APIのスレッド）を1つつかって、複数のRubyスレッド（下記、RTとも表記、Thread.new{}で作るやつ）を管理していました。1つのネイティブ…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/koichi-sasada/20230831/20230831112246.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20450,7 +20422,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-11-28T18:01:55.471Z">2023-11-28T18:01:55.471Z</time>
+    <time id="build-timestamp" datetime="2023-11-28T19:01:34.887Z">2023-11-28T19:01:34.887Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

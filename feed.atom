@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-28T18:01:55.513Z</updated>
+    <updated>2023-11-28T19:01:34.926Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12995,24 +12995,6 @@ No titleを聴いてるうちに何となく雰囲気が村野さやかっぽい
 続きをみる]]></summary>
         <author>
             <name>moroishimasaoki</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rubyの並列並行処理のこれまでとこれから]]></title>
-        <id>hatenablog://entry/820878482963206936</id>
-        <link href="https://techlife.cookpad.com/entry/2023/08/31/152511"/>
-        <updated>2023-08-31T06:25:11.000Z</updated>
-        <summary type="html"><![CDATA[技術部の笹田です。今日で退職するので、バタバタと返却などの準備をしています。
-本記事では、Rubyの並行並列処理の改善についての私の取り組みについて、おもに RubyKaigi 2022 と 2023 で発表した内容をもとにご紹介します。
-並行と並列はよく似た言葉ですが、本記事では次のような意味で使います。
-並行処理（concurrent processing）は、「複数の独立した実行単位が、待っていればいつか終わる（もしくは、処理が進む）」という論理的な概念で、古典的にはタイムシェアリングシステムなどが挙げられます。
-並列処理（parallel processing）は、「複数の独立した実行単位のうちのいくつかが、あるタイミングで同時に動いている」という物理的な概念で、古典的には複数のCPU上で同時に実行させる、というものです。最近では、1つのCPU上で複数コアが同時に動いている、というのが普通になってきましたね。
-Ruby（CRuby/MRI）は古くからThreadによる並行処理のための仕組みを提供しており、並列処理はUnixなどのプロセスなどを用いる、つまりRubyの外側（？）の機能と組み合わせて使う必要がありました。そして、Ruby 3.0から導入された Ractor で Ruby プロセス内で利用できる並列処理の仕組みが導入されました。まだまだ不十分なので、これからもっと頑張っていこう、っていう内容の記事になります。
-簡単な歴史
-Ruby 1.8 まで
-Ruby 1.8 までは、Rubyはユーザーレベルスレッドと呼ばれる仕組みで、OSなどが提供するネイティブスレッド（下記NTとも表記、PthreadやWindows APIのスレッド）を1つつかって、複数のRubyスレッド（下記、RTとも表記、Thread.new{}で作るやつ）を管理していました。1つのネイティブ…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
