@@ -4193,6 +4193,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189060276702",
+          "author": null,
+          "description": "はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。\n細かな機能修正・改善\n1.編集画面からTwitter貼り付け機能を削除しました\nTwitterのAPI変更に伴い、編集画面のTwitter貼り付け機能の廃止をすでに行っておりましたが*1、PC版とはてなブログアプリの編集画面からも表示を削除いたしました。\n2. 旧Twitterを「X」に変更しました\nはてなブログ内に記載されているTwitterのロゴや文言を「X」に変更しました。\n3. デザインテーマ「Neutral」の月別アーカイブのリンク色をわかりやすくしました\nデザインテーマ「Neutral」において、記事がある日付とない日付の区別がつきにくかったため、区別がつくよう修正しました。お問い合わせにてお知らせいただきありがとうございました。\n2023年10月のお知らせ（再掲）\nHatenaBlog Workflows Boilerplate が固定ページの操作に対応しました。また、下書きプレビュー共有URLが簡単に確認できるようになりました\n「AIタイトルアシスト」機能をクローズドβとして公開しました。記事本文から「見出し・タイトル要素・SNS向けタイトル」それぞれのタイトルを提案します\nAtomPub APIから下書きプレビュー共有用URLを発行できるようにしました\n自動生成アイキャッチ画像のテキストの改行位置の改善など、ソーシャルシェアに関連した複数の改善を行いました\n\n*1:https://staff.hatenablog.com/entry/2023/04/24/170000",
+          "link": "https://staff.hatenablog.com/entry/2023/11/28/145733",
+          "publishedOn": "2023-11-28T05:57:33.000Z",
+          "wordCount": 821,
+          "title": "はてなブログの2023年10月の新機能・機能改善をお知らせします",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231120/20231120143154.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231120/20231120143154.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189055198614",
           "author": null,
           "description": "記事のアイキャッチ画像設定において、任意に自動生成シェア画像を選択できるようにしました。\n自動生成アイキャッチを設定したい場合、編集サイドバーの「編集オプション > アイキャッチ画像」にて「自動生成シェア画像を設定する」にチェックを入れてください\nX(旧Twitter)の仕様変更に合わせて、タイトルを含んだアイキャッチ画像を設定したい場合や、アイキャッチ画像に適さない小さな画像のみを含んでいる記事などでご活用いただければと思います。\n機能補足\n記事に画像を含んでいる場合に自動で設定されるアイキャッチ画像は、これまでの仕様と同様に、記事内の1つめの画像となります\n編集サイドバーにて自動生成シェア画像を設定した場合、カテゴリページなどで表示される記事のサムネイルとしても表示されます",
@@ -8822,6 +8837,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=39916",
+          "author": "mamosuke",
+          "description": "PS4 Module Loader,BwE Syscon Rebuilder 2.1,GoldHEN_Cheat_Repository(2023-11-26),ARK-4 v1701131810,Switchfin 0.4.1,BlocksDS v0.11.2,Nightly-wiiload_plugin-20231127-165659→→→この記事の続きを読む\nGameGaz Daily 2023.11.28 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023112839916/",
+          "publishedOn": "2023-11-28T05:41:36.000Z",
+          "wordCount": 1497,
+          "title": "GameGaz Daily 2023.11.28",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=39914",
           "author": "mamosuke",
