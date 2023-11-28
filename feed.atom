@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-28T16:02:00.619Z</updated>
+    <updated>2023-11-28T17:01:41.712Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13013,18 +13013,6 @@ Ruby 1.8 まで
 Ruby 1.8 までは、Rubyはユーザーレベルスレッドと呼ばれる仕組みで、OSなどが提供するネイティブスレッド（下記NTとも表記、PthreadやWindows APIのスレッド）を1つつかって、複数のRubyスレッド（下記、RTとも表記、Thread.new{}で作るやつ）を管理していました。1つのネイティブ…]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一部のブログ記事において、記事のFacebookシェアボタンが表示されない不具合が発生しています]]></title>
-        <id>hatenablog://entry/820878482963300089</id>
-        <link href="https://staff.hatenablog.com/entry/2023/08/31/131459"/>
-        <updated>2023-08-31T04:14:59.000Z</updated>
-        <summary type="html"><![CDATA[2023年8月31日現在、デザイン設定でFacebookシェアボタンをONにするチェックを入れているにもかかわらず、一部のブログ記事において記事のFacebookシェアボタンが表示されない不具合を確認しております。
-原因については現在調査中で、対応の状況については随時本告知でお知らせいたします。
-ご利用の皆様にはご不便をおかけし申し訳ございません。]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
