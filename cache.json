@@ -4692,21 +4692,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/n/n_atmark/20230913/20230913154929.gif"
-        },
-        {
-          "id": "hatenablog://entry/820878482963625603",
-          "author": null,
-          "description": "こんにちは、技術部の石川です。\nある日、社内の各種アプリケーションを眺めている中で、とあるクローズしたサービスの管理画面を担っていたウェブアプリが今も動いていると気付きました。簡単にヒアリングしたところ、サービス自体はクローズしたものの、保有していたデータが次のチャレンジに生かせるため管理画面だけ残しているとのことでした。\n一方で、その管理画面へのアクセスはそう多くありませんでした。毎日ちょっとだけのリクエストを処理するためだけにデータベースとサーバーが動いており、少し無駄がある状態になっていました。\nやや気になったので検討した結果、最終的にこの管理画面アプリを Next.js 製の静的なデータビューワーサイトとしてリニューアルし、社内向けの GitHub Pages として提供されている状態にできました。この記事ではその顛末をご紹介します。\n技術選定\nいくつか事前調査をした結果、今回の管理画面について以下のことが分かりました。\nRails が動いている。サーバー側では graphql-ruby を利用した GraphQL API が動いていて、ウェブフロントエンド側では素の React が API にリクエストを行いながらページを作っている。データベースは PostgreSQL (Amazon RDS for PostgreSQL)。\nデータ量はそこまで多くないが、目で全件確認できるほど少なくもない。\nページの種別は、Rails の app/javascript/pages 下にある index.tsx を数えてみると 80 程度。移植しなくて良いページもそれなりにありそう。\n画像や映像を表示しているページがある。\nデータの追加や更新はもう行わない。\n認証・認可は不要になる。正確には、社内ネットに閉じた環境であれば全公開で構わない。\n予定としては今後数年アクセスするつもり…",
-          "link": "https://techlife.cookpad.com/entry/2023/09/01/100402",
-          "publishedOn": "2023-09-01T01:04:02.000Z",
-          "wordCount": null,
-          "title": "クローズしたサービスの管理画面を静的サイトにする",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

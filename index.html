@@ -18501,38 +18501,6 @@ GameGaz Daily 2023.9.1 first appeared on 大人のためのゲーム講座.</spa
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
-              rel="noopener">クックパッド開発者ブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">クローズしたサービスの管理画面を静的サイトにする</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2023/09/01/100402" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>こんにちは、技術部の石川です。
-ある日、社内の各種アプリケーションを眺めている中で、とあるクローズしたサービスの管理画面を担っていたウェブアプリが今も動いていると気付きました。簡単にヒアリングしたところ、サービス自体はクローズしたものの、保有していたデータが次のチャレンジに生かせるため管理画面だけ残しているとのことでした。
-一方で、その管理画面へのアクセスはそう多くありませんでした。毎日ちょっとだけのリクエストを処理するためだけにデータベースとサーバーが動いており、少し無駄がある状態になっていました。
-やや気になったので検討した結果、最終的にこの管理画面アプリを Next.js 製の静的なデータビューワーサイトとしてリニューアルし、社内向けの GitHub Pages として提供されている状態にできました。この記事ではその顛末をご紹介します。
-技術選定
-いくつか事前調査をした結果、今回の管理画面について以下のことが分かりました。
-Rails が動いている。サーバー側では graphql-ruby を利用した GraphQL API が動いていて、ウェブフロントエンド側では素の React が API にリクエストを行いながらページを作っている。データベースは PostgreSQL (Amazon RDS for PostgreSQL)。
-データ量はそこまで多くないが、目で全件確認できるほど少なくもない。
-ページの種別は、Rails の app/javascript/pages 下にある index.tsx を数えてみると 80 程度。移植しなくて良いページもそれなりにありそう。
-画像や映像を表示しているページがある。
-データの追加や更新はもう行わない。
-認証・認可は不要になる。正確には、社内ネットに閉じた環境であれば全公開で構わない。
-予定としては今後数年アクセスするつもり…</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20316,7 +20284,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-11-29T13:03:36.323Z">2023-11-29T13:03:36.323Z</time>
+    <time id="build-timestamp" datetime="2023-11-29T14:01:43.331Z">2023-11-29T14:01:43.331Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
