@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-29T02:12:34.887Z</updated>
+    <updated>2023-11-29T03:01:52.028Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Google アナリティクス 4 のはてなブログ解析用のカスタムディメンションをまとめて登録するツールを公開しました]]></title>
+        <id>hatenablog://entry/6801883189062318921</id>
+        <link href="https://staff.hatenablog.com/entry/2023/11/29/114307"/>
+        <updated>2023-11-29T02:43:07.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログではGoogle アナリティクス 4 （以下 GA4）の連携機能を提供しています。また、GA4の標準のデータだけではなく、はてなブログ独自のイベントやカスタムディメンション（記事の投稿日や公開からの経過日数、読了イベント、ブログカードのリンククリック計測など）を提供し、ブログの解析に役立てていただけるよう機能を追加しています。
+
+しかしながら、GA4のレポートや探索、LookerStudioでそれらのデータを利用するためにはGA4での設定が必要です。はてなブログで提供しているカスタムディメンションはすでに15件あり、登録すべき数が増えてくると追加の対応が煩雑になってしまう問題がありました。
+はてなブログ用GA4カスタムディメンションセットアップツール(ベータ版)
+
+本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なく機能の提供を終了する場合があります
+利用方法
+カスタムディメンションを追加したいプロパティへの編集権限を持っているGoogleアカウントでログインした状態で はてなブログ用GA4カスタムディメンションセットアップツール(ベータ版) を開く
+GA4のAPIを利用するためOAuthの認証を行います。「PREVIEW PERMISSION」をクリックし、権限の付与の同意を行ってください
+カスタムディメンションを登録したいアナリティクスアカウント及びプロパティを選択する
+登録したいカスタムディメンションにチェックを入れ(初期値はすべてにチェックが入っています。必要に応じてチェックを外してください)、「カスタムディメンションを登録する」ボタンをクリックする]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2023.11.29]]></title>
         <id>https://gamegaz.com/?p=39918</id>
