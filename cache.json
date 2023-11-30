@@ -7976,6 +7976,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/11/30/secretlint8/",
+          "author": null,
+          "description": "Secretlint 8をリリースしました。\nRelease v8.0.0 · secretlint/secretlint\nSecretlintは、ソースコードや設定ファイルから機密情報を見つけて報告するLintツールです。\nブラウザでは、次のURLから試すことができます。\nsecretlint.github.io\n次のコマンドで、推奨ルールセットでの検証を実行できます。\nDocker:\n\ndocker run -v `pwd`:`pwd` -w `pwd` --rm -it secretlint/secretlint secretlint \"**/*\"\n\n\nNode.js:\n\nnpx @secretlint/quick-start \"**/*\"\n\n\nSecretlint 8で追加されたルール\nOpenAIのAPIトークンを検出するルールが追加されました。\n@secretlint/secretlint-rule-openai\n推奨ルールセットである@secretlint/secretlint-rule-preset-recommendにもOpenAIのルールが追加されています。\nOpenAIのAPIトークンのフォーマット\nOpenAIのAPIトークンのフォーマットはドキュメントとしては公開されていないですが、次のような正規表現に一致するトークンが利用されています。\n\nsk-[a-zA-Z0-9]{20}T3BlbkFJ[a-zA-Z0-9]{20}\n\n\nT3BlbkFJ は OpenAI をBase64エンコードしたものです。\n\nbtoa(\"OpenAI\") // => \"T3BlbkFJ\"\n\n\n参考:\nWhat are the valid characters for the APIKey? - API - OpenAI Developer Forum",
+          "link": "https://efcl.info/2023/11/30/secretlint8/",
+          "publishedOn": "2023-11-30T09:11:00.000Z",
+          "wordCount": null,
+          "title": "Secretlint 8リリース: OpenAIのAPIトークンの検出に対応",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2023/10/14/remix-v2/",
           "author": null,
           "description": "Remixを使って作ったアプリケーションをRemix v2へアップデートした時のメモです。\nRemix v2 | Remix\nマイグレーションガイド: Upgrading to v2 | Remix\nアプリケーションは Remix + Cloudflare Pages で動かしてるアプリ。\nserverBuildTargetの変更\n結構前にテンプレートから生成したアプリだったので、それぞれのビルドターゲットの設定方法が変わっている。\nV2では、この初期値が結構変わるので、次のページを参考にしてビルドターゲットに合わせたものを設定する。\nserverBuildTarget\nCloudflare Pages向けのビルドをするので、remix.config.jsに次のように設定する。\nこの設定はV1でも動くので、まずはこれで動かす。(future.v2_devが有効である必要はあったのかも。忘れている)\n\n/** @type {import('@remix-run/dev').AppConfig} */\nmodule.exports = {\n-  serverBuildTarget: \"cloudflare-pages\",\n   server: \"./server.js\",\n   ignoredRouteFiles: [\".*\", \"**/*.test.*\"],\n+  publicPath: \"/build/\", // default value, can be removed\n+  serverBuildPath: \"functions/[[path]].js\",\n+  serverConditions: [\"worker\"],\n+  serverDependenciesToBundle: \"all\",\n+  serverMainFields: [\"browser\", \"mod…",
