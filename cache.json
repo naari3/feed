@@ -1763,7 +1763,23 @@
       "title": "fumiLab",
       "feedUrl": "https://fumimaker.net/rss",
       "siteUrl": "https://fumimaker.net/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6801883189062946066",
+          "author": null,
+          "description": "技術ブログじゃなくてすみません；；\n背景\n最近、会社を登記する機会があり、できるだけオンラインで進めておりました。法人設立ワンストップサービス](https://app.e-oss.myna.go.jp/Application/ecOssTop/)でrejectを食らい再提出する時にマイナンバーカードを使ってPDF文章を電子署名する方法で四苦八苦しておりました。\n結論\nこれを使いましょう（Windows限定）。ただし、カードリーダーは必要です。自分は非接触ではなくICチップに接触するタイプを使いました。\nhttps://aoiro.app/jpki/\n四苦八苦\n最初はAdobe Acrobatを使ってやろうと思っていました。\nAcrobatに法務省が提供するソフトを入れることでマイナンバーの署名ができるみたいです。\nSignPDFというプラグインをAdobeに入れて使うらしい。やり方はリンク先の説明書を参照。\nhttps://www.touki-kyoutaku-online.moj.go.jp/download_soft.html#PDFPlugin\n早速やったみたところ、なぜかSignPDFが表示されない。よくみるとacrobatは32bitしか対応していないようだ...最新のAdobe Creative CloudではAcrobatのバージョン選択ができず、困りました。\n調べてみると32BitはここのリンクからDLできるみたいです。\nhttps://helpx.adobe.com/jp/acrobat/kb/acrobat-dc-downloads.html\nやってみたところようやく、SignPDFが見えるようになった。よかった。と思い署名やってみたところ、Acrobatがクラッシュしてしまった。終わり。\n結局別の方法を探し、このソフトウェアをInstallして実行することで今まではなんだったんだってくらい簡単にできました。ワロタ。\nhttps://aoiro.app/jpki/\n雑談\n最近は未踏アドバンスト事業に採択されて色々作ったり知見をNotionに書き溜めているのでぼちぼち投稿できればいいなと思います。",
+          "link": "https://fumimaker.net/entry/2023/11/30/192216?utm_source=feed",
+          "publishedOn": "2023-11-30T10:22:16.000Z",
+          "wordCount": 462,
+          "title": "マイナンバーを使った電子署名で四苦八苦",
+          "enclosure": {
+            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/154454789/1655579536223056",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/154454789/1655579536223056"
+        }
+      ]
     },
     {
       "title": "Islands in the byte stream",
