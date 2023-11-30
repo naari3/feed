@@ -3602,7 +3602,23 @@
       "title": "はやくプログラムになりたい",
       "feedUrl": "https://rhysd.hatenablog.com/rss",
       "siteUrl": "https://rhysd.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6801883189062937441",
+          "author": null,
+          "description": "最近 ratatui という crate に Small String Optimization を利用した最適化を入れたので，その話を書きます．\n目次\nSmall String Optimization (SSO) とは（SSO を既に知っている人は読み飛ばして大丈夫です）\nRust で SSO を適用した文字列型を提供する crate 比較\nSSO を利用して ratatui のメモリ効率と実行効率を最適化した話\ncompact_str の実装の最適化の話\n\n\nインラインストレージに24バイト全てを使える理由\n隙間最適化のための工夫\n説明を簡潔にするため，特に断りが無い場合 64bit アーキテクチャを前提とします．\n\nSmall String Optimization (SSO) とは\nRust の可変長文字列型 String は文字列バッファへのポインタ，文字列の長さ，バッファのキャパシティの3つのフィールド（8 + 8 + 8 = 24バイト）から成っており，文字列はヒープ上に確保された文字列バッファに置かれます．\nString の内部構造\n文字列が十分に短い場合，わざわざヒープに確保しなくても24バイトの構造体の中に直に（インラインに）文字列を置けば良いというのが Small String Optimization (SSO) の基本的なアイデアです．\nSSO を利用した文字列型の内部構造の例\n上記の図は典型的な SSO の実装例です．下記のように，文字列長が23バイトまでとそれ以降で構造を使い分けます．\n文字列長が23バイトよりも長いとき → 標準の String のように文字列をヒープ上のバッファに置く．ポインタを構造体の一番最後のフィールドに置く．ポインタの最下位ビットは常に 0 なので，構造体の最後のバイトの最下位ビットをフラグとし 0 なら文字列をヒー…",
+          "link": "https://rhysd.hatenablog.com/entry/2023/11/30/200857",
+          "publishedOn": "2023-11-30T11:08:57.000Z",
+          "wordCount": 1427,
+          "title": "Small String Optimization で Rust ライブラリ ratatui を最適化した話",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/r/rhysd/20231130/20231130184046.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/r/rhysd/20231130/20231130184046.png"
+        }
+      ]
     },
     {
       "title": "かるが浜仮停車場",

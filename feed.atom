@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-30T11:01:41.527Z</updated>
+    <updated>2023-11-30T12:01:59.619Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Small String Optimization で Rust ライブラリ ratatui を最適化した話]]></title>
+        <id>hatenablog://entry/6801883189062937441</id>
+        <link href="https://rhysd.hatenablog.com/entry/2023/11/30/200857"/>
+        <updated>2023-11-30T11:08:57.000Z</updated>
+        <summary type="html"><![CDATA[最近 ratatui という crate に Small String Optimization を利用した最適化を入れたので，その話を書きます．
+目次
+Small String Optimization (SSO) とは（SSO を既に知っている人は読み飛ばして大丈夫です）
+Rust で SSO を適用した文字列型を提供する crate 比較
+SSO を利用して ratatui のメモリ効率と実行効率を最適化した話
+compact_str の実装の最適化の話
+
+
+インラインストレージに24バイト全てを使える理由
+隙間最適化のための工夫
+説明を簡潔にするため，特に断りが無い場合 64bit アーキテクチャを前提とします．
+
+Small String Optimization (SSO) とは
+Rust の可変長文字列型 String は文字列バッファへのポインタ，文字列の長さ，バッファのキャパシティの3つのフィールド（8 + 8 + 8 = 24バイト）から成っており，文字列はヒープ上に確保された文字列バッファに置かれます．
+String の内部構造
+文字列が十分に短い場合，わざわざヒープに確保しなくても24バイトの構造体の中に直に（インラインに）文字列を置けば良いというのが Small String Optimization (SSO) の基本的なアイデアです．
+SSO を利用した文字列型の内部構造の例
+上記の図は典型的な SSO の実装例です．下記のように，文字列長が23バイトまでとそれ以降で構造を使い分けます．
+文字列長が23バイトよりも長いとき → 標準の String のように文字列をヒープ上のバッファに置く．ポインタを構造体の一番最後のフィールドに置く．ポインタの最下位ビットは常に 0 なので，構造体の最後のバイトの最下位ビットをフラグとし 0 なら文字列をヒー…]]></summary>
+        <author>
+            <name>はやくプログラムになりたい</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[マイナンバーを使った電子署名で四苦八苦]]></title>
         <id>hatenablog://entry/6801883189062946066</id>
