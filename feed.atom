@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-11-30T23:02:06.506Z</updated>
+    <updated>2023-12-01T00:03:05.145Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,16 @@
         <summary type="html"><![CDATA[このエントリは、 3rd Party Cookie Advent Calendar の 1 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookie]]></summary>
         <author>
             <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lightweight Formal Methods for BGP]]></title>
+        <id>https://medium.com/p/e800016e053c</id>
+        <link href="https://medium.com/nttlabs/lightweight-formal-methods-for-bgp-e800016e053c?source=rss----74f667786e9f---4"/>
+        <updated>2023-11-30T23:13:30.000Z</updated>
+        <summary type="html"><![CDATA[Panic-free deserialization]]></summary>
+        <author>
+            <name>FUJITA Tomonori</name>
         </author>
     </entry>
     <entry>
@@ -12807,88 +12817,6 @@ Releases · atarabi/at_script · GitHub
 最低限必要なものは、 プラグイン*2と Startup 内の !@script_initializer.jsx。後者は必要不可欠というわけではないが、Startup時にAPIを使用したい場合に、初期化処理のために用いる。というのも、AEのスクリプト機能自体がプラグインで実装されているため、こちらのプラグインがそれより先に読み込まれた場合に、…]]></summary>
         <author>
             <name>Atarabi-Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[レトルト温め、レトルト亭 VS シェフドラムは、さすがにシェフドラムの勝ちでした]]></title>
-        <id>hatenablog://entry/820878482964103271</id>
-        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/09/02/202558"/>
-        <updated>2023-09-02T11:25:58.000Z</updated>
-        <summary type="html"><![CDATA[ウェブサーフィンをしていたら、なんとなく、この
-「ヒーターでレトルトパックを温めるので、電子レンジとお湯いらず」
-という商品を見つけたので、興味本位で買ってみました。
-
-
-APIX Retort Warmer ARM-110 レトルト調理器 合金鋼 レトルト亭 アピックス
-レトルト亭
-Amazon
-そして、とりあえず、お昼にレトルトカレーをこれで温めてみたところ、うん、確かにふつうに温まっているし、電子レンジと違ってムラはありませんが、どうも、湯煎と何かが違う・・・。
-夜にしつこく、同じカレーをシェフドラムの湯煎で温めみたら、やはり、湯煎の方がおいしいです。
-結局これ、水の方がレトルトの中にぶつけるエネルギー量が空気より大きいので、しっかりと分子を揺らすし、冷めにくいということではないかと思います。
-水の処理もいらないし、やけどもしなそうなので、けっこう期待していたので、残念でした。
-それでも、電子レンジよりはおいしいので、湯煎するほどは時間がないときにはつかいましょうかねーーー。悩ましい。]]></summary>
-        <author>
-            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bard で生成される文章がヤバい]]></title>
-        <id>hatenablog://entry/820878482964101428</id>
-        <link href="https://cild.hatenablog.com/entry/2023/09/02/202148"/>
-        <updated>2023-09-02T11:21:48.000Z</updated>
-        <summary type="html"><![CDATA[さっきYahooに貯まりまくったメール整理してたら、Googleからのメールがあって、なんとなく見てみたら、Bardっていう新サービスの紹介だった。
-バード？
-ボード？
-名前はよくわからないけど、説明を読むと、どうやら文章を自動的に作ってくれるAIっぽいのって理解した。
-なので、さっそく試しに作ってみたお題がコチラ
-『簡単なインボイスの解説』のブログ投稿の概要を作って
-
-で、生成されたのがコチラ
-↓
-タイトル：インボイス制度とは？簡単に解説します
-インボイス制度とは、2023年10月1日から導入される、消費税の仕入税額控除制度のことです。
-インボイス制度の概要
-インボイスの記載事項
-取引年月日
-令和元年10月より消費税の軽減税率が導入され、仕入税額の中に8%のものと10%のものが混在するようになりました。正しい消費税の納税額を算出するために、商品ごとの価格と税率が記載された書類を保存することになったのです。
-インボイス制度への対応
-売手は、適格請求書を発行するための登録申請を行い、登録番号を取得する必要があります。また、適格請求書の記載事項を正確に記載し、保存する必要があります。
-買手は、インボイスを保存することで、仕入税額控除の対象となる必要があります。
-まとめ
-
-↑ここまで
-
-完ぺきやん！
-わずか２０秒で生成完了。
-
-
-さすがネ申ということで、試しにもう１つリクエストしてみた。
-お題『人生をドラマティックにしてくれるレシピ』のブログ投稿の概要を作って
-
-さすがのGoogle先生でも、トンチンカンな答えをしてくれるだろうと、期待していたのだけど、２０秒後に返ってきた錬金術がコチラ
-↓
-
-タイトル：人生をドラマティックにしてくれるレシピ
-人生は、さまざまな出来事によってドラマチックに彩られます。恋愛、結婚、出産、仕事、親子の死別など、人生にはさまざまなドラマが待ち受けています。
-そんな人生をよりドラマティックにしてくれるレシピを、今回はご紹介したいと思います。
-人生のドラマを彩るレシピ
-それは、単においしいだけでなく、何か特別な意味を持つレシピです。たとえば、
-初恋の相手と食べた思い出の料理
-これらのレシピは、ただおいしいだけでなく、私たちの記憶や思い出と結びついて、人生をよりドラマティックに彩ってくれます。
-人生をドラマティックにするために
-たとえば、
-大切な人のために、オリジナルの料理を作ってみよう
-そうすることで、料理は単なる食事ではなく、人生のドラマを彩る特別な存在になるでしょう。
-まとめ
-
-↑ここまで
-
-
-なんだろう…
-こころのやわらかいところ、ギュッとつかむのやめてもらっていいですか？
-いやー、おそれいりました。]]></summary>
-        <author>
-            <name>ちるろぐ</name>
         </author>
     </entry>
     <entry>
