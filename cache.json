@@ -624,21 +624,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kareobana/20230916/20230916113401.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482962568269",
-          "author": null,
-          "description": "AEで処理を自動化する際によく用いられるのはスクリプトであるが、プラグインにもエフェクト以外にAEGPというスクリプト的なことも出来るタイプのものがある。大概のことはスクリプトでも出来るので、あまり出る幕がないのだが、AEGPのAPIを用いないと出来ないこともままあって、そういう場合は渋々C++を書かざるを得ない。しかし、特に単機能のものを書くためだけに、わざわざC++を持ち出すのも面倒であるし、何とかしたい。そこで、スクリプト側からAEGPのAPIを呼び出せるようなラッパー的なライブラリを作ることを考える。\n\nつまり、斜線部を考える。こういうのをあらかじめ作ってさえおけば、あとはC++に立ち入ることなしに、スクリプトだけで完結するので、非常に便利である。ということで作った。\ngithub.com\n初代はどういうことが出来るのか色々実験した結果、迷走し複雑化したので、それを糧に二代目をあらためて作り直したものの、今度は別の構想がなかなか煮詰まらず、遅れに遅れた。\nat_script/script/types/@script.d.ts at main · atarabi/at_script · GitHub\n主なAPIはここを参照すればよいが、 document はまだ整備されてない。\nReleases · atarabi/at_script · GitHub\n必要なものは上から @script.zip をダウンロードすれば手に入る*1。\n最低限必要なものは、 プラグイン*2と Startup 内の !@script_initializer.jsx。後者は必要不可欠というわけではないが、Startup時にAPIを使用したい場合に、初期化処理のために用いる。というのも、AEのスクリプト機能自体がプラグインで実装されているため、こちらのプラグインがそれより先に読み込まれた場合に、…",
-          "link": "https://atarabi.hateblo.jp/entry/2023/09/02/211426",
-          "publishedOn": "2023-09-02T12:14:26.000Z",
-          "wordCount": 516,
-          "title": "After Effectsのスクリプトの可能性を広げる。",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kareobana/20230827/20230827162829.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kareobana/20230827/20230827162829.png"
         }
       ]
     },
@@ -3002,7 +2987,23 @@
       "title": "Software Transactional Memo",
       "feedUrl": "https://kumagi.hatenablog.com/rss",
       "siteUrl": "https://kumagi.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6801883189063041152",
+          "author": null,
+          "description": "AIに描いてもらったストレージで作ったレース会場\n\n \nはじめに\nこの記事はデータベース・システム系 Advent Calendar 2023の一日目の投稿である。今年読んだ論文（今年書かれた論文とは限らない）の中で驚きや納得があって良かったなぁと思った論文をいくつか紹介していきたいと思う。\n論文の本文そのものは機械翻訳なりチャットAIなりに叩き込めば誰でも内容の抽出はできるので、こちらのブログ内では何故これが良いと思ったかについて僕の主観に基づいて書いていく。僕の解釈が厳密に正しいことは一切保障しないし、気になって読んでみたら全然内容違うやんけ！と驚くところまでがセットくらいの気軽なつもりで読んで欲しい。\n最初に紹介する論文は「When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations」である。\nCPUは新製品が発売されるたびに前回より8%高速になったとかそういう細かい性能アップを刻んでいるが、市販品のストレージデバイスはここ15年ぐらいで大きな転機を2回迎えている。\nストレージデバイスの進歩と乗り遅れるDB\nハードディスクはヘッドシークに10ミリ秒ほど所要し、最高速度は100MB/sから近年のものは200MB/s程度まで高速化した（15000rpmの奴らの話は置いとこう）ここ20年ぐらい掛けてレイテンシはほぼ改善せず、連続アクセスの帯域速度だけだいたい倍化した感じである。容量やコストは劇的に改善しているが今回の話には関係ない。読み書き性能という側面だけでCPUの進化と比べるとあくびが出るような速度でしか改善していない。\nSSD、中でもSATA接続なやつはデスクトップ向けにはあたかもハードディスクのような振る舞いを…",
+          "link": "https://kumagi.hatenablog.com/entry/finding-storage-glitch",
+          "publishedOn": "2023-12-01T00:30:00.000Z",
+          "wordCount": 502,
+          "title": "ストレージとコンフィグでデータベースのグリッチを探す",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20231201/20231201025717.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20231201/20231201025717.jpg"
+        }
+      ]
     },
     {
       "title": "ぷもも園",
@@ -8050,6 +8051,16 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=22224",
+          "author": "nomaguchi",
+          "description": "【IIJ 2023 TECHアドベントカレンダー 12/2の記事です】 はじめに 本稿は私が体験したあるプロジェクトマネージメントにおいて、短納期、広範囲のものに対して、どのように考え、対応したのかを...",
+          "link": "https://eng-blog.iij.ad.jp/archives/22224",
+          "publishedOn": "2023-12-01T00:41:49.000Z",
+          "wordCount": 1748,
+          "title": "プロジェクトマネージメント奮闘記",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2023/11/a11b4bb3ba448d1fa402ac3dc62cc91f-7.png"
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=21392",
           "author": "韮塚 凌平",
           "description": "こんにちは、IIJの韮塚(にらづか)です。 基盤エンジニアリング本部とクラウド本部に所属しており、普段は趣味全開デスクで「サービス基盤運用の自動化」や「社内ツールの管理人」をしています。 今回はIIJ...",
@@ -8296,6 +8307,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml",
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231201-merpay-looking-back-to-2023/",
+          "author": null,
+          "description": "この記事は、Merpay Advent Calendar 2023 の1日目の記事です。 hello hello hallo how high? メルペイで5月からVPoE の @nu2です。 はじめに 2023年6月、 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231201-merpay-looking-back-to-2023/",
+          "publishedOn": "2023-12-01T10:00:51.000Z",
+          "wordCount": 524,
+          "title": "メルペイ VPoE による2023年の振り返り",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
         {
           "id": "https://engineering.mercari.com/blog/entry/20231124-merpay-advent-calendar-2023/",
           "author": null,
