@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-03T09:02:14.666Z</updated>
+    <updated>2023-12-03T10:01:38.311Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -28,6 +28,48 @@
 とはいえスマホに置き換わったガラケーほどには完全消滅しないだろうと思う理由も二つあって、一つはいくら家族層のボリュームが減ったとしても皆無になることはまず有り得ないからです。手堅いマーケティング対象としての層を成す程度の勢力は今後も存在し続けるでしょうし、リベラルな潮流自体ここ数年のブームでしかないので二十年も後には普通…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[textlintのプリセットルールをGitHubの新しい強調構文に対応させた]]></title>
+        <id>https://efcl.info/2023/12/03/update-textlint-preset/</id>
+        <link href="https://efcl.info/2023/12/03/update-textlint-preset/"/>
+        <updated>2023-12-03T06:59:00.000Z</updated>
+        <summary type="html"><![CDATA[最近、GitHubに新しいタイプの強調構文が追加されました。
+
+Markdownの引用ブロックの中に ![TYPE] を入れることで、アイコン付きの強調構文を利用できます。
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+
+現在はベータ的なサポートになっていますが、GitHubのIssueやReleasesなど大体の場所で利用できます。
+[Markdown] An option to highlight a "Note" and "Warning" using blockquote (Beta) · community · Discussion #16925
+AsciiDocのAdmonitionsという機能とよく似た機能です。
+Admonitions | Asciidoctor Docs
+この構文なのですが、CommonMarkやGitHub Flavored Markdown Specでも特に定義されたものではないため、パーサー的にはBlockquoteに[!TYPE]という文字列が入ってるという扱いになります。
+textlintのルールをGitHubの新しい強調構文に対応させた
+textlintのルールには、[と]の対応があるかをチェックする@textlint-rule/textlint-rule-no-unmatched-pairというルールがありますが、このルールがこの新しい構文で壊れるケースがありました。
+Not found pair character for [. when using new highlight blockquote syntax · Issue #16 · textlint-rule/textlint-rule-no-unmatched-pair
+
+! をセンテンスの区切り文字として扱ってしまっていてため、[!NOTE] が [ と ! に分割されてしまう問題があった
+内部的にはsentence-splitterという文章をセンテンスに分化するライブラリを使っていて、このライブラリが古いと起きる問題でした。
+そのため、sentence-splitterを使ってるルールを更新して、GitHubの新しい強調構文でも問題が起きないように修正しました。
+また、自分がメンテナンスしているtextlintのプリセットルールも更新しました。
+Release v9.0.0 · textlint-ja/textlint-rule-preset-ja-technical-writing
+Release v9.0.0 · textlint-ja/textlint-rule-preset-japanese
+今回のアップデートでNode.js 18以降のみのサポートとなっています。
+また、エラー報告にlocator APIを使うようにして、より正確な位置を報告できるようになっています。
+おわりに
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+
+GitHubの新しい強調構文を使って、textlintが余計なエラーが起きたらとりあえずルールをアップデートして見てください。
+また、最新のバージョンでも問題が起きる場合は、Issueを立ててもらえると助かります。]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
