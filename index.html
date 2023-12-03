@@ -78,6 +78,34 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://kumagi.hatenablog.com/" target="_blank"
+              rel="noopener">Software Transactional Memo</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">間接参照を巨大仮想メモリで飲み込む</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://kumagi.hatenablog.com/entry/vm-swizzle-indirection" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>この記事はデータベース・システム系 Advent Calendar 2023の3日目の記事である。昨日の記事も僕でした。
+間接参照を巨大仮想メモリで飲み込む
+メインメモリはハードディスクやSSDより容量が小さく、この問題は当面は解決の目処が立たない。
+そもそも今のDRAMより速くて安くて大きいストレージが仮に発明されてもそれがDRAMに取って代わるメインメモリの立ち位置になるだけであってその下のレイヤーには依然としてそのメインメモリより安くて大きなストレージが置かれる事になる。大局的な観点ではストレージの階層構造とは経済活動の鏡像でもある。
+バッファプール
+さて、耳にタコができるほど繰り返しているが現代のデータベースはディスクなどの永続ストレージにデータの本尊が保存され、メインメモリはそれに対する読み書きを高速化するためのデータ一時置き場としての役割を担当している。
+代表的なRDBMSは32KBとか64KBとかの単位でディスクの断片を取り扱っており、これをページと呼ぶ。そのページがどれか必要になるたびにメモリに取り出して管理し、都度発生する読み書きを引き受け、必要がなくなったタイミングでディスクに書き戻す。一つのページに対する複数の書き込みをページ単位での最後の書き戻しで一手に引き受けるのでこれはバッファであり、それをたくさん保持する機構の事をバッファプールと呼ぶ。
+バッファプールはおよそキャッシュでもあるが、その実体はハッシュテーブルと寿命管理が組み合わさった複雑なデータ構造であり、そのアクセスにはそれなりにコストがかかる。データベースのアクセス上重要なインデックス構造ではB+treeが使われる事が多いが、そのB+treeの1ノードは1ページに対応付けて実装するのが常套であるのでB+treeの高さが3なら3回バッファプールを参照する必要がある。
+さて、バッファプールを参照…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumagi/20231203/20231203034542.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.jxck.io/" target="_blank"
               rel="noopener">blog.jxck.io</a></h3>
           <section class="articles-per-source">
@@ -20497,7 +20525,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-12-02T23:02:00.951Z">2023-12-02T23:02:00.951Z</time>
+    <time id="build-timestamp" datetime="2023-12-03T00:03:12.256Z">2023-12-03T00:03:12.256Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
