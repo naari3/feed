@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-04T00:03:17.917Z</updated>
+    <updated>2023-12-04T01:25:56.250Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[動作例からKubernetes PDBの挙動を理解する]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20231204-k8s-understanding-pdb/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20231204-k8s-understanding-pdb/"/>
+        <updated>2023-12-04T10:00:14.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは！横浜国立大学理工学部情報工学EP3年の @Shion1305 です。今年の10月から株式会社メルペイ Settlementチームにてバックエンドエンジニアのインターンとして所属しています。 この記事は、Me […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小型マイコン M5Stamp S3 + InfluxDB + Grafana で作るIoT水槽モニタリングシステム]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=22129</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/22129"/>
+        <updated>2023-12-04T00:52:50.000Z</updated>
+        <summary type="html"><![CDATA[【IIJ 2023 TECHアドベントカレンダー 12/4の記事です】 はじめに はじめまして。IoTビジネス事業部 技術部 プロダクトソリューション課に所属する加森です。 主にバックエンドとインフラ...]]></summary>
+        <author>
+            <name>kamori</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[飽き性のための読書術]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=22711</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/22711"/>
+        <updated>2023-12-04T00:52:28.000Z</updated>
+        <summary type="html"><![CDATA[【IIJ 2023 TECHアドベントカレンダー 12/3の記事です】 この記事を書こうと思ったきっかけ 技術者にとって技術書の読書は非常に重要であり、学生時代で自分が大きく悩まされた問題の一つだと思...]]></summary>
+        <author>
+            <name>菊下 諒</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[3PCA 4 日目: 3rd Party Cookie の正体]]></title>
         <id>https://blog.jxck.io/entries/2023-12-04/3pca-3rd-party-cookie.html</id>
@@ -12893,21 +12923,6 @@ GameGaz Daily 2023.9.6 first appeared on 大人のためのゲーム講座.]]></
 続きをみる]]></summary>
         <author>
             <name>瀬畑 黒</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[エンジニアHubにHTTP/3の記事を寄稿しました]]></title>
-        <id>hatenablog://entry/820878482964976636</id>
-        <link href="https://gfx.hatenablog.com/entry/2023/09/05/211737"/>
-        <updated>2023-09-05T12:17:37.000Z</updated>
-        <summary type="html"><![CDATA[エンジニアHubに「HTTP/3｜Webエンジニアが知るべき新常識 ─ QUICやコネクションマイグレーションなどを学ぶ 」という記事を寄稿しました。CDNとしてHTTP/3を提供しているFastlyで働いているという縁からです*1。
-eh-career.com
-書きたいことはこの記事にすべて書いたので呼んでいただきたいのですが、この記事では「自分でHTTP/3サーバーを管理する」ということはまったく視野に入れていません。HTTP/3は現在のところCDNのための技術といっても差し支えないからです。
-一方で、これから数年かけて「非ブラウザのHTTPクライアントにおけるHTTP/3の活用術」といったことが研究され、広まっていくのでしょう。ちょうどHTTP/2が標準化されたあとで、HTTP/2を活用したgRPCが作られたように。これについては個人的には非常に楽しみにしています。非ブラウザのHTTPクライアントがよく使われるのはスマホアプリですし、スマホアプリの動作環境は必然的に通信が不安定であり、HTTP/3が得意とする環境だからです。まあしかし、これはまだ先の話です。
-この記事に書いたように、これからしばらくHTTP/3との付き合い方は「CDNでHTTP/3を有効にする」で良いのではないかと思っています。
-*1:Fastly に入社しました - Islands in the byte stream -- そういえばFastlyで働き始めてからそろそろ4年になります。]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
         </author>
     </entry>
     <entry>
