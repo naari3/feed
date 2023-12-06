@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-06T04:01:54.449Z</updated>
+    <updated>2023-12-06T05:01:44.646Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,87 @@
         <summary type="html"><![CDATA[この記事は、Merpay Advent Calendar 2023 の6日目の記事です。 はじめに こんにちは、MerpayでBackend Engineerをしている@panoramaと申します。 今年(2023年)の […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ドンキにスマモッチャーと同じ形の見守りカメラが格安で売ってたので]]></title>
+        <id>hatenablog://entry/6801883189064519834</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2023/12/06/131344"/>
+        <updated>2023-12-06T04:13:44.000Z</updated>
+        <summary type="html"><![CDATA[このブログではお馴染みのドンキのスマモッチャー、
+年月を経て、次世代機が出たことですっかりみなくなったのですが
+ああそうだ、最近ドンキでスマモッチャー見ないな、と思ってたらスマモッチャープラス、って言う新製品が出てたぞ。開発元は例によってRWCだ。例によってソースコードが見当たらないので(まだ買ってないけど)アプリは同じycc365のようだ。ペットコーナーに置くのいいね。https://t.co/2JLUzLogAD pic.twitter.com/rlBJmkijCV
+2020年8月16日
+
+
+ 
+格安ipカメラとして名を馳せたドンキのスマモッチャー、どうやら名前がイマイチ悪かったと言うことで、「留守番名人」という名前で新機種が出ていた。型番もIP001,002に続くIP003である。発売元は例によってアイダブリューシーである。https://t.co/RbViOdibRz pic.twitter.com/7h0m0IZn14
+2022年10月6日
+
+
+ 
+突然似たようなカメラが現れました。
+事件っす！ドンキの旧スマモッチャーコンパチの各種OEMのこの形の防犯カメラが1980円っす！！ pic.twitter.com/oteEmlgu6G
+2023年12月2日
+
+
+ 
+このカメラ、ご存知のようにODMがたくさんあり、似たような中身のものが売っていることがよく知られています。
+ドンキのとアマゾンで買ったHM202
+基板が同じなのは予想してたが、パーツが若干違う。レンズのリングや三脚マウントネジとか。そして筐体、金型レベルで同じだと予想してたけど、ちょっとだけ違う。改版なのか、コピーなのか。 pic.twitter.com/FTvOZbClW1
+2019年5月9日
+
+
+ 
+こいつも似たようなやつが入っていていろいろ遊べるのかもしれません
+ 
+というわけで
+買ってきた
+
+ 
+早速分解します
+
+…うーん、みたことないチップ
+ 
+そして、、緑のレジストの基板…
+この手のカメラはCMOSセンサが実装された基板の裏側にSoCがマウントされ、
+レンズがねじ止めされているのが定番ですが…
+FPC接続の小さなカメラモジュールが接続されているようです
+　
+どうやら様子がおかしいですね。
+ 
+シリアルケーブルを繋いでログを見てみます
+
+RT！！！！
+おお。Linuxじゃないんだ。
+シェル（msh） には入れますが、これは組み込みコマンドをあらかじめ定義して使うものらしく、汎用的なコマンドは分かりません。Flash吸って解析すればわかるかも
+…しかし、現時点ではあまり遊べなそうです。
+ 
+本体や説明書には書いてないけど、本体裏に技適番号のシールが書いてありますね
+早速検索してみましょう
+
+違う機器やんけ！！！！！！！
+シリアル違いとか、そういうせこいことではなくて、まんま違うやつを持ってくるのは久しぶりに見ましたね。
+なおった
+画質ゴミ
+保存ファイルAVI、MJPG
+PTZするオモチャとしてはなかなかいいと思う pic.twitter.com/XHlpHZxnEX
+2023年12月4日
+
+
+ 
+画質もゴミです。
+ゴミを買いたい人以外にはお勧めしません。おもちゃにはなるかも。
+ 
+さて、POPが派手に間違っていたのと、この技適問題をドンキに問い合わせメール出したけど３日目、まだ返事が来ませんね。どうなったかな。
+ 
+
+ 
+ 
+まとめスレッドはこちら
+https://x.com/bakueikozo/status/1731541385306923387?s=20]]></summary>
+        <author>
+            <name>honeylab's blog</name>
         </author>
     </entry>
     <entry>
@@ -12757,17 +12838,6 @@ Profile
         <updated>2023-09-07T22:08:03.000Z</updated>
         <summary type="html"><![CDATA[Charles Martinet氏と宮本茂氏のメッセージ,Psx2ps4 V1.51,webMAN MOD 1.47.45,ARK-4 v1694112214,Vita TRP Builder,Tonyhax International v1.4.0,sys-tune v2.0.0,NWFX,WiiUDownloader v2.26,ColecoDS 8.7,ps3-save-decrypters,Vita3K Build: 3353→→→この記事の続きを読む
 GameGaz Daily 2023.9.8 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【噂】Switch後継機 gamescomで開発者向けにデモが披露されていた]]></title>
-        <id>https://gamegaz.com/?p=39385</id>
-        <link href="https://gamegaz.com/2023090839385/"/>
-        <updated>2023-09-07T16:07:10.000Z</updated>
-        <summary type="html"><![CDATA[Nintendo Switchの後継機がgamescomで開発者向けに披露されていたようです。→→→この記事の続きを読む
-【噂】Switch後継機 gamescomで開発者向けにデモが披露されていた first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
         </author>
