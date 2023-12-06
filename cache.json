@@ -7895,6 +7895,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/otel-node-sdk",
+          "author": null,
+          "description": "約2ヶ月ぶりのブログ。サボった最長記録達成してると思います。何をしていたかはそのうち書きます。今日は OpenTelemetry & JS についてです。 公式のExample を使うとすぐに tracing を試せるようになっていますが、一体どういう仕組みで、express…",
+          "link": "https://blog.ojisan.io/otel-node-sdk",
+          "publishedOn": "2023-12-06T00:00:00.000Z",
+          "wordCount": 1874,
+          "title": "OpenTelemetry の Node.js Example で SDKが何をしているのか",
+          "imageUrl": "https://blog.ojisan.io/static/fb7c53156db699e8e02b34b105a9593a/1742c/visual.png"
+        },
+        {
           "id": "https://blog.ojisan.io/dbg-dungling-pointer",
           "author": null,
           "description": "最近Pin を完全に理解したくて、色々なコードを実験して遊ぶのが日課になっている。これまでのRust人生では綺麗な世界しか知らず、raw pointerを使ったこともないしダングリングポインタと縁がなく、Pinに対するイメージがちゃんと持てなかった。ということで最近はraw…",
