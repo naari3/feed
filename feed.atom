@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-07T05:01:45.642Z</updated>
+    <updated>2023-12-07T06:01:46.940Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -297,6 +297,35 @@ https://x.com/bakueikozo/status/1731541385306923387?s=20]]></summary>
         <summary type="html"><![CDATA[約2ヶ月ぶりのブログ。サボった最長記録達成してると思います。何をしていたかはそのうち書きます。今日は OpenTelemetry & JS についてです。 公式のExample を使うとすぐに tracing を試せるようになっていますが、一体どういう仕組みで、express…]]></summary>
         <author>
             <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「ブログの概要（meta description）」設定がブログのトップページにのみ反映されるようにしました]]></title>
+        <id>hatenablog://entry/6801883189064279451</id>
+        <link href="https://staff.hatenablog.com/entry/2023/12/06/084824"/>
+        <updated>2023-12-05T23:48:24.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、主にSEOを目的とした「ブログの概要（meta description）」設定を提供しています。今回、この設定の動作を変更いたしました。
+サイト上のページごとに固有の説明を作成する」に沿った変更となります。
+また、meta description のSEO上の意義や、設定する内容の良い例や悪い例など、下記のGoogle公式のドキュメントで公開されております。設定の際には参考にいただければと思います。
+
+
+はてなブログの meta description に関する設定
+ ページの種類
+     設定場所
+    
+ブログのトップページ
+    詳細設定のブログの概要（meta description）
+    
+記事ページや固定ページ
+    編集サイドバーの編集オプションの記事の概要
+    
+カテゴリーページ
+    カテゴリー管理ページの編集ボタン(Proなど有料プラン利用者限定機能です)
+     
+    
+ぜひご活用ください。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
