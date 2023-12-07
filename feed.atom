@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-07T15:01:39.893Z</updated>
+    <updated>2023-12-07T16:01:50.652Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12880,39 +12880,6 @@ Google によると YouTube のアプリから消せということなのです�
 バグなどありましたらご連絡ください。]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bluesky/GitHub/Calendar/RSSをNotionに同期するbluenotiondbを作った]]></title>
-        <id>https://efcl.info/2023/09/09/bluenotiondb/</id>
-        <link href="https://efcl.info/2023/09/09/bluenotiondb/"/>
-        <updated>2023-09-09T03:11:00.000Z</updated>
-        <summary type="html"><![CDATA[Notionには同期データベースとしてGitHubやJiraなどを同期できるDBがありますが、任意のサービスには対応していません。
-もっと色々なサービスと同期するNotionのデータベースが欲しかったので、bluenotiondbというツールを作りました。
-azu/bluenotiondb: Sync Bluesky/GitHub/Calendar/RSS to Notion.
-bluenotiondb
-bluenotiondbは、色々なサービスからデータを取得してそのデータをNotionのデータベースに追加するツールです。
-現状では次のサービスに対応しています。
-Bluesky
-
-Pull Posts from Bluesky and push to Notion
-GitHub Activity
-
-Pull events of GitHub user and push to Notion
-Open/Close/Comment of Issues/PRs etc…
-GitHub Search
-
-Pull Issues/PRs or Repositories from GitHub Search and push to Notion
-iCal calendar like Google Calendar
-
-Pull events from iCal and push to Notion
-Required: need to setup actions/cache action to prevent duplicated items
-RSS Feeds
-
-Pull posts from RSS Feeds and push to Notion
-Required: need to setup actions/cache action to prevent duplicated ite…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
