@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-09T12:01:45.708Z</updated>
+    <updated>2023-12-09T13:02:21.603Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,28 @@
         <summary type="html"><![CDATA[このエントリは、 3rd Party Cookie Advent Calendar の 10 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookie今回は、この話をする上で避けては通れない、規制や法律について触れておく。しかし、筆者はあくまでエンジニアであり、この分野は専門外だ。内容については、素人が適当に書いており、信頼性は AI 以下だと思って読んで欲しい。]]></summary>
         <author>
             <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[データプラットフォーム統括チーム・マネージャーとして]]></title>
+        <id>hatenablog://entry/6801883189065356125</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2023/12/09/210000"/>
+        <updated>2023-12-09T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[データに関連する職業を続けてきた傍ら、データがもたらす役割について考えていた。
+データはモデルから生まれる。あらゆるモデルは間違っているが、そのうちいくつかは有用である。データはモデルを前提として生成されている。例えば、ユーザーの行動をモデル化し、重要なユーザー行動が発生した場合にはそのログを収集できる仕組みを作ったりする。現実のユーザー行動は想定より複雑であり、モデルは全てを捉えることはできず、データには穴がある。しかし、得られたデータは施策の効果測定やKPI計測に役立っている。
+では、データの役割はなんだろう？何のために多くの労力をかけてデータを収集し、分析する仕組みを作っているのだろう？
+データの役割
+1. 現実世界を生き抜くための武器
+データがなければ試作を立案できない。クライアント向けの提案をすることもできない。競合に押し負ける。ユーザーのことを理解できず、プロダクトは売上を伸ばすことはできず、我々は廃業するだろう。
+だから、まずデータは「武器」である。それを提供する我々は武器商人だ。
+2.コミュニケーションを促進する共通言語
+現実の見方は人によって多種多様であり、同じ現象を指しているのに話が通じない、コミュニケーションが成り立たないというのはよくある話だ。データは想定されたモデルのもとで現実を測定し、血液のように組織に酸素を運ぶ役割を持つ。この文脈だとEBPMがいい例だと思う。
+「コミュニケーションの一手段として」データがあるわけなのだから、別のコミュニケーション手段があるのならデータはいらないことになる。その状態は健全ではないが、データがない状態でのコミュニケーションが必要になる場合もある。
+データ・プラットフォーム
+データは血液として、組織に酸素を供給し、意思決定を促進する役割を持つ。その作用に矛先があれば、データは現実世界を開く武器となる。
+だからこそ、デ…]]></summary>
+        <author>
+            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>
@@ -13107,17 +13129,6 @@ help.hatenablog.com]]></summary>
     インフラエンジニアはSREではないし、SREとPlatform Engineeringも別物 - induc…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.9.11]]></title>
-        <id>https://gamegaz.com/?p=39406</id>
-        <link href="https://gamegaz.com/2023091139406/"/>
-        <updated>2023-09-11T00:11:33.000Z</updated>
-        <summary type="html"><![CDATA[PS5 SELF Decrypter,ARK-4 Version 4.20.64 r3 Re-release,PS4CheaterNeo 0.9.9.5-beta,pop-fe v1.2,任天堂特許,Moonlight-Switch v0.13.3,SaltyNX 0.6.1,WiiUDownloader v2.27,Nightly-sdcafiine_plugin-20230910-081811,Nightly-WiiUPluginLoaderBackend-20230910-081811,Nazi Zombies: Portable(nzportable) 2.0.0-indev+20230910071454,Vita3K Build: 3356→→→この記事の続きを読む
-GameGaz Daily 2023.9.11 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
