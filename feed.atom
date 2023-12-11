@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-11T11:01:46.891Z</updated>
+    <updated>2023-12-11T12:02:15.425Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[移植22]]></title>
+        <id>hatenablog://entry/6801883189065971319</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/12/11/201656"/>
+        <updated>2023-12-11T11:16:56.000Z</updated>
+        <summary type="html"><![CDATA[今日は５章を終わらせました。少しづつ進めていくしかないですねー。
+GBA用に正規表現しているわけですが、具体的に何をしているかというと大まかなにこんな感じです。
+
+１．差分画像指定の変更
+GBAの場合は差分は全部1枚絵（mode3）にしているのでAの後Bされると２重表示になって無駄になります。背景も立ち絵もあるからもう大変です・・・。
+２．進行ルートの変更
+アドベンチャーゲームしています。それを順序立ててイベントを起こしてもらうようにしなくてはいけないです。
+３．エフェクト処理の整合性変更
+
+という感じでして、根気がいるのにあんまり楽しい感じではないですねー。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[チームワークと効率向上のカギ！メルカリが成功する大人数iOS開発のための手法とは？]]></title>
         <id>https://engineering.mercari.com/blog/entry/20231211-large-team-development-at-mercari-ios/</id>
@@ -13131,17 +13150,6 @@ GameGaz Daily 2023.9.13 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[ついにやってきた！ IIJエンジニアの想いがつまりにつまったSEILシリーズ、1998年のリリース当時から「ISPとして使いたい機能を搭載していく」というスタンスを大切にしてまいりました。 時代は移り...]]></summary>
         <author>
             <name>片貝 悠</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[任天堂の次世代機 デモではPS5やXboxに負けてはいないっぽい]]></title>
-        <id>https://gamegaz.com/?p=39415</id>
-        <link href="https://gamegaz.com/2023091339415/"/>
-        <updated>2023-09-12T23:23:18.000Z</updated>
-        <summary type="html"><![CDATA[Nintendo Switch後継機ではPS5やXbox Series Xよりも優れたレイトレーシング性能を持っている可能性がありそうですが、スペックが上と言うことにはならないでしょう。→→→この記事の続きを読む
-任天堂の次世代機 デモではPS5やXboxに負けてはいないっぽい first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

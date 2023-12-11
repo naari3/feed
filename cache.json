@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189065971319",
+          "author": null,
+          "description": "今日は５章を終わらせました。少しづつ進めていくしかないですねー。\nGBA用に正規表現しているわけですが、具体的に何をしているかというと大まかなにこんな感じです。\n\n１．差分画像指定の変更\nGBAの場合は差分は全部1枚絵（mode3）にしているのでAの後Bされると２重表示になって無駄になります。背景も立ち絵もあるからもう大変です・・・。\n２．進行ルートの変更\nアドベンチャーゲームしています。それを順序立ててイベントを起こしてもらうようにしなくてはいけないです。\n３．エフェクト処理の整合性変更\n\nという感じでして、根気がいるのにあんまり楽しい感じではないですねー。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/12/11/201656",
+          "publishedOn": "2023-12-11T11:16:56.000Z",
+          "wordCount": 405,
+          "title": "移植22",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189065733389",
           "author": null,
           "description": "今日は5章まで終わり。２８まであるよー長いよー。",
@@ -10384,16 +10399,6 @@
           "publishedOn": "2023-09-13T03:31:08.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2023.9.13",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39415",
-          "author": "mamosuke",
-          "description": "Nintendo Switch後継機ではPS5やXbox Series Xよりも優れたレイトレーシング性能を持っている可能性がありそうですが、スペックが上と言うことにはならないでしょう。→→→この記事の続きを読む\n任天堂の次世代機 デモではPS5やXboxに負けてはいないっぽい first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023091339415/",
-          "publishedOn": "2023-09-12T23:23:18.000Z",
-          "wordCount": null,
-          "title": "任天堂の次世代機 デモではPS5やXboxに負けてはいないっぽい",
           "imageUrl": null
         }
       ]
