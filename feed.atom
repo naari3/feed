@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-11T05:01:42.112Z</updated>
+    <updated>2023-12-11T06:01:43.715Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -153,6 +153,16 @@ LLVMの最適化は「LLVM-IRで表現されたコード」を入力として「
         <summary type="html"><![CDATA[このエントリは、 3rd Party Cookie Advent Calendar の 11 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookie前回は、各国で法律が整備されていった流れや、主な法律の特徴を解説した。しかし、法律はあくまで法律であり仕様ではないため、「どう実装するべきか」は各サービスに委ねられている(ガイドラインなどはあるが)。多くの場合これを Web の実装に落とし込むと、いわゆる「Cookie バナー」相当になるわけだ。今回は、実世界でどのようなバナーが提供されているのかを見ていく。]]></summary>
         <author>
             <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.js の OpenTelemetry サポートを使う方法]]></title>
+        <id>https://blog.ojisan.io/next-otel</id>
+        <link href="https://blog.ojisan.io/next-otel"/>
+        <updated>2023-12-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[なんか今日、megumish が CNDT 2023 で Next.js と otel の話をする らしい。そこで話されてしまうと、下書きに入れてあった Next.js と otel の記事が二番煎じになって出しにくくなりそうだったので大急ぎで書いている。 OGPは小樽のnext…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>

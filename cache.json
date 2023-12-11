@@ -7974,6 +7974,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/next-otel",
+          "author": null,
+          "description": "なんか今日、megumish が CNDT 2023 で Next.js と otel の話をする らしい。そこで話されてしまうと、下書きに入れてあった Next.js と otel の記事が二番煎じになって出しにくくなりそうだったので大急ぎで書いている。 OGPは小樽のnext…",
+          "link": "https://blog.ojisan.io/next-otel",
+          "publishedOn": "2023-12-11T00:00:00.000Z",
+          "wordCount": 1245,
+          "title": "Next.js の OpenTelemetry サポートを使う方法",
+          "imageUrl": "https://blog.ojisan.io/static/759137fb8f9d403b36335f9c9adece21/1742c/visual.png"
+        },
+        {
           "id": "https://blog.ojisan.io/otel-node-sdk",
           "author": null,
           "description": "約2ヶ月ぶりのブログ。サボった最長記録達成してると思います。何をしていたかはそのうち書きます。今日は OpenTelemetry & JS についてです。 公式のExample を使うとすぐに tracing を試せるようになっていますが、一体どういう仕組みで、express…",
