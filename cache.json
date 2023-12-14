@@ -4256,6 +4256,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189065930168",
+          "author": null,
+          "description": "はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。\n細かな機能修正・改善\n1.投稿日時を入力する際の挙動を改善しました（PC版のみ）\nPC版の編集オプションから投稿日時をカレンダーではなく、キーボードから数値で入力しようとすると正しく入力できないことがあったため修正対応しました。\n2. エクスポート機能の改善\n記事のタイトルに「&」などの記号が含まれていた場合、エスケープされ別の文字に置き換えられていましたが、そのままエクスポートされるように修正しました。\n3. 脚注のアンカーリンクの仕様変更\n脚注のアンカーリンクにid属性を含めるようにしました。脚注のアンカーリンクにid属性を含めるようにしました。これは、これまでは name属性を利用してアンカーリンクを提供していましたが、ブラウザ仕様でこの方法は非推奨となったためです。\n4. 脚注へのリンク先の表示調整を行いました\nヘッダが固定されているデザインテーマで、脚注をクリックすると表示先がヘッダに隠れていたため表示調整を行いました。\n5. 編集サイドバーの編集オプションにあった「記事の有料販売」を独立したメニューにしました\n2023年6月28日の機能リリース時から、記事の有料販売は編集サイドバーの「編集オプション」の中にありましたが、「記事の有料販売」を独立させました。\n記事の有料販売メニューを独立させました\n\n\n\n    \n2023年11月のお知らせ（再掲）\nWebSite構造化データに対応しました。設定したブログ名がGoogle検索に掲載されやすくなります\nはてなブログのトップページにおすすめの企業メディアが表示されるようにしました\n記事のアイキャッチ画像設定で、自動生成シェア画像を選択できるようにしました\nGoogle アナリティクス 4 のはてなブログ解析用のカスタムディメンションをまとめて登録するツールを公開しました",
+          "link": "https://staff.hatenablog.com/entry/2023/12/14/140213",
+          "publishedOn": "2023-12-14T05:02:13.000Z",
+          "wordCount": 818,
+          "title": "はてなブログの2023年11月の新機能・機能改善をお知らせします",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231211/20231211173246.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231211/20231211173246.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189064279451",
           "author": null,
           "description": "はてなブログでは、主にSEOを目的とした「ブログの概要（meta description）」設定を提供しています。今回、この設定の動作を変更いたしました。\nサイト上のページごとに固有の説明を作成する」に沿った変更となります。\nまた、meta description のSEO上の意義や、設定する内容の良い例や悪い例など、下記のGoogle公式のドキュメントで公開されております。設定の際には参考にいただければと思います。\n\n\nはてなブログの meta description に関する設定\n ページの種類\n     設定場所\n    \nブログのトップページ\n    詳細設定のブログの概要（meta description）\n    \n記事ページや固定ページ\n    編集サイドバーの編集オプションの記事の概要\n    \nカテゴリーページ\n    カテゴリー管理ページの編集ボタン(Proなど有料プラン利用者限定機能です)\n     \n    \nぜひご活用ください。",
@@ -10482,7 +10497,158 @@
       "title": "monome",
       "feedUrl": "https://monome.org/rss.xml",
       "siteUrl": "https://monome.org",
-      "articles": []
+      "articles": [
+        {
+          "id": "./news/231212.md",
+          "author": null,
+          "description": "12/12/23 - this year the supply chain continued to impact our ability to produce norns, but we did manage to secure parts recently and expect to have a new edition in february. we're engineering a lot of production optimization to offset constantly rising manufacturing costs. one huge benefit of this is a more reliable machine.\nwe still have grids stocked and ready to ship, though be advised we're entering shipping mayhem season.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-12T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/231117.md",
+          "author": null,
+          "description": "11/17/23 - december 8 1pm EST we will have grids in both sizes. we will also have norns, both grey and black (so you'll need to choose upon ordering). crow production is scheduled and we expect them to be ready sometime in january.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230925.md",
+          "author": null,
+          "description": "09/25/23 - we'll have grids again in december. a date for crow will become less vague once production gets underway.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230915.md",
+          "author": null,
+          "description": "09/15/23 - grids and crow available today at 1pm EDT. links will go live below, allowing you to place an order. you'll receive a confirmation email upon ordering, and shipping confirmation when they ship out. we have everything built and will start shipping early next week.\nwe've switched e-mail newsletter providers and are now using a service we very much believe in. if you'd like to continue receiving email news, please resubscribe.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230825.md",
+          "author": null,
+          "description": "08/25/23 - it's almost september and many of you noticed that we're expecting to have availability in september. we've just set the date: friday, september 15. at 1pm EDT the order links will be live. shipping will begin the following week.\nyou may have also noticed, below this message next to \"old news\" is a link to rss. rss (wikipedia) isn't talked about enough these days. you can easily get an rss reader for your phone or computer (or use a web service, but we have a difficult time recommending them). add a new feed: monome.org/rss.xml --- and you will receive updates like this.\nthis was the decentralized utopia we were promised by computers. maybe we can find it again.\nwe'll still send out the newsletter, but as email becomes increasingly broken and commodified we'd like to help foster other ways of connecting.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230630.md",
+          "author": null,
+          "description": "06/30/23\nso we made a new thing\nbut really an old thing\nfrom over a decade ago\nand so there was this impulse that we had to\nsomehow make the new thing actually new\nwith a fancy new application or something\nbut i guess we decided not to do that\nthis light pattern is an experiment we made a few months ago\nwith a demoscene-era plasma technique\nthe important stuff all happens in one line of code\nwhich we wanted to mention simply to spread the concept of\npermacomputing and also\ndespite the grid fundamentally being interactive\nsometimes a visual or sound can powerfully stand on its own\nlike when nine inch nails had this same new thing on stage\njust visualizing and hell they are still cooler than us\nbut really the point is\nthe grid hasn't meaningfully changed for two decades\nstill doing nothing yet\ncontaining endless horizons to explore new instrument design\na vehicle for new skills and\nperhaps making new friends\nbut we guess everyone knows that by now\nso it's new and it's the same\nand that's mostly why there's not really a new killer app\nlesser reasons include\nus opening an art store and\nstill tending a farm and finding time to make music\nsuch as this forthcoming softbits you're hearing now\nbut we are glad to be building these again\nand look forward to seeing what comes next",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230602.md",
+          "author": null,
+          "description": "06/02/23 - norns.community is new. you can read all about it at this lines thread.\na small batch of norns will be available june 16 at 1pm EST.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230512.md",
+          "author": null,
+          "description": "05/12/23 - grids came together faster than expected. we'll have a small batch available next friday, may 19, at 1pm EST. crow is now scheduled for late june. we're expecting to also have a small batch of norns in mid june.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230420.md",
+          "author": null,
+          "description": "04/20/23 - more grids expected late may, crow early june",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/221201.md",
+          "author": null,
+          "description": "12/01/22 - we're enduring the semiconductor shortage alongside basically all small manufacturers. this is the reason that we do not have known restock dates for many of our devices. we'll update this site as we learn more. i wrote a longer essay which may be of further interest.\nwe've also had to increase pricing to accommodate rising costs of components, contract manufacturing, and transportation. in addition to delays we're also encountering quality issues, which contribute a substantial amount of labor to ensure everything is in working order. we'll adjust pricing as the situation changes.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-12-08T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230310.md",
+          "author": null,
+          "description": "03/10/23 - norns and crow are sold out. we'll have new batches of crow and grids later this spring.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-11-20T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230307.md",
+          "author": null,
+          "description": "03/07/23 - crow returns this on friday 1pm EST. note that the price has increased due to modern times. we'll also have a small number of b-stock norns. shipping will begin next week.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-11-20T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230223.md",
+          "author": null,
+          "description": "02/10/23 - we'll have a small batch of grids available next week, on the 17th at 1pm EST. the following day we'll have discounted b-stock grids available. shipping will happen a week or so after.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-11-20T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230201.md",
+          "author": null,
+          "description": "02/01/23 - crow is returning. some of the long-time part shortages have eased and we've started receiving components. we're working on some software improvements in anticipation of shipping a new batch. dates will be announced soon.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-11-20T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/230101.md",
+          "author": null,
+          "description": "01/01/23 - shipping updates now have a dedicated page.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2023-11-20T16:11:11.000Z",
+          "wordCount": 963,
+          "title": "monome",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "n5g",

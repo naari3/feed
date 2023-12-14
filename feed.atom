@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-14T05:02:02.543Z</updated>
+    <updated>2023-12-14T06:01:38.462Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[はてなブログの2023年11月の新機能・機能改善をお知らせします]]></title>
+        <id>hatenablog://entry/6801883189065930168</id>
+        <link href="https://staff.hatenablog.com/entry/2023/12/14/140213"/>
+        <updated>2023-12-14T05:02:13.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。
+細かな機能修正・改善
+1.投稿日時を入力する際の挙動を改善しました（PC版のみ）
+PC版の編集オプションから投稿日時をカレンダーではなく、キーボードから数値で入力しようとすると正しく入力できないことがあったため修正対応しました。
+2. エクスポート機能の改善
+記事のタイトルに「&」などの記号が含まれていた場合、エスケープされ別の文字に置き換えられていましたが、そのままエクスポートされるように修正しました。
+3. 脚注のアンカーリンクの仕様変更
+脚注のアンカーリンクにid属性を含めるようにしました。脚注のアンカーリンクにid属性を含めるようにしました。これは、これまでは name属性を利用してアンカーリンクを提供していましたが、ブラウザ仕様でこの方法は非推奨となったためです。
+4. 脚注へのリンク先の表示調整を行いました
+ヘッダが固定されているデザインテーマで、脚注をクリックすると表示先がヘッダに隠れていたため表示調整を行いました。
+5. 編集サイドバーの編集オプションにあった「記事の有料販売」を独立したメニューにしました
+2023年6月28日の機能リリース時から、記事の有料販売は編集サイドバーの「編集オプション」の中にありましたが、「記事の有料販売」を独立させました。
+記事の有料販売メニューを独立させました
+
+
+
+    
+2023年11月のお知らせ（再掲）
+WebSite構造化データに対応しました。設定したブログ名がGoogle検索に掲載されやすくなります
+はてなブログのトップページにおすすめの企業メディアが表示されるようにしました
+記事のアイキャッチ画像設定で、自動生成シェア画像を選択できるようにしました
+Google アナリティクス 4 のはてなブログ解析用のカスタムディメンションをまとめて登録するツールを公開しました]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【テストユーザー募集中！】TikTokとはてなブログを連携した「フォトモード」機能を使って、TikTokで記事を共有してみませんか？]]></title>
         <id>hatenablog://entry/6801883189064312505</id>
@@ -205,6 +236,17 @@ GameGaz Daily 2023.12.13 first appeared on 大人のためのゲーム講座.]]>
 【開幕】夢にまで見た無人島。新時代の「ネオ無人島生活」で超豪華な料理を作って食べまくる！！！！ - YouTube]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/231212.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-12T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[12/12/23 - this year the supply chain continued to impact our ability to produce norns, but we did manage to secure parts recently and expect to have a new edition in february. we're engineering a lot of production optimization to offset constantly rising manufacturing costs. one huge benefit of this is a more reliable machine.
+we still have grids stocked and ready to ship, though be advised we're entering shipping mayhem season.]]></summary>
+        <author>
+            <name>monome</name>
         </author>
     </entry>
     <entry>
@@ -786,6 +828,133 @@ GameGaz Daily 2023.12.9 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>雨天雨衣</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/231117.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[11/17/23 - december 8 1pm EST we will have grids in both sizes. we will also have norns, both grey and black (so you'll need to choose upon ordering). crow production is scheduled and we expect them to be ready sometime in january.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230925.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[09/25/23 - we'll have grids again in december. a date for crow will become less vague once production gets underway.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230915.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[09/15/23 - grids and crow available today at 1pm EDT. links will go live below, allowing you to place an order. you'll receive a confirmation email upon ordering, and shipping confirmation when they ship out. we have everything built and will start shipping early next week.
+we've switched e-mail newsletter providers and are now using a service we very much believe in. if you'd like to continue receiving email news, please resubscribe.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230825.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[08/25/23 - it's almost september and many of you noticed that we're expecting to have availability in september. we've just set the date: friday, september 15. at 1pm EDT the order links will be live. shipping will begin the following week.
+you may have also noticed, below this message next to "old news" is a link to rss. rss (wikipedia) isn't talked about enough these days. you can easily get an rss reader for your phone or computer (or use a web service, but we have a difficult time recommending them). add a new feed: monome.org/rss.xml --- and you will receive updates like this.
+this was the decentralized utopia we were promised by computers. maybe we can find it again.
+we'll still send out the newsletter, but as email becomes increasingly broken and commodified we'd like to help foster other ways of connecting.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230630.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[06/30/23
+so we made a new thing
+but really an old thing
+from over a decade ago
+and so there was this impulse that we had to
+somehow make the new thing actually new
+with a fancy new application or something
+but i guess we decided not to do that
+this light pattern is an experiment we made a few months ago
+with a demoscene-era plasma technique
+the important stuff all happens in one line of code
+which we wanted to mention simply to spread the concept of
+permacomputing and also
+despite the grid fundamentally being interactive
+sometimes a visual or sound can powerfully stand on its own
+like when nine inch nails had this same new thing on stage
+just visualizing and hell they are still cooler than us
+but really the point is
+the grid hasn't meaningfully changed for two decades
+still doing nothing yet
+containing endless horizons to explore new instrument design
+a vehicle for new skills and
+perhaps making new friends
+but we guess everyone knows that by now
+so it's new and it's the same
+and that's mostly why there's not really a new killer app
+lesser reasons include
+us opening an art store and
+still tending a farm and finding time to make music
+such as this forthcoming softbits you're hearing now
+but we are glad to be building these again
+and look forward to seeing what comes next]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230602.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[06/02/23 - norns.community is new. you can read all about it at this lines thread.
+a small batch of norns will be available june 16 at 1pm EST.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230512.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[05/12/23 - grids came together faster than expected. we'll have a small batch available next friday, may 19, at 1pm EST. crow is now scheduled for late june. we're expecting to also have a small batch of norns in mid june.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230420.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[04/20/23 - more grids expected late may, crow early june]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/221201.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-12-08T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[12/01/22 - we're enduring the semiconductor shortage alongside basically all small manufacturers. this is the reason that we do not have known restock dates for many of our devices. we'll update this site as we learn more. i wrote a longer essay which may be of further interest.
+we've also had to increase pricing to accommodate rising costs of components, contract manufacturing, and transportation. in addition to delays we're also encountering quality issues, which contribute a substantial amount of labor to ensure everything is in working order. we'll adjust pricing as the situation changes.]]></summary>
+        <author>
+            <name>monome</name>
         </author>
     </entry>
     <entry>
@@ -3283,6 +3452,56 @@ youtu.be
 自虐的な独り語りが大半を占めていて、苦手な人は苦手だろうし自分もあまり好きではない。だけれど孤独にひたすら歩くということをしていると、元々ある独り言の癖がさらに加速するのはよくわかる。疲れすぎて終盤では自分でも何を言っているか分からないような自分語りを滔々としてしまうのも、よくよくわかる。月ノ美兎さんがドロッセルマイヤーさんのさんぽ神に従って散歩する動画を見たときも思ったが、他人の散歩というのはけっこうエンタメとして面白い。結局知らない景色を見ることが散歩の目的なら自分で体験しなくてもいいのかもしれないが、肌で感じるものもある。それは日が暮れると泊まれなくなる危機感、人気（ひとけ）のなさ、トイレや自販機のなさ、などが怖くなってくる感じである。それはもはや散歩というレベルではない、より生存がかかったもので、この動画ではそれも描かれている。怖さのなかで（冗長だけど）人生みたいだと身をもって実感したり、自分自身だけは確かにいて踏みしめるしかない、と分かってくるのはやはりこういう散歩をしないとわからないことではあるなーと思い出せてよい動画だった。]]></summary>
         <author>
             <name>遺失物取扱所</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230310.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-11-20T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[03/10/23 - norns and crow are sold out. we'll have new batches of crow and grids later this spring.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230307.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-11-20T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[03/07/23 - crow returns this on friday 1pm EST. note that the price has increased due to modern times. we'll also have a small number of b-stock norns. shipping will begin next week.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230223.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-11-20T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[02/10/23 - we'll have a small batch of grids available next week, on the 17th at 1pm EST. the following day we'll have discounted b-stock grids available. shipping will happen a week or so after.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230201.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-11-20T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[02/01/23 - crow is returning. some of the long-time part shortages have eased and we've started receiving components. we're working on some software improvements in anticipation of shipping a new batch. dates will be announced soon.]]></summary>
+        <author>
+            <name>monome</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[monome]]></title>
+        <id>./news/230101.md</id>
+        <link href="https://monome.org/old.html"/>
+        <updated>2023-11-20T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[01/01/23 - shipping updates now have a dedicated page.]]></summary>
+        <author>
+            <name>monome</name>
         </author>
     </entry>
     <entry>
