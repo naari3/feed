@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-15T10:01:51.947Z</updated>
+    <updated>2023-12-15T11:01:48.488Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[移植25]]></title>
+        <id>hatenablog://entry/6801883189067105455</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/12/15/192202"/>
+        <updated>2023-12-15T10:22:02.000Z</updated>
+        <summary type="html"><![CDATA[17まで完了。もう少しー。以下、自分用TODOリスト・・・。
+■GBA
+・OP,ED,プロローグ
+・スクリプト解析
+・エフェクト（ToHeartGBA流用）
+・アイコン表示
+・パーティ表示
+・8adのバグ修正
+
+■ツール
+・PMDのバッチ処理、soxのフェードアウト処理
+・無理に軽量版を作ろうとしたコマンド残骸の除去
+
+■考え中
+・減色方法の変更。一度256色で減色してからmode3にする]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Merpay Frontend のこれまでとこれから: 2023年版]]></title>
         <id>https://engineering.mercari.com/blog/entry/20231215-the-past-and-future-of-merpay-frontend-2023/</id>
