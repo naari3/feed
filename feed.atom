@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-15T06:01:43.935Z</updated>
+    <updated>2023-12-15T07:02:16.220Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -87,6 +87,16 @@ F^{-1} (Y1 or Y2) = F^{-1} (Y1) or F^{-1} (Y2)
 コホモロジー - Wikipedia]]></summary>
         <author>
             <name>conceptualization</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[npm ciのキャッシュ方式の検討]]></title>
+        <id>https://r7kamura.com/articles/2023-12-15-npm-cache</id>
+        <link href="https://r7kamura.com/articles/2023-12-15-npm-cache"/>
+        <updated>2023-12-14T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[結論から言うと、node_modulesをキャッシュしてnpm ciの実行を省略するのが、多くの場合には有効そうです。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
