@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-16T13:01:59.869Z</updated>
+    <updated>2023-12-16T14:01:49.663Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13578,18 +13578,6 @@ OP
         <updated>2023-09-18T03:42:36.000Z</updated>
         <summary type="html"><![CDATA[海外に新天地を求めるしかないみたいです（前からですけど。
 github.com]]></summary>
-        <author>
-            <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[完走した感想2]]></title>
-        <id>hatenablog://entry/820878482968445142</id>
-        <link href="https://akkera102.hatenablog.com/entry/2023/09/18/100243"/>
-        <updated>2023-09-18T01:02:43.000Z</updated>
-        <summary type="html"><![CDATA[モノ作るのだから裏テーマを決めてやってるのですけど、今回はウマみがあったかというわれると少な目な印象です。REG_BGxPAや、REG_BGxX、REG_BGxYに少し触ったおかげでエフェクト処理に自信がついたことや、エフェクト用画像をこしらえてラクして作れるようになったぐらいでしょうか。エフェクトはなんというか、自分がうまく書けないせいもありますけどコードが汚れるから嫌いです（汗。mode3で1frameにぎり収まるCPU性能は絶妙な感じがしてなかなか大変。後半は諦めて2frameまでならOKにしました。今ならひぐらしGBAのあのうずまきエフェクトも再現できるやもしれません。
-
-さてさて、このあと何を作ろうかなあー。ラブエスカレーターのソースコードが手に入ったらやりたいけど無理ですし。オリジナルゲームを作りたいかというとそういう熱はなんですし。GBA通信ライブラリを見つけたのでそれを組み合わせて何かするか、HBLANKでmodeを切り替えてマリオカートっぽいデモを作りたいような作りたくないような。oneのリメイクが12月に発売されるので手直しもアリっちゃありですけど日付表示エフェクトとアルファブレンド画像を加えるぐらいしかないというか。いやそれいったら過去作はけっこう恥ずかしいのでアトラク前は全部書き直したい衝動。CHIP-8移植は候補の１つ。サンプルゲームが豊富で面白そうです。ん－絵も音楽もかけないと自然と選択肢が限られるのもツラみですね。]]></summary>
         <author>
             <name>あーさん日記</name>
         </author>
