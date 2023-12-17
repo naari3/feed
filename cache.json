@@ -4584,21 +4584,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230920/20230920094942.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482966808900",
-          "author": null,
-          "description": "staff.hatenablog.com\n今回、ブログの解析に役立つデータを新たに追加しました。追加したのは以下の5つのカスタムディメンションです。それぞれ、詳しく説明させていただきます。\n追加したカスタムディメンション\nカスタムディメンション名: page_id\n概要\n解析での利用シーンや用途\n利用上の注意\nカスタムディメンション名: categories\n概要\n解析での利用シーンや用途\n利用上の注意\nカスタムディメンション名: first_category\n概要\n解析での利用シーンや用途\nカスタムディメンション名: character_count\n概要\n解析での利用シーンや用途\n利用上の注意\nカスタムディメンション名: days_since_post_date\n概要\n解析での利用シーンや用途\n利用上の注意\nカスタムディメンションの導入方法\n追加したカスタムディメンション\nカスタムディメンション名: page_id\n概要\npage_id には、開いているページの種類を表す名前が記録されます。\npage_id は以下のとおりです。\n page_id\n     ページの種類\n    \nindex\n    ブログのトップページ\n    \nentry\n    記事ページ\n    \narchive\n    カテゴリページ、月ページ、authorページ等\n    \nabout\n    このブログについて\n    \nstatic_page\n    固定ページ\n    \nsearch\n    ブログ内検索\n    \n解析での利用シーンや用途\nブログの解析を行う際には、そのページの性質を把握することは重要です。記事ページとカテゴリページでは、ページの利用のされ方が全く異なり、別々に解析を行う必要があるためです。\n利用上の注意\nただし、ご利用には以下の点にご注意いただければと思います。\n上記…",
-          "link": "https://staff.hatenablog.com/entry/2023/09/19/150145",
-          "publishedOn": "2023-09-19T06:01:45.000Z",
-          "wordCount": 938,
-          "title": "はてなブログのGoogle アナリティクス 4 計測連携機能に、ブログの解析に役立つデータを新たに5つ追加しました",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230919/20230919150203.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230919/20230919150203.png"
         }
       ]
     },

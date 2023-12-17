@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-17T18:01:56.845Z</updated>
+    <updated>2023-12-17T19:02:02.456Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13397,69 +13397,6 @@ JAFカードを前から作ろうか迷っていたので、とりあえず、JA
         <summary type="html"><![CDATA[結論 https://www.rfc-editor.org/rfc/rfc5617.html (HISTORIC) (※1) 新しくドメイン名を登録された方へ DKIM ADSP レコードは、もはや書...]]></summary>
         <author>
             <name>古賀 勇</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[はてなブログのGoogle アナリティクス 4 計測連携機能に、ブログの解析に役立つデータを新たに5つ追加しました]]></title>
-        <id>hatenablog://entry/820878482966808900</id>
-        <link href="https://staff.hatenablog.com/entry/2023/09/19/150145"/>
-        <updated>2023-09-19T06:01:45.000Z</updated>
-        <summary type="html"><![CDATA[staff.hatenablog.com
-今回、ブログの解析に役立つデータを新たに追加しました。追加したのは以下の5つのカスタムディメンションです。それぞれ、詳しく説明させていただきます。
-追加したカスタムディメンション
-カスタムディメンション名: page_id
-概要
-解析での利用シーンや用途
-利用上の注意
-カスタムディメンション名: categories
-概要
-解析での利用シーンや用途
-利用上の注意
-カスタムディメンション名: first_category
-概要
-解析での利用シーンや用途
-カスタムディメンション名: character_count
-概要
-解析での利用シーンや用途
-利用上の注意
-カスタムディメンション名: days_since_post_date
-概要
-解析での利用シーンや用途
-利用上の注意
-カスタムディメンションの導入方法
-追加したカスタムディメンション
-カスタムディメンション名: page_id
-概要
-page_id には、開いているページの種類を表す名前が記録されます。
-page_id は以下のとおりです。
- page_id
-     ページの種類
-    
-index
-    ブログのトップページ
-    
-entry
-    記事ページ
-    
-archive
-    カテゴリページ、月ページ、authorページ等
-    
-about
-    このブログについて
-    
-static_page
-    固定ページ
-    
-search
-    ブログ内検索
-    
-解析での利用シーンや用途
-ブログの解析を行う際には、そのページの性質を把握することは重要です。記事ページとカテゴリページでは、ページの利用のされ方が全く異なり、別々に解析を行う必要があるためです。
-利用上の注意
-ただし、ご利用には以下の点にご注意いただければと思います。
-上記…]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
