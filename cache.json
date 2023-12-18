@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189067958262",
+          "author": null,
+          "description": "バッチファイルを１日中書く作業。。二度とやりたくありません。。\nGBAのコードが書ける。。何週間ぶりなのやら。。\n作業用のGBFS内訳\n\nimg: 26.3MB\ntxt: 1.49MB\nsnd: なし\n-------\n27.79MB",
+          "link": "https://akkera102.hatenablog.com/entry/2023/12/18/234102",
+          "publishedOn": "2023-12-18T14:41:02.000Z",
+          "wordCount": 409,
+          "title": "移植27",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189067485215",
           "author": null,
           "description": "正規表現完了・・・。TODOリスト２つ追加。\n・パタパタアニメーション\n・カナンフォントの作成。12x10ドット",
@@ -4599,21 +4614,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230921/20230921143501.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482969015887",
-          "author": null,
-          "description": "これまで、記事の操作（取得や新規作成など） に関するAPIを提供していましたが、今回、固定ページを操作するエンドポイントを新たに追加しました。\n固定ページのAPIに関するより詳しい情報は、下記のドキュメントをご参照ください。\n\n固定ページは有料プラン（はてなブログPro、 はてなブログBusinessなど） 向けの機能で、投稿した順に時系列で扱われる通常の記事とは別に、固定URLのみで閲覧できる独立した特別なページを作成・更新できる機能です。自己紹介ページやプライバシーポリシー、ガイドライン、特設ページなどでよくご利用いただいております。\n今回の対応で、記事ページとともにAPI経由でデータを管理できるようになりました。また、記事ページのAPIと組み合わせて、技術ブログの記事で紹介したスライドのまとめページを自動更新するなど、自動化用途でも活用できると考えております。\nどうぞご利用ください。",
-          "link": "https://staff.hatenablog.com/entry/2023/09/20/112358",
-          "publishedOn": "2023-09-20T02:23:58.000Z",
-          "wordCount": 810,
-          "title": "はてなブログAtomPub API に固定ページを操作する機能を追加しました",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230920/20230920094942.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230920/20230920094942.png"
         }
       ]
     },
