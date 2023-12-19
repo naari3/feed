@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-19T06:02:14.370Z</updated>
+    <updated>2023-12-19T07:01:55.661Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Dagster Cloudで運用するdbt : オーケストレーションツールの技術選定、および4ヶ月運用してわかったメリットとデメリット]]></title>
+        <id>hatenablog://entry/6801883189067675083</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2023/12/19/210000"/>
+        <updated>2023-12-19T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+※この記事は2023年のdbt Advent Calendarの19日目の記事です。
+dbt-coreのオーケストレーションツールとしてDagster Cloudを導入してから4ヶ月ほど経った。ここで一度振り返り、普段当たり前のように使っているオーケストレーションツールの存在意義や技術選定のポイントに立ち返りつつ、Dagster Cloudを利用することのメリット・デメリットを書いていこうと思う。
+想定読者層：
+dbtについてはある程度知っている方
+Airflowなどオーケストレーションツールをある程度触ったことがある方
+目次：
+はじめに
+オーケストレーションツールについて
+そもそもOrchestrationとは何か？
+オーケストレーション・ツールが存在すると何が嬉しいのか？
+オーケストレーション・ツールの技術選定のポイント
+1. 可能な限りサーバーレスにする
+2. 他のツールとのInteroperatorbilityを担保する
+3. 開発のしやすさを確保する
+4. 運用のしやすさを確保する
+Dagster Cloudでdbtを運用するメリット
+1. サーバーレスな環境構築が可能
+2. Pythonコードで書ければなんでもできる柔軟さがある
+3. 強力な開発者体験：ローカル開発とブランチデプロイ環境構築
+4. UIがイケてる
+5. dbt Cloudと比較して、オーケストレーションの機能が充実している
+メリットのまとめ
+デメリット
+1. 学習の難易度が高い
+2. 導入社数が少ないので知見が溜まっていない
+おわりに
+オーケストレーションツールについて
+データエンジニアは当たり前のようにAirflowなどのオーケストレーションツールを利用しているが、ここで改めてオーケストレーションを行うツールの存在意義を確認しておきたい。まずはOrchestrationの意味を振り返…]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[モダリティを考慮したiOSアプリのナビゲーションの再設計]]></title>
         <id>https://engineering.mercari.com/blog/entry/20231219-b613d5daad/</id>
@@ -14,6 +52,24 @@
         <summary type="html"><![CDATA[こんにちは。メルペイのiOSエンジニアの@kenmazです。 この記事は、Merpay Advent Calendar 2023 の19日目の記事です。 概要 iOSアプリ開発において、お客さまにより良い体験を提供する上 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[週記#90 12月2週 ライブ公開見てね]]></title>
+        <id>hatenablog://entry/6801883189068099122</id>
+        <link href="https://nkaoobt.hatenablog.com/entry/2023/12/19/154848"/>
+        <updated>2023-12-19T06:48:48.000Z</updated>
+        <summary type="html"><![CDATA[今週は書くこと少ないけど、来週はいっぱい書くので楽しみにしててください。
+ 
+
+【Z会】【勉強シロイド2023】 / ニコ生ライブ公開(2023/12/20 20:09開始) https://t.co/OAW2BzSvcD 
+水曜の20時19分からライブ公開します！
+1年ぶりのZ会です！よろしくお願いします！
+— nkaoobt (@nkaoobt) 2023年12月17日
+   
+みんな見てね〜 拡散もしてね〜]]></summary>
+        <author>
+            <name>音MADとポケモンと私</name>
         </author>
     </entry>
     <entry>

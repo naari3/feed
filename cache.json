@@ -1497,6 +1497,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189067675083",
+          "author": null,
+          "description": "はじめに\n※この記事は2023年のdbt Advent Calendarの19日目の記事です。\ndbt-coreのオーケストレーションツールとしてDagster Cloudを導入してから4ヶ月ほど経った。ここで一度振り返り、普段当たり前のように使っているオーケストレーションツールの存在意義や技術選定のポイントに立ち返りつつ、Dagster Cloudを利用することのメリット・デメリットを書いていこうと思う。\n想定読者層：\ndbtについてはある程度知っている方\nAirflowなどオーケストレーションツールをある程度触ったことがある方\n目次：\nはじめに\nオーケストレーションツールについて\nそもそもOrchestrationとは何か？\nオーケストレーション・ツールが存在すると何が嬉しいのか？\nオーケストレーション・ツールの技術選定のポイント\n1. 可能な限りサーバーレスにする\n2. 他のツールとのInteroperatorbilityを担保する\n3. 開発のしやすさを確保する\n4. 運用のしやすさを確保する\nDagster Cloudでdbtを運用するメリット\n1. サーバーレスな環境構築が可能\n2. Pythonコードで書ければなんでもできる柔軟さがある\n3. 強力な開発者体験：ローカル開発とブランチデプロイ環境構築\n4. UIがイケてる\n5. dbt Cloudと比較して、オーケストレーションの機能が充実している\nメリットのまとめ\nデメリット\n1. 学習の難易度が高い\n2. 導入社数が少ないので知見が溜まっていない\nおわりに\nオーケストレーションツールについて\nデータエンジニアは当たり前のようにAirflowなどのオーケストレーションツールを利用しているが、ここで改めてオーケストレーションを行うツールの存在意義を確認しておきたい。まずはOrchestrationの意味を振り返…",
+          "link": "https://contradiction29.hatenablog.com/entry/2023/12/19/210000",
+          "publishedOn": "2023-12-19T12:00:00.000Z",
+          "wordCount": 712,
+          "title": "Dagster Cloudで運用するdbt : オーケストレーションツールの技術選定、および4ヶ月運用してわかったメリットとデメリット",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20231218/20231218141209.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20231218/20231218141209.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189067540886",
           "author": null,
           "description": "先週、Snowflake社主催のSnowflake Technical Round Tableというイベントで登壇してきた。\n speakerdeck.com\n物理・オンライン含めて人生ではじめての登壇なので、日記のような感じでまとめてみたいと思う。\nググっても出てこないタイプのイベントらしい\n経緯\n会社でデータ基盤の移行プロジェクトをやり、このような記事を書いた。\ntech.algoage.dmm.com\nその記事を見たSnowflake社の営業の方からお声がかかり、登壇させてもらうことになった。\n当日について\n緊張していたので飯が喉を通らず、プロテインとたい焼きだけで昼食を済ませた。\n一緒に登壇したharryさん、しゅうさんと一緒に、SnowflakeのAdvocateであるFelipe Hoffaに話に行った。\n\n\n会話の内容はあまり覚えていないが、軽く自己紹介をしたりした気がする。Hiveってあんま良くないよね〜みたいな話だったと思う\nFelipeはフレンドリーで気さくな人柄で、Japanese Broken Englishも理解しようとしてくれる人物である\nそのあとはこの三人で色々話したりした。データエンジニアリングのこと、データマネジメントのことなど。\n登壇する直前、Felipeに会って、I'm nervousなんだよね〜みたいな話をした。\n\n\nFelipeは「顔を上げて、自分のことを見ている人を見つけ、その人に向けて話すと良い」と教えてくれた\nあとはDancingだ！（笑）と言われた\n登壇中、声は裏返り、言葉に詰まり、何を話したかったのか忘れてしまうことが多かった。\n\n\nそれでも、聴衆の反応をしっかり見て、自分の話が今ウケているのかウケていないのか気にするようにした\n懇親会で聞く限り、話自体はよくできたっぽい\nharryさんが体を張ったギャグをしていて面白かった\n懇親会でFelipeと話した\n\n\nお互いのキャリアのことについて語り合った。この時の教訓については後述\n懇親会が本番である\n二次会でも色々話した\n教訓\nカーネギーの『話す力』を読んでおくといい\n\n【決定版カーネギー】話す力: 自分の言葉を引き出す方法\n\n作者:D・カーネギー\n新潮社\nAmazon\n\n僕が言いたいことは大体ここに書いてある。実際に読んだのは登壇する直前だったが、本当は登壇が決まった直後に読んでおくべきだったのだと思う。練習をしっかりやろう。\nプレゼン用タイマーアプリを使って時間を管理すると余裕ができていい。iPhoneの場合、AC Timerがおすすめだ。\n\nAC Timer Lite\n\nNIPPON INFORMATION CO.,LTD.\n教育\n無料\n\n\napps.apple.com\nエンジニアとの英会話について\nLinkedInをやっておくといい\n\n\n海外のエンジニアに共通する連絡手段のため\n経歴を書いておくと自己紹介が楽になる\n英会話において、大事なのはコミュニケーションをしようとする意思であり、発音やボキャブラリーは重要ではない\n\n\n一定の基礎力は必要ではある\n英語はただの一つの言語に過ぎない、と割り切ることが大事になる。Google翻訳やDeepl、ボディランゲージ、その場でググるなど、いろいろな手段を用いてコミュニケーションを試みよう。\n\n\nエンジニアの場合、リーディング能力はあってもリスニング能力に欠ける場合が多い\nなので、Google翻訳で文字起こしをしながら会話するのがおすすめである\n本当に伝えたいことを伝えるようにすれば、多少言語が壊れていても通じる\n発音が下手だと聞いてくれない人もいる。その場合はしょうがないので諦めよう。\nおわりに\nいい経験になった。機会をくれてありがとうございます。これからも登壇はやっていきたいので、気軽にお声がけください。",
@@ -3387,6 +3402,21 @@
       "feedUrl": "https://nkaoobt.hatenablog.com/rss",
       "siteUrl": "https://nkaoobt.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6801883189068099122",
+          "author": null,
+          "description": "今週は書くこと少ないけど、来週はいっぱい書くので楽しみにしててください。\n \n\n【Z会】【勉強シロイド2023】 / ニコ生ライブ公開(2023/12/20 20:09開始) https://t.co/OAW2BzSvcD \n水曜の20時19分からライブ公開します！\n1年ぶりのZ会です！よろしくお願いします！\n— nkaoobt (@nkaoobt) 2023年12月17日\n   \nみんな見てね〜 拡散もしてね〜",
+          "link": "https://nkaoobt.hatenablog.com/entry/2023/12/19/154848",
+          "publishedOn": "2023-12-19T06:48:48.000Z",
+          "wordCount": 470,
+          "title": "週記#90 12月2週 ライブ公開見てね",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/6801883189066742453",
           "author": null,
