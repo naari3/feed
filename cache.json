@@ -8201,6 +8201,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2023/12/19/open-job-letter/",
+          "author": null,
+          "description": "転職活動を始めたので、Open Job Letterを公開しました。\nOpen Job Letter v2\n直近は何をしてたか、転職活動の目的、何ができそうかなどをまとめています。\nページの最下部にあるフォームから連絡できるので、興味がある方はよろしくお願いします。\nOpen Job Letterとは\nOpen Job Letterは、いわゆる求職記事のことで、転職活動の目的や自分自身を紹介する記事です。\nこの名前は自分が適当に決めたものなので、一般的な名前ではありません。\n要約をしてないフリーフォーマットのカバーレター/レジュメみたいなイメージです。\n2018年にOpen Job Letterを公開してたので、\n今回は便宜上Open Job Letter v2としています。\nOpenとついてるのは、Publicに公開しているためです。\nPublicにしているのは、いくつか理由があります。\nオープンソース活動などもしているので、Publicの方が一貫性がある気がした\n公開を前提に書くことで、公平性を持って書きやすい\nURLでアクセスできるので、使いやすくて便利\n自分は所属とかは特に公開しないタイプなので、読むとわかりますが会社名とかは特に出さないで抽象化して書いています。\nこれはブログ書く時とかもそうですが、ある程度抽象化した方が読みやすいし、自分にとっては自然なのでそうしています。\n面談とかでは、もっと具体的な話をするので、公開する文章としてはそういうスタイルをとっています。\nOpen Job Letterの作り方\n今回のOpen Job Letter v2は、NotionとTallyというフォームサービスを使って作成しています。\nTallyはNotionのページに埋め込みやすいGoogle Form的なサービスです。ConditionなどのロジックやNotionに結果を…",
+          "link": "https://efcl.info/2023/12/19/open-job-letter/",
+          "publishedOn": "2023-12-19T10:23:00.000Z",
+          "wordCount": 1127,
+          "title": "Open Job Letterを公開しました",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2023/12/03/update-textlint-preset/",
           "author": null,
           "description": "最近、GitHubに新しいタイプの強調構文が追加されました。\n\nMarkdownの引用ブロックの中に ![TYPE] を入れることで、アイコン付きの強調構文を利用できます。\n\n> [!NOTE]  \n> Highlights information that users should take into account, even when skimming.\n\n\n現在はベータ的なサポートになっていますが、GitHubのIssueやReleasesなど大体の場所で利用できます。\n[Markdown] An option to highlight a \"Note\" and \"Warning\" using blockquote (Beta) · community · Discussion #16925\nAsciiDocのAdmonitionsという機能とよく似た機能です。\nAdmonitions | Asciidoctor Docs\nこの構文なのですが、CommonMarkやGitHub Flavored Markdown Specでも特に定義されたものではないため、パーサー的にはBlockquoteに[!TYPE]という文字列が入ってるという扱いになります。\ntextlintのルールをGitHubの新しい強調構文に対応させた\ntextlintのルールには、[と]の対応があるかをチェックする@textlint-rule/textlint-rule-no-unmatched-pairというルールがありますが、このルールがこの新しい構文で壊れるケースがありました。\nNot found pair character for [. when using new highlight blockquote syntax · Issue #16 · textlint-rule/textlint-rule-no-unmatched-pair\n\n! をセンテンスの区切り文字として扱ってしまっていてため、[!NOTE] が [ と ! に分割されてしまう問題があった\n内部的にはsentence-splitterという文章をセンテンスに分化するライブラリを使っていて、このライブラリが古いと起きる問題でした。\nそのため、sentence-splitterを使ってるルールを更新して、GitHubの新しい強調構文でも問題が起きないように修正しました。\nまた、自分がメンテナンスしているtextlintのプリセットルールも更新しました。\nRelease v9.0.0 · textlint-ja/textlint-rule-preset-ja-technical-writing\nRelease v9.0.0 · textlint-ja/textlint-rule-preset-japanese\n今回のアップデートでNode.js 18以降のみのサポートとなっています。\nまた、エラー報告にlocator APIを使うようにして、より正確な位置を報告できるようになっています。\nおわりに\n\n> [!NOTE]  \n> Highlights information that users should take into account, even when skimming.\n\n\nGitHubの新しい強調構文を使って、textlintが余計なエラーが起きたらとりあえずルールをアップデートして見てください。\nまた、最新のバージョンでも問題が起きる場合は、Issueを立ててもらえると助かります。",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-19T12:02:03.128Z</updated>
+    <updated>2023-12-19T13:03:29.564Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -42,6 +42,36 @@ Dagster Cloudでdbtを運用するメリット
 データエンジニアは当たり前のようにAirflowなどのオーケストレーションツールを利用しているが、ここで改めてオーケストレーションを行うツールの存在意義を確認しておきたい。まずはOrchestrationの意味を振り返…]]></summary>
         <author>
             <name>現実モデリング</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Open Job Letterを公開しました]]></title>
+        <id>https://efcl.info/2023/12/19/open-job-letter/</id>
+        <link href="https://efcl.info/2023/12/19/open-job-letter/"/>
+        <updated>2023-12-19T10:23:00.000Z</updated>
+        <summary type="html"><![CDATA[転職活動を始めたので、Open Job Letterを公開しました。
+Open Job Letter v2
+直近は何をしてたか、転職活動の目的、何ができそうかなどをまとめています。
+ページの最下部にあるフォームから連絡できるので、興味がある方はよろしくお願いします。
+Open Job Letterとは
+Open Job Letterは、いわゆる求職記事のことで、転職活動の目的や自分自身を紹介する記事です。
+この名前は自分が適当に決めたものなので、一般的な名前ではありません。
+要約をしてないフリーフォーマットのカバーレター/レジュメみたいなイメージです。
+2018年にOpen Job Letterを公開してたので、
+今回は便宜上Open Job Letter v2としています。
+Openとついてるのは、Publicに公開しているためです。
+Publicにしているのは、いくつか理由があります。
+オープンソース活動などもしているので、Publicの方が一貫性がある気がした
+公開を前提に書くことで、公平性を持って書きやすい
+URLでアクセスできるので、使いやすくて便利
+自分は所属とかは特に公開しないタイプなので、読むとわかりますが会社名とかは特に出さないで抽象化して書いています。
+これはブログ書く時とかもそうですが、ある程度抽象化した方が読みやすいし、自分にとっては自然なのでそうしています。
+面談とかでは、もっと具体的な話をするので、公開する文章としてはそういうスタイルをとっています。
+Open Job Letterの作り方
+今回のOpen Job Letter v2は、NotionとTallyというフォームサービスを使って作成しています。
+TallyはNotionのページに埋め込みやすいGoogle Form的なサービスです。ConditionなどのロジックやNotionに結果を…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
