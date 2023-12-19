@@ -78,6 +78,26 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2023.12.19</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2023121940064/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>NSZ 4.6.1,Neumann 0.0.26,PKHeX 23.12.18,PSPGameTool V1 Beta,ARK-4 v1702859856,Movian v5.0.751,duckstation v0.1-6168,xemu v0.7.118,Xbox Series X/Sなど値下げセール→→→この記事の続きを読む
+GameGaz Daily 2023.12.19 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/ssaymds" target="_blank"
               rel="noopener">ておつく</a></h3>
           <section class="articles-per-source">
@@ -19316,140 +19336,6 @@ GameGaz Daily 2023.9.21 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
-              rel="noopener">honeylab&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">atomcam_toolsのコマンド制御</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2023/09/20/204059" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>久しぶりに強化版のatomcam_toolsのソース見てたら
-明確に使用方法が書いてないような便利機能がいつの間にかたくさん実装されていたので紹介しておきます
- 
-・画質調整機能　(videoコマンド)
-https://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/video_callback.c#L321
-上下反転・ミラー、コントラスト(cont)、明るさ、サチュレーション、シャープネス、
-2D,3Dノイズ低減の強さ、センサーのデジタル／アナログゲイン、等など
- 
-
-
-
-第一引数
-第二引数
-役割
-
-
-flip
-[normal/flip/mirror/flip_mirror]
-上下・ミラー
-
-
-cont
-0-128-255
-コントラスト
-
-
-bri
-0-128-255
-明るさ
-
-
-sat
-0-128-255
-
-
-サチュレーション
-sharp
-0-128-255
-シャープネス
-
-
-sinter
-0-128-255
-２Dノイズ低減
-
-
-temper
-0-128-255
-３Dノイズ低減
-
-
-aecomp
-0-255
-AEパラメータ
-
-
-aeitmax
-0-?
-AEパラメータ
-
-
-dpc
-0-255
-？
-
-
-drc
-0-255
-
-
-ダイナミックレンジコントロール
-hilight
-0-10
-ハイライト
-
-
-again
-0-?
-
-
-センサゲイン（アナログ）
-dgain
-0-?
-
-
-センサゲイン（デジタル）
- 
-このパラメータはATOMCam内部で4000番ポートにコマンドを送るか、
-cmd.cgiにexecコマンドを渡すことで実行できます。
-4000番ポートでの制御は127.0.0.1から以外はRejectされてます。
-https://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/command.c#L130
-第二引数を省略した場合、戻り値として現在の値が返されます
- 
-ATOMCam内のスクリプトなどで処理する場合
-[root@atomcam:~]# echo &quot;video bri 100&quot; | /usr/bin/nc localhost 4000
-ok
-外部からcurlコマンドでcgiを呼び出す場合
-curl -v -X POST -H &quot;Content-Type: application/json&quot;  -d &#x27;{&quot;exec&quot;:&quot;video bri 128&quot;}&#x27; &quot;http://192.168.0.5/cgi-bin/cmd.cgi?port&#x3D;socket&quot;
-※ &quot;exec&quot;と:とコマンドの間にスペースが入ると正しく動きませんでした
-CGI用のHTTPベースのコマンド制御が実装されてた　これ使うとオートメーションできると思う
-あとWAVファイル再生とか実装されてたわ　便利
-あとでコマンド一覧まとめるね pic.twitter.com/Qy7MMS3oIn
-2023年9月20日
-
-
- 
-動かしている例はこんな感じです。
-よくわかんない役割も多いですので、実際に調整してみるのがいいと思います。
-多分再起動したら標準値に戻ると思います。
-何かしらいじったら天体用にいい値が出てくる気がするので私も試してみます。
- 
-・そのほかのコマンドの実装がここにあるので色々できます
-https://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/command.c#L32
-使いそうなのは &quot;irled on&quot; &quot;irled off&quot; &quot;irled auto&quot; とかかな
-あと、&quot;aplay &quot;　でスピーカから音声再生ができました</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21233,7 +21119,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-12-18T23:01:42.367Z">2023-12-18T23:01:42.367Z</time>
+    <time id="build-timestamp" datetime="2023-12-19T00:02:59.611Z">2023-12-19T00:02:59.611Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

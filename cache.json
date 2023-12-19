@@ -2099,21 +2099,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482969170005",
-          "author": null,
-          "description": "久しぶりに強化版のatomcam_toolsのソース見てたら\n明確に使用方法が書いてないような便利機能がいつの間にかたくさん実装されていたので紹介しておきます\n \n・画質調整機能　(videoコマンド)\nhttps://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/video_callback.c#L321\n上下反転・ミラー、コントラスト(cont)、明るさ、サチュレーション、シャープネス、\n2D,3Dノイズ低減の強さ、センサーのデジタル／アナログゲイン、等など\n \n\n\n\n第一引数\n第二引数\n役割\n\n\nflip\n[normal/flip/mirror/flip_mirror]\n上下・ミラー\n\n\ncont\n0-128-255\nコントラスト\n\n\nbri\n0-128-255\n明るさ\n\n\nsat\n0-128-255\n\n\nサチュレーション\nsharp\n0-128-255\nシャープネス\n\n\nsinter\n0-128-255\n２Dノイズ低減\n\n\ntemper\n0-128-255\n３Dノイズ低減\n\n\naecomp\n0-255\nAEパラメータ\n\n\naeitmax\n0-?\nAEパラメータ\n\n\ndpc\n0-255\n？\n\n\ndrc\n0-255\n\n\nダイナミックレンジコントロール\nhilight\n0-10\nハイライト\n\n\nagain\n0-?\n\n\nセンサゲイン（アナログ）\ndgain\n0-?\n\n\nセンサゲイン（デジタル）\n \nこのパラメータはATOMCam内部で4000番ポートにコマンドを送るか、\ncmd.cgiにexecコマンドを渡すことで実行できます。\n4000番ポートでの制御は127.0.0.1から以外はRejectされてます。\nhttps://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/command.c#L130\n第二引数を省略した場合、戻り値として現在の値が返されます\n \nATOMCam内のスクリプトなどで処理する場合\n[root@atomcam:~]# echo \"video bri 100\" | /usr/bin/nc localhost 4000\nok\n外部からcurlコマンドでcgiを呼び出す場合\ncurl -v -X POST -H \"Content-Type: application/json\"  -d '{\"exec\":\"video bri 128\"}' \"http://192.168.0.5/cgi-bin/cmd.cgi?port=socket\"\n※ \"exec\"と:とコマンドの間にスペースが入ると正しく動きませんでした\nCGI用のHTTPベースのコマンド制御が実装されてた　これ使うとオートメーションできると思う\nあとWAVファイル再生とか実装されてたわ　便利\nあとでコマンド一覧まとめるね pic.twitter.com/Qy7MMS3oIn\n2023年9月20日\n\n\n \n動かしている例はこんな感じです。\nよくわかんない役割も多いですので、実際に調整してみるのがいいと思います。\n多分再起動したら標準値に戻ると思います。\n何かしらいじったら天体用にいい値が出てくる気がするので私も試してみます。\n \n・そのほかのコマンドの実装がここにあるので色々できます\nhttps://github.com/mnakada/atomcam_tools/blob/4568a2c5a7a6f0cf9155a627031ec906034e60ba/libcallback/command.c#L32\n使いそうなのは \"irled on\" \"irled off\" \"irled auto\" とかかな\nあと、\"aplay <wavファイル名の絶対パス>\"　でスピーカから音声再生ができました",
-          "link": "https://honeylab.hatenablog.jp/entry/2023/09/20/204059",
-          "publishedOn": "2023-09-20T11:40:59.000Z",
-          "wordCount": 588,
-          "title": "atomcam_toolsのコマンド制御",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -9176,6 +9161,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=40064",
+          "author": "mamosuke",
+          "description": "NSZ 4.6.1,Neumann 0.0.26,PKHeX 23.12.18,PSPGameTool V1 Beta,ARK-4 v1702859856,Movian v5.0.751,duckstation v0.1-6168,xemu v0.7.118,Xbox Series X/Sなど値下げセール→→→この記事の続きを読む\nGameGaz Daily 2023.12.19 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023121940064/",
+          "publishedOn": "2023-12-18T23:18:47.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2023.12.19",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=40060",
           "author": "mamosuke",
