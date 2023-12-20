@@ -502,21 +502,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230923/20230923190236.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482969498227",
-          "author": null,
-          "description": "前から気になっていたのでコンバートかけて一旦エミュレータ経由キャプチャー出力\n感無量\nこれでどこでもおでかけマルチ https://t.co/sJ1ZSJcBDN pic.twitter.com/7oG2NF0Z1P\n— yuki65535 (@yuki65535) 2023年9月21日",
-          "link": "https://akkera102.hatenablog.com/entry/2023/09/21/230042",
-          "publishedOn": "2023-09-21T14:00:42.000Z",
-          "wordCount": 395,
-          "title": "ファー！動いているー！",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -8644,6 +8629,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml",
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231220-gcs-resource-optimization/",
+          "author": null,
+          "description": "こんにちは。メルカリ Accounting Productsチーム Software Engineerのayanekoです。 この記事は、Mercari Advent Calendar 2023 の20日目の記事です。  […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231220-gcs-resource-optimization/",
+          "publishedOn": "2023-12-20T11:00:33.000Z",
+          "wordCount": 456,
+          "title": "GCSのリソース最適化の取り組みで得た知見",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
         {
           "id": "https://engineering.mercari.com/blog/entry/20231220-datadog-dashboard-for-observability/",
           "author": null,
