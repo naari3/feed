@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-21T00:03:08.981Z</updated>
+    <updated>2023-12-21T01:25:35.036Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AWS Transfer Family で SFTPサーバーを作ってみたら便利だった話]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20231221-f221b835d1/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20231221-f221b835d1/"/>
+        <updated>2023-12-21T10:00:57.000Z</updated>
+        <summary type="html"><![CDATA[メルペイSREの @myoshida です。この記事は、Merpay Advent Calendar 2023 の21日目の記事です。 メルカリグループではGoogle Cloud Platform(GCP) を広く利用 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CI/CD によるネットワーク管理の自動化]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=23129</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/23129"/>
+        <updated>2023-12-21T00:44:12.000Z</updated>
+        <summary type="html"><![CDATA[【IIJ 2023 TECHアドベントカレンダー 12/21の記事です】 ※本記事は、原文「Using CI/CD to add automation to your network」の日本語訳です ...]]></summary>
+        <author>
+            <name>Christoff Visser</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Network Automation powered by CI/CD]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=22207</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/22207"/>
+        <updated>2023-12-21T00:41:48.000Z</updated>
+        <summary type="html"><![CDATA[Overview As networks grow in complexity, the challenge to maintain and scale them intensifies. Netwo...]]></summary>
+        <author>
+            <name>Christoff Visser</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[3PCA 21 日目: SameSite Cookie]]></title>
         <id>https://blog.jxck.io/entries/2023-12-21/same-site.html</id>
