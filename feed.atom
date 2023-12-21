@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-21T03:01:42.655Z</updated>
+    <updated>2023-12-21T04:01:55.925Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,25 @@
         <summary type="html"><![CDATA[メルペイSREの @myoshida です。この記事は、Merpay Advent Calendar 2023 の21日目の記事です。 メルカリグループではGoogle Cloud Platform(GCP) を広く利用 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[アンドロイドの親指シフトとPixelの音声入力の切り替えは、実は拍子抜けするほど簡単でした]]></title>
+        <id>hatenablog://entry/6801883189068559569</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/12/21/120532"/>
+        <updated>2023-12-21T03:05:32.000Z</updated>
+        <summary type="html"><![CDATA[相変わらず、Pixelを使っていますが、これまで悩んでいたのは、
+・親指シフトを使うとPixelの音声入力が使えない
+・Pixelの音声入力を使うとローマ字で入力しなければいけない
+ということです。
+そして、いろいろキーボードスイッチャーとかアプリも試していたのですが、いまいちでした。
+と、ところが、キーボードのショートカットキー一覧をよく見ていたら
+「Windowsキーとスペースの同時押し」
+で一瞬できりかえられるじゃないですか？
+い、いままでの苦労はなんだったんでしょう。おかげさまで、これで、PixelでもHHKBがあれば超快適に親指シフト入力ができるようになりました。
+まぁ、とにかく、物事が解決するのはいいことです。うんうん。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
         </author>
     </entry>
     <entry>
