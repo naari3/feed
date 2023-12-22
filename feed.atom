@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-22T11:01:43.372Z</updated>
+    <updated>2023-12-22T12:02:06.775Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[なーーんと、アンドロイドの親指シフトはHHKBを一つ古いにしたら、ミスタッチが激減しました]]></title>
+        <id>hatenablog://entry/6801883189068917267</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/12/22/204108"/>
+        <updated>2023-12-22T11:41:08.000Z</updated>
+        <summary type="html"><![CDATA[最近、Android でもHHKB親指シフトを使うことが増えてきたのですが、悩んでいたのは、同時打鍵のタイミングがどうもうまくいかずに、入力ミスが多くて修正の割合が多かったことです。
+色々とソフト側の同時だけの設定時間などを調整したり試みたのですが、あまり上手に成果が出ませんでした。そこでふと気づいたことがありまして、それは何かというと
+ 「あれ、パソコンの方のHHKBは一つ古いBTというバージョンだけれども、アンドロイドのほうは新しいHybridという方だ」
+ということでした。
+なので、試しに、あまり普段使っていないパソコンから古いProfessional BTというバージョンを持ってきまして、これをAndroid につないでみたところ、何の問題もなくミスタッチもなくどんどん入力できるのです。
+ふぎゃーーー、そういうことか、と気づいてとりあえず、持ち歩くのも古いのにすることにしました。
+そういえば、パソコンでもまったく同じ経験があって、古いものにしたのでした。新しいものがいつでもいいとは限らないのが難しいところです。
+どうも、静音化を図るために部品が変わったので、反応が悪くなったのでは、ということでした。とりあえず、解決してよかったです！！]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[言語モデルを用いたQuery Categorization]]></title>
         <id>https://engineering.mercari.com/blog/entry/20231222-language-model-based-query-categorization-for-query-understanding/</id>
