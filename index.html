@@ -110,6 +110,37 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gfx.hatenablog.com/" target="_blank"
+              rel="noopener">Islands in the byte stream</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">デイリーポータルZの新着記事をBlueskyに投稿するbotを作った</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gfx.hatenablog.com/entry/2023/12/22/145345" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>デイリーポータルZの新着記事をBlueskyに投稿するbotを作りました。
+github.com
+デイリーポータルZは2024年1月1日から独立した会社になるようですが、状況から察するに実態としては消滅まで秒読みと思われます。インターネットからデイリーポータルZが無くなるのは寂しいので、どこかの企業がスポンサーになってくれることを期待しています。
+dailyportalz.jp
+それはそれとしてBlueskyのボットを作るのは結構楽しいですね！ボットのコードはRustで書きました。GitHub Actionsの定期実行でRSS feedをポーリングして新しいものがあったらポストする、という素朴なプログラムです:
+bsky.app
+Bluesky APIへのアクセスはsugyan/atriumを使いました:
+memo.sugyan.com
+投稿の本文をリッチテキストにできたり*1、OGPカードを自分で組み立てたりできるので*2、遊びがいがあって楽しいです。
+Enjoy!
+*1:逆にいえば、勝手にURLがリンクになったりはせず、自分でリンクなどを貼らないといけない。
+*2:逆にいえば、勝手にOGPカードが生成されたりはしないので、自分で組み立てないといけない。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://niryuu.hatenablog.com/" target="_blank"
               rel="noopener">表道具</a></h3>
           <section class="articles-per-source">
@@ -21296,7 +21327,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-12-22T05:01:39.807Z">2023-12-22T05:01:39.807Z</time>
+    <time id="build-timestamp" datetime="2023-12-22T06:01:57.242Z">2023-12-22T06:01:57.242Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

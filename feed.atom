@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-22T05:01:39.859Z</updated>
+    <updated>2023-12-22T06:01:57.291Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,27 @@
         <summary type="html"><![CDATA[こんにちは。株式会社メルペイのSolutionsチームのデータエンジニアの@orfeonです。 この記事は、Merpay Advent Calendar 2023 の22日目の記事です。 Solutionsチームは、社内 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[デイリーポータルZの新着記事をBlueskyに投稿するbotを作った]]></title>
+        <id>hatenablog://entry/6801883189068842057</id>
+        <link href="https://gfx.hatenablog.com/entry/2023/12/22/145345"/>
+        <updated>2023-12-22T05:53:45.000Z</updated>
+        <summary type="html"><![CDATA[デイリーポータルZの新着記事をBlueskyに投稿するbotを作りました。
+github.com
+デイリーポータルZは2024年1月1日から独立した会社になるようですが、状況から察するに実態としては消滅まで秒読みと思われます。インターネットからデイリーポータルZが無くなるのは寂しいので、どこかの企業がスポンサーになってくれることを期待しています。
+dailyportalz.jp
+それはそれとしてBlueskyのボットを作るのは結構楽しいですね！ボットのコードはRustで書きました。GitHub Actionsの定期実行でRSS feedをポーリングして新しいものがあったらポストする、という素朴なプログラムです:
+bsky.app
+Bluesky APIへのアクセスはsugyan/atriumを使いました:
+memo.sugyan.com
+投稿の本文をリッチテキストにできたり*1、OGPカードを自分で組み立てたりできるので*2、遊びがいがあって楽しいです。
+Enjoy!
+*1:逆にいえば、勝手にURLがリンクになったりはせず、自分でリンクなどを貼らないといけない。
+*2:逆にいえば、勝手にOGPカードが生成されたりはしないので、自分で組み立てないといけない。]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
         </author>
     </entry>
     <entry>
