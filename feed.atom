@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-23T02:08:45.593Z</updated>
+    <updated>2023-12-23T03:01:40.606Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,55 @@
         <summary type="html"><![CDATA[こんにちは。メルコインのバックエンドエンジニアのiwataです。 この記事は、Merpay Advent Calendar 2023 の23日目の記事です。 私はいまメルコインのCoreチームに属しています。Coreチー […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[転職時に無職になる手続きをインターネットでする]]></title>
+        <id>https://efcl.info/2023/12/23/unemployed-process/</id>
+        <link href="https://efcl.info/2023/12/23/unemployed-process/"/>
+        <updated>2023-12-23T01:47:00.000Z</updated>
+        <summary type="html"><![CDATA[転職する際に空白期間がない場合は会社側で手続きがほとんど終わりますが、一旦無職を挟んで転職する場合は、保険証、年金、iDeCoなどの手続きが必要になります。
+今回の転職活動するにあたって、
+この手続きをするのに市役所やプリンターを使いたくないので、インターネットだけで完結できるかにトライしました。
+Open Job Letterを公開しました | Web Scratch
+手続きの前提条件
+会社や個人によって前提が異なるので、ここでは次の前提で記事を書いています。
+会社員: 厚生年金
+保険証: ［ITS］関東ITソフトウェア健康保険組合
+iDeCo: 個人型確定拠出年金
+退職して次の会社が決まってない場合は、保険証や年金などの手続きが必要になります。
+保険証: 国民健康保険か任意継続かは好きな方で
+
+今回は任意継続を選択
+年金: 厚生年金から国民年金第1号へ切り替える
+iDeco: 「加入者被保険者種別変更届」を提出する
+これらをできるだけ、ネットだけで完結させることを目指します。
+必要なもの
+マイナンバーカード
+
+基礎年金番号 はマイナンバーカードがあればわかる
+元々持っていた保険証の記号と番号 はマイナンバーカードがあればわかる
+手続きの概要
+大まかな手続きをまとめたものは次のようになっています。
+ITSの任意継続
+
+いつから: 退職日の翌日
+期限: 20日以内
+方法: Webゆうびん｜日本郵便を使う
+取得にかかる日付: 2週間ぐらい
+必要なもの: 元々持っていた保険証の記号と番号
+
+マイナポータルで”健康保険情報”をみることでも、保険証の記号と番号を確認できる
+取得できるもの: 任意継続の健康保険証
+参考:
+
+任意継続の健康保険証任意継続被保険者について | ［ITS］関東ITソフトウェア健康保険組合
+厚生年金から国民年金へ切り替え
+
+いつから: 退職した日
+期限: 1…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
