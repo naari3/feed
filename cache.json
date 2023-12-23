@@ -4615,21 +4615,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
-        },
-        {
-          "id": "hatenablog://entry/820878482970489867",
-          "author": null,
-          "description": "はてなブログの編集画面にクリップボードからURLを貼り付けた時、または、入力補助ツールバーから利用できる「リンクを挿入」ウィンドウに「リンクを新しいタブで開く」チェックボックスを追加しました。\n「リンクを新しいタブで開く」を追加しました\nこのチェックボックスをオンにした状態で「選択した形式でリンクを挿入」ボタンを押すと、リンクのtarget属性に_blankが指定され、リンクが新しいタブで開くようになります。詳しくはヘルプをご参照ください。\n補足情報\n編集モードについて\n\n「見たままモード」と「HTMLモード（有料プラン限定機能）」にて利用可能です\n「はてな記法モード」と「Markdownモード」では利用できません\n\nリンクの形式について\n\n「タイトル」と「URL」にて利用可能です\n「埋め込み」はこれまでも新しいタブで開く仕様だったため、チェックボックスをオンにする必要はございません\n「選択範囲」と「画像」では利用できません",
-          "link": "https://staff.hatenablog.com/entry/2023/09/25/171336",
-          "publishedOn": "2023-09-25T08:13:36.000Z",
-          "wordCount": null,
-          "title": "リンク挿入時に「リンクを新しいタブで開く」が選べるようになりました",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230925/20230925161521.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20230925/20230925161521.png"
         }
       ]
     },
@@ -6469,6 +6454,16 @@
       "feedUrl": "https://note.com/hercelot/rss",
       "siteUrl": "https://note.com/hercelot",
       "articles": [
+        {
+          "id": "https://note.com/hercelot/n/nf2f1089f8ba9",
+          "author": null,
+          "description": "粘ついた床がステップを拒んだので、もうここには居られないと思った。おそろしくなり逃げ出したがどこにも行き場が無く、これは今現在だけの問題ではないと思った。丁度10年前と全く同じように孤独で自分の首を締めた。このままだとのうのうと来年も生きてしまうのだろう、常に臆病風に吹かれている、勇気を出して終われるように応援してください\n続きをみる",
+          "link": "https://note.com/hercelot/n/nf2f1089f8ba9",
+          "publishedOn": "2023-12-23T20:22:48.000Z",
+          "wordCount": 2301,
+          "title": "日記231223",
+          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/5f973c43cd9a92bc9f530e42b529db9dca253242.png"
+        },
         {
           "id": "https://note.com/hercelot/n/n8eeaadbaec71",
           "author": null,
