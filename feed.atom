@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-23T01:23:00.992Z</updated>
+    <updated>2023-12-23T02:08:45.593Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メルカリの中長期技術投資 プロジェクトRFS: 約2年の振り返り]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20231223-rfs-lookback-after-two-years/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20231223-rfs-lookback-after-two-years/"/>
+        <updated>2023-12-23T11:00:40.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリMarketplace, Foundation EngineeringのDirector, @mtsukaです。日々新しい技術を追い求め、挑戦を続けるMercari Engineeringですが、そん […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[メルコインにおけるGitHub Actions活用術]]></title>
         <id>https://engineering.mercari.com/blog/entry/20231223-mercoin-github-actions/</id>
@@ -14,6 +24,18 @@
         <summary type="html"><![CDATA[こんにちは。メルコインのバックエンドエンジニアのiwataです。 この記事は、Merpay Advent Calendar 2023 の23日目の記事です。 私はいまメルコインのCoreチームに属しています。Coreチー […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[移植28]]></title>
+        <id>hatenablog://entry/6801883189069032234</id>
+        <link href="https://akkera102.hatenablog.com/entry/2023/12/23/102900"/>
+        <updated>2023-12-23T01:29:00.000Z</updated>
+        <summary type="html"><![CDATA[GBAコードごりごり作成中です。スクリプトはジャンプ命令もif命令も、変数もいらないの大きすぎますね。あと音楽のpmdは前紹介したpmdminiしか勝たん！wavファイル化ツールでは最強ですね。
+
+GBAで使う8adファイルは約14MBでした。容量オーバーを考慮しないでGBFSを作成した場合、約40MB。ということは2カードリッジなら20MBです。それってMAX32MB*2=64MBで考えた場合もったいないよね、ということで音質はもっとアップグレードしてもよさそうです。10512Hz→16384Hzに変更予定。]]></summary>
+        <author>
+            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

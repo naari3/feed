@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189069032234",
+          "author": null,
+          "description": "GBAコードごりごり作成中です。スクリプトはジャンプ命令もif命令も、変数もいらないの大きすぎますね。あと音楽のpmdは前紹介したpmdminiしか勝たん！wavファイル化ツールでは最強ですね。\n\nGBAで使う8adファイルは約14MBでした。容量オーバーを考慮しないでGBFSを作成した場合、約40MB。ということは2カードリッジなら20MBです。それってMAX32MB*2=64MBで考えた場合もったいないよね、ということで音質はもっとアップグレードしてもよさそうです。10512Hz→16384Hzに変更予定。",
+          "link": "https://akkera102.hatenablog.com/entry/2023/12/23/102900",
+          "publishedOn": "2023-12-23T01:29:00.000Z",
+          "wordCount": 400,
+          "title": "移植28",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189067958262",
           "author": null,
           "description": "バッチファイルを１日中書く作業。。二度とやりたくありません。。\nGBAのコードが書ける。。何週間ぶりなのやら。。\n作業用のGBFS内訳\n\nimg: 26.3MB\ntxt: 1.49MB\nsnd: なし\n-------\n27.79MB",
@@ -8687,6 +8702,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml",
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20231223-rfs-lookback-after-two-years/",
+          "author": null,
+          "description": "こんにちは。メルカリMarketplace, Foundation EngineeringのDirector, @mtsukaです。日々新しい技術を追い求め、挑戦を続けるMercari Engineeringですが、そん […]",
+          "link": "https://engineering.mercari.com/blog/entry/20231223-rfs-lookback-after-two-years/",
+          "publishedOn": "2023-12-23T11:00:40.000Z",
+          "wordCount": null,
+          "title": "メルカリの中長期技術投資 プロジェクトRFS: 約2年の振り返り",
+          "imageUrl": null
+        },
         {
           "id": "https://engineering.mercari.com/blog/entry/20231223-mercoin-github-actions/",
           "author": null,
