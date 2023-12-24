@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-24T13:01:54.924Z</updated>
+    <updated>2023-12-24T14:01:41.954Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Spring Batch 5.0 Migration Guideを和訳しながら、理解していく]]></title>
+        <id>hatenablog://entry/6801883189069093594</id>
+        <link href="https://kitano-daichino-gijyutuya.hatenadiary.jp/entry/2023/12/24/222340"/>
+        <updated>2023-12-24T13:23:40.000Z</updated>
+        <summary type="html"><![CDATA[遅ればせながら、SpringBatch4系から5系にアップグレードが発生しそうなので、自分用メモ。
+ 
+spring-projectsのspring-batchのSpring Batch 5.0 Migration Guideは英語なので、和訳しながら、コメントをつけていくことで、理解していく。
+github.com
+ 
+
+    
+JDK 17 baseline
+Dependencies upgrade
+Database schema update
+ Oracle
+ MS SQLServer
+ All platforms
+ Removal of BATCH_JOB_EXECUTION#JOB_CONFIGURATION_LOCATION column
+ Column change in BATCH_JOB_EXECUTION_PARAMS
+ Column change in BATCH_STEP_EXECUTION
+Infrastructure beans configuration with @EnableBatchProcessing
+Job repository/explorer configuration updates
+Transaction manager bean exposure/configuration
+JobBuilderFactory and StepBuilderFactory bean exposure/configuration
+Data types updates
+Observability updates
+Execution context serialization updates
+SystemCommandTasklet updates
+Job parameters handling updates
+Support for any t…]]></summary>
+        <author>
+            <name>北の大地のIT技術屋より</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Offsitesのワークショップでの4つの工夫]]></title>
         <id>https://engineering.mercari.com/blog/entry/20231224-a4046d214c/</id>
@@ -266,6 +301,16 @@ www.youtube.com
 「あ〜！そっ…]]></summary>
         <author>
             <name>NiVE（にヴぇ）派</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ドメインをRoute53からCloudflareに移管]]></title>
+        <id>https://r7kamura.com/articles/2023-12-24-route53-to-cloudflare</id>
+        <link href="https://r7kamura.com/articles/2023-12-24-route53-to-cloudflare"/>
+        <updated>2023-12-23T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[r7kamura.comドメインをAmazon Route53からCloudflareに移管したので、手順を書き残しておきます。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
