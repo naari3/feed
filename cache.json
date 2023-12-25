@@ -457,21 +457,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20230927/20230927223708.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482970890440",
-          "author": null,
-          "description": "感想しか垂れ流してないので今なにをしているのかといいますとGBAコンバータの作業中です。画像データをGBAに変換するわけですけど640x400を240x160にするような単純な話でなくて、なるべく枠部分を減らして背景は大きく！キャラクタも大きく！するようにしています。あとパレット操作。mode3に変換するにはRGB 0,255,0なものをRGB 0,0,0に変えてあげてアルファブレンド画像も用意しなくてはいけません。相当バラバラで無茶苦茶めんどうです。昔のゲームだからなのかsusieのような俯瞰したビューアがなかったのも要因かも。ちなみに移植で最高にプログラマの気持ちを理解してくれていたのはsystem3.5でした。画像の透明色やサイズミスが一切なくてスクリプトも階層構造になっていてノベルとシステム系が分かれていて素晴らしかったです。\n\n一方、フォアナインさんのSystem-98といいますと・・・疑似アセンブラです。スクリプターさんはアセンブラモドキを書いたのではないかと思います。というかこれは結構大変だったのではないでしょうか。。ジャンプアドレスの入れ子構造になっていて、セーブメニューが各ファイルにあったり26,86,midi判定が各ファイルにあったりプログラムに移譲すべき処理のものもあります。。\nhttp://akkera102.sakura.ne.jp/test3/cs01_01.txt",
-          "link": "https://akkera102.hatenablog.com/entry/2023/09/26/225217",
-          "publishedOn": "2023-09-26T13:52:17.000Z",
-          "wordCount": 394,
-          "title": "移植3",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -8257,6 +8242,16 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=22607",
+          "author": "今村 侑輔",
+          "description": "Google, Yahoo の Sender Guidelines について 前回、こんな記事を書いたもののいくつか説明を端折っていた部分があったので再度文字起こしをします。 # さらに、前回字面が強...",
+          "link": "https://eng-blog.iij.ad.jp/archives/22607",
+          "publishedOn": "2023-12-25T02:01:03.000Z",
+          "wordCount": null,
+          "title": "Google にメールを届けるために 2023 冬",
+          "imageUrl": null
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=23439",
           "author": "yt-nkgw",
           "description": "【IIJ 2023 TECHアドベントカレンダー 12/24の記事です】 こんにちは、はじめまして。 中川です。 今年(2023年)に入社し、データセンター設備の通信を担うネットワークやサーバの管理・...",
@@ -9340,6 +9335,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=40102",
+          "author": "mamosuke",
+          "description": "世界中のハッカーが成果を発表する第37回 CCC(Chaos Communication Congress: 37C3)でPoroCYon氏がニンテンドーDSiに関する発表を行うことが明らかになりました。→→→この記事の続きを読む\n37C3でPoroCYon氏がニンテンドーDSiのJailbreakを発表 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023122540102/",
+          "publishedOn": "2023-12-25T02:09:45.000Z",
+          "wordCount": null,
+          "title": "37C3でPoroCYon氏がニンテンドーDSiのJailbreakを発表",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=40097",
           "author": "mamosuke",

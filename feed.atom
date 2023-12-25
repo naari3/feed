@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-25T01:25:50.822Z</updated>
+    <updated>2023-12-25T02:12:15.511Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[37C3でPoroCYon氏がニンテンドーDSiのJailbreakを発表]]></title>
+        <id>https://gamegaz.com/?p=40102</id>
+        <link href="https://gamegaz.com/2023122540102/"/>
+        <updated>2023-12-25T02:09:45.000Z</updated>
+        <summary type="html"><![CDATA[世界中のハッカーが成果を発表する第37回 CCC(Chaos Communication Congress: 37C3)でPoroCYon氏がニンテンドーDSiに関する発表を行うことが明らかになりました。→→→この記事の続きを読む
+37C3でPoroCYon氏がニンテンドーDSiのJailbreakを発表 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google にメールを届けるために 2023 冬]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=22607</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/22607"/>
+        <updated>2023-12-25T02:01:03.000Z</updated>
+        <summary type="html"><![CDATA[Google, Yahoo の Sender Guidelines について 前回、こんな記事を書いたもののいくつか説明を端折っていた部分があったので再度文字起こしをします。 # さらに、前回字面が強...]]></summary>
+        <author>
+            <name>今村 侑輔</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Spring Batch 5.0 Migration Guideを和訳しながら、理解していく]]></title>
         <id>hatenablog://entry/6801883189069093594</id>
@@ -13646,19 +13667,6 @@ GameGaz Daily 2023.9.27 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>しゃけ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[移植3]]></title>
-        <id>hatenablog://entry/820878482970890440</id>
-        <link href="https://akkera102.hatenablog.com/entry/2023/09/26/225217"/>
-        <updated>2023-09-26T13:52:17.000Z</updated>
-        <summary type="html"><![CDATA[感想しか垂れ流してないので今なにをしているのかといいますとGBAコンバータの作業中です。画像データをGBAに変換するわけですけど640x400を240x160にするような単純な話でなくて、なるべく枠部分を減らして背景は大きく！キャラクタも大きく！するようにしています。あとパレット操作。mode3に変換するにはRGB 0,255,0なものをRGB 0,0,0に変えてあげてアルファブレンド画像も用意しなくてはいけません。相当バラバラで無茶苦茶めんどうです。昔のゲームだからなのかsusieのような俯瞰したビューアがなかったのも要因かも。ちなみに移植で最高にプログラマの気持ちを理解してくれていたのはsystem3.5でした。画像の透明色やサイズミスが一切なくてスクリプトも階層構造になっていてノベルとシステム系が分かれていて素晴らしかったです。
-
-一方、フォアナインさんのSystem-98といいますと・・・疑似アセンブラです。スクリプターさんはアセンブラモドキを書いたのではないかと思います。というかこれは結構大変だったのではないでしょうか。。ジャンプアドレスの入れ子構造になっていて、セーブメニューが各ファイルにあったり26,86,midi判定が各ファイルにあったりプログラムに移譲すべき処理のものもあります。。
-http://akkera102.sakura.ne.jp/test3/cs01_01.txt]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
