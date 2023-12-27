@@ -8143,16 +8143,6 @@
           "wordCount": null,
           "title": "Google DomainsからCloudflare registrarにドメインとメールを移管した",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/09/29/dual-esim/",
-          "author": null,
-          "description": "元々、povo(SIMカード) + IIJmio(eSIM)のデュアルSIM構成でやっていた。\n次のページを参考にしていたと思うので、安定とされるSIMカード + eSIMでの構成にしていた。\npovo 2.0とIIJmioの併用で2GB月440円の作り方(5GB月660円)\niPhoneを機種変更するときに“eSIM クイック転送”でpovo(SIMカード)がeSIMとして転送されてしまった。\neSIM クイック転送では、SIMカード → eSIMカードへの変更も、そこまで意識されずに実行されてしまう。\npovoはeSIM クイック転送でのSIMカード → eSIMに対応している。\npovo2.0の「eSIM クイック転送」で機種変更が簡単に！手順や注意点を解説｜povo ライブラリ｜【公式】povo2.0\nまたpovoの場合は、eSIM → SIMカードへの変更(戻す作業)は発行手数料がかかるようになっている。\n機種変更お手続き｜基本料ゼロから始めるau回線のスマホプラン【公式】povo2.0\n不可逆性があるのでどうしようと思っていたが、\nそもそもとしてpovo + IIJmioが両方ともeSIMで動けば問題ないので、デュアルeSIMへと移行した。\niPhoneの場合は、iPhone 13からデュアルeSIMに対応している。\nASCII.jp：iPhone 13シリーズでeSIMの2回線同時利用の夢の運用を体験した！ (1/2)\nいまいち公式のヘルプページが見つからなかった。\n端末の技術仕様ページには一応書かれている。\nhttps://www.apple.com/jp/iphone-15/specs/\nデュアルeSIMに対応[^17]\neSIMを利用するには通信サービスプランへの加入が必要です（これには通信事業者の変更とローミングに対する制限が含まれる場合があり、契約期間終了後も制限が適用されます）。通信事業者によってはeSIMに対応しない場合があります。iPhoneでのeSIMの使用は、通信事業者からの購入時に無効になっている場合があります。詳しくは通信事業者にお問い合わせください。詳細についてはapple.com/esimをご覧ください。\npovoのeSIMへの移行\n“eSIM クイック転送” で転送するだけ自動的にeSIMへと移行されていたので特になし\n手動でやる場合は、SIMカード → eSIMの手続きを行うことでできる。\n機種変更お手続き｜基本料ゼロから始めるau回線のスマホプラン【公式】povo2.0\nIIJmioのeSIMへの移行\n最初からeSIMを使っていたので、特に移行自体はなし\nしかし、IIJmioは機種変更でeSIMを再発行が必要になる。(これが機種変更でiijに繋がらないなーと思った原因だった)\neSIMを利用している端末の変更方法を教えてください。【eSIM】 : IIJmio Q&A\neSIMの再発行(アクティベーションコードの再発行)を行い、新しいeSIMとしてiPhoneに追加することで機種変更に対応できる。\nアクティベーションコードの再発行\nメールがくるので、アクティベーションページを開く(QRコードが載ってる)\niOS → 設定 →モバイル通信 → eSIMを追加 → アクティベーションページのQRコードを読み込む\neSIMとして追加される\nこれでpovoとIIJmioどちらもeSIMとなりデュアルeSIMへと移行された。\npovo + iijmioのデュアルeSIMで動いたっぽい pic.twitter.com/KngtfdJlig\n— azu (@azu_re) September 29, 2023",
-          "link": "https://efcl.info/2023/09/29/dual-esim/",
-          "publishedOn": "2023-09-29T00:21:00.000Z",
-          "wordCount": null,
-          "title": "iPhoneの機種変更: SIMカード + eSIM → デュアルeSIMへの移行",
-          "imageUrl": null
         }
       ]
     },
