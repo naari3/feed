@@ -19538,51 +19538,6 @@ DのM、SOUL&#x27;d OUTとDiggy-MO&#x27;が結び付いてないレベルでも�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Google DomainsからCloudflare registrarにドメインとメールを移管した</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/09/30/google-domains-to-cloudflare-registrar/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Google DomainsがSquarespaceに買収されるので、持っているドメインとカスタムドメインのメールアドレスをCloudflare Registrarに移管した。
-Cloudflare Registrar · Cloudflare Registrar docs
-基本的にはCloudflare Registrarに表示される手順でやっておけば、問題は起きなかったので、よくできてると思った。
-次のような手順で順番に移管していたので、移管時のメモ。
-手順
-Googleの移行準備
-Cloudflareのname serverを使うように移行する
-ドメインの移管
-メールの転送設定
-Googleの移行準備
-Google Domainで移管する前に、ドメインの設定を変更しておく。
-それぞれONになってると移管時に問題が発生する。
-DNSSECを無効化する
-
-Google側ドメインロックを解除
-
-Cloudflareのname serverを使うように移行する
-Cloudflare registrarは、ドメインが参照するname serverを変更 → ドメインを移管という流れで、ドメインを移管する。ダウンタイムが起きないようなフローで移管する。
-CloudfalreでWebSite → Add Siteからドメインを取り込む
-
-この時点でCloudflareのnameserverに既存のDNSがコピーされた状態になってくれる
-
-SSLを Full に変更(VercelやGitHub Pagesではこれをしないと “ページの自動転送設定が正しくありません” というエラーになった)
-
-Google Domains側でドメインのネームサーバに先ほどの Cloudflareの nameserver を指定する。
-
-Google側でこのcustom nameserverを”利用する…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21366,7 +21321,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2023-12-28T16:02:09.183Z">2023-12-28T16:02:09.183Z</time>
+    <time id="build-timestamp" datetime="2023-12-28T17:01:49.805Z">2023-12-28T17:01:49.805Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

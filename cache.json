@@ -8150,16 +8150,6 @@
           "wordCount": null,
           "title": "Remix v2へアップデートした時のメモ",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/09/30/google-domains-to-cloudflare-registrar/",
-          "author": null,
-          "description": "Google DomainsがSquarespaceに買収されるので、持っているドメインとカスタムドメインのメールアドレスをCloudflare Registrarに移管した。\nCloudflare Registrar · Cloudflare Registrar docs\n基本的にはCloudflare Registrarに表示される手順でやっておけば、問題は起きなかったので、よくできてると思った。\n次のような手順で順番に移管していたので、移管時のメモ。\n手順\nGoogleの移行準備\nCloudflareのname serverを使うように移行する\nドメインの移管\nメールの転送設定\nGoogleの移行準備\nGoogle Domainで移管する前に、ドメインの設定を変更しておく。\nそれぞれONになってると移管時に問題が発生する。\nDNSSECを無効化する\n\nGoogle側ドメインロックを解除\n\nCloudflareのname serverを使うように移行する\nCloudflare registrarは、ドメインが参照するname serverを変更 → ドメインを移管という流れで、ドメインを移管する。ダウンタイムが起きないようなフローで移管する。\nCloudfalreでWebSite → Add Siteからドメインを取り込む\n\nこの時点でCloudflareのnameserverに既存のDNSがコピーされた状態になってくれる\n\nSSLを Full に変更(VercelやGitHub Pagesではこれをしないと “ページの自動転送設定が正しくありません” というエラーになった)\n\nGoogle Domains側でドメインのネームサーバに先ほどの Cloudflareの nameserver を指定する。\n\nGoogle側でこのcustom nameserverを”利用する…",
-          "link": "https://efcl.info/2023/09/30/google-domains-to-cloudflare-registrar/",
-          "publishedOn": "2023-09-30T04:59:00.000Z",
-          "wordCount": null,
-          "title": "Google DomainsからCloudflare registrarにドメインとメールを移管した",
-          "imageUrl": null
         }
       ]
     },

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-28T16:02:09.236Z</updated>
+    <updated>2023-12-28T17:01:49.844Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13393,42 +13393,6 @@ DのM、SOUL'd OUTとDiggy-MO'が結び付いてないレベルでも見てて�
 続きをみる]]></summary>
         <author>
             <name>プリコネの年末年始はヤバイわよ！</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Google DomainsからCloudflare registrarにドメインとメールを移管した]]></title>
-        <id>https://efcl.info/2023/09/30/google-domains-to-cloudflare-registrar/</id>
-        <link href="https://efcl.info/2023/09/30/google-domains-to-cloudflare-registrar/"/>
-        <updated>2023-09-30T04:59:00.000Z</updated>
-        <summary type="html"><![CDATA[Google DomainsがSquarespaceに買収されるので、持っているドメインとカスタムドメインのメールアドレスをCloudflare Registrarに移管した。
-Cloudflare Registrar · Cloudflare Registrar docs
-基本的にはCloudflare Registrarに表示される手順でやっておけば、問題は起きなかったので、よくできてると思った。
-次のような手順で順番に移管していたので、移管時のメモ。
-手順
-Googleの移行準備
-Cloudflareのname serverを使うように移行する
-ドメインの移管
-メールの転送設定
-Googleの移行準備
-Google Domainで移管する前に、ドメインの設定を変更しておく。
-それぞれONになってると移管時に問題が発生する。
-DNSSECを無効化する
-
-Google側ドメインロックを解除
-
-Cloudflareのname serverを使うように移行する
-Cloudflare registrarは、ドメインが参照するname serverを変更 → ドメインを移管という流れで、ドメインを移管する。ダウンタイムが起きないようなフローで移管する。
-CloudfalreでWebSite → Add Siteからドメインを取り込む
-
-この時点でCloudflareのnameserverに既存のDNSがコピーされた状態になってくれる
-
-SSLを Full に変更(VercelやGitHub Pagesではこれをしないと “ページの自動転送設定が正しくありません” というエラーになった)
-
-Google Domains側でドメインのネームサーバに先ほどの Cloudflareの nameserver を指定する。
-
-Google側でこのcustom nameserverを”利用する…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
