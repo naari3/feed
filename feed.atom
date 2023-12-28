@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-28T12:01:51.346Z</updated>
+    <updated>2023-12-28T13:02:32.623Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Anker747充電器は頭が良いという話]]></title>
+        <id>hatenablog://entry/6801883189070502975</id>
+        <link href="https://fumimaker.net/entry/2023/12/28/214650?utm_source=feed"/>
+        <updated>2023-12-28T12:46:50.000Z</updated>
+        <summary type="html"><![CDATA[概要
+最近、訳あってAnker747を使っているのですがこいつがなかなか良いと思ったのですが、内容がマニアックすぎて共有する人がいなくて理解されなかったのでインターネットの海へ共有です。
+
+USB-PD充電器において困るポイントは以下
+電力配分がアホ
+電力再分配・ケーブル抜き差しによる瞬停
+USB-Cポート数が足りなくなりがち
+これらが大体解決してそうな感じがありました。
+背景
+USB-CがMacBook2016で採用され、充電ポートが全てそれに統一されたことでUSB-PDが知れ渡り広く普及してきました。今日ではUSB-Cによる給電が当たり前のように行われています。
+USB-PDについては興味がありプロトコル調べてみたりトリガケーブル自作してみたりで遊んでおり、充電器についても同様に色々買って挙動を見ておりました。
+電力再分配について
+USB-PDはデバイス側とホスト側が持っているプロファイルがありこれに従って給電を行います。
+Anker747の場合、細かくプロファイルを持っているのかわからないですがかなり細かい単位で供給する電力を変更できるようです。150Wというバジェットの中でデバイス側が欲しい最大量をできるだけあげるような賢い挙動をしてくれるのでとても気持ちが良いです。
+よくあるのが、充電器側のポートでPC用、スマホ用みたいな感じで分かれており、内部的にはそのポートから捌ける電力が決まっており（30W + 60Wで合計65Wまでなど）プロファイルを制限していて充電器が吐ける最大電力量を超えないような制御になっているみたいです。これの問題点として、デバイス側の都合をあまり考えていないのでPC用にPCを繋ぐ、スマホ用にスマホを繋ぐというようにユーザーが電力を計算して繋ぐ必要があるという点です。当然タブレットやモバブを繋ぎたくなったりAppleWatchを繋ぎたくなったりし…]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[年内に書きたい「1年のふりかえりエントリー」。今年はどんなふうに書く？]]></title>
         <id>hatenablog://entry/6801883189070413464</id>

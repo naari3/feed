@@ -1659,6 +1659,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189070502975",
+          "author": null,
+          "description": "概要\n最近、訳あってAnker747を使っているのですがこいつがなかなか良いと思ったのですが、内容がマニアックすぎて共有する人がいなくて理解されなかったのでインターネットの海へ共有です。\n\nUSB-PD充電器において困るポイントは以下\n電力配分がアホ\n電力再分配・ケーブル抜き差しによる瞬停\nUSB-Cポート数が足りなくなりがち\nこれらが大体解決してそうな感じがありました。\n背景\nUSB-CがMacBook2016で採用され、充電ポートが全てそれに統一されたことでUSB-PDが知れ渡り広く普及してきました。今日ではUSB-Cによる給電が当たり前のように行われています。\nUSB-PDについては興味がありプロトコル調べてみたりトリガケーブル自作してみたりで遊んでおり、充電器についても同様に色々買って挙動を見ておりました。\n電力再分配について\nUSB-PDはデバイス側とホスト側が持っているプロファイルがありこれに従って給電を行います。\nAnker747の場合、細かくプロファイルを持っているのかわからないですがかなり細かい単位で供給する電力を変更できるようです。150Wというバジェットの中でデバイス側が欲しい最大量をできるだけあげるような賢い挙動をしてくれるのでとても気持ちが良いです。\nよくあるのが、充電器側のポートでPC用、スマホ用みたいな感じで分かれており、内部的にはそのポートから捌ける電力が決まっており（30W + 60Wで合計65Wまでなど）プロファイルを制限していて充電器が吐ける最大電力量を超えないような制御になっているみたいです。これの問題点として、デバイス側の都合をあまり考えていないのでPC用にPCを繋ぐ、スマホ用にスマホを繋ぐというようにユーザーが電力を計算して繋ぐ必要があるという点です。当然タブレットやモバブを繋ぎたくなったりAppleWatchを繋ぎたくなったりし…",
+          "link": "https://fumimaker.net/entry/2023/12/28/214650?utm_source=feed",
+          "publishedOn": "2023-12-28T12:46:50.000Z",
+          "wordCount": 525,
+          "title": "Anker747充電器は頭が良いという話",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20231228/20231228213608.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20231228/20231228213608.jpg"
+        },
+        {
           "id": "hatenablog://entry/6801883189062946066",
           "author": null,
           "description": "技術ブログじゃなくてすみません；；\n背景\n最近、会社を登記する機会があり、できるだけオンラインで進めておりました。法人設立ワンストップサービス](https://app.e-oss.myna.go.jp/Application/ecOssTop/)でrejectを食らい再提出する時にマイナンバーカードを使ってPDF文章を電子署名する方法で四苦八苦しておりました。\n結論\nこれを使いましょう（Windows限定）。ただし、カードリーダーは必要です。自分は非接触ではなくICチップに接触するタイプを使いました。\nhttps://aoiro.app/jpki/\n四苦八苦\n最初はAdobe Acrobatを使ってやろうと思っていました。\nAcrobatに法務省が提供するソフトを入れることでマイナンバーの署名ができるみたいです。\nSignPDFというプラグインをAdobeに入れて使うらしい。やり方はリンク先の説明書を参照。\nhttps://www.touki-kyoutaku-online.moj.go.jp/download_soft.html#PDFPlugin\n早速やったみたところ、なぜかSignPDFが表示されない。よくみるとacrobatは32bitしか対応していないようだ...最新のAdobe Creative CloudではAcrobatのバージョン選択ができず、困りました。\n調べてみると32BitはここのリンクからDLできるみたいです。\nhttps://helpx.adobe.com/jp/acrobat/kb/acrobat-dc-downloads.html\nやってみたところようやく、SignPDFが見えるようになった。よかった。と思い署名やってみたところ、Acrobatがクラッシュしてしまった。終わり。\n結局別の方法を探し、このソフトウェアをInstallして実行することで今まではなんだったんだってくらい簡単にできました。ワロタ。\nhttps://aoiro.app/jpki/\n雑談\n最近は未踏アドバンスト事業に採択されて色々作ったり知見をNotionに書き溜めているのでぼちぼち投稿できればいいなと思います。",
