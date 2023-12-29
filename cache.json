@@ -1377,6 +1377,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189070669577",
+          "author": null,
+          "description": "はじめに\n僕は日記をNotionで書き溜めている。日記をNotionで書き溜めると便利なことがある。\nスマホやiPad、PCなど、媒体を選ばずさまざまなところで記録できる\nどこでも記録できるため、散歩している途中で思いついた時などに記録できる\nデータはクラウド上にあるため、物理的に紛失しない\n複数あるメリットの一つに、「感情分析が手軽にできる」というのがある。\n継続的に日記を書いていると感情分析をしたくなることはよくあると思う。\n人生は親切なので、いきなり答えを突きつけて「あなたの人生は間違っていました」なんて言うことはしない。実際には中間発表があって、「このまま行くとまずいぞ、方針を変えろ」と教えてくれる。クリスマスを含めて、年末は毎年訪れる「人生の中間発表」のタイミングだ。だから今年の振り返りの一環として、書き溜めた今年の日記を感情分析したいと思った。\n※感情分析(sentiment analysis)が何かについては以下のHagging Faceの記事をご覧ください。\nhuggingface.co\nSentiment analysis is the automated process of tagging data according to their sentiment, such as positive, negative and neutral. Sentiment analysis allows companies to analyze data at scale, detect insights and automate processes.\n\n\nNotion APIを使えば日記のデータを機械的に取得することができる。Google Colabを使えばお手軽にTransformerが実行できる。面白そうなので、勉強も兼ねて今年自分が書いた日記を感情分析してみる…",
+          "link": "https://contradiction29.hatenablog.com/entry/2023/12/29/210000",
+          "publishedOn": "2023-12-29T12:00:00.000Z",
+          "wordCount": 644,
+          "title": "排便行為としての日記 : Notionで書き溜めた日記をjarvisx17/japanese-sentiment-analysisで感情分析する",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20231229/20231229145750.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20231229/20231229145750.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189067675083",
           "author": null,
           "description": "はじめに\n※この記事は2023年のdbt Advent Calendarの19日目の記事です。\ndbt-coreのオーケストレーションツールとしてDagster Cloudを導入してから4ヶ月ほど経った。ここで一度振り返り、普段当たり前のように使っているオーケストレーションツールの存在意義や技術選定のポイントに立ち返りつつ、Dagster Cloudを利用することのメリット・デメリットを書いていこうと思う。\n想定読者層：\ndbtについてはある程度知っている方\nAirflowなどオーケストレーションツールをある程度触ったことがある方\n目次：\nはじめに\nオーケストレーションツールについて\nそもそもOrchestrationとは何か？\nオーケストレーション・ツールが存在すると何が嬉しいのか？\nオーケストレーション・ツールの技術選定のポイント\n1. 可能な限りサーバーレスにする\n2. 他のツールとのInteroperatorbilityを担保する\n3. 開発のしやすさを確保する\n4. 運用のしやすさを確保する\nDagster Cloudでdbtを運用するメリット\n1. サーバーレスな環境構築が可能\n2. Pythonコードで書ければなんでもできる柔軟さがある\n3. 強力な開発者体験：ローカル開発とブランチデプロイ環境構築\n4. UIがイケてる\n5. dbt Cloudと比較して、オーケストレーションの機能が充実している\nメリットのまとめ\nデメリット\n1. 学習の難易度が高い\n2. 導入社数が少ないので知見が溜まっていない\nおわりに\nオーケストレーションツールについて\nデータエンジニアは当たり前のようにAirflowなどのオーケストレーションツールを利用しているが、ここで改めてオーケストレーションを行うツールの存在意義を確認しておきたい。まずはOrchestrationの意味を振り返…",
@@ -10621,16 +10636,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2023.10.2",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39534",
-          "author": "mamosuke",
-          "description": "ps5-payload-elfldr(PS5 Payload ELF Loader) release/v0.5,PSX 2 PS4 mod(Script Mod PS4) v1.5.1 2,PS3 Disc Dumper v4.0.4,webMAN MOD 1.47.45,HDL Batch Installer v3.5.1 – Revision 2,duckstation Latest Preview Build,nx.js v0.0.18,MakeROM v0.18.4,DS4Windows v3.2.17,Xenia(Xenia Canary) for UWP 1.1.4,Vita3K Build: 3399,CitraでVulkanサポート→→→この記事の続きを読む\nGameGaz Daily 2023.10.1 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023100139534/",
-          "publishedOn": "2023-09-30T23:40:18.000Z",
-          "wordCount": 1568,
-          "title": "GameGaz Daily 2023.10.1",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },

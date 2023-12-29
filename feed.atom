@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-29T11:01:58.076Z</updated>
+    <updated>2023-12-29T12:01:56.523Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[排便行為としての日記 : Notionで書き溜めた日記をjarvisx17/japanese-sentiment-analysisで感情分析する]]></title>
+        <id>hatenablog://entry/6801883189070669577</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2023/12/29/210000"/>
+        <updated>2023-12-29T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+僕は日記をNotionで書き溜めている。日記をNotionで書き溜めると便利なことがある。
+スマホやiPad、PCなど、媒体を選ばずさまざまなところで記録できる
+どこでも記録できるため、散歩している途中で思いついた時などに記録できる
+データはクラウド上にあるため、物理的に紛失しない
+複数あるメリットの一つに、「感情分析が手軽にできる」というのがある。
+継続的に日記を書いていると感情分析をしたくなることはよくあると思う。
+人生は親切なので、いきなり答えを突きつけて「あなたの人生は間違っていました」なんて言うことはしない。実際には中間発表があって、「このまま行くとまずいぞ、方針を変えろ」と教えてくれる。クリスマスを含めて、年末は毎年訪れる「人生の中間発表」のタイミングだ。だから今年の振り返りの一環として、書き溜めた今年の日記を感情分析したいと思った。
+※感情分析(sentiment analysis)が何かについては以下のHagging Faceの記事をご覧ください。
+huggingface.co
+Sentiment analysis is the automated process of tagging data according to their sentiment, such as positive, negative and neutral. Sentiment analysis allows companies to analyze data at scale, detect insights and automate processes.
+
+
+Notion APIを使えば日記のデータを機械的に取得することができる。Google Colabを使えばお手軽にTransformerが実行できる。面白そうなので、勉強も兼ねて今年自分が書いた日記を感情分析してみる…]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【年末年始まとめ読み】2023年の「年間総合はてなブログランキング」トップ100と「はてな匿名ダイアリー」トップ50を公開しました！]]></title>
         <id>hatenablog://entry/6801883189068623122</id>
@@ -13425,17 +13448,6 @@ Advanced Python 時系列解析
 史上最強のF…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.10.1]]></title>
-        <id>https://gamegaz.com/?p=39534</id>
-        <link href="https://gamegaz.com/2023100139534/"/>
-        <updated>2023-09-30T23:40:18.000Z</updated>
-        <summary type="html"><![CDATA[ps5-payload-elfldr(PS5 Payload ELF Loader) release/v0.5,PSX 2 PS4 mod(Script Mod PS4) v1.5.1 2,PS3 Disc Dumper v4.0.4,webMAN MOD 1.47.45,HDL Batch Installer v3.5.1 – Revision 2,duckstation Latest Preview Build,nx.js v0.0.18,MakeROM v0.18.4,DS4Windows v3.2.17,Xenia(Xenia Canary) for UWP 1.1.4,Vita3K Build: 3399,CitraでVulkanサポート→→→この記事の続きを読む
-GameGaz Daily 2023.10.1 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
