@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-30T11:01:36.582Z</updated>
+    <updated>2023-12-30T12:01:45.122Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2023年を振り返る]]></title>
+        <id>hatenablog://entry/6801883189070923770</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2023/12/30/210000"/>
+        <updated>2023-12-30T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[今年は色々あった。キャリア的にも、キャリアじゃないところでも、色々なことがあった。
+キャリア的な
+年始の段階ではアナリティクスエンジニアをやっていて、BIの作成や自動化処理を業務領域にしていた。それからはデータエンジニアとなり、データ基盤の移行をやった。アーキテクトとしての技術選定・技術普及、プロジェクトマネジメント、社内政治など、「データ基盤を移行するために必要なこと」をすべて一貫してやり切ったことはいい勉強になった。
+それからはデータプラットフォームを統括するチームのマネージャーになった。エンジニアとしてのキャリアの中で、マネージャーをやるなら今だと思った。マネジメントは難しいが面白いし、人の成長に貢献できるのは楽しい。
+移行のことをブログにしたらいい感じにネタになって、人生で初めてはてなのホッテントリに入ったのが嬉しかった。その時のブログ↓
+tech.algoage.dmm.com
+このブログがきっかけで、登壇の機会をもらったりした。その時のスライド↓
+ speakerdeck.com
+SnowflakeのAdvocateのFelipe Hoffaをはじめとして、オフラインのイベントで色々な人と話せたのがいい勉強になった。今はdatatech-jp (データ関連職の人のコミュニティ）でFundamentals of Data Engineeringの勉強会をしているが、これもいい勉強になる。しばらくはコミュニティを中心に学習していこうと思う。
+一方でキャリア的には迷子になっていて、20社くらいカジュアル面談して自分のキャリアの方向性を考えたりした。今でもキャリアの方向性はよくわかっていない。「やりたいことならちょっとある」くらいの段階である。
+資格も取ったりした。SnowflakeのSnow Pro Core (AWSで言えばSAA、GCPで言えばACE）を取得して、Snowflakeの基礎知識を仕入れた。資格ではないが、CourseraのIBM Data Engineeringを最後までやり切って、Data Pipelineの全体を掴めるようになった。
+キャリアじゃないもの
+一月くらいに、健常者エミュレータ事例集をSeesaa WikiからWordpress主体のものに移行した。この時の経験は後のデータ基盤の移行経験で生きてくる。小規模だが、データ基盤を作ったのも経験として活きた。
+contradiction29.hatenablog.com
+ICL（眼球内にコンタクトレンズを入れる手術）を受けた。メガネやコンタクトをしなくて良くなった。今はすごい楽だ。ニキビ跡を直すため、今はダーマペン診療を受けている。
+秋ごろ、祖父が死んだ。後悔のない生き方について考えるようになった。
+contradiction29.hatenablog.com
+とりあえず、住みたい町に住むところから初めて、今はその住みたい町に住んでいる。マッチングアプリもやっているが、うまくいっていない。
+今後どうする
+データエンジニアリングについては飽きつつある。やることはまだあるが、今後も同じことをやるかどうかはわからない。とりあえず、健常者エミュレータ事例集をNext.jsで作り直そうと思う。
+来年やりたいこと
+健常者エミュレータV3：Next.jsへの移行
+日記を毎日書く
+個人情報保護士とGCPのAssociate Cloud Engineerとる]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[見た2023秋アニメ]]></title>
         <id>https://note.com/binetsu0904/n/n2290556ebe00</id>
