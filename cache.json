@@ -3021,23 +3021,7 @@
       "title": "Robot Checkerboard",
       "feedUrl": "https://kiyo-shit.hatenablog.com/rss",
       "siteUrl": "https://kiyo-shit.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/820878482972300275",
-          "author": null,
-          "description": "もうTシャツを着るような時期ではなくなってきたところで最強Tシャツを紹介するの、アホみたいな感じはするのだが、Tシャツで過ごす時期を経過した後の振り返りなのだから当然では？逆に言えばシーズンインする前から最強みたいなことを謳っている記事は全部ウソだと思う。知行合一みたいな話です。\nで、最強のTシャツだったのは「FUBAR オーバーサイズ５分袖 クールＴシャツ」だった。\nwww.otafuku-glove.jp\n全4色あるんだが、あまりにも良いので全色揃えてしまった。\nプロダクトとしてはみんな大好きユニクロのエアリズムコットンオーバーサイズTシャツのソレである。ソレではあるんだが、こちらの優位性は下記の通り。\n乾きやすい気がする\n\n\n気がする、なので定量的に比較してないんだが、こちらの方が汗染みがすぐに引く印象がある\n汗染み自体しにくい感じもある\nサイドポケットがある\n\n\nポケットはあればあるだけ便利に使えるわけだが、外見から目立つこともないので最高\n一方「冷感」みたいなところは全然ピンと来ていない。そもそも今年はクソ暑すぎたので常時インナーとしてアンダーアーマーのヒートギアを着ていた。\n秋が深まってくるとこのあたりの製品がAmazonでもちょっと値下がったりするので来年に向けて是非どうぞ。\n（下記のAmazonへのリンクはアフィリエイトリンクになっています）\n\nおたふく手袋 夏用Ｔシャツ フーバー [オーバーサイズ 5分袖 外側コットン 肌面側冷感ポリエステル ポケット付] FB-700 ブラック LLサイズ\n\nおたふく手袋(OTAFUKU GLOVE)\nAmazon",
-          "link": "https://kiyo-shit.hatenablog.com/entry/2023/10/01/233256",
-          "publishedOn": "2023-10-01T14:32:56.000Z",
-          "wordCount": null,
-          "title": "2023年最強Tシャツ",
-          "enclosure": {
-            "url": "https://m.media-amazon.com/images/I/314xXp2ow3L._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://m.media-amazon.com/images/I/314xXp2ow3L._SL500_.jpg"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "kmizuの日記",
@@ -4086,6 +4070,21 @@
       "feedUrl": "https://satoru-takeuchi.hatenablog.com/rss",
       "siteUrl": "https://satoru-takeuchi.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6801883189070901567",
+          "author": null,
+          "description": "今年もいろいろありました。インプットとアウトプットの振り返りをしておきます。いつもながら落ち着きがないというかたくさんやりましたね。\nアウトプット\n登壇(会社の仕事)\n2つやりました。今年は思うところあって意図的に絞ってました。社ブログも一本も書いていません。\nCephaloconに4年ぶりの参加をして喋ってきました。前回2019年のときには「さあ、これからCeph使うぞ！」と何もわかっていない時期で聴くだけだったのですが、今回はCephをじっくり使い込んできた戦士として自分たちの成果をアピールできたので良かったと思います。\nhttps://sched.co/1JKZf\n speakerdeck.com\nSODA Con というイベントでOSS(RookとCeph)をベースとした自社のストレージシステムの説明と、その過程でやってきたOSSへの貢献について話してきました。けっこうウケたようでなにより。\n speakerdeck.com\n登壇(副業)\n去年と今年に出した本についてForkwellのイベントで喋ってきました。このような機会を与えてくださったForkwellの皆様に感謝いたします。\n speakerdeck.com\n speakerdeck.com\nforkwell.connpass.com\n登壇(趣味)\n数年ぶりに開催されたKernel/VM 探検隊北陸においてメインセッションとLTをやってきました。仕事ではまじめなことばかりやっているので、ここぞとばかりにふざけまくりました。ふざけつつも、ちゃんと役に立つ情報も提供できたかと思います。\n speakerdeck.com\n speakerdeck.com\n商業出版\n英語の書籍の翻訳を2冊やりました。自分で1から本を書き起こすのとはまた別の難しさを感じました。とくに1冊目は大変でした。\n\n入門 モダンLinux ―オンプレミスからクラウドまで、幅広い知識を会得する\n\n作者:Michael Hausenblas\nオーム社\nAmazon\n\n\n入門 eBPF ―Linuxカーネルの可視化と機能拡張\n\n作者:Liz Rice\nオーム社\nAmazon\n\nあと翻訳とはいえオライリーから本を出したという実績ができたのはうれしかったです。\n同人誌\n数年前に出した「失敗プログラマー」という本を改版して技術書典で売りました。この本は同人誌にもかかわらず1200部越えでずいぶん売れました。ありがたい。また本書の対象読者と考えていた悩みをかかえる若手技術者たちからの反響もたくさんいただきました。\ntechbookfest.org\n本書は改版するたびにページ数が倍に増えていくのですが、来年も倍…とはいかないまでも改版できればしたいなと思います。できればついででいうと、いずれまとまった量になれば商業出版したいなあとかも考えています。\nYouTube動画\n14本の動画を公開しました。まずまず。有償の会員になってくださったかたが2桁になって、うれしい限りです。明に「とくに会員のメリットは無い。しいて言うなら動画公開のペースが早まるかも」と宣言しているのに、ありがたい限りです。引き続き募集中ですのでよろしくお願いします。\nwww.youtube.com\nzenn記事\n4本公開しました。ずいぶんと控えめでした。\nzenn.dev\nはてなブログエントリ\nこの記事を含め16本公開しました。まあまあ。いつも通り、気合い入れたものがまったく反応がなかったり、適当に書いたものにたくさん反響があったり、おもしろいです。\nsatoru-takeuchi.hatenablog.com\nインプット\n英語学習\nPROGRITのビジネス英会話コースを受講。一日平均2.1時間の学習をしていました。VERSANTのスコアが43から51にアップしました。かなり上がったほうらしいです。めでたい。おかげで上記のCephaloconの発表や休憩中などの議論などにずいぶんと役立ちました。\n3か月間講師のかたにケツを叩かれ、励まされ、指導していただき、非常に充実していました。英語力を短期間で爆上げしたい、かつ、覚悟が決まっているかたにはお勧めできます。ただしかなり高価ですし時間の捻出が大変なので業務の一貫でやるのがいいかなと思います。\n読書\nおそらく50冊くらい。100冊くらい読みたいと思っていたが、そうもいかなかった。息抜き不足だろうか。来年はもうちょっと増やしたいです。\n来年\nインプット多めにしたいと思います。まず、プログラミングが苦手なので、もうちょっと鍛えたいなと思います。設計スキルも磨きたいです。あとはネットワークやRDBの知識など、自分が専門とするところ以外の知識が非常に弱いので何とかしたいと思います。\nあと共著の書籍が1冊出ます。売れるといいですね。今一冊書いているので、そちらも出せるといいな。\nおわり。よいお年を",
+          "link": "https://satoru-takeuchi.hatenablog.com/entry/2023/12/30/114840",
+          "publishedOn": "2023-12-30T02:48:40.000Z",
+          "wordCount": 526,
+          "title": "2023年のインプット、アウトプットの振り返り",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/41gIqDSHwyL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/41gIqDSHwyL._SL500_.jpg"
+        },
         {
           "id": "hatenablog://entry/6801883189067367904",
           "author": null,
@@ -7369,16 +7368,6 @@
           "wordCount": 2363,
           "title": "音MAD10選で○票以下の音MADn選2023",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/123501662/rectangle_large_type_2_b1e8955ede5676630a19644c4ee6d982.png?width=800"
-        },
-        {
-          "id": "https://note.com/sweets_farting/n/n0b52af38969b",
-          "author": null,
-          "description": "頬蜂projectで投稿した動画群の編集後記\n頬蜂projectとは当時(2019年ごろ)、音MAD界隈は匿名団体アカウントブームだったんですが、どこにも誘われなかった自分がムカついて作った匿名団体アカウントです\nしかし、コミュ障すぎて誰も誘えなかった結果実質個人垢になってしまった悲しきアカウントです\n続きをみる",
-          "link": "https://note.com/sweets_farting/n/n0b52af38969b",
-          "publishedOn": "2023-10-01T14:21:27.000Z",
-          "wordCount": null,
-          "title": "雑多　編集後記",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/117757737/rectangle_large_type_2_005b40f02cc718f1b4fa9e7934a152f5.jpeg?width=800"
         }
       ]
     },
