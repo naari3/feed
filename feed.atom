@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-31T07:01:36.158Z</updated>
+    <updated>2023-12-31T08:01:59.242Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[年末恒例 今年の10大ニュース2023]]></title>
+        <id>https://gamegaz.com/?p=40159</id>
+        <link href="https://gamegaz.com/2023123140159/"/>
+        <updated>2023-12-31T07:54:09.000Z</updated>
+        <summary type="html"><![CDATA[毎年恒例の2023年ゲームシーンの10大ニュースを発表します！→→→この記事の続きを読む
+年末恒例 今年の10大ニュース2023 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2023.12.31]]></title>
         <id>https://gamegaz.com/?p=40154</id>
@@ -116,6 +127,84 @@ electribe emx1っていう機材を夏頃に買って使ってたんだけど、
 SEASON5のファイナルズで…]]></summary>
         <author>
             <name>liveのブログ『清濁のるつぼ』</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goodbye 2023]]></title>
+        <id>https://blog.sakamo.dev/post/review-2023/</id>
+        <link href="https://blog.sakamo.dev/post/review-2023/"/>
+        <updated>2023-12-31T04:07:30.000Z</updated>
+        <summary type="html"><![CDATA[2023 年も終わりなので振り返る。
+
+
+
+
+    
+
+Tweet
+
+
+仕事
+
+    
+        
+
+    
+
+
+転職して 2 年 4 ヶ月が経過した。過去の会社の在籍期間の中で最長となった。
+去年はコードを書くことはなかったが、今年は CDK とか React を少しだけ書いたので、全くコードを書かないということはなかった。グローバルでの仕事も行っていたのでたまに英語で会話することもあったが、英語はやはり難しい。
+EKS (Container Service for Kubernetes) Subject Matter Expert というのを取得した。
+技術
+
+    
+        
+
+    
+
+
+主な領域としては、コンテナというのは変わらず。Kubernetes のソースコードを読む機会は少なくなかったので多少詳しくなったといえる。
+Multipass を使った Kubernetes 環境を用意してみたが、思いのほか便利であった。リポジトリは ryota-sakamoto/kubernetes-on-multipass である。クラスターを作ったり壊したりが簡単にできて検証が捗った。
+k3s とかの軽量 Kubernetes が使いたいわけではないから cloud-init で kubeadm 使うやつ書いたけど快適だな
+— さかもとりょーた(25) (@let_constant) March 26, 2023
+ 
+eBPF を学ぶため Learning eBPF を読んでいたが完走しなかった。今は日本語訳も出ているのでそちらを読むのがいい気がしている。
+これ読み始めたhttps://t.co/bfcfZt5bb4
+— さかもとりょーた(25) (@let_constant) May 8, 2023
+ 
+ISUCON 13 で 3 位を取った。詳細は ISUCON 13 で 3 位でした(ultra_fast_gopher) に書いたが、ISUCON 7 から毎年参加しており 3 位という順位を取れたのは嬉しかった。
+3位でした #isucon pic.twitter.com/rHFsUdySzR
+— さかもとりょーた(25) (@let_constant) November 25, 2023
+ 
+資格
+
+    
+        
+
+    
+
+
+2 月あたりに CKA を受けて受かった。CKAD と比べると難易度はそこまで変わらないという印象を受けた。CKS は受けようと思っていたが expire した。
+筋トレ
+
+    
+        
+
+    
+
+
+筋トレは継続しており、懸垂マシンとダンベルをもらった。懸垂マシンは懸垂以外にもディップスができたりするので色々な筋トレができて便利である。ダンベルはベンチが欲しいという気持ちがある。
+総括
+
+    
+        
+
+    
+
+
+来年も引き続き、プライベートも仕事も頑張りましょう。]]></summary>
+        <author>
+            <name>Posts on ストイックに生きたい</name>
         </author>
     </entry>
     <entry>

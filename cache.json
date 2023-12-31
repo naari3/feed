@@ -8062,6 +8062,16 @@
       "siteUrl": "https://blog.sakamo.dev/post/",
       "articles": [
         {
+          "id": "https://blog.sakamo.dev/post/review-2023/",
+          "author": null,
+          "description": "2023 年も終わりなので振り返る。\n\n\n\n\n    \n\nTweet\n\n\n仕事\n\n    \n        \n\n    \n\n\n転職して 2 年 4 ヶ月が経過した。過去の会社の在籍期間の中で最長となった。\n去年はコードを書くことはなかったが、今年は CDK とか React を少しだけ書いたので、全くコードを書かないということはなかった。グローバルでの仕事も行っていたのでたまに英語で会話することもあったが、英語はやはり難しい。\nEKS (Container Service for Kubernetes) Subject Matter Expert というのを取得した。\n技術\n\n    \n        \n\n    \n\n\n主な領域としては、コンテナというのは変わらず。Kubernetes のソースコードを読む機会は少なくなかったので多少詳しくなったといえる。\nMultipass を使った Kubernetes 環境を用意してみたが、思いのほか便利であった。リポジトリは ryota-sakamoto/kubernetes-on-multipass である。クラスターを作ったり壊したりが簡単にできて検証が捗った。\nk3s とかの軽量 Kubernetes が使いたいわけではないから cloud-init で kubeadm 使うやつ書いたけど快適だな\n— さかもとりょーた(25) (@let_constant) March 26, 2023\n \neBPF を学ぶため Learning eBPF を読んでいたが完走しなかった。今は日本語訳も出ているのでそちらを読むのがいい気がしている。\nこれ読み始めたhttps://t.co/bfcfZt5bb4\n— さかもとりょーた(25) (@let_constant) May 8, 2023\n \nISUCON 13 で 3 位を取った。詳細は ISUCON 13 で 3 位でした(ultra_fast_gopher) に書いたが、ISUCON 7 から毎年参加しており 3 位という順位を取れたのは嬉しかった。\n3位でした #isucon pic.twitter.com/rHFsUdySzR\n— さかもとりょーた(25) (@let_constant) November 25, 2023\n \n資格\n\n    \n        \n\n    \n\n\n2 月あたりに CKA を受けて受かった。CKAD と比べると難易度はそこまで変わらないという印象を受けた。CKS は受けようと思っていたが expire した。\n筋トレ\n\n    \n        \n\n    \n\n\n筋トレは継続しており、懸垂マシンとダンベルをもらった。懸垂マシンは懸垂以外にもディップスができたりするので色々な筋トレができて便利である。ダンベルはベンチが欲しいという気持ちがある。\n総括\n\n    \n        \n\n    \n\n\n来年も引き続き、プライベートも仕事も頑張りましょう。",
+          "link": "https://blog.sakamo.dev/post/review-2023/",
+          "publishedOn": "2023-12-31T04:07:30.000Z",
+          "wordCount": 336,
+          "title": "Goodbye 2023",
+          "imageUrl": "https://blog.sakamo.dev/ogp.jpg"
+        },
+        {
           "id": "https://blog.sakamo.dev/post/isucon13/",
           "author": null,
           "description": "ISUCON 13 に ultra_fast_gopher(Tsuzu, mox.si, AL1C3) で参加して、214,941 点 で 3 位で入賞した\n\n\n\n\n    \n\nTweet\n\n\nやったこと\n\n    \n        \n\n    \n\n\nリポジトリは ultra-fast-gopher/isucon13 で公開してある、当然ながら言語は Go を選択した。\nアプリケーションに対する改善としては下記を行った。DNS の実装や、bcrypt を逃したりがスコアに効いていた記憶がある。キャッシュは最終手段と言われているが、改善できるところがなくなってもキャッシュするとスコアが伸びるので正義であった。\n遅いクエリに INDEX を貼る\nN+1 を剥がす\nDB に icon_hash を持って、条件付き GET リクエストに対応\nDNS を実装して水責めに対応\nDB から画像を剥がす\n色々キャッシュ\nJSONSerializer を早くする\nbcrypt を余裕のあるサーバーで実行\n不要なトランザクションを剥がす\nデプロイには GitHub Actions の self-hosted runners を使用して各インスタンスへのデプロイを行い Discord への通知を行った。通知がきたらベンチマークを実行すればいいので便利だった。また、master ブランチおよび PR への push を契機にデプロイを行っていたので、気軽に改善をデプロイすることができ、高速にイテレーションを回すことができた。\nインスタンスへの接続には、Tailscale を使用した。セキュリティグループがどうとか気にしなくていいし、GitHub の Organization で tailnet を共有できるのでとても便利だった。\nアプリケーションの解析には、pprotein を使用した。pprof やスロークエリを簡単に見ることができるのでとても便利であった。phpMyAdmin もインデックスを簡単に貼れたり便利だった。\nやり残した点として、アプリケーションとベンチマーカーへの理解があげられる。アプリケーションの特性を理解し、ベンチマーカーが何をしているのか理解することで、さらに点数は伸ばす余地があったように思う。たとえば、投げ銭やモデレーションといった点に対して対応する時間がなかった。\nスクショ\n\n    \n        \n\n    \n\n\n文字だけなのもあれなので、スクショを貼ることにする。\n1 位を出した時\n\n最後までベンチマークを回し続けた、危なかった\n\n感想\n\n    \n        \n\n    \n\n\n元々毎年別のチームで参加していたものの、チームメンバーの都合により ultra_fast_gopher へ入れてもらったので足を引っ張らないが不安であったが、このように結果を残すことができて良かった。個人としては、ISUCON 7 から毎年参加しており入賞を目標としていたので、3 位という順位を取れ満足のいく結果ではあった。\n景品\n\n    \n        \n\n    \n\n\n「TOP30チーム」と「はてな賞」をもらった。ありがとうございます。\nありがとうございます #isucon pic.twitter.com/JdCEewz2eh\n— さかもとりょーた(25) (@let_constant) December 31, 2023",
@@ -9392,6 +9402,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=40159",
+          "author": "mamosuke",
+          "description": "毎年恒例の2023年ゲームシーンの10大ニュースを発表します！→→→この記事の続きを読む\n年末恒例 今年の10大ニュース2023 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2023123140159/",
+          "publishedOn": "2023-12-31T07:54:09.000Z",
+          "wordCount": null,
+          "title": "年末恒例 今年の10大ニュース2023",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=40154",
           "author": "mamosuke",
