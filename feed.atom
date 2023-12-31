@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2023-12-31T13:01:59.473Z</updated>
+    <updated>2023-12-31T14:01:42.037Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14042,36 +14042,6 @@ www.j-cast.com
 とはいえ、それでもはっきり言わないといけないのは、「そもそも『粛聖!!ロリ神レクイエム☆』はロリコンソングではない」ということだ。つまり、実は『粛聖!!ロリ神レクイエム☆』はロリについて歌った曲でも、ロリコンについて歌った曲でもないの…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[クックパッドのフロントエンド CSS in JS をゼロランタイムに切り替えました]]></title>
-        <id>hatenablog://entry/820878482972440079</id>
-        <link href="https://techlife.cookpad.com/entry/2023/10/03/105240"/>
-        <updated>2023-10-03T01:52:40.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは。レシピサービス開発部クックパッドサービス基盤グループのkaorun343です。我々のチームではレシピサービスのフロントエンドを Next.js と GraphQL のシステムに置き換えている話 - クックパッド開発者ブログにて紹介したとおり、レシピサービスを Next.js ベースの新システムへと移行しています。今回は、この新システムのCSS in JSをEmotionからゼロランタイムのvanilla-extractへ変更した話です。
-vanilla-extract.style
-背景
-以前書いた レシピサービスのフロントエンドに CSS in JS を採用した話 - クックパッド開発者ブログでは、CSS in JSライブラリとして Emotion（@emotion/react）を採用した経緯と開発環境整備を紹介しました。採用理由としては以下の通りでした。
-セレクタに一意なIDが割り振られるので、スタイルを適用した要素とは別の要素への、意図しないスタイル適用を防ぐことができる。
-ESLintやTypeScriptコンパイラといったJavaScriptの静的解析ツールの恩恵を受けることができ、タイポや機能削除時の削除漏れに気づきやすくなる。
-styled-componentsのようなスタイルではJSXのツリーを見たときに、機能を持つコンポーネントなのか装飾されたコンポーネントなのかわからず、コードレビューがしにくい。
-通常のCSSの記法に慣れたメンバーが多いので、String Styles、すなわちタグ付きテンプレートリテラルを採用する。
-このような方針でEmotionの導入を決め、stylelintやeslintを導入し、必要に応じてカスタムルールを作成して機能開発を進めました。
-しかしながら、Emotionを導入してから2年ほど経った結果、以下のような課題や懸…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.10.3]]></title>
-        <id>https://gamegaz.com/?p=39542</id>
-        <link href="https://gamegaz.com/2023100339542/"/>
-        <updated>2023-10-03T01:01:52.000Z</updated>
-        <summary type="html"><![CDATA[ps4jb-payloads,libhijacker 1.105,BwE PS4 NOR Validator & Syscon Patcher 2.4.6,CXMLDecompilerRCO,PlayStation2-Basic-BootLoader(PS2BBL)+OpenTuna,Tonyhax International v1.4.2,NXUpdateTracker  v1.0,Ultrahand Overlay 1.3.3,PineCone v0.4.1b-CLI,fceux interim-build(2023-10-02T19:38:44.0000000Z),Xenia Canary fe7dc26 experimental,Cemu 2.0-55 (Experimental),Vita3K Android Release 8→→→この記事の続きを読む
-GameGaz Daily 2023.10.3 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

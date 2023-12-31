@@ -4729,21 +4729,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/spicycoffee/20231005/20231005140329.png"
-        },
-        {
-          "id": "hatenablog://entry/820878482972440079",
-          "author": null,
-          "description": "こんにちは。レシピサービス開発部クックパッドサービス基盤グループのkaorun343です。我々のチームではレシピサービスのフロントエンドを Next.js と GraphQL のシステムに置き換えている話 - クックパッド開発者ブログにて紹介したとおり、レシピサービスを Next.js ベースの新システムへと移行しています。今回は、この新システムのCSS in JSをEmotionからゼロランタイムのvanilla-extractへ変更した話です。\nvanilla-extract.style\n背景\n以前書いた レシピサービスのフロントエンドに CSS in JS を採用した話 - クックパッド開発者ブログでは、CSS in JSライブラリとして Emotion（@emotion/react）を採用した経緯と開発環境整備を紹介しました。採用理由としては以下の通りでした。\nセレクタに一意なIDが割り振られるので、スタイルを適用した要素とは別の要素への、意図しないスタイル適用を防ぐことができる。\nESLintやTypeScriptコンパイラといったJavaScriptの静的解析ツールの恩恵を受けることができ、タイポや機能削除時の削除漏れに気づきやすくなる。\nstyled-componentsのようなスタイルではJSXのツリーを見たときに、機能を持つコンポーネントなのか装飾されたコンポーネントなのかわからず、コードレビューがしにくい。\n通常のCSSの記法に慣れたメンバーが多いので、String Styles、すなわちタグ付きテンプレートリテラルを採用する。\nこのような方針でEmotionの導入を決め、stylelintやeslintを導入し、必要に応じてカスタムルールを作成して機能開発を進めました。\nしかしながら、Emotionを導入してから2年ほど経った結果、以下のような課題や懸…",
-          "link": "https://techlife.cookpad.com/entry/2023/10/03/105240",
-          "publishedOn": "2023-10-03T01:52:40.000Z",
-          "wordCount": null,
-          "title": "クックパッドのフロントエンド CSS in JS をゼロランタイムに切り替えました",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -10848,16 +10833,6 @@
           "wordCount": 1475,
           "title": "GameGaz Daily 2023.10.4",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=39542",
-          "author": "mamosuke",
-          "description": "ps4jb-payloads,libhijacker 1.105,BwE PS4 NOR Validator & Syscon Patcher 2.4.6,CXMLDecompilerRCO,PlayStation2-Basic-BootLoader(PS2BBL)+OpenTuna,Tonyhax International v1.4.2,NXUpdateTracker  v1.0,Ultrahand Overlay 1.3.3,PineCone v0.4.1b-CLI,fceux interim-build(2023-10-02T19:38:44.0000000Z),Xenia Canary fe7dc26 experimental,Cemu 2.0-55 (Experimental),Vita3K Android Release 8→→→この記事の続きを読む\nGameGaz Daily 2023.10.3 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023100339542/",
-          "publishedOn": "2023-10-03T01:01:52.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2023.10.3",
-          "imageUrl": null
         }
       ]
     },
