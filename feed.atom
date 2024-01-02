@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-02T09:01:39.386Z</updated>
+    <updated>2024-01-02T10:01:43.360Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[移植29]]></title>
+        <id>hatenablog://entry/6801883189071796507</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/01/02/184900"/>
+        <updated>2024-01-02T09:49:00.000Z</updated>
+        <summary type="html"><![CDATA[GBAの移植は順調に進んでいます。なんとなくblogは愚痴をいってしまう方で、twitterは宣伝用と使い分けるのがよさそうです。今回は問題なく進めているので特に語ることもなく・・・。
+
+あー！選択肢とメッセージの組み合わせをどうするか悩んでいます。従来のToHeart方式だと画面いっぱいに文字を入れるだけ入れて、あふれたら画面更新をしていました。一方、カナンの場合はメッセージ以外に選択肢がテキストに含まれています。そのままToHeart方式でいくと、どこが選択肢でどこがメッセージなのか曖昧になってよくわかりません。選択肢は色で分けるのは決定事項として、さてそれで十分かというと悩ましい。１行目は選択肢専用領域、２行目以降はメッセージあつかいにした方がいいのかなーとも思います。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[自分の思想に影響を与えた本などまとめ]]></title>
         <id>hatenablog://entry/6801883189071758626</id>
