@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189072119100",
+          "author": null,
+          "description": "セレクト文字は色変更可能にしようと思います。左下のフェイス表示は大きすぎても締まらないですね。。難しい。小さい方が良さそうです。",
+          "link": "https://akkera102.hatenablog.com/entry/2024/01/03/234910",
+          "publishedOn": "2024-01-03T14:49:10.000Z",
+          "wordCount": 406,
+          "title": "移植30",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20240103/20240103234812.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20240103/20240103234812.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189071796507",
           "author": null,
           "description": "GBAの移植は順調に進んでいます。なんとなくblogは愚痴をいってしまう方で、twitterは宣伝用と使い分けるのがよさそうです。今回は問題なく進めているので特に語ることもなく・・・。\n\nあー！選択肢とメッセージの組み合わせをどうするか悩んでいます。従来のToHeart方式だと画面いっぱいに文字を入れるだけ入れて、あふれたら画面更新をしていました。一方、カナンの場合はメッセージ以外に選択肢がテキストに含まれています。そのままToHeart方式でいくと、どこが選択肢でどこがメッセージなのか曖昧になってよくわかりません。選択肢は色で分けるのは決定事項として、さてそれで十分かというと悩ましい。１行目は選択肢専用領域、２行目以降はメッセージあつかいにした方がいいのかなーとも思います。",
