@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-05T22:01:39.505Z</updated>
+    <updated>2024-01-05T23:01:36.163Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14272,39 +14272,6 @@ Waves V9製品のインストール (minet.jp)
 （おわり）]]></summary>
         <author>
             <name>owatax's blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[C# お手軽にそこそこ高精度なSleep]]></title>
-        <id>hatenablog://entry/820878482974068503</id>
-        <link href="https://nazenaninadesico.hatenablog.jp/entry/2023/10/08/193925"/>
-        <updated>2023-10-08T10:39:25.000Z</updated>
-        <summary type="html"><![CDATA[.NET Framework4.8、2023年10月時点で最新状態のWindows11で確認
-通常
-Task.Delay(1) 15msくらいの精度
-timeBeginPeriod(1)を実行してから
-[DllImport("Winmm.dll")]
-public static extern uint timeBeginPeriod(uint uuPeriod);
-Task.Delay(1) 15msくらいの精度
-合わせ技
-Thread.Sleepでメインループを回すとスレッドをブロックしてイベント受信が滞るので合わせ技
-static hoge{
-    timeBeginPeriod(1);
-}
-
-async Task Delay(int delay) 
-{
-    await Task.Run(() => System.Threading.Thread.Sleep(delay)); 
-}
-
-
-
-タスクスイッチを促しつつ最小2ms程度で返ってくる
-補足
-ちなみに以前のtimeBeginPeriodは他のアプリへの影響があったが、
-バージョン 2004 Windows 10以降、この関数はグローバル タイマー解決に影響しなくなりました。]]></summary>
-        <author>
-            <name>アプリ置き場</name>
         </author>
     </entry>
     <entry>

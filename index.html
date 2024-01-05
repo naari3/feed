@@ -20517,49 +20517,6 @@ Waves V9製品のインストール (minet.jp)
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://nazenaninadesico.hatenablog.jp/" target="_blank"
-              rel="noopener">アプリ置き場</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">C# お手軽にそこそこ高精度なSleep</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nazenaninadesico.hatenablog.jp/entry/2023/10/08/193925" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>.NET Framework4.8、2023年10月時点で最新状態のWindows11で確認
-通常
-Task.Delay(1) 15msくらいの精度
-timeBeginPeriod(1)を実行してから
-[DllImport(&quot;Winmm.dll&quot;)]
-public static extern uint timeBeginPeriod(uint uuPeriod);
-Task.Delay(1) 15msくらいの精度
-合わせ技
-Thread.Sleepでメインループを回すとスレッドをブロックしてイベント受信が滞るので合わせ技
-static hoge{
-    timeBeginPeriod(1);
-}
-
-async Task Delay(int delay) 
-{
-    await Task.Run(() &#x3D;&gt; System.Threading.Thread.Sleep(delay)); 
-}
-
-
-
-タスクスイッチを促しつつ最小2ms程度で返ってくる
-補足
-ちなみに以前のtimeBeginPeriodは他のアプリへの影響があったが、
-バージョン 2004 Windows 10以降、この関数はグローバル タイマー解決に影響しなくなりました。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -22343,7 +22300,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-01-05T22:01:39.462Z">2024-01-05T22:01:39.462Z</time>
+    <time id="build-timestamp" datetime="2024-01-05T23:01:36.092Z">2024-01-05T23:01:36.092Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

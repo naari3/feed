@@ -3441,23 +3441,7 @@
       "title": "アプリ置き場",
       "feedUrl": "https://nazenaninadesico.hatenablog.jp/rss",
       "siteUrl": "https://nazenaninadesico.hatenablog.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/820878482974068503",
-          "author": null,
-          "description": ".NET Framework4.8、2023年10月時点で最新状態のWindows11で確認\n通常\nTask.Delay(1) 15msくらいの精度\ntimeBeginPeriod(1)を実行してから\n[DllImport(\"Winmm.dll\")]\npublic static extern uint timeBeginPeriod(uint uuPeriod);\nTask.Delay(1) 15msくらいの精度\n合わせ技\nThread.Sleepでメインループを回すとスレッドをブロックしてイベント受信が滞るので合わせ技\nstatic hoge{\n    timeBeginPeriod(1);\n}\n\nasync Task Delay(int delay) \n{\n    await Task.Run(() => System.Threading.Thread.Sleep(delay)); \n}\n\n\n\nタスクスイッチを促しつつ最小2ms程度で返ってくる\n補足\nちなみに以前のtimeBeginPeriodは他のアプリへの影響があったが、\nバージョン 2004 Windows 10以降、この関数はグローバル タイマー解決に影響しなくなりました。",
-          "link": "https://nazenaninadesico.hatenablog.jp/entry/2023/10/08/193925",
-          "publishedOn": "2023-10-08T10:39:25.000Z",
-          "wordCount": 374,
-          "title": "C# お手軽にそこそこ高精度なSleep",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "終了済",
