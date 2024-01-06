@@ -1437,6 +1437,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189072747113",
+          "author": null,
+          "description": "はじめに\nStreamlitをApp Engineにデプロイすることのメリット\nAWSのEC2・ECSへのデプロイと比較した場合のメリデメ\nデータの利用者は怠惰なものだからシームレスな認証体験が必要\n開発が早い\nGCPのCloud Runと比較した場合のメリデメ\nStreamlit in Snowflakeと比較した場合のメリット\n実装\nディレクトリ構成\nDockerfile\napp.yaml\nGitHub Actions\n開発手順\nおわりに\nはじめに\nStreamlitはデータを活用したアプリケーションの構築を得意とするOSSのWebアプリケーションフレームワークで、インタラクティブなダッシュボードを構築したり、通常のダッシュボードでは扱うことができない柔軟な可視化を提供してくれる。\nstreamlit.io\n私も実務で使っているが、Streamlitは素晴らしいフレームワークだ。一方で、デプロイする方法についてはいくつか選択肢があり、ベストプラクティスは確立されていない。GCPとAWS、およびSnowflakeの範囲内*1では、デプロイの選択肢としては以下のようなものがある。\nAWSのEC2、もしくはGCPのCompute EngineなどのVMにデプロイする\nAWSのECSにデプロイする\nGCPのCloud Runにデプロイする\nGCPのApp Engineにデプロイする\nStreamlit in Snowflakeにデプロイする\nStreamlitのCommunity Cloudにデプロイする\nどの選択肢でもデプロイすることは可能だが、各々の手法にはメリットとデメリットが存在する。筆者は実務でStreamlitのデプロイ方法を検討し、結果としてApp Engineへデプロイすることにした。運用を始めてから3ヶ月たったが、結構いい感じで動作している。\nこの記事では、他…",
+          "link": "https://contradiction29.hatenablog.com/entry/2024/01/06/210000",
+          "publishedOn": "2024-01-06T12:00:00.000Z",
+          "wordCount": 635,
+          "title": "StreamlitをApp Engineにデプロイする",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240106/20240106174757.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240106/20240106174757.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189070923770",
           "author": null,
           "description": "今年は色々あった。キャリア的にも、キャリアじゃないところでも、色々なことがあった。\nキャリア的な\n年始の段階ではアナリティクスエンジニアをやっていて、BIの作成や自動化処理を業務領域にしていた。それからはデータエンジニアとなり、データ基盤の移行をやった。アーキテクトとしての技術選定・技術普及、プロジェクトマネジメント、社内政治など、「データ基盤を移行するために必要なこと」をすべて一貫してやり切ったことはいい勉強になった。\nそれからはデータプラットフォームを統括するチームのマネージャーになった。エンジニアとしてのキャリアの中で、マネージャーをやるなら今だと思った。マネジメントは難しいが面白いし、人の成長に貢献できるのは楽しい。\n移行のことをブログにしたらいい感じにネタになって、人生で初めてはてなのホッテントリに入ったのが嬉しかった。その時のブログ↓\ntech.algoage.dmm.com\nこのブログがきっかけで、登壇の機会をもらったりした。その時のスライド↓\n speakerdeck.com\nSnowflakeのAdvocateのFelipe Hoffaをはじめとして、オフラインのイベントで色々な人と話せたのがいい勉強になった。今はdatatech-jp (データ関連職の人のコミュニティ）でFundamentals of Data Engineeringの勉強会をしているが、これもいい勉強になる。しばらくはコミュニティを中心に学習していこうと思う。\n一方でキャリア的には迷子になっていて、20社くらいカジュアル面談して自分のキャリアの方向性を考えたりした。今でもキャリアの方向性はよくわかっていない。「やりたいことならちょっとある」くらいの段階である。\n資格も取ったりした。SnowflakeのSnow Pro Core (AWSで言えばSAA、GCPで言えばACE）を取得して、Snowflakeの基礎知識を仕入れた。資格ではないが、CourseraのIBM Data Engineeringを最後までやり切って、Data Pipelineの全体を掴めるようになった。\nキャリアじゃないもの\n一月くらいに、健常者エミュレータ事例集をSeesaa WikiからWordpress主体のものに移行した。この時の経験は後のデータ基盤の移行経験で生きてくる。小規模だが、データ基盤を作ったのも経験として活きた。\ncontradiction29.hatenablog.com\nICL（眼球内にコンタクトレンズを入れる手術）を受けた。メガネやコンタクトをしなくて良くなった。今はすごい楽だ。ニキビ跡を直すため、今はダーマペン診療を受けている。\n秋ごろ、祖父が死んだ。後悔のない生き方について考えるようになった。\ncontradiction29.hatenablog.com\nとりあえず、住みたい町に住むところから初めて、今はその住みたい町に住んでいる。マッチングアプリもやっているが、うまくいっていない。\n今後どうする\nデータエンジニアリングについては飽きつつある。やることはまだあるが、今後も同じことをやるかどうかはわからない。とりあえず、健常者エミュレータ事例集をNext.jsで作り直そうと思う。\n来年やりたいこと\n健常者エミュレータV3：Next.jsへの移行\n日記を毎日書く\n個人情報保護士とGCPのAssociate Cloud Engineerとる",
