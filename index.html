@@ -78,6 +78,38 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">移植32</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/01/09/235744" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>キャラ消去処理とエフェクトが違う・・・。なんてこったい。。ログに記録されるようフック部分を見つけようとしましたけど見つけられませんでした。不毛すぎる・・・。ゲームプレイを動画に撮って合わせないとだめかも・・・。
+# ログで拾えず、演出上不自然な部分をパッチ処理・・・。
+
+# フェードインアウトに変更
+if(sys.argv[1] &#x3D;&#x3D; &quot;cs01_03.log&quot;): txt &#x3D; re.sub(&#x27;KEY\nEFF 4\n&#x27;, &#x27;KEY\nEFF 16\nEFF 11\n&#x27;, txt)
+# 残りつづけるイリア消去
+if(sys.argv[1] &#x3D;&#x3D; &quot;cs01_06.log&quot;): txt &#x3D; re.sub(&#x27;ICO kait0a\nMSG （げげげ&#x27;, &#x27;CLR 2\nEFF 33\nICO kait0a\nMSG （げげげ&#x27;, txt)
+# カイト寝るフェードインアウト追加
+if(sys.argv[1] &#x3D;&#x3D; &quot;cs01_07.log&quot;): txt &#x3D; re.sub(&#x27;BPL 19\n&#x27;, &#x27;EFF 16\nEFF 17\nBPL 19\n&#x27;, txt)
+# フェードイン
+if(sys.argv[1] &#x3D;&#x3D; &quot;cs01_11.log&quot;): txt &#x3D; re.sub(&#x27;EFF 4&#x27;, &#x27;EFF 16&#x27;, txt)
+# フェードアウト
+if(sys.argv[1] &#x3D;&#x3D; &quot;cs01_12.log&quot;): txt &#x3D; re.sub(&#x27;EFF 4&#x27;, &#x27;EFF 11&#x27;, txt)</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/ximco_note" target="_blank"
               rel="noopener">Ximco</a></h3>
           <section class="articles-per-source">
@@ -22097,7 +22129,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-01-09T14:54:21.176Z">2024-01-09T14:54:21.176Z</time>
+    <time id="build-timestamp" datetime="2024-01-09T15:01:52.046Z">2024-01-09T15:01:52.046Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

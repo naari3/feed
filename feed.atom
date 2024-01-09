@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-09T14:54:21.222Z</updated>
+    <updated>2024-01-09T15:01:52.092Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[移植32]]></title>
+        <id>hatenablog://entry/6801883189073809494</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/01/09/235744"/>
+        <updated>2024-01-09T14:57:44.000Z</updated>
+        <summary type="html"><![CDATA[キャラ消去処理とエフェクトが違う・・・。なんてこったい。。ログに記録されるようフック部分を見つけようとしましたけど見つけられませんでした。不毛すぎる・・・。ゲームプレイを動画に撮って合わせないとだめかも・・・。
+# ログで拾えず、演出上不自然な部分をパッチ処理・・・。
+
+# フェードインアウトに変更
+if(sys.argv[1] == "cs01_03.log"): txt = re.sub('KEY\nEFF 4\n', 'KEY\nEFF 16\nEFF 11\n', txt)
+# 残りつづけるイリア消去
+if(sys.argv[1] == "cs01_06.log"): txt = re.sub('ICO kait0a\nMSG （げげげ', 'CLR 2\nEFF 33\nICO kait0a\nMSG （げげげ', txt)
+# カイト寝るフェードインアウト追加
+if(sys.argv[1] == "cs01_07.log"): txt = re.sub('BPL 19\n', 'EFF 16\nEFF 17\nBPL 19\n', txt)
+# フェードイン
+if(sys.argv[1] == "cs01_11.log"): txt = re.sub('EFF 4', 'EFF 16', txt)
+# フェードアウト
+if(sys.argv[1] == "cs01_12.log"): txt = re.sub('EFF 4', 'EFF 11', txt)]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[令和のNico Nico Madventure 製作後記]]></title>
         <id>https://note.com/ximco_note/n/n099ddc5b1114</id>

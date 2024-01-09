@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189073809494",
+          "author": null,
+          "description": "キャラ消去処理とエフェクトが違う・・・。なんてこったい。。ログに記録されるようフック部分を見つけようとしましたけど見つけられませんでした。不毛すぎる・・・。ゲームプレイを動画に撮って合わせないとだめかも・・・。\n# ログで拾えず、演出上不自然な部分をパッチ処理・・・。\n\n# フェードインアウトに変更\nif(sys.argv[1] == \"cs01_03.log\"): txt = re.sub('KEY\\nEFF 4\\n', 'KEY\\nEFF 16\\nEFF 11\\n', txt)\n# 残りつづけるイリア消去\nif(sys.argv[1] == \"cs01_06.log\"): txt = re.sub('ICO kait0a\\nMSG （げげげ', 'CLR 2\\nEFF 33\\nICO kait0a\\nMSG （げげげ', txt)\n# カイト寝るフェードインアウト追加\nif(sys.argv[1] == \"cs01_07.log\"): txt = re.sub('BPL 19\\n', 'EFF 16\\nEFF 17\\nBPL 19\\n', txt)\n# フェードイン\nif(sys.argv[1] == \"cs01_11.log\"): txt = re.sub('EFF 4', 'EFF 16', txt)\n# フェードアウト\nif(sys.argv[1] == \"cs01_12.log\"): txt = re.sub('EFF 4', 'EFF 11', txt)",
+          "link": "https://akkera102.hatenablog.com/entry/2024/01/09/235744",
+          "publishedOn": "2024-01-09T14:57:44.000Z",
+          "wordCount": 474,
+          "title": "移植32",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189073215132",
           "author": null,
           "description": "x(旧tiwtter)はいいとこだけで、blogは愚痴コーナーです。ぼっちちゃんのスライム状態でいつもギリギリで作業しています。正月ずっと作業していたのですけど本当に自分のプログラミングは遅くなったと思う次第です。全盛期の2倍か3倍かかってますね・・・。簡単な話、１か月かかるものが２か月ちょいとか・・・いや、もうこのことは諦めました。\n\n体力と時間を許す限り投入したおかげで形になっているのも事実。１章は通しで問題ないことを確認しています。２章はウルフィさんの出番回ですね。物語をプレイしつつエフェクトの不具合、カナン特殊フォントの修正などを念頭に。来月はオープニングエンディングやパタパタアニメを作成かな。もう２か月はかかると思われます。",
