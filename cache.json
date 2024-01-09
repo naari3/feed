@@ -8214,16 +8214,6 @@
           "wordCount": null,
           "title": "axum の router は hyper の上でどのような仕組みでレスポンスを返しているのか",
           "imageUrl": null
-        },
-        {
-          "id": "https://blog.ojisan.io/about-tower",
-          "author": null,
-          "description": "宣伝 10/21 に rust.tokyo でカニさんタワーバトルという発表をする。その事前資料として axum の内部実装の解説を書いているのだが、その解説を読むためには axum の Router は tower の Service…",
-          "link": "https://blog.ojisan.io/about-tower",
-          "publishedOn": "2023-10-12T00:00:00.000Z",
-          "wordCount": 1985,
-          "title": "tower は何を実現するのか",
-          "imageUrl": "https://blog.ojisan.io/static/9b2ff54e3f8e2af95d11b9da0da45db5/aa395/visual.png"
         }
       ]
     },
