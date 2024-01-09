@@ -452,6 +452,26 @@ CPUの左側には映像出力用のNTSCデコーダ、SAAなんとか、あと�
           </section>
         </section>
       </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="http://github.com/dylang/node-rss" target="_blank"
+              rel="noopener">blog.ojisan.io&#x27;s RSS Feed</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">結合テストを書くときはコードベースを分離している</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.ojisan.io/integration-test-bunnri" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>新規開発の設計支援や古いコードベースを甦らせて欲しいという相談をもらったときに、最初にちょろっとコードだけお手本的なコードを書いてから引き渡しているのだが、そのときに必ずテストを書くようにしている。 3,…</span>
+                  </div>
+                  <img src="https://blog.ojisan.io/static/17d53c20545f30dab87e5d79fc365634/26dc0/visual.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20294,63 +20314,6 @@ Twitterへの投稿ボタンをXへのポストボタンに変更しました
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
-              rel="noopener">honeylab&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">１年間ChordTrackerをゴニョゴニョした結果！！（実働日数日だけど）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2023/10/12/114943" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>https://honeylab.hatenablog.jp/entry/2022/05/07/224043
-前回ChordTrackerの記事を書いてから一年半、
-あれやこれやと色々調べてみたところ、どうにかデータを引っこ抜く方法を見つけ出しました。
- 
-ChordTrackerの外部連携機能として、SH-300やSH-500などのsongnenicショルキーのJAM機能にリアルタイムにデータを送る機能と、PSR-SX600などのミュージックワークステーション・キーボードに譜面データを送るという二つの方法があります。
-今回は、前者のリアルタイム機能を使用しました。
-kakakumag.com
-色々調べてみましたが、やっぱり実機がないとどうしようもないと言うことで、しょうがない買うか、とメルカリを見ていたところ約１２０００円、たまにヤフオクで８０００円ぐらいのが出ていました。うーんと悩んでいたところ、そういえば近所のリサイクルショップにあったはずと見に行ったところまだ残っていました。
-近所にあるの知ってたんだ pic.twitter.com/bDiIJD1yWO
-2023年10月11日
-
-
- 
-iPhoneとUSBで接続すればMIDI機器として通信できるはずですが、それだと中身を見ることができません。USB-MIDI対応の機器を使って入力ーTHRUー出力すれば中身を見ることができるはずですが、なぜかそのへんに転がしておいたはずのiPhone-USB アダプタが見つかりません。
-仕方がないので分解してみます。
-USBでもいいんですが、今回はBLEの方で通信します。
-どうやら、USBの場合はLPCマイコンで受けてMIDI信号に、BLE接続の場合はホシデンのBLEモジュールでMIDI信号に変換した後、メインのマイコンに送り込まれているようでした。
-その部分からちょっと信号をもらって通信を解析しました。
-コードチェンジのタイミングでMIDIデータが送られているのを確認 pic.twitter.com/cDuMtDGO71
-2023年10月11日
-
-
- 
-BLE接続認証後、GetIDでSH-300のIDを返した後、名前のクエリを専用コマンドで行い、想定の通りであれば、接続可能機器として使用できるようでした。
- 
-で、音源ファイルを開き、再生すると、リアルタイムにSysEXが送信されていきます。
-これを解析しました。
-解析もまぁ長くなりますが、これだけMIDI関連機器をいじってきたので割と簡単にどうにかなりました。
- 
-最終的に、マイコンにSH-300を騙らせてSysEXを受信し、コード文字列をキーボードに変換してメモ帳に入力できるようになりました。
-ChordTrackerからのリアルタイムSysex出力を拾ってコード文字列に書き換えてキーボード入力に変換してメモ帳に叩き込める成功(NoChordがバグってCccになってるけど置いておく)
-任意のタイミングでEnterキーを押して改行してやると見やすくなるぞ pic.twitter.com/11tJXp8gwI
-2023年10月12日
-
-
- 
-画期的すぎん？？？これいままで手書きでやるしかなかったんだよ？？？？
-ここまでできたら後少し、これを単純なマイコンで行う機械に仕上げるか、もう一つはアプリとしてテキストに変換するかの二種類が考えられます。どうにかなんか作りたいぞ</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -22134,7 +22097,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-01-09T12:01:55.679Z">2024-01-09T12:01:55.679Z</time>
+    <time id="build-timestamp" datetime="2024-01-09T14:54:21.176Z">2024-01-09T14:54:21.176Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

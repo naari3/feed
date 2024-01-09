@@ -2100,21 +2100,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189049780570",
-          "author": null,
-          "description": "https://honeylab.hatenablog.jp/entry/2022/05/07/224043\n前回ChordTrackerの記事を書いてから一年半、\nあれやこれやと色々調べてみたところ、どうにかデータを引っこ抜く方法を見つけ出しました。\n \nChordTrackerの外部連携機能として、SH-300やSH-500などのsongnenicショルキーのJAM機能にリアルタイムにデータを送る機能と、PSR-SX600などのミュージックワークステーション・キーボードに譜面データを送るという二つの方法があります。\n今回は、前者のリアルタイム機能を使用しました。\nkakakumag.com\n色々調べてみましたが、やっぱり実機がないとどうしようもないと言うことで、しょうがない買うか、とメルカリを見ていたところ約１２０００円、たまにヤフオクで８０００円ぐらいのが出ていました。うーんと悩んでいたところ、そういえば近所のリサイクルショップにあったはずと見に行ったところまだ残っていました。\n近所にあるの知ってたんだ pic.twitter.com/bDiIJD1yWO\n2023年10月11日\n\n\n \niPhoneとUSBで接続すればMIDI機器として通信できるはずですが、それだと中身を見ることができません。USB-MIDI対応の機器を使って入力ーTHRUー出力すれば中身を見ることができるはずですが、なぜかそのへんに転がしておいたはずのiPhone-USB アダプタが見つかりません。\n仕方がないので分解してみます。\nUSBでもいいんですが、今回はBLEの方で通信します。\nどうやら、USBの場合はLPCマイコンで受けてMIDI信号に、BLE接続の場合はホシデンのBLEモジュールでMIDI信号に変換した後、メインのマイコンに送り込まれているようでした。\nその部分からちょっと信号をもらって通信を解析しました。\nコードチェンジのタイミングでMIDIデータが送られているのを確認 pic.twitter.com/cDuMtDGO71\n2023年10月11日\n\n\n \nBLE接続認証後、GetIDでSH-300のIDを返した後、名前のクエリを専用コマンドで行い、想定の通りであれば、接続可能機器として使用できるようでした。\n \nで、音源ファイルを開き、再生すると、リアルタイムにSysEXが送信されていきます。\nこれを解析しました。\n解析もまぁ長くなりますが、これだけMIDI関連機器をいじってきたので割と簡単にどうにかなりました。\n \n最終的に、マイコンにSH-300を騙らせてSysEXを受信し、コード文字列をキーボードに変換してメモ帳に入力できるようになりました。\nChordTrackerからのリアルタイムSysex出力を拾ってコード文字列に書き換えてキーボード入力に変換してメモ帳に叩き込める成功(NoChordがバグってCccになってるけど置いておく)\n任意のタイミングでEnterキーを押して改行してやると見やすくなるぞ pic.twitter.com/11tJXp8gwI\n2023年10月12日\n\n\n \n画期的すぎん？？？これいままで手書きでやるしかなかったんだよ？？？？\nここまでできたら後少し、これを単純なマイコンで行う機械に仕上げるか、もう一つはアプリとしてテキストに変換するかの二種類が考えられます。どうにかなんか作りたいぞ",
-          "link": "https://honeylab.hatenablog.jp/entry/2023/10/12/114943",
-          "publishedOn": "2023-10-12T02:49:43.000Z",
-          "wordCount": 519,
-          "title": "１年間ChordTrackerをゴニョゴニョした結果！！（実働日数日だけど）",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -8125,6 +8110,16 @@
       "feedUrl": "https://blog.ojisan.io/rss.xml",
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
+        {
+          "id": "https://blog.ojisan.io/integration-test-bunnri",
+          "author": null,
+          "description": "新規開発の設計支援や古いコードベースを甦らせて欲しいという相談をもらったときに、最初にちょろっとコードだけお手本的なコードを書いてから引き渡しているのだが、そのときに必ずテストを書くようにしている。 3,…",
+          "link": "https://blog.ojisan.io/integration-test-bunnri",
+          "publishedOn": "2024-01-08T00:00:00.000Z",
+          "wordCount": 812,
+          "title": "結合テストを書くときはコードベースを分離している",
+          "imageUrl": "https://blog.ojisan.io/static/17d53c20545f30dab87e5d79fc365634/26dc0/visual.jpg"
+        },
         {
           "id": "https://blog.ojisan.io/matomete-catch-up-2023",
           "author": null,
