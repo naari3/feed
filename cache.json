@@ -427,21 +427,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189049679087",
-          "author": null,
-          "description": "1スクリプトファイルだけ目視で読んだ限り、そのままGBAで走らせるのはちょっと無理かなあというのが結論でした。640x400に最適化されてますしアセンブラを走らせるのはスピードとしてどうだろう。たとえば\nテキスト１\ncall エフェクト１\nテキスト２\ncall キャラクタ表示\ncall エフェクト２\nテキスト３\nが理想のスクリプトフォーマットというならアセンブラはこのようになります。\nTXT テキスト1のアドレス\neff1:\nMOV レジスタ1, 8\nMOV レジスタ2, 8\nMOV レジスタ3, 16\nMOV レジスタ4, 152\nMOV レジスタ5, 20\nDRAW 変数1, 変数2, 変数3, 変数4\nADD レジスタ1, 8\nADD レジスタ3, 8\nDEC レジスタ5 \nJNZ eff1\nTXT テキスト2のアドレス\n\n以下略・・・\nこれらのエフェクト命令がテキストの間に挟まっているわけです。むっちゃつらみ。なので一度DOS上でエンジン動かして上記の理想なフォーマットに変換しないといけないかもです。",
-          "link": "https://akkera102.hatenablog.com/entry/2023/10/11/231515",
-          "publishedOn": "2023-10-11T14:15:15.000Z",
-          "wordCount": 438,
-          "title": "移植7",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -695,6 +680,21 @@
       "feedUrl": "https://blog.hatenablog.com/rss",
       "siteUrl": "https://blog.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6801883189073613500",
+          "author": null,
+          "description": "はてなブログ独自の集計による人気記事のランキング。12月24日（日）から12月30日（土）〔2023年12月第5週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    「勉強ができない教育ママ」が子供の教育を誤りたくないならぜひ「ガクサン」というマンガを読んでみてほしい - 頭の上にミカンをのせる\n by id:tyoshiki \n    \n2\n    今年(2023年)おもしろかった本を一気に紹介する。 - 基本読書\n by id:huyukiitoichi \n    \n3\n    2023年にブックマークしたページでよかったもの集めた - Really Saying Something\n by id:toya \n    \n4\n    面白かった本2023 - phaの日記\n by id:pha \n    \n5\n    NHK独自記事がインターネットから消される？ この新聞社の圧力がすごい2023 - フジイユウジ::ドットネット\n by id:fujii_yuji \n    \n6\n    勝手に輝いていた増田ブコメ大賞2023 - 誰かの肩の上\n by id:daydollarbotch \n    \n7\n    2024年に読んだほうがいいエンジニアな書籍10冊+α - CloudとSREそしてキャリア本 - Lean Baseball\n by id:shinyorke \n    \n8\n    株式会社はてな 京都本社が引っ越したらしいので行ってきた！ - 941::blog\n by id:kushii \n    \n9\n    またまた読んでよかった「ニンゲンの面倒なところに付き合う」ための本をまとめた - フジイユウジ::ドットネット\n by id:fujii_yuji \n    \n10\n    「昔のインターネットは面白かった」と…",
+          "link": "https://blog.hatenablog.com/entry/2024/01/09/120000",
+          "publishedOn": "2024-01-09T03:00:00.000Z",
+          "wordCount": 956,
+          "title": "今週のはてなブログランキング〔2023年12月第5週〕",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240109/20240109091727.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240109/20240109091727.jpg"
+        },
         {
           "id": "hatenablog://entry/6801883189068623122",
           "author": null,
