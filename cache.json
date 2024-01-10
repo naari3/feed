@@ -2115,21 +2115,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e69ab7fcfa14dd408ef97ee322f13a3edb275408/enlarge=0;height=200;version=1;width=200/https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple116%2Fv4%2F7c%2Fef%2Fd8%2F7cefd879-a686-3dcf-4318-0b7b9ee3e058%2FAppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png%2F100x100bb.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189050115164",
-          "author": null,
-          "description": "honeylab.hatenablog.jp\n \nここまでの流れが上のブログに書いてありますが、改めて簡単に説明すると\n \n耳コピ支援ソフト「ChordTracker」が大変便利\n↓\nでも、データ書き出し機能がないのでペンで書き写すしかない\n↓\n力技でAndroid版を動かして生成されたキャッシュをroot権限で引っこ抜いて\n↓\nMIDIデータに変換することはできていたけど、これではみんなが使えない\n \nことに対して私は全力で立ち向かいました。決して作者に要望するのではなく。\n上のブログにあるように、ChordTrackerには「JAM機能」用のリアルタイムコード情報送信と、ミュージックワークステーション用の譜面データとしてソングファイルを送信する、という二つの機能があります。\n前者の機能を使うために、iPhoneのアプリとしてBLE Peripheral MIDI デバイスを立ち上げ、\nSH-300として振る舞うことでリアルタイムコード情報を引っこ抜くことに成功しました。\n \nこちらがそのアプリの動作です。\nコード正解率に定評があり愛用者の多いChordTracker、便利なのにコード書き出し機能が無い、どうやってもできない、鉛筆で書き写すしかなかったソフトからコードデータを拾ってテキスト化する非公式アプリができました。\n今のうちなら機能追加ができるのでなんかあったらコメントください。 pic.twitter.com/aqRwrZ9uRc\n2023年10月13日\n\n\n \nChordTrackerを動かす端末と読み取り用の端末の２台が必要になってしまうのが難点ですが、これまで全く手のつけられなかったデータのままの取得が可能になります。\n現在絶賛開発中ですので、なにか機能要望がありましたら教えてください。\n審査、うまいこと通るか不安だけどw\n \nで、もう一つの「譜面データ」送信機能、こっちもどうにかやりたいんだよねぇ\n対応しているキーボード「PSR-SX600」っていうやつらしいんだけど、中古で買っても高い上に買取価格が安くてちょっとパッと試せる値段では…うーん、うーん\nkakaku.com\n \nただ、情報によると、「Yamaha Musicsoft Downloader」が使える機種ならもしかしたら同様に送れるのでは、という話もあるので、いまそっちを逆アセゲフンゲフンしてちょっと調べてみています。\nhttps://sandsoftwaresound.net/hidden-arranger-smarts-file-system-sysex/\n少なくとも、S950という機種では出来た、みたいなことが書いてありました。\nS950…倍ぐらい高いんだけどな！！！！！\n \nところで、ChordTrackerの利用規約には、ChordTrackerを利用したサービスなどの構築禁止、があります。サーバー側でこれを動かしてあれこれするようなのはダメよ、っていうことなんですね。これはChordTrackerを普通に使ってるだけなんで、まぁ問題は起きないでしょう。とは思うのよね。まぁ、もしiOSで配れなかったらAndroidでapk化するなりPCで動かすなりすればいいわ。",
-          "link": "https://honeylab.hatenablog.jp/entry/2023/10/13/170201",
-          "publishedOn": "2023-10-13T08:02:01.000Z",
-          "wordCount": null,
-          "title": "ChordTrackerとガチバトルした結果",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -4699,21 +4684,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/6628210/1516165995781773"
-        },
-        {
-          "id": "hatenablog://entry/820878482972950423",
-          "author": null,
-          "description": "こんにちは！レシピ事業部の藤坂(@yujif_) です。\nクックパッドiOSアプリの開発者用機能として「ログ確認ツール」を作ってみました。社内で1年以上運用して好評なので、その経緯や学びをまとめてみます。\niOSDC Japan 2022 では「モバイルアプリの行動ログの『仕込み』を快適にする」と題して関連した内容を発表しています。こちらの資料も合わせてご覧ください。\n speakerdeck.com\nアプリ内ログ確認ツールとは\n1. ログ履歴\nログの内容確認が楽になる\n2. ログ定義辞書\n知らないログの意味が分かる\nログを業務に活かしやすくなる\n3. ログ送信チェックリスト\nログが送られていない！？\nQA作業でログの実装漏れもわかる\n実装担当者以外でも分担できる\n実装方法\n1. 送信済みログを読み出せるようにする\nos.Logger で書き込む\nOSLogStore で読み出す\n2. ログ確認ツールで扱いやすいデータに変換する\nOSLogEntry のメッセージをデコードする\n行動ログの定義ドキュメントとの紐付け\n3. 便利な機能を色々実装する\nチェックリスト機能\nネットワーク通信のログにも対応\n実装に関して調査しやすくする\nSimulatorではURLコピーに\n振り返って\nよかったこと\nログの実装・確認がつらくなくなる\n自由に実験できる環境で遊べる\n欲しいものを作れると楽しい\n改善したいこと\nログの読み込みを速くしたい\nまとめ\nアプリ内ログ確認ツールとは\nクックパッドiOSアプリに内蔵された、ログ関連の開発者用ツール*1です。\n「ログ履歴」「ログ定義辞書」「ログ送信チェックリスト」の3つの機能があります。\n1. ログ履歴\n\n\nクックパッドiOSアプリ内のログ確認ツール\nユーザーの行動ログ（例：ボタンのタップ、特定の要素の表示など）やAPIサーバーとの通信ログを、クックパ…",
-          "link": "https://techlife.cookpad.com/entry/2023/10/13/in-app-log-checker",
-          "publishedOn": "2023-10-13T08:30:00.000Z",
-          "wordCount": null,
-          "title": "開発を快適にするiOSアプリ内ログ確認ツール",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/y/y_f/20231013/20231013164516.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/y/y_f/20231013/20231013164516.png"
         }
       ]
     },
@@ -7089,16 +7059,6 @@
           "wordCount": null,
           "title": "気温が意味不明",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/118813855/rectangle_large_type_2_228e8a1bad67c48675a3cad50b0dc54e.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/ocha307/n/n9ff5cd08d5eb",
-          "author": null,
-          "description": "メンバーシップで書いてた日記、いつもの記事と同じ熱と校生の丁寧さで書こうとして続かなかった気がするので、Scrapboxでゆるく書いてnoteにコピペする感じで復帰したいなと思います。\nメンバーシップ全然人いないけど、有益な話はむしろ無料マガジンで公開してるので誘いづらいという。 続きをみる",
-          "link": "https://note.com/ocha307/n/n9ff5cd08d5eb",
-          "publishedOn": "2023-10-13T08:38:32.000Z",
-          "wordCount": null,
-          "title": "メンバーシップで書いてた日記、いつ...",
-          "imageUrl": null
         }
       ]
     },
