@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189074267954",
+          "author": null,
+          "description": "動画撮って、GBAと動作比較して、間違えてたらパッチ当てて・・・。GBFS作り直して、コンパイルして、エミュ起動したら修正ポイントまで操作して・・・確認。終わんないよこれー！（泣",
+          "link": "https://akkera102.hatenablog.com/entry/2024/01/11/203722",
+          "publishedOn": "2024-01-11T11:37:22.000Z",
+          "wordCount": 406,
+          "title": "移植33",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189073809494",
           "author": null,
           "description": "キャラ消去処理とエフェクトが違う・・・。なんてこったい。。ログに記録されるようフック部分を見つけようとしましたけど見つけられませんでした。不毛すぎる・・・。ゲームプレイを動画に撮って合わせないとだめかも・・・。\n# ログで拾えず、演出上不自然な部分をパッチ処理・・・。\n\n# フェードインアウトに変更\nif(sys.argv[1] == \"cs01_03.log\"): txt = re.sub('KEY\\nEFF 4\\n', 'KEY\\nEFF 16\\nEFF 11\\n', txt)\n# 残りつづけるイリア消去\nif(sys.argv[1] == \"cs01_06.log\"): txt = re.sub('ICO kait0a\\nMSG （げげげ', 'CLR 2\\nEFF 33\\nICO kait0a\\nMSG （げげげ', txt)\n# カイト寝るフェードインアウト追加\nif(sys.argv[1] == \"cs01_07.log\"): txt = re.sub('BPL 19\\n', 'EFF 16\\nEFF 17\\nBPL 19\\n', txt)\n# フェードイン\nif(sys.argv[1] == \"cs01_11.log\"): txt = re.sub('EFF 4', 'EFF 16', txt)\n# フェードアウト\nif(sys.argv[1] == \"cs01_12.log\"): txt = re.sub('EFF 4', 'EFF 11', txt)",
