@@ -20139,45 +20139,6 @@ TSを聴き直した
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Remix v2へアップデートした時のメモ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2023/10/14/remix-v2/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Remixを使って作ったアプリケーションをRemix v2へアップデートした時のメモです。
-Remix v2 | Remix
-マイグレーションガイド: Upgrading to v2 | Remix
-アプリケーションは Remix + Cloudflare Pages で動かしてるアプリ。
-serverBuildTargetの変更
-結構前にテンプレートから生成したアプリだったので、それぞれのビルドターゲットの設定方法が変わっている。
-V2では、この初期値が結構変わるので、次のページを参考にしてビルドターゲットに合わせたものを設定する。
-serverBuildTarget
-Cloudflare Pages向けのビルドをするので、remix.config.jsに次のように設定する。
-この設定はV1でも動くので、まずはこれで動かす。(future.v2_devが有効である必要はあったのかも。忘れている)
-
-/** @type {import(&#x27;@remix-run/dev&#x27;).AppConfig} */
-module.exports &#x3D; {
--  serverBuildTarget: &quot;cloudflare-pages&quot;,
-   server: &quot;./server.js&quot;,
-   ignoredRouteFiles: [&quot;.*&quot;, &quot;**/*.test.*&quot;],
-+  publicPath: &quot;/build/&quot;, // default value, can be removed
-+  serverBuildPath: &quot;functions/[[path]].js&quot;,
-+  serverConditions: [&quot;worker&quot;],
-+  serverDependenciesToBundle: &quot;all&quot;,
-+  serverMainFields: [&quot;browser&quot;, &quot;mod…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21961,7 +21922,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-01-12T01:26:19.657Z">2024-01-12T01:26:19.657Z</time>
+    <time id="build-timestamp" datetime="2024-01-12T02:13:35.614Z">2024-01-12T02:13:35.614Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

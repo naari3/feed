@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-12T01:26:19.702Z</updated>
+    <updated>2024-01-12T02:13:35.668Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13934,36 +13934,6 @@ TSを聴き直した
         <summary type="html"><![CDATA[続きをみる]]></summary>
         <author>
             <name>河内一馬</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remix v2へアップデートした時のメモ]]></title>
-        <id>https://efcl.info/2023/10/14/remix-v2/</id>
-        <link href="https://efcl.info/2023/10/14/remix-v2/"/>
-        <updated>2023-10-14T13:53:00.000Z</updated>
-        <summary type="html"><![CDATA[Remixを使って作ったアプリケーションをRemix v2へアップデートした時のメモです。
-Remix v2 | Remix
-マイグレーションガイド: Upgrading to v2 | Remix
-アプリケーションは Remix + Cloudflare Pages で動かしてるアプリ。
-serverBuildTargetの変更
-結構前にテンプレートから生成したアプリだったので、それぞれのビルドターゲットの設定方法が変わっている。
-V2では、この初期値が結構変わるので、次のページを参考にしてビルドターゲットに合わせたものを設定する。
-serverBuildTarget
-Cloudflare Pages向けのビルドをするので、remix.config.jsに次のように設定する。
-この設定はV1でも動くので、まずはこれで動かす。(future.v2_devが有効である必要はあったのかも。忘れている)
-
-/** @type {import('@remix-run/dev').AppConfig} */
-module.exports = {
--  serverBuildTarget: "cloudflare-pages",
-   server: "./server.js",
-   ignoredRouteFiles: [".*", "**/*.test.*"],
-+  publicPath: "/build/", // default value, can be removed
-+  serverBuildPath: "functions/[[path]].js",
-+  serverConditions: ["worker"],
-+  serverDependenciesToBundle: "all",
-+  serverMainFields: ["browser", "mod…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

@@ -8192,16 +8192,6 @@
           "wordCount": null,
           "title": "Secretlint 8リリース: OpenAIのAPIトークンの検出に対応",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2023/10/14/remix-v2/",
-          "author": null,
-          "description": "Remixを使って作ったアプリケーションをRemix v2へアップデートした時のメモです。\nRemix v2 | Remix\nマイグレーションガイド: Upgrading to v2 | Remix\nアプリケーションは Remix + Cloudflare Pages で動かしてるアプリ。\nserverBuildTargetの変更\n結構前にテンプレートから生成したアプリだったので、それぞれのビルドターゲットの設定方法が変わっている。\nV2では、この初期値が結構変わるので、次のページを参考にしてビルドターゲットに合わせたものを設定する。\nserverBuildTarget\nCloudflare Pages向けのビルドをするので、remix.config.jsに次のように設定する。\nこの設定はV1でも動くので、まずはこれで動かす。(future.v2_devが有効である必要はあったのかも。忘れている)\n\n/** @type {import('@remix-run/dev').AppConfig} */\nmodule.exports = {\n-  serverBuildTarget: \"cloudflare-pages\",\n   server: \"./server.js\",\n   ignoredRouteFiles: [\".*\", \"**/*.test.*\"],\n+  publicPath: \"/build/\", // default value, can be removed\n+  serverBuildPath: \"functions/[[path]].js\",\n+  serverConditions: [\"worker\"],\n+  serverDependenciesToBundle: \"all\",\n+  serverMainFields: [\"browser\", \"mod…",
-          "link": "https://efcl.info/2023/10/14/remix-v2/",
-          "publishedOn": "2023-10-14T13:53:00.000Z",
-          "wordCount": null,
-          "title": "Remix v2へアップデートした時のメモ",
-          "imageUrl": null
         }
       ]
     },
