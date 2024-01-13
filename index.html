@@ -20027,47 +20027,6 @@ BotやWebアプリケーションならスケールするし、多くの人の�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://tagomoris.hatenablog.com/" target="_blank"
-              rel="noopener">たごもりすメモ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">iOS17/iPhone15でPhotosPickerItem#loadTransferable(type: Data.self)が動かなくなっていた</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://tagomoris.hatenablog.com/entry/2023/10/16/121524" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>まーいけるだろ、と自作アプリが動いていたiPhone14 Pro w/ iOS16をiPhone15 Pro w/ iOS17に移行したところ、ビルドしなおしてインストールしたら普通に動いてたっぽいから油断してたら、タイトルの通りPhotosPickerを使って写真データを取り出してるところが動かなくなってた。
-具体的にはこのエントリで書いてたコード。
-tagomoris.hatenablog.com
-これの、以下のようなコード。
-fileprivate extension PhotosPickerItem {
-    func pictureData() async -&gt; Data? {
-        var transferable: Data? &#x3D; nil
-        do {
-            transferable &#x3D; try await self.loadTransferable(type: Data.self)
-        }
-        catch {
-            // log the error
-            return nil
-        }
-
-
-
-これを実行するとcatch節で以下のようなエラーが報告された。iOS16 / iPhone14では起きなかったもの*1。
-CoreTransferable.TransferableSupportError error 0
-で、これ、iPhone15Proのシミュレーターでも起きないんだよね。今のところ実機でしか再現できてない。なんなんでしょう。PhotosPickerの使いかたみたいなのをググると同じようなコードで直接Dataに変換している例が大量に見付かるんだけど、みなさんどうなってるんですかね?
-解法?: Transferableな変換先を自分で実装する
-…</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21851,7 +21810,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-01-13T15:01:53.393Z">2024-01-13T15:01:53.393Z</time>
+    <time id="build-timestamp" datetime="2024-01-13T16:01:39.093Z">2024-01-13T16:01:39.093Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-13T15:01:53.441Z</updated>
+    <updated>2024-01-13T16:01:39.136Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13874,37 +13874,6 @@ BotやWebアプリケーションならスケールするし、多くの人の�
  by id:slideg…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[iOS17/iPhone15でPhotosPickerItem#loadTransferable(type: Data.self)が動かなくなっていた]]></title>
-        <id>hatenablog://entry/6801883189050887269</id>
-        <link href="https://tagomoris.hatenablog.com/entry/2023/10/16/121524"/>
-        <updated>2023-10-16T03:15:24.000Z</updated>
-        <summary type="html"><![CDATA[まーいけるだろ、と自作アプリが動いていたiPhone14 Pro w/ iOS16をiPhone15 Pro w/ iOS17に移行したところ、ビルドしなおしてインストールしたら普通に動いてたっぽいから油断してたら、タイトルの通りPhotosPickerを使って写真データを取り出してるところが動かなくなってた。
-具体的にはこのエントリで書いてたコード。
-tagomoris.hatenablog.com
-これの、以下のようなコード。
-fileprivate extension PhotosPickerItem {
-    func pictureData() async -> Data? {
-        var transferable: Data? = nil
-        do {
-            transferable = try await self.loadTransferable(type: Data.self)
-        }
-        catch {
-            // log the error
-            return nil
-        }
-
-
-
-これを実行するとcatch節で以下のようなエラーが報告された。iOS16 / iPhone14では起きなかったもの*1。
-CoreTransferable.TransferableSupportError error 0
-で、これ、iPhone15Proのシミュレーターでも起きないんだよね。今のところ実機でしか再現できてない。なんなんでしょう。PhotosPickerの使いかたみたいなのをググると同じようなコードで直接Dataに変換している例が大量に見付かるんだけど、みなさんどうなってるんですかね?
-解法?: Transferableな変換先を自分で実装する
-…]]></summary>
-        <author>
-            <name>たごもりすメモ</name>
         </author>
     </entry>
     <entry>

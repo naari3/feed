@@ -4582,21 +4582,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a4ea822dc757eadfbd6331b8a80b303decf7efe0/enlarge=0;height=200;version=1;width=200/https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple126%2Fv4%2F72%2F64%2F12%2F726412b3-ff8d-d5f0-9427-778fbb6a1e6c%2FAppIcon-0-0-1x_U007ephone-0-0-85-220.png%2F100x100bb.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189050887269",
-          "author": null,
-          "description": "まーいけるだろ、と自作アプリが動いていたiPhone14 Pro w/ iOS16をiPhone15 Pro w/ iOS17に移行したところ、ビルドしなおしてインストールしたら普通に動いてたっぽいから油断してたら、タイトルの通りPhotosPickerを使って写真データを取り出してるところが動かなくなってた。\n具体的にはこのエントリで書いてたコード。\ntagomoris.hatenablog.com\nこれの、以下のようなコード。\nfileprivate extension PhotosPickerItem {\n    func pictureData() async -> Data? {\n        var transferable: Data? = nil\n        do {\n            transferable = try await self.loadTransferable(type: Data.self)\n        }\n        catch {\n            // log the error\n            return nil\n        }\n\n\n\nこれを実行するとcatch節で以下のようなエラーが報告された。iOS16 / iPhone14では起きなかったもの*1。\nCoreTransferable.TransferableSupportError error 0\nで、これ、iPhone15Proのシミュレーターでも起きないんだよね。今のところ実機でしか再現できてない。なんなんでしょう。PhotosPickerの使いかたみたいなのをググると同じようなコードで直接Dataに変換している例が大量に見付かるんだけど、みなさんどうなってるんですかね?\n解法?: Transferableな変換先を自分で実装する\n…",
-          "link": "https://tagomoris.hatenablog.com/entry/2023/10/16/121524",
-          "publishedOn": "2023-10-16T03:15:24.000Z",
-          "wordCount": 922,
-          "title": "iOS17/iPhone15でPhotosPickerItem#loadTransferable(type: Data.self)が動かなくなっていた",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
