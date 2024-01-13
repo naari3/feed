@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189074858093",
+          "author": null,
+          "description": "・６章～２８章までのプレイ動画作成\nGBA動作確認＋スクリプトのエフェクトコマンド修正\nバッチ処理（GBFS2個作る）\nうーん・・・。これは３月までかかりそう。。",
+          "link": "https://akkera102.hatenablog.com/entry/2024/01/13/234244",
+          "publishedOn": "2024-01-13T14:42:44.000Z",
+          "wordCount": 409,
+          "title": "移植35",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189074548654",
           "author": null,
           "description": "３章まで完了しましたが・・・１章あたり１５程度のスクリプト修正が必要。２８章あるということは４２０ですか？っていやいや・・・。",
@@ -2936,21 +2951,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189050865320",
-          "author": null,
-          "description": "せっかくピクセル8が来たのに、結局リモートマウス（WiFiでパソコンと繋いで、Androidの音声をパソコンにコピーするソフト）では、Googleの音声入力ではなくSimejiを使っています。\nそれはなぜかというと、ピクセルですとボタンが多すぎて、どんなにボタンをシンプルにして小さくしても、色々なところに触ってしまって、ついつい誤操作を起こしてしまうのですが、Simejiの場合に音声入力は音声入力の専門の画面があるので変なところを触らずに済むからです。\n逆にこれは、スマホ単体で使う時にはいちいち通常の入力画面に戻さなければいけないので、面倒なのですが、パソコンと併用してる場合には音声入力でミスった場合にはそれをパソコンで打ち直してるので、かえってスマホ側にキーボードが出ない方が便利だということにだんだん気づいてきました。\nこの使い方をしてると、実はピクセルを使う意味がなくて、何のAndroidでもよくなってしまうので、どうしようかなっていう感じです。まぁこれから色々考えたいと思います。\nただ、Simejiの音声入力は騒がしい外だとあまり優秀ではないので静かなとこに限るというのもこれまでの印象です。ただし、家の中で音声入力をする分には全く無敵です。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2023/10/16/102555",
-          "publishedOn": "2023-10-16T01:25:55.000Z",
-          "wordCount": 571,
-          "title": "リモートマウスを使う時には結局、Simejiの方が圧倒的に楽だということに気づいてしまった私",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -4466,21 +4466,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231023/20231023172359.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189050864500",
-          "author": null,
-          "description": "はてなブログでは、編集中の下書きを他のユーザーとプレビューを共有するURLを発行する機能を提供しています。この機能を利用すると、ブログのオーナーや権限のあるメンバーでなくても、下書き記事をプレビューすることができます。公開前の記事を公開時の体裁で確認できるため、組織では特に便利に利用いただいている機能です。\n\n今回、AtomPub API から、下書きプレビュー共有用URLを発行、取得できるように改善しました。これまでは下書きプレビュー共有用URLは、一度はてなブログの編集画面を開いて発行する必要がありましたが、API経由で完結できるようになりました。企業ではてなブログを利用する際のワークフローへの組み込みなどで便利ご利用いただけると考えております。\nAPIに関する技術的な詳細については、下記のドキュメントをご参照ください。\nはてなブログAtomPub | Hatena Developer Center #ブログエントリの投稿",
-          "link": "https://staff.hatenablog.com/entry/2023/10/16/102131",
-          "publishedOn": "2023-10-16T01:21:31.000Z",
-          "wordCount": 806,
-          "title": "AtomPub APIから下書きプレビュー共有用URLを発行できるようにしました",
-          "enclosure": {
-            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
         }
       ]
     },
@@ -9252,6 +9237,16 @@
       "siteUrl": "https://gamegaz.com",
       "articles": [
         {
+          "id": "https://gamegaz.com/?p=40265",
+          "author": "mamosuke",
+          "description": "HackeroneのPlayStation部門で、PlayStationシーンでは無名のaapo氏が過去最高額の5万ドルの報奨金の脆弱性を報告していたことが明らかになりました。→→→この記事の続きを読む\nカーネルexploit級を凌駕 aapo氏がHackerOne PlayStation部門過去最高額の報奨金獲得 その額 5万ドル first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024011340265/",
+          "publishedOn": "2024-01-13T13:42:06.000Z",
+          "wordCount": 1480,
+          "title": "カーネルexploit級を凌駕 aapo氏がHackerOne PlayStation部門過去最高額の報奨金獲得 その額 5万ドル",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/HackerOne-aapo.png"
+        },
+        {
           "id": "https://gamegaz.com/?p=40254",
           "author": "mamosuke",
           "description": "かつての有名なチートデバイスブランドGameshark復活のプレスリリースにNintendo Switch2が2024年9月発売と記載されていたことで大騒ぎになりました。→→→この記事の続きを読む\n有名ブランドの憶測がビッグニュースに Nintendo Switch 2が2024年9月発売になってしまった話 first appeared on 大人のためのゲーム講座.",
@@ -10813,6 +10808,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2024-01-13-refa-shower-head",
+          "author": null,
+          "description": "シャワーヘッドをReFaのFINE BUBBLE PUREに交換した。",
+          "link": "https://r7kamura.com/articles/2024-01-13-refa-shower-head",
+          "publishedOn": "2024-01-12T15:00:00.000Z",
+          "wordCount": 74,
+          "title": "ReFaのシャワーヘッド FINE BUBBLE PURE",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2024-01-11-zuvi-codeless-dryer",
           "author": null,

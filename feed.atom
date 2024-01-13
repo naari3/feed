@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-13T13:02:23.798Z</updated>
+    <updated>2024-01-13T15:01:53.441Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[移植35]]></title>
+        <id>hatenablog://entry/6801883189074858093</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/01/13/234244"/>
+        <updated>2024-01-13T14:42:44.000Z</updated>
+        <summary type="html"><![CDATA[・６章～２８章までのプレイ動画作成
+GBA動作確認＋スクリプトのエフェクトコマンド修正
+バッチ処理（GBFS2個作る）
+うーん・・・。これは３月までかかりそう。。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[カーネルexploit級を凌駕 aapo氏がHackerOne PlayStation部門過去最高額の報奨金獲得 その額 5万ドル]]></title>
+        <id>https://gamegaz.com/?p=40265</id>
+        <link href="https://gamegaz.com/2024011340265/"/>
+        <updated>2024-01-13T13:42:06.000Z</updated>
+        <summary type="html"><![CDATA[HackeroneのPlayStation部門で、PlayStationシーンでは無名のaapo氏が過去最高額の5万ドルの報奨金の脆弱性を報告していたことが明らかになりました。→→→この記事の続きを読む
+カーネルexploit級を凌駕 aapo氏がHackerOne PlayStation部門過去最高額の報奨金獲得 その額 5万ドル first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[有名ブランドの憶測がビッグニュースに Nintendo Switch 2が2024年9月発売になってしまった話]]></title>
         <id>https://gamegaz.com/?p=40254</id>
@@ -26,6 +50,16 @@
 GameGaz Daily 2024.1.13 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ReFaのシャワーヘッド FINE BUBBLE PURE]]></title>
+        <id>https://r7kamura.com/articles/2024-01-13-refa-shower-head</id>
+        <link href="https://r7kamura.com/articles/2024-01-13-refa-shower-head"/>
+        <updated>2024-01-12T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[シャワーヘッドをReFaのFINE BUBBLE PUREに交換した。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
@@ -13871,34 +13905,6 @@ CoreTransferable.TransferableSupportError error 0
 …]]></summary>
         <author>
             <name>たごもりすメモ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[リモートマウスを使う時には結局、Simejiの方が圧倒的に楽だということに気づいてしまった私]]></title>
-        <id>hatenablog://entry/6801883189050865320</id>
-        <link href="https://katsumakazuyo.hatenablog.com/entry/2023/10/16/102555"/>
-        <updated>2023-10-16T01:25:55.000Z</updated>
-        <summary type="html"><![CDATA[せっかくピクセル8が来たのに、結局リモートマウス（WiFiでパソコンと繋いで、Androidの音声をパソコンにコピーするソフト）では、Googleの音声入力ではなくSimejiを使っています。
-それはなぜかというと、ピクセルですとボタンが多すぎて、どんなにボタンをシンプルにして小さくしても、色々なところに触ってしまって、ついつい誤操作を起こしてしまうのですが、Simejiの場合に音声入力は音声入力の専門の画面があるので変なところを触らずに済むからです。
-逆にこれは、スマホ単体で使う時にはいちいち通常の入力画面に戻さなければいけないので、面倒なのですが、パソコンと併用してる場合には音声入力でミスった場合にはそれをパソコンで打ち直してるので、かえってスマホ側にキーボードが出ない方が便利だということにだんだん気づいてきました。
-この使い方をしてると、実はピクセルを使う意味がなくて、何のAndroidでもよくなってしまうので、どうしようかなっていう感じです。まぁこれから色々考えたいと思います。
-ただ、Simejiの音声入力は騒がしい外だとあまり優秀ではないので静かなとこに限るというのもこれまでの印象です。ただし、家の中で音声入力をする分には全く無敵です。]]></summary>
-        <author>
-            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AtomPub APIから下書きプレビュー共有用URLを発行できるようにしました]]></title>
-        <id>hatenablog://entry/6801883189050864500</id>
-        <link href="https://staff.hatenablog.com/entry/2023/10/16/102131"/>
-        <updated>2023-10-16T01:21:31.000Z</updated>
-        <summary type="html"><![CDATA[はてなブログでは、編集中の下書きを他のユーザーとプレビューを共有するURLを発行する機能を提供しています。この機能を利用すると、ブログのオーナーや権限のあるメンバーでなくても、下書き記事をプレビューすることができます。公開前の記事を公開時の体裁で確認できるため、組織では特に便利に利用いただいている機能です。
-
-今回、AtomPub API から、下書きプレビュー共有用URLを発行、取得できるように改善しました。これまでは下書きプレビュー共有用URLは、一度はてなブログの編集画面を開いて発行する必要がありましたが、API経由で完結できるようになりました。企業ではてなブログを利用する際のワークフローへの組み込みなどで便利ご利用いただけると考えております。
-APIに関する技術的な詳細については、下記のドキュメントをご参照ください。
-はてなブログAtomPub | Hatena Developer Center #ブログエントリの投稿]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
