@@ -4771,23 +4771,7 @@
       "title": "かーねるさんとか",
       "feedUrl": "https://yasukata.hatenablog.com/rss",
       "siteUrl": "https://yasukata.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6801883189050654173",
-          "author": null,
-          "description": "最近、TCP/IP スタックを自作しており、少し動くようになってきたので、それについて記事にしてみようと思いました。\n主に、ポータブル（特定の CPU、NIC、OS、ライブラリ、コンパイラ機能に依存しない）かつマルチコア環境で利用できる実装があればいいなと思ったことが、モチベーションになっています。\nまだ実装の途中ではありますが、ソースコードは GitHub に置いてありますので、よろしければお試しください。\nGitHub - yasukata/iip: iip: an integratable TCP/IP stackgithub.com\nモチベーション\nTCP/IP スタック実装はインターネット上でいくつか見つけることができるのですが、それらの多くが可搬性についてあまり意識されておらず、込み入ったことをしようと思うと取り回しが良くない、というような印象を持っていました。\n具体的には、既存の多くの TCP/IP スタック実装が、\n特定の OS、ライブラリやネットワーク I/O 機能の実装（例えば tap デバイスや DPDK 等）に依存し、\n更に、内部でそれらを利用するためのサブシステムが独自に実装されており、かつ、それらが外部から隠蔽されている\nまた、TCP/IP スタック実装に、TCP/IP スタックの処理を実行するスレッドが含まれている\n結果として、\n他のシステムとの統合・コンパイルそのものが難しい場合がある\n機能の隠蔽により、最適化がしにくくなる場合がある\nTCP/IP のプロトコル処理を行うスレッドの実行形式が限定されてしまう\nということがあると思いました。\n１. 他のシステムとの統合・コンパイルそのものが難しい場合がある\n例えば、ある TCP/IP スタック実装を、pthread （カーネルによって管理されるスレッド）をユーザー空間スレッドに置き換えるようなア…",
-          "link": "https://yasukata.hatenablog.com/entry/2023/10/17/133728",
-          "publishedOn": "2023-10-17T04:37:28.000Z",
-          "wordCount": null,
-          "title": "TCP/IP スタックを自作する",
-          "enclosure": {
-            "url": "https://raw.githubusercontent.com/yasukata/asset/master/img/netstack_20231017/throughput.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://raw.githubusercontent.com/yasukata/asset/master/img/netstack_20231017/throughput.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "膳（仮）",
