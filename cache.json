@@ -1630,21 +1630,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189050966423",
-          "author": null,
-          "description": "ノンデザイナーズ・デザインブックという本がある。\nhttps://www.amazon.co.jp/%E3%83%8E%E3%83%B3%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%83%BC%E3%82%BA%E3%83%BB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%96%E3%83%83%E3%82%AF-%E7%AC%AC4%E7%89%88-Robin-Williams/dp/4839955557\n著者らはこの本の中で、以下の４つのデザインの原則を提示した。\nコントラスト / Contrast\n反復 / Repetation\n整列 / Alingment\n近接 / Proximiy\n実際にはこの4つを組み合わせながら使うと効果的だが、特にこの「反復」の効果は効いてくる。きぬた歯科とか典型的だと思う。\nきぬた歯科\n「きぬた院長の顔」という共通するイメージが反復要素となり、単純接触効果を生み出している。広告としても成功しているらしい。*1\n同じことは社内向けのアプリケーションにも言える。\n自分はデータエンジニアを職業としてやっている。なので、データウェアハウス内に格納されたデータをSlackで定時報告するアプリなどを作っている。\nSlackのアプリにはアイコンが設定できる。そのアイコンを、すべて単色アイコンにしている。Webアプリケーションを作る場合は、ファビコンを単色アイコンにするようにしている。\nSlackアプリ一つ目。プロフィール画像をパステルグリーンにしている。\nSlackアプリ二つ目。プロフィール画像をパステルピンクにしている。\nWebアプリの例。ファビコンの色をパステルイエローにしている\nデータを取り扱う仕事は専門職だ。専門職というのはほかの職種から見たらとっつきづらく、「何をやっているのかよくわからない」集団だと思われがちだ。弁護士とかもたぶんそうなんだと思う。\nだからこそ、統一的なシンボルを作る。アーマードコアVIの中で「レイブン」の名前が自由意志の象徴であるのと同じように。緑と白と赤の要素があればなんかイタリアっぽくなるのと同じように。\n象徴が象徴たりうるのは、一貫性をもって反復的に利用される場合に限られる。一貫して、反復して単色アイコンを利用する。そうすれば、社内のユーザーは「単色アイコン」それ自体をデータの象徴として認識してくれる。\nBotやWebアプリケーションならスケールするし、多くの人の目に触れられる。我らここにあり、ということになる。専門職特有のとっつき辛さも、多少はましになってくれるんじゃないだろうか。なってくれてるといいな。\n*1:business.nikkei.com",
-          "link": "https://contradiction29.hatenablog.com/entry/2023/10/16/220000",
-          "publishedOn": "2023-10-16T13:00:00.000Z",
-          "wordCount": 295,
-          "title": "雑記：社内向けアプリケーションをすべて単色アイコンにしている話",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20231016/20231016171501.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20231016/20231016171501.png"
         }
       ]
     },
@@ -6948,16 +6933,6 @@
           "wordCount": 2239,
           "title": "ホーリーマウンテン",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/119164482/rectangle_large_type_2_7d2c0520a9c0548554bbea1995f6e6a9.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/ocha307/n/nd0ccf6132732",
-          "author": null,
-          "description": "あじゃジャイル",
-          "link": "https://note.com/ocha307/n/nd0ccf6132732",
-          "publishedOn": "2023-10-16T13:48:32.000Z",
-          "wordCount": 2237,
-          "title": "あじゃジャイル",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/119070201/rectangle_large_type_2_f0d04b72571a7b316f9ea018a040b671.jpeg?width=800"
         }
       ]
     },
@@ -7916,7 +7891,18 @@
       "title": "Wesley Aptekar-Cassels",
       "feedUrl": "https://blog.wesleyac.com/feed.xml",
       "siteUrl": "https://blog.wesleyac.com",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://blog.wesleyac.com/posts/motivating-x3dh",
+          "author": null,
+          "description": "Signal uses a protocol called \"Extended Triple Diffie-Hellman\" (X3DH) for key agreement1. This essentially takes standard Diffie-Hellman key exchange, and enables it to be used where one party may be offline while they're receiving a message, while providing forward secrecy.\nWhile the paper clearly explains how to implement X3DH, the why is slightly less clear. In this post, I'll briefly explain how X3DH works, then investigate what security property each of the steps involved is aimed at providing, and why particular choices were made around the signature algorithm.\nA quick summary of X3DH\n(This summary requires a understanding of Diffie-Hellman key exchange — if you are unfamiliar or need a refresher, take a look at this footnote2)\nIn X3DH, the receiving party (who may be offline when th…",
+          "link": "https://blog.wesleyac.com/posts/motivating-x3dh",
+          "publishedOn": "2024-01-13T05:00:00.000Z",
+          "wordCount": null,
+          "title": "Motivating X3DH",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "blog.ojisan.io's RSS Feed",

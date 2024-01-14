@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-14T00:03:15.538Z</updated>
+    <updated>2024-01-14T02:14:37.851Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -39,6 +39,20 @@ GBA動作確認＋スクリプトのエフェクトコマンド修正
 有名ブランドの憶測がビッグニュースに Nintendo Switch 2が2024年9月発売になってしまった話 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Motivating X3DH]]></title>
+        <id>https://blog.wesleyac.com/posts/motivating-x3dh</id>
+        <link href="https://blog.wesleyac.com/posts/motivating-x3dh"/>
+        <updated>2024-01-13T05:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Signal uses a protocol called "Extended Triple Diffie-Hellman" (X3DH) for key agreement1. This essentially takes standard Diffie-Hellman key exchange, and enables it to be used where one party may be offline while they're receiving a message, while providing forward secrecy.
+While the paper clearly explains how to implement X3DH, the why is slightly less clear. In this post, I'll briefly explain how X3DH works, then investigate what security property each of the steps involved is aimed at providing, and why particular choices were made around the signature algorithm.
+A quick summary of X3DH
+(This summary requires a understanding of Diffie-Hellman key exchange — if you are unfamiliar or need a refresher, take a look at this footnote2)
+In X3DH, the receiving party (who may be offline when th…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
     <entry>
@@ -13717,46 +13731,6 @@ TCP/IP のプロトコル処理を行うスレッドの実行形式が限定さ�
         <summary type="html"><![CDATA[IIJのIoTサービスをご利用の皆様、そして本記事に興味を持ってくださった皆様、こんにちは。 今回は、Gateway APIを活用してデバイスからのセンサーデータをIIJ IoTサービスに送信するプロ...]]></summary>
         <author>
             <name>rkodama</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[あじゃジャイル]]></title>
-        <id>https://note.com/ocha307/n/nd0ccf6132732</id>
-        <link href="https://note.com/ocha307/n/nd0ccf6132732"/>
-        <updated>2023-10-16T13:48:32.000Z</updated>
-        <summary type="html"><![CDATA[あじゃジャイル]]></summary>
-        <author>
-            <name>sanmal</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[雑記：社内向けアプリケーションをすべて単色アイコンにしている話]]></title>
-        <id>hatenablog://entry/6801883189050966423</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2023/10/16/220000"/>
-        <updated>2023-10-16T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ノンデザイナーズ・デザインブックという本がある。
-https://www.amazon.co.jp/%E3%83%8E%E3%83%B3%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%83%BC%E3%82%BA%E3%83%BB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%96%E3%83%83%E3%82%AF-%E7%AC%AC4%E7%89%88-Robin-Williams/dp/4839955557
-著者らはこの本の中で、以下の４つのデザインの原則を提示した。
-コントラスト / Contrast
-反復 / Repetation
-整列 / Alingment
-近接 / Proximiy
-実際にはこの4つを組み合わせながら使うと効果的だが、特にこの「反復」の効果は効いてくる。きぬた歯科とか典型的だと思う。
-きぬた歯科
-「きぬた院長の顔」という共通するイメージが反復要素となり、単純接触効果を生み出している。広告としても成功しているらしい。*1
-同じことは社内向けのアプリケーションにも言える。
-自分はデータエンジニアを職業としてやっている。なので、データウェアハウス内に格納されたデータをSlackで定時報告するアプリなどを作っている。
-Slackのアプリにはアイコンが設定できる。そのアイコンを、すべて単色アイコンにしている。Webアプリケーションを作る場合は、ファビコンを単色アイコンにするようにしている。
-Slackアプリ一つ目。プロフィール画像をパステルグリーンにしている。
-Slackアプリ二つ目。プロフィール画像をパステルピンクにしている。
-Webアプリの例。ファビコンの色をパステルイエローにしている
-データを取り扱う仕事は専門職だ。専門職というのはほかの職種から見たらとっつきづらく、「何をやっているのかよくわからない」集団だと思われがちだ。弁護士とかもたぶんそうなんだと思う。
-だからこそ、統一的なシンボルを作る。アーマードコアVIの中で「レイブン」の名前が自由意志の象徴であるのと同じように。緑と白と赤の要素があればなんかイタリアっぽくなるのと同じように。
-象徴が象徴たりうるのは、一貫性をもって反復的に利用される場合に限られる。一貫して、反復して単色アイコンを利用する。そうすれば、社内のユーザーは「単色アイコン」それ自体をデータの象徴として認識してくれる。
-BotやWebアプリケーションならスケールするし、多くの人の目に触れられる。我らここにあり、ということになる。専門職特有のとっつき辛さも、多少はましになってくれるんじゃないだろうか。なってくれてるといいな。
-*1:business.nikkei.com]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>
