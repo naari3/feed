@@ -6841,16 +6841,6 @@
           "wordCount": null,
           "title": "危ね",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/119451392/rectangle_large_type_2_5c6b5d6b01b8b484d9efac479245f996.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/ocha307/n/ne5954f77cd10",
-          "author": null,
-          "description": "",
-          "link": "https://note.com/ocha307/n/ne5954f77cd10",
-          "publishedOn": "2023-10-19T17:39:16.000Z",
-          "wordCount": null,
-          "title": "無限BGM製造機",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/119363925/rectangle_large_type_2_2b97548270fb0ecddf550fb03264115d.jpeg?width=800"
         }
       ]
     },
@@ -7914,6 +7904,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2024/01/17/superwhisper/",
+          "author": null,
+          "description": "superwhisperという、whisper.cppを使った音声入力ができるmacOSアプリケーションを最近使っています。\n基本的にはggerganov/whisper.cppのモデルを使って、音声認識しながら文字入力ができるアプリケーションです。\n特徴\nWhisperの認識精度が高い\nかなり早く喋っても認識してくれる\n日本語も認識してくれるモデルがある\n日本語で喋って英語に翻訳してくれる機能もある\nオフライン対応\n有料: サブスク と 買い切り の2種類のプランがある\n\n無料で15分のトライアル、その後は選べるモデルが制限される\n公式サイトのデモをみると、かなり早く喋っても認識してくれるのがわかります。\n大抵の人にとっては、多分文字入力するよりしゃべったほうが早いぐらいの入力速度が出ると思います。\nsuperwhisper\n長文はそこまで得意じゃないけど、1行とか2行ぐらいの文章はかなり早く入力できるんじゃないかなって気がします。\n句読点とかは勝手に入れてくれるので、適当にしゃべっても、ある程度文章っぽい文章になると思います。\n認識の精度はMacBook Airの本体のマイクを使っても普通に認識してくれます。\nそれでいて、間違いもそこまで多くないのでかなり実用的です。(単語とかはたまに怪しいが文字列置換機能を辞書的に使える)\n大体1-2行のテキストだとMacBook Air M2で2~3秒ぐらいの認識速度です。\n文章の量が多くなるほど、認識時間が長くなるのでこの辺はまだ長文に向いてないのかなという印象です。\n(Realtimeモードがあるので、この辺はインクリメンタルな結果を合成すればかなり早くなりそうな気はします)\n使い方\n基本的には、superwhisperのサイトからダウンロードして、起動するだけです。\n使い方は単純で、使いたいモデルを選択して、起動すると音声認識…",
+          "link": "https://efcl.info/2024/01/17/superwhisper/",
+          "publishedOn": "2024-01-17T05:55:00.000Z",
+          "wordCount": null,
+          "title": "superwhisperでの音声入力を試す",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2023/12/31/open-source-in-2023/",
           "author": null,

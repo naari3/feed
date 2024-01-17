@@ -74,6 +74,53 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-01-17">2024-01-17</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">superwhisperでの音声入力を試す</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2024/01/17/superwhisper/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>superwhisperという、whisper.cppを使った音声入力ができるmacOSアプリケーションを最近使っています。
+基本的にはggerganov/whisper.cppのモデルを使って、音声認識しながら文字入力ができるアプリケーションです。
+特徴
+Whisperの認識精度が高い
+かなり早く喋っても認識してくれる
+日本語も認識してくれるモデルがある
+日本語で喋って英語に翻訳してくれる機能もある
+オフライン対応
+有料: サブスク と 買い切り の2種類のプランがある
+
+無料で15分のトライアル、その後は選べるモデルが制限される
+公式サイトのデモをみると、かなり早く喋っても認識してくれるのがわかります。
+大抵の人にとっては、多分文字入力するよりしゃべったほうが早いぐらいの入力速度が出ると思います。
+superwhisper
+長文はそこまで得意じゃないけど、1行とか2行ぐらいの文章はかなり早く入力できるんじゃないかなって気がします。
+句読点とかは勝手に入れてくれるので、適当にしゃべっても、ある程度文章っぽい文章になると思います。
+認識の精度はMacBook Airの本体のマイクを使っても普通に認識してくれます。
+それでいて、間違いもそこまで多くないのでかなり実用的です。(単語とかはたまに怪しいが文字列置換機能を辞書的に使える)
+大体1-2行のテキストだとMacBook Air M2で2~3秒ぐらいの認識速度です。
+文章の量が多くなるほど、認識時間が長くなるのでこの辺はまだ長文に向いてないのかなという印象です。
+(Realtimeモードがあるので、この辺はインクリメンタルな結果を合成すればかなり早くなりそうな気はします)
+使い方
+基本的には、superwhisperのサイトからダウンロードして、起動するだけです。
+使い方は単純で、使いたいモデルを選択して、起動すると音声認識…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-01-16">2024-01-16</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19614,26 +19661,6 @@ Pixel 6の時から Google の音声入力を使っていますが、少しず�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/ocha307" target="_blank"
-              rel="noopener">sanmal</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">無限BGM製造機</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/ocha307/n/ne5954f77cd10" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>No content preview</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/119363925/rectangle_large_type_2_2b97548270fb0ecddf550fb03264115d.jpeg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21442,7 +21469,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-01-17T05:01:50.669Z">2024-01-17T05:01:50.669Z</time>
+    <time id="build-timestamp" datetime="2024-01-17T07:01:41.292Z">2024-01-17T07:01:41.292Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
