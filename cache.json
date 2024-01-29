@@ -6921,18 +6921,7 @@
       "title": "チャーミングじろうちゃん",
       "feedUrl": "https://note.com/tarent26/rss",
       "siteUrl": "https://note.com/tarent26",
-      "articles": [
-        {
-          "id": "https://note.com/tarent26/n/nf0ebd9ae04b6",
-          "author": null,
-          "description": "メシ通こちらから無料で読めます！\nhttps://www.hotpepper.jp/mesitsu/entry/charming260/2023-00814\n続きをみる",
-          "link": "https://note.com/tarent26/n/nf0ebd9ae04b6",
-          "publishedOn": "2023-11-01T01:27:22.000Z",
-          "wordCount": 2239,
-          "title": "◾️メシ通さんにて、芸人仲間の食にまつわるエピソードをお届けいたします！好評だったら第2弾あり！拡散お願いします！第1回はTAIGAさん！はてなブックマークもよろしくね。",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/120472158/rectangle_large_type_2_13dba415373dd86c3ea20b8611b2bdf3.png?width=800"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "鉄筋",
@@ -7661,6 +7650,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2024/01/29/textlint-week/",
+          "author": null,
+          "description": "今週は、textlintの開発に集中する textlint week です。\n目標としては次のメージャーバージョンであるv14をリリースすることです。\nv14 roadmap · Issue #1200 · textlint/textlint\nv14では、今後に向けて古いAPIに非推奨のメッセージを出すことや、使われなくなってるオプションなどを削除するといった変更を入れる予定です。そのため、ほとんどのユーザーには特に影響はないと思います。\ntextlint weekで時間があれば、次のようなことをやっていきたいです。\nOffice Hoursをやる?\neditorのアップデート?\nprocess.emitWarning(warning[, options])を使った非推奨アプローチについての記事を書く\nv14のリリース後に新しい機能改善などにもしていきたいのでフィードバックをお待ちしています。\n次のフォームからフィードバックを送ることができるので、是非お願いします！\nvar d=document,w=\"https://tally.so/widgets/embed.js\",v=function(){\"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))};if(\"undefined\"!=typeof Tally)v();else if(d.querySelector('script[src=\"'+w+'\"]')==null){var s=d.createElement(\"script\");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}\ntextlint notes\n📝 Maintainer Month: なぜtextlintを作ったか\nhttps://efcl.info/2022/06/29/why-create-textlint/\n💖 textlintをサポートしてくれる方を募集しています\nhttps://github.com/sponsors/azu\n🔑 textlintのcontributorは 1Password を無料で利用できます\nhttps://efcl.info/2022/09/23/1password-teams-open-source/",
+          "link": "https://efcl.info/2024/01/29/textlint-week/",
+          "publishedOn": "2024-01-29T13:24:00.000Z",
+          "wordCount": 574,
+          "title": "textlint week: 2024-01-29 - 2024-02-04",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
         {
           "id": "https://efcl.info/2024/01/17/superwhisper/",
           "author": null,

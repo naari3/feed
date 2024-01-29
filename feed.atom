@@ -2,10 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-29T13:01:46.599Z</updated>
+    <updated>2024-01-29T14:01:53.240Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[textlint week: 2024-01-29 - 2024-02-04]]></title>
+        <id>https://efcl.info/2024/01/29/textlint-week/</id>
+        <link href="https://efcl.info/2024/01/29/textlint-week/"/>
+        <updated>2024-01-29T13:24:00.000Z</updated>
+        <summary type="html"><![CDATA[今週は、textlintの開発に集中する textlint week です。
+目標としては次のメージャーバージョンであるv14をリリースすることです。
+v14 roadmap · Issue #1200 · textlint/textlint
+v14では、今後に向けて古いAPIに非推奨のメッセージを出すことや、使われなくなってるオプションなどを削除するといった変更を入れる予定です。そのため、ほとんどのユーザーには特に影響はないと思います。
+textlint weekで時間があれば、次のようなことをやっていきたいです。
+Office Hoursをやる?
+editorのアップデート?
+process.emitWarning(warning[, options])を使った非推奨アプローチについての記事を書く
+v14のリリース後に新しい機能改善などにもしていきたいのでフィードバックをお待ちしています。
+次のフォームからフィードバックを送ることができるので、是非お願いします！
+var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+textlint notes
+📝 Maintainer Month: なぜtextlintを作ったか
+https://efcl.info/2022/06/29/why-create-textlint/
+💖 textlintをサポートしてくれる方を募集しています
+https://github.com/sponsors/azu
+🔑 textlintのcontributorは 1Password を無料で利用できます
+https://efcl.info/2022/09/23/1password-teams-open-source/]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[週記#95,96合併号 1月3,4週 終わりと始まり]]></title>
         <id>hatenablog://entry/6801883189079019170</id>
@@ -12857,18 +12884,6 @@ GameGaz Daily 2023.11.2 first appeared on 大人のためのゲーム講座.]]><
 https://akkera102.sakura.ne.jp/test3/1.png]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[◾️メシ通さんにて、芸人仲間の食にまつわるエピソードをお届けいたします！好評だったら第2弾あり！拡散お願いします！第1回はTAIGAさん！はてなブックマークもよろしくね。]]></title>
-        <id>https://note.com/tarent26/n/nf0ebd9ae04b6</id>
-        <link href="https://note.com/tarent26/n/nf0ebd9ae04b6"/>
-        <updated>2023-11-01T01:27:22.000Z</updated>
-        <summary type="html"><![CDATA[メシ通こちらから無料で読めます！
-https://www.hotpepper.jp/mesitsu/entry/charming260/2023-00814
-続きをみる]]></summary>
-        <author>
-            <name>チャーミングじろうちゃん</name>
         </author>
     </entry>
     <entry>
