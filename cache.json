@@ -3429,6 +3429,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189077943772",
+          "author": null,
+          "description": "新卒で就職してから20年ほど、会社員としてほぼ隙間なく４つの会社に勤めてきましたが、昨年末で退職しましてこのたびフリーのランスになりました！\nスキル等の詳細はあとに書きますが、できる仕事の一例としてはこんな感じです。\nたとえば…\nメディアの編集者が足りない\nテック企業の技術ブログに編集者を入れたい\nおもしろ記事や体験レポートを書いてほしい\n自社オウンドメディアやコーポレートサイトに載せる記事を書いてほしい（インタビューなど）\n非ライター職や新人ライター向けに記事の書き方を講習してほしい\n電子工作の作例を作ってほしい（作品アイデアからお任せいただけるもの）\nヘボコンを開催してほしい、審査員をしてほしい（一般向けイベントのほか、社内イベントなども）\n電子工作ワークショップを開催してほしい、授業の講師をしてほしい\nレビュー記事を書いてほしい（自社メディア用、または当ブログにPR案件として掲載も検討可）\nごれんらくはこちら↓まで。お気軽にお問い合わせください…！！\nnomolk / 石川大樹 について - 連絡フォーム\nこの記事の目次\nたとえば…\n経緯\n業務経験\n編集\nライティング\nコンテンツ企画・立ち上げ・運営\nヘボコン運営\n電子工作\nシステム担当\nいま決まっているおしごと\nお仕事ください\nできること\nゴリゴリのプロです\nそこそこ経験あります\nちょっとできます\nできないこと\nたとえば…\n経緯\n昨年12月、老舗よみものサイトのデイリーポータルＺ（以下DPZ）が独立を発表しました。\ndailyportalz.jp\n僕はここ17年ほどずっとDPZの編集として働いてきまして、前勤務先もDPZの事業譲渡で入った会社です。この機会に退職し、以前からフリーランスに興味があったので、この機会に開業することにしました。\nランスを持った男女がフリートークをしている様子です\nなお、退職してもDPZを離…",
+          "link": "https://nomolk.hatenablog.com/entry/2024/01/29/121000",
+          "publishedOn": "2024-01-29T03:10:00.000Z",
+          "wordCount": 881,
+          "title": "フリーランスになりました（仕事ください）",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240126/20240126235504.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240126/20240126235504.jpg"
+        },
+        {
           "id": "hatenablog://entry/6801883189077514813",
           "author": null,
           "description": "AndroidのChromeでBASIC認証が出たときにIDとパスワードが自動入力されず困っているみなさんへ…\nURL欄に「chrome://flags/」と入れると設定画面が出てくるので、そこで「Fill passwords across affiliated websites.」を探してdisabled.に変更、Relaunchすると直るよ\n— メルセデスベン子 (@nomolk) 2024年1月23日\n   \nBASIC認証というのは非公開のWEBサイトで使われる簡易的な認証で、こういう感じでポップアップしてくるやつのことです。\n\n以前までは一度ログインしたサイトはこんなかんじで\n\nパスワードマネージャがIDとパスワードを覚えて自動入力してくれたと思うのですが、なぜか昨年12月頃からやってくれなくなりました。一回認証を閉じてパスワードマネージャを検索しなければいけないので面倒にもほどがある。その対処法です。\n①URL欄に「chrome://flags/」と入れて設定ページに移動します。\n\nWARNINGとか書いてある怖いページが出てきますが、このページはChromeのポリシー設定ページで、試験中の機能などのON/OFFが切り替えられます。\n②「Fill passwords across affiliated websites.」という項目を探したいので、一番上の検索欄で検索します。\n\nキャプチャでは「fill pass」と入れて2番目に目的の項目が表示されていますが、実は最速の検索ワードは「a」で、1番目に出てきます。RTAを走りたい方は「a」で行ってください。ただしバージョンにより異なる可能性があるので、「aff」あたりが安定ルートかもしれません。\n\n③DefaultのところをDisabledに変更します。\n④その後出てくるRelaunchボタンを押すとChromeが再起動します。（開いているタブ等は維持されます）\nこれでBASIC認証のIDとパスワードを自動入力してくれるようになります。やったね！\nなんなの？\nこの情報はこのフォーラムで発見したのですが、\ngoogleパスワード自動入力機能で、情報が記憶されているにも関わらず一部入力がされない - Android コミュニティ\n下記のchromium（Chromeで使用されているブラウザエンジン）のバグトラッカーの項目にリンクされています。\n1507118 - chromium - An open-source project to help move the web forward. - Monorail\n新機能の #filling-across-affiliated-websites-android に付随するバグのようなのですが、そもそも #filling-across-affiliated-websites-android とはどういう機能なのでしょうか。\nChrome で関連サイト間でログイン認証情報を共有できるようにします  |  Identity  |  Chrome for Developers\n1. 2 つのサイトが同じサイトの関係にあり、一方のサイトに 1 つ以上の認証情報が保存されていれば、もう一方のサイトの認証情報が自動入力されます。たとえば、www.example.com と m.example.com が同じサイトであるため、Chrome は保存済みの認証情報を 2 つのサイト間で共有し、保存したパスワードを別のサイトに提案できます。\nどうもサイト管理者側で紐づけを行うことで、複数のWEBサイト、またはWEBサイトとアプリの間でパスワードマネージャに記録した認証情報を共有できるという機能のようです。\nBASIC認証が自動入力されなくなったことで、てっきりプライバシー強化関連の機能なのかと思ったら、むしろ認証を楽にするための機能にバグが潜んでしまったということのようでした。\n本日のスマホなぜなに相談室は以上です。",
@@ -6428,16 +6443,6 @@
           "wordCount": null,
           "title": "【週刊プラグインレビュー】Solid State Logic / G3 MutiBusComp",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/122493616/rectangle_large_type_2_f2b3e63591b9fc1013d42f7f13f72923.png?width=800"
-        },
-        {
-          "id": "https://note.com/massmasaoki/n/ncb457ead6189",
-          "author": null,
-          "description": "今月最後の記事になります。\n２４時過ぎての更新になる旨、誠に申し訳ありません。\n今月も何を書こうかな～～と考えていた時に、RelabからMEA-2がリリースされて、個人的には結構ショッキングな仕上がりだったんですが・・・笑\nあまり話題になっていないということと、何がショックだったのか？について書かざる得ないな・・と思い書いている次第です。\n続きをみる",
-          "link": "https://note.com/massmasaoki/n/ncb457ead6189",
-          "publishedOn": "2023-10-31T15:26:30.000Z",
-          "wordCount": 2718,
-          "title": "【週刊プラグインレビュー】 Relab / MEA-2",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/120445769/rectangle_large_type_2_6a5cd3054d5e1936bc52730efc2c5820.png?width=800"
         }
       ]
     },
