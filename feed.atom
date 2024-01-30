@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-01-30T08:01:46.463Z</updated>
+    <updated>2024-01-30T09:01:46.836Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[はてなブログのヘッダメニューをリニューアルします]]></title>
+        <id>hatenablog://entry/6801883189077895532</id>
+        <link href="https://staff.hatenablog.com/entry/new_header_released"/>
+        <updated>2024-01-30T08:59:52.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、はてなにログインした状態でブログを開くと、記事を新しく書いたり、ブログを管理することができるヘッダメニューを表示しております。
+2013年より現在のデザインで表示しておりましたが、今回ヘッダメニューを見た目にも大きくリニューアルする事になりました。
+旧ヘッダメニュー
+新ヘッダメニュー
+
+リリース日：2024年2月1日（木）
+
+
+はてなブログトップページ、はてなブログ管理画面のヘッダメニューはリリースと同時に新しくなりますが、ブログ表示画面に関しては1ヶ月程度新しいヘッダーメニューを適用して確認ができる期間を設けます。デザインの設定によって表示に影響を与える可能性があるので、ご自身のブログにて表示崩れが起こらないかをご確認ください。確認期間中は、新しいヘッダーメニューの適用のオン・オフを任意に切り替えることができます。
+設定 > 詳細設定
+
+また、現在ブログ上部に表示されていた「読者になる」ボタンを一時的にテキストリンクとして記事の末尾へ移動させております。
+※今回のリニューアルには2024年末までにサードパーティCookieが廃止される事に向けた対応も含まれております。
+
+.entry-content img{
+border:solid 0.5px #c0c0c0 ;
+}]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vivado Vitis Floatingライセンスサーバーを使う & Systemdで自動起動できるようにする]]></title>
         <id>hatenablog://entry/6801883189079185811</id>
