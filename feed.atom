@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-02T02:06:50.840Z</updated>
+    <updated>2024-02-02T03:02:04.044Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12783,45 +12783,6 @@ www.nicovideo.jp
 …]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[移植14]]></title>
-        <id>hatenablog://entry/6801883189056097848</id>
-        <link href="https://akkera102.hatenablog.com/entry/2023/11/04/231936"/>
-        <updated>2023-11-04T14:19:36.000Z</updated>
-        <summary type="html"><![CDATA[冷静になって考えるとなんで今更”PC98”ゲームの移植を”GBA”でするのかなあと思います。常軌を逸しているとはまさにこのこと（＾＾；。うーん、これも昔の宿題というやつですかねー・・・。ToHeartGBAもカナンも時間的技術的に無理で諦めていたのに、今ならできるよって人参をぶら下げられて飛びついている感・・・。
-
-まあ、気を取り直して、ゲームの選択肢機能を排除する方向で作っているわけですが、コマンド一覧を作ってみて俯瞰するとやっぱりいらないなあというのが今日の感想です。
-// 選択肢コマンド一覧
-ST_OPE_TABLE OpeTable[] = {
-	{ "cs01_01.scn", "11" },
-	{ "cs01_02.scn", "11111" },
-	{ "cs01_03.scn", "12122" },
-	{ "cs01_04.scn", "1111" },
-	{ "cs01_05.scn", "111" },
-	{ "cs01_06.scn", "1111" },
-	{ "cs01_07.scn", "122221" },
-	{ "cs01_08.scn", "11112" },
-	{ "cs01_09.scn", "111111121313212122222211123" },
-	{ "cs01_10.scn", "1222" },
-	{ "cs01_11.scn", "111213222231323232323333333334343434343434" },
-	{ "cs01_12.scn", "1112222" },
-	{ "cs01_13.scn", "12122223" },
-	{ "cs01_14.scn", "1222" },
-	{ "cs01_15.scn", "1222" },
-	{ "cs01_16.scn", "122222" },
-	{ "cs01_17.scn", "1112132" },
-	{ "cs01_18.scn", "1213222222" },
-	{ "cs01_19.scn", "1112222" },
-	{ "cs01_20.scn", "11122222" },
-	{ "cs01_21.scn", "11111112122221213132222" },
-	{ "cs02_01.scn", "111111111" },
-左のスクリプトファイルに対して右が操作コマンドです。122とあれば選択肢一覧から「1番目、決定ボタン、2番目、決定ボタン、2番目、決定ボタン」をしないと次のスクリプトに遷移しません。ポチポチしない作りにして良かったと思います。
-
-今日の進捗　464中279まで完了。+70]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
