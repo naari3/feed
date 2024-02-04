@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-04T09:01:50.991Z</updated>
+    <updated>2024-02-04T10:01:50.747Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[社内データ基盤 as a Product : いい感じにやっていけ]]></title>
+        <id>hatenablog://entry/6801883189080444829</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2024/02/04/190000"/>
+        <updated>2024-02-04T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[筆者がスタートアップの「データ何でもチーム」をやってきた中で、考えてきて実践してきたことを吐き出します
+ポエムです
+data as a product
+データメッシュを実現する文脈の中で、「それぞれのドメインに分散されたチームが自身の提供するデータセットに対してproduct thinkingを適用するべきだ」とする考えが生まれてきた。
+For a distributed data platform to be successful, domain data teams must apply product thinking with similar rigor to the datasets that they provide; considering their data assets as their products and the rest of the organization's data scientists, ML and data engineers as their customers*1.
+（筆者日本語訳）分散データプラットフォームが成功するためには、ドメインごとに配置されたデータチームが自身の提供するデータセットに対してプロダクトシンキングを適用しなければならない。データアセットをプロダクトとして捉え、組織内の他のデータサイエンティストや機械学習エンジニア、データエンジニアを顧客とみなすのである。
+
+
+この考え方を「data as a product」といい、平たく言えば「データセットをプロダクトとみなし、プロダクトマネジメントをやっていこう」と主張する考え方である。国内の大規模エンタープライズの中でデータメッシュを実現できている企業は聞いたことがない2024年2月現在だが、データメッシュの文脈から外れたとしても、「data as a produc…]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Node.jsで機能やパッケージの非推奨メッセージを通知する方法]]></title>
         <id>https://efcl.info/2024/02/04/emitWarning/</id>
