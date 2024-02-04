@@ -4404,23 +4404,7 @@
       "title": "Stimulator",
       "feedUrl": "https://vaaaaaanquish.hatenablog.com/rss",
       "siteUrl": "https://vaaaaaanquish.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6801883189055586275",
-          "author": null,
-          "description": "- はじめに -\n最近、PythonのパッケージインストーラーであるpipをRustで書き直したripというツールが公開された。\ngithub.com\nripのREADME.mdには、flaskを題材に依存解決とインストールが1秒で終わるようなgifが貼られている。\nこの速さは一体どこから来ているのか調べた。\n- はじめに -\n- 宣伝 -\n- ripの成り立ち -\nAnaconda\nmamba-org\nprefix.dev\n- condaがinstallで行うこと -\n- mambaでの速度改善 -\n- ripに応用されたこと -\n- おわりに -\n　\n- 宣伝 -\n来週開催の技術書典15で「エムスリーテックブック５」が出ます。\n私の内容は「自作Python Package Manager入門」で、CLIツールの作り方から始まって40ページでPyPIの仕様やその背景となっている要素を把握しながら、lock、install、run、build、uploadといったサブコマンドを実装してPackage Manager開発者になろうという内容です。Python開発経験2年くらいあれば作れると思います。\n本誌ではまさかの「いろんな言語のパッケージマネージャ比べてみた」というパッケージマネージャネタ被りが起きており、こちらでは同僚がCargoやnpm、poetry、go mod、pnpm、yarnといったツールの内部実装を比較しています。本記事と同様にPackage Manager完全理解者の道を歩む事ができる本になっています。\ntechbookfest.org\n# オンライン開催\n会期：2023/11/11 (土) 〜2023/11/26（日）\n会場：技術書典オンラインマーケット\n# オフライン開催\n会期：2023/11/12 (日) 11:00～17:00\n会場：池袋・サンシャ…",
-          "link": "https://vaaaaaanquish.hatenablog.com/entry/2023/11/07/180723",
-          "publishedOn": "2023-11-07T09:07:23.000Z",
-          "wordCount": 980,
-          "title": "mambaやripのinstallが何故早いのか調べたメモ",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "うおとかの本棚",
