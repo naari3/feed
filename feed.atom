@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-04T05:01:57.735Z</updated>
+    <updated>2024-02-04T06:01:53.875Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Node.jsで機能やパッケージの非推奨メッセージを通知する方法]]></title>
+        <id>https://efcl.info/2024/02/04/emitWarning/</id>
+        <link href="https://efcl.info/2024/02/04/emitWarning/"/>
+        <updated>2024-02-04T03:10:00.000Z</updated>
+        <summary type="html"><![CDATA[ライブラリやツールなどを作っているときに、特定の機能やパッケージを非推奨にする場合があります。
+これらの非推奨はリポジトリ上のREADMEやIssueなどに書いても、利用者が気づかないことがあります。
+そのため、利用者が気付けるように非推奨の機能やパッケージを使った場合に警告を出す方法を紹介します。
+非推奨にはいくつかの段階があり、それに応じてやり方を変えられるので、それぞれの方法を紹介します。
+パッケージの非推奨化: npm deprecate <package> <message>
+コードレベルの非推奨化: JSDocタグの@deprecated
+実行時の非推奨化: process.emitWarning()
+パッケージの非推奨化: npm deprecate <package> <message>
+npmのパッケージレベルで、そのパッケージが非推奨であることを通知するにはnpm deprecateコマンドを使います。
+npm-deprecate
+
+npm deprecate <package> <message>
+
+
+<package>には非推奨にするパッケージ名を指定します。
+<message>には非推奨にする理由を書きます。
+@azu/test-packageパッケージを非推奨にする場合は次のようにします。
+
+npm deprecate @azu/test-package "@azu/test-package is deprecated. use new-someting instead." 
+
+
+非推奨とするパッケージのバージョンを指定することもできます。
+
+npm deprecate @azu/test-package@1.x "@azu/test-package@1.x is deprecated. use new-someting instead." 
+
+…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[TheFloW氏 TyphoonCon24でPS4カーネルの脆弱性について発表]]></title>
         <id>https://gamegaz.com/?p=40427</id>
@@ -15,6 +50,35 @@
 TheFloW氏 TyphoonCon24でPS4カーネルの脆弱性について発表 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[textlint v14をリリースしました]]></title>
+        <id>https://efcl.info/2024/02/04/textlint-v14/</id>
+        <link href="https://efcl.info/2024/02/04/textlint-v14/"/>
+        <updated>2024-02-04T01:49:00.000Z</updated>
+        <summary type="html"><![CDATA[textlint v14.0.0をリリースしました！
+リリースノート: textlint v14.0.0 · textlint
+変更ログ: Release v14.0.0 · textlint/textlint
+textlint v14.0.0は、Node.js v18.14.0以降が必要になります。
+Node.js 16は既にEOLなので、Node.js 16のサポートを終了しました。
+古いNode.jsを使っている場合は、LTS(Long Term Support)版のNode.jsにアップグレードする必要があります。
+Download | Node.js
+ユーザー向けの変更点
+基本的にはNode.jsのバージョンが18以降なら、特に影響がある変更はありません。
+Node.js 16のサポートを終了
+textlint v14はNode.js v18.14.0+が必要です。
+Node.js 18か20にアップグレードする必要があります。
+Download | Node.js
+また、ルールを開発する人向けのパッケージであるtextlint-scriptsはNode.js v18.19.0+を必要としています(最新のNode.js 18 LTSバージョン)。
+gulp-textlintをmonorepoから分離
+gulp-textlintをmonorepoから分離しました。
+chore!: move gulp-textlint to out of monorepo by azu · Pull Request #1319 · textlint/textlint
+textlint/gulp-textlint
+gulp-textlint はtextlintコアチームによってメンテナンスされていません。
+リポジトリとして分けたので、興味がある人は以下のIssueをチェックしてください…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

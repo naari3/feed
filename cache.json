@@ -7601,6 +7601,26 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2024/02/04/emitWarning/",
+          "author": null,
+          "description": "ライブラリやツールなどを作っているときに、特定の機能やパッケージを非推奨にする場合があります。\nこれらの非推奨はリポジトリ上のREADMEやIssueなどに書いても、利用者が気づかないことがあります。\nそのため、利用者が気付けるように非推奨の機能やパッケージを使った場合に警告を出す方法を紹介します。\n非推奨にはいくつかの段階があり、それに応じてやり方を変えられるので、それぞれの方法を紹介します。\nパッケージの非推奨化: npm deprecate <package> <message>\nコードレベルの非推奨化: JSDocタグの@deprecated\n実行時の非推奨化: process.emitWarning()\nパッケージの非推奨化: npm deprecate <package> <message>\nnpmのパッケージレベルで、そのパッケージが非推奨であることを通知するにはnpm deprecateコマンドを使います。\nnpm-deprecate\n\nnpm deprecate <package> <message>\n\n\n<package>には非推奨にするパッケージ名を指定します。\n<message>には非推奨にする理由を書きます。\n@azu/test-packageパッケージを非推奨にする場合は次のようにします。\n\nnpm deprecate @azu/test-package \"@azu/test-package is deprecated. use new-someting instead.\" \n\n\n非推奨とするパッケージのバージョンを指定することもできます。\n\nnpm deprecate @azu/test-package@1.x \"@azu/test-package@1.x is deprecated. use new-someting instead.\" \n\n…",
+          "link": "https://efcl.info/2024/02/04/emitWarning/",
+          "publishedOn": "2024-02-04T03:10:00.000Z",
+          "wordCount": 897,
+          "title": "Node.jsで機能やパッケージの非推奨メッセージを通知する方法",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
+          "id": "https://efcl.info/2024/02/04/textlint-v14/",
+          "author": null,
+          "description": "textlint v14.0.0をリリースしました！\nリリースノート: textlint v14.0.0 · textlint\n変更ログ: Release v14.0.0 · textlint/textlint\ntextlint v14.0.0は、Node.js v18.14.0以降が必要になります。\nNode.js 16は既にEOLなので、Node.js 16のサポートを終了しました。\n古いNode.jsを使っている場合は、LTS(Long Term Support)版のNode.jsにアップグレードする必要があります。\nDownload | Node.js\nユーザー向けの変更点\n基本的にはNode.jsのバージョンが18以降なら、特に影響がある変更はありません。\nNode.js 16のサポートを終了\ntextlint v14はNode.js v18.14.0+が必要です。\nNode.js 18か20にアップグレードする必要があります。\nDownload | Node.js\nまた、ルールを開発する人向けのパッケージであるtextlint-scriptsはNode.js v18.19.0+を必要としています(最新のNode.js 18 LTSバージョン)。\ngulp-textlintをmonorepoから分離\ngulp-textlintをmonorepoから分離しました。\nchore!: move gulp-textlint to out of monorepo by azu · Pull Request #1319 · textlint/textlint\ntextlint/gulp-textlint\ngulp-textlint はtextlintコアチームによってメンテナンスされていません。\nリポジトリとして分けたので、興味がある人は以下のIssueをチェックしてください…",
+          "link": "https://efcl.info/2024/02/04/textlint-v14/",
+          "publishedOn": "2024-02-04T01:49:00.000Z",
+          "wordCount": 775,
+          "title": "textlint v14をリリースしました",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2024/01/29/textlint-week/",
           "author": null,
           "description": "今週は、textlintの開発に集中する textlint week です。\n目標としては次のメージャーバージョンであるv14をリリースすることです。\nv14 roadmap · Issue #1200 · textlint/textlint\nv14では、今後に向けて古いAPIに非推奨のメッセージを出すことや、使われなくなってるオプションなどを削除するといった変更を入れる予定です。そのため、ほとんどのユーザーには特に影響はないと思います。\ntextlint weekで時間があれば、次のようなことをやっていきたいです。\nOffice Hoursをやる?\neditorのアップデート?\nprocess.emitWarning(warning[, options])を使った非推奨アプローチについての記事を書く\nv14のリリース後に新しい機能改善などにもしていきたいのでフィードバックをお待ちしています。\n次のフォームからフィードバックを送ることができるので、是非お願いします！\nvar d=document,w=\"https://tally.so/widgets/embed.js\",v=function(){\"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))};if(\"undefined\"!=typeof Tally)v();else if(d.querySelector('script[src=\"'+w+'\"]')==null){var s=d.createElement(\"script\");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}\ntextlint notes\n📝 Maintainer Month: なぜtextlintを作ったか\nhttps://efcl.info/2022/06/29/why-create-textlint/\n💖 textlintをサポートしてくれる方を募集しています\nhttps://github.com/sponsors/azu\n🔑 textlintのcontributorは 1Password を無料で利用できます\nhttps://efcl.info/2022/09/23/1password-teams-open-source/",
