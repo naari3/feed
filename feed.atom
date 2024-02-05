@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-05T12:02:04.236Z</updated>
+    <updated>2024-02-05T13:01:46.346Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[#jsprimer week: 2024-02-05 - 2024-02-11]]></title>
+        <id>https://efcl.info/2024/02/05/jsprimer-week/</id>
+        <link href="https://efcl.info/2024/02/05/jsprimer-week/"/>
+        <updated>2024-02-05T12:11:00.000Z</updated>
+        <summary type="html"><![CDATA[先週のtextlint weekに引き続き、今週はjsprimerの開発に集中するjsprimer weekです。
+目標としては、次のECMAScript仕様であるES2024に入るProposalが今週のTC39ミーティングで確定するので、それに合わせてjsprimerをどう更新するかを決めることです。
+ECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer
+ES2024の変更はそこまで大きなものはこなさそうなので大丈夫そうですが、Node.jsの変更が多くなってるのでNode.jsでCLIアプリ · JavaScript Primer #jsprimerをどうするかをちょっと考えたいです。
+markedjs v8へのアップデート · Issue #1694 · asciidwango/js-primer
+utils.parseArgsの利用法を追記 · Issue #1698 · asciidwango/js-primer
+また、企業でjsprimerの更新を支援できる仕組みとしてJavaScript Primer - Open Collectiveを作ってありますが、まだちゃんと運用できてないので、運用できるようにしたいです。
+Open Source Collective · Issue #1674 · asciidwango/js-primer
+Open Collectiveの資金を使って、jsprimerの更新を手伝ってくれた方にもちゃんと労力にあった報酬を支払えるようにしたいです。
+jsprimerの更新に興味があるって人は、それとなくコメントしてくれると嬉しいです。
+ECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer
+ECMAScriptに合わせた更新は毎年やっているので、どういうことをやってるかは次のIssueを見るとイメージできると思います。
+今年は、Array.groupByの更新ぐらいな気はしているので、そこまで大きな変更はないと思います。
+どちらかというとNode.jsに関する更新は、どう変えると読みやすいかは考える必要がありそうです。
+ECMAScript 2023の対応 · Issue #1658 · asciidwango/js-primer
+ECMAScript 2022の対応 · Issue #1337 · asciidwango/js-primer
+ECMAScript 2021の対応 · Issue #1220 · asciidwango/js-primer
+ECMAScript 2020の対応 · Issue #1145 · asciidwango/js-primer
+やる人が出てきたら、一回ミーティングをすると良いかもしれません。]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[24/2/5 お題箱回138：教科書の勉強、うるユニetc]]></title>
         <id>hatenablog://entry/6801883189080116287</id>
@@ -12930,17 +12958,6 @@ GameGaz Daily 2023.11.8 first appeared on 大人のためのゲーム講座.]]><
         <updated>2023-11-08T01:17:24.000Z</updated>
         <summary type="html"><![CDATA[Nintendo Switch後継機の情報として報道されている内容について任天堂の古川社長が「不正確だ」として否定しました。→→→この記事の続きを読む
 任天堂古川社長 Switch2の情報について「不正確」「事実ではない」と否定 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LightningMods_氏 PS5でバックアップ起動に成功]]></title>
-        <id>https://gamegaz.com/?p=39808</id>
-        <link href="https://gamegaz.com/2023110839808/"/>
-        <updated>2023-11-08T00:24:24.000Z</updated>
-        <summary type="html"><![CDATA[LightningMods_氏がPS5のバックアップゲームの起動に成功したことを報告していました。→→→この記事の続きを読む
-LightningMods_氏 PS5でバックアップ起動に成功 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
         </author>

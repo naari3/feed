@@ -7630,6 +7630,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2024/02/05/jsprimer-week/",
+          "author": null,
+          "description": "先週のtextlint weekに引き続き、今週はjsprimerの開発に集中するjsprimer weekです。\n目標としては、次のECMAScript仕様であるES2024に入るProposalが今週のTC39ミーティングで確定するので、それに合わせてjsprimerをどう更新するかを決めることです。\nECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer\nES2024の変更はそこまで大きなものはこなさそうなので大丈夫そうですが、Node.jsの変更が多くなってるのでNode.jsでCLIアプリ · JavaScript Primer #jsprimerをどうするかをちょっと考えたいです。\nmarkedjs v8へのアップデート · Issue #1694 · asciidwango/js-primer\nutils.parseArgsの利用法を追記 · Issue #1698 · asciidwango/js-primer\nまた、企業でjsprimerの更新を支援できる仕組みとしてJavaScript Primer - Open Collectiveを作ってありますが、まだちゃんと運用できてないので、運用できるようにしたいです。\nOpen Source Collective · Issue #1674 · asciidwango/js-primer\nOpen Collectiveの資金を使って、jsprimerの更新を手伝ってくれた方にもちゃんと労力にあった報酬を支払えるようにしたいです。\njsprimerの更新に興味があるって人は、それとなくコメントしてくれると嬉しいです。\nECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer\nECMAScriptに合わせた更新は毎年やっているので、どういうことをやってるかは次のIssueを見るとイメージできると思います。\n今年は、Array.groupByの更新ぐらいな気はしているので、そこまで大きな変更はないと思います。\nどちらかというとNode.jsに関する更新は、どう変えると読みやすいかは考える必要がありそうです。\nECMAScript 2023の対応 · Issue #1658 · asciidwango/js-primer\nECMAScript 2022の対応 · Issue #1337 · asciidwango/js-primer\nECMAScript 2021の対応 · Issue #1220 · asciidwango/js-primer\nECMAScript 2020の対応 · Issue #1145 · asciidwango/js-primer\nやる人が出てきたら、一回ミーティングをすると良いかもしれません。",
+          "link": "https://efcl.info/2024/02/05/jsprimer-week/",
+          "publishedOn": "2024-02-05T12:11:00.000Z",
+          "wordCount": 615,
+          "title": "#jsprimer week: 2024-02-05 - 2024-02-11",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2024/02/04/emitWarning/",
           "author": null,
           "description": "ライブラリやツールなどを作っているときに、特定の機能やパッケージを非推奨にする場合があります。\nこれらの非推奨はリポジトリ上のREADMEやIssueなどに書いても、利用者が気づかないことがあります。\nそのため、利用者が気付けるように非推奨の機能やパッケージを使った場合に警告を出す方法を紹介します。\n非推奨にはいくつかの段階があり、それに応じてやり方を変えられるので、それぞれの方法を紹介します。\nパッケージの非推奨化: npm deprecate <package> <message>\nコードレベルの非推奨化: JSDocタグの@deprecated\n実行時の非推奨化: process.emitWarning()\nパッケージの非推奨化: npm deprecate <package> <message>\nnpmのパッケージレベルで、そのパッケージが非推奨であることを通知するにはnpm deprecateコマンドを使います。\nnpm-deprecate\n\nnpm deprecate <package> <message>\n\n\n<package>には非推奨にするパッケージ名を指定します。\n<message>には非推奨にする理由を書きます。\n@azu/test-packageパッケージを非推奨にする場合は次のようにします。\n\nnpm deprecate @azu/test-package \"@azu/test-package is deprecated. use new-someting instead.\" \n\n\n非推奨とするパッケージのバージョンを指定することもできます。\n\nnpm deprecate @azu/test-package@1.x \"@azu/test-package@1.x is deprecated. use new-someting instead.\" \n\n…",
@@ -9808,16 +9818,6 @@
           "publishedOn": "2023-11-08T01:17:24.000Z",
           "wordCount": null,
           "title": "任天堂古川社長 Switch2の情報について「不正確」「事実ではない」と否定",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=39808",
-          "author": "mamosuke",
-          "description": "LightningMods_氏がPS5のバックアップゲームの起動に成功したことを報告していました。→→→この記事の続きを読む\nLightningMods_氏 PS5でバックアップ起動に成功 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023110839808/",
-          "publishedOn": "2023-11-08T00:24:24.000Z",
-          "wordCount": null,
-          "title": "LightningMods_氏 PS5でバックアップ起動に成功",
           "imageUrl": null
         }
       ]
