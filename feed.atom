@@ -2,10 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-05T15:01:56.338Z</updated>
+    <updated>2024-02-05T16:01:59.979Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DAM XG1000に入っているLinuxで遊ぶ方法]]></title>
+        <id>hatenablog://entry/6801883189080903425</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2024/02/06/001829"/>
+        <updated>2024-02-05T15:18:29.000Z</updated>
+        <summary type="html"><![CDATA[前回、うっかりJOYSOUNDのマシンを買って色々遊べたので、
+honeylab.hatenablog.jp
+続いてDAMの XG1000を買ったのですが、いじり過ぎてしまい壊してしまいました。
+
+満を持して、もう一台XG1000を買ったので丁寧にいじっています。
+
+DAM XG1000はLinuxが使用され、その上でカラオケシステムが動作しています。
+せっかくLinuxが入っているのですが、自動でそのような動きをしているため、自由に使うことができません。
+HDDを引っこ抜いて書き換えてあれやこれやする、というところで壊したので、
+今回はできるだけ分解せず、ソフトウェアだけであれこれする方法が確立できたので
+こっそり紹介します。
+ 
+背面、コントロール端子のこの２ピンがそれぞれRS-232C(ttyS0)のRXとTXです。
+TTLやCMOSの5V/3V - 0V ではなく、RS-232Cレベルですので気をつけましょう
+
+ブートローダの起動中、のメッセージを見ながら、徐にスペースキーを押すと
+YAMON> のプロンプトで停止します。
+
+ここで
+YAMON> pflash probe
+YAMON> xrpc 0xac080090
+YAMON> load zbf 0xb3000000
+を実行すると、Linuxカーネルが読み込まれます。
+
+ここで、
+YAMON> go . "console=ttyS0 rdinit=/bin/sh"
+する
+と、直接busyboxのshが立ち上がります。
+
+何が起きたかというと、内蔵Flashに記録されているLinuxカーネルにはrootfsとしてinitrdというミニファイルシステムが添付されています。
+(initrdの中身)
+
+ 
+何も指定しなければinitrdの中のinitが起動して、/etc/init.d/ からカラオケシステムが起動しますが…]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[1]]></title>
         <id>https://note.com/sakurei_2015/n/n1afe4d0445b9</id>

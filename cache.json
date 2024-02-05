@@ -1846,6 +1846,21 @@
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189080903425",
+          "author": null,
+          "description": "前回、うっかりJOYSOUNDのマシンを買って色々遊べたので、\nhoneylab.hatenablog.jp\n続いてDAMの XG1000を買ったのですが、いじり過ぎてしまい壊してしまいました。\n\n満を持して、もう一台XG1000を買ったので丁寧にいじっています。\n\nDAM XG1000はLinuxが使用され、その上でカラオケシステムが動作しています。\nせっかくLinuxが入っているのですが、自動でそのような動きをしているため、自由に使うことができません。\nHDDを引っこ抜いて書き換えてあれやこれやする、というところで壊したので、\n今回はできるだけ分解せず、ソフトウェアだけであれこれする方法が確立できたので\nこっそり紹介します。\n \n背面、コントロール端子のこの２ピンがそれぞれRS-232C(ttyS0)のRXとTXです。\nTTLやCMOSの5V/3V - 0V ではなく、RS-232Cレベルですので気をつけましょう\n\nブートローダの起動中、のメッセージを見ながら、徐にスペースキーを押すと\nYAMON> のプロンプトで停止します。\n\nここで\nYAMON> pflash probe\nYAMON> xrpc 0xac080090\nYAMON> load zbf 0xb3000000\nを実行すると、Linuxカーネルが読み込まれます。\n\nここで、\nYAMON> go . \"console=ttyS0 rdinit=/bin/sh\"\nする\nと、直接busyboxのshが立ち上がります。\n\n何が起きたかというと、内蔵Flashに記録されているLinuxカーネルにはrootfsとしてinitrdというミニファイルシステムが添付されています。\n(initrdの中身)\n\n \n何も指定しなければinitrdの中のinitが起動して、/etc/init.d/ からカラオケシステムが起動しますが…",
+          "link": "https://honeylab.hatenablog.jp/entry/2024/02/06/001829",
+          "publishedOn": "2024-02-05T15:18:29.000Z",
+          "wordCount": 596,
+          "title": "DAM XG1000に入っているLinuxで遊ぶ方法",
+          "enclosure": {
+            "url": "https://pbs.twimg.com/media/GElFx35agAAHvFv?format=jpg&name=360x360",
+            "type": "",
+            "length": "0"
+          },
+          "imageUrl": "https://pbs.twimg.com/media/GElFx35agAAHvFv?format=jpg&name=360x360"
+        },
+        {
           "id": "hatenablog://entry/6801883189073531693",
           "author": null,
           "description": "やべえ気になる pic.twitter.com/e8m5WUdNXT\n2023年12月27日\n\n\n近場のハードオフでHyperJOY V2の筐体を発見しました。\n知ってる人は知ってますが、私はカラオケとかの機器への執着が強く、\n過去にこいつの先代機種をあれやこれやとしたような記憶があります。\nここであったが１００年目（多分５倍サバ読んだ）\nジャンクコーナーで一通り動作確認を行い、大枚叩いて買ってきました。\n \n\nおまけが付いてた\nということで、これから何が起きるかみなさんお分かりだと思いますが、普段買っているものより多少値段がアレなことと、中身とか、やる事とかがちょっとアレげなことが予想されます。ので、バチバチな内容公開を有料コンテンツ化することを考えています。本体代ぐらいにしたいw pic.twitter.com/muIl1POoSG\n2023年12月27日\n\n\n \n早速分解といきます。\nその前に背面端子を眺めてみます。実は店舗にこいつがある時から気になってたんですが、この外部楽器、っていう端子、Macのシリアルと同じコネクタなんですよね。\nなので、実はここからMIDIが出てたりしないのかな、と思っていたことがあるのですが、果たしてどうなるか。\n \nでは分解です。\n結構むずい。あちこち開けてみていたところ、フロントパネルを開けると割と簡単にバラせることがわかりました。手遅れ。\n\n主要基板はスロットに差し込む形式で重ねられており、多ピンケーブルで接続されていました。\n\nメイン基板。CPUはIBMのDigitalSetTopBox用としてリリースされたものらしいです。\nCPUの左側には映像出力用のNTSCデコーダ、SAAなんとか、あとは下の方に１６ピンのJTAGっぽいものが出ていますが、ちょっとどうにかできる気はしません。\nハードディスクが２台とコンパクトフラッシュ、そして謎…",

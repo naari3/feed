@@ -78,6 +78,59 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
+              rel="noopener">honeylab&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">DAM XG1000に入っているLinuxで遊ぶ方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2024/02/06/001829" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前回、うっかりJOYSOUNDのマシンを買って色々遊べたので、
+honeylab.hatenablog.jp
+続いてDAMの XG1000を買ったのですが、いじり過ぎてしまい壊してしまいました。
+
+満を持して、もう一台XG1000を買ったので丁寧にいじっています。
+
+DAM XG1000はLinuxが使用され、その上でカラオケシステムが動作しています。
+せっかくLinuxが入っているのですが、自動でそのような動きをしているため、自由に使うことができません。
+HDDを引っこ抜いて書き換えてあれやこれやする、というところで壊したので、
+今回はできるだけ分解せず、ソフトウェアだけであれこれする方法が確立できたので
+こっそり紹介します。
+ 
+背面、コントロール端子のこの２ピンがそれぞれRS-232C(ttyS0)のRXとTXです。
+TTLやCMOSの5V/3V - 0V ではなく、RS-232Cレベルですので気をつけましょう
+
+ブートローダの起動中、のメッセージを見ながら、徐にスペースキーを押すと
+YAMON&gt; のプロンプトで停止します。
+
+ここで
+YAMON&gt; pflash probe
+YAMON&gt; xrpc 0xac080090
+YAMON&gt; load zbf 0xb3000000
+を実行すると、Linuxカーネルが読み込まれます。
+
+ここで、
+YAMON&gt; go . &quot;console&#x3D;ttyS0 rdinit&#x3D;/bin/sh&quot;
+する
+と、直接busyboxのshが立ち上がります。
+
+何が起きたかというと、内蔵Flashに記録されているLinuxカーネルにはrootfsとしてinitrdというミニファイルシステムが添付されています。
+(initrdの中身)
+
+ 
+何も指定しなければinitrdの中のinitが起動して、/etc/init.d/ からカラオケシステムが起動しますが…</span>
+                  </div>
+                  <img src="https://pbs.twimg.com/media/GElFx35agAAHvFv?format&#x3D;jpg&amp;name&#x3D;360x360" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sakurei_2015" target="_blank"
               rel="noopener">さくれい</a></h3>
           <section class="articles-per-source">
@@ -20536,7 +20589,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-02-05T15:01:56.295Z">2024-02-05T15:01:56.295Z</time>
+    <time id="build-timestamp" datetime="2024-02-05T16:01:59.926Z">2024-02-05T16:01:59.926Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
