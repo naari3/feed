@@ -7603,6 +7603,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/do-you-use-entity",
+          "author": null,
+          "description": "定期的に DDD やクリーンアーキテクチャなどを題材にした記事が盛り上がっているのを見ていると、いま長年の疑問を書けば答えてくれるのではと思って書いてみる。\n何に困っているかというと、 いわゆるレポジトリ層が持つ create/update 関数の引数は Entity…",
+          "link": "https://blog.ojisan.io/do-you-use-entity",
+          "publishedOn": "2024-02-08T00:00:00.000Z",
+          "wordCount": 1011,
+          "title": "レイヤードアーキテクチャでデータを作成・編集するときの設計が分からん",
+          "imageUrl": "https://blog.ojisan.io/static/51c6946b48eb4b8c772a3fbd15ae51bc/828ab/visual.png"
+        },
+        {
           "id": "https://blog.ojisan.io/integration-test-bunnri",
           "author": null,
           "description": "新規開発の設計支援や古いコードベースを甦らせて欲しいという相談をもらったときに、最初にちょろっとコードだけお手本的なコードを書いてから引き渡しているのだが、そのときに必ずテストを書くようにしている。 3,…",
