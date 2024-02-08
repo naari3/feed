@@ -7640,6 +7640,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2024/02/08/javascript-info/",
+          "author": null,
+          "description": "個人的なJavaScriptの情報収集の方法についてまとめてみます。\nJSer.infoなどをやっているので、JavaScriptの情報については色々な情報源を見るようにしています。\nJSer.infoの範囲の中での情報源については、次の記事でまとめています。\nJSer.info 13周年: JavaScriptの情報源を整理する - JSer.info\nこの記事では、少しスコープを広げてJavaScriptの情報収集についてまとめてみます。\n\nかなりスコープが広がってしまうので、万人向けの方法ではなく、個人的な情報収集方法としてまとめています。\nこの記事では、膨大な情報の中から見つけるというアプローチをとっているので、人によって向き不向きがあると思います。\n情報収集の方法\n情報の元となる情報源はさまざまなサイトや人になると思います。\nしかし、そのサイトや人ごとに見ていくというのはかなり大変で、それ自体が大変になると見なくなる可能性が高いと思います。\nそのため、情報収集においては、情報を自分が見やすいと思える場所に集めることが重要だと考えています。\n人によってこの集める場所は異なりため、Twitter(X)、RSSリーダー、Notion、SlackやDiscordなど色々な場所があると思います。\n自分の場合はRSSリーダーに情報が集まるようにしています。\nRSSリーダー\n技術的なサイトにはRSSフィードがついてることが多いので、自分はRSSリーダーにRSSフィードを集約しています。\nまた、後述しますがRSSフィードがないものも、欲しい情報源からRSSフィードを作るなどとしてRSSリーダーに集約しています。\nRSSリーダーにはInoreaderを利用しています。\nInoreaderのフロントエンドとしてIrodrを使っています。\nLDRライクなRSSリーダのIrodr 1.0…",
+          "link": "https://efcl.info/2024/02/08/javascript-info/",
+          "publishedOn": "2024-02-08T04:52:00.000Z",
+          "wordCount": 934,
+          "title": "私のJavaScriptの情報収集法 2024年版",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2024/02/05/jsprimer-week/",
           "author": null,
           "description": "先週のtextlint weekに引き続き、今週はjsprimerの開発に集中するjsprimer weekです。\n目標としては、次のECMAScript仕様であるES2024に入るProposalが今週のTC39ミーティングで確定するので、それに合わせてjsprimerをどう更新するかを決めることです。\nECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer\nES2024の変更はそこまで大きなものはこなさそうなので大丈夫そうですが、Node.jsの変更が多くなってるのでNode.jsでCLIアプリ · JavaScript Primer #jsprimerをどうするかをちょっと考えたいです。\nmarkedjs v8へのアップデート · Issue #1694 · asciidwango/js-primer\nutils.parseArgsの利用法を追記 · Issue #1698 · asciidwango/js-primer\nまた、企業でjsprimerの更新を支援できる仕組みとしてJavaScript Primer - Open Collectiveを作ってありますが、まだちゃんと運用できてないので、運用できるようにしたいです。\nOpen Source Collective · Issue #1674 · asciidwango/js-primer\nOpen Collectiveの資金を使って、jsprimerの更新を手伝ってくれた方にもちゃんと労力にあった報酬を支払えるようにしたいです。\njsprimerの更新に興味があるって人は、それとなくコメントしてくれると嬉しいです。\nECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer\nECMAScriptに合わせた更新は毎年やっているので、どういうことをやってるかは次のIssueを見るとイメージできると思います。\n今年は、Array.groupByの更新ぐらいな気はしているので、そこまで大きな変更はないと思います。\nどちらかというとNode.jsに関する更新は、どう変えると読みやすいかは考える必要がありそうです。\nECMAScript 2023の対応 · Issue #1658 · asciidwango/js-primer\nECMAScript 2022の対応 · Issue #1337 · asciidwango/js-primer\nECMAScript 2021の対応 · Issue #1220 · asciidwango/js-primer\nECMAScript 2020の対応 · Issue #1145 · asciidwango/js-primer\nやる人が出てきたら、一回ミーティングをすると良いかもしれません。",
