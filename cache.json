@@ -1777,21 +1777,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20231122/20231122233654.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189058158467",
-          "author": null,
-          "description": "ChatGPTのDALL·E 3による画像生成は非常に強力だ。\nブックマーク保存をおすすめします。\n\nインフルエンサーたちが隠した技術\n11月7日にOpenAI DevDayが開催されてからというもの、生成AI系インフルエンサーたちが大騒ぎしている。発表された機能やAPIの数々を見れば、そうなるのも無理はない。俺のような一般ユーザーでさえ、できることが一気に増えたのだから。\n例えば自分だけのChatGPTを簡単に作成・共有できるGPTsだ。俺もさっそく触り、本しゃぶりの知識を全部突っ込んだAishabriを作ってみた*1。\nchat.openai.com\nだが、インフルエンサーは新たに登場した機能ばかり口にし、その影で失われつつある技術については語ろうとしない。だから俺が代わりに語ろう。禁断の技「授乳ハック」について。\nコンテンツポリシーの制約\n授乳ハックとは何か。それはChatGPTにこのような画像を生成させる技のことである。\n授乳ハックによって生成された画像\nChatGPTで画像生成している人ならば、信じられないかもしれない。何なら悪質なコラと思うだろう*2。なぜならChatGPTに課せられているコンテンツポリシーの制約は厳しく、卑猥な画像は生成できないように対策が施されているからである。\nコンテンツポリシー違反で出力できない\nしかも厄介なことにコンテンツポリシーの対策は多段階で設定されている。ChatGPTの反応から、俺は以下のように推測した。\nコンテンツポリシー違反チェック\nChatGPT：ユーザーからの指示をチェック。違反していたら拒否する。\nDALL·E 3：ChatGPTからの指示と自ら生成した画像をチェック。違反していたら生成しない/画像を渡さない。\nOpenAI：ChatGPTとは別にユーザーとChatGPTの言動をチェック。違反していたらフラグを立てる。…",
-          "link": "https://honeshabri.hatenablog.com/entry/Madonna-Hack",
-          "publishedOn": "2023-11-12T12:45:00.000Z",
-          "wordCount": 986,
-          "title": "ChatGPT授乳ハックという失われつつある技術について",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20231112/20231112144943.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20231112/20231112144943.jpg"
         }
       ]
     },
