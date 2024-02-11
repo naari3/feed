@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-11T11:01:51.985Z</updated>
+    <updated>2024-02-11T12:01:50.508Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[24/2/11 お題箱回139：生成AI記事の後処理]]></title>
+        <id>hatenablog://entry/6801883189081132285</id>
+        <link href="https://saize-lw.hatenablog.com/entry/2024/02/11/200825"/>
+        <updated>2024-02-11T11:08:25.000Z</updated>
+        <summary type="html"><![CDATA[お題箱139
+ちょっと前に書いた生成AIの記事に関する投稿が多く来ているのでその回です。
+saize-lw.hatenablog.com
+ 
+
+815.学術用語の学習(learning)についてどうしても日常語から比喩的に借用せずに造語しなければいけない(それでいてその語を業界で広く定着させられる)とすればどんな語を割り当てますか？英語でも日本語でも何語でもいいです。ちなみに私ならクラムボンを使います。
+元記事に「代替ワードは特にない」とは書きましたが、訓練とかフィッティングとか（パラメタ）調整みたいな呼び方も一応あって、なんかその辺をいい感じに組み合わせて「訓調」とか呼んでもよかったのかもしれないですね。個別具体的なアルゴリズムではなくそれらを取りまとめるような射程の広いワードなので、全体としては造語でも構成要素には意味が辿れる程度の配慮があった方がよいとは思います。
+ 
+
+816.学習と推論というのは圧縮と解凍とは全然別ジャンルなのでしょうか？それともその内の一つと言えるようなものなのでしょうか？「生成AIにより高い圧縮率を実現」という記事を見かけた事があるのですが、これは「圧縮のような事」という比喩のような表現なのでしょうか？
+これはかなり難しい質問で、人によって答えが分かれそうですが一応僕の認識を書きます。
+まず少なくともクラシカルな理論の枠組みとしては全くの別ジャンルで、学習と推論は機械学習、圧縮と解凍は符号理論のテリトリーです。とはいえ機械学習は数値列間の関係を扱う理論、符号理論は数値列の表示や変換について扱う理論であるため、かなり近くに隣接していて実質的には同じ振る舞いができることも多いです。
+特に機械学習の中でも複雑な内部状態を持つニューラルネットワークでは大量の計算を介して実質的に圧縮と解凍を行えることがよく知られており、それに特化させたオートエンコーダと…]]></summary>
+        <author>
+            <name>LWのサイゼリヤ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[体の中で待機するいくつかの場所]]></title>
         <id>https://note.com/kazumakawauchi/n/n46758508cfb7</id>
@@ -13013,17 +13035,6 @@ www.nicovideo.jp
         <summary type="html"><![CDATA[僕の心のヤバイやつ Karte.133 僕は板挟み - 2024年1月TVアニメ第二期放送決定!! 累計333万部突破！SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!!]]></summary>
         <author>
             <name>桜井のりお</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.11.14]]></title>
-        <id>https://gamegaz.com/?p=39855</id>
-        <link href="https://gamegaz.com/2023111439855/"/>
-        <updated>2023-11-13T23:36:17.000Z</updated>
-        <summary type="html"><![CDATA[ソニーの特許,PS5 Backup payload(ps5-db-backup),Saturn2PS4,PSVR2のSteamVRドライバー,ARK-4 v1699835781,flashcard-bootstrap v2.0.0,Indie World 2023.11.15,amiberry Latest Preview Build,REPL4Y PC,RetroVM(Retro Virtual Machine) v2.1.11,Xenia Canary experimental,Xbox-CPU-Interposer→→→この記事の続きを読む
-GameGaz Daily 2023.11.14 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
