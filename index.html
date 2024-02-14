@@ -78,6 +78,25 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/" target="_blank"
+              rel="noopener">メルカリエンジニアリングブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Elasticsearchのパフォーマンス問題をプロファイラを使って解決する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://engineering.mercari.com/blog/entry/20240214-87df8d95e9/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>search infra teamのmrkm4ntrです。我々のチームではElasticsearchをKubernetes上で多数運用しています。歴史的経緯によりElasticsearchのクラスタは全てElastics […]</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
               rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
           <section class="articles-per-source">
@@ -18820,67 +18839,6 @@ GameGaz Daily 2023.11.17 first appeared on 大人のためのゲーム講座.</s
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
-              rel="noopener">honeylab&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Chord Trackerから楽譜を受信するアプリ「CT Receiver 」ver.2 できた！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2023/11/16/234207" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>honeylab.hatenablog.jp
- 
-上のリンクにあるように、ChordTrackerの通信プロトコルを掌握したため、
-完全にYAMAHAのキーボードのフリをして楽譜を受信できるようになりました。
-受信した楽譜はコード情報を抽出したテキストデータ、もしくは
-コード情報と和音を配置した楽譜であるMusicXML形式のファイルとして出力できます。
-
-
-CT Receiver
-Hiromitsu Niituma
-Music
-Free
-
-apps.apple.com
-どうしても、２台の端末が必要になってしまうのが残念ですが、
-何かしらで音楽をがっつりやってるならどうにか２台調達できるんじゃないですかね。
-ホストPCがMacであれば、Mac上でこのiPhone用アプリを動かして、
-USBケーブルでiPhoneを接続してChordTrackerを起動して、
-Mac側で楽譜データを受信できます。
-（Mac側のAudioMIDI設定で、iPhoneをオーディオ・MIDIデバイスとして有効にさせると、Mac側で起動したCT ReceiverからiPhoneのChordTracker が見えるようになります。）
-AndoridのChordTrackerからでも送信できるはずです。
-こんな感じで接続します。
-
-どうにかしてChordTrackerとCT ReceiverをMIDIのレイヤで接続できれば
-あとはどうにかなるはずです。
-まず、「CT Receiver」を起動し、「BLE Start」でMIDIデバイスとして探索させます
-ChordTrackerからBLE MIDIデバイスを探して接続します。
-ChotdTrackerの楽器として「CT Receiver」が表示されたら成功です。
-もしくは、BLEではなく、USB－MIDIなどを経由して接続してもいいです。
- 
-簡単に使ってみる手順の動画を作ってみました
-youtu.be
- 
-CT Receiverで受信したファイルはアプリのデータフォルダ内に保存されています。
-Target Fileとして過去に受信したファイルを選択すると、そのデータを開いて
-コードデータと楽譜データを出力することができます
-（一度転送したデータを開くときはChord Trackerと接続する必要はありません）
-さて、これ使ってくれる人いるかな…
-わかんなかったらTwitterとかで聞いてね！
-Tweets by bakueikozo
-
-twitter.com</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/9db0ad1dfd02e89673714a6507472578f843036d/enlarge&#x3D;0;height&#x3D;200;version&#x3D;1;width&#x3D;200/https%3A%2F%2Fis1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple116%2Fv4%2Fce%2F26%2F8e%2Fce268e04-3fd5-94c1-b67b-f3379d4ce486%2FAppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png%2F100x100bb.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20758,7 +20716,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-02-14T02:07:27.785Z">2024-02-14T02:07:27.785Z</time>
+    <time id="build-timestamp" datetime="2024-02-14T03:01:56.873Z">2024-02-14T03:01:56.873Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
