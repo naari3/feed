@@ -7582,6 +7582,16 @@
       "siteUrl": "https://blog.wesleyac.com",
       "articles": [
         {
+          "id": "https://blog.wesleyac.com/posts/e2e-testing-email",
+          "author": null,
+          "description": "I came up with a really slick trick to write E2E tests that deal with sending/receiving emails recently. This is the sort of thing that seems like it's probably usually sort of a nightmare — I wanted to write a test for registering a account on a website, where part of the flow was clicking on a validation link in a email.\nThe slick trick is a test SMTP server which is also a HTTP server. It's 39 lines of Javascript and extraordinarily simple:\nconst SMTPServer = require(\"smtp-server\").SMTPServer;\nconst http = require(\"http\");\n\nlet emails = {};\n\nnew SMTPServer({\n  authOptional: true,\n  onData: (stream, session, callback) => {\n    const chunks = [];\n    stream.on('data', (chunk) => chunks.push(Buffer.from(chunk)));\n    stream.on('end', () => {\n      const data = Buffer.concat(chunks).toStrin…",
+          "link": "https://blog.wesleyac.com/posts/e2e-testing-email",
+          "publishedOn": "2024-02-16T05:00:00.000Z",
+          "wordCount": 528,
+          "title": "End-to-end testing emails",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.wesleyac.com/posts/motivating-x3dh",
           "author": null,
           "description": "Signal uses a protocol called \"Extended Triple Diffie-Hellman\" (X3DH) for key agreement1. This essentially takes standard Diffie-Hellman key exchange, and enables it to be used where one party may be offline while they're receiving a message, while providing forward secrecy.\nWhile the paper clearly explains how to implement X3DH, the why is slightly less clear. In this post, I'll briefly explain how X3DH works, then investigate what security property each of the steps involved is aimed at providing, and why particular choices were made around the signature algorithm.\nA quick summary of X3DH\n(This summary requires a understanding of Diffie-Hellman key exchange — if you are unfamiliar or need a refresher, take a look at this footnote2)\nIn X3DH, the receiving party (who may be offline when th…",
@@ -8576,6 +8586,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=40519",
+          "author": "mamosuke",
+          "description": "Nintendo Direct延期,nx.js v0.0.36,PS4JbEmu v2.0,PS4 ezRemote Client v1.18,ARK-4 v1708130052,RetroArch Wii v1.7.9のLibretroコア,Xenia Canary_experimental,yuzu-android-251,DS994a v1.7,MovianM7-7.0.30→→→この記事の続きを読む\nGameGaz Daily 2024.2.17 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024021740519/",
+          "publishedOn": "2024-02-17T03:19:03.000Z",
+          "wordCount": 1517,
+          "title": "GameGaz Daily 2024.2.17",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=40514",
           "author": "mamosuke",

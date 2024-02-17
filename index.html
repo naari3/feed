@@ -83,6 +83,19 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2024.2.17</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024021740519/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Nintendo Direct延期,nx.js v0.0.36,PS4JbEmu v2.0,PS4 ezRemote Client v1.18,ARK-4 v1708130052,RetroArch Wii v1.7.9のLibretroコア,Xenia Canary_experimental,yuzu-android-251,DS994a v1.7,MovianM7-7.0.30→→→この記事の続きを読む
+GameGaz Daily 2024.2.17 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
                 <summary class="article-expander__title">【噂】PS5 Proの価格はドライブレスモデルで500ドル</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024021740514/" target="_blank"
                   rel="noopener">
@@ -397,6 +410,38 @@ const uuid &#x3D; Atarabi.mouse.hook({ button: &#x27;Middle&#x27;, count: 2 }, c
 カラースウォッチの試作。スクリプトのパネル上でミドルクリックをすると、色パラメータを選択もしくは選択したエフェクト内に初期値から変更済みの色パラメータがあればその色を、それ以外の場合かつ平面レイヤーを選択していればその平面の色を取得する。削除したい場合は、当該色の上でダブルクリックをする。</span>
                   </div>
                   <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kareobana/20240216/20240216200414.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.wesleyac.com" target="_blank"
+              rel="noopener">Wesley Aptekar-Cassels</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">End-to-end testing emails</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.wesleyac.com/posts/e2e-testing-email" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>I came up with a really slick trick to write E2E tests that deal with sending/receiving emails recently. This is the sort of thing that seems like it&#x27;s probably usually sort of a nightmare — I wanted to write a test for registering a account on a website, where part of the flow was clicking on a validation link in a email.
+The slick trick is a test SMTP server which is also a HTTP server. It&#x27;s 39 lines of Javascript and extraordinarily simple:
+const SMTPServer &#x3D; require(&quot;smtp-server&quot;).SMTPServer;
+const http &#x3D; require(&quot;http&quot;);
+
+let emails &#x3D; {};
+
+new SMTPServer({
+  authOptional: true,
+  onData: (stream, session, callback) &#x3D;&gt; {
+    const chunks &#x3D; [];
+    stream.on(&#x27;data&#x27;, (chunk) &#x3D;&gt; chunks.push(Buffer.from(chunk)));
+    stream.on(&#x27;end&#x27;, () &#x3D;&gt; {
+      const data &#x3D; Buffer.concat(chunks).toStrin…</span>
+                  </div>
                 </a>
               </details>
             </article>
@@ -20916,7 +20961,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-02-17T03:01:39.330Z">2024-02-17T03:01:39.330Z</time>
+    <time id="build-timestamp" datetime="2024-02-17T04:02:02.263Z">2024-02-17T04:02:02.263Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

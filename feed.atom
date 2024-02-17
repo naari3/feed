@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-17T03:01:39.380Z</updated>
+    <updated>2024-02-17T04:02:02.316Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2024.2.17]]></title>
+        <id>https://gamegaz.com/?p=40519</id>
+        <link href="https://gamegaz.com/2024021740519/"/>
+        <updated>2024-02-17T03:19:03.000Z</updated>
+        <summary type="html"><![CDATA[Nintendo Direct延期,nx.js v0.0.36,PS4JbEmu v2.0,PS4 ezRemote Client v1.18,ARK-4 v1708130052,RetroArch Wii v1.7.9のLibretroコア,Xenia Canary_experimental,yuzu-android-251,DS994a v1.7,MovianM7-7.0.30→→→この記事の続きを読む
+GameGaz Daily 2024.2.17 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【噂】PS5 Proの価格はドライブレスモデルで500ドル]]></title>
         <id>https://gamegaz.com/?p=40514</id>
@@ -256,6 +267,29 @@ const uuid = Atarabi.mouse.hook({ button: 'Middle', count: 2 }, ctx => {
 カラースウォッチの試作。スクリプトのパネル上でミドルクリックをすると、色パラメータを選択もしくは選択したエフェクト内に初期値から変更済みの色パラメータがあればその色を、それ以外の場合かつ平面レイヤーを選択していればその平面の色を取得する。削除したい場合は、当該色の上でダブルクリックをする。]]></summary>
         <author>
             <name>Atarabi-Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[End-to-end testing emails]]></title>
+        <id>https://blog.wesleyac.com/posts/e2e-testing-email</id>
+        <link href="https://blog.wesleyac.com/posts/e2e-testing-email"/>
+        <updated>2024-02-16T05:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I came up with a really slick trick to write E2E tests that deal with sending/receiving emails recently. This is the sort of thing that seems like it's probably usually sort of a nightmare — I wanted to write a test for registering a account on a website, where part of the flow was clicking on a validation link in a email.
+The slick trick is a test SMTP server which is also a HTTP server. It's 39 lines of Javascript and extraordinarily simple:
+const SMTPServer = require("smtp-server").SMTPServer;
+const http = require("http");
+
+let emails = {};
+
+new SMTPServer({
+  authOptional: true,
+  onData: (stream, session, callback) => {
+    const chunks = [];
+    stream.on('data', (chunk) => chunks.push(Buffer.from(chunk)));
+    stream.on('end', () => {
+      const data = Buffer.concat(chunks).toStrin…]]></summary>
+        <author>
+            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
     <entry>
