@@ -78,6 +78,97 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
+              rel="noopener">現実モデリング</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">健常者エミュレータ事例集を支える技術</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://contradiction29.hatenablog.com/entry/2024/02/18/233450" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はじめに
+この記事では、健常者エミュレータ事例集を構成する技術について記述します。
+健常者エミュレータ事例集を構成する技術について俯瞰的に見たのち、個々のコンポーネントについて触れ、技術選定をした歴史的経緯などについてもちょびっと書きます
+Wordpressの異常な使い方として参考になれば幸いです
+システム全容
+健常者エミュレータ事例集を構成する技術
+健常者エミュレータ事例集の本体のほかにも3つのコンポーネントがあり、それぞれ本体とREST API経由で接続されています。順を追ってみていきます。
+健エミュ投稿フォーム
+hpe-form-v2.vercel.app
+作られた背景
+事前知識
+
+
+
+2022年3月から2023年2月まで、健常者エミュレータ事例集はSeesaa Wiki上で展開されていた
+wiki.seesaa.jp
+
+
+Seesaa Wikiにはテンプレート投稿機能があり、事前に作成されたテンプレートを使って記事を作成することが可能だったが、PCからしかテンプレート投稿機能が使えない欠点があった
+
+当時、健常者エミュレータ事例集WikiのPV数は9割をスマートフォンが占めていた
+健常者エミュレータ事例集の理念を実現するためには、スマートフォンから記事を投稿できない状況を解消し、新規投稿を促進する必要があった
+構成
+Next.js + Vercel
+長所：無料枠の範囲内でできる
+短所：オーバーエンジニアリングな点
+
+
+正直Next.jsを使うほどではなかったかもしれないので、今はReact + Cloudflare Pagesで作り直そうとしている
+構成の欠点ではないが、作った当初はフロントエンドが全く分からず適当に作ったため、技術的負債がたまっている。現在では新規に機能を追加するのが難しい状態になっている
+健常者エミュレータ事例集本体
+Seesaa Wikiの機能が不足していたため、2023年の2月にWordpressを中心にする構成に移行した
+構成
+Amazon LightSail + Wordpress + Route 53
+長所：料金が定額であり、過剰な料金がかかることがない
+短所：過剰なアクセスが集中すると落ちる
+
+
+実際Xでバズって落ちたことがある
+CDNを挟めば何とかなるかもしれない
+利用しているプラグイン
+wpDiscuz : コメント機能
+WP Mail SMTP : ユーザー登録時のメール配信
+Taxopress : タグ管理
+Sassy Social Share : SNSシェアボタンの作成
+Like Button Rating ♥ LikeBtn : 「いいね」「よくないね」ボタンの作成
+Ivory Search : 検索機能
+Advanced Random Posts Widge : ランダム記事リストの作成
+健エミュ分析基盤
+健エミュ内に蓄積されたデータを分析するために作成された
+構成
+dbt Cloud + BigQuery + Looker Studio
+長所：激安。ほぼ無料に近い
+短所：特になし
+参考：
+contradiction29.hatenablog.com
+健エミュX通知Bot
+作った背景：Seesaa Wikiを使っていた当初、Seesaa WikiにビルトインされているTwitter（当時）連携機能が不十分だったため自作した
+10分に一回REST APIをたたき、新しい記事があったらスクレイピングして投稿画像を作成し、X APIを使って投稿する仕組みになっている
+コードはこちら
+github.com
+
+
+
+
+構成
+AWS Lambda + Serverless Framework + Python
+親の顔より見たPythonで作った
+長所：激安
+短所：特になし
+おわりに
+追加で知りたいことがある方はこっそり教えてください</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240218/20240218230529.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/euro3" target="_blank"
               rel="noopener">ユーロ/犬の鳴き真似bot</a></h3>
           <section class="articles-per-source">
@@ -19094,30 +19185,6 @@ GameGaz Daily 2023.11.21 first appeared on 大人のためのゲーム講座.</s
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://staff.hatenablog.com/" target="_blank"
-              rel="noopener">はてなブログ開発ブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">WebSite構造化データに対応しました。設定したブログ名がGoogle検索に掲載されやすくなります</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://staff.hatenablog.com/entry/2023/11/21/111233" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>本日、はてなブログはWebSite構造化データに対応しました。この対応により、Google検索の検索結果に、設定したブログ名が掲載されやすくなります。
-ピンクの枠で囲われた領域がサイト名
-Google検索の検索結果ページに表示されるサイト名は、Googleによって自動的に生成されますが、WebSite構造化データはサイト名の生成の元となるデータのうち最も重要なデータとされています。
-Google 検索でのサイト名 | Google 検索セントラル  |  ドキュメント  |  Google for Developers
-どうぞご利用ください。</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231120/20231120173946.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20995,7 +21062,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-02-18T14:02:04.285Z">2024-02-18T14:02:04.285Z</time>
+    <time id="build-timestamp" datetime="2024-02-18T15:02:11.682Z">2024-02-18T15:02:11.682Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

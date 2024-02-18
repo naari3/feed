@@ -1197,6 +1197,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189084306804",
+          "author": null,
+          "description": "はじめに\nこの記事では、健常者エミュレータ事例集を構成する技術について記述します。\n健常者エミュレータ事例集を構成する技術について俯瞰的に見たのち、個々のコンポーネントについて触れ、技術選定をした歴史的経緯などについてもちょびっと書きます\nWordpressの異常な使い方として参考になれば幸いです\nシステム全容\n健常者エミュレータ事例集を構成する技術\n健常者エミュレータ事例集の本体のほかにも3つのコンポーネントがあり、それぞれ本体とREST API経由で接続されています。順を追ってみていきます。\n健エミュ投稿フォーム\nhpe-form-v2.vercel.app\n作られた背景\n事前知識\n\n\n\n2022年3月から2023年2月まで、健常者エミュレータ事例集はSeesaa Wiki上で展開されていた\nwiki.seesaa.jp\n\n\nSeesaa Wikiにはテンプレート投稿機能があり、事前に作成されたテンプレートを使って記事を作成することが可能だったが、PCからしかテンプレート投稿機能が使えない欠点があった\n\n当時、健常者エミュレータ事例集WikiのPV数は9割をスマートフォンが占めていた\n健常者エミュレータ事例集の理念を実現するためには、スマートフォンから記事を投稿できない状況を解消し、新規投稿を促進する必要があった\n構成\nNext.js + Vercel\n長所：無料枠の範囲内でできる\n短所：オーバーエンジニアリングな点\n\n\n正直Next.jsを使うほどではなかったかもしれないので、今はReact + Cloudflare Pagesで作り直そうとしている\n構成の欠点ではないが、作った当初はフロントエンドが全く分からず適当に作ったため、技術的負債がたまっている。現在では新規に機能を追加するのが難しい状態になっている\n健常者エミュレータ事例集本体\nSeesaa Wikiの機能が不足していたため、2023年の2月にWordpressを中心にする構成に移行した\n構成\nAmazon LightSail + Wordpress + Route 53\n長所：料金が定額であり、過剰な料金がかかることがない\n短所：過剰なアクセスが集中すると落ちる\n\n\n実際Xでバズって落ちたことがある\nCDNを挟めば何とかなるかもしれない\n利用しているプラグイン\nwpDiscuz : コメント機能\nWP Mail SMTP : ユーザー登録時のメール配信\nTaxopress : タグ管理\nSassy Social Share : SNSシェアボタンの作成\nLike Button Rating ♥ LikeBtn : 「いいね」「よくないね」ボタンの作成\nIvory Search : 検索機能\nAdvanced Random Posts Widge : ランダム記事リストの作成\n健エミュ分析基盤\n健エミュ内に蓄積されたデータを分析するために作成された\n構成\ndbt Cloud + BigQuery + Looker Studio\n長所：激安。ほぼ無料に近い\n短所：特になし\n参考：\ncontradiction29.hatenablog.com\n健エミュX通知Bot\n作った背景：Seesaa Wikiを使っていた当初、Seesaa WikiにビルトインされているTwitter（当時）連携機能が不十分だったため自作した\n10分に一回REST APIをたたき、新しい記事があったらスクレイピングして投稿画像を作成し、X APIを使って投稿する仕組みになっている\nコードはこちら\ngithub.com\n\n\n\n\n構成\nAWS Lambda + Serverless Framework + Python\n親の顔より見たPythonで作った\n長所：激安\n短所：特になし\nおわりに\n追加で知りたいことがある方はこっそり教えてください",
+          "link": "https://contradiction29.hatenablog.com/entry/2024/02/18/233450",
+          "publishedOn": "2024-02-18T14:34:50.000Z",
+          "wordCount": 415,
+          "title": "健常者エミュレータ事例集を支える技術",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240218/20240218230529.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240218/20240218230529.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189080444829",
           "author": null,
           "description": "筆者がスタートアップの「データ何でもチーム」をやってきた中で、考えてきて実践してきたことを吐き出します\nポエムです\ndata as a product\nデータメッシュを実現する文脈の中で、「それぞれのドメインに分散されたチームが自身の提供するデータセットに対してproduct thinkingを適用するべきだ」とする考えが生まれてきた。\nFor a distributed data platform to be successful, domain data teams must apply product thinking with similar rigor to the datasets that they provide; considering their data assets as their products and the rest of the organization's data scientists, ML and data engineers as their customers*1.\n（筆者日本語訳）分散データプラットフォームが成功するためには、ドメインごとに配置されたデータチームが自身の提供するデータセットに対してプロダクトシンキングを適用しなければならない。データアセットをプロダクトとして捉え、組織内の他のデータサイエンティストや機械学習エンジニア、データエンジニアを顧客とみなすのである。\n\n\nこの考え方を「data as a product」といい、平たく言えば「データセットをプロダクトとみなし、プロダクトマネジメントをやっていこう」と主張する考え方である。国内の大規模エンタープライズの中でデータメッシュを実現できている企業は聞いたことがない2024年2月現在だが、データメッシュの文脈から外れたとしても、「data as a produc…",
@@ -4167,21 +4182,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
-        },
-        {
-          "id": "hatenablog://entry/6801883189060284520",
-          "author": null,
-          "description": "本日、はてなブログはWebSite構造化データに対応しました。この対応により、Google検索の検索結果に、設定したブログ名が掲載されやすくなります。\nピンクの枠で囲われた領域がサイト名\nGoogle検索の検索結果ページに表示されるサイト名は、Googleによって自動的に生成されますが、WebSite構造化データはサイト名の生成の元となるデータのうち最も重要なデータとされています。\nGoogle 検索でのサイト名 | Google 検索セントラル  |  ドキュメント  |  Google for Developers\nどうぞご利用ください。",
-          "link": "https://staff.hatenablog.com/entry/2023/11/21/111233",
-          "publishedOn": "2023-11-21T02:12:33.000Z",
-          "wordCount": 818,
-          "title": "WebSite構造化データに対応しました。設定したブログ名がGoogle検索に掲載されやすくなります",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231120/20231120173946.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231120/20231120173946.png"
         }
       ]
     },
