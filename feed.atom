@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-19T00:03:12.773Z</updated>
+    <updated>2024-02-19T01:23:32.071Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DAMカラオケコマンダXG1000の便利隠し機能を発見した]]></title>
+        <id>hatenablog://entry/6801883189084373082</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2024/02/19/092256"/>
+        <updated>2024-02-19T00:22:56.000Z</updated>
+        <summary type="html"><![CDATA[honeylab.hatenablog.jp
+前のブログからの続きでもあります。
+センター室モードで採点機能が使えず消沈しつつ、新たな手法を探していると、
+おそらくデバッグか開発・設定用と思われる新たな入力方法を見つけました
+何と、起動時にコンソールにしてたシリアル入力、標準入力をパネルボタンと同じように扱ってくれることを発見しました。
+ 
+
+んんんん？？？標準入力からキー入力受け取れるんじゃないかこれ pic.twitter.com/SWG3QMr0e8
+2024年2月18日
+
+
+ 
+これは便利！！！！！
+これならマジでマイデンモクが自作できます！
+うおおお、そんな機能あると思ってなかったから試してすら居なかったよ
+(USBキーボードを繋いでいるのではなく、パソコンのシリアルターミナルから送ってる)
+これなら簡単にリモコン作れるじゃん！やった！
+開発メニューのキーコードが本体に無くて、リモコンからなのかと思ってたがたぶんこっちだ！ pic.twitter.com/hrCvqsHzAT
+2024年2月18日
+
+
+ 
+スタートボタンだけハンドルされないんですが、
+演奏モードを連続にしていればどうやらスタートボタンを押す機会はないようです。]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.2.19]]></title>
         <id>https://gamegaz.com/?p=40526</id>
