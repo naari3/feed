@@ -2,10 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-19T06:02:05.568Z</updated>
+    <updated>2024-02-19T07:02:05.135Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[KeyTrap （CVE-2023-50387）を検証してみた]]></title>
+        <id>hatenablog://entry/6801883189084333981</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2024/02/19/155658"/>
+        <updated>2024-02-19T06:56:58.000Z</updated>
+        <summary type="html"><![CDATA[DNSは趣味でやっているだけですし有識者のレビューを経ているわけでもないので誤りを含むかもしれませんが、DNS界隈には優しい人しかいないのできっと丁寧に指摘してくれるはずです。
+要約
+背景
+詳細
+DNSSECとは？
+DNSSECの可用性
+鍵タグの衝突
+攻撃内容
+SigJam （単一の鍵 x 多数の署名）
+LockCram（多数の鍵 x 単一の署名）
+KeySigTrap（多数の鍵 x 多数の署名）
+HashTrap（多数の鍵 x 多数のハッシュ計算）
+攻撃の評価
+緩和策
+再現方法
+攻撃者
+リゾルバー（Unbound）
+Unboundのコンテナイメージ作成
+Unboundの設定ファイル作成
+権威サーバー（BIND）
+BINDのコンテナイメージ作成
+鍵タグが衝突する鍵の作成
+KSKの作成
+ゾーンファイルの作成
+ゾーンファイルの署名
+署名を生成する
+攻撃の再現
+検証用リポジトリ
+余談
+まとめ
+要約
+ATHENE、ドイツの国立応用サイバーセキュリティ研究センターは、DNSSEC（ドメインネームシステムセキュリティ拡張）に関する重大な設計上の欠陥を発見しました。この欠陥は、DNSSECを検証するDNS実装と公開DNSプロバイダーに大きな影響を与える可能性があります。彼らは「KeyTrap」と名付けた新しい攻撃クラスを開発し、単一のDNSパケットを使用して広範囲にわたるDNS実装と公開DNSプロバイダーを中断させることができることを示しました。この攻撃は、インターネットを使用するあらゆるアプリケーションに深刻な影響を与える可能性があり、ウェブブラウジング、電子メール、インスタントメッセージングの利用不能を引き起こすことができます。この欠陥はDNSの基本的な設計哲学に根ざしており、完全には修正が困難です。すべてのDNSサービスプロバイダーに対し、この重大な脆弱性を軽減するために直ちにパッ…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2024年2月第3週〕]]></title>
         <id>hatenablog://entry/6801883189084389881</id>
