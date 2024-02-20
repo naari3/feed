@@ -78,6 +78,40 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://kmizu.hatenablog.com/" target="_blank"
+              rel="noopener">kmizuの日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">「プログラミング言語開発」教育用言語MinisにJSONベースの具象構文を付け足してみた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://kmizu.hatenablog.com/entry/2024/02/20/214412" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>皆様、お久しぶりです。去る2月10日（土）、2月11日（日）に筑波大学情報科学類にて特別講義の講師をやってきました。といっても、私が全日担当したわけではなくOB一人が一コマを自分の得意分野について講義をするオムニバス形式のものです。
+　私はといえば去年やったのと同様、JavaScriptで抽象構文木を「手で」組み立てて解釈・実行するプログラミング言語Minisとその処理系を作るという講義を行いました。講義当日はスライドにミスがあることに途中で気づいたり色々あってテンパりましたがそれはそれとして。
+　元々、私が担当した「プログラミング言語作成概論」の趣旨は
+プログラミング言語を作るというのはとても簡単な作業なのに、プログラマにすらあまり知られていないのはけしからん。
+とはいえ、実際に作ってみせないと実感が湧かないのが人情。
+抽象構文木をJavaScript上で組み立てて、それをevalする関数を書くことを通してインタプリタの作成方法を学ぼうじゃないか！
+　的なものです。たとえば、以下のプログラムは講義で作ったプログラミング言語Minisのもの（実際にはこれそのものを解析する構文解析機はまだ作ってませんが）です。MinisのことはわからなくてもC系言語を一つかじったことがあればおおよその意味はわかるかと思います。
+    a &#x3D; 100;
+    b &#x3D; 200;
+    if(a &lt; b) {
+      500;
+    } else {
+      1000;
+    } // 500が返ってくる
+　しかし、これくらい単純な構文を持ったプログラミング言語でさえ「構文解析」というプログラミング言語にとって本質でないものが挟まるせいで無駄に行数が増えるのが現実です。ならばということで、以下のように直接抽象構文木を書かせれば（ナイーヴな）インタプリタの本質であるevalの記述に…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -19408,27 +19442,6 @@ Gemfileではgitで指定する他にもpathでローカルパスにあるgemを
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2023.11.23</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2023112339899/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PS Multi Tools v13.2,ps5-db-rebuilder-ext,ARK-4 v1700680623,NINTENDO 64 Nintendo Switch Online,ares v134→→→この記事の続きを読む
-GameGaz Daily 2023.11.23 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                  <img src="https://gamegaz.com/wp-content/uploads/mqdefault-1188.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21306,7 +21319,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-02-20T12:01:54.481Z">2024-02-20T12:01:54.481Z</time>
+    <time id="build-timestamp" datetime="2024-02-20T13:02:11.138Z">2024-02-20T13:02:11.138Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

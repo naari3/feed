@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-20T12:01:54.536Z</updated>
+    <updated>2024-02-20T13:02:11.181Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「プログラミング言語開発」教育用言語MinisにJSONベースの具象構文を付け足してみた]]></title>
+        <id>hatenablog://entry/6801883189084775737</id>
+        <link href="https://kmizu.hatenablog.com/entry/2024/02/20/214412"/>
+        <updated>2024-02-20T12:44:12.000Z</updated>
+        <summary type="html"><![CDATA[皆様、お久しぶりです。去る2月10日（土）、2月11日（日）に筑波大学情報科学類にて特別講義の講師をやってきました。といっても、私が全日担当したわけではなくOB一人が一コマを自分の得意分野について講義をするオムニバス形式のものです。
+　私はといえば去年やったのと同様、JavaScriptで抽象構文木を「手で」組み立てて解釈・実行するプログラミング言語Minisとその処理系を作るという講義を行いました。講義当日はスライドにミスがあることに途中で気づいたり色々あってテンパりましたがそれはそれとして。
+　元々、私が担当した「プログラミング言語作成概論」の趣旨は
+プログラミング言語を作るというのはとても簡単な作業なのに、プログラマにすらあまり知られていないのはけしからん。
+とはいえ、実際に作ってみせないと実感が湧かないのが人情。
+抽象構文木をJavaScript上で組み立てて、それをevalする関数を書くことを通してインタプリタの作成方法を学ぼうじゃないか！
+　的なものです。たとえば、以下のプログラムは講義で作ったプログラミング言語Minisのもの（実際にはこれそのものを解析する構文解析機はまだ作ってませんが）です。MinisのことはわからなくてもC系言語を一つかじったことがあればおおよその意味はわかるかと思います。
+    a = 100;
+    b = 200;
+    if(a < b) {
+      500;
+    } else {
+      1000;
+    } // 500が返ってくる
+　しかし、これくらい単純な構文を持ったプログラミング言語でさえ「構文解析」というプログラミング言語にとって本質でないものが挟まるせいで無駄に行数が増えるのが現実です。ならばということで、以下のように直接抽象構文木を書かせれば（ナイーヴな）インタプリタの本質であるevalの記述に…]]></summary>
+        <author>
+            <name>kmizuの日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[全スポーツにおけるユニフォームは「衣装」であり「戦闘服」ありアイデンティティの「表現」機能]]></title>
         <id>https://note.com/kazumakawauchi/n/n00ff49796c88</id>
@@ -13496,17 +13520,6 @@ Gemfileではgitで指定する他にもpathでローカルパスにあるgemを
 *2:おそらく大多数の環境では]]></summary>
         <author>
             <name>たごもりすメモ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.11.23]]></title>
-        <id>https://gamegaz.com/?p=39899</id>
-        <link href="https://gamegaz.com/2023112339899/"/>
-        <updated>2023-11-23T00:03:07.000Z</updated>
-        <summary type="html"><![CDATA[PS Multi Tools v13.2,ps5-db-rebuilder-ext,ARK-4 v1700680623,NINTENDO 64 Nintendo Switch Online,ares v134→→→この記事の続きを読む
-GameGaz Daily 2023.11.23 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
