@@ -4315,23 +4315,7 @@
       "title": "たごもりすメモ",
       "feedUrl": "https://tagomoris.hatenablog.com/rss",
       "siteUrl": "https://tagomoris.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6801883189061057826",
-          "author": null,
-          "description": "AWS LambdaでRubyランタイムを使っててzipアーカイブで関数コードをアップロードしてる人向け。\n基本的にはGemfileに依存関係書いてbundle config set --local path 'vendor/bundle'してbundle installすればいい。以下のドキュメントを読もう。\ndocs.aws.amazon.com\nんだけど、Gemfileにrubygems.org以外から取得したgem、特にgitを指定したものを使っている場合にこれだけだとうまくいかないので、原因と対処を書いておく。\nそもそもLambdaは何をやってるか\n上述ドキュメントを読むとわかるが、zipファイルにはGemfile.lockもGemfileも入れない。それで動作する。これはどういうことかというと、AWS Lambdaのランタイム側ではBundlerを使わず(?)、vendor/bundle 以下にLambdaが想定しているパスで置かれているファイルを直接探索するように$LOAD_PATHが指定されてるんじゃないかと思う。*1\nで、通常rubygems.orgから取得したgemについては vendor/bundle/ruby/3.2.0/gems/ 以下にmyclient-1.1.0みたいなディレクトリでコード等が展開される。またvendor/bundle/ruby/3.2.0/specifications/ ディレクトリにgemspecファイルがmyclient-1.1.0.gemspecとして置かれる。試してみていた範囲では、gemspecを検出したらそれに対応するgemのディレクトリを$LOAD_PATHに追加してるんじゃないかと思う。\ngitから取得したgemの扱い\ngitから取得したgemについてはBundlerはrubygems.orgからのものとは異なり、vendor/bundle/ruby/3.2.0/bundler/gems/以下にmyclient-xxxxxxxのようなディレクトリで展開される。xxxxxの部分はcommit hash。\nこれはLambdaランタイムが読み込むディレクトリと異なっているため、zipファイルに含まれていても実行時にロードパスが通らず、requireしてもエラーになる。なんということでしょう。\n無理矢理パスを通す\nしょうがないので、以下のようにしてzipアーカイブを作れば動くようになる。\n1. ruby/3.2.0/gems以下にシンボリックリンクを作成する\nbundle installしてgitから取得したgemが展開されたら、そのディレクトリに対して以下のようにシンボリックリンクを作る。\n$ ln -s vendor/bundle/ruby/3.2.0/bundler/gems/myclient-xxxxxx vendor/bundle/ruby/3.2.0/gems/myclient-1.1.0\nこうすれば手元で実行するときにも壊れない。zipアーカイブを作るときは*2シンボリックリンクだった部分はそこにコピーされたようになるはず。つまり、Lambda環境ではruby/3.2.0/gems以下に該当gemのコピーが展開される。\n2. specifications以下にgemspecをコピーする\ngemspecがないと動かないのでこれもオリジナルの場所からコピーする。コピー時にバージョン番号をつけたファイルにするのに注意。\n$ cp vendor/bundle/ruby/3.2.0/bundler/gems/myclient-xxxxx/myclient.gemspec vendor/bundle/ruby/3.2.0/specifications/myclient-1.1.0.gemspec\n(余談) pathで指定したgemはどうなる?\nGemfileではgitで指定する他にもpathでローカルパスにあるgemを使うよう指定できる。開発中のgemを直接使うときに便利。\nが、この指定だとBundlerは該当パスを直接見に行ってライブラリをロードし、vendor/bundle以下にはコピーを作らない。このため、zipアーカイブにしようとしても入ってくれず、Lambdaランタイム上では使いようがないということになる。\nローカルストレージ上のものをコピーしてzipアーカイブに入れてもいいけど、何が起きるかちょっとわからないのが怖い気もするので、開発中とはいえgitリポジトリ経由で入れるようにしたほうがいいかなと思います。\n*1:書きながら思ったけど実行環境にBundlerがロードされているかどうかはちょっとコード書けばするわかるな……やるのがめんどくさい\n*2:おそらく大多数の環境では",
-          "link": "https://tagomoris.hatenablog.com/entry/2023/11/23/144703",
-          "publishedOn": "2023-11-23T05:47:03.000Z",
-          "wordCount": 731,
-          "title": "AWS LambdaのRuby .zipパッケージでgitから取得したgemを使う",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "ユッ記",
