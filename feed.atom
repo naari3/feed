@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-20T23:01:42.080Z</updated>
+    <updated>2024-02-21T00:02:58.688Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Rustがサポートするアーキテクチャ少なすぎる！]]></title>
+        <id>https://medium.com/p/b42f62a2c076</id>
+        <link href="https://medium.com/nttlabs/rustc-codegen-gcc-b42f62a2c076?source=rss----74f667786e9f---4"/>
+        <updated>2024-02-20T23:26:46.000Z</updated>
+        <summary type="html"><![CDATA[RustでLinuxカーネルモジュールを実装しようと張り切ってきましたが、カーネルがサポートする大半のCPUアーキテクチャでRustは使えません。Rustの公式コンパイラがサポートするアーキテクチャが少なすぎるので、別のRustコンパイラを試してみました。]]></summary>
+        <author>
+            <name>FUJITA Tomonori</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[24/02/20 作業300%日記10%]]></title>
         <id>https://note.com/banfuture9/n/ndb2ce5b994d4</id>
