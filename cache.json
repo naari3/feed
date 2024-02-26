@@ -4199,21 +4199,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6801883189062922214/1701415856"
-        },
-        {
-          "id": "hatenablog://entry/6801883189062318921",
-          "author": null,
-          "description": "はてなブログではGoogle アナリティクス 4 （以下 GA4）の連携機能を提供しています。また、GA4の標準のデータだけではなく、はてなブログ独自のイベントやカスタムディメンション（記事の投稿日や公開からの経過日数、読了イベント、ブログカードのリンククリック計測など）を提供し、ブログの解析に役立てていただけるよう機能を追加しています。\n\nしかしながら、GA4のレポートや探索、LookerStudioでそれらのデータを利用するためにはGA4での設定が必要です。はてなブログで提供しているカスタムディメンションはすでに15件あり、登録すべき数が増えてくると追加の対応が煩雑になってしまう問題がありました。\nはてなブログ用GA4カスタムディメンションセットアップツール(ベータ版)\n\n本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なく機能の提供を終了する場合があります\n利用方法\nカスタムディメンションを追加したいプロパティへの編集権限を持っているGoogleアカウントでログインした状態で はてなブログ用GA4カスタムディメンションセットアップツール(ベータ版) を開く\nGA4のAPIを利用するためOAuthの認証を行います。「PREVIEW PERMISSION」をクリックし、権限の付与の同意を行ってください\nカスタムディメンションを登録したいアナリティクスアカウント及びプロパティを選択する\n登録したいカスタムディメンションにチェックを入れ(初期値はすべてにチェックが入っています。必要に応じてチェックを外してください)、「カスタムディメンションを登録する」ボタンをクリックする",
-          "link": "https://staff.hatenablog.com/entry/2023/11/29/114307",
-          "publishedOn": "2023-11-29T02:43:07.000Z",
-          "wordCount": 826,
-          "title": "Google アナリティクス 4 のはてなブログ解析用のカスタムディメンションをまとめて登録するツールを公開しました",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231128/20231128115510.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231128/20231128115510.png"
         }
       ]
     },
@@ -10567,6 +10552,16 @@
       "feedUrl": "https://kirarajump.blogspot.com/feeds/posts/default?alt=rss",
       "siteUrl": "https://kirarajump.blogspot.com/",
       "articles": [
+        {
+          "id": "tag:blogger.com,1999:blog-9037679302356452478.post-1461566383753395956",
+          "author": "noreply@blogger.com (kirarajumper)",
+          "description": "Misskeyは引き続き使うので、分散型SNSにいる皆さんは、今後ともよろしくお願いいたします。\n\n以上です。",
+          "link": "https://kirarajump.blogspot.com/2024/02/xtwitter.html",
+          "publishedOn": "2024-02-26T14:31:00.000Z",
+          "wordCount": 3982,
+          "title": "X(Twitter)のアカウントを停止しました",
+          "imageUrl": "https://bit.ly/3JSzrtX"
+        },
         {
           "id": "tag:blogger.com,1999:blog-9037679302356452478.post-5656548473367882194",
           "author": "noreply@blogger.com (kirarajumper)",
