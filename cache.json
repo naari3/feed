@@ -1257,6 +1257,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189086333879",
+          "author": null,
+          "description": "健エミュに書こうと思ったがマニアックすぎたのでやめた。自作PCの話だ。\n朝起きて自作PCの電源を入れてみると、ディスプレイに映像が出なくなっていた。昨日までは動作したが、今日はなぜか動作しない。心当たりは特にない。とりあえずグラボの抜き差しや別ディスプレイでの映像出力を試したが効果がないので、BIOSをアップデートすることにした。マザーボードはASRockのX570S Phantom Gaming Riptideだった。\n\nASRock マザーボード X570S PG Riptide AMD Ryzen 5000 シリーズ CPU (Soket AM4) 対応 X570 ATX マザーボード 【国内正規代理店品】\n\nASRock\nAmazon\n\n自作PCの構成は以下の通り：\nCPU：AMD Ryzen 7 5800X\nDRAM：Crucialの32GB × 2枚\nグラボ：MSI GeForce RTX™ 4090 SUPRIM X 24G\nマザーボード：ASRock X570S Phantom Gaming Riptide\nLAN：Archer TX3000E\nX570S Phantom Gaming RiptideにはBIOSフラッシュバック機能が搭載されており、画面が映らなくても背面USB経由でマザーボードのBIOSを更新することができる。このときに間違えてB550 Phantom Gaming RiptideのBIOSを入れてしまった。\nそのあとはステータスチェッカーの「CPU」と「DRAM」が点灯し、すべてがダメになった。メモリの抜き差しやCPUの抜き差しなどいろいろ試した後、(最初にやればよかった)CMOSクリアを実施し、BIOSの再度アップデートを試したが正常に起動しなかった。\nもう自分の手ではどうにもならんと思い、秋葉原に行ってツクモの「基本構成パーツ診断」のサポートを受けた。基本構成パーツ診断では、マザーボード・CPU・メモリ・電源・VGAの起動がうまくいかない場合に問題個所を特定してくれる。\nsupport.tsukumo.co.jp\nどうやらCMOSクリアがうまくできていなかったらしく、店員さんがCMOSクリアを実施し、BIOSアップデートをしたらBIOS起動画面までたどり着いた。その後は家に持ち帰り、SSDを接続しWindowsの起動を試したが、異常終了してしまった。いろいろ試した後、BIOS設定からブートの順番を変更したら正常に稼働した。なぜブート順番を変更したら正常に稼働したのかはよくわからない。\n結局最初にディスプレイに映像が出力されなかったのはなぜなのだろう。なぜ壊れたのかわからないし、なぜ治ったのかもよくわからない。明日また壊れているんじゃないかと思える。",
+          "link": "https://contradiction29.hatenablog.com/entry/2024/02/26/183705",
+          "publishedOn": "2024-02-26T09:37:05.000Z",
+          "wordCount": 331,
+          "title": "マザーボードのBIOSをアップデートするときはよく名前を確認した方がいい",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/51NszTv8IOL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/51NszTv8IOL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/6801883189084306804",
           "author": null,
           "description": "はじめに\nこの記事では、健常者エミュレータ事例集を構成する技術について記述します。\n健常者エミュレータ事例集を構成する技術について俯瞰的に見たのち、個々のコンポーネントについて触れ、技術選定をした歴史的経緯などについてもちょびっと書きます\nWordpressの異常な使い方として参考になれば幸いです\nシステム全容\n健常者エミュレータ事例集を構成する技術\n健常者エミュレータ事例集の本体のほかにも3つのコンポーネントがあり、それぞれ本体とREST API経由で接続されています。順を追ってみていきます。\n健エミュ投稿フォーム\nhpe-form-v2.vercel.app\n作られた背景\n事前知識\n\n\n\n2022年3月から2023年2月まで、健常者エミュレータ事例集はSeesaa Wiki上で展開されていた\nwiki.seesaa.jp\n\n\nSeesaa Wikiにはテンプレート投稿機能があり、事前に作成されたテンプレートを使って記事を作成することが可能だったが、PCからしかテンプレート投稿機能が使えない欠点があった\n\n当時、健常者エミュレータ事例集WikiのPV数は9割をスマートフォンが占めていた\n健常者エミュレータ事例集の理念を実現するためには、スマートフォンから記事を投稿できない状況を解消し、新規投稿を促進する必要があった\n構成\nNext.js + Vercel\n長所：無料枠の範囲内でできる\n短所：オーバーエンジニアリングな点\n\n\n正直Next.jsを使うほどではなかったかもしれないので、今はReact + Cloudflare Pagesで作り直そうとしている\n構成の欠点ではないが、作った当初はフロントエンドが全く分からず適当に作ったため、技術的負債がたまっている。現在では新規に機能を追加するのが難しい状態になっている\n健常者エミュレータ事例集本体\nSeesaa Wikiの機能が不足していたため、2023年の2月にWordpressを中心にする構成に移行した\n構成\nAmazon LightSail + Wordpress + Route 53\n長所：料金が定額であり、過剰な料金がかかることがない\n短所：過剰なアクセスが集中すると落ちる\n\n\n実際Xでバズって落ちたことがある\nCDNを挟めば何とかなるかもしれない\n利用しているプラグイン\nwpDiscuz : コメント機能\nWP Mail SMTP : ユーザー登録時のメール配信\nTaxopress : タグ管理\nSassy Social Share : SNSシェアボタンの作成\nLike Button Rating ♥ LikeBtn : 「いいね」「よくないね」ボタンの作成\nIvory Search : 検索機能\nAdvanced Random Posts Widge : ランダム記事リストの作成\n健エミュ分析基盤\n健エミュ内に蓄積されたデータを分析するために作成された\n構成\ndbt Cloud + BigQuery + Looker Studio\n長所：激安。ほぼ無料に近い\n短所：特になし\n参考：\ncontradiction29.hatenablog.com\n健エミュX通知Bot\n作った背景：Seesaa Wikiを使っていた当初、Seesaa WikiにビルトインされているTwitter（当時）連携機能が不十分だったため自作した\n10分に一回REST APIをたたき、新しい記事があったらスクレイピングして投稿画像を作成し、X APIを使って投稿する仕組みになっている\nコードはこちら\ngithub.com\n\n\n\n\n構成\nAWS Lambda + Serverless Framework + Python\n親の顔より見たPythonで作った\n長所：激安\n短所：特になし\nおわりに\n追加で知りたいことがある方はこっそり教えてください",
@@ -6710,16 +6725,6 @@
           "wordCount": 3881,
           "title": "今年最もヤバかった曲を推薦する ~ YOTY 2023 ~",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/126216784/rectangle_large_type_2_95ab8d8f2accd9cf5310c9063f708bfc.jpg?width=800"
-        },
-        {
-          "id": "https://note.com/ocha307/n/nfc416700df59",
-          "author": null,
-          "description": "",
-          "link": "https://note.com/ocha307/n/nfc416700df59",
-          "publishedOn": "2023-11-28T21:13:26.000Z",
-          "wordCount": null,
-          "title": "続かね～",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/122991581/rectangle_large_type_2_4768a88995d33e3372a001a4bf3aa701.jpeg?width=800"
         }
       ]
     },
@@ -7703,6 +7708,16 @@
       "feedUrl": "https://blog.ojisan.io/rss.xml",
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
+        {
+          "id": "https://blog.ojisan.io/ramen-log",
+          "author": null,
+          "description": "…",
+          "link": "https://blog.ojisan.io/ramen-log",
+          "publishedOn": "2024-02-26T00:00:00.000Z",
+          "wordCount": null,
+          "title": "最近食べたラーメン(2024/2まで)",
+          "imageUrl": null
+        },
         {
           "id": "https://blog.ojisan.io/do-you-use-entity",
           "author": null,
