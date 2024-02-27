@@ -7806,6 +7806,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2024/02/26/mytweets-next-rsc/",
+          "author": null,
+          "description": "mytweetsという自分の Twitter/Bluesky の自己ポストの全部検索サービスをNext.js App Router(RSC)で書きなおしました。\nmytweets は Twitter のアーカイブや Bluesky の API を使って自分のポストを S3 に保存しておき、\nS3 Selectを使って全文検索ができる自分専用の Twilog のようなサービスです。\n自分の Tweets をインクリメンタル検索できるサービス作成キット と Tweets をまとめて削除するツールを書いた | Web Scratch\n過去の Tweets を全文検索できる mytweets を Bluesky に対応した。自分用 Twilog みたいなもの | Web Scratch\n最初は CloudFront + Lambda@Edge + Next.js Pages Router で動かしていました。\nその後、Next.js App Router が Stable になったので、App Router + React Server Components(RSC)で書きなおしました。\nこの記事では、Next.js Pages Router から Next.js App Router(RSC)に書きなおした話を紹介します。\nただし、この記事は発散的な内容になっているのと、あまり正確性が保証されてないので、個人的なメモ書きとして読んでください。\nあまりにも長くなったので、あんまり読みやすくは書けませんでした。\nmytweets の動作\nmytweets  は、次のような動作をします。\nクエリがない場合は、S3 Select から最新のポストを取得して表示\nクエリを入力したら、S3 Select の API を使って全文検索を行い、結果を表示\n\nこの動画は、App Router + …",
+          "link": "https://efcl.info/2024/02/26/mytweets-next-rsc/",
+          "publishedOn": "2024-02-26T07:18:00.000Z",
+          "wordCount": null,
+          "title": "Twitter/Blueskyの自己ポストの全文検索サービスをNext.js App Router(RSC)で書きなおした方法/設計/感想",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2024/02/12/walking-to-read/",
           "author": null,
           "description": "最近よく歩きながら読書しているので、そのメモ書きです。\n必要なもの\n人とぶつからない幅の歩行者用道路\nスマートフォン\n川沿いは、人が少なく歩きやすい道が多い。\n方法\nスマホで本を開いて読みながら歩く\n物理的な本は片手だと読みにくいので、自分はスマホで読んでいます。\niPhoneみたいなサイズでも、レスポンシブな本なら問題なく読めます。\n最近は慣れすぎて、PCのようなモニタサイズがでかいと逆に読みにくく感じます（技術書とかは別ですが）。\nKindleやKoboやO’Reillyなどのアプリは大体片手でも扱えます。\nその他だと、自分の場合はmubook-honを作って使ってます。\nmubook-hon: Dropboxに保存したepubやPDFを読むビューア、Notionにメモや読んでいる位置を記録できるMobile/PC対応のウェブアプリ | Web Scratch\nいいところ\n本を読みながら歩くと距離を意識しなくなるので、想像より長く歩けたりします（本が面白いほど歩ける）。\n季節的に秋から春ぐらいが良くて、自分の場合は冬で寒くなってから歩く距離が増えてる気がします。\n自分の場合は、大体5-10kmぐらい散歩しながら読んでいて、大体2回の散歩で一冊読み終わるぐらいのペースで読んでいます。\n近く(近くはないけど)に図書館があるので、図書館まで歩きながらスマホで本を読んで、図書館で目に入った本を数冊読んで、また読みながら歩いて帰るということをよくしています。図書館でウィンドウショッピングして、その場で買って帰りながら読めるのもいい点です。\nわるいところ\n歩きながら読むのに向いてない本をあんまり読まなくなる。\n具体的にはPDFは読みにくいので、読むのを避けるようになりました。\nまとめ\n歩きながら読書すると、本を読む時間が増えるのでおすすめです。\n以前から歩きながら考えたりや本を読むタイプだったのですが、最近は本を読むために歩いてる感じはします。\n歩きながら考えを書き出すのも、最近だとiOSの音声入力やWhisperベースのアプリなどを使うと、結構雑に書けるので便利です。\nsuperwhisperでの音声入力を試す | Web Scratch\n\niOSアプリもある: superwhisper\n最近は歩きながらコードを書く方法はないかなーと考えています。",
