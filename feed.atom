@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-27T22:01:42.870Z</updated>
+    <updated>2024-02-27T23:01:42.699Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13832,34 +13832,6 @@ SSO を利用した文字列型の内部構造の例
 文字列長が23バイトよりも長いとき → 標準の String のように文字列をヒープ上のバッファに置く．ポインタを構造体の一番最後のフィールドに置く．ポインタの最下位ビットは常に 0 なので，構造体の最後のバイトの最下位ビットをフラグとし 0 なら文字列をヒー…]]></summary>
         <author>
             <name>はやくプログラムになりたい</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[マイナンバーを使った電子署名で四苦八苦]]></title>
-        <id>hatenablog://entry/6801883189062946066</id>
-        <link href="https://fumimaker.net/entry/2023/11/30/192216?utm_source=feed"/>
-        <updated>2023-11-30T10:22:16.000Z</updated>
-        <summary type="html"><![CDATA[技術ブログじゃなくてすみません；；
-背景
-最近、会社を登記する機会があり、できるだけオンラインで進めておりました。法人設立ワンストップサービス](https://app.e-oss.myna.go.jp/Application/ecOssTop/)でrejectを食らい再提出する時にマイナンバーカードを使ってPDF文章を電子署名する方法で四苦八苦しておりました。
-結論
-これを使いましょう（Windows限定）。ただし、カードリーダーは必要です。自分は非接触ではなくICチップに接触するタイプを使いました。
-https://aoiro.app/jpki/
-四苦八苦
-最初はAdobe Acrobatを使ってやろうと思っていました。
-Acrobatに法務省が提供するソフトを入れることでマイナンバーの署名ができるみたいです。
-SignPDFというプラグインをAdobeに入れて使うらしい。やり方はリンク先の説明書を参照。
-https://www.touki-kyoutaku-online.moj.go.jp/download_soft.html#PDFPlugin
-早速やったみたところ、なぜかSignPDFが表示されない。よくみるとacrobatは32bitしか対応していないようだ...最新のAdobe Creative CloudではAcrobatのバージョン選択ができず、困りました。
-調べてみると32BitはここのリンクからDLできるみたいです。
-https://helpx.adobe.com/jp/acrobat/kb/acrobat-dc-downloads.html
-やってみたところようやく、SignPDFが見えるようになった。よかった。と思い署名やってみたところ、Acrobatがクラッシュしてしまった。終わり。
-結局別の方法を探し、このソフトウェアをInstallして実行することで今まではなんだったんだってくらい簡単にできました。ワロタ。
-https://aoiro.app/jpki/
-雑談
-最近は未踏アドバンスト事業に採択されて色々作ったり知見をNotionに書き溜めているのでぼちぼち投稿できればいいなと思います。]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
     <entry>
