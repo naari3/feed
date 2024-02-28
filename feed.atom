@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-27T23:01:42.699Z</updated>
+    <updated>2024-02-28T00:02:49.727Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2024.2.28]]></title>
+        <id>https://gamegaz.com/?p=40583</id>
+        <link href="https://gamegaz.com/2024022840583/"/>
+        <updated>2024-02-28T00:00:31.000Z</updated>
+        <summary type="html"><![CDATA[PS5 Payload SDK releases/v0.8,ps5-payload-elfldr(PS5 Payload ELF Loader) release/v0.9,IRISMAN 4.91,ARK-4 v1709070029,lapy05575948氏氏VRアプリ開発か,Nightly-sdcafiine_plugin-20240227-190322,gba-link-connection v6.2.2,GodMode9i v3.5.1,Xenia Canary_experimental,yuzu-android-272→→→この記事の続きを読む
+GameGaz Daily 2024.2.28 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HFW(Hybrid Firmware) 4.91 by RealYoti]]></title>
+        <id>https://gamegaz.com/?p=40580</id>
+        <link href="https://gamegaz.com/2024022840580/"/>
+        <updated>2024-02-27T23:58:20.000Z</updated>
+        <summary type="html"><![CDATA[RealYoti氏がPS3の4.91をベースとしてPS3の全モデルにインストールすることができる、Webkit exploitが動作するように改造したモディファイ版公式ファームウェアHFW(Hybrid Firmware) 4.91をリリースしていました。→→→この記事の続きを読む
+HFW(Hybrid Firmware) 4.91 by RealYoti first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[24/02/27 本当の睡眠を見せてやりますよ]]></title>
         <id>https://note.com/banfuture9/n/n3811055076b9</id>
@@ -13804,34 +13826,6 @@ Xの収益分配金は、これだけは金額が軽く言える程度の額だ�
 終わり。]]></summary>
         <author>
             <name>覚書</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Small String Optimization で Rust ライブラリ ratatui を最適化した話]]></title>
-        <id>hatenablog://entry/6801883189062937441</id>
-        <link href="https://rhysd.hatenablog.com/entry/2023/11/30/200857"/>
-        <updated>2023-11-30T11:08:57.000Z</updated>
-        <summary type="html"><![CDATA[最近 ratatui という crate に Small String Optimization を利用した最適化を入れたので，その話を書きます．
-目次
-Small String Optimization (SSO) とは（SSO を既に知っている人は読み飛ばして大丈夫です）
-Rust で SSO を適用した文字列型を提供する crate 比較
-SSO を利用して ratatui のメモリ効率と実行効率を最適化した話
-compact_str の実装の最適化の話
-
-
-インラインストレージに24バイト全てを使える理由
-隙間最適化のための工夫
-説明を簡潔にするため，特に断りが無い場合 64bit アーキテクチャを前提とします．
-
-Small String Optimization (SSO) とは
-Rust の可変長文字列型 String は文字列バッファへのポインタ，文字列の長さ，バッファのキャパシティの3つのフィールド（8 + 8 + 8 = 24バイト）から成っており，文字列はヒープ上に確保された文字列バッファに置かれます．
-String の内部構造
-文字列が十分に短い場合，わざわざヒープに確保しなくても24バイトの構造体の中に直に（インラインに）文字列を置けば良いというのが Small String Optimization (SSO) の基本的なアイデアです．
-SSO を利用した文字列型の内部構造の例
-上記の図は典型的な SSO の実装例です．下記のように，文字列長が23バイトまでとそれ以降で構造を使い分けます．
-文字列長が23バイトよりも長いとき → 標準の String のように文字列をヒープ上のバッファに置く．ポインタを構造体の一番最後のフィールドに置く．ポインタの最下位ビットは常に 0 なので，構造体の最後のバイトの最下位ビットをフラグとし 0 なら文字列をヒー…]]></summary>
-        <author>
-            <name>はやくプログラムになりたい</name>
         </author>
     </entry>
     <entry>
