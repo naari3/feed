@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-02-29T11:01:46.619Z</updated>
+    <updated>2024-02-29T12:02:46.640Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[大谷さん、ご結婚おめでとうございます]]></title>
+        <id>hatenablog://entry/6801883189087115400</id>
+        <link href="https://kiyo-shit.hatenablog.com/entry/2024/02/29/201555"/>
+        <updated>2024-02-29T11:15:55.000Z</updated>
+        <summary type="html"><![CDATA[大谷さん、ご結婚おめでとうございます - Robot Checkerboard]]></summary>
+        <author>
+            <name>Robot Checkerboard</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.2.29]]></title>
         <id>https://gamegaz.com/?p=40590</id>
@@ -13484,51 +13494,6 @@ GameGaz Daily 2023.12.3 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[はじめに こんにちは。メルペイVPoEの@keigowです。 この記事は、Merpay Advent Calendar 2023 の2日目の記事です。 今年の3月まではソウゾウでHead of Engineeringとし […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[世紀末LSM-Treeプチフリ神話の終わり]]></title>
-        <id>hatenablog://entry/6801883189063309269</id>
-        <link href="https://kumagi.hatenablog.com/entry/end-of-freezing-lsm-tree"/>
-        <updated>2023-12-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[凍った木が溶け始める様子をそれっぽく描いてもらった
-
-世紀末LSM-Treeプチフリ神話の終わり
-Log Structured Merge Tree（以下LSM-Tree）という物をご存知だろうか。データ構造としては順序付きの辞書であり結構昔に発明されており各操作の計算オーダーは赤黒木等と同じである。システム系学会を追っていると無限に亜種が提案されているので特徴を一言で言い表すのは難しいのだが、その一種であるLevelDBはChromiumの中でも使われている。 https://chromium.googlesource.com/chromium/src/+/HEAD/third_party/leveldatabase/leveldb_chrome.h
-LSM-Treeの典型的な実装の概要とその利点・欠点を整理すると
-概要
-書き込みは常にメモリ内の辞書データ構造で受け付ける。更新も挿入も削除も常にメモリ内の辞書への挿入で完結させる。
-削除情報は墓石(thombstone)を保存することで実現する
-ある程度書き込みが溜まったらそれをファイルに保存する。
-その際に順序付けてデータを保存する事によってファイル内での高速な探索（例えば二分探索）を可能にする。
-ファイルに保存する際に既に存在する順序データと合成して新しい順序データに統合してファイルに保存する
-合成は単に最新の値で上書きする場合もあれば同一行の別の列への操作としてそれぞれ独立して保存するなどもできる
-墓石で上書きされたデータは墓石になる。墓石の上からデータを書かれた場合、墓石は消える
-ファイルが大きくなってきたら一つレベルの高い辞書順データとマージ（合成）し、古い辞書順データを消す
-マージされたファイル同士も大きくなってきたら合成して最終的に定数レベルでレベル上げを打ち切る事でファイル数を定数個に抑えて探索に必要なファ…]]></summary>
-        <author>
-            <name>Software Transactional Memo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2 日目: Cookie による区別と識別]]></title>
-        <id>https://blog.jxck.io/entries/2023-12-02/3pca-cookie.html</id>
-        <link href="https://blog.jxck.io/entries/2023-12-02/3pca-cookie.html"/>
-        <updated>2023-12-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[このエントリは、 3rd Party Cookie Advent Calendar の 2 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookie]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.12.2]]></title>
-        <id>https://gamegaz.com/?p=39937</id>
-        <link href="https://gamegaz.com/2023120239937/"/>
-        <updated>2023-12-01T23:43:54.000Z</updated>
-        <summary type="html"><![CDATA[Icon Mask v1.12,raylib4PlayStation,PSGameSpider 2023.12,ARK-4 v1701407247,USBRetro v1.0.2,DS4Windows開発終了→→→この記事の続きを読む
-GameGaz Daily 2023.12.2 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
