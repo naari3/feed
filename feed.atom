@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-03-01T11:01:47.978Z</updated>
+    <updated>2024-03-01T12:01:46.727Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -13483,34 +13483,6 @@ healthy-person-emulator.org
 ご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[間接参照を巨大仮想メモリで飲み込む]]></title>
-        <id>hatenablog://entry/6801883189063577538</id>
-        <link href="https://kumagi.hatenablog.com/entry/vm-swizzle-indirection"/>
-        <updated>2023-12-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[この記事はデータベース・システム系 Advent Calendar 2023の3日目の記事である。昨日の記事も僕でした。
-間接参照を巨大仮想メモリで飲み込む
-メインメモリはハードディスクやSSDより容量が小さく、この問題は当面は解決の目処が立たない。
-そもそも今のDRAMより速くて安くて大きいストレージが仮に発明されてもそれがDRAMに取って代わるメインメモリの立ち位置になるだけであってその下のレイヤーには依然としてそのメインメモリより安くて大きなストレージが置かれる事になる。大局的な観点ではストレージの階層構造とは経済活動の鏡像でもある。
-バッファプール
-さて、耳にタコができるほど繰り返しているが現代のデータベースはディスクなどの永続ストレージにデータの本尊が保存され、メインメモリはそれに対する読み書きを高速化するためのデータ一時置き場としての役割を担当している。
-代表的なRDBMSは32KBとか64KBとかの単位でディスクの断片を取り扱っており、これをページと呼ぶ。そのページがどれか必要になるたびにメモリに取り出して管理し、都度発生する読み書きを引き受け、必要がなくなったタイミングでディスクに書き戻す。一つのページに対する複数の書き込みをページ単位での最後の書き戻しで一手に引き受けるのでこれはバッファであり、それをたくさん保持する機構の事をバッファプールと呼ぶ。
-バッファプールはおよそキャッシュでもあるが、その実体はハッシュテーブルと寿命管理が組み合わさった複雑なデータ構造であり、そのアクセスにはそれなりにコストがかかる。データベースのアクセス上重要なインデックス構造ではB+treeが使われる事が多いが、そのB+treeの1ノードは1ページに対応付けて実装するのが常套であるのでB+treeの高さが3なら3回バッファプールを参照する必要がある。
-さて、バッファプールを参照…]]></summary>
-        <author>
-            <name>Software Transactional Memo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[3PCA 3 日目: 自動で送られる Cookie]]></title>
-        <id>https://blog.jxck.io/entries/2023-12-03/3pca-cookie.html</id>
-        <link href="https://blog.jxck.io/entries/2023-12-03/3pca-cookie.html"/>
-        <updated>2023-12-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[このエントリは、 3rd Party Cookie Advent Calendar の 3 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookie前回は 「Cookie は 区別 と 識別 の用途があり、 区別 だけのユースケースもある」という解説をした。今回も、もう少し Cookie の性質を振り返っていく。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
