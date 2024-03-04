@@ -1905,21 +1905,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20231209/20231209234938.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189064519834",
-          "author": null,
-          "description": "このブログではお馴染みのドンキのスマモッチャー、\n年月を経て、次世代機が出たことですっかりみなくなったのですが\nああそうだ、最近ドンキでスマモッチャー見ないな、と思ってたらスマモッチャープラス、って言う新製品が出てたぞ。開発元は例によってRWCだ。例によってソースコードが見当たらないので(まだ買ってないけど)アプリは同じycc365のようだ。ペットコーナーに置くのいいね。https://t.co/2JLUzLogAD pic.twitter.com/rlBJmkijCV\n2020年8月16日\n\n\n \n格安ipカメラとして名を馳せたドンキのスマモッチャー、どうやら名前がイマイチ悪かったと言うことで、「留守番名人」という名前で新機種が出ていた。型番もIP001,002に続くIP003である。発売元は例によってアイダブリューシーである。https://t.co/RbViOdibRz pic.twitter.com/7h0m0IZn14\n2022年10月6日\n\n\n \n突然似たようなカメラが現れました。\n事件っす！ドンキの旧スマモッチャーコンパチの各種OEMのこの形の防犯カメラが1980円っす！！ pic.twitter.com/oteEmlgu6G\n2023年12月2日\n\n\n \nこのカメラ、ご存知のようにODMがたくさんあり、似たような中身のものが売っていることがよく知られています。\nドンキのとアマゾンで買ったHM202\n基板が同じなのは予想してたが、パーツが若干違う。レンズのリングや三脚マウントネジとか。そして筐体、金型レベルで同じだと予想してたけど、ちょっとだけ違う。改版なのか、コピーなのか。 pic.twitter.com/FTvOZbClW1\n2019年5月9日\n\n\n \nこいつも似たようなやつが入っていていろいろ遊べるのかもしれません\n \nというわけで\n買ってきた\n\n \n早速分解します\n\n…うーん、みたことないチップ\n \nそして、、緑のレジストの基板…\nこの手のカメラはCMOSセンサが実装された基板の裏側にSoCがマウントされ、\nレンズがねじ止めされているのが定番ですが…\nFPC接続の小さなカメラモジュールが接続されているようです\n　\nどうやら様子がおかしいですね。\n \nシリアルケーブルを繋いでログを見てみます\n\nRT！！！！\nおお。Linuxじゃないんだ。\nシェル（msh） には入れますが、これは組み込みコマンドをあらかじめ定義して使うものらしく、汎用的なコマンドは分かりません。Flash吸って解析すればわかるかも\n…しかし、現時点ではあまり遊べなそうです。\n \n本体や説明書には書いてないけど、本体裏に技適番号のシールが書いてありますね\n早速検索してみましょう\n\n違う機器やんけ！！！！！！！\nシリアル違いとか、そういうせこいことではなくて、まんま違うやつを持ってくるのは久しぶりに見ましたね。\nなおった\n画質ゴミ\n保存ファイルAVI、MJPG\nPTZするオモチャとしてはなかなかいいと思う pic.twitter.com/XHlpHZxnEX\n2023年12月4日\n\n\n \n画質もゴミです。\nゴミを買いたい人以外にはお勧めしません。おもちゃにはなるかも。\n \nさて、POPが派手に間違っていたのと、この技適問題をドンキに問い合わせメール出したけど３日目、まだ返事が来ませんね。どうなったかな。\n \n\n \n \nまとめスレッドはこちら\nhttps://x.com/bakueikozo/status/1731541385306923387?s=20",
-          "link": "https://honeylab.hatenablog.jp/entry/2023/12/06/131344",
-          "publishedOn": "2023-12-06T04:13:44.000Z",
-          "wordCount": 556,
-          "title": "ドンキにスマモッチャーと同じ形の見守りカメラが格安で売ってたので",
-          "enclosure": {
-            "url": "https://pbs.twimg.com/media/GAerthMa0AA65ZZ?format=jpg&name=small",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": "https://pbs.twimg.com/media/GAerthMa0AA65ZZ?format=jpg&name=small"
         }
       ]
     },
@@ -6574,7 +6559,18 @@
       "title": "なのはなぐらむ",
       "feedUrl": "https://note.com/nano_87g/rss",
       "siteUrl": "https://note.com/nano_87g",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/nano_87g/n/n01d0d5f8774e",
+          "author": null,
+          "description": "前置き\nどうも！なのはなぐらむという物体です！\n前日の3日にバイトが入っていていろいろ業務をこなした結果なんか散歩したくなってきたので散歩をしました！\n続きをみる",
+          "link": "https://note.com/nano_87g/n/n01d0d5f8774e",
+          "publishedOn": "2024-03-04T17:00:34.000Z",
+          "wordCount": 3132,
+          "title": "3月4日の日記",
+          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/67a1c4920c2a6af466f88414c10b4d38bee94f6e.png"
+        }
+      ]
     },
     {
       "title": "Natto(ナット)",
