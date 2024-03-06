@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-03-06T03:01:44.953Z</updated>
+    <updated>2024-03-06T04:01:52.164Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[はてなブログの2024年2月の新機能・機能改善をお知らせします]]></title>
+        <id>hatenablog://entry/6801883189088415684</id>
+        <link href="https://staff.hatenablog.com/entry/2024/03/06/125706_1"/>
+        <updated>2024-03-06T03:57:06.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。
+細かな機能修正・改善
+1.記事投稿完了後の画面のリロードでフォームの再送信がされないようにしました
+同じ記事が重複して投稿されてしまうというお問い合わせをいただくことがございましたが、今回の改修により起こらなくなりました。
+2. デザインテーマ「Neutral」でいくつかの仕様変更を行いました
+デザインテーマ「Neutral」において、下記の仕様変更を行いました
+記事本文末尾の関連記事モジュール等でサムネイル画像を表示するオプションをONにした際に、サムネイルが表示されるようにしました
+モジュールでサムネイル画像を表示するオプションをONにした際に、サムネイルのサイズ指定ができるようになりました
+マージンの調整を行いました]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[子どもとインターネット (一般の家庭内 LAN で手軽に子どもの通信を管理する)]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=23819</id>
