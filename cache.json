@@ -7571,6 +7571,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/frankenphp-on-cloudrun",
+          "author": null,
+          "description": "隙あらば自分語り１ 3/8 14:40-15:20 に phperkaigi で話します。\nPHP を Docker に固めてデプロイするときに ApacheやらNginxが求められることに対して、そもそも Webサーバーとは何かという話をします。\nFrankenPHP…",
+          "link": "https://blog.ojisan.io/frankenphp-on-cloudrun",
+          "publishedOn": "2024-03-07T00:00:00.000Z",
+          "wordCount": null,
+          "title": "FrankenPHP を CloudRun で動かして、1イメージだけでサーバーを実行できるのか試してみる",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/ramen-log",
           "author": null,
           "description": "…",
