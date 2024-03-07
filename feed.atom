@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-03-07T09:01:41.427Z</updated>
+    <updated>2024-03-07T10:01:54.400Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -26,6 +26,17 @@
 続きをみる]]></summary>
         <author>
             <name>河内一馬</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[phperkaigi2024 で Webサーバーを理解して Laravel on Docker する話をします]]></title>
+        <id>https://blog.ojisan.io/phperkaigi-2024-ikuyo</id>
+        <link href="https://blog.ojisan.io/phperkaigi-2024-ikuyo"/>
+        <updated>2024-03-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[予告 3/8 14:40-15:20 に PHPerKaigi のトラックCで話します。
+PHP を Docker に固めてデプロイするときに ApacheやらNginxが求められることに対して、そもそも Webサーバーとは何かを理解し、Docker…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
