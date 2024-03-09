@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-03-09T11:01:51.981Z</updated>
+    <updated>2024-03-09T12:01:55.696Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[現実世界のために：数字で振り返る健常者エミュレータ事例集2周年]]></title>
+        <id>hatenablog://entry/6801883189089394590</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2024/03/09/210000"/>
+        <updated>2024-03-09T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+健常者エミュレータ事例集に初めて投稿された記事は、管理人がテスト目的で投稿した以下の記事だった。
+healthy-person-emulator.org
+この投稿をしたのが2022年の3月3日であり、2年前のことになる。今日2024年3月9日時点で合計投稿数は8985件、コメントの総数は20081件にもなった。改めて、健常者エミュレータ事例集の発展に協力してくれたユーザーに感謝したい。投稿してくれたユーザー、コメントしてくれたユーザー、運営に協力してくれたユーザー、投稿フォームにフィードバックをくれたユーザー、Discordのコミュニティ運営を手伝ってくれたユーザー、応援してくれたユーザー、技術的なサポートをくれたユーザーなど、様々なユーザーの支えで健常者エミュレータ事例集は成り立っている。
+健常者エミュレータ事例集は健常者・非健常者を問わず、多くの訪問者が投稿やコメントを通じて互いに情報を共有する場所となってきた。そんな健常者エミュレータ事例集の2周年を、わかりやすく数字で振り返ってみたいと思う。健常者エミュレータ事例集がどのような性質を持つサイトなのか、少しでも伝われば幸いである。
+はじめに
+基礎数値
+月ごとの投稿数
+コメント数
+PV数
+人気のあったコンテンツ
+いいね数が多かったページ
+1. 言葉は人格修正パッチである（いいね数：163）
+2. 認知症患者の記憶力を侮ってはいけない（いいね数：125）
+3. 異常行為でも行動の健常化につながることがある（いいね数：98）
+PV数の多かったページ
+1. セックス中にコンパクト性を確認しない
+2. [メタ事例]コミュニケーションの目的は情報伝達だけではない
+3. 横浜のデートで北朝鮮の工作船を見に行こうとしてはいけない
+コメント数の多かったページ
+1. 先生の言うことにすぐに従うべきでは無い。（コメント数：129）…]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[24/3/9 お題箱回141：ゲームプランナーのKPI分析、日本語変数etc]]></title>
         <id>hatenablog://entry/6801883189086044544</id>
@@ -13052,26 +13082,6 @@ LLVMの最適化は「LLVM-IRで表現されたコード」を入力として「
         <summary type="html"><![CDATA[【IIJ 2023 TECHアドベントカレンダー 12/10の記事です】 今年も楽しかるべきクリスマスがやってくる. しかしどうも華やいだ気分になれないのは, 連日報道されるイスラエルとパレスチナの紛...]]></summary>
         <author>
             <name>和田 英一</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[3PCA 11 日目: Cookie Banner]]></title>
-        <id>https://blog.jxck.io/entries/2023-12-11/3pca-banner.html</id>
-        <link href="https://blog.jxck.io/entries/2023-12-11/3pca-banner.html"/>
-        <updated>2023-12-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[このエントリは、 3rd Party Cookie Advent Calendar の 11 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookie前回は、各国で法律が整備されていった流れや、主な法律の特徴を解説した。しかし、法律はあくまで法律であり仕様ではないため、「どう実装するべきか」は各サービスに委ねられている(ガイドラインなどはあるが)。多くの場合これを Web の実装に落とし込むと、いわゆる「Cookie バナー」相当になるわけだ。今回は、実世界でどのようなバナーが提供されているのかを見ていく。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Next.js の OpenTelemetry サポートを使う方法]]></title>
-        <id>https://blog.ojisan.io/next-otel</id>
-        <link href="https://blog.ojisan.io/next-otel"/>
-        <updated>2023-12-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[なんか今日、megumish が CNDT 2023 で Next.js と otel の話をする らしい。そこで話されてしまうと、下書きに入れてあった Next.js と otel の記事が二番煎じになって出しにくくなりそうだったので大急ぎで書いている。 OGPは小樽のnext…]]></summary>
-        <author>
-            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>

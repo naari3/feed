@@ -1227,6 +1227,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189089394590",
+          "author": null,
+          "description": "はじめに\n健常者エミュレータ事例集に初めて投稿された記事は、管理人がテスト目的で投稿した以下の記事だった。\nhealthy-person-emulator.org\nこの投稿をしたのが2022年の3月3日であり、2年前のことになる。今日2024年3月9日時点で合計投稿数は8985件、コメントの総数は20081件にもなった。改めて、健常者エミュレータ事例集の発展に協力してくれたユーザーに感謝したい。投稿してくれたユーザー、コメントしてくれたユーザー、運営に協力してくれたユーザー、投稿フォームにフィードバックをくれたユーザー、Discordのコミュニティ運営を手伝ってくれたユーザー、応援してくれたユーザー、技術的なサポートをくれたユーザーなど、様々なユーザーの支えで健常者エミュレータ事例集は成り立っている。\n健常者エミュレータ事例集は健常者・非健常者を問わず、多くの訪問者が投稿やコメントを通じて互いに情報を共有する場所となってきた。そんな健常者エミュレータ事例集の2周年を、わかりやすく数字で振り返ってみたいと思う。健常者エミュレータ事例集がどのような性質を持つサイトなのか、少しでも伝われば幸いである。\nはじめに\n基礎数値\n月ごとの投稿数\nコメント数\nPV数\n人気のあったコンテンツ\nいいね数が多かったページ\n1. 言葉は人格修正パッチである（いいね数：163）\n2. 認知症患者の記憶力を侮ってはいけない（いいね数：125）\n3. 異常行為でも行動の健常化につながることがある（いいね数：98）\nPV数の多かったページ\n1. セックス中にコンパクト性を確認しない\n2. [メタ事例]コミュニケーションの目的は情報伝達だけではない\n3. 横浜のデートで北朝鮮の工作船を見に行こうとしてはいけない\nコメント数の多かったページ\n1. 先生の言うことにすぐに従うべきでは無い。（コメント数：129）…",
+          "link": "https://contradiction29.hatenablog.com/entry/2024/03/09/210000",
+          "publishedOn": "2024-03-09T12:00:00.000Z",
+          "wordCount": 536,
+          "title": "現実世界のために：数字で振り返る健常者エミュレータ事例集2周年",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240309/20240309145712.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240309/20240309145712.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189086333879",
           "author": null,
           "description": "健エミュに書こうと思ったがマニアックすぎたのでやめた。自作PCの話だ。\n朝起きて自作PCの電源を入れてみると、ディスプレイに映像が出なくなっていた。昨日までは動作したが、今日はなぜか動作しない。心当たりは特にない。とりあえずグラボの抜き差しや別ディスプレイでの映像出力を試したが効果がないので、BIOSをアップデートすることにした。マザーボードはASRockのX570S Phantom Gaming Riptideだった。\n\nASRock マザーボード X570S PG Riptide AMD Ryzen 5000 シリーズ CPU (Soket AM4) 対応 X570 ATX マザーボード 【国内正規代理店品】\n\nASRock\nAmazon\n\n自作PCの構成は以下の通り：\nCPU：AMD Ryzen 7 5800X\nDRAM：Crucialの32GB × 2枚\nグラボ：MSI GeForce RTX™ 4090 SUPRIM X 24G\nマザーボード：ASRock X570S Phantom Gaming Riptide\nLAN：Archer TX3000E\nX570S Phantom Gaming RiptideにはBIOSフラッシュバック機能が搭載されており、画面が映らなくても背面USB経由でマザーボードのBIOSを更新することができる。このときに間違えてB550 Phantom Gaming RiptideのBIOSを入れてしまった。\nそのあとはステータスチェッカーの「CPU」と「DRAM」が点灯し、すべてがダメになった。メモリの抜き差しやCPUの抜き差しなどいろいろ試した後、(最初にやればよかった)CMOSクリアを実施し、BIOSの再度アップデートを試したが正常に起動しなかった。\nもう自分の手ではどうにもならんと思い、秋葉原に行ってツクモの「基本構成パーツ診断」のサポートを受けた。基本構成パーツ診断では、マザーボード・CPU・メモリ・電源・VGAの起動がうまくいかない場合に問題個所を特定してくれる。\nsupport.tsukumo.co.jp\nどうやらCMOSクリアがうまくできていなかったらしく、店員さんがCMOSクリアを実施し、BIOSアップデートをしたらBIOS起動画面までたどり着いた。その後は家に持ち帰り、SSDを接続しWindowsの起動を試したが、異常終了してしまった。いろいろ試した後、BIOS設定からブートの順番を変更したら正常に稼働した。なぜブート順番を変更したら正常に稼働したのかはよくわからない。\n結局最初にディスプレイに映像が出力されなかったのはなぜなのだろう。なぜ壊れたのかわからないし、なぜ治ったのかもよくわからない。明日また壊れているんじゃないかと思える。",
@@ -7383,16 +7398,6 @@
           "wordCount": 278,
           "title": "3PCA 12 日目: 終わりの始まり",
           "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
-        },
-        {
-          "id": "https://blog.jxck.io/entries/2023-12-11/3pca-banner.html",
-          "author": null,
-          "description": "このエントリは、 3rd Party Cookie Advent Calendar の 11 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookie前回は、各国で法律が整備されていった流れや、主な法律の特徴を解説した。しかし、法律はあくまで法律であり仕様ではないため、「どう実装するべきか」は各サービスに委ねられている(ガイドラインなどはあるが)。多くの場合これを Web の実装に落とし込むと、いわゆる「Cookie バナー」相当になるわけだ。今回は、実世界でどのようなバナーが提供されているのかを見ていく。",
-          "link": "https://blog.jxck.io/entries/2023-12-11/3pca-banner.html",
-          "publishedOn": "2023-12-11T00:00:00.000Z",
-          "wordCount": 821,
-          "title": "3PCA 11 日目: Cookie Banner",
-          "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
         }
       ]
     },
@@ -7554,16 +7559,6 @@
           "wordCount": 788,
           "title": "自炊レクイエム",
           "imageUrl": "https://blog.ojisan.io/static/c366b3d5dc6cbecffc375dea94299834/b0cbe/visual.jpg"
-        },
-        {
-          "id": "https://blog.ojisan.io/next-otel",
-          "author": null,
-          "description": "なんか今日、megumish が CNDT 2023 で Next.js と otel の話をする らしい。そこで話されてしまうと、下書きに入れてあった Next.js と otel の記事が二番煎じになって出しにくくなりそうだったので大急ぎで書いている。 OGPは小樽のnext…",
-          "link": "https://blog.ojisan.io/next-otel",
-          "publishedOn": "2023-12-11T00:00:00.000Z",
-          "wordCount": 1245,
-          "title": "Next.js の OpenTelemetry サポートを使う方法",
-          "imageUrl": "https://blog.ojisan.io/static/759137fb8f9d403b36335f9c9adece21/1742c/visual.png"
         }
       ]
     },
