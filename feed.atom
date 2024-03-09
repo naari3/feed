@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-03-09T09:01:47.852Z</updated>
+    <updated>2024-03-09T10:01:47.773Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[24/3/9 お題箱回141：ゲームプランナーのKPI分析、日本語変数etc]]></title>
+        <id>hatenablog://entry/6801883189086044544</id>
+        <link href="https://saize-lw.hatenablog.com/entry/2024/03/09/190000"/>
+        <updated>2024-03-09T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[お題箱回141
+833.ゲームプランナーです。
+KPIの分析に苦手意識があります。（売上、DAU、DRU、PU、ARPPU、課金率、継続率など）
+仕事は数年続けていますが、分析方法は我流ではっきりと定まっておらず、実際の施策に活かせている実感もあまりありません。
+LWさんはどのように分析していましたか。
+参考にした書籍やサイト等もあれば教えてほしいです。
+無職の身で仕事のアドバイスをするのは気が引けますが聞かれてしまったので答えます（聞き方的にコンシューマーではなくソシャゲ運営プランナーという前提で答えます）。
+KPIには立場によって色々な見方があるので、KPI分析に着手する前にまず立場に応じた目的をはっきりさせましょう。ゲームプランナーはゲーム内容を企画する仕事なので、KPIを分析する目的はゲーム内容を改善することになるはずです。
+しかし売上やDAUのような主要KPIは非常に粗い粒度での指標に過ぎず、それを眺めていてもゲーム内容とどうリンクしているかはほとんどわかりません。KPI自体が分析対象であるというよりは、KPIを呼び水にしてユーザーの動向を細かく深堀りしていくことになります。
+そのためには、KPIの数値変動からゲーム内容の変動に至るまでのロジックをはっきり固める必要があります。自分が作っているゲームの仕組みはどうなっていてユーザーはどう遊んでいるのかを具体的に想像しながら、あるKPIの動きはユーザーがどこでどう動いた結果として生じたのかという仮説を立てて調べてください。
+例えば今週の主要KPIのうちで売上が大きく減っていたとして、全体売上のグラフを眺めて唸るのは時間の無駄です。そうではなく、ゲーム内で売上を構成する要素を洗い出して、売上変動の内訳はどうなっているのかを具体的に調べましょう。仮にガチャとサブスクと単発商品があったとして、とりあえずメイン収入源である新…]]></summary>
+        <author>
+            <name>LWのサイゼリヤ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.3.9]]></title>
         <id>https://gamegaz.com/?p=40642</id>
@@ -13052,17 +13072,6 @@ LLVMの最適化は「LLVM-IRで表現されたコード」を入力として「
         <summary type="html"><![CDATA[なんか今日、megumish が CNDT 2023 で Next.js と otel の話をする らしい。そこで話されてしまうと、下書きに入れてあった Next.js と otel の記事が二番煎じになって出しにくくなりそうだったので大急ぎで書いている。 OGPは小樽のnext…]]></summary>
         <author>
             <name>blog.ojisan.io's RSS Feed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2023.12.11]]></title>
-        <id>https://gamegaz.com/?p=40012</id>
-        <link href="https://gamegaz.com/2023121140012/"/>
-        <updated>2023-12-10T21:45:13.000Z</updated>
-        <summary type="html"><![CDATA[Apollo PS4(Apollo Save Tool) v1.4.2,BwE File Comparator,chiaki4deck v1.5.0,PSXRF 0.0.3,PFS BatchKit Manager v1.1.8,StellaDS v7.0→→→この記事の続きを読む
-GameGaz Daily 2023.12.11 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
