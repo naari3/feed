@@ -2070,23 +2070,7 @@
       "title": "conceptualization",
       "feedUrl": "https://isobe324649.hatenablog.com/rss",
       "siteUrl": "https://isobe324649.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6801883189066858658",
-          "author": null,
-          "description": "当日投稿でもう一つ\nadventar.org\nの記事を書いてみました。\n突然ですが、数学を勉強してると、以下のような疑問に突き当たるのは僕だけでしょうか？\n位相空間における連続写像が「逆」写像で定義されるのはなぜ？\n測度空間における可測関数が「逆」写像で定義されるのはなぜ？\nこれは分かってしまえばとても簡単なので、説明します。\n結論をいうと、逆写像は集合の演算（AND, OR = 共通部分、合併）を保つけど、写像（を集合関数と見たもの）は保たない、からです。\nそれぞれ見ていきましょう。\n写像と集合演算\n例えば集合をX,YとしてXからYへの写像Fがあるとします。\nXの部分集合X1,X2に対してAND,ORしたものと、それらのFによる像 F(X1),F(X2) (=Yの部分集合) に対してAND,ORしたものを比較してみましょう。\nF(X1 and X2) ⊆ F(X1) and F(X2)\nF(X1 or X2) = F(X1) or F(X2) （これはOK）\n像はAND演算を保ちません。写像は「行き先が一つに定まってれば良い」、つまり異なる入力に対して同じ出力があってもよいです。これは直感的には「写像を通すと情報が減る」という風に私はイメージしています。\n逆写像と集合演算\n同様のことを、今度はYの部分集合Y1,Y2を使って逆写像F^{-1}について考えてみましょう。逆写像は写像と違ってもともと集合関数です。\nF^{-1} (Y1 and Y2)  = F^{-1} (Y1) and F^{-1} (Y2)\nF^{-1} (Y1 or Y2) = F^{-1} (Y1) or F^{-1} (Y2)\nこちらはイコールになります！「逆写像を通しても、情報は減らない」し、「増えもしない（なぜなら入力よりも情報量が減ってるのだから当然）」から、「情報は同じ」です。それが「逆像が集合演算と可換」になることの直感的なイメージです。\nつまりは、\n位相空間における開集合や、測度空間における可測集合は、集合演算に対して閉じていることが要請されるので、well-definedな理論を作るにはその要請をキープするような写像を考える必要があるので、集合関数が集合演算と可換になってる必要があるので、逆写像で定義されるわけです。\n余談: コホモロジーがホモロジーよりも重要になる理由\nまた、これと直接同じ理屈ではないのですが、「ホモロジーよりもコホモロジーの方が自然で使い勝手が良い」という、似た話があるので余談ですが紹介しておきます。\n集合XとYがあり、X上で定義された関数F1と、Y上の定義された関数F2があるとします。値域はF1、F2とも例えば自然数だとしましょう。\n（別に自然数じゃなくても連続値でもTrue/Falseの2値でも{男、女}でも{英語,日本語,中国語,ドイツ語,..}とかでも、なんでも良いです。機械学習の特徴量抽出とかのイメージでも良いです。）\nそれと、XからYへの写像fがあるとします。このときに、fとの合成を使って「新しい関数」を作る方法を考えてみましょう。\nまず、F1とfの合成を考えてみましょう。F1はX上の関数ですが、x∊Xに対してF1(x)は自然数（値域の要素）になってしまい、写像fと合成が出来ません。またx∊Xに対して先に写像fを適用してしまうと集合Yのほうに舞台が移ってしまい関数F1は置いてけぼりです。なので合成が出来ません。\nでは、F2とfの合成はどうでしょうか？F2はY上の関数ですが、 x∊X に対して写像fで写すとf(x)∊Yとなり、関数F2を適用でき、F2(f(x))は自然数（値域の要素）となります。めでたく、Y上の関数F2からfとの合成によって新しい（X上で定義された、値域が自然数の）関数を作り出すことができました！！\n（まだ私も勉強し始めたばかりですが）ホモロジーよりもコホモロジーのほうが出来ることが多い、っていう話はこういう理由から来てるようで、一見違いがないように見える部分にも「本質的な違い」が秘められてるという面白い例だと思います。\n参考ページ\n写像の像・逆像と集合との演算証明 | 数学の景色\nコホモロジー - Wikipedia",
-          "link": "https://isobe324649.hatenablog.com/entry/2023/12/15/000911",
-          "publishedOn": "2023-12-14T15:09:11.000Z",
-          "wordCount": 390,
-          "title": "位相空間の連続写像や測度空間の可測関数が「逆」写像を使って定義される理由",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "素人がプログラミングを勉強していたブログ",
@@ -7905,6 +7889,16 @@
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
         {
+          "id": "https://engineering.mercari.com/blog/entry/20240313-tip-for-smooth-remote-development-of-ios-app/",
+          "author": null,
+          "description": "iOSエンジニアのtakecianです。 株式会社メルカリでは YOUR CHOICE という「働く場所・住む場所」を自由に選択できる制度があります。そのため同僚とはリモートワークでコミュニケーションを取りながら仕事を進 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20240313-tip-for-smooth-remote-development-of-ios-app/",
+          "publishedOn": "2024-03-13T11:54:49.000Z",
+          "wordCount": null,
+          "title": "スムーズなリモートワークを実現するためのちょっとした工夫を iOS アプリに入れた話",
+          "imageUrl": null
+        },
+        {
           "id": "https://engineering.mercari.com/blog/entry/20240307-report-dena-techcon-2024/",
           "author": null,
           "description": "こんにちは。メルペイ Engineering Engagement チームの mikichin です。 2月29日に開催された「DeNA TechCon 2024」のオフライン会場にご招待いただきましたので、参加レポート […]",
@@ -9711,16 +9705,6 @@
           "publishedOn": "2023-12-22T15:00:00.000Z",
           "wordCount": 121,
           "title": "vscode-ruby-light 開発日記",
-          "imageUrl": null
-        },
-        {
-          "id": "https://r7kamura.com/articles/2023-12-15-npm-cache",
-          "author": null,
-          "description": "結論から言うと、node_modulesをキャッシュしてnpm ciの実行を省略するのが、多くの場合には有効そうです。",
-          "link": "https://r7kamura.com/articles/2023-12-15-npm-cache",
-          "publishedOn": "2023-12-14T15:00:00.000Z",
-          "wordCount": null,
-          "title": "npm ciのキャッシュ方式の検討",
           "imageUrl": null
         }
       ]
