@@ -7496,6 +7496,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2024/03/15/kagi-search/",
+          "author": null,
+          "description": "最近はGoogleではなくKagi Searchをメインの検索エンジンとして使っています。\nKagi Searchは$108/year($10/month)の有料の検索エンジンです。\n月に1-2万回ぐらいは検索することを考えると、 (108 / (10000 * 12)) * 150 で大体1検索が0.1円ぐらいのイメージですが、LLMを使ったサマライズも含まれた料金なので、実質もう少しコスパは良いと思います。\n検索ソースにはGoogle, Yandex, Mojeek, Braveなどのリソースを使っているので、検索結果自体はGoogleとそこまで変わらないと思います。\nSearch Sources | Kagi’s Docs\n基本的な使い方ではGoogleで見つかったものがKagiで見つからなかったという経験はありません。もちろん、検索の量でGoogleより優れたものはないと思うので、量にフォーカスしたいときはGoogleを使えば良いと思います(逆に今は飽和的になって検索が逆に難しかったり、検索されてないところにコンテンツがあったりして、量でのカバーは難しい感じはします)\n自分がKagiを使う一番理由は検索体験にあると思っています。\nいいところ\nGoogleより良い検索結果が出る(人による)\n\n現状だと英語のリソースの方が日本語より優先されるので良い結果と感じることが多い\n\nたとえば、Googleだと英語の検索結果にしても、日本語のサイトが出てくる(おそらくRegionが日本だと、日本向けの翻訳があったらそっちを出すみたいな感じになっていて、これが嫌)\nhttps://www.google.com/search?q=javascript&lr=lang_en\nKagiは、internationalにすれば基本的に素直に感じる結果が出てくる\nhttps://kagi.co…",
+          "link": "https://efcl.info/2024/03/15/kagi-search/",
+          "publishedOn": "2024-03-14T15:25:00.000Z",
+          "wordCount": null,
+          "title": "Kagi Searchをメインの検索エンジンとして使っている",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2024/02/26/mytweets-next-rsc/",
           "author": null,
           "description": "mytweetsという自分の Twitter/Bluesky の自己ポストの全部検索サービスをNext.js App Router(RSC)で書きなおしました。\nmytweets は Twitter のアーカイブや Bluesky の API を使って自分のポストを S3 に保存しておき、\nS3 Selectを使って全文検索ができる自分専用の Twilog のようなサービスです。\n自分の Tweets をインクリメンタル検索できるサービス作成キット と Tweets をまとめて削除するツールを書いた | Web Scratch\n過去の Tweets を全文検索できる mytweets を Bluesky に対応した。自分用 Twilog みたいなもの | Web Scratch\n最初は CloudFront + Lambda@Edge + Next.js Pages Router で動かしていました。\nその後、Next.js App Router が Stable になったので、App Router + React Server Components(RSC)で書きなおしました。\nこの記事では、Next.js Pages Router から Next.js App Router(RSC)に書きなおした話を紹介します。\nただし、この記事は発散的な内容になっているのと、あまり正確性が保証されてないので、個人的なメモ書きとして読んでください。\nあまりにも長くなったので、あんまり読みやすくは書けませんでした。\nmytweets の動作\nmytweets  は、次のような動作をします。\nクエリがない場合は、S3 Select から最新のポストを取得して表示\nクエリを入力したら、S3 Select の API を使って全文検索を行い、結果を表示\n\nこの動画は、App Router + …",
@@ -9555,16 +9565,6 @@
           "wordCount": null,
           "title": "【噂】PS5 Proの2024年9月発売計画 どうも事実っぽい",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=40047",
-          "author": "mamosuke",
-          "description": "DBI 653,Uberhand Overlay 2.1.2,NUSspli v1.143,PS5 tools for macOS,MechaPwn Development build,ARK-4 v1702686965,OpenXcom-vita v1.0-vita.6,PSPGameTool Version 1.0-beta,amiberry v6.1.0-preview,decky-loader v2.10.11-pre1→→→この記事の続きを読む\nGameGaz Daily 2023.12.16 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023121640047/",
-          "publishedOn": "2023-12-16T03:28:53.000Z",
-          "wordCount": 1512,
-          "title": "GameGaz Daily 2023.12.16",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
