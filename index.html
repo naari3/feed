@@ -78,9 +78,61 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://isobe324649.hatenablog.com/" target="_blank"
+              rel="noopener">conceptualization</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">論文の気になるところだけを短時間で読む方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://isobe324649.hatenablog.com/entry/2024/03/17/163239" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>先日、ビット量子化の手法でBitNetの論文がでてSNSで話題になりました。私も気になったので論文（とその参照論文）を１時間ほど確認して自分なりの要約をツイートしたところ、結構多くのリツイートやいいねをもらいました。
+
+bitnetの論文気になるとこだけ読んだ。
+・二値じゃなく三値（±1と0）なので1.58ビット
+・そのビットで演算するのは積和演算部のみで活性化関数は8ビット（256階調でしきい値で3値化）
+・学習も推論もちゃんと1.58ビットでやる
+・ゼロWeightが特徴量選択として機能
+専用ハード化可能なパート小さそう…
+— Masayuki Isobe (@chiral) 2024年2月28日
+   
+僕みたいなソフトウェアエンジニア職ではあるけどプロの研究者ではない人が最新の技術や論文を読む際に、「気になるところだけに絞って読む」ことが出来ると都合が良いです。
+それについて人それぞれ色んなやり方あると思いますが、本エントリでは私の読み方を説明し、それに基づいた具体的な論文読み例を書いてみます。
+その論文から得たいことを明確にする
+論文には概要（アブストラクト）が付いているので、まずそれを読んで「その論文から得たいこと」を明確にします。アブストラクトに加えて、本文の最後の結論（コンクルージョン）も併せて確認すると良いこともあります。
+例えば、BitNetの論文でしたら、
+どの部分をビットで計算してるのか？DNNモデル全体か？それとも一部か？
+4bitや8bit量子化と比べて何が優り何が劣るのか？性能的に完全に上位互換なのか？
+蒸留(学習時は普通の数値を使い、学習済みモデルをbitに変換する)と比べて（以下同様）
+が私にとって「気になること」でした。なので「これらの問いの答えを論文の中から探す」という読み方をすることになります。
+しかしそれだと、もし仮に論文の中でこれ…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">【噂】PlayStation 5 Pro ベースモデル比で45％レンダリング高速化 PSSRで8K対応も</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024031740690/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>PlayStation 5 Proはレンダリングが45%高速化、レイトレーシング性能はベースモデル比で最大3倍、スペクトラル超解像は最大8K解像度に対応するようです。→→→この記事の続きを読む
+【噂】PlayStation 5 Pro ベースモデル比で45％レンダリング高速化 PSSRで8K対応も first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                  <img src="https://gamegaz.com/wp-content/uploads/PS5-Pro-logo.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander" open>
                 <summary class="article-expander__title">GameGaz Daily 2024.3.17</summary>
@@ -20441,7 +20493,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-03-17T07:01:36.631Z">2024-03-17T07:01:36.631Z</time>
+    <time id="build-timestamp" datetime="2024-03-17T08:01:51.569Z">2024-03-17T08:01:51.569Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

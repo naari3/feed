@@ -2056,7 +2056,23 @@
       "title": "conceptualization",
       "feedUrl": "https://isobe324649.hatenablog.com/rss",
       "siteUrl": "https://isobe324649.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6801883189091480030",
+          "author": null,
+          "description": "先日、ビット量子化の手法でBitNetの論文がでてSNSで話題になりました。私も気になったので論文（とその参照論文）を１時間ほど確認して自分なりの要約をツイートしたところ、結構多くのリツイートやいいねをもらいました。\n\nbitnetの論文気になるとこだけ読んだ。\n・二値じゃなく三値（±1と0）なので1.58ビット\n・そのビットで演算するのは積和演算部のみで活性化関数は8ビット（256階調でしきい値で3値化）\n・学習も推論もちゃんと1.58ビットでやる\n・ゼロWeightが特徴量選択として機能\n専用ハード化可能なパート小さそう…\n— Masayuki Isobe (@chiral) 2024年2月28日\n   \n僕みたいなソフトウェアエンジニア職ではあるけどプロの研究者ではない人が最新の技術や論文を読む際に、「気になるところだけに絞って読む」ことが出来ると都合が良いです。\nそれについて人それぞれ色んなやり方あると思いますが、本エントリでは私の読み方を説明し、それに基づいた具体的な論文読み例を書いてみます。\nその論文から得たいことを明確にする\n論文には概要（アブストラクト）が付いているので、まずそれを読んで「その論文から得たいこと」を明確にします。アブストラクトに加えて、本文の最後の結論（コンクルージョン）も併せて確認すると良いこともあります。\n例えば、BitNetの論文でしたら、\nどの部分をビットで計算してるのか？DNNモデル全体か？それとも一部か？\n4bitや8bit量子化と比べて何が優り何が劣るのか？性能的に完全に上位互換なのか？\n蒸留(学習時は普通の数値を使い、学習済みモデルをbitに変換する)と比べて（以下同様）\nが私にとって「気になること」でした。なので「これらの問いの答えを論文の中から探す」という読み方をすることになります。\nしかしそれだと、もし仮に論文の中でこれ…",
+          "link": "https://isobe324649.hatenablog.com/entry/2024/03/17/163239",
+          "publishedOn": "2024-03-17T07:32:39.000Z",
+          "wordCount": 396,
+          "title": "論文の気になるところだけを短時間で読む方法",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
     },
     {
       "title": "素人がプログラミングを勉強していたブログ",
@@ -8136,6 +8152,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=40690",
+          "author": "mamosuke",
+          "description": "PlayStation 5 Proはレンダリングが45%高速化、レイトレーシング性能はベースモデル比で最大3倍、スペクトラル超解像は最大8K解像度に対応するようです。→→→この記事の続きを読む\n【噂】PlayStation 5 Pro ベースモデル比で45％レンダリング高速化 PSSRで8K対応も first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024031740690/",
+          "publishedOn": "2024-03-17T07:26:09.000Z",
+          "wordCount": 1480,
+          "title": "【噂】PlayStation 5 Pro ベースモデル比で45％レンダリング高速化 PSSRで8K対応も",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/PS5-Pro-logo.png"
+        },
         {
           "id": "https://gamegaz.com/?p=40688",
           "author": "mamosuke",
