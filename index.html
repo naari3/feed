@@ -74,6 +74,45 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-03-17">2024-03-17</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2024-03-16</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/03/17/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+github.com
+activerecord-originator にベンチマークスクリプトを追加した。
+これを追加したことによって、どの程度パフォーマンスが劣化しているかが分かった。単純に#to_sqlを呼び出す場合で3倍ぐらい、実際にselectクエリを発行する場合でも2倍ぐらいの速度差が出ていた。クエリを発行しているのはメモリ上のsqliteだし、レコードも100件しか作っていないからあまり現実的な比較ではない。
+github.com
+activerecord-originatorの速度改善をした。今まではすべてのNodeを拡張してinitialize時にcallerを保存していたのだけど、これをクエリに位置情報を差し込みたいNodeだけ拡張するようにした。
+これによって、#to_sqlは71~78%程度、クエリの実行は84~86%程度の速度劣化に抑えられた。
+これだけ速度劣化が小さく出ていれば、実アプリケーションに入れたときの速度差は気にならないぐらいになっていそう(たぶん)。単純なクエリ実行の例だと、1回あたり0.02ミリ秒しかオーバーヘッドが乗ってない計算になりそう。
+この変更を入れたのでv0.2.0をリリースした
+github.com
+そういえばIS NULLとかを考えていなかったな、と思ってテストを書いてみたら、特に何もせず通って便利だった。
+すでに実装は済んでいたけど、テストがあったほうが後々嬉しくなる可能性がありそうなのでテストだけ追加した。
+where(&quot;title LIKE ?&quot;, &quot;%#{title}%&quot;) みたいなやつの対応を考えていたのだけど、むずそう。
+これはSqlLiteral nodeとして扱われるのだけど、このNodeが特殊で、どうやら作られるタイミングは#whereが呼ばれるタイミングではなく#to_sqlが呼ばれるタイミングっぽい。それだとこのnodeのinitializeにhookしてもほしい位置情報が取れなくて困る。
+いい解決方法あるかなあ。あんまり思いつかない。whereメソッドを上書きして…とかやればできるだろうけどやりたくないよねえ</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-03-16">2024-03-16</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18316,60 +18355,6 @@ snd: なし
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://lixy.hatenablog.com/" target="_blank"
-              rel="noopener">空回り</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">小説書いた！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://lixy.hatenablog.com/entry/2023/12/18/%E5%B0%8F%E8%AA%AC%E6%9B%B8%E3%81%84%E3%81%9F%EF%BC%81" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>とはいえ商業出版とかのたぐいではなくて、単に自主的にWeb公募に投げただけですが、よろしくお願いいたします。一次創作は「真矢川」(まやかわ)の名前でやることになるとおもいます。特に隠しているわけではありません(なのでこうしてブログにしたためています)。
-でもTwitterで大っぴらにするのはなんとなく恥ずかしいので、僕からはブログにとどめておきます。ここにたどりついたあなたは、Lixyレベル5に到達していると言っても過言ではありません。
-https://kakuyomu.jp/works/16817330668582222581/episodes/16817330668582452883</span>
-                  </div>
-                  <img src="https://cdn.user.blog.st-hatena.com/default_entry_og_image/156461464/1597989735677129" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://satoru-takeuchi.hatenablog.com/" target="_blank"
-              rel="noopener">覚書</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">外部発信のはじめの一歩</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://satoru-takeuchi.hatenablog.com/entry/2023/12/18/215458" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>わたしはよくIT技術系の外部発信をします。手段は記事や書籍の執筆やYouTube動画公開、登壇など、いろいろあります。その立場から、実例をもとに外部発信をするコツを紹介したいとおもいます。外部発信にもいろいろありますが、査読付き論文を書くとかいうすごいことではなく、さくっとブログ記事を書いたり、どこかの勉強会で発表するなどのことを軽いノリでやることを想定しています。
-おもな対象読者は「なんらかの外部発信をしたいけど全然できない」「どうやればできるんだ」などと日々モヤモヤしているかたです。既に外部発信の実績がたくさんあるかたにとっては、人のスタイルを知るといいことがあるかもしれません。外部発信にとくに興味がないかたには役に立たないかもしれません。
-三行まとめ
-まずは「やる」と決める
-普段からちょっとしたことに疑問を持って、調べて、ネタを集めておく
-今できること＋αくらいで、できる範囲でやる
-きっかけ
-今回紹介するのはKernel/VM探検隊北陸part6というイベントでの「device mapperによるディスクI/O障害のエミュレーション」という発表に至るまでの流れです。
-www.youtube.com
- speakerdeck.com
-このイベントが開催されるのはXで知りました。開催場所が自分の住んでいる場所から2時間もかからず行けるところだったのと、旧知の人々と会えること*1、なんかアウトプットしたいと思ったことなどから申し込みました。
-ネタは全然考えてなかったですけど、申し込んだら思いつくだろうと思って申し込みました。このあたりは性格によってかなり変わるのですが、締め切りを設定しないと何もやらない人、締め切りが近づくほど謎のパワーが出てくる人には有効な技です。追い込まれると潰れてしまうタイプの人はさすがにネタを考えてから申し込むほうがいいと思います。
-とにかく大事なの…</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20273,7 +20258,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-03-17T00:02:57.032Z">2024-03-17T00:02:57.032Z</time>
+    <time id="build-timestamp" datetime="2024-03-17T01:25:29.567Z">2024-03-17T01:25:29.567Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
