@@ -1176,6 +1176,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189091932315",
+          "author": null,
+          "description": "activerecord-originator、ここ数日毎日数件海外の人っぽいstarが増えているのだけど、どこからこれが見つけられているのかがさっぱりわからない。\nもっと海外にリーチしていきたいのでヒントがほしい…",
+          "link": "https://commits.hatenablog.com/entry/2024/03/20/100000",
+          "publishedOn": "2024-03-20T01:00:00.000Z",
+          "wordCount": 427,
+          "title": "2024-03-19",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189091297513",
           "author": null,
           "description": "github.com\ngithub.com\nactiverecord-originator にベンチマークスクリプトを追加した。\nこれを追加したことによって、どの程度パフォーマンスが劣化しているかが分かった。単純に#to_sqlを呼び出す場合で3倍ぐらい、実際にselectクエリを発行する場合でも2倍ぐらいの速度差が出ていた。クエリを発行しているのはメモリ上のsqliteだし、レコードも100件しか作っていないからあまり現実的な比較ではない。\ngithub.com\nactiverecord-originatorの速度改善をした。今まではすべてのNodeを拡張してinitialize時にcallerを保存していたのだけど、これをクエリに位置情報を差し込みたいNodeだけ拡張するようにした。\nこれによって、#to_sqlは71~78%程度、クエリの実行は84~86%程度の速度劣化に抑えられた。\nこれだけ速度劣化が小さく出ていれば、実アプリケーションに入れたときの速度差は気にならないぐらいになっていそう(たぶん)。単純なクエリ実行の例だと、1回あたり0.02ミリ秒しかオーバーヘッドが乗ってない計算になりそう。\nこの変更を入れたのでv0.2.0をリリースした\ngithub.com\nそういえばIS NULLとかを考えていなかったな、と思ってテストを書いてみたら、特に何もせず通って便利だった。\nすでに実装は済んでいたけど、テストがあったほうが後々嬉しくなる可能性がありそうなのでテストだけ追加した。\nwhere(\"title LIKE ?\", \"%#{title}%\") みたいなやつの対応を考えていたのだけど、むずそう。\nこれはSqlLiteral nodeとして扱われるのだけど、このNodeが特殊で、どうやら作られるタイミングは#whereが呼ばれるタイミングではなく#to_sqlが呼ばれるタイミングっぽい。それだとこのnodeのinitializeにhookしてもほしい位置情報が取れなくて困る。\nいい解決方法あるかなあ。あんまり思いつかない。whereメソッドを上書きして…とかやればできるだろうけどやりたくないよねえ",
