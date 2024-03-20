@@ -1605,23 +1605,7 @@
       "title": "Islands in the byte stream",
       "feedUrl": "https://gfx.hatenablog.com/rss",
       "siteUrl": "https://gfx.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6801883189068842057",
-          "author": null,
-          "description": "デイリーポータルZの新着記事をBlueskyに投稿するbotを作りました。\ngithub.com\nデイリーポータルZは2024年1月1日から独立した会社になるようですが、状況から察するに実態としては消滅まで秒読みと思われます。インターネットからデイリーポータルZが無くなるのは寂しいので、どこかの企業がスポンサーになってくれることを期待しています。\ndailyportalz.jp\nそれはそれとしてBlueskyのボットを作るのは結構楽しいですね！ボットのコードはRustで書きました。GitHub Actionsの定期実行でRSS feedをポーリングして新しいものがあったらポストする、という素朴なプログラムです:\nbsky.app\nBluesky APIへのアクセスはsugyan/atriumを使いました:\nmemo.sugyan.com\n投稿の本文をリッチテキストにできたり*1、OGPカードを自分で組み立てたりできるので*2、遊びがいがあって楽しいです。\nEnjoy!\n*1:逆にいえば、勝手にURLがリンクになったりはせず、自分でリンクなどを貼らないといけない。\n*2:逆にいえば、勝手にOGPカードが生成されたりはしないので、自分で組み立てないといけない。",
-          "link": "https://gfx.hatenablog.com/entry/2023/12/22/145345",
-          "publishedOn": "2023-12-22T05:53:45.000Z",
-          "wordCount": 470,
-          "title": "デイリーポータルZの新着記事をBlueskyに投稿するbotを作った",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "【ギュウひ】の夜泣き",
