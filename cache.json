@@ -3763,6 +3763,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189091713782",
+          "author": null,
+          "description": "はてなブログでは、ソースコードなどを構文（シンタックス）に応じて色付け（ハイライト）表示する シンタックスハイライトに対応しています。今回、シンタックスハイライトに関する改善を行いました。\njsx, tsx形式のシンタックスハイライトの追加\nJavaScript形式のシンタックスハイライトの改善\njsx, tsx形式のシンタックスハイライトの追加\njsx 及び tsx 形式に新たに対応しました。\nはてな記法、Markdownでのハイライト方法は以下のとおりです。\nはてな記法\n>|jsx|\n\n...ソースコードを記述する...\n\n||<\n\n\nMarkdown\n```jsx\n\n...ソースコードを記述する...\n\n```\n詳しい利用方法やその他の形式の対応につきましては、下記のヘルプをご参照ください。\n\n\nJavaScript形式のシンタックスハイライトの改善\nJavaScriptのシンタックスハイライトの改善を行いました。\n*1。\n 変更前\n     変更後\n    \n\n    \n    \nなお、過去に投稿した記事のハイライトは自動で更新されません。新しいハイライトを反映したい場合、過去記事を編集するなど更新を行う必要があります。\nどうぞよろしくお願いいたします。\n\n*1:Smoothテーマの表示例です",
+          "link": "https://staff.hatenablog.com/entry/2024/03/21/185941",
+          "publishedOn": "2024-03-21T09:59:41.000Z",
+          "wordCount": 857,
+          "title": "jsx, tsx のシンタックスハイライトにも対応しました。また、JavaScriptのハイライトを改善しました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/6801883189091713782/1711015450",
+            "type": "",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6801883189091713782/1711015450"
+        },
+        {
           "id": "hatenablog://entry/6801883189091770535",
           "author": null,
           "description": "本日、2024/3/18 14:03頃～18:02頃まで、クレジットカード情報登録・確認画面における本人確認（パスワード再確認）が正常に動作しない不具合が発生しておりました。\n上記不具合発生期間中に、クレジットカード情報の登録などが行えなかった場合は、お手数ですが再度確認いただきますようお願いいたします。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
@@ -9596,16 +9611,6 @@
           "wordCount": 1546,
           "title": "【自作自演注意】バックアップ起動ができるNintendo Switch向けFlashcart 2024年1月発売か",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/Switch_flashcart.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=40082",
-          "author": "mamosuke",
-          "description": "ARK-4 v1703260642,WiiUDownloader v2.29,Citra for Android 20231222,melonDS Android Beta 1.9.3,Movian v5.0.753→→→この記事の続きを読む\nGameGaz Daily 2023.12.23 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2023122340082/",
-          "publishedOn": "2023-12-22T22:39:49.000Z",
-          "wordCount": 1411,
-          "title": "GameGaz Daily 2023.12.23",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
