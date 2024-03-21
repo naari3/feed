@@ -1987,21 +1987,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189068959806",
-          "author": null,
-          "description": "寒い。数日前からそうだが、ただ突っ立っているだけでも肌を刺すような寒さは今期初めてである。夏が長いというより秋が遅いというよくわからないことを前にツイートしたけど、今日もそう思った。この寒さをもっていまは冬だと実感したのだけど、12月末になってそう感じるのは遅いと思う。11月ごろに秋だと思ったし、8月おわりごろに夏だと思ったし、想定している月と季節がちょっとずつずれているみたいな奇妙さがずっとある。でもきょうは冬至だったらしい。それなら冬だと思うのもわけないか",
-          "link": "https://isitsutbustu-todoke.hatenablog.com/entry/2023/12/22/235250",
-          "publishedOn": "2023-12-22T14:52:50.000Z",
-          "wordCount": 341,
-          "title": "nikki_20231222",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -7672,6 +7657,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2024/03/21/jsprimer-es2024-proposal/",
+          "author": null,
+          "description": "JavaScript PrimerのES2024の対応を進めていく予定なので、\n対応を手伝ってくれるContributorとjsprimerというプロジェクトを支援してくれるSponsorを募集しています。\n3行サマリー\nES2024の対応を6月末までにやるマイルストーンを切りました\nES2024の対応を手伝ってくれるContributorを募集しています\nOpen Collectiveを始めたので、プロジェクトを支援してくれるSponsorを募集しています\njsprimerのES2024対応\njsprimerは毎年のECMAScriptの仕様改定にあわせてメジャーアップデートを行なっています。\n次の更新は、2024年6月末ごろにリリースされる予定のECMAScript 2024に対応する予定です。\nそのため、ES2024の対応とユースケースであるNode.jsに関するアップデートをしていくマイルストーンを切りました。\nv6(ES2024) Milestone\nES2024に対応するマイルストーンをざっとみると、大体ざっくり12-20日分ぐらいのタスクがあります。\n\n大きく分けて次の3つのグループに分かれています。\nES2024の対応\nStage 2.7の追加\nNode.jsのユースケースの更新\nES2024の対応\nES2024ではいくつか機能が増えているので、それに対応するアップデートを行います。\nECMAScript 2024の対応 · Issue #1706というIssueに、ES2024の対応についてのタスクをまとめています。\n具体的に対応したいIssueは次の3つになっています。\nES2024: array-grouping · Issue #1716\nES2024: Well-Formed Unicode Strings · Issue #1715\nES2022…",
+          "link": "https://efcl.info/2024/03/21/jsprimer-es2024-proposal/",
+          "publishedOn": "2024-03-21T01:00:00.000Z",
+          "wordCount": 710,
+          "title": "JavaScript PrimerのES2024対応を手伝ってくれるContributorとSponsorを募集しています",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2024/03/15/kagi-search/",
           "author": null,
           "description": "最近はGoogleではなくKagi Searchをメインの検索エンジンとして使っています。\nKagi Searchは$108/year($10/month)の有料の検索エンジンです。\n月に1-2万回ぐらいは検索することを考えると、 (108 / (10000 * 12)) * 150 で大体1検索が0.1円ぐらいのイメージですが、LLMを使ったサマライズも含まれた料金なので、実質もう少しコスパは良いと思います。\n検索ソースにはGoogle, Yandex, Mojeek, Braveなどのリソースを使っているので、検索結果自体はGoogleとそこまで変わらないと思います。\nSearch Sources | Kagi’s Docs\n基本的な使い方ではGoogleで見つかったものがKagiで見つからなかったという経験はありません。もちろん、検索の量でGoogleより優れたものはないと思うので、量にフォーカスしたいときはGoogleを使えば良いと思います(逆に今は飽和的になって検索が逆に難しかったり、検索されてないところにコンテンツがあったりして、量でのカバーは難しい感じはします)\n自分がKagiを使う一番理由は検索体験にあると思っています。\nいいところ\nGoogleより良い検索結果が出る(人による)\n\n現状だと英語のリソースの方が日本語より優先されるので良い結果と感じることが多い\n\nたとえば、Googleだと英語の検索結果にしても、日本語のサイトが出てくる(おそらくRegionが日本だと、日本向けの翻訳があったらそっちを出すみたいな感じになっていて、これが嫌)\nhttps://www.google.com/search?q=javascript&lr=lang_en\nKagiは、internationalにすれば基本的に素直に感じる結果が出てくる\nhttps://kagi.co…",
@@ -8112,6 +8107,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=40715",
+          "author": "mamosuke",
+          "description": "PS5 Pro情報,RPCN 1.2.3,NUSspli v1.147,suyu v0.0.2-master,WiiStation(WiiSXRX_2022) Ver3.2→→→この記事の続きを読む\nGameGaz Daily 2024.3.21 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024032140715/",
+          "publishedOn": "2024-03-21T02:12:10.000Z",
+          "wordCount": 1486,
+          "title": "GameGaz Daily 2024.3.21",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=40713",
           "author": "mamosuke",
@@ -9732,16 +9737,6 @@
           "publishedOn": "2023-12-23T15:00:00.000Z",
           "wordCount": 141,
           "title": "ドメインをRoute53からCloudflareに移管",
-          "imageUrl": null
-        },
-        {
-          "id": "https://r7kamura.com/articles/2023-12-23-vscode-ruby-light",
-          "author": null,
-          "description": "vscode-ruby-lightの開発中に考えたことを書いていきます。",
-          "link": "https://r7kamura.com/articles/2023-12-23-vscode-ruby-light",
-          "publishedOn": "2023-12-22T15:00:00.000Z",
-          "wordCount": 121,
-          "title": "vscode-ruby-light 開発日記",
           "imageUrl": null
         }
       ]

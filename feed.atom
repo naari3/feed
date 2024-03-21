@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-03-21T02:08:35.319Z</updated>
+    <updated>2024-03-21T03:01:53.115Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2024.3.21]]></title>
+        <id>https://gamegaz.com/?p=40715</id>
+        <link href="https://gamegaz.com/2024032140715/"/>
+        <updated>2024-03-21T02:12:10.000Z</updated>
+        <summary type="html"><![CDATA[PS5 Pro情報,RPCN 1.2.3,NUSspli v1.147,suyu v0.0.2-master,WiiStation(WiiSXRX_2022) Ver3.2→→→この記事の続きを読む
+GameGaz Daily 2024.3.21 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024-03-20]]></title>
         <id>hatenablog://entry/6801883189092310820</id>
@@ -21,6 +32,39 @@ github.com
 graphql-coverage を久々にいじっていたら、新しいRubyのバージョンでCIが走っていなかったので有効にした。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JavaScript PrimerのES2024対応を手伝ってくれるContributorとSponsorを募集しています]]></title>
+        <id>https://efcl.info/2024/03/21/jsprimer-es2024-proposal/</id>
+        <link href="https://efcl.info/2024/03/21/jsprimer-es2024-proposal/"/>
+        <updated>2024-03-21T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[JavaScript PrimerのES2024の対応を進めていく予定なので、
+対応を手伝ってくれるContributorとjsprimerというプロジェクトを支援してくれるSponsorを募集しています。
+3行サマリー
+ES2024の対応を6月末までにやるマイルストーンを切りました
+ES2024の対応を手伝ってくれるContributorを募集しています
+Open Collectiveを始めたので、プロジェクトを支援してくれるSponsorを募集しています
+jsprimerのES2024対応
+jsprimerは毎年のECMAScriptの仕様改定にあわせてメジャーアップデートを行なっています。
+次の更新は、2024年6月末ごろにリリースされる予定のECMAScript 2024に対応する予定です。
+そのため、ES2024の対応とユースケースであるNode.jsに関するアップデートをしていくマイルストーンを切りました。
+v6(ES2024) Milestone
+ES2024に対応するマイルストーンをざっとみると、大体ざっくり12-20日分ぐらいのタスクがあります。
+
+大きく分けて次の3つのグループに分かれています。
+ES2024の対応
+Stage 2.7の追加
+Node.jsのユースケースの更新
+ES2024の対応
+ES2024ではいくつか機能が増えているので、それに対応するアップデートを行います。
+ECMAScript 2024の対応 · Issue #1706というIssueに、ES2024の対応についてのタスクをまとめています。
+具体的に対応したいIssueは次の3つになっています。
+ES2024: array-grouping · Issue #1716
+ES2024: Well-Formed Unicode Strings · Issue #1715
+ES2022…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -12863,26 +12907,6 @@ GBAで使う8adファイルは約14MBでした。容量オーバーを考慮し�
 GameGaz Daily 2023.12.23 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[vscode-ruby-light 開発日記]]></title>
-        <id>https://r7kamura.com/articles/2023-12-23-vscode-ruby-light</id>
-        <link href="https://r7kamura.com/articles/2023-12-23-vscode-ruby-light"/>
-        <updated>2023-12-22T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[vscode-ruby-lightの開発中に考えたことを書いていきます。]]></summary>
-        <author>
-            <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[nikki_20231222]]></title>
-        <id>hatenablog://entry/6801883189068959806</id>
-        <link href="https://isitsutbustu-todoke.hatenablog.com/entry/2023/12/22/235250"/>
-        <updated>2023-12-22T14:52:50.000Z</updated>
-        <summary type="html"><![CDATA[寒い。数日前からそうだが、ただ突っ立っているだけでも肌を刺すような寒さは今期初めてである。夏が長いというより秋が遅いというよくわからないことを前にツイートしたけど、今日もそう思った。この寒さをもっていまは冬だと実感したのだけど、12月末になってそう感じるのは遅いと思う。11月ごろに秋だと思ったし、8月おわりごろに夏だと思ったし、想定している月と季節がちょっとずつずれているみたいな奇妙さがずっとある。でもきょうは冬至だったらしい。それなら冬だと思うのもわけないか]]></summary>
-        <author>
-            <name>遺失物取扱所</name>
         </author>
     </entry>
     <entry>
