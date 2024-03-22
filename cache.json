@@ -1956,21 +1956,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189069234135",
-          "author": null,
-          "description": "ツイッターではサンタクロースについてどう言及しても冷笑っぽくなってしまうのは少し悲しく、しかしサンタに限らず、何を言っても文脈に回収されるような、そういう空間ではあると思う。もちろんサンタクロースはいるだろう。自分が小学生のころを振り返ると、そういうものなのか分からないが、わりと夢想家な生徒だった。ひとりで帰ってばかりいたので、自分に都合のいい想像を繰り広げていたり、空を見てufoがあったらいいなとか探してたりしていた。四つ葉のクローバーを探すのも好きだった（いまもたまにやる）。\n \n物語の中のオカルト研とかオカルトマニアとかはずっと好きである（黒鳥千代子の影響？）。オカルト研と聴いて思いつくのはけいおんに出てきた2人くらいではあるけど。小学校のころはそういうキャラを単なる同志として見ていたが、いまはもう少し違って、単に好きなものを突き詰めている姿とかイノセンスさによさを感じる。校舎の隅っことかで不気味がられながらも本人たちは楽しんでいる、みたいな光景が愛おしい。\n \nオカルトもufoもいまでは陰謀論のことを考えずにはいられなくなってしまった。あまり見かけないというか、児童書とかでの扱いはどうなったのか気になる。TRPGではオカルトや怪奇現象を探究する集団や部活というのはよくある。こちらも親にtrpgのセッションを理解してもらうにはどうすればいいか、という話題が前にツイッターであったのを憶えている。何時間もネットに向かって神話生物だったりの用語を話すわけである。そういうことを信じるのが難しくなっているのは、単に自分が大きくなったからだけではないだろう。小学校のころの私が持っていたのは好奇心だった。だからその対象が魔術や怪奇現象でなくてもよくて、図鑑とかを読めばそれは満たされていた。でもサンタとか魔法とかいまだに信じたくて、それはまた陰謀論や疑似科学とはまた違うところで成立すると思いたい。それでも、かもしれない、と想像する愉しみを持っていたいというかそんな感じである。",
-          "link": "https://isitsutbustu-todoke.hatenablog.com/entry/2023/12/24/010920",
-          "publishedOn": "2023-12-23T16:09:20.000Z",
-          "wordCount": 346,
-          "title": "nikki_20231224",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -7761,6 +7746,46 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=24475",
+          "author": "IIJ Engineers Blog編集部",
+          "description": "2024年3月発行のIIJの技術レポートIIR vol.62 第3章では、IIJ創業30周年特別コンテンツとして、データセンターを取り上げています。 日本における商用インターネット開始前夜を含む199...",
+          "link": "https://eng-blog.iij.ad.jp/archives/24475",
+          "publishedOn": "2024-03-22T04:07:48.000Z",
+          "wordCount": 1679,
+          "title": "「IIJとデータセンターの変遷〜この30年を振り返って」（IIR vol.62 3章）",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/03/d8c94761d4bd844f06a55055c4897d99.png"
+        },
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=24469",
+          "author": "IIJ Engineers Blog編集部",
+          "description": "2024年3月に発行したIIJの技術レポートIIR vol.62 第2章では、IIJ技術研究所の櫻庭が情報処理学会で発表した「送信ドメイン認証技術を用いた送信者レピュテーションの構築手法とフィードバッ...",
+          "link": "https://eng-blog.iij.ad.jp/archives/24469",
+          "publishedOn": "2024-03-22T04:07:41.000Z",
+          "wordCount": 1691,
+          "title": "「送信者レピュテーションの構築手法に関する研究」（IIR vol.62 2章 フォーカス・リサーチ）",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/03/b96993266298c7673baa338dc15bc53e.png"
+        },
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=24365",
+          "author": "IIJ Engineers Blog編集部",
+          "description": "2024年3月に発行したIIJの技術レポートIIR vol.62 第1章では、年1回のセキュリティに関する定期観測レポート「SOCレポート」をお届けします。 本報告のポイント 2023年のセキュリティ...",
+          "link": "https://eng-blog.iij.ad.jp/archives/24365",
+          "publishedOn": "2024-03-22T04:07:27.000Z",
+          "wordCount": 1690,
+          "title": "2023年のセキュリティサマリ：定期観測レポート「SOCレポート」（IIR vol.62 1章）",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/03/67488b523e9f5084f672a978061dcda1.png"
+        },
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=24362",
+          "author": "IIJ Engineers Blog編集部",
+          "description": "※本記事は、2024年3月発行のIIR Vol.62より「エグゼクティブサマリ」を転載したものです。 エグゼクティブサマリ 本年最初の「IIR」Vol.62をお届けします。日本の2024年は能登半島を...",
+          "link": "https://eng-blog.iij.ad.jp/archives/24362",
+          "publishedOn": "2024-03-22T04:07:14.000Z",
+          "wordCount": 1690,
+          "title": "IIJの季刊技術レポート「IIR vol.62」（2024年3月号） 発行のご挨拶",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/03/f9fd259376f1bb114dea573e096635c6.png"
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=24234",
           "author": "今西 亮太",
