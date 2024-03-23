@@ -78,6 +78,75 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
+              rel="noopener">honeylab&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">DAMの機械でDOOMが動いた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2024/03/23/232541" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>別にこれをやろうと思ってたわけではないんだけど、そういえばやってなかったな、というのと
+DAMの機械でDOOM、DAAMじゃん、とかくだらないことを思いついたのでやってみることにしました。
+ 
+ここまでのリバエンの成果で、一応画面に何かしら出せることはわかっていました。
+しかし、動作している時に割り込んだりしているのでいまいち思い通りにはかけていませんでした。
+内部歌詞バックバッファにアクセスできる証拠として歌詞を二重書きして見せようとしたら、内部歌詞行カウンタが自動インクリメントだったため異世界カラオケになってしまった pic.twitter.com/wDsgQgl45K
+2024年3月8日
+
+
+ 
+そこで、DAMの機械の中の描画関数について調べていきました。
+どうやら、CScreenというクラスがあり、そいつが描画関数を持っているらしい、ということはわかったのですが、いまいち挙動がよくわかりません。
+あちらこちらにprintfやメモリダンプを埋め込み、調べていた結果、ある程度のまとめを得ました。
+うーんなるほど、Create(LayerID,position,size)を呼ぶと、既設のLayerに対してsizeのWindowという名のScreenが作られるのか。GetBufferでアクセスするときはLayerIDに対してのBufferが出てくるので、positionのオフセットでsizeの塗りをしないといけないんだな。ようやく階層がわかった。 pic.twitter.com/fnIvOEl2S1
+2024年3月23日
+
+
+ 
+システムは以下の描画レイヤを持ち、バッファサイズとカラーフォーマットは以下の通り
+0 LAYER_OSD 1280x720　INXDEXED SP8　
+1 LAYER_LYRIC 1280x2880 RGB32
+2 LAYER_SCORE 704x1920 RGB32
+3 LAYER_VIDEO 1280x720 RGB32
+4 LAYER_TFT_LYRIC 512x2048 TFT_RGB16
+5 LAYER_TFT_BACK 512x2048 TFT_RGB16
+6 LAYER_SUB_VIDEO 704x480　RGB32
+・CScreenインスタンスを作成後、CreateメソッドでLayer IDとposition,sizeを指定すると、その大きさを持つサブウィンドウとして実体化される
+・CScreenインスタンスは以下の描画メソッドを持ち、それぞれが作成したサブウィンドウ左上を０とする座標で描画可能。実際には親レイヤを参照し、ウィンドウ内に描画している。
+
+PutCharの中身
+
+・CSpriteというオブジェクトがあって、スプライト描画機能を持っている。
+AddしてPutしておくと、スプライトとして保持される
+これらを元に、とりあえずLAYER_LYRICレイヤを実体化し、
+このバックバッファにDOOMのfb用のバックバッファを転送することで、
+
+↑LyricLayerにバッファ作成し
+↓DOOMのバッファからコピーする
+
+このようにDOOMの画面を表示することができました。
+やっとDAAM動いた pic.twitter.com/RPCQaoRMNu
+2024年3月23日
+
+
+ 
+しかし、ピクセル単位での転送なので結構重いね...
+LAYER_VIDEOはどうやらデコーダからのDMAで受け取るっぽいのでその辺で何かできないかな？
+ 
+さてしかし、ここまでやったおかげで描画周りを明確に把握することができましたので、
+カラオケ再生中に追加情報を表示するのも割とできたりするような気もしてきましたぞ。</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20240323/20240323231726.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
               rel="noopener">あーさん日記</a></h3>
           <section class="articles-per-source">
@@ -18036,30 +18105,6 @@ GameGaz Daily 2023.12.26 first appeared on 大人のためのゲーム講座.</s
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2023.12.25</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2023122540106/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>etaHEN 1.21b,ps5 hen for 4.03 testkit,Textures Converter v1.0,BwE PS4 NOR Validator &amp; Syscon Patcher Web Edition,CFW Evilnat 4.90.2 BETA v22,ARK-4 v1703378326,Wii Uと3DSで新規のオンライン接続不可,Swiss v0.6r1562,yuzu-android-171→→→この記事の続きを読む
-GameGaz Daily 2023.12.25 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">37C3でPoroCYon氏がニンテンドーDSiのJailbreakを発表</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2023122540102/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>世界中のハッカーが成果を発表する第37回 CCC(Chaos Communication Congress: 37C3)でPoroCYon氏がニンテンドーDSiに関する発表を行うことが明らかになりました。→→→この記事の続きを読む
-37C3でPoroCYon氏がニンテンドーDSiのJailbreakを発表 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -18207,63 +18252,6 @@ GitHub Sponsors 登録手順
                   <div class="article-summary-box-inner">
                     <span>※本記事は、2023年12月発行のIIR Vol.61より「エグゼクティブサマリ」を転載したものです。 エグゼクティブサマリ 2023年最後の「IIR Vol.61」では、この1年を振り返ってみたいと...</span>
                   </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
-              rel="noopener">週刊はてなブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">今週のはてなブログランキング〔2023年12月第4週〕</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.hatenablog.com/entry/2023/12/25/120000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>はてなブログ独自の集計による人気記事のランキング。12月17日（日）から12月23日（土）〔2023年12月第4週〕のトップ30です*1。
-#
-    タイトル／著者とブックマーク
-    
-1
-    「いにしえの00年代のインターネットへの憧れ」はわかる気がする - シロクマの屑籠
- by id:p_shirokuma 
-    
-2
-    ダイソーのUSB人感センサーケーブルに可能性を感じる〜 - あっきぃ日誌
- by id:Akkiesoft 
-    
-3
-    こんなエンジニアリングマネージャだから仕事がしやすいんだなぁと思う10個のこと - Mitsuyuki.Shiiba
- by id:bufferings 
-    
-4
-    Googleがサポート詐欺を支援し収益を上げる 実際に表示された130の広告【俺の詐欺画像フォルダが火を吹くぜ】 - web &gt; SEO
- by id:t-w-o 
-    
-5
-    ITS健保制覇攻略ーー補助がこんなにお得なのに意外と使われていない件 - KAYAC engineers&#x27; blog
- by id:kayactech 
-    
-6
-    『メタバースの失敗はセカンドライフの失敗を元に学べ』とか言う人はだいたいエアプなのでSL歴16年目の私が教えます - urakatahero”B”log
- by id:urakatahero 
-    
-7
-    「仮説ドリブン」という名の甘い罠 - 渋谷駅前で働くデータサイエンティストのブログ
- by id:TJO 
-    
-8
-    1人でもかけ流しの温泉付きの部屋に泊まれて食事もおいしい！ご褒美温泉宿を10軒厳選した - 温泉ブログ 山と温泉のきろく
- by id:happydust 
-    
-9
-    AIはどこまで無断で学習できるのか。～文化庁の生成…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20231225/20231225093726.jpg" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -20173,7 +20161,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-03-23T14:01:59.222Z">2024-03-23T14:01:59.222Z</time>
+    <time id="build-timestamp" datetime="2024-03-23T15:01:53.494Z">2024-03-23T15:01:53.494Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
