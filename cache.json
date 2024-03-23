@@ -2339,23 +2339,7 @@
       "title": "北の大地のIT技術屋より",
       "feedUrl": "https://kitano-daichino-gijyutuya.hatenadiary.jp/rss",
       "siteUrl": "https://kitano-daichino-gijyutuya.hatenadiary.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6801883189069093594",
-          "author": null,
-          "description": "遅ればせながら、SpringBatch4系から5系にアップグレードが発生しそうなので、自分用メモ。\n \nspring-projectsのspring-batchのSpring Batch 5.0 Migration Guideは英語なので、和訳しながら、コメントをつけていくことで、理解していく。\ngithub.com\n \n\n    \nJDK 17 baseline\nDependencies upgrade\nDatabase schema update\n Oracle\n MS SQLServer\n All platforms\n Removal of BATCH_JOB_EXECUTION#JOB_CONFIGURATION_LOCATION column\n Column change in BATCH_JOB_EXECUTION_PARAMS\n Column change in BATCH_STEP_EXECUTION\nInfrastructure beans configuration with @EnableBatchProcessing\nJob repository/explorer configuration updates\nTransaction manager bean exposure/configuration\nJobBuilderFactory and StepBuilderFactory bean exposure/configuration\nData types updates\nObservability updates\nExecution context serialization updates\nSystemCommandTasklet updates\nJob parameters handling updates\nSupport for any t…",
-          "link": "https://kitano-daichino-gijyutuya.hatenadiary.jp/entry/2023/12/24/222340",
-          "publishedOn": "2023-12-24T13:23:40.000Z",
-          "wordCount": 3515,
-          "title": "Spring Batch 5.0 Migration Guideを和訳しながら、理解していく",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Robot Checkerboard",
