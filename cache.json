@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189093567662",
+          "author": null,
+          "description": "終わったーというタイミングでバグが見つかる法則。どうせ影響ないだろうと微修正したところがバグ他、１件修正。",
+          "link": "https://akkera102.hatenablog.com/entry/2024/03/25/213046",
+          "publishedOn": "2024-03-25T12:30:46.000Z",
+          "wordCount": 414,
+          "title": "移植49",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189093013137",
           "author": null,
           "description": "バッテリーの持ちがよくないという情報を入手・・・。実機でキー入力押しっぱなしでゲームを進めると1時間18分しか持たない・・・。割り込み系を見直したけれど結果かわらず・・・。うーん、これはやっちまったかも。。音楽再生が重たいのかな？ADPCMのデコード処理は11VCOUNTと少ないものの1秒間に13379HzでDMAとTimerが動かしているので電池食ってるかもしれない。もう１つはアルファブレンドをしているので立ち絵が変わる毎に16VBLANK使っている点が気になるところ。GBAのスペックを頑張りすぎて電池持たないことになるとは・・・。なんという皮肉な話。",
