@@ -1206,6 +1206,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189093840340",
+          "author": null,
+          "description": "昨日1年ぶりにTOEICを受けていた。点数が少し落ちたけれどそこまで大きな差はないので、この得点はまぐれではなかったのだなという気持ちになった pic.twitter.com/eO4zhO0hpl\n— 🎹 (@p_ck_) March 26, 2024\n   \nTOEIC IPテストを受けた。860点。\n前回から20点下がったが、ツイートにもある通り大きな差ではないので、前回がまぐれでなかった安堵のほうが大きい。\nとはいえもうちょっと勉強していきたいなの気持ちでabceedを再開した。\n前回受けたのは半年ぐらい前だったかなーと思っていたので、1年も経っていたのはちょっとびっくりした。\nちなみに点数の推移は、680点(2022-04-12), 795点(2022-12-01), 880点(2023-03-01), 860点(2024-03-26)となっている。次は900超えたいなー\nwww.amazon.co.jp\n「追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～」を最近読んだ。\n「あーはいはいよくある追放ものね」と思っていたら、完全に異常で良かった。なろう系だと思わず異常漫画だと思って読んでみるのをめっちゃおすすめ。",
+          "link": "https://commits.hatenablog.com/entry/2024/03/27/100000",
+          "publishedOn": "2024-03-27T01:00:00.000Z",
+          "wordCount": 440,
+          "title": "2024-03-26",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189092310820",
           "author": null,
           "description": "github.com\ngithub.com\nactiverecord-originator の型定義周りを軽く修正していた。\n型の変更しか入っていないけれど、v0.2.1をリリースした。\ngithub.com\ngraphql-coverage でも同様の型の修正をしていた。\ngithub.com\ngraphql-coverage を久々にいじっていたら、新しいRubyのバージョンでCIが走っていなかったので有効にした。",
@@ -1612,21 +1627,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20231231/20231231232540.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189070502975",
-          "author": null,
-          "description": "概要\n最近、訳あってAnker747を使っているのですがこいつがなかなか良いと思ったのですが、内容がマニアックすぎて共有する人がいなくて理解されなかったのでインターネットの海へ共有です。\n\nUSB-PD充電器において困るポイントは以下\n電力配分がアホ\n電力再分配・ケーブル抜き差しによる瞬停\nUSB-Cポート数が足りなくなりがち\nこれらが大体解決してそうな感じがありました。\n背景\nUSB-CがMacBook2016で採用され、充電ポートが全てそれに統一されたことでUSB-PDが知れ渡り広く普及してきました。今日ではUSB-Cによる給電が当たり前のように行われています。\nUSB-PDについては興味がありプロトコル調べてみたりトリガケーブル自作してみたりで遊んでおり、充電器についても同様に色々買って挙動を見ておりました。\n電力再分配について\nUSB-PDはデバイス側とホスト側が持っているプロファイルがありこれに従って給電を行います。\nAnker747の場合、細かくプロファイルを持っているのかわからないですがかなり細かい単位で供給する電力を変更できるようです。150Wというバジェットの中でデバイス側が欲しい最大量をできるだけあげるような賢い挙動をしてくれるのでとても気持ちが良いです。\nよくあるのが、充電器側のポートでPC用、スマホ用みたいな感じで分かれており、内部的にはそのポートから捌ける電力が決まっており（30W + 60Wで合計65Wまでなど）プロファイルを制限していて充電器が吐ける最大電力量を超えないような制御になっているみたいです。これの問題点として、デバイス側の都合をあまり考えていないのでPC用にPCを繋ぐ、スマホ用にスマホを繋ぐというようにユーザーが電力を計算して繋ぐ必要があるという点です。当然タブレットやモバブを繋ぎたくなったりAppleWatchを繋ぎたくなったりし…",
-          "link": "https://fumimaker.net/entry/2023/12/28/214650?utm_source=feed",
-          "publishedOn": "2023-12-28T12:46:50.000Z",
-          "wordCount": 525,
-          "title": "Anker747充電器は頭が良いという話",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20231228/20231228213608.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20231228/20231228213608.jpg"
         }
       ]
     },
