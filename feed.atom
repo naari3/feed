@@ -2,10 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-03-29T00:03:10.733Z</updated>
+    <updated>2024-03-29T01:22:36.111Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[mercari.go #25 を開催しました #mercarigo]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20240328-a7a826316e/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20240328-a7a826316e/"/>
+        <updated>2024-03-29T10:00:44.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは、mercari.go スタッフの hiroebe です。 3月21日にメルカリ主催の Go 勉強会 mercari.go #25 を YouTube でのオンライン配信にて開催しました。この記事では […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2024-03-28]]></title>
+        <id>hatenablog://entry/6801883189094322831</id>
+        <link href="https://commits.hatenablog.com/entry/2024/03/29/100000"/>
+        <updated>2024-03-29T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+rspec-request_describer に PR をしていた。
+RSpec で context を差し込むところを間違えたら、rspec-request_describer 内部でエラーが起きていてエラーの意図を掴むのにちょっと手間取ったので、エラーをハンドルしてどういうエラーなのか分かりやすいようにしてみた。巨大describeになってくるとインデントが迷子になりがち。
+速攻マージ&リリースされたので、迷子になりがちな人はアップデートすると良さそう。
+最近(といっても数ヶ月前からだけど)は、ピアノで海の見える街を練習している。ピアノのやる気に満ち溢れている期がやってきたので、割と進捗が良い。
+曲のイメージをもうちょっと膨らませたくなって、魔女の宅急便の映画を見たりもした。配信がなくて、仕方なくDVDを買った。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【お知らせ】noteの更新頻度が下がります]]></title>
+        <id>https://note.com/nasupman_nikki/n/n79e9537917b0</id>
+        <link href="https://note.com/nasupman_nikki/n/n79e9537917b0"/>
+        <updated>2024-03-29T00:49:09.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。
+3月最後の平日ですね。
+今日が年度の締め日という人も多いのではないでしょうか。
+僕はと言いますと、暴風雨の中で30分歩いて出社したので下半身が水浸しになっています。今週、雨降りすぎじゃないか東京。
+続きをみる]]></summary>
+        <author>
+            <name>那須ピーマン</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.3.29]]></title>
         <id>https://gamegaz.com/?p=40780</id>
