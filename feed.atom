@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-02T00:03:00.653Z</updated>
+    <updated>2024-04-02T01:25:12.832Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[gRPC Federation: gRPC サービスのための Protocol Buffers を進化させるDSL]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20240401-4f426bd460/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20240401-4f426bd460/"/>
+        <updated>2024-04-02T10:00:40.000Z</updated>
+        <summary type="html"><![CDATA[Merpay Engineering Productivity Team の goccy です。 gRPC Federation は、gRPC で通信する複数のサービスから得た結果を合成して返すようなサービスを簡単に作成 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.4.2]]></title>
         <id>https://gamegaz.com/?p=40810</id>
