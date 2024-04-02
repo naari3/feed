@@ -95,6 +95,40 @@
           </section>
         </section>
       </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://staff.hatenablog.com/" target="_blank"
+              rel="noopener">はてなブログ開発ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">はてなブログのブログメンバーをTerraformで管理できるTerraform Provider for HatenaBlog Membersを公開しました</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://staff.hatenablog.com/entry/2024/04/02/151026" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ブログメンバーの管理を構成管理ツールTerraformで行えるTerraform provider、Terraform Provider for HatenaBlog Membersを公開しました。
+hatena/hatenablog-members | Terraform Registry
+Terraform Provider for HatenaBlog Membersを用いると、はてなブログのブログメンバーをコードで管理できます。
+本機能は、ユーザーからのフィードバックを参考に、特に技術ブログの運営におけるブログメンバーの効率的な管理を支援するために開発いたしました。
+設定例
+下記の例では id:hatenablog-tf-test の持つブログのブログメンバーを管理しています。詳しくはドキュメントをご覧ください。
+provider &quot;hatenablog-members&quot; { 
+  username &#x3D; &quot;hatenablog-tf-test&quot;
+  apikey &#x3D; &quot;&quot;
+  blog_host &#x3D; &quot;tf-test.hatenablog.com&quot;
+}
+resource &quot;hatenablog-members_member&quot; &quot;hatenablog-tf-test2&quot; {
+  username &#x3D; &quot;hatenablog-tf-test2&quot;
+  role &#x3D; &quot;admin&quot;
+}</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240402/20240402143747.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19741,7 +19775,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-04-02T06:02:04.684Z">2024-04-02T06:02:04.684Z</time>
+    <time id="build-timestamp" datetime="2024-04-02T07:02:01.371Z">2024-04-02T07:02:01.371Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

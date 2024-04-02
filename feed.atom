@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-02T06:02:04.719Z</updated>
+    <updated>2024-04-02T07:02:01.414Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,30 @@
         <summary type="html"><![CDATA[Merpay Engineering Productivity Team の goccy です。 gRPC Federation は、gRPC で通信する複数のサービスから得た結果を合成して返すようなサービスを簡単に作成 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[はてなブログのブログメンバーをTerraformで管理できるTerraform Provider for HatenaBlog Membersを公開しました]]></title>
+        <id>hatenablog://entry/6801883189093785656</id>
+        <link href="https://staff.hatenablog.com/entry/2024/04/02/151026"/>
+        <updated>2024-04-02T06:10:26.000Z</updated>
+        <summary type="html"><![CDATA[ブログメンバーの管理を構成管理ツールTerraformで行えるTerraform provider、Terraform Provider for HatenaBlog Membersを公開しました。
+hatena/hatenablog-members | Terraform Registry
+Terraform Provider for HatenaBlog Membersを用いると、はてなブログのブログメンバーをコードで管理できます。
+本機能は、ユーザーからのフィードバックを参考に、特に技術ブログの運営におけるブログメンバーの効率的な管理を支援するために開発いたしました。
+設定例
+下記の例では id:hatenablog-tf-test の持つブログのブログメンバーを管理しています。詳しくはドキュメントをご覧ください。
+provider "hatenablog-members" { 
+  username = "hatenablog-tf-test"
+  apikey = "<id:hatenablog-tf-testのAPIキー>"
+  blog_host = "tf-test.hatenablog.com"
+}
+resource "hatenablog-members_member" "hatenablog-tf-test2" {
+  username = "hatenablog-tf-test2"
+  role = "admin"
+}]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>

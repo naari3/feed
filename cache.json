@@ -3713,6 +3713,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189093785656",
+          "author": null,
+          "description": "ブログメンバーの管理を構成管理ツールTerraformで行えるTerraform provider、Terraform Provider for HatenaBlog Membersを公開しました。\nhatena/hatenablog-members | Terraform Registry\nTerraform Provider for HatenaBlog Membersを用いると、はてなブログのブログメンバーをコードで管理できます。\n本機能は、ユーザーからのフィードバックを参考に、特に技術ブログの運営におけるブログメンバーの効率的な管理を支援するために開発いたしました。\n設定例\n下記の例では id:hatenablog-tf-test の持つブログのブログメンバーを管理しています。詳しくはドキュメントをご覧ください。\nprovider \"hatenablog-members\" { \n  username = \"hatenablog-tf-test\"\n  apikey = \"<id:hatenablog-tf-testのAPIキー>\"\n  blog_host = \"tf-test.hatenablog.com\"\n}\nresource \"hatenablog-members_member\" \"hatenablog-tf-test2\" {\n  username = \"hatenablog-tf-test2\"\n  role = \"admin\"\n}",
+          "link": "https://staff.hatenablog.com/entry/2024/04/02/151026",
+          "publishedOn": "2024-04-02T06:10:26.000Z",
+          "wordCount": 901,
+          "title": "はてなブログのブログメンバーをTerraformで管理できるTerraform Provider for HatenaBlog Membersを公開しました",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240402/20240402143747.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240402/20240402143747.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189091714830",
           "author": null,
           "description": "平素より、はてなブログをご利用いただきありがとうございます。\nはてなIDが「パスキー」「多要素認証」を利用した認証に対応しました。\nユーザー設定画面より本機能を有効としていただくことで、ログイン時における第三者からの不正ログインやフィッシング、なりすましなどのリスクの低減が期待できます。\n是非ご利用下さい。\n詳しくは以下のはてなヘルプをご参照下さい。\nパスキーについて知りたい\nhttps://hatena.zendesk.com/hc/ja/articles/29891566718745\nパスキーを設定すると、パスワードはどうなりますかhttps://hatena.zendesk.com/hc/ja/articles/29891880668953\nパスキーの設定方法\nhttps://hatena.zendesk.com/hc/ja/articles/29891975697177\nパスキー設定数に上限はありますか？\nhttps://hatena.zendesk.com/hc/ja/articles/29892010234521\nサブアカウントにもパスキーや多要素認証を設定できますか？\nhttps://hatena.zendesk.com/hc/ja/articles/29891990839321\n設定したパスキーを削除する方法\nhttps://hatena.zendesk.com/hc/ja/articles/29892029598105\nパスキーを設定した端末を機種変更した、無くした、故障した\nhttps://hatena.zendesk.com/hc/ja/articles/29892108945817\nパスキーが登録できない\nhttps://hatena.zendesk.com/hc/ja/articles/29892131073305\n多要素認証について知りたい\nhttps://hatena.zendesk.com/hc/ja/articles/29892185616665\n多要素認証の設定方法\nhttps://hatena.zendesk.com/hc/ja/articles/29892170781209\n多要素認証の解除方法\nhttps://hatena.zendesk.com/hc/ja/articles/29892191546009\nはてなでは今後も皆様により安心・安全なサービスを提供できるよう尽力してまいります。\n引き続きご愛顧のほど、よろしくお願いいたします。",
