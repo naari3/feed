@@ -3653,6 +3653,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189095935649",
+          "author": null,
+          "description": "はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。\n細かな機能修正・改善\n1.下書きプレビュー 共有URLをコピーしやすくしました\n下書きプレビュー共有URLをコピーできるボタンを追加しました。\n下書きプレビューURLをコピー\n下書きプレビュー共有URLについては下記のヘルプをご参照ください。\nhelp.hatenablog.com\n2. 読者になるボタンのクラス名を調整しました\n2024年3月5日にグローバルヘッダをリニューアルに伴い、読者になるボタンの表示位置を変更した際に、クラス名を変更しておりましたが、従来のクラス名も利用できるようにしました。\n2024年3月のお知らせ（再掲）\nはてなブログのヘッダメニューをリニューアルしました\nブログのトップページのタイトル要素でのみ反映されるタイトル設定を追加しました\nはてなブログのトップページやガイドページなどを提供しているドメインを変更しました\njsx, tsx のシンタックスハイライトにも対応しました。また、JavaScriptのハイライトを改善しました\nはてなへのログインがパスキーと多要素認証に対応しました",
+          "link": "https://staff.hatenablog.com/entry/2024/04/04/165020",
+          "publishedOn": "2024-04-04T07:50:20.000Z",
+          "wordCount": 866,
+          "title": "はてなブログの2024年3月の新機能・機能改善をお知らせします",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240404/20240404105142.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240404/20240404105142.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189093785656",
           "author": null,
           "description": "ブログメンバーの管理を構成管理ツールTerraformで行えるTerraform provider、Terraform Provider for HatenaBlog Membersを公開しました。\nhatena/hatenablog-members | Terraform Registry\nTerraform Provider for HatenaBlog Membersを用いると、はてなブログのブログメンバーをコードで管理できます。\n本機能は、ユーザーからのフィードバックを参考に、特に技術ブログの運営におけるブログメンバーの効率的な管理を支援するために開発いたしました。\n設定例\n下記の例では id:hatenablog-tf-test の持つブログのブログメンバーを管理しています。詳しくはドキュメントをご覧ください。\nprovider \"hatenablog-members\" { \n  username = \"hatenablog-tf-test\"\n  apikey = \"<id:hatenablog-tf-testのAPIキー>\"\n  blog_host = \"tf-test.hatenablog.com\"\n}\nresource \"hatenablog-members_member\" \"hatenablog-tf-test2\" {\n  username = \"hatenablog-tf-test2\"\n  role = \"admin\"\n}",
