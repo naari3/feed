@@ -74,6 +74,84 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-04-05">2024-04-05</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2024-04-04</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/04/05/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+Steep で不要な RBS::Location#to_s の呼び出しを消すPRを作った。
+RBSのメモリ使用量を減らす前準備。
+github.com
+RBSのメモリ使用量を減らすために色々やっているのだけど、計測用にベンチマークスクリプトを毎回書いているのは面倒なので、rbsのリポジトリに追加するPR。
+Cを書いていて、謎のセグフォが出てそこそこ悩んだ。雰囲気は次のようなコード
+#include 
+#include 
+
+typedef struct {
+  int id;
+  int value;
+} entry;
+
+typedef struct {
+  int len;
+  int cap;
+  entry entries[0];
+} table;
+
+table *table_new(int cap) {
+  table *t &#x3D; malloc(sizeof(table) + sizeof(entry) * cap);
+  t-&gt;len &#x3D; 0;
+  t-&gt;cap &#x3D; cap;
+  return t;
+}
+
+int main(void) {
+  table *t1 &#x3D; table_new(1000);
+  for (int i &#x3D; 0; i cap; i++) {
+    t1-&gt;entries[i].id &#x3D; i;
+    t1-&gt;entries[i].value &#x3D; i * 10;
+    t1-&gt;len++;
+  }
+
+  table t2 &#x3D; *t1;
+  printf(&quot;t1 last value: %d\n&quot;, t1-&gt;entries[t1-&gt;len-1].value);
+  printf(&quot;t2 last value: %d\n&quot;, t2.entries[t2.len-1].value);
+
+  return 0;
+}
+
+
+
+t1もt2も同じstructなので同じ値が出力されると思いきや、私の手元だとt2&#x60;を出力するところでセグフォが出てしまう。
+t1 last value: 9990
+zsh: segmentation fault  ./a.out
+この問題に最初遭遇したときは、t2の方の書き方だけをしていたので、セグフォの原因がさっぱりだった。
+その後t1の書き方をすると解決することに気がついたのだけど、「えっ-&gt;と(*v).ってsyntax sugerの関係なんじゃないの？？」としばらく理解ができていなかった。
+これの答えが何だったかと言うと、構造体をコピーしていることが原因だった。
+まず、entry entries[0] の部分が影響している。これは可変長構造体、みたいな用語(正確な用語は知らない)のテクで、メモリ使用量を抑えるのに便利。
+ https://satosystems.hatenablog.com/entry/20100916/1284637817 とかを参考にしていた。
+これは構造体の直後のメモリ領域に配列のためのメモリ領域を確保して、構造体に配列へのポインタをもたせることなく可変長の配列を実現している。便利。
+ところが、table t2 &#x3D; *t1; で t1 を別のローカル変数であるt2にコピーしている。ということは、このt2が保存されているアドレスはもともとmallocしてきたアドレスとは異なるということ。t2.entriesはt2の直後の領域を参照しようとして、セグフォになってしまっていた。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-04-04">2024-04-04</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19593,7 +19671,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-04-05T00:02:58.498Z">2024-04-05T00:02:58.498Z</time>
+    <time id="build-timestamp" datetime="2024-04-05T01:22:52.507Z">2024-04-05T01:22:52.507Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -1130,6 +1130,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189096111540",
+          "author": null,
+          "description": "github.com\nSteep で不要な RBS::Location#to_s の呼び出しを消すPRを作った。\nRBSのメモリ使用量を減らす前準備。\ngithub.com\nRBSのメモリ使用量を減らすために色々やっているのだけど、計測用にベンチマークスクリプトを毎回書いているのは面倒なので、rbsのリポジトリに追加するPR。\nCを書いていて、謎のセグフォが出てそこそこ悩んだ。雰囲気は次のようなコード\n#include <stdio.h>\n#include <stdlib.h>\n\ntypedef struct {\n  int id;\n  int value;\n} entry;\n\ntypedef struct {\n  int len;\n  int cap;\n  entry entries[0];\n} table;\n\ntable *table_new(int cap) {\n  table *t = malloc(sizeof(table) + sizeof(entry) * cap);\n  t->len = 0;\n  t->cap = cap;\n  return t;\n}\n\nint main(void) {\n  table *t1 = table_new(1000);\n  for (int i = 0; i < t1->cap; i++) {\n    t1->entries[i].id = i;\n    t1->entries[i].value = i * 10;\n    t1->len++;\n  }\n\n  table t2 = *t1;\n  printf(\"t1 last value: %d\\n\", t1->entries[t1->len-1].value);\n  printf(\"t2 last value: %d\\n\", t2.entries[t2.len-1].value);\n\n  return 0;\n}\n\n\n\nt1もt2も同じstructなので同じ値が出力されると思いきや、私の手元だとt2`を出力するところでセグフォが出てしまう。\nt1 last value: 9990\nzsh: segmentation fault  ./a.out\nこの問題に最初遭遇したときは、t2の方の書き方だけをしていたので、セグフォの原因がさっぱりだった。\nその後t1の書き方をすると解決することに気がついたのだけど、「えっ->と(*v).ってsyntax sugerの関係なんじゃないの？？」としばらく理解ができていなかった。\nこれの答えが何だったかと言うと、構造体をコピーしていることが原因だった。\nまず、entry entries[0] の部分が影響している。これは可変長構造体、みたいな用語(正確な用語は知らない)のテクで、メモリ使用量を抑えるのに便利。\n https://satosystems.hatenablog.com/entry/20100916/1284637817 とかを参考にしていた。\nこれは構造体の直後のメモリ領域に配列のためのメモリ領域を確保して、構造体に配列へのポインタをもたせることなく可変長の配列を実現している。便利。\nところが、table t2 = *t1; で t1 を別のローカル変数であるt2にコピーしている。ということは、このt2が保存されているアドレスはもともとmallocしてきたアドレスとは異なるということ。t2.entriesはt2の直後の領域を参照しようとして、セグフォになってしまっていた。",
+          "link": "https://commits.hatenablog.com/entry/2024/04/05/100000",
+          "publishedOn": "2024-04-05T01:00:00.000Z",
+          "wordCount": 565,
+          "title": "2024-04-04",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189094322831",
           "author": null,
           "description": "github.com\nrspec-request_describer に PR をしていた。\nRSpec で context を差し込むところを間違えたら、rspec-request_describer 内部でエラーが起きていてエラーの意図を掴むのにちょっと手間取ったので、エラーをハンドルしてどういうエラーなのか分かりやすいようにしてみた。巨大describeになってくるとインデントが迷子になりがち。\n速攻マージ&リリースされたので、迷子になりがちな人はアップデートすると良さそう。\n最近(といっても数ヶ月前からだけど)は、ピアノで海の見える街を練習している。ピアノのやる気に満ち溢れている期がやってきたので、割と進捗が良い。\n曲のイメージをもうちょっと膨らませたくなって、魔女の宅急便の映画を見たりもした。配信がなくて、仕方なくDVDを買った。",

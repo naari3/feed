@@ -2,10 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-05T00:02:58.537Z</updated>
+    <updated>2024-04-05T01:22:52.548Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2024-04-04]]></title>
+        <id>hatenablog://entry/6801883189096111540</id>
+        <link href="https://commits.hatenablog.com/entry/2024/04/05/100000"/>
+        <updated>2024-04-05T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+Steep で不要な RBS::Location#to_s の呼び出しを消すPRを作った。
+RBSのメモリ使用量を減らす前準備。
+github.com
+RBSのメモリ使用量を減らすために色々やっているのだけど、計測用にベンチマークスクリプトを毎回書いているのは面倒なので、rbsのリポジトリに追加するPR。
+Cを書いていて、謎のセグフォが出てそこそこ悩んだ。雰囲気は次のようなコード
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+  int id;
+  int value;
+} entry;
+
+typedef struct {
+  int len;
+  int cap;
+  entry entries[0];
+} table;
+
+table *table_new(int cap) {
+  table *t = malloc(sizeof(table) + sizeof(entry) * cap);
+  t->len = 0;
+  t->cap = cap;
+  return t;
+}
+
+int main(void) {
+  table *t1 = table_new(1000);
+  for (int i = 0; i < t1->cap; i++) {
+    t1->entries[i].id = i;
+    t1->entries[i].value = i * 10;
+    t1->len++;
+  }
+
+  table t2 = *t1;
+  printf("t1 last value: %d\n", t1->entries[t1->len-1].value);
+  printf("t2 last value: %d\n", t2.entries[t2.len-1].value);
+
+  return 0;
+}
+
+
+
+t1もt2も同じstructなので同じ値が出力されると思いきや、私の手元だとt2`を出力するところでセグフォが出てしまう。
+t1 last value: 9990
+zsh: segmentation fault  ./a.out
+この問題に最初遭遇したときは、t2の方の書き方だけをしていたので、セグフォの原因がさっぱりだった。
+その後t1の書き方をすると解決することに気がついたのだけど、「えっ->と(*v).ってsyntax sugerの関係なんじゃないの？？」としばらく理解ができていなかった。
+これの答えが何だったかと言うと、構造体をコピーしていることが原因だった。
+まず、entry entries[0] の部分が影響している。これは可変長構造体、みたいな用語(正確な用語は知らない)のテクで、メモリ使用量を抑えるのに便利。
+ https://satosystems.hatenablog.com/entry/20100916/1284637817 とかを参考にしていた。
+これは構造体の直後のメモリ領域に配列のためのメモリ領域を確保して、構造体に配列へのポインタをもたせることなく可変長の配列を実現している。便利。
+ところが、table t2 = *t1; で t1 を別のローカル変数であるt2にコピーしている。ということは、このt2が保存されているアドレスはもともとmallocしてきたアドレスとは異なるということ。t2.entriesはt2の直後の領域を参照しようとして、セグフォになってしまっていた。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.4.5]]></title>
         <id>https://gamegaz.com/?p=40826</id>
