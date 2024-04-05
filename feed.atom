@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-04T23:01:53.312Z</updated>
+    <updated>2024-04-05T00:02:58.537Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2024.4.5]]></title>
+        <id>https://gamegaz.com/?p=40826</id>
+        <link href="https://gamegaz.com/2024040540826/"/>
+        <updated>2024-04-04T23:52:42.000Z</updated>
+        <summary type="html"><![CDATA[PS3 ezRemote Client v1.00,ARK-4 v1712259036,BwE PS5 Code Reader,RVLoader v2.0,PKSM 10.1.1,Lemonade Alpha-2,Lime3DS 2106,MisterFPGAにN64コア→→→この記事の続きを読む
+GameGaz Daily 2024.4.5 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[カナン ～約束の地～ for GBA]]></title>
         <id>hatenablog://entry/6801883189096100689</id>
@@ -12261,41 +12272,6 @@ GameGaz Daily 2024.1.7 first appeared on 大人のためのゲーム講座.]]></
         <summary type="html"><![CDATA[ガチイク]]></summary>
         <author>
             <name>空回り</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[StreamlitをApp Engineにデプロイする]]></title>
-        <id>hatenablog://entry/6801883189072747113</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2024/01/06/210000"/>
-        <updated>2024-01-06T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[はじめに
-StreamlitをApp Engineにデプロイすることのメリット
-AWSのEC2・ECSへのデプロイと比較した場合のメリデメ
-データの利用者は怠惰なものだからシームレスな認証体験が必要
-開発が早い
-GCPのCloud Runと比較した場合のメリデメ
-Streamlit in Snowflakeと比較した場合のメリット
-実装
-ディレクトリ構成
-Dockerfile
-app.yaml
-GitHub Actions
-開発手順
-おわりに
-はじめに
-Streamlitはデータを活用したアプリケーションの構築を得意とするOSSのWebアプリケーションフレームワークで、インタラクティブなダッシュボードを構築したり、通常のダッシュボードでは扱うことができない柔軟な可視化を提供してくれる。
-streamlit.io
-私も実務で使っているが、Streamlitは素晴らしいフレームワークだ。一方で、デプロイする方法についてはいくつか選択肢があり、ベストプラクティスは確立されていない。GCPとAWS、およびSnowflakeの範囲内*1では、デプロイの選択肢としては以下のようなものがある。
-AWSのEC2、もしくはGCPのCompute EngineなどのVMにデプロイする
-AWSのECSにデプロイする
-GCPのCloud Runにデプロイする
-GCPのApp Engineにデプロイする
-Streamlit in Snowflakeにデプロイする
-StreamlitのCommunity Cloudにデプロイする
-どの選択肢でもデプロイすることは可能だが、各々の手法にはメリットとデメリットが存在する。筆者は実務でStreamlitのデプロイ方法を検討し、結果としてApp Engineへデプロイすることにした。運用を始めてから3ヶ月たったが、結構いい感じで動作している。
-この記事では、他…]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>

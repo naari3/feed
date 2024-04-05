@@ -1390,21 +1390,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189072747113",
-          "author": null,
-          "description": "はじめに\nStreamlitをApp Engineにデプロイすることのメリット\nAWSのEC2・ECSへのデプロイと比較した場合のメリデメ\nデータの利用者は怠惰なものだからシームレスな認証体験が必要\n開発が早い\nGCPのCloud Runと比較した場合のメリデメ\nStreamlit in Snowflakeと比較した場合のメリット\n実装\nディレクトリ構成\nDockerfile\napp.yaml\nGitHub Actions\n開発手順\nおわりに\nはじめに\nStreamlitはデータを活用したアプリケーションの構築を得意とするOSSのWebアプリケーションフレームワークで、インタラクティブなダッシュボードを構築したり、通常のダッシュボードでは扱うことができない柔軟な可視化を提供してくれる。\nstreamlit.io\n私も実務で使っているが、Streamlitは素晴らしいフレームワークだ。一方で、デプロイする方法についてはいくつか選択肢があり、ベストプラクティスは確立されていない。GCPとAWS、およびSnowflakeの範囲内*1では、デプロイの選択肢としては以下のようなものがある。\nAWSのEC2、もしくはGCPのCompute EngineなどのVMにデプロイする\nAWSのECSにデプロイする\nGCPのCloud Runにデプロイする\nGCPのApp Engineにデプロイする\nStreamlit in Snowflakeにデプロイする\nStreamlitのCommunity Cloudにデプロイする\nどの選択肢でもデプロイすることは可能だが、各々の手法にはメリットとデメリットが存在する。筆者は実務でStreamlitのデプロイ方法を検討し、結果としてApp Engineへデプロイすることにした。運用を始めてから3ヶ月たったが、結構いい感じで動作している。\nこの記事では、他…",
-          "link": "https://contradiction29.hatenablog.com/entry/2024/01/06/210000",
-          "publishedOn": "2024-01-06T12:00:00.000Z",
-          "wordCount": 635,
-          "title": "StreamlitをApp Engineにデプロイする",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240106/20240106174757.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240106/20240106174757.png"
         }
       ]
     },
@@ -7965,6 +7950,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=40826",
+          "author": "mamosuke",
+          "description": "PS3 ezRemote Client v1.00,ARK-4 v1712259036,BwE PS5 Code Reader,RVLoader v2.0,PKSM 10.1.1,Lemonade Alpha-2,Lime3DS 2106,MisterFPGAにN64コア→→→この記事の続きを読む\nGameGaz Daily 2024.4.5 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024040540826/",
+          "publishedOn": "2024-04-04T23:52:42.000Z",
+          "wordCount": 1602,
+          "title": "GameGaz Daily 2024.4.5",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/ps3-ezRemote-Client.png"
+        },
         {
           "id": "https://gamegaz.com/?p=40822",
           "author": "mamosuke",
