@@ -1767,21 +1767,6 @@
             "length": "0"
           },
           "imageUrl": "https://pbs.twimg.com/media/GElFx35agAAHvFv?format=jpg&name=360x360"
-        },
-        {
-          "id": "hatenablog://entry/6801883189073531693",
-          "author": null,
-          "description": "やべえ気になる pic.twitter.com/e8m5WUdNXT\n2023年12月27日\n\n\n近場のハードオフでHyperJOY V2の筐体を発見しました。\n知ってる人は知ってますが、私はカラオケとかの機器への執着が強く、\n過去にこいつの先代機種をあれやこれやとしたような記憶があります。\nここであったが１００年目（多分５倍サバ読んだ）\nジャンクコーナーで一通り動作確認を行い、大枚叩いて買ってきました。\n \n\nおまけが付いてた\nということで、これから何が起きるかみなさんお分かりだと思いますが、普段買っているものより多少値段がアレなことと、中身とか、やる事とかがちょっとアレげなことが予想されます。ので、バチバチな内容公開を有料コンテンツ化することを考えています。本体代ぐらいにしたいw pic.twitter.com/muIl1POoSG\n2023年12月27日\n\n\n \n早速分解といきます。\nその前に背面端子を眺めてみます。実は店舗にこいつがある時から気になってたんですが、この外部楽器、っていう端子、Macのシリアルと同じコネクタなんですよね。\nなので、実はここからMIDIが出てたりしないのかな、と思っていたことがあるのですが、果たしてどうなるか。\n \nでは分解です。\n結構むずい。あちこち開けてみていたところ、フロントパネルを開けると割と簡単にバラせることがわかりました。手遅れ。\n\n主要基板はスロットに差し込む形式で重ねられており、多ピンケーブルで接続されていました。\n\nメイン基板。CPUはIBMのDigitalSetTopBox用としてリリースされたものらしいです。\nCPUの左側には映像出力用のNTSCデコーダ、SAAなんとか、あとは下の方に１６ピンのJTAGっぽいものが出ていますが、ちょっとどうにかできる気はしません。\nハードディスクが２台とコンパクトフラッシュ、そして謎…",
-          "link": "https://honeylab.hatenablog.jp/entry/2024/01/09/001155",
-          "publishedOn": "2024-01-08T15:11:55.000Z",
-          "wordCount": 572,
-          "title": "中古のカラオケ機材を買ってみた話のさわりだけ",
-          "enclosure": {
-            "url": "https://pbs.twimg.com/media/GCVN0lTaAAAFESG?format=jpg&name=large",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": "https://pbs.twimg.com/media/GCVN0lTaAAAFESG?format=jpg&name=large"
         }
       ]
     },
