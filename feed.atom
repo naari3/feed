@@ -2,10 +2,61 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-08T02:09:06.340Z</updated>
+    <updated>2024-04-08T03:01:56.349Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[今週のはてなブログランキング〔2024年4月第1週〕]]></title>
+        <id>hatenablog://entry/6801883189096914009</id>
+        <link href="https://blog.hatenablog.com/entry/2024/04/08/120000"/>
+        <updated>2024-04-08T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログ独自の集計による人気記事のランキング。3月31日（日）から4月6日（土）〔2024年4月第1週〕のトップ30です*1。
+#
+    タイトル／著者とブックマーク
+    
+1
+    長年の悩みだったギターアンプのノイズが「マイ電柱」で直った件 - give IT a try
+ by id:JunichiIto 
+    
+2
+    XZ Utilsの脆弱性 CVE-2024-3094 についてまとめてみた - piyolog
+ by id:piyokango 
+    
+3
+    なぜタスク管理すらできないのか？考えて、実践して、振り返ってみた - paiza times
+ by id:paiza 
+    
+4
+    Apple Watch を買って半年 - ぽ靴な缶
+ by id:pokutuna 
+    
+5
+    サラダスピナーを今まで3回買っている話：これがないと困る、バリバリサラダ - I AM A DOG
+ by id:OKP 
+    
+6
+    初心者向け有線イヤホンまとめ（2024/03） - 花見川の日記
+ by id:ch1248 
+    
+7
+    スタートアップでソフトウェアエンジニアとして10年たって大事にしていることリスト - tomoima525's blog
+ by id:tomoima525 
+    
+8
+    「ジーニアス」という洋楽の歌詞の意味や背景・解釈を調べられるサイトが便利。 - 世界のねじを巻くブログ
+ by id:popmusik3141 
+    
+9
+    中小は価格転嫁できても賃上げできませーん。 - Everything you've ever Dreamed
+ by id:Delete_All 
+    
+10
+    Slackのtimesチャンネル文化が好きじゃない - り…]]></summary>
+        <author>
+            <name>週刊はてなブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Google Cloud PlatformとSEIL/x86 Ayameでクラウド間をVPN接続してみました]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=24060</id>
@@ -12330,38 +12381,6 @@ Mig Switch オンラインプレイに関する注意喚起 first appeared on �
 続きをみる]]></summary>
         <author>
             <name>とッくん@マリ●ペデ●ア管理人</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SMTを無効化したらAC6がまともに動くようになった]]></title>
-        <id>https://r7kamura.com/articles/2024-01-10-ac6-without-smt</id>
-        <link href="https://r7kamura.com/articles/2024-01-10-ac6-without-smt"/>
-        <updated>2024-01-09T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[自分のPC環境でARMORED CORE VIが満足に動かない問題に遭遇していたが、SMTを無効化したら解消した。]]></summary>
-        <author>
-            <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[移植32]]></title>
-        <id>hatenablog://entry/6801883189073809494</id>
-        <link href="https://akkera102.hatenablog.com/entry/2024/01/09/235744"/>
-        <updated>2024-01-09T14:57:44.000Z</updated>
-        <summary type="html"><![CDATA[キャラ消去処理とエフェクトが違う・・・。なんてこったい。。ログに記録されるようフック部分を見つけようとしましたけど見つけられませんでした。不毛すぎる・・・。ゲームプレイを動画に撮って合わせないとだめかも・・・。
-# ログで拾えず、演出上不自然な部分をパッチ処理・・・。
-
-# フェードインアウトに変更
-if(sys.argv[1] == "cs01_03.log"): txt = re.sub('KEY\nEFF 4\n', 'KEY\nEFF 16\nEFF 11\n', txt)
-# 残りつづけるイリア消去
-if(sys.argv[1] == "cs01_06.log"): txt = re.sub('ICO kait0a\nMSG （げげげ', 'CLR 2\nEFF 33\nICO kait0a\nMSG （げげげ', txt)
-# カイト寝るフェードインアウト追加
-if(sys.argv[1] == "cs01_07.log"): txt = re.sub('BPL 19\n', 'EFF 16\nEFF 17\nBPL 19\n', txt)
-# フェードイン
-if(sys.argv[1] == "cs01_11.log"): txt = re.sub('EFF 4', 'EFF 16', txt)
-# フェードアウト
-if(sys.argv[1] == "cs01_12.log"): txt = re.sub('EFF 4', 'EFF 11', txt)]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
