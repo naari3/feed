@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-08T22:01:42.951Z</updated>
+    <updated>2024-04-08T23:02:04.793Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DAM XG1000の演奏中にTMIDI鍵盤表示風の画面を表示する]]></title>
+        <id>hatenablog://entry/6801883189097136766</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2024/04/09/074453"/>
+        <updated>2024-04-08T22:44:53.000Z</updated>
+        <summary type="html"><![CDATA[いよいよ煮詰まってきました。
+元々私がこのカラオケマシンをいじっているのは、カラオケ中に
+画面内にただの「見えるガイドメロディ」ではなく、
+なんらかの方法で歌唱すべき階名を表示することなのです。
+↓正式名称「見えるガイドメロディ」
+
+できれば五線譜、もしくは階名付きのピアノロールを出したい。
+そのためには、現在再生している、本来は採点に使用されているデータを横取りし、
+さらに画面表示を横取りしなければなりません。
+研究に研究を重ね、ようやく全てのデータの取得が完了し、
+画面表示の基礎部分ができたので、これから画面表示機能を精緻化させていく予定です。
+そのファーストステップとして、DTMをやっていた人なら誰も知っている
+「TMIDI Player」に内蔵されている、鍵盤表示画面を実装してみました。
+TMIDI Playerには鍵盤表示画面内に、
+各チャンネルの和音を解析してコード表示する機能もあるんですよね。
+これと同じようにコードを表示してやれば、伴奏補助機能がつくんですよ。
+これをどうしても実装したくてな。
+↓TMIDIPlayerの鍵盤表示画面。A06のところに「Cm」って出てる
+
+ 
+実際に実装した鍵盤画面（WIP）
+ 
+
+参照時刻をプレイヤーじゃなくてMIDIデバイスから取得したらデータと同期が取れた pic.twitter.com/CrOXifHNWK
+2024年4月8日
+
+
+ 
+ここまでできたんだからあと少しだわ。
+なんか音符長が想定より長いトラックがあったりして表示が変だけど、
+とりあえずメロディがちゃんと動いてるのは見えると思う
+ 
+っていうけど大変なのよこれ。
+その辺の大変な技や、リバースエンジニアリングの手法などは、
+５月に開催予定の技術書典16（2024/05/26）の新刊としてまとめて発表したいと思いますので興味のある方はぜひお買い求めください（自分の首を絞めた）]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[4/9]]></title>
         <id>https://note.com/26435/n/ncfa94518c71c</id>
