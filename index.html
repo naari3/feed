@@ -78,6 +78,46 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://staff.hatenablog.com/" target="_blank"
+              rel="noopener">はてなブログ開発ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">HatenaBlog Workflows Boilerplate(β) に画像アップロード機能を追加しました</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://staff.hatenablog.com/entry/2024/04/09/150204" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>GitHub上ではてなブログ運営を可能にするテンプレートリポジトリ「HatenaBlog Workflows Boilerplate(β)」にはてなフォトライフへの画像アップロード機能を追加しました。
+Markdownの画像記法の Alt や Title の指定にも対応しています。
+差し替え前(Markdown)
+
+![alt text](/path/img.jpg “title text”)
+
+差し替え後(はてな記法)
+
+[f:id:hatenablog:20240101000000j:plain:alt&#x3D;alt text:title&#x3D;title text]
+
+
+編集モードがMarkdownの場合でも、はてな記法の画像形式に対応しています。はてな記法形式の場合、wやhオプションでの簡単な画像のサイズの指定などがご利用いただけますので、ぜひご利用ください。
+
+なお、本告知は、HatenaBlog Workflows Boilerplate(β)を利用して作成し、本機能を用いて画像のアップロードを行いました。
+すでに運用を開始されているリポジトリへの導入方法
+今回、すでに公開した記事を編集する際の画像自動アップロードに対応するために、テンプレートリポジトリに新しいWorkflowの追加を行いました。しかしながら、すでにテンプレートリポジトリからリポジトリを作成し運用を開始されている場合、はてなからそのリポジトリに対する操作を行うことができません。そのため、ご自身でリポジトリのWorkflowを新たに取得する必要があります*1。
+また、Workflowの更新を行うためのスクリプトをBoilerplateに用意いたしました。つきましては、下記のドキュメントを参照いただき、スクリプトを自身のリポジトリに配置して実行し、新しいWorkflowを取得をお願いします。
+テンプレートリポジトリに新しく追加されたWorkflowを取得する
+お手数をおかけいたしますが、どうぞよろしくお願いいたします。
+
+*1:下書き記事の自動アップロードは自動で対応します</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240403/20240403163536.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://mangacross.jp/comics/yabai/" target="_blank"
               rel="noopener">僕の心のヤバイやつ</a></h3>
           <section class="articles-per-source">
@@ -19737,7 +19777,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-04-09T06:02:01.523Z">2024-04-09T06:02:01.523Z</time>
+    <time id="build-timestamp" datetime="2024-04-09T07:02:03.317Z">2024-04-09T07:02:03.317Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

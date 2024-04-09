@@ -3652,6 +3652,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189086314093",
+          "author": null,
+          "description": "GitHub上ではてなブログ運営を可能にするテンプレートリポジトリ「HatenaBlog Workflows Boilerplate(β)」にはてなフォトライフへの画像アップロード機能を追加しました。\nMarkdownの画像記法の Alt や Title の指定にも対応しています。\n差し替え前(Markdown)\n\n![alt text](/path/img.jpg “title text”)\n\n差し替え後(はてな記法)\n\n[f:id:hatenablog:20240101000000j:plain:alt=alt text:title=title text]\n\n\n編集モードがMarkdownの場合でも、はてな記法の画像形式に対応しています。はてな記法形式の場合、wやhオプションでの簡単な画像のサイズの指定などがご利用いただけますので、ぜひご利用ください。\n\nなお、本告知は、HatenaBlog Workflows Boilerplate(β)を利用して作成し、本機能を用いて画像のアップロードを行いました。\nすでに運用を開始されているリポジトリへの導入方法\n今回、すでに公開した記事を編集する際の画像自動アップロードに対応するために、テンプレートリポジトリに新しいWorkflowの追加を行いました。しかしながら、すでにテンプレートリポジトリからリポジトリを作成し運用を開始されている場合、はてなからそのリポジトリに対する操作を行うことができません。そのため、ご自身でリポジトリのWorkflowを新たに取得する必要があります*1。\nまた、Workflowの更新を行うためのスクリプトをBoilerplateに用意いたしました。つきましては、下記のドキュメントを参照いただき、スクリプトを自身のリポジトリに配置して実行し、新しいWorkflowを取得をお願いします。\nテンプレートリポジトリに新しく追加されたWorkflowを取得する\nお手数をおかけいたしますが、どうぞよろしくお願いいたします。\n\n*1:下書き記事の自動アップロードは自動で対応します",
+          "link": "https://staff.hatenablog.com/entry/2024/04/09/150204",
+          "publishedOn": "2024-04-09T06:02:04.000Z",
+          "wordCount": 882,
+          "title": "HatenaBlog Workflows Boilerplate(β) に画像アップロード機能を追加しました",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240403/20240403163536.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240403/20240403163536.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189096185522",
           "author": null,
           "description": "4月5日10:30頃より、記事の予約投稿時の「公開と同時にシェアする」機能において、X（旧Twitter）への投稿が出来ない不具合が発生しています。\n詳細は調査中につき進捗があり次第お知らせさせて頂きます。",
