@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-11T16:01:48.620Z</updated>
+    <updated>2024-04-11T17:01:53.835Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12494,20 +12494,6 @@ GBA動作確認＋スクリプトのエフェクトコマンド修正
 有名ブランドの憶測がビッグニュースに Nintendo Switch 2が2024年9月発売になってしまった話 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Motivating X3DH]]></title>
-        <id>https://blog.wesleyac.com/posts/motivating-x3dh</id>
-        <link href="https://blog.wesleyac.com/posts/motivating-x3dh"/>
-        <updated>2024-01-13T05:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Signal uses a protocol called "Extended Triple Diffie-Hellman" (X3DH) for key agreement1. This essentially takes standard Diffie-Hellman key exchange, and enables it to be used where one party may be offline while they're receiving a message, while providing forward secrecy.
-While the paper clearly explains how to implement X3DH, the why is slightly less clear. In this post, I'll briefly explain how X3DH works, then investigate what security property each of the steps involved is aimed at providing, and why particular choices were made around the signature algorithm.
-A quick summary of X3DH
-(This summary requires a understanding of Diffie-Hellman key exchange — if you are unfamiliar or need a refresher, take a look at this footnote2)
-In X3DH, the receiving party (who may be offline when th…]]></summary>
-        <author>
-            <name>Wesley Aptekar-Cassels</name>
         </author>
     </entry>
     <entry>

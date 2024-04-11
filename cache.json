@@ -7431,16 +7431,6 @@
           "wordCount": 528,
           "title": "End-to-end testing emails",
           "imageUrl": null
-        },
-        {
-          "id": "https://blog.wesleyac.com/posts/motivating-x3dh",
-          "author": null,
-          "description": "Signal uses a protocol called \"Extended Triple Diffie-Hellman\" (X3DH) for key agreement1. This essentially takes standard Diffie-Hellman key exchange, and enables it to be used where one party may be offline while they're receiving a message, while providing forward secrecy.\nWhile the paper clearly explains how to implement X3DH, the why is slightly less clear. In this post, I'll briefly explain how X3DH works, then investigate what security property each of the steps involved is aimed at providing, and why particular choices were made around the signature algorithm.\nA quick summary of X3DH\n(This summary requires a understanding of Diffie-Hellman key exchange — if you are unfamiliar or need a refresher, take a look at this footnote2)\nIn X3DH, the receiving party (who may be offline when th…",
-          "link": "https://blog.wesleyac.com/posts/motivating-x3dh",
-          "publishedOn": "2024-01-13T05:00:00.000Z",
-          "wordCount": null,
-          "title": "Motivating X3DH",
-          "imageUrl": null
         }
       ]
     },
