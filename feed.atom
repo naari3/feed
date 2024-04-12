@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-12T13:01:54.217Z</updated>
+    <updated>2024-04-12T14:02:05.324Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[移植50]]></title>
+        <id>hatenablog://entry/6801883189098057553</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/04/12/225858"/>
+        <updated>2024-04-12T13:58:58.000Z</updated>
+        <summary type="html"><![CDATA[夢幻夜想曲進捗・・・。本編～エンディング直前の選択肢まで２回確認済み。残りTODOは最後の選択肢実装、エンディング実装、スタートメニューの作成だけですね。今月中には終わりそうです。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pixel Foldのメイン画面のスクロールがおかしくなる問題の解決方法（Sticky Scrolling）]]></title>
+        <id>hatenablog://entry/6801883189098049395</id>
+        <link href="https://katsumakazuyo.hatenablog.com/entry/2024/04/12/222504"/>
+        <updated>2024-04-12T13:25:04.000Z</updated>
+        <summary type="html"><![CDATA[ここ数週間、Pixel Foldのメイン画面のスクロールがおかしいです。これは、無限スクリーム系のアプリですべて発生するそうで、ランダムに上へのスワイプや、スクロールがきかなくなります。
+サポートにも何回も連絡しましたが、再起動とか、初期化とか、セーフモードなどを試せと言うばかりで、抜本的にはなにも解決していません。
+いちど、ハードウェアも取り替えましたが、再発します。今年の３月くらいから頻発しているようです。
+www.phonearena.com
+これが起きたときの当面、一番簡単な解決方法は
+「電源ボタンによる画面のオンオフ」
+だそうです。すぐにオンオフしてもうまくいかないので、オフにしたら、１，２と数えてから、オンにしてください。
+Googleにも何度も、海外のスレッドのURLを送って対応を求めていますが、ハードウェアではなくアプリのせいだと、今のところ、音沙汰なしです。
+同じ問題で悩んでいる人が多そうなので、ここに記録を残しておきます。
+Pixel Fold Sticky Scroll
+で検索すると、いろいろと海外の記事も出てきますので、見てみてください。]]></summary>
+        <author>
+            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2024年4月-2】バボちゃん（アナザーカラー）]]></title>
         <id>hatenablog://entry/6801883189097611474</id>
