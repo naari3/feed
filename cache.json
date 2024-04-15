@@ -3742,6 +3742,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189098741926",
+          "author": null,
+          "description": "2024年4月13日〜14日にかけて、はてなブログ全体でブログの閲覧や管理画面の表示・記事投稿などに時間がかかる・エラーになる事象が発生していました。\n詳しい発生時間は以下の通りです。\n2024/4/13\n2024/4/14\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2024/04/15/143347",
+          "publishedOn": "2024-04-15T05:33:47.000Z",
+          "wordCount": null,
+          "title": "【復旧済み】はてなブログ全体でブログの閲覧や管理画面の表示・記事投稿などに時間がかかる・エラーになる事象が発生していました",
+          "enclosure": {
+            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
+        },
+        {
           "id": "hatenablog://entry/6801883189086314093",
           "author": null,
           "description": "GitHub上ではてなブログ運営を可能にするテンプレートリポジトリ「HatenaBlog Workflows Boilerplate(β)」にはてなフォトライフへの画像アップロード機能を追加しました。\nMarkdownの画像記法の Alt や Title の指定にも対応しています。\n差し替え前(Markdown)\n\n![alt text](/path/img.jpg “title text”)\n\n差し替え後(はてな記法)\n\n[f:id:hatenablog:20240101000000j:plain:alt=alt text:title=title text]\n\n\n編集モードがMarkdownの場合でも、はてな記法の画像形式に対応しています。はてな記法形式の場合、wやhオプションでの簡単な画像のサイズの指定などがご利用いただけますので、ぜひご利用ください。\n\nなお、本告知は、HatenaBlog Workflows Boilerplate(β)を利用して作成し、本機能を用いて画像のアップロードを行いました。\nすでに運用を開始されているリポジトリへの導入方法\n今回、すでに公開した記事を編集する際の画像自動アップロードに対応するために、テンプレートリポジトリに新しいWorkflowの追加を行いました。しかしながら、すでにテンプレートリポジトリからリポジトリを作成し運用を開始されている場合、はてなからそのリポジトリに対する操作を行うことができません。そのため、ご自身でリポジトリのWorkflowを新たに取得する必要があります*1。\nまた、Workflowの更新を行うためのスクリプトをBoilerplateに用意いたしました。つきましては、下記のドキュメントを参照いただき、スクリプトを自身のリポジトリに配置して実行し、新しいWorkflowを取得をお願いします。\nテンプレートリポジトリに新しく追加されたWorkflowを取得する\nお手数をおかけいたしますが、どうぞよろしくお願いいたします。\n\n*1:下書き記事の自動アップロードは自動で対応します",
