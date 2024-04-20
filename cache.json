@@ -1406,21 +1406,6 @@
             "length": "0"
           },
           "imageUrl": "https://m.media-amazon.com/images/I/516WexUTDvL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189076802928",
-          "author": null,
-          "description": "三度の飯よりGitHub-Flowが好き\nGitHub-flowはシンプルなブランチ戦略で、以下のような手順で本番環境に変更を反映する\nmainブランチからfeatureブランチを作成\n変更をコミットし、プルリクエストを作成\nレビュワーからの指摘を受けつつ、リモートレポジトリの内容を変更\nプルリクエストがapproveされたら、mainブランチに反映\n図解するとこんな感じ：\nGitHub-flowについて\n詳しくは以下参照：\ndocs.github.com\n上記図の「リモートにpushしてPull Requestをオープン」の部分で、テスト用環境にデプロイできればさらに便利になりそうだ。ローカル環境でのテスト実行がうまくいっても、クラウド環境上でうまくいくとは限らない。GitHub Actionsを工夫して書けば、PRを提出した段階でテスト用の環境にデプロイする「ブランチデプロイ」が実現でき、開発フローをのシンプルさを維持できる。実際、オーケストレーションツールのdagsterはこのBranch Deploymentをネイティブ機能として組み込んでいたりする。\ndocs.dagster.io\nこのブランチデプロイをServerless Frameworkで実行してみたいと思う。\nServerless Frameworkについて\nServerless Frameworkはサーバーレスのアプリケーションのデプロイを簡素化するフレームワークである。詳細は割愛するが、AWS Lambda関数のデプロイが簡単になったりして嬉しい。自分の業務だと、データパイプラインの一部でAWS Lambdaを使っているため、関数の管理を抽象化する用途でServerless Frameworkを利用している。\ngithub.com\nなお、Serverless FrameworkにもBranch Dep…",
-          "link": "https://contradiction29.hatenablog.com/entry/2024/01/21/210000",
-          "publishedOn": "2024-01-21T12:00:00.000Z",
-          "wordCount": 807,
-          "title": "Serverless Frameworkで実現するGitHub-flow",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240121/20240121124254.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240121/20240121124254.png"
         }
       ]
     },
@@ -3651,21 +3636,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/26006613473223083/6801883189076905300/1706269963"
-        },
-        {
-          "id": "hatenablog://entry/6801883189075015114",
-          "author": null,
-          "description": "お題箱回136\n787.シャドバとハースのかつてのDCGの二大巨頭が今やユーザー激減の崖っぷちの状況になっていますが、何が悪かったと思いますか？遊戯王やMtGのような紙のTCGのような立ち位置になれなかったのはなぜだと思いますか？全部やってるLWさんの意見が聞きたいです。\nこれはエビデンスをちゃんと集めたわけではなく「周りのオタクたちも皆そう言ってる」みたいなレベルの話ですが、格ゲーやFPSに比べて観戦のハードルが高いことが一つあると思います。DCGって新規はもちろん経験者ですら面白く見ることがなかなか難しく、その点はストリーマー配信や競技観戦がメジャーになった令和のデジタル対戦ゲーム環境で大きな遅れを取っているように感じます。\nカードゲームは性質上、最低限ルールを理解した上で使われているカードの効果を把握していなければそもそも何が起きているのかすら分かりません。その上でファインプレーに感心したい場合はデッキ戦略やマッチング上の論点にまで精通している必要があります（一般にカードゲームの良手は「手なりのセオリーに反した予想外の一手」であることが多く、知識が足りない状態で見るとむしろ悪手に見える傾向があります）。その割にはゲーム側の情報更新も早く、遅くとも数ヶ月スパンで新弾が出てしまうので、少しでも離れているとプレイ経験のあるタイトルですら楽しい観戦が難しくなります。\nこの「観戦難易度が高い」という事情は紙のTCGでも同じで（むしろDCGより見づらい）、今は色々な大手タイトルが受注生産や限定販売でコレクター需要に応える方向に舵を切ったり、大会の参加賞を高額賞品にして人を集めたり、対面でコミュニティを作る魅力を推したり、弱点が露呈しない部分でのプロモに躍起になっているような印象はあります。\nただカードゲームと同じく「必要な事前知識が多すぎる」「新規の敷居が高すぎる」などと言われて…",
-          "link": "https://saize-lw.hatenablog.com/entry/2024/01/21/201705",
-          "publishedOn": "2024-01-21T11:17:05.000Z",
-          "wordCount": 683,
-          "title": "24/1/21 お題箱回136：DCG観戦、萌えという語の流行etc",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/26006613473223083/6801883189075015114/1705835825",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/26006613473223083/6801883189075015114/1705835825"
         }
       ]
     },
@@ -8060,6 +8030,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=40914",
+          "author": "mamosuke",
+          "description": "Despertar del Cementerio v10,ARK-4 Version 4.20.69 (DC10),GoldHEN Cheats PS4 PKG  v19.04.24,UnlockSwitch→→→この記事の続きを読む\nGameGaz Daily 2024.4.20 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024042040914/",
+          "publishedOn": "2024-04-19T23:28:05.000Z",
+          "wordCount": 1480,
+          "title": "GameGaz Daily 2024.4.20",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=40910",
           "author": "mamosuke",

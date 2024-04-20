@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-19T23:01:47.545Z</updated>
+    <updated>2024-04-20T00:03:03.279Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2024.4.20]]></title>
+        <id>https://gamegaz.com/?p=40914</id>
+        <link href="https://gamegaz.com/2024042040914/"/>
+        <updated>2024-04-19T23:28:05.000Z</updated>
+        <summary type="html"><![CDATA[Despertar del Cementerio v10,ARK-4 Version 4.20.69 (DC10),GoldHEN Cheats PS4 PKG  v19.04.24,UnlockSwitch→→→この記事の続きを読む
+GameGaz Daily 2024.4.20 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2024年4月-3】あ]]></title>
         <id>hatenablog://entry/6801883189099746664</id>
@@ -12530,47 +12541,6 @@ nomolk.hatenablog.com
         <summary type="html"><![CDATA[作業量の増大と体調不良ほかのダブルコンボでしばらく休みます。悲しい。]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Serverless Frameworkで実現するGitHub-flow]]></title>
-        <id>hatenablog://entry/6801883189076802928</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2024/01/21/210000"/>
-        <updated>2024-01-21T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[三度の飯よりGitHub-Flowが好き
-GitHub-flowはシンプルなブランチ戦略で、以下のような手順で本番環境に変更を反映する
-mainブランチからfeatureブランチを作成
-変更をコミットし、プルリクエストを作成
-レビュワーからの指摘を受けつつ、リモートレポジトリの内容を変更
-プルリクエストがapproveされたら、mainブランチに反映
-図解するとこんな感じ：
-GitHub-flowについて
-詳しくは以下参照：
-docs.github.com
-上記図の「リモートにpushしてPull Requestをオープン」の部分で、テスト用環境にデプロイできればさらに便利になりそうだ。ローカル環境でのテスト実行がうまくいっても、クラウド環境上でうまくいくとは限らない。GitHub Actionsを工夫して書けば、PRを提出した段階でテスト用の環境にデプロイする「ブランチデプロイ」が実現でき、開発フローをのシンプルさを維持できる。実際、オーケストレーションツールのdagsterはこのBranch Deploymentをネイティブ機能として組み込んでいたりする。
-docs.dagster.io
-このブランチデプロイをServerless Frameworkで実行してみたいと思う。
-Serverless Frameworkについて
-Serverless Frameworkはサーバーレスのアプリケーションのデプロイを簡素化するフレームワークである。詳細は割愛するが、AWS Lambda関数のデプロイが簡単になったりして嬉しい。自分の業務だと、データパイプラインの一部でAWS Lambdaを使っているため、関数の管理を抽象化する用途でServerless Frameworkを利用している。
-github.com
-なお、Serverless FrameworkにもBranch Dep…]]></summary>
-        <author>
-            <name>現実モデリング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[24/1/21 お題箱回136：DCG観戦、萌えという語の流行etc]]></title>
-        <id>hatenablog://entry/6801883189075015114</id>
-        <link href="https://saize-lw.hatenablog.com/entry/2024/01/21/201705"/>
-        <updated>2024-01-21T11:17:05.000Z</updated>
-        <summary type="html"><![CDATA[お題箱回136
-787.シャドバとハースのかつてのDCGの二大巨頭が今やユーザー激減の崖っぷちの状況になっていますが、何が悪かったと思いますか？遊戯王やMtGのような紙のTCGのような立ち位置になれなかったのはなぜだと思いますか？全部やってるLWさんの意見が聞きたいです。
-これはエビデンスをちゃんと集めたわけではなく「周りのオタクたちも皆そう言ってる」みたいなレベルの話ですが、格ゲーやFPSに比べて観戦のハードルが高いことが一つあると思います。DCGって新規はもちろん経験者ですら面白く見ることがなかなか難しく、その点はストリーマー配信や競技観戦がメジャーになった令和のデジタル対戦ゲーム環境で大きな遅れを取っているように感じます。
-カードゲームは性質上、最低限ルールを理解した上で使われているカードの効果を把握していなければそもそも何が起きているのかすら分かりません。その上でファインプレーに感心したい場合はデッキ戦略やマッチング上の論点にまで精通している必要があります（一般にカードゲームの良手は「手なりのセオリーに反した予想外の一手」であることが多く、知識が足りない状態で見るとむしろ悪手に見える傾向があります）。その割にはゲーム側の情報更新も早く、遅くとも数ヶ月スパンで新弾が出てしまうので、少しでも離れているとプレイ経験のあるタイトルですら楽しい観戦が難しくなります。
-この「観戦難易度が高い」という事情は紙のTCGでも同じで（むしろDCGより見づらい）、今は色々な大手タイトルが受注生産や限定販売でコレクター需要に応える方向に舵を切ったり、大会の参加賞を高額賞品にして人を集めたり、対面でコミュニティを作る魅力を推したり、弱点が露呈しない部分でのプロモに躍起になっているような印象はあります。
-ただカードゲームと同じく「必要な事前知識が多すぎる」「新規の敷居が高すぎる」などと言われて…]]></summary>
-        <author>
-            <name>LWのサイゼリヤ</name>
         </author>
     </entry>
     <entry>
