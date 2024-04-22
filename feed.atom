@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-22T00:03:23.715Z</updated>
+    <updated>2024-04-22T01:25:35.185Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Cloudflare Workers と worker-rs から Backend Request する方法2024]]></title>
+        <id>https://blog.ojisan.io/worker-rs-bereq</id>
+        <link href="https://blog.ojisan.io/worker-rs-bereq"/>
+        <updated>2024-04-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[今月と来月、Software Design で Cloudflare Workers の連載を担当しています。
+Software Design 2024年5月号 では「エッジとHTTP Caching」というタイトルで書き、そのタイトル通りの内容を書きました。
+そして…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[改めて自己紹介]]></title>
         <id>https://note.com/nasupman_nikki/n/nafb6d0d0cb6b</id>
