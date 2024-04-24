@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-24T01:25:27.730Z</updated>
+    <updated>2024-04-24T02:09:57.451Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ElasticsearchのFunction Score Queryのパフォーマンスを最適化する]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20240424-6f298aa43b/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20240424-6f298aa43b/"/>
+        <updated>2024-04-24T10:49:35.000Z</updated>
+        <summary type="html"><![CDATA[search infra teamのmrkm4ntrです。我々の運用するElasticsearchにはFunction Score Queryを使ったリクエストが送られてきます。Function Score Queryは […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[『AはBの存在によって意味を持つ』カメラとランナーの間にあらゆる障害物が通ること]]></title>
+        <id>https://note.com/kazumakawauchi/n/ne40135b24ce9</id>
+        <link href="https://note.com/kazumakawauchi/n/ne40135b24ce9"/>
+        <updated>2024-04-24T02:08:50.000Z</updated>
+        <summary type="html"><![CDATA[Aというコンテンツは、B、C、Dとコンテンツを重ねることによって、初めて「重要な意味」を持ち始めます。Aの時点で全てを説明してはいけない。
+
+文中より
+続きをみる]]></summary>
+        <author>
+            <name>河内一馬</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024-04-23]]></title>
         <id>hatenablog://entry/6801883189100975355</id>
