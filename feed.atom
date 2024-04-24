@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-24T00:03:19.630Z</updated>
+    <updated>2024-04-24T01:25:27.730Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2024-04-23]]></title>
+        <id>hatenablog://entry/6801883189100975355</id>
+        <link href="https://commits.hatenablog.com/entry/2024/04/24/100000"/>
+        <updated>2024-04-24T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[土日に島根のほうまで1泊でドライブに行っていた。
+松江フォーゲルパーク に行った。
+鯉の顔になれる斬新な顔出しパネル
+出雲大社にも行った。あんまり時間がなくて、参道をふらっとまわってお参りしたぐらい。
+宿泊は奥出雲多根自然博物館に泊まった。ぱらのまの聖地巡礼。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DNSフルリゾルバの実装への DNSSEC の組み込み – NSEC/NSEC3 による否定応答の証明]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=24512</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/24512"/>
+        <updated>2024-04-24T00:36:50.000Z</updated>
+        <summary type="html"><![CDATA[研究開発中のフルリゾルバ実装の DNSSEC検証機能の完成度を向上する目的で、否定応答の証明機能を実装しました。 否定応答の証明について説明した後に実装について紹介します。 DNSSECにおける否定応...]]></summary>
+        <author>
+            <name>日比野 啓</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DNSフルリゾルバの実装への DNSSEC の組み込み – DNSSEC と反復検索]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=24508</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/24508"/>
+        <updated>2024-04-24T00:36:30.000Z</updated>
+        <summary type="html"><![CDATA[研究開発中のフルリゾルバ実装の実用性を向上する目的で、 DNSSEC検証機能を実装しました。 反復検索と DNSSEC の関係について説明した後に実装について紹介します。 ゾーンの階層とフルリゾルバの...]]></summary>
+        <author>
+            <name>日比野 啓</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.4.24]]></title>
         <id>https://gamegaz.com/?p=40940</id>
