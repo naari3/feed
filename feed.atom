@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-26T02:09:47.017Z</updated>
+    <updated>2024-04-26T03:01:56.827Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -34,6 +34,16 @@ Rails 7.1, 7.0, Ruby 3.3, 3.2あたりは割と真面目に記事を探したの
 熟読は基本していなくて流し読みなのだけど、それでも結構楽しかった。わりとおすすめ]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[令和時代の API 実装のベースプラクティスと CSRF 対策]]></title>
+        <id>https://blog.jxck.io/entries/2024-04-26/csrf.html</id>
+        <link href="https://blog.jxck.io/entries/2024-04-26/csrf.html"/>
+        <updated>2024-04-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CSRF という古の攻撃がある。この攻撃を「古(いにしえ)」のものすることができプラットフォームの進化の背景を、「Cookie が SameSite Lax by Default になったからだ」という解説をたまにみる。確かに現実的にそれによって攻撃の成立は難しくなり、救われているサービスもある。が、それはプラットフォームが用意した対策の本質から言うと、解釈が少しずれていると言えるだろう。今回は、「CSRF がどうして成立していたのか」を振り返ることで、本当にプラットフォームに足りていなかったものと、それを補っていった経緯を振り返ることで、本当にすべき対策はなんであるかを解説していく。結果として見えてくるのは、今サービスを実装する上での「ベース」(not ベスト)となるプラクティスだと筆者は考えている。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
