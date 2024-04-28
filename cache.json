@@ -1491,21 +1491,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20240212/20240212092540.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189079185811",
-          "author": null,
-          "description": "VivadoのFloatingライセンスをゲットしたので使い方調べるがてらメモを残します。\nFloatingライセンスの使い方\nFloatingライセンスをどうやってやるのかよくわからない\nXilinx Customer Community\nhttps://docs.xilinx.com/v/u/2020.1-日本語/ug973-vivado-release-notes-install-license\n1 ライセンスファイルを出力\nライセンスサーバに使うライセンスファイルをのMACアドレスなどで.licを出力する。Xilinxのライセンスセンターにアクセスして出力。\nhttps://japan.xilinx.com/support/licensing_solution_center.html\nこれの購入済みのライセンスについてというところをクリックして進む\n2 ライセンスサーバを起動\nライセンスサーバはVivadoをダウンロードするページにある。ずっと起動することになるのでLinuxサーバとかでやった方がいい。\nhttps://japan.xilinx.com/support/download.html\n下の方にライセンス管理ツールがある。\nWindowsで起動する場合：　\nServer Tool directory>\\win64.o\\lmgrd -c <path_to_license>\\<license\nfilename>.lic – l <path_to_license>\\<log filename>.log\nこれをPowershellなどで実行する。win64.o/lmgrdそのものが実行ファイル。\n3 ライセンスマネージャーでこのように入力\nlocalhostじゃない場合はサーバーのAddressを入力する。ポートは通常2100。\n\n4 すると多分Statusを見る…",
-          "link": "https://fumimaker.net/entry/2024/01/30/145119?utm_source=feed",
-          "publishedOn": "2024-01-30T05:51:19.000Z",
-          "wordCount": 757,
-          "title": "Vivado Vitis Floatingライセンスサーバーを使う & Systemdで自動起動できるようにする",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20240130/20240130144417.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumimaker/20240130/20240130144417.png"
         }
       ]
     },

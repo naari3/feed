@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-28T17:01:45.463Z</updated>
+    <updated>2024-04-28T18:01:53.648Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12567,36 +12567,6 @@ border:solid 0.5px #c0c0c0 ;
 }]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vivado Vitis Floatingライセンスサーバーを使う & Systemdで自動起動できるようにする]]></title>
-        <id>hatenablog://entry/6801883189079185811</id>
-        <link href="https://fumimaker.net/entry/2024/01/30/145119?utm_source=feed"/>
-        <updated>2024-01-30T05:51:19.000Z</updated>
-        <summary type="html"><![CDATA[VivadoのFloatingライセンスをゲットしたので使い方調べるがてらメモを残します。
-Floatingライセンスの使い方
-Floatingライセンスをどうやってやるのかよくわからない
-Xilinx Customer Community
-https://docs.xilinx.com/v/u/2020.1-日本語/ug973-vivado-release-notes-install-license
-1 ライセンスファイルを出力
-ライセンスサーバに使うライセンスファイルをのMACアドレスなどで.licを出力する。Xilinxのライセンスセンターにアクセスして出力。
-https://japan.xilinx.com/support/licensing_solution_center.html
-これの購入済みのライセンスについてというところをクリックして進む
-2 ライセンスサーバを起動
-ライセンスサーバはVivadoをダウンロードするページにある。ずっと起動することになるのでLinuxサーバとかでやった方がいい。
-https://japan.xilinx.com/support/download.html
-下の方にライセンス管理ツールがある。
-Windowsで起動する場合：　
-Server Tool directory>\win64.o\lmgrd -c <path_to_license>\<license
-filename>.lic – l <path_to_license>\<log filename>.log
-これをPowershellなどで実行する。win64.o/lmgrdそのものが実行ファイル。
-3 ライセンスマネージャーでこのように入力
-localhostじゃない場合はサーバーのAddressを入力する。ポートは通常2100。
-
-4 すると多分Statusを見る…]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
     <entry>
