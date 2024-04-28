@@ -2799,21 +2799,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/n/nkaoobt/20240209/20240209084920.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189079019170",
-          "author": null,
-          "description": "先々週、大学卒業のための色々を終わらせた。\n無事卒業は出来そうです。\n先週、来年度からの生活に向けて色々やってた。\nまたどこかで詳しく話したいな〜、という気持ちはある。\nとりあえずリアルのタスクは一旦落ち着いたので音MADを作ります。合作関係者の皆様、お待たせしました。",
-          "link": "https://nkaoobt.hatenablog.com/entry/2024/01/29/211402",
-          "publishedOn": "2024-01-29T12:14:02.000Z",
-          "wordCount": 467,
-          "title": "週記#95,96合併号 1月3,4週 終わりと始まり",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -7717,16 +7702,6 @@
           "publishedOn": "2024-02-04T01:49:00.000Z",
           "wordCount": 775,
           "title": "textlint v14をリリースしました",
-          "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2024/01/29/textlint-week/",
-          "author": null,
-          "description": "今週は、textlintの開発に集中する textlint week です。\n目標としては次のメージャーバージョンであるv14をリリースすることです。\nv14 roadmap · Issue #1200 · textlint/textlint\nv14では、今後に向けて古いAPIに非推奨のメッセージを出すことや、使われなくなってるオプションなどを削除するといった変更を入れる予定です。そのため、ほとんどのユーザーには特に影響はないと思います。\ntextlint weekで時間があれば、次のようなことをやっていきたいです。\nOffice Hoursをやる?\neditorのアップデート?\nprocess.emitWarning(warning[, options])を使った非推奨アプローチについての記事を書く\nv14のリリース後に新しい機能改善などにもしていきたいのでフィードバックをお待ちしています。\n次のフォームからフィードバックを送ることができるので、是非お願いします！\nvar d=document,w=\"https://tally.so/widgets/embed.js\",v=function(){\"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))};if(\"undefined\"!=typeof Tally)v();else if(d.querySelector('script[src=\"'+w+'\"]')==null){var s=d.createElement(\"script\");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}\ntextlint notes\n📝 Maintainer Month: なぜtextlintを作ったか\nhttps://efcl.info/2022/06/29/why-create-textlint/\n💖 textlintをサポートしてくれる方を募集しています\nhttps://github.com/sponsors/azu\n🔑 textlintのcontributorは 1Password を無料で利用できます\nhttps://efcl.info/2022/09/23/1password-teams-open-source/",
-          "link": "https://efcl.info/2024/01/29/textlint-week/",
-          "publishedOn": "2024-01-29T13:24:00.000Z",
-          "wordCount": 574,
-          "title": "textlint week: 2024-01-29 - 2024-02-04",
           "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
