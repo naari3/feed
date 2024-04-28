@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-28T16:01:40.354Z</updated>
+    <updated>2024-04-28T17:01:45.463Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Aliexpressで買える安くて小さい液晶（ST7789搭載）の使い方（Raspberry Pi Pico編）]]></title>
+        <id>hatenablog://entry/6801883189102187378</id>
+        <link href="https://nomolk.hatenablog.com/entry/2024/04/29/012844"/>
+        <updated>2024-04-28T16:28:44.000Z</updated>
+        <summary type="html"><![CDATA[前回紹介したAliexpressで売られている小さい液晶の使い方、Raspberry Pi Pico編です。
+
+0.96/1.14/1.28/1.3/1.54/1.69/1.9/2.0 inch IPS TFT LCD OLED Display Module for ardunio raspberry pi  stm
+改めてどんな液晶か見てみます。
+
+左が2.0インチ、右が1.54インチです。
+
+↑2.0インチ。解像度は240x320ピクセル。袋に書いてある型番はMSP2008です。
+
+↑1.54インチ。解像度は240x240ピクセル。袋に書いてある型番はMSP1541です。
+液晶の種類はIPS液晶です。いずれもST7789というコントローラを搭載、通信方式はSPIです。
+Amazonでも似たようなのが1400円くらいで売られてますが、Aliexpressだと600円ほど（2インチの場合）なので激安です。
+本記事の対象の液晶モジュールの条件
+ピンが8本出ているもの（GND、VCC、SCL、SDA、RES、DC、CS、BLK）
+コントローラーがST7789である
+SPI通信で制御する
+Raspberry Pi Picoで使う
+Raspberry Pi Pico（以下、Pico）はマイコンなのでRaspberry PiというよりArduinoに近いのですが、GPIOが3.3VのためArduinoよりもこのディスプレイと相性がいいです。
+※他のマイコンでやる場合の記事もあります→Raspberry Pi編 / Arduino編 / Raspberry Pi Pico編（この記事）
+また、Picoはファームの入れ替えでMicroPythonとCircuitPythonのどちらも使用することができます。
+Raspberry Pi編で紹介したAdafruitのCircuitPython…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[24/04/28]]></title>
         <id>hatenablog://entry/6801883189101900716</id>

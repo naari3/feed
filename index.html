@@ -78,6 +78,117 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
+              rel="noopener">nomolkのブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Aliexpressで買える安くて小さい液晶（ST7789搭載）の使い方（Raspberry Pi Pico編）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2024/04/29/012844" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前回紹介したAliexpressで売られている小さい液晶の使い方、Raspberry Pi Pico編です。
+
+0.96/1.14/1.28/1.3/1.54/1.69/1.9/2.0 inch IPS TFT LCD OLED Display Module for ardunio raspberry pi  stm
+改めてどんな液晶か見てみます。
+
+左が2.0インチ、右が1.54インチです。
+
+↑2.0インチ。解像度は240x320ピクセル。袋に書いてある型番はMSP2008です。
+
+↑1.54インチ。解像度は240x240ピクセル。袋に書いてある型番はMSP1541です。
+液晶の種類はIPS液晶です。いずれもST7789というコントローラを搭載、通信方式はSPIです。
+Amazonでも似たようなのが1400円くらいで売られてますが、Aliexpressだと600円ほど（2インチの場合）なので激安です。
+本記事の対象の液晶モジュールの条件
+ピンが8本出ているもの（GND、VCC、SCL、SDA、RES、DC、CS、BLK）
+コントローラーがST7789である
+SPI通信で制御する
+Raspberry Pi Picoで使う
+Raspberry Pi Pico（以下、Pico）はマイコンなのでRaspberry PiというよりArduinoに近いのですが、GPIOが3.3VのためArduinoよりもこのディスプレイと相性がいいです。
+※他のマイコンでやる場合の記事もあります→Raspberry Pi編 / Arduino編 / Raspberry Pi Pico編（この記事）
+また、Picoはファームの入れ替えでMicroPythonとCircuitPythonのどちらも使用することができます。
+Raspberry Pi編で紹介したAdafruitのCircuitPython…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240428/20240428235842.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Aliexpressで買える安くて小さい液晶（ST7789搭載）の使い方（Arduino編）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2024/04/28/183912" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前回紹介したAliexpressで売られている小さい液晶の使い方、Arduino編です。
+
+0.96/1.14/1.28/1.3/1.54/1.69/1.9/2.0 inch IPS TFT LCD OLED Display Module for ardunio raspberry pi  stm
+改めてどんな液晶か見てみます。
+
+左が2.0インチ、右が1.54インチです。
+
+↑2.0インチ。解像度は240x320ピクセル。袋に書いてある型番はMSP2008です。
+
+↑1.54インチ。解像度は240x240ピクセル。袋に書いてある型番はMSP1541です。
+液晶の種類はIPS液晶です。いずれもST7789というコントローラを搭載、通信方式はSPIです。
+Amazonでも似たようなのが1400円くらいで売られてますが、Aliexpressだと600円ほど（2インチの場合）なので激安です。
+本記事の対象の液晶モジュールの条件
+ピンが8本出ているもの（GND、VCC、SCL、SDA、RES、DC、CS、BLK）
+コントローラーがST7789である
+SPI通信で制御する
+Arduinoで使う
+液晶で遊びたいけどどのマイコン使おうかな…っていうときにArduinoを選ぶのは正直お勧めしません。いろいろ面倒なので…。
+Arduino編 / Raspberry Pi Pico編（検証中）
+家にArduinoしかないとか、もともとArduinoで作ってある作品に液晶画面をつけたいとかいう場合は、以下を参考にしてください。
+ライブラリを入れる
+スケッチ→ライブラリをインクルード→ライブラリを管理…
+を選ぶと、ライブラリマネージャが起動します。「st7789」で検索するとこれまたAdafruitのライブラリが出てきます。インストールしましょう。
+
+依存関係がどうのと言われたら「全てをインストー…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240425/20240425005925.gif" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Aliexpressで買える安くて小さい液晶（ST7789搭載）の使い方（Raspberry Pi編）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2024/04/28/175142" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Aliexpressを見ているとよく安くて小さい液晶が売られています。
+
+0.96/1.14/1.28/1.3/1.54/1.69/1.9/2.0 inch IPS TFT LCD OLED Display Module for ardunio raspberry pi  stm
+こういうのです。
+
+左が2.0インチ、右が1.54インチです。
+
+↑2.0インチ。解像度は240x320ピクセル。袋に書いてある型番はMSP2008です。
+
+↑1.54インチ。解像度は240x240ピクセル。袋に書いてある型番はMSP1541です。
+液晶の種類はIPS液晶です。いずれもST7789というコントローラを搭載、通信方式はSPIです。
+わりとよく見る部品ではあるので、WEB上にすでに解説記事がたくさんある……と思うじゃないですか。近いものがあるにはあるのですが、ピン構成が違ったり使われてるライブラリがこの部品に対応していなかったりして意外にそのまま適用できなかったので、動かすまでちょっと時間がかかりました。備忘録も兼ねてやり方を残しておくので、類似の部品を買った方は参考にしてください。
+本記事の対象の液晶モジュールの条件
+ピンが8本出ているもの（GND、VCC、SCL、SDA、RES、DC、CS、BLK）
+コントローラーがST7789である
+SPI通信で制御する
+Raspberry Pi で動かす
+まずRaspberry Piから表示してみます。このディスプレイにいろいろ表示して遊びたいなーという場合は、気軽に画像ファイルなどを扱えるのでいちばんいいと思います。
+ターミナルかSSHで操作します。
+Raspberry PiのSPI通信を有効にする
+SPIっていうのは液状に信号を送る際の通信方式ですね。
+sudo raspi-config
+
+Interfacing Options → SPI…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240424/20240424111426.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://baibukken.hatenablog.com/" target="_blank"
               rel="noopener">思い出したら書きます</a></h3>
           <section class="articles-per-source">
@@ -243,85 +354,6 @@ M3ありがとうございました。
 Mig Switchクローン UnlockSwitchは本物か first appeared on 大人のためのゲーム講座.</span>
                   </div>
                   <img src="https://gamegaz.com/wp-content/uploads/UnlockSwitch.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
-              rel="noopener">nomolkのブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Aliexpressで買える安くて小さい液晶（ST7789搭載）の使い方（Arduino編）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2024/04/28/183912" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>前回紹介したAliexpressで売られている小さい液晶の使い方、Arduino編です。
-
-0.96/1.14/1.28/1.3/1.54/1.69/1.9/2.0 inch IPS TFT LCD OLED Display Module for ardunio raspberry pi  stm
-改めてどんな液晶か見てみます。
-
-左が2.0インチ、右が1.54インチです。
-
-↑2.0インチ。解像度は240x320ピクセル。袋に書いてある型番はMSP2008です。
-
-↑1.54インチ。解像度は240x240ピクセル。袋に書いてある型番はMSP1541です。
-液晶の種類はIPS液晶です。いずれもST7789というコントローラを搭載、通信方式はSPIです。
-Amazonでも似たようなのが1400円くらいで売られてますが、Aliexpressだと600円ほど（2インチの場合）なので激安です。
-本記事の対象の液晶モジュールの条件
-ピンが8本出ているもの（GND、VCC、SCL、SDA、RES、DC、CS、BLK）
-コントローラーがST7789である
-SPI通信で制御する
-Arduinoで使う
-液晶で遊びたいけどどのマイコン使おうかな…っていうときにArduinoを選ぶのは正直お勧めしません。いろいろ面倒なので…。
-Arduino編 / Raspberry Pi Pico編（検証中）
-家にArduinoしかないとか、もともとArduinoで作ってある作品に液晶画面をつけたいとかいう場合は、以下を参考にしてください。
-ライブラリを入れる
-スケッチ→ライブラリをインクルード→ライブラリを管理…
-を選ぶと、ライブラリマネージャが起動します。「st7789」で検索するとこれまたAdafruitのライブラリが出てきます。インストールしましょう。
-
-依存関係がどうのと言われたら「全てをインストー…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240425/20240425005925.gif" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Aliexpressで買える安くて小さい液晶（ST7789搭載）の使い方（Raspberry Pi編）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2024/04/28/175142" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Aliexpressを見ているとよく安くて小さい液晶が売られています。
-
-0.96/1.14/1.28/1.3/1.54/1.69/1.9/2.0 inch IPS TFT LCD OLED Display Module for ardunio raspberry pi  stm
-こういうのです。
-
-左が2.0インチ、右が1.54インチです。
-
-↑2.0インチ。解像度は240x320ピクセル。袋に書いてある型番はMSP2008です。
-
-↑1.54インチ。解像度は240x240ピクセル。袋に書いてある型番はMSP1541です。
-液晶の種類はIPS液晶です。いずれもST7789というコントローラを搭載、通信方式はSPIです。
-わりとよく見る部品ではあるので、WEB上にすでに解説記事がたくさんある……と思うじゃないですか。近いものがあるにはあるのですが、ピン構成が違ったり使われてるライブラリがこの部品に対応していなかったりして意外にそのまま適用できなかったので、動かすまでちょっと時間がかかりました。備忘録も兼ねてやり方を残しておくので、類似の部品を買った方は参考にしてください。
-本記事の対象の液晶モジュールの条件
-ピンが8本出ているもの（GND、VCC、SCL、SDA、RES、DC、CS、BLK）
-コントローラーがST7789である
-SPI通信で制御する
-Raspberry Pi で動かす
-まずRaspberry Piから表示してみます。このディスプレイにいろいろ表示して遊びたいなーという場合は、気軽に画像ファイルなどを扱えるのでいちばんいいと思います。
-ターミナルかSSHで操作します。
-Raspberry PiのSPI通信を有効にする
-SPIっていうのは液状に信号を送る際の通信方式ですね。
-sudo raspi-config
-
-Interfacing Options → SPI…</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240424/20240424111426.jpg" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -20009,7 +20041,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-04-28T16:01:40.312Z">2024-04-28T16:01:40.312Z</time>
+    <time id="build-timestamp" datetime="2024-04-28T17:01:45.414Z">2024-04-28T17:01:45.414Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
