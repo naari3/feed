@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-04-28T06:01:41.929Z</updated>
+    <updated>2024-04-28T07:01:35.608Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -18,6 +18,17 @@
 ご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[styled-components を v6 に上げた時の話]]></title>
+        <id>https://blog.ojisan.io/styled-components-to-v6</id>
+        <link href="https://blog.ojisan.io/styled-components-to-v6"/>
+        <updated>2024-04-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[少し前に Next.js の v12 から v14 への update を依頼されたことがあり、必然的に React のアップデートもするのだが、そのときに先に styled-components を update しなければいけないという状況に陥った。
+普段は CSS…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
