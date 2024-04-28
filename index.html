@@ -83,6 +83,42 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander" open>
+                <summary class="article-expander__title">Aliexpressで買える安くて小さい液晶（ST7789搭載）の使い方（Arduino編）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2024/04/28/183912" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前回紹介したAliexpressで売られている小さい液晶の使い方、Arduino編です。
+
+0.96/1.14/1.28/1.3/1.54/1.69/1.9/2.0 inch IPS TFT LCD OLED Display Module for ardunio raspberry pi  stm
+改めてどんな液晶か見てみます。
+
+左が2.0インチ、右が1.54インチです。
+
+↑2.0インチ。解像度は240x320ピクセル。袋に書いてある型番はMSP2008です。
+
+↑1.54インチ。解像度は240x240ピクセル。袋に書いてある型番はMSP1541です。
+液晶の種類はIPS液晶です。いずれもST7789というコントローラを搭載、通信方式はSPIです。
+Amazonでも似たようなのが1400円くらいで売られてますが、Aliexpressだと600円ほど（2インチの場合）なので激安です。
+本記事の対象の液晶モジュールの条件
+ピンが8本出ているもの（GND、VCC、SCL、SDA、RES、DC、CS、BLK）
+コントローラーがST7789である
+SPI通信で制御する
+Arduinoで使う
+液晶で遊びたいけどどのマイコン使おうかな…っていうときにArduinoを選ぶのは正直お勧めしません。いろいろ面倒なので…。
+Arduino編 / Raspberry Pi Pico編（検証中）
+家にArduinoしかないとか、もともとArduinoで作ってある作品に液晶画面をつけたいとかいう場合は、以下を参考にしてください。
+ライブラリを入れる
+スケッチ→ライブラリをインクルード→ライブラリを管理…
+を選ぶと、ライブラリマネージャが起動します。「st7789」で検索するとこれまたAdafruitのライブラリが出てきます。インストールしましょう。
+
+依存関係がどうのと言われたら「全てをインストー…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240425/20240425005925.gif" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
                 <summary class="article-expander__title">Aliexpressで買える安くて小さい液晶（ST7789搭載）の使い方（Raspberry Pi編）</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2024/04/28/175142" target="_blank"
                   rel="noopener">
@@ -19840,7 +19876,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-04-28T09:01:50.598Z">2024-04-28T09:01:50.598Z</time>
+    <time id="build-timestamp" datetime="2024-04-28T10:01:53.871Z">2024-04-28T10:01:53.871Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
