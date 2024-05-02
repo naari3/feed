@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-02T03:01:46.952Z</updated>
+    <updated>2024-05-02T04:02:00.974Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[カナンGBA v0.02]]></title>
+        <id>hatenablog://entry/6801883189103105638</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/05/02/120722"/>
+        <updated>2024-05-02T03:07:22.000Z</updated>
+        <summary type="html"><![CDATA[修正しました。些細な点なのでコンバートしなおす必要はないと思います。
+2024/05/02 v0.02
+
+    重複文章の修正（cs05_20、cs08_18、cs17_26）
+    重複文章についてをREADMEに記載（※）
+    選択肢の順番変更（cs07_09）
+    タイトルの背景色を変更
+
+※7章と21章に連続して同じ文章が出現します。会話フラグの仕様です。バグではありません。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.5.2]]></title>
         <id>https://gamegaz.com/?p=41017</id>
