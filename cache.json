@@ -7798,16 +7798,6 @@
           "wordCount": 897,
           "title": "Node.jsで機能やパッケージの非推奨メッセージを通知する方法",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2024/02/04/textlint-v14/",
-          "author": null,
-          "description": "textlint v14.0.0をリリースしました！\nリリースノート: textlint v14.0.0 · textlint\n変更ログ: Release v14.0.0 · textlint/textlint\ntextlint v14.0.0は、Node.js v18.14.0以降が必要になります。\nNode.js 16は既にEOLなので、Node.js 16のサポートを終了しました。\n古いNode.jsを使っている場合は、LTS(Long Term Support)版のNode.jsにアップグレードする必要があります。\nDownload | Node.js\nユーザー向けの変更点\n基本的にはNode.jsのバージョンが18以降なら、特に影響がある変更はありません。\nNode.js 16のサポートを終了\ntextlint v14はNode.js v18.14.0+が必要です。\nNode.js 18か20にアップグレードする必要があります。\nDownload | Node.js\nまた、ルールを開発する人向けのパッケージであるtextlint-scriptsはNode.js v18.19.0+を必要としています(最新のNode.js 18 LTSバージョン)。\ngulp-textlintをmonorepoから分離\ngulp-textlintをmonorepoから分離しました。\nchore!: move gulp-textlint to out of monorepo by azu · Pull Request #1319 · textlint/textlint\ntextlint/gulp-textlint\ngulp-textlint はtextlintコアチームによってメンテナンスされていません。\nリポジトリとして分けたので、興味がある人は以下のIssueをチェックしてください…",
-          "link": "https://efcl.info/2024/02/04/textlint-v14/",
-          "publishedOn": "2024-02-04T01:49:00.000Z",
-          "wordCount": 775,
-          "title": "textlint v14をリリースしました",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
@@ -9699,16 +9689,6 @@
           "wordCount": 1568,
           "title": "GameGaz Daily 2024.2.5",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/mqdefault-1212.jpg"
-        },
-        {
-          "id": "https://gamegaz.com/?p=40427",
-          "author": "mamosuke",
-          "description": "TheFloW氏が「PlayStation 4 Kernel RCE」と題した発表をTyphoonCon24という2024年5月30日から5月31日の2日間韓国のソウルで開催されるセキュリティイベントで発表することが明らかになりました。→→→この記事の続きを読む\nTheFloW氏 TyphoonCon24でPS4カーネルの脆弱性について発表 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024020440427/",
-          "publishedOn": "2024-02-04T01:53:17.000Z",
-          "wordCount": 1499,
-          "title": "TheFloW氏 TyphoonCon24でPS4カーネルの脆弱性について発表",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/PlayStation-4-Kernel-RCE.png"
         }
       ]
     },
