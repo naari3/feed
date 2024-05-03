@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-03T15:01:49.135Z</updated>
+    <updated>2024-05-03T16:01:39.106Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12585,41 +12585,6 @@ For a distributed data platform to be successful, domain data teams must apply p
 この考え方を「data as a product」といい、平たく言えば「データセットをプロダクトとみなし、プロダクトマネジメントをやっていこう」と主張する考え方である。国内の大規模エンタープライズの中でデータメッシュを実現できている企業は聞いたことがない2024年2月現在だが、データメッシュの文脈から外れたとしても、「data as a produc…]]></summary>
         <author>
             <name>現実モデリング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Node.jsで機能やパッケージの非推奨メッセージを通知する方法]]></title>
-        <id>https://efcl.info/2024/02/04/emitWarning/</id>
-        <link href="https://efcl.info/2024/02/04/emitWarning/"/>
-        <updated>2024-02-04T03:10:00.000Z</updated>
-        <summary type="html"><![CDATA[ライブラリやツールなどを作っているときに、特定の機能やパッケージを非推奨にする場合があります。
-これらの非推奨はリポジトリ上のREADMEやIssueなどに書いても、利用者が気づかないことがあります。
-そのため、利用者が気付けるように非推奨の機能やパッケージを使った場合に警告を出す方法を紹介します。
-非推奨にはいくつかの段階があり、それに応じてやり方を変えられるので、それぞれの方法を紹介します。
-パッケージの非推奨化: npm deprecate <package> <message>
-コードレベルの非推奨化: JSDocタグの@deprecated
-実行時の非推奨化: process.emitWarning()
-パッケージの非推奨化: npm deprecate <package> <message>
-npmのパッケージレベルで、そのパッケージが非推奨であることを通知するにはnpm deprecateコマンドを使います。
-npm-deprecate
-
-npm deprecate <package> <message>
-
-
-<package>には非推奨にするパッケージ名を指定します。
-<message>には非推奨にする理由を書きます。
-@azu/test-packageパッケージを非推奨にする場合は次のようにします。
-
-npm deprecate @azu/test-package "@azu/test-package is deprecated. use new-someting instead." 
-
-
-非推奨とするパッケージのバージョンを指定することもできます。
-
-npm deprecate @azu/test-package@1.x "@azu/test-package@1.x is deprecated. use new-someting instead." 
-
-…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

@@ -7799,16 +7799,6 @@
           "wordCount": 615,
           "title": "#jsprimer week: 2024-02-05 - 2024-02-11",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2024/02/04/emitWarning/",
-          "author": null,
-          "description": "ライブラリやツールなどを作っているときに、特定の機能やパッケージを非推奨にする場合があります。\nこれらの非推奨はリポジトリ上のREADMEやIssueなどに書いても、利用者が気づかないことがあります。\nそのため、利用者が気付けるように非推奨の機能やパッケージを使った場合に警告を出す方法を紹介します。\n非推奨にはいくつかの段階があり、それに応じてやり方を変えられるので、それぞれの方法を紹介します。\nパッケージの非推奨化: npm deprecate <package> <message>\nコードレベルの非推奨化: JSDocタグの@deprecated\n実行時の非推奨化: process.emitWarning()\nパッケージの非推奨化: npm deprecate <package> <message>\nnpmのパッケージレベルで、そのパッケージが非推奨であることを通知するにはnpm deprecateコマンドを使います。\nnpm-deprecate\n\nnpm deprecate <package> <message>\n\n\n<package>には非推奨にするパッケージ名を指定します。\n<message>には非推奨にする理由を書きます。\n@azu/test-packageパッケージを非推奨にする場合は次のようにします。\n\nnpm deprecate @azu/test-package \"@azu/test-package is deprecated. use new-someting instead.\" \n\n\n非推奨とするパッケージのバージョンを指定することもできます。\n\nnpm deprecate @azu/test-package@1.x \"@azu/test-package@1.x is deprecated. use new-someting instead.\" \n\n…",
-          "link": "https://efcl.info/2024/02/04/emitWarning/",
-          "publishedOn": "2024-02-04T03:10:00.000Z",
-          "wordCount": 897,
-          "title": "Node.jsで機能やパッケージの非推奨メッセージを通知する方法",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
