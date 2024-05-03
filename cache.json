@@ -1406,21 +1406,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/contradiction29/20240218/20240218230529.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189080444829",
-          "author": null,
-          "description": "筆者がスタートアップの「データ何でもチーム」をやってきた中で、考えてきて実践してきたことを吐き出します\nポエムです\ndata as a product\nデータメッシュを実現する文脈の中で、「それぞれのドメインに分散されたチームが自身の提供するデータセットに対してproduct thinkingを適用するべきだ」とする考えが生まれてきた。\nFor a distributed data platform to be successful, domain data teams must apply product thinking with similar rigor to the datasets that they provide; considering their data assets as their products and the rest of the organization's data scientists, ML and data engineers as their customers*1.\n（筆者日本語訳）分散データプラットフォームが成功するためには、ドメインごとに配置されたデータチームが自身の提供するデータセットに対してプロダクトシンキングを適用しなければならない。データアセットをプロダクトとして捉え、組織内の他のデータサイエンティストや機械学習エンジニア、データエンジニアを顧客とみなすのである。\n\n\nこの考え方を「data as a product」といい、平たく言えば「データセットをプロダクトとみなし、プロダクトマネジメントをやっていこう」と主張する考え方である。国内の大規模エンタープライズの中でデータメッシュを実現できている企業は聞いたことがない2024年2月現在だが、データメッシュの文脈から外れたとしても、「data as a produc…",
-          "link": "https://contradiction29.hatenablog.com/entry/2024/02/04/190000",
-          "publishedOn": "2024-02-04T10:00:00.000Z",
-          "wordCount": 438,
-          "title": "社内データ基盤 as a Product : いい感じにやっていけ",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -8191,6 +8176,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=41025",
+          "author": "mamosuke",
+          "description": "任天堂がGitHubに対しDMCA削除通知を発行し、yuzuの派生含む8535ものリポジトリを削除させました。→→→この記事の続きを読む\n任天堂 DMCA通知でyuzuの派生含む現存リポジトリを一斉排除 その数8535 ついにMig Switchもターゲットに first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024050441025/",
+          "publishedOn": "2024-05-03T21:37:22.000Z",
+          "wordCount": 1496,
+          "title": "任天堂 DMCA通知でyuzuの派生含む現存リポジトリを一斉排除 その数8535 ついにMig Switchもターゲットに",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/yuzu.png"
+        },
         {
           "id": "https://gamegaz.com/?p=41023",
           "author": "mamosuke",
