@@ -1677,21 +1677,6 @@
             "length": "0"
           },
           "imageUrl": "https://pbs.twimg.com/media/GGYPnt5boAAAl2s?format=jpg&name=large"
-        },
-        {
-          "id": "hatenablog://entry/6801883189080903425",
-          "author": null,
-          "description": "前回、うっかりJOYSOUNDのマシンを買って色々遊べたので、\nhoneylab.hatenablog.jp\n続いてDAMの XG1000を買ったのですが、いじり過ぎてしまい壊してしまいました。\n\n満を持して、もう一台XG1000を買ったので丁寧にいじっています。\n\nDAM XG1000はLinuxが使用され、その上でカラオケシステムが動作しています。\nせっかくLinuxが入っているのですが、自動でそのような動きをしているため、自由に使うことができません。\nHDDを引っこ抜いて書き換えてあれやこれやする、というところで壊したので、\n今回はできるだけ分解せず、ソフトウェアだけであれこれする方法が確立できたので\nこっそり紹介します。\n \n背面、コントロール端子のこの２ピンがそれぞれRS-232C(ttyS0)のRXとTXです。\nTTLやCMOSの5V/3V - 0V ではなく、RS-232Cレベルですので気をつけましょう\n\nブートローダの起動中、のメッセージを見ながら、徐にスペースキーを押すと\nYAMON> のプロンプトで停止します。\n\nここで\nYAMON> pflash probe\nYAMON> xrpc 0xac080090\nYAMON> load zbf 0xb3000000\nを実行すると、Linuxカーネルが読み込まれます。\n\nここで、\nYAMON> go . \"console=ttyS0 rdinit=/bin/sh\"\nする\nと、直接busyboxのshが立ち上がります。\n\n何が起きたかというと、内蔵Flashに記録されているLinuxカーネルにはrootfsとしてinitrdというミニファイルシステムが添付されています。\n(initrdの中身)\n\n \n何も指定しなければinitrdの中のinitが起動して、/etc/init.d/ からカラオケシステムが起動しますが…",
-          "link": "https://honeylab.hatenablog.jp/entry/2024/02/06/001829",
-          "publishedOn": "2024-02-05T15:18:29.000Z",
-          "wordCount": 596,
-          "title": "DAM XG1000に入っているLinuxで遊ぶ方法",
-          "enclosure": {
-            "url": "https://pbs.twimg.com/media/GElFx35agAAHvFv?format=jpg&name=360x360",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": "https://pbs.twimg.com/media/GElFx35agAAHvFv?format=jpg&name=360x360"
         }
       ]
     },
@@ -8109,6 +8094,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=41032",
+          "author": "mamosuke",
+          "description": "PPPwnGo v1.5,PPPwn GUI 1.3,PPPwn Loader v1.1,PS4Rootkit Beta 2.0,PPPwn Stage2 Payload loader(11.00),ViViD v0.2 Beta,duckstation v0.1-6720,Nightly-MochaPayload-20240505-002010,BigPEmu v1.1.2,Ken’s Labyrinth(lab3d/sdl) 4.1.7 (2024-05-04)→→→この記事の続きを読む\nGameGaz Daily 2024.5.5 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024050541032/",
+          "publishedOn": "2024-05-05T03:47:08.000Z",
+          "wordCount": 1711,
+          "title": "GameGaz Daily 2024.5.5",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=41028",
           "author": "mamosuke",
