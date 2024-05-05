@@ -6642,18 +6642,7 @@
       "title": "ふーふー",
       "feedUrl": "https://note.com/nanana555/rss",
       "siteUrl": "https://note.com/nanana555",
-      "articles": [
-        {
-          "id": "https://note.com/nanana555/n/n45c12d3d88c5",
-          "author": null,
-          "description": "ジョディ・マーベリック(29)\n続きをみる",
-          "link": "https://note.com/nanana555/n/n45c12d3d88c5",
-          "publishedOn": "2024-02-05T13:09:49.000Z",
-          "wordCount": null,
-          "title": "合作鯖での立ち回り方と招待の仕方",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/129936904/rectangle_large_type_2_4d7e577c89f2f1843a17493d33901efa.jpeg?width=800"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "なのはなぐらむ",
@@ -7738,16 +7727,6 @@
           "publishedOn": "2024-02-08T04:52:00.000Z",
           "wordCount": 934,
           "title": "私のJavaScriptの情報収集法 2024年版",
-          "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2024/02/05/jsprimer-week/",
-          "author": null,
-          "description": "先週のtextlint weekに引き続き、今週はjsprimerの開発に集中するjsprimer weekです。\n目標としては、次のECMAScript仕様であるES2024に入るProposalが今週のTC39ミーティングで確定するので、それに合わせてjsprimerをどう更新するかを決めることです。\nECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer\nES2024の変更はそこまで大きなものはこなさそうなので大丈夫そうですが、Node.jsの変更が多くなってるのでNode.jsでCLIアプリ · JavaScript Primer #jsprimerをどうするかをちょっと考えたいです。\nmarkedjs v8へのアップデート · Issue #1694 · asciidwango/js-primer\nutils.parseArgsの利用法を追記 · Issue #1698 · asciidwango/js-primer\nまた、企業でjsprimerの更新を支援できる仕組みとしてJavaScript Primer - Open Collectiveを作ってありますが、まだちゃんと運用できてないので、運用できるようにしたいです。\nOpen Source Collective · Issue #1674 · asciidwango/js-primer\nOpen Collectiveの資金を使って、jsprimerの更新を手伝ってくれた方にもちゃんと労力にあった報酬を支払えるようにしたいです。\njsprimerの更新に興味があるって人は、それとなくコメントしてくれると嬉しいです。\nECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer\nECMAScriptに合わせた更新は毎年やっているので、どういうことをやってるかは次のIssueを見るとイメージできると思います。\n今年は、Array.groupByの更新ぐらいな気はしているので、そこまで大きな変更はないと思います。\nどちらかというとNode.jsに関する更新は、どう変えると読みやすいかは考える必要がありそうです。\nECMAScript 2023の対応 · Issue #1658 · asciidwango/js-primer\nECMAScript 2022の対応 · Issue #1337 · asciidwango/js-primer\nECMAScript 2021の対応 · Issue #1220 · asciidwango/js-primer\nECMAScript 2020の対応 · Issue #1145 · asciidwango/js-primer\nやる人が出てきたら、一回ミーティングをすると良いかもしれません。",
-          "link": "https://efcl.info/2024/02/05/jsprimer-week/",
-          "publishedOn": "2024-02-05T12:11:00.000Z",
-          "wordCount": 615,
-          "title": "#jsprimer week: 2024-02-05 - 2024-02-11",
           "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]

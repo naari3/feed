@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-05T00:03:01.057Z</updated>
+    <updated>2024-05-05T01:27:31.119Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12479,45 +12479,6 @@ YAMON> go . "console=ttyS0 rdinit=/bin/sh"
         <summary type="html"><![CDATA[続きをみる]]></summary>
         <author>
             <name>さくれい</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[合作鯖での立ち回り方と招待の仕方]]></title>
-        <id>https://note.com/nanana555/n/n45c12d3d88c5</id>
-        <link href="https://note.com/nanana555/n/n45c12d3d88c5"/>
-        <updated>2024-02-05T13:09:49.000Z</updated>
-        <summary type="html"><![CDATA[ジョディ・マーベリック(29)
-続きをみる]]></summary>
-        <author>
-            <name>ふーふー</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[#jsprimer week: 2024-02-05 - 2024-02-11]]></title>
-        <id>https://efcl.info/2024/02/05/jsprimer-week/</id>
-        <link href="https://efcl.info/2024/02/05/jsprimer-week/"/>
-        <updated>2024-02-05T12:11:00.000Z</updated>
-        <summary type="html"><![CDATA[先週のtextlint weekに引き続き、今週はjsprimerの開発に集中するjsprimer weekです。
-目標としては、次のECMAScript仕様であるES2024に入るProposalが今週のTC39ミーティングで確定するので、それに合わせてjsprimerをどう更新するかを決めることです。
-ECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer
-ES2024の変更はそこまで大きなものはこなさそうなので大丈夫そうですが、Node.jsの変更が多くなってるのでNode.jsでCLIアプリ · JavaScript Primer #jsprimerをどうするかをちょっと考えたいです。
-markedjs v8へのアップデート · Issue #1694 · asciidwango/js-primer
-utils.parseArgsの利用法を追記 · Issue #1698 · asciidwango/js-primer
-また、企業でjsprimerの更新を支援できる仕組みとしてJavaScript Primer - Open Collectiveを作ってありますが、まだちゃんと運用できてないので、運用できるようにしたいです。
-Open Source Collective · Issue #1674 · asciidwango/js-primer
-Open Collectiveの資金を使って、jsprimerの更新を手伝ってくれた方にもちゃんと労力にあった報酬を支払えるようにしたいです。
-jsprimerの更新に興味があるって人は、それとなくコメントしてくれると嬉しいです。
-ECMAScript 2024の対応 · Issue #1706 · asciidwango/js-primer
-ECMAScriptに合わせた更新は毎年やっているので、どういうことをやってるかは次のIssueを見るとイメージできると思います。
-今年は、Array.groupByの更新ぐらいな気はしているので、そこまで大きな変更はないと思います。
-どちらかというとNode.jsに関する更新は、どう変えると読みやすいかは考える必要がありそうです。
-ECMAScript 2023の対応 · Issue #1658 · asciidwango/js-primer
-ECMAScript 2022の対応 · Issue #1337 · asciidwango/js-primer
-ECMAScript 2021の対応 · Issue #1220 · asciidwango/js-primer
-ECMAScript 2020の対応 · Issue #1145 · asciidwango/js-primer
-やる人が出てきたら、一回ミーティングをすると良いかもしれません。]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
