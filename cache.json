@@ -3828,21 +3828,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6801883189088142714/1709606259"
-        },
-        {
-          "id": "hatenablog://entry/6801883189081311188",
-          "author": null,
-          "description": "はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。\n細かな機能修正・改善\nブログの設定ページで「保存する」ボタンを画面最下部に固定しました\nこれまでは設定ページの設定を変更した後にページの末尾までスクロールして「保存する」ボタンを押す必要がありましたが、「保存する」ボタンを画面最下部に固定表示するようにしたため、設定の変更が行いやすくなりました。\n2024年1月のお知らせ（再掲）\nはてなブログのヘッダメニューをリニューアルします\n\n2月1日から1ヶ月程度、確認期間を設けております。ご自身のブログにて表示崩れが起こらないかをご確認ください。",
-          "link": "https://staff.hatenablog.com/entry/2024/02/08/105049",
-          "publishedOn": "2024-02-08T01:50:49.000Z",
-          "wordCount": 824,
-          "title": "はてなブログの2024年1月の新機能・機能改善をお知らせします",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240207/20240207175230.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240207/20240207175230.png"
         }
       ]
     },
@@ -7439,6 +7424,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2024-05-07/referrer-policy.html",
+          "author": null,
+          "description": "Referrer-Policy は、送信される Referer の値を制御することが可能だ。このヘッダの副次的な効果をよく理解していないと、「no-referer にして送らないのが最も安全だ」という誤解を生むことになる。では、複数あるポリシーの中でどのような観点で、どのディレクティブを採用するのが良いのだろうか?前提として前回の記事の「リクエストの出自をチェックすることは現代の実装のベースプラクティスである」という点を踏まえて考えてみる。令和時代の API 実装のベースプラクティスと CSRF 対策 | blog.jxck.iohttps://blog.jxck.io/entries/2024-04-26/csrf.html",
+          "link": "https://blog.jxck.io/entries/2024-05-07/referrer-policy.html",
+          "publishedOn": "2024-05-07T00:00:00.000Z",
+          "wordCount": 850,
+          "title": "Referrer-Policy の制限を強めると安全になるという誤解",
+          "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
+        },
+        {
           "id": "https://blog.jxck.io/entries/2024-04-26/csrf.html",
           "author": null,
           "description": "CSRF という古の攻撃がある。この攻撃を「古(いにしえ)」のものすることができプラットフォームの進化の背景を、「Cookie が SameSite Lax by Default になったからだ」という解説をたまにみる。確かに現実的にそれによって攻撃の成立は難しくなり、救われているサービスもある。が、それはプラットフォームが用意した対策の本質から言うと、解釈が少しずれていると言えるだろう。今回は、「CSRF がどうして成立していたのか」を振り返ることで、本当にプラットフォームに足りていなかったものと、それを補っていった経緯を振り返ることで、本当にすべき対策はなんであるかを解説していく。結果として見えてくるのは、今サービスを実装する上での「ベース」(not ベスト)となるプラクティスだと筆者は考えている。",
@@ -8066,6 +8061,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=41041",
+          "author": "mamosuke",
+          "description": "任天堂の古川社長がSwitchの後継機種に関するアナウンスを今期中に行うことを公表しました。→→→この記事の続きを読む\nなぜ今日？任天堂がSwitch後継機発表を今年度中に行うと公表 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024050741041/",
+          "publishedOn": "2024-05-07T13:22:50.000Z",
+          "wordCount": 1690,
+          "title": "なぜ今日？任天堂がSwitch後継機発表を今年度中に行うと公表",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/Switch2.png"
+        },
         {
           "id": "https://gamegaz.com/?p=41037",
           "author": "mamosuke",
