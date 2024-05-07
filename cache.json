@@ -2748,6 +2748,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189104063540",
+          "author": null,
+          "description": "前にも書いたんですけど先日からフリーランスになりました。\nそれで、さいきん仕事でビデオチャットを使いたい場面がありまして、よく調べるとZoom契約するよりGoogleの有料プランに入ってMeet使った方が安いしなんかオプション機能いろいろついてきてお得そう。ヨッシャ課金するか！！！！！と思ったらなんか課金プランがいっぱいあって途方にくれました。\nいかれたメンバーを紹介するぜ！\nプランの選定条件として、下記が前提です\n組織（自分以外のメンバー）を持たない個人事業主である\nGoogle Meet で3人以上のグループ通話を60分制限なしで使いたい\nそうすると候補になってくるのは下記3つ。\nGoogle One プレミアム\nGoogleドライブが容量いっぱいになると「容量を追加しましょう！」つって出てくるアイツです。課金プランがベーシック、プレミアム、AIプレミアムの３つあって、プレミアム以上だとGoogle Workspaceの機能が一部使えるようになり、そこにMeet関連が含まれます。筆者の使用経験あり。\nGoogle Workspace Individual\nGoogle Workspaceっていうのは組織向けのグループウェア的な感じのサービスで、超ざっくり言うとGoogleのあらゆるサービスが組織内で共有できます。で最近になってその個人版、Individualというのができたみたいです。グループウェアの個人版という、その存在意義自体に矛盾を抱えたミステリアスなプランです。使用経験なし。\nGoogle Workspace Business Starter / Standard\nそのGoogle Workspaceの小規模組織向けのがBusinessで、組織向けですが一人でも使えます。さらにその中にStarter、Standard、Plusのランクがあり、Plusはオーバース…",
+          "link": "https://nomolk.hatenablog.com/entry/2024/05/07/121400",
+          "publishedOn": "2024-05-07T03:14:00.000Z",
+          "wordCount": 801,
+          "title": "個人事業主や副業用にGoogleに課金するときどれ選べばいいんだよ問題（Google One プレミアム / Google Workspaces Individual / Business の比較）",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240506/20240506130334.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240506/20240506130334.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189102187378",
           "author": null,
           "description": "前回紹介したAliexpressで売られている小さい液晶の使い方、Raspberry Pi Pico編です。\n\n0.96/1.14/1.28/1.3/1.54/1.69/1.9/2.0 inch IPS TFT LCD OLED Display Module for ardunio raspberry pi  stm\n改めてどんな液晶か見てみます。\n\n左が2.0インチ、右が1.54インチです。\n\n↑2.0インチ。解像度は240x320ピクセル。袋に書いてある型番はMSP2008です。\n\n↑1.54インチ。解像度は240x240ピクセル。袋に書いてある型番はMSP1541です。\n液晶の種類はIPS液晶です。いずれもST7789というコントローラを搭載、通信方式はSPIです。\nAmazonでも似たようなのが1400円くらいで売られてますが、Aliexpressだと600円ほど（2インチの場合）なので激安です。\n本記事の対象の液晶モジュールの条件\nピンが8本出ているもの（GND、VCC、SCL、SDA、RES、DC、CS、BLK）\nコントローラーがST7789である\nSPI通信で制御する\nRaspberry Pi Picoで使う\nRaspberry Pi Pico（以下、Pico）はマイコンなのでRaspberry PiというよりArduinoに近いのですが、GPIOが3.3VのためArduinoよりもこのディスプレイと相性がいいです。\n※他のマイコンでやる場合の記事もあります→Raspberry Pi編 / Arduino編 / Raspberry Pi Pico編（この記事）\nまた、Picoはファームの入れ替えでMicroPythonとCircuitPythonのどちらも使用することができます。\nRaspberry Pi編で紹介したAdafruitのCircuitPython…",
@@ -2942,21 +2957,6 @@
           "publishedOn": "2024-02-17T11:26:36.000Z",
           "wordCount": 325,
           "title": "広く浅くボコす枠　20240217リスト",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189081404320",
-          "author": null,
-          "description": "この前、関東にしては大雪が降り、犬の様に興奮して部屋から一枚撮ったあと、後で外にも行こうと意気込んでいたら、普通に寝てしまった。\n数日後、TLを眺めていると、雪の写真をPOSTしていた人がいて、よく見ると空の境界のワンシーンの場所だった。\n \n空の境界は、中学のころ友達の家でPCの画面にならんでみた覚えがある。\n映画館は街にはなく、限られた場所でしか上映されなかった作品だけという情報と、ufotableのこれまで見たことないような画面に遠くから来た作品だと驚いていた気がする。\n友達は、型月作品が好きで、その子と一緒にPCでいろいろ見た。PCは家にもあったが、時間制限があり、言われて好き勝手使えなかったので、比較的自由に使えるその子の家に集まるようになった。\n \n友達の家も自分の家も然り、田んぼと牛しかいない道を、えっちらおっちら自転車走らせていく場所だったが、自分の中では文化的な場だった。高校までは、この友達の家に入り浸るように来て、アニメも絵も音楽もゲームも映画もそこで堆積してきた。\nあの部屋で薄暗い中みた螺旋矛盾とか、kalafinaかっこいいよなとか話してる時など、なにかが溜まっていったあの場所って、おもろ空間だったんだなって思った。\n当時は全然、あの部屋でカップラーメン食いながらキッズステーション垂れ流しを見ていた場所を楽しい場所だったけど、コンテンツの場と見てなかった。でも、今考えるとそこで知るアニメやゲームとか音楽があって、ネット以外で新しいことを知る大きな場所だったかも。\n \n以前から、phaのシェアハウスの記事とかサイプレス上野のヤサ動画とかみて、何かしら好きな人達がごちゃつく場所に対するあこがれがあったのだが、今回の空の境界の聖地巡礼の画像を見て、すごい高まったな～という感じがした。\nあと、書きながら思ったけど、だれかの行きやすい・集まりやすい友達の部屋ではなく、不特定多数の環境が集まる部屋みたいな感じが欲しいのかも。遊びに行っていた家も、友達の自室ではなくて居間のような感じの場所で、誰かの心理的スペースに入るのではなく、公共と閉鎖の中間みたいな場所に憧れてるのかな。\n \n一時なので、すぐ冷めてしまう願望だと思うが、なんとなく残したかったので書いた。",
-          "link": "https://nonwo.hatenablog.com/entry/2024/02/08/003926",
-          "publishedOn": "2024-02-07T15:39:26.000Z",
-          "wordCount": 332,
-          "title": "空の境界と一室",
           "enclosure": {
             "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
             "type": "image/png",
