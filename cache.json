@@ -7499,6 +7499,26 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/docker-swaggger-ui",
+          "author": null,
+          "description": "言語非依存にSwagger UIを構築したいモチベーション スキーマファーストにAPI Specを作るなら、API Spec…",
+          "link": "https://blog.ojisan.io/docker-swaggger-ui",
+          "publishedOn": "2024-05-08T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Dockerとyamlで言語非依存にSwagger UIを構築し、Basic認証にも対応する",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.ojisan.io/miss-gradle-version",
+          "author": null,
+          "description": "new project した新品をビルドできない 最近はサーバーサイド Kotlin の勉強をしているのですが、InteliJ から new project しただけのプロジェクトがビルドできなくて困っていました。 みたところ Gradle が何かおかしいようです。 Gradle…",
+          "link": "https://blog.ojisan.io/miss-gradle-version",
+          "publishedOn": "2024-05-08T00:00:00.000Z",
+          "wordCount": null,
+          "title": "InteliJ で作った new Kotlin Project が、Gradle のバージョン設定が古くてビルドできなかった",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/styled-components-to-v6",
           "author": null,
           "description": "少し前に Next.js の v12 から v14 への update を依頼されたことがあり、必然的に React のアップデートもするのだが、そのときに先に styled-components を update しなければいけないという状況に陥った。\n普段は CSS…",
