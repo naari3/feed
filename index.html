@@ -78,6 +78,33 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://satoru-takeuchi.hatenablog.com/" target="_blank"
+              rel="noopener">覚書</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ソフトウェアは生き物</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://satoru-takeuchi.hatenablog.com/entry/2024/05/09/210029" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ソフトウェアはソースコードをもとにして作ります。ではいったん作ってしまえば未来永劫動かし続けられるか…というとそうではありません。さまざまな理由によって、気を使ってメンテナンスしないと動かし続けることはできません。本記事ではなぜそのようなことになるかについて書きます。
+本記事では、みなさんが所属する会社が自社開発したソフトウェアをリリースした、というところから話を始めます。話を単純にするため、ほぼありえない話ですが、この自社ソフトウェアが提供する機能は一切変わらず、単体でもバグも無いものとします。ただしこのソフトウェアは別の会社が作った別のソフトウェアに依存しています。自分が作っているわけではない、内容を把握できていないソフトウェアを使うのは骨が折れるので、サポートを受けているとします。サポートといっても色々度合いがありますが、ここでは他社が作ったソフトウェアを使える、それについて相談できる、バグ修正や機能追加の要望を出せる権利をもらえるものと仮定します。
+この場合、自社製ソフトウェアは何の追加コストもかけず、未来永劫動かし続けられるでしょうか。答えは否です。以下、その理由を説明します。
+ソフトウェアは進化を続けます。上述の通り、自社製ソフトウェアが上述の通り機能追加なし、バグレスという奇跡のようなソフトウェアだったとしても、それ以外のソフトウェアはそうはいきません。バグ修正、機能追加、性能改善、など様々な理由によってコードが書き換わり、新バージョンがリリースされていきます。仮に自社ソフトウェアそのものに一切機能的に変化がないとしても、内部的に依存するソフトウェアのバグ修正をしたい場合、新機能を使いたい場合は新しいバージョンを使う必要があります。そのときはソフトウェアに何らかの変更を加える必要があります。ソースコードを書き換える必要があるかもしれませんし、設定ファイルを書き換えるだけでいいかもしれませんが、いずれにせよ変更が必要です。旧バージョンから新バージョンへの移行にあたってABIやAPIの変更があったりした場合は大掛かりな修正が必要になるかもしれません。新バージョンではうまく動作するかどうかのテストも必要です。
+仮にみなさんが依存ソフトウェアの新バージョンを必要としていなくても、依存ソフトウェアの古いバージョンがサポートされなくなることがあります。理由は様々ですが、例えばバージョンが古く、既存バグがたくさん含まれているソフトウェアの使用により発生するトラブルの対応を回避してサポートにかかるコストを下げたい、というようなものが考えられます。サポートされなくなったものを使い続けるのは難しいので、このときは必要か否かにかかわらずバージョンアップを強いられます。
+古いバージョンのサポートが無くなるくらいならまだマシで、依存ソフトウェアが開発をやめてしまって今後のサポートが期待できなくなることがあります。そうなると代替品を探して古い依存ソフトウェアを新しいものに置き換えるコストがかかります。
+ソフトウェアのバージョンアップは一度きりではないので、依存ソフトウェアへの追従コストは定期的に発生します。依存ソフトウェアが多ければ多いほど上記のコストは増えていきます。依存ソフトウェアが別のソフトウェアに依存して…ということもあります。一般的に大きなソフトウェアは依存ソフトウェアが多い傾向にあるので、大きなソフトウェアを長期間動かし続けるというのは本当に大変なことがわかります。
+本記事では自分が作ったソフトウェアが単体として変化しないとしても依存ソフトウェアの変更に伴って対応が必要ということを説明しました。もちろん現実世界では自分で書いたソフトウェアそのものも進化が必要なので、より話は複雑になります。タイトルにも書いたように、まるで生き物のようで面白いですね。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://saize-lw.hatenablog.com/" target="_blank"
               rel="noopener">LWのサイゼリヤ</a></h3>
           <section class="articles-per-source">
@@ -17777,26 +17804,6 @@ GameGaz Daily 2024.2.10 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.jxck.io/" target="_blank"
-              rel="noopener">blog.jxck.io</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Promise.withResolvers によるイベントの Promise 化</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.jxck.io/entries/2024-02-10/promise.withresolvers.html" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Promise.withResolvers() が stage 4 であり、 ES2024 の候補となった。すでにブラウザでの実装も進んでいるため、活用方法を解説する。</span>
-                  </div>
-                  <img src="https://blog.jxck.io/assets/img/jxck.600x600.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19727,7 +19734,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-05-09T11:01:45.581Z">2024-05-09T11:01:45.581Z</time>
+    <time id="build-timestamp" datetime="2024-05-09T12:02:11.026Z">2024-05-09T12:02:11.026Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
