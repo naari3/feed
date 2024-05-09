@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-09T06:01:45.558Z</updated>
+    <updated>2024-05-09T07:01:49.480Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[はてなブログの2024年4月の新機能・機能改善をお知らせします]]></title>
+        <id>hatenablog://entry/6801883189104568567</id>
+        <link href="https://staff.hatenablog.com/entry/2024/05/09/151739"/>
+        <updated>2024-05-09T06:17:39.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。
+細かな機能修正・改善
+1.自動で画像をブログオーナーアカウントにアップロードし直す機能が固定ページにも対応しました（法人プラン限定機能）
+ブログメンバーが書いた記事に画像が含まれている場合に、ブログオーナーのアカウントにアップロードし直す機能が固定ページにも対応しました。
+help.hatenablog.com
+2. 一部のブラウザで「コメントを書く」が表示されない不具合を修正しました
+コメント設定がユーザーになっているブログにおいて、一部のブラウザで「コメントを書く」が表示されないことがあったため、修正対応を行いました。
+3. 楽天記法で画像の代替テキストが文字化けしないようにしました
+楽天記法を複数貼り付けた際に、2 個目以降では画像の代替テキストが文字化けしていた不具合を修正しました。
+2024年4月のお知らせ（再掲）
+はてなブログのブログメンバーをTerraformで管理できるTerraform Provider for HatenaBlog Membersを公開しました
+HatenaBlog Workflows Boilerplate(β) に画像アップロード機能を追加しました]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.5.9]]></title>
         <id>https://gamegaz.com/?p=41049</id>
