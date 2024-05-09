@@ -7440,6 +7440,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2024-05-10/reverse-http-transport.html",
+          "author": null,
+          "description": "IETF の httpbis で、 Reverse HTTP Transport という仕様が提案されている。Reverse HTTP Transporthttps://www.ietf.org/archive/id/draft-bt-httpbis-reverse-http-01.htmlこの仕様は、 Origin サーバの前に何かしら Intermediaries (Loadbalancer, Reverse Proxy, CDN etc)があるのが一般的な現代の Web サービス構成において、非常に革新的なアイデアを取り入れたプロトコルと言える。まだ v01 という初期段階ではあるが、発想が非常に面白かったので、読書メモを残す。",
+          "link": "https://blog.jxck.io/entries/2024-05-10/reverse-http-transport.html",
+          "publishedOn": "2024-05-10T00:00:00.000Z",
+          "wordCount": 682,
+          "title": "Reverse HTTP Transport が描く新しい Web サービスデプロイ構成",
+          "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
+        },
+        {
           "id": "https://blog.jxck.io/entries/2024-05-07/referrer-policy.html",
           "author": null,
           "description": "Referrer-Policy は、送信される Referer の値を制御することが可能だ。このヘッダの副次的な効果をよく理解していないと、「no-referer にして送らないのが最も安全だ」という誤解を生むことになる。では、複数あるポリシーの中でどのような観点で、どのディレクティブを採用するのが良いのだろうか?前提として前回の記事の「リクエストの出自をチェックすることは現代の実装のベースプラクティスである」という点を踏まえて考えてみる。令和時代の API 実装のベースプラクティスと CSRF 対策 | blog.jxck.iohttps://blog.jxck.io/entries/2024-04-26/csrf.html",
@@ -9586,16 +9596,6 @@
           "wordCount": 1840,
           "title": "GameGaz Daily 2024.2.11",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=40469",
-          "author": "mamosuke",
-          "description": "PSX 2 PS4 v1.6,ps4-5-eboot-dlc-patcher,ARK-4 v1707525208,ntr-hr v0.2.0.3,DuckStation-UWP 2024-02-09,fpPS4,Sonic CD Wii(Sonic-CD-11-Decompilation) v3.0.0,yuzu-android-240→→→この記事の続きを読む\nGameGaz Daily 2024.2.10 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024021040469/",
-          "publishedOn": "2024-02-10T05:05:25.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2024.2.10",
-          "imageUrl": null
         }
       ]
     },
