@@ -7561,18 +7561,7 @@
       "title": "Wesley Aptekar-Cassels",
       "feedUrl": "https://blog.wesleyac.com/feed.xml",
       "siteUrl": "https://blog.wesleyac.com",
-      "articles": [
-        {
-          "id": "https://blog.wesleyac.com/posts/e2e-testing-email",
-          "author": null,
-          "description": "I came up with a really slick trick to write E2E tests that deal with sending/receiving emails recently. This is the sort of thing that seems like it's probably usually sort of a nightmare — I wanted to write a test for registering a account on a website, where part of the flow was clicking on a validation link in a email.\nThe slick trick is a test SMTP server which is also a HTTP server. It's 39 lines of Javascript and extraordinarily simple:\nconst SMTPServer = require(\"smtp-server\").SMTPServer;\nconst http = require(\"http\");\n\nlet emails = {};\n\nnew SMTPServer({\n  authOptional: true,\n  onData: (stream, session, callback) => {\n    const chunks = [];\n    stream.on('data', (chunk) => chunks.push(Buffer.from(chunk)));\n    stream.on('end', () => {\n      const data = Buffer.concat(chunks).toStrin…",
-          "link": "https://blog.wesleyac.com/posts/e2e-testing-email",
-          "publishedOn": "2024-02-16T05:00:00.000Z",
-          "wordCount": 528,
-          "title": "End-to-end testing emails",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "blog.ojisan.io's RSS Feed",
