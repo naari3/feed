@@ -17909,87 +17909,6 @@ The post 音MAD関連用語集 first appeared on YTPMV.info.</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
-              rel="noopener">honeylab&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">DAMカラオケコマンダの遠隔制御モードを掌握した</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2024/02/18/095835" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>前のブログで、うっかり買い集めたDAMのカラオケ機（専門用語で「コマンダー」というらしい）を買っていじっている話をしましたが
- 
-honeylab.hatenablog.jp
-色々いじっていたところ「センター室モード」という特殊モードを発見しました。
-
-これは、外部の機器から曲番号をセットしたりして再生できる特別なモードです。
-何のために実装されているのか。
-カラオケマニアの人なら知っているかもしれませんが、一部の店舗では
-各部屋にこのコマンダーを設置しているわけではなく、数室で共有するシステム、
-カラオケの鉄人や、カラオケ館「Σシステム」などで使われているあのシステムです。
-ja.wikipedia.org
-中身を見てみると、「HotelSystem」というクラス名がついていました。
-
-ホテルとは。
-よくあるラブなホテルなんかにある「カラオケ」と書いてる設備の一部は
-各部屋にコマンダーが設置されているわけではなく、ホテル設備として準備されているテレビ一体型の配信システムにカラオケ予約キューがあり、そこにキューが入るとシステム内に番号を発信し、部屋のテレビでカラオケができる、というシステムを採用しています。
-（最近は普通に部屋にコマンダがあることも多いみたいですが）
-なんでそんなめんどくさいことをするのか。
-こいつがバカ高いからです。
-
-
-本体定価は２００万〜３００万円、加えて配信料や利用料など、
-常に利用されることが前提のカラオケルームとは違い、これを常設したらとんでもないコストになってしまいますね。そうならないために、このシステムがあるわけです。
-が、メーカーはこの使い方はOKなんですな。もしかしたら、これを利用するために別途契約がいるのかもしれませんが。
-
-そう、利用する、と書いてありますが、使い方は説明書に書いてありません。
-というわけで、解析していきます。
-まず、コマンダが起動したら「８２９５ー００」をセットします。
-すると「センター室モード」に入り、以後、本体は全く操作できません。
-接続するのはカラオケ機背面のシリアルポート。
-コマンド（通信プロトコル）は全く不明です。契約なりNDAしたら貰えるんじゃないですかね。
- 
-逆コンパイル！
-
-そのほか大変省略！（約1週間の睡眠不足と数十ページのプリンタ印刷）
- 
-解析できました！
-シリアルポートから好きな曲番号でカラオケの曲を再生することができました
-センター室モード(HotelSystem)掌握！
-シリアルポートから曲選択再生できるようになったぞ pic.twitter.com/OvrehvfXK7
-2024年2月17日
-
-
- 
-が…
-これ、遠隔で使用することが前提なこともあって採点機能が使えないんです…
-（あとちょっとで解析完了というところで気づきました）
-ええええええー、これ使ってマイセットリストを予約キューにブチ込む便利なアプリを作ろうと思っていたのにーーーーーーーーぴえんぴえん
-完全にオプション込みで放り込むにはデンモク系のインターフェイスを使わないかんのか…
-買って解析するか？？？高いな…逆コンパイルだけでいけないかなぁ
- 
-あーーーん
-まぁ、このモード、ちょっと頑張ればシステムごっこできるので
-その辺は時間のある時にやってみたいと思います。
- 
-せっかくなので、実験に使ったクソC言語コード置いときますね。
- 
-
- 
-gist.github.com
- 
-あーーーん。デンモク、そもそもまともにペアリングから使ったことないから通信のイメージが湧かないんだよな。</span>
-                  </div>
-                  <img src="https://pbs.twimg.com/media/GGYPnt5boAAAl2s?format&#x3D;jpg&amp;name&#x3D;large" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19920,7 +19839,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-05-17T12:01:57.990Z">2024-05-17T12:01:57.990Z</time>
+    <time id="build-timestamp" datetime="2024-05-17T13:02:37.025Z">2024-05-17T13:02:37.025Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
