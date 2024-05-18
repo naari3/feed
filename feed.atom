@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-18T02:12:16.774Z</updated>
+    <updated>2024-05-18T03:02:07.243Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12411,87 +12411,6 @@ GameGaz Daily 2024.2.19 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>BaN長</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[健常者エミュレータ事例集を支える技術]]></title>
-        <id>hatenablog://entry/6801883189084306804</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2024/02/18/233450"/>
-        <updated>2024-02-18T14:34:50.000Z</updated>
-        <summary type="html"><![CDATA[はじめに
-この記事では、健常者エミュレータ事例集を構成する技術について記述します。
-健常者エミュレータ事例集を構成する技術について俯瞰的に見たのち、個々のコンポーネントについて触れ、技術選定をした歴史的経緯などについてもちょびっと書きます
-Wordpressの異常な使い方として参考になれば幸いです
-システム全容
-健常者エミュレータ事例集を構成する技術
-健常者エミュレータ事例集の本体のほかにも3つのコンポーネントがあり、それぞれ本体とREST API経由で接続されています。順を追ってみていきます。
-健エミュ投稿フォーム
-hpe-form-v2.vercel.app
-作られた背景
-事前知識
-
-
-
-2022年3月から2023年2月まで、健常者エミュレータ事例集はSeesaa Wiki上で展開されていた
-wiki.seesaa.jp
-
-
-Seesaa Wikiにはテンプレート投稿機能があり、事前に作成されたテンプレートを使って記事を作成することが可能だったが、PCからしかテンプレート投稿機能が使えない欠点があった
-
-当時、健常者エミュレータ事例集WikiのPV数は9割をスマートフォンが占めていた
-健常者エミュレータ事例集の理念を実現するためには、スマートフォンから記事を投稿できない状況を解消し、新規投稿を促進する必要があった
-構成
-Next.js + Vercel
-長所：無料枠の範囲内でできる
-短所：オーバーエンジニアリングな点
-
-
-正直Next.jsを使うほどではなかったかもしれないので、今はReact + Cloudflare Pagesで作り直そうとしている
-構成の欠点ではないが、作った当初はフロントエンドが全く分からず適当に作ったため、技術的負債がたまっている。現在では新規に機能を追加するのが難しい状態になっている
-健常者エミュレータ事例集本体
-Seesaa Wikiの機能が不足していたため、2023年の2月にWordpressを中心にする構成に移行した
-構成
-Amazon LightSail + Wordpress + Route 53
-長所：料金が定額であり、過剰な料金がかかることがない
-短所：過剰なアクセスが集中すると落ちる
-
-
-実際Xでバズって落ちたことがある
-CDNを挟めば何とかなるかもしれない
-利用しているプラグイン
-wpDiscuz : コメント機能
-WP Mail SMTP : ユーザー登録時のメール配信
-Taxopress : タグ管理
-Sassy Social Share : SNSシェアボタンの作成
-Like Button Rating ♥ LikeBtn : 「いいね」「よくないね」ボタンの作成
-Ivory Search : 検索機能
-Advanced Random Posts Widge : ランダム記事リストの作成
-健エミュ分析基盤
-健エミュ内に蓄積されたデータを分析するために作成された
-構成
-dbt Cloud + BigQuery + Looker Studio
-長所：激安。ほぼ無料に近い
-短所：特になし
-参考：
-contradiction29.hatenablog.com
-健エミュX通知Bot
-作った背景：Seesaa Wikiを使っていた当初、Seesaa WikiにビルトインされているTwitter（当時）連携機能が不十分だったため自作した
-10分に一回REST APIをたたき、新しい記事があったらスクレイピングして投稿画像を作成し、X APIを使って投稿する仕組みになっている
-コードはこちら
-github.com
-
-
-
-
-構成
-AWS Lambda + Serverless Framework + Python
-親の顔より見たPythonで作った
-長所：激安
-短所：特になし
-おわりに
-追加で知りたいことがある方はこっそり教えてください]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>
