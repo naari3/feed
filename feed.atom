@@ -2,10 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-19T14:01:53.262Z</updated>
+    <updated>2024-05-19T15:01:57.620Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[JPEG画像を何回も保存し直すとどんどん劣化していく……のか、ChatGPTと試す]]></title>
+        <id>hatenablog://entry/6801883189107679902</id>
+        <link href="https://nomolk.hatenablog.com/entry/2024/05/19/233840"/>
+        <updated>2024-05-19T14:38:40.000Z</updated>
+        <summary type="html"><![CDATA[JPEGは画像を小さい容量で保存できるファイル形式ですが、非可逆圧縮といって圧縮前の状態に戻せない性質を持つため、保存した画像を開くと画質が劣化しています。
+ということは、画像をJPEGで保存→開く→新しく保存→開く→新しく保存…を繰り返すとどんどん劣化していくのではないかと思って、調べてみました。
+実は検索してみると同様の検証はすでにたくさんされているのですが、最近ChatGPTを有料版にして使い道に飢えていたので、一緒に検証してみたいと思います。
+ChatGPTにやり方を訊く
+JPEGを何度も保存し直し、できた画像を動画で見られると面白いのではないかと思いました。初手からChatGPTに訊いてみます。
+
+※自分が使っているChatGPTと違う……と思った方はこちらをご覧ください。→AIお姉ちゃんへの道 - nomolkのブログ
+動画化はffmpegでやればいいそうです。たしかに。
+
+超有能。
+このあと何度かやりとりして、こんなコードに落ち着きました。
+from PIL import Image
+
+# 元になる画像を読み込む
+img = Image.open('output_0000.jpg')
+
+# 1000回繰り返して画像を保存する
+for i in range(2000):
+    # 画像を保存
+    img.save(f'output_{i+1:04d}.jpg', 'JPEG', quality=10)
+    # 保存した画像を再度読み込む
+    img = Image.open(f'output_{i+1:04d}.jpg')
+
+print('処理が完了しました！')
+
+劣化がわかりやすいようにquality（JPEG保存するときの品質指定。数が小さいほど小容量になるが劣化する）を10で保存し、2000枚を生成しました。
+単に１枚１フレームでババババっ…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024/05/19]]></title>
         <id>hatenablog://entry/6801883189106685096</id>

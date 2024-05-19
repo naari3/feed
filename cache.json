@@ -2671,6 +2671,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189107679902",
+          "author": null,
+          "description": "JPEGは画像を小さい容量で保存できるファイル形式ですが、非可逆圧縮といって圧縮前の状態に戻せない性質を持つため、保存した画像を開くと画質が劣化しています。\nということは、画像をJPEGで保存→開く→新しく保存→開く→新しく保存…を繰り返すとどんどん劣化していくのではないかと思って、調べてみました。\n実は検索してみると同様の検証はすでにたくさんされているのですが、最近ChatGPTを有料版にして使い道に飢えていたので、一緒に検証してみたいと思います。\nChatGPTにやり方を訊く\nJPEGを何度も保存し直し、できた画像を動画で見られると面白いのではないかと思いました。初手からChatGPTに訊いてみます。\n\n※自分が使っているChatGPTと違う……と思った方はこちらをご覧ください。→AIお姉ちゃんへの道 - nomolkのブログ\n動画化はffmpegでやればいいそうです。たしかに。\n\n超有能。\nこのあと何度かやりとりして、こんなコードに落ち着きました。\nfrom PIL import Image\n\n# 元になる画像を読み込む\nimg = Image.open('output_0000.jpg')\n\n# 1000回繰り返して画像を保存する\nfor i in range(2000):\n    # 画像を保存\n    img.save(f'output_{i+1:04d}.jpg', 'JPEG', quality=10)\n    # 保存した画像を再度読み込む\n    img = Image.open(f'output_{i+1:04d}.jpg')\n\nprint('処理が完了しました！')\n\n劣化がわかりやすいようにquality（JPEG保存するときの品質指定。数が小さいほど小容量になるが劣化する）を10で保存し、2000枚を生成しました。\n単に１枚１フレームでババババっ…",
+          "link": "https://nomolk.hatenablog.com/entry/2024/05/19/233840",
+          "publishedOn": "2024-05-19T14:38:40.000Z",
+          "wordCount": 922,
+          "title": "JPEG画像を何回も保存し直すとどんどん劣化していく……のか、ChatGPTと試す",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240519/20240519232535.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240519/20240519232535.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189104063540",
           "author": null,
           "description": "前にも書いたんですけど先日からフリーランスになりました。\nそれで、さいきん仕事でビデオチャットを使いたい場面がありまして、よく調べるとZoom契約するよりGoogleの有料プランに入ってMeet使った方が安いしなんかオプション機能いろいろついてきてお得そう。ヨッシャ課金するか！！！！！と思ったらなんか課金プランがいっぱいあって途方にくれました。\nいかれたメンバーを紹介するぜ！\nプランの選定条件として、下記が前提です\n組織（自分以外のメンバー）を持たない個人事業主である\nGoogle Meet で3人以上のグループ通話を60分制限なしで使いたい\nそうすると候補になってくるのは下記3つ。\nGoogle One プレミアム\nGoogleドライブが容量いっぱいになると「容量を追加しましょう！」つって出てくるアイツです。課金プランがベーシック、プレミアム、AIプレミアムの３つあって、プレミアム以上だとGoogle Workspaceの機能が一部使えるようになり、そこにMeet関連が含まれます。筆者の使用経験あり。\nGoogle Workspace Individual\nGoogle Workspaceっていうのは組織向けのグループウェア的な感じのサービスで、超ざっくり言うとGoogleのあらゆるサービスが組織内で共有できます。で最近になってその個人版、Individualというのができたみたいです。グループウェアの個人版という、その存在意義自体に矛盾を抱えたミステリアスなプランです。使用経験なし。\nGoogle Workspace Business Starter / Standard\nそのGoogle Workspaceの小規模組織向けのがBusinessで、組織向けですが一人でも使えます。さらにその中にStarter、Standard、Plusのランクがあり、Plusはオーバース…",

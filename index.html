@@ -78,6 +78,52 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
+              rel="noopener">nomolkのブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">JPEG画像を何回も保存し直すとどんどん劣化していく……のか、ChatGPTと試す</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2024/05/19/233840" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>JPEGは画像を小さい容量で保存できるファイル形式ですが、非可逆圧縮といって圧縮前の状態に戻せない性質を持つため、保存した画像を開くと画質が劣化しています。
+ということは、画像をJPEGで保存→開く→新しく保存→開く→新しく保存…を繰り返すとどんどん劣化していくのではないかと思って、調べてみました。
+実は検索してみると同様の検証はすでにたくさんされているのですが、最近ChatGPTを有料版にして使い道に飢えていたので、一緒に検証してみたいと思います。
+ChatGPTにやり方を訊く
+JPEGを何度も保存し直し、できた画像を動画で見られると面白いのではないかと思いました。初手からChatGPTに訊いてみます。
+
+※自分が使っているChatGPTと違う……と思った方はこちらをご覧ください。→AIお姉ちゃんへの道 - nomolkのブログ
+動画化はffmpegでやればいいそうです。たしかに。
+
+超有能。
+このあと何度かやりとりして、こんなコードに落ち着きました。
+from PIL import Image
+
+# 元になる画像を読み込む
+img &#x3D; Image.open(&#x27;output_0000.jpg&#x27;)
+
+# 1000回繰り返して画像を保存する
+for i in range(2000):
+    # 画像を保存
+    img.save(f&#x27;output_{i+1:04d}.jpg&#x27;, &#x27;JPEG&#x27;, quality&#x3D;10)
+    # 保存した画像を再度読み込む
+    img &#x3D; Image.open(f&#x27;output_{i+1:04d}.jpg&#x27;)
+
+print(&#x27;処理が完了しました！&#x27;)
+
+劣化がわかりやすいようにquality（JPEG保存するときの品質指定。数が小さいほど小容量になるが劣化する）を10で保存し、2000枚を生成しました。
+単に１枚１フレームでババババっ…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/slideglide/20240519/20240519232535.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://baibukken.hatenablog.com/" target="_blank"
               rel="noopener">思い出したら書きます</a></h3>
           <section class="articles-per-source">
@@ -19582,7 +19628,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-05-19T14:01:53.212Z">2024-05-19T14:01:53.212Z</time>
+    <time id="build-timestamp" datetime="2024-05-19T15:01:57.570Z">2024-05-19T15:01:57.570Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
