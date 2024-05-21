@@ -2,10 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-21T01:25:53.806Z</updated>
+    <updated>2024-05-21T02:12:25.898Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[PCBサービスで自分だけの基板を作るの良すぎ。本当に良すぎ。]]></title>
+        <id>hatenablog://entry/6801883189107368703</id>
+        <link href="https://nomolk.hatenablog.com/entry/2024/05/21/110000"/>
+        <updated>2024-05-21T02:00:00.000Z</updated>
+        <summary type="html"><![CDATA[この記事は基板作成サービスPCBGOGOの提供でお届けするいわゆる案件記事なのですが、それを抜きにしても初めての自作基板という体験が完全に「良」（よ）だったので皆さんにご報告する次第です。
+PCBGOGOは深圳の基板作成／実装サービスです。詳しくは後述しますが、オリジナル基板を作ってくれます。
+www.pcbgogo.jp
+そしてこれが今回PCBGOGOで作った基板。
+
+可愛いすぎる…
+手に付いたスイッチでLEDをピコピコさせたり
+
+逆の手にはツマミ、足にはサーボモーターのコネクタがついていて、ぎゅいんぎゅいんさせることもできます。
+
+後述しますがこれはマイコンボード（Arduino）なので、自分でプログラムを書いて動作を書き換えることができます。プログラムの書き込み中には目がピコピコして強制的に人格が書き変えられていく様子がよくわかります。ディストピア可愛い…！
+
+単体で愛でるだけでなく、もちろん電子工作に使うこともできます。下のGIFでは液晶にアニメーションを出力しています。
+
+さらにマウスやキーボードをエミュレートするHIDという機能を搭載しているので、USB接続するだけで自動的にペイントソフトに絵を描くデバイスなんかもできます。
+
+さらに電池ボックスをつなげるようになっていて
+
+例えばこんな感じのちょっとした光りものを作って（電池は背中側に貼りつけ）
+
+リュックにキーホルダーとしてぶら下げたりしても最高。
+
+↓風や振動がなくても自動で揺れるキーホルダー
+
+今回は部品実装（部品のはんだ付け）まで発注したのですが、手はんだできそうな部品は自分でやることにしたので……
+
+こんなふうにカラバリも作れます。（このカラフルなピンソケットは秋月で買えます）
+
+できるだけ単体で遊べるようにいろんな機能をつけました。
+というわけで「良」が溢れまくっていることはご理解いただけたと思うの…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2024.5.21]]></title>
+        <id>https://gamegaz.com/?p=41149</id>
+        <link href="https://gamegaz.com/2024052141149/"/>
+        <updated>2024-05-21T01:47:30.000Z</updated>
+        <summary type="html"><![CDATA[DirectPackageInstaller 6.2.8,PS Multi Tools v14.1.4,PS4 Toolset 2.3.0.1,PPPWN-JIO-Router v1,PS4 mini tools 1.0,PPPwn Lite v3.8,PPPwnGH 1.02,CFW Evilnat 4.91.2 [BETA 9],PSX XMB Manager,任天堂がShiver Entertainment子会社化,Pretendo,GB Studio v4.0.0-beta2,libogc 2.7.0,Citra for Android 20240520,Xenia Canary_experimental→→→この記事の続きを読む
+GameGaz Daily 2024.5.21 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iOS向けエミュレータDelta Adobeに脅されアイコンロゴ変更]]></title>
+        <id>https://gamegaz.com/?p=41141</id>
+        <link href="https://gamegaz.com/2024052141141/"/>
+        <updated>2024-05-21T01:41:15.000Z</updated>
+        <summary type="html"><![CDATA[App Storeで配布されているNES/SNES/Nintendo64/GB/GBA/DSエミュレータDeltaがAdobeからの脅迫を受けてアプリのロゴを変更しました。→→→この記事の続きを読む
+iOS向けエミュレータDelta Adobeに脅されアイコンロゴ変更 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Karte.145 僕はフラれた男]]></title>
         <id>232615</id>
