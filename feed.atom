@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-24T02:13:02.604Z</updated>
+    <updated>2024-05-24T03:01:39.011Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,30 @@
         <summary type="html"><![CDATA[こんにちは！メルカリのQA Engineering Managerの@____rina____です。先日、3月6日にメルカリグループの新規事業「メルカリ ハロ」がオープンされました。 メルカリ ハロは好きな時間に最短1時 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iOSアプリにおいて、一部の環境で写真選択の際にアプリがクラッシュする不具合が発生しています]]></title>
+        <id>hatenablog://entry/6801883189108788969</id>
+        <link href="https://staff.hatenablog.com/entry/2024/05/24/115457"/>
+        <updated>2024-05-24T02:54:57.000Z</updated>
+        <summary type="html"><![CDATA[2024年5月24日現在、iOSアプリ「はてなブログ」において、アプリの写真のアクセス許可を「選択した写真」に設定している場合に、ブログの編集画面で写真を選択した際にクラッシュする不具合が発生しています。
+なお、問題が発生した場合、下記の設定変更でクラッシュを回避することができますので、大変お手数をおかけいたしますがお試しいただけますと幸いです。
+設定変更の手順
+iOSの「設定」を開く
+アプリのリストから「はてなブログ」を開く
+アクセス許可リストから「写真」 をタップ
+
+
+
+「すべての写真」をタップ
+
+
+
+
+問題については現在修正を行っております。修正まで今しばらくお待ちいただきますようお願い申し上げます。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
