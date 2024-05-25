@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-25T21:01:35.327Z</updated>
+    <updated>2024-05-25T22:01:43.858Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12120,35 +12120,6 @@ gyazo.com]]></summary>
 The post REAPERの空アイテムにテキストを表示 first appeared on YTPMV.info.]]></summary>
         <author>
             <name>maimai</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[マザーボードのBIOSをアップデートするときはよく名前を確認した方がいい]]></title>
-        <id>hatenablog://entry/6801883189086333879</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2024/02/26/183705"/>
-        <updated>2024-02-26T09:37:05.000Z</updated>
-        <summary type="html"><![CDATA[健エミュに書こうと思ったがマニアックすぎたのでやめた。自作PCの話だ。
-朝起きて自作PCの電源を入れてみると、ディスプレイに映像が出なくなっていた。昨日までは動作したが、今日はなぜか動作しない。心当たりは特にない。とりあえずグラボの抜き差しや別ディスプレイでの映像出力を試したが効果がないので、BIOSをアップデートすることにした。マザーボードはASRockのX570S Phantom Gaming Riptideだった。
-
-ASRock マザーボード X570S PG Riptide AMD Ryzen 5000 シリーズ CPU (Soket AM4) 対応 X570 ATX マザーボード 【国内正規代理店品】
-
-ASRock
-Amazon
-
-自作PCの構成は以下の通り：
-CPU：AMD Ryzen 7 5800X
-DRAM：Crucialの32GB × 2枚
-グラボ：MSI GeForce RTX™ 4090 SUPRIM X 24G
-マザーボード：ASRock X570S Phantom Gaming Riptide
-LAN：Archer TX3000E
-X570S Phantom Gaming RiptideにはBIOSフラッシュバック機能が搭載されており、画面が映らなくても背面USB経由でマザーボードのBIOSを更新することができる。このときに間違えてB550 Phantom Gaming RiptideのBIOSを入れてしまった。
-そのあとはステータスチェッカーの「CPU」と「DRAM」が点灯し、すべてがダメになった。メモリの抜き差しやCPUの抜き差しなどいろいろ試した後、(最初にやればよかった)CMOSクリアを実施し、BIOSの再度アップデートを試したが正常に起動しなかった。
-もう自分の手ではどうにもならんと思い、秋葉原に行ってツクモの「基本構成パーツ診断」のサポートを受けた。基本構成パーツ診断では、マザーボード・CPU・メモリ・電源・VGAの起動がうまくいかない場合に問題個所を特定してくれる。
-support.tsukumo.co.jp
-どうやらCMOSクリアがうまくできていなかったらしく、店員さんがCMOSクリアを実施し、BIOSアップデートをしたらBIOS起動画面までたどり着いた。その後は家に持ち帰り、SSDを接続しWindowsの起動を試したが、異常終了してしまった。いろいろ試した後、BIOS設定からブートの順番を変更したら正常に稼働した。なぜブート順番を変更したら正常に稼働したのかはよくわからない。
-結局最初にディスプレイに映像が出力されなかったのはなぜなのだろう。なぜ壊れたのかわからないし、なぜ治ったのかもよくわからない。明日また壊れているんじゃないかと思える。]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>
