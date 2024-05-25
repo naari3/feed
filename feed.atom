@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-25T19:01:48.541Z</updated>
+    <updated>2024-05-25T20:01:53.684Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12162,31 +12162,6 @@ A post shared by Nike Women (@nikewomen)
 続きをみる]]></summary>
         <author>
             <name>河内一馬</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twitter/Blueskyの自己ポストの全文検索サービスをNext.js App Router(RSC)で書きなおした方法/設計/感想]]></title>
-        <id>https://efcl.info/2024/02/26/mytweets-next-rsc/</id>
-        <link href="https://efcl.info/2024/02/26/mytweets-next-rsc/"/>
-        <updated>2024-02-26T07:18:00.000Z</updated>
-        <summary type="html"><![CDATA[mytweetsという自分の Twitter/Bluesky の自己ポストの全部検索サービスをNext.js App Router(RSC)で書きなおしました。
-mytweets は Twitter のアーカイブや Bluesky の API を使って自分のポストを S3 に保存しておき、
-S3 Selectを使って全文検索ができる自分専用の Twilog のようなサービスです。
-自分の Tweets をインクリメンタル検索できるサービス作成キット と Tweets をまとめて削除するツールを書いた | Web Scratch
-過去の Tweets を全文検索できる mytweets を Bluesky に対応した。自分用 Twilog みたいなもの | Web Scratch
-最初は CloudFront + Lambda@Edge + Next.js Pages Router で動かしていました。
-その後、Next.js App Router が Stable になったので、App Router + React Server Components(RSC)で書きなおしました。
-この記事では、Next.js Pages Router から Next.js App Router(RSC)に書きなおした話を紹介します。
-ただし、この記事は発散的な内容になっているのと、あまり正確性が保証されてないので、個人的なメモ書きとして読んでください。
-あまりにも長くなったので、あんまり読みやすくは書けませんでした。
-mytweets の動作
-mytweets  は、次のような動作をします。
-クエリがない場合は、S3 Select から最新のポストを取得して表示
-クエリを入力したら、S3 Select の API を使って全文検索を行い、結果を表示
-
-この動画は、App Router + …]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
