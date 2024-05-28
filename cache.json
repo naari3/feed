@@ -247,21 +247,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189086870904",
-          "author": null,
-          "description": "追記してテストして、やっぱり前の方が良かったから戻す、ということをしています。もう完了ですね。3/3頃にベータ版ですという体裁でXなどで有志を募って、問題なければ4/1に正式リリースかなあ。今回は規模が過去一ダンチなのでテスト期間を設けます。たぶん、大丈夫・・・か～ら～の～地獄を見たりしてるので・・・テスト大事。\n\nこっそりToHeartGBA治しました。。セーブ時、一番したの項目を選択するとSRAM範囲外に書き込むことが発覚して悶絶しました。もうあんな思いはしたくないですねー・・・。",
-          "link": "https://akkera102.hatenablog.com/entry/2024/02/28/210219",
-          "publishedOn": "2024-02-28T12:02:19.000Z",
-          "wordCount": 409,
-          "title": "移植42",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -867,6 +852,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6801883189109611212",
+          "author": null,
+          "description": "数学の勉強をし直したいなと思って、参考書を買って高校数学の復習を始めた。\nひとまず一番最初の、多項式の展開のセクションを終えた。\nめっちゃミスが多い。そして公式を応用して適用する能力が落ちているのを感じる。\n問題を解くのは楽しいので続けていきたい。",
+          "link": "https://commits.hatenablog.com/entry/2024/05/28/100000",
+          "publishedOn": "2024-05-28T01:00:00.000Z",
+          "wordCount": 422,
+          "title": "2024-05-27",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/6801883189107177487",
           "author": null,
@@ -7348,6 +7348,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=25523",
+          "author": "nkayama",
+          "description": "こんにちは！人事部人事採用課に所属しているnkayamaです。 IIJには2023年に中途入社しました。趣味はさんぽと言っていますが、本当のところはおいしいお酒を飲むこと（飲酒）です。色々あって数年ぶ...",
+          "link": "https://eng-blog.iij.ad.jp/archives/25523",
+          "publishedOn": "2024-05-28T00:52:44.000Z",
+          "wordCount": 1627,
+          "title": "私の仕事紹介：とあるIT企業の採用担当",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/05/abb13bef35995381c34fa8f087024044.png"
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=25458",
           "author": "三宅 伸明",
