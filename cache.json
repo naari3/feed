@@ -3424,6 +3424,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189094241881",
+          "author": null,
+          "description": "本記事にはご自身で広告を設置されているユーザー様が行うべき対応を記載しています。対応を行わなかった場合は、ご自身の広告が表示されなくなるなど不利益が発生する場合があります。\nはてなブログでは、広告詐欺を減らすための仕組み「ads.txt*1」の配信を2024年7月1日以降を目処に開始する予定です。また、ads.txtの配信開始に先立ち、ユーザーが利用する ads.txt を保存する機能の提供を開始しました。ads.txtの配信開始以前に設定していただくことで、配信開始とともに有効なads.txtを配信することができます。\nはてなの広告を掲載しているブログでは、はてなが利用する ads.txt の配信を開始する予定です。そのため「無料プランではてなブログの広告を表示しつつ、ご自身の広告も表示している」という場合*2、ads.txt の設定を行わなければご自身の広告が表示されなくなる可能性があります。そのため、ads.txt配信の開始以前に、ご自身のads.txtの設定をお済ませください。\n\nads.txt設置対応の要否フローチャート\nads.txt 設置機能の制限\n設定方法\nGoogle Adsense の ads.txt 確認方法\nはてなブログへ ads.txt を保存する方法\nサブドメイン形式の独自ドメインを利用しているブログでの対応方法\nads.txt設置対応の要否フローチャート\n\nads.txt 設置機能の制限\nなお、 ads.txt の設定に対応しているのは、下記のブログが対象です。\nネイキッドドメインを利用している独自ドメイン利用ブログ\nhatenablog.com や　hateblo.jp など、はてなが提供しているドメインを利用しているブログ\nsub.example.com などサブドメイン形式の独自ドメインを利用しているブログでは、この機能を使ってads.txtを設置することができません。また、これに合わせて、独自ドメインを利用している場合には、はてなの広告を表示できないように仕様を変更いたしました。ご了承ください。\n設定方法\nここでは、一般的に利用されている Google Adsense でのads.txtの確認方法を記載いたします。\nGoogle Adsense の ads.txt 確認方法\nGoogle Adsenseを開く (Google Adsenseの利用には審査が必要です。審査については別途行っていただく必要があります)\nサイドメニューの「サイト」をクリックし、ads.txtの配信設定を行いたいはてなブログのURLをクリック\n\n\n\n右下の「コピー」ボタンをクリック\n\n\n\n\n\n\n    \nはてなブログへ ads.txt を保存する方法\nブログの「設定 > 詳細設定 > ads.txt設定」から、設定が可能です。\n\nサブドメイン形式の独自ドメインを利用しているブログでの対応方法\nads.txt の仕組み上、 hatena.example.com の ads.txt　 は、 ルートドメインに設置された example.com/ads.txt が参照されます*3。 \n\n*1:ads.txt　について詳しくは、「ads.txt に関するガイド - Google AdSense ヘルプ」などをご参照ください\n*2:他にも、有料プランで自身の広告を表示していたが、無料プランに移行したなどの状況が考えられます\n*3:hatenablog.com などはてな提供ドメインは Public Suffix List に登録されているため、 example.hatenablog.com はルートドメインとなります",
+          "link": "https://staff.hatenablog.com/entry/ads_txt-pre-released",
+          "publishedOn": "2024-05-29T07:54:28.000Z",
+          "wordCount": 933,
+          "title": "はてなブログでは2024年7月1日以降にads.txtの配信を開始する予定です。また、ads.txtの配信開始に先立ち、ユーザーのads.txtを保存する機能の提供を開始しました",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240515/20240515102646.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240515/20240515102646.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189108788969",
           "author": null,
           "description": "2024年5月24日現在、iOSアプリ「はてなブログ」において、アプリの写真のアクセス許可を「選択した写真」に設定している場合に、ブログの編集画面で写真を選択した際にクラッシュする不具合が発生しています。\nなお、問題が発生した場合、下記の設定変更でクラッシュを回避することができますので、大変お手数をおかけいたしますがお試しいただけますと幸いです。\n設定変更の手順\niOSの「設定」を開く\nアプリのリストから「はてなブログ」を開く\nアクセス許可リストから「写真」 をタップ\n\n\n\n「すべての写真」をタップ\n\n\n\n\n問題については現在修正を行っております。修正まで今しばらくお待ちいただきますようお願い申し上げます。",
@@ -7768,6 +7783,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=41223",
+          "author": "mamosuke",
+          "description": "UnlockSwitchチームがNintendo Switch向けFlashcart UnlockSwitchの現時点での詳細情報を公表していました。→→→この記事の続きを読む\n著作権侵害？関係ないね 空のハード売るだけだから… UnlockSwitchに勝算あるのか first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024052941223/",
+          "publishedOn": "2024-05-29T07:27:37.000Z",
+          "wordCount": null,
+          "title": "著作権侵害？関係ないね 空のハード売るだけだから… UnlockSwitchに勝算あるのか",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=41217",
           "author": "mamosuke",
