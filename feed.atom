@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-05-30T21:01:46.821Z</updated>
+    <updated>2024-05-30T22:01:49.460Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12068,46 +12068,6 @@ https://twitter.com/tatetatenaname/status/1758780161665781921
  入場には期限内のまくり証明書の提示が必要です
  以下の招待リンクからサーバーに参加し、最初に表示されるチャンネル内の「まくり証明書」スレッドに写真を送信してください
 招待リンク→]]></summary>
-        <author>
-            <name>Lejeのキャンパス - Scrapbox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【編集後記】Hana... - Lejeのキャンパス - Scrapbox]]></title>
-        <id>https://scrapbox.io/leje-campus/%E3%80%90%E7%B7%A8%E9%9B%86%E5%BE%8C%E8%A8%98%E3%80%91Hana...</id>
-        <link href="https://scrapbox.io/leje-campus/%E3%80%90%E7%B7%A8%E9%9B%86%E5%BE%8C%E8%A8%98%E3%80%91Hana..."/>
-        <updated>2024-03-02T09:18:58.000Z</updated>
-        <summary type="html"><![CDATA[#編集後記
-https://www.youtube.com/watch?v=LBNszeQJ9j8
- おなら合作本編はこちらから
- 音声はいろいろさんが制作してくださいました　6回目です、いつもありがとうございます
-  実は最初の音声は正月時点で貰ってたんですよね、ダラダラ作りすぎ
-   あんときは燃やしてごめんなさい
- これと同じ原曲です　慎重リスペクトとか呼ばれてるらしいですね
- こっそりタイトルを変更していました　いいでしょ
-前置き
- 制作時間：100~200時間
- 作品を前からほぼ均等に4つに分けると、
-① → ④ → ③ → ④前半(再制作) → ② → ③(再制作)
-っていう順番で作りました(非効率極まりない)
- This is Timeline
-
-
-本題
-ではまぁ早速ゆるく解説していきます(以下の再生時間は単品準拠)
- スクリプトそのものについての説明は基本書きません
-  代わりに全部にリンク貼ってるので、聞いたこと無いなって思ったらチェックしよう
-⓪全体のエフェクトなど
- 上下枠はシネスコフレーム(1920x816)、黒い背景図形に斜めクリッピング幅：-816でできます
- 色調はいつも通り結構こだわっています
-  0:14~の色調はグラデーション合成 + トーンカーブRGB改
-   円形グラデーションの明暗合成
-   明暗合成はいいぞ、オーバーレイよりも元素材の色が崩れにくい上にしっかり色付けできる
-   トーンカーブは実はRGBとRのカーブしか使ってない(それで割と十分っていうことに気づいた)
-  周辺エフェクトは、周辺ぼけ光量を使わずに円形にマスクしたフレームバッファにエフェクトをかける
-   細かいいじり方ができるので自由度がすごく高まる
-   ディフュージョン@opencvをかけるの大好き
-    使いようによってAEのような透明感に近いものが出せま…]]></summary>
         <author>
             <name>Lejeのキャンパス - Scrapbox</name>
         </author>
