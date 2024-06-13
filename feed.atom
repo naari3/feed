@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-06-13T20:01:49.475Z</updated>
+    <updated>2024-06-13T21:01:38.988Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[URL.parse を Chromium で Ship するまで]]></title>
+        <id>https://blog.jxck.io/entries/2024-06-14/url.parse.html</id>
+        <link href="https://blog.jxck.io/entries/2024-06-14/url.parse.html"/>
+        <updated>2024-06-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Chrome 126 で筆者が実装した URL.parse が Ship された。Chromium にコントリビュートしたことは何回かあったが、単体機能を Ship したのは初めてだった。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【日記】6/13 連絡に奔走する誕生日]]></title>
         <id>https://note.com/nasupman_nikki/n/nb330f35b9cb5</id>
@@ -11687,17 +11697,6 @@ where("title LIKE ?", "%#{title}%") みたいなやつの対応を考えてい�
 アニメとか映画を見る…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[海外勢が日本語勉強して日本ネットに住むって話]]></title>
-        <id>https://note.com/fourangle/n/n917905bd4254</id>
-        <link href="https://note.com/fourangle/n/n917905bd4254"/>
-        <updated>2024-03-16T08:41:12.000Z</updated>
-        <summary type="html"><![CDATA[↑さのさんの場合
-続きをみる]]></summary>
-        <author>
-            <name>四角</name>
         </author>
     </entry>
     <entry>
