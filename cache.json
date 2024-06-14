@@ -3222,6 +3222,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189114229669",
+          "author": null,
+          "description": "いつもはてなブログをご利用いただきありがとうございます。\n現在、以下の条件に合致するユーザーに対して、\nhatenablog.com で終わるドメイン (例: example.hatenablog.com や staff.hatenablog.com など)ではてなブログを運営している\nそのドメインをサーチコンソールに登録し、プロパティを作成している\nGoogle Web Tool から「広告の表示方法に問題があるため2024年7月13日以降に広告表示が制限される」という趣旨のメールが届く事象が報告されています。\nはてなブログでも同様の事象を確認し、現在詳しい調査を行っております。また、サブドメインの個別の違反がドメイン全体にも適用されるのかなど、グーグルに確認を行っております。\nご心配をおかけし大変申し訳ございませんが、状況が分かり次第、本記事に追記させていただきます。\nどうぞよろしくお願いいたします。",
+          "link": "https://staff.hatenablog.com/entry/2024/06/14/142005",
+          "publishedOn": "2024-06-14T05:20:05.000Z",
+          "wordCount": null,
+          "title": "example.hatenablog.com など hatenablog.com ドメインでブログを運営し、かつサーチコンソールに登録しているユーザーに、グーグルから広告の掲載に関するお知らせが届く事象が報告されています",
+          "enclosure": {
+            "url": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
+        },
+        {
           "id": "hatenablog://entry/6801883189112491101",
           "author": null,
           "description": "細かな機能修正・改善\n1.WordPress 形式のファイルインポート時の仕様変更を行いました\nこれまではWordPress 形式のファイルをインポートすると、インポートを行った記事の編集モードは Markdownモードになりましたが、見たままモードになるよう仕様変更を行いました。2024年5月27日以前にインポート操作を行った記事はMarkdownモードのままとなります。\n2. 下書き保存ができないことがある不具合を修正しました\n下書き保存ができないことがある不具合が確認できたため、修正対応を行いました。お問い合わせにてお知らせいただきありがとうございました。\n2024年5月のお知らせ（再掲）\nはてなブログでは2024年7月1日以降にads.txtの配信を開始する予定です",
