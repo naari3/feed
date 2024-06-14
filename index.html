@@ -16885,40 +16885,6 @@ AviUtl特有のテンプレートの代替
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2024-03-16</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/03/17/100000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>github.com
-github.com
-activerecord-originator にベンチマークスクリプトを追加した。
-これを追加したことによって、どの程度パフォーマンスが劣化しているかが分かった。単純に#to_sqlを呼び出す場合で3倍ぐらい、実際にselectクエリを発行する場合でも2倍ぐらいの速度差が出ていた。クエリを発行しているのはメモリ上のsqliteだし、レコードも100件しか作っていないからあまり現実的な比較ではない。
-github.com
-activerecord-originatorの速度改善をした。今まではすべてのNodeを拡張してinitialize時にcallerを保存していたのだけど、これをクエリに位置情報を差し込みたいNodeだけ拡張するようにした。
-これによって、#to_sqlは71~78%程度、クエリの実行は84~86%程度の速度劣化に抑えられた。
-これだけ速度劣化が小さく出ていれば、実アプリケーションに入れたときの速度差は気にならないぐらいになっていそう(たぶん)。単純なクエリ実行の例だと、1回あたり0.02ミリ秒しかオーバーヘッドが乗ってない計算になりそう。
-この変更を入れたのでv0.2.0をリリースした
-github.com
-そういえばIS NULLとかを考えていなかったな、と思ってテストを書いてみたら、特に何もせず通って便利だった。
-すでに実装は済んでいたけど、テストがあったほうが後々嬉しくなる可能性がありそうなのでテストだけ追加した。
-where(&quot;title LIKE ?&quot;, &quot;%#{title}%&quot;) みたいなやつの対応を考えていたのだけど、むずそう。
-これはSqlLiteral nodeとして扱われるのだけど、このNodeが特殊で、どうやら作られるタイミングは#whereが呼ばれるタイミングではなく#to_sqlが呼ばれるタイミングっぽい。それだとこのnodeのinitializeにhookしてもほしい位置情報が取れなくて困る。
-いい解決方法あるかなあ。あんまり思いつかない。whereメソッドを上書きして…とかやればできるだろうけどやりたくないよねえ</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -18849,7 +18815,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-06-14T12:02:07.005Z">2024-06-14T12:02:07.005Z</time>
+    <time id="build-timestamp" datetime="2024-06-14T13:03:46.274Z">2024-06-14T13:03:46.274Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
