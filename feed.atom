@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-06-16T05:01:54.056Z</updated>
+    <updated>2024-06-16T06:01:47.263Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[settings - Lejeのキャンパス - Scrapbox]]></title>
+        <id>https://scrapbox.io/leje-campus/settings</id>
+        <link href="https://scrapbox.io/leje-campus/settings"/>
+        <updated>2024-06-16T05:55:20.000Z</updated>
+        <summary type="html"><![CDATA[テーマいじり
+code:style.css
+ htmldata-project-theme='hacker1' {
+  --body-bg: #0b162d;
+  --navbar-bg: #323c52;
+     --new-button-horizontal-color: #ffcc37;
+     --new-button-bg: #0b162d;
+     --new-button-hover-bg: #0b162d;
+     --new-button-active-bg: #2b364d;
+     --tool-color: #eeeeee;
+     --tool-text-color: #eeeeee;
+     --code-bg: rgba(32,32,32,.04);
+ }
+ body {
+     background-image: url(https://i.gyazo.com/4882595f206ebd73e6d7f6997c567579.png);
+     background-size: 100%;
+ }
+ .grid li.page-list-item a .pin {
+     background: linear-gradient(45deg, #f98119, #fff09f 50%, #0b162d 50%, #0b162d);
+ }
+ .grid li.page-list-item a .pin + .content .header {
+     border-top-color: #ffd522;
+     padding: 10px 14px;
+ }
+ .table-block .table-block-start {
+     background-color: rgba(255,205,55,.4);
+ }
+ .n…]]></summary>
+        <author>
+            <name>Lejeのキャンパス - Scrapbox</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記240616 (サイドチェインコンプ)]]></title>
         <id>https://note.com/hercelot/n/n150e87c212de</id>
