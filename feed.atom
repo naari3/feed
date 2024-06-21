@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-06-21T07:01:44.717Z</updated>
+    <updated>2024-06-21T08:02:35.593Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[特定の条件でメール投稿時に画像がアップロードされない不具合を修正しました]]></title>
+        <id>hatenablog://entry/6801883189115974175</id>
+        <link href="https://staff.hatenablog.com/entry/2024/06/21/164649"/>
+        <updated>2024-06-21T07:46:49.000Z</updated>
+        <summary type="html"><![CDATA[6月12日 18:44頃から6月21日 11:21頃まで、メール投稿機能におきまして、添付した画像のファイル名が日本語文字などになっている場合に、画像がアップロードされず記事に画像が反映されない不具合が発生しておりました。現在は修正済みです。
+なお、不具合発生期間中に送られたメールでの投稿は、記事タイトルと本文のみが反映されていて画像はアップロードがされていないため、記事の編集画面から画像のアップロードをお願いします。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IIJにおけるDRMの取り組み：フォーカス・リサーチ（IIR vol.63 3章）]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=26182</id>
