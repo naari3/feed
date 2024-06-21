@@ -15874,102 +15874,6 @@ GameGaz Daily 2024.3.24 first appeared on 大人のためのゲーム講座.</sp
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2024-03-23">2024-03-23</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/anzato" target="_blank"
-              rel="noopener">餡砂糖</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">SORI:NAZOの制作協力をしました</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/anzato/n/n80f592d7f06c" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>はじめに
-　この記事は四季さんによる謎解き企画SORI:NAZOのネタバレを多分に含みます。まだ解いていない人は是非解いてみてください。また、全問の解説を書いているわけではないので解説が見たい方は四季さんのブログからお願いします。
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/134199506/rectangle_large_type_2_35bdc29d666c80fe53a9b2dbe82fe66c.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
-              rel="noopener">honeylab&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">DAMの機械でDOOMが動いた</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2024/03/23/232541" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>別にこれをやろうと思ってたわけではないんだけど、そういえばやってなかったな、というのと
-DAMの機械でDOOM、DAAMじゃん、とかくだらないことを思いついたのでやってみることにしました。
- 
-ここまでのリバエンの成果で、一応画面に何かしら出せることはわかっていました。
-しかし、動作している時に割り込んだりしているのでいまいち思い通りにはかけていませんでした。
-内部歌詞バックバッファにアクセスできる証拠として歌詞を二重書きして見せようとしたら、内部歌詞行カウンタが自動インクリメントだったため異世界カラオケになってしまった pic.twitter.com/wDsgQgl45K
-2024年3月8日
-
-
- 
-そこで、DAMの機械の中の描画関数について調べていきました。
-どうやら、CScreenというクラスがあり、そいつが描画関数を持っているらしい、ということはわかったのですが、いまいち挙動がよくわかりません。
-あちらこちらにprintfやメモリダンプを埋め込み、調べていた結果、ある程度のまとめを得ました。
-うーんなるほど、Create(LayerID,position,size)を呼ぶと、既設のLayerに対してsizeのWindowという名のScreenが作られるのか。GetBufferでアクセスするときはLayerIDに対してのBufferが出てくるので、positionのオフセットでsizeの塗りをしないといけないんだな。ようやく階層がわかった。 pic.twitter.com/fnIvOEl2S1
-2024年3月23日
-
-
- 
-システムは以下の描画レイヤを持ち、バッファサイズとカラーフォーマットは以下の通り
-0 LAYER_OSD 1280x720　INXDEXED SP8　
-1 LAYER_LYRIC 1280x2880 RGB32
-2 LAYER_SCORE 704x1920 RGB32
-3 LAYER_VIDEO 1280x720 RGB32
-4 LAYER_TFT_LYRIC 512x2048 TFT_RGB16
-5 LAYER_TFT_BACK 512x2048 TFT_RGB16
-6 LAYER_SUB_VIDEO 704x480　RGB32
-・CScreenインスタンスを作成後、CreateメソッドでLayer IDとposition,sizeを指定すると、その大きさを持つサブウィンドウとして実体化される
-・CScreenインスタンスは以下の描画メソッドを持ち、それぞれが作成したサブウィンドウ左上を０とする座標で描画可能。実際には親レイヤを参照し、ウィンドウ内に描画している。
-
-PutCharの中身
-
-・CSpriteというオブジェクトがあって、スプライト描画機能を持っている。
-AddしてPutしておくと、スプライトとして保持される
-これらを元に、とりあえずLAYER_LYRICレイヤを実体化し、
-このバックバッファにDOOMのfb用のバックバッファを転送することで、
-
-↑LyricLayerにバッファ作成し
-↓DOOMのバッファからコピーする
-
-このようにDOOMの画面を表示することができました。
-やっとDAAM動いた pic.twitter.com/RPCQaoRMNu
-2024年3月23日
-
-
- 
-しかし、ピクセル単位での転送なので結構重いね...
-LAYER_VIDEOはどうやらデコーダからのDMAで受け取るっぽいのでその辺で何かできないかな？
- 
-さてしかし、ここまでやったおかげで描画周りを明確に把握することができましたので、
-カラオケ再生中に追加情報を表示するのも割とできたりするような気もしてきましたぞ。</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20240323/20240323231726.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-01-16">2024-01-16</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -17897,7 +17801,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-06-21T02:13:42.560Z">2024-06-21T02:13:42.560Z</time>
+    <time id="build-timestamp" datetime="2024-06-21T03:01:54.149Z">2024-06-21T03:01:54.149Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

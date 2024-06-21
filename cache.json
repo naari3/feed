@@ -1451,21 +1451,6 @@
             "length": "0"
           },
           "imageUrl": "https://www.clubdam.com/recommend/enjoy/qeu1gv0000000hgx-img/img01_04.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189093083895",
-          "author": null,
-          "description": "別にこれをやろうと思ってたわけではないんだけど、そういえばやってなかったな、というのと\nDAMの機械でDOOM、DAAMじゃん、とかくだらないことを思いついたのでやってみることにしました。\n \nここまでのリバエンの成果で、一応画面に何かしら出せることはわかっていました。\nしかし、動作している時に割り込んだりしているのでいまいち思い通りにはかけていませんでした。\n内部歌詞バックバッファにアクセスできる証拠として歌詞を二重書きして見せようとしたら、内部歌詞行カウンタが自動インクリメントだったため異世界カラオケになってしまった pic.twitter.com/wDsgQgl45K\n2024年3月8日\n\n\n \nそこで、DAMの機械の中の描画関数について調べていきました。\nどうやら、CScreenというクラスがあり、そいつが描画関数を持っているらしい、ということはわかったのですが、いまいち挙動がよくわかりません。\nあちらこちらにprintfやメモリダンプを埋め込み、調べていた結果、ある程度のまとめを得ました。\nうーんなるほど、Create(LayerID,position,size)を呼ぶと、既設のLayerに対してsizeのWindowという名のScreenが作られるのか。GetBufferでアクセスするときはLayerIDに対してのBufferが出てくるので、positionのオフセットでsizeの塗りをしないといけないんだな。ようやく階層がわかった。 pic.twitter.com/fnIvOEl2S1\n2024年3月23日\n\n\n \nシステムは以下の描画レイヤを持ち、バッファサイズとカラーフォーマットは以下の通り\n0 LAYER_OSD 1280x720　INXDEXED SP8　\n1 LAYER_LYRIC 1280x2880 RGB32\n2 LAYER_SCORE 704x1920 RGB32\n3 LAYER_VIDEO 1280x720 RGB32\n4 LAYER_TFT_LYRIC 512x2048 TFT_RGB16\n5 LAYER_TFT_BACK 512x2048 TFT_RGB16\n6 LAYER_SUB_VIDEO 704x480　RGB32\n・CScreenインスタンスを作成後、CreateメソッドでLayer IDとposition,sizeを指定すると、その大きさを持つサブウィンドウとして実体化される\n・CScreenインスタンスは以下の描画メソッドを持ち、それぞれが作成したサブウィンドウ左上を０とする座標で描画可能。実際には親レイヤを参照し、ウィンドウ内に描画している。\n\nPutCharの中身\n\n・CSpriteというオブジェクトがあって、スプライト描画機能を持っている。\nAddしてPutしておくと、スプライトとして保持される\nこれらを元に、とりあえずLAYER_LYRICレイヤを実体化し、\nこのバックバッファにDOOMのfb用のバックバッファを転送することで、\n\n↑LyricLayerにバッファ作成し\n↓DOOMのバッファからコピーする\n\nこのようにDOOMの画面を表示することができました。\nやっとDAAM動いた pic.twitter.com/RPCQaoRMNu\n2024年3月23日\n\n\n \nしかし、ピクセル単位での転送なので結構重いね...\nLAYER_VIDEOはどうやらデコーダからのDMAで受け取るっぽいのでその辺で何かできないかな？\n \nさてしかし、ここまでやったおかげで描画周りを明確に把握することができましたので、\nカラオケ再生中に追加情報を表示するのも割とできたりするような気もしてきましたぞ。",
-          "link": "https://honeylab.hatenablog.jp/entry/2024/03/23/232541",
-          "publishedOn": "2024-03-23T14:25:41.000Z",
-          "wordCount": 589,
-          "title": "DAMの機械でDOOMが動いた",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20240323/20240323231726.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeylab/20240323/20240323231726.png"
         }
       ]
     },
@@ -3780,16 +3765,6 @@
           "wordCount": null,
           "title": "音MADエキスポのロゴを作りました",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/138951827/rectangle_large_type_2_c7c42717a54bd83f97d2e2951a0d2c42.png?width=800"
-        },
-        {
-          "id": "https://note.com/anzato/n/n80f592d7f06c",
-          "author": null,
-          "description": "はじめに\n　この記事は四季さんによる謎解き企画SORI:NAZOのネタバレを多分に含みます。まだ解いていない人は是非解いてみてください。また、全問の解説を書いているわけではないので解説が見たい方は四季さんのブログからお願いします。\n続きをみる",
-          "link": "https://note.com/anzato/n/n80f592d7f06c",
-          "publishedOn": "2024-03-23T15:00:51.000Z",
-          "wordCount": 2322,
-          "title": "SORI:NAZOの制作協力をしました",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/134199506/rectangle_large_type_2_35bdc29d666c80fe53a9b2dbe82fe66c.png?width=800"
         }
       ]
     },
