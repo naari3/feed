@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-06-25T07:01:49.265Z</updated>
+    <updated>2024-06-25T08:01:56.869Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[HatenaBlog Workflows Boilerplate で下書き記事を作成した際にドラフト状態のプルリクエストとして作成されるよう変更しました]]></title>
+        <id>hatenablog://entry/6801883189116792991</id>
+        <link href="https://staff.hatenablog.com/entry/2024/06/25/163227"/>
+        <updated>2024-06-25T07:32:27.000Z</updated>
+        <summary type="html"><![CDATA[HatenaBlog Workflows Boilerplateを使って、はてなブログの下書き記事を作成した際、これまではレビュー準備完了としてマークされたプルリクエストとして作成していましたが、ドラフト状態のプルリクエストとして作成するように仕様を変更いたします。
+変更の理由は以下のとおりです。
+HatenaBlog Workflows Boilerplateを利用いただいているほとんどの企業では、レビューが行われており、レビューに適した形式であることが望ましいこと
+下書き記事を新規作成すると、本文は空の状態で下書き記事が作成される。通常、この状態のままレビュー依頼がされたり、mainブランチにマージされたりすることはないこと*1
+GitHubのCODEOWNERS機能を利用していると、下書き記事の作成時点でレビュー依頼が飛んでしまう
+これらの点を鑑みると、ドラフト状態のプルリクエストとして作成されるのが適切である
+なお、本変更につきましては、GitHubのissueにてご要望いただきました。フィードバックいただきありがとうございました。
+なお、ドラフト状態のプルリクエストは、「Ready for review」ボタンからレビュー準備完了としてマークすることが可能です。
+
+*1:ただし、はてなブログに保存されている下書き記事をGitHubリポジトリに下書きとして取り込む場合は、レビュー可能な状態である可能性もあります。しかしながら、ドラフトからレビュー準備完了としてマークすることは容易であることから、すべての場合でドラフトとして作成されるのが妥当であるとの判断しています]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[#ひろがるホロ合作]]></title>
         <id>https://neonuriel.bearblog.dev/2800/</id>
