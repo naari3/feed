@@ -2,10 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-06-29T11:01:37.497Z</updated>
+    <updated>2024-06-29T12:02:14.291Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[合作スプレッドシートの標準を決めたい……かも！]]></title>
+        <id>https://note.com/euro3/n/nc8f0416cdec0</id>
+        <link href="https://note.com/euro3/n/nc8f0416cdec0"/>
+        <updated>2024-06-29T11:46:46.000Z</updated>
+        <summary type="html"><![CDATA[どうも、創作意欲がどうあがいても音MADに向かない音MAD作者、ユーロです。
+本日は「今まで合作に参加してきて、スプレッドシートの欲しい物、良かった所」を紹介していきたいと思います。合作の具体名は出しません。
+続きをみる]]></summary>
+        <author>
+            <name>ユーロ/犬の鳴き真似bot</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[モバイル端末でのウェブアプリのデバッグ方法、Safari on iOS/Chrome on Android]]></title>
+        <id>https://efcl.info/2024/06/29/debug-safari-chrome-on-mobile/</id>
+        <link href="https://efcl.info/2024/06/29/debug-safari-chrome-on-mobile/"/>
+        <updated>2024-06-29T10:52:00.000Z</updated>
+        <summary type="html"><![CDATA[iOSのSafari、AndroidのChromeはそれぞれPCと連携してウェブアプリケーションをデバッグできます。
+PCのSafariのWeb Inspector、ChromeのDevToolsと連携すれば、コンソールログやネットワーク、デバッガーなども利用できます。
+このデバッグ方法の使い方をまとまったページが見つけられなかったので、メモです。
+ネットワークで繋いでデバッグもできたりするので、結構便利です。
+Mobile Safari on iOS
+iOSのSafariは、macOSのSafariと接続してログやネットワークの通信などを見るデバッグが可能です
+ドキュメント: Inspecting iOS and iPadOS | Apple Developer Documentation
+iOSのSafariとmacOSのSafariを接続する
+初回は次の設定が必要です
+iOS
+設定アプリを開く
+Safari の設定を開く
+詳細を開く
+Webインスペクタ をONにする
+
+macOS
+Safariの設定を開く
+詳細タブを開く
+Webデベロッパ用の機能を表示にチェックを入れる
+
+iOSのSafariとmacOSを接続してWeb Inspectorを表示する
+iPhoneとmacをUSBで接続します
+
+初回はデバイスを信頼しますか? というダイアログが出てきます
+iOSのSafariでデバッグしたいページを開く
+macOSのSafariの開発メニューから、Safariで開いているページを選択する
+
+これでmacOSのWeb InspectでiOSのSafariのデバッグでできます。
+📝 初回はUSBで接続する必要があります。
+ネットワークで接続したい場合は、”ネットワーク経由で接続”にチェックを入れてみてください。
+(すでに入ってる場合は、一度外してから入れ直すなどすると、…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.6.29]]></title>
         <id>https://gamegaz.com/?p=41440</id>
@@ -10385,17 +10437,6 @@ DLsiteでは膨大な量のコンテンツ全てにその属性を示す大量�
  by id:p_shirokuma …]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2024.4.1]]></title>
-        <id>https://gamegaz.com/?p=40806</id>
-        <link href="https://gamegaz.com/2024040140806/"/>
-        <updated>2024-03-31T23:35:49.000Z</updated>
-        <summary type="html"><![CDATA[Homebrew Developer Conference(PSPHDC) 2024,BwE PS4 NOR Validator & Syscon Patcher v2.5.6,BwE Free PS4 NOR Patcher v1.0.1,NeXT 3.10,WiiUDownloader v2.33,hiyaCFW v1.5.1,savemii v1.6.1,SCFW 0.5.0,ares v137,ScummVM 2.8.1→→→この記事の続きを読む
-GameGaz Daily 2024.4.1 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
