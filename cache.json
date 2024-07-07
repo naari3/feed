@@ -684,6 +684,178 @@
       ]
     },
     {
+      "title": "ちなみに",
+      "feedUrl": "https://blog.nishimu.land/rss",
+      "siteUrl": "https://blog.nishimu.land/",
+      "articles": [
+        {
+          "id": "hatenablog://entry/6801883189120088828",
+          "author": null,
+          "description": "きっかけ\n産まれてからずっと Vim キーバインドで生きてきました。\nエディタは Vim → Atom → Emacs → VSCode と渡ってきたけど、いつだって Vim キーバインドです。\nもちろん VSCode でも VSCodeVim を使ってきました。\nこいつはVimの動きを頑張ってエミュレートしていて努力の結晶という感じなのですが、概ね良い感じで動いていて、VSCode に移行した日から今までずっとこれを使ってきました。\nVSCode Neovim という存在は以前から知っていました。初めてみたときに Neovim と通信して VSCode 上で Vim そのものの動作を実現するというのを読んでそこまでしてやりたいことか？と思ったのを覚えています。なぜか Neovim に対していい感情を持っていなかったというのもあったと思います。「ナードは黙って Vim 」とか思ってました。(なお当方 VSCode 使い)\nしかし、同僚が使っている Neovim を見てからは、ネガティブな印象が払拭されていて、さらに VSCode Neovim の 紹介記事 をたまたま読んだことで、いっちょ試してみるかと移行してみました。\n移行作業\n馴染まない可能性をかんがえて VSCodeVim はアンインストールせずに無効化して進めました。\n導入は Getting Started を見るとよくてシュッと完了します。Neovim も Homebrew でシュッと。起動すると Vim の操作が即座に有効になります。Insert モードは VSCode に完全に委ねられるので、ネイティブの Extension とカニバることもなし。\n次は Neovim の設定です。過去の .vimrc はもう参考にならないだろうし、ゼロから設定することにしました。Lua で書けるらしいので、じゃあそれで。XD…",
+          "link": "https://blog.nishimu.land/entry/2024/07/07/124051?utm_source=feed",
+          "publishedOn": "2024-07-07T03:40:51.000Z",
+          "wordCount": 442,
+          "title": "VSCode Neovim に移行した",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/6801883189119078421",
+          "author": null,
+          "description": "今年に入ってからあんまり元気がなかったので、元気を出そうと思ってエアロバイクをこいでいる。元気がなくて運動できないのじゃなくて、運動していないから元気がないのである。\n朝に無理しないように15分だけこぐようにしていて、最初はオーディオブックを聞いたり、真面目なYouTubeを見たりしていたが、なかなかにしんどい。15分早く終わってくれーと思いながらこいでいた。(脂肪燃焼は20分から発生するのでダイエットの人は30分くらいやろう)\nそれもそのはずで、運動という習慣になっていない活動をしながら、さらに勉強をして追い込むというのはなかなかに攻めている。つらさ2倍である。(便宜上つらいって書いたけどどっちも目的をもってやっているのでつらくないよ！)\nここで発想の転換。どっちかを楽しいことにすればいいのだ。\n映画を観ながらエアロバイクをこいでみた。一瞬で15分たっていて、もうちょっと観たいので20分くらいこいでしまう。先にも書いたが有酸素運動は本当は最低でも30分くらいやった方がいいのでちょうどいい。\n全てのことに言えると思うけ楽しくないことは続かない。言いかえるとそれを楽しめたらたいてはうまくいくという話。\n楽しくないことをしている時間はないのである。\nこれを使ってます\n\nアルインコ(ALINCO) おしゃれフィットネスバイク エアロマグネティックバイク 8段階負荷調節 スリム仕様 AF5000 静音 サドル調整 組立簡単 心拍測定 簡単移動 タブレットトレー インテリア ブラック\n\nアルインコ(Alinco)\nAmazon",
+          "link": "https://blog.nishimu.land/entry/2024/07/03/091832?utm_source=feed",
+          "publishedOn": "2024-07-03T00:18:32.000Z",
+          "wordCount": 253,
+          "title": "楽しみながら続ける",
+          "enclosure": {
+            "url": "https://m.media-amazon.com/images/I/41kF-itT6oL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://m.media-amazon.com/images/I/41kF-itT6oL._SL500_.jpg"
+        },
+        {
+          "id": "hatenablog://entry/6801883189118787813",
+          "author": null,
+          "description": "最近、オーディオブックをよく聞いている。Audible を契約していて、一時期は聞きたいものがあんまりなくて解約しようと思っていたけど、ラインナップが増えてきたのか聞きたいものがよくみつかる。\nオーディオブックのよいところは、集中が不要なことで、ぼーっとしながら難しい本でも読める(聞ける)。もちろん、集中して聞いてないと聞き逃したりするのだけれど、どうせ耳という空いているリソースに流し込んでいる情報なので、何度か同じものを聞けばそのうち必要なところはなんとなく把握できている。\n僕はどちらかというと耳の人間で、目でみた情報より、耳で聞いた情報の方が頭に残りやすいらしい。本を読むのには多大な苦労が伴ったうえにほとんど内容を覚えていないのだけれど、耳で聞いたことはなんとなく覚えていたりする。(でも本当は本で読めた方が速いし嬉しかった)\nそんな訳ですきま時間にながら聞きをして過ごしているのだけれど、ひとつだけ困ることがある。それは線が引けないことである。記憶に残るといっても人間の覚えていられることには限界がある。ここはと思う箇所に本のように線が引きたいのである。そしてたとえ線がひけたとしても、本のように前後の文脈もふくめて瞬時に眺めることが出来ないのがネックである。そうして結局、本も購入することになってしまう。\nもう少ししたらAIによる読み上げがもっと流暢になると思うので、本を買ったら Kindle とかが良い感じに読み上げてくれるようになって欲しい。(朗読する人の仕事を奪ってしまうという問題はあるのだけれど)\nそれが僕がオーディオブックに思うことです。\nオーディオブックを聞くのに HUAWEI FreeClip がおすすめです。\nblog.nishimu.land",
+          "link": "https://blog.nishimu.land/entry/2024/07/02/090317?utm_source=feed",
+          "publishedOn": "2024-07-02T00:03:17.000Z",
+          "wordCount": 248,
+          "title": "オーディオブックに思うこと",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/6801883189118500079",
+          "author": null,
+          "description": "FOMO (Fear Of Missing Out) はビジネスのシーンにおいても問題になっているのではないだろうか。\nたとえば Slack の画面をつねにディスプレイに表示したいという話があるが、リアルタイムでみないといけないメッセージなんてほとんどない。むしろリアルタイムでみないといけないメッセージが存在するということは、そこに非効率が潜んでいる。リアルタイムのコミュニケーションが必要なら別の手段を用いた方がいいだろう。\n情報を見逃すということはそれほど問題だろうか。僕はそうは思わない。\n本当に必要な情報というのはその場でみなくても、おそらくなんらかの手段で目に触れることになる。返信が必要なものはメンションされているだろうから、メンション一覧を見るだけでよい。全ての情報を見ようとすることで、本当に必要な情報を見逃していないだろうか？\n突発的に発生した大喜利に参加できないという話はあると思うが、仕事しろ。僕だって乗り遅れたら悔しくはある。\n諦めて Slack や Eメール の画面を非表示にしよう。意外と困ることはない。",
+          "link": "https://blog.nishimu.land/entry/2024/07/01/085526?utm_source=feed",
+          "publishedOn": "2024-06-30T23:55:26.000Z",
+          "wordCount": 267,
+          "title": "Fear Of Missing Out in Business",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/6801883189115334878",
+          "author": null,
+          "description": "最近、意識が高まって LeetCode を一日一問ずつやっています。\n正直、Easy でもだいぶ苦戦していて、基礎の出来てなさに凹む毎日です。\nところで、現代では ChatGPT というSFチックなサービスが存在します。何かを学ぶときに補助してもらうことで、知の高速道路をより素早く進むことが出来るようになりました。\nLeetCodeでの練習でいうと、うまく書けなかったなというときにコードをシンプルに書き直してもらうと学ぶところが多々あります。\n今日は本当にクソみたいなコードを書いたので、ちょっとでもヒントを得ようと書き直してもらったのですが、あまりにシンプルなコードになってひっくり返りました。\n最初みたときにハルシネーションだろって思ってしまったのですが、よく読むとすごく正しい。\n自分は与えられた問題の情報を愚直にコードに落とし込んでしまっていて、今回の問題の本質 = 一定のパターンがあることに気付いていませんでした。\nGPT-4o は自分の書いたクソコードをみただけで、そのパターンに気付いてコードに落とし込んでくれたのです。\n問題解決の糸口として、なんらかのパターンがないかというのは普段は考えている気がするけど、こういう問題形式でプログラミングするときには頭が回ってなかったので、すごくハッとさせられたのでした。\n(もちろん本当のところは同様のコードを大量に見せられていて、ベストな回答を知っていたということだとは思うのだけれど)\nおまけ\n問題は与えられたローマ数字の文字列を数値に直すというやつでした。\n自分の書いたクソみたいにナイーブなコードがこれ。\nfunc romanToInt(s string) int {\n    num := 0\n    rs := []rune(s)\n    for i := 0; i < len(rs); i++ {\n        r := …",
+          "link": "https://blog.nishimu.land/entry/2024/06/18/205839?utm_source=feed",
+          "publishedOn": "2024-06-18T11:58:39.000Z",
+          "wordCount": 519,
+          "title": "パターン認識",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/6801883189115095762",
+          "author": null,
+          "description": "最近、Hyper Key という概念を知った。\n概要\nmasOS だと Control+Alt+Shift+Command 、Windows だとControl+Alt+Shift+Win を同時に押すことを言うようです。\n現代では失われた物理的な Hyper Key に代替しようということだと思ったけど経緯はあんまり分かっていない。\nこれの何が便利かというと、システムやアプリケーションのショートカットキーと被りにくいのである。\nグローバルなショートカットキーを設定するときに、被らないように悩まなくて済むのが嬉しい。\nもちろん本当に同時押しするのは馬鹿げているので、特定の1キーを押すことで済むようにする。\n人気なのは Capslock を置き換える方法で、合理的だけれどちょっとかわいそう。\nやりかた\nmacOS だと Karabiner-Elements を使うのが簡単でしょう。\nkarabiner-elements.pqrs.org\nHyper Key っていうずばりの名前のアプリもあるけど、Karabiner-Elements がすでに入っている場合はわざわざ単体のアプリを入れるまでもないでしょう。\nWindowsはよく分かってません。\n用途\n自分の場合はよく使うアプリケーションを呼び出すショートカットキーとして Hyper Key を使っています。\n元々はそれぞれ被らないように適当なキーを当てていたけど、全部置き換えてしまった。\nアプリケーションの頭文字にすると覚えやすい。一例としては以下の感じで Hyper Key を ✦ で表現した。\n アプリケーション \n キー \n\n\n\n\n VSCode \n ✦+V \n\n\n Arc \n ✦+A \n\n\n Slack \n ✦+S \n\n\n iTerm2 \n ✦+T \n\n\n Obsidian \n ✦+O \n\n\n\n\n\nさらに自分の場合はキーボードのレイヤ3に配置することで指の動きを最低減にしている。\n\n余談\nアプリケーションを呼び出すショートカットは Raycast で設定している。\n一度押すとそのアプリケーションがアクティブになって、もう一度押すと非アクティブになって画面から消えてくれる。\nもちろん起動していない場合は起動してくれます。\n現在の状態を把握してなくてもとにかく最悪2回押せば手前に来てくれるのでとてもべんりです。\n設定の Advanced に Hyper Key の表示に関する設定があるのでこれを有効にしておくと見やすくなる。\n\n\nwww.raycast.com",
+          "link": "https://blog.nishimu.land/entry/2024/06/17/213528?utm_source=feed",
+          "publishedOn": "2024-06-17T12:35:28.000Z",
+          "wordCount": 297,
+          "title": "Hyper Key べんり",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6801883189115095762/1718628019",
+            "type": "",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6801883189115095762/1718628019"
+        },
+        {
+          "id": "hatenablog://entry/6801883189114744503",
+          "author": null,
+          "description": "Slackの特定のチャネルを開いて定型文を入力したい。具体的にはAPIでは発火できないスラッシュコマンドを実行したい。\n特定のチャネルを開く簡単な方法は、Slackアプリに用意されている Deep Link を使うことです。\nこの場合は slack://channel を使うと目的を達成できます。試すには open slack://channel?team=<チームID>&id=<チャネルID> みたいにすると良い。\nIDはWeb版で目的にチャネルを開くとURLに含まれているので、2つ合わせてゲットするにはそこからが速いかも。\nAppleScript でこれを開くにはいくつか方法がありますが、今回は System Events を使います。\n(System Events についてのドキュメントを発見できなかったのだけれど誰か教えてください。)\ntell application \"System Events\"\n    open location \"slack://channel?team=<チームID>&id=<チャネルID>\"\nend tell\n\n\n\nSystem Events を使ったのは文字入力をするための布石で keystroke を使っていきます。\nkeystroke \"Hello\" のようにすると、キーボードから Hello と入力したのと同様の結果が得られます。\ntell application \"System Events\"\n    keystroke \"Hello\"\nend tell\n\n\n\nただしここで問題が生じます。キーストロークなので日本語をそのまま与えてもおかしなことになります。\nキーボード操作を考えても、IMEをオンにして、文字を入力、変換して、確定という操作をしているので当然です。\nそんな面倒なことを再現しないといけないのかというとそうでもなくて、クリップボードを使うと実現できます。\nset the clipboard to \"日本語でこんにちは\"\n\ntell application \"System Events\"\n    keystroke \"v\" using {command down}\nend tell\n\n\n\nusing {command down} で Cmd を押しながら別のキーを押すを実現できます。\nこれで Cmd+v をして貼り付けすることが出来ます。\nこれらを組み合わせると以下のように特定のチャネルに定型文を投稿することが可能です。\nここでは ジョブカン のスラッシュコマンドを実行しています。\nメッセージも入力したいので引数を受け取れるようにしました。\non run argv\n    set message to item 1 of argv\n    set the clipboard to \"/jobcan_touch \" & message\n\n    tell application \"System Events\"\n        open location \"slack://channel?team=<チームID>&id=<チャネルID>\"\n        delay 1\n\n        keystroke \"v\" using {command down}\n        delay 0.5\n\n        keystroke return\n    end tell\nend run\n\n\n\nこれで人力でやっていたチャネルを開いて、入力して、投稿の3ステップの操作が1ステップで完了できるようになりました。\nべんりですね。",
+          "link": "https://blog.nishimu.land/entry/2024/06/16/140925?utm_source=feed",
+          "publishedOn": "2024-06-16T05:09:25.000Z",
+          "wordCount": 359,
+          "title": "AppleScriptでSlackの特定チャネルに定型文を投稿する",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/6801883189114621210",
+          "author": null,
+          "description": "argerich-mf.jp\n別府アルゲリッチ音楽祭の催しの1つで、平和市民公園能楽堂 で行われたチェロとピアノの演奏会に行ってきた。\n生でチェロを聴くのはもしかしたら初めてかもしれない。\n能楽堂は別に音響に特化したわけではないと思うので、めちゃくちゃ良い音で聴けるわけではないけど、やはり生演奏というのは響くものがある。\n席もめっちゃよくて二人の手元がよく見える位置で目でも楽しむことができた。\nアンコールの朧月夜が特によくて、ピアノの編曲がすごく好きだった。",
+          "link": "https://blog.nishimu.land/entry/2024/06/15/233109?utm_source=feed",
+          "publishedOn": "2024-06-15T14:31:09.000Z",
+          "wordCount": 225,
+          "title": "能楽堂で音楽を聴く",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/6801883189114322783",
+          "author": null,
+          "description": "どうやら一般的には人との関係はメンテナンスしないと壊れてしまうらしい。\n自分は友達や知り合いにたいしてこちらから連絡をほとんどしない。\n友達だと思っている人達は連絡を取らなくてもつながっていて、何かあったときだけ連絡すればすぐに元の関係に戻れると思っていたからだ。\n特にSNSのようなものが普及していつでも連絡が取れるようになってからは顕著で、SNSでつながってなかったとしてもなんらかで連絡取れるやろと思っている。\n物理的に会うなんて考えもしていない。\nしかし、どうやら幻想だったようで、友人達とはどんどん疎遠になってしまっている。\nまあたぶん連絡したらなんかなるとは思いつつ、昔よりもやり取り自体がかなり減ってしまっている。\n特に何かあった訳じゃないのだけれど別府市にやってきて、物理的に会う機会がほぼ無くなったことでふと不安に思ったのであった。",
+          "link": "https://blog.nishimu.land/entry/2024/06/14/211620?utm_source=feed",
+          "publishedOn": "2024-06-14T12:16:20.000Z",
+          "wordCount": 250,
+          "title": "Keep In Touch",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/6801883189113844641",
+          "author": null,
+          "description": "marketplace.visualstudio.com\nGitHub Copilot と直接会話できる Copilot Chat 、皆さん使ってますか？\n私は最近まともに使い始めました。\nCopilot と言えば補完だけだと思っている人、以前ちょっとだけ触れて使えないと思った人(僕です)、いまのバージョンをもう一度触ってみてください、めっちゃ便利になっている。\nwww.youtube.com\nこの動画が出来ることを追いかけるのに良さそうなので見てください。\nベースモデルがGPT-4に変わったりとかいろいろ変化はありますが、便利なのは Participant や Context の概念が入ったことだと思います。\nParticipantは @workspace みたいなやつで、Chat-GPTにおける GPTs みたいなやつ。例えば @workspace ならいま開いているプロジェクトについての情報をローカルで集めてくれて俯瞰的でかつトークン制限を超えた回答ができる。\nさいきん発表された Copilot Extension などもこの仕組みにのっかっていそう。\nContext は #file:REAME.md とか #selection みたいな感じで特にここを見てくれというのを明示的に伝えられる。これによって意図していない回答が得られる率を大幅に減らせている。\ncode.visualstudio.com\nドキュメントがちゃんと更新されているのでここを読むと一望できそう。\nまた、英語が苦手勢としては日本語でプロンプトを入力するのが面倒な時がある。そういうときには VS Code Speech を使うと音声入力できるので重宝している。\n日本語だと精度がそこまででもないのと、日本語の中に英語を交ぜたりできないのが玉に瑕。3S 原則 を守っていたらそんなに長文にはならないのでギリ使えている。\nmarketplace.visualstudio.com\n今後はどんどん人間の作業が減っていくのは間違いないので、コードの詳細よりもっと大きな視点で考えられるように意識を変えていこう。",
+          "link": "https://blog.nishimu.land/entry/2024/06/12/215706?utm_source=feed",
+          "publishedOn": "2024-06-12T12:57:06.000Z",
+          "wordCount": 271,
+          "title": "GitHub Copilot Chat 舐めていた",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/6801883189104052435",
+          "author": null,
+          "description": "TL;DR\n適当な Grammer 拡張を入れて以下の設定を書いておきましょう。\n\"gopls\": {\n  \"ui.semanticTokens\": true,\n\n  // you can optionally turn on these features for more colors\n  // see https://go.dev/issue/45753 and https://go.dev/issue/45792\n  \"ui.noSemanticString\": true,  // delegates string syntax highlighting to vscode\n  \"ui.noSemanticNumber\": true,  // delegates number syntax highlighting to vscode\n}\n\n\n\n本文\n仕事では主に Go を書いていて、DBへのクエリは生のSQLを文字列で Go のファイル内に書いている。\nこのSQLはただの文字列なので当然シンタックスハイライトはされない。\nGoland を使っている同僚は、JetBrains のテクノロジーによってシンタックスハイライトされるらしい。ずるい。\nVSCode でもこれをやりたい。\n実は VSCode でも特定の言語内に埋め込まれた別の言語をあつかう方法は用意されていて Injection grammars というやつを使うと実現できる。\n難点は Grammer の設定は拡張にしか書けないので、手元でシュッとやることができない。\nなんか適当なやつを入れるか、自分で拡張を書く必要がある。\n自分は Inline SQL というやつを入れているが、シンタックスハイライトしたいだけには過剰なのでもっとシンプルなやつでいいと思います。\nところで VSCode で Go を書いている人はほぼ間違いなく Go拡張 を使っていると思います。\nこの拡張経由で gopls を使うと Semantic Highlighting によって、より正確なシンタックスハイライトが出来るわけですが、これを使うと Injection grammars を使うことができません。「文字列」としてトークナイズされて処理されるので文字列の色にしかなりません。\nよって、以下のような設定で Semantic Tokens を無効にするような手段が提示されています。SQLのシンタックスハイライトのために失うものが大きすぎる。\n{\n    \"gopls.ui.semanticTokens\": false\n}\n\n\n\n僕はこれをなんとかするために自前でテーマ拡張を書くことで文字列だけ Semantic Highlighting の対象外にする力業をやっていました。\nしかし、実は ui.noSemanticString 使うことで回避できるらしい。そしてよくみると Features に しっかり書いて あった。\n2022年の8月ごろ に実装された設定らしく、拡張側のドキュメントに記載されたのが 2023年2月 ごろなので、気付くのに一年以上かかってしまった。",
+          "link": "https://blog.nishimu.land/entry/2024/05/06/005916?utm_source=feed",
+          "publishedOn": "2024-05-05T15:59:16.000Z",
+          "wordCount": 336,
+          "title": "VSCodeでGoの文字列内のSQLをシンタックスハイライトしたい",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        }
+      ]
+    },
+    {
       "title": "アジの開き、お開き",
       "feedUrl": "https://blogyu-a-rueru.hatenablog.com/rss",
       "siteUrl": "https://blogyu-a-rueru.hatenablog.com/",
