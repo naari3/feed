@@ -907,6 +907,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189120237294",
+          "author": null,
+          "description": "github.com\n最近このPRを試していて、SEGVが出たので報告をしていた。\n少し前に「SEGVが出るよ」と報告したら、PR作者のMattの環境で再現しないとのことだったので、やり取りをしていた。\n再現のためにRbConfig::CONFIGの結果を送っていたので、自分でもそれを改めてよく見たところ、\"RUSTC\"=>\"no\"になっていることに気が付き、これだったりするかな〜とrustcをインストールして試したところyjitの有無で再現するかどうかが変化した。これでMattの環境でも再現すると良いな。\nこれの再現確認のためにビルドをガチャガチャ試していた。\nmake cleanしているかどうかで結果が変わってしまうようで、SEGVの再現が安定しなくてちょっと混乱していた。\nCのビルド全然分からなくて難しい。\nここしばらくクレジットカードを新しく作ろうか色々検討していた。\nその結果として、J-WESTカード エクスプレスに申し込んだ。VISAタッチできるカードを持ってないので、VISAにした。(マスターカードはタッチできるカードを持っている)\n年1100円支払うことで特急券に割引を受けられるサービスだと考えると、利用頻度からしてそこまで額は大きくないけれど得するはず。あとはICカード用途かなあ。",
+          "link": "https://commits.hatenablog.com/entry/2024/07/08/100000",
+          "publishedOn": "2024-07-08T01:00:00.000Z",
+          "wordCount": 462,
+          "title": "2024-07-07",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189114554578",
           "author": null,
           "description": "ピアノレッスンの日だった。\nここしばらく練習してた、海の見える街の合格をもらった。 楽譜はこれ https://www.print-gakufu.com/score/detail/58867/\nまだつっかえるところもあるけど、ひとまず次の曲に進める。\n現状を記録しておく意味で演奏を録音しておいた。前半はまだ弾けているけど後半の方はつっかえてしまっている。\nwww.dropbox.com\n次は奥華子さんの魔法の人を練習する。 奥華子さんの曲を弾きたくてピアノを始めて、やっと奥華子さんの曲に取り掛かることになった。\nレッスンで曲の確認をしていて、先生に「きれいな曲だね」と言われて(自分のことじゃないのに)嬉しかった。そしてじっとり系ではなくて魔法の人にしておいて良かったなと思った。\n今日練習していて前奏部分はゆっくり弾けるようになったので、そこだけ録音しておいた。\nwww.dropbox.com",

@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-07-08T00:03:06.064Z</updated>
+    <updated>2024-07-08T01:28:03.811Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2024-07-07]]></title>
+        <id>hatenablog://entry/6801883189120237294</id>
+        <link href="https://commits.hatenablog.com/entry/2024/07/08/100000"/>
+        <updated>2024-07-08T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+最近このPRを試していて、SEGVが出たので報告をしていた。
+少し前に「SEGVが出るよ」と報告したら、PR作者のMattの環境で再現しないとのことだったので、やり取りをしていた。
+再現のためにRbConfig::CONFIGの結果を送っていたので、自分でもそれを改めてよく見たところ、"RUSTC"=>"no"になっていることに気が付き、これだったりするかな〜とrustcをインストールして試したところyjitの有無で再現するかどうかが変化した。これでMattの環境でも再現すると良いな。
+これの再現確認のためにビルドをガチャガチャ試していた。
+make cleanしているかどうかで結果が変わってしまうようで、SEGVの再現が安定しなくてちょっと混乱していた。
+Cのビルド全然分からなくて難しい。
+ここしばらくクレジットカードを新しく作ろうか色々検討していた。
+その結果として、J-WESTカード エクスプレスに申し込んだ。VISAタッチできるカードを持ってないので、VISAにした。(マスターカードはタッチできるカードを持っている)
+年1100円支払うことで特急券に割引を受けられるサービスだと考えると、利用頻度からしてそこまで額は大きくないけれど得するはず。あとはICカード用途かなあ。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.7.8]]></title>
         <id>https://gamegaz.com/?p=41502</id>
