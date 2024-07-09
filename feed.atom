@@ -2,10 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-07-09T13:04:10.115Z</updated>
+    <updated>2024-07-09T14:01:38.761Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[『Rustで作るプログラミング言語』を読んでかねてから構想していた自作言語を形にした]]></title>
+        <id>hatenablog://entry/6801883189120710691</id>
+        <link href="https://gfx.hatenablog.com/entry/2024/07/09/222800"/>
+        <updated>2024-07-09T13:28:00.000Z</updated>
+        <summary type="html"><![CDATA[Rustで作るプログラミング言語という書籍が先日発売されました。簡単なプログラミング言語を作ってバイトコードに変換して実行したりネイティブコードに変換して実行してみよう、という本で、大変面白く読みました。最終的にかなり本格的な言語になるので、これを元にするとわりとちゃんとした言語を作れそうです。
+この書籍で最終的に作られる言語はこちら:
+GitHub - msakuta/ruscal: Programming language implementation learning project
+ちょうど私も、以前から構想していた言語があったので、ちょっと作ってみました。というのも、TypeScriptを設定用の言語としてさまざまなプログラミング言語から使えると便利ではないかとずっと思っていたのです。
+この設定言語で複雑なことができる必要はなく、最終的にはJSONに準ずるデータ構造になればよいので、その程度だったらそれほど大掛かりではなくツールとしてメンテできるのではないかと思っています。似た思想のツールとしてはJsonnetがありますが、Jsonnetは構文が独自でまったく新しい言語を覚えなければならないのが不満なのです。
+TypeScriptであればほとんどのプログラマーの共通言語であるJavaScriptとほぼ同じですし、設定を書くだけであればTypeScriptの深い知識は不要です。さらに、Typescriptの厳密なサブセットであれば、設定を書いている途中にTypeScriptの強力な補完機能も使えるというわけです。
+この設定言語のプロジェクトはこちら:
+GitHub - gfx/titys: Turing-Incomplete TypeScript Subset as a Configuration Language
+こういう感じで設定ファイルを書けます:
+// editor_config.ts
+
+const LF = "\u{0A}"; // \xHH はまだサポートしていない
+
+export const EditorConfig = {
+    tabSize: 4,
+    trimTrailingWhitespace: true,
+    endOfLine: LF,
+    encoding: "utf-8",
+};
+
+
+
+このファイルはJSONに変換するとこうなります:
+{
+  "EditorConfig": {
+    "tabSize": 4,
+    "trimTrailingWhitespace": true,
+    "endOfLine": "\n",
+    "encoding": "utf-8"
+  }
+}
+
+
+
+Turing-incompleteなことが重要なので、TiTys (Turing-Incomplete TypeScript; ティティス) と名づけました。プロジェクトの進捗としては40%くらいですが（とくに型構文をほとんどサポートしていない！）、世の中にあるeslintなどのJavaScript設定ファイルくらいであればすでにTypeScriptに書き換えたものをJSONに変換可能です。
+言語として何一つ新規に発明したところがないというのはポイントです。私が判断したのは、強いていえば「何を実装しないか」くらいです（このへんはREADMEに書いてあります）。
+現在のところインターフェイスとしてはコマンドしか用意していないのですが、すでにJSONを受け付けるツールにのためのプリプロセッサとしてはすでにある程度使えるでしょう。とはいえ、さすがに今は機能的にも不足ですし、また、Rust用のAPIなどを整備しないと現実的には使い物にならないので、ある程度使い物になるくらいまではメンテするつもりでいます。
+脱線しましたが、『Rustで作るプログラミング言語』はRust学習の2冊目以降の本としてはかなりよいのではないかと思います。
+Rustで作るプログラミング言語]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[さ５]]></title>
         <id>https://note.com/klunakapa/n/n73bf185762e9</id>
@@ -11485,18 +11533,6 @@ Amazon
 来期(もう始まってるけど)はなんか色々いっぱいあって楽しみだね。]]></summary>
         <author>
             <name>星空のブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アスリートには"素材"がある——。『マイナースポーツの心得』]]></title>
-        <id>https://note.com/kazumakawauchi/n/n8bb08be0b91c</id>
-        <link href="https://note.com/kazumakawauchi/n/n8bb08be0b91c"/>
-        <updated>2024-04-11T01:26:33.000Z</updated>
-        <summary type="html"><![CDATA[SNSを利用したスポーツのStorytellingや、アスリートのBrandingに関して、危機感をもって必要としているのは、日本でいうメジャースポーツの野球やサッカーではなく、それ以外のマイナースポーツであると言えると思います。
-日本の場合、野球やサッカーなどのプロ選手は、自身のアスリートキャリアに対するStorytellingあるいはBrandingに対して「斜に構えている」印象がありますが、マイナースポーツを行うアスリートにとって、それは「アスリートキャリアの一部」であり、アスリートである自分を"守る"術であると言って良い。自分が競技で出した成績が、誰の目にも触れずに情報の川に流れていってしまうのは、自身の競技成績に対する裏切りであると言っていいと思います。
-続きをみる]]></summary>
-        <author>
-            <name>河内一馬</name>
         </author>
     </entry>
     <entry>
