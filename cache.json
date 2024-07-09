@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189120670437",
+          "author": null,
+          "description": "主にpc98用。設定画面は反映されない場合があるので基本的にテキスト上で変えること。\n■ウィンドウサイズ変更（デフォルトだと一瞬サイズが大きくなったりする）\n■cpuを80486へ\noutput            = ddraw\nwindowresolution  = 640x400\ncputype            = 486\n\n■ブレークポイント\nbpint 21 3d，d ds dx\n\n■ファイルオープン\n3DH \nDS:DX パス\nAL アクセスモード \tF キャリーフラグオンならエラー\nAX エラーコード\n\n■ファイルクローズ\n3EH\nDS:DX パス \tF キャリーフラグオンならエラー\nAX エラーコード\n\n■ファイル読み込み\n3FH\nBX ファイルハンドル\nCX バイト数\nDS:DX バッファアドレス \tAX 読み込んだバイト数\nDS:DX データー\nF キャリーフラグオンならエラー\nAX エラーコード\n\n■GDC パレット書き込みと緑赤青（注意：RGBではない）\nout a8 aa ac ae\n\n■正規表現AND\n^(?=.*word1)(?=.*word2)(?=.*word3).*$\n参考：\nMS-DOS割り込み",
+          "link": "https://akkera102.hatenablog.com/entry/2024/07/09/191718",
+          "publishedOn": "2024-07-09T10:17:18.000Z",
+          "wordCount": 484,
+          "title": "dosbox-xメモ",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189107501564",
           "author": null,
           "description": "Fantasia on Themes from the 'Atlach=Nacha' (EMBRYO Piano Works)\nhttps://www.youtube.com/watch?v=6skGIc_NS0M",
@@ -9010,16 +9025,6 @@
           "wordCount": 1449,
           "title": "GameGaz Daily 2024.4.11",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=40859",
-          "author": "mamosuke",
-          "description": "Pretendoチームが、ノーマル状態のNintendo WiiのままでハックすることなくPretendo Networkに接続するためのSSSLを発表していました。→→→この記事の続きを読む\nPretendo NetworkにノーマルWii Uで接続 SSSL by shutterbug first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024041140859/",
-          "publishedOn": "2024-04-10T22:18:11.000Z",
-          "wordCount": 1574,
-          "title": "Pretendo NetworkにノーマルWii Uで接続 SSSL by shutterbug",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/Pretendo.png"
         }
       ]
     },
