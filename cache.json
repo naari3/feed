@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189120960888",
+          "author": null,
+          "description": "ここで書けばばれないと思うけど、ValleyBellさんは神か。天才的なハッカーが動くと山が動くようなイメージですね・・・。dos時代にpacker技術ってあったんだ。知らなかった。。以下のサイトでUNP使ったら一発でした。カナンのexe解凍したぜいえーい。\nmoddingwiki.shikadi.net",
+          "link": "https://akkera102.hatenablog.com/entry/2024/07/10/224715",
+          "publishedOn": "2024-07-10T13:47:15.000Z",
+          "wordCount": 430,
+          "title": "pc98 exe unpacker",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189120914939",
           "author": null,
           "description": "練習のためにやりました。最近の趣味です。。\n■4枚の圧縮プレーン展開直前\n1476:000038A3  lds  si,cs:[00C0]   \n1476:000038A8  mov  ax,cs:[0013]   \n1476:000038AC  call 000038E8 ($+39)\n■スクリプトデコーダ\n18AC:00000173  mov  si,0FEE                                  \n18AC:00000176  mov  word [bp-32],0000          ss:[0F98]=0000\n18AC:0000017B  shr  word [bp-32],1             ss:[0F98]=0000\n18AC:0000017E  mov  ax,[bp-32]                 ss:[0F98]=0000\n18AC:00000181  test ax,0100                                  \n18AC:00000184  jne  000001AE ($+28)            (no jmp)      \n18AC:00000186  les  bx,[bp-2A]                 ss:[0FA0]=0004\n\n■スクリプトファイル 0x18読み込み 47F6:0004\n18AC:00000189  mov  al,es:[bx]                 es:[0004]=01FF\n18AC:0000018C  mov  ah,00                                    \n18AC:0000018E  mov  dx,ax                              …",
@@ -9020,16 +9035,6 @@
           "publishedOn": "2024-04-13T01:23:18.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2024.4.13",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=40866",
-          "author": "mamosuke",
-          "description": "ps5-payload-elfldr v0.12,ps5-payload-shsrv v0.5,ps5-payload-sdk v0.11,ps5-payload-ftpsrv v0.7,ps5-payload-klogsrv v0.4,webMAN MOD 1.47.46a,ARK-4 v1712849342,FreeMcBoot-Installer Pre built images for MemcardPro2,SwitchではRAMがボトルネック,Ultrahand Overlay 1.5.0,WiiUDownloader v2.43,sudachi vedd7896,Cemu 2.0-77 (Experimental),Lime3DS 2108,Xenia Canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2024.4.12 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024041240866/",
-          "publishedOn": "2024-04-12T01:38:54.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2024.4.12",
           "imageUrl": null
         }
       ]

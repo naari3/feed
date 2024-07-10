@@ -78,6 +78,56 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">pc98 exe unpacker</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/07/10/224715" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ここで書けばばれないと思うけど、ValleyBellさんは神か。天才的なハッカーが動くと山が動くようなイメージですね・・・。dos時代にpacker技術ってあったんだ。知らなかった。。以下のサイトでUNP使ったら一発でした。カナンのexe解凍したぜいえーい。
+moddingwiki.shikadi.net</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">pc98 desire解析</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/07/10/194442" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>練習のためにやりました。最近の趣味です。。
+■4枚の圧縮プレーン展開直前
+1476:000038A3  lds  si,cs:[00C0]   
+1476:000038A8  mov  ax,cs:[0013]   
+1476:000038AC  call 000038E8 ($+39)
+■スクリプトデコーダ
+18AC:00000173  mov  si,0FEE                                  
+18AC:00000176  mov  word [bp-32],0000          ss:[0F98]&#x3D;0000
+18AC:0000017B  shr  word [bp-32],1             ss:[0F98]&#x3D;0000
+18AC:0000017E  mov  ax,[bp-32]                 ss:[0F98]&#x3D;0000
+18AC:00000181  test ax,0100                                  
+18AC:00000184  jne  000001AE ($+28)            (no jmp)      
+18AC:00000186  les  bx,[bp-2A]                 ss:[0FA0]&#x3D;0004
+
+■スクリプトファイル 0x18読み込み 47F6:0004
+18AC:00000189  mov  al,es:[bx]                 es:[0004]&#x3D;01FF
+18AC:0000018C  mov  ah,00                                    
+18AC:0000018E  mov  dx,ax                              …</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://honeshabri.hatenablog.com/" target="_blank"
               rel="noopener">本しゃぶり</a></h3>
           <section class="articles-per-source">
@@ -125,43 +175,6 @@ Amazon
 作者:…</span>
                   </div>
                   <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/honeshabri/20240707/20240707154626.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">pc98 desire解析</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/07/10/194442" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>練習のためにやりました。最近の趣味です。。
-■4枚の圧縮プレーン展開直前
-1476:000038A3  lds  si,cs:[00C0]   
-1476:000038A8  mov  ax,cs:[0013]   
-1476:000038AC  call 000038E8 ($+39)
-■スクリプトデコーダ
-18AC:00000173  mov  si,0FEE                                  
-18AC:00000176  mov  word [bp-32],0000          ss:[0F98]&#x3D;0000
-18AC:0000017B  shr  word [bp-32],1             ss:[0F98]&#x3D;0000
-18AC:0000017E  mov  ax,[bp-32]                 ss:[0F98]&#x3D;0000
-18AC:00000181  test ax,0100                                  
-18AC:00000184  jne  000001AE ($+28)            (no jmp)      
-18AC:00000186  les  bx,[bp-2A]                 ss:[0FA0]&#x3D;0004
-
-■スクリプトファイル 0x18読み込み 47F6:0004
-18AC:00000189  mov  al,es:[bx]                 es:[0004]&#x3D;01FF
-18AC:0000018C  mov  ah,00                                    
-18AC:0000018E  mov  dx,ax                              …</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -16566,26 +16579,6 @@ Profile
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2024.4.12</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024041240866/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ps5-payload-elfldr v0.12,ps5-payload-shsrv v0.5,ps5-payload-sdk v0.11,ps5-payload-ftpsrv v0.7,ps5-payload-klogsrv v0.4,webMAN MOD 1.47.46a,ARK-4 v1712849342,FreeMcBoot-Installer Pre built images for MemcardPro2,SwitchではRAMがボトルネック,Ultrahand Overlay 1.5.0,WiiUDownloader v2.43,sudachi vedd7896,Cemu 2.0-77 (Experimental),Lime3DS 2108,Xenia Canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2024.4.12 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -18516,7 +18509,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-07-10T13:04:28.766Z">2024-07-10T13:04:28.766Z</time>
+    <time id="build-timestamp" datetime="2024-07-10T14:01:54.205Z">2024-07-10T14:01:54.205Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
