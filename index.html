@@ -74,6 +74,48 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-07-10">2024-07-10</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">pc98 desire解析</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/07/10/194442" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>練習のためにやりました。最近の趣味です。。
+■4枚の圧縮プレーン展開直前
+1476:000038A3  lds  si,cs:[00C0]   
+1476:000038A8  mov  ax,cs:[0013]   
+1476:000038AC  call 000038E8 ($+39)
+■スクリプトデコーダ
+18AC:00000173  mov  si,0FEE                                  
+18AC:00000176  mov  word [bp-32],0000          ss:[0F98]&#x3D;0000
+18AC:0000017B  shr  word [bp-32],1             ss:[0F98]&#x3D;0000
+18AC:0000017E  mov  ax,[bp-32]                 ss:[0F98]&#x3D;0000
+18AC:00000181  test ax,0100                                  
+18AC:00000184  jne  000001AE ($+28)            (no jmp)      
+18AC:00000186  les  bx,[bp-2A]                 ss:[0FA0]&#x3D;0004
+
+■スクリプトファイル 0x18読み込み 47F6:0004
+18AC:00000189  mov  al,es:[bx]                 es:[0004]&#x3D;01FF
+18AC:0000018C  mov  ah,00                                    
+18AC:0000018E  mov  dx,ax                              …</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-07-09">2024-07-09</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18419,7 +18461,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-07-10T10:01:38.917Z">2024-07-10T10:01:38.917Z</time>
+    <time id="build-timestamp" datetime="2024-07-10T11:01:46.678Z">2024-07-10T11:01:46.678Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
