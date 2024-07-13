@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-07-13T00:03:18.939Z</updated>
+    <updated>2024-07-13T01:28:03.702Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2024-07-12]]></title>
+        <id>hatenablog://entry/6801883189121308518</id>
+        <link href="https://commits.hatenablog.com/entry/2024/07/13/100000"/>
+        <updated>2024-07-13T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[RUBY_INTERNAL_EVENT_NEWOBJ や RUBY_INTERNAL_EVENT_FREEOBJ はなぜ公開されていないのだろう、と考えていたのだけど、少なくともRUBY_INTERNAL_EVENT_FREEOBJはRubyでは書けないな、ということに気がついた。このフックの中でGCが起きる操作をしてはいけないし、objectへの参照を新たに作ってもいけない。
+RubyConf に Proposal を出そうか悩んでいる。
+話したい内容はあるのだけど、国外に行くのがめんどくさい……。日本と比べると世界中のほとんどの都市は治安が悪いし、シカゴは空港からのアクセスもそんなに良いわけではなさそう。あと関空からの直通もあるか怪しい…。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.7.13]]></title>
         <id>https://gamegaz.com/?p=41534</id>

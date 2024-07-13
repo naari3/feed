@@ -937,6 +937,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189121308518",
+          "author": null,
+          "description": "RUBY_INTERNAL_EVENT_NEWOBJ や RUBY_INTERNAL_EVENT_FREEOBJ はなぜ公開されていないのだろう、と考えていたのだけど、少なくともRUBY_INTERNAL_EVENT_FREEOBJはRubyでは書けないな、ということに気がついた。このフックの中でGCが起きる操作をしてはいけないし、objectへの参照を新たに作ってもいけない。\nRubyConf に Proposal を出そうか悩んでいる。\n話したい内容はあるのだけど、国外に行くのがめんどくさい……。日本と比べると世界中のほとんどの都市は治安が悪いし、シカゴは空港からのアクセスもそんなに良いわけではなさそう。あと関空からの直通もあるか怪しい…。",
+          "link": "https://commits.hatenablog.com/entry/2024/07/13/100000",
+          "publishedOn": "2024-07-13T01:00:00.000Z",
+          "wordCount": 433,
+          "title": "2024-07-12",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189120237294",
           "author": null,
           "description": "github.com\n最近このPRを試していて、SEGVが出たので報告をしていた。\n少し前に「SEGVが出るよ」と報告したら、PR作者のMattの環境で再現しないとのことだったので、やり取りをしていた。\n再現のためにRbConfig::CONFIGの結果を送っていたので、自分でもそれを改めてよく見たところ、\"RUSTC\"=>\"no\"になっていることに気が付き、これだったりするかな〜とrustcをインストールして試したところyjitの有無で再現するかどうかが変化した。これでMattの環境でも再現すると良いな。\nこれの再現確認のためにビルドをガチャガチャ試していた。\nmake cleanしているかどうかで結果が変わってしまうようで、SEGVの再現が安定しなくてちょっと混乱していた。\nCのビルド全然分からなくて難しい。\nここしばらくクレジットカードを新しく作ろうか色々検討していた。\nその結果として、J-WESTカード エクスプレスに申し込んだ。VISAタッチできるカードを持ってないので、VISAにした。(マスターカードはタッチできるカードを持っている)\n年1100円支払うことで特急券に割引を受けられるサービスだと考えると、利用頻度からしてそこまで額は大きくないけれど得するはず。あとはICカード用途かなあ。",
