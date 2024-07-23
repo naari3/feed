@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-07-23T16:02:19.806Z</updated>
+    <updated>2024-07-23T17:01:47.978Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -11529,30 +11529,6 @@ saize-lw.hatenablog.com
 956.「『実在児童のポルノを学習したAIにより生成した画像は非実…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NLP2024 に参加しました]]></title>
-        <id>hatenablog://entry/6801883189100841820</id>
-        <link href="https://techlife.cookpad.com/entry/2024/04/25/130354"/>
-        <updated>2024-04-25T04:03:54.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは！
-技術部機械学習グループの山口 (@altescy) です。
-先月、神戸にて開催された言語処理学会第30回年次大会 (NLP2024)に同じく機械学習グループの深澤 (@fufufukakaka)と共に参加してきました。
-昨年に引き続き今年も過去最多の参加者数となり、言語処理研究の盛り上がりを実感しました。
-特に去年の年次大会 (NLP2023) のタイミングで GPT-4 が発表されて以降、自然言語処理の研究は大きな転換期を迎えていると感じます。
-大規模言語モデル (LLM) が研究の主流となる中、どんな課題や発見があるのか、期待をもって参加する大会となりました。
-この記事では NLP2024 にてクックパッドから発表した 2 つの研究と、その他の興味深かった研究についていくつか紹介します。
-発表内容の紹介
-クックパッドからは以下 2 つの研究を発表しました。
-P2-11: Sequential Recommendation におけるテキスト情報を活用した未知アイテムへの対処法に関する分析
-P3-8: RecipeSTS: レシピのための類似性評価
-P2-11: Sequential Recommendation におけるテキスト情報を活用した未知アイテムへの対処法に関する分析
-著者: 深澤祐援、山口泰弘
-論文: https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P2-11.pdf
-推薦モデルの一種として、Sequential Recommendation Modelがあります。これはアイテムIDの系列情報を基に次にアクションすべきアイテムを推薦するモデルです。このモデルは未知のユーザーであっても、既知のアイテムで構成された履歴があれば推薦が可能です。しかし、未知のアイテムが入力として与えら…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
