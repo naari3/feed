@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-07-24T03:01:57.058Z</updated>
+    <updated>2024-07-24T04:02:11.511Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[役に立たないことのおもしろさ～ニッチな工作をやっている人たちのグループ「MUUDA」（ミュ～ダ）を作った]]></title>
+        <id>hatenablog://entry/6801883189124210906</id>
+        <link href="https://nomolk.hatenablog.com/entry/2024/07/24/120800"/>
+        <updated>2024-07-24T03:08:00.000Z</updated>
+        <summary type="html"><![CDATA[作った、といっても自分が発起人なわけではないのだけど、とにかく新しいグループができて、参加することになった。
+muuda.net
+無駄コレクティブMUUDA（ミュ～ダ）という名前で、「あまり役に立たない工作やウェブを作っているクリエイター8人が集まったコレクティブ。」と説明されている。僕はコレクティブという言葉をあんまり聞きなれなかったのだけど、Animal Collective とか Ezra collective とかのそれだと思う。
+www.youtube.com
+www.youtube.com
+よけいな例を挙げたせいで話が分かりにくくなった気がするが別に音楽で食っていくことにしたわけではなくて、ものを作ってる人のグループである。一人で活動してると色々大変なこともあるからなんとなく協力してやっていこうねという、小さい組合みたいな感じである。
+その最初の活動として、いま渋谷で展示をやっている。先週、設営に行ったら、センター街の入り口すぐのめちゃめちゃいい場所で笑った。
+これは僕の作品。
+www.youtube.com
+鬱陶しい風鈴
+
+夏の暑い日に少し涼しい風が吹くと、幼少期の夏休みに泊まった祖父母の家を思い出します。
+
+ここにあるのはそんなノスタルジーも風流さもすべて打ち消す風鈴です。
+会場には装置を動かすためのスイッチがあるのだけど、風鈴はスイッチの入力を受けて鳴るわけではなくて、ちゃんとサーキュレーターの風に反応して鳴っているというのがこだわり。だからうちわであおいでも鳴るので見に行った人は試してみてほしい。
+こういう長期展示に慣れていないので搬入にも不慣れで、作ったものを全部紙袋に雑に突っ込んで持っていったら中で絡まってひと固まりになっており、はんだ付けを外したりしながら２時間くらいかけてほどいた。余談。
+他には鉄塔さんが作ったこれがすごい。
+
+これ手作りのAIカ…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024-07-23]]></title>
         <id>hatenablog://entry/6801883189124026432</id>
@@ -11520,27 +11548,6 @@ intersection -relay of urban folk-　2024年3月24日（日）エレバティ（
 GameGaz Daily 2024.4.26 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[競プロ始めて半月経った]]></title>
-        <id>hatenablog://entry/6801883189101452642</id>
-        <link href="https://isobe324649.hatenablog.com/entry/2024/04/26/000846"/>
-        <updated>2024-04-25T15:08:46.000Z</updated>
-        <summary type="html"><![CDATA[4月だし新しいことをやろうと思い、学生時代に少しだけかじった競プロを再開すべく4/10にatcoderのBeginnersSelectionというのを解いてみた。２時間半ほどで全て解くことが出来て、（今思い返すとこれは勘違いなのだが）「お、割といけるじゃん！」って思って本格的に趣味の競プロをやることにした。
-平日夜と週末、atcoderの過去問をひたすら解く。普段の仕事でのコーディングとは別の数学パズルっぽい考察が必要で、なかなか楽しい。毎週末やってるABC（ビギナーズコンテスト）にも２回でてみたりした。現時点の実力はレーティング1200点前後（緑と水色の間）のようだ。
-書籍は二冊、とくに鉄則本は読み通して、演習問題も結構解いた。
-book.mynavi.jp
-蟻本も持っているが、こちらは半分も読めてない。蟻本を何周もしてきっちり自分のものにするだけで青コーダーは行ける気がする。
-book.mynavi.jp
-それにしても自分が学生時代のときよりも練習サイトやノウハウ資料などが整備されていて、非常に取り組みやすい。
-練習の達成度を可視化してくれるAtcoder Problemsという有志サイトもあって、これがまたモチベーションをアゲてくれる。こういうゲーミフィケーション大事ですね。
-本エントリ書いてる時点で完答136問. 難易度は色々混じってるので目安ではあるが数字で見れるのは嬉しい。
-
-最近はそのAtcoderProblemsにあるBootCampという初級＋αくらいの問題集と、Atcoderで常設コンテストとして出ている典型９０問という問題集（こちらは中級レベル）を解いている。
-週末よく一人で部屋で酒を飲む習慣があったが、この半月で酒量がものすごく減った。なので競プロが何の役にも立たなかったとしても、これはこれで凄く良い気がする。]]></summary>
-        <author>
-            <name>conceptualization</name>
         </author>
     </entry>
     <entry>
