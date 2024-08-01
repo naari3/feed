@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-08-01T14:01:59.717Z</updated>
+    <updated>2024-08-01T15:02:15.192Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Postgresのデータを`pg_dump`する際に詰まったメモ]]></title>
+        <id>hatenablog://entry/6801883189126404680</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2024/08/01/230116"/>
+        <updated>2024-08-01T14:01:16.000Z</updated>
+        <summary type="html"><![CDATA[PostgresSQLとしてSupabaseの有料プランを利用しているが、主にコストの観点で厳しくなってきた。
+今はPostgres上にあるデータをCloudflare D1に移行しようとしており、その過程でPostgres上にあるデータをダンプする pg dumpをしようとしたが、実行で手間取ったのでメモを残す。
+コマンド
+詳しくはpg_dumpの公式ドキュメントを参照
+www.postgresql.jp
+docker run --rm -it --network host -v $(pwd):/tmp postgres:15 pg_dump \
+  -h host_name \
+  -U user_name \
+  -d db_name \
+  -p 6543 \
+  -f /tmp/dump.sql \
+  --schema=public \
+  --no-owner \
+  --inserts
+バージョン互換で躓いたため、最終的に postgresのDockerイメージを利用する形で実行した
+
+
+クライアント側で利用しているpgのバージョンとサーバー側のバージョンが合わない場合、pg_dump: error: aborting because of server version mismatch となり、エラーになって実行できない
+解消する方法はあるが、正直面倒なのでDockerイメージを使った
+バージョン 15 の部分はクラウド側のPostgresのバージョンに合わせて変更することを想定している
+オプションについてはお好みで
+
+
+SQLiteにはCOPY INTO文がないため、-inserts オプションをつけて INSERT INTO 文でデータをコピーするようにしている
+テーブルの権限を委譲する ALTER TABLE 文は必要ないため、 -no-ownerオプションをつけている]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.8.1]]></title>
         <id>https://gamegaz.com/?p=41650</id>

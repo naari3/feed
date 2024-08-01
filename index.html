@@ -74,6 +74,55 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-08-01">2024-08-01</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
+              rel="noopener">現実モデリング</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Postgresのデータを&#x60;pg_dump&#x60;する際に詰まったメモ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://contradiction29.hatenablog.com/entry/2024/08/01/230116" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>PostgresSQLとしてSupabaseの有料プランを利用しているが、主にコストの観点で厳しくなってきた。
+今はPostgres上にあるデータをCloudflare D1に移行しようとしており、その過程でPostgres上にあるデータをダンプする pg dumpをしようとしたが、実行で手間取ったのでメモを残す。
+コマンド
+詳しくはpg_dumpの公式ドキュメントを参照
+www.postgresql.jp
+docker run --rm -it --network host -v $(pwd):/tmp postgres:15 pg_dump \
+  -h host_name \
+  -U user_name \
+  -d db_name \
+  -p 6543 \
+  -f /tmp/dump.sql \
+  --schema&#x3D;public \
+  --no-owner \
+  --inserts
+バージョン互換で躓いたため、最終的に postgresのDockerイメージを利用する形で実行した
+
+
+クライアント側で利用しているpgのバージョンとサーバー側のバージョンが合わない場合、pg_dump: error: aborting because of server version mismatch となり、エラーになって実行できない
+解消する方法はあるが、正直面倒なのでDockerイメージを使った
+バージョン 15 の部分はクラウド側のPostgresのバージョンに合わせて変更することを想定している
+オプションについてはお好みで
+
+
+SQLiteにはCOPY INTO文がないため、-inserts オプションをつけて INSERT INTO 文でデータをコピーするようにしている
+テーブルの権限を委譲する ALTER TABLE 文は必要ないため、 -no-ownerオプションをつけている</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-07-31">2024-07-31</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18408,7 +18457,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-08-01T14:01:59.641Z">2024-08-01T14:01:59.641Z</time>
+    <time id="build-timestamp" datetime="2024-08-01T15:02:15.148Z">2024-08-01T15:02:15.148Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
