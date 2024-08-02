@@ -24,6 +24,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189126646562",
+          "author": null,
+          "description": "順調順調。",
+          "link": "https://akkera102.hatenablog.com/entry/2024/08/02/224814",
+          "publishedOn": "2024-08-02T13:48:14.000Z",
+          "wordCount": 425,
+          "title": "rookies移植6",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20240802/20240802224800.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20240802/20240802224800.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189126155426",
           "author": null,
           "description": "ん－予定より早まるかもしれないです。というのもRookiesはスクリプトやリソース画像の管理がしっかりしていて無駄がありません。アトラクナクアと同等かそれ以上。今まで移植した中で最上位に位置してるほどで無茶苦茶コンバートがラクでした。あれもやりたい、これもやりたいでだいたい汚れていくものなのですけど割り切りがしっかりしていますねー。\nたとえばキャラ画像を左右に表示したくなるものですけど、そういうこともしない。左側に表示するキャラは左側だけ。右側に表示するキャラは右側だけ。そのため背景サイズとキャラサイズが同じです。もちろんキャラサイズで背景サイズは大きいので５，６割透明色になっています。これはちょっと処理が重いのではと思うけど開始座標位置を存在させないこととのトレードだと思います。\nもう一つすごいと思ったのには選択肢部分ですね。選択した戻り値を変数に入れるのですけど、それがそのままフラグ管理になっている。ふつう選択肢の後にイベントがあって、イベントが完了したらフラグを１立てるということをします。その場合、各イベントの変数を用意しないといけません。対してRookiesは選択肢返却値（たとえば選択肢１なら０，選択肢２なら１）がそのままフラグ管理になっています。後半になるとその変数の値をみているので非常に見通しがいいですね。ここは目からうろこの部分でした。",
@@ -1230,6 +1245,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189126639403",
+          "author": null,
+          "description": "最近はCloudflare Workersを触っている。Cloudflare Workersが動いているWorkd(\"わーくでぃー\"って読む)ランタイムではnode.jsに依存するAPIが利用できない*1ため、一部の関数/ライブラリが使えない。\ngithub.com\n今までアクセスしたユーザーのIPアドレスを書きだすにはremix-utilsのgetClientIPAddress(request:Request)関数を利用していたが、ランタイムをnodeからworkedに移行したためremix-utilsが使えなくなり、結果として別の手段を検討する必要が出てきた。理由としては、remix-utilsがcrypt-jsモジュールに依存し、crypto-jsモジュールはnode APIを利用するためである。\nremix.run\nnodejs.org\n実装を見ていたら結構簡単にできそうだったので、自分でサクッと書いてみた。\nIPアドレスの取得にはX-Forwarded-Forを利用している\ndeveloper.mozilla.org\n\n\nなお、個人情報の取り扱いが面倒なため、IPアドレス自体は保存はせずに復元不可能な形でハッシュした値をDBに保存している。\n\n\n\n\n*1:wrangler.tomlに設定を書き足せば一部使えるが、完全ではない",
+          "link": "https://contradiction29.hatenablog.com/entry/2024/08/02/222030",
+          "publishedOn": "2024-08-02T13:20:30.000Z",
+          "wordCount": 349,
+          "title": "RemixでRequestオブジェクトからクライアントのIPアドレスを抜き出すだけの関数",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189126404680",
           "author": null,
           "description": "PostgresSQLとしてSupabaseの有料プランを利用しているが、主にコストの観点で厳しくなってきた。\n今はPostgres上にあるデータをCloudflare D1に移行しようとしており、その過程でPostgres上にあるデータをダンプする pg dumpをしようとしたが、実行で手間取ったのでメモを残す。\nコマンド\n詳しくはpg_dumpの公式ドキュメントを参照\nwww.postgresql.jp\ndocker run --rm -it --network host -v $(pwd):/tmp postgres:15 pg_dump \\\n  -h host_name \\\n  -U user_name \\\n  -d db_name \\\n  -p 6543 \\\n  -f /tmp/dump.sql \\\n  --schema=public \\\n  --no-owner \\\n  --inserts\nバージョン互換で躓いたため、最終的に postgresのDockerイメージを利用する形で実行した\n\n\nクライアント側で利用しているpgのバージョンとサーバー側のバージョンが合わない場合、pg_dump: error: aborting because of server version mismatch となり、エラーになって実行できない\n解消する方法はあるが、正直面倒なのでDockerイメージを使った\nバージョン 15 の部分はクラウド側のPostgresのバージョンに合わせて変更することを想定している\nオプションについてはお好みで\n\n\nSQLiteにはCOPY INTO文がないため、-inserts オプションをつけて INSERT INTO 文でデータをコピーするようにしている\nテーブルの権限を委譲する ALTER TABLE 文は必要ないため、 -no-ownerオプションをつけている",
@@ -2161,7 +2191,23 @@
       "title": "ぷもも園",
       "feedUrl": "https://kumohai6794re.hatenablog.com/rss",
       "siteUrl": "https://kumohai6794re.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6801883189124379462",
+          "author": null,
+          "description": "鉱物が溶け込んだ、眩しいほどのエメラルドグリーンの水を満々と湛えた窓外のオマン湖は、地平線を埋め尽くすほど裕次郎のごとく、果てしなく広がっていた。山間を身をくねらせて進む2両編成の列車からは、時折、都営大江戸線のような轟音や、馬のいななきのようなものすごいエンジン音が聞こえるのだが、それはこの車両から発される音ではなくて、運転士のルーズ・ホール氏の口から洩れてくるものだと気が付いたとき、私は度肝を抜かされた。\n \n「次に停車するんがナニガ・キモチーノやど、ホラ、忘れ物がないか、ようし見ろ。」\n　さいきん駅員から昇進したばかりだというスィマダ車掌の、よく言えば世話焼きの母ちゃん風、悪く言えばテクなし指示厨妊娠妄想眼鏡デブ細い鯖缶野郎の、高圧的な車内アナウンスが、プモモン語特有の、もんもんとした篭り勝ちの発音を基調として、スピーカーから車内にぶちまけられる。そのたび私は、なまじプモモン語を勉強してきたがゆえに、かれらのどうしようもない猥雑なニュアンスを孕んだ言葉たちを、不幸にも理解できてしまうことの苦痛に耐えねばならなかった。\n　もっとも、こうした乗客軽視の姿勢は、スィマダ車掌だけではないらしい。この国の鉄道員にとって、乗客というのは、お客様ではなくて、あくまで輸送する荷物であり、いわば「世話の焼ける奴隷」にすぎないのだ。しかしながら、車内放送を使って行うルーズ・ホール運転士との交信に、男性器や女性器の俗称を連呼するのは、どうにもいただけない。ルーズ・ホール氏も氏で、スィマダ車掌につられるが如く、しきりにまんまん言葉を連発する有様だ。まったくもって救いがない。\n　午後1時9分4秒、19分遅れで、ナニガ・キモチーノの駅に到着した。ここはシマダーニ・ナショナル・レイルウェイの中心駅である。もっとも、この路線でハッテンしているのは終点、シマダーニくらいのものだから、この駅が路線の中心…",
+          "link": "https://kumohai6794re.hatenablog.com/entry/2024/08/02/223353",
+          "publishedOn": "2024-08-02T13:33:53.000Z",
+          "wordCount": 413,
+          "title": "1919191919419年オッパリヤの旅：「各駅停車島田行」（前編）",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumohai6794re/20240802/20240802223259.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kumohai6794re/20240802/20240802223259.jpg"
+        }
+      ]
     },
     {
       "title": "♪ブログらっち♪",
@@ -5576,6 +5622,16 @@
       "feedUrl": "https://note.com/kazumakawauchi/rss",
       "siteUrl": "https://note.com/kazumakawauchi",
       "articles": [
+        {
+          "id": "https://note.com/kazumakawauchi/n/n9137fd59618e",
+          "author": null,
+          "description": "パリオリンピック2024が始まりました。直近の東京2020がああいう感じだったので、久しぶりにオリンピックにフルで興奮している毎日です。\n一方で、スポーツの祭典ですから、毎日毎日スポーツが行われている中で、もちろん日本にもあらゆる媒体を通して伝わってくるわけですけれども、そうするとスポーツが持つ（あるいは大きな大会独特のものかもしれませんが）負の部分が見えたりします。\n続きをみる",
+          "link": "https://note.com/kazumakawauchi/n/n9137fd59618e",
+          "publishedOn": "2024-08-02T13:18:53.000Z",
+          "wordCount": 2268,
+          "title": "オリンピックは\"報道\"するべきか\"〇〇\"するべきか？",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/149373967/rectangle_large_type_2_b863253a28689ffaa1c76ad0edd33a79.png?width=800"
+        },
         {
           "id": "https://note.com/kazumakawauchi/n/n017d9f559ab9",
           "author": null,
