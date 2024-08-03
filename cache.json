@@ -927,21 +927,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189104052435",
-          "author": null,
-          "description": "TL;DR\n適当な Grammer 拡張を入れて以下の設定を書いておきましょう。\n\"gopls\": {\n  \"ui.semanticTokens\": true,\n\n  // you can optionally turn on these features for more colors\n  // see https://go.dev/issue/45753 and https://go.dev/issue/45792\n  \"ui.noSemanticString\": true,  // delegates string syntax highlighting to vscode\n  \"ui.noSemanticNumber\": true,  // delegates number syntax highlighting to vscode\n}\n\n\n\n本文\n仕事では主に Go を書いていて、DBへのクエリは生のSQLを文字列で Go のファイル内に書いている。\nこのSQLはただの文字列なので当然シンタックスハイライトはされない。\nGoland を使っている同僚は、JetBrains のテクノロジーによってシンタックスハイライトされるらしい。ずるい。\nVSCode でもこれをやりたい。\n実は VSCode でも特定の言語内に埋め込まれた別の言語をあつかう方法は用意されていて Injection grammars というやつを使うと実現できる。\n難点は Grammer の設定は拡張にしか書けないので、手元でシュッとやることができない。\nなんか適当なやつを入れるか、自分で拡張を書く必要がある。\n自分は Inline SQL というやつを入れているが、シンタックスハイライトしたいだけには過剰なのでもっとシンプルなやつでいいと思います。\nところで VSCode で Go を書いている人はほぼ間違いなく Go拡張 を使っていると思います。\nこの拡張経由で gopls を使うと Semantic Highlighting によって、より正確なシンタックスハイライトが出来るわけですが、これを使うと Injection grammars を使うことができません。「文字列」としてトークナイズされて処理されるので文字列の色にしかなりません。\nよって、以下のような設定で Semantic Tokens を無効にするような手段が提示されています。SQLのシンタックスハイライトのために失うものが大きすぎる。\n{\n    \"gopls.ui.semanticTokens\": false\n}\n\n\n\n僕はこれをなんとかするために自前でテーマ拡張を書くことで文字列だけ Semantic Highlighting の対象外にする力業をやっていました。\nしかし、実は ui.noSemanticString 使うことで回避できるらしい。そしてよくみると Features に しっかり書いて あった。\n2022年の8月ごろ に実装された設定らしく、拡張側のドキュメントに記載されたのが 2023年2月 ごろなので、気付くのに一年以上かかってしまった。",
-          "link": "https://blog.nishimu.land/entry/2024/05/06/005916?utm_source=feed",
-          "publishedOn": "2024-05-05T15:59:16.000Z",
-          "wordCount": 336,
-          "title": "VSCodeでGoの文字列内のSQLをシンタックスハイライトしたい",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -7584,6 +7569,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=41662",
+          "author": "mamosuke",
+          "description": "アメリカでは老舗のゲーム雑誌Game Informer」が突如廃刊となりウェブサイトも閉鎖が告知されました。→→→この記事の続きを読む\n米老舗ゲーム雑誌Game Informer 突如廃刊 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024080341662/",
+          "publishedOn": "2024-08-03T03:39:58.000Z",
+          "wordCount": null,
+          "title": "米老舗ゲーム雑誌Game Informer 突如廃刊",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=41660",
           "author": "mamosuke",

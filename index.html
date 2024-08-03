@@ -74,6 +74,31 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-08-03">2024-08-03</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">米老舗ゲーム雑誌Game Informer 突如廃刊</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024080341662/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>アメリカでは老舗のゲーム雑誌Game Informer」が突如廃刊となりウェブサイトも閉鎖が告知されました。→→→この記事の続きを読む
+米老舗ゲーム雑誌Game Informer 突如廃刊 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-08-02">2024-08-02</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -16593,59 +16618,6 @@ GameGaz Daily 2024.5.6 first appeared on 大人のためのゲーム講座.</spa
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
-              rel="noopener">ちなみに</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">VSCodeでGoの文字列内のSQLをシンタックスハイライトしたい</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2024/05/06/005916?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>TL;DR
-適当な Grammer 拡張を入れて以下の設定を書いておきましょう。
-&quot;gopls&quot;: {
-  &quot;ui.semanticTokens&quot;: true,
-
-  // you can optionally turn on these features for more colors
-  // see https://go.dev/issue/45753 and https://go.dev/issue/45792
-  &quot;ui.noSemanticString&quot;: true,  // delegates string syntax highlighting to vscode
-  &quot;ui.noSemanticNumber&quot;: true,  // delegates number syntax highlighting to vscode
-}
-
-
-
-本文
-仕事では主に Go を書いていて、DBへのクエリは生のSQLを文字列で Go のファイル内に書いている。
-このSQLはただの文字列なので当然シンタックスハイライトはされない。
-Goland を使っている同僚は、JetBrains のテクノロジーによってシンタックスハイライトされるらしい。ずるい。
-VSCode でもこれをやりたい。
-実は VSCode でも特定の言語内に埋め込まれた別の言語をあつかう方法は用意されていて Injection grammars というやつを使うと実現できる。
-難点は Grammer の設定は拡張にしか書けないので、手元でシュッとやることができない。
-なんか適当なやつを入れるか、自分で拡張を書く必要がある。
-自分は Inline SQL というやつを入れているが、シンタックスハイライトしたいだけには過剰なのでもっとシンプルなやつでいいと思います。
-ところで VSCode で Go を書いている人はほぼ間違いなく Go拡張 を使っていると思います。
-この拡張経由で gopls を使うと Semantic Highlighting によって、より正確なシンタックスハイライトが出来るわけですが、これを使うと Injection grammars を使うことができません。「文字列」としてトークナイズされて処理されるので文字列の色にしかなりません。
-よって、以下のような設定で Semantic Tokens を無効にするような手段が提示されています。SQLのシンタックスハイライトのために失うものが大きすぎる。
-{
-    &quot;gopls.ui.semanticTokens&quot;: false
-}
-
-
-
-僕はこれをなんとかするために自前でテーマ拡張を書くことで文字列だけ Semantic Highlighting の対象外にする力業をやっていました。
-しかし、実は ui.noSemanticString 使うことで回避できるらしい。そしてよくみると Features に しっかり書いて あった。
-2022年の8月ごろ に実装された設定らしく、拡張側のドキュメントに記載されたのが 2023年2月 ごろなので、気付くのに一年以上かかってしまった。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -18576,7 +18548,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-08-03T03:05:10.176Z">2024-08-03T03:05:10.176Z</time>
+    <time id="build-timestamp" datetime="2024-08-03T04:01:59.510Z">2024-08-03T04:01:59.510Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

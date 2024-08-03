@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-08-03T03:05:10.214Z</updated>
+    <updated>2024-08-03T04:01:59.549Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[米老舗ゲーム雑誌Game Informer 突如廃刊]]></title>
+        <id>https://gamegaz.com/?p=41662</id>
+        <link href="https://gamegaz.com/2024080341662/"/>
+        <updated>2024-08-03T03:39:58.000Z</updated>
+        <summary type="html"><![CDATA[アメリカでは老舗のゲーム雑誌Game Informer」が突如廃刊となりウェブサイトも閉鎖が告知されました。→→→この記事の続きを読む
+米老舗ゲーム雑誌Game Informer 突如廃刊 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.8.3]]></title>
         <id>https://gamegaz.com/?p=41660</id>
@@ -11527,49 +11538,6 @@ GameGaz Daily 2024.5.7 first appeared on 大人のためのゲーム講座.]]></
 GameGaz Daily 2024.5.6 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VSCodeでGoの文字列内のSQLをシンタックスハイライトしたい]]></title>
-        <id>hatenablog://entry/6801883189104052435</id>
-        <link href="https://blog.nishimu.land/entry/2024/05/06/005916?utm_source=feed"/>
-        <updated>2024-05-05T15:59:16.000Z</updated>
-        <summary type="html"><![CDATA[TL;DR
-適当な Grammer 拡張を入れて以下の設定を書いておきましょう。
-"gopls": {
-  "ui.semanticTokens": true,
-
-  // you can optionally turn on these features for more colors
-  // see https://go.dev/issue/45753 and https://go.dev/issue/45792
-  "ui.noSemanticString": true,  // delegates string syntax highlighting to vscode
-  "ui.noSemanticNumber": true,  // delegates number syntax highlighting to vscode
-}
-
-
-
-本文
-仕事では主に Go を書いていて、DBへのクエリは生のSQLを文字列で Go のファイル内に書いている。
-このSQLはただの文字列なので当然シンタックスハイライトはされない。
-Goland を使っている同僚は、JetBrains のテクノロジーによってシンタックスハイライトされるらしい。ずるい。
-VSCode でもこれをやりたい。
-実は VSCode でも特定の言語内に埋め込まれた別の言語をあつかう方法は用意されていて Injection grammars というやつを使うと実現できる。
-難点は Grammer の設定は拡張にしか書けないので、手元でシュッとやることができない。
-なんか適当なやつを入れるか、自分で拡張を書く必要がある。
-自分は Inline SQL というやつを入れているが、シンタックスハイライトしたいだけには過剰なのでもっとシンプルなやつでいいと思います。
-ところで VSCode で Go を書いている人はほぼ間違いなく Go拡張 を使っていると思います。
-この拡張経由で gopls を使うと Semantic Highlighting によって、より正確なシンタックスハイライトが出来るわけですが、これを使うと Injection grammars を使うことができません。「文字列」としてトークナイズされて処理されるので文字列の色にしかなりません。
-よって、以下のような設定で Semantic Tokens を無効にするような手段が提示されています。SQLのシンタックスハイライトのために失うものが大きすぎる。
-{
-    "gopls.ui.semanticTokens": false
-}
-
-
-
-僕はこれをなんとかするために自前でテーマ拡張を書くことで文字列だけ Semantic Highlighting の対象外にする力業をやっていました。
-しかし、実は ui.noSemanticString 使うことで回避できるらしい。そしてよくみると Features に しっかり書いて あった。
-2022年の8月ごろ に実装された設定らしく、拡張側のドキュメントに記載されたのが 2023年2月 ごろなので、気付くのに一年以上かかってしまった。]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
