@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-08-05T07:01:55.700Z</updated>
+    <updated>2024-08-05T08:02:11.797Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[SmartNewsへの配信可否の設定を追加しました]]></title>
+        <id>hatenablog://entry/6801883189120545799</id>
+        <link href="https://staff.hatenablog.com/entry/2024/08/05/162325"/>
+        <updated>2024-08-05T07:23:25.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、はてなブログに公開された記事の情報をSmartNewsに自動で送信しております。そのため、はてなブログの記事はSmartNewsに掲載され、多くの人に読まれる機会があります。
+これまでは、SmartNewsにはてなブログの記事が掲載される際には、ブラウザで閲覧したときと同じ体裁での表示（以降、WebView）も可能でしたが、SmartNewsの仕様変更により、SmartView（スマートビュー）と呼ばれる記事閲覧に最適化されたシンプルな画面の表示のみの対応となります。
+このため、ブログ内にご自身で広告を設置しているユーザー様にとっては、SmartNewsにおけるWebViewでの記事閲覧に伴う収益の機会がなくなります。それを望まない場合もあると考え、今回SmartNewsへの配信可否を設定する機能を追加しました。「詳細設定 > 配信設定 > SmartNewsで配信」より配信を停止することが可能です。なお、初期値は配信を許可する設定となっています。
+また、この変更に合わせて、SmartViewで記事が閲覧された際に、はてなブログに登録しているGoogleアナリティクス4にページビューを計測する機能、及びはてなブログのアクセス解析に記録する機能も調整中です。
+どうぞご利用ください。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【復旧済み】はてなフォトライフで画像のアップロードに失敗することがある不具合が発生していました]]></title>
         <id>hatenablog://entry/6801883189127291400</id>
