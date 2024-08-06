@@ -2,10 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-08-06T19:01:39.396Z</updated>
+    <updated>2024-08-06T20:01:44.444Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Goで解放したメモリが少しずつ戻ってくる現象]]></title>
+        <id>hatenablog://entry/6801883189127600468</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2024/08/07/043344"/>
+        <updated>2024-08-06T19:33:44.000Z</updated>
+        <summary type="html"><![CDATA[情報を発信する人のところに情報が集まることを日々実感しているので、Linuxのメモリ管理に特に詳しいわけではないのですが最近遭遇した問題について自分の理解を書いておきます。ざっと調べても同じことを書いている人を見つけられなかったので、公開には意義があると考えています。識者の方がフィードバックをくださると嬉しいです。
+※ AIの出力をベースに書いているのでいつもと少し文体が違います。
+背景
+要約
+調査
+再現の難しさ
+Goアプリケーションの調査
+pprofによる分析
+GCログの調査
+Linuxの調査
+Goランタイムの調査
+GoのGCとTHP
+khugepagedの問題
+Goランタイムにおける回避策
+回避策の削除
+max_ptes_noneのデフォルト値について
+MADV_NOHUGEPAGEをやめた理由
+調査内容まとめ
+解決策
+検証
+C言語
+Go言語
+まとめ
+背景
+Go言語で書かれたOSSのアプリケーションサーバをLinuxコンテナ on Kubernetesで運用していました。このサーバは主に夜間バッチでHTTPリクエストを処理するようになっています。夜間バッチ以外ではほぼ処理を行いません。通常、バッチ処理が終わってしばらくするとメモリ使用量は減少します。ですが利用しているOSSのバージョンを上げたあと、メモリ使用量がじわじわと増えていく現象が起きました。もう少し具体的には、バッチ処理後はメモリ使用量が減少しますが、しばらくすると突然増加し始め、そのまま放置するとどんどん増えていきます。
+しばらくするとメモリ使用量が増えていく図
+上のグラフでは、23:13頃にバッチ処理を終えたあと数分するとメモリ使用量（container_memory_usage_bytes、container_memory_rss）が減って、30分後ぐらいに急に増えています。バッチ処理のあとは何もHTTP…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記 8/6]]></title>
         <id>https://note.com/nasupman_nikki/n/n5f0edb4274f9</id>

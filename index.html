@@ -78,6 +78,52 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://knqyf263.hatenablog.com/" target="_blank"
+              rel="noopener">knqyf263&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Goで解放したメモリが少しずつ戻ってくる現象</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://knqyf263.hatenablog.com/entry/2024/08/07/043344" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>情報を発信する人のところに情報が集まることを日々実感しているので、Linuxのメモリ管理に特に詳しいわけではないのですが最近遭遇した問題について自分の理解を書いておきます。ざっと調べても同じことを書いている人を見つけられなかったので、公開には意義があると考えています。識者の方がフィードバックをくださると嬉しいです。
+※ AIの出力をベースに書いているのでいつもと少し文体が違います。
+背景
+要約
+調査
+再現の難しさ
+Goアプリケーションの調査
+pprofによる分析
+GCログの調査
+Linuxの調査
+Goランタイムの調査
+GoのGCとTHP
+khugepagedの問題
+Goランタイムにおける回避策
+回避策の削除
+max_ptes_noneのデフォルト値について
+MADV_NOHUGEPAGEをやめた理由
+調査内容まとめ
+解決策
+検証
+C言語
+Go言語
+まとめ
+背景
+Go言語で書かれたOSSのアプリケーションサーバをLinuxコンテナ on Kubernetesで運用していました。このサーバは主に夜間バッチでHTTPリクエストを処理するようになっています。夜間バッチ以外ではほぼ処理を行いません。通常、バッチ処理が終わってしばらくするとメモリ使用量は減少します。ですが利用しているOSSのバージョンを上げたあと、メモリ使用量がじわじわと増えていく現象が起きました。もう少し具体的には、バッチ処理後はメモリ使用量が減少しますが、しばらくすると突然増加し始め、そのまま放置するとどんどん増えていきます。
+しばらくするとメモリ使用量が増えていく図
+上のグラフでは、23:13頃にバッチ処理を終えたあと数分するとメモリ使用量（container_memory_usage_bytes、container_memory_rss）が減って、30分後ぐらいに急に増えています。バッチ処理のあとは何もHTTP…</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/knqyf263/20240806/20240806184539.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/nasupman_nikki" target="_blank"
               rel="noopener">ヤマト単品</a></h3>
           <section class="articles-per-source">
@@ -18767,7 +18813,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-08-06T19:01:39.356Z">2024-08-06T19:01:39.356Z</time>
+    <time id="build-timestamp" datetime="2024-08-06T20:01:44.405Z">2024-08-06T20:01:44.405Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
