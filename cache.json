@@ -7095,16 +7095,6 @@
           "wordCount": null,
           "title": "Web Developer Conference 2024 開催告知 #wdc2024",
           "imageUrl": null
-        },
-        {
-          "id": "https://blog.jxck.io/entries/2024-05-10/reverse-http-transport.html",
-          "author": null,
-          "description": "IETF の httpbis で、 Reverse HTTP Transport という仕様が提案されている。Reverse HTTP Transporthttps://www.ietf.org/archive/id/draft-bt-httpbis-reverse-http-01.htmlこの仕様は、 Origin サーバの前に何かしら Intermediaries (Loadbalancer, Reverse Proxy, CDN etc)があるのが一般的な現代の Web サービス構成において、非常に革新的なアイデアを取り入れたプロトコルと言える。まだ v01 という初期段階ではあるが、発想が非常に面白かったので、読書メモを残す。",
-          "link": "https://blog.jxck.io/entries/2024-05-10/reverse-http-transport.html",
-          "publishedOn": "2024-05-10T00:00:00.000Z",
-          "wordCount": 682,
-          "title": "Reverse HTTP Transport が描く新しい Web サービスデプロイ構成",
-          "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
         }
       ]
     },
