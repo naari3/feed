@@ -3265,6 +3265,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189129245472",
+          "author": null,
+          "description": "はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。\n細かな機能修正・改善\n1.デザイン設定の「モジュールを追加」のスタイル調整を行いました\n最新記事モジュール等にあった高度な設定の折りたたみをやめて常に表示させるようにしました。また、「適用」ボタンのラベルを「適用する」に変更し、右寄せにしました。その他、余白の調整などを行いました。\nモジュールを編集する\n\n\n    \n2. 記事のサマリをダウンロードできるデータに最終更新日を追加しました（ブログMedia限定機能）\n記事のサマリのダウンロード機能でダウンロードできるデータに最終更新日を追加しました。（ブログMedia限定機能）\n記事のサマリのダウンロード機能については下記にてご確認ください。\nhatenablogmedia.zendesk.com\n2024年7月のお知らせ（再掲）\n【法人向け機能】オウンドメディアの記事作成をサポートする「AIコンテンツアシスト」をリリースしました - はてなブログ開発ブログ",
+          "link": "https://staff.hatenablog.com/entry/2024/08/13/153924",
+          "publishedOn": "2024-08-13T06:39:24.000Z",
+          "wordCount": null,
+          "title": "はてなブログの2024年7月の新機能・機能改善をお知らせします",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240813/20240813144759.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240813/20240813144759.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189128083166",
           "author": null,
           "description": "2024/8/8 10:22 ～2024/8/8 18:30 まで、iOS アプリおよび Android アプリからアップロードした画像が記事上に表示されない不具合が発生していました。再現確認ができたのは見たまま編集モードのみです。\n不具合発生期間中にアップロードした画像については、表示されないままとなっているため、ユーザー様による修正対応が必要となります。\nご不明点などおありの際には、下記窓口よりお問い合わせください。\nhttps://hatena.zendesk.com/hc/ja/requests/new\nこの度はご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
@@ -7204,6 +7219,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=27254",
+          "author": "doumae",
+          "description": "先日も大きな地震が立て続けにあり、スマホ向けの「緊急地震速報」の警報が作動しました。私たちにとって身近な警報ですが、その仕組み上、ちょっと不思議な動作をする場合もあります。その理由についてざっくりとご...",
+          "link": "https://eng-blog.iij.ad.jp/archives/27254",
+          "publishedOn": "2024-08-13T06:17:42.000Z",
+          "wordCount": null,
+          "title": "スマホの「緊急地震速報」が鳴ったり鳴らなかったりするわけ",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=27067",
           "author": "doumae",
