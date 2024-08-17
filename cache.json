@@ -1058,6 +1058,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189130029363",
+          "author": null,
+          "description": "zenn.dev\nFlay を触る機会があったのだけど、結果を見るのがだるかったので結果をHTMLにいい感じに変換するくんを書いた。",
+          "link": "https://commits.hatenablog.com/entry/2024/08/17/100000",
+          "publishedOn": "2024-08-17T01:00:00.000Z",
+          "wordCount": 456,
+          "title": "2024-08-16",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189129596647",
           "author": null,
           "description": "github.com\nactiverecord-originator に、Rails 7.2 で動かないという Issue が来ていたので直した。\ngithub.com\nついでに Active Record の各バージョンでテストができるように CI を整えた。なんか色々引っかかってごちゃごちゃしてしまった。\nrbs collectionはGemfile.lockを記憶するので、複数のGemfileを使い分けるようなケースでうまく動かない\n\n\n型チェックをテストと分離して最新の Ruby でのみ行うようにした\nActive Record 6.0 ではそもそもテストがコケる\n\n\n一応なんとなく動くからサポート対象にしていたのを忘れてた。テスト対象から外した。\n古い Rails のバージョンで、Ruby head で CI が通らない\n\n\nstdlib の bundled gem 化起因\n適当に matrix から exclude した。",
