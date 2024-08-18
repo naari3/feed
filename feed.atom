@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-08-18T12:03:03.532Z</updated>
+    <updated>2024-08-18T13:03:31.350Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[tigでfixupを簡単にする]]></title>
+        <id>hatenablog://entry/6801883189130588593</id>
+        <link href="https://blog.nishimu.land/entry/2024/08/18/213902?utm_source=feed"/>
+        <updated>2024-08-18T12:39:02.000Z</updated>
+        <summary type="html"><![CDATA[1つ以上前のコミットを修正したいときに  --fixup を使うのは近年ではよく知られている。
+$ git commit --fixup <commit>
+$ git -i --autosquash <commit>~ # rebase.autosquash = true にしておけばオプションは不要
+
+
+
+しかし、この方法だと毎回 $EDITOR が開いてしまいちょっと面倒である。
+これを回避する方法は GIT_SEQUENCE_EDITOR 環境変数を使う方法で GIT_SEQUENCE_EDITOR=true などとしておくと、エディタを開かずに rebase が完了する。
+また git 2.44 以降は --interactive じゃなくても --autosquash が可能になったためさらに簡単になった (GitHubのブログが詳しい)
+これを使うと以下のような alias を定義することができる。
+fixup = "!f() { git commit --fixup \"$1\"; git rebase --autosquash --autostash \"$1\"~; }; f"
+
+
+
+--autostash は自動で stash してくれるオプションで、他の変更があるときに先に fixup したいときにべんり。
+残念ながら rebase.autosquash は interactive mode にしか有効でないので、オプションの指定は必須。
+ここまでくると目的のファイルを stage に index しておいて、git fixup <commit> とするだけでコミットの修正が完了するようになる。
+しかし、この commit hash をコピペするのも面倒になってきたので、今回 tig の設定に以下のような bind を追加した。
+bind main F @git fixup %(commit)
+bind log F @git fixup %(commit)
+bind diff F @git fixup %(commit)
+これで tig の main view などで目的のコミットにカーソルを合わせて F って押すだけになってめちゃくちゃ楽になった。]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[UnlockSwitchチーム GitHubのリポジトリでソフトウェア公開]]></title>
         <id>https://gamegaz.com/?p=41737</id>
@@ -11622,36 +11653,6 @@ GameGaz Daily 2024.5.21 first appeared on 大人のためのゲーム講座.]]><
 iOS向けエミュレータDelta Adobeに脅されアイコンロゴ変更 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Karte.145 僕はフラれた男]]></title>
-        <id>245462</id>
-        <link href="https://championcross.jp/episodes/db71827ccfd00/?utm_source=rss&amp;utm_medium=referral"/>
-        <updated>2024-05-21T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[僕の心のヤバイやつ【最新話無料】・Karte.145 僕はフラれた男 TVアニメPrime Videoにて見放題独占配信中！ 累計500万部突破！ SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!! 宝島社「このマンガがすごい! 」オトコ編、2年連続ランクイン!! 2020年第3位、2021年第9位!! 次にくるマンガ大賞2020 Webマンガ部門 第1位!! Anime Japan2021 第4回アニメ化してほしいマンガランキング第1位!! 第5回みんなが選ぶTSUTAYAコミック大賞第1位!!「王様のブランチ」など各メディアでも大絶賛!! 陽キャが憎くてたまらない…。只今、中二病真っ最中の市川京太郎は、学園カースト頂点の美少女・山田杏奈の殺害を企む！ だが、山田の意外な一面を知ってしまい…！？ 陽キャ美少女と陰キャ男子。縮まるハズのない２人の距離に奇跡は起きるか！？ 陰キャ・京太郎の青春が今、かなり静かに動き出す…！！ 【 番外編「ツイヤバ」はこちら 】]]></summary>
-        <author>
-            <name>チャンピオンクロス</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Karte.145 僕はフラれた男]]></title>
-        <id>232615</id>
-        <link href="https://championcross.jp/episodes/5132b89a03a1c/?utm_source=rss&amp;utm_medium=referral"/>
-        <updated>2024-05-21T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[僕の心のヤバイやつ【最新話無料】・Karte.145 僕はフラれた男 TVアニメPrime Videoにて見放題独占配信中！ 累計500万部突破！ SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!! 宝島社「このマンガがすごい! 」オトコ編、2年連続ランクイン!! 2020年第3位、2021年第9位!! 次にくるマンガ大賞2020 Webマンガ部門 第1位!! Anime Japan2021 第4回アニメ化してほしいマンガランキング第1位!! 第5回みんなが選ぶTSUTAYAコミック大賞第1位!!「王様のブランチ」など各メディアでも大絶賛!! 陽キャが憎くてたまらない…。只今、中二病真っ最中の市川京太郎は、学園カースト頂点の美少女・山田杏奈の殺害を企む！ だが、山田の意外な一面を知ってしまい…！？ 陽キャ美少女と陰キャ男子。縮まるハズのない２人の距離に奇跡は起きるか！？ 陰キャ・京太郎の青春が今、かなり静かに動き出す…！！ 【 番外編「ツイヤバ」はこちら 】]]></summary>
-        <author>
-            <name>チャンピオンクロス</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[私の仕事紹介：クラウド基盤のSRE（Site Reliability Engineering）]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=25325</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/25325"/>
-        <updated>2024-05-21T00:32:52.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは。クラウドサービス1部基盤サービスデザイン課の田中です。 現在私達のチームは、いわゆるインフラチームとして「IIJ GIOインフラストラクチャーP2 Gen.2」のクラウド基盤の設計、構築お...]]></summary>
-        <author>
-            <name>m-t-a-n-a-k-a</name>
         </author>
     </entry>
     <entry>

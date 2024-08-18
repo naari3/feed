@@ -779,6 +779,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6801883189130588593",
+          "author": null,
+          "description": "1つ以上前のコミットを修正したいときに  --fixup を使うのは近年ではよく知られている。\n$ git commit --fixup <commit>\n$ git -i --autosquash <commit>~ # rebase.autosquash = true にしておけばオプションは不要\n\n\n\nしかし、この方法だと毎回 $EDITOR が開いてしまいちょっと面倒である。\nこれを回避する方法は GIT_SEQUENCE_EDITOR 環境変数を使う方法で GIT_SEQUENCE_EDITOR=true などとしておくと、エディタを開かずに rebase が完了する。\nまた git 2.44 以降は --interactive じゃなくても --autosquash が可能になったためさらに簡単になった (GitHubのブログが詳しい)\nこれを使うと以下のような alias を定義することができる。\nfixup = \"!f() { git commit --fixup \\\"$1\\\"; git rebase --autosquash --autostash \\\"$1\\\"~; }; f\"\n\n\n\n--autostash は自動で stash してくれるオプションで、他の変更があるときに先に fixup したいときにべんり。\n残念ながら rebase.autosquash は interactive mode にしか有効でないので、オプションの指定は必須。\nここまでくると目的のファイルを stage に index しておいて、git fixup <commit> とするだけでコミットの修正が完了するようになる。\nしかし、この commit hash をコピペするのも面倒になってきたので、今回 tig の設定に以下のような bind を追加した。\nbind main F @git fixup %(commit)\nbind log F @git fixup %(commit)\nbind diff F @git fixup %(commit)\nこれで tig の main view などで目的のコミットにカーソルを合わせて F って押すだけになってめちゃくちゃ楽になった。",
+          "link": "https://blog.nishimu.land/entry/2024/08/18/213902?utm_source=feed",
+          "publishedOn": "2024-08-18T12:39:02.000Z",
+          "wordCount": 334,
+          "title": "tigでfixupを簡単にする",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189128788385",
           "author": null,
           "description": "めっちゃしょうもない話だけれど、新しく追加した補完関数がどうしても適用されなくて困っていた。\nfpathが通ってないのかと思ったけどそんなこともない。\n$ echo $fpath | tr ' ' '\\n' | grep '目的のファイル'\n\n\n\nうーんと唸ってChatGPT先生に聞いてみたらキャシュじゃないかってことだった。\n$ rm ~/.config/zsh/.zcompdump\n\n\n\nこれでzshを起動しなおすと無事に適用された。",
@@ -7604,16 +7619,6 @@
           "wordCount": 2454,
           "title": "【AI】進化的マージモデルを手軽に作れる「mergekit」というツール",
           "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/05/d70b35a6aebdd0d1fb9d3ebe907d6c4e.png"
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=25325",
-          "author": "m-t-a-n-a-k-a",
-          "description": "こんにちは。クラウドサービス1部基盤サービスデザイン課の田中です。 現在私達のチームは、いわゆるインフラチームとして「IIJ GIOインフラストラクチャーP2 Gen.2」のクラウド基盤の設計、構築お...",
-          "link": "https://eng-blog.iij.ad.jp/archives/25325",
-          "publishedOn": "2024-05-21T00:32:52.000Z",
-          "wordCount": 1721,
-          "title": "私の仕事紹介：クラウド基盤のSRE（Site Reliability Engineering）",
-          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/05/af55c6ca2da86dd1837dff6bc0a95c18.png"
         }
       ]
     },
@@ -9500,26 +9505,6 @@
           "wordCount": 555,
           "title": "Karte.146 僕は祭りどころじゃない",
           "imageUrl": "https://cdn-public.comici.jp/articlevisual/2/default/202405291103150198A588D255BECA3EE2277FA84A09C9448-sm.png"
-        },
-        {
-          "id": "245462",
-          "author": "チャンピオンクロス",
-          "description": "僕の心のヤバイやつ【最新話無料】・Karte.145 僕はフラれた男 TVアニメPrime Videoにて見放題独占配信中！ 累計500万部突破！ SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!! 宝島社「このマンガがすごい! 」オトコ編、2年連続ランクイン!! 2020年第3位、2021年第9位!! 次にくるマンガ大賞2020 Webマンガ部門 第1位!! Anime Japan2021 第4回アニメ化してほしいマンガランキング第1位!! 第5回みんなが選ぶTSUTAYAコミック大賞第1位!!「王様のブランチ」など各メディアでも大絶賛!! 陽キャが憎くてたまらない…。只今、中二病真っ最中の市川京太郎は、学園カースト頂点の美少女・山田杏奈の殺害を企む！ だが、山田の意外な一面を知ってしまい…！？ 陽キャ美少女と陰キャ男子。縮まるハズのない２人の距離に奇跡は起きるか！？ 陰キャ・京太郎の青春が今、かなり静かに動き出す…！！ 【 番外編「ツイヤバ」はこちら 】",
-          "link": "https://championcross.jp/episodes/db71827ccfd00/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2024-05-21T01:00:00.000Z",
-          "wordCount": 531,
-          "title": "Karte.145 僕はフラれた男",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/2/default/20240514122907854464885AE803DE1C51884B6110E3828A1-sm.png"
-        },
-        {
-          "id": "232615",
-          "author": "チャンピオンクロス",
-          "description": "僕の心のヤバイやつ【最新話無料】・Karte.145 僕はフラれた男 TVアニメPrime Videoにて見放題独占配信中！ 累計500万部突破！ SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!! 宝島社「このマンガがすごい! 」オトコ編、2年連続ランクイン!! 2020年第3位、2021年第9位!! 次にくるマンガ大賞2020 Webマンガ部門 第1位!! Anime Japan2021 第4回アニメ化してほしいマンガランキング第1位!! 第5回みんなが選ぶTSUTAYAコミック大賞第1位!!「王様のブランチ」など各メディアでも大絶賛!! 陽キャが憎くてたまらない…。只今、中二病真っ最中の市川京太郎は、学園カースト頂点の美少女・山田杏奈の殺害を企む！ だが、山田の意外な一面を知ってしまい…！？ 陽キャ美少女と陰キャ男子。縮まるハズのない２人の距離に奇跡は起きるか！？ 陰キャ・京太郎の青春が今、かなり静かに動き出す…！！ 【 番外編「ツイヤバ」はこちら 】",
-          "link": "https://championcross.jp/episodes/5132b89a03a1c/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2024-05-21T01:00:00.000Z",
-          "wordCount": 552,
-          "title": "Karte.145 僕はフラれた男",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/2/default/20240514122907854464885AE803DE1C51884B6110E3828A1-sm.png"
         }
       ]
     },
