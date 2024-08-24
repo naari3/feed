@@ -78,6 +78,44 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Node.jsで型安全な環境変数を扱うスニペット</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2024/08/24/type-safe-env/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Node.js で型安全な環境変数を扱うスニペットを作りました。
+next devのようなアプリケーションの起動、Playwright でのテストなどコマンドごとに渡したい環境変数のセットが異なるケースがあります。
+この場合に環境変数をまとめたものを定義して、それをコマンドごとに読み込むセットを変えたいことがあります。
+次のようにベタ書きしてもいいのですが、渡したい環境変数が増えると管理が大変になります。
+
+NEXT_PUBLIC_LOCALHOST_URL&#x3D;http://localhost:3000 NEXT_PUBLIC_API_URL&#x3D;http://localhost:3001 NEXT_PUBLIC_IS_TEST_MODE&#x3D;false FOO&#x3D;&quot;bar&quot; next dev
+
+
+そのため、.envのような環境変数をまとめたファイルを使いたくなります。
+Node.js は--env-fileフラグで.envファイルを読み込むことができますが、.envファイルは型安全ではありません。
+--env-file
+Node.js — How to read environment variables from Node.js
+環境変数名の Typoや必須の環境変数が設定されていないなどの問題が発生する可能性があります。
+そのため環境変数をの定義自体も TypeScript で型安全に定義したいです。
+これをやるための 50 行ほどのスニペットを書いたので、使い方を紹介します。
+サンプルリポジトリ
+次の場所にサンプルリポジトリがあります。
+azu/type-safe-env: Type Safe /Environment Variables snippet for Node.js
+使い方
+大きく分けて、環境変数の型を定義するdefineEnv関数と、環境変数をセットするsetEn…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -19187,7 +19225,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-08-24T05:02:09.169Z">2024-08-24T05:02:09.169Z</time>
+    <time id="build-timestamp" datetime="2024-08-24T06:02:09.715Z">2024-08-24T06:02:09.715Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
