@@ -2,10 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-03T00:03:39.851Z</updated>
+    <updated>2024-09-03T01:28:29.455Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2024-09-02]]></title>
+        <id>hatenablog://entry/6802340630903346669</id>
+        <link href="https://commits.hatenablog.com/entry/2024/09/03/100000"/>
+        <updated>2024-09-03T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[moneyforward-dev.jp
+会社のブログに記事を書いた。
+Twitter(現X)にも書いたけれど、最初はファイルアクセスを監視する手段をどうするか結構悩んでいた。パッと思いついたのはstraceだけど、あんまり慣れてないし、Docker上で使うにはDockerの設定が必要で、CIでそれが設定できるか怪しくてうーんとなっていた。
+しばらく悩んだ後にinotifyのことを思い出し、読み込みに対するフックって提供されているのかなと調べてみたら提供されていたので、これを使った。べ
+結果としてかなりシンプルなコードを使って多くの不要なファイルを消せたので良かった。こういう「ちょっとしたコード」がしっかり役に立つのは好き
+bugs.ruby-lang.org
+最近の仕事で困っているネタをbugsに投げた。この内容は詳しくは会社のブログに記事を書くつもり(今週出せるといいな)
+ruby-jpのSlackで、「stub_constに渡す定数名が定数として存在していることを保証したい」という話があった。
+例:
+# Foo 定数がない時には例外を投げてほしい
+stub_const('Foo, 2)
+
+
+
+これをなんかかっこいいsyntaxで書けないかなと思って、const_missingを使う方法を考えていた。
+class ConstExistanceHelper
+  class << self
+    attr_reader :const_name
+
+    def const_missing(name)
+      Class.new(self).assign_name(name)
+    end
+
+    def validate!
+      Object.const_get(const_name)
+      const_name
+    end
+
+    def const_name
+      superclass == Object ? '' : [superclass.const_name, @const_name].join('::')
+    end
+
+    def assign_name(name)
+      @const_name = [name]
+      self
+    end
+  end
+end
+
+class Foo
+  class Bar
+  end
+end
+
+x = ConstExistanceHelper
+p x::Foo::Bar.validate! # => "::Foo::Bar"
+p x::Foo::Baz.validate! # => NameError
+
+
+
+validate!ってわざわざ呼ばなきゃいけないのがダサいなと思っている。stub_constが内部でString === const_nameしてStringかどうかを検査しているのが邪魔で、最後にオブジェクトをStringに変換しないといけないという制約がある。これがなければto_strとかでごまかせたかもしれない。
+最初はvalidate!ではなくto_sというメソッド名で考えていて、あまりにダサいなと思っていたのだけれど、メソッド名をvalidate!にすることでダサさが軽減された気がする。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Karte.152 僕は監督になった]]></title>
+        <id>248740</id>
+        <link href="https://championcross.jp/episodes/3e3367caa05ec/?utm_source=rss&amp;utm_medium=referral"/>
+        <updated>2024-09-03T01:00:00.000Z</updated>
+        <author>
+            <name>チャンピオンクロス</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.9.3]]></title>
         <id>https://gamegaz.com/?p=41845</id>
@@ -11891,18 +11961,6 @@ GameGaz Daily 2024.6.6 first appeared on 大人のためのゲーム講座.]]></
 続きをみる]]></summary>
         <author>
             <name>うごくメモ帳</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[納得への旅1 (モンティ・ホール問題)]]></title>
-        <id>https://note.com/hercelot/n/nba81b0d3a7d9</id>
-        <link href="https://note.com/hercelot/n/nba81b0d3a7d9"/>
-        <updated>2024-06-05T13:17:10.000Z</updated>
-        <summary type="html"><![CDATA[自分が今まで何度も説明を読んだのに理解できてないことを、これから1時間以内に納得してきます。
-第1回はモンティ・ホール問題です。
-続きをみる]]></summary>
-        <author>
-            <name>Hercelot</name>
         </author>
     </entry>
     <entry>

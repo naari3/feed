@@ -74,6 +74,73 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-09-03">2024-09-03</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2024-09-02</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/09/03/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>moneyforward-dev.jp
+会社のブログに記事を書いた。
+Twitter(現X)にも書いたけれど、最初はファイルアクセスを監視する手段をどうするか結構悩んでいた。パッと思いついたのはstraceだけど、あんまり慣れてないし、Docker上で使うにはDockerの設定が必要で、CIでそれが設定できるか怪しくてうーんとなっていた。
+しばらく悩んだ後にinotifyのことを思い出し、読み込みに対するフックって提供されているのかなと調べてみたら提供されていたので、これを使った。べ
+結果としてかなりシンプルなコードを使って多くの不要なファイルを消せたので良かった。こういう「ちょっとしたコード」がしっかり役に立つのは好き
+bugs.ruby-lang.org
+最近の仕事で困っているネタをbugsに投げた。この内容は詳しくは会社のブログに記事を書くつもり(今週出せるといいな)
+ruby-jpのSlackで、「stub_constに渡す定数名が定数として存在していることを保証したい」という話があった。
+例:
+# Foo 定数がない時には例外を投げてほしい
+stub_const(&#x27;Foo, 2)
+
+
+
+これをなんかかっこいいsyntaxで書けないかなと思って、const_missingを使う方法を考えていた。
+class ConstExistanceHelper
+  class  &quot;::Foo::Bar&quot;
+p x::Foo::Baz.validate! # &#x3D;&gt; NameError
+
+
+
+validate!ってわざわざ呼ばなきゃいけないのがダサいなと思っている。stub_constが内部でString &#x3D;&#x3D;&#x3D; const_nameしてStringかどうかを検査しているのが邪魔で、最後にオブジェクトをStringに変換しないといけないという制約がある。これがなければto_strとかでごまかせたかもしれない。
+最初はvalidate!ではなくto_sというメソッド名で考えていて、あまりにダサいなと思っていたのだけれど、メソッド名をvalidate!にすることでダサさが軽減された気がする。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://championcross.jp/series/899dda204c3f2" target="_blank"
+              rel="noopener">僕の心のヤバイやつ【最新話無料】</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Karte.152 僕は監督になった</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://championcross.jp/episodes/3e3367caa05ec/?utm_source&#x3D;rss&amp;utm_medium&#x3D;referral" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>No content preview</span>
+                  </div>
+                  <img src="https://cdn-public.comici.jp/articlevisual/21480/default/20240827171939712EEE5D2ED452DC625A8A32FDD269708E2-sm.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-09-02">2024-09-02</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -17055,28 +17122,6 @@ GameGaz Daily 2024.6.6 first appeared on 大人のためのゲーム講座.</spa
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/hercelot" target="_blank"
-              rel="noopener">Hercelot</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">納得への旅1 (モンティ・ホール問題)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/hercelot/n/nba81b0d3a7d9" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>自分が今まで何度も説明を読んだのに理解できてないことを、これから1時間以内に納得してきます。
-第1回はモンティ・ホール問題です。
-続きをみる</span>
-                  </div>
-                  <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/b42226eae517a139d8c95dc35f2aaa0678d802ef.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19007,7 +19052,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-09-03T00:03:39.809Z">2024-09-03T00:03:39.809Z</time>
+    <time id="build-timestamp" datetime="2024-09-03T01:28:29.406Z">2024-09-03T01:28:29.406Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

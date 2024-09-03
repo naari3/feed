@@ -1320,6 +1320,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630903346669",
+          "author": null,
+          "description": "moneyforward-dev.jp\n会社のブログに記事を書いた。\nTwitter(現X)にも書いたけれど、最初はファイルアクセスを監視する手段をどうするか結構悩んでいた。パッと思いついたのはstraceだけど、あんまり慣れてないし、Docker上で使うにはDockerの設定が必要で、CIでそれが設定できるか怪しくてうーんとなっていた。\nしばらく悩んだ後にinotifyのことを思い出し、読み込みに対するフックって提供されているのかなと調べてみたら提供されていたので、これを使った。べ\n結果としてかなりシンプルなコードを使って多くの不要なファイルを消せたので良かった。こういう「ちょっとしたコード」がしっかり役に立つのは好き\nbugs.ruby-lang.org\n最近の仕事で困っているネタをbugsに投げた。この内容は詳しくは会社のブログに記事を書くつもり(今週出せるといいな)\nruby-jpのSlackで、「stub_constに渡す定数名が定数として存在していることを保証したい」という話があった。\n例:\n# Foo 定数がない時には例外を投げてほしい\nstub_const('Foo, 2)\n\n\n\nこれをなんかかっこいいsyntaxで書けないかなと思って、const_missingを使う方法を考えていた。\nclass ConstExistanceHelper\n  class << self\n    attr_reader :const_name\n\n    def const_missing(name)\n      Class.new(self).assign_name(name)\n    end\n\n    def validate!\n      Object.const_get(const_name)\n      const_name\n    end\n\n    def const_name\n      superclass == Object ? '' : [superclass.const_name, @const_name].join('::')\n    end\n\n    def assign_name(name)\n      @const_name = [name]\n      self\n    end\n  end\nend\n\nclass Foo\n  class Bar\n  end\nend\n\nx = ConstExistanceHelper\np x::Foo::Bar.validate! # => \"::Foo::Bar\"\np x::Foo::Baz.validate! # => NameError\n\n\n\nvalidate!ってわざわざ呼ばなきゃいけないのがダサいなと思っている。stub_constが内部でString === const_nameしてStringかどうかを検査しているのが邪魔で、最後にオブジェクトをStringに変換しないといけないという制約がある。これがなければto_strとかでごまかせたかもしれない。\n最初はvalidate!ではなくto_sというメソッド名で考えていて、あまりにダサいなと思っていたのだけれど、メソッド名をvalidate!にすることでダサさが軽減された気がする。",
+          "link": "https://commits.hatenablog.com/entry/2024/09/03/100000",
+          "publishedOn": "2024-09-03T01:00:00.000Z",
+          "wordCount": 540,
+          "title": "2024-09-02",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630900776867",
           "author": null,
           "description": "渡辺橋駅に向かうとき、案内に従って行ったらそのへんのビルの裏玄関向け通路や人気のない非常階段のような道を案内された。まるでpanpanya作品の中にいるような気持ちになったけれど、階段を出るとすぐ地下街という日常に出てしまった。",
@@ -5973,16 +5988,6 @@
           "wordCount": null,
           "title": "日記240616 (サイドチェインコンプ)",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/hercelot/n/nba81b0d3a7d9",
-          "author": null,
-          "description": "自分が今まで何度も説明を読んだのに理解できてないことを、これから1時間以内に納得してきます。\n第1回はモンティ・ホール問題です。\n続きをみる",
-          "link": "https://note.com/hercelot/n/nba81b0d3a7d9",
-          "publishedOn": "2024-06-05T13:17:10.000Z",
-          "wordCount": 2662,
-          "title": "納得への旅1 (モンティ・ホール問題)",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/b42226eae517a139d8c95dc35f2aaa0678d802ef.png"
         }
       ]
     },
@@ -9629,6 +9634,16 @@
       "feedUrl": "https://championcross.jp/series/899dda204c3f2/rss",
       "siteUrl": "https://championcross.jp/series/899dda204c3f2",
       "articles": [
+        {
+          "id": "248740",
+          "author": "チャンピオンクロス",
+          "description": "",
+          "link": "https://championcross.jp/episodes/3e3367caa05ec/?utm_source=rss&utm_medium=referral",
+          "publishedOn": "2024-09-03T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Karte.152 僕は監督になった",
+          "imageUrl": "https://cdn-public.comici.jp/articlevisual/21480/default/20240827171939712EEE5D2ED452DC625A8A32FDD269708E2-sm.png"
+        },
         {
           "id": "247508",
           "author": "チャンピオンクロス",
