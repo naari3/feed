@@ -1335,6 +1335,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630903620182",
+          "author": null,
+          "description": "github.com\nRBSで重複した空Arrayを1つにまとめた。これでメモリ使用量が少し減るはず。",
+          "link": "https://commits.hatenablog.com/entry/2024/09/04/100000",
+          "publishedOn": "2024-09-04T01:00:00.000Z",
+          "wordCount": 459,
+          "title": "2024-09-03",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630903346669",
           "author": null,
           "description": "moneyforward-dev.jp\n会社のブログに記事を書いた。\nTwitter(現X)にも書いたけれど、最初はファイルアクセスを監視する手段をどうするか結構悩んでいた。パッと思いついたのはstraceだけど、あんまり慣れてないし、Docker上で使うにはDockerの設定が必要で、CIでそれが設定できるか怪しくてうーんとなっていた。\nしばらく悩んだ後にinotifyのことを思い出し、読み込みに対するフックって提供されているのかなと調べてみたら提供されていたので、これを使った。べ\n結果としてかなりシンプルなコードを使って多くの不要なファイルを消せたので良かった。こういう「ちょっとしたコード」がしっかり役に立つのは好き\nbugs.ruby-lang.org\n最近の仕事で困っているネタをbugsに投げた。この内容は詳しくは会社のブログに記事を書くつもり(今週出せるといいな)\nruby-jpのSlackで、「stub_constに渡す定数名が定数として存在していることを保証したい」という話があった。\n例:\n# Foo 定数がない時には例外を投げてほしい\nstub_const('Foo, 2)\n\n\n\nこれをなんかかっこいいsyntaxで書けないかなと思って、const_missingを使う方法を考えていた。\nclass ConstExistanceHelper\n  class << self\n    attr_reader :const_name\n\n    def const_missing(name)\n      Class.new(self).assign_name(name)\n    end\n\n    def validate!\n      Object.const_get(const_name)\n      const_name\n    end\n\n    def const_name\n      superclass == Object ? '' : [superclass.const_name, @const_name].join('::')\n    end\n\n    def assign_name(name)\n      @const_name = [name]\n      self\n    end\n  end\nend\n\nclass Foo\n  class Bar\n  end\nend\n\nx = ConstExistanceHelper\np x::Foo::Bar.validate! # => \"::Foo::Bar\"\np x::Foo::Baz.validate! # => NameError\n\n\n\nvalidate!ってわざわざ呼ばなきゃいけないのがダサいなと思っている。stub_constが内部でString === const_nameしてStringかどうかを検査しているのが邪魔で、最後にオブジェクトをStringに変換しないといけないという制約がある。これがなければto_strとかでごまかせたかもしれない。\n最初はvalidate!ではなくto_sというメソッド名で考えていて、あまりにダサいなと思っていたのだけれど、メソッド名をvalidate!にすることでダサさが軽減された気がする。",
@@ -3584,21 +3599,6 @@
             "length": "0"
           },
           "imageUrl": null
-        },
-        {
-          "id": "hatenablog://entry/6801883189106951941",
-          "author": null,
-          "description": "『魔法少女七周忌♡うるかリユニオン』\n作業内容\n経緯\n参考文献\n勢力図作り直し\n反省会\nキャラについて\n麗華\n芽愛\n綺羅\n御息\n緑山\n黒壱\nメルリン\nプロットについて\n良かったこと\n改善の余地があること\nテーマについて\nその他トピックス\n『魔法少女七周忌♡うるかリユニオン』\n去年末くらいに書いた百合ラノベ 『魔法少女七周忌♡うるかリユニオン』のあとがき記事です。\nwww.alphapolis.co.jp\nロゴ：いちのせらいせ様　イラスト：NAIv3様\n    \n七年前の夏休み、語世麗華は魔法少女の小学生だった。\nしかしそれから七年経って、再び町に魔獣が現れる。\n七年経ってすっかり色々拗らせてしまったかつての関係者たち。\nセピア色に染まった魔法の夏がもう一度始まる。\nという「元魔法少女と元敵幹部が再会するガールミーツガール」です。\n今までもラノベを書くたびにその解説記事を書いていたのですが、うるユニは一般論として言いたいことがあんまりありません。せいぜい作業内容と反省会を書くくらいで、いつもより素人のあとがきっぽいな～～と思ったので記事タイトルも「解説」ではなく「あとがき」にしました。\n以下ネタバレが無限に含まれます。可能なら先に本編を読んでほしいですが、どうしても読む気が起きない場合は読まなくてもよいです。\n作業内容\n経緯\n『うるユニ』はもともとリアルで7年前くらいに書いたラノベ『マジカルガールズアフターアフター（マジタタ）』（未公開）をリメイクしたもの。\n補足535：読者会をやったときに「この感じの自分語りって（ファンはいいけどファンじゃない人から見たら）痛くない？」と言われたことを気にしている！\n\n\n参考文献\n再設計に際して、以前このブログで扱った『物語のひねり方』というハウツー本を大いに参考にした。\nsaize-lw.hatenablog.com詳細は上記の記事で書い…",
-          "link": "https://saize-lw.hatenablog.com/entry/2024/06/06/213707",
-          "publishedOn": "2024-06-06T12:37:07.000Z",
-          "wordCount": 788,
-          "title": "24/6/6 『魔法少女七周忌♡うるかリユニオン（うるユニ）』あとがき",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/saize_lw/20240605/20240605230620.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/s/saize_lw/20240605/20240605230620.jpg"
         }
       ]
     },
