@@ -3974,21 +3974,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.user.blog.st-hatena.com/default_entry_og_image/62150696/1655711859647008"
-        },
-        {
-          "id": "hatenablog://entry/6801883189112491101",
-          "author": null,
-          "description": "細かな機能修正・改善\n1.WordPress 形式のファイルインポート時の仕様変更を行いました\nこれまではWordPress 形式のファイルをインポートすると、インポートを行った記事の編集モードは Markdownモードになりましたが、見たままモードになるよう仕様変更を行いました。2024年5月27日以前にインポート操作を行った記事はMarkdownモードのままとなります。\n2. 下書き保存ができないことがある不具合を修正しました\n下書き保存ができないことがある不具合が確認できたため、修正対応を行いました。お問い合わせにてお知らせいただきありがとうございました。\n2024年5月のお知らせ（再掲）\nはてなブログでは2024年7月1日以降にads.txtの配信を開始する予定です",
-          "link": "https://staff.hatenablog.com/entry/2024/06/07/185546",
-          "publishedOn": "2024-06-07T09:55:46.000Z",
-          "wordCount": 858,
-          "title": "はてなブログの2024年5月の新機能・機能改善をお知らせします",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240607/20240607173453.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20240607/20240607173453.png"
         }
       ]
     },
