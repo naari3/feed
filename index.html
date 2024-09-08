@@ -74,6 +74,137 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-09-08">2024-09-08</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2024-09-07</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/09/08/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>必要にかられて druby の実装を読んでいた。
+ブロックの処理がうまくいかないような気がしていて、試してみたら案の定うまく動かなかった。
+# server.rb
+require &quot;drb&quot;
+
+class Front
+  def f(&amp;b)
+    @b &#x3D; b
+  end
+
+  def g
+    @b.call
+  end
+end
+
+uri &#x3D; &quot;druby://localhost:55331&quot;
+
+DRb.start_service(uri, Front.new)
+DRb.thread.join
+
+
+
+
+
+# client.rb
+require &quot;drb&quot;
+DRb.start_service
+
+front &#x3D; DRbObject.new_with_uri(&quot;druby://localhost:55331&quot;)
+
+front.f do
+  p 42
+end
+
+GC.start
+GC.start
+GC.start
+
+front.g
+
+
+
+front.gを呼ぶときには、front.fに渡したブロックはGCに回収されてしまっている。
+これを回避するにはProcに対するDRbObjectが死ぬまでProcを GC に回収されないようにしなければいけないのだけれど、大変そう。というか、これをどうしているかを知りたくて druby のコードを読んでいたのだけど、対応していないので自分で方法を考えなければならない……。druby でやるなら、Procはクライアント側でHashにでも詰めておいて、サーバー側のProcに対するDRbObjectが回収されるときにfinalizerでクライアント側でも回収させるとかかな。だるそう
+とここまで書いて、Procじゃなくて普通のオブジェクトでも同じことが起こるのではと思って試したのだけど、こっちは動く。なんでだろう。
+# server.rb
+require &quot;drb&quot;
+
+class Front
+  def f(x)
+    @x &#x3D; x
+  end
+
+  def g
+    @x.hello
+  end
+end
+
+uri &#x3D; &quot;druby://localhost:55331&quot;
+
+DRb.start_service(uri, Front.new)
+DRb.thread.join
+
+
+
+
+
+# client.rb
+require &quot;drb&quot;
+DRb.start_service
+
+front &#x3D; DRbObject.new_with_uri(&quot;druby://localhost:55331&quot;)
+
+class C
+  include DRb::DRbUndumped
+  def hello
+    puts &#x27;hello&#x27;
+  end
+end
+
+front.f(C.new)
+
+GC.start
+GC.start
+GC.start
+
+front.g</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2024.9.8</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024090841883/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>PFU-PupFileUnpacker,GoldHEN Cheats Pack PKG v07.09.24 UPD #2,ARK-4 v1725718363,Ultrahand Overlay 1.7.4,sys-con 1.4.1,Nightly-wiiload_plugin-20240907-220738,Configurable USB Loader MOD r78.12,NINTV-DS v5.3,jc-bootrom-font,Vita3K Build: 3641,Xenia Canary_experimental→→→この記事の続きを読む
+GameGaz Daily 2024.9.8 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-09-07">2024-09-07</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18801,7 +18932,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-09-08T00:03:37.621Z">2024-09-08T00:03:37.621Z</time>
+    <time id="build-timestamp" datetime="2024-09-08T01:28:49.151Z">2024-09-08T01:28:49.151Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
