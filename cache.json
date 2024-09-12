@@ -1234,21 +1234,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189114322783",
-          "author": null,
-          "description": "どうやら一般的には人との関係はメンテナンスしないと壊れてしまうらしい。\n自分は友達や知り合いにたいしてこちらから連絡をほとんどしない。\n友達だと思っている人達は連絡を取らなくてもつながっていて、何かあったときだけ連絡すればすぐに元の関係に戻れると思っていたからだ。\n特にSNSのようなものが普及していつでも連絡が取れるようになってからは顕著で、SNSでつながってなかったとしてもなんらかで連絡取れるやろと思っている。\n物理的に会うなんて考えもしていない。\nしかし、どうやら幻想だったようで、友人達とはどんどん疎遠になってしまっている。\nまあたぶん連絡したらなんかなるとは思いつつ、昔よりもやり取り自体がかなり減ってしまっている。\n特に何かあった訳じゃないのだけれど別府市にやってきて、物理的に会う機会がほぼ無くなったことでふと不安に思ったのであった。",
-          "link": "https://blog.nishimu.land/entry/2024/06/14/211620?utm_source=feed",
-          "publishedOn": "2024-06-14T12:16:20.000Z",
-          "wordCount": 250,
-          "title": "Keep In Touch",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -1921,6 +1906,21 @@
       "feedUrl": "https://gfx.hatenablog.com/rss",
       "siteUrl": "https://gfx.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802340630905690013",
+          "author": null,
+          "description": "15年ぶりくらいにWindowsマシンを買いました。ゲーミングPC目的です。いまのところ、聖剣伝説Visions of Manaを快適にプレイできてます。\nGALLERIA XA7R-R46T\n\nWSL2のおかげで開発機としても普通に使えていい感じです。長らく仕事ではUbuntuの入ったmini PCにsshでログイン＆Visual Studio Code for Romoteで開発していて満足していましたが、WSL2のほうが流石にちゃんと統合されていて、よりVisual Studio Codeをシームレスに起動したり、Linux向けのGUIアプリまで起動できるのは結構うれしいです。",
+          "link": "https://gfx.hatenablog.com/entry/2024/09/12/095711",
+          "publishedOn": "2024-09-12T00:57:11.000Z",
+          "wordCount": 510,
+          "title": "WindowsマシンをゲーミングPCとして買った",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20240912/20240912095141.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20240912/20240912095141.jpg"
+        },
         {
           "id": "hatenablog://entry/6801883189120710691",
           "author": null,
@@ -7459,6 +7459,16 @@
       "feedUrl": "https://blog.ojisan.io/rss.xml",
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
+        {
+          "id": "https://blog.ojisan.io/pokeka-hajimeta",
+          "author": null,
+          "description": "モルペコかわいい。 tl;dr…",
+          "link": "https://blog.ojisan.io/pokeka-hajimeta",
+          "publishedOn": "2024-09-12T00:00:00.000Z",
+          "wordCount": 780,
+          "title": "ポケカ始めた",
+          "imageUrl": "https://blog.ojisan.io/static/83f54d6161f33564610ed9ca6bd8f3ad/cfaad/visual.png"
+        },
         {
           "id": "https://blog.ojisan.io/frontend-conf-hokkaido-2024",
           "author": null,
