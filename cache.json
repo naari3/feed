@@ -1305,6 +1305,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630905973021",
+          "author": null,
+          "description": "zenn.dev\n最近仕事でRails appの不要コードを消していて、そのために適当なスクリプトを書いているので、それを簡単に記事にまとめた。",
+          "link": "https://commits.hatenablog.com/entry/2024/09/13/100000",
+          "publishedOn": "2024-09-13T01:00:00.000Z",
+          "wordCount": 464,
+          "title": "2024-09-12",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630904522610",
           "author": null,
           "description": "必要にかられて druby の実装を読んでいた。\nブロックの処理がうまくいかないような気がしていて、試してみたら案の定うまく動かなかった。\n# server.rb\nrequire \"drb\"\n\nclass Front\n  def f(&b)\n    @b = b\n  end\n\n  def g\n    @b.call\n  end\nend\n\nuri = \"druby://localhost:55331\"\n\nDRb.start_service(uri, Front.new)\nDRb.thread.join\n\n\n\n\n\n# client.rb\nrequire \"drb\"\nDRb.start_service\n\nfront = DRbObject.new_with_uri(\"druby://localhost:55331\")\n\nfront.f do\n  p 42\nend\n\nGC.start\nGC.start\nGC.start\n\nfront.g\n\n\n\nfront.gを呼ぶときには、front.fに渡したブロックはGCに回収されてしまっている。\nこれを回避するにはProcに対するDRbObjectが死ぬまでProcを GC に回収されないようにしなければいけないのだけれど、大変そう。というか、これをどうしているかを知りたくて druby のコードを読んでいたのだけど、対応していないので自分で方法を考えなければならない……。druby でやるなら、Procはクライアント側でHashにでも詰めておいて、サーバー側のProcに対するDRbObjectが回収されるときにfinalizerでクライアント側でも回収させるとかかな。だるそう\nとここまで書いて、Procじゃなくて普通のオブジェクトでも同じことが起こるのではと思って試したのだけど、こっちは動く。なんでだろう。\n# server.rb\nrequire \"drb\"\n\nclass Front\n  def f(x)\n    @x = x\n  end\n\n  def g\n    @x.hello\n  end\nend\n\nuri = \"druby://localhost:55331\"\n\nDRb.start_service(uri, Front.new)\nDRb.thread.join\n\n\n\n\n\n# client.rb\nrequire \"drb\"\nDRb.start_service\n\nfront = DRbObject.new_with_uri(\"druby://localhost:55331\")\n\nclass C\n  include DRb::DRbUndumped\n  def hello\n    puts 'hello'\n  end\nend\n\nfront.f(C.new)\n\nGC.start\nGC.start\nGC.start\n\nfront.g",
@@ -6887,16 +6902,6 @@
           "wordCount": 2322,
           "title": "【日記】6/16 これといって何も書くことがない日",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/bc2e642f04f6f3df30e153de52283ea4793c8fd5.png"
-        },
-        {
-          "id": "https://note.com/nasupman_nikki/n/n785a5fa1d3df",
-          "author": null,
-          "description": "サムネもう少しで直角になれるチョキ。\nどうもヤマトです。\n今日は…\n続きをみる",
-          "link": "https://note.com/nasupman_nikki/n/n785a5fa1d3df",
-          "publishedOn": "2024-06-15T12:17:55.000Z",
-          "wordCount": null,
-          "title": "【日記】6/15 栃木県民の日",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/144147587/rectangle_large_type_2_4f556c26a4070cae513aec9cecb6b249.jpg?width=800"
         }
       ]
     },
