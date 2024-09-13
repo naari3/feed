@@ -2100,7 +2100,23 @@
       "title": "honeylab's blog",
       "feedUrl": "https://honeylab.hatenablog.jp/rss",
       "siteUrl": "https://honeylab.hatenablog.jp/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6802340630905983800",
+          "author": null,
+          "description": "届いた　でかい\n \n \n外見、まじで満足感がある\nスピーカのところの丸ネオン、LEDとアクリルとかでごまかすんじゃなくて、\nちゃんと粒々入りの高輝度LEDがビカビカしてて大変素晴らしい\n \n \nという外見のレビューはほかの人に任せて、当然こちらは中身をレビューします。\n#DDRmini 届いた！！！でかいwwww満足度高い！！ pic.twitter.com/zTyDurHtYE\nSeptember 11, 2024\n\n\n \nがっつりヒートシンクの付いたCPU、外してみるとAllwinnerのA527というのがついています。\nなんと８コアｘ２Gヘルツの結構最近出た強力なCPUです。\nこれまでZUIKIが出してきたミニコンソールはZ7231というAllwinner A33と同等のCPUを詰んでいましたが、これは１６ビット時代のCPUをエミュレートするのが精々で、事前人試したところプレステレベルのエミュレーションでもまともに動かなかったので、何かしら上位のCPUを搭載してエミュレーションにするか、マジで再実装してそのクラスに落とし込むかどっちかだと思っていたんですが、思ってたより強力なの乗せてきたな、という感じです。\n\n基板のピンを当たってみましたがどうやら今のところ電源投入時のシリアルメッセージが表示されず、使用しているブートローダーがわかりません。\n公開されているOSSの中に、u-bootが入っていないので、うっかり忘れていなければu-boot以外のものが使われている気がします。\n \nゲーム環境ですが、メニューからゲームシリーズを選んで起動した瞬間に、MAMEなどでおなじみのCDイメージの名前がちらっと表示されるので、間違いなくエミュレーションであると考えられます。\nどういうベースで実装してくるかと思ったがemuベースだなこれ….まじか….まあそうなるよな　そのためのA52…",
+          "link": "https://honeylab.hatenablog.jp/entry/2024/09/13/112005",
+          "publishedOn": "2024-09-13T02:20:05.000Z",
+          "wordCount": null,
+          "title": "クラファン支援してたDDRminiが届いたので例の儀式",
+          "enclosure": {
+            "url": "https://pbs.twimg.com/media/GXKv6nuawAAxyXO?format=jpg&name=large",
+            "type": "",
+            "length": "0"
+          },
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "テキュ",
