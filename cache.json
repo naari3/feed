@@ -1219,21 +1219,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6801883189115095762/1718628019"
-        },
-        {
-          "id": "hatenablog://entry/6801883189114744503",
-          "author": null,
-          "description": "Slackの特定のチャネルを開いて定型文を入力したい。具体的にはAPIでは発火できないスラッシュコマンドを実行したい。\n特定のチャネルを開く簡単な方法は、Slackアプリに用意されている Deep Link を使うことです。\nこの場合は slack://channel を使うと目的を達成できます。試すには open slack://channel?team=<チームID>&id=<チャネルID> みたいにすると良い。\nIDはWeb版で目的にチャネルを開くとURLに含まれているので、2つ合わせてゲットするにはそこからが速いかも。\nAppleScript でこれを開くにはいくつか方法がありますが、今回は System Events を使います。\n(System Events についてのドキュメントを発見できなかったのだけれど誰か教えてください。)\ntell application \"System Events\"\n    open location \"slack://channel?team=<チームID>&id=<チャネルID>\"\nend tell\n\n\n\nSystem Events を使ったのは文字入力をするための布石で keystroke を使っていきます。\nkeystroke \"Hello\" のようにすると、キーボードから Hello と入力したのと同様の結果が得られます。\ntell application \"System Events\"\n    keystroke \"Hello\"\nend tell\n\n\n\nただしここで問題が生じます。キーストロークなので日本語をそのまま与えてもおかしなことになります。\nキーボード操作を考えても、IMEをオンにして、文字を入力、変換して、確定という操作をしているので当然です。\nそんな面倒なことを再現しないといけないのかというとそうでもなくて、クリップボードを使うと実現できます。\nset the clipboard to \"日本語でこんにちは\"\n\ntell application \"System Events\"\n    keystroke \"v\" using {command down}\nend tell\n\n\n\nusing {command down} で Cmd を押しながら別のキーを押すを実現できます。\nこれで Cmd+v をして貼り付けすることが出来ます。\nこれらを組み合わせると以下のように特定のチャネルに定型文を投稿することが可能です。\nここでは ジョブカン のスラッシュコマンドを実行しています。\nメッセージも入力したいので引数を受け取れるようにしました。\non run argv\n    set message to item 1 of argv\n    set the clipboard to \"/jobcan_touch \" & message\n\n    tell application \"System Events\"\n        open location \"slack://channel?team=<チームID>&id=<チャネルID>\"\n        delay 1\n\n        keystroke \"v\" using {command down}\n        delay 0.5\n\n        keystroke return\n    end tell\nend run\n\n\n\nこれで人力でやっていたチャネルを開いて、入力して、投稿の3ステップの操作が1ステップで完了できるようになりました。\nべんりですね。",
-          "link": "https://blog.nishimu.land/entry/2024/06/16/140925?utm_source=feed",
-          "publishedOn": "2024-06-16T05:09:25.000Z",
-          "wordCount": 359,
-          "title": "AppleScriptでSlackの特定チャネルに定型文を投稿する",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -9736,18 +9721,7 @@
       "title": "Lejeのキャンパス - Scrapbox",
       "feedUrl": "https://scrapbox.io/api/feed/leje-campus",
       "siteUrl": "https://scrapbox.io/leje-campus",
-      "articles": [
-        {
-          "id": "https://scrapbox.io/leje-campus/settings",
-          "author": null,
-          "description": "テーマいじり\ncode:style.css\n htmldata-project-theme='hacker1' {\n  --body-bg: #0b162d;\n  --navbar-bg: #323c52;\n     --new-button-horizontal-color: #ffcc37;\n     --new-button-bg: #0b162d;\n     --new-button-hover-bg: #0b162d;\n     --new-button-active-bg: #2b364d;\n     --tool-color: #eeeeee;\n     --tool-text-color: #eeeeee;\n     --code-bg: rgba(32,32,32,.04);\n }\n body {\n     background-image: url(https://i.gyazo.com/4882595f206ebd73e6d7f6997c567579.png);\n     background-size: 100%;\n }\n .grid li.page-list-item a .pin {\n     background: linear-gradient(45deg, #f98119, #fff09f 50%, #0b162d 50%, #0b162d);\n }\n .grid li.page-list-item a .pin + .content .header {\n     border-top-color: #ffd522;\n     padding: 10px 14px;\n }\n .table-block .table-block-start {\n     background-color: rgba(255,205,55,.4);\n }\n .n…",
-          "link": "https://scrapbox.io/leje-campus/settings",
-          "publishedOn": "2024-06-16T05:55:20.000Z",
-          "wordCount": 317,
-          "title": "settings - Lejeのキャンパス - Scrapbox",
-          "imageUrl": "https://scrapbox.io/assets/img/content-logo.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "おいしさ",

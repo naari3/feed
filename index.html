@@ -17056,127 +17056,6 @@ Amazon
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://scrapbox.io/leje-campus" target="_blank"
-              rel="noopener">Lejeのキャンパス - Scrapbox</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">settings - Lejeのキャンパス - Scrapbox</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://scrapbox.io/leje-campus/settings" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>テーマいじり
-code:style.css
- htmldata-project-theme&#x3D;&#x27;hacker1&#x27; {
-  --body-bg: #0b162d;
-  --navbar-bg: #323c52;
-     --new-button-horizontal-color: #ffcc37;
-     --new-button-bg: #0b162d;
-     --new-button-hover-bg: #0b162d;
-     --new-button-active-bg: #2b364d;
-     --tool-color: #eeeeee;
-     --tool-text-color: #eeeeee;
-     --code-bg: rgba(32,32,32,.04);
- }
- body {
-     background-image: url(https://i.gyazo.com/4882595f206ebd73e6d7f6997c567579.png);
-     background-size: 100%;
- }
- .grid li.page-list-item a .pin {
-     background: linear-gradient(45deg, #f98119, #fff09f 50%, #0b162d 50%, #0b162d);
- }
- .grid li.page-list-item a .pin + .content .header {
-     border-top-color: #ffd522;
-     padding: 10px 14px;
- }
- .table-block .table-block-start {
-     background-color: rgba(255,205,55,.4);
- }
- .n…</span>
-                  </div>
-                  <img src="https://scrapbox.io/assets/img/content-logo.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
-              rel="noopener">ちなみに</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">AppleScriptでSlackの特定チャネルに定型文を投稿する</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2024/06/16/140925?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Slackの特定のチャネルを開いて定型文を入力したい。具体的にはAPIでは発火できないスラッシュコマンドを実行したい。
-特定のチャネルを開く簡単な方法は、Slackアプリに用意されている Deep Link を使うことです。
-この場合は slack://channel を使うと目的を達成できます。試すには open slack://channel?team&#x3D;&amp;id&#x3D; みたいにすると良い。
-IDはWeb版で目的にチャネルを開くとURLに含まれているので、2つ合わせてゲットするにはそこからが速いかも。
-AppleScript でこれを開くにはいくつか方法がありますが、今回は System Events を使います。
-(System Events についてのドキュメントを発見できなかったのだけれど誰か教えてください。)
-tell application &quot;System Events&quot;
-    open location &quot;slack://channel?team&#x3D;&amp;id&#x3D;&quot;
-end tell
-
-
-
-System Events を使ったのは文字入力をするための布石で keystroke を使っていきます。
-keystroke &quot;Hello&quot; のようにすると、キーボードから Hello と入力したのと同様の結果が得られます。
-tell application &quot;System Events&quot;
-    keystroke &quot;Hello&quot;
-end tell
-
-
-
-ただしここで問題が生じます。キーストロークなので日本語をそのまま与えてもおかしなことになります。
-キーボード操作を考えても、IMEをオンにして、文字を入力、変換して、確定という操作をしているので当然です。
-そんな面倒なことを再現しないといけないのかというとそうでもなくて、クリップボードを使うと実現できます。
-set the clipboard to &quot;日本語でこんにちは&quot;
-
-tell application &quot;System Events&quot;
-    keystroke &quot;v&quot; using {command down}
-end tell
-
-
-
-using {command down} で Cmd を押しながら別のキーを押すを実現できます。
-これで Cmd+v をして貼り付けすることが出来ます。
-これらを組み合わせると以下のように特定のチャネルに定型文を投稿することが可能です。
-ここでは ジョブカン のスラッシュコマンドを実行しています。
-メッセージも入力したいので引数を受け取れるようにしました。
-on run argv
-    set message to item 1 of argv
-    set the clipboard to &quot;/jobcan_touch &quot; &amp; message
-
-    tell application &quot;System Events&quot;
-        open location &quot;slack://channel?team&#x3D;&amp;id&#x3D;&quot;
-        delay 1
-
-        keystroke &quot;v&quot; using {command down}
-        delay 0.5
-
-        keystroke return
-    end tell
-end run
-
-
-
-これで人力でやっていたチャネルを開いて、入力して、投稿の3ステップの操作が1ステップで完了できるようになりました。
-べんりですね。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19107,7 +18986,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-09-13T17:01:58.154Z">2024-09-13T17:01:58.154Z</time>
+    <time id="build-timestamp" datetime="2024-09-13T18:02:17.818Z">2024-09-13T18:02:17.818Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

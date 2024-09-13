@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-13T17:01:58.188Z</updated>
+    <updated>2024-09-13T18:02:17.866Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -11956,107 +11956,6 @@ Amazon
 「マイクロインタラクション」とは「ある作業をひとつだけこなす最小単位のインタラクション（機器とのやりとり）のこと」*1である。日常はマイクロインタラクションであふれている。例えば、以下のようなもの…]]></summary>
         <author>
             <name>現実モデリング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[settings - Lejeのキャンパス - Scrapbox]]></title>
-        <id>https://scrapbox.io/leje-campus/settings</id>
-        <link href="https://scrapbox.io/leje-campus/settings"/>
-        <updated>2024-06-16T05:55:20.000Z</updated>
-        <summary type="html"><![CDATA[テーマいじり
-code:style.css
- htmldata-project-theme='hacker1' {
-  --body-bg: #0b162d;
-  --navbar-bg: #323c52;
-     --new-button-horizontal-color: #ffcc37;
-     --new-button-bg: #0b162d;
-     --new-button-hover-bg: #0b162d;
-     --new-button-active-bg: #2b364d;
-     --tool-color: #eeeeee;
-     --tool-text-color: #eeeeee;
-     --code-bg: rgba(32,32,32,.04);
- }
- body {
-     background-image: url(https://i.gyazo.com/4882595f206ebd73e6d7f6997c567579.png);
-     background-size: 100%;
- }
- .grid li.page-list-item a .pin {
-     background: linear-gradient(45deg, #f98119, #fff09f 50%, #0b162d 50%, #0b162d);
- }
- .grid li.page-list-item a .pin + .content .header {
-     border-top-color: #ffd522;
-     padding: 10px 14px;
- }
- .table-block .table-block-start {
-     background-color: rgba(255,205,55,.4);
- }
- .n…]]></summary>
-        <author>
-            <name>Lejeのキャンパス - Scrapbox</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AppleScriptでSlackの特定チャネルに定型文を投稿する]]></title>
-        <id>hatenablog://entry/6801883189114744503</id>
-        <link href="https://blog.nishimu.land/entry/2024/06/16/140925?utm_source=feed"/>
-        <updated>2024-06-16T05:09:25.000Z</updated>
-        <summary type="html"><![CDATA[Slackの特定のチャネルを開いて定型文を入力したい。具体的にはAPIでは発火できないスラッシュコマンドを実行したい。
-特定のチャネルを開く簡単な方法は、Slackアプリに用意されている Deep Link を使うことです。
-この場合は slack://channel を使うと目的を達成できます。試すには open slack://channel?team=<チームID>&id=<チャネルID> みたいにすると良い。
-IDはWeb版で目的にチャネルを開くとURLに含まれているので、2つ合わせてゲットするにはそこからが速いかも。
-AppleScript でこれを開くにはいくつか方法がありますが、今回は System Events を使います。
-(System Events についてのドキュメントを発見できなかったのだけれど誰か教えてください。)
-tell application "System Events"
-    open location "slack://channel?team=<チームID>&id=<チャネルID>"
-end tell
-
-
-
-System Events を使ったのは文字入力をするための布石で keystroke を使っていきます。
-keystroke "Hello" のようにすると、キーボードから Hello と入力したのと同様の結果が得られます。
-tell application "System Events"
-    keystroke "Hello"
-end tell
-
-
-
-ただしここで問題が生じます。キーストロークなので日本語をそのまま与えてもおかしなことになります。
-キーボード操作を考えても、IMEをオンにして、文字を入力、変換して、確定という操作をしているので当然です。
-そんな面倒なことを再現しないといけないのかというとそうでもなくて、クリップボードを使うと実現できます。
-set the clipboard to "日本語でこんにちは"
-
-tell application "System Events"
-    keystroke "v" using {command down}
-end tell
-
-
-
-using {command down} で Cmd を押しながら別のキーを押すを実現できます。
-これで Cmd+v をして貼り付けすることが出来ます。
-これらを組み合わせると以下のように特定のチャネルに定型文を投稿することが可能です。
-ここでは ジョブカン のスラッシュコマンドを実行しています。
-メッセージも入力したいので引数を受け取れるようにしました。
-on run argv
-    set message to item 1 of argv
-    set the clipboard to "/jobcan_touch " & message
-
-    tell application "System Events"
-        open location "slack://channel?team=<チームID>&id=<チャネルID>"
-        delay 1
-
-        keystroke "v" using {command down}
-        delay 0.5
-
-        keystroke return
-    end tell
-end run
-
-
-
-これで人力でやっていたチャネルを開いて、入力して、投稿の3ステップの操作が1ステップで完了できるようになりました。
-べんりですね。]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
