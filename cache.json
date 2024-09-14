@@ -1071,6 +1071,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630906341500",
+          "author": null,
+          "description": "なんかあるやろと思ったら macOS にも標準で入っている column コマンドで十分だった。\nmiller とかを眺めていたが高機能すぎて持て余したのでこれで良かった。\nこれが、\n$ cat service.tsv\nTwitter X\nG Suite Google Workspace\nOffice 365 Microsoft 365\nHipChat Stride\n\n\n\nこうなる。\n$ cat service.tsv | column -t -s $'\\t'\nTwitter     X\nG Suite     Google Workspace\nOffice 365  Microsoft 365\nHipChat     Stride\n\n\n\nポイントは $'\\t でまったく知らなかったのだけれど対応しているシェルだと $'<エスケープシーケンス>' と書くとエスケープシーケンスを解釈した結果に置き換えてくれるらしい。(see also)\n最終的にやりたかったのは gh の結果をシュッとテーブル形式で表示するので以下のような感じで扱えて見栄えがよくなった。(スクショ参照)\n$ gh list --json 'number,author,title,headRefName' -q '.[] | [ \"#\" + (.number | tostring), \"@\" + .author.login, .title, .headRefName] | @tsv' | column -t -s $'\\t'\n\n\n\nちなみにこれだとデフォルトの表示の方が綺麗なのであくまでサンプルです。",
+          "link": "https://blog.nishimu.land/entry/2024/09/14/210644?utm_source=feed",
+          "publishedOn": "2024-09-14T12:06:44.000Z",
+          "wordCount": 287,
+          "title": "TSVファイルをCLIでテーブル表示する",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/S/Sixeight/20240914/20240914202105.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/S/Sixeight/20240914/20240914202105.png"
+        },
+        {
           "id": "hatenablog://entry/6801883189130588593",
           "author": null,
           "description": "1つ以上前のコミットを修正したいときに  --fixup を使うのは近年ではよく知られている。\n$ git commit --fixup <commit>\n$ git -i --autosquash <commit>~ # rebase.autosquash = true にしておけばオプションは不要\n\n\n\nしかし、この方法だと毎回 $EDITOR が開いてしまいちょっと面倒である。\nこれを回避する方法は GIT_SEQUENCE_EDITOR 環境変数を使う方法で GIT_SEQUENCE_EDITOR=true などとしておくと、エディタを開かずに rebase が完了する。\nまた git 2.44 以降は --interactive じゃなくても --autosquash が可能になったためさらに簡単になった (GitHubのブログが詳しい)\nこれを使うと以下のような alias を定義することができる。\nfixup = \"!f() { git commit --fixup \\\"$1\\\"; git rebase --autosquash --autostash \\\"$1\\\"~; }; f\"\n\n\n\n--autostash は自動で stash してくれるオプションで、他の変更があるときに先に fixup したいときにべんり。\n残念ながら rebase.autosquash は interactive mode にしか有効でないので、オプションの指定は必須。\nここまでくると目的のファイルを stage に index しておいて、git fixup <commit> とするだけでコミットの修正が完了するようになる。\nしかし、この commit hash をコピペするのも面倒になってきたので、今回 tig の設定に以下のような bind を追加した。\nbind main F @git fixup %(commit)\nbind log F @git fixup %(commit)\nbind diff F @git fixup %(commit)\nこれで tig の main view などで目的のコミットにカーソルを合わせて F って押すだけになってめちゃくちゃ楽になった。",

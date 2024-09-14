@@ -78,6 +78,52 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
+              rel="noopener">ちなみに</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">TSVファイルをCLIでテーブル表示する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2024/09/14/210644?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>なんかあるやろと思ったら macOS にも標準で入っている column コマンドで十分だった。
+miller とかを眺めていたが高機能すぎて持て余したのでこれで良かった。
+これが、
+$ cat service.tsv
+Twitter X
+G Suite Google Workspace
+Office 365 Microsoft 365
+HipChat Stride
+
+
+
+こうなる。
+$ cat service.tsv | column -t -s $&#x27;\t&#x27;
+Twitter     X
+G Suite     Google Workspace
+Office 365  Microsoft 365
+HipChat     Stride
+
+
+
+ポイントは $&#x27;\t でまったく知らなかったのだけれど対応しているシェルだと $&#x27;&#x27; と書くとエスケープシーケンスを解釈した結果に置き換えてくれるらしい。(see also)
+最終的にやりたかったのは gh の結果をシュッとテーブル形式で表示するので以下のような感じで扱えて見栄えがよくなった。(スクショ参照)
+$ gh list --json &#x27;number,author,title,headRefName&#x27; -q &#x27;.[] | [ &quot;#&quot; + (.number | tostring), &quot;@&quot; + .author.login, .title, .headRefName] | @tsv&#x27; | column -t -s $&#x27;\t&#x27;
+
+
+
+ちなみにこれだとデフォルトの表示の方が綺麗なのであくまでサンプルです。</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/S/Sixeight/20240914/20240914202105.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
               rel="noopener">現実モデリング</a></h3>
           <section class="articles-per-source">
@@ -18965,7 +19011,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-09-14T12:02:14.092Z">2024-09-14T12:02:14.092Z</time>
+    <time id="build-timestamp" datetime="2024-09-14T13:04:24.021Z">2024-09-14T13:04:24.021Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
