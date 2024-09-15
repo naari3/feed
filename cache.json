@@ -1174,21 +1174,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189115095762",
-          "author": null,
-          "description": "最近、Hyper Key という概念を知った。\n概要\nmasOS だと Control+Alt+Shift+Command 、Windows だとControl+Alt+Shift+Win を同時に押すことを言うようです。\n現代では失われた物理的な Hyper Key に代替しようということだと思ったけど経緯はあんまり分かっていない。\nこれの何が便利かというと、システムやアプリケーションのショートカットキーと被りにくいのである。\nグローバルなショートカットキーを設定するときに、被らないように悩まなくて済むのが嬉しい。\nもちろん本当に同時押しするのは馬鹿げているので、特定の1キーを押すことで済むようにする。\n人気なのは Capslock を置き換える方法で、合理的だけれどちょっとかわいそう。\nやりかた\nmacOS だと Karabiner-Elements を使うのが簡単でしょう。\nkarabiner-elements.pqrs.org\nHyper Key っていうずばりの名前のアプリもあるけど、Karabiner-Elements がすでに入っている場合はわざわざ単体のアプリを入れるまでもないでしょう。\nWindowsはよく分かってません。\n用途\n自分の場合はよく使うアプリケーションを呼び出すショートカットキーとして Hyper Key を使っています。\n元々はそれぞれ被らないように適当なキーを当てていたけど、全部置き換えてしまった。\nアプリケーションの頭文字にすると覚えやすい。一例としては以下の感じで Hyper Key を ✦ で表現した。\n アプリケーション \n キー \n\n\n\n\n VSCode \n ✦+V \n\n\n Arc \n ✦+A \n\n\n Slack \n ✦+S \n\n\n iTerm2 \n ✦+T \n\n\n Obsidian \n ✦+O \n\n\n\n\n\nさらに自分の場合はキーボードのレイヤ3に配置することで指の動きを最低減にしている。\n\n余談\nアプリケーションを呼び出すショートカットは Raycast で設定している。\n一度押すとそのアプリケーションがアクティブになって、もう一度押すと非アクティブになって画面から消えてくれる。\nもちろん起動していない場合は起動してくれます。\n現在の状態を把握してなくてもとにかく最悪2回押せば手前に来てくれるのでとてもべんりです。\n設定の Advanced に Hyper Key の表示に関する設定があるのでこれを有効にしておくと見やすくなる。\n\n\nwww.raycast.com",
-          "link": "https://blog.nishimu.land/entry/2024/06/17/213528?utm_source=feed",
-          "publishedOn": "2024-06-17T12:35:28.000Z",
-          "wordCount": 297,
-          "title": "Hyper Key べんり",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6801883189115095762/1718628019",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6801883189115095762/1718628019"
         }
       ]
     },
