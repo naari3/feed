@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-15T23:02:07.510Z</updated>
+    <updated>2024-09-16T00:03:38.945Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[人間よ、楽器を習うとよい]]></title>
+        <id>hatenablog://entry/6802340630905901011</id>
+        <link href="https://nomolk.hatenablog.com/entry/2024/09/16/204200"/>
+        <updated>2024-09-16T11:42:00.000Z</updated>
+        <summary type="html"><![CDATA[ギターを習っている。習い始めたときにもブログを書いていて、いま見たら2021年の8月だったので、ちょうど3年ほど経ったことになる。
+先週、発表会（教室主催の演奏会）があり、初めてステージで楽器を演奏した。生徒の成果発表会なのでたくさん観客が入るイベントではないけど、そこで演奏した２曲はいずれも「いつか上達したら弾けるようになりたい」と思っていた曲で、自分のギター歴としてはひとつのマイルストーンになった。このへんでいちど思いのたけを書き残しておきたい。
+youtu.be
+これはギターを始めた頃からずっといつか弾きたいと思っていた、アントニオ・カルロス・ジョビンの「Felicidade」。まだまだヨレたりモタつくところがあるが、ずっと先の目標だと思っていた曲に意外に早くたどり着けたことが感慨深い。
+楽器を習うとよい
+３年も続けているといろいろ語ると長い思いもあるのだけど、まずはシンプルなメッセージを置いておきたい。楽器を習うのはいいぞ、という話である。
+自分は40歳のときに急に思い立ってギターを買った。
+もともと音楽が好きで、いつか楽器をやりたいな……という思いはあったのだけど、まあ老後の楽しみに取っておくか、くらいの気持ちでいた。それがある日、家族で買い物をしているときに急にバケツの水が溢れるように「いまギターが弾けるようになりたい」という衝動に駆られ、妻子に「寄り道するから先に帰ってて」と言い残して御茶ノ水に行った。
+当時この曲をめちゃめちゃ聴いていて、
+www.youtube.com
+※クラシックギターはアコースティックギターと似た木製のギターだが、弦が金属ではなくナイロン弦で、ピックを使わず指で弾く
+いま振り返って思うのは、「あのとき始めておいてよかった」ということだ。なんたって43歳の時点でギター歴３年のキャリアを得られたのである。自分は何かを始めるのに遅すぎるという…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.9.16]]></title>
         <id>https://gamegaz.com/?p=41982</id>
@@ -11849,33 +11870,6 @@ if you're near upstate new york july 12-14: woodstockhausen takes place in a won
         <summary type="html"><![CDATA[06/01/24 - norns coming mid june.]]></summary>
         <author>
             <name>monome</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[パターン認識]]></title>
-        <id>hatenablog://entry/6801883189115334878</id>
-        <link href="https://blog.nishimu.land/entry/2024/06/18/205839?utm_source=feed"/>
-        <updated>2024-06-18T11:58:39.000Z</updated>
-        <summary type="html"><![CDATA[最近、意識が高まって LeetCode を一日一問ずつやっています。
-正直、Easy でもだいぶ苦戦していて、基礎の出来てなさに凹む毎日です。
-ところで、現代では ChatGPT というSFチックなサービスが存在します。何かを学ぶときに補助してもらうことで、知の高速道路をより素早く進むことが出来るようになりました。
-LeetCodeでの練習でいうと、うまく書けなかったなというときにコードをシンプルに書き直してもらうと学ぶところが多々あります。
-今日は本当にクソみたいなコードを書いたので、ちょっとでもヒントを得ようと書き直してもらったのですが、あまりにシンプルなコードになってひっくり返りました。
-最初みたときにハルシネーションだろって思ってしまったのですが、よく読むとすごく正しい。
-自分は与えられた問題の情報を愚直にコードに落とし込んでしまっていて、今回の問題の本質 = 一定のパターンがあることに気付いていませんでした。
-GPT-4o は自分の書いたクソコードをみただけで、そのパターンに気付いてコードに落とし込んでくれたのです。
-問題解決の糸口として、なんらかのパターンがないかというのは普段は考えている気がするけど、こういう問題形式でプログラミングするときには頭が回ってなかったので、すごくハッとさせられたのでした。
-(もちろん本当のところは同様のコードを大量に見せられていて、ベストな回答を知っていたということだとは思うのだけれど)
-おまけ
-問題は与えられたローマ数字の文字列を数値に直すというやつでした。
-自分の書いたクソみたいにナイーブなコードがこれ。
-func romanToInt(s string) int {
-    num := 0
-    rs := []rune(s)
-    for i := 0; i < len(rs); i++ {
-        r := …]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
