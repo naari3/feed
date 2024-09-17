@@ -1877,6 +1877,21 @@
       "siteUrl": "https://gfx.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630906967984",
+          "author": null,
+          "description": "FastlyからStarleyに転職しました。Starleyは音声会話型おしゃべりAIアプリ「Cotomo」(コトモ)を開発している会社です。\ncotomo.ai\nStarleyはFastlyとは打って変わってB2Cのスタートアップです。今回の転職ではせっかくなので生成AIに多少なりとも関わりたいと思っていて、Starleyはその点でがっつり生成AIを使ったサービスを開発していて、LLMの自前運用もしています。そして「生成AIで雑談」というのはおそらく技術的にはかなり難しい挑戦で、そこに「ときめき」がありました。\nところで、Fastlyはちょうど5年ほど勤めましたが、このたび大規模レイオフがあってその対象になってしまいました。レイオフの対象になった原因はこのところパフォーマンスが下がっていたせいで、去年の夏に新型コロナに掛かって以来ずっと体調が悪く、ついには2024年の3月から半年ほど休職していたのでした。レイオフは休職の最中に行われたので、体調は万全ではありませんが転職を余儀なくされたというわけです。\nそういうわけで、Starleyで心機一転がんばります！\n今回の転職は急でしたが、その中でも色々な人に助けていただきました。今回の転職で関わった方々に改めてお礼申し上げます。",
+          "link": "https://gfx.hatenablog.com/entry/2024/09/17/093025",
+          "publishedOn": "2024-09-17T00:30:25.000Z",
+          "wordCount": 477,
+          "title": "Starleyに転職しました",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630905690013",
           "author": null,
           "description": "15年ぶりくらいにWindowsマシンを買いました。ゲーミングPC目的です。いまのところ、聖剣伝説Visions of Manaを快適にプレイできてます。\nGALLERIA XA7R-R46T\n\nWSL2のおかげで開発機としても普通に使えていい感じです。長らく仕事ではUbuntuの入ったmini PCにsshでログイン＆Visual Studio Code for Romoteで開発していて満足していましたが、WSL2のほうが流石にちゃんと統合されていて、よりVisual Studio Codeをシームレスに起動したり、Linux向けのGUIアプリまで起動できるのは結構うれしいです。",
@@ -7526,6 +7541,26 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=27285",
+          "author": "安形",
+          "description": "この記事では、Linux のプロセススケジューラに実装されているリアルタイムスケジューリングポリシーの挙動と、そのちょっとした用途を紹介します。 リアルタイム（システム）というと、ロボットの制御のよう...",
+          "link": "https://eng-blog.iij.ad.jp/archives/27285",
+          "publishedOn": "2024-09-17T01:05:16.000Z",
+          "wordCount": null,
+          "title": "Linux のリアルタイムスケジューリングポリシーの挙動とちょっとした使い所",
+          "imageUrl": null
+        },
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=27434",
+          "author": "安形",
+          "description": "この記事では、ユーザ空間プログラムでプロセススケジューリングをある程度制御する方法について、15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSy...",
+          "link": "https://eng-blog.iij.ad.jp/archives/27434",
+          "publishedOn": "2024-09-17T01:04:50.000Z",
+          "wordCount": null,
+          "title": "ユーザ空間でプロセスをスケジューリングする方法の模索",
+          "imageUrl": null
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=26670",
           "author": "森脇 千裕",
           "description": "イベント情報 IIJがスマートファクトリー Japan 2024 秋に出展します。 スマートファクトリー Japan 2024 秋では、製造業のDX（デジタルトランスフォーメーション）をテーマに、これ...",
@@ -7939,6 +7974,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=42005",
+          "author": "mamosuke",
+          "description": "PlayStation 6のチップ供給はAMDとIntelが競った結果AMDに決まりました。→→→この記事の続きを読む\nPlayStation 6のチップはAMD 後方互換重視の結果競合のインテル排除 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024091742005/",
+          "publishedOn": "2024-09-17T00:19:07.000Z",
+          "wordCount": null,
+          "title": "PlayStation 6のチップはAMD 後方互換重視の結果競合のインテル排除",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=42003",
           "author": "mamosuke",
@@ -9595,6 +9640,16 @@
       "feedUrl": "https://championcross.jp/series/899dda204c3f2/rss",
       "siteUrl": "https://championcross.jp/series/899dda204c3f2",
       "articles": [
+        {
+          "id": "250996",
+          "author": "チャンピオンクロス",
+          "description": "",
+          "link": "https://championcross.jp/episodes/c5b2c39f3034f/?utm_source=rss&utm_medium=referral",
+          "publishedOn": "2024-09-17T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Karte.153 僕らは創り上げた",
+          "imageUrl": "https://cdn-public.comici.jp/articlevisual/1193201/default/20240910103843903012D49F4DE0120825E41B8B0E1E447E3-sm.png"
+        },
         {
           "id": "248740",
           "author": "チャンピオンクロス",
