@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-17T03:01:48.160Z</updated>
+    <updated>2024-09-17T04:01:37.321Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[iOS18にてiOSアプリを利用した際に、アプリ内ブラウザでログイン状態が正常に反映されない不具合が発生しています]]></title>
+        <id>hatenablog://entry/6802340630906047964</id>
+        <link href="https://staff.hatenablog.com/entry/2024/09/17/125937"/>
+        <updated>2024-09-17T03:59:37.000Z</updated>
+        <summary type="html"><![CDATA[現在、iPhone・iPadアプリ「はてなブログ」を、新しく公開されたiOS18・iPadOS18で利用した際に、 「Webサイト越えトラッキングを許可」設定を有効にしていても、アプリ内のブラウザでログイン状態が正常に反映されない問題が発生しています。この問題による具体的な影響の例は以下のとおりです。
+ログインユーザーとしてコメントを投稿することができない
+自分のアクセスが自分のブログのアクセス解析に記録される
+ヘッダのスライドメニュー内にログインユーザー情報が表示されない
+現在、原因の調査を行っております。ご不便をおかけし申し訳ございません。
+なお、記事の投稿や記事の閲覧などには影響はありません。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2024年9月第2週〕]]></title>
         <id>hatenablog://entry/6802340630906966316</id>
