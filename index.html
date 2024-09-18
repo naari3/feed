@@ -74,6 +74,73 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-09-18">2024-09-18</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
+              rel="noopener">honeylab&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">DDR miniのハッキングがいよいよ本格的に始まった</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2024/09/18/101605" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>honeylab.hatenablog.jp
+分解して下調べをしていたDDR mini
+既にファームウェアアップデート用のUSBを探しそうな画面が発見されていますが、
+これは適当にUSBを挿せばいいものではなく、必要な条件のもとパッケージングしたものに対して発動するものだと思われます。
+DDRmini 本体のStartボタンを左右同時押ししながら電源投入するとファームウェアアップデートモードに入るんだけど、コレってワンチャンあるのか！？ #DDRmini pic.twitter.com/Z7P9Nc5ekK
+September 13, 2024
+
+
+ 
+
+
+ 
+その条件を調べることや、他にバックドアがないかどうかを調べるため、内部のソフトウェアを調べていきます。
+で、どうやって？
+まず、このAllwinnerのCPUは、FELモードというUSB経由であれやこれやするためのモードが備わっていますが、ここで行うことができるのはプログラムの転送ぐらいです。
+まずFELモード上でu-bootなどのブートローダを転送して実行し、そのあとファームウェアを転送して書き込んだりすることができます。
+過去にさんざん弄ったファミコンミニの系列はこの方法でカーネル書き換えが進められてきました。
+www.ns-koubou.com
+しかし、今回採用されたA527というCPU、かなり新しいもので従来使われていたようなu-bootが対応できていないようで、まともにコンパイルできるツリーが見つかりませんでした。そのため、何か他の方法を使わなければなりません。
+いろいろ探していたとこ、A527やその互換のT527というCPUを搭載したAvaotaSBCというオープンソース設計の組み込みボードがあるのを見つけました。
+github.com
+また、それに対応したベアメタルの開発環境、そしてブートローダとLin…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">キーワードは「Switchの後継機種に関するアナウンス」9月に来るかNintendo Direct</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024091842019/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>任天堂は毎年9月にNintendo Directを放送してきました。今月も放送される可能性が高いです。→→→この記事の続きを読む
+キーワードは「Switchの後継機種に関するアナウンス」9月に来るかNintendo Direct first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                  <img src="https://gamegaz.com/wp-content/uploads/Nintendo.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-09-17">2024-09-17</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19115,7 +19182,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-09-18T00:03:02.813Z">2024-09-18T00:03:02.813Z</time>
+    <time id="build-timestamp" datetime="2024-09-18T01:28:37.127Z">2024-09-18T01:28:37.127Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

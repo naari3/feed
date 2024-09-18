@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-18T00:03:02.852Z</updated>
+    <updated>2024-09-18T01:28:37.162Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DDR miniのハッキングがいよいよ本格的に始まった]]></title>
+        <id>hatenablog://entry/6802340630907219762</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2024/09/18/101605"/>
+        <updated>2024-09-18T01:16:05.000Z</updated>
+        <summary type="html"><![CDATA[honeylab.hatenablog.jp
+分解して下調べをしていたDDR mini
+既にファームウェアアップデート用のUSBを探しそうな画面が発見されていますが、
+これは適当にUSBを挿せばいいものではなく、必要な条件のもとパッケージングしたものに対して発動するものだと思われます。
+DDRmini 本体のStartボタンを左右同時押ししながら電源投入するとファームウェアアップデートモードに入るんだけど、コレってワンチャンあるのか！？ #DDRmini pic.twitter.com/Z7P9Nc5ekK
+September 13, 2024
+
+
+ 
+
+
+ 
+その条件を調べることや、他にバックドアがないかどうかを調べるため、内部のソフトウェアを調べていきます。
+で、どうやって？
+まず、このAllwinnerのCPUは、FELモードというUSB経由であれやこれやするためのモードが備わっていますが、ここで行うことができるのはプログラムの転送ぐらいです。
+まずFELモード上でu-bootなどのブートローダを転送して実行し、そのあとファームウェアを転送して書き込んだりすることができます。
+過去にさんざん弄ったファミコンミニの系列はこの方法でカーネル書き換えが進められてきました。
+www.ns-koubou.com
+しかし、今回採用されたA527というCPU、かなり新しいもので従来使われていたようなu-bootが対応できていないようで、まともにコンパイルできるツリーが見つかりませんでした。そのため、何か他の方法を使わなければなりません。
+いろいろ探していたとこ、A527やその互換のT527というCPUを搭載したAvaotaSBCというオープンソース設計の組み込みボードがあるのを見つけました。
+github.com
+また、それに対応したベアメタルの開発環境、そしてブートローダとLin…]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[キーワードは「Switchの後継機種に関するアナウンス」9月に来るかNintendo Direct]]></title>
+        <id>https://gamegaz.com/?p=42019</id>
+        <link href="https://gamegaz.com/2024091842019/"/>
+        <updated>2024-09-18T00:36:08.000Z</updated>
+        <summary type="html"><![CDATA[任天堂は毎年9月にNintendo Directを放送してきました。今月も放送される可能性が高いです。→→→この記事の続きを読む
+キーワードは「Switchの後継機種に関するアナウンス」9月に来るかNintendo Direct first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[生きる方が難しい]]></title>
         <id>hatenablog://entry/6802340630907202231</id>
