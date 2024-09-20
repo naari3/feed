@@ -226,6 +226,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630907958128",
+          "author": null,
+          "description": "MODE4 224*160のLz77圧縮30枚で約200KB。10倍すると300枚2MB。さらに4倍すると1200枚8MB・・・。計算合っています？？ゲームの枚数は1149枚。スクロール画像は無圧縮で行くつもりなのでザックリ合計10MBぐらいですかね。。まだ調べてないですけど音声も圧縮して16MBぐらいと予想。なんとか収まりそうです。下の画像はGBAで表示したgifアニメです。",
+          "link": "https://akkera102.hatenablog.com/entry/2024/09/20/225641",
+          "publishedOn": "2024-09-20T13:56:41.000Z",
+          "wordCount": 430,
+          "title": "GTS移植3",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20240920/20240920225610.gif",
+            "type": "image/gif",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20240920/20240920225610.gif"
+        },
+        {
           "id": "hatenablog://entry/6802340630907693555",
           "author": null,
           "description": "スクリプトデコーダも作り終えました。元になっているツールの出力結果と同じなので同等品です。デコーダができたということは、エンジンモドキを作ってテキスト（GBA用）を吐かせられるということ。ん－、ツール類は9月中に終わるから10月にGBA実装とテスト、11月上旬ぐらいなリリースになりそうです。",
