@@ -2,10 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-23T02:24:23.218Z</updated>
+    <updated>2024-09-23T03:06:00.275Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DDRMini 作業ログ]]></title>
+        <id>hatenablog://entry/6802340630908552723</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2024/09/23/112921"/>
+        <updated>2024-09-23T02:29:21.000Z</updated>
+        <summary type="html"><![CDATA[Avaota-SBCというDDRMiniにかなり近い構成のボード用にビルドしたバイナリが断片的に動くので、これを使ってファームウェアを吸い出しつつ、逆アセンブルを続けているところではあります。
+やったーeMMCの中身をSDカードにまるっと書きだすプログラムができたぞー… pic.twitter.com/Bute6RmR34
+September 17, 2024
+
+
+ 
+・UART0(PB9,PB10)が明確にデバッグ用に出ているがLinuxの先ではDTSで無効化されているのでほとんど何も出てこない。が、最初のBOOTの間はdの先行入力でちょっとだけメッセージが出る。
+
+
+ 
+・BOOT0 (emmc上0x2000)がboard_initした後、MMCからTOC1パッケージを読み込んでいる。このへんはこの二つのページの機材がよく似ている。
+Allwinner H700 Firmware extraction - KNULLI Wiki
+Teclast P85T - linux-sunxi.org
+・上にあるように、u-bootのエリアがあるけど実はu-bootじゃないのかな、と思って読み込んで逆アセンブルしているけど、本当にu-bootっぽい。
+「U-Boot 2018.07-00009-g40a0e96-dirty (Jul 24 2024 - 13:19:23 +0800) Allwinner Technology」
+このツリーは、ベースの2018に山ほどのパッチをしてようやく動かしているものらしい。
+・このTOC1がemmcのbootパッケージから!ANDROIDを読んで起動している
+ 
+・その次のパーティションがrootfs、ここにゲームもROMも入っている
+
+・ゲームのROMは独自の暗号化がされている。
+
+・rootfsを書き換えるだけである程度動かせるとは思うけど、現状何も出力できないしシェルにログインできないので大変やりにくい
+・どうにかシェルを使うためシリアルコンソールの有効化を試みている
+・UART0はLinuxのDTSで無効化されているので起こすのは難しい
+・配線を辿るとUART2もつながっている。
+うーん、これPB9,10が出てるってことはPB0-6ぐらいが出てる可能性あるな
+PB0,1が出るならuart2が生きてるんだよな pic.twitter.com/kB3e9OCcAX
+September 20, 2024
+
+
+ 
+・ENVのパラメータをいじればttyS2でコンソールが起きるはず
+・ENVをいじって書き戻そう！
+・書き戻した
+・壊れた。
+ 
+壊れた。
+ 
+書き戻す場所を間違えたのか、値がおかしいのか。
+もっかいeMMCのフルダンプを取ってどこを壊したのか調べてみる。
+ 
+遠い。]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.9.23]]></title>
         <id>https://gamegaz.com/?p=42069</id>
