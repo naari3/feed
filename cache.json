@@ -1290,6 +1290,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630908834658",
+          "author": null,
+          "description": "moneyforward.connpass.com\n会社のイベントで登壇することになった。(福岡)\nここ最近ずっとやっている、RBSのメモリ削減についての話をしようと思っている。作ったメモリプロファイラの話や、メモリ改善の際につまづいた話や、今やろうとしている改善の話をしたい。\nこのイベント自体はRubyに関係なく広い聴講者を想定したもの。ということで、20分という限られた時間で前提となるRubyの説明をしながらRubyKaigiっぽいコアな話を説明しないといけない。大変だなあ。",
+          "link": "https://commits.hatenablog.com/entry/2024/09/25/100000",
+          "publishedOn": "2024-09-25T01:00:00.000Z",
+          "wordCount": 459,
+          "title": "2024-09-24",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630905973021",
           "author": null,
           "description": "zenn.dev\n最近仕事でRails appの不要コードを消していて、そのために適当なスクリプトを書いているので、それを簡単に記事にまとめた。",
@@ -7762,6 +7777,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml",
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20240925-iosdc-2024-report/",
+          "author": null,
+          "description": "こんにちは。株式会社メルカリ iOSエンジニアのkntkです。 8月22日から8月24日にかけて開催された「iOSDC Japan 2024」にメルカリはプラチナスポンサーとして参加しました。 本記事では、その参加レポー […]",
+          "link": "https://engineering.mercari.com/blog/entry/20240925-iosdc-2024-report/",
+          "publishedOn": "2024-09-25T10:00:06.000Z",
+          "wordCount": null,
+          "title": "iOSDC Japan 2024に参加・登壇しました #iosdc #iwillblog",
+          "imageUrl": null
+        },
         {
           "id": "https://engineering.mercari.com/blog/entry/20240905-iosdc-2024-quiz/",
           "author": null,
