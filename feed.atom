@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-26T08:02:07.554Z</updated>
+    <updated>2024-09-26T09:02:11.424Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -26,6 +26,16 @@
 GameGaz Daily 2024.9.26 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dialog と Popover #2]]></title>
+        <id>https://blog.jxck.io/entries/2024-09-26/dialog-element.html</id>
+        <link href="https://blog.jxck.io/entries/2024-09-26/dialog-element.html"/>
+        <updated>2024-09-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[showModalDialog() は今から考えれば、確かにひどい API だった。しかし、何か Modal を開き、ユーザにインタラクションをさせ、閉じたらそこで入力された値や選択された結果を取得し、処理を進めたいユースケース自体は、規約への同意取得や、 Cookie バナー、ログインなど多々ある。そういった場面では、ライブラリなどを用いて実装する必要があったが、 Modal を実装するのは実際にはそんなに簡単ではなかった。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>

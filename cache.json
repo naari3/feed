@@ -7238,6 +7238,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2024-09-26/dialog-element.html",
+          "author": null,
+          "description": "showModalDialog() は今から考えれば、確かにひどい API だった。しかし、何か Modal を開き、ユーザにインタラクションをさせ、閉じたらそこで入力された値や選択された結果を取得し、処理を進めたいユースケース自体は、規約への同意取得や、 Cookie バナー、ログインなど多々ある。そういった場面では、ライブラリなどを用いて実装する必要があったが、 Modal を実装するのは実際にはそんなに簡単ではなかった。",
+          "link": "https://blog.jxck.io/entries/2024-09-26/dialog-element.html",
+          "publishedOn": "2024-09-26T00:00:00.000Z",
+          "wordCount": 1177,
+          "title": "Dialog と Popover #2",
+          "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
+        },
+        {
           "id": "https://blog.jxck.io/entries/2024-09-25/show-modal-dialog.html",
           "author": null,
           "description": "HTML の <dialog> 要素と、 popover 属性、および関連する様々な仕様が標準化され、実装が進められている。Open UI を中心に進められているこれらの改善は、多くのサイトで共通したユースケースがありながら、長らくミッシングピースとなっていた重要な機能だ。もし今、同等のユースケースを自前で実装しているのであれば、適切な仕様を用いた実装に刷新することで、従来はほぼ不可能だった UX を提供できるようになる。今回から、数回の連載形式で、これらの仕様がどのように標準化され、我々開発者はこれをどのように使っていくべきなのかについて解説する。",
