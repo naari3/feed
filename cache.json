@@ -1290,6 +1290,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630909468431",
+          "author": null,
+          "description": "moneyforward-dev.jp\n会社のブログに記事を書いた。思ったよりもたくさんの人に読んでもらえてよかった。\nなかなか面白い問題にハマったので前々からブログ記事にしようとは思っていたのだけれど、記事後半あたりからうまく内容をまとめられなくて、結局1ヶ月ぐらいかけて記事を書いていた。調査はまっすぐ問題を突き止められたわけではないし、きれいな流れもなかったので、そこを記事としてわかりやすく伝えるのに悩んでいた。調査というのは得てしてそういうものだとは思うけれど、今回は特にその傾向が強かった気がする。\nせっかくなので、記事に書ききれなかったことをいくつか。\nHash の重複排除というアイディアは新しいものではなくて、たとえばRailsでよく使われている。\n\n\n適当にGitHubリポジトリを検索して出てきたものだけれど、これとか。 https://github.com/rails/rails/blob/8ac995453a2a2efd789810a90319e6bb6f0e2aea/activerecord/lib/active_record/relation/query_methods.rb#L160\n私もアイディアを知ったのはRailsからだった気がする。\n「Hashの重複排除はするべきではない」と主張するつもりは全然ない。多分大体の場合はいい感じに動くものだと思うし、Ruby 3.4 ではRBSでもいい感じに動きそうだし。\nRails とかではこんな顕著な影響は出ていなくて、今回RBSでここまでわかりやすく差がでたこと。\n\n\n多分、Rubyのよくある使用例であるRails appとRBSでは、Hashを作る頻度やHashの内容が全然違うのだと思う。\nmameさんとかとは「記号処理では空Hashってガンガン作られるよね」という話をしていた\n今回は、Hashの重複排除をすることで、GCのしきい値のすごい微妙な秘孔を突いてしまうような頻度かなんかでRBSがHashを作るようになったのだろうなあと予想している\n記事では標準ライブラリのRBSとRailsのRBSのenvを作る例だけを挙げたけれど、Rails appの型検査も遅くなっていた\n\n\n具体的には、手元のそこそこの規模のRails appに対して、型を生成してsteep checkを走らせた場合の実行時間でも遅くなっていた。2倍以上の速度差とかになってた記憶がある。\n「微妙なバランスの上にありそうなパフォーマンス劣化だから実アプリでは影響なくて心配もいらないんじゃないかなー」とかも考えていたのだけど、そんなことはなかった。\n実は大阪Ruby会議04の会場で、金子さんにこの件の相談をしていたりもしたのでした。ありがとうございました。",
+          "link": "https://commits.hatenablog.com/entry/2024/09/27/100000",
+          "publishedOn": "2024-09-27T01:00:00.000Z",
+          "wordCount": 491,
+          "title": "2024-09-26",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630908834658",
           "author": null,
           "description": "moneyforward.connpass.com\n会社のイベントで登壇することになった。(福岡)\nここ最近ずっとやっている、RBSのメモリ削減についての話をしようと思っている。作ったメモリプロファイラの話や、メモリ改善の際につまづいた話や、今やろうとしている改善の話をしたい。\nこのイベント自体はRubyに関係なく広い聴講者を想定したもの。ということで、20分という限られた時間で前提となるRubyの説明をしながらRubyKaigiっぽいコアな話を説明しないといけない。大変だなあ。",

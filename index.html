@@ -74,6 +74,52 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-09-27">2024-09-27</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2024-09-26</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/09/27/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>moneyforward-dev.jp
+会社のブログに記事を書いた。思ったよりもたくさんの人に読んでもらえてよかった。
+なかなか面白い問題にハマったので前々からブログ記事にしようとは思っていたのだけれど、記事後半あたりからうまく内容をまとめられなくて、結局1ヶ月ぐらいかけて記事を書いていた。調査はまっすぐ問題を突き止められたわけではないし、きれいな流れもなかったので、そこを記事としてわかりやすく伝えるのに悩んでいた。調査というのは得てしてそういうものだとは思うけれど、今回は特にその傾向が強かった気がする。
+せっかくなので、記事に書ききれなかったことをいくつか。
+Hash の重複排除というアイディアは新しいものではなくて、たとえばRailsでよく使われている。
+
+
+適当にGitHubリポジトリを検索して出てきたものだけれど、これとか。 https://github.com/rails/rails/blob/8ac995453a2a2efd789810a90319e6bb6f0e2aea/activerecord/lib/active_record/relation/query_methods.rb#L160
+私もアイディアを知ったのはRailsからだった気がする。
+「Hashの重複排除はするべきではない」と主張するつもりは全然ない。多分大体の場合はいい感じに動くものだと思うし、Ruby 3.4 ではRBSでもいい感じに動きそうだし。
+Rails とかではこんな顕著な影響は出ていなくて、今回RBSでここまでわかりやすく差がでたこと。
+
+
+多分、Rubyのよくある使用例であるRails appとRBSでは、Hashを作る頻度やHashの内容が全然違うのだと思う。
+mameさんとかとは「記号処理では空Hashってガンガン作られるよね」という話をしていた
+今回は、Hashの重複排除をすることで、GCのしきい値のすごい微妙な秘孔を突いてしまうような頻度かなんかでRBSがHashを作るようになったのだろうなあと予想している
+記事では標準ライブラリのRBSとRailsのRBSのenvを作る例だけを挙げたけれど、Rails appの型検査も遅くなっていた
+
+
+具体的には、手元のそこそこの規模のRails appに対して、型を生成してsteep checkを走らせた場合の実行時間でも遅くなっていた。2倍以上の速度差とかになってた記憶がある。
+「微妙なバランスの上にありそうなパフォーマンス劣化だから実アプリでは影響なくて心配もいらないんじゃないかなー」とかも考えていたのだけど、そんなことはなかった。
+実は大阪Ruby会議04の会場で、金子さんにこの件の相談をしていたりもしたのでした。ありがとうございました。</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-09-26">2024-09-26</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18462,7 +18508,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-09-27T00:03:38.941Z">2024-09-27T00:03:38.941Z</time>
+    <time id="build-timestamp" datetime="2024-09-27T01:28:43.195Z">2024-09-27T01:28:43.195Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
