@@ -211,6 +211,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630909720306",
+          "author": null,
+          "description": "画像関連は差分データが多かったため時間を取りました。それにスクロール画像も作業中かなり出てきて、無圧縮で大丈夫かとモヤモヤしていました。結論からいうと大丈夫そうです。画像と音声はほぼ確定しました。次はスクリプトをGBA用に合わせて、口パク処理が間に合うかのチェックですねー。いやーよかったです。\n画像：13.1MB（LZ77、スクロールは無圧縮）\n音声：6.35MB（10512Hz ADPCM）\nスクリプト：0.1MB（予定）\nプログラム：1MB（予定）\n----\n合計：20.55MB",
+          "link": "https://akkera102.hatenablog.com/entry/2024/09/27/193623",
+          "publishedOn": "2024-09-27T10:36:23.000Z",
+          "wordCount": 436,
+          "title": "GTS移植4",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630907958128",
           "author": null,
           "description": "MODE4 224*160のLz77圧縮30枚で約200KB。10倍すると300枚2MB。さらに4倍すると1200枚8MB・・・。計算合っています？？ゲームの枚数は1149枚。スクロール画像は無圧縮で行くつもりなのでザックリ合計10MBぐらいですかね。。まだ調べてないですけど音声も圧縮して16MBぐらいと予想。なんとか収まりそうです。下の画像はGBAで表示したgifアニメです。",
