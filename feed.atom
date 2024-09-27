@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-27T19:01:40.561Z</updated>
+    <updated>2024-09-27T20:01:55.758Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -132,6 +132,16 @@ mameさんとかとは「記号処理では空Hashってガンガン作られる
 実は大阪Ruby会議04の会場で、金子さんにこの件の相談をしていたりもしたのでした。ありがとうございました。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dialog と Popover #3]]></title>
+        <id>https://blog.jxck.io/entries/2024-09-27/dialog.html</id>
+        <link href="https://blog.jxck.io/entries/2024-09-27/dialog.html"/>
+        <updated>2024-09-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[前回までは <dialog> が標準化されるまでの経緯と、 API の概要や関連仕様を解説した。今回は <dialog> の API としての使い方について、具体的に解説していく。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
