@@ -7128,6 +7128,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2024-09-30/toast-popup.html",
+          "author": null,
+          "description": "ここまでで <dialog> 要素が標準化され、 Modal/non-Modal な Dialog がネイティブで出せるようになった。今まで自前で実装していた z-index の指定や、フォーカスの管理、非活性化、キーボードでの処理、スタイルなども、細かい仕様がほぼ標準によってカバーされた。Top Layerinert:modal / ::backdropCloseWatcherFocusable Scrollersetcしかし、 <dialog> はあくまで「ユーザのインタラクションを求める」という用途で使うものであり、 role=dialog ではない、例えばちょっとしたメッセージの通知などに使うものではない。そこで、これらの資産を活用し、より汎用的な UI を標準化しようという話が、 <dialog> の標準化の裏で並行して行われた。",
+          "link": "https://blog.jxck.io/entries/2024-09-30/toast-popup.html",
+          "publishedOn": "2024-09-30T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Dialog と Popover #4",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2024-09-27/dialog.html",
           "author": null,
           "description": "前回までは <dialog> が標準化されるまでの経緯と、 API の概要や関連仕様を解説した。今回は <dialog> の API としての使い方について、具体的に解説していく。",

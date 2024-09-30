@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-09-30T07:01:59.845Z</updated>
+    <updated>2024-09-30T08:02:24.497Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -76,6 +76,16 @@
         <summary type="html"><![CDATA[はじめに 近年、お米のイネの高温障害に着目されつつあるものの、原因がまだ解明されていないことが多くあります。 高温障害によるイネへの影響は2種類あり、一つが収量の減少（不稔米・胴割米）、そして二つ目が...]]></summary>
         <author>
             <name>nishikawa-yu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dialog と Popover #4]]></title>
+        <id>https://blog.jxck.io/entries/2024-09-30/toast-popup.html</id>
+        <link href="https://blog.jxck.io/entries/2024-09-30/toast-popup.html"/>
+        <updated>2024-09-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ここまでで <dialog> 要素が標準化され、 Modal/non-Modal な Dialog がネイティブで出せるようになった。今まで自前で実装していた z-index の指定や、フォーカスの管理、非活性化、キーボードでの処理、スタイルなども、細かい仕様がほぼ標準によってカバーされた。Top Layerinert:modal / ::backdropCloseWatcherFocusable Scrollersetcしかし、 <dialog> はあくまで「ユーザのインタラクションを求める」という用途で使うものであり、 role=dialog ではない、例えばちょっとしたメッセージの通知などに使うものではない。そこで、これらの資産を活用し、より汎用的な UI を標準化しようという話が、 <dialog> の標準化の裏で並行して行われた。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
