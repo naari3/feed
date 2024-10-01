@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-01T01:29:05.097Z</updated>
+    <updated>2024-10-01T02:28:42.472Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[開発環境のデータベースでも本番環境相当のデータを使う]]></title>
+        <id>hatenablog://entry/6802340630909597944</id>
+        <link href="https://techlife.cookpad.com/entry/2024/10/01/105503"/>
+        <updated>2024-10-01T01:55:03.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。レシピ事業部バックエンド基盤グループの石川です。
+2014 年、このブログに『開発環境のデータをできるだけ本番に近づける』というタイトルの記事が投稿されました。
+
+クックパッドでは、ユーザーさんが実際に体験している状況と近い状況を再現しながら開発することに価値があると考えています。技術的には、最初からレコードがたくさんあることによってパフォーマンス問題に気付きやすくなるなどの長所がありますし、サービス開発としても、実際のユーザーさんの体験を最速でなぞって素早くフィードバックループを回せるようになるという長所があります。
+この慣習は 2014 年の記事から 10 年経った今でも続いています。一方でその実現手法については変化を続けてきました。現在のクックパッドでは状況に応じていくつかの手段を使い分けています。それらの手段については今まであまり公開されていなかったような気がするため、この記事ではそのうちのひとつをご紹介いたします。
+なおこの記事で紹介する手法は社内で数年使っているもので、以前弊社に在籍していた菅原 (@sgwr_dts) が作成し、その後奥村 (@hfm)、鈴木 (id:eagletmt)、小川 (@coord_e)、および自分を含めたチームとして開発してきました。ご承知おきください。
+前提
+クックパッドでアプリケーションがデプロイされる環境としては本番環境の他に、本番環境へ出す前の検証作業で使う環境（検証環境）があります。これらふたつは AWS 上にデプロイされています。それとは別に開発者ひとりひとりの手元のパソコンでアプリケーションを動かす環境を開発環境と呼ぶことにしましょう。このあたりは文献によって微妙に呼び方が異なるので、この記事ではこれらの呼び方を使うことにします。
+クックパッドでは RDBMS として Amazon Aurora MySQL…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Karte.154 僕はどこにいても君を見つける]]></title>
         <id>254976</id>

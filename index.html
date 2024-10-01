@@ -78,6 +78,34 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">開発環境のデータベースでも本番環境相当のデータを使う</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2024/10/01/105503" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。レシピ事業部バックエンド基盤グループの石川です。
+2014 年、このブログに『開発環境のデータをできるだけ本番に近づける』というタイトルの記事が投稿されました。
+
+クックパッドでは、ユーザーさんが実際に体験している状況と近い状況を再現しながら開発することに価値があると考えています。技術的には、最初からレコードがたくさんあることによってパフォーマンス問題に気付きやすくなるなどの長所がありますし、サービス開発としても、実際のユーザーさんの体験を最速でなぞって素早くフィードバックループを回せるようになるという長所があります。
+この慣習は 2014 年の記事から 10 年経った今でも続いています。一方でその実現手法については変化を続けてきました。現在のクックパッドでは状況に応じていくつかの手段を使い分けています。それらの手段については今まであまり公開されていなかったような気がするため、この記事ではそのうちのひとつをご紹介いたします。
+なおこの記事で紹介する手法は社内で数年使っているもので、以前弊社に在籍していた菅原 (@sgwr_dts) が作成し、その後奥村 (@hfm)、鈴木 (id:eagletmt)、小川 (@coord_e)、および自分を含めたチームとして開発してきました。ご承知おきください。
+前提
+クックパッドでアプリケーションがデプロイされる環境としては本番環境の他に、本番環境へ出す前の検証作業で使う環境（検証環境）があります。これらふたつは AWS 上にデプロイされています。それとは別に開発者ひとりひとりの手元のパソコンでアプリケーションを動かす環境を開発環境と呼ぶことにしましょう。このあたりは文献によって微妙に呼び方が異なるので、この記事ではこれらの呼び方を使うことにします。
+クックパッドでは RDBMS として Amazon Aurora MySQL…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://championcross.jp/series/899dda204c3f2" target="_blank"
               rel="noopener">僕の心のヤバイやつ【最新話無料】</a></h3>
           <section class="articles-per-source">
@@ -18231,7 +18259,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-10-01T01:29:05.059Z">2024-10-01T01:29:05.059Z</time>
+    <time id="build-timestamp" datetime="2024-10-01T02:28:42.438Z">2024-10-01T02:28:42.438Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
