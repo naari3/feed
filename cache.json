@@ -3017,7 +3017,23 @@
       "title": "アプリ置き場",
       "feedUrl": "https://nazenaninadesico.hatenablog.jp/rss",
       "siteUrl": "https://nazenaninadesico.hatenablog.jp/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6802340630910925175",
+          "author": null,
+          "description": "ゲームエンジンぽいもの\nFlutterでピクセルパーフェクトぽいものを実現する簡易的なゲームエンジンを作りました。\nFlutterのその他Widgetと共存可\nWidgetツリーの中にゲーム画面を埋め込み可能\nPSやSwitch系コントローラー対応\n指定したフレームレートを維持する制御\nピクセルパーフェクトに描画を変換\nゲームエンジンを使うと移動やら回転やらでドット単位に沿わない偽レトロゲームになりがち\nクライアント領域サイズ、解像度、フルスクリーンなど制御（外部ライブラリ依存）\nTiledMap、Spriteクラス、画像のパレット変換ぽいAPIなど\nAudioplayersをラップしたAudio系クラス\nWindowsでバイナリからロードするとメモリリークしまくってたのでよい感じの運用でラップ\nリソースの簡易暗号化と復号\n作ったゲーム\nとりあえずエンジンぽいもの作ったので、それを使ったゲームもということで、20年近く前に作ったゲームをベースにミニゲームをつくってSteamに置いておきました。\nCrapShoot クソシュー\nstore.steampowered.com\nエンジン部分作成1週間\nゲーム部分作成1週間\nSteam対応2週間\nSteam対応の方法\nちなみにFlutterでのSteam対応についてはごく最近に先駆者様がおられました。ありがたや。\nmidland.hatenadiary.jp\n参考にさせていただきつつ、スコアランキングのスコア送信のコードを書いたので置いておきます。\nC言語用のライブラリの極薄ラッパーなのでなんとも使い辛い。\nimport 'dart:convert';\nimport 'dart:ffi';\nimport 'dart:io';\nimport 'dart:typed_data';\nimport 'package:ffi/ffi.dart…",
+          "link": "https://nazenaninadesico.hatenablog.jp/entry/2024/10/02/174704",
+          "publishedOn": "2024-10-02T08:47:04.000Z",
+          "wordCount": 503,
+          "title": "FlutterでSteam対応ゲーム(windows)を作った",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/n/nazenaninadesico/20241002/20241002165659.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/n/nazenaninadesico/20241002/20241002165659.png"
+        }
+      ]
     },
     {
       "title": "-",

@@ -2,10 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-02T08:01:59.803Z</updated>
+    <updated>2024-10-02T09:02:10.847Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[FlutterでSteam対応ゲーム(windows)を作った]]></title>
+        <id>hatenablog://entry/6802340630910925175</id>
+        <link href="https://nazenaninadesico.hatenablog.jp/entry/2024/10/02/174704"/>
+        <updated>2024-10-02T08:47:04.000Z</updated>
+        <summary type="html"><![CDATA[ゲームエンジンぽいもの
+Flutterでピクセルパーフェクトぽいものを実現する簡易的なゲームエンジンを作りました。
+Flutterのその他Widgetと共存可
+Widgetツリーの中にゲーム画面を埋め込み可能
+PSやSwitch系コントローラー対応
+指定したフレームレートを維持する制御
+ピクセルパーフェクトに描画を変換
+ゲームエンジンを使うと移動やら回転やらでドット単位に沿わない偽レトロゲームになりがち
+クライアント領域サイズ、解像度、フルスクリーンなど制御（外部ライブラリ依存）
+TiledMap、Spriteクラス、画像のパレット変換ぽいAPIなど
+AudioplayersをラップしたAudio系クラス
+Windowsでバイナリからロードするとメモリリークしまくってたのでよい感じの運用でラップ
+リソースの簡易暗号化と復号
+作ったゲーム
+とりあえずエンジンぽいもの作ったので、それを使ったゲームもということで、20年近く前に作ったゲームをベースにミニゲームをつくってSteamに置いておきました。
+CrapShoot クソシュー
+store.steampowered.com
+エンジン部分作成1週間
+ゲーム部分作成1週間
+Steam対応2週間
+Steam対応の方法
+ちなみにFlutterでのSteam対応についてはごく最近に先駆者様がおられました。ありがたや。
+midland.hatenadiary.jp
+参考にさせていただきつつ、スコアランキングのスコア送信のコードを書いたので置いておきます。
+C言語用のライブラリの極薄ラッパーなのでなんとも使い辛い。
+import 'dart:convert';
+import 'dart:ffi';
+import 'dart:io';
+import 'dart:typed_data';
+import 'package:ffi/ffi.dart…]]></summary>
+        <author>
+            <name>アプリ置き場</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Cookpad Summer Internship 2024に参加しました]]></title>
         <id>hatenablog://entry/6802340630910914839</id>
