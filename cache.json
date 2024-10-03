@@ -211,6 +211,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630911250054",
+          "author": null,
+          "description": "スクリプトはそのまま利用することにしました。画像を半分に表示しているわけですから、スクリプト座標やサイズを２で割り算すれば再利用できるはず。ここまで順調に進めていますけど、少しペースを落とそうと思います。とりあえず冬頃に完成すればいいかなあ。。今年はちょっとハイペースすぎて体調がジェットコースターのようなものですから少し労わろうと思います。あと積んでいるゲームも遊びたいですし。解析したものを少し投下します。していることは差分画像のパタパタアニメで「フレーム番号：ウェイト数」リストが主命令です。\nhttps://akkera102.sakura.ne.jp/test3/GTS1.TXT",
+          "link": "https://akkera102.hatenablog.com/entry/2024/10/04/003042",
+          "publishedOn": "2024-10-03T15:30:42.000Z",
+          "wordCount": 433,
+          "title": "GTS移植5",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630909720306",
           "author": null,
           "description": "画像関連は差分データが多かったため時間を取りました。それにスクロール画像も作業中かなり出てきて、無圧縮で大丈夫かとモヤモヤしていました。結論からいうと大丈夫そうです。画像と音声はほぼ確定しました。次はスクリプトをGBA用に合わせて、口パク処理が間に合うかのチェックですねー。いやーよかったです。\n画像：13.1MB（LZ77、スクロールは無圧縮）\n音声：6.35MB（10512Hz ADPCM）\nスクリプト：0.1MB（予定）\nプログラム：1MB（予定）\n----\n合計：20.55MB",

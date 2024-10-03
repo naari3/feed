@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-03T15:02:18.535Z</updated>
+    <updated>2024-10-03T16:01:41.432Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GTS移植5]]></title>
+        <id>hatenablog://entry/6802340630911250054</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/10/04/003042"/>
+        <updated>2024-10-03T15:30:42.000Z</updated>
+        <summary type="html"><![CDATA[スクリプトはそのまま利用することにしました。画像を半分に表示しているわけですから、スクリプト座標やサイズを２で割り算すれば再利用できるはず。ここまで順調に進めていますけど、少しペースを落とそうと思います。とりあえず冬頃に完成すればいいかなあ。。今年はちょっとハイペースすぎて体調がジェットコースターのようなものですから少し労わろうと思います。あと積んでいるゲームも遊びたいですし。解析したものを少し投下します。していることは差分画像のパタパタアニメで「フレーム番号：ウェイト数」リストが主命令です。
+https://akkera102.sakura.ne.jp/test3/GTS1.TXT]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[24/10/3 お題箱回177：諸々]]></title>
         <id>hatenablog://entry/6802340630906504098</id>
