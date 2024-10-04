@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-04T02:24:51.401Z</updated>
+    <updated>2024-10-04T03:06:15.616Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DDRMini解析まとめ]]></title>
+        <id>hatenablog://entry/6802340630911332174</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2024/10/04/112713"/>
+        <updated>2024-10-04T02:27:13.000Z</updated>
+        <summary type="html"><![CDATA[honeylab.hatenablog.jp
+honeylab.hatenablog.jp
+honeylab.hatenablog.jp
+上の３つの記事と私のTwitterで随時解析情報をお知らせしてきましたが、一定の成果を
+得られたためここに記しておきます。
+ 
+ハードウェア、ファームウェアについて
+・CPUはAllWinnerの８コア 2.0GHz A572という割と豪華な奴
+・ストレージ８G,うち２GをゲームROM含むrootsとして使用
+・Linux Kernel 5.15
+Linux version 5.15.123-yocto-standard (oe-user@oe-host) (aarch64-poky-linux-gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.38.20220313) #1 SMP PREEMPT Mon Jan 29 02:33:21 UTC 2024
+一応サポート情報のOSSからダウンロードしたソースコードでコンパイル可能ではある
+・が、書き換えて動く保証はない（BROMでの検証がきつい）し、ENVを書き換えてLinuxのコマンドラインを改変しようとしたら文鎮化した。
+・eGON ヘッダバージョンが４．０
+・u-bootはtina 2018-07ベース
+・rootfsについては特に検証されていないので書き換えは可能
+・SDカードスロットのパターンがあるので、これにSyterKitというツールキットで作ったブートローダやベアメタル実行ファイルを書きこんで動かすことが可能(mmc0)
+・これで実行ファイルを作り、ROOTFSをフルダンプしたうえで、initスクリプトにUSBメモリのマウントとシェルスクリプトを読み込むようなバックドアを書き込み、システムを自由に書き換えることに成功した。
+うっしゃぁキタで…]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024-10-03]]></title>
         <id>hatenablog://entry/6802340630911247201</id>

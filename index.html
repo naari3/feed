@@ -78,6 +78,44 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
+              rel="noopener">honeylab&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">DDRMini解析まとめ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2024/10/04/112713" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>honeylab.hatenablog.jp
+honeylab.hatenablog.jp
+honeylab.hatenablog.jp
+上の３つの記事と私のTwitterで随時解析情報をお知らせしてきましたが、一定の成果を
+得られたためここに記しておきます。
+ 
+ハードウェア、ファームウェアについて
+・CPUはAllWinnerの８コア 2.0GHz A572という割と豪華な奴
+・ストレージ８G,うち２GをゲームROM含むrootsとして使用
+・Linux Kernel 5.15
+Linux version 5.15.123-yocto-standard (oe-user@oe-host) (aarch64-poky-linux-gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.38.20220313) #1 SMP PREEMPT Mon Jan 29 02:33:21 UTC 2024
+一応サポート情報のOSSからダウンロードしたソースコードでコンパイル可能ではある
+・が、書き換えて動く保証はない（BROMでの検証がきつい）し、ENVを書き換えてLinuxのコマンドラインを改変しようとしたら文鎮化した。
+・eGON ヘッダバージョンが４．０
+・u-bootはtina 2018-07ベース
+・rootfsについては特に検証されていないので書き換えは可能
+・SDカードスロットのパターンがあるので、これにSyterKitというツールキットで作ったブートローダやベアメタル実行ファイルを書きこんで動かすことが可能(mmc0)
+・これで実行ファイルを作り、ROOTFSをフルダンプしたうえで、initスクリプトにUSBメモリのマウントとシェルスクリプトを読み込むようなバックドアを書き込み、システムを自由に書き換えることに成功した。
+うっしゃぁキタで…</span>
+                  </div>
+                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -18103,7 +18141,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-10-04T02:24:51.364Z">2024-10-04T02:24:51.364Z</time>
+    <time id="build-timestamp" datetime="2024-10-04T03:06:15.563Z">2024-10-04T03:06:15.563Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

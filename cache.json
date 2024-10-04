@@ -2117,6 +2117,21 @@
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630911332174",
+          "author": null,
+          "description": "honeylab.hatenablog.jp\nhoneylab.hatenablog.jp\nhoneylab.hatenablog.jp\n上の３つの記事と私のTwitterで随時解析情報をお知らせしてきましたが、一定の成果を\n得られたためここに記しておきます。\n \nハードウェア、ファームウェアについて\n・CPUはAllWinnerの８コア 2.0GHz A572という割と豪華な奴\n・ストレージ８G,うち２GをゲームROM含むrootsとして使用\n・Linux Kernel 5.15\nLinux version 5.15.123-yocto-standard (oe-user@oe-host) (aarch64-poky-linux-gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.38.20220313) #1 SMP PREEMPT Mon Jan 29 02:33:21 UTC 2024\n一応サポート情報のOSSからダウンロードしたソースコードでコンパイル可能ではある\n・が、書き換えて動く保証はない（BROMでの検証がきつい）し、ENVを書き換えてLinuxのコマンドラインを改変しようとしたら文鎮化した。\n・eGON ヘッダバージョンが４．０\n・u-bootはtina 2018-07ベース\n・rootfsについては特に検証されていないので書き換えは可能\n・SDカードスロットのパターンがあるので、これにSyterKitというツールキットで作ったブートローダやベアメタル実行ファイルを書きこんで動かすことが可能(mmc0)\n・これで実行ファイルを作り、ROOTFSをフルダンプしたうえで、initスクリプトにUSBメモリのマウントとシェルスクリプトを読み込むようなバックドアを書き込み、システムを自由に書き換えることに成功した。\nうっしゃぁキタで…",
+          "link": "https://honeylab.hatenablog.jp/entry/2024/10/04/112713",
+          "publishedOn": "2024-10-04T02:27:13.000Z",
+          "wordCount": 696,
+          "title": "DDRMini解析まとめ",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630908552723",
           "author": null,
           "description": "Avaota-SBCというDDRMiniにかなり近い構成のボード用にビルドしたバイナリが断片的に動くので、これを使ってファームウェアを吸い出しつつ、逆アセンブルを続けているところではあります。\nやったーeMMCの中身をSDカードにまるっと書きだすプログラムができたぞー… pic.twitter.com/Bute6RmR34\nSeptember 17, 2024\n\n\n \n・UART0(PB9,PB10)が明確にデバッグ用に出ているがLinuxの先ではDTSで無効化されているのでほとんど何も出てこない。が、最初のBOOTの間はdの先行入力でちょっとだけメッセージが出る。\n\n\n \n・BOOT0 (emmc上0x2000)がboard_initした後、MMCからTOC1パッケージを読み込んでいる。このへんはこの二つのページの機材がよく似ている。\nAllwinner H700 Firmware extraction - KNULLI Wiki\nTeclast P85T - linux-sunxi.org\n・上にあるように、u-bootのエリアがあるけど実はu-bootじゃないのかな、と思って読み込んで逆アセンブルしているけど、本当にu-bootっぽい。\n「U-Boot 2018.07-00009-g40a0e96-dirty (Jul 24 2024 - 13:19:23 +0800) Allwinner Technology」\nこのツリーは、ベースの2018に山ほどのパッチをしてようやく動かしているものらしい。\n・このTOC1がemmcのbootパッケージから!ANDROIDを読んで起動している\n \n・その次のパーティションがrootfs、ここにゲームもROMも入っている\n\n・ゲームのROMは独自の暗号化がされている。\n\n・rootfsを書き換えるだけである程度動かせるとは思うけど、現状何も出力できないしシェルにログインできないので大変やりにくい\n・どうにかシェルを使うためシリアルコンソールの有効化を試みている\n・UART0はLinuxのDTSで無効化されているので起こすのは難しい\n・配線を辿るとUART2もつながっている。\nうーん、これPB9,10が出てるってことはPB0-6ぐらいが出てる可能性あるな\nPB0,1が出るならuart2が生きてるんだよな pic.twitter.com/kB3e9OCcAX\nSeptember 20, 2024\n\n\n \n・ENVのパラメータをいじればttyS2でコンソールが起きるはず\n・ENVをいじって書き戻そう！\n・書き戻した\n・壊れた。\n \n壊れた。\n \n書き戻す場所を間違えたのか、値がおかしいのか。\nもっかいeMMCのフルダンプを取ってどこを壊したのか調べてみる。\n \n遠い。",
