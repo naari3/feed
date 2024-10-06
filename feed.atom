@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-06T14:01:45.676Z</updated>
+    <updated>2024-10-06T15:01:58.213Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[練習]]></title>
+        <id>hatenablog://entry/6802340630911984902</id>
+        <link href="https://5desk.hatenablog.jp/entry/2024/10/06/230903"/>
+        <updated>2024-10-06T14:09:03.000Z</updated>
+        <summary type="html"><![CDATA[10月
+
+【9/28】CCS2へ。少し遅れてメインフロアに入った瞬間、低音が想定よりも強すぎて殺されると思った。当然のことかもしれないけど、今まで行った箱の中でも断トツでうるさかった。音を追加させることに興味があるだけであって、EDMにはさほど興味が無いことが分かった気がする。でかい音ででかい音楽が流れていると、それはそれで嬉しいのですけどね。ほとんどずっとメインフロアにいたけど、体力の限界でラウンジに戻ったときの割腹氏のDJを見て雰囲気含め良かったので、メインは人も多かったしもう少しラウンジにいても良かったなと思う。
+【9/29】昨日の疲れがかなり響いていたが、きらら展に行った。同じ会場でコスプレイベントが行われていて、なかなか混沌とした雰囲気だった。スターバックスでしぐれういが椅子を運んでは座ってを繰り返していて不気味だった。きらら展良かった。創刊号から現在までの冊子が全て現物で展示されていて、かわいさニューウェーブの変遷を眺めることができた。新規書き下ろし漫画が100本展示されていた。『アキタランド・ゴシック』とか『またぞろ。』とか、『平成生まれ』とか完結した漫画が新規で描かれていた嬉しさ。書き下ろしのテーマとして「夢・希望・勇気・ときめき」を主題にしていたみたいだったけど、『ゆゆ式』と『Aチャンネル』があまり気にせず変わらない感じだったのが嬉しすぎるし、かっこよかった。まだまだ半分ほど展示されていたものがあったけど、空調が効きすぎていたのと、蓄積していた疲れや人の多さで気持ち悪くなって限界に。会場内は途中退出も飲み物を飲むことも出来なかったので、正直後半はあまり見れていない…(テレビアニメ化のあの辺りと、きらファンのところほとんど見ていない)。吐きそうになりながら物販で企画本買ったとき、こかむもの裏表紙が幻覚のようだった。急いでトイレに向かったら巡音ルカさんがおしっこしていて幻覚見えてた。吐き気が収まらないまま帰宅していた途中に声をかけられ、なんだと思ったら富士山の新聞出てきてだるかった。
+【10/2】先月のプレイリスト
+ 仕事の会議を抜けてひがしやしきのライブチケットを待機していたが、会社の回線が全然飛んでおらず駄目だった。無理矢理会議を抜け出したから後で怒られたし散々だ。
+【10/6】音楽の授業が週に一度、決まった曜日に音楽室に向かうように、毎週決まった曜日に更新することを心掛けており、そうした制約があるからこその記録なのではと考えているが、現状そうすることが難しいため、暫くは引き続き牛歩スタイルでいきます。]]></summary>
+        <author>
+            <name>3F 音楽室</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記1]]></title>
         <id>hatenablog://entry/6802340630911994109</id>
@@ -45,6 +61,44 @@ www.youtube.com
 毎回寝る前に部屋の端っこにあるスイッチを押しに行くのが妙に面倒だったので、非常に助かった。…]]></summary>
         <author>
             <name>メガネ好き好きクラブ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[BunでNode.jsのツールをSingle-file executable binaryにしてバイナリを配布する]]></title>
+        <id>https://efcl.info/2024/10/06/bun-single-file-executable-binary/</id>
+        <link href="https://efcl.info/2024/10/06/bun-single-file-executable-binary/"/>
+        <updated>2024-10-06T11:25:00.000Z</updated>
+        <summary type="html"><![CDATA[Secretlint v8.3で、単体のバイナリファイルとしてsecretlintコマンドを配布するようにしました。
+Release v8.3.3 · secretlint/secretlint
+どういうことができるようになるかというか、Node.jsをインストールしなくてもsecretlintコマンドを使えるようになります。
+次のようにCurlでダウンロードして実行するだけで、機密情報の検出ができるようになります。
+
+#!/usr/bin/env bash
+set -euo pipefail
+SECRETLINT_VERSION="8.3.3" # secretlintのバージョン
+ARCH=$(uname -m)
+OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+# Map architecture to the expected format
+case "$ARCH" in
+    x86_64)
+        ARCH="x64"
+        ;;
+    aarch64)
+        ARCH="arm64"
+        ;;
+    arm64)
+        ARCH="arm64"
+        ;;
+    *)
+        echo "Unsupported architecture: $ARCH"
+        exit 1
+        ;;
+esac
+
+# Download the binary
+curl -sSL "https://github.com/secretlint/secretlint/releases/download/$(SECRETLINT_VERSION)/secretlint-$(SECRETLINT_VERSION)-$(OS)-$(ARCH)" -o secr…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

@@ -12,6 +12,21 @@
       "siteUrl": "https://5desk.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630911984902",
+          "author": null,
+          "description": "10月\n\n【9/28】CCS2へ。少し遅れてメインフロアに入った瞬間、低音が想定よりも強すぎて殺されると思った。当然のことかもしれないけど、今まで行った箱の中でも断トツでうるさかった。音を追加させることに興味があるだけであって、EDMにはさほど興味が無いことが分かった気がする。でかい音ででかい音楽が流れていると、それはそれで嬉しいのですけどね。ほとんどずっとメインフロアにいたけど、体力の限界でラウンジに戻ったときの割腹氏のDJを見て雰囲気含め良かったので、メインは人も多かったしもう少しラウンジにいても良かったなと思う。\n【9/29】昨日の疲れがかなり響いていたが、きらら展に行った。同じ会場でコスプレイベントが行われていて、なかなか混沌とした雰囲気だった。スターバックスでしぐれういが椅子を運んでは座ってを繰り返していて不気味だった。きらら展良かった。創刊号から現在までの冊子が全て現物で展示されていて、かわいさニューウェーブの変遷を眺めることができた。新規書き下ろし漫画が100本展示されていた。『アキタランド・ゴシック』とか『またぞろ。』とか、『平成生まれ』とか完結した漫画が新規で描かれていた嬉しさ。書き下ろしのテーマとして「夢・希望・勇気・ときめき」を主題にしていたみたいだったけど、『ゆゆ式』と『Aチャンネル』があまり気にせず変わらない感じだったのが嬉しすぎるし、かっこよかった。まだまだ半分ほど展示されていたものがあったけど、空調が効きすぎていたのと、蓄積していた疲れや人の多さで気持ち悪くなって限界に。会場内は途中退出も飲み物を飲むことも出来なかったので、正直後半はあまり見れていない…(テレビアニメ化のあの辺りと、きらファンのところほとんど見ていない)。吐きそうになりながら物販で企画本買ったとき、こかむもの裏表紙が幻覚のようだった。急いでトイレに向かったら巡音ルカさんがおしっこしていて幻覚見えてた。吐き気が収まらないまま帰宅していた途中に声をかけられ、なんだと思ったら富士山の新聞出てきてだるかった。\n【10/2】先月のプレイリスト\n 仕事の会議を抜けてひがしやしきのライブチケットを待機していたが、会社の回線が全然飛んでおらず駄目だった。無理矢理会議を抜け出したから後で怒られたし散々だ。\n【10/6】音楽の授業が週に一度、決まった曜日に音楽室に向かうように、毎週決まった曜日に更新することを心掛けており、そうした制約があるからこその記録なのではと考えているが、現状そうすることが難しいため、暫くは引き続き牛歩スタイルでいきます。",
+          "link": "https://5desk.hatenablog.jp/entry/2024/10/06/230903",
+          "publishedOn": "2024-10-06T14:09:03.000Z",
+          "wordCount": 274,
+          "title": "練習",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fivedesk/20241006/20241006230243.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fivedesk/20241006/20241006230243.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802340630910275213",
           "author": null,
           "description": "生活が火車に。火の車。毎週忙しいみたいなことを言っていたけど、全然序の口だったみたい。こんな筈じゃないみたいなことが多く、体調も頗る悪化していく。このままではまずい！\n忙しすぎてぐったりしたかったが、先週は友人が来てサウナに行ったり父の引越しの手伝いとかして休めなかった。昨日はCCS2に行って、今日はきらら展に行った。かなり無理してしまって今日は2回吐いてる。もう寝ないとまずいから先週分含めて少しずつ更新する。牛歩スタイルいきます。\n【】",
@@ -7114,6 +7129,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2024/10/06/bun-single-file-executable-binary/",
+          "author": null,
+          "description": "Secretlint v8.3で、単体のバイナリファイルとしてsecretlintコマンドを配布するようにしました。\nRelease v8.3.3 · secretlint/secretlint\nどういうことができるようになるかというか、Node.jsをインストールしなくてもsecretlintコマンドを使えるようになります。\n次のようにCurlでダウンロードして実行するだけで、機密情報の検出ができるようになります。\n\n#!/usr/bin/env bash\nset -euo pipefail\nSECRETLINT_VERSION=\"8.3.3\" # secretlintのバージョン\nARCH=$(uname -m)\nOS=$(uname -s | tr '[:upper:]' '[:lower:]')\n# Map architecture to the expected format\ncase \"$ARCH\" in\n    x86_64)\n        ARCH=\"x64\"\n        ;;\n    aarch64)\n        ARCH=\"arm64\"\n        ;;\n    arm64)\n        ARCH=\"arm64\"\n        ;;\n    *)\n        echo \"Unsupported architecture: $ARCH\"\n        exit 1\n        ;;\nesac\n\n# Download the binary\ncurl -sSL \"https://github.com/secretlint/secretlint/releases/download/$(SECRETLINT_VERSION)/secretlint-$(SECRETLINT_VERSION)-$(OS)-$(ARCH)\" -o secr…",
+          "link": "https://efcl.info/2024/10/06/bun-single-file-executable-binary/",
+          "publishedOn": "2024-10-06T11:25:00.000Z",
+          "wordCount": null,
+          "title": "BunでNode.jsのツールをSingle-file executable binaryにしてバイナリを配布する",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2024/09/02/jsprimer-v6/",
           "author": null,
