@@ -196,6 +196,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802340630911822945",
+          "author": null,
+          "description": "detail.chiebukuro.yahoo.co.jp\ndevkitProにあるcrt0.sを使っていなくて自作しているのかなーと予想しています。main関数を呼び出す前に、変数初期値を決定しているのがcrt0.sなもので。そうでないとしたら、devkitProのサンプルでもいいですし私のでもいいけど、正常に動いているプロジェクトと比較していくのがいいと思います。",
+          "link": "https://akkera102.hatenablog.com/entry/2024/10/06/114514",
+          "publishedOn": "2024-10-06T02:45:14.000Z",
+          "wordCount": 433,
+          "title": "たまたま目に入ったので・・・。",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630911250054",
           "author": null,
           "description": "スクリプトはそのまま利用することにしました。画像を半分に表示しているわけですから、スクリプト座標やサイズを２で割り算すれば再利用できるはず。ここまで順調に進めていますけど、少しペースを落とそうと思います。とりあえず冬頃に完成すればいいかなあ。。今年はちょっとハイペースすぎて体調がジェットコースターのようなものですから少し労わろうと思います。あと積んでいるゲームも遊びたいですし。解析したものを少し投下します。していることは差分画像のパタパタアニメで「フレーム番号：ウェイト数」リストが主命令です。\nhttps://akkera102.sakura.ne.jp/test3/GTS1.TXT",
