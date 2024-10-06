@@ -15865,62 +15865,6 @@ Rustで作るプログラミング言語</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">dosbox-xメモ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/07/09/191718" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>主にpc98用。設定画面は反映されない場合があるので基本的にテキスト上で変えること。
-■ウィンドウサイズ変更（デフォルトだと一瞬サイズが大きくなったりする）
-■cpuを80486へ
-output            &#x3D; ddraw
-windowresolution  &#x3D; 640x400
-cputype            &#x3D; 486
-
-■ブレークポイント
-bpint 21 3d，d ds dx
-
-■ファイルオープン
-3DH 
-DS:DX パス
-AL アクセスモード 	F キャリーフラグオンならエラー
-AX エラーコード
-
-■ファイルクローズ
-3EH
-DS:DX パス 	F キャリーフラグオンならエラー
-AX エラーコード
-
-■ファイル読み込み
-3FH
-BX ファイルハンドル
-CX バイト数
-DS:DX バッファアドレス 	AX 読み込んだバイト数
-DS:DX データー
-F キャリーフラグオンならエラー
-AX エラーコード
-
-■GDC パレット書き込みと緑赤青（注意：RGBではない）
-out a8 aa ac ae
-
-■正規表現AND
-^(?&#x3D;.*word1)(?&#x3D;.*word2)(?&#x3D;.*word3).*$
-参考：
-MS-DOS割り込み</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17851,7 +17795,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-10-06T22:01:54.519Z">2024-10-06T22:01:54.519Z</time>
+    <time id="build-timestamp" datetime="2024-10-06T23:01:37.072Z">2024-10-06T23:01:37.072Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
