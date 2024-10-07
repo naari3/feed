@@ -554,21 +554,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189120914939",
-          "author": null,
-          "description": "練習のためにやりました。最近の趣味です。。\n■4枚の圧縮プレーン展開直前\n1476:000038A3  lds  si,cs:[00C0]   \n1476:000038A8  mov  ax,cs:[0013]   \n1476:000038AC  call 000038E8 ($+39)\n■スクリプトデコーダ\n18AC:00000173  mov  si,0FEE                                  \n18AC:00000176  mov  word [bp-32],0000          ss:[0F98]=0000\n18AC:0000017B  shr  word [bp-32],1             ss:[0F98]=0000\n18AC:0000017E  mov  ax,[bp-32]                 ss:[0F98]=0000\n18AC:00000181  test ax,0100                                  \n18AC:00000184  jne  000001AE ($+28)            (no jmp)      \n18AC:00000186  les  bx,[bp-2A]                 ss:[0FA0]=0004\n\n■スクリプトファイル 0x18読み込み 47F6:0004\n18AC:00000189  mov  al,es:[bx]                 es:[0004]=01FF\n18AC:0000018C  mov  ah,00                                    \n18AC:0000018E  mov  dx,ax                              …",
-          "link": "https://akkera102.hatenablog.com/entry/2024/07/10/194442",
-          "publishedOn": "2024-07-10T10:44:42.000Z",
-          "wordCount": 588,
-          "title": "pc98 desire解析",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
