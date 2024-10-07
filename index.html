@@ -15754,64 +15754,6 @@ GameGaz Daily 2024.7.10 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gfx.hatenablog.com/" target="_blank"
-              rel="noopener">Islands in the byte stream</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">『Rustで作るプログラミング言語』を読んでかねてから構想していた自作言語を形にした</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gfx.hatenablog.com/entry/2024/07/09/222800" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Rustで作るプログラミング言語という書籍が先日発売されました。簡単なプログラミング言語を作ってバイトコードに変換して実行したりネイティブコードに変換して実行してみよう、という本で、大変面白く読みました。最終的にかなり本格的な言語になるので、これを元にするとわりとちゃんとした言語を作れそうです。
-この書籍で最終的に作られる言語はこちら:
-GitHub - msakuta/ruscal: Programming language implementation learning project
-ちょうど私も、以前から構想していた言語があったので、ちょっと作ってみました。というのも、TypeScriptを設定用の言語としてさまざまなプログラミング言語から使えると便利ではないかとずっと思っていたのです。
-この設定言語で複雑なことができる必要はなく、最終的にはJSONに準ずるデータ構造になればよいので、その程度だったらそれほど大掛かりではなくツールとしてメンテできるのではないかと思っています。似た思想のツールとしてはJsonnetがありますが、Jsonnetは構文が独自でまったく新しい言語を覚えなければならないのが不満なのです。
-TypeScriptであればほとんどのプログラマーの共通言語であるJavaScriptとほぼ同じですし、設定を書くだけであればTypeScriptの深い知識は不要です。さらに、Typescriptの厳密なサブセットであれば、設定を書いている途中にTypeScriptの強力な補完機能も使えるというわけです。
-この設定言語のプロジェクトはこちら:
-GitHub - gfx/titys: Turing-Incomplete TypeScript Subset as a Configuration Language
-こういう感じで設定ファイルを書けます:
-// editor_config.ts
-
-const LF &#x3D; &quot;\u{0A}&quot;; // \xHH はまだサポートしていない
-
-export const EditorConfig &#x3D; {
-    tabSize: 4,
-    trimTrailingWhitespace: true,
-    endOfLine: LF,
-    encoding: &quot;utf-8&quot;,
-};
-
-
-
-このファイルはJSONに変換するとこうなります:
-{
-  &quot;EditorConfig&quot;: {
-    &quot;tabSize&quot;: 4,
-    &quot;trimTrailingWhitespace&quot;: true,
-    &quot;endOfLine&quot;: &quot;\n&quot;,
-    &quot;encoding&quot;: &quot;utf-8&quot;
-  }
-}
-
-
-
-Turing-incompleteなことが重要なので、TiTys (Turing-Incomplete TypeScript; ティティス) と名づけました。プロジェクトの進捗としては40%くらいですが（とくに型構文をほとんどサポートしていない！）、世の中にあるeslintなどのJavaScript設定ファイルくらいであればすでにTypeScriptに書き換えたものをJSONに変換可能です。
-言語として何一つ新規に発明したところがないというのはポイントです。私が判断したのは、強いていえば「何を実装しないか」くらいです（このへんはREADMEに書いてあります）。
-現在のところインターフェイスとしてはコマンドしか用意していないのですが、すでにJSONを受け付けるツールにのためのプリプロセッサとしてはすでにある程度使えるでしょう。とはいえ、さすがに今は機能的にも不足ですし、また、Rust用のAPIなどを整備しないと現実的には使い物にならないので、ある程度使い物になるくらいまではメンテするつもりでいます。
-脱線しましたが、『Rustで作るプログラミング言語』はRust学習の2冊目以降の本としてはかなりよいのではないかと思います。
-Rustで作るプログラミング言語</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20240706/20240706215852.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17742,7 +17684,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-10-07T01:28:55.788Z">2024-10-07T01:28:55.788Z</time>
+    <time id="build-timestamp" datetime="2024-10-07T02:26:03.196Z">2024-10-07T02:26:03.196Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

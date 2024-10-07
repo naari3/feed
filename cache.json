@@ -1889,21 +1889,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20240912/20240912095141.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189120710691",
-          "author": null,
-          "description": "Rustで作るプログラミング言語という書籍が先日発売されました。簡単なプログラミング言語を作ってバイトコードに変換して実行したりネイティブコードに変換して実行してみよう、という本で、大変面白く読みました。最終的にかなり本格的な言語になるので、これを元にするとわりとちゃんとした言語を作れそうです。\nこの書籍で最終的に作られる言語はこちら:\nGitHub - msakuta/ruscal: Programming language implementation learning project\nちょうど私も、以前から構想していた言語があったので、ちょっと作ってみました。というのも、TypeScriptを設定用の言語としてさまざまなプログラミング言語から使えると便利ではないかとずっと思っていたのです。\nこの設定言語で複雑なことができる必要はなく、最終的にはJSONに準ずるデータ構造になればよいので、その程度だったらそれほど大掛かりではなくツールとしてメンテできるのではないかと思っています。似た思想のツールとしてはJsonnetがありますが、Jsonnetは構文が独自でまったく新しい言語を覚えなければならないのが不満なのです。\nTypeScriptであればほとんどのプログラマーの共通言語であるJavaScriptとほぼ同じですし、設定を書くだけであればTypeScriptの深い知識は不要です。さらに、Typescriptの厳密なサブセットであれば、設定を書いている途中にTypeScriptの強力な補完機能も使えるというわけです。\nこの設定言語のプロジェクトはこちら:\nGitHub - gfx/titys: Turing-Incomplete TypeScript Subset as a Configuration Language\nこういう感じで設定ファイルを書けます:\n// editor_config.ts\n\nconst LF = \"\\u{0A}\"; // \\xHH はまだサポートしていない\n\nexport const EditorConfig = {\n    tabSize: 4,\n    trimTrailingWhitespace: true,\n    endOfLine: LF,\n    encoding: \"utf-8\",\n};\n\n\n\nこのファイルはJSONに変換するとこうなります:\n{\n  \"EditorConfig\": {\n    \"tabSize\": 4,\n    \"trimTrailingWhitespace\": true,\n    \"endOfLine\": \"\\n\",\n    \"encoding\": \"utf-8\"\n  }\n}\n\n\n\nTuring-incompleteなことが重要なので、TiTys (Turing-Incomplete TypeScript; ティティス) と名づけました。プロジェクトの進捗としては40%くらいですが（とくに型構文をほとんどサポートしていない！）、世の中にあるeslintなどのJavaScript設定ファイルくらいであればすでにTypeScriptに書き換えたものをJSONに変換可能です。\n言語として何一つ新規に発明したところがないというのはポイントです。私が判断したのは、強いていえば「何を実装しないか」くらいです（このへんはREADMEに書いてあります）。\n現在のところインターフェイスとしてはコマンドしか用意していないのですが、すでにJSONを受け付けるツールにのためのプリプロセッサとしてはすでにある程度使えるでしょう。とはいえ、さすがに今は機能的にも不足ですし、また、Rust用のAPIなどを整備しないと現実的には使い物にならないので、ある程度使い物になるくらいまではメンテするつもりでいます。\n脱線しましたが、『Rustで作るプログラミング言語』はRust学習の2冊目以降の本としてはかなりよいのではないかと思います。\nRustで作るプログラミング言語",
-          "link": "https://gfx.hatenablog.com/entry/2024/07/09/222800",
-          "publishedOn": "2024-07-09T13:28:00.000Z",
-          "wordCount": 573,
-          "title": "『Rustで作るプログラミング言語』を読んでかねてから構想していた自作言語を形にした",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20240706/20240706215852.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/g/gfx/20240706/20240706215852.png"
         }
       ]
     },
