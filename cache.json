@@ -524,21 +524,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189121452889",
-          "author": null,
-          "description": "私は気がついてしまいました・・・。ゲームは色々な不明引数があるので解析に向きません。そこで目をつけたのがエロゲローダーMLDです。無駄な機能もなく、画像ファイルをプロンプトで指定したら即画面に反映してくれます。解析するならこっちですね。以下、desireのGDTファイルをMLDで読み込ませた場合です。\n■ファイルオープン\n0923:00003520  int  21\n■ファイル読み込み\n0923:00001A08  mov  ah,3F     \n0923:00001A0A  mov  bx,[bp+06]\n0923:00001A0D  mov  cx,[bp+0C]\n0923:00001A10  lds  dx,[bp+08]\n0923:00001A13  int  21        \n■ファイルクローズ\n0923:000031F1  mov  ah,3E     \n0923:000031F3  mov  bx,[bp+06]\n0923:000031F6  int  21        \n■ヘッダのシグネチャ確認\"DA1\" 0x44 0x41 0x31と、ファイルサイズ確認？\n1A49:00000C7D  push word [bp-02]  \n1A49:00000C80  push word [bp-04]  \n1A49:00000C83  nop                \n1A49:00000C84  push cs            \n1A49:00000C85  call 00000C8F ($+7)\n■初期化処理？（省略）\n■パレットデータ格納　ファイルオフセット0x10～\n4bit * 4プレーン * 16色 = 256bit / 8 = 32バイト\nファイルからデータ取ったら即GDCに反映しています（16回分。\n1DE3:00000098  out  A8,al     \n1DE3:0000009A  mov  al,[bp-05]\n1DE3:0000009D  out  AA,al     \n1DE3:0000009F  mov  al,[bp-04]\n1DE3:000000A2  out  AC,al     \n1DE3:000000A4  mov  al,[bp-03]\n1DE3:000000A7  out  AE,al     \n■プレーンに直書き\n1A49:00000FC0  push word [bp-1E]               ss:[2606]=0145\n1A49:00000FC3  push word [bp-0E]               ss:[2616]=0000\n1A49:00000FC6  push word [bp-02]               ss:[2622]=20A0\n1A49:00000FC9  push word [bp-04]               ss:[2620]=0034\n1A49:00000FCC  nop                                           \n1A49:00000FCD  push cs                                       \n1A49:00000FCE  call 000010BF ($+ee)                          \n\n２番目の引数は0になっていますが、次のプレーンは1、さらに次は2とカウントアップしています。これはプレーンアドレスのインデックス番号です。以下、GVRAMセグメント。\ndseg:2392 word_D1E2\t  dw 0A800h\ndseg:2392\t\t\t\ndseg:2394 word_D1E4\t  dw 0B000h\ndseg:2394\t\t\t\ndseg:2396 word_D1E6\t  dw 0B800h\ndseg:2396\t\t\t\ndseg:2398 word_D1E8\t  dw 0E000h",
-          "link": "https://akkera102.hatenablog.com/entry/2024/07/12/235640",
-          "publishedOn": "2024-07-12T14:56:40.000Z",
-          "wordCount": 564,
-          "title": "pc98 desire解析2（MLD）",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

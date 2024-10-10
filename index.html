@@ -15732,72 +15732,6 @@ GameGaz Daily 2024.7.13 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">pc98 desire解析2（MLD）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/07/12/235640" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>私は気がついてしまいました・・・。ゲームは色々な不明引数があるので解析に向きません。そこで目をつけたのがエロゲローダーMLDです。無駄な機能もなく、画像ファイルをプロンプトで指定したら即画面に反映してくれます。解析するならこっちですね。以下、desireのGDTファイルをMLDで読み込ませた場合です。
-■ファイルオープン
-0923:00003520  int  21
-■ファイル読み込み
-0923:00001A08  mov  ah,3F     
-0923:00001A0A  mov  bx,[bp+06]
-0923:00001A0D  mov  cx,[bp+0C]
-0923:00001A10  lds  dx,[bp+08]
-0923:00001A13  int  21        
-■ファイルクローズ
-0923:000031F1  mov  ah,3E     
-0923:000031F3  mov  bx,[bp+06]
-0923:000031F6  int  21        
-■ヘッダのシグネチャ確認&quot;DA1&quot; 0x44 0x41 0x31と、ファイルサイズ確認？
-1A49:00000C7D  push word [bp-02]  
-1A49:00000C80  push word [bp-04]  
-1A49:00000C83  nop                
-1A49:00000C84  push cs            
-1A49:00000C85  call 00000C8F ($+7)
-■初期化処理？（省略）
-■パレットデータ格納　ファイルオフセット0x10～
-4bit * 4プレーン * 16色 &#x3D; 256bit / 8 &#x3D; 32バイト
-ファイルからデータ取ったら即GDCに反映しています（16回分。
-1DE3:00000098  out  A8,al     
-1DE3:0000009A  mov  al,[bp-05]
-1DE3:0000009D  out  AA,al     
-1DE3:0000009F  mov  al,[bp-04]
-1DE3:000000A2  out  AC,al     
-1DE3:000000A4  mov  al,[bp-03]
-1DE3:000000A7  out  AE,al     
-■プレーンに直書き
-1A49:00000FC0  push word [bp-1E]               ss:[2606]&#x3D;0145
-1A49:00000FC3  push word [bp-0E]               ss:[2616]&#x3D;0000
-1A49:00000FC6  push word [bp-02]               ss:[2622]&#x3D;20A0
-1A49:00000FC9  push word [bp-04]               ss:[2620]&#x3D;0034
-1A49:00000FCC  nop                                           
-1A49:00000FCD  push cs                                       
-1A49:00000FCE  call 000010BF ($+ee)                          
-
-２番目の引数は0になっていますが、次のプレーンは1、さらに次は2とカウントアップしています。これはプレーンアドレスのインデックス番号です。以下、GVRAMセグメント。
-dseg:2392 word_D1E2	  dw 0A800h
-dseg:2392			
-dseg:2394 word_D1E4	  dw 0B000h
-dseg:2394			
-dseg:2396 word_D1E6	  dw 0B800h
-dseg:2396			
-dseg:2398 word_D1E8	  dw 0E000h</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17728,7 +17662,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-10-10T02:24:46.961Z">2024-10-10T02:24:46.961Z</time>
+    <time id="build-timestamp" datetime="2024-10-10T03:05:57.541Z">2024-10-10T03:05:57.541Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
