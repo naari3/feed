@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-10T12:02:19.707Z</updated>
+    <updated>2024-10-10T13:06:19.078Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10892,18 +10892,6 @@ UnlockSwitch この週末に発売日などを発表へ first appeared on 大人
 The post 個人的に愛用しているガジェットについて語る回　その１　オーディオ系機器 first appeared on YTPMV.info.]]></summary>
         <author>
             <name>maimai</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2024-07-12]]></title>
-        <id>hatenablog://entry/6801883189121308518</id>
-        <link href="https://commits.hatenablog.com/entry/2024/07/13/100000"/>
-        <updated>2024-07-13T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[RUBY_INTERNAL_EVENT_NEWOBJ や RUBY_INTERNAL_EVENT_FREEOBJ はなぜ公開されていないのだろう、と考えていたのだけど、少なくともRUBY_INTERNAL_EVENT_FREEOBJはRubyでは書けないな、ということに気がついた。このフックの中でGCが起きる操作をしてはいけないし、objectへの参照を新たに作ってもいけない。
-RubyConf に Proposal を出そうか悩んでいる。
-話したい内容はあるのだけど、国外に行くのがめんどくさい……。日本と比べると世界中のほとんどの都市は治安が悪いし、シカゴは空港からのアクセスもそんなに良いわけではなさそう。あと関空からの直通もあるか怪しい…。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>
