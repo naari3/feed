@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-10T17:01:36.333Z</updated>
+    <updated>2024-10-10T18:01:47.718Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -85,6 +85,16 @@ One experienceはこの独立した2つのサービスを1つに統合し、国�
         <summary type="html"><![CDATA[こんにちわ。九州のとみーです。 前回の記事では、初めてファインチューニングの記事を載せました。 今回はそんな検証のさなかにふと気づいて取り組んだ検証のお話になります。 LLMの受け入れ文字数⇒コンテキ...]]></summary>
         <author>
             <name>とみ（とみーとも言う）</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dialog と Popover #7]]></title>
+        <id>https://blog.jxck.io/entries/2024-10-10/user-consent-dialog.html</id>
+        <link href="https://blog.jxck.io/entries/2024-10-10/user-consent-dialog.html"/>
+        <updated>2024-10-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ここまで解説した仕様を踏まえ、いくつかの代表的なユースケースの実装について考えていく。あくまで仕様の組み合わせ方についての解説であり、実装そのものの推奨ではない。また、ここで紹介する仕様はまだ変更の可能性があり、かつ実装も揃ってないものがある点に注意]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>

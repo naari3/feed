@@ -6989,6 +6989,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2024-10-10/user-consent-dialog.html",
+          "author": null,
+          "description": "ここまで解説した仕様を踏まえ、いくつかの代表的なユースケースの実装について考えていく。あくまで仕様の組み合わせ方についての解説であり、実装そのものの推奨ではない。また、ここで紹介する仕様はまだ変更の可能性があり、かつ実装も揃ってないものがある点に注意",
+          "link": "https://blog.jxck.io/entries/2024-10-10/user-consent-dialog.html",
+          "publishedOn": "2024-10-10T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Dialog と Popover #7",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2024-10-03/animation.html",
           "author": null,
           "description": "ついに <toast> -> <popup> -> popup -> popover として、要素から属性になり名前も決まった。とはいえ実装は popup とそんなに変わらないので、 popup でやっていた Origin Trials を継続しながら、徐々に実装を進めていくフェーズが 2022/12 くらいの話だ。Intent to extend Origin Trial: Popover APIhttps://groups.google.com/a/chromium.org/g/blink-dev/c/kZXexHhH7EA/m/UmQYwGW3DAAJしかし、 popover を実用するには足りてない議論があった、それが Animation だ。",
