@@ -2,10 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-11T15:02:05.502Z</updated>
+    <updated>2024-10-11T16:01:40.729Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DDRminiで自前ビルドのMAMEが動いた！]]></title>
+        <id>hatenablog://entry/6802340630913314887</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2024/10/12/003847"/>
+        <updated>2024-10-11T15:38:47.000Z</updated>
+        <summary type="html"><![CDATA[ここまでのまとめ
+ 
+honeylab.hatenablog.jp
+ 
+さて、すでに分かっているように、こいつの中にはZUIKIの手下の開発会社がカスタムしたDDR専用のMAMEがインストールされています。
+完全にそれ以外を除去したわけではありませんので、それ以外の関連のゲームは少しの手直しで動作させることができる可能性があります。
+Kinda broken in some ways (savestates don't work) but it is playable. The background videos cause some hitching though but that also happened in normal MAME too so I guess that's to be expected. pic.twitter.com/qEpJiWkM85
+October 10, 2024
+
+
+しかし、それ以外のゲームを動かすためのコードは入っていない可能性がありますし、通常のMAMEで使用できる各種機能やパッドのカスタマイズなどは使用できません。
+この機械、８コアのARM64が入っているというこの手の機器としてはかなり高性能な演算機能を持っていますので、エミュレーション性能もかなり高いはずです。
+それを利用するために、どうにかしてMAMEを入れてみたいところでしたが。
+MAME全然わからんｗ
+さらにクロスビルドということもあって全然わからん。
+あちこち探したところ、似た環境のARM64であるRaspberryPiように一発でMAMEをクロスビルドしてくれるツールキットを見つけたのでこれを使ってみました。
+github.com
+途中、変な制約につかまってまともにコンパイルできるまで２日ほどかかってしまいましたが、最終的に見事動作する環境を作ることができました！
+よっし！！！！
+MAME 0.270 on DDR mini
+パフォーマンスが出るかはわからん！が、動いたらもうあとはすぐやろ！
+昼寝する pic.twitter.com/PcHy5dj5Av
+October 11, 2024
+
+
+ 
+音声・音量周りの調整ができないなど不便な点はまだまだ残っていますが、HDMIも簡単に使用できるため結構なんでもできる気がします。
+これだけ動くDDR筐体の形をしたMAMEマシンなら、まぁクッソ高いわ！というところから、ちょっと高いかも、ぐらいまで楽しめるんじゃないでしょうか。
+とりあえずは、DDRやBEMANIシリーズがどのぐらい動くのかは気になるところです。
+ただし、内蔵のMAME（シュリンク版）は、ver0.24ぐらいからのフォークっぽく、一応は謹製扱いのパッチワークがされていると考えると、もしかしたら内蔵のやつの方が再現度が高かったりするんでしょうか。わかんないですけど。
+まぁ、本当に必要ならバックポートしたらいいんだと思うんですけどね。逆アセンブルするしかないけど。
+ 
+で、動きました、とはいうけど、残念ながらみんながみんなぱっとインストールできる状態にはなっていません。少なくとも私はSDカードのはんだ付けからrootfsを書き換えて、USBへのバックドアを作っています。
+それに対して、いつものようなFELモードでの書き換えの道も開かれたようです。
+Here's the rough write up. I included all of the patches, tools, and scripts I made for this project. I suck at writing docs so someone should probably make an easy step by step guide on how to use everything.https://t.co/DKEz6fb8cD
+October 9, 2024
+
+
+ 
+これを使えば、はんだ付けなし、本体を分解して基板を開いてボタンを押しながらUSBを接続してインストール、という手順でインストールすることができるようになるでしょう。それまで、もうちょっとだけこの戦いは続くんじゃ。]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[商標の移転手続きを自分でやる]]></title>
         <id>hatenablog://entry/6801883189104506365</id>
