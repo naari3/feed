@@ -196,6 +196,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398295785113",
+          "author": null,
+          "description": "ToHeartはセーブ関連で致命傷が多くて泣きそうです。ごめんなさい。\n2024/10/11 v0.06\n    セーブデータに効果音番号を格納していなかったフリーズバグを修正\n    FLASH領域(CUBIC STYLE製カードリッジ)に書き込み不具合があった問題を修正\n    msys-2.0.dll入れすぎ問題を修正",
+          "link": "https://akkera102.hatenablog.com/entry/2024/10/13/191958",
+          "publishedOn": "2024-10-13T10:19:58.000Z",
+          "wordCount": 438,
+          "title": "ToHeartGBA修正",
+          "enclosure": {
+            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802340630911822945",
           "author": null,
           "description": "detail.chiebukuro.yahoo.co.jp\ndevkitProにあるcrt0.sを使っていなくて自作しているのかなーと予想しています。main関数を呼び出す前に、変数初期値を決定しているのがcrt0.sなもので。そうでないとしたら、devkitProのサンプルでもいいですし私のでもいいけど、正常に動いているプロジェクトと比較していくのがいいと思います。",
