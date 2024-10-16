@@ -2,10 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-16T00:03:24.426Z</updated>
+    <updated>2024-10-16T01:28:44.267Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DMS を利用した継続的なデータ変更検知]]></title>
+        <id>hatenablog://entry/6802418398296291522</id>
+        <link href="https://techlife.cookpad.com/entry/2024/10/16/101605"/>
+        <updated>2024-10-16T01:16:05.000Z</updated>
+        <summary type="html"><![CDATA[SRE の鈴木 (id:eagletmt) です。先日、この開発者ブログで赤松から One Experience プロジェクトについての紹介がありました。
+
+自分もこの One Experiene プロジェクトに携わっており、このプロジェクトが始まったちょうど1年くらい前にはイギリスにあるオフィスに行き、グローバル版のシステムを開発・運用しているメンバーと直接顔を合わせたりもしていました。自分は One Experience プロジェクトにおいて主にデータ移行について担当していました。データ移行に必要な作業はいくつかありますが、この記事ではその中から日本版のシステムのデータベースで発生したデータの変更をどのようにしてグローバル版のシステムのデータベースに継続的に反映したかの部分について紹介します。
+One Experience でのデータ移行
+赤松の記事にも書かれていたように、日本版とグローバル版は完全に独立したシステムとして動いており、Aurora MySQL を利用しているという共通点はありつつもデータベースサーバはそれぞれ独立していました。グローバル版のシステムはいくつかのレシピサービスを買収し取り込みながら成長してきた歴史がありますが、取り込み元のサービスを一度停止してからデータを移行するのが基本でした。
+今回の場合、取り込み元のサービスにあたる日本版のシステムを一度停止してからデータ移行を行うという手段を取る可能性も考えましたが、利用者の多い日本版のシステムに停止期間を設けることには高いリスクがありますし、グローバル版に移行したバージョンのモバイルアプリを段階的にリリースする計画や本番環境の実データを使って少人数に対して事前にユーザテストを行う計画が早期に決定されたので、両方のシステムを稼働させながらダウンタイム無しでデータ移行を行う方針になりました。そのためには…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2024-10-15]]></title>
+        <id>hatenablog://entry/6802418398296432763</id>
+        <link href="https://commits.hatenablog.com/entry/2024/10/16/100000"/>
+        <updated>2024-10-16T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[docs.google.com
+会社のイベントで登壇していた。Steepのメモリ削減について。
+用事があって早めに会場を脱出することになってしまったのはちょっともったいないことをしたかもしれない。
+地域のコミュニティって感じでいいイベントでした。
+Majo の話と、Fork worker / Reforking の話をした。
+Reforking は今絶賛実装しているところ。ひとまず CoW を効くようにすることで本当にメモリが共有されるのかを確認するためのプロトタイプを作っている。既存の worker の kill とか reforking 中にくるリクエストをうまくさばくこととかはとりあえずサボって、fork した先にリクエストを流すところにフォーカスしてメモリ使用量を計測したい。
+しかし実は fork するだけでも(graceful restart的なことを考えなくても)なかなかむずかしい問題だなと気がついた。というのも、CoW を意味のあるものにするには fork 前後で同じRBS::Environmentなどのオブジェクトを参照させる必要があるのだけど、これがむずかしい。Reforking のアイディアを借りてきた puma とかはrack applicationを維持することだけを考えればいいようになっているけれど、Steepの場合はそんなにきれいに分かれていないので、うまく必要なオブジェクトが共有されるようにforkをしないといけない。
+これは HTTP というものがステートレスであるからやりやすくなっているのかなと思ったりした。ステートレスであるからプロセスの管理をする人は比較的楽にforkできるのではないか。Steepは解析のための環境という巨大stateを持っているからそれがむずいような気がする。
+一方で、stateというのは実はこの問題の主題ではなくて、通信を行う層とロジックが置かれた層が比較的密に結合しているのが問題なのかもしれないとも思った。ここの結合がもっと疎であれば、案外楽にforkができるのかもしれない。この辺はもうすこし考えたい。
+発表の反省としては、もともと Ruby を知っていることは前提としないつもりでやっていたのだけど、それ以外の知識の前提を置きすぎたのでは、と少し反省している。fork の説明を最初全くしていなかったのだけど、したほうがいいかなと思って発表20分前に追加していたりした。あとは LSP とはなにか、も一言も触れていなくて、説明があったほうが良かったかなという気持ちが少しある。まあ面白かったと何人かに言ってもらえたのは良かった、うれしい。置いてけぼりにしてしまった人がいたらごめんなさい…
+この Steep の Reforking の話は、進捗にもよるけど来年のRubyKaigiネタとかにしてもいいかもしれない。少なくともどこかで登壇するかブログ記事にするかはしたい。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dialog と Popover #9]]></title>
+        <id>https://blog.jxck.io/entries/2024-10-16/toast-popover.html</id>
+        <link href="https://blog.jxck.io/entries/2024-10-16/toast-popover.html"/>
+        <updated>2024-10-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ここまで解説した仕様を踏まえ、いくつかの代表的なユースケースの実装について考えていく。あくまで仕様の組み合わせ方についての解説であり、実装そのものの推奨ではない。また、ここで紹介する仕様はまだ変更の可能性があり、かつ実装も揃ってないものがある点に注意]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.10.16]]></title>
         <id>https://gamegaz.com/?p=42235</id>
