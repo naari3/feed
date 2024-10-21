@@ -15718,36 +15718,6 @@ www.youtube.com
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2024-07-23</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/07/24/100000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>github.com
-Rubyのメモリプロファイラを作っている。
-Steepのピーク時のメモリ使用量が多いという問題に対して、長生きするオブジェクトがピーク時のメモリ使用量に影響しているのではという仮説を立てて、長生きしているオブジェクトを一覧するプロファイラを作った。
-既存のmemory_profiler gemだと実現できず、またRubyレベルのAPIにも公開されていない機能を使う必要があるのでCで書いた。
-基本的な機能は動いて、Steepで問題になっていそうな箇所もなんとなく見えてきた。同じコードをmemory_profiler gemで計測すると似たような出力は出るのだけど、短命なオブジェクト生成も混ざっているので、どれがピーク時の使用量に影響していそうかを見るのが結構大変。
-副次的な効果として、memory_profiler gemよりも多少高速に動いていそう。memory_profiler gemはGCを止めてコードを実行し、実行後にObjectSpace.each_objectで全オブジェクトに対して位置情報とかを取っていくので、allocateしたオブジェクトの数が多くなるとめっちゃ時間がかかる。
-一方でmajoはmajor GCを生き残ったオブジェクトだけに対して位置情報などを取得するので、そこのコストが低くなっている。
-これは気がついていなかったけど中々嬉しい。1.2億個オブジェクトを生成しているケースで、memory_profilerだと1時間ちょいかかっていたのが、majoだと比較的現実的な時間で終わっていた。
-あとはCSV出力機能も作ったのだけど、これも便利。スプレッドシートで雑に集計していろんな側面から問題を観察できる。
-一応Steepのプロファイルを取れるぐらいには動くまで実装できた。
-確保したメモリのfreeを一切やっていないという問題があるので、それをちゃんと実装したらリリースを宣言したい。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17678,7 +17648,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-10-21T12:02:29.149Z">2024-10-21T12:02:29.149Z</time>
+    <time id="build-timestamp" datetime="2024-10-21T13:06:44.917Z">2024-10-21T13:06:44.917Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
