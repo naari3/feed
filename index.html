@@ -74,6 +74,40 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-10-23">2024-10-23</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">日本とアメリカの太平洋を超えたパフォーマンス改善の取り組み: CloudWatch RUM を中心としたパフォーマンス測定とデータ活用方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2024/10/23/110000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はじめに
+こんにちは。クックパッド SRE の @mozamimy です。先日この開発者ブログで One Experience プロジェクトについての紹介がありました。
+
+このプロジェクトにおいて、わたしは日本版からグローバル版への移行の際の全般的なパフォーマンス周りについて取り組んでいました。
+パフォーマンスと一言でいっても、その中にはネットワークやアプリケーションレイヤでのレイテンシ、MySQL などのミドルウェアでのレイテンシなど、様々な要因が関わってきます。それらの改善において、何よりも重要なのはまず観測することです。移行において取り組んだ様々な作業のうち、ここでは CloudWatch RUM や Calibre といったツールを用いた Web ブラウザからのアクセスのパフォーマンス観測に焦点を当てて紹介します。
+プラットフォーム移行によるパフォーマンスの劣化をできる限り避けたい
+先述の One Experience の紹介記事でも書かれている通り、日本版とグローバル版は完全に独立したプラットフォーム上で動作しています。すなわち日本版とグローバル版ではパフォーマンス特性もまったく異なるということです。
+まず、データの統合による MySQL 関連のデータ増加によるパフォーマンス特性の変化が懸念事項の一つでした。グローバル版と日本版のデータ量を比較すると日本版の方が大きく、統合後にはデータ量が大幅に増加するからです。データ移行の作業の一部である継続的なデータ移行については、先日鈴木による記事が公開されています。
+
+その他にもユーザにとって確実に悪影響があると見込まれていたのが、システムが動作しているリージョンの違いによるレイテンシの増加です。両方とも AWS を利用していますが、日本版は ap-northeast-1 (東京) に、グローバル版は us-east-1 …</span>
+                  </div>
+                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mozamimy/20241022/20241022135704.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-10-22">2024-10-22</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -17491,7 +17525,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-10-23T01:29:09.948Z">2024-10-23T01:29:09.948Z</time>
+    <time id="build-timestamp" datetime="2024-10-23T02:24:45.199Z">2024-10-23T02:24:45.199Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
