@@ -4008,6 +4008,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398299536451",
+          "author": null,
+          "description": "こんにちは。SRE の小川 (@coord_e) です。先日の投稿にあった通り、クックパッドはレシピサービスをグローバル版に統合しました。サービスの統合に伴って、開発や運用のインフラもグローバルチームで利用されているものを使うことになりました。\n\n運用インフラの中でも特に大きな違いとして、日本とグローバル版ではコンテナオーケストレーションの仕組みが異なっています。日本では Amazon Elastic Container Service (ECS) を使ってコンテナを実行していますが、グローバル版では Amazon Elastic Kubernetes Service (EKS) の上でコンテナを実行しています。\nまた開発面ではデプロイフローに大きな違いがあります。日本では、アプリケーションの新しいリビジョンのデプロイは ChatOps によって行なっていました。main ブランチに PR がマージされ、CI パイプラインが新しいリビジョンのコンテナイメージをビルドした後、開発者が Slack チャンネルでコマンドを実行（発言）することで、そのリビジョンのデプロイを行います。日本版での開発フローは下の記事に詳しく記載されています。\n\n一方、グローバル版では、アプリケーションリポジトリでの PR マージ後に自動でデプロイまでが行われます。後に詳しく説明しますが、これは Flux という OSS を活用して実現されています。全体的に GitOps の流れに乗っており、アプリケーションの Git リポジトリへの push を起点としてのちのデプロイの全ての行程が自動で進行するようになっています。\nfluxcd.io\nグローバル版プラットフォームの自動デプロイの流れ。矢印は情報の流れを表しておりリクエストの方向とは必ずしも一致しません\nなお、コンテナオーケストレーションやデプロイの…",
+          "link": "https://techlife.cookpad.com/entry/2024/10/28/204340",
+          "publishedOn": "2024-10-28T11:43:40.000Z",
+          "wordCount": 1432,
+          "title": "Flux + Helm における即時ロールバック",
+          "enclosure": {
+            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/coorde/20241028/20241028111530.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/coorde/20241028/20241028111530.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398298034958",
           "author": null,
           "description": "はじめに\nこんにちは。クックパッド SRE の @mozamimy です。先日この開発者ブログで One Experience プロジェクトについての紹介がありました。\n\nこのプロジェクトにおいて、わたしは日本版からグローバル版への移行の際の全般的なパフォーマンス周りについて取り組んでいました。\nパフォーマンスと一言でいっても、その中にはネットワークやアプリケーションレイヤでのレイテンシ、MySQL などのミドルウェアでのレイテンシなど、様々な要因が関わってきます。それらの改善において、何よりも重要なのはまず観測することです。移行において取り組んだ様々な作業のうち、ここでは CloudWatch RUM や Calibre といったツールを用いた Web ブラウザからのアクセスのパフォーマンス観測に焦点を当てて紹介します。\nプラットフォーム移行によるパフォーマンスの劣化をできる限り避けたい\n先述の One Experience の紹介記事でも書かれている通り、日本版とグローバル版は完全に独立したプラットフォーム上で動作しています。すなわち日本版とグローバル版ではパフォーマンス特性もまったく異なるということです。\nまず、データの統合による MySQL 関連のデータ増加によるパフォーマンス特性の変化が懸念事項の一つでした。グローバル版と日本版のデータ量を比較すると日本版の方が大きく、統合後にはデータ量が大幅に増加するからです。データ移行の作業の一部である継続的なデータ移行については、先日鈴木による記事が公開されています。\n\nその他にもユーザにとって確実に悪影響があると見込まれていたのが、システムが動作しているリージョンの違いによるレイテンシの増加です。両方とも AWS を利用していますが、日本版は ap-northeast-1 (東京) に、グローバル版は us-east-1 …",
@@ -7052,16 +7067,6 @@
           "wordCount": null,
           "title": "Web Developer Conference 2024 開催後記",
           "imageUrl": null
-        },
-        {
-          "id": "https://blog.jxck.io/entries/2024-07-31/deprecating-the-deprecation.html",
-          "author": null,
-          "description": "このエントリは、 3rd Party Cookie Advent Calendar の 29 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookie先日、 Google より Privacy Sandbox の方針転換について発表があった。本当は、まだ記事を書くには情報が足りていないため、あまり書く気はなかったが、今後出てくる発表に備えて経緯をまとめるために、「何がまだ分かっていないか」の現状を書いておくことにする。",
-          "link": "https://blog.jxck.io/entries/2024-07-31/deprecating-the-deprecation.html",
-          "publishedOn": "2024-07-31T00:00:00.000Z",
-          "wordCount": null,
-          "title": "3PCA 29 日目: Privacy Sandbox の方針転換は何を意味するか",
-          "imageUrl": null
         }
       ]
     },
@@ -9019,16 +9024,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2024.8.1",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=41644",
-          "author": "mamosuke",
-          "description": "ps5-payload-shsrv v0.9,webMAN MOD 1.47.46h,Switchfin 0.5.1,Xbox 360 Homebrew Store,PCSX2 v2.1.46,NESFab 1.5,NooDS→→→この記事の続きを読む\nGameGaz Daily 2024.7.31 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024073141644/",
-          "publishedOn": "2024-07-30T23:01:28.000Z",
-          "wordCount": 1711,
-          "title": "GameGaz Daily 2024.7.31",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
