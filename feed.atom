@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-29T02:25:37.046Z</updated>
+    <updated>2024-10-29T03:07:46.727Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10666,18 +10666,6 @@ GameGaz Daily 2024.8.1 first appeared on 大人のためのゲーム講座.]]></
 続きをみる]]></summary>
         <author>
             <name>ゎけ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[rookies移植5]]></title>
-        <id>hatenablog://entry/6801883189126155426</id>
-        <link href="https://akkera102.hatenablog.com/entry/2024/07/31/234128"/>
-        <updated>2024-07-31T14:41:28.000Z</updated>
-        <summary type="html"><![CDATA[ん－予定より早まるかもしれないです。というのもRookiesはスクリプトやリソース画像の管理がしっかりしていて無駄がありません。アトラクナクアと同等かそれ以上。今まで移植した中で最上位に位置してるほどで無茶苦茶コンバートがラクでした。あれもやりたい、これもやりたいでだいたい汚れていくものなのですけど割り切りがしっかりしていますねー。
-たとえばキャラ画像を左右に表示したくなるものですけど、そういうこともしない。左側に表示するキャラは左側だけ。右側に表示するキャラは右側だけ。そのため背景サイズとキャラサイズが同じです。もちろんキャラサイズで背景サイズは大きいので５，６割透明色になっています。これはちょっと処理が重いのではと思うけど開始座標位置を存在させないこととのトレードだと思います。
-もう一つすごいと思ったのには選択肢部分ですね。選択した戻り値を変数に入れるのですけど、それがそのままフラグ管理になっている。ふつう選択肢の後にイベントがあって、イベントが完了したらフラグを１立てるということをします。その場合、各イベントの変数を用意しないといけません。対してRookiesは選択肢返却値（たとえば選択肢１なら０，選択肢２なら１）がそのままフラグ管理になっています。後半になるとその変数の値をみているので非常に見通しがいいですね。ここは目からうろこの部分でした。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
