@@ -1367,21 +1367,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189126639403",
-          "author": null,
-          "description": "最近はCloudflare Workersを触っている。Cloudflare Workersが動いているWorkd(\"わーくでぃー\"って読む)ランタイムではnode.jsに依存するAPIが利用できない*1ため、一部の関数/ライブラリが使えない。\ngithub.com\n今までアクセスしたユーザーのIPアドレスを書きだすにはremix-utilsのgetClientIPAddress(request:Request)関数を利用していたが、ランタイムをnodeからworkedに移行したためremix-utilsが使えなくなり、結果として別の手段を検討する必要が出てきた。理由としては、remix-utilsがcrypt-jsモジュールに依存し、crypto-jsモジュールはnode APIを利用するためである。\nremix.run\nnodejs.org\n実装を見ていたら結構簡単にできそうだったので、自分でサクッと書いてみた。\nIPアドレスの取得にはX-Forwarded-Forを利用している\ndeveloper.mozilla.org\n\n\nなお、個人情報の取り扱いが面倒なため、IPアドレス自体は保存はせずに復元不可能な形でハッシュした値をDBに保存している。\n\n\n\n\n*1:wrangler.tomlに設定を書き足せば一部使えるが、完全ではない",
-          "link": "https://contradiction29.hatenablog.com/entry/2024/08/02/222030",
-          "publishedOn": "2024-08-02T13:20:30.000Z",
-          "wordCount": 349,
-          "title": "RemixでRequestオブジェクトからクライアントのIPアドレスを抜き出すだけの関数",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -6050,16 +6035,6 @@
           "wordCount": 2338,
           "title": "『博報堂デザインのブランディング』永井一史｜ちょっと古めの方法論を学ぶ",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/149177148/rectangle_large_type_2_abe9636f86d3494a8e9a46f60cd8f0fb.png?width=800"
-        },
-        {
-          "id": "https://note.com/kazumakawauchi/n/n9137fd59618e",
-          "author": null,
-          "description": "パリオリンピック2024が始まりました。直近の東京2020がああいう感じだったので、久しぶりにオリンピックにフルで興奮している毎日です。\n一方で、スポーツの祭典ですから、毎日毎日スポーツが行われている中で、もちろん日本にもあらゆる媒体を通して伝わってくるわけですけれども、そうするとスポーツが持つ（あるいは大きな大会独特のものかもしれませんが）負の部分が見えたりします。\n続きをみる",
-          "link": "https://note.com/kazumakawauchi/n/n9137fd59618e",
-          "publishedOn": "2024-08-02T13:18:53.000Z",
-          "wordCount": 2268,
-          "title": "オリンピックは\"報道\"するべきか\"〇〇\"するべきか？",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/149373967/rectangle_large_type_2_b863253a28689ffaa1c76ad0edd33a79.png?width=800"
         }
       ]
     },

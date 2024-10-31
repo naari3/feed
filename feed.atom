@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-10-31T00:03:44.788Z</updated>
+    <updated>2024-10-31T01:29:15.232Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10551,43 +10551,6 @@ GameGaz Daily 2024.8.3 first appeared on 大人のためのゲーム講座.]]></
 　午後1時9分4秒、19分遅れで、ナニガ・キモチーノの駅に到着した。ここはシマダーニ・ナショナル・レイルウェイの中心駅である。もっとも、この路線でハッテンしているのは終点、シマダーニくらいのものだから、この駅が路線の中心…]]></summary>
         <author>
             <name>ぷもも園</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RemixでRequestオブジェクトからクライアントのIPアドレスを抜き出すだけの関数]]></title>
-        <id>hatenablog://entry/6801883189126639403</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2024/08/02/222030"/>
-        <updated>2024-08-02T13:20:30.000Z</updated>
-        <summary type="html"><![CDATA[最近はCloudflare Workersを触っている。Cloudflare Workersが動いているWorkd("わーくでぃー"って読む)ランタイムではnode.jsに依存するAPIが利用できない*1ため、一部の関数/ライブラリが使えない。
-github.com
-今までアクセスしたユーザーのIPアドレスを書きだすにはremix-utilsのgetClientIPAddress(request:Request)関数を利用していたが、ランタイムをnodeからworkedに移行したためremix-utilsが使えなくなり、結果として別の手段を検討する必要が出てきた。理由としては、remix-utilsがcrypt-jsモジュールに依存し、crypto-jsモジュールはnode APIを利用するためである。
-remix.run
-nodejs.org
-実装を見ていたら結構簡単にできそうだったので、自分でサクッと書いてみた。
-IPアドレスの取得にはX-Forwarded-Forを利用している
-developer.mozilla.org
-
-
-なお、個人情報の取り扱いが面倒なため、IPアドレス自体は保存はせずに復元不可能な形でハッシュした値をDBに保存している。
-
-
-
-
-*1:wrangler.tomlに設定を書き足せば一部使えるが、完全ではない]]></summary>
-        <author>
-            <name>現実モデリング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[オリンピックは"報道"するべきか"〇〇"するべきか？]]></title>
-        <id>https://note.com/kazumakawauchi/n/n9137fd59618e</id>
-        <link href="https://note.com/kazumakawauchi/n/n9137fd59618e"/>
-        <updated>2024-08-02T13:18:53.000Z</updated>
-        <summary type="html"><![CDATA[パリオリンピック2024が始まりました。直近の東京2020がああいう感じだったので、久しぶりにオリンピックにフルで興奮している毎日です。
-一方で、スポーツの祭典ですから、毎日毎日スポーツが行われている中で、もちろん日本にもあらゆる媒体を通して伝わってくるわけですけれども、そうするとスポーツが持つ（あるいは大きな大会独特のものかもしれませんが）負の部分が見えたりします。
-続きをみる]]></summary>
-        <author>
-            <name>河内一馬</name>
         </author>
     </entry>
     <entry>
