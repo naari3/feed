@@ -6797,6 +6797,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2024-11-01/tooltip-popover.html",
+          "author": null,
+          "description": "今回考えたいのは、 GitHub の Issue や User アイコンをマウスでホバーすると、 Issue の詳細や User Profile が表示されるアレだ。挙動としては想像通り、対象要素に Anchoring した <div popover> を表示し、中に好きなようにコンテンツを入れれば良い。ただし UI のセマンティクスに関しては、複数の議論が行われており、方針もいくつか考えられる。今回は、それらの現状を整理つつ、考えうる選択肢をいくつか提示する。その中で要件に合わせて何を選ぶかは実装者に委ねたい。",
+          "link": "https://blog.jxck.io/entries/2024-11-01/tooltip-popover.html",
+          "publishedOn": "2024-11-01T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Dialog と Popover #11",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2024-10-22/menu-popover.html",
           "author": null,
           "description": "ここまで解説した仕様を踏まえ、いくつかの代表的なユースケースの実装について考えていく。あくまで仕様の組み合わせ方についての解説であり、実装そのものの推奨ではない。また、ここで紹介する仕様はまだ変更の可能性があり、かつ実装も揃っていないものがある点に注意",

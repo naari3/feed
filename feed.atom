@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-01T10:01:51.371Z</updated>
+    <updated>2024-11-01T11:01:55.992Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Dialog と Popover #11]]></title>
+        <id>https://blog.jxck.io/entries/2024-11-01/tooltip-popover.html</id>
+        <link href="https://blog.jxck.io/entries/2024-11-01/tooltip-popover.html"/>
+        <updated>2024-11-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[今回考えたいのは、 GitHub の Issue や User アイコンをマウスでホバーすると、 Issue の詳細や User Profile が表示されるアレだ。挙動としては想像通り、対象要素に Anchoring した <div popover> を表示し、中に好きなようにコンテンツを入れれば良い。ただし UI のセマンティクスに関しては、複数の議論が行われており、方針もいくつか考えられる。今回は、それらの現状を整理つつ、考えうる選択肢をいくつか提示する。その中で要件に合わせて何を選ぶかは実装者に委ねたい。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.11.1]]></title>
         <id>https://gamegaz.com/?p=42326</id>
