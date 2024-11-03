@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-03T03:09:52.846Z</updated>
+    <updated>2024-11-03T04:01:54.552Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ダメダメ]]></title>
+        <id>hatenablog://entry/6802418398301075604</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/11/03/121528"/>
+        <updated>2024-11-03T03:15:28.000Z</updated>
+        <summary type="html"><![CDATA[GBA進捗ダメです。季節の変わり目のせいか体調含めて何もいいことありません。まあこういうのは焦ってもしょうがないですからねー。なんか適当に駄文でも・・・。んープログラミングのネタ・・・といっても趣味グラマーな自分に、何か語るようなことはあるのだろうかと考えこんでしまいます。職業でやっているわけじゃないですからねー。
+そういえば、今でも時々あるプログラム関連の単語が炎上したりしますけど、今ではあーまたかーn回目だなーと冷めた気持ちになっています。これは自分の中で情熱を失ってしまったのせいかもしれません。いや、自分の中では結論が出ていて、メイヤー先生本を咀嚼して話せる前提の方々でないと意味がない。自分はそういう才能がないから参加しても意味ないなあ、という気持ちです。つまり今の自分はヘタレ！わっはっは・・・。
+それだと話が終わってしまうので、私のヘボなGBAコードから上がってくる表層なようなものがあるとしたら、まあ妥当じゃね？という感じですかね。いや一般的なコーディング規約を破っているので異端ですけど。static使っていませんが何か？（汗。あんまり洗練されていないと思うCコードは、中間処理が多いせいでしょうね。入力データが汚い結果、処理毎にmemsetや文字列操作が挟まっているように思います。
+話変わりますけどGBエミュレータは世界規模で何度もネタにされるおかげか、とんでもなく洗練されたコードになっていますね。おま、全然ネストしてないやん！と驚いた記憶があります。ああ、今の世代の方が羨ましいです。
+github.com
+techbookfest.org]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.11.3]]></title>
         <id>https://gamegaz.com/?p=42332</id>
