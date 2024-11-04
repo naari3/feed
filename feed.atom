@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-04T05:01:51.886Z</updated>
+    <updated>2024-11-04T06:02:04.373Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[『JavaScriptプログラマーのためのTypeScript厳選ガイド』を執筆しました]]></title>
+        <id>hatenablog://entry/6802418398301366539</id>
+        <link href="https://gfx.hatenablog.com/entry/2024/11/04/145752"/>
+        <updated>2024-11-04T05:57:52.000Z</updated>
+        <summary type="html"><![CDATA[JavaScriptプログラマーのためのTypeScript厳選ガイド という本を書きました。JavaScript中級者でTypeScript初心者のプログラマーに向けたTypeScriptの入門書です。
+
+これまで何度かTypeScriptの記事を書いてきました。
+TypeScript再入門 ― 「がんばらないTypeScript」で、JavaScriptを“柔らかい”静的型付き言語に｜ハイクラス転職・求人情報サイト AMBI（アンビ）
+「がんばらないTypeScript」のための現実的な設定を考える ─ 4レベルの厳しさを使い分けてTypeScript疲れを克服しよう！｜ハイクラス転職・求人情報サイト AMBI（アンビ）
+今回の本は、既存のJavaScriptプロジェクトをTypeScriptに移植するという場面を想定した「がんばらないTypeScript」路線ではなく、TypeScriptというプログラミング言語を一から学ぶという想定で書いた本です。
+TypeScript初心者向けではありますが、書いてる際にいろいろ調べた結果、執筆開始時の私も知らなかった情報をふんだんに載せているので、「なんとなくTypeScriptを使っている」という人でも楽しめるような本にしたつもりです。
+ともあれ執筆を頑張りました！！いやほんとに、子供を二人育てながら（一人は執筆中に生まれました！）一冊書き上げるのは本当に大変でした。執筆するといっても、なにも子育てが一番忙しい時期にやらなくてもよかったなあという思いは正直あります。いい経験にはなりましたが。
+ところで、本書はTypeScriptインタプリタ（コンパイル後即時実行する処理系）として tsimp (TypeScript IMPort) というツールを使っています。これはダウンロード数はそれほど多くないのですが、ES Modulesに対応していて実行前に型チェックを行う処理系としては現時点で唯一無二なツールです。
+これについて、本書内では詳しく説明していないのですが、TypeScript 5.6とtsimp 2.0.11以前のバージョンの組み合わせが動作しないという問題がありました。そのため、本書では一貫してTypeScriptのバージョン5.5を指定しています。ただ、最近問題が修正されたtsimp 2.0.12がリリースされたため、本書のすべてのプログラムはTypeScript 5.6でも問題なく動作するようになっています。正誤表に乗せるものでもないのですが、この場を借りて周知させていただきます。]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.11.4]]></title>
         <id>https://gamegaz.com/?p=42353</id>
