@@ -3533,6 +3533,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398300637421",
+          "author": null,
+          "description": "いつもはてなブログをご利用いただきありがとうございます。\n掲題の通り、2024年11月27日(水)をもちまして、Instagram貼り付け機能を廃止いたします。\n代替方法\nなお、はてなブログの編集画面からは貼り付けられなくなりましたが、下記の手順でInstagramから埋め込み用のコードを入手することが可能です。\n手順\nご自身のInstagramのページを開き、貼り付けたい写真を開く\n写真右上の「⋯」をクリック\n\n\n\nポップアップしたメニューの「埋め込み」をクリック\n\n\n\n「埋め込みコードをコピー」をクリック\n\n\n\nはてなブログの編集画面にコピーしたコードを貼り付ける\n\n見たまま編集を利用している場合は、「HTML編集」タブを選択し、貼り付ける\nはてな記法、Markdownを利用している場合は、本文にそのまま貼り付けて問題ありません",
+          "link": "https://staff.hatenablog.com/entry/2024/11/08/140515",
+          "publishedOn": "2024-11-08T05:05:15.000Z",
+          "wordCount": null,
+          "title": "2024年11月27日をもって、Instagram貼り付け機能を廃止します",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398300637421/1731042315",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398300637421/1731042315"
+        },
+        {
           "id": "hatenablog://entry/6802418398302353369",
           "author": null,
           "description": "2024年11月8日9:46頃から10:01頃まで、はてなブログに接続しづらくなる障害が発生していました。具体的な影響は以下のとおりです。\nブログを閲覧するとエラー画面が表示される場合がある\n記事の編集画面などの管理画面を閲覧するとエラー画面が表示される場合がある\n記事の投稿や設定の変更などを行うとエラー画面が表示され投稿や変更が反映されない場合がある\n\n原因は、サーバーの過負荷によるものです。現在は復旧しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
@@ -7147,6 +7162,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml",
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20241104-similar-looks-recommendation-via-vision-language-model/",
+          "author": null,
+          "description": "こんにちは、メルカリのAI/LLMチームで機械学習エンジニアをしているarr0wとshoです！ 本テックブログでは、Vision-Language Modelの一つであるSigLIP [1]を、メルカリの商品データ（Im […]",
+          "link": "https://engineering.mercari.com/blog/entry/20241104-similar-looks-recommendation-via-vision-language-model/",
+          "publishedOn": "2024-11-08T14:33:38.000Z",
+          "wordCount": null,
+          "title": "Vision-Language Modelを活用した「見た目が近い商品」レコメンド改善の取り組み",
+          "imageUrl": null
+        },
         {
           "id": "https://engineering.mercari.com/blog/entry/20241010-97cca785fa/",
           "author": null,

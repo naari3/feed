@@ -2,10 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-08T05:02:16.465Z</updated>
+    <updated>2024-11-08T06:01:41.906Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Vision-Language Modelを活用した「見た目が近い商品」レコメンド改善の取り組み]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20241104-similar-looks-recommendation-via-vision-language-model/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20241104-similar-looks-recommendation-via-vision-language-model/"/>
+        <updated>2024-11-08T14:33:38.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、メルカリのAI/LLMチームで機械学習エンジニアをしているarr0wとshoです！ 本テックブログでは、Vision-Language Modelの一つであるSigLIP [1]を、メルカリの商品データ（Im […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2024年11月27日をもって、Instagram貼り付け機能を廃止します]]></title>
+        <id>hatenablog://entry/6802418398300637421</id>
+        <link href="https://staff.hatenablog.com/entry/2024/11/08/140515"/>
+        <updated>2024-11-08T05:05:15.000Z</updated>
+        <summary type="html"><![CDATA[いつもはてなブログをご利用いただきありがとうございます。
+掲題の通り、2024年11月27日(水)をもちまして、Instagram貼り付け機能を廃止いたします。
+代替方法
+なお、はてなブログの編集画面からは貼り付けられなくなりましたが、下記の手順でInstagramから埋め込み用のコードを入手することが可能です。
+手順
+ご自身のInstagramのページを開き、貼り付けたい写真を開く
+写真右上の「⋯」をクリック
+
+
+
+ポップアップしたメニューの「埋め込み」をクリック
+
+
+
+「埋め込みコードをコピー」をクリック
+
+
+
+はてなブログの編集画面にコピーしたコードを貼り付ける
+
+見たまま編集を利用している場合は、「HTML編集」タブを選択し、貼り付ける
+はてな記法、Markdownを利用している場合は、本文にそのまま貼り付けて問題ありません]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2024年11月-1】魚]]></title>
         <id>hatenablog://entry/6802418398302358534</id>
