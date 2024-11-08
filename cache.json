@@ -1098,21 +1098,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189128788385",
-          "author": null,
-          "description": "めっちゃしょうもない話だけれど、新しく追加した補完関数がどうしても適用されなくて困っていた。\nfpathが通ってないのかと思ったけどそんなこともない。\n$ echo $fpath | tr ' ' '\\n' | grep '目的のファイル'\n\n\n\nうーんと唸ってChatGPT先生に聞いてみたらキャシュじゃないかってことだった。\n$ rm ~/.config/zsh/.zcompdump\n\n\n\nこれでzshを起動しなおすと無事に適用された。",
-          "link": "https://blog.nishimu.land/entry/2024/08/11/183859?utm_source=feed",
-          "publishedOn": "2024-08-11T09:38:59.000Z",
-          "wordCount": 220,
-          "title": "zshの補完関数が適用されなくて困った",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -2332,21 +2317,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189128787676",
-          "author": null,
-          "description": "パナソニック 炊飯器 2合 IH 無洗米 全自動 スマホ連携 遠隔炊飯 ホワイト SR-AX1-W\nパナソニック(Panasonic)\nAmazon\n最近私はほぼ毎食、この炊飯器でご飯を0.5合ずつ炊いています。\nもともと車中泊用に買ったのですが、車の中でそれほどご飯を炊くことはないので、自宅に持って帰ってきました。\nまあ、普通の炊飯器もあるし、そんなに期待していなかったのですが、一度使い出したら、これ、まったくやめられなくなりました。\n何がものすごいというと\n「完璧な水加減のご飯が炊き上がる」\nのです。\nもちろん私も0.5合や1合を炊飯器で炊く時には、これまでも一応測っていますが、それでも通常の炊飯器は2～3合が一番美味しく炊けるような大きさになっているので、0.5合や1合は必ずしも美味しく炊けません。\nしかし、この全自動炊飯器、ほんとうに\n「0.5合で、完璧な炊き上がり」\nが可能になるのです。これ以上美味しいものはなかなかないんじゃないかというレベルの炊き上がりです。\nたまに普通の炊飯器で炊いてみますけれども、やはりその差は歴然としています。この水加減の完璧な炊飯器が、しかも手間暇なく毎回食べられるというのはものすごいです。しかも洗うのも上蓋と釜を洗うだけなので、本当に簡単です。アプリからも炊飯指示できますが、本体のスイッチ長押しでも良いので、どちらでもOKみたいな感じです。\nほんと、サトウのご飯にちかい簡単さで完璧なご飯が毎食炊き上がるというのは本当に凄いと思います。\nおかずは大体最近、ホットクックにもっとクックをつけて作ってしまうので、簡単です。材料もアマゾンのライフの配達でだいたいまかなっています。\nすっかり車中泊ブームが去って行ったのですが、その置き土産としてのこのパナの炊飯器、ものすごい食事革命でした。これ、一度食べてみないとそのすごさがわからないと思うので、どこかで機会があったら、食べてみてください。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2024/08/11/183456",
-          "publishedOn": "2024-08-11T09:34:56.000Z",
-          "wordCount": 617,
-          "title": "パナの全自動炊飯器がここ数年間の間のまーまー一番の食事革命でした",
-          "enclosure": {
-            "url": "https://m.media-amazon.com/images/I/21mGauX2W6L._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://m.media-amazon.com/images/I/21mGauX2W6L._SL500_.jpg"
         }
       ]
     },
