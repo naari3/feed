@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-11T01:28:56.819Z</updated>
+    <updated>2024-11-11T02:24:33.317Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[モバイルアプリの One Experience]]></title>
+        <id>hatenablog://entry/6802418398302391771</id>
+        <link href="https://techlife.cookpad.com/entry/mobile_one_experience"/>
+        <updated>2024-11-11T02:11:11.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。レシピ事業部でAndroidアプリ開発をしているこやまカニ大好きです。
+行基と近松門左衛門、最近気になるカードは松尾芭蕉です。
+このブログの日本とグローバルのクックパッドを統合しましたという記事で、日本とグローバルのクックパッドサービスの統合が行われたこと、プロジェクトの名称が One Experience であったことについて説明がありました。
+概要
+前提として、クックパッドでは以前から JPアプリと Globalアプリという2つのアプリがリリースされていました。
+ひとつのリポジトリから複数のアプリを配信するというのは Kindle ストア版アプリの配信やAndroidTVアプリの配信などでよくある構成ですが、それによって別のアプリを完全に上書きするというのはかなり珍しいと思います。
+この記事では、アプリを別のコードベースで上書きする際にどういった考慮が必要だったかを大まかに説明していこうと思います。
+モバイルアプリ固有の特性
+詳しい作業内容に入る前に、モバイルアプリのリリースに関する特性について説明したいと思います。
+ロールバックが難しい(実質できない)
+モバイルアプリは、常に以前のものよりも大きい version code を持つアプリでしか上書きできません。
+さらに、JP版へのロールバックを行った場合、JP版 -> One Experience版 とアップデートしたユーザーだけでなく、 One Experience版を新規にインストールしたユーザーもJP版で上書きされてしまいます。
+ One Experience版 へのアップデート時に認証情報や一部のローカルデータをマイグレーションすることは決めていましたが、逆方向のアップデートやJP版 -> One Experience版 を2回繰り返した場合のサポートはあまりにも大変すぎるため、リリースに関する制約…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.11.11]]></title>
         <id>https://gamegaz.com/?p=42378</id>

@@ -74,6 +74,43 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-11-11">2024-11-11</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">モバイルアプリの One Experience</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/mobile_one_experience" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは。レシピ事業部でAndroidアプリ開発をしているこやまカニ大好きです。
+行基と近松門左衛門、最近気になるカードは松尾芭蕉です。
+このブログの日本とグローバルのクックパッドを統合しましたという記事で、日本とグローバルのクックパッドサービスの統合が行われたこと、プロジェクトの名称が One Experience であったことについて説明がありました。
+概要
+前提として、クックパッドでは以前から JPアプリと Globalアプリという2つのアプリがリリースされていました。
+ひとつのリポジトリから複数のアプリを配信するというのは Kindle ストア版アプリの配信やAndroidTVアプリの配信などでよくある構成ですが、それによって別のアプリを完全に上書きするというのはかなり珍しいと思います。
+この記事では、アプリを別のコードベースで上書きする際にどういった考慮が必要だったかを大まかに説明していこうと思います。
+モバイルアプリ固有の特性
+詳しい作業内容に入る前に、モバイルアプリのリリースに関する特性について説明したいと思います。
+ロールバックが難しい(実質できない)
+モバイルアプリは、常に以前のものよりも大きい version code を持つアプリでしか上書きできません。
+さらに、JP版へのロールバックを行った場合、JP版 -&gt; One Experience版 とアップデートしたユーザーだけでなく、 One Experience版を新規にインストールしたユーザーもJP版で上書きされてしまいます。
+ One Experience版 へのアップデート時に認証情報や一部のローカルデータをマイグレーションすることは決めていましたが、逆方向のアップデートやJP版 -&gt; One Experience版 を2回繰り返した場合のサポートはあまりにも大変すぎるため、リリースに関する制約…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398302391771/1731291433" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-11-10">2024-11-10</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -16558,7 +16595,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-11-11T01:28:56.786Z">2024-11-11T01:28:56.786Z</time>
+    <time id="build-timestamp" datetime="2024-11-11T02:24:33.273Z">2024-11-11T02:24:33.273Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
