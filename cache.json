@@ -3657,6 +3657,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398301565839",
+          "author": null,
+          "description": "こんにちは、「ウィリアム」です。クックパッドのAndroidエンジニアです。\n私の日本語はまだ上手ではないので、これから英語で書きます！\nSelf-introduction (自己紹介)\nHi, my name is William, I'm an Android Engineer from the Cookpad's recipe team. I was originally in the global recipe team in Bristol, Uk, but I'm rehired to join the recipe team in Japan instead last year 2023.\nIt is my first time ever in my life to write a techblog, please forgive me for the messy and unorganised structures, よろしくお願いします！\nStatement\nIf you have been reading our techblog recently, you must be aware of what is currently going on with Cookpad! If you haven't, then I'll summarise it in a paragraph.\nIn the past, Cookpad recipe app operated separately in Japan, and rest of the world, Global. But now, we’ve merged into one, and we call it 'One experience.'\n\n\nIt was a long, challenging pro…",
+          "link": "https://techlife.cookpad.com/entry/android-simple-custom-compose-layout",
+          "publishedOn": "2024-11-12T04:14:00.000Z",
+          "wordCount": 2644,
+          "title": "Simple Custom Compose Layout",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398301565839/1731384840",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398301565839/1731384840"
+        },
+        {
           "id": "hatenablog://entry/6802418398302391771",
           "author": null,
           "description": "こんにちは。レシピ事業部でAndroidアプリ開発をしているこやまカニ大好きです。\n行基と近松門左衛門、最近気になるカードは松尾芭蕉です。\nこのブログの日本とグローバルのクックパッドを統合しましたという記事で、日本とグローバルのクックパッドサービスの統合が行われたこと、プロジェクトの名称が One Experience であったことについて説明がありました。\n概要\n前提として、クックパッドでは以前から JPアプリと Globalアプリという2つのアプリがリリースされていました。\nひとつのリポジトリから複数のアプリを配信するというのは Kindle ストア版アプリの配信やAndroidTVアプリの配信などでよくある構成ですが、それによって別のアプリを完全に上書きするというのはかなり珍しいと思います。\nこの記事では、アプリを別のコードベースで上書きする際にどういった考慮が必要だったかを大まかに説明していこうと思います。\nモバイルアプリ固有の特性\n詳しい作業内容に入る前に、モバイルアプリのリリースに関する特性について説明したいと思います。\nロールバックが難しい(実質できない)\nモバイルアプリは、常に以前のものよりも大きい version code を持つアプリでしか上書きできません。\nさらに、JP版へのロールバックを行った場合、JP版 -> One Experience版 とアップデートしたユーザーだけでなく、 One Experience版を新規にインストールしたユーザーもJP版で上書きされてしまいます。\n One Experience版 へのアップデート時に認証情報や一部のローカルデータをマイグレーションすることは決めていましたが、逆方向のアップデートやJP版 -> One Experience版 を2回繰り返した場合のサポートはあまりにも大変すぎるため、リリースに関する制約…",
@@ -7029,6 +7044,26 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=42389",
+          "author": "mamosuke",
+          "description": "Nintendo SwitchエミュレータRyujinxの公式サイトだったドメインの所有者が任天堂に変わっていました→→→この記事の続きを読む\nNintendo Switchエミュレータ Ryujinx 公式サイトのオーナーが任天堂に first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024111242389/",
+          "publishedOn": "2024-11-12T04:48:20.000Z",
+          "wordCount": 1650,
+          "title": "Nintendo Switchエミュレータ Ryujinx 公式サイトのオーナーが任天堂に",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/Ryujinx.jpg"
+        },
+        {
+          "id": "https://gamegaz.com/?p=42387",
+          "author": "mamosuke",
+          "description": "任天堂が発売前のゲームの海賊版ROMを入手してゲームプレイ動画をストリーミング配信していた人物を米コロラド州の連邦裁判所に提訴したことが明らかになりました→→→この記事の続きを読む\n海賊版ROMをフライング入手してエミュレータでストリーミング配信していた一個人を任天堂が提訴 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024111242387/",
+          "publishedOn": "2024-11-12T04:17:16.000Z",
+          "wordCount": 1653,
+          "title": "海賊版ROMをフライング入手してエミュレータでストリーミング配信していた一個人を任天堂が提訴",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/legal-action.jpg"
+        },
         {
           "id": "https://gamegaz.com/?p=42384",
           "author": "mamosuke",
