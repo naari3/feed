@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-12T12:02:25.885Z</updated>
+    <updated>2024-11-12T13:06:37.998Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10180,32 +10180,6 @@ GameGaz Daily 2024.8.16 first appeared on 大人のためのゲーム講座.]]><
 GameGaz Daily 2024.8.15 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2024-08-14]]></title>
-        <id>hatenablog://entry/6801883189129596647</id>
-        <link href="https://commits.hatenablog.com/entry/2024/08/15/100000"/>
-        <updated>2024-08-15T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-activerecord-originator に、Rails 7.2 で動かないという Issue が来ていたので直した。
-github.com
-ついでに Active Record の各バージョンでテストができるように CI を整えた。なんか色々引っかかってごちゃごちゃしてしまった。
-rbs collectionはGemfile.lockを記憶するので、複数のGemfileを使い分けるようなケースでうまく動かない
-
-
-型チェックをテストと分離して最新の Ruby でのみ行うようにした
-Active Record 6.0 ではそもそもテストがコケる
-
-
-一応なんとなく動くからサポート対象にしていたのを忘れてた。テスト対象から外した。
-古い Rails のバージョンで、Ruby head で CI が通らない
-
-
-stdlib の bundled gem 化起因
-適当に matrix から exclude した。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>
