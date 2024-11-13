@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-13T11:01:50.233Z</updated>
+    <updated>2024-11-13T12:02:14.604Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「[作って学ぶ] ブラウザのしくみ」を読んだ]]></title>
+        <id>hatenablog://entry/6802418398303715201</id>
+        <link href="https://satoru-takeuchi.hatenablog.com/entry/2024/11/13/203913"/>
+        <updated>2024-11-13T11:39:13.000Z</updated>
+        <summary type="html"><![CDATA[「[作って学ぶ] ブラウザのしくみ」という本を技術評論社から恵贈いただいたのでレビューを書きました。なお、作って学ぶ本なのに、わたしはまだコードを読んだだけで書き写してはいません。そういう人が書いた感想だということはご承知おきください。
+
+［作って学ぶ］ブラウザのしくみ──HTTP、HTML、CSS、JavaScriptの裏側 WEB+DB PRESS plus
+
+作者:土井 麻未
+技術評論社
+Amazon
+
+本書はWebブラウザのしくみを、自分で作ることによって理解しようという意欲作です。眼にした瞬間に「デカ！」と思った程度には大きく、400ページ以上あります。しかし、読後感は「たったこれだけのページ数に、よくぞこれだけの内容を詰め込んだものだ」でした。わたしはWebブラウザを作ったことがないし、関連技術に明るくもないこともあって、大変ためになりました。
+昨今のWebブラウザは非常に多機能かつ複雑で、ソフトウェア技術の総合芸術のようになっています。作るのには膨大な知識が必要ですし、コード量も尋常ではなく多いです(著者いわく、Chromeは2024年7月現在3000万行を超える)。本書はこのようなWebブラウザのうち、ごく一部のエッセンスとなる機能のみを扱っています。それら機能を作るにあたって必要な技術、仕様の説明もしてくれていて、至れり尽くせりなところがとてもよかったです。何かを作る系の本で、「こういう機能はこう書く」というだけではなく「どういう理由でなぜこのようなことを書かなければいけないのか」を説明してくれているものはなかなか無いのです。
+前の段落で書いた「エッセンスとなる機能」とは、表紙にも書いているHTTP、HTML、CSS、Javascriptのサブセットです。タイトルだけ見た時は「HTMLのタグを何個か解釈して、それを画面上にレンダリングするところまで書く本な…]]></summary>
+        <author>
+            <name>覚書</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[大衆イメージと違うことをすることの効能]]></title>
         <id>https://note.com/kazumakawauchi/n/n8a87a0f6f901</id>
