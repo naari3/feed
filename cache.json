@@ -3657,6 +3657,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398303359771",
+          "author": null,
+          "description": "こんにちは、レシピ事業部プロダクト開発グループの渡邉（@taso0096）です。\nクックパッドは最近、One Experienceというプロジェクトによって日本版とグローバル版のシステムが統合されました。\n\nどちらのシステムもRailsで実装されているという点は同じですが、統合先となったグローバル版ではHotwireが使われていました*1。そのため、One Experience関連の開発ではHotwireが積極的に活用されています。本記事ではそんなHotwireの多くの機能が使われたデスクトップ版のサイドバーについてご紹介します。\nデスクトップ版で表示されるサイドバー\nちょっと複雑なサイドバー\nOne Experienceに伴い、グローバル版にもともと存在したUIのまま移行するのではなく、いくつか画面構成の変更を入れる事になりました。特にデスクトップ版においては、自分のコンテンツにより素早くアクセスできるようにするためにサイドバーの導入が決まりました。\nこのサイドバーでは、一般的なナビゲーションメニューのほかに「きろく」と呼ばれるコンテンツを表示しています。「きろく」とはユーザの保存レシピや投稿レシピなどを整理するための機能です。また、「きろく」に保存したレシピはユーザーさんの手で、フォルダを作成して分類できます。このとき、レシピやフォルダの数が多いユーザーさんでも充分素早く表示させたいです。更に、サイドバーの外でレシピが保存されたとき、リロードせずともサイドバーの中の表示も追従する必要があります。以上を整理すると、作りたいものは以下のようなものということになります。\nコンテンツが多く読み込みに時間がかかる場合を考慮して非同期で読み込む\nフォルダが多い場合でも全てのフォルダを読み込める\nレシピの保存やフォルダの作成などの操作時に表示を同期する\nこれらの要件はHotwireを…",
+          "link": "https://techlife.cookpad.com/entry/2024/11/13/130000",
+          "publishedOn": "2024-11-13T04:00:00.000Z",
+          "wordCount": null,
+          "title": "ちょっと複雑なサイドバーをHotwireで簡単に作りたい",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398303359771/1731470400",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398303359771/1731470400"
+        },
+        {
           "id": "hatenablog://entry/6802418398301565839",
           "author": null,
           "description": "こんにちは、「ウィリアム」です。クックパッドのAndroidエンジニアです。\n私の日本語はまだ上手ではないので、これから英語で書きます！\nSelf-introduction (自己紹介)\nHi, my name is William, I'm an Android Engineer from the Cookpad's recipe team. I was originally in the global recipe team in Bristol, Uk, but I'm rehired to join the recipe team in Japan instead last year 2023.\nIt is my first time ever in my life to write a techblog, please forgive me for the messy and unorganised structures, よろしくお願いします！\nStatement\nIf you have been reading our techblog recently, you must be aware of what is currently going on with Cookpad! If you haven't, then I'll summarise it in a paragraph.\nIn the past, Cookpad recipe app operated separately in Japan, and rest of the world, Global. But now, we’ve merged into one, and we call it 'One experience.'\n\n\nIt was a long, challenging pro…",
