@@ -78,6 +78,51 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://atarabi.hateblo.jp/" target="_blank"
+              rel="noopener">Atarabi-Blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">After Effectsのスクリプトの可能性を広げる。 その５</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://atarabi.hateblo.jp/entry/2024/11/14/222136" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+github.com
+ちょっとした修正といくつかのスクリプトの追加と更新。
+修正
+エフェクトマスクのパラメータのバグ
+エフェクトマスク周りのパラメータの扱いに難があったのを修正した。エフェクト麾下のパラメータは、0番目のパラメータがそのエフェクトに対する入力を扱うパラメータとして予約されているので、他のパラメータと扱いが少し異なる。そこらへんの処理が少々雑だった。
+UI.showContextMenu()のバグ(Windows下)
+
+上のようなコンテクストメニューを表示させるAPIで、変数のライフタイムの管理が雑な箇所があったので修正。
+Fuzzy Searchのバグ
+計算コスト低減のためにキャッシュ機能を実装しているが、そこにバグがあったので修正。
+スクリプト
+@script_panel
+ 
+使用頻度の小さいScriptUI系のスクリプトをScriptUI Panelsフォルダに入れるのが煩わしい時に、あるフォルダに入れておいて、ドロップダウンリストから呼び出せるようにする。挙動（特にUI周りの）は当然、対象のスクリプト次第。
+@proxy_maker
+www.youtube.com
+重いコンポをプリレンダしてプロキシに設定するというのはままあるが、それをレイヤー単位でしたかったので作成。
+@effect_launcher
+ある文字列を入力すれば、即座にエフェクトが適用されるショートカット機能を追加した。スクリプト、プリセットもショートカットの対象に出来る。
+@effect_search
+スクリプト、プリセットも検索の対象に含められるようにした。検索窓に\\を入力すれば設定画面に入れる。
+ドキュメント
+APIばかりの説明で、スクリプトの説明がなかったので、簡易的だが説明を追加した。
+Fuzzy Searchとdebounce
+@effect_launcherや@effect_searchなどでは、キー入力ごとにFuzzy Searchを発火させると、処理が追いつかず固まるので、debouneで処理を間引いているが、debounce timeはちょっと安全側に寄せて200msに設定していた。しかしこの設定だと特にショートカット機能を用いた際の遅延が気になったので、100msに変更した。また、使用者が自分で変更出来るように、変数に切り出してスクリプトの上の方に置いた。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/a28d25adb7c99a15898018fe0565f621e4a6ff1d/backend&#x3D;imagemagick;height&#x3D;1300;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkareobana%2F20241114%2F20241114173012.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://hardshopper.hatenablog.com/" target="_blank"
               rel="noopener">僕とネットショッピング</a></h3>
           <section class="articles-per-source">
@@ -14624,75 +14669,6 @@ GameGaz Daily 2024.8.17 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://kaikityou.hatenablog.com/" target="_blank"
-              rel="noopener">kaikityouの日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">昔よく遊んでたスレッドの話</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://kaikityou.hatenablog.com/entry/2024/08/17/105458" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>以前少しだけ触れたことがあると思うのだけど、僕のインターネットの始まりはポケモンの話題を扱う掲示板だった。
-ダイヤモンドパールが最新作だった時代に出来た掲示板で、住民の間では「ダイパ広場」と呼ばれていた。より正確に言うと「ダイパ広場」はサイトの名前で、その中に交換板とか対戦板とかみたいないくつかの掲示板を備えていたのだが、今回の話題の中は主に雑談掲示板の話になる。
-(初めて夢小説という概念に触れたのが実はこのサイトの小説掲示板だったっていう小ネタがあったりするのだが割愛)
- 
-雑談掲示板の中でも特に僕がよく訪れていたスレッドがあった。
-四大マンション連合という名前のスレッドで、通称YDMと呼ばれていた。詳しいことは覚えていないのだが、同じ掲示板内に「ポケモンヒルズ」「ポケモンおしゃべりクラブ」みたいな建物名を想起させるスレッドが4つあって、そこの住民が集まって出来たのが名前の由来だったはず。自分も設立当時から居た訳ではないのでよく分からない。
-かといって元となった4つのスレッドがYDM設立と共に消えたかというとそんなことはなく、普通に並列で動いてた。そこらへんの適当さ、小中学生のインターネットって感じがして楽しいと思う。
- 
-なんでこのスレッドに自分が定住したのかは正直あんまり思い出せない。なんなら一番最初に適当に選んだスレッドがここでズルズルと居続けていただけじゃないかなーって感じがする。
-ただ、思い返すとここの住民の人はなんというかスキル持ちが多かったなぁと思う。
-太鼓の達人で全国レベルの腕前を持っている人とか、PC周りの技術的な話題に対して異様に詳しい人とか。あと、昔書いた音MADとの慣れ初めの話で出てくる友人Rもこのスレッドで出会った住人で、彼とだけは未だにTwitterで繋がっている。
-あと住民の多くが個人ブログをやっていて、更新した際にはスレの方でも報告をしてみんなに見てもらうみたいな文化があった気がする。
-確か僕もこの時期にブログを始めたのだと思う。思えば今の自分は結構ここに形作られているのかも。
- 
-雑談の内容としてはポケモンの話よりは他の話題の方が多かった記憶がある。各々が壁打ち的に好き勝手に書き込んで、反応できそうな誰かが反応して会話になるみたいな。
-チャットではなくて掲示板なので自分が書きこんでから相手の返事が来るまでリロードして… みたいな感じなんだけどほぼほぼ毎日のように会話が続いていた。
-
-↑一例。これは多分マリオサンシャインの話題。
- 
-上にも近いことを書いたが、YDMは比較的アクティブな人達が多く集まっていたのでこんな感じでwikiなんかを作ったりもしてた。
-見てもらえると分かるけど結構読みごたえがあるものになってると思う。
- 
-
-会員が各々で作ってるメンバー紹介ページなんかもある。
-この魁鋳(読み方：かいい)というのは僕の旧名義だ。
-いつ頃からかこれをアルファベット表記したkaiiという名前を使うようになって、今使っているkaikityouという名義はこれに由来したものだったりする。
-あとたまーーーーーに話題に上がるヤナギサワという過去名義もこの掲示板で生まれた名義だったりする。
- 
-
-趣味：音MAD　← ここカッコ良すぎる
-この記事は友人と通話しながら書いているのだが「ありすぎて書けない」が俺っぽいと言われた。俺っぽいらしい。
- 
-大元のダイパ広場の方は今は殆どの機能が死んでしまっていて過去ログなんかも観れなくなってしまっているのだが、YDMは独自で過去ログを魚拓を取っていたので300スレ目ぐらいまでは参照出来る。
-wikiの中にリスト化してまとめたページがあるので興味があれば是非。
- 
-今以上に至らなかった時代の自分を見せられるのは中々苦しいものがありつつも、当時からの自分の変化とか逆に変わらない部分が観測できるのは楽しいね～って思う。
-記録って時には創作以上になると思う。大人になってから「歴史って楽しいな」って思う機会が増えたけど、多分それと近しい感情。
-にしても1スレッド1000件書き込めてそれが300スレってまぁ膨大だな。
- 
-
-で、殆どの機能が死んでしまったとは言いつつも雑談掲示板の機能自体は一応生きているらしく、今でも月一ぐらいの頻度で書き込みが行われているっぽい。
-上はYDMの元となったスレッドの一つであるポケモンヒルズのログ。書き込み主の名前、全員見覚えあって凄く感動してしまった。
- 
-せっかくなので、自分も書き込んでみた。
-
-書き込んだ後に出てくる画像がマナフィなのがもう時代を感じる。
- 
-
- 
-では ﾉｼ</span>
-                  </div>
-                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kaikityou/20240817/20240817095634.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -16623,7 +16599,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-11-14T13:07:18.138Z">2024-11-14T13:07:18.138Z</time>
+    <time id="build-timestamp" datetime="2024-11-14T14:01:50.867Z">2024-11-14T14:01:50.867Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
