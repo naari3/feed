@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-14T01:28:41.549Z</updated>
+    <updated>2024-11-14T02:24:10.589Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[iOSアプリにおける複数リリースに跨った機能改善の開発事例紹介]]></title>
+        <id>hatenablog://entry/6802418398303600210</id>
+        <link href="https://techlife.cookpad.com/entry/2024/11/14/111400"/>
+        <updated>2024-11-14T02:14:00.000Z</updated>
+        <summary type="html"><![CDATA[レシピ事業部のHaurta (@0x746572616e79
+)です。グローバルサービスとの統合プロジェクト(One Experienceプロジェクト)に伴いiOSアプリケーションもグローバルと日本で別々のアプリケーションを開発していた体制から一変して、グローバルのアプリケーションベースの開発(グローバル版)へ移行を進めました。
+
+グローバルと日本で異なるアプリケーションを開発してきたため、同じクックパッドでも細かな挙動の違いが見られます。気になる挙動がないかどうかチームで何度もウォークスルーを重ねた結果、レシピエディターやプロフィール設定画面で使われるフォトピッカーの挙動が問題として浮上しました。
+フォトピッカーの改善を重要なタスクとして取り組むことにしましたが、フォトピッカーに限らずOne Experienceプロジェクトが始まってからはグローバル版のコードベースを読むところからのスタートになるため、このタスクの完了にどのくらい時間がかかるのか推測しづらい状態でした。
+一般的に大きなタスクを小さく分割することは行われますが、具体的な分割方法や進行の手法については、慣れや経験だったり試行錯誤が必要です。
+この記事では、フォトピッカーの改善を通じて、タスク分割とプロジェクトの進め方について幾つかの学びがあったため、どのようにタスクを分解し進めていったのかを紹介します。
+フォトピッカー
+クックパッドにおいてフォトピッカーは非常に重要な機能の一つで、旧日本版、グローバル版ともにフォトピッカーは標準のPHPickerViewControllerを使用せず、何種類か目的と体験にあった自前のフォトピッカーを実装していました。
+旧日本版では、ユーザーがレシピに写真を追加する際、フォトピッカーが最初に起動し、そこからカメラスクリーンに遷移できるボタンが配置されていました。これに対し、グロ…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[マイクロソフトのPhil Spencer氏 Xbox携帯機検討を認める]]></title>
         <id>https://gamegaz.com/?p=42401</id>

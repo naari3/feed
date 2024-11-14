@@ -78,6 +78,35 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">iOSアプリにおける複数リリースに跨った機能改善の開発事例紹介</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2024/11/14/111400" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>レシピ事業部のHaurta (@0x746572616e79
+)です。グローバルサービスとの統合プロジェクト(One Experienceプロジェクト)に伴いiOSアプリケーションもグローバルと日本で別々のアプリケーションを開発していた体制から一変して、グローバルのアプリケーションベースの開発(グローバル版)へ移行を進めました。
+
+グローバルと日本で異なるアプリケーションを開発してきたため、同じクックパッドでも細かな挙動の違いが見られます。気になる挙動がないかどうかチームで何度もウォークスルーを重ねた結果、レシピエディターやプロフィール設定画面で使われるフォトピッカーの挙動が問題として浮上しました。
+フォトピッカーの改善を重要なタスクとして取り組むことにしましたが、フォトピッカーに限らずOne Experienceプロジェクトが始まってからはグローバル版のコードベースを読むところからのスタートになるため、このタスクの完了にどのくらい時間がかかるのか推測しづらい状態でした。
+一般的に大きなタスクを小さく分割することは行われますが、具体的な分割方法や進行の手法については、慣れや経験だったり試行錯誤が必要です。
+この記事では、フォトピッカーの改善を通じて、タスク分割とプロジェクトの進め方について幾つかの学びがあったため、どのようにタスクを分解し進めていったのかを紹介します。
+フォトピッカー
+クックパッドにおいてフォトピッカーは非常に重要な機能の一つで、旧日本版、グローバル版ともにフォトピッカーは標準のPHPickerViewControllerを使用せず、何種類か目的と体験にあった自前のフォトピッカーを実装していました。
+旧日本版では、ユーザーがレシピに写真を追加する際、フォトピッカーが最初に起動し、そこからカメラスクリーンに遷移できるボタンが配置されていました。これに対し、グロ…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/2b3ed1ba96c4777e6419ac5fd81276204fe7badb/backend&#x3D;imagemagick;height&#x3D;1300;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -16529,7 +16558,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-11-14T01:28:41.512Z">2024-11-14T01:28:41.512Z</time>
+    <time id="build-timestamp" datetime="2024-11-14T02:24:10.547Z">2024-11-14T02:24:10.547Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
