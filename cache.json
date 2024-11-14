@@ -1121,6 +1121,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398303765264",
+          "author": null,
+          "description": "会社のSlackでDumplingの話をしていた。\nen.wikipedia.org\nDough でなにか具材を包んだり包まなかったりするものを dumpling と言うらしい。\nとなるとカレーパンみたいなやつは dumpling かというとそうでもないらしく、そういうのは例外だよとWikipediaに書いてあった。\nhowever, some definitions rule out baking and frying in order to exclude items like fritters and other pastries that are generally not regarded as dumplings by most individuals.\n\n\n面白かったのは、WikipediaのDumplingのJapaneseの項目を見ると、\nDango (団子) is a sweet dumpling made from rice flour, similar to mochi.\n\n\nと書かれている。団子と餃子が同じカテゴリに入るのは、めっちゃ違和感がある。\nDumplingとは一体なんなのかを考えていたら、ふとたこ焼きはdumplingなのではないかと気がついた。小麦粉でできた生地でタコを包むdumplingである。\nというのをChatGTPに聞いてみた。\n\nそうなりますよねという気持ち。いやしかしそうなると団子がdumplingだというのは納得がいかない気がするけれど。\n思うに、英語の1単語であるdumplingを様々な文化圏での似たような料理に適用しようとして、わけがわからなくなっていそう。\nDumplingの内包的な定義をしようとすると意図しないものが当てはまりすぎて、とてもむずかしそう。\n言葉も料理も面白い概念だなと思った出来事だった。あと夕ご飯はdumplingの一種である餃子を作って食べた。",
+          "link": "https://commits.hatenablog.com/entry/2024/11/14/100000",
+          "publishedOn": "2024-11-14T01:00:00.000Z",
+          "wordCount": 495,
+          "title": "2024-11-13",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/d942699854d2885a60fd56075f2db8ee1a820f6f/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20241113%2F20241113235544.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d942699854d2885a60fd56075f2db8ee1a820f6f/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20241113%2F20241113235544.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398296432763",
           "author": null,
           "description": "docs.google.com\n会社のイベントで登壇していた。Steepのメモリ削減について。\n用事があって早めに会場を脱出することになってしまったのはちょっともったいないことをしたかもしれない。\n地域のコミュニティって感じでいいイベントでした。\nMajo の話と、Fork worker / Reforking の話をした。\nReforking は今絶賛実装しているところ。ひとまず CoW を効くようにすることで本当にメモリが共有されるのかを確認するためのプロトタイプを作っている。既存の worker の kill とか reforking 中にくるリクエストをうまくさばくこととかはとりあえずサボって、fork した先にリクエストを流すところにフォーカスしてメモリ使用量を計測したい。\nしかし実は fork するだけでも(graceful restart的なことを考えなくても)なかなかむずかしい問題だなと気がついた。というのも、CoW を意味のあるものにするには fork 前後で同じRBS::Environmentなどのオブジェクトを参照させる必要があるのだけど、これがむずかしい。Reforking のアイディアを借りてきた puma とかはrack applicationを維持することだけを考えればいいようになっているけれど、Steepの場合はそんなにきれいに分かれていないので、うまく必要なオブジェクトが共有されるようにforkをしないといけない。\nこれは HTTP というものがステートレスであるからやりやすくなっているのかなと思ったりした。ステートレスであるからプロセスの管理をする人は比較的楽にforkできるのではないか。Steepは解析のための環境という巨大stateを持っているからそれがむずいような気がする。\n一方で、stateというのは実はこの問題の主題ではなくて、通信を行う層とロジックが置かれた層が比較的密に結合しているのが問題なのかもしれないとも思った。ここの結合がもっと疎であれば、案外楽にforkができるのかもしれない。この辺はもうすこし考えたい。\n発表の反省としては、もともと Ruby を知っていることは前提としないつもりでやっていたのだけど、それ以外の知識の前提を置きすぎたのでは、と少し反省している。fork の説明を最初全くしていなかったのだけど、したほうがいいかなと思って発表20分前に追加していたりした。あとは LSP とはなにか、も一言も触れていなくて、説明があったほうが良かったかなという気持ちが少しある。まあ面白かったと何人かに言ってもらえたのは良かった、うれしい。置いてけぼりにしてしまった人がいたらごめんなさい…\nこの Steep の Reforking の話は、進捗にもよるけど来年のRubyKaigiネタとかにしてもいいかもしれない。少なくともどこかで登壇するかブログ記事にするかはしたい。",
@@ -1538,21 +1553,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/comariai/20240823/20240823094006.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189129699781",
-          "author": null,
-          "description": "読者の皆様へ\n \nいつもなんて巨大なカニゴットをご愛読いただき\nありがとうございます。\n \nなんて巨大なカニゴットは普段から散らかった内容なのに\n今週は特に日記に書いた内容がしょぼすぎるため\nしょぼすぎるメモ帳として公開いたします。\n \n楽しみにしていただいている読者の皆様\n大変申し訳ございません。\n \nこれからもなんて巨大なカニゴットを\n応援の程よろしくお願いいたします。\n \n少年ジャンプ編集部\n \n- - - - -\n \nこのときジョブズは「ガキの部位で一番性的なのは腹だ」と確信した\n \n冷房の効いた部屋に入るのだ！\n\n \n液タブ持ってんから波形描けることを最近まで忘れてた\n\n \nカメラ付けて実名で通話するの楽しすぎ\n \n★★★お得情報★★★\n作業中にTwitter封じたらめちゃくちゃ捗った\n \nあら、あれは朝ね。美女睡眠するわよ～ん\nホヮジャ～オ♡（布団に花椒をふりかける）\nコッコッコ（布団に花椒をふりかける）\n \nｷｭﾙﾙｯ\n \n家族で、鍋\n \n俺が刃牙で一番好きなキャラは克己だよ……\n \n居心地\nジャンルを意識して音楽聴いてなかったんだけど、hyperflipもdariacoreも多分ずっと親しんできてたなという認識です\n居心地いい\n \nあこれが『実家のような安心感』かあ！！！！！！\nほんとすこｗ\nほんとすこｗ\nほんとすこｗ\n \n気狂いそうだったから息抜きにVRC\n友人に引率してもらいながらパブリックを巡ってた\n「誰か話しかけてくんねーかなーー」とか言いながら歩いてたんだけど、話しかけられ、𝙃𝘼𝙋𝙋𝙔\nいきなり仲良くなるなどした\n \n問題！\nコナミデジタルエンタテインメントに所属するコンポーザー、佐伯茂治の作曲した楽曲の淫夢MADに付けられるタグと言えば何？\n答え：ソッショー\n \nアクキー作った\n \n「引きこもり絶対ジャスティス」ってマジ意味分かんねえんだよな\n \n自薦TOP10\nnote.com\n \nイケメン幹部という、あまりにも主観ありきな命名\n \nすこしだけ　しあわせになった。\n一盃口♪\n \nガキをガキたらしめるものは、何？\n \n猫背になりすぎないようにクッション抱いて作業するわけだけどこれやってるとすげー眠くなるんだよ\n赤ちゃんだからさ\n \nこれからの時代を生き抜く最大の情報は”龍崎薫”\n \nあ～～～不死身不死身不死身\n2024年も、不死身！\n \nキッコーマン豆乳　チャイティー\n\n結構スパイス効いてる、飲んだら強い香りが鼻抜ける\nクセ強め\n \nそんな感じかな\n \nじゃ！",
-          "link": "https://crabgot.hatenablog.com/entry/2024/08/16/211609",
-          "publishedOn": "2024-08-16T12:16:09.000Z",
-          "wordCount": 360,
-          "title": "【2024年8月-3】週刊蟹児大悪魔",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/comariai/20240815/20240815114721.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/comariai/20240815/20240815114721.png"
         }
       ]
     },
@@ -7068,6 +7068,26 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=42401",
+          "author": "mamosuke",
+          "description": "Phil Spencer氏がXboxの携帯機を検討していることを公式に認めたことが明らかになりました。→→→この記事の続きを読む\nマイクロソフトのPhil Spencer氏 Xbox携帯機検討を認める first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024111442401/",
+          "publishedOn": "2024-11-14T01:03:58.000Z",
+          "wordCount": null,
+          "title": "マイクロソフトのPhil Spencer氏 Xbox携帯機検討を認める",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=42398",
+          "author": "mamosuke",
+          "description": "notnotzecoxao氏がPS4/PS5シーンを去ることを検討中であることを表明していました。→→→この記事の続きを読む\nnotnotzecoxao氏 シーンを引退検討「ちょっともう無理」 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024111442398/",
+          "publishedOn": "2024-11-14T00:32:03.000Z",
+          "wordCount": null,
+          "title": "notnotzecoxao氏 シーンを引退検討「ちょっともう無理」",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=42396",
           "author": "mamosuke",
