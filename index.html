@@ -74,6 +74,39 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-11-15">2024-11-15</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">レシピIDリンク移行の話</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2024/11/15/112500" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、2024年4月から、新卒でレシピ事業部プロダクト開発グループに所属している、張頌です。私が新卒入社して最初に取り組むこととなったのが、このブログで以前ご紹介したOne Experienceプロジェクトです。
+
+このプロジェクトには、データ移行や多言語対応など、私が経験してこなかったタスクがたくさんありました。私が所属しているチームではスクラム開発によってプロジェクトを進めております。初めてこの体制で大きなプロジェクトに参加することは、大変でしたが面白い体験でした。私はこの中で、データ移行のレシピIDリンクの移行を担当いたしました。
+私が最初にこのタスクを携わっていた時に、色々な理由でミスがありました。本稿はこのタスクの新人なりの振り返りをし、次にもし大きなプロジェクトに携わる時に、どう対処すれば問題を回避できるかという知見をまとめようと思います。
+レシピIDリンクの移行について
+日本版ではレシピに、決まったフォーマットでレシピのIDを書くと、レシピを表示する時にそのレシピIDを持つレシピページに飛ぶリンクが付けられました。以下の画像のように、例えばレシピの手順で「レシピID:12345のソース」と記法で書くと、「レシピID:12345」の部分がリンクになります。
+
+事前調査によると、このようなレシピIDは日本版のレシピにおいて紹介文、材料、手順、コツ・ポイントなどのところにありました。
+ところで今回、レシピのデータは日本版のデータベースからグローバル版のデータベースに移行しています。このときレシピのIDが変わるので、何もしないままだとリンク先の整合性が崩れてしまいます。このためレシピIDリンクについても修正が必要ですが、グローバル版のレシピのIDは移行してみないと決まりません。故に、先にレシピのデータを移行し、そのあとレシピIDリンクを置換することにしました。今…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398303665900/1731637500" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-11-14">2024-11-14</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -16630,7 +16663,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-11-15T01:29:21.794Z">2024-11-15T01:29:21.794Z</time>
+    <time id="build-timestamp" datetime="2024-11-15T02:27:15.826Z">2024-11-15T02:27:15.826Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
