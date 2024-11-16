@@ -175,21 +175,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/f/fivedesk/20240825/20240825222701.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6801883189130596248",
-          "author": null,
-          "description": "今週はずっと実家に帰省していた。今さっき帰宅。\n町として大きく変わったところはなかったものの、パン屋の看板が新しくなっていたり、歩道の隅の誰が座るんだろうというところに椅子が設置されていたりしていた。\n久しぶりに友人と会ったら風俗の話になっておいていかないでと思った。このあとAniTubeでみたアニメの話にした。\nまんだらけでひだまりスケッチ×ハニカムの設定資料集と山本ケイジの画集を買った。\n自分の欲しいものに対して大きいお金を出して買うことが結構苦手なのかもしれないと思った。\nお土産文化意味不明と思っていたけど、甘い食べ物がそこまで好きじゃないだけだな。\nsm43973994すごすぎ\nもっと書くことあるけど眠いしメモをアレしたので終了。\n \n\n\n夏休みももうすぐ終わっちゃうし。\n2014年8月28日\n\n\n \nhttps://x.com/O_hanako_/status/504885316390375424\nttps://x.com/O_hanako_/status/504885316390375424",
-          "link": "https://5desk.hatenablog.jp/entry/2024/08/18/221001",
-          "publishedOn": "2024-08-18T13:10:01.000Z",
-          "wordCount": 262,
-          "title": "暗いし",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -1113,21 +1098,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/S/Sixeight/20240914/20240914202105.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189130588593",
-          "author": null,
-          "description": "1つ以上前のコミットを修正したいときに  --fixup を使うのは近年ではよく知られている。\n$ git commit --fixup <commit>\n$ git -i --autosquash <commit>~ # rebase.autosquash = true にしておけばオプションは不要\n\n\n\nしかし、この方法だと毎回 $EDITOR が開いてしまいちょっと面倒である。\nこれを回避する方法は GIT_SEQUENCE_EDITOR 環境変数を使う方法で GIT_SEQUENCE_EDITOR=true などとしておくと、エディタを開かずに rebase が完了する。\nまた git 2.44 以降は --interactive じゃなくても --autosquash が可能になったためさらに簡単になった (GitHubのブログが詳しい)\nこれを使うと以下のような alias を定義することができる。\nfixup = \"!f() { git commit --fixup \\\"$1\\\"; git rebase --autosquash --autostash \\\"$1\\\"~; }; f\"\n\n\n\n--autostash は自動で stash してくれるオプションで、他の変更があるときに先に fixup したいときにべんり。\n残念ながら rebase.autosquash は interactive mode にしか有効でないので、オプションの指定は必須。\nここまでくると目的のファイルを stage に index しておいて、git fixup <commit> とするだけでコミットの修正が完了するようになる。\nしかし、この commit hash をコピペするのも面倒になってきたので、今回 tig の設定に以下のような bind を追加した。\nbind main F @git fixup %(commit)\nbind log F @git fixup %(commit)\nbind diff F @git fixup %(commit)\nこれで tig の main view などで目的のコミットにカーソルを合わせて F って押すだけになってめちゃくちゃ楽になった。",
-          "link": "https://blog.nishimu.land/entry/2024/08/18/213902?utm_source=feed",
-          "publishedOn": "2024-08-18T12:39:02.000Z",
-          "wordCount": 334,
-          "title": "tigでfixupを簡単にする",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

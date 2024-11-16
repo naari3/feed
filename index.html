@@ -14843,84 +14843,6 @@ GameGaz Daily 2024.8.19 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://5desk.hatenablog.jp/" target="_blank"
-              rel="noopener">3F 音楽室</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">暗いし</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://5desk.hatenablog.jp/entry/2024/08/18/221001" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>今週はずっと実家に帰省していた。今さっき帰宅。
-町として大きく変わったところはなかったものの、パン屋の看板が新しくなっていたり、歩道の隅の誰が座るんだろうというところに椅子が設置されていたりしていた。
-久しぶりに友人と会ったら風俗の話になっておいていかないでと思った。このあとAniTubeでみたアニメの話にした。
-まんだらけでひだまりスケッチ×ハニカムの設定資料集と山本ケイジの画集を買った。
-自分の欲しいものに対して大きいお金を出して買うことが結構苦手なのかもしれないと思った。
-お土産文化意味不明と思っていたけど、甘い食べ物がそこまで好きじゃないだけだな。
-sm43973994すごすぎ
-もっと書くことあるけど眠いしメモをアレしたので終了。
- 
-
-
-夏休みももうすぐ終わっちゃうし。
-2014年8月28日
-
-
- 
-https://x.com/O_hanako_/status/504885316390375424
-ttps://x.com/O_hanako_/status/504885316390375424</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
-              rel="noopener">ちなみに</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">tigでfixupを簡単にする</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2024/08/18/213902?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>1つ以上前のコミットを修正したいときに  --fixup を使うのは近年ではよく知られている。
-$ git commit --fixup 
-$ git -i --autosquash ~ # rebase.autosquash &#x3D; true にしておけばオプションは不要
-
-
-
-しかし、この方法だと毎回 $EDITOR が開いてしまいちょっと面倒である。
-これを回避する方法は GIT_SEQUENCE_EDITOR 環境変数を使う方法で GIT_SEQUENCE_EDITOR&#x3D;true などとしておくと、エディタを開かずに rebase が完了する。
-また git 2.44 以降は --interactive じゃなくても --autosquash が可能になったためさらに簡単になった (GitHubのブログが詳しい)
-これを使うと以下のような alias を定義することができる。
-fixup &#x3D; &quot;!f() { git commit --fixup \&quot;$1\&quot;; git rebase --autosquash --autostash \&quot;$1\&quot;~; }; f&quot;
-
-
-
---autostash は自動で stash してくれるオプションで、他の変更があるときに先に fixup したいときにべんり。
-残念ながら rebase.autosquash は interactive mode にしか有効でないので、オプションの指定は必須。
-ここまでくると目的のファイルを stage に index しておいて、git fixup  とするだけでコミットの修正が完了するようになる。
-しかし、この commit hash をコピペするのも面倒になってきたので、今回 tig の設定に以下のような bind を追加した。
-bind main F @git fixup %(commit)
-bind log F @git fixup %(commit)
-bind diff F @git fixup %(commit)
-これで tig の main view などで目的のコミットにカーソルを合わせて F って押すだけになってめちゃくちゃ楽になった。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -16851,7 +16773,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-11-16T00:03:41.536Z">2024-11-16T00:03:41.536Z</time>
+    <time id="build-timestamp" datetime="2024-11-16T01:29:06.245Z">2024-11-16T01:29:06.245Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
