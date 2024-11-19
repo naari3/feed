@@ -74,6 +74,42 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-11-19">2024-11-19</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GTS移植11</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/11/19/191306" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>スクリプトはそのまま使おうとしたのにパッチ的処理が増大して無事死亡しました。ロジックは残すにしても、解釈している部分は全て書き直し決定。スクラップ＆ビルドって一生に一度口に出してみたいセリフですよね・・・（自暴自弃。ということでプロンプト上でスクリプトを書き換えてGBAでいい感じに使えるよう修正。んで受け渡し口にこんな関数群を用意して対応予定です。12月の頭にある程度動いて、12月末ぐらいには終わりにしたいなあ。。
+ST_NV_PARSE_TABLE NvParseTable[NV_MAX_PARSE_CNT] &#x3D; {
+	{ &quot;BUF&quot;, (void*)NvExecParseBuf },		// SET_BUFFER_PROPERTIES
+	{ &quot;BUR&quot;, (void*)NvExecParseBur },		// RESET_BUFFER_FLAGS
+	{ &quot;BUA&quot;, (void*)NvExecParseBua },		// RESET_ALL_BUFFER_FLAGS
+	{ &quot;SCR&quot;, (void*)NvExecParseScr },		// SCROLL_VIEWPORT
+	{ &quot;SCM&quot;, (void*)NvExecParseScr },		// MODIFY_SCROLL_PROPERTIES
+	{ &quot;SLP&quot;, (void*)NvExecParseSlp },		// SLEEP
+	{ &quot;EFF&quot;, (void*)NvExecParseEff },		// EFFECT（GBA追加）
+	{ &quot;ANM&quot;, (void*)NvExecParseAnm },		// LOAD_ANM
+	{ &quot;ANU&quot;, (void*)NvExecParseAnu },		// UNLOAD_ANM
+	{ &quot;ANI&quot;, (void*)NvExecParseAni },		// DI…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398305223610/1732011942" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-11-18">2024-11-18</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -16382,7 +16418,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-11-19T10:01:56.697Z">2024-11-19T10:01:56.697Z</time>
+    <time id="build-timestamp" datetime="2024-11-19T11:02:14.094Z">2024-11-19T11:02:14.094Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

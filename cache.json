@@ -196,6 +196,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398305223610",
+          "author": null,
+          "description": "スクリプトはそのまま使おうとしたのにパッチ的処理が増大して無事死亡しました。ロジックは残すにしても、解釈している部分は全て書き直し決定。スクラップ＆ビルドって一生に一度口に出してみたいセリフですよね・・・（自暴自弃。ということでプロンプト上でスクリプトを書き換えてGBAでいい感じに使えるよう修正。んで受け渡し口にこんな関数群を用意して対応予定です。12月の頭にある程度動いて、12月末ぐらいには終わりにしたいなあ。。\nST_NV_PARSE_TABLE NvParseTable[NV_MAX_PARSE_CNT] = {\n\t{ \"BUF\", (void*)NvExecParseBuf },\t\t// SET_BUFFER_PROPERTIES\n\t{ \"BUR\", (void*)NvExecParseBur },\t\t// RESET_BUFFER_FLAGS\n\t{ \"BUA\", (void*)NvExecParseBua },\t\t// RESET_ALL_BUFFER_FLAGS\n\t{ \"SCR\", (void*)NvExecParseScr },\t\t// SCROLL_VIEWPORT\n\t{ \"SCM\", (void*)NvExecParseScr },\t\t// MODIFY_SCROLL_PROPERTIES\n\t{ \"SLP\", (void*)NvExecParseSlp },\t\t// SLEEP\n\t{ \"EFF\", (void*)NvExecParseEff },\t\t// EFFECT（GBA追加）\n\t{ \"ANM\", (void*)NvExecParseAnm },\t\t// LOAD_ANM\n\t{ \"ANU\", (void*)NvExecParseAnu },\t\t// UNLOAD_ANM\n\t{ \"ANI\", (void*)NvExecParseAni },\t\t// DI…",
+          "link": "https://akkera102.hatenablog.com/entry/2024/11/19/191306",
+          "publishedOn": "2024-11-19T10:13:06.000Z",
+          "wordCount": 656,
+          "title": "GTS移植11",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398305223610/1732011942",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398305223610/1732011942"
+        },
+        {
           "id": "hatenablog://entry/6802418398303879978",
           "author": null,
           "description": "進捗\n5/118 場面\n\nTODO\n・メニュー画面、セーブ、ロード\n・口パクやオリジナルとウェイト単位が全く違う\n・他もろもろ",

@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-19T10:01:56.738Z</updated>
+    <updated>2024-11-19T11:02:14.135Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GTS移植11]]></title>
+        <id>hatenablog://entry/6802418398305223610</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/11/19/191306"/>
+        <updated>2024-11-19T10:13:06.000Z</updated>
+        <summary type="html"><![CDATA[スクリプトはそのまま使おうとしたのにパッチ的処理が増大して無事死亡しました。ロジックは残すにしても、解釈している部分は全て書き直し決定。スクラップ＆ビルドって一生に一度口に出してみたいセリフですよね・・・（自暴自弃。ということでプロンプト上でスクリプトを書き換えてGBAでいい感じに使えるよう修正。んで受け渡し口にこんな関数群を用意して対応予定です。12月の頭にある程度動いて、12月末ぐらいには終わりにしたいなあ。。
+ST_NV_PARSE_TABLE NvParseTable[NV_MAX_PARSE_CNT] = {
+	{ "BUF", (void*)NvExecParseBuf },		// SET_BUFFER_PROPERTIES
+	{ "BUR", (void*)NvExecParseBur },		// RESET_BUFFER_FLAGS
+	{ "BUA", (void*)NvExecParseBua },		// RESET_ALL_BUFFER_FLAGS
+	{ "SCR", (void*)NvExecParseScr },		// SCROLL_VIEWPORT
+	{ "SCM", (void*)NvExecParseScr },		// MODIFY_SCROLL_PROPERTIES
+	{ "SLP", (void*)NvExecParseSlp },		// SLEEP
+	{ "EFF", (void*)NvExecParseEff },		// EFFECT（GBA追加）
+	{ "ANM", (void*)NvExecParseAnm },		// LOAD_ANM
+	{ "ANU", (void*)NvExecParseAnu },		// UNLOAD_ANM
+	{ "ANI", (void*)NvExecParseAni },		// DI…]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.11.19]]></title>
         <id>https://gamegaz.com/?p=42429</id>
