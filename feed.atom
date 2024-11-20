@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-20T03:10:26.729Z</updated>
+    <updated>2024-11-20T04:01:49.903Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Gradle Composite Build を用いたビルドロジックの共通化について]]></title>
+        <id>hatenablog://entry/6802418398304973388</id>
+        <link href="https://techlife.cookpad.com/entry/2024/11/20/130000"/>
+        <updated>2024-11-20T04:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+こんにちは。レシピ事業部で長期インターン中の松本 (@matsumo0922) です。先日このブログでも公開した通り、クックパッドでは日本とグローバルで体験を統一する One Experience というプロジェクトを行っています。
+
+One Experience 以前では Android 開発においても日本とグローバルでコードベースが異なり、それぞれ使用している技術やライブラリが異なる状態でした。特にグローバルのコードベース (以下 global-android と呼びます) では AGP のバージョンも低く、加えて groovy + buildSrc と言った旧世代のビルドロジックを用いていたため、プロジェクトの進行に支障がある状態でした。本記事では、これらの問題を踏まえ One Experience をより円滑に進めるために施したビルドロジックの改善についてお話しします。
+TL;DR
+global-android では旧世代のビルドロジックを使っていたため One Experience 用の機能開発に支障がある状態だった
+ライブラリ管理を VersionCatalog へ、スクリプトを Kotlin DSL へ移行すると共に、Gradle Composite Build + Convention Plugins を用いてビルドロジックの共通化を行った
+最終的に、各モジュールの build.gradle.kts は非常に簡潔になり、大抵のビルドロジックが共通化され、開発をより効率的に進められるようになった
+問題点
+global-android の Gradle ビルドには以下のような問題点がありました。
+dependencies.gradle を用いた手動のライブラリ & バージョン管理
+groovy で書かれたビルドロジック
+大量にモジュールがあるにも関わら…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Logbum Campの特別お題「＃最高のキャンプ」「＃Logbum使ってみた」結果発表！]]></title>
         <id>hatenablog://entry/6802418398303437804</id>

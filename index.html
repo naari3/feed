@@ -78,6 +78,38 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Gradle Composite Build を用いたビルドロジックの共通化について</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2024/11/20/130000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はじめに
+こんにちは。レシピ事業部で長期インターン中の松本 (@matsumo0922) です。先日このブログでも公開した通り、クックパッドでは日本とグローバルで体験を統一する One Experience というプロジェクトを行っています。
+
+One Experience 以前では Android 開発においても日本とグローバルでコードベースが異なり、それぞれ使用している技術やライブラリが異なる状態でした。特にグローバルのコードベース (以下 global-android と呼びます) では AGP のバージョンも低く、加えて groovy + buildSrc と言った旧世代のビルドロジックを用いていたため、プロジェクトの進行に支障がある状態でした。本記事では、これらの問題を踏まえ One Experience をより円滑に進めるために施したビルドロジックの改善についてお話しします。
+TL;DR
+global-android では旧世代のビルドロジックを使っていたため One Experience 用の機能開発に支障がある状態だった
+ライブラリ管理を VersionCatalog へ、スクリプトを Kotlin DSL へ移行すると共に、Gradle Composite Build + Convention Plugins を用いてビルドロジックの共通化を行った
+最終的に、各モジュールの build.gradle.kts は非常に簡潔になり、大抵のビルドロジックが共通化され、開発をより効率的に進められるようになった
+問題点
+global-android の Gradle ビルドには以下のような問題点がありました。
+dependencies.gradle を用いた手動のライブラリ &amp; バージョン管理
+groovy で書かれたビルドロジック
+大量にモジュールがあるにも関わら…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398304973388/1732075200" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -16460,7 +16492,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-11-20T03:10:26.692Z">2024-11-20T03:10:26.692Z</time>
+    <time id="build-timestamp" datetime="2024-11-20T04:01:49.862Z">2024-11-20T04:01:49.862Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
