@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-25T10:01:59.693Z</updated>
+    <updated>2024-11-25T11:02:02.644Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[■]]></title>
+        <id>hatenablog://entry/6802418398306682938</id>
+        <link href="https://5desk.hatenablog.jp/entry/2024/11/25/193952"/>
+        <updated>2024-11-25T10:39:52.000Z</updated>
+        <summary type="html"><![CDATA[【11/18】先週の土日動きすぎて疲れが全く取れずだったので、栄養ドリンクを初めて飲んでみた。栄養ドリンクのことを美味しくない液体程度の認識で、今まで見向きもしなかったのでめちゃくちゃ種類があって嫌だなーと思った。長年の信頼度(キューピーにはある程度の信頼がある気がしているが、マヨネーズが苦手なのでそんなこと無いかもしれない)から、キューピーコーワαを買った。たった100ml程度で疲れが解消して怖かったです。
+【11/22】色々あって休みになったので、コミティアで買った本を読んだ。ezの『いとおかし！』、tayama『深夜放送 他二篇』、さとかつ『間隙紀行』が特に良かった。
+【11/23】ボーマス&芸力へ。前売り券を買おうとしたら売り切れていたので、念には念を入れて1時間前には会場に到着。先週のコミティアと比べると明らかに年齢層が低く、試験前なのか、赤シートで英単語とか歴史の単語を隠して暗記をしている人がちらほらいて良かった。
+ほとんどこれを手に入れたかったためだったので、売り切れてなくて良かった。
+リンク
+ 
+(david k anderson名義のアルバムもどこかで販売か配信をしてほしいとか、1年前の渋谷WWWで続く話を流してくれて嬉しかったとかそういう感じのこと)を言いたかったが、後ろにも何人か並んでいたので何も言えなかった。
+ 
+ 
+あ]]></summary>
+        <author>
+            <name>3F 音楽室</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GTS移植12]]></title>
+        <id>hatenablog://entry/6802418398306675602</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/11/25/190109"/>
+        <updated>2024-11-25T10:01:09.000Z</updated>
+        <summary type="html"><![CDATA[進捗
+10/118 場面
+
+TODO
+・タイトル表示とメニュー
+先週かなり頑張ったおかげでゲーム以外の機能を全て片付けました。デバックも場面ジャンプも実装したのでしやすくなっています。結局フルアニメーションといえど各場面に分かれていて、区切りはフェードアウトインになっています。黒画面の時に必要なパタパタ画像を事前準備して、あとはフレーム表示とウェイト指定するだけです。
+ここまでくればあとは根性で消化するだけです。アニメーション命令といえど2割にだいたい集中していて、場面でいうと４割ほど消化してしまえば終わったようなものでしょう。ふぅーーここまで大分苦労しましたよー。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>hatenablog://entry/6802418398305354172</id>
@@ -9902,38 +9937,6 @@ GameGaz Daily 2024.8.28 first appeared on 大人のためのゲーム講座.]]><
 TheFloW氏 Hackeroneでまたカーネルexploit級の1万ドル報奨金獲得 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Binary Hacks Rebootedを読んだ]]></title>
-        <id>hatenablog://entry/6802340630900773165</id>
-        <link href="https://satoru-takeuchi.hatenablog.com/entry/2024/08/28/080000"/>
-        <updated>2024-08-27T23:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Binary Hacks Rebootという本を著者のかたから恵贈いただいたのでレビューを書きます。著者や寄稿者のうちの何人かは知り合いだったり、本が恵贈いただいたものだったりでバイアスがかかっている可能性がありますが、ご容赦ください。
-
-Binary Hacks Rebooted —低レイヤの世界を探検するテクニック89選
-
-作者:河田 旺,小池 悠生,渡邉 慶一,佐伯 学哉,荒田 実樹
-オーム社
-Amazon
-
-どんな本か
-本書はいわゆる低レイヤと呼ばれるバイナリがいっぱい出てくるような技術について小ネタを山盛り、Hacksなので89(ハック)個、詰め込んだ本です。
-扱う分野は以下のように多岐にわたっています。
-ELF(Linuxなどで使われる実行ファイル、共有ライブラリを保存するファイルの形式)
-OS、とくにLinuxについてのもの
-コンテナ技術
-デバッガ・トレーサ
-セキュリティ
-数値表現とデータ処理
-言語処理系
-その他
-読むと良さそうな人
-このコンテンツに魅力を感じるかたがたは、すでにある程度知識があっても、どこかには「知らなかった！」となるようなハックがあると思うので、読むと良いと思いました。わたしもOSカーネルの開発を過去に10年以上やっていましたが、全く知らなかったこと、名前だけは知っていたが詳細は知らなかったものがたくさんあり、よい読後感がありました。
-興味があるもののあんまり前提知識がない、というかたは、読むのにかなりの根気がいるとは思いますが、サンプルコードを参照しつつ、関連用語の意味を調査しつつ読めば、時間はかかるものの、なんとか読めるとは思います。読後には一皮むけていることでしょう。
-サンプルコードが主にアセンブリ言語とC(ごく一部、Rustもある)なので、これら言語を読み書きしたことがないかたは面食らうと思います。最初は文書だけ読んで、あとから掘り…]]></summary>
-        <author>
-            <name>覚書</name>
         </author>
     </entry>
     <entry>
