@@ -3348,6 +3348,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398306667662",
+          "author": null,
+          "description": "2024年9月2日12:18頃から2024年11月25日18:28頃まで、以下の不具合が発生していました。\n発生する条件(すべての条件を満たす場合に発生します)\nレスポンシブデザインを設定しているブログ\n90日以内に記事を投稿しているブログ\nスマートフォンからの閲覧\n記事ページの閲覧\n発生する問題\n記事ページの記事タイトル下に広告が表示されていた\n\n90日以内に記事が投稿されている場合、本来、この場所には広告は表示されません\n\n\n原因はアプリケーションの不具合によるものです。修正が完了し、現在は問題は解消しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2024/11/26/105910",
+          "publishedOn": "2024-11-26T01:59:10.000Z",
+          "wordCount": 854,
+          "title": "【修正済み】2024年9月2日12:28頃から2024年11月25日18:28頃まで、一部の環境で意図しない場所に広告が表示される不具合が発生していました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398306667662/1732586351",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398306667662/1732586351"
+        },
+        {
           "id": "hatenablog://entry/6802418398305134683",
           "author": null,
           "description": "いつもはてなブログをご利用いただきありがとうございます。\n掲題の通り、2024年12月18日(水)をもちまして、レストラン検索及びレストラン情報埋め込み機能の提供を終了します。\n\n左:レストラン検索機能のスクリーンショット\n右:レストラン情報埋め込み機能のスクリーンショット\n提供終了の理由は、同機能で利用しているレストラン検索APIの利用条件の変更及びご利用状況を鑑みたものです。ご理解いただけますと幸いです。\nなお、レストラン情報埋め込み機能提供終了後は、ブログカードとしてレストランページへのリンクが表示される予定です。\nどうぞよろしくお願いいたします。",
@@ -5901,16 +5916,6 @@
           "wordCount": null,
           "title": "「週刊プラグインレビュー」Tokyo Dawn Lab / TDR Infrasonic",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/152365694/rectangle_large_type_2_e3621afaf7e05b93f30835eece1e6191.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/massmasaoki/n/n32a8272fa95b",
-          "author": null,
-          "description": "さて、今月２本目です。\n前回のMachineHeadを書いたときに、密度感ってなんだろう。\nその方程式はどこにあるのかな～～というところで手持ちのプラグインを再検証してるうちに辿り着いたのがこのTDR Arbiter（そしてそのシリーズ）であります。\n実は、このTDR Arbiterは、以前UltraSonicの記事を書いたときに既に試していてはいたのですが・・・後ほど感想で後述しましたが、大幅なアップデートで一気に化けて一軍入りしたプラグインであります。\nその辺のぬかりなさはさすがTDR作品だなと。\n続きをみる",
-          "link": "https://note.com/massmasaoki/n/n32a8272fa95b",
-          "publishedOn": "2024-08-28T13:48:57.000Z",
-          "wordCount": 2498,
-          "title": "「週刊プラグインレビュー」Tokyo Dawn Lab / TDR Arbiter",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/152231296/rectangle_large_type_2_f35bb223c07abdfa29afb6e9691c7c95.png?width=800"
         }
       ]
     },

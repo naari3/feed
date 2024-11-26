@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-26T01:28:52.890Z</updated>
+    <updated>2024-11-26T02:27:58.020Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【修正済み】2024年9月2日12:28頃から2024年11月25日18:28頃まで、一部の環境で意図しない場所に広告が表示される不具合が発生していました]]></title>
+        <id>hatenablog://entry/6802418398306667662</id>
+        <link href="https://staff.hatenablog.com/entry/2024/11/26/105910"/>
+        <updated>2024-11-26T01:59:10.000Z</updated>
+        <summary type="html"><![CDATA[2024年9月2日12:18頃から2024年11月25日18:28頃まで、以下の不具合が発生していました。
+発生する条件(すべての条件を満たす場合に発生します)
+レスポンシブデザインを設定しているブログ
+90日以内に記事を投稿しているブログ
+スマートフォンからの閲覧
+記事ページの閲覧
+発生する問題
+記事ページの記事タイトル下に広告が表示されていた
+
+90日以内に記事が投稿されている場合、本来、この場所には広告は表示されません
+
+
+原因はアプリケーションの不具合によるものです。修正が完了し、現在は問題は解消しております。
+ご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[メールサービスにおけるAnsibleによるサーバ構成管理ツールの活用]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=28746</id>
@@ -9888,21 +9911,6 @@ GameGaz Daily 2024.8.29 first appeared on 大人のためのゲーム講座.]]><
         <updated>2024-08-28T17:03:23.000Z</updated>
         <author>
             <name>かならき</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「週刊プラグインレビュー」Tokyo Dawn Lab / TDR Arbiter]]></title>
-        <id>https://note.com/massmasaoki/n/n32a8272fa95b</id>
-        <link href="https://note.com/massmasaoki/n/n32a8272fa95b"/>
-        <updated>2024-08-28T13:48:57.000Z</updated>
-        <summary type="html"><![CDATA[さて、今月２本目です。
-前回のMachineHeadを書いたときに、密度感ってなんだろう。
-その方程式はどこにあるのかな～～というところで手持ちのプラグインを再検証してるうちに辿り着いたのがこのTDR Arbiter（そしてそのシリーズ）であります。
-実は、このTDR Arbiterは、以前UltraSonicの記事を書いたときに既に試していてはいたのですが・・・後ほど感想で後述しましたが、大幅なアップデートで一気に化けて一軍入りしたプラグインであります。
-その辺のぬかりなさはさすがTDR作品だなと。
-続きをみる]]></summary>
-        <author>
-            <name>moroishimasaoki</name>
         </author>
     </entry>
     <entry>
