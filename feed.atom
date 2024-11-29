@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-11-29T00:03:36.604Z</updated>
+    <updated>2024-11-29T01:28:53.043Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2024-11-28]]></title>
+        <id>hatenablog://entry/6802418398307394200</id>
+        <link href="https://commits.hatenablog.com/entry/2024/11/29/100000"/>
+        <updated>2024-11-29T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[数日前にインターネットが壊れていた。
+ブラウザからWebページにアクセスしようとするとほとんどタイムアウトする。なぜかpingは通るし、名前解決もできている。curlからだとなぜか(若干遅い気がするものの)レスポンスが返ってくる。
+なんかよくわからない挙動をしているなと思いながら、原因の切り分けをしていた。PC、スマートフォン、iPadのどれでも同様の問題が起きているので、端末側の問題ではなさそう。ルーターやONUの再起動は効果がない。ちょうど余っていた別のルーターに交換してみても同じ問題が起きるので、ルーターの問題ではなさそう。
+切り分けの結果、ONUよりエンドユーザー側の機器に問題はなさそうに思えた。ONUもステータス表示を見る限り問題がなさそう。となると、それよりも外側に何かしらの問題がありそう。
+NTTの問い合わせをポチポチしていたら、どうやら本当にONUより外側の通信経路に問題がありそう、と出てきた。
+
+ということでこのまま問い合わせをした。問い合わせ時には夜になっていたのだけど、翌朝には電話が来て問題が解決したことを教えてくれた。NTT側の機器がおかしくなっていたらしい。
+Webから問い合わせることで通信経路に問題がないか確認できる仕組みが整っているのすごい。NTT側に問題がある人だけを問い合わせにうまく誘導できていそうだなと思った。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.11.29]]></title>
         <id>https://gamegaz.com/?p=42476</id>

@@ -74,6 +74,38 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2024-11-29">2024-11-29</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2024-11-28</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/11/29/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>数日前にインターネットが壊れていた。
+ブラウザからWebページにアクセスしようとするとほとんどタイムアウトする。なぜかpingは通るし、名前解決もできている。curlからだとなぜか(若干遅い気がするものの)レスポンスが返ってくる。
+なんかよくわからない挙動をしているなと思いながら、原因の切り分けをしていた。PC、スマートフォン、iPadのどれでも同様の問題が起きているので、端末側の問題ではなさそう。ルーターやONUの再起動は効果がない。ちょうど余っていた別のルーターに交換してみても同じ問題が起きるので、ルーターの問題ではなさそう。
+切り分けの結果、ONUよりエンドユーザー側の機器に問題はなさそうに思えた。ONUもステータス表示を見る限り問題がなさそう。となると、それよりも外側に何かしらの問題がありそう。
+NTTの問い合わせをポチポチしていたら、どうやら本当にONUより外側の通信経路に問題がありそう、と出てきた。
+
+ということでこのまま問い合わせをした。問い合わせ時には夜になっていたのだけど、翌朝には電話が来て問題が解決したことを教えてくれた。NTT側の機器がおかしくなっていたらしい。
+Webから問い合わせることで通信経路に問題がないか確認できる仕組みが整っているのすごい。NTT側に問題がある人だけを問い合わせにうまく誘導できていそうだなと思った。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/99db123a955e675ffabb77f3640c135983928423/backend&#x3D;imagemagick;height&#x3D;1300;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-11-28">2024-11-28</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -16029,7 +16061,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-11-29T00:03:36.554Z">2024-11-29T00:03:36.554Z</time>
+    <time id="build-timestamp" datetime="2024-11-29T01:28:53.004Z">2024-11-29T01:28:53.004Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -1182,6 +1182,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398307394200",
+          "author": null,
+          "description": "数日前にインターネットが壊れていた。\nブラウザからWebページにアクセスしようとするとほとんどタイムアウトする。なぜかpingは通るし、名前解決もできている。curlからだとなぜか(若干遅い気がするものの)レスポンスが返ってくる。\nなんかよくわからない挙動をしているなと思いながら、原因の切り分けをしていた。PC、スマートフォン、iPadのどれでも同様の問題が起きているので、端末側の問題ではなさそう。ルーターやONUの再起動は効果がない。ちょうど余っていた別のルーターに交換してみても同じ問題が起きるので、ルーターの問題ではなさそう。\n切り分けの結果、ONUよりエンドユーザー側の機器に問題はなさそうに思えた。ONUもステータス表示を見る限り問題がなさそう。となると、それよりも外側に何かしらの問題がありそう。\nNTTの問い合わせをポチポチしていたら、どうやら本当にONUより外側の通信経路に問題がありそう、と出てきた。\n\nということでこのまま問い合わせをした。問い合わせ時には夜になっていたのだけど、翌朝には電話が来て問題が解決したことを教えてくれた。NTT側の機器がおかしくなっていたらしい。\nWebから問い合わせることで通信経路に問題がないか確認できる仕組みが整っているのすごい。NTT側に問題がある人だけを問い合わせにうまく誘導できていそうだなと思った。",
+          "link": "https://commits.hatenablog.com/entry/2024/11/29/100000",
+          "publishedOn": "2024-11-29T01:00:00.000Z",
+          "wordCount": 471,
+          "title": "2024-11-28",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/99db123a955e675ffabb77f3640c135983928423/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/99db123a955e675ffabb77f3640c135983928423/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398305538483",
           "author": null,
           "description": "ランニングを始めた。\n自宅周辺を1回3km強走っている。まだ2回しか走っていない。大体1キロ6分ペースで走っている。\n終わると結構へとへとになってしまう。もうちょっと距離を伸ばせるようになりたい。",
