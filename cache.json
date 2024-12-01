@@ -1330,21 +1330,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6802340630903346669",
-          "author": null,
-          "description": "moneyforward-dev.jp\n会社のブログに記事を書いた。\nTwitter(現X)にも書いたけれど、最初はファイルアクセスを監視する手段をどうするか結構悩んでいた。パッと思いついたのはstraceだけど、あんまり慣れてないし、Docker上で使うにはDockerの設定が必要で、CIでそれが設定できるか怪しくてうーんとなっていた。\nしばらく悩んだ後にinotifyのことを思い出し、読み込みに対するフックって提供されているのかなと調べてみたら提供されていたので、これを使った。べ\n結果としてかなりシンプルなコードを使って多くの不要なファイルを消せたので良かった。こういう「ちょっとしたコード」がしっかり役に立つのは好き\nbugs.ruby-lang.org\n最近の仕事で困っているネタをbugsに投げた。この内容は詳しくは会社のブログに記事を書くつもり(今週出せるといいな)\nruby-jpのSlackで、「stub_constに渡す定数名が定数として存在していることを保証したい」という話があった。\n例:\n# Foo 定数がない時には例外を投げてほしい\nstub_const('Foo, 2)\n\n\n\nこれをなんかかっこいいsyntaxで書けないかなと思って、const_missingを使う方法を考えていた。\nclass ConstExistanceHelper\n  class << self\n    attr_reader :const_name\n\n    def const_missing(name)\n      Class.new(self).assign_name(name)\n    end\n\n    def validate!\n      Object.const_get(const_name)\n      const_name\n    end\n\n    def const_name\n      superclass == Object ? '' : [superclass.const_name, @const_name].join('::')\n    end\n\n    def assign_name(name)\n      @const_name = [name]\n      self\n    end\n  end\nend\n\nclass Foo\n  class Bar\n  end\nend\n\nx = ConstExistanceHelper\np x::Foo::Bar.validate! # => \"::Foo::Bar\"\np x::Foo::Baz.validate! # => NameError\n\n\n\nvalidate!ってわざわざ呼ばなきゃいけないのがダサいなと思っている。stub_constが内部でString === const_nameしてStringかどうかを検査しているのが邪魔で、最後にオブジェクトをStringに変換しないといけないという制約がある。これがなければto_strとかでごまかせたかもしれない。\n最初はvalidate!ではなくto_sというメソッド名で考えていて、あまりにダサいなと思っていたのだけれど、メソッド名をvalidate!にすることでダサさが軽減された気がする。",
-          "link": "https://commits.hatenablog.com/entry/2024/09/03/100000",
-          "publishedOn": "2024-09-03T01:00:00.000Z",
-          "wordCount": 540,
-          "title": "2024-09-02",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },
@@ -6616,6 +6601,16 @@
       "siteUrl": "http://github.com/dylang/node-rss",
       "articles": [
         {
+          "id": "https://blog.ojisan.io/firebase-soitogeru",
+          "author": null,
+          "description": "悪い人たちに唆されたので1人アドベントカレンダー やります。\n彼らが本当に悪いのは、その人たちも1人アドベントカレンダーをやるということです。\n外堀を埋めるな！ OGP…",
+          "link": "https://blog.ojisan.io/firebase-soitogeru",
+          "publishedOn": "2024-12-01T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Firebase と添い遂げるアドベントカレンダーをやるよ",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.ojisan.io/gijutsusyoten-17-dasu",
           "author": null,
           "description": "うおおおおおおおおおおおおお！！！！！！ なんと！！！今日だけ！！！半額で販売します！！！！！！！ https://techbookfest.org/product/riz8dNLcwjV00bygdf5rAt…",
@@ -8442,16 +8437,6 @@
           "wordCount": 1674,
           "title": "【噂】PS5 Proのグラフィック性能 ミドルハイエンドGPUに匹敵",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/PS5-Pro-Design.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=41845",
-          "author": "mamosuke",
-          "description": "PS4 Create Shortcut to Apps in the DB v1.0.3,NoEのStephan Bole氏退任 Luciano Pereña氏が社長に,cubeboot(Flippyboot IPL) beta-rc05,GB Studio v4.1.0,Ultrahand Overlay 1.7.2,NX Venom 4.9.1,Ultra-NX 2.2-R4+,nx.js v0.0.50,SuperFW,PPSSPP for iOS 1.17.4,PPSSPP Legacy,PCSX2 v2.1.123,Ryujinx 1.1.1385,sm64coopdx v1.0.3,decky-loader v3.0.0-pre12,Xenia Canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2024.9.3 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024090341845/",
-          "publishedOn": "2024-09-02T23:13:05.000Z",
-          "wordCount": 1712,
-          "title": "GameGaz Daily 2024.9.3",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
@@ -8621,16 +8606,6 @@
           "wordCount": null,
           "title": "Karte.153 僕らは創り上げた",
           "imageUrl": "https://cdn-public.comici.jp/articlevisual/1193201/default/20240910103843903012D49F4DE0120825E41B8B0E1E447E3-sm.png"
-        },
-        {
-          "id": "248740",
-          "author": "チャンピオンクロス",
-          "description": "",
-          "link": "https://championcross.jp/episodes/3e3367caa05ec/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2024-09-03T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Karte.152 僕は監督になった",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/21480/default/20240827171939712EEE5D2ED452DC625A8A32FDD269708E2-sm.png"
         }
       ]
     },
@@ -8638,7 +8613,18 @@
       "title": "kirarajumping",
       "feedUrl": "https://kirarajump.blogspot.com/feeds/posts/default?alt=rss",
       "siteUrl": "https://kirarajump.blogspot.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "tag:blogger.com,1999:blog-9037679302356452478.post-558781578611978191",
+          "author": "noreply@blogger.com (kirarajumper)",
+          "description": "過去の振り返り\n・2023年振り返り\n・2022年振り返り\n・2021年振り返り\n・2020年振り返り\n・2019年振り返り\n---\n仕事関係\n\n\n今年は、去年よりも思い悩むことが増えた1年だったような気がします。\n昨年(2023年)はソフトウェアエンジニアとしてコードを書くことに比較的集中できていたのですが、今年はチームの状況が変化し、様々な仕事が降りかかるようになってきました。そこはまぁ総合職だから仕方ないと割り切ってはいるのですが、心を殺して仕事をする時間がどうも増えたような気はします。\nまた、諸事情あり、11月の中盤くらいから、プロダクトマネジメントの職に就くようになりました。マネジメントは、聖徳太子みたいに色々な人の話を聞く仕事なので、心がしんどくなりがちです。マネージャーでもないのにマネージャーみたいな仕事をしているので、割に合わないところもあります。もう少し、研修とかでマネジメントの勉強をしてからこういう立場に就きたかったですね。新卒2年目には早すぎる...。\n\n\nもやもやするポイントはもう1つあって、LLMにまつわる仕事をやっぱりやりたくなってきたなぁというのがあります。\nプライベートでは、学生時代に所属していた研究室の人たちと1月にサーベイ論文を出し、4月に日本語LLMまとめを論文化し、10月にLLMに関する同人誌を書くなど、色々できたのですが、本業の仕事ではあまりそういったことができず、何ならマネジメントが始まってからはほぼ不可能な状態になってしまいました。本業でしんどいことがあるたびに、気がつくと異動や転職がちらちら頭の中でチラつくようになってきました。\n\n\nとはいえ、今働いている会社のチームの人たちはすごく良い人たちばかりだし、フルリモートは相変わらず神制度なので、すぐに外に出ようという感じにはなっていないです。逆に言えば、そこら辺が綻び始めると潮時なのかなぁと思っています。\n\n\n\n仕事以外\n\n\n今年は出費が多くなることをあらかじめ予想していたので、意識的にプライベートを抑制して過ごすことを徹底していました（仕事で悩んでいるのはこれが原因でもあるので、あまり良くなかった...）。\n\n\nお金のかからない趣味として、一番には韓国語の勉強をがんばりました。Duolingo を継続したほか、10月からはNHKのラジオ講座も使って勉強しています。1月には1年ぶりに韓国に行き、5日ほど滞在しました。これは素晴らしい体験でした。来年の3月にもまた5日間くらい滞在する予定です。\n今の自分にとって、韓国ドラマに描かれるような人間の生き様って、かなり救いになっているところがあります。自分はもうずっと物心のついた頃から、どうやって生きればいいんだろうと悩んでいるのですが、現実の学校とか会社とかで出会う人間って何と言うか\"余裕のある人\"ばかりで、そういう悩みをシェアできる相手がいませんでした。中学受験をして以来、ずっとアウェーな気分でいるんですよね。だからこそ、これまでネットの人間関係にのめり込んで、自分のような人間を探してきました。\nそれでいうと韓国は日本よりもさらに激しい競争社会なので、不本意に競争に巻き込まれながら心が削られている自分のような人間がたくさんいる気がします。そういう人たちが作った物語に惹かれてしまうんだと思います。\n\n\nその他は、歯列矯正がようやく本格的に始まったり、ICL（出費が多くなった原因）をしたりしました。\n\n\n\n\n---\nそんなわけで、あんまり書くことのない1年でした。来年はもっとアクティブに生きたいと思います！",
+          "link": "https://kirarajump.blogspot.com/2024/12/2024.html",
+          "publishedOn": "2024-12-01T13:00:00.000Z",
+          "wordCount": 4011,
+          "title": "2024年振り返り",
+          "imageUrl": "https://bit.ly/3JSzrtX"
+        }
+      ]
     },
     {
       "title": "Lejeのキャンパス - Scrapbox",
