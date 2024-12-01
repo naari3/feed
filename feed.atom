@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-01T13:07:01.786Z</updated>
+    <updated>2024-12-01T14:01:58.485Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「Tidy First?」を読んだ]]></title>
+        <id>hatenablog://entry/6802418398308285481</id>
+        <link href="https://blog.nishimu.land/entry/2024/12/01/222330?utm_source=feed"/>
+        <updated>2024-12-01T13:23:30.000Z</updated>
+        <summary type="html"><![CDATA[www.oreilly.com
+Kent Beck 御大による、ソフトウェア設計に関する書籍シリーズの第一弾である「Tidy First?」を読みました。
+この本では開発中に散らかってしまうコードをいかに片付けて、読みやすい状態を保つかについて説明されます。
+ソフトウェアの設計は人間関係のエクササイズだとし、シリーズ第一弾である本書ではまずは一人で行える範囲の話題を扱います。
+リファクタリングのサブセットとして、誰もが気に入って反対する人もいないくらいの小規模の改善と "Tidying" として定義して、代表的な Tidying のカタログと、その適用方法、そこから踏み込んで理論的な解説が続きます。
+Tidying
+どうして Tidying が必要になったかと言うと、御大は以下のように最近の「リファクタリング」という言葉の使われ方を嘆いている。
+“Refactoring” took fatal damage when folks started using it to refer to long pauses in feature development. They even eliminated the “that don’t change behavior” clause, so “refactoring” could easily break the system.
+「リファクタリング」は、機能開発を長期間止めることを指す言葉として使われるようになって致命的なダメージを受けてしまった。彼らは「振る舞いを変更しない」という条項さえ削除してしまってので、「リファクタリング」によって容易にシステムが破壊されるようになたのだ。
+
+
+どうしてコードが散らかっていると駄目なのだろうか。
+本書ではソフトウェアを変更するコストを、コードを理解するコストとニアリーイコールであるとしてい…]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024年振り返り]]></title>
         <id>tag:blogger.com,1999:blog-9037679302356452478.post-558781578611978191</id>
@@ -9820,17 +9842,6 @@ www.nicovideo.jp
 www.nicovideo.…]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【噂】PS5 Proのグラフィック性能 ミドルハイエンドGPUに匹敵]]></title>
-        <id>https://gamegaz.com/?p=41850</id>
-        <link href="https://gamegaz.com/2024090341850/"/>
-        <updated>2024-09-03T01:44:29.000Z</updated>
-        <summary type="html"><![CDATA[PS5 ProのパフォーマンスはAMD Radeon RX 7700 XTに近い性能になるようです。→→→この記事の続きを読む
-【噂】PS5 Proのグラフィック性能 ミドルハイエンドGPUに匹敵 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

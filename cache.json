@@ -1115,6 +1115,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398308285481",
+          "author": null,
+          "description": "www.oreilly.com\nKent Beck 御大による、ソフトウェア設計に関する書籍シリーズの第一弾である「Tidy First?」を読みました。\nこの本では開発中に散らかってしまうコードをいかに片付けて、読みやすい状態を保つかについて説明されます。\nソフトウェアの設計は人間関係のエクササイズだとし、シリーズ第一弾である本書ではまずは一人で行える範囲の話題を扱います。\nリファクタリングのサブセットとして、誰もが気に入って反対する人もいないくらいの小規模の改善と \"Tidying\" として定義して、代表的な Tidying のカタログと、その適用方法、そこから踏み込んで理論的な解説が続きます。\nTidying\nどうして Tidying が必要になったかと言うと、御大は以下のように最近の「リファクタリング」という言葉の使われ方を嘆いている。\n“Refactoring” took fatal damage when folks started using it to refer to long pauses in feature development. They even eliminated the “that don’t change behavior” clause, so “refactoring” could easily break the system.\n「リファクタリング」は、機能開発を長期間止めることを指す言葉として使われるようになって致命的なダメージを受けてしまった。彼らは「振る舞いを変更しない」という条項さえ削除してしまってので、「リファクタリング」によって容易にシステムが破壊されるようになたのだ。\n\n\nどうしてコードが散らかっていると駄目なのだろうか。\n本書ではソフトウェアを変更するコストを、コードを理解するコストとニアリーイコールであるとしてい…",
+          "link": "https://blog.nishimu.land/entry/2024/12/01/222330?utm_source=feed",
+          "publishedOn": "2024-12-01T13:23:30.000Z",
+          "wordCount": 373,
+          "title": "「Tidy First?」を読んだ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/d64cfe54741371272774eb2f729b20637b8dfd88/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F412F5DiRwuL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d64cfe54741371272774eb2f729b20637b8dfd88/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F412F5DiRwuL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802340630906341500",
           "author": null,
           "description": "なんかあるやろと思ったら macOS にも標準で入っている column コマンドで十分だった。\nmiller とかを眺めていたが高機能すぎて持て余したのでこれで良かった。\nこれが、\n$ cat service.tsv\nTwitter X\nG Suite Google Workspace\nOffice 365 Microsoft 365\nHipChat Stride\n\n\n\nこうなる。\n$ cat service.tsv | column -t -s $'\\t'\nTwitter     X\nG Suite     Google Workspace\nOffice 365  Microsoft 365\nHipChat     Stride\n\n\n\nポイントは $'\\t でまったく知らなかったのだけれど対応しているシェルだと $'<エスケープシーケンス>' と書くとエスケープシーケンスを解釈した結果に置き換えてくれるらしい。(see also)\n最終的にやりたかったのは gh の結果をシュッとテーブル形式で表示するので以下のような感じで扱えて見栄えがよくなった。(スクショ参照)\n$ gh list --json 'number,author,title,headRefName' -q '.[] | [ \"#\" + (.number | tostring), \"@\" + .author.login, .title, .headRefName] | @tsv' | column -t -s $'\\t'\n\n\n\nちなみにこれだとデフォルトの表示の方が綺麗なのであくまでサンプルです。",
@@ -8427,16 +8442,6 @@
           "wordCount": 1767,
           "title": "GameGaz Daily 2024.9.4",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/3dpinball-nds.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=41850",
-          "author": "mamosuke",
-          "description": "PS5 ProのパフォーマンスはAMD Radeon RX 7700 XTに近い性能になるようです。→→→この記事の続きを読む\n【噂】PS5 Proのグラフィック性能 ミドルハイエンドGPUに匹敵 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024090341850/",
-          "publishedOn": "2024-09-03T01:44:29.000Z",
-          "wordCount": 1674,
-          "title": "【噂】PS5 Proのグラフィック性能 ミドルハイエンドGPUに匹敵",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/PS5-Pro-Design.png"
         }
       ]
     },
