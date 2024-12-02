@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-02T10:02:06.026Z</updated>
+    <updated>2024-12-02T11:01:41.220Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -150,6 +150,16 @@ youtu.be
         <summary type="html"><![CDATA[【IIJ 2024 TECHアドベントカレンダー 12/2の記事です】 ブログを書くようになって、Starlink導入の相談を受ける機会が増えてきました。個人・法人に関わらずStarlinkに興味を持...]]></summary>
         <author>
             <name>谷口 崇</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firestore の ID 採番を add 使わずにやりたい]]></title>
+        <id>https://blog.ojisan.io/firebase-id-saiban</id>
+        <link href="https://blog.ojisan.io/firebase-id-saiban"/>
+        <updated>2024-12-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Firebase と添い遂げる Advent Calendar 2024、2日目です。 悩み RDB を使っている条件下でレイヤードアーキテクチャをやる際の問題として、あるAPIでリクエストデータを永続化したいとき、そのリクエストデータを元に Entity…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
