@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-04T14:01:52.267Z</updated>
+    <updated>2024-12-04T15:01:43.314Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GTS移植15]]></title>
+        <id>hatenablog://entry/6802418398309069304</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/12/04/233403"/>
+        <updated>2024-12-04T14:34:03.000Z</updated>
+        <summary type="html"><![CDATA[進捗 50/118 +0
+
+TODO
+・3Pフラグ　番号確認（ルート分岐）
+・タイトルに戻る前のエフェクト見直し
+・天使登場シーンの重複スクロール画像を加工
+泣き言はいいので進捗報告。口パク差分画像、タイトル追加しました。懸案事項だった一部激しいシーンの口パク処理を加えて、たぶん全シーンで入ると思います。オリジナルとの大雑把な違いは・・・・
+ゲームボーイ音源で制作依頼中です。最高に良い。
+GBAは合成処理遅すぎてできない為。
+という感じです。多分readmeテキストは言い訳の嵐だろうなあ。。いや最初から無茶なのはわかっていたことですけれど。12月中に完成目途が立ちそうです。ここは安心かな。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【噂】Switch2のフィルムやケースが登場 Joy-Conのリークも？！]]></title>
         <id>https://gamegaz.com/?p=42515</id>
@@ -105,6 +124,17 @@ Image: 8ヶ月経過した日の長さを感じる手帳の使い方 - 気晴ら
 GameGaz Daily 2024.12.4 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firestoreのコレクションに対するスキーマを作る]]></title>
+        <id>https://blog.ojisan.io/client-server-zure</id>
+        <link href="https://blog.ojisan.io/client-server-zure"/>
+        <updated>2024-12-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Firebase と添い遂げる Advent Calendar 2024、4日目です。 スキーマレスだからこそ擬似的なスキーマを作る ３日目の記事には、スキーマレスだからこそ converter に現れる型定義をスキーマとして使ってみようと書いた。
+これは Firestore…]]></summary>
+        <author>
+            <name>blog.ojisan.io's RSS Feed</name>
         </author>
     </entry>
     <entry>
