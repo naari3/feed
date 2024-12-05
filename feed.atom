@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-05T10:02:05.317Z</updated>
+    <updated>2024-12-05T11:01:40.701Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GTS移植16]]></title>
+        <id>hatenablog://entry/6802418398309257394</id>
+        <link href="https://akkera102.hatenablog.com/entry/2024/12/05/194658"/>
+        <updated>2024-12-05T10:46:58.000Z</updated>
+        <summary type="html"><![CDATA[進捗 77/113 +27
+
+・タイトルに戻る前のエフェクト見直し
+・天使とカルラのスクロール画像を加工、場面６９スクリプト修正
+・バッファ3使用時のgrep調査
+ノウハウが溜まったせいか、バグで詰まっても即対応です。ふっふっふ、平日２時間程度でこの進捗。月末どころか来週までに終わりそうな予感します。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[gRPC Federationを使ったBFF開発の実態]]></title>
         <id>https://engineering.mercari.com/blog/entry/20241204-developing-bff-using-grpc-federation/</id>
