@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-05T06:02:27.291Z</updated>
+    <updated>2024-12-05T07:01:42.997Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,32 @@
         <summary type="html"><![CDATA[【IIJ 2024 TECHアドベントカレンダー 12/5の記事です】 はじめに アドベントカレンダーなのでクリスマスっぽいことをしましょう。ホワイトクリスマスには雪。ということで、六角形の雪の結晶の...]]></summary>
         <author>
             <name>やまぐち</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2024-12-04]]></title>
+        <id>hatenablog://entry/6802418398309080532</id>
+        <link href="https://commits.hatenablog.com/entry/2024/12/05/100000"/>
+        <updated>2024-12-05T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[産業を語る: 愛媛13のオーラルヒストリー
+
+作者:いよぎん地域経済研究センター
+アトラス出版
+Amazon
+
+産業を語る: 愛媛13のオーラルヒストリー を読んでいる。来年のRubyKaigiの予習。
+Kindle Unlimited 対象でなんか面白い本はないかなと探していたら偶然見つけた。愛媛県のいろんな企業の経営者へのインタビュー集。
+まだ最初の2社分しか読んでいないけど、割と好きな感じの本。
+冒頭の「東予、中予、南予があって、それぞれの産業は〜」というところだけでも読んで良かった気がする。
+RubyWorld Conference に参加するために、松江入りしていた。
+昼間はRubyハッカソンに参加して、RBS周りのコードを眺めていた。
+rubyassociation.doorkeeper.jp
+最近RBSの起動が遅いという話があって、それ関連でaws-sdkのRBSが入ったときのRBSの読み込み時間を調べていた。どうやらaws-sdk関連のRBSを読み込むにはRails関連のRBSの18倍時間がかかっている。これはいいベンチマークになりそう。良くないんだけど。
+andpad.connpass.com
+RubyWorld Conference 前夜祭で「どうやって登壇資料を作ってる？」という話があった。私はGoogleスライドを開いて頭からスライドをガッと作っていって、なんとなく全体ができたら手直しに入っているかなあと言う話をしていた。
+その場で話しそびれたこととしては、結構proposalの時点でストーリーを考えていることが多い気がする。大まかなストーリーはproposalを書くときに頭の中に浮かんでいるので、スライドを書くときはproposalを書いたときの気持ちを思い出しながらそれをアウトプットしている。とはいえそう上手く行くときばかりではなく、proposalを書いたときのストーリーから離れることもよくある。]]></summary>
+        <author>
+            <name>diary</name>
         </author>
     </entry>
     <entry>
