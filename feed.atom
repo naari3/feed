@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-06T12:02:32.869Z</updated>
+    <updated>2024-12-06T13:08:17.453Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -9962,113 +9962,6 @@ www.youtube.com
 わからなくはないですが、それは美少女が美少女コンテンツみたいなやり方で扱われる世界にお…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2024-09-07]]></title>
-        <id>hatenablog://entry/6802340630904522610</id>
-        <link href="https://commits.hatenablog.com/entry/2024/09/08/100000"/>
-        <updated>2024-09-08T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[必要にかられて druby の実装を読んでいた。
-ブロックの処理がうまくいかないような気がしていて、試してみたら案の定うまく動かなかった。
-# server.rb
-require "drb"
-
-class Front
-  def f(&b)
-    @b = b
-  end
-
-  def g
-    @b.call
-  end
-end
-
-uri = "druby://localhost:55331"
-
-DRb.start_service(uri, Front.new)
-DRb.thread.join
-
-
-
-
-
-# client.rb
-require "drb"
-DRb.start_service
-
-front = DRbObject.new_with_uri("druby://localhost:55331")
-
-front.f do
-  p 42
-end
-
-GC.start
-GC.start
-GC.start
-
-front.g
-
-
-
-front.gを呼ぶときには、front.fに渡したブロックはGCに回収されてしまっている。
-これを回避するにはProcに対するDRbObjectが死ぬまでProcを GC に回収されないようにしなければいけないのだけれど、大変そう。というか、これをどうしているかを知りたくて druby のコードを読んでいたのだけど、対応していないので自分で方法を考えなければならない……。druby でやるなら、Procはクライアント側でHashにでも詰めておいて、サーバー側のProcに対するDRbObjectが回収されるときにfinalizerでクライアント側でも回収させるとかかな。だるそう
-とここまで書いて、Procじゃなくて普通のオブジェクトでも同じことが起こるのではと思って試したのだけど、こっちは動く。なんでだろう。
-# server.rb
-require "drb"
-
-class Front
-  def f(x)
-    @x = x
-  end
-
-  def g
-    @x.hello
-  end
-end
-
-uri = "druby://localhost:55331"
-
-DRb.start_service(uri, Front.new)
-DRb.thread.join
-
-
-
-
-
-# client.rb
-require "drb"
-DRb.start_service
-
-front = DRbObject.new_with_uri("druby://localhost:55331")
-
-class C
-  include DRb::DRbUndumped
-  def hello
-    puts 'hello'
-  end
-end
-
-front.f(C.new)
-
-GC.start
-GC.start
-GC.start
-
-front.g]]></summary>
-        <author>
-            <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2024.9.8]]></title>
-        <id>https://gamegaz.com/?p=41883</id>
-        <link href="https://gamegaz.com/2024090841883/"/>
-        <updated>2024-09-08T00:48:21.000Z</updated>
-        <summary type="html"><![CDATA[PFU-PupFileUnpacker,GoldHEN Cheats Pack PKG v07.09.24 UPD #2,ARK-4 v1725718363,Ultrahand Overlay 1.7.4,sys-con 1.4.1,Nightly-wiiload_plugin-20240907-220738,Configurable USB Loader MOD r78.12,NINTV-DS v5.3,jc-bootrom-font,Vita3K Build: 3641,Xenia Canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2024.9.8 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
