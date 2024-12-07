@@ -2151,21 +2151,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6802340630905075881",
-          "author": null,
-          "description": "人によると思いますが、私はWebブラウジングをする時ページキーでだいたい上下をさせています。そのため、これが独立キーじゃないと結構不便です。\nこれまで買ったノートパソコンで独立キーでなかったものは滅多になかったので、初めに買う時にチェックしなかったのですけれども、富士通の700gのパソコンが届いたら、ファンクションキーを押しながらでないとこのキーがありませんでした。\nなのでちょっと不便なので、常駐ソフトで作りました。右上のスクリーンとかインサートはほとんど使わないので、いらない。DELETEはさすがに使うので、ひとつ左にずらしました。\nAutoHotKeyで\nsc045::Send {PgUp}\nInsert::Send {Delete}\nDelete::Send {PgDn}\nのスクリプト作って読ませるだけです。\nあとは、デフォルトと変えたのは、出荷状態だとWindowsの音声入力がうまくいかなかったので、こちらのドライバーも最新にしました。\nとりあえず背中にあっても持っていることを忘れるくらい軽いのでなかなか楽しいです。",
-          "link": "https://katsumakazuyo.hatenablog.com/entry/2024/09/09/194750",
-          "publishedOn": "2024-09-09T10:47:50.000Z",
-          "wordCount": null,
-          "title": "富士通の700gパソコンは、PgUpとPgDnが独立キーでなかったので、作りました",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazuyomugi/20240909/20240909194205.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazuyomugi/20240909/20240909194205.jpg"
         }
       ]
     },
