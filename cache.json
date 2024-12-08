@@ -196,6 +196,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398309853996",
+          "author": null,
+          "description": "私のプロジェクト一式（wikiのサンプル含む）全てコンパイル通らなくなってるじゃないですか。やだー。\n# Link _bin/test.elf\nC:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld.exe:--defsym:1: undefined symbol `__sync_synchronize_none' referenced in expression\ncollect2.exe: error: ld returned 1 exit status\n調べたら今回のバージョンでgba.spacesが変わっていました。\n%include <sync-none.specs>\n\n*link:\n+ -T gba_cart.ld%s --gc-sections --no-warn-rwx-segments\n\n*startfile:\ngba_crt0%O%s crti%O%s crtbegin%O%s\n1行目のsync-none.specsは以下のように定義されています。\n%rename link sync_sync_link\n\n*link:\n--defsym=__sync_synchronize=__sync_synchronize_none %(sync_sync_link)\nんでこの「__sync_synchronize_none」なるものは「libgcc.a」で定義されている。ようするに私のmakefileで「-nostdlib」していることが原因。ld.exeはstdlibの「libgcc.a」内で定義されている「__sync_synchronize_none」が行方不明でどうなってんの？怒っているわけだ。あーー・・・古いgba.spacesは自分のプロジェクトに移譲で。\n追記：どうもgcc側の対応のようです。\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2024/12/08/082421",
+          "publishedOn": "2024-12-07T23:24:21.000Z",
+          "wordCount": 474,
+          "title": "devkitProさん・・・。",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398309853996/1733615323",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398309853996/1733615323"
+        },
+        {
           "id": "hatenablog://entry/6802418398309596962",
           "author": null,
           "description": "終わりました。。日差しがまぶしいですね・・・。",
