@@ -196,6 +196,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398310263072",
+          "author": null,
+          "description": "ぼちぼちバグも潰せましたので公開日を14日夜にしようと思います。ぱちぱちぱち。後日談的な話はまた後でさせて頂きますね・・・。\nさて、今回はDLSiteのダウンロード版もバイナリ一致していますので、各段の入手性だと思っています。前のpc98パッケージというものなんて、どうやって探すかの段階から苦労しますからねー。見つけても高いお値段しかないという鬼畜の所業・・・心苦しかったです・・・。しかし一方のGTSは今なら半額！1000円もいかないのです、素晴らしい！リンクはちょっと誘導露骨なので（＾＾；各自検索かけていただければと思います。LIMITED EDITIONでない通常版の方です。",
+          "link": "https://akkera102.hatenablog.com/entry/2024/12/09/182128",
+          "publishedOn": "2024-12-09T09:21:28.000Z",
+          "wordCount": 439,
+          "title": "GTS移植18",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398310263072/1733736171",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398310263072/1733736171"
+        },
+        {
           "id": "hatenablog://entry/6802418398309853996",
           "author": null,
           "description": "私のプロジェクト一式（wikiのサンプル含む）全てコンパイル通らなくなってるじゃないですか。やだー。\n# Link _bin/test.elf\nC:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld.exe:--defsym:1: undefined symbol `__sync_synchronize_none' referenced in expression\ncollect2.exe: error: ld returned 1 exit status\n調べたら今回のバージョンでgba.spacesが変わっていました。\n%include <sync-none.specs>\n\n*link:\n+ -T gba_cart.ld%s --gc-sections --no-warn-rwx-segments\n\n*startfile:\ngba_crt0%O%s crti%O%s crtbegin%O%s\n1行目のsync-none.specsは以下のように定義されています。\n%rename link sync_sync_link\n\n*link:\n--defsym=__sync_synchronize=__sync_synchronize_none %(sync_sync_link)\nんでこの「__sync_synchronize_none」なるものは「libgcc.a」で定義されている。ようするに私のmakefileで「-nostdlib」していることが原因。ld.exeはstdlibの「libgcc.a」内で定義されている「__sync_synchronize_none」が行方不明でどうなってんの？怒っているわけだ。あーー・・・古いgba.spacesは自分のプロジェクトに移譲で。\n追記：どうもgcc側の対応のようです。\ngithub.com",
