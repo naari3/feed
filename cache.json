@@ -1195,7 +1195,23 @@
       "title": "アジの開き、お開き",
       "feedUrl": "https://blogyu-a-rueru.hatenablog.com/rss",
       "siteUrl": "https://blogyu-a-rueru.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6802418398310609638",
+          "author": null,
+          "description": "ヤキツカカシーです。\n皆さんは名前作ってますか？私は作ってます。\n \nということで最高のワールド創造杯やります。\n \n\nマイクラはseed値というランダムな数値でワールド生成されます。\nですが、ここに何の文字入れても勝手に数字変換されてワールド生成されます。\nじゃあ名前入れたっていいよね。いいと言いな。\n \nただ生成するだけじゃアレだし、レビューしようね。そんで順位も決めよう。\n星がそう言っている。\nレビュアー紹介\n住環境のプロフェッショナル 住屋 彗(すみや すい)\n名前だけで住環境のプロフェッショナルにさせられた人。\n性別不詳。持ち点30点。\n冒険のプロフェッショナル 山海 歩(やまうみ あゆむ)\n名前だけで冒険のプロフェッショナルにさせられた人。\n性別不詳。持ち点30点。\n景色のプロフェッショナル 見手 廻(みて まわる)\n名前だけで景色のプロフェッショナルにさせられた人。\n性別不詳。持ち点30点。\n地底人VTuber 焼束 香椎(やきつか かしい)\nおれ。\nオス。持ち点10点。\n1人目　定食所揚々亭店主 生肉投込田 勢\nこの名前がどんなワールドを作るかの予想\n食材が手に入りやすいと、嬉しい\n \n\n開幕からとんでもない名前が来ました。\n果たして食料はあるのでしょうか。\n \n\nseed値は-1191969844でした。\n \n\n何の変哲もないシラカバの森ですね。\n \n\n森を抜けるとジャングルとサバンナ村がありました。\nジャングルにはスイカやカカオ、竹も4本だけ生えてました。\n食料は多いかも。\n \n\nさらに進むと海岸沿いのサバンナ村とサンゴ礁。\nサンゴって食えるんすか。\n \n\nしょうもないメサもありました。\n本当にこんだけです。\n \n\nスポーン地点より反対側はトウヒの森でした。\n多分ベリーもある。\n \n\nさらに行くと凍ってました。\nスポーン地点はちょうど温暖地域と寒冷地域の…",
+          "link": "https://blogyu-a-rueru.hatenablog.com/entry/2024/12/11/231210",
+          "publishedOn": "2024-12-11T14:12:10.000Z",
+          "wordCount": 1232,
+          "title": "最高のワールド創造杯",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/fa404de798c88f98bcdb6444b9d4b4c8acaf9b94/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fy%2Fyakitsuka%2F20241211%2F20241211192417.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/fa404de798c88f98bcdb6444b9d4b4c8acaf9b94/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fy%2Fyakitsuka%2F20241211%2F20241211192417.png"
+        }
+      ]
     },
     {
       "title": "スペシャルブログ",
@@ -1902,21 +1918,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6802340630905983800",
-          "author": null,
-          "description": "届いた　でかい\n \n \n外見、まじで満足感がある\nスピーカのところの丸ネオン、LEDとアクリルとかでごまかすんじゃなくて、\nちゃんと粒々入りの高輝度LEDがビカビカしてて大変素晴らしい\n \n \nという外見のレビューはほかの人に任せて、当然こちらは中身をレビューします。\n#DDRmini 届いた！！！でかいwwww満足度高い！！ pic.twitter.com/zTyDurHtYE\nSeptember 11, 2024\n\n\n \nがっつりヒートシンクの付いたCPU、外してみるとAllwinnerのA527というのがついています。\nなんと８コアｘ２Gヘルツの結構最近出た強力なCPUです。\nこれまでZUIKIが出してきたミニコンソールはZ7231というAllwinner A33と同等のCPUを詰んでいましたが、これは１６ビット時代のCPUをエミュレートするのが精々で、事前人試したところプレステレベルのエミュレーションでもまともに動かなかったので、何かしら上位のCPUを搭載してエミュレーションにするか、マジで再実装してそのクラスに落とし込むかどっちかだと思っていたんですが、思ってたより強力なの乗せてきたな、という感じです。\n\n基板のピンを当たってみましたがどうやら今のところ電源投入時のシリアルメッセージが表示されず、使用しているブートローダーがわかりません。\n公開されているOSSの中に、u-bootが入っていないので、うっかり忘れていなければu-boot以外のものが使われている気がします。\n \nゲーム環境ですが、メニューからゲームシリーズを選んで起動した瞬間に、MAMEなどでおなじみのCDイメージの名前がちらっと表示されるので、間違いなくエミュレーションであると考えられます。\nどういうベースで実装してくるかと思ったがemuベースだなこれ….まじか….まあそうなるよな　そのためのA52…",
-          "link": "https://honeylab.hatenablog.jp/entry/2024/09/13/112005",
-          "publishedOn": "2024-09-13T02:20:05.000Z",
-          "wordCount": null,
-          "title": "クラファン支援してたDDRminiが届いたので例の儀式",
-          "enclosure": {
-            "url": "https://pbs.twimg.com/media/GXKv6nuawAAxyXO?format=jpg&name=large",
-            "type": "",
-            "length": "0"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -7021,16 +7022,6 @@
           "wordCount": null,
           "title": "ユーザ空間でプロセスをスケジューリングする方法の模索",
           "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=26670",
-          "author": "森脇 千裕",
-          "description": "イベント情報 IIJがスマートファクトリー Japan 2024 秋に出展します。 スマートファクトリー Japan 2024 秋では、製造業のDX（デジタルトランスフォーメーション）をテーマに、これ...",
-          "link": "https://eng-blog.iij.ad.jp/archives/26670",
-          "publishedOn": "2024-09-13T02:47:56.000Z",
-          "wordCount": 1714,
-          "title": "「選べるIoT」 IIJがブース出展 ～スマートファクトリー Japan 2024 秋 ～",
-          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/09/fb1fc5e1727c35b015dff6a32cf8d3ce.jpg"
         }
       ]
     },
