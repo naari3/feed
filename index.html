@@ -97,6 +97,34 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">One experience 検索移行の話</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2024/12/11/111200" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、レシピ事業部検索チームのオリギル(@orgil_)です。
+先日、この開発者ブログで紹介されたOne experienceプロジェクトによって、クックパッドはプロダクト基盤をグローバル版のシステムに移行しました。私はこのプロジェクトにおいて検索の領域で移行の進行、開発を担当していました。このブログでは検索システムの移行について紹介します。
+
+グローバルのシステムに寄せた理由
+One experience によってクックパッドは検索基盤をグローバル側のシステムに移行しました。プロジェクト発足当初、日本とグローバルのどちらのシステムに寄せるかをいろんな観点から検討しました。日本ではSolr、Ruby、ECSなどで動くVoyagerというシステム、グローバルではElasticsearch、Python、k8s、Kafkaなどを用いたglobal-search-v2(通称GS2)という検索システムが動いています。検討の際、どちらのシステムも一長一短で、特段優劣をつけがたいものでした。
+検索アルゴリズムに関しては両システムで考え方は一緒でした。辞書ベースでクエリ拡張をし、ドキュメントのタイトルや材料などにマッチスコアを付け、辞書の属性によって細かい調整をするようなスコアリングアルゴリズムは両方にあります。
+またドキュメントの検索への反映時間はどちらも同等と呼べるものでした。GS2はKafkaを用いたイベント処理システムを用いて、ほぼ即時反映を実現しています。Voyagerでも定期的な同期をするようになっており、レシピの変更が最短5分で検索結果に反映されるようになっています。下記のブログで触れているように、プロダクトが求めるユーザー体験を実現するためには5分でドキュメントが反映されれば十分であるため、どちらのシステムでも同様な価値を届けられます。
+
+VoyagerがGS2より…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398310554437/1733883120" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
               rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
           <section class="articles-per-source">
@@ -14598,18 +14626,6 @@ PS4システムソフトウェア バージョン12.00 first appeared on 大人�
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">PS5システムソフトウェアアップデート バージョン 24.06-10.00.00</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024091241947/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>SIEJAが、PS5システムソフトウェアアップデート バージョン24.06-10.00.00をリリースしていました。→→→この記事の続きを読む
-PS5システムソフトウェアアップデート バージョン 24.06-10.00.00 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -16543,7 +16559,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-12-11T01:29:06.721Z">2024-12-11T01:29:06.721Z</time>
+    <time id="build-timestamp" datetime="2024-12-11T02:29:02.420Z">2024-12-11T02:29:02.420Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

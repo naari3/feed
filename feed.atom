@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-11T01:29:06.760Z</updated>
+    <updated>2024-12-11T02:29:02.463Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,24 @@
         <summary type="html"><![CDATA[この記事は、Merpay & Mercoin Advent Calendar 2024 の記事です。 はじめに こんにちは。メルペイ Frontend の @togami です。 私たちのチームでは Engage […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[One experience 検索移行の話]]></title>
+        <id>hatenablog://entry/6802418398310554437</id>
+        <link href="https://techlife.cookpad.com/entry/2024/12/11/111200"/>
+        <updated>2024-12-11T02:12:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、レシピ事業部検索チームのオリギル(@orgil_)です。
+先日、この開発者ブログで紹介されたOne experienceプロジェクトによって、クックパッドはプロダクト基盤をグローバル版のシステムに移行しました。私はこのプロジェクトにおいて検索の領域で移行の進行、開発を担当していました。このブログでは検索システムの移行について紹介します。
+
+グローバルのシステムに寄せた理由
+One experience によってクックパッドは検索基盤をグローバル側のシステムに移行しました。プロジェクト発足当初、日本とグローバルのどちらのシステムに寄せるかをいろんな観点から検討しました。日本ではSolr、Ruby、ECSなどで動くVoyagerというシステム、グローバルではElasticsearch、Python、k8s、Kafkaなどを用いたglobal-search-v2(通称GS2)という検索システムが動いています。検討の際、どちらのシステムも一長一短で、特段優劣をつけがたいものでした。
+検索アルゴリズムに関しては両システムで考え方は一緒でした。辞書ベースでクエリ拡張をし、ドキュメントのタイトルや材料などにマッチスコアを付け、辞書の属性によって細かい調整をするようなスコアリングアルゴリズムは両方にあります。
+またドキュメントの検索への反映時間はどちらも同等と呼べるものでした。GS2はKafkaを用いたイベント処理システムを用いて、ほぼ即時反映を実現しています。Voyagerでも定期的な同期をするようになっており、レシピの変更が最短5分で検索結果に反映されるようになっています。下記のブログで触れているように、プロダクトが求めるユーザー体験を実現するためには5分でドキュメントが反映されれば十分であるため、どちらのシステムでも同様な価値を届けられます。
+
+VoyagerがGS2より…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
@@ -9939,17 +9957,6 @@ GameGaz Daily 2024.9.13 first appeared on 大人のためのゲーム講座.]]><
         <updated>2024-09-12T14:47:08.000Z</updated>
         <summary type="html"><![CDATA[SIEJAが、PlayStation 4 システムソフトウェア バージョン12.00をリリースしていました。→→→この記事の続きを読む
 PS4システムソフトウェア バージョン12.00 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PS5システムソフトウェアアップデート バージョン 24.06-10.00.00]]></title>
-        <id>https://gamegaz.com/?p=41947</id>
-        <link href="https://gamegaz.com/2024091241947/"/>
-        <updated>2024-09-12T14:26:50.000Z</updated>
-        <summary type="html"><![CDATA[SIEJAが、PS5システムソフトウェアアップデート バージョン24.06-10.00.00をリリースしていました。→→→この記事の続きを読む
-PS5システムソフトウェアアップデート バージョン 24.06-10.00.00 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
         </author>
