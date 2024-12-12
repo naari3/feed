@@ -3354,6 +3354,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398311045266",
+          "author": null,
+          "description": "はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。\n細かな機能修正・改善\n1.商品紹介リンクに rel=\"sponsored\" を付与するように変更しました\n編集サイドバーから商品紹介リンク*1を挿入した際、aタグの属性に rel=\"sponsored\" を付与するように変更しました\n（参考情報）リンクの関係性を伝える重要性とリンクスパムに関する最新情報  |  Google 検索セントラル ブログ  |  Google for Developers\n2. ファイルアップローダーでアップロードできるファイル形式に MS Office 関連ファイルを追加しました（ブログMedia限定機能）\nファイルアップローダーでアップロードできるファイル形式に MS Office 関連ファイルを追加しました。\nxls\nxlsx\nppt\npptx\ndoc\ndocx\n3. ファイルアップローダーにてmp4ファイルの容量制限を引き上げました（ブログMedia限定機能）\nファイルアップローダーにてアップロードできるmp4ファイルの容量制限を10MBから100MBに引き上げました。\n2024年11月のお知らせ（再掲）\n2024年11月27日をもって、Instagram貼り付け機能を廃止します\n2024年12月18日(水)をもって、レストラン検索及びレストラン情報埋め込み機能の提供を終了します\n\n\n\n\n*1:Amazon商品紹介、楽天商品紹介、iTunes商品紹介",
+          "link": "https://staff.hatenablog.com/entry/2024/12/12/163928",
+          "publishedOn": "2024-12-12T07:39:28.000Z",
+          "wordCount": 892,
+          "title": "はてなブログの2024年11月の新機能・機能改善をお知らせします",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/cf63c32695c9adf0458f599c9ef5f4d36d7e505d/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20241212%2F20241212163011.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/cf63c32695c9adf0458f599c9ef5f4d36d7e505d/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20241212%2F20241212163011.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398306667662",
           "author": null,
           "description": "2024年9月2日12:18頃から2024年11月25日18:28頃まで、以下の不具合が発生していました。\n発生する条件(すべての条件を満たす場合に発生します)\nレスポンシブデザインを設定しているブログ\n90日以内に記事を投稿しているブログ\nスマートフォンからの閲覧\n記事ページの閲覧\n発生する問題\n記事ページの記事タイトル下に広告が表示されていた\n\n90日以内に記事が投稿されている場合、本来、この場所には広告は表示されません\n\n\n原因はアプリケーションの不具合によるものです。修正が完了し、現在は問題は解消しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",

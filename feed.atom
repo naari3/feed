@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-12T07:02:11.287Z</updated>
+    <updated>2024-12-12T08:02:12.402Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -24,6 +24,38 @@
         <summary type="html"><![CDATA[LLM（大規模言語モデル）による情報取得能力が向上している今日、以下で紹介する検索テクニックが不要になる時代が目前に迫っているかもしれません。しかし、まだしばらくは役立つ場面が多いと思いますので、ぜひ参考にしてください。 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[はてなブログの2024年11月の新機能・機能改善をお知らせします]]></title>
+        <id>hatenablog://entry/6802418398311045266</id>
+        <link href="https://staff.hatenablog.com/entry/2024/12/12/163928"/>
+        <updated>2024-12-12T07:39:28.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。
+細かな機能修正・改善
+1.商品紹介リンクに rel="sponsored" を付与するように変更しました
+編集サイドバーから商品紹介リンク*1を挿入した際、aタグの属性に rel="sponsored" を付与するように変更しました
+（参考情報）リンクの関係性を伝える重要性とリンクスパムに関する最新情報  |  Google 検索セントラル ブログ  |  Google for Developers
+2. ファイルアップローダーでアップロードできるファイル形式に MS Office 関連ファイルを追加しました（ブログMedia限定機能）
+ファイルアップローダーでアップロードできるファイル形式に MS Office 関連ファイルを追加しました。
+xls
+xlsx
+ppt
+pptx
+doc
+docx
+3. ファイルアップローダーにてmp4ファイルの容量制限を引き上げました（ブログMedia限定機能）
+ファイルアップローダーにてアップロードできるmp4ファイルの容量制限を10MBから100MBに引き上げました。
+2024年11月のお知らせ（再掲）
+2024年11月27日をもって、Instagram貼り付け機能を廃止します
+2024年12月18日(水)をもって、レストラン検索及びレストラン情報埋め込み機能の提供を終了します
+
+
+
+
+*1:Amazon商品紹介、楽天商品紹介、iTunes商品紹介]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
