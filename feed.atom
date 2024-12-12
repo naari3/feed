@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-12T01:29:22.563Z</updated>
+    <updated>2024-12-12T02:28:47.922Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メルカリ ハロのデザインシステムとFlutter]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20241210-flutter-hallo-design-system/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20241210-flutter-hallo-design-system/"/>
+        <updated>2024-12-12T11:00:59.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルカリ ハロのモバイルチームのEMの@atsumoです。 この記事は、連載：メルカリ ハロ 開発の裏側 – Flutterと支える技術 –の3回目と、 Mercari Advent  […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[効率的な情報検索を可能にするSlackの検索テクニック]]></title>
         <id>https://engineering.mercari.com/blog/entry/20241211-8351140ebb/</id>
@@ -14,6 +24,56 @@
         <summary type="html"><![CDATA[LLM（大規模言語モデル）による情報取得能力が向上している今日、以下で紹介する検索テクニックが不要になる時代が目前に迫っているかもしれません。しかし、まだしばらくは役立つ場面が多いと思いますので、ぜひ参考にしてください。 […]]]></summary>
         <author>
             <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【噂】別ルート情報 Switch2で高速転送速度を持つSD Expressを採用か]]></title>
+        <id>https://gamegaz.com/?p=42569</id>
+        <link href="https://gamegaz.com/2024121242569/"/>
+        <updated>2024-12-12T02:12:00.000Z</updated>
+        <summary type="html"><![CDATA[任天堂はSwitch2でSD Express microSDをサポートする可能性があると伝えていました。→→→この記事の続きを読む
+【噂】別ルート情報 Switch2で高速転送速度を持つSD Expressを採用か first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[トレンドワード機能を新システムに移行するときに考慮したこと]]></title>
+        <id>hatenablog://entry/6802418398310512953</id>
+        <link href="https://techlife.cookpad.com/entry/2024/12/12/110000"/>
+        <updated>2024-12-12T02:00:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。レシピ事業部検索チームの薄羽 (@usulity) です。
+続々と関連記事が投稿されていますが、日本とグローバルのクックパッドを統合しました。
+
+この統合に際して、日本のクックパッドの様々な機能がグローバル版へ移植されました。今回は、移植された機能の一つである「人気のキーワード」について、移植した際にどんな課題があってどう解決したのかの一部をご紹介できればと思います。
+人気のキーワード
+人気のキーワードは、「クックパッドで最近よく検索されているキーワード」を集計して、ランキング形式で掲載する機能です。
+日本版人気のキーワード
+このように、人気のキーワードは１時間おきに更新され、その時期・時間帯のトレンドを反映したようなキーワードのランキングになっています。
+トップページの検索窓の下にも上位のキーワードが表示されており、人目につきやすい機能の一つです。
+グローバル版人気のキーワード
+グローバル版にも人気のキーワード機能があります。
+基本的な機能は日本のものと同じで、そのときのよく検索されているキーワードを表現しています。
+グローバル版英語の人気のキーワード
+今回取り組んだタスクは、このグローバル版の人気のキーワードとして、日本の人気のキーワードを日本版の計算方式で表示することがゴールになります。
+課題
+ということで、「グローバルにも人気のキーワードがあるから、日本語でも集計を実行するように修正すれば終わり！」としたいところなんですが、いくつか問題があります。
+そもそも、グローバル版と日本版は別物のアプリケーションであるため違いは色々ありますが、「ログがない」ことと「更新頻度の違い」は移植する上で大きな問題でした。
+ログがない
+人気のキーワード機能を移植するにあたり、ユーザが移行してきたタイミングではもう人気のキーワードを表示しておきたいという要望がありました。
+人…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[コンソールのログインプロンプトにIPアドレスを表示する方法]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=28748</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/28748"/>
+        <updated>2024-12-12T01:43:24.000Z</updated>
+        <summary type="html"><![CDATA[【IIJ 2024 TECHアドベントカレンダー 12/12の記事です】 VirtualBoxやVMwareのような仮想環境にLinuxをインストールしたあと、そのままコンソール（tty1）でオペレー...]]></summary>
+        <author>
+            <name>古賀 勇</name>
         </author>
     </entry>
     <entry>

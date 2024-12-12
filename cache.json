@@ -3645,6 +3645,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398310512953",
+          "author": null,
+          "description": "こんにちは。レシピ事業部検索チームの薄羽 (@usulity) です。\n続々と関連記事が投稿されていますが、日本とグローバルのクックパッドを統合しました。\n\nこの統合に際して、日本のクックパッドの様々な機能がグローバル版へ移植されました。今回は、移植された機能の一つである「人気のキーワード」について、移植した際にどんな課題があってどう解決したのかの一部をご紹介できればと思います。\n人気のキーワード\n人気のキーワードは、「クックパッドで最近よく検索されているキーワード」を集計して、ランキング形式で掲載する機能です。\n日本版人気のキーワード\nこのように、人気のキーワードは１時間おきに更新され、その時期・時間帯のトレンドを反映したようなキーワードのランキングになっています。\nトップページの検索窓の下にも上位のキーワードが表示されており、人目につきやすい機能の一つです。\nグローバル版人気のキーワード\nグローバル版にも人気のキーワード機能があります。\n基本的な機能は日本のものと同じで、そのときのよく検索されているキーワードを表現しています。\nグローバル版英語の人気のキーワード\n今回取り組んだタスクは、このグローバル版の人気のキーワードとして、日本の人気のキーワードを日本版の計算方式で表示することがゴールになります。\n課題\nということで、「グローバルにも人気のキーワードがあるから、日本語でも集計を実行するように修正すれば終わり！」としたいところなんですが、いくつか問題があります。\nそもそも、グローバル版と日本版は別物のアプリケーションであるため違いは色々ありますが、「ログがない」ことと「更新頻度の違い」は移植する上で大きな問題でした。\nログがない\n人気のキーワード機能を移植するにあたり、ユーザが移行してきたタイミングではもう人気のキーワードを表示しておきたいという要望がありました。\n人…",
+          "link": "https://techlife.cookpad.com/entry/2024/12/12/110000",
+          "publishedOn": "2024-12-12T02:00:00.000Z",
+          "wordCount": 1006,
+          "title": "トレンドワード機能を新システムに移行するときに考慮したこと",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398310512953/1733968801",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398310512953/1733968801"
+        },
+        {
           "id": "hatenablog://entry/6802418398310554437",
           "author": null,
           "description": "こんにちは、レシピ事業部検索チームのオリギル(@orgil_)です。\n先日、この開発者ブログで紹介されたOne experienceプロジェクトによって、クックパッドはプロダクト基盤をグローバル版のシステムに移行しました。私はこのプロジェクトにおいて検索の領域で移行の進行、開発を担当していました。このブログでは検索システムの移行について紹介します。\n\nグローバルのシステムに寄せた理由\nOne experience によってクックパッドは検索基盤をグローバル側のシステムに移行しました。プロジェクト発足当初、日本とグローバルのどちらのシステムに寄せるかをいろんな観点から検討しました。日本ではSolr、Ruby、ECSなどで動くVoyagerというシステム、グローバルではElasticsearch、Python、k8s、Kafkaなどを用いたglobal-search-v2(通称GS2)という検索システムが動いています。検討の際、どちらのシステムも一長一短で、特段優劣をつけがたいものでした。\n検索アルゴリズムに関しては両システムで考え方は一緒でした。辞書ベースでクエリ拡張をし、ドキュメントのタイトルや材料などにマッチスコアを付け、辞書の属性によって細かい調整をするようなスコアリングアルゴリズムは両方にあります。\nまたドキュメントの検索への反映時間はどちらも同等と呼べるものでした。GS2はKafkaを用いたイベント処理システムを用いて、ほぼ即時反映を実現しています。Voyagerでも定期的な同期をするようになっており、レシピの変更が最短5分で検索結果に反映されるようになっています。下記のブログで触れているように、プロダクトが求めるユーザー体験を実現するためには5分でドキュメントが反映されれば十分であるため、どちらのシステムでも同様な価値を届けられます。\n\nVoyagerがGS2より…",
@@ -6769,6 +6784,16 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=28748",
+          "author": "古賀 勇",
+          "description": "【IIJ 2024 TECHアドベントカレンダー 12/12の記事です】 VirtualBoxやVMwareのような仮想環境にLinuxをインストールしたあと、そのままコンソール（tty1）でオペレー...",
+          "link": "https://eng-blog.iij.ad.jp/archives/28748",
+          "publishedOn": "2024-12-12T01:43:24.000Z",
+          "wordCount": 1810,
+          "title": "コンソールのログインプロンプトにIPアドレスを表示する方法",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/11/index-1.png"
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=29252",
           "author": "伊藤 綾夏",
           "description": "【IIJ 2024 TECHアドベントカレンダー 12/11の記事です】 システムを運用していく際、非機能要件を設計し、設計書として残すことは当たり前の手順です。 その設計に従い、システムを保守・改善...",
@@ -7026,6 +7051,16 @@
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
         {
+          "id": "https://engineering.mercari.com/blog/entry/20241210-flutter-hallo-design-system/",
+          "author": null,
+          "description": "こんにちは。メルカリ ハロのモバイルチームのEMの@atsumoです。 この記事は、連載：メルカリ ハロ 開発の裏側 – Flutterと支える技術 –の3回目と、 Mercari Advent  […]",
+          "link": "https://engineering.mercari.com/blog/entry/20241210-flutter-hallo-design-system/",
+          "publishedOn": "2024-12-12T11:00:59.000Z",
+          "wordCount": 773,
+          "title": "メルカリ ハロのデザインシステムとFlutter",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
           "id": "https://engineering.mercari.com/blog/entry/20241211-8351140ebb/",
           "author": null,
           "description": "LLM（大規模言語モデル）による情報取得能力が向上している今日、以下で紹介する検索テクニックが不要になる時代が目前に迫っているかもしれません。しかし、まだしばらくは役立つ場面が多いと思いますので、ぜひ参考にしてください。 […]",
@@ -7232,6 +7267,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=42569",
+          "author": "mamosuke",
+          "description": "任天堂はSwitch2でSD Express microSDをサポートする可能性があると伝えていました。→→→この記事の続きを読む\n【噂】別ルート情報 Switch2で高速転送速度を持つSD Expressを採用か first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024121242569/",
+          "publishedOn": "2024-12-12T02:12:00.000Z",
+          "wordCount": 1661,
+          "title": "【噂】別ルート情報 Switch2で高速転送速度を持つSD Expressを採用か",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/Switch2.png"
+        },
         {
           "id": "https://gamegaz.com/?p=42566",
           "author": "mamosuke",
