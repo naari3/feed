@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-12T17:02:24.272Z</updated>
+    <updated>2024-12-12T19:01:42.436Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[人生]]></title>
+        <id>https://note.com/26435/n/n6d539266c2b6</id>
+        <link href="https://note.com/26435/n/n6d539266c2b6"/>
+        <updated>2024-12-12T18:02:45.000Z</updated>
+        <summary type="html"><![CDATA[私にとって音MADは全てじゃない
+  
+続きをみる]]></summary>
+        <author>
+            <name>T</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[メルカリ ハロのデザインシステムとFlutter]]></title>
         <id>https://engineering.mercari.com/blog/entry/20241210-flutter-hallo-design-system/</id>
@@ -128,6 +140,16 @@ GameGaz Daily 2024.12.12 first appeared on 大人のためのゲーム講座.]]>
         <summary type="html"><![CDATA[【IIJ 2024 TECHアドベントカレンダー 12/12の記事です】 VirtualBoxやVMwareのような仮想環境にLinuxをインストールしたあと、そのままコンソール（tty1）でオペレー...]]></summary>
         <author>
             <name>古賀 勇</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[3PCA 30 日目: 2024 年の 3rd Party Cookie まとめ]]></title>
+        <id>https://blog.jxck.io/entries/2024-12-12/state-of-3pc-2024.html</id>
+        <link href="https://blog.jxck.io/entries/2024-12-12/state-of-3pc-2024.html"/>
+        <updated>2024-12-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[このエントリは、2023 年の 3rd Party Cookie Advent Calendar の 30 日目である。3rd Party Cookie のカレンダー | Advent Calendar 2023 - Qiitahttps://qiita.com/advent-calendar/2023/3rd-party-cookieこのアドベントカレンダーを開始した 2023 年末の時点では、2024 年(つまり今年)の年始に Chrome による 1% Deprecate が始まり、2024 年をかけてその範囲を広げ、今頃は Post 3rd Party Cookie の世界が訪れている見通しだった。しかし、その予定は大きく変更され、これからどうなるのかも不透明だ。つまり、この話は 2025 年も継続することになってしまったため、2024 年の現状を一旦まとめておくこととする。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
@@ -9969,23 +9991,6 @@ $ gh list --json 'number,author,title,headRefName' -q '.[] | [ "#" + (.number | 
 ちなみにこれだとデフォルトの表示の方が綺麗なのであくまでサンプルです。]]></summary>
         <author>
             <name>ちなみに</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[近況報告2024-09-14：転職した]]></title>
-        <id>hatenablog://entry/6802340630906259451</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2024/09/14/145841"/>
-        <updated>2024-09-14T05:58:41.000Z</updated>
-        <summary type="html"><![CDATA[9月に入り、東京は朝と夜だけ涼しくなった。昼間の暑さはまだ続いているが、オーブンの中で過ごすような「酷」の季節と比べたら比較的過ごしやすい季節になったと思う。最近はジムに通ったり、アークナイツをやったりしていた。
-
-先月（2024年8月）に前職の区切りをつけ、今月から株式会社Helpfeelで働き始めた。TypeScriptやJavaScriptを書いたり、ExpressやReactをいじったりしている。職業はWebエンジニアに変更になった。個性的なエンジニアが多数在籍していて楽しい環境である。
-「なぜこの会社にしたのか」とか「前職を辞めた本当の理由」とかは今は書けない。
-人の感情が織りなす群像劇が常に自分の認知の外で展開されていき、ついていくことができないでいる。別に今に始まったことではなく、物心着いた時から全くついていけてなかった気がする。よく「学校のクラスメイトの二人が恋愛関係になっていたのを卒業後に知る」話があるが、似たような話が学校を卒業してからも続くとは思わなかった。しかも登場する感情の幅は増えており、難易度は高くなっている。
-情緒的なやり取りを理解できず、学習性の無力感が積み上がっていった。やがて閾値を超えたらしく、他人の内面が全く把握できなくなった。他人が何を考えているのか理解できない。自分の言葉が、行動が、他人の感情になんの影響を与えるのか予測できない。
-であるならば、感情に影響を与えうる表現・行動は可能な限り避けた方が望ましい。作用がよくわかっていない行動をするべきではない。だが、感情を排して情報だけを残した文章に意味があるとは思えない。情報の伝達だけを目的とした行動は仕事では有益だが、人生の全ての時間を仕事に費やしているわけではない。
-今は何も書かないほうがいい気がしている。]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>
