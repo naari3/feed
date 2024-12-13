@@ -1158,21 +1158,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d64cfe54741371272774eb2f729b20637b8dfd88/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F412F5DiRwuL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802340630906341500",
-          "author": null,
-          "description": "なんかあるやろと思ったら macOS にも標準で入っている column コマンドで十分だった。\nmiller とかを眺めていたが高機能すぎて持て余したのでこれで良かった。\nこれが、\n$ cat service.tsv\nTwitter X\nG Suite Google Workspace\nOffice 365 Microsoft 365\nHipChat Stride\n\n\n\nこうなる。\n$ cat service.tsv | column -t -s $'\\t'\nTwitter     X\nG Suite     Google Workspace\nOffice 365  Microsoft 365\nHipChat     Stride\n\n\n\nポイントは $'\\t でまったく知らなかったのだけれど対応しているシェルだと $'<エスケープシーケンス>' と書くとエスケープシーケンスを解釈した結果に置き換えてくれるらしい。(see also)\n最終的にやりたかったのは gh の結果をシュッとテーブル形式で表示するので以下のような感じで扱えて見栄えがよくなった。(スクショ参照)\n$ gh list --json 'number,author,title,headRefName' -q '.[] | [ \"#\" + (.number | tostring), \"@\" + .author.login, .title, .headRefName] | @tsv' | column -t -s $'\\t'\n\n\n\nちなみにこれだとデフォルトの表示の方が綺麗なのであくまでサンプルです。",
-          "link": "https://blog.nishimu.land/entry/2024/09/14/210644?utm_source=feed",
-          "publishedOn": "2024-09-14T12:06:44.000Z",
-          "wordCount": 287,
-          "title": "TSVファイルをCLIでテーブル表示する",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/S/Sixeight/20240914/20240914202105.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/S/Sixeight/20240914/20240914202105.png"
         }
       ]
     },
@@ -6793,6 +6778,26 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=28601",
+          "author": "YKR",
+          "description": "【IIJ 2024 TECHアドベントカレンダー 12/14の記事です】 はじめに こんにちは、IIJセキュアMXサービスの運用をしているYKRです。初投稿です🔰 サービスの運用をしていると、色々と可...",
+          "link": "https://eng-blog.iij.ad.jp/archives/28601",
+          "publishedOn": "2024-12-13T00:49:37.000Z",
+          "wordCount": 1940,
+          "title": "Splunkでメールの配送図を作ろう",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/11/splunk_mail_graph_thumb.png"
+        },
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=29493",
+          "author": "古賀 勇",
+          "description": "【IIJ 2024 TECHアドベントカレンダー 12/13の記事です】 近年、Microsoft 365 や Google などを代表する様々な Web サービスをクラウド上で利用できるようになって...",
+          "link": "https://eng-blog.iij.ad.jp/archives/29493",
+          "publishedOn": "2024-12-13T00:44:01.000Z",
+          "wordCount": 1965,
+          "title": "Linux で YubiKey 5 を使って TOTP 認証する",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2024/12/yubikey5_index.png"
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=28748",
           "author": "古賀 勇",
           "description": "【IIJ 2024 TECHアドベントカレンダー 12/12の記事です】 VirtualBoxやVMwareのような仮想環境にLinuxをインストールしたあと、そのままコンソール（tty1）でオペレー...",
@@ -7060,6 +7065,16 @@
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
         {
+          "id": "https://engineering.mercari.com/blog/entry/20241213-mercari-engineering-culture/",
+          "author": null,
+          "description": "こんにちは。メルペイVPoEの@jorakuです。 この記事は、Merpay & Mercoin Advent Calendar 2024 の記事です。 メルペイに入社して半年が経ちました。この期間で改めて個人的 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20241213-mercari-engineering-culture/",
+          "publishedOn": "2024-12-13T10:00:05.000Z",
+          "wordCount": 547,
+          "title": "メルカリのエンジニアリングカルチャーについて",
+          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+        },
+        {
           "id": "https://engineering.mercari.com/blog/entry/20241210-flutter-hallo-design-system/",
           "author": null,
           "description": "こんにちは。メルカリ ハロのモバイルチームのEMの@atsumoです。 この記事は、連載：メルカリ ハロ 開発の裏側 – Flutterと支える技術 –の3回目と、 Mercari Advent  […]",
@@ -7276,6 +7291,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=42582",
+          "author": "mamosuke",
+          "description": "アクセサリーメーカーがSwitch2の画像をリークしていたことが明らかになりました。→→→この記事の続きを読む\n【噂】アクセサリーメーカーが製品画像公開 Switch2外観リーク first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2024121342582/",
+          "publishedOn": "2024-12-13T00:23:59.000Z",
+          "wordCount": 1647,
+          "title": "【噂】アクセサリーメーカーが製品画像公開 Switch2外観リーク",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=42580",
           "author": "mamosuke",

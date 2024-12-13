@@ -2,10 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-13T00:03:32.710Z</updated>
+    <updated>2024-12-13T01:29:07.142Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[メルカリのエンジニアリングカルチャーについて]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20241213-mercari-engineering-culture/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20241213-mercari-engineering-culture/"/>
+        <updated>2024-12-13T10:00:05.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルペイVPoEの@jorakuです。 この記事は、Merpay & Mercoin Advent Calendar 2024 の記事です。 メルペイに入社して半年が経ちました。この期間で改めて個人的 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Splunkでメールの配送図を作ろう]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=28601</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/28601"/>
+        <updated>2024-12-13T00:49:37.000Z</updated>
+        <summary type="html"><![CDATA[【IIJ 2024 TECHアドベントカレンダー 12/14の記事です】 はじめに こんにちは、IIJセキュアMXサービスの運用をしているYKRです。初投稿です🔰 サービスの運用をしていると、色々と可...]]></summary>
+        <author>
+            <name>YKR</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux で YubiKey 5 を使って TOTP 認証する]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=29493</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/29493"/>
+        <updated>2024-12-13T00:44:01.000Z</updated>
+        <summary type="html"><![CDATA[【IIJ 2024 TECHアドベントカレンダー 12/13の記事です】 近年、Microsoft 365 や Google などを代表する様々な Web サービスをクラウド上で利用できるようになって...]]></summary>
+        <author>
+            <name>古賀 勇</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【噂】アクセサリーメーカーが製品画像公開 Switch2外観リーク]]></title>
+        <id>https://gamegaz.com/?p=42582</id>
+        <link href="https://gamegaz.com/2024121342582/"/>
+        <updated>2024-12-13T00:23:59.000Z</updated>
+        <summary type="html"><![CDATA[アクセサリーメーカーがSwitch2の画像をリークしていたことが明らかになりました。→→→この記事の続きを読む
+【噂】アクセサリーメーカーが製品画像公開 Switch2外観リーク first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2024.12.13]]></title>
         <id>https://gamegaz.com/?p=42580</id>
@@ -9976,42 +10017,6 @@ GameGaz Daily 2024.9.15 first appeared on 大人のためのゲーム講座.]]><
 FreeBSDの脆弱性をPS5で利用するKernelExploitGraal.java / graal.lua by flatz first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[TSVファイルをCLIでテーブル表示する]]></title>
-        <id>hatenablog://entry/6802340630906341500</id>
-        <link href="https://blog.nishimu.land/entry/2024/09/14/210644?utm_source=feed"/>
-        <updated>2024-09-14T12:06:44.000Z</updated>
-        <summary type="html"><![CDATA[なんかあるやろと思ったら macOS にも標準で入っている column コマンドで十分だった。
-miller とかを眺めていたが高機能すぎて持て余したのでこれで良かった。
-これが、
-$ cat service.tsv
-Twitter X
-G Suite Google Workspace
-Office 365 Microsoft 365
-HipChat Stride
-
-
-
-こうなる。
-$ cat service.tsv | column -t -s $'\t'
-Twitter     X
-G Suite     Google Workspace
-Office 365  Microsoft 365
-HipChat     Stride
-
-
-
-ポイントは $'\t でまったく知らなかったのだけれど対応しているシェルだと $'<エスケープシーケンス>' と書くとエスケープシーケンスを解釈した結果に置き換えてくれるらしい。(see also)
-最終的にやりたかったのは gh の結果をシュッとテーブル形式で表示するので以下のような感じで扱えて見栄えがよくなった。(スクショ参照)
-$ gh list --json 'number,author,title,headRefName' -q '.[] | [ "#" + (.number | tostring), "@" + .author.login, .title, .headRefName] | @tsv' | column -t -s $'\t'
-
-
-
-ちなみにこれだとデフォルトの表示の方が綺麗なのであくまでサンプルです。]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
