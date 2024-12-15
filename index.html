@@ -15182,34 +15182,6 @@ GameGaz Daily 2024.9.18 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GTS移植1</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/09/17/171250" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>twitter(x)の方では書いていますが、次のターゲットはGTSになりました。あれだけdesireやxenonについてblogを書いといてそれか！となってしまったのはまあ成り行きといいますか・・・。某氏がGTSどうですか？と話降ってきて、私はん－調べてみるか！と作業したところ、海外に解析ツールがあることを知りました。何を狂ったかツール制作者にコンタクトを取って、コードくれないかとお願いしたらその日のうちに提供して頂けたという流れです。
-
-正直「GBAでゲーム移植している者です」と自分を紹介して、何やってんだこやつは「ハハハ」となる予想してましたがそうにはならず。しっかりとアドバイスも頂けて後には引けない状況になりました。コードがねえ、人生上位５番目ぐらいに良かったのも二重丸。もともとViper系のアニメーション画像構造やスクリプトに興味があったので解析済みのものを読めるというのは大変幸福なことです。
-
-WINDOWS版は基本的にSGS.DATと音楽(WAV or MIDI)に分かれているようです。SGS.DATの中は、ANM（アニメーション）、PCM（音声）、WIN（スクリプト）のファイル群に分かれています。SGSファイルの構造はファイル一覧とファイル本体（LZ圧縮）。ANMファイルはRLE圧縮されておりフレーム単位で連結しているだけ。PCMファイルはWAVヘッダを追加してデータに0x80を加えるだけ。ただしGTS以外？はもう少し込み入っている感じらしい。WINファイルはベタバイナリなので命令コマンドの引数を調べるだけですねえ。
-
-12月までかかるかと思ったら1週間も経たないうちにSGS.DAT解凍、ANM2BMP、PCM2WAVは出来てしまい、今やってるのがWIN2TXTですね。スクリプトの理解が深まればGBAに落とし込む妥当なところがわかると思います。今のところGBAの最低ラインはMODE4で、一部WAVを入れる形ですかねえ。通常画像の大きさは448*320なので2で割り算して224*160。画面両サイドは黒帯になるかと。
-
-とにかく容量を確定させないと夜も寝れる状況なので早くなんとかしたいところです。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17140,7 +17112,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-12-15T20:01:52.592Z">2024-12-15T20:01:52.592Z</time>
+    <time id="build-timestamp" datetime="2024-12-15T21:01:56.144Z">2024-12-15T21:01:56.144Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
