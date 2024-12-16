@@ -78,6 +78,32 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://niryuu.hatenablog.com/" target="_blank"
+              rel="noopener">表道具</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">プログラミング学習初期について</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://niryuu.hatenablog.com/entry/2024/12/16/223432" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>note.com
+2012年に、ある経緯で「Androidアプリケーション開発講座」を担当したことがある。7人の初心者が受講し、1人がAndroid開発の職に就いた。その経験からすると、この方法は教える側と学ぶ側双方にとって辛いだろうと思うとともに、おそらく10人に1人くらいはうまくいくだろうとも思った。
+私のやった講座は前々任者が倒れたのを引き継いだ前任者から引き継いだもので、まずJavaの基本を学んだ後にO&#x27;reilly&quot;Learning Android&quot;でTwitterライクなアプリを作ることで一通りのAndroidのAPIを触る。その上で独自のプロジェクトを考えてプレゼンするというものだった。前任者が立てたカリキュラムで、Ph.D.を持っている人物なのでレベルは高めだった。国とかあれこれとかがあるので途中変更はできなかった。そもそも職業訓練なのに教科書が英語である。なので基本的にわからんわからんとなるのだが、7人なのでわからないところを徹底的に聞いて言語化し、アドバイスすることでなんとなくわかってもらい、全員がTwitterライクなアプリをコピペで作ることができた。その後の独自プロジェクトはポシャったのでアイデアプレゼンと、「作るとしたらどんな感じのプログラムの構造にする？」で終わらせた。
+さて、1人が就職できた理由は割と明らかだった。基本的にもうコピペで作るしかない状況だったので、逆に言えば要領よくやれば時間が余る。そこで、1人だけが「ここを変えたらどうなるだろう？」と試して動かなくなって私に質問をしてきた。「ここはこういう理由で」と説明したらわかってくれた。そこで感じた。彼は大丈夫だ。そして就職までしてくれたのは、おそらく私の力ではない。
+この経験からすると、元記事の
+私が提案する育成プログラムは、とにかく君が自主的に動かないと成長しないプログラムである。
+は、…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13208692334729889398/6802418398312163046/1734357334" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://engineering.mercari.com/" target="_blank"
               rel="noopener">メルカリエンジニアリングブログ</a></h3>
           <section class="articles-per-source">
@@ -15114,47 +15140,6 @@ Image: スパイスカレーに初挑戦…美味しかった！！ - 猫と田�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://honeylab.hatenablog.jp/" target="_blank"
-              rel="noopener">honeylab&#x27;s blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">DDR miniのハッキングがいよいよ本格的に始まった</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://honeylab.hatenablog.jp/entry/2024/09/18/101605" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>honeylab.hatenablog.jp
-分解して下調べをしていたDDR mini
-既にファームウェアアップデート用のUSBを探しそうな画面が発見されていますが、
-これは適当にUSBを挿せばいいものではなく、必要な条件のもとパッケージングしたものに対して発動するものだと思われます。
-DDRmini 本体のStartボタンを左右同時押ししながら電源投入するとファームウェアアップデートモードに入るんだけど、コレってワンチャンあるのか！？ #DDRmini pic.twitter.com/Z7P9Nc5ekK
-September 13, 2024
-
-
- 
-
-
- 
-その条件を調べることや、他にバックドアがないかどうかを調べるため、内部のソフトウェアを調べていきます。
-で、どうやって？
-まず、このAllwinnerのCPUは、FELモードというUSB経由であれやこれやするためのモードが備わっていますが、ここで行うことができるのはプログラムの転送ぐらいです。
-まずFELモード上でu-bootなどのブートローダを転送して実行し、そのあとファームウェアを転送して書き込んだりすることができます。
-過去にさんざん弄ったファミコンミニの系列はこの方法でカーネル書き換えが進められてきました。
-www.ns-koubou.com
-しかし、今回採用されたA527というCPU、かなり新しいもので従来使われていたようなu-bootが対応できていないようで、まともにコンパイルできるツリーが見つかりませんでした。そのため、何か他の方法を使わなければなりません。
-いろいろ探していたとこ、A527やその互換のT527というCPUを搭載したAvaotaSBCというオープンソース設計の組み込みボードがあるのを見つけました。
-github.com
-また、それに対応したベアメタルの開発環境、そしてブートローダとLin…</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17085,7 +17070,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-12-16T13:09:13.602Z">2024-12-16T13:09:13.602Z</time>
+    <time id="build-timestamp" datetime="2024-12-16T14:01:55.993Z">2024-12-16T14:01:55.993Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
