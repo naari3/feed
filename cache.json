@@ -629,21 +629,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/6802340630907958128",
-          "author": null,
-          "description": "MODE4 224*160のLz77圧縮30枚で約200KB。10倍すると300枚2MB。さらに4倍すると1200枚8MB・・・。計算合っています？？ゲームの枚数は1149枚。スクロール画像は無圧縮で行くつもりなのでザックリ合計10MBぐらいですかね。。まだ調べてないですけど音声も圧縮して16MBぐらいと予想。なんとか収まりそうです。下の画像はGBAで表示したgifアニメです。",
-          "link": "https://akkera102.hatenablog.com/entry/2024/09/20/225641",
-          "publishedOn": "2024-09-20T13:56:41.000Z",
-          "wordCount": 430,
-          "title": "GTS移植3",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20240920/20240920225610.gif",
-            "type": "image/gif",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/akkera102/20240920/20240920225610.gif"
         }
       ]
     },
@@ -7175,6 +7160,16 @@
       "feedUrl": "https://engineering.mercari.com/blog/feed.xml",
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20241219-mercari-hallo-qa-strategy-2024/",
+          "author": null,
+          "description": "こんにちは。メルカリWorkチームQA Engineerの@umです。 この記事は、連載：メルカリ ハロ 開発の裏側 – Flutterと支える技術 –の5回目と、 Mercari Advent Calendar 202 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20241219-mercari-hallo-qa-strategy-2024/",
+          "publishedOn": "2024-12-19T11:00:06.000Z",
+          "wordCount": null,
+          "title": "メルカリ ハロにおけるFlutterアプリのQA戦略：クロスプラットフォーム開発のメリットと注意点",
+          "imageUrl": null
+        },
         {
           "id": "https://engineering.mercari.com/blog/entry/20241202-6c83b3dd89/",
           "author": null,
