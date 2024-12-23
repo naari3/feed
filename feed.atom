@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-23T01:28:56.317Z</updated>
+    <updated>2024-12-23T02:24:53.118Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[スムーズな CDN プロバイダーの移行とその先の取り組み]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20241223-a-smooth-cdn-provider-migration-and-future-initiatives/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20241223-a-smooth-cdn-provider-migration-and-future-initiatives/"/>
+        <updated>2024-12-23T11:00:55.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは！ Microservices Platform Network チーム の hatappi です。 メルカリでは、2023年からCDNプロバイダーを Fastly から Cloudflare へと段 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[バッチ処理におけるSLO定義とその運用方法]]></title>
         <id>https://engineering.mercari.com/blog/entry/20241223-batch-slo/</id>
