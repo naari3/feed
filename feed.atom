@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-23T11:01:53.816Z</updated>
+    <updated>2024-12-23T12:02:17.181Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2024年謎解き5選]]></title>
+        <id>https://note.com/anzato/n/nc5e99c6a00cc</id>
+        <link href="https://note.com/anzato/n/nc5e99c6a00cc"/>
+        <updated>2024-12-23T11:17:01.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+2024年に体験した謎解きコンテンツの中から特に印象に残ったものを5つ挙げていきます。まだ年内のイベントはいくつか控えているのですが余裕のあるうちに記事を出しておきたいということで今出します。もちろんネタバレは無しで！
+続きをみる]]></summary>
+        <author>
+            <name>餡砂糖</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[スムーズな CDN プロバイダーの移行とその先の取り組み]]></title>
         <id>https://engineering.mercari.com/blog/entry/20241223-a-smooth-cdn-provider-migration-and-future-initiatives/</id>
@@ -11111,16 +11123,6 @@ Tは「子どもの面倒を見てた」と返した。
 このイベント自体はRubyに関係なく広い聴講者を想定したもの。ということで、20分という限られた時間で前提となるRubyの説明をしながらRubyKaigiっぽいコアな話を説明しないといけない。大変だなあ。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dialog と Popover #1]]></title>
-        <id>https://blog.jxck.io/entries/2024-09-25/show-modal-dialog.html</id>
-        <link href="https://blog.jxck.io/entries/2024-09-25/show-modal-dialog.html"/>
-        <updated>2024-09-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[HTML の <dialog> 要素と、 popover 属性、および関連する様々な仕様が標準化され、実装が進められている。Open UI を中心に進められているこれらの改善は、多くのサイトで共通したユースケースがありながら、長らくミッシングピースとなっていた重要な機能だ。もし今、同等のユースケースを自前で実装しているのであれば、適切な仕様を用いた実装に刷新することで、従来はほぼ不可能だった UX を提供できるようになる。今回から、数回の連載形式で、これらの仕様がどのように標準化され、我々開発者はこれをどのように使っていくべきなのかについて解説する。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
