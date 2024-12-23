@@ -2,10 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-23T00:03:14.033Z</updated>
+    <updated>2024-12-23T01:28:56.317Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[バッチ処理におけるSLO定義とその運用方法]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20241223-batch-slo/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20241223-batch-slo/"/>
+        <updated>2024-12-23T10:00:54.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。メルコインでバックエンドエンジニアをしているiwataです。 この記事は、Merpay & Mercoin Advent Calendar 2024 の記事です。 tl;dr バッチ処理のSLO定義っ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fault-Tolerance for LLM Inference]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=29428</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/29428"/>
+        <updated>2024-12-23T01:06:43.000Z</updated>
+        <summary type="html"><![CDATA[Introduction Large Language Models (LLM) are becoming increasingly popular for numerous tasks, inclu...]]></summary>
+        <author>
+            <name>Pierre Louis Aublin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LLM 推論のフォールトトレランス]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=29442</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/29442"/>
+        <updated>2024-12-23T01:06:28.000Z</updated>
+        <summary type="html"><![CDATA[【IIJ 2024 TECHアドベントカレンダー 12/23の記事です】 ※この記事は、原文「Fault-Tolerance for LLM Inference」の和訳です はじめに 大規模言語モデル...]]></summary>
+        <author>
+            <name>Pierre Louis Aublin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[マルウェア解析に役立つTiny Tracerの活用例の紹介]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=28891</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/28891"/>
+        <updated>2024-12-23T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[【IIJ 2024 TECHアドベントカレンダー 12/22の記事です】 はじめに こんにちは。IIJでSOCアナリストをしている前川です。 本記事では、マルウェア解析に活用できるTiny Trace...]]></summary>
+        <author>
+            <name>前川 幸作</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「なぜベストを尽くしたのか」への憧れ]]></title>
         <id>hatenablog://entry/6802418398313826105</id>
