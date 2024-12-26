@@ -78,6 +78,72 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://saize-lw.hatenablog.com/" target="_blank"
+              rel="noopener">LWのサイゼリヤ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">24/12/26 ソシャゲのデータサイエンスというのはガチャの排出率を考えることではなくて……</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://saize-lw.hatenablog.com/entry/2024/12/26/205010" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>【ChatGPTによるこの記事の要約】
+ガチャは大した確率モデルではない
+平凡なサービス分析
+ゲームという断絶された閉鎖世界
+そもそもエンタメとデータの相性悪くない？
+他の人のことは知らんけど（留保）
+【ChatGPTによるこの記事の要約】
+かなり精度良い要約なのでこれだけ読めばいい気もする
+
+この記事は、ソーシャルゲーム（ソシャゲ）のデータ分析に関する考察を述べています。以下は要約です：
+ガチャの分析は単純な確率論
+重要なのはユーザー行動の分析
+アクティブユーザー数やイベント効果の分析
+新規ユーザーのリテンション（定着率）の追跡
+RFM分析を通じた課金傾向の把握
+これらは一般的なtoCサービスと似ているが、ゲーム特有のドメイン知識が必要となる。
+ゲームの閉鎖性が分析に影響
+エンタメとデータの相性の悪さ
+留保的な結論
+
+
+
+
+    
+ガチャは大した確率モデルではない
+俺は今データサイエンティストとして働いているが、自己紹介がてら「前いた会社ではソシャゲでちょっとデータ分析してたんすよ」的なことを言うと「つまりガチャの排出率設定とかやってたんすね」的な返しをされることが稀によくある。
+彦卿かよと思ったら新停雲来て熱かったガチャ
+しかし収益上とプレイ上の重要性に反して、ガチャはわざわざデータサイエンティストが労力を払うほどの確率モデルではない。
+補足565：逆に言えば高校レベルの数学がわかる必要はある。少なくとも「PU確率2%のガチャを50連引けば必ず当たる」と勘違いしない程度のリテラシーは欲しい。
+少し統計がわかる人向けに書くと、ガチャは確率的な挙動をするビジネス上のキーファクターにしてはかなり珍しいことに「真の母数を最初から完全に把握している」という点で例外的に扱いやすいシステムとも言える（実現値から母数に遡る検定や推定全般を全く必要としないため、統計学というよりは確率論の領分）。
+平凡なサービス分析
+ではガチャでなければ何を分析するのかと言うと、主にプレイ状況だ。
+補足566：他にもゲーム外でやれることとして時流を知るための競合分析や広告予算配分を最適化するためのマーケティング分析などもあるが、とりあえずはゲーム内の話に絞ることにする。
+サービス内のユーザー行動を分析するという点ではこれらはソシャゲ特有の分析ではなく、世の中に数多あるtoC系サービス全般における分析内容とそう大きく変わらない。
+ゲームという断絶された閉鎖世界
+一方、ユーザー行動を分析する上でソシャゲに特有の点もある。
+これも一般的なECサイトと比較するのが分かりやすいかもしれない。
+ところが、ゲーム世界では全くそうはいかない。
+一方、ゲームに特有の内界と外界の断絶が分析者にとってありがたいこともある。それは外部環境からの影響に対してゲーム内部のユーザー行動が極めて頑健なことだ。
+そもそもエンタメとデータの相性悪くない？
+あとはソシャゲに限ったことでもなく、基本的にエンタメとデータは相性が悪いということを常々考えている。これは売れ行きやアクティブユーザー数のような表面的なKPI指標というよりは、ゲーム内ユニット性能のようなコンテンツ内容にまで踏み込んで分析をする際に顕著になってくることだ。
+そもそもデータ分析とは基本的に過去志向の営みである。今までに累積されたデータを上手く解釈して過去に含まれる情報を抽出する主旨であり、未来予測ができるとは言ってもそれは過去の再生産を行っているに過ぎない。
+一方で、エンタメは未来志向の新規性を常に求めてくる。例えばゲームで質的に最も歓迎されるのは新しい遊び感覚をもたらす新システムや新シナジーであり、過去の実装内容から容易に予想される効果しか持たないユニットは退屈なものとして敬遠される。よって何らかの施策を打つ（＝新しいログデータを生成する）に際してはそれまでにないものを実装し、かつ、それが大きなインパクトを持つことが最も望ましい。
+これをデータの言葉で言えば（回帰のイメージで言えば）、目的変数を説明するに際してかなり貢献度の高い説明変数が各データにそれぞれ個別に含まれているようなものだ。これは極めて頭の痛い状況であり、実際のところ、プランナーと相談しながら企画ドリブンで恣意的に切り分けた調査を行うくらいが妥協点になるだろう。
+他の人のことは知らんけど（留保）
+普段から自己紹介ついでに同業者に喋っていがちなことをつらつら書いたが、ソシャゲ会社はもう辞めてるし、ここに書いてあることを全てやれていたわけでもない。
+そもそもソシャゲ会社のデータ活用度合いはかなりピンキリでコンセンサスがあるわけでもないので、ここに書いたことをソシャゲ業界の一般論と思われるとあまり良くない。データがわかるソシャゲ運営者の中にはこんなことを考えていた人が少なくとも一人はかつていたくらいの温度感で読むのが正しい。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/96ebd3171a033fc0af62881399c92f6e1c4f0422/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20241226%2F20241226202423.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -16137,31 +16203,6 @@ www.nicovideo.jp
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2024-09-27">2024-09-27</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2024.9.28</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024092842095/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>RomHackカンファレンスでTheFloW氏発表,ps5-payload-websrv v0.11,ARK-4 v1727459392,GoldHEN Cheats PS4 PKG v27.09.24,Tetris Overlay 0.3.0,Luma3DS v13.2,Luma Pack V13.2 FW 11.17,shadPS4 Pre-release-shadPS4-2024-09-27-a5298c4,shadps4-alchemist v0.1.0-alpha,Cemu-Android BetaV.14,Citra Online Multiplayer Support r608383e,CTGP-7updates v1.5.16,Xenia Canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2024.9.28 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-01-16">2024-01-16</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18089,7 +18130,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2024-12-26T11:02:15.102Z">2024-12-26T11:02:15.102Z</time>
+    <time id="build-timestamp" datetime="2024-12-26T12:02:21.333Z">2024-12-26T12:02:21.333Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
