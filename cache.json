@@ -6034,6 +6034,16 @@
       "siteUrl": "https://note.com/massmasaoki",
       "articles": [
         {
+          "id": "https://note.com/massmasaoki/n/nbdcd215236ad",
+          "author": null,
+          "description": "今月最後の記事になります。\n今年は珍しく大晦日に記事を書いていないので、この後オールフリーでも空けようかなと思います笑\nもはや使ったことがない人の方が珍しくね？と感じるFabfilterのPro-Qがつい先日メジャーバージョンアップをしまして。\nWavesに次ぐ世界標準のEQとしては無視できないなーというところで、今回はアップデートした機能と、ぶっちゃけた話どう思う？について書いていけたらと思います。\nそれではやっていきます！\nプラグインレビュー！！\n続きをみる",
+          "link": "https://note.com/massmasaoki/n/nbdcd215236ad",
+          "publishedOn": "2024-12-30T11:30:17.000Z",
+          "wordCount": null,
+          "title": "「週刊プラグインレビュー」fabfilter / Pro-Q4",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/167874201/rectangle_large_type_2_539fbd5ea33dbd7204db94653b234e4b.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/massmasaoki/n/n9d2e885446fa",
           "author": null,
           "description": "年末うぉおおおお・・・\nということで、無事スタジオの大掃除も終わり、筋肉通にさいなまれながらもなんとかこうして家族で過ごせる時間にほっとしていたりしている今日この頃です。\nどうも、インフルエンザが滅茶苦茶流行っているみたいで、周りの人たちがバタバタ倒れています。\n皆さんにおかれましても、ホッとしたときこそ油断大敵ということで、是非健康に新年をお迎えいただければと。\n続きをみる",
@@ -6879,16 +6889,6 @@
           "publishedOn": "2024-10-03T00:00:00.000Z",
           "wordCount": null,
           "title": "Dialog と Popover #6",
-          "imageUrl": null
-        },
-        {
-          "id": "https://blog.jxck.io/entries/2024-10-02/popover.html",
-          "author": null,
-          "description": "このあたりから、まだ議論中の話が多いため、今後変わる可能性が高い点に注意。popup が紆余曲折を経て popover 属性になり、 2023/3 に Safari が TP166 で実装した。そのまま Safari 17 に入ることを 2023/6 の WWDC で発表したあたりから、 popover の実装は各ブラウザで一気に話が進む。Release Notes for Safari Technology Preview 166https://webkit.org/blog/13964/release-notes-for-safari-technology-preview-166/News from WWDC23: WebKit Features in Safari 17 betahttps://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/そして、 2024/4 ごろに発表された Baseline 2024 に popover がエントリしたことで、 2024 年は全ブラウザで互換性を高めていくことに合意し、作業を進めていくことになる。俗に言う「元年」というやつと言えるだろう。Popover API lands in Baselinehttps://web.dev/blog/popover-api今回は、この popover の議論と、仕様が完成していくまでをまとめる。",
-          "link": "https://blog.jxck.io/entries/2024-10-02/popover.html",
-          "publishedOn": "2024-10-02T00:00:00.000Z",
-          "wordCount": null,
-          "title": "Dialog と Popover #5",
           "imageUrl": null
         }
       ]
