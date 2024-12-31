@@ -7075,6 +7075,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2024/12/31/open-source-in-2024/",
+          "author": null,
+          "description": "2024 年のオープンソース活動の振り返りと GitHub Sponsors での収入をまとめた記事です。\nいつもは別々に書いていましたが、内容的にどちらもオープンソースの話が被っているのでまとめました。\n今までの振り返り\n2014 年: https://efcl.info/2014/12/31/oss-in-2014/\n2015 年: https://efcl.info/2015/12/31/oss-in-2015/\n2016 年: https://efcl.info/2016/12/31/oss-in-2016/\n2017 年: https://efcl.info/2017/12/30/oss-in-2017/\n2018 年: https://efcl.info/2018/12/31/oss-in-2018/\n2019 年: https://efcl.info/2019/12/31/oss-in-2019/\n2020 年: https://efcl.info/2020/12/31/open-source-in-2020/\n2021 年: https://efcl.info/2021/12/31/open-source-in-2021/\n2022 年: https://efcl.info/2022/12/31/open-source-in-2022/\n2023 年: https://efcl.info/2023/12/31/open-source-in-2023/\nオープンソース活動の種類\n自分のオープンソース活動の種類として、次のようなものがあると思います。\nソフトウェア開発: textlint、Secretlint、HonKitなどの開発やメンテナンス\nウェブサービス開発: philan.net、Komesan、Irodrなどの開発やメンテナンス\nブログ: JSer.…",
+          "link": "https://efcl.info/2024/12/31/open-source-in-2024/",
+          "publishedOn": "2024-12-31T12:27:00.000Z",
+          "wordCount": null,
+          "title": "オープンソース活動の振り返り/GitHub Sponsorsの収入まとめ @ 2024",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2024/10/06/bun-single-file-executable-binary/",
           "author": null,
           "description": "Secretlint v8.3で、単体のバイナリファイルとしてsecretlintコマンドを配布するようにしました。\nRelease v8.3.3 · secretlint/secretlint\nどういうことができるようになるかというか、Node.jsをインストールしなくてもsecretlintコマンドを使えるようになります。\n次のようにCurlでダウンロードして実行するだけで、機密情報の検出ができるようになります。\n\n#!/usr/bin/env bash\nset -euo pipefail\nSECRETLINT_VERSION=\"8.3.3\" # secretlintのバージョン\nARCH=$(uname -m)\nOS=$(uname -s | tr '[:upper:]' '[:lower:]')\n# Map architecture to the expected format\ncase \"$ARCH\" in\n    x86_64)\n        ARCH=\"x64\"\n        ;;\n    aarch64)\n        ARCH=\"arm64\"\n        ;;\n    arm64)\n        ARCH=\"arm64\"\n        ;;\n    *)\n        echo \"Unsupported architecture: $ARCH\"\n        exit 1\n        ;;\nesac\n\n# Download the binary\ncurl -sSL \"https://github.com/secretlint/secretlint/releases/download/$(SECRETLINT_VERSION)/secretlint-$(SECRETLINT_VERSION)-$(OS)-$(ARCH)\" -o secr…",
