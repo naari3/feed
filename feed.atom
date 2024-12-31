@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2024-12-31T11:01:41.905Z</updated>
+    <updated>2024-12-31T12:02:00.482Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -11486,16 +11486,6 @@ LWさん的にはこういう他人と全く関わらない生活ってヤバい
    普通に経歴が雑魚すぎてビズリーチで仕事を探してもどこも雇ってくれないので終わっ…]]></summary>
         <author>
             <name>LWのサイゼリヤ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dialog と Popover #6]]></title>
-        <id>https://blog.jxck.io/entries/2024-10-03/animation.html</id>
-        <link href="https://blog.jxck.io/entries/2024-10-03/animation.html"/>
-        <updated>2024-10-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ついに <toast> -> <popup> -> popup -> popover として、要素から属性になり名前も決まった。とはいえ実装は popup とそんなに変わらないので、 popup でやっていた Origin Trials を継続しながら、徐々に実装を進めていくフェーズが 2022/12 くらいの話だ。Intent to extend Origin Trial: Popover APIhttps://groups.google.com/a/chromium.org/g/blink-dev/c/kZXexHhH7EA/m/UmQYwGW3DAAJしかし、 popover を実用するには足りてない議論があった、それが Animation だ。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
