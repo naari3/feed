@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-01-03T16:02:22.528Z</updated>
+    <updated>2025-01-03T17:01:41.271Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[miniDVテープの取り込み時に日時がおかしくなる問題を修正する]]></title>
+        <id>hatenablog://entry/6802418398317186218</id>
+        <link href="https://fumimaker.net/entry/2025/01/04/011516?utm_source=feed"/>
+        <updated>2025-01-03T16:15:16.000Z</updated>
+        <summary type="html"><![CDATA[miniDVテープをデジタル化するときに日付データがなくてGoogle Photoなどのサービスにアップすると大昔のデータなのに2025年と表示されてしまい、困ったのでツールを作りました。（とは言っても半分くらいAIが作ってくれました）
+ダビングの仕方
+これは以前書いたのでこちらをご覧ください。
+fumimaker.net
+戦略
+mediainfoで見ると以下のようになっています。
+Format                                   : AVI
+Format/Info                              : Audio Video Interleave
+Commercial name                          : DVCPRO
+Format settings                          : BitmapInfoHeader / WaveFormatEx
+File size                                : 1.34 GiB
+Duration                                 : 6 min 25 s
+Overall bit rate mode                    : Constant
+Overall bit rate                         : 29.8 Mb/s
+Frame rate                               : 29.970 FPS
+Recorded date                            : 2001-05-01 11:07:52.000
+
+Video
+ID                            …]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20250103]]></title>
         <id>hatenablog://entry/6802418398317149427</id>
