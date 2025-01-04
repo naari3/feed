@@ -7132,16 +7132,6 @@
           "wordCount": null,
           "title": "オープンソース活動の振り返り/GitHub Sponsorsの収入まとめ @ 2024",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2024/10/06/bun-single-file-executable-binary/",
-          "author": null,
-          "description": "Secretlint v8.3で、単体のバイナリファイルとしてsecretlintコマンドを配布するようにしました。\nRelease v8.3.3 · secretlint/secretlint\nどういうことができるようになるかというか、Node.jsをインストールしなくてもsecretlintコマンドを使えるようになります。\n次のようにCurlでダウンロードして実行するだけで、機密情報の検出ができるようになります。\n\n#!/usr/bin/env bash\nset -euo pipefail\nSECRETLINT_VERSION=\"8.3.3\" # secretlintのバージョン\nARCH=$(uname -m)\nOS=$(uname -s | tr '[:upper:]' '[:lower:]')\n# Map architecture to the expected format\ncase \"$ARCH\" in\n    x86_64)\n        ARCH=\"x64\"\n        ;;\n    aarch64)\n        ARCH=\"arm64\"\n        ;;\n    arm64)\n        ARCH=\"arm64\"\n        ;;\n    *)\n        echo \"Unsupported architecture: $ARCH\"\n        exit 1\n        ;;\nesac\n\n# Download the binary\ncurl -sSL \"https://github.com/secretlint/secretlint/releases/download/$(SECRETLINT_VERSION)/secretlint-$(SECRETLINT_VERSION)-$(OS)-$(ARCH)\" -o secr…",
-          "link": "https://efcl.info/2024/10/06/bun-single-file-executable-binary/",
-          "publishedOn": "2024-10-06T11:25:00.000Z",
-          "wordCount": null,
-          "title": "BunでNode.jsのツールをSingle-file executable binaryにしてバイナリを配布する",
-          "imageUrl": null
         }
       ]
     },
