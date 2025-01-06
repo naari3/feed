@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-01-06T00:03:30.776Z</updated>
+    <updated>2025-01-06T01:29:01.954Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GhosttyでSSHした先でBackspaceなどが入力できない]]></title>
+        <id>hatenablog://entry/6802418398317778626</id>
+        <link href="https://blog.nishimu.land/entry/2025/01/06/100042?utm_source=feed"/>
+        <updated>2025-01-06T01:00:42.000Z</updated>
+        <summary type="html"><![CDATA[仕事始めということで年末に移行した Ghostty からSSHしたら制御シーケンスが入力できなかった。
+調べたら TERM に xterm-ghostty が設定されていて、これが接続先の terminfo に登録されていないことが問題だった。
+ghostty.org
+公式にドキュメントがあるのでこれに従って設定することで解決した。
+Host *
+  SetEnv TERM=xterm-256color
+
+
+
+管理権限もってないので今回は SSH の設定にに SetEnv した。上は雑な例。]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.1.6]]></title>
         <id>https://gamegaz.com/?p=42723</id>
