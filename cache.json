@@ -1205,6 +1205,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398318090925",
+          "author": null,
+          "description": "最近は図を描くのに Excalidraw を使うことが多いのだけれど、シーケンス図は Mermaid が楽。\nしかし、書いた図を画像にするのをどうするのかちょっと悩む。\n mermaid-cli を使って Markdown を変換するのが楽だったので、今後はこれでやっていきたい。\nこういう感じで複数のシーケンス図を Mermaid で書いて、\n# A\n```mermaid\nsequenceDiagram\n    A->>B\n    B->>A\n```\n\n# B\n```mermaid\nsequenceDiagram\n    A->>B\n    B->>C\n    C->>A\n```\n\n\n\nmermaid-cli で以下のようにやると out.md はシーケンス図の部分が画像に差し替えられて出力される。\n$ mmdc -i in.md -o out.md -e png\n\n\n\n画像に差し替えられたということは画像が生成されているということで、同じディレクトリに出力の Markdown と同じプレフィクスの画像が連番で生成されている。\n$ ls -l\nin.md\nout.md\nout1.png\nout2.png\n\n\n\nMarkdown は捨ててしまってこの画像だけを使っている。",
+          "link": "https://blog.nishimu.land/entry/2025/01/07/094924?utm_source=feed",
+          "publishedOn": "2025-01-07T00:49:24.000Z",
+          "wordCount": 253,
+          "title": "たくさんシーケン図の画像が欲しい",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398318090925/1736210964",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398318090925/1736210964"
+        },
+        {
           "id": "hatenablog://entry/6802418398317778626",
           "author": null,
           "description": "仕事始めということで年末に移行した Ghostty からSSHしたら制御シーケンスが入力できなかった。\n調べたら TERM に xterm-ghostty が設定されていて、これが接続先の terminfo に登録されていないことが問題だった。\nghostty.org\n公式にドキュメントがあるのでこれに従って設定することで解決した。\nHost *\n  SetEnv TERM=xterm-256color\n\n\n\n管理権限もってないので今回は SSH の設定にに SetEnv した。上は雑な例。",
@@ -2352,6 +2367,21 @@
       "feedUrl": "https://katsumakazuyo.hatenablog.com/rss",
       "siteUrl": "https://katsumakazuyo.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398318093042",
+          "author": null,
+          "description": "はてなのXから、ちょうどこの記事が紹介がありました。\nkatsumakazuyo.hatenablog.com\n改めてこの記事の内容を読んだり、ブックマークを読んだりしたんですけれども。半年後にどのぐらい変わったか、そうではないかということについて、もう一度検証したいと思ってブログを書きます。\nまず、成果であげた1－5位については、全部相変わらずスーパー便利です。そしてさらに、いろいろと新しいメリットに気付き始めたので、補足してまとめます。\nその１ スーパーマーケットだけでなくアマゾンフレッシュの置き配も併用できるようになった\n前のブログの第５位に入れた、信号のない徒歩数分圏内のスーパーマーケットですけれども、さらに、アマゾンフレッシュとの併用になっています。特に来客時にたくさんの食材を買うときとかに便利です。\nなぜ徒歩圏のスーパーマーケットだけではなく、アマゾンフレッシュを追加したかというと、結構理由はシンプルでして、\n「いつの間にかアマゾンフレッシュも置き配をしてくれるようになったから」\nです。\n一軒家ですので、玄関前に置いといてもらえればすぐにピックできますし、特に今のように冬ですと生鮮食品も傷まないので、そのまま置いておいてもらえます。\n特にお米とか洗剤とかトイレットペーパーとか重かったり、かさばるもの買うときにはアマゾンフレッシュに頼むとても楽です。そして生鮮食料品を本当に倉庫で適温で保管しているアマゾンフレッシュと、陳列しながら顧客がピックをすることを前提としているスーパーマーケットでは、温度やコストに対する差があるらしく、アマゾンフレッシュの豚肉の方が、同じ生鮮品でも窒素充填がしてあって賞味期間が長いので、重宝しています。\nなので、目的や場合に応じて、アマゾンフレッシュとスーパーを使い分けています。置き配がない頃のフレッシュを持って帰られてしまったので、2時間…",
+          "link": "https://katsumakazuyo.hatenablog.com/entry/2025/01/07/095818",
+          "publishedOn": "2025-01-07T00:58:18.000Z",
+          "wordCount": 649,
+          "title": "一軒家に引っ越し後、ほぼ半年たちました。相変わらず快適すぎます。そして新しい一軒家メリット５つ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8599973812325912747/6802418398318093042/1736212790",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812325912747/6802418398318093042/1736212790"
+        },
         {
           "id": "hatenablog://entry/6802418398309308677",
           "author": null,
@@ -6717,16 +6747,6 @@
           "wordCount": 2265,
           "title": "音MADオンエアバトル合作",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/165114213/rectangle_large_type_2_0512b647ee7031c20612e77907f73074.png?width=800"
-        },
-        {
-          "id": "https://note.com/sweets_farting/n/n07daf3192c4a",
-          "author": null,
-          "description": "音MDM天の悪口を言います\nMDM天関係者や悪感情を読んで不快になりたくない方は見ないでください\n↓\n続きをみる",
-          "link": "https://note.com/sweets_farting/n/n07daf3192c4a",
-          "publishedOn": "2024-10-09T12:33:13.000Z",
-          "wordCount": 2197,
-          "title": "チンコの蟲毒　チン蟲毒",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/9051dfc514cffb0baa4f5127f9b3f3e57b94aef0.png"
         }
       ]
     },
@@ -7969,6 +7989,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=42731",
+          "author": "mamosuke",
+          "description": "Nintendo Switch2のJoy-Conはマウスのように使える可能性があるようです。→→→この記事の続きを読む\n【噂】Switch2のJoy-Conはゲーミングマウス？ first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025010742731/",
+          "publishedOn": "2025-01-07T00:44:36.000Z",
+          "wordCount": 1675,
+          "title": "【噂】Switch2のJoy-Conはゲーミングマウス？",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/Switch2.png"
+        },
         {
           "id": "https://gamegaz.com/?p=42727",
           "author": "mamosuke",
