@@ -2010,23 +2010,7 @@
       "title": "honeylab's blog",
       "feedUrl": "https://honeylab.hatenablog.jp/rss",
       "siteUrl": "https://honeylab.hatenablog.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802340630913314887",
-          "author": null,
-          "description": "ここまでのまとめ\n \nhoneylab.hatenablog.jp\n \nさて、すでに分かっているように、こいつの中にはZUIKIの手下の開発会社がカスタムしたDDR専用のMAMEがインストールされています。\n完全にそれ以外を除去したわけではありませんので、それ以外の関連のゲームは少しの手直しで動作させることができる可能性があります。\nKinda broken in some ways (savestates don't work) but it is playable. The background videos cause some hitching though but that also happened in normal MAME too so I guess that's to be expected. pic.twitter.com/qEpJiWkM85\nOctober 10, 2024\n\n\nしかし、それ以外のゲームを動かすためのコードは入っていない可能性がありますし、通常のMAMEで使用できる各種機能やパッドのカスタマイズなどは使用できません。\nこの機械、８コアのARM64が入っているというこの手の機器としてはかなり高性能な演算機能を持っていますので、エミュレーション性能もかなり高いはずです。\nそれを利用するために、どうにかしてMAMEを入れてみたいところでしたが。\nMAME全然わからんｗ\nさらにクロスビルドということもあって全然わからん。\nあちこち探したところ、似た環境のARM64であるRaspberryPiように一発でMAMEをクロスビルドしてくれるツールキットを見つけたのでこれを使ってみました。\ngithub.com\n途中、変な制約につかまってまともにコンパイルできるまで２日ほどかかってしまいましたが、最終的に見事動作する環境を作ることができました！\nよっし！！！！\nMAME 0.270 on DDR mini\nパフォーマンスが出るかはわからん！が、動いたらもうあとはすぐやろ！\n昼寝する pic.twitter.com/PcHy5dj5Av\nOctober 11, 2024\n\n\n \n音声・音量周りの調整ができないなど不便な点はまだまだ残っていますが、HDMIも簡単に使用できるため結構なんでもできる気がします。\nこれだけ動くDDR筐体の形をしたMAMEマシンなら、まぁクッソ高いわ！というところから、ちょっと高いかも、ぐらいまで楽しめるんじゃないでしょうか。\nとりあえずは、DDRやBEMANIシリーズがどのぐらい動くのかは気になるところです。\nただし、内蔵のMAME（シュリンク版）は、ver0.24ぐらいからのフォークっぽく、一応は謹製扱いのパッチワークがされていると考えると、もしかしたら内蔵のやつの方が再現度が高かったりするんでしょうか。わかんないですけど。\nまぁ、本当に必要ならバックポートしたらいいんだと思うんですけどね。逆アセンブルするしかないけど。\n \nで、動きました、とはいうけど、残念ながらみんながみんなぱっとインストールできる状態にはなっていません。少なくとも私はSDカードのはんだ付けからrootfsを書き換えて、USBへのバックドアを作っています。\nそれに対して、いつものようなFELモードでの書き換えの道も開かれたようです。\nHere's the rough write up. I included all of the patches, tools, and scripts I made for this project. I suck at writing docs so someone should probably make an easy step by step guide on how to use everything.https://t.co/DKEz6fb8cD\nOctober 9, 2024\n\n\n \nこれを使えば、はんだ付けなし、本体を分解して基板を開いてボタンを押しながらUSBを接続してインストール、という手順でインストールすることができるようになるでしょう。それまで、もうちょっとだけこの戦いは続くんじゃ。",
-          "link": "https://honeylab.hatenablog.jp/entry/2024/10/12/003847",
-          "publishedOn": "2024-10-11T15:38:47.000Z",
-          "wordCount": null,
-          "title": "DDRminiで自前ビルドのMAMEが動いた！",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "テキュ",
