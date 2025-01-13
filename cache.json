@@ -1421,21 +1421,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d942699854d2885a60fd56075f2db8ee1a820f6f/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20241113%2F20241113235544.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398296432763",
-          "author": null,
-          "description": "docs.google.com\n会社のイベントで登壇していた。Steepのメモリ削減について。\n用事があって早めに会場を脱出することになってしまったのはちょっともったいないことをしたかもしれない。\n地域のコミュニティって感じでいいイベントでした。\nMajo の話と、Fork worker / Reforking の話をした。\nReforking は今絶賛実装しているところ。ひとまず CoW を効くようにすることで本当にメモリが共有されるのかを確認するためのプロトタイプを作っている。既存の worker の kill とか reforking 中にくるリクエストをうまくさばくこととかはとりあえずサボって、fork した先にリクエストを流すところにフォーカスしてメモリ使用量を計測したい。\nしかし実は fork するだけでも(graceful restart的なことを考えなくても)なかなかむずかしい問題だなと気がついた。というのも、CoW を意味のあるものにするには fork 前後で同じRBS::Environmentなどのオブジェクトを参照させる必要があるのだけど、これがむずかしい。Reforking のアイディアを借りてきた puma とかはrack applicationを維持することだけを考えればいいようになっているけれど、Steepの場合はそんなにきれいに分かれていないので、うまく必要なオブジェクトが共有されるようにforkをしないといけない。\nこれは HTTP というものがステートレスであるからやりやすくなっているのかなと思ったりした。ステートレスであるからプロセスの管理をする人は比較的楽にforkできるのではないか。Steepは解析のための環境という巨大stateを持っているからそれがむずいような気がする。\n一方で、stateというのは実はこの問題の主題ではなくて、通信を行う層とロジックが置かれた層が比較的密に結合しているのが問題なのかもしれないとも思った。ここの結合がもっと疎であれば、案外楽にforkができるのかもしれない。この辺はもうすこし考えたい。\n発表の反省としては、もともと Ruby を知っていることは前提としないつもりでやっていたのだけど、それ以外の知識の前提を置きすぎたのでは、と少し反省している。fork の説明を最初全くしていなかったのだけど、したほうがいいかなと思って発表20分前に追加していたりした。あとは LSP とはなにか、も一言も触れていなくて、説明があったほうが良かったかなという気持ちが少しある。まあ面白かったと何人かに言ってもらえたのは良かった、うれしい。置いてけぼりにしてしまった人がいたらごめんなさい…\nこの Steep の Reforking の話は、進捗にもよるけど来年のRubyKaigiネタとかにしてもいいかもしれない。少なくともどこかで登壇するかブログ記事にするかはしたい。",
-          "link": "https://commits.hatenablog.com/entry/2024/10/16/100000",
-          "publishedOn": "2024-10-16T01:00:00.000Z",
-          "wordCount": 507,
-          "title": "2024-10-15",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

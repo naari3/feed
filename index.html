@@ -16747,36 +16747,6 @@ One Experience でのデータ移行
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2024-10-15</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2024/10/16/100000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>docs.google.com
-会社のイベントで登壇していた。Steepのメモリ削減について。
-用事があって早めに会場を脱出することになってしまったのはちょっともったいないことをしたかもしれない。
-地域のコミュニティって感じでいいイベントでした。
-Majo の話と、Fork worker / Reforking の話をした。
-Reforking は今絶賛実装しているところ。ひとまず CoW を効くようにすることで本当にメモリが共有されるのかを確認するためのプロトタイプを作っている。既存の worker の kill とか reforking 中にくるリクエストをうまくさばくこととかはとりあえずサボって、fork した先にリクエストを流すところにフォーカスしてメモリ使用量を計測したい。
-しかし実は fork するだけでも(graceful restart的なことを考えなくても)なかなかむずかしい問題だなと気がついた。というのも、CoW を意味のあるものにするには fork 前後で同じRBS::Environmentなどのオブジェクトを参照させる必要があるのだけど、これがむずかしい。Reforking のアイディアを借りてきた puma とかはrack applicationを維持することだけを考えればいいようになっているけれど、Steepの場合はそんなにきれいに分かれていないので、うまく必要なオブジェクトが共有されるようにforkをしないといけない。
-これは HTTP というものがステートレスであるからやりやすくなっているのかなと思ったりした。ステートレスであるからプロセスの管理をする人は比較的楽にforkできるのではないか。Steepは解析のための環境という巨大stateを持っているからそれがむずいような気がする。
-一方で、stateというのは実はこの問題の主題ではなくて、通信を行う層とロジックが置かれた層が比較的密に結合しているのが問題なのかもしれないとも思った。ここの結合がもっと疎であれば、案外楽にforkができるのかもしれない。この辺はもうすこし考えたい。
-発表の反省としては、もともと Ruby を知っていることは前提としないつもりでやっていたのだけど、それ以外の知識の前提を置きすぎたのでは、と少し反省している。fork の説明を最初全くしていなかったのだけど、したほうがいいかなと思って発表20分前に追加していたりした。あとは LSP とはなにか、も一言も触れていなくて、説明があったほうが良かったかなという気持ちが少しある。まあ面白かったと何人かに言ってもらえたのは良かった、うれしい。置いてけぼりにしてしまった人がいたらごめんなさい…
-この Steep の Reforking の話は、進捗にもよるけど来年のRubyKaigiネタとかにしてもいいかもしれない。少なくともどこかで登壇するかブログ記事にするかはしたい。</span>
-                  </div>
-                  <img src="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -18707,7 +18677,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-01-13T12:02:30.965Z">2025-01-13T12:02:30.965Z</time>
+    <time id="build-timestamp" datetime="2025-01-13T13:06:53.655Z">2025-01-13T13:06:53.655Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
