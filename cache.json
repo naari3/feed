@@ -3597,6 +3597,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398319962588",
+          "author": null,
+          "description": "2025年1月11日（土）21:05 ごろから 2025年1月14日（月）11:18 ごろまで、メール投稿のブログへの反映が遅延する不具合が発生していました。なお、不具合発生期間中のメール投稿は、不具合の解決とともにブログに反映されております。\nご不便をおかけし申し訳ございませんでした。再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2025/01/14/115913",
+          "publishedOn": "2025-01-14T02:59:13.000Z",
+          "wordCount": 862,
+          "title": "【修正済み】2025年1月11日21:05 ごろから、メール投稿が遅延する不具合が発生していました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398319962588/1736823554",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398319962588/1736823554"
+        },
+        {
           "id": "hatenablog://entry/6802418398311045266",
           "author": null,
           "description": "はてなブログでは日々さまざまな新機能の開発や機能改善を行っています。多くのユーザーさまに関係する機能は、すでに本ブログにてお知らせしておりますが、1ヶ月分のお知らせをまとめました。\n細かな機能修正・改善\n1.商品紹介リンクに rel=\"sponsored\" を付与するように変更しました\n編集サイドバーから商品紹介リンク*1を挿入した際、aタグの属性に rel=\"sponsored\" を付与するように変更しました\n（参考情報）リンクの関係性を伝える重要性とリンクスパムに関する最新情報  |  Google 検索セントラル ブログ  |  Google for Developers\n2. ファイルアップローダーでアップロードできるファイル形式に MS Office 関連ファイルを追加しました（ブログMedia限定機能）\nファイルアップローダーでアップロードできるファイル形式に MS Office 関連ファイルを追加しました。\nxls\nxlsx\nppt\npptx\ndoc\ndocx\n3. ファイルアップローダーにてmp4ファイルの容量制限を引き上げました（ブログMedia限定機能）\nファイルアップローダーにてアップロードできるmp4ファイルの容量制限を10MBから100MBに引き上げました。\n2024年11月のお知らせ（再掲）\n2024年11月27日をもって、Instagram貼り付け機能を廃止します\n2024年12月18日(水)をもって、レストラン検索及びレストラン情報埋め込み機能の提供を終了します\n\n\n\n\n*1:Amazon商品紹介、楽天商品紹介、iTunes商品紹介",
@@ -9212,16 +9227,6 @@
           "publishedOn": "2024-10-16T23:12:33.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2024.10.17",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=42237",
-          "author": "mamosuke",
-          "description": "SciresM氏がFusée Gelée(NVIDIA Tegraプロセッサの脆弱性を利用し起動時に任意のコードを実行するcoldboot exploit)を利用したりModチップを利用したりすることで起動することができるNintendo SwitchのカスタムファームウェアAtmosphere 1.8.0 prerelease(c6014b533)をリリースしていました。→→→この記事の続きを読む\n19.0.0対応 Atmosphère 1.8.0 prerelease(c6014b533) first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024101642237/",
-          "publishedOn": "2024-10-16T14:46:32.000Z",
-          "wordCount": null,
-          "title": "19.0.0対応 Atmosphère 1.8.0 prerelease(c6014b533)",
           "imageUrl": null
         }
       ]
