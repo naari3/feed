@@ -6969,7 +6969,7 @@
           "description": "仕事とかプライベートとかで、ものすごく頭が回るときと、エンストしたようにまるで回転しないときとがあり、その差はどこから来るのだろうと考えていた時期があった。\n結論から言うと、自分の場合、「それを得意だと思っているかどうか」によって頭の回転具合がかなり変わるらしいことがわかった。\n例えば、自分はこうした執筆がそこそこにできて、プログラミング言語でいえばScalaが他人よりも得意だが、こうした、自分の脳が「これは得意だぞ」と思っていることがらと相対すると、脳はやらせてくれやらせてくれと元気に働き始める。成功が目に見えているからね。\n他方で、これそんなに得意じゃないな〜、とか、自分がやったら時間かかるだろうな〜、と思っているような、つまり自分の脳が「これ不得意だぞ」と思っていることがらと相対すると、脳はたちどころにその動きを鈍らせてしまう。誰だって失敗したりうまくいかない状況に放り込まれたくないからね。怖気付いてしまうのだ。\n面白いのが、無理矢理「俺はたぶん得意だぜ！」「俺くらいならなんとかなるぜ！」という気持ちにしておくと、不思議と脳みそが動き出すということ。苦手な仕事も、「実はあの後で俺は進化したから今回は楽勝だぜ！」みたいな気持ちでいると、実際に得意かどうかはさておき、苦手だと思っているよりも実際にうまくいってしまう。\n日常のレベルでは、何かについて厳密に自分がどのくらい得意であるかを知っているよりは、脳が快適に働いてくれるほうが良いに決まっているので、とりあえず得意だと思っておくような方便を持っているとお得だ。というか、普通の人々はこうした方策をどこかで心得ているのかもしれないが、エンジニアとして謙虚にやっていくぞ!!! みたいなメンタリティでいると、下手に厳格になってしまって、どうしても自分の欠点が目についたり、他人が持っていて自分が持っていないものがトゲのように胸に刺さっていたりする。でもあえて、超得意とまではいかなくても、ドキュメントを読んだからもう完璧だぜ、くらいの気持ちで挑んだほうが、結果的に本当に得意になったりする。\n職業としてソフトウェア開発者をやっているからには、ことソフトウェアにかけては、世の中の平均よりは飛び抜けて上手なはずである。だから萎えることなく「平均より得意だぜ」という気持ちを持っておくと良さそう。",
           "link": "https://blog.3qe.us/entry/2025/01/15/194843",
           "publishedOn": "2025-01-15T10:48:43.000Z",
-          "wordCount": null,
+          "wordCount": 1329,
           "title": "何かがそれほど得意でなくても、世の中の平均よりは得意だと思っておいたほうがよい",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398320342754/1736938123",
@@ -6984,7 +6984,7 @@
           "description": "先日、言語の塩漬けビリティの話がネットで盛り上がっていた。\n\n言語とそれをとりまくエコシステムの塩漬けビリティみたいな概念が、†生産性†みたいな概念とは独立した軸に存在しているような気がしており、JavaとかCは異常にこのへんが手堅く、だから選ばれてるのだと思う(Scalaはメジャーバージョン上げたときに色々壊したが、反省して3以降はちゃんとしている) https://t.co/TpWrDw3nGY\n— Windymelt💀(めるくん)🚀❤️‍🔥 (@windymelt) December 25, 2024\n   \nScalaの塩漬けビリティについてはまた後ほど記事にする予定だが、一般に塩漬けしやすいといったとき、最後にビルドに成功したときと同じライブラリが降ってくるという要素が大事になる。当たり前のように思えるが、ライブラリをホストしてくれているリポジトリが何らかの理由で侵害されたり、そこまで大仰な理由がなくとも、ビルドツールのライブラリ指定方法が甘くて「3.0.0以上」みたいに指定するスタイルの場合に、最新バージョンが変わって別のライブラリが降ってきてしまう、ということもありうる。しかも運悪くライブラリの行儀が悪いと、マイナーバージョンの変更でbreaking changesが起こったりする。\nこうした事故を防ぐため、npmは勝手にpackage-lock.jsonを作ってくれるが、sbtはそのような機能を標準で提供しないため、Discordで相談していたところsbt-dependency-lockというツールの存在を教えてもらった。このツールを使うとbuild.sbt.lockが生成され、ライブラリのJARファイルのダイジェストがロックファイルに記録されるようになる。\nこの記事では、このstringbean/sbt-dependency-lockの概要とその使い…",
           "link": "https://blog.3qe.us/entry/2025/01/01/192736",
           "publishedOn": "2025-01-01T10:27:36.000Z",
-          "wordCount": null,
+          "wordCount": 1607,
           "title": "Scalaにもpackage-lock.jsonが欲しい！sbt-dependency-lockの紹介",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398316559172/1735727256",
@@ -6999,7 +6999,7 @@
           "description": "Scala 3.6.2が出た！やったー！\ngithub.com\nScala 3.6.2は、Scala 3.6系の最初の正式なリリースで、数多くの機能が追加された。この記事ではそのうち主要な機能を紹介する。また、正確さよりも分かりやすさを優先してザックリ書いているところがあるので、そういうときはブコメや記事で補足してもらえると嬉しい。\nScala 3.6.2を使う\n3.6.0と3.6.1との関係\nClause Interleaving (SIP-47)の安定化\nGivenとContext Boundsの記法の拡充 (SIP-64)\nContext Bounds for Polymorphic Functions\nAdd an infix shorthand for Tuple.{Append, Concat}\nまとめ\nScala 3.6.2を使う\nScala CLIでは、-S 3.6.2オプションをつけるとこのバージョンを使うことができる:\n% scala-cli -S 3.6.2\n\n\n\nsbtでは、scalaVersionに3.6.2を指定してやると良い:\nlazy val root = (project in file(\".\"))\n  .settings(\n    name := \"Hello\",\n    scalaVersion := \"3.6.2\"\n  )\n\n\n\n3.6.0と3.6.1との関係\nScala 3.6.2はScala 3.6系の最初の正式なリリースと書いた。では3.6.0とか3.6.1は何なのかというと、\nオペミスか何かで作業中のマイルストーンかなにかがpublishされてしまったのが3.6.0(おっちょこちょい)\nさすがにそのままではマズいので最低限動くようにhotfixを当てたのが3.6.1\nだった。しかし最低限のhotfixなのでプロダクションでの利…",
           "link": "https://blog.3qe.us/entry/2024/12/22/182535",
           "publishedOn": "2024-12-22T09:25:35.000Z",
-          "wordCount": null,
+          "wordCount": 1748,
           "title": "Scala 3.6が出たので見所を紹介するよ",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398313646322/1734859535",
@@ -7014,7 +7014,7 @@
           "description": "作った。\nwww.npmjs.com\ngithub.com\nesbuildとはJSのバンドラであり、めちゃくちゃ高速に動作するのがウリである。\nesbuild.github.io\nそして今回自分が作製したこのプラグインを使うと、esbuildがScalaのコードのimportを見付けると勝手にビルド・バンドルするので、TSやJSのコードを書いているときに突然Scalaのコードを呼べる:\n// src/main/scala/Main.scala\n\npackage scalamain\n\nimport scala.scalajs.js\nimport scala.scalajs.js.annotation._\n\nobject Main {\n  // JS側から見えるようにする処理\n  @JSExportTopLevel(\"fib\", moduleID = \"scalamain\")\n  def fib(n: Int): Int = {\n    if (n <= 1) n\n    else fib(n - 1) + fib(n - 2)\n  }\n}\n\n\n\n\n\n// src/main/js/main.js\nimport { fib } from 'scala:scalamain';\n\nconst main = async () => {\n  console.log(fib(10));\n}\n\nmain();\n\n\n\n\n\n% node dist.cjs\n55\n\n\n\nこの記事ははてなエンジニア Advent Calendar 2024の10日目の記事です。昨日はid:gurriumの『Maestroよかった』でした。世の中いろんなツールが発明されていて面白いですよね。\ngiarrium.hatenablog.com\nしかも、Scala Advent Calendar 2024の記事でもあるのです…",
           "link": "https://blog.3qe.us/entry/2024/12/11/000549",
           "publishedOn": "2024-12-10T15:05:49.000Z",
-          "wordCount": null,
+          "wordCount": 1757,
           "title": "esbuildでScala.jsをビルドして呼べるようにするプラグインを作った話",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398310597426/1733895392",
@@ -7029,7 +7029,7 @@
           "description": "これは、前人未踏の地に飛び込んでいった漢たちの物語・・・\nツッコミ所がいっぱいあると思います。どんどんツッコんで賑やかしてください。ISUCONの経験がそんなにあるわけではないので、アホみたいなことをしているかも。俺をBIGにしてください！\nまた、書いている話は「ISUCONやそれに近しい局面ではこう」という話なので、人類普遍の真実を述べているわけではない。\nあらすじ\nISUCON14お疲れさまでした。\nISUCONといえば例年いろいろな言語で参考実装が公開され、そのうちどれかを選んで改善していくというスタイルが一般的、というか普通なのだが、自分たちは参考実装が一切存在しないScala 3で突入し、1000点ちょっとを獲得し、最後らへんでnginxの調子がおかしくなって0点となり散っていった。そういう人生も良いと思います。\nちなみに測定とかの話は出てきません。測定まで行けなかった物語です。歌や詩に近く、花や雷鳴に近いものです。\n薄氷を踏め！着剣！\n構成(人間)\n2人\n\n\nScala慣れしていて関数型もろもろの心得がある 1人\nScala慣れしている 1人\nISUCONやると聞いていてもたってもいられずメン募したのだが年末ということでなかなか集められなかった。みんな忙しい。次回は集まるといいですね。\nやっぱり2人だと繰り出せる技にも限界があり、こういう構成にしたほうが良くないっスか？みたいな会話も生まれづらいかなと思った。目玉は多ければ多いほどいい\n構成(硬件)\nインスタンス2台をwebに\nインスタンス1台をDBに\n我々はただでさえハンデを背負っているので、あんましインフラ側で気合を入れるのはよそうということで一般的な構成にした。というか、なかなか実装が終わらなかったので2台にした意味はそんなになかった。\n構成(軟件)\nソフトウェアの方ではいろいろ工夫した点がある。\nデプロイ…",
           "link": "https://blog.3qe.us/entry/2024/12/09/033007",
           "publishedOn": "2024-12-08T18:30:07.000Z",
-          "wordCount": null,
+          "wordCount": 1968,
           "title": "プロジェクトS: Scala 3で #ISUCON 14に出て優勝せよ (点数: 0点)",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398310057924/1733682635",
@@ -7044,7 +7044,7 @@
           "description": "cleanするとだいたい治る。\ndocsプロジェクトにドキュメントを書いているときは docs / clean してから再生成するとよい。\nなんでこんな壊れ方するのかは謎\nこれはScala Advent Calendar 2024の7日目の記事です。\nqiita.com",
           "link": "https://blog.3qe.us/entry/2024/12/07/010117",
           "publishedOn": "2024-12-06T16:01:17.000Z",
-          "wordCount": null,
+          "wordCount": 1423,
           "title": "Laikaでlaika.io.internal.errors.ParserErrors: Multiple errors during parsing: Duplicate path: / (no matching file paths)が出たら見るページ",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398309559315/1733502402",
@@ -7059,7 +7059,7 @@
           "description": "ScalaでDockerイメージを作る話は定期的に書いている。しかし今回が一番簡単です。\nblog.3qe.us\nblog.3qe.us\nblog.3qe.us\nまじで何回書いてんだという話だが、Dockerコンテナはあまりにも日常の一部になってしまっているので、ScalaでもDockerコンテナが簡単に作れないと困るのだ。\n今回はsbt-jibというsbtプラグインを使ってScalaが動くDockerイメージを作成する。\n環境\n現時点で最新のバージョンを利用しているため、適宜読み替えてほしい:\nScala 3.5.2\nsbt 1.10.6\nsbt-jib 1.3.7\njib-core 0.27.2\njib\njibとは、JavaアプリケーションをDockerイメージ化するためのツールキットだ。\ngithub.com\ncloud.google.com\njibには以下のような特徴がある:\nDockerを経由せずに直接イメージを生成する\n\n\nDockerイメージのベストプラクティスといったものに左右されない\nDockerデーモンがなくても良い\n比較的？イメージも小さくまとまる\nイメージ生成が高速\n変更に対してイメージの差分も小さい\nsbt-jib\nそんなjibをsbt上から簡単に利用できるプラグインがsbt-jibだ。\ngithub.com\nこのプラグインを利用すると、jibを自動的に呼び出してアプリケーションをDockerコンテナ化してくれる。\nsbt-jibを利用するには、まずproject/plugins.sbtに以下のように記述する:\naddSbtPlugin(\"de.gccc.sbt\" % \"sbt-jib\" % \"1.3.7\")\nlibraryDependencies += \"com.google.cloud.tools\" % \"jib-core\" % \"0.27.2\"\n\n\n\nlibraryDependenciesは普通はbuild.sbtに書くが、今回はproject/plugins.sbtに書くことに注意。\n最後に、いくつかの設定をbuild.sbtに書く:\n// イメージの日時を作成日時にする\njibUseCurrentTimestamp := true,\n// ローカルで使うだけなら空白でよい\njibRegistry := \"\",\n// デフォルトだとorganizationになる\njibOrganization := \"windymelt\",\n// デフォルトだとプロジェクト名になるが、プロジェクト名にスペースが入っていたりすると動かないのでここで指定する\njibName := \"sbt-jib-exercise\",\n\n\n\nたとえば設定例は以下の通り:\n// build.sbt\nval scala3Version = \"3.5.2\"\n\nlazy val root = project\n  .in(file(\".\"))\n  .settings(\n    name := \"sbt-jib exercise\",\n    version := \"0.1.0-SNAPSHOT\",\n    scalaVersion := scala3Version,\n    jibRegistry := \"\",\n    jibOrganization := \"windymelt\",\n    jibName := \"sbt-jib-exercise\"\n  )\n\n\n\nこれでsbt jibImageBuildを実行するとwindymelt/sbt-jib-exercise:0.1.0-SNAPSHOTが作られる。jibに直接作らせるのではなくDockerも利用してイメージを作る場合はsbt jibDockerBuildとする。image successfully created & uploadedと表示される。何も指定していなくてもDockerhubにアップされているっぽい？調査する。\n他にもポート解放用の設定などがあるのでドキュメントを読んでみることをおすすめする。\nリポジトリにpushする\nリポジトリにpushするには、jibRegistryをghcr.io/namespaceなどのように設定した後、docker login レジストリし、docker push イメージするだけでよい。まあこのへんは普通。",
           "link": "https://blog.3qe.us/entry/2024/12/04/001105",
           "publishedOn": "2024-12-03T15:11:05.000Z",
-          "wordCount": null,
+          "wordCount": 1477,
           "title": "sbt-jibでScalaのDockerイメージを簡単に作ろう",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398305178847/1733466642",
@@ -7074,7 +7074,7 @@
           "description": "晩秋の空に照らされて高いところから白い煙を吹き出す鈍色のチューブと鉄骨を時速250キロですり抜けながら、おれは紅白ぺぱ合戦に向かっていた。空はぽかんと晴れていた。銀髪になりつつある富士山が拝めそうだったが、窓が反対側で足しか見えなかった。Connpassのページとハッシュタグの間で目を泳がせることしかできない。\n寒いかなと思ってたけど別にそこまででもなかった\nことの起こりは少し前、半袖が長袖になった頃、同期の縁ダチであるid:stefafafanとエンジニアインタ〜ネッツの縁であるid:asumisoとがめでたくも結ばれるとの報を得て、たまげていた。すごい!!! インターネット至近距離でこんなことが!!!ウッヒョ〜 と小田原から遠く隔った京都で一人ドギマギしていたところ、結婚パーティとカンファレンスと合戦（？）を実験的配合した闇鍋イベントを行うぞ!!! という連絡を受けて、何言ってんだこいつらは？でもこの二人なら絶対に大丈夫！このビッグウェーブに乗るしかない！あとビールも飲みたいと東横インに予約を取り、EX予約を敢行し、提灯と蒲鉾の地、アル=オダワッラーに馳せ参じたのである\n\nすでに少し低くなった陽光にきらめく小田原の街はなごやかで、まだたくわえた熱をほのかにたたえていた。\nそして知らないインド人に小田原城への行き方を教えた後、\n\nた、大変だ〜〜〜〜〜〜〜〜〜〜！！！！！！！！！！\n\nハギャーーーーーーーーーーー\nここから写真はあまりありません。\nで、まあなんやかんやあって会場に現着すると、そう、虎の子のカンファレンスTシャツを着込んだ不審な集団が、列をなして並んでいるではないか\nぺぱのドレスコードは一つ・・・「誰とも被らないカンファレンスTシャツ」を着て来ること!!! だからみんなカラフルな状態になっているんですね。\n知っているカンファレンス、知らないカンファレンス、それカンファレンスじゃないよねまあOKか、有名な勉強会の初回のシャツ、といった具合で、この時点で†愛†があふれていていいですよね 共通の目的のもとにみんなで集まって・・・\nやっぱり合戦とあってどのコンテンツも意気揚々としていて良かったです。ぺ組とぱ組に分かれてはいるものの、本気の発表がどんどん出てくる（windymeltははてなからやってきたので勿論ぱ組ですが、ScalaMatsuriのTシャツを着ていました）。笑いあり、うるっとくるものもあり、撮影禁止スライド、昔刺さったトゲがまだ抜けていないことを思い出させてくれる言葉。誰だって最初は不完全で、欠けた石ころみたいなところから始まって、でも少しずつ転がる方法を覚えていき、得意な事を見付けて伸ばしていく。そういう物語というか普遍的なアーキタイプがぺぱ合戦を貫いていて、そして皆がそれを応援している。\nもがいてもがいて、つたなくても泳げるようになる。自分にとっても刺激になる発表が多かったです。ライバル、成長、ブレイクスルー。自分はWebエンジニアとしてやってきてもうすぐ10年になろうかとしているけれど、道に迷ったり、見えていたはずの穴ぼこに転んだり、時間内に辿り着けなかったりする中で、全力で走っていたつもりが、いつのまにかランニングになっていて、気付くとただ下を向いて歩いていたりする。全力で走ることへの恐れ、前を向くことへの恐れ、夕闇への恐れ・・・絶好調で疾走できるようになったのは、本当にここ最近のことです。それでもまだ、幸運は長続きしないんじゃないか、という一抹の不安が頭の上に浮いている。自分にとってぺぱの発表は、火でした。圧倒的な熱量で闇を払い、さらなる炎の火種になる篝火。それでもわれわれ一人一人が篝火になればきっと大丈夫、という強いメッセージ性を感じました。一歩前へ！カッコ良く本気出す方法なんてないんですよね。いつだって本気とはカッコ悪くって、不恰好で、みっともなくって、きまりの悪いもんです。\n自分が誰かを照らし、火を分け与える篝火になれているだろうか？と考えると、まったくまだまだこれからなのだけれど、それでも一歩前に出てみよう、雲を突き抜けて大空に飛び出す瞬間を見てみよう、という心強い気持ちになれました。\n\nおめでとう!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\nこの後カラオケで喉がシャガシャガになりました。",
           "link": "https://blog.3qe.us/entry/2024/12/01/185623",
           "publishedOn": "2024-12-01T09:56:23.000Z",
-          "wordCount": null,
+          "wordCount": 1373,
           "title": "篝火を掲げよ #cohackpp",
           "enclosure": {
             "url": "https://cdn.image.st-hatena.com/image/scale/9017d810802ef52794493ff96c7d8e4698738098/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20241130%2F20241130191404.jpg",
@@ -7089,7 +7089,7 @@
           "description": "Scala Nativeでhttp4sなどを使おうとするとビルドタイミングでこのようなメッセージが出たりする:\nFound a call to not defined static method Member(Top(java.nio.channels.AsynchronousServerSocketChannel),D4openL42java.nio.channels.AsynchronousChannelGroupL49java.nio.channels.AsynchronousServerSocketChannelEo). Static methods are generated since Scala Native 0.4.3, report this bug in the Scala Native issues.\nCall defined at file:/home/runner/work/fs2/fs2/io/jvm-native/src/main/scala/fs2/io/net/SocketGroupPlatform.scala:94:53\n対応\nindex.scala-lang.org\nepollcatをライブラリに追加する(READMEも軽く読もう)。\nなぜ\nfs2-ioの上に造られているライブラリをScala Native向けにビルドしようとすると、JVMと違ってNativeそのものには非同期I/O用の仕組みがないのでビルドできない。\nそこでepollcatの出番となる。epollcatはepoll/kqueueのラッパーであり、fs2-ioが必要とする非同期I/O処理を肩代わりする。\n使い方はIOAppをEpollAppに、またはIOApp.SimpleをEpollApp.Simpleに置換するだけだ。",
           "link": "https://blog.3qe.us/entry/2024/11/29/174826",
           "publishedOn": "2024-11-29T08:48:26.000Z",
-          "wordCount": null,
+          "wordCount": 1415,
           "title": "Scala Nativeでjava.nio.channels.AsynchronousServerSocketChannelがないと言われたら見るページ",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307668280/1732870106",
@@ -7104,7 +7104,7 @@
           "description": "Scala.jsでSyntaxError: Cannot use import statement outside a moduleが出ることがある。\n環境\nval scala3Version = \"3.5.2\"\naddSbtPlugin(\"org.scala-js\" % \"sbt-scalajs\" % \"1.17.0\")\ntl;dr\n.withOutputPatterns(OutputPatterns.fromJSFile(\"%s.mjs\")しよう\n説明\nScala.jsのコードをsbtなどからrunするときに起こる\n\n\nrunしたいということはscalaJSUseMainModuleInitializerもtrueになっているときに起こる\nNode.jsは.jsファイルをデフォルトではESModuleではなくCommonJSとして扱う\nScala.jsでESModuleを出力させているが、拡張子が.jsのままのときに、Scala.jsはESMを吐くのにNodeはCommonJSのつもりで読んでビックリする\n拡張子を.mjsにしてやると安心する\nコード例\n// build.sbt\nimport org.scalajs.linker.interface.OutputPatterns\n\nlazy val root = project\n  .in(file(\".\"))\n  .enablePlugins(ScalaJSPlugin)\n  .settings(\n    // ...\n    scalaJSUseMainModuleInitializer := true,\n    scalaJSLinkerConfig ~= {\n      _.withModuleKind(ModuleKind.ESModule)\n        .withOutputPatterns(OutputPatterns.fromJSFile(\"%s.mjs\"))\n    }\n  )",
           "link": "https://blog.3qe.us/entry/2024/11/28/010501",
           "publishedOn": "2024-11-27T16:05:01.000Z",
-          "wordCount": null,
+          "wordCount": 1446,
           "title": "Scala.jsでSyntaxError: Cannot use import statement outside a module出たら見るページ",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307255049/1732723501",
@@ -7119,7 +7119,7 @@
           "description": "こういうツイートを見た。\n\nScalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん\n— Neo (@GlassesNeo) 2024年11月24日\n   \nScalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん\n\n\nつまり、この二者は何が違うのかということだ:\nclass C1(val field: Int)\n\nclass C2:\n  val field: Int\n\n\n\nこの疑問を解くには、クラスのコンストラクタとフィールドとの関係、そして両者をつなぐ便利な記法について知るとよい。\n実行環境\nこの記事では、Scala 3.5.2を利用している(が、大抵のバージョンでも同様)。\nまた、この記事では紙面節約のためにoptional brace syntaxで書かれている。つまり、以下の記述は等しい:\nclass Foo {\n  // ...\n}\n\n\n\n\n\nclass Foo:\n  // ...\n\n\n\nScalaのクラス\nScalaはオブジェクト指向言語でもあるので、クラスを作ることができる:\nclass Coke\n\n\n\nコンストラクタ\nクラスなので、コンストラクタ引数を取ることができる:\nclass Coke(isDietCoke: Boolean):\n  // ここでコンストラクタ引数を使った初期化処理を書く\n  println(s\"初期化中: ${isDietCoke}\")\n\nCoke(true) // 初期化中: true と表示される\n\n\n\nいちおう説明しておくと、コンストラクタとはざっくり言うとクラスを作るときに呼ぶやつだ*1:\nCoke(true) ←ここがコンストラクタ\n\n\n\nScalaではクラスを作るときにnewを書かなくて良いので本当に関数とかメソッドに見えるね。\nフィールド\nクラスなので、インスタンスにフィールドを作ることができる:\nclass Coke:\n  val isDietCoke: Boolean = false\n\nCoke().isDietCoke // => false\n\n\n\nフィールドのための特別な記法はなくて、普通にvalを置くだけだ。\nコンストラクタ引数をそのままフィールドにしたい\nところで、コンストラクタ引数をそのまま手を加えずにフィールドにしたいことがよくある:\nclass Coke(isDietCokeArg: Boolean):\n  val isDietCoke = isDietCokeArg\n\n\n\nScalaはこれに便利な記法を与えている。コンストラクタ引数にvalをつけて宣言すると、それはそのままフィールドになる:\nclass Coke(val isDietCoke: Boolean)\n\nCoke(true).isDietCoke // => true\n\n\n\nまとめると\nここで最初の問いに戻ってくる。\nScalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん\n\n\n\nclass名のすぐ後ろのかっこにvalを書くと、コンストラクタから直接設定できるフィールドになる\nbodyにvalを書くと、ふつうのフィールドになる\nここで、値が固定されている場合は同じような挙動になる:\nclass BoxA(val inner: Int = 42)\nclass BoxB:\n  val inner: Int = 42\n\n\n\nただし、前者はあくまでもクラスのコンストラクタにデフォルトの値を与えている、という建て付けになる。このため前者では作成時に値を注入できる:\nBoxA(0) // これができる\nBoxB(0) // コンストラクタにパラメータがないのでそれはできない\n\n\n\nただ値を固定したい場合は作成時に値を注入したいわけではないだろうから、普通にbodyでvalと書くほうが意図通りだと思う。\nFurther Reading\ndocs.scala-lang.org\n*1:まさにconstructしてるね",
           "link": "https://blog.3qe.us/entry/2024/11/27/193218",
           "publishedOn": "2024-11-27T10:32:18.000Z",
-          "wordCount": null,
+          "wordCount": 1483,
           "title": "Scalaではクラスのコンストラクタ引数とフィールドを同時に定義できる",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307155561/1732703538",
@@ -7134,7 +7134,7 @@
           "description": "近所のスーパーで、これを買っておくべきか、いや買わざるべきかと逡巡していた。もしかしたらそのうち必要になるかもしれないし、まったくそんなことはないかもしれない。\nしばらくうろついた挙句、買わずに出てきた。\n似たようなことは他にもある。この技術を勉強しないと将来損するかもしれない、とか、この行動を取らないと政治的に良からぬことになるのではないか、とか、そうした将来への悩みの種はいくらでもある。\nまあしかし人間は神でもオラクルでもないので、将来を見通すことはできない。しかしソフトウェアエンジニアの性なのか、一般に「長期的に耐えるシステムを作る」ことは良いと考えてしまい、取り越し苦労をしてしまいがちだ。取り越し苦労というのは、不確実な状況下で最適化をすることだ。言い換えると早すぎる最適化のことである。\n早すぎる最適化は、早すぎるがゆえに明確な指針を持たず、明確な理由付けもなく、つまるところ明確な内容に欠けてしまう。なのでこれを作り込んでしまった張本人すら、これが早すぎる最適化だと気付かないことがある*1。\n早すぎる最適化が北極にあるなら、南極にあるのは局所最適だ。局所最適はエンジニアの鼻つまみ者、とりあえず局所最適と言ってしまえば何かを指摘した気持ちになってしまうものである。もちろん仕事でソフトウェアエンジニアリングをしているなら、これは避けるに越したことはない。それを行っても何も効果がないし、ソフトウェア自体を組み換えることには労力が発生するし、問題領域はある程度見切ることができるからだ。\n他方で、暮らしで最適化を追求して社会の勝ち組、人生の勝者になるのは困難だ。ここでのゴールは、自分の人生に責任を持ち、それを自分で演出し、満足して死ぬ、ということである。まずそもそも自分の暮らしと人生には不確定要素が時間軸にまたがって存在しており、死ぬ瞬間になんらかの効用が最大値を記録する、という設計をすることはできないからだ。そして、暮らしはそれを演出することで自分にとっての意味が生じるものなので、局所的に何かに集中しても充分な良さが返ってきてくれる。ソフトウェアと違って、自分の行動を変容するのはいとも容易い。人生でかかわる物事の問題領域はあまりに広い。カオスそのもの。\nカオスは日増しによりカオティックになっていく。マスメディアが衰退し、情報の流路が乱流を為し、コミュニティの泡によって見通しというものが不透明になっていく。そうか、世界はこういう感じで動いていくのか、という手触りを誰も持てないまま、技術がどんどん加速していき、宇宙が拡大し、観測可能な宇宙がどんどん狭まっていく。\n流行りのアニメを見ることは将来の自分にとって最適ではないかもしれないが、すくなくともその瞬間の自分とシーンにとって最適であればいい。そういう気持ちになってきた。\n*1:何を隠そう、これは自分のこと",
           "link": "https://blog.3qe.us/entry/2024/11/22/002501",
           "publishedOn": "2024-11-21T15:25:01.000Z",
-          "wordCount": null,
+          "wordCount": 1353,
           "title": "暮らしは局所最適でいい",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398305773828/1732202701",
@@ -7149,7 +7149,7 @@
           "description": "最近仕事でスナップショットテストを実施した。一定の仕様でデータを文字列で吐き出す機能があり、その出力が入力に対して安定しているかどうかを保証しておきたいのだ。その時はvitestに搭載されている機能を利用した。\nvitest.dev\nざっくり言うと、スナップショットテストとは、テストしたい結果をファイルなどの永続ストレージに保存しておき、テストごとにそれを読み取ってテスト対象と照らし合わせ、変化していないことをを確かめるものだ。\nazukiazusa.dev\nwww.mizdra.net\n特にWeb関連の開発シーンでは、出力が安定していてほしいといったシチュエーションでスナップショットテストがよく使われる。\n今回紹介するSnapshot4sは、Scala向けのスナップショットテストを行うためのライブラリ/sbtプラグインだ。3つのテストフレームワークに対応しており、ゼロコンフィグで動作する。\n加えてScalaの2.12から3までのバージョンで動作し、Scala.jsにも対応している。\nまた、たいした分量ではないがサンプルコードをGitHubで公開しておく。\ngithub.com\n今回の面白ポイント\nインラインスナップショット機能があり、Scalaのソースコードをパースして直接書き換える\n今回の面白ポイント\nsnapshot4s\nsbtプラグイン\nバインディング\nスナップショットテストを書く\n文字列でスナップショットテスト\nインラインスナップショットテスト\nファイルスナップショットテスト\n応用: JSONでスナップショットテスト\n応用: scodecでスナップショットテスト\nまとめ\nsnapshot4s\nSnapshot4sは2つのパーツから構成されている。sbtプラグインとテストフレームワーク用バインディングだ。使用するにはこの両方をプロジェクトに導入する必要がある。\nsb…",
           "link": "https://blog.3qe.us/entry/2024/11/16/014122",
           "publishedOn": "2024-11-15T16:41:22.000Z",
-          "wordCount": null,
+          "wordCount": 2060,
           "title": "ScalaでスナップショットテストをするならSnapshot4sが良さそう",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398304288975/1731688882",
@@ -7164,7 +7164,7 @@
           "description": "家の便座が漏電して、ぶっ壊れてしまった。冷たい！と声をあげそうになってしまったのは数日前で、気付くと便座が冷たいしランプが点灯していない。コンセントを刺し直すとしばらく動いているのだが、またしばらくすると動かなくなっているのだ。うーんどうしたものか、と思って、とりあえずコンセントを突き刺すとバチンと大きな音がして家じゅうが真っ暗になってしまった。ブレーカーが落ちたのだ。しょうがないからコンセントは抜いたまま、暮らしている。こんなことは他にもあって、エアコンは水漏れしていてバケツに水を受けているし、たまに部品が落ちてくる。洗濯機のフィルターも詰まっている。うんざりだ。\nそんな目に遭ったり、今日はたまたま雨が降っていて気圧の具合も悪かったのか、すっかり脳味噌が動かなくなってしまった。長い文章を読もうとすると目がぐるぐるする。風呂に入ってもグッタリしている。\n頭の中に選挙カーが引っ越してきて、音声の代わりに文字を流しているといった具合だ。\nしかし長い文章があまり頭に入らなくなっているのは今に始まったことではなくて、 わりかし昔から、筋道通った長い文章を読むのが苦手になってきてしまった。つまみ食いをするように、あるいはテレビをザッピングするように、今風に言えば動画をスキップしながら見るように、文章を読んでしまう。頭の段落のちょっとを読むと、無意識に目が次の段落とか、Webだとサイドバーとか、目次とか、そういう散漫な動き方をしてしまう。\n当たり前だが、文章は上から下へと順序良く読んでいくのが大前提であるし、そうしなければならない。そうしなければ意味を全部把握できるはずもないからだ。Twitterの雄弁家曰く、愚か者は文章をちゃんと上から下へと読まずに目についた部分を飛ばし読みするくせに、自分の都合の良い文章を再構成して「理解」してしまう、とかなんとか。こういう話題はそれなりに人口に膾…",
           "link": "https://blog.3qe.us/entry/2024/11/02/044339",
           "publishedOn": "2024-11-01T19:43:39.000Z",
-          "wordCount": null,
+          "wordCount": 1354,
           "title": "文章を読むことが苦手になっていく",
           "enclosure": {
             "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398300749507/1730490219",
@@ -7179,7 +7179,7 @@
           "description": "作った\nScalaの非公式なキャラを作った。\n\nGitHubにSVGがあります。CC BY-SA 4.0でライセンスしているので、それに基いて勝手に使ってください。例えば、スライドに挿入したり(スライド末尾や適当な場所にクレジットしてください)、ライセンスを継承することを条件に改変したりできます。\ngithub.com\nScalaキャラ不在の歴史\nプログラミング言語Scalaには公式的なキャラクターがいません。そんな中、他の言語では個性的なキャラクターがいて様々な場所にモチーフとして登場しています。\nGopherくん\nhttps://go.dev/blog/gopher The Go Gopher - The Go Programming Language\nD言語くん\nhttps://dlang.org/overview.html Overview - D Programming Language\nこういうキャラクターがいるとキャッチーで、スライドに登場させたり、なんらかの意図を表現するために効果的に使うことができます。\n\nしかしながらScalaには公式として定着しているキャラがいないのです。\ncontributors.scala-lang.org\n掲示板でもマスコット欲しいよという声はありますが、ガツンと広まっているものはない印象です。\n比較的よく見るキャラクターはhttps://x.com/impurepics氏による猫のイラストレーションですが、これは特定のキャラクターがいるというよりは、同じ人が同じテイストのネコを描いているという感じです。\n例えばScala Stewardのアイコンとか\ngithub.com\nCats Effectのアイコンもそうだったはず。\ngithub.com\n作ることに\nといってもスライドでキャッチーなマスコットを登場させたいもので、結局フルスクラッチで自分で作ることにしました。そうすればライセンスも勝手に決められるしね。\n基本的に勝手に使ってほしいのでなるだけ緩いライセンスで、しかし改変した場合はそれもCCになってほしかったのでCC BY-SAというライセンスにしました。まず著作権法上の引用はもちろん可能で、加えて自分のクレジットが載っていれば自由に利用でき、さらにこのライセンスを継承することを条件に自由に改変してバリエーションを作ることができます。このライセンスに従う限り、事前の承諾や許可は一切不要です。このライセンスが取り消されることもありません(CCのライセンス上そうなっています)。\n使ったツールはInkscapeです。貧乏学生だった頃からずっと使っていたのでサクサク作れました。\nどうぞご利用ください\nスライドや資料、教科書などにどうぞご利用ください。",
           "link": "https://blog.3qe.us/entry/2024/10/22/002321",
           "publishedOn": "2024-10-21T15:23:21.000Z",
-          "wordCount": null,
+          "wordCount": 1417,
           "title": "Scalaの勝手マスコット Scala-kun を作りました",
           "enclosure": {
             "url": "https://cdn.image.st-hatena.com/image/scale/298e1391321f987a09a582c61437627375f62fdd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20241022%2F20241022002102.png",
