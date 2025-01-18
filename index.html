@@ -78,6 +78,49 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
+              rel="noopener">nomolkのブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">静電容量式タッチセンサの仕組みでカニをスイッチにする／ArduinoをRaspberry PiのGPIOに接続する【動画解説】</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2025/01/18/234221" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ちょっと前にYoutubeをはじめたのですが、その技術解説記事です。
+飲んだら即死するお酒を作る
+www.youtube.com
+この動画で特筆すべきことは下記の３点ですかね。
+Raspberry Piを心電図にするプログラムをChatGPTに書いてもらう
+カニやトマトや水を静電容量式タッチセンサにする
+ArduinoをRaspberry PiのGPIOに接続する
+順に解説していきます。
+Raspberry Piを心電図にするプログラムをChatGPTに書いてもらう
+
+動画で使っているのは家に転がっていたRaspberry Pi 3なので、ちょっと古い機種です。取り付けているモニタはこの記事で紹介したもの。
+Raspberry Pi で使えるポータブルモニタの決定版が出てた（タッチスクリーン付き、GPIOを占有しない、ケース付き、約3000円） - nomolkのブログ
+GPIO端子を占有しない（横に延長してくれる）のですごく便利だったのですが、これはもう終売っぽく、他に似たような製品も出ていないみたいです。
+ChatGPTが普通と違いますが
+
+AIお姉ちゃん化しているからです。こちらを見てください。
+nomolk.hatenablog.com
+心電図は（動画では明言してないけど多分伝わってると思いますが）心電位をはかっているのではなくそれっぽいグラフを書いているだけです。
+raspberry piを使って、ホルス心電図を模したシステムを作成します。実際に心電位を測るのではなく、疑似的なものです。Pythonのコードを書いて！
+一発では全然うまくいかなくて、このあと動かないところを指摘して直してもらったり、自分でデバッグしたりして５時間ほどかかったので参考程度に。
+最終的なコードはこちら。
+import pygame
+import RPi.GPIO as GPIO
+impo…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/9f65df3befc824386452866c4725574530861344/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250118%2F20250118223341.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://saize-lw.hatenablog.com/" target="_blank"
               rel="noopener">LWのサイゼリヤ</a></h3>
           <section class="articles-per-source">
@@ -19771,7 +19814,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-01-18T14:01:48.538Z">2025-01-18T14:01:48.538Z</time>
+    <time id="build-timestamp" datetime="2025-01-18T15:01:50.007Z">2025-01-18T15:01:50.007Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

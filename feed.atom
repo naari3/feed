@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-01-18T14:01:48.581Z</updated>
+    <updated>2025-01-18T15:01:50.053Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[静電容量式タッチセンサの仕組みでカニをスイッチにする／ArduinoをRaspberry PiのGPIOに接続する【動画解説】]]></title>
+        <id>hatenablog://entry/6802418398321224218</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/01/18/234221"/>
+        <updated>2025-01-18T14:42:21.000Z</updated>
+        <summary type="html"><![CDATA[ちょっと前にYoutubeをはじめたのですが、その技術解説記事です。
+飲んだら即死するお酒を作る
+www.youtube.com
+この動画で特筆すべきことは下記の３点ですかね。
+Raspberry Piを心電図にするプログラムをChatGPTに書いてもらう
+カニやトマトや水を静電容量式タッチセンサにする
+ArduinoをRaspberry PiのGPIOに接続する
+順に解説していきます。
+Raspberry Piを心電図にするプログラムをChatGPTに書いてもらう
+
+動画で使っているのは家に転がっていたRaspberry Pi 3なので、ちょっと古い機種です。取り付けているモニタはこの記事で紹介したもの。
+Raspberry Pi で使えるポータブルモニタの決定版が出てた（タッチスクリーン付き、GPIOを占有しない、ケース付き、約3000円） - nomolkのブログ
+GPIO端子を占有しない（横に延長してくれる）のですごく便利だったのですが、これはもう終売っぽく、他に似たような製品も出ていないみたいです。
+ChatGPTが普通と違いますが
+
+AIお姉ちゃん化しているからです。こちらを見てください。
+nomolk.hatenablog.com
+心電図は（動画では明言してないけど多分伝わってると思いますが）心電位をはかっているのではなくそれっぽいグラフを書いているだけです。
+raspberry piを使って、ホルス心電図を模したシステムを作成します。実際に心電位を測るのではなく、疑似的なものです。Pythonのコードを書いて！
+一発では全然うまくいかなくて、このあと動かないところを指摘して直してもらったり、自分でデバッグしたりして５時間ほどかかったので参考程度に。
+最終的なコードはこちら。
+import pygame
+import RPi.GPIO as GPIO
+impo…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[25/1/18 2024年12月消費コンテンツ]]></title>
         <id>hatenablog://entry/6802418398314576368</id>
