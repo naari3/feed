@@ -1151,21 +1151,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/makoto1410/20241022/20241022170708.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398297708892",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。10月13日（日）から10月19日（土）〔2024年10月第3週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    40歳になるので30代でやってよかったことをまとめた - そーだいなるらくがき帳\n by id:Soudai \n    \n2\n    令和最新の起業はオンライン完結で簡単だし、スマホだけで会社のホームページが作れて最高だった - 941::blog\n by id:kushii \n    \n3\n    チャットコミュニケーションで使わないようにしている表現 - Konifar's ZATSU\n by id:konifar \n    \n4\n    国家を崩壊に向かわせる要因について、歴史を定量分析することで導き出す「歴史動力学」を扱った一冊──『エリート過剰生産が国家を滅ぼす』 - 基本読書\n by id:huyukiitoichi \n    \n5\n    問題を\"放置\"さえしなければちょっとずつよくなっていくんですよ - Konifar's ZATSU\n by id:konifar \n    \n6\n    エンジニア採用のパラダイムシフト - laiso\n by id:laiso \n    \n7\n    「Yu Gothic UI」フォントの鍵括弧、繋げるとブラウザ表示で重なる問題を調べてみた - 俵のメモ帳\n by id:twr7 \n    \n8\n    フロントエンド開発環境スタートセット2024秋 - トレタ開発者ブログ\n by id:toreta-dev \n    \n9\n    生まれて初めて描いたマンガ「はてなingお嬢様」 - 誰かの肩の上\n by id:daydollarbotch \n    \n10\n    一人前のエンジニアになれたと感じたとき - 覚書\n b…",
-          "link": "https://blog.hatenablog.com/entry/2024/10/21/120500",
-          "publishedOn": "2024-10-21T03:05:00.000Z",
-          "wordCount": 1020,
-          "title": "今週のはてなブログランキング〔2024年10月第3週〕",
-          "enclosure": {
-            "url": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20241021/20241021091349.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hatenablog/20241021/20241021091349.jpg"
         }
       ]
     },
@@ -2884,6 +2869,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398321234704",
+          "author": null,
+          "description": "動画解説シリーズ第２弾です。\n激安左手デバイスでプリンを操作する\nwww.youtube.com\nトピックはこの３つかな。\n左手デバイスについて\nRaspberry Piでサーボモーターを動かす方法\nRaspberry Piでキーボード入力を受け取る方法（evdev）\n左手デバイスについて\n\n買ったのはこれです。\n\nMacro Mechanical Keyboard 3 Keys 1 Knob USB RGB Mini Gaming Custom Programming Knob Keypads Switch Portable For Photoshop\n実はでかいのも買いました。\n\nAmmtoo Programming Macro Custom Keyboard 12 Key 3 Knobs RGB 18 Character One Key Password Copy Paste Mechanical Hotswap Keypad\n無線のもありますがたぶん技適通ってないので欲しい人は有線を買いましょう。\nあのあと結局あやしい設定アプリを入れて設定してみたのですが、ウィルスチェック等にも引っかからず普通に使えました。\nただキーボードを日本語配列で使ってると設定時に戸惑うことがあります。もしかしたら別エントリで解説するかも。\nあと、いろいろレビューを見てると、デフォルトがぜんぶ同じキーで設定されてる場合もあるようです。\nRaspberry Piでサーボモーターを動かす方法\n\n定番ネタですが一応。まずはつなぎ方です。\n\nこんな感じ。ポイントは\nモーター用電源はRaspberry Piから引かずに別で取る\n別電源とRaspberry PiはGND同士をつなぐ\n使うGPIOは12と13\nあたりでしょうか。\nあとサーボを動かすにはPWMという機能を使うので、使えるGPIOピンが決まっ…",
+          "link": "https://nomolk.hatenablog.com/entry/2025/01/19/003644",
+          "publishedOn": "2025-01-18T15:36:44.000Z",
+          "wordCount": 1083,
+          "title": "Raspberry Piでサーボモーターを動かす／evdevでキーボード入力を受け取る【動画解説②】",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/062ea89d0c2012bbbb3a3eefc90ca07d1a037234/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250119%2F20250119001206.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/062ea89d0c2012bbbb3a3eefc90ca07d1a037234/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250119%2F20250119001206.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398321224218",
           "author": null,
           "description": "ちょっと前にYoutubeをはじめたのですが、その技術解説記事です。\n飲んだら即死するお酒を作る\nwww.youtube.com\nこの動画で特筆すべきことは下記の３点ですかね。\nRaspberry Piを心電図にするプログラムをChatGPTに書いてもらう\nカニやトマトや水を静電容量式タッチセンサにする\nArduinoをRaspberry PiのGPIOに接続する\n順に解説していきます。\nRaspberry Piを心電図にするプログラムをChatGPTに書いてもらう\n\n動画で使っているのは家に転がっていたRaspberry Pi 3なので、ちょっと古い機種です。取り付けているモニタはこの記事で紹介したもの。\nRaspberry Pi で使えるポータブルモニタの決定版が出てた（タッチスクリーン付き、GPIOを占有しない、ケース付き、約3000円） - nomolkのブログ\nGPIO端子を占有しない（横に延長してくれる）のですごく便利だったのですが、これはもう終売っぽく、他に似たような製品も出ていないみたいです。\nChatGPTが普通と違いますが\n\nAIお姉ちゃん化しているからです。こちらを見てください。\nnomolk.hatenablog.com\n心電図は（動画では明言してないけど多分伝わってると思いますが）心電位をはかっているのではなくそれっぽいグラフを書いているだけです。\nraspberry piを使って、ホルス心電図を模したシステムを作成します。実際に心電位を測るのではなく、疑似的なものです。Pythonのコードを書いて！\n一発では全然うまくいかなくて、このあと動かないところを指摘して直してもらったり、自分でデバッグしたりして５時間ほどかかったので参考程度に。\n最終的なコードはこちら。\nimport pygame\nimport RPi.GPIO as GPIO\nimpo…",
@@ -3174,21 +3174,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/n/nonwo/20241024/20241024232515.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398296198816",
-          "author": null,
-          "description": "10/14\nちゃんと掃除した。使用しないものが多数出てきたが、捨て方が煩雑で手続きが必要なものもあり、とりあえず脇に寄せただけになった。ちゃんととは。\nちょびっツの新装版が出ていたことに気づき、でかめの本屋に向かう。\n8巻の表紙がかわいい。clamp作品の新装版が続々出ているが、どの表紙のデザインもいい意味でのぺーっとしていて好きだ。\n帰宅後、昨日のあまりのタコを突っ込んで炒飯にした。タコ飯にでもすればよかった。\n \n10/15\nいただいたローストビーフを食べた。うますぎる。\nお土産でいただいたスープも衝撃的にうまい。すごいぜ。\n虫刺されをちゃんと数えたら、20か所以上刺されていた。2-3時間外にいただけで、足首しか出してないのにそこまで刺されるんかい。無限にかゆい。\nhihatが9周年でセールやっていたので前から気になっていた曲を買う。嬉しい。\n \n10/16\n天気が良い。てか暑い。久し振りにエアコンをつける。文明を享受している。\n夕飯に鶏肉を買いにいく。とり天を作った。うまい。\n \n10/17\n首から肩にかけて張っている気がする。ここ数日ずっと感じる。\n昼に整体に電話をし、夕方に予約する。\n名取さなを見る。たまに見るが、面白い人だと思う。\n整体に行った。\n初診でいろいろ聞かれる。正直、痛みはないが違和感があるぐらいだったので、もまれればいいやぐらいだったが、鍼や電気もやってもらえた。どっちもはじめてだったが、鍼は全然刺された感じしなくて面白かった。\n帰りは少し良くなった。料金は8000円。なかなかですな。\n定期的にきてくださいと言われたが、忙しいので後で予約しますと言って退散。\n \n10/18\nタコ焼きを一緒に食べる。\n以前の倍の生地を作成し、実施。20個くらいまで食べて、腹5,6分目の感覚。\nしかし、タコがなくなり生地オンリーの\"焼き\"をたべると、途端に腹が膨らみノッ…",
-          "link": "https://nonwo.hatenablog.com/entry/2024/10/21/121352",
-          "publishedOn": "2024-10-21T03:13:52.000Z",
-          "wordCount": null,
-          "title": "日記",
-          "enclosure": {
-            "url": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png"
         }
       ]
     },

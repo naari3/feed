@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-01-18T15:01:50.053Z</updated>
+    <updated>2025-01-18T16:01:56.954Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Raspberry Piでサーボモーターを動かす／evdevでキーボード入力を受け取る【動画解説②】]]></title>
+        <id>hatenablog://entry/6802418398321234704</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/01/19/003644"/>
+        <updated>2025-01-18T15:36:44.000Z</updated>
+        <summary type="html"><![CDATA[動画解説シリーズ第２弾です。
+激安左手デバイスでプリンを操作する
+www.youtube.com
+トピックはこの３つかな。
+左手デバイスについて
+Raspberry Piでサーボモーターを動かす方法
+Raspberry Piでキーボード入力を受け取る方法（evdev）
+左手デバイスについて
+
+買ったのはこれです。
+
+Macro Mechanical Keyboard 3 Keys 1 Knob USB RGB Mini Gaming Custom Programming Knob Keypads Switch Portable For Photoshop
+実はでかいのも買いました。
+
+Ammtoo Programming Macro Custom Keyboard 12 Key 3 Knobs RGB 18 Character One Key Password Copy Paste Mechanical Hotswap Keypad
+無線のもありますがたぶん技適通ってないので欲しい人は有線を買いましょう。
+あのあと結局あやしい設定アプリを入れて設定してみたのですが、ウィルスチェック等にも引っかからず普通に使えました。
+ただキーボードを日本語配列で使ってると設定時に戸惑うことがあります。もしかしたら別エントリで解説するかも。
+あと、いろいろレビューを見てると、デフォルトがぜんぶ同じキーで設定されてる場合もあるようです。
+Raspberry Piでサーボモーターを動かす方法
+
+定番ネタですが一応。まずはつなぎ方です。
+
+こんな感じ。ポイントは
+モーター用電源はRaspberry Piから引かずに別で取る
+別電源とRaspberry PiはGND同士をつなぐ
+使うGPIOは12と13
+あたりでしょうか。
+あとサーボを動かすにはPWMという機能を使うので、使えるGPIOピンが決まっ…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[静電容量式タッチセンサの仕組みでカニをスイッチにする／ArduinoをRaspberry PiのGPIOに接続する【動画解説】]]></title>
         <id>hatenablog://entry/6802418398321224218</id>
@@ -12570,96 +12608,6 @@ Amazon
 どうぞよろしくお願いいたします。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[日記]]></title>
-        <id>hatenablog://entry/6802418398296198816</id>
-        <link href="https://nonwo.hatenablog.com/entry/2024/10/21/121352"/>
-        <updated>2024-10-21T03:13:52.000Z</updated>
-        <summary type="html"><![CDATA[10/14
-ちゃんと掃除した。使用しないものが多数出てきたが、捨て方が煩雑で手続きが必要なものもあり、とりあえず脇に寄せただけになった。ちゃんととは。
-ちょびっツの新装版が出ていたことに気づき、でかめの本屋に向かう。
-8巻の表紙がかわいい。clamp作品の新装版が続々出ているが、どの表紙のデザインもいい意味でのぺーっとしていて好きだ。
-帰宅後、昨日のあまりのタコを突っ込んで炒飯にした。タコ飯にでもすればよかった。
- 
-10/15
-いただいたローストビーフを食べた。うますぎる。
-お土産でいただいたスープも衝撃的にうまい。すごいぜ。
-虫刺されをちゃんと数えたら、20か所以上刺されていた。2-3時間外にいただけで、足首しか出してないのにそこまで刺されるんかい。無限にかゆい。
-hihatが9周年でセールやっていたので前から気になっていた曲を買う。嬉しい。
- 
-10/16
-天気が良い。てか暑い。久し振りにエアコンをつける。文明を享受している。
-夕飯に鶏肉を買いにいく。とり天を作った。うまい。
- 
-10/17
-首から肩にかけて張っている気がする。ここ数日ずっと感じる。
-昼に整体に電話をし、夕方に予約する。
-名取さなを見る。たまに見るが、面白い人だと思う。
-整体に行った。
-初診でいろいろ聞かれる。正直、痛みはないが違和感があるぐらいだったので、もまれればいいやぐらいだったが、鍼や電気もやってもらえた。どっちもはじめてだったが、鍼は全然刺された感じしなくて面白かった。
-帰りは少し良くなった。料金は8000円。なかなかですな。
-定期的にきてくださいと言われたが、忙しいので後で予約しますと言って退散。
- 
-10/18
-タコ焼きを一緒に食べる。
-以前の倍の生地を作成し、実施。20個くらいまで食べて、腹5,6分目の感覚。
-しかし、タコがなくなり生地オンリーの"焼き"をたべると、途端に腹が膨らみノッ…]]></summary>
-        <author>
-            <name>メガネ好き好きクラブ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[今週のはてなブログランキング〔2024年10月第3週〕]]></title>
-        <id>hatenablog://entry/6802418398297708892</id>
-        <link href="https://blog.hatenablog.com/entry/2024/10/21/120500"/>
-        <updated>2024-10-21T03:05:00.000Z</updated>
-        <summary type="html"><![CDATA[はてなブログ独自の集計による人気記事のランキング。10月13日（日）から10月19日（土）〔2024年10月第3週〕のトップ30です*1。
-#
-    タイトル／著者とブックマーク
-    
-1
-    40歳になるので30代でやってよかったことをまとめた - そーだいなるらくがき帳
- by id:Soudai 
-    
-2
-    令和最新の起業はオンライン完結で簡単だし、スマホだけで会社のホームページが作れて最高だった - 941::blog
- by id:kushii 
-    
-3
-    チャットコミュニケーションで使わないようにしている表現 - Konifar's ZATSU
- by id:konifar 
-    
-4
-    国家を崩壊に向かわせる要因について、歴史を定量分析することで導き出す「歴史動力学」を扱った一冊──『エリート過剰生産が国家を滅ぼす』 - 基本読書
- by id:huyukiitoichi 
-    
-5
-    問題を"放置"さえしなければちょっとずつよくなっていくんですよ - Konifar's ZATSU
- by id:konifar 
-    
-6
-    エンジニア採用のパラダイムシフト - laiso
- by id:laiso 
-    
-7
-    「Yu Gothic UI」フォントの鍵括弧、繋げるとブラウザ表示で重なる問題を調べてみた - 俵のメモ帳
- by id:twr7 
-    
-8
-    フロントエンド開発環境スタートセット2024秋 - トレタ開発者ブログ
- by id:toreta-dev 
-    
-9
-    生まれて初めて描いたマンガ「はてなingお嬢様」 - 誰かの肩の上
- by id:daydollarbotch 
-    
-10
-    一人前のエンジニアになれたと感じたとき - 覚書
- b…]]></summary>
-        <author>
-            <name>週刊はてなブログ</name>
         </author>
     </entry>
     <entry>
