@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-01-19T04:02:05.205Z</updated>
+    <updated>2025-01-19T05:01:42.389Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Obisidianで書いた日記を感情分析する]]></title>
+        <id>hatenablog://entry/6802418398321351077</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2025/01/19/133846"/>
+        <updated>2025-01-19T04:38:46.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+フィクションで、死期の近づいた人物が急に日記をつけ始めるシーンがある。日記とは習慣であり、今まで何も書いてこなかった人間が急に物を書き始めることなどありえないと今まで思っていた。最近になって考えを改めた。孤独と向き合い、何かを残したいと願って創作を行うのなら、日記はもっとも手軽な手段となる。読むのが自分一人しかいないとしても、日記とは過去の自分から未来の自分に向けた伝承だと言える。孤独と向き合うためには有効な手段だと思う。
+日記を感情分析するのは2023年の年末にもやっていた。
+contradiction29.hatenablog.com
+当時はNotionで日記を書いていた。
+Notionの本文部分はブロックベースで書いてあるので、本文テキストの抽出が面倒である
+NotionはSaaSであり、テキストが完全に向こう側に保持されるので、API経由でテキストデータをダウンロードする必要がある
+つまりNotionは感情分析するのに向いていない。
+なので、去年（2024年）の8月から日記を書くツールをObsidianに切り替えた。
+obsidian.md
+Obsidianのファイル形式はマークダウン形式のテキストファイルなので、抽出が簡単である
+ファイルもローカルに保存されるので、気軽にテキスト解析ができる
+感情分析をやっていく。本当は2024年のうちにやっておきたかった。
+やってみる
+全体的な方針としては以下の通り
+PythonでObsidianの保存ディレクトリにアクセスし、テキストデータを構造化しながら抽出し、感情分析する
+Streamlitで分析する
+昔はJupyter Notebookで分析するだけだったが、今回はStreamlitでインタラクティブに遊んでみることにした。
+期間はObsidianを使い始めた2024年9月から12月までとする。
+Obsidia…]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.1.19]]></title>
         <id>https://gamegaz.com/?p=42850</id>
