@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-01T17:01:52.330Z</updated>
+    <updated>2025-02-01T18:01:45.437Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[無印の黒文字の香りのルームフレグランスを買った]]></title>
+        <id>hatenablog://entry/6802418398325165524</id>
+        <link href="https://blog.3qe.us/entry/2025/02/02/024328"/>
+        <updated>2025-02-01T17:43:28.000Z</updated>
+        <summary type="html"><![CDATA[自分はどういうわけか自分が買ったものがすぐ廃盤になる呪い*1を受けていて、先日購入した無印のルームフレグランス「クリア」が既に廃盤になっていた。店頭にいたのはその生き残りだったことになる。
+しょうがないので近所で見繕っていたのだが、良い香りにも色々あって、有名ブランドの「良い香り」はとにかく絵画のようにコンセプトが先行していて、これが俺が考えた良い香りだ！！！良い香りだろう！！！ムンムン！！！これでお前もこの世界観の一員だ！！！みたいな感じになりがちで、美術館とか家具屋さんとか車屋さんとかだったら良いかもしれないけど、ウチ、ワンルームのしがない独身会社員男性の家なんで・・・みたいな気持ちになる。コルビュジェが建てた家ではないし、カッシーナの家具もない。一言で表すなら、ただ寝、食べ、仕事をする場所において主張が強すぎ、臭すぎるのだ。
+ディプティックのルームフレグランスはモノによるが抑えめの香りもある。しかし高い。そしてやはり主張が前に出る。イソップがリードディフューザーのフレグランスを出せばいいのに、と思う。
+で結局無印に戻ってきて、色々探したところ「クロモジ」に落ち着いた。楠のような木質系の香りに、どこか酸味のような上着をまとった香り。同様の系統に「ウッディ」があるが、あれはシダーなのでまさに杉系統の香りで、クロモジのような渋い酸味がしたたる感じはない。クロモジは「なんか柑橘っぽさ(柑橘ではない)」とウッディさのバランスがちょうど取れている。気にいったのでこれはかなり長いこと使いたい。
+www.muji.com
+さっき知ったのだが、これは季節限定らしい。またか。
+他に探すとしたら、北欧系のやつがいいと思う。ヘトキネンとかが良いのではないか。
+*1:使っていたルラボのアイリスの香水も廃盤になった]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[第7回謎晒しイベント「VOCALOID」結果発表]]></title>
         <id>https://note.com/anzato/n/nbc89eb8e01a2</id>
@@ -12404,25 +12421,6 @@ www.nicovideo.jp
 じゃ！]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[『JavaScriptプログラマーのためのTypeScript厳選ガイド』を執筆しました]]></title>
-        <id>hatenablog://entry/6802418398301366539</id>
-        <link href="https://gfx.hatenablog.com/entry/2024/11/04/145752"/>
-        <updated>2024-11-04T05:57:52.000Z</updated>
-        <summary type="html"><![CDATA[JavaScriptプログラマーのためのTypeScript厳選ガイド という本を書きました。JavaScript中級者でTypeScript初心者のプログラマーに向けたTypeScriptの入門書です。
-
-これまで何度かTypeScriptの記事を書いてきました。
-TypeScript再入門 ― 「がんばらないTypeScript」で、JavaScriptを“柔らかい”静的型付き言語に｜ハイクラス転職・求人情報サイト AMBI（アンビ）
-「がんばらないTypeScript」のための現実的な設定を考える ─ 4レベルの厳しさを使い分けてTypeScript疲れを克服しよう！｜ハイクラス転職・求人情報サイト AMBI（アンビ）
-今回の本は、既存のJavaScriptプロジェクトをTypeScriptに移植するという場面を想定した「がんばらないTypeScript」路線ではなく、TypeScriptというプログラミング言語を一から学ぶという想定で書いた本です。
-TypeScript初心者向けではありますが、書いてる際にいろいろ調べた結果、執筆開始時の私も知らなかった情報をふんだんに載せているので、「なんとなくTypeScriptを使っている」という人でも楽しめるような本にしたつもりです。
-ともあれ執筆を頑張りました！！いやほんとに、子供を二人育てながら（一人は執筆中に生まれました！）一冊書き上げるのは本当に大変でした。執筆するといっても、なにも子育てが一番忙しい時期にやらなくてもよかったなあという思いは正直あります。いい経験にはなりましたが。
-ところで、本書はTypeScriptインタプリタ（コンパイル後即時実行する処理系）として tsimp (TypeScript IMPort) というツールを使っています。これはダウンロード数はそれほど多くないのですが、ES Modulesに対応していて実行前に型チェックを行う処理系としては現時点で唯一無二なツールです。
-これについて、本書内では詳しく説明していないのですが、TypeScript 5.6とtsimp 2.0.11以前のバージョンの組み合わせが動作しないという問題がありました。そのため、本書では一貫してTypeScriptのバージョン5.5を指定しています。ただ、最近問題が修正されたtsimp 2.0.12がリリースされたため、本書のすべてのプログラムはTypeScript 5.6でも問題なく動作するようになっています。正誤表に乗せるものでもないのですが、この場を借りて周知させていただきます。]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
         </author>
     </entry>
     <entry>
