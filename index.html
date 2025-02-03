@@ -78,6 +78,63 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Scalaで空文字列をNoneにしたいときはfilterすると良い</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/02/03/232029" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんな文字列があるとする:
+val s1 &#x3D; &quot;foo&quot;
+val s2 &#x3D; &quot;&quot;
+
+
+
+これを、以下のような感じにしたいことはまあまあある:
+val s1a &#x3D; Some(&quot;foo&quot;)
+val s2a &#x3D; None
+
+
+
+つまり、以下のようなルールだ:
+文字列sが空の場合、None。
+それ以外の場合は、Some(s)。
+素朴にmatchを使うこともできる:
+s1 match
+case &quot;&quot; &#x3D;&gt; None
+case s &#x3D;&gt; Some(s)
+
+
+
+しかしOptionにはfilterとfilterNotがあるので、先にOptionにしてからfilterすると素直に書ける:
+Some(s1).filter(_.nonEmpty)
+// equivalent
+Some(s1).filterNot(_.isEmpty)
+
+
+
+Catsを使っている場合は、.someを使える:
+import cats.syntax.all.{*, given}
+s1.some.filter(_.nonEmpty)
+
+
+
+あわせて読みたい
+逆のパターンはCatsで素直に書くパターンがある。
+blog.3qe.us</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398325722824/1738592429" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/elminus" target="_blank"
               rel="noopener">エルミナス</a></h3>
           <section class="articles-per-source">
@@ -19456,7 +19513,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-03T14:01:44.010Z">2025-02-03T14:01:44.010Z</time>
+    <time id="build-timestamp" datetime="2025-02-03T15:01:52.699Z">2025-02-03T15:01:52.699Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

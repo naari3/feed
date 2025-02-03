@@ -2,10 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-03T14:01:44.052Z</updated>
+    <updated>2025-02-03T15:01:52.738Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Scalaで空文字列をNoneにしたいときはfilterすると良い]]></title>
+        <id>hatenablog://entry/6802418398325722824</id>
+        <link href="https://blog.3qe.us/entry/2025/02/03/232029"/>
+        <updated>2025-02-03T14:20:29.000Z</updated>
+        <summary type="html"><![CDATA[こんな文字列があるとする:
+val s1 = "foo"
+val s2 = ""
+
+
+
+これを、以下のような感じにしたいことはまあまあある:
+val s1a = Some("foo")
+val s2a = None
+
+
+
+つまり、以下のようなルールだ:
+文字列sが空の場合、None。
+それ以外の場合は、Some(s)。
+素朴にmatchを使うこともできる:
+s1 match
+case "" => None
+case s => Some(s)
+
+
+
+しかしOptionにはfilterとfilterNotがあるので、先にOptionにしてからfilterすると素直に書ける:
+Some(s1).filter(_.nonEmpty)
+// equivalent
+Some(s1).filterNot(_.isEmpty)
+
+
+
+Catsを使っている場合は、.someを使える:
+import cats.syntax.all.{*, given}
+s1.some.filter(_.nonEmpty)
+
+
+
+あわせて読みたい
+逆のパターンはCatsで素直に書くパターンがある。
+blog.3qe.us]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【告知】第3回ボカコレ×音MAD投稿祭　開催のお知らせ]]></title>
         <id>https://note.com/elminus/n/n46b7b45a0248</id>
