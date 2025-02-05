@@ -78,6 +78,84 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Dry-runを実現する定番テク知りたい</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/02/05/235342" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ソフトウェア開発の現場では、スクリプトを発射してシステムになんらかの変更を加える、ということがよくある。DBに変更を加えたり、なんかを削除したりといった具合。専用の管理画面をわざわざ実装するまでもない、というときに使われがち。
+Dry-run
+スクリプトによっては破壊的なことをする(i.e. 元に戻すのが不可能/たいへん)ので、勢い良くいきなり発射するのではなく、どういう感じの実行結果になるのかを試走させてから実際に動かしたい。
+どうするかというと、破壊的な箇所では、一定の条件でスキップしたりやったフリをするような処理に置換したりする。
+一般にこういうテクニックはDry-runと呼ばれているはず。元々の意味は予行演習という意味らしい。
+Dry-runどうやって実現する
+Dry-runはあくまで技法であり、ネイティブにこれをサポートする機構はないので、実現する方法はいろいろある。よくあるのは以下のようなもの:
+環境変数で仕込むよ派
+DRY_RUNが設定されていたらDry-runに切り替わるように実装する
+逆に、NO_DRY_RUNが設定されていたらDry-runが解除され、普段は常にDry-runになるように実装する
+言語によっては&quot;0&quot;はtruthy valueなので、DRY_RUN&#x3D;0と書いた状態でif(ENV[&#x27;DRY_RUN&#x27;]) みたいに書くと破滅を招くことがある。なので筆者はNO_DRY_RUNが「&#x27;1&#x27;であるなら、かつそのときに限り」安全装置が解除される、という実装にするのが良いと思っている。
+メリット
+環境変数が使える言語では簡単に実装できる
+環境変数が使えない実用言語は事実上存在しない
+環境変数はパース不要
+デメリット
+環境変数に型はない
+環境変数は参照透過ではないので特別な扱いが必要になることもある
+うっかりexportしていると思わぬ事故が発生する
+
+
+参照不透明な弊害
+ヒストリ補完を使って誤爆するオペミスが起こる
+オプションを渡すよ派
+makeには-nが、gitには--dry-runというそのものずばりなオプションが用意されている。同様のオプションをスクリプトが受けるようにするという作戦。
+-nとか--dry-runが設定されていたらDry-runが起動するようにする
+逆に、--no-dry-runとか--hotが設定されていたら安全装置が解除されるようにする
+メリット
+かっこいい(個人の感想)
+オプションを既に取るようなスクリプトの場合、位置の自由度が得られることもある
+デメリット
+パース処理は自前で書く必要がある
+
+
+パースライブラリを使わずに手作りした場合、そこの実装をミスって自爆することがある
+一般に、コマンドラインパースをすると実際にやりたい事に対して準備が増えるのでダルい
+ヒストリ補完を使って誤爆するオペミスが起こる
+Yes/Noをプロンプトするよ派
+スクリプトを呼び出す時点ではDry-runに関する情報を何も受け取らず、インタラクティブに入力してもらう作戦。
+yesと入力させたり、破壊対象のIDを手で入力させる、という実装もできる。
+メリット
+ヒストリ補完を使って誤爆するオペミスが起こらない
+安全に倒れるように実装すればEnter連打して誤爆することがない
+派手な画面を出して注意喚起できる
+再確認できる
+デメリット
+プロンプトまわりの実装が必要になる
+
+
+言語によってこのへんのライブラリサポートはまちまち
+毎回入力しないといけないので分量が多い場合には「裏道」を誘発して事故が起こる
+Dry-runどうやって実現する(内部)
+ではいざDry-runが有効化されて安全装置が入ったときにどうするか、という話題もある。
+処理を単純にスキップする
+ログを吐いて、スキップした旨を報告する
+処理自体は成功したことにする
+まぁこのへんはあまり難しさがないと思う。最終的に破壊をしなければ良いので。
+知見知りたい
+今のところ自分がよくやるのはNO_DRY_RUN作戦だけれど、より注意が必要な場合はプロンプト作戦にするかもしれない。自分のところではこうやっていますとか、この作戦には穴があるとか、ツッコミやご提案を募集しています。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398326300772/1738767222" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/euro3" target="_blank"
               rel="noopener">ユーロ/犬の鳴き真似bot</a></h3>
           <section class="articles-per-source">
@@ -17479,79 +17557,6 @@ GameGaz Daily 2024.11.9 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://crabgot.hatenablog.com/" target="_blank"
-              rel="noopener">なんて巨大なカニゴット</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">【2024年11月-1】魚</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://crabgot.hatenablog.com/entry/2024/11/08/110425" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>・ジャンプ合作
-先週全然語れなかった！
-www.nicovideo.jp
-www.nicovideo.jp
-www.nicovideo.jp
-予告、合作、メドレー、全てに関わっております。ありがたいですねぇ……
-・予告 … 音声 , 映像
-・合作 … バクマン。パートのコンポジット
-・メドレー … 小物の切り抜きと配置
-などです。
-バクマン。で関われたことが光栄だし、めちゃくちゃ美味しいポジションやらせてもらったな～と思ってます。粋なパートですよね。
-合作もメドレーも最高の仕上がりとなっております。ぜひ最初から最後まで通しで見てください！スタージュンも認めた
- 
-・世界樹2やってる
-世界樹3も進行中なのに！？
-思ってた数倍渋いんだけどクラシックな世界樹やってんな～という感じはある。
-ソードマン / ドクトルマグス
-カースメーカー / メディック / ガンナー
-でやってるけどなかなかいい。シンプル物理で殴るのも強いし属性攻撃もできるしデバフ状態異常も揃ってる。なんだかんだ全部ないとモヤモヤするんだよね～バランス良く構成できたか？
-ちなみに盾役はシリーズ通して一度も採用したことない　殴りてえから
-戦闘スキルはいいとして採取系のスキルが全然足りとらん！それ用の冒険者作ったほうが早いかもしれん……ファーマーって偉大だなあ
-ステータスブースト系のスキルはいいね　雑にさっさとMAXまで振っちゃえばいい
-現状前列が殴ったら勝手に敵が倒れていくのでサクサクしてる
-これ年内にクリアできるかなあ
- 
-・音ワンドロ
-更新です～ pic.twitter.com/Veo9HHSoXK
-2024年11月3日
-
-
-エロお題すぎる
- 
-・vlog停止
-惰性でもあったけど約2ヶ月ほどカメラに向かって喋るってのをやってた。楽しかったから不定期になるだろうけど一旦停止。
-ホラーワールドに行ったときの記録が残ってるのでここにも貼っておきます。
-例によって、こまりの音声に関しては如何なる使用も許可しています。
-
- 
-・拙者乳首描き太郎と申す
-義によって助太刀致す
- 
-・乳首描き太郎！？
-麺の専門家　乃士勇造。
-うっす、よろしく。
- 
-・真田
-擦ってた時期あったよな～？と思い探った所、ちょうど2年前に擦ってた
-crabgot.hatenablog.com
-crabgot.hatenablog.com
-まるで成長していない…
- 
-そんな感じかな
- 
-じゃ！</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/30f247e4b25fa679dece0f5f10a792658e5d6bd3/backend&#x3D;imagemagick;height&#x3D;1300;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20241108%2F20241108105650.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19482,7 +19487,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-05T14:01:51.640Z">2025-02-05T14:01:51.640Z</time>
+    <time id="build-timestamp" datetime="2025-02-05T15:01:39.625Z">2025-02-05T15:01:39.625Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
