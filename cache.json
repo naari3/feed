@@ -1046,21 +1046,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/548d8e19b1456f8400c815a54d1623265832f94b/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20241114%2F20241114165452.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398303061041",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。11月3日（日）から11月9日（土）〔2024年11月第2週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    方針に納得できない時のお作法 - Konifar's ZATSU\n by id:konifar \n    \n2\n    あたらしい家中華にハマっている - 941::blog\n by id:kushii \n    \n3\n    子供が小学校に行き渋った時におこなったこと - $shibayu36->blog;\n by id:shiba_yu36 \n    \n4\n    自分のプロジェクトが炎上しない理由について整理する - HIRAエンジニアブログ\n by id:kenzy0727 \n    \n5\n    積読を消化する技術 - sasasin’s blog\n by id:sasasin_net \n    \n6\n    パートさんと現場で働いたら「年収の壁」より厄介な「圧力」の存在に気づいた。 - Everything you've ever Dreamed\n by id:Delete_All \n    \n7\n    はてなブログで長文語りをしていたオタクたちは一体どこへ行ったのか - それは恋とか愛とかの類ではなくて\n by id:moarh \n    \n8\n    なぜ幻覚剤がうつ病に効果があると言われているのか？──『幻覚剤と精神医学の最前線』 - 基本読書\n by id:huyukiitoichi \n    \n9\n    S3にあるALBログの調査はAthenaよりDuckDBのほうが簡単 - road288の日記\n by id:road288 \n    \n10\n    小説家になろうで男性向けが消えたのは2020年からであって、3年前にはすでに事象が起きた後。 - な…",
-          "link": "https://blog.hatenablog.com/entry/2024/11/11/120000",
-          "publishedOn": "2024-11-11T03:00:00.000Z",
-          "wordCount": 997,
-          "title": "今週のはてなブログランキング〔2024年11月第2週〕",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/dd094a9e58f991713f3906f86c8b5dca4238f72e/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20241111%2F20241111091455.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/dd094a9e58f991713f3906f86c8b5dca4238f72e/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20241111%2F20241111091455.jpg"
         }
       ]
     },
@@ -3996,21 +3981,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398301565839/1731384840"
-        },
-        {
-          "id": "hatenablog://entry/6802418398302391771",
-          "author": null,
-          "description": "こんにちは。レシピ事業部でAndroidアプリ開発をしているこやまカニ大好きです。\n行基と近松門左衛門、最近気になるカードは松尾芭蕉です。\nこのブログの日本とグローバルのクックパッドを統合しましたという記事で、日本とグローバルのクックパッドサービスの統合が行われたこと、プロジェクトの名称が One Experience であったことについて説明がありました。\n概要\n前提として、クックパッドでは以前から JPアプリと Globalアプリという2つのアプリがリリースされていました。\nひとつのリポジトリから複数のアプリを配信するというのは Kindle ストア版アプリの配信やAndroidTVアプリの配信などでよくある構成ですが、それによって別のアプリを完全に上書きするというのはかなり珍しいと思います。\nこの記事では、アプリを別のコードベースで上書きする際にどういった考慮が必要だったかを大まかに説明していこうと思います。\nモバイルアプリ固有の特性\n詳しい作業内容に入る前に、モバイルアプリのリリースに関する特性について説明したいと思います。\nロールバックが難しい(実質できない)\nモバイルアプリは、常に以前のものよりも大きい version code を持つアプリでしか上書きできません。\nさらに、JP版へのロールバックを行った場合、JP版 -> One Experience版 とアップデートしたユーザーだけでなく、 One Experience版を新規にインストールしたユーザーもJP版で上書きされてしまいます。\n One Experience版 へのアップデート時に認証情報や一部のローカルデータをマイグレーションすることは決めていましたが、逆方向のアップデートやJP版 -> One Experience版 を2回繰り返した場合のサポートはあまりにも大変すぎるため、リリースに関する制約…",
-          "link": "https://techlife.cookpad.com/entry/mobile_one_experience",
-          "publishedOn": "2024-11-11T02:11:11.000Z",
-          "wordCount": 1160,
-          "title": "モバイルアプリの One Experience",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398302391771/1731291433",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398302391771/1731291433"
         }
       ]
     },
