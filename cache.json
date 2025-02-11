@@ -3438,23 +3438,7 @@
       "title": "覚書",
       "feedUrl": "https://satoru-takeuchi.hatenablog.com/rss",
       "siteUrl": "https://satoru-takeuchi.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802418398303715201",
-          "author": null,
-          "description": "「[作って学ぶ] ブラウザのしくみ」という本を技術評論社から恵贈いただいたのでレビューを書きました。なお、作って学ぶ本なのに、わたしはまだコードを読んだだけで書き写してはいません。そういう人が書いた感想だということはご承知おきください。\n\n［作って学ぶ］ブラウザのしくみ──HTTP、HTML、CSS、JavaScriptの裏側 WEB+DB PRESS plus\n\n作者:土井 麻未\n技術評論社\nAmazon\n\n本書はWebブラウザのしくみを、自分で作ることによって理解しようという意欲作です。眼にした瞬間に「デカ！」と思った程度には大きく、400ページ以上あります。しかし、読後感は「たったこれだけのページ数に、よくぞこれだけの内容を詰め込んだものだ」でした。わたしはWebブラウザを作ったことがないし、関連技術に明るくもないこともあって、大変ためになりました。\n昨今のWebブラウザは非常に多機能かつ複雑で、ソフトウェア技術の総合芸術のようになっています。作るのには膨大な知識が必要ですし、コード量も尋常ではなく多いです(著者いわく、Chromeは2024年7月現在3000万行を超える)。本書はこのようなWebブラウザのうち、ごく一部のエッセンスとなる機能のみを扱っています。それら機能を作るにあたって必要な技術、仕様の説明もしてくれていて、至れり尽くせりなところがとてもよかったです。何かを作る系の本で、「こういう機能はこう書く」というだけではなく「どういう理由でなぜこのようなことを書かなければいけないのか」を説明してくれているものはなかなか無いのです。\n前の段落で書いた「エッセンスとなる機能」とは、表紙にも書いているHTTP、HTML、CSS、Javascriptのサブセットです。タイトルだけ見た時は「HTMLのタグを何個か解釈して、それを画面上にレンダリングするところまで書く本な…",
-          "link": "https://satoru-takeuchi.hatenablog.com/entry/2024/11/13/203913",
-          "publishedOn": "2024-11-13T11:39:13.000Z",
-          "wordCount": null,
-          "title": "「[作って学ぶ] ブラウザのしくみ」を読んだ",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/0f01b79209bc88a0e73a475a9bbe1a2356b4311a/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41AZLrZN7KL._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0f01b79209bc88a0e73a475a9bbe1a2356b4311a/backend=imagemagick;height=1300;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41AZLrZN7KL._SL500_.jpg"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "SCOPES",
@@ -8177,6 +8161,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=42970",
+          "author": "mamosuke",
+          "description": "Marvel Rivalsにexploit,PS5.10.40.WebKit,PlayStation 5 Remote JAR Loader(ps5-jar-loader) v4.0.1,1stloader,ARK-4 Rev 161,libwiipy v0.6.0,shadPS4 Pre-release-shadPS4-2025-02-10-b51c767,RPCN 1.4.0,PCSX2 v2.3.149,Ryujinx Canary-1.2.365,chiaki-ng weekly-canary-release-46024c52430d5a50e3679188fbbe7b8488b19aad→→→この記事の続きを読む\nGameGaz Daily 2025.2.11 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025021142970/",
+          "publishedOn": "2025-02-10T23:38:36.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.2.11",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=42963",
           "author": "mamosuke",
