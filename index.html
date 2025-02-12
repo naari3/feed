@@ -17262,111 +17262,6 @@ Twitterでも話ましたが、こういうのは性欲の発散というより�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://atarabi.hateblo.jp/" target="_blank"
-              rel="noopener">Atarabi-Blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">After Effectsのスクリプトの可能性を広げる。 その５</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://atarabi.hateblo.jp/entry/2024/11/14/222136" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>github.com
-github.com
-ちょっとした修正といくつかのスクリプトの追加と更新。
-修正
-エフェクトマスクのパラメータのバグ
-エフェクトマスク周りのパラメータの扱いに難があったのを修正した。エフェクト麾下のパラメータは、0番目のパラメータがそのエフェクトに対する入力を扱うパラメータとして予約されているので、他のパラメータと扱いが少し異なる。そこらへんの処理が少々雑だった。
-UI.showContextMenu()のバグ(Windows下)
-
-上のようなコンテクストメニューを表示させるAPIで、変数のライフタイムの管理が雑な箇所があったので修正。
-Fuzzy Searchのバグ
-計算コスト低減のためにキャッシュ機能を実装しているが、そこにバグがあったので修正。
-スクリプト
-@script_panel
- 
-使用頻度の小さいScriptUI系のスクリプトをScriptUI Panelsフォルダに入れるのが煩わしい時に、あるフォルダに入れておいて、ドロップダウンリストから呼び出せるようにする。挙動（特にUI周りの）は当然、対象のスクリプト次第。
-@proxy_maker
-www.youtube.com
-重いコンポをプリレンダしてプロキシに設定するというのはままあるが、それをレイヤー単位でしたかったので作成。
-@effect_launcher
-ある文字列を入力すれば、即座にエフェクトが適用されるショートカット機能を追加した。スクリプト、プリセットもショートカットの対象に出来る。
-@effect_search
-スクリプト、プリセットも検索の対象に含められるようにした。検索窓に\\を入力すれば設定画面に入れる。
-ドキュメント
-APIばかりの説明で、スクリプトの説明がなかったので、簡易的だが説明を追加した。
-Fuzzy Searchとdebounce
-@effect_launcherや@effect_searchなどでは、キー入力ごとにFuzzy Searchを発火させると、処理が追いつかず固まるので、debouneで処理を間引いているが、debounce timeはちょっと安全側に寄せて200msに設定していた。しかしこの設定だと特にショートカット機能を用いた際の遅延が気になったので、100msに変更した。また、使用者が自分で変更出来るように、変数に切り出してスクリプトの上の方に置いた。</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/a28d25adb7c99a15898018fe0565f621e4a6ff1d/backend&#x3D;imagemagick;height&#x3D;1300;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkareobana%2F20241114%2F20241114173012.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://hardshopper.hatenablog.com/" target="_blank"
-              rel="noopener">僕とネットショッピング</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">まだ払い戻しはしちゃダメ！LINE Pay終了で残高を銀行振込したら手数料が無限にかかった件〜PayPay移行は無料でできる？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://hardshopper.hatenablog.com/entry/linepayending" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>どうも、日本で使える電子マネーは一通り使えるようにしておきたい僕です。
- 
-多分ここにたどり着いた皆さんは、LINE Payを使っていて、LINE Payがサービス終了することになり、残高の払い戻しを考えてるのではないでしょうか？
- 
-でも、ちょっと待ってください！
- 
-僕は先日、LINE Pay残高を払い戻しをした結果、ひどい体験をしました。
- 
-いや、体験したというか…
-まったく理解を超えた出来事でした。
- 
-ありのまま、僕に起こった事を話します。
- 
-「LINE Payの残高を銀行口座に振り込んだら、いつのまにかLINE Payの残高になっていた」
- 
-何を言っているか分からないかもしれないですが、僕も何が起こったのか分かりませんでした。
- 
-
- 
-本日は、そんな恐ろしい話の片鱗を聞いてください。
- 
- 
-オートチャージに注意！LINE Payの残高払い戻しは PayPay移行を待つべき
- 
-さて、皆様は「LINE Payサービス終了に関するお知らせ」はもう読みましたか？
-
-
- 
-ずいぶんとエモい内容になっており、担当者のサービスへの未練が伝わってくるようです。
- 
-サービス終了に伴い、利用者はどうしたら良いのか読み進めると、2025年の4月末までに銀行振込か銀行出金をするように、と読める内容が書かれていました。
-
- 
-ちなみに終了スケジュールを見ると、4月下旬には銀行振込や出金サービスを停止するかのような内容が書かれています。
-
- 
-まだ時間があると思ってるとうっかり忘れてしまい、気がついたら払い戻しができなくなるのでは？という不安がよぎります。
- 
-まぁ消費者は資金決済法が守ってくれるので、サービス終了したからといってお金が返ってこなくなるわけではないでしょうが、しかしこう期限を切られて書かれると早めに払い戻しをしたくなりますよね。
- 
-そこで僕は指示通り、LIN…</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/9b42e9cf7cabb81215502b0778d8814543bebe87/backend&#x3D;imagemagick;height&#x3D;1300;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhardshopper%2F20241113%2F20241113010235.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19297,7 +19192,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-12T00:03:29.837Z">2025-02-12T00:03:29.837Z</time>
+    <time id="build-timestamp" datetime="2025-02-12T01:28:36.781Z">2025-02-12T01:28:36.781Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
