@@ -74,6 +74,71 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-02-12">2025-02-12</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
+              rel="noopener">ちなみに</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Docker Desktop から colima に移行した</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2025/02/12/141804?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+Docker Desktop を使い続けてきたけど、別にGUI要らんなとなっていたので colima に移行しました。
+まずは Docker Desktop をアンインストールする。停止したあとバイナリを削除して、~/.docker をまるごと消しました。
+最初、./docker を消してなかったので cli-plugins なんかがそのままになっていて plugin の実態がないみたいな怒られ方してうまく動いてなかった。
+$ brew install colima
+
+
+
+HomeBrew でサクッと入る。
+$ colima start
+
+
+
+で起動するとあっさりと動いてしまって簡単だった。
+クライアントが必要なのでそれも入れておく
+$ brew install docker docker-compose
+
+
+
+docker-compose は以下のように言われるのでこれもやっておく。これで docker -compose じゃなくて docker compose で呼び出せる。
+&#x3D;&#x3D;&gt; Caveats
+Compose is a Docker plugin. For Docker to find the plugin, add &quot;cliPluginsExtraDirs&quot; to ~/.docker/config.json:
+  &quot;cliPluginsExtraDirs&quot;: [
+      &quot;/opt/homebrew/lib/docker/cli-plugins&quot;
+  ]
+デフォルトでは 2GB のメモリが割り当てられているが、現代のアプリーションは大食いなので 8GB くらい当てておく。
+$ colima start --edit
+
+
+
+起動時に --edit オプションを付ける適切なエディタを開いてくれて設定することができる。
+ただし、ここで開くファイル、XDG Base Directory を無視している気がしている。
+$XDG_CONFIG_HOME/colima/default/colima.yaml 辺りを触る方がいい気がしました。(あとで調べたい)
+colima status してなんか動いてそうだったらOK
+$ colima status
+% colima status
+INFO[0000] colima is running using macOS Virtualization.Framework
+INFO[0000] arch: aarch64
+INFO[0000] runtime: docker
+INFO[0000] mountType: sshfs
+INFO[0000] socket: unix://$XDG_CONFIG_HOME/colima/default/docker.sock</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398328090053/1739337484" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-02-11">2025-02-11</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19192,7 +19257,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-12T05:01:52.963Z">2025-02-12T05:01:52.963Z</time>
+    <time id="build-timestamp" datetime="2025-02-12T06:02:33.225Z">2025-02-12T06:02:33.225Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
