@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-13T04:01:39.723Z</updated>
+    <updated>2025-02-13T05:01:45.256Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12112,41 +12112,6 @@ GameGaz Daily 2024.11.17 first appeared on 大人のためのゲーム講座.]]>
 GameGaz Daily 2024.11.16 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ScalaでスナップショットテストをするならSnapshot4sが良さそう]]></title>
-        <id>hatenablog://entry/6802418398304288975</id>
-        <link href="https://blog.3qe.us/entry/2024/11/16/014122"/>
-        <updated>2024-11-15T16:41:22.000Z</updated>
-        <summary type="html"><![CDATA[最近仕事でスナップショットテストを実施した。一定の仕様でデータを文字列で吐き出す機能があり、その出力が入力に対して安定しているかどうかを保証しておきたいのだ。その時はvitestに搭載されている機能を利用した。
-vitest.dev
-ざっくり言うと、スナップショットテストとは、テストしたい結果をファイルなどの永続ストレージに保存しておき、テストごとにそれを読み取ってテスト対象と照らし合わせ、変化していないことをを確かめるものだ。
-azukiazusa.dev
-www.mizdra.net
-特にWeb関連の開発シーンでは、出力が安定していてほしいといったシチュエーションでスナップショットテストがよく使われる。
-今回紹介するSnapshot4sは、Scala向けのスナップショットテストを行うためのライブラリ/sbtプラグインだ。3つのテストフレームワークに対応しており、ゼロコンフィグで動作する。
-加えてScalaの2.12から3までのバージョンで動作し、Scala.jsにも対応している。
-また、たいした分量ではないがサンプルコードをGitHubで公開しておく。
-github.com
-今回の面白ポイント
-インラインスナップショット機能があり、Scalaのソースコードをパースして直接書き換える
-今回の面白ポイント
-snapshot4s
-sbtプラグイン
-バインディング
-スナップショットテストを書く
-文字列でスナップショットテスト
-インラインスナップショットテスト
-ファイルスナップショットテスト
-応用: JSONでスナップショットテスト
-応用: scodecでスナップショットテスト
-まとめ
-snapshot4s
-Snapshot4sは2つのパーツから構成されている。sbtプラグインとテストフレームワーク用バインディングだ。使用するにはこの両方をプロジェクトに導入する必要がある。
-sb…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
