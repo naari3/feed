@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-14T04:02:01.177Z</updated>
+    <updated>2025-02-14T05:02:04.911Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[データリモデリングを検討する局面でどう考えるか]]></title>
+        <id>hatenablog://entry/6802418398328627698</id>
+        <link href="https://blog.3qe.us/entry/2025/02/14/131521"/>
+        <updated>2025-02-14T04:15:21.000Z</updated>
+        <summary type="html"><![CDATA[今やっているプロジェクトで、とあるデータの持ち方が今のままで良いか考えて検討する、というタスクがあって、例えば将来の要件追加とかを想定して重厚にリモデリングしておくのか、それとも現状のモデルで耐えられる+将来的な変更は多少のパッチでなんとかする、ということを考える仕事をしていた。
+当然ながら、将来を完全に見通すことはできないので、将来的にはこのくらいが最も尤度が高そう、とか、現状困ってないし、データ量が100倍になってもまぁ今のままで大丈夫だろう、みたいなことを考えるのだけれど、いまいち決め手がなくて、なかなかうまくいかなかった。
+一番の要因は、とりあえず今のままでも全く問題なく動いているということで、「何もしない」という非常に誘引力の強い選択肢が常にあったこと。「何もしない」場合は将来におけるなんらかのリスクを背負うことになるのだが、将来のことなので山勘になってしまって、鋭い経験眼でなんとかする、みたいな再現性のない感じになってしまう。
+また、当たり前だが、データはソフトウェアなんかよりもはるかに長生きするので、「なんとなく良さそう」くらいで行くと後々無限の苦しみを味わうことになる。その行為のリスクの大きさ、後戻りのできなさも障壁になった。
+こういうタスクはより上層の、仕様や要求を決定できる人を尋ねていって、いろいろこちらから揺さぶりをかけて、検討材料を増やすと良さそう。そうすると、「将来起こりうること」がある程度わかるようになるので(あくまである程度だ)、もう少し判断しやすくなる。
+気付かぬうちに仕様の是非についてエンジニア間で意見が対立していたりするので、実はより上の人間に訊けば「いや、別にそれは要らない」となって一瞬で議論終わり、なんてこともある。「それ俺が判断できるやつなの？どこまで判断できるの？」という問いを適切なタイミングで発せられると良さそう。たらればが文中に出てきたら、そこに穴が空いているので、権限を持った人間に埋めてもらう。それぞれの作戦を取ったときのコストをより明らかにする。
+こういう「検討する」系タスクはまさに知的生産みたいなやつで、まず問題提起して立式し、どういう選択肢があるかを用意し、最終的に着地点を用意して、チームの認識と意志をどこか一点に集中させる、半分技術で半分は調整(と政治)、みたいな総合格闘技であって、『イシューからはじめよ』とかまた読んだら良いのかな〜〜〜みたいなことを考えた。
+問題点を洗って整理する
+どこが論点なのか整理する
+案を出す(むずい。ぜんぜん思い付かないこともある)
+案のコストや複雑さなどを検討する
+意思決定する]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.2.14]]></title>
         <id>https://gamegaz.com/?p=43007</id>
@@ -12247,17 +12268,6 @@ GameGaz Daily 2024.11.18 first appeared on 大人のためのゲーム講座.]]>
         <updated>2024-11-17T00:30:54.000Z</updated>
         <summary type="html"><![CDATA[Apollo PS4(Apollo Save Tool) v1.7.0,pacbrew-repo v0.14,NX Activity Log v1.5.2,WiiPy v1.4.0,PSXE 0.10.4-alpha,shadPS4 Pre-release-shadPS4-2024-11-16-e1fecda,PCSX2 v2.3.18,Azahar,NESTang v0.12,SNESTang v0.9→→→この記事の続きを読む
 GameGaz Daily 2024.11.17 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【噂】Nintendo Switch2 携帯モード用にパフォーマンスを選ぶメニューがあるらしい]]></title>
-        <id>https://gamegaz.com/?p=42414</id>
-        <link href="https://gamegaz.com/2024111742414/"/>
-        <updated>2024-11-16T16:36:05.000Z</updated>
-        <summary type="html"><![CDATA[Nintendo Switch 2のOSメニューは携帯モード専用にパフォーマンス切り替え機能があるようです。→→→この記事の続きを読む
-【噂】Nintendo Switch2 携帯モード用にパフォーマンスを選ぶメニューがあるらしい first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
         </author>
