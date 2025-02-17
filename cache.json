@@ -3969,21 +3969,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398310554437/1733883120"
-        },
-        {
-          "id": "hatenablog://entry/6802418398304973388",
-          "author": null,
-          "description": "はじめに\nこんにちは。レシピ事業部で長期インターン中の松本 (@matsumo0922) です。先日このブログでも公開した通り、クックパッドでは日本とグローバルで体験を統一する One Experience というプロジェクトを行っています。\n\nOne Experience 以前では Android 開発においても日本とグローバルでコードベースが異なり、それぞれ使用している技術やライブラリが異なる状態でした。特にグローバルのコードベース (以下 global-android と呼びます) では AGP のバージョンも低く、加えて groovy + buildSrc と言った旧世代のビルドロジックを用いていたため、プロジェクトの進行に支障がある状態でした。本記事では、これらの問題を踏まえ One Experience をより円滑に進めるために施したビルドロジックの改善についてお話しします。\nTL;DR\nglobal-android では旧世代のビルドロジックを使っていたため One Experience 用の機能開発に支障がある状態だった\nライブラリ管理を VersionCatalog へ、スクリプトを Kotlin DSL へ移行すると共に、Gradle Composite Build + Convention Plugins を用いてビルドロジックの共通化を行った\n最終的に、各モジュールの build.gradle.kts は非常に簡潔になり、大抵のビルドロジックが共通化され、開発をより効率的に進められるようになった\n問題点\nglobal-android の Gradle ビルドには以下のような問題点がありました。\ndependencies.gradle を用いた手動のライブラリ & バージョン管理\ngroovy で書かれたビルドロジック\n大量にモジュールがあるにも関わら…",
-          "link": "https://techlife.cookpad.com/entry/2024/11/20/130000",
-          "publishedOn": "2024-11-20T04:00:00.000Z",
-          "wordCount": 2086,
-          "title": "Gradle Composite Build を用いたビルドロジックの共通化について",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398304973388/1732075200",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398304973388/1732075200"
         }
       ]
     },
