@@ -78,6 +78,126 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
+              rel="noopener">ちなみに</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">マキネッタ、完全に理解した</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2025/02/17/220502?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今年に入ってエスプレッソが飲みたい病気にかかってしまい、エスプレッソマシンの購入を検討しています。
+しかし、でかい(物理)買い物なので慎重に考えていてなかなか決めきれず、いったんエスプレッソ欲を満たすためにマキネッタをやることにしました。
+
+BIALETTI(ビアレッティ) Bialettiブリッカ 2カップ 直火式 (コーヒーメーカー エスプレッソメーカー マキネッタ)
+
+BIALETTI(ビアレッティ)
+Amazon
+
+ド定番の BIALETTI、クレマが欲しいのでブリッカにしてみました。
+思い切り直火式と書かれていてIHでは使えないのですが、そう言えば新居はIHなのを忘れていて焦りましたが ラジエントヒーター がついていたので事なきを得ました。
+ちなみに ブリッカ インダクション という製品であればIHに対応しているそうです。(ちゃんと調べておけば...)
+最初、何も調べずに使ってみたところ、あんまり美味しくなくてがっかりしたものの、ちゃんと調べたのちに試行錯誤した結果、美味しく淹れられるようになりました。
+もちろん定番の吹き出してびちゃびちゃになるやつもやりました。
+いくつか分かったこと
+粉はバスケットにすり切りいっぱい入れて押し固めない
+バスケットの縁についた粉は落とす (隙間が出来て圧力が逃げることがある)
+ボイラーにサーバーをつけるときは力いっぱいしっかりしめる (最初ひよってゆるめだった)
+水はちょっと少なめ (120cc指定のところ100ccくらい) ← これはちょっと実験中
+豆の挽き目はエスプレッソ用よりちょっと粗めがよい
+ラジエントヒーターの場合は強火でよい
+あとは豆をちゃんと選ぶと美味しく淹れられると思います。浅煎りは難しいのでもうちょっと焼いたものがいいかも。
+大粒目の砂糖を落として飲んでもいいし、ホットミルクと混ぜても美味しくてQOL上がっています。
+次はフォームミルクに挑戦したいけど、エスプレッソマシンを買ってスチームにするか、いったんフォーマーを挟むのか悩みどころ。
+Nano Foamer PROsubminimal.tokyo
+ガジェット的にはこれがほしいです。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/80079f94886d893dc6f87acf733d9cf8c7944def/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31c3MW0wV0L._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">部分から全体で考えたほうがうまくいきやすい</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/02/17/220416" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>オチのない日記。
+Next.jsで(といってもNext固有の要素はない。)タブがいくつも出るような画面の処理を実装していて、最終的に欲しいものは色々がソートされた配列にコンポーネントが入っている(そしてそれをレンダする)、という具合の仕事をしていた。なんかもうちょっと早くできたな〜という反省。
+[
+  ,
+  ,
+  ,
+]
+イメージ図↑
+ここでは「ジャンルごとにタブが分かれている」みたいな画面を例にして説明する。
+色々がソートされているというのが厄介で、
+全体としては大条件(ここではそう呼ぶことにする)で並んでいて、「ジャンルなし」「ジャンル設定されてる」「ジャンル設定されてたけど参照していたジャンルが消えた」みたいな感じで並んでいてほしい。
+さらに、小条件として「ジャンル設定されてる」は各ジャンルの名前で並んでいてほしいし、「ジャンルなし」「ジャンル設定されてたけど参照していたジャンルが消えた」やつはソートできる名前がないので内部のIDで並んでいてほしい。
+ついでに、現在開いているジャンルはちょっと違うコンポーネントになっててほしい。
+やった
+全体から考えて、まず色々をコンポーネントに変換してから、コンポーネントの内部で出し分けを行う
+コンポーネントを並べ替える
+けっきょくこれは冗長になりすぎてダメだった。コンポーネントを並べるために情報を持たせないといけないし、並べ替えもしないといけない。
+最終的にこうなった
+全体のデータが入っている配列をfilterして「ジャンルなし」「ジャンル設定されてる」「ジャンル設定されてたけど参照していたジャンルが消えた」の3つに分けた
+
+
+ポイント: 条件がMECEであるなら、filterによる分割が成立する
+そもそもこれは「並べ替え」というよりは「分類された上でconcatされている」と見るべきだった
+「ジャンル設定されてる」「ジャンル設定されてたけど参照していたジャンルが消えた」はその中でsortする
+最終的に一直線に並んだので、mapしてコンポーネントに変換した
+
+
+「現在開いている」まわりの処理はコンポーネント内部に閉じ込めればよい
+気付き
+最終的な案では、まず大本のデータを分割して、小さくしてから構成していき、最後にコンポーネントに収めるという形をとった。この形が成立するように構成するのがうまくいきやすいのかもしれない。
+一般論として、分割統治したほうが考えることが少なくてよい。そして、分割したものの処理結果が出てきたら、あとはもう組み立てるだけで、その中身にほぼ触れる必要がない、というのが良い分割の指標だろうと思う。今回は分類してから分割統治すればいいだけの話だった。
+また、雑に「ソート」と思っていたけれど、「並んでいてほしい」にも色々あり、単にそれは分類のことだった、ということもある。それはもうgroupByとかfilter+concatで考えるべきことで、「ソート」ではない。
+運が良いとさらに大きい単位で数学的構造が見えてこれはモノイドですね〜みたいなモデル化が成功することもあるけど、ひとまずは実直に分割して統治したほうがいい。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398329661235/1739797456" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://5desk.hatenablog.jp/" target="_blank"
+              rel="noopener">3F 音楽室</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">鯛売る</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://5desk.hatenablog.jp/entry/2025/02/17/215934" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>貯金とか考える意味ないと思い、アンプとヘッドフォンを購入。先月キーボードを買った辺りから、どうせすぐ死ぬので使用期間の長い方が得だろう、と考えるようになった気がする。アンプは『FIIO K9 AKM』、ヘッドフォンは『SENNHEISER HD 650』を買った。どちらも昨年からeイヤホンで試聴していて、アンプはこれにすると決めていたが、ヘッドフォンは最後まで『FOSTEX T60RP』か思い切って『SENNHEISER HD800S』にするかで悩んだ。前者はヘッドフォンの設計というかデザインが凄く好みではあるが、モニターヘッドフォンとして今後使用するのであればどうなんだと思って、後者は価格のことを考えて、総合的に650にした。エージング(思い込み・おまじない・占い)をして、音楽その他諸々聴きまくり。ASMRとか立体音響のものを聴くと音の定位に感動があった。これはずっとイヤホンを使っていたのもある気がする。音の良さという曖昧な尺度は個人間に委ねられるものだと思うが、諸々と評価されていて、かつそれなりにちゃんとした機器を通してだと、馬鹿でも確かに音が良くなったと感じたので、オーディオ周りは早めに揃えるべきだと思いました。今度、バランス接続を試してみます。
+特に理由無く伊豆大島へ。何となくで船と宿の予約を取って、山とか海とか見た。少し前に奥多摩に行ったときは、かなり山奥に限らず人が多くて東京は凄いと思ったが、大島はあまりそう感じなかった。突然すぎるが、大島には日本で唯一の砂漠がある。なんとなく大島に着いたものの、『裏砂漠』には行きたかったので、早朝のバス便で森になる道(という道がある)経由で向かった。道中では朝焼けと稲穂の靡く姿から、北海道のトドワラに行ったときのことを思い出していた。広大な景色と海の広さ、自然そのものに対する感動があった。ふと立ち止まって耳を澄ませてみると、一切の無音。関東に移り住んでから全てにおいて音の大きさに驚くばかりだったので、あまりの静寂さであったことが怖かった。音が無さすぎて、米粒程度に見える遠くの人達の会話声が聞こえてきた。天気が良かったので、富士山が綺麗で良かった(宿の人曰く今年一澄んで富士山が見えたらしい)。夕焼けも綺麗だった。
+
+生存報告用に視界用アカウント作った。急に飽きるか死ぬかしたらすみませんが、監視の方よろしくお願いします。
+https://twitter.com/17scape</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/405b80b59aec174ff341e93e9de70fe66fc81c3d/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffivedesk%2F20250217%2F20250217214823.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -17421,30 +17541,6 @@ GameGaz Daily 2024.11.21 first appeared on 大人のためのゲーム講座.</s
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2024.11.20</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024112042438/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ニンテンドークラシックミニ ファミリーコンピュータ本体およびニンテンドークラシックミニ スーパーファミコン修理サービス終了へ,ソニーがKADOKAWA買収,nds-bootstrap v2.2.1,TWiLightMenu++ v27.12.1,Ryujinx 1.2.76,shadPS4 Pre-release-shadPS4-2024-11-19-17c47bc,Xbox-Scene Modfest 2024→→→この記事の続きを読む
-GameGaz Daily 2024.11.20 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">8.00以降は買い換え必須？！PS5のファームウェアは低ければ低いほどいい</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2024112042436/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>notnotzecoxao氏によると、8.00以降のPS5は買い換えた方がいいみたいです→→→この記事の続きを読む
-8.00以降は買い換え必須？！PS5のファームウェアは低ければ低いほどいい first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -19504,7 +19600,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-17T12:02:14.481Z">2025-02-17T12:02:14.481Z</time>
+    <time id="build-timestamp" datetime="2025-02-17T13:06:52.128Z">2025-02-17T13:06:52.128Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
