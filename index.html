@@ -17756,121 +17756,6 @@ lazy val root &#x3D; project
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Scalaではクラスのコンストラクタ引数とフィールドを同時に定義できる</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2024/11/27/193218" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>こういうツイートを見た。
-
-Scalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん
-— Neo (@GlassesNeo) 2024年11月24日
-   
-Scalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん
-
-
-つまり、この二者は何が違うのかということだ:
-class C1(val field: Int)
-
-class C2:
-  val field: Int
-
-
-
-この疑問を解くには、クラスのコンストラクタとフィールドとの関係、そして両者をつなぐ便利な記法について知るとよい。
-実行環境
-この記事では、Scala 3.5.2を利用している(が、大抵のバージョンでも同様)。
-また、この記事では紙面節約のためにoptional brace syntaxで書かれている。つまり、以下の記述は等しい:
-class Foo {
-  // ...
-}
-
-
-
-
-
-class Foo:
-  // ...
-
-
-
-Scalaのクラス
-Scalaはオブジェクト指向言語でもあるので、クラスを作ることができる:
-class Coke
-
-
-
-コンストラクタ
-クラスなので、コンストラクタ引数を取ることができる:
-class Coke(isDietCoke: Boolean):
-  // ここでコンストラクタ引数を使った初期化処理を書く
-  println(s&quot;初期化中: ${isDietCoke}&quot;)
-
-Coke(true) // 初期化中: true と表示される
-
-
-
-いちおう説明しておくと、コンストラクタとはざっくり言うとクラスを作るときに呼ぶやつだ*1:
-Coke(true) ←ここがコンストラクタ
-
-
-
-Scalaではクラスを作るときにnewを書かなくて良いので本当に関数とかメソッドに見えるね。
-フィールド
-クラスなので、インスタンスにフィールドを作ることができる:
-class Coke:
-  val isDietCoke: Boolean &#x3D; false
-
-Coke().isDietCoke // &#x3D;&gt; false
-
-
-
-フィールドのための特別な記法はなくて、普通にvalを置くだけだ。
-コンストラクタ引数をそのままフィールドにしたい
-ところで、コンストラクタ引数をそのまま手を加えずにフィールドにしたいことがよくある:
-class Coke(isDietCokeArg: Boolean):
-  val isDietCoke &#x3D; isDietCokeArg
-
-
-
-Scalaはこれに便利な記法を与えている。コンストラクタ引数にvalをつけて宣言すると、それはそのままフィールドになる:
-class Coke(val isDietCoke: Boolean)
-
-Coke(true).isDietCoke // &#x3D;&gt; true
-
-
-
-まとめると
-ここで最初の問いに戻ってくる。
-Scalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん
-
-
-
-class名のすぐ後ろのかっこにvalを書くと、コンストラクタから直接設定できるフィールドになる
-bodyにvalを書くと、ふつうのフィールドになる
-ここで、値が固定されている場合は同じような挙動になる:
-class BoxA(val inner: Int &#x3D; 42)
-class BoxB:
-  val inner: Int &#x3D; 42
-
-
-
-ただし、前者はあくまでもクラスのコンストラクタにデフォルトの値を与えている、という建て付けになる。このため前者では作成時に値を注入できる:
-BoxA(0) // これができる
-BoxB(0) // コンストラクタにパラメータがないのでそれはできない
-
-
-
-ただ値を固定したい場合は作成時に値を注入したいわけではないだろうから、普通にbodyでvalと書くほうが意図通りだと思う。
-Further Reading
-docs.scala-lang.org
-*1:まさにconstructしてるね</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307155561/1732703538" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -19804,7 +19689,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-24T22:02:02.374Z">2025-02-24T22:02:02.374Z</time>
+    <time id="build-timestamp" datetime="2025-02-24T23:01:55.144Z">2025-02-24T23:01:55.144Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

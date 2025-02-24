@@ -7220,21 +7220,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307255049/1732723501"
-        },
-        {
-          "id": "hatenablog://entry/6802418398307155561",
-          "author": null,
-          "description": "こういうツイートを見た。\n\nScalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん\n— Neo (@GlassesNeo) 2024年11月24日\n   \nScalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん\n\n\nつまり、この二者は何が違うのかということだ:\nclass C1(val field: Int)\n\nclass C2:\n  val field: Int\n\n\n\nこの疑問を解くには、クラスのコンストラクタとフィールドとの関係、そして両者をつなぐ便利な記法について知るとよい。\n実行環境\nこの記事では、Scala 3.5.2を利用している(が、大抵のバージョンでも同様)。\nまた、この記事では紙面節約のためにoptional brace syntaxで書かれている。つまり、以下の記述は等しい:\nclass Foo {\n  // ...\n}\n\n\n\n\n\nclass Foo:\n  // ...\n\n\n\nScalaのクラス\nScalaはオブジェクト指向言語でもあるので、クラスを作ることができる:\nclass Coke\n\n\n\nコンストラクタ\nクラスなので、コンストラクタ引数を取ることができる:\nclass Coke(isDietCoke: Boolean):\n  // ここでコンストラクタ引数を使った初期化処理を書く\n  println(s\"初期化中: ${isDietCoke}\")\n\nCoke(true) // 初期化中: true と表示される\n\n\n\nいちおう説明しておくと、コンストラクタとはざっくり言うとクラスを作るときに呼ぶやつだ*1:\nCoke(true) ←ここがコンストラクタ\n\n\n\nScalaではクラスを作るときにnewを書かなくて良いので本当に関数とかメソッドに見えるね。\nフィールド\nクラスなので、インスタンスにフィールドを作ることができる:\nclass Coke:\n  val isDietCoke: Boolean = false\n\nCoke().isDietCoke // => false\n\n\n\nフィールドのための特別な記法はなくて、普通にvalを置くだけだ。\nコンストラクタ引数をそのままフィールドにしたい\nところで、コンストラクタ引数をそのまま手を加えずにフィールドにしたいことがよくある:\nclass Coke(isDietCokeArg: Boolean):\n  val isDietCoke = isDietCokeArg\n\n\n\nScalaはこれに便利な記法を与えている。コンストラクタ引数にvalをつけて宣言すると、それはそのままフィールドになる:\nclass Coke(val isDietCoke: Boolean)\n\nCoke(true).isDietCoke // => true\n\n\n\nまとめると\nここで最初の問いに戻ってくる。\nScalaのフィールド、class名のすぐ後ろのかっこ内に書くのとbodyに書くの何がちがうん\n\n\n\nclass名のすぐ後ろのかっこにvalを書くと、コンストラクタから直接設定できるフィールドになる\nbodyにvalを書くと、ふつうのフィールドになる\nここで、値が固定されている場合は同じような挙動になる:\nclass BoxA(val inner: Int = 42)\nclass BoxB:\n  val inner: Int = 42\n\n\n\nただし、前者はあくまでもクラスのコンストラクタにデフォルトの値を与えている、という建て付けになる。このため前者では作成時に値を注入できる:\nBoxA(0) // これができる\nBoxB(0) // コンストラクタにパラメータがないのでそれはできない\n\n\n\nただ値を固定したい場合は作成時に値を注入したいわけではないだろうから、普通にbodyでvalと書くほうが意図通りだと思う。\nFurther Reading\ndocs.scala-lang.org\n*1:まさにconstructしてるね",
-          "link": "https://blog.3qe.us/entry/2024/11/27/193218",
-          "publishedOn": "2024-11-27T10:32:18.000Z",
-          "wordCount": 1483,
-          "title": "Scalaではクラスのコンストラクタ引数とフィールドを同時に定義できる",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307155561/1732703538",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307155561/1732703538"
         }
       ]
     },
