@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-24T16:02:03.288Z</updated>
+    <updated>2025-02-24T17:01:53.414Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Web における Beacon の変遷 (sendBeacon(), fetch() keepalive, fetchLater())]]></title>
+        <id>https://blog.jxck.io/entries/2025-02-25/beaconing.html</id>
+        <link href="https://blog.jxck.io/entries/2025-02-25/beaconing.html"/>
+        <updated>2025-02-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ページを閉じる際に何かしらの情報をサーバで収集したいケースがある。これを Beacon の送信(Beaconing)と呼び、ブラウザではページ表示中に収集したパフォーマンス統計の収集や、広告タグによるトラッキングなどに用いられる。しかし、「ページが閉じる直前に、サーバにリクエストを送信する」を確実に実行するのは実は難しく、これを標準技術で実現する過程で、複数の API が生まれるに至った。各 API の策定経緯と、挙動の違いについて解説していく。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[金沢旅行記]]></title>
+        <id>hatenablog://entry/6802418398331623962</id>
+        <link href="https://blog.3qe.us/entry/2025/02/25/010945"/>
+        <updated>2025-02-24T16:09:45.000Z</updated>
+        <summary type="html"><![CDATA[連休を利用して金沢に彼女と一泊二日で旅行した。旅行の翌日はたいていクタクタにきまっているので、一日余裕を空け、その日はおみやげを食べるという作戦にした。
+ルートはシンプルで、京都を発ち、金沢で過ごし、また帰るというもの。国立工芸館、武家屋敷、回転寿司、『あんと』(金沢駅にある巨大おみやげコーナー)をMUST目標とし、21世紀美術館、『つぼみ』(和菓子店)をSHOULD目標とし、県立図書館(建築で著名)をMAY目標と設定していた。
+ちなみに説明なき限り写真はFujifilm X-E4とキットレンズ、撮って出しである。
+北陸乗継チケットレス
+ところで、近畿圏から金沢といえばサンダーバードだが、北陸新幹線の延伸にともなって敦賀でサンダーバードは終わっており、そこからは乗り換えて北陸新幹線に乗り継ぐという構成になっている。これはe5489の『北陸乗継チケットレス』なるサービスを利用すると一気通貫して予約が取れるし、ICカード乗車ができて大変スムーズなのでこれを利用すると良い。
+www.jr-odekake.net
+北陸は寒いぞ
+また、今回は大雪が降るという予想だったため準備に難儀した。スノーシューズや手袋を持っていなかったため、 降り具合によっては駅から近くのモンベルで買うという作戦にしていた。最終的に手袋を駅横の商業ビルにあったコロンビアで買うことになった。雪風が吹く冬の金沢では絶対に手袋が必要である。猛烈な速度で指の温度が奪われるためだ。
+中央アジアから来た人みたいな格好で突入した
+防水スプレーを持っていったのも幸いし、ブーツが浸水するということはなかったが、ややしっとりしてしまったので、長居するのであればスノーシューズにしたほうがよいと思う。
+また、分厚く時として融けてシャバシャバになっている北陸の雪に対して、キャリーケースは一切役に立たない。ぜんぶ手で持って運ぶ根性があるの…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[音EXPO韓国館：生配信詳細]]></title>
         <id>https://note.com/fourangle/n/ne60f7486d0b5</id>
