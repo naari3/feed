@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-24T20:01:57.919Z</updated>
+    <updated>2025-02-24T21:01:50.826Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -14,6 +14,16 @@
         <summary type="html"><![CDATA[ページを閉じる際に何かしらの情報をサーバで収集したいケースがある。これを Beacon の送信(Beaconing)と呼び、ブラウザではページ表示中に収集したパフォーマンス統計の収集や、広告タグによるトラッキングなどに用いられる。しかし、「ページが閉じる直前に、サーバにリクエストを送信する」を確実に実行するのは実は難しく、これを標準技術で実現する過程で、複数の API が生まれるに至った。各 API の策定経緯と、挙動の違いについて解説していく。]]></summary>
         <author>
             <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[rise移植1]]></title>
+        <id>hatenablog://entry/6802418398331667902</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/02/25/052740"/>
+        <updated>2025-02-24T20:27:40.000Z</updated>
+        <summary type="html"><![CDATA[ツール一式作ったのにGTSだけだともったいない・・・ということでv16 riseもやってみようと思います。本当はだいな〇いらんを作りたかったのですけど、今回はどちらかというとリハビリ期間ということにしています。ゆっくりマイペースに作業して睡眠時間などをちゃんと確保しようかと。去年はひどかったですからねー。たぶん、去年全てのプライベート時間の３分の１？２？？（寝る時間、食事など除く）は移植作業に費やしていたような気します。ほんとどうかしている（汗。４つ（canaan, mugen, rookies, viper v16）も作ればそりゃそうなるかと思うのですが、いい加減このような開発スタイルはやめるべきだよなあ・・・。というわけで5月末目標でやってみようと思います。]]></summary>
+        <author>
+            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
