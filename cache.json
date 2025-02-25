@@ -980,6 +980,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398331868573",
+          "author": null,
+          "description": "colimaを使い始めてからmacOSを再起動するたびに設定などがまっさらになるという自体に頭を抱えていた。\nこれは XDG_CONFIG_HOME 以下じゃなくてホームディレクトリに新規で .colima ディレクトリが作成されてしまうからっぽい。\nホームディレクトリの設定が優先されているだけで、元の設定が消えている訳じゃないので、~/.colima/ を削除して、colimaを再起動するといいのだけれどちょっと手間。\n原因は launchctl がシェルと独立して起動されるデーモンなので、環境変数を読めてないことにあると分かったので対策をする。\nlaunchctl setenv でセッション内でだけ環境変数を設定できるらしいのでこれを使っていく。どうも永続的に設定する方法はなさそう。\nサービスの plist に書いてくれってことらしいが、今回は HomeBrew で管理されているものというのと、全員が XDG Base Directory を採用している分けじゃないので手元でなんとかする。\n僕はログインシェルを zsh にしていて、起動時に環境変数設定用の .zshenv というファイルを読み込むようにしているので、ここに以下のように書いておいた。\nlaunchctl setenv XDG_CONFIG_HOME \"$HOME/.config\"\nlaunchctl setenv XDG_CACHE_HOME \"$HOME/.cache\"\nlaunchctl setenv XDG_DATA_HOME \"$HOME/.local/share\"\nlaunchctl setenv XDG_STATE_HOME \"$HOME/.local/state\"\n\n\n\nこれでひとまずやりたいことは出来ていそう。\nなんかもっとスマートな方法があれば教えてください。\nblog.nishimu.land",
+          "link": "https://blog.nishimu.land/entry/2025/02/25/220955?utm_source=feed",
+          "publishedOn": "2025-02-25T13:09:55.000Z",
+          "wordCount": 286,
+          "title": "launchctlに環境変数を渡したい",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398331868573/1740488995",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398331868573/1740488995"
+        },
+        {
           "id": "hatenablog://entry/6802418398331697253",
           "author": null,
           "description": "blog.nishimu.land\nこの記事で紹介した noSemanticString / noSemanticNumber が v0.18.0 で非推奨になった。\n代わりに semanticTokenTypes が使えるのでこれで設定すると良い。\n\"gopls\": {\n    \"ui.semanticTokens\": true,\n    \"ui.semanticTokenTypes\": {\n        \"string\": false,\n        \"number\": false,\n    },\n},\n\n\n\ngithub.com",

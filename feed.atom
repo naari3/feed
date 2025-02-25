@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-25T13:06:42.839Z</updated>
+    <updated>2025-02-25T14:01:56.628Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[launchctlに環境変数を渡したい]]></title>
+        <id>hatenablog://entry/6802418398331868573</id>
+        <link href="https://blog.nishimu.land/entry/2025/02/25/220955?utm_source=feed"/>
+        <updated>2025-02-25T13:09:55.000Z</updated>
+        <summary type="html"><![CDATA[colimaを使い始めてからmacOSを再起動するたびに設定などがまっさらになるという自体に頭を抱えていた。
+これは XDG_CONFIG_HOME 以下じゃなくてホームディレクトリに新規で .colima ディレクトリが作成されてしまうからっぽい。
+ホームディレクトリの設定が優先されているだけで、元の設定が消えている訳じゃないので、~/.colima/ を削除して、colimaを再起動するといいのだけれどちょっと手間。
+原因は launchctl がシェルと独立して起動されるデーモンなので、環境変数を読めてないことにあると分かったので対策をする。
+launchctl setenv でセッション内でだけ環境変数を設定できるらしいのでこれを使っていく。どうも永続的に設定する方法はなさそう。
+サービスの plist に書いてくれってことらしいが、今回は HomeBrew で管理されているものというのと、全員が XDG Base Directory を採用している分けじゃないので手元でなんとかする。
+僕はログインシェルを zsh にしていて、起動時に環境変数設定用の .zshenv というファイルを読み込むようにしているので、ここに以下のように書いておいた。
+launchctl setenv XDG_CONFIG_HOME "$HOME/.config"
+launchctl setenv XDG_CACHE_HOME "$HOME/.cache"
+launchctl setenv XDG_DATA_HOME "$HOME/.local/share"
+launchctl setenv XDG_STATE_HOME "$HOME/.local/state"
+
+
+
+これでひとまずやりたいことは出来ていそう。
+なんかもっとスマートな方法があれば教えてください。
+blog.nishimu.land]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20250225]]></title>
         <id>hatenablog://entry/6802418398331858574</id>

@@ -78,6 +78,67 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
+              rel="noopener">ちなみに</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">launchctlに環境変数を渡したい</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2025/02/25/220955?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>colimaを使い始めてからmacOSを再起動するたびに設定などがまっさらになるという自体に頭を抱えていた。
+これは XDG_CONFIG_HOME 以下じゃなくてホームディレクトリに新規で .colima ディレクトリが作成されてしまうからっぽい。
+ホームディレクトリの設定が優先されているだけで、元の設定が消えている訳じゃないので、~/.colima/ を削除して、colimaを再起動するといいのだけれどちょっと手間。
+原因は launchctl がシェルと独立して起動されるデーモンなので、環境変数を読めてないことにあると分かったので対策をする。
+launchctl setenv でセッション内でだけ環境変数を設定できるらしいのでこれを使っていく。どうも永続的に設定する方法はなさそう。
+サービスの plist に書いてくれってことらしいが、今回は HomeBrew で管理されているものというのと、全員が XDG Base Directory を採用している分けじゃないので手元でなんとかする。
+僕はログインシェルを zsh にしていて、起動時に環境変数設定用の .zshenv というファイルを読み込むようにしているので、ここに以下のように書いておいた。
+launchctl setenv XDG_CONFIG_HOME &quot;$HOME/.config&quot;
+launchctl setenv XDG_CACHE_HOME &quot;$HOME/.cache&quot;
+launchctl setenv XDG_DATA_HOME &quot;$HOME/.local/share&quot;
+launchctl setenv XDG_STATE_HOME &quot;$HOME/.local/state&quot;
+
+
+
+これでひとまずやりたいことは出来ていそう。
+なんかもっとスマートな方法があれば教えてください。
+blog.nishimu.land</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398331868573/1740488995" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">goplsのnoSemanticXXXの設定が非推奨になった</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2025/02/25/090337?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>blog.nishimu.land
+この記事で紹介した noSemanticString / noSemanticNumber が v0.18.0 で非推奨になった。
+代わりに semanticTokenTypes が使えるのでこれで設定すると良い。
+&quot;gopls&quot;: {
+    &quot;ui.semanticTokens&quot;: true,
+    &quot;ui.semanticTokenTypes&quot;: {
+        &quot;string&quot;: false,
+        &quot;number&quot;: false,
+    },
+},
+
+
+
+github.com</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398331697253/1740441817" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://isitsutbustu-todoke.hatenablog.com/" target="_blank"
               rel="noopener">遺失物取扱所</a></h3>
           <section class="articles-per-source">
@@ -270,39 +331,6 @@ Amazon
 論文を書くことは、「読むだろう相手にとってわかりやすい文章を書く」ことでもある。特にピアレビューにおいては、わかりやすさが重要になる。だとすれば、「わかりにくいものをわかりやすくする作業」が論文…</span>
                   </div>
                   <img src="https://cdn.image.st-hatena.com/image/scale/caedd01532e99b8abeeaf1606c08667c0a19d4d4/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31f3M1XdETL._SL500_.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
-              rel="noopener">ちなみに</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">goplsのnoSemanticXXXの設定が非推奨になった</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2025/02/25/090337?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>blog.nishimu.land
-この記事で紹介した noSemanticString / noSemanticNumber が v0.18.0 で非推奨になった。
-代わりに semanticTokenTypes が使えるのでこれで設定すると良い。
-&quot;gopls&quot;: {
-    &quot;ui.semanticTokens&quot;: true,
-    &quot;ui.semanticTokenTypes&quot;: {
-        &quot;string&quot;: false,
-        &quot;number&quot;: false,
-    },
-},
-
-
-
-github.com</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398331697253/1740441817" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -19869,7 +19897,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-25T13:06:42.792Z">2025-02-25T13:06:42.792Z</time>
+    <time id="build-timestamp" datetime="2025-02-25T14:01:56.593Z">2025-02-25T14:01:56.593Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
