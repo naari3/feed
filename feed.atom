@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-25T02:25:16.210Z</updated>
+    <updated>2025-02-25T03:07:54.496Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AIエージェントで前から欲しかったツールを作ってみた]]></title>
+        <id>hatenablog://entry/6802418398330770372</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2025/02/25/120141"/>
+        <updated>2025-02-25T03:01:41.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+プロジェクト背景
+プロジェクト概要
+主な機能
+基本的な使い方
+開発プロセスと学び
+バグ修正のTips
+デバッグメッセージを出力させる
+いくつか自分が思いついたことも伝える
+命令を与え直す
+変更範囲を限定する
+うまくいった箇所までコミットしておく
+数回試して解決できなければ諦める
+型のある言語のほうが良さそう
+その他
+おわりに
+はじめに
+コンテナ関連の開発において、コンテナイメージの中身を確認する必要性はしばしば発生します。
+特にシェルが含まれていないイメージの場合、ファイルの確認が面倒になりがちです。
+また、私の開発するOSSではレイヤーのマージをコンテナランタイムに頼らず自前で行っている関係で、レイヤー単位でファイルを確認したいケースも多くあります。
+さっとファイルの中身を確認したい場合もあれば、ファイルを手元にエクスポートしたい場合もあります。
+diveというツールもありますが、どうやらファイルを見たりはできないようでした。
+view / download files from UI · Issue #224 · wagoodman/dive · GitHub
+既存のツールではこれらの要件を満たすものが見当たらなかったため、新しいツールの開発を考えていました。
+プロジェクト背景
+ファイルの中身を見るための、TUIを使ったインタラクティブなツールを作りたいと考えていましたが、フロントエンドなど含めUI関連の実装はどうしても好きになれない自分はなかなか実装に踏み切れずにいました。
+子育てをしていると細切れの時間しかないため腰を据えて新しいプロジェクトを始めるのが難しくなる、という情けない言い訳もしておきます。
+最近、CursorやClineなどのAIエージェントを試していく中で、新規プロジェクトの開発における可能性を感じていました。
+既存プロジェクトでも使えますが…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[論文というやり方には限界がある]]></title>
         <id>hatenablog://entry/6802418398331702615</id>
