@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-25T04:02:01.774Z</updated>
+    <updated>2025-02-25T05:02:04.646Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12616,44 +12616,6 @@ Amazon
 GameGaz Daily 2024.11.28 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scala.jsでSyntaxError: Cannot use import statement outside a module出たら見るページ]]></title>
-        <id>hatenablog://entry/6802418398307255049</id>
-        <link href="https://blog.3qe.us/entry/2024/11/28/010501"/>
-        <updated>2024-11-27T16:05:01.000Z</updated>
-        <summary type="html"><![CDATA[Scala.jsでSyntaxError: Cannot use import statement outside a moduleが出ることがある。
-環境
-val scala3Version = "3.5.2"
-addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.17.0")
-tl;dr
-.withOutputPatterns(OutputPatterns.fromJSFile("%s.mjs")しよう
-説明
-Scala.jsのコードをsbtなどからrunするときに起こる
-
-
-runしたいということはscalaJSUseMainModuleInitializerもtrueになっているときに起こる
-Node.jsは.jsファイルをデフォルトではESModuleではなくCommonJSとして扱う
-Scala.jsでESModuleを出力させているが、拡張子が.jsのままのときに、Scala.jsはESMを吐くのにNodeはCommonJSのつもりで読んでビックリする
-拡張子を.mjsにしてやると安心する
-コード例
-// build.sbt
-import org.scalajs.linker.interface.OutputPatterns
-
-lazy val root = project
-  .in(file("."))
-  .enablePlugins(ScalaJSPlugin)
-  .settings(
-    // ...
-    scalaJSUseMainModuleInitializer := true,
-    scalaJSLinkerConfig ~= {
-      _.withModuleKind(ModuleKind.ESModule)
-        .withOutputPatterns(OutputPatterns.fromJSFile("%s.mjs"))
-    }
-  )]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>

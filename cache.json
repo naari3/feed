@@ -7265,21 +7265,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307668280/1732870106"
-        },
-        {
-          "id": "hatenablog://entry/6802418398307255049",
-          "author": null,
-          "description": "Scala.jsでSyntaxError: Cannot use import statement outside a moduleが出ることがある。\n環境\nval scala3Version = \"3.5.2\"\naddSbtPlugin(\"org.scala-js\" % \"sbt-scalajs\" % \"1.17.0\")\ntl;dr\n.withOutputPatterns(OutputPatterns.fromJSFile(\"%s.mjs\")しよう\n説明\nScala.jsのコードをsbtなどからrunするときに起こる\n\n\nrunしたいということはscalaJSUseMainModuleInitializerもtrueになっているときに起こる\nNode.jsは.jsファイルをデフォルトではESModuleではなくCommonJSとして扱う\nScala.jsでESModuleを出力させているが、拡張子が.jsのままのときに、Scala.jsはESMを吐くのにNodeはCommonJSのつもりで読んでビックリする\n拡張子を.mjsにしてやると安心する\nコード例\n// build.sbt\nimport org.scalajs.linker.interface.OutputPatterns\n\nlazy val root = project\n  .in(file(\".\"))\n  .enablePlugins(ScalaJSPlugin)\n  .settings(\n    // ...\n    scalaJSUseMainModuleInitializer := true,\n    scalaJSLinkerConfig ~= {\n      _.withModuleKind(ModuleKind.ESModule)\n        .withOutputPatterns(OutputPatterns.fromJSFile(\"%s.mjs\"))\n    }\n  )",
-          "link": "https://blog.3qe.us/entry/2024/11/28/010501",
-          "publishedOn": "2024-11-27T16:05:01.000Z",
-          "wordCount": 1446,
-          "title": "Scala.jsでSyntaxError: Cannot use import statement outside a module出たら見るページ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307255049/1732723501",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307255049/1732723501"
         }
       ]
     },
