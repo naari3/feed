@@ -2,10 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-25T00:03:35.162Z</updated>
+    <updated>2025-02-25T01:29:11.540Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[論文というやり方には限界がある]]></title>
+        <id>hatenablog://entry/6802418398331702615</id>
+        <link href="https://niryuu.hatenablog.com/entry/2025/02/25/093755"/>
+        <updated>2025-02-25T00:37:55.000Z</updated>
+        <summary type="html"><![CDATA[先月の今日、大規模言語モデルコミュニティの懇親会で言われたことがある。
+「なんでそんなに論文にこだわるんですか」
+私はこう答えた。
+「書く必要があるでしょう。研究者として」
+この回答は、論文を提出した直後だったから気が張っていたというのもあるだろう。
+今振り返ってみると、一昨年の今日、2月25日から論文というものに振り回されていた。
+そして、正直こだわる必要はないと感じた。
+以下に、その理由を述べる。
+前提: ここでいう論文とはなにか
+例えば以下の書籍では、「論文とは、アーギュメントを論証する文章である」と定義されている。
+
+
+まったく新しいアカデミック・ライティングの教科書
+作者:阿部 幸大
+光文社
+Amazon
+つまり、分解すると「主張したいこと」と「その主張が適切である理由」を、「構造=論証」をもって提示するものが、論文である。それゆえ、まずはっきりした主張が必要である。次に、文章という構造に制約された形、つまり「わかりやすい形」での論証が必要である。いったんこれを前提とする。そのうえで適宜様々な側面について触れる。
+(1)論文を書くことそのものが研究作業であり、研究方法である
+これは書いている人なら直観的にわかると思う。分野にとってはテーマを決めたら論文を書き始め、研究を進めるとともに論文も書き上げていく、というスタイルがあるくらい、論文は研究そのものと密接にかかわっている。
+さて、ここで問いたいのは「研究」と「論文」の関係である。「研究があり、それを報告するものが論文である」とはいえるだろう。論文とは、研究のコミュニケーション手段の一つである。しかし、本当にそうだろうか？
+論文を書くことは、「読むだろう相手にとってわかりやすい文章を書く」ことでもある。特にピアレビューにおいては、わかりやすさが重要になる。だとすれば、「わかりにくいものをわかりやすくする作業」が論文…]]></summary>
+        <author>
+            <name>表道具</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[goplsのnoSemanticXXXの設定が非推奨になった]]></title>
+        <id>hatenablog://entry/6802418398331697253</id>
+        <link href="https://blog.nishimu.land/entry/2025/02/25/090337?utm_source=feed"/>
+        <updated>2025-02-25T00:03:37.000Z</updated>
+        <summary type="html"><![CDATA[blog.nishimu.land
+この記事で紹介した noSemanticString / noSemanticNumber が v0.18.0 で非推奨になった。
+代わりに semanticTokenTypes が使えるのでこれで設定すると良い。
+"gopls": {
+    "ui.semanticTokens": true,
+    "ui.semanticTokenTypes": {
+        "string": false,
+        "number": false,
+    },
+},
+
+
+
+github.com]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Web における Beacon の変遷 (sendBeacon(), fetch() keepalive, fetchLater())]]></title>
         <id>https://blog.jxck.io/entries/2025-02-25/beaconing.html</id>

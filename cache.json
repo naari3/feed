@@ -965,6 +965,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398331697253",
+          "author": null,
+          "description": "blog.nishimu.land\nこの記事で紹介した noSemanticString / noSemanticNumber が v0.18.0 で非推奨になった。\n代わりに semanticTokenTypes が使えるのでこれで設定すると良い。\n\"gopls\": {\n    \"ui.semanticTokens\": true,\n    \"ui.semanticTokenTypes\": {\n        \"string\": false,\n        \"number\": false,\n    },\n},\n\n\n\ngithub.com",
+          "link": "https://blog.nishimu.land/entry/2025/02/25/090337?utm_source=feed",
+          "publishedOn": "2025-02-25T00:03:37.000Z",
+          "wordCount": 270,
+          "title": "goplsのnoSemanticXXXの設定が非推奨になった",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398331697253/1740441817",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398331697253/1740441817"
+        },
+        {
           "id": "hatenablog://entry/6802418398331581808",
           "author": null,
           "description": "カリタ Kalita 静電気が少ない コーヒーミルブラシ クリーニングブラシ 豚毛 掃除しやすい 19cm 便利 #44301 カフェ インテリア 掃除 掃除道具 掃除用品 洗浄 刷毛 ミルブラシ ミル用ブラシ ハケ ブラシ エスプレッソ おしゃれ キャンプ アウトドア 喫茶店 アンティーク 結婚 祝い プレゼント 誕生日 女性 男性 還暦 退職 記念日 ギフト 贈り物 敬老\n\nカリタ(Kalita)\nAmazon\n\nミルを掃除するのにいつ手に入れたか覚えてないカリタのブラシをずっと使っていたのだけれど、今日ついに折れてしまった\n毎日使っていたものだったので相棒感があったのでちょっと悲しい。\n同じものを買っても良かったのだけれど、せっかくなのでいろいろ試そうということで珈琲考具のやつを買ってみた。\n\nKOGU 珈琲考具 コーヒーミルブラシ 14.5cm お手入れ グラインダー用 静電気が少ない 刷毛 転がりにくい三角ハンドル 立てて置ける クリーニング コーヒー粉 掃除 天然木 46187 プレゼント 誕生日 記念日 ギフト 贈り物 下村企販\n\n下村企販\nAmazon",
@@ -2796,6 +2811,21 @@
       "feedUrl": "https://niryuu.hatenablog.com/rss",
       "siteUrl": "https://niryuu.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398331702615",
+          "author": null,
+          "description": "先月の今日、大規模言語モデルコミュニティの懇親会で言われたことがある。\n「なんでそんなに論文にこだわるんですか」\n私はこう答えた。\n「書く必要があるでしょう。研究者として」\nこの回答は、論文を提出した直後だったから気が張っていたというのもあるだろう。\n今振り返ってみると、一昨年の今日、2月25日から論文というものに振り回されていた。\nそして、正直こだわる必要はないと感じた。\n以下に、その理由を述べる。\n前提: ここでいう論文とはなにか\n例えば以下の書籍では、「論文とは、アーギュメントを論証する文章である」と定義されている。\n\n\nまったく新しいアカデミック・ライティングの教科書\n作者:阿部 幸大\n光文社\nAmazon\nつまり、分解すると「主張したいこと」と「その主張が適切である理由」を、「構造=論証」をもって提示するものが、論文である。それゆえ、まずはっきりした主張が必要である。次に、文章という構造に制約された形、つまり「わかりやすい形」での論証が必要である。いったんこれを前提とする。そのうえで適宜様々な側面について触れる。\n(1)論文を書くことそのものが研究作業であり、研究方法である\nこれは書いている人なら直観的にわかると思う。分野にとってはテーマを決めたら論文を書き始め、研究を進めるとともに論文も書き上げていく、というスタイルがあるくらい、論文は研究そのものと密接にかかわっている。\nさて、ここで問いたいのは「研究」と「論文」の関係である。「研究があり、それを報告するものが論文である」とはいえるだろう。論文とは、研究のコミュニケーション手段の一つである。しかし、本当にそうだろうか？\n論文を書くことは、「読むだろう相手にとってわかりやすい文章を書く」ことでもある。特にピアレビューにおいては、わかりやすさが重要になる。だとすれば、「わかりにくいものをわかりやすくする作業」が論文…",
+          "link": "https://niryuu.hatenablog.com/entry/2025/02/25/093755",
+          "publishedOn": "2025-02-25T00:37:55.000Z",
+          "wordCount": 727,
+          "title": "論文というやり方には限界がある",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/caedd01532e99b8abeeaf1606c08667c0a19d4d4/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31f3M1XdETL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/caedd01532e99b8abeeaf1606c08667c0a19d4d4/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31f3M1XdETL._SL500_.jpg"
+        },
         {
           "id": "hatenablog://entry/6802418398331166307",
           "author": null,
