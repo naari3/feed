@@ -78,6 +78,46 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Scala Native 0.5.7 が出た -- バイナリの動的依存が大幅に削減</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/02/27/012244" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Scala Native 0.5.7がリリースされた。
+github.com
+主要なアップデートはリリースノートに書かれているが、面白いと思ったので紹介する。
+Scala Nativeとは（おさらい）
+バイナリ互換性
+C++標準ライブラリへの依存が削減
+clasのvtableのレイアウトが最適化された
+Java標準ライブラリの実装
+SCALANATIVE_THREAD_STACK_SIZE が設定可能になった
+LinuxでPIE (Position Independent Executables) に対応した
+Scala Nativeとは（おさらい）
+Scala Nativeとは、ScalaプロジェクトをLLVMを利用してバイナリにビルドするプロジェクト、コンパイラプラグイン群の総称である。
+scala-native.org
+Scala Nativeを使うことでScalaコードをそのままネイティブバイナリにできるし、静的バイナリを作ることも可能だ:
+blog.3qe.us
+ScalaコードをLLVMでコンパイルする都合、Javaライブラリ（JVMバイトコードになっている）に依存しているとコンパイルできないので注意。
+バイナリ互換性
+Scala Native 0.5.7は0.5系の全てのバイナリに対して後方互換だ（つまり、呼び出すことができる）が、バイナリ前方互換性がない。つまりScala Native 0.5.6のプログラムから0.5.7でビルドされたライブラリを呼び出せない。
+必要に応じてリビルドが必要である。（Scala Nativeはまだメジャーバージョンが1に到達していないためこういうbreaking changesは割とある）
+C++標準ライブラリへの依存が削減
+Unix環境でScala Nativeにビルドする場合、これまでC++標準ライブラリに依存していた（動…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398332164370/1740586964" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
               rel="noopener">あーさん日記</a></h3>
           <section class="articles-per-source">
@@ -19821,7 +19861,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-26T16:01:59.977Z">2025-02-26T16:01:59.977Z</time>
+    <time id="build-timestamp" datetime="2025-02-26T17:02:04.603Z">2025-02-26T17:02:04.603Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
