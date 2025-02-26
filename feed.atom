@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-26T20:01:41.051Z</updated>
+    <updated>2025-02-26T21:01:53.884Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12610,25 +12610,6 @@ CrossMix v1.4.0 will be the first version for the Brick.
 https://joeysretrohandhelds.com/guides/trimui-brick-setup-guide/]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scala Nativeでjava.nio.channels.AsynchronousServerSocketChannelがないと言われたら見るページ]]></title>
-        <id>hatenablog://entry/6802418398307668280</id>
-        <link href="https://blog.3qe.us/entry/2024/11/29/174826"/>
-        <updated>2024-11-29T08:48:26.000Z</updated>
-        <summary type="html"><![CDATA[Scala Nativeでhttp4sなどを使おうとするとビルドタイミングでこのようなメッセージが出たりする:
-Found a call to not defined static method Member(Top(java.nio.channels.AsynchronousServerSocketChannel),D4openL42java.nio.channels.AsynchronousChannelGroupL49java.nio.channels.AsynchronousServerSocketChannelEo). Static methods are generated since Scala Native 0.4.3, report this bug in the Scala Native issues.
-Call defined at file:/home/runner/work/fs2/fs2/io/jvm-native/src/main/scala/fs2/io/net/SocketGroupPlatform.scala:94:53
-対応
-index.scala-lang.org
-epollcatをライブラリに追加する(READMEも軽く読もう)。
-なぜ
-fs2-ioの上に造られているライブラリをScala Native向けにビルドしようとすると、JVMと違ってNativeそのものには非同期I/O用の仕組みがないのでビルドできない。
-そこでepollcatの出番となる。epollcatはepoll/kqueueのラッパーであり、fs2-ioが必要とする非同期I/O処理を肩代わりする。
-使い方はIOAppをEpollAppに、またはIOApp.SimpleをEpollApp.Simpleに置換するだけだ。]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>

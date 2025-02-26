@@ -17902,35 +17902,6 @@ https://joeysretrohandhelds.com/guides/trimui-brick-setup-guide/</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Scala Nativeでjava.nio.channels.AsynchronousServerSocketChannelがないと言われたら見るページ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2024/11/29/174826" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Scala Nativeでhttp4sなどを使おうとするとビルドタイミングでこのようなメッセージが出たりする:
-Found a call to not defined static method Member(Top(java.nio.channels.AsynchronousServerSocketChannel),D4openL42java.nio.channels.AsynchronousChannelGroupL49java.nio.channels.AsynchronousServerSocketChannelEo). Static methods are generated since Scala Native 0.4.3, report this bug in the Scala Native issues.
-Call defined at file:/home/runner/work/fs2/fs2/io/jvm-native/src/main/scala/fs2/io/net/SocketGroupPlatform.scala:94:53
-対応
-index.scala-lang.org
-epollcatをライブラリに追加する(READMEも軽く読もう)。
-なぜ
-fs2-ioの上に造られているライブラリをScala Native向けにビルドしようとすると、JVMと違ってNativeそのものには非同期I/O用の仕組みがないのでビルドできない。
-そこでepollcatの出番となる。epollcatはepoll/kqueueのラッパーであり、fs2-ioが必要とする非同期I/O処理を肩代わりする。
-使い方はIOAppをEpollAppに、またはIOApp.SimpleをEpollApp.Simpleに置換するだけだ。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398307668280/1732870106" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19861,7 +19832,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-26T20:01:41.015Z">2025-02-26T20:01:41.015Z</time>
+    <time id="build-timestamp" datetime="2025-02-26T21:01:53.848Z">2025-02-26T21:01:53.848Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
