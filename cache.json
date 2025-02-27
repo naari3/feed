@@ -181,6 +181,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398332387005",
+          "author": null,
+          "description": "うおおおおお買うっきゃねえ！\nhttps://youtube.com/watch?v=4dBAWcYGBIg",
+          "link": "https://akkera102.hatenablog.com/entry/2025/02/27/211610",
+          "publishedOn": "2025-02-27T12:16:10.000Z",
+          "wordCount": 448,
+          "title": "買う！買う！",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398332387005/1740658604",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398332387005/1740658604"
+        },
+        {
           "id": "hatenablog://entry/6802418398332347909",
           "author": null,
           "description": "バトル行動まとめです。ちょっと説明口調で書いています。\n命令テーブルのサイズは、手下Ａ（青）４個、手下Ｂ（緑）５個、ＢＯＳＳ６個です。\n命令は０か１で表します。\n\nターン　　　　１２３４５６７８９・・・\n手下Ａ（青）　０１１０\n手下Ｂ（緑）　１１０１０\nＢＯＳＳ　　　０１１０１０\n\nこの命令は、各ターンにつき１個使用します。\n手下Ａの１ターン目は０を、２ターン目は１を使用します。\n手下Aの戦闘で５ターン目に入ったとき、取得するインデックスは最初からになります。\nつまり以下のようにループします。\n\nターン　　　　１２３４　５６７８　９０ＡＢ　ＣＤＥＦ\n手下Ａ（青）　０１１０　０１１０　０１１０　０１１０\nこの命令０と１はプレイヤーの行動と関連します。プレイヤーは６種類の行動を選びます（キック、パンチ、チョップ、連続キック、連続パンチ、連続キック）。行動選択後、「主人公か敵を攻撃するか、敵が主人公を攻撃するか」の抽選が行われます。抽選方法は以下のとおり。\n〇：主人公が攻撃する\n×：敵が攻撃する\n\n命令０\n　　　　　通常　連続\nキック　　〇　　〇\nパンチ　　×　　×\nチョップ　〇　　×\n\n命令１\n　　　　　通常　連続\nキック　　×　　×\nパンチ　　〇　　〇\nチョップ　×　　〇\n\n例）\n手下Ａの１ターン目の命令は０です。\n命令表０を見ると通常キック、連続キック、通常チョップは敵にダメージを与えます。\nそれ以外は敵が攻撃します。\n\n手下Ａの７ターン目の命令は１です。\n命令表１を見ると通常パンチ、連続パンチ、連続チョップは敵にダメージを与えます。\nそれ以外は敵が攻撃します。",
@@ -6080,7 +6095,18 @@
       "title": "阿保草",
       "feedUrl": "https://note.com/leaf_62289/rss",
       "siteUrl": "https://note.com/leaf_62289",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/leaf_62289/n/nf1f9a97e193e",
+          "author": null,
+          "description": "半年間いろんな料理を作って食ったけど、唐揚げを食べた翌日のバットに残ったカスとマヨぶっかけて食ったパンが一番生きてる心地がしたワ\n続きをみる",
+          "link": "https://note.com/leaf_62289/n/nf1f9a97e193e",
+          "publishedOn": "2025-02-27T13:00:58.000Z",
+          "wordCount": null,
+          "title": "半年間自炊生活男至高飯発見記",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/176686626/picture_pc_1c3d6a7f42d74117a09847f5f20b7963.jpg?width=800"
+        }
+      ]
     },
     {
       "title": "KZ",
