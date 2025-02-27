@@ -78,6 +78,65 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">rise移植3</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/02/27/184949" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>バトル行動まとめです。ちょっと説明口調で書いています。
+命令テーブルのサイズは、手下Ａ（青）４個、手下Ｂ（緑）５個、ＢＯＳＳ６個です。
+命令は０か１で表します。
+
+ターン　　　　１２３４５６７８９・・・
+手下Ａ（青）　０１１０
+手下Ｂ（緑）　１１０１０
+ＢＯＳＳ　　　０１１０１０
+
+この命令は、各ターンにつき１個使用します。
+手下Ａの１ターン目は０を、２ターン目は１を使用します。
+手下Aの戦闘で５ターン目に入ったとき、取得するインデックスは最初からになります。
+つまり以下のようにループします。
+
+ターン　　　　１２３４　５６７８　９０ＡＢ　ＣＤＥＦ
+手下Ａ（青）　０１１０　０１１０　０１１０　０１１０
+この命令０と１はプレイヤーの行動と関連します。プレイヤーは６種類の行動を選びます（キック、パンチ、チョップ、連続キック、連続パンチ、連続キック）。行動選択後、「主人公か敵を攻撃するか、敵が主人公を攻撃するか」の抽選が行われます。抽選方法は以下のとおり。
+〇：主人公が攻撃する
+×：敵が攻撃する
+
+命令０
+　　　　　通常　連続
+キック　　〇　　〇
+パンチ　　×　　×
+チョップ　〇　　×
+
+命令１
+　　　　　通常　連続
+キック　　×　　×
+パンチ　　〇　　〇
+チョップ　×　　〇
+
+例）
+手下Ａの１ターン目の命令は０です。
+命令表０を見ると通常キック、連続キック、通常チョップは敵にダメージを与えます。
+それ以外は敵が攻撃します。
+
+手下Ａの７ターン目の命令は１です。
+命令表１を見ると通常パンチ、連続パンチ、連続チョップは敵にダメージを与えます。
+それ以外は敵が攻撃します。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/52ed2308b5c6bd1c770b10d6cbd941952f47eee6/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250227%2F20250227185841.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -19665,7 +19724,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-02-27T09:02:01.029Z">2025-02-27T09:02:01.029Z</time>
+    <time id="build-timestamp" datetime="2025-02-27T10:01:48.157Z">2025-02-27T10:01:48.157Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
