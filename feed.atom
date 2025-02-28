@@ -2,10 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-02-28T12:02:18.056Z</updated>
+    <updated>2025-02-28T13:06:30.525Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[rise移植4]]></title>
+        <id>hatenablog://entry/6802418398332635318</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/02/28/220103"/>
+        <updated>2025-02-28T13:01:03.000Z</updated>
+        <summary type="html"><![CDATA[最難関の場面64を消化しました。。足、胸、頭などのパーツを合成して表示するのですけど具体的には次のようになります。各「x:x」は「フレーム番号：ウェイト値(24fps)」です。縦読みしてください。これを根性でpythonで合成して行くわけですねー。4～58しかお出ししてませんけど、ここでは68枚あります。うぐぅう！
+   4    5    6    7    8    9   10   11   12   13   14   15   16   17   18   19   20   21
+83:3 83:3 83:3 83:3 83:3 83:3 83:3 83:3 83:3 83:3 83:3
+ 4:3  5:3  6:3  7:3  8:3  9:3 10:3 11:3 11:3 11:3 11:3 12:3 13:3 14:3 15:3 16:3 17:3 18:3
+84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3
+38:3 39:3 40:3 41:3 42:3 42:3 43:3 44:3 45:3 46:3 47:3 48:3 48:3 48:3 48:3 48:3 48:3 48:3
+
+  22   23   24   25   26   27   28   29   30   31   32   33   34   35   36   37   38   39   40   41   42   43   44   45   46   47   48
+18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:3 18:6 18:1 18:2 18:2 18:2 18:2 18:2 18:2 18:2 18:3 18:6
+84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:6 84:1 84:2 84:2 84:2 84:2 84:2 84:2 84:2 84:3 84:6
+38:3 39:3 40:3 41:3 42:3 42:3 43:3 44:3 45:3 46:3 47:3 49:3 50:3 51:3 52:3 53:3 54:6 55:1 56:2 57:2 58:2 59:2 60:2 61:2 62:2 63:3 64:6
+
+  49   50   51   52   53   54   55   56   57   58
+19:3 20:3 21:3 22:3 23:3 24:3 25:3 26:3 27:3 28:3
+84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3 84:3
+64:3 64:3 64:3 64:3 64:3 65:3 66:3 67:3 68:3 68:3]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Container registryのレート制限について]]></title>
+        <id>hatenablog://entry/6802418398332618640</id>
+        <link href="https://knqyf263.hatenablog.com/entry/2025/02/28/210820"/>
+        <updated>2025-02-28T12:08:20.000Z</updated>
+        <summary type="html"><![CDATA[GitHub Container “R”egistryではなくGitHub Container “r”egistry が正しいと信じているのですが、誰か正解を知っている人がいたら教えて下さい。最初のブログ ではGitHub Container Registry と書いていましたが、その後はGitHub Container registryになりドキュメントでもContainer registryになっているので、やはりContainer registryなのかなと思ってますが、これが気になりすぎてGHCRについて触れるのがいつも憚られています。
+Docker Hubのレート制限について
+要約
+背景
+調査
+回避策
+GITHUB_TOKENについて
+備考
+余談
+まとめ
+Docker Hubのレート制限について
+2025年4月1日からDocker Hubの制限がいよいよ厳しくなり、未認証ユーザは1時間で10回しかpullできないようになります。
+www.docker.com
+元々はこれらの変更は2025年3月1日から適用される予定で、しかも認証ユーザでも1時間で40回制限だったのですが、さすがに急すぎて厳しいという声があったのか4月1日に延期され、認証ユーザは100回制限になりました（未認証ユーザは変わらず10回）。
+www.docker.com
+そういう背景もあり他のコンテナレジストリへの移行を検討している人もいるかと思います。その候補としてGitHub Container registry （以下GHCR）も入ってくる可能性が高いのでこの記事を書いています。
+要約
+GHCRにはレート制限は基本的にない（2025/02/28現在）ので気にしなくてよいです。
+　　終
+制作・著作
+━━━━━
+　ⓃⒽⓀ
+ただし、organization単位で集計して44,000 req/min を超…]]></summary>
+        <author>
+            <name>knqyf263's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「週刊プラグインレビュー」jatinchowdhury18 / ADAA Plugin]]></title>
         <id>https://note.com/massmasaoki/n/nbe5b94512a51</id>
