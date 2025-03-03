@@ -7236,21 +7236,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398309559315/1733502402"
-        },
-        {
-          "id": "hatenablog://entry/6802418398305178847",
-          "author": null,
-          "description": "ScalaでDockerイメージを作る話は定期的に書いている。しかし今回が一番簡単です。\nblog.3qe.us\nblog.3qe.us\nblog.3qe.us\nまじで何回書いてんだという話だが、Dockerコンテナはあまりにも日常の一部になってしまっているので、ScalaでもDockerコンテナが簡単に作れないと困るのだ。\n今回はsbt-jibというsbtプラグインを使ってScalaが動くDockerイメージを作成する。\n環境\n現時点で最新のバージョンを利用しているため、適宜読み替えてほしい:\nScala 3.5.2\nsbt 1.10.6\nsbt-jib 1.3.7\njib-core 0.27.2\njib\njibとは、JavaアプリケーションをDockerイメージ化するためのツールキットだ。\ngithub.com\ncloud.google.com\njibには以下のような特徴がある:\nDockerを経由せずに直接イメージを生成する\n\n\nDockerイメージのベストプラクティスといったものに左右されない\nDockerデーモンがなくても良い\n比較的？イメージも小さくまとまる\nイメージ生成が高速\n変更に対してイメージの差分も小さい\nsbt-jib\nそんなjibをsbt上から簡単に利用できるプラグインがsbt-jibだ。\ngithub.com\nこのプラグインを利用すると、jibを自動的に呼び出してアプリケーションをDockerコンテナ化してくれる。\nsbt-jibを利用するには、まずproject/plugins.sbtに以下のように記述する:\naddSbtPlugin(\"de.gccc.sbt\" % \"sbt-jib\" % \"1.3.7\")\nlibraryDependencies += \"com.google.cloud.tools\" % \"jib-core\" % \"0.27.2\"\n\n\n\nlibraryDependenciesは普通はbuild.sbtに書くが、今回はproject/plugins.sbtに書くことに注意。\n最後に、いくつかの設定をbuild.sbtに書く:\n// イメージの日時を作成日時にする\njibUseCurrentTimestamp := true,\n// ローカルで使うだけなら空白でよい\njibRegistry := \"\",\n// デフォルトだとorganizationになる\njibOrganization := \"windymelt\",\n// デフォルトだとプロジェクト名になるが、プロジェクト名にスペースが入っていたりすると動かないのでここで指定する\njibName := \"sbt-jib-exercise\",\n\n\n\nたとえば設定例は以下の通り:\n// build.sbt\nval scala3Version = \"3.5.2\"\n\nlazy val root = project\n  .in(file(\".\"))\n  .settings(\n    name := \"sbt-jib exercise\",\n    version := \"0.1.0-SNAPSHOT\",\n    scalaVersion := scala3Version,\n    jibRegistry := \"\",\n    jibOrganization := \"windymelt\",\n    jibName := \"sbt-jib-exercise\"\n  )\n\n\n\nこれでsbt jibImageBuildを実行するとwindymelt/sbt-jib-exercise:0.1.0-SNAPSHOTが作られる。jibに直接作らせるのではなくDockerも利用してイメージを作る場合はsbt jibDockerBuildとする。image successfully created & uploadedと表示される。何も指定していなくてもDockerhubにアップされているっぽい？調査する。\n他にもポート解放用の設定などがあるのでドキュメントを読んでみることをおすすめする。\nリポジトリにpushする\nリポジトリにpushするには、jibRegistryをghcr.io/namespaceなどのように設定した後、docker login レジストリし、docker push イメージするだけでよい。まあこのへんは普通。",
-          "link": "https://blog.3qe.us/entry/2024/12/04/001105",
-          "publishedOn": "2024-12-03T15:11:05.000Z",
-          "wordCount": 1477,
-          "title": "sbt-jibでScalaのDockerイメージを簡単に作ろう",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398305178847/1733466642",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398305178847/1733466642"
         }
       ]
     },
