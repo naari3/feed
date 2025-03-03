@@ -166,6 +166,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398333452063",
+          "author": null,
+          "description": "今日はメッセージ数の調査です。\nV16 RISE 38 x 3\n　　　　　　　　　１　　　　　　　　　２　　　　　　　　　３　　　　　　　　\n１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８\n【あきら】メッセージ・・・・・・・・・・・・・・・・・・・・・・・・・・・・\n【かりん】メッセージ・・・・・・・・・・・・・・・・・・・・・・・・・・・・\n・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・\n\nGBA 30 x 3\n　　　　　　　　　１　　　　　　　　　２　　　　　　　　　３\n１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０\nあきら：メッセージ・・・・・・・・・・・・・・・・・・・・・\nかりん：メッセージ・・・・・・・・・・・・・・・・・・・・・\n・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・\n禁則文字や、改行後のキャラクタ名分の飛ばしも不要。調べたところ最長メッセージも全然収まるので大丈夫そうです。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/03/03/190532",
+          "publishedOn": "2025-03-03T10:05:32.000Z",
+          "wordCount": 473,
+          "title": "rise移植6",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398333452063/1740998300",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398333452063/1740998300"
+        },
+        {
           "id": "hatenablog://entry/6802418398333101538",
           "author": null,
           "description": "画像関係は戦闘シーン背景以外のコンバートは終わりました。この背景についてはスクリプトの内容を読んでから考えるつもりでいます。とりあえずロムの内訳はこんな感じになりました。音声の質はもう１段階上げられるかもしれません。さてさて明日からはスクリプトをガンガン解析していこうと思います。\nimg 9.9MB\nraw 11.2MB\nfmx 1MB（予想）\ntxt 100KB（予想）\nrom 300KB（予想）\n----\n合計 23.6MB（予想）",
@@ -9690,6 +9705,23 @@
           "publishedOn": "2024-12-04T00:28:04.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2024.12.4",
+          "imageUrl": null
+        }
+      ]
+    },
+    {
+      "title": "HB2000",
+      "feedUrl": "https://hbmusicgame.github.io/index.xml",
+      "siteUrl": "http://localhost:1313/",
+      "articles": [
+        {
+          "id": "http://localhost:1313/article/1/",
+          "author": null,
+          "description": "今後なんか書きます\nよろしくお願いします",
+          "link": "http://localhost:1313/article/1/",
+          "publishedOn": "2025-01-29T14:00:23.000Z",
+          "wordCount": null,
+          "title": "最初の記事",
           "imageUrl": null
         }
       ]
