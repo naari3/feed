@@ -78,6 +78,49 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">useCallback便利 / 👶赤ちゃん👶の自覚を持つ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/03/04/235200" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Scalaおじいちゃんではある一方、自分はReact👶赤ちゃん👶なので、ことReactについてはしばしば初歩的なつまづきをやってしまう。もう本当にうんざりするほどしょうもないミスをする。本格的にReactやりだしてから1年ちょいくらいだけど、全然ヘボい*1。ヘボいなりにガラクタを作ることはできていて、
+marumo.capslock.dev
+先日はこういうガラクタを作っていた。Bootstrap最高。キャッチアップしてFULL STACK ENGINEER...になりたい。
+今日はuseMemoを使っていたら、関数返すならuseCallbackでいいよとレビューしてもらった。そういえばそうだった。
+import { useMemo, useCallback } from &#x27;react&#x27;;
+
+const cb &#x3D; useMemo(() &#x3D;&gt; {
+  return () &#x3D;&gt; {
+    console.log(&#x27;this is memoised function&#x27;)
+  }
+}, [dep1, dep2, /* ... */])
+
+// this is equivalent to:
+const cb2 &#x3D; useCallback(() &#x3D;&gt; {
+  console.log(&#x27;this is memoised function&#x27;)
+}, [dep1, dep2, /* ... */]);
+
+
+
+本当は一回聞いたらちゃんと覚えなければならないのだが・・・。
+ぜんぜん不慣れな領域にいると、得意分野でできるつもりで振る舞って全然うまくいかず、アレ？と一時停止するのだが、そういえば俺この分野👶赤ちゃん👶だったわ、と気付ける。👶赤ちゃん👶の自覚を持つことで、謙虚に学ぶ姿勢が得られる。
+なまじ自分に得意な分野があると、己の中に👶赤ちゃん👶な分野があることを忘れて、頓珍漢な事を主張してしまったりする。これは世の中でもよくあることで、野菜の専門家が原発を語っていたり、河川の専門家が歯車の専門家とバトルしていたりする。大抵の分野では自分は👶赤ちゃん👶であることを忘れてはならない。
+しかも、本物の👶赤ちゃん👶は謙虚であり、基本的にいつも泣いている。己が何も知らないことを知っているかのように・・・
+*1:ダニングクルーガーなんたらが正しいとすれば、そのうち完全に理解する時期が訪れるはず</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398333796422/1741099920" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -19387,7 +19430,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-03-04T14:01:39.461Z">2025-03-04T14:01:39.461Z</time>
+    <time id="build-timestamp" datetime="2025-03-04T15:01:53.098Z">2025-03-04T15:01:53.098Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
