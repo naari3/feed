@@ -2394,6 +2394,21 @@
       "siteUrl": "https://kiyo-shit.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398333854752",
+          "author": null,
+          "description": "音声入力と文章表現の差異について考えている\n\n\n現代でも口語と文語には若干の差がある\n\n\n文語では言い切り型や箇条書きなど、独自の表現方法がある\n一方、考え方そのものには口頭でも文章でも大きな違いはない\n音声入力した内容を論理構造を整えて出力するのは有効\n\n\n最近自分で試して、これは知見として得られた\n音声入力した文章を、自分が過去に書いてきた文体に合わせることで、話した内容が自分の文章そのものになるという体験をしている\n\n\nシンプルに過去の社内ブログ投稿をサンプルとして、指示を与えることで文体が揃っている\n出力の品質も高く満足している\n最近もてはやされる推論モデルについての知見\n\n\n推論モデル（例：o1 pro modeやo3-mini-high）は意外と自己流の味付けが強い\nサンプル文体を忠実に模倣させる指示を出しても、ザコシのものまねくらい誇張されてしまう\n今は非推論型のGPT-4.5を使っている\n\n\nGPT-4.5は文体の再現性がちょうど良い感じ\nハイブリッド型であるClaude 3.7 Sonnetよりも自分の文体に近い出力をするが、多少の試行錯誤（ガチャ）は必要\n再現性のレベルで言うとキンタロー。のものまね程度には到達している\n社内ブログは箇条書き形式で書いている\n\n\nこのブログではあまり使わなかった形式なので若干違和感がある\n\n\n文体や文章構成は時代とともに変化する\n2015年や2035年の文章データを食わせればまた違う結果が出てくるはず\nとりあえずやってみているというお披露目を兼ねてここに置いておく\nって感じで、これはガチャ2回で軽い修正のみ。めちゃくちゃ便利になってしまった。",
+          "link": "https://kiyo-shit.hatenablog.com/entry/2025/03/05/085841",
+          "publishedOn": "2025-03-04T23:58:41.000Z",
+          "wordCount": 499,
+          "title": "音声入力の結果を俺らしくする",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208692334729889879/6802418398333854752/1741132721",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729889879/6802418398333854752/1741132721"
+        },
+        {
           "id": "hatenablog://entry/6802418398332430764",
           "author": null,
           "description": "骨しゃぶりさんのブログを読んで音声入力を改めて試してみようと急に思い立った\n\n\n日常生活では家族とのSlackのやりとりなどで音声入力を使うことがある\n\n\n短文ならキーボードより音声で済ませた方が早いから\n一方、長い文章を書く時には使わなかった\n\n\n自分の考え方の癖として、ぼんやりとしたゴールイメージに対して試行錯誤しながら解像度を上げていく書き方をしている\nトップオブザヘッドでゴールに向かっていくような書き方ができない\n音声入力だと話が途中であっちこっちに行きやすい\n長文入力に音声入力を使おうと思ったことがなかった（試したがうまくいかなかった）\n「普通にアウトライナー使えばいいじゃん」という気持ちになっていた\n骨しゃぶりさんのブログに書いてあった方法で考え直した\n\n\n適当にしゃべっても生成AIがいい感じに構造化してくれれば、論理的に成立した構造化されたアウトプットができるのでは\nこれはもっと早く試してみればよかったと思い立った\n余計なことを気にせず、話があっちこっちに行っても\n\n\n誰かと話しているつもりで音声入力し\nそれを構造的にまとめてもらうやり方でアウトプットのスピードが出る\n適当にしゃべりながら文章を音声入力しても、最終的に生成AIがいい感じに構造的にまとめてくれれば\nゴーストライター的な扱い方ができて便利なのではないかと思っている\nいいじゃん。\nこれはObsidianに直接macの音声入力を使って入力したテキストをObsidian Copilotに構造化して出力してもらうようなCustom Promptを作ってそこに投げ込んだモノ。モデルはClaude 3.7 Sonnetを使った。\nObsidian Copilotは勢いよく$250一発払いでのBelieverプラン（LifeTimeプラン）にしたことで、copilot-plus-flashという裏がgemini 2.0 flashのモデルに投げ放題なのだが、copilot-plus-flash, gpt-4o, claude-3.7-sonnetで比較した感じ、これはもうシンプルにClaudeが良いまとめ方と文体維持ができていたのでこれでやってみている。",
@@ -8177,6 +8192,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=43136",
+          "author": "mamosuke",
+          "description": "PlayStationベータプログラム,rpcs3-android alpha-2,FPKGi 0.87.3 [Nightly],BwE PS5 NOR Generator v1.02,BwE PS4 FSMTool (& Rebuilder) v1.0,duckstation v0.1-8675,Savvy Manager v3.5.0,NINTV-DS v6.1,ScePSX Beta 0.06,shadPS4 Pre-release-shadPS4-2025-03-04-dc52cfb,PCSX2 v2.3.205,Ryujinx Canary-1.2.428→→→この記事の続きを読む\nGameGaz Daily 2025.3.5 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025030543136/",
+          "publishedOn": "2025-03-04T23:04:31.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.3.5",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=43134",
           "author": "mamosuke",
