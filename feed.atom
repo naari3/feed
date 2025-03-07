@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-03-07T11:01:39.957Z</updated>
+    <updated>2025-03-07T12:02:11.581Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -12170,35 +12170,6 @@ ISUCONやると聞いていてもたってもいられずメン募したのだ�
 GameGaz Daily 2024.12.8 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[devkitProさん・・・。]]></title>
-        <id>hatenablog://entry/6802418398309853996</id>
-        <link href="https://akkera102.hatenablog.com/entry/2024/12/08/082421"/>
-        <updated>2024-12-07T23:24:21.000Z</updated>
-        <summary type="html"><![CDATA[私のプロジェクト一式（wikiのサンプル含む）全てコンパイル通らなくなってるじゃないですか。やだー。
-# Link _bin/test.elf
-C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld.exe:--defsym:1: undefined symbol `__sync_synchronize_none' referenced in expression
-collect2.exe: error: ld returned 1 exit status
-調べたら今回のバージョンでgba.spacesが変わっていました。
-%include <sync-none.specs>
-
-*link:
-+ -T gba_cart.ld%s --gc-sections --no-warn-rwx-segments
-
-*startfile:
-gba_crt0%O%s crti%O%s crtbegin%O%s
-1行目のsync-none.specsは以下のように定義されています。
-%rename link sync_sync_link
-
-*link:
---defsym=__sync_synchronize=__sync_synchronize_none %(sync_sync_link)
-んでこの「__sync_synchronize_none」なるものは「libgcc.a」で定義されている。ようするに私のmakefileで「-nostdlib」していることが原因。ld.exeはstdlibの「libgcc.a」内で定義されている「__sync_synchronize_none」が行方不明でどうなってんの？怒っているわけだ。あーー・・・古いgba.spacesは自分のプロジェクトに移譲で。
-追記：どうもgcc側の対応のようです。
-github.com]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

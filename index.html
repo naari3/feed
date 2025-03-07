@@ -17326,50 +17326,6 @@ ISUCONやると聞いていてもたってもいられずメン募したのだ�
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2024-12-07">2024-12-07</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">devkitProさん・・・。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2024/12/08/082421" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>私のプロジェクト一式（wikiのサンプル含む）全てコンパイル通らなくなってるじゃないですか。やだー。
-# Link _bin/test.elf
-C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld.exe:--defsym:1: undefined symbol &#x60;__sync_synchronize_none&#x27; referenced in expression
-collect2.exe: error: ld returned 1 exit status
-調べたら今回のバージョンでgba.spacesが変わっていました。
-%include 
-
-*link:
-+ -T gba_cart.ld%s --gc-sections --no-warn-rwx-segments
-
-*startfile:
-gba_crt0%O%s crti%O%s crtbegin%O%s
-1行目のsync-none.specsは以下のように定義されています。
-%rename link sync_sync_link
-
-*link:
---defsym&#x3D;__sync_synchronize&#x3D;__sync_synchronize_none %(sync_sync_link)
-んでこの「__sync_synchronize_none」なるものは「libgcc.a」で定義されている。ようするに私のmakefileで「-nostdlib」していることが原因。ld.exeはstdlibの「libgcc.a」内で定義されている「__sync_synchronize_none」が行方不明でどうなってんの？怒っているわけだ。あーー・・・古いgba.spacesは自分のプロジェクトに移譲で。
-追記：どうもgcc側の対応のようです。
-github.com</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398309853996/1733615323" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2024-01-16">2024-01-16</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19297,7 +19253,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-03-07T11:01:39.913Z">2025-03-07T11:01:39.913Z</time>
+    <time id="build-timestamp" datetime="2025-03-07T12:02:11.540Z">2025-03-07T12:02:11.540Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
