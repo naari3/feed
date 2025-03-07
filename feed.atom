@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-03-07T10:01:38.371Z</updated>
+    <updated>2025-03-07T11:01:39.957Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2025年2月の新機能・機能改善をお知らせします]]></title>
+        <id>hatenablog://entry/6802418398334534034</id>
+        <link href="https://staff.hatenablog.com/entry/2025/03/07/190358"/>
+        <updated>2025-03-07T10:03:58.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログとはてなCMSの両サービスでは日々新機能の開発や機能改善を行っております。本記事では、1ヶ月間に行った両サービスの機能修正や改善についてまとめてお知らせいたします。
+機能修正・改善（はてなブログ、はてなCMS共通）
+Mastodonへの共有時に記事の投稿時間が正しく表示されるようになりました
+記事ページのメタ情報のうち、記事の投稿日時に関する情報をOGP（Open Graph Protocol）の仕様に準拠する形で修正しました。これによりMastodonへの共有時に記事の投稿時間が正しく表示されるようになりました。
+はてなブログの機能修正・改善
+独自ドメインを設定していても「はてなによる広告を表示しない」の設定項目は表示させるようにしました
+2024年7月11日より独自ドメインを設定中のブログでは、はてなによる広告は非表示とし、設定項目も削除しておりました。しかし、設定項目がないことでむしろはてなによる広告が表示されていないことが分かりづらくなっていたため、独自ドメインの設定にかかわらず設定項目を常に表示するようにしました。なお、独自ドメイン設定中は当該設定を変更することはできません。
+広告を非表示「はてなによる広告を表示しない 」
+
+
+
+    
+はてなCMSの機能修正・改善
+コンポーネント機能に以下の改善を行いました
+
+コンポーネントが複製できるようになりました。これにより、既存のコンポーネントを簡単に再利用できるようになり、作業効率が向上します。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2025年3月-1】2値めちゃ服用おくすりウィークエンド]]></title>
         <id>hatenablog://entry/6802418398334343222</id>
