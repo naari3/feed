@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-03-09T09:01:37.846Z</updated>
+    <updated>2025-03-09T10:01:49.946Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[テプラを繋いでからExcelが起動しなくなったときはテプラのプリンタを既定から外すと良い]]></title>
+        <id>hatenablog://entry/6802418398335096621</id>
+        <link href="https://blog.3qe.us/entry/2025/03/09/185002"/>
+        <updated>2025-03-09T09:50:02.000Z</updated>
+        <summary type="html"><![CDATA[後学のために備忘録。所用で帰省したらパソコンがおかしいと親に直す事を下命されたのでフ〜ンといじっていたら掲題のとおり。
+エクセルがファイルを開く途中で固まってしまう
+テプラと最近接続した（ドライバを入れたのだなと推測）
+との話が得られた。ネットで調べると類似のトラブルがあり、こちらはフリーズしないが改ページの罫線がおかしなことになるとのことだった。
+Windowsのプリンタの設定から、「Windowsが既定のプリンタを指定する」みたいなチェックを外し、既に使っている別のプリンタを既定に設定し直したところ完全に直って解決。
+なんでこんなこと起こるのか謎だが、エクセルは改ページ情報をプリンタドライバあたりから引いているのであろう。そしてプリンタドライバはプリンタがオフラインだと上手く動かないのか、そこでフリーズしてたのかもしれない。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.3.9]]></title>
         <id>https://gamegaz.com/?p=43172</id>
@@ -12095,17 +12110,6 @@ nomolk.hatenablog.com
         <summary type="html"><![CDATA[僕の心のヤバイやつ【最新話無料】・Karte.158 僕は朝帰りした TVアニメPrime Videoにて見放題独占配信中！ 累計500万部突破！ SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!! 宝島社「このマンガがすごい! 」オトコ編、2年連続ランクイン!! 2020年第3位、2021年第9位!! 次にくるマンガ大賞2020 Webマンガ部門 第1位!! Anime Japan2021 第4回アニメ化してほしいマンガランキング第1位!! 第5回みんなが選ぶTSUTAYAコミック大賞第1位!!「王様のブランチ」など各メディアでも大絶賛!! 陽キャが憎くてたまらない…。只今、中二病真っ最中の市川京太郎は、学園カースト頂点の美少女・山田杏奈の殺害を企む！ だが、山田の意外な一面を知ってしまい…！？ 陽キャ美少女と陰キャ男子。縮まるハズのない２人の距離に奇跡は起きるか！？ 陰キャ・京太郎の青春が今、かなり静かに動き出す…！！ 【 番外編「ツイヤバ」はこちら 】]]></summary>
         <author>
             <name>チャンピオンクロス</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2024.12.10]]></title>
-        <id>https://gamegaz.com/?p=42555</id>
-        <link href="https://gamegaz.com/2024121042555/"/>
-        <updated>2024-12-09T21:39:18.000Z</updated>
-        <summary type="html"><![CDATA[Remote Lua Loader 1.5,chiaki-ng weekly-canary-release-3d1f8df83a3a003789d6c823fe67090d44e6b005,AtmoPack-Vanilla 2.7.4,nx.js v0.0.58,PCSX2 v2.3.53,shadPS4 Pre-release-shadPS4-2024-12-09-f1b23c6,StellaDS v8.0,Xenia Canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2024.12.10 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
