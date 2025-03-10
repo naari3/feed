@@ -17109,60 +17109,6 @@ GameGaz Daily 2024.12.11 first appeared on 大人のためのゲーム講座.</s
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">esbuildでScala.jsをビルドして呼べるようにするプラグインを作った話</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2024/12/11/000549" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>作った。
-www.npmjs.com
-github.com
-esbuildとはJSのバンドラであり、めちゃくちゃ高速に動作するのがウリである。
-esbuild.github.io
-そして今回自分が作製したこのプラグインを使うと、esbuildがScalaのコードのimportを見付けると勝手にビルド・バンドルするので、TSやJSのコードを書いているときに突然Scalaのコードを呼べる:
-// src/main/scala/Main.scala
-
-package scalamain
-
-import scala.scalajs.js
-import scala.scalajs.js.annotation._
-
-object Main {
-  // JS側から見えるようにする処理
-  @JSExportTopLevel(&quot;fib&quot;, moduleID &#x3D; &quot;scalamain&quot;)
-  def fib(n: Int): Int &#x3D; {
-    if (n  {
-  console.log(fib(10));
-}
-
-main();
-
-
-
-
-
-% node dist.cjs
-55
-
-
-
-この記事ははてなエンジニア Advent Calendar 2024の10日目の記事です。昨日はid:gurriumの『Maestroよかった』でした。世の中いろんなツールが発明されていて面白いですよね。
-giarrium.hatenablog.com
-しかも、Scala Advent Calendar 2024の記事でもあるのです…</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398310597426/1733895392" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19093,7 +19039,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-03-10T03:01:38.313Z">2025-03-10T03:01:38.313Z</time>
+    <time id="build-timestamp" datetime="2025-03-10T04:01:58.052Z">2025-03-10T04:01:58.052Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
