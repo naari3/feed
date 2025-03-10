@@ -78,6 +78,33 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">アーキテクチャとは環境に適合して進化した生物の形である</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/03/10/231710" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ソフトウェア開発のフンワリした話が好きなので、ここ最近思っていることを書きます。
+会社で、「アーキテクチャとは」みたいなのをわいわい会話したり持ち寄る会があって、色々な側面からアーキテクチャについて考えるのだが、そこでボンヤリ思っていたこと。
+オチはないです。特に何らかの文献に基いているわけでもない、空想です。
+アーキテクチャが生まれてからソフトウェアが生まれるのではない
+前提として、アーキテクチャの厳格な定義はない。なんらかの構造を生み出し、構造を制約するもの、くらいのニュアンスがある。「設計とは何か」みたいなレベルの解像度で使われる用語である。
+アーキテクチャとひとくちに言っても色々あるが、大きなレベルだとDDDとかクリーンアーキテクチャとかがあるし、もう少し小さくするとMVCとかがあって、小さいレベルでは async / await という仕組みも(言語のユーザではなく言語設計者が考えた)アーキテクチャだと言える。ある仕組みや制約を導入することで、全くの無秩序よりも、なんらかの最適な状態が提供される、という視線でアーキテクチャを見ると、言語機能もアーキテクチャである。
+こうしたなんとかアーキテクチャみたいなのも、ある日天啓を受けた預言者が人類に示したものではなく、ソフトウェア開発の泥沼で斃れていった死屍累々の上にこれならなんとかなりそう、みたいなプロトタイプが経験的に発掘された、石油のようなものだと思っている。この見方に立つと、JSONもアーキテクチャである。
+何が言いたいかというと、アーキテクチャが生まれてからそれに従ったソフトウェアが発生するのではなく、人類が生み出す数多のソフトウェアのうち、なんらかの意味で成功し、生存を続けることができたソフトウェアにおける共通のパターンが、人間の主観的フィルタを通じて統合されて暗黙知から引き上げられてアーキテクチャが生まれると…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398335433035/1741616230" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/anochan" target="_blank"
               rel="noopener">動かない鳥のアイコンの民</a></h3>
           <section class="articles-per-source">
@@ -17081,34 +17108,6 @@ seed値は-1191969844でした。
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
-              rel="noopener">クックパッド開発者ブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">One experience 検索移行の話</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2024/12/11/111200" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>こんにちは、レシピ事業部検索チームのオリギル(@orgil_)です。
-先日、この開発者ブログで紹介されたOne experienceプロジェクトによって、クックパッドはプロダクト基盤をグローバル版のシステムに移行しました。私はこのプロジェクトにおいて検索の領域で移行の進行、開発を担当していました。このブログでは検索システムの移行について紹介します。
-
-グローバルのシステムに寄せた理由
-One experience によってクックパッドは検索基盤をグローバル側のシステムに移行しました。プロジェクト発足当初、日本とグローバルのどちらのシステムに寄せるかをいろんな観点から検討しました。日本ではSolr、Ruby、ECSなどで動くVoyagerというシステム、グローバルではElasticsearch、Python、k8s、Kafkaなどを用いたglobal-search-v2(通称GS2)という検索システムが動いています。検討の際、どちらのシステムも一長一短で、特段優劣をつけがたいものでした。
-検索アルゴリズムに関しては両システムで考え方は一緒でした。辞書ベースでクエリ拡張をし、ドキュメントのタイトルや材料などにマッチスコアを付け、辞書の属性によって細かい調整をするようなスコアリングアルゴリズムは両方にあります。
-またドキュメントの検索への反映時間はどちらも同等と呼べるものでした。GS2はKafkaを用いたイベント処理システムを用いて、ほぼ即時反映を実現しています。Voyagerでも定期的な同期をするようになっており、レシピの変更が最短5分で検索結果に反映されるようになっています。下記のブログで触れているように、プロダクトが求めるユーザー体験を実現するためには5分でドキュメントが反映されれば十分であるため、どちらのシステムでも同様な価値を届けられます。
-
-VoyagerがGS2より…</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815724287123/6802418398310554437/1733883120" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19039,7 +19038,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-03-10T14:01:41.223Z">2025-03-10T14:01:41.223Z</time>
+    <time id="build-timestamp" datetime="2025-03-10T15:02:04.777Z">2025-03-10T15:02:04.777Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
