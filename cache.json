@@ -166,6 +166,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398336609479",
+          "author": null,
+          "description": "GBA dev discordよりちょっと拝借。体感でもわかるぐらいLorenzoooneさんのコード早かったからなあ。自分で計測したらどうかという話ですけど、このところ本当に横着ばかりしています。\nhttps://github.com/Lorenzooone/Pokemon-Gen3-to-Gen-X/blob/main/source/decompress.s",
+          "link": "https://akkera102.hatenablog.com/entry/2025/03/15/111444",
+          "publishedOn": "2025-03-15T02:14:44.000Z",
+          "wordCount": 455,
+          "title": "lz77 互換",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/98a002befc3d09c6a89e4d93790e678070765187/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250315%2F20250315110929.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/98a002befc3d09c6a89e4d93790e678070765187/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250315%2F20250315110929.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398336318548",
           "author": null,
           "description": "あと1週間ちょいで終わってしまいそうです。こりゃHoshiさんにもうちょっと早く音楽作れないか交渉しないといけないパターンやもしれません（汗。\n進捗５０／５３（残り３つはバトルシーン）\n\n■TODO\n・口パクなど速度を2.75倍→2.7倍に変更\n・リップシンクもっと厳密にする\n・デバッグメニュー追加\n・バトル自動勝ち、負け機能\n・ボリューム調整機能\n\n・バトル処理全般\n\n・バトル時のメニューBボタン戻り\n選択肢３つの場合で対応。戻り値65535\n\n・バトル時のHP表示\n処理をC言語へ移譲\n\n\n■時間があれば\nmGBAのDirectSoundプチノイズ\n\n\n■対応見送り\n164場面（index 39) 胸連続アニメない",
@@ -709,21 +724,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a4514d3f1784efcfb0b159d2916d0aa1ad0dfe1a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fb%2Fbaibukken%2F20241222%2F20241222230538.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398311878035",
-          "author": null,
-          "description": "このブログのタイトルをお覚えでしょうか?\n \n \n「思い出したら書きます」\n \n \n \n \nなので、今まで更新していなかったのは忘れていたからなんだよ!!\n \n \n\n \n \n \n \n \n \n \nどうも、買物件です。\n \n忘れてたとかじゃなくて普通にサボってただけだろ、と皆さんはお思いだと思います。\n \n \n \n \nまぁそうなんですけどね。\n \n \n \n普通に仕事して帰宅したらブログに割く時間が取れないンゴねぇ!!!!!\n最近は何もせず家帰って寝るだけ、みたいなのが多くて嫌になっちゃうね～～～。どうにかしたいけど、どうしようもない。\nとりあえず、私は元気なので皆さん安心してください。なんかTwitterもあんまり浮上してないんですけど、ちゃんと生きてますし、狂ってないし、鬱病とかになったりは、\"今の所は\"してないです。みんなも気を付けていこうな!\n \n \nおおまかな近況\n音MAD\nero\n \n \nおおまかな近況\n元気です。\nでも最近音楽をdigれてないで～～～～す。音楽が好きであるのは間違いないんですが、新しく曲を探しに行こうという気があんまり起きてないです。いやー少しまずい。\nゲーセンも少し遠くてなかなか行くことができていないんで少し険しい。いや、家でBMS環境整えればええやん、っていう話なんですけど、机がせまくて(整理できていなくて)全～～然何も進められてない。\n塗装ブース作るとか、フィギュア置き場作りたいと思って、机を買おうというのは考えてはいるんですが、考えてるだけで行動には移せていないです。そういうこと結構ある。\n良い感じの机と椅子が欲しいよ～～～～～～～、年末に何とか見繕うかな……とは思ってますわ。こんなん良いよ～～とかあったら教えてほしいんですけど。\n \nエロに関しては相変わらずです。まぁ楽しみにしててください。至高のエロの探求の道は険しい。エロ山岡史郎はまだまだ遠い。\n美エロ倶楽部を作ってエロの探求をします。多分方向性の違いで毎日殴り合ってます。気づいたらボクシングクラブになってましたワ。\n \n \n \n \n音MAD\n\n学年イチの陽キャ水原一平良すぎる。\n連想ゲーム式で素材がコロコロ変わっていくのめちゃくちゃ好きなんですよね。\n \n\nこっちも同素材、同じ構成だけど、ネタの密度が凄すぎる。\n最後の方無駄にアツい感じになってるの何なんだよ。きたあああああああああああああああああああああああああああああああああああ\n \n\n吉川流お更い実績とかいうジジイがﾎﾖﾎﾖ……言ってる素材がこんなにカッコよくなるの最高。動画の色味もかなり好きです。アングラ感いいすね。\n \n\n天才!!!!!!!!!〇〇を聞いているときの脳内シリーズ、全部天才すぎてズルいぜ。\n結局脳直のものって全て余計なプロセスを省いているから、大体破壊力が凄まじいんですよね。\n \n\nドク先は神\n最近自分の中ではノウナイディスコが熱いです。\n \n\n一章メインの音MADって大体が古典淫夢で完成度が高いんですけど、その中でもめちゃくちゃ良いです。令和の今にDBをメインに据えるの渋すぎる。\n \n\n今年のDisco Necroporisきたああああああああああああああああああああああああああ\n今までの私的素材勢ぞろい、精鋭が揃ってる感じがして聞きごたえが抜群です。\n \n \n \n最後に\n \n\n去年のですけど。\n \nカラオケ画面出た瞬間、マジで大声出た。名MAD\n \n \n \n \nero\n \nガチャのハズレキャラを9999凸(完凸)したらエロシーンが解放された\n男の方が乱暴なのがちょっと……\nでも……\n \n今回はなんと……\n \n特別に……(通販番組)\n \n女がムチムチでエロいから最高で～～～～～～～す!!!!!!!!!!\nオホ声出てんのもいいっすね。これは戦争になるかもしれないですが、通常がメカクレだけど、時々透けて目が見えるの、かなりわびさびを感じます。千利休です。\n最終的にどちらとも満更じゃなくなってるのを見てアルカイックスマイルを浮かべながらシコってました。\n \n \n\n \n \n \n \n \n \n \n \nH?英知?探求性質!\nおっぱいがデカいと⇒嬉しい。\n \nそういうことよ。\n \n無知シチュみたいなのが多いんですけど、ちょっとプレイしてて不安になるぐらい無知すぎてビビります。\n倫理観がガバガバになってるからなんですかね。\n徐々にエロ女になっていくシチュっていうのはよくありますが、やはり良いものですね(データ系キャラ)\n \nゲームとしてのボリューム、エロのボリューム、どちらもかなりデカめなので、なんかスケベゲーやりて～～っていう人は是非。乳首デカいのめちゃくちゃエロいぜ!!!!!!!!!!!!\n \n \n \n \n \n \n \n \n \n \n \n \n \n地獄の沙汰もマラ次第",
-          "link": "https://baibukken.hatenablog.com/entry/2024/12/15/224240",
-          "publishedOn": "2024-12-15T13:42:40.000Z",
-          "wordCount": 485,
-          "title": "2024/12/15",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/64ddf1def808acf27e3c16ec6e4bbf21bfaf2b42/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fb%2Fbaibukken%2F20241215%2F20241215204253.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/64ddf1def808acf27e3c16ec6e4bbf21bfaf2b42/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fb%2Fbaibukken%2F20241215%2F20241215204253.jpg"
         }
       ]
     },
