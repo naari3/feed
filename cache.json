@@ -1055,6 +1055,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398337186445",
+          "author": null,
+          "description": "zellij.dev\n最近、zellij を使ったワークフローが手に馴染んできたので、VSCode (実際は Cursor 使ってる) の Terminal でも自動起動するようにした。\nドキュメント によると eval \"$(zellij setup --generate-auto-start zsh)\" って書いておけば自動起動できるのだけれど、各リポジトリ毎に別の Session になってほしいので以下のようにした。\n# zellij https://github.com/zellij-org/zellij\nif [[ \"$TERM_PROGRAM\" == 'vscode' ]]; then\n  if [[ -z \"$ZELLIJ\" ]]; then\n    zellij attach --create \"$(basename \"$(git rev-parse --show-toplevel 2>/dev/null || echo \"$PWD\")\")\"\n    exit\n  fi\nelse\n  if [[ -z \"$VSCODE_RESOLVING_ENVIRONMENT\" ]]; then\n    # export ZELLIJ_AUTO_ATTACH=true\n    export ZELLIJ_AUTO_EXIT=true\n    eval \"$(zellij setup --generate-auto-start zsh)\"\n  fi\nfi\n\n\n\n補足として、通常のターミナル側の処理で $VSCODE_RESOLVING_ENVIRONMENT を見ているのは、VSCode の起動時にユーザーのシェルの設定を読みに行く処理が失敗してぶっ壊れるので回避策。",
+          "link": "https://blog.nishimu.land/entry/2025/03/17/123727?utm_source=feed",
+          "publishedOn": "2025-03-17T03:37:27.000Z",
+          "wordCount": 309,
+          "title": "VSCode (Cursor) のTerminalでもzellijを自動起動したい",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398337186445/1742182647",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398337186445/1742182647"
+        },
+        {
           "id": "hatenablog://entry/6802418398337035031",
           "author": null,
           "description": "blog.nishimu.land\nzsh に戻ってから引き続き zim を使っていますが、久しぶりに眺めたら初期化方法が変わっていたので追従した。\nまずは zim のアンインストール手順を実施して、既存の設定などを全て削除した。\n具体的には .zshrc の先頭に書いていた初期化処理を消して、.zimrc と .zim ディレクトリも消しておいた。\nHomeBrew でインストールするようになってるのでインストールする。\n$ brew install --formula zimfw\n\n\n\n次に .zshrc の先頭にあたらしい初期化処理を書く。\n# https://github.com/zimfw/zimfw\nZIM_HOME=\"${XDG_CONFIG_HOME}/zim\"\n# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.\nif [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then\n  source \"$(brew --prefix)/opt/zimfw/share/zimfw.zsh\" init\nfi\n# Initialize modules.\nsource ${ZIM_HOME}/init.zsh\n\n\n\n最後に .zimrc を書いていく。設定も出来るがデフォルトのままで\"${ZDOTDIR}/.zimrc\" に配置した。\nCreate ~/.zimrc の全部入りを採用した。\n追加でインストールしたプラグインは以下。zsh-users/zsh-syntax-highlighting はデフォルトと被るのでオフにしている。\n# https://github.com/Aloxaf/fzf-tab\n# before syntax-highlighting / zsh-autosuggestions\nzmodule Aloxaf/fzf-tab\n\nzmodule olets/zsh-abbr\nzmodule zdharma-continuum/fast-syntax-highlighting\nzmodule zsh-users/zsh-history-substring-search\n\n\n\nこれで zsh を起動すると初期化処理が走って、各種モジュールもインストールされる。\n(compinit のエラーがたまに出ていたのが解消してスッキリ。)",
