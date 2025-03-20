@@ -166,6 +166,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398337927225",
+          "author": null,
+          "description": "バトル実装も終わりました！あとはＢＧＭの納品をまってリリースです。うーんリハビリ期間だったんですけどね・・・５月まで粘るつまりが・・・。\nそうそう、mGBAのプチノイズは解消方法はわかりましたけど、実機に不具合でそうなのでやめました。プチノイズはmGBAの固有問題だからそのうち治るということでほっとくことにします。\n■TODO\n・バトル自動勝ち、負け機能\n\n■対応見送り\n・164場面（index 39) 胸連続アニメ\n・バトルの背景アニメ\n・リップシンクもっと厳密にする\n・ボリューム調整機能\n・mGBAのDirectSoundプチノイズ",
+          "link": "https://akkera102.hatenablog.com/entry/2025/03/20/111759",
+          "publishedOn": "2025-03-20T02:17:59.000Z",
+          "wordCount": 460,
+          "title": "rise移植15",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/c8d96c9c701bb08b1407263e52eaa7dbc74752ff/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250320%2F20250320111108.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/c8d96c9c701bb08b1407263e52eaa7dbc74752ff/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250320%2F20250320111108.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398337543242",
           "author": null,
           "description": "GBAのミキシングとえいばDekuさんのチュートリアル。大昔お世話になったというか、理解できずに撤退したなさけない記憶しかないです。今読むとそんなことなかったりしますね・・・。ああ、少しは前に進めたのかもしれません。まあDAY2までしか読めてませんけど（ぉ。処理はけっこう重たいのでボリューム分の計算を省けばVCNT20->10ぐらいにはなると思います。\n\ngithub.com",
