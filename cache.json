@@ -166,6 +166,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398339109482",
+          "author": null,
+          "description": "ひと段落したかったのでtwitterに告知しました。前回より変更点は１つだけです。バトルスキップメニューの日本語表記（勝つ、負ける）を英語（WIN,LOSE）に変更しました。元々メニューは英語表記に使用と思っていたのでつい凡ミスです。英語にした理由はドットが少なく背景を占有しない、直角が多いので読みやすいという点かと思います。\n\nプログラムについてはここで打ち止め。音楽はもうしばらくかかりそうですので楽しみにしていてください。GW以降かかるかも・・・。うーん、予定より大幅に早く終わってしまって次どうしようかと悩む日々が始まりそうです。どうしよう！CTRはやりません。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/03/24/213113",
+          "publishedOn": "2025-03-24T12:31:13.000Z",
+          "wordCount": 451,
+          "title": "rise移植17",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398339109482/1742821361",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398339109482/1742821361"
+        },
+        {
           "id": "hatenablog://entry/6802418398338403842",
           "author": null,
           "description": "この前のミキシングコード、バッファ全体に>>3したら音量全体を8で割ったことになるんじゃないかと今更気がつきました・・・。実際に聞いてみたらたしかに小さい。\n\tfor(i=0; i<SND_BUF_SIZE; i++)\n\t{\n\t\ts32 tmp;\n\n\t\ttmp = 0;\n\t\ttmp += *p[0]++ * Snd.ch[0].vol;\n\t\ttmp += *p[1]++ * Snd.ch[1].vol;\n\t\ttmp += *p[2]++ * Snd.ch[2].vol;\n\t\ttmp += *p[3]++ * Snd.ch[3].vol;\n\t\ttmp += *p[4]++ * Snd.ch[4].vol;\n\t\ttmp += *p[5]++ * Snd.ch[5].vol;\n\t\ttmp += *p[6]++ * Snd.ch[6].vol;\n\t\ttmp += *p[7]++ * Snd.ch[7].vol;\n\n\t\t// >>6 to divide off the volume\n\t\t// >>3 to divide by 8 channels\n\t\tSnd.pBuf[i] = tmp >> 9;\n\t}\nそこで普通に加算してクリッピングしてみました。音割れがひどいので一回だけ割り算した結果がこちら。\n\tfor(i=0; i<SND_BUF_SIZE; i++)\n\t{\n\t\ts32 tmp;\n\n\t\ttmp = 0;\n\t\ttmp += *p[0]++ * Snd.ch[0].vol;\n\t\ttmp += *p[1]++ * Snd.ch[1].vol;\n\t\ttmp += *p[2]++ * Snd.ch[2].vol;\n\t\ttmp += *p[3]++ * Snd.ch[3].vol;\n\t\ttmp += *p[4]++ * Snd.ch[4].vol;\n\t\ttmp += *p[5]++ * Snd.ch[5].vol;\n\t\ttmp += *p[6]++ * Snd.ch[6].vol;\n\t\ttmp += *p[7]++ * Snd.ch[7].vol;\n\n\t\t// >>6 to divide off the volume\n\t\ttmp >>= 6;\n\t\t// adjust volume\n\t\ttmp >>= 1;\n\n\t\t// clipping\n\t\tif(tmp > 127)\n\t\t{\n\t\t\ttmp = 127;\n\t\t}\n\t\telse if(tmp < -127)\n\t\t{\n\t\t\ttmp = -127;\n\t\t}\n\n\t\tSnd.pBuf[i] = tmp;\nうーん、独学だと合っているかどうかわからないのが難点ですねー。>>1（２で割る）やっておくと8ch全部使っていた時、少し上限オーバーするぐらいです。最初よりボリュームはマシになったのでＯＫってことにしよう・・・。",
@@ -6619,6 +6634,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398339119086",
+          "author": null,
+          "description": "ケースが剥がれて壊れていたワイヤレスイヤホン（Nothing Ear）を接着剤でくっつけた。別件でアロンアルフアを買っていたので試したところ上手くくっついたのでラッキー。\n普段はAZ-80を使っているけれど、重さが全然違うので着け心地が良い。AZ-80だと軽く運動したら吹っ飛んでいきそうな怖さがあるけど、Nothing Earは軽くて薄いので良い。",
+          "link": "https://blog.3qe.us/entry/2025/03/24/220610",
+          "publishedOn": "2025-03-24T13:06:10.000Z",
+          "wordCount": null,
+          "title": "■",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398339119086/1742821570",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398339119086/1742821570"
+        },
+        {
           "id": "hatenablog://entry/6802418398338381740",
           "author": null,
           "description": "今日はもう、うんざりするほど、全くもって、最悪に、元気が無かった。めしもウーバーイーツで済ませてしまった。高いのに。仕事の進みもさっぱりだった。花粉症は、薬で治った。\n体調というか具合の浮き沈みは概ね部屋の片付き具合とリンクしていて、具合が悪くなってくるとだんだんゴミが溜まっていき、さらに元気のなさが加速し、玄関にゴミ袋が3つくらい蓄積されたところで限界を迎え、息も絶え絶えゴミを捨てて部屋を掃除しちゃんと風呂に入ると元気フェーズに転じる、という具合になっている。\nセルフネグレクトとかいう高級な言葉があるが、これを下町風に言えば自暴自棄（ヤケ）であり、こうなりやすいのだな、と我ながら思う。\n昔から自分のことを大切にしない。体調を崩しても病院に行かない。報いだからだ。酔って壊れようとする。壊れているのは向こう側だからだ。社会人になってからようやく常備薬を飲むようになった。その一方で、こんなやついつ死んでも良いように思っている。罪に対する罰だからだ。窮屈に畳んだ折り紙が戻らないように、自分を大切にしない癖がついた。一度粗末に扱われたので、べコッと壊れた潜水艦のように凹んで変な模様がついてしまったのだ。もう俺はみんなに捨てられたんだ、という意識ばかりが焼き付いている。偉いのは、誰かに泣きついたりしないことだ。\n自重で崩壊してゆくブラックホールの突っ張り棒として君臨しているのが服とか家具、趣味の文筆である。強力な重力をかろうじて押し留めてくれる。ある意味、社会的化粧である。まあそれはそうと、もっと自分を大切にしたほうがいい。居場所を大切にしたほうがいい。\n少しずつやっていくしかない。",
@@ -7077,6 +7107,16 @@
       "feedUrl": "https://blog.lai.so/rss/",
       "siteUrl": "https://blog.lai.so/",
       "articles": [
+        {
+          "id": "67e14d3c519c880001bd725c",
+          "author": "laiso",
+          "description": "最近、「ホームディレクトリを消す」「勝手にgit reset --hardしてしまった」などのAIエディタの暴走エピソードの話を",
+          "link": "https://blog.lai.so/are-ai-editor-guardrails-effective/",
+          "publishedOn": "2025-03-24T12:44:42.000Z",
+          "wordCount": null,
+          "title": "AIエディタのガードレールは機能しているのか？",
+          "imageUrl": null
+        },
         {
           "id": "67d96135e73ad1000175500e",
           "author": "laiso",
