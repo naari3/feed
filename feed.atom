@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-03-26T20:02:25.490Z</updated>
+    <updated>2025-03-26T20:21:29.259Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10087,6 +10087,41 @@ YOTYとは？
 ブログ: JSer.…]]></summary>
         <author>
             <name>Web Scratch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2024年 振り返り]]></title>
+        <id>hatenablog://entry/6802418398316194865</id>
+        <link href="https://rinsuki.hatenablog.jp/entry/2024/12/31/194653"/>
+        <updated>2024-12-31T10:46:53.000Z</updated>
+        <summary type="html"><![CDATA[TL;DR: 今年は総合するとあんまりよくない年だった。
+あったことを端的に書く。
+あったこと
+大吉を引いた
+ミニPCを買った
+バイトをやめることになった
+その他様々な良くないことがあった
+見た・聴いたもの
+アニメ
+ゲーム
+音楽
+漫画
+作ったもの
+NicoReWatch (今はもう動かない)
+python-xldparser
+あとがき
+あったこと
+大吉を引いた
+……のだが、TL;DR に書いてあるようにあんまり良いことは起きなかった。引いたのが1月の終わりのほうだから遅すぎてキレられたという可能性はある。
+ミニPCを買った
+Minisforum の UM790Pro を買った。CPU は Ryzen 9 7940HS で、奮発して RAM 64GB と NVMe 1TB を積んだやつ (増設がだるかったし、Amazon.co.jp (のたぶん転売屋)からはベアボーンが買えなかったので……)
+Arch Linux を入れてその上に QEMU/KVM で Windows を入れて iGPU をパススルーしてデレステのMVを流す (4Kでも60fpsで安定はしていなさそうだがそれなりに動く)、NVMeをもう一本刺す、USBでHDDをぶらさげて動作音を楽しむなど、楽しく暮らしている。
+(が AMD の GPU はパススルー関連でちょっと問題があるので人にはおすすめしない)
+バイトをやめることになった
+2023年の頭からバイトをしていたが、2024年末でやめることになった (実際には有給消化があったので実際の働き収めはもうちょっと前)。
+なんか転職活動をする気になれなかった (他の会社でやっていけるイメージがまったくなかったし、やりたいことがある会社も思いつかなかった) のでほとんどしなかったため当然何もなく、このままだと2025年から無職 aka 親の臑齧り になる (臑を齧らせて…]]></summary>
+        <author>
+            <name>rinsuki’s blog</name>
         </author>
     </entry>
     <entry>
