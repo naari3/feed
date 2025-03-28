@@ -78,6 +78,64 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Scalaの篩型ライブラリ Iron v3.0.0 がリリースされた / 構文がより簡潔になり、扱いやすく、強力に（ただし Scala 3.6.3 が必要）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/03/29/014816" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Scala 3 には篩型（refinement types）を実現するためのライブラリであるIronが存在する。
+blog.3qe.us
+このライブラリを使うと、非負整数とか、8桁の文字列とか、UUIDといった、元々の型に加えて制約を加えたものをそのまま型情報に載せて扱うことができる。詳しくは記事を読んでみてほしい。
+↑の記事にも追記したことだが、先日 Iron v3.0.0 がリリースされた。おめでとう！
+github.com
+この記事では、ほぼ上に書かれていることをなぞっているだけだが、 Iron 3 の変更について紹介する。
+また、公式にマイグレーションガイドが提供されている。
+iltotore.github.io
+Iron 3
+見ての通り Iron 3 は Iron の3つめのメジャーバージョンであり、いくつかの破壊的変更を含んでいる。しかしその差異は小さく軽微で、十数分もあれば訂正できてしまうようなものばかりだ。
+それどころか、いくつかの型定義が簡略化されており、より簡単に篩型を定義できるようになっている。順に見ていこう:
+破壊的変更: Scala 3.6.3 以上が必要になった
+コンパイラのバグに影響を受けていた箇所があったようで、これが修正された Scala 3.6.3 以降でなければ Iron 3 は動作しない。
+Ironのリリースポリシーは「可能な限りLTSに留まる」というものだが、メジャーバージョンアップにともなっていったん最新のScalaを利用しなければならなくなったようだ。このバグ修正が含まれた次回のLTSが発表されたタイミングで、IronがLTSにまた留まることになるはずだ。
+破壊的変更: RefinedTypeを作成する手順の簡略化
+従来のIronには、独自の篩型定義にapplyメソッドを付けて一般的なコンテナ型のように扱えるようにする機能が存在…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398340153515/1743181001" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/calpisco" target="_blank"
+              rel="noopener">calpisco</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">皆ごめん。刺さっちゃった。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/calpisco/n/n8f4bdefc1370" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>うわ～～～～～！！calpiscoですぅ～～～～。
+以前いまだけダブチ食べ美についてnoteを書いたんですけどぉ…。
+https://note.com/calpisco/n/n286e2e524570
+続きをみる</span>
+                  </div>
+                  <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/a8013fde94b147c37969e5ac41083ff29285d798.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/2ntgi" target="_blank"
               rel="noopener">こわれる</a></h3>
           <section class="articles-per-source">
@@ -17573,7 +17631,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-03-28T16:01:52.410Z">2025-03-28T16:01:52.410Z</time>
+    <time id="build-timestamp" datetime="2025-03-28T17:01:57.845Z">2025-03-28T17:01:57.845Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
