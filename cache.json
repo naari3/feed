@@ -2435,21 +2435,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/066c5c0808efc62ada569e9701b1f463873ccf84/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkumagi%2F20250125%2F20250125013556.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398316286701",
-          "author": null,
-          "description": "TL;DR 良い本、買うべき\nwww.oreilly.co.jp\n学部生時代に前作Binary Hacksに大変お世話になった上で、続編が出ると聞いて必ず買うつもりでいたら献本をいただいたので謹んでオススメしたい。\nこの本は低レイヤー寄りかつ実装寄りのTipsが89件載っている本で（と言っても用語集や文献案内などはTipsではないので実際はすこし少ないが）個々のTipsはちょっとした技術ブログぐらいの文量なのでさっと読めるし個々のTipsに依存関係は殆どないので興味のないところは飛ばし読みしても差し支えない構造をしている。\n実行ファイルフォーマットとかコンテナとかトレーシングとかファームウェアとかそういった系統の現代の知識がまとめて手に入る機会は意外と少なくて、LLMに訊けば大抵の知識のさわりは収集できる現代においても正確な情報の入手が意外と難しいのが低レイヤーである。その点がこの本を特に希少な物にしている。\nLLMについてもう少し言及すると、言語モデルに叩き込まれる学習量は今後とも増加の一途を辿ることは間違いなく、低レイヤーの知識も依然として増え続ける事は間違いない。しかしながら実際に低レイヤーの問題をチャットAI系のサービスの助けと共に解決しようとするとまず直面するのが「試行錯誤の過程を助けてくれない」という問題である。ハルシネーションで誤情報が提示されること自体は時間の経過と共にマシになると期待するにしても、そもそもソフトウェアエンジニアに要求される問題解決とはコードを提出することではなく、目の前のソフトウェアが期待に沿う動きをするまで付き合うことである。もしくは提示された期待がそもそも構造的に不可能であれば正しくそれを説明し、次善策を提示することさえも必要になる。そのためには座学ではなく生きた知識として低レイヤーの構造を理解しなくてはならない。\n何をもってして「理解」と呼ぶかは自明ではないのだが、僕の最近の持論としては「知識の外の自体に出くわした時にどこまで食い下がれるか」が特に重要であると感じている。科学という雄大なプロセスの中では仮説と実験と考察の繰り返しが必要であり、実験と考察についてはLLMが大いにサポートしてくれる余地があるのだが、仮説というステップがどうにかなる気がしてこない。「禅とオートバイ修理技術」にはこう書いてある。\n仮説を立てる作業は、科学の方法におけるあらゆるカテゴリーのなかで最も不可思議なものである。それがどこから生じてくるのかまったく分からない。どこかに腰をおろして自分の仕事に精神を集中させていると、それまで把握できなかったことが突然閃くのである。だがこの仮説は検証されるまでは真理ではない。また仮説はさまざまな検証を経て生み出されるものではないから、それはどこかのところに源を発している。\nソフトウェアエンジニアリングにおける試行錯誤とは科学的プロセスの一種であり「仮説」という不確かなものを必要としている（それは例えば「この行にログ出力入れてみたらわかるんじゃない？」とかに始まる）。プログラミングは論理的思考の塊とみなされがちだがその構成における重要なステップは悔しいほど直観に基づいている。その直観をどう養うかというと僕の知る限り「実際に手を動かして実物と向き合うこと」以外にない。その点においてBinary Hacks Rebootedはそのまま手を動かすのに向いた、すぐに実物と向き合えるコマンド群に満ちている。この本をただ読むだけでは足らず、手を動かして直観を血肉として養い続けた果てに構築される脳内モデルこそがこれからの10年を生きるソフトウェアエンジニアの強い武器となると僕は信じている。\n\nbinary hackをテーマにBingに作ってもらった画像",
-          "link": "https://kumagi.hatenablog.com/entry/binary-hacks-rebooted",
-          "publishedOn": "2024-12-31T09:24:16.000Z",
-          "wordCount": 395,
-          "title": "Binary Hacks Rebootedを読んで",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/eb0fe801a8d781ad46095b07b9c621c13a786fe1/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkumagi%2F20241231%2F20241231182314.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/eb0fe801a8d781ad46095b07b9c621c13a786fe1/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkumagi%2F20241231%2F20241231182314.png"
         }
       ]
     },
@@ -6121,18 +6106,7 @@
       "title": "くれがしら",
       "feedUrl": "https://note.com/qreg/rss",
       "siteUrl": "https://note.com/qreg",
-      "articles": [
-        {
-          "id": "https://note.com/qreg/n/n35a822a929d4",
-          "author": null,
-          "description": "決めます　またの名をいいね欄2024\nおすすめTL見始めたのがいいね欄消えてからなのでそれ以降のツイートが多めかも\nいっぱい埋め込みするから重かったらごめんね\n続きをみる",
-          "link": "https://note.com/qreg/n/n35a822a929d4",
-          "publishedOn": "2024-12-31T09:19:34.000Z",
-          "wordCount": 4212,
-          "title": "2024Twitterいろいろ選",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/168028962/rectangle_large_type_2_01bfdd5e440058fd11b9f8f35944ba8b.png?width=800"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "雨天雨衣",
@@ -8918,16 +8892,6 @@
           "publishedOn": "2025-01-01T00:54:18.000Z",
           "wordCount": null,
           "title": "【Happy New Year! 】 GameGaz Daily 2025.1.1",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=42684",
-          "author": "mamosuke",
-          "description": "年末大晦日恒例の、アクセス数だけから単純にはじき出した2024年の10大ニュースをお届けします。→→→この記事の続きを読む\n年末恒例 今年の10大ニュース2024 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2024123142684/",
-          "publishedOn": "2024-12-31T09:25:26.000Z",
-          "wordCount": null,
-          "title": "年末恒例 今年の10大ニュース2024",
           "imageUrl": null
         }
       ]
