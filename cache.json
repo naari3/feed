@@ -1031,6 +1031,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398341089930",
+          "author": null,
+          "description": "特定のリポジトリのみに存在するファイルで、自分だけGit管理から外したい場合がある。\n例えば自分だけ使っているツールの出力とか。\nリポジトリの .gitignore にも書きにくいし、global にもあんまり書きたくない。\nそういったときは .git/info/exclude が使えるらしい。(doc)\nここに書いておいたら無視できた。\n% cat .git/info/exclude\n# git ls-files --others --exclude-from=.git/info/exclude\n# Lines that start with '#' are comments.\n# For a project mostly in C, the following would be a good set of\n# exclude patterns (uncomment them if you want to use them):\n# *.[oa]\n# *~",
+          "link": "https://blog.nishimu.land/entry/2025/04/01/141537?utm_source=feed",
+          "publishedOn": "2025-04-01T05:15:37.000Z",
+          "wordCount": 287,
+          "title": "リポジトリ依存のファイルを自分だけGit管理から外したい",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398341089930/1743484537",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398341089930/1743484537"
+        },
+        {
           "id": "hatenablog://entry/6802418398341002733",
           "author": null,
           "description": "株式会社はてなに入社しました\n株式会社はてなに入社しました - hitode909の日記",
@@ -3379,6 +3394,21 @@
       "feedUrl": "https://staff.hatenablog.com/rss",
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398340827363",
+          "author": null,
+          "description": "このたび、不正利用対策強化のため、有料プラン*1のクレジットカード決済時に本人認証サービス（3Dセキュア2.0）を導入しました。\n本人認証サービス(3Dセキュア2.0)とは、オンライン上でのクレジットカード決済時に、アプリやSMSを活用したワンタイムパスワード、デバイスの生体認証などを入力することでカード会員本人が決済していることを確認するサービスです。\n現在有料プランをご利用中のユーザー様はお手続きは不要です。\nまた、3Dセキュア導入に伴いまして、はてなプライバシーポリシーを改定しています。詳細は以下よりご確認ください。\nhatena-announce.hatenastaff.com\n*1:はてなブログPro、はてなブログ for DevBlog",
+          "link": "https://staff.hatenablog.com/entry/2025/04/01/142331",
+          "publishedOn": "2025-04-01T05:23:31.000Z",
+          "wordCount": null,
+          "title": "クレジットカード決済時の本人認証サービス（3Dセキュア2.0）導入しました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398340827363/1743485012",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398340827363/1743485012"
+        },
         {
           "id": "hatenablog://entry/6802418398334534034",
           "author": null,
