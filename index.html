@@ -78,6 +78,35 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ScalaでSeq[A]にインデックスアクセスしてOption[A]を得るにはliftメソッドを呼ぶ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/04/03/031851" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>val xs &#x3D; List(1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+xs.lift(4) // &#x3D;&gt; Some(5)
+xs.lift(42) // &#x3D;&gt; None
+
+
+
+liftというのはある関数をOptionを返すように加工するようなときに使われる慣例的な名前で、今回は暗にapplyのことを指している。
+www.scala-lang.org
+元々liftはPartialFunctionに対して実装されているメソッドなのだが、Seqへのインデックスアクセスも部分関数じゃん、ということで、なんとSeqはインデックスのIntを唯一の引数に取る部分関数とみなされて、PartialFunctionを継承している。面白い！</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398341502673/1743617931" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -17094,7 +17123,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-04-02T18:02:31.627Z">2025-04-02T18:02:31.627Z</time>
+    <time id="build-timestamp" datetime="2025-04-02T19:01:37.242Z">2025-04-02T19:01:37.242Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
