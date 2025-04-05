@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-05T12:01:47.383Z</updated>
+    <updated>2025-04-05T13:05:34.329Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Devinと人類に残されたクリップボード運搬業]]></title>
+        <id>67f115fe89032c00018f2b7d</id>
+        <link href="https://blog.lai.so/devin/"/>
+        <updated>2025-04-05T12:20:35.000Z</updated>
+        <summary type="html"><![CDATA[Devinやってみたブログ
+はじめに：２０ドルでDevinに入門
+
+Cognition | Devin 2.0
+We are an applied AI lab building end-to-end software agents.
+Devin 2.0
+
+
+
+Devin 2.0の大型アップデ]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[オプション表示のショートカット運用]]></title>
         <id>https://note.com/hercelot/n/nc06bf1201de0</id>
@@ -10510,25 +10529,6 @@ Adobe Photoshop……イラストを描く
     2024年にブックマークしたページでよかったもの…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GhosttyでSSHした先でBackspaceなどが入力できない]]></title>
-        <id>hatenablog://entry/6802418398317778626</id>
-        <link href="https://blog.nishimu.land/entry/2025/01/06/100042?utm_source=feed"/>
-        <updated>2025-01-06T01:00:42.000Z</updated>
-        <summary type="html"><![CDATA[仕事始めということで年末に移行した Ghostty からSSHしたら制御シーケンスが入力できなかった。
-調べたら TERM に xterm-ghostty が設定されていて、これが接続先の terminfo に登録されていないことが問題だった。
-ghostty.org
-公式にドキュメントがあるのでこれに従って設定することで解決した。
-Host *
-  SetEnv TERM=xterm-256color
-
-
-
-管理権限もってないので今回は SSH の設定にに SetEnv した。上は雑な例。]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>

@@ -1209,21 +1209,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398318090925/1736210964"
-        },
-        {
-          "id": "hatenablog://entry/6802418398317778626",
-          "author": null,
-          "description": "仕事始めということで年末に移行した Ghostty からSSHしたら制御シーケンスが入力できなかった。\n調べたら TERM に xterm-ghostty が設定されていて、これが接続先の terminfo に登録されていないことが問題だった。\nghostty.org\n公式にドキュメントがあるのでこれに従って設定することで解決した。\nHost *\n  SetEnv TERM=xterm-256color\n\n\n\n管理権限もってないので今回は SSH の設定にに SetEnv した。上は雑な例。",
-          "link": "https://blog.nishimu.land/entry/2025/01/06/100042?utm_source=feed",
-          "publishedOn": "2025-01-06T01:00:42.000Z",
-          "wordCount": 227,
-          "title": "GhosttyでSSHした先でBackspaceなどが入力できない",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398317778626/1736125242",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398317778626/1736125242"
         }
       ]
     },
@@ -7088,6 +7073,16 @@
       "feedUrl": "https://blog.lai.so/rss/",
       "siteUrl": "https://blog.lai.so/",
       "articles": [
+        {
+          "id": "67f115fe89032c00018f2b7d",
+          "author": "laiso",
+          "description": "Devinやってみたブログ\nはじめに：２０ドルでDevinに入門\n\nCognition | Devin 2.0\nWe are an applied AI lab building end-to-end software agents.\nDevin 2.0\n\n\n\nDevin 2.0の大型アップデ",
+          "link": "https://blog.lai.so/devin/",
+          "publishedOn": "2025-04-05T12:20:35.000Z",
+          "wordCount": null,
+          "title": "Devinと人類に残されたクリップボード運搬業",
+          "imageUrl": null
+        },
         {
           "id": "67e14d3c519c880001bd725c",
           "author": "laiso",
