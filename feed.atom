@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-06T12:02:02.166Z</updated>
+    <updated>2025-04-06T13:05:31.412Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10476,83 +10476,6 @@ Full Paperはだめだった。途中で構想が崩壊した。なので「Late
         <updated>2025-01-07T02:23:05.000Z</updated>
         <summary type="html"><![CDATA[任天堂が、Nintendo Switchの本体のシステムを更新するNintendo Switch システムバージョン Switch 19.0.1_rebootless43をリリースしていました。→→→この記事の続きを読む
 Nintendo Switch システムバージョン 19.0.1_rebootless43 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一軒家に引っ越し後、ほぼ半年たちました。相変わらず快適すぎます。そして新しい一軒家メリット５つ]]></title>
-        <id>hatenablog://entry/6802418398318093042</id>
-        <link href="https://katsumakazuyo.hatenablog.com/entry/2025/01/07/095818"/>
-        <updated>2025-01-07T00:58:18.000Z</updated>
-        <summary type="html"><![CDATA[はてなのXから、ちょうどこの記事が紹介がありました。
-katsumakazuyo.hatenablog.com
-改めてこの記事の内容を読んだり、ブックマークを読んだりしたんですけれども。半年後にどのぐらい変わったか、そうではないかということについて、もう一度検証したいと思ってブログを書きます。
-まず、成果であげた1－5位については、全部相変わらずスーパー便利です。そしてさらに、いろいろと新しいメリットに気付き始めたので、補足してまとめます。
-その１ スーパーマーケットだけでなくアマゾンフレッシュの置き配も併用できるようになった
-前のブログの第５位に入れた、信号のない徒歩数分圏内のスーパーマーケットですけれども、さらに、アマゾンフレッシュとの併用になっています。特に来客時にたくさんの食材を買うときとかに便利です。
-なぜ徒歩圏のスーパーマーケットだけではなく、アマゾンフレッシュを追加したかというと、結構理由はシンプルでして、
-「いつの間にかアマゾンフレッシュも置き配をしてくれるようになったから」
-です。
-一軒家ですので、玄関前に置いといてもらえればすぐにピックできますし、特に今のように冬ですと生鮮食品も傷まないので、そのまま置いておいてもらえます。
-特にお米とか洗剤とかトイレットペーパーとか重かったり、かさばるもの買うときにはアマゾンフレッシュに頼むとても楽です。そして生鮮食料品を本当に倉庫で適温で保管しているアマゾンフレッシュと、陳列しながら顧客がピックをすることを前提としているスーパーマーケットでは、温度やコストに対する差があるらしく、アマゾンフレッシュの豚肉の方が、同じ生鮮品でも窒素充填がしてあって賞味期間が長いので、重宝しています。
-なので、目的や場合に応じて、アマゾンフレッシュとスーパーを使い分けています。置き配がない頃のフレッシュを持って帰られてしまったので、2時間…]]></summary>
-        <author>
-            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[たくさんシーケン図の画像が欲しい]]></title>
-        <id>hatenablog://entry/6802418398318090925</id>
-        <link href="https://blog.nishimu.land/entry/2025/01/07/094924?utm_source=feed"/>
-        <updated>2025-01-07T00:49:24.000Z</updated>
-        <summary type="html"><![CDATA[最近は図を描くのに Excalidraw を使うことが多いのだけれど、シーケンス図は Mermaid が楽。
-しかし、書いた図を画像にするのをどうするのかちょっと悩む。
- mermaid-cli を使って Markdown を変換するのが楽だったので、今後はこれでやっていきたい。
-こういう感じで複数のシーケンス図を Mermaid で書いて、
-# A
-```mermaid
-sequenceDiagram
-    A->>B
-    B->>A
-```
-
-# B
-```mermaid
-sequenceDiagram
-    A->>B
-    B->>C
-    C->>A
-```
-
-
-
-mermaid-cli で以下のようにやると out.md はシーケンス図の部分が画像に差し替えられて出力される。
-$ mmdc -i in.md -o out.md -e png
-
-
-
-画像に差し替えられたということは画像が生成されているということで、同じディレクトリに出力の Markdown と同じプレフィクスの画像が連番で生成されている。
-$ ls -l
-in.md
-out.md
-out1.png
-out2.png
-
-
-
-Markdown は捨ててしまってこの画像だけを使っている。]]></summary>
-        <author>
-            <name>ちなみに</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【噂】Switch2のJoy-Conはゲーミングマウス？]]></title>
-        <id>https://gamegaz.com/?p=42731</id>
-        <link href="https://gamegaz.com/2025010742731/"/>
-        <updated>2025-01-07T00:44:36.000Z</updated>
-        <summary type="html"><![CDATA[Nintendo Switch2のJoy-Conはマウスのように使える可能性があるようです。→→→この記事の続きを読む
-【噂】Switch2のJoy-Conはゲーミングマウス？ first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
         </author>
