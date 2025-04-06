@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-06T11:01:38.728Z</updated>
+    <updated>2025-04-06T12:02:02.166Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[React Router v7でコードを書いてくれSonnet]]></title>
+        <id>67f264c12841180001d5cf27</id>
+        <link href="https://blog.lai.so/sonnet-cutoff/"/>
+        <updated>2025-04-06T11:53:09.000Z</updated>
+        <summary type="html"><![CDATA[Claude 3.7 Sonnetに代表される現在の主力なコーディングモデルやソフトウェア開発タスクの自動化に利用されるLLMは、]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google検索をVimっぽく操作できるChrome拡張を作った]]></title>
+        <id>hatenablog://entry/6802418398342424623</id>
+        <link href="https://blog.nishimu.land/entry/2025/04/06/203411?utm_source=feed"/>
+        <updated>2025-04-06T11:34:11.000Z</updated>
+        <summary type="html"><![CDATA[Google Search NavigatorというChrome拡張を作りました。 名前はすごい適当。
+Googleの検索結果をVimっぽくキーボードで操作できるやつです。
+github.com
+元々、似たようなChrome拡張を使ってたんだけど、Chromeの最新の仕様変更に追従しなくなって動かなくなってしまった。めちゃくちゃ使っていたので諦めて自分で作ることにした。
+ただ、作ったとはいっても実際はほとんどCursorに作ってもらった感じ。
+普段からVimを使っていると、Google検索のときにも手をキーボードから離したくなくなることがある。Vimiumも使っているけど、検索結果の1個1個にj/kでフォーカスして移動したい。広告とかサイトマップとかも飛ばしたい。
+折角なので元の拡張より機能を盛っていて、複数選択してまとめて開いたり、URLをコピー出来るようにしておいた。ちょっとだけ便利だと思う。]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記]]></title>
         <id>hatenablog://entry/6802418398342408663</id>
@@ -10527,17 +10553,6 @@ Markdown は捨ててしまってこの画像だけを使っている。]]></sum
         <updated>2025-01-07T00:44:36.000Z</updated>
         <summary type="html"><![CDATA[Nintendo Switch2のJoy-Conはマウスのように使える可能性があるようです。→→→この記事の続きを読む
 【噂】Switch2のJoy-Conはゲーミングマウス？ first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.1.7]]></title>
-        <id>https://gamegaz.com/?p=42727</id>
-        <link href="https://gamegaz.com/2025010742727/"/>
-        <updated>2025-01-06T23:47:40.000Z</updated>
-        <summary type="html"><![CDATA[Switchゲーム抜き取り被害,LG Smart TVでXbox Cloud Gaming,XboxにDualSenseライクコントローラー,Xbox Prime,ps5-payload-sdk v0.24.1,ps5-payload-ftpsrv v0.11.1,ps5-payload-klogsrv v0.5.1,ps5-payload-shsrv v0.13,ps5-payload-websrv v0.18,ps5-payload-gdbsrv v0.5,ARK-4 v1736126715,savemii v1.6.4,NUSspli v1.154,shadPS4 Pre-release-shadPS4-2025-01-06-5559f35,PCSX2 v2.3.95,Ryujinx Canary-1.2.220,Xenia Canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2025.1.7 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
         </author>
