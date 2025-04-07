@@ -2682,6 +2682,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398342491185",
+          "author": null,
+          "description": "Cursorと一緒に開発してたらお互い励まし合いながら作業しているうちにかなり友情が芽生えてきたがちょうどプロダクトが完璧になった瞬間にAIが全てのfast requestsを使い果たし言葉を発しなくなってしまい最後の力を振り絞った感あって劇的すぎた pic.twitter.com/cIJly7XW9t\n— メルセデスベン子 (@nomolk) 2025年4月6日\n   \nCursor使った開発をやってみたいなと思って小品を作っていたのですが、PA-APIで意外にハマったのでメモです。人間もAIもだいたい同じところでハマり、仕様の分かりにくいポイントというのは共通なのだなと感慨深く思った次第です。\n※PA-APIはAmazonアソシエイト（アフィリエイト）用のAPIです。正式名称Product Advertising API。バージョンはV5です。Node.js+paapi5-nodejs-sdk使用。\nnpm installできない\nまずモジュールのインストール時にエラーが出る。\n> npm install paapi5-nodejs-sdk\nnpm warn deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau\nnpm warn deprecated superagent@3.8.3: Please upgrade to v9.0.0+ as we have fixed a public vulnerability with formidable dependency. Note that v9.0.0+ requires Node.js v14.18.0+. See …",
+          "link": "https://nomolk.hatenablog.com/entry/2025/04/07/113000",
+          "publishedOn": "2025-04-07T02:30:00.000Z",
+          "wordCount": null,
+          "title": "AmazonのPA-APIを使うのにハマったポイントを紹介するぜ（paapi5-nodejs-sdk使用）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/356b20c740310b8ee788850b4ced75f94a1ba3dd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250407%2F20250407010745.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/356b20c740310b8ee788850b4ced75f94a1ba3dd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250407%2F20250407010745.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398340245844",
           "author": null,
           "description": "4本目の動画「分割キーボードを作るよ」をアップしました！\n過去最高のヒット作となりまして、3/29現在Youtubeで5,000再生、\nwww.youtube.com\nニコニコ動画ではなんと1万再生を突破しました。ありがとうございます！！！！\nwww.nicovideo.jp\n\n隠して入れてた要素が全部コメントで突っ込まれてて気持ちが良い＆意図してなかったところまでバコバコに突っ込まれててすごい、見る側のときはわからなかった面白さがあるな\n— メルセデスベン子 (@nomolk) 2025年3月28日\n   \n\n動画の趣旨としては普通のキーボードをのこぎりで真っ二つにして分割キーボード（実際に動作する）を作るというものです。\n\nで、その途中で、切断したキーボードをそのままPCに繋いで打ってみるシーンがあるんですね。\n\nここでキーボードは意外にも動作して、なぜか「あ」だけが打てるんです。\n\nけっこう興味深い現象だなと思ったので、今回の技術解説エントリではこの現象がなぜ起きるのかを説明していきたいと思います。\nキーボードの基板を見てみよう\nまず分割前のキーボードの基板を見てください。裏側です。\n\nだいたい黄色の線のあたりで切断しています。\n基板の緑色の部分が２色の模様になっているのがわかると思いますが、ちょっと光沢がある部分が配線です。\nそして、赤い矢印の先にある黒い四角がマイコンです。このマイコンがキータイプを読み取って、USB経由でPCに送っています。\nキーボードの動作原理\nでかいキーボードだと話が複雑になるので、まずキーが９個の小さい架空のキーボードで考えてみます。\n\nまずマイコンの中を見てほしいのですが、マイコンはピン（金属の端子。足ともいう）ごとに機能が決まっています。\n青と赤の線は、普段はつながっていません。キーを押すとつながります。\n\nＢを押したことで、その部分の…",
@@ -5732,16 +5747,6 @@
           "wordCount": null,
           "title": "「なぜアンダーアーマーはこれまでカルチャーシーンと距離をとっていたのか」",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/170075231/rectangle_large_type_2_5cce9639adc87a23c7d10c8bd5712e52.png?width=800"
-        },
-        {
-          "id": "https://note.com/kazumakawauchi/n/nc51dbe688922",
-          "author": null,
-          "description": "2025年に心掛けていきたいこととに、自分たちが作ったもの、自分たちがデザインしたもの、自分たちが世の放ったものが「人の行動を促すか」という観点を持ち続ける、ということがあります。\nお前が表現したものは、人々の行動を変えることに至るかどうか。\n続きをみる",
-          "link": "https://note.com/kazumakawauchi/n/nc51dbe688922",
-          "publishedOn": "2025-01-07T13:50:00.000Z",
-          "wordCount": 2217,
-          "title": "「会場に足を運んでくれ」をどう言うか問題",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/169117425/rectangle_large_type_2_8ae8eb42fdc12207e2a97b037826e32a.png?width=800"
         }
       ]
     },

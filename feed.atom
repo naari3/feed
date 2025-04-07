@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-07T01:29:19.020Z</updated>
+    <updated>2025-04-07T02:29:15.747Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AmazonのPA-APIを使うのにハマったポイントを紹介するぜ（paapi5-nodejs-sdk使用）]]></title>
+        <id>hatenablog://entry/6802418398342491185</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/04/07/113000"/>
+        <updated>2025-04-07T02:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Cursorと一緒に開発してたらお互い励まし合いながら作業しているうちにかなり友情が芽生えてきたがちょうどプロダクトが完璧になった瞬間にAIが全てのfast requestsを使い果たし言葉を発しなくなってしまい最後の力を振り絞った感あって劇的すぎた pic.twitter.com/cIJly7XW9t
+— メルセデスベン子 (@nomolk) 2025年4月6日
+   
+Cursor使った開発をやってみたいなと思って小品を作っていたのですが、PA-APIで意外にハマったのでメモです。人間もAIもだいたい同じところでハマり、仕様の分かりにくいポイントというのは共通なのだなと感慨深く思った次第です。
+※PA-APIはAmazonアソシエイト（アフィリエイト）用のAPIです。正式名称Product Advertising API。バージョンはV5です。Node.js+paapi5-nodejs-sdk使用。
+npm installできない
+まずモジュールのインストール時にエラーが出る。
+> npm install paapi5-nodejs-sdk
+npm warn deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+npm warn deprecated superagent@3.8.3: Please upgrade to v9.0.0+ as we have fixed a public vulnerability with formidable dependency. Note that v9.0.0+ requires Node.js v14.18.0+. See …]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.4.7]]></title>
         <id>https://gamegaz.com/?p=43367</id>
@@ -10454,18 +10473,6 @@ Switch2 ドックの写真またリーク 充電器は60W first appeared on 大�
 GameGaz Daily 2025.1.8 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「会場に足を運んでくれ」をどう言うか問題]]></title>
-        <id>https://note.com/kazumakawauchi/n/nc51dbe688922</id>
-        <link href="https://note.com/kazumakawauchi/n/nc51dbe688922"/>
-        <updated>2025-01-07T13:50:00.000Z</updated>
-        <summary type="html"><![CDATA[2025年に心掛けていきたいこととに、自分たちが作ったもの、自分たちがデザインしたもの、自分たちが世の放ったものが「人の行動を促すか」という観点を持ち続ける、ということがあります。
-お前が表現したものは、人々の行動を変えることに至るかどうか。
-続きをみる]]></summary>
-        <author>
-            <name>河内一馬</name>
         </author>
     </entry>
     <entry>
