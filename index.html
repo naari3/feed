@@ -78,6 +78,43 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">見せるエラー、見せないエラー</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/04/09/170634" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>マメにlogger.errorを書いていたところ、「そのエラーはユーザ起因で起こる(HTTPでいうと400系統)からログするのではなくてユーザに表示するのが筋」というレビューをもらった。
+最終的にエラーをどうしたいのか、という観点で整理すると、エラーに対する対処の仕方も変わってくる。
+ユーザのパーミッションが足りない、入力がおかしい
+
+
+我々がログしてもどうしようもない。雑音が増えるだけなのであまりログする意味がない
+ユーザには知らせるべきで、ユーザは試行錯誤できるべき
+ユーザの与り知らない領域でおかしなことが起こっている
+
+
+我々に原因があるので、我々がログする必要がある
+ユーザに知らせてもいいが、回復できるかは不明
+この基準で考えると、例外を投げたりエラーを返したりするのも、ユーザの入力に問題はないが何か良からぬことが起こってどうしようもない時などは例外を投げるとか、ユーザに原因があるのでエラーとする、といった議論ができるようになる。
+Further Reading
+blog.j5ik2o.me
+ErrorとDefectの話について言及されている。
+yakst.com
+zenn.dev</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398343152216/1744185994" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
               rel="noopener">クックパッド開発者ブログ</a></h3>
           <section class="articles-per-source">
@@ -17290,7 +17327,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-04-09T08:03:39.612Z">2025-04-09T08:03:39.612Z</time>
+    <time id="build-timestamp" datetime="2025-04-09T09:01:42.427Z">2025-04-09T09:01:42.427Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
