@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398343478079",
+          "author": null,
+          "description": "次回作は「終末の過ごし方」移植になりました。ワーパチパチパチ。ヒロイン４ルート分のデバッグログを収集。ログのオフセットと自作ツールを合わせ読みながら対応しました。sとpの可変長がきつかったです・・・。でも今日だけで５ファイル通ったのでこりゃ本決まりってことになりました。ああ、よかったぁ・・・。\nSCN003.txt\n\n0x000F(0000): !p 0 0 48\n0x0015(0006): [] 6 1\n0x001D(000E): !t オープニング\n0x002C(001D): #b 111 30\n0x0030(0021): !b 0 2\n0x0034(0025): [] 6 1\n0x003C(002D): #W 97\n0x003F(0030): !g 0 6\n0x0043(0034): !s 70 0 0\n0x0049(003A): #t t 10\n0x004D(003E): !s 80 0 95 114 0\n0x0055(0046): #W 0\n0x0058(0049): !g 0 7\n0x005C(004D): !p 0 7 50\n0x0062(0053): !p 0 8 57\n0x0068(0059): !s 90 0 ○私立緑山校・廊下_n_t　誰もいない廊下。_t　カメラは横へとスクロールして行く。_n　教室の多くも、カラッポ。かぶって教師の授業の声　が薄く聞こえる。_r\n0x0102(00F3): !g 0 8\n0x0106(00F7): !s 100 0 ○同・３年Ａ組教室_n_t　気だるげな光が射し込む午前の教室。_n　年老いた教師（松本）が国語の授業をしている。_t　教室には１２～３人ほどの生徒。各々本を読んだり　小声で話をしたり思い思いに過ごしている。_r　授業を聞いているものは、あまりいない。_n　時が止まったような、空間。_r\n0x021C(020D): !s 110 0 \n0x0222(0213): !g 0 9\n0x0226(0217): !p 0 7 49 49",
+          "link": "https://akkera102.hatenablog.com/entry/2025/04/10/205702",
+          "publishedOn": "2025-04-10T11:57:02.000Z",
+          "wordCount": 556,
+          "title": "終末移植3",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398343478079/1744286399",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398343478079/1744286399"
+        },
+        {
           "id": "hatenablog://entry/6802418398343223963",
           "author": null,
           "description": "結局内部解析しているですやん、私・・・。この方面の忍耐力がないものですから、あんまりやりたくなかったりします。とりあえずnocdパッチ当ててたまたま見つけたデバッグログ機能を使ってみました。\n修正差分版 (70KB) 2003/05/03\nSYSTEM.exe\n1020 83 -> C3\n116A 75 -> EB\n\nログ：\nSCENE 0 Start\nofs 0 : !p\nofs 6 : !t\nofs 11 : !p\nofs 16 : #W\nofs 19 : !g\nofs 1d : #t\nofs 21 : #W\nofs 24 : !g\nofs 28 : #t\nofs 2c : !j\nSCENE 1 Start\nofs 0 : !c\nofs 2 : !p\nofs 7 : !p\n・・・以下略\n\nスクリプトファイルのオフセットとコマンドだけ表示しています。バイト境界がわかるのがポイントですねー。できればもう少し詳細な情報がほしかったです。コマンド命令のswitch分岐は0x41316F。まず「! # [」などで区分けして、さらにサブがある感じでした。必要最低限だけ実装しようかなあ。今月は解析に時間かかりそうです。",
@@ -9003,26 +9018,6 @@
           "publishedOn": "2025-01-11T04:20:48.000Z",
           "wordCount": 1661,
           "title": "GenkiのSwitch 2モックアップはリーク情報ベースに作っただけだった？",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/Nintendo-Switch-2-Logo-1.jpg"
-        },
-        {
-          "id": "https://gamegaz.com/?p=42771",
-          "author": "mamosuke",
-          "description": "レゴ版GameBoy,PS5EditProfile v1.3,CFW Evilnat 4.91.3 [BETA 1],6.61 Adrenaline v7.1.5,ARK-4 v1736541098,shadPS4 Pre-release-shadPS4-2025-01-10-cfaea1e,Ryujinx Canary-1.2.234,Xenia Canary_experimental,xemu v0.8.8→→→この記事の続きを読む\nGameGaz Daily 2025.1.11 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025011142771/",
-          "publishedOn": "2025-01-10T23:38:45.000Z",
-          "wordCount": 1670,
-          "title": "GameGaz Daily 2025.1.11",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=42768",
-          "author": "mamosuke",
-          "description": "CESでSwitch2のモックアップを展示したGenkiに対して任天堂が初めて公式にコメントを出しました。→→→この記事の続きを読む\nGenkiのモックアップ展示に任天堂が初コメント first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025011142768/",
-          "publishedOn": "2025-01-10T23:13:36.000Z",
-          "wordCount": 1642,
-          "title": "Genkiのモックアップ展示に任天堂が初コメント",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/Nintendo-Switch-2-Logo-1.jpg"
         }
       ]
