@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-11T00:03:45.944Z</updated>
+    <updated>2025-04-11T01:29:09.734Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2025-04-10]]></title>
+        <id>hatenablog://entry/6802418398343399948</id>
+        <link href="https://commits.hatenablog.com/entry/2025/04/11/100000"/>
+        <updated>2025-04-11T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[zenn.dev
+Ridgepole で StrongMigrations を使えるかどうか試していた。結果としては、StrongMigrations にちょっとパッチを当てると使うことができそう。
+これ、真面目に使えるようにしてみても面白いかも知れない。
+手動で発火できるTracePointがあったら面白いのではないかと夢想している。
+次のような感じ。
+# Set trace handler
+trace = TracePoint::Manual.new(:my_event_name) do |tp|
+    p [tp.lineno, tp.defined_class, tp.method_id, tp.event]
+end
+
+trace.enable
+
+
+# Trigger the TracePoint
+TracePoint::Manual.trigger(:my_event_name)
+
+
+
+ActiveSupport::Notifications とかそういうのでいいじゃんとなりそうだけど、これの価値はTracePointであることであり、つまりハンドラ側でbindingを取ったりしていくらでも悪いことができて便利。
+TracePoint::Custom としているのは、複数箇所からこれを使いたいケースを考えてのこと。TracePoint.new(:manual) do |tp|のようにmanualイベントを決め打ちで作る実装も考えられるけど(そしてそれならすぐ実装できる気がするけど)、その場合複数ライブラリから手動発火したくなった時にコンフリクトして困りそう。
+なので既存のイベントとは完全に空間を分けたほうが良いのではと思っている。
+で、具体的なユースケースがあるのかというと、全く思い浮かんでいない。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2025年4月-2】モチベ春]]></title>
         <id>hatenablog://entry/6802418398343415450</id>
