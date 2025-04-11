@@ -2,10 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-11T11:01:39.286Z</updated>
+    <updated>2025-04-11T12:02:26.861Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[終末移植4]]></title>
+        <id>hatenablog://entry/6802418398343717782</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/04/11/202428"/>
+        <updated>2025-04-11T11:24:28.000Z</updated>
+        <summary type="html"><![CDATA[ストーリーに関連するスクリプト分は全部通りました。面白いログがありましたのでちょっとシェアです。
+0x0509(04FB): #i 28 = 1
+0x0514(0506): #W 0
+0x0517(0509): !g 0 139
+0x051B(050D): !p 0 7 55 57
+0x0522(0514): #l 
+0x0524(0516): #i 29 = 1
+0x052F(0521): #W 0
+0x0532(0524): !g 0 139
+0x0536(0528): !p 0 7 55 57
+0x053D(052F): #l 
+0x053F(0531): #i 30 = 1
+0x054A(053C): #W 0
+0x054D(053F): !g 0 139
+0x0551(0543): !p 0 7 55 57
+0x0558(054A): #l 
+0x055A(054C): #i 31 = 1
+0x0565(0557): #W 0
+0x0568(055A): !g 0 137
+0x056C(055E): !p 0 7 56 48
+0x0573(0565): #l 
+0x0575(0567): #W 0
+0x0578(056A): !g 0 61
+0x057C(056E): !p 0 7 50 56
+0x0583(0575): #n 
+0x0585(0577): #n 
+0x0587(0579): #n 
+0x0589(057B): #n 
+これはif-else-endifの構造にないっていて最後のnの４連続でピンとくると思います。
+#i 28 = 1
+	#W 0
+	!g 0 136
+	!p 0 7 49 56
+#l 
+	#i 29 = 1
+		#W 0
+		!g 0 137
+		!p 0 7 56 48
+	#l 
+		#i 30 = 1
+			#W 0
+			!g 0 136
+			!p 0 7 49 56
+		#l 
+			#i 31 = 1
+				#W 0
+				!g 0 136
+				!p 0 7 49 56
+			#l 
+				#W 0
+				!g 0 137
+				!p 0 7 56 48
+			#n 
+		#n 
+	#n 
+#n 
+各変数を見て、処理を分けてるみたいですね。今回は改行と改ページのアイコン分けと、ひぐらしGBAにあったような見栄えのするエフェクトを加えたいと思っています。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Deep Dive into Serum 2 (Part 2: Mix, FX編)]]></title>
         <id>https://note.com/hercelot/n/n1cd2c5d34bf4</id>
