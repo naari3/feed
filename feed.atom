@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-11T13:08:22.167Z</updated>
+    <updated>2025-04-11T14:01:54.388Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[MCPサーバーを安全に動かすための工夫]]></title>
+        <id>67f90d337394f40001e84b2d</id>
+        <link href="https://blog.lai.so/crashing-mcp-server/"/>
+        <updated>2025-04-11T13:32:45.000Z</updated>
+        <summary type="html"><![CDATA[StdoutトランポートのMCPサーバー起動コマンドを設定ファイルにnpxやuvxで記述することは、MCPサーバー接続時に、そ]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[終末移植4]]></title>
         <id>hatenablog://entry/6802418398343717782</id>
