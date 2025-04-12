@@ -1369,6 +1369,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398343649255",
+          "author": null,
+          "description": "github.com\n最近見つけたRBSのバグ。インスタンス変数が定義された1つのモジュールが2回同じクラスにincludeされていると、RBSがバリデーションエラーになってしまう問題を見つけた。\nなんかシュッと直すのもむずそうなので、一旦は放置しつつ、ユーザーからのレポートが多かったらなんとかしようという話になった。\nこれはエラーメッセージの出力から原因をエスパーするのがなかなか大変だった。",
+          "link": "https://commits.hatenablog.com/entry/2025/04/12/100000",
+          "publishedOn": "2025-04-12T01:00:00.000Z",
+          "wordCount": 483,
+          "title": "2025-04-11",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398343649255/1744419600",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398343649255/1744419600"
+        },
+        {
           "id": "hatenablog://entry/6802418398343399948",
           "author": null,
           "description": "zenn.dev\nRidgepole で StrongMigrations を使えるかどうか試していた。結果としては、StrongMigrations にちょっとパッチを当てると使うことができそう。\nこれ、真面目に使えるようにしてみても面白いかも知れない。\n手動で発火できるTracePointがあったら面白いのではないかと夢想している。\n次のような感じ。\n# Set trace handler\ntrace = TracePoint::Manual.new(:my_event_name) do |tp|\n    p [tp.lineno, tp.defined_class, tp.method_id, tp.event]\nend\n\ntrace.enable\n\n\n# Trigger the TracePoint\nTracePoint::Manual.trigger(:my_event_name)\n\n\n\nActiveSupport::Notifications とかそういうのでいいじゃんとなりそうだけど、これの価値はTracePointであることであり、つまりハンドラ側でbindingを取ったりしていくらでも悪いことができて便利。\nTracePoint::Custom としているのは、複数箇所からこれを使いたいケースを考えてのこと。TracePoint.new(:manual) do |tp|のようにmanualイベントを決め打ちで作る実装も考えられるけど(そしてそれならすぐ実装できる気がするけど)、その場合複数ライブラリから手動発火したくなった時にコンフリクトして困りそう。\nなので既存のイベントとは完全に空間を分けたほうが良いのではと思っている。\nで、具体的なユースケースがあるのかというと、全く思い浮かんでいない。",

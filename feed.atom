@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-12T00:03:25.057Z</updated>
+    <updated>2025-04-12T01:29:14.123Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2025-04-11]]></title>
+        <id>hatenablog://entry/6802418398343649255</id>
+        <link href="https://commits.hatenablog.com/entry/2025/04/12/100000"/>
+        <updated>2025-04-12T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+最近見つけたRBSのバグ。インスタンス変数が定義された1つのモジュールが2回同じクラスにincludeされていると、RBSがバリデーションエラーになってしまう問題を見つけた。
+なんかシュッと直すのもむずそうなので、一旦は放置しつつ、ユーザーからのレポートが多かったらなんとかしようという話になった。
+これはエラーメッセージの出力から原因をエスパーするのがなかなか大変だった。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.4.12]]></title>
         <id>https://gamegaz.com/?p=43393</id>
