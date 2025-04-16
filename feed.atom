@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-16T09:02:23.318Z</updated>
+    <updated>2025-04-16T10:01:43.137Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -31,6 +31,16 @@
 フォーム機能の詳しい操作方法についてはヘルプページをご確認ください。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[閲覧履歴があってもリンクの色が変わらないケースについて]]></title>
+        <id>https://blog.jxck.io/entries/2025-04-16/link-visited-history.html</id>
+        <link href="https://blog.jxck.io/entries/2025-04-16/link-visited-history.html"/>
+        <updated>2025-04-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4 月末にリリースされる Chrome 136 からは、一部のケースで「閲覧履歴があってもリンクの色が変わらない」状態が発生する。もしこの挙動に依存して閲覧をしているユーザがいれば、多少不便に感じるかもしれない。しかし、これは長年問題視されてきた、ユーザのプライバシー保護のための更新だ。ユーザ側でも、「サイトが壊れたのでは?」と思う人もいるだろうため、前半は技術用語を少なめに解説し、エンジニア向けの解説は後半で行う。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
