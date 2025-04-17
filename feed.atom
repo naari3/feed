@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-17T13:08:53.665Z</updated>
+    <updated>2025-04-17T14:01:59.926Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[androidのyoutubeアプリでショート動画が自動的に再生されるようになったが適当に色々やったらもとに戻った]]></title>
+        <id>hatenablog://entry/6802418398349295417</id>
+        <link href="https://satoru-takeuchi.hatenablog.com/entry/2025/04/17/222423"/>
+        <updated>2025-04-17T13:24:23.000Z</updated>
+        <summary type="html"><![CDATA[発生したことはタイトル通り。結論から書くと、アプリを強制終了してからアプリをアンインストールしたら(実際はされないが)もとに戻った。どっちかの操作だけでもいいかもしれないが、よくわからない。
+ここからは試行錯誤の記録である。現象についてググってみたところ、色んなところに「アプリ終了前にショート動画タブを開いていたらそうなる。ホーム画面タブに移動してアプリを再起動すると問題は解決する」と書いていた。しかしその操作をしても問題は解決しなかった。その後アプリの設定をいろいろ試して、それっぽい設定を変更してみたが効果は無かった。
+では、なんか変な情報がキャッシュに残ってるんではないかとアプリを強制終了＆アンインストールしたらもとに戻ったのでよかった。どっちが効果があったのかはわからない。どっちも必要だったのかもしれないし、そうでなかったかもしれない。しかしそれはどっちでもいい。とにかくもとに戻ってよかった。
+余談だが、アプリをアンインストールしてもyoutubeアプリはアンインストールされない。その後アンインストールボタンが出なくなったから何かが変わったのだと思うが、よくわからんが、まあいい。]]></summary>
+        <author>
+            <name>覚書</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[終末移植7]]></title>
         <id>hatenablog://entry/6802418398348996134</id>
