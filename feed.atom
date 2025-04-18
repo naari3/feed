@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-18T03:14:07.939Z</updated>
+    <updated>2025-04-18T04:01:55.883Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10720,44 +10720,6 @@ GameGaz Daily 2025.1.19 first appeared on 大人のためのゲーム講座.]]><
 Nintendo Switch 2の「2」が意味するもの first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Raspberry Piでサーボモーターを動かす／evdevでキーボード入力を受け取る【動画解説②】]]></title>
-        <id>hatenablog://entry/6802418398321234704</id>
-        <link href="https://nomolk.hatenablog.com/entry/2025/01/19/003644"/>
-        <updated>2025-01-18T15:36:44.000Z</updated>
-        <summary type="html"><![CDATA[動画解説シリーズ第２弾です。
-激安左手デバイスでプリンを操作する
-www.youtube.com
-トピックはこの３つかな。
-左手デバイスについて
-Raspberry Piでサーボモーターを動かす方法
-Raspberry Piでキーボード入力を受け取る方法（evdev）
-左手デバイスについて
-
-買ったのはこれです。
-
-Macro Mechanical Keyboard 3 Keys 1 Knob USB RGB Mini Gaming Custom Programming Knob Keypads Switch Portable For Photoshop
-実はでかいのも買いました。
-
-Ammtoo Programming Macro Custom Keyboard 12 Key 3 Knobs RGB 18 Character One Key Password Copy Paste Mechanical Hotswap Keypad
-無線のもありますがたぶん技適通ってないので欲しい人は有線を買いましょう。
-あのあと結局あやしい設定アプリを入れて設定してみたのですが、ウィルスチェック等にも引っかからず普通に使えました。
-ただキーボードを日本語配列で使ってると設定時に戸惑うことがあります。もしかしたら別エントリで解説するかも。
-あと、いろいろレビューを見てると、デフォルトがぜんぶ同じキーで設定されてる場合もあるようです。
-Raspberry Piでサーボモーターを動かす方法
-
-定番ネタですが一応。まずはつなぎ方です。
-
-こんな感じ。ポイントは
-モーター用電源はRaspberry Piから引かずに別で取る
-別電源とRaspberry PiはGND同士をつなぐ
-使うGPIOは12と13
-あたりでしょうか。
-あとサーボを動かすにはPWMという機能を使うので、使えるGPIOピンが決まっ…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>

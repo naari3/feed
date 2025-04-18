@@ -2905,21 +2905,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/17fa4f9d1484e022a31422aaf24a59e80d6790ea/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250206%2F20250206235324.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398321234704",
-          "author": null,
-          "description": "動画解説シリーズ第２弾です。\n激安左手デバイスでプリンを操作する\nwww.youtube.com\nトピックはこの３つかな。\n左手デバイスについて\nRaspberry Piでサーボモーターを動かす方法\nRaspberry Piでキーボード入力を受け取る方法（evdev）\n左手デバイスについて\n\n買ったのはこれです。\n\nMacro Mechanical Keyboard 3 Keys 1 Knob USB RGB Mini Gaming Custom Programming Knob Keypads Switch Portable For Photoshop\n実はでかいのも買いました。\n\nAmmtoo Programming Macro Custom Keyboard 12 Key 3 Knobs RGB 18 Character One Key Password Copy Paste Mechanical Hotswap Keypad\n無線のもありますがたぶん技適通ってないので欲しい人は有線を買いましょう。\nあのあと結局あやしい設定アプリを入れて設定してみたのですが、ウィルスチェック等にも引っかからず普通に使えました。\nただキーボードを日本語配列で使ってると設定時に戸惑うことがあります。もしかしたら別エントリで解説するかも。\nあと、いろいろレビューを見てると、デフォルトがぜんぶ同じキーで設定されてる場合もあるようです。\nRaspberry Piでサーボモーターを動かす方法\n\n定番ネタですが一応。まずはつなぎ方です。\n\nこんな感じ。ポイントは\nモーター用電源はRaspberry Piから引かずに別で取る\n別電源とRaspberry PiはGND同士をつなぐ\n使うGPIOは12と13\nあたりでしょうか。\nあとサーボを動かすにはPWMという機能を使うので、使えるGPIOピンが決まっ…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/01/19/003644",
-          "publishedOn": "2025-01-18T15:36:44.000Z",
-          "wordCount": 1083,
-          "title": "Raspberry Piでサーボモーターを動かす／evdevでキーボード入力を受け取る【動画解説②】",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/062ea89d0c2012bbbb3a3eefc90ca07d1a037234/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250119%2F20250119001206.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/062ea89d0c2012bbbb3a3eefc90ca07d1a037234/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250119%2F20250119001206.png"
         }
       ]
     },
