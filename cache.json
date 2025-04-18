@@ -1599,23 +1599,7 @@
       "title": "現実モデリング",
       "feedUrl": "https://contradiction29.hatenablog.com/rss",
       "siteUrl": "https://contradiction29.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802418398321351077",
-          "author": null,
-          "description": "はじめに\nフィクションで、死期の近づいた人物が急に日記をつけ始めるシーンがある。日記とは習慣であり、今まで何も書いてこなかった人間が急に物を書き始めることなどありえないと今まで思っていた。最近になって考えを改めた。孤独と向き合い、何かを残したいと願って創作を行うのなら、日記はもっとも手軽な手段となる。読むのが自分一人しかいないとしても、日記とは過去の自分から未来の自分に向けた伝承だと言える。孤独と向き合うためには有効な手段だと思う。\n日記を感情分析するのは2023年の年末にもやっていた。\ncontradiction29.hatenablog.com\n当時はNotionで日記を書いていた。\nNotionの本文部分はブロックベースで書いてあるので、本文テキストの抽出が面倒である\nNotionはSaaSであり、テキストが完全に向こう側に保持されるので、API経由でテキストデータをダウンロードする必要がある\nつまりNotionは感情分析するのに向いていない。\nなので、去年（2024年）の8月から日記を書くツールをObsidianに切り替えた。\nobsidian.md\nObsidianのファイル形式はマークダウン形式のテキストファイルなので、抽出が簡単である\nファイルもローカルに保存されるので、気軽にテキスト解析ができる\n感情分析をやっていく。本当は2024年のうちにやっておきたかった。\nやってみる\n全体的な方針としては以下の通り\nPythonでObsidianの保存ディレクトリにアクセスし、テキストデータを構造化しながら抽出し、感情分析する\nStreamlitで分析する\n昔はJupyter Notebookで分析するだけだったが、今回はStreamlitでインタラクティブに遊んでみることにした。\n期間はObsidianを使い始めた2024年9月から12月までとする。\nObsidia…",
-          "link": "https://contradiction29.hatenablog.com/entry/2025/01/19/133846",
-          "publishedOn": "2025-01-19T04:38:46.000Z",
-          "wordCount": 455,
-          "title": "Obisidianで書いた日記を感情分析する",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/4325094eaa7f4c0b4473ef1e7139849c9d8a3edf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcontradiction29%2F20250119%2F20250119132247.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/4325094eaa7f4c0b4473ef1e7139849c9d8a3edf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcontradiction29%2F20250119%2F20250119132247.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "なんて巨大なカニゴット",
