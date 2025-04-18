@@ -136,6 +136,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398351303208",
+          "author": null,
+          "description": "■ロム容量\n（確定）8ad 15.9MB 音楽10512Hz\n（確定）eff  9.3MB エフェクト画像\n（確定）lz7  2.9MB 画像\n（確定）raw  2.3MB 効果音\n（予定）txt  0.3MB スクリプト\n（予定）exe  0.5MB 実行ファイル\n----------\n（予定）31.2MB\n\n■TODO\nアルファブレンドを212x160サイズでぶん回して、エフェクトできるか確認\nスクリプト既読フラグをスクリプトファイルに印字\n改行、改ページのドットアイコン書く\nオープニングアニメ自前用意（オリジナルはexeに埋め込み）\nエフェクトファイルが重たいですねー。各フレームそのままで無圧縮だからしょうがないか。。そもそもGBA上で再現できるかも怪しいので最悪劣化代替え作ったりするかもしれません。。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/04/18/120413",
+          "publishedOn": "2025-04-18T03:04:13.000Z",
+          "wordCount": 478,
+          "title": "終末移植8",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398351303208/1744945518",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398351303208/1744945518"
+        },
+        {
           "id": "hatenablog://entry/6802418398348996134",
           "author": null,
           "description": "以下はキャラクタのアルファブレンドマスクを0か255段階に分けたときの画像です。周りに微妙な白ドット（ごみ？）が入ってるのですけど演出でしょうか。。修正対応中です",
@@ -2905,21 +2920,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/062ea89d0c2012bbbb3a3eefc90ca07d1a037234/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250119%2F20250119001206.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398321224218",
-          "author": null,
-          "description": "ちょっと前にYoutubeをはじめたのですが、その技術解説記事です。\n飲んだら即死するお酒を作る\nwww.youtube.com\nこの動画で特筆すべきことは下記の３点ですかね。\nRaspberry Piを心電図にするプログラムをChatGPTに書いてもらう\nカニやトマトや水を静電容量式タッチセンサにする\nArduinoをRaspberry PiのGPIOに接続する\n順に解説していきます。\nRaspberry Piを心電図にするプログラムをChatGPTに書いてもらう\n\n動画で使っているのは家に転がっていたRaspberry Pi 3なので、ちょっと古い機種です。取り付けているモニタはこの記事で紹介したもの。\nRaspberry Pi で使えるポータブルモニタの決定版が出てた（タッチスクリーン付き、GPIOを占有しない、ケース付き、約3000円） - nomolkのブログ\nGPIO端子を占有しない（横に延長してくれる）のですごく便利だったのですが、これはもう終売っぽく、他に似たような製品も出ていないみたいです。\nChatGPTが普通と違いますが\n\nAIお姉ちゃん化しているからです。こちらを見てください。\nnomolk.hatenablog.com\n心電図は（動画では明言してないけど多分伝わってると思いますが）心電位をはかっているのではなくそれっぽいグラフを書いているだけです。\nraspberry piを使って、ホルス心電図を模したシステムを作成します。実際に心電位を測るのではなく、疑似的なものです。Pythonのコードを書いて！\n一発では全然うまくいかなくて、このあと動かないところを指摘して直してもらったり、自分でデバッグしたりして５時間ほどかかったので参考程度に。\n最終的なコードはこちら。\nimport pygame\nimport RPi.GPIO as GPIO\nimpo…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/01/18/234221",
-          "publishedOn": "2025-01-18T14:42:21.000Z",
-          "wordCount": null,
-          "title": "静電容量式タッチセンサの仕組みでカニをスイッチにする／ArduinoをRaspberry PiのGPIOに接続する【動画解説】",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/9f65df3befc824386452866c4725574530861344/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250118%2F20250118223341.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9f65df3befc824386452866c4725574530861344/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250118%2F20250118223341.png"
         }
       ]
     },
