@@ -2,10 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-19T12:02:22.909Z</updated>
+    <updated>2025-04-19T13:05:34.717Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[リモートMCPがやってくる、そしてA2Aについて]]></title>
+        <id>6803633884dd8900014676ec</id>
+        <link href="https://blog.lai.so/remote-mcp/"/>
+        <updated>2025-04-19T12:51:50.000Z</updated>
+        <summary type="html"><![CDATA[先日 Streamable HTTP Transportに対応したMCP TypeScript SDK 1.10.0がリリースされました。
+
+Release 1.10.0 · modelcontextprotocol/typescript-sdk
+Streamable HTTP release
+This is the first release supporting the new Streamable HTTP transport from protocol]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DJControl Mix Ultraを買った]]></title>
+        <id>https://efcl.info/2025/04/19/DJControlMixUltra/</id>
+        <link href="https://efcl.info/2025/04/19/DJControlMixUltra/"/>
+        <updated>2025-04-19T11:12:00.000Z</updated>
+        <summary type="html"><![CDATA[DJControl Mix Ultraという、モバイル向けのDJコントローラーを買って遊んでいた。
+DJControl Mix Ultra - Dirigent | ディリゲント
+DJControl Mix Ultra - Hercules
+
+DJControl Mix Ultraとは
+DJControl Mix Ultra - Herculesは、普通のDJコントローラーと違って、iOSやAndroidのスマホやタブレットとBluetoothで接続して使う目的で作られているデバイス。
+なので、LINE INやLINE OUTもないし、スマホとの接続はBluetooth LEでのみ行うような作りになってる。
+一方で、USB Cで充電できてバッテリー駆動なので、Bluetoothでスマホと繋いで動作する。
+
+そのため、この見た目通りの構成で動く。
+音の出力は、スマホのスピーカー または スマホに繋いでスピーカーから鳴らすので、本格的な用途じゃなくて遊びとか外で使う向けに作られている。
+基本的に利用できるDJアプリも、DJ Apps | Algoriddimのみ限定されている。
+エフェクトとかミックスとかはソフトウェア的な処理を行うので、ハードウェアは本当にコントローラーというだけの役割になっている。
+デバイス自体も1kgぐらいで、ケースもちゃんとしていて、デザインも好きなので、ガジェットとしてかなり良くできてた。
+
+ケースが、スマホのスタンドにもなるというデザインも良い。
+Macbook Airより一回り小さくて軽いぐらいな感じで、持ち運びもかなり安定してて良い。
+djay Pro
+DJControl Mix Ultraは、djay Proというアプリと接続して使う専用コントローラー的なもの。
+djay Proは、iOS/Android/Mac/Windowsで動くDJアプリ…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Battle AirForce GBA]]></title>
         <id>hatenablog://entry/6802418398356393518</id>
@@ -10756,16 +10799,6 @@ GameGaz Daily 2025.1.21 first appeared on 大人のためのゲーム講座.]]><
     GitHub Copilot Workspaceが提供されて、…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[空知スマートアグリシンポジウム2024レポート ～スマート農業の広域利活用～]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=30164</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/30164"/>
-        <updated>2025-01-20T00:17:40.000Z</updated>
-        <summary type="html"><![CDATA[昨年11月に北海道の岩見沢市にて、北海道空知総合振興局、日本農業情報システム協会(JAISA)との共催で、「空知スマートアグリシンポジウム2024」を開催しました。 大雪などトラブルにも見舞われること...]]></summary>
-        <author>
-            <name>藤井 俊平</name>
         </author>
     </entry>
     <entry>

@@ -7244,6 +7244,16 @@
       "siteUrl": "https://blog.lai.so/",
       "articles": [
         {
+          "id": "6803633884dd8900014676ec",
+          "author": "laiso",
+          "description": "先日 Streamable HTTP Transportに対応したMCP TypeScript SDK 1.10.0がリリースされました。\n\nRelease 1.10.0 · modelcontextprotocol/typescript-sdk\nStreamable HTTP release\nThis is the first release supporting the new Streamable HTTP transport from protocol",
+          "link": "https://blog.lai.so/remote-mcp/",
+          "publishedOn": "2025-04-19T12:51:50.000Z",
+          "wordCount": null,
+          "title": "リモートMCPがやってくる、そしてA2Aについて",
+          "imageUrl": null
+        },
+        {
           "id": "6802575fb6e8470001b99ed5",
           "author": "laiso",
           "description": "マイクロソフトがVSCodeフォークエディタ上での自社拡張をブロック\nマイクロソフトは、CursorやWindsurfなどのフォークエデ",
@@ -7408,7 +7418,18 @@
       "title": "Web Scratch",
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://efcl.info/2025/04/19/DJControlMixUltra/",
+          "author": null,
+          "description": "DJControl Mix Ultraという、モバイル向けのDJコントローラーを買って遊んでいた。\nDJControl Mix Ultra - Dirigent | ディリゲント\nDJControl Mix Ultra - Hercules\n\nDJControl Mix Ultraとは\nDJControl Mix Ultra - Herculesは、普通のDJコントローラーと違って、iOSやAndroidのスマホやタブレットとBluetoothで接続して使う目的で作られているデバイス。\nなので、LINE INやLINE OUTもないし、スマホとの接続はBluetooth LEでのみ行うような作りになってる。\n一方で、USB Cで充電できてバッテリー駆動なので、Bluetoothでスマホと繋いで動作する。\n\nそのため、この見た目通りの構成で動く。\n音の出力は、スマホのスピーカー または スマホに繋いでスピーカーから鳴らすので、本格的な用途じゃなくて遊びとか外で使う向けに作られている。\n基本的に利用できるDJアプリも、DJ Apps | Algoriddimのみ限定されている。\nエフェクトとかミックスとかはソフトウェア的な処理を行うので、ハードウェアは本当にコントローラーというだけの役割になっている。\nデバイス自体も1kgぐらいで、ケースもちゃんとしていて、デザインも好きなので、ガジェットとしてかなり良くできてた。\n\nケースが、スマホのスタンドにもなるというデザインも良い。\nMacbook Airより一回り小さくて軽いぐらいな感じで、持ち運びもかなり安定してて良い。\ndjay Pro\nDJControl Mix Ultraは、djay Proというアプリと接続して使う専用コントローラー的なもの。\ndjay Proは、iOS/Android/Mac/Windowsで動くDJアプリ…",
+          "link": "https://efcl.info/2025/04/19/DJControlMixUltra/",
+          "publishedOn": "2025-04-19T11:12:00.000Z",
+          "wordCount": null,
+          "title": "DJControl Mix Ultraを買った",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "技術情報 – IIJ Engineers Blog",
@@ -7659,16 +7680,6 @@
           "wordCount": null,
           "title": "Starlinkの動的IPアドレスはどれくらい変化するのか？調べました",
           "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=30164",
-          "author": "藤井 俊平",
-          "description": "昨年11月に北海道の岩見沢市にて、北海道空知総合振興局、日本農業情報システム協会(JAISA)との共催で、「空知スマートアグリシンポジウム2024」を開催しました。 大雪などトラブルにも見舞われること...",
-          "link": "https://eng-blog.iij.ad.jp/archives/30164",
-          "publishedOn": "2025-01-20T00:17:40.000Z",
-          "wordCount": 1772,
-          "title": "空知スマートアグリシンポジウム2024レポート ～スマート農業の広域利活用～",
-          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2025/01/c478b1a6dedb96603a486610161ab963.png"
         }
       ]
     },
