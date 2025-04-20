@@ -1166,6 +1166,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398360989320",
+          "author": null,
+          "description": "moonrepo.dev\n各種言語(とか)のバージョン管理に mise を使っていたけど、proto に移行した。\nmise はバージョン管理だけでなく、 direnv のような環境管理や、make のようなタスク実行もサポートしていて、少し過剰に感じていた。(し、使ってなかった)\n1つのツールが複数の役割を担うのは、「一つのことをうまくやれ」というUNIX哲学に反している気がした。\nprotoはいまのところバージョン管理だけをやっているのと、WASMベースでプラグインを定義できるのがモダンで、保守性やセキュリティ面でも好印象だった。\nOSSで開発されているが実質的に企業としての moonrepo が管理しているので将来はどうなるかは分からない。\nインストールはシェルスクリプトを読み込むやつ だけれど、最近はLLMと一緒にレビューしてから実行できるのでちょっと安心。\n自分より頭のいい人にうまく隠されると見破れる自信がない。\n非公式のFormula はあるみたいなので Homebrew で入れる選択肢も一応ある。\n.zshenv に以下のように環境変数を設定すると、XDG_DATA_HOME 以下にインストールできます。\n# proto https://github.com/moonrepo/proto\nexport PROTO_HOME=\"$XDG_DATA_HOME/proto\";\nexport PATH=\"$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH\";\n\n\n\n補完系も生成して配置しておいた。\n$ proto completions --shell zsh > ~/.config/zsh/completion/_proto\n使い方はよくある感じなので ドキュメント を眺めるとすぐに分かると思います。\nしばらく使ってみて様子をみようと思います。\n他にも軽量なバージョン管理ツールを知っている人がいたらぜひ教えてください。",
+          "link": "https://blog.nishimu.land/entry/2025/04/20/230226?utm_source=feed",
+          "publishedOn": "2025-04-20T14:02:26.000Z",
+          "wordCount": 281,
+          "title": "miseからprotoに移行した",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398360989320/1745157746",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398360989320/1745157746"
+        },
+        {
           "id": "hatenablog://entry/6802418398342424623",
           "author": null,
           "description": "Google Search NavigatorというChrome拡張を作りました。 名前はすごい適当。\nGoogleの検索結果をVimっぽくキーボードで操作できるやつです。\ngithub.com\n元々、似たようなChrome拡張を使ってたんだけど、Chromeの最新の仕様変更に追従しなくなって動かなくなってしまった。めちゃくちゃ使っていたので諦めて自分で作ることにした。\nただ、作ったとはいっても実際はほとんどCursorに作ってもらった感じ。\n普段からVimを使っていると、Google検索のときにも手をキーボードから離したくなくなることがある。Vimiumも使っているけど、検索結果の1個1個にj/kでフォーカスして移動したい。広告とかサイトマップとかも飛ばしたい。\n折角なので元の拡張より機能を盛っていて、複数選択してまとめて開いたり、URLをコピー出来るようにしておいた。ちょっとだけ便利だと思う。",
