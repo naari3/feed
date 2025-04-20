@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-20T00:04:13.907Z</updated>
+    <updated>2025-04-20T01:29:20.751Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2025-04-19]]></title>
+        <id>hatenablog://entry/6802418398357081899</id>
+        <link href="https://commits.hatenablog.com/entry/2025/04/20/100000"/>
+        <updated>2025-04-20T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[RubyKaigi day 4が終わった。前日のブログで書ききれなかった(書き忘れていた)感想を書く。
+ydahさんが宣伝していたのもあり、「関西Ruby会議08でキーノートをやるんですね」と何回か話しかけられた。
+関西Ruby会議では、特定のプログラムについて話すのではなく、いままでやってきた活動全体に触れるような発表にしようかなと思っている。まあまだふんわりと考えているだけで、変わるかもしれないけれど。
+参加登録、そしてCfPが開いているので、興味がある人はぜひ来てくれると嬉しいです。
+regional.rubykaigi.org
+今回のKaigiでは、「Rubyコミッタになるにはどうしたらよいですか？」という質問を何回かもらった。and the WorldやMatz Keynoteの話が聞いているのかもしれない。
+RubyコミッタとそうでないRubyistとの距離はそう遠くない、というのはとてもいい話だと思う。
+コミッタになるため、というよりは、Rubyの開発に近づくための1歩としてRubyの開発版を毎日ビルドしてそれを使う、というのを何人かにおすすめした。
+そうすると最新のRubyにいち早く触れることができるので、バグを見つけたり新機能を試したりがしやすくて楽しい。
+人と話しているときには思いつかなかったのだけど、RUBYOPT=-wをしておくのもおすすめかもしれない。
+Rubyコミッタというのは分かりやすい1つの属性だけど、それを目指すというだけではなく、ほかの面からRuby(あるいは別の言語)に深くかかわっていくのもまた1つの道だと思う。それはRailsへの関わりかもしれないし、何かのライブラリかもしれないし、あるいはコミュニティへの関わりかもしれない。
+関わりたい形でRubyに深く関わっていくと良いのだろうなと思っている。
+あまりうまくまとまりのない文章になったけど、まあ日記なので。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.4.20]]></title>
         <id>https://gamegaz.com/?p=43438</id>
