@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398371255109",
+          "author": null,
+          "description": "なんという唐突スタート！あの癒され音楽でまた旅ができるんですか。やるっきゃないですよね・・・。あとアニメはアカポリプスホテルが面白いので見てない方はオヌヌメです。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/04/23/135404",
+          "publishedOn": "2025-04-23T04:54:04.000Z",
+          "wordCount": 453,
+          "title": "オブリビオン休暇",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398371255109/1745384087",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398371255109/1745384087"
+        },
+        {
           "id": "hatenablog://entry/6802418398365480474",
           "author": null,
           "description": "今週中にコンバータ終わりそうです。既読機能はオリジナルのユニーク番号があるのでそのまま利用予定。総数は256*5 + 136 = 1416。1416/8ビット = 177バイト・・・全然余裕です。改行と改ページも印字変更しました。ただコンバータ側が面倒な処理になってしまいましたけどこれはしょうがないですねー。\n@echo off\n\nrem ---------------------------------\nrem スクリプトファイルをデコード\n\nfor %%i in (*.SCF) do scn_txt %%i\n\ndel *.SCF\n\n\nrem ---------------------------------\nrem 正規表現で変更\n\nfor %%i in (*.txt) do python scn_re.py %%i\n\n\nrem ---------------------------------\nrem 改行を'\\0'に変更\n\nfor %%i in (*.txt) do scn_term %%i\n\ndel *.txt\n\n\nrem ---------------------------------\nrem メッセージ命令変更\n\nfor %%i in (*.bin) do scn_wrap %%i\n\n\nrem ---------------------------------\nrem ジャンプテーブル変更\n\nfor %%i in (*.bin) do scn_jmp %%i",
