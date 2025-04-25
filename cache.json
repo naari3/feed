@@ -7341,6 +7341,16 @@
       "siteUrl": "https://blog.lai.so/",
       "articles": [
         {
+          "id": "680b88b26386de0001563e07",
+          "author": "laiso",
+          "description": "OpenAI Codex CLIの最新版でOpenAI以外の複数のプロバイダをサポートするようになりました。 \n\nfeat: support multiple providers via Responses-Completion transformation by dnakov · Pull Request #247",
+          "link": "https://blog.lai.so/openai-codex-cli-multiprovider-rust/",
+          "publishedOn": "2025-04-25T13:35:50.000Z",
+          "wordCount": null,
+          "title": "【今週の話題】OpenAI Codex CLIがマルチプロバイダサポート、Rust実装が追加",
+          "imageUrl": null
+        },
+        {
           "id": "6803633884dd8900014676ec",
           "author": "laiso",
           "description": "先日 Streamable HTTP Transportに対応したMCP TypeScript SDK 1.10.0がリリースされました。\n\nRelease 1.10.0 · modelcontextprotocol/typescript-sdk\nStreamable HTTP release\nThis is the first release supporting the new Streamable HTTP transport from protocol",
