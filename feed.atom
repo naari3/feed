@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-28T15:01:52.837Z</updated>
+    <updated>2025-04-28T16:01:45.395Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Scala 3でMCPサーバとフレームワークをフルスクラッチした]]></title>
+        <id>hatenablog://entry/6802418398388253143</id>
+        <link href="https://blog.3qe.us/entry/2025/04/29/004251"/>
+        <updated>2025-04-28T15:42:51.000Z</updated>
+        <summary type="html"><![CDATA[だいたいタイトルの通り。最近MCPサーバ書くのが流行っており、実は自分はけっこう前にサーバ自体は書いてしまっていたのだが、記事にする元気がなかったので放置していた。しかし冷静に考えるとけっこう学びがあったので記事として残しておく。
+記事書いたほうがいいかな〜と思っていたが、以下の記事を見て触発されて書くことにした。
+zenn.dev
+これであなたもAI人材！という感じの記事ではない。最低限必要なものを全部実装しました、という記事だ。あまり有益な記事ではないかもしれないが、頑張って動いて嬉しかった、という日記だと思って読んでください。
+やったこと
+以下のことをやった。既にあるフレームワークを使うだけなのは芸がないので、自分でサーバ自体をフルスクラッチして、ユーザが関数を渡すだけでサーバが立つようにした。全部自作なので、すごい量の知見が貯まった。
+ScalaでMCPサーバを構築するためのフレームワークを作成した
+それを使って数列の和を返すようなToolを定義できた
+コードはここに公開してある。
+github.com
+コード例
+百聞は一見に如かず。実際にコードを見てみよう。3つのものを用意するだけでサーバを作ることができる。すなわち、入力を定義するcase classと、実際に入力を受け取ってIO[Seq[ContentPart]]型を返す関数、そしてこの関数を複数収めたMapである。
+case class SumInput(
+    xs: Seq[Int]
+) derives io.circe.Decoder, sttp.tapir.Schema
+
+def sum(input: SumInput): IO[Seq[ContentPart]] =
+  val sum = input.xs.sum
+  IO.pure(Seq(ContentPart.TextContentPart…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[生成AIがWeb上のコンテンツを読めるようになる鍵は暗号通貨によるマイクロペイメント(かもしれない)]]></title>
         <id>hatenablog://entry/6802418398388906565</id>
