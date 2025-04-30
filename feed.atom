@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-04-30T01:29:46.963Z</updated>
+    <updated>2025-04-30T02:29:51.569Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[export VSCODE_INJECTION=0]]></title>
+        <id>hatenablog://entry/6802418398394948488</id>
+        <link href="https://blog.nishimu.land/entry/2025/04/30/104618?utm_source=feed"/>
+        <updated>2025-04-30T01:46:18.000Z</updated>
+        <summary type="html"><![CDATA[VSCode系のIDEのターミナルを開くと以下のような警告が出て気になっていた。
+warning: completion was already initialized before completion module. Will call compinit again. See https://github.com/zimfw/zimfw/wiki/Troubleshooting#completion-is-not-working
+warning: compinit being called again after completion module at /Users/<USER>/.config/zim/modules/completion/init.zsh:36
+compinit が2回呼ばれていると言われているけど設定をさらっても重複しているところはない。別のターミナルで開いたときは警告は出ないのでやはり設定がおかしい訳ではなさそう。
+ところでVSCode系のエディタで Shell Integration を使うために以下のように追加のスクリプトを読み込んでいる。(ちなみにフォークしたエディタでもこのまま動く)
+# VSCode shell integration
+[[ "$TERM_PROGRAM" == 'vscode' ]] && . "$(code --locate-shell-integration-path zsh)"
+
+
+
+よく読むとこの中でもう一度 .zshrc を読み込んでいる。
+# Only fix up ZDOTDIR if shell integration was injected (not manually installed) and has not been called yet
+if [[ "$VSCODE_INJECTION" == "1" ]]; then
+    if [[ $options[norcs] = off  && -f $USER_ZDOTDIR/.zshrc ]]; then
+        VSCODE_ZDOTDIR=$ZDOTDIR
+        ZDOTDIR=$USER_ZDOTDIR
+       # A user's custom HISTFILE location might be set when their .zshrc file is sourced below
+     . $USER_ZDOTDIR/.zshrc
+    fi
+fi
+
+
+
+明らかにこれが原因である。
+VSCODE_INJECTION をみて判定していそうなので、 export VSCODE_INJECTION=0 って書いておくと解決した。
+ところで、コメントをよく読むと Only fix up ZDOTDIR if shell integration was injected (not manually installed) and has not been called yet と書かれている。どうやら手動でスクリプトを読み込まなくても良さそうな書き方に見える。
+ドキュメントを見に行くと Automatic script injection と言うのがデフォルトになっているらしい。Shell integration が実験的な機能だったときから使っていたので気付いてなかった。
+ということで本質的な原因は自動注入が動いたあとに手動でも読み込んでいるのが悪かったのであった。手動で読み込むのをやめました。]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.4.30]]></title>
         <id>https://gamegaz.com/?p=43501</id>
