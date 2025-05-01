@@ -3247,7 +3247,23 @@
       "title": "rinsuki’s blog",
       "feedUrl": "https://rinsuki.hatenablog.jp/rss",
       "siteUrl": "https://rinsuki.hatenablog.jp/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6802418398396937946",
+          "author": null,
+          "description": "TL;DR: Godot 4.4 以上にアップデートして、Noto Sans CJK を落としてOSに入れる。Google Fonts で落とせる Noto Sans JP ではダメなので注意！\nhttps://github.com/notofonts/noto-cjk/releases?q=sans&expanded=true で一番上に出てくる「Noto Sans CJK Version 〜〜」 の Assets を押して開き、「Language Specific OTFs Japanese (日本語)」を押す。\n\nすると なんちゃら_NotoSansCJKjp.zip が降ってくるので、その中の NotoSansCJKjp-なんちゃら.otf を全部インストールする (全部じゃなくていい気はするが、まあ……)\nMacなら複数選択して開くと一回でインストールできるのでおすすめ。\n\nで、インストールできたら Godot を再起動すると反映されるはず。\nbefore\nafter\n\n\n\n\n\n\n\n\n\n\n\n普通にシステムフォント使えよ……と思わなくもないけど、まあ do not want to select a random system font to keep UI style consistent.1 らしいんで……\nhttps://github.com/godotengine/godot/pull/96850↩",
+          "link": "https://rinsuki.hatenablog.jp/entry/2025/05/01/082230",
+          "publishedOn": "2025-04-30T23:22:30.000Z",
+          "wordCount": null,
+          "title": "Godotのエディタのフォントが中華フォントなのを直す",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398396937946/1746055350",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398396937946/1746055350"
+        }
+      ]
     },
     {
       "title": "かるが浜仮停車場",
@@ -3340,21 +3356,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/3295b919fb90f188bc03398b368d77e9c0bcc405/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51L3xM5QveL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398322119916",
-          "author": null,
-          "description": "去年頃から「今まで触れたことがないもの」「ちょっとした面白いもの」より「ちょっと高くてちょっと良いもの」「既に持っているもののアップグレード版」を買うことが増えた気がする。価格帯も全体的に少し上がっている。無職を脱して働き始めたし、そろそろそんな感じの年齢に入ってきたのだろう。\n1. キーボード：G913-TKL\n2. マウス：M-DT1DRBK\n3. 加湿器：SV-403\n4. ALLOUTのパワーグリップ\n5. ビックカメラSuicaカード\n6. 自転車：25 MISTRAL DISC ALEX\n7. ヒートテックイージーパンツ/2WAYストレッチ\n8. イヤホン：TE-H1\n9. ボールペン：カリモク 4&1\n10. 謎の柄シャツ\nEX. 仕事\n1. キーボード：G913-TKL\n\n\nLogicool G(ロジクール G) ゲーミングキーボード テンキーレス ワイヤレス G913 TKL 薄型 GLスイッチ タクタイル 日本語配列 LIGHTSPEED 無線 Bluetooth 接続対応 LIGHTSYNC RGB G913-TKL-TCBK 国内正規品\n\nLogicool G(ロジクール G)\nAmazon\nロジクールの高級キーボード。今月買ったので厳密には2024年の買い物ではない。\nずっとFRONTIERでBTOパソコンを買ったとき無料で付いてきたBUFFAROの無名キーボードを使っていたのだが、キーが深めなので打鍵するつもりがないキーに指が触れて不愉快に感じることが増えた。それでミスタイプを誘発している気もするし、浅めで打ちやすいキーボードを探していた。\n打ち心地は現物を触って確かめるしかない。ビッグカメラをうろついて色々試していたところ、ゲーミングコーナーで試したこれが完璧だった。正月休み明けの平日で誰もいない売り場にあるキーボードを全部打ったが、これだけが…",
-          "link": "https://saize-lw.hatenablog.com/entry/2025/01/31/200135",
-          "publishedOn": "2025-01-31T11:01:35.000Z",
-          "wordCount": 815,
-          "title": "24/1/31 2024年らへんに買ったりして良かった寄りのもの約10選",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/df644e18e2032d5dc867e62f55ac564500219aed/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20250131%2F20250131200055.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/df644e18e2032d5dc867e62f55ac564500219aed/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20250131%2F20250131200055.png"
         }
       ]
     },
