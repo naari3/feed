@@ -7210,21 +7210,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398326300772/1738767222"
-        },
-        {
-          "id": "hatenablog://entry/6802418398325722824",
-          "author": null,
-          "description": "こんな文字列があるとする:\nval s1 = \"foo\"\nval s2 = \"\"\n\n\n\nこれを、以下のような感じにしたいことはまあまあある:\nval s1a = Some(\"foo\")\nval s2a = None\n\n\n\nつまり、以下のようなルールだ:\n文字列sが空の場合、None。\nそれ以外の場合は、Some(s)。\n素朴にmatchを使うこともできる:\ns1 match\ncase \"\" => None\ncase s => Some(s)\n\n\n\nしかしOptionにはfilterとfilterNotがあるので、先にOptionにしてからfilterすると素直に書ける:\nSome(s1).filter(_.nonEmpty)\n// equivalent\nSome(s1).filterNot(_.isEmpty)\n\n\n\nCatsを使っている場合は、.someを使える:\nimport cats.syntax.all.{*, given}\ns1.some.filter(_.nonEmpty)\n\n\n\nあわせて読みたい\n逆のパターンはCatsで素直に書くパターンがある。\nblog.3qe.us",
-          "link": "https://blog.3qe.us/entry/2025/02/03/232029",
-          "publishedOn": "2025-02-03T14:20:29.000Z",
-          "wordCount": null,
-          "title": "Scalaで空文字列をNoneにしたいときはfilterすると良い",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398325722824/1738592429",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398325722824/1738592429"
         }
       ]
     },
