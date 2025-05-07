@@ -3103,21 +3103,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/37023a38ad86ea24fa538aa88a546c613ec5f8ec/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250329%2F20250329123344.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398326564123",
-          "author": null,
-          "description": "お前その話もう何回目だよという感じですが先月からYoutubeを始めました。\nwww.youtube.com\nで、そのBGMを作ろうと思って音楽生成AIサービスのudioを使ってみたのですが、思いのほか面白くてむしろそっちにハマってしまったので使用感をレビューしたいと思います。\n先にことわっておくとインスト曲ばっかり作っているので歌モノのことはわかりません。あと操作方法とかの基本的なことは説明しません（といっても触ったらだいたいわかると思う）。sunoとか他サービスとの比較も知らん。課金はしてます。実用性への課金というより面白さ／楽しさへの課金という感じ。\nこういう画面のサービス\n\n    \nudioで何ができるか\n先にざっくり基本機能を説明しておきます。\nプロンプトをもとに音楽を作ってくれる\ncreateすると30秒の曲の断片（中間部）ができる。２つ。\nできたものが良かったらExtend（拡張）して曲を長くできる。Extendはイントロを追加／前に中間部を追加／後に中間部を追加／アウトロを追加の３種類。\nつまり、create→イントロ追加→中間部を追加（好きな長さまで）→アウトロを追加、すると完結した曲ができる。\n歌のあるなしが選べる。歌詞は自分で入力するのと自動生成と選べるっぽい。使ってないので日本語が通るかどうかとかは知らない。\n曲データはMP3でDL可能。\n曲をシェアしたりするSNS要素があるが使ってないので詳細不明\n生成画面はこんな\n無料版だとこんな感じで、課金すると\n生成回数の上限アップ\n一発目から2分の曲が作れる\nネガティブプロンプト（こうしないでほしいというプロンプト）が使える\n音源のアップロードができる（アップロードした曲のつづきを生成とか）\nWAVやSTEM（パート別ファイル）のダウンロードも可能に\n等ができます。本格的に使うなら課金するとだいぶ便利にな…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/02/07/002416",
-          "publishedOn": "2025-02-06T15:24:16.000Z",
-          "wordCount": 843,
-          "title": "音楽生成AIサービス「udio」雑感（音楽リスナー／DTMer／動画制作者、それぞれの視点から）",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/17fa4f9d1484e022a31422aaf24a59e80d6790ea/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250206%2F20250206235324.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/17fa4f9d1484e022a31422aaf24a59e80d6790ea/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250206%2F20250206235324.png"
         }
       ]
     },
