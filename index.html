@@ -78,6 +78,72 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
+              rel="noopener">現実モデリング</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ObsidianのVSCode向け拡張機能を作る</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://contradiction29.hatenablog.com/entry/2025/05/11/163314" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>概要
+Obsidianを使っているうちに、エディターの機能が足りていない気がしてきた
+Obsidianのアプリのエディタ機能を補うためにはVSCode/Cursorを使えばよいが、そうするとObdisianとしての機能が不足する
+そこで以下の機能を持つObsidianのVSCode向け拡張機能を作り、機能拡張をした
+
+
+内部リンク([[リンク]])をクリックしたらVSCodeのエディター上でそのファイルを開く
+ファイルが存在しない場合は新たにファイルを作成する
+内部リンク記法が始まると、ファイル名の候補を表示する
+VSCodeの拡張機能を作ること普段やらないので、作業過程を記録しておく。
+はじめに
+日記を書くアプリとしてObsidianを使い始めてから9か月が経った。
+※詳細な経緯は以下の雑記に書いた
+contradiction29.hatenablog.com
+最初は日記として使い始めたObsidianだが、最近は普通のメモとしても使うようになった（それが本来の使い方なのかもしれないが）。読んだ技術書について書置きを残したり、調べもののメモを作ったりしている。
+GoogleのNotebookLMとも併用しつつ、最近は以下のような手順で技術書を読んでいる：
+まず電子書籍で読む
+NotebookLMに電子書籍をアップロードしてまとめてもらう
+まとめたものをObsidianに張り付ける
+整理してメモにする
+4がObsidianのWindows版アプリだと厳しい。
+obsidian.md
+NotebookLMで抽出したテキストをそのままObsidianにコピペすると、以下のような物足りなさがある
+箇条書きの形式がおかしい
+明らかに不要なところに内部リンクがあったりする。
+つまり一回は人間による整形を挟みたい。だが、Obsidianの公式アプリはエディタとしての機能はそこまで強いわけではない。決して弱くはないが、IDE等に比べればどうしても見劣りしてしまう*1。
+なので最近はCursorを使って「人間による整形」をしている。AI搭載のエディターはメモのリファクタリングが結構得意で、箇条書きの形式を整えたり、論理構造に従って箇条書きののインデントを整理したりは得意だ。だがCursorはあくまでもエディターであり、Obsidianっぽい以下のような機能は搭載されていない：
+内部リンク記法が始まると、ファイル名の候補を表示する
+内部リンクをクリックしたらそのファイルが開く
+だんだん物足りなくなってきたので、自分で作ることにした。
+チュートリアル
+AI時代の現代だからこそ、新しい技術にツッコむときは公式のチュートリアルを済ませて概要をつかんでからやったほうが良いと最近は学びつつある。なので以下のチュートリアルをやった。
+code.visualstudio.com
+このチュートリアルのコードはなぜか起動しなかったので、microsoft/vscode-extension-samplesの方を参考にして大枠をつかむ。
+github.com
+Extension Anatomyまで読んで、
+VSCodeの各種API
+Activation Events
+Contribution Points
+などの主要概念をざっくりさらった。
+作ってみる
+CursorのChatと対話しながら、要件定義書のようなDocを作っていく。試行錯誤を要件定義書に反映させる。
+ある程度出来上がったら要件定義書をもとに、Agentを走らせる。Step単位でデバッグしながらやる。細かいところは自分で治す。
+できた拡張機能がこちらになります。
+marketplace.cursorapi.com
+今のところは完全に自分用だが、Publishしておくといろんなところで使えて便利
+*1:昨今のIDEの進化がすごすぎるだけかもしれない。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/26006613683363250/6802418398423124954/1746948794" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://5desk.hatenablog.jp/" target="_blank"
               rel="noopener">3F 音楽室</a></h3>
           <section class="articles-per-source">
@@ -18576,7 +18642,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-05-11T07:02:00.825Z">2025-05-11T07:02:00.825Z</time>
+    <time id="build-timestamp" datetime="2025-05-11T08:01:43.290Z">2025-05-11T08:01:43.290Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -1676,6 +1676,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398423124954",
+          "author": null,
+          "description": "概要\nObsidianを使っているうちに、エディターの機能が足りていない気がしてきた\nObsidianのアプリのエディタ機能を補うためにはVSCode/Cursorを使えばよいが、そうするとObdisianとしての機能が不足する\nそこで以下の機能を持つObsidianのVSCode向け拡張機能を作り、機能拡張をした\n\n\n内部リンク([[リンク]])をクリックしたらVSCodeのエディター上でそのファイルを開く\nファイルが存在しない場合は新たにファイルを作成する\n内部リンク記法が始まると、ファイル名の候補を表示する\nVSCodeの拡張機能を作ること普段やらないので、作業過程を記録しておく。\nはじめに\n日記を書くアプリとしてObsidianを使い始めてから9か月が経った。\n※詳細な経緯は以下の雑記に書いた\ncontradiction29.hatenablog.com\n最初は日記として使い始めたObsidianだが、最近は普通のメモとしても使うようになった（それが本来の使い方なのかもしれないが）。読んだ技術書について書置きを残したり、調べもののメモを作ったりしている。\nGoogleのNotebookLMとも併用しつつ、最近は以下のような手順で技術書を読んでいる：\nまず電子書籍で読む\nNotebookLMに電子書籍をアップロードしてまとめてもらう\nまとめたものをObsidianに張り付ける\n整理してメモにする\n4がObsidianのWindows版アプリだと厳しい。\nobsidian.md\nNotebookLMで抽出したテキストをそのままObsidianにコピペすると、以下のような物足りなさがある\n箇条書きの形式がおかしい\n明らかに不要なところに内部リンクがあったりする。\nつまり一回は人間による整形を挟みたい。だが、Obsidianの公式アプリはエディタとしての機能はそこまで強いわけではない。決して弱くはないが、IDE等に比べればどうしても見劣りしてしまう*1。\nなので最近はCursorを使って「人間による整形」をしている。AI搭載のエディターはメモのリファクタリングが結構得意で、箇条書きの形式を整えたり、論理構造に従って箇条書きののインデントを整理したりは得意だ。だがCursorはあくまでもエディターであり、Obsidianっぽい以下のような機能は搭載されていない：\n内部リンク記法が始まると、ファイル名の候補を表示する\n内部リンクをクリックしたらそのファイルが開く\nだんだん物足りなくなってきたので、自分で作ることにした。\nチュートリアル\nAI時代の現代だからこそ、新しい技術にツッコむときは公式のチュートリアルを済ませて概要をつかんでからやったほうが良いと最近は学びつつある。なので以下のチュートリアルをやった。\ncode.visualstudio.com\nこのチュートリアルのコードはなぜか起動しなかったので、microsoft/vscode-extension-samplesの方を参考にして大枠をつかむ。\ngithub.com\nExtension Anatomyまで読んで、\nVSCodeの各種API\nActivation Events\nContribution Points\nなどの主要概念をざっくりさらった。\n作ってみる\nCursorのChatと対話しながら、要件定義書のようなDocを作っていく。試行錯誤を要件定義書に反映させる。\nある程度出来上がったら要件定義書をもとに、Agentを走らせる。Step単位でデバッグしながらやる。細かいところは自分で治す。\nできた拡張機能がこちらになります。\nmarketplace.cursorapi.com\n今のところは完全に自分用だが、Publishしておくといろんなところで使えて便利\n*1:昨今のIDEの進化がすごすぎるだけかもしれない。",
+          "link": "https://contradiction29.hatenablog.com/entry/2025/05/11/163314",
+          "publishedOn": "2025-05-11T07:33:14.000Z",
+          "wordCount": null,
+          "title": "ObsidianのVSCode向け拡張機能を作る",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/26006613683363250/6802418398423124954/1746948794",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/26006613683363250/6802418398423124954/1746948794"
+        },
+        {
           "id": "hatenablog://entry/6802418398388612280",
           "author": null,
           "description": "概要\n2025年4月、筆者の手元でVRChat上で動画プレイヤーが突然再生できなくなる事象が発生した。\nフレンドさんは再生できていたので、筆者の手元に限定して起こった出来事である。\nYouTube側のBot判定により、YouTubeがyt-dlpによるアクセスをブロックし、ログインを要求したことが直接的な原因である\nWindowsのファイアウォール設定にルールを追加してBot判定が行われる状況を回避し、動画を再生できる状態まで復元できた\n自分用に対処法をメモしておく。\n何が起こったか\n2025年の4月のある日、動画再生ギミックのあるワールドに入ったら、動画が聞こえなくなった。昨日は再生できていたので、何もしていないのに壊れたことになる。いろいろなワールドで調べてみたが、どうやらすべてで発生している。Twitterを観る感じ、他にも同様のエラーに遭遇したユーザーさんがいるらしい。というわけで早速調査してみる。\nログをみる\nまずは「設定 > デバッグ情報 > ログフォルダーを開く」からログを見てみる。エラー発生時のログが記載されていた。\n2025.04.28 14:45:24 Debug      -  NativeProcess.HasExited: process exited with code 1, took 1781 ms. Command line: C:/Users/sora3/AppData/LocalLow/VRChat/VRChat\\Tools/yt-dlp.exe (...)\n2025.04.28 14:45:24 Warning    -  [Video Playback] ERROR: [youtube] jfKfPfyJRdk: Sign in to confirm you�fre not a bot. Use --cookies-from-brow…",
