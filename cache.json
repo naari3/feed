@@ -1344,21 +1344,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/80079f94886d893dc6f87acf733d9cf8c7944def/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31c3MW0wV0L._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398328090053",
-          "author": null,
-          "description": "github.com\nDocker Desktop を使い続けてきたけど、別にGUI要らんなとなっていたので colima に移行しました。\nまずは Docker Desktop をアンインストールする。停止したあとバイナリを削除して、~/.docker をまるごと消しました。\n最初、./docker を消してなかったので cli-plugins なんかがそのままになっていて plugin の実態がないみたいな怒られ方してうまく動いてなかった。\n$ brew install colima\n\n\n\nHomeBrew でサクッと入る。\n$ colima start\n\n\n\nで起動するとあっさりと動いてしまって簡単だった。\nクライアントが必要なのでそれも入れておく\n$ brew install docker docker-compose\n\n\n\ndocker-compose は以下のように言われるのでこれもやっておく。これで docker -compose じゃなくて docker compose で呼び出せる。\n==> Caveats\nCompose is a Docker plugin. For Docker to find the plugin, add \"cliPluginsExtraDirs\" to ~/.docker/config.json:\n  \"cliPluginsExtraDirs\": [\n      \"/opt/homebrew/lib/docker/cli-plugins\"\n  ]\nデフォルトでは 2GB のメモリが割り当てられているが、現代のアプリーションは大食いなので 8GB くらい当てておく。\n$ colima start --edit\n\n\n\n起動時に --edit オプションを付ける適切なエディタを開いてくれて設定することができる。\nただし、ここで開くファイル、XDG Base Directory を無視している気がしている。\n$XDG_CONFIG_HOME/colima/default/colima.yaml 辺りを触る方がいい気がしました。(あとで調べたい)\ncolima status してなんか動いてそうだったらOK\n$ colima status\n% colima status\nINFO[0000] colima is running using macOS Virtualization.Framework\nINFO[0000] arch: aarch64\nINFO[0000] runtime: docker\nINFO[0000] mountType: sshfs\nINFO[0000] socket: unix://$XDG_CONFIG_HOME/colima/default/docker.sock",
-          "link": "https://blog.nishimu.land/entry/2025/02/12/141804?utm_source=feed",
-          "publishedOn": "2025-02-12T05:18:04.000Z",
-          "wordCount": 360,
-          "title": "Docker Desktop から colima に移行した",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398328090053/1739337484",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398328090053/1739337484"
         }
       ]
     },

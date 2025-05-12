@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-05-12T17:02:19.782Z</updated>
+    <updated>2025-05-12T18:01:46.764Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -11769,56 +11769,6 @@ NSAIDs系とかカロナールとかいろいろあるけど好きなやつを�
 　まあ、とはいっても、特定の企業を国は癒着して応援すべきだったと、ぼくが思っているわけではないことは言っておく。というのは、応援すべき勝てそうな企業を見抜いて応援する目利き能力を日本の国が持っているとも思えないからだ。きっと世界で勝てそうな企業じゃなくて、癒着がうまい企業が国のお金を持っていくだけだ…]]></summary>
         <author>
             <name>続・はてなポイント３万を使い切るまで死なない日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Docker Desktop から colima に移行した]]></title>
-        <id>hatenablog://entry/6802418398328090053</id>
-        <link href="https://blog.nishimu.land/entry/2025/02/12/141804?utm_source=feed"/>
-        <updated>2025-02-12T05:18:04.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-Docker Desktop を使い続けてきたけど、別にGUI要らんなとなっていたので colima に移行しました。
-まずは Docker Desktop をアンインストールする。停止したあとバイナリを削除して、~/.docker をまるごと消しました。
-最初、./docker を消してなかったので cli-plugins なんかがそのままになっていて plugin の実態がないみたいな怒られ方してうまく動いてなかった。
-$ brew install colima
-
-
-
-HomeBrew でサクッと入る。
-$ colima start
-
-
-
-で起動するとあっさりと動いてしまって簡単だった。
-クライアントが必要なのでそれも入れておく
-$ brew install docker docker-compose
-
-
-
-docker-compose は以下のように言われるのでこれもやっておく。これで docker -compose じゃなくて docker compose で呼び出せる。
-==> Caveats
-Compose is a Docker plugin. For Docker to find the plugin, add "cliPluginsExtraDirs" to ~/.docker/config.json:
-  "cliPluginsExtraDirs": [
-      "/opt/homebrew/lib/docker/cli-plugins"
-  ]
-デフォルトでは 2GB のメモリが割り当てられているが、現代のアプリーションは大食いなので 8GB くらい当てておく。
-$ colima start --edit
-
-
-
-起動時に --edit オプションを付ける適切なエディタを開いてくれて設定することができる。
-ただし、ここで開くファイル、XDG Base Directory を無視している気がしている。
-$XDG_CONFIG_HOME/colima/default/colima.yaml 辺りを触る方がいい気がしました。(あとで調べたい)
-colima status してなんか動いてそうだったらOK
-$ colima status
-% colima status
-INFO[0000] colima is running using macOS Virtualization.Framework
-INFO[0000] arch: aarch64
-INFO[0000] runtime: docker
-INFO[0000] mountType: sshfs
-INFO[0000] socket: unix://$XDG_CONFIG_HOME/colima/default/docker.sock]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
