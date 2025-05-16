@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-05-16T18:02:31.109Z</updated>
+    <updated>2025-05-16T19:01:42.573Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -11512,47 +11512,6 @@ TheFloW氏 Hackeroneでまた1万ドルの脆弱性 first appeared on 大人の�
 GameGaz Daily 2025.2.17 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[TensorFlow LiteをWindowsでビルドしてDLLを作る]]></title>
-        <id>hatenablog://entry/6802418398329285626</id>
-        <link href="https://nazenaninadesico.hatenablog.jp/entry/2025/02/16/151745"/>
-        <updated>2025-02-16T06:17:45.000Z</updated>
-        <summary type="html"><![CDATA[WindowsでTensorflow LiteのDLLが必要になったとき自前ビルドする方法メモ。
- 
-
-
-
-
-
-
-（手順書を読む）
-https://www.tensorflow.org/lite/guide/build_cmake?hl=ja
-Git インストール
-入れてなければ最新版をインストール
-Python インストール
-入れてなければ最新版をインストール
-（Microsoft Storeでインストールボタン押すだけ）
-CMake インストール
-下記からWindows x64 Installerをダウンロードしてインストール
-https://cmake.org/download/
-Tensorflow ソースコード取得
-git clone https://github.com/tensorflow/tensorflow.git tensorflow_src
-build
-ソースコードのディレクトリの隣（同じ階層）にbuild用ディレクトリを作る
-mkdir tflite_build
-cd tflite_build
-build用ディレクトリから下記を実行し、ビルド手順を生成する
-公式の手順書通りだとシンボルなくて困ったのでオプションつける
-cmake -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=TRUE -DCMAKE_BUILD_TYPE=Debug ..\tensorflow_src\tensorflow\lite\c
-ビルド（10分～程度）
-cmake --build . -j
-complete
-tflite_build\Debug\tensorflowlite_c.dll に出力される
-必要に応じてリネームして使う]]></summary>
-        <author>
-            <name>アプリ置き場</name>
         </author>
     </entry>
     <entry>

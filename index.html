@@ -16506,57 +16506,6 @@ GameGaz Daily 2025.2.17 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://nazenaninadesico.hatenablog.jp/" target="_blank"
-              rel="noopener">アプリ置き場</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">TensorFlow LiteをWindowsでビルドしてDLLを作る</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nazenaninadesico.hatenablog.jp/entry/2025/02/16/151745" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>WindowsでTensorflow LiteのDLLが必要になったとき自前ビルドする方法メモ。
- 
-
-
-
-
-
-
-（手順書を読む）
-https://www.tensorflow.org/lite/guide/build_cmake?hl&#x3D;ja
-Git インストール
-入れてなければ最新版をインストール
-Python インストール
-入れてなければ最新版をインストール
-（Microsoft Storeでインストールボタン押すだけ）
-CMake インストール
-下記からWindows x64 Installerをダウンロードしてインストール
-https://cmake.org/download/
-Tensorflow ソースコード取得
-git clone https://github.com/tensorflow/tensorflow.git tensorflow_src
-build
-ソースコードのディレクトリの隣（同じ階層）にbuild用ディレクトリを作る
-mkdir tflite_build
-cd tflite_build
-build用ディレクトリから下記を実行し、ビルド手順を生成する
-公式の手順書通りだとシンボルなくて困ったのでオプションつける
-cmake -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS&#x3D;TRUE -DCMAKE_BUILD_TYPE&#x3D;Debug ..\tensorflow_src\tensorflow\lite\c
-ビルド（10分～程度）
-cmake --build . -j
-complete
-tflite_build\Debug\tensorflowlite_c.dll に出力される
-必要に応じてリネームして使う</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8599973812322958498/6802418398329285626/1739686665" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -18619,7 +18568,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-05-16T18:02:31.068Z">2025-05-16T18:02:31.068Z</time>
+    <time id="build-timestamp" datetime="2025-05-16T19:01:42.531Z">2025-05-16T19:01:42.531Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2916,23 +2916,7 @@
       "title": "アプリ置き場",
       "feedUrl": "https://nazenaninadesico.hatenablog.jp/rss",
       "siteUrl": "https://nazenaninadesico.hatenablog.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802418398329285626",
-          "author": null,
-          "description": "WindowsでTensorflow LiteのDLLが必要になったとき自前ビルドする方法メモ。\n \n\n\n\n\n\n\n（手順書を読む）\nhttps://www.tensorflow.org/lite/guide/build_cmake?hl=ja\nGit インストール\n入れてなければ最新版をインストール\nPython インストール\n入れてなければ最新版をインストール\n（Microsoft Storeでインストールボタン押すだけ）\nCMake インストール\n下記からWindows x64 Installerをダウンロードしてインストール\nhttps://cmake.org/download/\nTensorflow ソースコード取得\ngit clone https://github.com/tensorflow/tensorflow.git tensorflow_src\nbuild\nソースコードのディレクトリの隣（同じ階層）にbuild用ディレクトリを作る\nmkdir tflite_build\ncd tflite_build\nbuild用ディレクトリから下記を実行し、ビルド手順を生成する\n公式の手順書通りだとシンボルなくて困ったのでオプションつける\ncmake -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=TRUE -DCMAKE_BUILD_TYPE=Debug ..\\tensorflow_src\\tensorflow\\lite\\c\nビルド（10分～程度）\ncmake --build . -j\ncomplete\ntflite_build\\Debug\\tensorflowlite_c.dll に出力される\n必要に応じてリネームして使う",
-          "link": "https://nazenaninadesico.hatenablog.jp/entry/2025/02/16/151745",
-          "publishedOn": "2025-02-16T06:17:45.000Z",
-          "wordCount": 371,
-          "title": "TensorFlow LiteをWindowsでビルドしてDLLを作る",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8599973812322958498/6802418398329285626/1739686665",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322958498/6802418398329285626/1739686665"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "neonです",
