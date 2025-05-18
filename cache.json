@@ -1736,6 +1736,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398434221505",
+          "author": null,
+          "description": "概要\njestのwatchモードを発動した際、特に何も変更していないにもかかわらず、再読み込みを繰り返す現象が手元で確認された\n原因は、MongoDBがバインドマウントされたディレクトリに対してファイルの書き込みを頻繁に行ったことにより、当該ディレクトリの変更をjest側が検知し、結果的に書き込みの頻度に合わせてリロードされたことだった\njest.config.ts内のwatchPathIgnorePatternsに当該バウンドマウントされたディレクトリを追加し、挙動が修正されたことを確認した\n自分用にメモを残しておく。\nはじめに\njestのwatchモードを使うとテスト結果をリアルタイムで確認しながらコードが書けて便利で、最近はよく使っている。ある日仕事をしていると、突如 jestのwatchモードが荒ぶるようになった。\n\n具体的には以下のような症状である。\n変更をしていないのに常に変更が走っているような感じになる\nファイル名に絞り込んだモードを選んでも、すぐ変更が走ったかのようにrunし始める\nなお、上記画像はCursorだが、Mac標準のターミナルでやっても同様の現象が起こった。\n原因の切り分け\nCursorではなくWezTermや標準ターミナルでやってみる\n\n\n結果変化せず\nしたがってIDEのプロセスが悪さをしているわけではない\nrm -rf node_modulesして再インストールする\n\n\n結果変化せず\ndocker pruneする\n\n\n結果変化せず\nレポジトリをいったん削除、git clone して再セットアップ\n\n\n結果変化せず\nwatchman:falseを試す\n\n\n結果変化せず\n調べた結果\n同僚「docker-compose.ymlの中のバインドマウントされてるディレクトリが怪しいんじゃないの？」\nなるほど確かに。\nそういうわけで、怪しそうなところを手あたり次第jest.config.ts内部のwatchPathIgnorePatternsに入れていく。\njestjs.io\nmongodbのバインドマウント元のディレクトリを指定したところで例の挙動は終焉した。\n学びとしては以下である\nmongodbのバインドマウントディレクトリは.gitIgnoreで指定されていたが、watchモードはその変化もとらえ続けていた\n無意識のうちに.gitIgnoreされているディレクトリはwatchの対象外だと思っていたが、別にそんなことはどこにも書いていなかった",
+          "link": "https://contradiction29.hatenablog.com/entry/2025/05/18/105917",
+          "publishedOn": "2025-05-18T01:59:17.000Z",
+          "wordCount": null,
+          "title": "荒ぶるjestのwatchモードよ、鎮まりたまえ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/851770354b4013faffb4ad2063391804bc42ffe8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fgyazo.com%2Fffd20acb48409654d25d11e582fcd00a",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/851770354b4013faffb4ad2063391804bc42ffe8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fgyazo.com%2Fffd20acb48409654d25d11e582fcd00a"
+        },
+        {
           "id": "hatenablog://entry/6802418398423124954",
           "author": null,
           "description": "概要\nObsidianを使っているうちに、エディターの機能が足りていない気がしてきた\nObsidianのアプリのエディタ機能を補うためにはVSCode/Cursorを使えばよいが、そうするとObdisianとしての機能が不足する\nそこで以下の機能を持つObsidianのVSCode向け拡張機能を作り、機能拡張をした\n\n\n内部リンク([[リンク]])をクリックしたらVSCodeのエディター上でそのファイルを開く\nファイルが存在しない場合は新たにファイルを作成する\n内部リンク記法が始まると、ファイル名の候補を表示する\nVSCodeの拡張機能を作ること普段やらないので、作業過程を記録しておく。\nはじめに\n日記を書くアプリとしてObsidianを使い始めてから9か月が経った。\n※詳細な経緯は以下の雑記に書いた\ncontradiction29.hatenablog.com\n最初は日記として使い始めたObsidianだが、最近は普通のメモとしても使うようになった（それが本来の使い方なのかもしれないが）。読んだ技術書について書置きを残したり、調べもののメモを作ったりしている。\nGoogleのNotebookLMとも併用しつつ、最近は以下のような手順で技術書を読んでいる：\nまず電子書籍で読む\nNotebookLMに電子書籍をアップロードしてまとめてもらう\nまとめたものをObsidianに張り付ける\n整理してメモにする\n4がObsidianのWindows版アプリだと厳しい。\nobsidian.md\nNotebookLMで抽出したテキストをそのままObsidianにコピペすると、以下のような物足りなさがある\n箇条書きの形式がおかしい\n明らかに不要なところに内部リンクがあったりする。\nつまり一回は人間による整形を挟みたい。だが、Obsidianの公式アプリはエディタとしての機能はそこまで強いわけではない。決して弱くはないが、IDE等に比べればどうしても見劣りしてしまう*1。\nなので最近はCursorを使って「人間による整形」をしている。AI搭載のエディターはメモのリファクタリングが結構得意で、箇条書きの形式を整えたり、論理構造に従って箇条書きののインデントを整理したりは得意だ。だがCursorはあくまでもエディターであり、Obsidianっぽい以下のような機能は搭載されていない：\n内部リンク記法が始まると、ファイル名の候補を表示する\n内部リンクをクリックしたらそのファイルが開く\nだんだん物足りなくなってきたので、自分で作ることにした。\nチュートリアル\nAI時代の現代だからこそ、新しい技術にツッコむときは公式のチュートリアルを済ませて概要をつかんでからやったほうが良いと最近は学びつつある。なので以下のチュートリアルをやった。\ncode.visualstudio.com\nこのチュートリアルのコードはなぜか起動しなかったので、microsoft/vscode-extension-samplesの方を参考にして大枠をつかむ。\ngithub.com\nExtension Anatomyまで読んで、\nVSCodeの各種API\nActivation Events\nContribution Points\nなどの主要概念をざっくりさらった。\n作ってみる\nCursorのChatと対話しながら、要件定義書のようなDocを作っていく。試行錯誤を要件定義書に反映させる。\nある程度出来上がったら要件定義書をもとに、Agentを走らせる。Step単位でデバッグしながらやる。細かいところは自分で治す。\nできた拡張機能がこちらになります。\nmarketplace.cursorapi.com\n今のところは完全に自分用だが、Publishしておくといろんなところで使えて便利\n*1:昨今のIDEの進化がすごすぎるだけかもしれない。",
@@ -5897,18 +5912,7 @@
       "title": "ホーリィ",
       "feedUrl": "https://note.com/hory_nico/rss",
       "siteUrl": "https://note.com/hory_nico",
-      "articles": [
-        {
-          "id": "https://note.com/hory_nico/n/n4c7bc39c461d",
-          "author": null,
-          "description": "続きをみる",
-          "link": "https://note.com/hory_nico/n/n4c7bc39c461d",
-          "publishedOn": "2025-02-17T14:25:32.000Z",
-          "wordCount": 3245,
-          "title": "『渋谷系&90’sサブカル音MAD晒しイベント』を開催します【音EXPO】",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/175129087/rectangle_large_type_2_1b8ff933398fac7bd7c3f9ec62dc53d9.png?width=800"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Flipdoyap",
