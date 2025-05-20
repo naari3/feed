@@ -16487,69 +16487,6 @@ DSTTi DEMON-HW Carts - Flashcart Guides
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Scala CLIでスクリプトを書くときはビルドサーバが立たないようにすると良い(かも)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/02/19/230427" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Scala CLIはScalaの便利コマンドラインツールで、スクリプト実行やREPL、パッケージングなどをやってくれる。今回はスクリプティングの話。
-blog.3qe.us
-Scala CLIはビルドサーバを起動する
-Scalaはコンパイル型の言語であり、JVMでコンパイラが動作するという特性上、毎回最初からコンパイルを行うとパフォーマンス上のオーバーヘッドが生じる。必要な処理が最初から走るし、JITが動いていないし、最適化もかかっていないからだ。
-このため、Scala関連のツールキットは、起動時に自動的にビルドサーバを起動し、以降はBuild Server Protocolというのを使ってそのサーバと交信してコンパイルやその結果を受け取る、という挙動をすることが多い。
-% cat code.scala.sc
-//&gt; using scala 3.5.2
-println(&quot;hello, scala cli!&quot;)
-
-% scala-cli code.scala.sc
-Compiling project (Scala 3.5.2, JVM (17))
-Compiled project (Scala 3.5.2, JVM (17))
-hello, scala cli!
-
-% jps
-712651 BloopServer
-1083639 Jps
-
-
-
-これにより、二度目以降のコンパイルと実行はパフォーマンスが向上し、開発者体験が良くなる、という仕掛けになっている。
-ビルドサーバのリソース
-しかし、開発をしているならともかく、仕上がったものをただ実行したいだけ、という場合にはこの機能は無駄だ。ビルドサーバなので数百MiBオーダーくらいのメモリを食うし、特に何もしないだけでこれが常駐するのは困る。
-ビルドサーバが起動しないようにする
-もちろんこの問題はScala CLI側でも認識されていて、特定の場所にオプションを指定することでビルドサーバが起動しないようにできる。代わりにコンパイルパフォーマンスが犠牲になるので、開発が終わってあとは実行するだけ、というときに使うと良さそう。
-コマンドラインオプションを指定する
-最も素朴には、scala-cliに--server&#x3D;falseをつけることでビルドサーバの起動を抑止できる。
-scala-cli.virtuslab.org
-% scala-cli --server&#x3D;false code.scala.sc
-
-
-
-スクリプト中で指定する
-もしくは、スクリプト自体にshebangを添加させるという方法も使える:
-#!/usr/bin/env -S scala-cli --server&#x3D;false
-//&gt; using scala 3.5.2
-println(&quot;hello, scala cli!&quot;)
-
-
-
-
-
-% chmod u+x code.scala.sc
-% ./code.scala.sc</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398330216771/1739973867" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -18612,7 +18549,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-05-20T01:29:22.170Z">2025-05-20T01:29:22.170Z</time>
+    <time id="build-timestamp" datetime="2025-05-20T02:31:16.132Z">2025-05-20T02:31:16.132Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

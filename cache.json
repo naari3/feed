@@ -7432,21 +7432,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/27cd303cfd3f5fcdf4655a6f4582204b1776545a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250224%2F20250224223726.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398330216771",
-          "author": null,
-          "description": "Scala CLIはScalaの便利コマンドラインツールで、スクリプト実行やREPL、パッケージングなどをやってくれる。今回はスクリプティングの話。\nblog.3qe.us\nScala CLIはビルドサーバを起動する\nScalaはコンパイル型の言語であり、JVMでコンパイラが動作するという特性上、毎回最初からコンパイルを行うとパフォーマンス上のオーバーヘッドが生じる。必要な処理が最初から走るし、JITが動いていないし、最適化もかかっていないからだ。\nこのため、Scala関連のツールキットは、起動時に自動的にビルドサーバを起動し、以降はBuild Server Protocolというのを使ってそのサーバと交信してコンパイルやその結果を受け取る、という挙動をすることが多い。\n% cat code.scala.sc\n//> using scala 3.5.2\nprintln(\"hello, scala cli!\")\n\n% scala-cli code.scala.sc\nCompiling project (Scala 3.5.2, JVM (17))\nCompiled project (Scala 3.5.2, JVM (17))\nhello, scala cli!\n\n% jps\n712651 BloopServer\n1083639 Jps\n\n\n\nこれにより、二度目以降のコンパイルと実行はパフォーマンスが向上し、開発者体験が良くなる、という仕掛けになっている。\nビルドサーバのリソース\nしかし、開発をしているならともかく、仕上がったものをただ実行したいだけ、という場合にはこの機能は無駄だ。ビルドサーバなので数百MiBオーダーくらいのメモリを食うし、特に何もしないだけでこれが常駐するのは困る。\nビルドサーバが起動しないようにする\nもちろんこの問題はScala CLI側でも認識されていて、特定の場所にオプションを指定することでビルドサーバが起動しないようにできる。代わりにコンパイルパフォーマンスが犠牲になるので、開発が終わってあとは実行するだけ、というときに使うと良さそう。\nコマンドラインオプションを指定する\n最も素朴には、scala-cliに--server=falseをつけることでビルドサーバの起動を抑止できる。\nscala-cli.virtuslab.org\n% scala-cli --server=false code.scala.sc\n\n\n\nスクリプト中で指定する\nもしくは、スクリプト自体にshebangを添加させるという方法も使える:\n#!/usr/bin/env -S scala-cli --server=false\n//> using scala 3.5.2\nprintln(\"hello, scala cli!\")\n\n\n\n\n\n% chmod u+x code.scala.sc\n% ./code.scala.sc",
-          "link": "https://blog.3qe.us/entry/2025/02/19/230427",
-          "publishedOn": "2025-02-19T14:04:27.000Z",
-          "wordCount": null,
-          "title": "Scala CLIでスクリプトを書くときはビルドサーバが立たないようにすると良い(かも)",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398330216771/1739973867",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398330216771/1739973867"
         }
       ]
     },
