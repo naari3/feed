@@ -78,6 +78,39 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ibus-skkでキーリピートが暴走する問題の解決策</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/05/21/190407" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Standard NotesをLinuxから使うと、Key Repeat機能が暴走して、手を放してもずっとカーソルが移動し続けたり、さらに悪いことには、バックスペースが外れなくなってどんどん文字列を削除していくことがあった。確かにこれはある意味セキュアだが、そういうことじゃないんだよな。
+これはStandard Notesの問題かと思ったが、GIMPやInkscapeでも発生する。色々調べてみたところ、これはibus-skkの問題のようだった。ibus-skkとは、LinuxでSKKという日本語入力方式をするためのプログラムだ。
+github.com
+つまりどういうことかというと、まずGNOMEにはキーリピート機能があり、キーをっ押しっぱにしたらそのキーを連続送信してくれる。
+そして、この機能とibus-skkがケンカをしてしまって暴走してしまうようだった。
+ちなみにこの設定はGNOMEのアクセシビリティの設定からアクセスできるし、シェルから
+% gsettings set org.gnome.desktop.peripherals.keyboard repeat false
+
+
+
+を設定することで切ることができる。
+ひとまず、この設定を切ればカーソルが暴走することはなくなる。そのかわり、当然ながらキーリピート機能は使えなくなるので、シェルでカーソルを移動させるときは頑張ってCtrl+bなどを覚えましょう。Linuxにも詳しくなれてハッピー、という見方もできる。
+で、俺が産まれたってわけ
+blog.3qe.us</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398439438101/1747821873" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -18518,7 +18551,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-05-21T10:01:48.682Z">2025-05-21T10:01:48.682Z</time>
+    <time id="build-timestamp" datetime="2025-05-21T11:01:41.436Z">2025-05-21T11:01:41.436Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
