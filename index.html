@@ -74,6 +74,36 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-05-23">2025-05-23</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2025-05-22</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2025/05/23/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+Elinのmodを作っていた。戦争依頼で敵を呼ぶ角笛を無限に吹けるようにするmod。
+if文にev.wave % 5 !&#x3D; 0という条件があって、5 waveに1回角笛が吹けなくなっていた。これを常にtrueにするために、Harmony Transpilerという仕組みを使ってC#のILを書き換えていた。
+stackへの5のpushをpopに、%に対応する命令をtrueのpushに置き換えて、stackを調整しつつ常に条件をtrueにしている。
+modを作るのってこんなことするのだなあと学びがある。メソッド全体を置き換えるのに比べてゲーム自体のアップデートへの追従や、他modとの組み合わせで問題が起きづらくなるらしい。
+コンパイラの最適化とかでILが変わったりしてmodが動かなくなるとかありそうでちょっと怖い。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398441083089/1747962001" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-05-22">2025-05-22</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18484,7 +18514,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-05-23T00:03:53.353Z">2025-05-23T00:03:53.353Z</time>
+    <time id="build-timestamp" datetime="2025-05-23T01:29:23.693Z">2025-05-23T01:29:23.693Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

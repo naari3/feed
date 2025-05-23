@@ -1489,6 +1489,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398441083089",
+          "author": null,
+          "description": "github.com\nElinのmodを作っていた。戦争依頼で敵を呼ぶ角笛を無限に吹けるようにするmod。\nif文にev.wave % 5 != 0という条件があって、5 waveに1回角笛が吹けなくなっていた。これを常にtrueにするために、Harmony Transpilerという仕組みを使ってC#のILを書き換えていた。\nstackへの5のpushをpopに、%に対応する命令をtrueのpushに置き換えて、stackを調整しつつ常に条件をtrueにしている。\nmodを作るのってこんなことするのだなあと学びがある。メソッド全体を置き換えるのに比べてゲーム自体のアップデートへの追従や、他modとの組み合わせで問題が起きづらくなるらしい。\nコンパイラの最適化とかでILが変わったりしてmodが動かなくなるとかありそうでちょっと怖い。",
+          "link": "https://commits.hatenablog.com/entry/2025/05/23/100000",
+          "publishedOn": "2025-05-23T01:00:00.000Z",
+          "wordCount": 470,
+          "title": "2025-05-22",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398441083089/1747962001",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398441083089/1747962001"
+        },
+        {
           "id": "hatenablog://entry/6802418398430136381",
           "author": null,
           "description": "最近あまりに睡眠が破滅しているので、不眠症治療薬をもらってきた。\n一晩使ってみた結果、とりあえずまともに寝られた気がする。ひとまず何日か使って様子を見ていきたい。\n翌朝にだいぶ眠気が強くてちょっとしんどかった",

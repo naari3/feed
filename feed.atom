@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-05-23T00:03:53.392Z</updated>
+    <updated>2025-05-23T01:29:23.732Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2025-05-22]]></title>
+        <id>hatenablog://entry/6802418398441083089</id>
+        <link href="https://commits.hatenablog.com/entry/2025/05/23/100000"/>
+        <updated>2025-05-23T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+Elinのmodを作っていた。戦争依頼で敵を呼ぶ角笛を無限に吹けるようにするmod。
+if文にev.wave % 5 != 0という条件があって、5 waveに1回角笛が吹けなくなっていた。これを常にtrueにするために、Harmony Transpilerという仕組みを使ってC#のILを書き換えていた。
+stackへの5のpushをpopに、%に対応する命令をtrueのpushに置き換えて、stackを調整しつつ常に条件をtrueにしている。
+modを作るのってこんなことするのだなあと学びがある。メソッド全体を置き換えるのに比べてゲーム自体のアップデートへの追従や、他modとの組み合わせで問題が起きづらくなるらしい。
+コンパイラの最適化とかでILが変わったりしてmodが動かなくなるとかありそうでちょっと怖い。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「週刊プラグインレビュー」Make Believe Studios / CGII]]></title>
         <id>https://note.com/massmasaoki/n/nbbcea888f191</id>
