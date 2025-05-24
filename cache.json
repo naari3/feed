@@ -1781,6 +1781,21 @@
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398443308134",
+          "author": null,
+          "description": "乱雑に書く。いい句だなと思ったので書き留めておく。\n香の物へし折って食ふ一人者\n\n\n情報源はTwitterと以下のnoteくらいしかなかった。\nnote.com\nまとめると\n表題の句は、江戸時代中期の俳人柄井川柳が選集した『誹風柳多留』に収められた一句\n「香の物」はたくあんのことで、当時は小分けにしたものなどなく、大きな一本でしか手に入らなかったらしい\n切っていないたくあんのイメージ(https://hachimenroppi.com/detail/197781/)\n一人暮らしあるあるすぎておもろい。江戸時代にもいたんだなこういう人。\n現代の一人暮らしだと以下のような感じだろうか。\nワインをボトルから直接飲む\nコストコで買った総菜を全部一人で食べる\n台所で食事を開始する\nドラム式洗濯機に洗濯物を入れても一人分\n現代では一人用の食事は楽にはなったが、めんどくささの根源は何も変わっていない。もうどうなってもいいや。",
+          "link": "https://contradiction29.hatenablog.com/entry/2025/05/24/204536",
+          "publishedOn": "2025-05-24T11:45:36.000Z",
+          "wordCount": 343,
+          "title": "日記2025-05-24 : 香の物へし折って食ふ一人者",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/f3c7dcfc9faf9b068cfbfe77cfdbdd2f810001e3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcontradiction29%2F20250524%2F20250524203952.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f3c7dcfc9faf9b068cfbfe77cfdbdd2f810001e3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcontradiction29%2F20250524%2F20250524203952.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802418398434221505",
           "author": null,
           "description": "概要\njestのwatchモードを発動した際、特に何も変更していないにもかかわらず、再読み込みを繰り返す現象が手元で確認された\n原因は、MongoDBがバインドマウントされたディレクトリに対してファイルの書き込みを頻繁に行ったことにより、当該ディレクトリの変更をjest側が検知し、結果的に書き込みの頻度に合わせてリロードされたことだった\njest.config.ts内のwatchPathIgnorePatternsに当該バウンドマウントされたディレクトリを追加し、挙動が修正されたことを確認した\n自分用にメモを残しておく。\nはじめに\njestのwatchモードを使うとテスト結果をリアルタイムで確認しながらコードが書けて便利で、最近はよく使っている。ある日仕事をしていると、突如 jestのwatchモードが荒ぶるようになった。\n\n具体的には以下のような症状である。\n変更をしていないのに常に変更が走っているような感じになる\nファイル名に絞り込んだモードを選んでも、すぐ変更が走ったかのようにrunし始める\nなお、上記画像はCursorだが、Mac標準のターミナルでやっても同様の現象が起こった。\n原因の切り分け\nCursorではなくWezTermや標準ターミナルでやってみる\n\n\n結果変化せず\nしたがってIDEのプロセスが悪さをしているわけではない\nrm -rf node_modulesして再インストールする\n\n\n結果変化せず\ndocker pruneする\n\n\n結果変化せず\nレポジトリをいったん削除、git clone して再セットアップ\n\n\n結果変化せず\nwatchman:falseを試す\n\n\n結果変化せず\n調べた結果\n同僚「docker-compose.ymlの中のバインドマウントされてるディレクトリが怪しいんじゃないの？」\nなるほど確かに。\nそういうわけで、怪しそうなところを手あたり次第jest.config.ts内部のwatchPathIgnorePatternsに入れていく。\njestjs.io\nmongodbのバインドマウント元のディレクトリを指定したところで例の挙動は終焉した。\n学びとしては以下である\nmongodbのバインドマウントディレクトリは.gitIgnoreで指定されていたが、watchモードはその変化もとらえ続けていた\n無意識のうちに.gitIgnoreされているディレクトリはwatchの対象外だと思っていたが、別にそんなことはどこにも書いていなかった",
