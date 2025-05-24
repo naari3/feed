@@ -1757,21 +1757,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d671fc6ea853051f0df463ea17431aed95678f8f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20250321%2F20250321223739.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398331349151",
-          "author": null,
-          "description": "最近の話をいくつか。\n\n目標の1時間切れたー。最後余裕でダッシュできたから、もうちょっとペース速くても良かったのかなあ pic.twitter.com/tUdOIBvEmb\n— 🎹 (@p_ck_) February 23, 2025\n   \nそうじゃ吉備路マラソンで10kmマラソンに出場した。目標としていた1時間を切れたので良かった。\n\n余力残しすぎててウケる pic.twitter.com/KOv2re2oLx\n— 🎹 (@p_ck_) February 23, 2025\n   \nラストに失速したくないなという気持ちでだいぶ速度をセーブして走っていたのだけど、蓋を開けたらめっちゃ余力が残ってしまった。まあまだ走り始めて4ヶ月弱とかで試行回数が足りていないので、速度配分がうまくいかないのは仕方ないかな。\n走ってるときに沿道から「髪めっちゃ長い」と言われるのを3回は聞いた。\n健康診断の結果が良くなかったのもあって走り始めたのだけど、楽しく続けられていていい感じ。\nregional.rubykaigi.org\n関西Ruby会議08で、キーノートをすることになった。よろしくお願いします。\n話したいトピックはいくつかあるものの、まだどういう構成で話すかなどは全然まとまっていない。キーノートらしい話をしたいですね。\nmoneyforward-dev.jp\n会社のテックブログに記事を書いた。\n結果としてRubyのバグを直したという話なのだけど、このバグが結構長い間気が付かれずに放置されていたのなかなかびっくりという気持ち。まあRailsアプリでスレッドがデッドロックするようなコードはあまり書かないだろうし、困る人が少なかったのかな…。\n最近はずっとElinをやっている。あまりにもずっとやっていてやばい。\n調教スキルの要求が高い割に全然伸びなくてつらい。伸ばすにしてもひたすら雪プチを撫で続ける苦行を積まないといけなくてつらい…。",
-          "link": "https://commits.hatenablog.com/entry/2025/02/24/100000",
-          "publishedOn": "2025-02-24T01:00:00.000Z",
-          "wordCount": 502,
-          "title": "2025-02-23",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398331349151/1740358802",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398331349151/1740358802"
         }
       ]
     },
@@ -7708,6 +7693,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2025/05/24/tskaigi-2025-jsprimer/",
+          "author": null,
+          "description": "TSKaigi 2025で「技術書をソフトウェア開発する」というタイトルで発表をしました。\nスライドは次のページで公開しています。\n技術書をソフトウェア開発する - jsprimer の 10 年から学ぶ継続的メンテナンスの技術 -\nスライド: https://azu.github.io/slide/2025/tskaigi/jsprimer.html\n基本的にはJavaScript PrimerというJavaScriptの入門書の話になっています。\nどうやって作っていて、どうやって10年近くも更新を続けているのか、オープンソースとしての継続性などについて話しています。\n関連:\nJavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch\nJavaScript Primer 改訂2版をリリースしました！/JavaScript Primerはなぜ更新され続けるのか？ | Web Scratch\nJavaScript/TypeScript以外での通じる話が多いので、技術書や何かを伝える文章を書く人にとっても参考になるかなと思います。\n今だと、LLMとかに投げる文章でも同様のことが言える場面も多いとは思います。\njsprimerの目的の一つに「変化に対応できるようにする」というものがあります。\nこれのためにjsprimerという書籍を更新しているので、jsprimerにContributeや金銭的に支援してくれる人や企業はいつでも募集しています。\nJavaScript PrimerのES2025対応を手伝ってくれるContributorとSponsorを募集しています | Web Scratch\nJavaScript Primer - Open Collective\n\nスライド中にもありますが、現在のソフトウェア開発でオープンソースと関わらずに完結することはかなり難しいです。\nそのため、入門書としての目的としてオープンソースに関わってもらうために、jsprimerに対してContributeしやすくするといった目的もオープンソースとして開発している目的の一つです。\nオープンソースとの関わり方は色々な形があるので、jsprimerに限らずに何かしらの形で関わってみると面白いんじゃないかと思います。\nGitHub Sponnsorなどでの支援も大歓迎です。\nSponsor @azu on GitHub Sponsors",
+          "link": "https://efcl.info/2025/05/24/tskaigi-2025-jsprimer/",
+          "publishedOn": "2025-05-24T12:33:00.000Z",
+          "wordCount": 578,
+          "title": "TSKaigi 2025で「技術書をソフトウェア開発する」という発表をしました",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
         {
           "id": "https://efcl.info/2025/04/25/jsprimer-es2025-proposal/",
           "author": null,
