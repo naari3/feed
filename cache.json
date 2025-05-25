@@ -7394,16 +7394,6 @@
           "wordCount": null,
           "title": "OWASP に Cookie Theft 対策 Cheat Sheet を執筆した",
           "imageUrl": null
-        },
-        {
-          "id": "https://blog.jxck.io/entries/2025-02-25/beaconing.html",
-          "author": null,
-          "description": "ページを閉じる際に何かしらの情報をサーバで収集したいケースがある。これを Beacon の送信(Beaconing)と呼び、ブラウザではページ表示中に収集したパフォーマンス統計の収集や、広告タグによるトラッキングなどに用いられる。しかし、「ページが閉じる直前に、サーバにリクエストを送信する」を確実に実行するのは実は難しく、これを標準技術で実現する過程で、複数の API が生まれるに至った。各 API の策定経緯と、挙動の違いについて解説していく。",
-          "link": "https://blog.jxck.io/entries/2025-02-25/beaconing.html",
-          "publishedOn": "2025-02-25T00:00:00.000Z",
-          "wordCount": 851,
-          "title": "Web における Beacon の変遷 (sendBeacon(), fetch() keepalive, fetchLater())",
-          "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
         }
       ]
     },
@@ -9202,16 +9192,6 @@
           "wordCount": 1685,
           "title": "【噂】Nintendo Switch 2 4月のNintendo Directで6月発売発表か",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/Nintendo-Switch-2.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43090",
-          "author": "mamosuke",
-          "description": "PS5 Homebrew Apps(websrv) v1.5-01,kstuff 5.10,PS4-Xplorer 2.0,PS5-Xplorer 1.04,Avatar Changer 1.00,BwE PS5 Code Reader Lite v1.0.0,BwE PS4 NOR Validator v2.6.7,ps4-hdd,ArtemisPS3 r6.4,FPKGi v0.86 [Nightly],Open PS2 Loader Updater v1.0.1,OSD-XMB v1.7.1,NX WiFi Region Changer 1.0.0,gba-link-connection v8.0.1,PKHeX 25.02.23,chiaki-ng weekly-canary-release-19e38d742ed507ef087a33d70b2f979e0f5d495b,WinUAE 6.0.0 beta10,shadPS4 Pre-release-shadPS4-2025-02-24-15d10e4,PCSX2 v2.3.175,psOff_premium(psOff_compatibility) 2025Feb23,ImHex v1.37.2→→→この記事の続きを読む\nGameGaz Daily 2025.2.25 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025022543090/",
-          "publishedOn": "2025-02-24T23:16:30.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.2.25",
-          "imageUrl": null
         }
       ]
     },
