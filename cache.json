@@ -1157,21 +1157,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2e9bfdaa7a08338571aa12dcfd4bae541988a4dc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250303%2F20250303092847.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398331725679",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。2025年2月16日（日）から2025年2月22日（土）〔2025年2月第4週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    子供の不機嫌への対処法 - 感情の考察、日常の幸福\n by id:kosakimomo \n    \n2\n    食品業界の中の人だけど備蓄米の放出でお米の状況はこうなりそうだよ。 - Everything you've ever Dreamed\n by id:Delete_All \n    \n3\n    マキネッタ、完全に理解した - ちなみに\n by id:Sixeight \n    \n4\n    篠原健太（ウィッチウォッチ）は本物なんだが、やや『巧すぎる』んじゃないか、という話…全話無料公開中 - INVISIBLE Dojo.　ーQUIET & COLORFUL PLACE-\n by id:gryphon \n    \n5\n    rinnaのDeepSeek R1蒸留モデルがすごい - きしだのHatena\n by id:nowokay \n    \n6\n    物を減らしたら ‘人生が軽く’ なった話 – 独身男のミニマリスト生活 - 独身生活をもっと幸せに　独身男性応援ブログ！\n by id:ooishi9988 \n    \n7\n    25/2/15 美大芸大の卒展巡りにハマったから良かった作品を紹介するぜ - LWのサイゼリヤ\n by id:saize_lw \n    \n8\n    GitHub Copilotの活用はプルリク数・コードレビューの速さ・開発者体験・協働レベルを引き上げる - mtx2s’s blog\n by id:mtx2s \n    \n9\n    公平な課税方法について考えさせてくれる一冊──『課税と脱税の経済史──古今の（悪）知…",
-          "link": "https://blog.hatenablog.com/entry/2025/02/25/124500",
-          "publishedOn": "2025-02-25T03:45:00.000Z",
-          "wordCount": 1035,
-          "title": "今週のはてなブログランキング〔2025年2月第4週〕",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/14d4f74294656c9a3f07fc9ee111705286944e37/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250225%2F20250225114055.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/14d4f74294656c9a3f07fc9ee111705286944e37/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250225%2F20250225114055.jpg"
         }
       ]
     },
@@ -2727,21 +2712,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/88e10c6d63bc10d2a5475805d186b6db52775e43/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fknqyf263%2F20250228%2F20250228204941.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398330770372",
-          "author": null,
-          "description": "はじめに\nプロジェクト背景\nプロジェクト概要\n主な機能\n基本的な使い方\n開発プロセスと学び\nバグ修正のTips\nデバッグメッセージを出力させる\nいくつか自分が思いついたことも伝える\n命令を与え直す\n変更範囲を限定する\nうまくいった箇所までコミットしておく\n数回試して解決できなければ諦める\n型のある言語のほうが良さそう\nその他\nおわりに\nはじめに\nコンテナ関連の開発において、コンテナイメージの中身を確認する必要性はしばしば発生します。\n特にシェルが含まれていないイメージの場合、ファイルの確認が面倒になりがちです。\nまた、私の開発するOSSではレイヤーのマージをコンテナランタイムに頼らず自前で行っている関係で、レイヤー単位でファイルを確認したいケースも多くあります。\nさっとファイルの中身を確認したい場合もあれば、ファイルを手元にエクスポートしたい場合もあります。\ndiveというツールもありますが、どうやらファイルを見たりはできないようでした。\nview / download files from UI · Issue #224 · wagoodman/dive · GitHub\n既存のツールではこれらの要件を満たすものが見当たらなかったため、新しいツールの開発を考えていました。\nプロジェクト背景\nファイルの中身を見るための、TUIを使ったインタラクティブなツールを作りたいと考えていましたが、フロントエンドなど含めUI関連の実装はどうしても好きになれない自分はなかなか実装に踏み切れずにいました。\n子育てをしていると細切れの時間しかないため腰を据えて新しいプロジェクトを始めるのが難しくなる、という情けない言い訳もしておきます。\n最近、CursorやClineなどのAIエージェントを試していく中で、新規プロジェクトの開発における可能性を感じていました。\n既存プロジェクトでも使えますが…",
-          "link": "https://knqyf263.hatenablog.com/entry/2025/02/25/120141",
-          "publishedOn": "2025-02-25T03:01:41.000Z",
-          "wordCount": 625,
-          "title": "AIエージェントで前から欲しかったツールを作ってみた",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815715408059/6802418398330770372/1740452501",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815715408059/6802418398330770372/1740452501"
         }
       ]
     },
@@ -9166,16 +9136,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2025.2.26",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43094",
-          "author": "mamosuke",
-          "description": "Nintendo Switch 2は4月のNintendo Directで今年の6月中旬から下旬発売が発表されるかもしれません。→→→この記事の続きを読む\n【噂】Nintendo Switch 2 4月のNintendo Directで6月発売発表か first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025022543094/",
-          "publishedOn": "2025-02-25T03:19:30.000Z",
-          "wordCount": 1685,
-          "title": "【噂】Nintendo Switch 2 4月のNintendo Directで6月発売発表か",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/Nintendo-Switch-2.png"
         }
       ]
     },
