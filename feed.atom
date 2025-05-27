@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-05-27T21:02:00.480Z</updated>
+    <updated>2025-05-27T22:02:30.787Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -11302,55 +11302,6 @@ www.nicovideo.jp
         <updated>2025-02-27T12:16:10.000Z</updated>
         <summary type="html"><![CDATA[うおおおおお買うっきゃねえ！
 https://youtube.com/watch?v=4dBAWcYGBIg]]></summary>
-        <author>
-            <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[rise移植3]]></title>
-        <id>hatenablog://entry/6802418398332347909</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/02/27/184949"/>
-        <updated>2025-02-27T09:49:49.000Z</updated>
-        <summary type="html"><![CDATA[バトル行動まとめです。ちょっと説明口調で書いています。
-命令テーブルのサイズは、手下Ａ（青）４個、手下Ｂ（緑）５個、ＢＯＳＳ６個です。
-命令は０か１で表します。
-
-ターン　　　　１２３４５６７８９・・・
-手下Ａ（青）　０１１０
-手下Ｂ（緑）　１１０１０
-ＢＯＳＳ　　　０１１０１０
-
-この命令は、各ターンにつき１個使用します。
-手下Ａの１ターン目は０を、２ターン目は１を使用します。
-手下Aの戦闘で５ターン目に入ったとき、取得するインデックスは最初からになります。
-つまり以下のようにループします。
-
-ターン　　　　１２３４　５６７８　９０ＡＢ　ＣＤＥＦ
-手下Ａ（青）　０１１０　０１１０　０１１０　０１１０
-この命令０と１はプレイヤーの行動と関連します。プレイヤーは６種類の行動を選びます（キック、パンチ、チョップ、連続キック、連続パンチ、連続キック）。行動選択後、「主人公か敵を攻撃するか、敵が主人公を攻撃するか」の抽選が行われます。抽選方法は以下のとおり。
-〇：主人公が攻撃する
-×：敵が攻撃する
-
-命令０
-　　　　　通常　連続
-キック　　〇　　〇
-パンチ　　×　　×
-チョップ　〇　　×
-
-命令１
-　　　　　通常　連続
-キック　　×　　×
-パンチ　　〇　　〇
-チョップ　×　　〇
-
-例）
-手下Ａの１ターン目の命令は０です。
-命令表０を見ると通常キック、連続キック、通常チョップは敵にダメージを与えます。
-それ以外は敵が攻撃します。
-
-手下Ａの７ターン目の命令は１です。
-命令表１を見ると通常パンチ、連続パンチ、連続チョップは敵にダメージを与えます。
-それ以外は敵が攻撃します。]]></summary>
         <author>
             <name>あーさん日記</name>
         </author>
