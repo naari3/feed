@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398456045648",
+          "author": null,
+          "description": "EWRAMにコード置くよりROMが早いよ、とdiscordで書いてあるの見たのですけど。マジすか。。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/06/01/212206",
+          "publishedOn": "2025-06-01T12:22:06.000Z",
+          "wordCount": 459,
+          "title": "無題",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398456045648/1748780526",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398456045648/1748780526"
+        },
+        {
           "id": "hatenablog://entry/6802418398455094765",
           "author": null,
           "description": "といってもリアルに行かないですけれど・・・。ぼちぼちオンラインで眺めているだけです。お値段度外視で1冊だけ上げるとしたらtakeさんの本かなあ。いや、ソースコード読めたりpandocと突き合わせできる方ならいらないかもしれませんけど、日本語で読めるってところに重きを置いています。あとベースになっているrustエミュレータ？とtakeさんが手直し？した分のコードが超やべー、2020年代に相応しい建造物になっていると思います。鼻血が出ますよー？私は凡人なので全てを理解できませんけれど一端を噛みしめて満足しています。\ntechbookfest.org\ngithub.com",
@@ -1675,6 +1690,21 @@
       "feedUrl": "https://contradiction29.hatenablog.com/rss",
       "siteUrl": "https://contradiction29.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398456038872",
+          "author": null,
+          "description": "TypeScriptを使い始めて2年経った。最近は一番書くのが自然言語、次がTypeScript、逃れられないSQL、みたいな感じになってきている。\n言語自体にも慣れてきた今日この頃、TypeScriptの気持ちがわからなくなってた。\ninterfaceとtypeって何が違うんだっけ？どう使い分けると嬉しいのか？\n型を使って現実をモデリングしたい。だがどうやって？\n会社のコードでよくわからない部分があった。調べて意味は分かったが、何がうれしくてこんな書き方をしているんだ？\n言葉の意味は調べればわかるけど、結局何がうれしくてこうしているのかがよくわからない。ひとまず大規模言語モデルに疑問を投入したりはするが、ビールが飲みたいのにホッピーを出されているような回答ばかりで肩透かしを食らっていた。LLMに聴いていてもラチが空かないし、粗悪乱製造された知識が跳梁跋扈した結果Crazy Timeに突入した現代では、本で読んだ知識は格別だ。味覚は高級品によって鍛えられる。\nだからひとまず、同僚の間で評判が良かった『関数型ドメインモデリング』を読んだ。\ntatsu-zine.com\n電子で購入して読む。なるほどな～\n『関数型ドメインモデリング』の考え方は、「F#-Specificな考え方」と「F#-Specificとは限らない考え方」に大別される。案外前者が大きいな、とは感じた。TypeScriptにはF#のマッチ式がなかったりするし、言語としては別物としてとらえるべきだ。この本からF#-Specificな要素を取り除きたい。\n次にEffective TypeScript第二版を読んだ。\nwww.oreilly.co.jp\n関数型ドメインモデリングを読んだ後にEffective TypeScriptを読むと、出汁をとったあとに鍋物を作るみたいでおいしく吸収できる。\nひとまず「何がうれしいのか」は前よりもだいぶわかるようにはなった。",
+          "link": "https://contradiction29.hatenablog.com/entry/2025/06/01/212102",
+          "publishedOn": "2025-06-01T12:21:02.000Z",
+          "wordCount": 377,
+          "title": "日記2025-06-01 : 関数型ドメインモデリングとEffective TypeScript 第二版を読んだ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/dbc217364e233ba037d909ba69a60bd49731f8ba/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fi.gyazo.com%2Fdb4c995b4e0f0a7693a06a7d95829f0b.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/dbc217364e233ba037d909ba69a60bd49731f8ba/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fi.gyazo.com%2Fdb4c995b4e0f0a7693a06a7d95829f0b.jpg"
+        },
         {
           "id": "hatenablog://entry/6802418398443308134",
           "author": null,
@@ -9148,26 +9178,6 @@
           "wordCount": null,
           "title": "Karte.164 僕は動き出す",
           "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1741337761689_bokukoko_165.jpg"
-        },
-        {
-          "id": "293798",
-          "author": "チャンピオンクロス",
-          "description": "",
-          "link": "https://championcross.jp/episodes/d95170287e651/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2025-03-04T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Karte.163 僕は道を見つけたい",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1740562139059_bokukoko_164.jpg"
-        },
-        {
-          "id": "292657",
-          "author": "チャンピオンクロス",
-          "description": "僕の心のヤバイやつ【最新話無料】・Karte.163 僕は道を見つけたい TVアニメPrime Videoにて見放題独占配信中！ 累計500万部突破！ SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!! 宝島社「このマンガがすごい! 」オトコ編、2年連続ランクイン!! 2020年第3位、2021年第9位!! 次にくるマンガ大賞2020 Webマンガ部門 第1位!! Anime Japan2021 第4回アニメ化してほしいマンガランキング第1位!! 第5回みんなが選ぶTSUTAYAコミック大賞第1位!!「王様のブランチ」など各メディアでも大絶賛!! 陽キャが憎くてたまらない…。只今、中二病真っ最中の市川京太郎は、学園カースト頂点の美少女・山田杏奈の殺害を企む！ だが、山田の意外な一面を知ってしまい…！？ 陽キャ美少女と陰キャ男子。縮まるハズのない２人の距離に奇跡は起きるか！？ 陰キャ・京太郎の青春が今、かなり静かに動き出す…！！ 【 番外編「ツイヤバ」はこちら 】",
-          "link": "https://championcross.jp/episodes/afaf64dda2ce0/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2025-03-04T01:00:00.000Z",
-          "wordCount": 532,
-          "title": "Karte.163 僕は道を見つけたい",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1740562139059_bokukoko_164.jpg"
         }
       ]
     },
