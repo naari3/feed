@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398456649825",
+          "author": null,
+          "description": "//---------------------------------------------------------------------------\ns32 CodeRom(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}\n//---------------------------------------------------------------------------\nEWRAM_CODE s32 CodeEwram(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}\n//---------------------------------------------------------------------------\nIWRAM_CODE s32 CodeIwram(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}",
+          "link": "https://akkera102.hatenablog.com/entry/2025/06/02/120104",
+          "publishedOn": "2025-06-02T03:01:04.000Z",
+          "wordCount": 524,
+          "title": "もうダメ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/d15efef4b55949431e9aa6d6cf4db25cb7176906/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250602%2F20250602115953.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d15efef4b55949431e9aa6d6cf4db25cb7176906/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250602%2F20250602115953.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398456045648",
           "author": null,
           "description": "EWRAMにコード置くよりROMが早いよ、とdiscordで書いてあるの見たのですけど。マジすか。。",
@@ -888,6 +903,21 @@
       "feedUrl": "https://blog.hatenablog.com/rss",
       "siteUrl": "https://blog.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398456514641",
+          "author": null,
+          "description": "はてなブログ独自の集計による人気記事のランキング。2025年5月25日（日）から2025年5月31日（土）〔2025年5月第5週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    情報収集の仕方を模索している - 下林明正のブログ\n by id:shimobayashi \n    \n2\n    米エール大から加トロント大に移籍した教授3人が語る「ファシズムを研究してきた自分たちが今米国を離れる理由」 - YAMDAS現更新履歴\n by id:yomoyomo \n    \n3\n    スタートアップで働いていたときに心がけていたこと。反省含む - dackdive's blog\n by id:dackdive \n    \n4\n    “アメリカ歴”がにじみ出る日本語のクセたち - Thoughts and Notes from CA\n by id:ktdisk \n    \n5\n    『フルスクラッチして理解するSSL/TLS』の裏側 - エムスリーテックブログ\n by id:m3tech \n    \n6\n    Duolingoの「AIファースト」宣言とそれに殺到した批判への苦慮 - YAMDAS現更新履歴\n by id:yomoyomo \n    \n7\n    カメラで「元が取れたよ」と自分に言い聞かせることに成功した - ココロ社\n by id:kokorosha \n    \n8\n    トランプ政権”という症状──現地で見るアメリカ社会の今 - Thoughts and Notes from CA\n by id:ktdisk \n    \n9\n    私道について - 不動産屋のラノベ読み\n by id:Lhankor_Mhy \n    \n10\n    Terraform MCP Server を使ってみた - 電通総研 テックブロ…",
+          "link": "https://blog.hatenablog.com/entry/2025/06/02/120000",
+          "publishedOn": "2025-06-02T03:00:00.000Z",
+          "wordCount": null,
+          "title": "今週のはてなブログランキング〔2025年5月第5週〕",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/8a2a7c975be6cd6adb238934f72e9809d80b978d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250602%2F20250602091514.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8a2a7c975be6cd6adb238934f72e9809d80b978d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250602%2F20250602091514.jpg"
+        },
         {
           "id": "hatenablog://entry/6802418398445866326",
           "author": null,
@@ -7083,21 +7113,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398334010904/1741175107"
-        },
-        {
-          "id": "hatenablog://entry/6802418398333796422",
-          "author": null,
-          "description": "Scalaおじいちゃんではある一方、自分はReact👶赤ちゃん👶なので、ことReactについてはしばしば初歩的なつまづきをやってしまう。もう本当にうんざりするほどしょうもないミスをする。本格的にReactやりだしてから1年ちょいくらいだけど、全然ヘボい*1。ヘボいなりにガラクタを作ることはできていて、\nmarumo.capslock.dev\n先日はこういうガラクタを作っていた。Bootstrap最高。キャッチアップしてFULL STACK ENGINEER...になりたい。\n今日はuseMemoを使っていたら、関数返すならuseCallbackでいいよとレビューしてもらった。そういえばそうだった。\nimport { useMemo, useCallback } from 'react';\n\nconst cb = useMemo(() => {\n  return () => {\n    console.log('this is memoised function')\n  }\n}, [dep1, dep2, /* ... */])\n\n// this is equivalent to:\nconst cb2 = useCallback(() => {\n  console.log('this is memoised function')\n}, [dep1, dep2, /* ... */]);\n\n\n\n本当は一回聞いたらちゃんと覚えなければならないのだが・・・。\nぜんぜん不慣れな領域にいると、得意分野でできるつもりで振る舞って全然うまくいかず、アレ？と一時停止するのだが、そういえば俺この分野👶赤ちゃん👶だったわ、と気付ける。👶赤ちゃん👶の自覚を持つことで、謙虚に学ぶ姿勢が得られる。\nなまじ自分に得意な分野があると、己の中に👶赤ちゃん👶な分野があることを忘れて、頓珍漢な事を主張してしまったりする。これは世の中でもよくあることで、野菜の専門家が原発を語っていたり、河川の専門家が歯車の専門家とバトルしていたりする。大抵の分野では自分は👶赤ちゃん👶であることを忘れてはならない。\nしかも、本物の👶赤ちゃん👶は謙虚であり、基本的にいつも泣いている。己が何も知らないことを知っているかのように・・・\n*1:ダニングクルーガーなんたらが正しいとすれば、そのうち完全に理解する時期が訪れるはず",
-          "link": "https://blog.3qe.us/entry/2025/03/04/235200",
-          "publishedOn": "2025-03-04T14:52:00.000Z",
-          "wordCount": null,
-          "title": "useCallback便利 / 👶赤ちゃん👶の自覚を持つ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398333796422/1741099920",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398333796422/1741099920"
         }
       ]
     },
