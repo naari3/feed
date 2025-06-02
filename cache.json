@@ -734,21 +734,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/913fda29d7619e856b969f8244762189cbb8e7c7/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250305%2F20250305200217.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398333765391",
-          "author": null,
-          "description": "場面総数は５３なのでGTSより少ないかもしれません。変数番号が目印になるかと思いきや、けっこう飛びまくってるので文章も付加予定です。ざっと読んだところ詰まりそうなところもなく・・・横スクロールの処理が間に合うかぐらいかなあ。たぶん大丈夫だと思いますけれど。\nRI00.txt(242): 0x039F: WRITE 16 1　　　ＯＰ　　あきら紹介\nRI00.txt(266): 0x0419: WRITE 16 2　　　ＯＰ　　いらっしゃいませー\nRI00.txt(313): 0x059F: WRITE 16 3　　　ＯＰ　　ボス登場\nRI00.txt(361): 0x094B: WRITE 16 4　　　ＯＰ　　捕まる\nRI00.txt(391): 0x0AB4: WRITE 16 11 　　ＯＰ　　牢屋\nRI00.txt(659): 0x2514: WRITE 16 12 　　ＯＰ　　看守\nRI00.txt(840): 0x32AB: WRITE 16 13 　　ＯＰ　　逃げる\n\nRI00.txt(862): 0x33E6: WRITE 16 201　　分岐１　選択\nRI00.txt(1078): 0x3A98: WRITE 16 22　　分岐１　左へ　サキ捕まる\nRI00.txt(910): 0x34F9: WRITE 16 14 　　分岐１　右へ　手下Ａ\nRI00.txt(941): 0x3658: WRITE 16 301　　分岐１　バトル\nRI00.txt(951): 0x3671: WRITE 16 15 　　分岐１　負け\n\nRI00.txt(986): 0x3878: WRITE 16 202　　分岐２　選択\nRI00.txt(1032): 0x3999: WRITE 16 21　　分岐２　左へ　手下Ｂ\nRI00.txt(1097): 0x3B07: WRIT…",
-          "link": "https://akkera102.hatenablog.com/entry/2025/03/04/214853",
-          "publishedOn": "2025-03-04T12:48:53.000Z",
-          "wordCount": 851,
-          "title": "rise移植7",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398333765391/1741092602",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398333765391/1741092602"
         }
       ]
     },
