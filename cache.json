@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398457247061",
+          "author": null,
+          "description": "なぜあの書き方（EWRAM_CODE）をし続けていたのかの理由は、EWRAMオーバークロックがROMに比べて優位だった・・・？でもGBA Microや3DSのGBAエミュで不具合が起きるので御蔵入りしたテクニックということかなあ。記憶があいまいです。写真はmemtestなのでコードのROMに効くプレフェッチは関係ありません。完全に心を折れそうなのでこれ以上追求しません。\n\n\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2025/06/02/173628",
+          "publishedOn": "2025-06-02T08:36:28.000Z",
+          "wordCount": 462,
+          "title": "もうダメ2",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/16bb099609b8fee8e546098b2ef7f6523111d7bc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250602%2F20250602173105.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/16bb099609b8fee8e546098b2ef7f6523111d7bc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250602%2F20250602173105.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398456649825",
           "author": null,
           "description": "//---------------------------------------------------------------------------\ns32 CodeRom(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}\n//---------------------------------------------------------------------------\nEWRAM_CODE s32 CodeEwram(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}\n//---------------------------------------------------------------------------\nIWRAM_CODE s32 CodeIwram(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}",
