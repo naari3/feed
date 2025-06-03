@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-03T07:01:46.704Z</updated>
+    <updated>2025-06-03T08:02:08.458Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[温湿度計を買ったところオブザーバビリティが向上した]]></title>
+        <id>hatenablog://entry/6802418398458999254</id>
+        <link href="https://blog.3qe.us/entry/2025/06/03/164255"/>
+        <updated>2025-06-03T07:42:55.000Z</updated>
+        <summary type="html"><![CDATA[先日また風邪を引いたので、温湿度計を買うことにした。部屋の過ごしやすい環境が分かれば安定して体調を管理できるだろうという魂胆。
+
+タニタ Tanita 温湿度計 一目で室内環境がわかる 温度 湿度 アナログ 壁掛け 卓上 グレー マグネット TT-587-GY
+
+タニタ(Tanita)
+Amazon
+
+すると、部屋のエアコンの除湿モードを動作させてもたいして湿度が下がっていないことがわかってしまった。
+ちなみに部屋はめちゃくちゃ冷える。ダメじゃん
+温湿度計を使って部屋の温度と湿度というメトリックを計装したことで、問題を発見することができた。オブザーバビリティの大事さが分かる一件だった。
+また、計装するシステムは軽量で動作にコストがともなわないことも大事だということもわかった。自分はアナログの温湿度計にしたので、マグネットで貼り付けておくだけで半永久的に動作する。電池式だとメンテコストが発生して面倒だと思う。
+それはそうと、除湿機を買わなければならないな・・・
+
+カドー 除湿乾燥機（木造8畳/コンクリート造16畳までクールグレイ）cado コンプレッサー方式 DH-C7100-CG
+
+cado
+Amazon
+
+こういうのを見るとかっこよくて欲しくなってしまう。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2025-06-02]]></title>
         <id>hatenablog://entry/6802418398457880950</id>
