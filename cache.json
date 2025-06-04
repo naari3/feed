@@ -3681,21 +3681,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398340827363/1743485012"
-        },
-        {
-          "id": "hatenablog://entry/6802418398334534034",
-          "author": null,
-          "description": "はてなブログとはてなCMSの両サービスでは日々新機能の開発や機能改善を行っております。本記事では、1ヶ月間に行った両サービスの機能修正や改善についてまとめてお知らせいたします。\n機能修正・改善（はてなブログ、はてなCMS共通）\nMastodonへの共有時に記事の投稿時間が正しく表示されるようになりました\n記事ページのメタ情報のうち、記事の投稿日時に関する情報をOGP（Open Graph Protocol）の仕様に準拠する形で修正しました。これによりMastodonへの共有時に記事の投稿時間が正しく表示されるようになりました。\nはてなブログの機能修正・改善\n独自ドメインを設定していても「はてなによる広告を表示しない」の設定項目は表示させるようにしました\n2024年7月11日より独自ドメインを設定中のブログでは、はてなによる広告は非表示とし、設定項目も削除しておりました。しかし、設定項目がないことでむしろはてなによる広告が表示されていないことが分かりづらくなっていたため、独自ドメインの設定にかかわらず設定項目を常に表示するようにしました。なお、独自ドメイン設定中は当該設定を変更することはできません。\n広告を非表示「はてなによる広告を表示しない 」\n\n\n\n    \nはてなCMSの機能修正・改善\nコンポーネント機能に以下の改善を行いました\n\nコンポーネントが複製できるようになりました。これにより、既存のコンポーネントを簡単に再利用できるようになり、作業効率が向上します。",
-          "link": "https://staff.hatenablog.com/entry/2025/03/07/190358",
-          "publishedOn": "2025-03-07T10:03:58.000Z",
-          "wordCount": 877,
-          "title": "2025年2月の新機能・機能改善をお知らせします",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/da89b1da9030a99ae374cbce28b3dca09737285b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250307%2F20250307174434.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/da89b1da9030a99ae374cbce28b3dca09737285b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250307%2F20250307174434.png"
         }
       ]
     },
