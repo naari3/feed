@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-05T08:02:32.488Z</updated>
+    <updated>2025-06-05T09:02:08.098Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AI生成の記事を「読む価値のある読み物」に変える、リライトのポイントを紹介するぜ]]></title>
+        <id>hatenablog://entry/6802418398462001386</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/06/05/171234"/>
+        <updated>2025-06-05T08:12:34.000Z</updated>
+        <summary type="html"><![CDATA[フリーランスで編集の仕事をしています。プロのライターさんから他職種の方までいろんな方の原稿整理（書き手が書いた原稿を整える作業）をしますが、最近はAI支援を使って書かれた原稿の整理をする機会も増えてきました。
+いっぽうで、読者の視点から見て、ネットの記事やブログエントリを読んで「これはAIが書いたやつだな」と気づくとがっかりする感覚があると思います。AIの書いた文章はなんか内容が薄いし、読みにくいからです。そのがっかり感の原因と、書き手がとりうる改善策について書きます。
+なお、AI活用が特に効果的と思われる説明的な文章（解説文であったり、技術ブログであったり）を想定しています。自分がメインで関わっているデイリーポータルZのような、体験レポートやエッセイなどはAIに不可能なことが多すぎるのでそもそも自分で書いた方がいいと思っています。
+がっかり① なんかわかりにくい
+典型的な例）サーボモーターという電子部品の説明です。
+※なお、以降も例文には一般読者の皆さんが適度になじみがなさそうな、電子工作の部品についての文章を使用しています。「よく知らない人」の立場で読んでみてください。
+
+
+サーボモーターは、位置や角度を正確に制御できるモーターです。内部にモーター、ギア、制御回路、ポテンショメータ（位置検出器）が組み込まれています。入力としてはPWM信号を用いるのが一般的で、信号のデューティ比によって指定された目標位置に回転し、その位置を維持できます。
+
+なんか全然頭に入ってきませんよね。
+解決策：説明に強弱をつける。
+改善例）
+
+
+サーボモーターは、位置や角度を正確に制御できるモーターです。普通のモーターは電流を流しているあいだぐるぐる回転し続けますが、サーボモーターは「45度で止まって」という感じで指定の角度で停止させることができます。内部にギア、制御回路、などが組み込まれていて、…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[UnlockSwitchチーム Switch 2を手に入れた]]></title>
         <id>https://gamegaz.com/?p=43715</id>
@@ -10954,18 +10979,6 @@ Nintendo Switch 2のFCC登録内容が明らかに Wi-Fi 6とNFCに対応 first 
 GameGaz Daily 2025.3.8 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Firebender: ついに登場したIntelliJプラグイン版コーディングエージェント]]></title>
-        <id>67cb41042a7b1e0001306086</id>
-        <link href="https://blog.lai.so/firebender-coding-agent-for-intellij/"/>
-        <updated>2025-03-07T20:10:03.000Z</updated>
-        <summary type="html"><![CDATA[迷えるJetBrainsユーザー向けの朗報、VSCode偏重だったコーディングエージェント界に一石を投じる。
-Firebenderとは
-FirebenderはAndroid Studio向け]]></summary>
-        <author>
-            <name>laiso</name>
         </author>
     </entry>
     <entry>
