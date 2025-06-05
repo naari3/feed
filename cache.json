@@ -6734,6 +6734,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398462317418",
+          "author": null,
+          "description": "同僚と込み入った仕様を詰める作業をしないといけなくて、いくつかの疎結合なコンポーネントをネットワーク越しにデータが飛び交ったり、コンポーネントの中の状態が遷移していったりして、お盆と正月が同時に到来したような感じ。こういうとき、これまでは頑張って文字を書いてここの部分が・・・とか(相互に遠隔地にいるのでMeetとかSlack Huddleとかで)喋ったり、頑張ってMermaidを使って図を使ったりしていた。ムチャクチャ大変。\nところで最近FigJamを使えるようになったので、うまいこと活用してコミュニケーションできるようになっている。\n何が良いかというと、偶然にも自分はワコムの安いペンタブを、同僚はApple Pencilを持っているので、これで二人で同時にどんどん図を書いていくことができる。ペンタブでの使い勝手も良くて、サクサク図を描くことができて楽しい。\n\nワコム ペンタブ One by Wacom Medium Chromebook 対応 ペン入力専用モデル Mサイズ 板タブ CTL-672/K0-C ワコム直営店限定モデル\n\nWacom\nAmazon\n\n僕のはこれ。一つあるとなにかと便利なのでおすすめです。\nFigJamにはデフォルトで色々とフローチャート用のシェイプやかわいいイラストが用意されているし、付箋も貼れるのでだいたいのことはできる。\nこれまではMiroで頑張っていたけれど、Miroはけっこうモッサリしていて、ページが大きくなってくると辛いものがあった。FigJamはけっこうサクサク動く感じがする。\nちなみにFireFoxだとミドルボタンを押すとペーストされてしまうことがあるのだけれど、about:configからmiddlemouse.pasteをfalseにすると無効化できる。これができるまではFigJam内にゴミを大量に落としながら移動していた。\nミドルボタンをドラッグでパンできるのだが、そのときにどんどんペーストされてしまい、ヘンゼルとグレーテルになってしまう。",
+          "link": "https://blog.3qe.us/entry/2025/06/05/231822",
+          "publishedOn": "2025-06-05T14:18:22.000Z",
+          "wordCount": null,
+          "title": "同僚とFigJamでお絵描きしながら仕事している",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/924198475f14118e5f9f0974a3cf4862fe508329/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41XlqnsxOaL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/924198475f14118e5f9f0974a3cf4862fe508329/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41XlqnsxOaL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802418398458999254",
           "author": null,
           "description": "先日また風邪を引いたので、温湿度計を買うことにした。部屋の過ごしやすい環境が分かれば安定して体調を管理できるだろうという魂胆。\n\nタニタ Tanita 温湿度計 一目で室内環境がわかる 温度 湿度 アナログ 壁掛け 卓上 グレー マグネット TT-587-GY\n\nタニタ(Tanita)\nAmazon\n\nすると、部屋のエアコンの除湿モードを動作させてもたいして湿度が下がっていないことがわかってしまった。\nちなみに部屋はめちゃくちゃ冷える。ダメじゃん\n温湿度計を使って部屋の温度と湿度というメトリックを計装したことで、問題を発見することができた。オブザーバビリティの大事さが分かる一件だった。\nまた、計装するシステムは軽量で動作にコストがともなわないことも大事だということもわかった。自分はアナログの温湿度計にしたので、マグネットで貼り付けておくだけで半永久的に動作する。電池式だとメンテコストが発生して面倒だと思う。\nそれはそうと、除湿機を買わなければならないな・・・\n\nカドー 除湿乾燥機（木造8畳/コンクリート造16畳までクールグレイ）cado コンプレッサー方式 DH-C7100-CG\n\ncado\nAmazon\n\nこういうのを見るとかっこよくて欲しくなってしまう。",
@@ -7714,6 +7729,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=43717",
+          "author": "mamosuke",
+          "description": "State of Play,PS5 ezRemote Client v1.12,ps5-ezremote-dpi 1.02,ps5-payload-klogsrv v0.6,ps5-payload-websrv v0.24,linkdev v0.4,offact (PS5 offline account activation) v0.4,ps5-payload-loader 1.40,The DIG_DOS,Open PS2 Loader v1.2.0-Beta-2207-48da113,Ultrahand Overlay 1.8.8,Sphaira 0.12.0,psOff_premium(psOff_compatibility) 2025Jun04,SugarDS 0.7,Yaba Sanshiro 2 v1.17.6,Sumi v0.9.4,Dolphin Release 2506,shadPS4 Pre-release-shadPS4-2025-06-05-93222c6,PCSX2 v2.3.403,xemu v0.8.71,UIX Lite Tools v0.5→→→この記事の続きを読む\nGameGaz Daily 2025.6.5 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025060543717/",
+          "publishedOn": "2025-06-05T14:44:41.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.6.5",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=43715",
           "author": "mamosuke",
