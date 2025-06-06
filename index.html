@@ -78,6 +78,50 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ulimitに死す / ScalaのHTTPクライアントsttpではバックエンドを都度作らずに1つだけ作って使いまわしましょう</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/06/06/213354" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ここではsttp4前提で書くがsttp3でもたぶん同じ。
+sttpについて説明しておくと、Scalaで利用できるHTTPクライアント実装で、操作体系がシンプルで簡単であり、なおかつ複数のバックエンド(JDK標準のクライアントを使うものとか、もっと並行性制御を強化されたCats Effectなどの上に載ったhttp4sなどを使うものとか、Native環境でも動くlibcurlベースのものなど)を切り替えて透過的に利用できるのが強みだ。現代でHTTPクライアントが必要になったらとりあえずファーストチョイスにしてよいのではないか。
+sttp.softwaremill.com
+で、ScalaのHTTPクライアントsttpではバックエンドを都度作らずに1つだけ作って使いまわしましょう、という話。
+守らないとどうなりますか
+以下のように書きましょう
+悪い例: fetchするごとにバックエンドを作成する
+なんで？
+検証してみようのコーナー
+サーバ
+クライアント
+守らないとどうなりますか
+java.io.IOException: &quot;Too many open files&quot;などの比較的致命的なエラーが発生する。
+以下のように書きましょう
+lazy valなどを使って使いまわそう。そしてJVMが死ぬときにバックエンドが閉じるようにしよう。
+import sttp.client4.*
+import sttp.client4.httpclient.HttpClientSyncBackend
+
+object HttpClientManager {
+  private lazy val backend &#x3D; HttpClientSyncBackend()
+  
+  def getBackend &#x3D; backend
+  
+  def shutdown(): Unit &#x3D; backend.close()
+ …</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398463502682/1749213234" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -15664,27 +15708,6 @@ Windowsのプリンタの設定から、「Windowsが既定のプリンタを指
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2025.3.9</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025030943172/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PSsocat v2.1,GoldHEN_Cheat_Repository,PS5_Cheats(PS5 Cheat Database),ps5Spoofer,BwE UART Syscon Tools v1.0.5,XEB+ neutrino Launcher Plugin(xebplus-neutrino-loader-plugin) 2.7.4,Dino-Game ALPHA6,vgedit+ v2.2.1,Swiss v0.6r1826,PVSneslib v4.4.0,rpcs3-android alpha-3,ScePSX Beta 0.1.1,Ryujinx Canary-1.2.441,xemu v0.8.31,Universal Media Server 14.11.0→→→この記事の続きを読む
-GameGaz Daily 2025.3.9 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17772,7 +17795,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-06-06T12:02:09.346Z">2025-06-06T12:02:09.346Z</time>
+    <time id="build-timestamp" datetime="2025-06-06T13:10:07.470Z">2025-06-06T13:10:07.470Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

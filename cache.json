@@ -6708,6 +6708,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398463502682",
+          "author": null,
+          "description": "ここではsttp4前提で書くがsttp3でもたぶん同じ。\nsttpについて説明しておくと、Scalaで利用できるHTTPクライアント実装で、操作体系がシンプルで簡単であり、なおかつ複数のバックエンド(JDK標準のクライアントを使うものとか、もっと並行性制御を強化されたCats Effectなどの上に載ったhttp4sなどを使うものとか、Native環境でも動くlibcurlベースのものなど)を切り替えて透過的に利用できるのが強みだ。現代でHTTPクライアントが必要になったらとりあえずファーストチョイスにしてよいのではないか。\nsttp.softwaremill.com\nで、ScalaのHTTPクライアントsttpではバックエンドを都度作らずに1つだけ作って使いまわしましょう、という話。\n守らないとどうなりますか\n以下のように書きましょう\n悪い例: fetchするごとにバックエンドを作成する\nなんで？\n検証してみようのコーナー\nサーバ\nクライアント\n守らないとどうなりますか\njava.io.IOException: \"Too many open files\"などの比較的致命的なエラーが発生する。\n以下のように書きましょう\nlazy valなどを使って使いまわそう。そしてJVMが死ぬときにバックエンドが閉じるようにしよう。\nimport sttp.client4.*\nimport sttp.client4.httpclient.HttpClientSyncBackend\n\nobject HttpClientManager {\n  private lazy val backend = HttpClientSyncBackend()\n  \n  def getBackend = backend\n  \n  def shutdown(): Unit = backend.close()\n …",
+          "link": "https://blog.3qe.us/entry/2025/06/06/213354",
+          "publishedOn": "2025-06-06T12:33:54.000Z",
+          "wordCount": null,
+          "title": "ulimitに死す / ScalaのHTTPクライアントsttpではバックエンドを都度作らずに1つだけ作って使いまわしましょう",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398463502682/1749213234",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398463502682/1749213234"
+        },
+        {
           "id": "hatenablog://entry/6802418398462317418",
           "author": null,
           "description": "同僚と込み入った仕様を詰める作業をしないといけなくて、いくつかの疎結合なコンポーネントをネットワーク越しにデータが飛び交ったり、コンポーネントの中の状態が遷移していったりして、お盆と正月が同時に到来したような感じ。こういうとき、これまでは頑張って文字を書いてここの部分が・・・とか(相互に遠隔地にいるのでMeetとかSlack Huddleとかで)喋ったり、頑張ってMermaidを使って図を使ったりしていた。ムチャクチャ大変。\nところで最近FigJamを使えるようになったので、うまいこと活用してコミュニケーションできるようになっている。\n何が良いかというと、偶然にも自分はワコムの安いペンタブを、同僚はApple Pencilを持っているので、これで二人で同時にどんどん図を書いていくことができる。ペンタブでの使い勝手も良くて、サクサク図を描くことができて楽しい。\n\nワコム ペンタブ One by Wacom Medium Chromebook 対応 ペン入力専用モデル Mサイズ 板タブ CTL-672/K0-C ワコム直営店限定モデル\n\nWacom\nAmazon\n\n僕のはこれ。一つあるとなにかと便利なのでおすすめです。\nFigJamにはデフォルトで色々とフローチャート用のシェイプやかわいいイラストが用意されているし、付箋も貼れるのでだいたいのことはできる。\nこれまではMiroで頑張っていたけれど、Miroはけっこうモッサリしていて、ページが大きくなってくると辛いものがあった。FigJamはけっこうサクサク動く感じがする。\nちなみにFireFoxだとミドルボタンを押すとペーストされてしまうことがあるのだけれど、about:configからmiddlemouse.pasteをfalseにすると無効化できる。これができるまではFigJam内にゴミを大量に落としながら移動していた。\nミドルボタンをドラッグでパンできるのだが、そのときにどんどんペーストされてしまい、ヘンゼルとグレーテルになってしまう。",
@@ -9052,16 +9067,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2025.3.10",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43172",
-          "author": "mamosuke",
-          "description": "PSsocat v2.1,GoldHEN_Cheat_Repository,PS5_Cheats(PS5 Cheat Database),ps5Spoofer,BwE UART Syscon Tools v1.0.5,XEB+ neutrino Launcher Plugin(xebplus-neutrino-loader-plugin) 2.7.4,Dino-Game ALPHA6,vgedit+ v2.2.1,Swiss v0.6r1826,PVSneslib v4.4.0,rpcs3-android alpha-3,ScePSX Beta 0.1.1,Ryujinx Canary-1.2.441,xemu v0.8.31,Universal Media Server 14.11.0→→→この記事の続きを読む\nGameGaz Daily 2025.3.9 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025030943172/",
-          "publishedOn": "2025-03-09T00:07:53.000Z",
-          "wordCount": 1788,
-          "title": "GameGaz Daily 2025.3.9",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
