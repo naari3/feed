@@ -7464,6 +7464,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2025/06/07/jsprimer-notebooklm/",
+          "author": null,
+          "description": "JavaScript PrimerのNotebookLMが利用可能になりました。\nNotebookLMは、Googleが提供するAIを活用したノートブック環境で、登録したソースに対して質問をしたり、情報を検索したりすることができます。\n次のリンクから、JavaScript PrimerのNotebookLMにアクセスできます。\n📖 JavaScript Primer - 迷わないための入門書 - NotebookLM\nJavaScript Primer on NotebookLM\nJavaScript PrimerのコンテンツがNotebookLMに入ってることで、読者は書籍の内容についてNotebookLMに直接質問したり、Podcastとして音声で聞いたりすることができるようになります。\nNotebookLMを活用することで、JavaScript Primerを読み進める中で生じた疑問点をその場で解消したり、特定の構文について「このコードはどういう意味ですか？」といった質問をしてjsprimerのコンテンツをベースにして回答を得たりできます。これは、従来の書籍では難しかった、検索しにくい構文に関する疑問も解決しやすいという利点があります。\nたとえば、NotebookLMでは次のような質問をしたりできます。あと、Podcastにするのがなんだかんだ便利です。\n「JavaScriptのクロージャーとは何ですか？」\n「Promiseとasync/awaitの違いは何ですか？」\n「オブジェクトの章の内容を要約してください」\n「配列の操作方法について書かれている章はどこですか？」\nNotebookLM上のJavaScript Primerへは、以下のリンクからアクセスできます。\n📖 JavaScript Primer - 迷わないための入門書 - NotebookLM\nJavaScript Primerとは?\nJavaScript Primerは、ECMAScript 2015以降をベースにしたJavaScriptの入門書として、常に最新の情報を提供すべく継続的なメンテナンスが行っている書籍です。\nこの継続的なメンテナンスの取り組みについては、TSKaigi 2025で「技術書をソフトウェア開発する」というタイトルで発表しました。\nTSKaigi 2025で「技術書をソフトウェア開発する」という発表をしました | Web Scratch\nスライド: 技術書をソフトウェア開発する - jsprimer の 10 年から学ぶ継続的メンテナンスの技術 -\n動画: 【TSKaigi2025】トグルルーム Day2 #TSKaigi #tskaigi_toggle\njsprimerでは、いつでもContributorsやSponsorsを募集しています！\nJavaScript Primerスポンサー · JavaScript Primer #jsprimer\nまとめ\nNotebookLMをPublicに公開する機能ができたので、JavaScript PrimerのコンテンツをまとめたNotebookLMを公開しました。\n📖 JavaScript Primer - 迷わないための入門書 - NotebookLM\nNotebookLMのソースの更新は、メジャーアップデートごとに行うつもりです。\nURLベースならもっと簡単に更新できる方法があるのかもしれないので、もし知っている方がいれば教えてください。",
+          "link": "https://efcl.info/2025/06/07/jsprimer-notebooklm/",
+          "publishedOn": "2025-06-07T09:06:00.000Z",
+          "wordCount": null,
+          "title": "JavaScript PrimerのNotebookLMで利用可能になりました！",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2025/05/24/tskaigi-2025-jsprimer/",
           "author": null,
           "description": "TSKaigi 2025で「技術書をソフトウェア開発する」というタイトルで発表をしました。\nスライドは次のページで公開しています。\n技術書をソフトウェア開発する - jsprimer の 10 年から学ぶ継続的メンテナンスの技術 -\nスライド: https://azu.github.io/slide/2025/tskaigi/jsprimer.html\n基本的にはJavaScript PrimerというJavaScriptの入門書の話になっています。\nどうやって作っていて、どうやって10年近くも更新を続けているのか、オープンソースとしての継続性などについて話しています。\n関連:\nJavaScript Primerを出版しました！/JavaScript Primerはなぜ書かれたのか？ | Web Scratch\nJavaScript Primer 改訂2版をリリースしました！/JavaScript Primerはなぜ更新され続けるのか？ | Web Scratch\nJavaScript/TypeScript以外での通じる話が多いので、技術書や何かを伝える文章を書く人にとっても参考になるかなと思います。\n今だと、LLMとかに投げる文章でも同様のことが言える場面も多いとは思います。\njsprimerの目的の一つに「変化に対応できるようにする」というものがあります。\nこれのためにjsprimerという書籍を更新しているので、jsprimerにContributeや金銭的に支援してくれる人や企業はいつでも募集しています。\nJavaScript PrimerのES2025対応を手伝ってくれるContributorとSponsorを募集しています | Web Scratch\nJavaScript Primer - Open Collective\n\nスライド中にもありますが、現在のソフトウェア開発でオープンソースと関わらずに完結することはかなり難しいです。\nそのため、入門書としての目的としてオープンソースに関わってもらうために、jsprimerに対してContributeしやすくするといった目的もオープンソースとして開発している目的の一つです。\nオープンソースとの関わり方は色々な形があるので、jsprimerに限らずに何かしらの形で関わってみると面白いんじゃないかと思います。\nGitHub Sponnsorなどでの支援も大歓迎です。\nSponsor @azu on GitHub Sponsors",
