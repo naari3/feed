@@ -2893,6 +2893,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398466777226",
+          "author": null,
+          "description": "※2017/01/04にfabcrossに寄稿・掲載したものを、サイトクローズにあたり転載します。かなり古いので情報としてはあまり価値がありません。でもいい話なので物語としてお読みください。\n\nもともと3Dプリンタにはそんなに興味がなかったし、ましてや家に置こうなんて全然考えてもなかった。\nfabcrossで『約1万円と廉価なデルタ型3Dプリンタ「101Hero」』の記事を見つけたときも、やっぱり興味がなくてすぐにページを閉じたのだ。……でも数日後、たまたま、なんだか急に散財したい気分の日がやってきた。\n初めてのクラウドファンディング\n101Heroは「世界一お手頃な3Dプリンタ」を歌うKickstarterのプロジェクトで、79ドル出資するとデルタ型の3Dプリンタが1台もらえる。\nwww.youtube.com\n何を隠そう、これは僕の初めての出資であった。クラウドファンディングといえば、上級者ほど「商品は届かないと思え、店じゃないんだぞ」と語るサービスである。思いっきりビビりながら、もう最初から勉強料のつもりで、約8700円の出資を決めた。どうせそこまで欲しくなかった3Dプリンタである。あまり期待しないほうが、あとあとの精神的ダメージも少ない。\nなんて言いつつも、僕はその日からプロジェクトページのコメント欄をマメにチェックするようになった。最初はみんなが応援のメッセージを寄せる平和な場所だった。しかし途中でプロジェクトメンバーの素性を不審がるユーザーが現れ、その日を境にコメント欄が荒れ始める。\nユーザーA「おまえらの身元が信用できないからLinkedinのアカウント公開しろ！」\nメンバー「中国在住なんだからそんなもんアクセスできねえよ」\nユーザーA「Linkedin使ってないの？おまえらただの学生だろ！」\nメンバー「プロダクト作るのにLinkedinのアカウント役に立つん…",
+          "link": "https://nomolk.hatenablog.com/entry/2025/06/08/230607",
+          "publishedOn": "2025-06-08T14:06:07.000Z",
+          "wordCount": null,
+          "title": "初めてのKickstarterで初めての3Dプリンタを手に入れました ～1万円以下、激安3Dプリンタのその後",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/815f208ae630f6f83aa6c2e561886261a7c96a1e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250608%2F20250608223814.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/815f208ae630f6f83aa6c2e561886261a7c96a1e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250608%2F20250608223814.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802418398462001386",
           "author": null,
           "description": "フリーランスで編集の仕事をしています。プロのライターさんから他職種の方までいろんな方の原稿整理（書き手が書いた原稿を整える作業）をしますが、最近はAI支援を使って書かれた原稿の整理をする機会も増えてきました。\nいっぽうで、読者の視点から見て、ネットの記事やブログエントリを読んで「これはAIが書いたやつだな」と気づくとがっかりする感覚があると思います。AIの書いた文章はなんか内容が薄いし、読みにくいからです。そのがっかり感の原因と、書き手がとりうる改善策について書きます。\nなお、AI活用が特に効果的と思われる説明的な文章（解説文であったり、技術ブログであったり）を想定しています。自分がメインで関わっているデイリーポータルZのような、体験レポートやエッセイなどはAIに不可能なことが多すぎるのでそもそも自分で書いた方がいいと思っています。\nがっかり① なんかわかりにくい\n典型的な例）サーボモーターという電子部品の説明です。\n※なお、以降も例文には一般読者の皆さんが適度になじみがなさそうな、電子工作の部品についての文章を使用しています。「よく知らない人」の立場で読んでみてください。\n\n\nサーボモーターは、位置や角度を正確に制御できるモーターです。内部にモーター、ギア、制御回路、ポテンショメータ（位置検出器）が組み込まれています。入力としてはPWM信号を用いるのが一般的で、信号のデューティ比によって指定された目標位置に回転し、その位置を維持できます。\n\nなんか全然頭に入ってきませんよね。\n解決策：説明に強弱をつける。\n改善例）\n\n\nサーボモーターは、位置や角度を正確に制御できるモーターです。普通のモーターは電流を流しているあいだぐるぐる回転し続けますが、サーボモーターは「45度で止まって」という感じで指定の角度で停止させることができます。内部にギア、制御回路、などが組み込まれていて、…",
@@ -7648,16 +7663,6 @@
           "wordCount": null,
           "title": "祝・Hardening Project が令和6年度の「サイバーセキュリティに関する総務大臣奨励賞」を受賞～IIJの根岸は2021年の「セキュリティのアレ」に続き2度目の受賞！！",
           "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=30821",
-          "author": "吉田",
-          "description": "IIJは、2025年3月18日～19日に開催される「Data Center Japan 2025 – 日本データセンター協会15周年記念イベント -」に出展します。 今回、3/11（火）に...",
-          "link": "https://eng-blog.iij.ad.jp/archives/30821",
-          "publishedOn": "2025-03-11T02:03:04.000Z",
-          "wordCount": null,
-          "title": "初公開！「Data Center Japan 2025」でモジュール型エッジデータセンターの試作品を披露",
-          "imageUrl": null
         }
       ]
     },
@@ -9062,16 +9067,6 @@
           "wordCount": 1696,
           "title": "GameGaz Daily 2025.3.12",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/RabbidMultiToolVita.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43181",
-          "author": "mamosuke",
-          "description": "xai_plugin Installer 2.0,Remote Lua Loader v3.6,Forza Horizon 5,Tonyhax International GameShark Generator(THIGSGEN) v2.0.5,OSD-XMB v1.8.2,Emu4VitaPlus v0.22,chiaki-ng weekly-canary-release-000d7a49328d8c8bc91f8d5aca1878b917c4157f,Luma3DS v13.3.2,ntr-hr v0.3.1.1,Sharkive run-8-2d762c412c31e9049f53a54bd05f5d9926f60959,d2x-v11-beta2,entii-for-workcubes v20250307,Dolphin,ModMii 8.0.0,WiiGSC v1.1 ModMii Edition,Cemu-Android BetaV.17,ColecoDS 10.4,melonDS Android Beta 1.10.0,ScePSX Beta 0.1.3,shadPS4 Pre-release-shadPS4-2025-03-10-ba1eb29,xemu v0.8.34→→→この記事の続きを読む\nGameGaz Daily 2025.3.11 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025031143181/",
-          "publishedOn": "2025-03-11T02:20:47.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.3.11",
-          "imageUrl": null
         }
       ]
     },
