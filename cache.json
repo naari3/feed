@@ -7151,21 +7151,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398335473765/1741633406"
-        },
-        {
-          "id": "hatenablog://entry/6802418398335433035",
-          "author": null,
-          "description": "ソフトウェア開発のフンワリした話が好きなので、ここ最近思っていることを書きます。\n会社で、「アーキテクチャとは」みたいなのをわいわい会話したり持ち寄る会があって、色々な側面からアーキテクチャについて考えるのだが、そこでボンヤリ思っていたこと。\nオチはないです。特に何らかの文献に基いているわけでもない、空想です。\nアーキテクチャが生まれてからソフトウェアが生まれるのではない\n前提として、アーキテクチャの厳格な定義はない。なんらかの構造を生み出し、構造を制約するもの、くらいのニュアンスがある。「設計とは何か」みたいなレベルの解像度で使われる用語である。\nアーキテクチャとひとくちに言っても色々あるが、大きなレベルだとDDDとかクリーンアーキテクチャとかがあるし、もう少し小さくするとMVCとかがあって、小さいレベルでは async / await という仕組みも(言語のユーザではなく言語設計者が考えた)アーキテクチャだと言える。ある仕組みや制約を導入することで、全くの無秩序よりも、なんらかの最適な状態が提供される、という視線でアーキテクチャを見ると、言語機能もアーキテクチャである。\nこうしたなんとかアーキテクチャみたいなのも、ある日天啓を受けた預言者が人類に示したものではなく、ソフトウェア開発の泥沼で斃れていった死屍累々の上にこれならなんとかなりそう、みたいなプロトタイプが経験的に発掘された、石油のようなものだと思っている。この見方に立つと、JSONもアーキテクチャである。\n何が言いたいかというと、アーキテクチャが生まれてからそれに従ったソフトウェアが発生するのではなく、人類が生み出す数多のソフトウェアのうち、なんらかの意味で成功し、生存を続けることができたソフトウェアにおける共通のパターンが、人間の主観的フィルタを通じて統合されて暗黙知から引き上げられてアーキテクチャが生まれると…",
-          "link": "https://blog.3qe.us/entry/2025/03/10/231710",
-          "publishedOn": "2025-03-10T14:17:10.000Z",
-          "wordCount": null,
-          "title": "アーキテクチャとは環境に適合して進化した生物の形である",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398335433035/1741616230",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398335433035/1741616230"
         }
       ]
     },
@@ -7728,6 +7713,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=43735",
+          "author": "mamosuke",
+          "description": "ps5_lua_menu v0.1,pyS4-Avatar-Maker 1.0.0,psfree-lapse,GoldHEN_Cheat_Repository,HexFlow-Launcher-Unofficial-Custom(HexLauncher Custom) v2.8.2(hotfix),sys-con 1.5.4,nx-ovlloader v1.1.0,CleanRip v2.3.1,akmenu-next v1.6.1,DSVita 0.7.0,Emu4VitaPlus v0.36,PCSX2 v2.3.407,Vita3K Build: 3799,SugarDS 0.8b,xenia-canary-releases 422517c→→→この記事の続きを読む\nGameGaz Daily 2025.6.8 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025060843735/",
+          "publishedOn": "2025-06-08T02:17:56.000Z",
+          "wordCount": 1706,
+          "title": "GameGaz Daily 2025.6.8",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/ps5_lua_menu.png"
+        },
         {
           "id": "https://gamegaz.com/?p=43729",
           "author": "mamosuke",

@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-08T01:30:17.793Z</updated>
+    <updated>2025-06-08T02:37:03.164Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2025.6.8]]></title>
+        <id>https://gamegaz.com/?p=43735</id>
+        <link href="https://gamegaz.com/2025060843735/"/>
+        <updated>2025-06-08T02:17:56.000Z</updated>
+        <summary type="html"><![CDATA[ps5_lua_menu v0.1,pyS4-Avatar-Maker 1.0.0,psfree-lapse,GoldHEN_Cheat_Repository,HexFlow-Launcher-Unofficial-Custom(HexLauncher Custom) v2.8.2(hotfix),sys-con 1.5.4,nx-ovlloader v1.1.0,CleanRip v2.3.1,akmenu-next v1.6.1,DSVita 0.7.0,Emu4VitaPlus v0.36,PCSX2 v2.3.407,Vita3K Build: 3799,SugarDS 0.8b,xenia-canary-releases 422517c→→→この記事の続きを読む
+GameGaz Daily 2025.6.8 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RP2040-Zeroマルチブート]]></title>
         <id>hatenablog://entry/6802418398465109522</id>
@@ -10973,23 +10984,6 @@ GameGaz Daily 2025.3.11 first appeared on 大人のためのゲーム講座.]]><
 実家の近所の野良猫がうろちょろしてたこと
 スーツケースを新しくできたこと
 家のエレベータが壊れていて、十数階まで歩かされて強制的に筋トレさせられて心肺機能と足が明らかに強くなっていること]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アーキテクチャとは環境に適合して進化した生物の形である]]></title>
-        <id>hatenablog://entry/6802418398335433035</id>
-        <link href="https://blog.3qe.us/entry/2025/03/10/231710"/>
-        <updated>2025-03-10T14:17:10.000Z</updated>
-        <summary type="html"><![CDATA[ソフトウェア開発のフンワリした話が好きなので、ここ最近思っていることを書きます。
-会社で、「アーキテクチャとは」みたいなのをわいわい会話したり持ち寄る会があって、色々な側面からアーキテクチャについて考えるのだが、そこでボンヤリ思っていたこと。
-オチはないです。特に何らかの文献に基いているわけでもない、空想です。
-アーキテクチャが生まれてからソフトウェアが生まれるのではない
-前提として、アーキテクチャの厳格な定義はない。なんらかの構造を生み出し、構造を制約するもの、くらいのニュアンスがある。「設計とは何か」みたいなレベルの解像度で使われる用語である。
-アーキテクチャとひとくちに言っても色々あるが、大きなレベルだとDDDとかクリーンアーキテクチャとかがあるし、もう少し小さくするとMVCとかがあって、小さいレベルでは async / await という仕組みも(言語のユーザではなく言語設計者が考えた)アーキテクチャだと言える。ある仕組みや制約を導入することで、全くの無秩序よりも、なんらかの最適な状態が提供される、という視線でアーキテクチャを見ると、言語機能もアーキテクチャである。
-こうしたなんとかアーキテクチャみたいなのも、ある日天啓を受けた預言者が人類に示したものではなく、ソフトウェア開発の泥沼で斃れていった死屍累々の上にこれならなんとかなりそう、みたいなプロトタイプが経験的に発掘された、石油のようなものだと思っている。この見方に立つと、JSONもアーキテクチャである。
-何が言いたいかというと、アーキテクチャが生まれてからそれに従ったソフトウェアが発生するのではなく、人類が生み出す数多のソフトウェアのうち、なんらかの意味で成功し、生存を続けることができたソフトウェアにおける共通のパターンが、人間の主観的フィルタを通じて統合されて暗黙知から引き上げられてアーキテクチャが生まれると…]]></summary>
         <author>
             <name>Lambdaカクテル</name>
         </author>
