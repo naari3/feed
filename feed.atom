@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-09T00:04:04.058Z</updated>
+    <updated>2025-06-09T01:29:41.780Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2025-06-08]]></title>
+        <id>hatenablog://entry/6802418398466881656</id>
+        <link href="https://commits.hatenablog.com/entry/2025/06/09/100000"/>
+        <updated>2025-06-09T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+Elin のmodのバグを直していた。特定条件でアイテムがロストするというやばいやつ。
+なんかアイテム消えることがある気がしていたのだけど、再現方法がよくわからないし、行儀よく使っていると起きないので行儀よく使うという運用回避をしてしまっていた。報告が来たのでちゃんと直した。
+アイテムをソートするmodで、ソートのためにUI上のコンテナからただの配列にアイテムを一旦移し、ソートして、再度UI上のコンテナにアイテムを書き戻すという処理をしている。ここで配列にアイテムが移ってからエラーが起きるとゲーム内からはアイテムがすべて消えてしまうという問題だった。
+RDBMSのトランザクションみたいにエラーが起きたらいい感じにロールバックさせたい気持ちになっている。 でもメモリ上のデータをロールバックさせるの、大変そうだよなあ。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.6.9]]></title>
         <id>https://gamegaz.com/?p=43737</id>

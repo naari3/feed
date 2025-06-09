@@ -74,6 +74,35 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-06-09">2025-06-09</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2025-06-08</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2025/06/09/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+Elin のmodのバグを直していた。特定条件でアイテムがロストするというやばいやつ。
+なんかアイテム消えることがある気がしていたのだけど、再現方法がよくわからないし、行儀よく使っていると起きないので行儀よく使うという運用回避をしてしまっていた。報告が来たのでちゃんと直した。
+アイテムをソートするmodで、ソートのためにUI上のコンテナからただの配列にアイテムを一旦移し、ソートして、再度UI上のコンテナにアイテムを書き戻すという処理をしている。ここで配列にアイテムが移ってからエラーが起きるとゲーム内からはアイテムがすべて消えてしまうという問題だった。
+RDBMSのトランザクションみたいにエラーが起きたらいい感じにロールバックさせたい気持ちになっている。 でもメモリ上のデータをロールバックさせるの、大変そうだよなあ。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398466881656/1749430800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-06-08">2025-06-08</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -17759,7 +17788,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-06-09T00:04:04.020Z">2025-06-09T00:04:04.020Z</time>
+    <time id="build-timestamp" datetime="2025-06-09T01:29:41.741Z">2025-06-09T01:29:41.741Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
