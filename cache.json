@@ -7418,6 +7418,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2025/06/10/textlint-mcp/",
+          "author": null,
+          "description": "textlint v14.8.0をリリースしました！\nリリースノート: Release v14.8.0 · textlint/textlint\n今回のリリースでは、実験的な機能としてMCP（Model Context Protocol）サポートを追加しました。\nMCPは、AI言語モデルが外部のツールやサービスと統一されたインターフェースを通じて連携できるプロトコルです。\nMCP（Model Context Protocol）サポート\ntextlint v14.8.0では、新しい--mcpフラグを追加しました。このフラグにより、textlintをMCPサーバーとして起動し、AI搭載のコードエディタ（VS Code with Copilot Chat、Cursor、Windsurf）から直接textlintを利用できるようになります。\nMCPとは\nModel Context Protocol（MCP）は、AI言語モデルが外部のツールやサービスと統一されたインターフェースを通じて連携するためのプロトコルです。これにより、AIアシスタントがtextlintの機能を直接利用して、文章のチェックや修正を行えるようになります。\n前提条件\nMCPサーバーを使用するには、次の条件を満たす必要があります。\ntextlint v14.8.0以降\nMCPサポートを持つAI搭載のコードエディタ（VS Code with Copilot Chat、Cursor、Windsurf）\n設定済みのtextlintプロジェクト - textlintにはデフォルトルールがないため、MCPサーバーを使用する前に既存のtextlint設定が必要です\n基本的な使い方\nまず、プロジェクトでtextlintを設定する必要があります。\ntextlintにはデフォルトルールがないため、MCPサーバーを使用する前にプロジェクト…",
+          "link": "https://efcl.info/2025/06/10/textlint-mcp/",
+          "publishedOn": "2025-06-10T00:00:00.000Z",
+          "wordCount": null,
+          "title": "textlint v14.8.0をリリースしました - MCP(Model Context Protocol)をサポート",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2025/06/07/jsprimer-notebooklm/",
           "author": null,
           "description": "JavaScript PrimerのNotebookLMが利用可能になりました。\nNotebookLMは、Googleが提供するAIを活用したノートブック環境で、登録したソースに対して質問をしたり、情報を検索したりすることができます。\n次のリンクから、JavaScript PrimerのNotebookLMにアクセスできます。\n📖 JavaScript Primer - 迷わないための入門書 - NotebookLM\nJavaScript Primer on NotebookLM\nJavaScript PrimerのコンテンツがNotebookLMに入ってることで、読者は書籍の内容についてNotebookLMに直接質問したり、Podcastとして音声で聞いたりすることができるようになります。\nNotebookLMを活用することで、JavaScript Primerを読み進める中で生じた疑問点をその場で解消したり、特定の構文について「このコードはどういう意味ですか？」といった質問をしてjsprimerのコンテンツをベースにして回答を得たりできます。これは、従来の書籍では難しかった、検索しにくい構文に関する疑問も解決しやすいという利点があります。\nたとえば、NotebookLMでは次のような質問をしたりできます。あと、Podcastにするのがなんだかんだ便利です。\n「JavaScriptのクロージャーとは何ですか？」\n「Promiseとasync/awaitの違いは何ですか？」\n「オブジェクトの章の内容を要約してください」\n「配列の操作方法について書かれている章はどこですか？」\nNotebookLM上のJavaScript Primerへは、以下のリンクからアクセスできます。\n📖 JavaScript Primer - 迷わないための入門書 - NotebookLM\nJavaScript Primerとは?\nJavaScript Primerは、ECMAScript 2015以降をベースにしたJavaScriptの入門書として、常に最新の情報を提供すべく継続的なメンテナンスが行っている書籍です。\nこの継続的なメンテナンスの取り組みについては、TSKaigi 2025で「技術書をソフトウェア開発する」というタイトルで発表しました。\nTSKaigi 2025で「技術書をソフトウェア開発する」という発表をしました | Web Scratch\nスライド: 技術書をソフトウェア開発する - jsprimer の 10 年から学ぶ継続的メンテナンスの技術 -\n動画: 【TSKaigi2025】トグルルーム Day2 #TSKaigi #tskaigi_toggle\njsprimerでは、いつでもContributorsやSponsorsを募集しています！\nJavaScript Primerスポンサー · JavaScript Primer #jsprimer\nまとめ\nNotebookLMをPublicに公開する機能ができたので、JavaScript PrimerのコンテンツをまとめたNotebookLMを公開しました。\n📖 JavaScript Primer - 迷わないための入門書 - NotebookLM\nNotebookLMのソースの更新は、メジャーアップデートごとに行うつもりです。\nURLベースならもっと簡単に更新できる方法があるのかもしれないので、もし知っている方がいれば教えてください。",
@@ -7678,6 +7688,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=43747",
+          "author": "mamosuke",
+          "description": "ゼルダの伝説映画公開予定延期,switch2-SDEX2M2,PS5-BDJ-HEN-loader 2.1b,ps5-bdjb-modified-ISOs v1.17,Remote Lua Loader v4.2,PS5 Lua Loader v0.7,AutoBackPort v1.1,PS5 Payloads 1.8a MOD,VitaSDK paf-component,GoldHEN Cheats PS4 PKG (GoldHen Cheats PKG) v09/06/25,LifeLua 08-06-25,Emu4VitaPlus v0.37,chiaki-ng weekly-canary-release-0d26d1101e98e69adce100dd30e94eb7da8e1318,uLaunch 1.2.1,FortPatcher-NX v20250608-9dae3a4,Breeze beta99f,PKHeX 25.06.09,PPSSPP 1.19.1,shadPS4 Pre-release-shadPS4-2025-06-09-64bbede→→→この記事の続きを読む\nGameGaz Daily 2025.6.10 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025061043747/",
+          "publishedOn": "2025-06-10T01:11:25.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.6.10",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=43744",
           "author": "mamosuke",
@@ -9127,6 +9147,16 @@
       "feedUrl": "https://championcross.jp/series/899dda204c3f2/rss",
       "siteUrl": "https://championcross.jp/series/899dda204c3f2",
       "articles": [
+        {
+          "id": "315015",
+          "author": "チャンピオンクロス",
+          "description": "",
+          "link": "https://championcross.jp/episodes/41fe3521a7941/?utm_source=rss&utm_medium=referral",
+          "publishedOn": "2025-06-10T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Karte.170 僕らは朝を迎える",
+          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1749000456942_bokukoko_171.jpg"
+        },
         {
           "id": "310846",
           "author": "チャンピオンクロス",
