@@ -749,21 +749,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/98a002befc3d09c6a89e4d93790e678070765187/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250315%2F20250315110929.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398336318548",
-          "author": null,
-          "description": "あと1週間ちょいで終わってしまいそうです。こりゃHoshiさんにもうちょっと早く音楽作れないか交渉しないといけないパターンやもしれません（汗。\n進捗５０／５３（残り３つはバトルシーン）\n\n■TODO\n・口パクなど速度を2.75倍→2.7倍に変更\n・リップシンクもっと厳密にする\n・デバッグメニュー追加\n・バトル自動勝ち、負け機能\n・ボリューム調整機能\n\n・バトル処理全般\n\n・バトル時のメニューBボタン戻り\n選択肢３つの場合で対応。戻り値65535\n\n・バトル時のHP表示\n処理をC言語へ移譲\n\n\n■時間があれば\nmGBAのDirectSoundプチノイズ\n\n\n■対応見送り\n164場面（index 39) 胸連続アニメない",
-          "link": "https://akkera102.hatenablog.com/entry/2025/03/14/090139",
-          "publishedOn": "2025-03-14T00:01:39.000Z",
-          "wordCount": 468,
-          "title": "rise移植13",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/e2caa7638bb74b468b1ccdd91955eefbfbdfd25b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250314%2F20250314090130.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e2caa7638bb74b468b1ccdd91955eefbfbdfd25b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250314%2F20250314090130.png"
         }
       ]
     },
