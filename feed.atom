@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-14T15:01:50.809Z</updated>
+    <updated>2025-06-14T16:02:13.137Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10917,35 +10917,6 @@ GameGaz Daily 2025.3.18 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[Hardening Project が総務大臣奨励賞を受賞 当ブログでも何度か話題にのぼっている「Hardening Project（ハードニングプロジェクト）」が、今年度の総務大臣奨励賞を受賞(※1...]]></summary>
         <author>
             <name>IIJ Engineers Blog編集部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VSCode (Cursor) のTerminalでもzellijを自動起動したい]]></title>
-        <id>hatenablog://entry/6802418398337186445</id>
-        <link href="https://blog.nishimu.land/entry/2025/03/17/123727?utm_source=feed"/>
-        <updated>2025-03-17T03:37:27.000Z</updated>
-        <summary type="html"><![CDATA[zellij.dev
-最近、zellij を使ったワークフローが手に馴染んできたので、VSCode (実際は Cursor 使ってる) の Terminal でも自動起動するようにした。
-ドキュメント によると eval "$(zellij setup --generate-auto-start zsh)" って書いておけば自動起動できるのだけれど、各リポジトリ毎に別の Session になってほしいので以下のようにした。
-# zellij https://github.com/zellij-org/zellij
-if [[ "$TERM_PROGRAM" == 'vscode' ]]; then
-  if [[ -z "$ZELLIJ" ]]; then
-    zellij attach --create "$(basename "$(git rev-parse --show-toplevel 2>/dev/null || echo "$PWD")")"
-    exit
-  fi
-else
-  if [[ -z "$VSCODE_RESOLVING_ENVIRONMENT" ]]; then
-    # export ZELLIJ_AUTO_ATTACH=true
-    export ZELLIJ_AUTO_EXIT=true
-    eval "$(zellij setup --generate-auto-start zsh)"
-  fi
-fi
-
-
-
-補足として、通常のターミナル側の処理で $VSCODE_RESOLVING_ENVIRONMENT を見ているのは、VSCode の起動時にユーザーのシェルの設定を読みに行く処理が失敗してぶっ壊れるので回避策。]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>

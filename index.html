@@ -15655,45 +15655,6 @@ github.com</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
-              rel="noopener">ちなみに</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">VSCode (Cursor) のTerminalでもzellijを自動起動したい</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2025/03/17/123727?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>zellij.dev
-最近、zellij を使ったワークフローが手に馴染んできたので、VSCode (実際は Cursor 使ってる) の Terminal でも自動起動するようにした。
-ドキュメント によると eval &quot;$(zellij setup --generate-auto-start zsh)&quot; って書いておけば自動起動できるのだけれど、各リポジトリ毎に別の Session になってほしいので以下のようにした。
-# zellij https://github.com/zellij-org/zellij
-if [[ &quot;$TERM_PROGRAM&quot; &#x3D;&#x3D; &#x27;vscode&#x27; ]]; then
-  if [[ -z &quot;$ZELLIJ&quot; ]]; then
-    zellij attach --create &quot;$(basename &quot;$(git rev-parse --show-toplevel 2&gt;/dev/null || echo &quot;$PWD&quot;)&quot;)&quot;
-    exit
-  fi
-else
-  if [[ -z &quot;$VSCODE_RESOLVING_ENVIRONMENT&quot; ]]; then
-    # export ZELLIJ_AUTO_ATTACH&#x3D;true
-    export ZELLIJ_AUTO_EXIT&#x3D;true
-    eval &quot;$(zellij setup --generate-auto-start zsh)&quot;
-  fi
-fi
-
-
-
-補足として、通常のターミナル側の処理で $VSCODE_RESOLVING_ENVIRONMENT を見ているのは、VSCode の起動時にユーザーのシェルの設定を読みに行く処理が失敗してぶっ壊れるので回避策。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398337186445/1742182647" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17805,7 +17766,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-06-14T15:01:50.766Z">2025-06-14T15:01:50.766Z</time>
+    <time id="build-timestamp" datetime="2025-06-14T16:02:13.086Z">2025-06-14T16:02:13.086Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
