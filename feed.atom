@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-13T23:01:48.556Z</updated>
+    <updated>2025-06-14T00:03:54.374Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10832,51 +10832,6 @@ fi
 GameGaz Daily 2025.3.17 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[zimの初期化周りが変わっていたので追従した]]></title>
-        <id>hatenablog://entry/6802418398337035031</id>
-        <link href="https://blog.nishimu.land/entry/2025/03/16/204317?utm_source=feed"/>
-        <updated>2025-03-16T11:43:17.000Z</updated>
-        <summary type="html"><![CDATA[blog.nishimu.land
-zsh に戻ってから引き続き zim を使っていますが、久しぶりに眺めたら初期化方法が変わっていたので追従した。
-まずは zim のアンインストール手順を実施して、既存の設定などを全て削除した。
-具体的には .zshrc の先頭に書いていた初期化処理を消して、.zimrc と .zim ディレクトリも消しておいた。
-HomeBrew でインストールするようになってるのでインストールする。
-$ brew install --formula zimfw
-
-
-
-次に .zshrc の先頭にあたらしい初期化処理を書く。
-# https://github.com/zimfw/zimfw
-ZIM_HOME="${XDG_CONFIG_HOME}/zim"
-# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.
-if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then
-  source "$(brew --prefix)/opt/zimfw/share/zimfw.zsh" init
-fi
-# Initialize modules.
-source ${ZIM_HOME}/init.zsh
-
-
-
-最後に .zimrc を書いていく。設定も出来るがデフォルトのままで"${ZDOTDIR}/.zimrc" に配置した。
-Create ~/.zimrc の全部入りを採用した。
-追加でインストールしたプラグインは以下。zsh-users/zsh-syntax-highlighting はデフォルトと被るのでオフにしている。
-# https://github.com/Aloxaf/fzf-tab
-# before syntax-highlighting / zsh-autosuggestions
-zmodule Aloxaf/fzf-tab
-
-zmodule olets/zsh-abbr
-zmodule zdharma-continuum/fast-syntax-highlighting
-zmodule zsh-users/zsh-history-substring-search
-
-
-
-これで zsh を起動すると初期化処理が走って、各種モジュールもインストールされる。
-(compinit のエラーがたまに出ていたのが解消してスッキリ。)]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>

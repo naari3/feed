@@ -15560,66 +15560,6 @@ GameGaz Daily 2025.3.17 first appeared on 大人のためのゲーム講座.</sp
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2025-03-16">2025-03-16</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
-              rel="noopener">ちなみに</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">zimの初期化周りが変わっていたので追従した</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2025/03/16/204317?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>blog.nishimu.land
-zsh に戻ってから引き続き zim を使っていますが、久しぶりに眺めたら初期化方法が変わっていたので追従した。
-まずは zim のアンインストール手順を実施して、既存の設定などを全て削除した。
-具体的には .zshrc の先頭に書いていた初期化処理を消して、.zimrc と .zim ディレクトリも消しておいた。
-HomeBrew でインストールするようになってるのでインストールする。
-$ brew install --formula zimfw
-
-
-
-次に .zshrc の先頭にあたらしい初期化処理を書く。
-# https://github.com/zimfw/zimfw
-ZIM_HOME&#x3D;&quot;${XDG_CONFIG_HOME}/zim&quot;
-# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.
-if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then
-  source &quot;$(brew --prefix)/opt/zimfw/share/zimfw.zsh&quot; init
-fi
-# Initialize modules.
-source ${ZIM_HOME}/init.zsh
-
-
-
-最後に .zimrc を書いていく。設定も出来るがデフォルトのままで&quot;${ZDOTDIR}/.zimrc&quot; に配置した。
-Create ~/.zimrc の全部入りを採用した。
-追加でインストールしたプラグインは以下。zsh-users/zsh-syntax-highlighting はデフォルトと被るのでオフにしている。
-# https://github.com/Aloxaf/fzf-tab
-# before syntax-highlighting / zsh-autosuggestions
-zmodule Aloxaf/fzf-tab
-
-zmodule olets/zsh-abbr
-zmodule zdharma-continuum/fast-syntax-highlighting
-zmodule zsh-users/zsh-history-substring-search
-
-
-
-これで zsh を起動すると初期化処理が走って、各種モジュールもインストールされる。
-(compinit のエラーがたまに出ていたのが解消してスッキリ。)</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398337035031/1742125397" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-03-14">2025-03-14</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -17728,7 +17668,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-06-13T23:01:48.516Z">2025-06-13T23:01:48.516Z</time>
+    <time id="build-timestamp" datetime="2025-06-14T00:03:54.336Z">2025-06-14T00:03:54.336Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -1254,21 +1254,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398337186445/1742182647"
-        },
-        {
-          "id": "hatenablog://entry/6802418398337035031",
-          "author": null,
-          "description": "blog.nishimu.land\nzsh に戻ってから引き続き zim を使っていますが、久しぶりに眺めたら初期化方法が変わっていたので追従した。\nまずは zim のアンインストール手順を実施して、既存の設定などを全て削除した。\n具体的には .zshrc の先頭に書いていた初期化処理を消して、.zimrc と .zim ディレクトリも消しておいた。\nHomeBrew でインストールするようになってるのでインストールする。\n$ brew install --formula zimfw\n\n\n\n次に .zshrc の先頭にあたらしい初期化処理を書く。\n# https://github.com/zimfw/zimfw\nZIM_HOME=\"${XDG_CONFIG_HOME}/zim\"\n# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.\nif [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then\n  source \"$(brew --prefix)/opt/zimfw/share/zimfw.zsh\" init\nfi\n# Initialize modules.\nsource ${ZIM_HOME}/init.zsh\n\n\n\n最後に .zimrc を書いていく。設定も出来るがデフォルトのままで\"${ZDOTDIR}/.zimrc\" に配置した。\nCreate ~/.zimrc の全部入りを採用した。\n追加でインストールしたプラグインは以下。zsh-users/zsh-syntax-highlighting はデフォルトと被るのでオフにしている。\n# https://github.com/Aloxaf/fzf-tab\n# before syntax-highlighting / zsh-autosuggestions\nzmodule Aloxaf/fzf-tab\n\nzmodule olets/zsh-abbr\nzmodule zdharma-continuum/fast-syntax-highlighting\nzmodule zsh-users/zsh-history-substring-search\n\n\n\nこれで zsh を起動すると初期化処理が走って、各種モジュールもインストールされる。\n(compinit のエラーがたまに出ていたのが解消してスッキリ。)",
-          "link": "https://blog.nishimu.land/entry/2025/03/16/204317?utm_source=feed",
-          "publishedOn": "2025-03-16T11:43:17.000Z",
-          "wordCount": 317,
-          "title": "zimの初期化周りが変わっていたので追従した",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398337035031/1742125397",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398337035031/1742125397"
         }
       ]
     },
