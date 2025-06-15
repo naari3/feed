@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398475063337",
+          "author": null,
+          "description": "ドキュメントもサンプルコードも決定版じゃないかなあというレベルです。ミキシングとかトラッカーの連帯もしっかり書いてありますし。\nCについてですが、個人的にlibgba(LGPL)は少しでもライブラリを手直ししたら（IWRAMに持っていったら）即GPL化するから好きになれないんですよね・・・。けっこう大きな作品を作る方はlibtonc, libseven, butanoとかに移るべきかもしれません。少なくともbutanoは良いライブラリだったら即取り入れる土壌ができているので、参照しているライブラリ群だけでも見ておくのはいいかと思います。あーあとGBA BIOSについては不要論に1票投じます。もう使う意味がない。\nv0.22 of agb — a library for making GBA games in Rust — recently released!\nfedi.gbdev.io\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2025/06/15/115521",
+          "publishedOn": "2025-06-15T02:55:21.000Z",
+          "wordCount": 484,
+          "title": "rust de GBA",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398475063337/1749956350",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398475063337/1749956350"
+        },
+        {
           "id": "hatenablog://entry/6802418398473223395",
           "author": null,
           "description": "https://www.amazon.co.jp/dp/4866734515/\nGBAコンバータも扱っているというなんと深淵な・・・。\n\nんー、そういえば鈍器さんのone GB(Tiny one)を見た帽子屋さん、そこからのGBへの参入きっかけ。あとone GBAデモがイベント会場でダブって帽子屋さんのoneが開発中止になったという経緯を見たり聞いたりするとなかなかタラレバな感じですね・・・。ちょっとズレていたら帽子屋さんのoneがあったかもとか、そもそも参入されていなかった可能性を思うと。ギヤ技研さんの256倍本（痕移植）も手の届く範囲で誰かが所有されていたら本に写真が乗っていたかもしれません。",
@@ -4070,6 +4085,16 @@
       "feedUrl": "https://note.com/aiobahn/rss",
       "siteUrl": "https://note.com/aiobahn",
       "articles": [
+        {
+          "id": "https://note.com/aiobahn/n/n6faafd82349c",
+          "author": null,
+          "description": "BAU BAU⤴︎⤴︎\n　2枚目のシングルがリリースされました。「side by side」。歌詞英語、ギャルゲー界隈だとみんなお馴染み「ネコぱら」最新作のEDテーマ。自分の中では前作より全然攻めてると思っていて、当然ながら周りの音楽界隈の人たちからすごくポジティブな反応を頂いており嬉しい限りです。\n　曲のことや覚えてる範囲のことを語ってみようかなと思います。\n続きをみる",
+          "link": "https://note.com/aiobahn/n/n6faafd82349c",
+          "publishedOn": "2025-06-15T02:59:30.000Z",
+          "wordCount": 3120,
+          "title": "side BAU side",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/196184808/rectangle_large_type_2_aab5506bd981eb0687f60483dfb72bf5.png?width=800"
+        },
         {
           "id": "https://note.com/aiobahn/n/n3ca0ed1234a2",
           "author": null,
