@@ -1384,6 +1384,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398475953736",
+          "author": null,
+          "description": "ザムスト(ZAMST) EK-5 ひざ 膝 サポーター 左右兼用 スポーツ全般 日常生活 Sサイズ 372001 ブラック\n\nザムスト(ZAMST)\nAmazon\n\nランニング時に膝を痛めることが2回あったので、サポーターを買った。\n試しにこれをつけて走ってみたけど、先週あたり痛めた膝がまだ完治していなかったみたいで、痛くなって途中から歩いて帰ってきた。\ngithub.com\nElinでアイテムを全部買うModを作った。\nどうやって実装したものか悩んでいたけれど、Copilotに聞いたら大体答えが返ってきてかなり便利だった。\nregional.rubykaigi.org\n関西Ruby会議のタイトルを決めた。",
+          "link": "https://commits.hatenablog.com/entry/2025/06/16/100000",
+          "publishedOn": "2025-06-16T01:00:00.000Z",
+          "wordCount": 487,
+          "title": "2025-06-15",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/b1480ecc2731ae0b86390e63b15f1278b02d2959/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41UCNfwqomL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b1480ecc2731ae0b86390e63b15f1278b02d2959/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41UCNfwqomL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802418398466881656",
           "author": null,
           "description": "github.com\nElin のmodのバグを直していた。特定条件でアイテムがロストするというやばいやつ。\nなんかアイテム消えることがある気がしていたのだけど、再現方法がよくわからないし、行儀よく使っていると起きないので行儀よく使うという運用回避をしてしまっていた。報告が来たのでちゃんと直した。\nアイテムをソートするmodで、ソートのためにUI上のコンテナからただの配列にアイテムを一旦移し、ソートして、再度UI上のコンテナにアイテムを書き戻すという処理をしている。ここで配列にアイテムが移ってからエラーが起きるとゲーム内からはアイテムがすべて消えてしまうという問題だった。\nRDBMSのトランザクションみたいにエラーが起きたらいい感じにロールバックさせたい気持ちになっている。 でもメモリ上のデータをロールバックさせるの、大変そうだよなあ。",
@@ -2893,6 +2908,21 @@
       "feedUrl": "https://nomolk.hatenablog.com/rss",
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398466757301",
+          "author": null,
+          "description": "※2025/01/23にfabcrossに寄稿・掲載したものを、サイトクローズにあたり転載します。もろもろの情報は当時のものです。\n\n一般的には、電子基板といえば電子機器の筐体の中に入って、隠れているものだ。\nでもMaker Faireなどのイベントに行くと、かっこいい基板の名札を付けている人や基板の名刺を配っている人、かわいい基板のアクセサリーを販売している人なんかも見かける。うらやましい……！\n今回は、そんな「見せ基板」——かわいい基板を作るためのノウハウを語り合う座談会を開催した。\n見せ基板作りは、独特の制約はあるけど、それを逆手に取った面白みもある、楽しい世界です！\n\n\n僕も数カ月前に、初めてプリント基板を作った。もちろん見せ基板だ。\n基板キーホルダー。制作過程は過去記事で紹介しています。\nnomolk.hatenablog.com\nこれは機能的にはArduinoで、プログラムを書き込むことでいろんなことに使える。でもそれは置いといて、ひとまずはかわいい見た目で作れたことに大満足だ。\n1枚目としては満足のいく出来だけど、こういうものは突き詰めていくともっともっと深い道があるはずだ。入門者の1人として、かわいい基板の作り方がもっと知りたい！ ということで、3人の有識者に集まってもらった。「かわいい基板座談会」の始まりである。\n左から、よしださん、矢島さん、ギャル電きょうこさん、筆者 石川。\n参加者プロフィール\nよしだともふみ……電子工作アーティスト。オブシープ代表取締役。はんだ付けのワークショップなどを多数開催。かすやきょうこさんとのユニット、テクノ手芸部としてもかわいい基板グッズの制作経験が豊富。\n矢島佳澄……乙女電芸部部長。techika代表。Yolni取締役。手芸×電子工作系ワークショップを多数開催し、専用基板もたくさん作製している。また慶應義塾大学で電子工作の…",
+          "link": "https://nomolk.hatenablog.com/entry/2025/06/16/102000",
+          "publishedOn": "2025-06-16T01:20:00.000Z",
+          "wordCount": 877,
+          "title": "電子基板でバッジやキーホルダーを作りたいみなさまへ～ 「かわいい基板」を作る10の技",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/28098ab226b14aa08c9b4c3887c9d622decfceac/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250608%2F20250608223323.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/28098ab226b14aa08c9b4c3887c9d622decfceac/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250608%2F20250608223323.png"
+        },
         {
           "id": "hatenablog://entry/6802418398466777226",
           "author": null,
@@ -5985,16 +6015,6 @@
           "wordCount": null,
           "title": "「人材不足」という定型文にスポーツはどう取り組むべきか",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/180785404/rectangle_large_type_2_9465982c600eb4b4578663c7e905718a.png?width=800"
-        },
-        {
-          "id": "https://note.com/kazumakawauchi/n/ncf2ce657e7bf",
-          "author": null,
-          "description": "日頃からスポーツの現場をリアルタイムに近いタイミングで伝えていくには、できるだけ様々な意味でコストを下げた方がいいと考えていますが、至極当然ですがコストを下げれば下げるほど、アウトプットのクオリティは下がっていく可能性が高まります。\nでは「ミニマルなコスト and マキシマムな効果」を手にするためにはどうしたらいいか。\n続きをみる",
-          "link": "https://note.com/kazumakawauchi/n/ncf2ce657e7bf",
-          "publishedOn": "2025-03-18T13:26:12.000Z",
-          "wordCount": 2222,
-          "title": "ミニマルなコスト and マキシマムな効果",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/179678190/rectangle_large_type_2_fa309baf10d0eed6e9cc01e283157cfb.png?width=800"
         }
       ]
     },
@@ -7441,16 +7461,6 @@
           "publishedOn": "2025-03-24T12:44:42.000Z",
           "wordCount": null,
           "title": "AIエディタのガードレールは機能しているのか？",
-          "imageUrl": null
-        },
-        {
-          "id": "67d96135e73ad1000175500e",
-          "author": "laiso",
-          "description": "来る2025/03/22(土)からWeb Speed Hackathon 2025が開催されます。\n\nWeb Speed Hackathon 2025\nWeb Speed Hackathonとは、予め準備してあるWebアプリケーションのパフ",
-          "link": "https://blog.lai.so/web-speed-hackathon-2025-comming/",
-          "publishedOn": "2025-03-18T12:55:25.000Z",
-          "wordCount": 380,
-          "title": "Web Speed Hackathon 2025に参加しよう",
           "imageUrl": null
         }
       ]
