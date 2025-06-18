@@ -3855,6 +3855,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398478894952",
+          "author": null,
+          "description": "レシピ事業部バックエンド基盤グループの石川です。2025 年 6 月の頭にやった仕事について走り書きのようなメモを残しておきたくなったので、この記事を書いています。\nAnthropic 社が開発している Claude Code は、ターミナルの上で動作する LLM agent です: https://docs.anthropic.com/en/docs/claude-code/overview。\nClaude Code は Anthropic の API 経由で使う方法の他に、AWS や Google Cloud を経由して Claude のモデルを利用する道を用意してくれています: https://docs.anthropic.com/en/docs/claude-code/third-party-integrations。\nAWS を多用しているクックパッドにおいては、Amazon Bedrock の Claude モデル経由で Claude Code を利用できると管理上いくつかの点で利便性があると考えました。そこでこの記事では、利用に至るまでのセットアップやコスト分析の方法、そして実際に利用してみての制限について、簡単にまとめます。\n前提\nClaude Code のドキュメントを読むと、Bedrock 越しに利用する際は Claude Code 専用の AWS アカウントを新設して使うようにお勧めされています。コスト管理や権限管理を簡単にするためです。\nWe recommend creating a dedicated AWS account for Claude Code to simplify cost tracking and access control.\n\n\nhttps://docs.anthropic.com/en/docs/claude-code/am…",
+          "link": "https://techlife.cookpad.com/entry/claude-code-bedrock-2025",
+          "publishedOn": "2025-06-18T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Claude Code を Bedrock 越しに使う",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773"
+        },
+        {
           "id": "hatenablog://entry/6802418398352326504",
           "author": null,
           "description": "はじめに\nこんにちは。レシピ事業部でアルバイト中の松本 (@matsumo0922) です。クックパッドでは以前からモバイルアプリケーション向けのロギングライブラリである Puree を公開していましたが、今回新しく Kotlin Multiplatform1 を用いた KMP 版をリリースしました。また、このライブラリは既に iOS、 Android 両方のクックパッドアプリで動作しており、クックパッド初の Kotlin Multiplatform 導入事例ということで、難しかった点などをライブラリの紹介と合わせてご紹介します。\n\nPureeとは\nサービスのログを収集する際に、Web アプリケーションであればサーバー側でログを収集することが可能ですが、モバイルアプリケーションは画面の操作はアプリ側でコントロールされるため、アプリがログを収集して送信する必要があります。アプリの操作は、ユーザーのデバイスの状態（通信環境や電池残量など）、アプリのライフサイクル、ユーザーの複数回タップなど様々な要因を考慮せねばならず、Web アプリケーションのロギングより複雑になりやすいのが現状です。\nそこで、上記の様な面倒臭い処理を全て行ってくれるのが「Puree」というライブラリです。Puree は以下の機能を全て内蔵しており、ロギングは Puree に任せてアプリの主要機能の実装に注力することが可能となります。\nフィルタリング\n\n\n特定のログに対して共通のパラメータを付与したり、サンプリングを行うことが可能\nバッファリング\n\n\n特定時間内に複数回送られたログを一時的にバッファ\n通信に失敗した場合や送信前にアプリが kill された場合でも、内部データベースに自動保存\nリトライ\n\n\n何らかの要因でログが送信されない場合でも、自動的にリトライ\nPureeの仕組み\npuree-kmp\n上記の様…",
@@ -5568,6 +5583,16 @@
       "feedUrl": "https://note.com/euro3/rss",
       "siteUrl": "https://note.com/euro3",
       "articles": [
+        {
+          "id": "https://note.com/euro3/n/nb180f14bf24b",
+          "author": null,
+          "description": "どうも、徒歩8分の所に引越して四畳半を手に入れたユーロです。\n今年に入って私がやってること。\n皆さん知ってますか？知ってますよね。\n続きをみる",
+          "link": "https://note.com/euro3/n/nb180f14bf24b",
+          "publishedOn": "2025-06-18T00:39:08.000Z",
+          "wordCount": 2539,
+          "title": "事情をよく知った反AI元音MAD作者兼シナリオライター見習いが生成AIに身を落とすまで",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/196785694/rectangle_large_type_2_f72490747bc1329467d786956e00058f.png?width=800"
+        },
         {
           "id": "https://note.com/euro3/n/n5c240b8c4a84",
           "author": null,
