@@ -6856,6 +6856,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398481436586",
+          "author": null,
+          "description": "Redditを見ていると便利そうな記事を発見した。\nlukastymo.com\nこの記事では、MutexやSemaphore、そしてCyclic Barrierの使い方について解説している。\nセマフォとは同時に一定数のみがリソースにアクセスできるようにする、つまり「いくつまでなら同時に使えるか」を安全に管理するための、並行性制御のプリミティブである。駐車場の空き表示もセマフォだと考えることができるし、トイレの個室もセマフォだと考えられる。同時にアクセスしたら大変だからね。\ntypelevel.org\nhttps://typelevel.org/cats-effect/api/3.x/cats/effect/std/Semaphore.html\nそして同時に許可できる数が1に固定されているものを特にミューテックスと呼ぶ。対面交互通行になっている工事現場の道路とかはミューテックスだ。\n以前自分もセマフォについていくつか記事を書いていた:\nblog.3qe.us\nblog.3qe.us\nしかし、最初に挙げた記事での書き方がいくぶんかスマートだと思ったので紹介する。\npermitメソッドを使う\nSemaphoreにはpermitメソッドがある:\nhttps://typelevel.org/cats-effect/api/3.x/cats/effect/std/Semaphore.html#permit:cats.effect.kernel.Resource%5BF,Unit%5D\nシグネチャはdef permit: kernel.Resource[F, Unit]になっていて、呼ぶとリソースがもらえる。Cats Effectにおける「リソース」とは、「なにかを取得する」ための操作と「それを解放する」ための操作とを対にしたもので、必ず安全に操作できることが保証されている制御用のプリミティブだ。\n例外が発生するなどしても必ずリソースの解放処理が呼ばれるため、「後でちゃんと解放しなければならない」ような概念の記述にうってつけだ。\nさて、permitはセマフォをリソース化してくれるので、以下のように書くだけで「セマフォが空くまで待機し、セマフォが空いたら処理し、終了したらセマフォを返す」操作を記述できる:\nval smph = ???\nval showMessage: IO[Unit] = smph.permit.use(_ => IO.println(\"yo\"))\n\n\n\n実際のセマフォの用意と組み合わせると、以下のように書くことになる:\nimport scala.concurrent.duration.*\nimport cats.effect.std.Semaphore\n\ndef heavyTask(): IO[Unit] = for {\n  _ <- IO.sleep(1.seconds)\n  _ <- IO.println(\"done!\")\n} yield ()\n\nfor {\n  // セマフォを作る(外部からもらってきてもいい)\n  smph <- Semaphore[IO](10)\n  // セマフォを使いつつ重いタスクをするようなタスクを作成する\n  doHeavyTask = () => smph.permit.use(_ => heavyTask())\n  // 100個同時実行する\n  _ <- (1 to 100).toList.parTraverse(_ => doHeavyTask())\n} yield ()\n\n\n\nこのように書くことで、やりたいことの関心が以下のように分離されて綺麗に書ける:\nセマフォの仕様。いくつまで同時にアクセスできるのか？\nセマフォを利用する処理。どのタスクがセマフォの介入を必要とするのか？\n処理の並行(並列)実行。セマフォのことを気にせずに、ただ沢山呼べばよいし、もちろん直列に呼ぶこともできる。",
+          "link": "https://blog.3qe.us/entry/2025/06/20/222437",
+          "publishedOn": "2025-06-20T13:24:37.000Z",
+          "wordCount": null,
+          "title": "Cats Effect 3でセマフォを使うときの便利なイディオム",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398481436586/1750425877",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398481436586/1750425877"
+        },
+        {
           "id": "hatenablog://entry/6802418398468416733",
           "author": null,
           "description": "VAIO SX14-Rをヨドバシカメラの店頭でカスタマイズ購入した。着弾後1週間使ってみたのでレビューしてみる。今のところ自分が求めていたものが完璧に近い形で手に入ったため大満足している。\nstore.vaio.com\n\n自分について\n買い替え前の機種\n購入の観点\nMUST要件\nSHOULD要件\n不要要件\nその他の候補\n購入スペック\n利用環境\n感想\n発送\n包装\n性能\nスペックに出ない点\n全体を通して\n自分について\nソフトウェアエンジニアであり、2ヶ月に一度ほどカンファレンスやイベントに出席している。このときノートブックを携えていくことがほとんどである。プライベートでもよくプログラミングなどを行う。\n買い替え前の機種\nもともと自分はLenovo ThinkPad X270を保有していたが(たしかこの時もヨドバシで買ったような気がする)、購入から8年近く経過したこともありスペック的に限界が近付いていた。また、内蔵+外付けバッテリーも完全にヘタりきっており、1時間も駆動できなくなっていた。\n一度延命として互換のメモリを増設して8GiBから16GiBにメモリをアップグレードしたものの、CPUの世代もだいぶ古く、そもそもバッテリーもヘタっていたので焼け石に水である。\n互換品のバッテリーは怖くて購入しなかった。家を燃やしたくないため。\nwww.lenovo.com\n購入の観点\nPC買い替えにあたっていくつかの観点で選定した。その結果SX14-Rが選ばれた。色はあまり気にしていなかったが、店頭で見たエメラルドグリーンが非常に美しかったのでこの色に即決した。\nMUST要件\n軽量であること\n出先でのプログラミングに耐えうる、そこそこの性能であること\nバッテリーが丸一日のカンファレンスに耐えうること\n出張や普段の持ち運びに耐えうる頑丈さがあること\nType-C端子を複数搭載していること\nTyp…",
