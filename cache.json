@@ -2830,23 +2830,7 @@
       "title": "neonです",
       "feedUrl": "https://neon.hatenadiary.com/rss",
       "siteUrl": "https://neon.hatenadiary.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802418398339831318",
-          "author": null,
-          "description": "大学の研究室において、初歩的な事で詰められないための対策として、今日貰ったアドバイスの覚書。\n \n概要\n自分の中で理解する事が何を指し示しているのかが解釈できていなかった。今日起こった3つの事例と、解決策の書き記しを残す。\n重要な事は、\n・定義に立ち返り説明できること。\n・何故それをする必要があるか？を説明できること。\n・説明を通して思考を整理し、理解すること。\n \n因みに使っているのはこれ\nhttps://www.amazon.co.jp/Introduction-Algorithms-Press-Thomas-Cormen/dp/0262033844/ref=tmm_hrd_swatch_0\n理解という意味\nゼミでは、自分が教科書を選び授業をするスタイルを取っている。そこでは、自分が理解した事柄について話す必要がある。\n解釈の手法について\n初日は凄く初歩的なアルゴリズムに関しての授業をしようとした。挿入ソートやマージソートの計算量と実装についてみたいなテーマ。\nアルゴリズムとは？の定義を書いてくださいと先生に言われてしばらく固まってしまった。なんとなく理解してるんすけどーみたいな感じで言ったら爆詰めされる。\n定義を説明できないことは、理解できていない。\n \nピックアップされるべきこと\n\"理解する\"にあたり、僕は実装方法とかについて長々と書いていたら指摘がまた飛んできた。\nそこも重要な部分ではあるが、最も重要なのは何故これを学ぶべきかを知る事である。\n大学の授業は問題に直面した際に何を学習すればいいのかの指針にならなくてはいけないと…確かに。\n例えば、算数の授業の最初に何が嬉しいのか？が分からなければ学んだ意味が無い。足し算できなかったら買い物もできないみたいな。\n \nこんな感じで、道具として使える、感覚でなんとなくあってるからオッケーみたいなのを徹底的に排除しないと理解には近づくことが出来ないんですよねーという話を貰った。\n \n教え方の技術\nどのような構成であれば説得力が増すか？とか伝わるか？みたいなことにはテンプレがあり、千葉くんは全然添えてないとのこと。\n4コマ漫画で起承転結になってないみたいな感じ。\n分かりやすいと自分が思った文章を読んで、構造を見るようにしてみたらどうかと提案を貰った。\n \n理解の補助\n理解できているかを確認する手法として、最も有効なのは授業をすること。情報分野での初歩的なデバッグ手法としてラバーダッグデバッグというものがある。\n\n\nこのお風呂のあひるにコードに関して最初からひたすら話していくと、バグや矛盾点に気づきやすい。解説を通してどこで何が起きているのか？を整理できるという手法。\n一回家でこういう事をやってきてからゼミに臨んでください～とのことでした。付け加えて、会話の能力が低いから文章に書き起こしてまずはやってもいいかもとのこと。\n \n了解\n \nまとめ\n定義を説明できるようになること。何が嬉しいか？を十分に理解し、学習を進めないと意味が無いということ。いい感じの文章をみつけて、文章構成や話し方を矯正すること。アヒルに授業すること。\n \nゼミは英語で板書しなきゃいけないんだけど、三単現とか冠詞がボロボロで中学レベルの英語からやり直したほうが良いですと言われました。ガチBIBOO🗿\n \nやっている事の予習や覚書について、これからも書くことを意識していきたいですねー",
-          "link": "https://neon.hatenadiary.com/entry/2025/03/27/200425",
-          "publishedOn": "2025-03-27T11:04:25.000Z",
-          "wordCount": null,
-          "title": "先生に言われた事まとめ記事",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/369475465fbebc2615b9399f2ac7ab13570763b9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fneon_uriel%2F20250327%2F20250327195403.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/369475465fbebc2615b9399f2ac7ab13570763b9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fneon_uriel%2F20250327%2F20250327195403.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "-",
@@ -5816,16 +5800,6 @@
           "wordCount": 2160,
           "title": "日記250403",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/c03fbb970f663481d9a1bcd6be63a6df8a21556f.png"
-        },
-        {
-          "id": "https://note.com/hercelot/n/n860edf544cbc",
-          "author": null,
-          "description": "新しいシンセが出たら全パラメータ書き出し (1 Programあたりの持つ全要素、その階層構造とレンジの把握) をやってるんですけど、Serum 2はボリューミーですね。\n　ざっと触ったときは「先行してたCurrentやPigmentsと同等に追いついたかな〜」と思ってたんだけど、特に各ビューやノブの右クリックに隠された項目と分岐がすごくて、ちゃんと後発として隙のないこだわりようになってる。\n　Phase Plantみたいな\"理系っぽい\"全出しスタイルも好きだけど、Serum 2はパッと見のGUIでそこまで深いと思わせないフレンドリーさがいいですね。\n続きをみる",
-          "link": "https://note.com/hercelot/n/n860edf544cbc",
-          "publishedOn": "2025-03-27T11:21:05.000Z",
-          "wordCount": null,
-          "title": "Deep Dive into Serum 2 (Part 1: OSCとFilter編)",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/181106809/rectangle_large_type_2_f7f3c29820bf7ad98eda9a32a138c4f8.jpeg?width=800"
         }
       ]
     },
