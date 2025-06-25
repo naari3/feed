@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-25T16:01:53.715Z</updated>
+    <updated>2025-06-25T17:02:29.968Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Gitのタグをこっそりずらす]]></title>
+        <id>hatenablog://entry/6802418398488415740</id>
+        <link href="https://blog.3qe.us/entry/2025/06/26/015611"/>
+        <updated>2025-06-25T16:56:11.000Z</updated>
+        <summary type="html"><![CDATA[GitHubとかで、タグがつけられたら特定のアクションを実行する、といったワークフローを仕込んでいるときに、うまく動かなかったので再度走らせたい、みたいなことがあって(やんごとない理由でworkflow_dispatchはない)、なんとかしてタグをつけなおしたメモ。
+まずリモートにあるタグを破壊する。
+% git push --delete vx.y.z
+
+
+
+次にローカルにあるタグも破壊する。
+% git tag --delete vx.y.z
+
+
+
+タグをつけなおす。
+% git tag vx.y.z
+
+
+
+タグをpushする。
+% git push --tags
+
+
+
+これで手元とリモート上のタグが移動する。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[寂しかったんだ]]></title>
         <id>https://note.com/26435/n/n92ef19e5320c</id>
@@ -11090,46 +11121,6 @@ Schematics (Game Boy Advance) - RetroSix Wiki
 GBAの回路図と高精度の基板写真。テスターで追いかける場合など、ご家庭毎に必ず必要なデータです。]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IoTマルウェアMiraiの設定情報抽出ツール「mirai-toushi」の公開]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=29246</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/29246"/>
-        <updated>2025-03-28T05:00:33.000Z</updated>
-        <summary type="html"><![CDATA[はじめに 2024年から2025年の年末年始にかけて、様々な企業に対するDDoS攻撃が発生し、サービス障害が相次ぎました。 DDoS攻撃の原因として、IoTマルウェアに感染したIoT機器（ルータ、DV...]]></summary>
-        <author>
-            <name>森下 瞬</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[リモートアクセスサービスの開発 〜 IDゲートウェイの変遷〜（IIR vol.66 2章）]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=30994</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/30994"/>
-        <updated>2025-03-28T04:59:18.000Z</updated>
-        <summary type="html"><![CDATA[2025年3月に発行されたIIJの技術レポートIIR vol.66 の第2章では、2024年9月末日にサービス終了したIIJのリモートアクセスサービス「IDゲートウェイサービス」について、1998年の...]]></summary>
-        <author>
-            <name>IIJ Engineers Blog編集部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2024年のセキュリティサマリ：定期観測レポート「SOCレポート」（IIR vol.66 1章）]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=30989</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/30989"/>
-        <updated>2025-03-28T04:59:04.000Z</updated>
-        <summary type="html"><![CDATA[2025年3月に発行したIIJの技術レポートIIR vol.66 第1章では、年1回のセキュリティに関する定期観測レポート「SOCレポート」をお届けします。 本報告のポイント 2024年の主なセキュリ...]]></summary>
-        <author>
-            <name>IIJ Engineers Blog編集部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IIJの季刊技術レポート「IIR vol.66」（2025年3月号） 発行のご挨拶]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=30979</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/30979"/>
-        <updated>2025-03-28T04:58:43.000Z</updated>
-        <summary type="html"><![CDATA[※本記事は、2025年3月発行のIIR Vol.66より「エグゼクティブサマリ」を転載したものです。 エグゼクティブサマリ バルセロナで恒例の「モバイルワールドコングレス（MWC）」が開催されるなか、...]]></summary>
-        <author>
-            <name>IIJ Engineers Blog編集部</name>
         </author>
     </entry>
     <entry>

@@ -78,6 +78,47 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Gitのタグをこっそりずらす</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/06/26/015611" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>GitHubとかで、タグがつけられたら特定のアクションを実行する、といったワークフローを仕込んでいるときに、うまく動かなかったので再度走らせたい、みたいなことがあって(やんごとない理由でworkflow_dispatchはない)、なんとかしてタグをつけなおしたメモ。
+まずリモートにあるタグを破壊する。
+% git push --delete vx.y.z
+
+
+
+次にローカルにあるタグも破壊する。
+% git tag --delete vx.y.z
+
+
+
+タグをつけなおす。
+% git tag vx.y.z
+
+
+
+タグをpushする。
+% git push --tags
+
+
+
+これで手元とリモート上のタグが移動する。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398488415740/1750870571" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/26435" target="_blank"
               rel="noopener">T</a></h3>
           <section class="articles-per-source">
@@ -15908,58 +15949,6 @@ GBAの回路図と高精度の基板写真。テスターで追いかける場�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
-              rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">IoTマルウェアMiraiの設定情報抽出ツール「mirai-toushi」の公開</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://eng-blog.iij.ad.jp/archives/29246" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>はじめに 2024年から2025年の年末年始にかけて、様々な企業に対するDDoS攻撃が発生し、サービス障害が相次ぎました。 DDoS攻撃の原因として、IoTマルウェアに感染したIoT機器（ルータ、DV...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">リモートアクセスサービスの開発 〜 IDゲートウェイの変遷〜（IIR vol.66 2章）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://eng-blog.iij.ad.jp/archives/30994" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>2025年3月に発行されたIIJの技術レポートIIR vol.66 の第2章では、2024年9月末日にサービス終了したIIJのリモートアクセスサービス「IDゲートウェイサービス」について、1998年の...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2024年のセキュリティサマリ：定期観測レポート「SOCレポート」（IIR vol.66 1章）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://eng-blog.iij.ad.jp/archives/30989" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>2025年3月に発行したIIJの技術レポートIIR vol.66 第1章では、年1回のセキュリティに関する定期観測レポート「SOCレポート」をお届けします。 本報告のポイント 2024年の主なセキュリ...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">IIJの季刊技術レポート「IIR vol.66」（2025年3月号） 発行のご挨拶</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://eng-blog.iij.ad.jp/archives/30979" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>※本記事は、2025年3月発行のIIR Vol.66より「エグゼクティブサマリ」を転載したものです。 エグゼクティブサマリ バルセロナで恒例の「モバイルワールドコングレス（MWC）」が開催されるなか、...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -18071,7 +18060,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-06-25T16:01:53.673Z">2025-06-25T16:01:53.673Z</time>
+    <time id="build-timestamp" datetime="2025-06-25T17:02:29.923Z">2025-06-25T17:02:29.923Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

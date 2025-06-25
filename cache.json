@@ -6869,6 +6869,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398488415740",
+          "author": null,
+          "description": "GitHubとかで、タグがつけられたら特定のアクションを実行する、といったワークフローを仕込んでいるときに、うまく動かなかったので再度走らせたい、みたいなことがあって(やんごとない理由でworkflow_dispatchはない)、なんとかしてタグをつけなおしたメモ。\nまずリモートにあるタグを破壊する。\n% git push --delete vx.y.z\n\n\n\n次にローカルにあるタグも破壊する。\n% git tag --delete vx.y.z\n\n\n\nタグをつけなおす。\n% git tag vx.y.z\n\n\n\nタグをpushする。\n% git push --tags\n\n\n\nこれで手元とリモート上のタグが移動する。",
+          "link": "https://blog.3qe.us/entry/2025/06/26/015611",
+          "publishedOn": "2025-06-25T16:56:11.000Z",
+          "wordCount": null,
+          "title": "Gitのタグをこっそりずらす",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398488415740/1750870571",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398488415740/1750870571"
+        },
+        {
           "id": "hatenablog://entry/6802418398487070492",
           "author": null,
           "description": "Scala CLI 1.8.1がしばらく前にリリースされていた。このリリースの主な変更は、using fileディレクティブで URL を展開する機能が利用できるようになったことだ。\ngithub.com\nこの記事ではこの機能について紹介する。\nScala CLI とは\nScala CLI とはVirtusLab社によってメンテナンスされている、事実上標準の Scala 用 コマンドラインツールだ。\nscala-cli.virtuslab.org\nこの記事でも何度も取り上げており、Scala によるスクリプティングやパッケージ作成などをスムーズに行うことができる非常に便利なツールだ。\nblog.3qe.us\nScala CLIでは、.scala.scという拡張子でScalaコードを書くと、それを上から下へとそのまま実行してくれる:\n// code.scala.sc\nprintln(\"Hello, Scala CLI!\")\n\n\n\n\n\n% scala-cli code.scala.sc\n(ファイルをそのまま渡すと scala-cli run ファイル したとみなされる)\nHello, Scala CLI!\n%\n\n\n\nディレクティブとは\n単一のScalaコードでできることは限られている。普通はビルドツールの助けを借りて、複数ファイルの結合や依存するライブラリの用意、コンパイラのバージョンの固定、コンパイルオプションの設定をやってもらっているのに、それができないからだ。\nScala CLI では、こうした「スクリプティングのために、ただコンパイルする以外にも必要なこと」をやってくれるための仕組みが用意されている。それがディレクティブ(directive)だ。\nディレクティブはファイルの先頭に//>という特殊なコメントの形式で書き込む:\n//> using scala 3.7.1\n/…",
@@ -7728,46 +7743,6 @@
           "publishedOn": "2025-04-01T03:00:50.000Z",
           "wordCount": null,
           "title": "IIJのDXプラットフォーム（IIJ.news）",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=29246",
-          "author": "森下 瞬",
-          "description": "はじめに 2024年から2025年の年末年始にかけて、様々な企業に対するDDoS攻撃が発生し、サービス障害が相次ぎました。 DDoS攻撃の原因として、IoTマルウェアに感染したIoT機器（ルータ、DV...",
-          "link": "https://eng-blog.iij.ad.jp/archives/29246",
-          "publishedOn": "2025-03-28T05:00:33.000Z",
-          "wordCount": null,
-          "title": "IoTマルウェアMiraiの設定情報抽出ツール「mirai-toushi」の公開",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=30994",
-          "author": "IIJ Engineers Blog編集部",
-          "description": "2025年3月に発行されたIIJの技術レポートIIR vol.66 の第2章では、2024年9月末日にサービス終了したIIJのリモートアクセスサービス「IDゲートウェイサービス」について、1998年の...",
-          "link": "https://eng-blog.iij.ad.jp/archives/30994",
-          "publishedOn": "2025-03-28T04:59:18.000Z",
-          "wordCount": null,
-          "title": "リモートアクセスサービスの開発 〜 IDゲートウェイの変遷〜（IIR vol.66 2章）",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=30989",
-          "author": "IIJ Engineers Blog編集部",
-          "description": "2025年3月に発行したIIJの技術レポートIIR vol.66 第1章では、年1回のセキュリティに関する定期観測レポート「SOCレポート」をお届けします。 本報告のポイント 2024年の主なセキュリ...",
-          "link": "https://eng-blog.iij.ad.jp/archives/30989",
-          "publishedOn": "2025-03-28T04:59:04.000Z",
-          "wordCount": null,
-          "title": "2024年のセキュリティサマリ：定期観測レポート「SOCレポート」（IIR vol.66 1章）",
-          "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=30979",
-          "author": "IIJ Engineers Blog編集部",
-          "description": "※本記事は、2025年3月発行のIIR Vol.66より「エグゼクティブサマリ」を転載したものです。 エグゼクティブサマリ バルセロナで恒例の「モバイルワールドコングレス（MWC）」が開催されるなか、...",
-          "link": "https://eng-blog.iij.ad.jp/archives/30979",
-          "publishedOn": "2025-03-28T04:58:43.000Z",
-          "wordCount": null,
-          "title": "IIJの季刊技術レポート「IIR vol.66」（2025年3月号） 発行のご挨拶",
           "imageUrl": null
         }
       ]
