@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-25T00:03:53.731Z</updated>
+    <updated>2025-06-25T01:29:26.595Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[グランプリ受賞！「Ditto」が Interop Tokyo 2025「Best of Show Award」で栄冠！]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=31697</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/31697"/>
+        <updated>2025-06-25T00:06:47.000Z</updated>
+        <summary type="html"><![CDATA[2025 年 6 月 11 日～13 日に幕張メッセで開催されたイベント「Interop Tokyo 2025」にて、IIJ が出展した「Ditto」が、「Best of Show Award（IoT...]]></summary>
+        <author>
+            <name>吉田</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[textlint v15.0.0をリリースしました。非推奨APIの削除とNode.js 20+サポート/MCPサーバの改善]]></title>
+        <id>https://efcl.info/2025/06/25/textlint-v15/</id>
+        <link href="https://efcl.info/2025/06/25/textlint-v15/"/>
+        <updated>2025-06-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[textlint v15.0.0をリリースしました！
+Release v15.0.0 · textlint/textlint
+textlint v15.0.0 | textlint
+textlint v15は、v12.3.0から非推奨としてマークされていた古いAPIをすべて削除するメジャーリリースです。
+textlint v15.0.0の変更点
+主要な変更点は次の通りです。
+Breaking Changes
+Node.js 20+のサポート（Node.js 16,18はサポート終了
+TextLintEngineを削除 → createLinter()
+TextFixEngineを削除 → createLinter()
+TextLintCoreを削除 → createLinter()または@textlint/kernel
+textlint（シングルトンインスタンス）を削除 → createLinter()
+createFormatterを削除 → loadFormatter()を
+Node.js 20以上が必要
+textlint v15では、Node.js 20.0.0以上が必要になりました。
+Nodejs 18はEOL(End of Life)となっているため、Node.js 20以上を使用する必要があります。
+https://nodejs.org/en/about/previous-releases
+非推奨APIの削除
+textlintパッケージをNode.jsモジュールとして利用する場合のみ影響を受ける変更です。
+textlint v15では、非推奨となっていた次のAPIが完全に削除されました。
+移行ガイドは次のページに用意しています。
+Migration Guide to textlint v15 | textlint
+TextLintEngine → createL…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.6.25]]></title>
         <id>https://gamegaz.com/?p=43843</id>
