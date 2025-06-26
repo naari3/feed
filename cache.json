@@ -4310,18 +4310,7 @@
       "title": "calpisco",
       "feedUrl": "https://note.com/calpisco/rss",
       "siteUrl": "https://note.com/calpisco",
-      "articles": [
-        {
-          "id": "https://note.com/calpisco/n/n8f4bdefc1370",
-          "author": null,
-          "description": "うわ～～～～～！！calpiscoですぅ～～～～。\n以前いまだけダブチ食べ美についてnoteを書いたんですけどぉ…。\nhttps://note.com/calpisco/n/n286e2e524570\n続きをみる",
-          "link": "https://note.com/calpisco/n/n8f4bdefc1370",
-          "publishedOn": "2025-03-28T16:13:41.000Z",
-          "wordCount": 2212,
-          "title": "皆ごめん。刺さっちゃった。",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/a8013fde94b147c37969e5ac41083ff29285d798.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "chas",
@@ -7247,21 +7236,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398340453786/1743293280"
-        },
-        {
-          "id": "hatenablog://entry/6802418398340153515",
-          "author": null,
-          "description": "Scala 3 には篩型（refinement types）を実現するためのライブラリであるIronが存在する。\nblog.3qe.us\nこのライブラリを使うと、非負整数とか、8桁の文字列とか、UUIDといった、元々の型に加えて制約を加えたものをそのまま型情報に載せて扱うことができる。詳しくは記事を読んでみてほしい。\n↑の記事にも追記したことだが、先日 Iron v3.0.0 がリリースされた。おめでとう！\ngithub.com\nこの記事では、ほぼ上に書かれていることをなぞっているだけだが、 Iron 3 の変更について紹介する。\nまた、公式にマイグレーションガイドが提供されている。\niltotore.github.io\nIron 3\n見ての通り Iron 3 は Iron の3つめのメジャーバージョンであり、いくつかの破壊的変更を含んでいる。しかしその差異は小さく軽微で、十数分もあれば訂正できてしまうようなものばかりだ。\nそれどころか、いくつかの型定義が簡略化されており、より簡単に篩型を定義できるようになっている。順に見ていこう:\n破壊的変更: Scala 3.6.3 以上が必要になった\nコンパイラのバグに影響を受けていた箇所があったようで、これが修正された Scala 3.6.3 以降でなければ Iron 3 は動作しない。\nIronのリリースポリシーは「可能な限りLTSに留まる」というものだが、メジャーバージョンアップにともなっていったん最新のScalaを利用しなければならなくなったようだ。このバグ修正が含まれた次回のLTSが発表されたタイミングで、IronがLTSにまた留まることになるはずだ。\n破壊的変更: RefinedTypeを作成する手順の簡略化\n従来のIronには、独自の篩型定義にapplyメソッドを付けて一般的なコンテナ型のように扱えるようにする機能が存在…",
-          "link": "https://blog.3qe.us/entry/2025/03/29/014816",
-          "publishedOn": "2025-03-28T16:48:16.000Z",
-          "wordCount": 1721,
-          "title": "Scalaの篩型ライブラリ Iron v3.0.0 がリリースされた / 構文がより簡潔になり、扱いやすく、強力に（ただし Scala 3.6.3 が必要）",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398340153515/1743181001",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398340153515/1743181001"
         }
       ]
     },
