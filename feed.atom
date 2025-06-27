@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-27T12:02:13.192Z</updated>
+    <updated>2025-06-27T13:11:11.509Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【今週の話題】Gemini CLIがリリース]]></title>
+        <id>685e8b9bdfc08c00019c76b0</id>
+        <link href="https://blog.lai.so/gemini-cli/"/>
+        <updated>2025-06-27T12:43:18.000Z</updated>
+        <summary type="html"><![CDATA[かねてから噂されていたGoogleのGemini公式のCLI型コーディングエージェント「Gemini CLI」がリリースされました。Gemini CLIはClaude]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[toheart購入done]]></title>
         <id>hatenablog://entry/6802418398490248261</id>
@@ -10996,59 +11006,6 @@ GameGaz Daily 2025.3.31 first appeared on 大人のためのゲーム講座.]]><
 GameGaz Daily 2025.3.30 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Catsのtraverse_は要するに高カインドのforeach]]></title>
-        <id>hatenablog://entry/6802418398340453786</id>
-        <link href="https://blog.3qe.us/entry/2025/03/30/090800"/>
-        <updated>2025-03-30T00:08:00.000Z</updated>
-        <summary type="html"><![CDATA[Cats Effect をいじっていたら、foreach_というメソッドを見付けた。これはCats Effect独自のメソッドではなくて、Catsに用意されている。
-これはほぼtraverseと同じだ:
-import cats.effect.IO
-import cats.syntax.all.*
-
-def message(who: String): IO[String] = IO.pure(s"Hi, $who")
-def greet(m: String) = IO.println(m)
-
-val messages = Vector(
-  message("windymelt"),
-  message("teto"),
-  message("rei"),
-)
-
-messages.traverse(greet)
-
-messages.traverse_(greet)
-
-
-
-よく見ると型が違う:
-def traverse[G[_], B](f: A => G[B])(implicit ev$1: Applicative[G]): G[F[B]]
-
-def traverse_[G[_], B](f: A => G[B])(implicit G: Applicative[G]): G[Unit]
-
-
-
-traverse_を使うとエフェクトを使って計算しつつ値をどんどん棄ててしまう。fが計算した値を組み直す必要がないので、traverse_はFoldableに定義されている。
-TypeLevelのDiscordで訊いたところ、traverseはmapみたいなもので、traverse_はforeachみたいなもの、ただし両方ともエフェクトも組み立ててくれるところが違うよね、とのこと:
-                   
- pure 
- with effect 
-
-
-
-
- need value    
- .map     
- .traverse       
-
-
- discard value 
- .foreach 
- .traverse_]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>

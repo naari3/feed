@@ -78,6 +78,25 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.lai.so/" target="_blank"
+              rel="noopener">laiso</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">【今週の話題】Gemini CLIがリリース</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.lai.so/gemini-cli/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>かねてから噂されていたGoogleのGemini公式のCLI型コーディングエージェント「Gemini CLI」がリリースされました。Gemini CLIはClaude</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
               rel="noopener">あーさん日記</a></h3>
           <section class="articles-per-source">
@@ -15783,69 +15802,6 @@ GameGaz Daily 2025.3.30 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Catsのtraverse_は要するに高カインドのforeach</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/03/30/090800" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Cats Effect をいじっていたら、foreach_というメソッドを見付けた。これはCats Effect独自のメソッドではなくて、Catsに用意されている。
-これはほぼtraverseと同じだ:
-import cats.effect.IO
-import cats.syntax.all.*
-
-def message(who: String): IO[String] &#x3D; IO.pure(s&quot;Hi, $who&quot;)
-def greet(m: String) &#x3D; IO.println(m)
-
-val messages &#x3D; Vector(
-  message(&quot;windymelt&quot;),
-  message(&quot;teto&quot;),
-  message(&quot;rei&quot;),
-)
-
-messages.traverse(greet)
-
-messages.traverse_(greet)
-
-
-
-よく見ると型が違う:
-def traverse[G[_], B](f: A &#x3D;&gt; G[B])(implicit ev$1: Applicative[G]): G[F[B]]
-
-def traverse_[G[_], B](f: A &#x3D;&gt; G[B])(implicit G: Applicative[G]): G[Unit]
-
-
-
-traverse_を使うとエフェクトを使って計算しつつ値をどんどん棄ててしまう。fが計算した値を組み直す必要がないので、traverse_はFoldableに定義されている。
-TypeLevelのDiscordで訊いたところ、traverseはmapみたいなもので、traverse_はforeachみたいなもの、ただし両方ともエフェクトも組み立ててくれるところが違うよね、とのこと:
-                   
- pure 
- with effect 
-
-
-
-
- need value    
- .map     
- .traverse       
-
-
- discard value 
- .foreach 
- .traverse_</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398340453786/1743293280" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17957,7 +17913,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-06-27T12:02:13.148Z">2025-06-27T12:02:13.148Z</time>
+    <time id="build-timestamp" datetime="2025-06-27T13:11:11.463Z">2025-06-27T13:11:11.463Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -7241,21 +7241,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398340957994/1743436649"
-        },
-        {
-          "id": "hatenablog://entry/6802418398340453786",
-          "author": null,
-          "description": "Cats Effect をいじっていたら、foreach_というメソッドを見付けた。これはCats Effect独自のメソッドではなくて、Catsに用意されている。\nこれはほぼtraverseと同じだ:\nimport cats.effect.IO\nimport cats.syntax.all.*\n\ndef message(who: String): IO[String] = IO.pure(s\"Hi, $who\")\ndef greet(m: String) = IO.println(m)\n\nval messages = Vector(\n  message(\"windymelt\"),\n  message(\"teto\"),\n  message(\"rei\"),\n)\n\nmessages.traverse(greet)\n\nmessages.traverse_(greet)\n\n\n\nよく見ると型が違う:\ndef traverse[G[_], B](f: A => G[B])(implicit ev$1: Applicative[G]): G[F[B]]\n\ndef traverse_[G[_], B](f: A => G[B])(implicit G: Applicative[G]): G[Unit]\n\n\n\ntraverse_を使うとエフェクトを使って計算しつつ値をどんどん棄ててしまう。fが計算した値を組み直す必要がないので、traverse_はFoldableに定義されている。\nTypeLevelのDiscordで訊いたところ、traverseはmapみたいなもので、traverse_はforeachみたいなもの、ただし両方ともエフェクトも組み立ててくれるところが違うよね、とのこと:\n                   \n pure \n with effect \n\n\n\n\n need value    \n .map     \n .traverse       \n\n\n discard value \n .foreach \n .traverse_",
-          "link": "https://blog.3qe.us/entry/2025/03/30/090800",
-          "publishedOn": "2025-03-30T00:08:00.000Z",
-          "wordCount": null,
-          "title": "Catsのtraverse_は要するに高カインドのforeach",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398340453786/1743293280",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398340453786/1743293280"
         }
       ]
     },
@@ -7331,6 +7316,16 @@
       "feedUrl": "https://blog.lai.so/rss/",
       "siteUrl": "https://blog.lai.so/",
       "articles": [
+        {
+          "id": "685e8b9bdfc08c00019c76b0",
+          "author": "laiso",
+          "description": "かねてから噂されていたGoogleのGemini公式のCLI型コーディングエージェント「Gemini CLI」がリリースされました。Gemini CLIはClaude",
+          "link": "https://blog.lai.so/gemini-cli/",
+          "publishedOn": "2025-06-27T12:43:18.000Z",
+          "wordCount": null,
+          "title": "【今週の話題】Gemini CLIがリリース",
+          "imageUrl": null
+        },
         {
           "id": "684f73e48f1efb0001cf1d32",
           "author": "laiso",
