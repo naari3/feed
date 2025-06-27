@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-06-27T22:02:02.239Z</updated>
+    <updated>2025-06-27T23:01:35.558Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10983,18 +10983,6 @@ GameGaz Daily 2025.3.31 first appeared on 大人のためのゲーム講座.]]><
 そういえばアニメが完全再現できなかったのは戦闘シーンと、あとＨシーンの２箇所でした。戦闘シーンの場合、オリジナルですと背景レイヤーとキャラレイヤーの２枚を重ねて表示しています。背景だけを高速に入れ替えて表示しているわけです。一方、GBAは1枚絵しか表示できないから弊害があります。たぶんmode0で2枚表示すれば行けるでしょう。なぜmode0にしなかったかというと8ドットサイズで差分画像を用意しないといけませんし、座標を再計算しないといけない面倒があるからです。mode4はその点、x, y座標を割り算する計算だけでしたので簡単でした。もしCTRを作るとしたらmode0になるでしょう・・・観覧車や道を歩くシーンで2回重ねは必須ですからねー。やらないですけど。Hシーンは単純に口パクと胸のアニメが重なるから無理ー！となったわけです。これもmode0があればできそうですね。]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「週刊プラグインレビュー」PluginAlliance / Vertigo VSS-2]]></title>
-        <id>https://note.com/massmasaoki/n/n4105e5c9fa6b</id>
-        <link href="https://note.com/massmasaoki/n/n4105e5c9fa6b"/>
-        <updated>2025-03-30T10:41:51.000Z</updated>
-        <summary type="html"><![CDATA[あれ、夏になったのかな？と思うほど暑い日から一点、急にまた冬になったりして、自律神経を地球が倒しにきている日々が続いておりますが、皆さまお元気でしょうか？
-僕自身は割と運動不足も相まって、その辺に左右されがちな日々を送っております笑
-続きをみる]]></summary>
-        <author>
-            <name>moroishimasaoki</name>
         </author>
     </entry>
     <entry>
