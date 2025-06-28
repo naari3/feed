@@ -15759,34 +15759,6 @@ GameGaz Daily 2025.3.31 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">rise移植18</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/03/30/222754" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>プログラムの話を少々・・・記憶のあるうちにダラダラ反省会でもしたいと思っています。
-
-えーと、今回はどこにCPUが集中しているかというとアニメ（画像）の解凍部分になると思います。これはNO$GBAエミュで遊ぶとわかりやすく、100%と0%のグラフが行ったり来たり表示されます。想像ですけれど、これはmode4 256色 240x160を解凍するのにほぼ1frame、描画後のウェイトに1frame以上しているわけです。消費電力は調べていませんが常時70-80%ぐらいのマリオカートに比べてどっこいかと思っています。
-
-メモリに関して、IWRAM領域の半分ぐらいしか使っていません。というのもゲーム全体の9割はLZ解凍に費やすだけでしょうから、割り込み以外はほぼEWRAMに配置しています。変数に関してはIWRAM s32でええやん！となっていてバンバン宣言させました。スクリプトの重さはどうですか？と聞いてきそうですけど、そこはフェードアウト中の処理なので全く気にすることはありません。どんなに遅くても遅延1,2フレでしょうし。SGSシステムは画面暗転中１シーン分ローディング。その後にアニメーションする仕組みになっています。
-
-あとソニアさんはSGSの後にAGSを開発されていて、参考にした解析コードはどちらも網羅していました。なのでags.cって名前がプロジェクトにあるのは間違いじゃないかと言われるとそうです！としかいいようがありません。元の解析コードに引っ張られて命名しただけですからねー。。今更直すのが面倒なので放置しています。
-
-そういえばアニメが完全再現できなかったのは戦闘シーンと、あとＨシーンの２箇所でした。戦闘シーンの場合、オリジナルですと背景レイヤーとキャラレイヤーの２枚を重ねて表示しています。背景だけを高速に入れ替えて表示しているわけです。一方、GBAは1枚絵しか表示できないから弊害があります。たぶんmode0で2枚表示すれば行けるでしょう。なぜmode0にしなかったかというと8ドットサイズで差分画像を用意しないといけませんし、座標を再計算しないといけない面倒があるからです。mode4はその点、x, y座標を割り算する計算だけでしたので簡単でした。もしCTRを作るとしたらmode0になるでしょう・・・観覧車や道を歩くシーンで2回重ねは必須ですからねー。やらないですけど。Hシーンは単純に口パクと胸のアニメが重なるから無理ー！となったわけです。これもmode0があればできそうですね。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398340652077/1743343135" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17898,7 +17870,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-06-28T00:03:53.951Z">2025-06-28T00:03:53.951Z</time>
+    <time id="build-timestamp" datetime="2025-06-28T01:29:40.607Z">2025-06-28T01:29:40.607Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
