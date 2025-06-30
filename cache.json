@@ -3866,21 +3866,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/06f1a37fbdbb8a229645cf74322de833165af993/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnekketsuuu%2F20250407%2F20250407194323.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398341360470",
-          "author": null,
-          "description": "検索・MLチームの山口 (@altescy)です。\n先月 3/10〜３/14 にかけて長崎で行われた言語処理学会第31回年次大会に参加し発表・聴講してきたので、今回はその参加報告となります。\nその前に\n4/23 (水) に検索・MLをテーマにオフラインイベント Tech Kitchen を開催します。\nTech Kitchen #31 クックパッドのレシピ検索のいま 〜多言語対応と機械学習〜\n私からは『レシピのための埋め込みモデルの学習とベンチマーク構築』についてお話しする予定です。\nご興味のある方はぜひキッチンへ遊びに来てください 🥳\n発表した内容\nクックパッドからは以下の発表を行いました。\nP3-12:  LLM を用いた複数レシピに対する調理計画手法の検討\n1人の作業者が複数のレシピを同時に調理するのに最適な調理計画を LLM を使って生成するというものです。現在のクックパッドでは作りたいレシピが複数ある場合、それらを行き来しながら作業を進める必要があります。作りたいレシピをいくつか選んだらいい感じにインストラクションが始まってくれると嬉しいな〜という気持ちで今回はこのテーマを選びました。\n最近では旅行や MTG の計画を LLM に解かせるベンチマークが提案されていて1、そうした計画タスクは LLM にとって難しいことが知られています。特に料理の計画においては分単位の細かな時間管理が求められるため、単純に手順の開始と終了を順番に出力させるだけではうまく計画を立てられません。コンロなどの調理器具は同時に使える個数も制限される場合が多いため、調理環境に合わせた制約も考慮する必要があります。\nLLM によるプランニング手法\n今回試した手法では、調理手順の解析 → 大まかな計画の作成 → ルールに基づく調整といったパイプライン的な手法を用いることで、そこそこなクオリティの…",
-          "link": "https://techlife.cookpad.com/entry/nlp2025",
-          "publishedOn": "2025-04-02T07:25:00.000Z",
-          "wordCount": null,
-          "title": "NLP2025 に参加しました",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773"
         }
       ]
     },
