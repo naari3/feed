@@ -78,6 +78,31 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://kiyo-shit.hatenablog.com/" target="_blank"
+              rel="noopener">Robot Checkerboard</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">WBGT値に合わせてエアコンを自動でコントロールしている</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://kiyo-shit.hatenablog.com/entry/2025/06/30/224316" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>最近、自室にNature Remo Lapisを導入した。以前からリビングにはNature Remo 3を設置していたため、Matter対応になったLapisには結構期待していたところがある。iOSのHomeアプリからエアコンや照明が操作できるようになったのは良かったのだが、エアコンに関しては「暖房・冷房・消す」しか選べず、「除湿」モードがないのが少し残念だ。ただ、これは仕様のようで、今のところ対応方法は特になさそうである。
+また、Nature Remoの使用感についてもう一つ気になる点は、オートメーションが意図通りに発火しないことが多々あることだ。特に暑さや寒さを感知してエアコンをオン・オフするトリガーが動作しないと、それ自体がストレスになるだけでなく、睡眠時などは健康面でもリスクを伴う。こういった面で動作の確実性を担保できる仕組みが必要だと考えていたところだ。
+そんなタイミングでGemini CLIがリリースされたこともあり、これを試してみるのに合わせて、自分なりにAPIを利用した簡単なスクリプトを書いてみることにした。どうせ書くなら、気温と湿度の組み合わせをGeminiに食わせ、快適な温度設定を提案させる機能を組み込んでみたのだが、実際にはうまくいかなかった。「現在の気温なら許容範囲です」とAIが勝手に判断してしまい、実際には明らかに不快な室温であるにもかかわらず、調整が効かなかったのである。
+そもそも快適性や健康リスクを考える上で、WBGTという指標が存在する。これは1954年にアメリカ海兵隊の訓練中における熱中症リスクを評価するために開発され、現在はISO（国際標準化機構）によってISO 7243として標準化されている。湿球温度の近似計算式も一般的に知られているのだから、これを利用しない手はないと考え直した。そこで現在は、このWBGTの値を使い、「注意」や「危険」といったリスクレベルに応じて、エアコンの設定温度や動作モードを自動で変える運用にしている。ただ、このような仕組みが標準でNature Remo自体に搭載されれば良いのに、とも思う。
+ちなみに、Lapisに搭載されている「オートエコ」という機能があるのだが、これがなかなか極端な挙動を見せる。エコな室温を維持するために、暖房を入れるという力強い行動を取ることがあり、手段と目的が完全に入れ変わっているのでリリースする前にちゃんと自分達で使って欲しいという気持ちだけがある。
+環境省熱中症予防情報サイト 暑さ指数とは？</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13208692334729889879/6802418398495468945/1751290996" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://saize-lw.hatenablog.com/" target="_blank"
               rel="noopener">LWのサイゼリヤ</a></h3>
           <section class="articles-per-source">
@@ -17595,7 +17620,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-06-30T13:11:44.790Z">2025-06-30T13:11:44.790Z</time>
+    <time id="build-timestamp" datetime="2025-06-30T14:01:55.406Z">2025-06-30T14:01:55.406Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
