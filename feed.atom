@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-01T06:02:21.314Z</updated>
+    <updated>2025-07-01T07:02:48.666Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10762,25 +10762,6 @@ BMEとのチーム契約が満了となりました。
 チームのお誘いとかあればまだまだ考えたいなとは思っていますが、実力的にはそ…]]></summary>
         <author>
             <name>liveのブログ『清濁のるつぼ』</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ScalaでSeq[A]にインデックスアクセスしてOption[A]を得るにはliftメソッドを呼ぶ]]></title>
-        <id>hatenablog://entry/6802418398341502673</id>
-        <link href="https://blog.3qe.us/entry/2025/04/03/031851"/>
-        <updated>2025-04-02T18:18:51.000Z</updated>
-        <summary type="html"><![CDATA[val xs = List(1, 2, 3, 4, 5, 6, 7, 8, 9)
-
-xs.lift(4) // => Some(5)
-xs.lift(42) // => None
-
-
-
-liftというのはある関数をOptionを返すように加工するようなときに使われる慣例的な名前で、今回は暗にapplyのことを指している。
-www.scala-lang.org
-元々liftはPartialFunctionに対して実装されているメソッドなのだが、Seqへのインデックスアクセスも部分関数じゃん、ということで、なんとSeqはインデックスのIntを唯一の引数に取る部分関数とみなされて、PartialFunctionを継承している。面白い！]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
