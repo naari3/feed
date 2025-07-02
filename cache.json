@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398497755464",
+          "author": null,
+          "description": "なかなか取れなかったバグだったのですけど、そろそろネタにしてもいいかなあということで書かせてもらいます。実はviper v16やgtsにこっそりfixかなぁというコードを入れてて、今日まで不具合報告がないから問題ないだろうということでヨシとします。ヨシ！。前は全てのサウンドレジスタを0x00クリアしていたのですけどこれは間違いで、一部発音しなくなる不具合があります。正しくはこちらで発音問題は修正されました。某有名サウンドドライバの逆汗データなので間違いないと思います。\n*(vu8*)(REG_BASE + 0x63) = 0x08;\t\t// NR12\n*(vu8*)(REG_BASE + 0x65) = 0x80;\t\t// NR14\n*(vu8*)(REG_BASE + 0x69) = 0x08;\t\t// NR22\n*(vu8*)(REG_BASE + 0x6d) = 0x80;\t\t// NR24\n*(vu8*)(REG_BASE + 0x70) = 0x00;\t\t// NR30\n*(vu8*)(REG_BASE + 0x79) = 0x08;\t\t// NR42\n*(vu8*)(REG_BASE + 0x7d) = 0x80;\t\t// NR44\n*(vu8*)(REG_BASE + 0x80) = 0x77;\t\t// NR50",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/02/203025",
+          "publishedOn": "2025-07-02T11:30:25.000Z",
+          "wordCount": 522,
+          "title": "GBA DMG初期値",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398497755464/1751457425",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398497755464/1751457425"
+        },
+        {
           "id": "hatenablog://entry/6802418398490248261",
           "author": null,
           "description": "休みの日に遊びまくりますよー。\nstore.steampowered.com",
@@ -8876,16 +8891,6 @@
           "wordCount": 1793,
           "title": "違法コピー対策か 公式情報まとめ Nintendo Switch 2について",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/Nintendo-Switch-2_C.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43353",
-          "author": "mamosuke",
-          "description": "PS5 kldload,Emu4VitaPlus v0.25,NsxLibraryManager v0.4.4,DBI 779ru,BlocksDS v1.9.1,SpeccyDS Version 0.5,shadPS4 Pre-release-shadPS4-2025-04-03-1ee2016,PCSX2 v2.3.251→→→この記事の続きを読む\nGameGaz Daily 2025.4.4 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025040443353/",
-          "publishedOn": "2025-04-03T23:30:42.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.4.4",
-          "imageUrl": null
         }
       ]
     },

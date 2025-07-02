@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-02T11:01:43.654Z</updated>
+    <updated>2025-07-02T12:02:22.964Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GBA DMG初期値]]></title>
+        <id>hatenablog://entry/6802418398497755464</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/07/02/203025"/>
+        <updated>2025-07-02T11:30:25.000Z</updated>
+        <summary type="html"><![CDATA[なかなか取れなかったバグだったのですけど、そろそろネタにしてもいいかなあということで書かせてもらいます。実はviper v16やgtsにこっそりfixかなぁというコードを入れてて、今日まで不具合報告がないから問題ないだろうということでヨシとします。ヨシ！。前は全てのサウンドレジスタを0x00クリアしていたのですけどこれは間違いで、一部発音しなくなる不具合があります。正しくはこちらで発音問題は修正されました。某有名サウンドドライバの逆汗データなので間違いないと思います。
+*(vu8*)(REG_BASE + 0x63) = 0x08;		// NR12
+*(vu8*)(REG_BASE + 0x65) = 0x80;		// NR14
+*(vu8*)(REG_BASE + 0x69) = 0x08;		// NR22
+*(vu8*)(REG_BASE + 0x6d) = 0x80;		// NR24
+*(vu8*)(REG_BASE + 0x70) = 0x00;		// NR30
+*(vu8*)(REG_BASE + 0x79) = 0x08;		// NR42
+*(vu8*)(REG_BASE + 0x7d) = 0x80;		// NR44
+*(vu8*)(REG_BASE + 0x80) = 0x77;		// NR50]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[テスト用に適当なドメインを注入したいときは .invalid を使うとよさそう]]></title>
         <id>hatenablog://entry/6802418398497449220</id>
@@ -10588,17 +10606,6 @@ Rubyで更新されたオブジェクト一覧を取りたいなと思ってTrac
 TracePointというインターフェイスに乗ることで、情報の収集とそれの利用を分ける事ができて、かなり便利な感じがする。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.4.4]]></title>
-        <id>https://gamegaz.com/?p=43353</id>
-        <link href="https://gamegaz.com/2025040443353/"/>
-        <updated>2025-04-03T23:30:42.000Z</updated>
-        <summary type="html"><![CDATA[PS5 kldload,Emu4VitaPlus v0.25,NsxLibraryManager v0.4.4,DBI 779ru,BlocksDS v1.9.1,SpeccyDS Version 0.5,shadPS4 Pre-release-shadPS4-2025-04-03-1ee2016,PCSX2 v2.3.251→→→この記事の続きを読む
-GameGaz Daily 2025.4.4 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

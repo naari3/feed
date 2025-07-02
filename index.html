@@ -78,6 +78,34 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GBA DMG初期値</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/07/02/203025" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>なかなか取れなかったバグだったのですけど、そろそろネタにしてもいいかなあということで書かせてもらいます。実はviper v16やgtsにこっそりfixかなぁというコードを入れてて、今日まで不具合報告がないから問題ないだろうということでヨシとします。ヨシ！。前は全てのサウンドレジスタを0x00クリアしていたのですけどこれは間違いで、一部発音しなくなる不具合があります。正しくはこちらで発音問題は修正されました。某有名サウンドドライバの逆汗データなので間違いないと思います。
+*(vu8*)(REG_BASE + 0x63) &#x3D; 0x08;		// NR12
+*(vu8*)(REG_BASE + 0x65) &#x3D; 0x80;		// NR14
+*(vu8*)(REG_BASE + 0x69) &#x3D; 0x08;		// NR22
+*(vu8*)(REG_BASE + 0x6d) &#x3D; 0x80;		// NR24
+*(vu8*)(REG_BASE + 0x70) &#x3D; 0x00;		// NR30
+*(vu8*)(REG_BASE + 0x79) &#x3D; 0x08;		// NR42
+*(vu8*)(REG_BASE + 0x7d) &#x3D; 0x80;		// NR44
+*(vu8*)(REG_BASE + 0x80) &#x3D; 0x77;		// NR50</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398497755464/1751457425" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
               rel="noopener">Lambdaカクテル</a></h3>
           <section class="articles-per-source">
@@ -15216,31 +15244,6 @@ TracePointというインターフェイスに乗ることで、情報の収集�
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2025-04-03">2025-04-03</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2025.4.4</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025040443353/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PS5 kldload,Emu4VitaPlus v0.25,NsxLibraryManager v0.4.4,DBI 779ru,BlocksDS v1.9.1,SpeccyDS Version 0.5,shadPS4 Pre-release-shadPS4-2025-04-03-1ee2016,PCSX2 v2.3.251→→→この記事の続きを読む
-GameGaz Daily 2025.4.4 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-03-14">2025-03-14</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -17349,7 +17352,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-07-02T11:01:43.617Z">2025-07-02T11:01:43.617Z</time>
+    <time id="build-timestamp" datetime="2025-07-02T12:02:22.914Z">2025-07-02T12:02:22.914Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
