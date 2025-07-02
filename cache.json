@@ -6682,6 +6682,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398497449220",
+          "author": null,
+          "description": "tl;dr\n.invalidは絶対にリクエストが飛ばないのでおすすめ\nあらすじ\n書いていたコードは、とあるミドルウェア向けに内部利用するURLを環境変数で受け取るようになっていた。普段は実際の内部のURLが書かれているのだが、テスト時には以下のようにダミーを設定していた:\nFOOBAR_EXTERNAL_URL=\"https://example.com/foobardummy\"\nテストではこのURLを利用しないのだが、内部で環境変数のバリデーションを行っている都合上、とりあえず適当なURLを指定しなければ起動してくれないから、こうなっていた。重ねて言うが、実際はこの環境変数を利用していないのでこれでいい。\nしかしこれだと、うっかり内部の様子がおかしくなったりエンジニアが狂ってしまった場合に、example.comに本当にアクセスしてしまう。なおかつ、セキュリティ上重要なミドルウェアやサービスを想定したURLだった場合には、あまりよろしくないデータが実在のホストに飛んでしまう。 これらが同時に発生する確率は低いものの、いずれにせよ意図しない形でのデータ送信の余地は減らしたい。\nRFC 2606 / RFC 6761\nRFC 2606: Reserved Top Level DNS Names では、いくつかのTLDを予約している。特殊な用途では、これらを使うのが賢い。\n.test\n.example\n.invalid\n.localhost\n例えば、公共掲示物などでドメインの例として実在のドメインを書いてしまったら実在の持ち主に迷惑がかかるから、.example.comなどを使うべきである（ちなみに似た例として、RFC 5737では例示用のIPアドレスが定義されている）。\nRFC 6761: Special-Use Domain Names では、これらの挙動がより詳細に定義され…",
+          "link": "https://blog.3qe.us/entry/2025/07/02/170320",
+          "publishedOn": "2025-07-02T08:03:20.000Z",
+          "wordCount": null,
+          "title": "テスト用に適当なドメインを注入したいときは .invalid を使うとよさそう",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398497449220/1751443400",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398497449220/1751443400"
+        },
+        {
           "id": "hatenablog://entry/6802418398488415740",
           "author": null,
           "description": "GitHubとかで、タグがつけられたら特定のアクションを実行する、といったワークフローを仕込んでいるときに、うまく動かなかったので再度走らせたい、みたいなことがあって(やんごとない理由でworkflow_dispatchはない)、なんとかしてタグをつけなおしたメモ。\nまずリモートにあるタグを破壊する。\n% git push --delete vx.y.z\n\n\n\n次にローカルにあるタグも破壊する。\n% git tag --delete vx.y.z\n\n\n\nタグをつけなおす。\n% git tag vx.y.z\n\n\n\nタグをpushする。\n% git push --tags\n\n\n\nこれで手元とリモート上のタグが移動する。",

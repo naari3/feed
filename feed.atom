@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-02T08:02:04.900Z</updated>
+    <updated>2025-07-02T09:02:53.058Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[テスト用に適当なドメインを注入したいときは .invalid を使うとよさそう]]></title>
+        <id>hatenablog://entry/6802418398497449220</id>
+        <link href="https://blog.3qe.us/entry/2025/07/02/170320"/>
+        <updated>2025-07-02T08:03:20.000Z</updated>
+        <summary type="html"><![CDATA[tl;dr
+.invalidは絶対にリクエストが飛ばないのでおすすめ
+あらすじ
+書いていたコードは、とあるミドルウェア向けに内部利用するURLを環境変数で受け取るようになっていた。普段は実際の内部のURLが書かれているのだが、テスト時には以下のようにダミーを設定していた:
+FOOBAR_EXTERNAL_URL="https://example.com/foobardummy"
+テストではこのURLを利用しないのだが、内部で環境変数のバリデーションを行っている都合上、とりあえず適当なURLを指定しなければ起動してくれないから、こうなっていた。重ねて言うが、実際はこの環境変数を利用していないのでこれでいい。
+しかしこれだと、うっかり内部の様子がおかしくなったりエンジニアが狂ってしまった場合に、example.comに本当にアクセスしてしまう。なおかつ、セキュリティ上重要なミドルウェアやサービスを想定したURLだった場合には、あまりよろしくないデータが実在のホストに飛んでしまう。 これらが同時に発生する確率は低いものの、いずれにせよ意図しない形でのデータ送信の余地は減らしたい。
+RFC 2606 / RFC 6761
+RFC 2606: Reserved Top Level DNS Names では、いくつかのTLDを予約している。特殊な用途では、これらを使うのが賢い。
+.test
+.example
+.invalid
+.localhost
+例えば、公共掲示物などでドメインの例として実在のドメインを書いてしまったら実在の持ち主に迷惑がかかるから、.example.comなどを使うべきである（ちなみに似た例として、RFC 5737では例示用のIPアドレスが定義されている）。
+RFC 6761: Special-Use Domain Names では、これらの挙動がより詳細に定義され…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【バジルレシピまとめ！】「ナンプラー不要のガパオライス」や「バジルおひたし」でバジルをおいしく手軽にモリモリ食べる！]]></title>
         <id>hatenablog://entry/6802418398497354014</id>
