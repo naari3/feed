@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398498462521",
+          "author": null,
+          "description": "ゲームボーイのeverdrive/ezflash jrでアクセス可能のようです。APIを用意していてエラい！\nhttps://github.com/untoxa/VGM_player/",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/03/142301",
+          "publishedOn": "2025-07-03T05:23:01.000Z",
+          "wordCount": 465,
+          "title": "ゲームボーイVGMプレイヤー",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398498462521/1751520510",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398498462521/1751520510"
+        },
+        {
           "id": "hatenablog://entry/6802418398497755464",
           "author": null,
           "description": "なかなか取れなかったバグだったのですけど、そろそろネタにしてもいいかなあということで書かせてもらいます。実はviper v16やgtsにこっそりfixかなぁというコードを入れてて、今日まで不具合報告がないから問題ないだろうということでヨシとします。ヨシ！。前は全てのサウンドレジスタを0x00クリアしていたのですけどこれは間違いで、一部発音しなくなる不具合があります。正しくはこちらで発音問題は修正されました。某有名サウンドドライバの逆汗データなので間違いないと思います。\n*(vu8*)(REG_BASE + 0x63) = 0x08;\t\t// NR12\n*(vu8*)(REG_BASE + 0x65) = 0x80;\t\t// NR14\n*(vu8*)(REG_BASE + 0x69) = 0x08;\t\t// NR22\n*(vu8*)(REG_BASE + 0x6d) = 0x80;\t\t// NR24\n*(vu8*)(REG_BASE + 0x70) = 0x00;\t\t// NR30\n*(vu8*)(REG_BASE + 0x79) = 0x08;\t\t// NR42\n*(vu8*)(REG_BASE + 0x7d) = 0x80;\t\t// NR44\n*(vu8*)(REG_BASE + 0x80) = 0x77;\t\t// NR50",
