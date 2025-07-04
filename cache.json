@@ -5406,6 +5406,16 @@
       "siteUrl": "https://note.com/ecolidelvsvc11",
       "articles": [
         {
+          "id": "https://note.com/ecolidelvsvc11/n/na61ad9d86a97",
+          "author": null,
+          "description": "After Effects契約\n続きをみる",
+          "link": "https://note.com/ecolidelvsvc11/n/na61ad9d86a97",
+          "publishedOn": "2025-07-04T15:54:49.000Z",
+          "wordCount": null,
+          "title": "最近10",
+          "imageUrl": null
+        },
+        {
           "id": "https://note.com/ecolidelvsvc11/n/n8f727eae30d6",
           "author": null,
           "description": "以下の行為を自分がしないように覚えておくため、書き起こします。\n禁止事項は随時更新していく予定。\n\n続きをみる",
@@ -6675,6 +6685,21 @@
       "feedUrl": "https://blog.3qe.us/rss",
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398499883963",
+          "author": null,
+          "description": "AI Agentの叛逆により、ホームディレクトリを破壊された人が話題となった。\n\nん？え？は？何してるの？ pic.twitter.com/QaDkToek4P\n— /mugisus/g (@mugisus) 2025年7月1日\n   \nかわいそうに。AIはこういうとき全く躊躇なく余計なことをする*1ので、自分も閉口することがある。明日は我が身ということで、叛逆に備える方法を探る必要がある。\nところで、環境の隔離というと最近はすぐコンテナが出てくるけれど、コンテナみたいな大仰なものを使わなくとも、実行するプロセスに強制的なアクセス制御をかけて特定のディレクトリにしか書き込めないようにするグッズがいろいろあって、例えばSELinuxやAppArmorといったソフトウェアを利用できる。これらは多くのディストリビューションにデフォルトで入っており、人知れずお前らの暮らしを守っている。\n今回はAppArmorを使って、Claude Codeのアクセス制御を設定し、プロジェクトディレクトリの中でだけ暴れられる内弁慶AIにしてやろう。\napparmor.net\nちなみにAppArmorを思い出したのはこのツイートがきっかけ。\n\nSELinux とか AppArmor とか誰も言い出さないので禁句なのかなと思ってた。 https://t.co/7IJ7mBU1Kv\n— Masami HIRATA (@msmhrt) 2025年7月3日\n   \nAppArmor インストール\nいまどきのたいていのLinuxディストリビューションでは最初からAppArmorは動作しているので、インストールは不要である。\nプロファイル作成\nAppArmorは、バイナリごとにプロファイルというものを作成することでアクセスコントロールを発動させる。AppArmorは、バイナリに対するプロファイルを覚えており、バイ…",
+          "link": "https://blog.3qe.us/entry/2025/07/05/001037",
+          "publishedOn": "2025-07-04T15:10:37.000Z",
+          "wordCount": null,
+          "title": "Claude Code くんのホームディレクトリ破壊を AppArmor で阻止する",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/0f457dc3bb3bc48ecc34e319f4903d7edf29683c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250704%2F20250704235605.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0f457dc3bb3bc48ecc34e319f4903d7edf29683c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250704%2F20250704235605.png"
+        },
         {
           "id": "hatenablog://entry/6802418398497449220",
           "author": null,

@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-04T15:01:40.323Z</updated>
+    <updated>2025-07-04T16:02:04.966Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[最近10]]></title>
+        <id>https://note.com/ecolidelvsvc11/n/na61ad9d86a97</id>
+        <link href="https://note.com/ecolidelvsvc11/n/na61ad9d86a97"/>
+        <updated>2025-07-04T15:54:49.000Z</updated>
+        <summary type="html"><![CDATA[After Effects契約
+続きをみる]]></summary>
+        <author>
+            <name>大腸菌デリバリーサービス</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Claude Code くんのホームディレクトリ破壊を AppArmor で阻止する]]></title>
+        <id>hatenablog://entry/6802418398499883963</id>
+        <link href="https://blog.3qe.us/entry/2025/07/05/001037"/>
+        <updated>2025-07-04T15:10:37.000Z</updated>
+        <summary type="html"><![CDATA[AI Agentの叛逆により、ホームディレクトリを破壊された人が話題となった。
+
+ん？え？は？何してるの？ pic.twitter.com/QaDkToek4P
+— /mugisus/g (@mugisus) 2025年7月1日
+   
+かわいそうに。AIはこういうとき全く躊躇なく余計なことをする*1ので、自分も閉口することがある。明日は我が身ということで、叛逆に備える方法を探る必要がある。
+ところで、環境の隔離というと最近はすぐコンテナが出てくるけれど、コンテナみたいな大仰なものを使わなくとも、実行するプロセスに強制的なアクセス制御をかけて特定のディレクトリにしか書き込めないようにするグッズがいろいろあって、例えばSELinuxやAppArmorといったソフトウェアを利用できる。これらは多くのディストリビューションにデフォルトで入っており、人知れずお前らの暮らしを守っている。
+今回はAppArmorを使って、Claude Codeのアクセス制御を設定し、プロジェクトディレクトリの中でだけ暴れられる内弁慶AIにしてやろう。
+apparmor.net
+ちなみにAppArmorを思い出したのはこのツイートがきっかけ。
+
+SELinux とか AppArmor とか誰も言い出さないので禁句なのかなと思ってた。 https://t.co/7IJ7mBU1Kv
+— Masami HIRATA (@msmhrt) 2025年7月3日
+   
+AppArmor インストール
+いまどきのたいていのLinuxディストリビューションでは最初からAppArmorは動作しているので、インストールは不要である。
+プロファイル作成
+AppArmorは、バイナリごとにプロファイルというものを作成することでアクセスコントロールを発動させる。AppArmorは、バイナリに対するプロファイルを覚えており、バイ…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記250704]]></title>
         <id>https://note.com/hercelot/n/n7c60b807133d</id>
