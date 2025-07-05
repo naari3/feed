@@ -1118,21 +1118,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398360989320/1745157746"
-        },
-        {
-          "id": "hatenablog://entry/6802418398342424623",
-          "author": null,
-          "description": "Google Search NavigatorというChrome拡張を作りました。 名前はすごい適当。\nGoogleの検索結果をVimっぽくキーボードで操作できるやつです。\ngithub.com\n元々、似たようなChrome拡張を使ってたんだけど、Chromeの最新の仕様変更に追従しなくなって動かなくなってしまった。めちゃくちゃ使っていたので諦めて自分で作ることにした。\nただ、作ったとはいっても実際はほとんどCursorに作ってもらった感じ。\n普段からVimを使っていると、Google検索のときにも手をキーボードから離したくなくなることがある。Vimiumも使っているけど、検索結果の1個1個にj/kでフォーカスして移動したい。広告とかサイトマップとかも飛ばしたい。\n折角なので元の拡張より機能を盛っていて、複数選択してまとめて開いたり、URLをコピー出来るようにしておいた。ちょっとだけ便利だと思う。",
-          "link": "https://blog.nishimu.land/entry/2025/04/06/203411?utm_source=feed",
-          "publishedOn": "2025-04-06T11:34:11.000Z",
-          "wordCount": 243,
-          "title": "Google検索をVimっぽく操作できるChrome拡張を作った",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/bf75e43b8f16021d3167f3bb82a07a50f5059fee/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20250406%2F20250406203136.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/bf75e43b8f16021d3167f3bb82a07a50f5059fee/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20250406%2F20250406203136.png"
         }
       ]
     },
@@ -7251,16 +7236,6 @@
           "publishedOn": "2025-04-08T09:07:18.000Z",
           "wordCount": null,
           "title": "Cursorのコード編集はClineよりどの程度早いのか？",
-          "imageUrl": null
-        },
-        {
-          "id": "67f264c12841180001d5cf27",
-          "author": "laiso",
-          "description": "Claude 3.7 Sonnetに代表される現在の主力なコーディングモデルやソフトウェア開発タスクの自動化に利用されるLLMは、",
-          "link": "https://blog.lai.so/sonnet-cutoff/",
-          "publishedOn": "2025-04-06T11:53:09.000Z",
-          "wordCount": 407,
-          "title": "React Router v7でコードを書いてくれSonnet",
           "imageUrl": null
         }
       ]
