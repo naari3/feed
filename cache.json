@@ -7335,6 +7335,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2025/07/05/confirm-pam/",
+          "author": null,
+          "description": "macOS で Touch ID を使った「人間の確認」ができるシンプルな CLI ツール confirm-pam を作りました。\nazu/confirm-pam: CLI tool for biometric authentication confirmation prompts\nこのツールを使うことで、AI Agent が任意のコマンドやスクリプトの実行する前に、Touch ID による生体認証を要求できます。\nコマンドラインから実行される処理に対して、人間による明示的な確認ステップを追加する仕組みを提供します。\nconfirm-pam とは\nconfirm-pam は、macOS の Touch ID を使った生体認証による確認プロンプトを提供する CLI ツールです。\n主な特徴\nTouch ID 認証をサポート\n認証ダイアログに任意のメッセージを表示\n0（成功）、1（失敗）、2（エラー）の 3 つの終了コードで結果を判定\nRust で書かれていて、現時点だと macOS のみ対応\n基本的な使い方は次のようになります。\n\n\n# 基本的な認証プロンプト\nconfirm-pam \"この操作を実行しますか？\"\n\n# 認証成功時の終了コードは0\necho $? # 0\n\n# 認証失敗時やキャンセル時の終了コードは1\n# Touch IDの認証を失敗またはキャンセルした場合\necho $? # 1\n\n\nインストール方法\nconfirm-pam はcrates.ioで公開されているため、cargo でインストールできます。\n\ncargo install confirm-pam\n\n\nまた、GitHub からソースコードをクローンしてビルドできます。\n\ngit clone https://github.com/azu/confirm-pam.git\ncd confirm-pam\nca…",
+          "link": "https://efcl.info/2025/07/05/confirm-pam/",
+          "publishedOn": "2025-07-05T06:30:00.000Z",
+          "wordCount": null,
+          "title": "AI Agentのコマンド実行にTouch IDを使った「人間の確認」を挟むCLIツール confirm-pam を作った",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2025/06/25/textlint-v15/",
           "author": null,
           "description": "textlint v15.0.0をリリースしました！\nRelease v15.0.0 · textlint/textlint\ntextlint v15.0.0 | textlint\ntextlint v15は、v12.3.0から非推奨としてマークされていた古いAPIをすべて削除するメジャーリリースです。\ntextlint v15.0.0の変更点\n主要な変更点は次の通りです。\nBreaking Changes\nNode.js 20+のサポート（Node.js 16,18はサポート終了\nTextLintEngineを削除 → createLinter()\nTextFixEngineを削除 → createLinter()\nTextLintCoreを削除 → createLinter()または@textlint/kernel\ntextlint（シングルトンインスタンス）を削除 → createLinter()\ncreateFormatterを削除 → loadFormatter()を\nNode.js 20以上が必要\ntextlint v15では、Node.js 20.0.0以上が必要になりました。\nNodejs 18はEOL(End of Life)となっているため、Node.js 20以上を使用する必要があります。\nhttps://nodejs.org/en/about/previous-releases\n非推奨APIの削除\ntextlintパッケージをNode.jsモジュールとして利用する場合のみ影響を受ける変更です。\ntextlint v15では、非推奨となっていた次のAPIが完全に削除されました。\n移行ガイドは次のページに用意しています。\nMigration Guide to textlint v15 | textlint\nTextLintEngine → createL…",
@@ -8873,16 +8883,6 @@
           "publishedOn": "2025-04-08T01:05:13.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2025.4.8",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43367",
-          "author": "mamosuke",
-          "description": "OrbisPro Beta v0.3.1,DirectPackageInstaller 8.2.0,NX Activity Log v1.5.5,FATXplorer v3.0.0.26690 (Beta 34),SpeccyDS Version 0.6,shadPS4 Pre-release-shadPS4-2025-04-05-0c6f2b4,PCSX2 v2.3.260,Xenia c4f1bf2_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2025.4.7 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025040743367/",
-          "publishedOn": "2025-04-06T21:26:21.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.4.7",
           "imageUrl": null
         }
       ]

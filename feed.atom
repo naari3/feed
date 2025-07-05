@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-05T09:01:50.361Z</updated>
+    <updated>2025-07-05T10:01:46.543Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -39,6 +39,51 @@ EarFunは中国のメーカーです。他にも耳掛けタイプの開放型�
 一番大事な音質です。先に言っておくと、値段考…]]></summary>
         <author>
             <name>nomolkのブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI Agentのコマンド実行にTouch IDを使った「人間の確認」を挟むCLIツール confirm-pam を作った]]></title>
+        <id>https://efcl.info/2025/07/05/confirm-pam/</id>
+        <link href="https://efcl.info/2025/07/05/confirm-pam/"/>
+        <updated>2025-07-05T06:30:00.000Z</updated>
+        <summary type="html"><![CDATA[macOS で Touch ID を使った「人間の確認」ができるシンプルな CLI ツール confirm-pam を作りました。
+azu/confirm-pam: CLI tool for biometric authentication confirmation prompts
+このツールを使うことで、AI Agent が任意のコマンドやスクリプトの実行する前に、Touch ID による生体認証を要求できます。
+コマンドラインから実行される処理に対して、人間による明示的な確認ステップを追加する仕組みを提供します。
+confirm-pam とは
+confirm-pam は、macOS の Touch ID を使った生体認証による確認プロンプトを提供する CLI ツールです。
+主な特徴
+Touch ID 認証をサポート
+認証ダイアログに任意のメッセージを表示
+0（成功）、1（失敗）、2（エラー）の 3 つの終了コードで結果を判定
+Rust で書かれていて、現時点だと macOS のみ対応
+基本的な使い方は次のようになります。
+
+
+# 基本的な認証プロンプト
+confirm-pam "この操作を実行しますか？"
+
+# 認証成功時の終了コードは0
+echo $? # 0
+
+# 認証失敗時やキャンセル時の終了コードは1
+# Touch IDの認証を失敗またはキャンセルした場合
+echo $? # 1
+
+
+インストール方法
+confirm-pam はcrates.ioで公開されているため、cargo でインストールできます。
+
+cargo install confirm-pam
+
+
+また、GitHub からソースコードをクローンしてビルドできます。
+
+git clone https://github.com/azu/confirm-pam.git
+cd confirm-pam
+ca…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -10546,17 +10591,6 @@ npm warn deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or
 npm warn deprecated superagent@3.8.3: Please upgrade to v9.0.0+ as we have fixed a public vulnerability with formidable dependency. Note that v9.0.0+ requires Node.js v14.18.0+. See …]]></summary>
         <author>
             <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.4.7]]></title>
-        <id>https://gamegaz.com/?p=43367</id>
-        <link href="https://gamegaz.com/2025040743367/"/>
-        <updated>2025-04-06T21:26:21.000Z</updated>
-        <summary type="html"><![CDATA[OrbisPro Beta v0.3.1,DirectPackageInstaller 8.2.0,NX Activity Log v1.5.5,FATXplorer v3.0.0.26690 (Beta 34),SpeccyDS Version 0.6,shadPS4 Pre-release-shadPS4-2025-04-05-0c6f2b4,PCSX2 v2.3.260,Xenia c4f1bf2_canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2025.4.7 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
