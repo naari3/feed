@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398503814273",
+          "author": null,
+          "description": "昨日の続きで作ってみる妄想だけしてみます・・・。\n■アマゾンに売っている最小構成のcpldボードを買う\n■オンボードに乗っているLEDでチカチカ確認\n■S29GL256S10TFI010、FM28V100-TGと2.54mmピッチ変換基盤を買う\ngithub.com\n■半田して配線してcpldを焼く\n■Arduino Duoを買う\n■GBAのカードリッジ端子を外に出すPCB基盤を作る\ngithub.com\n■GBA+PCB基板とcpld+部品を繋げる\n■最後にカードリッジ基盤をPCBに注文して完成",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/07/201911",
+          "publishedOn": "2025-07-07T11:19:11.000Z",
+          "wordCount": 478,
+          "title": "自作カードリッジ2",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398503814273/1751888713",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398503814273/1751888713"
+        },
+        {
           "id": "hatenablog://entry/6802418398502522445",
           "author": null,
           "description": "github.com\n時間の問題だと思いますので話してしまいますけど去年からオープンプロジェクトがあったりします。EasyEDAでパーツ取り付けもやってくれそうです。JTAGはカードリッジピンと共有していないのでプローブ使えば書き込みいける？作法的な抵抗？がいくつか足らなそうですけどうまく行くかはわからないです。",
@@ -8946,16 +8961,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2025.4.10",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43378",
-          "author": "mamosuke",
-          "description": "Send-Payload-to-PS 4.0,PS5 Payloads 1.8a MOD,ARK-4 v1744129976,XEB+ neutrino Launcher Plugin(xebplus-neutrino-loader-plugin) 2.8.4,NX Activity Log v1.5.6,shadPS4 Pre-release-shadPS4-2025-04-08-03b1fef,PCSX2 v2.3.261,PSRetrox,NetherSX2 Classic v2.0a,DSAdvance 1.2,FortPatcher-NX v20250408-f3765be→→→この記事の続きを読む\nGameGaz Daily 2025.4.9 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025040943378/",
-          "publishedOn": "2025-04-08T23:40:26.000Z",
-          "wordCount": 1724,
-          "title": "GameGaz Daily 2025.4.9",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },

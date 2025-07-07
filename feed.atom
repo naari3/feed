@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-07T11:02:00.419Z</updated>
+    <updated>2025-07-07T12:02:14.985Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[自作カードリッジ2]]></title>
+        <id>hatenablog://entry/6802418398503814273</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/07/07/201911"/>
+        <updated>2025-07-07T11:19:11.000Z</updated>
+        <summary type="html"><![CDATA[昨日の続きで作ってみる妄想だけしてみます・・・。
+■アマゾンに売っている最小構成のcpldボードを買う
+■オンボードに乗っているLEDでチカチカ確認
+■S29GL256S10TFI010、FM28V100-TGと2.54mmピッチ変換基盤を買う
+github.com
+■半田して配線してcpldを焼く
+■Arduino Duoを買う
+■GBAのカードリッジ端子を外に出すPCB基盤を作る
+github.com
+■GBA+PCB基板とcpld+部品を繋げる
+■最後にカードリッジ基盤をPCBに注文して完成]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2025年7月第1週〕]]></title>
         <id>hatenablog://entry/6802418398502945891</id>
@@ -10663,17 +10683,6 @@ https://rubyonrails.org/foundation
 RubyKaigi は今年も面白そうなトークが目白押しとなっており、個人的にも楽しみにしています。叶うことなら 3 体に分身して 3 トラック全部聞きたい……。そしてこの時期、愛媛では鯛が特に美味しいらしく、そちらにも興味津々です。もう待ちきれません。それではまた来週、愛媛でお会いいたしましょう！]]></summary>
         <author>
             <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.4.9]]></title>
-        <id>https://gamegaz.com/?p=43378</id>
-        <link href="https://gamegaz.com/2025040943378/"/>
-        <updated>2025-04-08T23:40:26.000Z</updated>
-        <summary type="html"><![CDATA[Send-Payload-to-PS 4.0,PS5 Payloads 1.8a MOD,ARK-4 v1744129976,XEB+ neutrino Launcher Plugin(xebplus-neutrino-loader-plugin) 2.8.4,NX Activity Log v1.5.6,shadPS4 Pre-release-shadPS4-2025-04-08-03b1fef,PCSX2 v2.3.261,PSRetrox,NetherSX2 Classic v2.0a,DSAdvance 1.2,FortPatcher-NX v20250408-f3765be→→→この記事の続きを読む
-GameGaz Daily 2025.4.9 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
