@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-08T00:04:01.876Z</updated>
+    <updated>2025-07-08T01:29:40.676Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2025.7.8]]></title>
+        <id>https://gamegaz.com/?p=43901</id>
+        <link href="https://gamegaz.com/2025070843901/"/>
+        <updated>2025-07-08T01:11:57.000Z</updated>
+        <summary type="html"><![CDATA[Switch 2のGPUはXbox Series Sに近くCPUはPS4に近い, Laps3c0re,ps5-bdjb-modified-ISOs v1.19,PS5-BDJ-HEN-loader 2.2b,ps4-hen-plugins Build b48,ps4-hen pre-release-main-130,AutoPlugin II v2.16,ARK-4 v1751909008,DSAdvance 1.4,Ultrahand Overlay 1.9.10,Parallel Launcher v8.2.1,shadPS4 Pre-release-shadPS4-2025-07-07-ddede4a,PCSX2 v2.5.43,DracoDS 0.7→→→この記事の続きを読む
+GameGaz Daily 2025.7.8 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Karte.172 私たちは振り回される]]></title>
+        <id>323334</id>
+        <link href="https://championcross.jp/episodes/4f9d163a1cada/?utm_source=rss&amp;utm_medium=referral"/>
+        <updated>2025-07-08T01:00:00.000Z</updated>
+        <author>
+            <name>チャンピオンクロス</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vibe Coding での挑戦、APIゲートウェイの制作]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=31665</id>
@@ -10658,40 +10678,6 @@ GameGaz Daily 2025.4.10 first appeared on 大人のためのゲーム講座.]]><
 そんなに俺はどこかで傷付いているのか、と思う。なんでそんなに元気がないのか。何に苛立ち、何に復讐したいのか。何に決着を付けたいのか。何を卑下し、何に拗ねているのか。いつから私は私を嫌いになるようになったのか。]]></summary>
         <author>
             <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[無題3]]></title>
-        <id>hatenablog://entry/6802418398343223963</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/04/09/214857"/>
-        <updated>2025-04-09T12:48:57.000Z</updated>
-        <summary type="html"><![CDATA[結局内部解析しているですやん、私・・・。この方面の忍耐力がないものですから、あんまりやりたくなかったりします。とりあえずnocdパッチ当ててたまたま見つけたデバッグログ機能を使ってみました。
-修正差分版 (70KB) 2003/05/03
-SYSTEM.exe
-1020 83 -> C3
-116A 75 -> EB
-
-ログ：
-SCENE 0 Start
-ofs 0 : !p
-ofs 6 : !t
-ofs 11 : !p
-ofs 16 : #W
-ofs 19 : !g
-ofs 1d : #t
-ofs 21 : #W
-ofs 24 : !g
-ofs 28 : #t
-ofs 2c : !j
-SCENE 1 Start
-ofs 0 : !c
-ofs 2 : !p
-ofs 7 : !p
-・・・以下略
-
-スクリプトファイルのオフセットとコマンドだけ表示しています。バイト境界がわかるのがポイントですねー。できればもう少し詳細な情報がほしかったです。コマンド命令のswitch分岐は0x41316F。まず「! # [」などで区分けして、さらにサブがある感じでした。必要最低限だけ実装しようかなあ。今月は解析に時間かかりそうです。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

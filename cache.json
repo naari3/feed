@@ -689,21 +689,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398343478079/1744286399"
-        },
-        {
-          "id": "hatenablog://entry/6802418398343223963",
-          "author": null,
-          "description": "結局内部解析しているですやん、私・・・。この方面の忍耐力がないものですから、あんまりやりたくなかったりします。とりあえずnocdパッチ当ててたまたま見つけたデバッグログ機能を使ってみました。\n修正差分版 (70KB) 2003/05/03\nSYSTEM.exe\n1020 83 -> C3\n116A 75 -> EB\n\nログ：\nSCENE 0 Start\nofs 0 : !p\nofs 6 : !t\nofs 11 : !p\nofs 16 : #W\nofs 19 : !g\nofs 1d : #t\nofs 21 : #W\nofs 24 : !g\nofs 28 : #t\nofs 2c : !j\nSCENE 1 Start\nofs 0 : !c\nofs 2 : !p\nofs 7 : !p\n・・・以下略\n\nスクリプトファイルのオフセットとコマンドだけ表示しています。バイト境界がわかるのがポイントですねー。できればもう少し詳細な情報がほしかったです。コマンド命令のswitch分岐は0x41316F。まず「! # [」などで区分けして、さらにサブがある感じでした。必要最低限だけ実装しようかなあ。今月は解析に時間かかりそうです。",
-          "link": "https://akkera102.hatenablog.com/entry/2025/04/09/214857",
-          "publishedOn": "2025-04-09T12:48:57.000Z",
-          "wordCount": 528,
-          "title": "無題3",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/84ac19fc2be7fd2a1e19a010f70c6c6e43f90246/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250409%2F20250409215259.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/84ac19fc2be7fd2a1e19a010f70c6c6e43f90246/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250409%2F20250409215259.png"
         }
       ]
     },
@@ -7649,6 +7634,16 @@
       "siteUrl": "https://gamegaz.com",
       "articles": [
         {
+          "id": "https://gamegaz.com/?p=43901",
+          "author": "mamosuke",
+          "description": "Switch 2のGPUはXbox Series Sに近くCPUはPS4に近い, Laps3c0re,ps5-bdjb-modified-ISOs v1.19,PS5-BDJ-HEN-loader 2.2b,ps4-hen-plugins Build b48,ps4-hen pre-release-main-130,AutoPlugin II v2.16,ARK-4 v1751909008,DSAdvance 1.4,Ultrahand Overlay 1.9.10,Parallel Launcher v8.2.1,shadPS4 Pre-release-shadPS4-2025-07-07-ddede4a,PCSX2 v2.5.43,DracoDS 0.7→→→この記事の続きを読む\nGameGaz Daily 2025.7.8 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025070843901/",
+          "publishedOn": "2025-07-08T01:11:57.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.7.8",
+          "imageUrl": null
+        },
+        {
           "id": "https://gamegaz.com/?p=43893",
           "author": "mamosuke",
           "description": "Nintendo Switch Onlineタイトル追加か,kstuff v1.6,ps4-hen pre-release-main-124,PS4HEN v2.2.0 BETA pre-release-main-5,GoldHEN Cheats PS4 PKG (GoldHen Cheats PKG) v06.07.25,AutoPlugin II v2.15,ARK-4 v1751842999,Ultrahand Overlay 1.9.9,stroopwafel v1.4,wafel_sd_usb v2.6,libogc 2.12.2,shadPS4 v.0.10.0,PCSX2 v2.5.41,Mesen2 2.1.1→→→この記事の続きを読む\nGameGaz Daily 2025.7.7 first appeared on 大人のためのゲーム講座.",
@@ -9068,6 +9063,16 @@
       "feedUrl": "https://championcross.jp/series/899dda204c3f2/rss",
       "siteUrl": "https://championcross.jp/series/899dda204c3f2",
       "articles": [
+        {
+          "id": "323334",
+          "author": "チャンピオンクロス",
+          "description": "",
+          "link": "https://championcross.jp/episodes/4f9d163a1cada/?utm_source=rss&utm_medium=referral",
+          "publishedOn": "2025-07-08T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Karte.172 私たちは振り回される",
+          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1751362920993_bokukoko_173.jpg"
+        },
         {
           "id": "318382",
           "author": "チャンピオンクロス",
