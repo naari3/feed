@@ -3374,6 +3374,21 @@
       "siteUrl": "https://rinsuki.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398505059742",
+          "author": null,
+          "description": "ChromeDriver とか Selenium なら pref で profile.default_content_setting_values.cookies を 2 にしたらいいのだが、Playwright はそれを指定できない。\nのでどうするかと言うと、プロファイルを保存するディレクトリを事前に作って設定ファイルを書いてから Playwright に渡す。\nimport { chromium } from \"playwright-core\"\nimport { mkdir, mkdtemp, writeFile, rm } from \"node:fs/promises\"\nimport assert from \"node:assert\"\nimport { join } from \"node:path\"\nimport { tmpdir } from \"node:os\"\n\nconst profileDir = await mkdtemp(join(tmpdir(), \"playwright-chromium-datadir\"))\nawait mkdir(`${profileDir}/Default`)\nawait writeFile(`${profileDir}/Default/Preferences`, JSON.stringify({\n  profile: {\n    default_content_setting_values: {\n      cookies: 2,\n    },\n  },\n}))\n\nconst context = await chromium.launchPersistentContext(profileDir, {\n  channel: \"chrome\",\n})\n\ntry {\n  const page = await context.newPage()\n  await page.goto(\"https://example.com/\")\n  await page.waitForLoadState(\"load\")\n  await page.evaluate(() => document.cookie = \"a=b\")\n  // Cookie の保存が無効化されているので document.cookie が空になる\n  assert.strictEqual(await page.evaluate(() => document.cookie), \"\")\n} finally {\n  // ディレクトリを外部から渡した場合は Playwright が後始末をしてくれないので自分でする\n  await context.close().finally(() => rm(profileDir, { recursive: true }))\n}\n\n\n\n後始末をしないとゴミファイルが残ることに注意。",
+          "link": "https://rinsuki.hatenablog.jp/entry/2025/07/08/202428",
+          "publishedOn": "2025-07-08T11:24:28.000Z",
+          "wordCount": null,
+          "title": "Playwright で Chromium 系ブラウザのサイトデータ (Cookieとか) の保存を無効化する",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398505059742/1751973868",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398505059742/1751973868"
+        },
+        {
           "id": "hatenablog://entry/6802418398396937946",
           "author": null,
           "description": "TL;DR: Godot 4.4 以上にアップデートして、Noto Sans CJK を落としてOSに入れる。Google Fonts で落とせる Noto Sans JP ではダメなので注意！\nhttps://github.com/notofonts/noto-cjk/releases?q=sans&expanded=true で一番上に出てくる「Noto Sans CJK Version 〜〜」 の Assets を押して開き、「Language Specific OTFs Japanese (日本語)」を押す。\n\nすると なんちゃら_NotoSansCJKjp.zip が降ってくるので、その中の NotoSansCJKjp-なんちゃら.otf を全部インストールする (全部じゃなくていい気はするが、まあ……)\nMacなら複数選択して開くと一回でインストールできるのでおすすめ。\n\nで、インストールできたら Godot を再起動すると反映されるはず。\nbefore\nafter\n\n\n\n\n\n\n\n\n\n\n\n普通にシステムフォント使えよ……と思わなくもないけど、まあ do not want to select a random system font to keep UI style consistent.1 らしいんで……\nhttps://github.com/godotengine/godot/pull/96850↩",
@@ -6561,16 +6576,6 @@
           "wordCount": null,
           "title": "おすべり君　YouTubeアップしてます",
           "imageUrl": "https://i.ytimg.com/vi/zetYugjHWHE/0.jpg?width=800"
-        },
-        {
-          "id": "https://note.com/tarent26/n/n7cda131993e1",
-          "author": null,
-          "description": "1\n続きをみる",
-          "link": "https://note.com/tarent26/n/n7cda131993e1",
-          "publishedOn": "2025-04-09T23:41:01.000Z",
-          "wordCount": 1172,
-          "title": "「僕が火花を見て想い出したこと」その2",
-          "imageUrl": "https://assets.st-note.com/img/1744241865-XNqr0YzI6jbwpuEnQSfRlZeK.jpg?width=800"
         }
       ]
     },

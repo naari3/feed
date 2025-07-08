@@ -78,6 +78,62 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://rinsuki.hatenablog.jp/" target="_blank"
+              rel="noopener">rinsuki’s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Playwright で Chromium 系ブラウザのサイトデータ (Cookieとか) の保存を無効化する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://rinsuki.hatenablog.jp/entry/2025/07/08/202428" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ChromeDriver とか Selenium なら pref で profile.default_content_setting_values.cookies を 2 にしたらいいのだが、Playwright はそれを指定できない。
+のでどうするかと言うと、プロファイルを保存するディレクトリを事前に作って設定ファイルを書いてから Playwright に渡す。
+import { chromium } from &quot;playwright-core&quot;
+import { mkdir, mkdtemp, writeFile, rm } from &quot;node:fs/promises&quot;
+import assert from &quot;node:assert&quot;
+import { join } from &quot;node:path&quot;
+import { tmpdir } from &quot;node:os&quot;
+
+const profileDir &#x3D; await mkdtemp(join(tmpdir(), &quot;playwright-chromium-datadir&quot;))
+await mkdir(&#x60;${profileDir}/Default&#x60;)
+await writeFile(&#x60;${profileDir}/Default/Preferences&#x60;, JSON.stringify({
+  profile: {
+    default_content_setting_values: {
+      cookies: 2,
+    },
+  },
+}))
+
+const context &#x3D; await chromium.launchPersistentContext(profileDir, {
+  channel: &quot;chrome&quot;,
+})
+
+try {
+  const page &#x3D; await context.newPage()
+  await page.goto(&quot;https://example.com/&quot;)
+  await page.waitForLoadState(&quot;load&quot;)
+  await page.evaluate(() &#x3D;&gt; document.cookie &#x3D; &quot;a&#x3D;b&quot;)
+  // Cookie の保存が無効化されているので document.cookie が空になる
+  assert.strictEqual(await page.evaluate(() &#x3D;&gt; document.cookie), &quot;&quot;)
+} finally {
+  // ディレクトリを外部から渡した場合は Playwright が後始末をしてくれないので自分でする
+  await context.close().finally(() &#x3D;&gt; rm(profileDir, { recursive: true }))
+}
+
+
+
+後始末をしないとゴミファイルが残ることに注意。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398505059742/1751973868" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://staff.hatenablog.com/" target="_blank"
               rel="noopener">はてなブログ開発ブログ</a></h3>
           <section class="articles-per-source">
@@ -15404,32 +15460,6 @@ GameGaz Daily 2025.4.10 first appeared on 大人のためのゲーム講座.</sp
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2025-04-09">2025-04-09</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/tarent26" target="_blank"
-              rel="noopener">チャーミングじろうちゃん</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">「僕が火花を見て想い出したこと」その2</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/tarent26/n/n7cda131993e1" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>1
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/img/1744241865-XNqr0YzI6jbwpuEnQSfRlZeK.jpg?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-03-14">2025-03-14</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -17538,7 +17568,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-07-08T11:01:38.466Z">2025-07-08T11:01:38.466Z</time>
+    <time id="build-timestamp" datetime="2025-07-08T12:02:07.715Z">2025-07-08T12:02:07.715Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

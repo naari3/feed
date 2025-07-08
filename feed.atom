@@ -2,10 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-08T11:01:38.509Z</updated>
+    <updated>2025-07-08T12:02:07.754Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Playwright で Chromium 系ブラウザのサイトデータ (Cookieとか) の保存を無効化する]]></title>
+        <id>hatenablog://entry/6802418398505059742</id>
+        <link href="https://rinsuki.hatenablog.jp/entry/2025/07/08/202428"/>
+        <updated>2025-07-08T11:24:28.000Z</updated>
+        <summary type="html"><![CDATA[ChromeDriver とか Selenium なら pref で profile.default_content_setting_values.cookies を 2 にしたらいいのだが、Playwright はそれを指定できない。
+のでどうするかと言うと、プロファイルを保存するディレクトリを事前に作って設定ファイルを書いてから Playwright に渡す。
+import { chromium } from "playwright-core"
+import { mkdir, mkdtemp, writeFile, rm } from "node:fs/promises"
+import assert from "node:assert"
+import { join } from "node:path"
+import { tmpdir } from "node:os"
+
+const profileDir = await mkdtemp(join(tmpdir(), "playwright-chromium-datadir"))
+await mkdir(`${profileDir}/Default`)
+await writeFile(`${profileDir}/Default/Preferences`, JSON.stringify({
+  profile: {
+    default_content_setting_values: {
+      cookies: 2,
+    },
+  },
+}))
+
+const context = await chromium.launchPersistentContext(profileDir, {
+  channel: "chrome",
+})
+
+try {
+  const page = await context.newPage()
+  await page.goto("https://example.com/")
+  await page.waitForLoadState("load")
+  await page.evaluate(() => document.cookie = "a=b")
+  // Cookie の保存が無効化されているので document.cookie が空になる
+  assert.strictEqual(await page.evaluate(() => document.cookie), "")
+} finally {
+  // ディレクトリを外部から渡した場合は Playwright が後始末をしてくれないので自分でする
+  await context.close().finally(() => rm(profileDir, { recursive: true }))
+}
+
+
+
+後始末をしないとゴミファイルが残ることに注意。]]></summary>
+        <author>
+            <name>rinsuki’s blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Pocketのサービス提供終了により、ソーシャルパーツ設定から追加ボタンを削除しました]]></title>
         <id>hatenablog://entry/6802418398504819327</id>
@@ -10697,17 +10743,6 @@ PlayStation Portalアップデート バージョン5.0.0 ストリーミング�
 GameGaz Daily 2025.4.10 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「僕が火花を見て想い出したこと」その2]]></title>
-        <id>https://note.com/tarent26/n/n7cda131993e1</id>
-        <link href="https://note.com/tarent26/n/n7cda131993e1"/>
-        <updated>2025-04-09T23:41:01.000Z</updated>
-        <summary type="html"><![CDATA[1
-続きをみる]]></summary>
-        <author>
-            <name>チャーミングじろうちゃん</name>
         </author>
     </entry>
     <entry>
