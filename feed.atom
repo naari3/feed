@@ -2,10 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-09T12:02:24.904Z</updated>
+    <updated>2025-07-09T13:12:07.959Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Passkey への道 #3]]></title>
+        <id>https://blog.jxck.io/entries/2025-07-10/load-to-passkey-3.html</id>
+        <link href="https://blog.jxck.io/entries/2025-07-10/load-to-passkey-3.html"/>
+        <updated>2025-07-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[パスワードだけでの認証に限界が訪れ、TOTP を用いた 2FA が普及した。しかし、これでもまだ、全くもって不完全であることが、フィッシング詐欺の増加によって証明された。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[カーネルexploit対策か PlayStation 4 システムソフトウェア バージョン 12.52]]></title>
+        <id>https://gamegaz.com/?p=43911</id>
+        <link href="https://gamegaz.com/2025070943911/"/>
+        <updated>2025-07-09T13:07:29.000Z</updated>
+        <summary type="html"><![CDATA[SIEJAがPlayStation 4 システムソフトウェア バージョン12.52をリリースしていました。→→→この記事の続きを読む
+カーネルexploit対策か PlayStation 4 システムソフトウェア バージョン 12.52 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[由来]]></title>
+        <id>https://note.com/ecolidelvsvc11/n/n0fc8507db00c</id>
+        <link href="https://note.com/ecolidelvsvc11/n/n0fc8507db00c"/>
+        <updated>2025-07-09T12:20:00.000Z</updated>
+        <summary type="html"><![CDATA[音MAD作者の由来を伝える配信おーいこうlive.nicovideo.jp 
+こんにちは。大腸菌デリバリーサービスです。
+この放送で自分の名前がたくさん出てるらしい事をさっき知りました。
+自分の名前をたくさん挙げて頂きありがとうございました。
+放送のアンケートに倣って自分も回答してみようと思います。
+続きをみる]]></summary>
+        <author>
+            <name>大腸菌デリバリーサービス</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Devin vs Cursor Background Agents: 完全自律型AIエージェントの性能比較]]></title>
         <id>686de9b77dacf30001c69e7d</id>
@@ -10671,37 +10707,6 @@ Mini Trees - 残り半分
 GameGaz Daily 2025.4.11 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2025-04-10]]></title>
-        <id>hatenablog://entry/6802418398343399948</id>
-        <link href="https://commits.hatenablog.com/entry/2025/04/11/100000"/>
-        <updated>2025-04-11T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[zenn.dev
-Ridgepole で StrongMigrations を使えるかどうか試していた。結果としては、StrongMigrations にちょっとパッチを当てると使うことができそう。
-これ、真面目に使えるようにしてみても面白いかも知れない。
-手動で発火できるTracePointがあったら面白いのではないかと夢想している。
-次のような感じ。
-# Set trace handler
-trace = TracePoint::Manual.new(:my_event_name) do |tp|
-    p [tp.lineno, tp.defined_class, tp.method_id, tp.event]
-end
-
-trace.enable
-
-
-# Trigger the TracePoint
-TracePoint::Manual.trigger(:my_event_name)
-
-
-
-ActiveSupport::Notifications とかそういうのでいいじゃんとなりそうだけど、これの価値はTracePointであることであり、つまりハンドラ側でbindingを取ったりしていくらでも悪いことができて便利。
-TracePoint::Custom としているのは、複数箇所からこれを使いたいケースを考えてのこと。TracePoint.new(:manual) do |tp|のようにmanualイベントを決め打ちで作る実装も考えられるけど(そしてそれならすぐ実装できる気がするけど)、その場合複数ライブラリから手動発火したくなった時にコンフリクトして困りそう。
-なので既存のイベントとは完全に空間を分けたほうが良いのではと思っている。
-で、具体的なユースケースがあるのかというと、全く思い浮かんでいない。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>

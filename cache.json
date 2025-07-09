@@ -1621,21 +1621,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398343649255/1744419600"
-        },
-        {
-          "id": "hatenablog://entry/6802418398343399948",
-          "author": null,
-          "description": "zenn.dev\nRidgepole で StrongMigrations を使えるかどうか試していた。結果としては、StrongMigrations にちょっとパッチを当てると使うことができそう。\nこれ、真面目に使えるようにしてみても面白いかも知れない。\n手動で発火できるTracePointがあったら面白いのではないかと夢想している。\n次のような感じ。\n# Set trace handler\ntrace = TracePoint::Manual.new(:my_event_name) do |tp|\n    p [tp.lineno, tp.defined_class, tp.method_id, tp.event]\nend\n\ntrace.enable\n\n\n# Trigger the TracePoint\nTracePoint::Manual.trigger(:my_event_name)\n\n\n\nActiveSupport::Notifications とかそういうのでいいじゃんとなりそうだけど、これの価値はTracePointであることであり、つまりハンドラ側でbindingを取ったりしていくらでも悪いことができて便利。\nTracePoint::Custom としているのは、複数箇所からこれを使いたいケースを考えてのこと。TracePoint.new(:manual) do |tp|のようにmanualイベントを決め打ちで作る実装も考えられるけど(そしてそれならすぐ実装できる気がするけど)、その場合複数ライブラリから手動発火したくなった時にコンフリクトして困りそう。\nなので既存のイベントとは完全に空間を分けたほうが良いのではと思っている。\nで、具体的なユースケースがあるのかというと、全く思い浮かんでいない。",
-          "link": "https://commits.hatenablog.com/entry/2025/04/11/100000",
-          "publishedOn": "2025-04-11T01:00:00.000Z",
-          "wordCount": 498,
-          "title": "2025-04-10",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398343399948/1744333201",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398343399948/1744333201"
         }
       ]
     },
@@ -5473,6 +5458,16 @@
       "siteUrl": "https://note.com/ecolidelvsvc11",
       "articles": [
         {
+          "id": "https://note.com/ecolidelvsvc11/n/n0fc8507db00c",
+          "author": null,
+          "description": "音MAD作者の由来を伝える配信おーいこうlive.nicovideo.jp \nこんにちは。大腸菌デリバリーサービスです。\nこの放送で自分の名前がたくさん出てるらしい事をさっき知りました。\n自分の名前をたくさん挙げて頂きありがとうございました。\n放送のアンケートに倣って自分も回答してみようと思います。\n続きをみる",
+          "link": "https://note.com/ecolidelvsvc11/n/n0fc8507db00c",
+          "publishedOn": "2025-07-09T12:20:00.000Z",
+          "wordCount": null,
+          "title": "由来",
+          "imageUrl": null
+        },
+        {
           "id": "https://note.com/ecolidelvsvc11/n/n53b0cfe09045",
           "author": null,
           "description": "つまらない。\n絵を描いても、noteを書いても、ツイートをしても、壁に向かってケーキを投げている気分だ。\nつまらないね。\n続きをみる",
@@ -7120,6 +7115,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2025-07-10/load-to-passkey-3.html",
+          "author": null,
+          "description": "パスワードだけでの認証に限界が訪れ、TOTP を用いた 2FA が普及した。しかし、これでもまだ、全くもって不完全であることが、フィッシング詐欺の増加によって証明された。",
+          "link": "https://blog.jxck.io/entries/2025-07-10/load-to-passkey-3.html",
+          "publishedOn": "2025-07-10T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Passkey への道 #3",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2025-07-09/load-to-passkey-2.html",
           "author": null,
           "description": "「パスワード」が認証の最重要要素で、いかにそれを死守するかを「サービス側」「ユーザ側」双方で考え続けてきたのが、平成の認証だった。ところが、それは早々に破綻し、「パスワードだけでの認証」に限界が来た。そこで、導入されたのが二要素認証(2FA: 2-Factor Auth)だ。",
@@ -7683,6 +7688,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=43911",
+          "author": "mamosuke",
+          "description": "SIEJAがPlayStation 4 システムソフトウェア バージョン12.52をリリースしていました。→→→この記事の続きを読む\nカーネルexploit対策か PlayStation 4 システムソフトウェア バージョン 12.52 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025070943911/",
+          "publishedOn": "2025-07-09T13:07:29.000Z",
+          "wordCount": null,
+          "title": "カーネルexploit対策か PlayStation 4 システムソフトウェア バージョン 12.52",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=43908",
           "author": "mamosuke",
