@@ -7126,6 +7126,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2025-07-12/load-to-passkey-5.html",
+          "author": null,
+          "description": "Infostealer は、ユーザの権限でインストールされ、ユーザがアクセスできるあらゆる情報を盗んで去っていく。そこから、どんなに暗号化して保存しても、使用時には平文にしないといけない「パスワード」という文字列を守り抜くのは非常に難しい。であれば、最初から文字列に頼らなければ良い。それが WebAuthn と FIDO だった。",
+          "link": "https://blog.jxck.io/entries/2025-07-12/load-to-passkey-5.html",
+          "publishedOn": "2025-07-12T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Passkey への道 #5: 2FA/WebAuthn",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2025-07-11/load-to-passkey-4.html",
           "author": null,
           "description": "パスワードと TOTP の問題は、「人間が入力する必要がある」ことだった。対策は Autofill であり、そのためにもパスワードマネージャ相当が必要になる。では、パスワードマネージャを使っていれば、パスワードと TOTP で十分なのだろうか?",

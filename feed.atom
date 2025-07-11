@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-11T11:01:39.584Z</updated>
+    <updated>2025-07-11T12:02:24.371Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Passkey への道 #5: 2FA/WebAuthn]]></title>
+        <id>https://blog.jxck.io/entries/2025-07-12/load-to-passkey-5.html</id>
+        <link href="https://blog.jxck.io/entries/2025-07-12/load-to-passkey-5.html"/>
+        <updated>2025-07-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Infostealer は、ユーザの権限でインストールされ、ユーザがアクセスできるあらゆる情報を盗んで去っていく。そこから、どんなに暗号化して保存しても、使用時には平文にしないといけない「パスワード」という文字列を守り抜くのは非常に難しい。であれば、最初から文字列に頼らなければ良い。それが WebAuthn と FIDO だった。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[おじさん]]></title>
         <id>hatenablog://entry/6802418398507796444</id>
