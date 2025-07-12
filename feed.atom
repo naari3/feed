@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-12T10:01:44.710Z</updated>
+    <updated>2025-07-12T11:01:41.071Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[終末移植14]]></title>
+        <id>hatenablog://entry/6802418398508947456</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/07/12/190211"/>
+        <updated>2025-07-12T10:02:11.000Z</updated>
+        <summary type="html"><![CDATA[ん－地味な作業の連続です。一応、1ルートのエンディングまでは行きましたけど、なんというかバイナリをコネコネしているだけなんですよね・・・。事故がなければ今月中にGBA部分は終わりになると思います。音楽担当の進捗が気がかりですね・・・。
+todo
+
+・セーブロード
+・既読フラグ処理
+・オープニング
+・if thenネスト
+・call]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Passkey への道 #5: 2FA/WebAuthn]]></title>
         <id>https://blog.jxck.io/entries/2025-07-12/load-to-passkey-5.html</id>
