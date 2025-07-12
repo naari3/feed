@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-12T14:01:40.229Z</updated>
+    <updated>2025-07-12T15:01:39.302Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Passkey への道 #6: タブーを破った Apple]]></title>
+        <id>https://blog.jxck.io/entries/2025-07-13/load-to-passkey-6.html</id>
+        <link href="https://blog.jxck.io/entries/2025-07-13/load-to-passkey-6.html"/>
+        <updated>2025-07-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TOTP/WebAuthn は、バックアップコードの適切な保管方法が示されないまま、移行だけが推し進められた。YubiKey などの物理 Authenticator の扱いとして、「二本登録して、片方は普段使い、もう片方は貸金庫へ」などと、かなり無理のあるベストプラクティスが啓蒙されたりもしていた。それらをスマホに移行して、登録は便利だが壊したら詰むでは、ユーザは安心して使えない。いや、正確には「よくわからないまま使って、詰んでから Apple のサポートに連絡する」という状態だったのだろう。ここに解決策が提示されたのが、WWDC 2021 だった。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[終末移植14]]></title>
         <id>hatenablog://entry/6802418398508947456</id>
@@ -10405,50 +10415,6 @@ GameGaz Daily 2025.4.15 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>四角</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[今週のはてなブログランキング〔2025年4月第2週〕]]></title>
-        <id>hatenablog://entry/6802418398344375349</id>
-        <link href="https://blog.hatenablog.com/entry/2025/04/14/120000"/>
-        <updated>2025-04-14T03:00:00.000Z</updated>
-        <summary type="html"><![CDATA[はてなブログ独自の集計による人気記事のランキング。2025年4月6日（日）から2025年4月12日（土）〔2025年4月第2週〕のトップ30です*1。
-#
-    タイトル／著者とブックマーク
-    
-1
-    「S&P500は4200くらいまでは下がるべきだ」という話 - 頭の上にミカンをのせる
- by id:tyoshiki 
-    
-2
-    ドナルド・トランプを支援したビッグテックの効果的加速主義者は、50口径のスナイパーライフルで自分たちの足の指を一本一本しっかりと撃ち抜いた - YAMDAS現更新履歴
- by id:yomoyomo 
-    
-3
-    AIコードエディタCursor大活用！ ── Cursor Rules、MCP、エラー調査 - SmartHR Tech Blog
- by id:smarthr 
-    
-4
-    斗比主閲子『ふつうの会社員が投資の勉強をしてみたら資産が２億円になった話』 - 紙屋研究所
- by id:kamiyakenkyujo 
-    
-5
-    Reactで大量描画しても60fps出すためのパフォーマンスチューニング術 - SmartHR Tech Blog
- by id:smarthr 
-    
-6
-    レイ・ダリオ「実を言うと世界秩序はもうだめです。突然こんなこと言ってごめんね。 でも本当です。２、３日後にものすごく大きな関税の影響があります。 それが終わりの合図です。程なく大きめの経済崩壊が来るので気をつけて。 」 - 頭の上にミカンをのせる
- by id:tyoshiki 
-    
-7
-    NEXCO中日本管内で発生したETCの広域システム障害についてまとめてみた - piyolog
- by id:piyokango 
-    
-8
-    「誕生鮨」のネットロア解体 - 電脳塵芥
-…]]></summary>
-        <author>
-            <name>週刊はてなブログ</name>
         </author>
     </entry>
     <entry>
