@@ -7123,6 +7123,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2025-07-14/load-to-passkey-7.html",
+          "author": null,
+          "description": "Apple が突如発表した Passkey。実態は「WebAuthn の秘密鍵を iCloud で共有」するサービスだった。そして、業界は本格的な Password-Less に向けて進んでいく。",
+          "link": "https://blog.jxck.io/entries/2025-07-14/load-to-passkey-7.html",
+          "publishedOn": "2025-07-14T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Passkey への道 #7: そして Username-Less へ",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2025-07-13/load-to-passkey-6.html",
           "author": null,
           "description": "TOTP/WebAuthn は、バックアップコードの適切な保管方法が示されないまま、移行だけが推し進められた。YubiKey などの物理 Authenticator の扱いとして、「二本登録して、片方は普段使い、もう片方は貸金庫へ」などと、かなり無理のあるベストプラクティスが啓蒙されたりもしていた。それらをスマホに移行して、登録は便利だが壊したら詰むでは、ユーザは安心して使えない。いや、正確には「よくわからないまま使って、詰んでから Apple のサポートに連絡する」という状態だったのだろう。ここに解決策が提示されたのが、WWDC 2021 だった。",
