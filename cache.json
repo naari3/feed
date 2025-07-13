@@ -6726,6 +6726,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398510434833",
+          "author": null,
+          "description": "あらすじ\nMakefile as task runner に対しての意見\n顧客が本当に欲しいものは、ディレクトリレベルのエイリアスなんじゃないですか？\nAllyas: ディレクトリごとにエイリアスを張るツール\n$PATHを乗っ取る\n$0 hack\nシンボリックリンクの自動化\n設定ファイル\nあらすじ\nこういう記事を見た。\nzenn.dev\n僭越ながら要約すると、Makefileにタスクを書いてタスクランナーとして用いているとのこと。また、Makefileのコメントを拾ってドキュメンテーションを生成できるようにしたとのこと。\nMakefileをタスクランナー代わりに用いるのはよくあることだが、ドキュメンテーションを生成するようにしたところがおもしろポイントである。\nそして、この記事への批判文脈として以下の記事を見た（正確には、この記事を見てから上掲の記事を読んだ）。\nwww.takeokunn.org\nこれもまた僭越ながら要約させてもらうと、まずドキュメントはMakefileではなくREADME.mdとかに書くべきであるし、makeである必要性がないのならnpmなどが持っているタスクランナー機能を利用したら良いのでは？という話。そして、正規表現はメンテナンス性が低い、という主張である。\nMakefile as task runner に対しての意見\nMakefileでよく使うタスクを記述することはよく見る。自分もやったことがある。その上で、今のところこう思っている。\nまず、百も承知だろうが、Makefileはそういう用途のために開発されたわけではなく、元々の用途は「ファイルを作るためにコマンドの実行が必要で、それぞれに依存関係がある」というビルドである。この基本がズレているので、正規表現を利用してドキュメンテーションを行うというさらに手間のかかったことをしてしまう。本来の目的で…",
+          "link": "https://blog.3qe.us/entry/2025/07/14/000748",
+          "publishedOn": "2025-07-13T15:07:48.000Z",
+          "wordCount": 1545,
+          "title": "みんなが本当に欲しかったのはMakefileじゃなくてディレクトリレベルで管理できるエイリアスなのでは",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398510434833/1752419268",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398510434833/1752419268"
+        },
+        {
           "id": "hatenablog://entry/6802418398509338902",
           "author": null,
           "description": "import scalanative.runtime.filename\n\nfilename // => \"./target/scala-3.3.6/foobar\"\n\n\n\nいわゆる$0が得られる。\n (環境 Scala Native 0.5.7)",
