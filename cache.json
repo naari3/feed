@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398511577558",
+          "author": null,
+          "description": "身長もう少しあれば・・・。大回避行動不可避（メッセージ行１段下げる予定です。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/15/053151",
+          "publishedOn": "2025-07-14T20:31:51.000Z",
+          "wordCount": 462,
+          "title": "終末移植16",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/dd71b88cc26f9433ede62f344a0c65cc27c4e888/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250715%2F20250715052956.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/dd71b88cc26f9433ede62f344a0c65cc27c4e888/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250715%2F20250715052956.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398511142668",
           "author": null,
           "description": "todo\n・if thenネスト\n・デバッグ画面\n・オープニング\n\n済\n・call\n・セーブロード\n・既読フラグ処理\n休みの日はひたすらスクリプト変数の調査していました。しょぼい表ではありますけどこれだけで３，４時間かかったりします。いやー時間がとけるー。\n変数と値範囲\n\n[] 2  0-1  ラジオ放送（謎）\n[] 6  0-1  オープニング\n[] 7  0-1  月・教室～知裕と香織\n[] 8  0-1  月・屋上～「―おかえり」 受け止める\n[] 9  0-1  月・屋上～「―おかえり」 大回避行動\n\n[] 10 0-1  火・教室～淡霧な時間 教室にいる\n[] 11 0-1  火・教室～淡霧な時間 教室から出る\n[] 12 0-1  火・教室～淡霧な時間 屋上に出る\n[] 13 0-1  火・保健室～キャッチボール 図書室\n\n[] 14 0-1  水・教室～間延びした空間 教室にいる\n[] 15 0-1  水・教室～間延びした空間 教室を出る\n[] 16 0-7  香織　好感度\n[] 17 0-1  水・廊下～呼吸 図書室\n[] 18 0-1  水・廊下～呼吸 保健室\n[] 19 0-1  水・廊下～呼吸 屋上\n\n[] 20 0-7  歌奈　好感度\n[] 21 0-7  緑　好感度\n[] 22 0-8  いろは　好感度\n\n[] 23 0-1  木・教室～『逃げ』　このままいる\n[] 24 0-1  木・教室～『逃げ』　教室から出る\n[] 25 0-1  木・教室～『真面目』というラベル　教室を出る\n[] 26 0-1  木・グラウンド～重久と千絵子　それは違うと励ます\n[] 27 0-1  木・児童公園～多弘の悩み　はげます\n\n[] 28 0-1  歌奈H\n[] 29 0-1  緑H\n[] 30 0-1  いろはH\n[] 31 0-1  歌奈H\n\n[] 32 0-1  土・グラウンド～いつもの木の下で　重久千絵子\n[] 33 0-1  土・保健室～告白　多弘留希\nということで34個でu8ですね。デバッグ画面はこんな感じになる予定です。\n好感度、Ｈ告白フラグ\n\nＪＭＰ　０００\n香織　　１６：０　２８：０\n緑　　　２０：０　２９：０\nいろは　２１：０　３０：０\n歌奈　　２２：０　３１：０\n千絵子　２６：０　３２：０\n留希　　２７：０　３３：０",
@@ -2544,6 +2559,21 @@
       "feedUrl": "https://kougasetumei.hatenablog.com/rss",
       "siteUrl": "https://kougasetumei.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398511575625",
+          "author": null,
+          "description": "要約：なぜ、ぼくらはそれでもまんがを読むのか？\n高宮成河は「まんが」は面白いから読むのではなく、“まんがであること”自体が読む理由だと述べる。そうした意識を持つ自分たちを“純粋まんが世代”と位置づけ、「ぼくらはまんがであり、まんがはぼくらだ」とまで言い切る。作品の出来・不出来を超えて「まんが」であること自体が読む理由であり、まんがと無媒介に結びついたこの感覚は、マンガ世代を自認する一介のマニアに何ができるのかを取りまとめた「迷宮」のマニフェスト「マニア運動体論」の原型になったと推測される（この「マニア運動体論」は亜庭じゅんの主筆だが、執筆に際して高宮成河による助言も相当あったという）。\n①まんが批評への違和感から出発\n高宮は冒頭、「まんが批評なんて必要ない」とする大方のファンの声を紹介しつつ、自らが文字だらけの『まんがジャーナル』をつくる動機を説明する。\n批評を否定する声の裏には「今までの評論は面白くなかった」という不満があり、実際はファン同士が熱く語り合っている。そのことから、既存の評論とファンの実感との間にズレがあると主張する。\n②そのズレの正体：「純粋まんが世代」としての自覚\n評論家たちと自分たちの違いは、まんがを同じ意味で所有できていないことにある。\n高宮たちは「まんががオモシロイから読む」のではなく、「まんがだから読む」。優れているかどうかではなく、まんがであること自体が読む理由となっている。\n③「まんがこそ」という感覚：まんが化した精神の自覚\n彼らは、ある朝ふと、自分が「まんが的精神」に覆われていることに気づく。そして、まんがを読むというより、まんがそのものになっていると感じている。\nそうした感覚の中で彼らは、「まんが」という言語で構成された世界を内面化しており、それが彼らの現実＝「第二のリアリティ」を成している。\n④「第二のリアリティ」とは\nまんがについて語り…",
+          "link": "https://kougasetumei.hatenablog.com/entry/bokura-no-manga",
+          "publishedOn": "2025-07-14T20:15:26.000Z",
+          "wordCount": 543,
+          "title": "【ぼくらのまんがの起源】高宮成河「なぜ ぼくらは それでも まんがを読むのか？」（所載『まんがジャーナル』創刊号／1973年5月4日発行）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/8391d827e81f404abb37812d95eeb43d0f78018d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkougasetumei%2F20250715%2F20250715051208.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8391d827e81f404abb37812d95eeb43d0f78018d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkougasetumei%2F20250715%2F20250715051208.jpg"
+        },
         {
           "id": "hatenablog://entry/6802418398484343554",
           "author": null,
