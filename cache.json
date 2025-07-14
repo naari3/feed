@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398511142668",
+          "author": null,
+          "description": "todo\n・if thenネスト\n・デバッグ画面\n・オープニング\n\n済\n・call\n・セーブロード\n・既読フラグ処理\n休みの日はひたすらスクリプト変数の調査していました。しょぼい表ではありますけどこれだけで３，４時間かかったりします。いやー時間がとけるー。\n変数と値範囲\n\n[] 2  0-1  ラジオ放送（謎）\n[] 6  0-1  オープニング\n[] 7  0-1  月・教室～知裕と香織\n[] 8  0-1  月・屋上～「―おかえり」 受け止める\n[] 9  0-1  月・屋上～「―おかえり」 大回避行動\n\n[] 10 0-1  火・教室～淡霧な時間 教室にいる\n[] 11 0-1  火・教室～淡霧な時間 教室から出る\n[] 12 0-1  火・教室～淡霧な時間 屋上に出る\n[] 13 0-1  火・保健室～キャッチボール 図書室\n\n[] 14 0-1  水・教室～間延びした空間 教室にいる\n[] 15 0-1  水・教室～間延びした空間 教室を出る\n[] 16 0-7  香織　好感度\n[] 17 0-1  水・廊下～呼吸 図書室\n[] 18 0-1  水・廊下～呼吸 保健室\n[] 19 0-1  水・廊下～呼吸 屋上\n\n[] 20 0-7  歌奈　好感度\n[] 21 0-7  緑　好感度\n[] 22 0-8  いろは　好感度\n\n[] 23 0-1  木・教室～『逃げ』　このままいる\n[] 24 0-1  木・教室～『逃げ』　教室から出る\n[] 25 0-1  木・教室～『真面目』というラベル　教室を出る\n[] 26 0-1  木・グラウンド～重久と千絵子　それは違うと励ます\n[] 27 0-1  木・児童公園～多弘の悩み　はげます\n\n[] 28 0-1  歌奈H\n[] 29 0-1  緑H\n[] 30 0-1  いろはH\n[] 31 0-1  歌奈H\n\n[] 32 0-1  土・グラウンド～いつもの木の下で　重久千絵子\n[] 33 0-1  土・保健室～告白　多弘留希\nということで34個でu8ですね。デバッグ画面はこんな感じになる予定です。\n好感度、Ｈ告白フラグ\n\nＪＭＰ　０００\n香織　　１６：０　２８：０\n緑　　　２０：０　２９：０\nいろは　２１：０　３０：０\n歌奈　　２２：０　３１：０\n千絵子　２６：０　３２：０\n留希　　２７：０　３３：０",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/14/190905",
+          "publishedOn": "2025-07-14T10:09:05.000Z",
+          "wordCount": 630,
+          "title": "終末移植15",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398511142668/1752487801",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398511142668/1752487801"
+        },
+        {
           "id": "hatenablog://entry/6802418398508947456",
           "author": null,
           "description": "ん－地味な作業の連続です。一応、1ルートのエンディングまでは行きましたけど、なんというかバイナリをコネコネしているだけなんですよね・・・。事故がなければ今月中にGBA部分は終わりになると思います。音楽担当の進捗が気がかりですね・・・。\ntodo\n\n・セーブロード\n・既読フラグ処理\n・オープニング\n・if thenネスト\n・call",
@@ -9050,16 +9065,6 @@
           "wordCount": 1670,
           "title": "GameGaz Daily 2025.4.17",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43411",
-          "author": "mamosuke",
-          "description": "UnlockSwitchチームがNintendo Switch向けFlashcartのUnlockSwitchのSwitch 2対応の検討を示唆していました。→→→この記事の続きを読む\nNintendo Switch 2対応宣言?UnlockSwitchチームが示唆 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025041643411/",
-          "publishedOn": "2025-04-15T22:24:13.000Z",
-          "wordCount": null,
-          "title": "Nintendo Switch 2対応宣言?UnlockSwitchチームが示唆",
-          "imageUrl": null
         }
       ]
     },
