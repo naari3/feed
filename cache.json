@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398512209523",
+          "author": null,
+          "description": "ifネスト実装完了。やっててよかった言語処理系。すみません内容はしょぼいです。\n//---------------------------------------------------------------------------\nvoid NvPushIf(bool is)\n{\n\t_ASSERT(Nv.ifCnt+1 < NV_MAX_IF_CNT);\n\n\tNv.isIf[Nv.ifCnt++] = is;\n}\n//---------------------------------------------------------------------------\nvoid NvPopIf(void)\n{\n\t_ASSERT(Nv.ifCnt != 0);\n\n\tNv.ifCnt--;\n}\n//---------------------------------------------------------------------------\nvoid NvFlipIf(void)\n{\n\t_ASSERT(Nv.ifCnt != 0);\n\n\tNv.isIf[Nv.ifCnt-1] ^= 1;\n}\n//---------------------------------------------------------------------------\nbool NvIsIf(void)\n{\n\tif(Nv.ifCnt == 0)\n\t{\n\t\treturn true;\n\t}\n\n\ts32 i;\n\n\tfor(i=0; i<Nv.ifCnt; i++)\n\t{\n\t\tif(Nv.isIf[i] == false)\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t}\n\n\treturn true;\n}\n食べさせるスクリプトはこんな感じです。\n0A83 #i 28 = 1    if文\n0A8E #W 200       ウェイト\n0A91 !g 143       画像番号指定\n0A9C #l           ELSE\n0A9E #i 29 = 1\n0AA9 #W 200\n0AAC !g 144\n0AB7 #l\n0AB9 #i 30 = 1\n0AC4 #W 200\n0AC7 !g 145\n0AD2 #l\n0AD4 #i 31 = 1\n0ADF #W 200\n0AE2 !g 146\n0AED #l\n0AEF #W 200\n0AF2 !g 9\n0AFD #n           ENDIF\n0AFF #n\n0B01 #n\n0B03 #n",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/15/210200",
+          "publishedOn": "2025-07-15T12:02:00.000Z",
+          "wordCount": 594,
+          "title": "終末移植17",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398512209523/1752581181",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398512209523/1752581181"
+        },
+        {
           "id": "hatenablog://entry/6802418398511577558",
           "author": null,
           "description": "身長もう少しあれば・・・。大回避行動不可避（メッセージ行１段下げる予定です。",
@@ -7772,6 +7787,16 @@
       "siteUrl": "https://gamegaz.com",
       "articles": [
         {
+          "id": "https://gamegaz.com/?p=43936",
+          "author": "mamosuke",
+          "description": "SIEJAが、PS5システムソフトウェアアップデート バージョン25.05-11.60.00をリリースしていました。→→→この記事の続きを読む\nPS5システムソフトウェアアップデート バージョン 25.05-11.60.00 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025071543936/",
+          "publishedOn": "2025-07-15T13:12:15.000Z",
+          "wordCount": 1687,
+          "title": "PS5システムソフトウェアアップデート バージョン 25.05-11.60.00",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/PS5-SystemSoftware-update.png"
+        },
+        {
           "id": "https://gamegaz.com/?p=43932",
           "author": "mamosuke",
           "description": "任天堂が、Nintendo Switch/ Switch 2の本体のシステムを更新するNintendo Switch システムバージョン 20.2.0をリリースしていました。→→→この記事の続きを読む\nNintendo Switch 1&2 システムバージョン 20.2.0 first appeared on 大人のためのゲーム講座.",
@@ -9080,16 +9105,6 @@
           "wordCount": null,
           "title": "【噂】任天堂はSwitch 2 LiteやSwitch 2 有機ELモデルを視野にSwitch 2生産ライン選択？",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43418",
-          "author": "mamosuke",
-          "description": "ソニーが開発をしていると言われているPlayStation携帯機はXbox Series S以上PS5以下の性能になるようです。→→→この記事の続きを読む\n【噂】ソニーのPS携帯機はPS6世代 ただしスペック落とした仕様 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025041743418/",
-          "publishedOn": "2025-04-17T00:54:27.000Z",
-          "wordCount": 1654,
-          "title": "【噂】ソニーのPS携帯機はPS6世代 ただしスペック落とした仕様",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/playstation-logo.png"
         }
       ]
     },

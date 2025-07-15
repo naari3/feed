@@ -83,6 +83,19 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander" open>
+                <summary class="article-expander__title">PS5システムソフトウェアアップデート バージョン 25.05-11.60.00</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025071543936/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>SIEJAが、PS5システムソフトウェアアップデート バージョン25.05-11.60.00をリリースしていました。→→→この記事の続きを読む
+PS5システムソフトウェアアップデート バージョン 25.05-11.60.00 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                  <img src="https://gamegaz.com/wp-content/uploads/PS5-SystemSoftware-update.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
                 <summary class="article-expander__title">Nintendo Switch 1&amp;2 システムバージョン 20.2.0</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025071543932/" target="_blank"
                   rel="noopener">
@@ -103,6 +116,90 @@ Nintendo Switch 1&amp;2 システムバージョン 20.2.0 first appeared on 大
 GameGaz Daily 2025.7.15 first appeared on 大人のためのゲーム講座.</span>
                   </div>
                   <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">終末移植17</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/07/15/210200" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ifネスト実装完了。やっててよかった言語処理系。すみません内容はしょぼいです。
+//---------------------------------------------------------------------------
+void NvPushIf(bool is)
+{
+	_ASSERT(Nv.ifCnt+1 &lt; NV_MAX_IF_CNT);
+
+	Nv.isIf[Nv.ifCnt++] &#x3D; is;
+}
+//---------------------------------------------------------------------------
+void NvPopIf(void)
+{
+	_ASSERT(Nv.ifCnt !&#x3D; 0);
+
+	Nv.ifCnt--;
+}
+//---------------------------------------------------------------------------
+void NvFlipIf(void)
+{
+	_ASSERT(Nv.ifCnt !&#x3D; 0);
+
+	Nv.isIf[Nv.ifCnt-1] ^&#x3D; 1;
+}
+//---------------------------------------------------------------------------
+bool NvIsIf(void)
+{
+	if(Nv.ifCnt &#x3D;&#x3D; 0)
+	{
+		return true;
+	}
+
+	s32 i;
+
+	for(i&#x3D;0; i&lt;Nv.ifCnt; i++)
+	{
+		if(Nv.isIf[i] &#x3D;&#x3D; false)
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+食べさせるスクリプトはこんな感じです。
+0A83 #i 28 &#x3D; 1    if文
+0A8E #W 200       ウェイト
+0A91 !g 143       画像番号指定
+0A9C #l           ELSE
+0A9E #i 29 &#x3D; 1
+0AA9 #W 200
+0AAC !g 144
+0AB7 #l
+0AB9 #i 30 &#x3D; 1
+0AC4 #W 200
+0AC7 !g 145
+0AD2 #l
+0AD4 #i 31 &#x3D; 1
+0ADF #W 200
+0AE2 !g 146
+0AED #l
+0AEF #W 200
+0AF2 !g 9
+0AFD #n           ENDIF
+0AFF #n
+0B01 #n
+0B03 #n</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398512209523/1752581181" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -15406,19 +15503,6 @@ https://t.co/q1yA9x5Hm4 pic.twitter.com/MNs1yvIJNo
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">【噂】ソニーのPS携帯機はPS6世代 ただしスペック落とした仕様</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025041743418/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ソニーが開発をしていると言われているPlayStation携帯機はXbox Series S以上PS5以下の性能になるようです。→→→この記事の続きを読む
-【噂】ソニーのPS携帯機はPS6世代 ただしスペック落とした仕様 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                  <img src="https://gamegaz.com/wp-content/uploads/playstation-logo.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -17533,7 +17617,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-07-15T12:02:09.963Z">2025-07-15T12:02:09.963Z</time>
+    <time id="build-timestamp" datetime="2025-07-15T13:13:32.312Z">2025-07-15T13:13:32.312Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
