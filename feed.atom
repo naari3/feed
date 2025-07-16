@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-16T09:04:01.862Z</updated>
+    <updated>2025-07-16T10:01:59.086Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[終末移植18]]></title>
+        <id>hatenablog://entry/6802418398513192865</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/07/16/185829"/>
+        <updated>2025-07-16T09:58:29.000Z</updated>
+        <summary type="html"><![CDATA[地味なことをしているので地味な内容になります。えーと、たとえばメッセージウィンドウを17x7から17x6に変えてスクリプト変換プログラムを走らせた場合、次のようなアサートを挙げてくれます。x7でうまく動いていたのにダメになりました。
+scn_msg... SCN000.s01
+scn_msg... SCN003.s01
+scn_msg... SCN006.s01
+scn_msg... SCN007.s01
+scn_msg... SCN008.s01
+Assertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330
+scn_msg... SCN009.s01
+scn_msg... SCN010.s01
+Assertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330
+scn_msg... SCN011.s01
+scn_msg... SCN012.s01
+scn_msg... SCN013.s01
+Assertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330
+scn_msg... SCN014.s01
+scn_msg... SCN015.s01
+scn_msg... SCN016.s01
+scn_msg... SCN017.s01
+scn_msg... SCN018.s01
+
+以下略・・・。
+SCN008の該当箇所を調べて6列に収まらないことを確認します。たしかに6列より大きいです。
+１２３４５６７８９０１２３４５６７
+とは言っても毎日各学年３～４０人前
+後で変動する（大半は遊びに来ている
+）気まぐれな生徒と、１０人にも満た
+ない（大半は『かつての日常』に浸っ
+ている順応性のない人間だ）気まぐれ
+な教師の『学校ゴッコ』にしか過ぎな
+い。_r
+正規表現で_r（改ページ）を追加します。
+if(file == 'SCN008.txt'):
+	# 追加　改ページ（メッセージウィンドウに入らない）
+	text = re.sub('生徒と、１０人', '生徒と、_r１０人', text)
+再度、プログラムを流して問題ないことを確認します。。いやほんと移植作業なんてこんなもんですよ（＾＾；。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2025-07-15]]></title>
         <id>hatenablog://entry/6802418398512398976</id>

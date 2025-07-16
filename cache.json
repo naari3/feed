@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398513192865",
+          "author": null,
+          "description": "地味なことをしているので地味な内容になります。えーと、たとえばメッセージウィンドウを17x7から17x6に変えてスクリプト変換プログラムを走らせた場合、次のようなアサートを挙げてくれます。x7でうまく動いていたのにダメになりました。\nscn_msg... SCN000.s01\nscn_msg... SCN003.s01\nscn_msg... SCN006.s01\nscn_msg... SCN007.s01\nscn_msg... SCN008.s01\nAssertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330\nscn_msg... SCN009.s01\nscn_msg... SCN010.s01\nAssertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330\nscn_msg... SCN011.s01\nscn_msg... SCN012.s01\nscn_msg... SCN013.s01\nAssertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330\nscn_msg... SCN014.s01\nscn_msg... SCN015.s01\nscn_msg... SCN016.s01\nscn_msg... SCN017.s01\nscn_msg... SCN018.s01\n\n以下略・・・。\nSCN008の該当箇所を調べて6列に収まらないことを確認します。たしかに6列より大きいです。\n１２３４５６７８９０１２３４５６７\nとは言っても毎日各学年３～４０人前\n後で変動する（大半は遊びに来ている\n）気まぐれな生徒と、１０人にも満た\nない（大半は『かつての日常』に浸っ\nている順応性のない人間だ）気まぐれ\nな教師の『学校ゴッコ』にしか過ぎな\nい。_r\n正規表現で_r（改ページ）を追加します。\nif(file == 'SCN008.txt'):\n\t# 追加　改ページ（メッセージウィンドウに入らない）\n\ttext = re.sub('生徒と、１０人', '生徒と、_r１０人', text)\n再度、プログラムを流して問題ないことを確認します。。いやほんと移植作業なんてこんなもんですよ（＾＾；。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/16/185829",
+          "publishedOn": "2025-07-16T09:58:29.000Z",
+          "wordCount": 539,
+          "title": "終末移植18",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398513192865/1752660059",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398513192865/1752660059"
+        },
+        {
           "id": "hatenablog://entry/6802418398512209523",
           "author": null,
           "description": "ifネスト実装完了。やっててよかった言語処理系。すみません内容はしょぼいです。\n//---------------------------------------------------------------------------\nvoid NvPushIf(bool is)\n{\n\t_ASSERT(Nv.ifCnt+1 < NV_MAX_IF_CNT);\n\n\tNv.isIf[Nv.ifCnt++] = is;\n}\n//---------------------------------------------------------------------------\nvoid NvPopIf(void)\n{\n\t_ASSERT(Nv.ifCnt != 0);\n\n\tNv.ifCnt--;\n}\n//---------------------------------------------------------------------------\nvoid NvFlipIf(void)\n{\n\t_ASSERT(Nv.ifCnt != 0);\n\n\tNv.isIf[Nv.ifCnt-1] ^= 1;\n}\n//---------------------------------------------------------------------------\nbool NvIsIf(void)\n{\n\tif(Nv.ifCnt == 0)\n\t{\n\t\treturn true;\n\t}\n\n\ts32 i;\n\n\tfor(i=0; i<Nv.ifCnt; i++)\n\t{\n\t\tif(Nv.isIf[i] == false)\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t}\n\n\treturn true;\n}\n食べさせるスクリプトはこんな感じです。\n0A83 #i 28 = 1    if文\n0A8E #W 200       ウェイト\n0A91 !g 143       画像番号指定\n0A9C #l           ELSE\n0A9E #i 29 = 1\n0AA9 #W 200\n0AAC !g 144\n0AB7 #l\n0AB9 #i 30 = 1\n0AC4 #W 200\n0AC7 !g 145\n0AD2 #l\n0AD4 #i 31 = 1\n0ADF #W 200\n0AE2 !g 146\n0AED #l\n0AEF #W 200\n0AF2 !g 9\n0AFD #n           ENDIF\n0AFF #n\n0B01 #n\n0B03 #n",
