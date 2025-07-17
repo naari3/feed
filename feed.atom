@@ -2,10 +2,116 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-17T09:03:43.753Z</updated>
+    <updated>2025-07-17T10:01:45.384Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[終末移植19]]></title>
+        <id>hatenablog://entry/6802418398514120042</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/07/17/183856"/>
+        <updated>2025-07-17T09:38:56.000Z</updated>
+        <summary type="html"><![CDATA[オープニング処理以外終わりました・・・。４ヒロインとも全てエンディングOK。超がんばりすぎて体にダメージデカすぎ問題です、もういやすぎ。うーん、アイスでも食べて元気になろう・・・。オプションに既読無視フラグつけました。初回でも早くクリアできると思います。何気に既読つけたGBAゲームは初っぽい気します。
+
+
+ブレンド最適化もいい感じです。chatgptさんに聞いたらアンローリングなる最適化方法があるそうで、実際に試したらVBLANK単位（！）で93から86に変わりました。8ですよ！！8フレームも！！！奥さん、こりゃすげーぜ、ふははは。ループを変えるだけでこんなにも変わるんですねー。
+IWRAM_CODE void Mode3VramEffCls(s32 cnt, u8* pEff)
+{
+	u16* pSrc = Mode3.buf + (Mode3.idx ^ 1) * MODE3_MAX_SCN_SIZE;
+	u16* pDst = Mode3.buf + (Mode3.idx    ) * MODE3_MAX_SCN_SIZE;
+	u16* pVrm = ((u16*)VRAM) + ((240 - 212) / 2);
+
+	pEff += 212 * 160 * cnt;
+
+	s32 x, y;
+	s32 i;
+
+	// 4ピクセル単位アンローリング
+	// 渦巻CLSで VBLANK 93(type2) -> 86(type1)に軽減
+	for(y=0; y<160; y++)
+	{
+// type1
+		for(x=0; x<212; x+=4)
+		{
+			for(i=0; i<4; i++)
+			{
+				u32 eff = pEff[x+i];
+
+				if(eff == 0)
+				{
+					pVrm[x+i] = pDst[x+i];
+				}
+				else if(eff == 0x1F)
+				{
+					pVrm[x+i] = pSrc[x+i];
+				}
+				else
+				{
+					u32 src = pSrc[x+i];
+					u32 dst = pDst[x+i];
+
+					u32 rbDst = dst & 0x7c1f;
+					u32  gDst = dst & 0x03e0;
+					u32 rbSrc = src & 0x7c1f;
+					u32  gSrc = src & 0x03e0;
+
+					u32 rb = rbDst + (((rbSrc - rbDst) * eff) >> 5);
+					u32 g  =  gDst + ((( gSrc -  gDst) * eff) >> 5);
+
+					pVrm[x+i] = (rb & 0x7c1f) | (g & 0x03e0);
+				}
+			}
+		}
+		pSrc += 212;
+		pDst += 212;
+		pVrm += 240;
+		pEff += 212;
+	}
+// type1 ここまで
+
+/*
+// type2
+		for(x=0; x<212; x++)
+		{
+			u32 eff = pEff[x];
+
+			if(eff == 0)
+			{
+				pVrm[x] = pDst[x];
+			}
+			else if(eff == 0x1F)
+			{
+				pVrm[x] = pSrc[x];
+			}
+			else
+			{
+				u32 src = pSrc[x];
+				u32 dst = pDst[x];
+
+				u32 rbDst = dst & 0x7c1f;
+				u32  gDst = dst & 0x03e0;
+				u32 rbSrc = src & 0x7c1f;
+				u32  gSrc = src & 0x03e0;
+
+				u32 rb = rbDst + (((rbSrc - rbDst) * eff) >> 5);
+				u32 g  =  gDst + ((( gSrc -  gDst) * eff) >> 5);
+
+				pVrm[x] = (rb & 0x7c1f) | (g & 0x03e0);
+			}
+		}
+
+		pSrc += 212;
+		pDst += 212;
+		pVrm += 240;
+		pEff += 212;
+	}
+// type2 ここまで
+*/
+}]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「音」の可能性と「音」のリスク]]></title>
         <id>https://note.com/kazumakawauchi/n/n3a994b3252ea</id>
