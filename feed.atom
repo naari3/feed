@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-17T12:02:15.523Z</updated>
+    <updated>2025-07-17T13:13:12.346Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[vol.4-1 角煮サイダー]]></title>
+        <id>hatenablog://entry/6802418398496481903</id>
+        <link href="https://scopes.hateblo.jp/entry/04_01"/>
+        <updated>2025-07-17T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[今、その人に、3つの視座を尋ねる連載「SCOPES」
+今回お話を伺うのは角煮サイダーさんです。
+一つ目の質問「音MADの投稿/活動を始めたきっかけを教えてください」という点についてお話を詳しく聞いてみたいと思います。
+今回の質問に対する回答はこちら。
+・音MADの投稿/活動を始めたきっかけを教えてください
+自分がインターネットをよく見るようになったきっかけが『スマブラX』で、2008年当時としては珍しかったと思うんですけど、攻略サイトの中で動画のリンクを貼ってるものがあったんですよね。そのリンクからYoutubeにたどり着いて関連動画から飛んで行った先で音MADと出会ったのが最初でしたね。最初に見た音MADは『Ｄ．Ｊ．団体は交互に並ぶのか？最終鬼畜男女・Ｔ』のyoutube転載だったんじゃないかな？
+以降はずっとyoutubeに転載された動画とかニコニコのランキングで上がる動画とかを浅く広く見てましたね。有名な動画とか人気素材の動画は大体見てるけど、すごく深いところまでは知らないくらいの感じでした。
+ずっと音MADは作りたかったんですけど、共用のパソコンがMacだったのもあって作れない期間が長かったですね。ようやく自分のパソコンを手に入れて1-2年くらいは他ジャンルの動画を投稿してたんですけど、やっぱり音MAD作りたいなぁと思って一念発起してDAWの使い方とか覚えて音MADを投稿しました。初投稿が2016年だったんで、今年でやっと作者歴が見る専歴を追い抜きました。
+（やりとりの期間：2025/6/11～2025/6/20）
+─改めましてこの度のご参加、また質問への回答ありがとうございます。引き続き、自分からもお話伺えたらと思います。よろしくお願いします！
+角煮サイダーさんの動画を改めて拝見しました。アニメ・ゲーム・漫画など幅広い範囲の素材を扱うことがまず特徴として思い当たり…]]></summary>
+        <author>
+            <name>SCOPES</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[終末移植19]]></title>
         <id>hatenablog://entry/6802418398514120042</id>
@@ -10797,27 +10817,6 @@ GameGaz Daily 2025.4.19 first appeared on 大人のためのゲーム講座.]]><
 The FloW氏のHackerone 1万ドル脆弱性 24.08-10.40.00まで有効なPS5のカーネルexploit first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2025-04-18]]></title>
-        <id>hatenablog://entry/6802418398353371788</id>
-        <link href="https://commits.hatenablog.com/entry/2025/04/19/100000"/>
-        <updated>2025-04-19T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[RubyKaigiに参加していた。
-今回は自宅から車で松山まで行った。そのため、出張ではなく有給で完全に自費での参加となった(社内規定で業務上の車両の使用が禁止されているため)
-今年は自分の登壇がなかったので、気楽だった。プロポーザルは出していたのだけど採択されなかったため。来年は話せるといいな。
-採択されなかったことを特に表立ってつぶやいたりしていなかったため、会議中に何回か「今年は話すんですか？」と聞かれた。結果はつぶやいたほうが良い。
-発表のなかで特に印象に残ったのは以下の3つ。
-Bringing Linux pidfd to Ruby - RubyKaigi 2025
-Performance Bugs and Low-level Ruby Observability APIs - RubyKaigi 2025
-Porting PicoRuby to Another Microcontroller: ESP32 - RubyKaigi 2025
-1つ目の「Bringing Linux pidfd to Ruby」は、Linuxで導入されたpidfdというAPIの紹介。
-子プロセスの管理にpidを使っていると、子プロセスが死んだあとpidが再利用されて意図しないプロセスを向くpidになってしまったり、直接の子プロセスしかwaitできないなどの問題がある。
-pidfdを使うとこれらが解決される。pidfdはpidをFile Descriptorとして扱う機能で、pidを直に扱わないことで意図したプロセスのみをターゲットにできたり、直接の子プロセス以外にwait相当のことができたりするようになる。
-これはちょうど最近私がSteepでやっている課題に対する解決策になるものだったので、とても興味深かった(そして自分がRubyKaigiに出したプロポーザルとテーマが被る部分があっ…]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>

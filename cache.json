@@ -1591,21 +1591,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398357081899/1745110800"
-        },
-        {
-          "id": "hatenablog://entry/6802418398353371788",
-          "author": null,
-          "description": "RubyKaigiに参加していた。\n今回は自宅から車で松山まで行った。そのため、出張ではなく有給で完全に自費での参加となった(社内規定で業務上の車両の使用が禁止されているため)\n今年は自分の登壇がなかったので、気楽だった。プロポーザルは出していたのだけど採択されなかったため。来年は話せるといいな。\n採択されなかったことを特に表立ってつぶやいたりしていなかったため、会議中に何回か「今年は話すんですか？」と聞かれた。結果はつぶやいたほうが良い。\n発表のなかで特に印象に残ったのは以下の3つ。\nBringing Linux pidfd to Ruby - RubyKaigi 2025\nPerformance Bugs and Low-level Ruby Observability APIs - RubyKaigi 2025\nPorting PicoRuby to Another Microcontroller: ESP32 - RubyKaigi 2025\n1つ目の「Bringing Linux pidfd to Ruby」は、Linuxで導入されたpidfdというAPIの紹介。\n子プロセスの管理にpidを使っていると、子プロセスが死んだあとpidが再利用されて意図しないプロセスを向くpidになってしまったり、直接の子プロセスしかwaitできないなどの問題がある。\npidfdを使うとこれらが解決される。pidfdはpidをFile Descriptorとして扱う機能で、pidを直に扱わないことで意図したプロセスのみをターゲットにできたり、直接の子プロセス以外にwait相当のことができたりするようになる。\nこれはちょうど最近私がSteepでやっている課題に対する解決策になるものだったので、とても興味深かった(そして自分がRubyKaigiに出したプロポーザルとテーマが被る部分があっ…",
-          "link": "https://commits.hatenablog.com/entry/2025/04/19/100000",
-          "publishedOn": "2025-04-19T01:00:00.000Z",
-          "wordCount": 580,
-          "title": "2025-04-18",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398353371788/1745027111",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398353371788/1745027111"
         }
       ]
     },
@@ -3573,6 +3558,21 @@
       "feedUrl": "https://scopes.hateblo.jp/rss",
       "siteUrl": "https://scopes.hateblo.jp/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398496481903",
+          "author": null,
+          "description": "今、その人に、3つの視座を尋ねる連載「SCOPES」\n今回お話を伺うのは角煮サイダーさんです。\n一つ目の質問「音MADの投稿/活動を始めたきっかけを教えてください」という点についてお話を詳しく聞いてみたいと思います。\n今回の質問に対する回答はこちら。\n・音MADの投稿/活動を始めたきっかけを教えてください\n自分がインターネットをよく見るようになったきっかけが『スマブラX』で、2008年当時としては珍しかったと思うんですけど、攻略サイトの中で動画のリンクを貼ってるものがあったんですよね。そのリンクからYoutubeにたどり着いて関連動画から飛んで行った先で音MADと出会ったのが最初でしたね。最初に見た音MADは『Ｄ．Ｊ．団体は交互に並ぶのか？最終鬼畜男女・Ｔ』のyoutube転載だったんじゃないかな？\n以降はずっとyoutubeに転載された動画とかニコニコのランキングで上がる動画とかを浅く広く見てましたね。有名な動画とか人気素材の動画は大体見てるけど、すごく深いところまでは知らないくらいの感じでした。\nずっと音MADは作りたかったんですけど、共用のパソコンがMacだったのもあって作れない期間が長かったですね。ようやく自分のパソコンを手に入れて1-2年くらいは他ジャンルの動画を投稿してたんですけど、やっぱり音MAD作りたいなぁと思って一念発起してDAWの使い方とか覚えて音MADを投稿しました。初投稿が2016年だったんで、今年でやっと作者歴が見る専歴を追い抜きました。\n（やりとりの期間：2025/6/11～2025/6/20）\n─改めましてこの度のご参加、また質問への回答ありがとうございます。引き続き、自分からもお話伺えたらと思います。よろしくお願いします！\n角煮サイダーさんの動画を改めて拝見しました。アニメ・ゲーム・漫画など幅広い範囲の素材を扱うことがまず特徴として思い当たり…",
+          "link": "https://scopes.hateblo.jp/entry/04_01",
+          "publishedOn": "2025-07-17T13:00:00.000Z",
+          "wordCount": null,
+          "title": "vol.4-1 角煮サイダー",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/a7af2dd43edd4c3f6f74e5dd83faf441e3801cca/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F159211975%2F1734505194352219",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a7af2dd43edd4c3f6f74e5dd83faf441e3801cca/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F159211975%2F1734505194352219"
+        },
         {
           "id": "hatenablog://entry/6802418398496482139",
           "author": null,
