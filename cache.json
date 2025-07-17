@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398514464362",
+          "author": null,
+          "description": "終末移植20 - あーさん日記",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/18/062804",
+          "publishedOn": "2025-07-17T21:28:04.000Z",
+          "wordCount": 461,
+          "title": "終末移植20",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/3020ad9ea7fae38ed76ed88a3312c2ef56350722/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250718%2F20250718062744.gif",
+            "type": "image/gif",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/3020ad9ea7fae38ed76ed88a3312c2ef56350722/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250718%2F20250718062744.gif"
+        },
+        {
           "id": "hatenablog://entry/6802418398514120042",
           "author": null,
           "description": "オープニング処理以外終わりました・・・。４ヒロインとも全てエンディングOK。超がんばりすぎて体にダメージデカすぎ問題です、もういやすぎ。うーん、アイスでも食べて元気になろう・・・。オプションに既読無視フラグつけました。初回でも早くクリアできると思います。何気に既読つけたGBAゲームは初っぽい気します。\n\n\nブレンド最適化もいい感じです。chatgptさんに聞いたらアンローリングなる最適化方法があるそうで、実際に試したらVBLANK単位（！）で93から86に変わりました。8ですよ！！8フレームも！！！奥さん、こりゃすげーぜ、ふははは。ループを変えるだけでこんなにも変わるんですねー。\nIWRAM_CODE void Mode3VramEffCls(s32 cnt, u8* pEff)\n{\n\tu16* pSrc = Mode3.buf + (Mode3.idx ^ 1) * MODE3_MAX_SCN_SIZE;\n\tu16* pDst = Mode3.buf + (Mode3.idx    ) * MODE3_MAX_SCN_SIZE;\n\tu16* pVrm = ((u16*)VRAM) + ((240 - 212) / 2);\n\n\tpEff += 212 * 160 * cnt;\n\n\ts32 x, y;\n\ts32 i;\n\n\t// 4ピクセル単位アンローリング\n\t// 渦巻CLSで VBLANK 93(type2) -> 86(type1)に軽減\n\tfor(y=0; y<160; y++)\n\t{\n// type1\n\t\tfor(x=0; x<212; x+=4)\n\t\t{\n\t\t\tfor(i=0; i<4; i++)\n\t\t\t{\n\t\t\t\tu32 eff = pEff[x+i];\n\n\t\t\t\tif(eff == 0)\n\t\t\t\t{\n\t\t\t\t\tpVrm[x+i] = pDst[x+i];\n\t\t\t\t}\n\t\t\t\telse if(eff == 0x1F)\n\t\t\t\t{\n\t\t\t\t\tpVrm[x+i] = pSrc[x+i];\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tu32 src = pSrc[x+i];\n\t\t\t\t\tu32 dst = pDst[x+i];\n\n\t\t\t\t\tu32 rbDst = dst & 0x7c1f;\n\t\t\t\t\tu32  gDst = dst & 0x03e0;\n\t\t\t\t\tu32 rbSrc = src & 0x7c1f;\n\t\t\t\t\tu32  gSrc = src & 0x03e0;\n\n\t\t\t\t\tu32 rb = rbDst + (((rbSrc - rbDst) * eff) >> 5);\n\t\t\t\t\tu32 g  =  gDst + ((( gSrc -  gDst) * eff) >> 5);\n\n\t\t\t\t\tpVrm[x+i] = (rb & 0x7c1f) | (g & 0x03e0);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tpSrc += 212;\n\t\tpDst += 212;\n\t\tpVrm += 240;\n\t\tpEff += 212;\n\t}\n// type1 ここまで\n\n/*\n// type2\n\t\tfor(x=0; x<212; x++)\n\t\t{\n\t\t\tu32 eff = pEff[x];\n\n\t\t\tif(eff == 0)\n\t\t\t{\n\t\t\t\tpVrm[x] = pDst[x];\n\t\t\t}\n\t\t\telse if(eff == 0x1F)\n\t\t\t{\n\t\t\t\tpVrm[x] = pSrc[x];\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tu32 src = pSrc[x];\n\t\t\t\tu32 dst = pDst[x];\n\n\t\t\t\tu32 rbDst = dst & 0x7c1f;\n\t\t\t\tu32  gDst = dst & 0x03e0;\n\t\t\t\tu32 rbSrc = src & 0x7c1f;\n\t\t\t\tu32  gSrc = src & 0x03e0;\n\n\t\t\t\tu32 rb = rbDst + (((rbSrc - rbDst) * eff) >> 5);\n\t\t\t\tu32 g  =  gDst + ((( gSrc -  gDst) * eff) >> 5);\n\n\t\t\t\tpVrm[x] = (rb & 0x7c1f) | (g & 0x03e0);\n\t\t\t}\n\t\t}\n\n\t\tpSrc += 212;\n\t\tpDst += 212;\n\t\tpVrm += 240;\n\t\tpEff += 212;\n\t}\n// type2 ここまで\n*/\n}",

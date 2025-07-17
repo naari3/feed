@@ -78,6 +78,85 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">終末移植20</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/07/18/062804" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>終末移植20 - あーさん日記</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/3020ad9ea7fae38ed76ed88a3312c2ef56350722/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250718%2F20250718062744.gif" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">終末移植19</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/07/17/183856" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>オープニング処理以外終わりました・・・。４ヒロインとも全てエンディングOK。超がんばりすぎて体にダメージデカすぎ問題です、もういやすぎ。うーん、アイスでも食べて元気になろう・・・。オプションに既読無視フラグつけました。初回でも早くクリアできると思います。何気に既読つけたGBAゲームは初っぽい気します。
+
+
+ブレンド最適化もいい感じです。chatgptさんに聞いたらアンローリングなる最適化方法があるそうで、実際に試したらVBLANK単位（！）で93から86に変わりました。8ですよ！！8フレームも！！！奥さん、こりゃすげーぜ、ふははは。ループを変えるだけでこんなにも変わるんですねー。
+IWRAM_CODE void Mode3VramEffCls(s32 cnt, u8* pEff)
+{
+	u16* pSrc &#x3D; Mode3.buf + (Mode3.idx ^ 1) * MODE3_MAX_SCN_SIZE;
+	u16* pDst &#x3D; Mode3.buf + (Mode3.idx    ) * MODE3_MAX_SCN_SIZE;
+	u16* pVrm &#x3D; ((u16*)VRAM) + ((240 - 212) / 2);
+
+	pEff +&#x3D; 212 * 160 * cnt;
+
+	s32 x, y;
+	s32 i;
+
+	// 4ピクセル単位アンローリング
+	// 渦巻CLSで VBLANK 93(type2) -&gt; 86(type1)に軽減
+	for(y&#x3D;0; y&gt; 5);
+					u32 g  &#x3D;  gDst + ((( gSrc -  gDst) * eff) &gt;&gt; 5);
+
+					pVrm[x+i] &#x3D; (rb &amp; 0x7c1f) | (g &amp; 0x03e0);
+				}
+			}
+		}
+		pSrc +&#x3D; 212;
+		pDst +&#x3D; 212;
+		pVrm +&#x3D; 240;
+		pEff +&#x3D; 212;
+	}
+// type1 ここまで
+
+/*
+// type2
+		for(x&#x3D;0; x&gt; 5);
+				u32 g  &#x3D;  gDst + ((( gSrc -  gDst) * eff) &gt;&gt; 5);
+
+				pVrm[x] &#x3D; (rb &amp; 0x7c1f) | (g &amp; 0x03e0);
+			}
+		}
+
+		pSrc +&#x3D; 212;
+		pDst +&#x3D; 212;
+		pVrm +&#x3D; 240;
+		pEff +&#x3D; 212;
+	}
+// type2 ここまで
+*/
+}</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/15f038415d6c3550e04970631a02112ae5f3386a/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250717%2F20250717183113.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://hardshopper.hatenablog.com/" target="_blank"
               rel="noopener">僕とネットショッピング</a></h3>
           <section class="articles-per-source">
@@ -186,73 +265,6 @@
 角煮サイダーさんの動画を改めて拝見しました。アニメ・ゲーム・漫画など幅広い範囲の素材を扱うことがまず特徴として思い当たり…</span>
                   </div>
                   <img src="https://cdn.image.st-hatena.com/image/scale/a7af2dd43edd4c3f6f74e5dd83faf441e3801cca/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F159211975%2F1734505194352219" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">終末移植19</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/07/17/183856" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>オープニング処理以外終わりました・・・。４ヒロインとも全てエンディングOK。超がんばりすぎて体にダメージデカすぎ問題です、もういやすぎ。うーん、アイスでも食べて元気になろう・・・。オプションに既読無視フラグつけました。初回でも早くクリアできると思います。何気に既読つけたGBAゲームは初っぽい気します。
-
-
-ブレンド最適化もいい感じです。chatgptさんに聞いたらアンローリングなる最適化方法があるそうで、実際に試したらVBLANK単位（！）で93から86に変わりました。8ですよ！！8フレームも！！！奥さん、こりゃすげーぜ、ふははは。ループを変えるだけでこんなにも変わるんですねー。
-IWRAM_CODE void Mode3VramEffCls(s32 cnt, u8* pEff)
-{
-	u16* pSrc &#x3D; Mode3.buf + (Mode3.idx ^ 1) * MODE3_MAX_SCN_SIZE;
-	u16* pDst &#x3D; Mode3.buf + (Mode3.idx    ) * MODE3_MAX_SCN_SIZE;
-	u16* pVrm &#x3D; ((u16*)VRAM) + ((240 - 212) / 2);
-
-	pEff +&#x3D; 212 * 160 * cnt;
-
-	s32 x, y;
-	s32 i;
-
-	// 4ピクセル単位アンローリング
-	// 渦巻CLSで VBLANK 93(type2) -&gt; 86(type1)に軽減
-	for(y&#x3D;0; y&gt; 5);
-					u32 g  &#x3D;  gDst + ((( gSrc -  gDst) * eff) &gt;&gt; 5);
-
-					pVrm[x+i] &#x3D; (rb &amp; 0x7c1f) | (g &amp; 0x03e0);
-				}
-			}
-		}
-		pSrc +&#x3D; 212;
-		pDst +&#x3D; 212;
-		pVrm +&#x3D; 240;
-		pEff +&#x3D; 212;
-	}
-// type1 ここまで
-
-/*
-// type2
-		for(x&#x3D;0; x&gt; 5);
-				u32 g  &#x3D;  gDst + ((( gSrc -  gDst) * eff) &gt;&gt; 5);
-
-				pVrm[x] &#x3D; (rb &amp; 0x7c1f) | (g &amp; 0x03e0);
-			}
-		}
-
-		pSrc +&#x3D; 212;
-		pDst +&#x3D; 212;
-		pVrm +&#x3D; 240;
-		pEff +&#x3D; 212;
-	}
-// type2 ここまで
-*/
-}</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/15f038415d6c3550e04970631a02112ae5f3386a/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250717%2F20250717183113.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -17715,7 +17727,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-07-17T21:01:38.429Z">2025-07-17T21:01:38.429Z</time>
+    <time id="build-timestamp" datetime="2025-07-17T22:01:41.030Z">2025-07-17T22:01:41.030Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
