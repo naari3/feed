@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-19T01:29:36.212Z</updated>
+    <updated>2025-07-19T02:34:01.348Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10922,36 +10922,6 @@ puree-kmp
 GameGaz Daily 2025.4.21 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[miseからprotoに移行した]]></title>
-        <id>hatenablog://entry/6802418398360989320</id>
-        <link href="https://blog.nishimu.land/entry/2025/04/20/230226?utm_source=feed"/>
-        <updated>2025-04-20T14:02:26.000Z</updated>
-        <summary type="html"><![CDATA[moonrepo.dev
-各種言語(とか)のバージョン管理に mise を使っていたけど、proto に移行した。
-mise はバージョン管理だけでなく、 direnv のような環境管理や、make のようなタスク実行もサポートしていて、少し過剰に感じていた。(し、使ってなかった)
-1つのツールが複数の役割を担うのは、「一つのことをうまくやれ」というUNIX哲学に反している気がした。
-protoはいまのところバージョン管理だけをやっているのと、WASMベースでプラグインを定義できるのがモダンで、保守性やセキュリティ面でも好印象だった。
-OSSで開発されているが実質的に企業としての moonrepo が管理しているので将来はどうなるかは分からない。
-インストールはシェルスクリプトを読み込むやつ だけれど、最近はLLMと一緒にレビューしてから実行できるのでちょっと安心。
-自分より頭のいい人にうまく隠されると見破れる自信がない。
-非公式のFormula はあるみたいなので Homebrew で入れる選択肢も一応ある。
-.zshenv に以下のように環境変数を設定すると、XDG_DATA_HOME 以下にインストールできます。
-# proto https://github.com/moonrepo/proto
-export PROTO_HOME="$XDG_DATA_HOME/proto";
-export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH";
-
-
-
-補完系も生成して配置しておいた。
-$ proto completions --shell zsh > ~/.config/zsh/completion/_proto
-使い方はよくある感じなので ドキュメント を眺めるとすぐに分かると思います。
-しばらく使ってみて様子をみようと思います。
-他にも軽量なバージョン管理ツールを知っている人がいたらぜひ教えてください。]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
