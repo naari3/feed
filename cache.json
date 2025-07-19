@@ -734,21 +734,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398371255109/1745384087"
-        },
-        {
-          "id": "hatenablog://entry/6802418398365480474",
-          "author": null,
-          "description": "今週中にコンバータ終わりそうです。既読機能はオリジナルのユニーク番号があるのでそのまま利用予定。総数は256*5 + 136 = 1416。1416/8ビット = 177バイト・・・全然余裕です。改行と改ページも印字変更しました。ただコンバータ側が面倒な処理になってしまいましたけどこれはしょうがないですねー。\n@echo off\n\nrem ---------------------------------\nrem スクリプトファイルをデコード\n\nfor %%i in (*.SCF) do scn_txt %%i\n\ndel *.SCF\n\n\nrem ---------------------------------\nrem 正規表現で変更\n\nfor %%i in (*.txt) do python scn_re.py %%i\n\n\nrem ---------------------------------\nrem 改行を'\\0'に変更\n\nfor %%i in (*.txt) do scn_term %%i\n\ndel *.txt\n\n\nrem ---------------------------------\nrem メッセージ命令変更\n\nfor %%i in (*.bin) do scn_wrap %%i\n\n\nrem ---------------------------------\nrem ジャンプテーブル変更\n\nfor %%i in (*.bin) do scn_jmp %%i",
-          "link": "https://akkera102.hatenablog.com/entry/2025/04/21/195511",
-          "publishedOn": "2025-04-21T10:55:11.000Z",
-          "wordCount": 523,
-          "title": "終末移植9",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398365480474/1745232939",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398365480474/1745232939"
         }
       ]
     },

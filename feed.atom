@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-19T22:01:42.314Z</updated>
+    <updated>2025-07-19T23:01:44.502Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10831,50 +10831,6 @@ discord.com
 *1:質問した時点では英語版のDiscordで解決済みであることを知らなかった]]></summary>
         <author>
             <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[終末移植9]]></title>
-        <id>hatenablog://entry/6802418398365480474</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/04/21/195511"/>
-        <updated>2025-04-21T10:55:11.000Z</updated>
-        <summary type="html"><![CDATA[今週中にコンバータ終わりそうです。既読機能はオリジナルのユニーク番号があるのでそのまま利用予定。総数は256*5 + 136 = 1416。1416/8ビット = 177バイト・・・全然余裕です。改行と改ページも印字変更しました。ただコンバータ側が面倒な処理になってしまいましたけどこれはしょうがないですねー。
-@echo off
-
-rem ---------------------------------
-rem スクリプトファイルをデコード
-
-for %%i in (*.SCF) do scn_txt %%i
-
-del *.SCF
-
-
-rem ---------------------------------
-rem 正規表現で変更
-
-for %%i in (*.txt) do python scn_re.py %%i
-
-
-rem ---------------------------------
-rem 改行を'\0'に変更
-
-for %%i in (*.txt) do scn_term %%i
-
-del *.txt
-
-
-rem ---------------------------------
-rem メッセージ命令変更
-
-for %%i in (*.bin) do scn_wrap %%i
-
-
-rem ---------------------------------
-rem ジャンプテーブル変更
-
-for %%i in (*.bin) do scn_jmp %%i]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

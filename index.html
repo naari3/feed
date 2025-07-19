@@ -15570,60 +15570,6 @@ discord.com
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">終末移植9</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/04/21/195511" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>今週中にコンバータ終わりそうです。既読機能はオリジナルのユニーク番号があるのでそのまま利用予定。総数は256*5 + 136 &#x3D; 1416。1416/8ビット &#x3D; 177バイト・・・全然余裕です。改行と改ページも印字変更しました。ただコンバータ側が面倒な処理になってしまいましたけどこれはしょうがないですねー。
-@echo off
-
-rem ---------------------------------
-rem スクリプトファイルをデコード
-
-for %%i in (*.SCF) do scn_txt %%i
-
-del *.SCF
-
-
-rem ---------------------------------
-rem 正規表現で変更
-
-for %%i in (*.txt) do python scn_re.py %%i
-
-
-rem ---------------------------------
-rem 改行を&#x27;\0&#x27;に変更
-
-for %%i in (*.txt) do scn_term %%i
-
-del *.txt
-
-
-rem ---------------------------------
-rem メッセージ命令変更
-
-for %%i in (*.bin) do scn_wrap %%i
-
-
-rem ---------------------------------
-rem ジャンプテーブル変更
-
-for %%i in (*.bin) do scn_jmp %%i</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398365480474/1745232939" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17735,7 +17681,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-07-19T22:01:42.277Z">2025-07-19T22:01:42.277Z</time>
+    <time id="build-timestamp" datetime="2025-07-19T23:01:44.464Z">2025-07-19T23:01:44.464Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
