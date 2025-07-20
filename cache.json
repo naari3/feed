@@ -5435,16 +5435,6 @@
           "wordCount": 2639,
           "title": "Macでrarファイルを解凍する方法（2025-05-16）",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/ba0dcd3786146a09f518446566cdeec8f2aa8a8d.png"
-        },
-        {
-          "id": "https://note.com/dokozonosyake/n/n126e07065599",
-          "author": null,
-          "description": "難化する近年の漢検1級の「一般語彙」を一本槍で仕留められないか？\n足掛け3年、2024年度第3回試験（R6-3）でようやく漢検1級に合格することのできた私が、つねづね考えてきたことです。\n続きをみる",
-          "link": "https://note.com/dokozonosyake/n/n126e07065599",
-          "publishedOn": "2025-04-21T12:44:19.000Z",
-          "wordCount": null,
-          "title": "「漢検1級ハイパー語彙」をリリースします",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/185467645/rectangle_large_type_2_0e908ba75b6a895594d57c9098d4c666.png?width=800"
         }
       ]
     },
@@ -7152,21 +7142,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398376264992/1745497819"
-        },
-        {
-          "id": "hatenablog://entry/6802418398365762549",
-          "author": null,
-          "description": "Scalaコンパイラは、特定の警告メッセージに対してad-hocに警告からエラーに昇格させ、コンパイルを失敗させることができる。\n以下のscalac optionを設定することで non-exhaustive match だけエラーにできる:\n-Wconf:msg=match may not be exhaustive:error\nsbtだと以下のような設定になる:\nscalacOptions += \"-Wconf:msg=match may not be exhaustive:error\"\n\n\n\nあらすじ\n先日Scalaの英語版Discordを見ていたら、以下のような質問があった(意訳)\nmatchが不完全な場合にエラーにする方法ないの？-Werrorしたら全ての警告をエラーにできるけど、さすがに範囲がでかすぎて使いものにならないよ。\n\n\nScalaユーザにとってmatchが不完全な状態は大抵の場合エラーにしたいはず。しかしこれだけエラーにする方法はなさそうでその時は自分も「たぶんそういうオプションはなさそう」と答えるほかなかった。\nしかし後日Discordを見たところ解決していた。\ndiscord.com\nまた同様のことをScalaわいわいランドで訊いたところ同様の答えであった*1。\ndiscord.com\n教えてくださった方々ありがとうございました。\n*1:質問した時点では英語版のDiscordで解決済みであることを知らなかった",
-          "link": "https://blog.3qe.us/entry/2025/04/21/210911",
-          "publishedOn": "2025-04-21T12:09:11.000Z",
-          "wordCount": null,
-          "title": "Scalaで特定の警告をエラーにするには -Wconf:msg=FOOBAR:error と書けばよいので non-exhaustive match だけエラーにできる",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398365762549/1745237351",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398365762549/1745237351"
         }
       ]
     },

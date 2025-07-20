@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-20T00:04:14.136Z</updated>
+    <updated>2025-07-20T01:30:03.134Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10801,47 +10801,6 @@ GameGaz Daily 2025.4.22 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>藍瀬 まなみ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「漢検1級ハイパー語彙」をリリースします]]></title>
-        <id>https://note.com/dokozonosyake/n/n126e07065599</id>
-        <link href="https://note.com/dokozonosyake/n/n126e07065599"/>
-        <updated>2025-04-21T12:44:19.000Z</updated>
-        <summary type="html"><![CDATA[難化する近年の漢検1級の「一般語彙」を一本槍で仕留められないか？
-足掛け3年、2024年度第3回試験（R6-3）でようやく漢検1級に合格することのできた私が、つねづね考えてきたことです。
-続きをみる]]></summary>
-        <author>
-            <name>しゃけ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scalaで特定の警告をエラーにするには -Wconf:msg=FOOBAR:error と書けばよいので non-exhaustive match だけエラーにできる]]></title>
-        <id>hatenablog://entry/6802418398365762549</id>
-        <link href="https://blog.3qe.us/entry/2025/04/21/210911"/>
-        <updated>2025-04-21T12:09:11.000Z</updated>
-        <summary type="html"><![CDATA[Scalaコンパイラは、特定の警告メッセージに対してad-hocに警告からエラーに昇格させ、コンパイルを失敗させることができる。
-以下のscalac optionを設定することで non-exhaustive match だけエラーにできる:
--Wconf:msg=match may not be exhaustive:error
-sbtだと以下のような設定になる:
-scalacOptions += "-Wconf:msg=match may not be exhaustive:error"
-
-
-
-あらすじ
-先日Scalaの英語版Discordを見ていたら、以下のような質問があった(意訳)
-matchが不完全な場合にエラーにする方法ないの？-Werrorしたら全ての警告をエラーにできるけど、さすがに範囲がでかすぎて使いものにならないよ。
-
-
-Scalaユーザにとってmatchが不完全な状態は大抵の場合エラーにしたいはず。しかしこれだけエラーにする方法はなさそうでその時は自分も「たぶんそういうオプションはなさそう」と答えるほかなかった。
-しかし後日Discordを見たところ解決していた。
-discord.com
-また同様のことをScalaわいわいランドで訊いたところ同様の答えであった*1。
-discord.com
-教えてくださった方々ありがとうございました。
-*1:質問した時点では英語版のDiscordで解決済みであることを知らなかった]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
