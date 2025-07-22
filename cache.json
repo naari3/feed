@@ -6807,6 +6807,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398519455803",
+          "author": null,
+          "description": "掲題の通り。\nAndroidスマホにはWalletという機能があり、カードのタッチ決済などで使えるのだが、実はQRコードを取り込んで表示するという便利な機能がついている。表示するときは自動的に画面も明るくなるので、スクショをいちいち出したり紙に印刷するよりも便利だ。ホーム画面からすぐ呼び出せるのも良い。\n\nその他というカテゴリから追加できるようになっている。\n\nという内容をショート動画にした。自作ソフトウェアで組版したりVOICEVOXに喋らせたりしている。\n\n\n\n時代はショート動画だ。多くの人にリーチさせるには、ショート動画なのだなあと思うことが最近とみに増えた。それはそうと、情報のソースとしてのブログの立ち位置も重要になっていく。フローの役目は動画に譲って、ストックの役目にブログが集中するのかもしれない。\nそれはそうと、動画を作る手間はそれなりにかかった。テキストベースの原稿から生成するので構成は楽なのだが、色の調整やショート動画固有の画面比率に合わせて要素を再配置するなどデザインの手間が多かった。",
+          "link": "https://blog.3qe.us/entry/2025/07/23/015657",
+          "publishedOn": "2025-07-22T16:56:57.000Z",
+          "wordCount": null,
+          "title": "万博のチケットはGoogle Walletに取り込んだほうが便利",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/b32dd570adbbb1b7b5a8aef3382d6e1fee245e6b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250723%2F20250723014944.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b32dd570adbbb1b7b5a8aef3382d6e1fee245e6b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250723%2F20250723014944.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398510434833",
           "author": null,
           "description": "あらすじ\nMakefile as task runner に対しての意見\n顧客が本当に欲しいものは、ディレクトリレベルのエイリアスなんじゃないですか？\nAllyas: ディレクトリごとにエイリアスを張るツール\n$PATHを乗っ取る\n$0 hack\nシンボリックリンクの自動化\n設定ファイル\nあらすじ\nこういう記事を見た。\nzenn.dev\n僭越ながら要約すると、Makefileにタスクを書いてタスクランナーとして用いているとのこと。また、Makefileのコメントを拾ってドキュメンテーションを生成できるようにしたとのこと。\nMakefileをタスクランナー代わりに用いるのはよくあることだが、ドキュメンテーションを生成するようにしたところがおもしろポイントである。\nそして、この記事への批判文脈として以下の記事を見た（正確には、この記事を見てから上掲の記事を読んだ）。\nwww.takeokunn.org\nこれもまた僭越ながら要約させてもらうと、まずドキュメントはMakefileではなくREADME.mdとかに書くべきであるし、makeである必要性がないのならnpmなどが持っているタスクランナー機能を利用したら良いのでは？という話。そして、正規表現はメンテナンス性が低い、という主張である。\nMakefile as task runner に対しての意見\nMakefileでよく使うタスクを記述することはよく見る。自分もやったことがある。その上で、今のところこう思っている。\nまず、百も承知だろうが、Makefileはそういう用途のために開発されたわけではなく、元々の用途は「ファイルを作るためにコマンドの実行が必要で、それぞれに依存関係がある」というビルドである。この基本がズレているので、正規表現を利用してドキュメンテーションを行うというさらに手間のかかったことをしてしまう。本来の目的で…",
