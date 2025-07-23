@@ -74,6 +74,31 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-07-23">2025-07-23</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2025.7.23</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025072343964/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Switch 2 国内150万台,Switch 2ポケモン同梱版,DualSense Tester v0.0.5,BetterQRScanner 20-07-25,PS5 Payloads 1.8a MOD,ps4-psfree-fix,ARK-4 v1753222026,Breeze beta99j,Ship of Harkinian(Shipwright) 9.0.4,CTGP-7updates v1.5.38,DracoDS 1.2,shadPS4 Pre-release-shadPS4-2025-07-22-14ef56d,Xenia Manager v2.6.1,X360PluginManager v2.0.0→→→この記事の続きを読む
+GameGaz Daily 2025.7.23 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-07-22">2025-07-22</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -15593,98 +15618,6 @@ Spliceに契約してたの忘れてて2200Credit余ってた。やばい。
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Scalaで変数に入った値そのものにパターンマッチさせるときは変数をバックティックで囲うとよい</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/04/24/213019" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Scalaのパターンマッチは変数を使って分割代入ができる。
-val xs &#x3D; 1 :: 2 :: 3 :: Nil
-
-xs match {
-  case head :: tail &#x3D;&gt; s&quot;head is $head&quot; // &#x3D;&gt; &quot;head is 1&quot;
-  case _            &#x3D;&gt; &quot;not found&quot;
-}
-
-
-
-これはxsに対してまずhead :: tail という式にマッチが試みられ、headには1が、tailには2 :: 3 :: Nilがマッチするので、それぞれの変数に代入され、後続の式で使えるようになっている。
-そしてs&quot;head is $head&quot;という式が評価されるが、ここではheadは1になっているので、このmatch式の返り値は&quot;head is 1&quot;になる。
-ちなみに、「この式がマッチするのか？」を判定する部分はどう実装されているのかというとunapplyメソッドで定義されているのだが、ここでは割愛。
-さて、パターンマッチに既に定義された変数をマッチさせたいときについて考えよう。例えば次のようなパターンだ:
-val head &#x3D; 42
-
-val ys &#x3D; 42 :: 43 :: 44 :: Nil
-
-ys match {
-  case ... // 先頭要素がheadになっているようなリストを取り出したい
-}
-
-
-
-素朴に書くと、headというパターン変数が分割代入のスコープで作られてしまうので、元々の変数を覆い隠してしまう:
-// 本来xsは先頭が42ではないのだが・・・
-xs match {
-  case head :: tail &#x3D;&gt; s&quot;head is $head&quot; // 常にマッチしてしまう!!!
-  case _            &#x3D;&gt; &quot;not found&quot;
-}
-
-
-
-headの部分には、既にあるheadが入ってほしいのに・・・
-バックティック
-こんなときは、バックティック(バッククオートとも)を使うと良い。使いたい変数をバックティックで囲うことで、「これはパターン変数ではないですよ」と知らせることができる。するとこの変数の中身にマッチするようになる。
-xs match {
-  case &#x60;head&#x60; :: tail &#x3D;&gt; s&quot;head is $head&quot; // xsはマッチしない
-  case _              &#x3D;&gt; &quot;not found&quot;
-}
-
-ys match {
-  case &#x60;head&#x60; :: tail &#x3D;&gt; s&quot;head is $head&quot; // ysはマッチする
-  case _              &#x3D;&gt; &quot;not found&quot;
-}
-
-
-
-その他の方法
-ifを使う方法もあるが冗長になる。
-xs match {
-  case h :: tail if h &#x3D;&#x3D; head &#x3D;&gt; s&quot;head is $head&quot;
-  case _                      &#x3D;&gt; &quot;not found&quot;
-}
-
-
-
-仕様
-この仕様は言語仕様で明記されている:
-2.13の言語仕様のうち8.1.6によれば:
-To resolve the syntactic overlap with a variable pattern, a stable identifier pattern may not be a simple name starting with a lower-case letter. However, it is possible to enclose such a variable name in backquotes; then it is treated as a stable identifier pattern.
-(拙訳) 変数パターンとの構文的な衝突を避けるため、安定識別子パターン（stable identifier pattern）は、先頭が小文字の単純な名前としては書けないんだ。でも、その名前をバッククォート ... で囲めば、安定識別子パターンとして解釈されるようになるよ。
-
-
-安定識別子とは言語仕様上の概念なのでここではあまり考えなくてよい。とにかく、小文字の変数を書くとそれはパターン変数に使われてしまうが、バッククオートで回避できるということが書かれている。
-scala-lang.org
-3系の仕様でも同様:
-scala-lang.org
-出典
-この記事は、Discordで来た質問を記事に起こしたもの。
-discord.com
-Discordへの参加はこちら
-scala-waiwai-land.github.io</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398376264992/1745497819" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17796,7 +17729,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-07-23T00:04:08.169Z">2025-07-23T00:04:08.169Z</time>
+    <time id="build-timestamp" datetime="2025-07-23T01:29:49.683Z">2025-07-23T01:29:49.683Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

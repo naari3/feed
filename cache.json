@@ -7164,21 +7164,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398388906565/1745842260"
-        },
-        {
-          "id": "hatenablog://entry/6802418398376264992",
-          "author": null,
-          "description": "Scalaのパターンマッチは変数を使って分割代入ができる。\nval xs = 1 :: 2 :: 3 :: Nil\n\nxs match {\n  case head :: tail => s\"head is $head\" // => \"head is 1\"\n  case _            => \"not found\"\n}\n\n\n\nこれはxsに対してまずhead :: tail という式にマッチが試みられ、headには1が、tailには2 :: 3 :: Nilがマッチするので、それぞれの変数に代入され、後続の式で使えるようになっている。\nそしてs\"head is $head\"という式が評価されるが、ここではheadは1になっているので、このmatch式の返り値は\"head is 1\"になる。\nちなみに、「この式がマッチするのか？」を判定する部分はどう実装されているのかというとunapplyメソッドで定義されているのだが、ここでは割愛。\nさて、パターンマッチに既に定義された変数をマッチさせたいときについて考えよう。例えば次のようなパターンだ:\nval head = 42\n\nval ys = 42 :: 43 :: 44 :: Nil\n\nys match {\n  case ... // 先頭要素がheadになっているようなリストを取り出したい\n}\n\n\n\n素朴に書くと、headというパターン変数が分割代入のスコープで作られてしまうので、元々の変数を覆い隠してしまう:\n// 本来xsは先頭が42ではないのだが・・・\nxs match {\n  case head :: tail => s\"head is $head\" // 常にマッチしてしまう!!!\n  case _            => \"not found\"\n}\n\n\n\nheadの部分には、既にあるheadが入ってほしいのに・・・\nバックティック\nこんなときは、バックティック(バッククオートとも)を使うと良い。使いたい変数をバックティックで囲うことで、「これはパターン変数ではないですよ」と知らせることができる。するとこの変数の中身にマッチするようになる。\nxs match {\n  case `head` :: tail => s\"head is $head\" // xsはマッチしない\n  case _              => \"not found\"\n}\n\nys match {\n  case `head` :: tail => s\"head is $head\" // ysはマッチする\n  case _              => \"not found\"\n}\n\n\n\nその他の方法\nifを使う方法もあるが冗長になる。\nxs match {\n  case h :: tail if h == head => s\"head is $head\"\n  case _                      => \"not found\"\n}\n\n\n\n仕様\nこの仕様は言語仕様で明記されている:\n2.13の言語仕様のうち8.1.6によれば:\nTo resolve the syntactic overlap with a variable pattern, a stable identifier pattern may not be a simple name starting with a lower-case letter. However, it is possible to enclose such a variable name in backquotes; then it is treated as a stable identifier pattern.\n(拙訳) 変数パターンとの構文的な衝突を避けるため、安定識別子パターン（stable identifier pattern）は、先頭が小文字の単純な名前としては書けないんだ。でも、その名前をバッククォート ... で囲めば、安定識別子パターンとして解釈されるようになるよ。\n\n\n安定識別子とは言語仕様上の概念なのでここではあまり考えなくてよい。とにかく、小文字の変数を書くとそれはパターン変数に使われてしまうが、バッククオートで回避できるということが書かれている。\nscala-lang.org\n3系の仕様でも同様:\nscala-lang.org\n出典\nこの記事は、Discordで来た質問を記事に起こしたもの。\ndiscord.com\nDiscordへの参加はこちら\nscala-waiwai-land.github.io",
-          "link": "https://blog.3qe.us/entry/2025/04/24/213019",
-          "publishedOn": "2025-04-24T12:30:19.000Z",
-          "wordCount": null,
-          "title": "Scalaで変数に入った値そのものにパターンマッチさせるときは変数をバックティックで囲うとよい",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398376264992/1745497819",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398376264992/1745497819"
         }
       ]
     },
@@ -7831,6 +7816,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=43964",
+          "author": "mamosuke",
+          "description": "Switch 2 国内150万台,Switch 2ポケモン同梱版,DualSense Tester v0.0.5,BetterQRScanner 20-07-25,PS5 Payloads 1.8a MOD,ps4-psfree-fix,ARK-4 v1753222026,Breeze beta99j,Ship of Harkinian(Shipwright) 9.0.4,CTGP-7updates v1.5.38,DracoDS 1.2,shadPS4 Pre-release-shadPS4-2025-07-22-14ef56d,Xenia Manager v2.6.1,X360PluginManager v2.0.0→→→この記事の続きを読む\nGameGaz Daily 2025.7.23 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025072343964/",
+          "publishedOn": "2025-07-23T00:56:57.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.7.23",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=43962",
           "author": "mamosuke",
