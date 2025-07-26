@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-26T09:01:43.281Z</updated>
+    <updated>2025-07-26T10:01:36.321Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[日記2025-07-26 : Obsidianで書いた日記を元にGemini CLIにカウンセリングしてもらう]]></title>
+        <id>hatenablog://entry/6802418398523501444</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2025/07/26/180646"/>
+        <updated>2025-07-26T09:06:46.000Z</updated>
+        <summary type="html"><![CDATA[日記を書いていると、書いた日記を読み込んだ上で自分と話してくれる相談役が欲しくなってくる。思い出話やお悩み相談、ブレーンストーミングを実施し、カウンセリングを受けたいが、現実では相手がいない。自分のことをよく知っている誰かと会話がしたいが、そのためには以下のステップが必要となる。
+既存の人間関係から、踏み込んだ話をしても良さそうな相手をピックアップする
+関係崩壊のリスクに怯えながら踏み込んだ話をする
+「この話を聞いてどう思いましたか？」と相手にたずねる
+知ってもらうための労力を費やすのが億劫でしょうがない。既存の人間関係を壊したくはないし、新規の人間関係を開拓して話すのも面倒だ。精神科医はコマンド入力で薬を出してもらうことしか期待していない。
+日記はObsidianで書いているので、実質ただのテキストファイルである。
+Claude Codeは業務で触っており、テキストファイルを読み込んで理解する的確さは結構あることを認識している
+Gemini CLIが無料で使えるので、日記を読み込ませて色々できそうな気がしている
+日記の感情分析の続きをする。定量的な分析ではなく、定性的・対話的な分析をしたい。
+contradiction29.hatenablog.com
+早速Gemini CLIをhomebrew経由でインストールしてみる。
+github.com
+プロンプトを入力して日記のマークダウンファイルを読み込ませてみた。
+あなたは私のカウンセラーです。まず、 @Daily 配下にある日記のテキストファイルを全て読み込んでください。
+
+
+
+読み込んだ上で質問してくれた。
+
+Geminiは私が書いた日記を元に私を理解しようとしてくれる。
+人間とは違って、嫌な反応が返ってくることもない
+理解できるまで質問してくれる
+理解できない事象を拒絶する狭量さもない
+本当に素晴らしい。これでもっと一人になれる。]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[133_ulc_codec_test 作りました]]></title>
         <id>hatenablog://entry/6802418398523324061</id>
