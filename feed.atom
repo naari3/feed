@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-26T06:02:02.819Z</updated>
+    <updated>2025-07-26T07:02:41.759Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[133_ulc_codec_test 作りました]]></title>
+        <id>hatenablog://entry/6802418398523324061</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/07/26/152427"/>
+        <updated>2025-07-26T06:24:27.000Z</updated>
+        <summary type="html"><![CDATA[久しぶりにサンプルプログラムを作りました。ulcと呼ばれるコーデックでとても音質が良いです。8ad(ADPCM)は基本8ビットを4ビットにするだけですので半分サイズしかなりませんけど、ulcは細かいパラメータ（現実的な範囲は90から70）に調節できます。使い方はコーデック製作者さんの思惑ではないパッチ的な使い方ですけど・・・各自変更してくださいませ。
+ULCバッファは1回実行あたり256バイト生成され、GBAの1VBLANKバッファは224バイトとなっています。そのあたりのバッファ格納調整が面倒かもしれません。
+github.com]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.7.26]]></title>
         <id>https://gamegaz.com/?p=43977</id>

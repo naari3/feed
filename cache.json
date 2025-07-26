@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398523324061",
+          "author": null,
+          "description": "久しぶりにサンプルプログラムを作りました。ulcと呼ばれるコーデックでとても音質が良いです。8ad(ADPCM)は基本8ビットを4ビットにするだけですので半分サイズしかなりませんけど、ulcは細かいパラメータ（現実的な範囲は90から70）に調節できます。使い方はコーデック製作者さんの思惑ではないパッチ的な使い方ですけど・・・各自変更してくださいませ。\nULCバッファは1回実行あたり256バイト生成され、GBAの1VBLANKバッファは224バイトとなっています。そのあたりのバッファ格納調整が面倒かもしれません。\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/26/152427",
+          "publishedOn": "2025-07-26T06:24:27.000Z",
+          "wordCount": 466,
+          "title": "133_ulc_codec_test 作りました",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/e555a43c5bc79bff32643b0551c69285f0b90fed/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250726%2F20250726152239.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e555a43c5bc79bff32643b0551c69285f0b90fed/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250726%2F20250726152239.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398517803763",
           "author": null,
           "description": "一部のエフェクト（渦巻きとか）に妙なひっかかりがあると思ったらアニメパターン重複しているじゃないですかやだー。次回修正案件ですね・・・。\nCLS91_30.bmp\nCLS91_31.bmp\n\nCLS93_09.bmp\nCLS93_10.bmp\n\n渦巻き\nCLS96_08.bmp\nCLS96_09.bmp",
