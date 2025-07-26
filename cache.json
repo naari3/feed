@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398523693601",
+          "author": null,
+          "description": "garbro作者morktさんのgithubで見つけました。supersakuraと合わせればpiaキャロットへようこそ!が移植できるのでは・・・。やらないですけど。しばらく筋トレのごとく、小粒なプロジェクトを作りたい気分でいます。\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/26/231451",
+          "publishedOn": "2025-07-26T14:14:51.000Z",
+          "wordCount": 463,
+          "title": "adv98",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398523693601/1753539520",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398523693601/1753539520"
+        },
+        {
           "id": "hatenablog://entry/6802418398523324061",
           "author": null,
           "description": "久しぶりにサンプルプログラムを作りました。ulcと呼ばれるコーデックでとても音質が良いです。8ad(ADPCM)は基本8ビットを4ビットにするだけですので半分サイズしかなりませんけど、ulcは細かいパラメータ（現実的な範囲は90から70）に調節できます。使い方はコーデック製作者さんの思惑ではないパッチ的な使い方ですけど・・・各自変更してくださいませ。\nULCバッファは1回実行あたり256バイト生成され、GBAの1VBLANKバッファは224バイトとなっています。そのあたりのバッファ格納調整が面倒かもしれません。\ngithub.com",
@@ -1096,21 +1111,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/47622588fd6ef702913188ed370907ba2f888ed9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250507%2F20250507093655.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398387502431",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。2025年4月20日（日）から2025年4月26日（土）〔2025年4月第4週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    氷河期世代支援はいらない。 - Everything you've ever Dreamed\n by id:Delete_All \n    \n2\n    NHK総合「激突メシあがれ」に登場したうどんと佐渡の食材について - 趣味の製麺\n by id:tamaokiyutaka \n    \n3\n    モノタロウのAI駆動開発の全貌をご紹介します - MonotaRO Tech Blog\n by id:monotaro-tech-blog \n    \n4\n    弾丸、日帰り新潟旅行。寿司、燕三条背脂ラーメンからの寿司。 - 今夜はいやほい\n by id:kikuchidesu \n    \n5\n    今のAIの急激な進化は、今までの遅れを取り戻しただけで、これからは普通の成長速度になるんでは - きしだのHatena\n by id:nowokay \n    \n6\n    TRON OS (超漢字V)版「DOOM」を作った話。トロンOSはWindowsより優れていたとかいう都市伝説の謎。 - 人生に疲れた男のblog\n by id:BCC \n    \n7\n    『教皇選挙』のキリスト教美術史、聖書的な見どころ - ペリカンの涙\n by id:sayokokarikari \n    \n8\n    現在のアメリカを理解する助けとなる25本の映画 - YAMDAS現更新履歴\n by id:yomoyomo \n    \n9\n    日本国はローマ教皇「台下」と公式には呼ぶ／サウジ国王は『二聖モスクの守護者』、アンドラ公国は『猊下』～外務省の公式称号・敬称一覧が面白い …",
-          "link": "https://blog.hatenablog.com/entry/2025/04/28/120000",
-          "publishedOn": "2025-04-28T03:00:00.000Z",
-          "wordCount": 1047,
-          "title": "今週のはてなブログランキング〔2025年4月第4週〕",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/eb2a2715763b9efaf03c86191216cf7017ed79af/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250428%2F20250428091843.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/eb2a2715763b9efaf03c86191216cf7017ed79af/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250428%2F20250428091843.jpg"
         }
       ]
     },
