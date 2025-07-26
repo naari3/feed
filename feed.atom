@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-26T21:01:38.114Z</updated>
+    <updated>2025-07-26T22:01:45.370Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2025.7.27]]></title>
+        <id>https://gamegaz.com/?p=43980</id>
+        <link href="https://gamegaz.com/2025072743980/"/>
+        <updated>2025-07-26T21:11:08.000Z</updated>
+        <summary type="html"><![CDATA[ARK-4 rev196,minute_minute v1.5,DracoDS 1.3,xenia-canary-releases 4182852→→→この記事の続きを読む
+GameGaz Daily 2025.7.27 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[完全自律型AIエージェントのベンチマーク(2): Codex、Jules、OpenHandsを加えて]]></title>
         <id>6884f3572b07630001406956</id>
@@ -10784,27 +10795,6 @@ robots.txtでLLMからのアクセスをrejectするコンテンツプロバイ�
 次に、先程の問題とやや重な…]]></summary>
         <author>
             <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VRChatで動画プレイヤーが再生できないエラーに対応した際の対応について]]></title>
-        <id>hatenablog://entry/6802418398388612280</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2025/04/28/180140"/>
-        <updated>2025-04-28T09:01:40.000Z</updated>
-        <summary type="html"><![CDATA[概要
-2025年4月、筆者の手元でVRChat上で動画プレイヤーが突然再生できなくなる事象が発生した。
-フレンドさんは再生できていたので、筆者の手元に限定して起こった出来事である。
-YouTube側のBot判定により、YouTubeがyt-dlpによるアクセスをブロックし、ログインを要求したことが直接的な原因である
-Windowsのファイアウォール設定にルールを追加してBot判定が行われる状況を回避し、動画を再生できる状態まで復元できた
-自分用に対処法をメモしておく。
-何が起こったか
-2025年の4月のある日、動画再生ギミックのあるワールドに入ったら、動画が聞こえなくなった。昨日は再生できていたので、何もしていないのに壊れたことになる。いろいろなワールドで調べてみたが、どうやらすべてで発生している。Twitterを観る感じ、他にも同様のエラーに遭遇したユーザーさんがいるらしい。というわけで早速調査してみる。
-ログをみる
-まずは「設定 > デバッグ情報 > ログフォルダーを開く」からログを見てみる。エラー発生時のログが記載されていた。
-2025.04.28 14:45:24 Debug      -  NativeProcess.HasExited: process exited with code 1, took 1781 ms. Command line: C:/Users/sora3/AppData/LocalLow/VRChat/VRChat\Tools/yt-dlp.exe (...)
-2025.04.28 14:45:24 Warning    -  [Video Playback] ERROR: [youtube] jfKfPfyJRdk: Sign in to confirm you�fre not a bot. Use --cookies-from-brow…]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>
