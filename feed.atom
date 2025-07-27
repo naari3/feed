@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-27T00:04:15.337Z</updated>
+    <updated>2025-07-27T01:30:36.966Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10772,29 +10772,6 @@ def sum(input: SumInput): IO[Seq[ContentPart]] =
         <summary type="html"><![CDATA[問題の詳細と対策について。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[生成AIがWeb上のコンテンツを読めるようになる鍵は暗号通貨によるマイクロペイメント(かもしれない)]]></title>
-        <id>hatenablog://entry/6802418398388906565</id>
-        <link href="https://blog.3qe.us/entry/2025/04/28/211100"/>
-        <updated>2025-04-28T12:11:00.000Z</updated>
-        <summary type="html"><![CDATA[こういう記事を読んだ。
-fujii-yuji.net
-僭越ながら意訳すると、
-robots.txtでLLMからのアクセスをrejectするコンテンツプロバイダが増えている(はてなブログも現状はrejectしている)
-なぜrejectするのかというと、負荷がかかる上に収益を奪われる形になるから
-しかしそうなるとLLMは古いコンテンツしか参照できない
-情報を発信している人が対価を得られるような健全なエコシステムが必要なのではないか
-この記事では、暗号通貨で面白いことできるんじゃない？ということを話す。私はAIの専門家でもないし、暗号通貨に関してもいろいろ弄っている程度の知識しかないので、色々な意見が聞きたい。
-マイクロペイメントとその障壁
-現在は読める/読めないという二項対立的な対応をすることしかできないが、もうすこし柔軟に、「相応の対価を支払ってくれたら閲覧を許可する」という挙動を考えるのはどうだろう。例えば、この記事が読みたければ10円くらい払ってほしいけど、どうですか？とコンテンツプロバイダ側がオファーして、(ユーザに委任された)LLMがそれに乗って決済を実行し、決済が確認されたコンテンツプロバイダは正規のコンテンツに誘導する、という仕組みだ。つまり、ユーザはLLMに500円くらい入った財布を預けて、お使いに出す、という格好だ。
-この手のごく少額の決済はマイクロペイメントと呼ばれている。
-これを実現するにはいくつかの障壁がある。
-まず、支払いプラットフォームを統一できないということ。LLMはクレカで支払いたいけど、コンテンツプロバイダはPayPayで払ってほしいようだ、ということが起こるのは容易に想像がつく。大統一プラットフォームを作ることもできるだろうが、するとそのプラットフォームがショバ代手数料を取るようになって面倒なことこの上ないだろう。
-次に、先程の問題とやや重な…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
