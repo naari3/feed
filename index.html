@@ -15501,44 +15501,6 @@ GameGaz Daily 2025.4.29 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Scala 3でMCPサーバとフレームワークをフルスクラッチした</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/04/29/004251" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>だいたいタイトルの通り。最近MCPサーバ書くのが流行っており、実は自分はけっこう前にサーバ自体は書いてしまっていたのだが、記事にする元気がなかったので放置していた。しかし冷静に考えるとけっこう学びがあったので記事として残しておく。
-記事書いたほうがいいかな〜と思っていたが、以下の記事を見て触発されて書くことにした。
-zenn.dev
-これであなたもAI人材！という感じの記事ではない。最低限必要なものを全部実装しました、という記事だ。あまり有益な記事ではないかもしれないが、頑張って動いて嬉しかった、という日記だと思って読んでください。
-やったこと
-以下のことをやった。既にあるフレームワークを使うだけなのは芸がないので、自分でサーバ自体をフルスクラッチして、ユーザが関数を渡すだけでサーバが立つようにした。全部自作なので、すごい量の知見が貯まった。
-ScalaでMCPサーバを構築するためのフレームワークを作成した
-それを使って数列の和を返すようなToolを定義できた
-コードはここに公開してある。
-github.com
-コード例
-百聞は一見に如かず。実際にコードを見てみよう。3つのものを用意するだけでサーバを作ることができる。すなわち、入力を定義するcase classと、実際に入力を受け取ってIO[Seq[ContentPart]]型を返す関数、そしてこの関数を複数収めたMapである。
-case class SumInput(
-    xs: Seq[Int]
-) derives io.circe.Decoder, sttp.tapir.Schema
-
-def sum(input: SumInput): IO[Seq[ContentPart]] &#x3D;
-  val sum &#x3D; input.xs.sum
-  IO.pure(Seq(ContentPart.TextContentPart…</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/8674b410b330ff90e0ad6e0349d503c1d0264c52/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250429%2F20250429002410.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17650,7 +17612,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-07-27T03:31:59.250Z">2025-07-27T03:31:59.250Z</time>
+    <time id="build-timestamp" datetime="2025-07-27T04:17:15.335Z">2025-07-27T04:17:15.335Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
