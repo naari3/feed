@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-27T02:44:59.874Z</updated>
+    <updated>2025-07-27T03:31:59.303Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[火災報知器が鳴ったら帽子をかぶっていくといいかもしれない]]></title>
+        <id>hatenablog://entry/6802418398523975020</id>
+        <link href="https://blog.3qe.us/entry/2025/07/27/122055"/>
+        <updated>2025-07-27T03:20:55.000Z</updated>
+        <summary type="html"><![CDATA[先日、休日の昼頃に気持ちよく寝ていたところ火災報知器が発報した。
+もちろん叩き起こされて他の哀れな子羊たちと共に建屋の外へとひり出されたわけだが、もう夏も盛りがつき始め蝉が逢瀬の声を上げ出した時分なので、ファッキン・ホット（くそ暑い）である。ああ、英語だと盛りがつくことをヒートって言うんだっけ、そんなことを考えていたら一階だ。
+当たり前だが安全の確認がつくまでは部屋へと戻れないので、その場でしばらく待たされる。慌てて飛び出してきたものだから、もちろん帽子も水筒もハンディファンも持っていない。準備万端で火事が来ることなどないので、それはそう。これが、まあ、暑い。真昼に寝間着も同然で放り出されるのだから当然だ。宇宙服無しで船外活動をしているようなもんである。我々は宇宙飛行士よりはややマシな身分にあるが、もっぱら自然の営みに己の環境を委ねるほかないという意味ではおよそ同じだ。クソ太陽、クソ温度。これだ。
+しかし、昼間に火災報知器で外に飛び出すときはとりあえず帽子だけかぶっておくとよいかもしれない。両手が塞がるもんでもないし、あるだけ得（マジのマジで燃えてたら、融けたりして危ないから脱いだほうがいいと思うけど）。ハンディファンの類は準備しだすときりがないし、邪魔だ。
+今回はどうも何も無かったらしく、数分で我々は元いたウサギ小屋に吸い込まれていく。しかし火災発報によりエレベータは停止しており、位置エネルギーをもっぱら自らの大腿筋で稼ぐ営みが十数階分進められて、これが結局一番ダルいのであった。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.7.27]]></title>
         <id>https://gamegaz.com/?p=43980</id>
@@ -10762,16 +10776,6 @@ def sum(input: SumInput): IO[Seq[ContentPart]] =
   IO.pure(Seq(ContentPart.TextContentPart…]]></summary>
         <author>
             <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 Alt+Tab ウィンドウ増殖問題]]></title>
-        <id>https://r7kamura.com/articles/2025-04-29-windows-11-alt-tab-duplicated</id>
-        <link href="https://r7kamura.com/articles/2025-04-29-windows-11-alt-tab-duplicated"/>
-        <updated>2025-04-28T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[問題の詳細と対策について。]]></summary>
-        <author>
-            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
