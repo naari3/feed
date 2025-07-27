@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398524062702",
+          "author": null,
+          "description": "先月にEWRAM（？）でやらかして以来、他は大丈夫なのか疑心暗鬼になっています。。ぶっちゃけ、割り込みとサウンド作法に関してはかなり怪しいんですよねー。本当にあの順番で正しいのか？は今でも思います。プチノイズが乗らなければ正解というルーズな感覚なんですよ・・・。いやたぶん123番目のプロジェクトで参考にしたのは〇〇のライブラリなので問題ないと思います。思いたい。\n\nそれで、今回の本題の割り込みについてです。こちらがいつも使っている割り込みハンドラになります。\nIWRAM_CODE void IrqHandler(void)\n{\n\tREG_IME  = 0;\n\tu16 flag = REG_IF;\n\n\tif(flag & IRQ_VBLANK)\n\t{\n\t\t// TODO\n\n\t\tREG_IRQ_WAITFLAGS |= IRQ_VBLANK;\n\t}\n\n\tREG_IF  = flag;\n\tREG_IME = 1;\n}\nそしてlibgba、libtonc、rust gbaの割り込みハンドラはこちらになります。えーと列挙したのですけど私は完全に読めていません。\nhttps://github.com/devkitPro/libgba/blob/master/src/InterruptDispatcher.s\nhttps://github.com/devkitPro/libtonc/blob/master/asm/tonc_isr_master.s\nhttps://github.com/agbrs/agb/blob/master/agb/src/interrupt_handler.s\nパっと見で、CPSRとSPSR処理がないですよね・・・私の方。ええ、最初見たときはまた何年分もアホやらかしたかと思いました。でも今回はなんとBIOSがそのあたりはやってくれていたので割り込み後に謎のモードのまま動いているわけではないです。NO$GBAデバッカでlibgbaと比較確認済。gba-docs-jaから引用するとこんな感じです。\n  00000018  b      128h                ; IRQベクタ(BIOSハンドラにジャンプ)\n  00000128  stmfd  r13!,r0-r3,r12,r14  ; レジスタをSP_irqに退避\n  0000012C  mov    r0,4000000h         ; ptr+4 to 03FFFFFC (mirror of 03007FFC)\n  00000130  add    r14,r15,0h          ; retadr for USER handler $+8=138h\n  00000134  ldr    r15,[r0,-4h]        ; jump to [03FFFFFC] USER handler\n  00000138  ldmfd  r13!,r0-r3,r12,r14  ; SP_irqに退避したレジスタを復帰\n  0000013C  subs   r15,r14,4h          ; IRQからリターン (PC=LR-4, CPSR=SPSR)\n割り込みが発生すると0x18にジャンプして、即0x128にジャンプ。BIOSハンドラ内でレジスタ退避。0x134でユーザ定義ハンドラにジャンプ。戻ってきたら0x138, 0x13Cで元通りという寸法です。ということは有名どころの割り込みハンドラは2回同じ処理しているということですよね・・・？いや何か自分がミスしていないかの方が心配になります・・・。ん－ー時間を見て質問してみようかな・・・・。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/07/27/142331",
+          "publishedOn": "2025-07-27T05:23:31.000Z",
+          "wordCount": 547,
+          "title": "割り込みハンドラ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398524062702/1753594444",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398524062702/1753594444"
+        },
+        {
           "id": "hatenablog://entry/6802418398523693601",
           "author": null,
           "description": "garbro作者morktさんのgithubで見つけました。supersakuraと合わせればpiaキャロットへようこそ!が移植できるのでは・・・。やらないですけど。しばらく筋トレのごとく、小粒なプロジェクトを作りたい気分でいます。\ngithub.com",
