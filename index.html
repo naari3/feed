@@ -15553,53 +15553,6 @@ SMS配信サービスごとに番号が決まっているらしく、同じサ�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
-              rel="noopener">ちなみに</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">export VSCODE_INJECTION&#x3D;0</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2025/04/30/104618?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>VSCode系のIDEのターミナルを開くと以下のような警告が出て気になっていた。
-warning: completion was already initialized before completion module. Will call compinit again. See https://github.com/zimfw/zimfw/wiki/Troubleshooting#completion-is-not-working
-warning: compinit being called again after completion module at /Users//.config/zim/modules/completion/init.zsh:36
-compinit が2回呼ばれていると言われているけど設定をさらっても重複しているところはない。別のターミナルで開いたときは警告は出ないのでやはり設定がおかしい訳ではなさそう。
-ところでVSCode系のエディタで Shell Integration を使うために以下のように追加のスクリプトを読み込んでいる。(ちなみにフォークしたエディタでもこのまま動く)
-# VSCode shell integration
-[[ &quot;$TERM_PROGRAM&quot; &#x3D;&#x3D; &#x27;vscode&#x27; ]] &amp;&amp; . &quot;$(code --locate-shell-integration-path zsh)&quot;
-
-
-
-よく読むとこの中でもう一度 .zshrc を読み込んでいる。
-# Only fix up ZDOTDIR if shell integration was injected (not manually installed) and has not been called yet
-if [[ &quot;$VSCODE_INJECTION&quot; &#x3D;&#x3D; &quot;1&quot; ]]; then
-    if [[ $options[norcs] &#x3D; off  &amp;&amp; -f $USER_ZDOTDIR/.zshrc ]]; then
-        VSCODE_ZDOTDIR&#x3D;$ZDOTDIR
-        ZDOTDIR&#x3D;$USER_ZDOTDIR
-       # A user&#x27;s custom HISTFILE location might be set when their .zshrc file is sourced below
-     . $USER_ZDOTDIR/.zshrc
-    fi
-fi
-
-
-
-明らかにこれが原因である。
-VSCODE_INJECTION をみて判定していそうなので、 export VSCODE_INJECTION&#x3D;0 って書いておくと解決した。
-ところで、コメントをよく読むと Only fix up ZDOTDIR if shell integration was injected (not manually installed) and has not been called yet と書かれている。どうやら手動でスクリプトを読み込まなくても良さそうな書き方に見える。
-ドキュメントを見に行くと Automatic script injection と言うのがデフォルトになっているらしい。Shell integration が実験的な機能だったときから使っていたので気付いてなかった。
-ということで本質的な原因は自動注入が動いたあとに手動でも読み込んでいるのが悪かったのであった。手動で読み込むのをやめました。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398394948488/1745977788" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17711,7 +17664,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-07-28T13:14:23.770Z">2025-07-28T13:14:23.770Z</time>
+    <time id="build-timestamp" datetime="2025-07-28T14:03:34.738Z">2025-07-28T14:03:34.738Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

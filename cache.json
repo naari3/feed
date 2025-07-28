@@ -1163,21 +1163,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d785480c35648b943dfaf5b82ddebe0e404b723b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31EYkJS8--L._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398394948488",
-          "author": null,
-          "description": "VSCode系のIDEのターミナルを開くと以下のような警告が出て気になっていた。\nwarning: completion was already initialized before completion module. Will call compinit again. See https://github.com/zimfw/zimfw/wiki/Troubleshooting#completion-is-not-working\nwarning: compinit being called again after completion module at /Users/<USER>/.config/zim/modules/completion/init.zsh:36\ncompinit が2回呼ばれていると言われているけど設定をさらっても重複しているところはない。別のターミナルで開いたときは警告は出ないのでやはり設定がおかしい訳ではなさそう。\nところでVSCode系のエディタで Shell Integration を使うために以下のように追加のスクリプトを読み込んでいる。(ちなみにフォークしたエディタでもこのまま動く)\n# VSCode shell integration\n[[ \"$TERM_PROGRAM\" == 'vscode' ]] && . \"$(code --locate-shell-integration-path zsh)\"\n\n\n\nよく読むとこの中でもう一度 .zshrc を読み込んでいる。\n# Only fix up ZDOTDIR if shell integration was injected (not manually installed) and has not been called yet\nif [[ \"$VSCODE_INJECTION\" == \"1\" ]]; then\n    if [[ $options[norcs] = off  && -f $USER_ZDOTDIR/.zshrc ]]; then\n        VSCODE_ZDOTDIR=$ZDOTDIR\n        ZDOTDIR=$USER_ZDOTDIR\n       # A user's custom HISTFILE location might be set when their .zshrc file is sourced below\n     . $USER_ZDOTDIR/.zshrc\n    fi\nfi\n\n\n\n明らかにこれが原因である。\nVSCODE_INJECTION をみて判定していそうなので、 export VSCODE_INJECTION=0 って書いておくと解決した。\nところで、コメントをよく読むと Only fix up ZDOTDIR if shell integration was injected (not manually installed) and has not been called yet と書かれている。どうやら手動でスクリプトを読み込まなくても良さそうな書き方に見える。\nドキュメントを見に行くと Automatic script injection と言うのがデフォルトになっているらしい。Shell integration が実験的な機能だったときから使っていたので気付いてなかった。\nということで本質的な原因は自動注入が動いたあとに手動でも読み込んでいるのが悪かったのであった。手動で読み込むのをやめました。",
-          "link": "https://blog.nishimu.land/entry/2025/04/30/104618?utm_source=feed",
-          "publishedOn": "2025-04-30T01:46:18.000Z",
-          "wordCount": 357,
-          "title": "export VSCODE_INJECTION=0",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398394948488/1745977788",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/6802418398394948488/1745977788"
         }
       ]
     },
