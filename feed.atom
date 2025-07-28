@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-28T06:02:45.016Z</updated>
+    <updated>2025-07-28T07:04:49.128Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ECMAScriptでもgroupBy()が使えるようになっていて嬉しい]]></title>
+        <id>hatenablog://entry/6802418398525361708</id>
+        <link href="https://blog.3qe.us/entry/2025/07/28/160057"/>
+        <updated>2025-07-28T07:00:57.000Z</updated>
+        <summary type="html"><![CDATA[ScalaユーザにはおなじみのgroupByメソッド。
+val xs = List(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+xs.groupBy(_ % 2)
+// => Map(0 -> List(0, 2, 4, 6, 8), 1 -> List(1, 3, 5, 7, 9))
+
+
+
+所与の関数を使ってコレクションを走査し、その返り値によって値を分類してマップにしてくれるという便利なメソッドだ。
+これがJavaScriptの場合、Baseline 2024では Map.groupBy()として利用できるようになっていて、ECMAScript 2026にも登録されている。
+const xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+Map.groupBy(xs, (n) => n % 2);
+// => Map (2) { true => [0, 2, 4, 6, 8], false => [1, 3, 5, 7, 9] }
+
+
+
+また、ECMAScript 2024ではObject.groupBy()が用意されているが、Map.groupBy()のほうが引数と返り値がより汎用的になっているようだ(文字列やsymbol以外もキーとして使えるとか、plain objectではなくMapで返ってくるといった違いがある)。
+個人的にはArrayにそのままメソッドが生えてくれていたほうが嬉しいのだが、なぜかMapのstatic methodという形で実装されている。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2025年7月第4週〕]]></title>
         <id>hatenablog://entry/6802418398525019985</id>
