@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-29T11:01:42.148Z</updated>
+    <updated>2025-07-29T12:02:16.753Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[END.｜ASICS スニーカーをどう売るか]]></title>
+        <id>https://note.com/kazumakawauchi/n/nea911427943c</id>
+        <link href="https://note.com/kazumakawauchi/n/nea911427943c"/>
+        <updated>2025-07-29T11:28:38.000Z</updated>
+        <summary type="html"><![CDATA[英国ニューカッスルのEND.（End Clothing）が、Asicsとのコラボで出したスニーカーのクリエイティブを記録しておこうと思います。
+写真を作品として撮っているうちに広告写真（のことも作品とは呼びますが、クライアントを満足させるために最終的な目的を何かを広告・宣伝することに設定した写真をここでは広告写真と呼んでいます）を撮るようになることが多いのと同じように、私もスポーツの写真や映像やブランディングをしている間に、少しずつ広告的な動きや、プロダクトのPRや、ブランドの開発などを頼まれることもあれば、そういった発想を持つことも増えてきました（良い悪いは置いておいて、広告的な視点を持って仕事をすることは楽しいことです）。
+続きをみる]]></summary>
+        <author>
+            <name>河内一馬</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2025/07]]></title>
         <id>https://note.com/aiobahn/n/n02a7b0de84cb</id>
@@ -10732,37 +10744,6 @@ Amazon
 結局こういった。ちょっと高くて、ちょっと大きなものというのはなかなか引っ越しのような機会がないと買い換えないのでよかったと思います。参考にしていただければ幸いです。]]></summary>
         <author>
             <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Godotのエディタのフォントが中華フォントなのを直す]]></title>
-        <id>hatenablog://entry/6802418398396937946</id>
-        <link href="https://rinsuki.hatenablog.jp/entry/2025/05/01/082230"/>
-        <updated>2025-04-30T23:22:30.000Z</updated>
-        <summary type="html"><![CDATA[TL;DR: Godot 4.4 以上にアップデートして、Noto Sans CJK を落としてOSに入れる。Google Fonts で落とせる Noto Sans JP ではダメなので注意！
-https://github.com/notofonts/noto-cjk/releases?q=sans&expanded=true で一番上に出てくる「Noto Sans CJK Version 〜〜」 の Assets を押して開き、「Language Specific OTFs Japanese (日本語)」を押す。
-
-すると なんちゃら_NotoSansCJKjp.zip が降ってくるので、その中の NotoSansCJKjp-なんちゃら.otf を全部インストールする (全部じゃなくていい気はするが、まあ……)
-Macなら複数選択して開くと一回でインストールできるのでおすすめ。
-
-で、インストールできたら Godot を再起動すると反映されるはず。
-before
-after
-
-
-
-
-
-
-
-
-
-
-
-普通にシステムフォント使えよ……と思わなくもないけど、まあ do not want to select a random system font to keep UI style consistent.1 らしいんで……
-https://github.com/godotengine/godot/pull/96850↩]]></summary>
-        <author>
-            <name>rinsuki’s blog</name>
         </author>
     </entry>
     <entry>
