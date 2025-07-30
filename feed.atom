@@ -2,10 +2,96 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-30T14:03:38.173Z</updated>
+    <updated>2025-07-30T15:01:57.794Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「週刊プラグインレビュー」Mastering the MIX / EQ Academy]]></title>
+        <id>https://note.com/massmasaoki/n/nab7f125df17b</id>
+        <link href="https://note.com/massmasaoki/n/nab7f125df17b"/>
+        <updated>2025-07-30T14:22:09.000Z</updated>
+        <summary type="html"><![CDATA[今月最後の記事になります。
+相変わらず、夏は引きこもっていつにもまして運動不足になっております笑
+今回は、Mastering the MixのEQ Academyをご紹介できればと。
+プラグインというよりは、学習ソフトなのですが、割と面白かったのでオススメしておきます。
+続きをみる]]></summary>
+        <author>
+            <name>moroishimasaoki</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android同士や、Android⇔PC間でファイルを高速転送できるクイックシェアが便利なのにあんまり知られてないので紹介します（Android版エアドロップ的なやつ）]]></title>
+        <id>hatenablog://entry/6802418398528304132</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/07/30/230622"/>
+        <updated>2025-07-30T14:06:22.000Z</updated>
+        <summary type="html"><![CDATA[先日、Androidスマホで撮影した動画をPCに送ってもらう機会があったんですけど、クイックシェアでくださいって言ったら通じず「これは意外に知られてないのでは…？」と思ったので紹介します。
+クイックシェア（QuickShare）とは
+iPhoneにエアドロップってあるじゃないですか。ファイル送るやつ。WiFiやBluetoothを使って端末同士で直接転送するので、他の転送方法（Googleドライブにアップして共有とか）より手軽かつ圧倒的に速いです。
+で、実はAndroidにも標準で同等の機能があるんですよ。それがクイックシェア（Quick Share）です。Android端末同士は設定なしで送れますし、Windowsへもクライアントアプリをインストールすれば送れます。これがけっこう便利。使ったことないですがMac、Linuxでもいけるっぽい。
+僕は、撮影した動画を他人に送るとき……は残念ながらクイックシェアの知名度が低いため使っておらず、もっぱらPCに大きめの動画や取材の録音データ等を送るのに使っています。有線接続なしでサッと高速転送できて便利。
+余談ですが以前はニアバイシェアという名前でした。
+以下、使い方です。
+使い方（ざっくり）
+受信側が「共有を許可」して、送信側から検索可能にする
+送信側でファイル送信許可を申請
+受信側が承認するとファイルが転送される
+Androidでの使い方
+受け取るとき
+①画面のいちばん上を下にスワイプしてメニューを出し、クイックシェアのアイコンを探します。（非表示にしている場合は出ないので設定しなおそう）
+
+②クイックシェアのメニューが出てくるので、「全ユーザー」を選びます。
+
+これで受信できるようになったので、送信側から送る操作をします。
+③すると受信メニューが出てくるので「承認する」を押します。
+
+④受信完了です。
+
+ダウンロードしたファイルはダウンロードフォルダに入ります。
+送るとき
+①何のアプリでもいいので送りたいファイルの共有メニュー（だいたいこのアイコンか、「︙」→共有）を開き、「Quick Share」を選びます。
+
+その後、受信側で、受信可能にする操作（「受け取る」の①②）をしてください。
+②すると受信可能にした端末が画面に出てくるので、選んでください
+
+そうすると受信側の画面にファイル受信のポップアップが出るので、「承認する」を押すとファイルが転送されます。
+Windowsでの使い方
+準備
+事前にQuick Share クライアントをインストールしておきます。
+www.android.com
+受け取る
+①タスクトレイの中にクイックシェアのアイコンがあるので探します
+
+②右クリックして「公開設定→全員に公開」を選びます
+
+これで受信できるようになったので、送信側から送る操作をします。
+③すると受信メニューが出てくるので「承認」を押します。
+
+④受信完了です。
+
+ダウンロードしたファイルはダウンロードフォルダに入ります。
+送る
+①タスクトレイからクイックシェアのアイコンを左クリックして、開きます。
+
+その後、受信側で、受信可能にする操作（「受け取る」の①②）をしてください。
+②すると受信可能にした端末が画面に出てくるので、選んでください
+
+
+そうすると受信側の画面にファイル受信のポップアップが出るので、「承認する」を押すとファイルが転送されます。
+Mac、Linux
+やったことないのであくまで検索しただけの情報ですが…
+Macはこれでできるっぽい
+‎QuickDrop - Share from Android on the Mac App Store
+Linuxについてはこのへん見てみてください
+NearbyShare/QuickShare を Linux で使ってみた備忘録 | hyt adversaria
+
+送信許可について
+AndroidでもWindowsでも、共有を許可したあと10分後に自動でクローズされます（端末を検索できなくなります）。
+以上です。バイバイ。]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「週刊プラグインレビュー」W.A. Production / Mixboss]]></title>
         <id>https://note.com/massmasaoki/n/n50e54dfc3a3b</id>
