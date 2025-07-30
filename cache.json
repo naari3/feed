@@ -3749,6 +3749,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398521893179",
+          "author": null,
+          "description": "このたび、生成AIによるクロールを拒否する設定ができるようになりました。この設定はすべてのプランでご利用いただけます。\n基本設定から「生成AIによるクロールを拒否」をONに設定すると、ご自身のブログやサイトのrobots.txtファイルに生成AIによるクロールを拒否するルールが自動的に追記されます。\n拒否の対象となるユーザーエージェントの詳細は、下記のヘルプをご確認ください。\nhttps://help.hatenablog.com/entry/ai-crawling\n\nこれまでの経緯と機能制限解除について\nはてなブログでは、2025年2月6日から2025年6月27日まで、AIクローラーをブロックしておりました。\nこの制限はあくまで暫定的なものであり、健全な活用のため、AIクローラーに対してユーザーご自身が明示的にオプトアウト（拒否）できる仕組みの導入、さらには生成AIの学習によって得られた価値や利益をユーザーの皆さまに還元できる可能性についても検討を進めてまいりました。\nそのような状況を踏まえ、さらに検討を重ねた結果、引き続き一律にブロックを継続することは、かえってユーザーの皆さまの不利益につながる可能性があると判断し、オプトアウト機能の実装に先立って、制限を解除いたしました。\nなお、当サービスでは以前より、悪意あるクローラーやサービス運営に支障をきたす可能性がある過剰なアクセスについては、予告なくブロックを行う対応をとっております。本件につきましても、サービスの安全な運営を目的とした制限であったため、事前告知は行いませんでした。\n機能制限によりご不便をおかけしましたことを、改めてお詫び申し上げます。",
+          "link": "https://staff.hatenablog.com/entry/2025/07/30/150351",
+          "publishedOn": "2025-07-30T06:03:51.000Z",
+          "wordCount": null,
+          "title": "生成AIによるクロールを拒否する設定ができるようになりました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398521893179/1753855537",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398521893179/1753855537"
+        },
+        {
           "id": "hatenablog://entry/6802418398527538936",
           "author": null,
           "description": "2025年7月30日 2:00から3:10ごろまでの間、はてなブログ全体でアクセスしづらい障害が発生していました。原因は過負荷によるもので、現在は復旧しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
@@ -7870,6 +7885,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44000",
+          "author": "mamosuke",
+          "description": "SciresM氏がFusée Gelée(NVIDIA Tegraプロセッサの脆弱性を利用し起動時に任意のコードを実行するcoldboot exploit)を利用したりModチップを利用したりすることで起動することができるNintendo SwitchのカスタムファームウェアAtmosphere 1.9.3(8b8e4438e)をリリースしていました。→→→この記事の続きを読む\n20.3.0対応 Atmosphère 1.9.3(8b8e4438e) first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025073044000/",
+          "publishedOn": "2025-07-30T06:21:34.000Z",
+          "wordCount": null,
+          "title": "20.3.0対応 Atmosphère 1.9.3(8b8e4438e)",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=43998",
           "author": "mamosuke",

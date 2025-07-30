@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-07-30T06:02:47.992Z</updated>
+    <updated>2025-07-30T07:04:59.365Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[20.3.0対応 Atmosphère 1.9.3(8b8e4438e)]]></title>
+        <id>https://gamegaz.com/?p=44000</id>
+        <link href="https://gamegaz.com/2025073044000/"/>
+        <updated>2025-07-30T06:21:34.000Z</updated>
+        <summary type="html"><![CDATA[SciresM氏がFusée Gelée(NVIDIA Tegraプロセッサの脆弱性を利用し起動時に任意のコードを実行するcoldboot exploit)を利用したりModチップを利用したりすることで起動することができるNintendo SwitchのカスタムファームウェアAtmosphere 1.9.3(8b8e4438e)をリリースしていました。→→→この記事の続きを読む
+20.3.0対応 Atmosphère 1.9.3(8b8e4438e) first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[生成AIによるクロールを拒否する設定ができるようになりました]]></title>
+        <id>hatenablog://entry/6802418398521893179</id>
+        <link href="https://staff.hatenablog.com/entry/2025/07/30/150351"/>
+        <updated>2025-07-30T06:03:51.000Z</updated>
+        <summary type="html"><![CDATA[このたび、生成AIによるクロールを拒否する設定ができるようになりました。この設定はすべてのプランでご利用いただけます。
+基本設定から「生成AIによるクロールを拒否」をONに設定すると、ご自身のブログやサイトのrobots.txtファイルに生成AIによるクロールを拒否するルールが自動的に追記されます。
+拒否の対象となるユーザーエージェントの詳細は、下記のヘルプをご確認ください。
+https://help.hatenablog.com/entry/ai-crawling
+
+これまでの経緯と機能制限解除について
+はてなブログでは、2025年2月6日から2025年6月27日まで、AIクローラーをブロックしておりました。
+この制限はあくまで暫定的なものであり、健全な活用のため、AIクローラーに対してユーザーご自身が明示的にオプトアウト（拒否）できる仕組みの導入、さらには生成AIの学習によって得られた価値や利益をユーザーの皆さまに還元できる可能性についても検討を進めてまいりました。
+そのような状況を踏まえ、さらに検討を重ねた結果、引き続き一律にブロックを継続することは、かえってユーザーの皆さまの不利益につながる可能性があると判断し、オプトアウト機能の実装に先立って、制限を解除いたしました。
+なお、当サービスでは以前より、悪意あるクローラーやサービス運営に支障をきたす可能性がある過剰なアクセスについては、予告なくブロックを行う対応をとっております。本件につきましても、サービスの安全な運営を目的とした制限であったため、事前告知は行いませんでした。
+機能制限によりご不便をおかけしましたことを、改めてお詫び申し上げます。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【復旧済み】はてなブログ全体でアクセスしづらい障害が発生していました]]></title>
         <id>hatenablog://entry/6802418398527538936</id>
