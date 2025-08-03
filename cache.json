@@ -1606,21 +1606,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398412517359/1746579600"
-        },
-        {
-          "id": "hatenablog://entry/6802418398410006346",
-          "author": null,
-          "description": "今日は距離を伸ばしてみた pic.twitter.com/FnKQELDXDj\n— 🎹 (@p_ck_) May 4, 2025\n   \n14km ほど走っていた。\n案外問題なく走れたけれど、翌日の筋肉痛は少しつらい。\nこれだけ走れると、ハーフマラソンを走り切るのが現実的に思えてきた。少しずつ距離を伸ばして20kmを普段のランニングで走れるようにしたい。\n普段は150mlの水筒を持って走っているのだけど、これだけ走ると水分が足りずに途中で500mlのペットボトルを買った。持ち歩くのが厳しいかなと思ったけれど、普段使っているランニングパンツのポケットに(少し無理やりだけど)収まったので便利。\nwww.amazon.co.jp\nランニング用に500mlの水筒を買った。今まではこれの150mlのやつを使っていた。\n暑くなってきたし、走る距離も伸びてきたので容量を増やしたかった。持ち運び性を考えて150mlのものを使っていたけど、500mlペットボトルが入るならこれもいけるだろう。\ngithub.com\nElinのMODを書いていた。数クリック必要な操作を一発でできるようにする系。\n一応Steam Workshopにも送信したのだけど、審査中メッセージが出ていて、日記を書いている段階ではまだ公開されていない。調べた感じ通常は数分で終わるらしいけど、1日以上刺さっていることもあるっぽいので、しばらく待ちかな。\nThis item is awaiting analysis by our automated content check system. It will be temporarily hidden until we verify that it does not contain harmful content (e.g. links to websites that attempt to steal information).\n\n\nC#はほとんど書いたことがなかったので新鮮。何もわからない。\nビルド環境を整えるのが一番むずかしかった。\n実装は補完とLLMが大活躍だった。該当の機能がどういう名前で実装されているのかを探るのもなかなか大変だった。\n途中で試行錯誤をしていたら、VS CodeでF5でビルドが走らなくなってしまって困っている。解決できなかったけど、dotnet buildを手で叩けばビルドできるのでひとまずはなんとかなっている。.vscode/を全部消したのが良くなかった気がする。\n完全に初心者なので、識者がいたらなんか変なところがないか教えてもらえると嬉しい。\n普段開発にはあまり使っていないWindowsでの実装だった。改行コードがCRLFになっていることに途中で気がついたのだけど、LFのほうが良いのだろうか。いまいち肌感がわからない\nこういう便利系はAutoHotKeyでマクロを定義していい感じにしていたのだけど、今回のものはマクロでは難しかったのでMODを作った。AutoHotKeyの定義は現状ローカルのファイルシステムに雑に置かれているので、これもGitHubに投げたい…。",
-          "link": "https://commits.hatenablog.com/entry/2025/05/06/100000",
-          "publishedOn": "2025-05-06T01:00:00.000Z",
-          "wordCount": 549,
-          "title": "2025-05-05",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398410006346/1746493201",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398410006346/1746493201"
         }
       ]
     },
@@ -7387,6 +7372,16 @@
       "feedUrl": "https://blog.lai.so/rss/",
       "siteUrl": "https://blog.lai.so/",
       "articles": [
+        {
+          "id": "688f567ef778070001eb3329",
+          "author": "laiso",
+          "description": "2025年7月30日、OpenRouter上に「Horizon Alpha」という詳細不明のステルスモデルが登場しました。その後「Horizon Beta」という名前に",
+          "link": "https://blog.lai.so/horizon-beta/",
+          "publishedOn": "2025-08-03T12:53:34.000Z",
+          "wordCount": null,
+          "title": "次期GPT系モデルかもしれない「Horizon Beta」のコーディング性能を検証する",
+          "imageUrl": null
+        },
         {
           "id": "688d89dd2152240001aa7a5a",
           "author": "laiso",
