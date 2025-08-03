@@ -3047,21 +3047,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/1d759136e2f40cddc103f57f269631caaedf3e5c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250507%2F20250507012414.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398412379370",
-          "author": null,
-          "description": "ギター用に使っていたチューナーが壊れました。\n\n\nKORG(コルグ) ギター/ベース用 クリップチューナー ギター/ベース用 PitchCrow-G 小型/コンパクト/初心者/高精度/カラー表示/24時間連続稼働 ブラック AW-4G-BK\n\nKORG(コルグ)\nAmazon\n\n\n上の商品画像と見比べてもらうとわかりますが、樹脂のクリップが割れてしまいました。５年くらい使っていたので寿命でしょう。\n分解する\n\nクリップの根元を外してみると、奥にピエゾ素子が見えます。圧力や振動を加えることで電圧を発生する部品です。ギターのピックアップにも使われることがあります（アコギとかに後付けするやつ。エレキギターのは違う仕組み）。\n\n\nYFFSFDC ギター ピックアップ ピエゾピックアップ 外部音除去 ギター/マンドリン/バイオリン/ウクレレ用 クリップ式 長さブラック マイク\n\nYFFSFDC\nAmazon\n↑こういうの\n\n修理用に分解するときは壊さないように恐る恐るやって苦労する殻割りですが、今回は捨てるものなので勢いよく割ります。\n\n１がピエゾの裏側、２がオペアンプ（電気信号を増幅するやつ）、３の中に周波数の解析と液晶の制御をするマイコンが入っていると思われます。\n①ギターの振動をピエゾ素子で拾って電気信号に変換\nという感じだと思います。\nだいたいの仕組みはわかりましたね。裏面、液晶側も見てみましょう。\n\n写真の配置がめっちゃわかりにくくて申し訳ないのですが、\nちなみにこういう安価かつ小型の機器は、基板と液晶が線でつながっていないことが多いです。\n\nこれはパカッと開いたところのイメージなのですが（実際にはこのあいだに２，３のシートが挟まっています）、四角いゴム部品（青矢印部分）がありますよね。これを液晶側の端子と基板側の端子（赤矢印）の間に挟むことによって、接続しています。\n\n↑…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/05/06/171133",
-          "publishedOn": "2025-05-06T08:11:33.000Z",
-          "wordCount": null,
-          "title": "ギター用デジタルチューナーを分解する＆改造する",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/786148518bcd440d65ac21834a41580220951425/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250506%2F20250506162914.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/786148518bcd440d65ac21834a41580220951425/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250506%2F20250506162914.png"
         }
       ]
     },
