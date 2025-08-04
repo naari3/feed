@@ -3032,21 +3032,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2c95bb650f9d845999ee546c95c8516dd933f78b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250518%2F20250518165511.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398413341760",
-          "author": null,
-          "description": "ちょっと前にノートパソコンを新調したんですけど、10万円超えると割引になるクーポンがあって、価格調整のために内蔵カメラをIR（赤外線）付きに変えたんですね。\nこれが全然期待してなかったのに思いのほか便利でした。メリットを箇条書きで書きます。\nパスワードもPINも入れなくてもカメラを見るだけで一瞬でログインできる。すげえ楽。\n復帰時の面倒がないのでちょっと離席するときにもこまめに画面ロックする習慣がつき、セキュリティ的にもかなり良い\nOSのログイン／ロック解除時だけじゃなくて、パスワードマネージャも顔認証で起動できる。便利。\nメガネの着脱にも対応\nOne DriveとかDropbox、Yahoo!Japanのログインとかにも使えるらしい（これは使ったことないが）\nこういうニュース（Microsoft、新規アカウントを「パスワードレス」設定へ）もあるので、今後パスワードレス化の流れで対応サービスが増えていくかも\n気になる認証精度ですが、まずIRで３Dスキャンしてるので顔写真では通りません。\nいろいろいいことづくめなのですが、やはり欠点もあります。\n実は、その欠点が全て無効化される環境があるんですよ。\nそれが自宅環境です。\n…とここまでが本題でした。以下は導入方法などの情報です。\n目次\n顔認証用カメラ\nWindowsの設定\nパスワードマネージャの設定（Bitwardenの例）\nデスクトップアプリの設定\nブラウザアドオンの設定\nトラブルシューティング\n顔認証用カメラ\nさっきも書きましたが、顔認証にはIR付きのカメラが必要です。なのですが外付けのWebカメラだと対応製品がめちゃめちゃ少ないです。\n\n\nエレコム WEBカメラ UCAM-CF20FBBK 200万画素 フルHD 1080p 30FPS Windows Hello顔認証対応 マイク内蔵 ケーブル長1.5m ブラック\n\nエレ…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/05/07/121000",
-          "publishedOn": "2025-05-07T03:10:00.000Z",
-          "wordCount": 876,
-          "title": "自宅PCにWindows Hello（顔認証ログイン）を導入したらめちゃめちゃ良かった",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/1d759136e2f40cddc103f57f269631caaedf3e5c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250507%2F20250507012414.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/1d759136e2f40cddc103f57f269631caaedf3e5c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250507%2F20250507012414.png"
         }
       ]
     },
