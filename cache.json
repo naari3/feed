@@ -3673,6 +3673,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398534075439",
+          "author": null,
+          "description": "いつもはてなブログ、はてなCMSをご利用いただきありがとうございます。\n法人プランをご契約の方向けに、はてなCMSに関するお知らせを追加しました。\nhttps://www.hatena.ne.jp/cms/blog/figma/\nご質問やご意見はお問い合わせフォームより、または担当営業にお寄せください。",
+          "link": "https://staff.hatenablog.com/entry/2025/08/06/153250",
+          "publishedOn": "2025-08-06T06:32:50.000Z",
+          "wordCount": null,
+          "title": "【はてなCMS】Figma to はてなCMSリリース！デザインデータをAIが自動でWebサイトに変換",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/115d0e34d054eb6cac0d0fcfa46eaaad9fb36620/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250731%2F20250731093713.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/115d0e34d054eb6cac0d0fcfa46eaaad9fb36620/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250731%2F20250731093713.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398521893179",
           "author": null,
           "description": "このたび、生成AIによるクロールを拒否する設定ができるようになりました。この設定はすべてのプランでご利用いただけます。\n基本設定から「生成AIによるクロールを拒否」をONに設定すると、ご自身のブログやサイトのrobots.txtファイルに生成AIによるクロールを拒否するルールが自動的に追記されます。\n拒否の対象となるユーザーエージェントの詳細は、下記のヘルプをご確認ください。\nhttps://help.hatenablog.com/entry/ai-crawling\n\nこれまでの経緯と機能制限解除について\nはてなブログでは、2025年2月6日から2025年6月27日まで、AIクローラーをブロックしておりました。\nこの制限はあくまで暫定的なものであり、健全な活用のため、AIクローラーに対してユーザーご自身が明示的にオプトアウト（拒否）できる仕組みの導入、さらには生成AIの学習によって得られた価値や利益をユーザーの皆さまに還元できる可能性についても検討を進めてまいりました。\nそのような状況を踏まえ、さらに検討を重ねた結果、引き続き一律にブロックを継続することは、かえってユーザーの皆さまの不利益につながる可能性があると判断し、オプトアウト機能の実装に先立って、制限を解除いたしました。\nなお、当サービスでは以前より、悪意あるクローラーやサービス運営に支障をきたす可能性がある過剰なアクセスについては、予告なくブロックを行う対応をとっております。本件につきましても、サービスの安全な運営を目的とした制限であったため、事前告知は行いませんでした。\n機能制限によりご不便をおかけしましたことを、改めてお詫び申し上げます。",
@@ -6339,18 +6354,7 @@
       "title": "くれがしら",
       "feedUrl": "https://note.com/qreg/rss",
       "siteUrl": "https://note.com/qreg",
-      "articles": [
-        {
-          "id": "https://note.com/qreg/n/n18ba43441d02",
-          "author": null,
-          "description": "こんばんは\nここ半年で投稿した動画を見ていろいろ言います\nいろいろキリがいいので半年\n本当は7ヶ月くらい分\n続きをみる",
-          "link": "https://note.com/qreg/n/n18ba43441d02",
-          "publishedOn": "2025-05-08T18:13:39.000Z",
-          "wordCount": null,
-          "title": "半年分",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/187698450/rectangle_large_type_2_4539f9e9939efccf04407ec92412af67.jpg?width=800"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "雨天雨衣",
