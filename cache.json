@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398540299585",
+          "author": null,
+          "description": "あんまり賢くないシューティングゲームの弾の計算方法。まず、240x160の2倍のテーブルを用意します。起点を239, 159として、テーブルの各要素は１．各座標までの距離、２．x単位ベクトル、３．y単位ベクトル、４．角度とします。要素はs32の10.22の固定小数点です。\nあと角度テーブルで１．x単位ベクトル、２．y単位ベクトルも作ります。思いっきり容量使ってやってみようという方針でしたけど、結果は2.4MB程度となりました。ん－これはコレでありかもです。\n\n# 補助にchatgpt先生使用\nimport struct\nimport math\n\nFRAC_BITS = 22\nSCALE     = 1 << FRAC_BITS\nWIDTH     = 480\nHEIGHT    = 320\nCENTER_X  = 240 - 1\nCENTER_Y  = 160 - 1\n\ndef float2fixed(flo):\n    return int(flo * SCALE)\n\ndef fixed2float(fix):\n    return fix / SCALE\n\ndef make_table():\n    table = [[None for _ in range(WIDTH)] for _ in range(HEIGHT)]\n\n    for y in range(HEIGHT):\n        for x in range(WIDTH):\n            dx = x - CENTER_X\n            dy = y - CENTER_Y\n\n            if dx == 0 and dy == 0:\n                fx = 0\n                fy = 0\n                dist = 0\n…",
+          "link": "https://akkera102.hatenablog.com/entry/2025/08/10/215604",
+          "publishedOn": "2025-08-10T12:56:04.000Z",
+          "wordCount": 886,
+          "title": "練習2",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/4a4bb058b7d6a13fcf5525d891f2c97867d94d42/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250810%2F20250810214048.gif",
+            "type": "image/gif",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/4a4bb058b7d6a13fcf5525d891f2c97867d94d42/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250810%2F20250810214048.gif"
+        },
+        {
           "id": "hatenablog://entry/6802418398535527617",
           "author": null,
           "description": "連邦さん経由より。DDLC64（Doki Doki Literature Club 64）は最初の部分のみの移植のようです。それと最近知りましたkatawa shojo GBA/GBはどちらもWIPでリソース過多すぎて難儀しているような感じします。\ngithub.com\nks.fhs.sh\nks.fhs.sh",
@@ -1591,21 +1606,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398430136381/1747357200"
-        },
-        {
-          "id": "hatenablog://entry/6802418398425615304",
-          "author": null,
-          "description": "moneyforward-dev.jp\nRubyのNamespaceについて会社ブログに記事を書いた。\nせっかく面白い機能が使えるようになったのだし、いろんな人に積極的に試してもらいたい。そこからRubyの開発につながったりもするし。\n試すのは結構サクッと試せるので、ぜひtryしてほしい。\n自分もこの記事を書くためぐらいにしかまだ触れていないので、気が向いたらなにかおもしろいことができないか考えたい\nもともとは社内向けに書いた記事だったのだけど、社外に出してもいいなと思ってちょっと手を入れて公開した。\nそれもあって、記事中に誰が書いたかという情報を書き忘れた。社内向け記事だとauthorがメタデータとして乗るから書かなくてもなんとかなるので、すっかり忘れていた。\ngithub.com\nウニが森にドロップするようになるmodを作った。ウニって森に落ちているものですよね。\nどうやってドロップさせたらいいか調べるまでが大変だった。ウニは他のアイテムとはドロップの指定方法が違っていて、地形生成後に明示的にドロップが指定されていたので、そこのコードを応用することでなんとかなった。ウニのIDが70だったので、\"70\"でgrepして気がつくことにできた。むずい…。",
-          "link": "https://commits.hatenablog.com/entry/2025/05/13/100000",
-          "publishedOn": "2025-05-13T01:00:00.000Z",
-          "wordCount": 493,
-          "title": "2025-05-12",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398425615304/1747098000",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398425615304/1747098000"
         }
       ]
     },
@@ -9193,16 +9193,6 @@
           "wordCount": null,
           "title": "【噂】日本版Switch 2の価格は原価割れかもしれない",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43572",
-          "author": "mamosuke",
-          "description": "psfree-lapse version 1.5.1,ps5-payload-loader 1.3.0,PS5 ezRemote Client v1.10,ps5-bdjb-modified-ISOs v1.13,PS5 Payloads 1.8a MOD,DirectPackageInstaller 8.3.0,SATURN 2 PS4/PS5 v1.3,ARK-4 v1747073935,chiaki-ng weekly-canary-release-08b89dfd2dbe8cd3262e8388ce6d5bc0d812c14a,Switch 2のバッテリー充電,akmenu-next v1.5.1,XBX Multi Tools,PCSX2 v2.3.343,shadPS4 Pre-release-shadPS4-2025-05-12-3a3a6d8,Eden 0.0.2-pre-alpha→→→この記事の続きを読む\nGameGaz Daily 2025.5.13 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025051343572/",
-          "publishedOn": "2025-05-13T00:59:50.000Z",
-          "wordCount": 1778,
-          "title": "GameGaz Daily 2025.5.13",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
@@ -9362,16 +9352,6 @@
           "wordCount": null,
           "title": "Karte.169 僕はホームステイする",
           "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1747718182884_bokukoko_170.jpg"
-        },
-        {
-          "id": "307429",
-          "author": "チャンピオンクロス",
-          "description": "僕の心のヤバイやつ【最新話無料】・Karte.168 私はどこにいても君をみつける  TVアニメPrime Videoにて見放題独占配信中！ 累計500万部突破！ SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!! 宝島社「このマンガがすごい! 」オトコ編、2年連続ランクイン!! 2020年第3位、2021年第9位!! 次にくるマンガ大賞2020 Webマンガ部門 第1位!! Anime Japan2021 第4回アニメ化してほしいマンガランキング第1位!! 第5回みんなが選ぶTSUTAYAコミック大賞第1位!!「王様のブランチ」など各メディアでも大絶賛!! 陽キャが憎くてたまらない…。只今、中二病真っ最中の市川京太郎は、学園カースト頂点の美少女・山田杏奈の殺害を企む！ だが、山田の意外な一面を知ってしまい…！？ 陽キャ美少女と陰キャ男子。縮まるハズのない２人の距離に奇跡は起きるか！？ 陰キャ・京太郎の青春が今、かなり静かに動き出す…！！ 【 番外編「ツイヤバ」はこちら 】",
-          "link": "https://championcross.jp/episodes/935d2cbdbd5bd/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2025-05-13T01:00:00.000Z",
-          "wordCount": 837,
-          "title": "Karte.168 私はどこにいても君をみつける",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1746091874383_bokukoko_169.jpg"
         }
       ]
     },

@@ -78,6 +78,58 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">練習2</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/08/10/215604" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>あんまり賢くないシューティングゲームの弾の計算方法。まず、240x160の2倍のテーブルを用意します。起点を239, 159として、テーブルの各要素は１．各座標までの距離、２．x単位ベクトル、３．y単位ベクトル、４．角度とします。要素はs32の10.22の固定小数点です。
+あと角度テーブルで１．x単位ベクトル、２．y単位ベクトルも作ります。思いっきり容量使ってやってみようという方針でしたけど、結果は2.4MB程度となりました。ん－これはコレでありかもです。
+
+# 補助にchatgpt先生使用
+import struct
+import math
+
+FRAC_BITS &#x3D; 22
+SCALE     &#x3D; 1 &lt;&lt; FRAC_BITS
+WIDTH     &#x3D; 480
+HEIGHT    &#x3D; 320
+CENTER_X  &#x3D; 240 - 1
+CENTER_Y  &#x3D; 160 - 1
+
+def float2fixed(flo):
+    return int(flo * SCALE)
+
+def fixed2float(fix):
+    return fix / SCALE
+
+def make_table():
+    table &#x3D; [[None for _ in range(WIDTH)] for _ in range(HEIGHT)]
+
+    for y in range(HEIGHT):
+        for x in range(WIDTH):
+            dx &#x3D; x - CENTER_X
+            dy &#x3D; y - CENTER_Y
+
+            if dx &#x3D;&#x3D; 0 and dy &#x3D;&#x3D; 0:
+                fx &#x3D; 0
+                fy &#x3D; 0
+                dist &#x3D; 0
+…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/4a4bb058b7d6a13fcf5525d891f2c97867d94d42/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250810%2F20250810214048.gif" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.lai.so/" target="_blank"
               rel="noopener">laiso</a></h3>
           <section class="articles-per-source">
@@ -15055,19 +15107,6 @@ GameGaz Daily 2025.5.14 first appeared on 大人のためのゲーム講座.</sp
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2025.5.13</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025051343572/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>psfree-lapse version 1.5.1,ps5-payload-loader 1.3.0,PS5 ezRemote Client v1.10,ps5-bdjb-modified-ISOs v1.13,PS5 Payloads 1.8a MOD,DirectPackageInstaller 8.3.0,SATURN 2 PS4/PS5 v1.3,ARK-4 v1747073935,chiaki-ng weekly-canary-release-08b89dfd2dbe8cd3262e8388ce6d5bc0d812c14a,Switch 2のバッテリー充電,akmenu-next v1.5.1,XBX Multi Tools,PCSX2 v2.3.343,shadPS4 Pre-release-shadPS4-2025-05-12-3a3a6d8,Eden 0.0.2-pre-alpha→→→この記事の続きを読む
-GameGaz Daily 2025.5.13 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -15085,55 +15124,6 @@ GameGaz Daily 2025.5.13 first appeared on 大人のためのゲーム講座.</sp
                     <span>18か19日にリリースになりそうです。わーぱちぱちぱち。</span>
                   </div>
                   <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398427479908/1747140527" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2025-05-12</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2025/05/13/100000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>moneyforward-dev.jp
-RubyのNamespaceについて会社ブログに記事を書いた。
-せっかく面白い機能が使えるようになったのだし、いろんな人に積極的に試してもらいたい。そこからRubyの開発につながったりもするし。
-試すのは結構サクッと試せるので、ぜひtryしてほしい。
-自分もこの記事を書くためぐらいにしかまだ触れていないので、気が向いたらなにかおもしろいことができないか考えたい
-もともとは社内向けに書いた記事だったのだけど、社外に出してもいいなと思ってちょっと手を入れて公開した。
-それもあって、記事中に誰が書いたかという情報を書き忘れた。社内向け記事だとauthorがメタデータとして乗るから書かなくてもなんとかなるので、すっかり忘れていた。
-github.com
-ウニが森にドロップするようになるmodを作った。ウニって森に落ちているものですよね。
-どうやってドロップさせたらいいか調べるまでが大変だった。ウニは他のアイテムとはドロップの指定方法が違っていて、地形生成後に明示的にドロップが指定されていたので、そこのコードを応用することでなんとかなった。ウニのIDが70だったので、&quot;70&quot;でgrepして気がつくことにできた。むずい…。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398425615304/1747098000" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://championcross.jp/series/899dda204c3f2" target="_blank"
-              rel="noopener">僕の心のヤバイやつ【最新話無料】</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Karte.168 私はどこにいても君をみつける</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://championcross.jp/episodes/935d2cbdbd5bd/?utm_source&#x3D;rss&amp;utm_medium&#x3D;referral" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>僕の心のヤバイやつ【最新話無料】・Karte.168 私はどこにいても君をみつける  TVアニメPrime Videoにて見放題独占配信中！ 累計500万部突破！ SNSで超話題の陰キャ少年と陽キャ美少女の極甘青春ラブコメディ!! 宝島社「このマンガがすごい! 」オトコ編、2年連続ランクイン!! 2020年第3位、2021年第9位!! 次にくるマンガ大賞2020 Webマンガ部門 第1位!! Anime Japan2021 第4回アニメ化してほしいマンガランキング第1位!! 第5回みんなが選ぶTSUTAYAコミック大賞第1位!!「王様のブランチ」など各メディアでも大絶賛!! 陽キャが憎くてたまらない…。只今、中二病真っ最中の市川京太郎は、学園カースト頂点の美少女・山田杏奈の殺害を企む！ だが、山田の意外な一面を知ってしまい…！？ 陽キャ美少女と陰キャ男子。縮まるハズのない２人の距離に奇跡は起きるか！？ 陰キャ・京太郎の青春が今、かなり静かに動き出す…！！ 【 番外編「ツイヤバ」はこちら 】</span>
-                  </div>
-                  <img src="https://cdn-public.comici.jp/articlevisual/10406/1746091874383_bokukoko_169.jpg" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -17251,7 +17241,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-08-10T12:02:46.105Z">2025-08-10T12:02:46.105Z</time>
+    <time id="build-timestamp" datetime="2025-08-10T13:10:20.401Z">2025-08-10T13:10:20.401Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
