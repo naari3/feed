@@ -2232,21 +2232,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d908c2d0d83e3ffdede67a842c63b0baeb8c69e1/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneylab%2F20250615%2F20250615080625.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398426099860",
-          "author": null,
-          "description": "仕事でBLEペリフェラルデバイスと、それに繋げるアプリを作っていて、\n自分で作ったBLEデバイスに絞ってパッと一覧を出したかったので、\nhttps://zenn.dev/tomo_devl/articles/d58abecf10c599\nに書いてある\nscanForPeripherals(withServices:options:) を使用するとペリフェラルを検索でき、stopScan() を使用するとペリフェラル検索を停止させることができます。\nサンプルでは接続されているかどうか確認し、されていなければペリフェラルを検索しています。\nscanForPeripherals の withServices にUUIDを指定してあげれば特定のペリフェラルに絞ることができ、nil を指定してしてあげればすべてのペリフェラルを検索することができます。\nを実装したところ、全く思った通りに動かなかったので仕方なく名前とかの検索で進めてたんだけど、流石に不便で、接続してサービスを取得する、を繰り返す、しかないのか？？？と思ってたんだけど、デバイス（ペリフェラル）側のサービス一覧に載せるだけではなくて、\nアドバタイズパケットの提供サービスのところに記述を追加しないとセントラル側からはサービスがあるかないか、接続しない限りはわからないのだった。\n今はBLEのパケットについて一通りわかったのでそうわかれば納得だが、始めた頃に手探りで実装していたので全然気づかなかった。\nこのへんの流れを書いてある系の記事を何個か見たけど、そこまで書いてあるところには辿り着いてなかった。大体はすでにできてるデバイスのわかってるアドバタイズを拾えば十分だからだろう。\n \n記述例（ESP32 Arduino）\n // Create the BLE Service\n// このサービスは接続してからしか取得できない\n BLEService *pService = pServer->createService(BLEUUID(SERVICE_UUID_XXXXX),32);\n // Create a BLE Characteristic\n pTxCharacteristic = pService->createCharacteristic(CHARACTERISTIC_UUID_TX,\n BLECharacteristic::PROPERTY_NOTIFY);\n \n// pTxCharacteristic->addDescriptor(new BLE2902());\n BLECharacteristic * pRxCharacteristic = pService->createCharacteristic(\n　 CHARACTERISTIC_UUID_RX, BLECharacteristic::PROPERTY_WRITE );\n pRxCharacteristic->setCallbacks(new MyCallbacks());\n InitBLEParams(pService,new MyCallbacks());\n \n pService->start();\n // Start advertising\n pServer->getAdvertising()->addServiceUUID(SERVICE_UUID_XXXXX); // アドバタイズパケットに載せる\n pServer->getAdvertising()->start();\n \niOSアプリ側\ncentralManager.scanForPeripherals( withServices: [serviceUUID], options:  nil)\nESP32側でaddServiceUUIDをしておかないと、withServicesをnilにしないと検索されない\n \nーーーーーーーーーーーーーーーーーーーーーー\n珍しくプログラムのこと書いてるけど、まぁ、そういうのも書いといた方がアクセスあるかもだし、と思ってこういうこともこれから書くことにしてみる。\n毎日分解ばっかりはしてられないらしい。",
-          "link": "https://honeylab.hatenablog.jp/entry/2025/05/12/212735",
-          "publishedOn": "2025-05-12T12:27:35.000Z",
-          "wordCount": null,
-          "title": "iOS+SwiftUIでBLEアプリとESP32でBLEペリフェラルを作っていてハマったところ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/11696248318755247030/6802418398426099860/1747052855",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/11696248318755247030/6802418398426099860/1747052855"
         }
       ]
     },

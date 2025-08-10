@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-10T00:04:25.070Z</updated>
+    <updated>2025-08-10T01:30:14.563Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10359,53 +10359,6 @@ Artekに81Aというシンプルな机、というかテーブルがある。朴
         <summary type="html"><![CDATA[Cognition AIが、GitHubリポジトリのURLを入力するだけで、コードベースをAIが自動で解析し、GitHub Wikiでホストされているよう]]></summary>
         <author>
             <name>laiso</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[iOS+SwiftUIでBLEアプリとESP32でBLEペリフェラルを作っていてハマったところ]]></title>
-        <id>hatenablog://entry/6802418398426099860</id>
-        <link href="https://honeylab.hatenablog.jp/entry/2025/05/12/212735"/>
-        <updated>2025-05-12T12:27:35.000Z</updated>
-        <summary type="html"><![CDATA[仕事でBLEペリフェラルデバイスと、それに繋げるアプリを作っていて、
-自分で作ったBLEデバイスに絞ってパッと一覧を出したかったので、
-https://zenn.dev/tomo_devl/articles/d58abecf10c599
-に書いてある
-scanForPeripherals(withServices:options:) を使用するとペリフェラルを検索でき、stopScan() を使用するとペリフェラル検索を停止させることができます。
-サンプルでは接続されているかどうか確認し、されていなければペリフェラルを検索しています。
-scanForPeripherals の withServices にUUIDを指定してあげれば特定のペリフェラルに絞ることができ、nil を指定してしてあげればすべてのペリフェラルを検索することができます。
-を実装したところ、全く思った通りに動かなかったので仕方なく名前とかの検索で進めてたんだけど、流石に不便で、接続してサービスを取得する、を繰り返す、しかないのか？？？と思ってたんだけど、デバイス（ペリフェラル）側のサービス一覧に載せるだけではなくて、
-アドバタイズパケットの提供サービスのところに記述を追加しないとセントラル側からはサービスがあるかないか、接続しない限りはわからないのだった。
-今はBLEのパケットについて一通りわかったのでそうわかれば納得だが、始めた頃に手探りで実装していたので全然気づかなかった。
-このへんの流れを書いてある系の記事を何個か見たけど、そこまで書いてあるところには辿り着いてなかった。大体はすでにできてるデバイスのわかってるアドバタイズを拾えば十分だからだろう。
- 
-記述例（ESP32 Arduino）
- // Create the BLE Service
-// このサービスは接続してからしか取得できない
- BLEService *pService = pServer->createService(BLEUUID(SERVICE_UUID_XXXXX),32);
- // Create a BLE Characteristic
- pTxCharacteristic = pService->createCharacteristic(CHARACTERISTIC_UUID_TX,
- BLECharacteristic::PROPERTY_NOTIFY);
- 
-// pTxCharacteristic->addDescriptor(new BLE2902());
- BLECharacteristic * pRxCharacteristic = pService->createCharacteristic(
-　 CHARACTERISTIC_UUID_RX, BLECharacteristic::PROPERTY_WRITE );
- pRxCharacteristic->setCallbacks(new MyCallbacks());
- InitBLEParams(pService,new MyCallbacks());
- 
- pService->start();
- // Start advertising
- pServer->getAdvertising()->addServiceUUID(SERVICE_UUID_XXXXX); // アドバタイズパケットに載せる
- pServer->getAdvertising()->start();
- 
-iOSアプリ側
-centralManager.scanForPeripherals( withServices: [serviceUUID], options:  nil)
-ESP32側でaddServiceUUIDをしておかないと、withServicesをnilにしないと検索されない
- 
-ーーーーーーーーーーーーーーーーーーーーーー
-珍しくプログラムのこと書いてるけど、まぁ、そういうのも書いといた方がアクセスあるかもだし、と思ってこういうこともこれから書くことにしてみる。
-毎日分解ばっかりはしてられないらしい。]]></summary>
-        <author>
-            <name>honeylab's blog</name>
         </author>
     </entry>
     <entry>
