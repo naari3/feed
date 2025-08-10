@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-10T21:01:39.427Z</updated>
+    <updated>2025-08-10T21:09:42.292Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -127,6 +127,30 @@ GameGaz Daily 2025.8.10 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>スタジオVK 神長タクミ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Claude Code Subagentsを活用してBrainf*ckランタイムを作ろう！]]></title>
+        <id>hatenablog://entry/6802418398539022678</id>
+        <link href="https://toshi-a.hatenablog.com/entry/2025/08/09/223230"/>
+        <updated>2025-08-09T13:32:30.000Z</updated>
+        <summary type="html"><![CDATA[タイトルのとおりです。
+Claude Codeは使っているのですが、Subagents機能はまだ全然わかっていません。
+そこで、Subagents機能を実際に使いながら、Brainf*ckインタープリタを実装して使用感を確かめてみたいと思います。
+あまり丁寧には説明しませんが全く知らない人にも一応読めるようにできるだけ用語の説明はします。
+前提知識
+Claude Codeとは
+プロジェクトのディレクトリで claude コマンドを実行すると、AIとおはなしできる画面になるので、そこでチャットしながらコードについての質問をしたり、コードを書いてもらうことができます。
+mikutterのプロジェクトディレクトリでプロジェクト概要を聞いてみた。
+新しい機能について議論しながら開発を進めていき、その内容（コンテキスト）のままコードを書いていってくれます。しかしコンテキストウィンドウが限られており、会話をしすぎるなどしてコンテキストが一定以上のサイズになると圧縮されます。
+会話は続けられるのですが、かなりディテールがなくなってしまうので対話内容を元にコードを書いてもらっていた場合、突然内容を忘れて滅茶苦茶なことをしだします。
+Claude Code Subagentsとは
+Subagents - Anthropic
+Subagentsはこの問題を解決できるようで、あらかじめサブエージェントを作成しておくと、Claude Codeが今こそと判断したタイミングで仕事をサブエージェントに投げます。
+サブエージェントはメインとは切り離されたコンテキストを持っており、与えられたタスクを実行して、結果だけをメインのほうに通知します。
+例えば実装が終わった後、既存コードも見ながらコードレビューをしようと思ったらいろんなファイルを見る必要があります。それらがすべてコンテキストに乗るとわりとすぐに前述…]]></summary>
+        <author>
+            <name>ぁ</name>
         </author>
     </entry>
     <entry>
