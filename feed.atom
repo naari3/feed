@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-12T09:02:36.841Z</updated>
+    <updated>2025-08-12T10:01:43.058Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[練習3]]></title>
+        <id>hatenablog://entry/6802418398543579695</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/08/12/184742"/>
+        <updated>2025-08-12T09:47:42.000Z</updated>
+        <summary type="html"><![CDATA[15年ぐらいぶりにbulletMLの仕様を読んでみました。昔みたいにわけわかんないよーとか、ちぃかわのような顔にならず・・・どうも少しは進歩しているようです。
+www.asahi-net.or.jp
+スクリプト言語で書かれているのでテストしやすいという利点もあります。それとけっこうな数の資産が扱えるのは大きいです。
+デメリットはxmlであること・・・各言語の標準xmlパーサーが使える恩恵でかいですけれど、編集しずらい読みにくい。そういえばbulletGBAはphpを使ってC++にジェネレートしてましたし、あの仕様書を見て思いついたのですか！すげー！と今更思う次第です。偉大過ぎる。コロンブスの卵ってやつですかね。今でもオーパーツな感じします。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ツイートするほどでもない呟きの寄せ集め]]></title>
         <id>https://note.com/ecolidelvsvc11/n/n1d056f96d55c</id>

@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398543579695",
+          "author": null,
+          "description": "15年ぐらいぶりにbulletMLの仕様を読んでみました。昔みたいにわけわかんないよーとか、ちぃかわのような顔にならず・・・どうも少しは進歩しているようです。\nwww.asahi-net.or.jp\nスクリプト言語で書かれているのでテストしやすいという利点もあります。それとけっこうな数の資産が扱えるのは大きいです。\nデメリットはxmlであること・・・各言語の標準xmlパーサーが使える恩恵でかいですけれど、編集しずらい読みにくい。そういえばbulletGBAはphpを使ってC++にジェネレートしてましたし、あの仕様書を見て思いついたのですか！すげー！と今更思う次第です。偉大過ぎる。コロンブスの卵ってやつですかね。今でもオーパーツな感じします。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/08/12/184742",
+          "publishedOn": "2025-08-12T09:47:42.000Z",
+          "wordCount": 468,
+          "title": "練習3",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398543579695/1754992727",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398543579695/1754992727"
+        },
+        {
           "id": "hatenablog://entry/6802418398540299585",
           "author": null,
           "description": "あんまり賢くないシューティングゲームの弾の計算方法。まず、240x160の2倍のテーブルを用意します。起点を239, 159として、テーブルの各要素は１．各座標までの距離、２．x単位ベクトル、３．y単位ベクトル、４．角度とします。要素はs32の10.22の固定小数点です。\nあと角度テーブルで１．x単位ベクトル、２．y単位ベクトルも作ります。思いっきり容量使ってやってみようという方針でしたけど、結果は2.4MB程度となりました。ん－これはコレでありかもです。\n\n# 補助にchatgpt先生使用\nimport struct\nimport math\n\nFRAC_BITS = 22\nSCALE     = 1 << FRAC_BITS\nWIDTH     = 480\nHEIGHT    = 320\nCENTER_X  = 240 - 1\nCENTER_Y  = 160 - 1\n\ndef float2fixed(flo):\n    return int(flo * SCALE)\n\ndef fixed2float(fix):\n    return fix / SCALE\n\ndef make_table():\n    table = [[None for _ in range(WIDTH)] for _ in range(HEIGHT)]\n\n    for y in range(HEIGHT):\n        for x in range(WIDTH):\n            dx = x - CENTER_X\n            dy = y - CENTER_Y\n\n            if dx == 0 and dy == 0:\n                fx = 0\n                fy = 0\n                dist = 0\n…",
