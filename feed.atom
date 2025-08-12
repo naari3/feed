@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-12T22:01:36.999Z</updated>
+    <updated>2025-08-12T23:01:39.620Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10378,43 +10378,6 @@ GameGaz Daily 2025.5.16 first appeared on 大人のためのゲーム講座.]]><
 翌朝にだいぶ眠気が強くてちょっとしんどかった]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scalaの言語サーバMetalsがMCPに対応したのでRoo Codeで使ってみた / 型やシンボル情報をMCPが渡してくれる時代の到来]]></title>
-        <id>hatenablog://entry/6802418398428791622</id>
-        <link href="https://blog.3qe.us/entry/2025/05/15/194744"/>
-        <updated>2025-05-15T10:47:44.000Z</updated>
-        <summary type="html"><![CDATA[Scalaには言語サーバとしてMetalsというのがあり、LSPを喋ったりビルドサーバと協調してコンパイルを回したりしてくれる。
-scalameta.org
-VSCodeでも使われる定番の言語サーバであり、Scala開発者の半分くらいはこれを使っているはず。ロゴがかわいい。
-そんなMetalsの最新版 Metals 1.5.3 がリリースされ、Scala界は大いに盛り上がっている。というのも、言語サーバにMCPサーバ機能が搭載され、AI Agentに対してコミュニケートできるようになったからだ。
-scalameta.org
-この記事では、早速このMCPサーバ機能を使って遊んでみようと思う。
-Scalaが動く前提としてJVMが必要なので、そのへんは済んでいるということにして進める。JVMなどはこのへんを見てほしい。
-blog.3qe.us
-リポジトリの用意
-ひとまずGitHubにリポジトリを用意する。
-% git clone git@github.com:windymelt/metals-mcp-exercise.git
-
-
-
-次にsbtを使ってテンプレートからプロジェクトを作成する。
-% sbt new scala/scala3.g8 -o .
-A template to demonstrate a minimal Scala 3 application
-
-name [Scala 3 Project Template]: metals-mcp-exercise
-
-Template applied in .
-
-
-
--o .としているのは、新規にディレクトリを掘るのではなく、このディレクトリで作成してくれ、と指示するオプション。
-この時点でScalaがビルドできるようになっているはず。
-% sbt run
-[info] welcome to sbt 1.10.11 (Amazo…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
