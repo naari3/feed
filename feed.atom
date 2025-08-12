@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-12T05:01:57.203Z</updated>
+    <updated>2025-08-12T06:02:00.739Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[CursorAIでリバースエンジニアリング(AIプログラミング)]]></title>
+        <id>hatenablog://entry/6802418398543125009</id>
+        <link href="https://honeylab.hatenablog.jp/entry/2025/08/12/140752"/>
+        <updated>2025-08-12T05:07:52.000Z</updated>
+        <summary type="html"><![CDATA[長らくリバースエンジニアリングで遊んでいますが、特にリバエンだと、何か気が付いたことがあったときにそれを迅速に確認したり、仮説をもとにいろいろな実装を組んでみたり、などのエンジニアリング作業が発生することが多いです
+しかし、それを実装しようとしても実装に時間がかかったり、試しているうちにやっぱり違った、となったり、うまくいかない理由が実装のミスだったりして、なかなかエネルギーがけずられることになることが多いです。
+しかし、最近導入したCursorを使えば、仮説をもとにプログラムを実装してもらったり、ちょっと実装を変えてもらったり、という人に頼んだらブチ切れそうなこまごまとしたプログラミングのトライアンドエラーをいくらでも試すことができます。
+これはとてもリバエンと相性がいいと思います。（データ解析とかもそうかもね）
+ 
+というわけで、今回は部屋に転がっていた２０００年ぐらいのカラオケマシーンの外付け機器である、CD-ROMチェンジャーの中に入っていたカラオケデータCDを解析してみることにしました。
+通電不可のジャンクの箱
+一般的にはゴミというのでは？
+到着時点で前面パネルが脱落しているという良いジャンク感 pic.twitter.com/6ek6aMnbP7
+September 5, 2024
+
+
+ 
+対象機器はBMBのBeMAX’ sというとうの昔にサービスが終了したマシンです。
+通信カラオケは回線経由でデータが送られてくるため、CD-ROMがなぜ必要なの？と今の間隔だと思いますが、黎明期にはまだHDDが高価で容量も小さかったため、それを補うためにリリース済みの曲は外付けCD-ROMなどに収納し、差分だけが回線経由でダウンロードされるという方法だった時期があります。
+この機器には４枚のCD-ROMが入っていたため、これだけで約２GバイトのHDD容量が抑えられた、ということ…]]></summary>
+        <author>
+            <name>honeylab's blog</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2025年8月第2週〕]]></title>
         <id>hatenablog://entry/6802418398542799210</id>
