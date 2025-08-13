@@ -3612,6 +3612,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398544904673",
+          "author": null,
+          "description": "いつもはてなブログをご利用いただきありがとうございます。\n掲題の通り、2025年9月1日以降 blog.hatena.ne.jp への平文HTTPのリクエストを一律でHTTPSの同じURLに301リダイレクトされるよう変更いたします。\nAPIをご利用いただいている開発者やユーザの皆様においてHTTPSのエンドポイントをご利用いただくよう変更をお願いいたします。\n影響を受けるAPIやフィード\nはてなブログAtomPub\n\nhttps://developer.hatena.ne.jp/ja/documents/blog/apis/atom/\n\n購読リストのフィード\n\nhttps://blog.hatena.ne.jp/-/antenna\n\n\n今回の変更は、皆様により安全にサービスをご利用いただくための対応となります。\n今後もサービスの改善に努めてまいりますので、引き続きはてなブログをよろしくお願いいたします。",
+          "link": "https://staff.hatenablog.com/entry/2025/08/13/152621",
+          "publishedOn": "2025-08-13T06:26:21.000Z",
+          "wordCount": null,
+          "title": "2025年9月1日以降 blog.hatena.ne.jp への平文HTTPリクエストを一律でHTTPSにリダイレクトします",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398544904673/1755066384",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/6802418398544904673/1755066384"
+        },
+        {
           "id": "hatenablog://entry/6802418398534075439",
           "author": null,
           "description": "いつもはてなブログ、はてなCMSをご利用いただきありがとうございます。\n法人プランをご契約の方向けに、はてなCMSに関するお知らせを追加しました。\nhttps://www.hatena.ne.jp/cms/blog/figma/\nご質問やご意見はお問い合わせフォームより、または担当営業にお寄せください。",
@@ -7985,6 +8000,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44068",
+          "author": "mamosuke",
+          "description": "Nintendo Classicsにちびロボ！追加,BD-JB-1250 RemoteJarLoader 1.1+ Lapse 1.0,PS5_EZ_Host v1.0.3,Switch 2はDLSS 3.1,PS4PKGinstaller v1.10EA,ntr-hr v0.3.5.2,ntrviewer-hr v0.3.5.2,AKMenu-Next v1.8,FrogGBA v0.2.0,NESFab 1.7,PCSX2 v2.5.105→→→この記事の続きを読む\nGameGaz Daily 2025.8.13 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025081344068/",
+          "publishedOn": "2025-08-13T06:03:59.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.8.13",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44066",
           "author": "mamosuke",

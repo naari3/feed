@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-13T06:02:16.554Z</updated>
+    <updated>2025-08-13T07:02:35.572Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2025年9月1日以降 blog.hatena.ne.jp への平文HTTPリクエストを一律でHTTPSにリダイレクトします]]></title>
+        <id>hatenablog://entry/6802418398544904673</id>
+        <link href="https://staff.hatenablog.com/entry/2025/08/13/152621"/>
+        <updated>2025-08-13T06:26:21.000Z</updated>
+        <summary type="html"><![CDATA[いつもはてなブログをご利用いただきありがとうございます。
+掲題の通り、2025年9月1日以降 blog.hatena.ne.jp への平文HTTPのリクエストを一律でHTTPSの同じURLに301リダイレクトされるよう変更いたします。
+APIをご利用いただいている開発者やユーザの皆様においてHTTPSのエンドポイントをご利用いただくよう変更をお願いいたします。
+影響を受けるAPIやフィード
+はてなブログAtomPub
+
+https://developer.hatena.ne.jp/ja/documents/blog/apis/atom/
+
+購読リストのフィード
+
+https://blog.hatena.ne.jp/-/antenna
+
+
+今回の変更は、皆様により安全にサービスをご利用いただくための対応となります。
+今後もサービスの改善に努めてまいりますので、引き続きはてなブログをよろしくお願いいたします。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2025.8.13]]></title>
+        <id>https://gamegaz.com/?p=44068</id>
+        <link href="https://gamegaz.com/2025081344068/"/>
+        <updated>2025-08-13T06:03:59.000Z</updated>
+        <summary type="html"><![CDATA[Nintendo Classicsにちびロボ！追加,BD-JB-1250 RemoteJarLoader 1.1+ Lapse 1.0,PS5_EZ_Host v1.0.3,Switch 2はDLSS 3.1,PS4PKGinstaller v1.10EA,ntr-hr v0.3.5.2,ntrviewer-hr v0.3.5.2,AKMenu-Next v1.8,FrogGBA v0.2.0,NESFab 1.7,PCSX2 v2.5.105→→→この記事の続きを読む
+GameGaz Daily 2025.8.13 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[防災日記その1（水・電気編）]]></title>
         <id>hatenablog://entry/6802418398544480264</id>
