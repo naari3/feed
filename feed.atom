@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-14T02:35:17.873Z</updated>
+    <updated>2025-08-14T03:25:43.035Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[au IDにバインドされている2つの電話番号を切り離して新規のau IDに分割する]]></title>
+        <id>hatenablog://entry/6802418398546137410</id>
+        <link href="https://kiyo-shit.hatenablog.com/entry/2025/08/14/115507"/>
+        <updated>2025-08-14T02:55:07.000Z</updated>
+        <summary type="html"><![CDATA[これは珍しいケースだと思うが、解決策が見つからなかったので記録しておく。
+自分の au ID は、長く au を契約していた時期に作成した。その後は MNP で ahamo に移り、現在は povo2.0 を使っている。
+先日、子どもの au 回線を新規契約し、それを自分の au ID の配下で手続きした。結果として、私の au ID が「au 回線を保有している」という扱いに変わった。ここで問題が起きる。au にログインしようとすると回線判定が走るが、私の端末は povo2.0 であり、この判定では au 回線に含まれない。
+さらに、au PAY のログインやカード情報確認で使う二段階認証の SMS が、私の電話番号ではなく子どもの iPhone に飛ぶ状態になっていた。要するに、私の au ID の代表回線が子どもの番号になっていた。
+このままでは不便なので、au サポートに電話で相談した。結論は明快で、povo2.0 の契約を代表回線に変更することはできないとのことだった。そこで、子どもの電話番号を私の au ID から切り離し、子ども用に独立した au ID を新規作成する対応となった。作業はサポート側で実施してもらえた。
+問い合わせは午前 10 時。au ID の切り離し完了通知メールが届いたのは同日の 20 時だった。当日中に処理が完了している。
+手続き後、自分の au ID では問題なくログインできている。一方、切り離しによって新規作成された子どもの au ID については、子どもの iPhone からログインする必要がある。
+同じ状況に遭遇する人は多くないと思うが、困ったときの手がかりになれば。]]></summary>
+        <author>
+            <name>Robot Checkerboard</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2025.8.14]]></title>
+        <id>https://gamegaz.com/?p=44072</id>
+        <link href="https://gamegaz.com/2025081444072/"/>
+        <updated>2025-08-14T02:52:17.000Z</updated>
+        <summary type="html"><![CDATA[次回Nintendo Directは9月か gamescom 2025でMetroid Prime 4のデモも,PS4 HEN 2.0, laps3c0re,Arisen Studio Beta v3.3.2,XStreaming v2.3.0,ChonkyStation3,FrogGBA v0.2.1,psOff_premium(psOff_compatibility) 2025Aug13,shadPS4 Pre-release-shadPS4-2025-08-13-882dd88,WinUAE 6.0.1→→→この記事の続きを読む
+GameGaz Daily 2025.8.14 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[洗濯機のなかにオシッコ]]></title>
         <id>hatenablog://entry/6802418398545892817</id>

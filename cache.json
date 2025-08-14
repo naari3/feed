@@ -2449,6 +2449,21 @@
       "siteUrl": "https://kiyo-shit.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398546137410",
+          "author": null,
+          "description": "これは珍しいケースだと思うが、解決策が見つからなかったので記録しておく。\n自分の au ID は、長く au を契約していた時期に作成した。その後は MNP で ahamo に移り、現在は povo2.0 を使っている。\n先日、子どもの au 回線を新規契約し、それを自分の au ID の配下で手続きした。結果として、私の au ID が「au 回線を保有している」という扱いに変わった。ここで問題が起きる。au にログインしようとすると回線判定が走るが、私の端末は povo2.0 であり、この判定では au 回線に含まれない。\nさらに、au PAY のログインやカード情報確認で使う二段階認証の SMS が、私の電話番号ではなく子どもの iPhone に飛ぶ状態になっていた。要するに、私の au ID の代表回線が子どもの番号になっていた。\nこのままでは不便なので、au サポートに電話で相談した。結論は明快で、povo2.0 の契約を代表回線に変更することはできないとのことだった。そこで、子どもの電話番号を私の au ID から切り離し、子ども用に独立した au ID を新規作成する対応となった。作業はサポート側で実施してもらえた。\n問い合わせは午前 10 時。au ID の切り離し完了通知メールが届いたのは同日の 20 時だった。当日中に処理が完了している。\n手続き後、自分の au ID では問題なくログインできている。一方、切り離しによって新規作成された子どもの au ID については、子どもの iPhone からログインする必要がある。\n同じ状況に遭遇する人は多くないと思うが、困ったときの手がかりになれば。",
+          "link": "https://kiyo-shit.hatenablog.com/entry/2025/08/14/115507",
+          "publishedOn": "2025-08-14T02:55:07.000Z",
+          "wordCount": null,
+          "title": "au IDにバインドされている2つの電話番号を切り離して新規のau IDに分割する",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208692334729889879/6802418398546137410/1755140107",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729889879/6802418398546137410/1755140107"
+        },
+        {
           "id": "hatenablog://entry/6802418398539095457",
           "author": null,
           "description": "先日の飲みの席で、「やりたいかどうかは脇に置く。ビジネスインパクトがあるならやるしかない」と盛り上がった。Will/Can/Mustで言えば、Willの優先度は下げ、Mustをやり切る。そういう主旨だった。\nとはいえ、ビジネスインパクトがまだMustとして定義し切れない局面もある。特に若手は、自分の仕事が与える影響を最大化する手前でつまずきやすい。だからこそ「やりたい」を起点に小さく試し、再現性のある「できる」へ変換していく。ケイパビリティを育て、可動域を広げる。その過程で担当する「やるべき」の範囲を少しずつ大きくする。配分を意識して設計するだけで前に進む。\n役割が上がり、視座が組織全体へ広がると、焦点は変わる。個のWillよりも、組織として何者であるかが主題になる。横断的に価値を生み、事業成長に直結するテーマを選び切る。寄与するならやる。迷いは小さくなる。\n組織でのレンジが広がり、事業を自分の腕の中で捉えられるようになるほど、Mustの比率はさらに上がる。逆に言えば、いまWillを問われている段階は、まだ可動域を拡張できる時期だ。方法を探り、重ね、広げる。その先で、最後に残るのはMustになる。",
@@ -7989,6 +8004,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44072",
+          "author": "mamosuke",
+          "description": "次回Nintendo Directは9月か gamescom 2025でMetroid Prime 4のデモも,PS4 HEN 2.0, laps3c0re,Arisen Studio Beta v3.3.2,XStreaming v2.3.0,ChonkyStation3,FrogGBA v0.2.1,psOff_premium(psOff_compatibility) 2025Aug13,shadPS4 Pre-release-shadPS4-2025-08-13-882dd88,WinUAE 6.0.1→→→この記事の続きを読む\nGameGaz Daily 2025.8.14 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025081444072/",
+          "publishedOn": "2025-08-14T02:52:17.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.8.14",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44068",
           "author": "mamosuke",
