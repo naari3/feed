@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-15T06:02:15.429Z</updated>
+    <updated>2025-08-15T07:02:32.955Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Gnomeで通知の順序が不正になる場合はアニメーション機能を有効化するとよい]]></title>
+        <id>hatenablog://entry/6802418398547605680</id>
+        <link href="https://blog.3qe.us/entry/2025/08/15/150236"/>
+        <updated>2025-08-15T06:02:36.000Z</updated>
+        <summary type="html"><![CDATA[前提
+Gnomeにはアクセシビリティ機能としてアニメーションを無効化する設定が存在する。
+
+アニメーションを無効化すると若干動作が軽くなるようなので自分は無効化していた。
+事象
+ところが、この状態では一定の場合に通知の順序がおかしくなる（1つ前の通知が出てしまう）ことがわかっている。
+# 後述のGitLabより引用
+% notify-send Test # 通知が出ることを確認する。自然に消えるのを待つ
+% notify-send Test1 && notify-send Test2 # Test1しか表示されない。自然に消えるのを待つ
+% notify-send Test3 # なぜか Test2 が表示されてしまう
+
+
+
+これ以降はずっと1つ前の通知が出てしまう。これは同時にいくつかの通知が来た場合にトリガーになってしまうため、非常に使いづらい。
+対策
+対策は今のところアニメーション機能を有効化しておくしかない。当初はアニメーション機能が原因だと分からなかったためとても困っていた。また、アニメーションを有効化しても通知がほぼ同時に来た場合は後に来たものしか表示できない。
+有効化はCLIからも可能:
+% gsettings set org.gnome.desktop.interface enable-animations true
+
+
+
+この問題はGnomeのトラッカーにファイルされているため、気になる人はウォッチしておこう:
+gitlab.gnome.org
+他にも困っている人がいるかもしれないのでメモとして残しておいた。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2025年8月-2】ナギ節]]></title>
         <id>hatenablog://entry/6802418398547477323</id>
