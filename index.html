@@ -78,6 +78,88 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">防災日記その2（夏編）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/08/15/223239" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前回はこれ。
+blog.3qe.us
+地震は夏にも来るぞ
+東日本大震災や能登半島地震は冬に起こっていた。だから震災のパブリックイメージは冬で固定されている。ゆえに冬場に困ったできごとが記憶され、防災用品のイメージも冬にある程度偏っている。例えば防災セットを買うとかならず携帯カイロが入っているが、汗拭きシートは入っていない。
+しかし当然のことながら、災害は冬だけではなく夏にも来るし、春にも、秋にも来る。夏は洪水のイメージがあるけれど、プレートに夏休みはないので普通に真夏に地震が来る。防災グッズや非常用持ち出し袋には夏用のグッズも入れておくのが望ましいと思う（シーズンごとに交換みたいな感じだろうか）。
+と思ったのでいろいろ情報を調べて買ってみた。
+ドライシャンプー
+ドライシャンプーというものがあるらしい。自分は寡聞にして知らなかったが、水を使わずにある程度汚れを取ったり匂いをマスクしたりするグッズで、スプレーだったりシートだったり色々な種類があるらしい。
+www.moist-diane.jp
+夏場は地獄のように暑くなる。茹った水溜り、銭湯にいるような空気、まさに射るような日射し。当然汗もかくしベタベタになる。ところが避難している場所が快適かどうかは分からないし、髪も数日洗えないかもしれない。そういうときにちょっとした気晴らしがあると良いだろう。
+自分は無香料タイプの小さいものを購入した。基本的に三日なんとかできればいいという戦略なので、フルボトルは買わない。
+
+【携帯用】 ダイアン デオドラントスプレー ボディ用ドライシャンプー [無香料] 40g +BODY プラスボディ 制汗 スプレー
+
+Diane(ダイアン)
+Amazon
+
+冷感スプレー
+真夏の昼に被災したりすると猛烈に暑いわけなので、身体を冷やすグッズがあったほうが良さそうだなと思った。もちろんハンディファンとかはあったほうがよいけれど、ハンディファンは普段から持ち歩いているので特に意識する必要はない。
+この手のスプレーにもいろいろあって、単にメントールの類が入っていて肌に噴射すると涼しい感じがする（まさに冷感）というだけのものもあるし、服にエタノールを噴射して一瞬で気化させ、潜熱を奪って実際に冷やす、というものもある。自分は後者のものを採用した。というのも涼しいだけでは困るため。まずガスが膨張して冷えるし、さらにエタノールが気化してさらに冷えるので、実際に使ってみるとすごく冷たい。
+
+熱中対策 服の上から極寒スプレー ミニ 無香料 ジェット冷気で瞬間冷却 93ml
+
+ノーブランド品
+Amazon
+
+やっていき
+スプレー系は火気厳禁なので、火関連の防災グッズと一緒に携行しているときは注意する必要がある。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398548106692/1755264759" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Gnomeで通知の順序が不正になる場合はアニメーション機能を有効化するとよい</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/08/15/150236" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前提
+Gnomeにはアクセシビリティ機能としてアニメーションを無効化する設定が存在する。
+
+アニメーションを無効化すると若干動作が軽くなるようなので自分は無効化していた。
+事象
+ところが、この状態では一定の場合に通知の順序がおかしくなる（1つ前の通知が出てしまう）ことがわかっている。
+# 後述のGitLabより引用
+% notify-send Test # 通知が出ることを確認する。自然に消えるのを待つ
+% notify-send Test1 &amp;&amp; notify-send Test2 # Test1しか表示されない。自然に消えるのを待つ
+% notify-send Test3 # なぜか Test2 が表示されてしまう
+
+
+
+これ以降はずっと1つ前の通知が出てしまう。これは同時にいくつかの通知が来た場合にトリガーになってしまうため、非常に使いづらい。
+対策
+対策は今のところアニメーション機能を有効化しておくしかない。当初はアニメーション機能が原因だと分からなかったためとても困っていた。また、アニメーションを有効化しても通知がほぼ同時に来た場合は後に来たものしか表示できない。
+有効化はCLIからも可能:
+% gsettings set org.gnome.desktop.interface enable-animations true
+
+
+
+この問題はGnomeのトラッカーにファイルされているため、気になる人はウォッチしておこう:
+gitlab.gnome.org
+他にも困っている人がいるかもしれないのでメモとして残しておいた。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398547605680/1755237756" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/hercelot" target="_blank"
               rel="noopener">Hercelot</a></h3>
           <section class="articles-per-source">
@@ -181,49 +263,6 @@ pirohiko.hatenablog.com
 「天空の兜」を…</span>
                   </div>
                   <img src="https://ogimage.blog.st-hatena.com/13574176438019036883/6802418398546961261/1755245044" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Gnomeで通知の順序が不正になる場合はアニメーション機能を有効化するとよい</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/08/15/150236" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>前提
-Gnomeにはアクセシビリティ機能としてアニメーションを無効化する設定が存在する。
-
-アニメーションを無効化すると若干動作が軽くなるようなので自分は無効化していた。
-事象
-ところが、この状態では一定の場合に通知の順序がおかしくなる（1つ前の通知が出てしまう）ことがわかっている。
-# 後述のGitLabより引用
-% notify-send Test # 通知が出ることを確認する。自然に消えるのを待つ
-% notify-send Test1 &amp;&amp; notify-send Test2 # Test1しか表示されない。自然に消えるのを待つ
-% notify-send Test3 # なぜか Test2 が表示されてしまう
-
-
-
-これ以降はずっと1つ前の通知が出てしまう。これは同時にいくつかの通知が来た場合にトリガーになってしまうため、非常に使いづらい。
-対策
-対策は今のところアニメーション機能を有効化しておくしかない。当初はアニメーション機能が原因だと分からなかったためとても困っていた。また、アニメーションを有効化しても通知がほぼ同時に来た場合は後に来たものしか表示できない。
-有効化はCLIからも可能:
-% gsettings set org.gnome.desktop.interface enable-animations true
-
-
-
-この問題はGnomeのトラッカーにファイルされているため、気になる人はウォッチしておこう:
-gitlab.gnome.org
-他にも困っている人がいるかもしれないのでメモとして残しておいた。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398547605680/1755237756" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -15485,68 +15524,6 @@ Amaz…</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
-              rel="noopener">現実モデリング</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">荒ぶるjestのwatchモードよ、鎮まりたまえ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://contradiction29.hatenablog.com/entry/2025/05/18/105917" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>概要
-jestのwatchモードを発動した際、特に何も変更していないにもかかわらず、再読み込みを繰り返す現象が手元で確認された
-原因は、MongoDBがバインドマウントされたディレクトリに対してファイルの書き込みを頻繁に行ったことにより、当該ディレクトリの変更をjest側が検知し、結果的に書き込みの頻度に合わせてリロードされたことだった
-jest.config.ts内のwatchPathIgnorePatternsに当該バウンドマウントされたディレクトリを追加し、挙動が修正されたことを確認した
-自分用にメモを残しておく。
-はじめに
-jestのwatchモードを使うとテスト結果をリアルタイムで確認しながらコードが書けて便利で、最近はよく使っている。ある日仕事をしていると、突如 jestのwatchモードが荒ぶるようになった。
-
-具体的には以下のような症状である。
-変更をしていないのに常に変更が走っているような感じになる
-ファイル名に絞り込んだモードを選んでも、すぐ変更が走ったかのようにrunし始める
-なお、上記画像はCursorだが、Mac標準のターミナルでやっても同様の現象が起こった。
-原因の切り分け
-CursorではなくWezTermや標準ターミナルでやってみる
-
-
-結果変化せず
-したがってIDEのプロセスが悪さをしているわけではない
-rm -rf node_modulesして再インストールする
-
-
-結果変化せず
-docker pruneする
-
-
-結果変化せず
-レポジトリをいったん削除、git clone して再セットアップ
-
-
-結果変化せず
-watchman:falseを試す
-
-
-結果変化せず
-調べた結果
-同僚「docker-compose.ymlの中のバインドマウントされてるディレクトリが怪しいんじゃないの？」
-なるほど確かに。
-そういうわけで、怪しそうなところを手あたり次第jest.config.ts内部のwatchPathIgnorePatternsに入れていく。
-jestjs.io
-mongodbのバインドマウント元のディレクトリを指定したところで例の挙動は終焉した。
-学びとしては以下である
-mongodbのバインドマウントディレクトリは.gitIgnoreで指定されていたが、watchモードはその変化もとらえ続けていた
-無意識のうちに.gitIgnoreされているディレクトリはwatchの対象外だと思っていたが、別にそんなことはどこにも書いていなかった</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/851770354b4013faffb4ad2063391804bc42ffe8/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fgyazo.com%2Fffd20acb48409654d25d11e582fcd00a" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17658,7 +17635,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-08-15T13:10:28.317Z">2025-08-15T13:10:28.317Z</time>
+    <time id="build-timestamp" datetime="2025-08-15T14:01:43.121Z">2025-08-15T14:01:43.121Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

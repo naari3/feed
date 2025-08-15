@@ -1657,21 +1657,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f3c7dcfc9faf9b068cfbfe77cfdbdd2f810001e3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcontradiction29%2F20250524%2F20250524203952.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398434221505",
-          "author": null,
-          "description": "概要\njestのwatchモードを発動した際、特に何も変更していないにもかかわらず、再読み込みを繰り返す現象が手元で確認された\n原因は、MongoDBがバインドマウントされたディレクトリに対してファイルの書き込みを頻繁に行ったことにより、当該ディレクトリの変更をjest側が検知し、結果的に書き込みの頻度に合わせてリロードされたことだった\njest.config.ts内のwatchPathIgnorePatternsに当該バウンドマウントされたディレクトリを追加し、挙動が修正されたことを確認した\n自分用にメモを残しておく。\nはじめに\njestのwatchモードを使うとテスト結果をリアルタイムで確認しながらコードが書けて便利で、最近はよく使っている。ある日仕事をしていると、突如 jestのwatchモードが荒ぶるようになった。\n\n具体的には以下のような症状である。\n変更をしていないのに常に変更が走っているような感じになる\nファイル名に絞り込んだモードを選んでも、すぐ変更が走ったかのようにrunし始める\nなお、上記画像はCursorだが、Mac標準のターミナルでやっても同様の現象が起こった。\n原因の切り分け\nCursorではなくWezTermや標準ターミナルでやってみる\n\n\n結果変化せず\nしたがってIDEのプロセスが悪さをしているわけではない\nrm -rf node_modulesして再インストールする\n\n\n結果変化せず\ndocker pruneする\n\n\n結果変化せず\nレポジトリをいったん削除、git clone して再セットアップ\n\n\n結果変化せず\nwatchman:falseを試す\n\n\n結果変化せず\n調べた結果\n同僚「docker-compose.ymlの中のバインドマウントされてるディレクトリが怪しいんじゃないの？」\nなるほど確かに。\nそういうわけで、怪しそうなところを手あたり次第jest.config.ts内部のwatchPathIgnorePatternsに入れていく。\njestjs.io\nmongodbのバインドマウント元のディレクトリを指定したところで例の挙動は終焉した。\n学びとしては以下である\nmongodbのバインドマウントディレクトリは.gitIgnoreで指定されていたが、watchモードはその変化もとらえ続けていた\n無意識のうちに.gitIgnoreされているディレクトリはwatchの対象外だと思っていたが、別にそんなことはどこにも書いていなかった",
-          "link": "https://contradiction29.hatenablog.com/entry/2025/05/18/105917",
-          "publishedOn": "2025-05-18T01:59:17.000Z",
-          "wordCount": null,
-          "title": "荒ぶるjestのwatchモードよ、鎮まりたまえ",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/851770354b4013faffb4ad2063391804bc42ffe8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fgyazo.com%2Fffd20acb48409654d25d11e582fcd00a",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/851770354b4013faffb4ad2063391804bc42ffe8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fgyazo.com%2Fffd20acb48409654d25d11e582fcd00a"
         }
       ]
     },
@@ -6822,6 +6807,21 @@
       "feedUrl": "https://blog.3qe.us/rss",
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398548106692",
+          "author": null,
+          "description": "前回はこれ。\nblog.3qe.us\n地震は夏にも来るぞ\n東日本大震災や能登半島地震は冬に起こっていた。だから震災のパブリックイメージは冬で固定されている。ゆえに冬場に困ったできごとが記憶され、防災用品のイメージも冬にある程度偏っている。例えば防災セットを買うとかならず携帯カイロが入っているが、汗拭きシートは入っていない。\nしかし当然のことながら、災害は冬だけではなく夏にも来るし、春にも、秋にも来る。夏は洪水のイメージがあるけれど、プレートに夏休みはないので普通に真夏に地震が来る。防災グッズや非常用持ち出し袋には夏用のグッズも入れておくのが望ましいと思う（シーズンごとに交換みたいな感じだろうか）。\nと思ったのでいろいろ情報を調べて買ってみた。\nドライシャンプー\nドライシャンプーというものがあるらしい。自分は寡聞にして知らなかったが、水を使わずにある程度汚れを取ったり匂いをマスクしたりするグッズで、スプレーだったりシートだったり色々な種類があるらしい。\nwww.moist-diane.jp\n夏場は地獄のように暑くなる。茹った水溜り、銭湯にいるような空気、まさに射るような日射し。当然汗もかくしベタベタになる。ところが避難している場所が快適かどうかは分からないし、髪も数日洗えないかもしれない。そういうときにちょっとした気晴らしがあると良いだろう。\n自分は無香料タイプの小さいものを購入した。基本的に三日なんとかできればいいという戦略なので、フルボトルは買わない。\n\n【携帯用】 ダイアン デオドラントスプレー ボディ用ドライシャンプー [無香料] 40g +BODY プラスボディ 制汗 スプレー\n\nDiane(ダイアン)\nAmazon\n\n冷感スプレー\n真夏の昼に被災したりすると猛烈に暑いわけなので、身体を冷やすグッズがあったほうが良さそうだなと思った。もちろんハンディファンとかはあったほうがよいけれど、ハンディファンは普段から持ち歩いているので特に意識する必要はない。\nこの手のスプレーにもいろいろあって、単にメントールの類が入っていて肌に噴射すると涼しい感じがする（まさに冷感）というだけのものもあるし、服にエタノールを噴射して一瞬で気化させ、潜熱を奪って実際に冷やす、というものもある。自分は後者のものを採用した。というのも涼しいだけでは困るため。まずガスが膨張して冷えるし、さらにエタノールが気化してさらに冷えるので、実際に使ってみるとすごく冷たい。\n\n熱中対策 服の上から極寒スプレー ミニ 無香料 ジェット冷気で瞬間冷却 93ml\n\nノーブランド品\nAmazon\n\nやっていき\nスプレー系は火気厳禁なので、火関連の防災グッズと一緒に携行しているときは注意する必要がある。",
+          "link": "https://blog.3qe.us/entry/2025/08/15/223239",
+          "publishedOn": "2025-08-15T13:32:39.000Z",
+          "wordCount": null,
+          "title": "防災日記その2（夏編）",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398548106692/1755264759",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398548106692/1755264759"
+        },
         {
           "id": "hatenablog://entry/6802418398547605680",
           "author": null,
