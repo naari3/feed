@@ -7266,21 +7266,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398435758549/1747639499"
-        },
-        {
-          "id": "hatenablog://entry/6802418398435016134",
-          "author": null,
-          "description": "Redditを見ていたところ面白いコンパイラプラグインを発見したので紹介する。\nRedacted\nRedactedは、case classの特定のフィールドをtoString()から除外し、***で塗り潰して見えなくできるコンパイラプラグインだ。\npolentino.github.io\ngithub.com\nRedactedはScala 2.13系と3系の両方に対応しており、JVMでの動作が可能だ(Scala.jsとScala Nativeには対応していないようだ)。\n百聞は一見に如かず、つまり以下のようなコードを書けるようになる:\nimport io.github.polentino.redacted.*\n\ncase class User(id: Int, name: String, @redacted password: String)\n\n@main def hello(): Unit =\n  val u = User(42, \"windymelt\", \"foobar2000\")\n  println(u)\n\n\n\nこのコードを実行すると、以下の出力になる:\nUser(42,windymelt,***)\n\n\n\nこの作用により、うっかり秘匿しなければならないデータを持つcase classを表示してログに残ってしまう、ということを防げる。\nインストール\nRedactedは2つの形式で提供されている。すなわち、sbtプラグインと、手動でコンパイラプラグインを導入する形だ。どちらを選択しても実現できることは同じだ。\n簡単なのはsbtプラグインなので、特に理由がなければこちらを選ぶとよいだろう。\nsbtプラグイン\nproject/plugin.scalaに以下の通り追記する(バージョンは執筆時点での最新):\naddSbtPlugin(\"io.github.polentino\" % …",
-          "link": "https://blog.3qe.us/entry/2025/05/19/000917",
-          "publishedOn": "2025-05-18T15:09:17.000Z",
-          "wordCount": 1515,
-          "title": "Redacted: Scalaのcase classの特定のフィールドを隠すコンパイラプラグイン",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/7a18c6903500cc83efe87623b5fb3b6790237aee/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250519%2F20250519000831.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/7a18c6903500cc83efe87623b5fb3b6790237aee/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250519%2F20250519000831.png"
         }
       ]
     },

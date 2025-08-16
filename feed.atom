@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-08-16T02:31:09.839Z</updated>
+    <updated>2025-08-16T03:22:17.756Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -10545,44 +10545,6 @@ togetter.com
 GameGaz Daily 2025.5.19 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Redacted: Scalaのcase classの特定のフィールドを隠すコンパイラプラグイン]]></title>
-        <id>hatenablog://entry/6802418398435016134</id>
-        <link href="https://blog.3qe.us/entry/2025/05/19/000917"/>
-        <updated>2025-05-18T15:09:17.000Z</updated>
-        <summary type="html"><![CDATA[Redditを見ていたところ面白いコンパイラプラグインを発見したので紹介する。
-Redacted
-Redactedは、case classの特定のフィールドをtoString()から除外し、***で塗り潰して見えなくできるコンパイラプラグインだ。
-polentino.github.io
-github.com
-RedactedはScala 2.13系と3系の両方に対応しており、JVMでの動作が可能だ(Scala.jsとScala Nativeには対応していないようだ)。
-百聞は一見に如かず、つまり以下のようなコードを書けるようになる:
-import io.github.polentino.redacted.*
-
-case class User(id: Int, name: String, @redacted password: String)
-
-@main def hello(): Unit =
-  val u = User(42, "windymelt", "foobar2000")
-  println(u)
-
-
-
-このコードを実行すると、以下の出力になる:
-User(42,windymelt,***)
-
-
-
-この作用により、うっかり秘匿しなければならないデータを持つcase classを表示してログに残ってしまう、ということを防げる。
-インストール
-Redactedは2つの形式で提供されている。すなわち、sbtプラグインと、手動でコンパイラプラグインを導入する形だ。どちらを選択しても実現できることは同じだ。
-簡単なのはsbtプラグインなので、特に理由がなければこちらを選ぶとよいだろう。
-sbtプラグイン
-project/plugin.scalaに以下の通り追記する(バージョンは執筆時点での最新):
-addSbtPlugin("io.github.polentino" % …]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>

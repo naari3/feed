@@ -15405,54 +15405,6 @@ GameGaz Daily 2025.5.19 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Redacted: Scalaのcase classの特定のフィールドを隠すコンパイラプラグイン</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/05/19/000917" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Redditを見ていたところ面白いコンパイラプラグインを発見したので紹介する。
-Redacted
-Redactedは、case classの特定のフィールドをtoString()から除外し、***で塗り潰して見えなくできるコンパイラプラグインだ。
-polentino.github.io
-github.com
-RedactedはScala 2.13系と3系の両方に対応しており、JVMでの動作が可能だ(Scala.jsとScala Nativeには対応していないようだ)。
-百聞は一見に如かず、つまり以下のようなコードを書けるようになる:
-import io.github.polentino.redacted.*
-
-case class User(id: Int, name: String, @redacted password: String)
-
-@main def hello(): Unit &#x3D;
-  val u &#x3D; User(42, &quot;windymelt&quot;, &quot;foobar2000&quot;)
-  println(u)
-
-
-
-このコードを実行すると、以下の出力になる:
-User(42,windymelt,***)
-
-
-
-この作用により、うっかり秘匿しなければならないデータを持つcase classを表示してログに残ってしまう、ということを防げる。
-インストール
-Redactedは2つの形式で提供されている。すなわち、sbtプラグインと、手動でコンパイラプラグインを導入する形だ。どちらを選択しても実現できることは同じだ。
-簡単なのはsbtプラグインなので、特に理由がなければこちらを選ぶとよいだろう。
-sbtプラグイン
-project/plugin.scalaに以下の通り追記する(バージョンは執筆時点での最新):
-addSbtPlugin(&quot;io.github.polentino&quot; % …</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/7a18c6903500cc83efe87623b5fb3b6790237aee/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250519%2F20250519000831.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17564,7 +17516,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-08-16T02:31:09.798Z">2025-08-16T02:31:09.798Z</time>
+    <time id="build-timestamp" datetime="2025-08-16T03:22:17.711Z">2025-08-16T03:22:17.711Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
