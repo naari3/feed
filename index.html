@@ -15421,73 +15421,6 @@ Note: 
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Zshでスラッシュ単位で移動・削除できるようにするには$WORDCHARSを設定する</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/05/20/201219" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>tl;dr
-以下の通り.zshrcに追記する
-# &#x27;/&#x27; を単語の境界として認める
-typeset -g WORDCHARS&#x3D;${WORDCHARS:s@/@}
-
-
-
-登場人物
-typeset シェル変数を書き換える
-
-
--g グローバルに適用する
-$WORDCHARS 「ここに入った文字は単語境界とはみなさない」というリスト
-:s@/@ 変数展開: /を除外する
-あらすじ
-zshを使っていてちょこちょこ気になるところがあった。それが単語の幅。パスを入力していて、ちょうど1階層分削除したいときにCtrl+wを押下したりするのだが、Zsh的にはスラッシュは単語の境界に入っていないようで、パス全体が消えてしまう。
-% cd /foo/bar/buzz # ここでC-w
-% cd  # うえ〜ん
-
-
-
-これだと使いにくい。
-対応
-Zshのことなのでどうせどっかに設定があるだろと高を括って調べてみたところ、さすがに設定があった。
-zsh.sourceforge.io
-ここの4.3.4にWORDCHARSについて記載されている。この変数に登録しておいた文字は単語間の境界とみなされなくなる。言い換えると、ここから取り除けば単語間境界としてみなされるようになるということ。
-変数から特定の文字列を取り除くには、${VAR:s@文字@}するとよい。これはzshのmodifierという仕組み。
-zsh.sourceforge.io
-この設定を.zshrcに書き込む:
-# &#x27;/&#x27; を単語の境界として認める
-typeset -g WORDCHARS&#x3D;${WORDCHARS:s@/@}
-
-
-
-exportしてもだいたい同じだと思う。ただ、exportすると環境変数として出ていってしまう。WORDCHARSは子プロセスに渡していく性質のものではなく、単なるZshのシェル変数なので今回はtypeset -gでよい。-gは関数スコープではなくグローバルに適用するオプション。
-Further Reading
-ところでここまで書いて先人がいた。
-polamjag.hatenablog.jp
-10年越しに同じようなことを書いてしまった。ネットは広大だね。
-scrapbox.io
-複数指定する
-複数指定したいときは:sの略記ができないので、以下のように書く。
-# &#x27;/&#x27; / &#x27;&#x3D;&#x27; を単語の境界として認める
-typeset -g WORDCHARS&#x3D;${WORDCHARS:s@/@@:s@&#x3D;@@}
-
-
-
-もともと:s@/@は:s@/@@の略で、置換先が空で、なおかつ後続のmodifierがないときにこう書ける。複数置換したいときはちゃんとmodifierを最後まで書く必要があるので、↑のような形になる。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398437780411/1747740329" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17599,7 +17532,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-08-17T23:01:54.306Z">2025-08-17T23:01:54.306Z</time>
+    <time id="build-timestamp" datetime="2025-08-18T00:04:14.294Z">2025-08-18T00:04:14.294Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -7271,21 +7271,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398439438101/1747821873"
-        },
-        {
-          "id": "hatenablog://entry/6802418398437780411",
-          "author": null,
-          "description": "tl;dr\n以下の通り.zshrcに追記する\n# '/' を単語の境界として認める\ntypeset -g WORDCHARS=${WORDCHARS:s@/@}\n\n\n\n登場人物\ntypeset シェル変数を書き換える\n\n\n-g グローバルに適用する\n$WORDCHARS 「ここに入った文字は単語境界とはみなさない」というリスト\n:s@/@ 変数展開: /を除外する\nあらすじ\nzshを使っていてちょこちょこ気になるところがあった。それが単語の幅。パスを入力していて、ちょうど1階層分削除したいときにCtrl+wを押下したりするのだが、Zsh的にはスラッシュは単語の境界に入っていないようで、パス全体が消えてしまう。\n% cd /foo/bar/buzz<CURSOR> # ここでC-w\n% cd <CURSOR> # うえ〜ん\n\n\n\nこれだと使いにくい。\n対応\nZshのことなのでどうせどっかに設定があるだろと高を括って調べてみたところ、さすがに設定があった。\nzsh.sourceforge.io\nここの4.3.4にWORDCHARSについて記載されている。この変数に登録しておいた文字は単語間の境界とみなされなくなる。言い換えると、ここから取り除けば単語間境界としてみなされるようになるということ。\n変数から特定の文字列を取り除くには、${VAR:s@文字@}するとよい。これはzshのmodifierという仕組み。\nzsh.sourceforge.io\nこの設定を.zshrcに書き込む:\n# '/' を単語の境界として認める\ntypeset -g WORDCHARS=${WORDCHARS:s@/@}\n\n\n\nexportしてもだいたい同じだと思う。ただ、exportすると環境変数として出ていってしまう。WORDCHARSは子プロセスに渡していく性質のものではなく、単なるZshのシェル変数なので今回はtypeset -gでよい。-gは関数スコープではなくグローバルに適用するオプション。\nFurther Reading\nところでここまで書いて先人がいた。\npolamjag.hatenablog.jp\n10年越しに同じようなことを書いてしまった。ネットは広大だね。\nscrapbox.io\n複数指定する\n複数指定したいときは:sの略記ができないので、以下のように書く。\n# '/' / '=' を単語の境界として認める\ntypeset -g WORDCHARS=${WORDCHARS:s@/@@:s@=@@}\n\n\n\nもともと:s@/@は:s@/@@の略で、置換先が空で、なおかつ後続のmodifierがないときにこう書ける。複数置換したいときはちゃんとmodifierを最後まで書く必要があるので、↑のような形になる。",
-          "link": "https://blog.3qe.us/entry/2025/05/20/201219",
-          "publishedOn": "2025-05-20T11:12:19.000Z",
-          "wordCount": null,
-          "title": "Zshでスラッシュ単位で移動・削除できるようにするには$WORDCHARSを設定する",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398437780411/1747740329",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398437780411/1747740329"
         }
       ]
     },
