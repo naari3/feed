@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398551860420",
+          "author": null,
+          "description": "gihub漁っていたらソースコードを発見しました。関係各所に許可をとって公開されているようです。ありがたい。たぶん一番お目当てのスクリプト関連はKOSOTEXTと2フォルダにあります。\nhttps://github.com/ritsuro/PrincessMaker2xPC9801/",
+          "link": "https://akkera102.hatenablog.com/entry/2025/08/18/150927",
+          "publishedOn": "2025-08-18T06:09:27.000Z",
+          "wordCount": 466,
+          "title": "PC98PM2!!",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398551860420/1755497597",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398551860420/1755497597"
+        },
+        {
           "id": "hatenablog://entry/6802418398543579695",
           "author": null,
           "description": "15年ぐらいぶりにbulletMLの仕様を読んでみました。昔みたいにわけわかんないよーとか、ちぃかわのような顔にならず・・・どうも少しは進歩しているようです。\nwww.asahi-net.or.jp\nスクリプト言語で書かれているのでテストしやすいという利点もあります。それとけっこうな数の資産が扱えるのは大きいです。\nデメリットはxmlであること・・・各言語の標準xmlパーサーが使える恩恵でかいですけれど、編集しずらい読みにくい。そういえばbulletGBAはphpを使ってC++にジェネレートしてましたし、あの仕様書を見て思いついたのですか！すげー！と今更思う次第です。偉大過ぎる。コロンブスの卵ってやつですかね。今でもオーパーツな感じします。",
@@ -7747,6 +7762,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2025/08/18/jsprimer-v7/",
+          "author": null,
+          "description": "JavaScript Primer v7.0.0をリリースしました 🎉\nリリースノート: Release v7.0.0: ECMAScript 2025サポート、イテレータとジェネレータ · asciidwango/js-primer\nJavaScript Primer v7.0.0では、ECMAScript 2025への対応と、新しく「イテレータとジェネレータ」の章を追加しています。\nIterator Helpersをはじめとした、ES2025の新機能を学ぶことができます。\nJavaScript Primer Sponsors\nJavaScript Primer(jsprimer)では、Open Collectiveを通じてプロジェクトの更新に関わる資金を募っています。\nJavaScript Primer - Open Collective\n今回のv7リリースにおいては、次の方々にご支援いただきました！\nGold Sponsors\n\nSupporters\n\nご支援ありがとうございます！\nJavaScript Primerスポンサーについては、次のページを参照してください。\nJavaScript Primerスポンサー · JavaScript Primer #jsprimer\nまた、ご支援いただいた資金は、jsprimerにcontributionしてくれた方へ還元できるような仕組みを引き続き運用しています。\n今回から同じ金額を他のCollective(オープンソースプロジェクト)に寄付する仕組みも追加しました。 Contributorが受け取る代わりに、指定されたCollectiveへ同じ金額を寄付できます。\nContributing Expenses Policy\nJavaScript Primer v7.0.0の変更点\nJavaScript Primer v7.0…",
+          "link": "https://efcl.info/2025/08/18/jsprimer-v7/",
+          "publishedOn": "2025-08-18T00:00:00.000Z",
+          "wordCount": null,
+          "title": "JavaScript Primer v7.0.0リリース: ES2025対応とIterator Helpersの新章追加",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2025/07/05/confirm-pam/",
           "author": null,
