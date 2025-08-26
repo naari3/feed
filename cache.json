@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398563948872",
+          "author": null,
+          "description": "前回の続き。寝て起きて考えてみたら、そもそも全部画像で持ってしまえばいいのでは？という結論になりました。mode0で16色の場合、1画面240/2*160=19200バイト。EWRAMでいうと10画面分のサイズは行けます。pythonで予め全部のテキスト内容を画像保存してLz7圧縮しとく。使うときはEWRAMに展開させて各画面を部分表示させる。\n・・・頭悪いなーとかいわないようにおなしゃす・・・。フォントのプロポーショナル処理なんてpython側に委託した方がいいですし、この方法なら1フレ確実に終わりますし。\n今考えているのはamigaOS ver1を模倣したメールノベルゲーム「Digital: A Love Story」を想定しています。テキスト内容は主に３つ。受信メールボックスを開く、掲示板のスレッドを見る、掲示板の各スレッド内容を見る、に集約されているので・・・行けますね。あとGUIというとスクロールバーどうすっべーとも思ったのですけど、そもそもGBAのボタンでスクロールしたいかというとしたくないし！と内なる声が反対してくる（笑。（１／３）とか表示して画面単位移動したいです。指疲れません。\nちなみにDigitalは2時間程度で終わるフリーソフトです。1988年の海外パソコン通信な感じ。日本だと知名度ひくくてーもったいない。日本語訳もけっこういいと思うのですけれど。ピーガラガラガラ。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/08/26/184530",
+          "publishedOn": "2025-08-26T09:45:30.000Z",
+          "wordCount": 470,
+          "title": "練習5",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398563948872/1756209348",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398563948872/1756209348"
+        },
+        {
           "id": "hatenablog://entry/6802418398560656574",
           "author": null,
           "description": "ペイントソフトで画面の練習。等間隔フォント表示して、iとjのみ4ドット間隔にしました。んー左下のdic\"t\"がいやな感じしますね。プロポーショナル処理を加えるかどうするか。そうするとmode4になるのですけれど、mode0でウィンドウ表示！ってブイブイ（死語）言わせたいですやん・・・。",
@@ -809,21 +824,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398450471981/1748501813"
-        },
-        {
-          "id": "hatenablog://entry/6802418398450364830",
-          "author": null,
-          "description": "ハックしている人間が書く内容じゃないのですけど、少しナイーブな話をさせてもらえればと思っています。このblogを見ている10名ぐらいの方・・・とは最近いえなくなっていますけど、20名ぐらい？の方向けに書いています。拡散しないでいただけるとありがたいです。\nえーと、法律の話です。私のしている移植についての話をさせてもらえばと思っています。まず大枠ではファンメイド（二次創作）は、著作権違反をしているってのが前提だと思っています。いや、親告罪とか抜きに考えて大雑把にです。それで、その枠から各会社の出しているガイドラインに従う限り、合法ファンメイドなのかなと。\nぶっちゃけこの状態だとほとんどの創作物は違反していて、私のしている移植についてもとーぜん違反ですしアウトです。ですのでゲーム（商材）を作った会社からお叱りを頂いた場合、床に額を擦りつけてすみませんでしたーと行動しなくてはなりません。感情的にも、大好きな作品を作ってくれた会社（クリエイターさん）に異議を唱えるなんておこがましくてできません。\nしかし、しかしながら・・・言う言わない、の判断基準は各会社それぞれ持っていてバラバラです。一律ではありません。言わないだけで「めっちゃ怒っている」かもしれませんし、言わないだけで「逆に馬鹿だなぁこいつハハハ！」と笑ってもらえているか・・・・・・・こればかりは永遠にわからんのです。それで、2000年あたりのハンドヘルド端末移植やPSP+ONScript移植祭りを遠目で見ていた限り、大きな動きはなかったと思っています。もちろん0ではないですけど5社より少ないかなと。あーあとこの話はエロゲ畑だけで、他プラットフォームだと温度差があるように思っています。2025年になって2000年代の話を持ち出すのはどうかと思いますけど、直近で盛り上がったのはそこしかないですし、そこを基準に行動をしています。",
-          "link": "https://akkera102.hatenablog.com/entry/2025/05/29/135845",
-          "publishedOn": "2025-05-29T04:58:45.000Z",
-          "wordCount": 456,
-          "title": "移植の話",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398450364830/1748494829",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398450364830/1748494829"
         }
       ]
     },
@@ -1448,21 +1448,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802418398451025648/1748528818"
-        },
-        {
-          "id": "hatenablog://entry/6802418398450029105",
-          "author": null,
-          "description": "フェンスごしに、春の風が吹く昼下がり、僕は、誰もいない公園のベンチに座って、キセルをくわえながらつぶやいた。\nことしの1月に、のべで25年続けてきた仕事をやめた。それから3月まで家で寝ていて、4月からあたらしい会社へ働きに出たけど、5月の半ばで退職。\nハローワークから再就職の見舞金が100万円振り込まれていて、まるで雇用保険金を詐取するようなカタチになってしまったけど、あくまで結果論。\nちゃんと働く気だったけど、あたらしい会社の条件が、僕とミスマッチだった。辞めたくて辞めたわけじゃない。\n合法と詐欺をへだてる境界線は、とても繊細だ。湖に、薄く張った氷のように、曖昧で、自然に溶けることもあれば、気まぐれに投げた小石で割れてしまうこともある。\nガラスの少年時代から、30年が経ってしまった。昭和に生まれた僕は、令和で道に迷っている。平成は、またたく間に過ぎ去って、なんの爪痕も残せないまま、僕の中に足跡ひとつない新雪ように横たわっている。\nめぐる時代に、流される木の葉のように、令和にさまよっている。ふり返れば、はるか遠く見えるはずの故郷が、僕の場合は、まだそこにある。\nすごろくでいうところの、ふりだしに戻る状態。何もかもがリセットされて、イチから始めるドラクエのように。\nもう、やる気はない。\nクソゲーだ。",
-          "link": "https://cild.hatenablog.com/entry/2025/05/29/012239",
-          "publishedOn": "2025-05-28T16:22:39.000Z",
-          "wordCount": 630,
-          "title": "いつだってクソゲーだこの世界はアスホール",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802418398450029105/1748449359",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802418398450029105/1748449359"
         }
       ]
     },
@@ -4318,6 +4303,16 @@
       "siteUrl": "https://note.com/banfuture9",
       "articles": [
         {
+          "id": "https://note.com/banfuture9/n/n8a4790b3319c",
+          "author": null,
+          "description": "仕事が平穏だった。特に心を乱される事がなかった。\n眠すぎる。何もせず寝てしまった。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/n8a4790b3319c",
+          "publishedOn": "2025-08-26T00:01:48.000Z",
+          "wordCount": null,
+          "title": "25/08/25 眠すぎて3行",
+          "imageUrl": null
+        },
+        {
           "id": "https://note.com/banfuture9/n/n7696ace77b11",
           "author": null,
           "description": "朝。起きてすぐCUE打ちしてみるもめんどくさくなってしまい、USBに300曲エクスポートして家を出る。出たのは15時。\nスタジオを借りてCDJを触る会があった。上記の通り準備が何もできていなかったので、自分のターンで掛けた1曲目以降の記憶が無い。非常に落ち込んだというか、これはある程度準備しないとやる意味が無いなと思った。やりたいことは伝わっていたようなので、もっと色々考える余裕が出るくらいに慣れると良いのだけれど……。現状は、\n・いま掛けている曲がどの位置かわからない\n・切れ目を綺麗に接合するタイミングがわからない\nの2点をクリアしたい。慣れと研究かなあ。\n続きをみる",
@@ -5996,16 +5991,6 @@
           "wordCount": 2285,
           "title": "日記250609 (程度問題と区別)",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/910adbf68c8e02ea003c0d62946b1e90169b171f.png"
-        },
-        {
-          "id": "https://note.com/hercelot/n/n7a820ffe514a",
-          "author": null,
-          "description": "解決したからまとめとこう。\n続きをみる",
-          "link": "https://note.com/hercelot/n/n7a820ffe514a",
-          "publishedOn": "2025-05-28T10:04:58.000Z",
-          "wordCount": null,
-          "title": "Legacy Waves pluginsとの奮闘ログ",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/192692043/rectangle_large_type_2_14778499b06b5a06b130b820407dc8c7.png?width=800"
         }
       ]
     },
@@ -6233,16 +6218,6 @@
           "wordCount": null,
           "title": "クラブによるプレーヤーのインタビューどうやってやるか問題——Venezia FC Women",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/194182838/rectangle_large_type_2_3d9020646bae28421f110b99a8ae7a6e.png?width=800"
-        },
-        {
-          "id": "https://note.com/kazumakawauchi/n/nb25c0159d750",
-          "author": null,
-          "description": "今日は「スポーツのコーチを密着する映像の是非」について書いていきたいと思います。\nArielle Houlihanというバレーボールのコーチがいます。男子チームを率いる女性です。\n続きをみる",
-          "link": "https://note.com/kazumakawauchi/n/nb25c0159d750",
-          "publishedOn": "2025-05-28T10:28:23.000Z",
-          "wordCount": null,
-          "title": "“コーチング動画”がイケてるってどういうこと？Arielle Houlihanの例",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/192690832/rectangle_large_type_2_9c344e92c584a70af2dd6183294bdd41.png?width=800"
         }
       ]
     },
@@ -7059,6 +7034,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398563619723",
+          "author": null,
+          "description": "ピの家にイケアのペルヨハンPERJOHANがあって、便利そうだったので買った。近所のイオンに小さいイケアができていて、そこで買えた。スツールとしての機能だけではなく、下に小物を入れられて便利。\n\nイケア特有の若干雑な公差により電動ドリルで頑張りながらネジを打ち込む必要があったが、30分くらいで完成した。\nペルヨハンは特に塗装もされていないパインの集成材で作られているので、触るとザリザリするしかなり荒削りのクオリティになっている。イケア的には、後はお客様が勝手に塗るなり焼くなりしてくれ、ということらしい。塗装されていないプラモを買ってきたと思ったら納得がいく。\nwww.ikea.com\n無塗装の木材はそのままで美しいうえ、お気に入りの色の塗料を1、2回塗布して自分らしく仕上げることもできます\n\n\nそういうわけで、折角なので塗装にチャレンジすることにした。\n塗ると何が良いのか\nそもそも、なんでわざわざ塗るのか？といえば、以下のようなメリットがある:\n単純に見た目が良くなり、好きな色にできる\n汚れや水分、虫に強くなる\n例えばウレタンやワックスは水分に強い。オイルはそんなに強くないが油なので素の状態よりは強い。\n塗装に必要な道具\nいろいろなYouTubeの動画を見て勉強した。塗装材料にはオイル、ワックス、ウレタンやニスなど色々なものがあるけれど、今回はしっとり仕上がるオイル仕上げを選ぶことにした。オイルは木材に浸透してから固まるという特徴があり、逆にワックスは表面に塗膜を作って固まるという特徴がある。\nwww.youtube.com\nワトコオイル 200ml\n\n\n塗ったところ、一番小さいサイズでちょうど良いくらいだった\n今回はミディアムウォルナットを選択した\n万能刷毛 5cm\n\n\nオイル系は万能刷毛というのがあればだいたいOKらしい\n刷毛のサイズが大きければ大きいほど広い面積を塗り…",
+          "link": "https://blog.3qe.us/entry/2025/08/27/011042",
+          "publishedOn": "2025-08-26T16:10:42.000Z",
+          "wordCount": null,
+          "title": "椅子を塗った（IKEA PERJOHAN / ワトコオイル）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/148efe9aa696024a603d20b7c2ab9395c31576c6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250817%2F20250817203849.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/148efe9aa696024a603d20b7c2ab9395c31576c6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250817%2F20250817203849.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802418398559664159",
           "author": null,
           "description": "好きな曲を100曲選んで万葉集もかくやという傑作選を作り、プレイリストを交換するという風雅なことをしていたら、アメリカンな曲調が好きなんだねと言われた。好きな曲調というのは故郷の風のようなものなので、敢えて定義するということを普通の人はしない。\n歩いてきた足跡が違えば、同じ曲も別物になるのだろうか。\nふうん、と言って、ペットボトルのお茶を少しもらった。",
@@ -7522,21 +7512,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a54948a329bdfe7267b421cbc4f819adf3c925ea/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41g3yH0TmAL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398448794955",
-          "author": null,
-          "description": "この書評は、掲題書についての一個人の考えを述べ、改善に資せんとするものである。つまりここから先に書かれていることの冒頭には遍く「私見では」と見えない文字で書かれているということだ。\nこの本は初学者向けの教科書または副読書として不適切であり、おすすめしない。加えて、中級者・上級者向けの本としても無理があるように思う。詳細はこの後で詳しく述べる。2700円はかなり強気だ。しかし私はもう2700円(そして日本国政府と自治体に外税を)支払ってしまったのだから、真摯にレビューすることが読者の権利と義務であると信ずる。\nまだ夜の闇に冷たい質量が残っており、街に緑が萌えるよりも前の話である。Scala 3の書籍が出るとネットで聞き及んだ。Scalaを扱った和書が出るのは久しぶりであり、なおかつScala 3の本はおそらく初めて出るとあって、私はかなり期待して予約していた。しかも初心者向けと銘打っているから、教材としても期待できるのではないかと皮算用していたのだ。\nそして先日、新刊の掲題書が届いたというわけである。\n\nはじめての Scala3: プログラミング言語に共通な処理からオブジェクト指向まで (I/O BOOKS)\n\n作者:清水 美樹\n工学社\nAmazon\n\n文章について\n構成に関して\n体裁\n全体\n私の主張の要点だけまとめると以下の通りである。\nそもそも初学者向け書籍は、網羅的に情報を並べるのではなく取捨選択の必要に迫られ、時として嘘スレスレの大幅な簡単化が求められ、なおかつこれを直列化して理解に導く必要がある。このため難易度がそもそも高い\n\n\n例えば小学校の教科書でかけ算の順番を固定するのは「嘘スレスレの大幅な簡単化」の好例である\nしかしながら、本書は初学者向けの適切な取捨選択が行われていないように思える。また、体裁上の問題を抱えている。すなわち、\n\n\n文章の癖が強く読みにくい\n…",
-          "link": "https://blog.3qe.us/entry/2025/05/28/035557",
-          "publishedOn": "2025-05-27T18:55:57.000Z",
-          "wordCount": 1419,
-          "title": "『はじめてのScala3』書評",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/1201aac71da6b12a959bbd958d90696b3f400bde/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41HbAUukZUL._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/1201aac71da6b12a959bbd958d90696b3f400bde/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41HbAUukZUL._SL500_.jpg"
         }
       ]
     },
@@ -7941,16 +7916,6 @@
           "wordCount": null,
           "title": "Claude Code本体の難読化されたコードをCursorを使って解析する",
           "imageUrl": null
-        },
-        {
-          "id": "6836e32a4f295500017e3a4a",
-          "author": "laiso",
-          "description": "最近日本語翻訳が発売された書籍『LLMのプロンプトエンジニアリング ―GitHub Copilotを生んだ開発者が教える生成AIアプ",
-          "link": "https://blog.lai.so/prompt-engineering-for-llm/",
-          "publishedOn": "2025-05-28T13:17:46.000Z",
-          "wordCount": null,
-          "title": "『LLMのプロンプトエンジニアリング』を読んだ",
-          "imageUrl": null
         }
       ]
     },
@@ -8324,6 +8289,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44121",
+          "author": "mamosuke",
+          "description": "ps4-hen pre-release-main-168,KSV 08/25/2025,SaltyNX 1.4.8,TinyWiiBackupManager v1.5.0,shadPS4 Pre-release-shadPS4-2025-08-25-1b2ac91,PCSX2 v2.5.128,Nintendo Directは9月12日か,Switch 2開発機入手できない,Xenia Manager v3.1.2→→→この記事の続きを読む\nGameGaz Daily 2025.8.26 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025082644121/",
+          "publishedOn": "2025-08-25T21:21:43.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.8.26",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44116",
           "author": "mamosuke",
@@ -9542,36 +9517,6 @@
           "publishedOn": "2025-05-29T12:11:12.000Z",
           "wordCount": null,
           "title": "20.1.0対応 Atmosphère 1.9.1(b11850b3a)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43668",
-          "author": "mamosuke",
-          "description": "Ultrahand Overlay 1.8.5,Moonlight-Switch v1.3.3,QuickNTP 1.5.1,Sphaira 0.11.2,SaltyNX 1.2.7,Turnips v1.7.2,Swiss v0.6r1867,Remote Lua Loader,PS5 Payloads 1.8a MOD,shadPS4 Pre-release-shadPS4-2025-05-28-95f04b7,psOff_premium(psOff_compatibility) 2025May28,PCSX2 v2.3.377,Ryubing(Ryujinx) Canary-1.3.54,xemu v0.8.67,WinUAE 6.0.0 beta 29→→→この記事の続きを読む\nGameGaz Daily 2025.5.29 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025052943668/",
-          "publishedOn": "2025-05-29T01:29:44.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.5.29",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43657",
-          "author": "mamosuke",
-          "description": "任天堂が、Nintendo Switchの本体のシステムを更新するNintendo Switch システムバージョン 20.1.0をリリースしていました。→→→この記事の続きを読む\nNintendo Switch システムバージョン 20.1.0 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025052843657/",
-          "publishedOn": "2025-05-28T00:41:43.000Z",
-          "wordCount": 1689,
-          "title": "Nintendo Switch システムバージョン 20.1.0",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/Switch-Update.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43655",
-          "author": "mamosuke",
-          "description": "Switch 2はアップデートしないと使えない,Days of Play,PS4HEN(ps4-hen-vtx) HEN-1.0352,GoldHEN Cheats PS4 PKG (GoldHen Cheats PKG) v27.05.25,PS Multi Tools,ARK-4 v1748331083,FPSLocker 2.1.5,SaltyNX 1.2.6,Sphaira 0.11.1,Play! 0.70,shadPS4 Pre-release-shadPS4-2025-05-27-e0309a4,Ryubing(Ryujinx) Canary-1.3.52,Azahar 2121.2,ScePSX Beta 0.1.6.5→→→この記事の続きを読む\nGameGaz Daily 2025.5.28 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025052843655/",
-          "publishedOn": "2025-05-27T23:32:06.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.5.28",
           "imageUrl": null
         }
       ]
