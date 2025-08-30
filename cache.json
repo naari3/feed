@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398567908958",
+          "author": null,
+          "description": "リューノスさんのフォークソングを解析中だったりします。ゲーム画面から終末のエンジンを乗っけているっぽいので互換性あるかなーと思ったら案の定そのままでした。えー、公式ホームページ（web archive）にあるパッチ、全スクリプトファイルが入っているのは内緒です。。\n256色+アルファブレンド画像形式に少し感動。32bit RGBAでない、bmpにはたしかない規格ですよね。終末では使っていない形式なので現状の公開ツールですとバグります。テストできなかったんで（汗）修正予定。スクリプトも命令解釈追加しないとだめー。1割ぐらいしか通りません。GBA移植したいわけではないのでスクリプトデコーダは修正しないつもりです。\n追記：\nインストーラ（InstallShield）が古くて起動しません。Universal Extractor1をダウンロードします。\nhttps://legroom.net/software/uniextract\n7468: 75 74\n74AF: 75 EB\n６．あとは遊ぶだけ。全てのグットエンドは確認済みです。\n余談。_inmmは使うべきかどうかですけど、ＰＣＭでよくない？と_inmm側も言ってくるので使わなくていいと思います。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/08/29/222428",
+          "publishedOn": "2025-08-29T13:24:28.000Z",
+          "wordCount": null,
+          "title": "練習6",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398567908958/1756526264",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398567908958/1756526264"
+        },
+        {
           "id": "hatenablog://entry/6802418398563948872",
           "author": null,
           "description": "前回の続き。寝て起きて考えてみたら、そもそも全部画像で持ってしまえばいいのでは？という結論になりました。mode0で16色の場合、1画面240/2*160=19200バイト。EWRAMでいうと10画面分のサイズは行けます。pythonで予め全部のテキスト内容を画像保存してLz7圧縮しとく。使うときはEWRAMに展開させて各画面を部分表示させる。\n・・・頭悪いなーとかいわないようにおなしゃす・・・。フォントのプロポーショナル処理なんてpython側に委託した方がいいですし、この方法なら1フレ確実に終わりますし。\n今考えているのはamigaOS ver1を模倣したメールノベルゲーム「Digital: A Love Story」を想定しています。テキスト内容は主に３つ。受信メールボックスを開く、掲示板のスレッドを見る、掲示板の各スレッド内容を見る、に集約されているので・・・行けますね。あとGUIというとスクロールバーどうすっべーとも思ったのですけど、そもそもGBAのボタンでスクロールしたいかというとしたくないし！と内なる声が反対してくる（笑。（１／３）とか表示して画面単位移動したいです。指疲れません。\nちなみにDigitalは2時間程度で終わるフリーソフトです。1988年の海外パソコン通信な感じ。日本だと知名度ひくくてーもったいない。日本語訳もけっこういいと思うのですけれど。ピーガラガラガラ。",
@@ -704,111 +719,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398460592416/1749013752"
-        },
-        {
-          "id": "hatenablog://entry/6802418398457346793",
-          "author": null,
-          "description": "wikiにあるEWRAM_CODE配置したプロジェクトは全て削除、ROMに配置しなおします。誠に申し訳ありません。。",
-          "link": "https://akkera102.hatenablog.com/entry/2025/06/02/183524",
-          "publishedOn": "2025-06-02T09:35:24.000Z",
-          "wordCount": 459,
-          "title": "もうダメ3",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398457346793/1748856924",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398457346793/1748856924"
-        },
-        {
-          "id": "hatenablog://entry/6802418398457247061",
-          "author": null,
-          "description": "なぜあの書き方（EWRAM_CODE）をし続けていたのかの理由は、EWRAMオーバークロックがROMに比べて優位だった・・・？でもGBA Microや3DSのGBAエミュで不具合が起きるので御蔵入りしたテクニックということかなあ。記憶があいまいです。写真はmemtestなのでコードのROMに効くプレフェッチは関係ありません。完全に心を折れそうなのでこれ以上追求しません。\n\n\ngithub.com",
-          "link": "https://akkera102.hatenablog.com/entry/2025/06/02/173628",
-          "publishedOn": "2025-06-02T08:36:28.000Z",
-          "wordCount": 462,
-          "title": "もうダメ2",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/16bb099609b8fee8e546098b2ef7f6523111d7bc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250602%2F20250602173105.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/16bb099609b8fee8e546098b2ef7f6523111d7bc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250602%2F20250602173105.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398456649825",
-          "author": null,
-          "description": "//---------------------------------------------------------------------------\ns32 CodeRom(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}\n//---------------------------------------------------------------------------\nEWRAM_CODE s32 CodeEwram(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}\n//---------------------------------------------------------------------------\nIWRAM_CODE s32 CodeIwram(void)\n{\n\twhile(*(vu16*)0x4000006 < 160) {};\n\n\ts32 ret = 0;\n\n\twhile(*(vu16*)0x4000006 >= 160)\n\t{\n\t\tret++;\n\t}\n\n\treturn ret;\n}",
-          "link": "https://akkera102.hatenablog.com/entry/2025/06/02/120104",
-          "publishedOn": "2025-06-02T03:01:04.000Z",
-          "wordCount": 524,
-          "title": "もうダメ",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/d15efef4b55949431e9aa6d6cf4db25cb7176906/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250602%2F20250602115953.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d15efef4b55949431e9aa6d6cf4db25cb7176906/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250602%2F20250602115953.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398456045648",
-          "author": null,
-          "description": "EWRAMにコード置くよりROMが早いよ、とdiscordで書いてあるの見たのですけど。マジすか。。",
-          "link": "https://akkera102.hatenablog.com/entry/2025/06/01/212206",
-          "publishedOn": "2025-06-01T12:22:06.000Z",
-          "wordCount": 459,
-          "title": "無題",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398456045648/1748780526",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398456045648/1748780526"
-        },
-        {
-          "id": "hatenablog://entry/6802418398455094765",
-          "author": null,
-          "description": "といってもリアルに行かないですけれど・・・。ぼちぼちオンラインで眺めているだけです。お値段度外視で1冊だけ上げるとしたらtakeさんの本かなあ。いや、ソースコード読めたりpandocと突き合わせできる方ならいらないかもしれませんけど、日本語で読めるってところに重きを置いています。あとベースになっているrustエミュレータ？とtakeさんが手直し？した分のコードが超やべー、2020年代に相応しい建造物になっていると思います。鼻血が出ますよー？私は凡人なので全てを理解できませんけれど一端を噛みしめて満足しています。\ntechbookfest.org\ngithub.com",
-          "link": "https://akkera102.hatenablog.com/entry/2025/06/01/094156",
-          "publishedOn": "2025-06-01T00:41:56.000Z",
-          "wordCount": 461,
-          "title": "今日は技術書典",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398455094765/1748740173",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398455094765/1748740173"
-        },
-        {
-          "id": "hatenablog://entry/6802418398453413761",
-          "author": null,
-          "description": "www.youtube.com\n（動画順）\n・アトラクナクア\nアリスソフトがVNに参戦！？リーフさんとどう違うのか楽しみ・・・だったような個人的感想。弟切草もスーファミにありましたし、ノベルゲーに若干飢えていた時期だったと思います。日本語に艶があって非常に堪能させていただきましたねー。音楽も最高潮な出来。移植に関して心残りがあるとしたら、終盤のウェイト値を直したかったですね。めっちゃウェイトありすぎ問題。\n・雫\nからしゃーないべ・・・と言い聞かせています。\n・GTS\nエストして、まあやってみるかとツール解析作者にコンタクトとったらソースコードをもらえたという話。やっていることはパタパタアニメなのになぜスクリプト命令こんなに多いの！？と身構える時期もありました。今なら妥当だなあーぐらいの感覚です。\n・ToHeart\n攻略サイトの「選択どおりしたらエンディングを見れる」を正しいふるまいとしてデバッグしました。日付が進まないーとかフラグが進まないーとか苦労は結構あったなあと思います。\n・デアボリカ\nレティシアさんのチョメチョメシーン。動画を取るってことを頭になかったものですから、何度もセーブロードをしてトレースしていました。目コピ再現、もうやりたくありません。エフェクトも多少作れる余力が増えて、このあたりでようやくGBA移植に自信が持てるようになってきたなという感じです。\n・痕\nスクリプトテキストの書かれた内容が、そのまま画面を想像できるかというとそうではなく。前置きトリガー的なものや謎命令が多かったと思います。間違っても最初にチャレンジするエンジンではありません。\n・ルーキーズ\nグローバル変数まんま安置な時代でしたのに。ということでベタぼれです。\n・kanon\nGBA容量ギリギリとはいえ音楽の劣化ひどすぎ・・・。アスペクト比の関係でより横長になってしまうのもちょっと心苦しいですね。雪の降っている回想シーンをほぼカットしてしまったのは心残りでした。オープニングの常時フェードはなくせ！と当時の自分に強くいいたい。\n・夢幻夜想曲\n・one\nラクでしたね。オープニングもエンディングもスクリプト再現だったので別処理しなくて済むから早めにリリースできたと思います。\n・カナン\nスクリプトデコーダを中途半端に作ったものだから大部分を手書き修正することになりました。ゲームを全て録画して、それを見てGBAで抜けている処理を加えてくアホ作業でした。でも一番作りたかった移植作品でしたのでモチベーションは高いまま推移していたと思います。一番気にっています。高額なゲームな為、多方面に迷惑をおかけして申し訳ありませんでした（爆。\n・V16 Rise\nGTSに続いてなのでより安定感を増して提供できたかなあと思っています。有名な方が作画しているためか、リサイズしただけな絵なのに滑らかさがあってすごかったです。\n最後に動画編集もそうですけれど、コンバート作業お疲れさまでした。懐かしくてとても面白かったです。\n追記：\nToHeartのDMG音源製作者はbookworm先生です。先生ー！コメント欄で褒められてますよー！！こちらのページから音楽単体をダウンロードできます。foobar2000+gbs再生かKbMedia Player+gbs再生が良いかなと。\nhttp://mydocuments.g2.xrea.com/",
-          "link": "https://akkera102.hatenablog.com/entry/2025/05/31/104939",
-          "publishedOn": "2025-05-31T01:49:39.000Z",
-          "wordCount": 474,
-          "title": "非公認GBAカタログ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398453413761/1748657902",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398453413761/1748657902"
-        },
-        {
-          "id": "hatenablog://entry/6802418398452821346",
-          "author": null,
-          "description": "海外の方でここまでしっかりリサーチされているとすごいなあ。他のレビューもしっかりしています。\nwww.youtube.com\nwww.youtube.com",
-          "link": "https://akkera102.hatenablog.com/entry/2025/05/30/202736",
-          "publishedOn": "2025-05-30T11:27:36.000Z",
-          "wordCount": 458,
-          "title": "レビュー動画",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398452821346/1748604456",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398452821346/1748604456"
         }
       ]
     },
@@ -1156,21 +1066,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9ab2c4bb659079515244b1b11abcf04a27fb0c53/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250604%2F20250604100026.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398456514641",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。2025年5月25日（日）から2025年5月31日（土）〔2025年5月第5週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    情報収集の仕方を模索している - 下林明正のブログ\n by id:shimobayashi \n    \n2\n    米エール大から加トロント大に移籍した教授3人が語る「ファシズムを研究してきた自分たちが今米国を離れる理由」 - YAMDAS現更新履歴\n by id:yomoyomo \n    \n3\n    スタートアップで働いていたときに心がけていたこと。反省含む - dackdive's blog\n by id:dackdive \n    \n4\n    “アメリカ歴”がにじみ出る日本語のクセたち - Thoughts and Notes from CA\n by id:ktdisk \n    \n5\n    『フルスクラッチして理解するSSL/TLS』の裏側 - エムスリーテックブログ\n by id:m3tech \n    \n6\n    Duolingoの「AIファースト」宣言とそれに殺到した批判への苦慮 - YAMDAS現更新履歴\n by id:yomoyomo \n    \n7\n    カメラで「元が取れたよ」と自分に言い聞かせることに成功した - ココロ社\n by id:kokorosha \n    \n8\n    トランプ政権”という症状──現地で見るアメリカ社会の今 - Thoughts and Notes from CA\n by id:ktdisk \n    \n9\n    私道について - 不動産屋のラノベ読み\n by id:Lhankor_Mhy \n    \n10\n    Terraform MCP Server を使ってみた - 電通総研 テックブロ…",
-          "link": "https://blog.hatenablog.com/entry/2025/06/02/120000",
-          "publishedOn": "2025-06-02T03:00:00.000Z",
-          "wordCount": null,
-          "title": "今週のはてなブログランキング〔2025年5月第5週〕",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/8a2a7c975be6cd6adb238934f72e9809d80b978d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250602%2F20250602091514.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8a2a7c975be6cd6adb238934f72e9809d80b978d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250602%2F20250602091514.jpg"
         }
       ]
     },
@@ -1209,6 +1104,21 @@
       "feedUrl": "https://cild.hatenablog.com/rss",
       "siteUrl": "https://cild.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398566859536",
+          "author": null,
+          "description": "最近、アニメに楽曲のオマージュが使われていて、著作権について騒がれていたけど、あれがセーフだと思う感覚はおかしい。\nところが、SNSの反応を見たところ、セーフ寄りのコメントや、誹謗中傷のような内容もあって、昔とは別の意味でインターネット治安悪くなったなと思う。\nそもそも曲は、音楽教室の練習曲についても使用料を求められてるのに、無断オマージュがセーフなワケない。とくに音楽関係はすごい気を使って作品作りしてるから、余計に敏感になってる。\nちょっと毛色は違うけど、よく効く除草剤についても、「商品名＋猛毒」とかいう書き込みがセーフなわけない。膨大な書類通して、一般販売されてる商品に、根拠なく毒だと書き込むなんて、正気の沙汰じゃない。\nどっちも、訴えられたら罰金を払わされるのに、そういう知識もないバカなのか…。\n\n近ごろ、著名人を利用したフェイク動画、歯が白くなる、毛が生えてくるなど、あきらかな詐欺広告を野放しになっているのが関係してるのかな。\nあれを見て、これが大丈夫なら自分も平気だと思ってしまっているのかな。\nただ、広告の彼らは、アテンションを狙ったシンプルな悪質業者なので、自分たちがやっていることが犯罪という自覚があって、犯罪とわかっているから、逃げ道を用意したうえで、儲かるからやっている。\nヤバい言動をしているアカウントたちは、こういう、リテラシーというか、基本的なことが、ぜんぜんわからないまま、やっているっぽい。\nそれも、特定の年代や男女の属性とか、明確な線引きなく、どこにでも出没しているように見える。\n新時代の幕開けなのかな。",
+          "link": "https://cild.hatenablog.com/entry/2025/08/29/055733",
+          "publishedOn": "2025-08-28T20:57:33.000Z",
+          "wordCount": null,
+          "title": "あふれる違法広告と認知の歪み",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802418398566859536/1756414653",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802418398566859536/1756414653"
+        },
         {
           "id": "hatenablog://entry/6802418398564506624",
           "author": null,
@@ -1441,6 +1351,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398566513533",
+          "author": null,
+          "description": "知らない味を楽しめて良かった。他のお客さんとも色々話せて楽しかったー@spice_nishige pic.twitter.com/RGrr3iyNFn\n— 🎹 (@p_ck_) August 28, 2025\n   x.com\n所用で首都圏に来ていて、前職の同僚が溝の口でカレー屋を始めたとのことでお邪魔していた。日本食だと中々見かけない料理を食べられて良かった。知人補正を差し引いても美味しいと思う。\n岡山から東京まで、初めて飛行機を使って来た。\nとなると比較対象は新幹線になるわけだけど、飛行機の方が所要時間が短いし、家から駅まで歩かなくていいし、楽な気がする。新幹線の予定変更に対するフレキシブルさを失うのはかなり痛いけど、飛行機も結構ありだなあという気持ち。新幹線で3時間座っているのが結構だるい。\n\n世界はラテン語でできている (SB新書)\n\n作者:ラテン語さん\nSBクリエイティブ\nAmazon\n\nしばらく前になるけれど、世界はラテン語でできている を読んだ。\nまあまあ面白かったのだけど、「この単語の語源はラテン語です。(ちょっとした小話) ラテン語すごい!」が最初から最後まで続く感じで、もうちょっと深掘りした話が読みたかったなあという気持ち。",
+          "link": "https://commits.hatenablog.com/entry/2025/08/29/100000",
+          "publishedOn": "2025-08-29T01:00:00.000Z",
+          "wordCount": null,
+          "title": "2025-08-28",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/05fe07be81c8a04fef435d2dd6c0e3c7e0f963eb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51wUiQKqxQL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/05fe07be81c8a04fef435d2dd6c0e3c7e0f963eb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51wUiQKqxQL._SL500_.jpg"
+        },
         {
           "id": "hatenablog://entry/6802418398559589030",
           "author": null,
@@ -1702,21 +1627,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/26006613683363250/6802418398509300693/1752334353"
-        },
-        {
-          "id": "hatenablog://entry/6802418398456038872",
-          "author": null,
-          "description": "TypeScriptを使い始めて2年経った。最近は一番書くのが自然言語、次がTypeScript、逃れられないSQL、みたいな感じになってきている。\n言語自体にも慣れてきた今日この頃、TypeScriptの気持ちがわからなくなってた。\ninterfaceとtypeって何が違うんだっけ？どう使い分けると嬉しいのか？\n型を使って現実をモデリングしたい。だがどうやって？\n会社のコードでよくわからない部分があった。調べて意味は分かったが、何がうれしくてこんな書き方をしているんだ？\n言葉の意味は調べればわかるけど、結局何がうれしくてこうしているのかがよくわからない。ひとまず大規模言語モデルに疑問を投入したりはするが、ビールが飲みたいのにホッピーを出されているような回答ばかりで肩透かしを食らっていた。LLMに聴いていてもラチが空かないし、粗悪乱製造された知識が跳梁跋扈した結果Crazy Timeに突入した現代では、本で読んだ知識は格別だ。味覚は高級品によって鍛えられる。\nだからひとまず、同僚の間で評判が良かった『関数型ドメインモデリング』を読んだ。\ntatsu-zine.com\n電子で購入して読む。なるほどな～\n『関数型ドメインモデリング』の考え方は、「F#-Specificな考え方」と「F#-Specificとは限らない考え方」に大別される。案外前者が大きいな、とは感じた。TypeScriptにはF#のマッチ式がなかったりするし、言語としては別物としてとらえるべきだ。この本からF#-Specificな要素を取り除きたい。\n次にEffective TypeScript第二版を読んだ。\nwww.oreilly.co.jp\n関数型ドメインモデリングを読んだ後にEffective TypeScriptを読むと、出汁をとったあとに鍋物を作るみたいでおいしく吸収できる。\nひとまず「何がうれしいのか」は前よりもだいぶわかるようにはなった。",
-          "link": "https://contradiction29.hatenablog.com/entry/2025/06/01/212102",
-          "publishedOn": "2025-06-01T12:21:02.000Z",
-          "wordCount": 377,
-          "title": "日記2025-06-01 : 関数型ドメインモデリングとEffective TypeScript 第二版を読んだ",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/dbc217364e233ba037d909ba69a60bd49731f8ba/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fi.gyazo.com%2Fdb4c995b4e0f0a7693a06a7d95829f0b.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/dbc217364e233ba037d909ba69a60bd49731f8ba/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fi.gyazo.com%2Fdb4c995b4e0f0a7693a06a7d95829f0b.jpg"
         }
       ]
     },
@@ -1725,6 +1635,21 @@
       "feedUrl": "https://crabgot.hatenablog.com/rss",
       "siteUrl": "https://crabgot.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398564554711",
+          "author": null,
+          "description": "全然日記描く元気ないからメモ帳そのまま貼り付けるね\n \n2025/08/22 11:31\nオホ声出た\nつくづく愚痴用のチャンネル消してよかったと思うよ\n \n 2025/08/22 15:29\nチュ、強すぎてごめん\n \n2025/08/23 8:50\nうっうっうー\n2025/08/23 11:11\nお菓子をさぁ……\nお菓子がいっぱいあったら日を分けてちょっとずつ食べる、じゃないですか\n俺普通にバカだから一日で全部食っちゃうんだよな……\nそら太りますわ！\n2025/08/23 13:43\nスクワット30回やったんですがすでに死にそうです\n2025/08/23 14:27\n誰だよテメーはという意識で生きていると、本当に孤立を感じる\n2025/08/23 18:57\nこのお肉、マイキーが焼いたらめっちゃかっけぇだろうな〜♪\n \n2025/08/24 11:58\n三半規管がおかしいポヨ\n2025/08/24 19:07\nなんか機械の犬（メカ・ドッグ）の遠吠えみたいな音聞こえたんだけど何？\n2025/08/24 19:55\nアオベエでごんす\n2025/08/24 20:59\nきっと仲良くできないだろうなぁでコミュニティへの参加を渋る瞬間、これは堪らないですね\n \n2025/08/25 2:30\n急速にパワーアップした俺が言うのもなんだが、すごい速度で成長する人って怖いな\n脅かされそうな恐怖がある\n追放するか\n \n2025/08/25 9:05\nwplaceを通話中にワイワイ言いながら眺めるのは楽しいけど時間が溶ける\nと言う当たり前の楽しいことに気づきながら1時間ほど消費した週末\n記憶が定かでないが、こまりは恐らく生のパンダを見たことがない\n \n2025/08/25 9:59\n世論を誘導してえ！！\n \n2025/08/25 10:17\n絵は勝手にみんな喜んでくれるからそういう楽しさはそっちで消費して、音MADはむしろざまあみろって感じ\n嫌われたいとか嫌がらせがしたいとかではないんだけど、7年で定着した音MAD作者こまりのイメージは全部期待外れにさせたい\n \n2025/08/25 19:03\nやめたくなりますよ～\nなんか”復活”ゥー\n \n2025/08/25 20:39\nヒカキン皇子\n \n2025/08/26 9:29\n薄い共感性に対して拒否反応さえあるから流石にモンスターになりつつあるかもな\n2025/08/26 9:43\n的はずれな説教かましてんなよ　殺すぞ\n \n2025/08/26 15:30\n消化できそうなタスクから手をつけてる\n不甲斐ないが仕方ないと割り切らないと死んでしまいますよメンタルが\n \n2025/08/27 3:14\n負の感情とかじゃなく、world.execute(me);やりたかったなーという思いが復活した\n個人作で？お～ん……\n霊知の太陽信仰が最高だった　M기\n \n2025/08/27 6:04\nやりますねぇの中のやりますねぇ、キングやりますねぇ\n \n2025/08/27 9:45\n令和でも俺のこと殺してくれる人挙手\nちょっと待てーーーーーーーーーーーーーー！！！！！！！！！！！！！！！！！！！！！！！！！！！\n最近の俺、ネガティブすぎない！？\nネガティブ杉内といったところかｗ\nなんか嫌なことあったん？俺で良かったら話聞くよ？\nまあ嫌なことはいっぱい起きてるけどね\n誰がこんなネガティブ淫夢ボーイの日記読むんですかって話\n個人鯖の痰壷だったとしても俺は誰かに見てもらえることに感謝込めて、イタダキマス！！\nWOW WO 釘パンチ　WOW WO 全力で！\n \n2025/08/28 0:46\n二度と自分を卑下しません\nso, ...SHIT\nFUCK\n \n2025/08/28 1:23\nシモエさん\n変な時間に寝たから眠れないんですよ\n \n2025/08/29 0:02\nおしゃべりするのってちゃんとセラピー効果あるな……\n \n---\n\n\nいろんなトラブルと俺自身の迂闊さとか見通しの甘さが祟って全体的に精神疲弊の週だった。こうしてひたすら事実だけ貼り付けていくのもまあ、一種のセラピーと言えなくもないか。来年あたり見返したら笑っちゃいそうだな。\n \nそんな感じです\n \nじゃ！",
+          "link": "https://crabgot.hatenablog.com/entry/2025/08/29/024408",
+          "publishedOn": "2025-08-28T17:44:08.000Z",
+          "wordCount": null,
+          "title": "【2025年8月-4】メ不（メンタル不調）（メンタルチェンソーみたいでいいね）（なにもよくない）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/edf64c834f5e02c64bc6da014c5ef3b96ee85034/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20250827%2F20250827091301.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/edf64c834f5e02c64bc6da014c5ef3b96ee85034/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20250827%2F20250827091301.jpg"
+        },
         {
           "id": "hatenablog://entry/6802418398557001540",
           "author": null,
@@ -1904,21 +1829,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/df71da3675c6a261feadcfc5f2867afe8ac2d80e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20250605%2F20250605105202.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398451639904",
-          "author": null,
-          "description": "長瀬の音楽漁ってたらドツボに刺さる楽曲があった\nyoutu.be\n \n・睡眠の質\n崩壊。どうしたって熟睡出来ない感覚ある。\n\n・絵\n描けるときに描きまくるべきだなあ\n今週はかなりそれが出来てよかった。何もしねえ日は何もしねえと決め打ち、ひたすらゲームだけやった。\nあと俺やっぱガキばっか描きてえです……\n \n・アニメ\nZZ見終わった。正直、ファーストやZよりかなり好きなアニメだったと思う。\nZも好きだけどベクトルが違うのは言うまでもなく…\nZが好きだからZZでカミーユがアシストしてくれた回がめっちゃ好きなんですよね。お前ニュータイプすぎますねぇ！\n最終話でファとカミーユが元気に走り回ってるのが嬉しすぎると言うか……全然宇宙世紀の今後は知らないからこれで平和になりましたーじゃないんだろうけど、少なくともネオ・ジオンとの抗争が一時的に終わって束の間の安息が訪れたって感じがあって嬉しい。リィナとジュドーが抱き合って分かれるのも好きだな～コミカルな前半があったから最後のガンダムチームたちとの雰囲気が明るく終われたのかなとも思う。\n \n続けて逆襲のシャアを見ました。クェスがだるかったです。\nあと知ってるセリフが出てくると興奮するよな～アクシズをみんなで支えるシーンね。\n次はF91を見ます。\n \nジークアクスも見てる。なんだかんだファースト以降も見て良かったな～と思うことが割とある。バスクとかゲーツ・キャパとかね。\nあと俺がドゥー・ムラサメの絵描いてないの嘘すぎるんだけど、逆張りの気質が反応してて、普通にエルピー・プルとかロザミア・バダムを描く可能性がある。\nもしくはクワトロ……\n \n \n・5/29\nwww.nicovideo.jp\n毎年原作者が反応してる稀有な音MAD\n素敵な話です。\n \n \nそんな感じかな\n \nじゃ！",
-          "link": "https://crabgot.hatenablog.com/entry/2025/05/30/094333",
-          "publishedOn": "2025-05-30T00:43:33.000Z",
-          "wordCount": null,
-          "title": "【2025年5月-5】地球",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/4ed056fc98267af6b55f9704572053d92c895cb4/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20250530%2F20250530092819.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/4ed056fc98267af6b55f9704572053d92c895cb4/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20250530%2F20250530092819.jpg"
         }
       ]
     },
@@ -2248,6 +2158,21 @@
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398567046708",
+          "author": null,
+          "description": "弊社、離島なんかに太陽光パネルで自律動作する農業用モニタリングポストなんかを設置しているんですが、中に使っているチャージコントローラから電圧や電流なんかをモニタリングしたいんですよ。\nhttp://www.vill.minamidaito.okinawa.jp/pdf/youran-pdf/14_industry.pdf\n \nwww.youtube.com\nお、件の農業用ポストもチラ見できる、プロジェクトのＹｏｕｔｕｂｅチャンネルなんてあるんだ。\n動画１本、チャンネル登録者８人。これはひどい。（自画自賛）\n \nで、最近のそういうのはWindowsやスマホからデータを取得するアプリがついているんですが、そういうアプリでは不便なので、modbus経由で取得できるようになっています。（できた順序はたぶん逆なんだけど、一般ユーザはmodbusなんかは触らんのでな）\n\n\n\nで、今使ってるEPEEVERのTracer 2610っていうやつ生えてるmodbusポート用の接続ケーブルを買ってあったんですが、\nhttps://www.epever.com/product/rs485-4llt-accessories-communication-cable/\n\nWindowsからはデータが取得できるんですが、モニタリングポストに入ってるのはラズパイなので、そのままでは使用できないんですよね。\n \n（いま気づいたんだけど、このWindowsアプリ .netで書かれてるので、実はmonoで動いたりしないかなｗ）\nというわけで、このケーブルを使って生でmodbusを触ってデータを取ろうとしたんですが、全然取れない。\nEPEVERのチャージコントローラは多数あって、いずれも同じプロトコルで取れるはずで、実際に汎用の485トランシーバーを使って取得している例は多数あります\nwww.youtube.com…",
+          "link": "https://honeylab.hatenablog.jp/entry/2025/08/29/104736",
+          "publishedOn": "2025-08-29T01:47:36.000Z",
+          "wordCount": null,
+          "title": "EPEverのチャージコントローラーからmodbusでデータを取ろうとしてハマった記録",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/b2fed8b100983e557c2122f8d71cd4b5960805db/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneylab%2F20250829%2F20250829102658.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b2fed8b100983e557c2122f8d71cd4b5960805db/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneylab%2F20250829%2F20250829102658.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398543125009",
           "author": null,
           "description": "長らくリバースエンジニアリングで遊んでいますが、特にリバエンだと、何か気が付いたことがあったときにそれを迅速に確認したり、仮説をもとにいろいろな実装を組んでみたり、などのエンジニアリング作業が発生することが多いです\nしかし、それを実装しようとしても実装に時間がかかったり、試しているうちにやっぱり違った、となったり、うまくいかない理由が実装のミスだったりして、なかなかエネルギーがけずられることになることが多いです。\nしかし、最近導入したCursorを使えば、仮説をもとにプログラムを実装してもらったり、ちょっと実装を変えてもらったり、という人に頼んだらブチ切れそうなこまごまとしたプログラミングのトライアンドエラーをいくらでも試すことができます。\nこれはとてもリバエンと相性がいいと思います。（データ解析とかもそうかもね）\n \nというわけで、今回は部屋に転がっていた２０００年ぐらいのカラオケマシーンの外付け機器である、CD-ROMチェンジャーの中に入っていたカラオケデータCDを解析してみることにしました。\n通電不可のジャンクの箱\n一般的にはゴミというのでは？\n到着時点で前面パネルが脱落しているという良いジャンク感 pic.twitter.com/6ek6aMnbP7\nSeptember 5, 2024\n\n\n \n対象機器はBMBのBeMAX’ sというとうの昔にサービスが終了したマシンです。\n通信カラオケは回線経由でデータが送られてくるため、CD-ROMがなぜ必要なの？と今の間隔だと思いますが、黎明期にはまだHDDが高価で容量も小さかったため、それを補うためにリリース済みの曲は外付けCD-ROMなどに収納し、差分だけが回線経由でダウンロードされるという方法だった時期があります。\nこの機器には４枚のCD-ROMが入っていたため、これだけで約２GバイトのHDD容量が抑えられた、ということ…",
@@ -2406,7 +2331,23 @@
       "title": "勝間和代が徹底的にマニアックな話をアップするブログ",
       "feedUrl": "https://katsumakazuyo.hatenablog.com/rss",
       "siteUrl": "https://katsumakazuyo.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/6802418398568642156",
+          "author": null,
+          "description": "新発売になったPixel 10を買いました。型番はXL。\n別に今の8 Proに不満があるわけではないのですが、家でちょっとタブレット代わりに、大画面で素早く使えるものが欲しいなと思って買ってみました。\nそしたら予想外だったのが、XLって昔のProと同じサイズなので、決して8 Proに比べて大きくない。まあそれでも、気持ち画面が6.7から6.8インチになったのでオッケー。\nただ、せっかく苦労したのが、原稿を入力しようと思ってるから、Pixelの昔で言うアシスタント音声入力、今で言う高度な機能が使えないと意味がないのですが、朝セットアップして3時間経っても使えるようにならない。\nキャッシュのクリアもしたり、再起動しても全く状況が同じ。言語設定も問題がないし、大体これまでのPixelは1時間も経たないうちにできるようになったので、ちょっとおかしい。アプリのアップデートもした方が良いというので全部やったけれどもだめ。\nさすがにこれはサポート案件だと思って、サポートに連絡をしたら、GboardとAndroidシステムインテリジェンスの初期化をしてほしいということでした。\nこういったシステムアプリはアンインストールできないのですが、追加でインストールした分だけ削除して、Google Playから更新分だけダウンロードする機能があります。\nそしてやってみたところ、無事、音声入力で句読点まで打てるようになりました。何が引っかかっていたかというと、Gboardの更新が、Google Playから追加アップデート分を削らないと直接できなかったことですね。\nこれは私だけじゃなくて、同じようなところで引っかかってる人が他にもいたみたいなので、とりあえずせっかくPixel 10を買ったのに高度な音声入力ができない人は、この辺をやり直してみてください。",
+          "link": "https://katsumakazuyo.hatenablog.com/entry/2025/08/30/150014",
+          "publishedOn": "2025-08-30T06:00:14.000Z",
+          "wordCount": null,
+          "title": "Pixel10の音声入力設定にあいかわらず苦労した話",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8599973812325912747/6802418398568642156/1756533818",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812325912747/6802418398568642156/1756533818"
+        }
+      ]
     },
     {
       "title": "続・はてなポイント３万を使い切るまで死なない日記",
@@ -3270,6 +3211,21 @@
       "siteUrl": "https://rinsuki.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398565458038",
+          "author": null,
+          "description": "この記事では https://id3.org/id3v2.4.0-frames の 4.2.6.   User defined text information frame を読んでいることを前提で話すので注意。Description = Key-Value の Key であるということだけわかっていればよい。\nタイトルに書いた通りなんだが、AVMetadataIdentifier が .id3MetadataUserText (AVMetadataIdentifierID3MetadataUserText) だった時は value を読んでも Description は貰えない (上の 4.2.6 に書かれているところの Value しか貰えない)。\nじゃあ Description はどうやって得るのか? というと、extraAttributes を読むと AVMetadataExtraAttributeInfoKey (Swift: AVMetadataExtraAttributeKey.info) の中に入っている。\nまあわかってしまえば簡単なんだが、案外 GitHub でも Google でも検索したところ実際に使ってる人がいなかったのでメモ。まあ AVFoundation で mp3 のメタデータ、しかも TXXX を読もうという人もあんまりいないという話はあるかもしれないが……。",
+          "link": "https://rinsuki.hatenablog.jp/entry/2025/08/28/051734",
+          "publishedOn": "2025-08-27T20:17:34.000Z",
+          "wordCount": null,
+          "title": "AVFoundation において AVMetadataIdentifierID3MetadataUserText の description は extraAttributes から貰う",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398565458038/1756325947",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398565458038/1756325947"
+        },
+        {
           "id": "hatenablog://entry/6802418398505059742",
           "author": null,
           "description": "ChromeDriver とか Selenium なら pref で profile.default_content_setting_values.cookies を 2 にしたらいいのだが、Playwright はそれを指定できない。\nのでどうするかと言うと、プロファイルを保存するディレクトリを事前に作って設定ファイルを書いてから Playwright に渡す。\nimport { chromium } from \"playwright-core\"\nimport { mkdir, mkdtemp, writeFile, rm } from \"node:fs/promises\"\nimport assert from \"node:assert\"\nimport { join } from \"node:path\"\nimport { tmpdir } from \"node:os\"\n\nconst profileDir = await mkdtemp(join(tmpdir(), \"playwright-chromium-datadir\"))\nawait mkdir(`${profileDir}/Default`)\nawait writeFile(`${profileDir}/Default/Preferences`, JSON.stringify({\n  profile: {\n    default_content_setting_values: {\n      cookies: 2,\n    },\n  },\n}))\n\nconst context = await chromium.launchPersistentContext(profileDir, {\n  channel: \"chrome\",\n})\n\ntry {\n  const page = await context.newPage()\n  await page.goto(\"https://example.com/\")\n  await page.waitForLoadState(\"load\")\n  await page.evaluate(() => document.cookie = \"a=b\")\n  // Cookie の保存が無効化されているので document.cookie が空になる\n  assert.strictEqual(await page.evaluate(() => document.cookie), \"\")\n} finally {\n  // ディレクトリを外部から渡した場合は Playwright が後始末をしてくれないので自分でする\n  await context.close().finally(() => rm(profileDir, { recursive: true }))\n}\n\n\n\n後始末をしないとゴミファイルが残ることに注意。",
@@ -3947,6 +3903,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802418398565103204",
+          "author": null,
+          "description": "こんにちは、レシピ事業部でiOSエンジニアをしている山田(@0x746572616e79)です。つい先日リリースしたプロフィール画面のリニューアルで、SNSアプリでよく見かけるプロフィールコンポーネントとStickyなタブを組み合わせたUIを実装し、いくつか学びがあったので実装方法と合わせてご紹介します。\nStickyヘッダーの設計、実装方針\nプロフィール画面は元々、プロフィールコンポーネントの下にレシピ一覧、その下に「つくれぽ」のカルーセルを表示するシンプルな縦スクロール構成でした。\n\nリニューアル後は、プロフィールコンポーネントの下に2つのタブ（レシピ一覧・つくれぽ一覧）を配置し、それぞれが独立したスクロール領域を持つ構成に変更します。各タブの内容は既存の検索結果画面と同じUIコンポーネントを流用できたため、UIPageViewControllerで各一覧画面のViewControllerをホスティング（内包・管理）する設計を採用しました。\nclass ProfileViewController: UIViewController {\n    private lazy var pageViewController: UIPageViewController = {\n        let viewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)\n        viewController.dataSource = self\n        viewController.delegate = self\n        return viewController\n    }()\n    \n    private let recipe…",
+          "link": "https://techlife.cookpad.com/entry/2025/08/28/110000",
+          "publishedOn": "2025-08-28T02:00:00.000Z",
+          "wordCount": null,
+          "title": "UIKitで巨大かつ複雑なStickyヘッダーを実装する",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773"
+        },
+        {
           "id": "hatenablog://entry/6802418398476613438",
           "author": null,
           "description": "こんにちは。クックパッドでエンジニアをしている @morishin です。4年前に Bdash Server というデータ分析 SQL を共有・再利用するアプリケーションを作って紹介しましたが、今回はそれをさらに発展させて AI にデータ分析 SQL を書かせる仕組みを作ったのでその紹介をします。\n背景\nデータ分析において SQL を書くのは避けて通れない作業ですが、毎回ゼロから書くのは効率的ではありません。特に複雑な分析クエリや過去に似たような分析を行ったことがある場合、既存のクエリを参考にしたり再利用したりできれば大幅な時間短縮になります。\nそこで4年前に分析 SQL の共有・検索ができる Bdash Server というアプリケーションを開発しました。これにより過去に書かれた分析クエリを蓄積し、キーワード検索で参考になるクエリを見つけることができるようになりました。今でも20件/日ほどのデータ分析結果がアップロードされシェアされています。\ntechlife.cookpad.com\ngithub.com\nしかし、参考になるクエリを見つけても多くの場合は結局は手作業で SQL を書く必要があり、まだまだ効率化の余地がありました。そこで今回、AI に過去のクエリを参照させながら新しい分析 SQL を書いてもらう仕組みを作ってみました。\nAI に「新しく提供した○○という機能はどれぐらい使われてますか？」って聞いて SQL が出てきたらうれしくないですか？\n作ったもの\n今回作ったのは主に2つです。\n1. Bdash Server MCP サーバー\nMCP (Model Context Protocol) は AI エージェントが外部のデータソースにアクセスするための標準プロトコルです。Bdash Server に MCP サーバーを実装することで、AI が過去にアップロードさ…",
@@ -4272,6 +4243,36 @@
       "feedUrl": "https://note.com/banfuture9/rss",
       "siteUrl": "https://note.com/banfuture9",
       "articles": [
+        {
+          "id": "https://note.com/banfuture9/n/na2dccd96a302",
+          "author": null,
+          "description": "某氏のブログを全部読む。俺はまだまだやなと当然のことを思う。音MAD周辺は色々なよくわからない人が合流して解散していくサイクルが面白いね。\nとりあえず金がある内に色々始めておこうという感じになった。いや、別に前からそうなのだけど。島村楽器のオンラインアウトレットでMackieのアナログミキサーを買った。MxCxで買ったManga Corpsが届いた。日本の古本屋で「世界の名著21 ガリレオ 『レ・メカニケ』『偽金鑑識官』」が届いた。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/na2dccd96a302",
+          "publishedOn": "2025-08-29T20:39:30.000Z",
+          "wordCount": null,
+          "title": "25/08/29 歩く疲れるそうですか",
+          "imageUrl": null
+        },
+        {
+          "id": "https://note.com/banfuture9/n/n89ea2346bb0a",
+          "author": null,
+          "description": "明日3時半起きだから帰りの電車で書いています。今月は毎週早朝出勤があった。意外と慣れた。\nおれはコードが書けないのだが、プログラミングで開発するものを考える時は驚くほどいきいきとしているなと自分で思った。IT系の仕事ではないが、便利ツールみたいなものを考えるのは楽しい。後輩がコード書けるので、部署の先輩の要望との橋渡し役になって色々書いてもらっている。俺は何もしてない。楽でいいな。後輩が職場に慣れてきたらおれはいらなくなるので、それまでは偉そうな顔をしておくか。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/n89ea2346bb0a",
+          "publishedOn": "2025-08-28T10:57:59.000Z",
+          "wordCount": null,
+          "title": "25/08/28",
+          "imageUrl": null
+        },
+        {
+          "id": "https://note.com/banfuture9/n/n46ae8dbf63ce",
+          "author": null,
+          "description": "すみません今日短めです。\ncocoonを見た。すごいと思った。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/n46ae8dbf63ce",
+          "publishedOn": "2025-08-28T00:01:29.000Z",
+          "wordCount": null,
+          "title": "25/08/27 自省ゼロ",
+          "imageUrl": null
+        },
         {
           "id": "https://note.com/banfuture9/n/nbd927eeb20b0",
           "author": null,
@@ -6266,6 +6267,36 @@
       "siteUrl": "https://note.com/massmasaoki",
       "articles": [
         {
+          "id": "https://note.com/massmasaoki/n/ne39726ef6ae6",
+          "author": null,
+          "description": "今回は、レビューのリクエストをXでいただいたMake Believe StudiosがリリースしたDB-Verbについて書いていけたらと思います。\n\nこの前リツイートしてたMake Believe StudiosのDB-Verbがめちゃくちゃ良さそうで気になってるので是非試してみて欲しいです！！\n— にぼし。(性機能障害) (@niboshi_suck) August 28, 2025\n\n続きをみる",
+          "link": "https://note.com/massmasaoki/n/ne39726ef6ae6",
+          "publishedOn": "2025-08-30T12:18:18.000Z",
+          "wordCount": null,
+          "title": "「週刊プラグインレビュー」Make Believe Studios / DB-Verb",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/211858705/rectangle_large_type_2_addfe9f64bc3627652c41e02e76b7aaa.jpeg?width=800"
+        },
+        {
+          "id": "https://note.com/massmasaoki/n/n627eb2efca77",
+          "author": null,
+          "description": "今回は、Tokyo Dawn Labsがリリースしたレゾナンス低減プロセッサー「OD Finesse」について書いていけたらと思います。\nあーまた、こういう系かーーーというところなんですが、かつてリリースされたODシリーズのDe-Edgerが当時としては非常に革新的で、久々にその新作ということで試してみたいと思います！\n続きをみる",
+          "link": "https://note.com/massmasaoki/n/n627eb2efca77",
+          "publishedOn": "2025-08-30T12:15:36.000Z",
+          "wordCount": null,
+          "title": "「週刊プラグインレビュー」Tokyo Dawn Labs / OD Finesse",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/211461894/rectangle_large_type_2_1d272cb1c49e5f3e112324b2823c9889.png?width=800"
+        },
+        {
+          "id": "https://note.com/massmasaoki/n/n5767827afa92",
+          "author": null,
+          "description": "今月の記事になります。\n今回は、APU Software, LLCがリリースした「等ラウドネス」曲線に基づいたゲイン補正プラグイン「APU TrueGain」について書いていけたらと思います。\n等ラウドネス補正というと、なかなかニッチな分野ではあるが、実際に使ってみると、その効果の実感度は予想以上に高い。特に、リスニング環境の違いによる音の印象の変化を強制的に適用することで、誰でもイヤでもモダンミックスが作れるようになるんじゃね・・？という化け物プラグインだったので是非これは触れておければと笑\n続きをみる",
+          "link": "https://note.com/massmasaoki/n/n5767827afa92",
+          "publishedOn": "2025-08-30T12:12:42.000Z",
+          "wordCount": null,
+          "title": "【週刊プラグインレビュー】APU Software / TrueGain",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/211899312/rectangle_large_type_2_9c33b1d71e281f212ba694b1a413b5dd.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/massmasaoki/n/nab7f125df17b",
           "author": null,
           "description": "今月最後の記事になります。\n相変わらず、夏は引きこもっていつにもまして運動不足になっております笑\n今回は、Mastering the MixのEQ Academyをご紹介できればと。\nプラグインというよりは、学習ソフトなのですが、割と面白かったのでオススメしておきます。\n続きをみる",
@@ -6415,16 +6446,6 @@
           "publishedOn": "2025-06-07T11:07:49.000Z",
           "wordCount": null,
           "title": "コロポックル 6月の予定",
-          "imageUrl": null
-        },
-        {
-          "id": "https://note.com/nasupman_nikki/n/n308decf54e03",
-          "author": null,
-          "description": "妙なタイトルになってしまいましたが…\nまず、辞めません。\nその上で、4月、5月が想像以上に忙しく、定期発信すると約束していたものができなくなっていたので、それらを続けるかについてハッキリさせておきます。\n続きをみる",
-          "link": "https://note.com/nasupman_nikki/n/n308decf54e03",
-          "publishedOn": "2025-05-31T10:06:19.000Z",
-          "wordCount": null,
-          "title": "6月以降の活動について",
           "imageUrl": null
         }
       ]
@@ -6585,7 +6606,18 @@
       "title": "雨天雨衣",
       "feedUrl": "https://note.com/rainy_raincoat/rss",
       "siteUrl": "https://note.com/rainy_raincoat",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/rainy_raincoat/n/na8de17b68372",
+          "author": null,
+          "description": "ピーコロン内イベント『言葉遊び自由研究発表会』のスライドと台本(全く読んでいない！ｗ)です\nアーカイブ恥っっっず(未来予知)\nもうちょっと台本書き込んでゆっくり緊張せずあわてず騒がず落ち着いて読めたらよかったですね\nまとまってなくって申し訳ない\n続きをみる",
+          "link": "https://note.com/rainy_raincoat/n/na8de17b68372",
+          "publishedOn": "2025-08-30T13:42:50.000Z",
+          "wordCount": null,
+          "title": "一人しりとりを続けて７年間　知らないうちに2000語くらい繋げてました",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "レ",
@@ -6852,7 +6884,18 @@
       "title": "ゎけ",
       "feedUrl": "https://note.com/wake_otomad/rss",
       "siteUrl": "https://note.com/wake_otomad",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/wake_otomad/n/n45ebf420a6e6",
+          "author": null,
+          "description": "「ゎけ」及び「狭山」というアカウントにて音MADを投稿している者です。\n本記事は文章書く練習を兼ねた制作後記となります。\n続きをみる",
+          "link": "https://note.com/wake_otomad/n/n45ebf420a6e6",
+          "publishedOn": "2025-08-28T20:28:41.000Z",
+          "wordCount": null,
+          "title": "ダンロボ合作・M2の制作後記",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/211516151/rectangle_large_type_2_d03b0efc1a8e0ddf2187a4af8ee31553.png?width=800"
+        }
+      ]
     },
     {
       "title": "さはらです",
@@ -7876,26 +7919,6 @@
           "wordCount": 517,
           "title": "v0 APIのアーキテクチャ: Chat Completion API自作界隈",
           "imageUrl": null
-        },
-        {
-          "id": "683c62049a22b90001480d0a",
-          "author": "laiso",
-          "description": "2025年5月22日に正式リリースされたClaude Codeと同時に公開された、GitHubのプルリクエストやイシュー内でコードの質問",
-          "link": "https://blog.lai.so/claude-code-action/",
-          "publishedOn": "2025-06-01T21:30:18.000Z",
-          "wordCount": null,
-          "title": "【今週の話題】Claude Code Action が話題",
-          "imageUrl": null
-        },
-        {
-          "id": "68387792d7a25900012c0c2e",
-          "author": "laiso",
-          "description": "Claude Codeのソースコードを入手するには？\nClaude Codeのソースコードは現在GitHubに公開されていません(計画にはあるようです",
-          "link": "https://blog.lai.so/claude-code-into/",
-          "publishedOn": "2025-05-29T21:30:51.000Z",
-          "wordCount": null,
-          "title": "Claude Code本体の難読化されたコードをCursorを使って解析する",
-          "imageUrl": null
         }
       ]
     },
@@ -7915,18 +7938,7 @@
       "title": "blog.ojisan.io's RSS Feed",
       "feedUrl": "https://blog.ojisan.io/rss.xml",
       "siteUrl": "http://github.com/dylang/node-rss",
-      "articles": [
-        {
-          "id": "https://blog.ojisan.io/gijutsusyoten-18-dasu",
-          "author": null,
-          "description": "うおおおおおおおおおおおおお！！！！！！ なんと！！！今日だけ！！！半額で販売します！！！！！！！ https://techbookfest.org/product/kqEJ0wJZ8mvpupzBDKAgxz…",
-          "link": "https://blog.ojisan.io/gijutsusyoten-18-dasu",
-          "publishedOn": "2025-06-01T00:00:00.000Z",
-          "wordCount": null,
-          "title": "【き18】技術書典18にバックエンド開発基礎の本を出すぞ！！！！",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Web Scratch",
@@ -8000,6 +8012,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=32339",
+          "author": "吉田",
+          "description": "はじめに IIJは、2025年9月17日～19日に開催される「スマート工場EXPO［秋]」に出展します。 今回の展示では、工場や倉庫の温度・湿度管理をはじめとした センシングデータ(※1)を手軽に収集...",
+          "link": "https://eng-blog.iij.ad.jp/archives/32339",
+          "publishedOn": "2025-08-28T23:52:43.000Z",
+          "wordCount": null,
+          "title": "温度管理から熱中症対策まで使えるIoTソリューションをスマート工場EXPOで出展！",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=32232",
           "author": "江幡 一久",
@@ -8279,6 +8301,46 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44142",
+          "author": "mamosuke",
+          "description": "Switch 2招待販売,PS4PKGinstaller v1.12,Free space Analyzer 1.02,Vita Webradios v1.1,ARK-4 v1756506634,RenPy-Vita-8 v0.2,SwitchAll-Tools v.1.0.0,NXMilk v0.4.0,shadPS4 Pre-release-shadPS4-2025-08-29-8ae4555→→→この記事の続きを読む\nGameGaz Daily 2025.8.30 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025083044142/",
+          "publishedOn": "2025-08-29T23:32:15.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.8.30",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=44139",
+          "author": "mamosuke",
+          "description": "ps5-payload-sdk v0.33,ps5-payload-websrv v0.26.1,ARK-4 r198,Rekado 5.4,shadPS4 Pre-release-shadPS4-2025-08-28-1d45947,PCSX2 v2.5.139,hydra v0.1.0,ScePSX Beta 0.1.7.6→→→この記事の続きを読む\nGameGaz Daily 2025.8.29 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025082944139/",
+          "publishedOn": "2025-08-29T02:45:11.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.8.29",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=44135",
+          "author": "mamosuke",
+          "description": "ソニーが開発をしている次世代機PlayStation 6にはXboxのXbox Series Sに当たる廉価版が存在するようです。→→→この記事の続きを読む\n【噂】PS6には携帯機の他に廉価版が存在する PlayStation携帯機の新情報も first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025082944135/",
+          "publishedOn": "2025-08-29T01:20:41.000Z",
+          "wordCount": null,
+          "title": "【噂】PS6には携帯機の他に廉価版が存在する PlayStation携帯機の新情報も",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=44132",
+          "author": "mamosuke",
+          "description": "NINTENDO STARS,PS4 BD-JB ISO(PS4-Stuff-Repository),ARK-4 r198,Breeze beta99m,AtmoVainilla 1.9.3,DSAdvance 1.7,shadPS4 Pre-release-shadPS4-2025-08-27-10afc6b,PCSX2 v2.5.137,Xenia Manager v3.1.3,Free space Analyzer 1.01,Steam Deck 2は2028年→→→この記事の続きを読む\nGameGaz Daily 2025.8.28 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025082844132/",
+          "publishedOn": "2025-08-27T23:20:11.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.8.28",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44130",
           "author": "mamosuke",
@@ -9467,56 +9529,6 @@
           "publishedOn": "2025-06-03T00:06:12.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2025.6.3",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43685",
-          "author": "mamosuke",
-          "description": "ハッカーがNintendo Switch 2ハックに取り組んでいますが、今のところすべて行き詰まっているとされています。→→→この記事の続きを読む\nNintendo Switch 2でハッカーが行き詰まっている？ first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025060243685/",
-          "publishedOn": "2025-06-02T07:35:40.000Z",
-          "wordCount": null,
-          "title": "Nintendo Switch 2でハッカーが行き詰まっている？",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43682",
-          "author": "mamosuke",
-          "description": "Switch2の利益率,PSP 2 PS4/PS5 V1.0,PS4HEN(ps4-hen-vtx) HEN-1.0354,PS3HEN,PSGameSpider 2025.06,HexFlow-Launcher-Unofficial-Custom(HexLauncher Custom) v2.8.1,Emu4VitaPlus v0.35,HomeMenuEditor3DS V2.1,shadPS4 Pre-release-shadPS4-2025-06-01-6bdd836,SugarDS 0.5→→→この記事の続きを読む\nGameGaz Daily 2025.6.2 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025060243682/",
-          "publishedOn": "2025-06-02T01:49:04.000Z",
-          "wordCount": 1662,
-          "title": "GameGaz Daily 2025.6.2",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43680",
-          "author": "mamosuke",
-          "description": "Remote Lua Loader,PS5 Payloads 1.8a MOD,PS4JbEmu v4.7,AirPSX 0.19,vita-volume 1.4.1,NXMilk v0.2.0,Ultrahand Overlay 1.8.6,RPCS3 v0.0.37 Alpha,shadPS4 Pre-release-shadPS4-2025-05-31-c09e463,Azahar 2122-alpha1,AzaharPlus 2121.2-A,picodrive v2.05,sm64coopdx v1.3.2,vAmiga v4.2b1,xemu v0.8.68,Vita3K Build: 3797→→→この記事の続きを読む\nGameGaz Daily 2025.6.1 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025060143680/",
-          "publishedOn": "2025-06-01T02:03:47.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.6.1",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43677",
-          "author": "mamosuke",
-          "description": "etaHEN 2.2B,ps5-payload-sdk v0.31,docker-ps3netsrv v1.11.0,Remote Lua Loader v4.1,PYDualSense v0.7.5,SaltyNX 1.3.0-prerelease.2,FPSLocker 2.2.0-prerelease.2,FortPatcher-NX v20250530-ae196ca,BlocksDS v1.11.1,shadPS4 Pre-release-shadPS4-2025-05-30-4019319,ScePSX Beta 0.1.6.6,StellarOS(stellar-recovery) v1.8.4-beta,PCSX2 v2.3. 387→→→この記事の続きを読む\nGameGaz Daily 2025.5.31 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025053143677/",
-          "publishedOn": "2025-05-31T03:22:36.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.5.31",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43674",
-          "author": "mamosuke",
-          "description": "PS Multi Tools v15.6,AirPSX 0.17,Remote Lua Loader v4.0,PS5 Payloads 1.8a MOD,Sphaira 0.11.3,MissionControl 0.13.2,NeXT 3.35,AtmoPack-Vanilla 3.0.2,AtmoVainilla 1.9.1,BlocksDS v1.11.0,shadPS4 Pre-release-shadPSPS5 Payloads 1.8a MOD,4-2025-05-29-8fffdc3,psOff_premium(psOff_compatibility) 2025May29,PCSX2 v2.3. 379,Ryubing(Ryujinx) Canary-1.3.58→→→この記事の続きを読む\nGameGaz Daily 2025.5.30 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025053043674/",
-          "publishedOn": "2025-05-29T23:14:05.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.5.30",
           "imageUrl": null
         }
       ]
