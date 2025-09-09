@@ -85,21 +85,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/4207112889964803017/6802418398487556459/1750856841"
-        },
-        {
-          "id": "hatenablog://entry/6802418398467294771",
-          "author": null,
-          "description": "・時間とやる気ゼロなのでメモだけで勘弁してください\n・ハイキューの試合着？みたいな服装最近めちゃくちゃ見る\n・ハイキュー見たことないけど、ハイキューに出てくる女の子がハイキューの世界観にいそうな見た目すぎて凄いと思う\n・xaevの新譜すごっ\n・餃子のタレのゴミとか道に落ちてるのどういうこと\n・昨日ダンボール開封するまでに2箇所擦り傷出来たのか、と手を見て思う\n・服買いまくってから人の服装を注視することが多くなったけど、黒に近いか白に近いか色が多いかの3パターンでしかない\n・家賃とか電気代とかで貯めたポイントでお酒を買うのって福祉に該当しますか\n・キャパオーバーの連続\n・少、ゥ女終、ゥ末、ゥ旅行、ゥ　今まで見たタグの中で断トツでだるい\n・オブジェクト少女が織り成す処理\n・おしゃれしてるネお嬢さんのdiscord通知音パート\n・ちゃんと自我のある人というか、そういう人が持つ正しさを一方的に振りかざして怒る感じがとても厳しい\n・メモ付けてから存在を知ったけど、俺のやっていることは有吉メモの模倣(知ってから若干影響アリ)\n・一人暮らし2年目に突入した感想→一人暮らししてもしなかったとしても、生活は巡りめぐって苦しいのかよ\n・バルサミコク☆、だとしたら←どういうこと\n・プラマイゼロが″0″だったことない\n・慣れた足捌きで財布忘れを申告しに駅の窓口へ\n・長繩まりあさんのアイコン\n・スーパーボールくじやりたい\n・ざつ旅の皆さんが18きっぷネカフェ野宿の旅やったら教えてください\n \n先月のプレイリスト\nhttps://open.spotify.com/playlist/5rf2k4HZhPKf6gydY5aSQm?si=Y7FhP-kFS2eZaNByymuNLg&pi=a-jHs0wwCYT0mv\n \nリンクうまく貼れてない気がするからまた更新する　メモ",
-          "link": "https://5desk.hatenablog.jp/entry/2025/06/09/125145",
-          "publishedOn": "2025-06-09T03:51:45.000Z",
-          "wordCount": 317,
-          "title": "更新中",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/4207112889964803017/6802418398467294771/1749441105",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/4207112889964803017/6802418398467294771/1749441105"
         }
       ]
     },
@@ -120,6 +105,51 @@
       "feedUrl": "https://akkera102.hatenablog.com/rss",
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802888565220338561",
+          "author": null,
+          "description": "9/8 11:06追記：\ngccのバージョンを上げてkg2bmpを再コンパイル、VirusTotalで0件になりました。バージョン上げる前だと検出され、上げた後は検出なし（何それ）。とりあえずzipとgithubは修正済みです。うーん、まあこれで収束とします。\n9/7 18:07追記：\nコンパイルしたファイルに差し替えは簡単なので明日する予定です。（今日は外出中なので無理\n9/7 17:01追記：\ngba.zip、今スキャン（windows defender）すると問題なくなりました。なんでやねん！\n9/7 16:37追記：\ngba.zip、windows defenderで「Trojan:Script/Wacatac.B!ml」と検出されました。ただ解凍した後に再度スキャンすると検出しなくなります。謎です。VirusTotalでは2/66で「kg2bmp.exe」が該当していました。うーん、こういうの誤検出だと思いたいけどモンモンとするからやめてほしいんですよね・・・。ノートパソコン環境でコンパイルした「kg2bmp.exe」はVirusTotalで問題なかったので、明日そちらと差し控えるつもりです。\nhttps://www.virustotal.com/gui/file/ea23b774fd0476e50e6b0767a35fb4a7e050fcd5415c92533434bae08f6a10e9/relations",
+          "link": "https://akkera102.hatenablog.com/entry/2025/09/07/181701",
+          "publishedOn": "2025-09-07T09:17:01.000Z",
+          "wordCount": 482,
+          "title": "誤検出について",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565220338561/1757326334",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565220338561/1757326334"
+        },
+        {
+          "id": "hatenablog://entry/6802888565219804583",
+          "author": null,
+          "description": "zip:\nhttps://akkera102.sakura.ne.jp/zip/132_shuumatsu_gba.zip\ngithub:\ngithub.com\n以下、Q＆A駄文です。\nQ:操作説明がないのはなぜですか\nインストーラプログラムを適当に見つけて、逆に読まないことが遊びになっていました。でもまぁカレント状態でドライブ指定するような変形ものには負けましたけど（汗。a:\\b:hddinst.exeとか。\nQ:CG閲覧、回想シーンを入れないのはなぜですか\nwindowsで遊んでいる方が大多数でしょうし、強くてニューゲームしますよね。フラグ全開放（デバッグ表示）が正義！\nQ:曜日のデバッグジャンプがないのはなぜですか\nQ:バッテリーの消費早いです\n既読スキップはCPU100%でサクサク動かしているためです。トレードオフの結果というと耳障りはいいのですけど。逆にキーウェイト中は1％も使っていないのですけどねぇ。。\nQ:どうしてエンディング後のセーブ機能を実装しなかったのですか。セーブが面倒です\nFLASHの書き込みが遅くて・・・言い訳です。正直、エンディングからバスっとタイトルに移るところが一種の様式美なので、へたにイジれませんでした。「セーブ中です・・・。」なんてメッセージをエンディング後に入れられるかどうか・・・。そこの余韻こそがこのゲームの大事な部分ですし。\nQ:最近twiiterさぼってません？\ntwitterは告知だけしかしないと思います。いつもいいね！やRTしてくれる方々、お返しできなくてほんとごめんなさい。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/09/07/121535",
+          "publishedOn": "2025-09-07T03:15:35.000Z",
+          "wordCount": 486,
+          "title": "終末の過ごし方 for GBA",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565219804583/1757305924",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565219804583/1757305924"
+        },
+        {
+          "id": "hatenablog://entry/6802888565219176658",
+          "author": null,
+          "description": "ファイルは既にアップロードしてあります。明日の昼頃に告知しようと思います（もうヘロヘロ。\n追記：\n申し訳ないです。音量設定を6から5に変更しました。音質はボリューム設定によってばらつきがあるようで初期値は5の方がいいようです。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/09/06/222013",
+          "publishedOn": "2025-09-06T13:20:13.000Z",
+          "wordCount": 474,
+          "title": "終末移植27",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565219176658/1757305924",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565219176658/1757305924"
+        },
         {
           "id": "hatenablog://entry/6802888565212608593",
           "author": null,
@@ -704,21 +734,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398473013172/1749822385"
-        },
-        {
-          "id": "hatenablog://entry/6802418398466317508",
-          "author": null,
-          "description": "中華機でスペックやアスペクト比を調べたい方はこちら。MagicX Zero 40・・・DSだけ動けばいいという割り切りいいですよね・・・。\nretrocatalog.com",
-          "link": "https://akkera102.hatenablog.com/entry/2025/06/08/160959",
-          "publishedOn": "2025-06-08T07:09:59.000Z",
-          "wordCount": 462,
-          "title": "ハンドヘルド一覧",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398466317508/1749366805",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398466317508/1749366805"
         }
       ]
     },
@@ -797,6 +812,21 @@
       "feedUrl": "https://blog.hatenablog.com/rss",
       "siteUrl": "https://blog.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802888565221752608",
+          "author": null,
+          "description": "はてなブログ独自の集計による人気記事のランキング。2025年8月31日（日）から2025年9月6日（土）〔2025年9月第1週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    自炊観を一変させる、12カ国の自炊料理調査の旅──『世界自炊紀行』 - 基本読書\n by id:huyukiitoichi \n    \n2\n    おっさんITエンジニアの後輩に勧める10冊の本 2025年版 - 勘と経験と読経\n by id:kent4989 \n    \n3\n    「やさしい日本語」へのバッシングが始まってた - 電脳塵芥\n by id:nou_yunyun \n    \n4\n    大手コンビニチェーンの採算度外視レストラン案件に対応しました。 - Everything you've ever Dreamed\n by id:Delete_All \n    \n5\n    ドナルド・トランプの脳が壊れたのはいつか？ - YAMDAS現更新履歴\n by id:yomoyomo \n    \n6\n    モノタロウでCursorを導入してみた理想と現実、それと未来 - MonotaRO Tech Blog\n by id:monotaro-tech-blog \n    \n7\n    GPT-5 プロンプトエンジニアリングガイドを読み解き、より良いコーディング支援を受ける - tomoima525's blog\n by id:tomoima525 \n    \n8\n    「前にも言ったけど」を言わない技術 - 空の箱\n by id:ysknsid25 \n    \n9\n    大量のコールセンター通話を生成AIで自動要約し作業時間を劇的に削減 - Nealle Developer's Blog\n by id:nealle_dev \n    \n10\n    「…",
+          "link": "https://blog.hatenablog.com/entry/2025/09/08/120000",
+          "publishedOn": "2025-09-08T03:00:00.000Z",
+          "wordCount": null,
+          "title": "今週のはてなブログランキング〔2025年9月第1週〕",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/2afa706a838c2af0b1f4aab383f076716dea24da/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250908%2F20250908092329.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2afa706a838c2af0b1f4aab383f076716dea24da/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250908%2F20250908092329.jpg"
+        },
         {
           "id": "hatenablog://entry/6802418398571596335",
           "author": null,
@@ -1051,21 +1081,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/21916d689eff0b89c2266ff66808f8b7ad8879e6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250616%2F20250616094526.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398467126792",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。2025年6月1日（日）から2025年6月7日（土）〔2025年6月第1週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    きらら4コマの描き方 - kokamumo’s blog\n by id:kokamumo \n    \n2\n    8ヶ月で1万人以上の方にご受講いただいた AWS 講座「手を動かしながら2週間で学ぶ AWS 基本から応用まで」を再収録し、公開しました！ #aws14days - log4ketancho\n by id:ketancho_jp \n    \n3\n    個人事業主や副業用でGoogleに課金するときどれ選べばいいんだよ問題・AI対応 2025年版（Google One / Google AI / Google Workspace の比較）Google Workspace使うとGeminiが格安 - nomolkのブログ\n by id:slideglide \n    \n4\n    子どもからの「なぜ未だに兵庫県知事を支持している人がいると思う？」という質問への私の回答 - 斗比主閲子の姑日記\n by id:topisyu \n    \n5\n    Claude Code の settings.json は設定した方がいい - じゃあ、おうちで学べる\n by id:syu-m-5151 \n    \n6\n    『エンジニアリング統括責任者の手引き―組織を成功に導く技術リーダーシップ』 - snoozer05's blog\n by id:snoozer-05 \n    \n7\n    我が家のある慣習の終焉 - 誰がログ\n by id:dlit \n    \n8\n    さよなら「例のプール」 - 失われたメディア-8cmCDシングルの世界-\n by id:nak…",
-          "link": "https://blog.hatenablog.com/entry/2025/06/09/120000",
-          "publishedOn": "2025-06-09T03:00:00.000Z",
-          "wordCount": 1046,
-          "title": "今週のはてなブログランキング〔2025年6月第1週〕",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/089aa52736c5b99163e4cb9fa0a8c23b7bd8496d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250609%2F20250609093119.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/089aa52736c5b99163e4cb9fa0a8c23b7bd8496d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250609%2F20250609093119.jpg"
         }
       ]
     },
@@ -1104,6 +1119,51 @@
       "feedUrl": "https://cild.hatenablog.com/rss",
       "siteUrl": "https://cild.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802888565224159697",
+          "author": null,
+          "description": "お得を優先しない、そんなツイッターが話題になっていた。\nどういう内容かというと、あふれるセールやクーポン、投資など、いわゆる、お得になる仕組み。これをあえて使わないのは、お得を判断基準にしてしまうと、本当に好きなものを選べなくなって、人生が窮屈になるかららしい。\nたしかに、そうかも知れない。\nスーパーのチラシを見てから、安い商品をわざわざ遠くまで買いに行く、みたいな時代もあり、それは令和のインターネットによって、さらに加速しているから、もう振り回されるのはウンザリ、という気持ちは理解できる。\n体力の弱い者が狙われる\nどちらが得か？という判断には、少なからずエネルギーを消耗する。おなじ品が、150円と200円なら、安いのを手に取ればいい。\nだけど、現実はそう単純じゃない。\n企業は、安くするかわりに、会員登録をさせて情報を収集したり、次回に繋がるよう割引券に置き換えるなどして、利益の最大化を目論んでいる。\n政府は、ふるさと納税なスキームを通じて、確定申告の促進と、地方の活性化を目論んでいる。役所は、タライをまわしたり、ナゾの方程式をでっちあげて市民を欺くのに勤しんでいる。\nどちらも「お得」の裏側に本音を隠している。それを不快に感じる肌感は正しい。\nやさしい世界にはならない\nただ、僕の知る世界は、そんなにやさしくない。判断は消耗する、コストがかかると書いたが、そのコストを惜しむと、思わぬデメリットを被る可能性がある。\n統計上の問題になるけど、予算を1割、10%だけ減らしたい（あるいは増やしたい）場合に、判断の障壁を作って、取れるところから取る、ということをやったりする。\nそもそも判断ができない、もしくは判断できるが目を背けている、そういった人々が狙われると思っている。\nウチのおばあちゃんは、某施設のサブスクリプションに加入してしまい、毎月1万円引き落とされていたけど、なかなか解約できず、30万ほど損してからやっと解約の意思決定ができた。\nずっと正社員で働いていた、しっかり者のおばあちゃんだけど、お得を判断できても目を背けているタイプで、件のツイッターと同じ感覚のように思う。\nお得に背を向けるのは個人の勝手だけど、理解しない、調べるのが面倒、という先送り思考は、思わぬ被害者になるリスクを孕んでいる。\nお買い得感の過度な演出、購買意欲を過剰に煽るコピーライティング、煩雑な手続きを要求する役人、ナゾの方程式で減らされる年金。\nそんな、まやかしのない場所に、僕も住みたい。\nでも、世界はそんなにやさしくない。",
+          "link": "https://cild.hatenablog.com/entry/2025/09/09/163839",
+          "publishedOn": "2025-09-09T07:38:39.000Z",
+          "wordCount": 646,
+          "title": "サブスクを解約できないおばあちゃん",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802888565224159697/1757403519",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802888565224159697/1757403519"
+        },
+        {
+          "id": "hatenablog://entry/6802888565219374251",
+          "author": null,
+          "description": "４だったかな。\nたしかな記憶じゃないけど、画面がぐるぐる回りだして、気分が悪くなったのは、僕だけじゃないハズ。\nなんであんなことしたんだよ。\nドラクエって名前でやるなら、「2Dドット絵・見下ろし型RPG」でやるべきだろ？\nぐるぐるまわったり、妙に立体化したり、フル3Dなんか、絶対ダメ。\nなんでダメか、考えてみたんだけど、あんまりリアルにすると、想像の余地がなくなるんだよ。\n初期のドラクエも、最初のウィザードリィも、ドット絵の向こうに、自分だけの物語りがあった。\nゲームというより、本に近いというか、架空の物語りを紡ぐとき、写実的な描写は、逆にウソになるというか。\nそういうのは、作られた世界で主人公が活躍する、マンガとか、アニメでやればいい。\nゲームは、プレイヤーの自分が主人公なんだから、もっと自由に、想像の余地をのこしてくれないと。\nこっちは、ゲームアニメの主人公みたいに、上手くプレイできない、ただの一般人なんだから、こっちのペースでプレイしたいんだよ。\nなんで、そんな、カンタンなことがわからないんだ。\nいま、Stardew Valleyっていう、ゲームをやってるんだけど、これを作ったヤツは、ちゃんとわかってる。\nいつも右往左往して、操作を忘れたり、やりかたを間違えていたり、悪態をつきながら、でも、ちゃんと自分が主人公。\n自分なりのペースで、物語りを進めていける。\nそれがゲームだろ？\n美麗なシーンとか、秀逸なストーリーを楽しみたいなら、アニメとか映画を見ればいい。\nゲームはプレイヤーが選択しなきゃだから、マンガやアニメみたいに動けないんだよ。\nなんで、素人が描いたような、ちゃちな差込み動画、見せられなきゃならないんだよ。あれだよ。ファイナルファンタジーのアレとか、本当にガッカリさせられたよ。\nドラクエとFFは、新作を作るのを今すぐやめて、おかしくなる前に戻って、すべて2Dドット絵で作り直すべきなんだ。\nそしたら、またゲームが楽しくなる。",
+          "link": "https://cild.hatenablog.com/entry/2025/09/07/013005",
+          "publishedOn": "2025-09-06T16:30:05.000Z",
+          "wordCount": 645,
+          "title": "ドラクエIIIが好きだった",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802888565219374251/1757176205",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815720142590/6802888565219374251/1757176205"
+        },
+        {
+          "id": "hatenablog://entry/6802888565218594453",
+          "author": null,
+          "description": "洗濯かご、どんなの使ってますか？\n実は、ウチで使ってた洗濯かご、古くなって割れちゃったんですよね。プラスチック製だったので、経年劣化で朽ちてしまったようです。\nそれで、代わりを探してたんですが、けっこういい値段します。正式名称は「ランドリーバスケット」というらしく、だいたい、1000円〜2000円でした。\nでも、洗濯物を運ぶだけなのに、2000円は高いなー、と思って躊躇していたところ、最高のコスパで、最高に使いやすいのを見つけました。\nそれがコレ！\n\n\n\nそう。スーパーのレジかご！\n大手のスーパーでは、マイバックとおなじカテゴリーで、マイバスケット（レジかご）を販売しているのです。\nこちらは、福岡が地元なので、ゆめマートでゲットしました。このクオリティで300円ですよ。めちゃくちゃ使い勝手がいいです。\n\n他には、イオン　税込400円（返却時返金）イトーヨーカドー　税込300円（返却時返金）などにも、マイかごの取り扱いがあるようです。\nまた、カインズ・コーナン・ニトリ・無印良品、などホームセンターにも売っているようです。\n\nちょっと重量のある荷物を運ぶとき、取っ手のついたカゴないかなー、というときは、ぜひ使ってみてください。",
+          "link": "https://cild.hatenablog.com/entry/2025/09/06/170020",
+          "publishedOn": "2025-09-06T08:00:20.000Z",
+          "wordCount": 649,
+          "title": "洗濯かごが壊れたら",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/be7372fdea164cc07cd5f8db11edfaa2c954ab5c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcild%2F20250906%2F20250906164947.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/be7372fdea164cc07cd5f8db11edfaa2c954ab5c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcild%2F20250906%2F20250906164947.jpg"
+        },
         {
           "id": "hatenablog://entry/6802888565215837132",
           "author": null,
@@ -1575,21 +1635,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b1480ecc2731ae0b86390e63b15f1278b02d2959/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41UCNfwqomL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398466881656",
-          "author": null,
-          "description": "github.com\nElin のmodのバグを直していた。特定条件でアイテムがロストするというやばいやつ。\nなんかアイテム消えることがある気がしていたのだけど、再現方法がよくわからないし、行儀よく使っていると起きないので行儀よく使うという運用回避をしてしまっていた。報告が来たのでちゃんと直した。\nアイテムをソートするmodで、ソートのためにUI上のコンテナからただの配列にアイテムを一旦移し、ソートして、再度UI上のコンテナにアイテムを書き戻すという処理をしている。ここで配列にアイテムが移ってからエラーが起きるとゲーム内からはアイテムがすべて消えてしまうという問題だった。\nRDBMSのトランザクションみたいにエラーが起きたらいい感じにロールバックさせたい気持ちになっている。 でもメモリ上のデータをロールバックさせるの、大変そうだよなあ。",
-          "link": "https://commits.hatenablog.com/entry/2025/06/09/100000",
-          "publishedOn": "2025-06-09T01:00:00.000Z",
-          "wordCount": 480,
-          "title": "2025-06-08",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398466881656/1749430800",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398466881656/1749430800"
         }
       ]
     },
@@ -1970,21 +2015,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/5441c4ab49c7ab5d6a35a4cfe55d76c66f09e842/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FF%2FFEAR443243%2F20241224%2F20241224003743.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398465969500",
-          "author": null,
-          "description": "「エルデンリング ナイトレイン」をトロコンしました。\n所要時間は約35時間。\n最初はグラディウスに何連敗もしましたが、慣れてくると次第に攻略法などもわかってきて夜の王にも割と楽に勝てるようになってきました。\nまさしく「乗り越えてください」というフロムからのお言葉通りのゲームだったと言えます。\n大変面白かったです。\n \nただしこのゲームは、トロコンを目指し始めると「運ゲー」「しかもバグあり」でなかなか苦労させられます。\n \n本記事では、ゲーム開始からトロコンするまでに意識することをまとめておきます。\n \n\n    \n・トロコンチャート\n・各地変のトロフィーを取得しても油断するな\n・襲撃イベントは夜の王ごとに何が出るか決まっている\n・「夜の王を狩る者」\n・「英雄の道」\n・「古き封牢」\n \n \n・トロコンチャート\nまずはトロコンチャートにです。\n最効率は以下のような流れになるかと思います。\n \n※随時「満たされた聖杯」（聖杯瓶を最大まで集める）「練達者」（レベル最大）などの達成は目指す。\n \n1.グラディウスを倒す。\n※セーブデータをアップロードすると保険になる\n \n2.「火口」の地変を踏破しつつ、グノスター（虫）を倒す。\n \n3.「火口」の地変を踏破しつつ、エデレ（顎）を倒す。\n※このタイミングで「夜の王を狩る者」を取得するのが理想\n※ここで再び火口を踏破するのは、後述する保険のため\n※ここまでの間にレディ、復習者は開放しておきたい\n \n4.「山嶺」を踏破しつつカリゴ（霧の裂け目）を倒す。\nこれを、山嶺が出現している間まだ夜の王を倒したことのないキャラで行う。\n \n5.「山嶺」の地変が収まったら、まだ倒していない夜の王を倒す。\nおすすめはマリス（兆し）\n※4体倒した時点でラスボスが出現するが、まだ手を出さない\n \n6.5体目の夜の王を倒したタイミングで「腐れ森」の地変が発生する…",
-          "link": "https://fear443243.hatenablog.com/entry/2025/06/11/234721",
-          "publishedOn": "2025-06-11T14:47:21.000Z",
-          "wordCount": 390,
-          "title": "エルデンリング ナイトレイン トロコンチャート及び取得に関する諸注意",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/0063b2c09da69c25745dba47dabd7a97ca73a9d9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FF%2FFEAR443243%2F20250608%2F20250608122752.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0063b2c09da69c25745dba47dabd7a97ca73a9d9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FF%2FFEAR443243%2F20250608%2F20250608122752.jpg"
         }
       ]
     },
@@ -2202,6 +2232,21 @@
       "feedUrl": "https://honeylab.hatenablog.jp/rss",
       "siteUrl": "https://honeylab.hatenablog.jp/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802888565218002003",
+          "author": null,
+          "description": "なんだか好き勝手やっているように見えますが、一応正社員としてやっていますが\n何せお仕事はいくらあってもいいものだと思います。\nどうにかもう少し将来に向けてマネタイズの方法を考えたりしてはいるんですが、\nどうにもヘタクソでうまくいきません。ちょっとかわいそうな気がしませんか私。\n正社員ですが、特に副業を禁止されているわけでもなく、自分の分野にあった業務であれば、積極的に収入につなげていきたいと思っています\nというわけで、一応それなりのプラットフォームに登録してみたりはするんですが、\nなかなか今の生活の形との兼ね合いもあり、困ったことに、\nまともな会社？でまともな就職をした経歴もなく、まともなスキルセットもないので、そこから特につながったことはまだありません。\n \n【中小企業向け】IoTデバイスのプロトタイプ開発を支援します|プログラミング・システム開発(その他)の外注・代行|ランサーズ\n \nATOMCamの改造を通じて一件、結構お仕事を頂いたことはあったのですが、ビッグサクセスとまでは行かず、受託開発の部分のみでクローズしてしまった感じでした。\nこのブログには、電子工作、分解、ソフトウェア解析、セキュリティ関係、アングラ、等の技術情報がいくつか書いてあります。\n・ATOMCam(WiFi Webカメラ)のカスタムファームウェアを勝手に作ったり\n・呼び込み君を分解して解析して、勝手にカードを書き換えられるようにしたり\n・普段の業務では、遠隔地に自律電源で動作する、環境情報を取得するような機器をゼロから作ったり\n・第二種電気工事士\n・普通自動車運転免許（MT、３．５t限定）\n・電子部品のデータシートから回路設計、マイコンのファームウェア開発まで\n・でかいLinuxサーバ運用よりは組み込みLinuxの方が得意です\n・ラジオライフ記事掲載あり、技術系同人誌複数]\n　　　　同人誌の取り扱いはこちら：https://honeylab.booth.pm/\n・一応SwiftUI、VisualC,C++,.NETでのアプリは普通に書けます。\n・業務でESP32を使用したハードウェアをちょいちょい作っています\nこの分野で何かの業務に関するご相談、受託開発のお問合せ、コンサルティング等、\n業務としてお受けすることが可能なことがありましたら、是非メールやそのほかSNSからご連絡いただきたいと思います。\nhiromitu2120@gmail.com\nTweets by bakueikozo\n\nx.com\nまぁ、このブログの主だと考えたら、真面目な大きな会社の方は引いちゃうやつだとも思うんですけどね。\nとりあえず、現時点で技術的な内容での副業は全く受注できていないため、これから本業の仕事の合間にマジでタイミーやメルカリハロで小遣いを稼ぎに行くぐらいの状態なので、その時間を何かしらの技術開発に使ってみたいと思われた方、是非ご連絡いただきたく思います。\n後、このスキルセットで営業をかけるのに便利そうなプラットフォームがありましたら教えてください。",
+          "link": "https://honeylab.hatenablog.jp/entry/2025/09/06/090731",
+          "publishedOn": "2025-09-06T00:07:31.000Z",
+          "wordCount": null,
+          "title": "honeylab's blogの主は日常的にお仕事を探しております",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/11696248318755247030/6802888565218002003/1757118287",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/11696248318755247030/6802888565218002003/1757118287"
+        },
         {
           "id": "hatenablog://entry/6802418398567046708",
           "author": null,
@@ -2493,6 +2538,21 @@
       "feedUrl": "https://kiyo-shit.hatenablog.com/rss",
       "siteUrl": "https://kiyo-shit.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802888565223079067",
+          "author": null,
+          "description": "遠近両用コンタクトを買った。ここ数年はほぼメガネ生活だ。気に入ったフレームに出会えたのもあるが、コンタクトだと手元が見にくいストレスが地味に効いてくる。数年前から老眼が進行している、という現実がそこにある。\nメガネにはメガネの課題がある。ヘッドホンや Powerbeats Pro みたいな耳掛け系イヤフォンと干渉しがちだ。特に DJing のようにヘッドホンを高頻度で付け外しする場面では気になる。そこで「遠近両用コンタクト」の存在を知った。いま使っているメガネはサポートレンズという、いわば初心者向けの遠近両用レンズ。じゃあコンタクト版はどうなんだ、という好奇心が湧いて試すことにした。\nハードレンズにはメガネと同じくレンズ下部で近用度数に切り替わるタイプがあるらしいが、今回買ったのはソフト。設計思想が違う。レンズ中央が近くにピントを合わせる度数になっていて、そこから同心円状に遠方が見やすい度数へ緩やかに変化していく。つまり老眼鏡と近視用レンズを同時に見ている状態。呼称としては「同時視型」。名前の通りだ。\n同時に見て成立するのか、という疑問はすぐ解けた。脳はピントが合っている方を選ぶ。視界に複数の候補を流し込み、最適解だけを拾う。インチキっぽいのに、理屈としては筋が通っている。この手の仕掛け、ゲームで言えばそのうち nerf されそうな気配すらあるが、実装は堅実だ。\nこの仕組みを知った瞬間に膝を打った。インプットを厳選して細くするより、まずは大量の情報を無制限に入れて、人間側のフィルタで選別するほうが速くて精度が出る。自分の考え方と合致している。視覚でも同じことが起きているのが痛快だ。\nというわけで、遠近両用コンタクトの初手は好感触。メガネとヘッドホンの相性問題を避けつつ、手元と遠方の両立を図れる。しばらく使い倒して、脳の選球眼にもっと働いてもらう。",
+          "link": "https://kiyo-shit.hatenablog.com/entry/2025/09/08/232107",
+          "publishedOn": "2025-09-08T14:21:07.000Z",
+          "wordCount": null,
+          "title": "遠近両用コンタクトを試している話",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208692334729889879/6802888565223079067/1757341267",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729889879/6802888565223079067/1757341267"
+        },
         {
           "id": "hatenablog://entry/6802418398546137410",
           "author": null,
@@ -3063,21 +3123,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/28098ab226b14aa08c9b4c3887c9d622decfceac/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250608%2F20250608223323.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398466777226",
-          "author": null,
-          "description": "※2017/01/04にfabcrossに寄稿・掲載したものを、サイトクローズにあたり転載します。かなり古いので情報としてはあまり価値がありません。でもいい話なので物語としてお読みください。\n\nもともと3Dプリンタにはそんなに興味がなかったし、ましてや家に置こうなんて全然考えてもなかった。\nfabcrossで『約1万円と廉価なデルタ型3Dプリンタ「101Hero」』の記事を見つけたときも、やっぱり興味がなくてすぐにページを閉じたのだ。……でも数日後、たまたま、なんだか急に散財したい気分の日がやってきた。\n初めてのクラウドファンディング\n101Heroは「世界一お手頃な3Dプリンタ」を歌うKickstarterのプロジェクトで、79ドル出資するとデルタ型の3Dプリンタが1台もらえる。\nwww.youtube.com\n何を隠そう、これは僕の初めての出資であった。クラウドファンディングといえば、上級者ほど「商品は届かないと思え、店じゃないんだぞ」と語るサービスである。思いっきりビビりながら、もう最初から勉強料のつもりで、約8700円の出資を決めた。どうせそこまで欲しくなかった3Dプリンタである。あまり期待しないほうが、あとあとの精神的ダメージも少ない。\nなんて言いつつも、僕はその日からプロジェクトページのコメント欄をマメにチェックするようになった。最初はみんなが応援のメッセージを寄せる平和な場所だった。しかし途中でプロジェクトメンバーの素性を不審がるユーザーが現れ、その日を境にコメント欄が荒れ始める。\nユーザーA「おまえらの身元が信用できないからLinkedinのアカウント公開しろ！」\nメンバー「中国在住なんだからそんなもんアクセスできねえよ」\nユーザーA「Linkedin使ってないの？おまえらただの学生だろ！」\nメンバー「プロダクト作るのにLinkedinのアカウント役に立つん…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/06/08/230607",
-          "publishedOn": "2025-06-08T14:06:07.000Z",
-          "wordCount": null,
-          "title": "初めてのKickstarterで初めての3Dプリンタを手に入れました ～1万円以下、激安3Dプリンタのその後",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/815f208ae630f6f83aa6c2e561886261a7c96a1e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250608%2F20250608223814.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/815f208ae630f6f83aa6c2e561886261a7c96a1e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250608%2F20250608223814.jpg"
         }
       ]
     },
@@ -3086,6 +3131,21 @@
       "feedUrl": "https://nonwo.hatenablog.com/rss",
       "siteUrl": "https://nonwo.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802888565220742271",
+          "author": null,
+          "description": "目覚まし掛けてたけどちゃんと起きれなかった。\n \nコミティア行った。開場から1時間ほど過ぎていたため、並ぶことなく入場できた。\n会場内も込み合ってはいるが動きづらい訳ではなく、見て回るにはちょうど良かった。\n事前に目星つけてなかったけど気になった本もいくつかあり、いくつか見本誌を見せてもらった。\n以前だったら、ブースの前に立ち止まって一回見てしまうと勝手に「買わなきゃ」という強迫観念に駆られてしまうため、あまり立ち寄れなかった。でも、別に自分に裁量があるわけだし、合う合わないもあるわけで、1日で百人単位の人がすれ違う場での1人でしかないのだからそこまで気にする必要ないなと思えるようになった。\n帰り際、本を入れる袋等を持ってきてなかったため、初めて本部で紙袋を購入した。しっかりした作りで、無地な感じも好きだった。手ぶらでくるのも悪くない。\n \n帰り、とあるハブ駅で昼飯を探し歩いた。なんでもいいとか思いながら、店の前を通ると「違うな…」とか言って20分くらい歩いた。結局バーガーキング食べた。ワッパーがうまい。\n \n帰ってきて爆睡した。ここ一か月、欲しい睡眠時間が長くなっていっている。寝るのはいいが、何もしていない自分を自己嫌悪してしまう。最悪の目覚め。かといって起きててもTwitterだけ見るインターネット中毒者なので、まだ寝ていた方がましかもしれない。\n \n今日の写真でもつけようかと思ったけど、なんも撮っていなかった。\n海の近くまで行ったのに、見れなかった。もったいない。",
+          "link": "https://nonwo.hatenablog.com/entry/2025/09/07/214856",
+          "publishedOn": "2025-09-07T12:48:56.000Z",
+          "wordCount": null,
+          "title": "日記",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127218229460/6802888565220742271/1757249459",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127218229460/6802888565220742271/1757249459"
+        },
         {
           "id": "hatenablog://entry/6802418398571192230",
           "author": null,
@@ -3321,6 +3381,21 @@
       "feedUrl": "https://saize-lw.hatenablog.com/rss",
       "siteUrl": "https://saize-lw.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/6802418398549464104",
+          "author": null,
+          "description": "夏合宿\nカードゲーム\nバトルスピリッツ\n現代遊戯王\nGrand Archive TCG\nめめめのくらげTCG\nNIKKE NIVEL ARENA\nおまけ\nスマブラチーム戦\n川釣り\n夏合宿\nお盆休みでオタク夏合宿に行ってきた。\n\ngoshi-goshi.hatenadiary.orgnote.com俺もカードゲームを引退して久しいので稀に数合わせでちょっとドラフトする以外は酒を飲んだり本を読んだりしてかなり適当に過ごしているが、今回は「（暇なオタクが大量に集まるのは）名前だけ知ってるカードゲームを色々体験してみるのに手頃だな」と思ってカードゲーム体験会みたいなやつを企画した。\n色々準備していたが、実際にやれたカードゲームはバトルスピリッツ、遊戯王、Grand Archive TCG、めめめのくらげ、NIKKE NIVEL ARENAの5つ。ドリームオーダー、ロルカナ、Lycee overtureは時間が足りなかったので冬合宿に回される予定。\n評価\n②新鮮さ：カードゲームの新しい知見が得られたか\n③体験価値：遊んでみる価値があるか\n\nカードゲーム\nバトルスピリッツ\nwww.battlespirits.com【面白さ：★★☆】【新鮮さ：★★☆】【体験価値：★★★】\n補足597：遊戯王ジジイすぎてざっくり「シンクロ以前が過去、シンクロ以後が近代」みたいな認識をしているが、シンクロが登場したのは2008年だ。つまり遊戯王においてはシンクロがなかった期間が9年、シンクロがあった期間が17年であり、シンクロ以前は全て黎明期に括った方がまだ正確というのが実情。\nAmazonで叩き売られていた最近のストラクを購入してプレイ。\nwww.youtube.com何も知らないので政治家の橋本侑樹さんが解説してくれる動画を視聴すると、ルール自体は割とオーソドックスなマナ制であることがわかる。\nしかし、…",
+          "link": "https://saize-lw.hatenablog.com/entry/2025/09/05/190000",
+          "publishedOn": "2025-09-05T10:00:00.000Z",
+          "wordCount": null,
+          "title": "25/9/5 名前だけ知ってるカードゲーム体験会（ゴシドラ夏合宿レポ）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/f46e32026dc260905d51bd1cff35bbeb86fd20eb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20250904%2F20250904222941.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f46e32026dc260905d51bd1cff35bbeb86fd20eb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20250904%2F20250904222941.png"
+        },
         {
           "id": "hatenablog://entry/6802418398528534372",
           "author": null,
@@ -3703,6 +3778,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565221722096",
+          "author": null,
+          "description": "いつもはてなブログ、はてなCMSをご利用いただきありがとうございます。\nはてなCMSテンプレートのご紹介：2025年9月版 - はてなCMS｜ノーコードで誰でもカンタン！\nご質問やご意見はお問い合わせフォームより、または担当営業にお寄せください。",
+          "link": "https://staff.hatenablog.com/entry/2025/09/08/083547",
+          "publishedOn": "2025-09-07T23:35:47.000Z",
+          "wordCount": null,
+          "title": "【はてなCMS】デザインテンプレートのご紹介：2025年9月版",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/9ace8a76c17f74251ff6960ee2129c192e315d65/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250902%2F20250902093210.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9ace8a76c17f74251ff6960ee2129c192e315d65/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20250902%2F20250902093210.png"
+        },
+        {
           "id": "hatenablog://entry/6802418398556098370",
           "author": null,
           "description": "いつもはてなブログ、はてなCMSをご利用いただきありがとうございます。\nはてなCMSテンプレートのご紹介：2025年8月版 - はてなCMS｜ノーコードで誰でもカンタン！\nご質問やご意見はお問い合わせフォームより、または担当営業にお寄せください。",
@@ -3919,6 +4009,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565222024723",
+          "author": null,
+          "description": "こんにちは、iOSエンジニアの山田(0x746572616e79)です。\nこのたび、9月10日から開催される DroidKaigi 2025 と 9月19日から開催される iOSDC Japan 2025 に、それぞれゴールドスポンサーとして協賛いたします。また両イベントともブース出展をいたします。クックパッドではAndroid／iOSエンジニアを積極募集中です。当日は私を含むモバイルエンジニアがブースにおりますので、展示内容はもちろん、普段のプロダクト開発についてや採用に関するお話をカジュアルにできればと思います。\niOSDC Japan 2024のブースの様子です。\n今年のスポンサーブースでは、グローバル展開中のクックパッドアプリ開発事例を昨年に引き続きご紹介します。また、最近社内で活発に取り組んでいるAIの利活用事例も併せて展示予定です。特にAI事例は現在試行錯誤の段階ですので、ぜひ皆さまと知見を共有できれば嬉しいです。また、昨年ご好評いただいた「フードクリップ」をノベルティとして配布を予定しています。ぜひお気軽にお立ち寄りください！\n\n皆さまにお会いできるのを楽しみにしています！",
+          "link": "https://techlife.cookpad.com/entry/2025/09/09/113000",
+          "publishedOn": "2025-09-09T02:30:00.000Z",
+          "wordCount": null,
+          "title": "クックパッドはDroidKaigi 2025とiOSDC Japan 2025に協賛します!",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773"
+        },
+        {
           "id": "hatenablog://entry/6802418398565103204",
           "author": null,
           "description": "こんにちは、レシピ事業部でiOSエンジニアをしている山田(@0x746572616e79)です。つい先日リリースしたプロフィール画面のリニューアルで、SNSアプリでよく見かけるプロフィールコンポーネントとStickyなタブを組み合わせたUIを実装し、いくつか学びがあったので実装方法と合わせてご紹介します。\nStickyヘッダーの設計、実装方針\nプロフィール画面は元々、プロフィールコンポーネントの下にレシピ一覧、その下に「つくれぽ」のカルーセルを表示するシンプルな縦スクロール構成でした。\n\nリニューアル後は、プロフィールコンポーネントの下に2つのタブ（レシピ一覧・つくれぽ一覧）を配置し、それぞれが独立したスクロール領域を持つ構成に変更します。各タブの内容は既存の検索結果画面と同じUIコンポーネントを流用できたため、UIPageViewControllerで各一覧画面のViewControllerをホスティング（内包・管理）する設計を採用しました。\nclass ProfileViewController: UIViewController {\n    private lazy var pageViewController: UIPageViewController = {\n        let viewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)\n        viewController.dataSource = self\n        viewController.delegate = self\n        return viewController\n    }()\n    \n    private let recipe…",
@@ -4123,6 +4228,16 @@
       "siteUrl": "https://note.com/2ntgi",
       "articles": [
         {
+          "id": "https://note.com/2ntgi/n/nf0dd1f641887",
+          "author": null,
+          "description": "※【歯茎】とは、「歯茎を剥き出し」にして、威嚇をしたり笑顔になる様\nフォロー通知がくると、時々その人のプロフィールに飛んで、フォローイングを覗くことがあるのですが、上から３つが「僕」「薄宮」「にゃるら」なのキモすぎて歯茎。\nなんか、気に障ることしましたか。\nしてたら申し訳ないです。\n続きをみる",
+          "link": "https://note.com/2ntgi/n/nf0dd1f641887",
+          "publishedOn": "2025-09-05T04:32:50.000Z",
+          "wordCount": null,
+          "title": "歯茎剥き出しted by オタク",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/212788081/rectangle_large_type_2_456a8acba5edddb98cee5b5871ed9ff1.jpeg?width=800"
+        },
+        {
           "id": "https://note.com/2ntgi/n/n4be393a1be01",
           "author": null,
           "description": "定職に就いてもう何度夏が来たのか分からない\n学生時代やフリーター時代には、確かに四季の感覚があったのだけれども、今はその感覚が鈍くなってしまったように思う。\n\n作業着に着替え、ヘルメットを被り、汗を拭いながら作業をする。\nもう目を瞑っていても出来る。\nつまらない人生だと思う。\n\n続きをみる",
@@ -4203,16 +4318,6 @@
           "wordCount": null,
           "title": "第11回謎晒しイベント「漢字」",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/208760138/rectangle_large_type_2_99a0dffafc344cf02e803eb9e27229c9.png?width=800"
-        },
-        {
-          "id": "https://note.com/anzato/n/n2340f04fef1c",
-          "author": null,
-          "description": "謎晒しイベントとは？\n謎晒しイベントとは謎解き交流Discordサーバー「atNAZO」にて行われるイベントです。テーマに沿った謎をみんなで制作し、その後面白かった謎にサーバーのメンバーが投票をします。\n続きをみる",
-          "link": "https://note.com/anzato/n/n2340f04fef1c",
-          "publishedOn": "2025-06-11T14:01:19.000Z",
-          "wordCount": 2406,
-          "title": "第10回謎晒しイベント「ネットミーム」結果発表",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/195569685/rectangle_large_type_2_85941b4f26c283ca0b20ae141977e946.png?width=800"
         }
       ]
     },
@@ -4239,6 +4344,46 @@
       "feedUrl": "https://note.com/banfuture9/rss",
       "siteUrl": "https://note.com/banfuture9",
       "articles": [
+        {
+          "id": "https://note.com/banfuture9/n/nedc80015bc05",
+          "author": null,
+          "description": "やったこと\n・仕事。電話とメールと後輩に依頼する作業の説明と自分のOJT。\n・中島聡『なぜ、あなたの仕事は終わらないのか』を3章まで読んだ。\n・富士そばでカツ丼と冷やしうどんのセットを食べた。\n・rekorboxとDDJ-FLX4を触った。10曲くらい順番に聞いただけだった。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/nedc80015bc05",
+          "publishedOn": "2025-09-08T15:23:51.000Z",
+          "wordCount": null,
+          "title": "25/09/08 作り込むことができない",
+          "imageUrl": null
+        },
+        {
+          "id": "https://note.com/banfuture9/n/n33c6436da844",
+          "author": null,
+          "description": "毎度のことながら、書きたいことが上手く文字にできない。今日は特に上手くいかない。散文が苦手だ。別にフォーマットがあっても苦手ではあるが。\n現実の記録として急に始めた日記の毎日投稿であるが、いつの間にか開始から一ヶ月が経っていた。読み返すと、この時から現在までほぼ変化していないことがわかった。書くのが苦手という話は最初にしていた。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/n33c6436da844",
+          "publishedOn": "2025-09-07T15:28:37.000Z",
+          "wordCount": null,
+          "title": "25/09/07 散文と決別",
+          "imageUrl": null
+        },
+        {
+          "id": "https://note.com/banfuture9/n/n02277e4178fb",
+          "author": null,
+          "description": "段落中の改行を部分的に始めてみる。少しは読みやすくなることを期待して。\nこの日記で、アナログミキサーを買った話を初回の感じで3回書いていて、流石に記憶力がヤバいなと思った。日記を適当に書いていることの証左なので、一旦何も気にせず書きまくるという指針が現れていて変に自省とかは無いのだけれど、2回ではなく3回も書いておいて全く気付いていないという現実には結構びっくりする。\n同じ話をずっとしてるジジイっているけど、それじゃん。自分の30年後が楽しみになってきました。今から疎まれていることに対する予防線を張っておこう。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/n02277e4178fb",
+          "publishedOn": "2025-09-06T14:25:25.000Z",
+          "wordCount": null,
+          "title": "25/09/06 最高のジャケット",
+          "imageUrl": null
+        },
+        {
+          "id": "https://note.com/banfuture9/n/n24dc626cc62e",
+          "author": null,
+          "description": "ブラック・サバスを1stから聞き始めた。未だ仲の良い高校の友達が言うフレーズに「ディスクユニオンの壁」概念があり、実のところそういう基礎的な部分を通ることなく音楽を聞く趣味に入っているので、流石に知っておくべきだろうというバンドやアーティストがたくさんいる。最近The Budos Bandが好きでYouTubeに上がっているKEXPでのライブを見ていたら、コメント欄に「ブラック・サバスとエチオピアン・ジャズが出会ってできた子供が彼らだ」みたいなコメントがあって、まずはブラック・サバスから聞き始めてみた。1stも2ndもカッコ良いなー。歴史的にはただカッコ良いというだけではなくヘヴィメタルを作ったオリジネーターとして聞いた方が良いのかもしれないが、わたしはあまりロックの耳が発達していないので素朴な快・不快で聞かせていただくこととする。ブラック・サバスを聞いていなかったので王様『黒い安息日伝説』も聞いていなかったのだが、ようやく王様の再現レベルの高さを理解しながら聞くことができました。こういう全部聞く的な行為を完遂した試しが無いので今回も怪しいが、掘れるだけ掘ってみます。\n  \n続きをみる",
+          "link": "https://note.com/banfuture9/n/n24dc626cc62e",
+          "publishedOn": "2025-09-05T22:11:56.000Z",
+          "wordCount": null,
+          "title": "25/09/05 ブラック・サバス/ナンセ/東京節/音楽を口ずさむ/懐古趣味ではない",
+          "imageUrl": null
+        },
         {
           "id": "https://note.com/banfuture9/n/n7ee74e40fe03",
           "author": null,
@@ -6008,16 +6153,6 @@
           "wordCount": null,
           "title": "日記250704",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/hercelot/n/n40dd484a525d",
-          "author": null,
-          "description": "「グラデーションで地続きの2者の間にボーダーを定義せず、それでも2者を区別する態度はとっていいのか」について考え始めた。考え始めなので書きながら考え進めていく。\n\n続きをみる",
-          "link": "https://note.com/hercelot/n/n40dd484a525d",
-          "publishedOn": "2025-06-10T03:37:52.000Z",
-          "wordCount": 2285,
-          "title": "日記250609 (程度問題と区別)",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/910adbf68c8e02ea003c0d62946b1e90169b171f.png"
         }
       ]
     },
@@ -6086,6 +6221,16 @@
       "feedUrl": "https://note.com/kazumakawauchi/rss",
       "siteUrl": "https://note.com/kazumakawauchi",
       "articles": [
+        {
+          "id": "https://note.com/kazumakawauchi/n/n9ca98676f559",
+          "author": null,
+          "description": "続きをみる",
+          "link": "https://note.com/kazumakawauchi/n/n9ca98676f559",
+          "publishedOn": "2025-09-06T09:05:26.000Z",
+          "wordCount": null,
+          "title": "#38 期待",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/213496234/rectangle_large_type_2_164f3df0d2297238cd29a7057a8a66d8.jpeg?width=800"
+        },
         {
           "id": "https://note.com/kazumakawauchi/n/n2716445e779d",
           "author": null,
@@ -6235,16 +6380,6 @@
           "wordCount": null,
           "title": "「歴史」という武器——Total 90",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/196884190/rectangle_large_type_2_435c0fb4f32ea572dad7d2e94d07e8ea.png?width=800"
-        },
-        {
-          "id": "https://note.com/kazumakawauchi/n/n653f06cb9f5f",
-          "author": null,
-          "description": "スポーツやアスリートが持つ「物語」を「文脈」だと解釈すると、過去に何があったか、その意味はなんだったのか、未来にとってそれはどんな意味を持つのか、などの「文脈」は、調査と思考によって\"掴む\"ことができるのだと思います。そこにかける時間や、発想の豊かさは、例えば四六時中そのものの意味を考える習慣や、小説や映画などのフィクションやノンフィクションを日頃から浴びているか、そういうところが関与しているのだと思います。\nだから「文脈」を掴もうとする姿勢と、その精度は、僕らのような仕事をするには非常に重要なことだと当然考えています。僕らのような仕事、と表現しましたが、何の仕事にも大切です（文脈からずれている人の話は、聞けたもんじゃありません）。時間が足りない、発想の豊かさが足りないなどその時々で理由はいろいろあるかと思いますが、文脈を掴むには「難しさ」が伴います。しかしまた、その「難しさ」を自覚していない人も存在しているように思います。\n続きをみる",
-          "link": "https://note.com/kazumakawauchi/n/n653f06cb9f5f",
-          "publishedOn": "2025-06-10T09:33:25.000Z",
-          "wordCount": null,
-          "title": "物語（文脈）を物語（文脈）が包むことで魅力を倍増させる「発信者と被発信者の関係」",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/195316789/rectangle_large_type_2_713910965e3ce768618482d19d884822.png?width=800"
         }
       ]
     },
@@ -6605,16 +6740,6 @@
           "wordCount": null,
           "title": "マリオ合作　自パート　解答編",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/nototote/n/nedc2a67cb9fe",
-          "author": null,
-          "description": "0. はじめに\n続きをみる",
-          "link": "https://note.com/nototote/n/nedc2a67cb9fe",
-          "publishedOn": "2025-06-10T03:47:28.000Z",
-          "wordCount": 2579,
-          "title": "ニンテンドーミュージアムを数倍楽しむ・うがった見方講座",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/194724540/rectangle_large_type_2_29088b6622895ff7c2f55d3a60688de6.jpeg?width=800"
         }
       ]
     },
@@ -6887,16 +7012,6 @@
           "wordCount": null,
           "title": "RealSampleの待機動画について",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/205500722/rectangle_large_type_2_1cbfb049bf722d9b870ff0534a944227.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/tojiru/n/n0acc25120c55",
-          "author": null,
-          "description": "概要\nとじーら・更地・84kb・オワタンンンアーッ絶望暗黒太陽邪の4名が山岡家を食べるためにとじーらの運転で明石まで行く会\n続きをみる",
-          "link": "https://note.com/tojiru/n/n0acc25120c55",
-          "publishedOn": "2025-06-09T09:58:01.000Z",
-          "wordCount": null,
-          "title": "2025/6/8　事件簿",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/195093553/rectangle_large_type_2_a622e7e9f76e1bb8f3eef0a00ff8ed41.jpeg?width=800"
         }
       ]
     },
@@ -7109,12 +7224,6 @@
       "title": "5h4ru.com",
       "feedUrl": "https://5h4ru.com/rss.xml",
       "siteUrl": "https://5h4ru.com",
-      "articles": []
-    },
-    {
-      "title": "麦 Baku",
-      "feedUrl": "https://baku89.com/feed",
-      "siteUrl": "https://baku89.com",
       "articles": []
     },
     {
@@ -7762,6 +7871,16 @@
       "siteUrl": "https://blog.lai.so/",
       "articles": [
         {
+          "id": "68bacb264cc5f60001b80f49",
+          "author": "laiso",
+          "description": "AIコーディングエージェントのTypeScriptコード編集能力を評価するための、手軽に再現可能なベンチマークプロジェク",
+          "link": "https://blog.lai.so/ts-bench/",
+          "publishedOn": "2025-09-05T12:11:51.000Z",
+          "wordCount": null,
+          "title": "TypeScriptファーストなコーディングAIエージェントのベンチマーク「ts-bench」を公開しました",
+          "imageUrl": null
+        },
+        {
           "id": "68a9d5012bc39f0001993fbd",
           "author": "laiso",
           "description": "Nothing Phoneとは？\nNothing Phoneはイギリスの元OnePlus創業者Carl Peiが手がけるAndroidスマートフォンです。独特のデザインのガジェットと",
@@ -7997,6 +8116,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2025/09/07/npm-oidc/",
+          "author": null,
+          "description": "npm Trusted Publishingが2025年7月31日に一般公開されました。\nこれにより、OpenID Connect (OIDC)を使ってnpmトークンなしでCI/CDからnpmパッケージを公開できるようになりました。\nnpm trusted publishing with OIDC is generally available\nTrusted publishing for npm packages | npm Docs\nこの記事では、npm Trusted Publishingの仕組みや設定方法、実際のリリースフローについて紹介します。\nnpm Trusted Publishingとは\nnpm Trusted Publishingは、npmレジストリとCI/CD環境（GitHub ActionsやGitLab CI/CD）の間でOIDCベースの信頼関係を確立する仕組みです。これにより、npmトークンを使わずにパッケージを公開できます。\nこれまでのCIからnpmパッケージを公開する際には、長期間有効なnpmトークンをCI/CDの環境変数（Secrets）に保存する必要がありました。しかし、このアプローチにはいくつかのセキュリティリスクがあります。\nnpmトークンがCIのログや設定ファイルに誤って露出する可能性\nトークンが侵害された場合、無効化するまで悪用される可能性\nトークンの手動ローテーションが必要\n必要以上に広い権限を持つことが多い\n\ngranular access tokens で scope を制限できるが、monorepo では設定/維持が難しく org 単位になりがち\nnpm Trusted Publishingは、これらの問題を解決します。\n短時間だけ有効で、かつ特定ワークフローに限定された署名付きトークンを使うため、流出しても再利用されにくい構…",
+          "link": "https://efcl.info/2025/09/07/npm-oidc/",
+          "publishedOn": "2025-09-07T02:00:00.000Z",
+          "wordCount": null,
+          "title": "npm Trusted PublishingでOIDCを使ってトークンレスでCIからnpmパッケージを公開する",
+          "imageUrl": null
+        },
+        {
           "id": "https://efcl.info/2025/08/18/jsprimer-v7/",
           "author": null,
           "description": "JavaScript Primer v7.0.0をリリースしました 🎉\nリリースノート: Release v7.0.0: ECMAScript 2025サポート、イテレータとジェネレータ · asciidwango/js-primer\nJavaScript Primer v7.0.0では、ECMAScript 2025への対応と、新しく「イテレータとジェネレータ」の章を追加しています。\nIterator Helpersをはじめとした、ES2025の新機能を学ぶことができます。\nJavaScript Primer Sponsors\nJavaScript Primer(jsprimer)では、Open Collectiveを通じてプロジェクトの更新に関わる資金を募っています。\nJavaScript Primer - Open Collective\n今回のv7リリースにおいては、次の方々にご支援いただきました！\nGold Sponsors\n\nSupporters\n\nご支援ありがとうございます！\nJavaScript Primerスポンサーについては、次のページを参照してください。\nJavaScript Primerスポンサー · JavaScript Primer #jsprimer\nまた、ご支援いただいた資金は、jsprimerにcontributionしてくれた方へ還元できるような仕組みを引き続き運用しています。\n今回から同じ金額を他のCollective(オープンソースプロジェクト)に寄付する仕組みも追加しました。 Contributorが受け取る代わりに、指定されたCollectiveへ同じ金額を寄付できます。\nContributing Expenses Policy\nJavaScript Primer v7.0.0の変更点\nJavaScript Primer v7.0…",
@@ -8035,16 +8164,6 @@
           "wordCount": null,
           "title": "Secretlint v10.0.0リリース: デフォルトでシークレットをマスク表示するように変更、Node.js 20+のサポート",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2025/06/10/textlint-mcp/",
-          "author": null,
-          "description": "textlint v14.8.0をリリースしました！\nリリースノート: Release v14.8.0 · textlint/textlint\n今回のリリースでは、実験的な機能としてMCP（Model Context Protocol）サポートを追加しました。\nMCPは、AI言語モデルが外部のツールやサービスと統一されたインターフェースを通じて連携できるプロトコルです。\nMCP（Model Context Protocol）サポート\ntextlint v14.8.0では、新しい--mcpフラグを追加しました。このフラグにより、textlintをMCPサーバーとして起動し、AI搭載のコードエディタ（VS Code with Copilot Chat、Cursor、Windsurf）から直接textlintを利用できるようになります。\nMCPとは\nModel Context Protocol（MCP）は、AI言語モデルが外部のツールやサービスと統一されたインターフェースを通じて連携するためのプロトコルです。これにより、AIアシスタントがtextlintの機能を直接利用して、文章のチェックや修正を行えるようになります。\n前提条件\nMCPサーバーを使用するには、次の条件を満たす必要があります。\ntextlint v14.8.0以降\nMCPサポートを持つAI搭載のコードエディタ（VS Code with Copilot Chat、Cursor、Windsurf）\n設定済みのtextlintプロジェクト - textlintにはデフォルトルールがないため、MCPサーバーを使用する前に既存のtextlint設定が必要です\n基本的な使い方\nまず、プロジェクトでtextlintを設定する必要があります。\ntextlintにはデフォルトルールがないため、MCPサーバーを使用する前にプロジェクト…",
-          "link": "https://efcl.info/2025/06/10/textlint-mcp/",
-          "publishedOn": "2025-06-10T00:00:00.000Z",
-          "wordCount": null,
-          "title": "textlint v14.8.0をリリースしました - MCP(Model Context Protocol)をサポート",
-          "imageUrl": null
         }
       ]
     },
@@ -8053,6 +8172,36 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=32582",
+          "author": "山本 文治",
+          "description": "IIJ放送システム事業部 bunjiです。今回は10月22日にIIJが主催する「GNSS TimeSync 2025」について案内します。 （案内は本記事の最後に記載しているため、先にご覧になりたい方...",
+          "link": "https://eng-blog.iij.ad.jp/archives/32582",
+          "publishedOn": "2025-09-09T09:22:32.000Z",
+          "wordCount": null,
+          "title": "GNSS TimeSync 2025の紹介",
+          "imageUrl": null
+        },
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=32616",
+          "author": "doumae",
+          "description": "今年もモバイル業界がざわつく季節がやってきました。 IIJmioを含めたMVNO各社の通信サービスでiPhoneを利用する場合、「APN構成プロファイル」なるものをインストールしなければなりません。た...",
+          "link": "https://eng-blog.iij.ad.jp/archives/32616",
+          "publishedOn": "2025-09-09T08:20:21.000Z",
+          "wordCount": null,
+          "title": "iPhoneと「APN構成プロファイル」の迷宮",
+          "imageUrl": null
+        },
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=32302",
+          "author": "takoi",
+          "description": "まえがき 日々農業IoTに勤しんでいるtakoiです。 普段は遠隔で実証圃場の水管理をしながら、IIJ水管理プラットフォーム for 水田のバックエンド開発をしています。 IIJでは昨年度に引き続き、...",
+          "link": "https://eng-blog.iij.ad.jp/archives/32302",
+          "publishedOn": "2025-09-09T05:42:31.000Z",
+          "wordCount": null,
+          "title": "田んぼをデジタル管理！～センサーとアプリでデータ活用～",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=32183",
           "author": "瀬川 浩希",
@@ -8362,6 +8511,66 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44193",
+          "author": "mamosuke",
+          "description": "PS5 BDJB Modified ISOs,kstuff v1.6.2,PS5 Payloads 1.8a MOD,ps4_autoLL,PS Remote Lua Loader v4.6 b3,PS4PKGinstaller v2.00,amiberry v7.1.1,TinyWiiBackupManager v2.3.3,shadPS4 Pre-release-shadPS4-2025-09-08-133f4b9,FrogGBC v0.1.1,MAME4droid 2025(0.280) 1.27,xemu v0.8.98,rehex(Reverse Engineers’ Hex Editor) 0.63.3→→→この記事の続きを読む\nGameGaz Daily 2025.9.9 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025090944193/",
+          "publishedOn": "2025-09-08T23:43:10.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.9.9",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=44188",
+          "author": "mamosuke",
+          "description": "ONEMenu for PSVita v3.22,FPSLocker 3.0.0,SaltyNX 1.5.0,TinyWiiBackupManager v2.3.2,pixl.js 2.14.0,ScratchEverywhere Beta Build 21,shadPS4 shadPS4 Pre-release-shadPS4-2025-09-07-ce6681b,decky-loader v3.1.11,PCSX2 v2.5.153,SpeccySE Version 1.2,FrogGBC v0.1.0,moonlight-xbox 1.17.6,AirPSX,GoldHEN Cheats PS4 PKG 07/09/25→→→この記事の続きを読む\nGameGaz Daily 2025.9.8 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025090844188/",
+          "publishedOn": "2025-09-07T23:12:04.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.9.8",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=44185",
+          "author": "mamosuke",
+          "description": "欧州市場で一部PS5のスペックがダウングレードされて販売されるようです。→→→この記事の続きを読む\n【噂】中身減らして価格は据え置き 欧州でPS5が残念な事態に first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025090744185/",
+          "publishedOn": "2025-09-07T05:30:29.000Z",
+          "wordCount": null,
+          "title": "【噂】中身減らして価格は据え置き 欧州でPS5が残念な事態に",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=44179",
+          "author": "mamosuke",
+          "description": "Mig Flashファームウェア解析の結果、Mig FlashとUnlockSwitchはTeam Xecuter残党であることが判明しました。\n→→→この記事の続きを読む\nMig Flashのファームウェアダンプ解析 Team Xecuter残党説確定 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025090744179/",
+          "publishedOn": "2025-09-07T04:46:06.000Z",
+          "wordCount": null,
+          "title": "Mig Flashのファームウェアダンプ解析 Team Xecuter残党説確定",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=44177",
+          "author": "mamosuke",
+          "description": "etaHENソースコード公開,RetroBat V7.4,Modded Hardwarが任天堂に200万ドル支払いで合意,PS5-Auto-Jailbreak-and-Auto-Run-Payload-)PS5 Auto JB + Autorun Payload) v2.3,switch_AIO_LS_pack 5.21.0,NX Venom 8.0.0,TinyWiiBackupManager v2.2.0,BlocksDS v1.14.0,duckstation v0.1-9483,shadPS4 Pre-release-shadPS4-2025-09-06-5e3ffea,20.4.0アップデートで互換性改善,Switch 2ゲームカードは転送速度が遅い,Switch 2開発機問題→→→この記事の続きを読む\nGameGaz Daily 2025.9.7 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025090744177/",
+          "publishedOn": "2025-09-07T03:17:46.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.9.7",
+          "imageUrl": null
+        },
+        {
+          "id": "https://gamegaz.com/?p=44173",
+          "author": "mamosuke",
+          "description": "Newニンテンドー2DS LLサポート終了違法コピー配信者提訴,,etaHEN 2.3B,PS5 BDJB Modified ISOs v1.20,Itemzflow 1.12(PS5),PS5_EZ_Host v2.0.1,PS5-Auto-Jailbreak-and-Auto-Run-Payload-)PS5 Auto JB + Autorun Payload) v2.2,esp-ps5-exploit-server v1.42,PlaySon 3.7.27 Beta,VitaShell 2.08,Switch-Discord-Presence-GUIPy 1.0.4,DBI 810ru,Ultra-NX 2.6-R1,DEM Wiiflow Tools 4.0,ntr-hr v0.3.5.5,libogc v2.13.0,Eden v0.0.3,XStreaming v2.3.3,Azahar 2123.2-rc1,shadPS4 Pre-release-shadPS4-2025-09-05-53181b0→→→この記事の続きを読む\nGameGaz Daily 2025.9.6 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025090644173/",
+          "publishedOn": "2025-09-06T03:37:20.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.9.6",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44171",
           "author": "mamosuke",
@@ -9491,86 +9700,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2025.6.12",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43768",
-          "author": "mamosuke",
-          "description": "Nintendo Switch 2の開発キットの写真が流出しました→→→この記事の続きを読む\nNintendo Switch 2の開発キット写真が流出 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025061243768/",
-          "publishedOn": "2025-06-12T00:03:08.000Z",
-          "wordCount": 1711,
-          "title": "Nintendo Switch 2の開発キット写真が流出",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/Nintendo-Switch-2_C.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43756",
-          "author": "mamosuke",
-          "description": "UnlockSwitchチームがNintendo Switch向けFlashcart UnlockSwitchをNintendo Switch 2で起動を試みる動画を公開していました。→→→この記事の続きを読む\nUnlockSwitchをNintendo Switch 2で起動させてみる動画が公開 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025061143756/",
-          "publishedOn": "2025-06-11T04:57:05.000Z",
-          "wordCount": 1756,
-          "title": "UnlockSwitchをNintendo Switch 2で起動させてみる動画が公開",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/UnlockSwitch-with-Switch-2.jpg"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43752",
-          "author": "mamosuke",
-          "description": "PS5のシステムソフトウェアアップデートが準備中,Switch 2をPC接続してスクショ転送は下ポートのみ,HATSIFY v1.0.0,Goldleaf 1.1.1,PCSX2 v2.3.414,shadPS4 Pre-release-shadPS4-2025-06-10-b49340d,Ryujinx 1.3.2→→→この記事の続きを読む\nGameGaz Daily 2025.6.11 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025061143752/",
-          "publishedOn": "2025-06-10T23:43:08.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.6.11",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43750",
-          "author": "mamosuke",
-          "description": "Nintendo Switch向けFlashcartのMig FlashをNintendo Switch 2で動作させるためのファームウェアアップデートが開発されています。→→→この記事の続きを読む\nMig FlashがSwitch 2での起動に成功 ただすぐにはリリースできないらしい first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025061143750/",
-          "publishedOn": "2025-06-10T23:22:38.000Z",
-          "wordCount": null,
-          "title": "Mig FlashがSwitch 2での起動に成功 ただすぐにはリリースできないらしい",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43747",
-          "author": "mamosuke",
-          "description": "ゼルダの伝説映画公開予定延期,switch2-SDEX2M2,PS5-BDJ-HEN-loader 2.1b,ps5-bdjb-modified-ISOs v1.17,Remote Lua Loader v4.2,PS5 Lua Loader v0.7,AutoBackPort v1.1,PS5 Payloads 1.8a MOD,VitaSDK paf-component,GoldHEN Cheats PS4 PKG (GoldHen Cheats PKG) v09/06/25,LifeLua 08-06-25,Emu4VitaPlus v0.37,chiaki-ng weekly-canary-release-0d26d1101e98e69adce100dd30e94eb7da8e1318,uLaunch 1.2.1,FortPatcher-NX v20250608-9dae3a4,Breeze beta99f,PKHeX 25.06.09,PPSSPP 1.19.1,shadPS4 Pre-release-shadPS4-2025-06-09-64bbede→→→この記事の続きを読む\nGameGaz Daily 2025.6.10 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025061043747/",
-          "publishedOn": "2025-06-10T01:11:25.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.6.10",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43744",
-          "author": "mamosuke",
-          "description": "マイクロソフトがASUSとのコラボレーションでXbox携帯ゲーム機ROG Xbox AllyとROG Xbox Ally Xを発表していました。→→→この記事の続きを読む\nこれが噂のXbox携帯機 ROG Xbox Ally発表 年内発売 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025060943744/",
-          "publishedOn": "2025-06-09T09:28:15.000Z",
-          "wordCount": null,
-          "title": "これが噂のXbox携帯機 ROG Xbox Ally発表 年内発売",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43737",
-          "author": "mamosuke",
-          "description": "LifeLua 08-06-2025,SwitchGDX v3.0.2,NX Venom 7.0.0,FortPatcher-NX v20250608-36053f1,Ultrahand Overlay 1.9.0,Tetris Overlay 0.3.4,SugarDS 0.9,Azahar 2122-rc1,ScePSX Beta 0.1.7.2,shadPS4 Pre-release-shadPS4-2025-06-08-ce42ecc,PCSX2 v2.3.410,vAmiga v4.2,Universal Media Server 14.13.0→→→この記事の続きを読む\nGameGaz Daily 2025.6.9 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025060943737/",
-          "publishedOn": "2025-06-08T21:22:25.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.6.9",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=43735",
-          "author": "mamosuke",
-          "description": "ps5_lua_menu v0.1,pyS4-Avatar-Maker 1.0.0,psfree-lapse,GoldHEN_Cheat_Repository,HexFlow-Launcher-Unofficial-Custom(HexLauncher Custom) v2.8.2(hotfix),sys-con 1.5.4,nx-ovlloader v1.1.0,CleanRip v2.3.1,akmenu-next v1.6.1,DSVita 0.7.0,Emu4VitaPlus v0.36,PCSX2 v2.3.407,Vita3K Build: 3799,SugarDS 0.8b,xenia-canary-releases 422517c→→→この記事の続きを読む\nGameGaz Daily 2025.6.8 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025060843735/",
-          "publishedOn": "2025-06-08T02:17:56.000Z",
-          "wordCount": 1706,
-          "title": "GameGaz Daily 2025.6.8",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/ps5_lua_menu.png"
         }
       ]
     },
@@ -9607,7 +9736,28 @@
       "title": "monome",
       "feedUrl": "https://monome.org/rss.xml",
       "siteUrl": "https://monome.org",
-      "articles": []
+      "articles": [
+        {
+          "id": "./news/250808.md",
+          "author": null,
+          "description": "08/08/25\narc running snows connected directly to an OP-XY, by jay gilligan.\naugust 9 at 1pm EDT orders will open for a new batch of norns. we're back to the original encoders, which have a fast action. the knobs sit just a bit higher. they feel great. otherwise everything is the same as before.\nat the same time we're making available a lot of b-stock devices. b-stock means something different for various companies, so we wrote up the specifics and included some photos. in short: they are near perfect, and they are 10% off.\nkeep in mind that if you're international and haven't ordered in awhile, we switched over to collecting all import tax and duty ahead of time. on delivery you won't have to deal with any of that complication.\nlastly, we're running very low on crow. we will likely not make more. or if we do, it'd be quite some time off. or maybe trent and i will follow through on a new design. but that would be even further off. time flies and crows fly too.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2025-08-09T16:11:11.000Z",
+          "wordCount": null,
+          "title": "monome",
+          "imageUrl": null
+        },
+        {
+          "id": "./news/250708.md",
+          "author": null,
+          "description": "07/08/25\nthis is ribbons, a folded euclidean arpeggiator. it sounds good most of the time! a little distraction while trying to wrap up the elusive iii v1.0 (we're close).\narc available again, july 9 1pm EDT. immediate shipping.",
+          "link": "https://monome.org/old.html",
+          "publishedOn": "2025-07-08T16:11:11.000Z",
+          "wordCount": null,
+          "title": "monome",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "n5g",
@@ -9720,26 +9870,6 @@
           "wordCount": null,
           "title": "Karte.171 僕は大人のふりをする",
           "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1750057067737_bokukoko_172.jpg"
-        },
-        {
-          "id": "317094",
-          "author": "チャンピオンクロス",
-          "description": "",
-          "link": "https://championcross.jp/episodes/4afea34d74fe8/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2025-06-10T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Karte.170 僕らは朝を迎える",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1749000456942_bokukoko_171.jpg"
-        },
-        {
-          "id": "315015",
-          "author": "チャンピオンクロス",
-          "description": "",
-          "link": "https://championcross.jp/episodes/41fe3521a7941/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2025-06-10T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Karte.170 僕らは朝を迎える",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1749000456942_bokukoko_171.jpg"
         }
       ]
     },
