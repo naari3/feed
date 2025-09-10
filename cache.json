@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565226387712",
+          "author": null,
+          "description": "abagames.github.io\nJavaScriptを知らなくて、自分の中ではファンタジーコンソールを最上位にしていました・・・。GBAはないですよねー。pyxelやPICO-8のゲームページは見ているだけでわくわくします。\ngithub.com\nnerdyteachers.com",
+          "link": "https://akkera102.hatenablog.com/entry/2025/09/11/052158",
+          "publishedOn": "2025-09-10T20:21:58.000Z",
+          "wordCount": 471,
+          "title": "ゲーム作りのススメ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565226387712/1757536340",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565226387712/1757536340"
+        },
+        {
           "id": "hatenablog://entry/6802888565220338561",
           "author": null,
           "description": "9/8 11:06追記：\ngccのバージョンを上げてkg2bmpを再コンパイル、VirusTotalで0件になりました。バージョン上げる前だと検出され、上げた後は検出なし（何それ）。とりあえずzipとgithubは修正済みです。うーん、まあこれで収束とします。\n9/7 18:07追記：\nコンパイルしたファイルに差し替えは簡単なので明日する予定です。（今日は外出中なので無理\n9/7 17:01追記：\ngba.zip、今スキャン（windows defender）すると問題なくなりました。なんでやねん！\n9/7 16:37追記：\ngba.zip、windows defenderで「Trojan:Script/Wacatac.B!ml」と検出されました。ただ解凍した後に再度スキャンすると検出しなくなります。謎です。VirusTotalでは2/66で「kg2bmp.exe」が該当していました。うーん、こういうの誤検出だと思いたいけどモンモンとするからやめてほしいんですよね・・・。ノートパソコン環境でコンパイルした「kg2bmp.exe」はVirusTotalで問題なかったので、明日そちらと差し控えるつもりです。\nhttps://www.virustotal.com/gui/file/ea23b774fd0476e50e6b0767a35fb4a7e050fcd5415c92533434bae08f6a10e9/relations",
