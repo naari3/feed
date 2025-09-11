@@ -74,6 +74,65 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-09-11">2025-09-11</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">自分のWebサイトをスケルトン仕様にする</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/09/11/114156" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>した
+www.3qe.us
+こいつは暖かみのある手打ちHTMLで作られており、AIはおろか補完といった冷たいテクノロジ〜を利用していない。なんか勘で書いて勘で動いている。
+スケルトンにしたい
+1990〜2000年代、あらゆるモノがスケルトンになっていたマジで謎の時代。
+www.nintendo.co.jp
+
+PlayStation 2 オーシャン・ブルー【メーカー生産終了】
+
+ソニー・インタラクティブエンタテインメント
+Amazon
+
+openmedia.jp
+自分はそういう時代にガキ時代を過ごしたので、今もスケルトンが大好きである。
+blog.3qe.us
+blog.3qe.us
+てかなんで今の製品はそんなにスケルトンにしなくなったのだろう。最近はリバイバル的にスケルトンなものも増えてる気がするけど。
+そういうわけで自分のサイトもスケルトンにしよう、という話に、異動した最初のオンライン飲み会でなってしまい、酔ったまま適当にHTMLとJSをいじっていたら完成した。
+自分自身のHTMLが透けて見える、というのが面白いと思う。あまりこういうサイトは見たことがない。
+スケルトンにする
+こういう感じの三層構造で実現する。トップレイヤーはこれまで通りのコンテンツを表示するが、背景はない。中間レイヤーは画面いっぱいに固定し、透明度や色、ブラー効果を与える。最下層にはこのページのHTMLそのものを表示する。
+AIに作成させたイメージ図です
+HTMLをレンダリングするのはおなじみのhighlight.jsを利用した。
+highlightjs.org
+そしてHTML末尾に以下のようなコードを差し込んだ。
+    document.addEventListener(&#x27;DOMContentLoaded&#x27;, () &#x3D;&gt; {
+      const html &#x3D; document.body.innerHTML;
+      const bg &#x3D; document.body.querySelector(&#x27;#background&#x27;);
+      bg.textContent &#x3D; html;
+      hljs.highlightAll();
+    });
+
+
+
+するとスケルトン仕様のページが作れた。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/1b2348e3e6b9511b86159adac11604a6c6c9066d/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31G6xAyBY3L._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-09-10">2025-09-10</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18467,7 +18526,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-09-11T02:27:09.744Z">2025-09-11T02:27:09.744Z</time>
+    <time id="build-timestamp" datetime="2025-09-11T03:13:21.890Z">2025-09-11T03:13:21.890Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

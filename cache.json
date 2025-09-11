@@ -7231,6 +7231,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565226608235",
+          "author": null,
+          "description": "した\nwww.3qe.us\nこいつは暖かみのある手打ちHTMLで作られており、AIはおろか補完といった冷たいテクノロジ〜を利用していない。なんか勘で書いて勘で動いている。\nスケルトンにしたい\n1990〜2000年代、あらゆるモノがスケルトンになっていたマジで謎の時代。\nwww.nintendo.co.jp\n\nPlayStation 2 オーシャン・ブルー【メーカー生産終了】\n\nソニー・インタラクティブエンタテインメント\nAmazon\n\nopenmedia.jp\n自分はそういう時代にガキ時代を過ごしたので、今もスケルトンが大好きである。\nblog.3qe.us\nblog.3qe.us\nてかなんで今の製品はそんなにスケルトンにしなくなったのだろう。最近はリバイバル的にスケルトンなものも増えてる気がするけど。\nそういうわけで自分のサイトもスケルトンにしよう、という話に、異動した最初のオンライン飲み会でなってしまい、酔ったまま適当にHTMLとJSをいじっていたら完成した。\n自分自身のHTMLが透けて見える、というのが面白いと思う。あまりこういうサイトは見たことがない。\nスケルトンにする\nこういう感じの三層構造で実現する。トップレイヤーはこれまで通りのコンテンツを表示するが、背景はない。中間レイヤーは画面いっぱいに固定し、透明度や色、ブラー効果を与える。最下層にはこのページのHTMLそのものを表示する。\nAIに作成させたイメージ図です\nHTMLをレンダリングするのはおなじみのhighlight.jsを利用した。\nhighlightjs.org\nそしてHTML末尾に以下のようなコードを差し込んだ。\n    document.addEventListener('DOMContentLoaded', () => {\n      const html = document.body.innerHTML;\n      const bg = document.body.querySelector('#background');\n      bg.textContent = html;\n      hljs.highlightAll();\n    });\n\n\n\nするとスケルトン仕様のページが作れた。",
+          "link": "https://blog.3qe.us/entry/2025/09/11/114156",
+          "publishedOn": "2025-09-11T02:41:56.000Z",
+          "wordCount": null,
+          "title": "自分のWebサイトをスケルトン仕様にする",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/1b2348e3e6b9511b86159adac11604a6c6c9066d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31G6xAyBY3L._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/1b2348e3e6b9511b86159adac11604a6c6c9066d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31G6xAyBY3L._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802888565212456657",
           "author": null,
           "description": "tl;dr\npcscdがうまくデバイスを掴めないとYubikeyをGPGが認識できない\nsystemctl status pcscdで様子を見よう\nlsusbとlsofでUSBデバイスを使用中のプロセスを特定せよ\nsnapなどで起動したyubioath-desktopがUSBデバイスを奪っていることがある\nあらすじ\ngpg --card-statusしてもYubikeyが認識されない。\n% gpg --card-status                                                                                                                                                          \ngpg: selecting card failed: そのようなデバイスはありません\ngpg: OpenPGPカードが利用できません: そのようなデバイスはありません\n\n\n\npcscd不調\nLinuxのサービスとしてはpcscdがこの手のスマートカードのハンドリングを担っている。systemctlを利用してスマートカードが認識されているか確認する:\n% systemctl status pcscd.service\n● pcscd.service - PC/SC Smart Card Daemon\n     Loaded: loaded (/usr/lib/systemd/system/pcscd.service; indirect; preset: disabled)\n     Active: active (running) since Tue 2025-09-02 20:31:30 JST; 18h ago\n Invocation: 85306…",
