@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-09-11T15:01:52.198Z</updated>
+    <updated>2025-09-11T16:01:40.429Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[音楽好きな人のための音楽生成AIサービス最強決定戦～Suno、Udio、Tunee、Stable Audio比較（インスト曲）]]></title>
+        <id>hatenablog://entry/6802888565227564898</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/09/12/002827"/>
+        <updated>2025-09-11T15:28:27.000Z</updated>
+        <summary type="html"><![CDATA[音楽生成AIサービスがいろいろ出てきたので、どれがいい感じの曲が生成できるか比較します。
+Suno、Udio、Tunee、Stable Audioの５つです。
+やりたいこととしては、ちゃんとこだわって動画のBGMを作りたいです。もっと細かく言うと
+インスト曲前提
+こだわってプロンプトでいろいろ書きたいし、「楽しい曲」とかじゃなくてちゃんと狙ったサウンドを出したい
+プリセットのジャンルから選ぶだけじゃなくてオリジナリティも出したい
+とはいえ細かいところは勝手にいい感じにやってほしい
+細かいところ触りだすときりがないので今回はほぼデフォルトの設定で一発出しで比較
+という感じ。
+たぶん普通の「明るくて派手なEDM」とかは当然できると思うので、今回はちょっとひねったプロンプト５つをサンプルとして用意しました。同じプロンプトを５つのサービスに投げて、それぞれできた曲を評価します。
+なおSuno、Udio、Tuneeに関しては１回で２曲できるので、独断で出来のいい方を選びました。
+※Udioの課金有無によるクオリティの差はないと思います、ただ一発で出力できる曲の長さが違います。無課金は30秒まで。続きを再生成（Extend）で30秒ずつ延長可能
+①三拍子のローファイヒップホップ。フルートのフレーズを使ったループ。ラップや歌を含まないインストゥルメンタル。
+※翻訳による差が生まれないように、プロンプトは英訳してから投げています。
+
+
+
+
+    
+参考音源
+※プロンプトの意味が分からないと聴き比べようがないと思うので、ベンチマークとして参考音源を貼っておきます。
+
+ローファイヒップホップはこういうの
+www.youtube.com
+Stable Audio
+
+Suno
+Listen on Suno
+Udio
+
+Tunee
+www.tunee.ai
+※Tuneeは埋め込みできないのでリンク…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[25/09/11 ツケと絶望]]></title>
         <id>https://note.com/banfuture9/n/n6f053bbb4e8a</id>
@@ -11249,17 +11291,6 @@ Q.何が?A.全てが
 続きをみる]]></summary>
         <author>
             <name>ユーロ/犬の鳴き真似bot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.6.14]]></title>
-        <id>https://gamegaz.com/?p=43776</id>
-        <link href="https://gamegaz.com/2025061443776/"/>
-        <updated>2025-06-14T03:10:07.000Z</updated>
-        <summary type="html"><![CDATA[UnlockSwitch,PS6でクラウドストリーミングはオプション,laps3c0re,CFW 4.92.2 Evilnat,PlayStation2-Basic-BootLoader(PS2BBL for OSDMenu),Switch 2国内販売台数は94万7931台,ldn_mitm v1.18.0,SugarDS 1.0,MeloNX 2.0.1,PCSX2 v2.3.419,Azahar 2122-rc2,Universal Media Server 14.13.0,xemu v0.8.72→→→この記事の続きを読む
-GameGaz Daily 2025.6.14 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
