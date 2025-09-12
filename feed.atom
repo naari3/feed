@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-09-12T11:01:37.926Z</updated>
+    <updated>2025-09-12T12:01:57.000Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[今週の話題：Claudeの劣化問題の修正、Claude Code API差し替え、sonoma-alpha]]></title>
+        <id>68c3f7f8b9fe9d0001f6b1cb</id>
+        <link href="https://blog.lai.so/news-20250912/"/>
+        <updated>2025-09-12T11:49:48.000Z</updated>
+        <summary type="html"><![CDATA[AnthropicがClaudeの性能劣化に対応
+Anthropicが公式に、8月からコミュニティで報告されていたClaude Sonnetの性能劣化を修正したと発表]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.9.12]]></title>
         <id>https://gamegaz.com/?p=44207</id>
@@ -11209,43 +11220,6 @@ https://www.youtube.com/watch?v=ArYog2T7fRM
 もちろん仕様は公開されてなくてGMでもXGでもない独自のエクスクルーシブ体系・音色リス…]]></summary>
         <author>
             <name>honeylab's blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Secretlint v10.0.0リリース: デフォルトでシークレットをマスク表示するように変更、Node.js 20+のサポート]]></title>
-        <id>https://efcl.info/2025/06/15/secretlint-v10/</id>
-        <link href="https://efcl.info/2025/06/15/secretlint-v10/"/>
-        <updated>2025-06-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[機密情報を検出するSecretlintのv10.0.0をリリースしました！
-Release v10.0.0 · secretlint/secretlint
-このバージョンでは、デフォルトでLintの結果のシークレットをマスクして表示するように変更されました。
-Secretlint v10.0.0の変更点
-主要な変更点は次の通りです。詳細はリリースノートを参照してください。
-Release v10.0.0 · secretlint/secretlint
-🛡️ シークレットのマスク表示がデフォルトに
-最も大きな変更は、見つけたシークレットをデフォルトでマスクして表示するようになったことです。
-変更前:
-
-✖ found credential: github_token
-  GITHUB_TOKEN=ghp_1234567890abcdef1234567890abcdef12345678
-
-
-変更後（v10.0.0）:
-
-✖ found credential: github_token
-  GITHUB_TOKEN=*******************************************
-
-
-実際のシークレット値を確認したい場合
-デバッグなどで実際のシークレット値を確認したい場合は、--no-maskSecrets オプションが使用できます。
-
-# デフォルト（マスク表示）
-$ secretlint "**/*"
-
-~/secretlint/secretlint/examples/cli/credential
-  1:0  error  [AWSSecretAccessKey] found AWS Secret Access Key: ****************************************  @secretlint/secretlint-…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

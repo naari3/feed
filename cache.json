@@ -7894,6 +7894,16 @@
       "siteUrl": "https://blog.lai.so/",
       "articles": [
         {
+          "id": "68c3f7f8b9fe9d0001f6b1cb",
+          "author": "laiso",
+          "description": "AnthropicがClaudeの性能劣化に対応\nAnthropicが公式に、8月からコミュニティで報告されていたClaude Sonnetの性能劣化を修正したと発表",
+          "link": "https://blog.lai.so/news-20250912/",
+          "publishedOn": "2025-09-12T11:49:48.000Z",
+          "wordCount": null,
+          "title": "今週の話題：Claudeの劣化問題の修正、Claude Code API差し替え、sonoma-alpha",
+          "imageUrl": null
+        },
+        {
           "id": "68bacb264cc5f60001b80f49",
           "author": "laiso",
           "description": "AIコーディングエージェントのTypeScriptコード編集能力を評価するための、手軽に再現可能なベンチマークプロジェク",
@@ -8166,16 +8176,6 @@
           "publishedOn": "2025-06-25T00:00:00.000Z",
           "wordCount": null,
           "title": "textlint v15.0.0をリリースしました。非推奨APIの削除とNode.js 20+サポート/MCPサーバの改善",
-          "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2025/06/15/secretlint-v10/",
-          "author": null,
-          "description": "機密情報を検出するSecretlintのv10.0.0をリリースしました！\nRelease v10.0.0 · secretlint/secretlint\nこのバージョンでは、デフォルトでLintの結果のシークレットをマスクして表示するように変更されました。\nSecretlint v10.0.0の変更点\n主要な変更点は次の通りです。詳細はリリースノートを参照してください。\nRelease v10.0.0 · secretlint/secretlint\n🛡️ シークレットのマスク表示がデフォルトに\n最も大きな変更は、見つけたシークレットをデフォルトでマスクして表示するようになったことです。\n変更前:\n\n✖ found credential: github_token\n  GITHUB_TOKEN=ghp_1234567890abcdef1234567890abcdef12345678\n\n\n変更後（v10.0.0）:\n\n✖ found credential: github_token\n  GITHUB_TOKEN=*******************************************\n\n\n実際のシークレット値を確認したい場合\nデバッグなどで実際のシークレット値を確認したい場合は、--no-maskSecrets オプションが使用できます。\n\n# デフォルト（マスク表示）\n$ secretlint \"**/*\"\n\n~/secretlint/secretlint/examples/cli/credential\n  1:0  error  [AWSSecretAccessKey] found AWS Secret Access Key: ****************************************  @secretlint/secretlint-…",
-          "link": "https://efcl.info/2025/06/15/secretlint-v10/",
-          "publishedOn": "2025-06-15T00:00:00.000Z",
-          "wordCount": null,
-          "title": "Secretlint v10.0.0リリース: デフォルトでシークレットをマスク表示するように変更、Node.js 20+のサポート",
           "imageUrl": null
         }
       ]
