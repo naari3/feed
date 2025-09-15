@@ -4065,21 +4065,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/1d6a42ed2b3dfdce5c77410e0b8240960608945d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmorishin127%2F20250616%2F20250616154354.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398478894952",
-          "author": null,
-          "description": "レシピ事業部バックエンド基盤グループの石川です。2025 年 6 月の頭にやった仕事について走り書きのようなメモを残しておきたくなったので、この記事を書いています。\nAnthropic 社が開発している Claude Code は、ターミナルの上で動作する LLM agent です: https://docs.anthropic.com/en/docs/claude-code/overview。\nClaude Code は Anthropic の API 経由で使う方法の他に、AWS や Google Cloud を経由して Claude のモデルを利用する道を用意してくれています: https://docs.anthropic.com/en/docs/claude-code/third-party-integrations。\nAWS を多用しているクックパッドにおいては、Amazon Bedrock の Claude モデル経由で Claude Code を利用できると管理上いくつかの点で利便性があると考えました。そこでこの記事では、利用に至るまでのセットアップやコスト分析の方法、そして実際に利用してみての制限について、簡単にまとめます。\n前提\nClaude Code のドキュメントを読むと、Bedrock 越しに利用する際は Claude Code 専用の AWS アカウントを新設して使うようにお勧めされています。コスト管理や権限管理を簡単にするためです。\nWe recommend creating a dedicated AWS account for Claude Code to simplify cost tracking and access control.\n\n\nhttps://docs.anthropic.com/en/docs/claude-code/am…",
-          "link": "https://techlife.cookpad.com/entry/claude-code-bedrock-2025",
-          "publishedOn": "2025-06-18T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Claude Code を Bedrock 越しに使う",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773"
         }
       ]
     },
@@ -6136,16 +6121,6 @@
           "wordCount": null,
           "title": "タロットカード占い始めました",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/198149020/rectangle_large_type_2_3449d6417199080a37995aafff9bc4b6.png?width=800"
-        },
-        {
-          "id": "https://note.com/euro3/n/nb180f14bf24b",
-          "author": null,
-          "description": "どうも、徒歩8分の所に引越して四畳半を手に入れたユーロです。\n今年に入って私がやってること。\n皆さん知ってますか？知ってますよね。\n続きをみる",
-          "link": "https://note.com/euro3/n/nb180f14bf24b",
-          "publishedOn": "2025-06-18T00:39:08.000Z",
-          "wordCount": 2539,
-          "title": "事情をよく知った反AI元音MAD作者兼シナリオライター見習いが生成AIに身を落とすまで",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/196785694/rectangle_large_type_2_f72490747bc1329467d786956e00058f.png?width=800"
         }
       ]
     },

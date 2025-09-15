@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-09-15T12:01:49.377Z</updated>
+    <updated>2025-09-15T13:09:03.726Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
@@ -11131,38 +11131,6 @@ Typ…]]></summary>
 続きをみる]]></summary>
         <author>
             <name>河内一馬</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Claude Code を Bedrock 越しに使う]]></title>
-        <id>hatenablog://entry/6802418398478894952</id>
-        <link href="https://techlife.cookpad.com/entry/claude-code-bedrock-2025"/>
-        <updated>2025-06-18T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[レシピ事業部バックエンド基盤グループの石川です。2025 年 6 月の頭にやった仕事について走り書きのようなメモを残しておきたくなったので、この記事を書いています。
-Anthropic 社が開発している Claude Code は、ターミナルの上で動作する LLM agent です: https://docs.anthropic.com/en/docs/claude-code/overview。
-Claude Code は Anthropic の API 経由で使う方法の他に、AWS や Google Cloud を経由して Claude のモデルを利用する道を用意してくれています: https://docs.anthropic.com/en/docs/claude-code/third-party-integrations。
-AWS を多用しているクックパッドにおいては、Amazon Bedrock の Claude モデル経由で Claude Code を利用できると管理上いくつかの点で利便性があると考えました。そこでこの記事では、利用に至るまでのセットアップやコスト分析の方法、そして実際に利用してみての制限について、簡単にまとめます。
-前提
-Claude Code のドキュメントを読むと、Bedrock 越しに利用する際は Claude Code 専用の AWS アカウントを新設して使うようにお勧めされています。コスト管理や権限管理を簡単にするためです。
-We recommend creating a dedicated AWS account for Claude Code to simplify cost tracking and access control.
-
-
-https://docs.anthropic.com/en/docs/claude-code/am…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[事情をよく知った反AI元音MAD作者兼シナリオライター見習いが生成AIに身を落とすまで]]></title>
-        <id>https://note.com/euro3/n/nb180f14bf24b</id>
-        <link href="https://note.com/euro3/n/nb180f14bf24b"/>
-        <updated>2025-06-18T00:39:08.000Z</updated>
-        <summary type="html"><![CDATA[どうも、徒歩8分の所に引越して四畳半を手に入れたユーロです。
-今年に入って私がやってること。
-皆さん知ってますか？知ってますよね。
-続きをみる]]></summary>
-        <author>
-            <name>ユーロ/犬の鳴き真似bot</name>
         </author>
     </entry>
     <entry>
