@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-09-15T17:01:44.841Z</updated>
+    <updated>2025-09-15T18:01:47.545Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[TARで使われるpax formatはパスのエンコーディングをUTF-8で規定していて偉い]]></title>
+        <id>hatenablog://entry/6802888565234753003</id>
+        <link href="https://blog.3qe.us/entry/pax-nominis"/>
+        <updated>2025-09-15T17:35:53.000Z</updated>
+        <summary type="html"><![CDATA[TARで利用できる最新のフォーマットであるpaxについて調べていたところ掲題のことが分かって面白かったので紹介します。調査不足な箇所があったら教えてください。
+tl;dr
+tarするときは-H paxしよう
+
+
+ファイル名の文字化けなどが回避されるぞ
+長いパスがぶっ壊れなくなるぞ
+現代においてデメリットはほぼない
+本編
+こんにちは、TARの話ばっかりしている人間です。
+blog.3qe.us
+blog.3qe.us
+paxとは
+Paxとは、tar(1)やpax(1)で扱うことができるファイルフォーマットで、POSIX(POSIX.1-2001, 2008)で規定されている。
+要するにtarの最新のフォーマットだと思ってもらったらいいです。
+ustarの時代
+皆さんtarが吐き出すフォーマットはtarフォーマットでしょ、と素朴に思ってるかもしれないが、あれって実は特にどこに規定されているわけでも規格が策定されているわけでもなくて、勘で運用されてる、という時代が実に1988年まで続いていた。実装ごとになんか微妙に振舞いが違うという時代で、アーカイブするとなんか解凍できないとか、内容が化けて滅茶苦茶になる、みたいなイメージはこのへんにできてそう。
+そんで1988年にPOSIX.1-1988によってTARフォーマットの規格化が実行され、大統一フォーマットが作られる。これがustarフォーマットというやつ。
+ustarは規格化されているので、POSIXに準拠したどのOSのどの実装でも相互運用ができるようになっている。
+ただし限られたコンピューティングリソースやASCIIを前提とした古い規格なので、ustarは現代で使うには制約が多いフォーマットになっている:
+パスを含めたファイル名が255バイトまで
+
+
+日本語を含む場合割とすぐ到達する
+ファイル名単体だとそんなに到達しないがパスを含…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[25/09/15 歩く歩く港区]]></title>
         <id>https://note.com/banfuture9/n/ndd95212adfce</id>
