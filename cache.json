@@ -3018,6 +3018,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565235251087",
+          "author": null,
+          "description": "電動のつまようじディスペンサーを買ったよ。\n動画の技術解説、９本目です。\nwww.youtube.com\nwww.nicovideo.jp\n今回のトピックはこんな感じ。\n爪楊枝ディスペンサーについて\n使用部品の紹介\nタミヤの棒、タミヤの板\nサーボモーター\nブレッドボード用電源モジュール\nサーボモーターを複数動かすやり方\n実際のプログラム\n爪楊枝ディスペンサーについて\n動画中に登場する爪楊枝ディスペンサーはこれです。\n\n\n自動つまようじ入れ 赤外線センサーデザイン ゼロタッチ 楊枝入れ 新しいスマートセンサー爪楊枝ケース 感応センサー スマートボックス 家庭、ホテル\n\nPepcyo\nAmazon\n\n早く受け取りたかったのでAmazonで買いましたが、Aliexpressで買った方が安いです。（値段は執筆時。以下も同様）\n\nSmart Sensor Toothpick Dispenser,Automatic Sensor Toothpicks DispenserTooth Pick Container Organizador Kitchen Accessories\nニコニコ動画の方で「障碍のある人用かな？」というコメントがありましたが、というよりも、コロナの時期に非接触で爪楊枝を取りだすための機器として大量生産されたっぽいです。\n動きがかわいいので気になった人はぜひ買ってみてください。\n注意点としては、付属する中国製の爪楊枝は少し細いため、日本の爪楊枝だと差し出された瞬間にポロッと落ちてしまうらしいです。試してないけどAmazonのレビューに書いてありました。\n使用部品の紹介\nタミヤの棒、タミヤの板\nアームに使っている板と棒ですが、正式名称をユニバーサルアーム、ユニバーサルプレートといいます。\n\n\nタミヤ(TAMIYA) 楽しい工作シリーズ No.143 ユニバーサルアームセッ…",
+          "link": "https://nomolk.hatenablog.com/entry/2025/09/16/123000",
+          "publishedOn": "2025-09-16T03:30:00.000Z",
+          "wordCount": null,
+          "title": "Arduinoでサーボモーターを複数同時に動かす、メカを雑に作るならタミヤのユニバーサルアーム＆ユニバーサルプレート【動画解説】",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/54e5bab8012d3c5da43fcdca5b6abcb829e22924/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250916%2F20250916021150.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/54e5bab8012d3c5da43fcdca5b6abcb829e22924/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250916%2F20250916021150.png"
+        },
+        {
           "id": "hatenablog://entry/6802888565227564898",
           "author": null,
           "description": "音楽生成AIサービスがいろいろ出てきたので、どれがいい感じの曲が生成できるか比較します。\nSuno、Udio、Tunee、Stable Audioの５つです。\nやりたいこととしては、ちゃんとこだわって動画のBGMを作りたいです。もっと細かく言うと\nインスト曲前提\nこだわってプロンプトでいろいろ書きたいし、「楽しい曲」とかじゃなくてちゃんと狙ったサウンドを出したい\nプリセットのジャンルから選ぶだけじゃなくてオリジナリティも出したい\nとはいえ細かいところは勝手にいい感じにやってほしい\n細かいところ触りだすときりがないので今回はほぼデフォルトの設定で一発出しで比較\nという感じ。\nたぶん普通の「明るくて派手なEDM」とかは当然できると思うので、今回はちょっとひねったプロンプト５つをサンプルとして用意しました。同じプロンプトを５つのサービスに投げて、それぞれできた曲を評価します。\nなおSuno、Udio、Tuneeに関しては１回で２曲できるので、独断で出来のいい方を選びました。\n※Udioの課金有無によるクオリティの差はないと思います、ただ一発で出力できる曲の長さが違います。無課金は30秒まで。続きを再生成（Extend）で30秒ずつ延長可能\n①三拍子のローファイヒップホップ。フルートのフレーズを使ったループ。ラップや歌を含まないインストゥルメンタル。\n※翻訳による差が生まれないように、プロンプトは英訳してから投げています。\n\n\n\n\n    \n参考音源\n※プロンプトの意味が分からないと聴き比べようがないと思うので、ベンチマークとして参考音源を貼っておきます。\n\nローファイヒップホップはこういうの\nwww.youtube.com\nStable Audio\n\nSuno\nListen on Suno\nUdio\n\nTunee\nwww.tunee.ai\n※Tuneeは埋め込みできないのでリンク…",
@@ -4356,6 +4371,16 @@
       "feedUrl": "https://note.com/banfuture9/rss",
       "siteUrl": "https://note.com/banfuture9",
       "articles": [
+        {
+          "id": "https://note.com/banfuture9/n/nf661b57938bc",
+          "author": null,
+          "description": "・「もにょる」という語彙ヤバすぎる。\n・マジでうるさい先輩が休み明け1日目からキレる材料を自ら発見して周りに撒き散らしながらキレてて苦笑い。2回くらい無視してしまった。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/nf661b57938bc",
+          "publishedOn": "2025-09-16T12:07:06.000Z",
+          "wordCount": null,
+          "title": "25/09/16 苦笑い",
+          "imageUrl": null
+        },
         {
           "id": "https://note.com/banfuture9/n/ndd95212adfce",
           "author": null,
