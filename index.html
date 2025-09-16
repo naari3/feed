@@ -78,6 +78,53 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">LinuxディストリビューションごとのTARがデフォルトで吐くフォーマットを調べた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/09/17/025825" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>先日、TARにはpaxフォーマットがあるからこれを使おうという記事を書いた:
+blog.3qe.us
+ところで、自分のマシンではGNU TARが入っていて、デフォルトでpaxを使う設定になっていた（これはコンパイルタイミングで設定される）。自分はopenSuSE Tumbleweedを利用しているが、他のディストリビューションではどうなっているのだろう？そもそも、GNU TARがどのフォーマットをデフォルトで吐くかは決まってないってみんな知ってた？
+The default format for GNU tar is defined at compilation time.
+GNU tar 1.35: 8 Controlling the Archive Format
+
+
+わざわざディストリビューションをインストールしなくても、実際に欲しいのは各ディストリビューションにおける(GNU) TARの実行結果である。そしてこれはdockerを実行すれば簡単に得られることに気付いた。
+そこで、以下のよく使われるディストリビューションについて、tar --helpを実行して得られたデフォルトフォーマットを抽出してみることにした:
+ubuntu
+debian
+alpine
+fedora
+rockylinux
+almalinux
+oraclelinux
+archlinux
+opensuse/leap
+amazonlinux
+手法
+以下のスクリプトを実行する。rockylinuxとoraclelinuxにはlatestが存在しなかったため執筆タイミングで最新のイメージを指定した。またデフォルトでtarが含まれないディストリビューションがあるため、この場合はインストールコマンドを実行させた:
+check-all.sh
+#!/bin/sh
+
+set -eux
+set -o pipefail
+
+LI…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565236959345/1758045505" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/banfuture9" target="_blank"
               rel="noopener">B</a></h3>
           <section class="articles-per-source">
@@ -18589,7 +18636,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-09-16T17:02:06.900Z">2025-09-16T17:02:06.900Z</time>
+    <time id="build-timestamp" datetime="2025-09-16T18:01:51.786Z">2025-09-16T18:01:51.786Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
