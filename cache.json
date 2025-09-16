@@ -4080,21 +4080,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773"
-        },
-        {
-          "id": "hatenablog://entry/6802418398476613438",
-          "author": null,
-          "description": "こんにちは。クックパッドでエンジニアをしている @morishin です。4年前に Bdash Server というデータ分析 SQL を共有・再利用するアプリケーションを作って紹介しましたが、今回はそれをさらに発展させて AI にデータ分析 SQL を書かせる仕組みを作ったのでその紹介をします。\n背景\nデータ分析において SQL を書くのは避けて通れない作業ですが、毎回ゼロから書くのは効率的ではありません。特に複雑な分析クエリや過去に似たような分析を行ったことがある場合、既存のクエリを参考にしたり再利用したりできれば大幅な時間短縮になります。\nそこで4年前に分析 SQL の共有・検索ができる Bdash Server というアプリケーションを開発しました。これにより過去に書かれた分析クエリを蓄積し、キーワード検索で参考になるクエリを見つけることができるようになりました。今でも20件/日ほどのデータ分析結果がアップロードされシェアされています。\ntechlife.cookpad.com\ngithub.com\nしかし、参考になるクエリを見つけても多くの場合は結局は手作業で SQL を書く必要があり、まだまだ効率化の余地がありました。そこで今回、AI に過去のクエリを参照させながら新しい分析 SQL を書いてもらう仕組みを作ってみました。\nAI に「新しく提供した○○という機能はどれぐらい使われてますか？」って聞いて SQL が出てきたらうれしくないですか？\n作ったもの\n今回作ったのは主に2つです。\n1. Bdash Server MCP サーバー\nMCP (Model Context Protocol) は AI エージェントが外部のデータソースにアクセスするための標準プロトコルです。Bdash Server に MCP サーバーを実装することで、AI が過去にアップロードさ…",
-          "link": "https://techlife.cookpad.com/entry/2025/06/19/111539",
-          "publishedOn": "2025-06-19T02:15:39.000Z",
-          "wordCount": 1211,
-          "title": "AI にデータ分析 SQL を書かせる仕組みを作りました - Bdash Server MCP の紹介",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/1d6a42ed2b3dfdce5c77410e0b8240960608945d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmorishin127%2F20250616%2F20250616154354.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/1d6a42ed2b3dfdce5c77410e0b8240960608945d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmorishin127%2F20250616%2F20250616154354.png"
         }
       ]
     },
