@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/naari3-feed/index.html</id>
     <title>naari3-feed</title>
-    <updated>2025-09-17T13:08:43.896Z</updated>
+    <updated>2025-09-17T14:01:57.994Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/naari3-feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/naari3-feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[sqldefで column / table / index のrenameができるようにしました]]></title>
+        <id>hatenablog://entry/6802888565238378693</id>
+        <link href="https://gfx.hatenablog.com/entry/2025/09/17/222334"/>
+        <updated>2025-09-17T13:23:34.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+sqldefは、宣言的スキーマ管理（declarative schema management）のためのツールですす。 atlas とか ridgepole とか、あるいは古くは GitDDL（あるいはGitDDLのバックエンドである SQL::Translator::Diff）のように、「理想的なDDL」を書いておくと、実際のDBのschemaと比較して「理想的なDDL」になるようにALTERなどを発行する、というツールです。
+これを使いたくて、実際に小さめのプロジェクトで試しに使ってみてなかなかよかったんですが、rename機能がなくて本格導入は無理だなーと思っていたのです。まあしかし、足りない機能は実装すればよいということで、このたび無事に column / table / index のrenameに対応させました（psqldef, mysqldef, mssqldef, sqlite3defの全て）。これで大きめのプロジェクトでも導入しやすくなるはず！入れたばかりなのでバグはあるかもしれません。問題があれば discussions に報告してもらえれば対応します。
+ついでなんですが、今見ているプロジェクトではPostgreSQLのGRANTでの権限管理を多用しているので、これも対応させました（これはpsqldefのみ）。
+v2.4.6 から3種のrename + grant (managed_roles) に対応しています。
+これでやっとalembic migrationから脱却できるぞ…！！]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[25/09/17]]></title>
         <id>https://note.com/banfuture9/n/n23a474d0ec66</id>

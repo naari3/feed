@@ -78,6 +78,31 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gfx.hatenablog.com/" target="_blank"
+              rel="noopener">Islands in the byte stream</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">sqldefで column / table / index のrenameができるようにしました</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gfx.hatenablog.com/entry/2025/09/17/222334" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+sqldefは、宣言的スキーマ管理（declarative schema management）のためのツールですす。 atlas とか ridgepole とか、あるいは古くは GitDDL（あるいはGitDDLのバックエンドである SQL::Translator::Diff）のように、「理想的なDDL」を書いておくと、実際のDBのschemaと比較して「理想的なDDL」になるようにALTERなどを発行する、というツールです。
+これを使いたくて、実際に小さめのプロジェクトで試しに使ってみてなかなかよかったんですが、rename機能がなくて本格導入は無理だなーと思っていたのです。まあしかし、足りない機能は実装すればよいということで、このたび無事に column / table / index のrenameに対応させました（psqldef, mysqldef, mssqldef, sqlite3defの全て）。これで大きめのプロジェクトでも導入しやすくなるはず！入れたばかりなのでバグはあるかもしれません。問題があれば discussions に報告してもらえれば対応します。
+ついでなんですが、今見ているプロジェクトではPostgreSQLのGRANTでの権限管理を多用しているので、これも対応させました（これはpsqldefのみ）。
+v2.4.6 から3種のrename + grant (managed_roles) に対応しています。
+これでやっとalembic migrationから脱却できるぞ…！！</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13208692334729887881/6802888565238378693/1758115414" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/banfuture9" target="_blank"
               rel="noopener">B</a></h3>
           <section class="articles-per-source">
@@ -18719,7 +18744,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-09-17T13:08:43.857Z">2025-09-17T13:08:43.857Z</time>
+    <time id="build-timestamp" datetime="2025-09-17T14:01:57.954Z">2025-09-17T14:01:57.954Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
