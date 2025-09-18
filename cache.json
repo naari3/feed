@@ -7801,21 +7801,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398487070492/1750778223"
-        },
-        {
-          "id": "hatenablog://entry/6802418398482152089",
-          "author": null,
-          "description": "じゃんけんという遊びがある。\nじゃんけんは、離散的に定義された三つの手（グー・チョキ・パー）の非推移的な優劣関係――グーはチョキに勝ち、チョキはパーに勝ち、パーはグーに勝つ――を用いて勝敗を決定する二人以上参加可能な競技的ゲームです。遊戯手順は、参加者が向き合って「じゃんけん」の掛け声とともに拳を振り下ろし、合図（「ぽん」「ほい」など）で選択した手を同時に提示し、その瞬間に優劣規則を適用して勝者・敗者・あいこ（同手による引き分け）を判定し、あいこの場合は同一手順を繰り返すだけという、実装・解析が容易で確率論やゲーム理論の導入例としても活用される簡潔なゲームです。\n-- ChatGPT o3\n\n\nこの知的なゲームには問題がある。「じゃん」「けん」「ぽん」のタイミングで各プレイヤーが同期しなければならないのだ。同期せずに手を出すことは重大なルール違反だ。\nScalaの並行プログラミング用のライブラリであるCats Effectにも同期を制御するためのプリミティブが沢山用意されている。特にその中でもCyclicBarrierはこの目的にぴったりだ。\nこの記事ではCyclicBarrierを利用して複数プレイヤーが同期してじゃんけんを行えるようにする処理を実装しよう。\n環境\nこの記事ではScala 3.7、Cats Effect 3.6.1を使っているものとする。ソースコードの冒頭には以下の記述があるものとする:\n//> using scala 3.7\n//> using deps \"org.typelevel::cats-effect:3.6.1\"\n\n\n\nまた、プログラムの実行にはScala CLIを利用する:\n% scala-cli code.scala.sc\n\n\n\nじゃんけんプレイヤーの挙動\nじゃんけんは以下のようなタイミングで実行されるものとする:\n(ランダムな時間待つ)\n…",
-          "link": "https://blog.3qe.us/entry/2025/06/21/033949",
-          "publishedOn": "2025-06-20T18:39:49.000Z",
-          "wordCount": null,
-          "title": "Cyclic Barrierで安全なじゃんけんを実装する feat. Scala + Cats Effect",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/0af58519abb578566ef11a20b3d2db11727f246d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250621%2F20250621032613.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0af58519abb578566ef11a20b3d2db11727f246d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20250621%2F20250621032613.png"
         }
       ]
     },
