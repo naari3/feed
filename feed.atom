@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-09-19T17:01:53.526Z</updated>
+    <updated>2025-09-19T18:01:37.973Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[サプライチェーン攻撃への防御策]]></title>
+        <id>https://blog.jxck.io/entries/2025-09-20/mitigate-risk-of-oss-dependencies.html</id>
+        <link href="https://blog.jxck.io/entries/2025-09-20/mitigate-risk-of-oss-dependencies.html"/>
+        <updated>2025-09-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[前回は、Nx の事例をベースに「パッケージを公開する側」の対策について解説した。今回は、「パッケージを使う側」、もっと言えば「OSS を使う上で開発者が考えるべきこと」について考察する。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[テフロンの空焚き]]></title>
         <id>hatenablog://entry/6802888565242660982</id>

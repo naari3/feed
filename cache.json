@@ -7880,6 +7880,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2025-09-20/mitigate-risk-of-oss-dependencies.html",
+          "author": null,
+          "description": "前回は、Nx の事例をベースに「パッケージを公開する側」の対策について解説した。今回は、「パッケージを使う側」、もっと言えば「OSS を使う上で開発者が考えるべきこと」について考察する。",
+          "link": "https://blog.jxck.io/entries/2025-09-20/mitigate-risk-of-oss-dependencies.html",
+          "publishedOn": "2025-09-20T00:00:00.000Z",
+          "wordCount": 317,
+          "title": "サプライチェーン攻撃への防御策",
+          "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
+        },
+        {
           "id": "https://blog.jxck.io/entries/2025-09-03/nx-incidents.html",
           "author": null,
           "description": "Nx リポジトリが攻撃を受け、広範囲にわたるインシデントが発生した。今回の事例は、GitHub Actions を中心に複数のステップが組み合わさった攻撃であり、過去に何度も発生してきた攻撃と本質的には変わらない。しかし、途中で AI が何度か登場するため「AI が書いたコードをマージしたから」などといった表面的な反応もあるが、実態はそこまで単純な話でもない。また、「自分のプロジェクトは Nx を使っていないから関係ない」とも言えない攻撃であるため、特にフロントエンドエンジニアは全員注意と確認が必要となる。この攻撃が何だったのか、そこから学べることは何なのか、解説する。",
