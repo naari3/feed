@@ -3617,21 +3617,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/3060d8698dbda3c34cbba3ff1a3073f2933cdc6f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20250629%2F20250629235143.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398482980655",
-          "author": null,
-          "description": "深層学習 生成AIの基礎\nCNNで卒論を書いてから8年（隙自語）\nアップデートには最適かもしれない\n注意機構を考えたやつかなり頭いい\n言語も画像もやったらできましたみたいな\nアプデポイント3選\n1. 確率分布が主役に躍り出る\n2. 学習が職人芸に逆戻りしてない？\n3. あれもこれもニューラルネット\nまとめ：よかったね\n深層学習 生成AIの基礎\n\n深層学習 生成AIの基礎\n\n作者:岡留 剛\n共立出版\nAmazon\n中野中央図書館（現在大規模工事中）で見かけて借りたらなかなか良かった。\nCNNで卒論を書いてから8年（隙自語）\n個人的には、ニューラルネットの認識を平成から令和にアップデートするのに非常に手頃な本だった。\n補足：オライリーの『生成Deep Learning』シリーズは、2020年に出版された第1版では拡散モデルには一切言及せずGANを最新の画像生成モデルとして扱っていたため、分野に詳しくない初心者が「今流行りの生成AIを勉強してみよう」などと意気込んで買うと現行ではない技術を学んでしまうというかなりのトラップになってしまっていた。これはオライリーが悪いわけではなく、Stable Diffusionが発表されたのは2022年であるため、2020年の出版当時はまだあのGANが最新の画像生成モデルだったのだ。なお、その後2024年に出版された第2版では内容が大幅にアップデートされ、無事に拡散モデルが記載されると共に発展模様を追う年表も追加された。\n個人的な感慨も込みでバイアスドな私見を書けば、深層学習の花形がCNNから生成モデルに移行したことには隔世の感を禁じ得ない。\nアップデートには最適かもしれない\nというわけで、令和の覇権を握る生成モデルの中でも特にインパクトの大きい言語（トランスフォーマー）と画像（拡散モデル）の二つについてコンパクトにまとまっているのがこの本だ。\n…",
-          "link": "https://saize-lw.hatenablog.com/entry/2025/06/22/200054",
-          "publishedOn": "2025-06-22T11:00:54.000Z",
-          "wordCount": null,
-          "title": "25/6/22 岡留剛『深層学習 生成AIの基礎』感想　ニューラルネットも平成から令和へ！",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/21f7e72a9c45d5f63b93a4d7ae22f1a8a7df47a8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41b6YJf6BxL._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/21f7e72a9c45d5f63b93a4d7ae22f1a8a7df47a8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41b6YJf6BxL._SL500_.jpg"
         }
       ]
     },
@@ -8637,6 +8622,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44247",
+          "author": "mamosuke",
+          "description": "ps4-hen pre-release-main-170,PSP-Bluetooth-Dongle,raylib4PlayStation2,Emu4VitaPlus v0.44,Switchfin pacbrew,NetPass v1.1.1,TWiLightMenu++ v27.17.4,NESFab 1.8,shadPS4 Pre-release-shadPS4-2025-09-19-fa489c0,PCSX2 v2.5.165→→→この記事の続きを読む\nGameGaz Daily 2025.9.20 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025092044247/",
+          "publishedOn": "2025-09-19T23:39:51.000Z",
+          "wordCount": 1685,
+          "title": "GameGaz Daily 2025.9.20",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=44244",
           "author": "mamosuke",
