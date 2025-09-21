@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-09-21T00:03:29.868Z</updated>
+    <updated>2025-09-21T01:29:30.807Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[将来の移植候補？]]></title>
+        <id>hatenablog://entry/6802888565245451248</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/09/21/101306"/>
+        <updated>2025-09-21T01:13:06.000Z</updated>
+        <summary type="html"><![CDATA[今のうちに書いとかないと忘れる案件。やる気があれば手が届きそうだったり、多少の見栄もあるので真に受けないでください（＾＾；。
+・PC98 ワイルドフォース
+・PC98 エックスガール
+・PC98 Piaキャロット
+・PC98 舞夢
+・PC98 Xenon
+・PC98 Desire
+・PC98 EVE Burst Error
+・Win フォークソング
+・Win アンビヴァレンツ（sys3.5）
+・Win クレシェンド(xkazoku)
+・Win 家族計画(xkazoku)
+・Win Viper CTR
+・saturn だいなあいらん
+・saturn ゆみみみっくす
+ゆみみに関してはこちらが有用なんですけどlinux用なんですよね。コンパイルが面倒になって放置中。
+https://segaxtreme.net/threads/yumimi-mix-remix-translation.25243/
+https://github.com/ValleyBell/PC98VNResearch/tree/master/mime
+ソースコード。
+https://psppcg.wiki.fc2.com/wiki/xkazoku%20for%20PSP%20Lite
+https://github.com/nonakap/xkazoku
+エルフ系エンジンをSDL化したAI5-SDL2というすごいプロジェクトはあります。がっつり手を出したらYU-NO,臭作まで手が届くと思いますけど・・・たぶん1, 2年単位の作業になるからやれないですねー。。
+https://github.com/nunuhara/ai5-sdl2]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.9.21]]></title>
         <id>https://gamegaz.com/?p=44250</id>
