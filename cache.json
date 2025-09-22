@@ -8401,16 +8401,6 @@
           "wordCount": null,
           "title": "AI Agentのコマンド実行にTouch IDを使った「人間の確認」を挟むCLIツール confirm-pam を作った",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2025/06/25/textlint-v15/",
-          "author": null,
-          "description": "textlint v15.0.0をリリースしました！\nRelease v15.0.0 · textlint/textlint\ntextlint v15.0.0 | textlint\ntextlint v15は、v12.3.0から非推奨としてマークされていた古いAPIをすべて削除するメジャーリリースです。\ntextlint v15.0.0の変更点\n主要な変更点は次の通りです。\nBreaking Changes\nNode.js 20+のサポート（Node.js 16,18はサポート終了\nTextLintEngineを削除 → createLinter()\nTextFixEngineを削除 → createLinter()\nTextLintCoreを削除 → createLinter()または@textlint/kernel\ntextlint（シングルトンインスタンス）を削除 → createLinter()\ncreateFormatterを削除 → loadFormatter()を\nNode.js 20以上が必要\ntextlint v15では、Node.js 20.0.0以上が必要になりました。\nNodejs 18はEOL(End of Life)となっているため、Node.js 20以上を使用する必要があります。\nhttps://nodejs.org/en/about/previous-releases\n非推奨APIの削除\ntextlintパッケージをNode.jsモジュールとして利用する場合のみ影響を受ける変更です。\ntextlint v15では、非推奨となっていた次のAPIが完全に削除されました。\n移行ガイドは次のページに用意しています。\nMigration Guide to textlint v15 | textlint\nTextLintEngine → createL…",
-          "link": "https://efcl.info/2025/06/25/textlint-v15/",
-          "publishedOn": "2025-06-25T00:00:00.000Z",
-          "wordCount": null,
-          "title": "textlint v15.0.0をリリースしました。非推奨APIの削除とNode.js 20+サポート/MCPサーバの改善",
-          "imageUrl": null
         }
       ]
     },
