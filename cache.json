@@ -7952,21 +7952,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398488415740/1750870571"
-        },
-        {
-          "id": "hatenablog://entry/6802418398487070492",
-          "author": null,
-          "description": "Scala CLI 1.8.1がしばらく前にリリースされていた。このリリースの主な変更は、using fileディレクティブで URL を展開する機能が利用できるようになったことだ。\ngithub.com\nこの記事ではこの機能について紹介する。\nScala CLI とは\nScala CLI とはVirtusLab社によってメンテナンスされている、事実上標準の Scala 用 コマンドラインツールだ。\nscala-cli.virtuslab.org\nこの記事でも何度も取り上げており、Scala によるスクリプティングやパッケージ作成などをスムーズに行うことができる非常に便利なツールだ。\nblog.3qe.us\nScala CLIでは、.scala.scという拡張子でScalaコードを書くと、それを上から下へとそのまま実行してくれる:\n// code.scala.sc\nprintln(\"Hello, Scala CLI!\")\n\n\n\n\n\n% scala-cli code.scala.sc\n(ファイルをそのまま渡すと scala-cli run ファイル したとみなされる)\nHello, Scala CLI!\n%\n\n\n\nディレクティブとは\n単一のScalaコードでできることは限られている。普通はビルドツールの助けを借りて、複数ファイルの結合や依存するライブラリの用意、コンパイラのバージョンの固定、コンパイルオプションの設定をやってもらっているのに、それができないからだ。\nScala CLI では、こうした「スクリプティングのために、ただコンパイルする以外にも必要なこと」をやってくれるための仕組みが用意されている。それがディレクティブ(directive)だ。\nディレクティブはファイルの先頭に//>という特殊なコメントの形式で書き込む:\n//> using scala 3.7.1\n/…",
-          "link": "https://blog.3qe.us/entry/2025/06/25/001703",
-          "publishedOn": "2025-06-24T15:17:03.000Z",
-          "wordCount": null,
-          "title": "Deno みたいに Scala を書く: Scala CLI 1.8.1 の using file ディレクティブの新機能",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398487070492/1750778223",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398487070492/1750778223"
         }
       ]
     },

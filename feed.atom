@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-09-22T03:17:18.816Z</updated>
+    <updated>2025-09-22T04:01:58.824Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11970,44 +11970,6 @@ GameGaz Daily 2025.6.25 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>ユーロ/犬の鳴き真似bot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Deno みたいに Scala を書く: Scala CLI 1.8.1 の using file ディレクティブの新機能]]></title>
-        <id>hatenablog://entry/6802418398487070492</id>
-        <link href="https://blog.3qe.us/entry/2025/06/25/001703"/>
-        <updated>2025-06-24T15:17:03.000Z</updated>
-        <summary type="html"><![CDATA[Scala CLI 1.8.1がしばらく前にリリースされていた。このリリースの主な変更は、using fileディレクティブで URL を展開する機能が利用できるようになったことだ。
-github.com
-この記事ではこの機能について紹介する。
-Scala CLI とは
-Scala CLI とはVirtusLab社によってメンテナンスされている、事実上標準の Scala 用 コマンドラインツールだ。
-scala-cli.virtuslab.org
-この記事でも何度も取り上げており、Scala によるスクリプティングやパッケージ作成などをスムーズに行うことができる非常に便利なツールだ。
-blog.3qe.us
-Scala CLIでは、.scala.scという拡張子でScalaコードを書くと、それを上から下へとそのまま実行してくれる:
-// code.scala.sc
-println("Hello, Scala CLI!")
-
-
-
-
-
-% scala-cli code.scala.sc
-(ファイルをそのまま渡すと scala-cli run ファイル したとみなされる)
-Hello, Scala CLI!
-%
-
-
-
-ディレクティブとは
-単一のScalaコードでできることは限られている。普通はビルドツールの助けを借りて、複数ファイルの結合や依存するライブラリの用意、コンパイラのバージョンの固定、コンパイルオプションの設定をやってもらっているのに、それができないからだ。
-Scala CLI では、こうした「スクリプティングのために、ただコンパイルする以外にも必要なこと」をやってくれるための仕組みが用意されている。それがディレクティブ(directive)だ。
-ディレクティブはファイルの先頭に//>という特殊なコメントの形式で書き込む:
-//> using scala 3.7.1
-/…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
