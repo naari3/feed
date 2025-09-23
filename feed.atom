@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-09-23T04:01:36.120Z</updated>
+    <updated>2025-09-23T05:01:34.114Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[終末修正]]></title>
+        <id>hatenablog://entry/6802888565249948457</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/09/23/132509"/>
+        <updated>2025-09-23T04:25:09.000Z</updated>
+        <summary type="html"><![CDATA[3日後の26日にアプデ予定でいます。
+- 通常文字（テキスト文字）の色設定を追加
+- メッセージスキップのエフェクト不具合を修正
+- 水曜日のラジオノイズ時、ロードするとノイズが持続している不具合を修正]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.9.23]]></title>
         <id>https://gamegaz.com/?p=44256</id>
@@ -11814,37 +11827,6 @@ www.nicovideo.jp
 GameGaz Daily 2025.6.26 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gitのタグをこっそりずらす]]></title>
-        <id>hatenablog://entry/6802418398488415740</id>
-        <link href="https://blog.3qe.us/entry/2025/06/26/015611"/>
-        <updated>2025-06-25T16:56:11.000Z</updated>
-        <summary type="html"><![CDATA[GitHubとかで、タグがつけられたら特定のアクションを実行する、といったワークフローを仕込んでいるときに、うまく動かなかったので再度走らせたい、みたいなことがあって(やんごとない理由でworkflow_dispatchはない)、なんとかしてタグをつけなおしたメモ。
-まずリモートにあるタグを破壊する。
-% git push --delete vx.y.z
-
-
-
-次にローカルにあるタグも破壊する。
-% git tag --delete vx.y.z
-
-
-
-タグをつけなおす。
-% git tag vx.y.z
-
-
-
-タグをpushする。
-% git push --tags
-
-
-
-これで手元とリモート上のタグが移動する。]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>

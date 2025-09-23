@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565249948457",
+          "author": null,
+          "description": "3日後の26日にアプデ予定でいます。\n- 通常文字（テキスト文字）の色設定を追加\n- メッセージスキップのエフェクト不具合を修正\n- 水曜日のラジオノイズ時、ロードするとノイズが持続している不具合を修正",
+          "link": "https://akkera102.hatenablog.com/entry/2025/09/23/132509",
+          "publishedOn": "2025-09-23T04:25:09.000Z",
+          "wordCount": 474,
+          "title": "終末修正",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/493940c6b8e7955c0f047b13c44175061047cdcc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250923%2F20250923132411.gif",
+            "type": "image/gif",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/493940c6b8e7955c0f047b13c44175061047cdcc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250923%2F20250923132411.gif"
+        },
+        {
           "id": "hatenablog://entry/6802888565245451248",
           "author": null,
           "description": "今のうちに書いとかないと忘れる案件。やる気があれば手が届きそうだったり、多少の見栄もあるので真に受けないでください（＾＾；。\n・PC98 ワイルドフォース\n・PC98 エックスガール\n・PC98 Piaキャロット\n・PC98 舞夢\n・PC98 Xenon\n・PC98 Desire\n・PC98 EVE Burst Error\n・Win フォークソング\n・Win アンビヴァレンツ（sys3.5）\n・Win クレシェンド(xkazoku)\n・Win 家族計画(xkazoku)\n・Win Viper CTR\n・saturn だいなあいらん\n・saturn ゆみみみっくす\nゆみみに関してはこちらが有用なんですけどlinux用なんですよね。コンパイルが面倒になって放置中。\nhttps://segaxtreme.net/threads/yumimi-mix-remix-translation.25243/\nhttps://github.com/ValleyBell/PC98VNResearch/tree/master/mime\nソースコード。\nhttps://psppcg.wiki.fc2.com/wiki/xkazoku%20for%20PSP%20Lite\nhttps://github.com/nonakap/xkazoku\nエルフ系エンジンをSDL化したAI5-SDL2というすごいプロジェクトはあります。がっつり手を出したらYU-NO,臭作まで手が届くと思いますけど・・・たぶん1, 2年単位の作業になるからやれないですねー。。\nhttps://github.com/nunuhara/ai5-sdl2",
@@ -7896,21 +7911,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398497449220/1751443400"
-        },
-        {
-          "id": "hatenablog://entry/6802418398488415740",
-          "author": null,
-          "description": "GitHubとかで、タグがつけられたら特定のアクションを実行する、といったワークフローを仕込んでいるときに、うまく動かなかったので再度走らせたい、みたいなことがあって(やんごとない理由でworkflow_dispatchはない)、なんとかしてタグをつけなおしたメモ。\nまずリモートにあるタグを破壊する。\n% git push --delete vx.y.z\n\n\n\n次にローカルにあるタグも破壊する。\n% git tag --delete vx.y.z\n\n\n\nタグをつけなおす。\n% git tag vx.y.z\n\n\n\nタグをpushする。\n% git push --tags\n\n\n\nこれで手元とリモート上のタグが移動する。",
-          "link": "https://blog.3qe.us/entry/2025/06/26/015611",
-          "publishedOn": "2025-06-25T16:56:11.000Z",
-          "wordCount": null,
-          "title": "Gitのタグをこっそりずらす",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398488415740/1750870571",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398488415740/1750870571"
         }
       ]
     },
