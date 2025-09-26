@@ -78,6 +78,79 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">不完全パッチ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/09/26/181715" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>「果てしなく青い、この空の下で...。」メモリアル版（v1.03）windows11の不完全パッチです。フォントの不具合は微妙に解消されてなく改ページの位置が微妙、選択肢がウィンドウ外になったりします。遊べる程度です。
+
+APIの戻り値を変更してるだけです。
+BOOL GetTextMetrics(
+  [in]  HDC          hdc,
+  [out] LPTEXTMETRIC lptm
+);
+LPTEXTMETRICのtmAveCharWidthを×２して、tmMaxCharWidthに値を入れています（適当処理。
+参考ページ：
+https://learn.microsoft.com/ja-jp/windows/win32/api/wingdi/nf-wingdi-gettextmetrics
+https://www.tokovalue.jp/GetTextMetrics_U.htm
+※
+書き換え前：
+411A18 FF1524304300 CALL DWORD PTR DS:[433024] GDI32.GetTextMetricsA
+
+書き換え後：
+411A18 E9C30F020090 JMP 004329E0
+
+4329E0 FF1524304300 CALL DWORD PTR DS:[433024] GDI32.GetTextMetricsA
+4329E6 8B4D80       MOV ECX, DWORD PTR SS:[EBP-80]
+4329E9 03C9         ADD ECX,ECX
+4329EB 894D84       MOV DWORD PTR SS:[EBP-7C], ECX
+4329EE E92AF0FDFF   JMP 411A1D
+4329F3 90           NOP
+
+00011A18: FF E9
+00011A19: 15 C3
+00011A1A: 24 0F
+00011A1B: 30 02
+00011A1C: 43 00
+00011A1D: 00 90
+000329E0: 00 FF
+000329E1: 00 15
+000329E2: 00 24
+000329E3: 00 30
+000329E4: 00 43
+000329E6: 00 8B
+000329E7: 00 4D
+000329E8: 00 80
+000329E9: 00 03
+000329EA: 00 C9
+000329EB: 00 89
+000329EC: 00 4D
+000329ED: 00 84
+000329EE: 00 E9
+000329EF: 00 2A
+000329F0: 00 F0
+000329F1: 00 FD
+000329F2: 00 FF
+000329F3: 00 90
+
+※
+おまけ　起動時のゲームCDのエラーメッセージボックス非表示
+0000C605: 75 EB</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/29186212262e5919f3813890b2c5dc59852f1b37/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250926%2F20250926181854.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://cild.hatenablog.com/" target="_blank"
               rel="noopener">ちるろぐ</a></h3>
           <section class="articles-per-source">
@@ -17465,31 +17538,6 @@ https://dp20013827.lolipop.jp/20thAnniversary0503FTPok.html
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2025-06-28">2025-06-28</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2025.6.29</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025062943864/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PS4HEN(ps4-hen-vtx) HEN-1.0388-pre-release-4,ps4-hen pre-release-main-71,ps4-hen-plugins Build b27,ps5-ezremote-dpi 1.04,PSX XMB Manager,DESR-Tools,linkdev v0.4.2,offact (PS5 offline account activation) v0.4.2,ARK-4 rev183,Emu4VitaPlus v0.40,duckstation v0.1-9114,migcheck v0.4,PCSX2 v2.3.456,xemu v0.8.85,Ymir 0.1.5→→→この記事の続きを読む
-GameGaz Daily 2025.6.29 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-03-14">2025-03-14</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19598,7 +19646,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-09-26T09:02:06.272Z">2025-09-26T09:02:06.272Z</time>
+    <time id="build-timestamp" datetime="2025-09-26T10:01:36.325Z">2025-09-26T10:01:36.325Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

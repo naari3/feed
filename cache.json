@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565255621202",
+          "author": null,
+          "description": "「果てしなく青い、この空の下で...。」メモリアル版（v1.03）windows11の不完全パッチです。フォントの不具合は微妙に解消されてなく改ページの位置が微妙、選択肢がウィンドウ外になったりします。遊べる程度です。\n\nAPIの戻り値を変更してるだけです。\nBOOL GetTextMetrics(\n  [in]  HDC          hdc,\n  [out] LPTEXTMETRIC lptm\n);\nLPTEXTMETRICのtmAveCharWidthを×２して、tmMaxCharWidthに値を入れています（適当処理。\n参考ページ：\nhttps://learn.microsoft.com/ja-jp/windows/win32/api/wingdi/nf-wingdi-gettextmetrics\nhttps://www.tokovalue.jp/GetTextMetrics_U.htm\n※\n書き換え前：\n411A18 FF1524304300 CALL DWORD PTR DS:[433024] GDI32.GetTextMetricsA\n\n書き換え後：\n411A18 E9C30F020090 JMP 004329E0\n\n4329E0 FF1524304300 CALL DWORD PTR DS:[433024] GDI32.GetTextMetricsA\n4329E6 8B4D80       MOV ECX, DWORD PTR SS:[EBP-80]\n4329E9 03C9         ADD ECX,ECX\n4329EB 894D84       MOV DWORD PTR SS:[EBP-7C], ECX\n4329EE E92AF0FDFF   JMP 411A1D\n4329F3 90           NOP\n\n00011A18: FF E9\n00011A19: 15 C3\n00011A1A: 24 0F\n00011A1B: 30 02\n00011A1C: 43 00\n00011A1D: 00 90\n000329E0: 00 FF\n000329E1: 00 15\n000329E2: 00 24\n000329E3: 00 30\n000329E4: 00 43\n000329E6: 00 8B\n000329E7: 00 4D\n000329E8: 00 80\n000329E9: 00 03\n000329EA: 00 C9\n000329EB: 00 89\n000329EC: 00 4D\n000329ED: 00 84\n000329EE: 00 E9\n000329EF: 00 2A\n000329F0: 00 F0\n000329F1: 00 FD\n000329F2: 00 FF\n000329F3: 00 90\n\n※\nおまけ　起動時のゲームCDのエラーメッセージボックス非表示\n0000C605: 75 EB",
+          "link": "https://akkera102.hatenablog.com/entry/2025/09/26/181715",
+          "publishedOn": "2025-09-26T09:17:15.000Z",
+          "wordCount": 609,
+          "title": "不完全パッチ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/29186212262e5919f3813890b2c5dc59852f1b37/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250926%2F20250926181854.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/29186212262e5919f3813890b2c5dc59852f1b37/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250926%2F20250926181854.png"
+        },
+        {
           "id": "hatenablog://entry/6802888565253549014",
           "author": null,
           "description": "MC68k+FM音源を搭載した究極の16bitゲーム機VGS-X #設計思想 - Qiita\nエミュレータでかつ、自分好みの仕様でゲーム機を作ってしまうお話です。既存のオープンソースを組み合わせて作るとか、どんだけスキルレベル高いんですか！って拍手と称賛ばかりです。整数７１さんの動画でもそうですけど、YM2151Bなるこの世に存在しないものを作るってロマンありまくりですねー。",
@@ -9916,16 +9931,6 @@
           "wordCount": 1779,
           "title": "GameGaz Daily 2025.6.30",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=43864",
-          "author": "mamosuke",
-          "description": "PS4HEN(ps4-hen-vtx) HEN-1.0388-pre-release-4,ps4-hen pre-release-main-71,ps4-hen-plugins Build b27,ps5-ezremote-dpi 1.04,PSX XMB Manager,DESR-Tools,linkdev v0.4.2,offact (PS5 offline account activation) v0.4.2,ARK-4 rev183,Emu4VitaPlus v0.40,duckstation v0.1-9114,migcheck v0.4,PCSX2 v2.3.456,xemu v0.8.85,Ymir 0.1.5→→→この記事の続きを読む\nGameGaz Daily 2025.6.29 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025062943864/",
-          "publishedOn": "2025-06-28T21:51:03.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.6.29",
-          "imageUrl": null
         }
       ]
     },
