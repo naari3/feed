@@ -78,6 +78,45 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gfx.hatenablog.com/" target="_blank"
+              rel="noopener">Islands in the byte stream</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Pythonのhttpx (async) はサービスに支障が出るほど遅い、ただしコネクションプールを切ると速くなるかも</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gfx.hatenablog.com/entry/2025/09/27/134421" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>httpxはものすごく遅いから使うべきでないかもしれない…という話を書こうと思ったんですが、検証してみたら、確かにaiohttpよりは2倍以上遅いんですが、設定次第で多少はマシかもしれない、という結論です。
+前提として、async modeです。いまどきのAPI serverは全部asyncかなとは思います。今回はsync modeには興味がないので検証してないですが、sync modeではまったく違う結果かもしれません。
+あと文脈としては httpx を推しているブログを読んで、いや httpx はパフォーマンスに問題があるんだよな、ということを周知したかったというのもあります。
+note.com
+ことの起こりは Python の openai library が 0.x から 1.x になったときにものすごくパフォーマンスが劣化したという問題があったことです。
+github.com
+いま私がみているサービスでも openai library のバージョンアップを試みたのですが、明らかにサービスのパフォーマンスが劣化して、ユーザー体験に影響が出るレベルでした。これではopenai libraryのアップグレードができません。
+上記のissueによると、このパフォーマンス劣化の原因は、バックエンドとして使っているHTTP clientをaiohttpからhttpxに変えたからだと推測されています*1。
+そこで、そのことを確認するために、 httpx vs aiohttp のベンチマークスクリプトを書いてみました *2。
+python: 3.13
+httpx: 0.28.1
+aiohttp: 3.12.5
+github.com
+細かい数字はさておくとして、たしかに parallell requests *3で、デフォルトの設定（connection poolingあり）だと、aiohttpはhttpxより100倍速い（11086% faster）ということでした。これではサービスのユーザー体験に影響を及ぼすのも頷けます。
+ところが、connection poolingを切る（keep-aliveを無効化する）と、様子が変わります。aiohttpは確かに少し遅くなりますが、httpxはconnection poolingをしないほうが速くなるのです。aiohttpとの差もかなり縮まって、せいぜい aiohttp が2倍程度速いだけです。それでもaiohttpを選択するには十分な理由にはなりますが、サービスのユーザー体験が明らかに劣化する、というレベルではありません。
+おそらくこれは httpx のバグですね。 httpx vs aiohttp の速度を単純に比較するとたしかにaiohttpのほうがどんな状況でも2倍以上高速なので、速度という点からはaiohttpを選ぶべきです。しかしもしhttpxを使う場合（あるいは何かのライブラリのバックエンドとして使われていて、httpxを使わざるを得ないとき）は、httpxのconnection poolingを切ると少しマシになるかもしれません。
+ちなみに aiohttp の connection pooling も扱いが難しくて安定した運用が難しいため、私は aiohttp.TCPConnector(force_close&#x3D;True) で切って運用しています。
+*1:いまはaiohttpをバックエンドとして選べるようになりました。選択式はメンテ工数が格段に上がるので、いっそaiohttp一本に切り替えたらよかったのになあと思いますが、まあそれはopenai library開発チームの判断なのでここでは深く追求しません
+*2:実際に書いたのは coding agent ですが。
+*3:async API serverではparallel requestsが普通と考えられるので、parallel requestsの速度だけみます。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13208692334729887881/6802888565257090626/1758948704" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -19615,7 +19654,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-09-27T04:01:36.597Z">2025-09-27T04:01:36.597Z</time>
+    <time id="build-timestamp" datetime="2025-09-27T05:01:57.342Z">2025-09-27T05:01:57.342Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

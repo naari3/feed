@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-09-27T04:01:36.638Z</updated>
+    <updated>2025-09-27T05:01:57.402Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Pythonのhttpx (async) はサービスに支障が出るほど遅い、ただしコネクションプールを切ると速くなるかも]]></title>
+        <id>hatenablog://entry/6802888565257090626</id>
+        <link href="https://gfx.hatenablog.com/entry/2025/09/27/134421"/>
+        <updated>2025-09-27T04:44:21.000Z</updated>
+        <summary type="html"><![CDATA[httpxはものすごく遅いから使うべきでないかもしれない…という話を書こうと思ったんですが、検証してみたら、確かにaiohttpよりは2倍以上遅いんですが、設定次第で多少はマシかもしれない、という結論です。
+前提として、async modeです。いまどきのAPI serverは全部asyncかなとは思います。今回はsync modeには興味がないので検証してないですが、sync modeではまったく違う結果かもしれません。
+あと文脈としては httpx を推しているブログを読んで、いや httpx はパフォーマンスに問題があるんだよな、ということを周知したかったというのもあります。
+note.com
+ことの起こりは Python の openai library が 0.x から 1.x になったときにものすごくパフォーマンスが劣化したという問題があったことです。
+github.com
+いま私がみているサービスでも openai library のバージョンアップを試みたのですが、明らかにサービスのパフォーマンスが劣化して、ユーザー体験に影響が出るレベルでした。これではopenai libraryのアップグレードができません。
+上記のissueによると、このパフォーマンス劣化の原因は、バックエンドとして使っているHTTP clientをaiohttpからhttpxに変えたからだと推測されています*1。
+そこで、そのことを確認するために、 httpx vs aiohttp のベンチマークスクリプトを書いてみました *2。
+python: 3.13
+httpx: 0.28.1
+aiohttp: 3.12.5
+github.com
+細かい数字はさておくとして、たしかに parallell requests *3で、デフォルトの設定（connection poolingあり）だと、aiohttpはhttpxより100倍速い（11086% faster）ということでした。これではサービスのユーザー体験に影響を及ぼすのも頷けます。
+ところが、connection poolingを切る（keep-aliveを無効化する）と、様子が変わります。aiohttpは確かに少し遅くなりますが、httpxはconnection poolingをしないほうが速くなるのです。aiohttpとの差もかなり縮まって、せいぜい aiohttp が2倍程度速いだけです。それでもaiohttpを選択するには十分な理由にはなりますが、サービスのユーザー体験が明らかに劣化する、というレベルではありません。
+おそらくこれは httpx のバグですね。 httpx vs aiohttp の速度を単純に比較するとたしかにaiohttpのほうがどんな状況でも2倍以上高速なので、速度という点からはaiohttpを選ぶべきです。しかしもしhttpxを使う場合（あるいは何かのライブラリのバックエンドとして使われていて、httpxを使わざるを得ないとき）は、httpxのconnection poolingを切ると少しマシになるかもしれません。
+ちなみに aiohttp の connection pooling も扱いが難しくて安定した運用が難しいため、私は aiohttp.TCPConnector(force_close=True) で切って運用しています。
+*1:いまはaiohttpをバックエンドとして選べるようになりました。選択式はメンテ工数が格段に上がるので、いっそaiohttp一本に切り替えたらよかったのになあと思いますが、まあそれはopenai library開発チームの判断なのでここでは深く追求しません
+*2:実際に書いたのは coding agent ですが。
+*3:async API serverではparallel requestsが普通と考えられるので、parallel requestsの速度だけみます。]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.9.27]]></title>
         <id>https://gamegaz.com/?p=44276</id>
