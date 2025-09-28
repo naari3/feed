@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-09-28T13:05:18.158Z</updated>
+    <updated>2025-09-28T14:01:38.159Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[PostgreSQL 18正式リリース。非同期I/Oによる最大3倍の性能向上、UUID v7対応など]]></title>
+        <id>https://www.publickey1.jp/blog/25/postgresql_18io3uuid_v7.html</id>
+        <link href="https://www.publickey1.jp/blog/25/postgresql_18io3uuid_v7.html"/>
+        <updated>2025-09-28T15:40:00.000Z</updated>
+        <summary type="html"><![CDATA[オープンソースのリレーショナルデータベース「PostgreSQL 18」正式版のリリースが発表されました（日本語版のプレスリリース）。 PostgreSQLはITエンジニアのコミュニティであるStackoverflowの調査で2023年にM...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Copilot CLIがパブリックプレビューとして公開。Linux、macOS、Windowsに対応。GitHub MCPサーバも同梱]]></title>
+        <id>https://www.publickey1.jp/blog/25/github_copilot_clilinuxmacoswindowsgithub_mcp.html</id>
+        <link href="https://www.publickey1.jp/blog/25/github_copilot_clilinuxmacoswindowsgithub_mcp.html"/>
+        <updated>2025-09-28T15:38:30.000Z</updated>
+        <summary type="html"><![CDATA[コマンドラインから生成AIによるコーディングの支援を得られる「GitHub Copilot CLI」がパブリックプレビューとなりました。 GitHub MCPサーバと一緒に提供 GitHub Copilot CLIはコマンドラインにネイティ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[痛くて]]></title>
         <id>hatenablog://entry/6802888565259652371</id>
