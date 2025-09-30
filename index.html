@@ -17711,34 +17711,6 @@ https://github.com/untoxa/VGM_player/</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GBA DMG初期値</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/07/02/203025" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>なかなか取れなかったバグだったのですけど、そろそろネタにしてもいいかなあということで書かせてもらいます。実はviper v16やgtsにこっそりfixかなぁというコードを入れてて、今日まで不具合報告がないから問題ないだろうということでヨシとします。ヨシ！。前は全てのサウンドレジスタを0x00クリアしていたのですけどこれは間違いで、一部発音しなくなる不具合があります。正しくはこちらで発音問題は修正されました。某有名サウンドドライバの逆汗データなので間違いないと思います。
-*(vu8*)(REG_BASE + 0x63) &#x3D; 0x08;		// NR12
-*(vu8*)(REG_BASE + 0x65) &#x3D; 0x80;		// NR14
-*(vu8*)(REG_BASE + 0x69) &#x3D; 0x08;		// NR22
-*(vu8*)(REG_BASE + 0x6d) &#x3D; 0x80;		// NR24
-*(vu8*)(REG_BASE + 0x70) &#x3D; 0x00;		// NR30
-*(vu8*)(REG_BASE + 0x79) &#x3D; 0x08;		// NR42
-*(vu8*)(REG_BASE + 0x7d) &#x3D; 0x80;		// NR44
-*(vu8*)(REG_BASE + 0x80) &#x3D; 0x77;		// NR50</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398497755464/1751457425" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19850,7 +19822,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-09-29T23:01:36.401Z">2025-09-29T23:01:36.401Z</time>
+    <time id="build-timestamp" datetime="2025-09-30T00:03:37.485Z">2025-09-30T00:03:37.485Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
