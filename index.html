@@ -78,6 +78,29 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ポン付けで何か動かしたいときにRubyが便利</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/10/01/153655" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ごくちょっとしたLambdaのハンドラを書く機会があった。ちょっとそれが特殊で、そのLambda自体も別の場所にHTTPリクエストを飛ばし、なおかつヘッダをいくつか弄らなければならない、というものだった。これでRubyを使ったのだが便利だった。
+ふつうこういうときはNodeでハンドラを動かすのだが、今回の目的で必要なundiciがAWS Lambdaの実行環境には入っておらず、undiciを使うなら別の手段でバンドルしてやらなければならない。もうこの時点で面倒すぎるンゴ〜という気持ちになってきた。
+で、Rubyでいいのではと思って(今回は別に型チェックとかもいらないミニマルなコードだったので)Rubyで書き直したところ、HTTPクライアントもあるしJSONも扱えるしなにより日本語ドキュメントもあるので安心だった。お前こそがスクリプト言語だという気持ちに。
+やっぱりスクリプト言語に求められるのは充実した標準ライブラリ、分かりやすいエラーメッセージ、ダイレクトで一貫性のあるセマンティクス、小回りの効く標準I/Oだよなぁと思うのであった。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565266339729/1759300615" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/kazumakawauchi" target="_blank"
               rel="noopener">河内一馬</a></h3>
           <section class="articles-per-source">
@@ -19924,7 +19947,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-10-01T06:01:39.627Z">2025-10-01T06:01:39.627Z</time>
+    <time id="build-timestamp" datetime="2025-10-01T07:02:16.160Z">2025-10-01T07:02:16.160Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
