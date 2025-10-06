@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-05T23:01:35.816Z</updated>
+    <updated>2025-10-06T00:03:20.491Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12016,52 +12016,6 @@ Amazon
 個人的には住んでいる地域の薬局を応援したくて、売っている限りは通販では買っていない。]]></summary>
         <author>
             <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Playwright で Chromium 系ブラウザのサイトデータ (Cookieとか) の保存を無効化する]]></title>
-        <id>hatenablog://entry/6802418398505059742</id>
-        <link href="https://rinsuki.hatenablog.jp/entry/2025/07/08/202428"/>
-        <updated>2025-07-08T11:24:28.000Z</updated>
-        <summary type="html"><![CDATA[ChromeDriver とか Selenium なら pref で profile.default_content_setting_values.cookies を 2 にしたらいいのだが、Playwright はそれを指定できない。
-のでどうするかと言うと、プロファイルを保存するディレクトリを事前に作って設定ファイルを書いてから Playwright に渡す。
-import { chromium } from "playwright-core"
-import { mkdir, mkdtemp, writeFile, rm } from "node:fs/promises"
-import assert from "node:assert"
-import { join } from "node:path"
-import { tmpdir } from "node:os"
-
-const profileDir = await mkdtemp(join(tmpdir(), "playwright-chromium-datadir"))
-await mkdir(`${profileDir}/Default`)
-await writeFile(`${profileDir}/Default/Preferences`, JSON.stringify({
-  profile: {
-    default_content_setting_values: {
-      cookies: 2,
-    },
-  },
-}))
-
-const context = await chromium.launchPersistentContext(profileDir, {
-  channel: "chrome",
-})
-
-try {
-  const page = await context.newPage()
-  await page.goto("https://example.com/")
-  await page.waitForLoadState("load")
-  await page.evaluate(() => document.cookie = "a=b")
-  // Cookie の保存が無効化されているので document.cookie が空になる
-  assert.strictEqual(await page.evaluate(() => document.cookie), "")
-} finally {
-  // ディレクトリを外部から渡した場合は Playwright が後始末をしてくれないので自分でする
-  await context.close().finally(() => rm(profileDir, { recursive: true }))
-}
-
-
-
-後始末をしないとゴミファイルが残ることに注意。]]></summary>
-        <author>
-            <name>rinsuki’s blog</name>
         </author>
     </entry>
     <entry>

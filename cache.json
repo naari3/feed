@@ -3489,21 +3489,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398565458038/1756325947"
-        },
-        {
-          "id": "hatenablog://entry/6802418398505059742",
-          "author": null,
-          "description": "ChromeDriver とか Selenium なら pref で profile.default_content_setting_values.cookies を 2 にしたらいいのだが、Playwright はそれを指定できない。\nのでどうするかと言うと、プロファイルを保存するディレクトリを事前に作って設定ファイルを書いてから Playwright に渡す。\nimport { chromium } from \"playwright-core\"\nimport { mkdir, mkdtemp, writeFile, rm } from \"node:fs/promises\"\nimport assert from \"node:assert\"\nimport { join } from \"node:path\"\nimport { tmpdir } from \"node:os\"\n\nconst profileDir = await mkdtemp(join(tmpdir(), \"playwright-chromium-datadir\"))\nawait mkdir(`${profileDir}/Default`)\nawait writeFile(`${profileDir}/Default/Preferences`, JSON.stringify({\n  profile: {\n    default_content_setting_values: {\n      cookies: 2,\n    },\n  },\n}))\n\nconst context = await chromium.launchPersistentContext(profileDir, {\n  channel: \"chrome\",\n})\n\ntry {\n  const page = await context.newPage()\n  await page.goto(\"https://example.com/\")\n  await page.waitForLoadState(\"load\")\n  await page.evaluate(() => document.cookie = \"a=b\")\n  // Cookie の保存が無効化されているので document.cookie が空になる\n  assert.strictEqual(await page.evaluate(() => document.cookie), \"\")\n} finally {\n  // ディレクトリを外部から渡した場合は Playwright が後始末をしてくれないので自分でする\n  await context.close().finally(() => rm(profileDir, { recursive: true }))\n}\n\n\n\n後始末をしないとゴミファイルが残ることに注意。",
-          "link": "https://rinsuki.hatenablog.jp/entry/2025/07/08/202428",
-          "publishedOn": "2025-07-08T11:24:28.000Z",
-          "wordCount": null,
-          "title": "Playwright で Chromium 系ブラウザのサイトデータ (Cookieとか) の保存を無効化する",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398505059742/1751973868",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398505059742/1751973868"
         }
       ]
     },
