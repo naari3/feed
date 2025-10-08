@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-07T23:01:50.611Z</updated>
+    <updated>2025-10-08T00:03:09.943Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ページネーションを壊さずにInterleavingをする]]></title>
+        <id>hatenablog://entry/6802888565278514300</id>
+        <link href="https://techlife.cookpad.com/entry/2025/10/08/090000"/>
+        <updated>2025-10-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、レシピ事業部検索チームの薄羽です。
+検索チームでは日々レシピ検索機能の改善を行っています。
+最近行った検索結果改善の過程で、2つの検索結果を交互に配置するinterleavingを実装する機会がありました。今回は、この機能の実装の際の課題となる点や、それをどう解決したのかを紹介します。
+Interleaving
+Interleavingは2つのランキングを評価する手法であり、2つのランキングの一番上から文書を交互に取っていくことで、ランキングを生成します。
+
+interleaving機能を実装する際、ページネーションを壊さずにinterleavingを実装するには少し工夫が必要です。2つの検索結果から1つの検索結果を作るため、2つのランキングで重複した文書があると、生成される検索結果には同じ文書が2回表示されることになってしまいます。
+﻿﻿﻿﻿﻿﻿﻿
+どうやるか
+すでにビズリーチさんがElasticsearchでのinterleavingの取り組みを記事にされています (https://engineering.visional.inc/blog/615/implement-interleaving-for-search-evaluation/)。ビズリーチさんもinterleavingの実装にあたりページネーションの問題にぶつかっていて、その解決のためにinterleavingするページを固定し、すでに表示した文書をキャッシュしておくことで、問題を解決しています。
+我々も同様にページネーションの問題にぶつかり、同様にキャッシュを用いましたが、少し別のアプローチを取りました。1ページ目のときだけinterleavingするというアイデアも最初はありましたが、我々のアプリケーションでは検索結果は無限スクロールとなっており、ユーザがページを捲りやすいようになっています…]]></summary>
+        <author>
+            <name>クックパッド開発者ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2025.10.8]]></title>
+        <id>https://gamegaz.com/?p=44337</id>
+        <link href="https://gamegaz.com/2025100844337/"/>
+        <updated>2025-10-07T23:48:13.000Z</updated>
+        <summary type="html"><![CDATA[Xbox携帯機開発断念,VitaShell 2.13,ReiHEN,vitaki-vitarps5  v1.0.2,SC2MAKER 1.0.0,HATSKit v1.0.5,BlocksDS v1.15.0,DOSBox-X v2025.10.07,Azahar 2123.3-rc1,PCSX2 v2.5.206→→→この記事の続きを読む
+GameGaz Daily 2025.10.8 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[生成AIはネットワーク構築運用をどれだけ楽にするか？ Interop Tokyoでの実験が明かした現実と可能性。Cloud Operator Days Tokyo 2025基調講演ほか［PR］]]></title>
         <id>https://www.publickey1.jp/blog/25/ai_interop_tokyocloud_operator_days_tokyo_2025pr.html</id>
@@ -12037,18 +12068,6 @@ Introducing Grok 4, the world's most powerful AI model. Watch the livestream now
 コンテキスト]]></summary>
         <author>
             <name>laiso</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[見た2025年春アニメ]]></title>
-        <id>https://note.com/binetsu0904/n/n0a256caa50cf</id>
-        <link href="https://note.com/binetsu0904/n/n0a256caa50cf"/>
-        <updated>2025-07-10T11:17:43.000Z</updated>
-        <summary type="html"><![CDATA[前シーズンの感想はこちら
-
-続きをみる]]></summary>
-        <author>
-            <name>微熱</name>
         </author>
     </entry>
     <entry>

@@ -4108,6 +4108,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565278514300",
+          "author": null,
+          "description": "こんにちは、レシピ事業部検索チームの薄羽です。\n検索チームでは日々レシピ検索機能の改善を行っています。\n最近行った検索結果改善の過程で、2つの検索結果を交互に配置するinterleavingを実装する機会がありました。今回は、この機能の実装の際の課題となる点や、それをどう解決したのかを紹介します。\nInterleaving\nInterleavingは2つのランキングを評価する手法であり、2つのランキングの一番上から文書を交互に取っていくことで、ランキングを生成します。\n\ninterleaving機能を実装する際、ページネーションを壊さずにinterleavingを実装するには少し工夫が必要です。2つの検索結果から1つの検索結果を作るため、2つのランキングで重複した文書があると、生成される検索結果には同じ文書が2回表示されることになってしまいます。\n﻿﻿﻿﻿﻿﻿﻿\nどうやるか\nすでにビズリーチさんがElasticsearchでのinterleavingの取り組みを記事にされています (https://engineering.visional.inc/blog/615/implement-interleaving-for-search-evaluation/)。ビズリーチさんもinterleavingの実装にあたりページネーションの問題にぶつかっていて、その解決のためにinterleavingするページを固定し、すでに表示した文書をキャッシュしておくことで、問題を解決しています。\n我々も同様にページネーションの問題にぶつかり、同様にキャッシュを用いましたが、少し別のアプローチを取りました。1ページ目のときだけinterleavingするというアイデアも最初はありましたが、我々のアプリケーションでは検索結果は無限スクロールとなっており、ユーザがページを捲りやすいようになっています…",
+          "link": "https://techlife.cookpad.com/entry/2025/10/08/090000",
+          "publishedOn": "2025-10-08T00:00:00.000Z",
+          "wordCount": null,
+          "title": "ページネーションを壊さずにInterleavingをする",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802888565278514300/1759881603",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/6802888565278514300/1759881603"
+        },
+        {
           "id": "hatenablog://entry/6802888565222024723",
           "author": null,
           "description": "こんにちは、iOSエンジニアの山田(0x746572616e79)です。\nこのたび、9月10日から開催される DroidKaigi 2025 と 9月19日から開催される iOSDC Japan 2025 に、それぞれゴールドスポンサーとして協賛いたします。また両イベントともブース出展をいたします。クックパッドではAndroid／iOSエンジニアを積極募集中です。当日は私を含むモバイルエンジニアがブースにおりますので、展示内容はもちろん、普段のプロダクト開発についてや採用に関するお話をカジュアルにできればと思います。\niOSDC Japan 2024のブースの様子です。\n今年のスポンサーブースでは、グローバル展開中のクックパッドアプリ開発事例を昨年に引き続きご紹介します。また、最近社内で活発に取り組んでいるAIの利活用事例も併せて展示予定です。特にAI事例は現在試行錯誤の段階ですので、ぜひ皆さまと知見を共有できれば嬉しいです。また、昨年ご好評いただいた「フードクリップ」をノベルティとして配布を予定しています。ぜひお気軽にお立ち寄りください！\n\n皆さまにお会いできるのを楽しみにしています！",
@@ -4943,16 +4958,6 @@
           "wordCount": null,
           "title": "「小原好美マイムマイム合作」制作後記",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/202399918/rectangle_large_type_2_0864135c158c611fa410b8fb3fded573.png?width=800"
-        },
-        {
-          "id": "https://note.com/binetsu0904/n/n0a256caa50cf",
-          "author": null,
-          "description": "前シーズンの感想はこちら\n\n続きをみる",
-          "link": "https://note.com/binetsu0904/n/n0a256caa50cf",
-          "publishedOn": "2025-07-10T11:17:43.000Z",
-          "wordCount": null,
-          "title": "見た2025年春アニメ",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/201423369/rectangle_large_type_2_0e8babcf82627a63faa90f849306266e.png?width=800"
         }
       ]
     },
@@ -8590,6 +8595,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44337",
+          "author": "mamosuke",
+          "description": "Xbox携帯機開発断念,VitaShell 2.13,ReiHEN,vitaki-vitarps5  v1.0.2,SC2MAKER 1.0.0,HATSKit v1.0.5,BlocksDS v1.15.0,DOSBox-X v2025.10.07,Azahar 2123.3-rc1,PCSX2 v2.5.206→→→この記事の続きを読む\nGameGaz Daily 2025.10.8 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025100844337/",
+          "publishedOn": "2025-10-07T23:48:13.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.10.8",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44332",
           "author": "mamosuke",
