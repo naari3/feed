@@ -3119,6 +3119,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565280498218",
+          "author": null,
+          "description": "QualcommによるArduino買収が発表されました。\nwww.itmedia.co.jp\nQualcommはスマホでよく使われているSnapdragon等で有名なチップメーカーで、Arduinoは電子工作用のマイコンボードとその開発ソフトウェアのメーカーです。\nこれがなぜかを電子工作を知らない人でもわかるように説明します。\n※電子工作界隈の人には既知の話題しか出てきません\nArduinoとは\nArduinoが指すものがいくつかあって紛らわしいので整理します。\n企業としてのArduino。これが今回買収されました。以後、Arduino社と呼びます。後述するArduinoとArduino IDEの開発元であり、メーカーでもあります。\nそれからハードウェアとしてのArduino。以下、単にArduinoと呼びます。これはマイコンボードという種類の電子部品です。\nArduino Uno R3こんな感じでいろいろつないで使う（この記事より）\n\n最後にソフトウェアとしてのArduino。以下、Arduino IDEと呼びます。一度マイコンボードの話に戻りますが、Arduinoにつないだ入力部品に対して出力部品をどう反応させるかはプログラムで記述でき、そのおかげで自由度の高い制御が可能です。そのプログラムを書くためのPC用ソフトウェア（開発環境）がArduino IDEです。\nArduino IDE の画面\n\n\n    \nArduinoはどんなマイコンボードか\nArduinoは2010年ごろからいわゆるメイカームーブメント（「ものづくりの民主化」）をけん引した製品のひとつです（もちろん今も現役です）。要は「これまで難しかった電子工作を簡単にした」画期的なデバイスでした。\nArduinoが周辺回路を内蔵していることで初心者でも簡単にマイコンを使った電子工作ができるようになり、またAr…",
+          "link": "https://nomolk.hatenablog.com/entry/2025/10/08/232500",
+          "publishedOn": "2025-10-08T14:25:00.000Z",
+          "wordCount": 871,
+          "title": "なぜQualcommによるArduino買収が電子工作界隈で話題なのか、そして「微妙…」みたいな反応なのか",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/c69ed0dcc556753e27fe41a41e4d7b36234294ec/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251008%2F20251008233420.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/c69ed0dcc556753e27fe41a41e4d7b36234294ec/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251008%2F20251008233420.png"
+        },
+        {
           "id": "hatenablog://entry/6802888565275729882",
           "author": null,
           "description": "電子工作系を中心に、なんか作ってる人がビッグサイトに作品を持ち寄って見せ合う会、Maker Faire Tokyo 2025 が終わりました。今年も楽しかったですね～。\nこのイベントに学生枠で出展するとYoung Maker Challengeというコンテストにエントリーされることになっており、この制度が始まってから４年、ずっとその審査員をやらせてもらっています。\nというわけでその中で（一般的な視点は全く考慮せず）個人的に面白かったものを紹介します。Ｘに書いたものに少し追記したものです。\n\n\n石川からのYMC優秀賞は久留米高専Pneu Logicsさんの水の論理回路に贈呈しました。\n\n水流でANDやOR、NOT等の論理演算を実装、電気と全然性質の違うのもので論理演算をやっててすごいうえに同時にビジュアライズも果たしている。そしてビジュアライズができるということは教育用に使えるのではと思う人も多いと思いますが、そこも抜け目なく子供用のお風呂おもちゃ化（2枚目）まで果たしていました。\n\nこれすごいのはNOTを実装しているところ。（水の供給がないときに水を出さないといけない！）\n\n\nYoung Maker Challenge 最優秀賞はJAIST佐藤研究室＋電通大IMLさんのシャボン玉ディスプレイ。\n\nちょっとわかりにくい像の時に写真を撮ってしまったのだけど、細かい市松模様が表示されている。\nシャボン玉の中からプロジェクションする…と光が通過してしまうので、冷気で凍らせることで像を映します。シャボン玉が凍るっていう体験がまず面白いし、冷気（網目の部分から出てくる）を手でシャボン玉に当てるときの冷たさも、新雪を手で持ったみたいなフィジカルな感触があってよかった。\n\n\n筑波大エンタテインメントコンピューティング研究室のブースに「初めての電子工作なんです」という方が何人かいて、どれもよ…",
@@ -8155,6 +8170,16 @@
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
         {
+          "id": "https://efcl.info/2025/10/08/ni.zsh-v1.8.0-socket-firewall/",
+          "author": null,
+          "description": "npm/yarn/pnpm/bunを同じコマンドで扱えるni.zshのv1.8.0をリリースしました。\nRelease v1.8.0 · azu/ni.zsh\nこのバージョンでは、Socket Firewallを統合し、パッケージのインストールと実行時にサプライチェーン攻撃から保護する機能を追加しました。\nni.zshについては、次の記事を参照してください。\nnpm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた | Web Scratch\nni.zsh: npmインストール時のサプライチェーン攻撃を検知する機能を追加 | Web Scratch\nni.zsh v1.8.0の変更点\n主要な変更点は次の通りです。詳細はリリースノートを参照してください。\nRelease v1.8.0 · azu/ni.zsh\n🛡️ Socket Firewallの統合\nSocket Firewallを統合し、パッケージのインストール時にセキュリティスキャンを行えるようになりました。\nSocket Firewallは、HTTPプロキシとしてパッケージマネージャのネットワーク通信をインターセプトし、悪意のあるパッケージがダウンロードされる前にブロックするツールです。\n従来のni.zshでは、Socket.dev APIを使ってリスクスコアを取得し、インストール前に確認を求める仕組みでした。\nSocket Firewallも基本的には同じで、自動的にインストール時にマルウェアならブロックし、潜在的なマルウェアは警告を表示します。\n詳しくは次の記事を参照してください。\nIntroducing Socket Firewall: Free, Proactive Protection for Your Software Supply Chain\nセットアップ方法\nSocket…",
+          "link": "https://efcl.info/2025/10/08/ni.zsh-v1.8.0-socket-firewall/",
+          "publishedOn": "2025-10-08T14:00:00.000Z",
+          "wordCount": 749,
+          "title": "ni.zsh v1.8.0リリース: Socket Firewallによるパッケージインストール時のチェック機能を追加",
+          "imageUrl": "https://efcl.info/public/favicon.png"
+        },
+        {
           "id": "https://efcl.info/2025/09/07/npm-oidc/",
           "author": null,
           "description": "npm Trusted Publishingが2025年7月31日に一般公開されました。\nこれにより、OpenID Connect (OIDC)を使ってnpmトークンなしでCI/CDからnpmパッケージを公開できるようになりました。\nnpm trusted publishing with OIDC is generally available\nTrusted publishing for npm packages | npm Docs\nこの記事では、npm Trusted Publishingの仕組みや設定方法、実際のリリースフローについて紹介します。\nnpm Trusted Publishingとは\nnpm Trusted Publishingは、npmレジストリとCI/CD環境（GitHub ActionsやGitLab CI/CD）の間でOIDCベースの信頼関係を確立する仕組みです。これにより、npmトークンを使わずにパッケージを公開できます。\nこれまでのCIからnpmパッケージを公開する際には、長期間有効なnpmトークンをCI/CDの環境変数（Secrets）に保存する必要がありました。しかし、このアプローチにはいくつかのセキュリティリスクがあります。\nnpmトークンがCIのログや設定ファイルに誤って露出する可能性\nトークンが侵害された場合、無効化するまで悪用される可能性\nトークンの手動ローテーションが必要\n必要以上に広い権限を持つことが多い\n\ngranular access tokens で scope を制限できるが、monorepo では設定/維持が難しく org 単位になりがち\nnpm Trusted Publishingは、これらの問題を解決します。\n短時間だけ有効で、かつ特定ワークフローに限定された署名付きトークンを使うため、流出しても再利用されにくい構…",
@@ -9783,6 +9808,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/25/react_foundationvercelreactreact_native.html",
+          "author": null,
+          "description": "代表的なJavaScriptライブラリのひとつとして知られる「React」の開発チームは、ReactやReact Nativeなどの開発を主導する新たな独立組織「React Foundation」の設立を発表しました。 設立時の企業メンバー...",
+          "link": "https://www.publickey1.jp/blog/25/react_foundationvercelreactreact_native.html",
+          "publishedOn": "2025-10-08T15:04:16.000Z",
+          "wordCount": 1444,
+          "title": "「React Foundation」をメタ、マイクロソフト、Vercelらが設立へ。ReactやReact Nativeの中立的な開発主体として",
+          "imageUrl": "https://www.publickey1.jp/2025/reactfoundation-launch01.png"
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/25/state_of_javascript_2025javascript.html",
+          "author": null,
+          "description": "JavaScriptに興味を持つ世界中のIT技術者からの回答を集め、結果を発表している「State of JavaScript」の投票が今年も始まりました。 回答はJavaScriptを仕事で使っている人、趣味で使っている人など誰でも回答可...",
+          "link": "https://www.publickey1.jp/blog/25/state_of_javascript_2025javascript.html",
+          "publishedOn": "2025-10-08T15:00:57.000Z",
+          "wordCount": 1447,
+          "title": "「State of JavaScript 2025」の投票がスタート、仕事や趣味でJavaScriptを使っている人は誰でも回答可能",
+          "imageUrl": "https://www.publickey1.jp/2025/stateofjs2025-la01.png"
+        },
         {
           "id": "https://www.publickey1.jp/blog/25/ai_interop_tokyocloud_operator_days_tokyo_2025pr.html",
           "author": null,
