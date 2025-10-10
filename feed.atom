@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-10T04:02:00.221Z</updated>
+    <updated>2025-10-10T05:01:37.839Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11933,23 +11933,6 @@ github.com
 10年分ほど手を動かさないと骨身に染みなかった知見がこういう本を読んで1ヶ月も手を動かせば腹落ちすることもあるのだから学びの高速道路は着々と整備されている。喜ばしい限りである。]]></summary>
         <author>
             <name>Software Transactional Memo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scala Nativeで実行ファイルのパスを得るには scalanative.runtime.filename]]></title>
-        <id>hatenablog://entry/6802418398509338902</id>
-        <link href="https://blog.3qe.us/entry/2025/07/13/011711"/>
-        <updated>2025-07-12T16:17:11.000Z</updated>
-        <summary type="html"><![CDATA[import scalanative.runtime.filename
-
-filename // => "./target/scala-3.3.6/foobar"
-
-
-
-いわゆる$0が得られる。
- (環境 Scala Native 0.5.7)]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
