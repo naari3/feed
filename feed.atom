@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-11T02:24:07.843Z</updated>
+    <updated>2025-10-11T03:09:19.755Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11958,47 +11958,6 @@ GameGaz Daily 2025.7.14 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[Apple が突如発表した Passkey。実態は「WebAuthn の秘密鍵を iCloud で共有」するサービスだった。そして、業界は本格的な Password-Less に向けて進んでいく。]]></summary>
         <author>
             <name>blog.jxck.io</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[みんなが本当に欲しかったのはMakefileじゃなくてディレクトリレベルで管理できるエイリアスなのでは]]></title>
-        <id>hatenablog://entry/6802418398510434833</id>
-        <link href="https://blog.3qe.us/entry/2025/07/14/000748"/>
-        <updated>2025-07-13T15:07:48.000Z</updated>
-        <summary type="html"><![CDATA[あらすじ
-Makefile as task runner に対しての意見
-顧客が本当に欲しいものは、ディレクトリレベルのエイリアスなんじゃないですか？
-Allyas: ディレクトリごとにエイリアスを張るツール
-$PATHを乗っ取る
-$0 hack
-シンボリックリンクの自動化
-設定ファイル
-あらすじ
-こういう記事を見た。
-zenn.dev
-僭越ながら要約すると、Makefileにタスクを書いてタスクランナーとして用いているとのこと。また、Makefileのコメントを拾ってドキュメンテーションを生成できるようにしたとのこと。
-Makefileをタスクランナー代わりに用いるのはよくあることだが、ドキュメンテーションを生成するようにしたところがおもしろポイントである。
-そして、この記事への批判文脈として以下の記事を見た（正確には、この記事を見てから上掲の記事を読んだ）。
-www.takeokunn.org
-これもまた僭越ながら要約させてもらうと、まずドキュメントはMakefileではなくREADME.mdとかに書くべきであるし、makeである必要性がないのならnpmなどが持っているタスクランナー機能を利用したら良いのでは？という話。そして、正規表現はメンテナンス性が低い、という主張である。
-Makefile as task runner に対しての意見
-Makefileでよく使うタスクを記述することはよく見る。自分もやったことがある。その上で、今のところこう思っている。
-まず、百も承知だろうが、Makefileはそういう用途のために開発されたわけではなく、元々の用途は「ファイルを作るためにコマンドの実行が必要で、それぞれに依存関係がある」というビルドである。この基本がズレているので、正規表現を利用してドキュメンテーションを行うというさらに手間のかかったことをしてしまう。本来の目的で…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[劇場版レヴュースタァライトを見に行ってきた。アニメを見てないのに(書けてないけど下書きにあったので放流)]]></title>
-        <id>https://note.com/zattosoundmad/n/neb328cfeb485</id>
-        <link href="https://note.com/zattosoundmad/n/neb328cfeb485"/>
-        <updated>2025-07-13T14:29:56.000Z</updated>
-        <summary type="html"><![CDATA[経緯: TLでそろそろ上映終了になるという情報を見かけ、帰宅の足そのままでイオンシネマみなとみらいへ向かった。以上
-筆者が知っていた事前情報は激発物破裂罪《高速》 - ニコニコ動画 (nicovideo.jp)のみである。アニメは見ていない。後悔。
-導入
-続きをみる]]></summary>
-        <author>
-            <name>ざっと</name>
         </author>
     </entry>
     <entry>
