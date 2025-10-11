@@ -78,6 +78,60 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
+              rel="noopener">現実モデリング</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">データエンジニアリング・チームの方針を考える：人々がインサイトを得るまでのステップの短縮を目指す</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://contradiction29.hatenablog.com/entry/2025/10/11/111819" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はじめに
+最近、データエンジニアリングを行う3~4人規模のチームを率いることになった。想定していた通りだが、判断能力をスケールさせなければユニットとしての成長はないことを実感しつつある。
+人間集団において共有される判断基準の統一性・一貫性は、メンバーや利害関係者の予測可能性を向上させる。AIによる無限の作業量増大が起こっている現代において、ボトルネックになっているのは人間の判断能力だ。予測可能性の向上はメンバーの判断能力にバフを与え、判断能力はスケールするようになる。結果的に、リーダーがボトルネックになる事態を和らげることができる。明瞭な判断基準は、ボトルネックになりがちな「判断能力」をスケールさせる効果がある。
+私はかつて、自分の持てる実力の全てを使って、最高のデータ基盤を作ったことがある。当時最新の技術を結集し、明瞭な判断基準を持ってデータ基盤を作った。その後転職し、人伝に聞いた話では、事業は死んだらしい。やはりプロダクトの成功に寄与するような判断基準でなければ意味がない。しかしプロダクトの成功に寄与するのは当然のことであり、抽象的すぎて目標にならない。客観的に測定可能であり、議論の土台となり、手段に依存しない目標が必要だ。
+というわけで、まずは他の会社がどうやっているのかを思い出すことにした。過去にカジュアル面談をしていた企業のログを引っ張り出してみる。
+よくある目標設定について
+BigQuery上でSQLが叩かれた数
+
+
+SQLの利用コストを無視しているし、他の手段と利益相反する可能性があり、あまりイけていない
+SQLを発行する人間が欲しいのはインサイトであり、データを見たいわけではない
+SQLを学習するコストは考慮に入れていないのか？エンジニアはともかく、非エンジニアの学習コストと機会損失については考えたのか？
+利益相反が起こりうる。例えば、BIを徹底的に作らないようにして、全てをSQLでみるようにすることでSQLの発行量は増加する
+BI上でダッシュボードを見た数
+
+
+よくある目標設定だ。さっきのよりはマシだが、こちらも利益相反になる可能性が高い。
+BIを何度も見るようにすれば、見る回数は増える
+BIを作り込むようにはならない
+両者ともアウトカムに注視する観点が欠けている一方で、手段を限定するような目標設定を行なっている。結果的に利益相反が起こっている。裏を返せば、良い目標設定には以下の要素が必要だ
+ アウトカムに注目し、手段を限定しない 
+
+
+人々がインサイトを得るまでのステップの短縮を目指す
+データを見る目的はインサイトを得ることだ。だから、インサイトに到達するまでの時間と手順を最小化することを目標にした。
+つまり、判断基準はこうなる
+得たいインサイトがあるとして、そのインサイトを得るまでの手間を図る
+次に、どの程度手間を減らせるかを考えてみる
+その削減の幅を判断基準とする
+この方法なら、道具（SQLやBI）に依存せずにアウトカムを出していくための具体的な改善が回せる。客観的な数値で語れるから、議論のベースになる。
+おわりに
+現状はまだ考えているだけだ。この考え方には以下の弱点がある
+Whatに注力しすぎている。Whyを間違えれば結局は無駄になる。Whyの間違いをWhatの段階で覆すことはできない
+Howに対する習熟が前提となる。Webアプリケーションの構築、BIの構築、データモデリング、アナリティクスエンジニアリングなど、幅広いHowを理解した上でカードを切る必要がある
+また見直そうと思う</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/26006613683363250/6802888565283274550/1760149099" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -19460,7 +19514,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-10-11T01:28:51.559Z">2025-10-11T01:28:51.559Z</time>
+    <time id="build-timestamp" datetime="2025-10-11T02:24:07.804Z">2025-10-11T02:24:07.804Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
