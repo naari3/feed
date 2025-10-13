@@ -704,21 +704,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/15f038415d6c3550e04970631a02112ae5f3386a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20250717%2F20250717183113.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398513192865",
-          "author": null,
-          "description": "地味なことをしているので地味な内容になります。えーと、たとえばメッセージウィンドウを17x7から17x6に変えてスクリプト変換プログラムを走らせた場合、次のようなアサートを挙げてくれます。x7でうまく動いていたのにダメになりました。\nscn_msg... SCN000.s01\nscn_msg... SCN003.s01\nscn_msg... SCN006.s01\nscn_msg... SCN007.s01\nscn_msg... SCN008.s01\nAssertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330\nscn_msg... SCN009.s01\nscn_msg... SCN010.s01\nAssertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330\nscn_msg... SCN011.s01\nscn_msg... SCN012.s01\nscn_msg... SCN013.s01\nAssertion failed: Scn.y < SCN_MAX_CY, file scn_msg.c, line 330\nscn_msg... SCN014.s01\nscn_msg... SCN015.s01\nscn_msg... SCN016.s01\nscn_msg... SCN017.s01\nscn_msg... SCN018.s01\n\n以下略・・・。\nSCN008の該当箇所を調べて6列に収まらないことを確認します。たしかに6列より大きいです。\n１２３４５６７８９０１２３４５６７\nとは言っても毎日各学年３～４０人前\n後で変動する（大半は遊びに来ている\n）気まぐれな生徒と、１０人にも満た\nない（大半は『かつての日常』に浸っ\nている順応性のない人間だ）気まぐれ\nな教師の『学校ゴッコ』にしか過ぎな\nい。_r\n正規表現で_r（改ページ）を追加します。\nif(file == 'SCN008.txt'):\n\t# 追加　改ページ（メッセージウィンドウに入らない）\n\ttext = re.sub('生徒と、１０人', '生徒と、_r１０人', text)\n再度、プログラムを流して問題ないことを確認します。。いやほんと移植作業なんてこんなもんですよ（＾＾；。",
-          "link": "https://akkera102.hatenablog.com/entry/2025/07/16/185829",
-          "publishedOn": "2025-07-16T09:58:29.000Z",
-          "wordCount": 539,
-          "title": "終末移植18",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398513192865/1752660059",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802418398513192865/1752660059"
         }
       ]
     },
