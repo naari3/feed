@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-14T01:29:33.777Z</updated>
+    <updated>2025-10-14T02:27:22.701Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Python 3.14登場、フリースレッド版正式サポート。実験的JITコンパイラも公式バイナリで利用可能に]]></title>
+        <id>https://www.publickey1.jp/blog/25/python_314jit.html</id>
+        <link href="https://www.publickey1.jp/blog/25/python_314jit.html"/>
+        <updated>2025-10-14T13:37:23.000Z</updated>
+        <summary type="html"><![CDATA[スクリプト言語Pythonの最新版となる「Python 3.14」正式版が公開されました。 Python 3.14での大きな新機能はフリースレッド版の正式サポートと公式バイナリでの実験的JITコンパイラ導入でしょう。 フリースレッド版Pyt...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【復旧済み】はてなフォトライフで画像のアップロードに失敗することがある不具合が発生していました]]></title>
+        <id>hatenablog://entry/6802888565287001466</id>
+        <link href="https://staff.hatenablog.com/entry/2025/10/14/105005"/>
+        <updated>2025-10-14T01:50:05.000Z</updated>
+        <summary type="html"><![CDATA[2025/10/14 1:17〜3:37まで、はてなフォトライフで画像のアップロードに失敗することがある不具合が発生していました。
+原因はサーバーの過負荷によるもので、現在は復旧しております。
+ご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.10.14]]></title>
         <id>https://gamegaz.com/?p=44371</id>
