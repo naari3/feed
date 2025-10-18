@@ -78,6 +78,39 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://contradiction29.hatenablog.com/" target="_blank"
+              rel="noopener">現実モデリング</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SQL in the Wild : UNIQUEではない結合キーでJOINすると行数が爆発するRow Explosion</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://contradiction29.hatenablog.com/entry/2025/10/18/171647" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はじめに
+Google BigQueryやSnowflakeをはじめとするデータウェアハウスにおいては、プライマリーキー制約を強制させることはできない。宣言は可能だがデータベース側が強制しないため、プライマリーキーをプライマリーたらしめるのは、データベースではなくユーザーの責任となる*1。結果として、一意だと想定していたキーが重複することは起こりうる。
+技術的な理由は後述するが、一意ではない結合キーを使ってJOINを行うと、行数が想定していたより増える。データ屋としてデータパイプラインの信頼性維持に関わってきた人間なら、何度か遭遇したことはあるだろう。この現象は「Row Explosion」*2とか「Explosion」とか「爆発」と呼ばれている*3。
+最近仕事を進めていく上で、この現象（以降JOIN爆発と呼称する）について説明することも多くなってきた。SQLについて詳しくない他のエンジニアにもわかるように、脳内をダンプしておきたい。
+SQLのJOINって本当は何しているの
+JOIN爆発について理解するためには、JOINの仕組みについて理解する必要がある。JOINといえばLEFT JOINが大人気すぎるせいで、今までSQLにおけるJOIN演算の仕組みをExcelのLOOKUP関数の類推で理解してきた人もいるだろう。実際のプロセスは別物だ。LEFT JOINのイメージが強すぎるのが悪い。
+ざっくり言うと、SQLのJOIN演算を理解するためには、以下の3段階を理解すれば良い*4。
+前提
+2つのテーブルA、Bが存在しており、AとBをJOINしたいとする
+それぞれのテーブルは実態としてタプルであり、タプルの要素が行に当たると考える
+つまり、AとBは集合である
+この前提を踏まえた上で、以下のようなプロセスでJOINは行われる
+まず集合AとBの直積を作成する
+直積の各要素のうち、ON句…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/26006613683363250/6802888565291081983/1760775407" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://saize-lw.hatenablog.com/" target="_blank"
               rel="noopener">LWのサイゼリヤ</a></h3>
           <section class="articles-per-source">
@@ -19412,7 +19445,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-10-18T08:02:00.875Z">2025-10-18T08:02:00.875Z</time>
+    <time id="build-timestamp" datetime="2025-10-18T09:01:46.712Z">2025-10-18T09:01:46.712Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
