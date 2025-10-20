@@ -74,6 +74,45 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-10-20">2025-10-20</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://yasukata.hatenablog.com/" target="_blank"
+              rel="noopener">かーねるさんとか</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">memcached 互換サーバーの自作</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://yasukata.hatenablog.com/entry/2025/10/20/103705" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>memcached プロトコルに則ったリクエストを通して基本的なキー・バリューペアの保存と取り出しができるサーバーを自作しています。
+ソースコードはこちらで公開しておりますので、よろしければお試しください。
+github.com
+通信部分には、以前から自作している TCP/IP スタックを利用できるようにしています。また、自作 TCP/IP スタックではなく、Linux 等のカーネルの TCP/IP スタックを利用するバージョンもあります。
+実装の内容
+memcached サーバーがクライアントからのリクエストに応答する際のおおよその挙動は以下の通りです。
+リクエストメッセージの受信：クライアントから memcached プロトコルに則ったフォーマットで送信されてきたリクエスト内容を含むメッセージを受信する。
+メッセージのパース：クライアントから送られてきたメッセージをパースして、リクエスト内容を判別する。
+キー・バリュー操作：判別されたリクエスト内容に応じてキー・バリューペアの保存や検索を行う。
+レスポンスメッセージの送信：キー・バリュー操作の結果を memcached プロトコルに則ったフォーマットにして、クライアントへ送信する。
+これらは主に「メッセージの送受信」「memcached プロトコルに則ったメッセージのパースと応答の生成」「キー・バリュー操作」の三つの要素に分けられます。
+自作 memcached 互換サーバーを作成するためには、自作 TCP/IP スタックが担当する「メッセージの送受信」以外の「memcached プロトコルに則ったメッセージのパースと応答の生成」「キー・バリュー操作」の機能が不足しているため、これらを実装します。
+実装で配慮した点
+実装の再利用性
+以前から手軽に memcached プロトコルに則った挙動ができるサーバーを簡単に実装でき…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8599973812316346643/6802888565289993211/1760924225" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-10-19">2025-10-19</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19274,7 +19313,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-10-20T01:29:42.814Z">2025-10-20T01:29:42.814Z</time>
+    <time id="build-timestamp" datetime="2025-10-20T02:30:52.878Z">2025-10-20T02:30:52.878Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
