@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-22T11:01:45.325Z</updated>
+    <updated>2025-10-22T12:01:59.677Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ScalaのCirceでEnumをUntaggedなJSONにするためのエンコーダを定義する]]></title>
+        <id>hatenablog://entry/6802888565295606014</id>
+        <link href="https://blog.3qe.us/entry/2025/10/22/200628"/>
+        <updated>2025-10-22T11:06:28.000Z</updated>
+        <summary type="html"><![CDATA[生きているとEnumをJSONにしたり、JSONをEnumに戻したりしたくなることがある。エンジニアの仕事の半分はJSONという煮干しを作ったりそれを戻したりすることなので、もはや呼吸をするようにエンコードしたりデコードしたりする。ええ？YAMLがお好き？すみませんね〜ウチはJSON出汁なんですよ〜
+ScalaのEnumとJSON
+さて、こういうJSONを作りたいとする。
+{
+  // ...
+  "principal": [ { "user_id": "foobarkun@example.com" } ]
+}
+これは実物から持ってきた。ところで、
+{
+  // ...
+  "principal": [ { "group_id": "foobargroup@example.com" } ]
+}
+こういうパターンもある。
+もちろん、こいつらが混合することもある:
+{
+  // ...
+  "principal": [ { "user_id": "foobarkun@example.com" }, { "group_id": "foobargroup@example.com" } ]
+}
+つまり、principalは、user_idフィールドを持つオブジェクトか、group_idフィールドを持つオブジェクトかの、どちらかのパターンをとることになる。
+データがいくつかのパターンを取るときに何を使うかといえば、（Scala 3では）Enumだ:
+enum Principal:
+  case User(user_id: String)
+  case Group(group_id: String)
+
+
+
+こんな感じにPrincipalを定義して、principalフィールドにこれを充てれば終わりだ。
+EnumをどうJSONにマップするのか
+ところで、EnumとJSONとの関係は一筋縄に…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RealSample制作後記とリアルイベント初体験記]]></title>
         <id>https://note.com/wake_otomad/n/n0b15d77b8f1c</id>
@@ -11707,16 +11745,6 @@ https://blog.goo.ne.jp/adoi/e/6934eb2acb1b27be98f4ab6370af8eb9
 時は流れ、陰謀論や過激な情報、怪しげな情報が流れるのが普通になった。Qアノンがアメリカ議会議事堂を襲撃し、名前を言ってはいけない知事が「王」に…]]></summary>
         <author>
             <name>表道具</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[1Password と遺言保管制度を用いたデジタル終活]]></title>
-        <id>https://blog.jxck.io/entries/2025-07-25/digital-regacy.html</id>
-        <link href="https://blog.jxck.io/entries/2025-07-25/digital-regacy.html"/>
-        <updated>2025-07-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[筆者のように、インターネット上での生活が長く、かつエンジニアとして生きてきた人間には、一般の人には伝わりにくいデジタルの遺品が多く存在する。仮に自分が死んだ場合に、これらをどのように遺族に処分してもらうかは、なかなか難しい問題だ。筆者はこの「デジタル終活」をどうするかを、長いこと模索してきた。今回は、「1Password」と法務局が行う「自筆証書遺言保管制度」を用いた方法を思いついたため、検証を試みる。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
