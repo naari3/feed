@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-23T09:01:57.157Z</updated>
+    <updated>2025-10-23T10:01:43.824Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GBFSで凡ミス]]></title>
+        <id>hatenablog://entry/6802888565296589124</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/10/23/182937"/>
+        <updated>2025-10-23T09:29:37.000Z</updated>
+        <summary type="html"><![CDATA[ふと思い出したのでblogネタにしようと思います。16バイトのテキストファイルが２つあってそれをGBFS化します。
+gbfs aaa.gbfs 1.txt 2.txt
+んで、1つ目のテキストファイルを文字列読み込みしようとしたら別ファイル以上貫通してしまったという話です。
+
+'\0'が終端じゃないということですね。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[『アスリートキャリアの「基盤」になる映像』のお手本 / Jane Hedengren]]></title>
         <id>https://note.com/kazumakawauchi/n/n725d33748de2</id>

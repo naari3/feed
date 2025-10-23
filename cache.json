@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/6802888565296589124",
+          "author": null,
+          "description": "ふと思い出したのでblogネタにしようと思います。16バイトのテキストファイルが２つあってそれをGBFS化します。\ngbfs aaa.gbfs 1.txt 2.txt\nんで、1つ目のテキストファイルを文字列読み込みしようとしたら別ファイル以上貫通してしまったという話です。\n\n'\\0'が終端じゃないということですね。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/10/23/182937",
+          "publishedOn": "2025-10-23T09:29:37.000Z",
+          "wordCount": 477,
+          "title": "GBFSで凡ミス",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/882b228ef86c888be70bcfa068568595d9c58217/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20251023%2F20251023182115.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/882b228ef86c888be70bcfa068568595d9c58217/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20251023%2F20251023182115.png"
+        },
+        {
           "id": "hatenablog://entry/6802888565289838789",
           "author": null,
           "description": "今年発売されたez flash airについて。頻繁にロムを書き換えるhomebrew開発者はスルーしそうです。5000〜6000円ぐらいの価格帯は魅力的ですね。\nhttps://m.youtube.com/watch?v=-NY0rY4Xy8w\nhttps://gbasp.ru/ezflashair-en.html",
