@@ -2,10 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-25T05:01:45.413Z</updated>
+    <updated>2025-10-25T06:01:47.501Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ザナドゥクローンMSYS2コンパイル]]></title>
+        <id>hatenablog://entry/6802888565298311474</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/10/25/140345"/>
+        <updated>2025-10-25T05:03:45.000Z</updated>
+        <summary type="html"><![CDATA[対応ファイルは「xanadu114.lzh」になります。
+$ gcc -dumpversion
+15.2.0
+Makefile.cygwin:1
+CC	= gcc -mno-cygwin
+「-mno-cygwin」を削除。
+main.c:95
+  DuplicateHandle(process, pipe_out, process, &pipe_out_dup,
+                  0, NULL, DUPLICATE_SAME_ACCESS);
+「NULL」を「0」に修正。
+user_io.c:9
+#ifdef __FreeBSD__
+#include <sys/types.h>
+#include <sys/stat.h>
+
+#define mkdir(dir) (mkdir((dir), 0700))
+#endif
+「ifdef freeBSD」を「define mkdir」の上に移動。（2つのインクルードを通す）
+midiplay.c:1
+waveplay.c:1
+#include <sys/stat.h>
+を追加。
+waveplay.c:163
+      waveOutWrite(wave_device, &wave_wh, sizeof(wave_wh));
+「wave_device」を「(HWAVEOUT)wave_device」に修正。
+・waveplay.c:296
+  error = waveOutOpen(&wave_device, WAVE_MAPPER, &wave_format,
+                      (DWORD)wave_proc, 0, CALLBACK_FUNCTION);
+「(DWORD)wave_proc」を「(DWORD_PTR)&wave_proc」に修正。
+waveplay.c:
+#define MAX_MIXER_BUFFER	1024	/* ミキサー用バッファ */
+1024を10240に修正。
+その後、
+make -f Makefile.cygwin
+$ ./xanadu
+とすればおっけーです。warningはめっちゃでるけど無視。midiは鳴りません。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.10.25]]></title>
         <id>https://gamegaz.com/?p=44432</id>
