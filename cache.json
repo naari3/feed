@@ -3295,21 +3295,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/44d631b3e6833feaf7330a72ef84a317443aae9f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20230522%2F20230522235416.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398528304132",
-          "author": null,
-          "description": "先日、Androidスマホで撮影した動画をPCに送ってもらう機会があったんですけど、クイックシェアでくださいって言ったら通じず「これは意外に知られてないのでは…？」と思ったので紹介します。\nクイックシェア（QuickShare）とは\niPhoneにエアドロップってあるじゃないですか。ファイル送るやつ。WiFiやBluetoothを使って端末同士で直接転送するので、他の転送方法（Googleドライブにアップして共有とか）より手軽かつ圧倒的に速いです。\nで、実はAndroidにも標準で同等の機能があるんですよ。それがクイックシェア（Quick Share）です。Android端末同士は設定なしで送れますし、Windowsへもクライアントアプリをインストールすれば送れます。これがけっこう便利。使ったことないですがMac、Linuxでもいけるっぽい。\n僕は、撮影した動画を他人に送るとき……は残念ながらクイックシェアの知名度が低いため使っておらず、もっぱらPCに大きめの動画や取材の録音データ等を送るのに使っています。有線接続なしでサッと高速転送できて便利。\n余談ですが以前はニアバイシェアという名前でした。\n以下、使い方です。\n使い方（ざっくり）\n受信側が「共有を許可」して、送信側から検索可能にする\n送信側でファイル送信許可を申請\n受信側が承認するとファイルが転送される\nAndroidでの使い方\n受け取るとき\n①画面のいちばん上を下にスワイプしてメニューを出し、クイックシェアのアイコンを探します。（非表示にしている場合は出ないので設定しなおそう）\n\n②クイックシェアのメニューが出てくるので、「全ユーザー」を選びます。\n\nこれで受信できるようになったので、送信側から送る操作をします。\n③すると受信メニューが出てくるので「承認する」を押します。\n\n④受信完了です。\n\nダウンロードしたファイルはダウンロードフォルダに入ります。\n送るとき\n①何のアプリでもいいので送りたいファイルの共有メニュー（だいたいこのアイコンか、「︙」→共有）を開き、「Quick Share」を選びます。\n\nその後、受信側で、受信可能にする操作（「受け取る」の①②）をしてください。\n②すると受信可能にした端末が画面に出てくるので、選んでください\n\nそうすると受信側の画面にファイル受信のポップアップが出るので、「承認する」を押すとファイルが転送されます。\nWindowsでの使い方\n準備\n事前にQuick Share クライアントをインストールしておきます。\nwww.android.com\n受け取る\n①タスクトレイの中にクイックシェアのアイコンがあるので探します\n\n②右クリックして「公開設定→全員に公開」を選びます\n\nこれで受信できるようになったので、送信側から送る操作をします。\n③すると受信メニューが出てくるので「承認」を押します。\n\n④受信完了です。\n\nダウンロードしたファイルはダウンロードフォルダに入ります。\n送る\n①タスクトレイからクイックシェアのアイコンを左クリックして、開きます。\n\nその後、受信側で、受信可能にする操作（「受け取る」の①②）をしてください。\n②すると受信可能にした端末が画面に出てくるので、選んでください\n\n\nそうすると受信側の画面にファイル受信のポップアップが出るので、「承認する」を押すとファイルが転送されます。\nMac、Linux\nやったことないのであくまで検索しただけの情報ですが…\nMacはこれでできるっぽい\n‎QuickDrop - Share from Android on the Mac App Store\nLinuxについてはこのへん見てみてください\nNearbyShare/QuickShare を Linux で使ってみた備忘録 | hyt adversaria\n\n送信許可について\nAndroidでもWindowsでも、共有を許可したあと10分後に自動でクローズされます（端末を検索できなくなります）。\n以上です。バイバイ。",
-          "link": "https://nomolk.hatenablog.com/entry/2025/07/30/230622",
-          "publishedOn": "2025-07-30T14:06:22.000Z",
-          "wordCount": 860,
-          "title": "Android同士や、Android⇔PC間でファイルを高速転送できるクイックシェアが便利なのにあんまり知られてないので紹介します（Android版エアドロップ的なやつ）",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/8e35ffaf435c039dfba4a231531ff90acb26a34b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250730%2F20250730230335.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8e35ffaf435c039dfba4a231531ff90acb26a34b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250730%2F20250730230335.png"
         }
       ]
     },
@@ -6754,16 +6739,6 @@
           "wordCount": null,
           "title": "【週刊プラグインレビュー】APU Software / TrueGain",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/211899312/rectangle_large_type_2_9c33b1d71e281f212ba694b1a413b5dd.jpeg?width=800"
-        },
-        {
-          "id": "https://note.com/massmasaoki/n/nab7f125df17b",
-          "author": null,
-          "description": "今月最後の記事になります。\n相変わらず、夏は引きこもっていつにもまして運動不足になっております笑\n今回は、Mastering the MixのEQ Academyをご紹介できればと。\nプラグインというよりは、学習ソフトなのですが、割と面白かったのでオススメしておきます。\n続きをみる",
-          "link": "https://note.com/massmasaoki/n/nab7f125df17b",
-          "publishedOn": "2025-07-30T14:22:09.000Z",
-          "wordCount": null,
-          "title": "「週刊プラグインレビュー」Mastering the MIX / EQ Academy",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/205393306/rectangle_large_type_2_4291dcceb49a90683b3ddad05fa5e335.png?width=800"
         }
       ]
     },
