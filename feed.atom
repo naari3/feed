@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-30T09:01:38.017Z</updated>
+    <updated>2025-10-30T10:01:55.258Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Google Cloud+Terraformでアクセス権限をSecretやCloud Buildにつけるのが難しい]]></title>
+        <id>hatenablog://entry/17179246901307722722</id>
+        <link href="https://blog.3qe.us/entry/2025/10/30/183915"/>
+        <updated>2025-10-30T09:39:15.000Z</updated>
+        <summary type="html"><![CDATA[難しかったので備忘録です。
+SAを別のSAから利用できるようにする
+例えばCloud Buildを起動しているSAがビルドの終わりにCloud Runを更新して起動する、といったとき、Cloud Runの実行用のSAにバトンタッチする必要がある。そういうときはSAがSAを利用するための権限が必要(なはず)で、以下のように設定する:
+variable "runtime_sa_account_id" {
+  description = "Account ID (name) for runtime Service Account"
+  type        = string
+  default     = "runtime"
+}
+
+variable "build_sa_account_id" {
+  description = "Account ID (name) for build Service Account"
+  type        = string
+  default     = "builder"
+}
+
+resource "google_service_account" "runtime" {
+  account_id   = var.runtime_sa_account_id
+  display_name = "Runtime Service Account"
+}
+
+resource "google_service_account" "builder" {
+  account_id   = var.build_sa_account_id
+  display_name = "Builder Service Account"
+}
+
+// ここが大事
+
+resource "google_service_account_iam_member" "builder_can…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[セキュリティ分野における分析業務というお仕事]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=32971</id>

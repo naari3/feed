@@ -7344,6 +7344,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901307722722",
+          "author": null,
+          "description": "難しかったので備忘録です。\nSAを別のSAから利用できるようにする\n例えばCloud Buildを起動しているSAがビルドの終わりにCloud Runを更新して起動する、といったとき、Cloud Runの実行用のSAにバトンタッチする必要がある。そういうときはSAがSAを利用するための権限が必要(なはず)で、以下のように設定する:\nvariable \"runtime_sa_account_id\" {\n  description = \"Account ID (name) for runtime Service Account\"\n  type        = string\n  default     = \"runtime\"\n}\n\nvariable \"build_sa_account_id\" {\n  description = \"Account ID (name) for build Service Account\"\n  type        = string\n  default     = \"builder\"\n}\n\nresource \"google_service_account\" \"runtime\" {\n  account_id   = var.runtime_sa_account_id\n  display_name = \"Runtime Service Account\"\n}\n\nresource \"google_service_account\" \"builder\" {\n  account_id   = var.build_sa_account_id\n  display_name = \"Builder Service Account\"\n}\n\n// ここが大事\n\nresource \"google_service_account_iam_member\" \"builder_can…",
+          "link": "https://blog.3qe.us/entry/2025/10/30/183915",
+          "publishedOn": "2025-10-30T09:39:15.000Z",
+          "wordCount": 1531,
+          "title": "Google Cloud+Terraformでアクセス権限をSecretやCloud Buildにつけるのが難しい",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901307722722/1761817155",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901307722722/1761817155"
+        },
+        {
           "id": "hatenablog://entry/17179246901307514788",
           "author": null,
           "description": "キューピーコーワヒーリングを同僚がやたら推していた。\n\nキューピーコーワヒーリング錠 60錠 疲労回復・予防 目覚めの悪さの改善 カフェインゼロ【指定医薬部外品】\n\nキューピーコーワ\nAmazon\n\n曰く、疲れが異常に取れるなどの怪しい評判が飛び交っていた。ちょっと自分も最近朝クタッとなっていがちなので試しに小さめの60錠のやつを買って、寝る前に飲んでみた。ヒーリングなのでカフェインが入っていないから安心。\nすると起きたらめちゃくちゃ疲れが取れていた。肉体的な疲労がめっちゃ減っている。人間こんなに元気だったのか〜みたいな感じ。同僚は間違っていなかった。\nところで何が入ってんの？と思って成分を見ると、エゾウコギ乾燥エキスとかオキソアミヂン末とかチョウジ末とかが入っている。主成分としてはそんなもんか。エゾウコギの薬効はソ連で発見され、世界に広まったらしい。こういう謎研究がソ連発なのまあまあある気がする。オキソアミヂンはニンニクの成分。\n何が効いてるのかはよくわからないがとりあえずこのまま定期的に飲もうと思う。",
