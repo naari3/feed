@@ -7344,6 +7344,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901307514788",
+          "author": null,
+          "description": "キューピーコーワヒーリングを同僚がやたら推していた。\n\nキューピーコーワヒーリング錠 60錠 疲労回復・予防 目覚めの悪さの改善 カフェインゼロ【指定医薬部外品】\n\nキューピーコーワ\nAmazon\n\n曰く、疲れが異常に取れるなどの怪しい評判が飛び交っていた。ちょっと自分も最近朝クタッとなっていがちなので試しに小さめの60錠のやつを買って、寝る前に飲んでみた。ヒーリングなのでカフェインが入っていないから安心。\nすると起きたらめちゃくちゃ疲れが取れていた。肉体的な疲労がめっちゃ減っている。人間こんなに元気だったのか〜みたいな感じ。同僚は間違っていなかった。\nところで何が入ってんの？と思って成分を見ると、エゾウコギ乾燥エキスとかオキソアミヂン末とかチョウジ末とかが入っている。主成分としてはそんなもんか。エゾウコギの薬効はソ連で発見され、世界に広まったらしい。こういう謎研究がソ連発なのまあまあある気がする。オキソアミヂンはニンニクの成分。\n何が効いてるのかはよくわからないがとりあえずこのまま定期的に飲もうと思う。",
+          "link": "https://blog.3qe.us/entry/2025/10/30/155525",
+          "publishedOn": "2025-10-30T06:55:25.000Z",
+          "wordCount": null,
+          "title": "キューピーコーワヒーリングを飲むと妙に元気になる",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/97ce2c098c21c759f7839920dbf4ba727a6e6efe/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41a3C3umRqL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/97ce2c098c21c759f7839920dbf4ba727a6e6efe/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41a3C3umRqL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/6802888565295606014",
           "author": null,
           "description": "生きているとEnumをJSONにしたり、JSONをEnumに戻したりしたくなることがある。エンジニアの仕事の半分はJSONという煮干しを作ったりそれを戻したりすることなので、もはや呼吸をするようにエンコードしたりデコードしたりする。ええ？YAMLがお好き？すみませんね〜ウチはJSON出汁なんですよ〜\nScalaのEnumとJSON\nさて、こういうJSONを作りたいとする。\n{\n  // ...\n  \"principal\": [ { \"user_id\": \"foobarkun@example.com\" } ]\n}\nこれは実物から持ってきた。ところで、\n{\n  // ...\n  \"principal\": [ { \"group_id\": \"foobargroup@example.com\" } ]\n}\nこういうパターンもある。\nもちろん、こいつらが混合することもある:\n{\n  // ...\n  \"principal\": [ { \"user_id\": \"foobarkun@example.com\" }, { \"group_id\": \"foobargroup@example.com\" } ]\n}\nつまり、principalは、user_idフィールドを持つオブジェクトか、group_idフィールドを持つオブジェクトかの、どちらかのパターンをとることになる。\nデータがいくつかのパターンを取るときに何を使うかといえば、（Scala 3では）Enumだ:\nenum Principal:\n  case User(user_id: String)\n  case Group(group_id: String)\n\n\n\nこんな感じにPrincipalを定義して、principalフィールドにこれを充てれば終わりだ。\nEnumをどうJSONにマップするのか\nところで、EnumとJSONとの関係は一筋縄に…",
