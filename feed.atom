@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-10-30T23:01:34.677Z</updated>
+    <updated>2025-10-31T00:03:32.490Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11717,23 +11717,6 @@ twitterで拾った画像だけどこれ分からなかったので、どなた�
 GameGaz Daily 2025.8.3 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LLM時代の仕事]]></title>
-        <id>hatenablog://entry/6802418398531648590</id>
-        <link href="https://kumagi.hatenablog.com/entry/work-with-llm"/>
-        <updated>2025-08-02T11:30:24.000Z</updated>
-        <summary type="html"><![CDATA[Geminiに書いてもらったPDCAモーターサイクル
-
-いちプログラマである僕の視点では、現在の世界はAIに熱狂している。
-特にLLMを使ってコードを書かせるばかりか、その先のデバッグまでLLMに任せる時代はもう少し先だと思っていたら早くも登場して世間を沸かせている。
- 
-ソードアートオンラインのように「システムコール」と前置すればただの単語予測器にできる範疇以外の事にも手を伸ばせる事はわかっていたが、LLMがこんなに早くその「システムコール」を操ってものを動かせるという直感を持ち合わせていなかったのを恥じるばかりである。少しシリアスにLLMの出力をチューニングしようとした人ならわかると思うが、LLMが真にすごいのは知識を貯めておける事というよりパターンに従うのがとんでもなく上手いと言う事である。
-プロンプトチューニングで「あなたは○○の専門家です」などと入れるロールプレイングは出力の品質を大きく改善しない、といった話は有名であるがそういう数あるチューニング手法の中でfew shot learningはホンモノである。すぐ目の前で例示された物をパターンに合わせて模倣することはLLMのベンチマーク種目のひとつなのかと感じさせるほど上手い。ドラクエの攻略本を通読させたLLMの目の前で「システムコール・メラ！」と火球を出して焚き火をつけるデモンストレーションを見せつけさえすれば、即座に「システムコール・イオナズン！」で地図を描き変える応用力がLLMにはある。
-AIエージェントと呼ばれるものがMCPコールでやっている事はこれである。コードを書き換えるMCPコールやコンパイルするMCPコールまでは想像できたがエラーメッセージを読んで次の手を打ち始めてしかもそれでおおよそ上手くいくというのは「偉そうなことを言っておきながらプログラマがやってる事もおよそパターンマッチングの連続に過ぎなか…]]></summary>
-        <author>
-            <name>Software Transactional Memo</name>
         </author>
     </entry>
     <entry>

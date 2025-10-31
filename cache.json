@@ -2917,23 +2917,7 @@
       "title": "Software Transactional Memo",
       "feedUrl": "https://kumagi.hatenablog.com/rss",
       "siteUrl": "https://kumagi.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802418398531648590",
-          "author": null,
-          "description": "Geminiに書いてもらったPDCAモーターサイクル\n\nいちプログラマである僕の視点では、現在の世界はAIに熱狂している。\n特にLLMを使ってコードを書かせるばかりか、その先のデバッグまでLLMに任せる時代はもう少し先だと思っていたら早くも登場して世間を沸かせている。\n \nソードアートオンラインのように「システムコール」と前置すればただの単語予測器にできる範疇以外の事にも手を伸ばせる事はわかっていたが、LLMがこんなに早くその「システムコール」を操ってものを動かせるという直感を持ち合わせていなかったのを恥じるばかりである。少しシリアスにLLMの出力をチューニングしようとした人ならわかると思うが、LLMが真にすごいのは知識を貯めておける事というよりパターンに従うのがとんでもなく上手いと言う事である。\nプロンプトチューニングで「あなたは○○の専門家です」などと入れるロールプレイングは出力の品質を大きく改善しない、といった話は有名であるがそういう数あるチューニング手法の中でfew shot learningはホンモノである。すぐ目の前で例示された物をパターンに合わせて模倣することはLLMのベンチマーク種目のひとつなのかと感じさせるほど上手い。ドラクエの攻略本を通読させたLLMの目の前で「システムコール・メラ！」と火球を出して焚き火をつけるデモンストレーションを見せつけさえすれば、即座に「システムコール・イオナズン！」で地図を描き変える応用力がLLMにはある。\nAIエージェントと呼ばれるものがMCPコールでやっている事はこれである。コードを書き換えるMCPコールやコンパイルするMCPコールまでは想像できたがエラーメッセージを読んで次の手を打ち始めてしかもそれでおおよそ上手くいくというのは「偉そうなことを言っておきながらプログラマがやってる事もおよそパターンマッチングの連続に過ぎなか…",
-          "link": "https://kumagi.hatenablog.com/entry/work-with-llm",
-          "publishedOn": "2025-08-02T11:30:24.000Z",
-          "wordCount": null,
-          "title": "LLM時代の仕事",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/80965a6c2115480aad69f0950362ecfcfeaa9c05/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkumagi%2F20250802%2F20250802201632.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/80965a6c2115480aad69f0950362ecfcfeaa9c05/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkumagi%2F20250802%2F20250802201632.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "ぷもも園",
