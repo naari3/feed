@@ -3078,7 +3078,23 @@
       "title": "アプリ置き場",
       "feedUrl": "https://nazenaninadesico.hatenablog.jp/rss",
       "siteUrl": "https://nazenaninadesico.hatenablog.jp/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/17179246901309246273",
+          "author": null,
+          "description": "Windowsのエクスプローラーの挙動がうんこなので、ExplorerBrowserControlを使った自前ファイラー(C#, WinForms)を作ってエクスプローラーの挙動を矯正しつつ使っているのだけど、表示設定がおかしくなった。新規ディレクトリを作った際にデフォルトの設定(エクスプローラーで「フォルダーに適用」で保存した表示設定)を反映してくれない。\nいろいろ調べるとWin11において、エクスプローラーの表示設定の保存上限は5000件らしいのだけど、この上限を超えたときにExplorerBrowserControlの挙動がおかしくなっているように見える。\nSet_BagMRUSize_12800.reg\nWindows Registry Editor Version 5.00\n\n; Explorer のビュー設定保存数（ShellBags / BagMRU）の上限を 12800 に\n; 対象: HKCU（現在のユーザー）\n[HKEY_CURRENT_USER\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell]\n\"BagMRU Size\"=dword:00003200",
+          "link": "https://nazenaninadesico.hatenablog.jp/entry/2025/10/31/221246",
+          "publishedOn": "2025-10-31T13:12:46.000Z",
+          "wordCount": null,
+          "title": "Explorerのビュー設定保存上限を変更する",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901309246273/1761916366",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901309246273/1761916366"
+        }
+      ]
     },
     {
       "title": "neonです",
