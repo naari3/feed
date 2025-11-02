@@ -78,6 +78,81 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">パッチ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/11/02/172852" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>「アトリの空と真鍮の月」のwindows11パッチです。fixMetricsというツールを使うのもいいですけど自分で解析してみたかったのでやってみました。アップデートパッチ Ver3.00済みです。
+
+※
+書き換え前：
+0042570E  |. FF15 3CB04400  CALL DWORD PTR DS:[];  GDI32.GetTextMetricsA
+
+書き換え後：
+0042570E     E9 6D550200    JMP ATORI.0044AC80
+00425713     90             NOP
+
+0044AC80     FF15 3CB04400  CALL DWORD PTR DS:[;  GDI32.GetTextMetricsA
+0044AC86     8B4C24 28      MOV ECX,DWORD PTR SS:[ESP+28]
+0044AC8A     03C9           ADD ECX,ECX
+0044AC8C     894C24 2C      MOV DWORD PTR SS:[ESP+2C],ECX
+0044AC90    ^E9 7EAAFDFF    JMP ATORI.00425713
+
+0002570E: FF E9
+0002570F: 15 6D
+00025710: 3C 55
+00025711: B0 02
+00025712: 44 00
+00025713: 00 90
+
+0004AC80: 00 FF
+0004AC81: 00 15
+0004AC82: 00 3C
+0004AC83: 00 B0
+0004AC84: 00 44
+
+0004AC86: 00 8B
+0004AC87: 00 4C
+0004AC88: 00 24
+0004AC89: 00 28
+0004AC8A: 00 03
+0004AC8B: 00 C9
+0004AC8C: 00 89
+0004AC8D: 00 4C
+0004AC8E: 00 24
+0004AC8F: 00 2C
+0004AC90: 00 E9
+0004AC91: 00 7E
+0004AC92: 00 AA
+0004AC93: 00 FD
+0004AC94: 00 FF
+
+※
+おまけ　ＭＳ明朝をＭＳゴシックに変更
+0005B255: 96 83
+0005B256: BE 53
+0005B257: 92 83
+0005B258: A9 56
+0005B259: 00 83
+0005B25A: 00 62
+0005B25B: 00 83
+0005B25C: 00 4E
+処理内容は前と同じで半角サイズx2を全角サイズにしているだけです。ルビも大丈夫そう。青空と違ってキャラクタが多いので横表示の方が視点移動しやすいですね。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/b2a2b838dcd1c62946854b34e3e19e1260eea977/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20251102%2F20251102172631.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -19310,7 +19385,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-11-02T08:01:45.457Z">2025-11-02T08:01:45.457Z</time>
+    <time id="build-timestamp" datetime="2025-11-02T09:01:57.560Z">2025-11-02T09:01:57.560Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901310619291",
+          "author": null,
+          "description": "「アトリの空と真鍮の月」のwindows11パッチです。fixMetricsというツールを使うのもいいですけど自分で解析してみたかったのでやってみました。アップデートパッチ Ver3.00済みです。\n\n※\n書き換え前：\n0042570E  |. FF15 3CB04400  CALL DWORD PTR DS:[<&GDI32.GetTextMetricsA>];  GDI32.GetTextMetricsA\n\n書き換え後：\n0042570E     E9 6D550200    JMP ATORI.0044AC80\n00425713     90             NOP\n\n0044AC80     FF15 3CB04400  CALL DWORD PTR DS:[<&GDI32.GetTextMetric>;  GDI32.GetTextMetricsA\n0044AC86     8B4C24 28      MOV ECX,DWORD PTR SS:[ESP+28]\n0044AC8A     03C9           ADD ECX,ECX\n0044AC8C     894C24 2C      MOV DWORD PTR SS:[ESP+2C],ECX\n0044AC90    ^E9 7EAAFDFF    JMP ATORI.00425713\n\n0002570E: FF E9\n0002570F: 15 6D\n00025710: 3C 55\n00025711: B0 02\n00025712: 44 00\n00025713: 00 90\n\n0004AC80: 00 FF\n0004AC81: 00 15\n0004AC82: 00 3C\n0004AC83: 00 B0\n0004AC84: 00 44\n\n0004AC86: 00 8B\n0004AC87: 00 4C\n0004AC88: 00 24\n0004AC89: 00 28\n0004AC8A: 00 03\n0004AC8B: 00 C9\n0004AC8C: 00 89\n0004AC8D: 00 4C\n0004AC8E: 00 24\n0004AC8F: 00 2C\n0004AC90: 00 E9\n0004AC91: 00 7E\n0004AC92: 00 AA\n0004AC93: 00 FD\n0004AC94: 00 FF\n\n※\nおまけ　ＭＳ明朝をＭＳゴシックに変更\n0005B255: 96 83\n0005B256: BE 53\n0005B257: 92 83\n0005B258: A9 56\n0005B259: 00 83\n0005B25A: 00 62\n0005B25B: 00 83\n0005B25C: 00 4E\n処理内容は前と同じで半角サイズx2を全角サイズにしているだけです。ルビも大丈夫そう。青空と違ってキャラクタが多いので横表示の方が視点移動しやすいですね。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/11/02/172852",
+          "publishedOn": "2025-11-02T08:28:52.000Z",
+          "wordCount": 631,
+          "title": "パッチ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/b2a2b838dcd1c62946854b34e3e19e1260eea977/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20251102%2F20251102172631.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b2a2b838dcd1c62946854b34e3e19e1260eea977/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20251102%2F20251102172631.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901310096355",
           "author": null,
           "description": "ワンダースワンのマ〇コン。asie先生が関わっているならリンクしないとですね・・・。\n49bitcat.com\nnileswan will sell for 85 EUR (excluding shipping, taxes and import duties).\nThe first batch will be available for purchase via shop.49bitcat.com\n\nstarting at the 24th of November 2025 at 16:00 GMT, with future batches planned depending on demand.",
