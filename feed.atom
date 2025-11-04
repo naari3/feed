@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-04T08:02:15.134Z</updated>
+    <updated>2025-11-04T09:02:02.942Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -75,6 +75,16 @@
         <summary type="html"><![CDATA[お米から柑橘へ　～水田の水管理システムを横展開 IIJアグリ事業推進部では2017年より、稲の発育に欠かせない「水管理」に着目し、水位・水温を自動計測する「水田センサー MITSUHA」を開発し、現場...]]></summary>
         <author>
             <name>益田 まどか</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1Password Business 運用の検証 #0]]></title>
+        <id>https://blog.jxck.io/entries/2025-11-04/1password-business.html</id>
+        <link href="https://blog.jxck.io/entries/2025-11-04/1password-business.html"/>
+        <updated>2025-11-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1Password を個人で使うだけでなく、組織全体で利用することで、開発に必要なアカウントを共有したり、CLI を使って自動化するといった、様々なメリットがある。組織で 1Password を展開する際は、1Password を Business プランで契約し、ドメインに所属するメンバーにアカウントを発行することになるだろう。その際、組織でどのようなルールを設け、どのような方法で管理し、どのように組織に合わせた設計を行うかは、多くの人が同じような検証を実施することになると思われる。今回は筆者 (Jxck) が、自分で持っている mozaic.fm のドメインを用いて、ビジネスアカウントを契約し、汎用的な運用方法の素案を検討した。その成果をドキュメントにまとめたので、同じように 1Password の組織展開を考えている際は参考になればと思う。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
