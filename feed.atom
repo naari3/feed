@@ -2,10 +2,110 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-06T16:01:58.661Z</updated>
+    <updated>2025-11-06T17:03:01.543Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Secret Key の運用とアカウントリカバリ #3]]></title>
+        <id>https://blog.jxck.io/entries/2025-11-07/secret-key.html</id>
+        <link href="https://blog.jxck.io/entries/2025-11-07/secret-key.html"/>
+        <updated>2025-11-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[このエントリは、組織において 1Password Business を運用する上での考慮点を解説する。1Password Business 運用ガイド素案 - Google ドキュメントhttps://docs.google.com/document/d/1CZ5xdOz2IRHXRKVzcUZG-d4wQmlexBet8_Iee_EJlmw/edit?tab=t.0#heading=h.tt9z21tir3fmここまで 1Password における Master Password について解説してきた。記憶に頼る Master Password と異なり、Secret Key は実質的に所有の要素となる。本エントリでは、この Secret Key の扱いについて解説する。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ScalaのupickleでオプショナルなフィールドをパースするにはNone defautを設定しておくと良い]]></title>
+        <id>hatenablog://entry/17179246901313432670</id>
+        <link href="https://blog.3qe.us/entry/2025/11/07/020200"/>
+        <updated>2025-11-06T17:02:00.000Z</updated>
+        <summary type="html"><![CDATA[tl;dr
+                
+        deserialize        
+             serialize            
+
+
+
+
+ デフォルト値がある 
+ フィールドがない場合はデフォルト値にフォールバックする 
+ 値がデフォルトと同じならフィールドごと削除する 
+
+
+     デフォルト値がない 
+ フィールドがない場合は例外を投げる   
+ 値をセットする               
+
+
+
+
+
+//> using dep com.lihaoyi::upickle::4.4.1
+
+import upickle.default._
+
+case class Person(
+    name: String,
+    age: Int,
+    email: Option[String] = None,
+    address: Option[String] = None,
+    phone: Option[String] = None
+)
+
+object Person {
+  implicit val rw: ReadWriter[Person] = macroRW
+}
+
+
+
+こんな感じに設定しておくと、
+{ "name": "windymelt", "age": 32 }
+
+
+
+こういうJSONをパースできるようになります。存在しないフィールドはNoneにフォールバックします。
+//> using dep com.lihaoyi::upickle::4.4.1
+
+import upickle.default._
+
+case class Person(
+    name: String,
+    age: Int,
+    email: Option[String],
+    address: Option[String],
+    phone: Option[String]
+)
+
+object Person {
+  implicit val rw: ReadWriter[Person] = macroRW
+}
+
+
+
+このようにdefault parameterを設定していないと、
+Caused by: upickle.core.Abort: missing keys in dictionary: email, address, phone
+例外を吐いてしまいます。
+default parameterを指定しないときは、値があるかnullか、という状況を想定しているときに使うと良さそう。
+参考文献
+stackoverflow.com
+com-lihaoyi.github.io]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PlayStation Portalアップデート バージョン6.0.0 ついに単体でプレイできる携帯ゲーム機へ]]></title>
+        <id>https://gamegaz.com/?p=44486</id>
+        <link href="https://gamegaz.com/2025110744486/"/>
+        <updated>2025-11-06T16:22:34.000Z</updated>
+        <summary type="html"><![CDATA[PS Portalシステムソフトウェアアップデート バージョン6.0.0がリリースされました。→→→この記事の続きを読む
+PlayStation Portalアップデート バージョン6.0.0 ついに単体でプレイできる携帯ゲーム機へ first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[先進テクノロジーのハイプサイクル／VS Codeに「Planモード」が追加／GitHub、AIエージェントを統べる「Agent HQ」構想ほか、2025年10月の人気記事]]></title>
         <id>https://www.publickey1.jp/blog/25/vs_codeplangithubaiagent_hq202510.html</id>

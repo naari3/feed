@@ -74,8 +74,141 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-11-07">2025-11-07</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.jxck.io/" target="_blank"
+              rel="noopener">blog.jxck.io</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Secret Key の運用とアカウントリカバリ #3</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.jxck.io/entries/2025-11-07/secret-key.html" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>このエントリは、組織において 1Password Business を運用する上での考慮点を解説する。1Password Business 運用ガイド素案 - Google ドキュメントhttps://docs.google.com/document/d/1CZ5xdOz2IRHXRKVzcUZG-d4wQmlexBet8_Iee_EJlmw/edit?tab&#x3D;t.0#heading&#x3D;h.tt9z21tir3fmここまで 1Password における Master Password について解説してきた。記憶に頼る Master Password と異なり、Secret Key は実質的に所有の要素となる。本エントリでは、この Secret Key の扱いについて解説する。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-11-06">2025-11-06</time></h2>
     <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ScalaのupickleでオプショナルなフィールドをパースするにはNone defautを設定しておくと良い</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/11/07/020200" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>tl;dr
+                
+        deserialize        
+             serialize            
+
+
+
+
+ デフォルト値がある 
+ フィールドがない場合はデフォルト値にフォールバックする 
+ 値がデフォルトと同じならフィールドごと削除する 
+
+
+     デフォルト値がない 
+ フィールドがない場合は例外を投げる   
+ 値をセットする               
+
+
+
+
+
+//&gt; using dep com.lihaoyi::upickle::4.4.1
+
+import upickle.default._
+
+case class Person(
+    name: String,
+    age: Int,
+    email: Option[String] &#x3D; None,
+    address: Option[String] &#x3D; None,
+    phone: Option[String] &#x3D; None
+)
+
+object Person {
+  implicit val rw: ReadWriter[Person] &#x3D; macroRW
+}
+
+
+
+こんな感じに設定しておくと、
+{ &quot;name&quot;: &quot;windymelt&quot;, &quot;age&quot;: 32 }
+
+
+
+こういうJSONをパースできるようになります。存在しないフィールドはNoneにフォールバックします。
+//&gt; using dep com.lihaoyi::upickle::4.4.1
+
+import upickle.default._
+
+case class Person(
+    name: String,
+    age: Int,
+    email: Option[String],
+    address: Option[String],
+    phone: Option[String]
+)
+
+object Person {
+  implicit val rw: ReadWriter[Person] &#x3D; macroRW
+}
+
+
+
+このようにdefault parameterを設定していないと、
+Caused by: upickle.core.Abort: missing keys in dictionary: email, address, phone
+例外を吐いてしまいます。
+default parameterを指定しないときは、値があるかnullか、という状況を想定しているときに使うと良さそう。
+参考文献
+stackoverflow.com
+com-lihaoyi.github.io</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901313432670/1762448520" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">PlayStation Portalアップデート バージョン6.0.0 ついに単体でプレイできる携帯ゲーム機へ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025110744486/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>PS Portalシステムソフトウェアアップデート バージョン6.0.0がリリースされました。→→→この記事の続きを読む
+PlayStation Portalアップデート バージョン6.0.0 ついに単体でプレイできる携帯ゲーム機へ first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.publickey1.jp/" target="_blank"
@@ -19679,7 +19812,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-11-06T16:01:58.617Z">2025-11-06T16:01:58.617Z</time>
+    <time id="build-timestamp" datetime="2025-11-06T17:03:01.501Z">2025-11-06T17:03:01.501Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

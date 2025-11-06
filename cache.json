@@ -7456,6 +7456,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901313432670",
+          "author": null,
+          "description": "tl;dr\n                \n        deserialize        \n             serialize            \n\n\n\n\n デフォルト値がある \n フィールドがない場合はデフォルト値にフォールバックする \n 値がデフォルトと同じならフィールドごと削除する \n\n\n     デフォルト値がない \n フィールドがない場合は例外を投げる   \n 値をセットする               \n\n\n\n\n\n//> using dep com.lihaoyi::upickle::4.4.1\n\nimport upickle.default._\n\ncase class Person(\n    name: String,\n    age: Int,\n    email: Option[String] = None,\n    address: Option[String] = None,\n    phone: Option[String] = None\n)\n\nobject Person {\n  implicit val rw: ReadWriter[Person] = macroRW\n}\n\n\n\nこんな感じに設定しておくと、\n{ \"name\": \"windymelt\", \"age\": 32 }\n\n\n\nこういうJSONをパースできるようになります。存在しないフィールドはNoneにフォールバックします。\n//> using dep com.lihaoyi::upickle::4.4.1\n\nimport upickle.default._\n\ncase class Person(\n    name: String,\n    age: Int,\n    email: Option[String],\n    address: Option[String],\n    phone: Option[String]\n)\n\nobject Person {\n  implicit val rw: ReadWriter[Person] = macroRW\n}\n\n\n\nこのようにdefault parameterを設定していないと、\nCaused by: upickle.core.Abort: missing keys in dictionary: email, address, phone\n例外を吐いてしまいます。\ndefault parameterを指定しないときは、値があるかnullか、という状況を想定しているときに使うと良さそう。\n参考文献\nstackoverflow.com\ncom-lihaoyi.github.io",
+          "link": "https://blog.3qe.us/entry/2025/11/07/020200",
+          "publishedOn": "2025-11-06T17:02:00.000Z",
+          "wordCount": null,
+          "title": "ScalaのupickleでオプショナルなフィールドをパースするにはNone defautを設定しておくと良い",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901313432670/1762448520",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901313432670/1762448520"
+        },
+        {
           "id": "hatenablog://entry/17179246901310789082",
           "author": null,
           "description": "ストラテラ（アトモキセチン）になってから、血圧が異常に下がることはなくなった。\nblog.3qe.us\nしかしやはり副作用の吐き気みたいなものは自分にも発生しており、なんか微妙に気分悪いな～みたいな状況が続きがち。具合が悪くなるわけではなく、常に焼き肉食べ過ぎたときみたいな感じ。\n最初は10mgから始めましょうかということになっていたのだが、特段効果なしということで30mgになった。吐き気パワーも若干増えた気がする。成人には一日40mgから開始すると薬の説明書にはあるのだが、少なくても効く人がいるのでこういう感じでスロースタートにしている。\n抗うつ薬のような、神経伝達物質に作用する薬一般に言えることだが、すぐに効く類のものではないので、この調子で静観したい。\nそういえば薬の剤形が変わって錠剤になった。以前はカプセルだったのだが、メーカーも変わってしまった。\njdda.or.jp\n最近いろいろあってアトモキセチンの供給体制というかサプライチェーンが不安定化しているようで、その煽りを受けたのかもしれない。経済に生かされていることだなぁ（詠嘆）という感じ。",
@@ -7822,6 +7837,16 @@
       "feedUrl": "https://blog.jxck.io/feeds/atom.xml",
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
+        {
+          "id": "https://blog.jxck.io/entries/2025-11-07/secret-key.html",
+          "author": null,
+          "description": "このエントリは、組織において 1Password Business を運用する上での考慮点を解説する。1Password Business 運用ガイド素案 - Google ドキュメントhttps://docs.google.com/document/d/1CZ5xdOz2IRHXRKVzcUZG-d4wQmlexBet8_Iee_EJlmw/edit?tab=t.0#heading=h.tt9z21tir3fmここまで 1Password における Master Password について解説してきた。記憶に頼る Master Password と異なり、Secret Key は実質的に所有の要素となる。本エントリでは、この Secret Key の扱いについて解説する。",
+          "link": "https://blog.jxck.io/entries/2025-11-07/secret-key.html",
+          "publishedOn": "2025-11-07T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Secret Key の運用とアカウントリカバリ #3",
+          "imageUrl": null
+        },
         {
           "id": "https://blog.jxck.io/entries/2025-11-06/create-master-password.html",
           "author": null,
@@ -8395,6 +8420,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44486",
+          "author": "mamosuke",
+          "description": "PS Portalシステムソフトウェアアップデート バージョン6.0.0がリリースされました。→→→この記事の続きを読む\nPlayStation Portalアップデート バージョン6.0.0 ついに単体でプレイできる携帯ゲーム機へ first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025110744486/",
+          "publishedOn": "2025-11-06T16:22:34.000Z",
+          "wordCount": null,
+          "title": "PlayStation Portalアップデート バージョン6.0.0 ついに単体でプレイできる携帯ゲーム機へ",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44477",
           "author": "mamosuke",
