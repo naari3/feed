@@ -121,6 +121,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901313088776",
+          "author": null,
+          "description": "www.youtube.com\nAllison’s Bootleg Cart\nMore than you wanted to know about how Game Boy cartridges work",
+          "link": "https://akkera102.hatenablog.com/entry/2025/11/06/201625",
+          "publishedOn": "2025-11-06T11:16:25.000Z",
+          "wordCount": 492,
+          "title": "ABC Cart(GameBoy)",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901313088776/1762427785",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901313088776/1762427785"
+        },
+        {
           "id": "hatenablog://entry/17179246901310619291",
           "author": null,
           "description": "「アトリの空と真鍮の月」のwindows11パッチです。fixMetricsというツールを使うのもいいですけど自分で解析してみたかったのでやってみました。アップデートパッチ Ver3.00済みです。\n\n※\n書き換え前：\n0042570E  |. FF15 3CB04400  CALL DWORD PTR DS:[<&GDI32.GetTextMetricsA>];  GDI32.GetTextMetricsA\n\n書き換え後：\n0042570E     E9 6D550200    JMP ATORI.0044AC80\n00425713     90             NOP\n\n0044AC80     FF15 3CB04400  CALL DWORD PTR DS:[<&GDI32.GetTextMetric>;  GDI32.GetTextMetricsA\n0044AC86     8B4C24 28      MOV ECX,DWORD PTR SS:[ESP+28]\n0044AC8A     03C9           ADD ECX,ECX\n0044AC8C     894C24 2C      MOV DWORD PTR SS:[ESP+2C],ECX\n0044AC90    ^E9 7EAAFDFF    JMP ATORI.00425713\n\n0002570E: FF E9\n0002570F: 15 6D\n00025710: 3C 55\n00025711: B0 02\n00025712: 44 00\n00025713: 00 90\n\n0004AC80: 00 FF\n0004AC81: 00 15\n0004AC82: 00 3C\n0004AC83: 00 B0\n0004AC84: 00 44\n\n0004AC86: 00 8B\n0004AC87: 00 4C\n0004AC88: 00 24\n0004AC89: 00 28\n0004AC8A: 00 03\n0004AC8B: 00 C9\n0004AC8C: 00 89\n0004AC8D: 00 4C\n0004AC8E: 00 24\n0004AC8F: 00 2C\n0004AC90: 00 E9\n0004AC91: 00 7E\n0004AC92: 00 AA\n0004AC93: 00 FD\n0004AC94: 00 FF\n\n※\nおまけ　ＭＳ明朝をＭＳゴシックに変更\n0005B255: 96 83\n0005B256: BE 53\n0005B257: 92 83\n0005B258: A9 56\n0005B259: 00 83\n0005B25A: 00 62\n0005B25B: 00 83\n0005B25C: 00 4E\n処理内容は前と同じで半角サイズx2を全角サイズにしているだけです。ルビも大丈夫そう。青空と違ってキャラクタが多いので横表示の方が視点移動しやすいですね。",
@@ -4985,16 +5000,6 @@
           "wordCount": null,
           "title": "25/08/09 無題",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/banfuture9/n/n64fea454c435",
-          "author": null,
-          "description": "日記のこと忘れて寝てました。\nそもそも昨日帰ってきてからの記憶が無いな。何してたんだ？何もせずに寝たのか。そんなに疲れて帰ってきたという記憶も無いけど、もう前日のあらゆる記憶が曖昧だな。自分の連続性の無さはこういう所から生まれているのだと思う。\n続きをみる",
-          "link": "https://note.com/banfuture9/n/n64fea454c435",
-          "publishedOn": "2025-08-08T23:24:01.000Z",
-          "wordCount": null,
-          "title": "25/08/09 思った以上に疲れる",
-          "imageUrl": null
         }
       ]
     },
@@ -9528,16 +9533,6 @@
           "publishedOn": "2025-08-09T23:00:34.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2025.8.10",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44051",
-          "author": "mamosuke",
-          "description": "ps4-payload-sdk v0.1.1,PS4HEN v2.2.0 BETA pre-release-main-163,ps4-hen-plugins build_88,Tetris Overlay 0.3.7,Breeze beta99k,WiiUDownloader v2.66,BlueRetro v25.10-beta,LifeLua 08-08-25,Cxbx-Reloaded CI-71b0083,PCSX2 v2.5.102,shadPS4 v.0.10.0,NitroSwan v.0.7.5,SwanGBA v0.7.5,Azahar 2123 Release Candidate 1,vAmiga v4.3→→→この記事の続きを読む\nGameGaz Daily 2025.8.9 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025080944051/",
-          "publishedOn": "2025-08-08T23:38:27.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.8.9",
           "imageUrl": null
         }
       ]
