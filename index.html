@@ -98,6 +98,116 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://owatax00.hatenablog.com/" target="_blank"
+              rel="noopener">owatax&#x27;s blog</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">オフライン会場で音MAD上映会をした時の備忘メモ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://owatax00.hatenablog.com/entry/2025/11/06/165006" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>もくじ。
+共通事項
+現地でのリク生
+セットリストの上映
+音MAD-mixの上映
+ 
+
+
+共通事項
+いずれもOBS上でシーンを組み、プレビュー画面をプロジェクターに上映する形で実現しています。
+OBS側で録画することでそのままアーカイブも残せるので一石二鳥。
+ 
+現地でのリク生
+具体的なやり方などは以下の記事を参照。
+
+ 
+補足として、ニコニコ生放送の「合い言葉付き限定公開」機能を使うことで、現地に居る人だけがリクエスト・視聴可能な環境で上映することが出来ます。
+※合言葉付き限定公開の場合はニコレポ等でも配信が通知されないため、URLと合言葉を知っている人のみが視聴可能
+※スマホの場合はアプリからでないと合言葉の入力が出来ないため、参加者向けに事前周知が必要
+ 
+セットリストの上映
+有志に30分のセットリストを組んでもらい、順次上映するセクション。
+セットリスト検討には、1時さん作成のスプレッドシート「汎用セットリスト」が非常に便利なのでオススメ。
+ 
+
+▲再生時間を計測してくれるのが特にうれしい
+ 
+提出してもらったセットリストは、ラウドネスを揃えた上で各セット単位で1本の動画として纏めておきます。
+全動画を纏めてReaper上に突っ込み、アクションリストの「Normalize loudness of selected items to -23LUFS」を実行して機械的にラウドネスを揃えています。
+ 
+
+▲ラウドネスの調整方法
+ 
+また、リク生っぽくしたかったので投稿日時や再生数等の情報を放送者コメント風に表示。
+
+▲キャプション表示イメージ
+
+投稿日時等の情報は、動画IDを元にニコニコ公式のgetthumbinfoを叩いて取得しています。
+スプレッドシートからIMPORTXML関数を使って上手いことやってます。この辺りはchatGPTに聞いてもらえればいい感じの関数を組んでもらえるので各自で試してみてください。
+※動画数が多すぎるとIMPORTXML関数がうまく動かなくなりがちなので、必要に応じてGoogle Apps Script経由で取得する方法とかもchatGPTに聞いてみてもらえると良いと思います。
+
+ 
+色々書いたけど、削除動画とか流したい訳じゃなければマイリストの連続再生とかで十分かも。
+ 
+音MAD-mixの上映
+これはいつも通りなので割愛。
+ 
+ 
+大体こんな感じです。良き上映会ライフを！</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13574176438009882720/17179246901312971770/1762415406" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2025年にリク生をしたい人向けの記事</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://owatax00.hatenablog.com/entry/2025/11/06/164044" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>結論
+Firefoxのアドオン「New NicoLive Helper」を導入すれば出来ます！
+ 
+おまけ
+正直このアドオンの紹介だけ出来れば十分なんですが、それだけだと流石に味気ないので軽く利用イメージを置いておきます。
+ 
+
+▲表示イメージ
+ 
+
+▲放送画面イメージ
+ 
+利用手順はこんな感じ。
+ニコ生で枠を取得
+Firefoxのアドオンから「New NicoLive Helper」を起動
+枠内でリクエストされた動画リストが表示されるので、「次を再生」を押下し動画の再生を開始
+見たまんまですね。UIも分かりやすいので特に迷わず使えるかと思います。
+ 
+※ニコ生公式の「動画紹介・生放送実況」機能を用いて動画を流す形となるので、以下のような挙動となります。
+動画切替時に数秒間元の配信画面に戻る
+動画再生中は配信側の音声は乗らない
+
+配信者側も動画の音声を普通に聴けるメリットがあるが、動画に対してマイク音声で実況したりとかは出来ない（はず）
+
+（ここやり方わかる方いたら教えて下さい）
+ 
+また、アドオンマネージャーから色々設定出来るみたいです。リクエスト受付時に自動応答したりとか。
+
+▲設定画面
+ 
+こんな感じです。良きリク生ライフを！</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/50355e9ec559e68f7de39faabff886a483655b68/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fo%2Fowatax00%2F20251106%2F20251106155431.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://kiyo-shit.hatenablog.com/" target="_blank"
               rel="noopener">Robot Checkerboard</a></h3>
           <section class="articles-per-source">
@@ -17468,42 +17578,6 @@ GameGaz Daily 2025.8.9 first appeared on 大人のためのゲーム講座.</spa
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">KEENのユニークを買った</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/08/09/045208" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>かかとまで包むタイプのサンダルを買った。
-
-私の新しい歯車……（𝙈𝙮 𝙉𝙚𝙬 𝙂𝙚𝙖𝙧…） pic.twitter.com/rYynPpHa7W
-— Windymelt🚀❤️‍🔥 (@windymelt) 2025年8月8日
-   
-メンズ ユニーク  |  Black/Blackwww.keenfootwear.jp
-
-[キーン] サンダル UNEEK ユニーク メンズ ブラック/ブラック 26.0 cm
-
-KEEN(キーン)
-Amazon
-
-見て分かるとおり、このサンダルは伸縮性のあるコードが足を包むように編まれた形になっていて、通気性や軽さに優れている。気分はローマ兵士だ。
-最近の夏の暑さに耐えかねて、長く着てきた長ズボンを諦めて、ずっと前に買ったノースフェイスのハーフパンツに切り替えることにした。しかし長いソックスとスニーカーとの組み合わせがチグハグだなと思ったので、足回りも軽量化しようと思い立って、裸足で履けるサンダルを買うことにした。
-自分は足デカ幅広民なので普段28サイズの靴を購入しているところ、店頭で28をそのまま履いて丁度良かったのでそのまま購入した。買って早速散歩してみたが、やはり非常に軽くて足が蒸れずに快適、それでいてフィット感も心地良く、買って大正解だった。嬉しかったのでたくさん散歩してしまった。
-色は黒にしたが、最後までカーキ色などと迷うところとなった。どれもかわいいのだ。一番潰しが効くのは黒だろうという保守的な判断を行った結果、黒になった。
-KEENは他にもユニーク コンバーチブルというモデルを出しており、カカトの部分を上に固定して、スリッパ状態に切り替えられる、という面白いギミックがついている。価格もほぼ同じなのでこっちにしても良かったけれど、スッキリしていて見た目が好みな普通のユニークにした。</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/7f5a006f29c25b83eb08edd4bb4c47d0ac11ee0c/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31d8Hz-JACL._SL500_.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19615,7 +19689,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-11-06T07:01:39.360Z">2025-11-06T07:01:39.360Z</time>
+    <time id="build-timestamp" datetime="2025-11-06T08:02:03.025Z">2025-11-06T08:02:03.025Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
