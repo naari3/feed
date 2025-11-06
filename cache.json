@@ -7817,6 +7817,26 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2025-11-06/create-master-password.html",
+          "author": null,
+          "description": "前回は「1Password の Master Password はマルチアカウントで共通して使って良い」という解説をした。1Password の Master Password は使い回すべき理由 | blog.jxck.iohttps://blog.jxck.io/entries/2025-11-05/reuse-master-password.htmlこれは 1Password のマルチアカウントが「単一ユーザ内のスコープ」として設計されていること、そして「Master Password が覚えるべき最後の 1 つのパスワード」であるという設計思想に基づくものだった。つまり、「Master Password」をいかに堅牢に作るかは、1Password ユーザにとって非常に重要だ。「そんな Master Password はどう作ればよいか?」について解説を試みる。",
+          "link": "https://blog.jxck.io/entries/2025-11-06/create-master-password.html",
+          "publishedOn": "2025-11-06T00:00:00.000Z",
+          "wordCount": null,
+          "title": "1Password の Master Password の作り方 #2",
+          "imageUrl": null
+        },
+        {
+          "id": "https://blog.jxck.io/entries/2025-11-05/reuse-master-password.html",
+          "author": null,
+          "description": "個人で 1Password を使っている人が、1Password Business を導入している組織にジョインする場合、新しく組織用のアカウントが発行される。つまり、1Password をマルチアカウントで運用することになる。関わる組織が増えていけば、切り替えるアカウントもどんどん増えていくが、1Password はマルチアカウントの UI がよくできているため、負担になることは特にないだろう。このとき、追加する別アカウントの Master Password は、それまで使っているものを「使い回す」ことが推奨されている。「パスワードを使い回すのは避けるべき」というのが、認証において啓蒙し続けられた基本だった。ではなぜ 1Password のマルチアカウントでは、推奨されるのだろうか。",
+          "link": "https://blog.jxck.io/entries/2025-11-05/reuse-master-password.html",
+          "publishedOn": "2025-11-05T00:00:00.000Z",
+          "wordCount": null,
+          "title": "1Password の Master Password は使い回すべき理由 #1",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2025-11-04/1password-business.html",
           "author": null,
           "description": "1Password を個人で使うだけでなく、組織全体で利用することで、開発に必要なアカウントを共有したり、CLI を使って自動化するといった、様々なメリットがある。組織で 1Password を展開する際は、1Password を Business プランで契約し、ドメインに所属するメンバーにアカウントを発行することになるだろう。その際、組織でどのようなルールを設け、どのような方法で管理し、どのように組織に合わせた設計を行うかは、多くの人が同じような検証を実施することになると思われる。今回は筆者 (Jxck) が、自分で持っている mozaic.fm のドメインを用いて、ビジネスアカウントを契約し、汎用的な運用方法の素案を検討した。その成果をドキュメントにまとめたので、同じように 1Password の組織展開を考えている際は参考になればと思う。",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-06T04:05:06.936Z</updated>
+    <updated>2025-11-06T05:01:38.760Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -60,6 +60,16 @@ jp.marugame.com
 明日からはRubyWorld Conference に参加する。お昼は両日予定がないし、1日目の夜も予定がないので、だれかとご飯に行けたらうれしい。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1Password の Master Password の作り方 #2]]></title>
+        <id>https://blog.jxck.io/entries/2025-11-06/create-master-password.html</id>
+        <link href="https://blog.jxck.io/entries/2025-11-06/create-master-password.html"/>
+        <updated>2025-11-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[前回は「1Password の Master Password はマルチアカウントで共通して使って良い」という解説をした。1Password の Master Password は使い回すべき理由 | blog.jxck.iohttps://blog.jxck.io/entries/2025-11-05/reuse-master-password.htmlこれは 1Password のマルチアカウントが「単一ユーザ内のスコープ」として設計されていること、そして「Master Password が覚えるべき最後の 1 つのパスワード」であるという設計思想に基づくものだった。つまり、「Master Password」をいかに堅牢に作るかは、1Password ユーザにとって非常に重要だ。「そんな Master Password はどう作ればよいか?」について解説を試みる。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
@@ -230,6 +240,16 @@ AIは、確かに、優秀で役に立つかも知れないけど、彼らのよ
 帰りは少し寄り道をして、山陰道を西側に向かってから帰ろうかなと予定している。また車で長旅ができそうで楽しみ。]]></summary>
         <author>
             <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1Password の Master Password は使い回すべき理由 #1]]></title>
+        <id>https://blog.jxck.io/entries/2025-11-05/reuse-master-password.html</id>
+        <link href="https://blog.jxck.io/entries/2025-11-05/reuse-master-password.html"/>
+        <updated>2025-11-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[個人で 1Password を使っている人が、1Password Business を導入している組織にジョインする場合、新しく組織用のアカウントが発行される。つまり、1Password をマルチアカウントで運用することになる。関わる組織が増えていけば、切り替えるアカウントもどんどん増えていくが、1Password はマルチアカウントの UI がよくできているため、負担になることは特にないだろう。このとき、追加する別アカウントの Master Password は、それまで使っているものを「使い回す」ことが推奨されている。「パスワードを使い回すのは避けるべき」というのが、認証において啓蒙し続けられた基本だった。ではなぜ 1Password のマルチアカウントでは、推奨されるのだろうか。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
