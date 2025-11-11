@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-11T15:01:39.206Z</updated>
+    <updated>2025-11-11T16:01:52.759Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -34,6 +34,17 @@
         <summary type="html"><![CDATA[一般社団法人オープンソース・グループ・ジャパン（OSG-JP）は、日本がAI時代における国際競争力を確保し、国民から信頼されるAI社会を構築するための具体的な3つの提言「オープンソースAIを基盤とした開かれたAI社会とデジタル主権を構築する...]]></summary>
         <author>
             <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[変わる状態を型で表わす]]></title>
+        <id>https://KeenS.github.io/blog/2025/11/11/kawarujoutaiwokatadearawasu/</id>
+        <link href="https://keens.github.io/blog/2025/11/11/kawarujoutaiwokatadearawasu/"/>
+        <updated>2025-11-11T14:53:00.000Z</updated>
+        <summary type="html"><![CDATA[κeenです。
+プログラムで扱うものに状態、操作によって変わるものってありますよね。それを扱うのは普通なら難儀するのですが、Rustだと上手く扱う方法があるよって話です。]]></summary>
+        <author>
+            <name>κeenのHappy Hacκing Blog</name>
         </author>
     </entry>
     <entry>
