@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-12T10:01:47.051Z</updated>
+    <updated>2025-11-12T11:01:36.026Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GNOME 49でX11のサポートがドロップされるので対応した]]></title>
+        <id>hatenablog://entry/17179246901317473115</id>
+        <link href="https://blog.3qe.us/entry/2025/11/12/193458"/>
+        <updated>2025-11-12T10:34:58.000Z</updated>
+        <summary type="html"><![CDATA[GNOME 49が出た。
+japan.zdnet.com
+自分が普段使っているopenSuSE Tumbleweedもこれに追従してGNOMEのバージョンが上がった。いつものようにzypper updateして再起動したところGNOMEが起動しなくなってしまった。しょうがないのでrecovery modeで起動してrootで作業する。
+よく調べると、GNOME 49ではX11のサポートがドロップされ、次のGNOME 50では完全にX11非対応になるという。その影響を早速喰らったようだ。
+ログイン画面にすら辿りつけないのでディスプレイマネージャであるgdmの問題を疑ったが、結局gnome-sessionの問題だった。
+対処法
+zypper install -f gnome-session gnome-shell
+
+
+
+自分は既にWayland対応をやっていたので、別途gnome-session-waylandをインストールしていた。しかし今回gnome-sessionが標準でWayland対応になっており、gnome-session-waylandはリポジトリから消滅していた(が、インストールされたままの状態になっていて競合状態になっていた)。これでうまくgnomeのsessionを起動できなくなり、gdmもうまく動かなかったものと思われる(systemctl status display-managerしても特に異常を発見できなかった)。根本的な原因は不明なまま。
+感想
+先んじてWaylandをインストールしていると突然壊れる？という変な壊れ方だった。治ったからいいけど、原因調査は難しかった。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Switch 2に続きPS5も日本専用モデルで値下げ]]></title>
         <id>https://gamegaz.com/?p=44540</id>
