@@ -7812,21 +7812,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398548106692/1755264759"
-        },
-        {
-          "id": "hatenablog://entry/6802418398547605680",
-          "author": null,
-          "description": "前提\nGnomeにはアクセシビリティ機能としてアニメーションを無効化する設定が存在する。\n\nアニメーションを無効化すると若干動作が軽くなるようなので自分は無効化していた。\n事象\nところが、この状態では一定の場合に通知の順序がおかしくなる（1つ前の通知が出てしまう）ことがわかっている。\n# 後述のGitLabより引用\n% notify-send Test # 通知が出ることを確認する。自然に消えるのを待つ\n% notify-send Test1 && notify-send Test2 # Test1しか表示されない。自然に消えるのを待つ\n% notify-send Test3 # なぜか Test2 が表示されてしまう\n\n\n\nこれ以降はずっと1つ前の通知が出てしまう。これは同時にいくつかの通知が来た場合にトリガーになってしまうため、非常に使いづらい。\n対策\n対策は今のところアニメーション機能を有効化しておくしかない。当初はアニメーション機能が原因だと分からなかったためとても困っていた。また、アニメーションを有効化しても通知がほぼ同時に来た場合は後に来たものしか表示できない。\n有効化はCLIからも可能:\n% gsettings set org.gnome.desktop.interface enable-animations true\n\n\n\nこの問題はGnomeのトラッカーにファイルされているため、気になる人はウォッチしておこう:\ngitlab.gnome.org\n他にも困っている人がいるかもしれないのでメモとして残しておいた。",
-          "link": "https://blog.3qe.us/entry/2025/08/15/150236",
-          "publishedOn": "2025-08-15T06:02:36.000Z",
-          "wordCount": null,
-          "title": "Gnomeで通知の順序が不正になる場合はアニメーション機能を有効化するとよい",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398547605680/1755237756",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398547605680/1755237756"
         }
       ]
     },
