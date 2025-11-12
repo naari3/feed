@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-12T13:11:50.944Z</updated>
+    <updated>2025-11-12T14:01:43.343Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -14,6 +14,39 @@
         <summary type="html"><![CDATA[このエントリは、1Password Advent Calendar の 10 日目である。1Password - Qiita Advent Calendar 2025 - Qiitahttps://qiita.com/advent-calendar/2025/1passwordこのシリーズでは、組織において 1Password Business を運用する上での考慮点を解説していく。1Password Business 運用ガイド素案 - Google ドキュメントhttps://docs.google.com/document/d/1CZ5xdOz2IRHXRKVzcUZG-d4wQmlexBet8_Iee_EJlmwSSH の鍵を使って、直接サーバにログインするような運用は減っているかもしれない。それでも SSH の鍵を使う場面が無くなったわけではない。今回は、1Password への SSH Key 登録と、Git のコミット署名有効化について解説する。]]></summary>
         <author>
             <name>blog.jxck.io</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[マイクロソフト、「.NET 10」正式リリース、2年ぶりのLTS版。JITコンパイラの最適化などによる高速化、耐量子計算機暗号など新機能]]></title>
+        <id>https://www.publickey1.jp/blog/25/net_102ltsjit.html</id>
+        <link href="https://www.publickey1.jp/blog/25/net_102ltsjit.html"/>
+        <updated>2025-11-12T15:56:05.000Z</updated>
+        <summary type="html"><![CDATA[マイクロソフトは日本時間の11月13日未明からオンラインイベント「.NET Conf 2025」を開催。同社の包括的なアプリケーションフレームワークの最新版となる「.NET 10」正式版のリリースを発表しました。 .NETは、デスクトップか...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Node.jsでネイティブにTypeScriptを実行できる「Type Stripping」機能が安定版に到達。Node.js v25.2.0]]></title>
+        <id>https://www.publickey1.jp/blog/25/nodejstypescripttype_strippingnodejs_v2520.html</id>
+        <link href="https://www.publickey1.jp/blog/25/nodejstypescripttype_strippingnodejs_v2520.html"/>
+        <updated>2025-11-12T15:50:59.000Z</updated>
+        <summary type="html"><![CDATA[Node.jsでネイティブにTypeScriptを実行するための機能「Type Stripping」が、11月11日にリリースされた新バージョン「Node.js v25.2.0」で安定版になったことが発表されました。 これにより本番環境など...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[現代MIX考。「Enchant Reverb as Context」]]></title>
+        <id>https://note.com/massmasaoki/n/n698539eb8ed8</id>
+        <link href="https://note.com/massmasaoki/n/n698539eb8ed8"/>
+        <updated>2025-11-12T13:13:25.000Z</updated>
+        <summary type="html"><![CDATA[これまでは空間表現を補助するリバーブを語ってきた。
+次に、無数に存在する例外パターンである文脈を補助するリバーブについて語っていきたい。
+前章でも触れたが、結果として、例外パターンが存在する理由は、リバーブそのものの歴史と、ままならさが背景にある。
+続きをみる]]></summary>
+        <author>
+            <name>moroishimasaoki</name>
         </author>
     </entry>
     <entry>
