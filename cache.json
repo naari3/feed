@@ -3282,6 +3282,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901320596480",
+          "author": null,
+          "description": "出先でスマホのYouTubeアプリから再生開始時間指定のURLをコピーしようと思ったのですがどこを探してもその機能がなくて、怒りのあまり踏みしめた足が大地を割り、地鳴りの如き怒気が地表を覆い尽くす。空は真っ赤に灼け、衝撃波で幾多の大都市が瞬時に崩壊。放たれる憤怒はすでに感情にあらず災厄そのもの、宇宙が存続を躊躇うほどの激昂。憤死待ったなし、怒りの寿命はゼロ秒──。\nってなったので簡単にできるツールを作りました。お使いください。\nYouTubeの開始位置つき動画URLを作るやつ\n\n■YouTube動画のURL\n\n元のURLパラメータを維持する（わかる人向け）\n\n■開始位置\n時\n分\n秒\n\n\n変換クリア\n\n生成されたURL\n再生ページを開くコピー\n\n\n\n\n(function(){\n  const $ = s => document.querySelector(s);\n  const urlInput = $('#yt-url');\n  const hInput = $('#yt-hours');\n  const mInput = $('#yt-minutes');\n  const sInput = $('#yt-seconds');\n  const keepQuery = $('#yt-keep-query');\n  const btn = $('#yt-convert');\n  const clearBtn = $('#yt-clear');\n  const resultArea = $('#yt-result-area');\n  const resultInput = $('#yt-result');\n  const openLink = $('#yt-open');\n  const copyBtn = $('#yt-copy');\n  const note = $('#yt…",
+          "link": "https://nomolk.hatenablog.com/entry/2025/11/16/215701",
+          "publishedOn": "2025-11-16T12:57:01.000Z",
+          "wordCount": 1111,
+          "title": "スマホのYouTubeアプリで開始位置つきの動画URLを共有したいときに見るページ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/77e0f197110c5f6e1f0a07e0e4f289e6360ae0f2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251116%2F20251116215534.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/77e0f197110c5f6e1f0a07e0e4f289e6360ae0f2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251116%2F20251116215534.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901316827271",
           "author": null,
           "description": "Aliexpressが11/20までシングルデーセールという年イチのでかいセールをやってまして、先日こういう記事を書いたのですが\nnomolk.hatenablog.com\n教えてもらったので皆さんにも教えます。\n超音波カッターとは\n超音波カッターとは、カッターナイフの刃先が超音波で高速振動して、そのエネルギーで硬いものもめちゃめちゃ切れる！！みたいな工具です。\n今回安いやつ\nJAKEMYという工具メーカーのJM-Y10っていう製品です。\n\nこれまで超音波カッターは５万円とかするイメージだったのが、通常価格でも３万円弱と比較的リーズナブル。\nカッターで切れないものがわりと切れる\n3DプリンタのPLAが切れる（※普通のカッターだとけっこう辛い）\nプラモデルのランナーが超切れる\n厚手のゴムシートがスルスル切れる\nカッティングマットの上で切るとカッティングマットごと切れる\n木材も切れるけど5mm厚とかあると切り口が焦げる\nみたいな感じでした。\nどんなものが切れるかはメーカーの動画で見てみてください。\nwww.youtube.com\n何らかのプラスチック板？塩ビ板かな？ガラスエポキシ基板が切れるのやばいプラモデルのランナー\n他にカーボンファイバー、アクリル、革、木材などもいけると書いてあります。\nどのくらい安いのか\n複数のショップで売られてますが、ここでは販売数の多いこちらをおすすめしておきます。\n\nJAKEMY JM-Y10 PRO 2 in 1 Powerful ultrasonic cutting machine DIY electric carving tools Industrial cutting utility tool\nデフォルトの1,283円のは替え刃なので、Colorで「Pro」を選んでください。\n実際いくらで買えるのかというと、もともとの価格が28,629円、…",
@@ -10397,16 +10412,6 @@
           "wordCount": null,
           "title": "Karte.176 僕は同じ轍を踏まない",
           "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1756259684097_bokukoko_177.jpg"
-        },
-        {
-          "id": "334267",
-          "author": "チャンピオンクロス",
-          "description": "",
-          "link": "https://championcross.jp/episodes/29f744bc5262b/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2025-08-19T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Karte.175 僕は誓った",
-          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1755052414966_bokukoko_176.jpg"
         }
       ]
     },

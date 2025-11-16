@@ -2,10 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-16T12:01:38.016Z</updated>
+    <updated>2025-11-16T13:07:06.566Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[スマホのYouTubeアプリで開始位置つきの動画URLを共有したいときに見るページ]]></title>
+        <id>hatenablog://entry/17179246901320596480</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/11/16/215701"/>
+        <updated>2025-11-16T12:57:01.000Z</updated>
+        <summary type="html"><![CDATA[出先でスマホのYouTubeアプリから再生開始時間指定のURLをコピーしようと思ったのですがどこを探してもその機能がなくて、怒りのあまり踏みしめた足が大地を割り、地鳴りの如き怒気が地表を覆い尽くす。空は真っ赤に灼け、衝撃波で幾多の大都市が瞬時に崩壊。放たれる憤怒はすでに感情にあらず災厄そのもの、宇宙が存続を躊躇うほどの激昂。憤死待ったなし、怒りの寿命はゼロ秒──。
+ってなったので簡単にできるツールを作りました。お使いください。
+YouTubeの開始位置つき動画URLを作るやつ
+
+■YouTube動画のURL
+
+元のURLパラメータを維持する（わかる人向け）
+
+■開始位置
+時
+分
+秒
+
+
+変換クリア
+
+生成されたURL
+再生ページを開くコピー
+
+
+
+
+(function(){
+  const $ = s => document.querySelector(s);
+  const urlInput = $('#yt-url');
+  const hInput = $('#yt-hours');
+  const mInput = $('#yt-minutes');
+  const sInput = $('#yt-seconds');
+  const keepQuery = $('#yt-keep-query');
+  const btn = $('#yt-convert');
+  const clearBtn = $('#yt-clear');
+  const resultArea = $('#yt-result-area');
+  const resultInput = $('#yt-result');
+  const openLink = $('#yt-open');
+  const copyBtn = $('#yt-copy');
+  const note = $('#yt…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.11.16]]></title>
         <id>https://gamegaz.com/?p=44564</id>
@@ -12152,15 +12197,6 @@ b.hatena.ne.jp
 }]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Karte.175 僕は誓った]]></title>
-        <id>334267</id>
-        <link href="https://championcross.jp/episodes/29f744bc5262b/?utm_source=rss&amp;utm_medium=referral"/>
-        <updated>2025-08-19T01:00:00.000Z</updated>
-        <author>
-            <name>チャンピオンクロス</name>
         </author>
     </entry>
     <entry>
