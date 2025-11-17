@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-17T01:29:25.615Z</updated>
+    <updated>2025-11-17T02:30:38.103Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ノイズキャンセリングイヤフォン EarFun Air Pro 4+ のサンプルをもらったのでレビューします。音楽がすごく豊かに聴こえて、なんか嬉しくなってしまう]]></title>
+        <id>hatenablog://entry/17179246901314431359</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/11/17/104925"/>
+        <updated>2025-11-17T01:49:25.000Z</updated>
+        <summary type="html"><![CDATA[イヤフォンメーカーのearfunから、今日発売のノイズキャンセリングイヤフォン EarFun Air Pro 4+のサンプルをいただいたのでレビューします。
+8月に4iのレビューを書いたばかりで、正直そんなに同じメーカーのイヤフォンで書くことあるかな……と思っていたのですが、実際使ってみたらぜんぜんパワーアップしていました。
+EarFun Air Pro 4+の概要
+EarFunは中国のメーカーで、専門店でも取り扱いのあるようなしっかりしたブランドです。今回のEarFun Air Pro 4+はその最新モデルで、資料を見ると手加減なしのハイスペックを詰め込んだフラッグシップモデルという感じのようです。
+外観はこんな感じ。
+ケース開けたところイヤフォン本体。中が花柄っぽくなってておしゃれ付属品類。掃除用の綿棒がついてて親切
+イヤフォンに見た目を求めていないのであんまり言うこともないですが、ケースの正面にステータス表示のLEDがついたのがFPSに出てくるチェストっぽくてかっこいいなと思いました。
+ボーダーランズのチェスト。言うほど似てなかった
+充電時とかペアリング時に光ります。
+音質
+機能面でもいろいろいいところがあるんですけど、音質が個人的にすごく気に入ってるのでそれについて先に書きます。音、すごく良かったです。なんか音楽が活き活き聴こえます。
+第一印象としてはオッ低音効いてるなというのがあったんですけど、それがなんか「低音効かせときましたんで！」みたいなのじゃなくて、リアルなんですよね。
+あとは全体的に没入感というか、音に広がりを感じました。
+総合的に音楽がすごく豊かに聴こえて、なんか嬉しくなってしまいました。音楽がね、好きなんですよ。すごい好きなんです。でも仕事中とかBGMでずっと流してるとだんだん惰性でなんとなく流しとくかって感じになってくるじゃないですか。そういう最近…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.11.17]]></title>
         <id>https://gamegaz.com/?p=44568</id>
@@ -12101,52 +12124,6 @@ GameGaz Daily 2025.8.20 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>B</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[フォトリフレクタRPR-220をArduinoで使う／人造ネコの作り方【動画解説】]]></title>
-        <id>hatenablog://entry/6802418398553981218</id>
-        <link href="https://nomolk.hatenablog.com/entry/2025/08/19/223458"/>
-        <updated>2025-08-19T13:34:57.000Z</updated>
-        <summary type="html"><![CDATA[ねこじゃらしでかわいいネコと遊びたい。今日はネコを自作するよ。
-動画の技術解説、8本目です。
-www.youtube.com
-www.nicovideo.jp
-今回のトピックはこんな感じ。
-登場した部品について
-サーボモーター
-フォトリフレクタ
-圧電スピーカー
-回路
-コード
-そのうち書く
-※ちなみに7本目は解説することがないので書きません。動画だけ見てね。
-www.youtube.com
-登場した部品について
-動画中でほとんど説明しているのであんまり書くことないですが、型番等一応載せておきます。
-サーボモーター
-
-上のは GWS PICO STD です。普通に手に入る中では一番小さいかな？
-GWSサーボ PIC/STD/F(フタバ): 制御部品・駆動部品 秋月電子通商-電子部品・ネット通販
-下の方は個人的お気に入りの EMAX ES08MAII です。金属ギアで壊れにくいのに安い！
-
-サーボモーター ミニメタルギアアナログサーボ EMAX ES08MA II用 12g / 1.8 kg / 10秒 高速サーボアナログギア
-
-Akozon
-Amazon
-Amazonのリンクを貼りましたが実は高いので、Aliexpressで買うのがおすすめです。
-電子工作用のサーボモーターについてはここにまとめてあるので見てください。
-ちなみにサーボモーターをつないでキュイキュイやっている基板ですが、サーボ用のテスターです。
-
-
-デジタル サーボ テスター 1 チャンネル モーター サーボ コントローラー センタリング ツール 過電流保護機能と 2 つの制御モード付き RC カー 飛行機 ロボット テスター ツール
-
-LewanSoul
-Amazon
-
-自作のはツマミと連動して「プログラム上で何度に設定すればそのポジションにできるか」の数字を出していて便利なのですが、そういうのは売ってないみた…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>
