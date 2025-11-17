@@ -3267,6 +3267,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901322108945",
+          "author": null,
+          "description": "Arduino Uno R4 Minimaで作業をしていたら、急に書き込み時にエラーが出るようになり、スケッチの書き替えができなくなってしまいました。\n起きたこと\nコンパイル完了後、「書き込み中」の表示になってから妙に時間がかかった後、こんなメッセージが出ます。\n\ndfu-util 0.11-arduino4\n\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\n\nOpening DFU capable USB device...\nDevice ID 2341:0069\nRun-Time device DFU version 0101\nClaiming USB DFU (Run-Time) Interface...\nSetting Alternate Interface zero...\nDetermining device status...\nFailed to retrieve language identifiers\nFailed to retrieve language identifiers\nerror get_status: LIBUSB_ERROR_TIMEOUT\nFailed uploading: uploading error: exit status 74\n最後の４行がエラーですね。\nどうもシリアル通信を使ったプログラムで、書き込み時にArduino内の旧スケッチが大量のシリアルを出力しているとこうなるらしいです。\n対処法１\nシリアルモニタをひらいている場合は閉じる\nArduinoをリセットする（USBケーブルを抜き差しするか、ボード上のRESETボタンを押す）\n再度書き込む\nで直るときは直ります。ただこれでも直らないときもありました。その場合は…\n対処法２\nボード上のRESETボタンを素早く二度押しする\n\nボタンが固いので意外に難しい…！\n成功するとボード上のオレンジのLED（「L」って書いてあるやつ）が、ぼやーんとソフトに点滅します\n\n再度書き込む\nこれで直ると思います。\nこの操作は何？\nRESETボタンを二度押しするとセットアップモードというのに入り、スケッチの実行が行われなくなるみたいです。なので旧スケッチのシリアル出力に邪魔されることなく書き込みができるようですね。\nなお、この二度押しはそもそもボードが認識されなくなってしまった時も使えるようです。\nArduino UNO R4に書き込めなくなったらDFUモードを使え | jh4vaj\n上記ページによると、そのときは二度押し後に\n\n以上です。",
+          "link": "https://nomolk.hatenablog.com/entry/2025/11/18/024032",
+          "publishedOn": "2025-11-17T17:40:32.000Z",
+          "wordCount": 918,
+          "title": "Arduino Uno R4で急に書き込みができなくなった時の対処法",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/bb91ed8e34dad3a82f8b9c619ab28d4d3be0bfd3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251118%2F20251118020322.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/bb91ed8e34dad3a82f8b9c619ab28d4d3be0bfd3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251118%2F20251118020322.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901314431359",
           "author": null,
           "description": "イヤフォンメーカーのearfunから、今日発売のノイズキャンセリングイヤフォン EarFun Air Pro 4+のサンプルをいただいたのでレビューします。\n8月に4iのレビューを書いたばかりで、正直そんなに同じメーカーのイヤフォンで書くことあるかな……と思っていたのですが、実際使ってみたらぜんぜんパワーアップしていました。\nEarFun Air Pro 4+の概要\nEarFunは中国のメーカーで、専門店でも取り扱いのあるようなしっかりしたブランドです。今回のEarFun Air Pro 4+はその最新モデルで、資料を見ると手加減なしのハイスペックを詰め込んだフラッグシップモデルという感じのようです。\n外観はこんな感じ。\nケース開けたところイヤフォン本体。中が花柄っぽくなってておしゃれ付属品類。掃除用の綿棒がついてて親切\nイヤフォンに見た目を求めていないのであんまり言うこともないですが、ケースの正面にステータス表示のLEDがついたのがFPSに出てくるチェストっぽくてかっこいいなと思いました。\nボーダーランズのチェスト。言うほど似てなかった\n充電時とかペアリング時に光ります。\n音質\n機能面でもいろいろいいところがあるんですけど、音質が個人的にすごく気に入ってるのでそれについて先に書きます。音、すごく良かったです。なんか音楽が活き活き聴こえます。\n第一印象としてはオッ低音効いてるなというのがあったんですけど、それがなんか「低音効かせときましたんで！」みたいなのじゃなくて、リアルなんですよね。\nあとは全体的に没入感というか、音に広がりを感じました。\n総合的に音楽がすごく豊かに聴こえて、なんか嬉しくなってしまいました。音楽がね、好きなんですよ。すごい好きなんです。でも仕事中とかBGMでずっと流してるとだんだん惰性でなんとなく流しとくかって感じになってくるじゃないですか。そういう最近…",
@@ -4521,6 +4536,16 @@
       "feedUrl": "https://note.com/aun6june/rss",
       "siteUrl": "https://note.com/aun6june",
       "articles": [
+        {
+          "id": "https://note.com/aun6june/n/n9d44bab9faa1",
+          "author": null,
+          "description": "最近scrapbox(cosence)でほぼ毎日日記書いてる。\nたまに特集(テーマについて考えながら文章を書く(だいたい自分のこと))も書く。\nいわゆる鍵垢みたいに攻撃的だけど、ぜひ。\nあなたにも攻撃したいので。\n aun6june逆張り / 広い悪口 / 251117 / 251116 / 251115 / 251114 / 251113 / 251scrapbox.io \n続きをみる",
+          "link": "https://note.com/aun6june/n/n9d44bab9faa1",
+          "publishedOn": "2025-11-17T17:47:16.000Z",
+          "wordCount": 2348,
+          "title": "こせんすセンス",
+          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/96781de45ac41b8f65a2fcec1e64f7f413634b34.png"
+        },
         {
           "id": "https://note.com/aun6june/n/na4441d00d701",
           "author": null,

@@ -2,10 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-17T17:02:24.981Z</updated>
+    <updated>2025-11-17T18:02:00.946Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[こせんすセンス]]></title>
+        <id>https://note.com/aun6june/n/n9d44bab9faa1</id>
+        <link href="https://note.com/aun6june/n/n9d44bab9faa1"/>
+        <updated>2025-11-17T17:47:16.000Z</updated>
+        <summary type="html"><![CDATA[最近scrapbox(cosence)でほぼ毎日日記書いてる。
+たまに特集(テーマについて考えながら文章を書く(だいたい自分のこと))も書く。
+いわゆる鍵垢みたいに攻撃的だけど、ぜひ。
+あなたにも攻撃したいので。
+ aun6june逆張り / 広い悪口 / 251117 / 251116 / 251115 / 251114 / 251113 / 251scrapbox.io 
+続きをみる]]></summary>
+        <author>
+            <name>aun6june</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Arduino Uno R4で急に書き込みができなくなった時の対処法]]></title>
+        <id>hatenablog://entry/17179246901322108945</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/11/18/024032"/>
+        <updated>2025-11-17T17:40:32.000Z</updated>
+        <summary type="html"><![CDATA[Arduino Uno R4 Minimaで作業をしていたら、急に書き込み時にエラーが出るようになり、スケッチの書き替えができなくなってしまいました。
+起きたこと
+コンパイル完了後、「書き込み中」の表示になってから妙に時間がかかった後、こんなメッセージが出ます。
+
+dfu-util 0.11-arduino4
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2021 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+Opening DFU capable USB device...
+Device ID 2341:0069
+Run-Time device DFU version 0101
+Claiming USB DFU (Run-Time) Interface...
+Setting Alternate Interface zero...
+Determining device status...
+Failed to retrieve language identifiers
+Failed to retrieve language identifiers
+error get_status: LIBUSB_ERROR_TIMEOUT
+Failed uploading: uploading error: exit status 74
+最後の４行がエラーですね。
+どうもシリアル通信を使ったプログラムで、書き込み時にArduino内の旧スケッチが大量のシリアルを出力しているとこうなるらしいです。
+対処法１
+シリアルモニタをひらいている場合は閉じる
+Arduinoをリセットする（USBケーブルを抜き差しするか、ボード上のRESETボタンを押す）
+再度書き込む
+で直るときは直ります。ただこれでも直らないときもありました。その場合は…
+対処法２
+ボード上のRESETボタンを素早く二度押しする
+
+ボタンが固いので意外に難しい…！
+成功するとボード上のオレンジのLED（「L」って書いてあるやつ）が、ぼやーんとソフトに点滅します
+
+再度書き込む
+これで直ると思います。
+この操作は何？
+RESETボタンを二度押しするとセットアップモードというのに入り、スケッチの実行が行われなくなるみたいです。なので旧スケッチのシリアル出力に邪魔されることなく書き込みができるようですね。
+なお、この二度押しはそもそもボードが認識されなくなってしまった時も使えるようです。
+Arduino UNO R4に書き込めなくなったらDFUモードを使え | jh4vaj
+上記ページによると、そのときは二度押し後に
+
+以上です。]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[VS Codeの最新版で「Planエージェント」機能が利用可能に。仕様や実装計画の作成をCopilotが支援]]></title>
         <id>https://www.publickey1.jp/blog/25/vs_codeplancopilot.html</id>
