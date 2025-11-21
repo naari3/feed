@@ -1995,21 +1995,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/05fe07be81c8a04fef435d2dd6c0e3c7e0f963eb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51wUiQKqxQL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802418398559589030",
-          "author": null,
-          "description": "elin.pocke.me\nここ最近ずっと作っていたWebアプリを公開した。Elinのキャラクタービューワー。\n基本的にはゲームのキャラデータのCSVに色をつけるだけのアプリ。ただ一部CSVにはデータがなくてコード中にハードコードされているデータがあったので、そこはコードを正規表現で雑にパースしてきてJSONに書き出して読み込む、みたいなことをしている(フィートが持っている耐性がそれ)。\nキャラ情報を調べるときにはCSVファイルがインポートされたスプレッドシートを眺めていたのだけど、キャラが持っているアビリティとかを脳内JOINして眺める必要があったりしてなかなかだるかったので、アプリケーションの形にした。\nClaude Codeをフル活用して実装していた。わりといい感じに実装してくれつつ、まあまあ手直しが必要でもあった。時々TDDの仮実装みたいなコードをそのまま「できました!」とか言って出してくるのがあったのは厳しかった。\n技術要素は、Next.js, MUI, Cloudfrare Pagesあたりを使っている。どれもまともに使うのは自分にとって初めて。全ページをSSGして完全に静的なアプリとしてホスティングしている。\nコーディングはほとんどClaudeがやったから勉強になった感はあまりない。\nCSVをtextとしてimportして、それをアプリ上でオブジェクトの配列に直して使っている。だいぶ開発が進んでから、CSVをそのまま使うのではなく、一旦CSVをsqlite3とかにインポートした上でそれをアプリケーションからは使うようにしたほうが良かったかもしれないと思った。\nそのほうがSQLという仕組みに乗っかれることと、各リソース間のリレーションの取得がごちゃごちゃしてしまっているのを直せるかなと思っている。\n機能拡張を入れる前にリファクタとしてやってしまっても良いかもしれない。\nまだいくらか追加したい機能があるので、しばらくはこのプロジェクトをもう少し進めたい。\n4日ぐらいかけて作っていたのだけど、その間Elinのプレイはほとんどやっていなかった。時々挙動を確認するために立ち上げるぐらい。Webアプリを作るゲームが楽しくて……",
-          "link": "https://commits.hatenablog.com/entry/2025/08/24/100000",
-          "publishedOn": "2025-08-24T01:00:00.000Z",
-          "wordCount": null,
-          "title": "2025-08-23",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398559589030/1755997201",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/6802418398559589030/1755997201"
         }
       ]
     },
@@ -9520,16 +9505,6 @@
           "publishedOn": "2025-08-24T21:46:21.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2025.8.25",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44112",
-          "author": "mamosuke",
-          "description": "Laps3c0re v1.01,Genesis_plus_GX for Retroarch PS5,GoldHEN Cheats PS4 PKG (GoldHen Cheats PKG) v23/08/25,Breeze beta99i,shadPS4 Pre-release-shadPS4-2025-08-23-6dd2b30,PCSX2 v2.5.121→→→この記事の続きを読む\nGameGaz Daily 2025.8.24 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025082444112/",
-          "publishedOn": "2025-08-24T00:17:08.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.8.24",
           "imageUrl": null
         }
       ]
