@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-23T14:01:34.947Z</updated>
+    <updated>2025-11-23T15:01:38.374Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[コミットメッセージをClaudeに書かせるgit aicommit]]></title>
+        <id>hatenablog://entry/17179246901324562426</id>
+        <link href="https://diary.hatenablog.jp/entry/2025/11/23/233725"/>
+        <updated>2025-11-23T14:37:25.000Z</updated>
+        <summary type="html"><![CDATA[そういうコマンドがあるわけではありません。
+以下のような git alias を .gitconfig に設定すると git aicommit で Claude にコミットメッセージを書かせられるというだけです。
+[alias]
+  aicommit = "!f() { COMMITMSG=$(claude -p 'Generate ONLY a one-line Git commit message in English, using imperative mood, summarizing what was changed and why, based strictly on the contents of `git diff --cached`. Do not add explanation or a body. Output only the commit summary line.'); git commit -m \"$COMMITMSG\" -e; }; f"
+Claude が考えたメッセージが入った状態でエディタが上がってくるので、人間が加筆とか修正とかしてコミットするといいと思います。]]></summary>
+        <author>
+            <name>Write and Run</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ドラゴンクエスト4 なんでもありRTAサブフレームリセット任意コード実行ファミリーベーシック調整チャート]]></title>
         <id>hatenablog://entry/17179246901324444174</id>

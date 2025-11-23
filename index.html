@@ -78,6 +78,30 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://diary.hatenablog.jp/" target="_blank"
+              rel="noopener">Write and Run</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">コミットメッセージをClaudeに書かせるgit aicommit</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://diary.hatenablog.jp/entry/2025/11/23/233725" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>そういうコマンドがあるわけではありません。
+以下のような git alias を .gitconfig に設定すると git aicommit で Claude にコミットメッセージを書かせられるというだけです。
+[alias]
+  aicommit &#x3D; &quot;!f() { COMMITMSG&#x3D;$(claude -p &#x27;Generate ONLY a one-line Git commit message in English, using imperative mood, summarizing what was changed and why, based strictly on the contents of &#x60;git diff --cached&#x60;. Do not add explanation or a body. Output only the commit summary line.&#x27;); git commit -m \&quot;$COMMITMSG\&quot; -e; }; f&quot;
+Claude が考えたメッセージが入った状態でエディタが上がってくるので、人間が加筆とか修正とかしてコミットするといいと思います。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13208692334729890363/17179246901324562426/1763908645" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://pirohiko.hatenablog.com/" target="_blank"
               rel="noopener">ピロ彦の何か置き場</a></h3>
           <section class="articles-per-source">
@@ -19957,7 +19981,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-11-23T14:01:34.905Z">2025-11-23T14:01:34.905Z</time>
+    <time id="build-timestamp" datetime="2025-11-23T15:01:38.323Z">2025-11-23T15:01:38.323Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
