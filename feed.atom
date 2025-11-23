@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-23T21:01:35.899Z</updated>
+    <updated>2025-11-23T22:01:33.749Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12272,19 +12272,6 @@ www.youtube.com
 刷毛のサイズが大きければ大きいほど広い面積を塗り…]]></summary>
         <author>
             <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[練習5]]></title>
-        <id>hatenablog://entry/6802418398563948872</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/08/26/184530"/>
-        <updated>2025-08-26T09:45:30.000Z</updated>
-        <summary type="html"><![CDATA[前回の続き。寝て起きて考えてみたら、そもそも全部画像で持ってしまえばいいのでは？という結論になりました。mode0で16色の場合、1画面240/2*160=19200バイト。EWRAMでいうと10画面分のサイズは行けます。pythonで予め全部のテキスト内容を画像保存してLz7圧縮しとく。使うときはEWRAMに展開させて各画面を部分表示させる。
-・・・頭悪いなーとかいわないようにおなしゃす・・・。フォントのプロポーショナル処理なんてpython側に委託した方がいいですし、この方法なら1フレ確実に終わりますし。
-今考えているのはamigaOS ver1を模倣したメールノベルゲーム「Digital: A Love Story」を想定しています。テキスト内容は主に３つ。受信メールボックスを開く、掲示板のスレッドを見る、掲示板の各スレッド内容を見る、に集約されているので・・・行けますね。あとGUIというとスクロールバーどうすっべーとも思ったのですけど、そもそもGBAのボタンでスクロールしたいかというとしたくないし！と内なる声が反対してくる（笑。（１／３）とか表示して画面単位移動したいです。指疲れません。
-ちなみにDigitalは2時間程度で終わるフリーソフトです。1988年の海外パソコン通信な感じ。日本だと知名度ひくくてーもったいない。日本語訳もけっこういいと思うのですけれど。ピーガラガラガラ。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
