@@ -74,6 +74,49 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-11-23">2025-11-23</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2025-11-22</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2025/11/23/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>pictsquare.net
+Elinのオンライン同人イベントにサークル参加している。
+
+今日の #ルミエスト芸術観光ふらり旅 では、 ルミエストお8 でElinのキャラクター解析入門本を頒布しています～
+マニアックですがよろしければどうぞ。#LAふらり観光 pic.twitter.com/ZisDozPHcs
+— 🎹 (@p_ck_) November 22, 2025
+   
+これのために同人誌を1冊書いた。同人誌書くの初めて。
+内容はゲームの解析入門本。攻略サイトを作る中で知った内容を本にした。
+github.com
+本の内容と組版環境はこのリポジトリで公開している。技術的な内容を少し。
+本のテキストはmarkdownで書いている。そしてそれをmd2reviewを使ってRe:VIEWの記法に変換し、Re:VIEWでPDFにしている。
+md2review がいくつか自分の用途でうまく動かなかったので、パッチを当てている。https://github.com/pocke/elin-books/blob/a07e589cd7b2775d70db8d569a0798147b2e47d9/how_to_read_csv/md2review_patch.rb
+1つは//から始まるRe:VIEWのコマンドをmarkdownに書いたとき、それをmarkdownとして解釈しようとしてうまく動いていないところがあった。基本的にはmarkdownのplain textとしてRe:VIEWまで渡っていくので問題ないのだけど、//tsize[|latex|20,90,40]のようなテーブルサイズを指定するコマンドが、リンクと解釈されてうまく動いていなかった。そのため、コマンドをpreprocessでエスケープして、postprocessで書き戻すようにしている。
+また、markdownではテーブルに|を使うのだけど、テーブルの中で|をテキストとして使いたい場合は\|のようにエスケープできる(少なくともGFMではそう)。しかしmd2reviewが使っているredcarpetではパイプのエスケープが出来ないようで、バックスラッシュをつけていてもテーブルとして解釈されてしまう。
+そのため\|もエスケープと書き戻しをしている。
+他に脚注も手を入れている。Re:VIEWでは基本的には脚注の参照先がテキスト末尾にあっても、脚注の参照があるページに脚注のテキストが表示されてくれる。ただし脚注がテーブルやコラム内にあるとこれがうまく動かず、本の末尾に脚注が移動してしまう。
+これは脚注の参照先を参照があるページの近くに置いておけば問題がない。しかしmd2reviewだとmarkdownの途中に脚注の参照先を書いていても、強制的にテキストの一番最後にまとめて脚注が書き出されてしまう。おそらくredcarpetの仕様。
+これに対処するため、md2reviewがRe:VIEWの記法に変換したあと、@のあとに最初に空行が表れたところに//footnoteを移動させるようにした。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901324164131/1763859600" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-11-22">2025-11-22</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19842,7 +19885,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-11-23T00:04:37.045Z">2025-11-23T00:04:37.045Z</time>
+    <time id="build-timestamp" datetime="2025-11-23T01:30:12.385Z">2025-11-23T01:30:12.385Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
