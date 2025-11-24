@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-24T03:28:46.490Z</updated>
+    <updated>2025-11-24T04:10:48.819Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[LZ77圧縮比較]]></title>
+        <id>hatenablog://entry/17179246901324710039</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/11/24/123640"/>
+        <updated>2025-11-24T03:36:40.000Z</updated>
+        <summary type="html"><![CDATA[対象：mode3画像　524ファイル
+無圧縮：24.8MB
+grit+gritのlzオプション：8.23MB
+grit+gbalzss：8.11MB
+----
+差：0.12MB
+圧縮するにもいい感じの辞書アルゴリズムを使っているかで結果が変わるようです。豆知識。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.11.24]]></title>
         <id>https://gamegaz.com/?p=44604</id>
