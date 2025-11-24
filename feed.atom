@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-24T14:01:41.852Z</updated>
+    <updated>2025-11-24T15:01:57.807Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -24,6 +24,64 @@
         <summary type="html"><![CDATA[Amazon Web Services（AWS）は、サーバレス基盤となるAWS LambdaによるRust言語の正式サポートを発表しました。 AWS Lambdaで利用可能なプログラミング言語のランタイムはこれまでNode.js/JavaS...]]></summary>
         <author>
             <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aliexpressで注文の領収書を表示／ダウンロードする方法]]></title>
+        <id>hatenablog://entry/17179246901324909665</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/11/24/231931"/>
+        <updated>2025-11-24T14:19:31.000Z</updated>
+        <summary type="html"><![CDATA[Aliexpressで領収書の出し方がわからずハマったので、やり方を書いておきます。
+これ最初から説明されると「そりゃそうだろ」という感じなのですが、ある理由があって自分でイチからやるとなかなかたどり着けませんでした。その話は余談なので末尾に。
+ちなみに正確には領収書ではなく「レシート」と呼ばれているようです。ただ、宛名もあるので領収書として使用できると思います。（当然ながらインボイスは非対応です）
+PC版Webの場合
+スマホアプリの場合
+スマホ版Webの場合
+なんでわかりにくいのか
+PC版Webの場合
+※英語版で使っているので英語版のキャプチャを貼りますが、日本語でも同じだと思います。
+まずアカウントから注文一覧に行きます（My Orders）
+
+
+注文詳細画面が出ます。ここでReceiptを押します。
+
+
+そうするとレシートが出てきます。
+
+縦長でスクロールバーがあるのでキャプチャはできません。Downloadボタンを押してダウンロードしましょう。
+スマホアプリの場合
+※英語版で使っているので英語版のキャプチャを貼りますが、日本語でも同じだと思います。
+アカウント画面に入ったところから始めます。
+
+
+注文の一覧が出てくるので、表示したい注文の商品部分をタップします
+
+
+Download receiptを押します。
+
+
+レシートが出てきます。ダウンロードもできます。
+
+
+スマホ版Webの場合
+アカウント画面に入ったところから始めます。
+
+
+注文の一覧が出てくるので、表示したい注文の商品部分をタップします
+
+
+点点点のアイコンを押して、「レシート」を押します。
+
+
+レシートが出てきます。ダウンロードもできます。
+
+なんでわかりにくいのか
+これ普段Amazonを使い慣れてる人ならわかると思いますが、Amazonって注文履歴画面で注文商品をタップするとその商品のページに飛ぶんですよ。だけどAliexpress（スマホ）は注文明細に飛ぶんですよね。これに気づけなかった。
+それだけならまだしも、Aliexpressって注文履歴画面からわかりやすく飛べるTrackingのページが注文詳細っぽいレイアウトなので、これが注文詳細なのかなと思っちゃったんですよね。じゃあここからレシートも発行できるに違いない、と。でもそのページはあくまで配送情報なので、レシート発行できないんです。PC版は明示的に注文詳細へのリンクがあるので、最初からPCでやってたらわかりやすかったかも。
+余談ですが、個人的に本当に欲しいのはカード決済情報（カードの利用明細に１対１で対応した支払履歴）なんです。カードの履歴と突き合わせて処理してるので。でもそういう機能はないようです。
+というわけでAliexpressのTipsでした。]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>
