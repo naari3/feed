@@ -2309,6 +2309,21 @@
       "siteUrl": "https://diary.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901325332810",
+          "author": null,
+          "description": "ラーメンって、美味いと思う - Write and Run",
+          "link": "https://diary.hatenablog.jp/entry/2025/11/26/020850",
+          "publishedOn": "2025-11-25T17:08:50.000Z",
+          "wordCount": 217,
+          "title": "ラーメンって、美味いと思う",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/2989b4c4c238cdab429a63980c1f9277974ddeaa/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkoba789%2F20251126%2F20251126020843.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2989b4c4c238cdab429a63980c1f9277974ddeaa/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkoba789%2F20251126%2F20251126020843.jpg"
+        },
+        {
           "id": "hatenablog://entry/17179246901324562426",
           "author": null,
           "description": "そういうコマンドがあるわけではありません。\n以下のような git alias を .gitconfig に設定すると git aicommit で Claude にコミットメッセージを書かせられるというだけです。\n[alias]\n  aicommit = \"!f() { COMMITMSG=$(claude -p 'Generate ONLY a one-line Git commit message in English, using imperative mood, summarizing what was changed and why, based strictly on the contents of `git diff --cached`. Do not add explanation or a body. Output only the commit summary line.'); git commit -m \\\"$COMMITMSG\\\" -e; }; f\"\nClaude が考えたメッセージが入った状態でエディタが上がってくるので、人間が加筆とか修正とかしてコミットするといいと思います。",
