@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-25T08:02:06.396Z</updated>
+    <updated>2025-11-25T09:02:41.322Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[UnlockSwitch ついにリポジトリでデータ公開]]></title>
+        <id>https://gamegaz.com/?p=44615</id>
+        <link href="https://gamegaz.com/2025112544615/"/>
+        <updated>2025-11-25T08:40:59.000Z</updated>
+        <summary type="html"><![CDATA[UnlockSwitchチームがGitHubリポジトリに初めて何かをアップロードしました。→→→この記事の続きを読む
+UnlockSwitch ついにリポジトリでデータ公開 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Androidアプリで「購読中のブログ」「あなたへのお知らせ」をウィジェットで確認できるようになりました]]></title>
         <id>hatenablog://entry/17179246901325053237</id>
@@ -12387,19 +12398,6 @@ cocoonを見た。すごいと思った。
 GameGaz Daily 2025.8.28 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AVFoundation において AVMetadataIdentifierID3MetadataUserText の description は extraAttributes から貰う]]></title>
-        <id>hatenablog://entry/6802418398565458038</id>
-        <link href="https://rinsuki.hatenablog.jp/entry/2025/08/28/051734"/>
-        <updated>2025-08-27T20:17:34.000Z</updated>
-        <summary type="html"><![CDATA[この記事では https://id3.org/id3v2.4.0-frames の 4.2.6.   User defined text information frame を読んでいることを前提で話すので注意。Description = Key-Value の Key であるということだけわかっていればよい。
-タイトルに書いた通りなんだが、AVMetadataIdentifier が .id3MetadataUserText (AVMetadataIdentifierID3MetadataUserText) だった時は value を読んでも Description は貰えない (上の 4.2.6 に書かれているところの Value しか貰えない)。
-じゃあ Description はどうやって得るのか? というと、extraAttributes を読むと AVMetadataExtraAttributeInfoKey (Swift: AVMetadataExtraAttributeKey.info) の中に入っている。
-まあわかってしまえば簡単なんだが、案外 GitHub でも Google でも検索したところ実際に使ってる人がいなかったのでメモ。まあ AVFoundation で mp3 のメタデータ、しかも TXXX を読もうという人もあんまりいないという話はあるかもしれないが……。]]></summary>
-        <author>
-            <name>rinsuki’s blog</name>
         </author>
     </entry>
     <entry>

@@ -3685,23 +3685,7 @@
       "title": "rinsuki’s blog",
       "feedUrl": "https://rinsuki.hatenablog.jp/rss",
       "siteUrl": "https://rinsuki.hatenablog.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802418398565458038",
-          "author": null,
-          "description": "この記事では https://id3.org/id3v2.4.0-frames の 4.2.6.   User defined text information frame を読んでいることを前提で話すので注意。Description = Key-Value の Key であるということだけわかっていればよい。\nタイトルに書いた通りなんだが、AVMetadataIdentifier が .id3MetadataUserText (AVMetadataIdentifierID3MetadataUserText) だった時は value を読んでも Description は貰えない (上の 4.2.6 に書かれているところの Value しか貰えない)。\nじゃあ Description はどうやって得るのか? というと、extraAttributes を読むと AVMetadataExtraAttributeInfoKey (Swift: AVMetadataExtraAttributeKey.info) の中に入っている。\nまあわかってしまえば簡単なんだが、案外 GitHub でも Google でも検索したところ実際に使ってる人がいなかったのでメモ。まあ AVFoundation で mp3 のメタデータ、しかも TXXX を読もうという人もあんまりいないという話はあるかもしれないが……。",
-          "link": "https://rinsuki.hatenablog.jp/entry/2025/08/28/051734",
-          "publishedOn": "2025-08-27T20:17:34.000Z",
-          "wordCount": null,
-          "title": "AVFoundation において AVMetadataIdentifierID3MetadataUserText の description は extraAttributes から貰う",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398565458038/1756325947",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322014554/6802418398565458038/1756325947"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "かるが浜仮停車場",
@@ -8290,6 +8274,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44615",
+          "author": "mamosuke",
+          "description": "UnlockSwitchチームがGitHubリポジトリに初めて何かをアップロードしました。→→→この記事の続きを読む\nUnlockSwitch ついにリポジトリでデータ公開 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025112544615/",
+          "publishedOn": "2025-11-25T08:40:59.000Z",
+          "wordCount": null,
+          "title": "UnlockSwitch ついにリポジトリでデータ公開",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44612",
           "author": "mamosuke",
