@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-25T13:11:31.943Z</updated>
+    <updated>2025-11-25T14:02:20.647Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Rubyの次バージョンは「Ruby 4.0」に。「Ruby 4.0 Preview2」がリリース]]></title>
+        <id>https://www.publickey1.jp/blog/25/rubyruby_40ruby_40_preview2.html</id>
+        <link href="https://www.publickey1.jp/blog/25/rubyruby_40ruby_40_preview2.html"/>
+        <updated>2025-11-25T15:55:03.000Z</updated>
+        <summary type="html"><![CDATA[Ruby開発チームは11月17日、Ruby 4.0 Preview Release 2」をリリースしました。 Rubyはまつもとゆきひろ氏により1993年に開発が始められたプログラミング言語です。シンプルで生産性の高いプログラムを書くことが...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[マイクロソフト、データベースエンジンにAIを統合した「SQL Server 2025」正式版をリリース。T-SQLの正規表現関数、並行性向上による性能改善など]]></title>
+        <id>https://www.publickey1.jp/blog/25/aisql_server_2025t-sql.html</id>
+        <link href="https://www.publickey1.jp/blog/25/aisql_server_2025t-sql.html"/>
+        <updated>2025-11-25T15:52:09.000Z</updated>
+        <summary type="html"><![CDATA[マイクロソフトは同社のリレーショナルデータベース製品の最新馬「SQL Server 2025」正式版のリリースを発表しました。 DBエンジンにAIを統合 SQL Server 2025ではデータベースエンジンにAIが統合され、データに対して...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[UnlockSwitch ついにリポジトリでデータ公開]]></title>
         <id>https://gamegaz.com/?p=44615</id>
@@ -12352,29 +12372,6 @@ FUCK
 続きをみる]]></summary>
         <author>
             <name>B</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[UIKitで巨大かつ複雑なStickyヘッダーを実装する]]></title>
-        <id>hatenablog://entry/6802418398565103204</id>
-        <link href="https://techlife.cookpad.com/entry/2025/08/28/110000"/>
-        <updated>2025-08-28T02:00:00.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、レシピ事業部でiOSエンジニアをしている山田(@0x746572616e79)です。つい先日リリースしたプロフィール画面のリニューアルで、SNSアプリでよく見かけるプロフィールコンポーネントとStickyなタブを組み合わせたUIを実装し、いくつか学びがあったので実装方法と合わせてご紹介します。
-Stickyヘッダーの設計、実装方針
-プロフィール画面は元々、プロフィールコンポーネントの下にレシピ一覧、その下に「つくれぽ」のカルーセルを表示するシンプルな縦スクロール構成でした。
-
-リニューアル後は、プロフィールコンポーネントの下に2つのタブ（レシピ一覧・つくれぽ一覧）を配置し、それぞれが独立したスクロール領域を持つ構成に変更します。各タブの内容は既存の検索結果画面と同じUIコンポーネントを流用できたため、UIPageViewControllerで各一覧画面のViewControllerをホスティング（内包・管理）する設計を採用しました。
-class ProfileViewController: UIViewController {
-    private lazy var pageViewController: UIPageViewController = {
-        let viewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
-        viewController.dataSource = self
-        viewController.delegate = self
-        return viewController
-    }()
-    
-    private let recipe…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>

@@ -78,6 +78,38 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.publickey1.jp/" target="_blank"
+              rel="noopener">Publickey</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Rubyの次バージョンは「Ruby 4.0」に。「Ruby 4.0 Preview2」がリリース</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.publickey1.jp/blog/25/rubyruby_40ruby_40_preview2.html" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Ruby開発チームは11月17日、Ruby 4.0 Preview Release 2」をリリースしました。 Rubyはまつもとゆきひろ氏により1993年に開発が始められたプログラミング言語です。シンプルで生産性の高いプログラムを書くことが...</span>
+                  </div>
+                  <img src="https://www.publickey1.jp/2025/ruby4p2.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">マイクロソフト、データベースエンジンにAIを統合した「SQL Server 2025」正式版をリリース。T-SQLの正規表現関数、並行性向上による性能改善など</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.publickey1.jp/blog/25/aisql_server_2025t-sql.html" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>マイクロソフトは同社のリレーショナルデータベース製品の最新馬「SQL Server 2025」正式版のリリースを発表しました。 DBエンジンにAIを統合 SQL Server 2025ではデータベースエンジンにAIが統合され、データに対して...</span>
+                  </div>
+                  <img src="https://www.publickey1.jp/2025/sqlserver2025-ga01.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -17905,39 +17937,6 @@ FUCK
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
-              rel="noopener">クックパッド開発者ブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">UIKitで巨大かつ複雑なStickyヘッダーを実装する</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2025/08/28/110000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>こんにちは、レシピ事業部でiOSエンジニアをしている山田(@0x746572616e79)です。つい先日リリースしたプロフィール画面のリニューアルで、SNSアプリでよく見かけるプロフィールコンポーネントとStickyなタブを組み合わせたUIを実装し、いくつか学びがあったので実装方法と合わせてご紹介します。
-Stickyヘッダーの設計、実装方針
-プロフィール画面は元々、プロフィールコンポーネントの下にレシピ一覧、その下に「つくれぽ」のカルーセルを表示するシンプルな縦スクロール構成でした。
-
-リニューアル後は、プロフィールコンポーネントの下に2つのタブ（レシピ一覧・つくれぽ一覧）を配置し、それぞれが独立したスクロール領域を持つ構成に変更します。各タブの内容は既存の検索結果画面と同じUIコンポーネントを流用できたため、UIPageViewControllerで各一覧画面のViewControllerをホスティング（内包・管理）する設計を採用しました。
-class ProfileViewController: UIViewController {
-    private lazy var pageViewController: UIPageViewController &#x3D; {
-        let viewController &#x3D; UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
-        viewController.dataSource &#x3D; self
-        viewController.delegate &#x3D; self
-        return viewController
-    }()
-    
-    private let recipe…</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20075,7 +20074,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-11-25T13:11:31.904Z">2025-11-25T13:11:31.904Z</time>
+    <time id="build-timestamp" datetime="2025-11-25T14:02:20.607Z">2025-11-25T14:02:20.607Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
