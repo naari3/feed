@@ -2543,21 +2543,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/11696248318755247030/6802888565218002003/1757118287"
-        },
-        {
-          "id": "hatenablog://entry/6802418398567046708",
-          "author": null,
-          "description": "弊社、離島なんかに太陽光パネルで自律動作する農業用モニタリングポストなんかを設置しているんですが、中に使っているチャージコントローラから電圧や電流なんかをモニタリングしたいんですよ。\nhttp://www.vill.minamidaito.okinawa.jp/pdf/youran-pdf/14_industry.pdf\n \nwww.youtube.com\nお、件の農業用ポストもチラ見できる、プロジェクトのＹｏｕｔｕｂｅチャンネルなんてあるんだ。\n動画１本、チャンネル登録者８人。これはひどい。（自画自賛）\n \nで、最近のそういうのはWindowsやスマホからデータを取得するアプリがついているんですが、そういうアプリでは不便なので、modbus経由で取得できるようになっています。（できた順序はたぶん逆なんだけど、一般ユーザはmodbusなんかは触らんのでな）\n\n\n\nで、今使ってるEPEEVERのTracer 2610っていうやつ生えてるmodbusポート用の接続ケーブルを買ってあったんですが、\nhttps://www.epever.com/product/rs485-4llt-accessories-communication-cable/\n\nWindowsからはデータが取得できるんですが、モニタリングポストに入ってるのはラズパイなので、そのままでは使用できないんですよね。\n \n（いま気づいたんだけど、このWindowsアプリ .netで書かれてるので、実はmonoで動いたりしないかなｗ）\nというわけで、このケーブルを使って生でmodbusを触ってデータを取ろうとしたんですが、全然取れない。\nEPEVERのチャージコントローラは多数あって、いずれも同じプロトコルで取れるはずで、実際に汎用の485トランシーバーを使って取得している例は多数あります\nwww.youtube.com…",
-          "link": "https://honeylab.hatenablog.jp/entry/2025/08/29/104736",
-          "publishedOn": "2025-08-29T01:47:36.000Z",
-          "wordCount": null,
-          "title": "EPEverのチャージコントローラーからmodbusでデータを取ろうとしてハマった記録",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/b2fed8b100983e557c2122f8d71cd4b5960805db/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneylab%2F20250829%2F20250829102658.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b2fed8b100983e557c2122f8d71cd4b5960805db/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneylab%2F20250829%2F20250829102658.png"
         }
       ]
     },
@@ -9462,16 +9447,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2025.8.29",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44135",
-          "author": "mamosuke",
-          "description": "ソニーが開発をしている次世代機PlayStation 6にはXboxのXbox Series Sに当たる廉価版が存在するようです。→→→この記事の続きを読む\n【噂】PS6には携帯機の他に廉価版が存在する PlayStation携帯機の新情報も first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025082944135/",
-          "publishedOn": "2025-08-29T01:20:41.000Z",
-          "wordCount": null,
-          "title": "【噂】PS6には携帯機の他に廉価版が存在する PlayStation携帯機の新情報も",
-          "imageUrl": null
         }
       ]
     },
@@ -9576,6 +9551,16 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/25/kubernetesawsamazon_eks_mcp_server.html",
+          "author": null,
+          "description": "Amazon Web Services（AWS）は、複雑なkubectlコマンドや深いKubernetesの専門知識を用いなくとも、自然言語でKubernetesに指示をして運用や管理を可能にするフルマネージドな新サービス「Amazon E...",
+          "link": "https://www.publickey1.jp/blog/25/kubernetesawsamazon_eks_mcp_server.html",
+          "publishedOn": "2025-11-26T15:39:23.000Z",
+          "wordCount": null,
+          "title": "自然言語でKubernetesに話しかけて運用管理可能に。AWSがフルマネージドなAmazon EKS MCP Serverをプレビュー開始",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/25/rubyruby_40ruby_40_preview2.html",
           "author": null,
