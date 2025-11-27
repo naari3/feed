@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-27T00:03:25.178Z</updated>
+    <updated>2025-11-27T01:29:51.921Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12185,24 +12185,6 @@ GameGaz Daily 2025.8.30 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>B</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[練習6]]></title>
-        <id>hatenablog://entry/6802418398567908958</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/08/29/222428"/>
-        <updated>2025-08-29T13:24:28.000Z</updated>
-        <summary type="html"><![CDATA[リューノスさんのフォークソングを解析中だったりします。ゲーム画面から終末のエンジンを乗っけているっぽいので互換性あるかなーと思ったら案の定そのままでした。えー、公式ホームページ（web archive）にあるパッチ、全スクリプトファイルが入っているのは内緒です。。
-256色+アルファブレンド画像形式に少し感動。32bit RGBAでない、bmpにはたしかない規格ですよね。終末では使っていない形式なので現状の公開ツールですとバグります。テストできなかったんで（汗）修正予定。スクリプトも命令解釈追加しないとだめー。1割ぐらいしか通りません。GBA移植したいわけではないのでスクリプトデコーダは修正しないつもりです。
-追記：
-インストーラ（InstallShield）が古くて起動しません。Universal Extractor1をダウンロードします。
-https://legroom.net/software/uniextract
-7468: 75 74
-74AF: 75 EB
-６．あとは遊ぶだけ。全てのグットエンドは確認済みです。
-余談。_inmmは使うべきかどうかですけど、ＰＣＭでよくない？と_inmm側も言ってくるので使わなくていいと思います。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
