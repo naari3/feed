@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-29T22:01:49.618Z</updated>
+    <updated>2025-11-29T23:01:34.776Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2025.11.30]]></title>
+        <id>https://gamegaz.com/?p=44641</id>
+        <link href="https://gamegaz.com/2025113044641/"/>
+        <updated>2025-11-29T22:46:08.000Z</updated>
+        <summary type="html"><![CDATA[websrv v0.28.1,QuickNTP 1.6.0,nso-icon-tool v0.4.5,NX-Fetch 1.4.0,NX Save Sync 2.3.0,Ultrahand Overlay v2.2.0,Tetris Overlay 0.4.2,JWUDTool GUI,NitrousTracker v0.5.2,SugarDS 1.5,BlocksDS v1.15.7,shadPS4 Pre-release-shadPS4-2025-11-29-a9f8eaf,shadPS4-QtLauncher-2025-11-29-c60eb15,PCSX2 v2.5.340,ARMSX2 Nightly Build (DEBUG - 1.0.7) - 20251129-1554,xemu v0.8.118→→→この記事の続きを読む
+GameGaz Daily 2025.11.30 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[書籍を書く時のGitHubを使った原稿管理のしかた]]></title>
         <id>hatenablog://entry/17179246901326803192</id>
@@ -12003,39 +12014,6 @@ Googleマップで「観光地」と検索し、出てきた近くの適当な�
 食事処のメニューを眺め、僕は天ざるそばを注文した。揚げたての天ぷらがそこそ…]]></summary>
         <author>
             <name>僕とネットショッピング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[zypper で libgpgme error in 'gpgme_ctx_set_engine_info': <GPGME> 無効な暗号エンジンです と表示される場合は libgpg-error も更新すると良い]]></title>
-        <id>hatenablog://entry/6802418398572330389</id>
-        <link href="https://blog.3qe.us/entry/2025/09/01/195621"/>
-        <updated>2025-09-01T10:56:21.000Z</updated>
-        <summary type="html"><![CDATA[openSUSEを利用している。ある日gpgの調子が悪くなってしまい、zypperなどがうまく動かなくなってしまった。
-% sudo zypper refresh
-...
-libgpgme error in 'gpgme_ctx_set_engine_info': <GPGME> 無効な暗号エンジンです
-% /usr/libexec/scdaemon
-/usr/libexec/scdaemon: symbol lookup error: /usr/libexec/scdaemon: undefined symbol: gpgrt_spawn_actions_set_env_rev, version GPG_ERROR_1.0
-
-
-
-色々調べたところ、このシンボルgpgrt_spawn_actions_set_env_revはlibgpg-error のバージョンアップで新規に追加されたシンボルであるらしかった:
-https://lists.opensuse.org/archives/list/arm@lists.opensuse.org/message/AYMJGSA245QIWD3MXYPFHAZQXXD6AMEW/
-そこで、次のような仮説を立てた。
-libgpg-errorがバージョンアップし、シンボルが追加された
-これに追随して他のツール(gpg、scdaemon)もこれを利用するようになった
-しかし手元のバイナリがgpgだけ更新されてしまい、本来あるはずの最新のlibgpg-errorのシンボルが存在しない状態になった
-これでエラーになった
-このためlibgpg-errorを直接更新させた:
-% sudo zypper in -f https://download.opensuse.org/tumbleweed/repo/oss/x86_64/libgpg-error0-1.55-1.1.x86_64.rpm
-
-
-
-このURLは https://download.opensuse.org/tumbleweed/repo/oss/x86_64/ で検索すると最新のものが出る。
-すると何事もなく動くようになった。
-どこかで依存性を破壊してgpgだけ更新してしまっていたらしい。]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>

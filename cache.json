@@ -7374,21 +7374,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565212456657/1756881159"
-        },
-        {
-          "id": "hatenablog://entry/6802418398572330389",
-          "author": null,
-          "description": "openSUSEを利用している。ある日gpgの調子が悪くなってしまい、zypperなどがうまく動かなくなってしまった。\n% sudo zypper refresh\n...\nlibgpgme error in 'gpgme_ctx_set_engine_info': <GPGME> 無効な暗号エンジンです\n% /usr/libexec/scdaemon\n/usr/libexec/scdaemon: symbol lookup error: /usr/libexec/scdaemon: undefined symbol: gpgrt_spawn_actions_set_env_rev, version GPG_ERROR_1.0\n\n\n\n色々調べたところ、このシンボルgpgrt_spawn_actions_set_env_revはlibgpg-error のバージョンアップで新規に追加されたシンボルであるらしかった:\nhttps://lists.opensuse.org/archives/list/arm@lists.opensuse.org/message/AYMJGSA245QIWD3MXYPFHAZQXXD6AMEW/\nそこで、次のような仮説を立てた。\nlibgpg-errorがバージョンアップし、シンボルが追加された\nこれに追随して他のツール(gpg、scdaemon)もこれを利用するようになった\nしかし手元のバイナリがgpgだけ更新されてしまい、本来あるはずの最新のlibgpg-errorのシンボルが存在しない状態になった\nこれでエラーになった\nこのためlibgpg-errorを直接更新させた:\n% sudo zypper in -f https://download.opensuse.org/tumbleweed/repo/oss/x86_64/libgpg-error0-1.55-1.1.x86_64.rpm\n\n\n\nこのURLは https://download.opensuse.org/tumbleweed/repo/oss/x86_64/ で検索すると最新のものが出る。\nすると何事もなく動くようになった。\nどこかで依存性を破壊してgpgだけ更新してしまっていたらしい。",
-          "link": "https://blog.3qe.us/entry/2025/09/01/195621",
-          "publishedOn": "2025-09-01T10:56:21.000Z",
-          "wordCount": null,
-          "title": "zypper で libgpgme error in 'gpgme_ctx_set_engine_info': <GPGME> 無効な暗号エンジンです と表示される場合は libgpg-error も更新すると良い",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398572330389/1756724181",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802418398572330389/1756724181"
         }
       ]
     },
@@ -8040,6 +8025,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44641",
+          "author": "mamosuke",
+          "description": "websrv v0.28.1,QuickNTP 1.6.0,nso-icon-tool v0.4.5,NX-Fetch 1.4.0,NX Save Sync 2.3.0,Ultrahand Overlay v2.2.0,Tetris Overlay 0.4.2,JWUDTool GUI,NitrousTracker v0.5.2,SugarDS 1.5,BlocksDS v1.15.7,shadPS4 Pre-release-shadPS4-2025-11-29-a9f8eaf,shadPS4-QtLauncher-2025-11-29-c60eb15,PCSX2 v2.5.340,ARMSX2 Nightly Build (DEBUG - 1.0.7) - 20251129-1554,xemu v0.8.118→→→この記事の続きを読む\nGameGaz Daily 2025.11.30 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025113044641/",
+          "publishedOn": "2025-11-29T22:46:08.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.11.30",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44637",
           "author": "mamosuke",
