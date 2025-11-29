@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-11-29T12:01:46.057Z</updated>
+    <updated>2025-11-29T13:08:00.970Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[書籍を書く時のGitHubを使った原稿管理のしかた]]></title>
+        <id>hatenablog://entry/17179246901326803192</id>
+        <link href="https://satoru-takeuchi.hatenablog.com/entry/2025/11/29/214719"/>
+        <updated>2025-11-29T12:47:19.000Z</updated>
+        <summary type="html"><![CDATA[私はこれまでIT技術についての書籍を十冊以上書いてきました。一般書店に並ぶものから同人誌まで、何百ページのものから数十ページくらいのものまで、さまさまです。
+
+［試して理解］Linuxのしくみ　―実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識【増補改訂版】
+
+作者:武内 覚
+技術評論社
+Amazon
+
+techbookfest.org
+これらの本の原稿はすべてGitHubで管理してきました。本記事は私が長年蓄積してきたGitHubでの書籍の原稿管理方法を共有します。何事も直感に従ってその場のノリで動くという私の性格を強く反映したやり方なので、人によって合う合わないはあると思います。
+私は文書の変更はかなり細かくコミットしていきます。筆が進むうちに書いたところまでコミット、ある程度時間が経てばコミット、です。コードとは違ってコミットを論理的な単位で分割しません。ごちゃごちゃ考えていると執筆の神様は逃げてしまうので、書いたらとりあえず永続化します。また、頻繁にコミットしてると進んだ感が出てきて滅入りにくくなるというメリットもあります。
+コミットメッセージはほとんど書きません。主な理由は、コードと違って「過去にどのような契機でこの部分を変更したのかを正確に知りたい」ということがあまり無いからです。それなのにコードと同じ感覚で原稿を書こうとしても、いつまでたっても進みませんし、そのうち嫌になってきてやめてしまいそうなのでいいことが無いと考えています。
+
+まとまった変更のためにbranchを切るようなことはしません。とくに、関係者に共有する前はPRなんて作らずに、どんどんmainにマージしていきます。例えば章ごとにbranchを分ける…というようなことをしても特にメリットは無いです。作っても後で忘れますし、思い出したときにはconflictだらけになっていたり、すでに不要な文書…]]></summary>
+        <author>
+            <name>覚書</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[人はなぜ特定のブランドに愛着や自己を感じるのか？｜ドイツ出張で起きたこと]]></title>
         <id>https://note.com/kazumakawauchi/n/n0a58461b99ff</id>
@@ -12094,49 +12117,6 @@ Yahooコメントの投稿件数の推移
 …]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「Nichijou Reanimated」インタビュー │ 約200名のアマチュア・アニメーターによる『日常』ファン創作]]></title>
-        <id>hatenablog://entry/6802418398570347340</id>
-        <link href="https://namahoge.hatenadiary.com/entry/2025/09/01/100114"/>
-        <updated>2025-09-01T01:01:14.000Z</updated>
-        <summary type="html"><![CDATA[先日刊行された『ユリイカ2025年9月号　特集＝あらゐけいいち』に寄稿しました。論題は「日常的実践のエゴイズム——アニメ『日常』をめぐるファン創作について」。
-『ユリイカ2025年9月号　特集＝あらゐけいいち』に寄稿しました！論題は「日常的実践のエゴイズム——アニメ『日常』をめぐるファン創作について」。 pic.twitter.com/AipZwSXIfL
-2025年8月31日
-
-
-アニメ『日常』が放送された2011年というと、はげしくニコ厨だった自分はアニメ本編よりも音MADやらなんやらの二次創作を見ている時間のほうが長かったと思う。ので、そんな時代のことをまず書こうといろいろ調べていたら、アニメ放送から11年後の2022年に投稿された『Nichijou Reanimated』という映像を知った。
-www.youtube.com
-主に英語圏のアマチュア・アニメーター約200名で『日常』第一話を再現したプロジェクトである。映像は、原作のシーケンスに従うだけ従うが、均して3.5秒ごとに作家が切り替わり、タッチどころか手法も異なり（手書き、CG、ピクセル、実写……）、無数のパロディが埋め込まれており（Undertale、マリオ、ポプテピピック……）、なんだか、200もの二次創作者たちの想像力が押し寄せてくるようである。
-そこでひとまず話を聞いてみようと、『Nichijou Reanimated』の制作拠点ともなったDiscordサーバーに潜入し、取材を実施した。
-参加してくれたのは、hali、Pengy、pumpf4、Pikupuyo。同プロジェクトの発起人から進行管理の役割を引き継いだ4名である（発起人への取材は未実施）。およそ2年に及ぶ制作を完全にオンラインで成し遂げたのは、当時10代だったこの4名の尽力によるそうだ。
-いまや世界中で当たり前のように行われているファン創作の…]]></summary>
-        <author>
-            <name>ハイパー春菊サラダボウル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.9.1]]></title>
-        <id>https://gamegaz.com/?p=44149</id>
-        <link href="https://gamegaz.com/2025090144149/"/>
-        <updated>2025-09-01T00:34:21.000Z</updated>
-        <summary type="html"><![CDATA[ps5Spoofer,BD-NOT-JB(RemoteJarLoader 1.0),PS5_EZ_Host v1.0.4,PS5 Lua Loader v0.8.1,PS5 Payloads 1.8a MOD, BadWDSD,ARK-4 v1756673238,TinyWiiBackupManager v2.0.0-rc.3,nds-bootstrap v2.8.2,TWiLightMenu++ v27.17.2,PKHeX 25.08.30,shadPS4 Pre-release-shadPS4-2025-08-31-bcea7a0,PCSX2 v2.5.148,Iris 0.14-alpha.ColecoDS 10.7,OpenTTD 15.0-beta3,DreamSDK R4 (4.0.11.2508)→→→この記事の続きを読む
-GameGaz Daily 2025.9.1 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[25/08/31 諦め状態]]></title>
-        <id>https://note.com/banfuture9/n/nfbb4852257ad</id>
-        <link href="https://note.com/banfuture9/n/nfbb4852257ad"/>
-        <updated>2025-09-01T00:32:24.000Z</updated>
-        <summary type="html"><![CDATA[なんか色々あったが、何だったんだ？という感じで印象に残ってない。
-出前館プラチナ会員になってた。
-続きをみる]]></summary>
-        <author>
-            <name>B</name>
         </author>
     </entry>
     <entry>
