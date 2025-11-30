@@ -7950,16 +7950,6 @@
           "wordCount": null,
           "title": "アジャイルマニフェスト再注入──AMAで価値と原則を“現場の言葉”にする",
           "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=32414",
-          "author": "山本 和彦",
-          "description": "Encrypted ClientHello(ECH)は、TLS の ClientHello を暗号化するための仕様であり、現在標準化の最終段階にあります。今回は、読者の方にある程度の暗号の知識を仮定し...",
-          "link": "https://eng-blog.iij.ad.jp/archives/32414",
-          "publishedOn": "2025-09-02T01:39:45.000Z",
-          "wordCount": null,
-          "title": "Encrypted ClientHelloの仕組み",
-          "imageUrl": null
         }
       ]
     },
@@ -9388,6 +9378,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/25/swiftandroidskip_fuse.html",
+          "author": null,
+          "description": "SwiftコードでiOSアプリとAndroidアプリを開発できるツール「Skip」を提供しているGlimpse I/Oは、SwiftコードをAndroidネイティブなバイナリにコンパイルできる「Skip Fuse」を、個人など小規模開発者向...",
+          "link": "https://www.publickey1.jp/blog/25/swiftandroidskip_fuse.html",
+          "publishedOn": "2025-11-30T15:42:59.000Z",
+          "wordCount": 1455,
+          "title": "SwiftコードをAndroidネイティブにコンパイルできる「Skip Fuse」が個人開発者などに無料提供へ",
+          "imageUrl": "https://www.publickey1.jp/2025/skip-fuse-free02.png"
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/25/aiaitypescriptgithubai.html",
+          "author": null,
+          "description": "GitHubは、開発ツールとしてAIが導入されていくことで、プログラミング言語やフレームワークの選択にどのような影響を与えるかを考察したブログ記事「TypeScript, Python, and the AI feedback loop c...",
+          "link": "https://www.publickey1.jp/blog/25/aiaitypescriptgithubai.html",
+          "publishedOn": "2025-11-30T15:40:07.000Z",
+          "wordCount": 1514,
+          "title": "AIを使う開発者は自分の好みの言語よりも、AIのハルシネーションが少ないTypeScriptのような型付け言語を選ぶようになる。GitHubがAIによる変化を予想",
+          "imageUrl": "https://www.publickey1.jp/2025/github20251101.png"
+        },
         {
           "id": "https://www.publickey1.jp/blog/25/kubernetesawsamazon_eks_mcp_server.html",
           "author": null,
