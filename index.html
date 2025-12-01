@@ -17619,45 +17619,6 @@ github.com
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">YubikeyをGPGが認識しないときはlsusbして犯人を探すんじゃ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/09/03/153239" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>tl;dr
-pcscdがうまくデバイスを掴めないとYubikeyをGPGが認識できない
-systemctl status pcscdで様子を見よう
-lsusbとlsofでUSBデバイスを使用中のプロセスを特定せよ
-snapなどで起動したyubioath-desktopがUSBデバイスを奪っていることがある
-あらすじ
-gpg --card-statusしてもYubikeyが認識されない。
-% gpg --card-status                                                                                                                                                          
-gpg: selecting card failed: そのようなデバイスはありません
-gpg: OpenPGPカードが利用できません: そのようなデバイスはありません
-
-
-
-pcscd不調
-Linuxのサービスとしてはpcscdがこの手のスマートカードのハンドリングを担っている。systemctlを利用してスマートカードが認識されているか確認する:
-% systemctl status pcscd.service
-● pcscd.service - PC/SC Smart Card Daemon
-     Loaded: loaded (/usr/lib/systemd/system/pcscd.service; indirect; preset: disabled)
-     Active: active (running) since Tue 2025-09-02 20:31:30 JST; 18h ago
- Invocation: 85306…</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565212456657/1756881159" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19770,7 +19731,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-12-01T18:01:53.470Z">2025-12-01T18:01:53.470Z</time>
+    <time id="build-timestamp" datetime="2025-12-01T19:04:02.468Z">2025-12-01T19:04:02.468Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

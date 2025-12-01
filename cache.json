@@ -7452,21 +7452,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/1b2348e3e6b9511b86159adac11604a6c6c9066d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31G6xAyBY3L._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802888565212456657",
-          "author": null,
-          "description": "tl;dr\npcscdがうまくデバイスを掴めないとYubikeyをGPGが認識できない\nsystemctl status pcscdで様子を見よう\nlsusbとlsofでUSBデバイスを使用中のプロセスを特定せよ\nsnapなどで起動したyubioath-desktopがUSBデバイスを奪っていることがある\nあらすじ\ngpg --card-statusしてもYubikeyが認識されない。\n% gpg --card-status                                                                                                                                                          \ngpg: selecting card failed: そのようなデバイスはありません\ngpg: OpenPGPカードが利用できません: そのようなデバイスはありません\n\n\n\npcscd不調\nLinuxのサービスとしてはpcscdがこの手のスマートカードのハンドリングを担っている。systemctlを利用してスマートカードが認識されているか確認する:\n% systemctl status pcscd.service\n● pcscd.service - PC/SC Smart Card Daemon\n     Loaded: loaded (/usr/lib/systemd/system/pcscd.service; indirect; preset: disabled)\n     Active: active (running) since Tue 2025-09-02 20:31:30 JST; 18h ago\n Invocation: 85306…",
-          "link": "https://blog.3qe.us/entry/2025/09/03/153239",
-          "publishedOn": "2025-09-03T06:32:39.000Z",
-          "wordCount": null,
-          "title": "YubikeyをGPGが認識しないときはlsusbして犯人を探すんじゃ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565212456657/1756881159",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565212456657/1756881159"
         }
       ]
     },

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-01T18:01:53.510Z</updated>
+    <updated>2025-12-01T19:04:02.510Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12156,35 +12156,6 @@ github.com
 マイクロソフトさんはタスクバーを下固定で使ってほしいようですけど、そんなの今更やってられないです。昔から右、左、上と使えたわけで、１行でも多くコードを読めるようにしたい自由さを奪うとかありえませんねー。初めての方は設定画面の重要なお知らせを一読しといた方がいいと思います。最悪windowsアプデでハマる可能性があります。]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[YubikeyをGPGが認識しないときはlsusbして犯人を探すんじゃ]]></title>
-        <id>hatenablog://entry/6802888565212456657</id>
-        <link href="https://blog.3qe.us/entry/2025/09/03/153239"/>
-        <updated>2025-09-03T06:32:39.000Z</updated>
-        <summary type="html"><![CDATA[tl;dr
-pcscdがうまくデバイスを掴めないとYubikeyをGPGが認識できない
-systemctl status pcscdで様子を見よう
-lsusbとlsofでUSBデバイスを使用中のプロセスを特定せよ
-snapなどで起動したyubioath-desktopがUSBデバイスを奪っていることがある
-あらすじ
-gpg --card-statusしてもYubikeyが認識されない。
-% gpg --card-status                                                                                                                                                          
-gpg: selecting card failed: そのようなデバイスはありません
-gpg: OpenPGPカードが利用できません: そのようなデバイスはありません
-
-
-
-pcscd不調
-Linuxのサービスとしてはpcscdがこの手のスマートカードのハンドリングを担っている。systemctlを利用してスマートカードが認識されているか確認する:
-% systemctl status pcscd.service
-● pcscd.service - PC/SC Smart Card Daemon
-     Loaded: loaded (/usr/lib/systemd/system/pcscd.service; indirect; preset: disabled)
-     Active: active (running) since Tue 2025-09-02 20:31:30 JST; 18h ago
- Invocation: 85306…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
