@@ -2,10 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-01T05:08:04.464Z</updated>
+    <updated>2025-12-01T06:01:44.102Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[chatgpt先生あざます]]></title>
+        <id>hatenablog://entry/17179246901327476679</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/12/01/143235"/>
+        <updated>2025-12-01T05:32:35.000Z</updated>
+        <summary type="html"><![CDATA[スクリプトファイルに既読フラグ用のユニーク番号を付けたい場合、とある命令にパラメータをつけるしかないなあと考えています。それが以下のコードです。量が少なくて感動してしまいます・・・。しかもベースはchatgpt先生で一瞬です。
+import os
+import sys
+import glob
+import re
+
+def func(match):
+	global bit, idx
+	ret = f"{word} {idx} {bit}"
+
+	bit += 1
+	if bit == 8:
+		bit = 0
+		idx += 1
+
+	return ret
+
+word = "COL"
+list = glob.glob(os.path.join("*.txt"))
+bit = 0
+idx = 1		# idxの0番地は空（ブランク）書き込み用
+
+for file in list:
+	new = []
+
+	with open(file, "r") as f:
+		lines = f.readlines()
+
+	for line in lines:
+		tmp = re.sub(r'\b' + word + r"\b", func, line)
+		new.append(tmp)
+
+	with open(file, "w") as f:
+		f.writelines(new)
+
+	print(f"txt_col... {file}")
+
+print(f"done! idx:{idx} bit:{bit}")
+結果は「idx:2979 bit:6」なので2979 * 8バイト + 1バイトで23833バイト。SRAM（MAX:32768）で他詰めるとぎりっすね・・・。うーん。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2025年11月第5週〕]]></title>
         <id>hatenablog://entry/17179246901327387499</id>

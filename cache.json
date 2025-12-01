@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901327476679",
+          "author": null,
+          "description": "スクリプトファイルに既読フラグ用のユニーク番号を付けたい場合、とある命令にパラメータをつけるしかないなあと考えています。それが以下のコードです。量が少なくて感動してしまいます・・・。しかもベースはchatgpt先生で一瞬です。\nimport os\nimport sys\nimport glob\nimport re\n\ndef func(match):\n\tglobal bit, idx\n\tret = f\"{word} {idx} {bit}\"\n\n\tbit += 1\n\tif bit == 8:\n\t\tbit = 0\n\t\tidx += 1\n\n\treturn ret\n\nword = \"COL\"\nlist = glob.glob(os.path.join(\"*.txt\"))\nbit = 0\nidx = 1\t\t# idxの0番地は空（ブランク）書き込み用\n\nfor file in list:\n\tnew = []\n\n\twith open(file, \"r\") as f:\n\t\tlines = f.readlines()\n\n\tfor line in lines:\n\t\ttmp = re.sub(r'\\b' + word + r\"\\b\", func, line)\n\t\tnew.append(tmp)\n\n\twith open(file, \"w\") as f:\n\t\tf.writelines(new)\n\n\tprint(f\"txt_col... {file}\")\n\nprint(f\"done! idx:{idx} bit:{bit}\")\n結果は「idx:2979 bit:6」なので2979 * 8バイト + 1バイトで23833バイト。SRAM（MAX:32768）で他詰めるとぎりっすね・・・。うーん。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/12/01/143235",
+          "publishedOn": "2025-12-01T05:32:35.000Z",
+          "wordCount": 569,
+          "title": "chatgpt先生あざます",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327476679/1764567406",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327476679/1764567406"
+        },
+        {
           "id": "hatenablog://entry/17179246901324814571",
           "author": null,
           "description": "twitterやっていないので又聞き失礼（＾＾；\nAMURu先生がやってくれました。出来てばっかりなのでユーザ公開はもうちょい先でしょうけど、夢が広がりんぐ案件です。steamのpiroroに組み込まれるのかしら？いやー続報がとても楽しみです！\nついに…GBAサウンドドライバを使って曲を作りました！\nGBA実機で録音しています。https://t.co/FRzt8Vw19G\n— AMURu (@amuru_chiptune) 2025年11月24日\n   \nstore.steampowered.com",
