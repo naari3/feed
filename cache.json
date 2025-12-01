@@ -7138,6 +7138,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901327248808",
+          "author": null,
+          "description": "他の言語の非同期プリミティブと比べてもOxかなり良いな〜という記事です。\n先日Ox v1.0.0がリリースされた。Oxはプログラミング言語Scalaの非同期処理ライブラリで、Java 21から搭載されたVirtual Threadの機能を活用して、非同期処理のための道具を使いやすい形で提供してくれる。\ngithub.com\n今回ついに1系がリリースされたので、改めてOxを紹介し、他の言語における非同期処理プリミティブと何が違うのか、どう便利なのかを紹介していければと思う。OxはScalaのライブラリだが、Scalaを知っている人も知らない人でも読めるようなコードになっているので安心してほしい。Oxの詳細はドキュメントを参考にしてほしい。\nというのも、以前Oxをフィーチャーした記事を書いたことがあったが、まだメジャーバージョンが1に到達していないのもあり、あまり深く踏み込むことはしていなかったのだ。\n従来のScala向け非同期ライブラリのアプローチとOx\n他の言語の非同期処理プリミティブとOx\nOxの軽量プロセス\nOxを使ってみよう\n軽量プロセスをスポーンする\n処理を並行実行する\n処理を先勝ちで並行実行する\n処理をタイムアウトさせる\n中断しても必ず処理を実行する\nリソースを必ず解放したい\nコレクションに対する並行処理\nox.scheduling\nスケジューリング\nox.scheduling.repeat\nox.resilience\nリトライ処理を行う\nレートリミットを行う\nサーキットブレーカ\nチャネル\nチャネルをつくる\nチャネルでおくる・もらう\nチャネルをselectする\nストリーミング処理\nOxいいんじゃないの\n従来のScala向け非同期ライブラリのアプローチとOx\nScalaのための非同期処理ライブラリは他にもたくさんあった。Cats Effect、ZIO、Kyo、などな…",
+          "link": "https://blog.3qe.us/entry/2025/12/01/205617",
+          "publishedOn": "2025-12-01T11:56:17.000Z",
+          "wordCount": null,
+          "title": "Goroutineよりも高級で、Async/Awaitほど世界を分断しない、Oxという選択肢",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901327248808/1764590177",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901327248808/1764590177"
+        },
+        {
           "id": "hatenablog://entry/17179246901323471808",
           "author": null,
           "description": "LambrollというOSSがある。\ngithub.com\nAWS Lambdaのデプロイを簡単にしてくれるツールで、非常に使い勝手が良いので仕事で愛用している。\nそんなLambrollと、同様に簡単にScalaを書けるようにしてくれるScala CLIとを組み合わせてみたらどうなるだろう、と思って実験してみたところ、すごく簡単にAWS Lambda関数を定義できることがわかったので紹介したい。\n今回利用したソースコードはGitHubに公開している:\ngithub.com\nScala CLI\nScala CLIはScala用のスクリプティングツールで、Node.jsでいうところのDenoみたいな存在。\nscala-cli.virtuslab.org\nblog.3qe.us\nScala.js\n今回はScalaをJVMにコンパイルするのではなく、JavaScriptをターゲットにトランスパイルして、Node.jsランタイムでLambdaを実行してみようと思う。JSにトランスパイルすることで、高速な起動時間とV8エンジンのパフォーマンスを得ることができる。\nScalaをJSにトランスパイルするには、Scala.jsを利用すればよい:\nwww.scala-js.org\nScala CLIでは、--jsオプションをつけるだけでScala.jsが起動して勝手にJSにトランスパイルして実行したりパッケージを作ったりしてくれる。今回はこれを使って楽をするという作戦だ。\n下準備\nあらかじめAWSのコンソールでNode.jsランタイムのLambda関数を作成しておき、これをlambroll initで取り込んでおく:\nλ lambroll --profile=windymelt --region=ap-northeast-1 init --function-name=scalambroll-e…",
@@ -7568,16 +7583,6 @@
           "wordCount": 317,
           "title": "サプライチェーン攻撃への防御策",
           "imageUrl": "https://blog.jxck.io/assets/img/jxck.600x600.png"
-        },
-        {
-          "id": "https://blog.jxck.io/entries/2025-09-03/nx-incidents.html",
-          "author": null,
-          "description": "Nx リポジトリが攻撃を受け、広範囲にわたるインシデントが発生した。今回の事例は、GitHub Actions を中心に複数のステップが組み合わさった攻撃であり、過去に何度も発生してきた攻撃と本質的には変わらない。しかし、途中で AI が何度か登場するため「AI が書いたコードをマージしたから」などといった表面的な反応もあるが、実態はそこまで単純な話でもない。また、「自分のプロジェクトは Nx を使っていないから関係ない」とも言えない攻撃であるため、特にフロントエンドエンジニアは全員注意と確認が必要となる。この攻撃が何だったのか、そこから学べることは何なのか、解説する。",
-          "link": "https://blog.jxck.io/entries/2025-09-03/nx-incidents.html",
-          "publishedOn": "2025-09-03T00:00:00.000Z",
-          "wordCount": null,
-          "title": "Nx の攻撃から学べること #s1ngularity",
-          "imageUrl": null
         }
       ]
     },
