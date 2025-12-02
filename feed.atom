@@ -2,10 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-02T11:01:47.422Z</updated>
+    <updated>2025-12-02T12:01:45.697Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[mdocのCLI版コマンドをScala 3で動作させるにはcs launchを使うと便利]]></title>
+        <id>hatenablog://entry/17179246901327934228</id>
+        <link href="https://blog.3qe.us/entry/2025/12/02/204503"/>
+        <updated>2025-12-02T11:45:03.000Z</updated>
+        <summary type="html"><![CDATA[mdocというツールがある。
+scalameta.org
+MarkdownにScalaのコードを書くと、自動的にこれをコンパイルして値が埋まった状態にしてくれるというもので、ドキュメンテーションに非常に便利だ。
+例えば以下のようなコードスニペットがあるとする:
+```scala mdoc
+val x: Any = "hello"
+x match
+case s: String => "string"
+case n: Int => "int"
+```
+
+
+
+これをmdocに通すといい感じにしてくれる:
+```scala
+val x: Any = "hello"
+// x: Any = "hello"
+x match
+case s: String => "string"
+case n: Int => "int"
+// res0: String = "string"
+```
+
+
+
+mdocはCLIツールでも利用できるし、sbt上のプラグインとしても利用できるし、また単純なScalaのライブラリとしてプログラムから呼び出すこともできる。
+CLI版mdoc
+mdocはcs(Coursier)でインストールできる:
+% cs install mdoc
+
+
+
+あとは-inと-outを指定するだけだ:
+% mdoc -in src -out out
+
+
+
+するとsrc以下のディレクトリにある.mdファイルのうち、scala mdocというシンタックスハイライトになっている部分が自動的にコンパイルされ、評価結果がコメントとして挿入される。
+Scalaのメジャーバージョンを指定する
+sbtやscalaのライブラリとして使うときは利用するScalaのバージョンは自明に決まっていたので何も考えることがなかったが、CLI版ではScalaのバージョンについて考えなければならない。
+そして、mdoc自体にはScalaのバージョンを指定する仕組みがない。いろいろ探してみた結果、これはmdoc自体のアーティファクトレベルで固定されているらしい。mdocがScala 2系向けにコンパイルされているなら2系でコンパイルするし、3系向けにコンパイルされているなら3系でコンパイルするということらしい。
+Coursierを使っている限り、アーティファクトを切り替えるのは難しいことではない。csでインストールしたものをそのまま使う代わりに、cs launchを利用すればよい:
+% cs launch org.scalameta:mdoc_3:2.8.0
+
+
+
+ただし、詳細なバージョンは指定できない。基本的に最新のものが使われると考えておうたほうがよいだろう。どうしても必要なら手元に持ってきて特定のScalaでビルドしても良いだろう。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[選択肢ジャンプテーブル作成]]></title>
         <id>hatenablog://entry/17179246901327887103</id>
@@ -12200,17 +12256,6 @@ www.nicovideo.jp
         <summary type="html"><![CDATA[はじめに クラウドソリューション部 ソリューション１課の瀬川です。2023年にIIJに入社し、クラウドソリューションの開発や、クラウド導入力の向上に関する活動などに携わっています。 2024年後半から...]]></summary>
         <author>
             <name>瀬川 浩希</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.9.4]]></title>
-        <id>https://gamegaz.com/?p=44163</id>
-        <link href="https://gamegaz.com/2025090444163/"/>
-        <updated>2025-09-03T23:05:01.000Z</updated>
-        <summary type="html"><![CDATA[PKG Tool Box v1.4.0,kstuff v1.6.1,Playstation-5-Save-Mounter v1.4.7,PS5_EZ_Host v1.1,PS5 Payloads 1.8a MOD,ARK-4 v1756922700,AtmoPack-Vanilla 3.0.7,ldn_mitm v1.21.0,DBI 807ru,MissionControl 0.13.5,FrogGBA v0.3.2,Nintendo Classicsタイトル追加→→→この記事の続きを読む
-GameGaz Daily 2025.9.4 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

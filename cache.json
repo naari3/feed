@@ -7154,6 +7154,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901327934228",
+          "author": null,
+          "description": "mdocというツールがある。\nscalameta.org\nMarkdownにScalaのコードを書くと、自動的にこれをコンパイルして値が埋まった状態にしてくれるというもので、ドキュメンテーションに非常に便利だ。\n例えば以下のようなコードスニペットがあるとする:\n```scala mdoc\nval x: Any = \"hello\"\nx match\ncase s: String => \"string\"\ncase n: Int => \"int\"\n```\n\n\n\nこれをmdocに通すといい感じにしてくれる:\n```scala\nval x: Any = \"hello\"\n// x: Any = \"hello\"\nx match\ncase s: String => \"string\"\ncase n: Int => \"int\"\n// res0: String = \"string\"\n```\n\n\n\nmdocはCLIツールでも利用できるし、sbt上のプラグインとしても利用できるし、また単純なScalaのライブラリとしてプログラムから呼び出すこともできる。\nCLI版mdoc\nmdocはcs(Coursier)でインストールできる:\n% cs install mdoc\n\n\n\nあとは-inと-outを指定するだけだ:\n% mdoc -in src -out out\n\n\n\nするとsrc以下のディレクトリにある.mdファイルのうち、scala mdocというシンタックスハイライトになっている部分が自動的にコンパイルされ、評価結果がコメントとして挿入される。\nScalaのメジャーバージョンを指定する\nsbtやscalaのライブラリとして使うときは利用するScalaのバージョンは自明に決まっていたので何も考えることがなかったが、CLI版ではScalaのバージョンについて考えなければならない。\nそして、mdoc自体にはScalaのバージョンを指定する仕組みがない。いろいろ探してみた結果、これはmdoc自体のアーティファクトレベルで固定されているらしい。mdocがScala 2系向けにコンパイルされているなら2系でコンパイルするし、3系向けにコンパイルされているなら3系でコンパイルするということらしい。\nCoursierを使っている限り、アーティファクトを切り替えるのは難しいことではない。csでインストールしたものをそのまま使う代わりに、cs launchを利用すればよい:\n% cs launch org.scalameta:mdoc_3:2.8.0\n\n\n\nただし、詳細なバージョンは指定できない。基本的に最新のものが使われると考えておうたほうがよいだろう。どうしても必要なら手元に持ってきて特定のScalaでビルドしても良いだろう。",
+          "link": "https://blog.3qe.us/entry/2025/12/02/204503",
+          "publishedOn": "2025-12-02T11:45:03.000Z",
+          "wordCount": null,
+          "title": "mdocのCLI版コマンドをScala 3で動作させるにはcs launchを使うと便利",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901327934228/1764675903",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901327934228/1764675903"
+        },
+        {
           "id": "hatenablog://entry/17179246901327665610",
           "author": null,
           "description": "前回はこちら。\nblog.3qe.us\n先日定期通院した。アトモキセチンを30mg飲んでいるが、若干？調子が良いこと、試しに40mgにしてみて様子を見ること、などを話した。\n薬局に行って処方箋を出すのだが、しばらくするとなにやら薬剤師がウ〜〜ムという表情をしてこちらにやってきた。曰く、アトモキセチンの在庫が払底しそうで10mgのカプセルが足りないというのである。\nというのも、40mgを処方するが具合が悪くなるようであれば調整して30にもできるようにする、という処方をしている都合上、10mgのカプセルで処方されていたのだが、なんかいろいろあってアトモキセチンのサプライチェーンがぶっ壊れており（詳細は前回記事を見てくれ）、なんとその煽りがついに自分にもやってきたのだ。\n40mgのカプセルならあるんですけどねえ、ということだったので、自分はまぁ全然良いですよ、という感じだったのだが、処方は処方なので勝手に薬剤師がいじることはできない仕組みになっているらしく、医者のところに疑義照会的に電話をかけて調整しているようだった。なんともご苦労様なことで、申し訳ない。\nけっきょく40mgのカプセルへの変更は叶わなかったらしかった。それはそうと薬局からはもう出せない。そこで、半分処方します、足りないぶんはあとでなんとかするから郵送させてクレメンス、という感じになった。これならしばらくは足りる。マイナンバーであれこれやっているので、住所は勝手にフィルインされて全部勝手になんかいい感じになって届くことになった。デジタル大時代。\n自分の場合は薬がなくても社会生活が破綻するくらいで済むが（良くはない）、インスリンの注射とかエピペンとかニトログリセリンとかがなくなったら普通にスピード感が出てぼんぼん人が死んでしまう。健康で文化的な最低限度の生活を維持するためには結構な手間暇がかかり、それはまた微妙なバランスの上で成り立っていることだなぁ・・・と思うのであった",
@@ -9331,16 +9346,6 @@
           "publishedOn": "2025-09-04T22:18:07.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2025.9.5",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44163",
-          "author": "mamosuke",
-          "description": "PKG Tool Box v1.4.0,kstuff v1.6.1,Playstation-5-Save-Mounter v1.4.7,PS5_EZ_Host v1.1,PS5 Payloads 1.8a MOD,ARK-4 v1756922700,AtmoPack-Vanilla 3.0.7,ldn_mitm v1.21.0,DBI 807ru,MissionControl 0.13.5,FrogGBA v0.3.2,Nintendo Classicsタイトル追加→→→この記事の続きを読む\nGameGaz Daily 2025.9.4 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025090444163/",
-          "publishedOn": "2025-09-03T23:05:01.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.9.4",
           "imageUrl": null
         }
       ]

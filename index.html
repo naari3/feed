@@ -78,6 +78,72 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">mdocのCLI版コマンドをScala 3で動作させるにはcs launchを使うと便利</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/12/02/204503" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>mdocというツールがある。
+scalameta.org
+MarkdownにScalaのコードを書くと、自動的にこれをコンパイルして値が埋まった状態にしてくれるというもので、ドキュメンテーションに非常に便利だ。
+例えば以下のようなコードスニペットがあるとする:
+&#x60;&#x60;&#x60;scala mdoc
+val x: Any &#x3D; &quot;hello&quot;
+x match
+case s: String &#x3D;&gt; &quot;string&quot;
+case n: Int &#x3D;&gt; &quot;int&quot;
+&#x60;&#x60;&#x60;
+
+
+
+これをmdocに通すといい感じにしてくれる:
+&#x60;&#x60;&#x60;scala
+val x: Any &#x3D; &quot;hello&quot;
+// x: Any &#x3D; &quot;hello&quot;
+x match
+case s: String &#x3D;&gt; &quot;string&quot;
+case n: Int &#x3D;&gt; &quot;int&quot;
+// res0: String &#x3D; &quot;string&quot;
+&#x60;&#x60;&#x60;
+
+
+
+mdocはCLIツールでも利用できるし、sbt上のプラグインとしても利用できるし、また単純なScalaのライブラリとしてプログラムから呼び出すこともできる。
+CLI版mdoc
+mdocはcs(Coursier)でインストールできる:
+% cs install mdoc
+
+
+
+あとは-inと-outを指定するだけだ:
+% mdoc -in src -out out
+
+
+
+するとsrc以下のディレクトリにある.mdファイルのうち、scala mdocというシンタックスハイライトになっている部分が自動的にコンパイルされ、評価結果がコメントとして挿入される。
+Scalaのメジャーバージョンを指定する
+sbtやscalaのライブラリとして使うときは利用するScalaのバージョンは自明に決まっていたので何も考えることがなかったが、CLI版ではScalaのバージョンについて考えなければならない。
+そして、mdoc自体にはScalaのバージョンを指定する仕組みがない。いろいろ探してみた結果、これはmdoc自体のアーティファクトレベルで固定されているらしい。mdocがScala 2系向けにコンパイルされているなら2系でコンパイルするし、3系向けにコンパイルされているなら3系でコンパイルするということらしい。
+Coursierを使っている限り、アーティファクトを切り替えるのは難しいことではない。csでインストールしたものをそのまま使う代わりに、cs launchを利用すればよい:
+% cs launch org.scalameta:mdoc_3:2.8.0
+
+
+
+ただし、詳細なバージョンは指定できない。基本的に最新のものが使われると考えておうたほうがよいだろう。どうしても必要なら手元に持ってきて特定のScalaでビルドしても良いだろう。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901327934228/1764675903" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
               rel="noopener">あーさん日記</a></h3>
           <section class="articles-per-source">
@@ -17679,31 +17745,6 @@ www.nicovideo.jp
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2025-09-03">2025-09-03</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2025.9.4</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025090444163/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PKG Tool Box v1.4.0,kstuff v1.6.1,Playstation-5-Save-Mounter v1.4.7,PS5_EZ_Host v1.1,PS5 Payloads 1.8a MOD,ARK-4 v1756922700,AtmoPack-Vanilla 3.0.7,ldn_mitm v1.21.0,DBI 807ru,MissionControl 0.13.5,FrogGBA v0.3.2,Nintendo Classicsタイトル追加→→→この記事の続きを読む
-GameGaz Daily 2025.9.4 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-08-24">2025-08-24</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -19813,7 +19854,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-12-02T11:01:47.372Z">2025-12-02T11:01:47.372Z</time>
+    <time id="build-timestamp" datetime="2025-12-02T12:01:45.651Z">2025-12-02T12:01:45.651Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
