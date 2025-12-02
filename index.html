@@ -78,6 +78,63 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">選択肢ジャンプテーブル作成</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/12/02/170658" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今回もスクリプトファイルのselect-case-endselectでのジャンプテーブルを作成です。GBAでテキストを単語検索（複数）するってーのは5-10VOUNTぐらい取られると思っているのでできないんですよね。なので自前にselectコマンドの横に印字しときます。
+// 選択肢コマンドにCASEオフセットを付与
+// gcc txt_sel.c -s -o txt_sel
+
+#include 
+#include 
+#include 
+#include 
+#include 
+
+//---------------------------------------------------------------------------
+typedef unsigned char   u8;
+typedef char            s8;
+typedef unsigned short u16;
+typedef short          s16;
+typedef unsigned int   u32;
+typedef int            s32;
+
+
+typedef struct {
+	u8*   p;
+	u32   size;
+
+} ST_BIT;
+
+
+typedef struct {
+	s32 max;
+	s32 grp[200];
+	s32 pos[200];
+
+} ST_TBL;
+
+//---------------------------------------------------------------------------
+ST_BIT Bit;
+ST_TBL Tbl;
+
+//------------------------------…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327887103/1764664790" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/sweets_farting" target="_blank"
               rel="noopener">角煮サイダ一</a></h3>
           <section class="articles-per-source">
@@ -19768,7 +19825,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-12-02T08:01:44.248Z">2025-12-02T08:01:44.248Z</time>
+    <time id="build-timestamp" datetime="2025-12-02T09:04:35.379Z">2025-12-02T09:04:35.379Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

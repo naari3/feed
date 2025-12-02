@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901327887103",
+          "author": null,
+          "description": "今回もスクリプトファイルのselect-case-endselectでのジャンプテーブルを作成です。GBAでテキストを単語検索（複数）するってーのは5-10VOUNTぐらい取られると思っているのでできないんですよね。なので自前にselectコマンドの横に印字しときます。\n// 選択肢コマンドにCASEオフセットを付与\n// gcc txt_sel.c -s -o txt_sel\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <sys/stat.h>\n#include <stdbool.h>\n#include <assert.h>\n\n//---------------------------------------------------------------------------\ntypedef unsigned char   u8;\ntypedef char            s8;\ntypedef unsigned short u16;\ntypedef short          s16;\ntypedef unsigned int   u32;\ntypedef int            s32;\n\n\ntypedef struct {\n\tu8*   p;\n\tu32   size;\n\n} ST_BIT;\n\n\ntypedef struct {\n\ts32 max;\n\ts32 grp[200];\n\ts32 pos[200];\n\n} ST_TBL;\n\n//---------------------------------------------------------------------------\nST_BIT Bit;\nST_TBL Tbl;\n\n//------------------------------…",
+          "link": "https://akkera102.hatenablog.com/entry/2025/12/02/170658",
+          "publishedOn": "2025-12-02T08:06:58.000Z",
+          "wordCount": 822,
+          "title": "選択肢ジャンプテーブル作成",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327887103/1764664790",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327887103/1764664790"
+        },
+        {
           "id": "hatenablog://entry/17179246901327476679",
           "author": null,
           "description": "スクリプトファイルに既読フラグ用のユニーク番号を付けたい場合、とある命令にパラメータをつけるしかないなあと考えています。それが以下のコードです。量が少なくて感動してしまいます・・・。しかもベースはchatgpt先生で一瞬です。\nimport os\nimport sys\nimport glob\nimport re\n\ndef func(match):\n\tglobal bit, idx\n\tret = f\"{word} {idx} {bit}\"\n\n\tbit += 1\n\tif bit == 8:\n\t\tbit = 0\n\t\tidx += 1\n\n\treturn ret\n\nword = \"COL\"\nlist = glob.glob(os.path.join(\"*.txt\"))\nbit = 0\nidx = 1\t\t# idxの0番地は空（ブランク）書き込み用\n\nfor file in list:\n\tnew = []\n\n\twith open(file, \"r\") as f:\n\t\tlines = f.readlines()\n\n\tfor line in lines:\n\t\ttmp = re.sub(r'\\b' + word + r\"\\b\", func, line)\n\t\tnew.append(tmp)\n\n\twith open(file, \"w\") as f:\n\t\tf.writelines(new)\n\n\tprint(f\"txt_col... {file}\")\n\nprint(f\"done! idx:{idx} bit:{bit}\")\n結果は「idx:2979 bit:6」なので2979 * 8バイト + 1バイトで23833バイト。SRAM（MAX:32768）で他詰めるとぎりっすね・・・。うーん。",
