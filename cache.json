@@ -3179,6 +3179,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901328031334",
+          "author": null,
+          "description": "ヘヘヘ……ダッコフおもしろい……ダッコフ……ヘヘ……\nwww.youtube.com\nwww.nicovideo.jp\n恒例の動画の技術解説エントリです。\n…と、その前にひとつお知らせ！\n「分割キーボードを自作する」がニコニコ動画アワード2025、ユーザ投票賞にノミネートされました！\ndouga-awards.nicovideo.jp\nというわけであらためまして動画の技術解説エントリです。\nArduinoでステッピングモーターを動かす\nモーターが回っても配線がねじれない絡まらない・スリップリング\nアヒルを動かすプログラム\nArduinoでステッピングモーターを動かす\nアヒルの方向転換に使っているのはステッピングモーター。\n\nいつも使っているサーボモーターは0度～180度の間でしか回らないので、ぐるぐる何回転もさせることはできません。\nちゃんとしたステッピングモーターってそこそこお値段するのですが、ホビー用なら28BYJ-48という異常に安い製品があります。\n\n\nLEAUNGYOO 2個セット 28BYJ-48 5V ステッピングモーター+ ULN2003ステッピングモーター駆動テストモジュールボード 4フェーズ 5ライン\n\nLEAUNGYOO\nAmazon\n\nこれを、例えばこんな感じでつないで…\n\nこんな感じのスケッチで動かせます（動画中でチョコレート乗せてスイッチで動かしてるやつがこれ）\n#include <AccelStepper.h>\n\nconst int switchForward = 3; //右回転スイッチ用ピン\nconst int switchBackward = 4; //左回転スイッチ用ピン\n\nAccelStepper stepper(AccelStepper::FULL4WIRE, 8, 10, 9, 11); //制御モジュールへの接続ピン。IN1,I…",
+          "link": "https://nomolk.hatenablog.com/entry/2025/12/03/122841",
+          "publishedOn": "2025-12-03T03:28:41.000Z",
+          "wordCount": null,
+          "title": "Arduinoでステッピングモーターを動かす、モーターが回っても配線がねじれない絡まらない・スリップリング、アヒルを動かすプログラム【動画解説】",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/e7525b254efe29f6f75045c73d52e76008905de5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251203%2F20251203021707.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e7525b254efe29f6f75045c73d52e76008905de5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251203%2F20251203021707.jpg"
+        },
+        {
           "id": "hatenablog://entry/17179246901326711510",
           "author": null,
           "description": "みんな大好きハリボーグミ。\n昨日YouTubeでブラックフライデー関連の動画を見てたらハリボーの充電器が紹介されていて、えっマジかと思って見に行ったら関連商品にハリボーガジェットがめちゃめちゃあるんですよ。ぜんぶ可愛くて最高。\nすべてパチモンではなく公式ライセンス品のようで、そのわりに全体にお値段かなりリーズナブル。同系統の商品に比べて普通に安い。ハリボーファンのみならず手ごろな値段でデザインのいいガジェットが欲しいという方にもおすすめ。\n自分も注文したばっかりでまだ手元に届いてないのでレビューはできませんが、セール終わる前に紹介しておきたいと思います。（セールは12/1いっぱいまで）\n急速充電器 65W\n\nゴールドベア各色をあしらったデザインが最高なのですが、なによりゴールドベア型のUSBキャップがついてくるのが最高…。\nPD、QC対応で65WなのでノートPC、スマホ、タブレットとわりとなんでもいけます。ポートはTYPE C×２、TYPE A×１の３ポート。別メーカーの同スペックの急速充電器を使ってますが、家とか持ち歩き用で普通に使うには十分なワット数。\n\n\nHaribo 65W 3ポート GaN 急速充電器 PD・Qualcomm 4.0対応、5V 3A、グミベアデザイン、iPhone 15・16シリーズ、Galaxy、Xiaomi、Pixel、Xperia 対応\n\nDCHK\nAmazon\n\n\nHaribo 65W 3ポート GaN 急速充電器 PD・Qualcomm 4.0対応、5V 3A、グミベアデザイン、iPhone 15・16シリーズ、Galaxy、Xiaomi、Pixel、Xperia 対応\n\nDCHK\nAmazon\n\n\n\n急速充電器 ケーブル一体型タイプ\n\nもういっこの急速充電器。こっちはゴールドベアが大きく１個描かれており、よりハリボーの存在感が感じられま…",

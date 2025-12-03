@@ -2,10 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-03T03:24:23.493Z</updated>
+    <updated>2025-12-03T04:06:21.132Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Arduinoでステッピングモーターを動かす、モーターが回っても配線がねじれない絡まらない・スリップリング、アヒルを動かすプログラム【動画解説】]]></title>
+        <id>hatenablog://entry/17179246901328031334</id>
+        <link href="https://nomolk.hatenablog.com/entry/2025/12/03/122841"/>
+        <updated>2025-12-03T03:28:41.000Z</updated>
+        <summary type="html"><![CDATA[ヘヘヘ……ダッコフおもしろい……ダッコフ……ヘヘ……
+www.youtube.com
+www.nicovideo.jp
+恒例の動画の技術解説エントリです。
+…と、その前にひとつお知らせ！
+「分割キーボードを自作する」がニコニコ動画アワード2025、ユーザ投票賞にノミネートされました！
+douga-awards.nicovideo.jp
+というわけであらためまして動画の技術解説エントリです。
+Arduinoでステッピングモーターを動かす
+モーターが回っても配線がねじれない絡まらない・スリップリング
+アヒルを動かすプログラム
+Arduinoでステッピングモーターを動かす
+アヒルの方向転換に使っているのはステッピングモーター。
+
+いつも使っているサーボモーターは0度～180度の間でしか回らないので、ぐるぐる何回転もさせることはできません。
+ちゃんとしたステッピングモーターってそこそこお値段するのですが、ホビー用なら28BYJ-48という異常に安い製品があります。
+
+
+LEAUNGYOO 2個セット 28BYJ-48 5V ステッピングモーター+ ULN2003ステッピングモーター駆動テストモジュールボード 4フェーズ 5ライン
+
+LEAUNGYOO
+Amazon
+
+これを、例えばこんな感じでつないで…
+
+こんな感じのスケッチで動かせます（動画中でチョコレート乗せてスイッチで動かしてるやつがこれ）
+#include <AccelStepper.h>
+
+const int switchForward = 3; //右回転スイッチ用ピン
+const int switchBackward = 4; //左回転スイッチ用ピン
+
+AccelStepper stepper(AccelStepper::FULL4WIRE, 8, 10, 9, 11); //制御モジュールへの接続ピン。IN1,I…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ヘッドレスCMSってなんだろう？ ～スピードと柔軟性の両立をアジャイルで～]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=33245</id>
