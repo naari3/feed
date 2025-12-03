@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901328350600",
+          "author": null,
+          "description": "果て青のGBA画面が妄想できず悶絶中です・・・。痕GBAはこのように表示しているので参考になるのですけど文字間の余白を結構取ることと、自分的に縦は読みづらいと感じてるんですよね。PCゲームで遊んでた時は縦読みしてましたけど、あくまで大画面が前提でした。\nwww.youtube.com\nwww.gavas.jp\nこのUIだとド定番すぎかもなあ・・・でも約20時間のプレイに耐えられるとしたらこちら側なんですよね。技術的なうま味がもう尽きているのにさらに尽きさせてどうするんやという話です。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/12/03/225535",
+          "publishedOn": "2025-12-03T13:55:35.000Z",
+          "wordCount": 482,
+          "title": "うーん",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901328350600/1764770288",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901328350600/1764770288"
+        },
+        {
           "id": "hatenablog://entry/17179246901327887103",
           "author": null,
           "description": "今回もスクリプトファイルのselect-case-endselectでのジャンプテーブルを作成です。GBAでテキストを単語検索（複数）するってーのは5-10VOUNTぐらい取られると思っているのでできないんですよね。なので自前にselectコマンドの横に印字しときます。\n// 選択肢コマンドにCASEオフセットを付与\n// gcc txt_sel.c -s -o txt_sel\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <sys/stat.h>\n#include <stdbool.h>\n#include <assert.h>\n\n//---------------------------------------------------------------------------\ntypedef unsigned char   u8;\ntypedef char            s8;\ntypedef unsigned short u16;\ntypedef short          s16;\ntypedef unsigned int   u32;\ntypedef int            s32;\n\n\ntypedef struct {\n\tu8*   p;\n\tu32   size;\n\n} ST_BIT;\n\n\ntypedef struct {\n\ts32 max;\n\ts32 grp[200];\n\ts32 pos[200];\n\n} ST_TBL;\n\n//---------------------------------------------------------------------------\nST_BIT Bit;\nST_TBL Tbl;\n\n//------------------------------…",
@@ -9498,6 +9513,16 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/25/awsapple_m3_ultram4_maxmac.html",
+          "author": null,
+          "description": "Amazon Web Services（AWS）は、日本時間12月3日未明から開催中の年次イベント「AWS re:Invent 2025」で、Appleシリコンに対応した新しいMacインスンタンス「Amazon EC2 M3 Ultra M...",
+          "link": "https://www.publickey1.jp/blog/25/awsapple_m3_ultram4_maxmac.html",
+          "publishedOn": "2025-12-03T15:58:42.000Z",
+          "wordCount": 1469,
+          "title": "AWS、Apple M3 Ultra/M4 Maxチップに対応したMacインスタンス発表",
+          "imageUrl": "https://www.publickey1.jp/2025/aws-mac-m4max.png"
+        },
         {
           "id": "https://www.publickey1.jp/blog/25/awsaikiro_autonomous_agent.html",
           "author": null,
