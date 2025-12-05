@@ -78,6 +78,46 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2025-12-04</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2025/12/05/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>elin.pocke.me
+Elinキャラクタービューワーを色々いじっていた。
+Elin は EA と Nightly という2本のブランチが走っているのだけど、今まではキャラクタービューワーではEAにしか対応していなかった。それをNightlyに対応するようにしたのが一番大きな変更。
+これを実装するにあたって、今までCloudflare Pagesでホスティングしていたのを、Vercelに載せ替えた。
+なぜそんなことをする必要があったかというと、Cloudflare Pagesのファイル数制限に引っかかったため。
+Cloudflare Pagesは静的Webアプリをホスティングするためのプラットフォームなのだけど、1つのアプリに対して20,000ファイルしかファイルを置くことができない制約がある。
+20,000ファイルというと結構寛大な制限に見えるのだけど、キャラクタービューワーが使っているNext.jsでは1つのhtmlに対してたくさんのメタファイルを生成する。
+$ ls out/ja/EA/charas/adv_ivory/
+&#x27;__next.$d$lang.$d$version.charas.$d$id.__PAGE__.txt&#x27;  &#x27;__next.$d$lang.$d$version.txt&#x27;   __next._head.txt    index.html
+&#x27;__next.$d$lang.$d$version.charas.$d$id.txt&#x27;           &#x27;__next.$d$lang.txt&#x27;              __next._index.txt   index.txt
+&#x27;__next.$d$lang.$d$version.charas.txt&#x27;                  __next._full.txt                 __next._tree.txt
+今まではそれでもなんとかなっていたのだけど、EAとNightlyの2本に対応したことでファイル数が約2倍になり、この制限を超えてしまった。HTMLのページ数自体は2800件程度でまだまだ余裕があるのだけどねえ。
+これを回避するために、最初はCloudflare Workersへの移行を試した。同じCloudflareのサービスだけど、Workersの方はNext.jsのサーバープロセスをホスティングしてくれる。こちらだとファイル数制限がないので(静的Webアプリではなくなるものの)動くのではないかと思って試してみた。
+10万req/day まで無料であり、現状のリクエスト数が直近30日で平均3770req/dayなのでしばらくは無料でいけるだろうとの見込み。
+これも実際にデプロイする直前まではいけたのだけど、デプロイログを見るとエラーが出ていた。どうやらCloudflare Workersの無料枠だと、1つのアプリは圧縮後で3MB以下に抑える必要があるが、それを超えていた。正確な数値は覚えていないけれど3～4MBだったと思う。
+SSGするページ数を減らせばなんとかなるかなあと考えたりしていたのだけど、試しに最小限のデータでビルドしてみても(多少減ったものの)3MBを超えていて、どうやらNext.jsなどのライブラリ自体のコードがそもそもデカくて厳しそうだった。
+ということでCloudflareは諦めて、別サービスでホスティングすることにした。どうやらVercelはこれらの制約がない(or 現実的なゆるさ)ようなので、Vercelに移し替えることにした。基本的にSSGをメインで動かしているので、コードの変更はほとんどなかった。Cloudflare Workers移行のために昨日のうちにDNSのTTLを小さくしておいて正解だった。
+Cloudflare Pages / Workers はNext.jsをホスティングするのに向いていないのでは……という気持ちになっている。まあSSGしているページ数が多すぎるのが問題とも言える。
+Nightly対応の実装自体は昨日のうちに終わっていたのだけど、デプロイで手間取って今日1日かかってしまった。
+実装もまあまあ大変で、今まで必要なかったバージョン情報をアプリケーション内で全体的に引き回す必要があって、大きな変更になった。ただ面倒なことは全部Claude Codeさんがやってくれたので、気分的には割と楽だった。
+ここ数日はゲームをやっている時間よりもゲームのためにコードを書いている時間のほうが長い。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901328770719/1764896401" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://eng-blog.iij.ad.jp" target="_blank"
               rel="noopener">技術情報 – IIJ Engineers Blog</a></h3>
           <section class="articles-per-source">
@@ -18004,28 +18044,6 @@ npm Trusted Publishingは、これらの問題を解決します。
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">終末移植27</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/09/06/222013" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ファイルは既にアップロードしてあります。明日の昼頃に告知しようと思います（もうヘロヘロ。
-追記：
-申し訳ないです。音量設定を6から5に変更しました。音質はボリューム設定によってばらつきがあるようで初期値は5の方がいいようです。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565219176658/1757305924" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20138,7 +20156,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-12-05T00:03:23.990Z">2025-12-05T00:03:23.990Z</time>
+    <time id="build-timestamp" datetime="2025-12-05T01:30:03.147Z">2025-12-05T01:30:03.147Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -524,21 +524,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565219804583/1757305924"
-        },
-        {
-          "id": "hatenablog://entry/6802888565219176658",
-          "author": null,
-          "description": "ファイルは既にアップロードしてあります。明日の昼頃に告知しようと思います（もうヘロヘロ。\n追記：\n申し訳ないです。音量設定を6から5に変更しました。音質はボリューム設定によってばらつきがあるようで初期値は5の方がいいようです。",
-          "link": "https://akkera102.hatenablog.com/entry/2025/09/06/222013",
-          "publishedOn": "2025-09-06T13:20:13.000Z",
-          "wordCount": 474,
-          "title": "終末移植27",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565219176658/1757305924",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565219176658/1757305924"
         }
       ]
     },
@@ -1517,6 +1502,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901328770719",
+          "author": null,
+          "description": "elin.pocke.me\nElinキャラクタービューワーを色々いじっていた。\nElin は EA と Nightly という2本のブランチが走っているのだけど、今まではキャラクタービューワーではEAにしか対応していなかった。それをNightlyに対応するようにしたのが一番大きな変更。\nこれを実装するにあたって、今までCloudflare Pagesでホスティングしていたのを、Vercelに載せ替えた。\nなぜそんなことをする必要があったかというと、Cloudflare Pagesのファイル数制限に引っかかったため。\nCloudflare Pagesは静的Webアプリをホスティングするためのプラットフォームなのだけど、1つのアプリに対して20,000ファイルしかファイルを置くことができない制約がある。\n20,000ファイルというと結構寛大な制限に見えるのだけど、キャラクタービューワーが使っているNext.jsでは1つのhtmlに対してたくさんのメタファイルを生成する。\n$ ls out/ja/EA/charas/adv_ivory/\n'__next.$d$lang.$d$version.charas.$d$id.__PAGE__.txt'  '__next.$d$lang.$d$version.txt'   __next._head.txt    index.html\n'__next.$d$lang.$d$version.charas.$d$id.txt'           '__next.$d$lang.txt'              __next._index.txt   index.txt\n'__next.$d$lang.$d$version.charas.txt'                  __next._full.txt                 __next._tree.txt\n今まではそれでもなんとかなっていたのだけど、EAとNightlyの2本に対応したことでファイル数が約2倍になり、この制限を超えてしまった。HTMLのページ数自体は2800件程度でまだまだ余裕があるのだけどねえ。\nこれを回避するために、最初はCloudflare Workersへの移行を試した。同じCloudflareのサービスだけど、Workersの方はNext.jsのサーバープロセスをホスティングしてくれる。こちらだとファイル数制限がないので(静的Webアプリではなくなるものの)動くのではないかと思って試してみた。\n10万req/day まで無料であり、現状のリクエスト数が直近30日で平均3770req/dayなのでしばらくは無料でいけるだろうとの見込み。\nこれも実際にデプロイする直前まではいけたのだけど、デプロイログを見るとエラーが出ていた。どうやらCloudflare Workersの無料枠だと、1つのアプリは圧縮後で3MB以下に抑える必要があるが、それを超えていた。正確な数値は覚えていないけれど3～4MBだったと思う。\nSSGするページ数を減らせばなんとかなるかなあと考えたりしていたのだけど、試しに最小限のデータでビルドしてみても(多少減ったものの)3MBを超えていて、どうやらNext.jsなどのライブラリ自体のコードがそもそもデカくて厳しそうだった。\nということでCloudflareは諦めて、別サービスでホスティングすることにした。どうやらVercelはこれらの制約がない(or 現実的なゆるさ)ようなので、Vercelに移し替えることにした。基本的にSSGをメインで動かしているので、コードの変更はほとんどなかった。Cloudflare Workers移行のために昨日のうちにDNSのTTLを小さくしておいて正解だった。\nCloudflare Pages / Workers はNext.jsをホスティングするのに向いていないのでは……という気持ちになっている。まあSSGしているページ数が多すぎるのが問題とも言える。\nNightly対応の実装自体は昨日のうちに終わっていたのだけど、デプロイで手間取って今日1日かかってしまった。\n実装もまあまあ大変で、今まで必要なかったバージョン情報をアプリケーション内で全体的に引き回す必要があって、大きな変更になった。ただ面倒なことは全部Claude Codeさんがやってくれたので、気分的には割と楽だった。\nここ数日はゲームをやっている時間よりもゲームのためにコードを書いている時間のほうが長い。",
+          "link": "https://commits.hatenablog.com/entry/2025/12/05/100000",
+          "publishedOn": "2025-12-05T01:00:00.000Z",
+          "wordCount": 528,
+          "title": "2025-12-04",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901328770719/1764896401",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901328770719/1764896401"
+        },
         {
           "id": "hatenablog://entry/17179246901328360668",
           "author": null,
