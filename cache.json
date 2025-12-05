@@ -494,21 +494,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565226387712/1757536340"
-        },
-        {
-          "id": "hatenablog://entry/6802888565220338561",
-          "author": null,
-          "description": "9/8 11:06追記：\ngccのバージョンを上げてkg2bmpを再コンパイル、VirusTotalで0件になりました。バージョン上げる前だと検出され、上げた後は検出なし（何それ）。とりあえずzipとgithubは修正済みです。うーん、まあこれで収束とします。\n9/7 18:07追記：\nコンパイルしたファイルに差し替えは簡単なので明日する予定です。（今日は外出中なので無理\n9/7 17:01追記：\ngba.zip、今スキャン（windows defender）すると問題なくなりました。なんでやねん！\n9/7 16:37追記：\ngba.zip、windows defenderで「Trojan:Script/Wacatac.B!ml」と検出されました。ただ解凍した後に再度スキャンすると検出しなくなります。謎です。VirusTotalでは2/66で「kg2bmp.exe」が該当していました。うーん、こういうの誤検出だと思いたいけどモンモンとするからやめてほしいんですよね・・・。ノートパソコン環境でコンパイルした「kg2bmp.exe」はVirusTotalで問題なかったので、明日そちらと差し控えるつもりです。\nhttps://www.virustotal.com/gui/file/ea23b774fd0476e50e6b0767a35fb4a7e050fcd5415c92533434bae08f6a10e9/relations",
-          "link": "https://akkera102.hatenablog.com/entry/2025/09/07/181701",
-          "publishedOn": "2025-09-07T09:17:01.000Z",
-          "wordCount": 482,
-          "title": "誤検出について",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565220338561/1757326334",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565220338561/1757326334"
         }
       ]
     },
@@ -8141,6 +8126,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44666",
+          "author": "mamosuke",
+          "description": "13.02でBD-JB exploit,DualSense改良,esp-ps5-exploit-server v.2.01,BD-JB-1250 Poops_Stable,PS4PKGInstaller v3.02Beta1 (PS4/PS5),PS5のメイン基板の修理料金を値下げ,FlipperMCE nightly-59,FuseCheck 1.0.0,KeyX v1.2.9,TinyWiiBackupManager v4.6.0,XStreaming v2.4.3,PCSX2 v2.5.356→→→この記事の続きを読む\nGameGaz Daily 2025.12.6 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025120644666/",
+          "publishedOn": "2025-12-05T21:37:02.000Z",
+          "wordCount": 1786,
+          "title": "GameGaz Daily 2025.12.6",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=44664",
           "author": "mamosuke",
