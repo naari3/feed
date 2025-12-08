@@ -7425,6 +7425,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2025-12-08/deprecating-background-fetch.html",
+          "author": null,
+          "description": "「Background Fetch を使っているのが、世界であなたのサイトだけなんだけど、この機能消しても良い?」と、TPAC 2025 の会場で、Chrome の Service Worker チームの開発者と話していた際に言われた。",
+          "link": "https://blog.jxck.io/entries/2025-12-08/deprecating-background-fetch.html",
+          "publishedOn": "2025-12-08T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Background Fetch API が消えそうだった話",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2025-11-19/web.html",
           "author": null,
           "description": "見落とされがちだが、「Web とは何か」という仕様はない。Web を定義した W3C のドキュメントもなければ、IETF の RFC もない。Web は仕様ではないのだ。これだけしっかりと標準化された技術の粋を集めた総体が、なぜそんなにもフワっとしているのだろうか?では我々は、何を \"Web\" と呼んでいるのだろうか?",
@@ -9306,16 +9316,6 @@
           "wordCount": 1809,
           "title": "GameGaz Daily 2025.9.10",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=44196",
-          "author": "mamosuke",
-          "description": "ソニーが開発中のPlayStation 6では脱着可能な光学ドライブ搭載が計画されているようです。→→→この記事の続きを読む\n【噂】ソニーのPlayStation 6 脱着式光学ドライブ採用 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025091044196/",
-          "publishedOn": "2025-09-10T02:59:27.000Z",
-          "wordCount": 1683,
-          "title": "【噂】ソニーのPlayStation 6 脱着式光学ドライブ採用",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/playstation-logo.png"
         }
       ]
     },
@@ -9441,6 +9441,16 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/25/supabasebaassupabase_for_platformsai.html",
+          "author": null,
+          "description": "PostgreSQLをベースにしたBaaS（Backend as a Service）の「Supabase」を開発し提供しているSupabase社は、企業などがSupabaseのバックエンドサービスをそのままその企業ブランドのBaaSとして...",
+          "link": "https://www.publickey1.jp/blog/25/supabasebaassupabase_for_platformsai.html",
+          "publishedOn": "2025-12-08T15:07:54.000Z",
+          "wordCount": null,
+          "title": "Supabaseのバックエンドサービスを自社ブランドのBaaSとして提供できる「Supabase for Platforms」リリース。AIによる開発ツールを提供するベンダなどに向け",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/25/vercelwebvercel_for_platformsvercelsaas.html",
           "author": null,
