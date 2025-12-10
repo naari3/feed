@@ -1413,6 +1413,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901330756026",
+          "author": null,
+          "description": "土曜日はピアノのレッスンだった。\nここ最近はずっとガーネットの練習をしている。前回のレッスンでは、先生が偶然金曜ロードショーの時をかける少女をテレビで見たようで、そこでガーネットを聞くことが出来たという話をしてくれた。またそこからFirst Takeのガーネットまで探して何度も見ていただいたようで、今弾いている楽譜のアドバイスをもらうことも出来た。偶然曲に出会う機会があって聞いてもらえてとても良かった。\nこのレッスンの後から自分でもFirst Takeのガーネットを見返してピアノに反映できないか考えていた。これがあって、より一層理解が深まった気がする。\n特に、先生から2番サビ後の間奏でオクターブ上げるアドバイスをもらえたのは良かった。やっぱりここオクターブ上げて繰り返したほうがしっくりくる。ライブで聞き慣れているのもあると思うけれど。",
+          "link": "https://commits.hatenablog.com/entry/2025/12/10/100000",
+          "publishedOn": "2025-12-10T01:00:00.000Z",
+          "wordCount": 511,
+          "title": "2025-12-09",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901330756026/1765328403",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901330756026/1765328403"
+        },
+        {
           "id": "hatenablog://entry/17179246901328770719",
           "author": null,
           "description": "elin.pocke.me\nElinキャラクタービューワーを色々いじっていた。\nElin は EA と Nightly という2本のブランチが走っているのだけど、今まではキャラクタービューワーではEAにしか対応していなかった。それをNightlyに対応するようにしたのが一番大きな変更。\nこれを実装するにあたって、今までCloudflare Pagesでホスティングしていたのを、Vercelに載せ替えた。\nなぜそんなことをする必要があったかというと、Cloudflare Pagesのファイル数制限に引っかかったため。\nCloudflare Pagesは静的Webアプリをホスティングするためのプラットフォームなのだけど、1つのアプリに対して20,000ファイルしかファイルを置くことができない制約がある。\n20,000ファイルというと結構寛大な制限に見えるのだけど、キャラクタービューワーが使っているNext.jsでは1つのhtmlに対してたくさんのメタファイルを生成する。\n$ ls out/ja/EA/charas/adv_ivory/\n'__next.$d$lang.$d$version.charas.$d$id.__PAGE__.txt'  '__next.$d$lang.$d$version.txt'   __next._head.txt    index.html\n'__next.$d$lang.$d$version.charas.$d$id.txt'           '__next.$d$lang.txt'              __next._index.txt   index.txt\n'__next.$d$lang.$d$version.charas.txt'                  __next._full.txt                 __next._tree.txt\n今まではそれでもなんとかなっていたのだけど、EAとNightlyの2本に対応したことでファイル数が約2倍になり、この制限を超えてしまった。HTMLのページ数自体は2800件程度でまだまだ余裕があるのだけどねえ。\nこれを回避するために、最初はCloudflare Workersへの移行を試した。同じCloudflareのサービスだけど、Workersの方はNext.jsのサーバープロセスをホスティングしてくれる。こちらだとファイル数制限がないので(静的Webアプリではなくなるものの)動くのではないかと思って試してみた。\n10万req/day まで無料であり、現状のリクエスト数が直近30日で平均3770req/dayなのでしばらくは無料でいけるだろうとの見込み。\nこれも実際にデプロイする直前まではいけたのだけど、デプロイログを見るとエラーが出ていた。どうやらCloudflare Workersの無料枠だと、1つのアプリは圧縮後で3MB以下に抑える必要があるが、それを超えていた。正確な数値は覚えていないけれど3～4MBだったと思う。\nSSGするページ数を減らせばなんとかなるかなあと考えたりしていたのだけど、試しに最小限のデータでビルドしてみても(多少減ったものの)3MBを超えていて、どうやらNext.jsなどのライブラリ自体のコードがそもそもデカくて厳しそうだった。\nということでCloudflareは諦めて、別サービスでホスティングすることにした。どうやらVercelはこれらの制約がない(or 現実的なゆるさ)ようなので、Vercelに移し替えることにした。基本的にSSGをメインで動かしているので、コードの変更はほとんどなかった。Cloudflare Workers移行のために昨日のうちにDNSのTTLを小さくしておいて正解だった。\nCloudflare Pages / Workers はNext.jsをホスティングするのに向いていないのでは……という気持ちになっている。まあSSGしているページ数が多すぎるのが問題とも言える。\nNightly対応の実装自体は昨日のうちに終わっていたのだけど、デプロイで手間取って今日1日かかってしまった。\n実装もまあまあ大変で、今まで必要なかったバージョン情報をアプリケーション内で全体的に引き回す必要があって、大きな変更になった。ただ面倒なことは全部Claude Codeさんがやってくれたので、気分的には割と楽だった。\nここ数日はゲームをやっている時間よりもゲームのためにコードを書いている時間のほうが長い。",
@@ -3806,21 +3821,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/42df16f68b94c800a0e95075cc2dc0682990647b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FStamnotes%2F20250911%2F20250911214255.png"
-        },
-        {
-          "id": "hatenablog://entry/6802418398514191391",
-          "author": null,
-          "description": "今、その人に、3つの視座を尋ねる連載「SCOPES」\n今回お話を伺うのは回初帰さんです。\nwww.nicovideo.jp\n独自性のあるスタイルで一貫された動画を投稿する音MAD投稿者。\n海外のニュース映像や韓国、中国圏で使用されている素材を扱う。\n選曲の鋭さと硬派な音作りがマッチし、聴き心地に定評がある。\n\n\n\n音声の重厚感や映像の質感を活かした構成をコンスタントに追求。\n常に素材を更新しながらも、基盤となる作風を軸に置き、拡張し続けている。\n\n\n\nまずは、今回お送りした質問に対して、回初帰さんがそれぞれどのような回答をいただいたか見てみましょう。\n\n・音MADの投稿/活動を始めたきっかけを教えてください\n今のような活動を始めたきっかけのMADは明確に3本あって、プリンセス平民2(sm38481943)・畑を持った教会(sm38304703)・立直(sm41593870)です。\n先の二つは作者が同じなのですが、この方の動画が基本的にあまり使われていない素材＋一画面構成でできていて、当時人気素材ばかり見ていた私にとって「こんなことしていいんだ」と衝撃を受けたのを覚えています。特に鮮明MAD素材は、そのアングラ感と力強さに一目で心を奪われました。\n立直はrgr氏によるYTPMVで、古い報道・HIKAKIN・海外政治・アニメなど様々な要素が混在しながら独特な空気を持っていて好きな動画です。YTPMVといえばよく知られた萌えアニメで素材の味を殺して作るもの、という印象があった私にとってとても魅力的に感じ、YTPMVを一つのジャンルとして興味を持つきっかけにもなりました。\n色々作りながら後から影響を受けたものも多いですが、根底にはここへの憧れがずっとあるように思います。\nそれから特にハマった鮮明MADをやるためにakx/文匿明アカウントを建て、その名前が知れていくうちに一画面構成など私にとって挑戦的なことを同じ場所に上げるのが怖くなって回初帰を建てて、今の活動に落ち着いた感じです。\n・直近の音MADにおける動向で印象深い出来事は何ですか\n動向というほど大きな流れかわかりませんが、音MADで使われる曲の中で海外で流行った後に日本で流行る例が最近いくつかあったな、と感じたことはあります。例えばノウナイディスコやハルジオンのような曲は、韓国で2022年頃緩やかに流行って落ち着いた後で日本で流行った感じの流れでした。\n互いの流行に何か関係があるのかはわかりませんしどっちが遅れてるとかそういう話ではなく、それぞれ作風の傾向などが見られて個人的に楽しく追っています。\n日本の曲が海外で先に流行っている現象自体も不思議で、逆にこちらで海外曲MADがそれほど大きく流行るのはYTPMVを除いてほとんど見られないんですよね（最近だとAPT.ぐらい？）。それだけJ-POPの影響力が強いのか、海外作者層に日本オタクが多いということなのか、両方かもしれませんがこれも少し気になっています。\n・音MADの領域において今後見てみたいものはありますか\n\n2の回答にも若干繋がりますが、海外曲を日本的に使ったMADが見てみたいと思っています。\n例えば中国を例に挙げると、曲は日本のものでも歌詞を完全に中国語で置き換えている動画が多く、単純な替え歌ではなくもはや作詞をしてしまうものが「鬼畜調教」ジャンルでは特に主流です。\nまた、MizldeuRsWw(YouTube)のような「原曲のように聞こえるが内容は全く違う現地語歌詞」も面白い試みだと思います。\n言語的特性もあってまったく同じようにはいかないのかもしれませんがsm37722014やO9Tpbya-nCI(YouTube)のように非公式の訳詞を引用してくるMADは実際あるので不可能ではないんだろうと思っていて、とにかく私が言いたいのは和製作風でもっと色んなジャンルの曲のMADが見てみたいということです。\n（やりとりの期間：2025/07/17～2025/09/@@）\n以上が頂いた回答となります。\n次回の更新以降、順次それぞれの回答を掘り下げた記事を公開していく予定です！\n第一回の更新は9/18(木)22:00を予定しています。よろしくお願いいたします。",
-          "link": "https://scopes.hateblo.jp/entry/05_00",
-          "publishedOn": "2025-09-11T13:00:00.000Z",
-          "wordCount": 226,
-          "title": "vol.5-0 回初帰",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/2112a1496129132c6a4657c7b96cc7d480b5727c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FStamnotes%2F20250911%2F20250911214059.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2112a1496129132c6a4657c7b96cc7d480b5727c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FStamnotes%2F20250911%2F20250911214059.png"
         }
       ]
     },
@@ -8052,6 +8052,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44684",
+          "author": "mamosuke",
+          "description": "13.00でGoldHEN,Netflix-N-Hack External-Drive,ps4-pup-decrypt,FPSLocker 3.2.1,MissionControl 0.14.1,TegraExplorer 4.2.1,NxNandManager 21.1.0,ldn_mitm v1.20.1,Switchfin 0.8.1,AtmoPack-Vanilla 4.0.2,NeXT 3.52,Ultra-NX 2.7-R2,TinyWiiBackupManager v4.9.0,Nimbus v2.0.0,GimliDS 1.5h,shadPS4-QtLauncher-2025-12-09-7bed665,PCSX2 v2.5.372,ARMSX2 Nightly Build (DEBUG – 1.0.7) – 20251209-1536→→→この記事の続きを読む\nGameGaz Daily 2025.12.10 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2025121044684/",
+          "publishedOn": "2025-12-10T00:35:19.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2025.12.10",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44680",
           "author": "mamosuke",
