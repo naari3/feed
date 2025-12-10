@@ -3326,21 +3326,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/54e5bab8012d3c5da43fcdca5b6abcb829e22924/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250916%2F20250916021150.png"
-        },
-        {
-          "id": "hatenablog://entry/6802888565227564898",
-          "author": null,
-          "description": "音楽生成AIサービスがいろいろ出てきたので、どれがいい感じの曲が生成できるか比較します。\nSuno、Udio、Tunee、Stable Audioの５つです。\nやりたいこととしては、ちゃんとこだわって動画のBGMを作りたいです。もっと細かく言うと\nインスト曲前提\nこだわってプロンプトでいろいろ書きたいし、「楽しい曲」とかじゃなくてちゃんと狙ったサウンドを出したい\nプリセットのジャンルから選ぶだけじゃなくてオリジナリティも出したい\nとはいえ細かいところは勝手にいい感じにやってほしい\n細かいところ触りだすときりがないので今回はほぼデフォルトの設定で一発出しで比較\nという感じ。\nたぶん普通の「明るくて派手なEDM」とかは当然できると思うので、今回はちょっとひねったプロンプト５つをサンプルとして用意しました。同じプロンプトを５つのサービスに投げて、それぞれできた曲を評価します。\nなおSuno、Udio、Tuneeに関しては１回で２曲できるので、独断で出来のいい方を選びました。\n※Udioの課金有無によるクオリティの差はないと思います、ただ一発で出力できる曲の長さが違います。無課金は30秒まで。続きを再生成（Extend）で30秒ずつ延長可能\n①三拍子のローファイヒップホップ。フルートのフレーズを使ったループ。ラップや歌を含まないインストゥルメンタル。\n※翻訳による差が生まれないように、プロンプトは英訳してから投げています。\n\n\n\n\n    \n参考音源\n※プロンプトの意味が分からないと聴き比べようがないと思うので、ベンチマークとして参考音源を貼っておきます。\n\nローファイヒップホップはこういうの\nwww.youtube.com\nStable Audio\n\nSuno\nListen on Suno\nUdio\n\nTunee\nwww.tunee.ai\n※Tuneeは埋め込みできないのでリンク…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/09/12/002827",
-          "publishedOn": "2025-09-11T15:28:27.000Z",
-          "wordCount": null,
-          "title": "音楽好きな人のための音楽生成AIサービス最強決定戦～Suno、Udio、Tunee、Stable Audio比較（インスト曲）",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/e9885d0427cca44431983a8b7a635631cb173b2f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250912%2F20250912002743.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e9885d0427cca44431983a8b7a635631cb173b2f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250912%2F20250912002743.png"
         }
       ]
     },
