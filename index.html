@@ -74,8 +74,75 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2025-12-15">2025-12-15</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Compose で Drag and Drop を用いてリストの並び替えを実現する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2025/12/15/090000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はじめに
+こんにちは。レシピ事業部でアルバイト中の松本 (@matsumo0922) です。クックパッドでは、作るレシピを日付ごとに管理できる、プラン機能をつい先日リリースしました。この機能は Full-Compose で作成されており、日付間のレシピの移動/並び替えに Drag and Drop を採用しています。Drag and Drop は本来リストの並び替えに用いるものでは無いですが、今だに Compose ではリストの並び替え API が充実していないのに加え、視覚効果が貧弱なものが多いのが現状です。そこで Drag and Drop を応用的に並び替え UI に用いることで、直感的で視覚的にもわかりやすい UI/UX を実現することができました。今回は Compose で Drag and Drop を用いてリストの並び替えを実装する方法と知見をご紹介します。
+プラン機能での Drag and Drop を用いた並び替え
+Drag and Drop の基本
+Drag and Drop（以下 DnD）は、ユーザーが要素をドラッグし、別の位置にドロップすることで、並び替えや移動などの操作を直感的に行える UI パターンです。広義では View 間や画面間、アプリ間でのデータのやり取りが可能な機能のことを指します。そのため一般的なリストパターンである「選択と移動」とは異なる機能であることに注意が必要です。プラン機能では、ある日付に登録されたレシピ（アイテム）を別の日付（セクション）へ視覚的に移動させる必要があったため、通常の並び替えではなく DnD を採用することにしました。
+Compose での DnD は二つの修飾子で実装することができます。
+Modifier.dragAndDropSource
+Modifier.dragAndDropTarget
+それぞれ Dr…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815724287123/17179246901331864763/1765756801" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-12-14">2025-12-14</time></h2>
     <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2025.12.15</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025121544719/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>orbisDiskTool,Free space Analyzer,nx.js v0.0.65,TinyWiiBackupManager v4.9.4,CERBIOS V3.1.0 Beta,CerbiosTool V3.1.0,TimeFixer v1,PCSX2 v2.5.385,ARMSX2 Nightly Build (DEBUG – 1.0.7) – 20251214-2035,Cemu(Android) 0.3,StellaDS v8.1→→→この記事の続きを読む
+GameGaz Daily 2025.12.15 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2025.12.14</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025121444717/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>PS4PKGInstaller v3.04 (PS4/PS5),BD-JB-1252 v1.0-beta.2,pop-fe v1.26,libultrahand 2.2.3,KeyX v1.4.1,ovl-sysmodules v1.4.6,Tetris Overlay 0.4.5,NX Locale Switcher v1.1.4,Nimbus v2.0.1,ISFShax v5.1,TinyWiiBackupManager v4.9.3,nds-bootstrap v2.11.0,TWiLightMenu++ v27.20.0,duckstation v0.1-10339,shadPS4 Pre-release-shadPS4-2025-12-12-9e28756,PCSX2 v2.5.383,Universal Media Server 15.3.0,OpenTTD 15.0-RC2→→→この記事の続きを読む
+GameGaz Daily 2025.12.14 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.publickey1.jp/" target="_blank"
@@ -102,27 +169,6 @@
                     <span>CanonicalはWindows上のLinux環境である「Windows Subsystem for Linux」上でUbuntuに対してカーネルライブパッチなどを含む最大15年間のエンタープライズ向けサポートを提供する「Ubuntu P...</span>
                   </div>
                   <img src="https://www.publickey1.jp/2025/G7K3cF8WwAAqNoJ.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2025.12.14</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025121444717/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PS4PKGInstaller v3.04 (PS4/PS5),BD-JB-1252 v1.0-beta.2,pop-fe v1.26,libultrahand 2.2.3,KeyX v1.4.1,ovl-sysmodules v1.4.6,Tetris Overlay 0.4.5,NX Locale Switcher v1.1.4,Nimbus v2.0.1,ISFShax v5.1,TinyWiiBackupManager v4.9.3,nds-bootstrap v2.11.0,TWiLightMenu++ v27.20.0,duckstation v0.1-10339,shadPS4 Pre-release-shadPS4-2025-12-12-9e28756,PCSX2 v2.5.383,Universal Media Server 15.3.0,OpenTTD 15.0-RC2→→→この記事の続きを読む
-GameGaz Daily 2025.12.14 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -19478,7 +19524,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-12-14T23:01:49.831Z">2025-12-14T23:01:49.831Z</time>
+    <time id="build-timestamp" datetime="2025-12-15T00:04:31.860Z">2025-12-15T00:04:31.860Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
