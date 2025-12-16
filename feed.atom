@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-16T00:03:45.294Z</updated>
+    <updated>2025-12-16T01:30:01.236Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[独り言]]></title>
+        <id>hatenablog://entry/17179246901333232620</id>
+        <link href="https://akkera102.hatenablog.com/entry/2025/12/16/102408"/>
+        <updated>2025-12-16T01:24:08.000Z</updated>
+        <summary type="html"><![CDATA[GBAの吸い出しにお金をかけたくない場合、dsLiteとdsマジ◯ンの組み合わせがいいような気もします。
+BIOS（DSとGBA実機両方）に関してはGBAマジ◯ンでセーブデータ（SRAM）保存。16384バイト削ればいいだけです。
+https://github.com/mgba-emu/bios-dump/tree/master]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2025-12-15]]></title>
+        <id>hatenablog://entry/17179246901333031539</id>
+        <link href="https://commits.hatenablog.com/entry/2025/12/16/100000"/>
+        <updated>2025-12-16T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ガーネットの楽譜に手を加えていた。今ピアノでガーネットを練習していて、オリジナルの楽譜に手を入れたうえで弾いているので、手を加えたところを反映するために自分で楽譜を書いている。
+ここ何回かのピアノのレッスンで楽譜にまた手を加えていたのだけど、上から修正したり脳内で記憶しているだけだったりな箇所が増えてきたので、データに修正を入れて印刷し直した。
+書き直していてどう楽譜に落とし込んだらいいのかよくわからないところがあり、Geminiに聞いたらいい感じに教えてくれて便利だった。
+elin.pocke.me
+自分が開発しているゲームの攻略サイトをVercelに乗せているのだけど、無料枠の月間100万requestに届きそうなリクエストが起きていたので対策をいれた。
+使う前はそんなにリクエスト来ないだろと楽観的に見積もっていた。実際1日のPVも1000に満たないぐらいなのだけど、制約となっているEdge Requestsという指標だと30000req/dayぐらい来ている。単純に30日をかけると90万req/dayになるので、もう突破してもおかしくない。
+Edge Requestsは、Vercelにいく全てのHTTPリクエスト数が対象らしい。
+ログを見てみると、どうやらNextのprefetch機能が原因になっていそうだと見えた。というのも、ログを見ると(一番よく使われるであろう機能である)キャラクター一覧画面の上の方に表示されるキャラクターの詳細画面へのアクセスが、一覧画面と同じぐらいの数あったため。これは詳細画面で表示されているリンクにprefetchが飛んでいることでリクエスト数が増しているのだろうと推測できる。
+ということで、デフォルトの画面内に描画された時にprefetchを行う挙動を、マウスホバー時にprefetchを行うように修正した。これでprefetchの回数が減ってリクエスト数が減ると思う。数日後とかにEdge Requestsの指標とPVを見比べて効果を測定したい。
+また、NextのRouter CacheとHTTPのCache-Controlも入れた。基本的にデータを出すだけのWebアプリなので、そこそこ長めのキャッシュを設定した。
+これらも多少効果があると期待している。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ダンロボ合作を今更振り返る]]></title>
+        <id>https://note.com/nototote/n/n90fa2fafa856</id>
+        <link href="https://note.com/nototote/n/n90fa2fafa856"/>
+        <updated>2025-12-16T00:50:42.000Z</updated>
+        <summary type="html"><![CDATA[これの話をします。
+自分のパートの話しかしません！参加者なんだからそりゃそうだろという感じ。
+続きをみる]]></summary>
+        <author>
+            <name>とッくん@マリ●ペデ●ア管理人</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日本人プログラマ向け、プログラミングに適した「フォント」まとめ。2025年版]]></title>
         <id>https://www.publickey1.jp/blog/25/2025_1.html</id>
@@ -11800,21 +11844,6 @@ GameGaz Daily 2025.9.18 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[クラウドなどのITインフラの構成をコードで定義する、いわゆるInfrastructure as Codeツール「Pulumi」を提供するPulumi社は、自然言語による指示でクラウドのプロビジョニングやアプリケーションのランタイムのアップグ...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[sqldefで column / table / index のrenameができるようにしました]]></title>
-        <id>hatenablog://entry/6802888565238378693</id>
-        <link href="https://gfx.hatenablog.com/entry/2025/09/17/222334"/>
-        <updated>2025-09-17T13:23:34.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-sqldefは、宣言的スキーマ管理（declarative schema management）のためのツールですす。 atlas とか ridgepole とか、あるいは古くは GitDDL（あるいはGitDDLのバックエンドである SQL::Translator::Diff）のように、「理想的なDDL」を書いておくと、実際のDBのschemaと比較して「理想的なDDL」になるようにALTERなどを発行する、というツールです。
-これを使いたくて、実際に小さめのプロジェクトで試しに使ってみてなかなかよかったんですが、rename機能がなくて本格導入は無理だなーと思っていたのです。まあしかし、足りない機能は実装すればよいということで、このたび無事に column / table / index のrenameに対応させました（psqldef, mysqldef, mssqldef, sqlite3defの全て）。これで大きめのプロジェクトでも導入しやすくなるはず！入れたばかりなのでバグはあるかもしれません。問題があれば discussions に報告してもらえれば対応します。
-ついでなんですが、今見ているプロジェクトではPostgreSQLのGRANTでの権限管理を多用しているので、これも対応させました（これはpsqldefのみ）。
-v2.4.6 から3種のrename + grant (managed_roles) に対応しています。
-これでやっとalembic migrationから脱却できるぞ…！！]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
         </author>
     </entry>
     <entry>
