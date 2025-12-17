@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901333676619",
+          "author": null,
+          "description": "ファミコンは詳しくないのですけどCHRROMに細工してるっぽいです。ラズパイを使っているので1フレーム毎に転送していると思われます。\nakiba-pc.watch.impress.co.jp\nプレイステーションでいうリモートプレイに近いというべきかも。ラズパイ資産でゲームが作れるってのは大きなアドバンテージですねー。別件でゲームボーイカードリッジにESP32を使ったwifi通信というのもあるみたいです。\nwww.kickstarter.com\nNES DOOM。pdf技術解説あります（必読。\nbakutendo.net\n実機本体よりカードリッジ側がリッチになってしまうと、本体で作るメリットがなくなりますよね・・・。VRAMドライバと化すか、メモリ転送装置（バス）になるか。ん－プログラミング的ロマンはちょっと薄くなるのかもしれません。",
+          "link": "https://akkera102.hatenablog.com/entry/2025/12/17/132930",
+          "publishedOn": "2025-12-17T04:29:30.000Z",
+          "wordCount": 484,
+          "title": "ファミコンで３Ｄ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901333676619/1765946375",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901333676619/1765946375"
+        },
+        {
           "id": "hatenablog://entry/17179246901333232620",
           "author": null,
           "description": "GBAの吸い出しにお金をかけたくない場合、dsLiteとdsマジ◯ンの組み合わせがいいような気もします。\nBIOS（DSとGBA実機両方）に関してはGBAマジ◯ンでセーブデータ（SRAM）保存。16384バイト削ればいいだけです。\nhttps://github.com/mgba-emu/bios-dump/tree/master",
