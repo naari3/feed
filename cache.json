@@ -1294,6 +1294,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901334972791",
+          "author": null,
+          "description": "ピアノのレッスンだった。\nレッスン中に先生とFirst Takeでのガーネットの演奏を聴いて、間奏の部分を少し変更した。左手の低音部分が、元々使っている楽譜とFirst Takeで違っていたみたい。実際変えたらいい感じになった気がする。自分で聴いているだけだと、主旋律はともかく低音を聴き取るのはかなり難しいので、先生に教えてもらって助かった。言われて聞くとなんとか分かる感じ。\n年内のレッスンはこれでおしまいで、年明けの次のレッスンまでに仕上げていきたい。",
+          "link": "https://commits.hatenablog.com/entry/2025/12/21/100000",
+          "publishedOn": "2025-12-21T01:00:00.000Z",
+          "wordCount": 508,
+          "title": "2025-12-20",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901334972791/1766278804",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901334972791/1766278804"
+        },
+        {
           "id": "hatenablog://entry/17179246901333031539",
           "author": null,
           "description": "ガーネットの楽譜に手を加えていた。今ピアノでガーネットを練習していて、オリジナルの楽譜に手を入れたうえで弾いているので、手を加えたところを反映するために自分で楽譜を書いている。\nここ何回かのピアノのレッスンで楽譜にまた手を加えていたのだけど、上から修正したり脳内で記憶しているだけだったりな箇所が増えてきたので、データに修正を入れて印刷し直した。\n書き直していてどう楽譜に落とし込んだらいいのかよくわからないところがあり、Geminiに聞いたらいい感じに教えてくれて便利だった。\nelin.pocke.me\n自分が開発しているゲームの攻略サイトをVercelに乗せているのだけど、無料枠の月間100万requestに届きそうなリクエストが起きていたので対策をいれた。\n使う前はそんなにリクエスト来ないだろと楽観的に見積もっていた。実際1日のPVも1000に満たないぐらいなのだけど、制約となっているEdge Requestsという指標だと30000req/dayぐらい来ている。単純に30日をかけると90万req/dayになるので、もう突破してもおかしくない。\nEdge Requestsは、Vercelにいく全てのHTTPリクエスト数が対象らしい。\nログを見てみると、どうやらNextのprefetch機能が原因になっていそうだと見えた。というのも、ログを見ると(一番よく使われるであろう機能である)キャラクター一覧画面の上の方に表示されるキャラクターの詳細画面へのアクセスが、一覧画面と同じぐらいの数あったため。これは詳細画面で表示されているリンクにprefetchが飛んでいることでリクエスト数が増しているのだろうと推測できる。\nということで、デフォルトの画面内に描画された時にprefetchを行う挙動を、マウスホバー時にprefetchを行うように修正した。これでprefetchの回数が減ってリクエスト数が減ると思う。数日後とかにEdge Requestsの指標とPVを見比べて効果を測定したい。\nまた、NextのRouter CacheとHTTPのCache-Controlも入れた。基本的にデータを出すだけのWebアプリなので、そこそこ長めのキャッシュを設定した。\nこれらも多少効果があると期待している。",
@@ -5378,18 +5393,7 @@
       "title": "ディグインザディガー",
       "feedUrl": "https://note.com/diginthedigger/rss",
       "siteUrl": "https://note.com/diginthedigger",
-      "articles": [
-        {
-          "id": "https://note.com/diginthedigger/n/n8bba4d642d17",
-          "author": null,
-          "description": "ご無沙汰してます！\nX（旧Twitter）のモーメント機能の終了に伴い、それまでX上に掲載されていた漫画のまとめ読みができない状況が続いています。\n書籍版も長らく完売状態で再販できていないため、皆様のお声に応えようと思い、この度色々準備してみました！主に２つお知らせがあります！\n続きをみる",
-          "link": "https://note.com/diginthedigger/n/n8bba4d642d17",
-          "publishedOn": "2025-09-22T12:06:53.000Z",
-          "wordCount": null,
-          "title": "マンガノ全話公開開始＆PDF版販売のおしらせ",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/208983358/rectangle_large_type_2_31c04dde2676c68e3797af11440a2b8b.jpeg?width=800"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "しゃけ",
