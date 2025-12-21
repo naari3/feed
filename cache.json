@@ -2938,6 +2938,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901330065616",
+          "author": null,
+          "description": "わたくしめちゃくちゃに音楽が好きなのですが、好きであることは必ずしも研究熱心であることを意味しておらず、新しい音源の発掘は配信サービスのレコメンド頼りという受動的な態度で聴くようになって久しいです。人々がChatGPTの優しい応答に依存しバージョンアップに伴う性格変更に暴動を起こすようになるはるか以前から、僕はよりクラシックなAIであるところの機械学習によるレコメンドエンジンに支配されているわけです。何ならサブスク音楽配信が始まる前から、Amazonの「これを買った人はこれも買っています」でCD買ってましたからね、俺。先駆者なので。\nで、そういう聴き方をしていると新譜情報に疎くなるんですが、たまたま今年ひさしぶりにわりと新譜を聴いた気がするので、2025年リリースのよかった音源を書きたいと思います。\n※追記：Spotifyのプレイリストも作りました。ここから聴いてね（Spotifyに入ってない曲は入れてません！）\n2025年のベスト３\nまずダントツで聴いた３枚のアルバムから。\n『amor de encava』weed420\namor de encava weed420\nこれ今年一番衝撃を受けたアルバムです。こんな音楽あるのかよと思って。聴いたことのない音。ベネズエラのグループらしいです。\n「Epic Collage」というジャンルの解説記事から知ったんですけど、ここで紹介されてる他の音源と比べてもやっぱり唯一無二という感じがする。\n『!OK!』Khadija Al Hanafi\n!OK! Khadija Al Hanafi\nシカゴ発のフットワークっていう音楽ジャンルがあって、たしか盛り上がってたの2010年代くらいで、なんか速くてリズムマシンのスネアをやたらババババって細かく刻むダンスミュージックというイメージでした。\n『Past Future Present Memory…",
+          "link": "https://nomolk.hatenablog.com/entry/2025/12/21/231907",
+          "publishedOn": "2025-12-21T14:19:07.000Z",
+          "wordCount": null,
+          "title": "2025年リリースの聴いてよかった音楽を紹介します",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/08104fdf8bafc3ca6c81612b5c1c20db4d573864/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251221%2F20251221231754.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/08104fdf8bafc3ca6c81612b5c1c20db4d573864/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251221%2F20251221231754.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901328031334",
           "author": null,
           "description": "ヘヘヘ……ダッコフおもしろい……ダッコフ……ヘヘ……\nwww.youtube.com\nwww.nicovideo.jp\n恒例の動画の技術解説エントリです。\n…と、その前にひとつお知らせ！\n「分割キーボードを自作する」がニコニコ動画アワード2025、ユーザ投票賞にノミネートされました！\ndouga-awards.nicovideo.jp\nというわけであらためまして動画の技術解説エントリです。\nArduinoでステッピングモーターを動かす\nモーターが回っても配線がねじれない絡まらない・スリップリング\nアヒルを動かすプログラム\nArduinoでステッピングモーターを動かす\nアヒルの方向転換に使っているのはステッピングモーター。\n\nいつも使っているサーボモーターは0度～180度の間でしか回らないので、ぐるぐる何回転もさせることはできません。\nちゃんとしたステッピングモーターってそこそこお値段するのですが、ホビー用なら28BYJ-48という異常に安い製品があります。\n\n\nLEAUNGYOO 2個セット 28BYJ-48 5V ステッピングモーター+ ULN2003ステッピングモーター駆動テストモジュールボード 4フェーズ 5ライン\n\nLEAUNGYOO\nAmazon\n\nこれを、例えばこんな感じでつないで…\n\nこんな感じのスケッチで動かせます（動画中でチョコレート乗せてスイッチで動かしてるやつがこれ）\n#include <AccelStepper.h>\n\nconst int switchForward = 3; //右回転スイッチ用ピン\nconst int switchBackward = 4; //左回転スイッチ用ピン\n\nAccelStepper stepper(AccelStepper::FULL4WIRE, 8, 10, 9, 11); //制御モジュールへの接続ピン。IN1,I…",
@@ -6219,7 +6234,18 @@
       "title": "埜村武",
       "feedUrl": "https://note.com/nomuratakeshi/rss",
       "siteUrl": "https://note.com/nomuratakeshi",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/nomuratakeshi/n/nde440dbecbd0",
+          "author": null,
+          "description": "adventar.org\n        \n    \n\n音MAD Advent Calendar 2025の22日目の記事です。\n続きをみる",
+          "link": "https://note.com/nomuratakeshi/n/nde440dbecbd0",
+          "publishedOn": "2025-12-21T15:00:38.000Z",
+          "wordCount": null,
+          "title": "十進分類法を用いたファイル管理のススメ",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/237796984/rectangle_large_type_2_2cd3b8485de7d3bb5e6a81edb77cc58f.jpeg?width=800"
+        }
+      ]
     },
     {
       "title": "とッくん@マリ●ペデ●ア管理人",
@@ -9164,16 +9190,6 @@
           "wordCount": 1695,
           "title": "GameGaz Daily 2025.9.24",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=44256",
-          "author": "mamosuke",
-          "description": "任天堂がカスタマーサポート外注,Xbox Series X|S値上げ,Xboxワイヤレスコントローラーのキャンペーンセール,BD-J exploitが13.00で対策,PeaSyo v1.5.3,VitaDB Downloader v2.3,Ultrahand Overlay v2.1.1,Tetris Overlay 0.3.9,XStreaming v2.3.4,shadPS4 Pre-release-shadPS4-2025-09-22-976d12f,PCSX2 v2.5.168→→→この記事の続きを読む\nGameGaz Daily 2025.9.23 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025092344256/",
-          "publishedOn": "2025-09-23T01:52:14.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.9.23",
-          "imageUrl": null
         }
       ]
     },
