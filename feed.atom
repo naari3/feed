@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-22T11:01:41.294Z</updated>
+    <updated>2025-12-22T12:02:02.072Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[joyGetPosExでハンドルリーク]]></title>
+        <id>hatenablog://entry/17179246901335579266</id>
+        <link href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/22/203725"/>
+        <updated>2025-12-22T11:37:25.000Z</updated>
+        <summary type="html"><![CDATA[以前作ったゲームが一部の環境で遅くなるとのことで調査してたら、めっちゃハンドルがリークしてる。
+
+原因はjoyGetPosExだった。
+ joyGetNumDevs() で登録されているジョイパッドの数を取って、その数だけjoyGetPosEx(i, &joyInfoEx)していたのだけど、DualSenseをワイヤレスで接続したときにデバイス数にはカウントされるけどjoyGetPosExはエラーになるという状態だった。エラーが返る状態で高頻度（毎フレーム）でjoyGetPosExしているとリークするぽい。なんでやねん。とりあえずエラーを見かけたらそのポートは数秒間は問い合わせないようにしたら直った。]]></summary>
+        <author>
+            <name>アプリ置き場</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2025.12.22]]></title>
         <id>https://gamegaz.com/?p=44744</id>
