@@ -2208,23 +2208,7 @@
       "title": "Islands in the byte stream",
       "feedUrl": "https://gfx.hatenablog.com/rss",
       "siteUrl": "https://gfx.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802888565257090626",
-          "author": null,
-          "description": "httpxはものすごく遅いから使うべきでないかもしれない…という話を書こうと思ったんですが、検証してみたら、確かにaiohttpよりは2倍以上遅いんですが、設定次第で多少はマシかもしれない、という結論です。\n前提として、async modeです。いまどきのAPI serverは全部asyncかなとは思います。今回はsync modeには興味がないので検証してないですが、sync modeではまったく違う結果かもしれません。\nあと文脈としては httpx を推しているブログを読んで、いや httpx はパフォーマンスに問題があるんだよな、ということを周知したかったというのもあります。\nnote.com\nことの起こりは Python の openai library が 0.x から 1.x になったときにものすごくパフォーマンスが劣化したという問題があったことです。\ngithub.com\nいま私がみているサービスでも openai library のバージョンアップを試みたのですが、明らかにサービスのパフォーマンスが劣化して、ユーザー体験に影響が出るレベルでした。これではopenai libraryのアップグレードができません。\n上記のissueによると、このパフォーマンス劣化の原因は、バックエンドとして使っているHTTP clientをaiohttpからhttpxに変えたからだと推測されています*1。\nそこで、そのことを確認するために、 httpx vs aiohttp のベンチマークスクリプトを書いてみました *2。\npython: 3.13\nhttpx: 0.28.1\naiohttp: 3.12.5\ngithub.com\n細かい数字はさておくとして、たしかに parallell requests *3で、デフォルトの設定（connection poolingあり）だと、aiohttpはhttpxより100倍速い（11086% faster）ということでした。これではサービスのユーザー体験に影響を及ぼすのも頷けます。\nところが、connection poolingを切る（keep-aliveを無効化する）と、様子が変わります。aiohttpは確かに少し遅くなりますが、httpxはconnection poolingをしないほうが速くなるのです。aiohttpとの差もかなり縮まって、せいぜい aiohttp が2倍程度速いだけです。それでもaiohttpを選択するには十分な理由にはなりますが、サービスのユーザー体験が明らかに劣化する、というレベルではありません。\nおそらくこれは httpx のバグですね。 httpx vs aiohttp の速度を単純に比較するとたしかにaiohttpのほうがどんな状況でも2倍以上高速なので、速度という点からはaiohttpを選ぶべきです。しかしもしhttpxを使う場合（あるいは何かのライブラリのバックエンドとして使われていて、httpxを使わざるを得ないとき）は、httpxのconnection poolingを切ると少しマシになるかもしれません。\nちなみに aiohttp の connection pooling も扱いが難しくて安定した運用が難しいため、私は aiohttp.TCPConnector(force_close=True) で切って運用しています。\n*1:いまはaiohttpをバックエンドとして選べるようになりました。選択式はメンテ工数が格段に上がるので、いっそaiohttp一本に切り替えたらよかったのになあと思いますが、まあそれはopenai library開発チームの判断なのでここでは深く追求しません\n*2:実際に書いたのは coding agent ですが。\n*3:async API serverではparallel requestsが普通と考えられるので、parallel requestsの速度だけみます。",
-          "link": "https://gfx.hatenablog.com/entry/2025/09/27/134421",
-          "publishedOn": "2025-09-27T04:44:21.000Z",
-          "wordCount": 581,
-          "title": "Pythonのhttpx (async) はサービスに支障が出るほど遅い、ただしコネクションプールを切ると速くなるかも",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208692334729887881/6802888565257090626/1758948704",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729887881/6802888565257090626/1758948704"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "【ギュウひ】の夜泣き",
