@@ -2900,6 +2900,21 @@
       "siteUrl": "https://nazenaninadesico.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901337051769",
+          "author": null,
+          "description": "Durationて結構使う頻度高いけど、Duration(milliseconds:100)みたいなの毎度書くの地味にめんどくさい。\n以下のようなものを定義しとくと便利。どうしてもconst使いたい時だけ元のつかってもろて。\n// 定義\nextension IntDurationExt on int {\n  Duration get day => Duration(days: this);\n  Duration get hour => Duration(hours: this);\n  Duration get minute => Duration(minutes: this);\n  Duration get sec => Duration(seconds: this);\n  Duration get ms => Duration(milliseconds: this);\n  Duration get micro => Duration(microseconds: this);\n}\n\n// 使用例\nawait Future.delayed(500.ms);",
+          "link": "https://nazenaninadesico.hatenablog.jp/entry/2025/12/27/000344",
+          "publishedOn": "2025-12-26T15:03:44.000Z",
+          "wordCount": null,
+          "title": "flutter Durationを入力しやすくする",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901337051769/1766761424",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901337051769/1766761424"
+        },
+        {
           "id": "hatenablog://entry/17179246901337047417",
           "author": null,
           "description": "Flutterでaudioplayersを使っていて、Windowsでは複数のBGMや効果音を重ねることができたけど、Androidではできなかった。そういえばスマホにはオーディオフォーカスとかあったなと思い出して、調べてみると下記でミキシング設定できた。\nfinal ctx = AudioContextConfig(\n  // マナーモード有効\n  respectSilence: true,\n  // ミキシング可\n  focus: AudioContextConfigFocus.mixWithOthers,\n).build();\n\nawait player.setAudioContext(ctx);\n　\nあとWindowsで一度stop()したら（リソース解放されちゃってる？）、seek()できないだの、play()できないだの問題が発生した。\n現在のバージョンだけの問題なのかわからないが、とりあえずpauseとseekでstop代わりにしてお茶を濁した。再生はresume()で。\nFuture<void> stop(){\n  await player.pause();\n  await player.seek(Duration.zero);\n}",

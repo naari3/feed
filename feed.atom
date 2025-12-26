@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-26T15:02:13.829Z</updated>
+    <updated>2025-12-26T16:01:40.350Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[flutter Durationを入力しやすくする]]></title>
+        <id>hatenablog://entry/17179246901337051769</id>
+        <link href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/27/000344"/>
+        <updated>2025-12-26T15:03:44.000Z</updated>
+        <summary type="html"><![CDATA[Durationて結構使う頻度高いけど、Duration(milliseconds:100)みたいなの毎度書くの地味にめんどくさい。
+以下のようなものを定義しとくと便利。どうしてもconst使いたい時だけ元のつかってもろて。
+// 定義
+extension IntDurationExt on int {
+  Duration get day => Duration(days: this);
+  Duration get hour => Duration(hours: this);
+  Duration get minute => Duration(minutes: this);
+  Duration get sec => Duration(seconds: this);
+  Duration get ms => Duration(milliseconds: this);
+  Duration get micro => Duration(microseconds: this);
+}
+
+// 使用例
+await Future.delayed(500.ms);]]></summary>
+        <author>
+            <name>アプリ置き場</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[flutter audioplayersで1音しか鳴らない]]></title>
         <id>hatenablog://entry/17179246901337047417</id>

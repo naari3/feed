@@ -83,6 +83,31 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander" open>
+                <summary class="article-expander__title">flutter Durationを入力しやすくする</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/27/000344" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Durationて結構使う頻度高いけど、Duration(milliseconds:100)みたいなの毎度書くの地味にめんどくさい。
+以下のようなものを定義しとくと便利。どうしてもconst使いたい時だけ元のつかってもろて。
+// 定義
+extension IntDurationExt on int {
+  Duration get day &#x3D;&gt; Duration(days: this);
+  Duration get hour &#x3D;&gt; Duration(hours: this);
+  Duration get minute &#x3D;&gt; Duration(minutes: this);
+  Duration get sec &#x3D;&gt; Duration(seconds: this);
+  Duration get ms &#x3D;&gt; Duration(milliseconds: this);
+  Duration get micro &#x3D;&gt; Duration(microseconds: this);
+}
+
+// 使用例
+await Future.delayed(500.ms);</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901337051769/1766761424" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
                 <summary class="article-expander__title">flutter audioplayersで1音しか鳴らない</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/26/235019" target="_blank"
                   rel="noopener">
@@ -19652,7 +19677,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2025-12-26T15:02:13.781Z">2025-12-26T15:02:13.781Z</time>
+    <time id="build-timestamp" datetime="2025-12-26T16:01:40.309Z">2025-12-26T16:01:40.309Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
