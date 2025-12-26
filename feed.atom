@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-26T14:01:47.472Z</updated>
+    <updated>2025-12-26T15:02:13.829Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[flutter audioplayersで1音しか鳴らない]]></title>
+        <id>hatenablog://entry/17179246901337047417</id>
+        <link href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/26/235019"/>
+        <updated>2025-12-26T14:50:19.000Z</updated>
+        <summary type="html"><![CDATA[Flutterでaudioplayersを使っていて、Windowsでは複数のBGMや効果音を重ねることができたけど、Androidではできなかった。そういえばスマホにはオーディオフォーカスとかあったなと思い出して、調べてみると下記でミキシング設定できた。
+final ctx = AudioContextConfig(
+  // マナーモード有効
+  respectSilence: true,
+  // ミキシング可
+  focus: AudioContextConfigFocus.mixWithOthers,
+).build();
+
+await player.setAudioContext(ctx);
+　
+あとWindowsで一度stop()したら（リソース解放されちゃってる？）、seek()できないだの、play()できないだの問題が発生した。
+現在のバージョンだけの問題なのかわからないが、とりあえずpauseとseekでstop代わりにしてお茶を濁した。再生はresume()で。
+Future<void> stop(){
+  await player.pause();
+  await player.seek(Duration.zero);
+}]]></summary>
+        <author>
+            <name>アプリ置き場</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ヤバいの見ちゃった…生搾りオレンジジュースの自販機「IJOOZ」には、なぜ虫やゴキブリが混入しないのか？]]></title>
         <id>hatenablog://entry/17179246901331612744</id>
@@ -11899,17 +11924,6 @@ www.youtube.com
 バーイ。]]></summary>
         <author>
             <name>メガネ好き好きクラブ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【噂】PlayStation携帯機 液晶ディスプレイ採用なら低価格に]]></title>
-        <id>https://gamegaz.com/?p=44287</id>
-        <link href="https://gamegaz.com/2025092844287/"/>
-        <updated>2025-09-28T02:21:16.000Z</updated>
-        <summary type="html"><![CDATA[PlayStation携帯機は有機ELディスプレイを採用しなければ500ドルを下回るかもしれません。→→→この記事の続きを読む
-【噂】PlayStation携帯機 液晶ディスプレイ採用なら低価格に first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
