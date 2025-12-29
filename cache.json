@@ -3311,21 +3311,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9812e75167c8bf9e6aa88b012fa67079d6b872a5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251005%2F20251005204736.png"
-        },
-        {
-          "id": "hatenablog://entry/6802888565264629377",
-          "author": null,
-          "description": "データをたくさん運んでくれるSDカード。\n動画の技術解説、10本目です。ついに2ケタ到達！！\nwww.youtube.com\nwww.nicovideo.jp\n今回はけっこう凝った工作をしたので説明することが多いです。がんばるぞ。\nアクセスランプの複製について\nまずわかりやすいところから。\n\nSDカードリーダーのアクセスランプの複製です。\nそもそもアクセスランプ付きのカードリーダーが少ないんですよね。今回はこれを使いました。\n\n\nエレコム カードリーダー USB-A 2-in-1 5Gbps 【SDXC/SDHC/SD/microSDXC/microSDHC/microSD対応】 MR3-D20EBK\n\nエレコム(ELECOM)\nAmazon\n\nで、LEDの配線って大抵はこうなってます。\n\n点灯時は「何らかの回路」からここに電気が流れてきますし、消灯時は流れてこなくなります。で、複製したいだけなら…\n\nこうやって並列に抵抗とLEDを追加してやれば複製できます。実際の配線としてはこんな感じになってます。\n\n青が基板上の配線、赤が追加した配線です。基板側の部品が細かい＆赤線と青線の立体交差があるのでちょっと見にくくてすみませんが、なんとなくわかりますかね？？\nアクセスランプの反転について\nで、このあとが電子工作っぽいところ。\n\nこれサクッと説明するのが難しいのですが、比較的初心者にもわかりやすいように順を追って説明していきます。\n\nLEDと抵抗を分けて考えると話が複雑になるので、セットにして考えます。赤丸部分は一個の部品と考えてください。仮に「ライト」と呼びましょう。ライトは左から右に電気が流れると点灯します。\n\n３Ｖとか０Ｖとか書いてありますが、これは「電位」です。電位はよく「電荷が持つ位置エネルギー」とか説明されるのですがそんなこと言われてもよくわからないと思うので、単純に…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/09/30/231559",
-          "publishedOn": "2025-09-30T14:15:59.000Z",
-          "wordCount": 861,
-          "title": "アクセスランプLEDの点灯／消灯を反転する方法、フォトリレーの便利さを知ってほしい、手作りミラーボールの材料【動画解説】",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/4da729cb3c45f41537c313eeb507e90c846ca84d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250930%2F20250930210424.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/4da729cb3c45f41537c313eeb507e90c846ca84d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20250930%2F20250930210424.png"
         }
       ]
     },

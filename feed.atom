@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2025-12-29T01:30:23.546Z</updated>
+    <updated>2025-12-29T02:41:39.943Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11973,47 +11973,6 @@ logo
 「最強のコーディングモ]]></summary>
         <author>
             <name>laiso</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アクセスランプLEDの点灯／消灯を反転する方法、フォトリレーの便利さを知ってほしい、手作りミラーボールの材料【動画解説】]]></title>
-        <id>hatenablog://entry/6802888565264629377</id>
-        <link href="https://nomolk.hatenablog.com/entry/2025/09/30/231559"/>
-        <updated>2025-09-30T14:15:59.000Z</updated>
-        <summary type="html"><![CDATA[データをたくさん運んでくれるSDカード。
-動画の技術解説、10本目です。ついに2ケタ到達！！
-www.youtube.com
-www.nicovideo.jp
-今回はけっこう凝った工作をしたので説明することが多いです。がんばるぞ。
-アクセスランプの複製について
-まずわかりやすいところから。
-
-SDカードリーダーのアクセスランプの複製です。
-そもそもアクセスランプ付きのカードリーダーが少ないんですよね。今回はこれを使いました。
-
-
-エレコム カードリーダー USB-A 2-in-1 5Gbps 【SDXC/SDHC/SD/microSDXC/microSDHC/microSD対応】 MR3-D20EBK
-
-エレコム(ELECOM)
-Amazon
-
-で、LEDの配線って大抵はこうなってます。
-
-点灯時は「何らかの回路」からここに電気が流れてきますし、消灯時は流れてこなくなります。で、複製したいだけなら…
-
-こうやって並列に抵抗とLEDを追加してやれば複製できます。実際の配線としてはこんな感じになってます。
-
-青が基板上の配線、赤が追加した配線です。基板側の部品が細かい＆赤線と青線の立体交差があるのでちょっと見にくくてすみませんが、なんとなくわかりますかね？？
-アクセスランプの反転について
-で、このあとが電子工作っぽいところ。
-
-これサクッと説明するのが難しいのですが、比較的初心者にもわかりやすいように順を追って説明していきます。
-
-LEDと抵抗を分けて考えると話が複雑になるので、セットにして考えます。赤丸部分は一個の部品と考えてください。仮に「ライト」と呼びましょう。ライトは左から右に電気が流れると点灯します。
-
-３Ｖとか０Ｖとか書いてありますが、これは「電位」です。電位はよく「電荷が持つ位置エネルギー」とか説明されるのですがそんなこと言われてもよくわからないと思うので、単純に…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>
