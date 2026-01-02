@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-01-02T00:03:35.775Z</updated>
+    <updated>2026-01-02T01:29:44.504Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-01-01]]></title>
+        <id>hatenablog://entry/17179246901339272905</id>
+        <link href="https://commits.hatenablog.com/entry/2026/01/02/100000"/>
+        <updated>2026-01-02T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[elinlog.pocke.me
+Elinのコードを読むためのVSCode拡張を作った。
+コードを読むのがだいぶ楽になりそう。
+実装はほとんどClaude Codeで行った。仕様をしっかりテキストに落としたらだいたい望むものが出てきたので便利。
+一番難しいのはVSCode Marketplaceに拡張をアップロードするためにAzure DevOpsのアカウントを作るところだった。手順に従ってやっていても、ローディング画面がずっとぐるぐるし続けて進まなくなってしまっていた。URLのパスパラメータを消してサインアップ画面を出して登録したら何故かうまくいった。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2026年1月-1】蟹年3]]></title>
         <id>hatenablog://entry/17179246901339280791</id>
