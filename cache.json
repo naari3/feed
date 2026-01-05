@@ -619,6 +619,21 @@
       "siteUrl": "https://blog.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901340715070",
+          "author": null,
+          "description": "はてなブログ独自の集計による人気記事のランキング。2025年12月21日（日）から2025年12月27日（土）〔2025年12月第4週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    15年かけて日本全国を旅した。写真で全都道府県を振り返る。 - 今夜はいやほい\n by id:kikuchidesu \n    \n2\n    2025年、読んでおもしろかった本を振り返る！ - 基本読書\n by id:huyukiitoichi \n    \n3\n    論理削除という技術的負債、それでも僕たちは使い続ける - じゃあ、おうちで学べる\n by id:syu-m-5151 \n    \n4\n    終わったのは日本じゃなくて世界じゃないの？ - シロクマの屑籠\n by id:p_shirokuma \n    \n5\n    2025年リリースの聴いてよかった音楽を紹介します - nomolkのブログ\n by id:slideglide \n    \n6\n    おい、休め - じゃあ、おうちで学べる\n by id:syu-m-5151 \n    \n7\n    2025年、AI時代の要件定義について考える - じゃあ、おうちで学べる\n by id:syu-m-5151 \n    \n8\n    正規表現すぐ忘れるのでビジュアルプログラミングツールを作った ~ Blocklyで簡単にビジュアルDSL作ろう ~ - エムスリーテックブログ\n by id:m3tech \n    \n9\n    勝手に輝いていた増田ブコメ大賞2025 - 誰かの肩の上\n by id:daydollarbotch \n    \n10\n    「買ってよかった」は本当に良かった？ 過去10年の“買ってよかった記事”を振り返る - I AM A DOG\n by id:OKP \n    …",
+          "link": "https://blog.hatenablog.com/entry/2026/01/05/120000",
+          "publishedOn": "2026-01-05T03:00:00.000Z",
+          "wordCount": 1154,
+          "title": "今週のはてなブログランキング〔2025年12月第4週〕",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/c5f2c8313d78d6d38074fd4a5acb523ece5cdcbc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260105%2F20260105092142.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/c5f2c8313d78d6d38074fd4a5acb523ece5cdcbc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260105%2F20260105092142.jpg"
+        },
+        {
           "id": "hatenablog://entry/17179246901333311730",
           "author": null,
           "description": "今年気になった記事は入ってる？\n\n\n気づけば今年もあっという間に年の瀬ですね！ 皆さんにとってこの1年はどのような年でしたか？ はてなブログでは2025年もさまざまな話題が書き残されています。\n特に週刊はてなブログで、毎週月曜日に公開している「今週のはてなブログランキング*1」には、そのときどきの注目記事が集まっています！\n今回は、その総決算として2025年にもっとも注目を集めた「年間総合はてなブログランキング」トップ100の記事と、「はてな匿名ダイアリー」トップ50の記事を発表します*2！ 集計期間は2025年1月1日～同12月15日です。\n#\n    タイトル／著者とブックマーク\n    \n1\n    大企業の幹部がやっている事について - Software Transactional Memo\n by id:kumagi \n    \n2\n    定期的に何度も読み返している個人的名エントリを置いておく - 空の箱\n by id:ysknsid25 \n    \n3\n    ChatGPTに撮影時の条件込みで画像の内容を説明してもらって、ImageFXで生成するとほぼ同じ画像を作れておもしろい - hitode909の日記\n by id:hitode909 \n    \n4\n    課長になって中間管理職みを味わう愉悦 - やしお\n by id:Yashio \n    \n5\n    Cursorを使った文章執筆は、AIファーストな環境整備から始まる - 本しゃぶり\n by id:honeshabri \n    \n6\n    子供の不機嫌への対処法 - 感情の考察、日常の幸福\n by id:kosakimomo \n    \n7\n    万博で、いろんな国の人に前から気になっていたことをたずねてみた - 庭を歩いてメモをとる\n by id:yositeru \n    \n8\n  …",
@@ -10753,16 +10768,6 @@
           "wordCount": 1447,
           "title": "「State of JavaScript 2025」の投票がスタート、仕事や趣味でJavaScriptを使っている人は誰でも回答可能",
           "imageUrl": "https://www.publickey1.jp/2025/stateofjs2025-la01.png"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/25/ai_interop_tokyocloud_operator_days_tokyo_2025pr.html",
-          "author": null,
-          "description": "生成AIによるプログラミングの支援はすでに多くの開発現場で使われ始めています。ではクラウドやネットワークの運用の現場において、生成AIはどのくらい実用的に使えるのでしょうか？ クラウドの運用などにたずさわるシステム運用管理者に光を当てるイベ...",
-          "link": "https://www.publickey1.jp/blog/25/ai_interop_tokyocloud_operator_days_tokyo_2025pr.html",
-          "publishedOn": "2025-10-07T15:07:44.000Z",
-          "wordCount": null,
-          "title": "生成AIはネットワーク構築運用をどれだけ楽にするか？ Interop Tokyoでの実験が明かした現実と可能性。Cloud Operator Days Tokyo 2025基調講演ほか［PR］",
-          "imageUrl": null
         }
       ]
     },
