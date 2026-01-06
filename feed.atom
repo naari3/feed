@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-01-06T01:29:41.057Z</updated>
+    <updated>2026-01-06T02:36:39.621Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.1.6]]></title>
+        <id>https://gamegaz.com/?p=44801</id>
+        <link href="https://gamegaz.com/2026010644801/"/>
+        <updated>2026-01-06T02:10:25.000Z</updated>
+        <summary type="html"><![CDATA[PS5ではbd-jb利用不可,PS5 Dump Runner Installer v1.3.0,XFROM Dumper 2026-01-05,PSXMaster v1.4.0,PS5 Homebrew Game Sync Tool(PS5 Dump Game Sync Tool) v1.1.0,keysTester v5.1,SwitchTime 0.1.6,NX-ScreenUploader v0.2.0,Breeze beta99s_pr2,NUSGet v1.5.0,WiiUDownloader v2.69,UWUVCI-AIO-WPF v3.100.1,XboxMemCard V1.0.2,PCSX2 v2.6.1,PSX2 1.1.9,shadPS4 Pre-release-shadPS4-2026-01-05-55e2b0f,shadPS4-QtLauncher-2026-01-05-980ad7c,Vita3K Build: 3872,xemu v0.8.131,MAME4droid 2026(0.284) 1.31.1,ScratchEverywhere Beta Build 32→→→この記事の続きを読む
+GameGaz Daily 2026.1.6 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-01-05]]></title>
         <id>hatenablog://entry/17179246901340979593</id>
@@ -137,6 +148,16 @@ www.youtube.com
         <summary type="html"><![CDATA[Ruby開発チームは2025年12月25日、Ruby 4.0の正式リリースを発表しました。 Rubyは毎年12月25日に新バージョンをリリースすることが恒例となっており、2024年も予定通りに新バージョンが登場しました。しかも今回は2020...]]></summary>
         <author>
             <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[箱の処分]]></title>
+        <id>https://r7kamura.com/articles/2026-01-06-box</id>
+        <link href="https://r7kamura.com/articles/2026-01-06-box"/>
+        <updated>2026-01-05T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[押入れの整理に着手し、化粧箱を幾つか処分した。]]></summary>
+        <author>
+            <name>r7kamura.com</name>
         </author>
     </entry>
     <entry>
@@ -13047,61 +13068,6 @@ GameGaz Daily 2025.10.9 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[JavaScriptに興味を持つ世界中のIT技術者からの回答を集め、結果を発表している「State of JavaScript」の投票が今年も始まりました。 回答はJavaScriptを仕事で使っている人、趣味で使っている人など誰でも回答可...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[なぜQualcommによるArduino買収が電子工作界隈で話題なのか、そして「微妙…」みたいな反応なのか]]></title>
-        <id>hatenablog://entry/6802888565280498218</id>
-        <link href="https://nomolk.hatenablog.com/entry/2025/10/08/232500"/>
-        <updated>2025-10-08T14:25:00.000Z</updated>
-        <summary type="html"><![CDATA[QualcommによるArduino買収が発表されました。
-www.itmedia.co.jp
-Qualcommはスマホでよく使われているSnapdragon等で有名なチップメーカーで、Arduinoは電子工作用のマイコンボードとその開発ソフトウェアのメーカーです。
-これがなぜかを電子工作を知らない人でもわかるように説明します。
-※電子工作界隈の人には既知の話題しか出てきません
-Arduinoとは
-Arduinoが指すものがいくつかあって紛らわしいので整理します。
-企業としてのArduino。これが今回買収されました。以後、Arduino社と呼びます。後述するArduinoとArduino IDEの開発元であり、メーカーでもあります。
-それからハードウェアとしてのArduino。以下、単にArduinoと呼びます。これはマイコンボードという種類の電子部品です。
-Arduino Uno R3こんな感じでいろいろつないで使う（この記事より）
-
-最後にソフトウェアとしてのArduino。以下、Arduino IDEと呼びます。一度マイコンボードの話に戻りますが、Arduinoにつないだ入力部品に対して出力部品をどう反応させるかはプログラムで記述でき、そのおかげで自由度の高い制御が可能です。そのプログラムを書くためのPC用ソフトウェア（開発環境）がArduino IDEです。
-Arduino IDE の画面
-
-
-    
-Arduinoはどんなマイコンボードか
-Arduinoは2010年ごろからいわゆるメイカームーブメント（「ものづくりの民主化」）をけん引した製品のひとつです（もちろん今も現役です）。要は「これまで難しかった電子工作を簡単にした」画期的なデバイスでした。
-Arduinoが周辺回路を内蔵していることで初心者でも簡単にマイコンを使った電子工作ができるようになり、またAr…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ni.zsh v1.8.0リリース: Socket Firewallによるパッケージインストール時のチェック機能を追加]]></title>
-        <id>https://efcl.info/2025/10/08/ni.zsh-v1.8.0-socket-firewall/</id>
-        <link href="https://efcl.info/2025/10/08/ni.zsh-v1.8.0-socket-firewall/"/>
-        <updated>2025-10-08T14:00:00.000Z</updated>
-        <summary type="html"><![CDATA[npm/yarn/pnpm/bunを同じコマンドで扱えるni.zshのv1.8.0をリリースしました。
-Release v1.8.0 · azu/ni.zsh
-このバージョンでは、Socket Firewallを統合し、パッケージのインストールと実行時にサプライチェーン攻撃から保護する機能を追加しました。
-ni.zshについては、次の記事を参照してください。
-npm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた | Web Scratch
-ni.zsh: npmインストール時のサプライチェーン攻撃を検知する機能を追加 | Web Scratch
-ni.zsh v1.8.0の変更点
-主要な変更点は次の通りです。詳細はリリースノートを参照してください。
-Release v1.8.0 · azu/ni.zsh
-🛡️ Socket Firewallの統合
-Socket Firewallを統合し、パッケージのインストール時にセキュリティスキャンを行えるようになりました。
-Socket Firewallは、HTTPプロキシとしてパッケージマネージャのネットワーク通信をインターセプトし、悪意のあるパッケージがダウンロードされる前にブロックするツールです。
-従来のni.zshでは、Socket.dev APIを使ってリスクスコアを取得し、インストール前に確認を求める仕組みでした。
-Socket Firewallも基本的には同じで、自動的にインストール時にマルウェアならブロックし、潜在的なマルウェアは警告を表示します。
-詳しくは次の記事を参照してください。
-Introducing Socket Firewall: Free, Proactive Protection for Your Software Supply Chain
-セットアップ方法
-Socket…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

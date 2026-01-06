@@ -3554,21 +3554,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/ffcf07223157d3821ced15d2c35c927d66078cff/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251017%2F20251017215210.png"
-        },
-        {
-          "id": "hatenablog://entry/6802888565280498218",
-          "author": null,
-          "description": "QualcommによるArduino買収が発表されました。\nwww.itmedia.co.jp\nQualcommはスマホでよく使われているSnapdragon等で有名なチップメーカーで、Arduinoは電子工作用のマイコンボードとその開発ソフトウェアのメーカーです。\nこれがなぜかを電子工作を知らない人でもわかるように説明します。\n※電子工作界隈の人には既知の話題しか出てきません\nArduinoとは\nArduinoが指すものがいくつかあって紛らわしいので整理します。\n企業としてのArduino。これが今回買収されました。以後、Arduino社と呼びます。後述するArduinoとArduino IDEの開発元であり、メーカーでもあります。\nそれからハードウェアとしてのArduino。以下、単にArduinoと呼びます。これはマイコンボードという種類の電子部品です。\nArduino Uno R3こんな感じでいろいろつないで使う（この記事より）\n\n最後にソフトウェアとしてのArduino。以下、Arduino IDEと呼びます。一度マイコンボードの話に戻りますが、Arduinoにつないだ入力部品に対して出力部品をどう反応させるかはプログラムで記述でき、そのおかげで自由度の高い制御が可能です。そのプログラムを書くためのPC用ソフトウェア（開発環境）がArduino IDEです。\nArduino IDE の画面\n\n\n    \nArduinoはどんなマイコンボードか\nArduinoは2010年ごろからいわゆるメイカームーブメント（「ものづくりの民主化」）をけん引した製品のひとつです（もちろん今も現役です）。要は「これまで難しかった電子工作を簡単にした」画期的なデバイスでした。\nArduinoが周辺回路を内蔵していることで初心者でも簡単にマイコンを使った電子工作ができるようになり、またAr…",
-          "link": "https://nomolk.hatenablog.com/entry/2025/10/08/232500",
-          "publishedOn": "2025-10-08T14:25:00.000Z",
-          "wordCount": 871,
-          "title": "なぜQualcommによるArduino買収が電子工作界隈で話題なのか、そして「微妙…」みたいな反応なのか",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/c69ed0dcc556753e27fe41a41e4d7b36234294ec/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251008%2F20251008233420.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/c69ed0dcc556753e27fe41a41e4d7b36234294ec/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251008%2F20251008233420.png"
         }
       ]
     },
@@ -8068,16 +8053,6 @@
           "wordCount": 646,
           "title": "YAPC::Fukuoka 2025で「読む技術・書く技術・伝える技術 - 15年続けて分かった持続可能なオープンソース開発」という発表をしました",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2025/10/08/ni.zsh-v1.8.0-socket-firewall/",
-          "author": null,
-          "description": "npm/yarn/pnpm/bunを同じコマンドで扱えるni.zshのv1.8.0をリリースしました。\nRelease v1.8.0 · azu/ni.zsh\nこのバージョンでは、Socket Firewallを統合し、パッケージのインストールと実行時にサプライチェーン攻撃から保護する機能を追加しました。\nni.zshについては、次の記事を参照してください。\nnpm/yarn/pnpm/bunを同じコマンドで扱える ni のzsh実装を書いた | Web Scratch\nni.zsh: npmインストール時のサプライチェーン攻撃を検知する機能を追加 | Web Scratch\nni.zsh v1.8.0の変更点\n主要な変更点は次の通りです。詳細はリリースノートを参照してください。\nRelease v1.8.0 · azu/ni.zsh\n🛡️ Socket Firewallの統合\nSocket Firewallを統合し、パッケージのインストール時にセキュリティスキャンを行えるようになりました。\nSocket Firewallは、HTTPプロキシとしてパッケージマネージャのネットワーク通信をインターセプトし、悪意のあるパッケージがダウンロードされる前にブロックするツールです。\n従来のni.zshでは、Socket.dev APIを使ってリスクスコアを取得し、インストール前に確認を求める仕組みでした。\nSocket Firewallも基本的には同じで、自動的にインストール時にマルウェアならブロックし、潜在的なマルウェアは警告を表示します。\n詳しくは次の記事を参照してください。\nIntroducing Socket Firewall: Free, Proactive Protection for Your Software Supply Chain\nセットアップ方法\nSocket…",
-          "link": "https://efcl.info/2025/10/08/ni.zsh-v1.8.0-socket-firewall/",
-          "publishedOn": "2025-10-08T14:00:00.000Z",
-          "wordCount": 749,
-          "title": "ni.zsh v1.8.0リリース: Socket Firewallによるパッケージインストール時のチェック機能を追加",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
@@ -8500,6 +8475,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44801",
+          "author": "mamosuke",
+          "description": "PS5ではbd-jb利用不可,PS5 Dump Runner Installer v1.3.0,XFROM Dumper 2026-01-05,PSXMaster v1.4.0,PS5 Homebrew Game Sync Tool(PS5 Dump Game Sync Tool) v1.1.0,keysTester v5.1,SwitchTime 0.1.6,NX-ScreenUploader v0.2.0,Breeze beta99s_pr2,NUSGet v1.5.0,WiiUDownloader v2.69,UWUVCI-AIO-WPF v3.100.1,XboxMemCard V1.0.2,PCSX2 v2.6.1,PSX2 1.1.9,shadPS4 Pre-release-shadPS4-2026-01-05-55e2b0f,shadPS4-QtLauncher-2026-01-05-980ad7c,Vita3K Build: 3872,xemu v0.8.131,MAME4droid 2026(0.284) 1.31.1,ScratchEverywhere Beta Build 32→→→この記事の続きを読む\nGameGaz Daily 2026.1.6 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026010644801/",
+          "publishedOn": "2026-01-06T02:10:25.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.1.6",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=44797",
           "author": "mamosuke",
@@ -9811,6 +9796,16 @@
       "feedUrl": "https://r7kamura.com/feed",
       "siteUrl": "https://r7kamura.com/",
       "articles": [
+        {
+          "id": "https://r7kamura.com/articles/2026-01-06-box",
+          "author": null,
+          "description": "押入れの整理に着手し、化粧箱を幾つか処分した。",
+          "link": "https://r7kamura.com/articles/2026-01-06-box",
+          "publishedOn": "2026-01-05T15:00:00.000Z",
+          "wordCount": 32,
+          "title": "箱の処分",
+          "imageUrl": null
+        },
         {
           "id": "https://r7kamura.com/articles/2026-01-04-yearly-chores",
           "author": null,
