@@ -78,6 +78,30 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">サンプル演奏1</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/01/09/224351" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>昨日の続き・・・ようやくわかった気がします。というかこんな当たり前なことも知らないのかと言われそうな気もしないでもなく・・・。でもまあ昨日の時点でダメなコードを世界に公開しているわけでして、今更なところはありますよね。。前置きが長くなりましたが、1サンプルからどうやって音階を作るのかというのがようやくわかった気がします。暇な人はお付き合いください。。
+まずサンプリング周波数13359Hzでドの音（C4）をGBAで鳴らすことを考えます。C4は約261.6Hzで、1秒の13359Hz内にいくつあるかというと13359/261.6&#x3D;51.066・・・つまり約52個あるわけです。つまり波が52個繰り返しあって、バイナリエディタで開くと同じデータが並んでいることがわかります。無駄という話です。
+そこで256バイトを1サンプルとして音の元（オリジナル）を用意します。0-255までの幅で正弦波を作り・・・0からスタートして山があり、半分のサイズ127で0、そして下降して谷になり、255でまた0になるグラフが想像できると思います。
+GBA上ではこの1サンプルからうまく取り出してC4モドキ約52バイトをフレームバッファ（DirectSoundバッファ）にコピーしていけば同じになるというわけです。
+明日に続きます・・・。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901342309240/1767967158" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/dokozonosyake" target="_blank"
               rel="noopener">しゃけ</a></h3>
           <section class="articles-per-source">
@@ -19085,27 +19109,6 @@ GameGaz Daily 2025.10.12 first appeared on 大人のためのゲーム講座.</s
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">sognaハック</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/10/12/103528" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>見た限りGTBを通していて？RSRから一番古いv6まで対応していると思われます。おそらく決定版かと。音関連は２種類のデコーダに対応していますし、スクリプト関連はDecomposeSGSを参考にしているのでコードを頂いたか逆汗したのかなあという感じです。エンコードにも対応ということで翻訳したい方にとっては神ツールですね。
-github.com</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565284499885/1760233489" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21275,7 +21278,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-01-09T13:14:23.851Z">2026-01-09T13:14:23.851Z</time>
+    <time id="build-timestamp" datetime="2026-01-09T14:02:49.775Z">2026-01-09T14:02:49.775Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
