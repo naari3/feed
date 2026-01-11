@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901342808511",
+          "author": null,
+          "description": "１つ前のエントリの続きです。\nC4は約261.6Hzで、まず1サンプル256バイトを掛け算します。その値は「振動回数×1サイズの大きさ」になり、最大振動数が求まります。これを1秒13359Hzで割ると1回分の速度（加算値）が求まるというわけです。なおGBAは固定小数点を使うので65536掛け算して端数は切り捨てます。\n261.6 * 256 / 13359 * 65536 = 加算値が出てくる！\n結果は「5.013069... * (1 １つ付け加えるなら、消音時に問題が発生したことです。突然OFFにすると前の鳴っていた音との落差があった場合、クリックノイズ（プチノイズ）が発生します。なのでADSRを使ってボリュームをコントロールをして急な崖をなくしてあげる必要はあります。マストですねーというかハードウェア的につけておいてくださいよといいたくなる・・・。ほんとサンプルプログラム作るときに頭悩ませました。\n3日前の雪辱を晴らすべく作り直しました。256テーブルにして1フレーム毎にエンベロープ。データをIWRAMに移してもよかったけどそこまでしなくてもいい感じになりました。正弦波でなく、楽器系をpythonで生成したりすることもとても面白かったですね。\ngithub.com",
+          "link": "https://akkera102.hatenablog.com/entry/2026/01/11/122521",
+          "publishedOn": "2026-01-11T03:25:21.000Z",
+          "wordCount": 511,
+          "title": "サンプル演奏2",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901342808511/1768102164",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901342808511/1768102164"
+        },
+        {
           "id": "hatenablog://entry/17179246901342630208",
           "author": null,
           "description": "2日前の雪辱を晴らすべく作り直しました。256テーブルにして1フレーム毎にエンベロープ。データをIWRAMに移してもよかったけどそこまでしなくてもいい感じでした。今日はここで力尽きたので説明はまた明日に持ち越しです。\ngithub.com",
@@ -3751,6 +3766,21 @@
       "feedUrl": "https://saize-lw.hatenablog.com/rss",
       "siteUrl": "https://saize-lw.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901340375593",
+          "author": null,
+          "description": "人生初の引っ越しをしたりサイゼミが連続したり忙しい期間だった。\nメディア別リスト\n書籍（7冊）\n映画（1本）\nゲーム（2本）\n良かった順リスト\n人生に残るコンテンツ\n消費して良かったコンテンツ\n消費して損はなかったコンテンツ\nたまに思い出すかもしれないくらいのコンテンツ\n以降の人生でもう一度関わるかどうか怪しいコンテンツ\nピックアップ\n質的アプローチの再検討\nユリイカ2025年8月号 特集＝佐藤雅彦\n魔法少女ノ魔女裁判\nステラソラ\n果てしなきスカーレット\n未来図と蜘蛛の巣\n平成宗教20年史\n日本の10大カルト\n日本赤軍派 その社会学的物語\nデータサイエンティストってどんな職業？\nメディア別リスト\n書籍（7冊）\n質的アプローチの再検討\n映画（1本）\n果てしなきスカーレット\nゲーム（2本）\n魔法少女ノ魔女裁判\n良かった順リスト\n人生に残るコンテンツ\n（特になし）\n消費して良かったコンテンツ\n魔法少女ノ魔女裁判\n消費して損はなかったコンテンツ\nステラソラ\nたまに思い出すかもしれないくらいのコンテンツ\n日本の10大カルト\n以降の人生でもう一度関わるかどうか怪しいコンテンツ\n（特になし）\nピックアップ\n質的アプローチの再検討\n記事参照。\nsaize-lw.hatenablog.com質的研究本の中でもこれが一番重くて面白かった。\nユリイカ2025年8月号 特集＝佐藤雅彦\n記事参照、サイゼミ用に読んだやつ。\nsaize-lw.hatenablog.com『作り方を作る』の副読本ではある。サイゼミのときに部屋に置いておいたらどっかいったのでもう手元にはない（たぶん誰かが持って帰った）。\n魔法少女ノ魔女裁判\n記事参照、面白かった。\nsaize-lw.hatenablog.com発売からもう半年近く経とうとしているが、未だに流行が衰えないどころか盛り上がる一方。次の新作が出る頃にはアニメ化し…",
+          "link": "https://saize-lw.hatenablog.com/entry/2026/01/11/120835",
+          "publishedOn": "2026-01-11T03:08:35.000Z",
+          "wordCount": null,
+          "title": "25/1/11 2025年10～12月消費コンテンツ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/5fefc45f6e3dd95590fa4f1635458dd578485446/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20260110%2F20260110000936.webp",
+            "type": "image/webp",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/5fefc45f6e3dd95590fa4f1635458dd578485446/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20260110%2F20260110000936.webp"
+        },
         {
           "id": "hatenablog://entry/17179246901339285684",
           "author": null,
