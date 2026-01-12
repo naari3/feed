@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901343172949",
+          "author": null,
+          "description": "エンベロープ（ADSR）はようするに横軸の時間に対し、縦軸は音の大きさです。正弦波の音の大きさと掛け算してスピーカーへ出力する音を決定しています。立ち上がり（Aの位置）、立ち下がり（Rの位置）は掛け算することにより0に近くなってクリックノイズ（プチノイズ）を下げてくれます。これが非常に重要です。\nもう１つ。GBA開発の質問は無料版gemini先生でも全然いけるのでぜひ試してください。あまりに良すぎて私は課金しました。。chatgpt先生はちょっと羅列的で固かったですね。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/01/12/110730",
+          "publishedOn": "2026-01-12T02:07:30.000Z",
+          "wordCount": 483,
+          "title": "波形データ演奏3",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/99a1f89a6998313a3999acbae9b4ddde6bb34d2c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260112%2F20260112110142.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/99a1f89a6998313a3999acbae9b4ddde6bb34d2c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260112%2F20260112110142.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901342808511",
           "author": null,
           "description": "１つ前のエントリの続きです。\nC4は約261.6Hzで、まず1サンプル256バイトを掛け算します。その値は「振動回数×1サイズの大きさ」になり、最大振動数が求まります。これを1秒13359Hzで割ると1回分の速度（加算値）が求まるというわけです。なおGBAは固定小数点を使うので65536掛け算して端数は切り捨てます。\n261.6 * 256 / 13359 * 65536 = 加算値が出てくる！\n結果は「5.013069... * (1 １つ付け加えるなら、消音時に問題が発生したことです。突然OFFにすると前の鳴っていた音との落差があった場合、クリックノイズ（プチノイズ）が発生します。なのでADSRを使ってボリュームをコントロールをして急な崖をなくしてあげる必要はあります。マストですねーというかハードウェア的につけておいてくださいよといいたくなる・・・。ほんとサンプルプログラム作るときに頭悩ませました。\n3日前の雪辱を晴らすべく作り直しました。256テーブルにして1フレーム毎にエンベロープ。データをIWRAMに移してもよかったけどそこまでしなくてもいい感じになりました。正弦波でなく、楽器系をpythonで生成したりすることもとても面白かったですね。\ngithub.com",
@@ -8515,6 +8530,16 @@
       "siteUrl": "https://gamegaz.com",
       "articles": [
         {
+          "id": "https://gamegaz.com/?p=44829",
+          "author": "mamosuke",
+          "description": "PlayStation Portalがマイナーチェンジで有機ELディスプレイになるようです。→→→この記事の続きを読む\n【噂】PlayStation Portalがマイナーチェンジ 有機EL搭載へ first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026011244829/",
+          "publishedOn": "2026-01-12T02:38:01.000Z",
+          "wordCount": 1707,
+          "title": "【噂】PlayStation Portalがマイナーチェンジ 有機EL搭載へ",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/PlayStation-Portal-.png"
+        },
+        {
           "id": "https://gamegaz.com/?p=44827",
           "author": "mamosuke",
           "description": "ps5upload v1.0.4-beta,PS5 Dump Runner Installer v1.3.1,ShadowMount v1.3b,PSVR2Toolkit v0.2.1,Adrenaline v1768167248,ARK-4 v1768160277,YADE(Yet Another DVD Exploit) v1.0.2,libultrahand 2.2.7,Ultrahand Overlay 2.2.7,HATS-Tools 1.5.2,WiiLink Mail Patcher (Mail-Patcher) v2.2.2,moonlight-xbox 1.18.0,Xenity Engine v1.1.0,Azahar 2124-rc2,PCSX2 v2.7.23,shadPS4 Pre-release-shadPS4-2026-01-11-910f737,ScratchEverywhere Beta Build 33,Universal Media Server 15.4.0(patreonのみ)→→→この記事の続きを読む\nGameGaz Daily 2026.1.12 first appeared on 大人のためのゲーム講座.",
@@ -10937,16 +10962,6 @@
           "wordCount": null,
           "title": "オラクル、「Oracle Database 26ai」発表。AIベクトルサーチをデータベースのコア機能に統合、MCPサーバをサポートなど。Oracle AI World 2025",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/25/python_314jit.html",
-          "author": null,
-          "description": "スクリプト言語Pythonの最新版となる「Python 3.14」正式版が公開されました。 Python 3.14での大きな新機能はフリースレッド版の正式サポートと公式バイナリでの実験的JITコンパイラ導入でしょう。 フリースレッド版Pyt...",
-          "link": "https://www.publickey1.jp/blog/25/python_314jit.html",
-          "publishedOn": "2025-10-14T13:37:23.000Z",
-          "wordCount": 1457,
-          "title": "Python 3.14登場、フリースレッド版正式サポート。実験的JITコンパイラも公式バイナリで利用可能に",
-          "imageUrl": "https://www.publickey1.jp/2025/python314-02.png"
         }
       ]
     },
