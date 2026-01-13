@@ -2,10 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-01-12T23:01:40.236Z</updated>
+    <updated>2026-01-13T00:03:10.032Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2025年度上期（4月～9月）の人気記事ランキングとオススメ記事紹介]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=34648</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/34648"/>
+        <updated>2026-01-13T00:00:21.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、IIJ Engineers Blog編集部です。 今回は、2025年の4月～9月に公開した記事から、人気ランキングTOP10と編集部オススメ記事を紹介します。 すでにお読みになられた記事も...]]></summary>
+        <author>
+            <name>IIJ Engineers Blog編集部</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.1.13]]></title>
+        <id>https://gamegaz.com/?p=44832</id>
+        <link href="https://gamegaz.com/2026011344832/"/>
+        <updated>2026-01-12T23:42:15.000Z</updated>
+        <summary type="html"><![CDATA[Switch 2値上げに慎重姿勢, Luac0re,ftpsrv v0.17.2,ps5upload v1.0.7-beta,ftpsrv 1.15-ng-beta6,Y2JB-WebUI,PS Multi Tools v16.0,Adrenaline v1768249853,ovl-sysmodules v1.4.7,Tetris Overlay 0.4.6,HATS-Tools 1.5.3,NGPDS v0.5.8,RPCN 1.6.0,PCSX2 v2.7.28,shadPS4 Pre-release-shadPS4-2026-01-12-540fdcc,shadPS4-QtLauncher-2026-01-12-9d636f0,Vita3K Build: 3893→→→この記事の続きを読む
+GameGaz Daily 2026.1.13 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docker 環境で DPDK と AF_XDP を通して仮想 NIC を扱う場合の性能]]></title>
+        <id>hatenablog://entry/17179246901342472163</id>
+        <link href="https://yasukata.hatenablog.com/entry/2026/01/13/082346"/>
+        <updated>2026-01-12T23:23:46.000Z</updated>
+        <summary type="html"><![CDATA[DPDK と AF_XDP は、ユーザー空間で動作するプログラムが NIC を介した I/O を行う際に、カーネルの通信に関連する実装の大部分を迂回すること（カーネルバイパス）を可能にするもので、通信性能の向上に寄与することが知られています。
+これは物理 NIC だけではなく、コンテナ環境で利用される仮想 NIC においても同様の効果が期待できます。
+この記事では、DPDK と AF_XDP を使ってカーネルバイパスを行うように実装されたアプリケーションが Docker 環境で仮想 NIC を扱う場合の性能について簡単な計測を通して調べます。
+具体的な仮想 NIC を扱う設定方法と性能計測方法は全て記事の末尾のコマンドリストとDockerfile および compose.yaml に記載します。
+計測内容は Docker の標準的な設定で実行可能かつ一台のマシンで完結するものに限定したため、ノートパソコン上の Linux をインストールした仮想マシンなどでも実行可能です。
+ソフトウェアの組み合わせ
+仮想 NIC
+DPDK と AF_XDP では扱いやすいコンテナ環境での利用が想定された仮想 NIC が異なります。
+具体的には、DPDK は virtio に関連した実装が充実している（8. Virtio_user for Container Networking — Data Plane Development Kit 25.11.0 documentation）一方で、AF_XDP は veth との親和性が高いようです。
+仮想スイッチ
+Linux bridge（Linux カーネルの bridge 実装）は Linux が提供する機能である veth と組み合わせやすいですが、DPDK が扱う virtio との接続には Linux カーネルの作成する tap デバイスを…]]></summary>
+        <author>
+            <name>かーねるさんとか</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Element / Matrixをインストールしてプラットフォームに検閲・AI学習されないコミュニティを作ろう]]></title>
         <id>hatenablog://entry/17179246901342333623</id>
