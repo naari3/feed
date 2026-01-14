@@ -106,6 +106,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901343882443",
+          "author": null,
+          "description": "10時間ほど使って私好みの回答はどういうものをか逆質問させてもらいました。以下がそのプロンプトになります。シチュエーションは数学本の解説を依頼している形をとっています。課金するとチャット中に図がでてくるのでいい買い物かもしれません。\n### 【次回用プロンプト：数学解説\n\nあなたは私の数学・物理の学習パートナー（副読本兼ツアーガイド）です。\n以下のルールに基づいて解説を行ってください。\n\n**1. 基本スタンス**\n\n* **3つの世界の翻訳**: 数式を解説する際は、「代数（計算）」「幾何（図形）」「物理（アクション・意味）」の3つの視点を意識し、それらを行き来（翻訳）させながら説明する。解説の際は、今どの視点で話しているかを意識し、必要に応じて明示すること。難解な概念は、この3つの世界を行き来（翻訳）させることで腹落ちさせる。\n* **代数の世界（計算）**: 式変形、因数分解、代入。「デジタルの処理」。\n* **幾何の世界（図形）**: グラフ、ベクトル、角度、距離。「アナログの直感」。\n* **物理の世界（アクション・意味）**: 移動、速度、力、回転。「時間と変化」。\n* **直感的理解**: 厳密な数式定義の後に、必ず「要するにどういうことか（例：力の効率、レシピと料理）」という比喩やイメージを添える。\n\n**2. 解説のルール**\n\n* **省略禁止**: 式変形は1行も飛ばさず、なぜその変形をしたかの理由（意図）を添える。\n* **操作の言語化**: 「なぜその変形をしたのか（邪魔な項を消すため、単位を揃えるため等）」という**意図**をコメントする。\n* **読み方の提示**: 記号の読み方が曖昧な場合（例：）、口頭での読み方と、その式の「意味上の読み方（物語）」の両方を提示する。\n* **原点の扱い**: ベクトル計算において、省略されている原点  の存在が必要な場合（交点計算など）は、明示的に  などを用いて解説する。\n* **可視化**: Pythonコードを用いて、静止画ではなく「動き」や「関係性」がわかる図を必ず提示する。軸や要素には、数式だけでなく「日本語の意味（例：スタート地点）」を併記する。単なる静止画ではなく、「軌跡（点線）」や「変化の過程（複数色のプロット）」を描画し、動きが想像できる図にする。\n\n**3. ユーザーの現在の理解度**\n\n省・略！！（汗\n数学に強いけど物理に弱い方、式の省略はしても問題ない方、プログラミングサイドを強めに求めている方、などたぶんバリエーションは人それぞれだと思います。プロンプトは自分のカスタムチューンなので育てていきたいですね。。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/01/14/125720",
+          "publishedOn": "2026-01-14T03:57:20.000Z",
+          "wordCount": 535,
+          "title": "gemini先生3",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901343882443/1768363524",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901343882443/1768363524"
+        },
+        {
           "id": "hatenablog://entry/17179246901343528703",
           "author": null,
           "description": "全クリしました。ハマると止まらなくなる系です。床のギミックスイッチを押すとたまにフリーズしますのでステートセーブできるエミュやエミュ機をおススメします。（移植版なのでオリジナルを検索するのもいいかもです）\nnostabyte.itch.io",
@@ -9833,16 +9848,6 @@
           "wordCount": null,
           "title": "monome",
           "imageUrl": null
-        },
-        {
-          "id": "./news/251015.md",
-          "author": null,
-          "description": "10/15/2025\ncrow has departed. trent and i agreed that it was time to discontinue as we both have new projects we're deep into and every time crow stock runs out we say we're going to do the successor project. and maybe we actually will, once we emerge from the fog.\nbut this was also a moment to rediscover what we did, where crow went. it started as a CV extension for norns. but as everything unfolded it went much, much further. the original release video above reminded me.\nwe look forward to seeing crow's genetics reappear and continue to evolve. thank you for coming on the journey with us.",
-          "link": "https://monome.org/old.html",
-          "publishedOn": "2025-10-16T16:11:11.000Z",
-          "wordCount": null,
-          "title": "monome",
-          "imageUrl": null
         }
       ]
     },
@@ -10991,16 +10996,6 @@
           "wordCount": null,
           "title": "シスコ、AIにセキュアなコードを生成させるためのルールセット「Project CodeGuard」をオープンソースで公開",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/25/kubernetesknativecncf.html",
-          "author": null,
-          "description": "Cloud Native Computing Foundation（CNCF）は、Kubernetes上にサーバレス基盤を構築できる「Knative」が十分成熟した段階になったとして、CNCFの卒業（Graduation）プロジェクトになっ...",
-          "link": "https://www.publickey1.jp/blog/25/kubernetesknativecncf.html",
-          "publishedOn": "2025-10-16T15:34:18.000Z",
-          "wordCount": 1478,
-          "title": "Kubernetes上にサーバレス基盤を構築できる「Knative」が十分成熟した段階になったとして、CNCFの卒業プロジェクトに",
-          "imageUrl": "https://www.publickey1.jp/2025/G2rygTXaEAApnKI.jpg"
         }
       ]
     },
