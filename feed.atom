@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-01-15T20:01:37.536Z</updated>
+    <updated>2026-01-15T21:02:02.550Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12952,29 +12952,6 @@ GameGaz Daily 2025.10.19 first appeared on 大人のためのゲーム講座.]]>
 明日は帰りの特急の予約だけしていて、それまではどうしようかな...。乗りつぶしは済んでるし、松山城はRubyKaigiの時も3回ぐらい上ったし、ノープランのまま。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SQL in the Wild : UNIQUEではない結合キーでJOINすると行数が爆発するRow Explosion]]></title>
-        <id>hatenablog://entry/6802888565291081983</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2025/10/18/171647"/>
-        <updated>2025-10-18T08:16:47.000Z</updated>
-        <summary type="html"><![CDATA[はじめに
-Google BigQueryやSnowflakeをはじめとするデータウェアハウスにおいては、プライマリーキー制約を強制させることはできない。宣言は可能だがデータベース側が強制しないため、プライマリーキーをプライマリーたらしめるのは、データベースではなくユーザーの責任となる*1。結果として、一意だと想定していたキーが重複することは起こりうる。
-技術的な理由は後述するが、一意ではない結合キーを使ってJOINを行うと、行数が想定していたより増える。データ屋としてデータパイプラインの信頼性維持に関わってきた人間なら、何度か遭遇したことはあるだろう。この現象は「Row Explosion」*2とか「Explosion」とか「爆発」と呼ばれている*3。
-最近仕事を進めていく上で、この現象（以降JOIN爆発と呼称する）について説明することも多くなってきた。SQLについて詳しくない他のエンジニアにもわかるように、脳内をダンプしておきたい。
-SQLのJOINって本当は何しているの
-JOIN爆発について理解するためには、JOINの仕組みについて理解する必要がある。JOINといえばLEFT JOINが大人気すぎるせいで、今までSQLにおけるJOIN演算の仕組みをExcelのLOOKUP関数の類推で理解してきた人もいるだろう。実際のプロセスは別物だ。LEFT JOINのイメージが強すぎるのが悪い。
-ざっくり言うと、SQLのJOIN演算を理解するためには、以下の3段階を理解すれば良い*4。
-前提
-2つのテーブルA、Bが存在しており、AとBをJOINしたいとする
-それぞれのテーブルは実態としてタプルであり、タプルの要素が行に当たると考える
-つまり、AとBは集合である
-この前提を踏まえた上で、以下のようなプロセスでJOINは行われる
-まず集合AとBの直積を作成する
-直積の各要素のうち、ON句…]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>
