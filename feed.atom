@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-01-17T13:10:19.303Z</updated>
+    <updated>2026-01-17T14:01:57.466Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -13103,30 +13103,6 @@ GameGaz Daily 2025.10.20 first appeared on 大人のためのゲーム講座.]]>
     共産党区議による新宿区役所職員への組織的…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[memcached 互換サーバーの自作]]></title>
-        <id>hatenablog://entry/6802888565289993211</id>
-        <link href="https://yasukata.hatenablog.com/entry/2025/10/20/103705"/>
-        <updated>2025-10-20T01:37:05.000Z</updated>
-        <summary type="html"><![CDATA[memcached プロトコルに則ったリクエストを通して基本的なキー・バリューペアの保存と取り出しができるサーバーを自作しています。
-ソースコードはこちらで公開しておりますので、よろしければお試しください。
-github.com
-通信部分には、以前から自作している TCP/IP スタックを利用できるようにしています。また、自作 TCP/IP スタックではなく、Linux 等のカーネルの TCP/IP スタックを利用するバージョンもあります。
-実装の内容
-memcached サーバーがクライアントからのリクエストに応答する際のおおよその挙動は以下の通りです。
-リクエストメッセージの受信：クライアントから memcached プロトコルに則ったフォーマットで送信されてきたリクエスト内容を含むメッセージを受信する。
-メッセージのパース：クライアントから送られてきたメッセージをパースして、リクエスト内容を判別する。
-キー・バリュー操作：判別されたリクエスト内容に応じてキー・バリューペアの保存や検索を行う。
-レスポンスメッセージの送信：キー・バリュー操作の結果を memcached プロトコルに則ったフォーマットにして、クライアントへ送信する。
-これらは主に「メッセージの送受信」「memcached プロトコルに則ったメッセージのパースと応答の生成」「キー・バリュー操作」の三つの要素に分けられます。
-自作 memcached 互換サーバーを作成するためには、自作 TCP/IP スタックが担当する「メッセージの送受信」以外の「memcached プロトコルに則ったメッセージのパースと応答の生成」「キー・バリュー操作」の機能が不足しているため、これらを実装します。
-実装で配慮した点
-実装の再利用性
-以前から手軽に memcached プロトコルに則った挙動ができるサーバーを簡単に実装でき…]]></summary>
-        <author>
-            <name>かーねるさんとか</name>
         </author>
     </entry>
     <entry>
