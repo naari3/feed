@@ -1430,6 +1430,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901345068013",
+          "author": null,
+          "description": "elin.pocke.me\nアビリティ一覧を検索している例\nElinの攻略サイトを作っているのだけど、そこに新機能を足した。ゲーム内データをSQLを使って検索をかけられる機能。\nSQLを書ける人しか使えないけれど、稀に便利なことがあるような気がしている。同じデータはスプレッドシートとして公開されているけれど、スプレッドシートより強力な検索を書きやすいのでは。知らんけど。\nゲーム内データをCSVとして抽出するmodがあるので、元データはそれを使っている。\n抽出してきたCSVをwasmで動くDuckDBに入れて、それを検索させている。つまりブラウザ上で全部動いている。\nUIはSQLRoomsというライブラリを使っている。\nsqlrooms.org\nDuckDBをバックエンドにクエリ操作を行うUIをまるっと提供しているライブラリ。リッチなエディタと結果表示、テーブル定義の表示を提供してくれていてかなり便利。最初はこのエディタを自分でどう作ろうかと考えていたけれど、Reactのコンポーネントをぽんと置くだけで使えてだいぶ楽。\nただ、SQLRoomsはかなりマイナーなライブラリのようで、Google検索しても2ページしかヒットしない。そんなことあるんだ。\n今回の実装も例によってClaude Codeで行った。しかし最初実装を任せて書かせたら全然動かない状態になり、エラーを伝えながら直させても全然うまくいかず、SQLRoomsのexampleを見ながら修正したらいい感じに動くまで実装が出来た。\nSQLRoomsはリッチなUIを提供している分、大量のパッケージに依存している。Tailwindに依存しているのがちょっと嫌だなあという気持ち(元々使っていないので)。このエディタ部分だけいい感じに隔離したい気がしている。どうやるのがいいかなあ。\nSQLRoomsはサクッとクエリを実行できる環境を作れて面白いのだけど、業務で使うにはちょっと使いづらいかなあと思っている。\n(Elinではゲーム内データ公開が許可されています。という話をElinの話をするたび書いている気がする)\ngithub.com\nElinのアップデートでメソッド引数の型がintからlongに変更されるという非互換があり、それで自分が作ったmodが壊れていたので対応していた。リフレクションを使ってintとlongそれぞれのメソッドオブジェクトを取得して取れたほうを使うようにした。\nリフレクションを使ってみたけど、今回非互換があった関数の実装は十分シンプルなので、まるまるコピーしてきても良かったかなとはちょっと思っている。\nまあリフレクションを使う経験ができたということで。",
+          "link": "https://commits.hatenablog.com/entry/2026/01/18/100000",
+          "publishedOn": "2026-01-18T01:00:00.000Z",
+          "wordCount": 532,
+          "title": "2026-01-17",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/8b27c36806f75e8805d98ef1d5c9cf6662e72207/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20260117%2F20260117225438.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8b27c36806f75e8805d98ef1d5c9cf6662e72207/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20260117%2F20260117225438.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901344716933",
           "author": null,
           "description": "Dying Lightをクリアした。(ゲーム性のネタバレあり)\nしばらく前にプレイ動画を見たことがあったのだけど、自分でプレイするのは初めて。\nFPSはずっと酔いそうで避けていたのだけど、案外プレイできることが最近わかってきたので手を出している。\n色々厳しいところはあるものの、まあまあ楽しんでプレイできた。\n一番しんどかったのが、すぐ高所から落ちて死ぬこと。高所に登る必要がある場面が多いけれど、すぐ足を踏み外して死ぬ。ストーリーエリア内だと直前からスタートしてくれるからまだ許せるけど、近くのセーフエリアからのスタートになるクエストで高所に登らされて本当にだるかった。\nラスボス戦が突然のQTEバトルだったのも中々ひどいと思う。入力がシビア……というかキーボードでの入力にあまり慣れてないからか5回ぐらい死んだ。",
@@ -3576,23 +3591,7 @@
       "title": "メガネ好き好きクラブ",
       "feedUrl": "https://nonwo.hatenablog.com/rss",
       "siteUrl": "https://nonwo.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/6802888565293217429",
-          "author": null,
-          "description": "天竜川ナコンの動画をよく見ているのだが、最新の動画を見てとても共感して勝手に安心したこと、思い出した自分語りを書く。\n \nwww.youtube.com\n \n\n\n\n\n動画でも中学生みたいなことって言っているけど、本当に「普通」になりたいと思っている。学生時代は「何者」を目指してそのギャップに悩んでいたけど、本当になりたかったのは他と変わらない「普通」になりたかっただけなんだとここ数年は感じている。\nというか自分が思い描く「普通」も「何者」にカテゴライズされるようなものであって、昔から目指していた物自体は変わっていないと思う。\nそして、普通になることができずに勝手に摩擦を受けて疲弊しているのが今の自分になっている。\n \nなんでズレを受けているのかというと、自分の場合はずっと貯金を切り崩して生きている感覚がある。これまでの積み重ねがない。\nこの感覚は高校の時からある。中学時、そこそこ勉強とかを頑張って毎日継続していた。高校に入ってからも、勉強や部活で何かしらの練習をやってはいたが、積み重なって自信にならなかった。自分の中では中学が努力のピークになっていた。だから、高校からこれまでの毎日は、中学までに築いてきた努力の貯金をどうにかこうにかうすっぺらい努力をしてやりくりしている感覚に近い。\n自分がイメージする普通の人は、これまでの過程の中で定期的に努力構築イベントで、努力ポイントみたいなものを溜めている。それらを大変な時、ダメになりそうな時に消費して頑張っていく。その過程を自分は、怠慢でやってこなかったから、今になって頼るべきポイントが枯渇して苦しんでいる。遅れているとか考えてしまう。\n自分でそれを解決する方法って、今から努力構築イベントを作っていくしかないけど、いっつも高いハードル作って、作るところまでやってのち苦しんで終わる。そんなんじゃいつまでたっても溜まりませんけど。という感じ。\nこれ長々と書いてきたけど、ようは最終成功体験が中学で止まっているから、今の自分に自信が持てないだけでは？辛い。しかも、自分はそれを解決しようとする動きを見せていないのでは？ひどい。\n \nこんな悩みを解決できずに、ずっと付き合っていることを思い出した。\nそして、こんなこと考えているのが俺だけじゃないのが嬉しかった。誰でも通る道で当たり前かもだけど。自分勝手だけど。\nというか、何者へのギャップなんていつまでもついて回るのかよ；；\n \n現実チャンネルの立ち回り、参考にします。\n以上です。",
-          "link": "https://nonwo.hatenablog.com/entry/2025/10/20/212902",
-          "publishedOn": "2025-10-20T12:29:02.000Z",
-          "wordCount": 410,
-          "title": "天竜川ナコン、俺は",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/943e1cba764dba708e88f870c6088a38b32790fd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnonwo%2F20251020%2F20251020205322.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/943e1cba764dba708e88f870c6088a38b32790fd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnonwo%2F20251020%2F20251020205322.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "根室記念館",
@@ -8558,6 +8557,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44860",
+          "author": "mamosuke",
+          "description": "ps5upload v1.1.7,psx_payload_injector v1.4,Adrenaline v1768696105,RETROLauncher v1.0 - rev 2,NX Venom 12.0.0,WiiUDownloader v2.71,libogc v2.14.1,PCSX2 v2.7.52,shadPS4 Pre-release-shadPS4-2026-01-17-950d390,shadPS4-QtLauncher-2026-01-17-e70c1cb→→→この記事の続きを読む\nGameGaz Daily 2026.1.18 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026011844860/",
+          "publishedOn": "2026-01-18T01:20:30.000Z",
+          "wordCount": 1713,
+          "title": "GameGaz Daily 2026.1.18",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=44856",
           "author": "mamosuke",
