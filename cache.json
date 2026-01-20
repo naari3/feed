@@ -1445,6 +1445,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901345601598",
+          "author": null,
+          "description": "fukuokarb.connpass.com\n福岡Rubyist会議05 の参加申し込みが始まっていたのに気がついて参加登録した。\nizumorb.doorkeeper.jp\n出雲Ruby会議01 の参加登録をした。\nChill with you のスタッフロールを見た。いい話だった。サトネちゃん\"君\"のこと好きすぎない?\nまだ解放されていない実績がいくつかあって、解放条件が気になっている。なんかストーリーに出てきたワードの実績とかあるけど、これ解放されてなくて大丈夫なやつなのかな……。\nストーリーは一通り見たとおもうのだけど、まだまだサトネちゃんと一緒に働くのを続けていきたい。",
+          "link": "https://commits.hatenablog.com/entry/2026/01/20/100000",
+          "publishedOn": "2026-01-20T01:00:00.000Z",
+          "wordCount": 527,
+          "title": "2026-01-19",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901345601598/1768870803",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901345601598/1768870803"
+        },
+        {
           "id": "hatenablog://entry/17179246901345068013",
           "author": null,
           "description": "elin.pocke.me\nアビリティ一覧を検索している例\nElinの攻略サイトを作っているのだけど、そこに新機能を足した。ゲーム内データをSQLを使って検索をかけられる機能。\nSQLを書ける人しか使えないけれど、稀に便利なことがあるような気がしている。同じデータはスプレッドシートとして公開されているけれど、スプレッドシートより強力な検索を書きやすいのでは。知らんけど。\nゲーム内データをCSVとして抽出するmodがあるので、元データはそれを使っている。\n抽出してきたCSVをwasmで動くDuckDBに入れて、それを検索させている。つまりブラウザ上で全部動いている。\nUIはSQLRoomsというライブラリを使っている。\nsqlrooms.org\nDuckDBをバックエンドにクエリ操作を行うUIをまるっと提供しているライブラリ。リッチなエディタと結果表示、テーブル定義の表示を提供してくれていてかなり便利。最初はこのエディタを自分でどう作ろうかと考えていたけれど、Reactのコンポーネントをぽんと置くだけで使えてだいぶ楽。\nただ、SQLRoomsはかなりマイナーなライブラリのようで、Google検索しても2ページしかヒットしない。そんなことあるんだ。\n今回の実装も例によってClaude Codeで行った。しかし最初実装を任せて書かせたら全然動かない状態になり、エラーを伝えながら直させても全然うまくいかず、SQLRoomsのexampleを見ながら修正したらいい感じに動くまで実装が出来た。\nSQLRoomsはリッチなUIを提供している分、大量のパッケージに依存している。Tailwindに依存しているのがちょっと嫌だなあという気持ち(元々使っていないので)。このエディタ部分だけいい感じに隔離したい気がしている。どうやるのがいいかなあ。\nSQLRoomsはサクッとクエリを実行できる環境を作れて面白いのだけど、業務で使うにはちょっと使いづらいかなあと思っている。\n(Elinではゲーム内データ公開が許可されています。という話をElinの話をするたび書いている気がする)\ngithub.com\nElinのアップデートでメソッド引数の型がintからlongに変更されるという非互換があり、それで自分が作ったmodが壊れていたので対応していた。リフレクションを使ってintとlongそれぞれのメソッドオブジェクトを取得して取れたほうを使うようにした。\nリフレクションを使ってみたけど、今回非互換があった関数の実装は十分シンプルなので、まるまるコピーしてきても良かったかなとはちょっと思っている。\nまあリフレクションを使う経験ができたということで。",
@@ -8013,6 +8028,16 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=34824",
+          "author": "岡田 裕夫（オカダ ヒロオ）",
+          "description": "Starlinkと悪天候 Starlinkは悪天候時に通信影響は出ないの？といったお問い合わせをよくいただきます。 SpaceX社のサポートページには、「中程度の雨から豪雨、雪、ひょうにより、一時的な...",
+          "link": "https://eng-blog.iij.ad.jp/archives/34824",
+          "publishedOn": "2026-01-20T00:19:14.000Z",
+          "wordCount": 1815,
+          "title": "Starlinkは特別豪雪地帯でも使える？北海道沼田町で融雪機能の実地テストを開始",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2026/01/34824.png"
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=34435",
           "author": "ヒラマツ",
           "description": "認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜から派生した記事です。 応用編なので、ngx_http_auth_request_moduleの認証モジュールが動作している前提...",
@@ -11074,6 +11099,16 @@
       "feedUrl": "https://championcross.jp/series/899dda204c3f2/rss",
       "siteUrl": "https://championcross.jp/series/899dda204c3f2",
       "articles": [
+        {
+          "id": "406071",
+          "author": "チャンピオンクロス",
+          "description": "",
+          "link": "https://championcross.jp/episodes/1d1fa3d8635d6/?utm_source=rss&utm_medium=referral",
+          "publishedOn": "2026-01-20T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Karte.184 僕は腫れ物",
+          "imageUrl": "https://cdn-public.comici.jp/articlevisual/10406/1768358840190_bokukoko_185.jpg"
+        },
         {
           "id": "391280",
           "author": "チャンピオンクロス",
