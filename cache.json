@@ -7654,21 +7654,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/97ce2c098c21c759f7839920dbf4ba727a6e6efe/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41a3C3umRqL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/6802888565295606014",
-          "author": null,
-          "description": "生きているとEnumをJSONにしたり、JSONをEnumに戻したりしたくなることがある。エンジニアの仕事の半分はJSONという煮干しを作ったりそれを戻したりすることなので、もはや呼吸をするようにエンコードしたりデコードしたりする。ええ？YAMLがお好き？すみませんね〜ウチはJSON出汁なんですよ〜\nScalaのEnumとJSON\nさて、こういうJSONを作りたいとする。\n{\n  // ...\n  \"principal\": [ { \"user_id\": \"foobarkun@example.com\" } ]\n}\nこれは実物から持ってきた。ところで、\n{\n  // ...\n  \"principal\": [ { \"group_id\": \"foobargroup@example.com\" } ]\n}\nこういうパターンもある。\nもちろん、こいつらが混合することもある:\n{\n  // ...\n  \"principal\": [ { \"user_id\": \"foobarkun@example.com\" }, { \"group_id\": \"foobargroup@example.com\" } ]\n}\nつまり、principalは、user_idフィールドを持つオブジェクトか、group_idフィールドを持つオブジェクトかの、どちらかのパターンをとることになる。\nデータがいくつかのパターンを取るときに何を使うかといえば、（Scala 3では）Enumだ:\nenum Principal:\n  case User(user_id: String)\n  case Group(group_id: String)\n\n\n\nこんな感じにPrincipalを定義して、principalフィールドにこれを充てれば終わりだ。\nEnumをどうJSONにマップするのか\nところで、EnumとJSONとの関係は一筋縄に…",
-          "link": "https://blog.3qe.us/entry/2025/10/22/200628",
-          "publishedOn": "2025-10-22T11:06:28.000Z",
-          "wordCount": 1569,
-          "title": "ScalaのCirceでEnumをUntaggedなJSONにするためのエンコーダを定義する",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565295606014/1761131188",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565295606014/1761131188"
         }
       ]
     },
@@ -8551,6 +8536,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=44868",
+          "author": "mamosuke",
+          "description": "Switch 2 378.4万台,ps4-hen pre-release-main-175,PS3 Disc Dumper v4.4.1,chiaki-ng weekly-canary-release-a75d628ffb4b6e33126e3830b4fb32796e5cc005,Adrenaline v1768816209,FlipperMCE nightly-65,NTON v3.0.0,ACNHMobileSpawner 1.04-a,Turnips v1.7.5,tiicu 0.0.1 (alpha),pico8-android 0.0.9,ROM Properties v2.7.1,GB Studio v4.2.0-beta2,Hades v1.1.0,PCSX2 v2.7.54,shadPS4 Pre-release-shadPS4-2026-01-19-c898071,shadPS4-QtLauncher-2026-01-19-1f4e59f,Azahar 2124.1,Ship of Harkinian(Shipwright) Copper Charlie 9.1.2,LodjurGBA v0.1.4\n→→→この記事の続きを読む\nGameGaz Daily 2026.1.20 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026012044868/",
+          "publishedOn": "2026-01-19T23:44:21.000Z",
+          "wordCount": 1814,
+          "title": "GameGaz Daily 2026.1.20",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/tiicu-homescreen.jpg"
+        },
         {
           "id": "https://gamegaz.com/?p=44866",
           "author": "mamosuke",

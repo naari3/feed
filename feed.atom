@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-01-19T23:01:53.106Z</updated>
+    <updated>2026-01-20T00:03:59.316Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.1.20]]></title>
+        <id>https://gamegaz.com/?p=44868</id>
+        <link href="https://gamegaz.com/2026012044868/"/>
+        <updated>2026-01-19T23:44:21.000Z</updated>
+        <summary type="html"><![CDATA[Switch 2 378.4万台,ps4-hen pre-release-main-175,PS3 Disc Dumper v4.4.1,chiaki-ng weekly-canary-release-a75d628ffb4b6e33126e3830b4fb32796e5cc005,Adrenaline v1768816209,FlipperMCE nightly-65,NTON v3.0.0,ACNHMobileSpawner 1.04-a,Turnips v1.7.5,tiicu 0.0.1 (alpha),pico8-android 0.0.9,ROM Properties v2.7.1,GB Studio v4.2.0-beta2,Hades v1.1.0,PCSX2 v2.7.54,shadPS4 Pre-release-shadPS4-2026-01-19-c898071,shadPS4-QtLauncher-2026-01-19-1f4e59f,Azahar 2124.1,Ship of Harkinian(Shipwright) Copper Charlie 9.1.2,LodjurGBA v0.1.4
+→→→この記事の続きを読む
+GameGaz Daily 2026.1.20 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[開発環境現状確認 2026]]></title>
         <id>hatenablog://entry/17179246901345782050</id>
@@ -13039,44 +13051,6 @@ PS5システムソフトウェアアップデート バージョン 25.07-12.20.
         <summary type="html"><![CDATA[Amazon Web Services（AWS）は、Visual Studio Code（VS Code）互換のコードエディタに生成AIを統合したAIコードエディタ「Kiro」のウェイトリストが終了し、誰でもダウンロードして利用可能になった...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ScalaのCirceでEnumをUntaggedなJSONにするためのエンコーダを定義する]]></title>
-        <id>hatenablog://entry/6802888565295606014</id>
-        <link href="https://blog.3qe.us/entry/2025/10/22/200628"/>
-        <updated>2025-10-22T11:06:28.000Z</updated>
-        <summary type="html"><![CDATA[生きているとEnumをJSONにしたり、JSONをEnumに戻したりしたくなることがある。エンジニアの仕事の半分はJSONという煮干しを作ったりそれを戻したりすることなので、もはや呼吸をするようにエンコードしたりデコードしたりする。ええ？YAMLがお好き？すみませんね〜ウチはJSON出汁なんですよ〜
-ScalaのEnumとJSON
-さて、こういうJSONを作りたいとする。
-{
-  // ...
-  "principal": [ { "user_id": "foobarkun@example.com" } ]
-}
-これは実物から持ってきた。ところで、
-{
-  // ...
-  "principal": [ { "group_id": "foobargroup@example.com" } ]
-}
-こういうパターンもある。
-もちろん、こいつらが混合することもある:
-{
-  // ...
-  "principal": [ { "user_id": "foobarkun@example.com" }, { "group_id": "foobargroup@example.com" } ]
-}
-つまり、principalは、user_idフィールドを持つオブジェクトか、group_idフィールドを持つオブジェクトかの、どちらかのパターンをとることになる。
-データがいくつかのパターンを取るときに何を使うかといえば、（Scala 3では）Enumだ:
-enum Principal:
-  case User(user_id: String)
-  case Group(group_id: String)
-
-
-
-こんな感じにPrincipalを定義して、principalフィールドにこれを充てれば終わりだ。
-EnumをどうJSONにマップするのか
-ところで、EnumとJSONとの関係は一筋縄に…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>

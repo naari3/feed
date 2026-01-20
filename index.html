@@ -78,6 +78,28 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2026.1.20</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026012044868/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Switch 2 378.4万台,ps4-hen pre-release-main-175,PS3 Disc Dumper v4.4.1,chiaki-ng weekly-canary-release-a75d628ffb4b6e33126e3830b4fb32796e5cc005,Adrenaline v1768816209,FlipperMCE nightly-65,NTON v3.0.0,ACNHMobileSpawner 1.04-a,Turnips v1.7.5,tiicu 0.0.1 (alpha),pico8-android 0.0.9,ROM Properties v2.7.1,GB Studio v4.2.0-beta2,Hades v1.1.0,PCSX2 v2.7.54,shadPS4 Pre-release-shadPS4-2026-01-19-c898071,shadPS4-QtLauncher-2026-01-19-1f4e59f,Azahar 2124.1,Ship of Harkinian(Shipwright) Copper Charlie 9.1.2,LodjurGBA v0.1.4
+→→→この記事の続きを読む
+GameGaz Daily 2026.1.20 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                  <img src="https://gamegaz.com/wp-content/uploads/tiicu-homescreen.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
               rel="noopener">Lambdaカクテル</a></h3>
           <section class="articles-per-source">
@@ -19029,54 +19051,6 @@ PS5システムソフトウェアアップデート バージョン 25.07-12.20.
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">ScalaのCirceでEnumをUntaggedなJSONにするためのエンコーダを定義する</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/10/22/200628" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>生きているとEnumをJSONにしたり、JSONをEnumに戻したりしたくなることがある。エンジニアの仕事の半分はJSONという煮干しを作ったりそれを戻したりすることなので、もはや呼吸をするようにエンコードしたりデコードしたりする。ええ？YAMLがお好き？すみませんね〜ウチはJSON出汁なんですよ〜
-ScalaのEnumとJSON
-さて、こういうJSONを作りたいとする。
-{
-  // ...
-  &quot;principal&quot;: [ { &quot;user_id&quot;: &quot;foobarkun@example.com&quot; } ]
-}
-これは実物から持ってきた。ところで、
-{
-  // ...
-  &quot;principal&quot;: [ { &quot;group_id&quot;: &quot;foobargroup@example.com&quot; } ]
-}
-こういうパターンもある。
-もちろん、こいつらが混合することもある:
-{
-  // ...
-  &quot;principal&quot;: [ { &quot;user_id&quot;: &quot;foobarkun@example.com&quot; }, { &quot;group_id&quot;: &quot;foobargroup@example.com&quot; } ]
-}
-つまり、principalは、user_idフィールドを持つオブジェクトか、group_idフィールドを持つオブジェクトかの、どちらかのパターンをとることになる。
-データがいくつかのパターンを取るときに何を使うかといえば、（Scala 3では）Enumだ:
-enum Principal:
-  case User(user_id: String)
-  case Group(group_id: String)
-
-
-
-こんな感じにPrincipalを定義して、principalフィールドにこれを充てれば終わりだ。
-EnumをどうJSONにマップするのか
-ところで、EnumとJSONとの関係は一筋縄に…</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/6802888565295606014/1761131188" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21307,7 +21281,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-01-19T23:01:53.060Z">2026-01-19T23:01:53.060Z</time>
+    <time id="build-timestamp" datetime="2026-01-20T00:03:59.269Z">2026-01-20T00:03:59.269Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
