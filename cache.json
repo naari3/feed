@@ -584,21 +584,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901310047165/1761991194"
-        },
-        {
-          "id": "hatenablog://entry/6802888565298311474",
-          "author": null,
-          "description": "対応ファイルは「xanadu114.lzh」になります。\n$ gcc -dumpversion\n15.2.0\nMakefile.cygwin:1\nCC\t= gcc -mno-cygwin\n「-mno-cygwin」を削除。\nmain.c:95\n  DuplicateHandle(process, pipe_out, process, &pipe_out_dup,\n                  0, NULL, DUPLICATE_SAME_ACCESS);\n「NULL」を「0」に修正。\nuser_io.c:9\n#ifdef __FreeBSD__\n#include <sys/types.h>\n#include <sys/stat.h>\n\n#define mkdir(dir) (mkdir((dir), 0700))\n#endif\n「ifdef freeBSD」を「define mkdir」の上に移動。（2つのインクルードを通す）\nmidiplay.c:1\nwaveplay.c:1\n#include <sys/stat.h>\nを追加。\nwaveplay.c:163\n      waveOutWrite(wave_device, &wave_wh, sizeof(wave_wh));\n「wave_device」を「(HWAVEOUT)wave_device」に修正。\n・waveplay.c:296\n  error = waveOutOpen(&wave_device, WAVE_MAPPER, &wave_format,\n                      (DWORD)wave_proc, 0, CALLBACK_FUNCTION);\n「(DWORD)wave_proc」を「(DWORD_PTR)&wave_proc」に修正。\nwaveplay.c:\n#define MAX_MIXER_BUFFER\t1024\t/* ミキサー用バッファ */\n1024を10240に修正。\nその後、\nmake -f Makefile.cygwin\n$ ./xanadu\nとすればおっけーです。warningはめっちゃでるけど無視。midiは鳴りません。",
-          "link": "https://akkera102.hatenablog.com/entry/2025/10/25/140345",
-          "publishedOn": "2025-10-25T05:03:45.000Z",
-          "wordCount": 531,
-          "title": "ザナドゥクローンMSYS2コンパイル",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565298311474/1761369376",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/6802888565298311474/1761369376"
         }
       ]
     },
