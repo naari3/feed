@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-01-26T12:02:19.469Z</updated>
+    <updated>2026-01-26T13:16:15.266Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -13115,40 +13115,6 @@ www.youtube.com]]></summary>
 Claude Code v2.0.28のアップデートによりPlan機能がサブエージェント化されました。Plan生成時のコンテキストが]]></summary>
         <author>
             <name>laiso</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2025-10-28]]></title>
-        <id>hatenablog://entry/17179246901305688195</id>
-        <link href="https://commits.hatenablog.com/entry/2025/10/29/100000"/>
-        <updated>2025-10-29T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[okaruby.connpass.com
-先週の金曜日、Okayama.rb に参加していた。
-参加者がみんなLTをする感じの会。私は6年ほど前にやった、Whitespaceのセルフホスティングの話をした。資料は6年前のものを参照したり、matzの記事で仕様を説明したり、基本はWhitespaceのコードを実行するのを実演していた。
-gist にセルフホスティングの実装が埋もれていたのをレスキューしたので、この日記にもリンクを貼っておく。Whitespaceで書かれたWhitespaceインタプリタと、Whitespaceで書かれたWhitespaceインタプリタを生成するためのRubyコード。
-https://gist.github.com/pocke/2847214a87139a0d1babd9338159d667
-https://gist.github.com/pocke/bf16f1c8367a2f86ce5dbfbe6867a8bf
-また再演したいなと思っていた話なので、話せて良かった。自分でも内容を結構忘れていたので、思い出せたのも面白かった。HashやArrayのデータ構造とか頑張っていたなあ。
-静的型にして値に型を埋め込むのをやめたりしたら高速化できるかななどと考えていた。
-会場の北長瀬近辺は、以前住んでいたエリア。用があって定期的に行く。
-鉄道だと微妙に行きづらいので車で行くことが多いのだけど、時間帯によっては道路がめちゃくちゃに混むのでつらい。特にOkayama.rbに行く時間は帰宅ラッシュと重なっているようで、本当に厳しい。帰りはめっちゃ空いているから楽なのだけど。早くバイパスができてほしい。
-okayama-nanka.connpass.com
-翌日の土曜日には、Okayama.Geek に参加していた。
- speakerdeck.com
-こちらでも発表をした。「プログラミングで遊ぶ」というタイトル。Elinというゲームを年始からずっとやっているのだけど、これをプレイするためにプログラミングをやっているという話をした。
-MODを作ったり攻略サイトを作ったりしていて、ゲームプレイが便利になるのはもちろん、プログラミングとしての楽しさも増えているのがとても良い体験だと思っている。発表中にもある、経験値の切り上げ処理とか知れたのは中々良かった。使う機会があるかというとあまりなさそうだけど。
-発表資料はあまり作り込まず、口頭でかなり補足しながら話した。いつもそんな感じではあるけど、今回は特に発表資料を見ただけだとよくわからんところが多いかも。
-今回は動画が後ほど公開されるということで、そちらを見ていただければ。
-他の人の話では、大林さんの発表が一番好きだったかも知れない。普段あまり意識しない研究者としてのソフトウェア開発の実例を知れたのは、知らないことを知ることができて良い機会だった。
-ここ数年Spotifyをずっと使っていたのだけど、久しぶりにYouTube Musicに戻ってきた。
-Spotifyのランダム再生が明らかに有名曲を多く再生して全く再生されない曲が出るのが本当に嫌で、ずっとなんとかしたいと思っていた。
-YouTube Music がそのへんどうなっているのかはいまいちわかっていないのだけど、戻ってきてからはアップロードした曲を聴いているので影響が出ていない……。適当に聞いていると変わらないものとガーネットばっかり流れてくるから、YouTube Musicもこの傾向がありそうな気はする。
-アップロードした曲とYouTube Music側の曲の扱いがくっきり分かれているのが嫌だなと思って離れてしまったと思うのだけど、戻ってきてみるとそう気にならない。Spotifyにはそもそもアップロード機能がないし。
-ライブラリ内の曲を全曲シャッフルするのが好き。懐かしい曲がどんどん聞けてとてもいい。久しぶりにこの聞き方をしたのだけど、Spotify以前はこれが一番よくやっていた聞き方だったと思う。特にサブスク以前のvlcで音楽を聴いていた頃はずっとこれだった。
-今のところSpotifyがYouTube Musicに勝っているところは、曲停止時にわずかなフェードアウトがかかるところぐらい。曲がブツッと終わらないのは大変良い機能だと思う。
-またCD買ったりしようかな。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>
