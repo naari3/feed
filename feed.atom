@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-01-30T20:03:24.445Z</updated>
+    <updated>2026-01-30T21:04:48.411Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -13013,71 +13013,6 @@ jdda.or.jp
 さすがにサブスクまでは加入できないから、ゴメンだけど、復帰してくれたことは、本当に勇気づけられているので、これからも応援しています！]]></summary>
         <author>
             <name>Hatena::AmorphousDiary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[パッチ]]></title>
-        <id>hatenablog://entry/17179246901310619291</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/11/02/172852"/>
-        <updated>2025-11-02T08:28:52.000Z</updated>
-        <summary type="html"><![CDATA[「アトリの空と真鍮の月」のwindows11パッチです。fixMetricsというツールを使うのもいいですけど自分で解析してみたかったのでやってみました。アップデートパッチ Ver3.00済みです。
-
-※
-書き換え前：
-0042570E  |. FF15 3CB04400  CALL DWORD PTR DS:[<&GDI32.GetTextMetricsA>];  GDI32.GetTextMetricsA
-
-書き換え後：
-0042570E     E9 6D550200    JMP ATORI.0044AC80
-00425713     90             NOP
-
-0044AC80     FF15 3CB04400  CALL DWORD PTR DS:[<&GDI32.GetTextMetric>;  GDI32.GetTextMetricsA
-0044AC86     8B4C24 28      MOV ECX,DWORD PTR SS:[ESP+28]
-0044AC8A     03C9           ADD ECX,ECX
-0044AC8C     894C24 2C      MOV DWORD PTR SS:[ESP+2C],ECX
-0044AC90    ^E9 7EAAFDFF    JMP ATORI.00425713
-
-0002570E: FF E9
-0002570F: 15 6D
-00025710: 3C 55
-00025711: B0 02
-00025712: 44 00
-00025713: 00 90
-
-0004AC80: 00 FF
-0004AC81: 00 15
-0004AC82: 00 3C
-0004AC83: 00 B0
-0004AC84: 00 44
-
-0004AC86: 00 8B
-0004AC87: 00 4C
-0004AC88: 00 24
-0004AC89: 00 28
-0004AC8A: 00 03
-0004AC8B: 00 C9
-0004AC8C: 00 89
-0004AC8D: 00 4C
-0004AC8E: 00 24
-0004AC8F: 00 2C
-0004AC90: 00 E9
-0004AC91: 00 7E
-0004AC92: 00 AA
-0004AC93: 00 FD
-0004AC94: 00 FF
-
-※
-おまけ　ＭＳ明朝をＭＳゴシックに変更
-0005B255: 96 83
-0005B256: BE 53
-0005B257: 92 83
-0005B258: A9 56
-0005B259: 00 83
-0005B25A: 00 62
-0005B25B: 00 83
-0005B25C: 00 4E
-処理内容は前と同じで半角サイズx2を全角サイズにしているだけです。ルビも大丈夫そう。青空と違ってキャラクタが多いので横表示の方が視点移動しやすいですね。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
