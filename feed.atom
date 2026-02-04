@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-04T13:24:37.326Z</updated>
+    <updated>2026-02-04T14:14:02.370Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[そのコードのその行をどのようにAIが生成し、なぜ変更されたのか。コードのコンテキスト履歴を記録する標準「Agent Trace」。Cursor、Cognition、Google Julesらが提唱]]></title>
+        <id>https://www.publickey1.jp/blog/26/aiagent_tracecursorcognitiongoogle_jules.html</id>
+        <link href="https://www.publickey1.jp/blog/26/aiagent_tracecursorcognitiongoogle_jules.html"/>
+        <updated>2026-02-04T15:48:50.000Z</updated>
+        <summary type="html"><![CDATA[あるコードのある行がいつ、誰によって、どのような理由で書かれ、あるいは変更されてきたのかの履歴は、コードのコメントに記述する方法や、GitHubなどのソースコード管理ツールによってコードの更新時などに記録する方法があります。 しかしAIを用...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[さくらのクラウド、ガバメントクラウドの条件クリアまであと3つまで到達。残りは統制やセキュリティ認証、オブジェクトストレージなどの一部に]]></title>
+        <id>https://www.publickey1.jp/blog/26/3_8.html</id>
+        <link href="https://www.publickey1.jp/blog/26/3_8.html"/>
+        <updated>2026-02-04T15:43:15.000Z</updated>
+        <summary type="html"><![CDATA[デジタル庁はガバメントクラウドの構築に関して、さくらのクラウドの開発計画の進捗状況を1月30日付けで公表しました。 5つのクラウドがガバメントクラウドに選出 ガバメントクラウドは日本政府共通のクラウドサービスの利用環境となるクラウドであり、...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Claude CodeやGemini CLIなどのコーディングエージェントを安全に使えるMicroiVMベースの分離環境「Docker Snadbox」。WindowsとMacに対応]]></title>
         <id>https://www.publickey1.jp/blog/26/dockerclaude_codegemini_climicroivmdocker_snadboxwindowsmac.html</id>
@@ -12613,35 +12633,6 @@ www.nicovideo.jp
 続きをみる]]></summary>
         <author>
             <name>moroishimasaoki</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[＃31xAIコンテスト 「お題短歌」の情景を1枚の画像にしてAdobe Creative Cloud Pro 1年分が当たるキャンペーンに応募しよう]]></title>
-        <id>hatenablog://entry/17179246901312817384</id>
-        <link href="https://blog.hatenablog.com/entry/AdobeFirefly202511"/>
-        <updated>2025-11-07T01:30:00.000Z</updated>
-        <summary type="html"><![CDATA[浮かんだイメージをアドビの生成AI「Adobe Firefly」でつくって共有しよう！
-はてなブログではAdobe Fireflyと共同で特別お題キャンペーン ＃31xAIコンテスト を実施します。キャンペーンページの手順と応募要項をご確認の上、キャンペーンページの「応募する」ボタンや記事編集画面のお知らせからご参加ください。
-
-最近よく耳にする画像生成AI、あなたはもう使ってみましたか？ 「気にはなるけど、なんだか難しそう」「私には描きたいものがないかも」といった理由で、まだ触れたことのない人も多いのではないでしょうか。
-そんなあなたにこそ、画像生成AIの手軽さと表現の面白さを実感してほしい！ そんな思いから、アドビ株式会社とはてなブログがコラボレーションし、特別お題キャンペーンを実施します。
-挑戦していただくお題は、歌人toron*さんの短歌から広がる情景を、アドビの生成AI「Adobe Firefly」で描いてみるというもの。今回は「お題短歌」を2首ご用意しましたので、皆さんが新しく短歌を詠む必要はありません。感じたままに、31文字の世界を自由に解釈し、1枚の画像にしてみてください。
-審査のポイントは、「短歌の情景や空気感を、プロンプトの工夫によってどれだけ的確に、そして印象的に表現できているか」という点。投稿された画像から優秀作品を選出します。
-あなたの狙い通りに生成できた会心の1枚、試行錯誤の末に生まれた想像以上の1枚。偶然生まれた傑作も大歓迎です！ 
-画像ができたら、制作中のスクリーンショットも一緒にはてなブログに貼り付けて、ぜひ、その画像に込めた解釈や発見も合わせてブログでシェアしてください！
-👇のバナーをクリックすると記事編集画面が開きます。
-
-お題に応募する
-
-
-投稿エントリーの中から入賞者5名にAdobe Creative Cloud Pro 1年分をプレゼントします。たくさんのご応募お待ちしております。
-▶ Adobe Firefly × Hatena Blog  ＃31xAIコンテスト 特別お題キャンペーンはこちら
-
-.entry-tagline a {
-  color: rgb(190, 192, 208);
-}]]></summary>
-        <author>
-            <name>週刊はてなブログ</name>
         </author>
     </entry>
     <entry>
