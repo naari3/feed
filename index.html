@@ -18714,95 +18714,6 @@ GameGaz Daily 2025.11.7 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">ScalaのupickleでオプショナルなフィールドをパースするにはNone defautを設定しておくと良い</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/11/07/020200" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>tl;dr
-                
-        deserialize        
-             serialize            
-
-
-
-
- デフォルト値がある 
- フィールドがない場合はデフォルト値にフォールバックする 
- 値がデフォルトと同じならフィールドごと削除する 
-
-
-     デフォルト値がない 
- フィールドがない場合は例外を投げる   
- 値をセットする               
-
-
-
-
-
-//&gt; using dep com.lihaoyi::upickle::4.4.1
-
-import upickle.default._
-
-case class Person(
-    name: String,
-    age: Int,
-    email: Option[String] &#x3D; None,
-    address: Option[String] &#x3D; None,
-    phone: Option[String] &#x3D; None
-)
-
-object Person {
-  implicit val rw: ReadWriter[Person] &#x3D; macroRW
-}
-
-
-
-こんな感じに設定しておくと、
-{ &quot;name&quot;: &quot;windymelt&quot;, &quot;age&quot;: 32 }
-
-
-
-こういうJSONをパースできるようになります。存在しないフィールドはNoneにフォールバックします。
-//&gt; using dep com.lihaoyi::upickle::4.4.1
-
-import upickle.default._
-
-case class Person(
-    name: String,
-    age: Int,
-    email: Option[String],
-    address: Option[String],
-    phone: Option[String]
-)
-
-object Person {
-  implicit val rw: ReadWriter[Person] &#x3D; macroRW
-}
-
-
-
-このようにdefault parameterを設定していないと、
-Caused by: upickle.core.Abort: missing keys in dictionary: email, address, phone
-例外を吐いてしまいます。
-default parameterを指定しないときは、値があるかnullか、という状況を想定しているときに使うと良さそう。
-参考文献
-stackoverflow.com
-com-lihaoyi.github.io</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901313432670/1762448520" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21033,7 +20944,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-02-04T04:30:02.814Z">2026-02-04T04:30:02.814Z</time>
+    <time id="build-timestamp" datetime="2026-02-04T05:19:47.066Z">2026-02-04T05:19:47.066Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -7549,21 +7549,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901315697173/1762729291"
-        },
-        {
-          "id": "hatenablog://entry/17179246901313432670",
-          "author": null,
-          "description": "tl;dr\n                \n        deserialize        \n             serialize            \n\n\n\n\n デフォルト値がある \n フィールドがない場合はデフォルト値にフォールバックする \n 値がデフォルトと同じならフィールドごと削除する \n\n\n     デフォルト値がない \n フィールドがない場合は例外を投げる   \n 値をセットする               \n\n\n\n\n\n//> using dep com.lihaoyi::upickle::4.4.1\n\nimport upickle.default._\n\ncase class Person(\n    name: String,\n    age: Int,\n    email: Option[String] = None,\n    address: Option[String] = None,\n    phone: Option[String] = None\n)\n\nobject Person {\n  implicit val rw: ReadWriter[Person] = macroRW\n}\n\n\n\nこんな感じに設定しておくと、\n{ \"name\": \"windymelt\", \"age\": 32 }\n\n\n\nこういうJSONをパースできるようになります。存在しないフィールドはNoneにフォールバックします。\n//> using dep com.lihaoyi::upickle::4.4.1\n\nimport upickle.default._\n\ncase class Person(\n    name: String,\n    age: Int,\n    email: Option[String],\n    address: Option[String],\n    phone: Option[String]\n)\n\nobject Person {\n  implicit val rw: ReadWriter[Person] = macroRW\n}\n\n\n\nこのようにdefault parameterを設定していないと、\nCaused by: upickle.core.Abort: missing keys in dictionary: email, address, phone\n例外を吐いてしまいます。\ndefault parameterを指定しないときは、値があるかnullか、という状況を想定しているときに使うと良さそう。\n参考文献\nstackoverflow.com\ncom-lihaoyi.github.io",
-          "link": "https://blog.3qe.us/entry/2025/11/07/020200",
-          "publishedOn": "2025-11-06T17:02:00.000Z",
-          "wordCount": null,
-          "title": "ScalaのupickleでオプショナルなフィールドをパースするにはNone defautを設定しておくと良い",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901313432670/1762448520",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901313432670/1762448520"
         }
       ]
     },
