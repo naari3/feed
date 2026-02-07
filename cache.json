@@ -1166,6 +1166,36 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901352195092",
+          "author": null,
+          "description": "git worktreeの管理ツールが色々出てきている。git-wtはtmux統合やfzfベースのインタラクティブ選択が便利だし、他にもworktreeの管理をいい感じにするツールはいくつかある。\nただ、こういったツールの紹介を見ていると「worktreeへの移動をどう楽にするか」に注目が集まっている気がする。でも、worktreeにcdする必要ってそもそもあるんだろうか。\nworktreeでやりたいことはコードを書くかAIに書かせるかのどちらかで、だったらworktreeの中でエディタやAIツールを直接起動すればいい。gtrはそれができる。\ngtr editor my-feature    # エディタで開く\ngtr ai my-feature         # AIツールを起動\nディレクトリの移動は発生しない。\n僕のグローバル設定はこう。\ngit config --global gtr.ai.default claude\ngit config --global gtr.editor.default vscode\ngit config --global gtr.copy.includedirs .claude\ncopy.includedirsでworktree作成時に自動コピーするディレクトリを指定できる。.claudeを入れておくとClaude Codeのプロジェクト設定を引き継げるのでめちゃくちゃ便利。\nfzfとの組み合わせ\n折角なので、zshに定義しているfzf連携も紹介する。worktree一覧をfzfで表示して、キーバインドでエディタやAIを直接起動できるようにしている。\n_git_worktree_format() {\n  local root=$1\n  local git_cmd=$2\n  local line path branch mark is_ro…",
+          "link": "https://blog.nishimu.land/entry/2026/02/07/212310?utm_source=feed",
+          "publishedOn": "2026-02-07T12:23:10.000Z",
+          "wordCount": 584,
+          "title": "worktreeにcdするのをやめた",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901352195092/1770466990",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901352195092/1770466990"
+        },
+        {
+          "id": "hatenablog://entry/17179246901352181191",
+          "author": null,
+          "description": "2026年の目標\n怖がられないこと\n自分では普通にしているつもりでも、相手からすると怖いと感じることがあるらしい\n相手の立場に立った言動ができるようになりたい\n2025年のふりかえり\nblog.nishimu.land\n全力で楽しむ\nかなり楽しめた年だったと思う。\n暮らし\n去年買った家での生活がめちゃくちゃ快適\n良い物件を見つけられたのはほんとに運が良かった\n仕事\n新しい仕事に熱意を持って取り組めている\nカオスな環境に飛び込んだ甲斐があった（と思いたい）\n乗馬\n乗馬を始めた\nまさか自分が馬に乗るとは思わなかったけど、めちゃくちゃ楽しい",
+          "link": "https://blog.nishimu.land/entry/2026/02/07/210442?utm_source=feed",
+          "publishedOn": "2026-02-07T12:04:42.000Z",
+          "wordCount": 257,
+          "title": "2026年の目標と2025年のふりかえり",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901352181191/1770465882",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901352181191/1770465882"
+        },
+        {
           "id": "hatenablog://entry/17179246901329530869",
           "author": null,
           "description": "この記事は「趣アドベントカレンダー」の6日目の記事です。\n機能は id:chouge さんの さくらのクラウドで「趣」を検出するアプリを作った でした。\n「趣ディテクター」めちゃくちゃ良くて趣をたくさん発見出来ました！\nみなさんはニコチンが好きですか？僕は大嫌いです。\nみなさんニコチンアミドモノヌクレオチドは好きですか？私は大好きです。\nこの2つどちらもニコチンって名前ですが、全く別物です。\nニコチンは体を壊して、ニコチンアミドアデニンジヌクレオチドは体を治します。\n摂取したニコチンアミドアデニンジヌクレオチドは体内でニコチンアミドアデニンジヌクレオチドに変わって関連酵素が活性化します。\nそうするとDNAを修復したり、ミトコンドリアが元気になったりするらしいです。\nこのニコチンアミドアデニンジヌクレオチド(NMN)のサプリを飲み始めてから、ちょっと怖いくらい元気になったので中年のみなさんは摂取した方がいいですよ。\n\nNMN サプリメント 38500mg (1粒321mg) 日本製 高純度100% GMP認定商品 耐酸性 サプリ 全ロット分析 120日分 LaboTech-pH\n\nLaboTech-pH\nAmazon\n\n中年になってから元気になったという体験談\n侘び寂び\n人生の途中で、身体の衰えを感じながらも、新たな希望を見出す。その「ちょっと怖いくらい元気になった」という言葉には、年月を経て見出される、不完全な身体のなかにある美しさと、再生の可能性が感じられる。\n明日は慕狼ゆに@エンジニア集会さんの「なんか書く」です。前日までタイトルが決まってないのも趣ですね！",
@@ -1938,21 +1968,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/41d79a47e77af69d20041667fc2328d2f96003fc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20251110%2F20251110123617.jpg"
-        },
-        {
-          "id": "hatenablog://entry/17179246901315379820",
-          "author": null,
-          "description": "RubyWorld Conference 2025 Day 4 だった。\n美祢から長崎に移動して、長崎を少し歩いて回った。毎日運転していると疲れるので、長崎では2泊して、明日は1日運転を休む日にする。\n\n昨日と移動距離はそんなに変わらないけど、高速移動できて結構楽だった。 pic.twitter.com/nrVkDmmMew\n— 🎹 (@p_ck_) November 9, 2025\n   \n今日はずっと高速だし100km/h出せる区間も多かったので、あまり時間がかからなくて比較的楽だった。\n美祢から長崎への移動はほぼまっすぐ移動した。\n\n今日の最初のチェックインポイントは古賀SA。\n福岡に来たらやっぱり豚骨ラーメン! 有名店らしいよ pic.twitter.com/wgvAgP0qtF\n— 🎹 (@p_ck_) November 9, 2025\n   \n途中古賀SAに寄ってお昼休憩にした。福岡の有名な豚骨ラーメン屋でラーメンを食べたのだけど、この味は岡山でも食べたことがあるね。\n古賀SAでお土産にもち吉のいなりあげもちを買った。 https://www.mochikichi.co.jp/products/detail/09705\n前から福岡に行く度、列車内の広告とかで見かけて気になっていたのだけど、売っているところに行ったことがなく、実物を初めて見かけた。\n買ってから知ったのだけど、もち吉は岡山にも店舗があるみたい。おいしかったら気軽に買いに行けると捉えよう...。\npenguin-aqua.jp\n高速を降りて最初の目的地は、長崎ペンギン水族館。\nペンギンがたくさんいて、水槽をいろんな角度から見ることができて楽しかった。\nペンギンのほかにも水生生物が色々展示されていた。特にゴンズイがいたのが良かった。\n\nゴンズイがいて大変良かった。玉になってない展示は初めて見たけど、これもいいものですね pic.twitter.com/8B65vUGz7m\n— 🎹 (@p_ck_) November 9, 2025\n   \nゴンズイは水族館や博物館で展示されている生き物で一番好きと言っても過言ではない。だいたい大量のゴンズイでゴンズイ玉として展示されていることが多いのだけど、ここでは少数で少し群れる程度で展示されていた。それはそれで個々を観察できてかわいい。\nペンギン水族館は長崎市街地からも近くて、車で20分弱ですぐに宿まで行けた。\n宿についたのは16時前だったので、近くを散策して回っていた。\n長崎駅でお土産を買い求めた後、出島に行った。\n\n出島の中に出島があるのめちゃくちゃいい pic.twitter.com/A38ZdsQQ4q\n— 🎹 (@p_ck_) November 9, 2025\n   \n出島の中にミニ出島があるのが良かった。でも再帰は1段しかしていなくて少し残念。\nmixi.social\n夕飯はちゃんぽんを食べた。なかなかおいしくてよかった。\n荷物をぶら下げるためにカラビナを買った。\n最近は無印の小さいショルダーバッグを愛用しているのだけど、荷物が増えた時にレジ袋やエコバッグを手に持つことが多くて少しだるかった。そういう袋をカラビナでショルダーバッグからぶら下げるようにしてみた。\n歩くと袋が揺れるので安定性が悪いけど、位置を調節すれば手に持つより良いかなと思う。",
-          "link": "https://commits.hatenablog.com/entry/2025/11/10/100000",
-          "publishedOn": "2025-11-10T01:00:00.000Z",
-          "wordCount": 563,
-          "title": "2025-11-09",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901315379820/1762736402",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901315379820/1762736402"
         }
       ]
     },
@@ -3694,6 +3709,21 @@
       "feedUrl": "https://saize-lw.hatenablog.com/rss",
       "siteUrl": "https://saize-lw.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901351218586",
+          "author": null,
+          "description": "※この記事には『超かぐや姫』のネタバレが含まれます\n3秒止まったら死ぬ映画\n「極めて現代的」という月並みなフレーズ\nそれはもう問題じゃないから、フラットに行こう\nやっぱクリエイターというよりはマーケター\nそうはいっても優しい世界\n言うほどパンケーキ食べたいか？\nネトフリに加入して超かぐや姫を見た。\nハマり役\n別に声オタではないが、今まで数多見てきたCV早見沙織キャラの中で一番ハマっていた気がする。安定してるけど安定しすぎて却って無機質にも聞こえる特殊な声質がAI歌姫というキャラにフィットしている。\n3秒止まったら死ぬ映画\n捲し立てるようなセリフ、オーバーに強調される動き、ひたすら輝き続けるエフェクト。\n一番止まらない人\n動かない会話シーンですら動きっぱなしなので、動くシーンでは動くどころではない。\n「極めて現代的」という月並みなフレーズ\n自分で言っていても陳腐な言葉だとは思うが、やはり「極めて現代的」という月並みなフレーズを使わずにこの作品を令和8年に語るのは不可能に近い。\n補足639：「極めて現代的」とはその定義上いつでも使えるため常に陳腐な言葉なのだが（江戸時代でもシャポポ時代でも使える）、しかしそれが発された瞬間に限っては今ここを無前提で最も正確に語る言葉でもある。ちなみに、この両極は時間そのものの性質に由来する。\n情報量が多いショート動画的な進行に加え、AIやアバターやバーチャルやライバーといった現代的なモチーフがふんだんに登場することも月並みなフレーズを用いる理由に加えてよい。\n例えば、大人気ライバーであるヤチヨが「AItuber」であることは誰も気にしていない。イロハは何の衒いもなくAItuberを推していて、「中の人」がいるとかいないとかいう、AIやアバターにありがちな問題意識は最初から存在していない。\nもう少し大きく語るなら、「バーチャルを扱う割にはその虚構…",
+          "link": "https://saize-lw.hatenablog.com/entry/2026/02/07/211551",
+          "publishedOn": "2026-02-07T12:15:51.000Z",
+          "wordCount": null,
+          "title": "26/2/7 超かぐや姫の感想（ネタバレあり）　言うほどパンケーキ食べたいか？",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/b1ff6dacd54f72a3cb7c3347913242035b1c6314/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20260206%2F20260206232943.webp",
+            "type": "image/webp",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b1ff6dacd54f72a3cb7c3347913242035b1c6314/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20260206%2F20260206232943.webp"
+        },
         {
           "id": "hatenablog://entry/17179246901348099336",
           "author": null,
@@ -9630,16 +9660,6 @@
           "publishedOn": "2025-11-10T23:34:18.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2025.11.11",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44513",
-          "author": "mamosuke",
-          "description": "Y2JB改良,Y2JB Remote JS Loader v1.2,ps5-payload-gdbsrv v0.7.2,ps5-payload-websrv v0.27,ps5-payload-shsrv v0.18,Apollo Save Tool (apollo-psp) v2.0.4,PS5 App Dumper 1.04 Beta,Y2JB Updater,Neogeo 2 ps5,yarpe(Yet another Ren’Py PlayStation exploit) v2.2.2,ZGloom-Vita-SDL v3.0,ARK-4 v1762720018,Apollo Save Tool-Vita(apollo-vita) v2.0.4,Emu4VitaPlus v0.50_2025.11.9,UDPBD-for-XEBP 2.9.7.1,DKWDRV 1.7.6g,Ultrahand Overlay v2.1.6,NX Venom 9.0.1,NetPass v1.2.7,TinyWiiBackupManager v4.3.0,Tera Finder 4.3.6,Eden v0.0.4-rc2,PCSX2 v2.5.280,RetroArch 1.22.0,SpeccySE Version 1.7b,hydra v0.2.3→→→この記事の続きを読む\nGameGaz Daily 2025.11.10 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025111044513/",
-          "publishedOn": "2025-11-10T00:46:08.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.11.10",
           "imageUrl": null
         }
       ]

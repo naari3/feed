@@ -78,6 +78,109 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
+              rel="noopener">ちなみに</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">worktreeにcdするのをやめた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2026/02/07/212310?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>git worktreeの管理ツールが色々出てきている。git-wtはtmux統合やfzfベースのインタラクティブ選択が便利だし、他にもworktreeの管理をいい感じにするツールはいくつかある。
+ただ、こういったツールの紹介を見ていると「worktreeへの移動をどう楽にするか」に注目が集まっている気がする。でも、worktreeにcdする必要ってそもそもあるんだろうか。
+worktreeでやりたいことはコードを書くかAIに書かせるかのどちらかで、だったらworktreeの中でエディタやAIツールを直接起動すればいい。gtrはそれができる。
+gtr editor my-feature    # エディタで開く
+gtr ai my-feature         # AIツールを起動
+ディレクトリの移動は発生しない。
+僕のグローバル設定はこう。
+git config --global gtr.ai.default claude
+git config --global gtr.editor.default vscode
+git config --global gtr.copy.includedirs .claude
+copy.includedirsでworktree作成時に自動コピーするディレクトリを指定できる。.claudeを入れておくとClaude Codeのプロジェクト設定を引き継げるのでめちゃくちゃ便利。
+fzfとの組み合わせ
+折角なので、zshに定義しているfzf連携も紹介する。worktree一覧をfzfで表示して、キーバインドでエディタやAIを直接起動できるようにしている。
+_git_worktree_format() {
+  local root&#x3D;$1
+  local git_cmd&#x3D;$2
+  local line path branch mark is_ro…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901352195092/1770466990" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2026年の目標と2025年のふりかえり</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2026/02/07/210442?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>2026年の目標
+怖がられないこと
+自分では普通にしているつもりでも、相手からすると怖いと感じることがあるらしい
+相手の立場に立った言動ができるようになりたい
+2025年のふりかえり
+blog.nishimu.land
+全力で楽しむ
+かなり楽しめた年だったと思う。
+暮らし
+去年買った家での生活がめちゃくちゃ快適
+良い物件を見つけられたのはほんとに運が良かった
+仕事
+新しい仕事に熱意を持って取り組めている
+カオスな環境に飛び込んだ甲斐があった（と思いたい）
+乗馬
+乗馬を始めた
+まさか自分が馬に乗るとは思わなかったけど、めちゃくちゃ楽しい</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901352181191/1770465882" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://saize-lw.hatenablog.com/" target="_blank"
+              rel="noopener">LWのサイゼリヤ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">26/2/7 超かぐや姫の感想（ネタバレあり）　言うほどパンケーキ食べたいか？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://saize-lw.hatenablog.com/entry/2026/02/07/211551" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>※この記事には『超かぐや姫』のネタバレが含まれます
+3秒止まったら死ぬ映画
+「極めて現代的」という月並みなフレーズ
+それはもう問題じゃないから、フラットに行こう
+やっぱクリエイターというよりはマーケター
+そうはいっても優しい世界
+言うほどパンケーキ食べたいか？
+ネトフリに加入して超かぐや姫を見た。
+ハマり役
+別に声オタではないが、今まで数多見てきたCV早見沙織キャラの中で一番ハマっていた気がする。安定してるけど安定しすぎて却って無機質にも聞こえる特殊な声質がAI歌姫というキャラにフィットしている。
+3秒止まったら死ぬ映画
+捲し立てるようなセリフ、オーバーに強調される動き、ひたすら輝き続けるエフェクト。
+一番止まらない人
+動かない会話シーンですら動きっぱなしなので、動くシーンでは動くどころではない。
+「極めて現代的」という月並みなフレーズ
+自分で言っていても陳腐な言葉だとは思うが、やはり「極めて現代的」という月並みなフレーズを使わずにこの作品を令和8年に語るのは不可能に近い。
+補足639：「極めて現代的」とはその定義上いつでも使えるため常に陳腐な言葉なのだが（江戸時代でもシャポポ時代でも使える）、しかしそれが発された瞬間に限っては今ここを無前提で最も正確に語る言葉でもある。ちなみに、この両極は時間そのものの性質に由来する。
+情報量が多いショート動画的な進行に加え、AIやアバターやバーチャルやライバーといった現代的なモチーフがふんだんに登場することも月並みなフレーズを用いる理由に加えてよい。
+例えば、大人気ライバーであるヤチヨが「AItuber」であることは誰も気にしていない。イロハは何の衒いもなくAItuberを推していて、「中の人」がいるとかいないとかいう、AIやアバターにありがちな問題意識は最初から存在していない。
+もう少し大きく語るなら、「バーチャルを扱う割にはその虚構…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/b1ff6dacd54f72a3cb7c3347913242035b1c6314/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20260206%2F20260206232943.webp" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://atarabi.hateblo.jp/" target="_blank"
               rel="noopener">Atarabi-Blog</a></h3>
           <section class="articles-per-source">
@@ -18319,18 +18422,6 @@ GameGaz Daily 2025.11.11 first appeared on 大人のためのゲーム講座.</s
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2025.11.10</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2025111044513/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Y2JB改良,Y2JB Remote JS Loader v1.2,ps5-payload-gdbsrv v0.7.2,ps5-payload-websrv v0.27,ps5-payload-shsrv v0.18,Apollo Save Tool (apollo-psp) v2.0.4,PS5 App Dumper 1.04 Beta,Y2JB Updater,Neogeo 2 ps5,yarpe(Yet another Ren’Py PlayStation exploit) v2.2.2,ZGloom-Vita-SDL v3.0,ARK-4 v1762720018,Apollo Save Tool-Vita(apollo-vita) v2.0.4,Emu4VitaPlus v0.50_2025.11.9,UDPBD-for-XEBP 2.9.7.1,DKWDRV 1.7.6g,Ultrahand Overlay v2.1.6,NX Venom 9.0.1,NetPass v1.2.7,TinyWiiBackupManager v4.3.0,Tera Finder 4.3.6,Eden v0.0.4-rc2,PCSX2 v2.5.280,RetroArch 1.22.0,SpeccySE Version 1.7b,hydra v0.2.3→→→この記事の続きを読む
-GameGaz Daily 2025.11.10 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -18448,64 +18539,6 @@ GameGaz Daily 2025.11.10 first appeared on 大人のためのゲーム講座.</s
     業務用のコメの値段が倍になりました。 - Every…</span>
                   </div>
                   <img src="https://cdn.image.st-hatena.com/image/scale/c748da9a6c12028f0a7bd0b1baa383e7f00bf863/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20251110%2F20251110091855.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2025-11-09</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2025/11/10/100000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>RubyWorld Conference 2025 Day 4 だった。
-美祢から長崎に移動して、長崎を少し歩いて回った。毎日運転していると疲れるので、長崎では2泊して、明日は1日運転を休む日にする。
-
-昨日と移動距離はそんなに変わらないけど、高速移動できて結構楽だった。 pic.twitter.com/nrVkDmmMew
-— 🎹 (@p_ck_) November 9, 2025
-   
-今日はずっと高速だし100km/h出せる区間も多かったので、あまり時間がかからなくて比較的楽だった。
-美祢から長崎への移動はほぼまっすぐ移動した。
-
-今日の最初のチェックインポイントは古賀SA。
-福岡に来たらやっぱり豚骨ラーメン! 有名店らしいよ pic.twitter.com/wgvAgP0qtF
-— 🎹 (@p_ck_) November 9, 2025
-   
-途中古賀SAに寄ってお昼休憩にした。福岡の有名な豚骨ラーメン屋でラーメンを食べたのだけど、この味は岡山でも食べたことがあるね。
-古賀SAでお土産にもち吉のいなりあげもちを買った。 https://www.mochikichi.co.jp/products/detail/09705
-前から福岡に行く度、列車内の広告とかで見かけて気になっていたのだけど、売っているところに行ったことがなく、実物を初めて見かけた。
-買ってから知ったのだけど、もち吉は岡山にも店舗があるみたい。おいしかったら気軽に買いに行けると捉えよう...。
-penguin-aqua.jp
-高速を降りて最初の目的地は、長崎ペンギン水族館。
-ペンギンがたくさんいて、水槽をいろんな角度から見ることができて楽しかった。
-ペンギンのほかにも水生生物が色々展示されていた。特にゴンズイがいたのが良かった。
-
-ゴンズイがいて大変良かった。玉になってない展示は初めて見たけど、これもいいものですね pic.twitter.com/8B65vUGz7m
-— 🎹 (@p_ck_) November 9, 2025
-   
-ゴンズイは水族館や博物館で展示されている生き物で一番好きと言っても過言ではない。だいたい大量のゴンズイでゴンズイ玉として展示されていることが多いのだけど、ここでは少数で少し群れる程度で展示されていた。それはそれで個々を観察できてかわいい。
-ペンギン水族館は長崎市街地からも近くて、車で20分弱ですぐに宿まで行けた。
-宿についたのは16時前だったので、近くを散策して回っていた。
-長崎駅でお土産を買い求めた後、出島に行った。
-
-出島の中に出島があるのめちゃくちゃいい pic.twitter.com/A38ZdsQQ4q
-— 🎹 (@p_ck_) November 9, 2025
-   
-出島の中にミニ出島があるのが良かった。でも再帰は1段しかしていなくて少し残念。
-mixi.social
-夕飯はちゃんぽんを食べた。なかなかおいしくてよかった。
-荷物をぶら下げるためにカラビナを買った。
-最近は無印の小さいショルダーバッグを愛用しているのだけど、荷物が増えた時にレジ袋やエコバッグを手に持つことが多くて少しだるかった。そういう袋をカラビナでショルダーバッグからぶら下げるようにしてみた。
-歩くと袋が揺れるので安定性が悪いけど、位置を調節すれば手に持つより良いかなと思う。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901315379820/1762736402" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -20769,7 +20802,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-02-07T12:02:03.895Z">2026-02-07T12:02:03.895Z</time>
+    <time id="build-timestamp" datetime="2026-02-07T13:16:16.182Z">2026-02-07T13:16:16.182Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
