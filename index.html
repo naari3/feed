@@ -18499,38 +18499,6 @@ Pixel Watchを3から4に変えましたが、毎回Suicaの移動に手間が�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GNOME 49でX11のサポートがドロップされるので対応した</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/11/12/193458" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>GNOME 49が出た。
-japan.zdnet.com
-自分が普段使っているopenSuSE Tumbleweedもこれに追従してGNOMEのバージョンが上がった。いつものようにzypper updateして再起動したところGNOMEが起動しなくなってしまった。しょうがないのでrecovery modeで起動してrootで作業する。
-よく調べると、GNOME 49ではX11のサポートがドロップされ、次のGNOME 50では完全にX11非対応になるという。その影響を早速喰らったようだ。
-ログイン画面にすら辿りつけないのでディスプレイマネージャであるgdmの問題を疑ったが、結局gnome-sessionの問題だった。
-対処法
-zypper install -f gnome-session gnome-shell
-
-
-
-自分は既にWayland対応をやっていたので、別途gnome-session-waylandをインストールしていた。しかし今回gnome-sessionが標準でWayland対応になっており、gnome-session-waylandはリポジトリから消滅していた(が、インストールされたままの状態になっていて競合状態になっていた)。これでうまくgnomeのsessionを起動できなくなり、gdmもうまく動かなかったものと思われる(systemctl status display-managerしても特に異常を発見できなかった)。根本的な原因は不明なまま。
-感想
-先んじてWaylandをインストールしていると突然壊れる？という変な壊れ方だった。治ったからいいけど、原因調査は難しかった。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901317473115/1762943698" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20788,7 +20756,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-02-09T22:08:39.434Z">2026-02-09T22:08:39.434Z</time>
+    <time id="build-timestamp" datetime="2026-02-09T23:10:17.500Z">2026-02-09T23:10:17.500Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
