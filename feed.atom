@@ -2,10 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-09T00:06:47.038Z</updated>
+    <updated>2026-02-09T01:31:17.986Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-02-08]]></title>
+        <id>hatenablog://entry/17179246901352493083</id>
+        <link href="https://commits.hatenablog.com/entry/2026/02/09/100000"/>
+        <updated>2026-02-09T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[自宅PCにリモートデスクトップする環境を整えた。ずっとやろうと思って先延ばしにしていたのだけど、1週間家を空けることになったのでその前にやっておきたかった。
+ホストとなるWindowsデスクトップにRDPするのが基本。このためにWindows Proを買った。
+ただしホストのデスクトップマシンを常に起動しておくのもあまり気持ちが良くないので、別途Wake on LAN (WoL)用にRaspberry Piを用意した。これはだいぶ前に買ったRaspberry Pi 4 model Bで、引っ越しに伴って配線するのが面倒で放置されていたやつ。
+WoL用Raspberry Piは特殊なことはほとんど何もしていない。wakeonlanコマンド(と後述するtailscale)をインストールしたぐらい。
+Raspberry Piは数年起動していなかったので、OSを焼き直した。まともに稼働しているPCでSDカードリーダーがついているマシンがなく、またSDカードリーダーがそのへんに転がっていると思っていたら案外持っていなかったので、電気屋で急遽買った。
+mixi.social
+ホストでのWoLは昨晩有効にしたのだけど、そうしたら1時間おきにPCがスリープから復帰するようになってしまい、睡眠が邪魔されまくっていた。
+1時間に1回しかデバッグの機会が巡ってこなくて解決が大変だったのだけど、どうやら無線デバイスのWoL待ち受けを有効にしていたのが悪さをしていたようだった。デスクトップPCに有線LANを挿してそちらで通信をさせて、無線側のWoLを切ることでこの問題は解決できた。
+wakeonlanコマンドを実行するRaspberry Piには、このままだと家の中のネットワークからしか到達できない。家の外からアクセスするために、tailscaleを導入した。Raspberry Pi, ホストWindows、クライアントWindowsの全てにtailscaleを入れている。ホストWindowsにはtailscaleは多分必須ではないのだけど、tailscaleがないとホスト名でアクセスしづらいので入れることにした。
+RDPを使っているうえでの問題点に、PowerToysによるキーのリマップと相性が悪いことがあった。
+CapslockをControlに入れ替えているのだけど、CapslockでのControlが効かなくなっていた(Capslockとして動くわけでもない)。
+適当にググっていると似たような事例があり、RDP上でのキーボード入力を処理する係をホストからクライアントに変えることで解決した。
+pg.hatenadiary.com
+と思ったのだけど、クライアントで処理する設定にすると今度は別のリマップが動かなくなった。具体的には右Shiftを全角半角キーに入れ替えているもの。これは処理をホストで行っているときには動いていた。
+どうやらこれらを両立するのは難しそうなので、RDPしているときはクライアントのPowerToysを切って、ホスト側でキー入力を処理させることにした。それによって問題なく動作した。
+WoLを叩いたりPowerToysを終了したりRDPを繋いだり色んな処理が必要でだいぶだるかったので、適当にバッチファイルを書くことで一発で全部を実行するようにした(Claude作)。
+@echo off
+echo Waking up remote PC...
+wsl ssh pocke@raspi "wakeonlan ホストのMACアドレス"
+
+echo Waiting for host...
+:wait
+ping -n 1 -w 1000 ホストのホスト名 >nul 2>&1
+if errorlevel 1 goto wait
+echo Host is up!
+timeout /t 1 /nobreak >nul
+
+taskkill /im PowerToys.exe /f >nul 2>&1
+timeout /t 1 /nobreak >nul
+
+mstsc /v:ホストのホスト名
+
+start "" "C:\Users\USER_NAME\AppData\Local\PowerToys\PowerToys.exe"
+これで家の外からでも一発でデスクトップPCを起動してRDPできる。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[耐障害性向上のための東京非経由回線を開通]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=34967</id>
@@ -12457,41 +12500,6 @@ GameGaz Daily 2025.11.12 first appeared on 大人のためのゲーム講座.]]>
 Nintendo Switch 1&2 システムバージョン 21.0.0 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Aliexpressで超音波カッターがめちゃくちゃ安いぞ！！急げ！！]]></title>
-        <id>hatenablog://entry/17179246901316827271</id>
-        <link href="https://nomolk.hatenablog.com/entry/2025/11/11/221918"/>
-        <updated>2025-11-11T13:19:18.000Z</updated>
-        <summary type="html"><![CDATA[Aliexpressが11/20までシングルデーセールという年イチのでかいセールをやってまして、先日こういう記事を書いたのですが
-nomolk.hatenablog.com
-教えてもらったので皆さんにも教えます。
-超音波カッターとは
-超音波カッターとは、カッターナイフの刃先が超音波で高速振動して、そのエネルギーで硬いものもめちゃめちゃ切れる！！みたいな工具です。
-今回安いやつ
-JAKEMYという工具メーカーのJM-Y10っていう製品です。
-
-これまで超音波カッターは５万円とかするイメージだったのが、通常価格でも３万円弱と比較的リーズナブル。
-カッターで切れないものがわりと切れる
-3DプリンタのPLAが切れる（※普通のカッターだとけっこう辛い）
-プラモデルのランナーが超切れる
-厚手のゴムシートがスルスル切れる
-カッティングマットの上で切るとカッティングマットごと切れる
-木材も切れるけど5mm厚とかあると切り口が焦げる
-みたいな感じでした。
-どんなものが切れるかはメーカーの動画で見てみてください。
-www.youtube.com
-何らかのプラスチック板？塩ビ板かな？ガラスエポキシ基板が切れるのやばいプラモデルのランナー
-他にカーボンファイバー、アクリル、革、木材などもいけると書いてあります。
-どのくらい安いのか
-複数のショップで売られてますが、ここでは販売数の多いこちらをおすすめしておきます。
-
-JAKEMY JM-Y10 PRO 2 in 1 Powerful ultrasonic cutting machine DIY electric carving tools Industrial cutting utility tool
-デフォルトの1,283円のは替え刃なので、Colorで「Pro」を選んでください。
-実際いくらで買えるのかというと、もともとの価格が28,629円、…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>
