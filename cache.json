@@ -1166,6 +1166,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901352914036",
+          "author": null,
+          "description": "去年の3月から zellij をターミナルマルチプレクサとして使っていたけど、約11ヶ月で結局 tmux に戻した。\nzellijはRust製で設定がKDLで書けて、UIもモダンでめちゃくちゃ良かった。locked modeをデフォルトにして Ctrl+g でモード切替するスタイルが気に入っていた。floating paneの完成度はtmuxより進んでいたし、Wasmベースのプラグインシステムにも将来性を感じていた。\nただ、細かく改善しようとするとtmuxのほうが圧倒的に小回りが利く。戻した理由は大きく2つある。\n1つ目はzellijの開発ペースへの不安。v0.42.2からv0.43.0まで4ヶ月リリースがなかったし、v0.43.1（2025年8月）以降もまた止まっている。メインのターミナル環境を更新の不透明なツールに預けるのはちょっと怖かった。\n2つ目は Claude Code との相性。Claude Codeはターミナルで動くAIエージェントなんだけど、tmuxのpane操作やsession管理と組み合わせたい場面がめちゃくちゃ多い。tmuxなら tmux list-panes や tmux send-keys で外部からセッションを操作できる。zellijはCLIからの制御がまだ弱かった（し、スクリプタビリティ全般がtmuxに比べると足りなかった）。\nそしてこのClaude Codeとの相性というのは、単にtmuxを操る側だけの話ではない。tmux configを書く側もClaude Codeに任せられる。実際、今回のリライトはほとんどClaude Codeにやってもらった。「こういう動きにしたい」と伝えるだけでconfigとシェルスクリプトが出てくる。ゼロコンフィグで使いやすいツールという考え方は少し古くなったのかもしれない。細かく設定できるツールをAIで好みに合わ…",
+          "link": "https://blog.nishimu.land/entry/2026/02/10/001806?utm_source=feed",
+          "publishedOn": "2026-02-09T15:18:06.000Z",
+          "wordCount": 502,
+          "title": "zellijからtmuxに戻した",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/fd4612cda45a5476801aad71170c57eda38f2dcf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260210%2F20260210001353.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/fd4612cda45a5476801aad71170c57eda38f2dcf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260210%2F20260210001353.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901352195092",
           "author": null,
           "description": "git worktreeの管理ツールが色々出てきている。git-wtはtmux統合やfzfベースのインタラクティブ選択が便利だし、他にもworktreeの管理をいい感じにするツールはいくつかある。\nただ、こういったツールの紹介を見ていると「worktreeへの移動をどう楽にするか」に注目が集まっている気がする。でも、worktreeにcdする必要ってそもそもあるんだろうか。\nworktreeでやりたいことはコードを書くかAIに書かせるかのどちらかで、だったらworktreeの中でエディタやAIツールを直接起動すればいい。gtrはそれができる。\ngtr editor my-feature    # エディタで開く\ngtr ai my-feature         # AIツールを起動\nディレクトリの移動は発生しない。\n僕のグローバル設定はこう。\ngit config --global gtr.ai.default claude\ngit config --global gtr.editor.default vscode\ngit config --global gtr.copy.includedirs .claude\ncopy.includedirsでworktree作成時に自動コピーするディレクトリを指定できる。.claudeを入れておくとClaude Codeのプロジェクト設定を引き継げるのでめちゃくちゃ便利。\nfzfとの組み合わせ\n折角なので、zshに定義しているfzf連携も紹介する。worktree一覧をfzfで表示して、キーバインドでエディタやAIを直接起動できるようにしている。\n_git_worktree_format() {\n  local root=$1\n  local git_cmd=$2\n  local line path branch mark is_ro…",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-09T15:16:55.348Z</updated>
+    <updated>2026-02-09T16:17:50.167Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -14,6 +14,21 @@
         <summary type="html"><![CDATA[任天堂Switch 2を入手しました。ゲームマシンを買うのはPlayStation 2以来、数十年ぶりと言ってよいでしょう。特別に欲しい理由があったわけではないのですが、メモリ価格の上昇でコンシューマー向けゲーム機も値上げするんだろうなと思...]]></summary>
         <author>
             <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[zellijからtmuxに戻した]]></title>
+        <id>hatenablog://entry/17179246901352914036</id>
+        <link href="https://blog.nishimu.land/entry/2026/02/10/001806?utm_source=feed"/>
+        <updated>2026-02-09T15:18:06.000Z</updated>
+        <summary type="html"><![CDATA[去年の3月から zellij をターミナルマルチプレクサとして使っていたけど、約11ヶ月で結局 tmux に戻した。
+zellijはRust製で設定がKDLで書けて、UIもモダンでめちゃくちゃ良かった。locked modeをデフォルトにして Ctrl+g でモード切替するスタイルが気に入っていた。floating paneの完成度はtmuxより進んでいたし、Wasmベースのプラグインシステムにも将来性を感じていた。
+ただ、細かく改善しようとするとtmuxのほうが圧倒的に小回りが利く。戻した理由は大きく2つある。
+1つ目はzellijの開発ペースへの不安。v0.42.2からv0.43.0まで4ヶ月リリースがなかったし、v0.43.1（2025年8月）以降もまた止まっている。メインのターミナル環境を更新の不透明なツールに預けるのはちょっと怖かった。
+2つ目は Claude Code との相性。Claude Codeはターミナルで動くAIエージェントなんだけど、tmuxのpane操作やsession管理と組み合わせたい場面がめちゃくちゃ多い。tmuxなら tmux list-panes や tmux send-keys で外部からセッションを操作できる。zellijはCLIからの制御がまだ弱かった（し、スクリプタビリティ全般がtmuxに比べると足りなかった）。
+そしてこのClaude Codeとの相性というのは、単にtmuxを操る側だけの話ではない。tmux configを書く側もClaude Codeに任せられる。実際、今回のリライトはほとんどClaude Codeにやってもらった。「こういう動きにしたい」と伝えるだけでconfigとシェルスクリプトが出てくる。ゼロコンフィグで使いやすいツールという考え方は少し古くなったのかもしれない。細かく設定できるツールをAIで好みに合わ…]]></summary>
+        <author>
+            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
