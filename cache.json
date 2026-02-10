@@ -1166,6 +1166,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901353202258",
+          "author": null,
+          "description": "長いこと Catppuccinを使っていたけど、飽きてきたのでkanagawaに乗り換えた。ターミナルからエディタまで全部変えた。\nkanagawaの落ち着いた和風のトーンがめちゃくちゃ良い。Catppuccinとは全然方向性が違うけど、こっちのほうが今の気分に合っている。\nただ、デフォルトだと白字がちょっと黄色っぽすぎて調節した。リポジトリのスクリーンショットを見るとそんなことないので何かミスっている可能性はある（まあ自分好みになったからいいか）。",
+          "link": "https://blog.nishimu.land/entry/2026/02/10/230412?utm_source=feed",
+          "publishedOn": "2026-02-10T14:04:12.000Z",
+          "wordCount": null,
+          "title": "カラーテーマをkanagawaに変えた",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/5c21e93eab0c314d66afaead65d17f9349eeea5a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260210%2F20260210230125.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/5c21e93eab0c314d66afaead65d17f9349eeea5a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260210%2F20260210230125.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901352914036",
           "author": null,
           "description": "去年の3月から zellij をターミナルマルチプレクサとして使っていたけど、約11ヶ月で結局 tmux に戻した。\nzellijはRust製で設定がKDLで書けて、UIもモダンでめちゃくちゃ良かった。locked modeをデフォルトにして Ctrl+g でモード切替するスタイルが気に入っていた。floating paneの完成度はtmuxより進んでいたし、Wasmベースのプラグインシステムにも将来性を感じていた。\nただ、細かく改善しようとするとtmuxのほうが圧倒的に小回りが利く。戻した理由は大きく2つある。\n1つ目はzellijの開発ペースへの不安。v0.42.2からv0.43.0まで4ヶ月リリースがなかったし、v0.43.1（2025年8月）以降もまた止まっている。メインのターミナル環境を更新の不透明なツールに預けるのはちょっと怖かった。\n2つ目は Claude Code との相性。Claude Codeはターミナルで動くAIエージェントなんだけど、tmuxのpane操作やsession管理と組み合わせたい場面がめちゃくちゃ多い。tmuxなら tmux list-panes や tmux send-keys で外部からセッションを操作できる。zellijはCLIからの制御がまだ弱かった（し、スクリプタビリティ全般がtmuxに比べると足りなかった）。\nそしてこのClaude Codeとの相性というのは、単にtmuxを操る側だけの話ではない。tmux configを書く側もClaude Codeに任せられる。実際、今回のリライトはほとんどClaude Codeにやってもらった。「こういう動きにしたい」と伝えるだけでconfigとシェルスクリプトが出てくる。ゼロコンフィグで使いやすいツールという考え方は少し古くなったのかもしれない。細かく設定できるツールをAIで好みに合わ…",
@@ -3985,6 +4000,21 @@
       "feedUrl": "https://staff.hatenablog.com/rss",
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901353199376",
+          "author": null,
+          "description": "2026年2月10日 20:48から22:40ごろまでの間、はてなブログ / はてなCMS全体でアクセスしづらい障害が発生していました。原因は過負荷によるもので、現在は復旧しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2026/02/10/224805",
+          "publishedOn": "2026-02-10T13:48:05.000Z",
+          "wordCount": null,
+          "title": "【復旧済み】はてなブログ / はてなCMS全体でアクセスしづらい障害が発生していました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901353199376/1770731285",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901353199376/1770731285"
+        },
         {
           "id": "hatenablog://entry/17179246901352836115",
           "author": null,
