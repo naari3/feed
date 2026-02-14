@@ -78,6 +78,34 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2026-02-13</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2026/02/14/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>daikonvim.connpass.com
+daikon.vim に参加していた。
+ずっと放置していた .vimrc の手入れをしていた。放置しすぎてエラーが出たりしていたのだけど、ちょっとしたテキストやコミットメッセージぐらいにしか使わなくなっていたのでそのままにしてしまっていた。
+Claudeにいい感じにしてもらった結果、ちゃんとVimが動くようになった。
+https://github.com/pocke/dotfiles/commits/master/?since&#x3D;2026-02-13&amp;until&#x3D;2026-02-14
+やっとNeoBundleを卒業することができた。
+.vimrc をなんとかした後は、PCのキーリマップをいじっていた。PowerToysを使ったキーリマップだとRDPとの相性が悪いためRDP中はクライアントのPowerToysを無効にしているのだけど、RDP先ではまともに動くもののRDPしてないウィンドウに切り替えた時にキーリマップなしになってしまっていて困っていた。
+これをレジストリでのリマップに変えようと試行錯誤していた。半分ぐらいうまくいったところで止まっている。
+後半はずっと雑談をしていた。なぜか岡山の話をたくさん聞く回になっていて楽しかった。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901354260154/1771030803" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -18700,61 +18728,6 @@ GameGaz Daily 2025.11.17 first appeared on 大人のためのゲーム講座.</s
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
-              rel="noopener">nomolkのブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">スマホのYouTubeアプリで開始位置つきの動画URLを共有したいときに見るページ</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2025/11/16/215701" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>出先でスマホのYouTubeアプリから再生開始時間指定のURLをコピーしようと思ったのですがどこを探してもその機能がなくて、怒りのあまり踏みしめた足が大地を割り、地鳴りの如き怒気が地表を覆い尽くす。空は真っ赤に灼け、衝撃波で幾多の大都市が瞬時に崩壊。放たれる憤怒はすでに感情にあらず災厄そのもの、宇宙が存続を躊躇うほどの激昂。憤死待ったなし、怒りの寿命はゼロ秒──。
-ってなったので簡単にできるツールを作りました。お使いください。
-YouTubeの開始位置つき動画URLを作るやつ
-
-■YouTube動画のURL
-
-元のURLパラメータを維持する（わかる人向け）
-
-■開始位置
-時
-分
-秒
-
-
-変換クリア
-
-生成されたURL
-再生ページを開くコピー
-
-
-
-
-(function(){
-  const $ &#x3D; s &#x3D;&gt; document.querySelector(s);
-  const urlInput &#x3D; $(&#x27;#yt-url&#x27;);
-  const hInput &#x3D; $(&#x27;#yt-hours&#x27;);
-  const mInput &#x3D; $(&#x27;#yt-minutes&#x27;);
-  const sInput &#x3D; $(&#x27;#yt-seconds&#x27;);
-  const keepQuery &#x3D; $(&#x27;#yt-keep-query&#x27;);
-  const btn &#x3D; $(&#x27;#yt-convert&#x27;);
-  const clearBtn &#x3D; $(&#x27;#yt-clear&#x27;);
-  const resultArea &#x3D; $(&#x27;#yt-result-area&#x27;);
-  const resultInput &#x3D; $(&#x27;#yt-result&#x27;);
-  const openLink &#x3D; $(&#x27;#yt-open&#x27;);
-  const copyBtn &#x3D; $(&#x27;#yt-copy&#x27;);
-  const note &#x3D; $(&#x27;#yt…</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/77e0f197110c5f6e1f0a07e0e4f289e6360ae0f2/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251116%2F20251116215534.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21012,7 +20985,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-02-14T00:06:13.279Z">2026-02-14T00:06:13.279Z</time>
+    <time id="build-timestamp" datetime="2026-02-14T01:30:34.957Z">2026-02-14T01:30:34.957Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

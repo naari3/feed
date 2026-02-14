@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-14T00:06:13.321Z</updated>
+    <updated>2026-02-14T01:30:35.001Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-02-13]]></title>
+        <id>hatenablog://entry/17179246901354260154</id>
+        <link href="https://commits.hatenablog.com/entry/2026/02/14/100000"/>
+        <updated>2026-02-14T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[daikonvim.connpass.com
+daikon.vim に参加していた。
+ずっと放置していた .vimrc の手入れをしていた。放置しすぎてエラーが出たりしていたのだけど、ちょっとしたテキストやコミットメッセージぐらいにしか使わなくなっていたのでそのままにしてしまっていた。
+Claudeにいい感じにしてもらった結果、ちゃんとVimが動くようになった。
+https://github.com/pocke/dotfiles/commits/master/?since=2026-02-13&until=2026-02-14
+やっとNeoBundleを卒業することができた。
+.vimrc をなんとかした後は、PCのキーリマップをいじっていた。PowerToysを使ったキーリマップだとRDPとの相性が悪いためRDP中はクライアントのPowerToysを無効にしているのだけど、RDP先ではまともに動くもののRDPしてないウィンドウに切り替えた時にキーリマップなしになってしまっていて困っていた。
+これをレジストリでのリマップに変えようと試行錯誤していた。半分ぐらいうまくいったところで止まっている。
+後半はずっと雑談をしていた。なぜか岡山の話をたくさん聞く回になっていて楽しかった。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.2.14]]></title>
         <id>https://gamegaz.com/?p=45004</id>
@@ -12666,51 +12684,6 @@ GameGaz Daily 2025.11.17 first appeared on 大人のためのゲーム講座.]]>
         <summary type="html"><![CDATA[調査会社のガートナーは、2026年に企業や組織にとって重要なインパクトを持つ戦略的テクノロジのトップトレンドを発表しました。 The Top Strategic Technology Trends for 2026 were release...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[スマホのYouTubeアプリで開始位置つきの動画URLを共有したいときに見るページ]]></title>
-        <id>hatenablog://entry/17179246901320596480</id>
-        <link href="https://nomolk.hatenablog.com/entry/2025/11/16/215701"/>
-        <updated>2025-11-16T12:57:01.000Z</updated>
-        <summary type="html"><![CDATA[出先でスマホのYouTubeアプリから再生開始時間指定のURLをコピーしようと思ったのですがどこを探してもその機能がなくて、怒りのあまり踏みしめた足が大地を割り、地鳴りの如き怒気が地表を覆い尽くす。空は真っ赤に灼け、衝撃波で幾多の大都市が瞬時に崩壊。放たれる憤怒はすでに感情にあらず災厄そのもの、宇宙が存続を躊躇うほどの激昂。憤死待ったなし、怒りの寿命はゼロ秒──。
-ってなったので簡単にできるツールを作りました。お使いください。
-YouTubeの開始位置つき動画URLを作るやつ
-
-■YouTube動画のURL
-
-元のURLパラメータを維持する（わかる人向け）
-
-■開始位置
-時
-分
-秒
-
-
-変換クリア
-
-生成されたURL
-再生ページを開くコピー
-
-
-
-
-(function(){
-  const $ = s => document.querySelector(s);
-  const urlInput = $('#yt-url');
-  const hInput = $('#yt-hours');
-  const mInput = $('#yt-minutes');
-  const sInput = $('#yt-seconds');
-  const keepQuery = $('#yt-keep-query');
-  const btn = $('#yt-convert');
-  const clearBtn = $('#yt-clear');
-  const resultArea = $('#yt-result-area');
-  const resultInput = $('#yt-result');
-  const openLink = $('#yt-open');
-  const copyBtn = $('#yt-copy');
-  const note = $('#yt…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>
