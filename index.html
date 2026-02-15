@@ -18575,93 +18575,6 @@ GameGaz Daily 2025.11.18 first appeared on 大人のためのゲーム講座.</s
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/aun6june" target="_blank"
-              rel="noopener">aun6june</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">こせんすセンス</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/aun6june/n/n9d44bab9faa1" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>最近scrapbox(cosence)でほぼ毎日日記書いてる。
-たまに特集(テーマについて考えながら文章を書く(だいたい自分のこと))も書く。
-いわゆる鍵垢みたいに攻撃的だけど、ぜひ。
-あなたにも攻撃したいので。
- aun6june逆張り / 広い悪口 / 251117 / 251116 / 251115 / 251114 / 251113 / 251scrapbox.io 
-続きをみる</span>
-                  </div>
-                  <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/96781de45ac41b8f65a2fcec1e64f7f413634b34.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
-              rel="noopener">nomolkのブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Arduino Uno R4で急に書き込みができなくなった時の対処法</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2025/11/18/024032" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Arduino Uno R4 Minimaで作業をしていたら、急に書き込み時にエラーが出るようになり、スケッチの書き替えができなくなってしまいました。
-起きたこと
-コンパイル完了後、「書き込み中」の表示になってから妙に時間がかかった後、こんなメッセージが出ます。
-
-dfu-util 0.11-arduino4
-
-Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
-Copyright 2010-2021 Tormod Volden and Stefan Schmidt
-This program is Free Software and has ABSOLUTELY NO WARRANTY
-Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
-
-Opening DFU capable USB device...
-Device ID 2341:0069
-Run-Time device DFU version 0101
-Claiming USB DFU (Run-Time) Interface...
-Setting Alternate Interface zero...
-Determining device status...
-Failed to retrieve language identifiers
-Failed to retrieve language identifiers
-error get_status: LIBUSB_ERROR_TIMEOUT
-Failed uploading: uploading error: exit status 74
-最後の４行がエラーですね。
-どうもシリアル通信を使ったプログラムで、書き込み時にArduino内の旧スケッチが大量のシリアルを出力しているとこうなるらしいです。
-対処法１
-シリアルモニタをひらいている場合は閉じる
-Arduinoをリセットする（USBケーブルを抜き差しするか、ボード上のRESETボタンを押す）
-再度書き込む
-で直るときは直ります。ただこれでも直らないときもありました。その場合は…
-対処法２
-ボード上のRESETボタンを素早く二度押しする
-
-ボタンが固いので意外に難しい…！
-成功するとボード上のオレンジのLED（「L」って書いてあるやつ）が、ぼやーんとソフトに点滅します
-
-再度書き込む
-これで直ると思います。
-この操作は何？
-RESETボタンを二度押しするとセットアップモードというのに入り、スケッチの実行が行われなくなるみたいです。なので旧スケッチのシリアル出力に邪魔されることなく書き込みができるようですね。
-なお、この二度押しはそもそもボードが認識されなくなってしまった時も使えるようです。
-Arduino UNO R4に書き込めなくなったらDFUモードを使え | jh4vaj
-上記ページによると、そのときは二度押し後に
-
-以上です。</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/bb91ed8e34dad3a82f8b9c619ab28d4d3be0bfd3/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251118%2F20251118020322.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20919,7 +20832,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-02-15T05:25:00.110Z">2026-02-15T05:25:00.110Z</time>
+    <time id="build-timestamp" datetime="2026-02-15T06:14:09.406Z">2026-02-15T06:14:09.406Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
