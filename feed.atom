@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-15T16:02:56.557Z</updated>
+    <updated>2026-02-15T17:05:00.239Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[マークダウン形式でリンクをコピーするブックマークレット]]></title>
+        <id>hatenablog://entry/17179246901354966605</id>
+        <link href="https://diary.hatenablog.jp/entry/2026/02/16/014556"/>
+        <updated>2026-02-15T16:45:56.000Z</updated>
+        <summary type="html"><![CDATA[暗黙知シリーズ。ブックマークレットという言葉自体がもはや死語なんじゃないかという気もするけど。
+今開いてるタブへのリンクを [タイトル](https://example.com) という Markdown 形式でコピーするためのスクリプト。もう10年以上使い続けている。
+javascript:window.prompt(document.title, `[${document.title}](${location.href})`)
+"md link" みたいな名前でブックマークバーに置いておくといい
+プロンプトウインドウが開くので内容をコピって閉じる。OK でも Cancel でもいい。私は Ctrl+C してすぐに ESC 押して閉じてる]]></summary>
+        <author>
+            <name>Write and Run</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[オープンソースの公式サポート終了後も、最小限のコストで安全に脆弱性対応を可能にする「TuxCare ELS」提供開始［PR］]]></title>
         <id>https://www.publickey1.jp/blog/26/tuxcare_elspr.html</id>
