@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-17T13:26:34.403Z</updated>
+    <updated>2026-02-17T14:16:39.905Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[マイクロソフト、.NETランタイムでWebAssemblyの実行をサポートへ、CoreCLRに実装を開始]]></title>
+        <id>https://www.publickey1.jp/blog/26/netwebassemblycoreclr.html</id>
+        <link href="https://www.publickey1.jp/blog/26/netwebassemblycoreclr.html"/>
+        <updated>2026-02-17T15:44:49.000Z</updated>
+        <summary type="html"><![CDATA[マイクロソフトは2月10日付けで公開した.NET 11 Preview 1において、.NETランタイムでWebAssemblyの実行をサポートする作業を開始していることを明らかにしました。 完成は来年の.NET 12かそれ以後の予定 .NE...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中国アリババ、MySQLのブランチとしてInnoDBエンジン、DuckDBカラムナエンジン、ベクトルサーチなどを統合した「AliSQL 8.0」オープンソースで公開]]></title>
+        <id>https://www.publickey1.jp/blog/26/mysqlinnodbduckdbalisql_80.html</id>
+        <link href="https://www.publickey1.jp/blog/26/mysqlinnodbduckdbalisql_80.html"/>
+        <updated>2026-02-17T15:41:21.000Z</updated>
+        <summary type="html"><![CDATA[中国のAlibaba Cloudデータベースチームは、MySQLのブランチとしてOLTP用のInnoDB、OLAP用のDuckDBカラムナエンジン、そしてベクトルサーチ機能を統合した「AliSQL 8.0」をオープンソースで公開しました。 ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OpenClawの何が特別なのか？]]></title>
         <id>6992f38907948b000147e113</id>
