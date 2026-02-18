@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-18T01:31:15.642Z</updated>
+    <updated>2026-02-18T02:57:21.883Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12776,44 +12776,6 @@ Amazon
 Test D…]]></summary>
         <author>
             <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PlayStation Portalアップデート バージョン6.0.1]]></title>
-        <id>https://gamegaz.com/?p=44585</id>
-        <link href="https://gamegaz.com/2025112044585/"/>
-        <updated>2025-11-20T14:24:59.000Z</updated>
-        <summary type="html"><![CDATA[PS Portalシステムソフトウェアアップデート バージョン6.0.1がリリースされました。→→→この記事の続きを読む
-PlayStation Portalアップデート バージョン6.0.1 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scalambroll: Lambroll + Scala.js + Scala CLIでらくらくFaaSしよう]]></title>
-        <id>hatenablog://entry/17179246901323471808</id>
-        <link href="https://blog.3qe.us/entry/2025/11/20/231700"/>
-        <updated>2025-11-20T14:17:00.000Z</updated>
-        <summary type="html"><![CDATA[LambrollというOSSがある。
-github.com
-AWS Lambdaのデプロイを簡単にしてくれるツールで、非常に使い勝手が良いので仕事で愛用している。
-そんなLambrollと、同様に簡単にScalaを書けるようにしてくれるScala CLIとを組み合わせてみたらどうなるだろう、と思って実験してみたところ、すごく簡単にAWS Lambda関数を定義できることがわかったので紹介したい。
-今回利用したソースコードはGitHubに公開している:
-github.com
-Scala CLI
-Scala CLIはScala用のスクリプティングツールで、Node.jsでいうところのDenoみたいな存在。
-scala-cli.virtuslab.org
-blog.3qe.us
-Scala.js
-今回はScalaをJVMにコンパイルするのではなく、JavaScriptをターゲットにトランスパイルして、Node.jsランタイムでLambdaを実行してみようと思う。JSにトランスパイルすることで、高速な起動時間とV8エンジンのパフォーマンスを得ることができる。
-ScalaをJSにトランスパイルするには、Scala.jsを利用すればよい:
-www.scala-js.org
-Scala CLIでは、--jsオプションをつけるだけでScala.jsが起動して勝手にJSにトランスパイルして実行したりパッケージを作ったりしてくれる。今回はこれを使って楽をするという作戦だ。
-下準備
-あらかじめAWSのコンソールでNode.jsランタイムのLambda関数を作成しておき、これをlambroll initで取り込んでおく:
-λ lambroll --profile=windymelt --region=ap-northeast-1 init --function-name=scalambroll-e…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
