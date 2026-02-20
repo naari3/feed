@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-20T22:02:16.770Z</updated>
+    <updated>2026-02-20T23:05:09.987Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12704,37 +12704,6 @@ use code CAA for 10% off anything here, until dec 1.]]></summary>
 Claude が考えたメッセージが入った状態でエディタが上がってくるので、人間が加筆とか修正とかしてコミットするといいと思います。]]></summary>
         <author>
             <name>Write and Run</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ドラゴンクエスト4 なんでもありRTAサブフレームリセット任意コード実行ファミリーベーシック調整チャート]]></title>
-        <id>hatenablog://entry/17179246901324444174</id>
-        <link href="https://pirohiko.hatenablog.com/entry/2025/11/23/190744"/>
-        <updated>2025-11-23T10:07:44.000Z</updated>
-        <summary type="html"><![CDATA[まだ書きかけです！
-このページで利用している株式会社スクウェア・エニックスを代表とする共同著作者が権利を所有する画像の転載・配布は禁止いたします。
-© 1990 ARMOR PROJECT/BIRD STUDIO/SPIKE CHUNSOFT/SQUARE ENIX All Rights Reserved.
-以前に走ったファミリーベーシック不使用チャートはこちら
-pirohiko.hatenablog.com
-RTAの実況動画はこちら
-
-ファミリーベーシック
-ファミリーベーシックには、任意のアドレスを書き換えるPOKEという命令が存在します。これを利用することで、ファミコン本体のメモリをあらかじめ調整し、DQ4に差し替えたあとにも任意コードとして実行可能となります。
-POKE命令
-POKE281,78,143,5,169,90,141,3,5,11,31,32,145,255,9,192,141,4,5,233,45,141,5,5,32,252,155
-281は16進数に直すと0x119で、スタック領域への書き込みとなります。
-スタック領域
-DQ4はリセット時にスタック領域以外の初期化処理を行うため、スタック領域以外のメモリには事前に仕込んでも無駄となる。
-また、スタック領域でも$0100～$0118と$016F～$01FFの範囲はゲームで使用するため、仕込んでも上書きされてしまう。
-よって、$0119～$016Eの86バイトだけが事前の仕込みとして利用可能。
-冒険の書作成
-CRC調整
-サブフレームリセット
-0人PTバグ
-エンディング
-ファミリーベーシック不使用チャート]]></summary>
-        <author>
-            <name>ピロ彦の何か置き場</name>
         </author>
     </entry>
     <entry>
