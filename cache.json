@@ -1415,6 +1415,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901357101576",
+          "author": null,
+          "description": "regional.rubykaigi.org\n出雲Ruby会議01に参加していた。\n出雲や島根の人々が主体となって登壇していて、地域のコミュニティとともに人が育っていく様子が多く見れたのが印象的だった。\n懇親会ではPicoRubyテーブルに突然拉致されて、家で寝かしてあるRaspberry Pi Picoを動かすぞという気持ちが高まった。「部品を何を買ったらいいのかが難しいし、データシートの見方も難しいし…」という話に共感をもらえたのが良かった。難しいよね。\n今回の移動手段は車にした。まだ通ったことのなかった尾道松江線を使った。70km/h制限のところみんなガンガン飛ばす感じで怖い。世の中の人々は高速道路はどこも100km/hが下限だと思っている節があると思う。\nしばらく前に宝くじの定期購入を始めたのだけど、これを一部解約した。\nロト7とジャンボ系を定期購入対象にしていたのだけど、ロト7を定期購入から外した。定期購入の存在を忘れたころに口座に3億円が入っているのが理想だったのだけど、どうも購入のたびにメール通知が来てしまって忘れることができず、買い続ける気持ちがなくなった。まあ購入通知が送られないのも不健全だと思うから、購入通知をなくせないのは理解ができるのだけど…。\nジャンボ系は引き続き定期購入を設定している。とはいえ頻度が年数回なので、これはこれで自分が思っているのと違うような感覚がある。",
+          "link": "https://commits.hatenablog.com/entry/2026/02/22/100000",
+          "publishedOn": "2026-02-22T01:00:00.000Z",
+          "wordCount": 531,
+          "title": "2026-02-21",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901357101576/1771722000",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901357101576/1771722000"
+        },
+        {
           "id": "hatenablog://entry/17179246901354260154",
           "author": null,
           "description": "daikonvim.connpass.com\ndaikon.vim に参加していた。\nずっと放置していた .vimrc の手入れをしていた。放置しすぎてエラーが出たりしていたのだけど、ちょっとしたテキストやコミットメッセージぐらいにしか使わなくなっていたのでそのままにしてしまっていた。\nClaudeにいい感じにしてもらった結果、ちゃんとVimが動くようになった。\nhttps://github.com/pocke/dotfiles/commits/master/?since=2026-02-13&until=2026-02-14\nやっとNeoBundleを卒業することができた。\n.vimrc をなんとかした後は、PCのキーリマップをいじっていた。PowerToysを使ったキーリマップだとRDPとの相性が悪いためRDP中はクライアントのPowerToysを無効にしているのだけど、RDP先ではまともに動くもののRDPしてないウィンドウに切り替えた時にキーリマップなしになってしまっていて困っていた。\nこれをレジストリでのリマップに変えようと試行錯誤していた。半分ぐらいうまくいったところで止まっている。\n後半はずっと雑談をしていた。なぜか岡山の話をたくさん聞く回になっていて楽しかった。",
@@ -2465,23 +2480,7 @@
       "title": "本しゃぶり",
       "feedUrl": "https://honeshabri.hatenablog.com/rss",
       "siteUrl": "https://honeshabri.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/17179246901324879328",
-          "author": null,
-          "description": "また今年も「今年買ってよかったもの」の時期がやってきた。\nということで今年も書くことにした。\n\n5年目になる\n2024年に買って今も使い続けているもの\nShokz OpenRun Pro 2 Mini\nオーディオテクニカ ATH-HL7BT\nAnker Prime Charger (200W, 6 Ports, GaN)\nDirect Action Dust Mk II\nアルインコ フィットネスバイク\n2023年以前に買って今も使い続けているもの\nSony WF-1000XM5\nPhilips Sonicare ExpertClean\nKindle Paperwhite\n食品類\n使わなくなったもの\n終わりに\n最新情報はnoteで\n5年目になる\nまたブラックフライデーの時期になった。俺の中でブラックフライデーといえばこれである。\n\nよく「今年買ってよかったもの」という記事はあるが、実際ずっと使い続けているかどうかはわからない。なので俺は、1年前に買って今も使っているものを紹介するというスタイルをここしばらく続けていて、今回が5年目になる。\n最初の頃はもっと昔のものもどんどん紹介していたが、年を重ねるごとに過去の紹介数も長くなっていくから、全部やるのは無理だ。あと、使わなくなったものは需要がなく、書くと批判を受けやすいことも昨年・一昨年でわかった。\n今回は主に「去年（2024年）買って使い続けているもの」と、「2年以上前から使い続けているもので特におすすめのもの」を紹介する。あとは食品類。\n2024年に買って今も使い続けているもの\nまずは2024年に買って、まだ使っているものを5つほど紹介する。\nShokz OpenRun Pro 2 Mini\n\nShokz (ショックス) OpenRun Pro 2 Mini 骨伝導イヤホン ワイヤレス bluetooth5.3 オープンイヤ…",
-          "link": "https://honeshabri.hatenablog.com/entry/bestbuy-2024",
-          "publishedOn": "2025-11-24T12:47:15.000Z",
-          "wordCount": 1183,
-          "title": "2024年に買って1年後の今も使い続けているもの",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/7e4cbc0df2ff38e84b6daa73cadc26f05b2d8e09/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneshabri%2F20251124%2F20251124211830.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/7e4cbc0df2ff38e84b6daa73cadc26f05b2d8e09/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneshabri%2F20251124%2F20251124211830.jpg"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "honeylab's blog",
@@ -7880,6 +7879,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2026/02/22/design-loop/",
+          "author": null,
+          "description": "Claude Codeを使ったブラウザベースのビジュアル編集ツールとして、design-loopを作りました。\nGitHub: https://github.com/azu/design-loop\n\n左パネルに開発中のサイトのプレビュー、右パネルにClaude Codeのターミナルが表示されます。プレビュー上の要素をクリックすると、その要素のコンポーネント情報やスタイルがClaude Codeに渡されます。\nインストール\n\ncurl -fsSL https://raw.githubusercontent.com/azu/design-loop/main/install.sh | sh\n\n\n使い方\nソースコードがあるディレクトリで、開発サーバーがすでに起動している場合は、--urlでURLを指定するだけで起動できます。\n\ndesign-loop --url http://localhost:3000\n\n\n--commandオプションを使うと、開発サーバーの起動もdesign-loopに任せられます。開発サーバーが起動してからプロキシが自動的に接続します。\n\ndesign-loop --url http://localhost:3000 --command \"npm run dev\"\n\n\n起動すると、プレビューとClaude Codeのターミナルを統合したブラウザUIが開きます。プレビュー上の要素をクリックすると、コンポーネント名やファイルパス、スタイルなどのコンテキストがClaude Codeへの指示に含まれます。\n\nDesign Mode\nv1.3.0で、ブラウザ上でページを直接編集できるDesign Modeを追加しました。\n\n要素をクリックして「どこを変えたい」と伝えるだけでなく、テキストを直接書き換えたり、要素をドラッグ&ドロップで並べ替えたりできます。変更はログとし…",
+          "link": "https://efcl.info/2026/02/22/design-loop/",
+          "publishedOn": "2026-02-22T00:00:00.000Z",
+          "wordCount": null,
+          "title": "design-loop: Claude Codeを使ったブラウザベースのビジュアル編集ツール",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2026/02/17/launchd-ui/",
           "author": null,
