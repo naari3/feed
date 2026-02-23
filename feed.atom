@@ -2,10 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-23T13:26:49.302Z</updated>
+    <updated>2026-02-23T14:16:46.215Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために]]></title>
+        <id>https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html</id>
+        <link href="https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html"/>
+        <updated>2026-02-23T16:15:25.000Z</updated>
+        <summary type="html"><![CDATA[米国商務省傘下のNIST（National Institute of Standards and Technology：米国国立標準技術研究所）は、AIエージェントの技術標準策定に取り組む「AI Agent Standards Initia...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始]]></title>
+        <id>https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html</id>
+        <link href="https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html"/>
+        <updated>2026-02-23T15:11:59.000Z</updated>
+        <summary type="html"><![CDATA[AnthropicはClaude Codeの新機能として、複雑な脆弱性も発見できる「Claude Code Security」をリサーチプレビューとして提供開始したことを発表しました。 人間のセキュリティ専門家のようにコードを分析 Calu...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AIとどう付き合っているか]]></title>
+        <id>hatenablog://entry/17179246901357807020</id>
+        <link href="https://blog.3qe.us/entry/2026/02/23/225340"/>
+        <updated>2026-02-23T13:53:40.000Z</updated>
+        <summary type="html"><![CDATA[人々がAIとの付き合い方を模索している様子がネットに流れてくる。
+文脈:
+tanishiking24.hatenablog.com
+uiuret.hatenablog.com
+自分はLLMの専門家でもなければ、脳が沸騰してメルトダウンする程AIで加速している訳でもない。まあそれなりにAIに物事を調査させたり、アーキテクチャの解説をChatGPTにやらせたり、n8nをFreeBSDマシンにインストールしたり、Claude Codeで仕事のコードを書いたり、Devinに草毟りをやらせたりしている程度。つまり世間一般の一般人よりはAIやっているが、エンジニアの最先端ほど資源を投入しているわけではない、みたいなところ。
+これは日記なので特に何か意見があって書いているわけではないのだが、自分の最近のAIとの付き合い方について考える良い機会だなと思ったので、書きながら頭を整理してみようという魂胆だ。自分の文章は冗長だが、これはLLMを使っているわけではなく、元々自分は自動的にブンブン文章が出てくる人間LLMのような存在なのだ・・・
+なんか色々出てきて不安
+めちゃ雑な言語化だが、言語化できないタイプの不安というのがまず来る。
+ChatGPT3.5が出てきて、コイツあまり賢くないな、と面白がっていたのが数年前のことだ。気付いたら通り一遍のコーディングはできるようになっているし、その品質もどんどん上がってきているので、単純に製品が沢山出てきてそいつらを使いこなせるかどうか不安、またそれらの製品を知りそびれて置いていかれるのが不安、みたいな感情がある。例えばノーコードツールライクなやつだとn8nというのがあるが、Googleも似たようなのを出しているし、基本的に面白いモンが発掘されると各社競ってそのパチモ・・・類似品を作る流れが当たり前になっており、その比較でも結構大変というか頭がフットーしそ…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[色収差再び v1.0.1]]></title>
         <id>hatenablog://entry/17179246901357691042</id>

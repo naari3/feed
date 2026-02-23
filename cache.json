@@ -7460,6 +7460,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901357807020",
+          "author": null,
+          "description": "人々がAIとの付き合い方を模索している様子がネットに流れてくる。\n文脈:\ntanishiking24.hatenablog.com\nuiuret.hatenablog.com\n自分はLLMの専門家でもなければ、脳が沸騰してメルトダウンする程AIで加速している訳でもない。まあそれなりにAIに物事を調査させたり、アーキテクチャの解説をChatGPTにやらせたり、n8nをFreeBSDマシンにインストールしたり、Claude Codeで仕事のコードを書いたり、Devinに草毟りをやらせたりしている程度。つまり世間一般の一般人よりはAIやっているが、エンジニアの最先端ほど資源を投入しているわけではない、みたいなところ。\nこれは日記なので特に何か意見があって書いているわけではないのだが、自分の最近のAIとの付き合い方について考える良い機会だなと思ったので、書きながら頭を整理してみようという魂胆だ。自分の文章は冗長だが、これはLLMを使っているわけではなく、元々自分は自動的にブンブン文章が出てくる人間LLMのような存在なのだ・・・\nなんか色々出てきて不安\nめちゃ雑な言語化だが、言語化できないタイプの不安というのがまず来る。\nChatGPT3.5が出てきて、コイツあまり賢くないな、と面白がっていたのが数年前のことだ。気付いたら通り一遍のコーディングはできるようになっているし、その品質もどんどん上がってきているので、単純に製品が沢山出てきてそいつらを使いこなせるかどうか不安、またそれらの製品を知りそびれて置いていかれるのが不安、みたいな感情がある。例えばノーコードツールライクなやつだとn8nというのがあるが、Googleも似たようなのを出しているし、基本的に面白いモンが発掘されると各社競ってそのパチモ・・・類似品を作る流れが当たり前になっており、その比較でも結構大変というか頭がフットーしそ…",
+          "link": "https://blog.3qe.us/entry/2026/02/23/225340",
+          "publishedOn": "2026-02-23T13:53:40.000Z",
+          "wordCount": null,
+          "title": "AIとどう付き合っているか",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901357807020/1771854820",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901357807020/1771854820"
+        },
+        {
           "id": "hatenablog://entry/17179246901349116755",
           "author": null,
           "description": "Scala 3.8.1がリリースされた。\nscala-lang.org\nこのリリースのお知らせが出た時点で3.8.1が出ているのだが、なぜ3.8.0のときにリリースノートが出なかったかというと、3.8.0にはBetter forに関するリグレッションが発生したため、それが修正されてからリリースノートが出たためだ。\nScala 3.8.1はScala CLIでは以下のようにして起動できる:\n% scala-cli -S 3.8.1\n\n\n\nではさっそく主要な変更を紹介していこう。\nJDKの要求バージョンが8から17に上がった\nこれまでのScalaはJDK 8で動作することができる、つまりJDK 8互換のバイトコードを出力できていたのだが、Scala 3.8からはJDK 17が必要になった。\nこれは主に、Lazy Valを実装する上での都合によるものだ。\nこれについては id:xuwei さんの記事が詳しい:\nxuwei-k.hatenablog.com\n標準ライブラリがScala 3化された\nScala 3はおおまかに2つの部品からなりたっている。すなわち、コンパイラと標準ライブラリだ。前者は昔はDottyと呼ばれていた。そして実は、標準ライブラリ自体はずっとScala 2で書かれていた。\nなぜこれで問題ないかというと、けっきょく標準ライブラリもJARファイルにコンパイルされてJVMバイトコードになっているからであり、Scala 3からでも呼び出すのに(いろいろな工夫のおかげで)あまり不都合がなかったからである。\nではなぜ今回Scala 3で書くことにしたのかというと、おそらくCapture Checkingなどの新機能との兼ね合いだ。Capture CheckingはScala 3で最近導入されたexperimentalな機能であり、これが標準ライブラリでもうまく動作するには…",
@@ -9954,6 +9969,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html",
+          "author": null,
+          "description": "米国商務省傘下のNIST（National Institute of Standards and Technology：米国国立標準技術研究所）は、AIエージェントの技術標準策定に取り組む「AI Agent Standards Initia...",
+          "link": "https://www.publickey1.jp/blog/26/nistaiai_agent_standards_initiative.html",
+          "publishedOn": "2026-02-23T16:15:25.000Z",
+          "wordCount": null,
+          "title": "NIST（米国国立標準技術研究所）がAIエージェントの技術標準を作る取り組み「AI Agent Standards Initiative」発表。相互運用可能かつ安全なイノベーションのために",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html",
+          "author": null,
+          "description": "AnthropicはClaude Codeの新機能として、複雑な脆弱性も発見できる「Claude Code Security」をリサーチプレビューとして提供開始したことを発表しました。 人間のセキュリティ専門家のようにコードを分析 Calu...",
+          "link": "https://www.publickey1.jp/blog/26/anthropicclaude_code_security.html",
+          "publishedOn": "2026-02-23T15:11:59.000Z",
+          "wordCount": null,
+          "title": "Anthropic、ルールベースではなく、コード分析により複雑な脆弱性も発見できる新機能「Claude Code Security」を提供開始",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/github_14.html",
           "author": null,
