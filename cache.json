@@ -7676,6 +7676,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2026-02-25/sptth.html",
+          "author": null,
+          "description": "http://localhost:3000 での開発には限界がある。しかし、本番と同じように https://example.com でアクセスできる環境をローカルに作るには、ドメインの解決、証明書の発行、443 での起動など、少し手間がかかる。そこで、必要な全てを 1 つのツールで行い、様々な開発環境を再現するためのツールを開発したので、紹介する。Jxck/sptth: reverse https proxy (https - sptth) for local developmenthttps://github.com/Jxck/sptth",
+          "link": "https://blog.jxck.io/entries/2026-02-25/sptth.html",
+          "publishedOn": "2026-02-25T00:00:00.000Z",
+          "wordCount": null,
+          "title": "ローカル HTTPS 開発専用ツール SPTTH を公開した",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2026-02-17/conference-know-how.html",
           "author": null,
           "description": "コロナ禍が明け、カンファレンス文化も再開し、コロナ前かそれ以上の頻度で多くのカンファレンスが企画されるようになりました。しかし、コロナ中の断絶によってノウハウの継承が途絶えた部分もあり、後発のイベントが既知の失敗を重ねている場面も見られます。そこで、カンファレンス主催者の有志が集まり、それぞれのノウハウを持ち寄ってまとめた「カンファレンス開催ノウハウ」を作成しました。📔 カンファレンス開催ノウハウ - Google ドキュメント複数人で書いたため、この公開は同時に複数の有志によりブログなどで告知されます。",
