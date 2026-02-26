@@ -78,6 +78,44 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://staff.hatenablog.com/" target="_blank"
+              rel="noopener">はてなブログ開発ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">AtomPub APIで記事の予約投稿に対応しました</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://staff.hatenablog.com/entry/2026/02/26/115115" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>はてなブログでは、記事の投稿・編集などができるAPI「はてなブログAtomPub」を公開しています。このたび、本APIにおいて記事の予約投稿に対応しました。
+これまで、編集画面やスマートフォンアプリからのみ設定可能だった予約投稿が、API経由でも設定できるようになります。
+予約投稿の方法
+記事投稿・更新時のXMLにおいて、下書き状態の記事のapp:control/hatenablog:scheduled要素にyesを指定することで記事を予約投稿する事ができます。記事はupdated要素に指定した時刻に予約投稿されます。
+詳細についてははてなブログAtomPub | Hatena Developer Centerをご参照ください。
+POST https://blog.hatena.ne.jp/{はてなID}/{ブログID}/atom/entry
+
+
+
+  はてなブログ15周年
+  hatenablog
+  
+    はてなブログは2026年11月7日にサービス開始15周年を迎えました。
+  
+  2026-11-07T09:00:00
+  
+    yes
+    
+yes</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901357988690/1772074275" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -18786,30 +18824,6 @@ Amazon
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2025-11-28">2025-11-28</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.lai.so/" target="_blank"
-              rel="noopener">laiso</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Gemini 3 Proはデザインに強いのか？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.lai.so/gemini-3-pro-ui/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Gemini 3 ProとClaude Opus 4.5のリリースが近かったこともあり、世間ではこの2つのモデルの性能比較が盛んに行われてい</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-11-09">2025-11-09</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -21064,7 +21078,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-02-26T01:30:50.202Z">2026-02-26T01:30:50.202Z</time>
+    <time id="build-timestamp" datetime="2026-02-26T02:54:24.131Z">2026-02-26T02:54:24.131Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

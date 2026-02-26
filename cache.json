@@ -4014,6 +4014,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901357988690",
+          "author": null,
+          "description": "はてなブログでは、記事の投稿・編集などができるAPI「はてなブログAtomPub」を公開しています。このたび、本APIにおいて記事の予約投稿に対応しました。\nこれまで、編集画面やスマートフォンアプリからのみ設定可能だった予約投稿が、API経由でも設定できるようになります。\n予約投稿の方法\n記事投稿・更新時のXMLにおいて、下書き状態の記事のapp:control/hatenablog:scheduled要素にyesを指定することで記事を予約投稿する事ができます。記事はupdated要素に指定した時刻に予約投稿されます。\n詳細についてははてなブログAtomPub | Hatena Developer Centerをご参照ください。\nPOST https://blog.hatena.ne.jp/{はてなID}/{ブログID}/atom/entry\n\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<entry xmlns=\"http://www.w3.org/2005/Atom\"\n            xmlns:app=\"http://www.w3.org/2007/app\"\n            xmlns:hatenablog=\"http://www.hatena.ne.jp/info/xmlns#hatenablog\">\n  <title>はてなブログ15周年</title>\n  <author><name>hatenablog</name></author>\n  <content type=\"text/plain\">\n    はてなブログは2026年11月7日にサービス開始15周年を迎えました。\n  </content>\n  <updated>2026-11-07T09:00:00</updated>\n  <app:control>\n    <app:draft>yes</app:draft>\n    <hatenablog:scheduled>yes</hatenablog:scheduled>\n  </app:control>\n</entry>",
+          "link": "https://staff.hatenablog.com/entry/2026/02/26/115115",
+          "publishedOn": "2026-02-26T02:51:15.000Z",
+          "wordCount": 929,
+          "title": "AtomPub APIで記事の予約投稿に対応しました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901357988690/1772074275",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901357988690/1772074275"
+        },
+        {
           "id": "hatenablog://entry/17179246901356536697",
           "author": null,
           "description": "本日、Androidアプリ（3.5.0）のバージョンアップを行い、以下の機能に対応しました\n編集モードに「ブログの設定に従う」項目を追加しました。この項目を選択すると、アプリで新規記事を作成するとき、Web版で設定している編集モードが適用されます。\nアプリからはてなフォトライフにアップロードされた画像を利用できるようになりました。ツールバーの画像ボタンをタップすると「Hatena Blog」フォルダのフォトライフ画像一覧*1が表示されます。こちらの機能追加に伴い、カメラ・ライブラリの画面デザインを変更しています。\nバージョン（3.5.0）では上記のほかいくつかの不具合修正や、内部処理の改善などを行っています。\n最新版のはてなブログAndroidアプリは以下よりご確認ください\nplay.google.com\n今後ともはてなブログをどうぞよろしくお願いいたします。\n*1:https://f.hatena.ne.jp/my/Hatena%20Blog/",
@@ -7875,16 +7890,6 @@
           "publishedOn": "2025-12-05T12:27:39.000Z",
           "wordCount": 522,
           "title": "Codex CLI が Skills をサポート",
-          "imageUrl": null
-        },
-        {
-          "id": "69299d8b73835b0001aa1bec",
-          "author": "laiso",
-          "description": "Gemini 3 ProとClaude Opus 4.5のリリースが近かったこともあり、世間ではこの2つのモデルの性能比較が盛んに行われてい",
-          "link": "https://blog.lai.so/gemini-3-pro-ui/",
-          "publishedOn": "2025-11-28T13:53:21.000Z",
-          "wordCount": null,
-          "title": "Gemini 3 Proはデザインに強いのか？",
           "imageUrl": null
         }
       ]

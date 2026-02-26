@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-26T01:30:50.253Z</updated>
+    <updated>2026-02-26T02:54:24.181Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AtomPub APIで記事の予約投稿に対応しました]]></title>
+        <id>hatenablog://entry/17179246901357988690</id>
+        <link href="https://staff.hatenablog.com/entry/2026/02/26/115115"/>
+        <updated>2026-02-26T02:51:15.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、記事の投稿・編集などができるAPI「はてなブログAtomPub」を公開しています。このたび、本APIにおいて記事の予約投稿に対応しました。
+これまで、編集画面やスマートフォンアプリからのみ設定可能だった予約投稿が、API経由でも設定できるようになります。
+予約投稿の方法
+記事投稿・更新時のXMLにおいて、下書き状態の記事のapp:control/hatenablog:scheduled要素にyesを指定することで記事を予約投稿する事ができます。記事はupdated要素に指定した時刻に予約投稿されます。
+詳細についてははてなブログAtomPub | Hatena Developer Centerをご参照ください。
+POST https://blog.hatena.ne.jp/{はてなID}/{ブログID}/atom/entry
+
+<?xml version="1.0" encoding="utf-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom"
+            xmlns:app="http://www.w3.org/2007/app"
+            xmlns:hatenablog="http://www.hatena.ne.jp/info/xmlns#hatenablog">
+  <title>はてなブログ15周年</title>
+  <author><name>hatenablog</name></author>
+  <content type="text/plain">
+    はてなブログは2026年11月7日にサービス開始15周年を迎えました。
+  </content>
+  <updated>2026-11-07T09:00:00</updated>
+  <app:control>
+    <app:draft>yes</app:draft>
+    <hatenablog:scheduled>yes</hatenablog:scheduled>
+  </app:control>
+</entry>]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-02-25]]></title>
         <id>hatenablog://entry/17179246901358433644</id>
@@ -12746,16 +12777,6 @@ Amazon
 とてもおもしろい本だった。ベルギーについて全然知らなかったのだけど、言語の違う地域で大きく2つに分かれることや、国王が大きな役割を持っていることなどを知れてよかった。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gemini 3 Proはデザインに強いのか？]]></title>
-        <id>69299d8b73835b0001aa1bec</id>
-        <link href="https://blog.lai.so/gemini-3-pro-ui/"/>
-        <updated>2025-11-28T13:53:21.000Z</updated>
-        <summary type="html"><![CDATA[Gemini 3 ProとClaude Opus 4.5のリリースが近かったこともあり、世間ではこの2つのモデルの性能比較が盛んに行われてい]]></summary>
-        <author>
-            <name>laiso</name>
         </author>
     </entry>
     <entry>
