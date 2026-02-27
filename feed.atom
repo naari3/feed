@@ -2,10 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-27T16:06:56.323Z</updated>
+    <updated>2026-02-27T17:09:42.306Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[近況など]]></title>
+        <id>https://note.com/wake_otomad/n/nb1554aef3f62</id>
+        <link href="https://note.com/wake_otomad/n/nb1554aef3f62"/>
+        <updated>2026-02-27T16:58:03.000Z</updated>
+        <summary type="html"><![CDATA[今月はXの表垢が久々に活発に動いていると思います。
+
+
+続きをみる]]></summary>
+        <author>
+            <name>ゎけ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Scalaの複数変数定義とjava.util.Scannerを組み合わせると一気に値を読み取れて便利でかなりUNIX哲学を感じる]]></title>
+        <id>hatenablog://entry/17179246901359242650</id>
+        <link href="https://blog.3qe.us/entry/2026/02/28/013354"/>
+        <updated>2026-02-27T16:33:54.000Z</updated>
+        <summary type="html"><![CDATA[昨日、FOLIOさんのオフィスでイベントがあった。めちゃくちゃ行きたかった!!! くやしい!!! のだが、資料がアップされてきているのでホクホクだ。ありがたい。
+そんな中でこのような資料があった:
+
+#FOLIO_Meetup 登壇させていただきました！こちら登壇資料です！楽しかったな。https://t.co/c9FGcFYP6Y
+— ntaguchi (@nozomitaguchi) 2026年2月27日
+   
+資料の本筋からは脱線するのだが、この中で以下のような記述があった:
+val sc = new java.util.Scanner(System.In)
+val n, t, a = sc.nextInt()
+
+
+
+この記述には唸ってしまった。このコードを実行すると、ユーザが入力した行ごとにIntが読み込まれ、それぞれn、t、aにアサインされる。Scala、こんなことできるのか！
+1
+2
+3
+// => n = 1; t = 2; a = 3
+
+
+
+タネ明かしをしよう（人のコードなのに・・・）。このコードは、Iteratorの特性と、Scalaの構文の妙がうまく噛み合ったクールなコードだ。
+Iterator
+他のたいていの言語がそうであるように、ScalaにもIteratorが実装されている。ScalaのIteratorの実装はJavaの標準ライブラリのIteratorとは独立しているが、基本的なコンセプトは同じだ。
+ちょっとした座学をしよう。Iteratorは、next()とhasNext()を実装するだけで成り立つ便利なコレクションだ。たった2つのメソッドから成り立つのに、驚くべきほど強力な抽象を提供してくれる。Iterator[A]はIterableOnce[A]とIterableOnceOps[A, Iterator, Iterator[A]]のサブクラス…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2026年2月-4】今年もどまんなか！]]></title>
         <id>hatenablog://entry/17179246901358895790</id>
@@ -12734,43 +12780,6 @@ GameGaz Daily 2025.12.1 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>moroishimasaoki</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[どこにいても、あなたはあなた。]]></title>
-        <id>hatenablog://entry/17179246901327015620</id>
-        <link href="https://5desk.hatenablog.jp/entry/2025/11/30/140048"/>
-        <updated>2025-11-30T05:00:48.000Z</updated>
-        <summary type="html"><![CDATA[夕日がどこまで伸びているのか気になってひたすら歩いた幼少期の記憶が微かにあるが、過去の記憶が美化され過ぎていて、本当だったのかよく分からない。というメモを1か月前に残していて、これももはや褪せ始めていると思った。
-自業自得でしかないが、半日以上働き続ける日々を送っていると世界の在り方と自身の在り方に乖離があることに気づく。目の前にある輪郭が分からなくなる。今年いっぱいはなんかこんな調子です。
-映画をわりとたくさん見た。石井聰亙『鏡心』、山下敦弘『天然コケッコー』と『リンダ リンダ リンダ』が特に良かった。石井聰亙経由で8mm映画（および映像）をいろいろ見たいと思っているけど媒体が転載以外なさすぎる。山田勇男は断片的に見た。リンダ リンダ リンダは、見た後に衝動的な感情のようなものがはっきりと自分の中から消え去っていると思って苦しかった。苦しくなる映画大好きだからもっと見たい。
-そうそう（そうそう？）、『トリツカレ男』は今月見た唯一のアニメで、正直全く期待してなかったけどすごく良かった。風神物語に惹かれるものがあったのであれば、絶対に本作を見るべきだし、また、逆も然りって感じです。
-令和やぞ、ではなく、興味がありませんと言ってくれた方が律義でありがたいと思う。興味が無いのにもかかわらず高慢な態度を取られることに苛立ってしまうが、何にも興味がないのは自分自身がそうなのであって、結局のところ自己嫌悪の延長なのかもしれないと思った。
-コミティアへ。
-
-即売会の利点ってたぶん直接交流できるところだと思うけど、単純に話す人もいないし、あっても極力したくないと思った。（それでも会話相手は居てほしいという気持ちはあり、てか何なのこいつ早く死ねよと思う。すみません！）
- 
-以下メモ抜粋
-時間ある富豪が普段何してるのか知りたい
-→知りたい
-全てに理由があるように錯覚してしまう
-→理由があったとしても、大抵はどうでも良いことだよ
-チョコボールの値段150円だったけど買う人いるの
-レスリング名言bot10選
-
-晴れ時計(ダブルラリアット)って既出？
-→なんかどこかで見た気がするんだけど
-もはや音楽室はこれまで
-→絶対にさせない
-睡眠マジで大事
-今あるものは循環する日々の中で生じる諦観のみと思うと、幸福であると共に絶望的だと気付く
-パチ屋に人気ライター登場ってへんなの
- 
-先月のプレイリスト
-
-今月だけど先月]]></summary>
-        <author>
-            <name>3F 音楽室</name>
         </author>
     </entry>
     <entry>

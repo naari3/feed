@@ -78,6 +78,72 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://note.com/wake_otomad" target="_blank"
+              rel="noopener">ゎけ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">近況など</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://note.com/wake_otomad/n/nb1554aef3f62" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今月はXの表垢が久々に活発に動いていると思います。
+
+
+続きをみる</span>
+                  </div>
+                  <img src="https://assets.st-note.com/production/uploads/images/255186397/rectangle_large_type_2_a03c09b2893fb4d1456d58bfbc9a67c2.png?width&#x3D;800" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Scalaの複数変数定義とjava.util.Scannerを組み合わせると一気に値を読み取れて便利でかなりUNIX哲学を感じる</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/02/28/013354" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>昨日、FOLIOさんのオフィスでイベントがあった。めちゃくちゃ行きたかった!!! くやしい!!! のだが、資料がアップされてきているのでホクホクだ。ありがたい。
+そんな中でこのような資料があった:
+
+#FOLIO_Meetup 登壇させていただきました！こちら登壇資料です！楽しかったな。https://t.co/c9FGcFYP6Y
+— ntaguchi (@nozomitaguchi) 2026年2月27日
+   
+資料の本筋からは脱線するのだが、この中で以下のような記述があった:
+val sc &#x3D; new java.util.Scanner(System.In)
+val n, t, a &#x3D; sc.nextInt()
+
+
+
+この記述には唸ってしまった。このコードを実行すると、ユーザが入力した行ごとにIntが読み込まれ、それぞれn、t、aにアサインされる。Scala、こんなことできるのか！
+1
+2
+3
+// &#x3D;&gt; n &#x3D; 1; t &#x3D; 2; a &#x3D; 3
+
+
+
+タネ明かしをしよう（人のコードなのに・・・）。このコードは、Iteratorの特性と、Scalaの構文の妙がうまく噛み合ったクールなコードだ。
+Iterator
+他のたいていの言語がそうであるように、ScalaにもIteratorが実装されている。ScalaのIteratorの実装はJavaの標準ライブラリのIteratorとは独立しているが、基本的なコンセプトは同じだ。
+ちょっとした座学をしよう。Iteratorは、next()とhasNext()を実装するだけで成り立つ便利なコレクションだ。たった2つのメソッドから成り立つのに、驚くべきほど強力な抽象を提供してくれる。Iterator[A]はIterableOnce[A]とIterableOnceOps[A, Iterator, Iterator[A]]のサブクラス…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901359242650/1772210034" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://crabgot.hatenablog.com/" target="_blank"
               rel="noopener">なんて巨大なカニゴット</a></h3>
           <section class="articles-per-source">
@@ -18747,53 +18813,6 @@ Amazon
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://5desk.hatenablog.jp/" target="_blank"
-              rel="noopener">3F 音楽室</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">どこにいても、あなたはあなた。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://5desk.hatenablog.jp/entry/2025/11/30/140048" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>夕日がどこまで伸びているのか気になってひたすら歩いた幼少期の記憶が微かにあるが、過去の記憶が美化され過ぎていて、本当だったのかよく分からない。というメモを1か月前に残していて、これももはや褪せ始めていると思った。
-自業自得でしかないが、半日以上働き続ける日々を送っていると世界の在り方と自身の在り方に乖離があることに気づく。目の前にある輪郭が分からなくなる。今年いっぱいはなんかこんな調子です。
-映画をわりとたくさん見た。石井聰亙『鏡心』、山下敦弘『天然コケッコー』と『リンダ リンダ リンダ』が特に良かった。石井聰亙経由で8mm映画（および映像）をいろいろ見たいと思っているけど媒体が転載以外なさすぎる。山田勇男は断片的に見た。リンダ リンダ リンダは、見た後に衝動的な感情のようなものがはっきりと自分の中から消え去っていると思って苦しかった。苦しくなる映画大好きだからもっと見たい。
-そうそう（そうそう？）、『トリツカレ男』は今月見た唯一のアニメで、正直全く期待してなかったけどすごく良かった。風神物語に惹かれるものがあったのであれば、絶対に本作を見るべきだし、また、逆も然りって感じです。
-令和やぞ、ではなく、興味がありませんと言ってくれた方が律義でありがたいと思う。興味が無いのにもかかわらず高慢な態度を取られることに苛立ってしまうが、何にも興味がないのは自分自身がそうなのであって、結局のところ自己嫌悪の延長なのかもしれないと思った。
-コミティアへ。
-
-即売会の利点ってたぶん直接交流できるところだと思うけど、単純に話す人もいないし、あっても極力したくないと思った。（それでも会話相手は居てほしいという気持ちはあり、てか何なのこいつ早く死ねよと思う。すみません！）
- 
-以下メモ抜粋
-時間ある富豪が普段何してるのか知りたい
-→知りたい
-全てに理由があるように錯覚してしまう
-→理由があったとしても、大抵はどうでも良いことだよ
-チョコボールの値段150円だったけど買う人いるの
-レスリング名言bot10選
-
-晴れ時計(ダブルラリアット)って既出？
-→なんかどこかで見た気がするんだけど
-もはや音楽室はこれまで
-→絶対にさせない
-睡眠マジで大事
-今あるものは循環する日々の中で生じる諦観のみと思うと、幸福であると共に絶望的だと気付く
-パチ屋に人気ライター登場ってへんなの
- 
-先月のプレイリスト
-
-今月だけど先月</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/990a6a73d33a26b41ff524aef93276b67d90e9ac/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffivedesk%2F20251130%2F20251130115025.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -21051,7 +21070,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-02-27T16:06:56.274Z">2026-02-27T16:06:56.274Z</time>
+    <time id="build-timestamp" datetime="2026-02-27T17:09:42.249Z">2026-02-27T17:09:42.249Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
