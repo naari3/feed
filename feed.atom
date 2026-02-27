@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-27T00:07:14.929Z</updated>
+    <updated>2026-02-27T01:30:54.194Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12712,29 +12712,6 @@ GameGaz Daily 2025.12.1 first appeared on 大人のためのゲーム講座.]]><
 GameGaz Daily 2025.11.30 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[書籍を書く時のGitHubを使った原稿管理のしかた]]></title>
-        <id>hatenablog://entry/17179246901326803192</id>
-        <link href="https://satoru-takeuchi.hatenablog.com/entry/2025/11/29/214719"/>
-        <updated>2025-11-29T12:47:19.000Z</updated>
-        <summary type="html"><![CDATA[私はこれまでIT技術についての書籍を十冊以上書いてきました。一般書店に並ぶものから同人誌まで、何百ページのものから数十ページくらいのものまで、さまさまです。
-
-［試して理解］Linuxのしくみ　―実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識【増補改訂版】
-
-作者:武内 覚
-技術評論社
-Amazon
-
-techbookfest.org
-これらの本の原稿はすべてGitHubで管理してきました。本記事は私が長年蓄積してきたGitHubでの書籍の原稿管理方法を共有します。何事も直感に従ってその場のノリで動くという私の性格を強く反映したやり方なので、人によって合う合わないはあると思います。
-私は文書の変更はかなり細かくコミットしていきます。筆が進むうちに書いたところまでコミット、ある程度時間が経てばコミット、です。コードとは違ってコミットを論理的な単位で分割しません。ごちゃごちゃ考えていると執筆の神様は逃げてしまうので、書いたらとりあえず永続化します。また、頻繁にコミットしてると進んだ感が出てきて滅入りにくくなるというメリットもあります。
-コミットメッセージはほとんど書きません。主な理由は、コードと違って「過去にどのような契機でこの部分を変更したのかを正確に知りたい」ということがあまり無いからです。それなのにコードと同じ感覚で原稿を書こうとしても、いつまでたっても進みませんし、そのうち嫌になってきてやめてしまいそうなのでいいことが無いと考えています。
-
-まとまった変更のためにbranchを切るようなことはしません。とくに、関係者に共有する前はPRなんて作らずに、どんどんmainにマージしていきます。例えば章ごとにbranchを分ける…というようなことをしても特にメリットは無いです。作っても後で忘れますし、思い出したときにはconflictだらけになっていたり、すでに不要な文書…]]></summary>
-        <author>
-            <name>覚書</name>
         </author>
     </entry>
     <entry>
