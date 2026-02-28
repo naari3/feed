@@ -584,21 +584,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327887103/1764664790"
-        },
-        {
-          "id": "hatenablog://entry/17179246901327476679",
-          "author": null,
-          "description": "スクリプトファイルに既読フラグ用のユニーク番号を付けたい場合、とある命令にパラメータをつけるしかないなあと考えています。それが以下のコードです。量が少なくて感動してしまいます・・・。しかもベースはchatgpt先生で一瞬です。\nimport os\nimport sys\nimport glob\nimport re\n\ndef func(match):\n\tglobal bit, idx\n\tret = f\"{word} {idx} {bit}\"\n\n\tbit += 1\n\tif bit == 8:\n\t\tbit = 0\n\t\tidx += 1\n\n\treturn ret\n\nword = \"COL\"\nlist = glob.glob(os.path.join(\"*.txt\"))\nbit = 0\nidx = 1\t\t# idxの0番地は空（ブランク）書き込み用\n\nfor file in list:\n\tnew = []\n\n\twith open(file, \"r\") as f:\n\t\tlines = f.readlines()\n\n\tfor line in lines:\n\t\ttmp = re.sub(r'\\b' + word + r\"\\b\", func, line)\n\t\tnew.append(tmp)\n\n\twith open(file, \"w\") as f:\n\t\tf.writelines(new)\n\n\tprint(f\"txt_col... {file}\")\n\nprint(f\"done! idx:{idx} bit:{bit}\")\n結果は「idx:2979 bit:6」なので2979 * 8バイト + 1バイトで23833バイト。SRAM（MAX:32768）で他詰めるとぎりっすね・・・。うーん。",
-          "link": "https://akkera102.hatenablog.com/entry/2025/12/01/143235",
-          "publishedOn": "2025-12-01T05:32:35.000Z",
-          "wordCount": 569,
-          "title": "chatgpt先生あざます",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327476679/1764567406",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327476679/1764567406"
         }
       ]
     },
@@ -7463,6 +7448,21 @@
       "feedUrl": "https://blog.3qe.us/rss",
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901359598598",
+          "author": null,
+          "description": "Scalaのsbtなどでテストを実行していて、特定のテストだけ実行したりしなかったり、ということをやりたい、という状況は多い。その方法を解説する。\n復習: Scalaでのテスト\nテストにタグをつける\nタグの定義\nタグをつける\n実行するテストを選別する\nカスタムタスクを作成する\n実行\nまとめ\nここではテストフレームワークとしてScalaTestを利用する。\nこの記事のコードの完全版は以下のリポジトリで閲覧できる:\ngithub.com\n復習: Scalaでのテスト\nScalaTestでテストを実行するには、まずbuild.sbtにScalaTestへの依存性を追加する:\nval scala3Version = \"3.8.2\"\n\nlazy val root = project\n  .in(file(\".\"))\n  .settings(\n    name := \"scalatest-tagging-exercise\",\n    version := \"0.1.0-SNAPSHOT\",\n    scalaVersion := scala3Version,\n    libraryDependencies += \"org.scalactic\" %% \"scalactic\" % \"3.2.19\", // added\n    libraryDependencies += \"org.scalatest\" %% \"scalatest\" % \"3.2.19\" % Test // added\n  )\n\n\n\nここではテストスタイルとしてFunSuite styleを利用する。\nimport org.scalatest.funsuite.AnyFunSuite\n\nclass MySuite extends AnyFunSuite {\n  test(\"example test\") {\n    asser…",
+          "link": "https://blog.3qe.us/entry/2026/03/01/023443",
+          "publishedOn": "2026-02-28T17:34:43.000Z",
+          "wordCount": 2074,
+          "title": "Scalaでテストにタグ付けして、特定のタグのテストだけ実行したりしなかったりする",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/009394dae514562689a93bafa23cf3d73537198f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260301%2F20260301010752.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/009394dae514562689a93bafa23cf3d73537198f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260301%2F20260301010752.png"
+        },
         {
           "id": "hatenablog://entry/17179246901359242650",
           "author": null,

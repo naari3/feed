@@ -78,6 +78,59 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Scalaでテストにタグ付けして、特定のタグのテストだけ実行したりしなかったりする</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/03/01/023443" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Scalaのsbtなどでテストを実行していて、特定のテストだけ実行したりしなかったり、ということをやりたい、という状況は多い。その方法を解説する。
+復習: Scalaでのテスト
+テストにタグをつける
+タグの定義
+タグをつける
+実行するテストを選別する
+カスタムタスクを作成する
+実行
+まとめ
+ここではテストフレームワークとしてScalaTestを利用する。
+この記事のコードの完全版は以下のリポジトリで閲覧できる:
+github.com
+復習: Scalaでのテスト
+ScalaTestでテストを実行するには、まずbuild.sbtにScalaTestへの依存性を追加する:
+val scala3Version &#x3D; &quot;3.8.2&quot;
+
+lazy val root &#x3D; project
+  .in(file(&quot;.&quot;))
+  .settings(
+    name :&#x3D; &quot;scalatest-tagging-exercise&quot;,
+    version :&#x3D; &quot;0.1.0-SNAPSHOT&quot;,
+    scalaVersion :&#x3D; scala3Version,
+    libraryDependencies +&#x3D; &quot;org.scalactic&quot; %% &quot;scalactic&quot; % &quot;3.2.19&quot;, // added
+    libraryDependencies +&#x3D; &quot;org.scalatest&quot; %% &quot;scalatest&quot; % &quot;3.2.19&quot; % Test // added
+  )
+
+
+
+ここではテストスタイルとしてFunSuite styleを利用する。
+import org.scalatest.funsuite.AnyFunSuite
+
+class MySuite extends AnyFunSuite {
+  test(&quot;example test&quot;) {
+    asser…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/009394dae514562689a93bafa23cf3d73537198f/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260301%2F20260301010752.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/seirontea" target="_blank"
               rel="noopener">セイロンティー</a></h3>
           <section class="articles-per-source">
@@ -18649,64 +18702,6 @@ Amazon
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">chatgpt先生あざます</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2025/12/01/143235" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>スクリプトファイルに既読フラグ用のユニーク番号を付けたい場合、とある命令にパラメータをつけるしかないなあと考えています。それが以下のコードです。量が少なくて感動してしまいます・・・。しかもベースはchatgpt先生で一瞬です。
-import os
-import sys
-import glob
-import re
-
-def func(match):
-	global bit, idx
-	ret &#x3D; f&quot;{word} {idx} {bit}&quot;
-
-	bit +&#x3D; 1
-	if bit &#x3D;&#x3D; 8:
-		bit &#x3D; 0
-		idx +&#x3D; 1
-
-	return ret
-
-word &#x3D; &quot;COL&quot;
-list &#x3D; glob.glob(os.path.join(&quot;*.txt&quot;))
-bit &#x3D; 0
-idx &#x3D; 1		# idxの0番地は空（ブランク）書き込み用
-
-for file in list:
-	new &#x3D; []
-
-	with open(file, &quot;r&quot;) as f:
-		lines &#x3D; f.readlines()
-
-	for line in lines:
-		tmp &#x3D; re.sub(r&#x27;\b&#x27; + word + r&quot;\b&quot;, func, line)
-		new.append(tmp)
-
-	with open(file, &quot;w&quot;) as f:
-		f.writelines(new)
-
-	print(f&quot;txt_col... {file}&quot;)
-
-print(f&quot;done! idx:{idx} bit:{bit}&quot;)
-結果は「idx:2979 bit:6」なので2979 * 8バイト + 1バイトで23833バイト。SRAM（MAX:32768）で他詰めるとぎりっすね・・・。うーん。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901327476679/1764567406" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -20964,7 +20959,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-02-28T17:02:06.906Z">2026-02-28T17:02:06.906Z</time>
+    <time id="build-timestamp" datetime="2026-02-28T18:02:09.485Z">2026-02-28T18:02:09.485Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
