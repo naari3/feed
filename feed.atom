@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-01T20:01:38.625Z</updated>
+    <updated>2026-03-01T21:03:13.436Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12560,53 +12560,6 @@ Coursierを使っている限り、アーティファクトを切り替えるの
 ただし、詳細なバージョンは指定できない。基本的に最新のものが使われると考えておうたほうがよいだろう。どうしても必要なら手元に持ってきて特定のScalaでビルドしても良いだろう。]]></summary>
         <author>
             <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[選択肢ジャンプテーブル作成]]></title>
-        <id>hatenablog://entry/17179246901327887103</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/12/02/170658"/>
-        <updated>2025-12-02T08:06:58.000Z</updated>
-        <summary type="html"><![CDATA[今回もスクリプトファイルのselect-case-endselectでのジャンプテーブルを作成です。GBAでテキストを単語検索（複数）するってーのは5-10VOUNTぐらい取られると思っているのでできないんですよね。なので自前にselectコマンドの横に印字しときます。
-// 選択肢コマンドにCASEオフセットを付与
-// gcc txt_sel.c -s -o txt_sel
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/stat.h>
-#include <stdbool.h>
-#include <assert.h>
-
-//---------------------------------------------------------------------------
-typedef unsigned char   u8;
-typedef char            s8;
-typedef unsigned short u16;
-typedef short          s16;
-typedef unsigned int   u32;
-typedef int            s32;
-
-
-typedef struct {
-	u8*   p;
-	u32   size;
-
-} ST_BIT;
-
-
-typedef struct {
-	s32 max;
-	s32 grp[200];
-	s32 pos[200];
-
-} ST_TBL;
-
-//---------------------------------------------------------------------------
-ST_BIT Bit;
-ST_TBL Tbl;
-
-//------------------------------…]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
