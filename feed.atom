@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-02-28T23:01:56.303Z</updated>
+    <updated>2026-03-01T00:05:04.409Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12639,46 +12639,6 @@ blog.3qe.us
         <summary type="html"><![CDATA[Amazon Web Services（AWS）は、Google CloudやMicrosoft Azureなどのクラウドと高速なプライベート接続を実現する新サービス「AWS Interconnect - multicloud」のプレビュー...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Goroutineよりも高級で、Async/Awaitほど世界を分断しない、Oxという選択肢]]></title>
-        <id>hatenablog://entry/17179246901327248808</id>
-        <link href="https://blog.3qe.us/entry/2025/12/01/205617"/>
-        <updated>2025-12-01T11:56:17.000Z</updated>
-        <summary type="html"><![CDATA[他の言語の非同期プリミティブと比べてもOxかなり良いな〜という記事です。
-先日Ox v1.0.0がリリースされた。Oxはプログラミング言語Scalaの非同期処理ライブラリで、Java 21から搭載されたVirtual Threadの機能を活用して、非同期処理のための道具を使いやすい形で提供してくれる。
-github.com
-今回ついに1系がリリースされたので、改めてOxを紹介し、他の言語における非同期処理プリミティブと何が違うのか、どう便利なのかを紹介していければと思う。OxはScalaのライブラリだが、Scalaを知っている人も知らない人でも読めるようなコードになっているので安心してほしい。Oxの詳細はドキュメントを参考にしてほしい。
-というのも、以前Oxをフィーチャーした記事を書いたことがあったが、まだメジャーバージョンが1に到達していないのもあり、あまり深く踏み込むことはしていなかったのだ。
-従来のScala向け非同期ライブラリのアプローチとOx
-他の言語の非同期処理プリミティブとOx
-Oxの軽量プロセス
-Oxを使ってみよう
-軽量プロセスをスポーンする
-処理を並行実行する
-処理を先勝ちで並行実行する
-処理をタイムアウトさせる
-中断しても必ず処理を実行する
-リソースを必ず解放したい
-コレクションに対する並行処理
-ox.scheduling
-スケジューリング
-ox.scheduling.repeat
-ox.resilience
-リトライ処理を行う
-レートリミットを行う
-サーキットブレーカ
-チャネル
-チャネルをつくる
-チャネルでおくる・もらう
-チャネルをselectする
-ストリーミング処理
-Oxいいんじゃないの
-従来のScala向け非同期ライブラリのアプローチとOx
-Scalaのための非同期処理ライブラリは他にもたくさんあった。Cats Effect、ZIO、Kyo、などな…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
