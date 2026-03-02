@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-01T23:02:11.266Z</updated>
+    <updated>2026-03-02T00:05:29.380Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.3.2]]></title>
+        <id>https://gamegaz.com/?p=45079</id>
+        <link href="https://gamegaz.com/2026030245079/"/>
+        <updated>2026-03-01T23:16:55.000Z</updated>
+        <summary type="html"><![CDATA[VUE Theme Maker BETA,Vue-Icons 1.0.0,Garlic SaveMgr v1.0,garlic-worker v1.0.0,PSGameSpider 2026.03,RPCS3,NSP Auto Installer Maker 2.5,DBIPatcher(DBI) 874,pico8-android 1.6.0,ARMSX2 Nightly Build (DEBUG – 1.0.8) – 20260301-1550,shadPS4 Pre-release-shadPS4-2026-03-01-e5d7dc4,PCSX2 v2.7.148,A7800DS v5.2a,XeCord v0.2.7,ReXGlue SDK v0.2.2→→→この記事の続きを読む
+GameGaz Daily 2026.3.2 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AWS、ログイン不要で「Aurora DSQL」をすぐ試せるプレイグラウンド公開。PostgreSQLとの互換性チェックに]]></title>
         <id>https://www.publickey1.jp/blog/26/awsaurora_dsqlpostgresql.html</id>
@@ -12504,62 +12515,6 @@ Amazonとかだとセールでも13000円台になので、これはヤフーシ
 続きをみる]]></summary>
         <author>
             <name>大内乙打</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[mdocのCLI版コマンドをScala 3で動作させるにはcs launchを使うと便利]]></title>
-        <id>hatenablog://entry/17179246901327934228</id>
-        <link href="https://blog.3qe.us/entry/2025/12/02/204503"/>
-        <updated>2025-12-02T11:45:03.000Z</updated>
-        <summary type="html"><![CDATA[mdocというツールがある。
-scalameta.org
-MarkdownにScalaのコードを書くと、自動的にこれをコンパイルして値が埋まった状態にしてくれるというもので、ドキュメンテーションに非常に便利だ。
-例えば以下のようなコードスニペットがあるとする:
-```scala mdoc
-val x: Any = "hello"
-x match
-case s: String => "string"
-case n: Int => "int"
-```
-
-
-
-これをmdocに通すといい感じにしてくれる:
-```scala
-val x: Any = "hello"
-// x: Any = "hello"
-x match
-case s: String => "string"
-case n: Int => "int"
-// res0: String = "string"
-```
-
-
-
-mdocはCLIツールでも利用できるし、sbt上のプラグインとしても利用できるし、また単純なScalaのライブラリとしてプログラムから呼び出すこともできる。
-CLI版mdoc
-mdocはcs(Coursier)でインストールできる:
-% cs install mdoc
-
-
-
-あとは-inと-outを指定するだけだ:
-% mdoc -in src -out out
-
-
-
-するとsrc以下のディレクトリにある.mdファイルのうち、scala mdocというシンタックスハイライトになっている部分が自動的にコンパイルされ、評価結果がコメントとして挿入される。
-Scalaのメジャーバージョンを指定する
-sbtやscalaのライブラリとして使うときは利用するScalaのバージョンは自明に決まっていたので何も考えることがなかったが、CLI版ではScalaのバージョンについて考えなければならない。
-そして、mdoc自体にはScalaのバージョンを指定する仕組みがない。いろいろ探してみた結果、これはmdoc自体のアーティファクトレベルで固定されているらしい。mdocがScala 2系向けにコンパイルされているなら2系でコンパイルするし、3系向けにコンパイルされているなら3系でコンパイルするということらしい。
-Coursierを使っている限り、アーティファクトを切り替えるのは難しいことではない。csでインストールしたものをそのまま使う代わりに、cs launchを利用すればよい:
-% cs launch org.scalameta:mdoc_3:2.8.0
-
-
-
-ただし、詳細なバージョンは指定できない。基本的に最新のものが使われると考えておうたほうがよいだろう。どうしても必要なら手元に持ってきて特定のScalaでビルドしても良いだろう。]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
