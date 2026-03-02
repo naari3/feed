@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-02T12:04:34.912Z</updated>
+    <updated>2026-03-02T13:23:47.500Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「Amazon Bedrock」でOpenAI API互換を提供開始。オープンウェイトな基盤モデルでOpenAI SDKが利用可能に]]></title>
+        <id>https://www.publickey1.jp/blog/26/amazon_bedrockopenai_apiopenai_sdk.html</id>
+        <link href="https://www.publickey1.jp/blog/26/amazon_bedrockopenai_apiopenai_sdk.html"/>
+        <updated>2026-03-02T15:09:44.000Z</updated>
+        <summary type="html"><![CDATA[Amazon Web Services（AWS）は、同社のAIプラットフォームであるAmazon Bedrockで提供しているMantle推論エンジンで、OpenAI APIの互換APIの提供開始を発表しました。 Amazon Bedroc...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「月刊DBマガジン」が復刻、Kindleで第一弾が販売開始]]></title>
+        <id>https://www.publickey1.jp/blog/26/dbkindle.html</id>
+        <link href="https://www.publickey1.jp/blog/26/dbkindle.html"/>
+        <updated>2026-03-02T15:06:26.000Z</updated>
+        <summary type="html"><![CDATA[翔泳社は「月刊DBマガジン」復刻版第一弾の販売をKindleで開始したと発表しました。 「月刊DBマガジン」は、1999年から2010年にかけてデータベース技術を中心に、当時最新のIT関連情報を紹介していた雑誌です。 発刊元である翔泳社は昨...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2026年2月第4週〕]]></title>
         <id>hatenablog://entry/17179246901360046226</id>
@@ -12391,16 +12411,6 @@ const int switchBackward = 4; //左回転スイッチ用ピン
 AccelStepper stepper(AccelStepper::FULL4WIRE, 8, 10, 9, 11); //制御モジュールへの接続ピン。IN1,I…]]></summary>
         <author>
             <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ヘッドレスCMSってなんだろう？ ～スピードと柔軟性の両立をアジャイルで～]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=33245</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/33245"/>
-        <updated>2025-12-03T00:25:05.000Z</updated>
-        <summary type="html"><![CDATA[【IIJ 2025 TECHアドベントカレンダー 12/3の記事です】 CMS とは CMS とは、Contents Management System（コンテンツ・マネジメント・システム）の略称で、...]]></summary>
-        <author>
-            <name>伊藤 綾夏</name>
         </author>
     </entry>
     <entry>
