@@ -2,10 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-07T07:08:10.464Z</updated>
+    <updated>2026-03-07T08:02:06.815Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[データエンジニアリングにおけるAI活用戦略：縦と横のハーネスエンジニアリング]]></title>
+        <id>hatenablog://entry/17179246901361914257</id>
+        <link href="https://contradiction29.hatenablog.com/entry/2026/03/07/161054"/>
+        <updated>2026-03-07T07:10:54.000Z</updated>
+        <summary type="html"><![CDATA[AIが力を発揮できるように周辺環境を整備するエンジニアリングのことを「ハーネスエンジニアリング」と呼ぶらしい。*1
+AIがBigQuery MCP Serverを経由してBigQueryにアクセスし、データを解釈できるようにしたり
+データ不整合に関する調査ドキュメントを読み取り可能なコンテキストの中に配置し、過去の調査結果を参照できるようにしたり
+AIがログ・メトリクスを閲覧して、エラー探知から修正を行うループを回せるようにしたり
+ハーネスエンジニアリングの出来によりAI利用による生産性は大きく変わるのを、最近は実感している。
+ハーネスエンジニアリングは、データエンジニアリングの領域を労働集約から資本集約の構造へ変えるポテンシャルがある。
+（外部からのイメージに反して）データエンジニアリングの仕事は実に労働集約的だ。
+例：
+
+
+既存のSQLで変な箇所を調査する→労働集約的だ
+dbtで書かれたSQLを変更する→労働集約的だ。コンパイルが通るのを確認し、SQLFluffが通るのを確認し、データ上の変更をチェックする。
+BIに記述された指標定義を確認し、変な箇所がないかを確認する→労働集約だ。個々の作業に高い技量はいらない
+人間からの問い合わせを理解可能な言語に落とし込む→あまりにも労働集約的だ。人間が言語を習得するより、AIが言語を習得する方が早かったのは、人間の知能の限界を示す良い例だろう
+上にあげた操作の一つ一つはAIにより代替可能である。従って、複合的な動作もAIにより代替可能である。
+AIに対する環境の整備は資本の蓄積だ。一度整備した権限はずっと使えるし、Agent Skillが忘れられることはないし、人間と相性が悪いから使えなくなるわけでもない。資本を蓄積し、労働集約故のコストを乗り越えたいと思い、最近はハーネスエンジニアリングに取り組んできた。
+contradict…]]></summary>
+        <author>
+            <name>現実モデリング</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[独り言]]></title>
         <id>hatenablog://entry/17179246901361907938</id>
