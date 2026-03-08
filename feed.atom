@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-08T01:30:43.106Z</updated>
+    <updated>2026-03-08T02:55:24.624Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[色収差再び v1.1.0]]></title>
+        <id>hatenablog://entry/17179246901362223036</id>
+        <link href="https://atarabi.hateblo.jp/entry/2026/03/08/115051"/>
+        <updated>2026-03-08T02:50:51.000Z</updated>
+        <summary type="html"><![CDATA[at.atarabi.com
+v1.1.0に更新した。
+Blur Contrast
+www.youtube.com
+いくら加算だけでなく、比較明合成も扱えるようになったと言っても、それが発揮されるのはサンプリング時の合成時だけで、Steps数を上げないと効果が感じづらかった。
+特にブラーを掛けると必然的に鈍ってしまうので、コテコテ感を出すのがむずかった。そこで、ブラーのコントラストを強調出来るようにした。
+Blur Quality
+ブラーの処理コストが比較的高かったので、CPU処理時はバレない程度に品質を下げていた。しかし、ブラーのコントラストを上げられるようになったことで粗が見えやすくなったので、品質をあげるパラメータを用意した。
+パフォーマンス
+いくつか無駄な処理を発見したので省いた。]]></summary>
+        <author>
+            <name>Atarabi-Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.3.8]]></title>
+        <id>https://gamegaz.com/?p=45110</id>
+        <link href="https://gamegaz.com/2026030845110/"/>
+        <updated>2026-03-08T02:01:08.000Z</updated>
+        <summary type="html"><![CDATA[send_pkg-payload v1.0.5,ARK-4 v1772908660,nx.js v0.0.69,Breeze beta100.6,TinyWiiBackupManager v5.1.23,WiiUDownloader v2.77,minute_minute v1.9,wafel_usb_partition v4.2,BlocksDS v1.18.1,PKHeX 26..03.06,BadStick v1.4-Stable,ReXGlue SDK v0.3.0,PCSX2 v2.7.167,shadPS4 2026-03-07-014b11e→→→この記事の続きを読む
+GameGaz Daily 2026.3.8 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[データエンジニアリングにおけるAI活用戦略：縦と横のハーネスエンジニアリング]]></title>
         <id>hatenablog://entry/17179246901361914257</id>
