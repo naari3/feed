@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-09T04:33:34.191Z</updated>
+    <updated>2026-03-09T05:24:45.493Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12164,25 +12164,6 @@ GameGaz Daily 2025.12.10 first appeared on 大人のためのゲーム講座.]]>
         <summary type="html"><![CDATA[【IIJ 2025 TECHアドベントカレンダー 12/10の記事です】 トレンドを追い続ける大規模ハンズオン研修 IIJでは毎年、Newcomerを対象とした研修として「IIJ Bootcamp」を...]]></summary>
         <author>
             <name>藤本 椋也</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scalaのアーティファクトの公開を楽にするツールscala-pgp-bootstrapを作成した]]></title>
-        <id>hatenablog://entry/17179246901330749860</id>
-        <link href="https://blog.3qe.us/entry/2025/12/10/015333"/>
-        <updated>2025-12-09T16:53:33.000Z</updated>
-        <summary type="html"><![CDATA[Maven Centralへのアーティファクト登録の際に必要になるPGP鍵の生成と公開、そしてGitHub Actionsシークレットへの登録を同時にやってくれるツールとして、scala-pgp-bootstrapを書いた。
-github.com
-使い方は簡単で、Coursierを持っているならcs launch dev.capslock::scala-pgp-bootstrap:<VERSION>（執筆時点最新は0.0.2）で起動できる。依存ライブラリの都合で、Java 21以上が要件に入っている。
-この記事はScala Advent Calendar 2025の10日目の記事です。
-qiita.com
-このツールを書くに至った背景
-Scalaは基本的に*1JVM型の言語であり、アーティファクトはJARファイルで提供されている。
-その配布基盤・ホスティングサービスとして標準的に利用されているのがMaven Centralであり、Javaなどと同じメカニズムでJARファイルをパブリッシュしたりダウンロードしたりしている。要するに、RubyのRubyGems.orgであり、PerlのCPANであり、JavaScriptのnpmjs.comに相当するものが、Maven Centralなのである。
-Maven CentralはPGP署名を要求する
-そのMaven Centralだが、アーティファクトそのものに加えてアーティファクトのPGP署名が要求される。アーティファクトがどの出自であるか、本当に作者からアップロードされたものなのかを証明するために、いわば出生証明書としての役割がこの署名には担わされている。この機構はDebianのソフトウェアリポジトリでも同じである。最近はサプライチェーン攻撃なども話題になっており、ソフトウェアの安全性においてアーティファクトの真正性は重要である…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
