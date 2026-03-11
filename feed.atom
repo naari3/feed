@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-11T06:11:33.086Z</updated>
+    <updated>2026-03-11T07:15:55.613Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Google検索結果での表示イメージを確認できる機能を追加しました]]></title>
+        <id>hatenablog://entry/17179246901363262300</id>
+        <link href="https://staff.hatenablog.com/entry/2026/03/11/161113"/>
+        <updated>2026-03-11T07:11:13.000Z</updated>
+        <summary type="html"><![CDATA[記事の編集画面のプレビュータブからGoogleの検索結果での表示イメージを確認できるようになりました。
+使い方
+記事編集画面の「プレビュー」を選択
+画面上部「検索結果」をクリック
+検索結果プレビュー
+※なお、公開設定が「すべての人に公開」以外の設定されている場合や、詳細設定で検索エンジンに登録させない設定（noindex, nofollow） にしているブログでは、本機能はご利用いただけません]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-03-10]]></title>
         <id>hatenablog://entry/17179246901363470337</id>
