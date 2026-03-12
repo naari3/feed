@@ -726,21 +726,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8910b1ad85787efa0ec254f7a1a5f17843885c23/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkareobana%2F20251225%2F20251225194942.png"
-        },
-        {
-          "id": "hatenablog://entry/6801883189104447863",
-          "author": null,
-          "description": "映像制作ゆる Advent Calendar 2025 の13日目の記事です。\nい\n\nAfter EffectsはCC2019から、エクスプレッションのエンジンを従来のExtendScriptのエンジンからモダンなJavaSriptのエンジン(Windows版はV8)へ切り替えられるようになった。そこら辺の話をメインに、エクスプレッションに関して書いていく。\nExtendScriptの話\nExtendScriptはES3をベースにしているが、独自拡張も多い*1。代表例としてE4X*2があげられる。\nvar xml = <root><a foo=\"bar\">1</a><b>2</b></root>;\nxml.a.@foo; // bar\n\n\n\nこんな感じで、JSX*3のようにXMLを扱える代物である。おそらくFlashのAction Script 3.0でES4の要素を取り入れたので*4、それが回り回ってExtendScriptにも取り入れられたものだと思われる。\nエクスプレッションに関わってくる話だと、演算子のオーバーロード*5がある。\nfunction V(x, y) {\n    this.x = x;\n    this.y = y;\n}\n\nV.prototype[\"+\"] = function (v) {\n    return new V(this.x + v.x, this.y + v.y);\n}\n\nvar v = new V(3, 4);\nvar w = new V(4, 5);\nv + w; // => new V(7, 9)\n\n\n\nのような感じで、演算子の挙動を変えられることが出来て便利である。この仕組みはAEで多分に利用されており、Objectの演算子があらかじめオーバロードされている。\nそのおかげで、\n2 * [3, 4, 5]; // => [6, 8, …",
-          "link": "https://atarabi.hateblo.jp/entry/2025/12/13/005629",
-          "publishedOn": "2025-12-12T15:56:29.000Z",
-          "wordCount": 690,
-          "title": "After Effectsのエクスプレッションの四方山。",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208692334729894112/6801883189104447863/1765554989",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729894112/6801883189104447863/1765554989"
         }
       ]
     },
@@ -9283,16 +9268,6 @@
           "description": "01/14/26 - chromadrops is @ioflow's submission to this week's disquiet junto which includes a generously detailed process log about using modular environment ppooll with grid integration.",
           "link": "https://monome.org/old.html",
           "publishedOn": "2026-01-14T16:11:11.000Z",
-          "wordCount": 2548,
-          "title": "monome",
-          "imageUrl": null
-        },
-        {
-          "id": "./news/251212.md",
-          "author": null,
-          "description": "12/12/25 - we never cease to be amazed at the phenomenal instruments imagined and created and shared. this new one from @etsuko called eterna is astonishing.",
-          "link": "https://monome.org/old.html",
-          "publishedOn": "2025-12-12T16:11:11.000Z",
           "wordCount": 2548,
           "title": "monome",
           "imageUrl": null
