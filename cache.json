@@ -1181,6 +1181,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901364542296",
+          "author": null,
+          "description": "Claude Codeに--permission-mode=autoが追加されてだいぶ安心感は増したけど、結局LLMが判断しているので完璧ではない。Agent SafehouseはmacOSのsandbox-execを使って、カーネルレベルでエージェントのファイルアクセスを制限してくれるやつ。LLMの判断に関係なく、OSが強制的にブロックしてくれる。\nbrew install eugene1g/safehouse/agent-safehouse\nsafehouse -- claude --dangerously-skip-permissions\n\n\n\nsandbox-execはmacOSに元々あるサンドボックスの仕組みで、カーネルがシステムコールの段階でアクセスを拒否する。manページにはDEPRECATEDと書いてあるけど、CLI向けの代替がないので現役で動いている（App Sandboxはアプリ向け）。\nsafehouseはこのsandbox-execにdeny-firstのポリシーを食わせるやつで、作業ディレクトリ以外はすべてブロックされる（~/.sshや~/.awsにはもちろん触れない）。万能なセキュリティ境界ではなく防御層の一つだけど、--dangerously-skip-permissionsを安心して使えるようになるのが大きい。内部ではSandbox Profile Language（SBPL）でポリシーを組み立てていて、safehouse --stdoutで生成されたプロファイルを確認できる。実装の99.8%がシェルスクリプトなので読みやすい。\n面白いのが公式サイトにLLM向けのプロンプトテンプレートが置いてあって、エージェントに自分の環境を検出させてカスタムプロファイルを生成させることができる。サンドボックスの設定をサンドボックスされる側に作らせるという発…",
+          "link": "https://blog.nishimu.land/entry/2026/03/13/212149?utm_source=feed",
+          "publishedOn": "2026-03-13T12:21:49.000Z",
+          "wordCount": 431,
+          "title": "Agent Safehouseを使い出した",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901364542296/1773404693",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901364542296/1773404693"
+        },
+        {
           "id": "hatenablog://entry/17179246901353872661",
           "author": null,
           "description": "EchoというiOS向けのSSHクライアントが出たので、iPhoneからMacBookにSSH接続して開発できるようにした。接続にはTailscaleを使っている。\nEchoはGhosttyのターミナルエンジンを使っていて、TUIの表示がめちゃくちゃ綺麗。$2.99の買い切りでサブスクじゃないのも良い。\ntmuxのセッションにそのままアタッチできるので、MacBookで作業していた続きをiPhoneから継続できる。Claude Codeの操作もふつうにできた。\nセットアップはTailscaleを両デバイスに入れてMacBookのリモートログインを有効にするだけ。ただSSH鍵の設定がちょっと面倒で、Echo側では鍵の生成ができないのでmacOS側で生成した秘密鍵を持ち込む必要がある（しかもパスフレーズなしじゃないとダメ）。\nssh-keygen -t ed25519 -f ~/.ssh/echo_key -N \"\"\n生成した秘密鍵の中身をEchoのSSH Keys設定からインポートすればいい。\nMacBookの蓋を閉じて運用したい場合はスリープを無効にしておく。蓋を閉じるとTailscaleがオフラインになるので。\nsudo pmset -c sleep 0\nsudo pmset -c disablesleep 1\nところで現時点ではEchoで日本語入力ができない。日本語を打ちたいときはiOSの音声入力を使うとわりとなんとかなる。\nソファに寝転がりながらiPhoneで開発できるの、めちゃくちゃ便利。",
