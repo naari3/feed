@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-13T06:12:31.462Z</updated>
+    <updated>2026-03-13T07:16:48.977Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[見出しへのアンカーリンクが簡単にシェアできるようになりました]]></title>
+        <id>hatenablog://entry/17179246901364449212</id>
+        <link href="https://staff.hatenablog.com/entry/2026/03/13/155425"/>
+        <updated>2026-03-13T06:54:25.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは以前より*1、見出し（hタグ）へ自動でid属性を付与する仕組みを提供してまいりました。この度、このid属性を活用し、特定の見出しへ手軽にジャンプできる「アンカーリンク」が利用可能になりました。
+使い方
+個別記事ページを開きます（ブログトップや最新記事、月別アーカイブページでは表示されません）
+
+記事のタイトルをクリックすると個別記事ページを開くことができます
+
+記事内の見出しにマウスカーソルを合わせる（スマートフォンの場合は見出しをタップする）と、横にリンクアイコン  が表示されます。
+アイコンをクリックすると、ブラウザに表示されているURLの末尾に、その見出し専用の記号（#...）が追加されます
+そのままブラウザの「共有」メニューからURLをコピーしたり、SNSでシェアしたりすることで、特定の見出しから始まるリンクとして利用できます。
+機能の有効・無効を切り替えるには
+本機能は、ご利用のプランによって初期設定が異なります。必要に応じて設定をご確認ください。
+はてなCMSをご利用の場合（初期設定：オフ）
+
+利用するには、[デザイン] ＞ [記事] ＞ 見出しアンカーリンク にチェックを入れ、「変更を保存する」をクリックしてください。
+
+その他のはてなブログ各プラン（初期設定：オン）
+
+初期設定で有効になっています。不要な場合は上記設定からオフに変更可能です。
+
+見出しアンカーリンクを有効にする
+
+*1:2022年7月]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ブログ記事において、記事のFacebookシェアボタンが表示されない不具合が発生しています]]></title>
         <id>hatenablog://entry/17179246901364423195</id>
