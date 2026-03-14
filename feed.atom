@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-14T11:03:51.077Z</updated>
+    <updated>2026-03-14T12:02:42.546Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -12063,35 +12063,6 @@ shop.comiczin.jp]]></summary>
         <summary type="html"><![CDATA[【IIJ 2025 TECHアドベントカレンダー 12/15の記事です】 はじめに 最近は何かを調べる際に、検索よりもAIモードやCopilotを使うことが増えています。LLMの利便性は周知のとおりで...]]></summary>
         <author>
             <name>maemura-t</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Compose で Drag and Drop を用いてリストの並び替えを実現する]]></title>
-        <id>hatenablog://entry/17179246901331864763</id>
-        <link href="https://techlife.cookpad.com/entry/2025/12/15/090000"/>
-        <updated>2025-12-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[はじめに
-こんにちは。レシピ事業部でアルバイト中の松本 (@matsumo0922) です。クックパッドでは、作るレシピを日付ごとに管理できる、プラン機能をつい先日リリースしました。この機能は Full-Compose で作成されており、日付間のレシピの移動/並び替えに Drag and Drop を採用しています。Drag and Drop は本来リストの並び替えに用いるものでは無いですが、今だに Compose ではリストの並び替え API が充実していないのに加え、視覚効果が貧弱なものが多いのが現状です。そこで Drag and Drop を応用的に並び替え UI に用いることで、直感的で視覚的にもわかりやすい UI/UX を実現することができました。今回は Compose で Drag and Drop を用いてリストの並び替えを実装する方法と知見をご紹介します。
-プラン機能での Drag and Drop を用いた並び替え
-Drag and Drop の基本
-Drag and Drop（以下 DnD）は、ユーザーが要素をドラッグし、別の位置にドロップすることで、並び替えや移動などの操作を直感的に行える UI パターンです。広義では View 間や画面間、アプリ間でのデータのやり取りが可能な機能のことを指します。そのため一般的なリストパターンである「選択と移動」とは異なる機能であることに注意が必要です。プラン機能では、ある日付に登録されたレシピ（アイテム）を別の日付（セクション）へ視覚的に移動させる必要があったため、通常の並び替えではなく DnD を採用することにしました。
-Compose での DnD は二つの修飾子で実装することができます。
-Modifier.dragAndDropSource
-Modifier.dragAndDropTarget
-それぞれ Dr…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.12.15]]></title>
-        <id>https://gamegaz.com/?p=44719</id>
-        <link href="https://gamegaz.com/2025121544719/"/>
-        <updated>2025-12-14T23:36:26.000Z</updated>
-        <summary type="html"><![CDATA[orbisDiskTool,Free space Analyzer,nx.js v0.0.65,TinyWiiBackupManager v4.9.4,CERBIOS V3.1.0 Beta,CerbiosTool V3.1.0,TimeFixer v1,PCSX2 v2.5.385,ARMSX2 Nightly Build (DEBUG – 1.0.7) – 20251214-2035,Cemu(Android) 0.3,StellaDS v8.1→→→この記事の続きを読む
-GameGaz Daily 2025.12.15 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

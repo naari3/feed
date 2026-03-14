@@ -4362,21 +4362,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/17179246901353839219/1770947102"
-        },
-        {
-          "id": "hatenablog://entry/17179246901331864763",
-          "author": null,
-          "description": "はじめに\nこんにちは。レシピ事業部でアルバイト中の松本 (@matsumo0922) です。クックパッドでは、作るレシピを日付ごとに管理できる、プラン機能をつい先日リリースしました。この機能は Full-Compose で作成されており、日付間のレシピの移動/並び替えに Drag and Drop を採用しています。Drag and Drop は本来リストの並び替えに用いるものでは無いですが、今だに Compose ではリストの並び替え API が充実していないのに加え、視覚効果が貧弱なものが多いのが現状です。そこで Drag and Drop を応用的に並び替え UI に用いることで、直感的で視覚的にもわかりやすい UI/UX を実現することができました。今回は Compose で Drag and Drop を用いてリストの並び替えを実装する方法と知見をご紹介します。\nプラン機能での Drag and Drop を用いた並び替え\nDrag and Drop の基本\nDrag and Drop（以下 DnD）は、ユーザーが要素をドラッグし、別の位置にドロップすることで、並び替えや移動などの操作を直感的に行える UI パターンです。広義では View 間や画面間、アプリ間でのデータのやり取りが可能な機能のことを指します。そのため一般的なリストパターンである「選択と移動」とは異なる機能であることに注意が必要です。プラン機能では、ある日付に登録されたレシピ（アイテム）を別の日付（セクション）へ視覚的に移動させる必要があったため、通常の並び替えではなく DnD を採用することにしました。\nCompose での DnD は二つの修飾子で実装することができます。\nModifier.dragAndDropSource\nModifier.dragAndDropTarget\nそれぞれ Dr…",
-          "link": "https://techlife.cookpad.com/entry/2025/12/15/090000",
-          "publishedOn": "2025-12-15T00:00:00.000Z",
-          "wordCount": 2442,
-          "title": "Compose で Drag and Drop を用いてリストの並び替えを実現する",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815724287123/17179246901331864763/1765756801",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815724287123/17179246901331864763/1765756801"
         }
       ]
     },
@@ -9285,16 +9270,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2025.12.16",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44719",
-          "author": "mamosuke",
-          "description": "orbisDiskTool,Free space Analyzer,nx.js v0.0.65,TinyWiiBackupManager v4.9.4,CERBIOS V3.1.0 Beta,CerbiosTool V3.1.0,TimeFixer v1,PCSX2 v2.5.385,ARMSX2 Nightly Build (DEBUG – 1.0.7) – 20251214-2035,Cemu(Android) 0.3,StellaDS v8.1→→→この記事の続きを読む\nGameGaz Daily 2025.12.15 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025121544719/",
-          "publishedOn": "2025-12-14T23:36:26.000Z",
-          "wordCount": 1744,
-          "title": "GameGaz Daily 2025.12.15",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
