@@ -569,21 +569,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901333676619/1765946375"
-        },
-        {
-          "id": "hatenablog://entry/17179246901333232620",
-          "author": null,
-          "description": "GBAの吸い出しにお金をかけたくない場合、dsLiteとdsマジ◯ンの組み合わせがいいような気もします。\nBIOS（DSとGBA実機両方）に関してはGBAマジ◯ンでセーブデータ（SRAM）保存。16384バイト削ればいいだけです。\nhttps://github.com/mgba-emu/bios-dump/tree/master",
-          "link": "https://akkera102.hatenablog.com/entry/2025/12/16/102408",
-          "publishedOn": "2025-12-16T01:24:08.000Z",
-          "wordCount": 478,
-          "title": "独り言",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901333232620/1765848490",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901333232620/1765848490"
         }
       ]
     },
@@ -9454,6 +9439,36 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/vitewebvoidcloudflare.html",
+          "author": null,
+          "description": "JavaScriptのバンドルツール「Vite」などを開発しているVoidZeroは、ViteからシームレスにデプロイできるViteネイティブなWebアプリケーションプラットフォーム「Void」を発表しました。 VoidはCloudflar...",
+          "link": "https://www.publickey1.jp/blog/26/vitewebvoidcloudflare.html",
+          "publishedOn": "2026-03-15T15:51:14.000Z",
+          "wordCount": null,
+          "title": "ViteネイティブなWebプラットフォーム「Void」発表。Cloudflareの上に構築されたフルスタックの実行環境",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/javascriptvite.html",
+          "author": null,
+          "description": "JavaScriptのESモジュールに対応した高速なビルドツール「Vite」などを開発しているVoidZeroは、Viteを含むJavaScriptの統合開発ツールチェーン「Vite+」アルファ版をオープンソースで公開しました（GitHub...",
+          "link": "https://www.publickey1.jp/blog/26/javascriptvite.html",
+          "publishedOn": "2026-03-15T15:47:38.000Z",
+          "wordCount": null,
+          "title": "JavaScriptの統合ツールチェーン「Vite+」がオープンソースで公開",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/vite_80rustrolldown.html",
+          "author": null,
+          "description": "JavaScriptのESモジュールに対応した高速なビルドツール「Vite」の最新版「Vite 8.0」正式版がリリースされました。  Vite 8.0 is here!The most significant architectural ...",
+          "link": "https://www.publickey1.jp/blog/26/vite_80rustrolldown.html",
+          "publishedOn": "2026-03-15T15:44:30.000Z",
+          "wordCount": null,
+          "title": "ビルドツール「Vite 8.0」正式リリース。Rustベースの新バンドラ「Rolldown」採用でより一貫した動作や最適化を実現",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/astro_60cloudflare_workersrust.html",
           "author": null,

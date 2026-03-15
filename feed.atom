@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-15T13:18:54.014Z</updated>
+    <updated>2026-03-15T14:07:36.725Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ViteネイティブなWebプラットフォーム「Void」発表。Cloudflareの上に構築されたフルスタックの実行環境]]></title>
+        <id>https://www.publickey1.jp/blog/26/vitewebvoidcloudflare.html</id>
+        <link href="https://www.publickey1.jp/blog/26/vitewebvoidcloudflare.html"/>
+        <updated>2026-03-15T15:51:14.000Z</updated>
+        <summary type="html"><![CDATA[JavaScriptのバンドルツール「Vite」などを開発しているVoidZeroは、ViteからシームレスにデプロイできるViteネイティブなWebアプリケーションプラットフォーム「Void」を発表しました。 VoidはCloudflar...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JavaScriptの統合ツールチェーン「Vite+」がオープンソースで公開]]></title>
+        <id>https://www.publickey1.jp/blog/26/javascriptvite.html</id>
+        <link href="https://www.publickey1.jp/blog/26/javascriptvite.html"/>
+        <updated>2026-03-15T15:47:38.000Z</updated>
+        <summary type="html"><![CDATA[JavaScriptのESモジュールに対応した高速なビルドツール「Vite」などを開発しているVoidZeroは、Viteを含むJavaScriptの統合開発ツールチェーン「Vite+」アルファ版をオープンソースで公開しました（GitHub...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ビルドツール「Vite 8.0」正式リリース。Rustベースの新バンドラ「Rolldown」採用でより一貫した動作や最適化を実現]]></title>
+        <id>https://www.publickey1.jp/blog/26/vite_80rustrolldown.html</id>
+        <link href="https://www.publickey1.jp/blog/26/vite_80rustrolldown.html"/>
+        <updated>2026-03-15T15:44:30.000Z</updated>
+        <summary type="html"><![CDATA[JavaScriptのESモジュールに対応した高速なビルドツール「Vite」の最新版「Vite 8.0」正式版がリリースされました。  Vite 8.0 is here!The most significant architectural ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ライトセーバーは自分で作る(2026年)]]></title>
         <id>hatenablog://entry/17179246901365196798</id>
@@ -11936,18 +11966,6 @@ NISAは、驚くほど退屈です。
 GameGaz Daily 2025.12.16 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[独り言]]></title>
-        <id>hatenablog://entry/17179246901333232620</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/12/16/102408"/>
-        <updated>2025-12-16T01:24:08.000Z</updated>
-        <summary type="html"><![CDATA[GBAの吸い出しにお金をかけたくない場合、dsLiteとdsマジ◯ンの組み合わせがいいような気もします。
-BIOS（DSとGBA実機両方）に関してはGBAマジ◯ンでセーブデータ（SRAM）保存。16384バイト削ればいいだけです。
-https://github.com/mgba-emu/bios-dump/tree/master]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
