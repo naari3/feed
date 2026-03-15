@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-15T12:03:36.196Z</updated>
+    <updated>2026-03-15T13:18:54.014Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11948,38 +11948,6 @@ BIOS（DSとGBA実機両方）に関してはGBAマジ◯ンでセーブデー�
 https://github.com/mgba-emu/bios-dump/tree/master]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2025-12-15]]></title>
-        <id>hatenablog://entry/17179246901333031539</id>
-        <link href="https://commits.hatenablog.com/entry/2025/12/16/100000"/>
-        <updated>2025-12-16T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ガーネットの楽譜に手を加えていた。今ピアノでガーネットを練習していて、オリジナルの楽譜に手を入れたうえで弾いているので、手を加えたところを反映するために自分で楽譜を書いている。
-ここ何回かのピアノのレッスンで楽譜にまた手を加えていたのだけど、上から修正したり脳内で記憶しているだけだったりな箇所が増えてきたので、データに修正を入れて印刷し直した。
-書き直していてどう楽譜に落とし込んだらいいのかよくわからないところがあり、Geminiに聞いたらいい感じに教えてくれて便利だった。
-elin.pocke.me
-自分が開発しているゲームの攻略サイトをVercelに乗せているのだけど、無料枠の月間100万requestに届きそうなリクエストが起きていたので対策をいれた。
-使う前はそんなにリクエスト来ないだろと楽観的に見積もっていた。実際1日のPVも1000に満たないぐらいなのだけど、制約となっているEdge Requestsという指標だと30000req/dayぐらい来ている。単純に30日をかけると90万req/dayになるので、もう突破してもおかしくない。
-Edge Requestsは、Vercelにいく全てのHTTPリクエスト数が対象らしい。
-ログを見てみると、どうやらNextのprefetch機能が原因になっていそうだと見えた。というのも、ログを見ると(一番よく使われるであろう機能である)キャラクター一覧画面の上の方に表示されるキャラクターの詳細画面へのアクセスが、一覧画面と同じぐらいの数あったため。これは詳細画面で表示されているリンクにprefetchが飛んでいることでリクエスト数が増しているのだろうと推測できる。
-ということで、デフォルトの画面内に描画された時にprefetchを行う挙動を、マウスホバー時にprefetchを行うように修正した。これでprefetchの回数が減ってリクエスト数が減ると思う。数日後とかにEdge Requestsの指標とPVを見比べて効果を測定したい。
-また、NextのRouter CacheとHTTPのCache-Controlも入れた。基本的にデータを出すだけのWebアプリなので、そこそこ長めのキャッシュを設定した。
-これらも多少効果があると期待している。]]></summary>
-        <author>
-            <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ダンロボ合作を今更振り返る]]></title>
-        <id>https://note.com/nototote/n/n90fa2fafa856</id>
-        <link href="https://note.com/nototote/n/n90fa2fafa856"/>
-        <updated>2025-12-16T00:50:42.000Z</updated>
-        <summary type="html"><![CDATA[これの話をします。
-自分のパートの話しかしません！参加者なんだからそりゃそうだろという感じ。
-続きをみる]]></summary>
-        <author>
-            <name>とッくん@マリ●ペデ●ア管理人</name>
         </author>
     </entry>
     <entry>

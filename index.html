@@ -17567,58 +17567,6 @@ https://github.com/mgba-emu/bios-dump/tree/master</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2025-12-15</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2025/12/16/100000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ガーネットの楽譜に手を加えていた。今ピアノでガーネットを練習していて、オリジナルの楽譜に手を入れたうえで弾いているので、手を加えたところを反映するために自分で楽譜を書いている。
-ここ何回かのピアノのレッスンで楽譜にまた手を加えていたのだけど、上から修正したり脳内で記憶しているだけだったりな箇所が増えてきたので、データに修正を入れて印刷し直した。
-書き直していてどう楽譜に落とし込んだらいいのかよくわからないところがあり、Geminiに聞いたらいい感じに教えてくれて便利だった。
-elin.pocke.me
-自分が開発しているゲームの攻略サイトをVercelに乗せているのだけど、無料枠の月間100万requestに届きそうなリクエストが起きていたので対策をいれた。
-使う前はそんなにリクエスト来ないだろと楽観的に見積もっていた。実際1日のPVも1000に満たないぐらいなのだけど、制約となっているEdge Requestsという指標だと30000req/dayぐらい来ている。単純に30日をかけると90万req/dayになるので、もう突破してもおかしくない。
-Edge Requestsは、Vercelにいく全てのHTTPリクエスト数が対象らしい。
-ログを見てみると、どうやらNextのprefetch機能が原因になっていそうだと見えた。というのも、ログを見ると(一番よく使われるであろう機能である)キャラクター一覧画面の上の方に表示されるキャラクターの詳細画面へのアクセスが、一覧画面と同じぐらいの数あったため。これは詳細画面で表示されているリンクにprefetchが飛んでいることでリクエスト数が増しているのだろうと推測できる。
-ということで、デフォルトの画面内に描画された時にprefetchを行う挙動を、マウスホバー時にprefetchを行うように修正した。これでprefetchの回数が減ってリクエスト数が減ると思う。数日後とかにEdge Requestsの指標とPVを見比べて効果を測定したい。
-また、NextのRouter CacheとHTTPのCache-Controlも入れた。基本的にデータを出すだけのWebアプリなので、そこそこ長めのキャッシュを設定した。
-これらも多少効果があると期待している。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901333031539/1765846803" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/nototote" target="_blank"
-              rel="noopener">とッくん@マリ●ペデ●ア管理人</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">ダンロボ合作を今更振り返る</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/nototote/n/n90fa2fafa856" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>これの話をします。
-自分のパートの話しかしません！参加者なんだからそりゃそうだろという感じ。
-続きをみる</span>
-                  </div>
-                  <img src="https://assets.st-note.com/production/uploads/images/236660258/rectangle_large_type_2_87978f992646ed7c2e8219b6764170ed.png?width&#x3D;800" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19876,7 +19824,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-03-15T12:03:36.131Z">2026-03-15T12:03:36.131Z</time>
+    <time id="build-timestamp" datetime="2026-03-15T13:18:53.973Z">2026-03-15T13:18:53.973Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
