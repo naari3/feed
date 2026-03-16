@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-16T19:21:17.406Z</updated>
+    <updated>2026-03-16T20:07:18.427Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11858,30 +11858,6 @@ dependencyOverrides += "org.scala-lang.modules" %% "scala-xml" % "1.0.6"
 www.maigo-name.tokyo
 www.scala-sbt.org
 eed3si9n.com]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HNSWのビジュアライザを作成した]]></title>
-        <id>hatenablog://entry/17179246901333127998</id>
-        <link href="https://blog.3qe.us/entry/2025/12/17/164524"/>
-        <updated>2025-12-17T07:45:24.000Z</updated>
-        <summary type="html"><![CDATA[この記事ははてなエンジニアアドベントカレンダー2025の15日目の記事だ。遅くなってすみません。
-qiita.com
-HNSWというデータ構造がある。
-en.wikipedia.org
-このデータ構造は、あるクエリした点からの（近似的な）近傍のデータを求めるのに最適化されている。なにが近傍かというと、高次元なベクトル空間における距離（距離空間が定義できればなんでもよいはず）が近い、という意味だ。
-埋め込みベクトル便利だね
-距離の話は簡単なことで、たとえば、3次元ベクトルでは典型的にはユークリッド距離が入れられてユークリッド空間として近いか遠いかを考えられるようになる。
-
-そして、最近は埋め込みベクトルが一般的な技術として浸透してきた。これは文章や画像などの特徴を1000次元くらいの実数ベクトルに押し込んでしまうものだ。
-
-次元がいくら増えてもベクトル同士の距離が定義できることに変わりはないし、埋め込みベクトルは文書間の類似度も空間の距離として保存してくれる。つまり、似た概念はベクトルに埋め込んでも近い距離になるし、あまり関係ない概念はベクトルにすると遠く離れるのだ。
-
-この、おおまかな構造を保存するというのが便利で、例えば通販サイトの商品を埋め込みによりベクトルにしておけば、ベクトルが近いものを選ぶだけで類似商品を探してくることができる。写真をベクトルにしておけば、ベクトルが近いものを選ぶだけで似た被写体やシチュエーションを探すことができる。一度ベクトルという数学的に堅固な構造に変換することで、何も自然言語処理していないのに、ベクトル計算だけで有用な処理ができるのだ。
-最近だと、OpenAIを筆頭に、さくらのAIエンジンとか、CloudflareのWorkers AIには埋め込みベクトル生成用のモデルが用意されていて、それを呼び出すだけでベクトルが帰ってくる。良い時代だ。
-…]]></summary>
         <author>
             <name>Lambdaカクテル</name>
         </author>
