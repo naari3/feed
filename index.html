@@ -17407,39 +17407,6 @@ GameGaz Daily 2025.12.18 first appeared on 大人のためのゲーム講座.</s
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">sbtで衝突している依存性を検出するにはevictedを利用する</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2025/12/17/173520" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>掲題の通り。evictedはプロジェクトの依存性を全て確認し、依存性が衝突していたりbinary incompatibleの可能性があるものを検出できる。
-手元にあった古いプロジェクトで試してみた様子:
-% sbt
-&gt; evicted
-[warn] Found version conflict(s) in library dependencies; some are suspected to be binary incompatible:
-[warn]  * org.scala-lang.modules:scala-xml_2.12:1.2.0 is selected over 1.0.6
-[warn]      +- eu.timepit:refined_2.12:0.9.9                      (depends on 1.2.0)
-[warn]      +- org.scala-lang:scala-compiler:2.12.16              (depends on 1.0.6)
-ちなみに強制的に間接依存ライブラリのバージョンを固定するにはdependencyOverridesを指定することでsbtに強制的な依存関係の上書きを指揮できる。
-dependencyOverrides +&#x3D; &quot;org.scala-lang.modules&quot; %% &quot;scala-xml&quot; % &quot;1.0.6&quot;
-参考文献
-www.maigo-name.tokyo
-www.scala-sbt.org
-eed3si9n.com</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901333774351/1765960520" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -19697,7 +19664,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-03-16T20:07:18.380Z">2026-03-16T20:07:18.380Z</time>
+    <time id="build-timestamp" datetime="2026-03-16T21:10:13.789Z">2026-03-16T21:10:13.789Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-16T20:07:18.427Z</updated>
+    <updated>2026-03-16T21:10:13.834Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11837,29 +11837,6 @@ GameGaz Daily 2025.12.18 first appeared on 大人のためのゲーム講座.]]>
         <summary type="html"><![CDATA[試してみたら思ったより効いたので記念カキコ。]]></summary>
         <author>
             <name>r7kamura.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[sbtで衝突している依存性を検出するにはevictedを利用する]]></title>
-        <id>hatenablog://entry/17179246901333774351</id>
-        <link href="https://blog.3qe.us/entry/2025/12/17/173520"/>
-        <updated>2025-12-17T08:35:20.000Z</updated>
-        <summary type="html"><![CDATA[掲題の通り。evictedはプロジェクトの依存性を全て確認し、依存性が衝突していたりbinary incompatibleの可能性があるものを検出できる。
-手元にあった古いプロジェクトで試してみた様子:
-% sbt
-> evicted
-[warn] Found version conflict(s) in library dependencies; some are suspected to be binary incompatible:
-[warn]  * org.scala-lang.modules:scala-xml_2.12:1.2.0 is selected over 1.0.6
-[warn]      +- eu.timepit:refined_2.12:0.9.9                      (depends on 1.2.0)
-[warn]      +- org.scala-lang:scala-compiler:2.12.16              (depends on 1.0.6)
-ちなみに強制的に間接依存ライブラリのバージョンを固定するにはdependencyOverridesを指定することでsbtに強制的な依存関係の上書きを指揮できる。
-dependencyOverrides += "org.scala-lang.modules" %% "scala-xml" % "1.0.6"
-参考文献
-www.maigo-name.tokyo
-www.scala-sbt.org
-eed3si9n.com]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
