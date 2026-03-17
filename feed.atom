@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-17T03:46:06.496Z</updated>
+    <updated>2026-03-17T04:33:34.519Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026年3月の新機能・機能改善をお知らせします]]></title>
+        <id>hatenablog://entry/17179246901363665141</id>
+        <link href="https://staff.hatenablog.com/entry/2026/03/17/132627"/>
+        <updated>2026-03-17T04:26:27.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログとはてなCMSの両サービスでは日々新機能の開発や機能改善を行っております。本記事では、1ヶ月間に行った両サービスの機能修正や改善についてまとめてお知らせいたします。
+機能修正・改善（はてなブログ、はてなCMS共通）
+構造化データを最適化しました
+記事ページの構造化データを改善しました。description や mainEntityOfPage の追加、はてなCMSでの publisher（発行元・企業ロゴ）設定・出力に対応し、SEO効果の向上が期待できます。
+リンク・定型文の並び替えができるようになりました
+下記機能について、要素の並び替えに対応しました。ドラッグ操作で順番を自由に変更でき、よく使う項目を上位に配置できます。
+リンクモジュール（デザイン設定）
+定型文（記事編集画面）
+はてなCMSの機能修正・改善
+フォームからのメール送信先を複数指定できるようになりました
+CCで複数の宛先を設定でき、チーム内での問い合わせ共有がスムーズになります。
+その他の細かい機能改善
+グローバルヘッダにニックネームを表示
+記事一覧の一括操作ボタンを整理
+インポート画面の画像移行UIを改善
+はてなCMSのテンプレートをタグで絞り込み
+はてなCMS利用中のプラン表示を修正
+年月日別アーカイブページのCMS対応
+今回紹介した改善はこの1ヶ月のごく一部です。
+表には見えにくい細かな修正や、パフォーマンスの向上、将来の新機能に向けた仕込みなど、開発チームでは日々いろいろな取り組みをしています。
+引き続き、はてなブログ・はてなCMSをどうぞよろしくお願いします！]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PS5シーンに大きな動き Linux起動に向けてハイパーバイザー攻略へ]]></title>
         <id>https://gamegaz.com/?p=45150</id>
