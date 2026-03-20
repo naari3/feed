@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-20T16:10:45.410Z</updated>
+    <updated>2026-03-20T17:12:26.306Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[好きを追求した結果嫌いが浮き彫りになっちゃった]]></title>
+        <id>https://note.com/26435/n/n7b93f78a6c3e</id>
+        <link href="https://note.com/26435/n/n7b93f78a6c3e"/>
+        <updated>2026-03-20T16:43:01.000Z</updated>
+        <summary type="html"><![CDATA[ソシャゲの音MAD作るのそこそこ苦労したよねって話 - ハンドルネームを日本語にしたい昔話です。 私が本格的に動画を作り始めた2018年~2020年ごろ、界隈ではデレマスMADやシャニマスMADが地位を築いてt.co 
+この記事のダークサイド的な話
+続きをみる]]></summary>
+        <author>
+            <name>T</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[YouTubeの収益化設定でとまどったところメモ（申請、スパチャ、メンバーシップ編）]]></title>
         <id>hatenablog://entry/17179246901366753596</id>
@@ -11817,31 +11829,6 @@ BIツールにおける認証において、アカウント発行プロセスが
 続きをみる]]></summary>
         <author>
             <name>ざっと</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MaViewer V1.2.0]]></title>
-        <id>hatenablog://entry/17179246901335117041</id>
-        <link href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/21/140336"/>
-        <updated>2025-12-21T05:03:36.000Z</updated>
-        <summary type="html"><![CDATA[自分用ツール。昔のWindowsに入ってた画像ビューワがWin10から入らなくなって、使いやすい自分用のシンプルなビューワーを作ろうと思い立った、ような気がする、8年前に。作ったし使ってたんだけど、紹介してなかったことにさっき気付いた。
-
-readme.txtの概要
-縦方向の表示領域をなるべく確保したシンプルな画像ビューワです。スキャンした本や漫画などを見開きで表示するのに適しています。ZIPやRARなどのアーカイブ(圧縮書庫)を解凍せずにそのまま中の画像を閲覧できます。サムネイル表示のように複数画像を一度に表示することもできます。EPUB, PDF, Text, JSON, HTML, MarkDownなどの一部ドキュメント形式や、MP4動画、MP3オーディオにも対応しています。
-対応フォーマット： zip, rar, 7z, tar, jpg, gif, png, bmp, ico, tiff, emf, wmf, webp, avif, heic, mp4, mp3, wav, ogg, txt, html, htm, json, pdf, css, svg, epub, md, yaml, gitignore
- gif, png, webpはアニメーション可です。アニメーションはシークできます。
-
-ということで、単体の画像を表示できるのはもちろんのこと、スキャンした画像をZIPなどにまとめた書庫をそのまま開ける画像ビューワです。（上の画像は昔うちのサイトがゲームラボに取り上げられた時のスキャン画像）
-キーボードの矢印キーや、マウスクリック、マウスホイールなんかでページ送り、戻しなどできます。
- 
-また、直近のアップデートでEPUB、PDFなどのドキュメントも閲覧できるようになっています(PDFはWebView任せだけど)。青空文庫でダウンロードしたEPUBをどうやって開くねんみたいなときにもどうぞ。
-
-基本的には表示したいデータをドラッグアンドドロップして開いて使うのですが、右クリックメニュー拡張にも対応しているので（アプリ内のMENU追加ボタン押下で拡張）、エクスプローラー等の右クリックから開くことも可能です。
- 
-下記で配布しているのでよろしければ是非お使いください。
-https://www.moreread.net/]]></summary>
-        <author>
-            <name>アプリ置き場</name>
         </author>
     </entry>
     <entry>

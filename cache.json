@@ -3263,21 +3263,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/633a123ff5ddd115d6c55bcae4c41269ba20b96f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnazenaninadesico%2F20251222%2F20251222202451.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901335117041",
-          "author": null,
-          "description": "自分用ツール。昔のWindowsに入ってた画像ビューワがWin10から入らなくなって、使いやすい自分用のシンプルなビューワーを作ろうと思い立った、ような気がする、8年前に。作ったし使ってたんだけど、紹介してなかったことにさっき気付いた。\n\nreadme.txtの概要\n縦方向の表示領域をなるべく確保したシンプルな画像ビューワです。スキャンした本や漫画などを見開きで表示するのに適しています。ZIPやRARなどのアーカイブ(圧縮書庫)を解凍せずにそのまま中の画像を閲覧できます。サムネイル表示のように複数画像を一度に表示することもできます。EPUB, PDF, Text, JSON, HTML, MarkDownなどの一部ドキュメント形式や、MP4動画、MP3オーディオにも対応しています。\n対応フォーマット： zip, rar, 7z, tar, jpg, gif, png, bmp, ico, tiff, emf, wmf, webp, avif, heic, mp4, mp3, wav, ogg, txt, html, htm, json, pdf, css, svg, epub, md, yaml, gitignore\n gif, png, webpはアニメーション可です。アニメーションはシークできます。\n\nということで、単体の画像を表示できるのはもちろんのこと、スキャンした画像をZIPなどにまとめた書庫をそのまま開ける画像ビューワです。（上の画像は昔うちのサイトがゲームラボに取り上げられた時のスキャン画像）\nキーボードの矢印キーや、マウスクリック、マウスホイールなんかでページ送り、戻しなどできます。\n \nまた、直近のアップデートでEPUB、PDFなどのドキュメントも閲覧できるようになっています(PDFはWebView任せだけど)。青空文庫でダウンロードしたEPUBをどうやって開くねんみたいなときにもどうぞ。\n\n基本的には表示したいデータをドラッグアンドドロップして開いて使うのですが、右クリックメニュー拡張にも対応しているので（アプリ内のMENU追加ボタン押下で拡張）、エクスプローラー等の右クリックから開くことも可能です。\n \n下記で配布しているのでよろしければ是非お使いください。\nhttps://www.moreread.net/",
-          "link": "https://nazenaninadesico.hatenablog.jp/entry/2025/12/21/140336",
-          "publishedOn": "2025-12-21T05:03:36.000Z",
-          "wordCount": 394,
-          "title": "MaViewer V1.2.0",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/a8da7d4c09bb69ea989e6b2ad85b8632b7f3d53b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnazenaninadesico%2F20251221%2F20251221134029.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a8da7d4c09bb69ea989e6b2ad85b8632b7f3d53b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnazenaninadesico%2F20251221%2F20251221134029.png"
         }
       ]
     },
@@ -4494,7 +4479,18 @@
       "title": "T",
       "feedUrl": "https://note.com/26435/rss",
       "siteUrl": "https://note.com/26435",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/26435/n/n7b93f78a6c3e",
+          "author": null,
+          "description": "ソシャゲの音MAD作るのそこそこ苦労したよねって話 - ハンドルネームを日本語にしたい昔話です。 私が本格的に動画を作り始めた2018年~2020年ごろ、界隈ではデレマスMADやシャニマスMADが地位を築いてt.co \nこの記事のダークサイド的な話\n続きをみる",
+          "link": "https://note.com/26435/n/n7b93f78a6c3e",
+          "publishedOn": "2026-03-20T16:43:01.000Z",
+          "wordCount": null,
+          "title": "好きを追求した結果嫌いが浮き彫りになっちゃった",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "オタク",
