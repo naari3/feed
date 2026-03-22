@@ -3302,6 +3302,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901367346570",
+          "author": null,
+          "description": "前回の続きです。\nnomolk.hatenablog.com\n収益化が通った直後は出ていなかったショッピングのタブですが、５日ほど経つと出現しました。\n\nショッピングの設定をした動画がこちらです。\nwww.youtube.com\n\n個別に機能を紹介すると、まず動画の下にグッズ販売のリンクを出すことができます。\n\nあと動画中にプロモーションを入れることもできます。\n\n加えて、アフィリエイトリンクを動画中に貼れる機能もあります。\nこちらも設定にあたり戸惑ったことを書いていくので参考にしてください。\n繋げられるショッピングサービス\n使えるサービスは何でもいいわけではなくて、選択肢が決まっています。\n\n他にも色々出てくるんですけど日本語対応していない海外のサービスが多いので、実質BASEとSUZURIとShopifyの３択、その中でShopifyはガチ物販のイメージがあるので、「軽くグッズとか売っちゃおっかな～」みたいなテンションの場合はBASEとSUZURIの二択ということになりそうです。\n違いを簡単に説明すると……\nSUZURI … 画像をアップするだけでＴシャツとかマグカップとかいろんなグッズを生成してくれて、注文があったぶんだけ勝手に刷って出荷してくれる。売る側は何もしなくていい。しかし薄利。\nBASE … 販売の仲介だけなので商品は自分で発送する必要あり。提携の倉庫サービスを利用すると先に在庫を預けておいて自動発送ということもできるがその分の費用はかかる。\nという感じです。\n素人が軽くグッズを売りたいときに使うのに一番使い勝手の良いサービスってBOOTHだと思うのですが、残念ながら提携していません。\nしたがって、なんでもいいから手軽にグッズを売りたい人はSUZURI、手作り品などを販売したいときや、安く仕入れて利益率上げたいという場合はBASEという感じになるかと思います…",
+          "link": "https://nomolk.hatenablog.com/entry/2026/03/22/203339",
+          "publishedOn": "2026-03-22T11:33:39.000Z",
+          "wordCount": null,
+          "title": "YouTubeの収益化設定でとまどったところメモ（ショッピング編）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/44d0b8e3241e117e9d4bdfc7020ff58877c82a18/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260322%2F20260322202942.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/44d0b8e3241e117e9d4bdfc7020ff58877c82a18/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260322%2F20260322202942.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901366753596",
           "author": null,
           "description": "昨年の１月からYouTube投稿をはじめ、15か月かけてついに一段階目の収益化ができました！\nwww.youtube.com\nひととおりの収益手段は設定したのですが、設定方法やら用語やらでよくわからないことがいろいろあったので、ここに書き残しておきます。\n主に自分が手間取ったところだけ説明するので、網羅的ではないです。\n収益化の条件と申請\n基本的なところから説明しておくと、収益化には２段階あります。\n今回達成した一段階目では、スパチャ（＆スーパーサンクス）、メンバーシップ、ショッピングの設定、ハイプを受けることが可能になります。\nこれにはチャンネル登録者数500人、直近90日に3本以上の動画投稿、365日以内の総再生時間が3,000時間という条件があります。\n自分のような短編動画で投稿頻度も低い場合は総再生時間がネックになる場合が多いと思います。\n\n条件を満たすと、収益化タブに「収益化を申請」的なボタンが出てくるので、押すと審査が始まります。1ヶ月ほどかかる旨が表示されますが、自分の場合は5日ほどで終わりました。\nちなみに二段階目は総再生時間4,000時間で、広告収益を得る権利が与えられます（未達成）。\nスパチャ（スーパーサンクス）の設定\nこれは簡単です。有効化ボタンを押すだけです。うろ覚えですが最初から有効になっていたかも。\nSuper Chat…ライブ配信中に送れる投げ銭、いわゆるスパチャ\nSuper Thanks…動画に対して送れる投げ銭。\nSuper Stickers…ライブ配信中に送れる有料スタンプ\nチェックボックスの色だけわかりにくいのですが、黒くなってるとONです。\n\nメンバーシップの設定\n有償会員制度みたいなもので、毎月固定の金額で支援してもらう機能です。\n特典選択について\nメンバーシップの設定を始めると、最初に特典を選ぶ画面になります。\n「動画の早期公開」…",
@@ -7180,16 +7195,6 @@
           "wordCount": null,
           "title": "Agentic RL in Practice: Optimizing a LangGraph Self-RAG Agent with NeMo RL (GRPO)",
           "imageUrl": null
-        },
-        {
-          "id": "https://medium.com/p/75cf0393645e",
-          "author": "FUJITA Tomonori",
-          "description": "",
-          "link": "https://medium.com/nttlabs/linux-kernel-rust-atomics-75cf0393645e?source=rss----74f667786e9f---4",
-          "publishedOn": "2025-12-22T23:58:18.000Z",
-          "wordCount": null,
-          "title": "LinuxカーネルのRustアトミック型",
-          "imageUrl": null
         }
       ]
     },
@@ -7820,16 +7825,6 @@
           "wordCount": 2314,
           "title": "IIJ 2025年入社社員の おうち / デスク環境紹介",
           "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2025/12/2025-12-24-eyecatch.png"
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=33664",
-          "author": "和田 英一",
-          "description": "【IIJ 2025 TECHアドベントカレンダー 12/23の記事です】 私は漫画やコミックにはうといので, 正確ではないかもしれないが, 少年ジャンプのDr.STONEでパラメトロンが話題になったそ...",
-          "link": "https://eng-blog.iij.ad.jp/archives/33664",
-          "publishedOn": "2025-12-22T23:19:38.000Z",
-          "wordCount": null,
-          "title": "パラメトロン",
-          "imageUrl": null
         }
       ]
     },
@@ -9093,16 +9088,6 @@
           "publishedOn": "2025-12-23T23:24:18.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2025.12.24",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44751",
-          "author": "mamosuke",
-          "description": "orbisDiskTool Build 15,Itemzflow 1.14(PS5),Neo Geo 2 PS4/PS5 V1.1,Emu4VitaPlus v0.58,chiaki-ng weekly-canary-release-054f3128ae46361e5ea77931247ed65963a60b15,uLaunch 1.2.2,KeyX v1.5.5,Goldleaf 1.2.0,emuiibo 1.1.2,TinyWiiBackupManager v4.9.12,WiiFlow Lite v5.6.1,PCSX2 v2.3.399,WinUAE 6.0.2,Dolphin Release 2512→→→この記事の続きを読む\nGameGaz Daily 2025.12.23 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2025122344751/",
-          "publishedOn": "2025-12-22T23:11:30.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2025.12.23",
           "imageUrl": null
         }
       ]

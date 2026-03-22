@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-22T11:04:23.915Z</updated>
+    <updated>2026-03-22T12:02:43.424Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[YouTubeの収益化設定でとまどったところメモ（ショッピング編）]]></title>
+        <id>hatenablog://entry/17179246901367346570</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/03/22/203339"/>
+        <updated>2026-03-22T11:33:39.000Z</updated>
+        <summary type="html"><![CDATA[前回の続きです。
+nomolk.hatenablog.com
+収益化が通った直後は出ていなかったショッピングのタブですが、５日ほど経つと出現しました。
+
+ショッピングの設定をした動画がこちらです。
+www.youtube.com
+
+個別に機能を紹介すると、まず動画の下にグッズ販売のリンクを出すことができます。
+
+あと動画中にプロモーションを入れることもできます。
+
+加えて、アフィリエイトリンクを動画中に貼れる機能もあります。
+こちらも設定にあたり戸惑ったことを書いていくので参考にしてください。
+繋げられるショッピングサービス
+使えるサービスは何でもいいわけではなくて、選択肢が決まっています。
+
+他にも色々出てくるんですけど日本語対応していない海外のサービスが多いので、実質BASEとSUZURIとShopifyの３択、その中でShopifyはガチ物販のイメージがあるので、「軽くグッズとか売っちゃおっかな～」みたいなテンションの場合はBASEとSUZURIの二択ということになりそうです。
+違いを簡単に説明すると……
+SUZURI … 画像をアップするだけでＴシャツとかマグカップとかいろんなグッズを生成してくれて、注文があったぶんだけ勝手に刷って出荷してくれる。売る側は何もしなくていい。しかし薄利。
+BASE … 販売の仲介だけなので商品は自分で発送する必要あり。提携の倉庫サービスを利用すると先に在庫を預けておいて自動発送ということもできるがその分の費用はかかる。
+という感じです。
+素人が軽くグッズを売りたいときに使うのに一番使い勝手の良いサービスってBOOTHだと思うのですが、残念ながら提携していません。
+したがって、なんでもいいから手軽にグッズを売りたい人はSUZURI、手作り品などを販売したいときや、安く仕入れて利益率上げたいという場合はBASEという感じになるかと思います…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.3.22]]></title>
         <id>https://gamegaz.com/?p=45198</id>
@@ -11657,36 +11689,6 @@ Wha-ha-ha - Zooの人形裁判パート
 11月頃に予約していて、本当はもっと早く受けたかったのだけど、12月まで予約が一杯で遅くなってしまった。まあ今から1,2週間ぐらいインフルにならなければ結果的にはセーフということで……。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LinuxカーネルのRustアトミック型]]></title>
-        <id>https://medium.com/p/75cf0393645e</id>
-        <link href="https://medium.com/nttlabs/linux-kernel-rust-atomics-75cf0393645e?source=rss----74f667786e9f---4"/>
-        <updated>2025-12-22T23:58:18.000Z</updated>
-        <author>
-            <name>FUJITA Tomonori</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[パラメトロン]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=33664</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/33664"/>
-        <updated>2025-12-22T23:19:38.000Z</updated>
-        <summary type="html"><![CDATA[【IIJ 2025 TECHアドベントカレンダー 12/23の記事です】 私は漫画やコミックにはうといので, 正確ではないかもしれないが, 少年ジャンプのDr.STONEでパラメトロンが話題になったそ...]]></summary>
-        <author>
-            <name>和田 英一</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2025.12.23]]></title>
-        <id>https://gamegaz.com/?p=44751</id>
-        <link href="https://gamegaz.com/2025122344751/"/>
-        <updated>2025-12-22T23:11:30.000Z</updated>
-        <summary type="html"><![CDATA[orbisDiskTool Build 15,Itemzflow 1.14(PS5),Neo Geo 2 PS4/PS5 V1.1,Emu4VitaPlus v0.58,chiaki-ng weekly-canary-release-054f3128ae46361e5ea77931247ed65963a60b15,uLaunch 1.2.2,KeyX v1.5.5,Goldleaf 1.2.0,emuiibo 1.1.2,TinyWiiBackupManager v4.9.12,WiiFlow Lite v5.6.1,PCSX2 v2.3.399,WinUAE 6.0.2,Dolphin Release 2512→→→この記事の続きを読む
-GameGaz Daily 2025.12.23 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
