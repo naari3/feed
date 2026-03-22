@@ -3248,21 +3248,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901337047417/1766760619"
-        },
-        {
-          "id": "hatenablog://entry/17179246901335579266",
-          "author": null,
-          "description": "以前作ったゲームが一部の環境で遅くなるとのことで調査してたら、めっちゃハンドルがリークしてる。\n\n原因はjoyGetPosExだった。\n joyGetNumDevs() で登録されているジョイパッドの数を取って、その数だけjoyGetPosEx(i, &joyInfoEx)していたのだけど、DualSenseをワイヤレスで接続したときにデバイス数にはカウントされるけどjoyGetPosExはエラーになるという状態だった。エラーが返る状態で高頻度（毎フレーム）でjoyGetPosExしているとリークするぽい。なんでやねん。とりあえずエラーを見かけたらそのポートは数秒間は問い合わせないようにしたら直った。",
-          "link": "https://nazenaninadesico.hatenablog.jp/entry/2025/12/22/203725",
-          "publishedOn": "2025-12-22T11:37:25.000Z",
-          "wordCount": null,
-          "title": "joyGetPosExでハンドルリーク",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/633a123ff5ddd115d6c55bcae4c41269ba20b96f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnazenaninadesico%2F20251222%2F20251222202451.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/633a123ff5ddd115d6c55bcae4c41269ba20b96f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnazenaninadesico%2F20251222%2F20251222202451.png"
         }
       ]
     },
