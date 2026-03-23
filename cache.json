@@ -7287,6 +7287,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2026-03-23/https-certificate-chronicle.html",
+          "author": null,
+          "description": "Web サービスをデプロイする際に、CA から証明書を取得し HTTPS で暗号化するのが一般的となった。かつては \"SSL 証明書\" として、メールでやり取りし有料で購入するのが常識だったが、自動/無料で取得することが増えた。かつては 5~10 年あった有効期限もどんどん短くなり、今では 6 日の証明書も発行されている。このように、証明書を取り巻く変遷は目覚ましく、それは Web を取り巻く環境の劇的な変化を色濃く反映した結果と言える。http:// が https:// になった裏で何が起こり、これからどうなっていくのか。まとめていく。(極力ソースを付記するが、既に消えて WebArchive にも残っていないものも多く、筆者の記憶に頼る情報も多い。)",
+          "link": "https://blog.jxck.io/entries/2026-03-23/https-certificate-chronicle.html",
+          "publishedOn": "2026-03-23T00:00:00.000Z",
+          "wordCount": null,
+          "title": "HTTPS 証明書クロニクル",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2026-03-03/scheduled-and-periodic-execution.html",
           "author": null,
           "description": "「毎時何時に実行」や「何時間ごとに実行」といった、タスクスケジューリングを実装する機会は少なくない。タスクを実装し cron に登録すれば、動くものを実装するのは難しくない。しかし、ひとたびタスクが思うように動かなかった途端、隠れていた要件が牙を剥く。一度でも痛い目を見た人は、それを経験的に疑い「まず色々と前提を確かめよう」という気持ちになり、例外処理を事前に固めることができる。今回は、実装方法そのものというよりも、「実装する前に確認すべき例外事項」を個人の経験を元に解説していく。",
