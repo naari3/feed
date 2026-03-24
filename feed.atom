@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-24T12:09:52.600Z</updated>
+    <updated>2026-03-24T13:28:50.879Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11638,21 +11638,6 @@ Amazon
 以上です。]]></summary>
         <author>
             <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2025-12-24]]></title>
-        <id>hatenablog://entry/17179246901336259174</id>
-        <link href="https://commits.hatenablog.com/entry/2025/12/25/100000"/>
-        <updated>2025-12-25T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[先日Vercelに乗せているNext.jsのアプリケーションのリクエスト過多を修正したのだけど、それから1週間ほど経ったので実際効果が出ているのかを眺めてみた。
-Edge Requestsのグラフ
-修正を入れた直後の12/16あたりからしっかりリクエスト数が落ちているのがわかる。
-Analytics上のPVのグラフ
-また、AnalyticsからPVを見ると、PVは多少落ちているもののEdge Requestsのほうが顕著に落ちている事がわかる。つまり、ユーザーが離れてリクエスト数が減ったのではなく、ちゃんとコードの変更の効果が表れている。
-これだけEdge Requestsが抑えられていれば、Vercelの無料枠でも十分運用していけそう。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>

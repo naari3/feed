@@ -1802,21 +1802,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901338935789/1767229201"
-        },
-        {
-          "id": "hatenablog://entry/17179246901336259174",
-          "author": null,
-          "description": "先日Vercelに乗せているNext.jsのアプリケーションのリクエスト過多を修正したのだけど、それから1週間ほど経ったので実際効果が出ているのかを眺めてみた。\nEdge Requestsのグラフ\n修正を入れた直後の12/16あたりからしっかりリクエスト数が落ちているのがわかる。\nAnalytics上のPVのグラフ\nまた、AnalyticsからPVを見ると、PVは多少落ちているもののEdge Requestsのほうが顕著に落ちている事がわかる。つまり、ユーザーが離れてリクエスト数が減ったのではなく、ちゃんとコードの変更の効果が表れている。\nこれだけEdge Requestsが抑えられていれば、Vercelの無料枠でも十分運用していけそう。",
-          "link": "https://commits.hatenablog.com/entry/2025/12/25/100000",
-          "publishedOn": "2025-12-25T01:00:00.000Z",
-          "wordCount": 515,
-          "title": "2025-12-24",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/85d1e8f8fee3b4e9c7cec4341a3a83549688dfb4/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20251224%2F20251224201356.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/85d1e8f8fee3b4e9c7cec4341a3a83549688dfb4/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20251224%2F20251224201356.png"
         }
       ]
     },
