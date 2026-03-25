@@ -2,10 +2,134 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-25T13:28:22.844Z</updated>
+    <updated>2026-03-25T14:23:35.894Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[1Passwordが人間とAIエージェントのアイデンティティを統一管理する「Unified Access 」発表]]></title>
+        <id>https://www.publickey1.jp/blog/26/1passwordaiunified_access.html</id>
+        <link href="https://www.publickey1.jp/blog/26/1passwordaiunified_access.html"/>
+        <updated>2026-03-25T17:58:21.000Z</updated>
+        <summary type="html"><![CDATA[パスワードマネージャ「1Password」を提供している1Password社は、IDとパスワードやパスキーを用いた人間のアイデンティティだけでなく、AIエージェントが用いるシークレットなどの管理も1Passwordに統合することで、人間とA...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[inゼリーにお辞儀をさせる／初心者におすすめのセンサー、曲げセンサ【動画解説】]]></title>
+        <id>hatenablog://entry/17179246901369136553</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/03/25/230527"/>
+        <updated>2026-03-25T14:05:27.000Z</updated>
+        <summary type="html"><![CDATA[忙しい日のお昼はゼリーだよ。
+www.youtube.com
+www.nicovideo.jp
+少し溜めてしまいました。恒例の動画解説エントリです。
+ストーリー的には凝っていますが、技術的には単純なので手短にいきます。
+サーボモーターで踊らせる
+まず最初のinゼリーを動かすところ。
+
+ただサーボをゆっくり往復させているだけです。
+こんな感じにつないで…
+
+プログラムはこう。
+#include <Servo.h>
+
+Servo myServo;
+
+int pos = 90;  // 初期角度
+
+void setup() {
+  myServo.attach(9);   // サーボの信号線を9番ピンに
+  myServo.write(90);   // 最初90度
+  delay(1000);         // 1秒待つ
+
+  // 1秒かけて180度へ
+  moveServoSmooth(90, 180, 1000);
+}
+
+void loop() {
+  // 2秒かけて0度へ
+  moveServoSmooth(180, 0, 2000);
+
+  // 2秒かけて180度へ
+  moveServoSmooth(0, 180, 2000);
+}
+
+void moveServoSmooth(int startAngle, int endAngle, int durationMs) {
+  int steps = abs(endAngle - startAngle);
+  if (steps == 0) return;
+
+  int stepDelay = durationMs / steps;
+  int direction = (endAngle > startAngle) ? 1 : -1;
+
+  int angle = startAngle;
+  for (int i = 0; i < steps; i++) {
+    angle += direction;
+    myServo.write(angle);
+    delay(stepDelay);
+  }
+}
+
+これはChatGPTに書いてもらったやつですが、似たようなプログラムは、Arduinoの「スケッチ例＞Servo＞Sweep」にもあって、そっちの方がシンプルです。
+曲げセンサで制御する
+後半のinゼリー・完全体。
+
+サーボが２つに増えたほか、曲げセンサを使ってコントロールできるようにしています。
+高性能曲げセンサ 85mmwww.switch-science.com
+曲げることによって抵抗値が変化します。半固定抵抗やボリューム、光センサ（CdSセル）と同じ感覚で使える初心者向きのセンサーです。
+Amazonにも似たものがありますが
+
+
+Wsikafxn フレックスセンサー 曲げ フレックスセンサー ロボットハンド 電子グローブ フレックス 4.5 インチ フレックスセンサー
+
+Wsikafxn
+Amazon
+
+こっちは片側への曲げにしか反応しません。
+なお、曲げるときにセンサーの根元の端子部分を曲げてしまうと反応しません、ちゃんとセンサー部分を曲げる必要があるので注意。
+配線はこんな感じ。
+
+サーボモーターを二つ付けていますが個別に制御しておらず、配線を分岐させているだけです。
+プログラムはこんな感じ。
+#include <Servo.h>
+
+Servo servo1;
+
+const int sensorPin = A5;
+
+void setup() {
+  servo1.attach(9);   // 1つ目のサーボ
+}
+
+void loop() {
+  int val = analogRead(sensorPin);
+
+  // 310〜410を30〜130度にマッピング
+  int angle = map(val, 310, 410, 30, 130);
+
+  // 範囲外の暴走防止
+  angle = constrain(angle, 30, 130);
+
+  servo1.write(angle);
+
+  delay(20);
+}
+
+ちなみに前にも曲げセンサにハマったことがあって、そのときはこんなのを作ってました。
+www.youtube.com
+やってることが全く同じ…！！！
+こっちの記事にもっと詳しい解説が書いてあります。
+nomolk.hatenablog.com
+
+以上、技術解説でした。
+www.youtube.com
+高評価とチャンネル登録してもいいからね。
+またね。]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[3月26日(木)  15:00頃から30分程度、メンテナンスのためはてなスターをつけられない時間帯が発生します]]></title>
         <id>hatenablog://entry/17179246901368927054</id>

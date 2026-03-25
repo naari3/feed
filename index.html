@@ -78,6 +78,122 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.publickey1.jp/" target="_blank"
+              rel="noopener">Publickey</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">1Passwordが人間とAIエージェントのアイデンティティを統一管理する「Unified Access 」発表</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.publickey1.jp/blog/26/1passwordaiunified_access.html" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>パスワードマネージャ「1Password」を提供している1Password社は、IDとパスワードやパスキーを用いた人間のアイデンティティだけでなく、AIエージェントが用いるシークレットなどの管理も1Passwordに統合することで、人間とA...</span>
+                  </div>
+                  <img src="https://www.publickey1.jp/2026/1password-unifiedaccess-ann01.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
+              rel="noopener">nomolkのブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">inゼリーにお辞儀をさせる／初心者におすすめのセンサー、曲げセンサ【動画解説】</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2026/03/25/230527" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>忙しい日のお昼はゼリーだよ。
+www.youtube.com
+www.nicovideo.jp
+少し溜めてしまいました。恒例の動画解説エントリです。
+ストーリー的には凝っていますが、技術的には単純なので手短にいきます。
+サーボモーターで踊らせる
+まず最初のinゼリーを動かすところ。
+
+ただサーボをゆっくり往復させているだけです。
+こんな感じにつないで…
+
+プログラムはこう。
+#include 
+
+Servo myServo;
+
+int pos &#x3D; 90;  // 初期角度
+
+void setup() {
+  myServo.attach(9);   // サーボの信号線を9番ピンに
+  myServo.write(90);   // 最初90度
+  delay(1000);         // 1秒待つ
+
+  // 1秒かけて180度へ
+  moveServoSmooth(90, 180, 1000);
+}
+
+void loop() {
+  // 2秒かけて0度へ
+  moveServoSmooth(180, 0, 2000);
+
+  // 2秒かけて180度へ
+  moveServoSmooth(0, 180, 2000);
+}
+
+void moveServoSmooth(int startAngle, int endAngle, int durationMs) {
+  int steps &#x3D; abs(endAngle - startAngle);
+  if (steps &#x3D;&#x3D; 0) return;
+
+  int stepDelay &#x3D; durationMs / steps;
+  int direction &#x3D; (endAngle &gt; startAngle) ? 1 : -1;
+
+  int angle &#x3D; startAngle;
+  for (int i &#x3D; 0; i 
+
+Servo servo1;
+
+const int sensorPin &#x3D; A5;
+
+void setup() {
+  servo1.attach(9);   // 1つ目のサーボ
+}
+
+void loop() {
+  int val &#x3D; analogRead(sensorPin);
+
+  // 310〜410を30〜130度にマッピング
+  int angle &#x3D; map(val, 310, 410, 30, 130);
+
+  // 範囲外の暴走防止
+  angle &#x3D; constrain(angle, 30, 130);
+
+  servo1.write(angle);
+
+  delay(20);
+}
+
+ちなみに前にも曲げセンサにハマったことがあって、そのときはこんなのを作ってました。
+www.youtube.com
+やってることが全く同じ…！！！
+こっちの記事にもっと詳しい解説が書いてあります。
+nomolk.hatenablog.com
+
+以上、技術解説でした。
+www.youtube.com
+高評価とチャンネル登録してもいいからね。
+またね。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/2ca20bb80b9ab4def316c4bc890419b9a6921d90/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260325%2F20260325222723.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://staff.hatenablog.com/" target="_blank"
               rel="noopener">はてなブログ開発ブログ</a></h3>
           <section class="articles-per-source">
@@ -19165,7 +19281,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-03-25T13:28:22.802Z">2026-03-25T13:28:22.802Z</time>
+    <time id="build-timestamp" datetime="2026-03-25T14:23:35.839Z">2026-03-25T14:23:35.839Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

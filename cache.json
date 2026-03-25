@@ -3226,6 +3226,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901369136553",
+          "author": null,
+          "description": "忙しい日のお昼はゼリーだよ。\nwww.youtube.com\nwww.nicovideo.jp\n少し溜めてしまいました。恒例の動画解説エントリです。\nストーリー的には凝っていますが、技術的には単純なので手短にいきます。\nサーボモーターで踊らせる\nまず最初のinゼリーを動かすところ。\n\nただサーボをゆっくり往復させているだけです。\nこんな感じにつないで…\n\nプログラムはこう。\n#include <Servo.h>\n\nServo myServo;\n\nint pos = 90;  // 初期角度\n\nvoid setup() {\n  myServo.attach(9);   // サーボの信号線を9番ピンに\n  myServo.write(90);   // 最初90度\n  delay(1000);         // 1秒待つ\n\n  // 1秒かけて180度へ\n  moveServoSmooth(90, 180, 1000);\n}\n\nvoid loop() {\n  // 2秒かけて0度へ\n  moveServoSmooth(180, 0, 2000);\n\n  // 2秒かけて180度へ\n  moveServoSmooth(0, 180, 2000);\n}\n\nvoid moveServoSmooth(int startAngle, int endAngle, int durationMs) {\n  int steps = abs(endAngle - startAngle);\n  if (steps == 0) return;\n\n  int stepDelay = durationMs / steps;\n  int direction = (endAngle > startAngle) ? 1 : -1;\n\n  int angle = startAngle;\n  for (int i = 0; i < steps; i++) {\n    angle += direction;\n    myServo.write(angle);\n    delay(stepDelay);\n  }\n}\n\nこれはChatGPTに書いてもらったやつですが、似たようなプログラムは、Arduinoの「スケッチ例＞Servo＞Sweep」にもあって、そっちの方がシンプルです。\n曲げセンサで制御する\n後半のinゼリー・完全体。\n\nサーボが２つに増えたほか、曲げセンサを使ってコントロールできるようにしています。\n高性能曲げセンサ 85mmwww.switch-science.com\n曲げることによって抵抗値が変化します。半固定抵抗やボリューム、光センサ（CdSセル）と同じ感覚で使える初心者向きのセンサーです。\nAmazonにも似たものがありますが\n\n\nWsikafxn フレックスセンサー 曲げ フレックスセンサー ロボットハンド 電子グローブ フレックス 4.5 インチ フレックスセンサー\n\nWsikafxn\nAmazon\n\nこっちは片側への曲げにしか反応しません。\nなお、曲げるときにセンサーの根元の端子部分を曲げてしまうと反応しません、ちゃんとセンサー部分を曲げる必要があるので注意。\n配線はこんな感じ。\n\nサーボモーターを二つ付けていますが個別に制御しておらず、配線を分岐させているだけです。\nプログラムはこんな感じ。\n#include <Servo.h>\n\nServo servo1;\n\nconst int sensorPin = A5;\n\nvoid setup() {\n  servo1.attach(9);   // 1つ目のサーボ\n}\n\nvoid loop() {\n  int val = analogRead(sensorPin);\n\n  // 310〜410を30〜130度にマッピング\n  int angle = map(val, 310, 410, 30, 130);\n\n  // 範囲外の暴走防止\n  angle = constrain(angle, 30, 130);\n\n  servo1.write(angle);\n\n  delay(20);\n}\n\nちなみに前にも曲げセンサにハマったことがあって、そのときはこんなのを作ってました。\nwww.youtube.com\nやってることが全く同じ…！！！\nこっちの記事にもっと詳しい解説が書いてあります。\nnomolk.hatenablog.com\n\n以上、技術解説でした。\nwww.youtube.com\n高評価とチャンネル登録してもいいからね。\nまたね。",
+          "link": "https://nomolk.hatenablog.com/entry/2026/03/25/230527",
+          "publishedOn": "2026-03-25T14:05:27.000Z",
+          "wordCount": 1012,
+          "title": "inゼリーにお辞儀をさせる／初心者におすすめのセンサー、曲げセンサ【動画解説】",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/2ca20bb80b9ab4def316c4bc890419b9a6921d90/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260325%2F20260325222723.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2ca20bb80b9ab4def316c4bc890419b9a6921d90/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260325%2F20260325222723.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901367346570",
           "author": null,
           "description": "前回の続きです。\nnomolk.hatenablog.com\n収益化が通った直後は出ていなかったショッピングのタブですが、５日ほど経つと出現しました。\n\nショッピングの設定をした動画がこちらです。\nwww.youtube.com\n\n個別に機能を紹介すると、まず動画の下にグッズ販売のリンクを出すことができます。\n\nあと動画中にプロモーションを入れることもできます。\n\n加えて、アフィリエイトリンクを動画中に貼れる機能もあります。\nこちらも設定にあたり戸惑ったことを書いていくので参考にしてください。\n繋げられるショッピングサービス\n使えるサービスは何でもいいわけではなくて、選択肢が決まっています。\n\n他にも色々出てくるんですけど日本語対応していない海外のサービスが多いので、実質BASEとSUZURIとShopifyの３択、その中でShopifyはガチ物販のイメージがあるので、「軽くグッズとか売っちゃおっかな～」みたいなテンションの場合はBASEとSUZURIの二択ということになりそうです。\n違いを簡単に説明すると……\nSUZURI … 画像をアップするだけでＴシャツとかマグカップとかいろんなグッズを生成してくれて、注文があったぶんだけ勝手に刷って出荷してくれる。売る側は何もしなくていい。しかし薄利。\nBASE … 販売の仲介だけなので商品は自分で発送する必要あり。提携の倉庫サービスを利用すると先に在庫を預けておいて自動発送ということもできるがその分の費用はかかる。\nという感じです。\n素人が軽くグッズを売りたいときに使うのに一番使い勝手の良いサービスってBOOTHだと思うのですが、残念ながら提携していません。\nしたがって、なんでもいいから手軽にグッズを売りたい人はSUZURI、手作り品などを販売したいときや、安く仕入れて利益率上げたいという場合はBASEという感じになるかと思います…",
@@ -9238,6 +9253,16 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/1passwordaiunified_access.html",
+          "author": null,
+          "description": "パスワードマネージャ「1Password」を提供している1Password社は、IDとパスワードやパスキーを用いた人間のアイデンティティだけでなく、AIエージェントが用いるシークレットなどの管理も1Passwordに統合することで、人間とA...",
+          "link": "https://www.publickey1.jp/blog/26/1passwordaiunified_access.html",
+          "publishedOn": "2026-03-25T17:58:21.000Z",
+          "wordCount": 1442,
+          "title": "1Passwordが人間とAIエージェントのアイデンティティを統一管理する「Unified Access 」発表",
+          "imageUrl": "https://www.publickey1.jp/2026/1password-unifiedaccess-ann01.png"
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/claude_codegithub_copilotaiazure_skills_plugin.html",
           "author": null,
