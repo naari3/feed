@@ -636,21 +636,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/baebe3154b76627ab2dfc93e13a66c77c1941b5e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkareobana%2F20251231%2F20251231233123.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901331383688",
-          "author": null,
-          "description": "キリスト降誕おめでとうございます。\n \n映像制作ゆる Advent Calendar 2025の25日目の記事です。\n\n\n\n惰眠を貪っていたら、上記記事から１年経ってしまっていた。遅ればせながら、自分なりの回答として以下を提示したい。\n\n\n分解\n\n2色3色のみならず、大量の色を指定出来るようにした。また、色数と何分割するかは独立した話であるので、分割数を別途変えられるようにした。\n\n\n色の指定に自由度に幅が出ると、複雑なグラデーションも構成出来るので表現に幅が出る。\n\n合成\n\n一般的な加算による合成だけでなく、比較明による合成も出来るようにした。\n\n分割数を増やしつつ元の色調を維持しようとする場合*1、加算による合成だと、一つ一つの重みの寄与が小さくなるため、指定した色に比べ暗くなってしまう。\n\n\n一方、比較明だと指定した色を維持しやすい。\n\n\nAdditional Colorというパラメータも追加した。一見摩訶不思議なパラメータであるが、\n\n比較明において、このように比較的暗い色を指定してNormalizeさせると、指定した色よりどうしても明るくなってしまう。\n\nそこで、Additional Colorで白色を追加することで、色補正のしわ寄せをその白色だけに押し付けることができ、指定色をそのまま出すことが出来る。\n\nパワー\n色収差の掛かり方を調整するために冪函数を用いている。\n\n指数であるpを増やしていくと、中心部にはあまり掛からず周辺部で急に掛かるようになる。\n\n\n入力値を0から1の範囲に正規化するために、以前は、画面中心から各画素までの距離を、中心から四隅までの距離で割った比率を用いていたが、Centerというパラメータで中心を移動させることが出来るという特性上、扱いが難しい部分があった*2。そこで、正規化の基準となる距離をOuter Radiusというパラメータで指定できるようにした*3。\n\nGPU\n\nWinかつCUDA環境で、GPUを用いた処理が出来るようになっている。CPUとGPUでは得意なアルゴリズムが異なるので、出力結果が異なる場合がある。その点はご了承ください。\n*1:SapphireだとWhite Balance、自分の場合はNormalizeという語を使うことが多い\n*2:xを[0,1]でクランプしていなかったので、変化が急峻になりすぎた\n*3:デフォルト値は、中心から四隅までの距離の 150%",
-          "link": "https://atarabi.hateblo.jp/entry/2025/12/25/234359",
-          "publishedOn": "2025-12-25T14:43:59.000Z",
-          "wordCount": 396,
-          "title": "色収差再び",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/8910b1ad85787efa0ec254f7a1a5f17843885c23/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkareobana%2F20251225%2F20251225194942.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8910b1ad85787efa0ec254f7a1a5f17843885c23/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkareobana%2F20251225%2F20251225194942.png"
         }
       ]
     },
@@ -3359,21 +3344,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d5b21f41f6bc2811d4ed9b43ec7e73eeeae990c5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251228%2F20251228164639.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901336669604",
-          "author": null,
-          "description": "かつてパナソニックが販売していた電動歯ブラシ、ドルツのEW-DM61を使っているのですが、バッテリーが弱ってきて1回分の歯磨きまで持たなくなってしまいました。\nもう販売終了してるみたいで使ってる人もあんまりいないと思いますが、もし今から電池交換しようという人がいたら参考にしてください。（とは言ったものの防水製品ですので自己責任で何卒）\n\n１．電池を用意する\n純生の専用バッテリーも存在するのですが、1.2Vのニッケル水素電池ということでエネループで代用できます。\n\n\nAmazon Basics 8個入り充電式単4形ニッケル水素電池大容量バッテリー、850mAh、1.2V、最大500倍の充電、プリチャージ済み\n\nAmazonベーシック(Amazon Basics)\nAmazon\n\nエネループと言いつつ今回はAmazon Basicを購入しました。サイズが単4なのでご注意ください。\n２．分解する\n後ろにネジがあるので外します。\n\nで、外したら中身を引き出すんですけど、意外に大変でした。\nまず替えブラシを外します。\nその後、ブラシを外したあとの芯（？）\n\nこれを押して反対側に基板を押し出すのですが、反対側には爪がありまして\n\nこの２カ所が引っかかってるので、この２つを同時に内側に倒しながら芯を押して基板を押し出します。\n手が足りない系の作業ですね。自分はピンセットを使って２本の爪を挟むようにして作業しました。\n\nうまくいくとこんな感じで中身が出てきます。\n３．電池を外す\n電池は金具にはんだづけされているので、ひっぱっても外れません。電動歯ブラシの振動で外れないようにしているのかもしれません。\n\nこの２カ所のでかいランドが、電池用の金具です。はんだ吸い取り器か何かで外します。\nおすすめはエンジニアのやつです。小さいのによく吸える。\n\n\nENGINEER エンジニア ハンダ吸取器 SS-03\n\nENGINEER\nAmazon\n\n外したのがこちら。\n\nこの金具を今度は電池から外していくんですけど、この工程が意外と大変です。\n\nドライバーをねじ込んだり、ペンチでちぎれない程度に引っ張ったりと物理攻撃を駆使しながらなんとか外しました。ベコベコになりましたが……。\n４．電池をつける\nここが今回の山場。\n電池に金具をはんだ付けするのですが、ここで悲報です。ニッケル水素電池って熱に弱いんですね。\nなので、\nまず金具にたっぷり予備はんだを盛る\n電池側にも予備はんだを盛る。電池が過熱しないように最大限手早くやる。\n金具を電池にあて、両方の予備はんだを一緒に熱して、溶けたらすぐにこてを離す\nこんな感じで何とかやりました。\n\nちょっと曲がってますが、これが限界。\nその後、元どおり基板にはめてハンダ付けします。\n\n電池の外装が熱で縮んでいるところに死闘の跡を感じますね。\n組み立ててからやり直しが発覚すると面倒なので、このタイミングでいちどスイッチを入れて動作確認しておくといいと思います。\nあとは元どおりテープで巻きます。\n\n最初にクッションがついていたので、一応スポンジを貼りました。これが厚すぎると後でケースに入らなくなるので薄めで（写真は厚すぎ）。\n５．組み立て直す\nあとはばらしたときと逆の手順で元に戻すだけです。\nグッと押し込んでふたを閉め、ネジを止めたら完成。\n\nこれで電池切れにおびえることなく、存分に歯磨きできるようになりました。\nちなみに一度分解した時点で防水性能は相当落ちていると思うので、修理後に壊れたらもうあきらめて買い替えてください。\n以上です。",
-          "link": "https://nomolk.hatenablog.com/entry/2025/12/25/224007",
-          "publishedOn": "2025-12-25T13:40:07.000Z",
-          "wordCount": 831,
-          "title": "電動歯ブラシ、ドルツEW-DM61の電池を交換する",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/b1c919bdf5e98e7bfa3e8209ff095833782ebbe2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251221%2F20251221002004.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b1c919bdf5e98e7bfa3e8209ff095833782ebbe2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20251221%2F20251221002004.jpg"
         }
       ]
     },
@@ -10196,16 +10166,6 @@
           "publishedOn": "2026-01-04T15:23:26.000Z",
           "wordCount": 1428,
           "title": "定期告知：2026年のPublickeyも、読者が安心して記事を読めるように適切な広告だけを掲載します",
-          "imageUrl": "https://www.publickey1.jp/fbico_pblky.png"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/25/2025publickey_10_windowsmcpaws30wsl.html",
-          "author": null,
-          "description": "2025年もPublickeyをご愛読いただきましてありがとうございます。個人的なことですが今年は4月に父を亡くしまして、葬式の手配や相続の手続き、母親の一人暮らしの対応など、いろいろと慌ただしく過ぎていった年でした。読者の皆様にはどんな年...",
-          "link": "https://www.publickey1.jp/blog/25/2025publickey_10_windowsmcpaws30wsl.html",
-          "publishedOn": "2025-12-25T14:48:10.000Z",
-          "wordCount": 1460,
-          "title": "2025年にPublickeyでいちばん読まれた記事は？ 年間人気記事トップ10発表！ WindowsがMCPをサポート／AWSのシェアが30％を切る／WSLがオープンソースに、ほか",
           "imageUrl": "https://www.publickey1.jp/fbico_pblky.png"
         }
       ]
