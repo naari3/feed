@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-26T02:58:40.124Z</updated>
+    <updated>2026-03-26T04:00:32.281Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.3.26]]></title>
+        <id>https://gamegaz.com/?p=45216</id>
+        <link href="https://gamegaz.com/2026032645216/"/>
+        <updated>2026-03-26T03:33:13.000Z</updated>
+        <summary type="html"><![CDATA[北米で任天堂がSwitch 2ゲームの小売価格改定へ,BD-NOT-JB(RemoteJarLoader) 1.1,PsVue‑Mod Vue-Xplorer(File Xplorer),PS3HEN 3.5.0,BadWDSD qcfw-20260228-release-2,chiaki-ng weekly-canary-release-324ada0432597d695ac3380e77cecf8fd2bcb8,Breeze beta102.3,amiberry v8.1.1,3DSident v0.9.4,PCSX2 v2.7.216,shadPS4 Pre-release-shadPS4-2026-03-25-31b2d9c,shadPS4-QtLauncher 2026-03-25-b04aea4,xenia c4f4412_canary_experimental→→→この記事の続きを読む
+GameGaz Daily 2026.3.26 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[1Passwordが人間とAIエージェントのアイデンティティを統一管理する「Unified Access 」発表]]></title>
         <id>https://www.publickey1.jp/blog/26/1passwordaiunified_access.html</id>
@@ -11460,29 +11471,6 @@ GameGaz Daily 2025.12.27 first appeared on 大人のためのゲーム講座.]]>
         <updated>2025-12-27T00:35:32.000Z</updated>
         <author>
             <name>kenji tanaka</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[flutter Durationを入力しやすくする]]></title>
-        <id>hatenablog://entry/17179246901337051769</id>
-        <link href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/27/000344"/>
-        <updated>2025-12-26T15:03:44.000Z</updated>
-        <summary type="html"><![CDATA[Durationて結構使う頻度高いけど、Duration(milliseconds:100)みたいなの毎度書くの地味にめんどくさい。
-以下のようなものを定義しとくと便利。どうしてもconst使いたい時だけ元のつかってもろて。
-// 定義
-extension IntDurationExt on int {
-  Duration get day => Duration(days: this);
-  Duration get hour => Duration(hours: this);
-  Duration get minute => Duration(minutes: this);
-  Duration get sec => Duration(seconds: this);
-  Duration get ms => Duration(milliseconds: this);
-  Duration get micro => Duration(microseconds: this);
-}
-
-// 使用例
-await Future.delayed(500.ms);]]></summary>
-        <author>
-            <name>アプリ置き場</name>
         </author>
     </entry>
     <entry>
