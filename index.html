@@ -16848,33 +16848,6 @@ await Future.delayed(500.ms);</span>
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">flutter audioplayersで1音しか鳴らない</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/26/235019" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Flutterでaudioplayersを使っていて、Windowsでは複数のBGMや効果音を重ねることができたけど、Androidではできなかった。そういえばスマホにはオーディオフォーカスとかあったなと思い出して、調べてみると下記でミキシング設定できた。
-final ctx &#x3D; AudioContextConfig(
-  // マナーモード有効
-  respectSilence: true,
-  // ミキシング可
-  focus: AudioContextConfigFocus.mixWithOthers,
-).build();
-
-await player.setAudioContext(ctx);
-　
-あとWindowsで一度stop()したら（リソース解放されちゃってる？）、seek()できないだの、play()できないだの問題が発生した。
-現在のバージョンだけの問題なのかわからないが、とりあえずpauseとseekでstop代わりにしてお茶を濁した。再生はresume()で。
-Future stop(){
-  await player.pause();
-  await player.seek(Duration.zero);
-}</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901337047417/1766760619" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -19135,7 +19108,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-03-26T01:31:13.093Z">2026-03-26T01:31:13.093Z</time>
+    <time id="build-timestamp" datetime="2026-03-26T02:58:40.073Z">2026-03-26T02:58:40.073Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

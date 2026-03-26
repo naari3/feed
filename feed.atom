@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-26T01:31:13.133Z</updated>
+    <updated>2026-03-26T02:58:40.124Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11481,31 +11481,6 @@ extension IntDurationExt on int {
 
 // 使用例
 await Future.delayed(500.ms);]]></summary>
-        <author>
-            <name>アプリ置き場</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[flutter audioplayersで1音しか鳴らない]]></title>
-        <id>hatenablog://entry/17179246901337047417</id>
-        <link href="https://nazenaninadesico.hatenablog.jp/entry/2025/12/26/235019"/>
-        <updated>2025-12-26T14:50:19.000Z</updated>
-        <summary type="html"><![CDATA[Flutterでaudioplayersを使っていて、Windowsでは複数のBGMや効果音を重ねることができたけど、Androidではできなかった。そういえばスマホにはオーディオフォーカスとかあったなと思い出して、調べてみると下記でミキシング設定できた。
-final ctx = AudioContextConfig(
-  // マナーモード有効
-  respectSilence: true,
-  // ミキシング可
-  focus: AudioContextConfigFocus.mixWithOthers,
-).build();
-
-await player.setAudioContext(ctx);
-　
-あとWindowsで一度stop()したら（リソース解放されちゃってる？）、seek()できないだの、play()できないだの問題が発生した。
-現在のバージョンだけの問題なのかわからないが、とりあえずpauseとseekでstop代わりにしてお茶を濁した。再生はresume()で。
-Future<void> stop(){
-  await player.pause();
-  await player.seek(Duration.zero);
-}]]></summary>
         <author>
             <name>アプリ置き場</name>
         </author>

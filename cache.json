@@ -3112,21 +3112,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901337051769/1766761424"
-        },
-        {
-          "id": "hatenablog://entry/17179246901337047417",
-          "author": null,
-          "description": "Flutterでaudioplayersを使っていて、Windowsでは複数のBGMや効果音を重ねることができたけど、Androidではできなかった。そういえばスマホにはオーディオフォーカスとかあったなと思い出して、調べてみると下記でミキシング設定できた。\nfinal ctx = AudioContextConfig(\n  // マナーモード有効\n  respectSilence: true,\n  // ミキシング可\n  focus: AudioContextConfigFocus.mixWithOthers,\n).build();\n\nawait player.setAudioContext(ctx);\n　\nあとWindowsで一度stop()したら（リソース解放されちゃってる？）、seek()できないだの、play()できないだの問題が発生した。\n現在のバージョンだけの問題なのかわからないが、とりあえずpauseとseekでstop代わりにしてお茶を濁した。再生はresume()で。\nFuture<void> stop(){\n  await player.pause();\n  await player.seek(Duration.zero);\n}",
-          "link": "https://nazenaninadesico.hatenablog.jp/entry/2025/12/26/235019",
-          "publishedOn": "2025-12-26T14:50:19.000Z",
-          "wordCount": 395,
-          "title": "flutter audioplayersで1音しか鳴らない",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901337047417/1766760619",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8599973812322958498/17179246901337047417/1766760619"
         }
       ]
     },
