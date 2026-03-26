@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-26T15:25:19.337Z</updated>
+    <updated>2026-03-26T16:22:39.291Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ANA Payを人力（+Cloudflareパワー）でマネーフォワードに連携する]]></title>
+        <id>hatenablog://entry/17179246901369492700</id>
+        <link href="https://blog.3qe.us/entry/2026/03/27/002522"/>
+        <updated>2026-03-26T15:25:22.000Z</updated>
+        <summary type="html"><![CDATA[最近よく旅行に行くようになったので、マイルをしこしこ貯めている。普段の買い物でもマイルを貯めたいが、航空会社のカードを作るほどでもない（というかもうカードはたくさんある）ので、ANA Payというスマホ決済サービスを使っている。
+www.ana.co.jp
+普通のGoogle Payとして使えるので、VISAが使える場所ならどこでも使えて嬉しい。オートチャージもある。
+マネフォ ない
+ところが、ANA Payを使うだけでは、単にオートチャージで引き落とされた情報しかマネフォには載ってこない。
+
+マネフォはANA Payに対応していないのでこれはしょうがないのだが、しかしこれだとマネフォを使っている意味がない。困った。
+人力連携
+さて、完全に人力で連携するとなると、人間が手で家計簿を付けていた古墳時代へと逆戻りしてしまい、文明的ではない。あくまで我々は文明人であり、文明の力を使って便利に毎日を過ごしていたい。
+我々の世界には、巨人の肩に乗るという言葉がある。すなわち、たいていの分野には先駆者がいるのだから、その成果に載っかって時間を節約しつつ、リスペクトしようという意味である。
+なんと、ANA Payをマネフォに連携している先人がいるではないか。
+github.com
+しかしこれを手で動かすのはダルいので、今風のインフラに載っけて楽をしようと思う。
+やりたいこと
+さて、やりたいことといえば実は単純である。
+人間がANA Payで決済すると、ANA Payは決済情報をメールで寄越す
+これをトリガーとしてブラウザを操作し、マネフォの画面をいじって手動で費目を入力させる
+これだけである。
+考えないといけないこと
+これだけなのだが、考えることは実に多い。
+メールをどうやってトリガーにするのか？
+マネフォがメンテなどで使えず、トリガーが不発したらどうするのか？
+どうやってブラウザを操作…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【週刊プラグインレビュー】Naturl Audio AL-1]]></title>
         <id>https://note.com/massmasaoki/n/nb616ff92763c</id>
