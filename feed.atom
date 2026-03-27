@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-27T16:15:18.733Z</updated>
+    <updated>2026-03-27T17:16:01.233Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11578,24 +11578,6 @@ nomolk.hatenablog.com
 続きをみる]]></summary>
         <author>
             <name>moroishimasaoki</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2025年を振り返る]]></title>
-        <id>hatenablog://entry/17179246901337564186</id>
-        <link href="https://contradiction29.hatenablog.com/entry/2025/12/28/141002"/>
-        <updated>2025-12-28T05:10:02.000Z</updated>
-        <summary type="html"><![CDATA[2025年を振り返る際に、まず振り返りのやり方を検討した。振り返りのhowについては、テキストデータを自然言語処理・あるいは単純な統計処理に基づき機械的分析を行う手法と、文字通りに年末に何があったかをRetrospectiveに振り返る「単純な振り返り」の手法の両極端があるだろう。まず機械的分析をやってみたが、去年の結果とほとんど変わらず、つまらないと思ってしまった。かといって単純に振り返るだけでは、後ろの期間に相対的に強いバイアスがかかり、直近あったことばかり振り返るようになってしまう。
-2025年末の今回は間を取り、BigQueryに格納した日記のテキストデータをBigQuery MCP Serverを用いてGemini CLIで取得し、トピックを抽出して分析することにした。話題の抽出はLLMの力を借りつつ、その話題に振り返る価値があるかどうかは人間が判断するわけだ。メモのテキストデータも統合すれば、関心を持っていたトピックの情報がより強く浮き彫りになる。
-そんなこんなで、2025年も様々なことがあった。記憶と記録を振り返り、まとめ、来年の糧にしていきたい。今の俺は、人は忘れる生き物であることを理解している。
-引っ越した
-
-（画像は千葉市美術館にある旧千葉市中央地区市民センターの模型）
-2025年の12月に、東京の杉並区から千葉市中央区に引っ越した。
-引っ越しにより月々の支払いは20%削減され、部屋の住みやすさは2段階くらい上がった気がする*1。ジムやスーパーも近く、東京特有の過密に悩まされることもない。東京へのアクセスは離れてしまったが、用事がある時は気軽に行ける距離だ。何より電車に乗らず生活に必要な動作を全て完結させることができるのが良い。
-新しい家ではもっと住みやすくしたい。旧居は機能を最低限果たす家具しか置いておらず、寂しい感じになっていた。テレビ台は歪み、テー…]]></summary>
-        <author>
-            <name>現実モデリング</name>
         </author>
     </entry>
     <entry>
