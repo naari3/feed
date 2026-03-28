@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-28T21:05:41.093Z</updated>
+    <updated>2026-03-28T22:04:05.362Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -11336,54 +11336,6 @@ diary.hatenablog.jp
 続きをみる]]></summary>
         <author>
             <name>餡砂糖</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[gemini先生]]></title>
-        <id>hatenablog://entry/17179246901337990366</id>
-        <link href="https://akkera102.hatenablog.com/entry/2025/12/29/185316"/>
-        <updated>2025-12-29T09:53:16.000Z</updated>
-        <summary type="html"><![CDATA[テキスト成形なら補助道具としていい感じです。逆ポーランドもこのとおりの短さ。世界の英知すげえ・・・。
-変更前：IF (FW(H6ED)!=1 & FW(H6ED)!=2)
-変更後：IFF FW013 1 @ FW013 2 @ &
-
-変更前：IF (FW(H1WIN)>FW(H2WIN)&FW(H1WIN)>FW(H3WIN)&FW(H1WIN)>FW(H4WIN)&FW(H1WIN)>FW(H5WIN))
-変更後：IFF FW019 FW020 > FW019 FW021 > & FW019 FW022 > & FW019 FW023 > &
-def rpn(input):
-	pre = {
-		'!': 4,
-		'>': 3, '<': 3, '=': 3, '@': 3,		# @ not equal
-		'&': 2,
-		'|': 1,
-	}
-	ret = []
-
-	for line in input:
-		if not re.search(r'^[IFF]', line):
-			ret.append(line)
-			continue
-
-		out = []
-		stack = []
-		tokens = re.findall(r'[a-zA-Z0-9]+|!|[><=@&|]+', line)
-
-		for token in tokens:
-			if re.match(r'[a-zA-Z0-9]+', token):
-				out.append(token)
-			else:
-				while (stack and pre.get(token, 0) <= pre.get(stack[-1], 0)):
-					out.append(stack.pop())
-
-				stack.append(token)
-
-		while stack:
-			out.append(stack.pop())
-
-		ret.append(" ".join(out))
-
-	return ret]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

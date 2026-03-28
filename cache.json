@@ -509,21 +509,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901338345402/1767087792"
-        },
-        {
-          "id": "hatenablog://entry/17179246901337990366",
-          "author": null,
-          "description": "テキスト成形なら補助道具としていい感じです。逆ポーランドもこのとおりの短さ。世界の英知すげえ・・・。\n変更前：IF (FW(H6ED)!=1 & FW(H6ED)!=2)\n変更後：IFF FW013 1 @ FW013 2 @ &\n\n変更前：IF (FW(H1WIN)>FW(H2WIN)&FW(H1WIN)>FW(H3WIN)&FW(H1WIN)>FW(H4WIN)&FW(H1WIN)>FW(H5WIN))\n変更後：IFF FW019 FW020 > FW019 FW021 > & FW019 FW022 > & FW019 FW023 > &\ndef rpn(input):\n\tpre = {\n\t\t'!': 4,\n\t\t'>': 3, '<': 3, '=': 3, '@': 3,\t\t# @ not equal\n\t\t'&': 2,\n\t\t'|': 1,\n\t}\n\tret = []\n\n\tfor line in input:\n\t\tif not re.search(r'^[IFF]', line):\n\t\t\tret.append(line)\n\t\t\tcontinue\n\n\t\tout = []\n\t\tstack = []\n\t\ttokens = re.findall(r'[a-zA-Z0-9]+|!|[><=@&|]+', line)\n\n\t\tfor token in tokens:\n\t\t\tif re.match(r'[a-zA-Z0-9]+', token):\n\t\t\t\tout.append(token)\n\t\t\telse:\n\t\t\t\twhile (stack and pre.get(token, 0) <= pre.get(stack[-1], 0)):\n\t\t\t\t\tout.append(stack.pop())\n\n\t\t\t\tstack.append(token)\n\n\t\twhile stack:\n\t\t\tout.append(stack.pop())\n\n\t\tret.append(\" \".join(out))\n\n\treturn ret",
-          "link": "https://akkera102.hatenablog.com/entry/2025/12/29/185316",
-          "publishedOn": "2025-12-29T09:53:16.000Z",
-          "wordCount": 614,
-          "title": "gemini先生",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901337990366/1767002261",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901337990366/1767002261"
         }
       ]
     },
