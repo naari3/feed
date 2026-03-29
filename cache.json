@@ -1219,6 +1219,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901370060555",
+          "author": null,
+          "description": "github.com\nPicoRubyに出していた、SteepのアップデートPRがマージされた。\n出雲Ruby会議01の懇親会で、いきなりmakicamelさんにgithub.com\nPicoRubyに出していた、SteepのアップデートPRがマージされた。\n出雲Ruby会議01の懇親会で、いきなりmakicamelさんにPicoRubyテーブルに拉致されたのがきっかけだった。そこではすみさんに「Steepをアップデートしたらなんか動かないんだけど」と相談をもらったのがきっかけだった。\n一番大きな問題は、Steepのバージョンアップに伴ってcoreのrbs定義を読み込まないようにしていたことだった。\nRBSはCRubyの型定義を提供しているのだけど、これはPicoRubyが定義するメソッドの型定義とはちょっと違うので、今までは自前で型定義をしていた。\nしかしCRubyにそこそこ近くなってきたしCRuby相当の型定義を使おうと変更したのが、色々な問題を連れてきていて大変だった。\n作業はだいたいClaude Codeにやらせた。「型エラーが出ないようにする」ことはClaudeで出来ても、それが期待する形になっていないことがかなり多くて、それを地道に直していくのが中々大変だった。\n全体的にとても大変な作業ではあったけれど、様々なコードでまんべんなく(?)型エラーが出たおかげで、PicoRubyの多くの要素を知ることが出来たのは良い機会だった。\ngithub.com\nRaspberry Pi Pico の bootsel ボタンが押されているかどうかを検知するためのpicogemを実装した。\nはすみさんに「PicoRuby本体にあってもよいのでは」と言われたので、PicoRuby本体に実装を移すPRをしたい。",
+          "link": "https://commits.hatenablog.com/entry/2026/03/29/100000",
+          "publishedOn": "2026-03-29T01:00:00.000Z",
+          "wordCount": 542,
+          "title": "2026-03-28",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901370060555/1774746002",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901370060555/1774746002"
+        },
+        {
           "id": "hatenablog://entry/17179246901368757442",
           "author": null,
           "description": "流体に興味のある同僚に、だいぶ前に買ったサンドピクチャーの話をしていた。\ncommits.hatenablog.com\nサンドピクチャーを思いついた人はすごいと思う。気泡の微妙な隙間から砂が流れ落ちつつ、複数の種類の砂が微妙に違う速度で落ちていくことで模様が作られるようになっているのだけど、どうしたらそこにたどり着けるのかがわからない。\nサンドピクチャーの話をしたら、別の同僚が「それ家にあります」と言っていて良かった。マイナーインテリアが家にあるのが被っていて面白い。\n我が家のサンドピクチャーはずっと放置されていたのだけど、久々に取り出してメンテナンスをした。空気を抜いて水を入れたら、またいい感じに砂が落ちるようになった。しばらくデスクの上に置いておこうと思う。",
@@ -8885,18 +8900,7 @@
       "title": "κeenのHappy Hacκing Blog",
       "feedUrl": "https://keens.github.io/index.xml",
       "siteUrl": "https://KeenS.github.io/",
-      "articles": [
-        {
-          "id": "https://KeenS.github.io/blog/2025/12/29/senkeikatanogimuobujiekutopata_n/",
-          "author": null,
-          "description": "κeenです。線形型でできる面白そうなパターンを思い付いたので書いときます。",
-          "link": "https://keens.github.io/blog/2025/12/29/senkeikatanogimuobujiekutopata_n/",
-          "publishedOn": "2025-12-29T12:11:30.000Z",
-          "wordCount": null,
-          "title": "線形型の義務オブジェクトパターン",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "monome",
