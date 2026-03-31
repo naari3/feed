@@ -649,6 +649,21 @@
       "siteUrl": "https://blog.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901369729891",
+          "author": null,
+          "description": "(function(){if(!document.getElementById('naname-reader-style')){var a=document.createElement('style');a.id='naname-reader-style';a.innerHTML='.entry-naname{display:inline-flex;align-items:center;margin:10px 0;padding:8px 11px 8px 10px;background-color:#f0f1f4;border:none;border-radius:6px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;line-height:1.5;color:#535a5e;cursor:pointer;transition:all .2s ease;min-height:37px}.entry-naname:hover{background-color:#dddfe3}.entry-naname.is-active{background-color:#3D4245;color:#fff}.entry-naname svg{width:20px;height:20px;margin-right:4px;transform:rotate(-8deg);fill:currentColor}.entry-naname.is-active svg{fill:#fff}';document.head.appendChild(a)}var b=document.querySelectorAll('.entry-content');b.forEach(function(c){if(c.previousElementSibling&&c.previousElementSibling.classList.contains('entry-naname'))return;var d=document.createElement('button');d.className='entry-naname';d.innerHTML='\n\nナナメ読みする';c.before(d);var e=!1;d.addEventListener('click',function(){var f=d.querySelector('.btn-text');if(!e){c.style.transform='rotate(-4deg)';c.style.transition='transform .3s ease';c.style.transformOrigin='top center';d.classList.add('is-active');f.innerHTML='ナナメ読みをやめる';e=!0}else{c.style.transform='rotate(0deg)';d.classList.remove('is-active');f.innerHTML='ナナメ読みする';e=!1}})})})();\n\n\n\nいつもはてなブログをご利用いただきありがとうございます。\n現代社会は情報に溢れ、読みたい記事は増える一方です。\n本日、記事を効率的に読み解くための「ナナメ読み機能」をリリースいたしました。\n「ナナメ読み機能」とは？\n近年AI技術の発展により、長い文章を要約して読むことが当たり前になりつつあります。\n「もっと直感的に、物理的に、効率よく文章を追うことはできないか？」と。\n本機能を有効にすると、独自技術に基づき記事が最適な形態へと変化します。これにより視線の動きを最小限に抑え、流れるようなインプットが可能になります。\nご利用方法\n各記事のタイトル横にある「ナナメ読みする」ボタンを押してください。\n忙しい朝のチェックや、スキマ時間の情報収集に、ぜひ「ナナメ読み機能」をご活用ください。",
+          "link": "https://blog.hatenablog.com/entry/2026_april_fool1",
+          "publishedOn": "2026-03-31T23:00:00.000Z",
+          "wordCount": 975,
+          "title": "【新機能】情報過多の時代に、究極の効率化を。「はてなブログ・ナナメ読み機能」をリリースしました",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/45ac9a1e7e06556edbada351a362bf29e52f1b5c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260327%2F20260327155630.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/45ac9a1e7e06556edbada351a362bf29e52f1b5c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260327%2F20260327155630.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901370750908",
           "author": null,
           "description": "はてなブログ独自の集計による人気記事のランキング。2026年3月22日（日）から2026年3月28日（土）〔2026年3月第4週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    『プロジェクト・ヘイル・メアリー』がおもしろかった人に、次に薦めるＳＦ小説５選 - 基本読書\n by id:huyukiitoichi \n    \n2\n    AIによる実装の品質が微妙で毎回自分で指摘しまくる必要があったので、確認前に自動で品質を上げさせるようにした - $shibayu36->blog;\n by id:shiba_yu36 \n    \n3\n    AI を使って国立国会図書館デジタルコレクションを大量に読んでいる - 山下泰平の趣味の方法\n by id:cocolog-nifty \n    \n4\n    なぜ彼らは脱オタクファッションに失敗したのか in 2026 - シロクマの屑籠\n by id:p_shirokuma \n    \n5\n    AIエージェント自作のための基礎知識 - 誰かの役に立てばいいブログ\n by id:ymmt2005 \n    \n6\n    Claude Code のスキルとして動作する日報自動生成ツールを作った - じゃあ、おうちで学べる\n by id:syu-m-5151 \n    \n7\n    基本情報技術者試験をスキル棚卸しに使う - 45歳エンジニアが発見した意外な盲点 - Findy Tech Blog\n by id:findyinc \n    \n8\n    科学という福音と女たちの知らない男～『プロジェクト・ヘイル・メアリー』（ネタバレあり） - Commentarius Saevus\n by id:saebou \n    \n9\n    好みじゃない、でも100点だ！──『パリに咲くエトワール』 -…",
@@ -4364,16 +4379,6 @@
           "wordCount": 2754,
           "title": "26/01/02 象さんのスツール",
           "imageUrl": "https://assets.st-note.com/img/1767364680-AcEUi8pGzvh02lPbH6YBrOVs.png"
-        },
-        {
-          "id": "https://note.com/banfuture9/n/n1df30c512610",
-          "author": null,
-          "description": "・元日は母方の実家に集まる。祖父はかなり前に亡くなり、祖母はパワフルなおばあちゃんだったが、昨年体調を崩し、今日久々に会ったら車椅子だった。しかし会話は普通にすることができ、色々と話すことができたので良かった。\n・親戚の集まりが一番僕のボケが通るなと毎年思う。僕の冗談は僕をよく知っている場合にしか通用しないものが多いため、こういう場だと気兼ねなく適当なことを言えるのだろう。\n続きをみる",
-          "link": "https://note.com/banfuture9/n/n1df30c512610",
-          "publishedOn": "2026-01-01T10:40:07.000Z",
-          "wordCount": null,
-          "title": "26/01/01 徒歩7分は遠い",
-          "imageUrl": null
         }
       ]
     },
@@ -7565,6 +7570,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45243",
+          "author": "mamosuke",
+          "description": "昨年9月13日に任天堂が2026年2月15日(日)に京都で開催された「京都マラソン2026」のオフィシャルパートナーに決定と言う記事を書いたとき、「エントリーは9月22日なのでまだ間に合います。」と書きました。 ゲームプ...→→→この記事の続きを読む\n「SUPER MARIO BROS.40TH 京都マラソン2026」任天堂らしさを探した参戦記 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026040145243/",
+          "publishedOn": "2026-03-31T22:48:30.000Z",
+          "wordCount": null,
+          "title": "「SUPER MARIO BROS.40TH 京都マラソン2026」任天堂らしさを探した参戦記",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=45234",
           "author": "mamosuke",
