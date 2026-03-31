@@ -3075,6 +3075,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901369500498",
+          "author": null,
+          "description": "※この記事はPCBサービスのPCBWayの提供でお送りしております。\nデデン\nみなさんご存じかどうかわからないですが基板っていまめちゃめちゃ安く作れるんですよ。10枚で$5とか。\nそれとは別の話で、先日ニコ動アワードでルーキー賞をいただいた流れでニコニコ超会議に出展することになりました。何か物販でもやろっかなーということで「あ、そういえば基板バッジや！」と思い立ちまして……やってみたらこんな感じで作ることができました。\n\n\n\n\n\nウッ、最高……楽しい……\n\nというわけで、このエントリでは基板バッジ（および基板スタンド）の作り方を解説していきます。\nちなみに動画版もあるので動画で見たい人はこちらをどうぞ。\nwww.youtube.com\n作ったバッジと基板スタンドはニコニコ超会議で販売するほか、オンラインストアでも予約を受け付けています。\nnomolk.base.shop\n基板バッジの基礎知識\nバッジをデザインする前に、どういうものであれば作れるのかを知っておく必要があります。\n\n上半分が色見本、下半分には普通の電子回路の基板が作ってあります。\n基板を構成する素材\nレジスト……一般的な基板の表面素材。PCBWayの場合は以下の色が選べますが、１枚の基板の中で使えるのは１色だけです。\n\nシルク……基板表面に図や文字を印刷するための塗料。これもPCBWayの場合は色が選べます。同じく基板ごとに１色だけ。\n\n基材……これは基板の中身の素材です。外にはあんまり露出させない部分ですが、出そうと思えば出せるのでバッジづくりにおいてはデザイン要素として使えます。\n銅……一般的な基板ではランド（部品をはんだ付けする部分）などに使われる素材です。あと基板の内側を通っている配線も銅です。銅といいながら色がシルバーですが、これは表面に露出させる場合は表面加工がおこなわれるためです。\nあとは、第五の…",
+          "link": "https://nomolk.hatenablog.com/entry/2026/03/31/220000",
+          "publishedOn": "2026-03-31T13:00:00.000Z",
+          "wordCount": 1102,
+          "title": "オリジナル基板を注文して、光る基板バッジを作ると最高～作り方がマジでわかる完全解説（動画付き）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/3fe062624bc3d95eba7184d959bb931ab0cdfcdc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260328%2F20260328164619.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/3fe062624bc3d95eba7184d959bb931ab0cdfcdc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260328%2F20260328164619.jpg"
+        },
+        {
           "id": "hatenablog://entry/17179246901369148476",
           "author": null,
           "description": "機械の声が聞こえる。\nwww.youtube.com\nwww.nicovideo.jp\n恒例の動画の技術解説エントリです。\nといっても今回はAIの言いなりになっているだけで自分は原理等なにもわかってないので、AIに解説してもらおうと思います。\n手作りシンセサイザーについて\nまず全体の図面（？）を貼っておきます。\n\nこれをふまえて、以下、ChatGPTによる解説です。といっても結果的に動かなかったやつなので説明を聞いたところでどうなんだという話ですが…。\n\n\n\n紙と炭素で音が鳴るシンセの話\nこの回路、見た目はかなり素朴なのに、ちゃんと「シンセサイザー」になっているのが面白いところだよ。\nやっていることは一言でいうと、LC発振＋ゆるい増幅。ただしその“ゆるさ”を、炭素素子や紙コンデンサみたいな不安定な部品に任せているのがポイントなんだ。\n■ 全体像：どうやって音が出ているか\n回路の中心は「発振ノード」。\nその揺れを作っているのが、\nコイル（L）\n紙コンデンサ（C）*1\nこの2つの組み合わせ。いわゆるLC共振回路だね。\nここにエネルギーを供給して、減衰せずに揺れ続けるようにしているのが、\n炭素素子（可変抵抗的な役割）\nバイアス抵抗*2\nという構成。\n■ コイル＋紙コンデンサ：音程を決める部分\nコイルとコンデンサで決まるのは、振動の速さ＝音程。\nコンデンサが大きい → ゆっくり揺れる → 低い音\nコンデンサが小さい → 速く揺れる → 高い音\n紙コンデンサを「面積で変える」っていうのは、つまり容量を直接いじって音程を変えているわけだね。\nここはかなり直感的で、物理がそのまま音になる部分。\n■ 炭素素子：発振を成立させる“あいまいな増幅”\n普通の発振回路だと、トランジスタとかオペアンプで「きっちり増幅」するんだけど、この回路は違う。\n炭素素子*3を使っている。\n炭素は、\n圧力で抵抗値…",
@@ -6993,21 +7008,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/91a1512e8b0bbdb242875f3ca87466f8568759ff/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260110%2F20260110000835.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901338826228",
-          "author": null,
-          "description": "今年もなにやら散財する一年だった。\n玄米茶\nドライレイヤー\nタニタの温湿度計\nin.T\nJackery SolarSaga 100\nランドリーラック\nスチール引き出し\nアイマスク\nキューピーコーワヒーリング\nAirTagのパチモン\nスマホストラップ\nコロンビアの手袋\nReady or Not\n靴\nハンディファン\n水筒\n靴 2\nペルヨハン\nミステリーランチのリュック\nMGSΔ\nヒーロークリップ\nR1エア\n防水袋\nおしまい\n玄米茶\n\n一保堂茶舗 極上玄米茶200g袋\n\n一保堂茶舗\nAmazon\n\nいつもこの玄米茶を飲んでいるのだが、今年もたくさん買った。特にこれといった特徴のない玄米茶だが、香ばしくて味もしっかりしているのでおすすめ。\nドライレイヤー\n\nfinetrack ファイントラック メンズ ドライレイヤークールＴ S ブラック\n\nfinetrack(ファイントラック)\nAmazon\n\n大阪万博やカンファレンスなどの遠出で着るために購入。この下着は汗を吸うのではなく、汗を外に押し出すことで体の冷えを防ぐというアイテムだ。ゆえにこの上からさらにTシャツなどを着て対応するのだが、移動でかいた汗で冷えて疲労することがほとんどなくなった。暑い日の必携品になりそうだ。しかし価格はちょっと高め。\nタニタの温湿度計\n\nタニタ Tanita 温湿度計 一目で室内環境がわかる 温度 湿度 アナログ 壁掛け 卓上 グレー マグネット TT-587-GY\n\nTANITA\nAmazon\n\n家に温度計も湿度計もなかったので、就労環境のオブザーバビリティを向上するために購入。これのおかげで「湿度が下がっているから加湿器を動かそう」といった判断ができるようになり、環境が良くなった。なにより、部屋の温度や湿度が目に見える形でわかるのは面白い。\nin.T\n\nインナーシャツ2枚組 Tシャツ専用 in.T(イ…",
-          "link": "https://blog.3qe.us/entry/2025/12/31/213235",
-          "publishedOn": "2025-12-31T12:32:35.000Z",
-          "wordCount": null,
-          "title": "買ってよかったもの 2025",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/96b07c616da1678d9f71f28e52cb573efbf89cb5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31Ojl9a8olL._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/96b07c616da1678d9f71f28e52cb573efbf89cb5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F31Ojl9a8olL._SL500_.jpg"
         }
       ]
     },
