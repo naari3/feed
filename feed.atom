@@ -2,10 +2,65 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-03-31T13:29:55.980Z</updated>
+    <updated>2026-03-31T14:29:21.290Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[RISC-VプロセッサによるGitHub Actionsランナーを無料提供、オープンソースプロジェクトに。RISC-V普及促進団体「RISE」が発表]]></title>
+        <id>https://www.publickey1.jp/blog/26/risc-vgithub_actionsrisc-vrise.html</id>
+        <link href="https://www.publickey1.jp/blog/26/risc-vgithub_actionsrisc-vrise.html"/>
+        <updated>2026-03-31T15:15:40.000Z</updated>
+        <summary type="html"><![CDATA[オープンかつ無料で使えるプロセッサの命令セットである「RISC-V」（リスクファイブ）のソフトウェアエコシステム発展を推進する団体「RISE」（RISC-V Software Ecosystem）が、オープンソースプロジェクト向けにRISC...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最近14]]></title>
+        <id>https://note.com/ecolidelvsvc11/n/nfcf2a012c5f9</id>
+        <link href="https://note.com/ecolidelvsvc11/n/nfcf2a012c5f9"/>
+        <updated>2026-03-31T13:52:03.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは。最近はこんな感じです。
+
+
+続きをみる]]></summary>
+        <author>
+            <name>ティラノサウルスのぼんじり</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Claude Code Opusはデバイスドライバも作れる / VAIO SX14-Rのキーボードバックライトを点灯させよ]]></title>
+        <id>hatenablog://entry/17179246901371416096</id>
+        <link href="https://blog.3qe.us/entry/2026/03/31/224919"/>
+        <updated>2026-03-31T13:49:19.000Z</updated>
+        <summary type="html"><![CDATA[先日業務マシンを変えた。VAIO SX14-Rである。もともとプライベートで持っていたのだが、かなり出来が良かったので業務PCとしても採用したのだ。
+blog.3qe.us
+で、一つ問題があった。キーボードバックライトが点灯しないのだ。
+バックライトを点灯させる旅
+もともとLinuxにはvaio-laptopというデバイスドライバがあるのだが、これがちょっと古いのか、最新モデルであるSX14-Rには対応していないようで、うまくバックライトを認識しなかった。
+とはいえ薄暗い場所などでは困ってしまうので、なんとかならないか、という点をOpusに尋ねたところ、色々な方法でリバースエンジニアリングを開始した。
+/sys/class/leds/vaio::kbd_backlight/brightnessに何かないか
+ACPIテーブル(DSDT)の情報はないか
+Embedded Controller経由の情報はないか
+すると、OpusはDSDTに KBBL という4ビットのフィールドがあることを発見した。
+sudo cat /sys/firmware/acpi/tables/DSDT > /tmp/dsdt.dat
+sudo zypper install acpica
+iasl -d /tmp/dsdt.dat
+grep -i -E "kbd|backlight|KBBL|keyboard.*light" /tmp/dsdt.dsl
+               KBBL,   4,
+            PKBD,   8,
+
+
+
+Opusによれば、これはKeyBoard BackLight、すなわちキーボードバックライト用のフラグだという。
+するとOpusはこのオフセットを計算しはじめた。
+grep -n -B 10 -A 5 "KBBL" /tmp/dsdt.dsl
+41251…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[オリジナル基板を注文して、光る基板バッジを作ると最高～作り方がマジでわかる完全解説（動画付き）]]></title>
         <id>hatenablog://entry/17179246901369500498</id>

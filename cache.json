@@ -5631,6 +5631,16 @@
       "siteUrl": "https://note.com/ecolidelvsvc11",
       "articles": [
         {
+          "id": "https://note.com/ecolidelvsvc11/n/nfcf2a012c5f9",
+          "author": null,
+          "description": "こんにちは。最近はこんな感じです。\n\n\n続きをみる",
+          "link": "https://note.com/ecolidelvsvc11/n/nfcf2a012c5f9",
+          "publishedOn": "2026-03-31T13:52:03.000Z",
+          "wordCount": null,
+          "title": "最近14",
+          "imageUrl": null
+        },
+        {
           "id": "https://note.com/ecolidelvsvc11/n/n8eaa03bf39e7",
           "author": null,
           "description": "音MAD界隈ってすげーところだよな。\n普通に生きてたら絶対関わらない様なヤバいクリエイター達とほんの一瞬だけでも関わる事が出来るんだから。\n\n続きをみる",
@@ -6824,6 +6834,21 @@
       "feedUrl": "https://blog.3qe.us/rss",
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901371416096",
+          "author": null,
+          "description": "先日業務マシンを変えた。VAIO SX14-Rである。もともとプライベートで持っていたのだが、かなり出来が良かったので業務PCとしても採用したのだ。\nblog.3qe.us\nで、一つ問題があった。キーボードバックライトが点灯しないのだ。\nバックライトを点灯させる旅\nもともとLinuxにはvaio-laptopというデバイスドライバがあるのだが、これがちょっと古いのか、最新モデルであるSX14-Rには対応していないようで、うまくバックライトを認識しなかった。\nとはいえ薄暗い場所などでは困ってしまうので、なんとかならないか、という点をOpusに尋ねたところ、色々な方法でリバースエンジニアリングを開始した。\n/sys/class/leds/vaio::kbd_backlight/brightnessに何かないか\nACPIテーブル(DSDT)の情報はないか\nEmbedded Controller経由の情報はないか\nすると、OpusはDSDTに KBBL という4ビットのフィールドがあることを発見した。\nsudo cat /sys/firmware/acpi/tables/DSDT > /tmp/dsdt.dat\nsudo zypper install acpica\niasl -d /tmp/dsdt.dat\ngrep -i -E \"kbd|backlight|KBBL|keyboard.*light\" /tmp/dsdt.dsl\n               KBBL,   4,\n            PKBD,   8,\n\n\n\nOpusによれば、これはKeyBoard BackLight、すなわちキーボードバックライト用のフラグだという。\nするとOpusはこのオフセットを計算しはじめた。\ngrep -n -B 10 -A 5 \"KBBL\" /tmp/dsdt.dsl\n41251…",
+          "link": "https://blog.3qe.us/entry/2026/03/31/224919",
+          "publishedOn": "2026-03-31T13:49:19.000Z",
+          "wordCount": null,
+          "title": "Claude Code Opusはデバイスドライバも作れる / VAIO SX14-Rのキーボードバックライトを点灯させよ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901371416096/1774964959",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901371416096/1774964959"
+        },
         {
           "id": "hatenablog://entry/17179246901371368580",
           "author": null,
@@ -8978,6 +9003,16 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/risc-vgithub_actionsrisc-vrise.html",
+          "author": null,
+          "description": "オープンかつ無料で使えるプロセッサの命令セットである「RISC-V」（リスクファイブ）のソフトウェアエコシステム発展を推進する団体「RISE」（RISC-V Software Ecosystem）が、オープンソースプロジェクト向けにRISC...",
+          "link": "https://www.publickey1.jp/blog/26/risc-vgithub_actionsrisc-vrise.html",
+          "publishedOn": "2026-03-31T15:15:40.000Z",
+          "wordCount": null,
+          "title": "RISC-VプロセッサによるGitHub Actionsランナーを無料提供、オープンソースプロジェクトに。RISC-V普及促進団体「RISE」が発表",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/awsamazon_aurora_postgresql.html",
           "author": null,
