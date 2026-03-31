@@ -125,6 +125,38 @@ nomolk.base.shop
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Waylandでtmuxのコピーが使えなくなっていたがwl-copyで治った</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/03/31/155930" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>業務PCを入れ替えたところ、tmuxのコピー機能が使えなくなっていた。
+元々の.tmux.confは以下のような感じになっていた:
+setw -g mode-keys vi
+bind-key    -T copy-mode-vi v     send-keys -X begin-selection
+bind-key    -T copy-mode-vi y     send-keys -X copy-pipe-and-cancel &quot;xsel -b&quot;
+bind-key    -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel &quot;xsel -b&quot;
+xselがクリップボードを操作するためのコマンドなのだけれど、これはXOrg専用みたい。もろもろ入れ替えてWaylandになったので、使えなくなっていた。
+Waylandではクリップボードを操作するためにwl-copyとwl-pasteを利用する。これらはwl-clipboardというパッケージで入手できる。
+qiita.com
+.tmux.confの該当部分を置換してうまく動くようになった:
+bind-key    -T copy-mode-vi v     send-keys -X begin-selection
+bind-key    -T copy-mode-vi y     send-keys -X copy-pipe-and-cancel &quot;wl-copy&quot;
+bind-key    -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel &quot;wl-copy&quot;</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901371288855/1774940370" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://medium.com/nttlabs?source&#x3D;rss----74f667786e9f---4" target="_blank"
               rel="noopener">nttlabs - Medium</a></h3>
           <section class="articles-per-source">
@@ -18502,7 +18534,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-03-31T06:23:44.748Z">2026-03-31T06:23:44.748Z</time>
+    <time id="build-timestamp" datetime="2026-03-31T07:28:51.018Z">2026-03-31T07:28:51.018Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
