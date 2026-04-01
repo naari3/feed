@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-01T13:29:38.228Z</updated>
+    <updated>2026-04-01T14:29:21.759Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -59,6 +59,16 @@ F…]]></summary>
         <summary type="html"><![CDATA[はじめに OAuthは、アプリケーションが他のアプリケーションのデータにアクセスするための権限を、安全に付与するための仕組みです。 アクセス権を付与するためには、通常、そのデータの所有者（＝ユーザ）に...]]></summary>
         <author>
             <name>四谷 兼三</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[本サイトの IPv4 アクセスをブロックするテスト]]></title>
+        <id>https://blog.jxck.io/entries/2026-04-01/ipv6-only.html</id>
+        <link href="https://blog.jxck.io/entries/2026-04-01/ipv6-only.html"/>
+        <updated>2026-04-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4/1 なので、本サイトを IPv6 のみのアクセスに限定することにした。背景を解説する。]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
