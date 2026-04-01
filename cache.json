@@ -7223,16 +7223,6 @@
           "wordCount": 622,
           "title": "launchd-ui: macOSのlaunchdを使ったcron処理をGUIで管理するアプリを作った",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2026/01/01/mubook-hon-v2/",
-          "author": null,
-          "description": "mubook-honは、Dropboxに保存したEPUB/PDFファイルをブラウザで読めるウェブアプリです。\nNotionと連携して、読書メモや進捗をNotionに記録できます。\nmubook-hon: https://mubook-hon.jser.workers.dev/\nGitHub: https://github.com/azu/mubook-hon\nURLが https://mubook-hon.vercel.app/ から https://mubook-hon.jser.workers.dev/ に変更されました。\n前回の記事から約2年半が経ち、大きな変更をしたので紹介します。\nmubook-hon: Dropboxに保存したepubやPDFを読むビューア、Notionにメモや読んでいる位置を記録できるMobile/PC対応のウェブアプリ | Web Scratch\nEPUBビューアーをBibiからfoliate-jsに移行\nEPUBの表示エンジンをBibiからfoliate-jsに移行しました。\nfeat: replace Bibi with foliate-js for EPUB viewer by azu · Pull Request #28\nfoliate-jsはFoliateというLinux向けの電子書籍リーダーのJavaScript実装です。\nWeb Componentベースで実装されており、カスタマイズ性の高い点が特徴です。\nBibiと比較して、次の点が改善されました。\n初期化の高速化 - インクリメンタルパースにより、EPUBファイルの読み込みが高速化\nメモリ消費の削減 - メモリ管理の改善により、メモリ使用量が減少\n仕組みの簡素化 - Bibiの時はMSWでService Workerプロキシを実装してBibiの求める形式/URLのパスで返す必…",
-          "link": "https://efcl.info/2026/01/01/mubook-hon-v2/",
-          "publishedOn": "2026-01-01T12:36:00.000Z",
-          "wordCount": null,
-          "title": "mubook-hon v2: EPUBビューアーをfoliate-jsに移行、Cloudflare Workersへ移行",
-          "imageUrl": null
         }
       ]
     },
@@ -7241,6 +7231,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=35731",
+          "author": "四谷 兼三",
+          "description": "はじめに OAuthは、アプリケーションが他のアプリケーションのデータにアクセスするための権限を、安全に付与するための仕組みです。 アクセス権を付与するためには、通常、そのデータの所有者（＝ユーザ）に...",
+          "link": "https://eng-blog.iij.ad.jp/archives/35731",
+          "publishedOn": "2026-04-01T00:32:55.000Z",
+          "wordCount": null,
+          "title": "ユーザの承認操作なしでアプリケーション連携を実現するOAuth拡張仕様",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=35723",
           "author": "IIJ Engineers Blog編集部",
