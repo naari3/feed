@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-01T04:08:02.649Z</updated>
+    <updated>2026-04-01T05:38:30.641Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【エイプリルフール】「ナナメ読み機能」提供終了のお知らせ]]></title>
+        <id>hatenablog://entry/17179246901369731214</id>
+        <link href="https://blog.hatenablog.com/entry/2026_april_fool2"/>
+        <updated>2026-04-01T04:30:00.000Z</updated>
+        <summary type="html"><![CDATA[本日午前中に発表いたしました新機能「ナナメ読み機能」につきまして、多くの皆さまにお試しいただき、誠にありがとうございました。
+すでにお気づきの方も多いかと思いますが、本機能はエイプリルフールの企画としてお届けいたしました。「物理的にナナメにするだけ」という力技のソリューションでしたが、お楽しみいただけましたでしょうか？
+本機能は、本日24時をもって提供を終了し、明日には元の「まっすぐな」はてなブログに戻ります。
+企画に込めた思い
+近年はAIによって物事を効率よく要約し、短時間で情報を摂取できる時代になりました。しかし、そんな時代だからこそ、はてなブログは「効率」の対極にあるものを大切にしたいと考えています。
+書き手が試行錯誤して選んだ言葉、一文字一文字に込められた思い、そして行間に漂う情緒。 それらは「ナナメ読み」では決して掬い上げることのできない、ブログというメディアの宝物です。
+効率化の波に少しだけ抗って、大切な誰かのブログを一文字一文字じっくりと楽しむ。
+はてなブログは今年15周年を迎えます。
+はてなブログ開発チーム一同
+
+(function(){if(!document.getElementById('naname-reader-style')){var a=document.createElement('style');a.id='naname-reader-style';a.innerHTML='.entry-naname{display:inline-flex;align-items:center;margin:10px 0;padding:8px 11px 8px 10px;background-color:#f0f1f4;border:none;border-radius:6px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;line-height:1.5;color:#535a5e;cursor:pointer;transition:all .2s ease;min-height:37px}.entry-naname:hover{background-color:#dddfe3}.entry-naname.is-active{background-color:#3D4245;color:#fff}.entry-naname svg{width:20px;height:20px;margin-right:4px;transform:rotate(-8deg);fill:currentColor}.entry-naname.is-active svg{fill:#fff}';document.head.appendChild(a)}var b=document.querySelectorAll('.entry-content');b.forEach(function(c){if(c.previousElementSibling&&c.previousElementSibling.classList.contains('entry-naname'))return;var d=document.createElement('button');d.className='entry-naname';d.innerHTML='
+
+ナナメ読みする';c.before(d);var e=!1;d.addEventListener('click',function(){var f=d.querySelector('.btn-text');if(!e){c.style.transform='rotate(-4deg)';c.style.transition='transform .3s ease';c.style.transformOrigin='top center';d.classList.add('is-active');f.innerHTML='ナナメ読みをやめる';e=!0}else{c.style.transform='rotate(0deg)';d.classList.remove('is-active');f.innerHTML='ナナメ読みする';e=!1}})})})();]]></summary>
+        <author>
+            <name>週刊はてなブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ユーザの承認操作なしでアプリケーション連携を実現するOAuth拡張仕様]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=35731</id>
