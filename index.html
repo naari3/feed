@@ -78,6 +78,39 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">dockerfile-pin: DockerfileやComposeのイメージをSHA256でピン留めするCLIツールを作った</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2026/04/01/dockerfile-pin/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>DockerfileやComposeファイルのイメージ参照に@sha256:を自動で追加するCLIツール dockerfile-pin を作りました。
+GitHub: azu/dockerfile-pin
+なぜ作ったか
+trivyへのサプライチェーン攻撃などの事件を見ていると、次に狙われるのはDocker Hubかなと思ったのがきっかけです。
+CIでDocker Hubへのpushをしているケースは多いので、そこに悪意あるコードが混入する事件は今後も起きるだろうと思っています。
+Dockerイメージのタグ（例：node:20）はデフォルトで可変（mutable）です。同じタグ名で中身を上書きできるため、悪意ある第三者がレジストリへのアクセスを得た場合、既存タグに対して改竄されたイメージをpushできます。
+Can a Docker Hub tag have its content changed? - Docker Community Forums
+Docker Hubなどのレジストリは安全とは限りません。
+npmのようにトークンの制限が厳しくなっていたり、デフォルトでタグがimmutableな場所であっても、axiosのように問題が起きることはあります。
+Docker HubにはImmutable tagsという機能がありますが、これはリポジトリオーナー側が設定するもので、イメージを利用する側がコントロールできるものではありません。
+@sha256:を付与することで、イメージの不変性を保証できます。digestはイメージのコンテンツハッシュなので、内容が異なればdigestも変わり、改竄を検知できます。npmのlockfileがパッケージのintegrityをハッシュで固定するのと同じ考え方です。
+
+# Before: タグのみ（可変）
+F…</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -14843,6 +14876,111 @@ www.youtube.com
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Photo Cleaner: iPhoneの古い写真をまとめて削除できるiOSアプリを作った</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2026/01/06/photo-cleaner/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>iPhoneから古い写真をまとめて削除するためのiOSアプリ Photo Cleaner を作りました。
+GitHub: azu/photo-cleaner
+Amazon Photosなどにバックアップ済みの古い写真をiPhoneから削除して、ストレージを解放するためのアプリです。
+なぜ作ったか
+iPhoneの写真が増えすぎてストレージが足りなくなったとき、古い写真をまとめて削除したいことがあります。
+しかし、標準の写真アプリでは大量の写真を効率的に選択・削除する機能がなく、一枚ずつ選択するのは現実的ではありません。
+既存のアプリを探しても、数万枚の写真を処理できるものが見つかりませんでした。
+そこで、シンプルに古い写真をまとめて削除できるアプリを作ることにしました。
+実際に数万枚の写真を削除してみましたが、問題なく動作しています。
+主な機能
+
+Photo Cleanerには次の機能があります。
+指定した期間より古い写真を自動で抽出して削除
+お気に入りに設定した写真は自動的に保護
+特定のアルバムを保護対象として設定可能
+削除前に月ごとのコンタクトシート（まとめ画像）を生成
+動画は削除対象から除外
+コンタクトシート機能
+
+Photo Cleanerは実際に写真を削除する前にコンタクトシートを生成する機能があります。
+コンタクトシートは、月ごとの写真をグリッド状にまとめた一枚の画像です。
+削除してしまう前に、その月にどんな写真があったかを一覧で残しておけます。
+生成したコンタクトシートは指定したアルバムに保存されるため、後から振り返ることができます。
+設定項目
+
+次の項目を設定できます。
+項目
+デフォルト値
+
+
+
+
+バックアップ猶予期間
+730日（2年）
+
+
+保護対象アルバム
+Keep
+
+
+コンタクトシート生成
+ON
+
+
+コンタクトシート保存先
+Keep
+
+
+
+インストールと使い方
+Photo CleanerはApp Storeで配布していないため、Xcodeでビルドしてインストールする必要があります。
+なぜApp Storeで配布しないのか
+AltStore PALやSideStoreなどのサードパーティストアでの配布も検討しましたが、現状では課題が多いです。
+AltStore PALで配布するにはAppleの公証（Notarization）が必要です。
+公証にはAppleの承認プロセスがあり、個人開発のアプリには負担が大きいです。
+SideStoreはApple IDとパスワードを入力する必要があります。
+今回はワンショットで使うアプリなので、サードパーティストアでの配布は一旦諦めました。
+また、無料のApple Developerアカウントでは次の制限があります。
+アプリの署名が7日で期限切れになる
+同時にインストールできるアプリは3つまで
+週に10個までしかアプリをインストールできない
+これらの制限を回避するにはApple Developer Program（年間$99）への加入が必要です。
+自分用のツールであれば、Xcodeから直接インストールするのが最もシンプルな方法です。
+必要な環境
+Xcode 15以上
+iOS 17以上
+Apple Developer Account（無料枠で可）
+セットアップ手順
+リポジトリをクローンしてセットアップスクリプトを実行
+
+git clone https://github.com/azu/photo-cleaner.git
+cd photo-cleaner
+./setup.sh
+
+
+XcodeでConfigurationを設定
+PhotoCleaner.xcodeprojを開き、Project Settings → Info → Configurationsで、DebugとReleaseの両方にLocalConfigを指定します。
+⌘Rでビルド・実行
+削除の確認
+
+削除対象の写真を確認してから削除を実行できます。
+削除された写真は「最近削除した項目」に移動するため、30日以内なら復元可能です。
+まとめ
+Photo Cleanerは、iPhoneの古い写真をまとめて削除できるシンプルなアプリです。
+削除前にコンタクトシートを生成することで、月ごとの写真を1枚の画像に圧縮して残せます。
+GitHub: azu/photo-cleaner</span>
+                  </div>
+                  <img src="https://efcl.info/public/favicon.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -16096,30 +16234,6 @@ Cursorの素晴らしさ
                     <span>PS5のアンロック,mast1c0re exploitがPS4 12.00のゼーブデータでで動作,websrv v0.29,PS4 Payload SDK PS4-Payloads-1.024,pacbrew-repo v0.31,PSGameSpider 2026.01.英国でのNintendo Switch 2の販売台数,HATS-Tools 1.5.0,Video player for 3DS v1.6.0,RGBDS (Rednex Game Boy Development System) v1.0.1,ModMii 8.0.6,Play! 0.72,ScePSX Beta 0.1.7.10,NINTV-DS v6.3,hydra v0.3.0,Arisen Studio Beta v3.3.4,sm64coopdx v1.4.1,OpenTTD 15.0→→→この記事の続きを読む
 GameGaz Daily 2026.1.2 first appeared on 大人のためのゲーム講座.</span>
                   </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2026-01-01</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2026/01/02/100000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>elinlog.pocke.me
-Elinのコードを読むためのVSCode拡張を作った。
-コードを読むのがだいぶ楽になりそう。
-実装はほとんどClaude Codeで行った。仕様をしっかりテキストに落としたらだいたい望むものが出てきたので便利。
-一番難しいのはVSCode Marketplaceに拡張をアップロードするためにAzure DevOpsのアカウントを作るところだった。手順に従ってやっていても、ローディング画面がずっとぐるぐるし続けて進まなくなってしまっていた。URLのパスパラメータを消してサインアップ画面を出して登録したら何故かうまくいった。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901339272905/1767315600" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -18410,7 +18524,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-01T12:12:20.883Z">2026-04-01T12:12:20.883Z</time>
+    <time id="build-timestamp" datetime="2026-04-01T13:29:38.191Z">2026-04-01T13:29:38.191Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
