@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-02T12:12:04.717Z</updated>
+    <updated>2026-04-02T13:28:43.041Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AIに否定的な人ほどAIを万能だと思っている]]></title>
+        <id>hatenablog://entry/17179246901372152887</id>
+        <link href="https://blog.nishimu.land/entry/2026/04/02/215222?utm_source=feed"/>
+        <updated>2026-04-02T12:52:22.000Z</updated>
+        <summary type="html"><![CDATA[AIに否定的な人と話していると、むしろその人たちの方がAIを万能だと思っているような気がする。
+万能幻想と失望
+万能だと思っているから、一度試して思い通りにならないと「やっぱ使えない」で終わってしまう。でもそれは、とても優秀な新メンバーに何の説明もなく「よろしく」って言ってるようなもので、うまくいかなくて当然だと思う。
+AIは（今のところ）経験を蓄積できないので、あなたの常識を知らない。プロジェクトの経緯も、コードベースの癖も、チームの暗黙のルールも。知らなくて当然なのだけれど、万能だと思っていると「なんでこんなことも知らないの」になってしまう。
+対話でコンテキストを伝える
+1プロンプトで全部できるというのは幻想で、何度かやり取りしてコンテキストが伝わってから、計画を立てて、それから実行する。人間相手でも同じことをしているはず。
+lintや設定ファイルで暗黙知を仕組み化して、ハーネスとして築いていくと、この対話がどんどん楽になる。一度作った仕組みは次の会話でもそのまま使えるので、使えば使うほど伝達コストが下がっていく。
+まあ、進歩が速すぎて、来週にはこういう苦労もなくなるかもしれないのが恐ろしいところなのだけれど。
+自分でやった方が早い？
+「そんな手間かけるなら自分でやった方が早い」という人がいるのだけれど、それは自分を過大評価しすぎている気がする。AIの方がすでにほとんどの領域で優秀だし、その優秀さを並列で利用できる。自分一人では同時に一つのことしかできないけれど、AIなら複数の作業を同時に走らせられる。
+コンテキストを伝える手間を差し引いても、十分すぎるほどお釣りがくる。]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-04-01]]></title>
         <id>hatenablog://entry/17179246901371799086</id>
