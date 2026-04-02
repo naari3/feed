@@ -1219,6 +1219,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901371799086",
+          "author": null,
+          "description": "www.satofull.jp\nしばらく前に、ふるさと納税で福島の凍天を手に入れた。\nアメリカンドッグのような記事によもぎ餅が包まれているという、カロリー爆弾な食べ物。よもぎ大好きなので大好き。現地で揚げたてを食べるほうがやはり美味しいのだけど、冷凍のこれも悪くない。\n福島には親の実家があるため幼少期から何度も行っていたけど、凍天を食べたのはそれとは関係なく大人になってから。それ以来福島に行くと食べている。\n東京近郊にお住いの方は、日本橋ふくしま館で冷凍のものを買えるはず。うらやましいね。\nhttps://midette.com/",
+          "link": "https://commits.hatenablog.com/entry/2026/04/02/100000",
+          "publishedOn": "2026-04-02T01:00:00.000Z",
+          "wordCount": 505,
+          "title": "2026-04-01",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901371799086/1775091601",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901371799086/1775091601"
+        },
+        {
           "id": "hatenablog://entry/17179246901370060555",
           "author": null,
           "description": "github.com\nPicoRubyに出していた、SteepのアップデートPRがマージされた。\n出雲Ruby会議01の懇親会で、いきなりmakicamelさんにgithub.com\nPicoRubyに出していた、SteepのアップデートPRがマージされた。\n出雲Ruby会議01の懇親会で、いきなりmakicamelさんにPicoRubyテーブルに拉致されたのがきっかけだった。そこではすみさんに「Steepをアップデートしたらなんか動かないんだけど」と相談をもらったのがきっかけだった。\n一番大きな問題は、Steepのバージョンアップに伴ってcoreのrbs定義を読み込まないようにしていたことだった。\nRBSはCRubyの型定義を提供しているのだけど、これはPicoRubyが定義するメソッドの型定義とはちょっと違うので、今までは自前で型定義をしていた。\nしかしCRubyにそこそこ近くなってきたしCRuby相当の型定義を使おうと変更したのが、色々な問題を連れてきていて大変だった。\n作業はだいたいClaude Codeにやらせた。「型エラーが出ないようにする」ことはClaudeで出来ても、それが期待する形になっていないことがかなり多くて、それを地道に直していくのが中々大変だった。\n全体的にとても大変な作業ではあったけれど、様々なコードでまんべんなく(?)型エラーが出たおかげで、PicoRubyの多くの要素を知ることが出来たのは良い機会だった。\ngithub.com\nRaspberry Pi Pico の bootsel ボタンが押されているかどうかを検知するためのpicogemを実装した。\nはすみさんに「PicoRuby本体にあってもよいのでは」と言われたので、PicoRuby本体に実装を移すPRをしたい。",
@@ -7205,6 +7220,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=35744",
+          "author": "河内 海斗",
+          "description": "はじめに IIJデータセンターを象徴する松江データセンターパークで新棟（システムモジュール棟）が竣工してから約9カ月が経ちました。 今回は竣工後に実際データセンターで行われている運用の様子をご紹介しま...",
+          "link": "https://eng-blog.iij.ad.jp/archives/35744",
+          "publishedOn": "2026-04-02T00:23:46.000Z",
+          "wordCount": 1925,
+          "title": "松江データセンターパーク 新棟開設からの運用状況",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2026/03/78692eb8438a92f7e11a516981ad7fad-1.png"
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=35731",
           "author": "四谷 兼三",
