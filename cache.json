@@ -3545,6 +3545,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901363584034",
+          "author": null,
+          "description": "ブログ内のURLリダイレクトを管理画面から設定できる「リダイレクト設定」機能をリリースしました。\n記事のURLを変更したときや、古い記事を削除したときに、以前のURLにアクセスした読者を新しいページへ自動的に転送（リダイレクト）できるようになりました。\nこれにより、外部サイトや検索エンジンからのリンク切れを防ぎ、SEO評価を新しいURLへスムーズに引き継ぐことができます。\n\n対象のプラン\nはてなCMS\nはてなブログBusiness*1\nはてなブログ for DevBlog\n設定方法\n管理画面の「設定」＞「リダイレクト設定」から設定できます。\n詳しい操作方法は、ヘルプページをご参照ください。\nリダイレクト設定を行う - はてなCMSヘルプセンター\n\n*1:はてなブログBusinessプランは現在、新規お申し込みを停止しております",
+          "link": "https://staff.hatenablog.com/entry/2026/04/03/104815",
+          "publishedOn": "2026-04-03T01:48:15.000Z",
+          "wordCount": null,
+          "title": "【法人向け機能】リダイレクト設定機能をリリースしました",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/55e57fa6c180e3f70ab73eaf8a336024849728f9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260327%2F20260327175657.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/55e57fa6c180e3f70ab73eaf8a336024849728f9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260327%2F20260327175657.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901370781411",
           "author": null,
           "description": "いつもはてなブログをご利用いただきありがとうございます。\n4月1日(水) 15:00頃から30分程度、はてなスターのデータベースメンテナンスを行います。メンテナンス中は下記の操作が正常に行われない時間帯が発生します。\n新しくはてなスターをつけること\nまた、独自ドメインの設定に伴うはてなスターの移行に失敗する可能性が高いため、当該時間帯の独自ドメインの設定は非推奨とします。\n※メンテナンス時間帯も、はてなスターの表示は行われます。\nご利用のユーザーの皆さまには、ご迷惑をお掛け致しまして大変申し訳ございませんが、メンテナンスへのご理解ご協力をいただけますと幸いです。\nどうぞよろしくお願いいたします。",
@@ -6219,16 +6234,6 @@
           "wordCount": null,
           "title": "コロポックル 1月の予定",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/nasupman_nikki/n/n76ef243f0d2f",
-          "author": null,
-          "description": "あけましておめでとうございます。\n2026年になりました。なってしまいました。\n今年で29歳の年。30歳にリーチ。30歳までには身の振り方を決め切りたい。タイムリミットが刻一刻と近づいています。とても危機感のある1年になりそうです。\n続きをみる",
-          "link": "https://note.com/nasupman_nikki/n/n76ef243f0d2f",
-          "publishedOn": "2026-01-03T13:44:24.000Z",
-          "wordCount": 2299,
-          "title": "2026年 所信表明",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/a6413db64676b0f12cd3fb3eb0b2c9f5ff1257f7.png"
         }
       ]
     },
@@ -7543,6 +7548,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45268",
+          "author": "mamosuke",
+          "description": "ps5-payload-sdk v0.38,ps4-payload-sdk v0.8,ps5-payload-elfldr v0.22.2,ps5-payload-ftpsrv v0.18.3,ps5-payload-gdbsrv v0.7.4,ps5-payload-klogsrv v0.7.2,ps5-payload-shsrv v0.18.1,pacbrew-repo v0.33,ps4-linux-payloads v24,ps3netsrv-go v0.2.2,PS3 Icon Tool 1.3,PeaSyo v1.6.2,FuseCheck 1.0.2,Breeze beta103.4,Luma3DS v13.4,J-Runner with Extras V3.4.0-r4,shadPS4 Pre-release-shadPS4-2026-04-02-26e2689,nullDC4Wii alpha 0.15.ps4-re-utilities→→→この記事の続きを読む\nGameGaz Daily 2026.4.3 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026040345268/",
+          "publishedOn": "2026-04-03T00:51:21.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.4.3",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=45265",
           "author": "mamosuke",
