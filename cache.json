@@ -449,21 +449,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/c5aa4ea98cef8d4c5c5e8c55059114a0f7801f3d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260105%2F20260105183404.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901340577437",
-          "author": null,
-          "description": "stackoverflowの年間質問数グラフを見ていると非常に右肩グラフであることがわかって2023年あたりからのAIの威力というか、ガックガクなんですね・・・。\nStackOverflow questions over time, source SEDE; sadface, lunch has been eaten pic.twitter.com/tXZShoIBfG\n— Marc Gravell (@marcgravell) 2025年5月15日\n   \nサウンドプログラミングをやったるぞーと思って教科書読みながらgemini先生に質問していたらまあばっちりいい感じの回答が来まくっていて、高校生のときにあったらどんなに世界が変わっていたかと思った次第です。エウレカ！エウレカ！みたいな。\n（ド忘れを含む）辞書的な質問、数学の途中式、イメージの話など、何といってもこちらのペースで租借しながらできるのが強いです。耳や目（授業形式）よりチャット形式（文字情報）というのもありがたい。あと教え方がうまいというか、世界規模の学習データを食ってるのでしょうね・・・。適当な質問も汲み取ってくれるのも助かるし、答えに少しでも触れていたら鼓舞してくれるのもいいですね。\nもし理解できない数学の本などが棚にあって、気まぐれでgeminiと会話しながらやってみると案外するする読めるかもしれません。プログラミングの質問は１段上ぐらいで、嘘かどうか判断できるところ？を許容としていましたけど、高校、大学数学全般の家庭教師のロールなら全然ありっすね。",
-          "link": "https://akkera102.hatenablog.com/entry/2026/01/04/214943",
-          "publishedOn": "2026-01-04T12:49:43.000Z",
-          "wordCount": 515,
-          "title": "gemini先生2",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901340577437/1767532029",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901340577437/1767532029"
         }
       ]
     },
@@ -1218,6 +1203,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901372513581",
+          "author": null,
+          "description": "ついに車のローンを完済した。\n元々秋頃に完済予定だったのだけど、確定申告で還付された金額+数万円で完済できたので、繰上返済した。\n毎月の支出が少し減るのが嬉しい。\n\n世界鉄道文化史 (講談社学術文庫 2718)\n\n作者:小島 英俊\n講談社\nAmazon\n\nここしばらく読んでいた世界鉄道文化史を読み終わった。やや読みづらい文体なところもあったけれど面白かった。\n明治の頃には東京からパリまで行ける鉄道の切符があった、という話が面白かった。\n注意点として、この本ではオリエント急行殺人事件の重要なネタバレが書かれている。有名な話だし公知の事実ぐらいに思っているのかも知れないけれど、なかなかひどい。私は知っていたので無傷だった。",
+          "link": "https://commits.hatenablog.com/entry/2026/04/04/100000",
+          "publishedOn": "2026-04-04T01:00:00.000Z",
+          "wordCount": 540,
+          "title": "2026-04-03",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/6f621e020ac57b87f9e8ac6dbb6df8694c308820/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41EFLHy9qJL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/6f621e020ac57b87f9e8ac6dbb6df8694c308820/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41EFLHy9qJL._SL500_.jpg"
+        },
         {
           "id": "hatenablog://entry/17179246901371799086",
           "author": null,
@@ -6592,7 +6592,18 @@
       "title": "unknown protocol",
       "feedUrl": "https://note.com/usop/rss",
       "siteUrl": "https://note.com/usop",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/usop/n/nd7c35c8cfa26",
+          "author": null,
+          "description": "久しぶりに書きます。昔から、英語を勉強しないとと思いつつ、TOEICの問題集とかで、その問題のためだけに登場する人物とかシチュエーションとかが苦手で、現実の問題に関する英文を読むようにしようとコツコツ書き溜めたのが、ここに書くきっかけでした。\n色々と事情があって、ここに書くのをやめてたのですが、私の仕事の環境も変わり、かつLLMのおかげで、もともとやりたかったことも短時間でできるようになったので復活させてみます。\n続きをみる",
+          "link": "https://note.com/usop/n/nd7c35c8cfa26",
+          "publishedOn": "2026-04-04T01:17:35.000Z",
+          "wordCount": null,
+          "title": "axiosのポストモーテムをTOEIC長文問題風に読む",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "暴力とも子",
@@ -7503,6 +7514,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45272",
+          "author": "mamosuke",
+          "description": "Fusée Gelée(NVIDIA Tegraプロセッサの脆弱性を利用し起動時に任意のコードを実行するcoldboot exploit)を利用したりModチップを利用したりすることで起動することができるNintendo SwitchのカスタムファームウェアAtmosphère 1.11.0(931e3c37f)がリリースされました。→→→この記事の続きを読む\n22.0.0サポート Atmosphère 1.11.0(931e3c37f) first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026040445272/",
+          "publishedOn": "2026-04-04T00:48:04.000Z",
+          "wordCount": null,
+          "title": "22.0.0サポート Atmosphère 1.11.0(931e3c37f)",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=45270",
           "author": "mamosuke",

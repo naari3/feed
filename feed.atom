@@ -2,10 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-04T00:08:08.312Z</updated>
+    <updated>2026-04-04T01:31:11.212Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[axiosのポストモーテムをTOEIC長文問題風に読む]]></title>
+        <id>https://note.com/usop/n/nd7c35c8cfa26</id>
+        <link href="https://note.com/usop/n/nd7c35c8cfa26"/>
+        <updated>2026-04-04T01:17:35.000Z</updated>
+        <summary type="html"><![CDATA[久しぶりに書きます。昔から、英語を勉強しないとと思いつつ、TOEICの問題集とかで、その問題のためだけに登場する人物とかシチュエーションとかが苦手で、現実の問題に関する英文を読むようにしようとコツコツ書き溜めたのが、ここに書くきっかけでした。
+色々と事情があって、ここに書くのをやめてたのですが、私の仕事の環境も変わり、かつLLMのおかげで、もともとやりたかったことも短時間でできるようになったので復活させてみます。
+続きをみる]]></summary>
+        <author>
+            <name>unknown protocol</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2026-04-03]]></title>
+        <id>hatenablog://entry/17179246901372513581</id>
+        <link href="https://commits.hatenablog.com/entry/2026/04/04/100000"/>
+        <updated>2026-04-04T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ついに車のローンを完済した。
+元々秋頃に完済予定だったのだけど、確定申告で還付された金額+数万円で完済できたので、繰上返済した。
+毎月の支出が少し減るのが嬉しい。
+
+世界鉄道文化史 (講談社学術文庫 2718)
+
+作者:小島 英俊
+講談社
+Amazon
+
+ここしばらく読んでいた世界鉄道文化史を読み終わった。やや読みづらい文体なところもあったけれど面白かった。
+明治の頃には東京からパリまで行ける鉄道の切符があった、という話が面白かった。
+注意点として、この本ではオリエント急行殺人事件の重要なネタバレが書かれている。有名な話だし公知の事実ぐらいに思っているのかも知れないけれど、なかなかひどい。私は知っていたので無傷だった。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[22.0.0サポート Atmosphère 1.11.0(931e3c37f)]]></title>
+        <id>https://gamegaz.com/?p=45272</id>
+        <link href="https://gamegaz.com/2026040445272/"/>
+        <updated>2026-04-04T00:48:04.000Z</updated>
+        <summary type="html"><![CDATA[Fusée Gelée(NVIDIA Tegraプロセッサの脆弱性を利用し起動時に任意のコードを実行するcoldboot exploit)を利用したりModチップを利用したりすることで起動することができるNintendo SwitchのカスタムファームウェアAtmosphère 1.11.0(931e3c37f)がリリースされました。→→→この記事の続きを読む
+22.0.0サポート Atmosphère 1.11.0(931e3c37f) first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.4.4]]></title>
         <id>https://gamegaz.com/?p=45270</id>
@@ -10891,22 +10936,6 @@ GameGaz Daily 2026.1.5 first appeared on 大人のためのゲーム講座.]]></
         <summary type="html"><![CDATA[新年明けましておめでとうございます。本年もPublickeyをどうぞよろしくおねがいいたします。 さて、2024年6月にPublickeyの広告掲載方針として「読者が安心して記事を読めるように、Publickeyでは適切な広告だけを掲載して...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[gemini先生2]]></title>
-        <id>hatenablog://entry/17179246901340577437</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/01/04/214943"/>
-        <updated>2026-01-04T12:49:43.000Z</updated>
-        <summary type="html"><![CDATA[stackoverflowの年間質問数グラフを見ていると非常に右肩グラフであることがわかって2023年あたりからのAIの威力というか、ガックガクなんですね・・・。
-StackOverflow questions over time, source SEDE; sadface, lunch has been eaten pic.twitter.com/tXZShoIBfG
-— Marc Gravell (@marcgravell) 2025年5月15日
-   
-サウンドプログラミングをやったるぞーと思って教科書読みながらgemini先生に質問していたらまあばっちりいい感じの回答が来まくっていて、高校生のときにあったらどんなに世界が変わっていたかと思った次第です。エウレカ！エウレカ！みたいな。
-（ド忘れを含む）辞書的な質問、数学の途中式、イメージの話など、何といってもこちらのペースで租借しながらできるのが強いです。耳や目（授業形式）よりチャット形式（文字情報）というのもありがたい。あと教え方がうまいというか、世界規模の学習データを食ってるのでしょうね・・・。適当な質問も汲み取ってくれるのも助かるし、答えに少しでも触れていたら鼓舞してくれるのもいいですね。
-もし理解できない数学の本などが棚にあって、気まぐれでgeminiと会話しながらやってみると案外するする読めるかもしれません。プログラミングの質問は１段上ぐらいで、嘘かどうか判断できるところ？を許容としていましたけど、高校、大学数学全般の家庭教師のロールなら全然ありっすね。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
