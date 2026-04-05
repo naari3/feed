@@ -902,21 +902,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/cb14183e00e8a55bcf2cff9b976fdf9e08ea3b6f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260113%2F20260113090614.jpg"
-        },
-        {
-          "id": "hatenablog://entry/17179246901340716342",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。2025年12月28日（日）から2026年1月3日（土）〔2026年1月第1週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    ここ数年で読んで良かった「ニンゲンの面倒なところに付き合う」ための本をまとめた。 - フジイユウジ::ドットネット\n by id:fujii_yuji \n    \n2\n    おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、おい、 - じゃあ、おうちで学べる\n by id:syu-m-5151 \n    \n3\n    アルバイト未経験エンジニア４３歳、タイミーさんになる①～タイミーアプリの正しい使い方～ - honeylab's blog\n by id:honeylab \n    \n4\n    「こんな複雑なことをしないといけないのはおかしい」というソフトウェアエンジニアの勘 - valid,invalid\n by id:ohbarye \n    \n5\n    NotebookLM をソースとした Gemini の Gem で問題定義サポーターというツールを作った - Tbpgr Blog\n by id:tbpg \n    \n6\n    日本経済の個人的な理解 - himaginary’s diary\n by id:himaginary \n    \n7\n    【遺書】 - ゆみブロ\n by id:You_min \n    \n8\n    Obsidian+GPT: 抑うつ症状を前提としたタスク管理【2025-12-31】 - 二千三百五十五年\n by id:tumor1917 \n    \n9\n    2025年の映画ベスト100（ネット投票を集計しました） - 破壊屋ブログ\n by id:hakaiya \n    \n1…",
-          "link": "https://blog.hatenablog.com/entry/2026/01/06/120000",
-          "publishedOn": "2026-01-06T03:00:00.000Z",
-          "wordCount": 1142,
-          "title": "今週のはてなブログランキング〔2026年1月第1週〕",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/f7dcb123e64a9b84752f8a7d2768c248159ac6b6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260105%2F20260105093017.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f7dcb123e64a9b84752f8a7d2768c248159ac6b6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260105%2F20260105093017.jpg"
         }
       ]
     },
@@ -7029,16 +7014,6 @@
           "wordCount": 622,
           "title": "launchd-ui: macOSのlaunchdを使ったcron処理をGUIで管理するアプリを作った",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2026/01/06/photo-cleaner/",
-          "author": null,
-          "description": "iPhoneから古い写真をまとめて削除するためのiOSアプリ Photo Cleaner を作りました。\nGitHub: azu/photo-cleaner\nAmazon Photosなどにバックアップ済みの古い写真をiPhoneから削除して、ストレージを解放するためのアプリです。\nなぜ作ったか\niPhoneの写真が増えすぎてストレージが足りなくなったとき、古い写真をまとめて削除したいことがあります。\nしかし、標準の写真アプリでは大量の写真を効率的に選択・削除する機能がなく、一枚ずつ選択するのは現実的ではありません。\n既存のアプリを探しても、数万枚の写真を処理できるものが見つかりませんでした。\nそこで、シンプルに古い写真をまとめて削除できるアプリを作ることにしました。\n実際に数万枚の写真を削除してみましたが、問題なく動作しています。\n主な機能\n\nPhoto Cleanerには次の機能があります。\n指定した期間より古い写真を自動で抽出して削除\nお気に入りに設定した写真は自動的に保護\n特定のアルバムを保護対象として設定可能\n削除前に月ごとのコンタクトシート（まとめ画像）を生成\n動画は削除対象から除外\nコンタクトシート機能\n\nPhoto Cleanerは実際に写真を削除する前にコンタクトシートを生成する機能があります。\nコンタクトシートは、月ごとの写真をグリッド状にまとめた一枚の画像です。\n削除してしまう前に、その月にどんな写真があったかを一覧で残しておけます。\n生成したコンタクトシートは指定したアルバムに保存されるため、後から振り返ることができます。\n設定項目\n\n次の項目を設定できます。\n項目\nデフォルト値\n\n\n\n\nバックアップ猶予期間\n730日（2年）\n\n\n保護対象アルバム\nKeep\n\n\nコンタクトシート生成\nON\n\n\nコンタクトシート保存先\nKeep\n\n\n\nインストールと使い方\nPhoto CleanerはApp Storeで配布していないため、Xcodeでビルドしてインストールする必要があります。\nなぜApp Storeで配布しないのか\nAltStore PALやSideStoreなどのサードパーティストアでの配布も検討しましたが、現状では課題が多いです。\nAltStore PALで配布するにはAppleの公証（Notarization）が必要です。\n公証にはAppleの承認プロセスがあり、個人開発のアプリには負担が大きいです。\nSideStoreはApple IDとパスワードを入力する必要があります。\n今回はワンショットで使うアプリなので、サードパーティストアでの配布は一旦諦めました。\nまた、無料のApple Developerアカウントでは次の制限があります。\nアプリの署名が7日で期限切れになる\n同時にインストールできるアプリは3つまで\n週に10個までしかアプリをインストールできない\nこれらの制限を回避するにはApple Developer Program（年間$99）への加入が必要です。\n自分用のツールであれば、Xcodeから直接インストールするのが最もシンプルな方法です。\n必要な環境\nXcode 15以上\niOS 17以上\nApple Developer Account（無料枠で可）\nセットアップ手順\nリポジトリをクローンしてセットアップスクリプトを実行\n\ngit clone https://github.com/azu/photo-cleaner.git\ncd photo-cleaner\n./setup.sh\n\n\nXcodeでConfigurationを設定\nPhotoCleaner.xcodeprojを開き、Project Settings → Info → Configurationsで、DebugとReleaseの両方にLocalConfigを指定します。\n⌘Rでビルド・実行\n削除の確認\n\n削除対象の写真を確認してから削除を実行できます。\n削除された写真は「最近削除した項目」に移動するため、30日以内なら復元可能です。\nまとめ\nPhoto Cleanerは、iPhoneの古い写真をまとめて削除できるシンプルなアプリです。\n削除前にコンタクトシートを生成することで、月ごとの写真を1枚の画像に圧縮して残せます。\nGitHub: azu/photo-cleaner",
-          "link": "https://efcl.info/2026/01/06/photo-cleaner/",
-          "publishedOn": "2026-01-06T03:00:00.000Z",
-          "wordCount": 630,
-          "title": "Photo Cleaner: iPhoneの古い写真をまとめて削除できるiOSアプリを作った",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
@@ -8649,16 +8624,6 @@
           "publishedOn": "2026-01-06T23:08:25.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2026.1.7",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44801",
-          "author": "mamosuke",
-          "description": "PS5ではbd-jb利用不可,PS5 Dump Runner Installer v1.3.0,XFROM Dumper 2026-01-05,PSXMaster v1.4.0,PS5 Homebrew Game Sync Tool(PS5 Dump Game Sync Tool) v1.1.0,keysTester v5.1,SwitchTime 0.1.6,NX-ScreenUploader v0.2.0,Breeze beta99s_pr2,NUSGet v1.5.0,WiiUDownloader v2.69,UWUVCI-AIO-WPF v3.100.1,XboxMemCard V1.0.2,PCSX2 v2.6.1,PSX2 1.1.9,shadPS4 Pre-release-shadPS4-2026-01-05-55e2b0f,shadPS4-QtLauncher-2026-01-05-980ad7c,Vita3K Build: 3872,xemu v0.8.131,MAME4droid 2026(0.284) 1.31.1,ScratchEverywhere Beta Build 32→→→この記事の続きを読む\nGameGaz Daily 2026.1.6 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026010644801/",
-          "publishedOn": "2026-01-06T02:10:25.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2026.1.6",
           "imageUrl": null
         }
       ]
