@@ -589,6 +589,21 @@
       "siteUrl": "https://blog.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901373507947",
+          "author": null,
+          "description": "はてなブログ独自の集計による人気記事のランキング。2026年3月29日（日）から2026年4月4日（土）〔2026年4月第1週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    お前らの正義の話をしよう - megamouthの葬列\n by id:megamouth \n    \n2\n    axios ソフトウェアサプライチェーン攻撃の概要と対応指針 - GMO Flatt Security Blog\n by id:flattsecurity \n    \n3\n    「ビデオ機器の操作を女性が行う」という描写の意味が、約30年で変わった？のかも（またパトレイバー話） - INVISIBLE Dojo.　ーQUIET & COLORFUL PLACE-\n by id:gryphon \n    \n4\n    日本人にはＳＮＳより日記かも - phaの日記\n by id:pha \n    \n5\n    山川の教科書で歴史の勉強を絶対にしたくない人向けガイド\n by id:cocolog-nifty \n    \n6\n    制約を読まないエンジニアへ - 弁護士ドットコム株式会社 Creators’ blog\n by id:bengo4 \n    \n7\n    高市総理がホワイトハウスでダブルピースしている写真は生成AIで作られた存在しない写真だよ - 電脳塵芥\n by id:nou_yunyun \n    \n8\n    メディアが伝えない給食の現場のリアル - Everything you've ever Dreamed\n by id:Delete_All \n    \n9\n    LLM に足りないのは能力ではない。あなたの事情だ - じゃあ、おうちで学べる\n by id:syu-m-5151 \n    \n10\n    給食営業マンがノロウイ…",
+          "link": "https://blog.hatenablog.com/entry/2026/04/06/120000",
+          "publishedOn": "2026-04-06T03:00:00.000Z",
+          "wordCount": 1145,
+          "title": "今週のはてなブログランキング〔2026年4月第1週〕",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/e700255515d8e367df72ebde85b54e7ed6001da9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260406%2F20260406093719.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e700255515d8e367df72ebde85b54e7ed6001da9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260406%2F20260406093719.jpg"
+        },
+        {
           "id": "hatenablog://entry/17179246901369731214",
           "author": null,
           "description": "本日午前中に発表いたしました新機能「ナナメ読み機能」につきまして、多くの皆さまにお試しいただき、誠にありがとうございました。\nすでにお気づきの方も多いかと思いますが、本機能はエイプリルフールの企画としてお届けいたしました。「物理的にナナメにするだけ」という力技のソリューションでしたが、お楽しみいただけましたでしょうか？\n本機能は、本日24時をもって提供を終了し、明日には元の「まっすぐな」はてなブログに戻ります。\n企画に込めた思い\n近年はAIによって物事を効率よく要約し、短時間で情報を摂取できる時代になりました。しかし、そんな時代だからこそ、はてなブログは「効率」の対極にあるものを大切にしたいと考えています。\n書き手が試行錯誤して選んだ言葉、一文字一文字に込められた思い、そして行間に漂う情緒。 それらは「ナナメ読み」では決して掬い上げることのできない、ブログというメディアの宝物です。\n効率化の波に少しだけ抗って、大切な誰かのブログを一文字一文字じっくりと楽しむ。\nはてなブログは今年15周年を迎えます。\nはてなブログ開発チーム一同\n\n(function(){if(!document.getElementById('naname-reader-style')){var a=document.createElement('style');a.id='naname-reader-style';a.innerHTML='.entry-naname{display:inline-flex;align-items:center;margin:10px 0;padding:8px 11px 8px 10px;background-color:#f0f1f4;border:none;border-radius:6px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;line-height:1.5;color:#535a5e;cursor:pointer;transition:all .2s ease;min-height:37px}.entry-naname:hover{background-color:#dddfe3}.entry-naname.is-active{background-color:#3D4245;color:#fff}.entry-naname svg{width:20px;height:20px;margin-right:4px;transform:rotate(-8deg);fill:currentColor}.entry-naname.is-active svg{fill:#fff}';document.head.appendChild(a)}var b=document.querySelectorAll('.entry-content');b.forEach(function(c){if(c.previousElementSibling&&c.previousElementSibling.classList.contains('entry-naname'))return;var d=document.createElement('button');d.className='entry-naname';d.innerHTML='\n\nナナメ読みする';c.before(d);var e=!1;d.addEventListener('click',function(){var f=d.querySelector('.btn-text');if(!e){c.style.transform='rotate(-4deg)';c.style.transition='transform .3s ease';c.style.transformOrigin='top center';d.classList.add('is-active');f.innerHTML='ナナメ読みをやめる';e=!0}else{c.style.transform='rotate(0deg)';d.classList.remove('is-active');f.innerHTML='ナナメ読みする';e=!1}})})})();",
@@ -8820,16 +8835,6 @@
           "wordCount": null,
           "title": "スマホから音声入力でブログを書く",
           "imageUrl": null
-        },
-        {
-          "id": "https://r7kamura.com/articles/2026-01-07-aqua-voice",
-          "author": null,
-          "description": "この文章は音声入力だけで書いてみている。",
-          "link": "https://r7kamura.com/articles/2026-01-07-aqua-voice",
-          "publishedOn": "2026-01-06T15:00:00.000Z",
-          "wordCount": 19,
-          "title": "音声入力でブログを書く試み",
-          "imageUrl": null
         }
       ]
     },
@@ -9803,26 +9808,6 @@
           "wordCount": null,
           "title": "Webブラウザから無料で生成AIの挙動を試せる「さくらのAI Engine 」のPlayground機能、GitHub IDだけで手軽に利用可能に",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/50javascript_uireactangularblazorweb_components.html",
-          "author": null,
-          "description": "ビジネス向けUIライブラリを提供しているインフラジスティックスは、同社が提供しているUIライブラリ「Ignite UI」の一部を、オープンソース版として無償提供を開始したと発表しました。 Webアプリケーション向け有償UIライブラリ「Ign...",
-          "link": "https://www.publickey1.jp/blog/26/50javascript_uireactangularblazorweb_components.html",
-          "publishedOn": "2026-01-06T15:39:20.000Z",
-          "wordCount": 1450,
-          "title": "50種類以上の商用JavaScript UIコンポーネントがオープンソースに、React、Angular、Blazor、Web Components対応。インフラジスティックスが公開",
-          "imageUrl": "https://www.publickey1.jp/2026/vrJuJwLB.jpg"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/oracle_cloud_databaseawsawsoracle_database.html",
-          "author": null,
-          "description": "Amazon Web Services（AWS）は、AWSのクラウドデータセンターにOracle Cloudのインフラを持ち込み、そこでOracle Databaseを提供する「Oracle Database@AWS」を東京リージョンで提供...",
-          "link": "https://www.publickey1.jp/blog/26/oracle_cloud_databaseawsawsoracle_database.html",
-          "publishedOn": "2026-01-06T15:34:00.000Z",
-          "wordCount": 1448,
-          "title": "Oracle Cloud Database@AWS、東京リージョンで提供開始。AWSで高性能なOracle Databaseが利用可能に",
-          "imageUrl": "https://www.publickey1.jp/2026/oracledbataws-tokyo-ga.png"
         }
       ]
     },
