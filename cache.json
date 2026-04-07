@@ -3782,21 +3782,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/05b31282e62c9ecd5ddfcf5a03e62c0c37897271/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20251202%2F20251202094300.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901341805564",
-          "author": null,
-          "description": "いつもはてなブログをご利用いただきありがとうございます。\nAmazon CloudFront ディストリビューションを使用されている、または過去に使用されていた場合\nCAAレコードを設定されている場合\n既に独自ドメインを設定済みのブログでこれらの条件に当てはまるユーザー様には登録メールアドレス宛にご連絡を差し上げますので、1月31日までに対応をお願いいたします。\nAmazon CloudFront ディストリビューションを使用されている、または過去に使用されていた場合\n独自ドメインに使用されている、または使用予定のドメインが既に Amazon CloudFront ディストリビューションの代替ドメイン名 (CNAME) として設定されている場合、独自ドメイン設定が正常に完了しない場合があります。\n※過去に使用されていた、または検証用途などで作成されたままDNSの設定がされておらず実際に使用されていないものについても対象となりますのでご注意ください。\n設定方法については AWS のデベロッパーガイドなどをご参照ください。\nディストリビューションを削除する - Amazon CloudFront\n代替ドメイン名を削除する - Amazon CloudFront\nCAAレコードを設定されている場合\n独自ドメインやその親ドメインの DNS に CAA レコードを設定して証明書の発行を許可する認証局を制限されている場合は、従来の `letsencrypt.org` に加えて新たに Amazon ACM のドメインのレコードを追加で設定していただく必要があります。\n設定例:\nblog.example.com. 3600 IN CAA 0 issue \"letsencrypt.org\"\nblog.example.com. 3600 IN CAA 0 issue \"amazon.com\"\nCAA レコードの検証に失敗すると証明書の発行および更新ができなくなるのでご注意ください。\n詳しくは、ヘルプ「はてなブログを独自ドメインで利用する」の「CAAレコードの設定について」をご参照ください。",
-          "link": "https://staff.hatenablog.com/entry/2026/01/08/142633",
-          "publishedOn": "2026-01-08T05:26:33.000Z",
-          "wordCount": 965,
-          "title": "【独自ドメインをご利用中の方】はてなブログへの CloudFront 導入に伴う設定確認・変更のお願い",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901341805564/1767849993",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901341805564/1767849993"
         }
       ]
     },

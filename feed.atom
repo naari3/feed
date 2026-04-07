@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-07T17:19:52.397Z</updated>
+    <updated>2026-04-07T18:14:38.419Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10591,32 +10591,6 @@ GameGaz Daily 2026.1.9 first appeared on 大人のためのゲーム講座.]]></
 1サンプル1秒のC4（ド音）を使って音階をリアルタイム作成。あとエンベロープ機能もつけています。できたからヨシですよヨシ！]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【独自ドメインをご利用中の方】はてなブログへの CloudFront 導入に伴う設定確認・変更のお願い]]></title>
-        <id>hatenablog://entry/17179246901341805564</id>
-        <link href="https://staff.hatenablog.com/entry/2026/01/08/142633"/>
-        <updated>2026-01-08T05:26:33.000Z</updated>
-        <summary type="html"><![CDATA[いつもはてなブログをご利用いただきありがとうございます。
-Amazon CloudFront ディストリビューションを使用されている、または過去に使用されていた場合
-CAAレコードを設定されている場合
-既に独自ドメインを設定済みのブログでこれらの条件に当てはまるユーザー様には登録メールアドレス宛にご連絡を差し上げますので、1月31日までに対応をお願いいたします。
-Amazon CloudFront ディストリビューションを使用されている、または過去に使用されていた場合
-独自ドメインに使用されている、または使用予定のドメインが既に Amazon CloudFront ディストリビューションの代替ドメイン名 (CNAME) として設定されている場合、独自ドメイン設定が正常に完了しない場合があります。
-※過去に使用されていた、または検証用途などで作成されたままDNSの設定がされておらず実際に使用されていないものについても対象となりますのでご注意ください。
-設定方法については AWS のデベロッパーガイドなどをご参照ください。
-ディストリビューションを削除する - Amazon CloudFront
-代替ドメイン名を削除する - Amazon CloudFront
-CAAレコードを設定されている場合
-独自ドメインやその親ドメインの DNS に CAA レコードを設定して証明書の発行を許可する認証局を制限されている場合は、従来の `letsencrypt.org` に加えて新たに Amazon ACM のドメインのレコードを追加で設定していただく必要があります。
-設定例:
-blog.example.com. 3600 IN CAA 0 issue "letsencrypt.org"
-blog.example.com. 3600 IN CAA 0 issue "amazon.com"
-CAA レコードの検証に失敗すると証明書の発行および更新ができなくなるのでご注意ください。
-詳しくは、ヘルプ「はてなブログを独自ドメインで利用する」の「CAAレコードの設定について」をご参照ください。]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
