@@ -2,10 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-07T12:12:16.597Z</updated>
+    <updated>2026-04-07T13:28:40.804Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Notionに入力してLLMで処理させた情報は漏洩するのか（TOEIC風）]]></title>
+        <id>https://note.com/usop/n/n53843e976e97</id>
+        <link href="https://note.com/usop/n/n53843e976e97"/>
+        <updated>2026-04-07T13:27:02.000Z</updated>
+        <summary type="html"><![CDATA[真偽のほどは定かではないが、仕事の情報をLLMに入力していたら、転職先にバレたという話がネットにあった。会社でLLMの利用に関して規定があって、それに従ってる分には大丈夫だが、旅行の計画などプライベートで使っているサービスはどうなっているのだろう。
+ちなみにNotionは日本語のページもあるのだけど、せっかくTOEIC風の出題プロンプトを作ったので、あえて英文で読んでみた。
+続きをみる]]></summary>
+        <author>
+            <name>unknown protocol</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Googleに課金するときどれ選べばいいんだよ問題・AI対応 2026年版（Google One / Google AI / Google Workspace の比較）]]></title>
+        <id>hatenablog://entry/17179246901374077030</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/04/07/211801"/>
+        <updated>2026-04-07T12:18:01.000Z</updated>
+        <summary type="html"><![CDATA[みなさま新年度あけましておめでとうございます。
+「Googleのサービスに課金したいんだけど 全部網羅した比較表がなくて全然わからん」問題に回答する記事、2026年版です。
+いかれたメンバーを紹介するぜ！
+候補は下記。
+Google One、Google AI
+Googleドライブが容量いっぱいになると「容量を追加しましょう！」つって出てくるアイツがGoogle Oneです。プランはベーシック、プレミアムの２つ。
+Google AIはいわゆる有料版Geminiです。AI Plus、AI Pro、AI Ultraの３つがあります。
+なのですが実はOneとAIにはあまり区別がなく、実質的には同じサービスで One ベーシック＜AI Plus＜One プレミアム＜AI Pro＜AI Ultraの５つのグレードがあると考えて良いと思います。（こんなわかりにくいプラン設計あるか？）
+今回は追加機能のほぼないOne ベーシック、価格帯がかなり違うUltra（36,400円/月）は対象としません。
+Google Workspace Business Starter / Standard
+そのGoogle Workspaceの小規模組織向けのがBusinessで、組織向けですが一人でも使えます。
+さらにその中にStarter、Standard、Plusのランクがあり、今回はStandardまでを扱います。Plusに軽くだけ言及しておくと組織統制強化版という感じです。
+特徴としては独自ドメインの設定ができるのですが（メールアドレスを@gmail.comでなく自分の所有ドメインにできたり）、その副作用としてドメインを持ってないと使えません。
+現行のラインナップは以上です。
+※毎回「自分が入ってるプランが抜けてる」というコメントをいただきますが、プランの入れ替わりが激しいのでもう新規で受け付けて…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Nintendo Switch 1 & 2 システムバージョン 22.1.0]]></title>
         <id>https://gamegaz.com/?p=45291</id>
