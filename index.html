@@ -15642,30 +15642,6 @@ OSの概念は知っているという人が、世の中にあるOS自作本を�
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">サンプル演奏1</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/01/09/224351" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>昨日の続き・・・ようやくわかった気がします。というかこんな当たり前なことも知らないのかと言われそうな気もしないでもなく・・・。でもまあ昨日の時点でダメなコードを世界に公開しているわけでして、今更なところはありますよね。。前置きが長くなりましたが、1サンプルからどうやって音階を作るのかというのがようやくわかった気がします。暇な人はお付き合いください。。
-まずサンプリング周波数13359Hzでドの音（C4）をGBAで鳴らすことを考えます。C4は約261.6Hzで、1秒の13359Hz内にいくつあるかというと13359/261.6&#x3D;51.066・・・つまり約52個あるわけです。つまり波が52個繰り返しあって、バイナリエディタで開くと同じデータが並んでいることがわかります。無駄という話です。
-そこで256バイトを1サンプルとして音の元（オリジナル）を用意します。0-255までの幅で正弦波を作り・・・0からスタートして山があり、半分のサイズ127で0、そして下降して谷になり、255でまた0になるグラフが想像できると思います。
-GBA上ではこの1サンプルからうまく取り出してC4モドキ約52バイトをフレームバッファ（DirectSoundバッファ）にコピーしていけば同じになるというわけです。
-明日に続きます・・・。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901342309240/1767967158" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17950,7 +17926,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-09T01:31:08.445Z">2026-04-09T01:31:08.445Z</time>
+    <time id="build-timestamp" datetime="2026-04-09T02:59:26.782Z">2026-04-09T02:59:26.782Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
