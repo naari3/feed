@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-11T00:09:51.354Z</updated>
+    <updated>2026-04-11T01:31:04.058Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[潔さ]]></title>
+        <id>hatenablog://entry/17179246901375287053</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/04/11/100740"/>
+        <updated>2026-04-11T01:07:40.000Z</updated>
+        <summary type="html"><![CDATA[qiita.com
+arm-none-eabi-as header.s -o header.o
+arm-none-eabi-gcc -c main.c -o main.o -nostdlib -ffreestanding
+arm-none-eabi-ld header.o main.o -T link.ld -o out.elf
+arm-none-eabi-objcopy -O binary out.elf out.gba
+ロムをポンと作れちゃうんですよっていう日本語を極力排した記事、ヤバいです。俳句かな！？たぶんわかってくれる方数名だろうなあ・・・。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.4.11]]></title>
         <id>https://gamegaz.com/?p=45309</id>

@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901375287053",
+          "author": null,
+          "description": "qiita.com\narm-none-eabi-as header.s -o header.o\narm-none-eabi-gcc -c main.c -o main.o -nostdlib -ffreestanding\narm-none-eabi-ld header.o main.o -T link.ld -o out.elf\narm-none-eabi-objcopy -O binary out.elf out.gba\nロムをポンと作れちゃうんですよっていう日本語を極力排した記事、ヤバいです。俳句かな！？たぶんわかってくれる方数名だろうなあ・・・。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/04/11/100740",
+          "publishedOn": "2026-04-11T01:07:40.000Z",
+          "wordCount": 538,
+          "title": "潔さ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901375287053/1775869718",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901375287053/1775869718"
+        },
+        {
           "id": "hatenablog://entry/17179246901375078839",
           "author": null,
           "description": "www.youtube.com",
