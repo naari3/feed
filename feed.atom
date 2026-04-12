@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-12T04:06:52.437Z</updated>
+    <updated>2026-04-12T05:38:53.451Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10455,38 +10455,6 @@ DPDK と AF_XDP では扱いやすいコンテナ環境での利用が想定さ�
 Linux bridge（Linux カーネルの bridge 実装）は Linux が提供する機能である veth と組み合わせやすいですが、DPDK が扱う virtio との接続には Linux カーネルの作成する tap デバイスを…]]></summary>
         <author>
             <name>かーねるさんとか</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Element / Matrixをインストールしてプラットフォームに検閲・AI学習されないコミュニティを作ろう]]></title>
-        <id>hatenablog://entry/17179246901342333623</id>
-        <link href="https://blog.3qe.us/entry/2026/01/13/011227"/>
-        <updated>2026-01-12T16:12:27.000Z</updated>
-        <summary type="html"><![CDATA[Elementというアプリがある。これはプライバシーを強化したDiscordやSlackみたいなもので、検閲や監視、そしてAI無断学習を受けずにコミュニケーションをとり続けることができる。これは通信が暗号化されて届くため、運営からは画像が見えないのだ。
-あいにくElementのサイトは日本語化されていないので、日本語でインストール手順と基礎的な使い方をメモしておく。
-Elementのサイトに行く
-Elementの起動
-アカウントを作成する
-DMを送る
-ルームを作る
-スペースを作る
-まとめ
-Elementのサイトに行く
-element.io
-https://element.io/ にアクセスする。するとDownloadという項目があるのでクリックする。
-
-OSごとの選択肢が出てくるので、自分が使っているOSを選択する。
-
-とはいえ、インストール自体の手順はそんなに難しくない。Macであればdmgファイルがダウンロードされるので、アプリケーションディレクトリにドラッグすれば終わり。Windowsであれば、インストーラのexeファイルがダウンロードされるので、これを実行して指示に従えば終わり。Linuxの場合も、Ubuntuの場合は指示通りにコマンドを実行すればよい。Community maintained packagesをクリックすると、他のLinuxディストリビューション用のインストール手順も表示される。
-Elementの起動
-初めてElementを起動すると、ログイン画面が表示される。アプリ自体はありがたいことに日本語化されている。
-
-既にアカウントを持っているならそれを入力するだけだが、今回はアカウントを作成する手順も示しておく。
-アカウントを作成をクリックすると、サーバを選択する画面が表示される。
-
-Discordは自動でサーバに接続するのに、Elementは違うのが…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
