@@ -389,21 +389,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901343882443/1768363524"
-        },
-        {
-          "id": "hatenablog://entry/17179246901343528703",
-          "author": null,
-          "description": "全クリしました。ハマると止まらなくなる系です。床のギミックスイッチを押すとたまにフリーズしますのでステートセーブできるエミュやエミュ機をおススメします。（移植版なのでオリジナルを検索するのもいいかもです）\nnostabyte.itch.io",
-          "link": "https://akkera102.hatenablog.com/entry/2026/01/13/105935",
-          "publishedOn": "2026-01-13T01:59:35.000Z",
-          "wordCount": 485,
-          "title": "面白GBAパズル",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901343528703/1768270749",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901343528703/1768270749"
         }
       ]
     },
@@ -8797,6 +8782,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/bunheadless_brwoser_automation.html",
+          "author": null,
+          "description": "オープンソースで開発されているJavaScriptランタイムの「Bun」の最新版となる「Bun v1.3.12」で、コマンドラインからヘッドレスブラウザの操作を行える新機能が実装されました。BunのAPIを呼び出して利用することも可能です。...",
+          "link": "https://www.publickey1.jp/blog/26/bunheadless_brwoser_automation.html",
+          "publishedOn": "2026-04-12T15:32:58.000Z",
+          "wordCount": null,
+          "title": "Bun、コマンドラインからヘッドレスブラウザの操作を行える新機能「Headless Browser Automation」搭載",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/aifoundry_localmaclinux.html",
+          "author": null,
+          "description": "マイクロソフトは、アプリケーションにバンドルしてインストーラで配布できるコンパクトなローカルAI環境「Foundry Local」の正式リリースを発表しました。 開発者はアプリケーションにFoundry LocalのAI環境をバンドルしてイ...",
+          "link": "https://www.publickey1.jp/blog/26/aifoundry_localmaclinux.html",
+          "publishedOn": "2026-04-12T15:28:44.000Z",
+          "wordCount": null,
+          "title": "マイクロソフト、ローカルAI環境をインストーラで配布できる「Foundry Local」正式リリース。MacやLinuxにも対応",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/aws_devops_agentazure.html",
           "author": null,
