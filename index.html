@@ -74,6 +74,40 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2026-04-12">2026-04-12</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2026-04-11</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2026/04/12/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>github.com
+PicoRubyのタイポ修正。
+github.com
+PicoRubyの型定義の改善。
+今まではPicoRubyリポジトリ全体でのRBS environmentの整合性は取れていたのだけど、各gem単位で見た時に、整合性が取れないものがあったので直した。
+なんでこんなことをやっているのかというと、PicoRubyアプリケーションでSteepをいい感じに使うツールを作っているため。このツールはbuild configを読んでそのビルドに含まれるgemの型定義のみで型検査をできるようにするもの。
+手元のPicoRubyアプリケーションではうまく動いていたのだけど、試しにR2P2のbuild conifgで動かしてみたところ、型定義の整合性が取れていなかった。
+ということで、そのツールを応用して各gemとその依存のみでrbs validateを走らせて、それで型エラーになったところをちまちま直していった。
+なんとなくClaudeを使わず人力で型定義を書いていた。時間はかかった気がするけど、イライラは減った気がする。
+本当はこのツールを今日中にサッと公開したかったのだけど、このPRだったり他のことを色々やっていたら時間切れになってしまった。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901375523511/1775955600" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2026-04-11">2026-04-11</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -15551,35 +15585,6 @@ Discordは自動でサーバに接続するのに、Elementは違うのが…</s
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://katsumakazuyo.hatenablog.com/" target="_blank"
-              rel="noopener">勝間和代が徹底的にマニアックな話をアップするブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">ストウブのGOHANで0.5合のごはんをおいしくヘルシオで炊く方法</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://katsumakazuyo.hatenablog.com/entry/2026/01/12/211759" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>以前からヘルシオの土鍋ご飯は好きなのですが、1合とか2合とかでしか炊けないのが難点でした。私は0.5合だけ炊きたいんです。残るとしまったりしなければいけないしさらに味も劣化してしまうので、
-多少縦長になった方がマシかなと思って、土鍋ではなくストウブのGOHANでもヘルシオの土鍋コースで炊いてみたのですが、１合は完ぺきにできますが、やはり、0.5合は１合モードで炊くと、ちょっと時間も長いし、イマイチです。
-そこで、いつのもようにGeminiといろいろ話し合って、とりあえず
-・ストウブの一番小さいGOHANに無洗米80gに水130cc
-・手動で予熱なし煮込み23分
-・できあがったら、ヘルシオから出して10分蒸らす
-でやってみたら、いやーーー、うまい、うまい。0.5合をうちの小さい炎舞炊きでも炊けるのですが、平べったくなってしまうのと、なんといっても、洗い物が多いので、できれば、洗うのはストウブだけにしたい。
-いや、そして、できあがったご飯、完璧にあまーーーくもちもちでした。これなら、炊飯器の早炊きよりおいしくて、33分でできあがるので、満点です。
-ほんとうに、ヘルシオは万能でありがたいです。GOHANにもガスでたくマニュアルついているのですが、まーまーめんどうなので、これでいいです。
-GOHANとヘルシオ持っている方、試してみてください（いるんだろうか？？？）。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8599973812325912747/17179246901343369302/1768221114" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17864,7 +17869,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-12T00:09:29.151Z">2026-04-12T00:09:29.151Z</time>
+    <time id="build-timestamp" datetime="2026-04-12T01:31:37.499Z">2026-04-12T01:31:37.499Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
