@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-13T00:11:02.252Z</updated>
+    <updated>2026-04-13T01:32:32.582Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[さくらインターネット入社から1年半が経ってクラウドサービスのプロダクト責任者になった]]></title>
+        <id>hatenablog://entry/17179246901375631623</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2026/04/13/095426"/>
+        <updated>2026-04-13T00:54:26.000Z</updated>
+        <summary type="html"><![CDATA[これ自体は実際のところは前からやってることと変わってないのだが、4月の組織変更で明示的にそうなったというのも含めてメモしておこうと思った。
+TL;DR
+ガバクラ採択めでたいね
+4月からクラウド事業戦略本部 副本部長になりました
+クラウドサービス全般のプロダクト責任者という役割です
+それはそれとして去年Rubyコミッタになりましたね
+来週のRubyKaigi 2026でキーノートとして話します
+3月末までの話
+さくらインターネット入社後3ヶ月のいまの話からずっとプロダクト担当として仕事をしてきて、とりあえず最初に見えていたマイルストーンであるところの2025年度末をこえた。このタイミングでの大きな目標であったガバメントクラウドについては、以下ニュースなどに出たとおり。
+www.sakura.ad.jp
+これは開発チームをはじめとして全体で本当に頑張った結果で、達成できて本当に安心した。大きな成果だと思う。さくらインターネットという会社がクラウドサービス開発をきちんと行える会社であること、クラウドサービスを本気で今後も運用・発展させていく気があることを示せたんじゃないだろうか。
+一方、ガバメントクラウドだけやっているわけでもなく、その他に今後数年間のクラウドサービス成長を考えてやっていることもあれこれある。ビジネスとしての話もだし、ガバメントクラウドに含まれていなくても、クラウドサービスを使うときにどうしても欲しいもの、みたいなものもある。クラウドサービスのアイコンセットはそのうちのひとつで、これも無事に公開できるところまできて良かった。
+www.sakura.ad.jp
+
+そんなこんなをやる中で、形としてはいち社員、いちPdMだったんだけど、実質的にはクラウドのプロダクト全体をリードする状況でここまで働いてきた。なおコードは1行も書いていない。
+「ガバクラという目標」が無いこ…]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Bun、コマンドラインからヘッドレスブラウザの操作を行える新機能「Headless Browser Automation」搭載]]></title>
         <id>https://www.publickey1.jp/blog/26/bunheadless_brwoser_automation.html</id>
