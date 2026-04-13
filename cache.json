@@ -1830,6 +1830,21 @@
       "siteUrl": "https://diary.hatenablog.jp/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901375924442",
+          "author": null,
+          "description": "KOBA789 です。\n忙しい人向けに結論を先に書きます。2026年5月9日（土）に「ISUNARABE合同演習2026」を開催します。つまり ISUCON*1 の模擬大会です。\n優勝しても賞金は出ません。あと大事なことですが AI の利用は無制限です。\n開催概要\n開催日: 2026年5月9日（土）\n競技時間: 10:00〜18:00JST\nチーム人数: 1〜3人（AI 算入せず）\n問題: 詳細はポータル公開時に発表します\n参考実装の言語: Rust のみ\nAI の利用: 無制限。ただしベンチマーク中のリクエスト処理に外部リソースを使うことは禁止\n参加に必要なもの: AWS アカウント・GitHub アカウント・Discord アカウント\n費用: AWS・AI ツールのコストは参加者負担\n主催: ISUNARABE（ISUCON 公式とは無関係の非公式イベントです）\n賞金は出ません\nAI の利用は無制限ですが、もちろん「人類代表」として出場しても OK です。\n質問・雑談ができる Discordサーバーがあります: https://discord.gg/PSgjuuwzDn\n今後の日程\n4/13: リマインド用 connpass 登録開始\n5/3頃: ポータル公開（予定）\n5/9: 合同演習本番\n急ではありますが、連休を使って準備できる日程にしています。奮ってご参加ください。\nリマインド用 connpass イベント\nポータル公開と演習当日のリマインド用の connpass です。必須ではありませんが、登録しておくとお知らせが届きます。参加人数の参考にするので登録してくれると KOBA789 が助かります。\n※connpass への登録だけでは参加確定になりません。後日公開されるポータルで参加登録してください\nhttps://connpass.com/event/390773\n2026年、AI の使い方についてのベンチマークが不足している\nCoding Agent 前夜、私達は ISUCON を自身のベンチマークとして切磋琢磨していました。その年の ISUCON 優勝を目指し、準備をし、練習をし、100万円に目が眩んで、多少は努力をしてきました。\nそして時は2026年、AI の爆発的な性能向上によってソフトウェアエンジニアの仕事は大きく変わりました。\n今の我々には、AI の使い方についてのベンチマークが不足しています。\nその解説に**たくさんの太字**や Mermaid の図が並んでいてもどこか現実味がないのは、同じコードを見ていないからです。\nあなたと筆者は見ているコードが違う。だから DESIGN.md に書く内容が腑に落ちない。\nISUNARABE 合同演習2026は共通のコードを提供します。各々が全力で AI をぶん回した結果何が起こるのか、それを見て、比べてみたくはありませんか。\n私は見てみたい。\n*1:「ISUCON」は、LINEヤフー株式会社の商標または登録商標です。 https://isucon.net",
+          "link": "https://diary.hatenablog.jp/entry/2026/04/13/110000",
+          "publishedOn": "2026-04-13T02:00:00.000Z",
+          "wordCount": null,
+          "title": "ISUNARABE合同演習2026: AI Agent無制限でチューニングコンテストをやると何が起こるのか見てみたい",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/eda6e8ae9677c2e22c4b1268fef1876ab2fd17ac/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkoba789%2F20260413%2F20260413022846.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/eda6e8ae9677c2e22c4b1268fef1876ab2fd17ac/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkoba789%2F20260413%2F20260413022846.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901354966605",
           "author": null,
           "description": "暗黙知シリーズ。ブックマークレットという言葉自体がもはや死語なんじゃないかという気もするけど。\n今開いてるタブへのリンクを [タイトル](https://example.com) という Markdown 形式でコピーするためのスクリプト。もう10年以上使い続けている。\njavascript:window.prompt(document.title, `[${document.title}](${location.href})`)\n\"md link\" みたいな名前でブックマークバーに置いておくといい\nプロンプトウインドウが開くので内容をコピって閉じる。OK でも Cancel でもいい。私は Ctrl+C してすぐに ESC 押して閉じてる",
@@ -2109,21 +2124,6 @@
           "publishedOn": "2026-02-26T11:06:30.000Z",
           "wordCount": null,
           "title": "nikki_20260226「映画４本の感想」",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901343733995",
-          "author": null,
-          "description": "食事について、一汁三菜がいいんだろうと思ってそうするようにしている。白米とインスタント味噌汁があり、納豆か豆腐を買いだめしておいて自分でもやしナムルとか煮物とか作れたら作る、こうすると主菜以外が埋まり、あとは冷凍餃子とかにする。この主菜をラーメンや弁当にしたりして、台無しにすることもたくさんしているし、ちゃんと一汁三菜になるのは週に半分くらいしかない。主菜のバリエーションが近くのスーパーは乏しい。そういう点で業務スーパーの冷凍コロッケとかフライを羨ましく思うようになった。やるなら地味な惣菜やコンビニの魚になるのだけど、刺身以外の魚はなんとなく敬遠してしまうし、がっつり食べたい欲を常に抑えきれないから、だいたい冷凍から揚げ・餃子になってしまう。\n \nコンビニの選択肢としてローソンがいちばん都合がいいのだが、ちゃんと食事として利用してみると、あまり惣菜がおいしくないと思うようになった。オモコロチャンネルでかつてそう言われていたバイアスもあっただろうけど、けっこうそうではないでしょうか。食えないとかではないが他二社と比べるとうーんというような、何回も買っては後悔したので、ローソンオリジナルに関しては以下を買うことを誓いたい。\n \n\n・おにぎり・パン・スイーツ（スイーツは高いがこれはちゃんとおいしい）\n・他企業が作っているもの（一部麺の冷食は日清が作っていたり、あとは無印良品やホルモン鍋もある。）\n・千切りキャベツや納豆など調理をする前提の食材\n \n少し前にセルフカット、暇がなくちょっと不快な長さであった髪を自ら切るのを試みた。幼少期に家族がやっているのを見たりしたので、多少身近な概念だった。いざやると思ったより感触が生々しい。鋏の入れ方もあるのだけど、サクサクかと思いきやザクザクとなる瞬間がたまにあり、身体の一部であることを実感した。セルフカット、と書いて読んでいる人はどのような…",
-          "link": "https://isitsutbustu-todoke.hatenablog.com/entry/2026/01/13/223318",
-          "publishedOn": "2026-01-13T13:33:18.000Z",
-          "wordCount": 454,
-          "title": "nikki_20260102",
           "enclosure": {
             "url": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
             "type": "image/png",
@@ -8608,16 +8608,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2026.1.14",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44836",
-          "author": "mamosuke",
-          "description": "任天堂が、Nintendo Switch/ Switch 2の本体のシステムを更新するNintendo Switch システムバージョン 21.2.0をリリースしていました。→→→この記事の続きを読む\nNintendo Switch 1&2 システムバージョン 21.2.0 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026011344836/",
-          "publishedOn": "2026-01-13T14:27:42.000Z",
-          "wordCount": 1767,
-          "title": "Nintendo Switch 1&2 システムバージョン 21.2.0",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/Nintendo-Switch-2-update.jpg"
         }
       ]
     },
