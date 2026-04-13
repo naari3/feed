@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-13T17:21:15.280Z</updated>
+    <updated>2026-04-13T18:20:03.559Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10305,98 +10305,6 @@ Nintendo Switch 21.2.0対応 Atmosphère 1.10.2(eb34f9789) first appeared on 大
 続きをみる]]></summary>
         <author>
             <name>ヤマト</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[応用編: nginxで認証結果をキャッシュしたい〜認証処理の負荷を下げたい〜]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=34435</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/34435"/>
-        <updated>2026-01-14T06:12:43.000Z</updated>
-        <summary type="html"><![CDATA[認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜から派生した記事です。 応用編なので、ngx_http_auth_request_moduleの認証モジュールが動作している前提...]]></summary>
-        <author>
-            <name>ヒラマツ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[認可モジュール(権限管理)だけ追加したい〜認証情報を管理したくない〜]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=34424</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/34424"/>
-        <updated>2026-01-14T06:12:26.000Z</updated>
-        <summary type="html"><![CDATA[認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜の続き記事です。 ngx_auth_mod開発者のヒラマツです。 ここではnginxのBASIC認証に後から認可処理を追加したい...]]></summary>
-        <author>
-            <name>ヒラマツ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[認証処理を集中管理する〜シングルサインオン(SSO)はしたくない〜]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=34412</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/34412"/>
-        <updated>2026-01-14T06:12:15.000Z</updated>
-        <summary type="html"><![CDATA[認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜の続き記事です。 ngx_auth_mod開発者のヒラマツです。 ここではBASIC認証のまま認証処理を集中管理したい方に、ng...]]></summary>
-        <author>
-            <name>ヒラマツ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[隣のサイトへ認証を丸投げ〜認証を管理したくない〜]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=34395</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/34395"/>
-        <updated>2026-01-14T06:11:56.000Z</updated>
-        <summary type="html"><![CDATA[認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜の続き記事です。 ngx_auth_mod開発者のヒラマツです。 ここでは認証管理を別サイトへ任せたい方に、ngx_auth_m...]]></summary>
-        <author>
-            <name>ヒラマツ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アカウント名とメールアドレスの両方で認証したい〜利用者への説明をさぼりたい〜]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=34382</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/34382"/>
-        <updated>2026-01-14T06:11:44.000Z</updated>
-        <summary type="html"><![CDATA[認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜の続き記事です。 ngx_auth_mod開発者のヒラマツです。 ここではuser@example.comなどのメールアドレス形...]]></summary>
-        <author>
-            <name>ヒラマツ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[メールアドレスで認証を振り分ける〜複数組織の認証を組み合わせたい〜]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=34446</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/34446"/>
-        <updated>2026-01-14T06:11:27.000Z</updated>
-        <summary type="html"><![CDATA[認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜の続き記事です。 ngx_auth_mod開発者のヒラマツです。 ここではメールアドレス形式で、複数の認証システムを組み合わせて...]]></summary>
-        <author>
-            <name>ヒラマツ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[メールアドレスでBASIC認証する〜ドメイン付きで認証したい〜]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=34370</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/34370"/>
-        <updated>2026-01-14T06:11:11.000Z</updated>
-        <summary type="html"><![CDATA[認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜の続き記事です。 ngx_auth_mod開発者のヒラマツです。 ここではuser@example.comなどのメールアドレス形...]]></summary>
-        <author>
-            <name>ヒラマツ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[認証をnginx用にちょっと弄れる機能〜認証だってrewriteしたい〜]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=34027</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/34027"/>
-        <updated>2026-01-14T06:10:44.000Z</updated>
-        <summary type="html"><![CDATA[ngx_auth_mod開発者のヒラマツです。 今回、以前公開したnginx用認証モジュール群のngx_auth_modに、既存の認証をカスタマイズして組み合わせる機能を追加しました。 ngx_aut...]]></summary>
-        <author>
-            <name>ヒラマツ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【はてなCMS】デザインテンプレートのご紹介：2026年1月版]]></title>
-        <id>hatenablog://entry/17179246901343902959</id>
-        <link href="https://staff.hatenablog.com/entry/2026/01/14/142820"/>
-        <updated>2026-01-14T05:28:20.000Z</updated>
-        <summary type="html"><![CDATA[いつもはてなブログ、はてなCMSをご利用いただきありがとうございます。
-はてなCMSテンプレートのご紹介：2026年1月版 - はてなCMS｜ノーコードで誰でもカンタン！
-ご質問やご意見はお問い合わせフォームより、または担当営業にお寄せください。]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
