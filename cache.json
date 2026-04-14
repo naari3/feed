@@ -1083,6 +1083,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901376257298",
+          "author": null,
+          "description": "Raspberry Pi Picoを触るようになって工具などが増えてきたので、工具箱を買った。工具と各種部品を入れるため。外に持ち運ぶときはどうせ車なので、大きいやつを買った。\nいまいちどの部屋に何を入れるべきかまだ定まっていない。",
+          "link": "https://commits.hatenablog.com/entry/2026/04/14/100000",
+          "publishedOn": "2026-04-14T01:00:00.000Z",
+          "wordCount": 523,
+          "title": "2026-04-13",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901376257298/1776128402",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901376257298/1776128402"
+        },
+        {
           "id": "hatenablog://entry/17179246901375523511",
           "author": null,
           "description": "github.com\nPicoRubyのタイポ修正。\ngithub.com\nPicoRubyの型定義の改善。\n今まではPicoRubyリポジトリ全体でのRBS environmentの整合性は取れていたのだけど、各gem単位で見た時に、整合性が取れないものがあったので直した。\nなんでこんなことをやっているのかというと、PicoRubyアプリケーションでSteepをいい感じに使うツールを作っているため。このツールはbuild configを読んでそのビルドに含まれるgemの型定義のみで型検査をできるようにするもの。\n手元のPicoRubyアプリケーションではうまく動いていたのだけど、試しにR2P2のbuild conifgで動かしてみたところ、型定義の整合性が取れていなかった。\nということで、そのツールを応用して各gemとその依存のみでrbs validateを走らせて、それで型エラーになったところをちまちま直していった。\nなんとなくClaudeを使わず人力で型定義を書いていた。時間はかかった気がするけど、イライラは減った気がする。\n本当はこのツールを今日中にサッと公開したかったのだけど、このPRだったり他のことを色々やっていたら時間切れになってしまった。",
