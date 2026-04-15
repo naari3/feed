@@ -6600,6 +6600,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901376833813",
+          "author": null,
+          "description": "zsh向けですが、だいたいどのシェルでも動くと思います。claude --worktreeを使っているときに便利だと思います。\nW() {\n  local selected\n  selected=$(git worktree list --porcelain \\\n    | awk '/^worktree /{path=$2; name=path; gsub(/.*\\//, \"\", name); printf \"%s\\t%s\\n\", name, path}' \\\n    | fzf --tmux --reverse \\\n      --with-nth=1 --delimiter=$'\\t' \\\n      --preview 'git -C {2} log --oneline --graph -20' \\\n    | cut -f2)\n  if [[ -n \"$selected\" ]]; then\n    cd \"$selected\"\n  fi\n}",
+          "link": "https://blog.3qe.us/entry/2026/04/15/163754",
+          "publishedOn": "2026-04-15T07:37:54.000Z",
+          "wordCount": null,
+          "title": "Git worktreeをfzfとtmuxで縦横無尽に移動するためのコマンド",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901376833813/1776238674",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901376833813/1776238674"
+        },
+        {
           "id": "hatenablog://entry/17179246901371416096",
           "author": null,
           "description": "先日業務マシンを変えた。VAIO SX14-Rである。もともとプライベートで持っていたのだが、かなり出来が良かったので業務PCとしても採用したのだ。\nblog.3qe.us\nで、一つ問題があった。キーボードバックライトが点灯しないのだ。\nバックライトを点灯させる旅\nもともとLinuxにはvaio-laptopというデバイスドライバがあるのだが、これがちょっと古いのか、最新モデルであるSX14-Rには対応していないようで、うまくバックライトを認識しなかった。\nとはいえ薄暗い場所などでは困ってしまうので、なんとかならないか、という点をOpusに尋ねたところ、色々な方法でリバースエンジニアリングを開始した。\n/sys/class/leds/vaio::kbd_backlight/brightnessに何かないか\nACPIテーブル(DSDT)の情報はないか\nEmbedded Controller経由の情報はないか\nすると、OpusはDSDTに KBBL という4ビットのフィールドがあることを発見した。\nsudo cat /sys/firmware/acpi/tables/DSDT > /tmp/dsdt.dat\nsudo zypper install acpica\niasl -d /tmp/dsdt.dat\ngrep -i -E \"kbd|backlight|KBBL|keyboard.*light\" /tmp/dsdt.dsl\n               KBBL,   4,\n            PKBD,   8,\n\n\n\nOpusによれば、これはKeyBoard BackLight、すなわちキーボードバックライト用のフラグだという。\nするとOpusはこのオフセットを計算しはじめた。\ngrep -n -B 10 -A 5 \"KBBL\" /tmp/dsdt.dsl\n41251…",

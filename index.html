@@ -97,6 +97,38 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Git worktreeをfzfとtmuxで縦横無尽に移動するためのコマンド</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/04/15/163754" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>zsh向けですが、だいたいどのシェルでも動くと思います。claude --worktreeを使っているときに便利だと思います。
+W() {
+  local selected
+  selected&#x3D;$(git worktree list --porcelain \
+    | awk &#x27;/^worktree /{path&#x3D;$2; name&#x3D;path; gsub(/.*\//, &quot;&quot;, name); printf &quot;%s\t%s\n&quot;, name, path}&#x27; \
+    | fzf --tmux --reverse \
+      --with-nth&#x3D;1 --delimiter&#x3D;$&#x27;\t&#x27; \
+      --preview &#x27;git -C {2} log --oneline --graph -20&#x27; \
+    | cut -f2)
+  if [[ -n &quot;$selected&quot; ]]; then
+    cd &quot;$selected&quot;
+  fi
+}</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901376833813/1776238674" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -17576,7 +17608,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-15T07:30:17.078Z">2026-04-15T07:30:17.078Z</time>
+    <time id="build-timestamp" datetime="2026-04-15T08:29:18.640Z">2026-04-15T08:29:18.640Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
