@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901377216923",
+          "author": null,
+          "description": "https://techbookfest.org/product/6MUQ8T4skEBefBVXwuYBxD\nhttps://nikatech.booth.pm/items/8088728\ngithub.com\n地獄のようなドキュメントや散文されたネット記事を読むより書籍でサクっと学べるかもです。ちなみに技術書典でオススメはtake44444先生の「Rustで作るGAME BOYエミュレータ」。お料理レシピみたいに簡単でいいんですか！？という内容で今の人が羨ましく思います。コードも何回も書き直されていて相当洗礼されていますし。\nhttps://techbookfest.org/product/sBn8hcABDYBMeZxGvpWapf",
+          "link": "https://akkera102.hatenablog.com/entry/2026/04/16/195653",
+          "publishedOn": "2026-04-16T10:56:53.000Z",
+          "wordCount": 501,
+          "title": "技術書典",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901377216923/1776337802",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901377216923/1776337802"
+        },
+        {
           "id": "hatenablog://entry/17179246901375287053",
           "author": null,
           "description": "qiita.com\narm-none-eabi-as header.s -o header.o\narm-none-eabi-gcc -c main.c -o main.o -nostdlib -ffreestanding\narm-none-eabi-ld header.o main.o -T link.ld -o out.elf\narm-none-eabi-objcopy -O binary out.elf out.gba\nロムをポンと作れちゃうんですよっていう日本語を極力排した記事、ヤバいです。俳句かな！？たぶんわかってくれる方数名だろうなあ・・・。",
@@ -8547,16 +8562,6 @@
           "publishedOn": "2026-01-16T23:39:53.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2026.1.17",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44847",
-          "author": "mamosuke",
-          "description": "任天堂が公式サイトにSwitch 2の新型モデルの存在を示唆するデータを準備していたようです。→→→この記事の続きを読む\n【噂】「OSM」は新型Nintendo Switch 2 Liteモデル？公式サイトがその存在を示唆 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026011744847/",
-          "publishedOn": "2026-01-16T22:51:36.000Z",
-          "wordCount": null,
-          "title": "【噂】「OSM」は新型Nintendo Switch 2 Liteモデル？公式サイトがその存在を示唆",
           "imageUrl": null
         }
       ]
