@@ -374,36 +374,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/bbb2870cacf1b00d0c25e3cbbf904edb2e19ae98/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260122%2F20260122120139.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901344934232",
-          "author": null,
-          "description": "s8 256波形データ演奏の大敵の話かつ思考垂れ流し回。\n高音は加算値（速さ）が多くなる関係で音が飛び飛びカクカクになってノイズっぽいことになります。視聴するとそういう楽器が出てきました。その解決策はマルチサンプリングで、ようするに高音用の波形データを別途作らないといけない。その波形データは13379Hzでいうと半分の6689.5Hzまでで、楽器の基音・・・というより倍音がその壁を越えてはならないという制約があります。基音＋倍音１＋倍音２＋・・・・の後ろ側の計算を減らさないといけない。減らすということは正弦波に近づくというわけで、楽器的な意味合いが薄れるんですね・・・。それも嫌となると、演奏自体のオクターブ幅を狭くしてC2-C5あたりにするべき・・・。\n\nっていうめんどくさい会話をGemini先生とずっとしていました。256×256ドットの波形制作ツールを作って流し込めばいいというほど単純じゃないということですかあ。。なんて奥が深い話なんですか・・・（たぶん初心者レベルの話。\nもう１つは波形データが苦手な音というのがあって、つまりピアノのように減衰する音は苦手とも言われています。波形データは１枚の写真のようなもので、これを連続して並べているだけです。エンベロープで強弱はつけられますがそこまでです。オルガンは基音、倍音ともに小さくなるけれど、ピアノは基音が残ります。ピアノは違和感が残るということですね。",
-          "link": "https://akkera102.hatenablog.com/entry/2026/01/17/161920",
-          "publishedOn": "2026-01-17T07:19:20.000Z",
-          "wordCount": 488,
-          "title": "波形データ演奏4",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/2157dd76ed99bb9215b7b6ed10ebb4bdd61ae73a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260117%2F20260117162415.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2157dd76ed99bb9215b7b6ed10ebb4bdd61ae73a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260117%2F20260117162415.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901344922740",
-          "author": null,
-          "description": "周回遅れの話ですけど新商品が発売されています。各種センサー付きなので実機でどうしても遊びたかったあのゲームができる！ということは嬉しい話です。そうかあパッチあてなくてよくなるんですね・・・。\nkrikzz.com",
-          "link": "https://akkera102.hatenablog.com/entry/2026/01/17/154104",
-          "publishedOn": "2026-01-17T06:41:04.000Z",
-          "wordCount": 492,
-          "title": "EverDrive GBA PRO",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901344922740/1768632096",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901344922740/1768632096"
         }
       ]
     },

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-16T18:21:07.377Z</updated>
+    <updated>2026-04-16T19:28:01.112Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10196,31 +10196,6 @@ Elinのアップデートでメソッド引数の型がintからlongに変更さ
         <summary type="html"><![CDATA[続きをみる]]></summary>
         <author>
             <name>Hercelot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[波形データ演奏4]]></title>
-        <id>hatenablog://entry/17179246901344934232</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/01/17/161920"/>
-        <updated>2026-01-17T07:19:20.000Z</updated>
-        <summary type="html"><![CDATA[s8 256波形データ演奏の大敵の話かつ思考垂れ流し回。
-高音は加算値（速さ）が多くなる関係で音が飛び飛びカクカクになってノイズっぽいことになります。視聴するとそういう楽器が出てきました。その解決策はマルチサンプリングで、ようするに高音用の波形データを別途作らないといけない。その波形データは13379Hzでいうと半分の6689.5Hzまでで、楽器の基音・・・というより倍音がその壁を越えてはならないという制約があります。基音＋倍音１＋倍音２＋・・・・の後ろ側の計算を減らさないといけない。減らすということは正弦波に近づくというわけで、楽器的な意味合いが薄れるんですね・・・。それも嫌となると、演奏自体のオクターブ幅を狭くしてC2-C5あたりにするべき・・・。
-
-っていうめんどくさい会話をGemini先生とずっとしていました。256×256ドットの波形制作ツールを作って流し込めばいいというほど単純じゃないということですかあ。。なんて奥が深い話なんですか・・・（たぶん初心者レベルの話。
-もう１つは波形データが苦手な音というのがあって、つまりピアノのように減衰する音は苦手とも言われています。波形データは１枚の写真のようなもので、これを連続して並べているだけです。エンベロープで強弱はつけられますがそこまでです。オルガンは基音、倍音ともに小さくなるけれど、ピアノは基音が残ります。ピアノは違和感が残るということですね。]]></summary>
-        <author>
-            <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[EverDrive GBA PRO]]></title>
-        <id>hatenablog://entry/17179246901344922740</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/01/17/154104"/>
-        <updated>2026-01-17T06:41:04.000Z</updated>
-        <summary type="html"><![CDATA[周回遅れの話ですけど新商品が発売されています。各種センサー付きなので実機でどうしても遊びたかったあのゲームができる！ということは嬉しい話です。そうかあパッチあてなくてよくなるんですね・・・。
-krikzz.com]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
