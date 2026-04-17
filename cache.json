@@ -3759,6 +3759,21 @@
       "siteUrl": "https://techlife.cookpad.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901377216889",
+          "author": null,
+          "description": "こんにちは。レシピ事業部の石川です。\n来週 4 月 22 日から 3 日間、RubyKaigi 2026 が開催されます。クックパッドは今年も Platinum スポンサーとして RubyKaigi に協賛いたします。また、スポンサーブースをご用意いたします。\n今年のスポンサーブースでは、ここ 1 年のクックパッドでの開発の様子をあっちからこっちまでご紹介いたします。社内で Claude Code の話題が出たのは去年の 3 月でした。皆さまご存知のとおりそこからの 1 年でがらりと変わった開発環境の話は積もるものがございます。またこの 1 年の間もいくつかの新機能がリリースされました。その裏で動いている技術の話も、対面なら細かいニュアンスまでお伝えできます。その他、Rails アプリで pull request を出してからデプロイされるまでの時間を短くするための取り組みや多言語での検索システムの話など、技術の話のタネをいろいろとご用意いたします。\ncookpad.com を提供している Rails アプリは現在 Ruby 4.0 & Bundler 4.0 で動いています。次の更新に向けてどんなことができそうか、トークを聞いて回りながら考えようと個人的に思っています。皆さまの考えもぜひお聞かせください。\nそれでは、現地で雑談できるのを楽しみにしております。また来週！",
+          "link": "https://techlife.cookpad.com/entry/rubykaigi2026",
+          "publishedOn": "2026-04-17T00:33:04.000Z",
+          "wordCount": null,
+          "title": "RubyKaigi 2026 のクックパッドブースはこんな感じです",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773"
+        },
+        {
           "id": "hatenablog://entry/17179246901353839219",
           "author": null,
           "description": "こんにちは、レシピ事業部バックエンド基盤部の石川です。これは RuboCop のバージョンを上げましょうという記事です。\nなんだか最近 RuboCop を使っていたら .rubocop-29343e612b03ba2227a3c3390a755e8d.yml のような名前のファイルが .gitignore を貫通してきませんか？\nこれは他リポジトリなどのリモートにある設定ファイルを inherit_from で参照したときに作られるキャッシュファイルです。ちょっと前までは .rubocop-https---raw-githubusercontent-com-cookpad-styleguide-master--rubocop-yml のような名前だったのが、2025 年末あたりに .rubocop-remote-23b9c67aff31e0f9d6c4a89d5eb660cb.yml のような名前になり *1、そのあと現在の名前になりました *2。現在の名前は $original_name-$hash.yml という規則になっています。\nそのような感じでキャッシュファイルの名前が変わり、そしてよくある .gitignore では .rubocop-https?--* のみが ignore されていることが多く、新しいファイル名がこのルールに引っかからなくなったため git diff に現れるようになったという次第です。\nさて、実は先日リリースされた RuboCop v1.84.2 からは、デフォルトでこれらのキャッシュファイルがプロジェクトの一番上のディレクトリではなく ~/.cache/rubocop_cache/ のような共通のディレクトリへ保存されるようになりました *3。\nしたがって、お使いの RuboCop のバージョンを上げていただければこれらのキャッシュファイ…",
