@@ -1516,21 +1516,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901345601598/1768870803"
-        },
-        {
-          "id": "hatenablog://entry/17179246901345068013",
-          "author": null,
-          "description": "elin.pocke.me\nアビリティ一覧を検索している例\nElinの攻略サイトを作っているのだけど、そこに新機能を足した。ゲーム内データをSQLを使って検索をかけられる機能。\nSQLを書ける人しか使えないけれど、稀に便利なことがあるような気がしている。同じデータはスプレッドシートとして公開されているけれど、スプレッドシートより強力な検索を書きやすいのでは。知らんけど。\nゲーム内データをCSVとして抽出するmodがあるので、元データはそれを使っている。\n抽出してきたCSVをwasmで動くDuckDBに入れて、それを検索させている。つまりブラウザ上で全部動いている。\nUIはSQLRoomsというライブラリを使っている。\nsqlrooms.org\nDuckDBをバックエンドにクエリ操作を行うUIをまるっと提供しているライブラリ。リッチなエディタと結果表示、テーブル定義の表示を提供してくれていてかなり便利。最初はこのエディタを自分でどう作ろうかと考えていたけれど、Reactのコンポーネントをぽんと置くだけで使えてだいぶ楽。\nただ、SQLRoomsはかなりマイナーなライブラリのようで、Google検索しても2ページしかヒットしない。そんなことあるんだ。\n今回の実装も例によってClaude Codeで行った。しかし最初実装を任せて書かせたら全然動かない状態になり、エラーを伝えながら直させても全然うまくいかず、SQLRoomsのexampleを見ながら修正したらいい感じに動くまで実装が出来た。\nSQLRoomsはリッチなUIを提供している分、大量のパッケージに依存している。Tailwindに依存しているのがちょっと嫌だなあという気持ち(元々使っていないので)。このエディタ部分だけいい感じに隔離したい気がしている。どうやるのがいいかなあ。\nSQLRoomsはサクッとクエリを実行できる環境を作れて面白いのだけど、業務で使うにはちょっと使いづらいかなあと思っている。\n(Elinではゲーム内データ公開が許可されています。という話をElinの話をするたび書いている気がする)\ngithub.com\nElinのアップデートでメソッド引数の型がintからlongに変更されるという非互換があり、それで自分が作ったmodが壊れていたので対応していた。リフレクションを使ってintとlongそれぞれのメソッドオブジェクトを取得して取れたほうを使うようにした。\nリフレクションを使ってみたけど、今回非互換があった関数の実装は十分シンプルなので、まるまるコピーしてきても良かったかなとはちょっと思っている。\nまあリフレクションを使う経験ができたということで。",
-          "link": "https://commits.hatenablog.com/entry/2026/01/18/100000",
-          "publishedOn": "2026-01-18T01:00:00.000Z",
-          "wordCount": 532,
-          "title": "2026-01-17",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/8b27c36806f75e8805d98ef1d5c9cf6662e72207/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20260117%2F20260117225438.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8b27c36806f75e8805d98ef1d5c9cf6662e72207/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20260117%2F20260117225438.png"
         }
       ]
     },
@@ -8513,16 +8498,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2026.1.19",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=44860",
-          "author": "mamosuke",
-          "description": "ps5upload v1.1.7,psx_payload_injector v1.4,Adrenaline v1768696105,RETROLauncher v1.0 - rev 2,NX Venom 12.0.0,WiiUDownloader v2.71,libogc v2.14.1,PCSX2 v2.7.52,shadPS4 Pre-release-shadPS4-2026-01-17-950d390,shadPS4-QtLauncher-2026-01-17-e70c1cb→→→この記事の続きを読む\nGameGaz Daily 2026.1.18 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026011844860/",
-          "publishedOn": "2026-01-18T01:20:30.000Z",
-          "wordCount": 1713,
-          "title": "GameGaz Daily 2026.1.18",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },

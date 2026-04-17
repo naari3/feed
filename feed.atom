@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-17T12:13:38.949Z</updated>
+    <updated>2026-04-17T13:28:59.154Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10183,44 +10183,6 @@ GameGaz Daily 2026.1.19 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[マイクロソフトは無償のコードエディタとして提供しているVisual Studio Code（VS Code）の最新バージョン「Visual Studio Code December 2025（Version 1.108）」をリリースしました...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2026.1.18]]></title>
-        <id>https://gamegaz.com/?p=44860</id>
-        <link href="https://gamegaz.com/2026011844860/"/>
-        <updated>2026-01-18T01:20:30.000Z</updated>
-        <summary type="html"><![CDATA[ps5upload v1.1.7,psx_payload_injector v1.4,Adrenaline v1768696105,RETROLauncher v1.0 - rev 2,NX Venom 12.0.0,WiiUDownloader v2.71,libogc v2.14.1,PCSX2 v2.7.52,shadPS4 Pre-release-shadPS4-2026-01-17-950d390,shadPS4-QtLauncher-2026-01-17-e70c1cb→→→この記事の続きを読む
-GameGaz Daily 2026.1.18 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-01-17]]></title>
-        <id>hatenablog://entry/17179246901345068013</id>
-        <link href="https://commits.hatenablog.com/entry/2026/01/18/100000"/>
-        <updated>2026-01-18T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[elin.pocke.me
-アビリティ一覧を検索している例
-Elinの攻略サイトを作っているのだけど、そこに新機能を足した。ゲーム内データをSQLを使って検索をかけられる機能。
-SQLを書ける人しか使えないけれど、稀に便利なことがあるような気がしている。同じデータはスプレッドシートとして公開されているけれど、スプレッドシートより強力な検索を書きやすいのでは。知らんけど。
-ゲーム内データをCSVとして抽出するmodがあるので、元データはそれを使っている。
-抽出してきたCSVをwasmで動くDuckDBに入れて、それを検索させている。つまりブラウザ上で全部動いている。
-UIはSQLRoomsというライブラリを使っている。
-sqlrooms.org
-DuckDBをバックエンドにクエリ操作を行うUIをまるっと提供しているライブラリ。リッチなエディタと結果表示、テーブル定義の表示を提供してくれていてかなり便利。最初はこのエディタを自分でどう作ろうかと考えていたけれど、Reactのコンポーネントをぽんと置くだけで使えてだいぶ楽。
-ただ、SQLRoomsはかなりマイナーなライブラリのようで、Google検索しても2ページしかヒットしない。そんなことあるんだ。
-今回の実装も例によってClaude Codeで行った。しかし最初実装を任せて書かせたら全然動かない状態になり、エラーを伝えながら直させても全然うまくいかず、SQLRoomsのexampleを見ながら修正したらいい感じに動くまで実装が出来た。
-SQLRoomsはリッチなUIを提供している分、大量のパッケージに依存している。Tailwindに依存しているのがちょっと嫌だなあという気持ち(元々使っていないので)。このエディタ部分だけいい感じに隔離したい気がしている。どうやるのがいいかなあ。
-SQLRoomsはサクッとクエリを実行できる環境を作れて面白いのだけど、業務で使うにはちょっと使いづらいかなあと思っている。
-(Elinではゲーム内データ公開が許可されています。という話をElinの話をするたび書いている気がする)
-github.com
-Elinのアップデートでメソッド引数の型がintからlongに変更されるという非互換があり、それで自分が作ったmodが壊れていたので対応していた。リフレクションを使ってintとlongそれぞれのメソッドオブジェクトを取得して取れたほうを使うようにした。
-リフレクションを使ってみたけど、今回非互換があった関数の実装は十分シンプルなので、まるまるコピーしてきても良かったかなとはちょっと思っている。
-まあリフレクションを使う経験ができたということで。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>
