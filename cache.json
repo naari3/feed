@@ -1873,6 +1873,21 @@
       "siteUrl": "https://fumimaker.net/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901377958293",
+          "author": null,
+          "description": "English description below.\n実装することで実際にドローンとして飛行できる，ドローン名刺を作ってみました．\n長い間，バグっててあんまりきれいに飛ばなかったのですが息抜きに飛ぶように修正してみました．\nESP32をコアとしており，6軸IMUのセンシングとモーターのPID制御します．スマホをプロポとするためにESP32上でWebサーバーを立て，Joystickを動かすとWebSocket通信で入力値をドローンに送信します．また，ドローンのRoll pitch yawの角度値や電圧といったテレメトリをスマホ側で見れるようにしています．\nイメージとしてはCrazyfileのようなフライトコントローラとフレーム兼用の基板を目指して作っています．リアルで私に会うことがあればお渡しします！\n名刺完成しました！(形だけ) pic.twitter.com/beSWObaRMu\n— fumi (@fumi_maker) August 20, 2024\n \n概要\n実際に動いている様子は以下をご覧ください．\nwww.youtube.com\nこの名刺は部品を実装することで手のひらサイズの小型ドローンとして飛行させることができます。また、ダックスの首輪のLEDを実装しスマホのNFCアンテナ部を近づけるとLEDが点滅する機能があります。\n\nドローン名刺について\nESP32を搭載し、基板自体がドローンになります。以下の機能を持っています。\n6軸IMUとの通信と姿勢推定\nPID制御による姿勢制御\nESP32自身がWi-Fiアクセスポイントとなり、スマホをコントローラーとしたWebSocket通信による機体操縦\n機体情報テレメトリ通信\nPIDゲインやキャリブレーションが調整可能なWebUI\n角度制御飛行（Angle）\n必要なもの\nドローン名刺基板\nBOM表のパーツ\n３Dプリンタ\n852…",
+          "link": "https://fumimaker.net/entry/2026/04/18/202824?utm_source=feed",
+          "publishedOn": "2026-04-18T11:28:24.000Z",
+          "wordCount": null,
+          "title": "実際に飛ぶドローン名刺を作ってみた",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/b6e5cd115292452ef026623eac3aaee0a73e97dc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffumimaker%2F20251228%2F20251228204052.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b6e5cd115292452ef026623eac3aaee0a73e97dc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffumimaker%2F20251228%2F20251228204052.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901346364569",
           "author": null,
           "description": "今回は技術ブログじゃないのですみません。Twitterのフォロワー数も制御できないほど多くなってしまいあまり私的すぎる（オタクすぎる）ことを長文でいうと恥ずかしいのでこちらで日記を書きます。備忘録的にネットの海に放流しておきます。今となってはAIの情報源にしか(ry\n結論としては、今回のライブは一線を退いたかつてのボカロニコ厨には最適なライブで大いに盛り上がることができた。ボカロに限らず様々なジャンルのライブイベントにも参加したいなと思わせる素晴らしい会でした。\n\n謎の初音ミクライブ？\n年に2回くらい遊ぶ友達からローソンが主催する初音ミクの謎ライブ当たったんだけどいく？と誘わる。ボカロ歴は小学校5年生からなので意外と長いですが実はマジカルミライやニコニコ超会議など、こうしたイベントには一度も行ったことがなく、いい機会なので行ってみることに。かつてのニコ厨が今では立派な大人になり、経済的な余裕が出てきたんだな。\nl-tike.com\nしかしローソンが主催ってどういうことなんだ。事前になにを準備していけばいいんだなど事前知識ほぼなしで参加することに。さすがに少しくらい予習するべきだった。\nあいにく席はあまりよくなく、アリーナの後ろの方。しかし、初参加ということでわくわくだった。かつてのニコ厨は通用するだろうか。\n会場とオタクたち\n横浜アリーナ。新横浜からも近く店もあったし結構良かった。住んでる場所も神奈川なので近くて助かった。普通は幕張とからしいので本当に助かった。（2時間半コース）\nアリーナということで段差もあり見やすく大変良かった。どうやら普段は見えないみたいなことがあるらしく、普段からマジカルミライに参加している人からもポジティブな意見が見られた。\n余裕を持って会場外に到着するやいなやここまで人が多いとは。両手で抱えるほど大きいぬいぐるみや色とりどりのはっぴ来ているひとが…",
@@ -8548,16 +8563,6 @@
           "wordCount": 1814,
           "title": "GameGaz Daily 2026.1.20",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/tiicu-homescreen.jpg"
-        },
-        {
-          "id": "https://gamegaz.com/?p=44866",
-          "author": "mamosuke",
-          "description": "BackPork 0.1,PS5 Dump Runner Installer v1.4.0,ps5upload v1.1.9,PS Multi Tools v16.1,Adrenaline v1768737393, Emu4VitaPlus v0.60,FlipperMCE nightly-64,Amiigo 2.4.1,MakeROM v0.19.0,CTRTool v1.3.0,NitroSwan v.0.7.6,SwanGBA v0.7.6,red-viper v1.2.3,PCSX2 v2.7.53,SimpleLauncher release4.9.1→→→この記事の続きを読む\nGameGaz Daily 2026.1.19 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026011944866/",
-          "publishedOn": "2026-01-18T23:26:22.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2026.1.19",
-          "imageUrl": null
         }
       ]
     },

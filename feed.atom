@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-18T11:11:17.205Z</updated>
+    <updated>2026-04-18T12:06:20.102Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[実際に飛ぶドローン名刺を作ってみた]]></title>
+        <id>hatenablog://entry/17179246901377958293</id>
+        <link href="https://fumimaker.net/entry/2026/04/18/202824?utm_source=feed"/>
+        <updated>2026-04-18T11:28:24.000Z</updated>
+        <summary type="html"><![CDATA[English description below.
+実装することで実際にドローンとして飛行できる，ドローン名刺を作ってみました．
+長い間，バグっててあんまりきれいに飛ばなかったのですが息抜きに飛ぶように修正してみました．
+ESP32をコアとしており，6軸IMUのセンシングとモーターのPID制御します．スマホをプロポとするためにESP32上でWebサーバーを立て，Joystickを動かすとWebSocket通信で入力値をドローンに送信します．また，ドローンのRoll pitch yawの角度値や電圧といったテレメトリをスマホ側で見れるようにしています．
+イメージとしてはCrazyfileのようなフライトコントローラとフレーム兼用の基板を目指して作っています．リアルで私に会うことがあればお渡しします！
+名刺完成しました！(形だけ) pic.twitter.com/beSWObaRMu
+— fumi (@fumi_maker) August 20, 2024
+ 
+概要
+実際に動いている様子は以下をご覧ください．
+www.youtube.com
+この名刺は部品を実装することで手のひらサイズの小型ドローンとして飛行させることができます。また、ダックスの首輪のLEDを実装しスマホのNFCアンテナ部を近づけるとLEDが点滅する機能があります。
+
+ドローン名刺について
+ESP32を搭載し、基板自体がドローンになります。以下の機能を持っています。
+6軸IMUとの通信と姿勢推定
+PID制御による姿勢制御
+ESP32自身がWi-Fiアクセスポイントとなり、スマホをコントローラーとしたWebSocket通信による機体操縦
+機体情報テレメトリ通信
+PIDゲインやキャリブレーションが調整可能なWebUI
+角度制御飛行（Angle）
+必要なもの
+ドローン名刺基板
+BOM表のパーツ
+３Dプリンタ
+852…]]></summary>
+        <author>
+            <name>fumiLab</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[26/4/18 【help me】異性の友人を募集します]]></title>
         <id>hatenablog://entry/17179246901377664037</id>
@@ -10260,17 +10295,6 @@ FreeBSDの話もしよう。FreeBSDは主にサーバ用途で利用している
     LINEグループ作成を要求されるC…]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2026.1.19]]></title>
-        <id>https://gamegaz.com/?p=44866</id>
-        <link href="https://gamegaz.com/2026011944866/"/>
-        <updated>2026-01-18T23:26:22.000Z</updated>
-        <summary type="html"><![CDATA[BackPork 0.1,PS5 Dump Runner Installer v1.4.0,ps5upload v1.1.9,PS Multi Tools v16.1,Adrenaline v1768737393, Emu4VitaPlus v0.60,FlipperMCE nightly-64,Amiigo 2.4.1,MakeROM v0.19.0,CTRTool v1.3.0,NitroSwan v.0.7.6,SwanGBA v0.7.6,red-viper v1.2.3,PCSX2 v2.7.53,SimpleLauncher release4.9.1→→→この記事の続きを読む
-GameGaz Daily 2026.1.19 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

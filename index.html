@@ -78,6 +78,51 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://fumimaker.net/" target="_blank"
+              rel="noopener">fumiLab</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">実際に飛ぶドローン名刺を作ってみた</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://fumimaker.net/entry/2026/04/18/202824?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>English description below.
+実装することで実際にドローンとして飛行できる，ドローン名刺を作ってみました．
+長い間，バグっててあんまりきれいに飛ばなかったのですが息抜きに飛ぶように修正してみました．
+ESP32をコアとしており，6軸IMUのセンシングとモーターのPID制御します．スマホをプロポとするためにESP32上でWebサーバーを立て，Joystickを動かすとWebSocket通信で入力値をドローンに送信します．また，ドローンのRoll pitch yawの角度値や電圧といったテレメトリをスマホ側で見れるようにしています．
+イメージとしてはCrazyfileのようなフライトコントローラとフレーム兼用の基板を目指して作っています．リアルで私に会うことがあればお渡しします！
+名刺完成しました！(形だけ) pic.twitter.com/beSWObaRMu
+— fumi (@fumi_maker) August 20, 2024
+ 
+概要
+実際に動いている様子は以下をご覧ください．
+www.youtube.com
+この名刺は部品を実装することで手のひらサイズの小型ドローンとして飛行させることができます。また、ダックスの首輪のLEDを実装しスマホのNFCアンテナ部を近づけるとLEDが点滅する機能があります。
+
+ドローン名刺について
+ESP32を搭載し、基板自体がドローンになります。以下の機能を持っています。
+6軸IMUとの通信と姿勢推定
+PID制御による姿勢制御
+ESP32自身がWi-Fiアクセスポイントとなり、スマホをコントローラーとしたWebSocket通信による機体操縦
+機体情報テレメトリ通信
+PIDゲインやキャリブレーションが調整可能なWebUI
+角度制御飛行（Angle）
+必要なもの
+ドローン名刺基板
+BOM表のパーツ
+３Dプリンタ
+852…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/b6e5cd115292452ef026623eac3aaee0a73e97dc/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffumimaker%2F20251228%2F20251228204052.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://saize-lw.hatenablog.com/" target="_blank"
               rel="noopener">LWのサイゼリヤ</a></h3>
           <section class="articles-per-source">
@@ -15243,31 +15288,6 @@ FreeBSDの話もしよう。FreeBSDは主にサーバ用途で利用している
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2026-01-18">2026-01-18</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2026.1.19</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026011944866/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>BackPork 0.1,PS5 Dump Runner Installer v1.4.0,ps5upload v1.1.9,PS Multi Tools v16.1,Adrenaline v1768737393, Emu4VitaPlus v0.60,FlipperMCE nightly-64,Amiigo 2.4.1,MakeROM v0.19.0,CTRTool v1.3.0,NitroSwan v.0.7.6,SwanGBA v0.7.6,red-viper v1.2.3,PCSX2 v2.7.53,SimpleLauncher release4.9.1→→→この記事の続きを読む
-GameGaz Daily 2026.1.19 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2025-12-30">2025-12-30</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -17549,7 +17569,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-18T11:11:17.167Z">2026-04-18T11:11:17.167Z</time>
+    <time id="build-timestamp" datetime="2026-04-18T12:06:20.062Z">2026-04-18T12:06:20.062Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
