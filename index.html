@@ -78,6 +78,83 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.publickey1.jp/" target="_blank"
+              rel="noopener">Publickey</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Cloudflare、AIエージェント用のファイルシステム「Cloudflare Artifacts」発表。Git対応バージョン管理とRESTful API対応のファイルシステム</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.publickey1.jp/blog/26/cloudflareaicloudflare_artifactsgitrestful_api.html" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Cloudflareは、AIエージェントのためのファイルシステム「Cloudflare Arttfacts」をプライベートベータとして発表しました。 We’ve just launched Artifacts: Git-compatible...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Cloudflare、AIエージェントがメールの送受信を行える「Cloudflare Email Service」パブリックベータで公開</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.publickey1.jp/blog/26/cloudflareaicloudflare_email_service.html" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Cloudflareは、アプリケーションやAIエージェントが電子メールの送受信を行える「Cloudflare Email Service」をパブリックベータとして公開しました。 Today, Cloudflare Email Service...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ヘッドレスなSalesforce登場、あらゆる機能がAPI/CLI/MCPでアクセスできる「Salesforce Headless 360」発表</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.publickey1.jp/blog/26/salesforceapiclimcpsalesforce_headless_360.html" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Salesforceはサンフランシスコで4月15日と16日の2日間にわたり開催した開発者向けイベント「Salesforce TDX 2026」で、Salesforceのあらゆる機能をAPI、CLI（コマンドライン）、そしてMCP（Model...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">つよつよsoxパラメータ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/04/19/223030" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ノイズ除去できすぎてえらいことですよ！Gemini先生この情報どこから拾ってきたの？異次元すぎて今までの全てやり直したい。
+■RAW変換
+sox.exe -D wav\2_23_AM.wav -c1 -b8 -e signed-integer 16384.raw trim 0 60 fade t 0 60 2 rate -v 16384 norm -1
+■8ad変換
+sox.exe -D wav\2_23_AM.wav -c1 -b16 13379.wav trim 0 60 fade t 0 60 2 rate -v 13379 norm -1
+wav28ad.exe 13379.wav 13379.8ad
+■RAWオプション補足
+-D: 余計な「シャーッ」というノイズ（ディザ）を入れない。
+-b8 -e signed-integer: GBAのDirect Sound（FIFO）が最も得意とする、符号付き8bit形式を正確に指定。
+rate -v 16384: 高品質な補完（VHQモード）により、リサンプルによるノイズを最小化。
+norm -1: すべての加工が終わった最後に配置することで、8bitのダイナミックレンジを1ビットも無駄にせず使い切る。
+■8adオプション補足
+-b16: 後のADPCMエンコーダ（wav28ad）が正確な「差分」を計算できるよう、あえて16bitで高精度に渡す。
+
+このワークフローは、**「内部の計算は高精度（32/64bit）で行い、
+最後の最後で目的の形式に落とす」**という、
+プロのオーディオエンジニアがマスタリングで行う手順と同じ考え方に基づいています。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901378406406/1776606855" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
               rel="noopener">Web Scratch</a></h3>
           <section class="articles-per-source">
@@ -17457,7 +17534,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-19T13:25:16.511Z">2026-04-19T13:25:16.511Z</time>
+    <time id="build-timestamp" datetime="2026-04-19T14:13:18.227Z">2026-04-19T14:13:18.227Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

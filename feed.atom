@@ -2,10 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-19T13:25:16.556Z</updated>
+    <updated>2026-04-19T14:13:18.269Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Cloudflare、AIエージェント用のファイルシステム「Cloudflare Artifacts」発表。Git対応バージョン管理とRESTful API対応のファイルシステム]]></title>
+        <id>https://www.publickey1.jp/blog/26/cloudflareaicloudflare_artifactsgitrestful_api.html</id>
+        <link href="https://www.publickey1.jp/blog/26/cloudflareaicloudflare_artifactsgitrestful_api.html"/>
+        <updated>2026-04-19T15:41:28.000Z</updated>
+        <summary type="html"><![CDATA[Cloudflareは、AIエージェントのためのファイルシステム「Cloudflare Arttfacts」をプライベートベータとして発表しました。 We’ve just launched Artifacts: Git-compatible...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cloudflare、AIエージェントがメールの送受信を行える「Cloudflare Email Service」パブリックベータで公開]]></title>
+        <id>https://www.publickey1.jp/blog/26/cloudflareaicloudflare_email_service.html</id>
+        <link href="https://www.publickey1.jp/blog/26/cloudflareaicloudflare_email_service.html"/>
+        <updated>2026-04-19T15:40:07.000Z</updated>
+        <summary type="html"><![CDATA[Cloudflareは、アプリケーションやAIエージェントが電子メールの送受信を行える「Cloudflare Email Service」をパブリックベータとして公開しました。 Today, Cloudflare Email Service...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ヘッドレスなSalesforce登場、あらゆる機能がAPI/CLI/MCPでアクセスできる「Salesforce Headless 360」発表]]></title>
+        <id>https://www.publickey1.jp/blog/26/salesforceapiclimcpsalesforce_headless_360.html</id>
+        <link href="https://www.publickey1.jp/blog/26/salesforceapiclimcpsalesforce_headless_360.html"/>
+        <updated>2026-04-19T15:35:59.000Z</updated>
+        <summary type="html"><![CDATA[Salesforceはサンフランシスコで4月15日と16日の2日間にわたり開催した開発者向けイベント「Salesforce TDX 2026」で、Salesforceのあらゆる機能をAPI、CLI（コマンドライン）、そしてMCP（Model...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[つよつよsoxパラメータ]]></title>
+        <id>hatenablog://entry/17179246901378406406</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/04/19/223030"/>
+        <updated>2026-04-19T13:30:30.000Z</updated>
+        <summary type="html"><![CDATA[ノイズ除去できすぎてえらいことですよ！Gemini先生この情報どこから拾ってきたの？異次元すぎて今までの全てやり直したい。
+■RAW変換
+sox.exe -D wav\2_23_AM.wav -c1 -b8 -e signed-integer 16384.raw trim 0 60 fade t 0 60 2 rate -v 16384 norm -1
+■8ad変換
+sox.exe -D wav\2_23_AM.wav -c1 -b16 13379.wav trim 0 60 fade t 0 60 2 rate -v 13379 norm -1
+wav28ad.exe 13379.wav 13379.8ad
+■RAWオプション補足
+-D: 余計な「シャーッ」というノイズ（ディザ）を入れない。
+-b8 -e signed-integer: GBAのDirect Sound（FIFO）が最も得意とする、符号付き8bit形式を正確に指定。
+rate -v 16384: 高品質な補完（VHQモード）により、リサンプルによるノイズを最小化。
+norm -1: すべての加工が終わった最後に配置することで、8bitのダイナミックレンジを1ビットも無駄にせず使い切る。
+■8adオプション補足
+-b16: 後のADPCMエンコーダ（wav28ad）が正確な「差分」を計算できるよう、あえて16bitで高精度に渡す。
+
+このワークフローは、**「内部の計算は高精度（32/64bit）で行い、
+最後の最後で目的の形式に落とす」**という、
+プロのオーディオエンジニアがマスタリングで行う手順と同じ考え方に基づいています。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SecureClipboard: クリップボードに入った機密情報を自動でマスクするmacOSアプリ]]></title>
         <id>https://efcl.info/2026/04/19/secure-clipboard/</id>

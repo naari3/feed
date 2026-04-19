@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901378406406",
+          "author": null,
+          "description": "ノイズ除去できすぎてえらいことですよ！Gemini先生この情報どこから拾ってきたの？異次元すぎて今までの全てやり直したい。\n■RAW変換\nsox.exe -D wav\\2_23_AM.wav -c1 -b8 -e signed-integer 16384.raw trim 0 60 fade t 0 60 2 rate -v 16384 norm -1\n■8ad変換\nsox.exe -D wav\\2_23_AM.wav -c1 -b16 13379.wav trim 0 60 fade t 0 60 2 rate -v 13379 norm -1\nwav28ad.exe 13379.wav 13379.8ad\n■RAWオプション補足\n-D: 余計な「シャーッ」というノイズ（ディザ）を入れない。\n-b8 -e signed-integer: GBAのDirect Sound（FIFO）が最も得意とする、符号付き8bit形式を正確に指定。\nrate -v 16384: 高品質な補完（VHQモード）により、リサンプルによるノイズを最小化。\nnorm -1: すべての加工が終わった最後に配置することで、8bitのダイナミックレンジを1ビットも無駄にせず使い切る。\n■8adオプション補足\n-b16: 後のADPCMエンコーダ（wav28ad）が正確な「差分」を計算できるよう、あえて16bitで高精度に渡す。\n\nこのワークフローは、**「内部の計算は高精度（32/64bit）で行い、\n最後の最後で目的の形式に落とす」**という、\nプロのオーディオエンジニアがマスタリングで行う手順と同じ考え方に基づいています。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/04/19/223030",
+          "publishedOn": "2026-04-19T13:30:30.000Z",
+          "wordCount": 603,
+          "title": "つよつよsoxパラメータ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901378406406/1776606855",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901378406406/1776606855"
+        },
+        {
           "id": "hatenablog://entry/17179246901377248191",
           "author": null,
           "description": "第1/2世代のセーブデータを第3世代へコピーするソフトウェア。物理ケーブルでGBの5VとGBAの3.3V通信をしています（！）。あとポケモン詳しくないのですけどセーブ互換あるのか不明です。厳密な１：１にはならないですよね・・・？にしてもすげぇ根性・・・感服します。\nwww.youtube.com\ngithub.com",
@@ -8658,6 +8673,36 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_artifactsgitrestful_api.html",
+          "author": null,
+          "description": "Cloudflareは、AIエージェントのためのファイルシステム「Cloudflare Arttfacts」をプライベートベータとして発表しました。 We’ve just launched Artifacts: Git-compatible...",
+          "link": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_artifactsgitrestful_api.html",
+          "publishedOn": "2026-04-19T15:41:28.000Z",
+          "wordCount": null,
+          "title": "Cloudflare、AIエージェント用のファイルシステム「Cloudflare Artifacts」発表。Git対応バージョン管理とRESTful API対応のファイルシステム",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_email_service.html",
+          "author": null,
+          "description": "Cloudflareは、アプリケーションやAIエージェントが電子メールの送受信を行える「Cloudflare Email Service」をパブリックベータとして公開しました。 Today, Cloudflare Email Service...",
+          "link": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_email_service.html",
+          "publishedOn": "2026-04-19T15:40:07.000Z",
+          "wordCount": null,
+          "title": "Cloudflare、AIエージェントがメールの送受信を行える「Cloudflare Email Service」パブリックベータで公開",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/salesforceapiclimcpsalesforce_headless_360.html",
+          "author": null,
+          "description": "Salesforceはサンフランシスコで4月15日と16日の2日間にわたり開催した開発者向けイベント「Salesforce TDX 2026」で、Salesforceのあらゆる機能をAPI、CLI（コマンドライン）、そしてMCP（Model...",
+          "link": "https://www.publickey1.jp/blog/26/salesforceapiclimcpsalesforce_headless_360.html",
+          "publishedOn": "2026-04-19T15:35:59.000Z",
+          "wordCount": null,
+          "title": "ヘッドレスなSalesforce登場、あらゆる機能がAPI/CLI/MCPでアクセスできる「Salesforce Headless 360」発表",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/aiai_hitem3d_203daipr.html",
           "author": null,
