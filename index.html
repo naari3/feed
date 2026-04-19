@@ -78,6 +78,39 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">SecureClipboard: クリップボードに入った機密情報を自動でマスクするmacOSアプリ</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2026/04/19/secure-clipboard/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>クリップボードを監視して、機密情報やAPIトークンが入ったら自動的にマスクするmacOSアプリ SecureClipboard を作りました。
+GitHub: secretlint/secure-clipboard
+
+テキストだけでなく画像にも対応していて、スクリーンショットに写り込んだトークンなどもVision frameworkでOCRしてマスクします。
+内部ではsecretlintを使って、AWS、GitHub、Slack、GCP、Azure、npm、Dockerなどのトークンを検出します。
+スキャン処理はすべてローカルで完結するmacOSアプリケーションなので、クリップボードの内容が外部に送信されることはありません。
+なぜ作ったか
+API Tokenをコピーして.envへ貼り付けたあと、そのトークンがクリップボード上に残り続けることがあります。
+そのまま別のウィンドウで⌘+Vしてしまい、Slackのメッセージ欄やLinearのIssueタイトル、ブラウザの検索バーなどに意図せずペーストしてしまう事故が起きやすいです。
+ペーストするまでクリップボードに何が入っているかは目に見えないので、気づきにくいというのも問題です。
+SecureClipboardはコピーされた瞬間にマスクするため、誤ってペーストしても安全になります。
+本物のトークンが必要なときはメニューから”Copy Original Text”を選ぶと取り出せますが、90秒後に自動でクリップボードから消えるようになっています。
+これは1Passwordのクリップボードクリアと同じ仕組みです。
+画像の場合も同様で、スクリーンショットを撮ってどこかに貼り付けるときに、意図しない映り込みを自動で防止します。
+たとえばClaude Codeのターミナル画面をスクリーンショットしたときに、たまたまAPIキーや隠したいコー…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -15233,63 +15266,6 @@ GameGaz Daily 2026.1.20 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">開発環境現状確認 2026</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/01/20/003055" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ネットの知人がやっていたので自分も現状どうなっているかを紹介したいと思う。
-OS
-Linux、FreeBSDが中心になっている。macOSはプライベートでは全く利用していない。Windowsはもっぱらゲーミング用途だが、最近はLinuxでもまともにSteamのゲームが動くようになっているらしい。しかしアンチチートを搭載しているようなAPEXなどのゲームはうまく動かないようだ。
-LinuxではopenSUSE Tumbleweedを使っている。SUSEは自分が中学生のときに一番最初に利用したLinuxで、それ以来謎の愛着があってずっと使っている。パッケージマネージャはzypperというのが載っていて、これはRPMベース。もともとSUSEはSlackware系譜だったのだが、今はRPMを利用するようになっている。いっときUbuntuやFedoraのあたりを使ったこともあるが、SUSEにはYast2というグラフィカルな設定ツールが標準で付属しており、これがなかなか便利なのでずっと使っている。
-www.opensuse.org
-FreeBSDの話もしよう。FreeBSDは主にサーバ用途で利用しているが、軽量なOSとしてノートブックに入れたりもする。シンプルでメモリ消費も小さく安定していて、Linuxと違ってカーネルと周辺ツールが単一のパーティによって開発されているため、ドキュメンテーションが包括的に行なわれているのが特徴だ。例えば、FreeBSDのマニュアルにはXのインストール方法やKerberos認証、カーネルパラメータ、NFSなどが全て収まっており、これがLLMと相性が良いのだ。もちろんGnomeも動作するしPOSIX-compliantだから、一見普通のLinuxと変わらない。Linux互換レイヤーも公式に用意されているから、ちゃっかりLinux向けのバイナリが動いたりする。…</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901345782050/1768836655" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.publickey1.jp/" target="_blank"
-              rel="noopener">Publickey</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">jQuery 4.0正式版が公開。10年振りのメジャーバージョンアップ。IE10以前がサポート外、XSS防止など</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.publickey1.jp/blog/26/jquery_4010ie10xss.html" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>jQuery開発チームは、10年振りのメジャーバージョンアップとなる「JQuery 4.0」正式版のリリースを発表しました。 ちなみに2026年1月は、最初のバージョンのjQueryが2006年1月にはじめて公開されてからちょうど20周年に...</span>
-                  </div>
-                  <img src="https://www.publickey1.jp/2026/jquery40ga.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">インフラ構成ツールのPulumiがTerraformのHCLに対応。Terraformからの移行を容易に</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.publickey1.jp/blog/26/pulumiterraformhclterraform.html" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>クラウドをはじめとするITインフラの構成をコードで定義する、いわゆるInfrastructure as Codeツール「Pulumi」が、Terraformなどで使われているHCL（HashiCorp Configuration Langu...</span>
-                  </div>
-                  <img src="https://www.publickey1.jp/2026/TSbTjRna.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17574,7 +17550,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-19T02:59:22.498Z">2026-04-19T02:59:22.498Z</time>
+    <time id="build-timestamp" datetime="2026-04-19T04:08:26.347Z">2026-04-19T04:08:26.347Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
