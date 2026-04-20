@@ -78,6 +78,40 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
+              rel="noopener">Web Scratch</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Secretlint v12.0.0リリース: Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaの検出に対応</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2026/04/20/secretlint-v12/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlintのv12.0.0をリリースしました。
+Release v12.0.0 · secretlint/secretlint
+このバージョンでは、次のように追加で検知できるようになったサービスが10個あります。
+Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figma
+あわせて、@secretlint/secretlint-rule-preset-recommendのパッケージサイズを約80%削減しています。
+新しく追加された検出ルール
+@secretlint/secretlint-rule-preset-recommendに、次の10個のサービスのAPIトークンなどを検出するルールが追加されました。
+Groq - gsk_から始まるAPIキー
+Hugging Face - hf_から始まるUser Access Token
+Notion - secret_/ntn_から始まるIntegration Token
+GitLab - Personal Access Token、Pipeline Trigger Token、Runner Registration Tokenなど
+Grafana - Service Account TokenやCloud Access Policy Token
+HashiCorp Vault - hvs./hvb.から始まるトークン
+Vercel - Access Token
+Databricks - dapiから始まるPersonal Access Token
+Docker - dckr_pat_から始まるPersonal Access…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -15275,28 +15309,6 @@ Profile
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://note.com/ecolidelvsvc11" target="_blank"
-              rel="noopener">ティラノサウルスのぼんじり</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Twitter4</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://note.com/ecolidelvsvc11/n/n4c1ba79af774" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>スマホのニコニコのアプリ開いたら90％くらいの確率で「真・なかやまきんに君合作弐」をオススメされるんだけど何
-
-続きをみる</span>
-                  </div>
-                  <img src="https://d2l930y2yx77uc.cloudfront.net/production/social_images/85552379577a24225f1f294abc37d7dcab21d0e1.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17581,7 +17593,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-20T01:31:29.723Z">2026-04-20T01:31:29.723Z</time>
+    <time id="build-timestamp" datetime="2026-04-20T02:59:50.832Z">2026-04-20T02:59:50.832Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

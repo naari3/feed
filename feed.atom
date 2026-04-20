@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-20T01:31:29.768Z</updated>
+    <updated>2026-04-20T02:59:50.875Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Secretlint v12.0.0リリース: Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaの検出に対応]]></title>
+        <id>https://efcl.info/2026/04/20/secretlint-v12/</id>
+        <link href="https://efcl.info/2026/04/20/secretlint-v12/"/>
+        <updated>2026-04-20T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlintのv12.0.0をリリースしました。
+Release v12.0.0 · secretlint/secretlint
+このバージョンでは、次のように追加で検知できるようになったサービスが10個あります。
+Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figma
+あわせて、@secretlint/secretlint-rule-preset-recommendのパッケージサイズを約80%削減しています。
+新しく追加された検出ルール
+@secretlint/secretlint-rule-preset-recommendに、次の10個のサービスのAPIトークンなどを検出するルールが追加されました。
+Groq - gsk_から始まるAPIキー
+Hugging Face - hf_から始まるUser Access Token
+Notion - secret_/ntn_から始まるIntegration Token
+GitLab - Personal Access Token、Pipeline Trigger Token、Runner Registration Tokenなど
+Grafana - Service Account TokenやCloud Access Policy Token
+HashiCorp Vault - hvs./hvb.から始まるトークン
+Vercel - Access Token
+Databricks - dapiから始まるPersonal Access Token
+Docker - dckr_pat_から始まるPersonal Access…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.4.20]]></title>
         <id>https://gamegaz.com/?p=45352</id>
@@ -10295,18 +10320,6 @@ GameGaz Daily 2026.1.21 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[マイクロソフトは、同社が開発したユーザーインターフェイスを記述するためのマークアップ言語「XAML」（ザムル）を用いてアプリケーションのモックアップを手軽に構築できる「XAML Studio」をオープンソース化したことを発表しました。 Bi...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twitter4]]></title>
-        <id>https://note.com/ecolidelvsvc11/n/n4c1ba79af774</id>
-        <link href="https://note.com/ecolidelvsvc11/n/n4c1ba79af774"/>
-        <updated>2026-01-20T13:59:06.000Z</updated>
-        <summary type="html"><![CDATA[スマホのニコニコのアプリ開いたら90％くらいの確率で「真・なかやまきんに君合作弐」をオススメされるんだけど何
-
-続きをみる]]></summary>
-        <author>
-            <name>ティラノサウルスのぼんじり</name>
         </author>
     </entry>
     <entry>

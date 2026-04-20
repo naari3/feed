@@ -5536,16 +5536,6 @@
           "wordCount": 2403,
           "title": "Twitter5",
           "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/969ad72da2d82316bf4a5b1b2a65b35cbf546e4e.png"
-        },
-        {
-          "id": "https://note.com/ecolidelvsvc11/n/n4c1ba79af774",
-          "author": null,
-          "description": "スマホのニコニコのアプリ開いたら90％くらいの確率で「真・なかやまきんに君合作弐」をオススメされるんだけど何\n\n続きをみる",
-          "link": "https://note.com/ecolidelvsvc11/n/n4c1ba79af774",
-          "publishedOn": "2026-01-20T13:59:06.000Z",
-          "wordCount": 2312,
-          "title": "Twitter4",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/85552379577a24225f1f294abc37d7dcab21d0e1.png"
         }
       ]
     },
@@ -6948,6 +6938,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2026/04/20/secretlint-v12/",
+          "author": null,
+          "description": "ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlintのv12.0.0をリリースしました。\nRelease v12.0.0 · secretlint/secretlint\nこのバージョンでは、次のように追加で検知できるようになったサービスが10個あります。\nGroq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figma\nあわせて、@secretlint/secretlint-rule-preset-recommendのパッケージサイズを約80%削減しています。\n新しく追加された検出ルール\n@secretlint/secretlint-rule-preset-recommendに、次の10個のサービスのAPIトークンなどを検出するルールが追加されました。\nGroq - gsk_から始まるAPIキー\nHugging Face - hf_から始まるUser Access Token\nNotion - secret_/ntn_から始まるIntegration Token\nGitLab - Personal Access Token、Pipeline Trigger Token、Runner Registration Tokenなど\nGrafana - Service Account TokenやCloud Access Policy Token\nHashiCorp Vault - hvs./hvb.から始まるトークン\nVercel - Access Token\nDatabricks - dapiから始まるPersonal Access Token\nDocker - dckr_pat_から始まるPersonal Access…",
+          "link": "https://efcl.info/2026/04/20/secretlint-v12/",
+          "publishedOn": "2026-04-20T01:00:00.000Z",
+          "wordCount": null,
+          "title": "Secretlint v12.0.0リリース: Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaの検出に対応",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2026/04/19/secure-clipboard/",
           "author": null,
