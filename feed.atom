@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-21T13:29:34.868Z</updated>
+    <updated>2026-04-21T14:31:31.534Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Vercel、Webブラウザ上のターミナルエミュレータ「wterm」をオープンソースで公開。WebAssembly製でWebページに埋め込み可能]]></title>
+        <id>https://www.publickey1.jp/blog/26/vercelwebwtermwebassemblyweb.html</id>
+        <link href="https://www.publickey1.jp/blog/26/vercelwebwtermwebassemblyweb.html"/>
+        <updated>2026-04-21T15:46:05.000Z</updated>
+        <summary type="html"><![CDATA[Vercelは、Webブラウザ上でターミナルエミュレータを実現する「wterm」（発音は“dub-term”：ダブターム）をオープンソースで公開しました。 wtermはコア部分がZig言語で開発されWebAssemblyにコンパイルされて提...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vercelのインシデントは何が問題で、どうすれば防げたのか（TOEIC風）]]></title>
+        <id>https://note.com/usop/n/nfe951a5bfe15</id>
+        <link href="https://note.com/usop/n/nfe951a5bfe15"/>
+        <updated>2026-04-21T14:19:39.000Z</updated>
+        <summary type="html"><![CDATA[Vercelのインシデントは、Vercel自身の発表を読めば書いてるのに、ちゃんと読めてない人が想像で書いちゃったものが拡散してる感じですね。
+ Vercel April 2026 security incident | Vercel Knowledge BaseWe’ve identified a security incident that involved unauthorizvercel.com 
+続きをみる]]></summary>
+        <author>
+            <name>unknown protocol</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[S級を終えて]]></title>
         <id>hatenablog://entry/17179246901379021608</id>
