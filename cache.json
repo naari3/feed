@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901379283267",
+          "author": null,
+          "description": "サウンドのダブルバッファについてドキュメント書きましたポヨ。暇な人いましたら読んでくださいポヨ。\nakkera102.sakura.ne.jp",
+          "link": "https://akkera102.hatenablog.com/entry/2026/04/22/104547",
+          "publishedOn": "2026-04-22T01:45:47.000Z",
+          "wordCount": 495,
+          "title": "PCMドライバ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901379283267/1776825060",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901379283267/1776825060"
+        },
+        {
           "id": "hatenablog://entry/17179246901378406406",
           "author": null,
           "description": "ノイズ除去できすぎてえらいことですよ！Gemini先生この情報どこから拾ってきたの？異次元すぎて今までの全てやり直したい。\n■RAW変換\nsox.exe -D wav\\2_23_AM.wav -c1 -b8 -e signed-integer 16384.raw trim 0 60 fade t 0 60 2 rate -v 16384 norm -1\n■8ad変換\nsox.exe -D wav\\2_23_AM.wav -c1 -b16 13379.wav trim 0 60 fade t 0 60 2 rate -v 13379 norm -1\nwav28ad.exe 13379.wav 13379.8ad\n■RAWオプション補足\n-D: 余計な「シャーッ」というノイズ（ディザ）を入れない。\n-b8 -e signed-integer: GBAのDirect Sound（FIFO）が最も得意とする、符号付き8bit形式を正確に指定。\nrate -v 16384: 高品質な補完（VHQモード）により、リサンプルによるノイズを最小化。\nnorm -1: すべての加工が終わった最後に配置することで、8bitのダイナミックレンジを1ビットも無駄にせず使い切る。\n■8adオプション補足\n-b16: 後のADPCMエンコーダ（wav28ad）が正確な「差分」を計算できるよう、あえて16bitで高精度に渡す。\n\nこのワークフローは、**「内部の計算は高精度（32/64bit）で行い、\n最後の最後で目的の形式に落とす」**という、\nプロのオーディオエンジニアがマスタリングで行う手順と同じ考え方に基づいています。",
