@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-23T14:41:20.352Z</updated>
+    <updated>2026-04-23T15:32:08.276Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10285,49 +10285,6 @@ IllustratorやPhotoshop、ペイントソフトやその他画像処理ソフト
 続きをみる]]></summary>
         <author>
             <name>しゃけ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DirectSoundフレームバッファ]]></title>
-        <id>hatenablog://entry/17179246901347253164</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/01/24/115925"/>
-        <updated>2026-01-24T02:59:25.000Z</updated>
-        <summary type="html"><![CDATA[今日は珍しく元気なので（汗）文章化していない話題を書こうと思います。えーとまず、内部的にすべてのGBA音声出力は32.768kHzにリサンプルしています。GBATEAKでは32.768kHz、16.384kHz、8.192kHzと物理レートで割り切れる数が最適である、と説明されています。一方DirectSoundのフレームバッファは以下のように存在しています。
-   Hz  buf
- 5734   96
-10512  176
-13379  224
-18157  304
-21024  352
-26758  448
-31536  528
-36314  608
-40137  672
-42048  704
-
-#define SND_BUF_SIZE				224
-#define SND_SAMPLE_TIME				(280896 / SND_BUF_SIZE)
-
-REG_TM0CNT_L   = 0x10000 - SND_SAMPLE_TIME;
-この出力レートに16384などは含まれていないので不思議に思うかもしれません。とりあえずフレームバッファがなぜこの数値なのかを見ていきます。
-
-バッファサイズは1フレーム280896サイクルで割り切れる数です。例として13379Hzを計算式に当てはめてみます。
-280896サイクル / 224バッファ = 1254
-この1254はタイマー割込み値（TimerDiv）です。言い方をかえると1フレームあたり1254サイクル毎に1回処理すると224バッファになります。また、
-16,777,216サイクル（CPU周波数） / 1254（TimerDiv） = 13,378.96012759171
-となり、四捨五入すると13379Hzです。また、
-280896 % 224 = 0
-というようにバッファのサイズが1フレームサイクルで割り切れて、結果Hzが求まったという順番ですね。プログラム的視点で立つと、最大のメリットは「1フレーム（VBlank間隔）ごとにバッファを過不足なく埋められる」ということです。気になる方は他の数値でも検証してみてください。
-
-さて、最初の頃に話した16384Hzですが、ぶっちゃけますとフレーム単位で演奏していないからです。この時のタイマー割込みは以下のように計算します。
-#define SND_CPU_CLOCK			(16 * 1024 * 1024)
-#define SND_AUDIO_RATE			16384
-#define SND_FRAQ			(SND_CPU_CLOCK / SND_AUDIO_RATE)
-
-REG_TM0CNT_L   = 0x10000 - SND_FRAQ;
-リニアに連続して演奏されているので問題にならないというわけです。この方法は途中で止めた場合、クリックノイズが発生するので最初から最後まで演奏仕切る方式に向いています。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

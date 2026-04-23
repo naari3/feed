@@ -374,21 +374,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/76835c1039cc5f1e44d51e094f0a226013121e24/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260127%2F20260127174517.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901347253164",
-          "author": null,
-          "description": "今日は珍しく元気なので（汗）文章化していない話題を書こうと思います。えーとまず、内部的にすべてのGBA音声出力は32.768kHzにリサンプルしています。GBATEAKでは32.768kHz、16.384kHz、8.192kHzと物理レートで割り切れる数が最適である、と説明されています。一方DirectSoundのフレームバッファは以下のように存在しています。\n   Hz  buf\n 5734   96\n10512  176\n13379  224\n18157  304\n21024  352\n26758  448\n31536  528\n36314  608\n40137  672\n42048  704\n\n#define SND_BUF_SIZE\t\t\t\t224\n#define SND_SAMPLE_TIME\t\t\t\t(280896 / SND_BUF_SIZE)\n\nREG_TM0CNT_L   = 0x10000 - SND_SAMPLE_TIME;\nこの出力レートに16384などは含まれていないので不思議に思うかもしれません。とりあえずフレームバッファがなぜこの数値なのかを見ていきます。\n\nバッファサイズは1フレーム280896サイクルで割り切れる数です。例として13379Hzを計算式に当てはめてみます。\n280896サイクル / 224バッファ = 1254\nこの1254はタイマー割込み値（TimerDiv）です。言い方をかえると1フレームあたり1254サイクル毎に1回処理すると224バッファになります。また、\n16,777,216サイクル（CPU周波数） / 1254（TimerDiv） = 13,378.96012759171\nとなり、四捨五入すると13379Hzです。また、\n280896 % 224 = 0\nというようにバッファのサイズが1フレームサイクルで割り切れて、結果Hzが求まったという順番ですね。プログラム的視点で立つと、最大のメリットは「1フレーム（VBlank間隔）ごとにバッファを過不足なく埋められる」ということです。気になる方は他の数値でも検証してみてください。\n\nさて、最初の頃に話した16384Hzですが、ぶっちゃけますとフレーム単位で演奏していないからです。この時のタイマー割込みは以下のように計算します。\n#define SND_CPU_CLOCK\t\t\t(16 * 1024 * 1024)\n#define SND_AUDIO_RATE\t\t\t16384\n#define SND_FRAQ\t\t\t(SND_CPU_CLOCK / SND_AUDIO_RATE)\n\nREG_TM0CNT_L   = 0x10000 - SND_FRAQ;\nリニアに連続して演奏されているので問題にならないというわけです。この方法は途中で止めた場合、クリックノイズが発生するので最初から最後まで演奏仕切る方式に向いています。",
-          "link": "https://akkera102.hatenablog.com/entry/2026/01/24/115925",
-          "publishedOn": "2026-01-24T02:59:25.000Z",
-          "wordCount": 580,
-          "title": "DirectSoundフレームバッファ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901347253164/1769225276",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901347253164/1769225276"
         }
       ]
     },
