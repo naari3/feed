@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-23T00:15:42.516Z</updated>
+    <updated>2026-04-23T01:31:57.799Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10365,23 +10365,6 @@ Syntax OK]]></summary>
 　俺ってもうお父さんと一生分かり合えないんだなーと思った]]></summary>
         <author>
             <name>空回り</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[個人で静的型付け言語のコンパイラをフルスクラッチで作れる時代が来た！]]></title>
-        <id>hatenablog://entry/17179246901347081476</id>
-        <link href="https://gfx.hatenablog.com/entry/2026/01/23/212644"/>
-        <updated>2026-01-23T12:26:44.000Z</updated>
-        <summary type="html"><![CDATA[今年に入ってからふと思いつきで新しいプログラミング言語を設計しつつagentic codingで実装したところ、なんと3週間ほどで基礎的なところができちゃいました。とはいえまだ本当に基礎的なところで、B-Tree Mapを実装できる程度です*1。
-github.com
-このプログラミング言語 "Wado"（ワドゥ）は、2026年1月3日にinitial commitが行われました。それから一ヶ月も経っていない今、静的型付け、ジェネリクス、トレイトおよびトレイトによる演算子オーバーローディング、クロージャ、モジュールシステム、shebangによるペライチスクリプトの実行、そして実用的なパフォーマンスを備えた処理系が動いています。
-開発者は私一人です。スタートアップで働きながら、二人の子供（mfxとrfx）を育てる傍らでの開発です。コードの100%以上はコーディングエージェントが書きました。100%以上というのはつまり、私が時々コメントやdead codeを消すので、正味105%くらいがagentic codingだろうという意味です。
-我ながら驚きますが、これは誇張でも冗談でもありません。2026年、ソフトウェアエンジニアが片手間でプログラミング言語を設計し、コンパイラまで完成させられる時代が本当に来たのです。
-Agentic Coding革命が突きつけた問い
-半年前、私は「Agentic coding革命が "成った" 世界で……」というブログを書きました。AIによるagentic codingが、「革命」と呼べるくらいの、不可逆的で激しい変化をもたらしていることを記録したものです。この頃は、この「革命」をすごいと思う気持ちと、戸惑う気持ちが半々くらいでした。
-そして今、Wadoの開発を通じて実感しています。この革命は、プログラミング言語に求められる性質をも変えつつあります…]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
         </author>
     </entry>
     <entry>
