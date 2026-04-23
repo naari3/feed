@@ -6695,6 +6695,16 @@
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
         {
+          "id": "https://blog.jxck.io/entries/2026-04-24/dictionary-generator.html",
+          "author": null,
+          "description": "Compression Dictionary Transport(CDT) は、まだ新しいプロトコルのため専用のツールが不足している。それらを開発し公開したので、紹介する。",
+          "link": "https://blog.jxck.io/entries/2026-04-24/dictionary-generator.html",
+          "publishedOn": "2026-04-24T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Compression Dictionary Transport 用の Toolkit を公開した",
+          "imageUrl": null
+        },
+        {
           "id": "https://blog.jxck.io/entries/2026-04-21/compression-dictionary-transport.html",
           "author": null,
           "description": "Compression Dictionary Transport は、圧縮に用いる辞書を HTTP 上で共有するプロトコルであり、2025 年 9 月に RFC 9842 として標準化された。本サイトの対応を行ったので、方式の概要とデプロイ方法について解説する。",
