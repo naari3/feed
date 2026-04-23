@@ -1501,21 +1501,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901347808014/1769389201"
-        },
-        {
-          "id": "hatenablog://entry/17179246901347124853",
-          "author": null,
-          "description": "社のRailsアプリにrubocop-rubycwを導入していた。\ngithub.com\npocke.hatenablog.com\nこれは大変便利なRuboCopプラグインで、ruby -cw ...によって出力される警告を、あたかもRuboCopの警告であるかのように扱うことができる。普段あまり意識されないがちなRubyインタプリタの警告を、みなさんが使っているRuboCopにのせることで使ってもらいやすくするのが目的。\n警告が全部出る状態でRSpecを走らせて警告を修正していたのが始まり。警告を修正するPRで合わせてこのgemの導入もした。\nこのgemの導入に合わせて、社内の有識者に「RubyVM::AbstractSyntaxTreeがdeprecateされるけど大丈夫そ?」(意訳)という意見をもらった。このgemではRubyVM::AbstractSyntaxTreeを警告の検出に使っている。ruby -cwe CODEのようにコマンドを実行することでも警告は検出できるけど、それではあまりにも遅いので、同じプロセス内でパースをすることで検出をしている。\n雑に試した感じだと、Prismを使うとwarningsメソッドで警告を取得できるので、置き換えが出来そうに見える。\n$ ruby -rprism -e 'pp Prism.parse(\"1\").warnings'\n[#<Prism::ParseWarning @type=:void_statement @message=\"possibly useless use of a literal in void context\" @location=#<Prism::Location @start_offset=0 @length=1 start_line=1> @level=:verbose>]\nただしこれには罠があり、正規表現内に関してはPrismは警告をしてくれない。\nということで、Prismに置き換えるなら正規表現の問題を見なかったことにするか、Prismが返すASTから正規表現リテラルを抜き出してRegexp.newに渡すかしかなさそう。もしくはいっそRuboCopの1つのCopとして実装してしまうか。\n# RubyVM::AST ならば警告が出る\n$ ruby -we 'RubyVM::AbstractSyntaxTree.parse(\"_=/[aa]/\")'\n(none):1: warning: character class has duplicated range: /[aa]/\n\n# Prism では警告が出ない\n$ ruby -rprism -we 'pp Prism.parse(\"_=/[aa]/\").warnings'\n[]\nなお、ruby -cwe ...を使った場合もPrismだと正規表現の警告は出ないようになっていた。\n$ ruby --parser=parse.y -cwe '_= /[aa]/'\n-e:1: warning: character class has duplicated range: /[aa]/\nSyntax OK\n\n$ ruby -cwe '_= /[aa]/'\nSyntax OK",
-          "link": "https://commits.hatenablog.com/entry/2026/01/24/100000",
-          "publishedOn": "2026-01-24T01:00:00.000Z",
-          "wordCount": null,
-          "title": "2026-01-23",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901347124853/1769216404",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901347124853/1769216404"
         }
       ]
     },
@@ -3220,21 +3205,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/26006613473223083/17179246901348099336/1769864200"
-        },
-        {
-          "id": "hatenablog://entry/17179246901345548796",
-          "author": null,
-          "description": "センター試験はもう終わりましたよお爺さん\n共通テストを解いてみよう\n個別科目\n数学Ⅰ、数学A\n数学Ⅱ・数学B・数学C\n情報\n国語（現代文のみ）\nまとめ\nセンター試験はもう終わりましたよお爺さん\n平成1桁生まれガチジジイの皆様お元気でしょうか。\n2021年にセンター試験が共通テストに改題されてから5年経った。それは単なる名称変更ではもちろんなく、以下のような内容の大きな変化を伴ってもいる。\n共通テストは、かつてのセンター試験とは難易度の次元がまったく異なります。\nそのため、保護者の方が「9割取って当たり前」といった90年代の感覚で評価してしまうのは、大きな誤解です。\n特に今年の共通テストで8割を取れているのであれば、これは昔のセンター試験で言えば確実に9割相当の成績です。…\n— 灘・京大医卒/元鉄緑講師が塾長のメジュソン (@matsumoto_nada) 2026年1月19日\n   大学入試センターによる公式見解としては、主に知識や記憶を問うていたセンター試験に対して、共通テストでは思考や表現について深く問う差分があることになっている。これによってパターン解法では対応できない難題が増えると共に、なんかそういうお題目とは特に関係なくシンプルな難化及び長大化が進んでいるようでもある。\nそんな激変した環境をセンター世代の我々もきっちり把握し、いつ大学生と会話しても大丈夫なようにジェネレーションギャップに備えていきましょう。\n共通テストを解いてみよう\n大抵の若者文化には複雑なコンテクストが付き纏っていて部外者からは外延が確定し難いが、共通テストは幸いにもそのものが各新聞社サイトに掲載されている。\nwww.nikkei.com俺は「数学Ⅰ、数学A」「数学Ⅱ、数学B、数学C」「国語（現代文のみ）」「情報」の四つを解いてみた（今でも一定解けて出題意図を味わう余裕がありそうな科目はこれらく…",
-          "link": "https://saize-lw.hatenablog.com/entry/2026/01/24/100007",
-          "publishedOn": "2026-01-24T01:00:07.000Z",
-          "wordCount": null,
-          "title": "26/1/24 センター世代も共通テストを解け2026",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/26006613473223083/17179246901345548796/1769216540",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/26006613473223083/17179246901345548796/1769216540"
         }
       ]
     },
@@ -6539,6 +6509,16 @@
       "feedUrl": "https://medium.com/feed/nttlabs",
       "siteUrl": "https://medium.com/nttlabs?source=rss----74f667786e9f---4",
       "articles": [
+        {
+          "id": "https://medium.com/p/532412990318",
+          "author": "Akihiro Suda",
+          "description": "",
+          "link": "https://medium.com/nttlabs/ubuntu-26-04-can-install-apt-packages-from-github-container-registry-532412990318?source=rss----74f667786e9f---4",
+          "publishedOn": "2026-04-23T12:58:51.000Z",
+          "wordCount": null,
+          "title": "Ubuntu 26.04 can install APT packages from GitHub Container Registry",
+          "imageUrl": null
+        },
         {
           "id": "https://medium.com/p/305177058afe",
           "author": "Kenta Iijima",
