@@ -5303,18 +5303,7 @@
       "title": "しゃけ",
       "feedUrl": "https://note.com/dokozonosyake/rss",
       "siteUrl": "https://note.com/dokozonosyake",
-      "articles": [
-        {
-          "id": "https://note.com/dokozonosyake/n/nf7a6825c9b23",
-          "author": null,
-          "description": "一般的な生成AIサービスは文字起こしに対応していない（音声解析のエンジンを積んでいない）場合があるほか、要求が通ったとしても生成された文章の信頼性に欠ける部分がある（処理の過程がブラックボックス化しており、勝手に要約文を混ぜたりすることがある）。また、会議の録音など、機密性の観点からオンラインの生成AIサービスに投げるのが望ましくない場合もある。\n今回は、OpenAIが公開しているAIモデルWhisperを使って、自分のMac上で音声の文字起こしができる環境を構築しよう。\n続きをみる",
-          "link": "https://note.com/dokozonosyake/n/nf7a6825c9b23",
-          "publishedOn": "2026-01-25T14:36:51.000Z",
-          "wordCount": null,
-          "title": "MacにOpenAI Whisperを導入して文字起こしツールを作る",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "藍瀬 まなみ",
@@ -9619,16 +9608,6 @@
           "wordCount": null,
           "title": "AIエージェントがPostgreSQL対応の優れたコードを書けるようになるAgent Skill「Postgres Best Practices」、Supabaseが公開",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/github_copilot_cliaigithub_copilot_sdk.html",
-          "author": null,
-          "description": "GitHubは、GitHub Copilot CLIのAIエージェント機能を主要なプログラミング言語から呼び出して、ユーザー独自のAIエージェントを備えたアプリケーションを開発可能にする「GitHub Copilot SDK」のテクニカルプ...",
-          "link": "https://www.publickey1.jp/blog/26/github_copilot_cliaigithub_copilot_sdk.html",
-          "publishedOn": "2026-01-25T13:55:31.000Z",
-          "wordCount": 1484,
-          "title": "GitHub Copilot CLIのエージェント機能をコードから自在に呼び出してAIエージェントアプリが作れる「GitHub Copilot SDK」テクニカルプレビュー公開",
-          "imageUrl": "https://www.publickey1.jp/2026/L8iS6kwn.jpg"
         }
       ]
     },

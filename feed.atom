@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-25T01:30:57.333Z</updated>
+    <updated>2026-04-25T02:58:38.912Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10215,28 +10215,6 @@ GameGaz Daily 2026.1.26 first appeared on 大人のためのゲーム講座.]]><
         <link href="https://www.publickey1.jp/blog/26/aipostgresqlagent_skillpostgres_best_practicessupabase.html"/>
         <updated>2026-01-25T15:59:33.000Z</updated>
         <summary type="html"><![CDATA[PostgreSQLをベースにしたBaaS（Backend as a Service）の「Supabase」を開発し提供しているSupabase社は、AIエージェントがPostgreSQLに対応した優れたコードを書けるようになるAgent ...]]></summary>
-        <author>
-            <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MacにOpenAI Whisperを導入して文字起こしツールを作る]]></title>
-        <id>https://note.com/dokozonosyake/n/nf7a6825c9b23</id>
-        <link href="https://note.com/dokozonosyake/n/nf7a6825c9b23"/>
-        <updated>2026-01-25T14:36:51.000Z</updated>
-        <summary type="html"><![CDATA[一般的な生成AIサービスは文字起こしに対応していない（音声解析のエンジンを積んでいない）場合があるほか、要求が通ったとしても生成された文章の信頼性に欠ける部分がある（処理の過程がブラックボックス化しており、勝手に要約文を混ぜたりすることがある）。また、会議の録音など、機密性の観点からオンラインの生成AIサービスに投げるのが望ましくない場合もある。
-今回は、OpenAIが公開しているAIモデルWhisperを使って、自分のMac上で音声の文字起こしができる環境を構築しよう。
-続きをみる]]></summary>
-        <author>
-            <name>しゃけ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GitHub Copilot CLIのエージェント機能をコードから自在に呼び出してAIエージェントアプリが作れる「GitHub Copilot SDK」テクニカルプレビュー公開]]></title>
-        <id>https://www.publickey1.jp/blog/26/github_copilot_cliaigithub_copilot_sdk.html</id>
-        <link href="https://www.publickey1.jp/blog/26/github_copilot_cliaigithub_copilot_sdk.html"/>
-        <updated>2026-01-25T13:55:31.000Z</updated>
-        <summary type="html"><![CDATA[GitHubは、GitHub Copilot CLIのAIエージェント機能を主要なプログラミング言語から呼び出して、ユーザー独自のAIエージェントを備えたアプリケーションを開発可能にする「GitHub Copilot SDK」のテクニカルプ...]]></summary>
         <author>
             <name>Publickey</name>
         </author>
