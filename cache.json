@@ -6468,6 +6468,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901381327388",
+          "author": null,
+          "description": "先日引っ越した。引っ越したはいいが炊飯器を持っていないので、これを機に購入することにした。\nひとまず店頭で機能や選び方の雰囲気をつかむのが良いと思ったので、近所のヨドバシに行ったところ、怒涛のキャッチコピーに襲われた。\n\n\n\n\nCGの気合いが入りまくっているし、演出もすごくて、炊飯器のカタログとは思えない。とにかくなんかすごいことだけが伝わってくる。\n炊飯器屋さんでクリエイティブを作るデザイナーは、さぞかし楽しかったろうと思う。\nせっかくなので、全体の傾向をつかむためにClaudeを使って主要メーカごとのキャッチコピーを調べてもらった。\nメーカー,キャッチコピー\n象印マホービン,炎舞炊き\n象印マホービン,豪熱大火力\n象印マホービン,わが家炊き\n象印マホービン,豪炎かまど釜\n象印マホービン,極め炊き\nタイガー魔法瓶,土鍋ご泡火炊き\nタイガー魔法瓶,本土鍋\nタイガー魔法瓶,300度WレイヤーIH\nタイガー魔法瓶,ハリつやポンプ\nパナソニック,おどり炊き\nパナソニック,可変圧力IH&スチーム おどり炊き\nパナソニック,ダイヤモンド竈釜\n三菱電機,本炭釜\n三菱電機,炭炊釜\n三菱電機,七重全面加熱\n東芝ライフスタイル,炎匠炊き\n東芝ライフスタイル,真空ひたし\n東芝ライフスタイル,真空保温\n東芝ライフスタイル,鍛造かまど銅釜\n日立,沸騰鉄釜\n日立,極上炊き分け\n日立,ふっくら御膳\nアイリスオーヤマ,瞬熱真空釜\nアイリスオーヤマ,銘柄炊き分け\nこの時点で胃もたれしそうだが・・・\nよく使われている文字(n > 2)をランキングするとこうなる。\n  1  炊  10\n  2  き  9\n  3  釜  7\n  4  ど  4\n  5  炎  3\n  6  熱  3\n  7  真  3\n  8  空  3\n  9  0  2\n 10  H  2\n 11  I  2\n 12  お  2\n 13 …",
+          "link": "https://blog.3qe.us/entry/2026/04/28/003725",
+          "publishedOn": "2026-04-27T15:37:25.000Z",
+          "wordCount": null,
+          "title": "炊飯器のキャッチコピーがインフレしすぎている件",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/0de2eeef7aa061c85278669709f6219f245565c6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260428%2F20260428002122.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0de2eeef7aa061c85278669709f6219f245565c6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260428%2F20260428002122.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901376833813",
           "author": null,
           "description": "zsh向けですが、だいたいどのシェルでも動くと思います。claude --worktreeを使っているときに便利だと思います。\nW() {\n  local selected\n  selected=$(git worktree list --porcelain \\\n    | awk '/^worktree /{path=$2; name=path; gsub(/.*\\//, \"\", name); printf \"%s\\t%s\\n\", name, path}' \\\n    | fzf --tmux --reverse \\\n      --with-nth=1 --delimiter=$'\\t' \\\n      --preview 'git -C {2} log --oneline --graph -20' \\\n    | cut -f2)\n  if [[ -n \"$selected\" ]]; then\n    cd \"$selected\"\n  fi\n}",
