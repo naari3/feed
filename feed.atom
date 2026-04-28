@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-04-28T20:26:27.245Z</updated>
+    <updated>2026-04-28T21:21:37.106Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9924,27 +9924,6 @@ GameGaz Daily 2026.1.30 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[Amazon Web Servicesは、最新のMac Studioハードウェアを利用したMacインスタンス「Amazon EC2 M4 Max Macインスタンス」の提供開始を発表しました。 MacインスタンスはAppleのMacを使用し...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ClaudianというObisidian内でClaude Codeを使えるプラグインを試している]]></title>
-        <id>hatenablog://entry/17179246901348971891</id>
-        <link href="https://kiyo-shit.hatenablog.com/entry/2026/01/29/180000"/>
-        <updated>2026-01-29T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Obsidian内でAIを使うにあたって、これまではObsidian Copilotを愛用してきた。OpenRouter経由でClaudeを呼び出し、ノートの要約や文章の推敲に活用していた。
-最近の自分の中での整理として、AIモデルの使い分けがある。調査や壁打ち、考察、反論といった思考を広げる作業にはChatGPTを使う。一方で、ドキュメント修正やアウトライン作成といった「決まった形に落とし込む」作業にはClaudeの方が性に合っている。Claudeはプロンプト追従性が高く、指示に対して堅実に仕事をこなしてくれる感覚がある。
-そんな折、別の観点からClaude本家に課金する機会があった。Coworkを試したかったのだ。その流れでClaude Codeもサブスクリプション経由で使うようになり、ふと思った。ObsidianからClaude Codeを直接呼び出せたら便利じゃないか、と。
-調べてみると、まさにそれを実現するプラグインがあった。Claudianだ。
-github.com
-導入してみると、Obsidian Copilotよりもエディタ機能との統合が深いことがわかった。特に強力なのがインライン編集機能である。選択したテキストに対してピンポイントで指示を出し、修正案をdiffで確認してから適用できる。意図しない変更が入るリスクがなく、安心して任せられる。
-
-
-最近は音声入力を主体に執筆している。喋った内容をそのままテキスト化すると、どうしても誤字や言い淀みで荒れてしまう。その整形作業に手間取っていたのだが、Claudianならこの問題がかなり解消される。選択範囲に対してどんどん修正をかけていけるからだ。
-ゼロから書くのではなく、まず喋って素材を作り、Claudeに整えさせる。この分業がスムーズになったことで、執筆効率が格段に上がった。
-使い分けとしては、全体をざっと喋ったものをまとめて修正するときはプロンプトウィンドウから指示を出す。その後、所々追記したりピンポイントで直したい箇所はインライン編集を使う。この切り替えが比較的手数少なくできるのがClaudianの良さだと感じている。
-当然だが、このエントリー自体Claudianを使って書いている。音声入力でバーっとしゃべったやつをClaudeに整えさせるという、まさにこのエントリーで話しているワークフローそのものをやっている。Claudeを褒めるような記事をClaude自身に整えさせている。非常にメタ構造になっているわけだが、便利なものは便利なので仕方なかろう。]]></summary>
-        <author>
-            <name>Robot Checkerboard</name>
         </author>
     </entry>
     <entry>
