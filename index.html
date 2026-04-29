@@ -14785,43 +14785,6 @@ Gezine氏の1万ドルの脆弱性 すでに対策済みか否か first appeared
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Scala 3.8が出たので紹介します</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/scala3.8" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Scala 3.8.1がリリースされた。
-scala-lang.org
-このリリースのお知らせが出た時点で3.8.1が出ているのだが、なぜ3.8.0のときにリリースノートが出なかったかというと、3.8.0にはBetter forに関するリグレッションが発生したため、それが修正されてからリリースノートが出たためだ。
-Scala 3.8.1はScala CLIでは以下のようにして起動できる:
-% scala-cli -S 3.8.1
-
-
-
-ではさっそく主要な変更を紹介していこう。
-JDKの要求バージョンが8から17に上がった
-これまでのScalaはJDK 8で動作することができる、つまりJDK 8互換のバイトコードを出力できていたのだが、Scala 3.8からはJDK 17が必要になった。
-これは主に、Lazy Valを実装する上での都合によるものだ。
-これについては id:xuwei さんの記事が詳しい:
-xuwei-k.hatenablog.com
-標準ライブラリがScala 3化された
-Scala 3はおおまかに2つの部品からなりたっている。すなわち、コンパイラと標準ライブラリだ。前者は昔はDottyと呼ばれていた。そして実は、標準ライブラリ自体はずっとScala 2で書かれていた。
-なぜこれで問題ないかというと、けっきょく標準ライブラリもJARファイルにコンパイルされてJVMバイトコードになっているからであり、Scala 3からでも呼び出すのに(いろいろな工夫のおかげで)あまり不都合がなかったからである。
-ではなぜ今回Scala 3で書くことにしたのかというと、おそらくCapture Checkingなどの新機能との兼ね合いだ。Capture CheckingはScala 3で最近導入されたexperimentalな機能であり、これが標準ライブラリでもうまく動作するには…</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901349116755/1769745771" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17106,7 +17069,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-04-29T15:35:56.461Z">2026-04-29T15:35:56.461Z</time>
+    <time id="build-timestamp" datetime="2026-04-29T16:30:24.140Z">2026-04-29T16:30:24.140Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
