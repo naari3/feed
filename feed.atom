@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-02T15:14:05.142Z</updated>
+    <updated>2026-05-02T16:13:30.504Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9899,20 +9899,6 @@ PlayStation VR2に脆弱性 リカバリーモードを実行できるvr2jb by B
         <summary type="html"><![CDATA[本ブログで紹介している手法は、筆者自身の経験に基づくものです。再現性や安全性、正常な動作を保証するものではありません。 制作・施工・運用は必ずご自身の判断のもとで行ってください。 制作中や完成後の故障...]]></summary>
         <author>
             <name>谷口 崇</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[なんだ、ゲーミングノートのファン問題はCPU稼働の最大値を95%にするだけで解決したのか]]></title>
-        <id>hatenablog://entry/17179246901350344375</id>
-        <link href="https://katsumakazuyo.hatenablog.com/entry/2026/02/02/124625"/>
-        <updated>2026-02-02T03:46:25.000Z</updated>
-        <summary type="html"><![CDATA[私は普段ゲーミングノートを使うのが好きなのですけれども、困っているのがファンがうるさいことです。
-だからといって、静音モードにすると今度は性能が落ちます。ファンのところを適当にカスタマイズしながら使っていたのですけれども、ふと思いついてGeminiに聞いてみたら
-「とりあえず、 電源オプションのプロパティで、CPU の最大負荷を 95%ぐらいに落としてみてくれ」
-というので、半信半疑でやってみたら、一気に CPU のパーセンテージが下がってファンが回らなくなりました。しかもパフォーマンスほとんど変わらない。
-なんだ、こんな簡単なことだったんですね。ほんと、Geminiをはじめとした人工知能はこういうことをちまちま教えてくれるので、好きです。]]></summary>
-        <author>
-            <name>勝間和代が徹底的にマニアックな話をアップするブログ</name>
         </author>
     </entry>
     <entry>
