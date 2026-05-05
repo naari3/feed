@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-05T04:08:31.021Z</updated>
+    <updated>2026-05-05T05:51:53.030Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Secretlint v13.0.0リリース: .gitignore済みをデフォルトで無視、Tailscale/Stripe/Cloudflareの検出に対応]]></title>
+        <id>https://efcl.info/2026/05/05/secretlint-v13/</id>
+        <link href="https://efcl.info/2026/05/05/secretlint-v13/"/>
+        <updated>2026-05-05T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlintのv13.0.0をリリースしました。
+Release v13.0.0 · secretlint/secretlint
+このバージョンの主な変更点は次の3つです。
+ファイル探索時に.gitignoreをデフォルトで尊重するように変更（Breaking Change）
+グロブメタ文字を含むパスが実在する場合はリテラルとして扱うように変更
+Tailscale/Stripeの検出ルールを新規追加、CloudflareをcanaryからrecommendへPromote
+Breaking Change: .gitignoreをデフォルトで尊重
+v13.0.0では、ファイル探索時に.gitignoreの内容をデフォルトで尊重するようになりました。
+ripgrepと同じ挙動で、ネストされた.gitignoreファイルもサブディレクトリへカスケードして適用されます。深い階層のネガティブルール（!）で上位の判定を上書きできます。
+feat!: respect .gitignore by default via @secretlint/walker by azu · Pull Request #1530
+.gitignoreに一致したファイルはスキャン対象から除外されます。
+そのため、これまでdist/や生成物などを意図的にスキャンしていたプロジェクトでは、出力されるファイル数が減ります。
+.secretlintignoreはこれまで通り併用できます。
+v12までの挙動に戻したい場合は、--no-gitignoreオプションを指定します。
+
+secretlint --no-gitignore "**/*"
+
+
+.gitignoreに一致しているはずのファイルが結果に含まれている場合は、Is…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.5.5]]></title>
         <id>https://gamegaz.com/?p=45433</id>
