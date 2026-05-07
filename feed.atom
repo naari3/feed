@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-07T22:19:50.042Z</updated>
+    <updated>2026-05-07T23:17:08.199Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.5.8]]></title>
+        <id>https://gamegaz.com/?p=45446</id>
+        <link href="https://gamegaz.com/2026050845446/"/>
+        <updated>2026-05-07T23:09:27.000Z</updated>
+        <summary type="html"><![CDATA[PS5 exFAT Builder v2.0.0,FuseCheck 1.0.3,Ultra-NX 3.0-R1,Switchfin 0.9.0,gopher64 v1.1.20,pico8-android 1.6.4→→→この記事の続きを読む
+GameGaz Daily 2026.5.8 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AIエージェントを作れる「Google Agent Studio」／Amazon S3がファイルシステムに／ローカルAI環境を配布「Foundry Local」ほか、2026年4月の人気記事]]></title>
         <id>https://www.publickey1.jp/blog/26/aigoogle_agent_studioamazon_s3aifoundry_local20264.html</id>
@@ -9949,28 +9960,6 @@ blog.nishimu.land
 まさか自分が馬に乗るとは思わなかったけど、めちゃくちゃ楽しい]]></summary>
         <author>
             <name>ちなみに</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[After Effectsのスクリプトの可能性を広げる。 その８]]></title>
-        <id>hatenablog://entry/17179246901352144838</id>
-        <link href="https://atarabi.hateblo.jp/entry/2026/02/07/200011"/>
-        <updated>2026-02-07T11:00:11.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-Fuzzy Search
-シンプルでかつES3に簡単に移植できそうだったのでFuzzy searchを軽く書き直して使っていたのだが、改めて中身を見直したところ、あまりよろしくないなと感じたので、自作のものに切り替えた。
-新しいもの好きは、 !@script_UI.jsx を上書きしてください*1。
-@note
-
-画像を扱うプラグインは以前追加したが、テキストを扱う方もある程度自分の中で煮詰まったので追加した。
-
-例によってスクリプトからも触れるようにしてあるので、それを用いたスクリプトも追加してある。
-@expression_baker
-
-Startup用のスクリプト。エクスプレッションを時間に依存させず静的に使用したい場合に、ベイクが非常に面倒なので作った。
-*1:@effect_launcher, @effect_searchなどに使用している]]></summary>
-        <author>
-            <name>Atarabi-Blog</name>
         </author>
     </entry>
     <entry>

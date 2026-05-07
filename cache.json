@@ -471,21 +471,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729894112/17179246901357112302/1771694617"
-        },
-        {
-          "id": "hatenablog://entry/17179246901352144838",
-          "author": null,
-          "description": "github.com\nFuzzy Search\nシンプルでかつES3に簡単に移植できそうだったのでFuzzy searchを軽く書き直して使っていたのだが、改めて中身を見直したところ、あまりよろしくないなと感じたので、自作のものに切り替えた。\n新しいもの好きは、 !@script_UI.jsx を上書きしてください*1。\n@note\n\n画像を扱うプラグインは以前追加したが、テキストを扱う方もある程度自分の中で煮詰まったので追加した。\n\n例によってスクリプトからも触れるようにしてあるので、それを用いたスクリプトも追加してある。\n@expression_baker\n\nStartup用のスクリプト。エクスプレッションを時間に依存させず静的に使用したい場合に、ベイクが非常に面倒なので作った。\n*1:@effect_launcher, @effect_searchなどに使用している",
-          "link": "https://atarabi.hateblo.jp/entry/2026/02/07/200011",
-          "publishedOn": "2026-02-07T11:00:11.000Z",
-          "wordCount": 409,
-          "title": "After Effectsのスクリプトの可能性を広げる。 その８",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208692334729894112/17179246901352144838/1770462011",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729894112/17179246901352144838/1770462011"
         }
       ]
     },
@@ -7150,6 +7135,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45446",
+          "author": "mamosuke",
+          "description": "PS5 exFAT Builder v2.0.0,FuseCheck 1.0.3,Ultra-NX 3.0-R1,Switchfin 0.9.0,gopher64 v1.1.20,pico8-android 1.6.4→→→この記事の続きを読む\nGameGaz Daily 2026.5.8 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026050845446/",
+          "publishedOn": "2026-05-07T23:09:27.000Z",
+          "wordCount": 1651,
+          "title": "GameGaz Daily 2026.5.8",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=45442",
           "author": "mamosuke",
