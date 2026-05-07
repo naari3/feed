@@ -78,6 +78,59 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gfx.hatenablog.com/" target="_blank"
+              rel="noopener">Islands in the byte stream</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Wado開発記録 ~ coding agentsによるプログラミング言語の設計と実装 ~</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gfx.hatenablog.com/entry/2026/05/07/140118" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>gfx.hatenablog.com
+これの続きです。
+4ヶ月くらい100% agentic codingで新規のプログラミング言語 &amp; 処理系（Wado; ワドゥ）を設計・実装してきて、ある程度明確になってきたことがあるので、雑多でMECEでもないですが、現時点での記録を残します。
+Claude Code on cloud の実行環境が落とされる件
+ほぼ claude code on cloud で開発していますが、こいつはかなりはっきりした独特の癖があります。
+まず、1 session 1 containerで動いていて、しばらくagentに動きがないとcontainerごと落とされて、何か入力があるとcontainerを立ち上げてsession再開、という振る舞いをします。
+困ったことに、フルテストなどの数十分かかるbackground jobを実行しつつclaude codeが待ちの状態になると、supervisorが「アクティビティなし」と判断するらしく、containerごと落とされます。
+苦肉の策がこれ:
+wado/.claude/skills/on-task-done/SKILL.md at main · wado-lang/wado · GitHub
+ The process might be killed by the supervisor if you just wait for its completion. Watch the progress periodically in order to tell the supervisor you are still working in progress.
+
+
+要は定期的に何かしろ、ということ。このへんはそのうち改善すると思いますが、現状だと無駄にtokenを消費しつつ「停止していない」ことをsuper…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13208692334729887881/17179246901385081656/1778130610" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2026.5.7</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026050745442/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Star Fox Direct 2026.5.7,Nintendo Switch 2の値上げ必要,Switch 2でYoutube,BD-UN-JB 1.1, Luac0re,PS5でRPCS3,PS5 exFAT Builder v1.9.0,ps5-bdjb-autoloader Dev Build,ps5upload v2.2.61-rc1,Kstuff Toggle 0.6 Beta,SuperMarioBros-C-Vita 0.1,Ghostship Vita v.1.1,Horizon OC 2.1.0,Lockpick_RCM_Pro 2.0.1,NitrousTracker v0.6.3,nx.js v0.0.70,Breeze beta105.0g,HATS-2026-05-07-1057aeb,BattleShip v0.7.7-beta,PCSX2 v2.7.321,ReXGlue SDK v0.7.8,XStreaming v2.7.1→→→この記事の続きを読む
+GameGaz Daily 2026.5.7 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -17035,7 +17088,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-05-07T04:22:22.299Z">2026-05-07T04:22:22.299Z</time>
+    <time id="build-timestamp" datetime="2026-05-07T06:00:50.747Z">2026-05-07T06:00:50.747Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
