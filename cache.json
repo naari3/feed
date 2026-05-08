@@ -969,21 +969,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/fd4612cda45a5476801aad71170c57eda38f2dcf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260210%2F20260210001353.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901352195092",
-          "author": null,
-          "description": "git worktreeの管理ツールが色々出てきている。git-wtはtmux統合やfzfベースのインタラクティブ選択が便利だし、他にもworktreeの管理をいい感じにするツールはいくつかある。\nただ、こういったツールの紹介を見ていると「worktreeへの移動をどう楽にするか」に注目が集まっている気がする。でも、worktreeにcdする必要ってそもそもあるんだろうか。\nworktreeでやりたいことはコードを書くかAIに書かせるかのどちらかで、だったらworktreeの中でエディタやAIツールを直接起動すればいい。gtrはそれができる。\ngtr editor my-feature    # エディタで開く\ngtr ai my-feature         # AIツールを起動\nディレクトリの移動は発生しない。\n僕のグローバル設定はこう。\ngit config --global gtr.ai.default claude\ngit config --global gtr.editor.default vscode\ngit config --global gtr.copy.includedirs .claude\ncopy.includedirsでworktree作成時に自動コピーするディレクトリを指定できる。.claudeを入れておくとClaude Codeのプロジェクト設定を引き継げるのでめちゃくちゃ便利。\nfzfとの組み合わせ\n折角なので、zshに定義しているfzf連携も紹介する。worktree一覧をfzfで表示して、キーバインドでエディタやAIを直接起動できるようにしている。\n_git_worktree_format() {\n  local root=$1\n  local git_cmd=$2\n  local line path branch mark is_ro…",
-          "link": "https://blog.nishimu.land/entry/2026/02/07/212310?utm_source=feed",
-          "publishedOn": "2026-02-07T12:23:10.000Z",
-          "wordCount": 584,
-          "title": "worktreeにcdするのをやめた",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901352195092/1770466990",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901352195092/1770466990"
         }
       ]
     },
@@ -1022,6 +1007,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901385232911",
+          "author": null,
+          "description": "mixi.social\n菊芋を間引いた。\n1つの種芋から3-7本の芽が出ていてだいぶ過密になっていたので、種芋1つあたり2,3本になるように間引いた。少しすっきりしたものの、まだまだ迫力がある。\nせっかくなので間引いたものは和えて食べた。おいしかったけど、クセのない草ならだいたいそうなりますよねという感じの味。",
+          "link": "https://commits.hatenablog.com/entry/2026/05/08/100000",
+          "publishedOn": "2026-05-08T01:00:00.000Z",
+          "wordCount": 504,
+          "title": "2026-05-07",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901385232911/1778202002",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901385232911/1778202002"
+        },
         {
           "id": "hatenablog://entry/17179246901382137310",
           "author": null,

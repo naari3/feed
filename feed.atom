@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-08T00:18:25.214Z</updated>
+    <updated>2026-05-08T01:32:24.353Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-05-07]]></title>
+        <id>hatenablog://entry/17179246901385232911</id>
+        <link href="https://commits.hatenablog.com/entry/2026/05/08/100000"/>
+        <updated>2026-05-08T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[mixi.social
+菊芋を間引いた。
+1つの種芋から3-7本の芽が出ていてだいぶ過密になっていたので、種芋1つあたり2,3本になるように間引いた。少しすっきりしたものの、まだまだ迫力がある。
+せっかくなので間引いたものは和えて食べた。おいしかったけど、クセのない草ならだいたいそうなりますよねという感じの味。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.5.8]]></title>
         <id>https://gamegaz.com/?p=45446</id>
@@ -9879,32 +9892,6 @@ GameGaz Daily 2026.2.8 first appeared on 大人のためのゲーム講座.]]></
 言葉の対局には「力」があります。持っている力を行使し、現状を変えることは、明らかに言葉の対局にあるでしょう。「話し合い」と「力の行使」の2つの選択肢がある中で、どちらをどのような理由で選ぶのかを検討する必要があります。]]></summary>
         <author>
             <name>現実モデリング</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[worktreeにcdするのをやめた]]></title>
-        <id>hatenablog://entry/17179246901352195092</id>
-        <link href="https://blog.nishimu.land/entry/2026/02/07/212310?utm_source=feed"/>
-        <updated>2026-02-07T12:23:10.000Z</updated>
-        <summary type="html"><![CDATA[git worktreeの管理ツールが色々出てきている。git-wtはtmux統合やfzfベースのインタラクティブ選択が便利だし、他にもworktreeの管理をいい感じにするツールはいくつかある。
-ただ、こういったツールの紹介を見ていると「worktreeへの移動をどう楽にするか」に注目が集まっている気がする。でも、worktreeにcdする必要ってそもそもあるんだろうか。
-worktreeでやりたいことはコードを書くかAIに書かせるかのどちらかで、だったらworktreeの中でエディタやAIツールを直接起動すればいい。gtrはそれができる。
-gtr editor my-feature    # エディタで開く
-gtr ai my-feature         # AIツールを起動
-ディレクトリの移動は発生しない。
-僕のグローバル設定はこう。
-git config --global gtr.ai.default claude
-git config --global gtr.editor.default vscode
-git config --global gtr.copy.includedirs .claude
-copy.includedirsでworktree作成時に自動コピーするディレクトリを指定できる。.claudeを入れておくとClaude Codeのプロジェクト設定を引き継げるのでめちゃくちゃ便利。
-fzfとの組み合わせ
-折角なので、zshに定義しているfzf連携も紹介する。worktree一覧をfzfで表示して、キーバインドでエディタやAIを直接起動できるようにしている。
-_git_worktree_format() {
-  local root=$1
-  local git_cmd=$2
-  local line path branch mark is_ro…]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
