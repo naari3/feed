@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901386011907",
+          "author": null,
+          "description": "えー！このような仕様があったとは・・・。驚きました。非公式っぽいです。\nfelixjones.github.io",
+          "link": "https://akkera102.hatenablog.com/entry/2026/05/09/155122",
+          "publishedOn": "2026-05-09T06:51:22.000Z",
+          "wordCount": 504,
+          "title": "Green Low Bit",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901386011907/1778310193",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901386011907/1778310193"
+        },
+        {
           "id": "hatenablog://entry/17179246901384620739",
           "author": null,
           "description": "フォークソングのスクリプトを解析しました。令和になって・・・？とは思いますけど見たい方はどうぞ。全ファイルを通せるようになっています。スクリプトアーカイブはネット上に配布公開されていたこともあるのでこっそり同封しています。実行ファイルが気になる方はgccでコンパイルしてください。\nhttps://akkera102.sakura.ne.jp/test3/folk_scn.zip\nゴールデンウィークになにやってるんだか。orz\n// SCN010.txt\n\nunKnown1: 09 00 D7 01 12 00\nunKnown2: 00 00 00 01 00\nunKnown3[0]: 01 00 00 00 02 00 02 00 00 00 03 00\nunKnown3[1]: 03 00 00 00 04 00 04 00 00 00 05 00\nunKnown3[2]: 05 00 00 00 06 00 06 00 00 00 07 00\nunKnown3[3]: 07 00 00 00 08 00 08 00 00 00 00 00\nunKnown3[4]: 09 00 00 00 32 00 64 00 96 00 C8 00\nunKnown3[5]: FA 00 33 01 6C 01 A5 01 00 00 00 00\nunKnown3[6]: 01 00 00 00 01 00 02 00 01 00 04 00\nunKnown3[7]: 01 00 06 00 01 00 08 00 01 00 0A 00\nunKnown3[8]: 01 00 0C 00 01 00 0E 00 01 00 10 00\n\n0 0x009E: 01\n1 0x00D0: 01\n2 0x0102: 01\n3 0x0134: 01\n4 0x0166: 01\n5 0x01CA: V38 } 1 ;\n6 0x0203: V21 } 1 ;\n7 0x023C: V3 } 1 ;\n8 0x0243: 01\n0 プロローグ　　　　　　　　　　　　　　　　　　　 loc_0014\n1 『神谷上町』の舞台設定　　　　　　　　　　　　　 loc_002E\n2 美夏と陽太　　　　　　　　　　　　　　　　　　　 loc_003C\n3 志帆と透　　　　　　　　　　　　　　　　　　　　 loc_030D\n4 歩と道成　　　　　　　　　　　　　　　　　　　　 loc_058A\n5 芙雪と祐介　　　　　　　　　　　　　　　　　　　 loc_07F7\n6 多枝と藤矢　　　　　　　　　　　　　　　　　　　 loc_0940\n7 その他　　　　　　　　　　　　　　　　　　　　　 loc_0A77\n8 前の画面へ　　　　　　　　　　　　　　　　　　　 loc_0D05\n\ncmdOffset: 0x0275\nselectCnt: 0x09\n\n0x0275(0000): !s 18 3 0 \n0x027B(0006): !p 0 2\n0x0280(000B): #W 0\n0x0283(000E): !g 0 108\n0x0287(0012): ;\n0x0289(0014): !s 19 3 0 _r\n0x0291(001C): #b 111 10\n0x0295(0020): !b 0 1\n0x0299(0024): #t t 10\n0x029D(0028): !j 0 78\n0x02A1(002C): ;",
