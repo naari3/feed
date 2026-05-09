@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-09T12:13:14.942Z</updated>
+    <updated>2026-05-09T13:28:41.935Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9957,49 +9957,6 @@ GameGaz Daily 2026.2.9 first appeared on 大人のためのゲーム講座.]]></
 ご不便をおかけいたしますが対応完了までお待ち下さい。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-02-08]]></title>
-        <id>hatenablog://entry/17179246901352493083</id>
-        <link href="https://commits.hatenablog.com/entry/2026/02/09/100000"/>
-        <updated>2026-02-09T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[自宅PCにリモートデスクトップする環境を整えた。ずっとやろうと思って先延ばしにしていたのだけど、1週間家を空けることになったのでその前にやっておきたかった。
-ホストとなるWindowsデスクトップにRDPするのが基本。このためにWindows Proを買った。
-ただしホストのデスクトップマシンを常に起動しておくのもあまり気持ちが良くないので、別途Wake on LAN (WoL)用にRaspberry Piを用意した。これはだいぶ前に買ったRaspberry Pi 4 model Bで、引っ越しに伴って配線するのが面倒で放置されていたやつ。
-WoL用Raspberry Piは特殊なことはほとんど何もしていない。wakeonlanコマンド(と後述するtailscale)をインストールしたぐらい。
-Raspberry Piは数年起動していなかったので、OSを焼き直した。まともに稼働しているPCでSDカードリーダーがついているマシンがなく、またSDカードリーダーがそのへんに転がっていると思っていたら案外持っていなかったので、電気屋で急遽買った。
-mixi.social
-ホストでのWoLは昨晩有効にしたのだけど、そうしたら1時間おきにPCがスリープから復帰するようになってしまい、睡眠が邪魔されまくっていた。
-1時間に1回しかデバッグの機会が巡ってこなくて解決が大変だったのだけど、どうやら無線デバイスのWoL待ち受けを有効にしていたのが悪さをしていたようだった。デスクトップPCに有線LANを挿してそちらで通信をさせて、無線側のWoLを切ることでこの問題は解決できた。
-wakeonlanコマンドを実行するRaspberry Piには、このままだと家の中のネットワークからしか到達できない。家の外からアクセスするために、tailscaleを導入した。Raspberry Pi, ホストWindows、クライアントWindowsの全てにtailscaleを入れている。ホストWindowsにはtailscaleは多分必須ではないのだけど、tailscaleがないとホスト名でアクセスしづらいので入れることにした。
-RDPを使っているうえでの問題点に、PowerToysによるキーのリマップと相性が悪いことがあった。
-CapslockをControlに入れ替えているのだけど、CapslockでのControlが効かなくなっていた(Capslockとして動くわけでもない)。
-適当にググっていると似たような事例があり、RDP上でのキーボード入力を処理する係をホストからクライアントに変えることで解決した。
-pg.hatenadiary.com
-と思ったのだけど、クライアントで処理する設定にすると今度は別のリマップが動かなくなった。具体的には右Shiftを全角半角キーに入れ替えているもの。これは処理をホストで行っているときには動いていた。
-どうやらこれらを両立するのは難しそうなので、RDPしているときはクライアントのPowerToysを切って、ホスト側でキー入力を処理させることにした。それによって問題なく動作した。
-WoLを叩いたりPowerToysを終了したりRDPを繋いだり色んな処理が必要でだいぶだるかったので、適当にバッチファイルを書くことで一発で全部を実行するようにした(Claude作)。
-@echo off
-echo Waking up remote PC...
-wsl ssh pocke@raspi "wakeonlan ホストのMACアドレス"
-
-echo Waiting for host...
-:wait
-ping -n 1 -w 1000 ホストのホスト名 >nul 2>&1
-if errorlevel 1 goto wait
-echo Host is up!
-timeout /t 1 /nobreak >nul
-
-taskkill /im PowerToys.exe /f >nul 2>&1
-timeout /t 1 /nobreak >nul
-
-mstsc /v:ホストのホスト名
-
-start "" "C:\Users\USER_NAME\AppData\Local\PowerToys\PowerToys.exe"
-これで家の外からでも一発でデスクトップPCを起動してRDPできる。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>
