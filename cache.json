@@ -939,21 +939,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/5c21e93eab0c314d66afaead65d17f9349eeea5a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260210%2F20260210230125.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901352914036",
-          "author": null,
-          "description": "去年の3月から zellij をターミナルマルチプレクサとして使っていたけど、約11ヶ月で結局 tmux に戻した。\nzellijはRust製で設定がKDLで書けて、UIもモダンでめちゃくちゃ良かった。locked modeをデフォルトにして Ctrl+g でモード切替するスタイルが気に入っていた。floating paneの完成度はtmuxより進んでいたし、Wasmベースのプラグインシステムにも将来性を感じていた。\nただ、細かく改善しようとするとtmuxのほうが圧倒的に小回りが利く。戻した理由は大きく2つある。\n1つ目はzellijの開発ペースへの不安。v0.42.2からv0.43.0まで4ヶ月リリースがなかったし、v0.43.1（2025年8月）以降もまた止まっている。メインのターミナル環境を更新の不透明なツールに預けるのはちょっと怖かった。\n2つ目は Claude Code との相性。Claude Codeはターミナルで動くAIエージェントなんだけど、tmuxのpane操作やsession管理と組み合わせたい場面がめちゃくちゃ多い。tmuxなら tmux list-panes や tmux send-keys で外部からセッションを操作できる。zellijはCLIからの制御がまだ弱かった（し、スクリプタビリティ全般がtmuxに比べると足りなかった）。\nそしてこのClaude Codeとの相性というのは、単にtmuxを操る側だけの話ではない。tmux configを書く側もClaude Codeに任せられる。実際、今回のリライトはほとんどClaude Codeにやってもらった。「こういう動きにしたい」と伝えるだけでconfigとシェルスクリプトが出てくる。ゼロコンフィグで使いやすいツールという考え方は少し古くなったのかもしれない。細かく設定できるツールをAIで好みに合わ…",
-          "link": "https://blog.nishimu.land/entry/2026/02/10/001806?utm_source=feed",
-          "publishedOn": "2026-02-09T15:18:06.000Z",
-          "wordCount": 502,
-          "title": "zellijからtmuxに戻した",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/fd4612cda45a5476801aad71170c57eda38f2dcf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260210%2F20260210001353.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/fd4612cda45a5476801aad71170c57eda38f2dcf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260210%2F20260210001353.png"
         }
       ]
     },
@@ -2951,6 +2936,21 @@
       "feedUrl": "https://saize-lw.hatenablog.com/rss",
       "siteUrl": "https://saize-lw.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/17179246901385954007",
+          "author": null,
+          "description": "0日目：旅行前\n1日目：東京～福岡\n2日目：福岡～鹿児島\n3日目：鹿児島滞在\n4日目：鹿児島～東京\nまとめ\nGWの後半で九州の西側をちょっとだけ旅してきた。\nAI時代には己の経験の価値が高いのと、去年の北海道に行った記録がいい感じなので今年も残しておく。\nsaize-lw.hatenablog.com\n \n0日目：旅行前\nGW前半は友達募集のお茶をはしごしたり、大学時代の後輩を家に泊めたり、都会にある実家に帰ったりしているうちに過ぎ去っていき、GW後半はどこかに行こうと思いつつも具体的な予定は決まらないうちに5月2日（土曜日）になっていた。\ndiscordでゲッタ～が福岡へ出発しているのを目撃し、俺もyoutube shortでたまに見る長岡ラーメンを食いたかったことを思い出して急遽福岡へ行くことを決める。去年は北海道だったので今年は南で収まりもいい。\n\n旅の始まり（ゲッ信）\n\nとりあえず新幹線の切符を買いに駅に向かうが、さすがにもう座席がかなり埋まっていて検索性能最悪の自動券売機ではいつどの車両なら空いているのかよくわからない。\nこういうときはみどりの窓口に行って駅職員に直接聞くといい感じの座席を勝手に出してくれる。人間に聞くとウェットに解決してしまうことが多いので、人件費削減のために設置された自動案内を無視して窓口に突っ込んで工数を圧迫する人間が後を絶たない。\n隣の窓口で東南アジア系のオッサンが定期券不正利用を詰められているっぽい不穏な空気を感じつつ（「この2枚が同じ名前なのは有り得ないんですよ」って3回くらい言われてた）、S-Workとかいうコワーキング用の座席（？）なら追加料金なしで乗れることが判明したのでそれを買う。\nいったん足は確保できたので帰って九州のラーメンについて調べると、長浜・博多・久留米の三系統があるらしいので制覇することに決める。\n\nGoogle検索…",
+          "link": "https://saize-lw.hatenablog.com/entry/2026/05/10/132543",
+          "publishedOn": "2026-05-10T04:25:43.000Z",
+          "wordCount": 886,
+          "title": "26/5/10 曖昧な食欲で福岡～鹿児島を巡った3泊4日",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/14c22f01e8d6a05f389979dc424710bd673adbba/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20260509%2F20260509181535.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/14c22f01e8d6a05f389979dc424710bd673adbba/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsaize_lw%2F20260509%2F20260509181535.jpg"
+        },
         {
           "id": "hatenablog://entry/17179246901375895288",
           "author": null,
@@ -9257,16 +9257,6 @@
           "wordCount": null,
           "title": "元GitHub CEOのドムケ氏、AI時代の開発プラットフォーム「Entire CLI」をオープンソースで公開。すべてのコンテキストをGitに保存",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/it2026gmailpop3aitypescript20261.html",
-          "author": null,
-          "description": "任天堂Switch 2を入手しました。ゲームマシンを買うのはPlayStation 2以来、数十年ぶりと言ってよいでしょう。特別に欲しい理由があったわけではないのですが、メモリ価格の上昇でコンシューマー向けゲーム機も値上げするんだろうなと思...",
-          "link": "https://www.publickey1.jp/blog/26/it2026gmailpop3aitypescript20261.html",
-          "publishedOn": "2026-02-09T15:40:42.000Z",
-          "wordCount": 1462,
-          "title": "「ITエンジニア本大賞2026」発表／GmailでPOP3によるメールの集約機能が終了／AIはなぜTypeScriptのような型付き言語を促進するのか、ほか。2026年1月の人気記事",
-          "imageUrl": "https://www.publickey1.jp/fbico_pblky.png"
         }
       ]
     },

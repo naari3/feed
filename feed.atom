@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-10T03:00:36.652Z</updated>
+    <updated>2026-05-10T04:28:28.603Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[26/5/10 曖昧な食欲で福岡～鹿児島を巡った3泊4日]]></title>
+        <id>hatenablog://entry/17179246901385954007</id>
+        <link href="https://saize-lw.hatenablog.com/entry/2026/05/10/132543"/>
+        <updated>2026-05-10T04:25:43.000Z</updated>
+        <summary type="html"><![CDATA[0日目：旅行前
+1日目：東京～福岡
+2日目：福岡～鹿児島
+3日目：鹿児島滞在
+4日目：鹿児島～東京
+まとめ
+GWの後半で九州の西側をちょっとだけ旅してきた。
+AI時代には己の経験の価値が高いのと、去年の北海道に行った記録がいい感じなので今年も残しておく。
+saize-lw.hatenablog.com
+ 
+0日目：旅行前
+GW前半は友達募集のお茶をはしごしたり、大学時代の後輩を家に泊めたり、都会にある実家に帰ったりしているうちに過ぎ去っていき、GW後半はどこかに行こうと思いつつも具体的な予定は決まらないうちに5月2日（土曜日）になっていた。
+discordでゲッタ～が福岡へ出発しているのを目撃し、俺もyoutube shortでたまに見る長岡ラーメンを食いたかったことを思い出して急遽福岡へ行くことを決める。去年は北海道だったので今年は南で収まりもいい。
+
+旅の始まり（ゲッ信）
+
+とりあえず新幹線の切符を買いに駅に向かうが、さすがにもう座席がかなり埋まっていて検索性能最悪の自動券売機ではいつどの車両なら空いているのかよくわからない。
+こういうときはみどりの窓口に行って駅職員に直接聞くといい感じの座席を勝手に出してくれる。人間に聞くとウェットに解決してしまうことが多いので、人件費削減のために設置された自動案内を無視して窓口に突っ込んで工数を圧迫する人間が後を絶たない。
+隣の窓口で東南アジア系のオッサンが定期券不正利用を詰められているっぽい不穏な空気を感じつつ（「この2枚が同じ名前なのは有り得ないんですよ」って3回くらい言われてた）、S-Workとかいうコワーキング用の座席（？）なら追加料金なしで乗れることが判明したのでそれを買う。
+いったん足は確保できたので帰って九州のラーメンについて調べると、長浜・博多・久留米の三系統があるらしいので制覇することに決める。
+
+Google検索…]]></summary>
+        <author>
+            <name>LWのサイゼリヤ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.5.10]]></title>
         <id>https://gamegaz.com/?p=45453</id>
@@ -9857,31 +9888,6 @@ kanagawaの落ち着いた和風のトーンがめちゃくちゃ良い。Catppu
 GameGaz Daily 2026.2.10 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「ITエンジニア本大賞2026」発表／GmailでPOP3によるメールの集約機能が終了／AIはなぜTypeScriptのような型付き言語を促進するのか、ほか。2026年1月の人気記事]]></title>
-        <id>https://www.publickey1.jp/blog/26/it2026gmailpop3aitypescript20261.html</id>
-        <link href="https://www.publickey1.jp/blog/26/it2026gmailpop3aitypescript20261.html"/>
-        <updated>2026-02-09T15:40:42.000Z</updated>
-        <summary type="html"><![CDATA[任天堂Switch 2を入手しました。ゲームマシンを買うのはPlayStation 2以来、数十年ぶりと言ってよいでしょう。特別に欲しい理由があったわけではないのですが、メモリ価格の上昇でコンシューマー向けゲーム機も値上げするんだろうなと思...]]></summary>
-        <author>
-            <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[zellijからtmuxに戻した]]></title>
-        <id>hatenablog://entry/17179246901352914036</id>
-        <link href="https://blog.nishimu.land/entry/2026/02/10/001806?utm_source=feed"/>
-        <updated>2026-02-09T15:18:06.000Z</updated>
-        <summary type="html"><![CDATA[去年の3月から zellij をターミナルマルチプレクサとして使っていたけど、約11ヶ月で結局 tmux に戻した。
-zellijはRust製で設定がKDLで書けて、UIもモダンでめちゃくちゃ良かった。locked modeをデフォルトにして Ctrl+g でモード切替するスタイルが気に入っていた。floating paneの完成度はtmuxより進んでいたし、Wasmベースのプラグインシステムにも将来性を感じていた。
-ただ、細かく改善しようとするとtmuxのほうが圧倒的に小回りが利く。戻した理由は大きく2つある。
-1つ目はzellijの開発ペースへの不安。v0.42.2からv0.43.0まで4ヶ月リリースがなかったし、v0.43.1（2025年8月）以降もまた止まっている。メインのターミナル環境を更新の不透明なツールに預けるのはちょっと怖かった。
-2つ目は Claude Code との相性。Claude Codeはターミナルで動くAIエージェントなんだけど、tmuxのpane操作やsession管理と組み合わせたい場面がめちゃくちゃ多い。tmuxなら tmux list-panes や tmux send-keys で外部からセッションを操作できる。zellijはCLIからの制御がまだ弱かった（し、スクリプタビリティ全般がtmuxに比べると足りなかった）。
-そしてこのClaude Codeとの相性というのは、単にtmuxを操る側だけの話ではない。tmux configを書く側もClaude Codeに任せられる。実際、今回のリライトはほとんどClaude Codeにやってもらった。「こういう動きにしたい」と伝えるだけでconfigとシェルスクリプトが出てくる。ゼロコンフィグで使いやすいツールという考え方は少し古くなったのかもしれない。細かく設定できるツールをAIで好みに合わ…]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
