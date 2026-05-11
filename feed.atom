@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-11T00:18:20.674Z</updated>
+    <updated>2026-05-11T01:32:49.661Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[開発をしたい！インフラも気になる！となりませんか？]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=35194</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/35194"/>
+        <updated>2026-05-11T00:49:59.000Z</updated>
+        <summary type="html"><![CDATA[インフラで消耗してしまう関心事ってなんだろう 開発を進めたいのに、気づけばインフラの確認や調整も気になっちゃって——そんな経験はないでしょうか。 たとえば、こんな「インフラの関心事」が日々の割り込みに...]]></summary>
+        <author>
+            <name>伊藤 綾夏</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RubyKaigi 2026にいってきた＆しゃべってきた]]></title>
+        <id>hatenablog://entry/17179246901386007686</id>
+        <link href="https://tagomoris.hatenablog.com/entry/2026/05/11/092849"/>
+        <updated>2026-05-11T00:28:49.000Z</updated>
+        <summary type="html"><![CDATA[RubyKaigi 2026
+4月22〜24日に函館で行われたRubyKaigi 2026に参加してきた。もう2週間以上経ってるよ、うへえ。
+今回はRuby Boxが入った後のRubyKaigiで、オープニングキーノートをやることになっていた。ので、やってきた。結果、RubyKaigiに参加しつづけてもう結構な年数になるが、まさかこんなに特別なRubyKaigiというものがあるとは正直思ってもいなかった。楽しかったー。
+しゃべった
+The Journey of Box Building - RubyKaigi 2026
+ speakerdeck.com
+オープニングキーノートということで、Ruby Boxとは何かをざっくり説明したのち、Ruby Boxの実装上の話をRuby  VMの解説もあわせてやったのち、せっかくのキーノートだからということで個人的な話を締めにもっていって話した。55分くらい、を数分過ぎてもいいやのつもりで個人的にはゆっくりめにしゃべったんだけど、終わってみたら数分早くて、あれ何か大事なことを話し忘れてない? と不安になってしまった。
+
+
+by @hsbt, @pastak
+個人的にはRubyKaigiのキーノートでRubyの実装の話をえんえんする、というスタイルのやつに強い憧れがあったうえ、元々プロポーザルとして出していたのもそういう内容だったので、それをそのままやった。ただ全員が聞くものなので、Ruby VMの中身の説明を元々の意図よりもかなり丁寧にやるようにしてある。Ruby VMの中身をいじろうと思うと知らなければならない内容なんだけどまとまった説明があまりどこにも無いという類の情報だったので、これはこれでやって良かったかな。後のセッションでもその内容に触れているものもいくつもあったし。
+
+
+by @ydah_, @suuuuengch
+とはいえ…]]></summary>
+        <author>
+            <name>たごもりすメモ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.5.11]]></title>
         <id>https://gamegaz.com/?p=45457</id>

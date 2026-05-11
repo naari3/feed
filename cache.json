@@ -3492,6 +3492,21 @@
       "siteUrl": "https://tagomoris.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901386007686",
+          "author": null,
+          "description": "RubyKaigi 2026\n4月22〜24日に函館で行われたRubyKaigi 2026に参加してきた。もう2週間以上経ってるよ、うへえ。\n今回はRuby Boxが入った後のRubyKaigiで、オープニングキーノートをやることになっていた。ので、やってきた。結果、RubyKaigiに参加しつづけてもう結構な年数になるが、まさかこんなに特別なRubyKaigiというものがあるとは正直思ってもいなかった。楽しかったー。\nしゃべった\nThe Journey of Box Building - RubyKaigi 2026\n speakerdeck.com\nオープニングキーノートということで、Ruby Boxとは何かをざっくり説明したのち、Ruby Boxの実装上の話をRuby  VMの解説もあわせてやったのち、せっかくのキーノートだからということで個人的な話を締めにもっていって話した。55分くらい、を数分過ぎてもいいやのつもりで個人的にはゆっくりめにしゃべったんだけど、終わってみたら数分早くて、あれ何か大事なことを話し忘れてない? と不安になってしまった。\n\n\nby @hsbt, @pastak\n個人的にはRubyKaigiのキーノートでRubyの実装の話をえんえんする、というスタイルのやつに強い憧れがあったうえ、元々プロポーザルとして出していたのもそういう内容だったので、それをそのままやった。ただ全員が聞くものなので、Ruby VMの中身の説明を元々の意図よりもかなり丁寧にやるようにしてある。Ruby VMの中身をいじろうと思うと知らなければならない内容なんだけどまとまった説明があまりどこにも無いという類の情報だったので、これはこれでやって良かったかな。後のセッションでもその内容に触れているものもいくつもあったし。\n\n\nby @ydah_, @suuuuengch\nとはいえ…",
+          "link": "https://tagomoris.hatenablog.com/entry/2026/05/11/092849",
+          "publishedOn": "2026-05-11T00:28:49.000Z",
+          "wordCount": 793,
+          "title": "RubyKaigi 2026にいってきた＆しゃべってきた",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/0cb449997006632616180f0896cf829a0273f359/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ft%2Ftagomoris%2F20260509%2F20260509152446.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0cb449997006632616180f0896cf829a0273f359/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ft%2Ftagomoris%2F20260509%2F20260509152446.jpg"
+        },
+        {
           "id": "hatenablog://entry/17179246901375631623",
           "author": null,
           "description": "これ自体は実際のところは前からやってることと変わってないのだが、4月の組織変更で明示的にそうなったというのも含めてメモしておこうと思った。\nTL;DR\nガバクラ採択めでたいね\n4月からクラウド事業戦略本部 副本部長になりました\nクラウドサービス全般のプロダクト責任者という役割です\nそれはそれとして去年Rubyコミッタになりましたね\n来週のRubyKaigi 2026でキーノートとして話します\n3月末までの話\nさくらインターネット入社後3ヶ月のいまの話からずっとプロダクト担当として仕事をしてきて、とりあえず最初に見えていたマイルストーンであるところの2025年度末をこえた。このタイミングでの大きな目標であったガバメントクラウドについては、以下ニュースなどに出たとおり。\nwww.sakura.ad.jp\nこれは開発チームをはじめとして全体で本当に頑張った結果で、達成できて本当に安心した。大きな成果だと思う。さくらインターネットという会社がクラウドサービス開発をきちんと行える会社であること、クラウドサービスを本気で今後も運用・発展させていく気があることを示せたんじゃないだろうか。\n一方、ガバメントクラウドだけやっているわけでもなく、その他に今後数年間のクラウドサービス成長を考えてやっていることもあれこれある。ビジネスとしての話もだし、ガバメントクラウドに含まれていなくても、クラウドサービスを使うときにどうしても欲しいもの、みたいなものもある。クラウドサービスのアイコンセットはそのうちのひとつで、これも無事に公開できるところまできて良かった。\nwww.sakura.ad.jp\n\nそんなこんなをやる中で、形としてはいち社員、いちPdMだったんだけど、実質的にはクラウドのプロダクト全体をリードする状況でここまで働いてきた。なおコードは1行も書いていない。\n「ガバクラという目標」が無いこ…",
@@ -6801,6 +6816,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=35194",
+          "author": "伊藤 綾夏",
+          "description": "インフラで消耗してしまう関心事ってなんだろう 開発を進めたいのに、気づけばインフラの確認や調整も気になっちゃって——そんな経験はないでしょうか。 たとえば、こんな「インフラの関心事」が日々の割り込みに...",
+          "link": "https://eng-blog.iij.ad.jp/archives/35194",
+          "publishedOn": "2026-05-11T00:49:59.000Z",
+          "wordCount": null,
+          "title": "開発をしたい！インフラも気になる！となりませんか？",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=36283",
           "author": "斉藤 翔太",
