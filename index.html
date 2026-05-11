@@ -14590,34 +14590,6 @@ Time has come! / SPACE INVADERS EXTREME 2
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
-              rel="noopener">ちなみに</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">zerobrewに移行しようとして苦労した</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2026/02/11/192519?utm_source&#x3D;feed" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>zerobrew はRust製のHomebrew代替。uv がpipを置き換えたのと同じノリでHomebrewを高速化しようというプロジェクトで、ウォームキャッシュなら7.6倍速いらしい。Homebrewも最近は速くなっていたけど、新しいものが気になって試してみた。結果的にめちゃくちゃ苦労した（まだexperimentalなのでこれからという感じ）。
-まず最初の壁がprefixの長さ。zerobrewのデフォルトだと /opt/zerobrew/prefix にインストールされるんだけど、いきなりこう言われる。
-error: store corruption: zerobrew prefix &quot;/opt/zerobrew/prefix&quot; (20 bytes)
-is longer than &quot;/opt/homebrew&quot; (13 bytes).
-On macOS, Mach-O binaries cannot be expanded in-place
-macOSのMach-Oバイナリはライブラリパスが固定長で埋め込まれている。Homebrewのbottleは /opt/homebrew(13バイト) でビルドされているから、prefixはそれ以下でないといけない。/opt/zerobrew(13バイト) にしても一部のIntel向けbottleは /usr/local(10バイト) なので失敗する。安全策で /opt/zb(7バイト) まで詰めたら、今度は別の問題が起きた。
-null-byteパッチングバグ
-/opt/zb でインストールしたらtmuxが設定ファイルを読めなくなった。tmux -vvvv のログだと /opt/zb というディレクトリをコンフィグとして読もうとしている。hex dumpで調べた。
-0009fdd0: 7420 6861 7665 2025 73…</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/2cad50090d8bd44480ed2db4ede4838fd3961bed/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260211%2F20260211192137.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -16902,7 +16874,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-05-11T22:20:56.064Z">2026-05-11T22:20:56.064Z</time>
+    <time id="build-timestamp" datetime="2026-05-11T23:17:26.885Z">2026-05-11T23:17:26.885Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

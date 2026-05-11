@@ -924,21 +924,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/c87399d4ae9b287012d2fed395d7bfa1d1a03c76/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260212%2F20260212221407.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901353485118",
-          "author": null,
-          "description": "zerobrew はRust製のHomebrew代替。uv がpipを置き換えたのと同じノリでHomebrewを高速化しようというプロジェクトで、ウォームキャッシュなら7.6倍速いらしい。Homebrewも最近は速くなっていたけど、新しいものが気になって試してみた。結果的にめちゃくちゃ苦労した（まだexperimentalなのでこれからという感じ）。\nまず最初の壁がprefixの長さ。zerobrewのデフォルトだと /opt/zerobrew/prefix にインストールされるんだけど、いきなりこう言われる。\nerror: store corruption: zerobrew prefix \"/opt/zerobrew/prefix\" (20 bytes)\nis longer than \"/opt/homebrew\" (13 bytes).\nOn macOS, Mach-O binaries cannot be expanded in-place\nmacOSのMach-Oバイナリはライブラリパスが固定長で埋め込まれている。Homebrewのbottleは /opt/homebrew(13バイト) でビルドされているから、prefixはそれ以下でないといけない。/opt/zerobrew(13バイト) にしても一部のIntel向けbottleは /usr/local(10バイト) なので失敗する。安全策で /opt/zb(7バイト) まで詰めたら、今度は別の問題が起きた。\nnull-byteパッチングバグ\n/opt/zb でインストールしたらtmuxが設定ファイルを読めなくなった。tmux -vvvv のログだと /opt/zb というディレクトリをコンフィグとして読もうとしている。hex dumpで調べた。\n0009fdd0: 7420 6861 7665 2025 73…",
-          "link": "https://blog.nishimu.land/entry/2026/02/11/192519?utm_source=feed",
-          "publishedOn": "2026-02-11T10:25:19.000Z",
-          "wordCount": 459,
-          "title": "zerobrewに移行しようとして苦労した",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/2cad50090d8bd44480ed2db4ede4838fd3961bed/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260211%2F20260211192137.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2cad50090d8bd44480ed2db4ede4838fd3961bed/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260211%2F20260211192137.png"
         }
       ]
     },

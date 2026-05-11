@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-11T22:20:56.103Z</updated>
+    <updated>2026-05-11T23:17:26.926Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9875,24 +9875,6 @@ Time has come! / SPACE INVADERS EXTREME 2
 おわり！ほかの人の好みも見てみたいです。]]></summary>
         <author>
             <name>ブログ3</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[zerobrewに移行しようとして苦労した]]></title>
-        <id>hatenablog://entry/17179246901353485118</id>
-        <link href="https://blog.nishimu.land/entry/2026/02/11/192519?utm_source=feed"/>
-        <updated>2026-02-11T10:25:19.000Z</updated>
-        <summary type="html"><![CDATA[zerobrew はRust製のHomebrew代替。uv がpipを置き換えたのと同じノリでHomebrewを高速化しようというプロジェクトで、ウォームキャッシュなら7.6倍速いらしい。Homebrewも最近は速くなっていたけど、新しいものが気になって試してみた。結果的にめちゃくちゃ苦労した（まだexperimentalなのでこれからという感じ）。
-まず最初の壁がprefixの長さ。zerobrewのデフォルトだと /opt/zerobrew/prefix にインストールされるんだけど、いきなりこう言われる。
-error: store corruption: zerobrew prefix "/opt/zerobrew/prefix" (20 bytes)
-is longer than "/opt/homebrew" (13 bytes).
-On macOS, Mach-O binaries cannot be expanded in-place
-macOSのMach-Oバイナリはライブラリパスが固定長で埋め込まれている。Homebrewのbottleは /opt/homebrew(13バイト) でビルドされているから、prefixはそれ以下でないといけない。/opt/zerobrew(13バイト) にしても一部のIntel向けbottleは /usr/local(10バイト) なので失敗する。安全策で /opt/zb(7バイト) まで詰めたら、今度は別の問題が起きた。
-null-byteパッチングバグ
-/opt/zb でインストールしたらtmuxが設定ファイルを読めなくなった。tmux -vvvv のログだと /opt/zb というディレクトリをコンフィグとして読もうとしている。hex dumpで調べた。
-0009fdd0: 7420 6861 7665 2025 73…]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
