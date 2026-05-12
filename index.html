@@ -78,6 +78,34 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">クックパッドアプリのLiquid Glass対応</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/2026/05/12/110000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、レシピ事業部でiOSエンジニアをしている山田(@0x746572616e79)です。
+iOS 26で導入されたLiquid Glassは、iOS 27で強制的に有効化される予定です。対応を先送りにすると、その間に進む機能開発やデザイン調整がすべてLiquid Glassへの考慮がされないまま積み上がり、後から手戻りが増えていきます。早期に有効化しておくことで、新しい画面や機能を追加する段階でLiquid Glassを前提としたデザイン議論やベストプラクティスの調査ができるようになります。
+こうした背景からクックパッドiOSアプリでは早めの対応を進めてきました。この記事では、UINavigationBarとUITabBar周りで遭遇した破壊的変化と、Liquid Glassの新しい仕組みを活用した事例を共有します。
+UINavigationBar
+カスタムtitleViewのUITextFieldがRTLでクラッシュする
+まずはUINavigationBarに関わる問題です。
+クックパッドアプリではいくつかの画面でnavigationItem.titleViewにカスタムの検索バーを設定していました。Liquid Glassを有効化してデバッグしている中で、モーダル遷移かつRTL表示の組み合わせでクラッシュすることに気づきました。ナビゲーションバーの内部レイアウトが刷新された影響でUISearchBarTextFieldのレイアウト計算が破綻し、CALayerのpositionにNaNが入ることが原因でした。
+このクラッシュはiOS 26.2では再現されますがiOS 26.4では修正された模様ですが、クックパッドアプリはiOS17以降をサポートするためそのまま利用することはできません。
+titleViewベースの検索バーをやめて、UISearchControlle…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
               rel="noopener">diary</a></h3>
           <section class="articles-per-source">
@@ -14518,138 +14546,6 @@ sudo pmset -c disablesleep 1
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://kaikityou.hatenablog.com/" target="_blank"
-              rel="noopener">kaikityouの日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">恐怖！好きなゲームの音楽5選が馬車でやってくる</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://kaikityou.hatenablog.com/entry/2026/02/11/235202" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>近年やったゲームの内容が多いと思う。
-サッと書いちゃう。
-表
-EMPRESS MARCH /『beatmaniaⅡDX 16 EMPRESS』
-メインテーマ /『魔界塔士Sa・Ga』
-時空を超えて久しぶり！/『ぷよぷよ』シリーズ
-コガネシティ/『ポケットモンスター 金・銀』
-ネームエントリー/『ときめきメモリアル Girl&#x27;s Side 4th Heart』
-裏
-Valkyrie Dimension/『Dance Dance Revolution X2』
-ボクシング リザルト画面/『Wii Sports』
-MAD RAT, ALIVE?/『MAD RAT DEAD』
-焚身-Burning Body-/『怒首領蜂大往生 』
-コングバナンザ
-表
-EMPRESS MARCH /『beatmaniaⅡDX 16 EMPRESS』
-
-この手の企画で音ゲー曲はなんとなくズルだと思うけど、この曲はプレイアブルではないという点でなんかアリな気がした。
-高校生の時、バイトしていなかったのでお金もあまりなかった僕はゲームセンターよりも家庭用のbeatmaniaⅡDXをやることが多く、EMPRESSのメインテーマであるこの曲は必然的に聴く機会が多かった。
-ある意味、高校時代の想い出の曲と言っても過言ではない曲。
-メインテーマ /『魔界塔士Sa・Ga』
-
-小学生の時に従姉から貰ったゲーム。
-当時から「なんとなく好き」とは感じていて、よく口ずさんでいた。うーるとーらーまーん♪
-近年になって「街を一歩出ると殺風景な上に魔物が平然と歩いてる希望のない世界」で流れる呑気なBGM感が好きなんだろうなと思った。
-フィールド上歩いてて敵と遭遇した時にこの呑気なBGMが突然ハイテンポな殺伐として戦闘BGMに変わるのも好き。
-子供の頃は難しくてクリア出来なかったけど、数年前にSwitch移植が出て、十年越しぐらいに…</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/17680117127203905168/17179246901353563481/1770822366" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://ruiji.hatenablog.jp/" target="_blank"
-              rel="noopener">ブログ3</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">出没！好きなゲームの音楽5選</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://ruiji.hatenablog.jp/entry/20260211/1770817020" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>↑これに便乗！
-アド街は見てない。
-
-▲サムネ用
-思いついた順に書いてます。
-プレビューはほとんどオフィシャルの動画とか無いので、テキトーにYouTube貼りますね。
-あとあんまり気持ちを文字起こしできていないと思います。でも、おそらくTOP5に好きなのは変わりないです。
- 
-
-    
-ダークキャッスル / 星のカービィ2(GB)
-ROUND 5 / スーパーボンバーマン2
-Rush! / Mixolumia
-トンネルシーン(エックス) / 大乱闘スマッシュブラザーズX
-モンスターハウスだ！ / ポケモン不思議のダンジョン 時の探検隊・闇の探検隊
-(裏5選?)
- 
-ダークキャッスル / 星のカービィ2(GB)
-
-子供のころからずっとカービィシリーズで一番好きだな～。
-オープニングデモで「よし行くぞ！」みたいな感じなのも雰囲気合ってていいですよね。
-後半パートへの展開(？)もいいんだよな～。
-ロボプラでアレンジされたときも当然嬉しかったんですが、やっぱ原曲のほうが好きだ！
-いつかYTPMV作りたいっすね。
- 
-ROUND 5 / スーパーボンバーマン2
-
-ボンバーマンシリーズって音楽良すぎるんですが、その中でも群を抜いて好きです。
-いろいろ展開してワクワクさせてくれます。
-なんとアクションゲームのBGMにしては1ループが長い(2m10s)。だけど全部良い！！！！
-ぐあああーーーー！！！！！何が良いとかわからん！！！！！全部だ全部！！！！！！！！
-いつかYTPMV作りたいっすね。
- 
-Rush! / Mixolumia
-(YouTubeのOST動画すら無かった)
-インディーの落ちものパズルです。めちゃくちゃ面白いです。(→Steam)
-このゲームの2分間でのスコアを競うモードがあり、それのデフォルトのBGMです。(上のリンク先の曲は効果音も含まれています。)
-最初かなり静かなんですが、時間が進むにつれて賑やかになってきます。
-さらに焦らせるかのようにスピードが上がっていく！！テンション爆上がり！！
-ラスト10秒のカウントダウンも兼ねています。
-こういうゲームプレイの尺ぴったりに作られているBGM大好き！！！！！！
-いつかYTPMV作りたいっすね。
- 
-トンネルシーン(エックス) / 大乱闘スマッシュブラザーズX
-
-初めて聴いた瞬間に好きになりました。めっちゃカッコいい。
-携帯に入れてめちゃくちゃな回数聴いていました。
-元のゲームは当時知らなかったんですが、これきっかけで買いました。
-元はゲームボーイです。このバージョンも相当人気があるみたいですね。
-X-RETURNS(DSi)版も入りがカッコよくて好きです。全体的な好みとしてスマブラ版にしました。
-これはカスみたいな音MAD作ってあります。
- 
-モンスターハウスだ！ / ポケモン不思議のダンジョン 時の探検隊・闇の探検隊
-
-ゲーム中であんまり聞きたくない曲。
-これも携帯に保存してメチャクチャに聴きまくってました。
-いろんなバージョン(赤, 青, マグナゲート, 超)がありますが、これが一番聴き心地がよくて好きです。
- 
-(裏5選?)
-全部エグい！
-ホロビタスター / 星のカービィ64
-サバイバル / 爆ボンバーマン2
-17:42 / DIGIDRVE
-ノルマアタック / XI JUMBO
-Time has come! / SPACE INVADERS EXTREME 2
- 
-おわり！ほかの人の好みも見てみたいです。</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/4245887aaf823e8be634f953b7593c12ae2584e8/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fr%2Fruijiiii%2F20260211%2F20260211223333.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -16934,7 +16830,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-05-12T01:31:32.014Z">2026-05-12T01:31:32.014Z</time>
+    <time id="build-timestamp" datetime="2026-05-12T03:00:51.923Z">2026-05-12T03:00:51.923Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
