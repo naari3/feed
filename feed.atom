@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-12T21:27:19.607Z</updated>
+    <updated>2026-05-12T22:23:51.494Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[libtonc割り込みバグ]]></title>
+        <id>hatenablog://entry/17179246901387302895</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/05/13/062600"/>
+        <updated>2026-05-12T21:26:00.000Z</updated>
+        <summary type="html"><![CDATA[個人開発しているとこういうベーシックなことが抜け落ちるので泣きたくなる時ありますねー。たぶん10年以上前に発覚している話だと思うのですけれど、2026年に知る私・・・。ぴえん。かなり重要なのでgbadev discordより引用させていただきます。
+AntonioND — 2026/04/26 19:23
+
+VBLANK単体ならいいけれど２つ以上や、タイマー割り込み使うならやめといた方が無難ですね。素直にlibugba使うべきという話です。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AnthropicがAWS上で提供する「Claude Platform on AWS」正式リリース。Claudeの新機能を含むフルセットをAWSで提供]]></title>
         <id>https://www.publickey1.jp/blog/26/anthropicawsclaude_platform_on_awsclaudeaws.html</id>
