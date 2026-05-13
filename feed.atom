@@ -2,10 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-13T13:40:01.277Z</updated>
+    <updated>2026-05-13T14:56:38.042Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Node.js、Dateに代わる日時処理「Temporal」がデフォルト有効化。TemporalはChrome/Edge/Firefox/Node.jsで利用可能に]]></title>
+        <id>https://www.publickey1.jp/blog/26/nodejsdatetemporaltemporalchromeedgefirefoxnodejs.html</id>
+        <link href="https://www.publickey1.jp/blog/26/nodejsdatetemporaltemporalchromeedgefirefoxnodejs.html"/>
+        <updated>2026-05-13T15:49:36.000Z</updated>
+        <summary type="html"><![CDATA[JavaScriptランタイム「Node.js」の最新バージョンとなる「Node.js 26」正式版がリリースされました。 Node.js 26では、これまでJavaScriptにおいて日付処理に使われてきたDateに代わる新たなAPIとし...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AIを高速にするPythonライクな新言語「Mojo」、ベータ版に到達]]></title>
+        <id>https://www.publickey1.jp/blog/26/aipythonmojo.html</id>
+        <link href="https://www.publickey1.jp/blog/26/aipythonmojo.html"/>
+        <updated>2026-05-13T15:48:40.000Z</updated>
+        <summary type="html"><![CDATA[Modular社は、AIを高速に実行することを目指したPythonライクな新言語「Mojo」のベータ版公開を発表しました。今後数カ月以内に正式版が登場する予定です。 Mojo  1.0 is in beta! Beta 1 marks th...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[automerge-gate: GitHubのAuto Mergeをひとつの必須チェックに集約するGitHub Action]]></title>
+        <id>https://efcl.info/2026/05/13/automerge-gate/</id>
+        <link href="https://efcl.info/2026/05/13/automerge-gate/"/>
+        <updated>2026-05-13T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitHub Action automerge-gate を作ったので紹介します。
+GitHub: pkgdeps/automerge-gate
+背景: GitHubの必須チェック設定はPRごとの揺らぎに弱い
+前提として、GitHubのAuto Mergeを使うには、必須チェック未達成のPRをマージできない状態にするBranch protection ruleやRulesetの設定が必要です。
+これらの保護機能でPRがブロックされる状態を作ったうえで、すべての必須チェックが成功した時点でAuto Mergeが発火する、という仕組みになっています。
+逆に言うと、Auto Mergeを使うには何かしらのステータスチェックを必ず必須に入れる必要があります。
+そして、Branch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。
+この方式は次のような場面で壊れやすいという問題があります。
+RenovateやDependabotなど外部のGitHub Appが追加するチェックは、PRごとにあったりなかったりする
+monorepoでパスフィルタを使っていると、ワークフローがPRによってスキップされたりされなかったりする
+新しいワークフローを追加する度に、Rulesetを書き換える必要がある
+GitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功すること)しか表現できないため、「チェック群のうちどれかが走っていればよい」みたいな条件は書けません。
+そのため、PRごとに発火するチェックが違うケースだと、片方のPRでは存在しないチェックを必須にしてしまい、いつまでもマージできないという状態が発生します。
+この問題への対処として、必須チェックを…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.5.13]]></title>
         <id>https://gamegaz.com/?p=45469</id>
@@ -9736,21 +9779,6 @@ www.nicovideo.jp
 じゃ！]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[なんだか最近 RuboCop のキャッシュファイルが git diff に入ってくる方へ]]></title>
-        <id>hatenablog://entry/17179246901353839219</id>
-        <link href="https://techlife.cookpad.com/entry/2026/02/13/104502"/>
-        <updated>2026-02-13T01:45:02.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、レシピ事業部バックエンド基盤部の石川です。これは RuboCop のバージョンを上げましょうという記事です。
-なんだか最近 RuboCop を使っていたら .rubocop-29343e612b03ba2227a3c3390a755e8d.yml のような名前のファイルが .gitignore を貫通してきませんか？
-これは他リポジトリなどのリモートにある設定ファイルを inherit_from で参照したときに作られるキャッシュファイルです。ちょっと前までは .rubocop-https---raw-githubusercontent-com-cookpad-styleguide-master--rubocop-yml のような名前だったのが、2025 年末あたりに .rubocop-remote-23b9c67aff31e0f9d6c4a89d5eb660cb.yml のような名前になり *1、そのあと現在の名前になりました *2。現在の名前は $original_name-$hash.yml という規則になっています。
-そのような感じでキャッシュファイルの名前が変わり、そしてよくある .gitignore では .rubocop-https?--* のみが ignore されていることが多く、新しいファイル名がこのルールに引っかからなくなったため git diff に現れるようになったという次第です。
-さて、実は先日リリースされた RuboCop v1.84.2 からは、デフォルトでこれらのキャッシュファイルがプロジェクトの一番上のディレクトリではなく ~/.cache/rubocop_cache/ のような共通のディレクトリへ保存されるようになりました *3。
-したがって、お使いの RuboCop のバージョンを上げていただければこれらのキャッシュファイ…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
