@@ -924,21 +924,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901364542296/1773404693"
-        },
-        {
-          "id": "hatenablog://entry/17179246901353872661",
-          "author": null,
-          "description": "EchoというiOS向けのSSHクライアントが出たので、iPhoneからMacBookにSSH接続して開発できるようにした。接続にはTailscaleを使っている。\nEchoはGhosttyのターミナルエンジンを使っていて、TUIの表示がめちゃくちゃ綺麗。$2.99の買い切りでサブスクじゃないのも良い。\ntmuxのセッションにそのままアタッチできるので、MacBookで作業していた続きをiPhoneから継続できる。Claude Codeの操作もふつうにできた。\nセットアップはTailscaleを両デバイスに入れてMacBookのリモートログインを有効にするだけ。ただSSH鍵の設定がちょっと面倒で、Echo側では鍵の生成ができないのでmacOS側で生成した秘密鍵を持ち込む必要がある（しかもパスフレーズなしじゃないとダメ）。\nssh-keygen -t ed25519 -f ~/.ssh/echo_key -N \"\"\n生成した秘密鍵の中身をEchoのSSH Keys設定からインポートすればいい。\nMacBookの蓋を閉じて運用したい場合はスリープを無効にしておく。蓋を閉じるとTailscaleがオフラインになるので。\nsudo pmset -c sleep 0\nsudo pmset -c disablesleep 1\nところで現時点ではEchoで日本語入力ができない。日本語を打ちたいときはiOSの音声入力を使うとわりとなんとかなる。\nソファに寝転がりながらiPhoneで開発できるの、めちゃくちゃ便利。",
-          "link": "https://blog.nishimu.land/entry/2026/02/12/221803?utm_source=feed",
-          "publishedOn": "2026-02-12T13:18:03.000Z",
-          "wordCount": 262,
-          "title": "iPhoneから開発できるようにした",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/c87399d4ae9b287012d2fed395d7bfa1d1a03c76/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260212%2F20260212221407.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/c87399d4ae9b287012d2fed395d7bfa1d1a03c76/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260212%2F20260212221407.png"
         }
       ]
     },
@@ -2330,21 +2315,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/695fc87cb359ef6450b69145577045e9d1bebfb6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkougasetumei%2F20260306%2F20260306075214.jpg"
-        },
-        {
-          "id": "hatenablog://entry/17179246901353858718",
-          "author": null,
-          "description": "『COM』と『あっぷる❤こあ』——ぐら・こん関西支部顛末記——\n中島隆\n年をとると、新しい事に出会う事がなくなり、もうこの世で心驚かされる事はないと思っていましたが、やはり人生にはとんでもなく長い伏線があって、小説のように物語がつながっていくのだと、映画「インセプション」のように「迷宮」巡りの、目も眩むような体験をしました。『ビランジ』にこの文を書かせて貰うという、思いもかけない事になったのも、そうした伏線の一本でした。皆さんにこうして読んで貰えるのは、奇跡のような巡り合わせがあったからこその事でした。\n25歳から大阪で家業の文房具屋をやってきて、一昨年、2009年の1月迄は、33年間漫画とほぼ無縁の生活を送って来ました。「創世記」のように初めに光があったのですが、それが『コミックマーケット創世記』でした。コミックマーケット初代代表だった原田央男さんの、丁度出版されたばかりの本を、僕の弟が「兄貴の事載ってるで」と、僕に見せてくれた。それが始まりでした。\n『COM』をご存知の方は多いと思います。手塚治虫さんの虫プロ商事出版部で発行していた漫画専門誌で、1966年12月に創刊されました。その読者ページが「ぐらんど・こんぱにおん（略称ぐら・こん）」と名付けられていて、漫画研究会の全国組織を作ろうと呼び掛けていました。『コミケ創世記』の第2章が「COMとぐら・こん」で『COM』の創刊から休刊まで詳しく書かれていました。そして3章で、「ぐら・こん」を消滅させないために、COM編集者の大塚豊さんと、ぐら・こん関西支部長のぼくとで作った連絡情報誌『マンガジュマン』の、顛末が書かれていました。ガリ版刷り700部の小冊子に、深く言及して貰っているのに驚きました。また、文中ぼくはＮ氏となっていました。\n息の詰まる思いで読みました。ぼくがＮ氏のままにされる事が段々辛くなってきました。それではなん…",
-          "link": "https://kougasetumei.hatenablog.com/entry/guracon",
-          "publishedOn": "2026-02-12T12:31:21.000Z",
-          "wordCount": 625,
-          "title": "『COM』と『あっぷる❤︎こあ』——ぐら・こん関西支部顛末記——（中島隆）",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/10328749687183071524/17179246901353858718/1770902107",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/10328749687183071524/17179246901353858718/1770902107"
         }
       ]
     },
