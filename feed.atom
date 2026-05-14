@@ -2,10 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-14T12:30:23.643Z</updated>
+    <updated>2026-05-14T13:31:33.530Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ナルキッソスGBAコンバータ]]></title>
+        <id>hatenablog://entry/17179246901387908265</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/05/14/213346"/>
+        <updated>2026-05-14T12:33:46.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+・・・えーとすみません、感情が限界オタクになってしまいました（汗）。浮かれて変なことを言わないように１つだけフォロー失礼します。savid.binについて。こちらはAnalogue Pocket専用の処置となっています。ロムに「SRAM_Vnnn」という文字列が入っていないとセーブされないです。普通、エミュやマジ〇ンだと起動前にセーブタイプを選べるのですけど、アナポケは選択項目がないようです。当方未所持なので遠隔デバッグしてもらいました。２年ぐらい前の話なので今だと違っているかもしれません。
+https://github.com/akatsuki105/gba-docs-ja/blob/main/cartridge/backup/README.md
+コンバータ作業は落とし込みが大変だったかと思いますけれど、動いた時のドット画面が堪らないですよね。1周サクッと楽しませていただきました！]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.5.14]]></title>
         <id>https://gamegaz.com/?p=45472</id>
@@ -9689,24 +9702,6 @@ GameGaz Daily 2026.2.15 first appeared on 大人のためのゲーム講座.]]><
 Switchエミュレータ一掃へ一斉DMCA削除通知 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-02-13]]></title>
-        <id>hatenablog://entry/17179246901354260154</id>
-        <link href="https://commits.hatenablog.com/entry/2026/02/14/100000"/>
-        <updated>2026-02-14T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[daikonvim.connpass.com
-daikon.vim に参加していた。
-ずっと放置していた .vimrc の手入れをしていた。放置しすぎてエラーが出たりしていたのだけど、ちょっとしたテキストやコミットメッセージぐらいにしか使わなくなっていたのでそのままにしてしまっていた。
-Claudeにいい感じにしてもらった結果、ちゃんとVimが動くようになった。
-https://github.com/pocke/dotfiles/commits/master/?since=2026-02-13&until=2026-02-14
-やっとNeoBundleを卒業することができた。
-.vimrc をなんとかした後は、PCのキーリマップをいじっていた。PowerToysを使ったキーリマップだとRDPとの相性が悪いためRDP中はクライアントのPowerToysを無効にしているのだけど、RDP先ではまともに動くもののRDPしてないウィンドウに切り替えた時にキーリマップなしになってしまっていて困っていた。
-これをレジストリでのリマップに変えようと試行錯誤していた。半分ぐらいうまくいったところで止まっている。
-後半はずっと雑談をしていた。なぜか岡山の話をたくさん聞く回になっていて楽しかった。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>

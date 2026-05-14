@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901387908265",
+          "author": null,
+          "description": "github.com\n・・・えーとすみません、感情が限界オタクになってしまいました（汗）。浮かれて変なことを言わないように１つだけフォロー失礼します。savid.binについて。こちらはAnalogue Pocket専用の処置となっています。ロムに「SRAM_Vnnn」という文字列が入っていないとセーブされないです。普通、エミュやマジ〇ンだと起動前にセーブタイプを選べるのですけど、アナポケは選択項目がないようです。当方未所持なので遠隔デバッグしてもらいました。２年ぐらい前の話なので今だと違っているかもしれません。\nhttps://github.com/akatsuki105/gba-docs-ja/blob/main/cartridge/backup/README.md\nコンバータ作業は落とし込みが大変だったかと思いますけれど、動いた時のドット画面が堪らないですよね。1周サクッと楽しませていただきました！",
+          "link": "https://akkera102.hatenablog.com/entry/2026/05/14/213346",
+          "publishedOn": "2026-05-14T12:33:46.000Z",
+          "wordCount": 501,
+          "title": "ナルキッソスGBAコンバータ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/10eafb1b30ff23570a9a5267a8df4d5851a5aed9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260514%2F20260514212449.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/10eafb1b30ff23570a9a5267a8df4d5851a5aed9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260514%2F20260514212449.png"
+        },
+        {
           "id": "hatenablog://entry/17179246901387302895",
           "author": null,
           "description": "個人開発しているとこういうベーシックなことが抜け落ちるので泣きたくなる時ありますねー。たぶん10年以上前に発覚している話だと思うのですけれど、2026年に知る私・・・。ぴえん。かなり重要なのでgbadev discordより引用させていただきます。\nAntonioND — 2026/04/26 19:23\n\nVBLANK単体ならいいけれど２つ以上や、タイマー割り込み使うならやめといた方が無難ですね。素直にlibugba使うべきという話です。",
@@ -1321,21 +1336,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901357101576/1771722000"
-        },
-        {
-          "id": "hatenablog://entry/17179246901354260154",
-          "author": null,
-          "description": "daikonvim.connpass.com\ndaikon.vim に参加していた。\nずっと放置していた .vimrc の手入れをしていた。放置しすぎてエラーが出たりしていたのだけど、ちょっとしたテキストやコミットメッセージぐらいにしか使わなくなっていたのでそのままにしてしまっていた。\nClaudeにいい感じにしてもらった結果、ちゃんとVimが動くようになった。\nhttps://github.com/pocke/dotfiles/commits/master/?since=2026-02-13&until=2026-02-14\nやっとNeoBundleを卒業することができた。\n.vimrc をなんとかした後は、PCのキーリマップをいじっていた。PowerToysを使ったキーリマップだとRDPとの相性が悪いためRDP中はクライアントのPowerToysを無効にしているのだけど、RDP先ではまともに動くもののRDPしてないウィンドウに切り替えた時にキーリマップなしになってしまっていて困っていた。\nこれをレジストリでのリマップに変えようと試行錯誤していた。半分ぐらいうまくいったところで止まっている。\n後半はずっと雑談をしていた。なぜか岡山の話をたくさん聞く回になっていて楽しかった。",
-          "link": "https://commits.hatenablog.com/entry/2026/02/14/100000",
-          "publishedOn": "2026-02-14T01:00:00.000Z",
-          "wordCount": 544,
-          "title": "2026-02-13",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901354260154/1771030803",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901354260154/1771030803"
         }
       ]
     },
