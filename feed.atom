@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-15T00:20:42.010Z</updated>
+    <updated>2026-05-15T01:33:41.613Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-05-14]]></title>
+        <id>hatenablog://entry/17179246901387781177</id>
+        <link href="https://commits.hatenablog.com/entry/2026/05/15/100000"/>
+        <updated>2026-05-15T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[大LLM時代に開発者ツールの速度は重要なのか、ということについて考えている。ここで言う開発者ツールは、RuboCopのような開発中につかうCLIツールを念頭においている。
+実行時間が1秒か1分か、といったオーダーであれば、速度差が依然として重要であることに異論はない。一方で実行時間が1秒か3秒か、といったオーダーの場合、速度差の重要度は低くなっているのではないか(速ければ速いに越したことはないのはそうだけれど)。
+人間がツールを実行するのであればこの違いは重要である。1秒待たされるのと3秒待たされるのではだいぶ体験が違うと思う。
+一方で、Claude CodeのようなLLM経由でRuboCopを実行する場合、そもそもLLMへの一回の問い合わせから返答が返ってくるのには分単位で時間がかかることが多い。開発ツールの実行オーバーヘッドが数秒増えたところで、人間の体験としてはあまり差がないはずだと考えている。
+というようなことを数ヶ月前からぼんやりと考えていた。
+職場でちょうどspringをやめるのはどうかという話が出た時にこの主張をしたところ、同僚から「むしろ逆に、LLMが細かくツールを何度も実行するために速度がより重要となるのではないか」といった反論をもらった。それは確かにそう言えると感じる(結局springは消えたが)。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2026年5月-2】腰ヘコくん…]]></title>
         <id>hatenablog://entry/17179246901387941333</id>
