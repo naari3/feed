@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-16T04:19:30.284Z</updated>
+    <updated>2026-05-16T05:59:18.383Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Dirty Frag脆弱性がCVE番号なしで公開された背景を読む(TOEIC風)]]></title>
+        <id>https://note.com/usop/n/n1b49744cb5f2</id>
+        <link href="https://note.com/usop/n/n1b49744cb5f2"/>
+        <updated>2026-05-16T05:39:38.000Z</updated>
+        <summary type="html"><![CDATA[Copy Failに続き、Dirty Fragと呼ばれるLinuxカーネルの脆弱性が公開されましたが、これはこれで世間のルールを学ぶきっかけとなる脆弱性だった気がします。ということで、発見者 Hyunwoo Kim がoss-security メーリングリストに開示したスレッドから読んでいきましょう。
+ oss-security - Dirty Frag: Universal Linux LPEwww.openwall.com 
+続きをみる]]></summary>
+        <author>
+            <name>unknown protocol</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.5.16]]></title>
+        <id>https://gamegaz.com/?p=45486</id>
+        <link href="https://gamegaz.com/2026051645486/"/>
+        <updated>2026-05-16T05:20:33.000Z</updated>
+        <summary type="html"><![CDATA[Xboxコントローラー流出,EAPDumper v0.2.0,P2JB 1.0,ps5upload v2.7.1,PS5-Xplorer 1.05,ps5debug-NG 1.2.3,ControlConsole API (CCAPI) v2.80 Rev 14,ARK-4 v4.20.69 r206,VitaDB Downloader v.2.5,SLD(Switchroot LineageOS Downloader) 1.0.3,Breeze beta106.1b,FortPatcher-NX v20260515-2daa5a5,decky-loader v3.2.4-pre1,StellarOS(stellar-recovery) v1.9.0,XbDiag 1.0.10 Beta,XStreamingDesktop v1.10.0,Warnel Chawpiovs 1.3.0,melonDS Android 0.7.0.rc3.fix,shadPS4 Pre-release-shadPS4-2026-05-15-7337364,TempGBA4PSP-mod 20260515,xenia c2674b1_canary_experimental,Universal Dreamcast Patcher v2.1.0,Motecast,YabaSanshiro v1.20.5→→→この記事の続きを読む
+GameGaz Daily 2026.5.16 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SiSTRo氏がPS5のGoldHEN開発を公表 リリースは未定]]></title>
+        <id>https://gamegaz.com/?p=45484</id>
+        <link href="https://gamegaz.com/2026051645484/"/>
+        <updated>2026-05-16T04:42:30.000Z</updated>
+        <summary type="html"><![CDATA[SiSTRo氏がHomebrew起動やデバッグ設定、パッケージインストールなどを有効にすることができるHomebrew Enabler GoldHENのPS5版を開発していることを発表していました。→→→この記事の続きを読む
+SiSTRo氏がPS5のGoldHEN開発を公表 リリースは未定 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ChisFlash公式]]></title>
         <id>hatenablog://entry/17179246901388493629</id>
@@ -191,6 +225,17 @@ Cramitって何
         <summary type="html"><![CDATA[Visual Studio Code（以下、VS Code）の開発チームは、VS Codeで複数のAIエージェントを用いた開発を容易にする新機能「Agent window」を5月13日に公開されたVisual Studio Code 1.1...]]></summary>
         <author>
             <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【備忘録】VSTサンプラー「Vital」で使用したWavファイルの参照元を確認する方法]]></title>
+        <id>https://ytpmv.info/?p=2128</id>
+        <link href="https://ytpmv.info/vital-trouble-shooting-1/"/>
+        <updated>2026-05-14T14:08:11.000Z</updated>
+        <summary type="html"><![CDATA[作業中にハマったのでメモ 前提：VitalというVSTiがあります。サンプラーとしてWavファイルを読み込んでMIDIで鳴らすことができ、便利なものです。 このVitalで作業中に、「何の音源のWAVファイルを読み込ませ […]
+The post 【備忘録】VSTサンプラー「Vital」で使用したWavファイルの参照元を確認する方法 first appeared on YTPMV.info.]]></summary>
+        <author>
+            <name>maimai</name>
         </author>
     </entry>
     <entry>
@@ -9647,20 +9692,6 @@ GameGaz Daily 2026.2.17 first appeared on 大人のためのゲーム講座.]]><
 GameGaz Daily 2026.2.16 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[マークダウン形式でリンクをコピーするブックマークレット]]></title>
-        <id>hatenablog://entry/17179246901354966605</id>
-        <link href="https://diary.hatenablog.jp/entry/2026/02/16/014556"/>
-        <updated>2026-02-15T16:45:56.000Z</updated>
-        <summary type="html"><![CDATA[暗黙知シリーズ。ブックマークレットという言葉自体がもはや死語なんじゃないかという気もするけど。
-今開いてるタブへのリンクを [タイトル](https://example.com) という Markdown 形式でコピーするためのスクリプト。もう10年以上使い続けている。
-javascript:window.prompt(document.title, `[${document.title}](${location.href})`)
-"md link" みたいな名前でブックマークバーに置いておくといい
-プロンプトウインドウが開くので内容をコピって閉じる。OK でも Cancel でもいい。私は Ctrl+C してすぐに ESC 押して閉じてる]]></summary>
-        <author>
-            <name>Write and Run</name>
         </author>
     </entry>
     <entry>
