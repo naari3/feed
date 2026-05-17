@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-17T13:28:44.820Z</updated>
+    <updated>2026-05-17T14:28:42.076Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DuckDBをクライアント／サーバ化する「Quack」プロトコルが登場。複数のDuckDBインスタンス間で接続が可能に]]></title>
+        <id>https://www.publickey1.jp/blog/26/duckdbquackduckdb.html</id>
+        <link href="https://www.publickey1.jp/blog/26/duckdbquackduckdb.html"/>
+        <updated>2026-05-17T15:58:58.000Z</updated>
+        <summary type="html"><![CDATA[オープンソースとして開発されている高速なOLAP用データベース「DuckDB」をクライアント／サーバ化する新しいプロトコル「Quack」が発表されました。 ちなみにQuackはアヒル（Duckはアヒルおよびカモ類全体の総称ですが、ここではア...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS、Oracle Cloudと閉域網で直結する「AWS Interconnect - multicloud」新機能をプレビュー。Google Cloudとの接続に続き]]></title>
+        <id>https://www.publickey1.jp/blog/26/awsoracle_cloudaws_interconnect_-_multicloudgoogle_cloud.html</id>
+        <link href="https://www.publickey1.jp/blog/26/awsoracle_cloudaws_interconnect_-_multicloudgoogle_cloud.html"/>
+        <updated>2026-05-17T15:55:59.000Z</updated>
+        <summary type="html"><![CDATA[AWSは、Oracle Cloudと閉域網で直接接続する「AWS Interconnect - multicloud」の新機能をプレビュー公開しました。 AWS Interconnect - multicloudは、Amazon VPCやA...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GBA FMS]]></title>
         <id>hatenablog://entry/17179246901388913228</id>
@@ -9551,27 +9571,6 @@ launchd-uiは、macOSのlaunchdエージェントをGUIで管理できるシン�
 GitHub: azu/launchd-ui]]></summary>
         <author>
             <name>Web Scratch</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026年2月の新機能・機能改善をお知らせします]]></title>
-        <id>hatenablog://entry/17179246901355020923</id>
-        <link href="https://staff.hatenablog.com/entry/2026/02/17/111208"/>
-        <updated>2026-02-17T02:12:08.000Z</updated>
-        <summary type="html"><![CDATA[はてなブログとはてなCMSの両サービスでは日々新機能の開発や機能改善を行っております。本記事では、1ヶ月間に行った両サービスの機能修正や改善についてまとめてお知らせいたします。
-機能修正・改善（はてなブログ、はてなCMS共通）
-注目記事モジュールで表示できる記事の上限数が50件に増えました
-最近のアクセス数やはてなブックマーク数順に記事を配置できる「注目記事モジュール」について、表示できる記事の最大件数を10件から50件に増やしました。
-はてなCMSの機能修正・改善
-はてなCMS本体の描画が完了した後にスクリプトが発火する入力欄を設けました
-ノーコードツールで作成したページにJavaScriptを設定した際、タイミングによっては正しく動かないことがありました。
-デザインのカスタマイズにJavaScript・jQueryを利用できますか？ また、どのように実装したらよいですか？ – はてなCMSヘルプセンター
-
-ノーコードツールにて書式を自動的に解除してから貼り付けられるようになりました
-ノーコードツールにてテキストを貼り付ける際に、書式を自動的に解除してから貼り付けられるよう調整しました。
-今までは書式を解除するために、一度表示されるポップアップを操作する必要がありましたが、この改修によりスムーズにテキストの貼り付けが行えるようになりました。]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
