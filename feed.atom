@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-17T00:18:38.277Z</updated>
+    <updated>2026-05-17T01:32:33.760Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-05-16]]></title>
+        <id>hatenablog://entry/17179246901388656687</id>
+        <link href="https://commits.hatenablog.com/entry/2026/05/17/100000"/>
+        <updated>2026-05-17T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[菊芋のプランターに支柱を立てた。だいぶ大きくなるようなので、180cmの支柱を買って立てた。やり方が正しいのかいまいちわからない。
+まだ支柱がなくても平気そうではあるけれど、大きくなりすぎる前に支柱を立てておいた。
+最近はAndroidアプリの開発をしている。ある程度使ってもらえるぐらいに機能ができたらプレビュー公開をしたい。しかし実装したい機能が無限に湧いてきてしまう。
+実装はKotlinで、ほぼ全てClaudeにやらせているし、あまり中身は読んでいない。
+データを扱うあたりは指示を細かめにしたりちょっとコードを読んだりしているけれど、UI周りは本当にほとんどコードを見ていない。
+今のところまともに動いているように見えるけれど、いざバグが起きた時に困りそう。
+開発はWindows上で行っている。WSLの外で開発をしているので、慣れなくて何かと不便。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[26/5/17 異性の友人を募集して1ヶ月で15人会った]]></title>
         <id>hatenablog://entry/17179246901387207091</id>
