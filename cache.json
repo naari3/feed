@@ -604,6 +604,21 @@
       "siteUrl": "https://blog.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/17179246901389148697",
+          "author": null,
+          "description": "はてなブログ独自の集計による人気記事のランキング。2026年5月10日（日）から2026年5月16日（土）〔2026年5月第3週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    Chrome DevTools MCP が凄い。人類が「プログラムにやってほしかったこと」が簡単にできる時代がきた！！ - プログラマでありたい\n by id:dkfj \n    \n2\n    自分が一番考えてるという自信を持つ - Konifar's ZATSU\n by id:konifar \n    \n3\n    Excelで複数行にまたがる文章を楽に入力する方法 - プチメタ3.0\n by id:IKUSHIMA \n    \n4\n    筋が悪そうに見える方針に口を出す - Konifar's ZATSU\n by id:konifar \n    \n5\n    ナフサの調達状況について業者から連絡がありました。。 - Everything you've ever Dreamed\n by id:Delete_All \n    \n6\n    戦時中に短波ラジオを聞いてた人たち - 山下泰平の趣味の方法\n by id:cocolog-nifty \n    \n7\n    ［Steam］パズル系・謎解き系ゲーム難易度表 - kaiの日記\n by id:kai_yuki \n    \n8\n    ローカルLLMを動かすハードウェア - きしだのHatena\n by id:nowokay \n    \n9\n    はてなブログでは読まれない。について。 - てのひらを、かえして\n by id:anmin7 \n    \n10\n    テストケースをコードで書かないE2Eテスト ── Claude CodeとPlaywright CLIで実現する自然言語テスト自動化 - ZOZ…",
+          "link": "https://blog.hatenablog.com/entry/2026/05/18/120000",
+          "publishedOn": "2026-05-18T03:00:00.000Z",
+          "wordCount": 1124,
+          "title": "今週のはてなブログランキング〔2026年5月第3週〕",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/28d1b1bf453a49ed38900456d89fc15e4a6dc717/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260518%2F20260518092546.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/28d1b1bf453a49ed38900456d89fc15e4a6dc717/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260518%2F20260518092546.jpg"
+        },
+        {
           "id": "hatenablog://entry/17179246901388198813",
           "author": null,
           "description": "ネーミングセンスがある人がうらやましい\n\nはてなブログでは毎週「今週のお題」を出題しています。今回は、2026年2月6日から募集した今週のお題「名前をつける」に寄せられたエントリーから、週刊はてなブログ編集部がおすすめしたい記事をピックアップして紹介します！\n\nペットの名前やプロジェクト名など、人生には名前をつける場面が意外と多く存在します。はてなブログを開設しようと思っただけでも、はてなidやブログ名を考えなくてはいけません。\n私はこんなときに、なかなか名前を決めることができないタイプです。長く悩む割には、途中で考えることに疲れてしまって最終的には適当に頭に浮かんだ名前に決めてしまいがち。サラッとセンスのいい名前をつけられる人に憧れます。\nこんなふうに性格が出る「名付け」という行為。2月に募集した今週のお題「名前をつける」にも、個性豊かなさまざまなエントリーが集まりました。今回はその中から、週刊はてなブログ編集部が気になったエントリーをピックアップして紹介します。\n和牛の名付けルール。オスは漢字で、メスはひらがな\nどうしても「シルバー」とつけたかった中学生の頃\n名前をつけ直すことで「自分の世界に迎え入れる」\n今回紹介したブログ\nこの記事の関連商品\n和牛の名付けルール。オスは漢字で、メスはひらがな\nM牧場に限らず、日本に存在する和牛たちは全員名前を持っている。オスは漢字、メスはひらがなという決まりだ。\n0209 / 180頭の名づけ親 - 和牛のいる生活\n    \n牛の名前の付け方のルールについて書いたのは、牧場で働いている のん / M牧場 (id:non_moo) さん。日本で飼育されている牛は、名前の付け方が決まっているのだそう。\n和牛の場合は「オスは漢字、メスはひらがな」と決まっていて、ホルスタインには性別に関係なくカタカナの名前をつけるのだとか。そんな決まりがあっ…",
@@ -9155,26 +9170,6 @@
           "wordCount": 1488,
           "title": "Slackが「リアルタイムサーチAPI」と「Slack MCP Server」を発表。生成AIがSlack上のやりとりを基にコンテキストを理解可能",
           "imageUrl": "https://www.publickey1.jp/2026/HBXXyCzXgAAk52_.png"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/netwebassemblycoreclr.html",
-          "author": null,
-          "description": "マイクロソフトは2月10日付けで公開した.NET 11 Preview 1において、.NETランタイムでWebAssemblyの実行をサポートする作業を開始していることを明らかにしました。 完成は来年の.NET 12かそれ以後の予定 .NE...",
-          "link": "https://www.publickey1.jp/blog/26/netwebassemblycoreclr.html",
-          "publishedOn": "2026-02-17T15:44:49.000Z",
-          "wordCount": 1495,
-          "title": "マイクロソフト、.NETランタイムでWebAssemblyの実行をサポートへ、CoreCLRに実装を開始",
-          "imageUrl": "https://www.publickey1.jp/2026/dotnet11pp-wasm.png"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/mysqlinnodbduckdbalisql_80.html",
-          "author": null,
-          "description": "中国のAlibaba Cloudデータベースチームは、MySQLのブランチとしてOLTP用のInnoDB、OLAP用のDuckDBカラムナエンジン、そしてベクトルサーチ機能を統合した「AliSQL 8.0」をオープンソースで公開しました。 ...",
-          "link": "https://www.publickey1.jp/blog/26/mysqlinnodbduckdbalisql_80.html",
-          "publishedOn": "2026-02-17T15:41:21.000Z",
-          "wordCount": 1439,
-          "title": "中国アリババ、MySQLのブランチとしてInnoDBエンジン、DuckDBカラムナエンジン、ベクトルサーチなどを統合した「AliSQL 8.0」オープンソースで公開",
-          "imageUrl": "https://www.publickey1.jp/2026/alisql8rl.png"
         }
       ]
     },
