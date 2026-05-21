@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-21T04:37:07.912Z</updated>
+    <updated>2026-05-21T06:22:07.341Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[SMQ 解説]]></title>
+        <id>https://note.com/anzato/n/n47a6d10b9938</id>
+        <link href="https://note.com/anzato/n/n47a6d10b9938"/>
+        <updated>2026-05-21T06:16:50.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+https://x.com/Anzato10/status/2049141594234777946?s=20
+続きをみる]]></summary>
+        <author>
+            <name>餡砂糖</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2026年5月の新機能・機能改善をお知らせします]]></title>
+        <id>hatenablog://entry/17179246901389643596</id>
+        <link href="https://staff.hatenablog.com/entry/2026/05/21/142401"/>
+        <updated>2026-05-21T05:24:01.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログとはてなCMSでは、より使いやすいサービスを目指して日々機能の開発・改善に取り組んでいます。大きなアップデートはその都度お知らせしていますが、細かな使い勝手の向上や見えにくい改善も、実は毎月数多く行われています。
+機能修正・改善
+固定ページを絞り込み検索できるようになりました
+固定ページ*1 を多く作成しているユーザーさまの声にお応えし、固定ページ一覧画面にて下記の項目で絞り込み検索ができるようになりました。
+ページ名
+URL
+公開ステータス（公開中 / 予約済み / 下書き）
+最終編集者
+
+検索結果ページ作成機能がリリース
+ノーコードツール*2 で検索結果ページが作成できるようになりました。
+
+ページの種類に「記事関連ページ」の項目を追加
+ノーコードツールのテンプレート選択画面にて、記事関連ページの選択肢を追加しました。
+
+
+その他の細かい機能改善
+ノーコードツールで記事詳細ページのデザインをより細かく調整できるようになりました
+ノーコードツールで作成した記事詳細ページに、プロフィールカードで設定した構造化データが反映されるようになりました
+今回紹介した改善はこの1ヶ月のごく一部です。
+
+*1:有料プラン限定機能
+*2:はてなCMS限定機能]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AWSのサービスで自席の快適度を測定できるようにしてみた話（２）]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=36525</id>
