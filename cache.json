@@ -501,21 +501,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729894112/17179246901357691042/1771838897"
-        },
-        {
-          "id": "hatenablog://entry/17179246901357112302",
-          "author": null,
-          "description": "github.com\nFuzzy Search\nパフォーマンスを向上させたのと、スコアリングを見直して、もうちょっといい感じに候補が並ぶようにした。\n@effect_launcher\nいい感じに候補が並ぶように、@effect_launcherの側も少し弄った。新しいFuzzy Searchである必要があるので、@scriptの更新と後述しますがStartupにある!@script_UI.jsxの削除をお願いします。\nプロファイラー\nPerf — @script 0.8.0 documentation\nパフォーマンス計測のために、プロファイラーを作成した。\n!@script_UIの埋め込み\n@script.aexと!@script_UI.jsxとで、2つの更新箇所もあると面倒だなと思ったので、!@script_UI.jsxの内容を@script.aexに埋め込むようにした。それにともなって、Startupにある!@script_UI.jsxは不要、否、むしろ、@script.aexのとでコンフリクトしてしまうので、削除していただけると幸いです。",
-          "link": "https://atarabi.hateblo.jp/entry/2026/02/22/022337",
-          "publishedOn": "2026-02-21T17:23:37.000Z",
-          "wordCount": 403,
-          "title": "After Effectsのスクリプトの可能性を広げる。 その９",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208692334729894112/17179246901357112302/1771694617",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729894112/17179246901357112302/1771694617"
         }
       ]
     },
@@ -6737,6 +6722,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=36566",
+          "author": "中込",
+          "description": "はじめに IIJは、2026年5月27日（水）～29日（金）開催「SPEXA -【国際】宇宙ビジネス展-」、2026年6月10日（水）～12日（金）開催「Internet x Space Summit...",
+          "link": "https://eng-blog.iij.ad.jp/archives/36566",
+          "publishedOn": "2026-05-22T05:38:04.000Z",
+          "wordCount": null,
+          "title": "Starlink実機を展示！- IIJがSPEXA/Interopに出展 –",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=36400",
           "author": "sasaki",
