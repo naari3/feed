@@ -6704,16 +6704,6 @@
           "wordCount": 839,
           "title": "dockerfile-pin: DockerfileやComposeのイメージをSHA256でピン留めするCLIツールを作った",
           "imageUrl": "https://efcl.info/public/favicon.png"
-        },
-        {
-          "id": "https://efcl.info/2026/02/22/design-loop/",
-          "author": null,
-          "description": "Claude Codeを使ったブラウザベースのビジュアル編集ツールとして、design-loopを作りました。\nGitHub: https://github.com/azu/design-loop\n\n左パネルに開発中のサイトのプレビュー、右パネルにClaude Codeのターミナルが表示されます。プレビュー上の要素をクリックすると、その要素のコンポーネント情報やスタイルがClaude Codeに渡されます。\nインストール\n\ncurl -fsSL https://raw.githubusercontent.com/azu/design-loop/main/install.sh | sh\n\n\n使い方\nソースコードがあるディレクトリで、開発サーバーがすでに起動している場合は、--urlでURLを指定するだけで起動できます。\n\ndesign-loop --url http://localhost:3000\n\n\n--commandオプションを使うと、開発サーバーの起動もdesign-loopに任せられます。開発サーバーが起動してからプロキシが自動的に接続します。\n\ndesign-loop --url http://localhost:3000 --command \"npm run dev\"\n\n\n起動すると、プレビューとClaude Codeのターミナルを統合したブラウザUIが開きます。プレビュー上の要素をクリックすると、コンポーネント名やファイルパス、スタイルなどのコンテキストがClaude Codeへの指示に含まれます。\n\nDesign Mode\nv1.3.0で、ブラウザ上でページを直接編集できるDesign Modeを追加しました。\n\n要素をクリックして「どこを変えたい」と伝えるだけでなく、テキストを直接書き換えたり、要素をドラッグ&ドロップで並べ替えたりできます。変更はログとし…",
-          "link": "https://efcl.info/2026/02/22/design-loop/",
-          "publishedOn": "2026-02-22T00:00:00.000Z",
-          "wordCount": null,
-          "title": "design-loop: Claude Codeを使ったブラウザベースのビジュアル編集ツール",
-          "imageUrl": null
         }
       ]
     },

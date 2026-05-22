@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-22T11:54:00.341Z</updated>
+    <updated>2026-05-22T12:42:25.049Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9635,41 +9635,6 @@ GameGaz Daily 2026.2.22 first appeared on 大人のためのゲーム講座.]]><
 ジャンボ系は引き続き定期購入を設定している。とはいえ頻度が年数回なので、これはこれで自分が思っているのと違うような感覚がある。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[design-loop: Claude Codeを使ったブラウザベースのビジュアル編集ツール]]></title>
-        <id>https://efcl.info/2026/02/22/design-loop/</id>
-        <link href="https://efcl.info/2026/02/22/design-loop/"/>
-        <updated>2026-02-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Claude Codeを使ったブラウザベースのビジュアル編集ツールとして、design-loopを作りました。
-GitHub: https://github.com/azu/design-loop
-
-左パネルに開発中のサイトのプレビュー、右パネルにClaude Codeのターミナルが表示されます。プレビュー上の要素をクリックすると、その要素のコンポーネント情報やスタイルがClaude Codeに渡されます。
-インストール
-
-curl -fsSL https://raw.githubusercontent.com/azu/design-loop/main/install.sh | sh
-
-
-使い方
-ソースコードがあるディレクトリで、開発サーバーがすでに起動している場合は、--urlでURLを指定するだけで起動できます。
-
-design-loop --url http://localhost:3000
-
-
---commandオプションを使うと、開発サーバーの起動もdesign-loopに任せられます。開発サーバーが起動してからプロキシが自動的に接続します。
-
-design-loop --url http://localhost:3000 --command "npm run dev"
-
-
-起動すると、プレビューとClaude Codeのターミナルを統合したブラウザUIが開きます。プレビュー上の要素をクリックすると、コンポーネント名やファイルパス、スタイルなどのコンテキストがClaude Codeへの指示に含まれます。
-
-Design Mode
-v1.3.0で、ブラウザ上でページを直接編集できるDesign Modeを追加しました。
-
-要素をクリックして「どこを変えたい」と伝えるだけでなく、テキストを直接書き換えたり、要素をドラッグ&ドロップで並べ替えたりできます。変更はログとし…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
