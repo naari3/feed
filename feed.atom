@@ -2,10 +2,98 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-24T10:30:31.664Z</updated>
+    <updated>2026-05-24T11:26:53.050Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[チェックサム]]></title>
+        <id>hatenablog://entry/17179246901391474701</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/05/24/200133"/>
+        <updated>2026-05-24T11:01:33.000Z</updated>
+        <summary type="html"><![CDATA[Gemini先生の階段の駆け上がり具合ヤバいですね・・・。この件に関してはウェブの敗北だなあ。。
+・addチェックサム
+u8 AddChkSum(u8* data, u32 len)
+{
+	u8 ret = 0;
+
+	for(u32 i=0; i<len; i++)
+	{
+		ret += data[i];
+	}
+
+	return ret;
+}
+・xorチェックサム
+u8 XorChkSum(u8* data, u32 len)
+{
+	u8 ret = 0;
+
+	for(u32 i=0; i<len; i++)
+	{
+		ret ^= data[i];
+	}
+
+	return ret;
+}
+・Fletcher16
+u16 Fletcher16(u8* data, u32 len)
+{
+	u16 sum1 = 0;
+	u16 sum2 = 0;
+
+	for(u32 i=0; i<len; i++)
+	{
+		sum1 = (sum1 + data[i]) % 255;
+		sum2 = (sum2 + sum1) % 255;
+	}
+
+	return (sum2 << 8) | sum1;
+}
+・Adler32
+・FNV1a 32bit
+u32_t Fnv1a32(u8* data, u32 len)
+{
+	u32 hash = 2166136261u;	// FNV offset basis
+
+	for(u32 i=0; i<len; i++)
+	{
+		hash ^= data[i];
+		hash *= 16777619u;	// FNV prime
+	}
+
+	return hash;
+}
+・CRC32
+u32 Crc32(u8* data, u32 len)
+{
+
+	u32 crc = 0xFFFFFFFF;
+
+	for(u32 i=0; i<len; i++)
+	{
+		crc ^= data[i];
+
+		// 1バイト(8ビット)ごとに多項式除算を行う
+		for(u32 j=0; j<8; j++)
+		{
+			if(crc & 1)
+			{
+				crc = (crc >> 1) ^ 0xEDB88320; // マジックナンバー(生成多項式)
+			}
+			else
+			{
+				crc >>= 1;
+			}
+		}
+	}
+
+	return ~crc;
+}]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ポストアポカリプス伝統的ローグライク「Caves of Qud」初心者向けガイド日本語訳（最序盤攻略編）]]></title>
         <id>hatenablog://entry/17179246901391406973</id>
@@ -9634,17 +9722,6 @@ play.google.com
 *1:https://f.hatena.ne.jp/my/Hatena%20Blog/]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2026.2.24]]></title>
-        <id>https://gamegaz.com/?p=45057</id>
-        <link href="https://gamegaz.com/2026022445057/"/>
-        <updated>2026-02-23T23:17:27.000Z</updated>
-        <summary type="html"><![CDATA[ps5-payload-sdk v0.37,ps5-payload-websrv v0.30,pacbrew-repo v0.32,PS3 Disc Dumper v4.4.2,SimpleModManager v2.1.4,FPSLocker 3.3.1,Breeze beta99t_pr10,nx.js v0.0.66,minute_minute v1.8,libogc v3.0.4,Tanuki3DS v0.4.0,vAmiga v4.4b7,shadPS4 Pre-release-shadPS4-2026-02-23-407d287,shadPS4-QtLauncher-2026-02-23-6c1ca08→→→この記事の続きを読む
-GameGaz Daily 2026.2.24 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
