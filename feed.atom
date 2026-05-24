@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-24T14:28:05.210Z</updated>
+    <updated>2026-05-24T15:22:13.861Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -24,6 +24,21 @@
         <summary type="html"><![CDATA[Googleは5月19日と20日の2日間にかけて行ったイベント「Google I/O 2026」で、AIエージェントに対してDart言語とFlutterフレームワークを用いたアプリケーション開発のベストプラクティスを提供する「Dart＆Fl...]]></summary>
         <author>
             <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「週刊プラグインレビュー」Three-Body Technology / UNMASK]]></title>
+        <id>https://note.com/massmasaoki/n/n92cd1cb5f4a9</id>
+        <link href="https://note.com/massmasaoki/n/n92cd1cb5f4a9"/>
+        <updated>2026-05-24T14:51:21.000Z</updated>
+        <summary type="html"><![CDATA[今月は、前月１記事漏らしてしまったのもあって、なるべく早めの更新を心がけております・・・。
+しかし、５月中旬だというのに暑すぎて地球が心配です。
+今日も早くも半分熱中症になりながら起床したのでありました・・笑
+さて、今回はThree-Body TechnologyのUNMASKを取り上げます。
+いやー最近のThree-Body Techは良いです。実戦への小回りがちゃんと聞いてて、スペックが高いだけではなくて、実際に役立つツールを作ってくれていると思います。
+続きをみる]]></summary>
+        <author>
+            <name>moroishimasaoki</name>
         </author>
     </entry>
     <entry>
@@ -9691,70 +9706,6 @@ AI使いこなしマンは土から生えてくるわけではないのが問題
 結果としてYouTubeShortsに費やす時間が無くなったので、以前よりも有意義な時間を過ごせるようになったか、と言われると微妙なところはあるんですが……(ゴミカス…]]></summary>
         <author>
             <name>思い出したら書きます</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[今週のはてなブログランキング〔2026年2月第3週〕]]></title>
-        <id>hatenablog://entry/17179246901357941130</id>
-        <link href="https://blog.hatenablog.com/entry/2026/02/24/120000"/>
-        <updated>2026-02-24T03:00:00.000Z</updated>
-        <summary type="html"><![CDATA[はてなブログ独自の集計による人気記事のランキング。2026年2月15日（日）から2026年2月21日（土）〔2026年2月第3週〕のトップ30です*1。
-#
-    タイトル／著者とブックマーク
-    
-1
-    21世紀でもっとも過小評価されている映画50選 - YAMDAS現更新履歴
- by id:yomoyomo 
-    
-2
-    氷河期世代は完全に終わった。 - Everything you've ever Dreamed
- by id:Delete_All 
-    
-3
-    2025年のそこそこ良かった新作ゲームたち - 名馬であれば馬のうち
- by id:Monomane 
-    
-4
-    日本のYoutube動画でコメント欄が閉じられているとがっかりするのは自分だけ? - 世界のねじを巻くブログ
- by id:popmusik3141 
-    
-5
-    問い合わせ対応の全工程の自動化を AI で実現 - CRE による MCP から Agent Skills 移行の記録 - 弁護士ドットコム株式会社 Creators’ blog
- by id:bengo4 
-    
-6
-    Claude Codeで実践する仕様(スペック)駆動開発入門 - yoshidashingo
- by id:yoshidashingo 
-    
-7
-    食の好みや精神疾患まで、様々な要素が免疫系や腸内環境と関係している可能性を示す一冊──『脳の中の免疫、免疫の中の脳』 - 基本読書
- by id:huyukiitoichi 
-    
-8
-    CLIを書いてるなら、まずOTLPでtracesとeventsを吐けるようにするのがオススメ - Kengo's blog
- by id:eller 
-    
-9
-    Windowsの「左手」が変わ…]]></summary>
-        <author>
-            <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Androidアプリバージョンアップ（3.5.0）を行いました]]></title>
-        <id>hatenablog://entry/17179246901356536697</id>
-        <link href="https://staff.hatenablog.com/entry/2026/02/24/114229"/>
-        <updated>2026-02-24T02:42:29.000Z</updated>
-        <summary type="html"><![CDATA[本日、Androidアプリ（3.5.0）のバージョンアップを行い、以下の機能に対応しました
-編集モードに「ブログの設定に従う」項目を追加しました。この項目を選択すると、アプリで新規記事を作成するとき、Web版で設定している編集モードが適用されます。
-アプリからはてなフォトライフにアップロードされた画像を利用できるようになりました。ツールバーの画像ボタンをタップすると「Hatena Blog」フォルダのフォトライフ画像一覧*1が表示されます。こちらの機能追加に伴い、カメラ・ライブラリの画面デザインを変更しています。
-バージョン（3.5.0）では上記のほかいくつかの不具合修正や、内部処理の改善などを行っています。
-最新版のはてなブログAndroidアプリは以下よりご確認ください
-play.google.com
-今後ともはてなブログをどうぞよろしくお願いいたします。
-*1:https://f.hatena.ne.jp/my/Hatena%20Blog/]]></summary>
-        <author>
-            <name>はてなブログ開発ブログ</name>
         </author>
     </entry>
     <entry>
