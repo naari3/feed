@@ -78,6 +78,27 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">無題</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/05/26/194447" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>例のニュースとても残念ですね・・・。RS3の精神的なものはグラディウスVで満足するしかなさそうです。うーん、初音ミク斑鳩OST（狂気の沙汰（誉め言葉））でも聞いて心を落ち着かせますか・・・。
+www.youtube.com</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032035467197/1779796006" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://note.com/massmasaoki" target="_blank"
               rel="noopener">moroishimasaoki</a></h3>
           <section class="articles-per-source">
@@ -14247,82 +14268,6 @@ yes</span>
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
-              rel="noopener">diary</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">2026-02-25</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2026/02/26/100000" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>github.com
-github.com
-出雲Ruby会議01ではすみさんから「PicoRubyのリポジトリでSteepがうまく動かない」という相談をもらったので、それを眺めていた。
-Steepのバージョンを上げると、steep checkが型検査をせずに正常終了してしまうという問題を相談された。確かに明らかにおかしいコード(1 + &#x27;a&#x27;など)を書いたRubyファイルを型検査の対象としても、型エラーが起きない。
-しばらく眺めた後Claude Codeに相談したら、coreの型定義と矛盾した定義がある時にSteepが.rbファイルの型検査をスキップしてしまい、かつエラーなしと報告してしまうのが問題だった。具体的にはclass String &lt; Integer endのように、superclassが合わない定義があるとこの問題が発生するようだった。
-ということで、Claude Codeにrbs validateを実行しつつcoreの定義と矛盾あるいは重複する型定義を消していってもらった。
-この問題は、PicoRubyでのSteepのバージョンアップデートに伴って、rbs gemが提供するcoreの型定義ファイルを読み込むようにしたのが引き金となったようだった。元々PicoRubyではcoreの型定義を読み込んでいなかった。というのもPiccoRubyはCRubyと存在するメソッドが異なるため、rbs gemが提供するCRubyの型定義を読み込むと正確な型検査ができないため。
-しかしそこまで正確にやらなくて良いだろうということで、coreの型定義を使うようにした模様。その際に今までrbs gemが提供するcoreの代わりに定義していた型定義が、rbs gemのcoreの型定義とぶつかってしまっていた。coreの型定義を使わないのはかなりレアケースだと思うので、他に引っかかる人がいるかというと、あまりなさそうな気はする。
-
-プリンタニア・ニッポン ６【電子特典付き】
-
-作者:迷子
-イースト・プレス
-Amazon
-
-プリンタニア・ニッポン 6巻を読んだ。
-しばらく前に3巻まで読んでいたのだけど、同僚に勧めたいなと思って読み返して最新刊まで追いついた。同僚にも無事気に入ってもらえたようで嬉しい。
-ゆるふわなかわいさと管理社会の融合がすごく好き。
-ここしばらくプレイしていたDying Light 2のストーリーをクリアした。
-本当にユーザー体験が悪いゲームだった。プレイヤーをイライラさせつつ、そのストレスをゾンビを殴ることで昇華させようとしているデザインなのかなとすら思う。
-以下イライラポイント。多分まだまだある。
-マップメニュー上のアイコンにカーソルをあわせる判定がシビア
-武器切り替えショートカットが一般的なゲームと違う。数字キーで割り当てた装備に一発で切り替えられるゲームが多いと思うのだけど、Dying Light 2では1,2,3長押し+マウス4方向で装備選択をするようなショートカットになっている(1がサブウェポン、2がアイテム、3が武器)。
-武器などの切り替えをやった直後、何故かその場から移動できなくなる。数秒移動キーとかをガチャガチャやっていると移動できるのだけど、戦闘中はそのロスが致命的なので戦闘中に装備切り替えをすることに抵抗がある。
-一部の隠れ家で寝ると、起きたとき壁にめり込んで動けなくなる
-一度タイトル画面に戻った後プレイを再開しようとすると、無限ローディングになって強制終了するしかなくなる
-高層ビルを登った先にアイテムなどがあり、かつそこから飛んだ先にも何かしらのロケーションイベントがあることがある(ここまではいい)のだけど、ビルの上はファストトラベルポイントではない。ビルの上のアイテムを取り逃したり、ビルから飛んだ先のイベントを取り逃がすと、またビルを登り直さないといけない(かなりだるい)
-ムービーの会話単位スキップがあるのだけど、それを多用していると何が起こったかわからなくなりがち。会話をスキップしてたら突然味方が撃たれているなど。撃たれる直前からスキップ不可にするなど、動きがあるシーンをスキップしないようにしてほしい。
-暗所にいられる時間制限があり、暗所から出ると主人公がハアハア言って暗所から出たことをプレイヤーに知らせるのだけど、暗所の境界にいると主人公がずっとハアハアハアハア言っててうるさい。そしてそういう場所がそこそこある。
-前作と同名のキャラクターが特に関係ない別人として出てくる。
-銃器が本編と関係ない特殊クエスト(デイリーっぽい)でしか手に入らない。しかし序盤から何故か弾は拾えるし、ロード中Tipsでも「SMGは～」みたいなことを言ってくる。そのくせ特殊クエストはストーリー中盤まで受けられない。
-あと、ストーリーは前作のほうが良かったと思う。今作はずっと妹を探しているだけだし…。</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/0903f1a0da1748638b000f8cbcc2649bb2d3a338/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F517O02v1zTL._SL500_.jpg" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2026-02-25">2026-02-25</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2026.2.26</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026022645066/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Switch 2版グランツーリスモ7,ソニーがPSSR特許,Vue-After-Free v2.0,Vue-After-Free-Lite v2.0-lite,henloader_lp Henloader_Mod,PS5-BACKPORK-KITCHEN v2.3.1,PsVue‑Mod Tomoko-vue,ShadowMountPlus 1.6beta1,ps5-bar-tool v0.2,vaf_installer(Vue After Free Installer) Public Save,PS5 Payloads 1.8 MOD,Adrenaline v1772030290,ARK-4 v1771992159,nx.js v0.0.67,Breeze beta99t_pr13,NSP Auto Installer Maker 2.4,TinyWiiBackupManager v5.1.15,Joypad OS v1.9.0,ReXGlue SDK v0.2.0,MemoryEngine360 v1.2.2,SpaghettiKart Bolognese Alfa 1.0.0,vAmiga v4.4b8,ScePSX v0.2.1.1,PCSX2 v2.7.141,MAME 0.286→→→この記事の続きを読む
-GameGaz Daily 2026.2.26 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -16607,7 +16552,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-05-26T10:20:54.920Z">2026-05-26T10:20:54.920Z</time>
+    <time id="build-timestamp" datetime="2026-05-26T13:17:37.130Z">2026-05-26T13:17:37.130Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
