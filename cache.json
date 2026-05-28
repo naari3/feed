@@ -6477,21 +6477,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/009394dae514562689a93bafa23cf3d73537198f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260301%2F20260301010752.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901359242650",
-          "author": null,
-          "description": "昨日、FOLIOさんのオフィスでイベントがあった。めちゃくちゃ行きたかった!!! くやしい!!! のだが、資料がアップされてきているのでホクホクだ。ありがたい。\nそんな中でこのような資料があった:\n\n#FOLIO_Meetup 登壇させていただきました！こちら登壇資料です！楽しかったな。https://t.co/c9FGcFYP6Y\n— ntaguchi (@nozomitaguchi) 2026年2月27日\n   \n資料の本筋からは脱線するのだが、この中で以下のような記述があった:\nval sc = new java.util.Scanner(System.In)\nval n, t, a = sc.nextInt()\n\n\n\nこの記述には唸ってしまった。このコードを実行すると、ユーザが入力した行ごとにIntが読み込まれ、それぞれn、t、aにアサインされる。Scala、こんなことできるのか！\n1\n2\n3\n// => n = 1; t = 2; a = 3\n\n\n\nタネ明かしをしよう（人のコードなのに・・・）。このコードは、Iteratorの特性と、Scalaの構文の妙がうまく噛み合ったクールなコードだ。\nIterator\n他のたいていの言語がそうであるように、ScalaにもIteratorが実装されている。ScalaのIteratorの実装はJavaの標準ライブラリのIteratorとは独立しているが、基本的なコンセプトは同じだ。\nちょっとした座学をしよう。Iteratorは、next()とhasNext()を実装するだけで成り立つ便利なコレクションだ。たった2つのメソッドから成り立つのに、驚くべきほど強力な抽象を提供してくれる。Iterator[A]はIterableOnce[A]とIterableOnceOps[A, Iterator, Iterator[A]]のサブクラス…",
-          "link": "https://blog.3qe.us/entry/2026/02/28/013354",
-          "publishedOn": "2026-02-27T16:33:54.000Z",
-          "wordCount": null,
-          "title": "Scalaの複数変数定義とjava.util.Scannerを組み合わせると一気に値を読み取れて便利でかなりUNIX哲学を感じる",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901359242650/1772210034",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901359242650/1772210034"
         }
       ]
     },
@@ -6567,6 +6552,16 @@
       "feedUrl": "https://blog.lai.so/rss/",
       "siteUrl": "https://blog.lai.so/",
       "articles": [
+        {
+          "id": "6a16eddac3041a0001f1c684",
+          "author": "laiso",
+          "description": "以前OpenClawの何が特別なのか？で、セルフホストできる「自分専用のパーソナルアシスタント」としてOpenClawを取り上げ",
+          "link": "https://blog.lai.so/hermes-agent/",
+          "publishedOn": "2026-05-28T05:43:29.000Z",
+          "wordCount": 626,
+          "title": "OpenClawブームのその後とHermes Agent",
+          "imageUrl": null
+        },
         {
           "id": "6a0804d48fd5d9000127a47b",
           "author": "laiso",
@@ -7033,6 +7028,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45543",
+          "author": "mamosuke",
+          "description": "Steam Deck値上げ,PS5 Lua Loader v1.2-dev-6747a27,ps5upload v2.18.1,send_pkg-payload v1.2.2,Y2JB-Genny 0.1.0,exFAT Ripper v1.0,ps5-fw-spoof 26502462052,uds-trophy-unlocker v1.0.0,CheatRunner v0.11,CS2SX v0.4.3.826,Ultrahand Overlay 2.4.4,Horizon OC 2.4.0-rc3,3ds_junkdraw 0.5.0_pre3,3dslibris v2.7.2,Dusklight v1.3.1,BattleShip v1.2,PCSX2 v2.7.364,shadPS4 Pre-release-shadPS4-2026-05-27-1d885f2,Nintendo Classicsタイトル追加→→→この記事の続きを読む\nGameGaz Daily 2026.5.28 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026052845543/",
+          "publishedOn": "2026-05-28T04:50:16.000Z",
+          "wordCount": 1747,
+          "title": "GameGaz Daily 2026.5.28",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=45540",
           "author": "mamosuke",
