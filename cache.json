@@ -6450,21 +6450,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901366607173/1773857411"
-        },
-        {
-          "id": "hatenablog://entry/17179246901359598598",
-          "author": null,
-          "description": "Scalaのsbtなどでテストを実行していて、特定のテストだけ実行したりしなかったり、ということをやりたい、という状況は多い。その方法を解説する。\n復習: Scalaでのテスト\nテストにタグをつける\nタグの定義\nタグをつける\n実行するテストを選別する\nカスタムタスクを作成する\n実行\nまとめ\nここではテストフレームワークとしてScalaTestを利用する。\nこの記事のコードの完全版は以下のリポジトリで閲覧できる:\ngithub.com\n復習: Scalaでのテスト\nScalaTestでテストを実行するには、まずbuild.sbtにScalaTestへの依存性を追加する:\nval scala3Version = \"3.8.2\"\n\nlazy val root = project\n  .in(file(\".\"))\n  .settings(\n    name := \"scalatest-tagging-exercise\",\n    version := \"0.1.0-SNAPSHOT\",\n    scalaVersion := scala3Version,\n    libraryDependencies += \"org.scalactic\" %% \"scalactic\" % \"3.2.19\", // added\n    libraryDependencies += \"org.scalatest\" %% \"scalatest\" % \"3.2.19\" % Test // added\n  )\n\n\n\nここではテストスタイルとしてFunSuite styleを利用する。\nimport org.scalatest.funsuite.AnyFunSuite\n\nclass MySuite extends AnyFunSuite {\n  test(\"example test\") {\n    asser…",
-          "link": "https://blog.3qe.us/entry/2026/03/01/023443",
-          "publishedOn": "2026-02-28T17:34:43.000Z",
-          "wordCount": 2074,
-          "title": "Scalaでテストにタグ付けして、特定のタグのテストだけ実行したりしなかったりする",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/009394dae514562689a93bafa23cf3d73537198f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260301%2F20260301010752.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/009394dae514562689a93bafa23cf3d73537198f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260301%2F20260301010752.png"
         }
       ]
     },
@@ -6702,6 +6687,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=36643",
+          "author": "六田 佳祐",
+          "description": "はじめに エンジニアとして仕事を進めていくにあたって、様々な情報システムを使用したり、インターネット上に存在するサービスを利用することは多くあります。しかし、それらに関連する攻撃や、利用に際しての問題...",
+          "link": "https://eng-blog.iij.ad.jp/archives/36643",
+          "publishedOn": "2026-05-29T05:33:51.000Z",
+          "wordCount": null,
+          "title": "意識をもってシステムを使う【新人エンジニアに役立ちそうなTips】",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=36497",
           "author": "IIJ Engineers Blog編集部",

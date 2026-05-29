@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-29T04:35:54.915Z</updated>
+    <updated>2026-05-29T06:24:13.882Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[意識をもってシステムを使う【新人エンジニアに役立ちそうなTips】]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=36643</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/36643"/>
+        <updated>2026-05-29T05:33:51.000Z</updated>
+        <summary type="html"><![CDATA[はじめに エンジニアとして仕事を進めていくにあたって、様々な情報システムを使用したり、インターネット上に存在するサービスを利用することは多くあります。しかし、それらに関連する攻撃や、利用に際しての問題...]]></summary>
+        <author>
+            <name>六田 佳祐</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-05-28]]></title>
         <id>hatenablog://entry/14945776032036015422</id>
@@ -9502,49 +9512,6 @@ news.denfaminicogamer.jp制作側も明確な差別化要素として無理や�
 GameGaz Daily 2026.3.1 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Scalaでテストにタグ付けして、特定のタグのテストだけ実行したりしなかったりする]]></title>
-        <id>hatenablog://entry/17179246901359598598</id>
-        <link href="https://blog.3qe.us/entry/2026/03/01/023443"/>
-        <updated>2026-02-28T17:34:43.000Z</updated>
-        <summary type="html"><![CDATA[Scalaのsbtなどでテストを実行していて、特定のテストだけ実行したりしなかったり、ということをやりたい、という状況は多い。その方法を解説する。
-復習: Scalaでのテスト
-テストにタグをつける
-タグの定義
-タグをつける
-実行するテストを選別する
-カスタムタスクを作成する
-実行
-まとめ
-ここではテストフレームワークとしてScalaTestを利用する。
-この記事のコードの完全版は以下のリポジトリで閲覧できる:
-github.com
-復習: Scalaでのテスト
-ScalaTestでテストを実行するには、まずbuild.sbtにScalaTestへの依存性を追加する:
-val scala3Version = "3.8.2"
-
-lazy val root = project
-  .in(file("."))
-  .settings(
-    name := "scalatest-tagging-exercise",
-    version := "0.1.0-SNAPSHOT",
-    scalaVersion := scala3Version,
-    libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.19", // added
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19" % Test // added
-  )
-
-
-
-ここではテストスタイルとしてFunSuite styleを利用する。
-import org.scalatest.funsuite.AnyFunSuite
-
-class MySuite extends AnyFunSuite {
-  test("example test") {
-    asser…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
