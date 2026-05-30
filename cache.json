@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032036875350",
+          "author": null,
+          "description": "qiita.com\n不具合があるらしいのですが、\n個人的に調査していてそこまで問題になるような挙動にはまだ遭遇していないので、\nHomebrew用途であればある程度は使い道があるかと思われます。\nBIOSのSOUNDドライバはまさにそのとおりで、なぜ今までスルーしていたんだというか、コロンブスの卵の発見ですよー！バグあるからスルーでいいか、じゃなくて！バグの影響範囲内で遊ぶべきでしょ！私！！ばかばかー！あ”””ーーなんて恥ずかしい！！\n・・・ということで急いで取り掛かりました。テンションおかしくなってます、すみません。久しぶりなハッピーハッキングタイムでして、Gemini先生がいい感じの曲も用意してくれました。今年一激ヤバサンプルコードとなっています。libgbaをstaticリンクしてるのでこのプロジェクトはGPLライセンスですけど、特に気にしませんので好きに煮るなり焼くなりしてください。というかこんなmin, maxの自作関数のような初歩でGPLもないでしょう。記事の著者の方はこんなblog見ていないでしょうけど、きっかけを教えてくれてありがとうございました。めっちゃくちゃ感謝です！\ngithub.com\n\nとりあえず私の所感。\n１．リバーブはノイジー。OFF推奨\n２．CPU使用率激ヤバ谷園",
+          "link": "https://akkera102.hatenablog.com/entry/2026/05/30/185403",
+          "publishedOn": "2026-05-30T09:54:03.000Z",
+          "wordCount": 506,
+          "title": "137_bios_snd_testを公開しました",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/6e2d5896e0e1380f37d843ecea710fe05fe6123b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260530%2F20260530185355.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/6e2d5896e0e1380f37d843ecea710fe05fe6123b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260530%2F20260530185355.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032035467197",
           "author": null,
           "description": "例のニュースとても残念ですね・・・。RS3の精神的なものはグラディウスVで満足するしかなさそうです。うーん、初音ミク斑鳩OST（狂気の沙汰（誉め言葉））でも聞いて心を落ち着かせますか・・・。\nwww.youtube.com",
@@ -6331,6 +6346,21 @@
       "feedUrl": "https://blog.3qe.us/rss",
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032036884475",
+          "author": null,
+          "description": "メモです\nproject/projectを削除する\n\n\nsbt 2に対応していない古いbloopを読み込もうとしてコケるため\nmetals.sbtで最新のbloopを指定してやる\nproject/build.propertiesで最新のsbt 2を指定する",
+          "link": "https://blog.3qe.us/entry/2026/05/30/192701",
+          "publishedOn": "2026-05-30T10:27:01.000Z",
+          "wordCount": null,
+          "title": "Scalaでsbt 2で遊ぶときの手順メモ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032036884475/1780136821",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032036884475/1780136821"
+        },
         {
           "id": "hatenablog://entry/14945776032035126649",
           "author": null,
