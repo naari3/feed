@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-05-31T11:30:25.586Z</updated>
+    <updated>2026-05-31T12:23:05.253Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[音喜利の回答を100個考える]]></title>
+        <id>https://note.com/sweets_farting/n/nb2b21a490dad</id>
+        <link href="https://note.com/sweets_farting/n/nb2b21a490dad"/>
+        <updated>2026-05-31T11:47:28.000Z</updated>
+        <summary type="html"><![CDATA[参加し損ない損なったのでいっぱい考える
+お題
+続きをみる]]></summary>
+        <author>
+            <name>角煮サイダ一</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[gba-hq-mixer MITライセンスに変更]]></title>
         <id>hatenablog://entry/14945776032037270405</id>
@@ -9447,16 +9459,6 @@ Claude Code に一句詠ませるようにした。とても体験がいい。
         <summary type="html"><![CDATA[はじめまして！ 石間伏（ISHIMABUSHI）と申します。 普段はサービスコーディネータとして活動しています。 サービスコーディネータは、IIJサービスをご契約いただいたお客様の導入プロジェクトの...]]></summary>
         <author>
             <name>石間伏</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「定時実行」と「定期実行」の実装ガイド]]></title>
-        <id>https://blog.jxck.io/entries/2026-03-03/scheduled-and-periodic-execution.html</id>
-        <link href="https://blog.jxck.io/entries/2026-03-03/scheduled-and-periodic-execution.html"/>
-        <updated>2026-03-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[「毎時何時に実行」や「何時間ごとに実行」といった、タスクスケジューリングを実装する機会は少なくない。タスクを実装し cron に登録すれば、動くものを実装するのは難しくない。しかし、ひとたびタスクが思うように動かなかった途端、隠れていた要件が牙を剥く。一度でも痛い目を見た人は、それを経験的に疑い「まず色々と前提を確かめよう」という気持ちになり、例外処理を事前に固めることができる。今回は、実装方法そのものというよりも、「実装する前に確認すべき例外事項」を個人の経験を元に解説していく。]]></summary>
-        <author>
-            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
