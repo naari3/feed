@@ -3107,6 +3107,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032037557437",
+          "author": null,
+          "description": "tex記法（はてな記法）のアップデートを行いました。その影響で既存の数式の一部で正常に表示されなくなることが想定されます。以下の機能を利用している場合は数式の変更をお願いします。\n\\bbFont{...} (今後は\\mathbbをご利用下さい)\n\\scr{...} (今後は\\mathscrをご利用下さい)",
+          "link": "https://staff.hatenablog.com/entry/2026/06/01/150746",
+          "publishedOn": "2026-06-01T06:07:46.000Z",
+          "wordCount": null,
+          "title": "tex記法のアップデートに伴い、一部の拡張機能の変更をお願いします",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032037557437/1780294067",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032037557437/1780294067"
+        },
+        {
           "id": "hatenablog://entry/14945776032035728104",
           "author": null,
           "description": "一部のはてなブログ / はてなCMSにて、公開環境にアクセスできないケースが発生していました。\n該当期間\n\n上記該当期間のうち、2026年5月27日 8:00ごろから顕在化した事を確認しております。\n原因はセキュリティ機構の誤検知によるもので、現在は解消しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",

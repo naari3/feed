@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-01T05:32:43.593Z</updated>
+    <updated>2026-06-01T07:35:30.241Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[tex記法のアップデートに伴い、一部の拡張機能の変更をお願いします]]></title>
+        <id>hatenablog://entry/14945776032037557437</id>
+        <link href="https://staff.hatenablog.com/entry/2026/06/01/150746"/>
+        <updated>2026-06-01T06:07:46.000Z</updated>
+        <summary type="html"><![CDATA[tex記法（はてな記法）のアップデートを行いました。その影響で既存の数式の一部で正常に表示されなくなることが想定されます。以下の機能を利用している場合は数式の変更をお願いします。
+\bbFont{...} (今後は\mathbbをご利用下さい)
+\scr{...} (今後は\mathscrをご利用下さい)]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[MP2k講演]]></title>
         <id>hatenablog://entry/14945776032037522344</id>
