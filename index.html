@@ -78,6 +78,34 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">いまさらMp2k学習</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/06/02/191700" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>勉強したことをまとめておこうと思います。思考垂れ流し注意（汗。
+・gba-hq-mixerはhomebrewの為というより、ハックロムの為のアセンブリファイルです。現にヘッダが抜けているのはそのためで、しかもIWRAMに配置する必要があります。既存のドライバより大きいからはめ込む前に別コードもIWRAMから追い出さないといけません・・・地獄体験ツアー？サラッと書いてあるところが恐ろしい（＾＾；。
+・Mp2kは誕生の性質上、「容量と速度の節約」「割り込み処理」ということを主眼に置いているのでデータ構造が犠牲になっているように思います。一言でいうとポインタ地獄。ハックロムはどうしているのかなーと思ったらリポインタとか、リオフセットして苦労されているようでした。プログラマーじゃなきゃわからんって・・・。
+・全体の通しがわかるのはloveemuさんの解説ページですけれど、私は辛うじて手を動かして理解できた口なのでパっと見ただけですと苦しいかもしれません。以下、ページの図解解説です。
+・ROMとRAMに分かれていて、左がROM、右がRAMです。ROMは曲データ、RAMは変数（IWRAM）です。当時、Mp2kはライブラリファイル形式で配布されていました。変数は使用者が保持してね！というスタイルで基本、関数はワークエリアをポインタ渡しにします。
+・ROM
+・RAM（IWRAM）
+・RAM（IWRAM）ミキシング
+チャンネルについて補足しますと、チャンネルは発声データのことをいいます。トラックは楽譜で、例として「ド（休）レ（休）ミ（休）」というのがあったとします。時間経過のチャンネル占有は「１→０→１→０→１」です。ところが「ドーレーミーー」とハモったときのチャンネルは「１→２→３→３→３」です。チャンネル＝トラックではないということと、ハモリだけでなく余韻もチャンネルを消費するということは知っておくといいかと思います。リリースは短めに。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032038005040/1780398605" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://championcross.jp/series/899dda204c3f2" target="_blank"
               rel="noopener">僕の心のヤバイやつ【最新話無料】</a></h3>
           <section class="articles-per-source">
@@ -16500,7 +16528,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-06-02T09:20:36.851Z">2026-06-02T09:20:36.851Z</time>
+    <time id="build-timestamp" datetime="2026-06-02T11:26:03.082Z">2026-06-02T11:26:03.082Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
