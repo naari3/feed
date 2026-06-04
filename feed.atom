@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-04T09:13:47.463Z</updated>
+    <updated>2026-06-04T11:00:47.966Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[いまさらMp2k学習2]]></title>
+        <id>hatenablog://entry/14945776032038713508</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/06/04/183403"/>
+        <updated>2026-06-04T09:34:03.000Z</updated>
+        <summary type="html"><![CDATA[前回概要をひと回りしたので、コードを雑に読んでいく回想録です。
+・gba-hq-mixerのファイル開いてスクロールしたのですが・・・SoundMainRAM関数しかない！？でかなりビックリ。
+・一式入っていないのは・・・ようするに関数のパッチだったわけなんですね。hqの正体ようやく理解しました。勘違いしてた＆一式じゃないんかーい！という魂の叫び。orz
+・わかりやすくいうと
+・m4aSoundMainはBIOS版でいうところのswi 0x1C（SoundDriverMain）に当たります。
+・自作アプリを作りたいなら逆汗コード（m4a.c）は必要かもなあ。といってもこれは仁義に反するので非公開で遊ぶしかできないなあ・・・。
+・初期化については、m4aSoundInit内でCpuSet呼び出ししています。詳しく言うと、まずs8 SoundMainRAM_Buffer配列をIWRAMにグローバル宣言。ROMにあるSoundMainRAMコードをCpuSetで配列にコピーしています。
+・呼び出しは先程のSoundMainの中で、配列の先頭を関数呼び出ししています。
+・使用手順はBIOS版と変わらないはず。
+・うーん、BIOS版ならSoundDriverMain（0x1C）をIWRAMにコピーして、hqへパッチできないだろうか・・・。構造体は共通っぽいけど、これなら最小で使えるはず。といってhqはステレオ専用っぽいからなあ。
+・BIOS版のアドレス（間違っていたらすみません）
+というところで今日は早めに寝ます。スヤーできない！]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[蔵書管理用のアプリを開発（IIJ図書館）]]></title>
         <id>https://eng-blog.iij.ad.jp/?p=36716</id>
