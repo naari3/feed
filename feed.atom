@@ -2,10 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-05T04:36:37.377Z</updated>
+    <updated>2026-06-05T06:29:09.505Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[入力補助ツールバーの【見出し】に「特大見出し（H2）」「特小見出し（H6）」を追加しました]]></title>
+        <id>hatenablog://entry/14945776032038897792</id>
+        <link href="https://staff.hatenablog.com/entry/2026/06/05/145729"/>
+        <updated>2026-06-05T05:57:29.000Z</updated>
+        <summary type="html"><![CDATA[入力補助ツールバーの「見出し」で、新たに「特大見出し（H2）」と「特小見出し（H6）」が使えるようになりました。H2 〜 H6 の5段階から選べるので、記事の構成に合わせて見出しの階層を調整しやすくなります。
+【選択できる見出しレベル】
+特大見出し（H2）　← 新たに追加
+大見出し（H3）
+中見出し（H4）
+小見出し（H5）
+特小見出し（H6）　← 新たに追加
+Markdownモードでは ## から ######、みたままモードではドロップダウンから直接選択できます。
+本機能はすべてのユーザー（個人・法人）にご利用いただけます。
+ぜひご活用ください。
+※ H1 は記事タイトルに使用されるため、選択肢には含まれません。
+※ はてな記法モードでH2・H6 を使いたい場合は、HTMLタグを直接入力してください。
+補足
+Q. これまでなぜH2が使えなかったのですか？
+A. はてなブログは「はてなダイアリー」からの記事移行をスムーズに行えるよう、見出し構造をダイアリー時代の仕様に合わせて設計していました。今回、より多くの場面でお使いいただけるよう、H2からの選択に対応しました。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[バッテリー交換可能な新型Switch 2  欧州専用モデルに]]></title>
         <id>https://gamegaz.com/?p=45581</id>
