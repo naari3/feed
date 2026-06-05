@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-05T12:00:12.149Z</updated>
+    <updated>2026-06-05T13:18:14.429Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[あるプログラマの若かりし頃の奇行集]]></title>
+        <id>hatenablog://entry/14945776032038785598</id>
+        <link href="https://satoru-takeuchi.hatenablog.com/entry/2026/06/05/221440"/>
+        <updated>2026-06-05T13:14:40.000Z</updated>
+        <summary type="html"><![CDATA[昔は自分がプログラマとして成長するためには何が必要なのかを悩み、悩みはするが深く考えずに思いつきで奇行に走るということをよくしていました。今になって振り返る微笑ましくて面白かったので、いくつかを紹介します。十中八九読者の今後の人生に役立たないですが、失笑しながら読んでもらえれば幸いです。
+gzipコマンドの全オプションを丸暗記しようとする
+最初からプログラミングとあんまり関係ない話です。
+Linuxを触り始めた頃にgzipコマンドの存在を知り、「全てのオプションを暗記して完全理解したい」と思いました。今覚えば、やるとしても他にもっと別のコマンドがあるだろうとは思いますが、たまたま目の前にあったgzipに飛びついてしまいました。
+gzipのオプションは見たことがある人なら知っていると思いますが、めちゃくちゃ多いです。しかも圧縮アルゴリズムの名前は、少なくとも当時の私には理解できない謎の文字列でした。man gzipを研究室のレーザープリンタで印刷したのを覚えています。
+その後どうなかったかというと、数日後に飽きて、あっさり止めました。
+GNU Helloを熟読する
+GNU Helloは、いわゆるHello WorldプログラムをGNUのお作法に則って書いたものです。そのようなお作法で他のソフトウェアを作る際に参考にできるようになっています。多言語化されていたり、たくさんのオプションをサポートしていたりと、かなり凝っています。コードのフォーマットはもちろんGNUです。
+このソフトウェアを知ったとき、「なんかしらんがオープンソースの人はみんなこういうスタイルで開発しているらしいからマスターせねば」と固く信じて写経しました。「これ読みにくいし書きにくいし辛いなあ」と思いながら完遂したものの、全然しっくりこなくて面白くなくて、全てを忘れました。そしてオープンソースというかこれフリーソ…]]></summary>
+        <author>
+            <name>覚書</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[入力補助ツールバーの【見出し】に「特大見出し（H2）」「特小見出し（H6）」を追加しました]]></title>
         <id>hatenablog://entry/14945776032038897792</id>
