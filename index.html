@@ -78,6 +78,32 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">いまさらMp2k学習3</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/06/08/191239" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今日はMp2kのSongTableの検出方法のコードを追ってみます。思考垂れ流し注意。
+Gemini先生曰く「テーブルといっても、プログラムで介入される音データもあるよ、そういうのはアドレスがわからない。99%はSongTableから引っ張ってくるのでまず最初に見つけるとしたらそこだねー。使いまわしがいっぱいあるのでハッシュ一時保存しまくりだよ。サンプルは同じでもADSRが違ったりするので、サンプルだけのハッシュを持つのは意味ないよ」など手厳しい。包括したハッシュじゃないとだめかもしれません。
+テーブルの大きさが不明なので偵察でポインタ先を除いて、その構造体の一部変数をピックアップして範囲内か確認したり、テーブルの１つ前のオフセットを保持して、次のオフセットと比較し、ポインタアドレスが大きくなっているか確認するとか。うげー大変です。
+https://github.com/ipatix/m4a2s/blob/master/m4a2s/Index.cs#L67
+https://github.com/loveemu/saptapper/blob/master/src/saptapper/mp2k_driver.cpp#L162
+全部ではないですけどデーターベースを見つけました。
+https://github.com/Thysbelon/gba-mus-ripper/blob/master/data/MP2K.yaml#L310</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032040220145/1780918133" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
               rel="noopener">nomolkのブログ</a></h3>
           <section class="articles-per-source">
@@ -14284,31 +14310,6 @@ serakinoko.jp
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2026-03-10">2026-03-10</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2026.3.11</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026031145123/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Luac0re 1.0,PPSSPP 1.20.2,PeaSyo v1.6.1,neutrino v1.8.0,NetPass v2.0.0,WiiUDownloader v2.81,Azahar 2125.0-alpha6,nullDC4Wii alpha0.08,shadPS4 2026-03-10-3ee06a9,shadPS4-QtLauncher-2026-03-10-40bfed6,PCSX2 v2.7.170,ARMSX2 Nightly Build (DEBUG – 1.0.8) – 20260310-1857→→→この記事の続きを読む
-GameGaz Daily 2026.3.11 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2026-02-27">2026-02-27</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -16618,7 +16619,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-06-08T09:29:24.966Z">2026-06-08T09:29:24.966Z</time>
+    <time id="build-timestamp" datetime="2026-06-08T11:32:48.990Z">2026-06-08T11:32:48.990Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
