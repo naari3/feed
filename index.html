@@ -74,6 +74,69 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2026-06-11">2026-06-11</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">いまさらMp2k学習4</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/06/11/122038" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>前回と若干被るのはご了承ください。
+・GSFとは？GBAエミュレータの簡易版（サウンド機能のみ）を使って、音楽や効果音を再生します。foobar2000のプラグインなどが手軽ですね。
+・GSFファイルの中身はゲームROMの音楽ドライバと音データです。切り貼りや抽出でない方法が主流と思われます。
+・loveemuさんの文章をパクッてしまいますけど、MP2kは基本的には4つの関数を使用します。
+void m4aSoundInit(void);
+void m4aSoundVSync(void);
+void m4aSoundMain(void);
+void m4aSongNumStart(u16 n);
+配置図を雑に書くとこんな感じです。
+void main()
+{
+	m4aSoundInit();
+
+	irqSetVblank(&amp;m4aSoundVSync);
+
+	u32 songNo &#x3D; 0x00;
+	m4aSongNumStart(songNo);
+
+	for(;;)
+	{
+		waitVblank();
+
+		m4aSoundMain();
+	}
+}
+・本物のスタブはこちらになります。
+・ツールはSaptapperとgsfoptの２種類。
+・Saptapperは、コマンドラインでGBAのロムを指定します。実行するとgsflibを１つ、minigsfを複数生成されます。gsflibはドライバと音データ一式、minigsfはパッチです。ここではゼロで埋めたりしません。
+・gsflibとminigsfはどちらもgsfフォーマットです。もともとプレステ音楽を聴く為のフォーマットだったのですが、流用しているそうです。仕様についてはこちら。
+https://gsf.caitsith2.net/gsf%20spec.txt
+・gsfoptは、gsflibのゼロ埋めをしてくれます。
+・minigsfは、gsflibへのパッチと曲タイトルや、lib&#x3D;hoge.gsflibなどのタグ指定をします。
+・再生するときの流れ。まずgsflibのpsfヘッダを見て、展開先アドレスを調べます。普通なら0800:0000hに解凍します。
+・minigsfも同じように解凍、上書きします。基本的にnum_songindexアドレスへのパッチになります。１か２バイトのパッチ。
+・minigsfは、m4aSongNumStartの引数songNo（num_songindex）を書き換えているだけです。
+・m4aSoundInitは引数がないのに、内部でグローバル変数のソングテーブルを参照しているんですよね。aファイルなのにソングテーブルは使用者側が用意しておくってできるのかな？よくわかりません。
+長々とGSFの仕様を見てきましたけど、これを知っとくとドライバの挙動がわかってすっきりしますね。2000年代なら当たり前のようにホームページに書いてあったことかもしれませんけど、今は消えまくってますからねー。デジタル考古学のジャンルかと思ったりしました。
+GBAのサウンドドライバを調べた一覧がヤバすぎます。バイナリを入念に調べていったんだろうなあ・・・。
+vgmpf.com</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032041150703/1781153083" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2026-06-10">2026-06-10</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -16686,7 +16749,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-06-11T03:01:28.977Z">2026-06-11T03:01:28.977Z</time>
+    <time id="build-timestamp" datetime="2026-06-11T05:29:39.279Z">2026-06-11T05:29:39.279Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

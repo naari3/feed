@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032041150703",
+          "author": null,
+          "description": "前回と若干被るのはご了承ください。\n・GSFとは？GBAエミュレータの簡易版（サウンド機能のみ）を使って、音楽や効果音を再生します。foobar2000のプラグインなどが手軽ですね。\n・GSFファイルの中身はゲームROMの音楽ドライバと音データです。切り貼りや抽出でない方法が主流と思われます。\n・loveemuさんの文章をパクッてしまいますけど、MP2kは基本的には4つの関数を使用します。\nvoid m4aSoundInit(void);\nvoid m4aSoundVSync(void);\nvoid m4aSoundMain(void);\nvoid m4aSongNumStart(u16 n);\n配置図を雑に書くとこんな感じです。\nvoid main()\n{\n\tm4aSoundInit();\n\n\tirqSetVblank(&m4aSoundVSync);\n\n\tu32 songNo = 0x00;\n\tm4aSongNumStart(songNo);\n\n\tfor(;;)\n\t{\n\t\twaitVblank();\n\n\t\tm4aSoundMain();\n\t}\n}\n・本物のスタブはこちらになります。\n・ツールはSaptapperとgsfoptの２種類。\n・Saptapperは、コマンドラインでGBAのロムを指定します。実行するとgsflibを１つ、minigsfを複数生成されます。gsflibはドライバと音データ一式、minigsfはパッチです。ここではゼロで埋めたりしません。\n・gsflibとminigsfはどちらもgsfフォーマットです。もともとプレステ音楽を聴く為のフォーマットだったのですが、流用しているそうです。仕様についてはこちら。\nhttps://gsf.caitsith2.net/gsf%20spec.txt\n・gsfoptは、gsflibのゼロ埋めをしてくれます。\n・minigsfは、gsflibへのパッチと曲タイトルや、lib=hoge.gsflibなどのタグ指定をします。\n・再生するときの流れ。まずgsflibのpsfヘッダを見て、展開先アドレスを調べます。普通なら0800:0000hに解凍します。\n・minigsfも同じように解凍、上書きします。基本的にnum_songindexアドレスへのパッチになります。１か２バイトのパッチ。\n・minigsfは、m4aSongNumStartの引数songNo（num_songindex）を書き換えているだけです。\n・m4aSoundInitは引数がないのに、内部でグローバル変数のソングテーブルを参照しているんですよね。aファイルなのにソングテーブルは使用者側が用意しておくってできるのかな？よくわかりません。\n長々とGSFの仕様を見てきましたけど、これを知っとくとドライバの挙動がわかってすっきりしますね。2000年代なら当たり前のようにホームページに書いてあったことかもしれませんけど、今は消えまくってますからねー。デジタル考古学のジャンルかと思ったりしました。\nGBAのサウンドドライバを調べた一覧がヤバすぎます。バイナリを入念に調べていったんだろうなあ・・・。\nvgmpf.com",
+          "link": "https://akkera102.hatenablog.com/entry/2026/06/11/122038",
+          "publishedOn": "2026-06-11T03:20:38.000Z",
+          "wordCount": 535,
+          "title": "いまさらMp2k学習4",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032041150703/1781153083",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032041150703/1781153083"
+        },
+        {
           "id": "hatenablog://entry/14945776032040220145",
           "author": null,
           "description": "今日はMp2kのSongTableの検出方法のコードを追ってみます。思考垂れ流し注意。\nGemini先生曰く「テーブルといっても、プログラムで介入される音データもあるよ、そういうのはアドレスがわからない。99%はSongTableから引っ張ってくるのでまず最初に見つけるとしたらそこだねー。使いまわしがいっぱいあるのでハッシュ一時保存しまくりだよ。サンプルは同じでもADSRが違ったりするので、サンプルだけのハッシュを持つのは意味ないよ」など手厳しい。包括したハッシュじゃないとだめかもしれません。\nテーブルの大きさが不明なので偵察でポインタ先を除いて、その構造体の一部変数をピックアップして範囲内か確認したり、テーブルの１つ前のオフセットを保持して、次のオフセットと比較し、ポインタアドレスが大きくなっているか確認するとか。うげー大変です。\nhttps://github.com/ipatix/m4a2s/blob/master/m4a2s/Index.cs#L67\nhttps://github.com/loveemu/saptapper/blob/master/src/saptapper/mp2k_driver.cpp#L162\n全部ではないですけどデーターベースを見つけました。\nhttps://github.com/Thysbelon/gba-mus-ripper/blob/master/data/MP2K.yaml#L310",
