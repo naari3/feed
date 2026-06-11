@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-10T23:28:45.311Z</updated>
+    <updated>2026-06-11T00:29:36.575Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.6.11]]></title>
+        <id>https://gamegaz.com/?p=45606</id>
+        <link href="https://gamegaz.com/2026061145606/"/>
+        <updated>2026-06-10T23:50:08.000Z</updated>
+        <summary type="html"><![CDATA[Y2JB-P2JB-bdj_unpatch v1.4-autoloader,ps5_y2jb_autoloader v0.8-a0146a2,send_pkg-payload v1.5.1,ps5-bdjb-autoloader v1.3.1-0985214,ps5upload v3.0.0,MkPFS 0.0.8,elf-arsenal v1.6.18,DS8 Drumstream v0.1,MinivMac DSi,PKSM 10.3.0,devkitA64 r30,devkitPPC r50,devkitARM r68,RPCS3,BattleShip v1.3,nullDC4Wii alpha 0.28,PCSX2 v2.7.407,ARMSX2-iOS 2.1 Release 3,ARMSX2-MacOS 2.1 Release 3,ARMSX2 v2.1a,shadPS4 Pre-release-shadPS4-2026-06-10-b3a9e20→→→この記事の続きを読む
+GameGaz Daily 2026.6.11 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[20260610]]></title>
         <id>https://note.com/banfuture9/n/n88d1dbe90d99</id>
@@ -9579,24 +9590,6 @@ GameGaz Daily 2026.3.14 first appeared on 大人のためのゲーム講座.]]><
 【噂】PlayStation携帯機 2027年発売予定のまま開発中 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Agent Safehouseを使い出した]]></title>
-        <id>hatenablog://entry/17179246901364542296</id>
-        <link href="https://blog.nishimu.land/entry/2026/03/13/212149?utm_source=feed"/>
-        <updated>2026-03-13T12:21:49.000Z</updated>
-        <summary type="html"><![CDATA[Claude Codeに--permission-mode=autoが追加されてだいぶ安心感は増したけど、結局LLMが判断しているので完璧ではない。Agent SafehouseはmacOSのsandbox-execを使って、カーネルレベルでエージェントのファイルアクセスを制限してくれるやつ。LLMの判断に関係なく、OSが強制的にブロックしてくれる。
-brew install eugene1g/safehouse/agent-safehouse
-safehouse -- claude --dangerously-skip-permissions
-
-
-
-sandbox-execはmacOSに元々あるサンドボックスの仕組みで、カーネルがシステムコールの段階でアクセスを拒否する。manページにはDEPRECATEDと書いてあるけど、CLI向けの代替がないので現役で動いている（App Sandboxはアプリ向け）。
-safehouseはこのsandbox-execにdeny-firstのポリシーを食わせるやつで、作業ディレクトリ以外はすべてブロックされる（~/.sshや~/.awsにはもちろん触れない）。万能なセキュリティ境界ではなく防御層の一つだけど、--dangerously-skip-permissionsを安心して使えるようになるのが大きい。内部ではSandbox Profile Language（SBPL）でポリシーを組み立てていて、safehouse --stdoutで生成されたプロファイルを確認できる。実装の99.8%がシェルスクリプトなので読みやすい。
-面白いのが公式サイトにLLM向けのプロンプトテンプレートが置いてあって、エージェントに自分の環境を検出させてカスタムプロファイルを生成させることができる。サンドボックスの設定をサンドボックスされる側に作らせるという発…]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>

@@ -1013,21 +1013,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/31388afe58eb7a57bc5a160277797efdf068bce3/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20260315%2F20260315192940.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901364542296",
-          "author": null,
-          "description": "Claude Codeに--permission-mode=autoが追加されてだいぶ安心感は増したけど、結局LLMが判断しているので完璧ではない。Agent SafehouseはmacOSのsandbox-execを使って、カーネルレベルでエージェントのファイルアクセスを制限してくれるやつ。LLMの判断に関係なく、OSが強制的にブロックしてくれる。\nbrew install eugene1g/safehouse/agent-safehouse\nsafehouse -- claude --dangerously-skip-permissions\n\n\n\nsandbox-execはmacOSに元々あるサンドボックスの仕組みで、カーネルがシステムコールの段階でアクセスを拒否する。manページにはDEPRECATEDと書いてあるけど、CLI向けの代替がないので現役で動いている（App Sandboxはアプリ向け）。\nsafehouseはこのsandbox-execにdeny-firstのポリシーを食わせるやつで、作業ディレクトリ以外はすべてブロックされる（~/.sshや~/.awsにはもちろん触れない）。万能なセキュリティ境界ではなく防御層の一つだけど、--dangerously-skip-permissionsを安心して使えるようになるのが大きい。内部ではSandbox Profile Language（SBPL）でポリシーを組み立てていて、safehouse --stdoutで生成されたプロファイルを確認できる。実装の99.8%がシェルスクリプトなので読みやすい。\n面白いのが公式サイトにLLM向けのプロンプトテンプレートが置いてあって、エージェントに自分の環境を検出させてカスタムプロファイルを生成させることができる。サンドボックスの設定をサンドボックスされる側に作らせるという発…",
-          "link": "https://blog.nishimu.land/entry/2026/03/13/212149?utm_source=feed",
-          "publishedOn": "2026-03-13T12:21:49.000Z",
-          "wordCount": 431,
-          "title": "Agent Safehouseを使い出した",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901364542296/1773404693",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901364542296/1773404693"
         }
       ]
     },
@@ -7235,6 +7220,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45606",
+          "author": "mamosuke",
+          "description": "Y2JB-P2JB-bdj_unpatch v1.4-autoloader,ps5_y2jb_autoloader v0.8-a0146a2,send_pkg-payload v1.5.1,ps5-bdjb-autoloader v1.3.1-0985214,ps5upload v3.0.0,MkPFS 0.0.8,elf-arsenal v1.6.18,DS8 Drumstream v0.1,MinivMac DSi,PKSM 10.3.0,devkitA64 r30,devkitPPC r50,devkitARM r68,RPCS3,BattleShip v1.3,nullDC4Wii alpha 0.28,PCSX2 v2.7.407,ARMSX2-iOS 2.1 Release 3,ARMSX2-MacOS 2.1 Release 3,ARMSX2 v2.1a,shadPS4 Pre-release-shadPS4-2026-06-10-b3a9e20→→→この記事の続きを読む\nGameGaz Daily 2026.6.11 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026061145606/",
+          "publishedOn": "2026-06-10T23:50:08.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.6.11",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=45602",
           "author": "mamosuke",
