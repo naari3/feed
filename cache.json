@@ -91,6 +91,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032041626987",
+          "author": null,
+          "description": "前にblogで書いた記事をwikiに書きました。内容は激薄ですけど、でもやっぱり考えとかないといけない部分でもあるので、トピックとしては悪くないと思っています。\nakkera102.sakura.ne.jp",
+          "link": "https://akkera102.hatenablog.com/entry/2026/06/12/194257",
+          "publishedOn": "2026-06-12T10:42:57.000Z",
+          "wordCount": 500,
+          "title": "セーブデータのチェックサム",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032041626987/1781263519",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032041626987/1781263519"
+        },
+        {
           "id": "hatenablog://entry/14945776032041150703",
           "author": null,
           "description": "前回と若干被るのはご了承ください。\n・GSFとは？GBAエミュレータの簡易版（サウンド機能のみ）を使って、音楽や効果音を再生します。foobar2000のプラグインなどが手軽ですね。\n・GSFファイルの中身はゲームROMの音楽ドライバと音データです。切り貼りや抽出でない方法が主流と思われます。\n・loveemuさんの文章をパクッてしまいますけど、MP2kは基本的には4つの関数を使用します。\nvoid m4aSoundInit(void);\nvoid m4aSoundVSync(void);\nvoid m4aSoundMain(void);\nvoid m4aSongNumStart(u16 n);\n配置図を雑に書くとこんな感じです。\nvoid main()\n{\n\tm4aSoundInit();\n\n\tirqSetVblank(&m4aSoundVSync);\n\n\tu32 songNo = 0x00;\n\tm4aSongNumStart(songNo);\n\n\tfor(;;)\n\t{\n\t\twaitVblank();\n\n\t\tm4aSoundMain();\n\t}\n}\n・本物のスタブはこちらになります。\n・ツールはSaptapperとgsfoptの２種類。\n・Saptapperは、コマンドラインでGBAのロムを指定します。実行するとgsflibを１つ、minigsfを複数生成されます。gsflibはドライバと音データ一式、minigsfはパッチです。ここではゼロで埋めたりしません。\n・gsflibとminigsfはどちらもgsfフォーマットです。もともとプレステ音楽を聴く為のフォーマットだったのですが、流用しているそうです。仕様についてはこちら。\nhttps://gsf.caitsith2.net/gsf%20spec.txt\n・gsfoptは、gsflibのゼロ埋めをしてくれます。\n・minigsfは、gsflibへのパッチと曲タイトルや、lib=hoge.gsflibなどのタグ指定をします。\n・再生するときの流れ。まずgsflibのpsfヘッダを見て、展開先アドレスを調べます。普通なら0800:0000hに解凍します。\n・minigsfも同じように解凍、上書きします。基本的にnum_songindexアドレスへのパッチになります。１か２バイトのパッチ。\n・minigsfは、m4aSongNumStartの引数songNo（num_songindex）を書き換えているだけです。\n・m4aSoundInitは引数がないのに、内部でグローバル変数のソングテーブルを参照しているんですよね。aファイルなのにソングテーブルは使用者側が用意しておくってできるのかな？よくわかりません。\n長々とGSFの仕様を見てきましたけど、これを知っとくとドライバの挙動がわかってすっきりしますね。2000年代なら当たり前のようにホームページに書いてあったことかもしれませんけど、今は消えまくってますからねー。デジタル考古学のジャンルかと思ったりしました。\nGBAのサウンドドライバを調べた一覧がヤバすぎます。バイナリを入念に調べていったんだろうなあ・・・。\nvgmpf.com",
