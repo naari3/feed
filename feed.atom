@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-12T22:29:01.448Z</updated>
+    <updated>2026-06-12T23:28:11.182Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9726,28 +9726,6 @@ GameGaz Daily 2026.3.16 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[JavaScriptのESモジュールに対応した高速なビルドツール「Vite」の最新版「Vite 8.0」正式版がリリースされました。  Vite 8.0 is here!The most significant architectural ...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ライトセーバーは自分で作る(2026年)]]></title>
-        <id>hatenablog://entry/17179246901365196798</id>
-        <link href="https://blog.nishimu.land/entry/2026/03/15/193403?utm_source=feed"/>
-        <updated>2026-03-15T10:34:03.000Z</updated>
-        <summary type="html"><![CDATA[ジェダイはライトセーバーを自分で作る。フォースの力を借りて。
-ソフトウェアエンジニアが自分のためのツールを作るのは昔から当たり前のことだ。ただ最近、AIの力を借りてそのコストがめちゃくちゃ下がった。
-最近Rustで自分専用のCLIツールをいくつか作った。ブログを書くための bs と fs、PRレビュー用のTUIクライアント rui（まだ未公開）など。
-bsは blogsync 互換のCLIで、fsははてなフォトライフに画像をアップするやつ。この辺りはOpus 4.6がでたことでどのくらい出来るのかを試すために作り始めた。
-ruiはターミナルでPRのdiffを読むやつ。ローカルのdiffも表示できる。diffを好みになるように調整しまくったのでブラウザより快適になった。
-
-rui用に ma（MermaidのASCII描画）、waku（git worktree管理）、shiwake（diffスコアラー）も作った。自分専用ツールのために自分専用ツールを作る入れ子になっている。
-他にも日々なにかしら作っていて、この積み重ねでQoLがどんどん上がっていく。自分専用ツールのいいところは自分以外のことを考えなくていいこと。
-README、CI、issue対応、そういうのは全部要らない。動けばいい、壊れたら直せばいい。
-ただOSSへの敬意という点では考えてしまうことがある。blogsyncがなければbsの設計は一瞬で決まらなかったし、ratatui がなければruiは存在しない。
-なかなか難しい問題だと思っている。
-去年も cctop、gotestshow、ccl とGoでいくつか作っていたのだけれど、思った通りには仕上がらなかった。ここ最近のLLMの進化がすごい。
-開発環境の設定もAIに任せられるので、ツールを作れば作るほど環境ごと便利になっていく。まだまだ作りたいものがある。]]></summary>
-        <author>
-            <name>ちなみに</name>
         </author>
     </entry>
     <entry>
