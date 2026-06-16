@@ -14228,57 +14228,6 @@ GameGaz Daily 2026.3.19 first appeared on 大人のためのゲーム講座.</sp
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
-              rel="noopener">Lambdaカクテル</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Git Worktree上でDocker Composeのポートが衝突するのを防ぐツールを書いた</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/03/19/031011" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Git Worktreeが便利だ。最近はClaude Codeがネイティブに--worktreeオプションを提供するようになったため、単一のリポジトリで同時並行的にAI Agentを活用した開発ができている。
-git-scm.com
-そこで、Git Worktree環境下においてdocker composeの各サービスが開くポートがworktree間で衝突・干渉することを防ぐ、決定論的に振る舞うツールを書いたので紹介する。
-github.com
-使い方
-gitリポジトリ下で、まずcompose.yamlを以下のように環境変数を受け取るようにして:
-services:
-  web:
-    ports:
-      - &quot;${PORT_WEB}:8080&quot; # サービス名を大文字にしてSCREAMING_SNAKE_CASEにする
-  db:
-    ports:
-      - &quot;${PORT_DB}:5432&quot;
-
-
-
-あとはgitリポジトリ、もしくはworktreeの下で:
-eval &quot;$(comport)&quot; &amp;&amp; docker compose up
-
-
-
-を実行するだけで、良い感じにポートが割り当てられる。Direnvが利用可能なら、.envrcでeval &quot;$(comport)&quot;しても良い。
-comportは以下のような文字列を出力する:
-export PORT_BASE&#x3D;30588
-export PORT_WEB&#x3D;30588
-export PORT_DB&#x3D;30589
-
-
-
-comportは自動的にカレントディレクトリのcompose.yamlとworktreeを認識し、適当な環境変数名とポート番号を割り当てる。ポート番号はサービスが増減しない限り固定であり、PORT_BASEは常に固定だ。
-他の利用方法はcomport --helpで得られる。
-バイナリリリースはこ…</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901366607173/1773857411" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -16591,7 +16540,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-06-16T05:46:09.362Z">2026-06-16T05:46:09.362Z</time>
+    <time id="build-timestamp" datetime="2026-06-16T07:48:21.004Z">2026-06-16T07:48:21.004Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

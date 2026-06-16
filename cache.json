@@ -6613,21 +6613,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901369492700/1774538722"
-        },
-        {
-          "id": "hatenablog://entry/17179246901366607173",
-          "author": null,
-          "description": "Git Worktreeが便利だ。最近はClaude Codeがネイティブに--worktreeオプションを提供するようになったため、単一のリポジトリで同時並行的にAI Agentを活用した開発ができている。\ngit-scm.com\nそこで、Git Worktree環境下においてdocker composeの各サービスが開くポートがworktree間で衝突・干渉することを防ぐ、決定論的に振る舞うツールを書いたので紹介する。\ngithub.com\n使い方\ngitリポジトリ下で、まずcompose.yamlを以下のように環境変数を受け取るようにして:\nservices:\n  web:\n    ports:\n      - \"${PORT_WEB}:8080\" # サービス名を大文字にしてSCREAMING_SNAKE_CASEにする\n  db:\n    ports:\n      - \"${PORT_DB}:5432\"\n\n\n\nあとはgitリポジトリ、もしくはworktreeの下で:\neval \"$(comport)\" && docker compose up\n\n\n\nを実行するだけで、良い感じにポートが割り当てられる。Direnvが利用可能なら、.envrcでeval \"$(comport)\"しても良い。\ncomportは以下のような文字列を出力する:\nexport PORT_BASE=30588\nexport PORT_WEB=30588\nexport PORT_DB=30589\n\n\n\ncomportは自動的にカレントディレクトリのcompose.yamlとworktreeを認識し、適当な環境変数名とポート番号を割り当てる。ポート番号はサービスが増減しない限り固定であり、PORT_BASEは常に固定だ。\n他の利用方法はcomport --helpで得られる。\nバイナリリリースはこ…",
-          "link": "https://blog.3qe.us/entry/2026/03/19/031011",
-          "publishedOn": "2026-03-18T18:10:11.000Z",
-          "wordCount": null,
-          "title": "Git Worktree上でDocker Composeのポートが衝突するのを防ぐツールを書いた",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901366607173/1773857411",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901366607173/1773857411"
         }
       ]
     },
