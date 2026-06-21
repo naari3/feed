@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-21T12:41:33.123Z</updated>
+    <updated>2026-06-21T13:32:13.719Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AWS、コードだけでなくインフラ構成とビジネスコンテキストも理解した上で脆弱性を推論する「AWS Contiuum」発表。特定のAIモデルに依存せず]]></title>
+        <id>https://www.publickey1.jp/blog/26/awsaws_contiuumai.html</id>
+        <link href="https://www.publickey1.jp/blog/26/awsaws_contiuumai.html"/>
+        <updated>2026-06-21T15:26:18.000Z</updated>
+        <summary type="html"><![CDATA[Amazon Web Services（AWS）は、コードをスキャンするだけでなく、インフラ構成やアクセス許可、ネットワークトポロジーそしてビジネス上の優先事項やドキュメントなどの非構造化データなどをコンテキストとして活用し、システムの脆弱...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS、AIエージェントがリポジトリを自動スキャンして技術的負債を指摘してくれる「AWS Transform – continuous modernization」プレビュー公開]]></title>
+        <id>https://www.publickey1.jp/blog/26/awsaiaws_transform_continuous_modernization.html</id>
+        <link href="https://www.publickey1.jp/blog/26/awsaiaws_transform_continuous_modernization.html"/>
+        <updated>2026-06-21T15:24:42.000Z</updated>
+        <summary type="html"><![CDATA[Amazon Web Services（AWS）は、AIエージェントがコードリポジトリを継続的に自動スキャンし、サポートが終了したライブラリやフレームワークなどを始めとする技術的負債を検出し、優先順位をつけて報告あるいは修正のためのプルリク...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.6.21]]></title>
         <id>https://gamegaz.com/?p=45668</id>
