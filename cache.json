@@ -3106,6 +3106,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032044152699",
+          "author": null,
+          "description": "本日、Androidアプリ（3.9.0）のバージョンアップを行いました。\n見出し表記をWeb版の仕様に統一しました\n\n2026年6月5日にお知らせいたしましたWeb版の見出し表記変更に合わせ、Androidアプリ内での見出し表記もWeb版の仕様と統一しました。\n\n参考）staff.hatenablog.com\n\n\nアクセス解析ページをリニューアルし、ダークテーマに対応しました\n\n「アクセス解析」ページを、アプリ専用の表示にリニューアルしました。これに伴い、アクセス解析ページもダークテーマに対応しました。\nグループランキング表示の終了について\n\n今回のアクセス解析画面のリニューアルに伴い、アプリ版からは「グループランキング」の表示を終了いたしました。グループランキングを確認したい場合は、お手数ですがブラウザからご確認いただきますようお願いいたします。\n\n\n「購読中のブログ」画面に広告枠を新設しました（※広告は常時表示ではなく、不定期に掲載予定です。）\n\n今回のバージョンアップより、「購読中のブログ」画面のタイムライン内に新しく広告枠を設置いたしました。*1購読しているブログとブログの間に「PR」マークが付いた記事が表示されるようになります。\n\n\nバージョン（3.9.0）では上記のほかいくつかの不具合修正や、内部処理の改善などを行っています。\n最新版のはてなブログAndroidアプリは以下よりご確認ください\nplay.google.com\n今後ともはてなブログをどうぞよろしくお願いいたします。\n*1:iOS版ではすでに設置済みの枠となります",
+          "link": "https://staff.hatenablog.com/entry/2026/06/22/122405",
+          "publishedOn": "2026-06-22T03:24:05.000Z",
+          "wordCount": 930,
+          "title": "Androidアプリバージョンアップ（3.9.0）を行いました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032044152699/1782098647",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032044152699/1782098647"
+        },
+        {
           "id": "hatenablog://entry/14945776032041197478",
           "author": null,
           "description": "はてなブログとはてなCMSでは、より使いやすいサービスを目指して日々機能の開発・改善に取り組んでいます。大きなアップデートはその都度お知らせしていますが、細かな使い勝手の向上や見えにくい改善も、実は毎月数多く行われています。\n機能修正・改善\n予約投稿済み記事を投稿予定日順で並び替えできるようになりました\n記事管理画面で、予約投稿済みの記事を投稿予定日の順番で並び替えられるようになりました。複数の記事を予約投稿している場合でも、公開スケジュールを一目で把握しやすくなります。\n\n入力補助ツールバーの【見出し】に「特大見出し（H2）」「特小見出し（H6）」を追加しました\nstaff.hatenablog.com\n予約投稿時のX（旧Twitter）への自動シェア機能が廃止されます\nstaff.hatenablog.com\n※はてなCMS、はてなブログ for DevBlog、はてなブログBusinessをはじめとする法人向けプランでは、本機能を引き続きご利用いただけます。\nその他の細かい機能改善\n見たまま編集で TeX 記法の複数行展開に対応\n予約投稿を解除した記事が予約投稿タブに表示されたままになる問題を修正\n管理画面の各メニューのコンテンツ幅を統一\nAndroid PC 版表示中に記事編集画面の公開ボタンが見えなくなる問題を修正\nスマホ・タブレット横向きでリンク挿入時にスクロールできない問題を修正\n\n今回紹介した改善はこの1ヶ月のごく一部です。\n表には見えにくい細かな修正や、パフォーマンスの向上、将来の新機能に向けた仕込みなど、開発チームでは日々いろいろな取り組みをしています。\n引き続き、はてなブログ・はてなCMSをどうぞよろしくお願いします！",
@@ -8260,16 +8275,6 @@
           "wordCount": 1870,
           "title": "GameGaz Daily 2026.3.25",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=45211",
-          "author": "mamosuke",
-          "description": "hexkyz氏がAtmosphèreの22.0.0に対応に向けたチェックリストを公開していました。→→→この記事の続きを読む\n22.0.0サポートのAtmosphere 1.11.0リリースに向けチェックリスト公開 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026032545211/",
-          "publishedOn": "2026-03-24T16:09:19.000Z",
-          "wordCount": 1688,
-          "title": "22.0.0サポートのAtmosphere 1.11.0リリースに向けチェックリスト公開",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/atmosphere_1.11.0.png"
         }
       ]
     },
@@ -9143,16 +9148,6 @@
           "wordCount": 1442,
           "title": "1Passwordが人間とAIエージェントのアイデンティティを統一管理する「Unified Access 」発表",
           "imageUrl": "https://www.publickey1.jp/2026/1password-unifiedaccess-ann01.png"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/claude_codegithub_copilotaiazure_skills_plugin.html",
-          "author": null,
-          "description": "AWSがClaude Codeに、アプリケーションの内容に応じて自動的に適切なインフラを構成してデプロイできる能力を与える「Agent Plugins for AWS」をリリースしたのと同様に、マイクロソフトもClaude CodeやGit...",
-          "link": "https://www.publickey1.jp/blog/26/claude_codegithub_copilotaiazure_skills_plugin.html",
-          "publishedOn": "2026-03-24T15:34:04.000Z",
-          "wordCount": null,
-          "title": "マイクロソフト、Claude CodeやGitHub Copilotに「このアプリをデプロイせよ」と指示すればAIが最適なインフラ構成やサービスでデプロイしてくれる「Azure Skills Plugin」公開",
-          "imageUrl": null
         }
       ]
     },
