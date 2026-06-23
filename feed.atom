@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-23T06:21:10.571Z</updated>
+    <updated>2026-06-23T08:09:44.261Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[記事作成画面に「SEOタイトルアシスト」機能を追加しました]]></title>
+        <id>hatenablog://entry/14945776032043664679</id>
+        <link href="https://staff.hatenablog.com/entry/2026/06/23/152913"/>
+        <updated>2026-06-23T06:29:13.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログでは、記事のタイトル入力をリアルタイムでサポートする「SEOタイトルアシスト機能」を追加しました。
+検索結果から記事をクリックしてもらうためには、タイトルの付け方が重要です。タイトルが短すぎると、検索結果でクリックされにくくなる場合があります。そこで今回、タイトルを入力する際にSEOの観点からアドバイスを表示する機能を追加しました。
+機能の概要
+SEOタイトルアシスト
+タイトル入力欄の右側にあるボタンを押すか、タイトルを入力すると、タイトル入力欄の下に「SEOヒント」が表示されます。検索結果でクリックされやすいタイトルの付け方をその場でご確認いただけます。
+※本機能は法人プラン*1以外のプランでご利用いただけます
+
+*1:はてなCMS、はてなブログ for DevBlog、はてなブログBusiness]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ts-bench v2: 数十万行規模のTypeScript製アプリの修正タスクでコーディングエージェントの性能を測る]]></title>
+        <id>6a3a1f0576f0b800011a75fe</id>
+        <link href="https://blog.lai.so/ts-bench-v2/"/>
+        <updated>2026-06-23T06:21:23.000Z</updated>
+        <summary type="html"><![CDATA[筆者は以前よりts-benchというAIコーディングエージェントのベンチマークを作っています。
+このたびv2に移行した]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[デザインをブログに反映する前にプレビューで確認できる「デザインステージング」機能をリリースしました]]></title>
         <id>hatenablog://entry/14945776032043503898</id>
