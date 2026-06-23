@@ -2662,36 +2662,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/3fe062624bc3d95eba7184d959bb931ab0cdfcdc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260328%2F20260328164619.jpg"
-        },
-        {
-          "id": "hatenablog://entry/17179246901369148476",
-          "author": null,
-          "description": "機械の声が聞こえる。\nwww.youtube.com\nwww.nicovideo.jp\n恒例の動画の技術解説エントリです。\nといっても今回はAIの言いなりになっているだけで自分は原理等なにもわかってないので、AIに解説してもらおうと思います。\n手作りシンセサイザーについて\nまず全体の図面（？）を貼っておきます。\n\nこれをふまえて、以下、ChatGPTによる解説です。といっても結果的に動かなかったやつなので説明を聞いたところでどうなんだという話ですが…。\n\n\n\n紙と炭素で音が鳴るシンセの話\nこの回路、見た目はかなり素朴なのに、ちゃんと「シンセサイザー」になっているのが面白いところだよ。\nやっていることは一言でいうと、LC発振＋ゆるい増幅。ただしその“ゆるさ”を、炭素素子や紙コンデンサみたいな不安定な部品に任せているのがポイントなんだ。\n■ 全体像：どうやって音が出ているか\n回路の中心は「発振ノード」。\nその揺れを作っているのが、\nコイル（L）\n紙コンデンサ（C）*1\nこの2つの組み合わせ。いわゆるLC共振回路だね。\nここにエネルギーを供給して、減衰せずに揺れ続けるようにしているのが、\n炭素素子（可変抵抗的な役割）\nバイアス抵抗*2\nという構成。\n■ コイル＋紙コンデンサ：音程を決める部分\nコイルとコンデンサで決まるのは、振動の速さ＝音程。\nコンデンサが大きい → ゆっくり揺れる → 低い音\nコンデンサが小さい → 速く揺れる → 高い音\n紙コンデンサを「面積で変える」っていうのは、つまり容量を直接いじって音程を変えているわけだね。\nここはかなり直感的で、物理がそのまま音になる部分。\n■ 炭素素子：発振を成立させる“あいまいな増幅”\n普通の発振回路だと、トランジスタとかオペアンプで「きっちり増幅」するんだけど、この回路は違う。\n炭素素子*3を使っている。\n炭素は、\n圧力で抵抗値…",
-          "link": "https://nomolk.hatenablog.com/entry/2026/03/25/235221",
-          "publishedOn": "2026-03-25T14:52:21.000Z",
-          "wordCount": null,
-          "title": "動かなかったシンセと、機械の声を聴く特殊マイクの原理【動画解説】",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/adc9f25deff581f9639f819d4eb47a1c50e2963f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260325%2F20260325234837.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/adc9f25deff581f9639f819d4eb47a1c50e2963f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260325%2F20260325234837.jpg"
-        },
-        {
-          "id": "hatenablog://entry/17179246901369136553",
-          "author": null,
-          "description": "忙しい日のお昼はゼリーだよ。\nwww.youtube.com\nwww.nicovideo.jp\n少し溜めてしまいました。恒例の動画解説エントリです。\nストーリー的には凝っていますが、技術的には単純なので手短にいきます。\nサーボモーターで踊らせる\nまず最初のinゼリーを動かすところ。\n\nただサーボをゆっくり往復させているだけです。\nこんな感じにつないで…\n\nプログラムはこう。\n#include <Servo.h>\n\nServo myServo;\n\nint pos = 90;  // 初期角度\n\nvoid setup() {\n  myServo.attach(9);   // サーボの信号線を9番ピンに\n  myServo.write(90);   // 最初90度\n  delay(1000);         // 1秒待つ\n\n  // 1秒かけて180度へ\n  moveServoSmooth(90, 180, 1000);\n}\n\nvoid loop() {\n  // 2秒かけて0度へ\n  moveServoSmooth(180, 0, 2000);\n\n  // 2秒かけて180度へ\n  moveServoSmooth(0, 180, 2000);\n}\n\nvoid moveServoSmooth(int startAngle, int endAngle, int durationMs) {\n  int steps = abs(endAngle - startAngle);\n  if (steps == 0) return;\n\n  int stepDelay = durationMs / steps;\n  int direction = (endAngle > startAngle) ? 1 : -1;\n\n  int angle = startAngle;\n  for (int i = 0; i < steps; i++) {\n    angle += direction;\n    myServo.write(angle);\n    delay(stepDelay);\n  }\n}\n\nこれはChatGPTに書いてもらったやつですが、似たようなプログラムは、Arduinoの「スケッチ例＞Servo＞Sweep」にもあって、そっちの方がシンプルです。\n曲げセンサで制御する\n後半のinゼリー・完全体。\n\nサーボが２つに増えたほか、曲げセンサを使ってコントロールできるようにしています。\n高性能曲げセンサ 85mmwww.switch-science.com\n曲げることによって抵抗値が変化します。半固定抵抗やボリューム、光センサ（CdSセル）と同じ感覚で使える初心者向きのセンサーです。\nAmazonにも似たものがありますが\n\n\nWsikafxn フレックスセンサー 曲げ フレックスセンサー ロボットハンド 電子グローブ フレックス 4.5 インチ フレックスセンサー\n\nWsikafxn\nAmazon\n\nこっちは片側への曲げにしか反応しません。\nなお、曲げるときにセンサーの根元の端子部分を曲げてしまうと反応しません、ちゃんとセンサー部分を曲げる必要があるので注意。\n配線はこんな感じ。\n\nサーボモーターを二つ付けていますが個別に制御しておらず、配線を分岐させているだけです。\nプログラムはこんな感じ。\n#include <Servo.h>\n\nServo servo1;\n\nconst int sensorPin = A5;\n\nvoid setup() {\n  servo1.attach(9);   // 1つ目のサーボ\n}\n\nvoid loop() {\n  int val = analogRead(sensorPin);\n\n  // 310〜410を30〜130度にマッピング\n  int angle = map(val, 310, 410, 30, 130);\n\n  // 範囲外の暴走防止\n  angle = constrain(angle, 30, 130);\n\n  servo1.write(angle);\n\n  delay(20);\n}\n\nちなみに前にも曲げセンサにハマったことがあって、そのときはこんなのを作ってました。\nwww.youtube.com\nやってることが全く同じ…！！！\nこっちの記事にもっと詳しい解説が書いてあります。\nnomolk.hatenablog.com\n\n以上、技術解説でした。\nwww.youtube.com\n高評価とチャンネル登録してもいいからね。\nまたね。",
-          "link": "https://nomolk.hatenablog.com/entry/2026/03/25/230527",
-          "publishedOn": "2026-03-25T14:05:27.000Z",
-          "wordCount": 1012,
-          "title": "inゼリーにお辞儀をさせる／初心者におすすめのセンサー、曲げセンサ【動画解説】",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/2ca20bb80b9ab4def316c4bc890419b9a6921d90/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260325%2F20260325222723.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2ca20bb80b9ab4def316c4bc890419b9a6921d90/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260325%2F20260325222723.png"
         }
       ]
     },
@@ -3120,6 +3090,21 @@
       "feedUrl": "https://staff.hatenablog.com/rss",
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032043503898",
+          "author": null,
+          "description": "はてなブログおよびはてなCMSでは、デザイン設定の変更をブログに反映する前に、ブログ全体でプレビュー確認できる「デザインステージング」機能をリリースしました。\n※この機能ははてなブログPro、法人向けプラン でご利用いただけます。\nどんな機能？\nこれまでのデザイン設定画面では、変更内容をプレビューできるのはデザイン編集画面で表示できるトップページ・記事詳細ページに限られていました。\n記事一覧ページ（アーカイブ）や検索結果ページなど、他のページの見た目を変更前に確認することができませんでした。\n今回追加した「デザインステージング」機能を使うと、デザインの変更内容をブログに反映せず仮保存し、ステージング用に発行される専用URLで全ページを確認できます。\n納得のいくデザインに仕上げてから「公開する」を押せるので、いきなり本番に反映してしまう心配がなくなります。\n使い方\nヘルプページを参照してください。\nhelp.hatenablog.com\n \nご利用条件\nこの機能は はてなブログPro または 法人向けプランのご契約が必要です。",
+          "link": "https://staff.hatenablog.com/entry/2026/06/23/105624",
+          "publishedOn": "2026-06-23T01:56:24.000Z",
+          "wordCount": null,
+          "title": "デザインをブログに反映する前にプレビューで確認できる「デザインステージング」機能をリリースしました",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/ac21b8bb8aea2a550fce8072c7717f5a3f2d8feb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260617%2F20260617164709.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/ac21b8bb8aea2a550fce8072c7717f5a3f2d8feb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260617%2F20260617164709.png"
+        },
         {
           "id": "hatenablog://entry/14945776032044152699",
           "author": null,
@@ -5256,16 +5241,6 @@
           "publishedOn": "2026-03-28T14:13:06.000Z",
           "wordCount": null,
           "title": "Twitter11",
-          "imageUrl": null
-        },
-        {
-          "id": "https://note.com/ecolidelvsvc11/n/ndee6d3704d48",
-          "author": null,
-          "description": "自分にはどうしようもなく逃げ癖が染み付いてしまっている。\n何かを努力して成し遂げた経験が自分には無いに等しい。\n高校受験も大学受験も、その時の学力を保てば合格出来る程度の学校にしか行かなかった。\n留学も1年行く予定だったが、10ヶ月ほどで帰国した。\n大学も中退した。\nゲーム業界に入る為に色々勉強したが、結局ゲーム業界には行かなかった。\n遺作にしたいと思っていた音MADも、おそらく完成しない。\n自分の好きなゲームクリエイターが言っていた。\n「アイデアという物は、実はあまり重要ではなくて、実行実現する力こそが重要」と。\n才能とは「非凡な発想力」ではない。\n成し遂げる力だ。\nつまらないと思う事にも真正面から向き合い、それでも成し遂げる力こそが才能なのだ。\n自分は色んな事から逃げ続けてきた。\nでも、本当に逃げたくないものが一つだけある。\nよく言えば夢、悪く言えば自己憐憫。そういった類のものを切に成し遂げたいと思っている。\n時間はたくさんある。逃げさえしなければ、成し遂げられる。今度こそきっと、自分にも。\n続きをみる",
-          "link": "https://note.com/ecolidelvsvc11/n/ndee6d3704d48",
-          "publishedOn": "2026-03-25T14:29:00.000Z",
-          "wordCount": null,
-          "title": "逃げ癖",
           "imageUrl": null
         }
       ]
