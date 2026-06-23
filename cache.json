@@ -3769,6 +3769,16 @@
       "siteUrl": "https://note.com/banfuture9",
       "articles": [
         {
+          "id": "https://note.com/banfuture9/n/nd5a026bde7ae",
+          "author": null,
+          "description": "・朝、例えば15分くらい空いていたとして、その時間に部屋を片付けたりゴミをまとめたりすれば、15分分は部屋が片付くことに驚いた。これまでの考えでは、15分空いていてもそれは無いのと同じであった。その理屈を積み重ねていくと、1時間とかでも何もしないことが可能になる。可能になるというか実際そうだった。\n・昔、恐山さんのウロマガで、綾辻行人が朝5分でも原稿を進めるという話が書かれていて（東野圭吾だったかもしれない）、すごい人がいるなー俺には無理だなーと思ったことをよく反芻しているのだが、おれもそうなりつつある？まあ、一過性のものかもしれません。1本ペットボトルを捨てたら1本減るということを積み上げていった先に部屋の片付きがあることをようやく理解したよ。\n続きをみる",
+          "link": "https://note.com/banfuture9/n/nd5a026bde7ae",
+          "publishedOn": "2026-06-23T13:59:10.000Z",
+          "wordCount": null,
+          "title": "20220623",
+          "imageUrl": null
+        },
+        {
           "id": "https://note.com/banfuture9/n/n223ec964a28e",
           "author": null,
           "description": "・仕事。午前がシフト勤務の日。特に何事もなく平和。\n・最近6時くらいに目が覚めるので、朝早く会社に行ってみている。といっても私の会社は定時が遅く午前10時なので、8時過ぎに着いているだけだ。普通にこれくらいに出社している人は沢山いるだろう。\n続きをみる",
@@ -6714,6 +6724,16 @@
       "feedUrl": "https://efcl.info/feed/",
       "siteUrl": "https://efcl.info/feed/",
       "articles": [
+        {
+          "id": "https://efcl.info/2026/06/23/hardening-npm-publishing/",
+          "author": null,
+          "description": "2026年6月23日に、GMO Flatt Security主催の「OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える」で「Hardening npm Publishing」というタイトルで、npmパッケージの公開フローをどう守るかについて話しました。\n\nスライド: Hardening npm Publishing\nローカルのトークン管理やnpm Trusted Publishingについては、以前の記事で書きました。\nこの記事ではそれらを前提に、GitHub Environmentsとnpm staged publishingをどこに入れるかの話をスライドベースでかいています。\nサプライチェーン攻撃をすべての侵害を防ぐのは難しいです。\nそれでも、ローカル、CI、GitHub Actions、npm registryのそれぞれに止める場所を作ると、攻撃者が1つの権限を取っただけでは公開まで進みにくくできます。\n公開フローをどこで止めるか\nnpmパッケージの公開フローでは、開発者のローカル環境、GitHubリポジトリ、GitHub Actions、npm registry、利用者のインストール環境がつながっています。攻撃者の入口も1つではなく、ローカルのnpmトークン、GitHub Actionsのworkflow、CI上の認証情報、install時に実行される悪性コードなど、いくつかの場所に分かれます。\nそのため、対策も1つでは足りません。自分は次のように、公開フローを段階ごとに分けて考えています。\nローカルに強いトークンを置かない\nCIからnpmへ公開するときは長期npmトークンを使わない\nGitHub Actionsからnpmへ権限が広がる手前にGitHub EnvironmentsのDeployment protection rulesを置く…",
+          "link": "https://efcl.info/2026/06/23/hardening-npm-publishing/",
+          "publishedOn": "2026-06-23T14:00:00.000Z",
+          "wordCount": null,
+          "title": "「OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える」で「Hardening npm Publishing」という発表をしました",
+          "imageUrl": null
+        },
         {
           "id": "https://efcl.info/2026/05/13/automerge-gate/",
           "author": null,

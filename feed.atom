@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-23T13:12:27.561Z</updated>
+    <updated>2026-06-23T14:58:31.284Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える」で「Hardening npm Publishing」という発表をしました]]></title>
+        <id>https://efcl.info/2026/06/23/hardening-npm-publishing/</id>
+        <link href="https://efcl.info/2026/06/23/hardening-npm-publishing/"/>
+        <updated>2026-06-23T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[2026年6月23日に、GMO Flatt Security主催の「OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える」で「Hardening npm Publishing」というタイトルで、npmパッケージの公開フローをどう守るかについて話しました。
+
+スライド: Hardening npm Publishing
+ローカルのトークン管理やnpm Trusted Publishingについては、以前の記事で書きました。
+この記事ではそれらを前提に、GitHub Environmentsとnpm staged publishingをどこに入れるかの話をスライドベースでかいています。
+サプライチェーン攻撃をすべての侵害を防ぐのは難しいです。
+それでも、ローカル、CI、GitHub Actions、npm registryのそれぞれに止める場所を作ると、攻撃者が1つの権限を取っただけでは公開まで進みにくくできます。
+公開フローをどこで止めるか
+npmパッケージの公開フローでは、開発者のローカル環境、GitHubリポジトリ、GitHub Actions、npm registry、利用者のインストール環境がつながっています。攻撃者の入口も1つではなく、ローカルのnpmトークン、GitHub Actionsのworkflow、CI上の認証情報、install時に実行される悪性コードなど、いくつかの場所に分かれます。
+そのため、対策も1つでは足りません。自分は次のように、公開フローを段階ごとに分けて考えています。
+ローカルに強いトークンを置かない
+CIからnpmへ公開するときは長期npmトークンを使わない
+GitHub Actionsからnpmへ権限が広がる手前にGitHub EnvironmentsのDeployment protection rulesを置く…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20220623]]></title>
+        <id>https://note.com/banfuture9/n/nd5a026bde7ae</id>
+        <link href="https://note.com/banfuture9/n/nd5a026bde7ae"/>
+        <updated>2026-06-23T13:59:10.000Z</updated>
+        <summary type="html"><![CDATA[・朝、例えば15分くらい空いていたとして、その時間に部屋を片付けたりゴミをまとめたりすれば、15分分は部屋が片付くことに驚いた。これまでの考えでは、15分空いていてもそれは無いのと同じであった。その理屈を積み重ねていくと、1時間とかでも何もしないことが可能になる。可能になるというか実際そうだった。
+・昔、恐山さんのウロマガで、綾辻行人が朝5分でも原稿を進めるという話が書かれていて（東野圭吾だったかもしれない）、すごい人がいるなー俺には無理だなーと思ったことをよく反芻しているのだが、おれもそうなりつつある？まあ、一過性のものかもしれません。1本ペットボトルを捨てたら1本減るということを積み上げていった先に部屋の片付きがあることをようやく理解したよ。
+続きをみる]]></summary>
+        <author>
+            <name>B</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[記事作成画面に「SEOタイトルアシスト」機能を追加しました]]></title>
         <id>hatenablog://entry/14945776032043664679</id>
