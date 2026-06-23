@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-23T00:25:31.060Z</updated>
+    <updated>2026-06-23T01:36:14.257Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-06-22]]></title>
+        <id>hatenablog://entry/14945776032045392958</id>
+        <link href="https://commits.hatenablog.com/entry/2026/06/23/100000"/>
+        <updated>2026-06-23T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+json gemのマルチバイト関連のバグ修正をしていた。
+json gemに最近入った機能(まだリリースされていない)に、JSON::ResumableParserというのがある。これがかなり熱い機能で、未完成のJSON文字列をパースできるようになる。streamから流れてくるJSON文字列をパースするような用途で使うもの。
+特に熱いのが、その時点で確定したパース結果のオブジェクトをJSON::ResumableParser#partial_valueとして取得できたり、その時点で未確定の部分の文字列をJSON::ResumableParser#restとして取得できるところ。めっちゃ便利。
+ということで、この機能を試していたらバグを踏んだので修正した。
+今日はお昼に鎌倉まで遊びに行っていた。
+mixi.social
+お昼ごはんは麻婆豆腐を食べた。うまみがしっかりあってめっちゃ美味しかった。
+mixi.social
+お昼ごはんの後にお茶を飲んでいた。ビールサーバーからお茶をつぐ初体験。というかビールサーバーを触ったのすら初めて。ほうじ茶を飲んだのだけど、スッキリ飲みやすくてよかった。
+面白い体験と、いろんなお茶が置いてあって、いい体験を売っているお店だなあとなった。
+夜は飲み会で渋谷まで行っていた。町中でネズミが2匹うろちょろしていて、渋谷を感じた。
+お土産に備前焼を持っていったので、ついでに備前焼のことを調べていた。青備前という種類を初めて知ったのだけど、めっちゃかっこいいし緋襷とセットで欲しい。
+achem.okayama-u.ac.jp
+緋襷はコランダムらしい。実質Ruby。
+家に備前焼はマグカップぐらいしかないので、食器など買っても良いなと思った。今度備前焼を売っているお店に行ったらなにか買おうかしら。焼き魚用の皿がほしいとずっと思っているからそれとかかなあ。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.6.23]]></title>
         <id>https://gamegaz.com/?p=45672</id>
