@@ -2424,6 +2424,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032045779691",
+          "author": null,
+          "description": "Cドライブがいっぱいでピンチなので、容量削減についてのエントリを何本か書いていきます。1本目です。\n\nPC版のSpotifyアプリを使っていると、C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data に曲のデータのキャッシュがどんどんたまっていきます。\n※設定から保存先を変更できないのでシンポリックリンクを使います。シンポリックリンクが何かを理解してからやった方がいいです\nやり方\n①元のフォルダを調べます。C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data です。\n②移動先のフォルダを作ります。今回はEドライブに E:\\SpotifyCache を作りました。\n③Spotifyアプリを起動している場合は終了させます。\n④C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data を、Data フォルダごと E:\\SpotifyCache に移動させます。（コピーじゃなくて移動）\n⑤コマンドプロンプトを管理者権限で開く（windowsのタスクバーにある検索欄に「cmd」と入れると、ポップアップでコマンドプロンプトが出てくるので「管理者として実行」）\n⑥以下を実行（パスは例なので書き換えて）\nmklink /D \"C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data\" \"E:\\SpotifyCache\\Data\"\n⑦エクスプローラで C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data を開き、E:\\SpotifyCache\\Data が開くことを確認\nあとは普通にSpotifyを起動して、使ってOKです。\n間違えた場合\n⑦の確認段階でもし間違っていた場合、\nrmdir \"C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data\"\nで一回シンボリックリンクを削除して⑥からやりなおしましょう。",
+          "link": "https://nomolk.hatenablog.com/entry/2026/06/24/234730",
+          "publishedOn": "2026-06-24T14:47:30.000Z",
+          "wordCount": null,
+          "title": "PC版Spotifyのキャッシュフォルダを移動してCドライブを空ける",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/e97faa3f6d4b086b7c979257360c0d8a36d084cf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260624%2F20260624024752.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e97faa3f6d4b086b7c979257360c0d8a36d084cf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260624%2F20260624024752.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032036995300",
           "author": null,
           "description": "先日、オープンイヤー（耳をふさがないので外音が聞こえる）イヤフォンのSOUNDPEATS UU2イヤーカフのレビューを書きました。\nnomolk.hatenablog.com\nまた、その前の4月には同時期に発売されたEarfun Clip2のレビューも書いています。\nnomolk.hatenablog.com\n定価で2,500円ほどの差はあるもののわりに価格帯の近い２機種で、どっちにしようか迷う人も多いと思うので、比較してみたいと思います。\nSOUNDPEATS UU2Earfun Clip2\n\n    \n音質面の比較\n正直どっち買っても損しないレベルだと思います。大抵の人はどっちでも満足できるだろうし、どっちか買って満足できなかった人はもう一方を買いなおすよりはもう3万円くらいする高価格帯のを買ったほうがいいんじゃないかと思う。\n強いて比べるとしたら、自分のよく聴くジャンルでいうとクラシックギターとかソロピアノ、しっとりめのボーカルとかは価格差が効いてるのかEarfun Clip2のほうが繊細な音が出てる気がしました。クラブミュージックとかファンク、派手なポップスとかはSOUNDPEATS UU2のダイナミックEQが迫力あっていい気がします。\nカスタマイズ性の面では、SOUNDPEATS UU2の方はダイナミックEQを常時ONがおすすめ＝普通のEQはOFFになるので、細かい音の好みでのカスタマイズはしにくいという弱点があります。\nあと実用とはあんまり関係ないと思いますが一応言うと、SOUNDPEATS UU2のほうがデカい音が出ます。この音量で聴くことはないなというくらいデカい音が出る。ただ普通に聞くにはEarfun Clip2でも十分です。\nSOUNDPEATS UU2Earfun Clip2\n\n\n    \nスペック・機能面の比較\nどっちも物理ボタン搭載なのがうれしい。…",
@@ -5675,7 +5690,18 @@
       "title": "ふーふー",
       "feedUrl": "https://note.com/nanana555/rss",
       "siteUrl": "https://note.com/nanana555",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/nanana555/n/n8f7ca83ef1b3",
+          "author": null,
+          "description": "まだ何も記事を書いてないのに有料プランに入ってくれた人がいるので日記をたまに書いていこうと思う。\n最近は映画を観ている。\n邦画も洋画も問わず見ているが、フィクションはノンフィクションのこの世界を彩ってくれる。\n元から映画が好きだった。専門学校にいた頃から毎週授業で観たりしていたら脚本を書いていた。\nNetflixもAmazonプライムビデオも広告がウザすぎて最上級プランに変えた。\nあと19日にMX4Dでマイケルを観たけど普通に観た方が集中できたと思う。\n4DXと同じタイプの席だった\n続きをみる",
+          "link": "https://note.com/nanana555/n/n8f7ca83ef1b3",
+          "publishedOn": "2026-06-24T13:55:12.000Z",
+          "wordCount": null,
+          "title": "日記 260624",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "なのはなぐらむ",
@@ -8348,6 +8374,16 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/aws_lambda_microvms.html",
+          "author": null,
+          "description": "Amazon Web Servicesは、AWS Lambda上で一時的にステートフルな実行環境をMicroVMによって安全に隔離された状態で用意できる新サービス「AWS Lambda Micro VMs」を発表しました。 AWS Lamb...",
+          "link": "https://www.publickey1.jp/blog/26/aws_lambda_microvms.html",
+          "publishedOn": "2026-06-24T15:40:24.000Z",
+          "wordCount": null,
+          "title": "AWS Lambda MicroVMs登場。サーバレスの手軽さでステートフルかつ隔離された実行環境を提供",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/typescriptgo10typescript_70.html",
           "author": null,
