@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-25T13:39:42.978Z</updated>
+    <updated>2026-06-25T14:55:55.593Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Arduino IDE や KiCad のライブラリフォルダを移動してCドライブを空ける]]></title>
+        <id>hatenablog://entry/14945776032045779696</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/06/25/234014"/>
+        <updated>2026-06-25T14:40:14.000Z</updated>
+        <summary type="html"><![CDATA[Cドライブ減量大作戦、電子工作周りのツール編です。
+Arduino IDEのライブラリフォルダを移動
+Arduino IDEのライブラリファイルがデフォルトだと C:\Users\（ユーザー名）\AppData\Local\ の中に入ります。これが10GBくらいあって意外に大きかったので移動します。
+①移動先のフォルダを作ります。今回は E:\ArduinoLibs としました。
+
+KiCadのライブラリを移動
+Arduinoほどではありませんが、部品ライブラリが5GBくらいありました。ついでなので移動しましょう。
+①移動先のフォルダを作ります。今回は E:\KiCadShare\share としました。
+
+そのままKiCadを起動して動作確認しておきましょう。]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Twitter22]]></title>
         <id>https://note.com/ecolidelvsvc11/n/nd4d993fd3327</id>

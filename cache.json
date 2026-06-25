@@ -2424,6 +2424,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032045779696",
+          "author": null,
+          "description": "Cドライブ減量大作戦、電子工作周りのツール編です。\nArduino IDEのライブラリフォルダを移動\nArduino IDEのライブラリファイルがデフォルトだと C:\\Users\\（ユーザー名）\\AppData\\Local\\ の中に入ります。これが10GBくらいあって意外に大きかったので移動します。\n①移動先のフォルダを作ります。今回は E:\\ArduinoLibs としました。\n\nKiCadのライブラリを移動\nArduinoほどではありませんが、部品ライブラリが5GBくらいありました。ついでなので移動しましょう。\n①移動先のフォルダを作ります。今回は E:\\KiCadShare\\share としました。\n\nそのままKiCadを起動して動作確認しておきましょう。",
+          "link": "https://nomolk.hatenablog.com/entry/2026/06/25/234014",
+          "publishedOn": "2026-06-25T14:40:14.000Z",
+          "wordCount": 880,
+          "title": "Arduino IDE や KiCad のライブラリフォルダを移動してCドライブを空ける",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/a7895ebae6d6b07180d9c241654f69989eef2937/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260624%2F20260624022419.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a7895ebae6d6b07180d9c241654f69989eef2937/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260624%2F20260624022419.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032045779691",
           "author": null,
           "description": "Cドライブがいっぱいでピンチなので、容量削減についてのエントリを何本か書いていきます。1本目です。\n\nPC版のSpotifyアプリを使っていると、C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data に曲のデータのキャッシュがどんどんたまっていきます。\n※設定から保存先を変更できないのでシンポリックリンクを使います。シンポリックリンクが何かを理解してからやった方がいいです\nやり方\n①元のフォルダを調べます。C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data です。\n②移動先のフォルダを作ります。今回はEドライブに E:\\SpotifyCache を作りました。\n③Spotifyアプリを起動している場合は終了させます。\n④C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data を、Data フォルダごと E:\\SpotifyCache に移動させます。（コピーじゃなくて移動）\n⑤コマンドプロンプトを管理者権限で開く（windowsのタスクバーにある検索欄に「cmd」と入れると、ポップアップでコマンドプロンプトが出てくるので「管理者として実行」）\n⑥以下を実行（パスは例なので書き換えて）\nmklink /D \"C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data\" \"E:\\SpotifyCache\\Data\"\n⑦エクスプローラで C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data を開き、E:\\SpotifyCache\\Data が開くことを確認\nあとは普通にSpotifyを起動して、使ってOKです。\n間違えた場合\n⑦の確認段階でもし間違っていた場合、\nrmdir \"C:\\Users\\（ユーザー名）\\AppData\\Local\\Spotify\\Data\"\nで一回シンボリックリンクを削除して⑥からやりなおしましょう。",
