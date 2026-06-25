@@ -1067,6 +1067,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032046085932",
+          "author": null,
+          "description": "東京国立博物館に行っていた。\n色々な展示があって良かった。備前焼が置いてあって嬉しかった。\n博物館に寄ったあと、時間があったので上野駅から東京駅まで歩いた。博物館内を歩き回ったのと合わせて歩数が2万歩を超えていた。\n途中秋葉原で秋月電子に寄って電子部品を少し買った。\ngotanda-rb.connpass.com\nGotanda.rb に参加していた。帰りの電車の都合で途中までになってしまった。\nLTで「Raspberry Pi Pico実機で遊びたい!」と言っている人がいて、秋月で買っていって押し付けても良かったなと考えていた。\n参加者は初対面の人がほとんどで、新しい人がコミュニティに入っているのは良いことだなあと思っていた。思考が老人化している。\nGotanda.rb にはすごく久しぶりの参加だった。多分7年ぶりとかだと思う。",
+          "link": "https://commits.hatenablog.com/entry/2026/06/25/100000",
+          "publishedOn": "2026-06-25T01:00:00.000Z",
+          "wordCount": 523,
+          "title": "2026-06-24",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032046085932/1782350082",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032046085932/1782350082"
+        },
+        {
           "id": "hatenablog://entry/14945776032045392958",
           "author": null,
           "description": "github.com\njson gemのマルチバイト関連のバグ修正をしていた。\njson gemに最近入った機能(まだリリースされていない)に、JSON::ResumableParserというのがある。これがかなり熱い機能で、未完成のJSON文字列をパースできるようになる。streamから流れてくるJSON文字列をパースするような用途で使うもの。\n特に熱いのが、その時点で確定したパース結果のオブジェクトをJSON::ResumableParser#partial_valueとして取得できたり、その時点で未確定の部分の文字列をJSON::ResumableParser#restとして取得できるところ。めっちゃ便利。\nということで、この機能を試していたらバグを踏んだので修正した。\n今日はお昼に鎌倉まで遊びに行っていた。\nmixi.social\nお昼ごはんは麻婆豆腐を食べた。うまみがしっかりあってめっちゃ美味しかった。\nmixi.social\nお昼ごはんの後にお茶を飲んでいた。ビールサーバーからお茶をつぐ初体験。というかビールサーバーを触ったのすら初めて。ほうじ茶を飲んだのだけど、スッキリ飲みやすくてよかった。\n面白い体験と、いろんなお茶が置いてあって、いい体験を売っているお店だなあとなった。\n夜は飲み会で渋谷まで行っていた。町中でネズミが2匹うろちょろしていて、渋谷を感じた。\nお土産に備前焼を持っていったので、ついでに備前焼のことを調べていた。青備前という種類を初めて知ったのだけど、めっちゃかっこいいし緋襷とセットで欲しい。\nachem.okayama-u.ac.jp\n緋襷はコランダムらしい。実質Ruby。\n家に備前焼はマグカップぐらいしかないので、食器など買っても良いなと思った。今度備前焼を売っているお店に行ったらなにか買おうかしら。焼き魚用の皿がほしいとずっと思っているからそれとかかなあ。",
@@ -3090,6 +3105,21 @@
       "feedUrl": "https://staff.hatenablog.com/rss",
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032046258108",
+          "author": null,
+          "description": "2026月6月25日現在、はてなブログ / はてなCMSにおいて、記事の投稿に失敗する不具合が発生しています。\n追記\n原因はシステムの過負荷によるもので、10:17ごろ解消しました。遅延していた予約投稿やトップページ等への反映も解消を確認しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2026/06/25/092901",
+          "publishedOn": "2026-06-25T00:29:01.000Z",
+          "wordCount": null,
+          "title": "【復旧済み】はてなブログ / はてなCMSで記事投稿に失敗する不具合が発生しています",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032046258108/1782350994",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032046258108/1782350994"
+        },
         {
           "id": "hatenablog://entry/14945776032043664679",
           "author": null,
@@ -6663,16 +6693,6 @@
           "publishedOn": "2026-04-04T02:48:31.000Z",
           "wordCount": 425,
           "title": "Claude Codeの「ソースコード流出」をどう見るのか",
-          "imageUrl": null
-        },
-        {
-          "id": "69c67652c0e2bf00014ae790",
-          "author": "laiso",
-          "description": "コーディングエージェントの普及にともない、エージェントをリモートで動作させるための専用実行環境——リ",
-          "link": "https://blog.lai.so/agents-sandbox/",
-          "publishedOn": "2026-03-27T12:34:57.000Z",
-          "wordCount": null,
-          "title": "コーディングエージェント向けのリモートサンドボックス",
           "imageUrl": null
         }
       ]
