@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-26T12:36:58.205Z</updated>
+    <updated>2026-06-26T13:37:25.225Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9310,28 +9310,6 @@ nonstructured.com]]></summary>
 GameGaz Daily 2026.3.29 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-03-28]]></title>
-        <id>hatenablog://entry/17179246901370060555</id>
-        <link href="https://commits.hatenablog.com/entry/2026/03/29/100000"/>
-        <updated>2026-03-29T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-PicoRubyに出していた、SteepのアップデートPRがマージされた。
-出雲Ruby会議01の懇親会で、いきなりmakicamelさんにgithub.com
-PicoRubyに出していた、SteepのアップデートPRがマージされた。
-出雲Ruby会議01の懇親会で、いきなりmakicamelさんにPicoRubyテーブルに拉致されたのがきっかけだった。そこではすみさんに「Steepをアップデートしたらなんか動かないんだけど」と相談をもらったのがきっかけだった。
-一番大きな問題は、Steepのバージョンアップに伴ってcoreのrbs定義を読み込まないようにしていたことだった。
-RBSはCRubyの型定義を提供しているのだけど、これはPicoRubyが定義するメソッドの型定義とはちょっと違うので、今までは自前で型定義をしていた。
-しかしCRubyにそこそこ近くなってきたしCRuby相当の型定義を使おうと変更したのが、色々な問題を連れてきていて大変だった。
-作業はだいたいClaude Codeにやらせた。「型エラーが出ないようにする」ことはClaudeで出来ても、それが期待する形になっていないことがかなり多くて、それを地道に直していくのが中々大変だった。
-全体的にとても大変な作業ではあったけれど、様々なコードでまんべんなく(?)型エラーが出たおかげで、PicoRubyの多くの要素を知ることが出来たのは良い機会だった。
-github.com
-Raspberry Pi Pico の bootsel ボタンが押されているかどうかを検知するためのpicogemを実装した。
-はすみさんに「PicoRuby本体にあってもよいのでは」と言われたので、PicoRuby本体に実装を移すPRをしたい。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>

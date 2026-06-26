@@ -1470,21 +1470,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901371799086/1775091601"
-        },
-        {
-          "id": "hatenablog://entry/17179246901370060555",
-          "author": null,
-          "description": "github.com\nPicoRubyに出していた、SteepのアップデートPRがマージされた。\n出雲Ruby会議01の懇親会で、いきなりmakicamelさんにgithub.com\nPicoRubyに出していた、SteepのアップデートPRがマージされた。\n出雲Ruby会議01の懇親会で、いきなりmakicamelさんにPicoRubyテーブルに拉致されたのがきっかけだった。そこではすみさんに「Steepをアップデートしたらなんか動かないんだけど」と相談をもらったのがきっかけだった。\n一番大きな問題は、Steepのバージョンアップに伴ってcoreのrbs定義を読み込まないようにしていたことだった。\nRBSはCRubyの型定義を提供しているのだけど、これはPicoRubyが定義するメソッドの型定義とはちょっと違うので、今までは自前で型定義をしていた。\nしかしCRubyにそこそこ近くなってきたしCRuby相当の型定義を使おうと変更したのが、色々な問題を連れてきていて大変だった。\n作業はだいたいClaude Codeにやらせた。「型エラーが出ないようにする」ことはClaudeで出来ても、それが期待する形になっていないことがかなり多くて、それを地道に直していくのが中々大変だった。\n全体的にとても大変な作業ではあったけれど、様々なコードでまんべんなく(?)型エラーが出たおかげで、PicoRubyの多くの要素を知ることが出来たのは良い機会だった。\ngithub.com\nRaspberry Pi Pico の bootsel ボタンが押されているかどうかを検知するためのpicogemを実装した。\nはすみさんに「PicoRuby本体にあってもよいのでは」と言われたので、PicoRuby本体に実装を移すPRをしたい。",
-          "link": "https://commits.hatenablog.com/entry/2026/03/29/100000",
-          "publishedOn": "2026-03-29T01:00:00.000Z",
-          "wordCount": 542,
-          "title": "2026-03-28",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901370060555/1774746002",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/17179246901370060555/1774746002"
         }
       ]
     },
