@@ -2,10 +2,72 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-26T03:00:40.876Z</updated>
+    <updated>2026-06-26T04:35:19.725Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ドライブの容量を食っているフォルダ／ファイルがビジュアルでわかるWinDirStatを使う]]></title>
+        <id>hatenablog://entry/14945776032045779671</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/06/26/125815"/>
+        <updated>2026-06-26T03:58:15.000Z</updated>
+        <summary type="html"><![CDATA[Cドライブ減量大作戦の最終回です。（順番が前後しますが）そもそも何がドライブの容量を食っているのか、それを調べるツールを紹介します。
+何が容量を食っているのか調べる
+WinDirStatというツールを使うと、ドライブの中身を可視化できます。
+インストールして実行するとドライブを選ぶ画面が出るので、調べたいドライブをダブルクリック、しばらく待つとこんな感じで可視化されます。
+
+サイケデリック！
+
+ここではUsersとかProgram Filesなどが特に大きいことが分かりますが、「＋」を押して展開すると
+
+Program Filesの中ではAdobeやCommon Files、Oculusなどが容量を食っていることが分かります。
+で、さらに便利なのが下半分で、
+
+使用状況をビジュアルで見ることができます。
+一番下にファイルパスが出ていますよね。マウスカーソルを四角に当てるとここにそのファイルのパスが表示されます。右クリックするとエクスプローラで開いたりもできます。
+あと、これは言葉で説明しづらいのですが……フォルダごとに長方形を形成するようにブロックが集まって表示されるので、ファイル単位だけでなくフォルダ単位での大きさも直感的にわかります。
+たとえば…
+
+例えばこんな感じで、なにが容量を圧迫しているかわかるわけです。
+容量の減らし方
+先に2つのエントリを公開しましたが
+nomolk.hatenablog.com
+nomolk.hatenablog.com
+どっちもニッチな話ではあるので、ほかにも容量削減に役立ちそうなリンクをいくつか置いておきます。
+www.dospara.co.jp
+learn.microsoft.com
+www.videoedit-performance.com
+u-pc.jp
+
+チマチマ容量空けるより大容量のドライブに買い替えた方が早いんですけどね。
+
+
+Western Digital ウエスタンデジタル 内蔵SSD 1TB WD Black SN7100 (読取り最大 7,250MB/秒) M.2-2280 NVMe WDS100T4X0E-EC 【国内正規代理店品】
+
+ウエスタンデジタル(Western Digital)
+Amazon
+
+
+
+【Amazon.co.jp限定】Western Digital ウエスタンデジタル WD Blue 内蔵HDD ハードディスク 4TB CMR 3.5inch SATA キャッシュ128MB 5400rpm WD40EZZX-AJP エコパッケージ 【国内正規代理店品】
+
+ウエスタンデジタル(Western Digital)
+Amazon]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI開発者ニュース #3 Codex Droplet、Notion Agents、AI SDK 7]]></title>
+        <id>6a3def43d9deb90001fcadae</id>
+        <link href="https://blog.lai.so/2026-06-26/"/>
+        <updated>2026-06-26T03:18:56.000Z</updated>
+        <summary type="html"><![CDATA[AI開発、コーディングエージェント、devtools 周辺で読んでおきたい話題をまとめます。
+これは有料購読者向けのボー]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2026年6月-4】インターネット性欲猿になってしまうよこのままでは]]></title>
         <id>hatenablog://entry/14945776032046639205</id>
@@ -9246,19 +9308,6 @@ Raspberry Pi Pico の bootsel ボタンが押されているかどうかを検�
 はすみさんに「PicoRuby本体にあってもよいのでは」と言われたので、PicoRuby本体に実装を移すPRをしたい。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[monome]]></title>
-        <id>https://monome.org/news/260328.html</id>
-        <link href="https://monome.org/"/>
-        <updated>2026-03-28T16:11:11.000Z</updated>
-        <summary type="html"><![CDATA[03/28/26
- 
-iii is a new platform which allows scripts to be run on grids and arcs, connecting directly to synths via usb-MIDI. it's available free as an firmware update to recent-ish rp2040-based hardware.
-shown above, the script wake playing atrium.]]></summary>
-        <author>
-            <name>monome</name>
         </author>
     </entry>
     <entry>
