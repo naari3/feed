@@ -998,21 +998,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901371450584/1774973079"
-        },
-        {
-          "id": "hatenablog://entry/17179246901370952834",
-          "author": null,
-          "description": "Zen of AI Coding という記事を読んだ。コーディングエージェントを1年使い込んだ人が、AI時代の開発原則を16個にまとめたもの。Zen of Pythonのオマージュだ。\n出発点はシンプルで、「コードを書くコストがほぼゼロになった。そこから全部変わる」という話。この前提から何が変わるかを一つずつ整理していて、構造がとてもいい。\nコストが下がると何が変わるか\nまずリファクタリングのハードルが下がる。「Reactを選んだけど2ヶ月で後悔した。エージェントに書き直させればいい」。一度決めたら戻れなかった技術選定が、仮置きになる。実際に著者は3ヶ月でCMSを4回スクラッチで作り直したらしい。間違った判断がそこまで痛くなくなると、とりあえず動くものを作って試すのが正解になる。綺麗な設計書よりも動くコードのほうがエージェントにとってはいいコンテキストになる、というのも面白い。\n技術的負債も返しやすくなる。依存の更新、APIのマイグレーション、古いパターンの書き換え。どれもエージェントに投げれば終わる類の作業だ。負債がなくなるわけではないけど、返済コストが下がると「あとでやる」の言い訳が通らなくなる。\nそしてボトルネックが移動する。実装がボトルネックでなくなると、10個を並行で作れてしまう。でも10個を並行でレビューして、判断して、リリースすることはできない。詰まるのはプロダクトの意思決定、要件定義、セキュリティレビュー、リリースフローのほうになる。ボトルネックはコードではなく人間の頭になった。\n全部「コードが安くなった」という一点から導かれていて、説得力がある。\nそれでも速く作ればいいわけではない\n「速く作ったゴミはゴミだ」。速さは気持ちいい。でもベロシティやコード行数で進捗を測るのは昔から悪手だった。何でもすぐ作れるようになった今だからこそ、何を作るかの判断に規律がいる。\n「壊れ方を先に考えろ」。エンジニアの仕事はコードを書くことではなく、システムが壊れないことを保証することだ、と。実際に著者のエージェントは.envファイルをgitにコミットしようとしたらしい。こういうリアルな事故の話があるから信用できる。\nソフトウェアは作った瞬間から保守コストが発生する。プロダクトとして使われて初めて資産になる。作るのが簡単になった今、機能を足したくなる誘惑はどんどん強くなる。でも使われない機能を作っても負債が増えるだけだ。\n他にも16個の原則すべてが読み応えあるので、ぜひ元記事を読んでほしい。\nnonstructured.com",
-          "link": "https://blog.nishimu.land/entry/2026/03/30/000000?utm_source=feed",
-          "publishedOn": "2026-03-29T15:00:00.000Z",
-          "wordCount": 276,
-          "title": "コードがタダ同然になった時代の開発原則 - Zen of AI Coding",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901370952834/1774870453",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/17179246901370952834/1774870453"
         }
       ]
     },
@@ -7187,6 +7172,16 @@
       "siteUrl": "https://gamegaz.com",
       "articles": [
         {
+          "id": "https://gamegaz.com/?p=45693",
+          "author": "mamosuke",
+          "description": "PS5 BDJB Modified ISOs v1.25,Themed-BD-UN-JB-Poops-Autoloader 1.6.21,Emu4VitaPlus v0.71,vitaki-vitarps5(VitakiFork) v3.0.2,NxUsbX360Con 1.0.0,NX Venom 14.0.1,MinivMac DSi Test release D,rom-converto v0.12.0,StellarOS(stellar-recovery) v2.0.1,nullDC4Wii alpha 0.35,PCSX2 v2.7.431,ARMSX2 2.3.9(ARMSX2 Refresh V20),shadPS4 Pre-release-shadPS4-2026-06-26-9fb948c,xenia 1e7c1f6_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.6.27 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026062745693/",
+          "publishedOn": "2026-06-27T03:24:50.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.6.27",
+          "imageUrl": null
+        },
+        {
           "id": "https://gamegaz.com/?p=45689",
           "author": "mamosuke",
           "description": "ps4-hen pre-release-main-181,PS3DEV(PSL1GHT SDK) nightly-2026-06-25,vita-save-sync v0.2.0,ovl-sysmodules v1.5.3,Breeze beta108.6,nullDC4Wii alpha 0.33,TempGBA4PSP-mod 20260625,gopher64 v1.1.32,PCSX2 v2.7.430,ARMSX2 2.3.6,ARMSX2-NX v1.2.0,shadPS4 Pre-release-shadPS4-2026-06-25-60a5b23,OpenTTD 16.0-beta1,xenia 0b4e6c4_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.6.26 first appeared on 大人のためのゲーム講座.",
@@ -9237,26 +9232,6 @@
           "publishedOn": "2026-03-30T15:50:34.000Z",
           "wordCount": null,
           "title": "AWS、数秒でデータベース作成可能な新機能をAmazon Aurora PostgreSQLサーバーレスに搭載",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/swiftandroidswift_sdk_for_androidswift_63.html",
-          "author": null,
-          "description": "Appleは、初めて正式版となった「Swift SDK for Android」を含むSwift言語の最新版となる「Swift 6.3」をリリースしました。 これによりSwiftでAndroid対応のネイティブアプリケーション開発が可能とな...",
-          "link": "https://www.publickey1.jp/blog/26/swiftandroidswift_sdk_for_androidswift_63.html",
-          "publishedOn": "2026-03-29T15:35:58.000Z",
-          "wordCount": null,
-          "title": "SwiftでAndroidアプリを作れる「Swift SDK for Android」正式版が登場。Swift 6.3がリリース",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/post_309.html",
-          "author": null,
-          "description": "デジタル庁は3月27日、令和8年（2026年）度におけるガバメントクラウド整備のための新規クラウドサービスが決定されたことを発表しました。 これを受けてさくらインターネットもニュースリリースを公開しました。 【ニュースリリース】さくらインタ...",
-          "link": "https://www.publickey1.jp/blog/26/post_309.html",
-          "publishedOn": "2026-03-29T15:32:08.000Z",
-          "wordCount": null,
-          "title": "デジタル庁、さくらのクラウドがガバメントクラウドのすべての技術要件を満たしたと発表。ガバメントクラウドに正式決定",
           "imageUrl": null
         }
       ]
