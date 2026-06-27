@@ -2424,6 +2424,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032046978292",
+          "author": null,
+          "description": "※早く本題に入れやという人はこちらへどうぞ→あなたの家にもSSDがあるかもしれない\nHDDに入れていたゲームが重くなり、SSDに移したいけど容量ないからな……と思っていたら意外な場所に死蔵SSDが眠ってるのを発見、移行できたという話です。説明の前に、まずはBefore-Afterの比較動画をご覧ください。\nyoutu.be\nカクつきやフリーズがなくなることで超快適に。ハードディスクで４分27秒かかっていた日課が２分で終わるようになりました！！！！！！！！すげー！！\nゼンゼロと私\nいま見ていただいたのは、HoYoverseが運営する都市ファンタジーアクションRPG、ゼンレスゾーンゼロです。2024年のサービス開始時に「最近の大作ゲーどんな感じか見てみるか」と思って何となく始めたのですがそれ以来マジで毎日やっています。すべてのストーリーやイベントをじっくり楽しむことはもちろん、徹夜で原稿を書いている日も海外旅行先でもなんとかして一日10分の時間を確保してデイリーをこなし、もうすぐ2周年を迎えるこのゲームを毎日欠かさずプレイしてきました。\n\nそして迎えた記念すべきver3.0。新たな地、ロスカリファへの冒険には、いやが応にも胸が高まります。新属性「風」の登場によるゲーム環境の変化も楽しみでありながら、個人的にはヴェリナの登場により初期の限定Ｓ級であり個人的に操作していて一番楽しいキャラであるジェーンの活躍の場が増えたこともうれしい限りです。メインストーリーのノルムーも、最高でしたね…。\nなんですけど、反面でかなり辛いことも起きてしまいました。……ゲームのカクつきです。バトル中に限らずゲーム全体において動作がガクガクになり、ロード画面が全然終わらず、メインストーリーに至っては動画シーンで5秒ほどの大幅な音ズレが発生してめちゃくちゃ没入がそがれる事態に。以前からちょっと辛さを感じては…",
+          "link": "https://nomolk.hatenablog.com/entry/2026/06/27/123000",
+          "publishedOn": "2026-06-27T03:30:00.000Z",
+          "wordCount": 926,
+          "title": "古いPCから取った内蔵SSDを、ケースに入れて外付ドライブにする～PC版ゼンゼロが重い、カクつくあなたへ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/b7c56f9a791a5dd820d4dabd43515ead5c9b86cf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260627%2F20260627112658.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b7c56f9a791a5dd820d4dabd43515ead5c9b86cf/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260627%2F20260627112658.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032045779671",
           "author": null,
           "description": "Cドライブ減量大作戦の最終回です。（順番が前後しますが）そもそも何がドライブの容量を食っているのか、それを調べるツールを紹介します。\n何が容量を食っているのか調べる\nWinDirStatというツールを使うと、ドライブの中身を可視化できます。\nインストールして実行するとドライブを選ぶ画面が出るので、調べたいドライブをダブルクリック、しばらく待つとこんな感じで可視化されます。\n\nサイケデリック！\n\nここではUsersとかProgram Filesなどが特に大きいことが分かりますが、「＋」を押して展開すると\n\nProgram Filesの中ではAdobeやCommon Files、Oculusなどが容量を食っていることが分かります。\nで、さらに便利なのが下半分で、\n\n使用状況をビジュアルで見ることができます。\n一番下にファイルパスが出ていますよね。マウスカーソルを四角に当てるとここにそのファイルのパスが表示されます。右クリックするとエクスプローラで開いたりもできます。\nあと、これは言葉で説明しづらいのですが……フォルダごとに長方形を形成するようにブロックが集まって表示されるので、ファイル単位だけでなくフォルダ単位での大きさも直感的にわかります。\nたとえば…\n\n例えばこんな感じで、なにが容量を圧迫しているかわかるわけです。\n容量の減らし方\n先に2つのエントリを公開しましたが\nnomolk.hatenablog.com\nnomolk.hatenablog.com\nどっちもニッチな話ではあるので、ほかにも容量削減に役立ちそうなリンクをいくつか置いておきます。\nwww.dospara.co.jp\nlearn.microsoft.com\nwww.videoedit-performance.com\nu-pc.jp\n\nチマチマ容量空けるより大容量のドライブに買い替えた方が早いんですけどね。\n\n\nWestern Digital ウエスタンデジタル 内蔵SSD 1TB WD Black SN7100 (読取り最大 7,250MB/秒) M.2-2280 NVMe WDS100T4X0E-EC 【国内正規代理店品】\n\nウエスタンデジタル(Western Digital)\nAmazon\n\n\n\n【Amazon.co.jp限定】Western Digital ウエスタンデジタル WD Blue 内蔵HDD ハードディスク 4TB CMR 3.5inch SATA キャッシュ128MB 5400rpm WD40EZZX-AJP エコパッケージ 【国内正規代理店品】\n\nウエスタンデジタル(Western Digital)\nAmazon",
