@@ -2409,6 +2409,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032047325872",
+          "author": null,
+          "description": "世の中には音階を読むための譜読み練習アプリはたくさんあるのですが、リズムを読むためのものがないんですよね。ので作りました。スマホで見にくい場合は一番下の「設定」で１小節にすると見やすくなるよ。\n↓↓↓↓\n\n\n  :root{\n    --panel:#f8fafc; --panel2:#eef2f7; --line:#dbe3ec;\n    --text:#1f2937; --muted:#64748b; --accent:#2563eb;\n    --good:#16a34a; --bad:#dc2626;\n  }\n  /* ブログ埋め込み用にウィジェット全体をスコープ。外側のCSSの影響も受けにくくする */\n  .rn-app{box-sizing:border-box;}\n  .rn-app *{box-sizing:border-box;}\n  .rn-app{\n    font-family:\"Hiragino Kaku Gothic ProN\",\"Yu Gothic\",Meiryo,sans-serif;\n    color:var(--text); background:transparent;\n    display:flex; flex-direction:column; align-items:center;\n    padding:16px 12px; line-height:1.5;\n  }\n  .rn-app h1{font-size:22px; margin:0 0 4px; color:var(--text);}\n  .rn-app .sub{color:var(--muted); font-size:13px;}\n  .title{text-align:center; margin-bottom:18px;}\n  .card{\n    ba…",
+          "link": "https://nomolk.hatenablog.com/entry/2026/06/28/191324",
+          "publishedOn": "2026-06-28T10:13:24.000Z",
+          "wordCount": null,
+          "title": "リズム譜読み練習アプリを作りました。使ってみてね",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/2c955f8949291da12fdc24dfbc083fe4997b652d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260628%2F20260628191425.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2c955f8949291da12fdc24dfbc083fe4997b652d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260628%2F20260628191425.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032046978292",
           "author": null,
           "description": "※早く本題に入れやという人はこちらへどうぞ→あなたの家にもSSDがあるかもしれない\nHDDに入れていたゲームが重くなり、SSDに移したいけど容量ないからな……と思っていたら意外な場所に死蔵SSDが眠ってるのを発見、移行できたという話です。説明の前に、まずはBefore-Afterの比較動画をご覧ください。\nyoutu.be\nカクつきやフリーズがなくなることで超快適に。ハードディスクで４分27秒かかっていた日課が２分で終わるようになりました！！！！！！！！すげー！！\nゼンゼロと私\nいま見ていただいたのは、HoYoverseが運営する都市ファンタジーアクションRPG、ゼンレスゾーンゼロです。2024年のサービス開始時に「最近の大作ゲーどんな感じか見てみるか」と思って何となく始めたのですがそれ以来マジで毎日やっています。すべてのストーリーやイベントをじっくり楽しむことはもちろん、徹夜で原稿を書いている日も海外旅行先でもなんとかして一日10分の時間を確保してデイリーをこなし、もうすぐ2周年を迎えるこのゲームを毎日欠かさずプレイしてきました。\n\nそして迎えた記念すべきver3.0。新たな地、ロスカリファへの冒険には、いやが応にも胸が高まります。新属性「風」の登場によるゲーム環境の変化も楽しみでありながら、個人的にはヴェリナの登場により初期の限定Ｓ級であり個人的に操作していて一番楽しいキャラであるジェーンの活躍の場が増えたこともうれしい限りです。メインストーリーのノルムーも、最高でしたね…。\nなんですけど、反面でかなり辛いことも起きてしまいました。……ゲームのカクつきです。バトル中に限らずゲーム全体において動作がガクガクになり、ロード画面が全然終わらず、メインストーリーに至っては動画シーンで5秒ほどの大幅な音ズレが発生してめちゃくちゃ没入がそがれる事態に。以前からちょっと辛さを感じては…",

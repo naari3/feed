@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-28T09:58:53.692Z</updated>
+    <updated>2026-06-28T10:49:06.223Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[リズム譜読み練習アプリを作りました。使ってみてね]]></title>
+        <id>hatenablog://entry/14945776032047325872</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/06/28/191324"/>
+        <updated>2026-06-28T10:13:24.000Z</updated>
+        <summary type="html"><![CDATA[世の中には音階を読むための譜読み練習アプリはたくさんあるのですが、リズムを読むためのものがないんですよね。ので作りました。スマホで見にくい場合は一番下の「設定」で１小節にすると見やすくなるよ。
+↓↓↓↓
+
+
+  :root{
+    --panel:#f8fafc; --panel2:#eef2f7; --line:#dbe3ec;
+    --text:#1f2937; --muted:#64748b; --accent:#2563eb;
+    --good:#16a34a; --bad:#dc2626;
+  }
+  /* ブログ埋め込み用にウィジェット全体をスコープ。外側のCSSの影響も受けにくくする */
+  .rn-app{box-sizing:border-box;}
+  .rn-app *{box-sizing:border-box;}
+  .rn-app{
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+    color:var(--text); background:transparent;
+    display:flex; flex-direction:column; align-items:center;
+    padding:16px 12px; line-height:1.5;
+  }
+  .rn-app h1{font-size:22px; margin:0 0 4px; color:var(--text);}
+  .rn-app .sub{color:var(--muted); font-size:13px;}
+  .title{text-align:center; margin-bottom:18px;}
+  .card{
+    ba…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[WIP]]></title>
         <id>hatenablog://entry/14945776032047615508</id>
