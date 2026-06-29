@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-29T00:24:30.219Z</updated>
+    <updated>2026-06-29T01:41:00.742Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -113,6 +113,16 @@ GameGaz Daily 2026.6.28 first appeared on 大人のためのゲーム講座.]]><
 PS6の製造コスト ここ数ヶ月で200ドル上昇 現時点で1000ドルに first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[シャドーAI対策は「禁止」より「運用で回す」が効く   ‐Cloudflareを例に考える、可視化・定義・制御の3ステップ‐]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=36831</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/36831"/>
+        <updated>2026-06-27T07:18:10.000Z</updated>
+        <summary type="html"><![CDATA[今回はIIJのグループ会社である、IIJグローバルソリューションズの木城 良太さんからの寄稿です。 近年話題となっている”シャドーAI”について、「リスクだから禁止しよう」では...]]></summary>
+        <author>
+            <name>IIJ Engineers Blog編集部</name>
         </author>
     </entry>
     <entry>
@@ -9164,43 +9174,6 @@ grep -n -B 10 -A 5 "KBBL" /tmp/dsdt.dsl
 41251…]]></summary>
         <author>
             <name>Lambdaカクテル</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[オリジナル基板を注文して、光る基板バッジを作ると最高～作り方がマジでわかる完全解説（動画付き）]]></title>
-        <id>hatenablog://entry/17179246901369500498</id>
-        <link href="https://nomolk.hatenablog.com/entry/2026/03/31/220000"/>
-        <updated>2026-03-31T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[※この記事はPCBサービスのPCBWayの提供でお送りしております。
-デデン
-みなさんご存じかどうかわからないですが基板っていまめちゃめちゃ安く作れるんですよ。10枚で$5とか。
-それとは別の話で、先日ニコ動アワードでルーキー賞をいただいた流れでニコニコ超会議に出展することになりました。何か物販でもやろっかなーということで「あ、そういえば基板バッジや！」と思い立ちまして……やってみたらこんな感じで作ることができました。
-
-
-
-
-
-ウッ、最高……楽しい……
-
-というわけで、このエントリでは基板バッジ（および基板スタンド）の作り方を解説していきます。
-ちなみに動画版もあるので動画で見たい人はこちらをどうぞ。
-www.youtube.com
-作ったバッジと基板スタンドはニコニコ超会議で販売するほか、オンラインストアでも予約を受け付けています。
-nomolk.base.shop
-基板バッジの基礎知識
-バッジをデザインする前に、どういうものであれば作れるのかを知っておく必要があります。
-
-上半分が色見本、下半分には普通の電子回路の基板が作ってあります。
-基板を構成する素材
-レジスト……一般的な基板の表面素材。PCBWayの場合は以下の色が選べますが、１枚の基板の中で使えるのは１色だけです。
-
-シルク……基板表面に図や文字を印刷するための塗料。これもPCBWayの場合は色が選べます。同じく基板ごとに１色だけ。
-
-基材……これは基板の中身の素材です。外にはあんまり露出させない部分ですが、出そうと思えば出せるのでバッジづくりにおいてはデザイン要素として使えます。
-銅……一般的な基板ではランド（部品をはんだ付けする部分）などに使われる素材です。あと基板の内側を通っている配線も銅です。銅といいながら色がシルバーですが、これは表面に露出させる場合は表面加工がおこなわれるためです。
-あとは、第五の…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>
