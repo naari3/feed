@@ -2,10 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-29T01:41:00.742Z</updated>
+    <updated>2026-06-29T03:01:42.880Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[今週のはてなブログランキング〔2026年6月第4週〕]]></title>
+        <id>hatenablog://entry/14945776032047823967</id>
+        <link href="https://blog.hatenablog.com/entry/2026/06/29/120000"/>
+        <updated>2026-06-29T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログ独自の集計による人気記事のランキング。2026年6月21日（日）から2026年6月27日（土）〔2026年6月第4週〕のトップ30です*1。
+#
+    タイトル／著者とブックマーク
+    
+1
+    「ていねいな暮らしという規範」に従う以外に道はない - シロクマの屑籠
+ by id:p_shirokuma 
+    
+2
+    おれたちはどう暮らせばいいのか - てのひらを、かえして
+ by id:anmin7 
+    
+3
+    実家への毎月の仕送りを、51歳でやめた - Really Saying Something
+ by id:toya 
+    
+4
+    「生活が下手」勢 - 51歳、まな板の上で人生を見直す
+ by id:toya 
+    
+5
+    NotebookLMで要件定義が楽になった話 ― 仕様駆動開発（SDD）の前段を整える - WHITEPLUS TechBlog
+ by id:white-plus 
+    
+6
+    信頼を得るために必要なのは、難しいスキルではなく毎日の基本 - 941::blog
+ by id:kushii 
+    
+7
+    日本共産党福岡県委員会に対する未払残業代請求訴訟の認諾による終結について - 神谷貴行のブログ
+ by id:kamiyakenkyujo 
+    
+8
+    AIのモデル崩壊と多様性 - ｼﾞｮｲｼﾞｮｲｼﾞｮｲ
+ by id:joisino 
+    
+9
+    見やすい手順書を書くノウハウ集 - カミナシ エンジニアブログ
+ by id:kaminashi-developer 
+    
+10
+    ゼロをイチにする仕事の終わり、ソフトウェアエンジニアという仕事の終わり - smasato.log
+ by id:smasato 
+    
+11
+ …]]></summary>
+        <author>
+            <name>週刊はてなブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI開発者ニュース #4 Codex Reset、DeepSeek DSpark、OpenCode v2]]></title>
+        <id>6a41d0e714077b0001200bbc</id>
+        <link href="https://blog.lai.so/2026-06-29/"/>
+        <updated>2026-06-29T02:03:37.000Z</updated>
+        <summary type="html"><![CDATA[AI開発、コーディングエージェント、devtools 周辺で読んでおきたい話題をまとめます。
+これは有料購読者向けのボー]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.6.29]]></title>
         <id>https://gamegaz.com/?p=45704</id>
@@ -9129,51 +9195,6 @@ GameGaz Daily 2026.4.1 first appeared on 大人のためのゲーム講座.]]></
         <summary type="html"><![CDATA[オープンかつ無料で使えるプロセッサの命令セットである「RISC-V」（リスクファイブ）のソフトウェアエコシステム発展を推進する団体「RISE」（RISC-V Software Ecosystem）が、オープンソースプロジェクト向けにRISC...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最近14]]></title>
-        <id>https://note.com/ecolidelvsvc11/n/nfcf2a012c5f9</id>
-        <link href="https://note.com/ecolidelvsvc11/n/nfcf2a012c5f9"/>
-        <updated>2026-03-31T13:52:03.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは。最近はこんな感じです。
-
-
-続きをみる]]></summary>
-        <author>
-            <name>ティラノサウルスのぼんじり</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Claude Code Opusはデバイスドライバも作れる / VAIO SX14-Rのキーボードバックライトを点灯させよ]]></title>
-        <id>hatenablog://entry/17179246901371416096</id>
-        <link href="https://blog.3qe.us/entry/2026/03/31/224919"/>
-        <updated>2026-03-31T13:49:19.000Z</updated>
-        <summary type="html"><![CDATA[先日業務マシンを変えた。VAIO SX14-Rである。もともとプライベートで持っていたのだが、かなり出来が良かったので業務PCとしても採用したのだ。
-blog.3qe.us
-で、一つ問題があった。キーボードバックライトが点灯しないのだ。
-バックライトを点灯させる旅
-もともとLinuxにはvaio-laptopというデバイスドライバがあるのだが、これがちょっと古いのか、最新モデルであるSX14-Rには対応していないようで、うまくバックライトを認識しなかった。
-とはいえ薄暗い場所などでは困ってしまうので、なんとかならないか、という点をOpusに尋ねたところ、色々な方法でリバースエンジニアリングを開始した。
-/sys/class/leds/vaio::kbd_backlight/brightnessに何かないか
-ACPIテーブル(DSDT)の情報はないか
-Embedded Controller経由の情報はないか
-すると、OpusはDSDTに KBBL という4ビットのフィールドがあることを発見した。
-sudo cat /sys/firmware/acpi/tables/DSDT > /tmp/dsdt.dat
-sudo zypper install acpica
-iasl -d /tmp/dsdt.dat
-grep -i -E "kbd|backlight|KBBL|keyboard.*light" /tmp/dsdt.dsl
-               KBBL,   4,
-            PKBD,   8,
-
-
-
-Opusによれば、これはKeyBoard BackLight、すなわちキーボードバックライト用のフラグだという。
-するとOpusはこのオフセットを計算しはじめた。
-grep -n -B 10 -A 5 "KBBL" /tmp/dsdt.dsl
-41251…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>
