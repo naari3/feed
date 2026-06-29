@@ -78,6 +78,26 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
+              rel="noopener">大人のためのゲーム講座</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">GameGaz Daily 2026.6.29</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026062945704/" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ps5-payload-sdk v0.41,ps5-payload-shsrv v0.19,ps5-payload-websrv v0.33,ps5upload v3.3.24,PSXhub v1.0.1,ShadowMountPlus 1.6beta16,dlc_emu v.0.3,PS5 Payloads MOD 2.0,LibProsperoPkg,PS3DEV nightly-2026-06-28,DSVita 0.9.3,sys-autopilot 1.5.0,SNES9x 3DS v1.61,StellaDS v8.4a,duckstation v0.1-11443,nullDC4Wii alpha 0.37,ARMSX2 4.2(ARMSX2 Refresh V23),ARMSX2 macOS 2.5.0,PCSX2 v2.7.441,shadPS4 Pre-release-shadPS4-2026-06-28-8ead142,shadPS4-QtLauncher 2026-06-28-360cc86,xenia 8b948d5_canary_experimental,ReXGlue SDK Nightly 0.8.1.68-dev.g8dadea6,Kstuff Lite 1.08 Beta→→→この記事の続きを読む
+GameGaz Daily 2026.6.29 first appeared on 大人のためのゲーム講座.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.jxck.io/" target="_blank"
               rel="noopener">blog.jxck.io</a></h3>
           <section class="articles-per-source">
@@ -13916,80 +13936,6 @@ grep -n -B 10 -A 5 &quot;KBBL&quot; /tmp/dsdt.dsl
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Scalaコードを最速でCloudflare Workerにデプロイする</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/03/31/203026" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>以前、ScalaのコードをScala.jsを使ってCloudflareにデプロイした。
-blog.3qe.us
-上掲の記事を書いた時点では、Scala CLIにまだ慣れていなかったため使っていなかったが、現在はちょっとしたコードのビルドにはScala CLIのほうが便利なので、これを使ってみる。
-結論から言うとかなり手軽で便利なので、ちょっとしたサーバみたいな用途で使ってみたいと思う。
-まずはpackage.jsonを用意する:
-{
-  &quot;name&quot;: &quot;scala-worker&quot;,
-  &quot;private&quot;: true,
-  &quot;devDependencies&quot;: {
-    &quot;esbuild&quot;: &quot;^0.27.4&quot;,
-    &quot;wrangler&quot;: &quot;^4.78.0&quot;
-  },
-  &quot;scripts&quot;: {
-    &quot;build&quot;: &quot;scala-cli --power package --js -o worker.tmp.mjs -f src/ &amp;&amp; esbuild worker.tmp.mjs --minify --bundle --format&#x3D;esm --outfile&#x3D;worker.mjs&quot;,
-    &quot;dev&quot;: &quot;wrangler dev&quot;,
-    &quot;deploy&quot;: &quot;wrangler deploy&quot;
-  }
-}
-
-
-
-devDependenciesにesbuildとwranglerを入れている。esbuildはminifyのためだけに用意しているので、無くてもいい。
-buildでは、まずscala-cliを利用してソースをmjsにビルドしている。そしてesbuildを利用してminifyしている。
-デプロイ用のwrangler.tomlは以下のような感じ。
-name &#x3D; &quot;scala-worker&quot;
-main &#x3D; &quot;worker.mjs&quot;
-compatibility_date &#x3D; &quot;2024-01-01&quot;
-
-[build]
-command &#x3D; &quot;npm run build&quot;
-
-
-
-最後にsrc/Worker.scalaを用意する:
-//&gt; using scala 3.6.4
-//&gt; using platform js
-//&gt; using jsModuleKind es
-
-import scala.scalajs.js
-import scala.scalajs.js.annotation.*
-
-object Worker:
-  private def handleFetch(
-      request: js.Dynamic,
-      env: js.Dynamic,
-      ctx: js.Dynamic
-  ): js.Promise[js.Dynamic] &#x3D;
-    js.Promise.resolve(
-      js.Dynamic.newInstance(js.Dynamic.global.Response)(
-        &quot;Hello from Scala.js on Cloudflare Workers, via Scala CLI / esbuild!&quot;
-      )
-    )
-
-  @JSExportTopLevel(&quot;default&quot;)
-  val handler: js.Dynamic &#x3D; js.Dynamic.literal(
-    fetch &#x3D; js.Any.fromFunction3(handleFetch)
-  )
-
-
-
-js.Dynamicが随所に登場しているが、これは「いったんここは型を付けずに頑張ります」くらいの意味で、TypeScriptでいうところのunknownみたいなやつ。
-後はpnpm run deployするだけでビルドされてデプロイされる。
-https://scala-worker.windymelt.workers.dev</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901371368580/1774956626" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -16352,7 +16298,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-06-28T23:20:28.960Z">2026-06-28T23:20:28.960Z</time>
+    <time id="build-timestamp" datetime="2026-06-29T00:24:30.180Z">2026-06-29T00:24:30.180Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
