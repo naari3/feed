@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-29T22:22:09.333Z</updated>
+    <updated>2026-06-29T23:19:47.364Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.6.30]]></title>
+        <id>https://gamegaz.com/?p=45708</id>
+        <link href="https://gamegaz.com/2026063045708/"/>
+        <updated>2026-06-29T23:13:51.000Z</updated>
+        <summary type="html"><![CDATA[スプラトゥーン レイダース Direct 2026.6.30,Switch 2の新型液晶パネル,LibProsperoPkg v1.0,BetterBright v0.92,DKWDRV 1.7.6i,mobipeg v1.0,Wii Mobiclip Player v1.0,Azahar 2125.1.3,jgenesis v0.13.1,CitraVR (Beta) v0.5.2,ARMSX2.4.4.0(ARMSX2 Refresh V24),ARMSX2 macOS 2.5.2,shadPS4 Pre-release-shadPS4-2026-06-29-91dfa4a,shadPS4-QtLauncher 2026-06-29-2ee4ad3,shadNet 0.0.7,pcsx2x6 v0.0.30,xenia 9588ce2_canary_experimental→→→この記事の続きを読む
+GameGaz Daily 2026.6.30 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[クアルコムがPythonライクな新言語「Mojo」開発元のModular社買収を発表。AIデータセンター市場へ本格参入]]></title>
         <id>https://www.publickey1.jp/blog/26/pythonmojomodularai.html</id>
@@ -9069,29 +9080,6 @@ GameGaz Daily 2026.4.2 first appeared on 大人のためのゲーム講座.]]></
         <summary type="html"><![CDATA[米調査会社のガートナーは、2025年と比較した場合の大規模言語モデルにおける推論実行のコストが、1兆個のパラーメータを持つ大規模言語モデルでは2030年までに90％以上削減されるとの予想を発表しました。 この大きなコスト削減効果は、半導体お...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[dockerfile-pin: DockerfileやComposeのイメージをSHA256でピン留めするCLIツールを作った]]></title>
-        <id>https://efcl.info/2026/04/01/dockerfile-pin/</id>
-        <link href="https://efcl.info/2026/04/01/dockerfile-pin/"/>
-        <updated>2026-04-01T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[DockerfileやComposeファイルのイメージ参照に@sha256:<digest>を自動で追加するCLIツール dockerfile-pin を作りました。
-GitHub: azu/dockerfile-pin
-なぜ作ったか
-trivyへのサプライチェーン攻撃などの事件を見ていると、次に狙われるのはDocker Hubかなと思ったのがきっかけです。
-CIでDocker Hubへのpushをしているケースは多いので、そこに悪意あるコードが混入する事件は今後も起きるだろうと思っています。
-Dockerイメージのタグ（例：node:20）はデフォルトで可変（mutable）です。同じタグ名で中身を上書きできるため、悪意ある第三者がレジストリへのアクセスを得た場合、既存タグに対して改竄されたイメージをpushできます。
-Can a Docker Hub tag have its content changed? - Docker Community Forums
-Docker Hubなどのレジストリは安全とは限りません。
-npmのようにトークンの制限が厳しくなっていたり、デフォルトでタグがimmutableな場所であっても、axiosのように問題が起きることはあります。
-Docker HubにはImmutable tagsという機能がありますが、これはリポジトリオーナー側が設定するもので、イメージを利用する側がコントロールできるものではありません。
-@sha256:<digest>を付与することで、イメージの不変性を保証できます。digestはイメージのコンテンツハッシュなので、内容が異なればdigestも変わり、改竄を検知できます。npmのlockfileがパッケージのintegrityをハッシュで固定するのと同じ考え方です。
-
-# Before: タグのみ（可変）
-F…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

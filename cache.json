@@ -6705,16 +6705,6 @@
           "wordCount": null,
           "title": "SecureClipboard: クリップボードに入った機密情報を自動でマスクするmacOSアプリ",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2026/04/01/dockerfile-pin/",
-          "author": null,
-          "description": "DockerfileやComposeファイルのイメージ参照に@sha256:<digest>を自動で追加するCLIツール dockerfile-pin を作りました。\nGitHub: azu/dockerfile-pin\nなぜ作ったか\ntrivyへのサプライチェーン攻撃などの事件を見ていると、次に狙われるのはDocker Hubかなと思ったのがきっかけです。\nCIでDocker Hubへのpushをしているケースは多いので、そこに悪意あるコードが混入する事件は今後も起きるだろうと思っています。\nDockerイメージのタグ（例：node:20）はデフォルトで可変（mutable）です。同じタグ名で中身を上書きできるため、悪意ある第三者がレジストリへのアクセスを得た場合、既存タグに対して改竄されたイメージをpushできます。\nCan a Docker Hub tag have its content changed? - Docker Community Forums\nDocker Hubなどのレジストリは安全とは限りません。\nnpmのようにトークンの制限が厳しくなっていたり、デフォルトでタグがimmutableな場所であっても、axiosのように問題が起きることはあります。\nDocker HubにはImmutable tagsという機能がありますが、これはリポジトリオーナー側が設定するもので、イメージを利用する側がコントロールできるものではありません。\n@sha256:<digest>を付与することで、イメージの不変性を保証できます。digestはイメージのコンテンツハッシュなので、内容が異なればdigestも変わり、改竄を検知できます。npmのlockfileがパッケージのintegrityをハッシュで固定するのと同じ考え方です。\n\n# Before: タグのみ（可変）\nF…",
-          "link": "https://efcl.info/2026/04/01/dockerfile-pin/",
-          "publishedOn": "2026-04-01T11:00:00.000Z",
-          "wordCount": 839,
-          "title": "dockerfile-pin: DockerfileやComposeのイメージをSHA256でピン留めするCLIツールを作った",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
@@ -7047,6 +7037,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45708",
+          "author": "mamosuke",
+          "description": "スプラトゥーン レイダース Direct 2026.6.30,Switch 2の新型液晶パネル,LibProsperoPkg v1.0,BetterBright v0.92,DKWDRV 1.7.6i,mobipeg v1.0,Wii Mobiclip Player v1.0,Azahar 2125.1.3,jgenesis v0.13.1,CitraVR (Beta) v0.5.2,ARMSX2.4.4.0(ARMSX2 Refresh V24),ARMSX2 macOS 2.5.2,shadPS4 Pre-release-shadPS4-2026-06-29-91dfa4a,shadPS4-QtLauncher 2026-06-29-2ee4ad3,shadNet 0.0.7,pcsx2x6 v0.0.30,xenia 9588ce2_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.6.30 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026063045708/",
+          "publishedOn": "2026-06-29T23:13:51.000Z",
+          "wordCount": 1874,
+          "title": "GameGaz Daily 2026.6.30",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=45704",
           "author": "mamosuke",
