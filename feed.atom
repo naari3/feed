@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-06-29T12:30:35.782Z</updated>
+    <updated>2026-06-29T14:20:53.049Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[備忘録：音MADタグの再投稿荒らしについて]]></title>
+        <id>https://note.com/elminus/n/n7fac7deb68ef</id>
+        <link href="https://note.com/elminus/n/n7fac7deb68ef"/>
+        <updated>2026-06-29T12:42:02.000Z</updated>
+        <summary type="html"><![CDATA[本記事では、（筆者の記憶では数年前から）音MADタグにおいて荒らし行為を行っているユーザーについて、情報整理を兼ねて記述します。
+新しい情報が入れば記事を更新しますので、何かお持ちの情報があればDiscord:sakelminusまで。
+
+
+続きをみる]]></summary>
+        <author>
+            <name>エルミナス</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「週刊プラグインレビュー」TBProAudio / TBPAClip]]></title>
         <id>https://note.com/massmasaoki/n/nc3c802f58aa0</id>
@@ -9090,16 +9104,6 @@ F…]]></summary>
 ナナメ読みする';c.before(d);var e=!1;d.addEventListener('click',function(){var f=d.querySelector('.btn-text');if(!e){c.style.transform='rotate(-4deg)';c.style.transition='transform .3s ease';c.style.transformOrigin='top center';d.classList.add('is-active');f.innerHTML='ナナメ読みをやめる';e=!0}else{c.style.transform='rotate(0deg)';d.classList.remove('is-active');f.innerHTML='ナナメ読みする';e=!1}})})})();]]></summary>
         <author>
             <name>週刊はてなブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ユーザの承認操作なしでアプリケーション連携を実現するOAuth拡張仕様]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=35731</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/35731"/>
-        <updated>2026-04-01T00:32:55.000Z</updated>
-        <summary type="html"><![CDATA[はじめに OAuthは、アプリケーションが他のアプリケーションのデータにアクセスするための権限を、安全に付与するための仕組みです。 アクセス権を付与するためには、通常、そのデータの所有者（＝ユーザ）に...]]></summary>
-        <author>
-            <name>四谷 兼三</name>
         </author>
     </entry>
     <entry>
