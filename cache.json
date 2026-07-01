@@ -3373,21 +3373,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/bc40e6360f23c8312180cc366fbfdd9ff19ad88a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260327%2F20260327175534.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901363584034",
-          "author": null,
-          "description": "ブログ内のURLリダイレクトを管理画面から設定できる「リダイレクト設定」機能をリリースしました。\n記事のURLを変更したときや、古い記事を削除したときに、以前のURLにアクセスした読者を新しいページへ自動的に転送（リダイレクト）できるようになりました。\nこれにより、外部サイトや検索エンジンからのリンク切れを防ぎ、SEO評価を新しいURLへスムーズに引き継ぐことができます。\n\n対象のプラン\nはてなCMS\nはてなブログBusiness*1\nはてなブログ for DevBlog\n設定方法\n管理画面の「設定」＞「リダイレクト設定」から設定できます。\n詳しい操作方法は、ヘルプページをご参照ください。\nリダイレクト設定を行う - はてなCMSヘルプセンター\n\n*1:はてなブログBusinessプランは現在、新規お申し込みを停止しております",
-          "link": "https://staff.hatenablog.com/entry/2026/04/03/104815",
-          "publishedOn": "2026-04-03T01:48:15.000Z",
-          "wordCount": null,
-          "title": "【法人向け機能】リダイレクト設定機能をリリースしました",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/55e57fa6c180e3f70ab73eaf8a336024849728f9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260327%2F20260327175657.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/55e57fa6c180e3f70ab73eaf8a336024849728f9/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260327%2F20260327175657.png"
         }
       ]
     },
@@ -6065,6 +6050,16 @@
       "feedUrl": "https://note.com/usop/rss",
       "siteUrl": "https://note.com/usop",
       "articles": [
+        {
+          "id": "https://note.com/usop/n/n500a302e439a",
+          "author": null,
+          "description": "前編で「24時間以内」と書かれていたが、2週間をかけて、ようやくAnthoropicの見解が出てきた。\n Redeploying Claude Fable 5Anthropic is redeploying Claude Fable 5 starting July 1 followww.anthropic.com \n続きをみる",
+          "link": "https://note.com/usop/n/n500a302e439a",
+          "publishedOn": "2026-07-01T14:08:08.000Z",
+          "wordCount": null,
+          "title": "政府にFableの公開はダメと言われたAnthoropicが考えていること（中編）",
+          "imageUrl": "https://assets.st-note.com/production/uploads/images/290590210/rectangle_large_type_2_cc75611286aab541d6d7f77d22dee51a.png?width=800"
+        },
         {
           "id": "https://note.com/usop/n/n76cd2c8ce71d",
           "author": null,
