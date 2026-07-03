@@ -78,6 +78,52 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">完走した感想</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/07/03/203217" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>いやーほんと、お疲れさまでした。今回はToHeartと同等かそれ以上に難産でした。正直、さすがにノベル移植しすぎでしょう、と内なる声も囁くわけでして・・・グーの根もでないほど同意見でしたねー。
+そもそもモチベが続かなくて、気分転換をしたのですけど、それでも時間がかかりました。流れとしては去年の10～12月頃にはツール一式の完成や、ほぼGBFSは出来上がっていたりします。そのあと更新が停止し・・・なぜか6月中旬に復活して今に至るという感じになります。えーと、つまり順調にいけば1月頃に終わっていたということ？と聞かれると「はい、そういうわけです」としか言いようがありません（＾＾；。
+技術的なピークは10月のツール一式でしたねー。あとはバイナリ粘土を捏ねるというか、いつもの流れですし。公式ビジュアルブックに記載されている攻略グラフに感動したりもしましたけれど「そのまんまじゃん！」とリアルで叫んだのは内緒。あ！あと今回ようやくサウンドドライバの作りに自信がつくようになりました。見ためショボいですけどねー。軽く話しますと、演奏開始、停止に合わせてFIFOやDMAを操作するのではなく、開始のみに主眼を置き停止はしない。演奏停止状態なら無音の0だけのバッファをDMAカーソルに当てておく。こうすることでプチノイズの煩わしさから解放されるという寸法です。あと、どのタイミングで割り込まれてもいいように変数管理も大事かと思います。割込み専用変数、割込み橋渡し変数、通常変数。
+そういえば、テキストの色指定、攻略情報付与とかも今では当たり前のようにつけることにしていますねー。なんというかGBA本体を持ちつつ、片手でスマホ操作して攻略情報見るってーのが面倒すぎます。自分なりに遊びたい作りに尖らせている、と言えるかもしれません。スマホで思い出したのですけど、スムースなエフェクトアニメっていりますか？windows11もそうですけれど。私はいつもオフにしていて、ほしい情報はパパっと出てくれればいい、というのが基本スタンスなんですよね。GBAのセーブロードも、Aボタンを押したら文字を何度か点滅して作業中エフェクトしたり、「セーブしました」メッセージを出せばいいのに、ゲームにすぐ戻りたいじゃん！という欲求が勝って作ってないんですよね。あんまりこういうカスタムは好まれなさそうとは思いますけれど。
+音質に関して。正直あのあたりが限界かと思われます。そもそもGBAでストリーミング再生って頭おかしいですよ、カテジナさん。最終的な内訳は以下のとおりで、ulc-codecのデコードはREG_VCOUNTでいうと29。再起して（？）スタック掘りまくって500バイトぐらい食っているのが恐ろしいです。まあ、許容範囲ですけど。効果音以外は全部圧縮しました。
+BGM 16.40MB ulc 13379Hz 品質86
+SE   2.66MB raw 13379Hz
+IMG  7.88MB LZ77
+TXT  1.33MB LZ77
+本体 0.50MB
+--------------
+合計 約30.50MB
+んー何か要望あればーとは思いますけどありますでしょうか。今回既読スキップを２種類作ったのですけど、ボタンが近すぎて誤操作しやすいから変えてほしいとか。キャラクタの表示、非表示エフェクトが８フレで遅いから４フレか通常コピーに変えてくれとか。文章に関しては改ページ後に２文字しかない文章あるじゃん、というのはごめんなさいとしか言えないのですけどね。セーブデータはもう少し増やせるので要望があれば増やしてもいいかもです。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032049481421/1783078950" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">とりあえず寝る！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/07/03/143721" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ふー、アップしました。夜に感想コメでも。
+https://akkera102.sakura.ne.jp/zip/138_aozora_gba.zip
+https://github.com/akkera102/gbadev-ja-test/tree/main/138_aozora_gba</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032049385737/1783057041" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.lai.so/" target="_blank"
               rel="noopener">laiso</a></h3>
           <section class="articles-per-source">
@@ -90,28 +136,6 @@
                     <span>AI開発、コーディングエージェント、devtools 周辺で読んでおきたい話題をまとめます。
 これは有料購読者向けのボー</span>
                   </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">とりあえず寝る！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/07/03/143721" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ふー、アップしました。夜に感想コメでも。
-https://akkera102.sakura.ne.jp/zip/138_aozora_gba.zip
-https://github.com/akkera102/gbadev-ja-test/tree/main/138_aozora_gba</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032049385737/1783057041" class="card article-thumbnail" data-image />
                 </a>
               </details>
             </article>
@@ -16206,7 +16230,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-07-03T10:51:25.028Z">2026-07-03T10:51:25.028Z</time>
+    <time id="build-timestamp" datetime="2026-07-03T11:45:00.853Z">2026-07-03T11:45:00.853Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
