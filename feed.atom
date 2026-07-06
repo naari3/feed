@@ -2,10 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-06T10:29:20.162Z</updated>
+    <updated>2026-07-06T12:16:51.849Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[最近15]]></title>
+        <id>https://note.com/ecolidelvsvc11/n/n90bffd06f262</id>
+        <link href="https://note.com/ecolidelvsvc11/n/n90bffd06f262"/>
+        <updated>2026-07-06T11:29:38.000Z</updated>
+        <summary type="html"><![CDATA[最近もこんな感じです。
+
+続きをみる]]></summary>
+        <author>
+            <name>ティラノサウルスのぼんじり</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[軍事組織を参考にClaude CodeのSubagentをタスクフォースにして運用している（Gist あり）]]></title>
+        <id>hatenablog://entry/14945776032050621140</id>
+        <link href="https://blog.3qe.us/entry/2026/07/06/202801"/>
+        <updated>2026-07-06T11:28:01.000Z</updated>
+        <summary type="html"><![CDATA[こんな記事を読んだ。大変面白かったので、まだ読んでいなかったら是非読んでほしい。
+zenn.dev
+この記事の骨子は以下の通りだ:
+Subagentを利用することで、性能が高い一方で思考コストがきわめて高いという相反する特性を持つAnthropic Fableを有効に活用できる。
+意思決定層をFableが専任し、実装や調査といった実務はすべてSubagentに委任することでこれを達成する。
+ccteamというツールを作成した。
+自分もSubagentを活用したいと思っていたので、このアイデアを元に自分の手元でいろいろ進化させて、軍事組織の指揮系統を（こじつけに近い形で）導入したSubagentチームを作ることができたので紹介したい。
+今のところ成果は上々で、うまく役割を分担しつつ、コンテキストを節約した動作ができているし、複雑なタスクを与えても内部でうまく問題を片付けてから持ってきてくれる。
+現状
+Fableはユーザとのインターフェイスに徹する
+Headquarter
+Staff
+CodingBrigade{Opus,Sonnet,Haiku}
+CodingBattalion
+EvaluationBrigade
+最新のClaude CodeではネストしたSubagentを起動できる
+なんで軍事組織なのか
+指揮と統制
+ラインとスタッフ
+責務の設定
+感想
+余談
+おまけ
+現状
+さて、さっそく自分が作った構成を紹介したい。現状の編成は以下の図のようになっている。各Subagentについては後述する。
+タスクフォース
+Fableはユーザとのインターフェイスに徹する
+このタスクフォースの最上位に位置するのがFableだ。Fableの責務は、ユーザとともに意思決定を行い、その意思決定を下位のSubagentに命令することである。Fableはユーザのタスク達成について責任を負っており、Su…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI開発者ニュース #8: Fable 5、Vinext]]></title>
         <id>6a4b4a6681efba0001eed6af</id>
@@ -8874,27 +8923,6 @@ PlayStation Portalアップデート バージョン7.0.2 first appeared on 大�
         <summary type="html"><![CDATA[Anthropicは、同社が開発した最新のAIモデル「Claude Mythos」によるソフトウェアの脆弱性発見能力を用いて世界的に重要なソフトウェアのセキュリティを守る取り組み「Project Glasswing」を発表しました。 Pro...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【Power Automate】センシングデータのイベントをTeamsに通知する(基本編)]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=35806</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/35806"/>
-        <updated>2026-04-07T23:50:34.000Z</updated>
-        <summary type="html"><![CDATA[はじめに IIJでは、センシングデータの利活用と、センサー機器を管理・運用するためのクラウドサービスとしてIIJセンシングデータマネジメントサービス(以下、SDMS)を提供しています。 サービスの紹介...]]></summary>
-        <author>
-            <name>斉藤 翔太</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2026.4.8]]></title>
-        <id>https://gamegaz.com/?p=45296</id>
-        <link href="https://gamegaz.com/2026040845296/"/>
-        <updated>2026-04-07T23:20:28.000Z</updated>
-        <summary type="html"><![CDATA[プレイヤーベース始動,PSFree Lapse v2.2,Apollo Save Game Patches(apollo-patches),ps5-payload-ftpsrv v0.19,PeaSyo v1.6.3,Sys-patch version 1.6.1,MissionControl 0.15.1,sys-ticon 1.0.7,chiaki-ng weekly-canary-release-ede763568649198dd1146fcbf8c339ce523a5702,AtmoPack-Vanilla 4.0.5,NeXT 3.55,Breeze beta103.5b,ldn_mitm v1.21.1,pkHouse 1.10.0,ColecoDS 10.9a,PCSX2 v2.7.243,shadPS4 Pre-release-shadPS4-2026-04-07-e64f038,xenia e23376a_canary_experimental,Xenia Manager v4.0.0→→→この記事の続きを読む
-GameGaz Daily 2026.4.8 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
