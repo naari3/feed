@@ -8261,6 +8261,16 @@
       "siteUrl": "https://KeenS.github.io/",
       "articles": [
         {
+          "id": "https://KeenS.github.io/blog/2026/07/08/aws_lambdahonkakunyuumonwoyonda/",
+          "author": null,
+          "description": "κeenです。講談サイエンティフィック社様から ＡＷＳ　Ｌａｍｂｄａ　本格入門　ＲｕｓｔとＴｅｒｒａｆｏｒｍでつくるサーバーレスシステムをご恵贈いただいたので読みました。 #PR",
+          "link": "https://keens.github.io/blog/2026/07/08/aws_lambdahonkakunyuumonwoyonda/",
+          "publishedOn": "2026-07-08T12:00:48.000Z",
+          "wordCount": null,
+          "title": "AWS Lambda本格入門を読んだ",
+          "imageUrl": null
+        },
+        {
           "id": "https://KeenS.github.io/blog/2026/06/13/rusttokanidekazudokuwotoku/",
           "author": null,
           "description": "κeenです。Twitterで面白そうなネタをみかけたのでやってみます。",
@@ -8334,6 +8344,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html",
+          "author": null,
+          "description": "PostgreSQLをベースにしたBaaS（Backend as a Service）の「Supabase」を開発し提供しているSupabase社は、複数のPostgreSQLをクラスタ化することでデータベースの水平スケールと高可用性などを...",
+          "link": "https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html",
+          "publishedOn": "2026-07-08T15:33:17.000Z",
+          "wordCount": null,
+          "title": "PostgreSQLをクラスタ化した分散DBでスケーリングと高可用性を実現する「Multigres v0.1」アルファ版が登場",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/postgresql_19ioautovacuum.html",
+          "author": null,
+          "description": "オープンソースのリレーショナルデータベース「PostgreSQL 19」のベータ版が先月（2026年6月）にリリースされています。 PostgreSQLは高い拡張性や信頼性を特徴としており、ITエンジニアのコミュニティであるStackove...",
+          "link": "https://www.publickey1.jp/blog/26/postgresql_19ioautovacuum.html",
+          "publishedOn": "2026-07-08T15:31:27.000Z",
+          "wordCount": null,
+          "title": "PostgreSQL 19ベータ版が登場。I/Oワーカーの自動スケール、Autovacuumの改善など新機能",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/visual_studio_codegithub_copilot.html",
           "author": null,
