@@ -76,6 +76,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032051710982",
+          "author": null,
+          "description": "悠夏ハッピー、バッド読了。不具合は１件だけでした。「選択肢処理が走る１つ前のメッセージは、選択肢後に既読になる」という問題。選択前に既読が付くように修正しました。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/09/211205",
+          "publishedOn": "2026-07-09T12:12:05.000Z",
+          "wordCount": 501,
+          "title": "進捗",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032051710982/1783601896",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032051710982/1783601896"
+        },
+        {
           "id": "hatenablog://entry/14945776032050770692",
           "author": null,
           "description": "現状わかっている不具合なおしました。色々直しすぎてわけわからなくなってます（＾＾；。この感じだとまだ収束しなさそう・・・。とりあえず選択肢時のセーブロード失敗や、既読関連を重点的になおしています。セーブの互換はありません、申し訳ないです。キャラ遷移は２フレ短縮したので気持ちキビキビ動くかもです。雨音のハッピー、バッドは確認しました。\nhttps://akkera102.sakura.ne.jp/zip/138_aozora_gba.zip\nhttps://github.com/akkera102/gbadev-ja-test/tree/main/138_aozora_gba",
@@ -644,21 +659,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901377216923/1776337802"
-        },
-        {
-          "id": "hatenablog://entry/17179246901375287053",
-          "author": null,
-          "description": "qiita.com\narm-none-eabi-as header.s -o header.o\narm-none-eabi-gcc -c main.c -o main.o -nostdlib -ffreestanding\narm-none-eabi-ld header.o main.o -T link.ld -o out.elf\narm-none-eabi-objcopy -O binary out.elf out.gba\nロムをポンと作れちゃうんですよっていう日本語を極力排した記事、ヤバいです。俳句かな！？たぶんわかってくれる方数名だろうなあ・・・。",
-          "link": "https://akkera102.hatenablog.com/entry/2026/04/11/100740",
-          "publishedOn": "2026-04-11T01:07:40.000Z",
-          "wordCount": 538,
-          "title": "潔さ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901375287053/1775869718",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901375287053/1775869718"
         }
       ]
     },
