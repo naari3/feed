@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-10T00:22:57.580Z</updated>
+    <updated>2026-07-10T01:31:39.264Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-07-09]]></title>
+        <id>hatenablog://entry/14945776032051716341</id>
+        <link href="https://commits.hatenablog.com/entry/2026/07/10/100000"/>
+        <updated>2026-07-10T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+JSON::ResumableParserで、微妙なchunkの区切りで読み込もうとすると意図しない形に読み込んでしまう問題を直した。trailing commaオプションを有効にしている場合か、JSONにコメントが含まれている場合だけ影響する問題なので、まあResumableParserで普通踏むことは無いと思う。
+github.com
+JSON::ResumableParserで、とても大きい数(10万桁とか)を細かいチャンクで受信すると遅くなる問題を修正した。数値のパース時、数値が確定していなくても数値オブジェクトを作ってしまい、かつbignumになるような数値オブジェクトの生成が遅いため。
+どちらのPRもbyrootが光の速さで対応してくれた。すごい。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.7.10]]></title>
         <id>https://gamegaz.com/?p=45784</id>
@@ -8920,24 +8934,6 @@ PicoRubyの型定義の改善。
 ご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twitter12]]></title>
-        <id>https://note.com/ecolidelvsvc11/n/na8c6e729e0f9</id>
-        <link href="https://note.com/ecolidelvsvc11/n/na8c6e729e0f9"/>
-        <updated>2026-04-11T12:30:55.000Z</updated>
-        <summary type="html"><![CDATA[Pixivで室笠アカネ（制服）の成人向け画像を検索した5分後に室笠アカネ（制服）の実装がアナウンスされた。
-
-【生徒紹介】
-「ミレニアムEXPO」のガイドを務めることになったアカネさん。
-メイドやエージェントでなく、普通の一生徒として行動しているせいか、いつも以上に穏やかな空気を纏っていますが、「お掃除」のやり方は忘れていない模様…。
-「よろしければ、一緒にミレニアムを散策しませんか？」… pic.twitter.com/q2ALBn8pLm
-— ブルーアーカイブ公式 (@Blue_ArchiveJP) March 29, 2026
-
-続きをみる]]></summary>
-        <author>
-            <name>ティラノサウルスのぼんじり</name>
         </author>
     </entry>
     <entry>
