@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-10T12:48:48.919Z</updated>
+    <updated>2026-07-10T13:36:37.071Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -8925,25 +8925,6 @@ USB電源（本体から取り外し可）
 GameGaz Daily 2026.4.12 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-04-11]]></title>
-        <id>hatenablog://entry/17179246901375523511</id>
-        <link href="https://commits.hatenablog.com/entry/2026/04/12/100000"/>
-        <updated>2026-04-12T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-PicoRubyのタイポ修正。
-github.com
-PicoRubyの型定義の改善。
-今まではPicoRubyリポジトリ全体でのRBS environmentの整合性は取れていたのだけど、各gem単位で見た時に、整合性が取れないものがあったので直した。
-なんでこんなことをやっているのかというと、PicoRubyアプリケーションでSteepをいい感じに使うツールを作っているため。このツールはbuild configを読んでそのビルドに含まれるgemの型定義のみで型検査をできるようにするもの。
-手元のPicoRubyアプリケーションではうまく動いていたのだけど、試しにR2P2のbuild conifgで動かしてみたところ、型定義の整合性が取れていなかった。
-ということで、そのツールを応用して各gemとその依存のみでrbs validateを走らせて、それで型エラーになったところをちまちま直していった。
-なんとなくClaudeを使わず人力で型定義を書いていた。時間はかかった気がするけど、イライラは減った気がする。
-本当はこのツールを今日中にサッと公開したかったのだけど、このPRだったり他のことを色々やっていたら時間切れになってしまった。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>
