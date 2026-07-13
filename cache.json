@@ -6343,21 +6343,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0de2eeef7aa061c85278669709f6219f245565c6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260428%2F20260428002122.png"
-        },
-        {
-          "id": "hatenablog://entry/17179246901376833813",
-          "author": null,
-          "description": "zsh向けですが、だいたいどのシェルでも動くと思います。claude --worktreeを使っているときに便利だと思います。\nW() {\n  local selected\n  selected=$(git worktree list --porcelain \\\n    | awk '/^worktree /{path=$2; name=path; gsub(/.*\\//, \"\", name); printf \"%s\\t%s\\n\", name, path}' \\\n    | fzf --tmux --reverse \\\n      --with-nth=1 --delimiter=$'\\t' \\\n      --preview 'git -C {2} log --oneline --graph -20' \\\n    | cut -f2)\n  if [[ -n \"$selected\" ]]; then\n    cd \"$selected\"\n  fi\n}",
-          "link": "https://blog.3qe.us/entry/2026/04/15/163754",
-          "publishedOn": "2026-04-15T07:37:54.000Z",
-          "wordCount": null,
-          "title": "Git worktreeをfzfとtmuxで縦横無尽に移動するためのコマンド",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901376833813/1776238674",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/17179246901376833813/1776238674"
         }
       ]
     },
