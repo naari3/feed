@@ -1066,6 +1066,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032052837551",
+          "author": null,
+          "description": "備前焼の体験に行ってきた。土を好きな形に成形するところまでを体験し、数カ月後に焼かれたものが送られてくる。\n皿を作った。ろくろのうえに土を置いて、それを叩いて伸ばす感じだった。土を伸ばすのはわりとできたけれど、フチを作るために土を寄せるのが中々難しかった。\n焼き上がりは9月ごろにとのことなので待ち遠しい。\nろくろポーズの写真を撮ってもらいたかったけどやり損ねた。",
+          "link": "https://commits.hatenablog.com/entry/2026/07/13/100000",
+          "publishedOn": "2026-07-13T01:00:00.000Z",
+          "wordCount": 510,
+          "title": "2026-07-12",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032052837551/1783904401",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032052837551/1783904401"
+        },
+        {
           "id": "hatenablog://entry/14945776032051716341",
           "author": null,
           "description": "github.com\nJSON::ResumableParserで、微妙なchunkの区切りで読み込もうとすると意図しない形に読み込んでしまう問題を直した。trailing commaオプションを有効にしている場合か、JSONにコメントが含まれている場合だけ影響する問題なので、まあResumableParserで普通踏むことは無いと思う。\ngithub.com\nJSON::ResumableParserで、とても大きい数(10万桁とか)を細かいチャンクで受信すると遅くなる問題を修正した。数値のパース時、数値が確定していなくても数値オブジェクトを作ってしまい、かつbignumになるような数値オブジェクトの生成が遅いため。\nどちらのPRもbyrootが光の速さで対応してくれた。すごい。",
@@ -6929,6 +6944,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45794",
+          "author": "mamosuke",
+          "description": "PS5 ezRemote Client v2.08,PS4 ezRemote Client v2.03,PS5-EXFAT-MKPFS-BUILDER 1.0.0,Dump Installer 1.07 Beta,Porkfolio v1.0.9,ShadowMountPlus 1.7alpha1,chovy-sign 2.0.7,GMCA(Gamepad Media Center Aggregator 旧pleNx) v1.0.4,WiiMedic v1.3.1,nullDC4Wii alpha 0.49,GBA2PSP-UI v1,PCSX2 v2.7.469,EmuCoreX v0.2.4,pcsx2x6 v0.2.1,PSX2 1.2.3,SharpEmu win64 fbf2c2d,MAME4droid 2026(0.288) 1.37.1,OpenTTD 16.0-beta2→→→この記事の続きを読む\nGameGaz Daily 2026.7.13 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026071345794/",
+          "publishedOn": "2026-07-13T01:04:04.000Z",
+          "wordCount": 1778,
+          "title": "GameGaz Daily 2026.7.13",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
         {
           "id": "https://gamegaz.com/?p=45792",
           "author": "mamosuke",
