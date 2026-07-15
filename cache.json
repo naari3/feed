@@ -3042,6 +3042,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032053088511",
+          "author": null,
+          "description": "はてなブログとはてなCMSでは、より使いやすいサービスを目指して日々機能の開発・改善に取り組んでいます。大きなアップデートはその都度お知らせしていますが、細かな使い勝手の向上や見えにくい改善も、実は毎月数多く行われています。\n機能修正・改善\n記事管理画面の絞り込み検索 UI を改善しました。\n絞り込み条件（カテゴリー・投稿者・投稿日）はボタンを押すとドロップダウンで表示されるようになり、実行ボタンも目立つ青いボタンに変わりました。\n\n絞り込みが適用中は条件の内容がボタンのラベルに表示されるので、どんな条件で絞り込んでいるかが一目でわかるようになりました。\n\n記事管理画面で記事を最終保存日順でソートできるようになりました\n記事管理画面で、記事を「最終保存日」順に並び替え、直近で編集した記事をすぐに見つけられるようになりました。記事一覧のソート条件から「最終保存日」を選択してお試しください。\n\n記事作成画面に「SEOタイトルアシスト」機能を追加しました\nstaff.hatenablog.com\nデザインステージング機能をリリースしました\nstaff.hatenablog.com\n\n\nその他の細かい機能改善\nVue, nixのシンタックスハイライトに対応しました\n2回目以降のエクスポート時の UI を改善しました\n管理画面の各メニューのコンテンツ幅を統一\nAndroid アプリの下書き画面で MathJax プレビューが正常に表示されない問題を修正しました\nノーコードツールの記事詳細ページのサンプル要素を、見出しやリストが入ったものに変更しました\n\nimg.hatena-fotolife { border: 1px solid #999;margin-top: 1em;}",
+          "link": "https://staff.hatenablog.com/entry/2026/07/15/160612",
+          "publishedOn": "2026-07-15T07:06:12.000Z",
+          "wordCount": 950,
+          "title": "2026年7月の新機能・機能改善をお知らせします",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/a8a4699f54bc136928703645b0a8aae6822c75a2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260713%2F20260713153316.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a8a4699f54bc136928703645b0a8aae6822c75a2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260713%2F20260713153316.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032053466632",
           "author": null,
           "description": "記事中に数式を記述するtex記法に、LaTeXの数式をそのまま書ける書き方を追加しました。\n新しい書き方\nこれまでのtex記法（[tex: ...]）に加えて、[$ ... $] という形式でも数式を書けるようになりました。\n追加した書き方\n[$ x^{2} e^{a+b} $]\n従来の書き方\n[tex: x^{2} e^{a+b}]\nどちらも表示結果は同じです。\n編集モードを問わず使えます\ntex記法ははてな記法の1つではありますが、今回追加した新しい書き方ははてな記法モードだけでなくすべての編集モードでお使いいただけます。\n\n今後もはてなブログをより使いやすくするための改善を続けてまいります。どうぞご利用ください。",

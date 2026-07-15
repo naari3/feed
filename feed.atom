@@ -2,10 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-15T06:40:22.062Z</updated>
+    <updated>2026-07-15T07:34:50.682Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026年7月の新機能・機能改善をお知らせします]]></title>
+        <id>hatenablog://entry/14945776032053088511</id>
+        <link href="https://staff.hatenablog.com/entry/2026/07/15/160612"/>
+        <updated>2026-07-15T07:06:12.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログとはてなCMSでは、より使いやすいサービスを目指して日々機能の開発・改善に取り組んでいます。大きなアップデートはその都度お知らせしていますが、細かな使い勝手の向上や見えにくい改善も、実は毎月数多く行われています。
+機能修正・改善
+記事管理画面の絞り込み検索 UI を改善しました。
+絞り込み条件（カテゴリー・投稿者・投稿日）はボタンを押すとドロップダウンで表示されるようになり、実行ボタンも目立つ青いボタンに変わりました。
+
+絞り込みが適用中は条件の内容がボタンのラベルに表示されるので、どんな条件で絞り込んでいるかが一目でわかるようになりました。
+
+記事管理画面で記事を最終保存日順でソートできるようになりました
+記事管理画面で、記事を「最終保存日」順に並び替え、直近で編集した記事をすぐに見つけられるようになりました。記事一覧のソート条件から「最終保存日」を選択してお試しください。
+
+記事作成画面に「SEOタイトルアシスト」機能を追加しました
+staff.hatenablog.com
+デザインステージング機能をリリースしました
+staff.hatenablog.com
+
+
+その他の細かい機能改善
+Vue, nixのシンタックスハイライトに対応しました
+2回目以降のエクスポート時の UI を改善しました
+管理画面の各メニューのコンテンツ幅を統一
+Android アプリの下書き画面で MathJax プレビューが正常に表示されない問題を修正しました
+ノーコードツールの記事詳細ページのサンプル要素を、見出しやリストが入ったものに変更しました
+
+img.hatena-fotolife { border: 1px solid #999;margin-top: 1em;}]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-07-14]]></title>
         <id>hatenablog://entry/14945776032053516469</id>
