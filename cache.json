@@ -689,21 +689,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901378406406/1776606855"
-        },
-        {
-          "id": "hatenablog://entry/17179246901377248191",
-          "author": null,
-          "description": "第1/2世代のセーブデータを第3世代へコピーするソフトウェア。物理ケーブルでGBの5VとGBAの3.3V通信をしています（！）。あとポケモン詳しくないのですけどセーブ互換あるのか不明です。厳密な１：１にはならないですよね・・・？にしてもすげぇ根性・・・感服します。\nwww.youtube.com\ngithub.com",
-          "link": "https://akkera102.hatenablog.com/entry/2026/04/16/215007",
-          "publishedOn": "2026-04-16T12:50:07.000Z",
-          "wordCount": 497,
-          "title": "Poke_Transporter_GB",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901377248191/1776344302",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901377248191/1776344302"
         }
       ]
     },
@@ -1110,6 +1095,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032053516469",
+          "author": null,
+          "description": "pocke.hatenablog.com\ndev.to\n久々にブログ記事を書いた。Claudeに翻訳もさせてみた。\n結構抜け出すのが難しいループな感じがする。記事中に挙げているもの以外だとはなちんさんがcallcc/Fiberの例を挙げてくれていた。またProcess.kill 9, $$しても抜けられる(乱暴だけど)(これを抜けると言っていいのか)。\nちゃんとループ内の処理を終えて外に出られているのはTracePointだけなので、もっと他に方法はないかなと考えている。",
+          "link": "https://commits.hatenablog.com/entry/2026/07/15/100000",
+          "publishedOn": "2026-07-15T01:00:00.000Z",
+          "wordCount": 530,
+          "title": "2026-07-14",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032053516469/1784077200",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032053516469/1784077200"
+        },
         {
           "id": "hatenablog://entry/14945776032052837551",
           "author": null,

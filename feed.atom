@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-15T00:15:56.062Z</updated>
+    <updated>2026-07-15T01:30:56.027Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-07-14]]></title>
+        <id>hatenablog://entry/14945776032053516469</id>
+        <link href="https://commits.hatenablog.com/entry/2026/07/15/100000"/>
+        <updated>2026-07-15T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[pocke.hatenablog.com
+dev.to
+久々にブログ記事を書いた。Claudeに翻訳もさせてみた。
+結構抜け出すのが難しいループな感じがする。記事中に挙げているもの以外だとはなちんさんがcallcc/Fiberの例を挙げてくれていた。またProcess.kill 9, $$しても抜けられる(乱暴だけど)(これを抜けると言っていいのか)。
+ちゃんとループ内の処理を終えて外に出られているのはTracePointだけなので、もっと他に方法はないかなと考えている。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.7.15]]></title>
         <id>https://gamegaz.com/?p=45802</id>
@@ -8805,18 +8819,6 @@ nomolk.hatenablog.com
         <summary type="html"><![CDATA[（本記事はフリーランスライター 高橋睦美氏によるゲストポストです）  近年のソフトウェア開発では、ビルドやデプロイ、テストなどを手作業で行うのではなく、CI/CDパイプラインを構築し、パッケージマネージャを活用して依存するnpmパッケージな...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Poke_Transporter_GB]]></title>
-        <id>hatenablog://entry/17179246901377248191</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/04/16/215007"/>
-        <updated>2026-04-16T12:50:07.000Z</updated>
-        <summary type="html"><![CDATA[第1/2世代のセーブデータを第3世代へコピーするソフトウェア。物理ケーブルでGBの5VとGBAの3.3V通信をしています（！）。あとポケモン詳しくないのですけどセーブ互換あるのか不明です。厳密な１：１にはならないですよね・・・？にしてもすげぇ根性・・・感服します。
-www.youtube.com
-github.com]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
