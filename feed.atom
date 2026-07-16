@@ -2,10 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-16T10:36:25.332Z</updated>
+    <updated>2026-07-16T11:29:57.178Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[謎コメ]]></title>
+        <id>hatenablog://entry/14945776032054187442</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/07/16/182443"/>
+        <updated>2026-07-16T09:24:43.000Z</updated>
+        <summary type="html"><![CDATA[ROMのCRCが変わるのはsoxでランダム関数を使っているからです。「-R」オプションを指定するとシードが固定化されて同じ結果になります。pythonは単純リサイズですし他はたぶん使っていないはずです・・・たぶん。間違っていたらすみません。（＾＾；
+sox test.wav -R -c1 -b8 -e signed-integer 1.raw rate -v 13379
+sox test.wav -R -c1 -b8 -e signed-integer 2.raw rate -v 13379
+
+fc /b 1.raw 2.raw
+ファイル 1.raw と 2.RAW を比較しています
+FC: 相違点は検出されませんでした]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[#14: ReactBench、Grok Build、Claude Artifacts]]></title>
         <id>6a58918a1ad63b000127fca8</id>
@@ -8837,44 +8853,6 @@ GameGaz Daily 2026.4.18 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>unknown protocol</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【2026年4月-3】対戦！ジムコート]]></title>
-        <id>hatenablog://entry/17179246901377758411</id>
-        <link href="https://crabgot.hatenablog.com/entry/2026/04/18/080725"/>
-        <updated>2026-04-17T23:07:25.000Z</updated>
-        <summary type="html"><![CDATA[活力！
- 
-・Champions
-デイリーやってるだけでもまあまあVP貰えていいね。スカウトはガチャほど沸くものではない（自前で用意したほうが速いため）けど偶に光るとまあまあ嬉しい。あと複数体用意したいポケモンが出たときに確保しやすいのは良いかも。ドラパルトとかいっぱい使うもんな。
-あとえいえんフラエッテがPay to Winとか言われてんの見かけたけど普通に過大評価だし過去作持ってるほうが有利なのは昔からずっとそうですよ。あと別に掛けた金の数で勝利してるわけでもないのでこれ絡みの話題はずっと雑魚の戯言だな～と思いながら見てます。
-フラエッテは強いけど、そんな鬼の首取ったみたいに強いわけではない。強いけど。
- 
-youtu.be
-Championsオリジナル戦闘曲、これが良い！ちょっと懐かしさを覚える曲調だ
- 
-・絵チャ
-2日に1回描くというのをやってる。レイヤー数2枚、Undoが1回しか出来ないのが修行になるぜ
- 
-・アニメ
-全然見てない……とか言いながら前期の『多聞くん今どっち！？』を一気見した。
-男性向けラブコメより女性向けラブコメのほうが見れるかも。面白かったです。
- 
-・動画投稿
-www.nicovideo.jp
-ニコニコショートが実装されたので。
- 
-・今週の良かった動画
-www.nicovideo.jp
-www.nicovideo.jp
-www.nicovideo.jp
- 
-そんな感じかな
- 
-じゃ！]]></summary>
-        <author>
-            <name>なんて巨大なカニゴット</name>
         </author>
     </entry>
     <entry>

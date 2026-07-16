@@ -76,6 +76,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032054187442",
+          "author": null,
+          "description": "ROMのCRCが変わるのはsoxでランダム関数を使っているからです。「-R」オプションを指定するとシードが固定化されて同じ結果になります。pythonは単純リサイズですし他はたぶん使っていないはずです・・・たぶん。間違っていたらすみません。（＾＾；\nsox test.wav -R -c1 -b8 -e signed-integer 1.raw rate -v 13379\nsox test.wav -R -c1 -b8 -e signed-integer 2.raw rate -v 13379\n\nfc /b 1.raw 2.raw\nファイル 1.raw と 2.RAW を比較しています\nFC: 相違点は検出されませんでした",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/16/182443",
+          "publishedOn": "2026-07-16T09:24:43.000Z",
+          "wordCount": 568,
+          "title": "謎コメ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032054187442/1784194187",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032054187442/1784194187"
+        },
+        {
           "id": "hatenablog://entry/14945776032053473160",
           "author": null,
           "description": "エミュレータ開発者向け、仕様のテストロム集のようです。こういう世界もあるんですねー。\nhttps://emulation.gametechwiki.com/index.php/GBA_Tests\nhttps://emulation.gametechwiki.com/index.php/GB/C_Tests",
@@ -1707,21 +1722,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/6345f4d2781bd0dc05ba3bf8220fdb5de3a7a0f5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20260424%2F20260424083358.jpg"
-        },
-        {
-          "id": "hatenablog://entry/17179246901377758411",
-          "author": null,
-          "description": "活力！\n \n・Champions\nデイリーやってるだけでもまあまあVP貰えていいね。スカウトはガチャほど沸くものではない（自前で用意したほうが速いため）けど偶に光るとまあまあ嬉しい。あと複数体用意したいポケモンが出たときに確保しやすいのは良いかも。ドラパルトとかいっぱい使うもんな。\nあとえいえんフラエッテがPay to Winとか言われてんの見かけたけど普通に過大評価だし過去作持ってるほうが有利なのは昔からずっとそうですよ。あと別に掛けた金の数で勝利してるわけでもないのでこれ絡みの話題はずっと雑魚の戯言だな～と思いながら見てます。\nフラエッテは強いけど、そんな鬼の首取ったみたいに強いわけではない。強いけど。\n \nyoutu.be\nChampionsオリジナル戦闘曲、これが良い！ちょっと懐かしさを覚える曲調だ\n \n・絵チャ\n2日に1回描くというのをやってる。レイヤー数2枚、Undoが1回しか出来ないのが修行になるぜ\n \n・アニメ\n全然見てない……とか言いながら前期の『多聞くん今どっち！？』を一気見した。\n男性向けラブコメより女性向けラブコメのほうが見れるかも。面白かったです。\n \n・動画投稿\nwww.nicovideo.jp\nニコニコショートが実装されたので。\n \n・今週の良かった動画\nwww.nicovideo.jp\nwww.nicovideo.jp\nwww.nicovideo.jp\n \nそんな感じかな\n \nじゃ！",
-          "link": "https://crabgot.hatenablog.com/entry/2026/04/18/080725",
-          "publishedOn": "2026-04-17T23:07:25.000Z",
-          "wordCount": 418,
-          "title": "【2026年4月-3】対戦！ジムコート",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/14aa76e608cf1433498c6514eaa2dd975c81d326/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20260418%2F20260418075644.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/14aa76e608cf1433498c6514eaa2dd975c81d326/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20260418%2F20260418075644.jpg"
         }
       ]
     },
