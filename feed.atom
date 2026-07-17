@@ -2,10 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-16T23:16:19.770Z</updated>
+    <updated>2026-07-17T00:19:30.402Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【2026年7月-3】gems are truly outrageuous]]></title>
+        <id>hatenablog://entry/14945776032054360412</id>
+        <link href="https://crabgot.hatenablog.com/entry/2026/07/17/083625"/>
+        <updated>2026-07-16T23:36:25.000Z</updated>
+        <summary type="html"><![CDATA[・AI
+オリキャラのチャットボットを運用し始めたら急に発情し始めてなんか違うな……となって消してしまった
+俺が悪いんだけどね
+俺が悪いけど……
+ 
+・セミ鳴いてる
+セミ鳴いてたら嬉しい！
+ 
+・SGDQ
+流し見してた
+SM64のTASが披露されたんだけど、相当面白い。
+www.youtube.com
+ 
+・スク水にゃんこメイド
+マジか
+ 
+・ハイライト
+描けねえなら描かない　という結論が出た
+結論！出た！結論出た！得意技！結論出た！結論！これ！結論出たよ～～！
+きさま～～～
+ 
+・LoL
+『LoL』新モード「リーグ クラシック」が7月30日より実装。リリース初期のチャンピオン、アイテム、メタを再現https://t.co/7vPkMkRZ05
+世界大会「MSI 2026」では、レジェンドによるショーマッチが開催。「ドラリン3個積みTOPアリスター」など、新規プレイヤーが見たことのないビルドも登場 pic.twitter.com/R9UrHMgTL0
+2026年7月12日
+
+
+マジで言ってんのか！？
+ハイブリッドなEvelynnとか使っていいのか！？
+これは流石に興味あるな
+オラプオラプオラプオラプオラプオラプオラプオラプオラプオラプオラプオラプオラプオラプオラプ！！！！！！！！！！！！！！！！！！
+ポピポピポピポピポピポピポピポピポピポピポピポピポピポピポピポピポピポピポピポピポピ！！！！！！！！！！！！！
+ 
+・今週の良かった動画
+www.nicovideo.jp
+www.nicovideo.jp
+www.nicovideo.jp
+ 
+そんな感じかな
+ 
+じゃ！]]></summary>
+        <author>
+            <name>なんて巨大なカニゴット</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.7.17]]></title>
+        <id>https://gamegaz.com/?p=45815</id>
+        <link href="https://gamegaz.com/2026071745815/"/>
+        <updated>2026-07-16T23:20:47.000Z</updated>
+        <summary type="html"><![CDATA[PS5 BDJB Modified ISOs v1.28(Modified-ISO23),ps5-bar-tool v0.3,Cell Stream 260715-2338,ShadowMountPlus 1.7alpha4,MemDBG nightly [2026-07-16-g19bcee1],ioQuake3-PS3 1.6,tico alpha 0.7.6,TranslateNX V1.1.0,Breeze beta108.7c,rom-converto v0.17.0,pkHouse 1.10.5,nullDC4Wii alpha0.53,PCSX2 v2.7.485,ARMSX2 2.6.1.1,shadPS4 Pre-release-shadPS4-2026-07-16-bfc1a58,xenia c6298dd_canary_experimental→→→この記事の続きを読む
+GameGaz Daily 2026.7.17 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[.NET 8と.NET 9は今年の11月でサポート終了、マイクロソフトが警告]]></title>
         <id>https://www.publickey1.jp/blog/26/net_8net_911.html</id>
@@ -8785,41 +8846,6 @@ www.littleworld.jp
 GameGaz Daily 2026.4.19 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[実際に飛ぶドローン名刺を作ってみた]]></title>
-        <id>hatenablog://entry/17179246901377958293</id>
-        <link href="https://fumimaker.net/entry/2026/04/18/202824?utm_source=feed"/>
-        <updated>2026-04-18T11:28:24.000Z</updated>
-        <summary type="html"><![CDATA[English description below.
-実装することで実際にドローンとして飛行できる，ドローン名刺を作ってみました．
-長い間，バグっててあんまりきれいに飛ばなかったのですが息抜きに飛ぶように修正してみました．
-ESP32をコアとしており，6軸IMUのセンシングとモーターのPID制御します．スマホをプロポとするためにESP32上でWebサーバーを立て，Joystickを動かすとWebSocket通信で入力値をドローンに送信します．また，ドローンのRoll pitch yawの角度値や電圧といったテレメトリをスマホ側で見れるようにしています．
-イメージとしてはCrazyfileのようなフライトコントローラとフレーム兼用の基板を目指して作っています．リアルで私に会うことがあればお渡しします！
-名刺完成しました！(形だけ) pic.twitter.com/beSWObaRMu
-— fumi (@fumi_maker) August 20, 2024
- 
-概要
-実際に動いている様子は以下をご覧ください．
-www.youtube.com
-この名刺は部品を実装することで手のひらサイズの小型ドローンとして飛行させることができます。また、ダックスの首輪のLEDを実装しスマホのNFCアンテナ部を近づけるとLEDが点滅する機能があります。
-
-ドローン名刺について
-ESP32を搭載し、基板自体がドローンになります。以下の機能を持っています。
-6軸IMUとの通信と姿勢推定
-PID制御による姿勢制御
-ESP32自身がWi-Fiアクセスポイントとなり、スマホをコントローラーとしたWebSocket通信による機体操縦
-機体情報テレメトリ通信
-PIDゲインやキャリブレーションが調整可能なWebUI
-角度制御飛行（Angle）
-必要なもの
-ドローン名刺基板
-BOM表のパーツ
-３Dプリンタ
-852…]]></summary>
-        <author>
-            <name>fumiLab</name>
         </author>
     </entry>
     <entry>
