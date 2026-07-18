@@ -78,6 +78,97 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
+              rel="noopener">nomolkのブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">３Ｄプリンタでハイドロカルチャー用の鉢カバーを作る</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2026/07/18/221343" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>今年の２月、部屋に緑が欲しいなと思い、ホームセンターでワイヤープランツを買いました。
+
+My new gear... pic.twitter.com/AIMAAKRvSK
+— メルセデスベン子 (@nomolk) 2026年2月7日
+   
+土は使わず、ハイドロボールという粒状の軽石みたいなものを使って水栽培（ハイドロカルチャー）にしています。
+ところが５か月後…
+
+元気に育ちましたね～。
+
+うっ……。
+なんか内側に緑の毛のようなものがついており、インテリアとしては厳しい感じになってしまいました。これは藍藻といって、水槽にもよく生えるアレです。藻類というより細菌に近い仲間なのだそうです。
+植え替えも考えましたが、見た目はともかく水の残量が見えて管理しやすいというメリットは捨てがたい。
+モデリングする
+先に完成形を見せると、こんな感じです。
+
+Fusion360を使ってモデリングしていきます。以下、手順。
+まずスケッチボタンを押して、水平面を選択します。
+
+円ツールで丸を描きます。
+
+さっき書いた円を選択して「押し出し」します。
+
+円柱ができたら、「シェル」を押して筒にします。上の面だけを選ぶと底のある鉢になり、下の面と両方選ぶと筒になります。
+
+ここまででおおよその形はできました。次はここにストライプの装飾をつけていきます。
+「構築▼」の中にある「接平面」というメニューを選びます。
+
+
+「OK」を押して確定させた後、その面をクリックして「スケッチ」を押し、スケッチの編集に入ります。
+長方形ツールででっぱりを作っていきます。
+
+長方形を選んで「押し出し」で立体化します。
+
+次にお好みで、「フィレット」をかけて、でっぱり部分の角を丸めます。
+
+さて、次が今回のモデリングの最大の盛り上がりポイントです。
+
+
+で、このままだとバラバラのオブジェクトなので、全部選択して「結合」を押すと
+
+あとはファイルメニューから「3Dプリント」を押してSTLを書き出し、
+
+ビヨヨ……
+そして完成したのがこちらです。
+
+ちなみに床が異常に汚いのはこのグレーのフィラメントを使う前に、10年くらい前に買ったウッドフィラメントを使おうとして試行錯誤した跡です。
+使ってみよう
+まずはグラスをきれいに洗い、汚れたハイドロボールは入れ替えました。
+
+そしてグラスごとカバーの中に収納。
+
+けっこういい感じになったのではないでしょうか！
+PLAだと質感にテカリがあるので、強い光が当たると正直ちょっと安っぽさも感じます。
+
+
+eSUN マットPLA 3Dプリントフィラメント 1.75mm 寸法精度±0.05mm 1kg マット ブラウン
+
+eSUN
+Amazon
+
+以上、３Ｄプリンタ活用記でした。
+使っている３Ｄプリンタ
+たぶん誰に聞いてもこれを勧めるであろうBambu Lab A1 mini。めちゃくちゃ楽、速い、安い、オプションで多色出力に拡張可能、で現行機種の中では圧倒的おすすめです。
+
+
+Bambu Lab A1 mini 3Dプリンター 高速高精度 自動調整 初心者向け 日本語UI対応 造形サイズ：180×180×180mm³
+
+Bambu Lab
+Amazon
+
+メーカー公式でセールやってると26,000円とかになってめちゃくちゃ安いので検索してみよう。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/634780f0df0bde217be50dffdc46d5fedf865b07/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260718%2F20260718092809.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.lai.so/" target="_blank"
               rel="noopener">laiso</a></h3>
           <section class="articles-per-source">
@@ -13565,60 +13656,6 @@ www.fightforthefuture.org
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://efcl.info/feed/" target="_blank"
-              rel="noopener">Web Scratch</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">Secretlint v12.0.0リリース: Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaの検出に対応</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://efcl.info/2026/04/20/secretlint-v12/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlintのv12.0.0をリリースしました。
-Release v12.0.0 · secretlint/secretlint
-このバージョンでは、次のように追加で検知できるようになったサービスが10個あります。
-Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figma
-あわせて、@secretlint/secretlint-rule-preset-recommendのパッケージサイズを約80%削減しています。
-新しく追加された検出ルール
-@secretlint/secretlint-rule-preset-recommendに、次の10個のサービスのAPIトークンなどを検出するルールが追加されました。
-Groq - gsk_から始まるAPIキー
-Hugging Face - hf_から始まるUser Access Token
-Notion - secret_/ntn_から始まるIntegration Token
-GitLab - Personal Access Token、Pipeline Trigger Token、Runner Registration Tokenなど
-Grafana - Service Account TokenやCloud Access Policy Token
-HashiCorp Vault - hvs./hvb.から始まるトークン
-Vercel - Access Token
-Databricks - dapiから始まるPersonal Access Token
-Docker - dckr_pat_から始まるPersonal Access…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2026.4.20</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026042045352/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PS5 Upload Suite v5.0.0,Ghostship Vita v.1.0,dump2ufs-gui 1.4.0,Aroma Beta-26,WiiUPluginLoaderBackend v0.4.0,WUMSLoader v0.3.0,wiiload_plugin v0.2.5,SwipSwapMe v0.1.4,ScreenshotWUPS (Screenshot Plugin) v0.1.5,AutobootModule v0.3.2,NotificationModule v0.1.4,drc_region_free_plugin v0.2.3,homebrew_on_menu_plugin v0.1.9,ftpiiu_plugin v0.4.5,sdcafiine_plugin v0.1.6,region_free_plugin v0.2.7,MochaPayload v0.2.5,SplashscreenModule v0.3,WiiVCLaunch v2.0.0-alpha.3,System Font Replacer v1.3,Reggie Next v4.9.0,ReXGlue SDK v0.7.6,Cemu(Android) 0.4,ARMSX2 Nightly Build (DEBUG – 1.0.8) – 20260419-2030,shadPS4 Pre-release-shadPS4-2026-04-19-90b75ea,shadPS4-QtLauncher-2026-04-19-6671c44,xenia a6e92f4_canary_experimental,Cxbx-Reloaded CI-585c49a→→→この記事の続きを読む
-GameGaz Daily 2026.4.20 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -15931,7 +15968,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-07-18T12:14:44.107Z">2026-07-18T12:14:44.107Z</time>
+    <time id="build-timestamp" datetime="2026-07-18T13:28:15.976Z">2026-07-18T13:28:15.976Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

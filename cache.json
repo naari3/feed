@@ -2420,6 +2420,21 @@
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032054960223",
+          "author": null,
+          "description": "今年の２月、部屋に緑が欲しいなと思い、ホームセンターでワイヤープランツを買いました。\n\nMy new gear... pic.twitter.com/AIMAAKRvSK\n— メルセデスベン子 (@nomolk) 2026年2月7日\n   \n土は使わず、ハイドロボールという粒状の軽石みたいなものを使って水栽培（ハイドロカルチャー）にしています。\nところが５か月後…\n\n元気に育ちましたね～。\n\nうっ……。\nなんか内側に緑の毛のようなものがついており、インテリアとしては厳しい感じになってしまいました。これは藍藻といって、水槽にもよく生えるアレです。藻類というより細菌に近い仲間なのだそうです。\n植え替えも考えましたが、見た目はともかく水の残量が見えて管理しやすいというメリットは捨てがたい。\nモデリングする\n先に完成形を見せると、こんな感じです。\n\nFusion360を使ってモデリングしていきます。以下、手順。\nまずスケッチボタンを押して、水平面を選択します。\n\n円ツールで丸を描きます。\n\nさっき書いた円を選択して「押し出し」します。\n\n円柱ができたら、「シェル」を押して筒にします。上の面だけを選ぶと底のある鉢になり、下の面と両方選ぶと筒になります。\n\nここまででおおよその形はできました。次はここにストライプの装飾をつけていきます。\n「構築▼」の中にある「接平面」というメニューを選びます。\n\n\n「OK」を押して確定させた後、その面をクリックして「スケッチ」を押し、スケッチの編集に入ります。\n長方形ツールででっぱりを作っていきます。\n\n長方形を選んで「押し出し」で立体化します。\n\n次にお好みで、「フィレット」をかけて、でっぱり部分の角を丸めます。\n\nさて、次が今回のモデリングの最大の盛り上がりポイントです。\n\n\nで、このままだとバラバラのオブジェクトなので、全部選択して「結合」を押すと\n\nあとはファイルメニューから「3Dプリント」を押してSTLを書き出し、\n\nビヨヨ……\nそして完成したのがこちらです。\n\nちなみに床が異常に汚いのはこのグレーのフィラメントを使う前に、10年くらい前に買ったウッドフィラメントを使おうとして試行錯誤した跡です。\n使ってみよう\nまずはグラスをきれいに洗い、汚れたハイドロボールは入れ替えました。\n\nそしてグラスごとカバーの中に収納。\n\nけっこういい感じになったのではないでしょうか！\nPLAだと質感にテカリがあるので、強い光が当たると正直ちょっと安っぽさも感じます。\n\n\neSUN マットPLA 3Dプリントフィラメント 1.75mm 寸法精度±0.05mm 1kg マット ブラウン\n\neSUN\nAmazon\n\n以上、３Ｄプリンタ活用記でした。\n使っている３Ｄプリンタ\nたぶん誰に聞いてもこれを勧めるであろうBambu Lab A1 mini。めちゃくちゃ楽、速い、安い、オプションで多色出力に拡張可能、で現行機種の中では圧倒的おすすめです。\n\n\nBambu Lab A1 mini 3Dプリンター 高速高精度 自動調整 初心者向け 日本語UI対応 造形サイズ：180×180×180mm³\n\nBambu Lab\nAmazon\n\nメーカー公式でセールやってると26,000円とかになってめちゃくちゃ安いので検索してみよう。",
+          "link": "https://nomolk.hatenablog.com/entry/2026/07/18/221343",
+          "publishedOn": "2026-07-18T13:13:43.000Z",
+          "wordCount": null,
+          "title": "３Ｄプリンタでハイドロカルチャー用の鉢カバーを作る",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/634780f0df0bde217be50dffdc46d5fedf865b07/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260718%2F20260718092809.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/634780f0df0bde217be50dffdc46d5fedf865b07/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260718%2F20260718092809.jpg"
+        },
+        {
           "id": "hatenablog://entry/14945776032047325872",
           "author": null,
           "description": "世の中には音階を読むための譜読み練習アプリはたくさんあるのですが、リズムを読むためのものがないんですよね。ので作りました。スマホで見にくい場合は一番下の「設定」で１小節にすると見やすくなるよ。\n↓↓↓↓\n\n\n  :root{\n    --panel:#f8fafc; --panel2:#eef2f7; --line:#dbe3ec;\n    --text:#1f2937; --muted:#64748b; --accent:#2563eb;\n    --good:#16a34a; --bad:#dc2626;\n  }\n  /* ブログ埋め込み用にウィジェット全体をスコープ。外側のCSSの影響も受けにくくする */\n  .rn-app{box-sizing:border-box;}\n  .rn-app *{box-sizing:border-box;}\n  .rn-app{\n    font-family:\"Hiragino Kaku Gothic ProN\",\"Yu Gothic\",Meiryo,sans-serif;\n    color:var(--text); background:transparent;\n    display:flex; flex-direction:column; align-items:center;\n    padding:16px 12px; line-height:1.5;\n  }\n  .rn-app h1{font-size:22px; margin:0 0 4px; color:var(--text);}\n  .rn-app .sub{color:var(--muted); font-size:13px;}\n  .title{text-align:center; margin-bottom:18px;}\n  .card{\n    ba…",
@@ -6707,16 +6722,6 @@
           "wordCount": null,
           "title": "JavaScript PrimerのES2026対応を手伝ってくれるContributorとSponsorを募集しています",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2026/04/20/secretlint-v12/",
-          "author": null,
-          "description": "ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlintのv12.0.0をリリースしました。\nRelease v12.0.0 · secretlint/secretlint\nこのバージョンでは、次のように追加で検知できるようになったサービスが10個あります。\nGroq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figma\nあわせて、@secretlint/secretlint-rule-preset-recommendのパッケージサイズを約80%削減しています。\n新しく追加された検出ルール\n@secretlint/secretlint-rule-preset-recommendに、次の10個のサービスのAPIトークンなどを検出するルールが追加されました。\nGroq - gsk_から始まるAPIキー\nHugging Face - hf_から始まるUser Access Token\nNotion - secret_/ntn_から始まるIntegration Token\nGitLab - Personal Access Token、Pipeline Trigger Token、Runner Registration Tokenなど\nGrafana - Service Account TokenやCloud Access Policy Token\nHashiCorp Vault - hvs./hvb.から始まるトークン\nVercel - Access Token\nDatabricks - dapiから始まるPersonal Access Token\nDocker - dckr_pat_から始まるPersonal Access…",
-          "link": "https://efcl.info/2026/04/20/secretlint-v12/",
-          "publishedOn": "2026-04-20T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Secretlint v12.0.0リリース: Groq、Hugging Face、Notion、GitLab、Grafana、HashiCorp Vault、Vercel、Databricks、Docker、Figmaの検出に対応",
-          "imageUrl": null
         }
       ]
     },
@@ -8207,16 +8212,6 @@
           "publishedOn": "2026-04-21T04:02:49.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2026.4.21",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=45352",
-          "author": "mamosuke",
-          "description": "PS5 Upload Suite v5.0.0,Ghostship Vita v.1.0,dump2ufs-gui 1.4.0,Aroma Beta-26,WiiUPluginLoaderBackend v0.4.0,WUMSLoader v0.3.0,wiiload_plugin v0.2.5,SwipSwapMe v0.1.4,ScreenshotWUPS (Screenshot Plugin) v0.1.5,AutobootModule v0.3.2,NotificationModule v0.1.4,drc_region_free_plugin v0.2.3,homebrew_on_menu_plugin v0.1.9,ftpiiu_plugin v0.4.5,sdcafiine_plugin v0.1.6,region_free_plugin v0.2.7,MochaPayload v0.2.5,SplashscreenModule v0.3,WiiVCLaunch v2.0.0-alpha.3,System Font Replacer v1.3,Reggie Next v4.9.0,ReXGlue SDK v0.7.6,Cemu(Android) 0.4,ARMSX2 Nightly Build (DEBUG – 1.0.8) – 20260419-2030,shadPS4 Pre-release-shadPS4-2026-04-19-90b75ea,shadPS4-QtLauncher-2026-04-19-6671c44,xenia a6e92f4_canary_experimental,Cxbx-Reloaded CI-585c49a→→→この記事の続きを読む\nGameGaz Daily 2026.4.20 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026042045352/",
-          "publishedOn": "2026-04-20T00:37:11.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2026.4.20",
           "imageUrl": null
         }
       ]
