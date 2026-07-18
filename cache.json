@@ -76,6 +76,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032054778202",
+          "author": null,
+          "description": "ようやくいったよ！！コアができれば勝ちですね！！！\n\n240x160 GBA\n\n320x224 SATURN\n    224 1.4\n    222 1.3875\n    216 1.35\n    214 1.3375\n    212 1.325\n    208 1.3\n    200 1.25\n\n318x212 1.325（削り2x12）で決定かも",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/18/103423",
+          "publishedOn": "2026-07-18T01:34:23.000Z",
+          "wordCount": 541,
+          "title": "描画ルーチンdone",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/2d34029376cf60b2c53244bf0c3bf4f68f6f23b2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260718%2F20260718103353.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2d34029376cf60b2c53244bf0c3bf4f68f6f23b2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260718%2F20260718103353.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032054187442",
           "author": null,
           "description": "ROMのCRCが変わるのはsoxでランダム関数を使っているからです。「-R」オプションを指定するとシードが固定化されて同じ結果になります。pythonは単純リサイズですし他はたぶん使っていないはずです・・・たぶん。間違っていたらすみません。（＾＾；\nsox test.wav -R -c1 -b8 -e signed-integer 1.raw rate -v 13379\nsox test.wav -R -c1 -b8 -e signed-integer 2.raw rate -v 13379\n\nfc /b 1.raw 2.raw\nファイル 1.raw と 2.RAW を比較しています\nFC: 相違点は検出されませんでした",
@@ -689,21 +704,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901379283267/1776825060"
-        },
-        {
-          "id": "hatenablog://entry/17179246901378406406",
-          "author": null,
-          "description": "ノイズ除去できすぎてえらいことですよ！Gemini先生この情報どこから拾ってきたの？異次元すぎて今までの全てやり直したい。\n■RAW変換\nsox.exe -D wav\\2_23_AM.wav -c1 -b8 -e signed-integer 16384.raw trim 0 60 fade t 0 60 2 rate -v 16384 norm -1\n■8ad変換\nsox.exe -D wav\\2_23_AM.wav -c1 -b16 13379.wav trim 0 60 fade t 0 60 2 rate -v 13379 norm -1\nwav28ad.exe 13379.wav 13379.8ad\n■RAWオプション補足\n-D: 余計な「シャーッ」というノイズ（ディザ）を入れない。\n-b8 -e signed-integer: GBAのDirect Sound（FIFO）が最も得意とする、符号付き8bit形式を正確に指定。\nrate -v 16384: 高品質な補完（VHQモード）により、リサンプルによるノイズを最小化。\nnorm -1: すべての加工が終わった最後に配置することで、8bitのダイナミックレンジを1ビットも無駄にせず使い切る。\n■8adオプション補足\n-b16: 後のADPCMエンコーダ（wav28ad）が正確な「差分」を計算できるよう、あえて16bitで高精度に渡す。\n\nこのワークフローは、**「内部の計算は高精度（32/64bit）で行い、\n最後の最後で目的の形式に落とす」**という、\nプロのオーディオエンジニアがマスタリングで行う手順と同じ考え方に基づいています。",
-          "link": "https://akkera102.hatenablog.com/entry/2026/04/19/223030",
-          "publishedOn": "2026-04-19T13:30:30.000Z",
-          "wordCount": 603,
-          "title": "つよつよsoxパラメータ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901378406406/1776606855",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901378406406/1776606855"
         }
       ]
     },
@@ -5143,16 +5143,6 @@
           "wordCount": null,
           "title": "Twitter14",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/ecolidelvsvc11/n/n84e8bd072984",
-          "author": null,
-          "description": "氷の城壁2話、1話で感じてた様なテンポの悪さが無いかも。\n\n続きをみる",
-          "link": "https://note.com/ecolidelvsvc11/n/n84e8bd072984",
-          "publishedOn": "2026-04-19T14:49:54.000Z",
-          "wordCount": 2636,
-          "title": "Twitter13",
-          "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/acbea2e62a7d608c346ab34f97ffee499944899c.png"
         }
       ]
     },

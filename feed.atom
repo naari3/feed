@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-18T01:31:27.354Z</updated>
+    <updated>2026-07-18T02:58:33.898Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[描画ルーチンdone]]></title>
+        <id>hatenablog://entry/14945776032054778202</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/07/18/103423"/>
+        <updated>2026-07-18T01:34:23.000Z</updated>
+        <summary type="html"><![CDATA[ようやくいったよ！！コアができれば勝ちですね！！！
+
+240x160 GBA
+
+320x224 SATURN
+    224 1.4
+    222 1.3875
+    216 1.35
+    214 1.3375
+    212 1.325
+    208 1.3
+    200 1.25
+
+318x212 1.325（削り2x12）で決定かも]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-07-17]]></title>
         <id>hatenablog://entry/14945776032054629520</id>
@@ -8784,44 +8807,6 @@ GameGaz Daily 2026.4.20 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[Salesforceはサンフランシスコで4月15日と16日の2日間にわたり開催した開発者向けイベント「Salesforce TDX 2026」で、Salesforceのあらゆる機能をAPI、CLI（コマンドライン）、そしてMCP（Model...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Twitter13]]></title>
-        <id>https://note.com/ecolidelvsvc11/n/n84e8bd072984</id>
-        <link href="https://note.com/ecolidelvsvc11/n/n84e8bd072984"/>
-        <updated>2026-04-19T14:49:54.000Z</updated>
-        <summary type="html"><![CDATA[氷の城壁2話、1話で感じてた様なテンポの悪さが無いかも。
-
-続きをみる]]></summary>
-        <author>
-            <name>ティラノサウルスのぼんじり</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[つよつよsoxパラメータ]]></title>
-        <id>hatenablog://entry/17179246901378406406</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/04/19/223030"/>
-        <updated>2026-04-19T13:30:30.000Z</updated>
-        <summary type="html"><![CDATA[ノイズ除去できすぎてえらいことですよ！Gemini先生この情報どこから拾ってきたの？異次元すぎて今までの全てやり直したい。
-■RAW変換
-sox.exe -D wav\2_23_AM.wav -c1 -b8 -e signed-integer 16384.raw trim 0 60 fade t 0 60 2 rate -v 16384 norm -1
-■8ad変換
-sox.exe -D wav\2_23_AM.wav -c1 -b16 13379.wav trim 0 60 fade t 0 60 2 rate -v 13379 norm -1
-wav28ad.exe 13379.wav 13379.8ad
-■RAWオプション補足
--D: 余計な「シャーッ」というノイズ（ディザ）を入れない。
--b8 -e signed-integer: GBAのDirect Sound（FIFO）が最も得意とする、符号付き8bit形式を正確に指定。
-rate -v 16384: 高品質な補完（VHQモード）により、リサンプルによるノイズを最小化。
-norm -1: すべての加工が終わった最後に配置することで、8bitのダイナミックレンジを1ビットも無駄にせず使い切る。
-■8adオプション補足
--b16: 後のADPCMエンコーダ（wav28ad）が正確な「差分」を計算できるよう、あえて16bitで高精度に渡す。
-
-このワークフローは、**「内部の計算は高精度（32/64bit）で行い、
-最後の最後で目的の形式に落とす」**という、
-プロのオーディオエンジニアがマスタリングで行う手順と同じ考え方に基づいています。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
