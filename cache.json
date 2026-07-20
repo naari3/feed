@@ -719,21 +719,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901379702145/1776921929"
-        },
-        {
-          "id": "hatenablog://entry/17179246901379283267",
-          "author": null,
-          "description": "サウンドのダブルバッファについてドキュメント書きましたポヨ。暇な人いましたら読んでくださいポヨ。\nakkera102.sakura.ne.jp",
-          "link": "https://akkera102.hatenablog.com/entry/2026/04/22/104547",
-          "publishedOn": "2026-04-22T01:45:47.000Z",
-          "wordCount": 495,
-          "title": "PCMドライバ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901379283267/1776825060",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901379283267/1776825060"
         }
       ]
     },
@@ -8321,6 +8306,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/claude_codeclaude_apps_gateway_for_awsgoogle_cloud.html",
+          "author": null,
+          "description": "AnthropicのAIコーディングエージェントClaud Codeは非常に人気のあるサービスとして多くの組織で採用され始めています。 Claude Codeは個人で簡単に導入できますが、企業が組織としてClaude Codeを導入する場合...",
+          "link": "https://www.publickey1.jp/blog/26/claude_codeclaude_apps_gateway_for_awsgoogle_cloud.html",
+          "publishedOn": "2026-07-20T15:54:57.000Z",
+          "wordCount": null,
+          "title": "Claude Codeを組織一括でシングルサインオン、チームや個人の費用上限設定、デフォルト設定など可能に、「Claude apps gateway for AWS/Google Cloud」登場",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/rustbunclaude_code.html",
+          "author": null,
+          "description": "Claude Codeを用いてわずか11日間でZig言語からRust言語へ移植されたことが話題となっているJavaScriptランタイムのBunですが、そのRust版Bunが早くも7月17日にリリースされたClaude Code v2.1....",
+          "link": "https://www.publickey1.jp/blog/26/rustbunclaude_code.html",
+          "publishedOn": "2026-07-20T15:52:57.000Z",
+          "wordCount": null,
+          "title": "Rustで書き直されたBun、早くもClaude Codeアプリに本番投入された模様",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/net_8net_911.html",
           "author": null,
