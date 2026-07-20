@@ -76,6 +76,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032055612568",
+          "author": null,
+          "description": "乱れているけど多重表示まで行きました。Gemini先生と相談しつつあーでもない、こーでもない、とやっていくの楽しいですね。今していることはGBAでいうmode0 256色の実装で、とりあえずいい感じに出力できてラッキーといったところです。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/20/165057",
+          "publishedOn": "2026-07-20T07:50:57.000Z",
+          "wordCount": 504,
+          "title": "合成キタコレ",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/4da192ee15d45ddd5e4f2685978c65a689d134fb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260720%2F20260720164651.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/4da192ee15d45ddd5e4f2685978c65a689d134fb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260720%2F20260720164651.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032055312771",
           "author": null,
           "description": "1枚絵、音楽、citスクリプト抽出はうまくいきました。タイトルとロゴで画像形式が違うのはご勘弁ください。無圧縮でなかったら挫折してたかもしれないです。うーん、cutコマンドが本命っぽいですね。フレームバッファが16あるけど、たぶんbgは3っぽい？のでどうやってフレームからbgへ選んでいるかは謎ですね。もう少し調査が必要かと思います。cutの区切りはうまくいったので、番号に合わせて処理を見ていけば答えが出てくるかなー。\ndbl2bmp... DIN_OP.DBL\n2 16904 0x004A12\n3     8 0x004A20\n2  1868 0x005172\n3     8 0x005180\n2 21580 0x00A5D2\n3     8 0x00A5E0\n1    44 0x00A612\n5   520 0x00A820\n4   292 0x00A94A\nframe: 0\n------------------------------ Z_000_000.bmp\n5   520 0x00AB58\n4   240 0x00AC4E\nframe: 1\n------------------------------ Z_000_001.bmp\n5   520 0x00AE5C\n4   340 0x00AFB6\nframe: 2\n------------------------------ Z_000_002.bmp\n1    40 0x00AFE4\n1     8 0x00AFF2\n1    24 0x00B010\n1     8 0x00B01E\n1    24 0x00B03C\n1     8 0x00B04A\n1    24 0x00B068\n1     8 0x00B076\n1    24 0x00B094\n1     8 0x00B0A2\n2  1548 0x00B6B4\n4   368 0x00B82A\nframe: 3",
