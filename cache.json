@@ -76,6 +76,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032056061752",
+          "author": null,
+          "description": "dbl2bmp... DIN_OP.DBL\n\nACUT cmd:2 len:16904 pos:0x000804\nTILE DEC\n\nACUT cmd:3 len:8 pos:0x004A12\nTILE COPY adr:0x50000 size:0xb8c0\n\nACUT cmd:2 len:1868 pos:0x004A20\nTILE DEC\n\nACUT cmd:3 len:8 pos:0x005172\nTILE COPY adr:0x0 size:0x3400\n\nACUT cmd:2 len:21580 pos:0x005180\nTILE DEC\n\nACUT cmd:3 len:8 pos:0x00A5D2\nTILE COPY adr:0x3400 size:0xafc0\n\nACUT cmd:1 len:44 pos:0x00A5E0\nCMD1 0x6\nBLEND SET msk:0x1ff val:31\nCMD1 0x5\nSCR SET no:3 x:0 y:0\nCMD1 0x5\nSCR SET no:4 x:0 y:0\nCMD1 0x5\nSCR SET no:5 x:0 y:0\nCMD1 0x5\nSCR SET no:6 x:0 y:0\nCMD1 0x2\nSCR CLR no:3\nCMD1 0x0\nEND\n\nACUT cmd:5 len:520 pos:0x00A612\nPALETTE SET no:0 size:256\n\nACUT cmd:4 len:292 pos:0x00A820\nMAP DEC no:0 nazo:0 tcx42 tcy:30\n\nACUT cmd:5 len:520 pos:0x00A94A\nPALETTE SET no:1 size:256\n\nACUT cmd:4 len:240 pos:0x00AB58\nMAP DEC no:1 nazo:1 tcx42 tcy:30\n\nACUT cmd:5 len:520 pos:0x00AC4E\nPALETTE SET no:2 size:256\n\nACUT cmd:4 len:340 pos:0x00AE5C\nMAP DEC no:2 nazo:2 tcx42 tcy:30\n\nACUT cmd:1 len:40 pos:0x00AFB6\nCMD1 0x7\nPAL BIAS msk:4 val:31 bias:0\nCMD1 0xA\nFADE msk:7 val:-255\nCMD1 0x5\nSCR SET no:0 x:0 y:0\nCMD1 0x5\nSCR SET no:1 x:0 y:0\nCMD1 0x5\nSCR SET no:2 x:0 y:0\nCMD1 0x0\nEND\n\nACUT cmd:1 len:8 pos:0x00AFE4\nCMD1 0x1\ns00 pos=(000,000) size=(042,030)\ns01 pos=(000,000) size=(042,030)\ns02 pos=(000,000) size=(042,030)\nFrame 0 saved.",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/21/211005",
+          "publishedOn": "2026-07-21T12:10:05.000Z",
+          "wordCount": 709,
+          "title": "ばっちり",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/4495bd6b65e1234227aa62ab05258e4baadd9ccc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260721%2F20260721210231.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/4495bd6b65e1234227aa62ab05258e4baadd9ccc/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260721%2F20260721210231.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032055612568",
           "author": null,
           "description": "乱れているけど多重表示まで行きました。Gemini先生と相談しつつあーでもない、こーでもない、とやっていくの楽しいですね。今していることはGBAでいうmode0 256色の実装で、とりあえずいい感じに出力できてラッキーといったところです。",

@@ -2,10 +2,93 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-21T11:32:57.984Z</updated>
+    <updated>2026-07-21T12:28:32.067Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ばっちり]]></title>
+        <id>hatenablog://entry/14945776032056061752</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/07/21/211005"/>
+        <updated>2026-07-21T12:10:05.000Z</updated>
+        <summary type="html"><![CDATA[dbl2bmp... DIN_OP.DBL
+
+ACUT cmd:2 len:16904 pos:0x000804
+TILE DEC
+
+ACUT cmd:3 len:8 pos:0x004A12
+TILE COPY adr:0x50000 size:0xb8c0
+
+ACUT cmd:2 len:1868 pos:0x004A20
+TILE DEC
+
+ACUT cmd:3 len:8 pos:0x005172
+TILE COPY adr:0x0 size:0x3400
+
+ACUT cmd:2 len:21580 pos:0x005180
+TILE DEC
+
+ACUT cmd:3 len:8 pos:0x00A5D2
+TILE COPY adr:0x3400 size:0xafc0
+
+ACUT cmd:1 len:44 pos:0x00A5E0
+CMD1 0x6
+BLEND SET msk:0x1ff val:31
+CMD1 0x5
+SCR SET no:3 x:0 y:0
+CMD1 0x5
+SCR SET no:4 x:0 y:0
+CMD1 0x5
+SCR SET no:5 x:0 y:0
+CMD1 0x5
+SCR SET no:6 x:0 y:0
+CMD1 0x2
+SCR CLR no:3
+CMD1 0x0
+END
+
+ACUT cmd:5 len:520 pos:0x00A612
+PALETTE SET no:0 size:256
+
+ACUT cmd:4 len:292 pos:0x00A820
+MAP DEC no:0 nazo:0 tcx42 tcy:30
+
+ACUT cmd:5 len:520 pos:0x00A94A
+PALETTE SET no:1 size:256
+
+ACUT cmd:4 len:240 pos:0x00AB58
+MAP DEC no:1 nazo:1 tcx42 tcy:30
+
+ACUT cmd:5 len:520 pos:0x00AC4E
+PALETTE SET no:2 size:256
+
+ACUT cmd:4 len:340 pos:0x00AE5C
+MAP DEC no:2 nazo:2 tcx42 tcy:30
+
+ACUT cmd:1 len:40 pos:0x00AFB6
+CMD1 0x7
+PAL BIAS msk:4 val:31 bias:0
+CMD1 0xA
+FADE msk:7 val:-255
+CMD1 0x5
+SCR SET no:0 x:0 y:0
+CMD1 0x5
+SCR SET no:1 x:0 y:0
+CMD1 0x5
+SCR SET no:2 x:0 y:0
+CMD1 0x0
+END
+
+ACUT cmd:1 len:8 pos:0x00AFE4
+CMD1 0x1
+s00 pos=(000,000) size=(042,030)
+s01 pos=(000,000) size=(042,030)
+s02 pos=(000,000) size=(042,030)
+Frame 0 saved.]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[nikki_20260721「上半期によく聴いた30曲」]]></title>
         <id>hatenablog://entry/14945776032056035897</id>
