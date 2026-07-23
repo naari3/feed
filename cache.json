@@ -76,6 +76,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032056810576",
+          "author": null,
+          "description": "ｷﾀｷﾀｷﾀｰ！！！スプライト表示も問題なし。うーん、人影がちょっとバグってますねー。あまりの嬉しさを共有したいので画像多めです。今日ばかりはご勘弁を（＾＾；\n\ndbl2bmp... DIN_OP.DBL\n\nTILE_DEC nazo:739\n\nTILE_COPY adr:0x50000 size:0xb8c0\n\nTILE_DEC nazo:208\n\nTILE_COPY adr:0x0 size:0x3400\n\nTILE_DEC nazo:703\n\nTILE_COPY adr:0x3400 size:0xafc0\n\nBLD m:0x1ff n:31\nSCR n:3 x:0 y:0\nSCR n:4 x:0 y:0\nSCR n:5 x:0 y:0\nSCR n:6 x:0 y:0\nCLR n:3\nEND\n\nPAL_SET no:0 size:256\n\nMAP_DEC f:0 n:0 tw:42 th:30\n\nPAL_SET no:1 size:256\n\nMAP_DEC f:1 n:1 tw:42 th:30\n\nPAL_SET no:2 size:256\n\nMAP_DEC f:2 n:2 tw:42 th:30\n\nBIAS m:0x4 n:31 b:0\nFADE m:0x7 n:-255\nSCR n:0 x:0 y:0\nSCR n:1 x:0 y:0\nSCR n:2 x:0 y:0\nEND\n\nUPDATE n:1\nbg:0 scr=(000,000) size=(042,030) blend:31\nbg:1 scr=(000,000) size=(042,030) blend:31\nbg:2 scr=(000,000) size=(042,030) blend:63\nsaved. fileCnt:0 frameCnt:0",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/23/211634",
+          "publishedOn": "2026-07-23T12:16:34.000Z",
+          "wordCount": 623,
+          "title": "キター！",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/9be4b230c012a60691b4db95f606ce5268d131d4/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260723%2F20260723211418.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/9be4b230c012a60691b4db95f606ce5268d131d4/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260723%2F20260723211418.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032056407415",
           "author": null,
           "description": "試算は3914枚（mode4 256色）でlz圧縮して26-28MBと予想。音楽は3MBぐらいがんばれそうです。絶妙すぎるでしょ・・・。言い忘れてましたけどオープニングだけをターゲットにしています。技術デモを作りたいなあと。ゲームは容量全然なんで無理っすよ（＾＾；。",

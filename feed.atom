@@ -2,10 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-23T11:35:05.598Z</updated>
+    <updated>2026-07-23T12:28:15.036Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[キター！]]></title>
+        <id>hatenablog://entry/14945776032056810576</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/07/23/211634"/>
+        <updated>2026-07-23T12:16:34.000Z</updated>
+        <summary type="html"><![CDATA[ｷﾀｷﾀｷﾀｰ！！！スプライト表示も問題なし。うーん、人影がちょっとバグってますねー。あまりの嬉しさを共有したいので画像多めです。今日ばかりはご勘弁を（＾＾；
+
+dbl2bmp... DIN_OP.DBL
+
+TILE_DEC nazo:739
+
+TILE_COPY adr:0x50000 size:0xb8c0
+
+TILE_DEC nazo:208
+
+TILE_COPY adr:0x0 size:0x3400
+
+TILE_DEC nazo:703
+
+TILE_COPY adr:0x3400 size:0xafc0
+
+BLD m:0x1ff n:31
+SCR n:3 x:0 y:0
+SCR n:4 x:0 y:0
+SCR n:5 x:0 y:0
+SCR n:6 x:0 y:0
+CLR n:3
+END
+
+PAL_SET no:0 size:256
+
+MAP_DEC f:0 n:0 tw:42 th:30
+
+PAL_SET no:1 size:256
+
+MAP_DEC f:1 n:1 tw:42 th:30
+
+PAL_SET no:2 size:256
+
+MAP_DEC f:2 n:2 tw:42 th:30
+
+BIAS m:0x4 n:31 b:0
+FADE m:0x7 n:-255
+SCR n:0 x:0 y:0
+SCR n:1 x:0 y:0
+SCR n:2 x:0 y:0
+END
+
+UPDATE n:1
+bg:0 scr=(000,000) size=(042,030) blend:31
+bg:1 scr=(000,000) size=(042,030) blend:31
+bg:2 scr=(000,000) size=(042,030) blend:63
+saved. fileCnt:0 frameCnt:0]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[はてなCMSのノーコードエディタにて不具合が発生しています]]></title>
         <id>hatenablog://entry/14945776032056608867</id>
