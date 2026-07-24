@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-24T05:56:54.483Z</updated>
+    <updated>2026-07-24T06:46:43.000Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ScalaをDocker Imageにビルドする2026夏 / Cloud Native BuildpackでScalaプロジェクトをビルドしてメモリ関連の設定を楽しよう]]></title>
+        <id>hatenablog://entry/14945776032056888512</id>
+        <link href="https://blog.3qe.us/entry/2026/07/24/154004"/>
+        <updated>2026-07-24T06:40:04.000Z</updated>
+        <summary type="html"><![CDATA[ScalaでDockerイメージを作る話は定期的に書いている。以前はsbt-jibを使う方法を書いた。
+今回はさらに別の方法として、Cloud Native Buildpack(CNB)でビルドしてみる。CNBはアプリのソースからDockerfileなしでOCIイメージを作る仕組みで、CNCFのプロジェクトになっている。この手法のメリットは、メモリ関連のJVMパラメータを全自動で設定してくれるところだ。
+Javaやsbtのプロジェクトを扱うための実装はPaketoが用意していて、その中にpaketo-buildpacks/sbtというsbt専用のbuildpackがある。これがbuild.sbtを見つけてソースからビルドしてくれる。
+キモは、このsbt buildpackが既定でsbt universal:packageBinを実行し、target/universal/*.zipから成果物を持っていくという点。つまりsbt-native-packagerのUniversal形式の出力を最初から前提にしているので、sbt-native-packagerを入れておくのが素直だ。
+環境
+土台となるプロジェクト
+sbt-native-packagerを用意する
+packでビルドする
+sbt 2固有の設定
+動かす
+JREのバージョンや種別を指定する
+Correttoを使う
+RedHat UBIを使う(使いたかった)
+jlinkを利用する
+設定たち
+ファイルを追加する
+レジストリにpushする
+メモ
+Special Thanks
+Disclosure
+これまでに書いた記事
+環境
+現時点で最新のバージョンを使っているので、適宜読み替えてほしい:
+Scala 3.8.2
+sbt 2.0
+sbt-native-packager 1.11.7
+pack (Pack CLI) 0.40.8
+bu…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-07-23]]></title>
         <id>hatenablog://entry/14945776032056726965</id>

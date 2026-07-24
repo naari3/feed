@@ -6371,6 +6371,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032056888512",
+          "author": null,
+          "description": "ScalaでDockerイメージを作る話は定期的に書いている。以前はsbt-jibを使う方法を書いた。\n今回はさらに別の方法として、Cloud Native Buildpack(CNB)でビルドしてみる。CNBはアプリのソースからDockerfileなしでOCIイメージを作る仕組みで、CNCFのプロジェクトになっている。この手法のメリットは、メモリ関連のJVMパラメータを全自動で設定してくれるところだ。\nJavaやsbtのプロジェクトを扱うための実装はPaketoが用意していて、その中にpaketo-buildpacks/sbtというsbt専用のbuildpackがある。これがbuild.sbtを見つけてソースからビルドしてくれる。\nキモは、このsbt buildpackが既定でsbt universal:packageBinを実行し、target/universal/*.zipから成果物を持っていくという点。つまりsbt-native-packagerのUniversal形式の出力を最初から前提にしているので、sbt-native-packagerを入れておくのが素直だ。\n環境\n土台となるプロジェクト\nsbt-native-packagerを用意する\npackでビルドする\nsbt 2固有の設定\n動かす\nJREのバージョンや種別を指定する\nCorrettoを使う\nRedHat UBIを使う(使いたかった)\njlinkを利用する\n設定たち\nファイルを追加する\nレジストリにpushする\nメモ\nSpecial Thanks\nDisclosure\nこれまでに書いた記事\n環境\n現時点で最新のバージョンを使っているので、適宜読み替えてほしい:\nScala 3.8.2\nsbt 2.0\nsbt-native-packager 1.11.7\npack (Pack CLI) 0.40.8\nbu…",
+          "link": "https://blog.3qe.us/entry/2026/07/24/154004",
+          "publishedOn": "2026-07-24T06:40:04.000Z",
+          "wordCount": null,
+          "title": "ScalaをDocker Imageにビルドする2026夏 / Cloud Native BuildpackでScalaプロジェクトをビルドしてメモリ関連の設定を楽しよう",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032056888512/1784875204",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032056888512/1784875204"
+        },
+        {
           "id": "hatenablog://entry/14945776032050621140",
           "author": null,
           "description": "こんな記事を読んだ。大変面白かったので、まだ読んでいなかったら是非読んでほしい。\nzenn.dev\nこの記事の骨子は以下の通りだ:\nSubagentを利用することで、性能が高い一方で思考コストがきわめて高いという相反する特性を持つAnthropic Fableを有効に活用できる。\n意思決定層をFableが専任し、実装や調査といった実務はすべてSubagentに委任することでこれを達成する。\nccteamというツールを作成した。\n自分もSubagentを活用したいと思っていたので、このアイデアを元に自分の手元でいろいろ進化させて、軍事組織の指揮系統を（こじつけに近い形で）導入したSubagentチームを作ることができたので紹介したい。\n今のところ成果は上々で、うまく役割を分担しつつ、コンテキストを節約した動作ができているし、複雑なタスクを与えても内部でうまく問題を片付けてから持ってきてくれる。\n現状\nFableはユーザとのインターフェイスに徹する\nHeadquarter\nStaff\nCodingBrigade{Opus,Sonnet,Haiku}\nCodingBattalion\nEvaluationBrigade\n最新のClaude CodeではネストしたSubagentを起動できる\nなんで軍事組織なのか\n指揮と統制\nラインとスタッフ\n責務の設定\n感想\n余談\nおまけ\n現状\nさて、さっそく自分が作った構成を紹介したい。現状の編成は以下の図のようになっている。各Subagentについては後述する。\nタスクフォース\nFableはユーザとのインターフェイスに徹する\nこのタスクフォースの最上位に位置するのがFableだ。Fableの責務は、ユーザとともに意思決定を行い、その意思決定を下位のSubagentに命令することである。Fableはユーザのタスク達成について責任を負っており、Su…",
