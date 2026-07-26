@@ -76,6 +76,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032057945294",
+          "author": null,
+          "description": "同期、完璧になりました。\n全フレームをGBFS化すると47MBになるので前半と後半に分けてROM化。デコードが重くてスキップしたフレームをログ出力。そのファイルを削除するとあら不思議、30.5MBに収まりましたという話になります・・・。うーん、動画でこの理論はいいのだろうか・・・。デコード処理によって1vblankに収まるのと、2vblankかかる2種類があるわけですが、とりあえずmGBAで走らせて確認するという力業で決着しました。\nGeminiさんと相談したところ、事後のログを使わないなら、ある程度未使用覚悟でロムに持つしかないよ、とのお返事。いやー無理なんだって。え？一律2vblank固定デコードか、1vblank処理で済んだ場合は1vblank休ませるって？休ませるぐらいならフレーム表示したいよなあ、というところで私の知性の限界とあいなりました。\n\tIrqSetCnt(0);\n\n\tfor(;;)\n\t{\n\t\ts32 v = IrqGetCnt();\n\n\t\tImgDrawBg(v);\n\t\tImg2.isUse[v] = true;\t\t// あとでまとめてログ出力\n\n\t\tVBlankIntrWait();\n\n\t\tImgDrawPal();\t\t\t\t// 関数内でmode4 flip\n\n\t\tif(Img.bg >= 8370)\n\t\t{\n\t\t\tImg.step++;\n\n\t\t\treturn;\n\t\t}\n\t}",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/26/212830",
+          "publishedOn": "2026-07-26T12:28:30.000Z",
+          "wordCount": 527,
+          "title": "進捗",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032057945294/1785069710",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032057945294/1785069710"
+        },
+        {
           "id": "hatenablog://entry/14945776032057403376",
           "author": null,
           "description": "https://akkera102.sakura.ne.jp/zip/139_dina_op_gba.zip\nhttps://github.com/akkera102/gbadev-ja-test/tree/main/139_dina_op_gba",
@@ -2585,6 +2600,21 @@
       "feedUrl": "https://nomolk.hatenablog.com/rss",
       "siteUrl": "https://nomolk.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032057516222",
+          "author": null,
+          "description": "今年の４月に、常用しているマイコンボードのアンケートを実施しました。\n\n【拡散希望】電子工作によく使うマイコンボードに関するアンケートを取っています\nリプライにURLをつけるのでご回答お願いします！\n質問いくつかありますが、一番上の項目だけで30秒で回答可能です～何卒！ pic.twitter.com/tjiwPWVlph\n— 石川大樹／ヘボコン主催者、「雑に作る」（電子工作本）発売中 (@ishikawa_daiju) 2026年4月10日\n   \n最初に一応説明すると、マイコンボードというのは電子工作で使うパーツで、他の部品を制御するためのものです。いま初心者が電子工作を始めると、大抵はまず何かしらのマイコンボードを用意し、そこにやりたいことに応じたセンサーやLEDをつないで、マイコンボード側にそれを制御するプログラムを書き込んで、完成、という手順になると思います。これだけでいろんな作品が作れます。上級者だと回路はもっと複雑になってきますが、マイコンボードが頭脳的な役割を果たすことには変わりがないです。\nそんなマイコンボードですが、けっこう種類があるんですよね。\n自分は前に初心者向けの電子工作本「雑に作る」を出したり、また原稿仕事やこのブログでも初心者向けの電子工作を扱うことが多いので、「いま初心者～中級者の人が使ってるマイコンボードって何なんだろうか」というのがずっと気になっていました。\nそういうわけでアンケートを取ったところ、おかげさまでたくさんの回答が集まりましたので、その結果をここに公開します。ご協力いただいたみなさま、どうもありがとうございました！\nアンケートについて\n総回答数243件\nXアカウント @ishikawa_daiju を起点に拡散。本職の技術者よりも趣味で電子工作やってる人とかの方が多そう。\nマイコンボードについてのアンケートのため、マイコンのチ…",
+          "link": "https://nomolk.hatenablog.com/entry/2026/07/26/212900",
+          "publishedOn": "2026-07-26T12:29:00.000Z",
+          "wordCount": null,
+          "title": "みんなが普段づかいしてるマイコンボードは何？ アンケートで分かった、2026年の電子工作定番ボード",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/0c855819cf351124caeb7f18f8d7b0a06e01cb00/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260725%2F20260725174328.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0c855819cf351124caeb7f18f8d7b0a06e01cb00/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260725%2F20260725174328.jpg"
+        },
         {
           "id": "hatenablog://entry/14945776032057837884",
           "author": null,
