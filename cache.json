@@ -6529,21 +6529,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/c4c0b7f4fb98a4ffad8540849ee9d559f0af04a5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F414VHlKY4KL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/17179246901381327388",
-          "author": null,
-          "description": "先日引っ越した。引っ越したはいいが炊飯器を持っていないので、これを機に購入することにした。\nひとまず店頭で機能や選び方の雰囲気をつかむのが良いと思ったので、近所のヨドバシに行ったところ、怒涛のキャッチコピーに襲われた。\n\n\n\n\nCGの気合いが入りまくっているし、演出もすごくて、炊飯器のカタログとは思えない。とにかくなんかすごいことだけが伝わってくる。\n炊飯器屋さんでクリエイティブを作るデザイナーは、さぞかし楽しかったろうと思う。\nせっかくなので、全体の傾向をつかむためにClaudeを使って主要メーカごとのキャッチコピーを調べてもらった。\nメーカー,キャッチコピー\n象印マホービン,炎舞炊き\n象印マホービン,豪熱大火力\n象印マホービン,わが家炊き\n象印マホービン,豪炎かまど釜\n象印マホービン,極め炊き\nタイガー魔法瓶,土鍋ご泡火炊き\nタイガー魔法瓶,本土鍋\nタイガー魔法瓶,300度WレイヤーIH\nタイガー魔法瓶,ハリつやポンプ\nパナソニック,おどり炊き\nパナソニック,可変圧力IH&スチーム おどり炊き\nパナソニック,ダイヤモンド竈釜\n三菱電機,本炭釜\n三菱電機,炭炊釜\n三菱電機,七重全面加熱\n東芝ライフスタイル,炎匠炊き\n東芝ライフスタイル,真空ひたし\n東芝ライフスタイル,真空保温\n東芝ライフスタイル,鍛造かまど銅釜\n日立,沸騰鉄釜\n日立,極上炊き分け\n日立,ふっくら御膳\nアイリスオーヤマ,瞬熱真空釜\nアイリスオーヤマ,銘柄炊き分け\nこの時点で胃もたれしそうだが・・・\nよく使われている文字(n > 2)をランキングするとこうなる。\n  1  炊  10\n  2  き  9\n  3  釜  7\n  4  ど  4\n  5  炎  3\n  6  熱  3\n  7  真  3\n  8  空  3\n  9  0  2\n 10  H  2\n 11  I  2\n 12  お  2\n 13 …",
-          "link": "https://blog.3qe.us/entry/2026/04/28/003725",
-          "publishedOn": "2026-04-27T15:37:25.000Z",
-          "wordCount": null,
-          "title": "炊飯器のキャッチコピーがインフレしすぎている件",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/0de2eeef7aa061c85278669709f6219f245565c6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260428%2F20260428002122.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0de2eeef7aa061c85278669709f6219f245565c6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260428%2F20260428002122.png"
         }
       ]
     },
@@ -6589,6 +6574,16 @@
       "feedUrl": "https://blog.lai.so/rss/",
       "siteUrl": "https://blog.lai.so/",
       "articles": [
+        {
+          "id": "6a658685bdf0b600015aea0c",
+          "author": "laiso",
+          "description": "今回は、Cursor Router、Opus 4.8 の court 問題、Bun v1.4 の Node.js 互換性を先に扱います。続いてその他の話題として、OpenAI のモデル",
+          "link": "https://blog.lai.so/2026-07-24/",
+          "publishedOn": "2026-07-23T17:00:00.000Z",
+          "wordCount": null,
+          "title": "#15: Cursor Router、court問題、Bun v1.4",
+          "imageUrl": null
+        },
         {
           "id": "6a5b5fd9fcc58400017da3f5",
           "author": "laiso",
@@ -7145,6 +7140,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45853",
+          "author": "mamosuke",
+          "description": "PS5 14.0ベータテスト,マイクロソフトが広告付きでゲームストリーミング,ps4-linux-payloads v25,tvhp v0.2,CSSFontFace-Exploit,MemDBG nightly [2026-07-25-g171822d],ps3-dev 260726-0119,Theme Studio,RCO Studio,File Manager,Thermal Bench,Cell Stream,Disc Mount,Vitacompanion 1.05,OpenNOW Switch v0.0.4,KitNX 1.0.0,HATS-2026-07-25-3e7a04f,TwilightBoxart 2.2,Reggie Next v4.10.0,DrasticDS_nx 1.0.4,BlocksDS v1.22.2,SAROO Save Editor,Azahar 2126.0 Release Candidate 4,PCSX2 v2.7.494,pcsx2x6 v0.2.20,ARMSX2 2.6.5.1,shadPS4 Pre-release-shadPS4-2026-07-25-d976c33,xenia 8f55b4a_canary_experimental,Xenia Manager v4.3.0,decky-loader v3.2.8-pre1,Atari800 v7.1.0→→→この記事の続きを読む\nGameGaz Daily 2026.7.26 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026072645853/",
+          "publishedOn": "2026-07-26T03:17:01.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.7.26",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=45846",
           "author": "mamosuke",
