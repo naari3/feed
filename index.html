@@ -78,6 +78,43 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">無題</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/07/28/181215" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>１日ほっとした後にでてくるアイディア、なんなんでしょうね。orz
+・mode4はやめよう。mode0の方が180x120（正確にいうと184x120(23x15)）を詰めてリニアに転送できます。以下のコードはなかったことにorz
+IWRAM_CODE void Mode4Draw(u16* pImg)
+{
+	SwiLZ77UnCompWrite16bit(pImg, Mode4.buf);
+
+	u8 *src &#x3D; (u8*)Mode4.buf;
+	u8 *dst &#x3D; (u8*)Mode4.pBack;
+
+	s32 y;
+
+	for(y&#x3D;0; y&lt;120; y++)
+	{
+		MemInc(src + y*180, dst + y*240, 180);
+	}
+}
+・aplibで圧縮してみよう。LZ77より圧縮率いいらしい。ZX0やLZ4でGBAに最適化されたコードはないっぽいです。あるなら試してみたいなあ
+https://github.com/emmanuel-marty/apultra/blob/master/asm/ARM7TDMI/aplib_arm.s</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032058613837/1785231418" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -16735,7 +16772,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-07-28T08:52:37.766Z">2026-07-28T08:52:37.766Z</time>
+    <time id="build-timestamp" datetime="2026-07-28T09:51:10.380Z">2026-07-28T09:51:10.380Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

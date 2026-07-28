@@ -2,10 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-28T08:52:37.805Z</updated>
+    <updated>2026-07-28T09:51:10.416Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[無題]]></title>
+        <id>hatenablog://entry/14945776032058613837</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/07/28/181215"/>
+        <updated>2026-07-28T09:12:15.000Z</updated>
+        <summary type="html"><![CDATA[１日ほっとした後にでてくるアイディア、なんなんでしょうね。orz
+・mode4はやめよう。mode0の方が180x120（正確にいうと184x120(23x15)）を詰めてリニアに転送できます。以下のコードはなかったことにorz
+IWRAM_CODE void Mode4Draw(u16* pImg)
+{
+	SwiLZ77UnCompWrite16bit(pImg, Mode4.buf);
+
+	u8 *src = (u8*)Mode4.buf;
+	u8 *dst = (u8*)Mode4.pBack;
+
+	s32 y;
+
+	for(y=0; y<120; y++)
+	{
+		MemInc(src + y*180, dst + y*240, 180);
+	}
+}
+・aplibで圧縮してみよう。LZ77より圧縮率いいらしい。ZX0やLZ4でGBAに最適化されたコードはないっぽいです。あるなら試してみたいなあ
+https://github.com/emmanuel-marty/apultra/blob/master/asm/ARM7TDMI/aplib_arm.s]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.7.28]]></title>
         <id>https://gamegaz.com/?p=45860</id>
