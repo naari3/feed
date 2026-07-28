@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-28T00:17:58.383Z</updated>
+    <updated>2026-07-28T01:30:58.168Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-07-27]]></title>
+        <id>hatenablog://entry/14945776032058327487</id>
+        <link href="https://commits.hatenablog.com/entry/2026/07/28/100000"/>
+        <updated>2026-07-28T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[https://t.co/dH3tfIkTCz
+過去のバージョン時点でのキャラ情報を見れたり、キャラごとの変更履歴を見れるようにしてみました。
+ついでに変更回数が多いキャラも出してみた。 pic.twitter.com/D1gjZZUE6j
+— 🎹 (@p_ck_) July 27, 2026
+   
+前から作っているElinのキャラクター情報サイトにでかめの変更を入れた。今までは最新バージョンしか情報を表示していなかったのを、Steam上で過去配信された全てのバージョンの情報を表示するようにした。
+Steam から全バージョン(600件)のゲームファイルをダウンロードして、それにmodを有効にして実行してデータを集める、という地獄のような作業をClaudeに丸投げしていた。
+スクリプトを組んでも一発で通るわけではないし、完了までに10時間以上かかる見込みで、かなりだるい作業だった。
+しかしClaudeにスクリプトの作成だけでなくスクリプト実行の管理までやらせたらかなり楽だった。一晩寝ている間に、スクリプトを実行して順番に試しつつ、問題が起きたものを修正して再実行するというところまでを勝手にやってくれていた。こういう使い方もできるのだなあ。仕事だとそこまで権限渡すのちょっと怖いけれど。
+だいぶ負債を抱えた実装になっている自覚があるので、なんとかしたいなあと思っている。お金をかけずデータを持つの難しい。自宅サーバー solves everythingではという気持ちになってしまう。
+ちょっと風邪っぽい。鼻がかなりやられていて厳しい。今日は仕事を早めに切り上げてゆっくり休んだ。明日復活していてほしい。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「週刊プラグインレビュー」PSPaudioware PSP Levelizer]]></title>
         <id>https://note.com/massmasaoki/n/nd11b86cffaac</id>
