@@ -6546,6 +6546,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032058619983",
+          "author": null,
+          "description": "自分はもともとibus-skkを利用して日本語を入力していたのだが、先日Waylandに乗り換えた:\nblog.3qe.us\nblog.3qe.us\nblog.3qe.us\nすると、変換を確定するときに特定のパターンで候補文字列が消えてしまうという現象が起こるようになった。\n例: 「今日いつでも」と入力する\n漢字を変換する 例: 「今日」\n確定せず、母音を入力する 例: 「い」\n変換中の漢字の部分（例: 「今日」）が消えてしまう\nこれがどうやっても直らないので、Waylandネイティブなfcitx5に乗り換えることにした。\n環境\nopenSUSE Leap 16.0\nWayland\nGNOME Shell 48.4\n注意点\nそもそもGNOMEは内部的にibusを利用しているので、これを削除すると正常にGNOMEが動作せず、突然クラッシュしてしまうようになるので削除してはいけない。\n手順\nやるべきことは以下の通りだ:\nfcitx5とfcitx5-skkをインストールする\nインプットメソッドとしてibusではなくfcitxを利用するように設定する\nibusを使わないようにする\nスタートアップを設定する\nインストール\nzypperを利用してfcitx5をインストールする。\n$ sudo zypper in fcitx5 fcitx-skk\nインプットメソッドとしてibusではなくfcitxを利用するように設定する\nX11では~/.xprofileを読み込んでいたが、Waylandでは別のファイルを読む。~/.config/environment.dを作成し、そこに設定ファイルを配置する:\n$ mkdir -p ~/.config/environment.d\n$ cat > ~/.config/environment.d/10-input-method.conf <<'EOF'\nXMODIFIERS=@im=fcitx\nEOF\nこれはsystemdの環境変数としてセットアップされる。\nQt 6.8.2 未満のアプリケーションを使う場合は、同じファイルに QT_IM_MODULE=fcitx も必要。\nまた、GTKのために以下の設定を行う:\n# ~/.config/gtk-3.0/settings.ini および ~/.config/gtk-4.0/settings.ini\n[Settings]\ngtk-im-module=fcitx\nまた以下のコマンドを実行して入力用のモジュールを上書きする（無くてもいいかもしれない）\n$ gsettings set org.gnome.settings-daemon.plugins.xsettings overrides \"{'Gtk/IMModule':<'fcitx'>}\"\nibusを使わないようにする\nGNOMEの設定画面から、キーボードレイアウトを残して他の入力メソッドを削除してしまう。\n\nスタートアップを設定する\nsystemctlを利用して自動的にfcitx5が起動するようにする。\n$ systemctl --user enable --now fcitx5\nログインしなおすとfcitx5で入力できるようになっているはず。Ctrl+で入力メソッドを切り替えてfcitx-skkに切り替えできるはず。\nkimpanelをインストールする\nお好みでkimpanelを入れてもいい。\nextensions.gnome.org\nこれは変換候補などの表示がちょっと良い感じになるgnome拡張。たぶんもともとはKDE向け。\nGNOMEの拡張機能をインストールするには、システムにgnome-browser-connectorパッケージと、ブラウザにも拡張機能が必要。\nchromewebstore.google.com\nfcitx5固有の設定\n\nこの設定がSKKだと邪魔になることがあるので、消してもいい。",
+          "link": "https://blog.3qe.us/entry/2026/07/28/191313",
+          "publishedOn": "2026-07-28T10:13:13.000Z",
+          "wordCount": null,
+          "title": "openSUSE Leap 16でibus-skkからfcitx5に乗り換える",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/907dfb4574e548117a271b450ffa32f799dc03b0/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260728%2F20260728184904.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/907dfb4574e548117a271b450ffa32f799dc03b0/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260728%2F20260728184904.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032056888512",
           "author": null,
           "description": "ScalaでDockerイメージを作る話は定期的に書いている。以前はsbt-jibを使う方法を書いた。\n今回はさらに別の方法として、Cloud Native Buildpack(CNB)でビルドしてみる。CNBはアプリのソースからDockerfileなしでOCIイメージを作る仕組みで、CNCFのプロジェクトになっている。この手法のメリットは、メモリ関連のJVMパラメータを全自動で設定してくれるところだ。\nJavaやsbtのプロジェクトを扱うための実装はPaketoが用意していて、その中にpaketo-buildpacks/sbtというsbt専用のbuildpackがある。これがbuild.sbtを見つけてソースからビルドしてくれる。\nキモは、このsbt buildpackが既定でsbt universal:packageBinを実行し、target/universal/*.zipから成果物を持っていくという点。つまりsbt-native-packagerのUniversal形式の出力を最初から前提にしているので、sbt-native-packagerを入れておくのが素直だ。\n環境\n土台となるプロジェクト\nsbt-native-packagerを用意する\npackでビルドする\nsbt 2固有の設定\n動かす\nJREのバージョンや種別を指定する\nCorrettoを使う\nRedHat UBIを使う(使いたかった)\njlinkを利用する\n設定たち\nファイルを追加する\nレジストリにpushする\nメモ\nSpecial Thanks\nDisclosure\nこれまでに書いた記事\n環境\n現時点で最新のバージョンを使っているので、適宜読み替えてほしい:\nScala 3.8.2\nsbt 2.0\nsbt-native-packager 1.11.7\npack (Pack CLI) 0.40.8\nbu…",

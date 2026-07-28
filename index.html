@@ -78,6 +78,70 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">openSUSE Leap 16でibus-skkからfcitx5に乗り換える</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/07/28/191313" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>自分はもともとibus-skkを利用して日本語を入力していたのだが、先日Waylandに乗り換えた:
+blog.3qe.us
+blog.3qe.us
+blog.3qe.us
+すると、変換を確定するときに特定のパターンで候補文字列が消えてしまうという現象が起こるようになった。
+例: 「今日いつでも」と入力する
+漢字を変換する 例: 「今日」
+確定せず、母音を入力する 例: 「い」
+変換中の漢字の部分（例: 「今日」）が消えてしまう
+これがどうやっても直らないので、Waylandネイティブなfcitx5に乗り換えることにした。
+環境
+openSUSE Leap 16.0
+Wayland
+GNOME Shell 48.4
+注意点
+そもそもGNOMEは内部的にibusを利用しているので、これを削除すると正常にGNOMEが動作せず、突然クラッシュしてしまうようになるので削除してはいけない。
+手順
+やるべきことは以下の通りだ:
+fcitx5とfcitx5-skkをインストールする
+インプットメソッドとしてibusではなくfcitxを利用するように設定する
+ibusを使わないようにする
+スタートアップを設定する
+インストール
+zypperを利用してfcitx5をインストールする。
+$ sudo zypper in fcitx5 fcitx-skk
+インプットメソッドとしてibusではなくfcitxを利用するように設定する
+X11では~/.xprofileを読み込んでいたが、Waylandでは別のファイルを読む。~/.config/environment.dを作成し、そこに設定ファイルを配置する:
+$ mkdir -p ~/.config/environment.d
+$ cat &gt; ~/.config/environment.d/10-input-method.conf }&quot;
+ibusを使わないようにする
+GNOMEの設定画面から、キーボードレイアウトを残して他の入力メソッドを削除してしまう。
+
+スタートアップを設定する
+systemctlを利用して自動的にfcitx5が起動するようにする。
+$ systemctl --user enable --now fcitx5
+ログインしなおすとfcitx5で入力できるようになっているはず。Ctrl+で入力メソッドを切り替えてfcitx-skkに切り替えできるはず。
+kimpanelをインストールする
+お好みでkimpanelを入れてもいい。
+extensions.gnome.org
+これは変換候補などの表示がちょっと良い感じになるgnome拡張。たぶんもともとはKDE向け。
+GNOMEの拡張機能をインストールするには、システムにgnome-browser-connectorパッケージと、ブラウザにも拡張機能が必要。
+chromewebstore.google.com
+fcitx5固有の設定
+
+この設定がSKKだと邪魔になることがあるので、消してもいい。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/907dfb4574e548117a271b450ffa32f799dc03b0/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260728%2F20260728184904.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
               rel="noopener">あーさん日記</a></h3>
           <section class="articles-per-source">
@@ -16772,7 +16836,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-07-28T09:51:10.380Z">2026-07-28T09:51:10.380Z</time>
+    <time id="build-timestamp" datetime="2026-07-28T10:47:40.859Z">2026-07-28T10:47:40.859Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,10 +2,74 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-28T09:51:10.416Z</updated>
+    <updated>2026-07-28T10:47:40.898Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[openSUSE Leap 16でibus-skkからfcitx5に乗り換える]]></title>
+        <id>hatenablog://entry/14945776032058619983</id>
+        <link href="https://blog.3qe.us/entry/2026/07/28/191313"/>
+        <updated>2026-07-28T10:13:13.000Z</updated>
+        <summary type="html"><![CDATA[自分はもともとibus-skkを利用して日本語を入力していたのだが、先日Waylandに乗り換えた:
+blog.3qe.us
+blog.3qe.us
+blog.3qe.us
+すると、変換を確定するときに特定のパターンで候補文字列が消えてしまうという現象が起こるようになった。
+例: 「今日いつでも」と入力する
+漢字を変換する 例: 「今日」
+確定せず、母音を入力する 例: 「い」
+変換中の漢字の部分（例: 「今日」）が消えてしまう
+これがどうやっても直らないので、Waylandネイティブなfcitx5に乗り換えることにした。
+環境
+openSUSE Leap 16.0
+Wayland
+GNOME Shell 48.4
+注意点
+そもそもGNOMEは内部的にibusを利用しているので、これを削除すると正常にGNOMEが動作せず、突然クラッシュしてしまうようになるので削除してはいけない。
+手順
+やるべきことは以下の通りだ:
+fcitx5とfcitx5-skkをインストールする
+インプットメソッドとしてibusではなくfcitxを利用するように設定する
+ibusを使わないようにする
+スタートアップを設定する
+インストール
+zypperを利用してfcitx5をインストールする。
+$ sudo zypper in fcitx5 fcitx-skk
+インプットメソッドとしてibusではなくfcitxを利用するように設定する
+X11では~/.xprofileを読み込んでいたが、Waylandでは別のファイルを読む。~/.config/environment.dを作成し、そこに設定ファイルを配置する:
+$ mkdir -p ~/.config/environment.d
+$ cat > ~/.config/environment.d/10-input-method.conf <<'EOF'
+XMODIFIERS=@im=fcitx
+EOF
+これはsystemdの環境変数としてセットアップされる。
+Qt 6.8.2 未満のアプリケーションを使う場合は、同じファイルに QT_IM_MODULE=fcitx も必要。
+また、GTKのために以下の設定を行う:
+# ~/.config/gtk-3.0/settings.ini および ~/.config/gtk-4.0/settings.ini
+[Settings]
+gtk-im-module=fcitx
+また以下のコマンドを実行して入力用のモジュールを上書きする（無くてもいいかもしれない）
+$ gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/IMModule':<'fcitx'>}"
+ibusを使わないようにする
+GNOMEの設定画面から、キーボードレイアウトを残して他の入力メソッドを削除してしまう。
+
+スタートアップを設定する
+systemctlを利用して自動的にfcitx5が起動するようにする。
+$ systemctl --user enable --now fcitx5
+ログインしなおすとfcitx5で入力できるようになっているはず。Ctrl+で入力メソッドを切り替えてfcitx-skkに切り替えできるはず。
+kimpanelをインストールする
+お好みでkimpanelを入れてもいい。
+extensions.gnome.org
+これは変換候補などの表示がちょっと良い感じになるgnome拡張。たぶんもともとはKDE向け。
+GNOMEの拡張機能をインストールするには、システムにgnome-browser-connectorパッケージと、ブラウザにも拡張機能が必要。
+chromewebstore.google.com
+fcitx5固有の設定
+
+この設定がSKKだと邪魔になることがあるので、消してもいい。]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[無題]]></title>
         <id>hatenablog://entry/14945776032058613837</id>
