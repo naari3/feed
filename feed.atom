@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-28T01:30:58.168Z</updated>
+    <updated>2026-07-28T02:58:41.076Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.7.28]]></title>
+        <id>https://gamegaz.com/?p=45860</id>
+        <link href="https://gamegaz.com/2026072845860/"/>
+        <updated>2026-07-28T02:33:13.000Z</updated>
+        <summary type="html"><![CDATA[PKGMachete v5.0.0,ps5upload v4.1.3,SharpProspero v0.5,PHU retro tools v1.0,MemDBG nightly [2026-07-27-g6794bf3],ps3netsrv-go v0.5.0,OpenNOW Switch v0.0.6,nullDC4Wii alpha0.62,AKMenu-Next v2.3.1,3DS-CLI build-cf1f2cdf2c028a75c1bc7f38469b78a8f38690ba: Add real filesystem persistence, networking, and hardware RNG/RTC,Switchfin 0.9.3,Dekopon v2.0.0-RC1,DrasticDS_nx 1.0.6,DSAdvance 2.3,dolphin-nx 1.0.0,mGBA-GX ver. 1.0.0,PCSX2 v2.7.499,EmuCoreX v0.3.0,ARMSX2.6.5.7-1,SharpEmu v0.0.3,KytyPS5 2026-07-27-8fe4765,xenia 888b9ad_canary_experimental→→→この記事の続きを読む
+GameGaz Daily 2026.7.28 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-07-27]]></title>
         <id>hatenablog://entry/14945776032058327487</id>
@@ -9523,94 +9534,6 @@ Hackeroneで「2500ドル報奨金」だったGezine氏の脆弱性の内容が�
 GameGaz Daily 2026.4.30 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Wado言語で個人的に気に入っているところ: import, assert, effect]]></title>
-        <id>hatenablog://entry/17179246901382153266</id>
-        <link href="https://gfx.hatenablog.com/entry/2026/04/29/231256"/>
-        <updated>2026-04-29T14:12:56.000Z</updated>
-        <summary type="html"><![CDATA[wado-lang.org
-Wado言語の開発はずっと続けていて、最近は3-4日くらいで（Wadoの開発のために契約した）Claude Code Max 20x のweekly limitに達してしまってちょっと物足りないくらいです。
-まあとにかく、けっこう面白い機能が揃ってきたので紹介します。
-imort構文
-「このモジュールは標準ライブラリなのかサードパーティなのかローカルなのか、そしてこのライブラリの導入でどういうシンボルが導入されるのか」というのはけっこう言語によって判断が変わるところで、たとえばRustは Cargo.toml に宣言したライブラリを宣言なく使うことができて、しかも wildcard import があるので「どのシンボルがどのライブラリから来ているか」というのがパッとみた感じわかりにくいです。LSPの力を借りればできますが、逆にいえばLSP前提の言語設計といえます。
-importに関しては、メジャーな言語でいうとES modulesはかなり優れていて、どのシンボルがimportされるか、どこからきたモジュールかが比較的わかりやすいんですね。こんなふうに:
-// JavaScript ES modules
-
-// nodeの標準モジュール
-import fs from "node:fs";
-
-// サードパーティのモジュール
-import base64 from "base64";
-
-// ローカルのモジュール
-import { foo } from "./foo.js";
-ただ、ES Modulesは "default export" という概念を導入してしまったせいで、パッとみてnamespace importなのかdefault importなのかがパッとみてわからなという問題があります。
-そこで、Wadoもほぼ同じ構文を採用しつつ（impo…]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[日記　ガラスの京都]]></title>
-        <id>hatenablog://entry/17179246901380564759</id>
-        <link href="https://nonwo.hatenablog.com/entry/2026/04/29/230626"/>
-        <updated>2026-04-29T14:06:26.000Z</updated>
-        <summary type="html"><![CDATA[どうでもいいことから旅行記録までをお届けします。
-open.spotify.com
- 
-
-    
-京都-東京　街から街
-MIX
-外側の人
-ライブ
-京都-東京　街から街
-3月に京都metroであったWES-TEQに行ってきました。
-金と時間の都合のため、夜行バス使いましたが、6時間もあれば京阪に行けるのすごすぎるな。実家帰るより早い。
-
-しかし、着くのが早すぎて京都駅に始発始まる前に放り出されてしまい、日がまだ登らない寒空の中を彷徨っていました。バス乗り場近くのなか卯でかつ丼食ったり、京都タワー眺めたり、ゆずソフト聖地巡礼したり、京都駅の構造に感動したり。
-何気に楽しんでるな。
-
-京落ちした都駅
-
-京都駅を堪能した後は歩いて朝風呂やっている銭湯に向かいました。開店前から数人の人が並んでおり、入店してからも洗い場がそこそこ埋まる程度には人の出入りがあり、
-人気があってよい風呂でした。浴槽も小さいながらいくつかあってgoodや。
-
-上がった時点でも7時過ぎで、昼のイベントまでは暇すぎたのでふらふらしていました。京都、盆地だから歩きやすいし、　景観条例と山がそこまで高くないからか空の面積がだいぶ大きくて街中でもずっと気持ちが良かったです。
-
-いい看板
-
- 
-
-鴨川ってやつなのか
-
-
-
-清水寺まで歩いて行って、金払いたくなくて門前で帰りました。そこからの京都タワー
-
-
-
-歩いていたらたまたま見つけた駿河屋。小さそう。
-
-
-
-京都国立博物館。明治古都館の立派なレンガ造りが素晴らしい。展示もおもろですよ。
-
-
-
-京都市内ならタワーどこからでも見えるのだろうか
-
-
-
-水無月さんが売り切れていました
-
-脚が棒になるくらい彷徨った後に会場へ。京都metro、本当に駅直結すぎてビビりました。この時点で最高の箱や。
-
-開場して15~20分くらいしてからの到着だったので、余裕で入れるかなと思ってま…]]></summary>
-        <author>
-            <name>メガネ好き好きクラブ</name>
         </author>
     </entry>
     <entry>
