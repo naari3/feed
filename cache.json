@@ -1246,6 +1246,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032058727594",
+          "author": null,
+          "description": "GitHub Flavored Markdownで、テーブル内のインラインコードに a|b を書く方法はどれか。\n`a|b` をテーブル外に書いた時の出力と同じものが、テーブルのセル内に表示されるものを正とする。\n| th |\n| -- |\n| `a|b` |\n| `a\\|b` |\n— 🎹 (@p_ck_) July 28, 2026\n   \nGFMのテーブル内に縦棒を書くのは難しいという話を職場でしていて、それをツイートした。難しいよね。\n人々がたくさん間違えれば間違えるほど(作問者としては)嬉しいので、間違えてほしい。でも間違える人が少ないほうが良い構文ではありそう。\nこういう問題が起きるのはテーブルぐらいかなあ。そしてテーブルはGFM拡張なので、純粋なCommonMarkだとこういう自体は起きなさそう。",
+          "link": "https://commits.hatenablog.com/entry/2026/07/29/100000",
+          "publishedOn": "2026-07-29T01:00:00.000Z",
+          "wordCount": 568,
+          "title": "2026-07-28",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032058727594/1785286804",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032058727594/1785286804"
+        },
+        {
           "id": "hatenablog://entry/14945776032058327487",
           "author": null,
           "description": "https://t.co/dH3tfIkTCz\n過去のバージョン時点でのキャラ情報を見れたり、キャラごとの変更履歴を見れるようにしてみました。\nついでに変更回数が多いキャラも出してみた。 pic.twitter.com/D1gjZZUE6j\n— 🎹 (@p_ck_) July 27, 2026\n   \n前から作っているElinのキャラクター情報サイトにでかめの変更を入れた。今までは最新バージョンしか情報を表示していなかったのを、Steam上で過去配信された全てのバージョンの情報を表示するようにした。\nSteam から全バージョン(600件)のゲームファイルをダウンロードして、それにmodを有効にして実行してデータを集める、という地獄のような作業をClaudeに丸投げしていた。\nスクリプトを組んでも一発で通るわけではないし、完了までに10時間以上かかる見込みで、かなりだるい作業だった。\nしかしClaudeにスクリプトの作成だけでなくスクリプト実行の管理までやらせたらかなり楽だった。一晩寝ている間に、スクリプトを実行して順番に試しつつ、問題が起きたものを修正して再実行するというところまでを勝手にやってくれていた。こういう使い方もできるのだなあ。仕事だとそこまで権限渡すのちょっと怖いけれど。\nだいぶ負債を抱えた実装になっている自覚があるので、なんとかしたいなあと思っている。お金をかけずデータを持つの難しい。自宅サーバー solves everythingではという気持ちになってしまう。\nちょっと風邪っぽい。鼻がかなりやられていて厳しい。今日は仕事を早めに切り上げてゆっくり休んだ。明日復活していてほしい。",
@@ -5793,26 +5808,6 @@
           "wordCount": null,
           "title": "「週刊プラグインレビュー」Three-Body Technology / UNMASK",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/279182234/rectangle_large_type_2_73154484d59f0ad0f136da556c47207e.png?width=800"
-        },
-        {
-          "id": "https://note.com/massmasaoki/n/n9b33f09b76d9",
-          "author": null,
-          "description": "今月の２記事目になります！\n熱いんだか寒いんだかよくわからず、下半身ハーフパンツなのに上半身フリースという謎の恰好で執筆をしております笑\nさて、今回は、Fuse Audio Labs がリリースした Tube Lab について取り上げてみます。真空管アンプ、Baxandall EQ、オプト系レベラー、出力/メータリングをひとつにまとめたチャンネルストリップで、いかにも Fuse Audio Labs らしい「アナログ機材の手触りを、現代的な操作性で扱う」タイプのプラグインです。\n続きをみる",
-          "link": "https://note.com/massmasaoki/n/n9b33f09b76d9",
-          "publishedOn": "2026-04-30T13:27:58.000Z",
-          "wordCount": null,
-          "title": "「週刊プラグインレビュー」Fuse Audio Lab/ Tube Lab",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/271853181/rectangle_large_type_2_4f30518bfefe4ece8b285ed67ea3a7fa.png?width=800"
-        },
-        {
-          "id": "https://note.com/massmasaoki/n/n499ce6f57437",
-          "author": null,
-          "description": "今月の記事になります。\n今月は月末にお仕事が殺到してしまい、更新が間に合いそうにありません・・。GWで精神と時の部屋入ります。\n更新遅延を今から予告させていただくかたちとなってしまい、申し訳ありません。\n今回は、Three-Body Technology がリリースしたサチュレーションプラグイン「Sapphire Drive」について書いていけたらと思います！\n続きをみる",
-          "link": "https://note.com/massmasaoki/n/n499ce6f57437",
-          "publishedOn": "2026-04-30T13:13:25.000Z",
-          "wordCount": null,
-          "title": "「週刊プラグインレビュー」Three-Body Technology / Sapphire Drive",
-          "imageUrl": "https://assets.st-note.com/production/uploads/images/271851288/rectangle_large_type_2_4cf3d08651e2da8f657e792a83196bd9.png?width=800"
         }
       ]
     },

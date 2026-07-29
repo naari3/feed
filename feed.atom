@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-29T00:18:01.794Z</updated>
+    <updated>2026-07-29T01:31:55.549Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-07-28]]></title>
+        <id>hatenablog://entry/14945776032058727594</id>
+        <link href="https://commits.hatenablog.com/entry/2026/07/29/100000"/>
+        <updated>2026-07-29T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub Flavored Markdownで、テーブル内のインラインコードに a|b を書く方法はどれか。
+`a|b` をテーブル外に書いた時の出力と同じものが、テーブルのセル内に表示されるものを正とする。
+| th |
+| -- |
+| `a|b` |
+| `a\|b` |
+— 🎹 (@p_ck_) July 28, 2026
+   
+GFMのテーブル内に縦棒を書くのは難しいという話を職場でしていて、それをツイートした。難しいよね。
+人々がたくさん間違えれば間違えるほど(作問者としては)嬉しいので、間違えてほしい。でも間違える人が少ないほうが良い構文ではありそう。
+こういう問題が起きるのはテーブルぐらいかなあ。そしてテーブルはGFM拡張なので、純粋なCommonMarkだとこういう自体は起きなさそう。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.7.29]]></title>
         <id>https://gamegaz.com/?p=45863</id>
@@ -9586,33 +9606,6 @@ www.nicovideo.jp
 じゃ！]]></summary>
         <author>
             <name>なんて巨大なカニゴット</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「週刊プラグインレビュー」Fuse Audio Lab/ Tube Lab]]></title>
-        <id>https://note.com/massmasaoki/n/n9b33f09b76d9</id>
-        <link href="https://note.com/massmasaoki/n/n9b33f09b76d9"/>
-        <updated>2026-04-30T13:27:58.000Z</updated>
-        <summary type="html"><![CDATA[今月の２記事目になります！
-熱いんだか寒いんだかよくわからず、下半身ハーフパンツなのに上半身フリースという謎の恰好で執筆をしております笑
-さて、今回は、Fuse Audio Labs がリリースした Tube Lab について取り上げてみます。真空管アンプ、Baxandall EQ、オプト系レベラー、出力/メータリングをひとつにまとめたチャンネルストリップで、いかにも Fuse Audio Labs らしい「アナログ機材の手触りを、現代的な操作性で扱う」タイプのプラグインです。
-続きをみる]]></summary>
-        <author>
-            <name>moroishimasaoki</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「週刊プラグインレビュー」Three-Body Technology / Sapphire Drive]]></title>
-        <id>https://note.com/massmasaoki/n/n499ce6f57437</id>
-        <link href="https://note.com/massmasaoki/n/n499ce6f57437"/>
-        <updated>2026-04-30T13:13:25.000Z</updated>
-        <summary type="html"><![CDATA[今月の記事になります。
-今月は月末にお仕事が殺到してしまい、更新が間に合いそうにありません・・。GWで精神と時の部屋入ります。
-更新遅延を今から予告させていただくかたちとなってしまい、申し訳ありません。
-今回は、Three-Body Technology がリリースしたサチュレーションプラグイン「Sapphire Drive」について書いていけたらと思います！
-続きをみる]]></summary>
-        <author>
-            <name>moroishimasaoki</name>
         </author>
     </entry>
     <entry>
