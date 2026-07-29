@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-07-29T11:42:06.624Z</updated>
+    <updated>2026-07-29T12:36:01.717Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[雑調査]]></title>
+        <id>hatenablog://entry/14945776032059030522</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/07/29/211059"/>
+        <updated>2026-07-29T12:10:59.000Z</updated>
+        <summary type="html"><![CDATA[aPLibとLz77を比較です。
+・GBA上でのフレームカウント総数4000
+・実在するフレームファイル数2006ファイル
+・1フレームmode4(180, 20) + 256色パレット
+
+・表示できたフレーム総数
+aPLib：2506
+Lz77：2777
+
+・GBFS容量（＋音楽ファイル含む）
+aPLib：22.5 MB (23,669,200 バイト)
+Lz77：25.8 MB (27,059,200 バイト)
+やっぱりaPlibは重かったなあという印象です。ビット操作を頻繁にするのがARMと相性悪いみたいです。8bit CPU界隈ですとまた違った結果になったかもですねー残念。ノベルゲームとしては相性いいので今後つかっていくかもしれないです。
+だいなのアップデートはこれ以上できそうにないのでもちっとコードを整頓して終わりになりそうです。]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「週刊プラグインレビュー」Pulsar Modular / P21 Atlas]]></title>
         <id>https://note.com/massmasaoki/n/ndb7e553df938</id>

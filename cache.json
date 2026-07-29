@@ -76,6 +76,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032059030522",
+          "author": null,
+          "description": "aPLibとLz77を比較です。\n・GBA上でのフレームカウント総数4000\n・実在するフレームファイル数2006ファイル\n・1フレームmode4(180, 20) + 256色パレット\n\n・表示できたフレーム総数\naPLib：2506\nLz77：2777\n\n・GBFS容量（＋音楽ファイル含む）\naPLib：22.5 MB (23,669,200 バイト)\nLz77：25.8 MB (27,059,200 バイト)\nやっぱりaPlibは重かったなあという印象です。ビット操作を頻繁にするのがARMと相性悪いみたいです。8bit CPU界隈ですとまた違った結果になったかもですねー残念。ノベルゲームとしては相性いいので今後つかっていくかもしれないです。\nだいなのアップデートはこれ以上できそうにないのでもちっとコードを整頓して終わりになりそうです。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/29/211059",
+          "publishedOn": "2026-07-29T12:10:59.000Z",
+          "wordCount": 539,
+          "title": "雑調査",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032059030522/1785327134",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032059030522/1785327134"
+        },
+        {
           "id": "hatenablog://entry/14945776032058613837",
           "author": null,
           "description": "１日ほっとした後にでてくるアイディア、なんなんでしょうね。orz\n・mode4はやめよう。mode0の方が180x120（正確にいうと184x120(23x15)）を詰めてリニアに転送できます。以下のコードはなかったことにorz\nIWRAM_CODE void Mode4Draw(u16* pImg)\n{\n\tSwiLZ77UnCompWrite16bit(pImg, Mode4.buf);\n\n\tu8 *src = (u8*)Mode4.buf;\n\tu8 *dst = (u8*)Mode4.pBack;\n\n\ts32 y;\n\n\tfor(y=0; y<120; y++)\n\t{\n\t\tMemInc(src + y*180, dst + y*240, 180);\n\t}\n}\n・aplibで圧縮してみよう。LZ77より圧縮率いいらしい。ZX0やLZ4でGBAに最適化されたコードはないっぽいです。あるなら試してみたいなあ\nhttps://github.com/emmanuel-marty/apultra/blob/master/asm/ARM7TDMI/aplib_arm.s",
