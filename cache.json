@@ -61,6 +61,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032059189000",
+          "author": null,
+          "description": "リンク先をみるとLorenzooone先生ver lz77を使ってもLz4優位ですね。Lz4の時代きたかも？\n                            LZ4 (DMA)       LZ4                     LZ77^\nSize / kB                   226.3           226.3                   238.7(+5.5 %)\nDecompression / ms (mGBA)   282.3           346.1(+22.6 %)          404.6(+43.3 %)\ngithub.com\nhttps://github.com/HorstBaerbel/GBA-demo-framework/blob/45a7650a3420f92ec91964929c2bc04ac0ecfc72/src/compression/lz4_asm.s",
+          "link": "https://akkera102.hatenablog.com/entry/2026/07/30/095747",
+          "publishedOn": "2026-07-30T00:57:47.000Z",
+          "wordCount": 545,
+          "title": "調べるとあるんだなあ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032059189000/1785373470",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032059189000/1785373470"
+        },
+        {
           "id": "hatenablog://entry/14945776032059030522",
           "author": null,
           "description": "aPLibとLz77を比較です。\n・GBA上でのフレームカウント総数4000\n・実在するフレームファイル数2006ファイル\n・1フレームmode4(180, 20) + 256色パレット\n\n・表示できたフレーム総数\naPLib：2506\nLz77：2777\n\n・GBFS容量（＋音楽ファイル含む）\naPLib：22.5 MB (23,669,200 バイト)\nLz77：25.8 MB (27,059,200 バイト)\nやっぱりaPlibは重かったなあという印象です。ビット操作を頻繁にするのがARMと相性悪いみたいです。8bit CPU界隈ですとまた違った結果になったかもですねー残念。ノベルゲームとしては相性いいので今後つかっていくかもしれないです。\nだいなのアップデートはこれ以上できそうにないのでもちっとコードを整頓して終わりになりそうです。",
