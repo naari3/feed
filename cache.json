@@ -6596,6 +6596,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032059804716",
+          "author": null,
+          "description": "我が社では8月から新しい期なので、ここ最近は期末ということで、評価があり、査定があり、ちょっと給与が上がったり、†グレード†は上がらなかったりした。精進したい。\nで、どう精進するかねという話をメンターとしていた。グレードを上げるためには、自分の言い方で噛み砕くならば、仕事の次元を1つ上げる必要がある。\n仕事の次元を上げるとは何か。\n仕事の量を増やすのは想像しやすい。今まで1の仕事が出来ていたなら、2にしたり4にしたりすれば良いのだ。仕事の質を上げるのも想像しやすい。よりきめ細やかな配慮をする、コミュニケーションを意識して他職種メンバーとの連携を密にし、よい成果物を作る、といったものが思い浮かぶ。しかしこれではグレードが上がらない。つまり、良い仕事をするが、コイツに任せて放っておけばなんとかなるだろう、という状態にはならない。\n今の状態から仕事の次元を上げると、例えばシチュエーションをコントロールする、といった、より曖昧模糊とした、ゴールすらよくわからない仕事をすることになる。そもそもどうなっていれば良いのかが定まっていないので、そこを適切に設定するだとか、判断に必要な基準を作成するとか、よりメタな立ち居振る舞いが要求されるようになる。言い換えるならば、より広い責任範囲の仕事をやるということ。何も決まってないところからスタートする。ゴールは、何らかの望ましい成果が出ました、というところだ。\n漠然とした要求から始まって、どうなっていれば良いのかを考え、それを落とし所とするようなコミュニケーションをしてチームで合意に導き、その達成に必要な仕事を作り、実行し、ブロッカーがないかを監視し、期日までに遂行することが求められる。\nこの状態が良い状態のはずだ、というビジョンを打ち出して、その状態にチームを引っ張っていく。これは何もないところから、新たに価値の基準を生み出したことになる。カリキュラムを作成するとか、新たに航路を開拓するとか、そういうのに近い。\n月並だが、温故知新という言葉がある。だいたいのことは昔の物事から習うことができる。微視的には「前例」とか「ADR」といったものだし、巨視的には同僚の行動パターンだ。同僚の「よい仕事」を見ることで、どういうことをすればよいか分かっていくのではないかと思うし、必要に応じて助けを求めることで、考え方を盗んでいきたい。",
+          "link": "https://blog.3qe.us/entry/2026/08/01/022748",
+          "publishedOn": "2026-07-31T17:27:48.000Z",
+          "wordCount": null,
+          "title": "仕事の次元を上げる",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032059804716/1785518868",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032059804716/1785518868"
+        },
+        {
           "id": "hatenablog://entry/14945776032058619983",
           "author": null,
           "description": "自分はもともとibus-skkを利用して日本語を入力していたのだが、先日Waylandに乗り換えた:\nblog.3qe.us\nblog.3qe.us\nblog.3qe.us\nすると、変換を確定するときに特定のパターンで候補文字列が消えてしまうという現象が起こるようになった。\n例: 「今日いつでも」と入力する\n漢字を変換する 例: 「今日」\n確定せず、母音を入力する 例: 「い」\n変換中の漢字の部分（例: 「今日」）が消えてしまう\nこれがどうやっても直らないので、Waylandネイティブなfcitx5に乗り換えることにした。\n環境\nopenSUSE Leap 16.0\nWayland\nGNOME Shell 48.4\n注意点\nそもそもGNOMEは内部的にibusを利用しているので、これを削除すると正常にGNOMEが動作せず、突然クラッシュしてしまうようになるので削除してはいけない。\n手順\nやるべきことは以下の通りだ:\nfcitx5とfcitx5-skkをインストールする\nインプットメソッドとしてibusではなくfcitxを利用するように設定する\nibusを使わないようにする\nスタートアップを設定する\nインストール\nzypperを利用してfcitx5をインストールする。\n$ sudo zypper in fcitx5 fcitx-skk\nインプットメソッドとしてibusではなくfcitxを利用するように設定する\nX11では~/.xprofileを読み込んでいたが、Waylandでは別のファイルを読む。~/.config/environment.dを作成し、そこに設定ファイルを配置する:\n$ mkdir -p ~/.config/environment.d\n$ cat > ~/.config/environment.d/10-input-method.conf <<'EOF'\nXMODIFIERS=@im=fcitx\nEOF\nこれはsystemdの環境変数としてセットアップされる。\nQt 6.8.2 未満のアプリケーションを使う場合は、同じファイルに QT_IM_MODULE=fcitx も必要。\nまた、GTKのために以下の設定を行う:\n# ~/.config/gtk-3.0/settings.ini および ~/.config/gtk-4.0/settings.ini\n[Settings]\ngtk-im-module=fcitx\nまた以下のコマンドを実行して入力用のモジュールを上書きする（無くてもいいかもしれない）\n$ gsettings set org.gnome.settings-daemon.plugins.xsettings overrides \"{'Gtk/IMModule':<'fcitx'>}\"\nibusを使わないようにする\nGNOMEの設定画面から、キーボードレイアウトを残して他の入力メソッドを削除してしまう。\n\nスタートアップを設定する\nsystemctlを利用して自動的にfcitx5が起動するようにする。\n$ systemctl --user enable --now fcitx5\nログインしなおすとfcitx5で入力できるようになっているはず。Ctrl+で入力メソッドを切り替えてfcitx-skkに切り替えできるはず。\nkimpanelをインストールする\nお好みでkimpanelを入れてもいい。\nextensions.gnome.org\nこれは変換候補などの表示がちょっと良い感じになるgnome拡張。たぶんもともとはKDE向け。\nGNOMEの拡張機能をインストールするには、システムにgnome-browser-connectorパッケージと、ブラウザにも拡張機能が必要。\nchromewebstore.google.com\nfcitx5固有の設定\n\nこの設定がSKKだと邪魔になることがあるので、消してもいい。",
@@ -8493,16 +8508,6 @@
           "publishedOn": "2026-05-03T23:12:09.000Z",
           "wordCount": null,
           "title": "GameGaz Daily 2026.5.4",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=45423",
-          "author": "mamosuke",
-          "description": "SEGA Mega Driveのレゴ,Gezine氏がsys_kqueueexのカーネルexploit,Kstuff Lite 1.04,PsVue-Mod1.4,ps5upload v2.2.35,PdbReaderGUI 2.00,FakeName-Changer-For-PSVita v1.0.0,VICEVita 1.23,DBI 895ru,DBIPatcher(DBI) 895,Breeze beta105.0b,stroopwafel v2.2.1,topos 3ds-video-player v0.12.3.1,BattleShip v0.6-beta,PCSX2 v2.7.309,ARMSX2 Nightly Build (DEBUG - 1.0.8) - 20260502-2013,DOSBox-X 2026.05.02-osfreee,xenia 9467c77_canary_experimental,Vita3K Build: 3967→→→この記事の続きを読む\nGameGaz Daily 2026.5.3 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026050345423/",
-          "publishedOn": "2026-05-03T04:27:02.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2026.5.3",
           "imageUrl": null
         }
       ]
