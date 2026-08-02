@@ -61,6 +61,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032060528572",
+          "author": null,
+          "description": "gccは自前のライブラリでdivmod呼び出しているから、自作divmodで上書きすれば問題ないですよね、という方法です。関数名が一緒なら自前の方を優先してくれるというのがポイントのようです。なるほどー！\nqiita.com",
+          "link": "https://akkera102.hatenablog.com/entry/2026/08/02/222046",
+          "publishedOn": "2026-08-02T13:20:46.000Z",
+          "wordCount": 507,
+          "title": "divmod",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032060528572/1785677019",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032060528572/1785677019"
+        },
+        {
           "id": "hatenablog://entry/14945776032060051257",
           "author": null,
           "description": "2001年に発売されたノベルゲーム「秋桜の空に」の話です。\n発売当時、動作不安定だったので互換エンジンが２つも作られるという、ちょっと何言っているかよくわからない展開があったそうです。しかも作った方が、PC-8801エミュレータ（X88000）の中の人と、winlove（ラブエスカレーターwindows移植）の中の人という、びっくりな話です！\n今でも現存しているとはありがたいですねーソースコード付きのオープンさ最高です。休日においしく召し上がらせていただこうと思います。\nquagma.sakura.ne.jp",
@@ -7056,16 +7071,6 @@
           "wordCount": null,
           "title": "automerge-gate: GitHubのAuto Mergeをひとつの必須チェックに集約するGitHub Action",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2026/05/05/secretlint-v13/",
-          "author": null,
-          "description": "ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlintのv13.0.0をリリースしました。\nRelease v13.0.0 · secretlint/secretlint\nこのバージョンの主な変更点は次の3つです。\nファイル探索時に.gitignoreをデフォルトで尊重するように変更（Breaking Change）\nグロブメタ文字を含むパスが実在する場合はリテラルとして扱うように変更\nTailscale/Stripeの検出ルールを新規追加、CloudflareをcanaryからrecommendへPromote\nBreaking Change: .gitignoreをデフォルトで尊重\nv13.0.0では、ファイル探索時に.gitignoreの内容をデフォルトで尊重するようになりました。\nripgrepと同じ挙動で、ネストされた.gitignoreファイルもサブディレクトリへカスケードして適用されます。深い階層のネガティブルール（!）で上位の判定を上書きできます。\nfeat!: respect .gitignore by default via @secretlint/walker by azu · Pull Request #1530\n.gitignoreに一致したファイルはスキャン対象から除外されます。\nそのため、これまでdist/や生成物などを意図的にスキャンしていたプロジェクトでは、出力されるファイル数が減ります。\n.secretlintignoreはこれまで通り併用できます。\nv12までの挙動に戻したい場合は、--no-gitignoreオプションを指定します。\n\nsecretlint --no-gitignore \"**/*\"\n\n\n.gitignoreに一致しているはずのファイルが結果に含まれている場合は、Is…",
-          "link": "https://efcl.info/2026/05/05/secretlint-v13/",
-          "publishedOn": "2026-05-05T01:00:00.000Z",
-          "wordCount": 742,
-          "title": "Secretlint v13.0.0リリース: .gitignore済みをデフォルトで無視、Tailscale/Stripe/Cloudflareの検出に対応",
-          "imageUrl": "https://efcl.info/public/favicon.png"
         }
       ]
     },
