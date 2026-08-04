@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-04T16:34:49.479Z</updated>
+    <updated>2026-08-04T17:30:40.321Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9646,39 +9646,6 @@ GameGaz Daily 2026.5.8 first appeared on 大人のためのゲーム講座.]]></
 戦争起きないかな。]]></summary>
         <author>
             <name>kaikityouの日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Wado開発記録 ~ coding agentsによるプログラミング言語の設計と実装 ~]]></title>
-        <id>hatenablog://entry/17179246901385081656</id>
-        <link href="https://gfx.hatenablog.com/entry/2026/05/07/140118"/>
-        <updated>2026-05-07T05:01:18.000Z</updated>
-        <summary type="html"><![CDATA[gfx.hatenablog.com
-これの続きです。
-4ヶ月くらい100% agentic codingで新規のプログラミング言語 & 処理系（Wado; ワドゥ）を設計・実装してきて、ある程度明確になってきたことがあるので、雑多でMECEでもないですが、現時点での記録を残します。
-Claude Code on cloud の実行環境が落とされる件
-ほぼ claude code on cloud で開発していますが、こいつはかなりはっきりした独特の癖があります。
-まず、1 session 1 containerで動いていて、しばらくagentに動きがないとcontainerごと落とされて、何か入力があるとcontainerを立ち上げてsession再開、という振る舞いをします。
-困ったことに、フルテストなどの数十分かかるbackground jobを実行しつつclaude codeが待ちの状態になると、supervisorが「アクティビティなし」と判断するらしく、containerごと落とされます。
-苦肉の策がこれ:
-wado/.claude/skills/on-task-done/SKILL.md at main · wado-lang/wado · GitHub
- The process might be killed by the supervisor if you just wait for its completion. Watch the progress periodically in order to tell the supervisor you are still working in progress.
-
-
-要は定期的に何かしろ、ということ。このへんはそのうち改善すると思いますが、現状だと無駄にtokenを消費しつつ「停止していない」ことをsuper…]]></summary>
-        <author>
-            <name>Islands in the byte stream</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2026.5.7]]></title>
-        <id>https://gamegaz.com/?p=45442</id>
-        <link href="https://gamegaz.com/2026050745442/"/>
-        <updated>2026-05-07T04:41:11.000Z</updated>
-        <summary type="html"><![CDATA[Star Fox Direct 2026.5.7,Nintendo Switch 2の値上げ必要,Switch 2でYoutube,BD-UN-JB 1.1, Luac0re,PS5でRPCS3,PS5 exFAT Builder v1.9.0,ps5-bdjb-autoloader Dev Build,ps5upload v2.2.61-rc1,Kstuff Toggle 0.6 Beta,SuperMarioBros-C-Vita 0.1,Ghostship Vita v.1.1,Horizon OC 2.1.0,Lockpick_RCM_Pro 2.0.1,NitrousTracker v0.6.3,nx.js v0.0.70,Breeze beta105.0g,HATS-2026-05-07-1057aeb,BattleShip v0.7.7-beta,PCSX2 v2.7.321,ReXGlue SDK v0.7.8,XStreaming v2.7.1→→→この記事の続きを読む
-GameGaz Daily 2026.5.7 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>

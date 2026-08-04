@@ -2100,23 +2100,7 @@
       "title": "Islands in the byte stream",
       "feedUrl": "https://gfx.hatenablog.com/rss",
       "siteUrl": "https://gfx.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/17179246901385081656",
-          "author": null,
-          "description": "gfx.hatenablog.com\nこれの続きです。\n4ヶ月くらい100% agentic codingで新規のプログラミング言語 & 処理系（Wado; ワドゥ）を設計・実装してきて、ある程度明確になってきたことがあるので、雑多でMECEでもないですが、現時点での記録を残します。\nClaude Code on cloud の実行環境が落とされる件\nほぼ claude code on cloud で開発していますが、こいつはかなりはっきりした独特の癖があります。\nまず、1 session 1 containerで動いていて、しばらくagentに動きがないとcontainerごと落とされて、何か入力があるとcontainerを立ち上げてsession再開、という振る舞いをします。\n困ったことに、フルテストなどの数十分かかるbackground jobを実行しつつclaude codeが待ちの状態になると、supervisorが「アクティビティなし」と判断するらしく、containerごと落とされます。\n苦肉の策がこれ:\nwado/.claude/skills/on-task-done/SKILL.md at main · wado-lang/wado · GitHub\n The process might be killed by the supervisor if you just wait for its completion. Watch the progress periodically in order to tell the supervisor you are still working in progress.\n\n\n要は定期的に何かしろ、ということ。このへんはそのうち改善すると思いますが、現状だと無駄にtokenを消費しつつ「停止していない」ことをsuper…",
-          "link": "https://gfx.hatenablog.com/entry/2026/05/07/140118",
-          "publishedOn": "2026-05-07T05:01:18.000Z",
-          "wordCount": 706,
-          "title": "Wado開発記録 ~ coding agentsによるプログラミング言語の設計と実装 ~",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208692334729887881/17179246901385081656/1778130610",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729887881/17179246901385081656/1778130610"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "【ギュウひ】の夜泣き",
@@ -8530,16 +8514,6 @@
           "publishedOn": "2026-05-07T23:09:27.000Z",
           "wordCount": 1651,
           "title": "GameGaz Daily 2026.5.8",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=45442",
-          "author": "mamosuke",
-          "description": "Star Fox Direct 2026.5.7,Nintendo Switch 2の値上げ必要,Switch 2でYoutube,BD-UN-JB 1.1, Luac0re,PS5でRPCS3,PS5 exFAT Builder v1.9.0,ps5-bdjb-autoloader Dev Build,ps5upload v2.2.61-rc1,Kstuff Toggle 0.6 Beta,SuperMarioBros-C-Vita 0.1,Ghostship Vita v.1.1,Horizon OC 2.1.0,Lockpick_RCM_Pro 2.0.1,NitrousTracker v0.6.3,nx.js v0.0.70,Breeze beta105.0g,HATS-2026-05-07-1057aeb,BattleShip v0.7.7-beta,PCSX2 v2.7.321,ReXGlue SDK v0.7.8,XStreaming v2.7.1→→→この記事の続きを読む\nGameGaz Daily 2026.5.7 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026050745442/",
-          "publishedOn": "2026-05-07T04:41:11.000Z",
-          "wordCount": 1911,
-          "title": "GameGaz Daily 2026.5.7",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
