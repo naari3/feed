@@ -3589,23 +3589,7 @@
       "title": "たごもりすメモ",
       "feedUrl": "https://tagomoris.hatenablog.com/rss",
       "siteUrl": "https://tagomoris.hatenablog.com/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/17179246901386007686",
-          "author": null,
-          "description": "RubyKaigi 2026\n4月22〜24日に函館で行われたRubyKaigi 2026に参加してきた。もう2週間以上経ってるよ、うへえ。\n今回はRuby Boxが入った後のRubyKaigiで、オープニングキーノートをやることになっていた。ので、やってきた。結果、RubyKaigiに参加しつづけてもう結構な年数になるが、まさかこんなに特別なRubyKaigiというものがあるとは正直思ってもいなかった。楽しかったー。\nしゃべった\nThe Journey of Box Building - RubyKaigi 2026\n speakerdeck.com\nオープニングキーノートということで、Ruby Boxとは何かをざっくり説明したのち、Ruby Boxの実装上の話をRuby  VMの解説もあわせてやったのち、せっかくのキーノートだからということで個人的な話を締めにもっていって話した。55分くらい、を数分過ぎてもいいやのつもりで個人的にはゆっくりめにしゃべったんだけど、終わってみたら数分早くて、あれ何か大事なことを話し忘れてない? と不安になってしまった。\n\n\nby @hsbt, @pastak\n個人的にはRubyKaigiのキーノートでRubyの実装の話をえんえんする、というスタイルのやつに強い憧れがあったうえ、元々プロポーザルとして出していたのもそういう内容だったので、それをそのままやった。ただ全員が聞くものなので、Ruby VMの中身の説明を元々の意図よりもかなり丁寧にやるようにしてある。Ruby VMの中身をいじろうと思うと知らなければならない内容なんだけどまとまった説明があまりどこにも無いという類の情報だったので、これはこれでやって良かったかな。後のセッションでもその内容に触れているものもいくつもあったし。\n\n\nby @ydah_, @suuuuengch\nとはいえ…",
-          "link": "https://tagomoris.hatenablog.com/entry/2026/05/11/092849",
-          "publishedOn": "2026-05-11T00:28:49.000Z",
-          "wordCount": 793,
-          "title": "RubyKaigi 2026にいってきた＆しゃべってきた",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/0cb449997006632616180f0896cf829a0273f359/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ft%2Ftagomoris%2F20260509%2F20260509152446.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0cb449997006632616180f0896cf829a0273f359/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ft%2Ftagomoris%2F20260509%2F20260509152446.jpg"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "ユッ記",
@@ -7246,16 +7230,6 @@
           "wordCount": 1839,
           "title": "Starlinkの標準機能だけで冗長構成を組んでみる（ワンデイラボ）",
           "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2026/05/37d144a5ca67c1f68c52daf851365c72.jpg"
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=35194",
-          "author": "伊藤 綾夏",
-          "description": "インフラで消耗してしまう関心事ってなんだろう 開発を進めたいのに、気づけばインフラの確認や調整も気になっちゃって——そんな経験はないでしょうか。 たとえば、こんな「インフラの関心事」が日々の割り込みに...",
-          "link": "https://eng-blog.iij.ad.jp/archives/35194",
-          "publishedOn": "2026-05-11T00:49:59.000Z",
-          "wordCount": null,
-          "title": "開発をしたい！インフラも気になる！となりませんか？",
-          "imageUrl": null
         }
       ]
     },
