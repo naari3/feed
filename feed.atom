@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-09T13:19:13.019Z</updated>
+    <updated>2026-08-09T14:11:24.963Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「Agent Plugins 1.0.0」発表、異なるAIエージェント間でもスキルやMCPサーバ設定が共通化へ。マイクロソフト、OpenAI、AWS、Googleらがサポート]]></title>
+        <id>https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</id>
+        <link href="https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html"/>
+        <updated>2026-08-09T15:19:33.000Z</updated>
+        <summary type="html"><![CDATA[AWS、マイクロソフト、OpenAI、Anysphere、Vercelの各社は、AIエージェントのスキルやMCPサーバの設定を、AIエージェンが異なっていても共有できる業界標準の仕様「Agent Plugins 1.0.0」を発表しました。...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[電子辞書Linux]]></title>
         <id>hatenablog://entry/14945776032062863211</id>
@@ -9404,24 +9414,6 @@ VBLANK単体ならいいけれど２つ以上や、タイマー割り込み使�
 続きをみる]]></summary>
         <author>
             <name>ティラノサウルスのぼんじり</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[クックパッドアプリのLiquid Glass対応]]></title>
-        <id>hatenablog://entry/17179246901387024541</id>
-        <link href="https://techlife.cookpad.com/entry/2026/05/12/110000"/>
-        <updated>2026-05-12T02:00:00.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、レシピ事業部でiOSエンジニアをしている山田(@0x746572616e79)です。
-iOS 26で導入されたLiquid Glassは、iOS 27で強制的に有効化される予定です。対応を先送りにすると、その間に進む機能開発やデザイン調整がすべてLiquid Glassへの考慮がされないまま積み上がり、後から手戻りが増えていきます。早期に有効化しておくことで、新しい画面や機能を追加する段階でLiquid Glassを前提としたデザイン議論やベストプラクティスの調査ができるようになります。
-こうした背景からクックパッドiOSアプリでは早めの対応を進めてきました。この記事では、UINavigationBarとUITabBar周りで遭遇した破壊的変化と、Liquid Glassの新しい仕組みを活用した事例を共有します。
-UINavigationBar
-カスタムtitleViewのUITextFieldがRTLでクラッシュする
-まずはUINavigationBarに関わる問題です。
-クックパッドアプリではいくつかの画面でnavigationItem.titleViewにカスタムの検索バーを設定していました。Liquid Glassを有効化してデバッグしている中で、モーダル遷移かつRTL表示の組み合わせでクラッシュすることに気づきました。ナビゲーションバーの内部レイアウトが刷新された影響でUISearchBarTextFieldのレイアウト計算が破綻し、CALayerのpositionにNaNが入ることが原因でした。
-このクラッシュはiOS 26.2では再現されますがiOS 26.4では修正された模様ですが、クックパッドアプリはiOS17以降をサポートするためそのまま利用することはできません。
-titleViewベースの検索バーをやめて、UISearchControlle…]]></summary>
-        <author>
-            <name>クックパッド開発者ブログ</name>
         </author>
     </entry>
     <entry>
