@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-10T22:11:05.507Z</updated>
+    <updated>2026-08-10T23:10:35.312Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9409,29 +9409,6 @@ https://cookpad.com/jp/recipes/18766969
         <summary type="html"><![CDATA[Modular社は、AIを高速に実行することを目指したPythonライクな新言語「Mojo」のベータ版公開を発表しました。今後数カ月以内に正式版が登場する予定です。 Mojo  1.0 is in beta! Beta 1 marks th...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[automerge-gate: GitHubのAuto Mergeをひとつの必須チェックに集約するGitHub Action]]></title>
-        <id>https://efcl.info/2026/05/13/automerge-gate/</id>
-        <link href="https://efcl.info/2026/05/13/automerge-gate/"/>
-        <updated>2026-05-13T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitHub Action automerge-gate を作ったので紹介します。
-GitHub: pkgdeps/automerge-gate
-背景: GitHubの必須チェック設定はPRごとの揺らぎに弱い
-前提として、GitHubのAuto Mergeを使うには、必須チェック未達成のPRをマージできない状態にするBranch protection ruleやRulesetの設定が必要です。
-これらの保護機能でPRがブロックされる状態を作ったうえで、すべての必須チェックが成功した時点でAuto Mergeが発火する、という仕組みになっています。
-逆に言うと、Auto Mergeを使うには何かしらのステータスチェックを必ず必須に入れる必要があります。
-そして、Branch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。
-この方式は次のような場面で壊れやすいという問題があります。
-RenovateやDependabotなど外部のGitHub Appが追加するチェックは、PRごとにあったりなかったりする
-monorepoでパスフィルタを使っていると、ワークフローがPRによってスキップされたりされなかったりする
-新しいワークフローを追加する度に、Rulesetを書き換える必要がある
-GitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功すること)しか表現できないため、「チェック群のうちどれかが走っていればよい」みたいな条件は書けません。
-そのため、PRごとに発火するチェックが違うケースだと、片方のPRでは存在しないチェックを必須にしてしまい、いつまでもマージできないという状態が発生します。
-この問題への対処として、必須チェックを…]]></summary>
-        <author>
-            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>

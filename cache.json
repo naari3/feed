@@ -6921,16 +6921,6 @@
           "wordCount": null,
           "title": "「OSS開発者は今何をするべきか？ソフトウェアサプライチェーン侵害対策を考える」で「Hardening npm Publishing」という発表をしました",
           "imageUrl": null
-        },
-        {
-          "id": "https://efcl.info/2026/05/13/automerge-gate/",
-          "author": null,
-          "description": "GitHubのAuto Mergeをひとつの必須チェックに集約するためのGitHub Action automerge-gate を作ったので紹介します。\nGitHub: pkgdeps/automerge-gate\n背景: GitHubの必須チェック設定はPRごとの揺らぎに弱い\n前提として、GitHubのAuto Mergeを使うには、必須チェック未達成のPRをマージできない状態にするBranch protection ruleやRulesetの設定が必要です。\nこれらの保護機能でPRがブロックされる状態を作ったうえで、すべての必須チェックが成功した時点でAuto Mergeが発火する、という仕組みになっています。\n逆に言うと、Auto Mergeを使うには何かしらのステータスチェックを必ず必須に入れる必要があります。\nそして、Branch protection ruleやRulesetは、マージに必要なステータスチェックを名前で列挙する形式です。\nこの方式は次のような場面で壊れやすいという問題があります。\nRenovateやDependabotなど外部のGitHub Appが追加するチェックは、PRごとにあったりなかったりする\nmonorepoでパスフィルタを使っていると、ワークフローがPRによってスキップされたりされなかったりする\n新しいワークフローを追加する度に、Rulesetを書き換える必要がある\nGitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功すること)しか表現できないため、「チェック群のうちどれかが走っていればよい」みたいな条件は書けません。\nそのため、PRごとに発火するチェックが違うケースだと、片方のPRでは存在しないチェックを必須にしてしまい、いつまでもマージできないという状態が発生します。\nこの問題への対処として、必須チェックを…",
-          "link": "https://efcl.info/2026/05/13/automerge-gate/",
-          "publishedOn": "2026-05-13T11:00:00.000Z",
-          "wordCount": null,
-          "title": "automerge-gate: GitHubのAuto Mergeをひとつの必須チェックに集約するGitHub Action",
-          "imageUrl": null
         }
       ]
     },
