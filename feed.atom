@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-10T08:29:13.484Z</updated>
+    <updated>2026-08-10T09:28:39.964Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9432,19 +9432,6 @@ GitHubのRulesetは複数の必須チェックをANDでつなぐ(全部成功す
 GameGaz Daily 2026.5.13 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[libtonc割り込みバグ]]></title>
-        <id>hatenablog://entry/17179246901387302895</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/05/13/062600"/>
-        <updated>2026-05-12T21:26:00.000Z</updated>
-        <summary type="html"><![CDATA[個人開発しているとこういうベーシックなことが抜け落ちるので泣きたくなる時ありますねー。たぶん10年以上前に発覚している話だと思うのですけれど、2026年に知る私・・・。ぴえん。かなり重要なのでgbadev discordより引用させていただきます。
-AntonioND — 2026/04/26 19:23
-
-VBLANK単体ならいいけれど２つ以上や、タイマー割り込み使うならやめといた方が無難ですね。素直にlibugba使うべきという話です。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
