@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-12T07:29:27.229Z</updated>
+    <updated>2026-08-12T08:26:27.617Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AIコーディングの一番安いプランでスマホアプリを作る！非エンジニアによるケチりAI駆動開発のすべて]]></title>
+        <id>hatenablog://entry/14945776032054290356</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/08/12/164154"/>
+        <updated>2026-08-12T07:41:54.000Z</updated>
+        <summary type="html"><![CDATA[最近デイリーポータルZの西村さんがWebサービスを作っていたり、一緒にPodcastをやっている岡田悠さんがDokokaというアプリを作って大ヒットしていたり、周りのエンジニアでない人たちがAIを使ってアプリケーションを作ることが増えてきました。
+へー面白そう、とは思いつつも特に作りたいものがなかったんですけど、あるときふと「ずっとほしかったアプリあるじゃん！！」と思い出したので、手探りながら作ってリリースまでこぎつけました。その体験談を書きます。
+ちなみに自分は非エンジニア（編集者）ですがIT系記事の編集をする程度の知識はありプログラムも少しは書ける、けど今回出したようなアプリを独力で作るのは５年かかっても無理そう、というレベル感です。
+またこの記事はあくまで初心者による体験談なので、AI開発ノウハウ集と思って読むとずいぶんレベルが低いと思いますし、むしろアドバイス歓迎です。ただAI資源のケチり方や非エンジニアとしてあえて諦める部分など、趣味開発ならではの割り切りの部分は少しは参考になるかもしれません（？）
+作ったもの
+詳細は最後に書くのでここでは概要だけ。譜読みの練習アプリです。
+
+楽譜を見てドレミ（音階）を読むアプリはたくさんあるんですけど、自分が苦手な「リズムを読み取る」練習ができるアプリが意外になく、前から欲しかったので作りました。
+楽譜を見て実際にメトロノームに合わせてタップすることで正しく読めているか確認できます。また、音で正しいリズムを聴くことで読み方を学べます。
+play.google.com
+はじまり
+始めたのは６月の終わり。スマホアプリではなくて、Webサービスとして作りはじめました。
+最初にやりたいことをバーッて書き出してCodexに投げて、Webで動くものを作ってもらいました。
+
+nomolk.hatenablog.com
+かなり粗削りながら、基本…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.8.12]]></title>
         <id>https://gamegaz.com/?p=45930</id>
