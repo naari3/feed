@@ -3283,6 +3283,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032064120364",
+          "author": null,
+          "description": "2026年8月12日 18:06〜19:28まで、ブログの管理画面の記事の管理で「次のページ」が表示されない不具合が発生していました。\n原因はアプリケーションの不具合によるものです。現在は復旧しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
+          "link": "https://staff.hatenablog.com/entry/2026/08/12/193351",
+          "publishedOn": "2026-08-12T10:33:51.000Z",
+          "wordCount": null,
+          "title": "【復旧済み】記事の管理で「次のページ」が表示されない不具合が発生していました",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032064120364/1786530831",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032064120364/1786530831"
+        },
+        {
           "id": "hatenablog://entry/14945776032058848933",
           "author": null,
           "description": "みたまま編集モードで埋め込みタグ等を貼り付けた際に、表示が正しく反映されない不具合が発生しておりました。\n発生期間\n2026年7月28日14:44 〜 7月29日10:43\n事象\niframe等の埋め込みタグを貼り付けた際に正しく表示されない\nリンク挿入や過去記事貼り付けを行った際にリンク先に遷移しない\n対象\n上記期間中に、みたまま編集モードで新規投稿・編集・更新を行った記事\n原因\n記事編集エディタのアップデートに伴う設定不備によるものです。\n対処方法\nすでに表示不具合が起こっている記事は遡って修正されないため、HTML編集タブより当該部分を削除し、再度貼り付けやリンク挿入を行い、記事を更新してください。\nお問い合わせください。\nこの度はご不便をおかけいたしまして申し訳ございませんでした。再発防止に努めてまいります。",
@@ -8428,16 +8443,6 @@
           "wordCount": 1721,
           "title": "SiSTRo氏がPS5のGoldHEN開発を公表 リリースは未定",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/PS5-Goldhen.jpeg"
-        },
-        {
-          "id": "https://gamegaz.com/?p=45477",
-          "author": "mamosuke",
-          "description": "ps5-bdjb-autoloader v1.1,Hollow v0.6.6.3,Memdusa 1.0.2,ARK-4 v1778786111,Breeze beta106.0,XStreaming v2.8.0,Azahar 2125.1.2,PCSX2 v2.7.341,shadPS4 Pre-release-shadPS4-2026-05-14-a588543,xenia cebbdb6_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.5.15 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026051545477/",
-          "publishedOn": "2026-05-14T23:10:29.000Z",
-          "wordCount": 1725,
-          "title": "GameGaz Daily 2026.5.15",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
