@@ -809,21 +809,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901390631311/1779417574"
-        },
-        {
-          "id": "hatenablog://entry/17179246901389560014",
-          "author": null,
-          "description": "実機起動は諦めてエミュのみに留めるという方法です。「実機で遊びたい方はgbafixしてね！」という文章を入れるとか。うーん、正直そこまで気にしなくていいんじゃないかなーとは思います。一例として帽子屋さんのairsndtestロムの内容です。\n\n・mGBA BIOSなし\n・vba1.8.0-beta3 BIOSなし",
-          "link": "https://akkera102.hatenablog.com/entry/2026/05/19/112429",
-          "publishedOn": "2026-05-19T02:24:29.000Z",
-          "wordCount": 542,
-          "title": "ロゴバイナリ",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/e6c2b010e66f3db52c5ba66852e6512cab92efcd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260519%2F20260519110800.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e6c2b010e66f3db52c5ba66852e6512cab92efcd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260519%2F20260519110800.png"
         }
       ]
     },
@@ -8438,6 +8423,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/aikitesurfcloudflare.html",
+          "author": null,
+          "description": "CloudflareはAIエージェントによる操作専用のヘッドレスなWebブラウザ「Kitesurf」を発表しました。 現在ベータ版として公開されています。 Kitesurfは主にRust言語で記述されWebAssemblyにコンパイルされた...",
+          "link": "https://www.publickey1.jp/blog/26/aikitesurfcloudflare.html",
+          "publishedOn": "2026-08-16T15:10:13.000Z",
+          "wordCount": null,
+          "title": "タブもテーマも拡張機能もないAI専用の超軽量ヘッドレスブラウザ「Kitesurf」、Cloudflareが発表",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/zeddeltaai.html",
+          "author": null,
+          "description": "オープンソースとして開発されている高速なコードエディタ「Zed」の開発チームは、人間の開発チームとAIエージェントの議論や対話内容とコードの変更履歴をすべて共有し、コンテキストとして保存できる「Delta」を発表しました。 Today we...",
+          "link": "https://www.publickey1.jp/blog/26/zeddeltaai.html",
+          "publishedOn": "2026-08-16T15:05:36.000Z",
+          "wordCount": null,
+          "title": "Zed開発チームが「Delta」発表。人間とAIの全対話とコード変更履歴をコンテキストとして保存共有するコラボレーションツール",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/delphi_13_community_edtionwindows_x86armmaciosandroid.html",
           "author": null,
