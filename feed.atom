@@ -2,10 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-17T00:03:14.932Z</updated>
+    <updated>2026-08-17T01:29:05.225Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-08-16]]></title>
+        <id>hatenablog://entry/14945776032065577575</id>
+        <link href="https://commits.hatenablog.com/entry/2026/08/17/100000"/>
+        <updated>2026-08-17T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[github.com
+Claude Codeが動いている間、PCのスリープを抑止するプラグインを書いた。
+Desktop PCでClaudeを動かしている時に、実行中でも勝手にスリープしてしまって困っていた。例えばremote controlでスマートフォンからアクセスしているときや、長くなりそうなタスクを投げてそのまま寝たいときなど。単純にスリープを抑制して電源をつけっぱなしにしていたけれど、それはそれでなあという気持ちでプラグインを作った。
+後から調べたら https://github.com/samber/cc-caffeine など同じことをするツールがあるようだが、どうやらJavaScriptで書かれているっぽく、サプライチェーンリスクなどを考えるとだいぶ入れたくないので自分で書いたものの存在意義は一応ある。多分。
+とりあえずWSL2で動作確認済み。macOSでの動作確認は明日にでもやろうと思っている。Windowsホストでの動作確認もしたい。Linux Desktopだとうまく動かないとClaudeは言っている。まあスリープ抑止コマンドは好きなものを設定できるので、理論的には動く。
+サブエージェントの実行中を検知するのをサボっていたら、導入して30分後ぐらいに勝手にスリープして困ったので、サブエージェント検知機能を実装中。
+github.com
+自分の登壇一覧をまとめているのをしばらく更新をサボっていたので、Claudeに更新してもらった。Speakerdeckとかを勝手に漁って埋めてくれた。いくつかそれでも漏れていたものが合ったので自分でClaudeに伝えた。だいたい埋まったのではないか。
+ここ半年ぐらい設定していた宝くじの定期購入を解除した。
+1回ぐらい黒字になる回が出て気分が上がるかなと思ったけれど、単にお金が消えていくだけで何も面白くなかった。
+いつの間にか口座に億入っている夢を見られなくなるのはちょっと残念。
+mixi.social
+今週もクラフトジンジャーエールを作った。味はまだ見てない。
+前回のレシピから、唐辛子を抜き、砂糖を減らし、スパイスとレモンを増やした。多分クラフトコーラに近づいた気がする。
+最近は夜中に外を歩くようにしている。運動不足解消が目的。
+今日は雨が降っていたから歩かなかったけれど。
+1時間前後、近所を歩くようにしている。夜中だと気温が多少下がって歩くのが楽になる。
+田舎なので、夜中歩くことができるコースが限られるのがやや難点。さすがに街灯が全くない田んぼの中の道とかを夜中歩きたくない。しかし違うコースを歩けないのはちょっと不便。いい感じに歩ける場所まで車で移動しても良いかもしれない。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[タブもテーマも拡張機能もないAI専用の超軽量ヘッドレスブラウザ「Kitesurf」、Cloudflareが発表]]></title>
         <id>https://www.publickey1.jp/blog/26/aikitesurfcloudflare.html</id>
