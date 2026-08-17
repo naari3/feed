@@ -78,6 +78,57 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
+              rel="noopener">あーさん日記</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">白箱Livaにlubuntuインストール</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/08/17/165552" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>インストール対象：
+1. lubuntu公式から最新isoをダウンロード（lubuntu-26.04-desktop-amd64.iso）
+https://github.com/lamadotcare/bootia32-efi）をダウンロード。ファイルをUSBの「/EFI/boot」に配置。
+「ブートローダーをインストールできませんでした。インストールコマンド 
+grub-install -target&#x3D;i386-efi -efi-directory-/boot/efi -bootloader-id&#x3D;ubuntu --force
+ 
+がエラーコード1を返しました。」
+7. usbを外しhdd boot。黒画面のgrubが起動
+ls
+set root&#x3D;(hdX,gptX) 
+// Xの部分変更
+
+linux /boot/vmlinuz-X.X.X.X-generic root&#x3D;/dev/mmcblk1p2
+// vmlinuzの後にタブキーを押して文字補間を利用する
+// mmcblk1p2はeMMC特有の名前なので一般的なSSDの場合は「/dev/sda2」など
+
+initrd /boot/initrd.img-X.X.X-X-generic
+// imgの後にタブキーを押して文字補間をする
+
+boot
+9.いつもの
+sudo apt update
+sudo apt upgrade
+sudo apt install grub-efi-ia32-bin
+// grub-efi-ia32入れてもいいけど、環境依存で弾かれるかも
+10. 「/boot/efi/EFI/BOOT/BOOTIA32.EFI*」を作る
+sudo grub-install --target&#x3D;i386-efi --efi-directory&#x3D;/boot/efi --removable
+sudo grub-install --target&#x3D;i386-efi --efi-directory&#x3D;/boot/efi --bootloader-id&#x3D;ubuntu
+sudo update-grub
+ls -l /boot/efi/EFI/BOOT/
+参考サイト
+https://another.maple4ever.net/archives/3810/</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032066003394/1786953996" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -16509,7 +16560,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-08-17T07:19:30.452Z">2026-08-17T07:19:30.452Z</time>
+    <time id="build-timestamp" datetime="2026-08-17T08:11:26.772Z">2026-08-17T08:11:26.772Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -61,6 +61,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032066003394",
+          "author": null,
+          "description": "インストール対象：\n1. lubuntu公式から最新isoをダウンロード（lubuntu-26.04-desktop-amd64.iso）\nhttps://github.com/lamadotcare/bootia32-efi）をダウンロード。ファイルをUSBの「/EFI/boot」に配置。\n「ブートローダーをインストールできませんでした。インストールコマンド \n<pre>grub-install -target=i386-efi -efi-directory-/boot/efi -bootloader-id=ubuntu --force</pre> \nがエラーコード1を返しました。」\n7. usbを外しhdd boot。黒画面のgrubが起動\nls\nset root=(hdX,gptX) \n// Xの部分変更\n\nlinux /boot/vmlinuz-X.X.X.X-generic root=/dev/mmcblk1p2\n// vmlinuzの後にタブキーを押して文字補間を利用する\n// mmcblk1p2はeMMC特有の名前なので一般的なSSDの場合は「/dev/sda2」など\n\ninitrd /boot/initrd.img-X.X.X-X-generic\n// imgの後にタブキーを押して文字補間をする\n\nboot\n9.いつもの\nsudo apt update\nsudo apt upgrade\nsudo apt install grub-efi-ia32-bin\n// grub-efi-ia32入れてもいいけど、環境依存で弾かれるかも\n10. 「/boot/efi/EFI/BOOT/BOOTIA32.EFI*」を作る\nsudo grub-install --target=i386-efi --efi-directory=/boot/efi --removable\nsudo grub-install --target=i386-efi --efi-directory=/boot/efi --bootloader-id=ubuntu\nsudo update-grub\nls -l /boot/efi/EFI/BOOT/\n参考サイト\nhttps://another.maple4ever.net/archives/3810/",
+          "link": "https://akkera102.hatenablog.com/entry/2026/08/17/165552",
+          "publishedOn": "2026-08-17T07:55:52.000Z",
+          "wordCount": 593,
+          "title": "白箱Livaにlubuntuインストール",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032066003394/1786953996",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032066003394/1786953996"
+        },
+        {
           "id": "hatenablog://entry/14945776032065201711",
           "author": null,
           "description": "Copilot（副操縦士）よりAgent（エージェント）がすごいとのことで、違いを見たくてChatGPT Plus入りました。Codex App・・・今はChatGPT デスクトップ？という名称のアプリをインストール。１つ前のblogエントリと同じことをしたのですが、半日ぐらいでできてしまいました・・・。\nGeminiさんの場合、チャットベースだったので同じ土俵で考えるのはフェアじゃないですけど、エージェントの方がトライ＆エラーが自動で早いですね（汗）。解析がここまでお手軽になってしまって、もうどうすればいいのでしょう。解析は5.6 Terra中、難しい問題は5.6 Sol中、で回しました。\nGPTさんに加入すっべと背中を押したのは、こちらの内容でしてとりあえず下部の更新履歴をみてください！そしてプラットフォームの数もみてください！あーっ・・・て遠くを眺める気分になりますよ。このスピードがデファクトになるのかと思うとちょっと心の整理ができないですね・・・。\ngithub.com",

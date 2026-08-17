@@ -2,10 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-17T07:19:30.491Z</updated>
+    <updated>2026-08-17T08:11:26.808Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[白箱Livaにlubuntuインストール]]></title>
+        <id>hatenablog://entry/14945776032066003394</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/08/17/165552"/>
+        <updated>2026-08-17T07:55:52.000Z</updated>
+        <summary type="html"><![CDATA[インストール対象：
+1. lubuntu公式から最新isoをダウンロード（lubuntu-26.04-desktop-amd64.iso）
+https://github.com/lamadotcare/bootia32-efi）をダウンロード。ファイルをUSBの「/EFI/boot」に配置。
+「ブートローダーをインストールできませんでした。インストールコマンド 
+<pre>grub-install -target=i386-efi -efi-directory-/boot/efi -bootloader-id=ubuntu --force</pre> 
+がエラーコード1を返しました。」
+7. usbを外しhdd boot。黒画面のgrubが起動
+ls
+set root=(hdX,gptX) 
+// Xの部分変更
+
+linux /boot/vmlinuz-X.X.X.X-generic root=/dev/mmcblk1p2
+// vmlinuzの後にタブキーを押して文字補間を利用する
+// mmcblk1p2はeMMC特有の名前なので一般的なSSDの場合は「/dev/sda2」など
+
+initrd /boot/initrd.img-X.X.X-X-generic
+// imgの後にタブキーを押して文字補間をする
+
+boot
+9.いつもの
+sudo apt update
+sudo apt upgrade
+sudo apt install grub-efi-ia32-bin
+// grub-efi-ia32入れてもいいけど、環境依存で弾かれるかも
+10. 「/boot/efi/EFI/BOOT/BOOTIA32.EFI*」を作る
+sudo grub-install --target=i386-efi --efi-directory=/boot/efi --removable
+sudo grub-install --target=i386-efi --efi-directory=/boot/efi --bootloader-id=ubuntu
+sudo update-grub
+ls -l /boot/efi/EFI/BOOT/
+参考サイト
+https://another.maple4ever.net/archives/3810/]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.8.17]]></title>
         <id>https://gamegaz.com/?p=45950</id>
