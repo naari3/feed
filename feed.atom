@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-18T13:16:47.420Z</updated>
+    <updated>2026-08-18T14:10:24.619Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[コードからDockerfile不要でOCIコンテナをビルド。「Cloud Native Buildpacks」が十分成熟したとしてCNCFの卒業プロジェクトに]]></title>
+        <id>https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html</id>
+        <link href="https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html"/>
+        <updated>2026-08-18T16:03:06.000Z</updated>
+        <summary type="html"><![CDATA[Cloud Native Computing Foundation（CNCF）は、アプリケーションのソースコードから直接OCIコンテナメージを構築するツールである「Cloud Native Buildpacks」が十分成熟したとして、卒業プ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google、AIモデルをコンパイルして暗号データを復号せずに扱えるように変換する「HEIR」発表。完全準同型暗号を利用し、AIでのセキュリティやプライバシー保護など実現へ]]></title>
+        <id>https://www.publickey1.jp/blog/26/googleaiheirai.html</id>
+        <link href="https://www.publickey1.jp/blog/26/googleaiheirai.html"/>
+        <updated>2026-08-18T15:55:25.000Z</updated>
+        <summary type="html"><![CDATA[Googleは、完全準同型暗号を利用したAIモデル用のオープンソースコンパイラ「HEIR」を発表しました。 AIモデルをコンパイルする「HEIR」 HEIRはAIモデル用のコンパイラとツールチェーンであり、これを用いて学習済みAIモデルのP...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AIエージェント時代のGitホスティングサービス「Origin」、Cursorが発表。Cursorとの統合、コマンドラインでの操作、GitHubとの同期など提供]]></title>
+        <id>https://www.publickey1.jp/blog/26/aigitorigincursorcursorgithub.html</id>
+        <link href="https://www.publickey1.jp/blog/26/aigitorigincursorcursorgithub.html"/>
+        <updated>2026-08-18T15:43:29.000Z</updated>
+        <summary type="html"><![CDATA[AIコードエディタのCursorなどを提供するAnysphereは、Gitに対応したコードホスティングサービス「Origin」を発表しました。 Origin, our code hosting platform, is now live.I...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[番号非通知の電話を着信拒否する方法【全キャリア対応版】]]></title>
         <id>hatenablog://entry/14945776032066149164</id>

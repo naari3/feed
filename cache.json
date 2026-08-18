@@ -8424,6 +8424,36 @@
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
         {
+          "id": "https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html",
+          "author": null,
+          "description": "Cloud Native Computing Foundation（CNCF）は、アプリケーションのソースコードから直接OCIコンテナメージを構築するツールである「Cloud Native Buildpacks」が十分成熟したとして、卒業プ...",
+          "link": "https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html",
+          "publishedOn": "2026-08-18T16:03:06.000Z",
+          "wordCount": null,
+          "title": "コードからDockerfile不要でOCIコンテナをビルド。「Cloud Native Buildpacks」が十分成熟したとしてCNCFの卒業プロジェクトに",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/googleaiheirai.html",
+          "author": null,
+          "description": "Googleは、完全準同型暗号を利用したAIモデル用のオープンソースコンパイラ「HEIR」を発表しました。 AIモデルをコンパイルする「HEIR」 HEIRはAIモデル用のコンパイラとツールチェーンであり、これを用いて学習済みAIモデルのP...",
+          "link": "https://www.publickey1.jp/blog/26/googleaiheirai.html",
+          "publishedOn": "2026-08-18T15:55:25.000Z",
+          "wordCount": null,
+          "title": "Google、AIモデルをコンパイルして暗号データを復号せずに扱えるように変換する「HEIR」発表。完全準同型暗号を利用し、AIでのセキュリティやプライバシー保護など実現へ",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/aigitorigincursorcursorgithub.html",
+          "author": null,
+          "description": "AIコードエディタのCursorなどを提供するAnysphereは、Gitに対応したコードホスティングサービス「Origin」を発表しました。 Origin, our code hosting platform, is now live.I...",
+          "link": "https://www.publickey1.jp/blog/26/aigitorigincursorcursorgithub.html",
+          "publishedOn": "2026-08-18T15:43:29.000Z",
+          "wordCount": null,
+          "title": "AIエージェント時代のGitホスティングサービス「Origin」、Cursorが発表。Cursorとの統合、コマンドラインでの操作、GitHubとの同期など提供",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.publickey1.jp/blog/26/saaspr_1.html",
           "author": null,
           "description": ".jetform-wrapper {     border: 2px solid #ccc;   /* 枠線 /     padding: 20px;            / 内側の余白 /     border-radius: 12p...",
