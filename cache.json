@@ -3538,21 +3538,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032035728104/1779857809"
-        },
-        {
-          "id": "hatenablog://entry/17179246901390595939",
-          "author": null,
-          "description": "はてなブログ / はてなCMS全体でアクセスしづらい障害が発生しています。現在原因を調査中です。\n追記\n本事象は11:10ごろに復旧いたしました。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
-          "link": "https://staff.hatenablog.com/entry/2026/05/22/104519",
-          "publishedOn": "2026-05-22T01:45:19.000Z",
-          "wordCount": 931,
-          "title": "【解消済み】はてなブログ / はてなCMS全体でアクセスしづらい障害が発生しています",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901390595939/1779417408",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/17179246901390595939/1779417408"
         }
       ]
     },
@@ -8387,6 +8372,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/dockerdocker_vmm.html",
+          "author": null,
+          "description": "Docker社は独自開発したコンテナ向けの高性能な新ハイパーバイザ「Docker VMM」をパブリックベータとして公開しました。WindowsとmacOSに対応した最新の「Docker Desktop v4.86」で利用可能です。 Toda...",
+          "link": "https://www.publickey1.jp/blog/26/dockerdocker_vmm.html",
+          "publishedOn": "2026-08-19T17:43:24.000Z",
+          "wordCount": 1489,
+          "title": "Docker社、コンテナ向けの高性能な新ハイパーバイザ「Docker VMM」パブリックベータ公開",
+          "imageUrl": "https://www.publickey1.jp/2026/HPitkMkXwAAFr9C.jpg"
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/pythonmojowindows.html",
+          "author": null,
+          "description": "Pythonライクな新言語「Mojo」の開発元であるModular社は、Mojoをオープンソースとして公開したことを、同社主催のイベント「ModCon 2026」で発表しました。 具体的にはMojoのコンパイラとツールチェーンがGitHub...",
+          "link": "https://www.publickey1.jp/blog/26/pythonmojowindows.html",
+          "publishedOn": "2026-08-19T15:40:43.000Z",
+          "wordCount": 1474,
+          "title": "Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明",
+          "imageUrl": "https://www.publickey1.jp/2026/HQBIfmRbgAM8evP.jpg"
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html",
           "author": null,
