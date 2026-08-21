@@ -794,21 +794,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032035467197/1779796006"
-        },
-        {
-          "id": "hatenablog://entry/17179246901391474701",
-          "author": null,
-          "description": "Gemini先生の階段の駆け上がり具合ヤバいですね・・・。この件に関してはウェブの敗北だなあ。。\n・addチェックサム\nu8 AddChkSum(u8* data, u32 len)\n{\n\tu8 ret = 0;\n\n\tfor(u32 i=0; i<len; i++)\n\t{\n\t\tret += data[i];\n\t}\n\n\treturn ret;\n}\n・xorチェックサム\nu8 XorChkSum(u8* data, u32 len)\n{\n\tu8 ret = 0;\n\n\tfor(u32 i=0; i<len; i++)\n\t{\n\t\tret ^= data[i];\n\t}\n\n\treturn ret;\n}\n・Fletcher16\nu16 Fletcher16(u8* data, u32 len)\n{\n\tu16 sum1 = 0;\n\tu16 sum2 = 0;\n\n\tfor(u32 i=0; i<len; i++)\n\t{\n\t\tsum1 = (sum1 + data[i]) % 255;\n\t\tsum2 = (sum2 + sum1) % 255;\n\t}\n\n\treturn (sum2 << 8) | sum1;\n}\n・Adler32\n・FNV1a 32bit\nu32_t Fnv1a32(u8* data, u32 len)\n{\n\tu32 hash = 2166136261u;\t// FNV offset basis\n\n\tfor(u32 i=0; i<len; i++)\n\t{\n\t\thash ^= data[i];\n\t\thash *= 16777619u;\t// FNV prime\n\t}\n\n\treturn hash;\n}\n・CRC32\nu32 Crc32(u8* data, u32 len)\n{\n\n\tu32 crc = 0xFFFFFFFF;\n\n\tfor(u32 i=0; i<len; i++)\n\t{\n\t\tcrc ^= data[i];\n\n\t\t// 1バイト(8ビット)ごとに多項式除算を行う\n\t\tfor(u32 j=0; j<8; j++)\n\t\t{\n\t\t\tif(crc & 1)\n\t\t\t{\n\t\t\t\tcrc = (crc >> 1) ^ 0xEDB88320; // マジックナンバー(生成多項式)\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tcrc >>= 1;\n\t\t\t}\n\t\t}\n\t}\n\n\treturn ~crc;\n}",
-          "link": "https://akkera102.hatenablog.com/entry/2026/05/24/200133",
-          "publishedOn": "2026-05-24T11:01:33.000Z",
-          "wordCount": 768,
-          "title": "チェックサム",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901391474701/1779621721",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/17179246901391474701/1779621721"
         }
       ]
     },

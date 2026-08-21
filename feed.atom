@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-21T22:03:59.325Z</updated>
+    <updated>2026-08-21T23:04:24.990Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9346,94 +9346,6 @@ GameGaz Daily 2026.5.25 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>なのはなぐらむ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[チェックサム]]></title>
-        <id>hatenablog://entry/17179246901391474701</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/05/24/200133"/>
-        <updated>2026-05-24T11:01:33.000Z</updated>
-        <summary type="html"><![CDATA[Gemini先生の階段の駆け上がり具合ヤバいですね・・・。この件に関してはウェブの敗北だなあ。。
-・addチェックサム
-u8 AddChkSum(u8* data, u32 len)
-{
-	u8 ret = 0;
-
-	for(u32 i=0; i<len; i++)
-	{
-		ret += data[i];
-	}
-
-	return ret;
-}
-・xorチェックサム
-u8 XorChkSum(u8* data, u32 len)
-{
-	u8 ret = 0;
-
-	for(u32 i=0; i<len; i++)
-	{
-		ret ^= data[i];
-	}
-
-	return ret;
-}
-・Fletcher16
-u16 Fletcher16(u8* data, u32 len)
-{
-	u16 sum1 = 0;
-	u16 sum2 = 0;
-
-	for(u32 i=0; i<len; i++)
-	{
-		sum1 = (sum1 + data[i]) % 255;
-		sum2 = (sum2 + sum1) % 255;
-	}
-
-	return (sum2 << 8) | sum1;
-}
-・Adler32
-・FNV1a 32bit
-u32_t Fnv1a32(u8* data, u32 len)
-{
-	u32 hash = 2166136261u;	// FNV offset basis
-
-	for(u32 i=0; i<len; i++)
-	{
-		hash ^= data[i];
-		hash *= 16777619u;	// FNV prime
-	}
-
-	return hash;
-}
-・CRC32
-u32 Crc32(u8* data, u32 len)
-{
-
-	u32 crc = 0xFFFFFFFF;
-
-	for(u32 i=0; i<len; i++)
-	{
-		crc ^= data[i];
-
-		// 1バイト(8ビット)ごとに多項式除算を行う
-		for(u32 j=0; j<8; j++)
-		{
-			if(crc & 1)
-			{
-				crc = (crc >> 1) ^ 0xEDB88320; // マジックナンバー(生成多項式)
-			}
-			else
-			{
-				crc >>= 1;
-			}
-		}
-	}
-
-	return ~crc;
-}]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
