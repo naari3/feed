@@ -61,6 +61,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032068001034",
+          "author": null,
+          "description": "使い始めて7日目。最初は許可画面（Approval）ポチポチ地獄で不信感ばかりでしたねー。それから行きつくとこ行きついて、これは会社運用シミュレータということに気づいてしまい、マニュアルをせっせこ作る羽目になりました。全部GPTさんが作り、監修は私。実際に運用したことがない人には全く刺さらない資料が爆誕しました。123KBもありますけど読みたい人はどうぞ。。\nhttps://akkera102.sakura.ne.jp/test3/CODEX_OPERATIONS_NOTES.html",
+          "link": "https://akkera102.hatenablog.com/entry/2026/08/22/212519",
+          "publishedOn": "2026-08-22T12:25:19.000Z",
+          "wordCount": 506,
+          "title": "codex体験7日目",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032068001034/1787403839",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032068001034/1787403839"
+        },
+        {
           "id": "hatenablog://entry/14945776032066003394",
           "author": null,
           "description": "インストール対象：\n1. lubuntu公式から最新isoをダウンロード（lubuntu-26.04-desktop-amd64.iso）\nhttps://github.com/lamadotcare/bootia32-efi）をダウンロード。ファイルをUSBの「/EFI/boot」に配置。\n「ブートローダーをインストールできませんでした。インストールコマンド \n<pre>grub-install -target=i386-efi -efi-directory-/boot/efi -bootloader-id=ubuntu --force</pre> \nがエラーコード1を返しました。」\n7. usbを外しhdd boot。黒画面のgrubが起動\nls\nset root=(hdX,gptX) \n// Xの部分変更\n\nlinux /boot/vmlinuz-X.X.X.X-generic root=/dev/mmcblk1p2\n// vmlinuzの後にタブキーを押して文字補間を利用する\n// mmcblk1p2はeMMC特有の名前なので一般的なSSDの場合は「/dev/sda2」など\n\ninitrd /boot/initrd.img-X.X.X-X-generic\n// imgの後にタブキーを押して文字補間をする\n\nboot\n9.いつもの\nsudo apt update\nsudo apt upgrade\nsudo apt install grub-efi-ia32-bin\n// grub-efi-ia32入れてもいいけど、環境依存で弾かれるかも\n10. 「/boot/efi/EFI/BOOT/BOOTIA32.EFI*」を作る\nsudo grub-install --target=i386-efi --efi-directory=/boot/efi --removable\nsudo grub-install --target=i386-efi --efi-directory=/boot/efi --bootloader-id=ubuntu\nsudo update-grub\nls -l /boot/efi/EFI/BOOT/\n参考サイト\nhttps://another.maple4ever.net/archives/3810/",
