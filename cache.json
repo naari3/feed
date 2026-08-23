@@ -6993,16 +6993,6 @@
           "wordCount": null,
           "title": "意識をもってシステムを使う【新人エンジニアに役立ちそうなTips】",
           "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=36497",
-          "author": "IIJ Engineers Blog編集部",
-          "description": "インターネット関連の最新動向や技術情報をお届けする広報誌「IIJ.news」。 Vol.194の特集テーマは「データセンター」です。  生成AIの普及によって、データセンターは明確な転換点を迎えていま...",
-          "link": "https://eng-blog.iij.ad.jp/archives/36497",
-          "publishedOn": "2026-05-26T02:02:21.000Z",
-          "wordCount": null,
-          "title": "AI時代を支えるインフラ　データセンター",
-          "imageUrl": null
         }
       ]
     },
@@ -8341,6 +8331,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html",
+          "author": null,
+          "description": "サーバサイドJavaScriptランタイムのBunの最新版となる「Bun 1.4」正式版のリリースが発表されました。 Bun 1.4は、これまでZig言語で開発されていたものをClaude Codeを使ってRustに書き直した最初のバージョ...",
+          "link": "https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html",
+          "publishedOn": "2026-08-23T15:58:41.000Z",
+          "wordCount": null,
+          "title": "Rustに移植された「Bun 1.4」正式リリース。Node.jsとの互換性向上でPlaywrightやvitestが動作、CPUとメモリの使用率が大幅改善、正規表現が高速化など",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/slackaislack_code.html",
+          "author": null,
+          "description": "Salesforce傘下のSlack社は、同社のチャットサービス「Slack」の新機能として、開発チームの一員としてAIエージェントがチャットに加わり、それまでの開発チームの議論を把握してコーディングを行う「Slack Code」の提供開始...",
+          "link": "https://www.publickey1.jp/blog/26/slackaislack_code.html",
+          "publishedOn": "2026-08-23T15:52:28.000Z",
+          "wordCount": null,
+          "title": "Slack上の開発チームの会話をAIエージェントが把握してコーディング。ドキュメント作成もする「Slack Code」登場",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/fluter_347uiwebassembly.html",
           "author": null,
