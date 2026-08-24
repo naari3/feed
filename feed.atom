@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-24T09:14:24.510Z</updated>
+    <updated>2026-08-24T10:12:51.010Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[#19 Codex アプリ風の Obsidian テーマ Verso]]></title>
+        <id>6a8c149866dad60001b5a082</id>
+        <link href="https://blog.lai.so/obsidian-verso/"/>
+        <updated>2026-08-24T10:05:21.000Z</updated>
+        <summary type="html"><![CDATA[Typefully 共同創業者の Fabrizio Rinaldi が作った Obsidian テーマ「Verso」が気に入ったので紹介します。
+私はもともと Obsidian のデフォルトテーマ]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ドラけしでハイスコアを出すコツを教えるよ]]></title>
         <id>hatenablog://entry/14945776032068605287</id>
@@ -121,6 +132,16 @@ NewzDash社のG…]]></summary>
 GameGaz Daily 2026.8.24 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CSS Color Module v6 ベースの色設計]]></title>
+        <id>https://blog.jxck.io/entries/2026-08-24/color-over-web.html</id>
+        <link href="https://blog.jxck.io/entries/2026-08-24/color-over-web.html"/>
+        <updated>2026-08-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Web における「色」を扱う API は、気づいたら色々増えている。デザインシステムの中で、デザイントークンとして色を一元管理するといった構成は増えているが、その先の定義が RGB Hex なことはまだ多いだろう。今の Web の API を用いると、どういった色の設計や管理が可能なのか、Web における色の指定を棚卸しする。中心は CSS Color Module Level 4 ~ 6 だ。https://drafts.csswg.org/css-color-4/https://drafts.csswg.org/css-color-5/https://drafts.csswg.org/css-color-6/]]></summary>
+        <author>
+            <name>blog.jxck.io</name>
         </author>
     </entry>
     <entry>
