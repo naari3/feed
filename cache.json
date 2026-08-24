@@ -3270,6 +3270,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032059004807",
+          "author": null,
+          "description": "id:t-w-o)の寄稿により、はてなブログがDiscoverに表示されやすい理由と、更に表示を増やすための4つのポイントを解説します。\nDiscoverの重要性とはてなブログ\nはてなブログのDiscover表示状況\nなぜはてなブログはDiscoverで表示されやすいのか\n表示内容のカスタマイズが可能であること\n独自のサブドメイン、独自ドメインであること\n更にDiscoverで表示されやすいブログ記事を書くために\nサムネイルを配慮\nクリックされやすいタイトル\nテーマが明確なタイトル\n読者に寄り添った記事を\n長く読まれ続けるためのDiscover対策\nDiscoverの重要性とはてなブログ\n検索やAIサービス、ソーシャルメディアなど、集客に関わる仕様や状況が変わり続けていますが、その中で比較的安定成長を続けているのはGoogle Discover(以下、Discover)です。ニュースサイトやブログなど記事を中心にしたWebサイトでは、Discoverの重要性が高まっています。\nDiscoverは、2016年12月に開始された後、2017年7月に正式発表されたGoogle Feedというサービスが改名されたもので、開始から10年経とうとしています。ユーザ数は2018年9月段階で毎月8億人以上と発表されましたが、多くのサイトでDiscover経由のトラフィックは増加を続け、2018年から数倍に伸びています。いまでは大手メディアなどで検索やソーシャルメディアを越えて最大の流入元となっている所も増えています。いま、Discoverは多くの人の欠かせない情報収集源で、多くのウェブサイトにとって最も重要なアクセス源の一つとなっています。\nそしてはてなブログは、Discoverとの相性の良い状態を目指して改善を続けています。\nはてなブログのDiscover表示状況\nNewzDash社のG…",
+          "link": "https://staff.hatenablog.com/entry/2026/08/24/123000",
+          "publishedOn": "2026-08-24T03:30:00.000Z",
+          "wordCount": null,
+          "title": "Google Discover対策〜ブログ記事をより多く表示させる4つのポイント",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/528eb5873b475296dc03c6477000a243128f7f3e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260731%2F20260731111938.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/528eb5873b475296dc03c6477000a243128f7f3e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260731%2F20260731111938.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032064120364",
           "author": null,
           "description": "2026年8月12日 18:06〜19:28まで、ブログの管理画面の記事の管理で「次のページ」が表示されない不具合が発生していました。\n原因はアプリケーションの不具合によるものです。現在は復旧しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
@@ -8268,18 +8283,7 @@
       "title": "monome",
       "feedUrl": "https://monome.org/rss.xml",
       "siteUrl": "https://monome.org",
-      "articles": [
-        {
-          "id": "https://monome.org/news/260523.html",
-          "author": null,
-          "description": "05/23/26 - monome is twenty. we put together a photo collection. part how it happened, part work-art-life entanglement, part disbelief.\nmonome.org/twenty\ndeep thanks to so many of you here who supported and participated in this journey towards other ways of being.",
-          "link": "https://monome.org/",
-          "publishedOn": "2026-05-26T16:11:11.000Z",
-          "wordCount": null,
-          "title": "monome",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "n5g",
@@ -9174,26 +9178,6 @@
           "publishedOn": "2026-05-27T15:56:26.000Z",
           "wordCount": null,
           "title": "AWS、インストール不要でWebブラウザから使えるコーディングAIエージェント「Kiro Web」発表",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/mononet_mauixamarinmonocoreclr.html",
-          "author": null,
-          "description": "マイクロソフトは、シングルコードでiOS、Android、Windows、macOSに対応するUIフレームワーク「.NET MAUI」のiOSとAndroidにおけるランタイムが、今秋リリース予定の.NET 11でCoreCLRに移行するこ...",
-          "link": "https://www.publickey1.jp/blog/26/mononet_mauixamarinmonocoreclr.html",
-          "publishedOn": "2026-05-26T15:42:28.000Z",
-          "wordCount": null,
-          "title": "ついにMonoランタイムを脱却する「.NET MAUI」。Xamarinから続いてきたMonoランタイムをCoreCLRに移行",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/dockeraigordondocker.html",
-          "author": null,
-          "description": "Docker社は、Docker DesktopとDocker CLIの新機能として、Dockerに関する質問への回答やベストプラクティスの提案、エラーの修正対応などを行ってくれるAIエージェント「Gordon」が正式版になったと発表しました...",
-          "link": "https://www.publickey1.jp/blog/26/dockeraigordondocker.html",
-          "publishedOn": "2026-05-26T15:40:27.000Z",
-          "wordCount": null,
-          "title": "Docker専用のAIエージェント「Gordon」が正式リリース。Dockerについて何でも答えてくれてエラーも修正してくれる。無料アカウントでも利用可能",
           "imageUrl": null
         }
       ]
