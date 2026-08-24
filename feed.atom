@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-24T01:29:05.844Z</updated>
+    <updated>2026-08-24T02:27:04.104Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.8.24]]></title>
+        <id>https://gamegaz.com/?p=45984</id>
+        <link href="https://gamegaz.com/2026082445984/"/>
+        <updated>2026-08-24T01:49:06.000Z</updated>
+        <summary type="html"><![CDATA[ampr_emu 0.3.6.6,APR Emu Updater v1.4.1,CiborgEc RetroLoader v1.01 (PS5),a53-code-exec,PKG Tool Box v1.5.0,ps5-image-forge v0.7.4,PS5-SSD-Benchmark v1.1.0,ps5-webkit-autoloader v0.4.0,PS5-Super-PLDMGR-Auto-Updater v24.08.2026_01.15,ps5upload v5.4.17,UAE4ALL2-HD-VITA 1.05,Hocoslamfy 1.00 PSVITA,Vita-VPKInstaller-Direct 1.02,vitaki-vitarps5(VitakiFork) v3.1.1,HaulNX 2.1.12,OpenNOW Switch v0.0.8,Breeze beta115.00,Sharkive DB 2026-08-23T21:00:53Z,vwii-compat-installer v2.1,Cube64 / Wii64 1.4.4,dolphin-nx 1.0.4,DrasticDS_nx 1.1.0,NetherSX2_nx 1.2.4,RetroBat v8.2.1,NXEmu-Dev-0.7.0-574-c9dedf1,RustyNES v2.5.6,KytyPS5 2026-08-23-6eed46b,EmuCoreX v0.3.5,ARMSX2 2.6.6.8.2,ARMSX3 0.9.4.3,shadPS4 Pre-release-shadPS4-2026-08-23-7fb1a53,shadPS4-QtLauncher 2026-08-23-a96ca3e,xenia 9090088_canary_experimental→→→この記事の続きを読む
+GameGaz Daily 2026.8.24 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Rustに移植された「Bun 1.4」正式リリース。Node.jsとの互換性向上でPlaywrightやvitestが動作、CPUとメモリの使用率が大幅改善、正規表現が高速化など]]></title>
         <id>https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</id>
@@ -9428,41 +9439,6 @@ LLMに関して、(尊敬する)先生の講義を聞いたり友人と話した
 そうこうしていると、今度はLLMが、コンピュータがどのように動作しているかに興味が湧いてくる。LLMが書いたコードは理解できるのか、…]]></summary>
         <author>
             <name>onmk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[音MADとAI(私感)]]></title>
-        <id>hatenablog://entry/14945776032035448384</id>
-        <link href="https://kaikityou.hatenablog.com/entry/2026/05/26/224709"/>
-        <updated>2026-05-26T13:47:09.000Z</updated>
-        <summary type="html"><![CDATA[とある音MAD系サーバーで、AI使用に関する是非が議論されていたので書くことにした。
- 
-先に書いておくと、僕は音MADにAI生成物を利用すること自体が禁止される理由はないと考えている。
-これは主に、音MADが以前から「人力の音素として同声優の別キャラを使う」とか「音声と映像が同期していない(声真似とかも含む)」といったことを手法として取り入れていたのを根拠にしている。
-AI生成物で問題視されがちな「学習の元データ」や「ディープフェイク」に近い問題はもっと早い段階から包括していたように思うし、他分野とは根本的に話が違うように思う(正直どの分野でも大枠は同じに思うけど)。
- 
-では積極的に使用されるべきかというとそうではなくて、結局のところ使いどころを見極めるべきなんだと思っている。
-上と同じ理由で「良いか悪いか」という話は無意味だと思うので、この記事では各パターンについての個人的な好き嫌いを書こうと思う。
- 
-…と思って記事を書き始めたら、直接的なAI生成物という部分だと好きな部分があんまり見つからなかったので「音MAD関係作業とAIの付き合い方」ぐらいまで話を広げることにした。
-ここまで来ると一口にAIと言ってしまうのは乱暴な気もするけど、ご了承ください。
- 
-好き
-・切り抜き(クロマキー系)
-昔からロトブラシとかはあったけど、最近のAI切り抜きツールは群を抜いて凄いです。
-勉強シロイドスターターを作る際はPhotoroomという有料サイトを使いました。
-
-↑作例。鞄が消えちゃってたのを修正しただけで他は完全AI。
- 
-・素材切り分け
-E-tumさんが作ってるようなやつ。
-
- 
-・スクリプト制作補助(AEその他ツール類)
-namacreamさん辺りは作成したものを配布してたり分かりやすいですね。
-それ以外にもちょこっとしたスクリプトをAIに書かせて作業を効率化している方は…]]></summary>
-        <author>
-            <name>kaikityouの日記</name>
         </author>
     </entry>
     <entry>

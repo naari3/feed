@@ -2220,21 +2220,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/256afc18ed67979a8b77749abe3f4e12a7042239/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkaikityou%2F20260714%2F20260714232411.jpg"
-        },
-        {
-          "id": "hatenablog://entry/14945776032035448384",
-          "author": null,
-          "description": "とある音MAD系サーバーで、AI使用に関する是非が議論されていたので書くことにした。\n \n先に書いておくと、僕は音MADにAI生成物を利用すること自体が禁止される理由はないと考えている。\nこれは主に、音MADが以前から「人力の音素として同声優の別キャラを使う」とか「音声と映像が同期していない(声真似とかも含む)」といったことを手法として取り入れていたのを根拠にしている。\nAI生成物で問題視されがちな「学習の元データ」や「ディープフェイク」に近い問題はもっと早い段階から包括していたように思うし、他分野とは根本的に話が違うように思う(正直どの分野でも大枠は同じに思うけど)。\n \nでは積極的に使用されるべきかというとそうではなくて、結局のところ使いどころを見極めるべきなんだと思っている。\n上と同じ理由で「良いか悪いか」という話は無意味だと思うので、この記事では各パターンについての個人的な好き嫌いを書こうと思う。\n \n…と思って記事を書き始めたら、直接的なAI生成物という部分だと好きな部分があんまり見つからなかったので「音MAD関係作業とAIの付き合い方」ぐらいまで話を広げることにした。\nここまで来ると一口にAIと言ってしまうのは乱暴な気もするけど、ご了承ください。\n \n好き\n・切り抜き(クロマキー系)\n昔からロトブラシとかはあったけど、最近のAI切り抜きツールは群を抜いて凄いです。\n勉強シロイドスターターを作る際はPhotoroomという有料サイトを使いました。\n\n↑作例。鞄が消えちゃってたのを修正しただけで他は完全AI。\n \n・素材切り分け\nE-tumさんが作ってるようなやつ。\n\n \n・スクリプト制作補助(AEその他ツール類)\nnamacreamさん辺りは作成したものを配布してたり分かりやすいですね。\nそれ以外にもちょこっとしたスクリプトをAIに書かせて作業を効率化している方は…",
-          "link": "https://kaikityou.hatenablog.com/entry/2026/05/26/224709",
-          "publishedOn": "2026-05-26T13:47:09.000Z",
-          "wordCount": null,
-          "title": "音MADとAI(私感)",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127203905168/14945776032035448384/1779803260",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127203905168/14945776032035448384/1779803260"
         }
       ]
     },
@@ -7038,6 +7023,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=45984",
+          "author": "mamosuke",
+          "description": "ampr_emu 0.3.6.6,APR Emu Updater v1.4.1,CiborgEc RetroLoader v1.01 (PS5),a53-code-exec,PKG Tool Box v1.5.0,ps5-image-forge v0.7.4,PS5-SSD-Benchmark v1.1.0,ps5-webkit-autoloader v0.4.0,PS5-Super-PLDMGR-Auto-Updater v24.08.2026_01.15,ps5upload v5.4.17,UAE4ALL2-HD-VITA 1.05,Hocoslamfy 1.00 PSVITA,Vita-VPKInstaller-Direct 1.02,vitaki-vitarps5(VitakiFork) v3.1.1,HaulNX 2.1.12,OpenNOW Switch v0.0.8,Breeze beta115.00,Sharkive DB 2026-08-23T21:00:53Z,vwii-compat-installer v2.1,Cube64 / Wii64 1.4.4,dolphin-nx 1.0.4,DrasticDS_nx 1.1.0,NetherSX2_nx 1.2.4,RetroBat v8.2.1,NXEmu-Dev-0.7.0-574-c9dedf1,RustyNES v2.5.6,KytyPS5 2026-08-23-6eed46b,EmuCoreX v0.3.5,ARMSX2 2.6.6.8.2,ARMSX3 0.9.4.3,shadPS4 Pre-release-shadPS4-2026-08-23-7fb1a53,shadPS4-QtLauncher 2026-08-23-a96ca3e,xenia 9090088_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.8.24 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026082445984/",
+          "publishedOn": "2026-08-24T01:49:06.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.8.24",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=45982",
           "author": "mamosuke",
