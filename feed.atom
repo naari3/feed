@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-25T00:04:27.144Z</updated>
+    <updated>2026-08-25T01:28:58.170Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-08-24]]></title>
+        <id>hatenablog://entry/14945776032068679799</id>
+        <link href="https://commits.hatenablog.com/entry/2026/08/25/100000"/>
+        <updated>2026-08-25T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[station-ranking.kuwabara-cloudflare.workers.dev
+鉄道でどの区間が多く利用されているのか気になったので、Claudeに雑アプリを作ってもらった。国土交通省が出している定期券の販売実績から、定期券が多く発券されている区間順にランキングを出すアプリ。
+駅ごとに傾向に違いがあって面白い。1駅に集中していたり、逆にいろんな駅にバラけていたり。ずっと見ていられる。
+なお出力が本当に正しいのかなどは全く見ていないので、そのへんは自己責任で。
+デプロイにはCloudflare Workerを使った。Claudeがポンと出してくれたHTMLをとりあえず設置するには一番便利そう。ClaudeからダウンロードしてD&Dすればデプロイができる。
+ちゃんとgit管理するならGitHub pagesのほうが良いかもしれない。
+こういうデータって、データとしては存在していても、加工して眺めてみようとは今までなかなかやるのが大変だったので、Claudeによってシュッとビューを作れるようになったのは結構便利。
+github.com
+Claudeに「rbs/steepを導入して」と言ったときに、rbs collectionを使ってくれないことが多かったので、rbsとsteep側に修正をいれた。
+steep initで生成されるSteepfileにrbs collectionへの言及が一切なかったのが一番良くなかったかなと思っている。rbs collectionを実装したときに、ここも直しておいたほうが良かったのだろうなあ。
+この変更がリリースされれば、「rbs/steepを導入して」と言うだけで、いい感じのセットアップがされてくれるに違いない。
+mixi.social
+クラフトジンジャーエールシロップを作った。多分3回目のtry。
+かなり好みの味に仕上がったと思う。クラフトジンジャーエールのレシピの量を基本にしつつ、スパイス類はクラフトコーラのレシピの量を入れた。スパイスが強めに効いたクラフトジンジャーエールになっていい感じ。
+砂糖を減らすのを忘れていて砂糖多めになってしまっていたので、次は砂糖を減らしたい。別のスパイスを試してみても良いかも知れない。
+昼頃に無限に水を飲んでは無限に汗が出る状態になっていて、備蓄していたOS-1を初めて飲んだ。500mlを一瞬で飲んでしまった。
+脱水していると美味しく感じると聞くけれど、確かに美味しかった。ただ脱水していない時に飲んだことがないので、比較として飲んでみたい。りんご味なのも美味しく感じた理由な気がする。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.8.25]]></title>
+        <id>https://gamegaz.com/?p=45986</id>
+        <link href="https://gamegaz.com/2026082545986/"/>
+        <updated>2026-08-25T00:39:32.000Z</updated>
+        <summary type="html"><![CDATA[LuaPSX v1.0,PS5 Web File Manager v1.6,Spectrum Library 1.4.3,APR Emu Updater v1.5.1,ps5-image-forge v0.7.5,PS5-Super-PLDMGR-Auto-Updater PS5 AIO Packages (2026.08.24-2310),ShadowMountPlus 1.7alpha10,ps5upload v5.4.19,uac-pstv-host v1.4,NX Activity Log v1.5.9,green-nx v1.0.30,angrybirds2_nx 1.0.2,HaulNX 2.1.23,BlocksDS v1.23.0,DracoDS 1.8,RustyNES v2.6.1,xenia 1e834f8_canary_experimental,RPCN 1.10.0,ARMSX2 2.6.6.8.3,ARMSX3 0.9.4.4,ARMSX2-NX v3.0.0,shadNet 0.0.16,KytyPS5 2026-08-24-0b3302a→→→この記事の続きを読む
+GameGaz Daily 2026.8.25 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[シングルバイナリなOLAP DBの次期版「DuckDB 2.0」プレビュー。クライアント／サーバ機能が安定版に、スキーマレスのVARIANT型、トリガー、非同期I/Oなど新機能]]></title>
         <id>https://www.publickey1.jp/blog/26/olap_dbduckdb_20variantio.html</id>
