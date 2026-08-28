@@ -61,6 +61,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032070230582",
+          "author": null,
+          "description": "Codexを長時間使うときの運用について、あれこれ考えたことをまとめました。SandboxとかApprovalとか、外部記憶とか復旧とか、そのへんの話です。普通のこともかなり書いてあります。たぶん1000人に3人も刺さらない記事ですが、刺さる人には少し役に立つかもしれません。第三版です。\n暇な人はどうぞ。\nakkera102.github.io",
+          "link": "https://akkera102.hatenablog.com/entry/2026/08/28/192332",
+          "publishedOn": "2026-08-28T10:23:32.000Z",
+          "wordCount": 512,
+          "title": "Codex 運用設計— ハーネス・境界・検証・復旧をどう組むか",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032070230582/1787913595",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032070230582/1787913595"
+        },
+        {
           "id": "hatenablog://entry/14945776032069448563",
           "author": null,
           "description": "ヤバ文章爆誕。運用マニュアル作ってみました。前回より格段に読みやすくなっていると思います。\nCodex 運用設計メモ\nhttps://akkera102.sakura.ne.jp/test3/CODEX_WORKPLACE_DESIGN.html",
@@ -1695,21 +1710,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032038811656/1780621202"
-        },
-        {
-          "id": "hatenablog://entry/14945776032036941090",
-          "author": null,
-          "description": "regional.rubykaigi.org\n関ケ原Ruby会議01だった。\nNew \"Type\" system on PicoRuby というタイトルで登壇した。\"Type\"はミスリードを狙ったもので、MIDIキーボードを文字入力のキーボードとして使えるようにするScrimoniaというプロダクトの紹介をした。\ngithub.com\n\n本日のスライドです。ありがとうございました！🏯https://t.co/yN0j54Jj4M\n #sekigahara01\n— 🎹 (@p_ck_) May 30, 2026\n   \n技術的な話は後ほどブログを書くとして、裏話的なところとかを日記として書いておく。\nいろんな人から感想をもらって、結構感触が良くてよかった。面白かったと言ってもらえてうれしい。今日のトークで1番よかったと2人から言ってもらえたのもよかった。\n今回のスライドでは、城を裏テーマとした。お城を巡るのは実際好きで数年前からいろんなところに行っている。西軍ということで、写真は西日本の城をメインとした。松本城はRubyKaigiつながりということで採用したけれど、鶴ヶ城や弘前城は行ったけれど不採用となった(あと関東のお城はそもそもほとんど行っていないというのもある)。\n城巡りの図で北海道を省略しているのだけど、これは北海道の百名城に1つも行っていないため。五稜郭とかが含まれるのだけれど、RubyKaigiの時に行けなかったので...。\nスライドの端のほうに余談が書かれているスタイルが結構好きで、今回はそれを城Tipsという形で取り入れてみた。感想をもらったりTwitterを見ている感じ、これも好評でよかった。気になる城や地域を見つけて、そこに訪れる人が出たらうれしいな。\n余談を書くスタイルは誰かがやっているのを見ていいなと思った記憶があるのだけど、誰だったかはさっぱり思…",
-          "link": "https://commits.hatenablog.com/entry/2026/05/31/100000",
-          "publishedOn": "2026-05-31T01:00:00.000Z",
-          "wordCount": 601,
-          "title": "2026-05-30",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032036941090/1780189200",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032036941090/1780189200"
         }
       ]
     },
@@ -6085,6 +6085,16 @@
       "siteUrl": "https://note.com/usop",
       "articles": [
         {
+          "id": "https://note.com/usop/n/n41ddaff739cf",
+          "author": null,
+          "description": "久しぶりの投稿です。このブログは原文厨なのにTOEICの長文より長い英文は読めない同志のためにChatGPTにTOEICの長文問題っぽくしています。\nOpenAIでモデルのテスト中にサンドボックスを抜け出してHugging Faceを攻撃していたというだけでもSFっぽさを感じましたが、OpenAIが出したレポートを読むと、より人間らしく動いていて鳥肌が立ちました。\n続きをみる",
+          "link": "https://note.com/usop/n/n41ddaff739cf",
+          "publishedOn": "2026-08-28T12:33:22.000Z",
+          "wordCount": null,
+          "title": "OpenAIのHugging Face侵害ではエージェント達がXXを使って連絡を取り合っていた",
+          "imageUrl": null
+        },
+        {
           "id": "https://note.com/usop/n/nedda37b83018",
           "author": null,
           "description": "Internet Watchの記事から。\n サイバー攻撃グループの名前から国家や動機を分かりやすく。Googleが新命名規則を展開　「APT44」は「SANDWORM RELIC」に　Google Threat Intelligence Group（GTIG）は7月25日、サイバー攻撃グループ（脅威アクinternet.watch.impress.co.jp \n続きをみる",
@@ -6509,16 +6519,6 @@
           "publishedOn": "2026-06-15T00:00:00.000Z",
           "wordCount": null,
           "title": "企業向け Web Bootcamp 2026 開催後記",
-          "imageUrl": null
-        },
-        {
-          "id": "https://blog.jxck.io/entries/2026-05-31/google-io-2026.html",
-          "author": null,
-          "description": "Google I/O 2026 に参加した。",
-          "link": "https://blog.jxck.io/entries/2026-05-31/google-io-2026.html",
-          "publishedOn": "2026-05-31T00:00:00.000Z",
-          "wordCount": null,
-          "title": "Google I/O 2026",
           "imageUrl": null
         }
       ]
