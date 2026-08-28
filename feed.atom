@@ -2,10 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-28T13:58:55.824Z</updated>
+    <updated>2026-08-28T18:04:28.120Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[今日のクレーンゲーム]]></title>
+        <id>hatenablog://entry/14945776032070313152</id>
+        <link href="https://kaikityou.hatenablog.com/entry/2026/08/29/000806"/>
+        <updated>2026-08-28T15:08:06.000Z</updated>
+        <summary type="html"><![CDATA[今日は珍しく、最初から目当ての景品があってクレーンゲームをやりに行った日。
+八奈見杏奈のフィギュア。入荷前から心待ちにしてた。
+ 
+八奈見さんのフィギュアは割と簡単に取れたんだけど、ついでで狙った他のフィギュアが大きく沼った。
+特にチアモは酷い沼りっぷりで、店員さんが見かねて助けてくれた。
+ 
+ラミィのフィギュアは金額はかかったけど、狙いは上手くつけられたので割と満足。
+あと、今日は「あっこの台無理だわ」で引き際を覚えたので偉い。]]></summary>
+        <author>
+            <name>kaikityouの日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weztermにカラーコードプレビュー機能を搭載する]]></title>
+        <id>hatenablog://entry/14945776032070300777</id>
+        <link href="https://blog.3qe.us/entry/2026/08/28/232614"/>
+        <updated>2026-08-28T14:26:14.000Z</updated>
+        <summary type="html"><![CDATA[Claudeと作業をしていると、カラーコードを提示してくることがある。しかし、WezTermにはカラーコードをプレビューする機能はないので、何色なのか分からないという困りがあった。Claudeと相談して便利グッズを作ったのでメモしておく。
+この設定をreturn configよりも前に追記すると、右上のステータスバーに色見本が出力されるようになる。
+
+インラインでのプレビューは無理そうだったので諦めたけど、実用上はこれで十分。
+-- 表示中の画面から #rrggbb / #rgb を拾い、右上のステータスバーに色見本を自動表示する
+local COLOR_SWATCH_MAX = 8
+wezterm.on('update-status', function(window, pane)
+  local text = pane:get_lines_as_text()
+  local seen, items = {}, {}
+  for hex in text:gmatch('#(%x%x%x%x%x%x)%f[^%w]') do
+    hex = hex:lower()
+    if not seen[hex] then
+      seen[hex] = true
+      table.insert(items, hex)
+    end
+  end
+  for hex in text:gmatch('#(%x%x%x)%f[^%w]') do
+    local full = hex:lower():gsub('(.)', '%1%1')
+    if not seen[full] then
+      seen[full] = true
+      table.insert(items, full)
+    end
+  end
+  local parts = {}
+  for i, hex in ipairs(items) do
+    if i > COLOR_SWATCH_MAX then break end
+    table.insert(parts, { Background = { Color = '#' .. hex } })
+    table.insert(parts, { Text = '    ' })
+    table.insert(parts, 'ResetAttributes')
+    table.insert(parts, { Text = ' #' .. hex .. ' ' })
+  end
+  window:set_right_status(wezterm.format(parts))
+end)]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OpenAIのHugging Face侵害ではエージェント達がXXを使って連絡を取り合っていた]]></title>
         <id>https://note.com/usop/n/n41ddaff739cf</id>
@@ -9605,17 +9664,6 @@ codeberg.org
 streamable.com]]></summary>
         <author>
             <name>あーさん日記</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2026.5.31]]></title>
-        <id>https://gamegaz.com/?p=45557</id>
-        <link href="https://gamegaz.com/2026053145557/"/>
-        <updated>2026-05-31T02:28:10.000Z</updated>
-        <summary type="html"><![CDATA[Nintendo Switch 2後方互換リスト,PS4PKGInstaller v4.00 Beta11,YarP2JB 1.0,BD-JB-1250 Lapse_1.2_MOD And Poops,Netflix-N-Hack,send_pkg-payload v1.3.4,ps5upload v2.22.0,ShadowMountPlus 1.6beta12,ps5debug-NG 1.2.4,HATS-Tools 1.6.1,3ds_junkdraw 0.5.0,ReXGlue SDK Nightly 0.8.1.28-dev.g21f6bb0,J-Runner with Extras V3.4.0-r5,PCSX2 v2.7.375,ARMSX2-iOS 1.0,duckstation v0.1-11295,TempGBA4PSP-mod 20260530,ares v148,xenia fbd620c_canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2026.5.31 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
