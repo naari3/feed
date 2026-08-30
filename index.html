@@ -74,6 +74,45 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2026-08-30">2026-08-30</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2026-08-29</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2026/08/30/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>鉄道ゲームを作っている。今のところクローズドベータ的な感じでデプロイしている。興味がある人がいたら ruby-jp#times-pocke を覗いてみてください。路線図に詳しいオタクには刺さる自信が割とある。そうでない人には意味不明だとは思う。
+コーディングはClaude Codeに完全にまかせている。実装は全く見ていない。markdownファイルや、PRのdescriptionで仕様の確認だけをしている。
+最初にClaude Chatに大まかな仕様を投げて、実現可能性や少し細かい仕様を相談し、markdownとして仕様書を書き出した。
+次にこの仕様書をClaude Codeに渡して具体的なタスクに落とし込んでIssueを作らせた。
+そしてそのIssueを元に開発を進めて行っている。
+Claude Chatに仕様を確定してもらった段階で「開発始めたらまた進捗聞かせてよ。」と言われて、ごめんねもう君に話しかけることはないんだ……と思った。かなしい。
+早くリリースしたい気持ちと、楽しい気持ちでひたすら開発をしていたらだいぶClaude Code MAX20のトークンが溶けてしまった。土曜日の昼12時が週間制限切り替わりポイントなのだけれど、先週分は99%ぐらいまで使い切っていたし、今週分はもうすでに28%使っている。やばい。
+結構なスピード感で開発はしているものの、まだちゃんとリリースするには細かいところを詰めたい。ゲームプレイのコア体験は、今日一日でだいぶ仕上がってきたかなあと言う気はする。どちらかと言うとメタ的要素がまだまだ必要。
+先週、定期券利用駅ペアランキングを作ったのがきっかけ。 2026-08-24 - diary
+これを作ってからオープンになっているデータを使って何か面白いものが作れないかなと考えていた。水曜日に丸一日アイディアを考えていたのだけど、どうもいい案が出なくて少し落ち込んでいた。本当に水曜日は何もしてなかった。
+夜にようやくこのゲームのアイディアを思いついてClaude Chatに相談を始めたので、まあ1日悩んだかいはあったと思う。
+修正したおもしろバグの1つに、方角ネタバレがある。
+このゲームでは難易度を上げるために地図の方角をランダムに回転させたものを初期方角とする機能がある。
+初期方角のままだと大変なので、ユーザーが地図を回転させるUIが必要なのだけど、初期実装ではそれがスライダーとして実装されていた。そして、ランダムな回転はスライダー位置の初期値として実装され、スライダーを端に合わせると北が上を向くという大変親切な設計になっていた。
+そもそもスライダーを回転に使うのがおかしいだろうということで、左右それぞれの向きに回転させるボタンを2つつける形に変更した。</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032070879414/1788051602" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2026-08-29">2026-08-29</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -14441,45 +14480,6 @@ GameGaz Daily 2026.6.2 first appeared on 大人のためのゲーム講座.</spa
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://5desk.hatenablog.jp/" target="_blank"
-              rel="noopener">3F 音楽室</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">夢からうつつ報</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://5desk.hatenablog.jp/entry/2026/06/01/210549" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>焼肉屋で友人とこれからどうするかの話をした。「バグはこの世界における蔑称。」余計なことを言って友人を怒らせたけど、空中で一回転したら時間が飛んで解決した。
-明日歯医者行かないといけなくて歯医者が昼からだけど学校もあるからどうしようと考えてたが、サボればいいかとなった。でも心の中では大丈夫かなと悩んでいた。結局どちらも行かなかった。
-パラボラアンテナの方角は原則として南西方向に向けて設置されるだろう。
-中学生の頃に疎遠した友人と知らない人と旅館に泊まっていた。宿からすぐ横に川と別の川が並行して流れている。高台に登ると鳥居と簡易的に作られた鉄塔が見え、そこに雷が落ちた。確かな振動で目が覚めたら、部屋に焼き魚が置いてあったので食べた。後日、違う友人と同じ町を訪れ、同じ宿に泊まった。ご飯どうする？と聞かれ、何も決めていなかったので悩んでいたところ、部屋の窓の奥から魚苦手なんですね…と手紙が風に乗ってやってきた。美味しかったからうんと作ってほしいと手紙に書いてそれを窓から落としたら、遠くからありがとうと聞こえた。
-光は直線であるが、わたしたちにそれは差し込まれ、やがて曲線となるだろう。
-百合星人ナオコサンと南原が出てくる動画あったら教えてください。たぶん夢の中で見たのか記憶違いだと思うのですが。
-間違いであることを判断できずそのままの意図で解釈し、結果、想定とは全く異なるものが提出されるようなことが、今後数えきれない程起こるとしたら、君はきっと馬鹿にしてくれるだろうか。
-殺し屋の方がこの文章を読まれていましたら住所教えるので5deskまで御一報ください。
-かみいなぼたん(小学1年生)が教えてくれた校舎裏に生えてたつくし
-上いなぼたん(小学2年生)が飛んだとび箱6段
-上いなぼたん(小学3年生)が配膳してくれた小松菜のごま和え
-上伊那ぼたん(小学4年生)が彫刻刀で切った人差し指、血があふれる
-上伊那ぼたん(小学5年生)に背伸びしないと同じ目線で話せない
-上伊那さん(小学6年生)が見せてくれた中学受験の問題、y&#x3D;3x　答案
-君の孤独を 誰も知らない～♪
-帰宅
- 
-先月のプレイリスト
-
-Boards of Canadaの新譜が良かった。今まで主要なアルバムしか聴いていなかったので通しで色々聴いてました。気づいたら空夜:cooyaが配信解禁していたので、今月はよく聴いていた。あとは杏仁(今は灰色屋名義)とかを聴き直していた。もうほとんど消えているので共有とか出来ない。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/4207112889964803017/14945776032035878375/1780319250" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -16819,7 +16819,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-08-30T00:05:38.263Z">2026-08-30T00:05:38.263Z</time>
+    <time id="build-timestamp" datetime="2026-08-30T01:17:34.408Z">2026-08-30T01:17:34.408Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
