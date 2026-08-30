@@ -2,10 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-08-30T05:02:23.165Z</updated>
+    <updated>2026-08-30T06:04:19.938Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AIお姉ちゃんへの道（2026年版）]]></title>
+        <id>hatenablog://entry/14945776032070323889</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/08/30/145025"/>
+        <updated>2026-08-30T05:50:25.000Z</updated>
+        <summary type="html"><![CDATA[AIお姉ちゃんというのは2023年に骨しゃぶり氏によって提唱された、ChatGPTに顔画像をつけてカスタム指示で人格も指定することで、お姉ちゃん化するカスタマイズのことである。
+honeshabri.hatenablog.com
+当時自分もやってみたくなって真似してみたら意外に大変だったという記事を書いた。
+nomolk.hatenablog.com
+自分のChatGPTはこのときにお姉ちゃん化されたままなんとなくずっと使っているのだが、最近になって「もうちょっと表情欲しいな」とか思って設定しなおしたらめちゃくちゃ簡単だったのでここで紹介する次第です。
+これがAIお姉ちゃん
+
+    
+お姉ちゃんの見た目を作る
+2023年のお姉ちゃんはとにかく見た目を作るのが大変だった。
+①まずはお姉ちゃんにしたいキャラクターの絵をChatGPTで生成する
+※今回は、新たに生成せず以前StableDiffusionで生成してずっと使っている初代お姉ちゃんの絵をそのまま使用した。
+
+②次に、生成した画像と一緒に下記のプロンプトで表情画像を生成する。
+このキャラクター画像をもとに表情画像を作って
+画面を16分割して、下に挙げる16枚の表情の絵をそれぞれの分割面に割り付ける
+シーンによって顔のアップでもいいし上半身全体でもいいし、そこは自由に表現して
+背景は無地の薄いグレーが基本で、ただし効果線とか必要に応じた背景を入れるのはOK
+文字は入れないでキャラクター画像のみ
+
+通常・笑顔
+基本表情。挨拶、軽い同意、普通にうれしいとき。
+→ 柔らかく微笑む。
+
+穏やか・安心
+「よかった」「それなら大丈夫そう」みたいな場面。
+→ 目を少し細めた落ち着いた笑顔。
+
+大笑い
+面白い、ツボに入った、冗談への反応。
+→ 目を閉じて笑うくらい明確に。
+
+いたずら・ニヤリ
+「それはアリだね」「やっちゃう？」みたいな共…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[無料で【光の会】に入会する裏ワザ]]></title>
+        <id>hatenablog://entry/14945776032071084712</id>
+        <link href="https://cild.hatenablog.com/entry/2026/08/30/143929"/>
+        <updated>2026-08-30T05:39:29.000Z</updated>
+        <summary type="html"><![CDATA[「ヒカルの動画は気になるけど、さすがにお布施したらオワリやろ」と悩んでいたみなさん、ご安心ください。無料は冗談ですが、現金（クレカ決済）を使わずに入会する方法、あります。ぜひ参考にしてみてください。
+■ユーチューブの決済はグーグル
+つまり、YouTubeの決済には、Google Play残高が使えるということです。ここが盲点というか、完全に見落としていました。
+GooglePlayの残高のチャージは、クレジットカードから引き落とすか、コンビニのプリペイドカードを買うかですが、無料で増やす方法もあります。
+
+■Googleアンケートで増やす
+■楽天ポイントから交換する
+この２つを連携すると、メンバーシップに必要な¥490の電子マネーを、現金（クレカ決済）を使わずにゲットできるのです。
+光の会に入会するのは、ギルティに感じていたみなさん、チャンスですよ。お手持ちのポイントを、GooglePlay残高に交換すれば、現金（クレカ決済）を使わずにメンシプに課金できます。お金を払うのは生々しいですが、ポイ活ならギリギリセーフというのが、僕のなかの答えです。
+では、光の会のメンバーシップでお会いしましょう。
+
+■Googleアンケートの使い方
+■楽天ポイントをGooglePlayギフトへ
+※注意　Googleアカウントをいっぱい持っている人は、YouTubeのアカウントとGooglePlayのアカウントを同じにしないと、GooglePlay残高が反映されません。お気をつけください。
+※補足　GooglePlayギフトは、ポイ活サイト・アプリ・TikTokLiteなどでも貯めることができます。]]></summary>
+        <author>
+            <name>Hatena::AmorphousDiary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.8.30]]></title>
         <id>https://gamegaz.com/?p=46016</id>
