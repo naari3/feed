@@ -14520,37 +14520,6 @@ PS5システムソフトウェアアップデート バージョン 26.04-13.40.
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://akkera102.hatenablog.com/" target="_blank"
-              rel="noopener">あーさん日記</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">いまさらMp2k学習2</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://akkera102.hatenablog.com/entry/2026/06/04/183403" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>前回概要をひと回りしたので、コードを雑に読んでいく回想録です。
-・gba-hq-mixerのファイル開いてスクロールしたのですが・・・SoundMainRAM関数しかない！？でかなりビックリ。
-・一式入っていないのは・・・ようするに関数のパッチだったわけなんですね。hqの正体ようやく理解しました。勘違いしてた＆一式じゃないんかーい！という魂の叫び。orz
-・わかりやすくいうと
-・m4aSoundMainはBIOS版でいうところのswi 0x1C（SoundDriverMain）に当たります。
-・自作アプリを作りたいなら逆汗コード（m4a.c）は必要かもなあ。といってもこれは仁義に反するので非公開で遊ぶしかできないなあ・・・。
-・初期化については、m4aSoundInit内でCpuSet呼び出ししています。詳しく言うと、まずs8 SoundMainRAM_Buffer配列をIWRAMにグローバル宣言。ROMにあるSoundMainRAMコードをCpuSetで配列にコピーしています。
-・呼び出しは先程のSoundMainの中で、配列の先頭を関数呼び出ししています。
-・使用手順はBIOS版と変わらないはず。
-・うーん、BIOS版ならSoundDriverMain（0x1C）をIWRAMにコピーして、hqへパッチできないだろうか・・・。構造体は共通っぽいけど、これなら最小で使えるはず。といってhqはステレオ専用っぽいからなあ。
-・BIOS版のアドレス（間違っていたらすみません）
-というところで今日は早めに寝ます。スヤーできない！</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032038713508/1780570725" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -16890,7 +16859,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-09-01T21:02:32.553Z">2026-09-01T21:02:32.553Z</time>
+    <time id="build-timestamp" datetime="2026-09-01T22:02:41.774Z">2026-09-01T22:02:41.774Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
