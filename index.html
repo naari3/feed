@@ -74,6 +74,50 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2026-09-02">2026-09-02</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://techlife.cookpad.com/" target="_blank"
+              rel="noopener">クックパッド開発者ブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Coding AgentがSwift Macroを展開するために</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://techlife.cookpad.com/entry/expand-swift-macro-for-coding-agent" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>こんにちは、レシピ事業部の山田(@0x746572616e79)です。
+AIコーディングの精度向上には、プロンプトを工夫することが有効な時期がありました。最近では、限られたコンテキストに何をどのタイミングで入れるかを設計する「コンテキストエンジニアリング」という考え方が注目されています。私たちのチームでも、長大なガイドラインを読ませるのではなく、AIが必要な時に正確なコンテキストを取得できる仕組み側の整備を進めています。
+本記事ではその一例として、Swift Macroの展開結果をCoding Agentに渡すMCPサーバーを紹介します。
+テスト用コードをマクロで宣言的に生成する
+前提として、私たちのテスト基盤の話から始めます。以前、テスト用のモックは次のような手書きのクラスでした（説明用に簡略化しています）。
+final class MockUserService: UserServiceProtocol {
+    private(set) var fetchUserNameArgs: [Int] &#x3D; []
+    var fetchUserNameResult: String &#x3D; &quot;&quot;
+
+    func fetchUserName(id: Int) -&gt; String {
+        fetchUserNameArgs.append(id)
+        return fetchUserNameResult
+    }
+}
+
+
+
+プロトコルにメソッドが増えるたびにすべてのMockへ似たようなコードを書き足すことになり、退屈な割にミスが混入しやすい作業でした。そこで実装したのが、テスト用のモックコードを自動生成する @AutoMock というSwift Macroです。プロトコルに付与すると、コンパイル時にモッククラスが生成されます。
+@AutoMock
+pro…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/9069e0441ca9f5aaf3f13f9ba1204a2faedf24a6/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F6628210%2F1516165995781773" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2026-09-01">2026-09-01</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -14486,50 +14530,6 @@ GameGaz Daily 2026.6.5 first appeared on 大人のためのゲーム講座.</spa
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">PS5システムソフトウェアアップデート バージョン 26.04-13.40.00</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026060445577/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>PS5システムソフトウェアアップデート バージョン26.04-13.40.00がリリースされました。→→→この記事の続きを読む
-PS5システムソフトウェアアップデート バージョン 26.04-13.40.00 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://satoru-takeuchi.hatenablog.com/" target="_blank"
-              rel="noopener">覚書</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">コーディングエージェントの登場後に読む本が変わった</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://satoru-takeuchi.hatenablog.com/entry/2026/06/04/214202" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Claude Code、Codex，Devinのようなコーディングエージェントが出てきてしばらく経ちます。その進化は著しいです。そんななかで私には、よく読むIT技術書の種類が変わるという大きな変化がありました。この変化について、および、その変化について思ったことを書きます。
-前述したようにコーディングエージェントの進化は凄まじく、現在は次のようなコードであれば、振れ幅は大きいものの、並のプログラマーと同程度あるいはそれ以上のコードを書けます。
-よく使われている言語で書かれている
-この場合はこう書く、といったセオリーがある
-セオリーを外さないといけない特殊事情が無い
-規模はそれほど大きくない
-品質とは別の観点でいうと、生産速度は人間では到底太刀打ちできないほど高いです。そのままプロダクション環境に持ち込めるかというとそれはまた別の話ですが、ここではその話は置いておきます。
-私はプログラマーとしては残念ながら並なので、一部例外を除くほとんどの場面では自分の出番はないし、今後その例外はさらに減っていくと思っています。一部のスーパープログラマーはさておき、このような思いを持っている人はそれなりにいるのではないでしょうか。
-ここから本題の、本の話をします。私は仕事でも趣味でも寝ても覚めてもプログラミングをするようなタイプではないですが、コードを読むこと、プログラミングに関する本を読むのが好きでした。ところがコーディングエージェントを使うようになってからは、とくにここ最近は、IT技術に関する本の中で、プログラミングについての本を読むことがずいぶんと減りました。
-なぜだろう、と考えたところ、興味の対象が気づかない間に大きく変わっていたことに気づきました。「もうコードのことは考えない。考えなくていい。全部AIにお任せ」なんてことは全然考えていませんが、何か知りたいときは初手で本を読むのではなく、生成AIに質問するようになりました。回答を得るとソースも聞いて公式サイトやソースコードにあたって裏取りをするだけです。ソースを読むときもエージェントのお世話になります(もちろん最後の裏取りはします)。これで終わりです。本を読むこともありますが、登場機会はずいぶん減りました。今後私がプログラミング言語、特定のフレームワークやライブラリの入門書を買うことはほぼ無いでしょう。
-最近プログラミングについての本のかわりに読んでいるのは、組織、プロダクト、開発手法、要求定義や設計といったことについての本です。昔はどちらかというとこの手の本は敬遠していましたが、今はとても楽しく読めています。前述のように、立場上必要になっていることもありますが、このようなことを学ぶとコーディングエージェントにいいものを作ってもらえる可能性が上がり、今よりさらに楽ができるという理由も大きいです。私は楽をするのが大好きなので、それを助けてくれるものには、いつだって興味津々です。
-このような現状をどう思うかというと、「悲しくはないが少し寂しい」といったところでしょうか。もともとコーディングはモノづくりの手段という考え方だったので、モノづくりについては苦手なところを楽できてラッキーといった気分です。しかし、過去のある時期までは情熱を燃やしていたコーディングが、これほど短期間に、ここまで私のなかに占める割合が下がるとは思ってもみなかったです。大量に積読状態になっているプログラミングについての本も、ますます積む時間が長くなりそうです。寂しい。
-最後に、今でもこれから読みたいIT技術書は何かについて、思ったことを書きます。生成AIはどれだけ賢くてもあくまで特定個体ではなく集合知なので、筆者以外に誰に聞いてもわからない、個人が生で体験したことや思ったことが書いてある本をもっと読みたいと考えます。有り体に言えば顔が見える本がいいなと思います。自分も本を書くならそんな本を書きたいものですね。</span>
-                  </div>
-                  <img src="https://ogimage.blog.st-hatena.com/10328749687217861088/14945776032038768766/1780576922" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
           </section>
         </section>
       </li>
@@ -16872,7 +16872,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-09-02T00:05:05.199Z">2026-09-02T00:05:05.199Z</time>
+    <time id="build-timestamp" datetime="2026-09-02T01:14:36.915Z">2026-09-02T01:14:36.915Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
