@@ -78,6 +78,31 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.3qe.us/" target="_blank"
+              rel="noopener">Lambdaカクテル</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Proton Passを使ってgit commitの署名とpushに使う鍵を管理する</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.3qe.us/entry/2026/09/04/005220" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>id:Windymelt は日頃からgit commitをするときはデジタル署名をつけるようにしている。仕事の上では必須ではないのだけれど、OSSとかでは求められることがある。なんとGitHubはコミットに書かれたメールアドレスとユーザ名をそのまま信用して表示するので、なりすますのは簡単なのだ*1。そこで、デジタル署名することでより強く本人のコミットであるということを主張できる。また、GitHubでは署名を行うことをリポジトリ単位で強制することができて、自作のOSS用リポジトリでも基本的に署名を要求するように設定している。こうすることで、もし自分のアカウントが乗っ取られても署名用の鍵まで同時に盗むことは困難だろうから、コミットやリリースがなんかおかしいことに気付くことができる。
+自分は普段はYubikeyでssh認証とGPG署名をまかなっていて、これは秘密鍵がトークンの外に出ることが絶対にない設計なので、鍵の漏洩を心配しなくても良い*2。Yubikeyはセキュアな設計になっていて、署名には毎回PINが必要である。
+毎回PINを入力するのはいいのだが、とはいえ、AI Agentに作業させっぱなしにしたいこともある。AIにやらせて出掛けるとか、寝るとか、AI Agentの使いどころは色々ある。しかしながら、AIにやらせる場合であってもYubikeyはしっかりPINを求めてくるので、そこで作業は停止してしまう。
+これだと地味に困るので、なんとかすることにした。
+パスワードマネージャがssh-agentになる時代
+便利な時代なもので、最近は各種のパスワードマネージャがssh-agentを兼ねてくれるようになっている。いちおう説明しておくと、ssh-agentとはsshに利用する秘密鍵をあらかじめメモリにロードしておき、毎回パスワードを入力する手間を省いたり、ssh先のホストからさら…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/288545619652b9ae8dc3e64807cef0936106ca9c/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260903%2F20260903235816.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.publickey1.jp/" target="_blank"
               rel="noopener">Publickey</a></h3>
           <section class="articles-per-source">
@@ -16782,7 +16807,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-09-03T15:03:24.071Z">2026-09-03T15:03:24.071Z</time>
+    <time id="build-timestamp" datetime="2026-09-03T16:02:30.392Z">2026-09-03T16:02:30.392Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-03T15:03:24.111Z</updated>
+    <updated>2026-09-03T16:02:30.430Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Proton Passを使ってgit commitの署名とpushに使う鍵を管理する]]></title>
+        <id>hatenablog://entry/14945776032073361830</id>
+        <link href="https://blog.3qe.us/entry/2026/09/04/005220"/>
+        <updated>2026-09-03T15:52:20.000Z</updated>
+        <summary type="html"><![CDATA[id:Windymelt は日頃からgit commitをするときはデジタル署名をつけるようにしている。仕事の上では必須ではないのだけれど、OSSとかでは求められることがある。なんとGitHubはコミットに書かれたメールアドレスとユーザ名をそのまま信用して表示するので、なりすますのは簡単なのだ*1。そこで、デジタル署名することでより強く本人のコミットであるということを主張できる。また、GitHubでは署名を行うことをリポジトリ単位で強制することができて、自作のOSS用リポジトリでも基本的に署名を要求するように設定している。こうすることで、もし自分のアカウントが乗っ取られても署名用の鍵まで同時に盗むことは困難だろうから、コミットやリリースがなんかおかしいことに気付くことができる。
+自分は普段はYubikeyでssh認証とGPG署名をまかなっていて、これは秘密鍵がトークンの外に出ることが絶対にない設計なので、鍵の漏洩を心配しなくても良い*2。Yubikeyはセキュアな設計になっていて、署名には毎回PINが必要である。
+毎回PINを入力するのはいいのだが、とはいえ、AI Agentに作業させっぱなしにしたいこともある。AIにやらせて出掛けるとか、寝るとか、AI Agentの使いどころは色々ある。しかしながら、AIにやらせる場合であってもYubikeyはしっかりPINを求めてくるので、そこで作業は停止してしまう。
+これだと地味に困るので、なんとかすることにした。
+パスワードマネージャがssh-agentになる時代
+便利な時代なもので、最近は各種のパスワードマネージャがssh-agentを兼ねてくれるようになっている。いちおう説明しておくと、ssh-agentとはsshに利用する秘密鍵をあらかじめメモリにロードしておき、毎回パスワードを入力する手間を省いたり、ssh先のホストからさら…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java誕生から現代に至る歴史をゴスリン氏ら関係者が語る公式ドキュメンタリー「The Java Story」、YouTubeで公開中]]></title>
         <id>https://www.publickey1.jp/blog/26/javathe_java_storyyoutube.html</id>
