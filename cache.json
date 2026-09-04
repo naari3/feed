@@ -46,6 +46,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032073464598",
+          "author": null,
+          "description": "前半、少し枝切りして整合性を取りました。一応、読んでもらっても謙遜ないクオリティになっていると思います。なんでこんな変な文章書いたのだろうと考えたところ、tips的な使い方より、そのcodexが持っているアフォーダンスは何か、その振る舞いを見るのが楽しいのでしょうね。\n今まで人間は人間、人間と動物、程度ぐらいの分け方でした。人間とAIというプロトコルが始めて登場した。今、人間側がすごく戸惑っていて、会話できるから、そのまま人間と人間にするような振る舞いをしてしまう。んで、そこの軋轢がまた楽しいのですよね。\nドキュメントの47章に書いていることはその通りで、つまりbusiness hernessが注目されてるけど、もうすぐpersonal hernessが来るでしょう。これは結構SFでないところです。下層の考える負荷が減って、上層で判断するようになる。それがループ構造になって、もっと上流の意思決定になるのですね。人間器ですよ。これはヤバい。\nBusiness harness encodes organizational judgment.\nPersonal harness encodes individual judgment.\nAgent Harness — Codex Operations Design\n\n以下、GPTさんとの会話。\n雑にフォーカスするけど、高校生がAI家庭教師を雇う振る舞いは、もうparsonal herness的と呼べるかな？\nかなり近いです。雑にフォーカスするなら、「AI家庭教師を雇う」という発想そのものが Personal Harness 的と呼べます。\nただし、単に「わからない問題をChatGPTに聞く」だけなら、まだ AI利用 です。Personal Harness になる境目は、AIの能力そのものではなく、自分に合わせた働かせ方を継続的に構成し始めることだと思います。\nたとえば高校生が、\n「自分は二次関数が弱い」「答えをすぐ言わずヒントを3段階で出して」「間違えた問題を覚えて翌週もう一度出して」「定期試験はこの範囲」「この先生の採点基準では途中式が必要」「英単語は毎朝20個、間違えたものだけ再出題」\nまで作り始めたら、これはもうかなり明確に Personal Harness です。\n面白いのは、高校生本人がHarnessを設計している自覚がなくても成立するところです。\n昔なら「良い家庭教師を探す」だった。\nAI時代には、\n良い家庭教師を探す → 自分専用の家庭教師の働き方を作る\nへ変わる。\nここには結構大きな変化があります。\nさらに言えば、家庭教師という例は Personal Harness の説明にかなり向いています。Business Harnessより直感的です。企業なら業務ルール・architecture・acceptance criteriaをAgentへ渡す。一人の高校生なら、学習目標・弱点・説明方法・評価方法・ペース・介入タイミングをAIへ渡す。\n構造は同じです。\nなので私は、\nAI家庭教師を継続的に自分仕様へ育てる行為は、Personal Harnessの初期形態である。\nくらいなら、かなり素直に言えます。\nそしてこれを広げると面白い。\n高校生は家庭教師、研究者はresearch assistant、プログラマはcoding agent、経営者はchief of staff的AIを持つ。でも本質は「専用AIを持つこと」ではなく、\n自分の判断・習慣・基準・履歴を、AIが働ける環境として外在化すること。\nこれが Personal Harness なんでしょうね。\nここまで来ると、Personal Harnessは「個人版Harness Engineering」より少し大きい概念になりそうです。ソフトウェア開発者だけの話ではなくなる。これはかなり面白い方向です。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/09/04/082354",
+          "publishedOn": "2026-09-03T23:23:54.000Z",
+          "wordCount": 574,
+          "title": "第五版",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032073464598/1788478730",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032073464598/1788478730"
+        },
+        {
           "id": "hatenablog://entry/14945776032072331951",
           "author": null,
           "description": "書きました。今回は後半を厚めに章を入れました。GPTさんに話したら、あなたが書いているのは運用史かインシデントエッセンス集だそうです。たしかに。記事をまとめるのが、楽しくて楽しくてしょうがない。目的が手段に食われた感じになっています。抽象度も爆上げ。誰も読まないよね。\nAgent Harness — Codex Operations Design",
