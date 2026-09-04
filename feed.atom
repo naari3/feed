@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-04T12:03:05.608Z</updated>
+    <updated>2026-09-04T13:02:49.812Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9722,47 +9722,6 @@ https://satoru-takeuchi.hatenablog.com/entry/2023/08/18/201343
 最後になりますが、失敗を肯定すればいいというものではないということは言っておきます。他人を巻き込む失敗、とくに大きな失敗をしてヘラヘラしててはいけません。任意の失敗をするたびに落ち込んでパフォーマンスを落としてしまうようなことなく、次に繋がる改善を考えるのが良いでしょう。よく言われることですが、なるべく早期に小さな失敗をしまくるのが吉です。]]></summary>
         <author>
             <name>覚書</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-06-06]]></title>
-        <id>hatenablog://entry/14945776032039497860</id>
-        <link href="https://commits.hatenablog.com/entry/2026/06/07/100000"/>
-        <updated>2026-06-07T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[matsue.rubyist.net
-松江Ruby会議12に参加していた。松江Ruby会議は初めてだったけれど、また行きたいと思える会だった。
-登壇をしたのでその話を主に書いておく。
-
-本日の登壇資料です！ #matrk12https://t.co/AVLtCJaIZx
-RubyはRubyでも、鉱石のRubyを自作する話をしました。これでRubyの作者を名乗れるぞ！
-— 🎹 (@p_ck_) June 6, 2026
-   
-スライド中に動画がいくつか含まれているので、PDFではなくHTMLで公開した。HTMLへの誘導用にPDFも出力してSpeakerDeckに後で置いておきたい(PDFって動画流せるのかな？)
-me.pocke.me
-Rubyを作る発表として、鉱石のRubyを作る話をした。会場が大変盛り上がってとてもよかった。Rubyって電子レンジで作れるんですよ。
-何度か聞かれたのだけど、これを思いついたきっかけは人工Rubyで何か面白いことができないかなと考えていた時だった。Rubyを人工的に作れることは知っていて、ならば人工的に作られたRubyを買ってきて加工したら面白いのではないかと思ったのが最初。その時からRuby製キーキャップができたら面白いのではと思っていた記憶があるので、「キーボードは実質Ruby」の影響は大きい。
-そこで合成Rubyについて調べていると電子レンジでRubyを作れるらしいということに気が付き、チャレンジしてみたくなった。これに気が付いたのが今年のRubyKaigiに向かう道中にひたちなかの宿に泊まっていた時だったのを覚えている。その場でAmazonで材料などを注文したけれど、家に帰れるまではそこから1週間以上あったので、大変待ち遠しかった。
-自作したRubyとレジンを合わせてキーキャップを作ったという話も登壇中にした。レジンを扱うのが初めてだったのもあって、キーキャップは実は微妙な感じになっていて、裏面のジョイント部分がちょっと欠けていたり、ほかのキーよりサイズが少し大きくなってしまっていたりする(表面に段差ができてしまったのを埋めるためにリトライしたのが多分敗因)。とはいえこのキーキャップは中々テンションが上がるので常用している。ゲーミングキーボードを使っていて、キーの裏が光るのも良い。
-今のところキーキャップしか作っていないのだけれど、せっかくRubyとレジンがあるので、ヘアアクセサリーとか作ってみたいなあと思っている。自作Rubyのヘアアクセを身に着けてRubyのイベントに行くの、どう考えても良い。普段バナナクリップしか使わないものだから、どういうアクセサリーにするのが良いか思いつかず松江Ruby会議には間に合わずだった。
-登壇の反省点としては、時間を余らせまくってしまったところ。練習では5分ギリギリぐらいで、そこからスライドをちょっと足したりしていたのでちょうどいい(==最後数枚で銅鑼が鳴る)ぐらいに収まったかなと思っていたけれど、本番だと早口になりすぎてめっちゃ余った。練習回数が足りなかったかな。
-人のトークの話も少しだけ。今回(というかここ最近のRuby界隈)は音ネタが多くてよいですね。自作MIDIコントローラー楽しそう。フルートの演奏も良かった。よさそうな本をおすすめされていたので買いたい(積読が増える...)。
-PicoRuby/dRuby話も良かった。Raspberry Pi PicoとWebフロントエンドが、透過的に通信できるのめっちゃ熱い。
-遅いというオチがついていたのも良い。遅いのはなんとかできるものなんですかね～という話を少ししていた。
-JokerさんのRuby::Box話もとてもよかった。最後の怒涛のアイディアリストが、Jokerさんが黒魔術を生み出す思考がそのまま流れ出ている感じがしてとてもよかった。
-NotImplementedErrorの話、とても分かる話でよかった。私も誤用であることを知りつつまあいっか...しがち。]]></summary>
-        <author>
-            <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2026.6.7]]></title>
-        <id>https://gamegaz.com/?p=45587</id>
-        <link href="https://gamegaz.com/2026060745587/"/>
-        <updated>2026-06-07T00:17:17.000Z</updated>
-        <summary type="html"><![CDATA[Y2JBで12.20と13.20をサポート,PS5 exFAT Builder v3.6.1,send_pkg-payload v1.4.3,ps5upload v2.28.2,elf-arsenal v1.6.7,MkPFS 0.0.6,PS5 Image Converter v1.0.0,ps5-kexp v0.6-c3d0fd9,ps5-wallpaper-modd v1.0,PS4PKGInstaller v4.01 Beta 1,PS5 Custom Tool Manager V1,VitaVault-Backup-utility 1.04,Adrenaline v1780718410,Vita VirtualKeyboard V00.01,vitavault-vpk 1.01,CS2SX v0.4.9.131_STABLE,Breeze beta108.2a,NX Venom 3.4.1,ioQuake3-Wii 0.9.9,3ds_junkdraw 0.5.1,GB Interceptor v1.2.2,decky-loader v3.2.5-pre1,NetherSX2-Turnip v0.7,PCSX2 v2.7.394,ARMSX2-iOS 1.3.2,shadPS4 Pre-release-shadPS4-2026-06-06-a3e9390,shadPS4-QtLauncher 2026-06-06-b4a3a80,xenia 49c700b_canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2026.6.7 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
