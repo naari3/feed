@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-05T22:02:48.638Z</updated>
+    <updated>2026-09-05T23:03:08.829Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9582,22 +9582,6 @@ AIに文章を書かせるとき、最初にやりがちなのは「自分の文
 どれも一つひとつは小さい。文章全体が破綻するほどではない。むしろ、普通に読む分には気づかれないかもしれない。ただ、その小さいズレが積み重なると、自分が書いたことにしてよい文章から離れていく。自分にとってブログは、読者に何かを教える場というより、考えてい…]]></summary>
         <author>
             <name>Robot Checkerboard</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[いまさらMp2k学習3]]></title>
-        <id>hatenablog://entry/14945776032040220145</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/06/08/191239"/>
-        <updated>2026-06-08T10:12:39.000Z</updated>
-        <summary type="html"><![CDATA[今日はMp2kのSongTableの検出方法のコードを追ってみます。思考垂れ流し注意。
-Gemini先生曰く「テーブルといっても、プログラムで介入される音データもあるよ、そういうのはアドレスがわからない。99%はSongTableから引っ張ってくるのでまず最初に見つけるとしたらそこだねー。使いまわしがいっぱいあるのでハッシュ一時保存しまくりだよ。サンプルは同じでもADSRが違ったりするので、サンプルだけのハッシュを持つのは意味ないよ」など手厳しい。包括したハッシュじゃないとだめかもしれません。
-テーブルの大きさが不明なので偵察でポインタ先を除いて、その構造体の一部変数をピックアップして範囲内か確認したり、テーブルの１つ前のオフセットを保持して、次のオフセットと比較し、ポインタアドレスが大きくなっているか確認するとか。うげー大変です。
-https://github.com/ipatix/m4a2s/blob/master/m4a2s/Index.cs#L67
-https://github.com/loveemu/saptapper/blob/master/src/saptapper/mp2k_driver.cpp#L162
-全部ではないですけどデーターベースを見つけました。
-https://github.com/Thysbelon/gba-mus-ripper/blob/master/data/MP2K.yaml#L310]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

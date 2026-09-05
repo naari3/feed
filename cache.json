@@ -764,21 +764,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032041150703/1781153083"
-        },
-        {
-          "id": "hatenablog://entry/14945776032040220145",
-          "author": null,
-          "description": "今日はMp2kのSongTableの検出方法のコードを追ってみます。思考垂れ流し注意。\nGemini先生曰く「テーブルといっても、プログラムで介入される音データもあるよ、そういうのはアドレスがわからない。99%はSongTableから引っ張ってくるのでまず最初に見つけるとしたらそこだねー。使いまわしがいっぱいあるのでハッシュ一時保存しまくりだよ。サンプルは同じでもADSRが違ったりするので、サンプルだけのハッシュを持つのは意味ないよ」など手厳しい。包括したハッシュじゃないとだめかもしれません。\nテーブルの大きさが不明なので偵察でポインタ先を除いて、その構造体の一部変数をピックアップして範囲内か確認したり、テーブルの１つ前のオフセットを保持して、次のオフセットと比較し、ポインタアドレスが大きくなっているか確認するとか。うげー大変です。\nhttps://github.com/ipatix/m4a2s/blob/master/m4a2s/Index.cs#L67\nhttps://github.com/loveemu/saptapper/blob/master/src/saptapper/mp2k_driver.cpp#L162\n全部ではないですけどデーターベースを見つけました。\nhttps://github.com/Thysbelon/gba-mus-ripper/blob/master/data/MP2K.yaml#L310",
-          "link": "https://akkera102.hatenablog.com/entry/2026/06/08/191239",
-          "publishedOn": "2026-06-08T10:12:39.000Z",
-          "wordCount": 503,
-          "title": "いまさらMp2k学習3",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032040220145/1780918133",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032040220145/1780918133"
         }
       ]
     },
