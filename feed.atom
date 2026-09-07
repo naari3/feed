@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-07T14:02:31.197Z</updated>
+    <updated>2026-09-07T15:02:23.493Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[HTMX 4.0正式リリース。内部実装がXHRからfetchに移行しStreaming HTMLが可能に、属性はデフォルトで子要素に継承されないように変更など]]></title>
+        <id>https://www.publickey1.jp/blog/26/htmx_40xhrfetchstreaming_html.html</id>
+        <link href="https://www.publickey1.jp/blog/26/htmx_40xhrfetchstreaming_html.html"/>
+        <updated>2026-09-07T15:39:27.000Z</updated>
+        <summary type="html"><![CDATA[HTMLに属性を追加するだけで、Webページにサーバと連動した動的なアプリケーションの機能を追加できるJavaScriptライブラリ「HTMX」の最新バージョンとなる「HTMX 4.0」正式版のリリースが発表されました。 very happ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ブルーアーカイブGBA]]></title>
         <id>hatenablog://entry/14945776032074886818</id>
