@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-09T03:02:49.466Z</updated>
+    <updated>2026-09-09T04:03:32.546Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[コードリーディング上手くなりたい]]></title>
+        <id>hatenablog://entry/14945776032075549771</id>
+        <link href="https://blog.3qe.us/entry/2026/09/09/123524"/>
+        <updated>2026-09-09T03:35:24.000Z</updated>
+        <summary type="html"><![CDATA[id:Windymelt はサービス開発でAI Agentを利用していて、チーム全体でも活用されている。しかしながらコードの生成は任せることができても、コードに対する責任が変わることはなくて、我々人間が責任を負い続ける。すると、大量のコードが生成される一方で、それをちゃんとレビューしないといけなくなってしまった。
+はてなパークスでは毎日2回くらいリリースしていて、Release用のPRをマージするだけでリリースフローが走るのでデプロイ自体は簡単だけれど、500〜2000行の変更がその都度行われている。無責任にリリースできないので、いちおう一通り読んでみて、問題なさそうだからマージする、といったことをやっている。
+こうした暮らしをしているうちに、僕のコードリーディング能力がボトルネックになっているのではないかと思いはじめた。サービスリリース前は粗雑にマージしても誰も困らないのでどんどんマージしてリリースしていたけど、ちゃんと読まなければならないとなると純粋なリーディング能力が求められてくる。
+テスト通ってるからいいだろ、と思うけど、AIは自分に都合が良いテストを書きがちな印象があって、あんまりアテになると感じたことがない。底意地の悪いテストを書いてほしいけれど、あまり得意ではなさそう。検算くらいの気持ちで見ている。
+今のところ、以下のようなテクを使ってやっているけれど、もっと上手いテクもあるはず。みんなのテクを教えてほしい。
+いったんシグネチャだけ見て、どういうメソッド/クラス/etc.があるのかだけ把握する
+CSSはまあよかろうということでわりと無視する
+importだけ見て、依存関係を把握する
+Copilotに尋ねる
+ここってそもそもどういう前提で動くんだっけ、となり、手元のClaude Codeで調査する]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ループエンジニアリング整理]]></title>
         <id>hatenablog://entry/14945776032075534149</id>
