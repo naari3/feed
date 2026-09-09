@@ -6281,6 +6281,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032075605373",
+          "author": null,
+          "description": "Scala 3.9.0がリリースされた。Scala 3.9はScala 3.3に継ぐLTSラインであり、3年間のサポートとバイナリ互換性が保証されている。\nScala 3.9で導入された機能のうち、特筆すべきものがintoである。この記事ではintoの概要と利用方法について解説する。\n\nSIP-71の安定化\ninto 機能とそのモチベーション\nScala 2 における暗黙の変換\nScala 3 における暗黙の変換\n前提: implicitの解体\nConversionによる暗黙の変換の導入\nSIP-71: intoの導入\n型コンストラクタとしてのinto\nintoの使いどころ\n引数として\n引数に渡す関数の返り値として\nvarargsとして\n補足: 型の上での扱い\nmodifierとしてのinto\nまとめると\n参考文献\nこの記事はちびちび人間が書いた。応援してください。\nSIP-71の安定化\nintoの正式な名称はSIP-71である。SIP-71はScala 3.8でpreview機能として導入され、そしてScala 3.9で安定版として全員がデフォルトで利用できるようになった、という経緯がある。\ndocs.scala-lang.org\ninto 機能とそのモチベーション\ninto は、暗黙の変換 (implicit conversion)のための機能の一部である。旧来のScala 2におけるimplicitを利用した暗黙の変換をリニューアルした成果で、前述の通りScala 3.8でプレビュー機能*1として導入されていたものである。\nこれは、Scala 2における暗黙の変換で生じていた課題を踏まえて登場した機能であるため、いちおうScala 2における事情も説明する。\nScala 2 における暗黙の変換\nそもそも、Scala 2にはimplicitを使った暗黙の変換があった。こ…",
+          "link": "https://blog.3qe.us/entry/sip-71",
+          "publishedOn": "2026-09-09T08:33:13.000Z",
+          "wordCount": 1895,
+          "title": "Scala 3.9.0から利用できる into (SIP-71) とは何か、いつ使うのか",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/57bc1775f988f72b9a01faae18989dc6b7a0d34e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260909%2F20260909164543.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/57bc1775f988f72b9a01faae18989dc6b7a0d34e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FW%2FWindymelt%2F20260909%2F20260909164543.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032075549771",
           "author": null,
           "description": "id:Windymelt はサービス開発でAI Agentを利用していて、チーム全体でも活用されている。しかしながらコードの生成は任せることができても、コードに対する責任が変わることはなくて、我々人間が責任を負い続ける。すると、大量のコードが生成される一方で、それをちゃんとレビューしないといけなくなってしまった。\nはてなパークスでは毎日2回くらいリリースしていて、Release用のPRをマージするだけでリリースフローが走るのでデプロイ自体は簡単だけれど、500〜2000行の変更がその都度行われている。無責任にリリースできないので、いちおう一通り読んでみて、問題なさそうだからマージする、といったことをやっている。\nこうした暮らしをしているうちに、僕のコードリーディング能力がボトルネックになっているのではないかと思いはじめた。サービスリリース前は粗雑にマージしても誰も困らないのでどんどんマージしてリリースしていたけど、ちゃんと読まなければならないとなると純粋なリーディング能力が求められてくる。\nテスト通ってるからいいだろ、と思うけど、AIは自分に都合が良いテストを書きがちな印象があって、あんまりアテになると感じたことがない。底意地の悪いテストを書いてほしいけれど、あまり得意ではなさそう。検算くらいの気持ちで見ている。\n今のところ、以下のようなテクを使ってやっているけれど、もっと上手いテクもあるはず。みんなのテクを教えてほしい。\nいったんシグネチャだけ見て、どういうメソッド/クラス/etc.があるのかだけ把握する\nCSSはまあよかろうということでわりと無視する\nimportだけ見て、依存関係を把握する\nCopilotに尋ねる\nここってそもそもどういう前提で動くんだっけ、となり、手元のClaude Codeで調査する",

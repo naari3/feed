@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-09T08:02:56.785Z</updated>
+    <updated>2026-09-09T09:03:01.033Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Scala 3.9.0から利用できる into (SIP-71) とは何か、いつ使うのか]]></title>
+        <id>hatenablog://entry/14945776032075605373</id>
+        <link href="https://blog.3qe.us/entry/sip-71"/>
+        <updated>2026-09-09T08:33:13.000Z</updated>
+        <summary type="html"><![CDATA[Scala 3.9.0がリリースされた。Scala 3.9はScala 3.3に継ぐLTSラインであり、3年間のサポートとバイナリ互換性が保証されている。
+Scala 3.9で導入された機能のうち、特筆すべきものがintoである。この記事ではintoの概要と利用方法について解説する。
+
+SIP-71の安定化
+into 機能とそのモチベーション
+Scala 2 における暗黙の変換
+Scala 3 における暗黙の変換
+前提: implicitの解体
+Conversionによる暗黙の変換の導入
+SIP-71: intoの導入
+型コンストラクタとしてのinto
+intoの使いどころ
+引数として
+引数に渡す関数の返り値として
+varargsとして
+補足: 型の上での扱い
+modifierとしてのinto
+まとめると
+参考文献
+この記事はちびちび人間が書いた。応援してください。
+SIP-71の安定化
+intoの正式な名称はSIP-71である。SIP-71はScala 3.8でpreview機能として導入され、そしてScala 3.9で安定版として全員がデフォルトで利用できるようになった、という経緯がある。
+docs.scala-lang.org
+into 機能とそのモチベーション
+into は、暗黙の変換 (implicit conversion)のための機能の一部である。旧来のScala 2におけるimplicitを利用した暗黙の変換をリニューアルした成果で、前述の通りScala 3.8でプレビュー機能*1として導入されていたものである。
+これは、Scala 2における暗黙の変換で生じていた課題を踏まえて登場した機能であるため、いちおうScala 2における事情も説明する。
+Scala 2 における暗黙の変換
+そもそも、Scala 2にはimplicitを使った暗黙の変換があった。こ…]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[コードリーディング上手くなりたい]]></title>
         <id>hatenablog://entry/14945776032075549771</id>
