@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-11T16:02:26.162Z</updated>
+    <updated>2026-09-11T17:03:09.294Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DCS Worldがロード画面でフリーズするときはnews.luaを削除すると良い]]></title>
+        <id>hatenablog://entry/14945776032076573614</id>
+        <link href="https://blog.3qe.us/entry/2026/09/12/010632"/>
+        <updated>2026-09-11T16:06:32.000Z</updated>
+        <summary type="html"><![CDATA[掲題の通り。
+2025年ごろから、DCS Worldを起動しても、ミッションエディタを開くときのロード画面で応答しなくなり、まったくゲームができない状態が続いていた。どうやらこれはニュース関連の読み込みでI/Oか何かがスタックしていたようで、関連ファイルを削除することで正常にミッションエディタを開けるようになった。このため後学のためにメモしておく。
+前提
+DCS World Steam Edition 2026/9/2バージョン（これ以前でも発生していた）
+症状
+ミッションエディタなどのロード画面で、まったくプログレスバーが進捗せず、一切の反応がない。メモリの使用率も増えず、CPU使用率は一定をキープした状態となる。GPUの利用はない。
+対応
+news.luaというファイルがあるので、これを削除する。これはDCSを起動して最初の画面に開発会社からのニュースを表示するために読み込まれるURLなどを収めたファイルだが、この（中に書かれたURLの？）読み込みがうまくいっていないらしい。
+news.luaは通常C:\Users\$ユーザー名\Saved Games\DCS\MissionEditor\news.luaに存在するが、インストール構成によっては異なるかもしれない。くれぐれも、似たファイルを消さないこと。ファイル名が完全に同一であることを確認してから削除すること。
+結果
+正常にミッションエディタが動作し、ゲームが遊べるようになる。
+参考資料
+x-hannibal.hatenablog.com
+x-hannibal.hatenablog.com
+（私見: 第三者が作成したexeファイルを無闇に実行するべきではない。）
+steamcommunity.com]]></summary>
+        <author>
+            <name>Lambdaカクテル</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[日記 260911]]></title>
         <id>https://note.com/nanana555/n/nd27c8ddf4092</id>

@@ -6296,6 +6296,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032076573614",
+          "author": null,
+          "description": "掲題の通り。\n2025年ごろから、DCS Worldを起動しても、ミッションエディタを開くときのロード画面で応答しなくなり、まったくゲームができない状態が続いていた。どうやらこれはニュース関連の読み込みでI/Oか何かがスタックしていたようで、関連ファイルを削除することで正常にミッションエディタを開けるようになった。このため後学のためにメモしておく。\n前提\nDCS World Steam Edition 2026/9/2バージョン（これ以前でも発生していた）\n症状\nミッションエディタなどのロード画面で、まったくプログレスバーが進捗せず、一切の反応がない。メモリの使用率も増えず、CPU使用率は一定をキープした状態となる。GPUの利用はない。\n対応\nnews.luaというファイルがあるので、これを削除する。これはDCSを起動して最初の画面に開発会社からのニュースを表示するために読み込まれるURLなどを収めたファイルだが、この（中に書かれたURLの？）読み込みがうまくいっていないらしい。\nnews.luaは通常C:\\Users\\$ユーザー名\\Saved Games\\DCS\\MissionEditor\\news.luaに存在するが、インストール構成によっては異なるかもしれない。くれぐれも、似たファイルを消さないこと。ファイル名が完全に同一であることを確認してから削除すること。\n結果\n正常にミッションエディタが動作し、ゲームが遊べるようになる。\n参考資料\nx-hannibal.hatenablog.com\nx-hannibal.hatenablog.com\n（私見: 第三者が作成したexeファイルを無闇に実行するべきではない。）\nsteamcommunity.com",
+          "link": "https://blog.3qe.us/entry/2026/09/12/010632",
+          "publishedOn": "2026-09-11T16:06:32.000Z",
+          "wordCount": 1457,
+          "title": "DCS Worldがロード画面でフリーズするときはnews.luaを削除すると良い",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032076573614/1789142792",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032076573614/1789142792"
+        },
+        {
           "id": "hatenablog://entry/14945776032075605373",
           "author": null,
           "description": "Scala 3.9.0がリリースされた。Scala 3.9はScala 3.3に継ぐLTSラインであり、3年間のサポートとバイナリ互換性が保証されている。\nScala 3.9で導入された機能のうち、特筆すべきものがintoである。この記事ではintoの概要と利用方法について解説する。\n\nSIP-71の安定化\ninto 機能とそのモチベーション\nScala 2 における暗黙の変換\nScala 3 における暗黙の変換\n前提: implicitの解体\nConversionによる暗黙の変換の導入\nSIP-71: intoの導入\n型コンストラクタとしてのinto\nintoの使いどころ\n引数として\n引数に渡す関数の返り値として\nvarargsとして\n補足: 型の上での扱い\nmodifierとしてのinto\nまとめると\n参考文献\nこの記事はちびちび人間が書いた。応援してください。\nSIP-71の安定化\nintoの正式な名称はSIP-71である。SIP-71はScala 3.8でpreview機能として導入され、そしてScala 3.9で安定版として全員がデフォルトで利用できるようになった、という経緯がある。\ndocs.scala-lang.org\ninto 機能とそのモチベーション\ninto は、暗黙の変換 (implicit conversion)のための機能の一部である。旧来のScala 2におけるimplicitを利用した暗黙の変換をリニューアルした成果で、前述の通りScala 3.8でプレビュー機能*1として導入されていたものである。\nこれは、Scala 2における暗黙の変換で生じていた課題を踏まえて登場した機能であるため、いちおうScala 2における事情も説明する。\nScala 2 における暗黙の変換\nそもそも、Scala 2にはimplicitを使った暗黙の変換があった。こ…",
