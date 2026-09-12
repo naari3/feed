@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-12T00:05:29.311Z</updated>
+    <updated>2026-09-12T01:12:13.615Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-09-11]]></title>
+        <id>hatenablog://entry/14945776032076577066</id>
+        <link href="https://commits.hatenablog.com/entry/2026/09/12/100000"/>
+        <updated>2026-09-12T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ネスゴシの改善をしている。
+nesugoshi.app
+つながっていない入善-西入善
+入善と西入善がつながっていない、というおもしろバグの報告が届いたので直していた。
+どうやら元データのバグっぽい。実は何か深遠な理由があるのかと調べていたけれど、多分そんなことはなさそう。
+元データのバグはいくつか引いていて、そろそろ見つけやすいものは見つけきった気がするので報告しようかなと思っている。
+中之島線の存在感がない
+また別の問題として、駅のグルーピングが分かりづらい問題を直している。
+特にひどいのが中之島線。なにわ橋/北浜と大江橋/淀屋橋がそれぞれ乗換駅としてグルーピングされてしまっていたせいで、だいぶひどい感じの路線図になっていた。
+これはこの2箇所のグルーピングを外すことで解決した。グルーピング判定をざっと眺めたところ、京橋/宝町と伏見桃山/桃山御陵前のグルーピングも微妙な気がしたので外した。まだ微妙なところはアリそうな気がする。
+中之島線に関してはこれで良くなったのだけど、そもそもグルーピングによって頭文字ヒントが微妙になっている駅がそこそこあり、対応を考えている。例えば岐阜羽島/新羽島はグルーピングされていて、頭文字ヒントがSになっている。だいぶ微妙な感じ。これの改善方法をしばらく悩んでいたのだけど、まあまあ納得できる方針を思いついたので明日あたり修正を入れたい。
+後はイージー難易度をもっとイージーにしていきたい。とても難しいので…]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DCS Worldがロード画面でフリーズするときはnews.luaを削除すると良い]]></title>
         <id>hatenablog://entry/14945776032076573614</id>

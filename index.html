@@ -74,6 +74,42 @@
   </section>
   <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2026-09-12">2026-09-12</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://commits.hatenablog.com/" target="_blank"
+              rel="noopener">diary</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">2026-09-11</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://commits.hatenablog.com/entry/2026/09/12/100000" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ネスゴシの改善をしている。
+nesugoshi.app
+つながっていない入善-西入善
+入善と西入善がつながっていない、というおもしろバグの報告が届いたので直していた。
+どうやら元データのバグっぽい。実は何か深遠な理由があるのかと調べていたけれど、多分そんなことはなさそう。
+元データのバグはいくつか引いていて、そろそろ見つけやすいものは見つけきった気がするので報告しようかなと思っている。
+中之島線の存在感がない
+また別の問題として、駅のグルーピングが分かりづらい問題を直している。
+特にひどいのが中之島線。なにわ橋/北浜と大江橋/淀屋橋がそれぞれ乗換駅としてグルーピングされてしまっていたせいで、だいぶひどい感じの路線図になっていた。
+これはこの2箇所のグルーピングを外すことで解決した。グルーピング判定をざっと眺めたところ、京橋/宝町と伏見桃山/桃山御陵前のグルーピングも微妙な気がしたので外した。まだ微妙なところはアリそうな気がする。
+中之島線に関してはこれで良くなったのだけど、そもそもグルーピングによって頭文字ヒントが微妙になっている駅がそこそこあり、対応を考えている。例えば岐阜羽島/新羽島はグルーピングされていて、頭文字ヒントがSになっている。だいぶ微妙な感じ。これの改善方法をしばらく悩んでいたのだけど、まあまあ納得できる方針を思いついたので明日あたり修正を入れたい。
+後はイージー難易度をもっとイージーにしていきたい。とても難しいので…</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/c7ec1b9480243cb6bc7b8d6df2684cef7945d25f/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20260912%2F20260912010903.png" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2026-09-11">2026-09-11</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -16932,7 +16968,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-09-12T00:05:29.271Z">2026-09-12T00:05:29.271Z</time>
+    <time id="build-timestamp" datetime="2026-09-12T01:12:13.575Z">2026-09-12T01:12:13.575Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
