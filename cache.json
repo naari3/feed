@@ -1262,6 +1262,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032076938681",
+          "author": null,
+          "description": "mixi.social\n冬瓜\n冬瓜とスペアリブを煮込んでスープにした。\nかなり大きい鍋ギリギリにスープが出来たが、それでもまだ冬瓜が半分以上余っている。使っていきたい。\n冬瓜が大きすぎて、包丁で切っている時にハクミコを感じた。",
+          "link": "https://commits.hatenablog.com/entry/2026/09/13/100000",
+          "publishedOn": "2026-09-13T01:00:00.000Z",
+          "wordCount": 525,
+          "title": "2026-09-12",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/6fb0048ecb5a7e3649025619220de3a063a46ee8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20260912%2F20260912170018.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/6fb0048ecb5a7e3649025619220de3a063a46ee8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20260912%2F20260912170018.jpg"
+        },
+        {
           "id": "hatenablog://entry/14945776032076577066",
           "author": null,
           "description": "ネスゴシの改善をしている。\nnesugoshi.app\nつながっていない入善-西入善\n入善と西入善がつながっていない、というおもしろバグの報告が届いたので直していた。\nどうやら元データのバグっぽい。実は何か深遠な理由があるのかと調べていたけれど、多分そんなことはなさそう。\n元データのバグはいくつか引いていて、そろそろ見つけやすいものは見つけきった気がするので報告しようかなと思っている。\n中之島線の存在感がない\nまた別の問題として、駅のグルーピングが分かりづらい問題を直している。\n特にひどいのが中之島線。なにわ橋/北浜と大江橋/淀屋橋がそれぞれ乗換駅としてグルーピングされてしまっていたせいで、だいぶひどい感じの路線図になっていた。\nこれはこの2箇所のグルーピングを外すことで解決した。グルーピング判定をざっと眺めたところ、京橋/宝町と伏見桃山/桃山御陵前のグルーピングも微妙な気がしたので外した。まだ微妙なところはアリそうな気がする。\n中之島線に関してはこれで良くなったのだけど、そもそもグルーピングによって頭文字ヒントが微妙になっている駅がそこそこあり、対応を考えている。例えば岐阜羽島/新羽島はグルーピングされていて、頭文字ヒントがSになっている。だいぶ微妙な感じ。これの改善方法をしばらく悩んでいたのだけど、まあまあ納得できる方針を思いついたので明日あたり修正を入れたい。\n後はイージー難易度をもっとイージーにしていきたい。とても難しいので…",
