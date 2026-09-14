@@ -779,21 +779,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/6d48320b8f8a21a8881510595286a6f4873f7542/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260628%2F20260628182905.png"
-        },
-        {
-          "id": "hatenablog://entry/14945776032043281976",
-          "author": null,
-          "description": "2022年頃の話を今更しています。また出遅れまくりですよ！泣きたい・・・orz。えーと、フレーム毎リアルタイム読み書きやsocket通信ができます。何か面白いことができるかもしれないです。\n・星のカービィ 鏡の大迷宮メモリビュアー\nhttps://waddledx.hatenablog.jp/entry/2023/10/08/014356\n・音楽環境からmidiコマンドをmesenへ（socket通信）\nhttps://codeberg.org/roses/kitty/src/branch/main/scripts/mesen/udpmidi.lua\n・APIマニュアル\nmgba.io\nwww.mesen.ca",
-          "link": "https://akkera102.hatenablog.com/entry/2026/06/17/105934",
-          "publishedOn": "2026-06-17T01:59:34.000Z",
-          "wordCount": 512,
-          "title": "mGBAとmesenのlua API",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032043281976/1781664494",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032043281976/1781664494"
         }
       ]
     },
@@ -8435,6 +8420,16 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/openaianthropicapiagent_routerlinux_foundation.html",
+          "author": null,
+          "description": "MCPやAGENTS.md、Agent2AgentプロトコルなどのAIエージェントに関する関連技術の標準化推進や開発などを行うLinux Foundation傘下のAgentic AI Foundation（AAIF）は、オープンソースとし...",
+          "link": "https://www.publickey1.jp/blog/26/openaianthropicapiagent_routerlinux_foundation.html",
+          "publishedOn": "2026-09-14T15:51:16.000Z",
+          "wordCount": null,
+          "title": "OpenAIやAnthropicなどベンダごとのAPIの違いを吸収し統合する「Agent Router」、Linux Foundation傘下で業界標準へ",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/rustcctstier_1.html",
           "author": null,

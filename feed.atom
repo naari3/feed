@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-14T13:02:45.971Z</updated>
+    <updated>2026-09-14T14:02:33.930Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[OpenAIやAnthropicなどベンダごとのAPIの違いを吸収し統合する「Agent Router」、Linux Foundation傘下で業界標準へ]]></title>
+        <id>https://www.publickey1.jp/blog/26/openaianthropicapiagent_routerlinux_foundation.html</id>
+        <link href="https://www.publickey1.jp/blog/26/openaianthropicapiagent_routerlinux_foundation.html"/>
+        <updated>2026-09-14T15:51:16.000Z</updated>
+        <summary type="html"><![CDATA[MCPやAGENTS.md、Agent2AgentプロトコルなどのAIエージェントに関する関連技術の標準化推進や開発などを行うLinux Foundation傘下のAgentic AI Foundation（AAIF）は、オープンソースとし...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[今週のはてなブログランキング〔2026年9月第2週〕]]></title>
         <id>hatenablog://entry/14945776032077529718</id>
@@ -9793,23 +9803,6 @@ GameGaz Daily 2026.6.18 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>1時</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[mGBAとmesenのlua API]]></title>
-        <id>hatenablog://entry/14945776032043281976</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/06/17/105934"/>
-        <updated>2026-06-17T01:59:34.000Z</updated>
-        <summary type="html"><![CDATA[2022年頃の話を今更しています。また出遅れまくりですよ！泣きたい・・・orz。えーと、フレーム毎リアルタイム読み書きやsocket通信ができます。何か面白いことができるかもしれないです。
-・星のカービィ 鏡の大迷宮メモリビュアー
-https://waddledx.hatenablog.jp/entry/2023/10/08/014356
-・音楽環境からmidiコマンドをmesenへ（socket通信）
-https://codeberg.org/roses/kitty/src/branch/main/scripts/mesen/udpmidi.lua
-・APIマニュアル
-mgba.io
-www.mesen.ca]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
