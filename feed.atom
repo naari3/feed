@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-15T11:03:20.706Z</updated>
+    <updated>2026-09-15T12:03:35.398Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Agent Observation更新]]></title>
+        <id>hatenablog://entry/14945776032078154536</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/09/15/202335"/>
+        <updated>2026-09-15T11:23:35.000Z</updated>
+        <summary type="html"><![CDATA[更新しました。今回の一押しポイントはコレです。AIエージェントフレームワークを平たく言っています。
+33. 環境を整えるには、推論taxがかかる
+Agent が迷わず働けるように情報を配置すると、その情報を読む、解釈する、引き継ぐための推論コストが生まれる。このコストは、情報をどこに置き、どう運ぶかで形が変わる。
+恒常環境
+Task固有層
+Loop回覧経路
+恒常環境へ置けば、同じ判断を繰り返さずに済む。ただし、すべての Task がその情報を読むことになり、過去の事情が環境へ残り続ける。Task 固有層へ置けば、その仕事に必要な Goal、制約、現在状態だけを渡せる。不要になれば Task と一緒に捨てられるが、Task ごとに何を渡すかを選ぶ必要がある。Loop回覧経路を作れば、Task固有の状態、知識、判断理由、差し戻し条件を、cycle や担当をまたいで運べる。一方、受け渡すたびに読み直しと再解釈が発生する。
+情報をどこに置き、どう運ぶかは、どの推論taxを払い、どの推論を省きたいかで選ぶ。
+akkera102.github.io]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[はてなブログのiOSアプリをリニューアルしました／対応OS変更のお知らせ]]></title>
         <id>hatenablog://entry/14945776032076289502</id>
