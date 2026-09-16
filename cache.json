@@ -1277,6 +1277,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032078237311",
+          "author": null,
+          "description": "elin.pocke.me\nElinキャラクタービューワーのSEO対策をここ数日やっている。\n元々SEOをそんなに頑張るつもりはなかったのだけど、調べてみるとGoogle八分になっていた。Googleに一切ページがインデックスされていない。bingとかからの流入はある。\n流石にGoogleから一切放置されているのは厳しいので、いくつか対策をしていた。\ngithub.com\ngithub.com\ngithub.com\n完全にクローラー向けの変更で、トップページの文量が足りないとClaudeに言われたので説明を足していた\ngithub.com\nこれもクローラー向けの変更。キャラクターの個別ページへのリンクがVirtualizedされたテーブルからしかなくて、クローラー的には孤立してしまっていた。\nなので全ページへのリンクを貼るだけのページを作った。Claudeはこれに意味があると言うけれど、ほんとに意味があるのかなあ。\nあとはGoogle Search Consoleに登録してガチャガチャやっていた。インデックス登録には数日かかることもあるみたいなので、気長に待ちたい(と言いつつ数時間おきにSearch Consoleを見てしまう)。",
+          "link": "https://commits.hatenablog.com/entry/2026/09/16/100000",
+          "publishedOn": "2026-09-16T01:00:00.000Z",
+          "wordCount": null,
+          "title": "2026-09-15",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032078237311/1789520401",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032078237311/1789520401"
+        },
+        {
           "id": "hatenablog://entry/14945776032077396404",
           "author": null,
           "description": "鉢に植えられたワケギの球根\nワケギを植えた。直売所で食用として売られていたワケギが中々元気そうだったので、余っていた鉢に植えた。育ってくれるといいな。\n鉢は元々蝋梅を買った時に蝋梅がうわっていた物。しばらく蝋梅についていた苔を植えて育てていたのだけど、いつの間にか苔が枯れていたので空いていた。\n蝋梅の花芽\n蝋梅の葉の付け根に花芽が出来ていた。結構どの葉にも出来ている。ちゃんと花が咲くといいな。冬が楽しみ。",
@@ -7156,6 +7171,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=46107",
+          "author": "mamosuke",
+          "description": "PlayStation PULSEおよびPULSE Edgeワイヤレスヘッドセット,BadWDSD qcfw-20260915,PKG Viewer v1.7.4,PS5-Trophy-Unlocker-beta2,PS5-Dump-Image-Converter v1.9.24,PS5-Super-PLDMGR-Auto-Updater PS5 AIO Packages (2026.09.15-2037),ps5upload v5.28.0,Pegasus DL v1.9.0,Lazy_AMPR 0.0.1,decky-loader v3.2.9,DualSenseClient v1.0.0-12.39ce5b9,RPCN 1.11.0,OmniBook v.1.9.5,ironfoil v0.4.7,NTON v3.0.1,NX Plaza​ 0.9.0,NxNandManager 23.0.0,Breeze beta120.00,SwitchU 1.2.0b,WiiUDownloader v3.2,PCSX2 v2.9.53,PSX2 1.3.0,ARMSX2 nightly 220260915 (736f53fa1c),ARMSX3 0.9.9,EmuCoreX v0.3.9,Emutastic v1.8.8,Emutastic for Linux 0.9.7,KytyPS5 2026-09-15-e6156be,PS5PCEM v0.3.1-beta.1,ReXGlue SDK Nightly 0.10.0.8-dev.g1406e1b,xenia f21ebd4_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.9.16 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026091646107/",
+          "publishedOn": "2026-09-16T01:05:50.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.9.16",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=46102",
           "author": "mamosuke",
