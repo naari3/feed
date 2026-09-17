@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-17T17:02:59.442Z</updated>
+    <updated>2026-09-17T18:03:47.304Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[なぜ世界中のハッカーが変なデバイスで『DOOM』を動かしているのか～デジカメから妊娠検査キット、ハエの中枢神経系まで]]></title>
+        <id>hatenablog://entry/14945776032078970383</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/09/18/020558"/>
+        <updated>2026-09-17T17:05:58.000Z</updated>
+        <summary type="html"><![CDATA[先日、Google Researchらがハエの中枢神経系を網羅したデータセットを公開して話題になりました。するとすぐさま現れたのが、それを使ってハエ（のシミュレーション）にDOOMをプレイさせる人です。
+
+I'm training a fly brain to play Doom using the full MaleCNS v1.0 fruit fly connectome.
+Each Doom frame stimulates sensory neurons. Neural activity is mapped to game controls. Damage triggers a stimulus to two PPL101 dopamine cells as reinforcement.
+Will the fly learn to… https://t.co/ObCJ03gxy3 pic.twitter.com/H2YDBtyuR8
+— Alex Wormuth (@wormuth) 2026年9月6日
+   
+DOOMというのは1993年発売のゲームで、FPSというジャンルを世に広めたタイトルとも言われています。が、同時に電子工作やガジェット界隈では「なんかハードウェアをハックしたときに最初に動かすソフトウェア」扱いされており、「（任意のハードウェア名）でDOOMを動かす」がド定番ネタになっています。
+セルフレジ
+
+※YouTube貼りすぎて記事ごと表示されないことがあるみたいなので、クリック時読み込みにしました。サムネイルを押したあと、再度再生をクリックしてください。
+ATM
+
+
+電子レンジ
+
+
+関数電卓
+
+
+このほかにも妊娠検査キットとかデジカメとかスマートウォッチとかマジで無数にあって挙げ始めるときりがないのですが、ここではそれを網羅はしません。
+むしろ気に…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PlanetScale、PostgreSQLのシャーディングを自動化して1億1800万QPSを達成。新DBサービス「Neki」をプレビュー公開]]></title>
         <id>https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html</id>
