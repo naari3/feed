@@ -2,10 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-17T14:02:37.213Z</updated>
+    <updated>2026-09-17T15:02:41.053Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[PlanetScale、PostgreSQLのシャーディングを自動化して1億1800万QPSを達成。新DBサービス「Neki」をプレビュー公開]]></title>
+        <id>https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html</id>
+        <link href="https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html"/>
+        <updated>2026-09-17T15:59:39.000Z</updated>
+        <summary type="html"><![CDATA[データベースサービスを提供しているPlanetScaleは、PostgreSQLのシャーディングを自動化してスケーラブルなデータベースサービスを提供する「Neki」をプレビュー公開しました。 118,538,803 queries per ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[#21 Jev]]></title>
+        <id>6aabfce72619750001c688f1</id>
+        <link href="https://blog.lai.so/2026-09-17/"/>
+        <updated>2026-09-17T14:48:11.000Z</updated>
+        <summary type="html"><![CDATA[TypeSafe AIが新たなモデル「Jev」を公開しました。
+
+Introduction - TypeSafe AI
+
+Jev is TypeSafe’s flagship model and the first System One model. Send state and typed questions; get structured answers your code can use directly.
+
+
+こ]]></summary>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-09-16]]></title>
         <id>hatenablog://entry/14945776032078574740</id>
