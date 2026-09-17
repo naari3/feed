@@ -1277,6 +1277,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032078574740",
+          "author": null,
+          "description": "nesugoshi.app\nネスゴシに今日も手を入れていた。\n主にゲームのUI周りの改善を進めていた。\n東西南北が固定されない難易度で、クリア後には方位磁石を出すように\nクリア後の駅名表示や、ヒントの頭文字を読みやすく\n\n\n文字色のコントラストを上げたり、サイズを上げたり、路線と文字が重なりづらいようにしていた\nクリア後の駅名表示がカメラを引いても常に表示されるように\n\n\n適当なアルゴリズムで重なった駅を排除しているけれど、案外それっぽい表示になっていい感じ\n初期表示駅にカメラを戻せるように(迷子になるので)\nクリア後の駅名表示でふりがなを見れるように\n\n\n駅名が読めないと言っている人を見ることがあったのと、私も読めないので……\n回答時に寝過ごした駅からの距離を表示するように\nあとは細かいバグ修正とか。\n開発元が小さいゲームだと特にchangelogを細かく公開しているところが多いように思えるけれど、公開したりした方がよいのかなあ。管理はClaudeに任せるとしても、どの粒度で乗せるかとかを考えるのが面倒でやっていない。やったほうがいいかなあ。\nついに重い腰を上げてマイナンバーカードを取得するぞと思い、マイナンバーカードの交付申請書を市役所でもらってきた。写真を取る次のステップに早く進みたい……。",
+          "link": "https://commits.hatenablog.com/entry/2026/09/17/100000",
+          "publishedOn": "2026-09-17T01:00:00.000Z",
+          "wordCount": null,
+          "title": "2026-09-16",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032078574740/1789606803",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032078574740/1789606803"
+        },
+        {
           "id": "hatenablog://entry/14945776032078237311",
           "author": null,
           "description": "elin.pocke.me\nElinキャラクタービューワーのSEO対策をここ数日やっている。\n元々SEOをそんなに頑張るつもりはなかったのだけど、調べてみるとGoogle八分になっていた。Googleに一切ページがインデックスされていない。bingとかからの流入はある。\n流石にGoogleから一切放置されているのは厳しいので、いくつか対策をしていた。\ngithub.com\ngithub.com\ngithub.com\n完全にクローラー向けの変更で、トップページの文量が足りないとClaudeに言われたので説明を足していた\ngithub.com\nこれもクローラー向けの変更。キャラクターの個別ページへのリンクがVirtualizedされたテーブルからしかなくて、クローラー的には孤立してしまっていた。\nなので全ページへのリンクを貼るだけのページを作った。Claudeはこれに意味があると言うけれど、ほんとに意味があるのかなあ。\nあとはGoogle Search Consoleに登録してガチャガチャやっていた。インデックス登録には数日かかることもあるみたいなので、気長に待ちたい(と言いつつ数時間おきにSearch Consoleを見てしまう)。",
@@ -5280,16 +5295,6 @@
           "wordCount": null,
           "title": "Twitter22",
           "imageUrl": "https://assets.st-note.com/production/uploads/images/287191913/rectangle_large_type_2_84dc24bc00f0e7db0e8f3089b79c6d74.png?width=800"
-        },
-        {
-          "id": "https://note.com/ecolidelvsvc11/n/n86fa0e3211e7",
-          "author": null,
-          "description": "ドパガキング\n\n続きをみる",
-          "link": "https://note.com/ecolidelvsvc11/n/n86fa0e3211e7",
-          "publishedOn": "2026-06-19T12:04:15.000Z",
-          "wordCount": null,
-          "title": "Twitter21",
-          "imageUrl": null
         }
       ]
     },
