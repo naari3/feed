@@ -78,6 +78,39 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
+              rel="noopener">nomolkのブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">ChatGPTの音楽レコメンドタスクを再チューニングする</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2026/09/20/161906" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>このあいだChatGPTに新譜情報を送ってもらうタスク設定について書いて非常に好評でした。
+nomolk.hatenablog.com
+ひとに薦めておいてなんなのですが、この記事を公開した後くらいからだんだんレコメンドのチョイスがイマイチになってきまして、再チューニングしたら急に良くなったのでその方法を紹介したいと思います。
+過学習を見据えた重みづけ
+なんかイマイチになってくる理由はわかっていて、毎日送ってくれたチョイスにフィードバックをすることでそれがプロンプトに反映されていき、過学習に陥ってしまうみたいです。
+タスク設定の手順で最初にお気に入りのCSVを読み込ませたと思うんですけど、あれって長年蓄積された自分の好みのコアなわけじゃないですか。それが短期間の繰り返しのフィードバックでだんだん薄められてしまうということが起こっていました。
+とはいえ最近のチョイスを受けての短期的な興味の移り変わりもあるわけで、どっちも生かしたいと思うんですよね。なので重みづけを取り入れました。
+音楽の好みを下記の三層で扱うようにプロンプトを変更して。
+コア嗜好：添付したお気に入りを分析してプロンプトに再反映して。この嗜好は長い期間蓄積したコア嗜好として扱う。不変のものとし、毎日の選曲へのフィードバックを反映させない。
+現在の探索テーマ：「こういうジャンルが好き」などのフィードバックを反映した現在の好み。候補を広げる方向には強く使うが、全体をこれに寄せすぎない。
+単発フィードバック：「今日は刺さらなかった」「この曲は良かった」など。次回の微調整には使うが、恒久的な好みには昇格させない。
+上記のプロンプトに、Exportifyで出力した最新のお気に入りのCSVを添付します。
+そうするとタスクのプロンプトをいい感じに書き換えてくれます。
+その際、たぶん一緒にコア嗜好の分析結果を教えてくれると思いま…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/13208692334729895114/14945776032080258280/1789888870" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -17344,7 +17377,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-09-20T07:02:44.540Z">2026-09-20T07:02:44.540Z</time>
+    <time id="build-timestamp" datetime="2026-09-20T08:02:49.701Z">2026-09-20T08:02:49.701Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

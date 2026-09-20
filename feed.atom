@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-20T07:02:44.582Z</updated>
+    <updated>2026-09-20T08:02:49.729Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ChatGPTの音楽レコメンドタスクを再チューニングする]]></title>
+        <id>hatenablog://entry/14945776032080258280</id>
+        <link href="https://nomolk.hatenablog.com/entry/2026/09/20/161906"/>
+        <updated>2026-09-20T07:19:06.000Z</updated>
+        <summary type="html"><![CDATA[このあいだChatGPTに新譜情報を送ってもらうタスク設定について書いて非常に好評でした。
+nomolk.hatenablog.com
+ひとに薦めておいてなんなのですが、この記事を公開した後くらいからだんだんレコメンドのチョイスがイマイチになってきまして、再チューニングしたら急に良くなったのでその方法を紹介したいと思います。
+過学習を見据えた重みづけ
+なんかイマイチになってくる理由はわかっていて、毎日送ってくれたチョイスにフィードバックをすることでそれがプロンプトに反映されていき、過学習に陥ってしまうみたいです。
+タスク設定の手順で最初にお気に入りのCSVを読み込ませたと思うんですけど、あれって長年蓄積された自分の好みのコアなわけじゃないですか。それが短期間の繰り返しのフィードバックでだんだん薄められてしまうということが起こっていました。
+とはいえ最近のチョイスを受けての短期的な興味の移り変わりもあるわけで、どっちも生かしたいと思うんですよね。なので重みづけを取り入れました。
+音楽の好みを下記の三層で扱うようにプロンプトを変更して。
+コア嗜好：添付したお気に入りを分析してプロンプトに再反映して。この嗜好は長い期間蓄積したコア嗜好として扱う。不変のものとし、毎日の選曲へのフィードバックを反映させない。
+現在の探索テーマ：「こういうジャンルが好き」などのフィードバックを反映した現在の好み。候補を広げる方向には強く使うが、全体をこれに寄せすぎない。
+単発フィードバック：「今日は刺さらなかった」「この曲は良かった」など。次回の微調整には使うが、恒久的な好みには昇格させない。
+上記のプロンプトに、Exportifyで出力した最新のお気に入りのCSVを添付します。
+そうするとタスクのプロンプトをいい感じに書き換えてくれます。
+その際、たぶん一緒にコア嗜好の分析結果を教えてくれると思いま…]]></summary>
+        <author>
+            <name>nomolkのブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.9.20]]></title>
         <id>https://gamegaz.com/?p=46142</id>
