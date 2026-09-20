@@ -78,6 +78,33 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://satoru-takeuchi.hatenablog.com/" target="_blank"
+              rel="noopener">覚書</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">「バグを前工程で検出すると被害が小さくて済む」とはどういうことか</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://satoru-takeuchi.hatenablog.com/entry/2026/09/20/231104" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>ソフトウェア開発では、バグを前工程で検出すると被害が小さくて済むとよく言われます。様々な書籍やブログが同じことを言っています。一度経験してみればこれは当たり前のことなのですが、そうでない場合にそのようなことを見聞きしても「へえ、そんなものか」で終わってしまいます。そこで本記事は、ソフトウェアの運用開発が浅い人に向けて、「バグを前工程で検出すると被害が小さい」とはどういうことかについて、Aさんという開発者が大変な目に遭う架空の例を使って説明します。具体的にどう対策するかについてはスコープ外とします。
+大変な目に遭うAさん
+Aさんは、社員数30人程度の小さなSaaSプロバイダの開発、運用技術者です。プロダクトのソースコードはGitHubで管理されています。プロダクトはさまざまな他社サービス、オープンソースのツールに依存しています。サービスの新しいバージョンは次のような工程で本番環境にdeployされるとします。
+Aさんを含む複数の開発者がGitHubでPRを作り、レビューとCIを通せばmain branchにマージされる。CIは外部サービスには依存しない。従って、それぞれの開発者はこの工程では並列に開発できる。
+main branchは所定のタイミングで、本番環境と同じ構成のテスト環境にdeployされる。ここでユーザーのワークロードを模したテストを実行し、パスすれば本番環境にdeployされる。
+本番環境でユーザーが新バージョンを使う。
+Aさんは本番環境にdeployされたプロダクトを、サービスレベルを達成するよう運用します。そこで得たフィードバックをもとに機能開発、バグ修正、運用の改善をします。ユーザーから問い合わせが来たらサポートチームが一次対応し、技術的な問題の場合はAさんを含む開発、運用技術者にエスカレーションされます。
+実世界でのサービスは、ほとんどの場合はもっと複…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/10328749687217861088/14945776032080325880/1789913464" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
               rel="noopener">nomolkのブログ</a></h3>
           <section class="articles-per-source">
@@ -17293,7 +17320,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-09-20T14:02:10.562Z">2026-09-20T14:02:10.562Z</time>
+    <time id="build-timestamp" datetime="2026-09-20T15:02:47.579Z">2026-09-20T15:02:47.579Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>

@@ -2,10 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-20T14:02:10.609Z</updated>
+    <updated>2026-09-20T15:02:47.610Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「バグを前工程で検出すると被害が小さくて済む」とはどういうことか]]></title>
+        <id>hatenablog://entry/14945776032080325880</id>
+        <link href="https://satoru-takeuchi.hatenablog.com/entry/2026/09/20/231104"/>
+        <updated>2026-09-20T14:11:04.000Z</updated>
+        <summary type="html"><![CDATA[ソフトウェア開発では、バグを前工程で検出すると被害が小さくて済むとよく言われます。様々な書籍やブログが同じことを言っています。一度経験してみればこれは当たり前のことなのですが、そうでない場合にそのようなことを見聞きしても「へえ、そんなものか」で終わってしまいます。そこで本記事は、ソフトウェアの運用開発が浅い人に向けて、「バグを前工程で検出すると被害が小さい」とはどういうことかについて、Aさんという開発者が大変な目に遭う架空の例を使って説明します。具体的にどう対策するかについてはスコープ外とします。
+大変な目に遭うAさん
+Aさんは、社員数30人程度の小さなSaaSプロバイダの開発、運用技術者です。プロダクトのソースコードはGitHubで管理されています。プロダクトはさまざまな他社サービス、オープンソースのツールに依存しています。サービスの新しいバージョンは次のような工程で本番環境にdeployされるとします。
+Aさんを含む複数の開発者がGitHubでPRを作り、レビューとCIを通せばmain branchにマージされる。CIは外部サービスには依存しない。従って、それぞれの開発者はこの工程では並列に開発できる。
+main branchは所定のタイミングで、本番環境と同じ構成のテスト環境にdeployされる。ここでユーザーのワークロードを模したテストを実行し、パスすれば本番環境にdeployされる。
+本番環境でユーザーが新バージョンを使う。
+Aさんは本番環境にdeployされたプロダクトを、サービスレベルを達成するよう運用します。そこで得たフィードバックをもとに機能開発、バグ修正、運用の改善をします。ユーザーから問い合わせが来たらサポートチームが一次対応し、技術的な問題の場合はAさんを含む開発、運用技術者にエスカレーションされます。
+実世界でのサービスは、ほとんどの場合はもっと複…]]></summary>
+        <author>
+            <name>覚書</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ChatGPTの音楽レコメンドタスクを再チューニングする]]></title>
         <id>hatenablog://entry/14945776032080258280</id>
