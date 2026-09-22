@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-22T02:03:44.833Z</updated>
+    <updated>2026-09-22T03:02:48.104Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -9887,33 +9887,6 @@ Arksama氏がKraken A53プロセッサを使いPS5でアプリをネイティブ
         <summary type="html"><![CDATA[Amazon Web Servicesは、AWS Lambda上で一時的にステートフルな実行環境をMicroVMによって安全に隔離された状態で用意できる新サービス「AWS Lambda Micro VMs」を発表しました。 AWS Lamb...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PC版Spotifyのキャッシュフォルダを移動してCドライブを空ける]]></title>
-        <id>hatenablog://entry/14945776032045779691</id>
-        <link href="https://nomolk.hatenablog.com/entry/2026/06/24/234730"/>
-        <updated>2026-06-24T14:47:30.000Z</updated>
-        <summary type="html"><![CDATA[Cドライブがいっぱいでピンチなので、容量削減についてのエントリを何本か書いていきます。1本目です。
-
-PC版のSpotifyアプリを使っていると、C:\Users\（ユーザー名）\AppData\Local\Spotify\Data に曲のデータのキャッシュがどんどんたまっていきます。
-※設定から保存先を変更できないのでシンポリックリンクを使います。シンポリックリンクが何かを理解してからやった方がいいです
-やり方
-①元のフォルダを調べます。C:\Users\（ユーザー名）\AppData\Local\Spotify\Data です。
-②移動先のフォルダを作ります。今回はEドライブに E:\SpotifyCache を作りました。
-③Spotifyアプリを起動している場合は終了させます。
-④C:\Users\（ユーザー名）\AppData\Local\Spotify\Data を、Data フォルダごと E:\SpotifyCache に移動させます。（コピーじゃなくて移動）
-⑤コマンドプロンプトを管理者権限で開く（windowsのタスクバーにある検索欄に「cmd」と入れると、ポップアップでコマンドプロンプトが出てくるので「管理者として実行」）
-⑥以下を実行（パスは例なので書き換えて）
-mklink /D "C:\Users\（ユーザー名）\AppData\Local\Spotify\Data" "E:\SpotifyCache\Data"
-⑦エクスプローラで C:\Users\（ユーザー名）\AppData\Local\Spotify\Data を開き、E:\SpotifyCache\Data が開くことを確認
-あとは普通にSpotifyを起動して、使ってOKです。
-間違えた場合
-⑦の確認段階でもし間違っていた場合、
-rmdir "C:\Users\（ユーザー名）\AppData\Local\Spotify\Data"
-で一回シンボリックリンクを削除して⑥からやりなおしましょう。]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>

@@ -14767,43 +14767,6 @@ Arksama氏がKraken A53プロセッサを使いPS5でアプリをネイティブ
           </section>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
-              rel="noopener">nomolkのブログ</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">PC版Spotifyのキャッシュフォルダを移動してCドライブを空ける</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2026/06/24/234730" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Cドライブがいっぱいでピンチなので、容量削減についてのエントリを何本か書いていきます。1本目です。
-
-PC版のSpotifyアプリを使っていると、C:\Users\（ユーザー名）\AppData\Local\Spotify\Data に曲のデータのキャッシュがどんどんたまっていきます。
-※設定から保存先を変更できないのでシンポリックリンクを使います。シンポリックリンクが何かを理解してからやった方がいいです
-やり方
-①元のフォルダを調べます。C:\Users\（ユーザー名）\AppData\Local\Spotify\Data です。
-②移動先のフォルダを作ります。今回はEドライブに E:\SpotifyCache を作りました。
-③Spotifyアプリを起動している場合は終了させます。
-④C:\Users\（ユーザー名）\AppData\Local\Spotify\Data を、Data フォルダごと E:\SpotifyCache に移動させます。（コピーじゃなくて移動）
-⑤コマンドプロンプトを管理者権限で開く（windowsのタスクバーにある検索欄に「cmd」と入れると、ポップアップでコマンドプロンプトが出てくるので「管理者として実行」）
-⑥以下を実行（パスは例なので書き換えて）
-mklink /D &quot;C:\Users\（ユーザー名）\AppData\Local\Spotify\Data&quot; &quot;E:\SpotifyCache\Data&quot;
-⑦エクスプローラで C:\Users\（ユーザー名）\AppData\Local\Spotify\Data を開き、E:\SpotifyCache\Data が開くことを確認
-あとは普通にSpotifyを起動して、使ってOKです。
-間違えた場合
-⑦の確認段階でもし間違っていた場合、
-rmdir &quot;C:\Users\（ユーザー名）\AppData\Local\Spotify\Data&quot;
-で一回シンボリックリンクを削除して⑥からやりなおしましょう。</span>
-                  </div>
-                  <img src="https://cdn.image.st-hatena.com/image/scale/e97faa3f6d4b086b7c979257360c0d8a36d084cf/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260624%2F20260624024752.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -17143,7 +17106,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-09-22T02:03:44.800Z">2026-09-22T02:03:44.800Z</time>
+    <time id="build-timestamp" datetime="2026-09-22T03:02:48.073Z">2026-09-22T03:02:48.073Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
