@@ -3069,21 +3069,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8bbf6f3bec0e8e232688d3812ffba64bc9314d5e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260624%2F20260624013120.png"
-        },
-        {
-          "id": "hatenablog://entry/14945776032045779696",
-          "author": null,
-          "description": "Cドライブ減量大作戦、電子工作周りのツール編です。\nArduino IDEのライブラリフォルダを移動\nArduino IDEのライブラリファイルがデフォルトだと C:\\Users\\（ユーザー名）\\AppData\\Local\\ の中に入ります。これが10GBくらいあって意外に大きかったので移動します。\n①移動先のフォルダを作ります。今回は E:\\ArduinoLibs としました。\n\nKiCadのライブラリを移動\nArduinoほどではありませんが、部品ライブラリが5GBくらいありました。ついでなので移動しましょう。\n①移動先のフォルダを作ります。今回は E:\\KiCadShare\\share としました。\n\nそのままKiCadを起動して動作確認しておきましょう。",
-          "link": "https://nomolk.hatenablog.com/entry/2026/06/25/234014",
-          "publishedOn": "2026-06-25T14:40:14.000Z",
-          "wordCount": 880,
-          "title": "Arduino IDE や KiCad のライブラリフォルダを移動してCドライブを空ける",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/a7895ebae6d6b07180d9c241654f69989eef2937/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260624%2F20260624022419.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a7895ebae6d6b07180d9c241654f69989eef2937/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260624%2F20260624022419.png"
         }
       ]
     },
