@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-23T23:02:36.852Z</updated>
+    <updated>2026-09-24T00:04:40.535Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Power Automate でファイル共有の期限付きワンタイム URL を発行し、自動削除する]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=37632</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/37632"/>
+        <updated>2026-09-23T23:58:56.000Z</updated>
+        <summary type="html"><![CDATA[Microsoft 365 を業務利用している環境で一時的にファイルを共有したいとき、だいたいの場合 Teams のチャットに貼り付けることが多いのではないでしょうか。この方法はとてもお手軽なのですが...]]></summary>
+        <author>
+            <name>古賀 勇</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Cloudflare、Python Wrokersを正式サービスに。PythonでWebサイトの構築、データベース接続、オブジェクトストレージ操作など]]></title>
         <id>https://www.publickey1.jp/blog/26/cloudflarepython_wrokerspythonweb.html</id>
