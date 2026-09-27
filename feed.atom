@@ -2,10 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-27T09:02:25.998Z</updated>
+    <updated>2026-09-27T10:02:23.190Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[妄想だけ]]></title>
+        <id>hatenablog://entry/14945776032083064128</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/09/27/180938"/>
+        <updated>2026-09-27T09:09:38.000Z</updated>
+        <summary type="html"><![CDATA[解析を自然言語のドキュメントにするのではなくAnalysis Schemaを作って、推論を保持することはできないかなーと。LLMの意味解釈そのものを、確認済み／仮説／未知　および　証拠／反証 まで含む厳格なJSON Schemaとして閉じる感じです。大規模解析の場合のみ必要かもしれません。
+逆アセンブラ
+ ↓
+MCP Schema
+ ↓
+LLM推論
+ ↓
+Analysis Schema
+ ↓
+機械検証
+ ↓
+analysis / spec md
+LLM 仮説
+       ↓
+Analysis Schema
+       ↓
+mechanical falsification
+       ↓
+PASSしても 想定・仮説化
+       ↓
+独立Verification
+       ↓
+spec mdへ昇格]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.9.27]]></title>
         <id>https://gamegaz.com/?p=46185</id>

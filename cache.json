@@ -46,6 +46,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032083064128",
+          "author": null,
+          "description": "解析を自然言語のドキュメントにするのではなくAnalysis Schemaを作って、推論を保持することはできないかなーと。LLMの意味解釈そのものを、確認済み／仮説／未知　および　証拠／反証 まで含む厳格なJSON Schemaとして閉じる感じです。大規模解析の場合のみ必要かもしれません。\n逆アセンブラ\n ↓\nMCP Schema\n ↓\nLLM推論\n ↓\nAnalysis Schema\n ↓\n機械検証\n ↓\nanalysis / spec md\nLLM 仮説\n       ↓\nAnalysis Schema\n       ↓\nmechanical falsification\n       ↓\nPASSしても 想定・仮説化\n       ↓\n独立Verification\n       ↓\nspec mdへ昇格",
+          "link": "https://akkera102.hatenablog.com/entry/2026/09/27/180938",
+          "publishedOn": "2026-09-27T09:09:38.000Z",
+          "wordCount": 579,
+          "title": "妄想だけ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032083064128/1790500775",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032083064128/1790500775"
+        },
+        {
           "id": "hatenablog://entry/14945776032081087033",
           "author": null,
           "description": "github.com\n「これはGoalか？」\n「これはBoundか？」\n「これはVerificationか？」\n「これはStop条件か？」\n\nGoal:\nBound:\nVerification:\nStop/Return:\n\nGoalState = defined / undefined\nVerificationState = present / missing\nBoundState = explicit / implicit\nStopCondition = defined / undefined\nこうしておけば、\nGoal          = valid\nBound         = missing\nVerification  = invalid\nStopCondition = defined\nのように、「何が悪かったのか」をそのまま扱えます。一つの判定が一つの概念だけを扱うことです。AIエージェントフレームワークならすでに既知の話なのですけど、なんとも歯がゆい気持ちでいます。",
