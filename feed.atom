@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-27T12:03:19.942Z</updated>
+    <updated>2026-09-27T13:03:03.729Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[はてブコメントで攻撃的なやつをJevで隠す拡張機能]]></title>
+        <id>hatenablog://entry/14945776032083123979</id>
+        <link href="https://honeshabri.hatenablog.com/entry/hatebu-veil"/>
+        <updated>2026-09-27T12:03:26.000Z</updated>
+        <summary type="html"><![CDATA[はてブのコメント欄には、有用なコメントも確かにある。
+だから、Jevで攻撃的で役に立たないコメントを隠すChrome拡張を作った。
+人気でも、攻撃的で役に立たない判定なら隠す
+何を作ったのか
+はてなブックマークのコメント欄には、記事の補足や別視点の指摘など、読む価値のある情報がたくさん流れてくる。その一方で、嘲笑や侮辱が中心で、内容として得るものがほとんどないコメントが混ざっているのも確かだ。
+そこで、そうした攻撃的で中身のないコメントをJevで判定し、自動的に折り畳んでくれるChrome拡張機能『Hatebu Veil』を作った。
+こんな感じで隠される
+ページを開くと、設定した条件に当てはまるコメントが最初から折り畳まれて表示される。もちろん完全に削除するわけではないので、気になればその場でクリックして本文を開くこともできる。基本的には、読みたくないノイズが最初から視界に入らない状態を作るための道具だ。
+youtu.be
+Jevを触りたかった
+今回この拡張機能を作った一番の動機は、最近話題のJev*1を一度自分の手で動かしてみたかったからだ。はてなブックマークの周辺でも、Jevに関する言及やエントリーを頻繁に見かけるようになった。
+zenn.dev
+Jevは、自然言語で問いを投げるだけで文章の分類や採点ができる仕組みだ。今回のような分類用途ではレスポンスが速く、低コストで使いやすいため、個人がちょっとしたスクリプトやツールを手軽に作るのに向いている。
+せっかくならAPIを眺めるだけでなく、実際に日常で動く実用的なツールを作って感触を確かめたいと考えた。その題材として真っ先に頭に浮かんだのが、日々眺めているはてなブックマークのコメント欄だったのだ。
+コメントを2軸で採点する
+Hatebu Veilの仕組みは単純だ。拡張機能がページ内の未判定コメントを拾い上げ、その本文をJe…]]></summary>
+        <author>
+            <name>本しゃぶり</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ゆうき選手の何がすごいのか？【ぷよぷよコミュニティ視点】]]></title>
         <id>hatenablog://entry/14945776032083085667</id>
@@ -9835,16 +9860,6 @@ TODO
 PS5 Slimにも対応したハイパーバイザーexploitが存在 SlimモデルもSteamマシン化が可能に first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[果て青移植1]]></title>
-        <id>hatenablog://entry/14945776032048179771</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/06/30/092235"/>
-        <updated>2026-06-30T00:22:35.000Z</updated>
-        <summary type="html"><![CDATA[セーブロード良好。タイトルメニュー、攻略情報の機能以外はだいたい終りました。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

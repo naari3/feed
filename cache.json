@@ -824,21 +824,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032048388119/1782824631"
-        },
-        {
-          "id": "hatenablog://entry/14945776032048179771",
-          "author": null,
-          "description": "セーブロード良好。タイトルメニュー、攻略情報の機能以外はだいたい終りました。",
-          "link": "https://akkera102.hatenablog.com/entry/2026/06/30/092235",
-          "publishedOn": "2026-06-30T00:22:35.000Z",
-          "wordCount": 498,
-          "title": "果て青移植1",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/0f0f254679bc7e629d5ccd0d94a2081706bde9b7/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260630%2F20260630092102.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/0f0f254679bc7e629d5ccd0d94a2081706bde9b7/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260630%2F20260630092102.png"
         }
       ]
     },
@@ -2206,6 +2191,21 @@
       "feedUrl": "https://honeshabri.hatenablog.com/rss",
       "siteUrl": "https://honeshabri.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032083123979",
+          "author": null,
+          "description": "はてブのコメント欄には、有用なコメントも確かにある。\nだから、Jevで攻撃的で役に立たないコメントを隠すChrome拡張を作った。\n人気でも、攻撃的で役に立たない判定なら隠す\n何を作ったのか\nはてなブックマークのコメント欄には、記事の補足や別視点の指摘など、読む価値のある情報がたくさん流れてくる。その一方で、嘲笑や侮辱が中心で、内容として得るものがほとんどないコメントが混ざっているのも確かだ。\nそこで、そうした攻撃的で中身のないコメントをJevで判定し、自動的に折り畳んでくれるChrome拡張機能『Hatebu Veil』を作った。\nこんな感じで隠される\nページを開くと、設定した条件に当てはまるコメントが最初から折り畳まれて表示される。もちろん完全に削除するわけではないので、気になればその場でクリックして本文を開くこともできる。基本的には、読みたくないノイズが最初から視界に入らない状態を作るための道具だ。\nyoutu.be\nJevを触りたかった\n今回この拡張機能を作った一番の動機は、最近話題のJev*1を一度自分の手で動かしてみたかったからだ。はてなブックマークの周辺でも、Jevに関する言及やエントリーを頻繁に見かけるようになった。\nzenn.dev\nJevは、自然言語で問いを投げるだけで文章の分類や採点ができる仕組みだ。今回のような分類用途ではレスポンスが速く、低コストで使いやすいため、個人がちょっとしたスクリプトやツールを手軽に作るのに向いている。\nせっかくならAPIを眺めるだけでなく、実際に日常で動く実用的なツールを作って感触を確かめたいと考えた。その題材として真っ先に頭に浮かんだのが、日々眺めているはてなブックマークのコメント欄だったのだ。\nコメントを2軸で採点する\nHatebu Veilの仕組みは単純だ。拡張機能がページ内の未判定コメントを拾い上げ、その本文をJe…",
+          "link": "https://honeshabri.hatenablog.com/entry/hatebu-veil",
+          "publishedOn": "2026-09-27T12:03:26.000Z",
+          "wordCount": 924,
+          "title": "はてブコメントで攻撃的なやつをJevで隠す拡張機能",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/e4385aa15bfc1c05830b203fff3a3cd5bff65b2b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneshabri%2F20260927%2F20260927202522.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e4385aa15bfc1c05830b203fff3a3cd5bff65b2b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneshabri%2F20260927%2F20260927202522.jpg"
+        },
         {
           "id": "hatenablog://entry/14945776032074528465",
           "author": null,
