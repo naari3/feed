@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-09-29T14:02:41.638Z</updated>
+    <updated>2026-09-29T15:03:19.673Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Google Cloud、AIエージェントからの大量アクセスをPostgreSQLのプライマリDBから切り離せる「PostgreSQL for agents in AlloyDB」発表]]></title>
+        <id>https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html</id>
+        <link href="https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html"/>
+        <updated>2026-09-29T15:46:18.000Z</updated>
+        <summary type="html"><![CDATA[Google Cloudは、本番環境で動作しているPostgreSQLの処理に影響を与えないよう、AIエージェントからの読み取りワークロード用にサンドボックス化されたPostgreSQLのデータベースインスタンスを数秒でプロビジョニングする...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[コーディングエージェントにGoogle Cloudの専門知識とツールを組み込む「Google Cloud Developer Plugin for AI Coding Agents」発表]]></title>
+        <id>https://www.publickey1.jp/blog/26/google_cloudgoogle_cloud_developer_plugin_for_ai_coding_agents.html</id>
+        <link href="https://www.publickey1.jp/blog/26/google_cloudgoogle_cloud_developer_plugin_for_ai_coding_agents.html"/>
+        <updated>2026-09-29T15:44:15.000Z</updated>
+        <summary type="html"><![CDATA[Google Cloudは、Claude CodeなどのコーディングエージェントにGoogle Cloudの専門知識とツールなどを組み込める「Google Cloud Developer Plugin for AI Coding Agent...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.9.29]]></title>
         <id>https://gamegaz.com/?p=46195</id>
