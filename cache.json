@@ -46,6 +46,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032084173566",
+          "author": null,
+          "description": "今日の深夜にあったopenaiのDevDayイベントにて発表。会社としての発表は悩ましいところではありますが、codexプラグイン実装済という点は面白いところだと思います。\nhttps://developers.openai.com/modretro",
+          "link": "https://akkera102.hatenablog.com/entry/2026/09/30/091041",
+          "publishedOn": "2026-09-30T00:10:41.000Z",
+          "wordCount": 526,
+          "title": "codex+modretro",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032084173566/1790731183",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032084173566/1790731183"
+        },
+        {
           "id": "hatenablog://entry/14945776032083064128",
           "author": null,
           "description": "解析を自然言語のドキュメントにするのではなくAnalysis Schemaを作って、推論を保持することはできないかなーと。LLMの意味解釈そのものを、確認済み／仮説／未知　および　証拠／反証 まで含む厳格なJSON Schemaとして閉じる感じです。大規模解析の場合のみ必要かもしれません。\n逆アセンブラ\n ↓\nMCP Schema\n ↓\nLLM推論\n ↓\nAnalysis Schema\n ↓\n機械検証\n ↓\nanalysis / spec md\nLLM 仮説\n       ↓\nAnalysis Schema\n       ↓\nmechanical falsification\n       ↓\nPASSしても 想定・仮説化\n       ↓\n独立Verification\n       ↓\nspec mdへ昇格",
@@ -1276,6 +1291,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032084072880",
+          "author": null,
+          "description": "PEN ﾎﾞﾃﾞｨｰ SLV\n\nOM SYSTEM/オリンパス\nAmazon\n\nPENをポチってしまった。\n届くのは11月頃になりそう。1ヶ月ほどどのレンズを買うか悩んでいられる。届くのがかなり待ち遠しい。11月中旬に仙台に行く予定なので、それまでには届くと良いなあ。\n最近は散財が酷かったりするので、支出の圧縮といらないものをメルカリに売るのをやっている。\n支出は、不要なサブスクを止めたり、月額課金のものを年払いに切り替えたりしている。まあ年払いの効果が出るのは1年後とかになりがちだけれど。\nまた、新たに三井住友カード ゴールド(NL)を作った。これを年間100万円まで使うとお得っぽい。コンビニ支払いやサブスクをこちらに寄せていこうと思っている。\nプラチナプリファードも検討したけれど、私の支出だとNLゴールドを上回るのは難しそうだった。\nNLゴールドを作ったので、NISA口座を松井証券からSBI証券に移してそちらで積立をするように変更する予定。やや手続きがだるいけれど、やればできそう。\n証券口座がバラけると証券会社側のりバランス機能が使い物にならなくなることを心配していたのだけど、Claudeに相談したら「いいから自分で計算してやれ」と言われた。まあClaudeにいい感じのリバランスアプリを作っておいてもらうのが良さそう。\nネスゴシの開発を引き続き色々やっている。I18nを入れたり、iOS周りで色々壊れていたりしたのを直したりしていた。\n今まで自分ではiOSでネスゴシを触っていなかったのだけれど、いざ触ってみると結構壊れていた。一応iPadを持っていてよかった。\n\n明日の夜9時から、 #ネスゴシ のゲームプレイを配信しようと思いますー。ネスゴシの開発者自身による配信です。https://t.co/COlJxNo8yHhttps://t.co/X9jC9F7d7E\n— 🎹 (@p_ck_) September 29, 2026\n   \n明日は夜にネスゴシのプレイ配信をするつもり。誰もいないとさみしいので良かったら見に来てください。",
+          "link": "https://commits.hatenablog.com/entry/2026/09/30/100000",
+          "publishedOn": "2026-09-30T01:00:00.000Z",
+          "wordCount": 566,
+          "title": "2026-09-29",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/005adc984f5f23c4e41f6814c538f5385fad9c6f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41nmqH5eSWL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/005adc984f5f23c4e41f6814c538f5385fad9c6f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41nmqH5eSWL._SL500_.jpg"
+        },
         {
           "id": "hatenablog://entry/14945776032082785662",
           "author": null,
