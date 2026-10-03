@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-03T22:54:47.423Z</updated>
+    <updated>2026-10-03T23:49:37.200Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10033,55 +10033,6 @@ https://open.spotify.com/playlist/3lD2bBS8Pa50CGwBCXqSAT?si=90kk12fkQv6-W2yXicnx
         <summary type="html"><![CDATA[生成AIとツールとの接続プロトコルとしてLinux Foundation傘下で標準化と機能拡張が進められているMCP（Model Context Protocol）の企業向けの新機能「Enterprise-Managed Authoriza...]]></summary>
         <author>
             <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最近15]]></title>
-        <id>https://note.com/ecolidelvsvc11/n/n90bffd06f262</id>
-        <link href="https://note.com/ecolidelvsvc11/n/n90bffd06f262"/>
-        <updated>2026-07-06T11:29:38.000Z</updated>
-        <summary type="html"><![CDATA[最近もこんな感じです。
-
-続きをみる]]></summary>
-        <author>
-            <name>ティラノサウルスのぼんじり</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[軍事組織を参考にClaude CodeのSubagentをタスクフォースにして運用している（Gist あり）]]></title>
-        <id>hatenablog://entry/14945776032050621140</id>
-        <link href="https://blog.3qe.us/entry/2026/07/06/202801"/>
-        <updated>2026-07-06T11:28:01.000Z</updated>
-        <summary type="html"><![CDATA[こんな記事を読んだ。大変面白かったので、まだ読んでいなかったら是非読んでほしい。
-zenn.dev
-この記事の骨子は以下の通りだ:
-Subagentを利用することで、性能が高い一方で思考コストがきわめて高いという相反する特性を持つAnthropic Fableを有効に活用できる。
-意思決定層をFableが専任し、実装や調査といった実務はすべてSubagentに委任することでこれを達成する。
-ccteamというツールを作成した。
-自分もSubagentを活用したいと思っていたので、このアイデアを元に自分の手元でいろいろ進化させて、軍事組織の指揮系統を（こじつけに近い形で）導入したSubagentチームを作ることができたので紹介したい。
-今のところ成果は上々で、うまく役割を分担しつつ、コンテキストを節約した動作ができているし、複雑なタスクを与えても内部でうまく問題を片付けてから持ってきてくれる。
-現状
-Fableはユーザとのインターフェイスに徹する
-Headquarter
-Staff
-CodingBrigade{Opus,Sonnet,Haiku}
-CodingBattalion
-EvaluationBrigade
-最新のClaude CodeではネストしたSubagentを起動できる
-なんで軍事組織なのか
-指揮と統制
-ラインとスタッフ
-責務の設定
-感想
-余談
-おまけ
-現状
-さて、さっそく自分が作った構成を紹介したい。現状の編成は以下の図のようになっている。各Subagentについては後述する。
-タスクフォース
-Fableはユーザとのインターフェイスに徹する
-このタスクフォースの最上位に位置するのがFableだ。Fableの責務は、ユーザとともに意思決定を行い、その意思決定を下位のSubagentに命令することである。Fableはユーザのタスク達成について責任を負っており、Su…]]></summary>
-        <author>
-            <name>Lambdaカクテル</name>
         </author>
     </entry>
     <entry>

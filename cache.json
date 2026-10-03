@@ -5282,16 +5282,6 @@
           "wordCount": null,
           "title": "万バズするべき俺のツイート集",
           "imageUrl": null
-        },
-        {
-          "id": "https://note.com/ecolidelvsvc11/n/n90bffd06f262",
-          "author": null,
-          "description": "最近もこんな感じです。\n\n続きをみる",
-          "link": "https://note.com/ecolidelvsvc11/n/n90bffd06f262",
-          "publishedOn": "2026-07-06T11:29:38.000Z",
-          "wordCount": null,
-          "title": "最近15",
-          "imageUrl": null
         }
       ]
     },
@@ -6463,21 +6453,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032056888512/1784875204"
-        },
-        {
-          "id": "hatenablog://entry/14945776032050621140",
-          "author": null,
-          "description": "こんな記事を読んだ。大変面白かったので、まだ読んでいなかったら是非読んでほしい。\nzenn.dev\nこの記事の骨子は以下の通りだ:\nSubagentを利用することで、性能が高い一方で思考コストがきわめて高いという相反する特性を持つAnthropic Fableを有効に活用できる。\n意思決定層をFableが専任し、実装や調査といった実務はすべてSubagentに委任することでこれを達成する。\nccteamというツールを作成した。\n自分もSubagentを活用したいと思っていたので、このアイデアを元に自分の手元でいろいろ進化させて、軍事組織の指揮系統を（こじつけに近い形で）導入したSubagentチームを作ることができたので紹介したい。\n今のところ成果は上々で、うまく役割を分担しつつ、コンテキストを節約した動作ができているし、複雑なタスクを与えても内部でうまく問題を片付けてから持ってきてくれる。\n現状\nFableはユーザとのインターフェイスに徹する\nHeadquarter\nStaff\nCodingBrigade{Opus,Sonnet,Haiku}\nCodingBattalion\nEvaluationBrigade\n最新のClaude CodeではネストしたSubagentを起動できる\nなんで軍事組織なのか\n指揮と統制\nラインとスタッフ\n責務の設定\n感想\n余談\nおまけ\n現状\nさて、さっそく自分が作った構成を紹介したい。現状の編成は以下の図のようになっている。各Subagentについては後述する。\nタスクフォース\nFableはユーザとのインターフェイスに徹する\nこのタスクフォースの最上位に位置するのがFableだ。Fableの責務は、ユーザとともに意思決定を行い、その意思決定を下位のSubagentに命令することである。Fableはユーザのタスク達成について責任を負っており、Su…",
-          "link": "https://blog.3qe.us/entry/2026/07/06/202801",
-          "publishedOn": "2026-07-06T11:28:01.000Z",
-          "wordCount": null,
-          "title": "軍事組織を参考にClaude CodeのSubagentをタスクフォースにして運用している（Gist あり）",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032050621140/1783337281",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/14945776032050621140/1783337281"
         }
       ]
     },
