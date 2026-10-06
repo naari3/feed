@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-06T00:06:04.425Z</updated>
+    <updated>2026-10-06T01:21:30.416Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-10-05]]></title>
+        <id>hatenablog://entry/14945776032086551165</id>
+        <link href="https://commits.hatenablog.com/entry/2026/10/06/100000"/>
+        <updated>2026-10-06T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[辺境の友だち (蒼天コミックス)
+
+作者:panpanya
+リイド社
+Amazon
+
+panpanyaの新刊の予約注文ページが出来ていたので早速注文した。11月30日出版予定なのでしばらく先。届くのを楽しみにしたい。
+NLゴールドをGoogle Payに登録した。
+登録しようとすると「引数が無効です」という意味不明なエラーが出て登録できずに悩んでいた。
+調べてみると、住所情報などを正確に入力しないといけないらしい。
+色々試した結果、以下の2つのどちらかが効いて無事登録できた(多分前者)。
+Googleに登録している住所情報が古かったのを更新した
+
+
+Google Payに住所を入れるときの初期値に古い住所が入っていて気がついた
+住所を「地名123-4」のように入れていたのを、「地名 123-4」とスペースを入れた
+
+
+カードが届いたときの台紙にはスペースが入っていたので
+何も手がかりがないエラー表示はつらすぎるので、ちゃんとしてほしい。というか住所を入力しても弾くなら最初から入力させないでほしい。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.10.6]]></title>
         <id>https://gamegaz.com/?p=46234</id>
