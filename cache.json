@@ -1784,21 +1784,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032052837551/1783904401"
-        },
-        {
-          "id": "hatenablog://entry/14945776032051716341",
-          "author": null,
-          "description": "github.com\nJSON::ResumableParserで、微妙なchunkの区切りで読み込もうとすると意図しない形に読み込んでしまう問題を直した。trailing commaオプションを有効にしている場合か、JSONにコメントが含まれている場合だけ影響する問題なので、まあResumableParserで普通踏むことは無いと思う。\ngithub.com\nJSON::ResumableParserで、とても大きい数(10万桁とか)を細かいチャンクで受信すると遅くなる問題を修正した。数値のパース時、数値が確定していなくても数値オブジェクトを作ってしまい、かつbignumになるような数値オブジェクトの生成が遅いため。\nどちらのPRもbyrootが光の速さで対応してくれた。すごい。",
-          "link": "https://commits.hatenablog.com/entry/2026/07/10/100000",
-          "publishedOn": "2026-07-10T01:00:00.000Z",
-          "wordCount": 539,
-          "title": "2026-07-09",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032051716341/1783645200",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032051716341/1783645200"
         }
       ]
     },

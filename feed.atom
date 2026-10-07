@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-07T12:04:32.168Z</updated>
+    <updated>2026-10-07T13:09:00.374Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -10063,20 +10063,6 @@ GameGaz Daily 2026.7.11 first appeared on 大人のためのゲーム講座.]]><
 GPT-5.6 の一般公開]]></summary>
         <author>
             <name>laiso</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-07-09]]></title>
-        <id>hatenablog://entry/14945776032051716341</id>
-        <link href="https://commits.hatenablog.com/entry/2026/07/10/100000"/>
-        <updated>2026-07-10T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[github.com
-JSON::ResumableParserで、微妙なchunkの区切りで読み込もうとすると意図しない形に読み込んでしまう問題を直した。trailing commaオプションを有効にしている場合か、JSONにコメントが含まれている場合だけ影響する問題なので、まあResumableParserで普通踏むことは無いと思う。
-github.com
-JSON::ResumableParserで、とても大きい数(10万桁とか)を細かいチャンクで受信すると遅くなる問題を修正した。数値のパース時、数値が確定していなくても数値オブジェクトを作ってしまい、かつbignumになるような数値オブジェクトの生成が遅いため。
-どちらのPRもbyrootが光の速さで対応してくれた。すごい。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>
