@@ -6687,16 +6687,6 @@
           "wordCount": null,
           "title": "#13: GPT-5.6 Sol、Fable 5、AlphaEvolve",
           "imageUrl": null
-        },
-        {
-          "id": "6a5066fc2fec920001929657",
-          "author": "laiso",
-          "description": "今回は、GPT-5.6 の一般公開と評価、ChatGPT Work を先に扱い、続いて Cloud Run sandboxes、その他の話題を見ます。\nGPT-5.6 の一般公開",
-          "link": "https://blog.lai.so/2026-07-10/",
-          "publishedOn": "2026-07-10T03:31:10.000Z",
-          "wordCount": null,
-          "title": "#12: GPT-5.6、ChatGPT Work、Cloud Run sandboxes",
-          "imageUrl": null
         }
       ]
     },
@@ -8367,6 +8357,16 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html",
+          "author": null,
+          "description": "Amazon Web Services（AWS）は、Amazon Aurora PostgreSQLにDuckDBを統合し、Apache Icebergなどで構築したデータレイクのデータを直接読み取って処理できるようになったことを発表しまし...",
+          "link": "https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html",
+          "publishedOn": "2026-10-07T15:59:06.000Z",
+          "wordCount": null,
+          "title": "AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html",
           "author": null,

@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-07T15:02:40.528Z</updated>
+    <updated>2026-10-07T16:03:08.967Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表]]></title>
+        <id>https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</id>
+        <link href="https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html"/>
+        <updated>2026-10-07T15:59:06.000Z</updated>
+        <summary type="html"><![CDATA[Amazon Web Services（AWS）は、Amazon Aurora PostgreSQLにDuckDBを統合し、Apache Icebergなどで構築したデータレイクのデータを直接読み取って処理できるようになったことを発表しまし...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.10.7]]></title>
         <id>https://gamegaz.com/?p=46237</id>
@@ -10052,17 +10062,6 @@ GameGaz Daily 2026.7.11 first appeared on 大人のためのゲーム講座.]]><
         <summary type="html"><![CDATA[IIJには、次世代インターネットの新しい基盤技術を日本から創出することを目的として、新技術の研究開発を通じてIIJグループと社会に貢献するために設立された「IIJ技術研究所」があります。 https:...]]></summary>
         <author>
             <name>IIJ Engineers Blog編集部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[#12: GPT-5.6、ChatGPT Work、Cloud Run sandboxes]]></title>
-        <id>6a5066fc2fec920001929657</id>
-        <link href="https://blog.lai.so/2026-07-10/"/>
-        <updated>2026-07-10T03:31:10.000Z</updated>
-        <summary type="html"><![CDATA[今回は、GPT-5.6 の一般公開と評価、ChatGPT Work を先に扱い、続いて Cloud Run sandboxes、その他の話題を見ます。
-GPT-5.6 の一般公開]]></summary>
-        <author>
-            <name>laiso</name>
         </author>
     </entry>
     <entry>
