@@ -748,21 +748,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032052398076/1783764339"
-        },
-        {
-          "id": "hatenablog://entry/14945776032051710982",
-          "author": null,
-          "description": "悠夏ハッピー、バッド読了。不具合は１件だけでした。「選択肢処理が走る１つ前のメッセージは、選択肢後に既読になる」という問題。選択前に既読が付くように修正しました。",
-          "link": "https://akkera102.hatenablog.com/entry/2026/07/09/211205",
-          "publishedOn": "2026-07-09T12:12:05.000Z",
-          "wordCount": 501,
-          "title": "進捗",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032051710982/1783601896",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032051710982/1783601896"
         }
       ]
     },
@@ -1275,6 +1260,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032086962861",
+          "author": null,
+          "description": "家で育てている菊芋に、気がついたらつぼみが1つできていた。もうちょっとで咲きそう。撮ろうと思うと家の周囲が映り込むので写真はなし(いい感じに撮れたのだけど)。\n近所の畑では菊芋が結構咲いていたので、うちのもどんどん咲いていってほしい。そして早くイモができてほしい。\n最近はネスゴシの姉妹アプリの開発を進めている。\nガリガリ実装を進めていて、ようやく最低限の手触りが分かるぐらいになった。しかし触ってみると当初の仕様が微妙だったので、ガッツリ仕様変更を入れることになりそう。\n実装以外に法的な制約も少しあり、公開できるのはもうちょっと先になりそう。今月中に出せたらいいなあ……。\nネスゴシに広告を入れた。\n元々Google Adsenseを使うことを考えていて審査に出していたのだけれど、審査に落ちてしまった。メディアなどの色んな記事があるようなWebサイトをメインターゲットにしているっぽく、ネスゴシのようなWebアプリは審査において分が悪いらしい。\n審査対策をしてまた審査を待つのもだいぶ長くなりそうなので、元々アカウントを持っていたAmazon Associateで広告を出すことにした。\n現在は、トップページに2箇所と、ゲームクリア後に1箇所出している。テキストのみ。\n画像を使うには10件/30日の売上がないといけないみたいで、結構ハードルが高い…。\nまた、商品を検索して動的に出すような仕組みを使うにも同様の売上制限があるようで、出している商品は全て事前にリストアップしたもの。\nトップページに出しているものは、鉄道や旅行関連の商品。何件かをリストアップしてあり、それをランダムに出している。\nクリア後画面には、出題駅付近のガイドブックを出すようにした。単に鉄道関連の商品を出すより、アプリと関連していて楽しいかなと思う。\n商品のリストアップにはとてもちまちました作業が必要となるけれど、面倒なことをClaudeが大体やってくれて良かった。クリア後画面の方とか、大量の商品に都道府県コードと座標を割り振るという地獄のような作業を自分でやらずに済んだのはデカい。というか手作業でやるなら絶対そんなことはしなかった。\nAdsenseに落ちたのはちょっと凹んだけれど、結果的にネスゴシのアプリのテーマに寄り添った広告を表示する工夫ができたので、これはこれで良かったかも知れない。とはいえAdsenseの審査を再チャレンジする予定ではいる。\n売上目標は、短期的には投資金額の回収、長期的には毎月のClaude Code代の回収。Claude Code代の回収の方はだいぶハードルが高いから、ゆっくり目指すかなあ。\n広告嫌いの人が離れていったりしないかなというのはちょっと不安。\n今のところそういう声は見てないけれど。",
+          "link": "https://commits.hatenablog.com/entry/2026/10/07/100000",
+          "publishedOn": "2026-10-07T01:00:00.000Z",
+          "wordCount": 572,
+          "title": "2026-10-07",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032086962861/1791334803",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032086962861/1791334803"
+        },
         {
           "id": "hatenablog://entry/14945776032086551165",
           "author": null,
@@ -7063,6 +7063,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=46237",
+          "author": "mamosuke",
+          "description": "Ryty v1.0.3,PS5-Dump-Image-Converter v1.9.64,ps5-webkit-autoloader-esp32 v0.5.2-2,ps5-tailscale v0.7.1,elf-launcher v1.1.8,PStream v1.0.0,ps5upload v6.2.1,PS5 Suite 7.2.3,evoX-CoreOS PS5 Store AIO Release (v2026.10.06-2223),PS5 UltraPack v2.2.0,WK-AutoLoader v1.0.16,DualSenseClient v1.0.0-14.10c046f,RevolutionDS4 v1.1.0,Porpoise v2.5-beta.1,PSXS5 1.2.0,PS Neighborhood v0.14.0,Jelly5 v0.3.0,SlopFin 01.000.003,PS2 Launcher v5.0.0,PS5SNES release,PS5N64 release,Sphaira 1.0.8,Ryujinx-Nextendo v1.8.13,Breeze beta123.10,Tico DuckStation 3.0.0,RustyNES v3.0.0,DOSBox Pure 1.0 Preview 7,PCSX2 v2.9.108,ARMSX2 nightly 20261006 (46c06fe7ca),shadNet 2026-10-06-aa49e60,Ship of Harkinian(Shipwright) 9.3.0,xenia cc4981a_canary_experimental\n→→→この記事の続きを読む\nGameGaz Daily 2026.10.7 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026100746237/",
+          "publishedOn": "2026-10-07T01:08:37.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.10.7",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=46234",
           "author": "mamosuke",
