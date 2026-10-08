@@ -1261,6 +1261,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032087262319",
+          "author": null,
+          "description": "ファーストコンタクト 窓口基作品集 【電子コミック限定特典付き】 (アクションコミックス)\n\n作者:窓口基\n双葉社\nAmazon\n\nファーストコンタクト 窓口基作品集 を読んだ。\nしばらく前に買って積んでいた。ひたすら設定を浴びる感じでとても好き。\n\nすべてのカーブにはわけがある (交通新聞社新書)\n\n作者:米屋こうじ\n交通新聞社\nAmazon\n\nすべてのカーブにはわけがある 読んだ。図書館で借りたもの。\n様々な鉄道路線で、なぜカーブが必要とされているのかを説明した本。まあまあ面白かった。\n返却期限が近づいていて最後の方はあまりちゃんと読めなかった\nnesugoshi.app\nネスゴシの開発ブログを始めた。\nしばらくは週次でリリースノート的なものを書いていく予定。開発していく上でおもしろネタもいくらかたまっているので、その話も書いていきたい。\nゴンチャの蜜りんごジャスミンティーを飲んだ。甘さふつう氷ゼロパールトッピング。\nなんか思っていたほど美味しくなかった。お茶の渋みを強く感じるかなあ。ミルクがあったほうが良かったのかも知れない。",
+          "link": "https://commits.hatenablog.com/entry/2026/10/08/100000",
+          "publishedOn": "2026-10-08T01:00:00.000Z",
+          "wordCount": 555,
+          "title": "2026-10-07",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/41aeaaa7fa41c736095d6e735372ccab139d88a8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51--7OtGy5L._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/41aeaaa7fa41c736095d6e735372ccab139d88a8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51--7OtGy5L._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/14945776032086962861",
           "author": null,
           "description": "家で育てている菊芋に、気がついたらつぼみが1つできていた。もうちょっとで咲きそう。撮ろうと思うと家の周囲が映り込むので写真はなし(いい感じに撮れたのだけど)。\n近所の畑では菊芋が結構咲いていたので、うちのもどんどん咲いていってほしい。そして早くイモができてほしい。\n最近はネスゴシの姉妹アプリの開発を進めている。\nガリガリ実装を進めていて、ようやく最低限の手触りが分かるぐらいになった。しかし触ってみると当初の仕様が微妙だったので、ガッツリ仕様変更を入れることになりそう。\n実装以外に法的な制約も少しあり、公開できるのはもうちょっと先になりそう。今月中に出せたらいいなあ……。\nネスゴシに広告を入れた。\n元々Google Adsenseを使うことを考えていて審査に出していたのだけれど、審査に落ちてしまった。メディアなどの色んな記事があるようなWebサイトをメインターゲットにしているっぽく、ネスゴシのようなWebアプリは審査において分が悪いらしい。\n審査対策をしてまた審査を待つのもだいぶ長くなりそうなので、元々アカウントを持っていたAmazon Associateで広告を出すことにした。\n現在は、トップページに2箇所と、ゲームクリア後に1箇所出している。テキストのみ。\n画像を使うには10件/30日の売上がないといけないみたいで、結構ハードルが高い…。\nまた、商品を検索して動的に出すような仕組みを使うにも同様の売上制限があるようで、出している商品は全て事前にリストアップしたもの。\nトップページに出しているものは、鉄道や旅行関連の商品。何件かをリストアップしてあり、それをランダムに出している。\nクリア後画面には、出題駅付近のガイドブックを出すようにした。単に鉄道関連の商品を出すより、アプリと関連していて楽しいかなと思う。\n商品のリストアップにはとてもちまちました作業が必要となるけれど、面倒なことをClaudeが大体やってくれて良かった。クリア後画面の方とか、大量の商品に都道府県コードと座標を割り振るという地獄のような作業を自分でやらずに済んだのはデカい。というか手作業でやるなら絶対そんなことはしなかった。\nAdsenseに落ちたのはちょっと凹んだけれど、結果的にネスゴシのアプリのテーマに寄り添った広告を表示する工夫ができたので、これはこれで良かったかも知れない。とはいえAdsenseの審査を再チャレンジする予定ではいる。\n売上目標は、短期的には投資金額の回収、長期的には毎月のClaude Code代の回収。Claude Code代の回収の方はだいぶハードルが高いから、ゆっくり目指すかなあ。\n広告嫌いの人が離れていったりしないかなというのはちょっと不安。\n今のところそういう声は見てないけれど。",
@@ -7028,6 +7043,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=46246",
+          "author": "mamosuke",
+          "description": "PS5コンソールBAN,Xbox360PeerPressure v1.0.477,OnionHEN v0.9.0-beta2,Ryty v1.0.4,Jelly5 v0.4.0,BlackBox 1.0.5,PS5 UltraPack v2.2.1,ps5upload v6.3.1,omega-dashboard-ps5 2026.10.05.5,ps5-plugin-loader(Ploader) v1.2.0,ps5-webkit-autoloader-esp32 v0.5.2-3,ProsperoLight 01.000.090,ProsperoEden v1.000.080,DolphinPS4 v50.35,PS5-Dump-Image-Converter v1.9.69,ps5-webkit-autoloader v0.6.0-pre-4488577,XPSemu Alpha 2,PS5X360 v0.5.7-fix.1,Mupen64Plus PS5 0.6.3,Porpoise v2.5,PSXS5 2.1.1,evoX-CoreOS PS5 Store AIO Release (v2026.10.07-2245),PS5N64 releasev7,Breeze beta123.11,Mario Kart 64 3DS Port Complete 1.0,ioQuake3-Wii 1.3.3,bnfm2glb Version 2.0,RustyNES v3.0.1,PCSX2 v2.9.111,PSX2 1.3.1,ARMSX2 2.8.2,ARMSX3 1.0.7,Ember Launcher,shadPS4 Pre-release-shadPS4-2026-10-07-0fe263a,shadPS4-QtLauncher 2026-10-07-4e32b32,KytyPS5 2026-10-07-420bb51,xenia 82d0cd1_canary_experimental,ScratchEverywhere 1.2.1,Universal Media Server 15.9.0→→→この記事の続きを読む\nGameGaz Daily 2026.10.8 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026100846246/",
+          "publishedOn": "2026-10-08T00:37:57.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.10.8",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=46237",
           "author": "mamosuke",
