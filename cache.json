@@ -3780,21 +3780,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/a8a4699f54bc136928703645b0a8aae6822c75a2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260713%2F20260713153316.png"
-        },
-        {
-          "id": "hatenablog://entry/14945776032053466632",
-          "author": null,
-          "description": "記事中に数式を記述するtex記法に、LaTeXの数式をそのまま書ける書き方を追加しました。\n新しい書き方\nこれまでのtex記法（[tex: ...]）に加えて、[$ ... $] という形式でも数式を書けるようになりました。\n追加した書き方\n[$ x^{2} e^{a+b} $]\n従来の書き方\n[tex: x^{2} e^{a+b}]\nどちらも表示結果は同じです。\n編集モードを問わず使えます\ntex記法ははてな記法の1つではありますが、今回追加した新しい書き方ははてな記法モードだけでなくすべての編集モードでお使いいただけます。\n\n今後もはてなブログをより使いやすくするための改善を続けてまいります。どうぞご利用ください。",
-          "link": "https://staff.hatenablog.com/entry/2026/07/14/181844",
-          "publishedOn": "2026-07-14T09:18:44.000Z",
-          "wordCount": null,
-          "title": "tex記法に、LaTeXの数式をそのまま書ける新しい書き方を追加しました",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032053466632/1784020724",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032053466632/1784020724"
         }
       ]
     },
