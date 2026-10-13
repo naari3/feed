@@ -1785,21 +1785,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/46f6c375e9aba096c86b82faf312a580eac37304/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FP%2FPocke%2F20260717%2F20260717233439.png"
-        },
-        {
-          "id": "hatenablog://entry/14945776032053931821",
-          "author": null,
-          "description": "github.com\nirbで補完候補のドキュメントをRDocから取得する時に例外が起きたときでも、irb自体がクラッシュしないようにした。\nというのも、Ruby::Boxのテストに全然irbが使えなくなってしまっていて困っていたため。\nRuby::Boxを有効にしているとMarshal.loadが動かないという問題があり、Marshal.loadを使っているRDocがエラーになって、Tabを押すだけでirbがクラッシュしてしまっていた。\nこれ自体はRuby::Boxのバグのようなのだけど、そもそもRDocというコンポーネントが壊れたとしてもirb自体は動いていてほしいので、irb側にも対応を入れてみた。\nirbコミッタが同僚にいると、こういう話をカジュアルに相談できて大変便利。\n近くの図書館に行って本を借りた。図書館で本を借りるのは10年以上ぶりだと思う。\n最近職場でよく本の話をする機会があり、そこから影響を受けた。Amazonのおすすめよりも、本とのランダム性のある出会いを模索している。\n最近は本屋にもちょくちょく行っているけれど、本屋とはまた違った本との出会いがあるように感じる。どう違うのかは言語化が難しいけれど。\n岡山文庫という、岡山に関連する様々な本が出版されている文庫本があり、当然近くの図書館にも多く収蔵されているのでそれを借りようかなと思っていたけれど、結局別の本を2冊借りてきた。文庫本は買ってもそこまで場所を取らないけれど、ハードカバーは買うと場所を取るので、ハードカバーを借りてみた。この視点だと、写真がたくさん入った大きめの本とかを借りるべきかなとも思う。\nただ、こういう戦略的な借り方はランダム性を減らす働きがありそうな気もしている。\n2週間という貸し出し期限があるので、それまでになんとか読み切りたい。\n最近はもっと街に出て地域との関わりを持ちたい気持ちが出てきて、図書館とかに行くようになったのもその気持ちが多少影響していると思う。薄い関わりではありつつも、部屋にずっとこもっているよりは確実に関わりが生まれるので。外に出るのは暑いからしんどいけれど。\n久しぶりに図書館に行って、これだけの本を無料で借りて読むことができるというのは中々凄まじい権利だなと感じた。",
-          "link": "https://commits.hatenablog.com/entry/2026/07/16/100000",
-          "publishedOn": "2026-07-16T01:00:00.000Z",
-          "wordCount": 549,
-          "title": "2026-07-15",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032053931821/1784163604",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032053931821/1784163604"
         }
       ]
     },
@@ -2151,6 +2136,21 @@
       "feedUrl": "https://hardshopper.hatenablog.com/rss",
       "siteUrl": "https://hardshopper.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032087269367",
+          "author": null,
+          "description": "どうも、ジャパネット価格調査が趣味の僕です。\nジャパネットの商品が本当に安いのかを調べるのが趣味です。\n \n本日価格を見ていくのは、家電ではなくこちらの旅行です。\n豪華客船「MSCベリッシマ」で優雅に巡る 秋の日本一周クルーズ10日間の旅\n\nジャパネットが豪華客船を丸ごと1隻貸し切って、東京から日本をぐるっと一周する9泊10日のクルーズです。\n \nジャパネットのクルーズは今かなり売れているらしく、乗った人はもう累計15万人を超えたそうです。\nしかも商品ページには「2028年出航分より値上げの為、この価格はラストチャンス！」と書かれていて、ジャパネットも全力で売り込んでいます。\n\n \nそして実は、クルーズ旅行は国も増やそうとしています。\n2025年に24万3,000人だった日本人のクルーズ利用者を、2030年までに100万人に増やす計画だそうです。\n（出典：テレ朝NEWS「国の目標は『年間100万人』なぜいまクルーズ旅行？」）\n \nということは、ジャパネット以外の会社もクルーズにかなり力を入れているはずです。\n家電と違って価格.comで比べることはできませんが、今回もこれが本当に買いなのか？を調べていきます。\n \n【値段】ジャパネットクルーズの旅行代金は？お支払総額で確認\nまずはジャパネットの旅行代金です。\n出港日は2027年の10月14日・10月23日・11月1日・11月10日の4回で、どの日も同じ代金でした。\n\n2名1室で使うときの、1人あたりの代金を表にまとめるとこうなります。\n客室\n広さ\n旅行代金（1人）\n\n\n内側客室（窓なし）\n約15㎡\n249,800円\n\n\n海側客室（救命艇が見える部屋）\n約12㎡\n319,800円\n\n\n海側客室（窓あり）\n約16㎡\n349,800円\n\n\nバルコニー付き客室（視界不良）\n約17㎡＋バルコニー約4㎡\n369,800円\n\n\nバルコニー付…",
+          "link": "https://hardshopper.hatenablog.com/entry/japanetcruise",
+          "publishedOn": "2026-10-13T12:44:00.000Z",
+          "wordCount": 811,
+          "title": "【評判】ジャパネットのクルーズ(MSCベリッシマ日本一周)は本当に安い？ダイヤモンド・プリンセスや同じ船の他社ツアーと比較",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/68e88ec6b0adf66adae0afe2e1136b1996b87043/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhardshopper%2F20261007%2F20261007214410.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/68e88ec6b0adf66adae0afe2e1136b1996b87043/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhardshopper%2F20261007%2F20261007214410.png"
+        },
         {
           "id": "hatenablog://entry/14945776032089035887",
           "author": null,
@@ -7226,6 +7226,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=46277",
+          "author": "mamosuke",
+          "description": "soniciso1氏がPS5の13.60で有効なHypervisor(ハイパーバイザーexploitの情報を公開していました。→→→この記事の続きを読む\n13.60で有効なPS5 Hypervisor(ハイパーバイザー) exploitとByepervisor-Reborn発表 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026101346277/",
+          "publishedOn": "2026-10-13T12:11:52.000Z",
+          "wordCount": 1777,
+          "title": "13.60で有効なPS5 Hypervisor(ハイパーバイザー) exploitとByepervisor-Reborn発表",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/PS5-Jailbreak.png"
+        },
         {
           "id": "https://gamegaz.com/?p=46273",
           "author": "mamosuke",
