@@ -688,21 +688,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/2d34029376cf60b2c53244bf0c3bf4f68f6f23b2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Fakkera102%2F20260718%2F20260718103353.png"
-        },
-        {
-          "id": "hatenablog://entry/14945776032054187442",
-          "author": null,
-          "description": "ROMのCRCが変わるのはsoxでランダム関数を使っているからです。「-R」オプションを指定するとシードが固定化されて同じ結果になります。pythonは単純リサイズですし他はたぶん使っていないはずです・・・たぶん。間違っていたらすみません。（＾＾；\nsox test.wav -R -c1 -b8 -e signed-integer 1.raw rate -v 13379\nsox test.wav -R -c1 -b8 -e signed-integer 2.raw rate -v 13379\n\nfc /b 1.raw 2.raw\nファイル 1.raw と 2.RAW を比較しています\nFC: 相違点は検出されませんでした",
-          "link": "https://akkera102.hatenablog.com/entry/2026/07/16/182443",
-          "publishedOn": "2026-07-16T09:24:43.000Z",
-          "wordCount": 568,
-          "title": "謎コメ",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032054187442/1784194187",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032054187442/1784194187"
         }
       ]
     },
