@@ -1102,7 +1102,23 @@
       "title": "ちなみに",
       "feedUrl": "https://blog.nishimu.land/rss",
       "siteUrl": "https://blog.nishimu.land/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/14945776032089745545",
+          "author": null,
+          "description": "Macが一日に2回カーネルパニックで落ちた。アクティビティモニタを眺めているとgitが次から次へと生まれては消えていて、どう見てもこいつが怪しい。\n結論から書くと、gitを起動しまくっていたのはClaude Codeの公式プラグイン security-guidance のhookでした。ただ、OSが落ちた直接の原因は別のところにあって、そちらはまだ分かっていません。\n落ちた理由はメモリだった\n/Library/Logs/DiagnosticReports に残っていたパニックログを見ると、2回とも同じ内容でした。\nuserspace watchdog timeout: no successful checkins from WindowServer (2 induced crashes) in 192 seconds\nCompressor Info: 28% of compressed pages limit (OK) and 100% of segments limit (BAD) with 76 swapfiles and OK swap space\n圧縮メモリが上限に達し、スワップファイルが76個まで増えて、WindowServerが3分ほど応答しなくなったところでwatchdogがパニックを起こしています。48GB積んでいるMacでこれなので、何かがメモリを食い尽くしたことになります。\nlog show でパニック直前のログを見ると、Jetsam（メモリ不足でプロセスを強制終了する仕組み）が1分間に2,691回も走っていました。ただ殺されているのは小さなAppleのデーモンばかりで、肝心のメモリを食っていたプロセスは記録に残っていません。kernelのログはパニックで書き込まれずに消えてしまうようです。\ngit の親をたどる\nメモリの犯人は追えないので、目に見えてい…",
+          "link": "https://blog.nishimu.land/entry/2026/10/13/203123?utm_source=feed",
+          "publishedOn": "2026-10-13T11:31:23.000Z",
+          "wordCount": 437,
+          "title": "git を起動しまくっていたのは security-guidance の hook だった",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/14945776032089745545/1791891083",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/14945776032089745545/1791891083"
+        }
+      ]
     },
     {
       "title": "アジの開き、お開き",

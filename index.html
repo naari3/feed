@@ -78,6 +78,35 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://blog.nishimu.land/" target="_blank"
+              rel="noopener">ちなみに</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">git を起動しまくっていたのは security-guidance の hook だった</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://blog.nishimu.land/entry/2026/10/13/203123?utm_source&#x3D;feed" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>Macが一日に2回カーネルパニックで落ちた。アクティビティモニタを眺めているとgitが次から次へと生まれては消えていて、どう見てもこいつが怪しい。
+結論から書くと、gitを起動しまくっていたのはClaude Codeの公式プラグイン security-guidance のhookでした。ただ、OSが落ちた直接の原因は別のところにあって、そちらはまだ分かっていません。
+落ちた理由はメモリだった
+/Library/Logs/DiagnosticReports に残っていたパニックログを見ると、2回とも同じ内容でした。
+userspace watchdog timeout: no successful checkins from WindowServer (2 induced crashes) in 192 seconds
+Compressor Info: 28% of compressed pages limit (OK) and 100% of segments limit (BAD) with 76 swapfiles and OK swap space
+圧縮メモリが上限に達し、スワップファイルが76個まで増えて、WindowServerが3分ほど応答しなくなったところでwatchdogがパニックを起こしています。48GB積んでいるMacでこれなので、何かがメモリを食い尽くしたことになります。
+log show でパニック直前のログを見ると、Jetsam（メモリ不足でプロセスを強制終了する仕組み）が1分間に2,691回も走っていました。ただ殺されているのは小さなAppleのデーモンばかりで、肝心のメモリを食っていたプロセスは記録に残っていません。kernelのログはパニックで書き込まれずに消えてしまうようです。
+git の親をたどる
+メモリの犯人は追えないので、目に見えてい…</span>
+                  </div>
+                  <img src="https://ogimage.blog.st-hatena.com/12704346814673931685/14945776032089745545/1791891083" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://blog.hatenablog.com/" target="_blank"
               rel="noopener">週刊はてなブログ</a></h3>
           <section class="articles-per-source">
@@ -17762,7 +17791,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-10-13T11:03:28.351Z">2026-10-13T11:03:28.351Z</time>
+    <time id="build-timestamp" datetime="2026-10-13T12:04:48.837Z">2026-10-13T12:04:48.837Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
