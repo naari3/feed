@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-14T03:02:46.315Z</updated>
+    <updated>2026-10-14T04:02:48.261Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[RE談義]]></title>
+        <id>hatenablog://entry/14945776032090001936</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/10/14/124331"/>
+        <updated>2026-10-14T03:43:31.000Z</updated>
+        <summary type="html"><![CDATA[以下、私とAIさんとの会話になります。私もそうだけど、AIさんが乗っているコンテキストメモリも、だいぶおかしな方向をしていて笑えますね。
+
+私:AI開発が個人で爆速になり、ラインを超えるけど、napsterのようなどうにもコントロールできない問題のようにも思えて来ます
+chatGPT:そう見える部分はあります。Napsterとの共通点は、「個人が実行できる規模と速度」が突然上がり、従来は企業や専門チームしかできなかった行為が広く分散することです。今のAI開発では、clean-room再実装や互換実装のコストがかなり下がっています。実際、2026年には既存OSSをAIエージェントで短時間に再実装してライセンスまで変える試みが議論になり、「これは本当にclean-roomなのか」という論争が起きています。 PhotoCraftのような大規模な互換実装も、その延長にあります。
+Napsterとの違いは、Napsterが主に著作物そのものの複製・流通を爆発的に安くしたのに対し、AIコーディングは機能・振る舞いの再実装を安くしていることです。つまり、
+Napster
+です。
+同じ機能
+という状態を作れるので、著作権・特許・商標・契約・clean-roomの真正性など、境界が分散します。
+ローカルモデル
+を組み合わせれば、互換実装自体は続けられる。
+大規模に配る
+段階になるほど、再び法的・商業的なゲートが効いてくる。なので私は、Napsterとの類似を「コピーが止められなくなった」ではなく、「個人の生産能力が制度の想定速度を超えた」ところに感じます。
+今回あなたが（検閲済）でやっていることも、まさにその小型版です。以前なら何人かの専門家と長い時間が必要だったソフトウェア保存・挙動復元を、個人＋AIで現実的に回せる。そこまでコストが落ちると、知財制度側も「誰が再実装できるか」を前提にした…]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-10-13]]></title>
         <id>hatenablog://entry/14945776032089829033</id>
