@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-16T01:12:33.393Z</updated>
+    <updated>2026-10-16T02:03:11.045Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[23.0.xでの安定性向上 Atmosphère 1.12.1(6b0c077b4)]]></title>
+        <id>https://gamegaz.com/?p=46294</id>
+        <link href="https://gamegaz.com/2026101646294/"/>
+        <updated>2026-10-16T01:41:32.000Z</updated>
+        <summary type="html"><![CDATA[hexkyz氏がFusée Gelée(NVIDIA Tegraプロセッサの脆弱性を利用し起動時に任意のコードを実行するcoldboot exploit)を利用したりModチップを利用したりすることで起動することができるNintendo SwitchのカスタムファームウェアAtmosphère 1.12.1をリリースしていました。→→→この記事の続きを読む
+23.0.xでの安定性向上 Atmosphère 1.12.1(6b0c077b4) first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-10-16]]></title>
         <id>hatenablog://entry/14945776032090641352</id>
@@ -10688,87 +10699,6 @@ mixi.social
 街中を少し走るのにも軽の力不足を結構感じたし、軽に4人フルで乗って高速乗るとかはだいぶ厳しそうだなあとなった。]]></summary>
         <author>
             <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[３Ｄプリンタでハイドロカルチャー用の鉢カバーを作る]]></title>
-        <id>hatenablog://entry/14945776032054960223</id>
-        <link href="https://nomolk.hatenablog.com/entry/2026/07/18/221343"/>
-        <updated>2026-07-18T13:13:43.000Z</updated>
-        <summary type="html"><![CDATA[今年の２月、部屋に緑が欲しいなと思い、ホームセンターでワイヤープランツを買いました。
-
-My new gear... pic.twitter.com/AIMAAKRvSK
-— メルセデスベン子 (@nomolk) 2026年2月7日
-   
-土は使わず、ハイドロボールという粒状の軽石みたいなものを使って水栽培（ハイドロカルチャー）にしています。
-ところが５か月後…
-
-元気に育ちましたね～。
-
-うっ……。
-なんか内側に緑の毛のようなものがついており、インテリアとしては厳しい感じになってしまいました。これは藍藻といって、水槽にもよく生えるアレです。藻類というより細菌に近い仲間なのだそうです。
-植え替えも考えましたが、見た目はともかく水の残量が見えて管理しやすいというメリットは捨てがたい。
-モデリングする
-先に完成形を見せると、こんな感じです。
-
-Fusion360を使ってモデリングしていきます。以下、手順。
-まずスケッチボタンを押して、水平面を選択します。
-
-円ツールで丸を描きます。
-
-さっき書いた円を選択して「押し出し」します。
-
-円柱ができたら、「シェル」を押して筒にします。上の面だけを選ぶと底のある鉢になり、下の面と両方選ぶと筒になります。
-
-ここまででおおよその形はできました。次はここにストライプの装飾をつけていきます。
-「構築▼」の中にある「接平面」というメニューを選びます。
-
-
-「OK」を押して確定させた後、その面をクリックして「スケッチ」を押し、スケッチの編集に入ります。
-長方形ツールででっぱりを作っていきます。
-
-長方形を選んで「押し出し」で立体化します。
-
-次にお好みで、「フィレット」をかけて、でっぱり部分の角を丸めます。
-
-さて、次が今回のモデリングの最大の盛り上がりポイントです。
-
-
-で、このままだとバラバラのオブジェクトなので、全部選択して「結合」を押すと
-
-あとはファイルメニューから「3Dプリント」を押してSTLを書き出し、
-
-ビヨヨ……
-そして完成したのがこちらです。
-
-ちなみに床が異常に汚いのはこのグレーのフィラメントを使う前に、10年くらい前に買ったウッドフィラメントを使おうとして試行錯誤した跡です。
-使ってみよう
-まずはグラスをきれいに洗い、汚れたハイドロボールは入れ替えました。
-
-そしてグラスごとカバーの中に収納。
-
-けっこういい感じになったのではないでしょうか！
-PLAだと質感にテカリがあるので、強い光が当たると正直ちょっと安っぽさも感じます。
-
-
-eSUN マットPLA 3Dプリントフィラメント 1.75mm 寸法精度±0.05mm 1kg マット ブラウン
-
-eSUN
-Amazon
-
-以上、３Ｄプリンタ活用記でした。
-使っている３Ｄプリンタ
-たぶん誰に聞いてもこれを勧めるであろうBambu Lab A1 mini。めちゃくちゃ楽、速い、安い、オプションで多色出力に拡張可能、で現行機種の中では圧倒的おすすめです。
-
-
-Bambu Lab A1 mini 3Dプリンター 高速高精度 自動調整 初心者向け 日本語UI対応 造形サイズ：180×180×180mm³
-
-Bambu Lab
-Amazon
-
-メーカー公式でセールやってると26,000円とかになってめちゃくちゃ安いので検索してみよう。]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
         </author>
     </entry>
     <entry>
