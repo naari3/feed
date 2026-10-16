@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-16T02:03:11.045Z</updated>
+    <updated>2026-10-16T03:03:19.231Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AVIF形式・WebP形式の画像をアップロードした際に行われる処理を見直しました]]></title>
+        <id>hatenablog://entry/14945776032090412559</id>
+        <link href="https://staff.hatenablog.com/entry/2026/10/16/111138"/>
+        <updated>2026-10-16T02:11:38.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログで記事に画像を挿入すると、画像は「はてなフォトライフ」へ保存されます。
+フォトライフの設定画面の「画質」に応じたエンコード処理を行っておりますが、このたびAVIF形式およびWebP形式の画像について処理を見直し、これまで以上に画質を維持したまま保存できるようにしました。
+対象となる操作
+はてなブログの編集画面からのアップロード (Google フォトからの貼り付けを含みます)
+はてなフォトライフからのアップロード
+フォトライフの編集画面での回転・縮小
+AtomPub API
+メール投稿
+ファイルサイズについて
+今回の変更に伴い、AVIF・WebP形式の画像は、これまでよりファイルサイズが大きくなることがあります。
+▼ フォトライフの設定]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[23.0.xでの安定性向上 Atmosphère 1.12.1(6b0c077b4)]]></title>
         <id>https://gamegaz.com/?p=46294</id>
