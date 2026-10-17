@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-17T13:02:38.121Z</updated>
+    <updated>2026-10-17T14:02:18.412Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性]]></title>
+        <id>https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</id>
+        <link href="https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html"/>
+        <updated>2026-10-17T15:27:18.000Z</updated>
+        <summary type="html"><![CDATA[悪意のある攻撃者がLinuxの仮想マシンを不正に操作することで、仮想マシンの境界を抜けてホスト側のLinux OSで不正なコードを実行できる可能性がある脆弱性「PwnEscape」（CVE-2026-99999）の情報が公開されています。 ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AIによるProof of Workの終わりと「なぜベストを尽くしたのか」のこれから]]></title>
         <id>hatenablog://entry/14945776032091474282</id>

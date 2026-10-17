@@ -8614,6 +8614,16 @@
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
         {
+          "id": "https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html",
+          "author": null,
+          "description": "悪意のある攻撃者がLinuxの仮想マシンを不正に操作することで、仮想マシンの境界を抜けてホスト側のLinux OSで不正なコードを実行できる可能性がある脆弱性「PwnEscape」（CVE-2026-99999）の情報が公開されています。 ...",
+          "link": "https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html",
+          "publishedOn": "2026-10-17T15:27:18.000Z",
+          "wordCount": 1501,
+          "title": "Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性",
+          "imageUrl": "https://www.publickey1.jp/2026/cve202699999.png"
+        },
+        {
           "id": "https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html",
           "author": null,
           "description": "Anthropicが開発しているJavaScriptランタイム「Bun」は、10月10日付けで新バージョン「Bun v1.4.3」がリリースされました。 Bun v1.4.3の最大の特徴として示されたのが、Go言語で実装されたTypeScr...",
