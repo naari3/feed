@@ -1074,6 +1074,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032091938184",
+          "author": null,
+          "description": "キオクシアを買いました。\n上場してからずっと気になっていたのですが、ようやく手を出しました。32GB。\nUSBメモリの話です。\nOmarchy をインストールしようとしたら、ISOをUSBメモリに焼く必要があるとわかりました。2026年なのに。\n手元にUSBメモリはないので、諦めて買いました。焼ければなんでもいいので、なるべく安いものを探してキオクシアにしています。USB 2.0ですが、6.5GBほどのISOを一回焼くだけなので速度は我慢。\nデスクトップパソコンに入れるのですが、暗号化パスワードの入力にはBluetoothキーボードが使えないらしいので、有線のキーボードも探しておく必要がそう。\n明日届くのでやっていこうと思います。\n\nKIOXIA(キオクシア)【日本製】USBフラッシュメモリ 32GB USB2.0 国内サポート正規品 KLU202A032GL\n\nKIOXIA\nAmazon",
+          "link": "https://blog.nishimu.land/entry/2026/10/18/215315?utm_source=feed",
+          "publishedOn": "2026-10-18T12:53:15.000Z",
+          "wordCount": 336,
+          "title": "ついにキオクシアを買った",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/60d0b3654bda0255d1db1567a2e75ba85b9f8cea/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F316xTK7NteL._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/60d0b3654bda0255d1db1567a2e75ba85b9f8cea/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F316xTK7NteL._SL500_.jpg"
+        },
+        {
           "id": "hatenablog://entry/14945776032089745545",
           "author": null,
           "description": "Macが一日に2回カーネルパニックで落ちた。アクティビティモニタを眺めているとgitが次から次へと生まれては消えていて、どう見てもこいつが怪しい。\n結論から書くと、gitを起動しまくっていたのはClaude Codeの公式プラグイン security-guidance のhookでした。ただ、OSが落ちた直接の原因は別のところにあって、そちらはまだ分かっていません。\n落ちた理由はメモリだった\n/Library/Logs/DiagnosticReports に残っていたパニックログを見ると、2回とも同じ内容でした。\nuserspace watchdog timeout: no successful checkins from WindowServer (2 induced crashes) in 192 seconds\nCompressor Info: 28% of compressed pages limit (OK) and 100% of segments limit (BAD) with 76 swapfiles and OK swap space\n圧縮メモリが上限に達し、スワップファイルが76個まで増えて、WindowServerが3分ほど応答しなくなったところでwatchdogがパニックを起こしています。48GB積んでいるMacでこれなので、何かがメモリを食い尽くしたことになります。\nlog show でパニック直前のログを見ると、Jetsam（メモリ不足でプロセスを強制終了する仕組み）が1分間に2,691回も走っていました。ただ殺されているのは小さなAppleのデーモンばかりで、肝心のメモリを食っていたプロセスは記録に残っていません。kernelのログはパニックで書き込まれずに消えてしまうようです。\ngit の親をたどる\nメモリの犯人は追えないので、目に見えてい…",
@@ -7189,16 +7204,6 @@
           "wordCount": null,
           "title": "AIで変わる企業戦略とは？IIJが考えるAIネイティブ企業への道",
           "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=37063",
-          "author": "IIJ Engineers Blog編集部",
-          "description": "IIJ ネットワークサービス事業本部 セキュリティ本部 セキュリティ情報統括室の桃井 康成（ももい やすなり）が、このたび一般社団法人ICT-ISACより功労賞を受賞しました。 ICT-ISACとは ...",
-          "link": "https://eng-blog.iij.ad.jp/archives/37063",
-          "publishedOn": "2026-07-21T00:17:08.000Z",
-          "wordCount": null,
-          "title": "IIJ桃井 康成、ICT-ISAC功労賞を受賞",
-          "imageUrl": null
         }
       ]
     },
@@ -9609,16 +9614,6 @@
           "publishedOn": "2026-08-04T01:00:00.000Z",
           "wordCount": null,
           "title": "Karte.196 僕らはずっとそばにいる",
-          "imageUrl": null
-        },
-        {
-          "id": "7bc5d6f903c90",
-          "author": null,
-          "description": "僕の心のヤバイやつ【最新話無料】 - Karte.195 僕らは回り続ける",
-          "link": "https://championcross.jp/episodes/7bc5d6f903c90/?utm_source=rss&utm_medium=referral",
-          "publishedOn": "2026-07-21T01:00:00.000Z",
-          "wordCount": null,
-          "title": "Karte.195 僕らは回り続ける",
           "imageUrl": null
         }
       ]
