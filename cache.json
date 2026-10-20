@@ -1044,6 +1044,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032092684400",
+          "author": null,
+          "description": "2026年9月、Anthropicの社内リポジトリには1日あたり3万件を超える変更がマージされていたそうです。5月の時点ではおよそ2,500件だったので、4か月で10倍以上。書いているのはほとんどがコーディングエージェントです。\nこの3万件を人が一行ずつ読んでいるとは思えないし、誰も読まずに本番へ出しているとも思えない。じゃあどうしているのか、というのが最近「ソフトウェアファクトリー」と呼ばれている話の出発点です。\n名前だけ聞くとまたバズワードかという感じがするのだけれど、僕はこれを新しい開発手法の流行ではなく、これまで手作業でやってきたソフトウェア開発を近代化しないといけないという話だと受け取っています。ソフトウェアエンジニアの仕事はもう変わってしまった。\n\n書く速さが読む速さを追い越した\n各社が出している数字は、どれも同じ向きを向いています。\n 報告元 \n 書く側 \n 読む側 \n\n\n\n\n Meta \n 開発者1人あたりの月間 diff 数が前年比 +51%。増加分の8割超がエージェント由来 \n 24時間以内にレビューされる diff の割合が低下 \n\n\n Imprint \n 平均的なエンジニアのマージ PR 数が2年前の4倍 \n レビュー所要時間の中央値が33分から77分へ \n\n\n Anthropic \n エンジニア1人あたりのコミット数が半年前の5倍 \n 対話型セッションの約80%でエージェントが人の入力を待っている \n\n\n\n\n\nどれも自社報告で定義も揃っていないので横並びの比較はできません。それでも、書く側が速くなった分だけ待ち行列が読む側に移った、という点は共通しています。\n読む人を増やせばいいかというと、エージェントを何本並べても、人が読める量は増えません。なので、読む量を減らしても壊れない仕組みを作るしかない。\n工場という言葉が指しているもの\nこの語彙を整理し…",
+          "link": "https://blog.nishimu.land/entry/2026/10/20/123916?utm_source=feed",
+          "publishedOn": "2026-10-20T03:39:16.000Z",
+          "wordCount": 659,
+          "title": "ソフトウェアの産業革命",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/8f7afafe1e0c8b0abdc1c1a80282b606257dd5a5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261020%2F20261020122543.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/8f7afafe1e0c8b0abdc1c1a80282b606257dd5a5/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261020%2F20261020122543.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032091938184",
           "author": null,
           "description": "キオクシアを買いました。\n上場してからずっと気になっていたのですが、ようやく手を出しました。32GB。\nUSBメモリの話です。\nOmarchy をインストールしようとしたら、ISOをUSBメモリに焼く必要があるとわかりました。2026年なのに。\n手元にUSBメモリはないので、諦めて買いました。焼ければなんでもいいので、なるべく安いものを探してキオクシアにしています。USB 2.0ですが、6.5GBほどのISOを一回焼くだけなので速度は我慢。\nデスクトップパソコンに入れるのですが、暗号化パスワードの入力にはBluetoothキーボードが使えないらしいので、有線のキーボードも探しておく必要がそう。\n明日届くのでやっていこうと思います。\n\nKIOXIA(キオクシア)【日本製】USBフラッシュメモリ 32GB USB2.0 国内サポート正規品 KLU202A032GL\n\nKIOXIA\nAmazon",
@@ -9601,16 +9616,6 @@
           "publishedOn": "2026-07-23T18:22:56.000Z",
           "wordCount": null,
           "title": ".NET MAUI、iOS/AndoridのランタイムがMonoからCoreCLRに更新、開発者は動作確認を。.NET 11 Preview 6が公開",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html",
-          "author": null,
-          "description": "アトラシアンは、プロジェクト管理ツールとして知られるJiraに生成AI機能を組み込み、AIによる要件定義の自動作成、作業すべきタスクの洗い出し、そして各タスクをClaude CodeやGitHub Copilotなどへ割り当てる新機能を発表...",
-          "link": "https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html",
-          "publishedOn": "2026-07-22T15:35:19.000Z",
-          "wordCount": null,
-          "title": "アトラシアン、JiraがAIによる要件定義の自動作成、コンテキストを保持しつつタスクをClaudeやCopilotなどのAIエージェントへアサインなど新機能",
           "imageUrl": null
         }
       ]

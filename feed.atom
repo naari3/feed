@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-20T03:03:16.149Z</updated>
+    <updated>2026-10-20T04:02:45.026Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ソフトウェアの産業革命]]></title>
+        <id>hatenablog://entry/14945776032092684400</id>
+        <link href="https://blog.nishimu.land/entry/2026/10/20/123916?utm_source=feed"/>
+        <updated>2026-10-20T03:39:16.000Z</updated>
+        <summary type="html"><![CDATA[2026年9月、Anthropicの社内リポジトリには1日あたり3万件を超える変更がマージされていたそうです。5月の時点ではおよそ2,500件だったので、4か月で10倍以上。書いているのはほとんどがコーディングエージェントです。
+この3万件を人が一行ずつ読んでいるとは思えないし、誰も読まずに本番へ出しているとも思えない。じゃあどうしているのか、というのが最近「ソフトウェアファクトリー」と呼ばれている話の出発点です。
+名前だけ聞くとまたバズワードかという感じがするのだけれど、僕はこれを新しい開発手法の流行ではなく、これまで手作業でやってきたソフトウェア開発を近代化しないといけないという話だと受け取っています。ソフトウェアエンジニアの仕事はもう変わってしまった。
+
+書く速さが読む速さを追い越した
+各社が出している数字は、どれも同じ向きを向いています。
+ 報告元 
+ 書く側 
+ 読む側 
+
+
+
+
+ Meta 
+ 開発者1人あたりの月間 diff 数が前年比 +51%。増加分の8割超がエージェント由来 
+ 24時間以内にレビューされる diff の割合が低下 
+
+
+ Imprint 
+ 平均的なエンジニアのマージ PR 数が2年前の4倍 
+ レビュー所要時間の中央値が33分から77分へ 
+
+
+ Anthropic 
+ エンジニア1人あたりのコミット数が半年前の5倍 
+ 対話型セッションの約80%でエージェントが人の入力を待っている 
+
+
+
+
+
+どれも自社報告で定義も揃っていないので横並びの比較はできません。それでも、書く側が速くなった分だけ待ち行列が読む側に移った、という点は共通しています。
+読む人を増やせばいいかというと、エージェントを何本並べても、人が読める量は増えません。なので、読む量を減らしても壊れない仕組みを作るしかない。
+工場という言葉が指しているもの
+この語彙を整理し…]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.10.20]]></title>
         <id>https://gamegaz.com/?p=46320</id>
@@ -10755,16 +10799,6 @@ hikakin_mania黎明期みたいな音MADでノスタルジー感じて最高
 いじょ(大道寺きら)]]></summary>
         <author>
             <name>思い出したら書きます</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[アトラシアン、JiraがAIによる要件定義の自動作成、コンテキストを保持しつつタスクをClaudeやCopilotなどのAIエージェントへアサインなど新機能]]></title>
-        <id>https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html</id>
-        <link href="https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html"/>
-        <updated>2026-07-22T15:35:19.000Z</updated>
-        <summary type="html"><![CDATA[アトラシアンは、プロジェクト管理ツールとして知られるJiraに生成AI機能を組み込み、AIによる要件定義の自動作成、作業すべきタスクの洗い出し、そして各タスクをClaude CodeやGitHub Copilotなどへ割り当てる新機能を発表...]]></summary>
-        <author>
-            <name>Publickey</name>
         </author>
     </entry>
     <entry>
