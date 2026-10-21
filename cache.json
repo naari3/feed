@@ -3858,6 +3858,21 @@
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032090539302",
+          "author": null,
+          "description": "予約投稿した記事が公開されたときに、スマートフォン・タブレット向けのはてなブログアプリのプッシュ通知で受け取れるようになりました。\n操作方法\n予約投稿した記事が公開されると、プッシュ通知が届きます\n通知をタップすると、公開された記事が開きます\n画面右上の共有ボタンからシェアできます\n\niOS: 四角に上矢印のマーク\nAndroid: 3つの点が線で結ばれたマーク\n\n\n\n\n    \n設定について\nご利用には、はてなブログアプリのインストールが必要です。端末の設定でアプリの通知を許可してください。\n\niOS アプリはてなブログアプリ - App Store\nAndroid アプリはてなブログアプリ - Google Play\n\n初期設定では、すべてのブログで通知する設定になっています。\n\nアカウント設定 > 通知 > プッシュ通知 から、ブログごとに通知のオン・オフを変更できます。\n\nプッシュ通知の設定\n\n\n    \n本機能を追加した背景について\n2026年6月10日に、予約投稿の公開時にXへ自動投稿する機能を廃止しました。本機能はXへ自動投稿するものではありませんが、予約投稿の公開をお知らせし、通知から手軽にシェアしていただけるよう追加しました。\nstaff.hatenablog.com",
+          "link": "https://staff.hatenablog.com/entry/2026/10/21/173047",
+          "publishedOn": "2026-10-21T08:30:47.000Z",
+          "wordCount": 966,
+          "title": "予約投稿した記事の公開時にアプリのプッシュ通知で受け取れるようになりました",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/3a0b4281e714632bdd8cabfeb1df4337dd5d8c55/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20261015%2F20261015193607.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/3a0b4281e714632bdd8cabfeb1df4337dd5d8c55/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20261015%2F20261015193607.png"
+        },
+        {
           "id": "hatenablog://entry/14945776032092668689",
           "author": null,
           "description": "はてなCMSの「ページの管理」で作成・公開したページにおいて、記事一覧に表示される投稿日が実際より1日前の日付になる不具合がありました。原因はアプリケーションの不具合によるもので、現在は修正済みです。\n事象\n日本時間の0:00〜8:59に公開された記事について、記事一覧に表示される投稿日が1日前の日付になっていました。\n影響範囲\nはてなCMSの「ページの管理」で作成・公開したページのうち、記事一覧に投稿日を表示しているものが対象です。記事一覧を設置していないページ、投稿日を表示していないページは影響を受けません。\n影響しないもの\n記事に保存されている公開日時そのものに誤りはなく、影響は記事一覧での表示に限られます。\n記事詳細ページに表示される公開日・最終更新日\n「デザイン」画面で設置されたモジュール\n対応\n修正を反映し、現在は正しい日付で表示されています。ご利用の皆さまによる操作は必要ありません。\nご迷惑をおかけして申し訳ございませんでした。今後もサービスの安定運用に努めてまいります。",

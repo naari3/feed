@@ -2,10 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-21T08:02:57.024Z</updated>
+    <updated>2026-10-21T09:03:21.216Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[予約投稿した記事の公開時にアプリのプッシュ通知で受け取れるようになりました]]></title>
+        <id>hatenablog://entry/14945776032090539302</id>
+        <link href="https://staff.hatenablog.com/entry/2026/10/21/173047"/>
+        <updated>2026-10-21T08:30:47.000Z</updated>
+        <summary type="html"><![CDATA[予約投稿した記事が公開されたときに、スマートフォン・タブレット向けのはてなブログアプリのプッシュ通知で受け取れるようになりました。
+操作方法
+予約投稿した記事が公開されると、プッシュ通知が届きます
+通知をタップすると、公開された記事が開きます
+画面右上の共有ボタンからシェアできます
+
+iOS: 四角に上矢印のマーク
+Android: 3つの点が線で結ばれたマーク
+
+
+
+
+    
+設定について
+ご利用には、はてなブログアプリのインストールが必要です。端末の設定でアプリの通知を許可してください。
+
+iOS アプリはてなブログアプリ - App Store
+Android アプリはてなブログアプリ - Google Play
+
+初期設定では、すべてのブログで通知する設定になっています。
+
+アカウント設定 > 通知 > プッシュ通知 から、ブログごとに通知のオン・オフを変更できます。
+
+プッシュ通知の設定
+
+
+    
+本機能を追加した背景について
+2026年6月10日に、予約投稿の公開時にXへ自動投稿する機能を廃止しました。本機能はXへ自動投稿するものではありませんが、予約投稿の公開をお知らせし、通知から手軽にシェアしていただけるよう追加しました。
+staff.hatenablog.com]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.10.21]]></title>
         <id>https://gamegaz.com/?p=46327</id>
