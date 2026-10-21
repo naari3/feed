@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-21T09:03:21.216Z</updated>
+    <updated>2026-10-21T10:02:21.544Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Agent Safehouseからnonoに移行した]]></title>
+        <id>hatenablog://entry/14945776032093169183</id>
+        <link href="https://blog.nishimu.land/entry/2026/10/21/181528?utm_source=feed"/>
+        <updated>2026-10-21T09:15:28.000Z</updated>
+        <summary type="html"><![CDATA[以前の記事でClaude CodeをAgent Safehouseのsandboxに入れて使っていると書いたけど、nonoに乗り換えた。
+きっかけはLinuxマシンでもClaude Codeを動かすようになったこと。Safehouseはsandbox-execをラップするやつなのでmacOS専用で、Linux側は素のままになっていた。nonoはmacOSではSeatbelt、LinuxではLandlockを使ってカーネルレベルでアクセスを制限してくれる。しかも設定は同じJSONのプロファイルで書ける。MacとLinuxで同じsandboxを1つの設定で管理できるのが決め手だった。
+nono
+nono.sh
+MacはHomebrewで入る。
+brew install nono
+
+
+
+Linuxはインストールスクリプトが用意されている。Debian・Fedora・Archのパッケージもあるので、詳しくは公式のインストール手順を見てください。LandlockのためにLinuxカーネル5.13以降が必要です。
+curl -fsSL https://nono.sh/install.sh | sh
+
+
+
+あとはnono runでコマンドを包むだけ。
+nono run --profile claude --allow-cwd -- claude
+
+
+
+Safehouseとの一番の違いは、ポリシーをJSONのプロファイルで宣言的に書くところ。プロファイルはextendsで継承できて、registryで配布されているnolabs-ai/claudeを土台にできる。~/.claudeへの書き込み許可や~/.ssh・キーチェーン・シェル履歴の拒否といったClaude Code向けの基本設定が最初から入っている。中身はnono profile show nolabs-ai/claudeで確認できま…]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[予約投稿した記事の公開時にアプリのプッシュ通知で受け取れるようになりました]]></title>
         <id>hatenablog://entry/14945776032090539302</id>
