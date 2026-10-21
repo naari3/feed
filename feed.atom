@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-21T02:05:14.592Z</updated>
+    <updated>2026-10-21T03:03:04.461Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[【復旧済み】はてなCMSの「ページの管理」で作成したページで、記事一覧の投稿日がずれて表示される不具合が発生していました]]></title>
+        <id>hatenablog://entry/14945776032092668689</id>
+        <link href="https://staff.hatenablog.com/entry/2026/10/21/110538"/>
+        <updated>2026-10-21T02:05:38.000Z</updated>
+        <summary type="html"><![CDATA[はてなCMSの「ページの管理」で作成・公開したページにおいて、記事一覧に表示される投稿日が実際より1日前の日付になる不具合がありました。原因はアプリケーションの不具合によるもので、現在は修正済みです。
+事象
+日本時間の0:00〜8:59に公開された記事について、記事一覧に表示される投稿日が1日前の日付になっていました。
+影響範囲
+はてなCMSの「ページの管理」で作成・公開したページのうち、記事一覧に投稿日を表示しているものが対象です。記事一覧を設置していないページ、投稿日を表示していないページは影響を受けません。
+影響しないもの
+記事に保存されている公開日時そのものに誤りはなく、影響は記事一覧での表示に限られます。
+記事詳細ページに表示される公開日・最終更新日
+「デザイン」画面で設置されたモジュール
+対応
+修正を反映し、現在は正しい日付で表示されています。ご利用の皆さまによる操作は必要ありません。
+ご迷惑をおかけして申し訳ございませんでした。今後もサービスの安定運用に努めてまいります。]]></summary>
+        <author>
+            <name>はてなブログ開発ブログ</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2026-2027年版】誕生日当日・誕生月に無料や割引になる場所まとめ｜関東で大人も得するテーマパーク・温泉・カラオケ]]></title>
         <id>hatenablog://entry/14945776032092907933</id>
