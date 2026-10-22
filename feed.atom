@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-22T17:02:09.826Z</updated>
+    <updated>2026-10-22T18:03:05.336Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[settings]]></title>
+        <id>https://scrapbox.io/leje-campus/settings</id>
+        <link href="https://scrapbox.io/leje-campus/settings"/>
+        <updated>2026-10-22T17:54:44.000Z</updated>
+        <summary type="html"><![CDATA[テーマいじり
+code:style.css
+ htmldata-project-theme='hacker1' {
+  --body-bg: #0b162d;
+  --navbar-bg: #323c52;
+     --new-button-horizontal-color: #ffcc37;
+     --new-button-bg: #0b162d;
+     --new-button-hover-bg: #0b162d;
+     --new-button-active-bg: #2b364d;
+     --tool-color: #eeeeee;
+     --tool-text-color: #eeeeee;
+     --code-bg: rgba(32,32,32,.04);
+ }
+ body {
+     background-image: url(https://i.gyazo.com/4882595f206ebd73e6d7f6997c567579.png);
+     background-size: 100%;
+ }
+ .grid li.page-list-item a .pin {
+     background: linear-gradient(45deg, #f98119, #fff09f 50%, #0b162d 50%, #0b162d);]]></summary>
+        <author>
+            <name>Lejeのキャンパス - Cosense</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[突然来た！Nintendo Switch 2の紐付きJailbreak ns2jb by pepsip]]></title>
         <id>https://gamegaz.com/?p=46350</id>
