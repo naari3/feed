@@ -30,6 +30,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032094304390",
+          "author": null,
+          "description": "読みたい人だけどうぞ。今回も頭おかしい私と、その内容に付き合ってくれるAIの話になります。長文＆そのままログです（約8000文字）。\n私：\nChatGPT：\nこれはかなり、「これ、前にもやったぞ」をメタ制御信号にするという発想そのものです。\nさらに今年7月には、そのものずばり When Do Agent Loops Mistake Stagnation for Progress? という研究があります。長時間agentが自分の作業を自分で評価すると、変更しただけで「進歩した」と判断しやすく、実際の外部状態では進んでいないことがある。実験では54サイクルすべてでagentが改善を主張したのに、56%は外部測定上の改善がゼロ以下だった、と報告しています。この現象を progress mirage（進捗の蜃気楼） と呼んでいます。これは昨日のCodexそのものに近いですね。\n状態モデルを拡張した\nつまり、あなたが言っていた**「積み上がっている感や閉塞感がない」問題は、かなり直接的に研究対象になっています。**もう一段古い研究まで戻ると、「疲労」「摩耗」に相当するものもあります。1991年のRussell & Wefaldの rational metareasoning は、「次の計算そのものに価値があるか」を判断する理論です。追加計算によって意思決定がどれくらい改善するかと、計算コストを比較する。つまり、まだ計算できるか？ではなく、さらに計算する価値があるか？を評価します。\n今の言葉なら、人工的な「疲労」にかなり近い。さらに2024年にはこれをLLMにそのまま持ち込み、不要な推論にコストを課す Rational Metareasoning for Large Language Models が出ています。推論ステップを必要なときだけ使わせることで、性能を保ちながら生成トークンを…",
+          "link": "https://akkera102.hatenablog.com/entry/2026/10/23/203055",
+          "publishedOn": "2026-10-23T11:30:55.000Z",
+          "wordCount": 792,
+          "title": "RE談義2",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032094304390/1792756194",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032094304390/1792756194"
+        },
+        {
           "id": "hatenablog://entry/14945776032093775571",
           "author": null,
           "description": "note.com\nmaxmodのみ？maxmod+GB(PSG部)でしょうか？おそらく前者かも。ぜひ視聴してみてください。私の耳だと謙遜ないし、ところどころ２重に入っている音もあるけれど、それ以外はGBA再現としてもう合格点すぎるでしょって思います。ああ、ここまで来てしまったのね・・・（遠い目）。",
@@ -7100,6 +7115,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=38064",
+          "author": "doumae",
+          "description": "2026年10月20日に予告があり、翌21日23時(日本時間)に詳細と緊急パッチが公開されたPHPの脆弱性PHP2Shellは、PHPの高いシェアと悪用リスクの高さ、そして正式発表までの紆余曲折を含め...",
+          "link": "https://eng-blog.iij.ad.jp/archives/38064",
+          "publishedOn": "2026-10-23T11:46:21.000Z",
+          "wordCount": null,
+          "title": "PHP2Shellを狙った攻撃を日本国内でも観測 (IIJ MITFハニーポット)",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=37823",
           "author": "谷口 崇",

@@ -2,10 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-23T11:02:19.119Z</updated>
+    <updated>2026-10-23T12:03:18.437Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[PHP2Shellを狙った攻撃を日本国内でも観測 (IIJ MITFハニーポット)]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=38064</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/38064"/>
+        <updated>2026-10-23T11:46:21.000Z</updated>
+        <summary type="html"><![CDATA[2026年10月20日に予告があり、翌21日23時(日本時間)に詳細と緊急パッチが公開されたPHPの脆弱性PHP2Shellは、PHPの高いシェアと悪用リスクの高さ、そして正式発表までの紆余曲折を含め...]]></summary>
+        <author>
+            <name>doumae</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RE談義2]]></title>
+        <id>hatenablog://entry/14945776032094304390</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/10/23/203055"/>
+        <updated>2026-10-23T11:30:55.000Z</updated>
+        <summary type="html"><![CDATA[読みたい人だけどうぞ。今回も頭おかしい私と、その内容に付き合ってくれるAIの話になります。長文＆そのままログです（約8000文字）。
+私：
+ChatGPT：
+これはかなり、「これ、前にもやったぞ」をメタ制御信号にするという発想そのものです。
+さらに今年7月には、そのものずばり When Do Agent Loops Mistake Stagnation for Progress? という研究があります。長時間agentが自分の作業を自分で評価すると、変更しただけで「進歩した」と判断しやすく、実際の外部状態では進んでいないことがある。実験では54サイクルすべてでagentが改善を主張したのに、56%は外部測定上の改善がゼロ以下だった、と報告しています。この現象を progress mirage（進捗の蜃気楼） と呼んでいます。これは昨日のCodexそのものに近いですね。
+状態モデルを拡張した
+つまり、あなたが言っていた**「積み上がっている感や閉塞感がない」問題は、かなり直接的に研究対象になっています。**もう一段古い研究まで戻ると、「疲労」「摩耗」に相当するものもあります。1991年のRussell & Wefaldの rational metareasoning は、「次の計算そのものに価値があるか」を判断する理論です。追加計算によって意思決定がどれくらい改善するかと、計算コストを比較する。つまり、まだ計算できるか？ではなく、さらに計算する価値があるか？を評価します。
+今の言葉なら、人工的な「疲労」にかなり近い。さらに2024年にはこれをLLMにそのまま持ち込み、不要な推論にコストを課す Rational Metareasoning for Large Language Models が出ています。推論ステップを必要なときだけ使わせることで、性能を保ちながら生成トークンを…]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026/10]]></title>
         <id>https://note.com/aiobahn/n/n3dda21dc0b7c</id>
