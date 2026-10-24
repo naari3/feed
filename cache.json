@@ -984,6 +984,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032094789647",
+          "author": null,
+          "description": "コーヒー豆はほとんどオンラインで買っています。\nただ、買うのはいつも知っているお店ばかりで、同じところをぐるぐる回っていた。\nそれもちょっともったいない気がして、2024年の秋くらいから全国の焙煎所を調べて、まだ買ったことのないお店から取り寄せる活動を始めました。都道府県をひとつずつ埋めていく感じで、いまも続けています。\n買ったお店がだいぶ増えてきたので、地図にまとめたサイトを作りました。\nroaster-map.nishimu.land\n載せているのは通販で買ったお店だけで、店頭やカフェで買った分は入れていません。\nいまのところ64軒、43都道府県で、通販での購入は117回。残りは富山、福井、鹿児島、沖縄。\nピンを押すと、そのお店で買った豆と感想が出ます。何度も買っているお店には回数が付くので、自分がどこに偏っているのかが一目で分る。STYLE COFFEE だけ27回で、ひとりだけ桁が違う。\n都道府県の塗りつぶしもあって、色の付いていない県を眺めて次に買うお店を探すのに使っています。\n地図は Leaflet と 国土地理院の淡色地図 で描いていて、データは Notion に付けていた記録と注文メールを付き合わせて JSON にしました。\n富山、福井、鹿児島、沖縄で通販をやっている焙煎所を知っている人がいたら教えてください。",
+          "link": "https://blog.nishimu.land/entry/2026/10/24/224301?utm_source=feed",
+          "publishedOn": "2026-10-24T13:43:01.000Z",
+          "wordCount": 353,
+          "title": "通販で買ったコーヒー豆のお店マップを作った",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12704346814673931685/14945776032094789647/1792849381",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12704346814673931685/14945776032094789647/1792849381"
+        },
+        {
           "id": "hatenablog://entry/14945776032093169183",
           "author": null,
           "description": "以前の記事でClaude CodeをAgent Safehouseのsandboxに入れて使っていると書いたけど、nonoに乗り換えた。\nきっかけはLinuxマシンでもClaude Codeを動かすようになったこと。Safehouseはsandbox-execをラップするやつなのでmacOS専用で、Linux側は素のままになっていた。nonoはmacOSではSeatbelt、LinuxではLandlockを使ってカーネルレベルでアクセスを制限してくれる。しかも設定は同じJSONのプロファイルで書ける。MacとLinuxで同じsandboxを1つの設定で管理できるのが決め手だった。\nnono\nnono.sh\nMacはHomebrewで入る。\nbrew install nono\n\n\n\nLinuxはインストールスクリプトが用意されている。Debian・Fedora・Archのパッケージもあるので、詳しくは公式のインストール手順を見てください。LandlockのためにLinuxカーネル5.13以降が必要です。\ncurl -fsSL https://nono.sh/install.sh | sh\n\n\n\nあとはnono runでコマンドを包むだけ。\nnono run --profile claude --allow-cwd -- claude\n\n\n\nSafehouseとの一番の違いは、ポリシーをJSONのプロファイルで宣言的に書くところ。プロファイルはextendsで継承できて、registryで配布されているnolabs-ai/claudeを土台にできる。~/.claudeへの書き込み許可や~/.ssh・キーチェーン・シェル履歴の拒否といったClaude Code向けの基本設定が最初から入っている。中身はnono profile show nolabs-ai/claudeで確認できま…",
