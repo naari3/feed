@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-24T00:04:45.462Z</updated>
+    <updated>2026-10-24T01:15:11.708Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[GameGaz Daily 2026.10.24]]></title>
+        <id>https://gamegaz.com/?p=46368</id>
+        <link href="https://gamegaz.com/2026102446368/"/>
+        <updated>2026-10-24T00:35:21.000Z</updated>
+        <summary type="html"><![CDATA[Nintendo Classicsタイトル追加,宮本茂氏が文化勲章受章,ソニーがUltra HD ブルーレイプレーヤー販売終了,NXPress 1.2.0,iso2god-next 1.2.1,jEnesisDS Plus v0.8, ArchiveFlow,hekate 6.5.4 & Nyx 1.9.4日本語版→→→この記事の続きを読む
+GameGaz Daily 2026.10.24 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Quad9に寄付した]]></title>
         <id>hatenablog://entry/14945776032094408070</id>
@@ -10825,62 +10836,6 @@ GameGaz Daily 2026.7.27 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>youtt6</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[みんなが普段づかいしてるマイコンボードは何？ アンケートで分かった、2026年の電子工作定番ボード]]></title>
-        <id>hatenablog://entry/14945776032057516222</id>
-        <link href="https://nomolk.hatenablog.com/entry/2026/07/26/212900"/>
-        <updated>2026-07-26T12:29:00.000Z</updated>
-        <summary type="html"><![CDATA[今年の４月に、常用しているマイコンボードのアンケートを実施しました。
-
-【拡散希望】電子工作によく使うマイコンボードに関するアンケートを取っています
-リプライにURLをつけるのでご回答お願いします！
-質問いくつかありますが、一番上の項目だけで30秒で回答可能です～何卒！ pic.twitter.com/tjiwPWVlph
-— 石川大樹／ヘボコン主催者、「雑に作る」（電子工作本）発売中 (@ishikawa_daiju) 2026年4月10日
-   
-最初に一応説明すると、マイコンボードというのは電子工作で使うパーツで、他の部品を制御するためのものです。いま初心者が電子工作を始めると、大抵はまず何かしらのマイコンボードを用意し、そこにやりたいことに応じたセンサーやLEDをつないで、マイコンボード側にそれを制御するプログラムを書き込んで、完成、という手順になると思います。これだけでいろんな作品が作れます。上級者だと回路はもっと複雑になってきますが、マイコンボードが頭脳的な役割を果たすことには変わりがないです。
-そんなマイコンボードですが、けっこう種類があるんですよね。
-自分は前に初心者向けの電子工作本「雑に作る」を出したり、また原稿仕事やこのブログでも初心者向けの電子工作を扱うことが多いので、「いま初心者～中級者の人が使ってるマイコンボードって何なんだろうか」というのがずっと気になっていました。
-そういうわけでアンケートを取ったところ、おかげさまでたくさんの回答が集まりましたので、その結果をここに公開します。ご協力いただいたみなさま、どうもありがとうございました！
-アンケートについて
-総回答数243件
-Xアカウント @ishikawa_daiju を起点に拡散。本職の技術者よりも趣味で電子工作やってる人とかの方が多そう。
-マイコンボードについてのアンケートのため、マイコンのチ…]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[進捗]]></title>
-        <id>hatenablog://entry/14945776032057945294</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/07/26/212830"/>
-        <updated>2026-07-26T12:28:30.000Z</updated>
-        <summary type="html"><![CDATA[同期、完璧になりました。
-全フレームをGBFS化すると47MBになるので前半と後半に分けてROM化。デコードが重くてスキップしたフレームをログ出力。そのファイルを削除するとあら不思議、30.5MBに収まりましたという話になります・・・。うーん、動画でこの理論はいいのだろうか・・・。デコード処理によって1vblankに収まるのと、2vblankかかる2種類があるわけですが、とりあえずmGBAで走らせて確認するという力業で決着しました。
-Geminiさんと相談したところ、事後のログを使わないなら、ある程度未使用覚悟でロムに持つしかないよ、とのお返事。いやー無理なんだって。え？一律2vblank固定デコードか、1vblank処理で済んだ場合は1vblank休ませるって？休ませるぐらいならフレーム表示したいよなあ、というところで私の知性の限界とあいなりました。
-	IrqSetCnt(0);
-
-	for(;;)
-	{
-		s32 v = IrqGetCnt();
-
-		ImgDrawBg(v);
-		Img2.isUse[v] = true;		// あとでまとめてログ出力
-
-		VBlankIntrWait();
-
-		ImgDrawPal();				// 関数内でmode4 flip
-
-		if(Img.bg >= 8370)
-		{
-			Img.step++;
-
-			return;
-		}
-	}]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>
