@@ -2,10 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-26T12:59:03.797Z</updated>
+    <updated>2026-10-26T14:45:07.110Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む]]></title>
+        <id>https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</id>
+        <link href="https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html"/>
+        <updated>2026-10-26T15:59:52.000Z</updated>
+        <summary type="html"><![CDATA[10月20日と21日に米カリフォルニア州で行われたイベント「PyTorch Conference 2026」において、AWSとGoogle Cloudが相次いでPyTorchの自社AIプロセッサ対応版をオープンソースとして発表しました。 A...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gezine氏 SmileBASICのns2jbを紐付きから紐なしJailbreakへ]]></title>
         <id>https://gamegaz.com/?p=46391</id>
@@ -200,6 +210,22 @@ AI で急に安くなったのは、木を切るコストのほうです。
         <summary type="html"><![CDATA[www.youtube.com]]></summary>
         <author>
             <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[コミケット10年史―混迷からの飛翔と現状]]></title>
+        <id>hatenablog://entry/14945776032095065317</id>
+        <link href="https://kougasetumei.hatenablog.com/entry/comiket-10th-Anniversary"/>
+        <updated>2026-10-25T05:56:19.000Z</updated>
+        <summary type="html"><![CDATA[所載：コミケット準備会編『コミケット・グラフィティ―マンガ・アニメ同人誌の10年』（朝日出版社／1985年）
+マンガ同人誌ブームとコミックマーケット
+序説
+マンガは現在、手軽な娯楽として大量消費されている。月、数百誌にも及ぶマンガ雑誌、数十点ものマンガ単行本。それは出版物の三割を越すともいわれている。活字文化の世代にとってそれは異常なことかもしれない。だがこういった傾向は進みこそすれ、退潮することはしばらくはありえないだろう。何故ならマンガは「表現手段」だからであり、それを共通言語とする層はますます増えつつあるからだ。
+しかし、マンガという表現は論理を語ることには適さないが、感覚や気分といったものを伝えることに長けている。たぶん、今、若い層を中心としたメディアの授受において問題なのは、「気持ち良さ」の感覚だと思える。そうした時、思想でも論理でもない漠然とした「気分」、あるいは自分が面白がれること、気持ち良いと感じることを伝える上で、マンガは実に有効な表現手段として機能する。このマンガという手段はさらに、難しいテクニックを必要とはしない。誤解を承知で言うならば、実に手軽に安易に行えるのだ。ペンと墨汁と紙さえあれば、個人作業で成しえてしまう。それが商品価値を持つかどうかさえ考慮しなければ、マンガは誰にでも描けるのだ。
+巨大なマンガ産業を支えているのは多数の消費者であると共に、これまた多数のマンガ家である。そして商業誌で活躍するプロ作家の背後にはその数百倍のアマチュアの描き手達が供給源としてひかえているのだ。これもまた、マンガという表現の手軽さ故だろう。――特に若い層にとっては、マンガは言語に近いレベルでの自己表現の手段となりつつある。
+こういった状況を如実に表すものとしてここ数年のマンガ同人誌ブームをあげることができる。かつて、石森章太郎や赤塚不二夫といった現在の大ベテラン達も…]]></summary>
+        <author>
+            <name>Underground Magazine Archives</name>
         </author>
     </entry>
     <entry>
@@ -10848,26 +10874,6 @@ iframe等の埋め込みタグを貼り付けた際に正しく表示されな�
 この度はご不便をおかけいたしまして申し訳ございませんでした。再発防止に努めてまいります。]]></summary>
         <author>
             <name>はてなブログ開発ブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-07-28]]></title>
-        <id>hatenablog://entry/14945776032058727594</id>
-        <link href="https://commits.hatenablog.com/entry/2026/07/29/100000"/>
-        <updated>2026-07-29T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[GitHub Flavored Markdownで、テーブル内のインラインコードに a|b を書く方法はどれか。
-`a|b` をテーブル外に書いた時の出力と同じものが、テーブルのセル内に表示されるものを正とする。
-| th |
-| -- |
-| `a|b` |
-| `a\|b` |
-— 🎹 (@p_ck_) July 28, 2026
-   
-GFMのテーブル内に縦棒を書くのは難しいという話を職場でしていて、それをツイートした。難しいよね。
-人々がたくさん間違えれば間違えるほど(作問者としては)嬉しいので、間違えてほしい。でも間違える人が少ないほうが良い構文ではありそう。
-こういう問題が起きるのはテーブルぐらいかなあ。そしてテーブルはGFM拡張なので、純粋なCommonMarkだとこういう自体は起きなさそう。]]></summary>
-        <author>
-            <name>diary</name>
         </author>
     </entry>
     <entry>
