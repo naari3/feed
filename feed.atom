@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-27T00:04:38.738Z</updated>
+    <updated>2026-10-27T01:19:20.925Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-10-26]]></title>
+        <id>hatenablog://entry/14945776032095713585</id>
+        <link href="https://commits.hatenablog.com/entry/2026/10/27/100000"/>
+        <updated>2026-10-27T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[elin.pocke.me
+github.com
+ElinキャラビューワーをVercelからCloudflareに移行した。
+commits.hatenablog.com
+元々CloudflareでホストしていたのをVercelに移したのだけど、再度Cloudflareに戻ってきたことになる。
+Vercelがアクセス過多でfreeプランの上限に達していたのが移行の理由。
+ただ、Cloudflare側でもR2のリクエスト数が多くなりすぎているので厳しい。見たところApplebotからのリクエストがだいぶ多いようなので、一時的にblockしてみた。
+
+UGREEN Wi-Fi 無線LAN 子機 AC650 433Mbps + 200Mbps Windows10/8.1/8/7 10.11ー10.15 Linux 対応
+
+UGREEN
+Amazon
+
+デスクトップPC用にWi-Fiドングルを買った。Ubuntu Serverで今のところいい感じに動いている。PCにLANケーブルを繋がなくて済むので、自室からPCを移動させられる。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【体験談】楽天マートの評判は？お買い物応援プランで送料無料・頼むたびに牛乳や卵が無料、深夜でも当日届くネットスーパー]]></title>
         <id>hatenablog://entry/14945776032095292733</id>
@@ -10855,29 +10878,6 @@ GameGaz Daily 2026.7.30 first appeared on 大人のためのゲーム講座.]]><
 続きをみる]]></summary>
         <author>
             <name>youtt6</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[雑調査]]></title>
-        <id>hatenablog://entry/14945776032059030522</id>
-        <link href="https://akkera102.hatenablog.com/entry/2026/07/29/211059"/>
-        <updated>2026-07-29T12:10:59.000Z</updated>
-        <summary type="html"><![CDATA[aPLibとLz77を比較です。
-・GBA上でのフレームカウント総数4000
-・実在するフレームファイル数2006ファイル
-・1フレームmode4(180, 20) + 256色パレット
-
-・表示できたフレーム総数
-aPLib：2506
-Lz77：2777
-
-・GBFS容量（＋音楽ファイル含む）
-aPLib：22.5 MB (23,669,200 バイト)
-Lz77：25.8 MB (27,059,200 バイト)
-やっぱりaPlibは重かったなあという印象です。ビット操作を頻繁にするのがARMと相性悪いみたいです。8bit CPU界隈ですとまた違った結果になったかもですねー残念。ノベルゲームとしては相性いいので今後つかっていくかもしれないです。
-だいなのアップデートはこれ以上できそうにないのでもちっとコードを整頓して終わりになりそうです。]]></summary>
-        <author>
-            <name>あーさん日記</name>
         </author>
     </entry>
     <entry>

@@ -553,21 +553,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032059189000/1785373470"
-        },
-        {
-          "id": "hatenablog://entry/14945776032059030522",
-          "author": null,
-          "description": "aPLibとLz77を比較です。\n・GBA上でのフレームカウント総数4000\n・実在するフレームファイル数2006ファイル\n・1フレームmode4(180, 20) + 256色パレット\n\n・表示できたフレーム総数\naPLib：2506\nLz77：2777\n\n・GBFS容量（＋音楽ファイル含む）\naPLib：22.5 MB (23,669,200 バイト)\nLz77：25.8 MB (27,059,200 バイト)\nやっぱりaPlibは重かったなあという印象です。ビット操作を頻繁にするのがARMと相性悪いみたいです。8bit CPU界隈ですとまた違った結果になったかもですねー残念。ノベルゲームとしては相性いいので今後つかっていくかもしれないです。\nだいなのアップデートはこれ以上できそうにないのでもちっとコードを整頓して終わりになりそうです。",
-          "link": "https://akkera102.hatenablog.com/entry/2026/07/29/211059",
-          "publishedOn": "2026-07-29T12:10:59.000Z",
-          "wordCount": 539,
-          "title": "雑調査",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032059030522/1785327134",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032059030522/1785327134"
         }
       ]
     },
@@ -1156,6 +1141,21 @@
       "feedUrl": "https://commits.hatenablog.com/rss",
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14945776032095713585",
+          "author": null,
+          "description": "elin.pocke.me\ngithub.com\nElinキャラビューワーをVercelからCloudflareに移行した。\ncommits.hatenablog.com\n元々CloudflareでホストしていたのをVercelに移したのだけど、再度Cloudflareに戻ってきたことになる。\nVercelがアクセス過多でfreeプランの上限に達していたのが移行の理由。\nただ、Cloudflare側でもR2のリクエスト数が多くなりすぎているので厳しい。見たところApplebotからのリクエストがだいぶ多いようなので、一時的にblockしてみた。\n\nUGREEN Wi-Fi 無線LAN 子機 AC650 433Mbps + 200Mbps Windows10/8.1/8/7 10.11ー10.15 Linux 対応\n\nUGREEN\nAmazon\n\nデスクトップPC用にWi-Fiドングルを買った。Ubuntu Serverで今のところいい感じに動いている。PCにLANケーブルを繋がなくて済むので、自室からPCを移動させられる。",
+          "link": "https://commits.hatenablog.com/entry/2026/10/27/100000",
+          "publishedOn": "2026-10-27T01:00:00.000Z",
+          "wordCount": null,
+          "title": "2026-10-26",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/963ac7435187e5245f275cf3c1b73b92fb418600/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F311FaXPpZ2L._SL500_.jpg",
+            "type": "image/jpeg",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/963ac7435187e5245f275cf3c1b73b92fb418600/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F311FaXPpZ2L._SL500_.jpg"
+        },
         {
           "id": "hatenablog://entry/14945776032095284014",
           "author": null,
