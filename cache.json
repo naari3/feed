@@ -30,6 +30,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14945776032096038609",
+          "author": null,
+          "description": "私とGPTさんで作ったリバースエンジニアリング（RE）についての勉強メモです。1万字ほどあるので興味のある方だけどうぞ。\nSega v. AccoladeやSony v. Connectixなどの判例から、互換実装、clean room、Samba、Wine、最近のAIを使ったREまで、あれこれ調べながら整理しました。それにしても「解析する側」の人間が、権利や境界線について文章を公開するというのは、なんだか笑えますね・・・。\nhttps://akkera102.sakura.ne.jp/test3/reverse_engineering_interoperability_idea.html\n19章だけそのままコピーします。\n19. Desire path / 暗黙の地形\n\n長年のゲームRE、emulation、保存活動によって、\n\n    ここを踏むと権利者が強く来る\n    この種のprojectは長年存在している\n    assetsは各自用意\n    現行platformのkeys / firmware / DRMは別扱い\n    古いplatformのbehavioral reconstructionは多数存在\n\nという経験則上の「地形」が生まれている。\n\nこれは明文化されたsafe harborではない。\n\nしかしREしたい人の数と長年の実践によって形成された desire path と見ることができる。\n\nz2rsのLEGAL / PROVENANCEのような文書は、その獣道に道路標識を置き始めたものとも見える。\n\n先人方ありがとう。",
+          "link": "https://akkera102.hatenablog.com/entry/2026/10/27/201621",
+          "publishedOn": "2026-10-27T11:16:21.000Z",
+          "wordCount": 549,
+          "title": "RE勉強メモ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032096038609/1793101950",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14945776032096038609/1793101950"
+        },
+        {
           "id": "hatenablog://entry/14945776032095170652",
           "author": null,
           "description": "www.youtube.com",
@@ -8673,16 +8688,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2026.7.31",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=45868",
-          "author": "mamosuke",
-          "description": "BFplayer v0.1.0-alpha.42 Test Build,vr2jb v1.0.0,Vita Save Keeper v1.2.0,wLaunchELF_R3Z v4.76,TwilightBoxart 2.3,PSVR2Toolkit v1.0.0 Experimental #1,Universal Dreamcast Patcher v2.1.6,KytyPS5 2026-07-29-e91dd39,shadPS4 Pre-release-shadPS4-2026-07-29-24e68ba,PCSX2 v2.7.506,ARMSX2 2.6.6,ARMSX2 nightly 20260729 (2ed3268f74)→→→この記事の続きを読む\nGameGaz Daily 2026.7.30 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026073045868/",
-          "publishedOn": "2026-07-29T23:13:18.000Z",
-          "wordCount": 1738,
-          "title": "GameGaz Daily 2026.7.30",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
