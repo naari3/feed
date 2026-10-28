@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-28T12:01:48.985Z</updated>
+    <updated>2026-10-28T13:01:46.584Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Nintendo Switch 2でLuaコードを実行できるSeedsow Lua Editor by DialingSpoon527]]></title>
+        <id>https://gamegaz.com/?p=46417</id>
+        <link href="https://gamegaz.com/2026102846417/"/>
+        <updated>2026-10-28T12:43:31.000Z</updated>
+        <summary type="html"><![CDATA[DialingSpoon527氏がSwitch 1『たねつみの歌』体験版のセーブデータを改変しLuaスクリプトを実行できるSeedsow Lua Editor v0.1.3をリリースしていました。→→→この記事の続きを読む
+Nintendo Switch 2でLuaコードを実行できるSeedsow Lua Editor by DialingSpoon527 first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kindle Oasis の本がぜんぶ「Item Not Available」になった]]></title>
+        <id>hatenablog://entry/14945776032096468289</id>
+        <link href="https://blog.nishimu.land/entry/2026/10/28/211219?utm_source=feed"/>
+        <updated>2026-10-28T12:12:19.000Z</updated>
+        <summary type="html"><![CDATA[Kindle Oasis で本を開こうとしたら「Item Not Available」と出て開けなかった。別の本も、その次の本も同じで、ライブラリにある本がぜんぶ開けなない。
+Grok bot に相談したら、Reddit などから似た症状の報告を集めてきてくれた。端末の空き容量が極端に少ないと起きる、いわゆる「スペースバグ」というのがあるらしい。
+設定 → 端末オプション → 端末情報で見てみると、たしかに空き容量がほとんど残っていない。症状も似ているので、これではということで Grok bot が挙げた手順を試すことにした。
+まず機内モードにして、電源ボタンを 40 秒ほど長押しして強制再起動する。
+そのあと Mac に USB でつなぎ、ドライブとして認識されるまで数分待ってから、安全に取り外して再起動する。USB でつなぐだけで何が変わるのかはよく分からない。
+最後は Wi-Fi に戻して同期し、日時が合っているかも確認した。
+これで本が開けるようになりました。
+Grok bot からは、これでも直らなければ手動でアップデートするか、登録解除して再登録する、最悪は工場出荷リセットという案も出ていた。リセットすると端末内の本は消えるので、そこまで行かずに済んでよかった。
+端末内ストレージの一覧情報（インデックス）が壊れていたんじゃないか、というのが Grok bot の見立て。ちゃんとした原因は分かっていない。
+
+Amazon Kindle Colorsoft | 16GBストレージ、防水、7インチカラーディスプレイ、色調調節ライト、最大8週間持続バッテリー、広告無し、ブラック (2025年発売)
+
+Amazon
+Amazon]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Bravest!2 リリース]]></title>
         <id>hatenablog://entry/14945776032096448308</id>
@@ -51,6 +85,31 @@ twada/tddbc-sendai-11th: TDDBC Sendai 11th のお題に Claude Code でチャレ
 普段の TDDBC では私はコーディング課題の出題者の立場なのですが、TDDBC 仙台では主催チームの井上さんがコーディング課題を考案するので、私も参加者として初見のお題にチャレンジする密かな楽しみがあります。ただ、例年は各ペアのレビューに歩き回るので、出題されたばかりのお題に開催中の会場でチャレンジする余力は…]]></summary>
         <author>
             <name>t-wadaのブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chizu 🧀: リンクをルールに応じてブラウザとプロファイルへ振り分けるmacOSアプリ]]></title>
+        <id>https://efcl.info/2026/10/28/chizu/</id>
+        <link href="https://efcl.info/2026/10/28/chizu/"/>
+        <updated>2026-10-28T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[macOSの既定のブラウザとして登録しておき、開いたリンクを設定ファイルのルールに応じて、指定したブラウザとプロファイルへ振り分けるアプリ Chizu 🧀 を作りました。
+GitHub: azu/chizu
+Chizuには、ブラウザを選ぶ画面や設定画面はありません。
+振り分けのルールは~/.config/chizu/config.jsoncというJSONCファイルに書き、リンクを開くたびにこのファイルを読み直します。
+行き先にはブラウザのプロファイルも指定でき、現時点ではDiaとGoogle Chromeのプロファイル指定に対応しています。
+インストール
+動作環境は次のとおりです。
+Apple SiliconのMac + macOS 14以降
+次のコマンドでインストールし、ChizuをmacOSの既定のブラウザに設定できます。
+いつも通りnotarizationはしてないので、自己判断でご自由にどうぞ。
+
+curl -fL https://github.com/azu/chizu/releases/latest/download/chizu-macos-arm64.zip -o "$TMPDIR/chizu-macos-arm64.zip" &&
+curl -fL https://github.com/azu/chizu/releases/latest/download/chizu-macos-arm64.zip.sha256 -o "$TMPDIR/chizu-macos-arm64.zip.sha256" &&
+(cd "$TMPDIR" && shasum -a 256 -c chizu-macos-arm64.zip.sha256) &&
+mkdir -p "$HOME/Applications" &&
+ditto -x -k "$TMPDIR/chizu-mac…]]></summary>
+        <author>
+            <name>Web Scratch</name>
         </author>
     </entry>
     <entry>
@@ -10845,16 +10904,6 @@ GameGaz Daily 2026.8.1 first appeared on 大人のためのゲーム講座.]]></
 GameGaz Daily 2026.7.31 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[人工衛星はなぜ地球に落ちないのか- 人工衛星としてのStarlinkを知る]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=37077</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/37077"/>
-        <updated>2026-07-31T00:04:31.000Z</updated>
-        <summary type="html"><![CDATA[はじめに 夜空を見上げていると、点のような光がすーっと一定の速さで横切っていくことがあります。 小さい頃の私はU.F.Oだと思っていましたが、大体は人工衛星です。 そして近年、その人工衛星の数を一気に...]]></summary>
-        <author>
-            <name>中野 雄介</name>
         </author>
     </entry>
     <entry>
