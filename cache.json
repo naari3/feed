@@ -30,6 +30,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035330963665",
+          "author": null,
+          "description": "画像だけお見せしてお蔵入り予定です。全自動の選択肢機能付き。いやー満足満足。たぶん2週間ぐらいかかりますけど（ハンドリングできれば）誰でもここまでいけますね・・・。\nhttps://akkera102.sakura.ne.jp/test3/eve98_js.png",
+          "link": "https://akkera102.hatenablog.com/entry/2026/10/29/230625",
+          "publishedOn": "2026-10-29T14:06:25.000Z",
+          "wordCount": 515,
+          "title": "謎ぷろ",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14729835035330963665/1793283914",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14729835035330963665/1793283914"
+        },
+        {
           "id": "hatenablog://entry/14945776032096038609",
           "author": null,
           "description": "私とGPTさんで作ったリバースエンジニアリング（RE）についての勉強メモです。1万字ほどあるので興味のある方だけどうぞ。\nSega v. AccoladeやSony v. Connectixなどの判例から、互換実装、clean room、Samba、Wine、最近のAIを使ったREまで、あれこれ調べながら整理しました。それにしても「解析する側」の人間が、権利や境界線について文章を公開するというのは、なんだか笑えますね・・・。\nhttps://akkera102.sakura.ne.jp/test3/reverse_engineering_interoperability_idea.html\n19章だけそのままコピーします。\n19. Desire path / 暗黙の地形\n\n長年のゲームRE、emulation、保存活動によって、\n\n    ここを踏むと権利者が強く来る\n    この種のprojectは長年存在している\n    assetsは各自用意\n    現行platformのkeys / firmware / DRMは別扱い\n    古いplatformのbehavioral reconstructionは多数存在\n\nという経験則上の「地形」が生まれている。\n\nこれは明文化されたsafe harborではない。\n\nしかしREしたい人の数と長年の実践によって形成された desire path と見ることができる。\n\nz2rsのLEGAL / PROVENANCEのような文書は、その獣道に道路標識を置き始めたものとも見える。\n\n先人方ありがとう。",
