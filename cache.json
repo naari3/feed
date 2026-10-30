@@ -1142,6 +1142,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035331075603",
+          "author": null,
+          "description": "青森まで移動した。\n伊丹から飛行機で青森空港まで移動した。多分岡山から青森に行く最適解では。岡山空港からの東北便がほしい。\n翌日は朝のリゾートしらかみですぐ青森を立つ予定。\n青森はまあまあ寒かったが、コート無しでも凍えることなく生きていけるぐらいだった。岡山ではまだやや夏気分だったので、ちゃんと寒さ対策をしていて正解だった。\n新青森に宿を取っていたのだけど、新青森は何もないタイプの新幹線駅だと理解した。青森駅に宿を取っていた方が絶対楽だったなあ。",
+          "link": "https://commits.hatenablog.com/entry/2026/10/30/100000",
+          "publishedOn": "2026-10-30T01:00:00.000Z",
+          "wordCount": 558,
+          "title": "2026-10-29",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14729835035331075603/1793322002",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14729835035331075603/1793322002"
+        },
+        {
           "id": "hatenablog://entry/14945776032095713585",
           "author": null,
           "description": "elin.pocke.me\ngithub.com\nElinキャラビューワーをVercelからCloudflareに移行した。\ncommits.hatenablog.com\n元々CloudflareでホストしていたのをVercelに移したのだけど、再度Cloudflareに戻ってきたことになる。\nVercelがアクセス過多でfreeプランの上限に達していたのが移行の理由。\nただ、Cloudflare側でもR2のリクエスト数が多くなりすぎているので厳しい。見たところApplebotからのリクエストがだいぶ多いようなので、一時的にblockしてみた。\n\nUGREEN Wi-Fi 無線LAN 子機 AC650 433Mbps + 200Mbps Windows10/8.1/8/7 10.11ー10.15 Linux 対応\n\nUGREEN\nAmazon\n\nデスクトップPC用にWi-Fiドングルを買った。Ubuntu Serverで今のところいい感じに動いている。PCにLANケーブルを繋がなくて済むので、自室からPCを移動させられる。",
@@ -7299,6 +7314,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=46434",
+          "author": "mamosuke",
+          "description": "Switch2でSDカード,spu_iso_tool v1.1.0,mac2jb v0.6.0,Orion-Media-Center 01.106.000,kdump_ps5 Build bbe5d82,12.xx-linux-loader,saroo-stv→→→この記事の続きを読む\nGameGaz Daily 2026.10.30 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026103046434/",
+          "publishedOn": "2026-10-30T00:55:56.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.10.30",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=46429",
           "author": "mamosuke",
