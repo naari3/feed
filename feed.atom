@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-10-31T22:01:50.574Z</updated>
+    <updated>2026-10-31T23:02:09.120Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
@@ -560,6 +560,16 @@ byizmysh氏 IZlauncherからSwitch 2でGTA V起動 first appeared on 大人の�
 任天堂はハックで名前が出たタイトルをストアから消している first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[インターン体験記]加盟店精算を支えるSettlement Serviceのリアーキテクチャの取り組み]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20261027-1ac9405984/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20261027-1ac9405984/"/>
+        <updated>2026-10-27T16:58:16.000Z</updated>
+        <summary type="html"><![CDATA[はじめに こんにちは。メルペイ Balanceチームで8月から3ヶ月間、インターンをしている早稲田大学基幹理工学部3年の小林加弦(@kobakaito)です。普段は大学でコンピュータサイエンスを専攻しつつ、アルバイト・業 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -2019,6 +2029,16 @@ PS5の最新ファームウェア14.10でデバッグ設定表示 Gezine氏が�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルカリにおけるTiKVオートスケールの実践]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20261019-14369ee694/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20261019-14369ee694/"/>
+        <updated>2026-10-19T14:49:35.000Z</updated>
+        <summary type="html"><![CDATA[本記事は、私たちメルカリのDBRE（Database Reliability Engineering）チームが先日公開した TiDB Cloudのオートスケール改善 – 時間帯別制御、TiKVへの拡張、運用の […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[【ランク一覧】揖保乃糸の帯の色の違いは？上級品（赤帯）と特級品（黒帯）を食べ比べたら違いが分からん！]]></title>
         <id>hatenablog://entry/26006613798495935</id>
         <link href="https://hardshopper.hatenablog.com/entry/ibonoito"/>
@@ -2572,6 +2592,16 @@ GBAの限界を超えた弾幕を見よ！https://t.co/dkj758XlaE pic.twitter.co
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Elasticsearch の Autoscaling を改善する: scale-out の高速化と HPA tolerance の調整]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20261016-7c6fdc173f/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20261016-7c6fdc173f/"/>
+        <updated>2026-10-16T10:02:16.000Z</updated>
+        <summary type="html"><![CDATA[はじめに 検索基盤チームの mrkm4ntr です。以前、CPU 使用率による Elasticsearch の autoscaling について書きました。ピーク時間帯に合わせて確保していたリソースを、トラフィックに合わ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[AVIF形式・WebP形式の画像をアップロードした際に行われる処理を見直しました]]></title>
         <id>hatenablog://entry/14945776032090412559</id>
         <link href="https://staff.hatenablog.com/entry/2026/10/16/111138"/>
@@ -3032,6 +3062,16 @@ GameGaz Daily 2026.10.14 first appeared on 大人のためのゲーム講座.]]>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[「Merpay Tech Talk 〜メルカリグループ全体を支える決済基盤の全容[会計編]〜」を開催しました！ #merpay_techtalk]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20261009-25a7badf89/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20261009-25a7badf89/"/>
+        <updated>2026-10-13T12:00:41.000Z</updated>
+        <summary type="html"><![CDATA[2026年9月16日(水)「Merpay Tech Talk 〜メルカリグループ全体を支える決済基盤の全容［会計編］〜」をオンラインで開催しました。 決済と会計をつなぐ基盤はどのように発展してきたのか、そして、その過程で […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[git を起動しまくっていたのは security-guidance の hook だった]]></title>
         <id>hatenablog://entry/14945776032089745545</id>
         <link href="https://blog.nishimu.land/entry/2026/10/13/203123?utm_source=feed"/>
@@ -3048,6 +3088,16 @@ git の親をたどる
 メモリの犯人は追えないので、目に見えてい…]]></summary>
         <author>
             <name>ちなみに</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TiDB クラスタ統合の取り組み]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20261008-11f006c861/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20261008-11f006c861/"/>
+        <updated>2026-10-13T09:00:25.000Z</updated>
+        <summary type="html"><![CDATA[TiDB クラスタ統合の取り組み メルカリでは、CoreDB と呼ばれる中核データベースを、オンプレミス環境のMySQL から TiDB Cloud へと移行しました。MySQL から TiDB への移行に至った背景や移 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -3973,6 +4023,16 @@ www.nicovideo.jp
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[TiDB Cloudのオートスケール改善 &#8211; 時間帯別制御、TiKVへの拡張、運用の自動化]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20261007-0c17de8180/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20261007-0c17de8180/"/>
+        <updated>2026-10-08T07:00:18.000Z</updated>
+        <summary type="html"><![CDATA[TiDB Cloudのオートスケール改善 – 時間帯別制御、TiKVへの拡張、運用の自動化 本記事は、私たちメルカリのDBRE（Database Reliability Engineering）チームが今年4 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2026-10-07]]></title>
         <id>hatenablog://entry/14945776032087262319</id>
         <link href="https://commits.hatenablog.com/entry/2026/10/08/100000"/>
@@ -4864,6 +4924,16 @@ AIの発展によって技術に対して人間が取り残されている、よ
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[AIと越境する開発 ─ メルカリインターンでバックエンドに挑戦した3ヶ月]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20260929-ai-assisted-backend-internship/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20260929-ai-assisted-backend-internship/"/>
+        <updated>2026-09-30T14:54:45.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは！　Mercari Adsチームのインターン生の@utaです。 本記事では、フロントエンドを中心に経験してきた私が、AIを活用しながらバックエンドを含む機能開発に挑戦した3ヶ月間を振り返ります。インターン中に取 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[「はてなブログアワード」2026年8月度の受賞エントリーを発表しました！]]></title>
         <id>hatenablog://entry/14945776032084321695</id>
         <link href="https://blog.hatenablog.com/entry/2026/09/30/180829"/>
@@ -5471,6 +5541,16 @@ www.instagram.com
 良いこと言ってそう～～～。本当に反省し…]]></summary>
         <author>
             <name>Robot Checkerboard</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「Merpay Tech Talk 〜3年で50ヵ国へ。メルカリ決済基盤アーキテクチャ刷新の舞台裏〜」を開催しました！ #merpay_techtalk]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20260812-mptechtalk-report/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20260812-mptechtalk-report/"/>
+        <updated>2026-09-25T10:00:18.000Z</updated>
+        <summary type="html"><![CDATA[2026年8月12日に、「Merpay Tech Talk 〜3年で50ヵ国へ。メルカリ決済基盤アーキテクチャ刷新の舞台裏〜」をオンラインで開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -9413,6 +9493,16 @@ MAXまで上がらないと、マップをしらみ潰しに探す必要があ�
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[メルカリにおけるTiDB改善の取り組み：インデックス非互換への対応]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20260820-4f9e501769/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20260820-4f9e501769/"/>
+        <updated>2026-08-20T17:13:20.000Z</updated>
+        <summary type="html"><![CDATA[本記事は、私たちDBRE（Database Reliability Engineering）チームが2026年3月末までに行った改善を紹介する3つの記事の3つ目（最終回）です。 1つ目の記事「メルカリにおけるTiDB改善 […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Fluter 3.47正式リリース。UIライブラリが分離され独立してアップデート可能、デフォルトでWebAssemblyを生成する方向に、など新機能]]></title>
         <id>https://www.publickey1.jp/blog/26/fluter_347uiwebassembly.html</id>
         <link href="https://www.publickey1.jp/blog/26/fluter_347uiwebassembly.html"/>
@@ -9479,6 +9569,16 @@ GameGaz Daily 2026.8.20 first appeared on 大人のためのゲーム講座.]]><
 色々書きましたが、基本的に私は誰かが何らかのコミュニティで重要な役割を果たしてくれるのは素晴らしいことだと思います。ただしそれを会社の給与を受け取りながらやる場合は、関係者が納得した上でやるとよいのではないか、本人の信用を毀損してまでやることではない…という話でした。]]></summary>
         <author>
             <name>覚書</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリにおけるTiDB改善の取り組み：リソース制御・リージョンサイズ・プランキャッシュ編]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20260818-dba81909b6/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20260818-dba81909b6/"/>
+        <updated>2026-08-19T07:00:36.000Z</updated>
+        <summary type="html"><![CDATA[本記事は、私たちDBRE（Database Reliability Engineering）チームが2026年3月末までに行った改善を紹介する3つの記事の2つ目です。 1つ目のブログ記事の「メルカリにおけるTiDB改善の […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -9682,6 +9782,16 @@ ls -l /boot/efi/EFI/BOOT/
 https://another.maple4ever.net/archives/3810/]]></summary>
         <author>
             <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[メルカリにおけるTiDB改善の取り組み：IN句内100万件クエリへの対応]]></title>
+        <id>https://engineering.mercari.com/blog/entry/20260814-3bdaa0433a/</id>
+        <link href="https://engineering.mercari.com/blog/entry/20260814-3bdaa0433a/"/>
+        <updated>2026-08-17T07:30:34.000Z</updated>
+        <summary type="html"><![CDATA[先日、メルカリのCoreDBをMySQLからTiDBへ移行した振り返り という記事で、MySQLからTiDBへの移行完了に関する報告と、大枠の振り返りについてお伝えしました。これから3つの記事にわたって、私たちDBRE（ […]]]></summary>
+        <author>
+            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>
@@ -11120,46 +11230,6 @@ https://youtu.be/P2NM3NqTDLQ?si=iTRpcqO-AZfMmLWb
 希死念慮に気付くまでかなり時間がかかった。夏バテと勘違いしていたのが凶と出た。 続きをみる]]></summary>
         <author>
             <name>ユーロ/犬の鳴き真似bot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[メルペイインターンで通知をいい感じにした話]]></title>
-        <id>https://engineering.mercari.com/blog/entry/20250313-2dfe9c5828/</id>
-        <link href="https://engineering.mercari.com/blog/entry/20250313-2dfe9c5828/"/>
-        <updated>2025-03-14T11:00:40.000Z</updated>
-        <summary type="html"><![CDATA[はじめに こんにちは！北陸先端科学技術大学院大学修士1年の@midorinです。 メルペイのBalanceチームにて1月から3月にかけての2ヶ月間、バックエンドのインターンに参加しました。 今回は、インターンで主に取り組 […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cloud SQL for PostgreSQL のインスタンス統合]]></title>
-        <id>https://engineering.mercari.com/blog/entry/20250220-8685a1def6/</id>
-        <link href="https://engineering.mercari.com/blog/entry/20250220-8685a1def6/"/>
-        <updated>2025-02-20T15:18:39.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは。Mercari DBRE(Database Reliability Engineer) チームのエンジニアの @takashi-kun です. 今回私達のチームでは複数の Cloud SQL for Post […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LLM x SRE: メルカリの次世代インシデント対応]]></title>
-        <id>https://engineering.mercari.com/blog/entry/20250206-llm-sre-incident-handling-buddy/</id>
-        <link href="https://engineering.mercari.com/blog/entry/20250206-llm-sre-incident-handling-buddy/"/>
-        <updated>2025-02-06T14:41:37.000Z</updated>
-        <summary type="html"><![CDATA[株式会社メルカリのPlatform Enablerチームで新卒エンジニアとして働くTianchen Wang (@Amadeus)です。今回は、Large Language Model (LLM)を利用してフリマアプリ「 […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[メルカリ ハロのインターンに2ヶ月参加してみて]]></title>
-        <id>https://engineering.mercari.com/blog/entry/20250128-15cddb7f50/</id>
-        <link href="https://engineering.mercari.com/blog/entry/20250128-15cddb7f50/"/>
-        <updated>2025-01-29T12:00:46.000Z</updated>
-        <summary type="html"><![CDATA[こんにちは、九州大学大学院1年の@masaと申します。 私は、2024年11月から12月末までの2ヶ月間、メルカリ ハロのフロントエンドエンジニアとして、インターンに参加しました。 今回は、その中で特に注力したインテグレ […]]]></summary>
-        <author>
-            <name>メルカリエンジニアリングブログ</name>
         </author>
     </entry>
     <entry>

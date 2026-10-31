@@ -7252,44 +7252,114 @@
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
         {
-          "id": "https://engineering.mercari.com/blog/entry/20250313-2dfe9c5828/",
+          "id": "https://engineering.mercari.com/blog/entry/20261027-1ac9405984/",
           "author": null,
-          "description": "はじめに こんにちは！北陸先端科学技術大学院大学修士1年の@midorinです。 メルペイのBalanceチームにて1月から3月にかけての2ヶ月間、バックエンドのインターンに参加しました。 今回は、インターンで主に取り組 […]",
-          "link": "https://engineering.mercari.com/blog/entry/20250313-2dfe9c5828/",
-          "publishedOn": "2025-03-14T11:00:40.000Z",
-          "wordCount": null,
-          "title": "メルペイインターンで通知をいい感じにした話",
-          "imageUrl": null
+          "description": "はじめに こんにちは。メルペイ Balanceチームで8月から3ヶ月間、インターンをしている早稲田大学基幹理工学部3年の小林加弦(@kobakaito)です。普段は大学でコンピュータサイエンスを専攻しつつ、アルバイト・業 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20261027-1ac9405984/",
+          "publishedOn": "2026-10-27T16:58:16.000Z",
+          "wordCount": 603,
+          "title": "[インターン体験記]加盟店精算を支えるSettlement Serviceのリアーキテクチャの取り組み",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/10/313c4043-スクリーンショット-2026-10-27-16.51.27-scaled.png"
         },
         {
-          "id": "https://engineering.mercari.com/blog/entry/20250220-8685a1def6/",
+          "id": "https://engineering.mercari.com/blog/entry/20261019-14369ee694/",
           "author": null,
-          "description": "こんにちは。Mercari DBRE(Database Reliability Engineer) チームのエンジニアの @takashi-kun です. 今回私達のチームでは複数の Cloud SQL for Post […]",
-          "link": "https://engineering.mercari.com/blog/entry/20250220-8685a1def6/",
-          "publishedOn": "2025-02-20T15:18:39.000Z",
-          "wordCount": 1363,
-          "title": "Cloud SQL for PostgreSQL のインスタンス統合",
-          "imageUrl": "https://engineering.mercari.com//img/ogp/ogp_a.jpg"
+          "description": "本記事は、私たちメルカリのDBRE（Database Reliability Engineering）チームが先日公開した TiDB Cloudのオートスケール改善 – 時間帯別制御、TiKVへの拡張、運用の […]",
+          "link": "https://engineering.mercari.com/blog/entry/20261019-14369ee694/",
+          "publishedOn": "2026-10-19T14:49:35.000Z",
+          "wordCount": 1075,
+          "title": "メルカリにおけるTiKVオートスケールの実践",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/10/5ea1b93a-eyecatch_a.png"
         },
         {
-          "id": "https://engineering.mercari.com/blog/entry/20250206-llm-sre-incident-handling-buddy/",
+          "id": "https://engineering.mercari.com/blog/entry/20261016-7c6fdc173f/",
           "author": null,
-          "description": "株式会社メルカリのPlatform Enablerチームで新卒エンジニアとして働くTianchen Wang (@Amadeus)です。今回は、Large Language Model (LLM)を利用してフリマアプリ「 […]",
-          "link": "https://engineering.mercari.com/blog/entry/20250206-llm-sre-incident-handling-buddy/",
-          "publishedOn": "2025-02-06T14:41:37.000Z",
-          "wordCount": null,
-          "title": "LLM x SRE: メルカリの次世代インシデント対応",
-          "imageUrl": null
+          "description": "はじめに 検索基盤チームの mrkm4ntr です。以前、CPU 使用率による Elasticsearch の autoscaling について書きました。ピーク時間帯に合わせて確保していたリソースを、トラフィックに合わ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20261016-7c6fdc173f/",
+          "publishedOn": "2026-10-16T10:02:16.000Z",
+          "wordCount": 1100,
+          "title": "Elasticsearch の Autoscaling を改善する: scale-out の高速化と HPA tolerance の調整",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2025/06/d232f046-eyecatch.png"
         },
         {
-          "id": "https://engineering.mercari.com/blog/entry/20250128-15cddb7f50/",
+          "id": "https://engineering.mercari.com/blog/entry/20261009-25a7badf89/",
           "author": null,
-          "description": "こんにちは、九州大学大学院1年の@masaと申します。 私は、2024年11月から12月末までの2ヶ月間、メルカリ ハロのフロントエンドエンジニアとして、インターンに参加しました。 今回は、その中で特に注力したインテグレ […]",
-          "link": "https://engineering.mercari.com/blog/entry/20250128-15cddb7f50/",
-          "publishedOn": "2025-01-29T12:00:46.000Z",
-          "wordCount": null,
-          "title": "メルカリ ハロのインターンに2ヶ月参加してみて",
-          "imageUrl": null
+          "description": "2026年9月16日(水)「Merpay Tech Talk 〜メルカリグループ全体を支える決済基盤の全容［会計編］〜」をオンラインで開催しました。 決済と会計をつなぐ基盤はどのように発展してきたのか、そして、その過程で […]",
+          "link": "https://engineering.mercari.com/blog/entry/20261009-25a7badf89/",
+          "publishedOn": "2026-10-13T12:00:41.000Z",
+          "wordCount": 481,
+          "title": "「Merpay Tech Talk 〜メルカリグループ全体を支える決済基盤の全容[会計編]〜」を開催しました！ #merpay_techtalk",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/09/8ab5da76-merpay-tech-talk-サムネイル.png"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20261008-11f006c861/",
+          "author": null,
+          "description": "TiDB クラスタ統合の取り組み メルカリでは、CoreDB と呼ばれる中核データベースを、オンプレミス環境のMySQL から TiDB Cloud へと移行しました。MySQL から TiDB への移行に至った背景や移 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20261008-11f006c861/",
+          "publishedOn": "2026-10-13T09:00:25.000Z",
+          "wordCount": 609,
+          "title": "TiDB クラスタ統合の取り組み",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/10/0a9ed0d7-tidbクラスタ統合_eyecatch.png"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20261007-0c17de8180/",
+          "author": null,
+          "description": "TiDB Cloudのオートスケール改善 – 時間帯別制御、TiKVへの拡張、運用の自動化 本記事は、私たちメルカリのDBRE（Database Reliability Engineering）チームが今年4 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20261007-0c17de8180/",
+          "publishedOn": "2026-10-08T07:00:18.000Z",
+          "wordCount": 647,
+          "title": "TiDB Cloudのオートスケール改善 &#8211; 時間帯別制御、TiKVへの拡張、運用の自動化",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/10/c1f0d10f-tidb_autoscale2_eyecatch_b.png"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20260929-ai-assisted-backend-internship/",
+          "author": null,
+          "description": "こんにちは！　Mercari Adsチームのインターン生の@utaです。 本記事では、フロントエンドを中心に経験してきた私が、AIを活用しながらバックエンドを含む機能開発に挑戦した3ヶ月間を振り返ります。インターン中に取 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20260929-ai-assisted-backend-internship/",
+          "publishedOn": "2026-09-30T14:54:45.000Z",
+          "wordCount": 501,
+          "title": "AIと越境する開発 ─ メルカリインターンでバックエンドに挑戦した3ヶ月",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/09/790f0ab0-image-scaled-1.png"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20260812-mptechtalk-report/",
+          "author": null,
+          "description": "2026年8月12日に、「Merpay Tech Talk 〜3年で50ヵ国へ。メルカリ決済基盤アーキテクチャ刷新の舞台裏〜」をオンラインで開催しました。 この記事はイベントレポートです。配信当日の内容を簡単に紹介します […]",
+          "link": "https://engineering.mercari.com/blog/entry/20260812-mptechtalk-report/",
+          "publishedOn": "2026-09-25T10:00:18.000Z",
+          "wordCount": 512,
+          "title": "「Merpay Tech Talk 〜3年で50ヵ国へ。メルカリ決済基盤アーキテクチャ刷新の舞台裏〜」を開催しました！ #merpay_techtalk",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/09/8ab5da76-merpay-tech-talk-サムネイル.png"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20260820-4f9e501769/",
+          "author": null,
+          "description": "本記事は、私たちDBRE（Database Reliability Engineering）チームが2026年3月末までに行った改善を紹介する3つの記事の3つ目（最終回）です。 1つ目の記事「メルカリにおけるTiDB改善 […]",
+          "link": "https://engineering.mercari.com/blog/entry/20260820-4f9e501769/",
+          "publishedOn": "2026-08-20T17:13:20.000Z",
+          "wordCount": 708,
+          "title": "メルカリにおけるTiDB改善の取り組み：インデックス非互換への対応",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/08/2dd24400-tidb_series3_eyecatch-1.png"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20260818-dba81909b6/",
+          "author": null,
+          "description": "本記事は、私たちDBRE（Database Reliability Engineering）チームが2026年3月末までに行った改善を紹介する3つの記事の2つ目です。 1つ目のブログ記事の「メルカリにおけるTiDB改善の […]",
+          "link": "https://engineering.mercari.com/blog/entry/20260818-dba81909b6/",
+          "publishedOn": "2026-08-19T07:00:36.000Z",
+          "wordCount": 565,
+          "title": "メルカリにおけるTiDB改善の取り組み：リソース制御・リージョンサイズ・プランキャッシュ編",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/08/e8d19a70-tidb_series2_eyecatch.png"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20260814-3bdaa0433a/",
+          "author": null,
+          "description": "先日、メルカリのCoreDBをMySQLからTiDBへ移行した振り返り という記事で、MySQLからTiDBへの移行完了に関する報告と、大枠の振り返りについてお伝えしました。これから3つの記事にわたって、私たちDBRE（ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20260814-3bdaa0433a/",
+          "publishedOn": "2026-08-17T07:30:34.000Z",
+          "wordCount": 601,
+          "title": "メルカリにおけるTiDB改善の取り組み：IN句内100万件クエリへの対応",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/08/1870b036-eyecatch_not_in_to_temporary_table.png"
         }
       ]
     },
