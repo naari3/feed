@@ -2,10 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-11-01T01:01:37.039Z</updated>
+    <updated>2026-11-01T02:02:11.230Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[「自作プログラミング言語を自慢する会」でWadoを自慢した！]]></title>
+        <id>hatenablog://entry/14729835035332000103</id>
+        <link href="https://gfx.hatenablog.com/entry/2026/11/01/101250"/>
+        <updated>2026-11-01T01:12:50.000Z</updated>
+        <summary type="html"><![CDATA[original.connpass.com #自作言語会
+発表資料:
+Wado - Wasm の能力を完全に引き出すためのプログラミング言語
+まあ10minでは語りきれませんでしたけどね。
+しかし考えてみると自作プログラミング言語に関心のある人たちばかりあの場に数十人いたのはすごいことで、また何人かは実際に自作もしているということでした。ぐぐってみるとさらに世界でも自作プログラミング言語が大いに増えてきていて、まさに「趣味プログラミングの一大分野」といってもいい流行りっぷりだと思います。すべてagentic codingのおかげですね。
+大変もりあがって楽しかったです。またやりたい。あわせて、他の自作言語をみたり当日の質疑をやって考えたことを補足しておきます。
+なぜ WebAssembly なのか？
+Wasm、自作言語界隈で大人気ですね。これの理由はいくつかあると思いますが、ぼくの場合はこんな感じです:
+安全性
+まず処理系を作ろうと思うときの選択肢は、自分でassemblyを吐かせるか、LLVMにのるか、craneliftにのるか、JVMに乗るか、wasmか、自作VM（インタプリタ）かといったところだと思います。
+ところが昨今のAI攻撃圧（ブラック・オクトーバー）をみると、そもそも機械語を成果物として出すの相当な覚悟が必要ではないかという気がししているのです。少なくとも「プロダクトでも使えるレベルにしてやる！」という気持ちがあるなら、機械語を成果物とするのは避けたほうがよいです。そうなると選択肢はwasmかJVMか自作VMとなります。
+wasmは安全機構もよく考えられていて、UBがありません。つまり、悪意のあるwasmでもSEGVがおきません*1。wasm自体、外の世界とのやりとりが厳しく制限されたsandboxであり、デフォルトで安全というのはwasmの強みです。
+実行速…]]></summary>
+        <author>
+            <name>Islands in the byte stream</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-10-31]]></title>
         <id>hatenablog://entry/14729835035331804880</id>
