@@ -1157,6 +1157,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035333277238",
+          "author": null,
+          "description": "奥華子さんのコンサート 岡山公演だった。\n直近3公演の座席がどれも右側前の席だった(1列目、2列目、1列目)。そろそろもうちょっと真ん中らへんでも聞きたい。\n会場がとても良かった。元々日本銀行の建物だったところを改装してホールにしたよう。\nokayama-kanko.net\n昨日の夜あたりからネスゴシ派生の開発をガンガン進めていた。今週中に公開できそう。",
+          "link": "https://commits.hatenablog.com/entry/2026/11/04/100000",
+          "publishedOn": "2026-11-04T01:00:00.000Z",
+          "wordCount": null,
+          "title": "2026-11-03",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14729835035333277238/1793754001",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14729835035333277238/1793754001"
+        },
+        {
           "id": "hatenablog://entry/14729835035331804880",
           "author": null,
           "description": "PicoRubyKaigi Assenble だった。\n疲れ果てていて、ショーケースセッションに顔を出しただけで帰ってしまった。とはいえ色んな人と話せたし、面白いものも見れたので満足している。\nはるかさんのぬいは、アプリケーションをオンデマンドで生成するというLLM時代のアプリになっていて良かった。SDK的なものをLLM側に伝えていそう\nやんちゃさんのやつは前情報を伝え聞いていたが、実際ちゃんと見てみると良い。ブルーレイから超音波出しているのサンリオすごい\nhamachangさんが展示していた小型マシンかっこよかった\nbashさんが展示していたmrubyマシン、一体メソッド解決をどうやっているのか聞きそびれた。すごそう\n今日は秋田→東京→岡山と新幹線移動していた。\n昨晩の時点から胃の調子がやたら悪く、最悪秋田に延泊も考えていたけれど、朝の時点で新幹線に乗れそうなぐらいには回復していたので移動できた。\n元々の予定では秋田を始発の新幹線で出る予定だったが、その時間に起きたときにはまだ動くのはしんどかったので、朝8時頃に出る新幹線に振り替えた。\nワンチャングランクラスでのんびりするのもありかなと思ったけれど、こまちにはグランクラスは無さそうだった。\n固形物を口にするのはしんどかったので、東京についてからゼリー飲料を買ってしのいだ。家に帰ってからはほとんど平常運転なぐらいにはなったので良かった。\n明日は1日ゆっくり休みたい。\n新幹線の中ではネスゴシの開発を結構進めていた。\n自宅サーバーでclaude rcしたプロセスを動かしっぱなしにしておくのが結構便利。claude rcでプロセスを立ち上げておくとそこからセッションをremote control経由で生やせるので、スマホからセッションを増やして開発をしていた。\n数日前に着手して人間待ちになっていた機能をマージまで持っていったり、新規対応をしたりしていた。\n今日追加した目玉機能は、昨日の問題をプレイできるようにする機能。ネスゴシでは毎日1問出題されて毎日それを解くとstreakが伸びていくよくあるやつなのだけど、1日忘れてしまうとstreakが途切れてしまうのがもったいないなと思っていた。\nそれの対応として、日が変わっても前日の問題であれば解けるようにした。1日なら忘れてもリカバリが効く。こういうゲームって1回逃すとやる気がなくなりがちなので、この機能でそれを防ぎたい。",
@@ -4126,6 +4141,21 @@
       "feedUrl": "https://staff.hatenablog.com/rss",
       "siteUrl": "https://staff.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14729835035333535617",
+          "author": null,
+          "description": "2026年11月4日 2:52ごろから、はてなブログ/はてなCMSの記事編集画面 > Amazon商品紹介にて、商品検索が動作しない不具合が発生しています。\n原因は調査中です。ご迷惑をおかけし申し訳ございませんが、復旧まで今しばらくお待ちください。",
+          "link": "https://staff.hatenablog.com/entry/2026/11/04/112559",
+          "publishedOn": "2026-11-04T02:25:59.000Z",
+          "wordCount": null,
+          "title": "はてなブログ/はてなCMSの記事編集画面にてAmazon商品検索が動作しない不具合が発生しています",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/14729835035333535617/1793759160",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/14729835035333535617/1793759160"
+        },
         {
           "id": "hatenablog://entry/14945776032094057494",
           "author": null,
@@ -7207,6 +7237,16 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=38052",
+          "author": "谷口 崇",
+          "description": "前回の調査に続き、2026年10月9日（金）〜 10月11日（日）に開催されたEVO France 2026でもStarlinkの記録をとってもらいました。今回は通信遅延も計測することで航空機からの通...",
+          "link": "https://eng-blog.iij.ad.jp/archives/38052",
+          "publishedOn": "2026-11-03T23:57:12.000Z",
+          "wordCount": null,
+          "title": "Starlinkの航空機利用、国際線は固定IP？",
+          "imageUrl": null
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=38064",
           "author": "doumae",
           "description": "2026年10月20日に予告があり、翌21日23時(日本時間)に詳細と緊急パッチが公開されたPHPの脆弱性PHP2Shellは、PHPの高いシェアと悪用リスクの高さ、そして正式発表までの紆余曲折を含め...",
@@ -7520,6 +7560,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=46472",
+          "author": "mamosuke",
+          "description": "PS5の26.07-14.22.00でハイパーバーザーが修正されたようです。→→→この記事の続きを読む\nPS5の「システムソフトウェアのセキュリティー」 正体判明 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026110446472/",
+          "publishedOn": "2026-11-04T00:53:41.000Z",
+          "wordCount": null,
+          "title": "PS5の「システムソフトウェアのセキュリティー」 正体判明",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=46467",
           "author": "mamosuke",
