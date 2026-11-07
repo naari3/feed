@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-11-06T21:50:23.475Z</updated>
+    <updated>2026-11-07T01:23:17.599Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[2026-11-06]]></title>
+        <id>hatenablog://entry/14729835035334590893</id>
+        <link href="https://commits.hatenablog.com/entry/2026/11/07/100000"/>
+        <updated>2026-11-07T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ラパンのスマートキーの電池交換をした。納車後初交換。
+スマートキーにはCR2032というボタン電池が使われている。CR2032の電圧は3Vであり、交換対象の電池の電圧を測ってみたら2.96Vとかだった。これって本当に交換の必要があるのだろうかとClaudeに聞いてみると、どうやらCR2032は新品だと3.2V程度の電圧があり、寿命がくるとそこから急激に電圧降下するらしい。実際新品の電池の電圧を測ってみたら3.2Vあった。
+ということでちゃんと新品の電池に無事交換できた。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Switch 2でLuaコード実行 switch-artemis-launcher by alula]]></title>
+        <id>https://gamegaz.com/?p=46488</id>
+        <link href="https://gamegaz.com/2026110746488/"/>
+        <updated>2026-11-07T00:28:11.000Z</updated>
+        <summary type="html"><![CDATA[alula氏がArtemisエンジンで開発されたビジュアルノベルゲームを利用して任意のコードを実行できるようにしたswitch-artemis-launcher v2をリリースしていました。→→→この記事の続きを読む
+Switch 2でLuaコード実行 switch-artemis-launcher by alula first appeared on 大人のためのゲーム講座.]]></summary>
+        <author>
+            <name>mamosuke</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【2026年11月-1】ﾘｯｽﾝ]]></title>
         <id>hatenablog://entry/14729835035334603921</id>
