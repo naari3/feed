@@ -2,10 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-11-08T09:47:12.257Z</updated>
+    <updated>2026-11-08T16:26:03.002Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Excelで帳票レイアウトを作成、CSVデータから簡単に単票や明細付きの帳票を生成できる「AS-DataReport」が新登場［PR］]]></title>
+        <id>https://www.publickey1.jp/blog/26/excelcsvas-datareportpr.html</id>
+        <link href="https://www.publickey1.jp/blog/26/excelcsvas-datareportpr.html"/>
+        <updated>2026-11-08T15:16:44.000Z</updated>
+        <summary type="html"><![CDATA[年度の切り替え時に取引先に提出する見積書のフォーマットが変わる、取引先から納品書のフォーマットを指定されたなど、ビジネスにおいて帳票のレイアウトに新たな要求が寄せられることは珍しくありません。 しかし業務システムをそのたびに作り変えるのは一...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MCP仕様を完全にサポートしたMCP公式のRuby SDKが登場。「MCP SDK Tier 1」に到達と]]></title>
+        <id>https://www.publickey1.jp/blog/26/mcpmcpruby_sdkmcp_sdk_tier_1.html</id>
+        <link href="https://www.publickey1.jp/blog/26/mcpmcpruby_sdkmcp_sdk_tier_1.html"/>
+        <updated>2026-11-08T15:12:29.000Z</updated>
+        <summary type="html"><![CDATA[Linux Foundation傘下でMCP（Model Context Protocol）の仕様策定を行っている「Agentic AI Foundation（AAIF）」は、MCP公式のRuby SDKがMCP仕様を完全にサポートした「M...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ターミナル用ライブラリ［Libghostty 1.0」リリース。Windows版マルチプレクサ「Rex」もまもなく登場予定]]></title>
+        <id>https://www.publickey1.jp/blog/26/libghostty_10windowsrex.html</id>
+        <link href="https://www.publickey1.jp/blog/26/libghostty_10windowsrex.html"/>
+        <updated>2026-11-08T15:09:07.000Z</updated>
+        <summary type="html"><![CDATA[ターミナルエミュレータ「Ghostty」のコア部分を汎用ライブラリ化した「Libghostty 1.0」正式版がリリースされました。 「Libghostty」は、HashiCorpの共同創業者であり、同社を退社後は個人開発者としてターミナル...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[#23 Claude Code on the web の network secrets]]></title>
+        <id>6af08ab19ca6300001a6dccf</id>
+        <link href="https://blog.lai.so/2026-11-08/"/>
+        <updated>2026-11-08T14:51:25.000Z</updated>
+        <author>
+            <name>laiso</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[形式手法に入門したけど難しくて何もわからない]]></title>
+        <id>hatenablog://entry/14729835035335652248</id>
+        <link href="https://blog.nishimu.land/entry/2026/11/08/202316?utm_source=feed"/>
+        <updated>2026-11-08T11:23:16.000Z</updated>
+        <summary type="html"><![CDATA[形式手法を勉強し始めたので、道具を触る前に考え方だけ自分用にまとめておきます。
+テストとの違い
+テストで分かるのは、試した入力で正しく動いたことだけです。
+ソート関数を [3, 1, 2] や [] で試して通っても、同じ値が並ぶ [2, 2, 1] やとても長い配列のことは何も言えない。
+形式手法は、プログラムや設計の性質を数学の言葉で書いて「どんな入力でも成り立つ」と言い切るための方法の総称です。
+ソート関数なら「どんな配列を渡しても、返る配列は昇順に並び、要素は入力と同じものが同じ数だけある」を、すべての配列について確かめます。
+テストは試した点を調べて、形式手法は全体を調べる。
+そのぶん、性質を曖昧さなく書く手間と、全体を調べきるための計算や証明の手間がかかります。
+
+仕様と実装
+仕様は何が正しいかを曖昧さなく論理式で書いたもの、実装は実際に動くコードです。
+検証が確かめるのは「実装が仕様を満たすか」だけ。
+銀行口座の出金処理なら、仕様は「出金後の残高 ＝ 出金前の残高 − 出金額」と「残高は負にならない」のように書けます。
+検証が通れば、実装はこの2つを必ず守ると言えます。
+ただ、仕様に「手数料を引く」を書き忘れていたら、手数料を引かないコードも検証を通ります。
+検証済みは「仕様どおり」という意味で、「バグがない」という意味じゃない。
+何を仕様として書いたかは、結局人が読んで確かめるしかない。
+
+事前条件と事後条件
+処理を始める前に成り立っているべき条件が事前条件、処理が終わった後に成り立つと約束する条件が事後条件です。
+この組を書く代表的な記法がホーア論理の三つ組 {P} C {Q} で、「P が成り立つ状態で C を実行し、C が終われば、Q が成り立つ」と読みます。
+「x が 5 なら、1 足した後は 6」と「出金額が残高以下なら、出金後も残高は負にならない…]]></summary>
+        <author>
+            <name>ちなみに</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【口コミ】白くまくんDTシリーズとは？ジャパネットの日立エアコン(RAS-DT2226S)と市販Dシリーズの違いを完全比較]]></title>
         <id>hatenablog://entry/6801883189120119912</id>
@@ -11499,41 +11569,6 @@ github.com
 好きなものについて、あらゆる…]]></summary>
         <author>
             <name>9つのサボテンが喋った</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2026-08-10]]></title>
-        <id>hatenablog://entry/14945776032063278237</id>
-        <link href="https://commits.hatenablog.com/entry/2026/08/11/100000"/>
-        <updated>2026-08-11T01:00:00.000Z</updated>
-        <summary type="html"><![CDATA[なにも理解らない　１巻 (ＦＵＺコミックス)
-
-作者:７Ｌｉｑｕｉｄ
-芳文社
-Amazon
-
-
-なにも理解らない　２巻 (ＦＵＺコミックス)
-
-作者:７Ｌｉｑｕｉｄ
-芳文社
-Amazon
-
-なにも理解らない 1,2巻を読んだ。いい。
-めっちゃ作り込まれていてすごい。絶対なにか重要なシーンなのになにも分からなかったりして面白い]]></summary>
-        <author>
-            <name>diary</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PS5でも有効 PS4 13.50にカーネルexploit asaudidos氏がHackeroneで1万ドル報奨金]]></title>
-        <id>https://gamegaz.com/?p=45926</id>
-        <link href="https://gamegaz.com/2026081145926/"/>
-        <updated>2026-08-10T23:21:34.000Z</updated>
-        <summary type="html"><![CDATA[asaudidos氏がHackeroneに報告していたPS4の脆弱性で1万ドルの報奨金が確定したと報告していました。→→→この記事の続きを読む
-PS5でも有効 PS4 13.50にカーネルexploit asaudidos氏がHackeroneで1万ドル報奨金 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
