@@ -894,6 +894,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035336022593",
+          "author": null,
+          "description": "2026年11月6日、Lauren Tan (@poteto) が X にこう書き出す投稿をしました。\nhot take: you don't need a software factory, and i don't love the term. it's just marketing\n\n\n同じ日のうちに Factory の CTO である Eno Reyes が、同意するところは多いが中心の主張には同意しない、と応じました。\n2日後には Jeffrey Lee-Chan が The software factory is the next extinct wrapper という記事を出しています。\nSoftware Factory として売られている機能は、コーディングエージェントの進歩によって3〜6ヶ月のうちに大半の人が必要としなくなる、という予測です。\n\nTan、Reyes、Lee-Chan が「Software Factory」で指しているものは一致していません。\n以下は2026年11月9日時点の公開資料に基づく整理です。\nSoftware Factory と呼ばれているもの\n「Software Factory」と書かれているとき、差しているものは少なくとも三つあります。\n\n 使われ方 \n 指しているもの \n 例 \n\n\n\n\n 製品の分類名 \n 売り手が自社の製品を説明するときの呼び名 \n Warp、Factory、8090、GitLab \n\n\n 開発の進め方 \n バグ報告や顧客の声を受けて実装からリリースまで進め、本番で起きたことを次の作業に戻す一連の仕組み \n Factory の定義、Prinevo の整理 \n\n\n エージェントの編成 \n 指揮役のエージェントや複数の工程を常に置くのか、スキルと基準だけで済ませるのか \n Warp のドキュメント、Lee-Chan…",
+          "link": "https://blog.nishimu.land/entry/2026/11/09/175103?utm_source=feed",
+          "publishedOn": "2026-11-09T08:51:03.000Z",
+          "wordCount": 880,
+          "title": "Software Factoryはマーケティング用語なのか",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/da695854c56053b6dcd9cd796276e708ce236a3b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261109%2F20261109185308.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/da695854c56053b6dcd9cd796276e708ce236a3b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261109%2F20261109185308.png"
+        },
+        {
           "id": "hatenablog://entry/14729835035335652248",
           "author": null,
           "description": "形式手法を勉強し始めたので、道具を触る前に考え方だけ自分用にまとめておきます。\nテストとの違い\nテストで分かるのは、試した入力で正しく動いたことだけです。\nソート関数を [3, 1, 2] や [] で試して通っても、同じ値が並ぶ [2, 2, 1] やとても長い配列のことは何も言えない。\n形式手法は、プログラムや設計の性質を数学の言葉で書いて「どんな入力でも成り立つ」と言い切るための方法の総称です。\nソート関数なら「どんな配列を渡しても、返る配列は昇順に並び、要素は入力と同じものが同じ数だけある」を、すべての配列について確かめます。\nテストは試した点を調べて、形式手法は全体を調べる。\nそのぶん、性質を曖昧さなく書く手間と、全体を調べきるための計算や証明の手間がかかります。\n\n仕様と実装\n仕様は何が正しいかを曖昧さなく論理式で書いたもの、実装は実際に動くコードです。\n検証が確かめるのは「実装が仕様を満たすか」だけ。\n銀行口座の出金処理なら、仕様は「出金後の残高 ＝ 出金前の残高 − 出金額」と「残高は負にならない」のように書けます。\n検証が通れば、実装はこの2つを必ず守ると言えます。\nただ、仕様に「手数料を引く」を書き忘れていたら、手数料を引かないコードも検証を通ります。\n検証済みは「仕様どおり」という意味で、「バグがない」という意味じゃない。\n何を仕様として書いたかは、結局人が読んで確かめるしかない。\n\n事前条件と事後条件\n処理を始める前に成り立っているべき条件が事前条件、処理が終わった後に成り立つと約束する条件が事後条件です。\nこの組を書く代表的な記法がホーア論理の三つ組 {P} C {Q} で、「P が成り立つ状態で C を実行し、C が終われば、Q が成り立つ」と読みます。\n「x が 5 なら、1 足した後は 6」と「出金額が残高以下なら、出金後も残高は負にならない…",
@@ -1800,21 +1815,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032065577575/1786928400"
-        },
-        {
-          "id": "hatenablog://entry/14945776032063846960",
-          "author": null,
-          "description": "インターネットは言葉をどう変えたか\n\n作者:グレッチェン・マカロック\nフィルムアート社\nAmazon\n\nインターネットは言葉をどう変えたか 読み終わった。図書館で借りた本で、明日が(1回延長した後の)返却期限だったので2割ぐらい残っていたのを急いで読んだ。\n全体的にかなり面白い本だった。インターネットという視点から言語の変化を書いている本で、自分では変化していることは知っていても理由までは中々考えないし、それを知れるのが楽しい。また、そもそも知らない変化を知ることも出来たのも良かった。\n元が英語で書かれた本なので、英語が主な題材になっているのは良い点もあり悪い点もありという気持ち。インターネット上での英語の使われかたについて知らないことを知れるのは楽しいけれど、身近な題材でない分理解が難しいところも多かった。\nあまり本筋でないところだと、「カンファレンスでは、講演というのは、共通の関心を持つ人達が集まり、廊下で顔を合わせるための口実にすぎない。」という文があり(P. 294)、ソフトウェアのカンファレンス以外(言語学の文脈)でもそういう認識なんだと知れたのは面白かった。\nmixi.social\nクラフトジンジャーエールを作ってみた。レシピはだいたいこれ\ndancyu.jp\n少しだけ飲んでみたけど、結構しょうがが強くて美味しい。作っている間はクローブの香りが強すぎるかなと思っていたけれど、いざ飲んでみるとそうでもない。もうちょっとスパイスが強くても良いかなと思いつつ、それだとクラフトコーラになるのではという気もしている。\n生姜をひたすらすりおろすのが大変だった。中々疲れる。\nクラフトコーラと違ってすりおろし生姜がメインなので、シロップにもかなり生姜の繊維が残る。飲む分には繊維があっても特に気にならないのだけど、鍋からビンに移す時に、繊維のせいで液体がスムーズにビンに流れず不便だった。ビンからコップに移すときもスムーズに流れなくてややだるい。\n新生姜の旬がちょうど今頃が終わりのようなので、来週あたりまだ新生姜が売られていそうならもう1回ぐらい作ろうかなと考えている。\n今年も地域Ruby会議・奥華子さんのコンサートで全国を飛び回ることになるのだけれど、その宿と飛行機の予約をここ数日行っている。宿がだいぶ高騰しているところも多くてつらい。\n10月と11月が本当にハードスケジュールになっていて、体調を崩さないかやや心配。",
-          "link": "https://commits.hatenablog.com/entry/2026/08/12/100000",
-          "publishedOn": "2026-08-12T01:00:00.000Z",
-          "wordCount": 552,
-          "title": "2026-08-11",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/f86b5aefdcb7e84a95a562e322d19049190d76f6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41S2PO3%2BJdL._SL500_.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f86b5aefdcb7e84a95a562e322d19049190d76f6/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41S2PO3%2BJdL._SL500_.jpg"
         }
       ]
     },
@@ -2691,23 +2691,7 @@
       "title": "honeylab's blog",
       "feedUrl": "https://honeylab.hatenablog.jp/rss",
       "siteUrl": "https://honeylab.hatenablog.jp/",
-      "articles": [
-        {
-          "id": "hatenablog://entry/14945776032063966818",
-          "author": null,
-          "description": "世間はお盆休みとかいう話も聞こえてきますが、あんまり関係ない私、会社に届いたモノタロウの荷物を取りに行った帰りに自宅至近のドラッグストアで買い物をして帰りました\nそれから数時間後、出かけようとしたところ財布が見当たらない。\nあれー。しかし慌てることはない。こうやって財布を何度も見失って探す時間がもったいないので、iPhoneから呼び出せる紛失防止タグを持っているのです。\n探すアプリから見てみると、、、最終検出時刻はドラッグストアで買い物をした時刻、場所もドラッグストアです。\nこのタグは、FindMyネットワークに乗るので、近くにiOSやAndroidなどの対応機器を持っている人が通りかかったときに更新される仕組みで、連続して位置情報を送るものではありません。（よくAirTagなんかがGPS機器、なんて呼ばれていますがそれは大きな間違いで、タグが飛ばしたBLEパケットを受信した端末が、その端末の位置情報を使ってネットワークに登録してくれるのです）\nいやまあ、家の中か車の中にあるだろう。とウロウロしてパケットを探しますが、一向に反応しません。数分後、位置が更新され・・・・・場所は・・・\n \n近所のアパート\n \nなんで？？？？通りすがったときにそこが登録された？？と思ったけど、更新時刻はたった今。位置情報バグったか・・・・？と思っていろいろ考えた結果・・・\nドラッグストアで支払いを済ませた後、トイレに寄ったのです。\nそこで、ポケットに入りにくくなるほど小銭をパンパンにした財布を手にもって座り、あれれトイレットペーパーが切れている、などともたもたしたため、そこで財布から手を離してしまい、置き忘れた財布を誰かが移動させた、という推測が発生しました。\nちょっと大変めんどくさいことになって、近所の薬局で財布をどうも無くしたんだけど、それがその薬局の近くのアパートにしばらくいるのでぴこぴこ…",
-          "link": "https://honeylab.hatenablog.jp/entry/2026/08/12/111318",
-          "publishedOn": "2026-08-12T02:13:18.000Z",
-          "wordCount": null,
-          "title": "トイレに置き忘れた財布が持ち去られてしまったが、紛失防止タグのおかげで無事回収できた件",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/bf53d76ccb012840a13be7bbf103c520418d8840/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneylab%2F20260812%2F20260812105706.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/bf53d76ccb012840a13be7bbf103c520418d8840/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhoneylab%2F20260812%2F20260812105706.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "テキュ",
@@ -7601,6 +7585,16 @@
       "siteUrl": "https://gamegaz.com",
       "articles": [
         {
+          "id": "https://gamegaz.com/?p=46505",
+          "author": "mamosuke",
+          "description": "PlayStation Portal プレーヤー ミッドナイトブラック 日本語専用,MODI SFlash Beta 1→→→この記事の続きを読む\nGameGaz Daily 2026.11.9 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026110946505/",
+          "publishedOn": "2026-11-09T08:18:22.000Z",
+          "wordCount": null,
+          "title": "GameGaz Daily 2026.11.9",
+          "imageUrl": null
+        },
+        {
           "id": "https://gamegaz.com/?p=46503",
           "author": "mamosuke",
           "description": "Nintendo Switch 2でCivSwitchのようにexploitのエントリーポイントとして利用できるゲームはまだ他にもあることをGezine氏が示唆していました。→→→この記事の続きを読む\nGezine氏 Switch 2ハックに使えるゲームは「他にもある」「将来のために取っておく」 first appeared on 大人のためのゲーム講座.",
@@ -9049,16 +9043,6 @@
           "wordCount": 1817,
           "title": "GameGaz Daily 2026.8.13",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=45930",
-          "author": "mamosuke",
-          "description": "State of Play,PS5限定版,インドネシアでSwitch発売,Switch2ゼルダ記念モデル,BFpilot v0.4.4,ps5-webkit-autoloader v0.2.0,PS5-Super-PLDMGR-Auto-Updater,MemDBG nightly [2026-08-11-gc49fa7c],PS2 Launcher v4.0.0,VitaForge v0.1.1,psv-winxp-extended-theme v01.12,OpenNOW Switch v0.0.7,green-nx 1.0.29pre5,pipensx 1.3.1,NS-CFW-Packs 22.5.0,twiNX v0.9.1,NXStation v0.2.2,OceanClock 1.01,SZMY V1.1.2,Dolphin 2606a,FCE Ultra GX 4.0.1,Snes9x GX 5.0.2,Visual Boy Advance GX 3.0.1,LodjurGBA v0.1.5,mGBA-GX ver1.2.1,RustyNES v2.3.2,red-viper v1.3.2,BattleShip v1.6,EmuCoreX v0.3.3,SimpleLauncher release5.6.1,duckstation v0.1-11609,KytyPS5 2026-2026-08-11-7a40dad,KytyPlus v2.5,shadPS4 Pre-release-shadPS4-2026-08-11-05302af,Cube64 / Wii64 1.4.3,xenia 8c98ef0_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.8.12 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026081245930/",
-          "publishedOn": "2026-08-12T03:50:43.000Z",
-          "wordCount": 2002,
-          "title": "GameGaz Daily 2026.8.12",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
@@ -9174,6 +9158,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html",
+          "author": null,
+          "description": "Googleは、Kubernetes上にAIエージェントのための高効率な基盤を構築するためのオープンソースソフトウェア「Agent Substrate」と「gVisor」を、Linux Foundation傘下のCloud Native C...",
+          "link": "https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html",
+          "publishedOn": "2026-11-09T15:25:30.000Z",
+          "wordCount": null,
+          "title": "Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html",
+          "author": null,
+          "description": "マイクロソフトは、C#などの.NETテクノロジーを用いてWebアプリケーションの開発を可能にするフレームワーク「Blazor」に150以上のオープンソースUIコンポーネントが寄贈されたことを発表しました（発表1、発表2） これはマイクロソフ...",
+          "link": "https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html",
+          "publishedOn": "2026-11-09T15:22:44.000Z",
+          "wordCount": null,
+          "title": "マイクロソフト、150以上のオープンソースUIコンポーネントがBlazorに寄贈されたことを発表。InfragisticsとSyncfusionから",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/excelcsvas-datareportpr.html",
           "author": null,
