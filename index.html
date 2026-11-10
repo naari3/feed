@@ -78,6 +78,76 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://nomolk.hatenablog.com/" target="_blank"
+              rel="noopener">nomolkのブログ</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander" open>
+                <summary class="article-expander__title">Seeed XIAOがArduino IDEから書き込みできないときの対処法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://nomolk.hatenablog.com/entry/2026/11/11/001622" target="_blank"
+                  rel="noopener">
+                  <div class="article-summary-box-inner">
+                    <span>先日のマイコン調査でSeeed XIAOの人気を知り、
+nomolk.hatenablog.com
+最近、電子工作でBluetooth LEを使いたいときによく使っています。小さくて使いやすい！
+
+
+Seeed Studio XIAO ESP32C3 - Tiny MCU Board mit Wi-Fi und BLE für IoT-Steuerungsszenarien. Mikrocontroller mit Batterieladung, energieeffizient und Reichhaltige Schnittstelle für winziges maschinelles
+
+seeed studio
+Amazon
+
+3個セットもあります。安い！
+
+Seeed Studio XIAO ESP32-C3 開発ボード 3個セット｜Wi-Fi &amp; Bluetooth搭載 超小型マイコンボード｜RISC-Vアーキテクチャ｜Arduino/MicroPython対応
+
+ノーブランド品
+Amazon
+
+6個セットだともっと安い！
+
+Seeed Studio XIAO ESP32-C3 開発ボード ｜Wi-Fi &amp; Bluetooth搭載 超小型マイコンボード｜RISC-Vアーキテクチャ｜Arduino/MicroPython対応 (6)
+
+ノーブランド品
+Amazon
+
+のですが、なんかたまにArduino IDEから書き込みができないときがあるので、対処法を紹介します。PCはWindowsです。
+症状
+
+こんなメッセージが出て書き込みに失敗します。
+A serial exception error occurred: Write timeout
+https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html
+シンプルにタイムアウトなので原因はいろいろ考えられると思うんですけど、自分の場合は……
+
+デバイスマネージャの「ポート」を開くと、こんな感じで出てきます。XIAOを抜き差しすると矢印の「USBシリアルデバイス(COM4)」が出たり消えたりするので、これがXIAOっぽいんですよね。
+解決策
+問題の「USBシリアルデバイス(COM4)」を右クリックして、プロパティを開きます。
+
+「ポートの設定」→「詳細設定」
+
+「COMポート番号」で、未使用のポートを選んでOKを押していく。
+
+で、そうするとArduino IDEの方に「Unconfirmed board」っていうのが出てくるので、それをクリックしないで、「他のボードとポートを選択…」を押します。
+
+ボードと、さっき設定したポート番号を選び
+
+書き込みすると…
+
+書き込みできました！
+他の現象
+公式のヘルプを見ると
+まず、ボードを PC に接続した状態で RESET BUTTON を 1 回押してボードをリセットしてみてください。それでも解決しない場合は、BOOT BUTTON を押し続けたままボードを PC に接続し、BOOT ボタンを押したまま接続した後に離して bootloader mode に入ります。
+とかも書いてあるんですけど、今回はこれでは解決しなかったので上記手順を試しました。</span>
+                  </div>
+                  <img src="https://cdn.image.st-hatena.com/image/scale/ee99c591a3b7d246b51a4df713774705d009399c/backend&#x3D;imagemagick;version&#x3D;1;width&#x3D;1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F419fSCP7lwL._SL500_.jpg" class="card article-thumbnail" data-image />
+                </a>
+              </details>
+            </article>
+          </section>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
               rel="noopener">大人のためのゲーム講座</a></h3>
           <section class="articles-per-source">
@@ -16662,32 +16732,6 @@ Gezine氏 僅かな時間で増額17,500ドルの報奨金獲得 first appeared 
     </ul>
   </section>
   <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2026-08-12">2026-08-12</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://gamegaz.com" target="_blank"
-              rel="noopener">大人のためのゲーム講座</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">GameGaz Daily 2026.8.13</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://gamegaz.com/2026081345934/" target="_blank"
-                  rel="noopener">
-                  <div class="article-summary-box-inner">
-                    <span>Kstuff Lite 1.10 Beta,slopkit,ps5-webkit-autoloader v0.2.2-pre-e1b7e6b (FW 1.00-5.50 test),PS5 RetroLoader,ps5upload v5.2.1,kura v1.6.31,Digital Clock Vita v1.01,Sphaira 1.0.2,Checkpoint 5.1.0,green-nx v1.0.30pre1,3DS-CLI V2.3,A-Pix DS(Alfombra-s-Pixel-Art-Editor-DS) 0.5,NitroSwan v.0.7.7,SwanGBA v0.7.7,MAME4droid 2026(0.289) 1.38.2,shadPS4 Pre-release-shadPS4-2026-08-12-23392e1,Xenity Engine v1.2.1,ARMSX2 2.6.6.6,xenia e31142b_canary_experimental,Kyty-Android v0.0.3-Beta,ReXGlue SDK Nightly 0.9.0.24-dev.gdf2743b→→→この記事の続きを読む
-GameGaz Daily 2026.8.13 first appeared on 大人のためのゲーム講座.</span>
-                  </div>
-                  <img src="https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png" class="card article-thumbnail" data-image />
-                </a>
-              </details>
-            </article>
-          </section>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2026-08-04">2026-08-04</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -18951,7 +18995,7 @@ Tiktok見ると紛争地帯の子どものような気持ちになってしま�
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2026-11-10T07:51:41.756Z">2026-11-10T07:51:41.756Z</time>
+    <time id="build-timestamp" datetime="2026-11-10T15:53:31.259Z">2026-11-10T15:53:31.259Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a></span>
   </footer>
   <script src="./index.js"></script>
