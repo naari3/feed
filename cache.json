@@ -3682,21 +3682,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729895114/14945776032066149164/1787020458"
-        },
-        {
-          "id": "hatenablog://entry/14945776032054290356",
-          "author": null,
-          "description": "最近デイリーポータルZの西村さんがWebサービスを作っていたり、一緒にPodcastをやっている岡田悠さんがDokokaというアプリを作って大ヒットしていたり、周りのエンジニアでない人たちがAIを使ってアプリケーションを作ることが増えてきました。\nへー面白そう、とは思いつつも特に作りたいものがなかったんですけど、あるときふと「ずっとほしかったアプリあるじゃん！！」と思い出したので、手探りながら作ってリリースまでこぎつけました。その体験談を書きます。\nちなみに自分は非エンジニア（編集者）ですがIT系記事の編集をする程度の知識はありプログラムも少しは書ける、けど今回出したようなアプリを独力で作るのは５年かかっても無理そう、というレベル感です。\nまたこの記事はあくまで初心者による体験談なので、AI開発ノウハウ集と思って読むとずいぶんレベルが低いと思いますし、むしろアドバイス歓迎です。ただAI資源のケチり方や非エンジニアとしてあえて諦める部分など、趣味開発ならではの割り切りの部分は少しは参考になるかもしれません（？）\n作ったもの\n詳細は最後に書くのでここでは概要だけ。譜読みの練習アプリです。\n\n楽譜を見てドレミ（音階）を読むアプリはたくさんあるんですけど、自分が苦手な「リズムを読み取る」練習ができるアプリが意外になく、前から欲しかったので作りました。\n楽譜を見て実際にメトロノームに合わせてタップすることで正しく読めているか確認できます。また、音で正しいリズムを聴くことで読み方を学べます。\nplay.google.com\nはじまり\n始めたのは６月の終わり。スマホアプリではなくて、Webサービスとして作りはじめました。\n最初にやりたいことをバーッて書き出してCodexに投げて、Webで動くものを作ってもらいました。\n\nnomolk.hatenablog.com\nかなり粗削りながら、基本…",
-          "link": "https://nomolk.hatenablog.com/entry/2026/08/12/164154",
-          "publishedOn": "2026-08-12T07:41:54.000Z",
-          "wordCount": null,
-          "title": "AIコーディングの一番安いプランでスマホアプリを作る！非エンジニアによるケチりAI駆動開発のすべて",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/e1c969b4b6e71ee0504838143028cbac7bc2cf0d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260716%2F20260716235837.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/e1c969b4b6e71ee0504838143028cbac7bc2cf0d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260716%2F20260716235837.jpg"
         }
       ]
     },
@@ -4363,21 +4348,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/528eb5873b475296dc03c6477000a243128f7f3e/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260731%2F20260731111938.png"
-        },
-        {
-          "id": "hatenablog://entry/14945776032064120364",
-          "author": null,
-          "description": "2026年8月12日 18:06〜19:28まで、ブログの管理画面の記事の管理で「次のページ」が表示されない不具合が発生していました。\n原因はアプリケーションの不具合によるものです。現在は復旧しております。\nご迷惑をおかけして申し訳ございませんでした。再発防止に努めてまいります。",
-          "link": "https://staff.hatenablog.com/entry/2026/08/12/193351",
-          "publishedOn": "2026-08-12T10:33:51.000Z",
-          "wordCount": null,
-          "title": "【復旧済み】記事の管理で「次のページ」が表示されない不具合が発生していました",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032064120364/1786530831",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208647353034080390/14945776032064120364/1786530831"
         }
       ]
     },
@@ -7260,6 +7230,16 @@
       "feedUrl": "https://eng-blog.iij.ad.jp/archives/category/%e6%8a%80%e8%a1%93%e6%83%85%e5%a0%b1/feed",
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
+        {
+          "id": "https://eng-blog.iij.ad.jp/?p=38147",
+          "author": "IIJ Engineers Blog編集部",
+          "description": "IIJはアメリカやヨーロッパ、中国、ASEANに海外拠点がありますが、今回はアメリカにあるIIJ Americaより「NY生活で気づいた”インターネットが当たり前に使えない瞬間（日本とのギ...",
+          "link": "https://eng-blog.iij.ad.jp/archives/38147",
+          "publishedOn": "2026-11-10T00:40:25.000Z",
+          "wordCount": null,
+          "title": "NY生活で気づいた“インターネットが当たり前に使えない瞬間”（日本とのギャップ）",
+          "imageUrl": null
+        },
         {
           "id": "https://eng-blog.iij.ad.jp/?p=38052",
           "author": "谷口 崇",
