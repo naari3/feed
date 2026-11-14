@@ -840,21 +840,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/752284633d42de56f3a3ad0ddb458aa8c4441e5f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260824%2F20260824094847.jpg"
-        },
-        {
-          "id": "hatenablog://entry/14945776032065859790",
-          "author": null,
-          "description": "はてなブログ独自の集計による人気記事のランキング。2026年8月9日（日）から2026年8月15日（土）〔2026年8月第3週〕のトップ30です*1。\n#\n    タイトル／著者とブックマーク\n    \n1\n    売春は倫理的に許容されるのか？ - 哲学的に考えてみた【哲学ブログ】\n by id:rye2025 \n    \n2\n    20代だけど大腸がんになった - オタク・ワンダーランド\n by id:satanix \n    \n3\n    『映画ちいかわ 人魚の島のひみつ』を見て思った、プロット評価の基準について - 青井タイル店\n by id:aoitile \n    \n4\n    トイレに置き忘れた財布が持ち去られてしまったが、紛失防止タグのおかげで無事回収できた件 - honeylab's blog\n by id:honeylab \n    \n5\n    大阪と神戸（と西宮）でたくさん食べた日記 - ネットに影響される人の日記\n by id:htnmiki \n    \n6\n    セールス主導開発の滑りやすい坂道 - ともにかける\n by id:paper2parasol \n    \n7\n    PMの定型業務を「Skill」にする - 要件定義とデータ分析、2つの実践 - TalentX Tech Blog\n by id:myrefer \n    \n8\n    「エンジニアのための自己管理入門」に救われた話 - expajp's Permanent Way\n by id:expajp \n    \n9\n    2年かけてたどり着いた1on1の形 —— メンバーと一緒に1on1の最適解を探る - SmartHR Tech Blog\n by id:smarthr \n    \n10\n    国立国会図書館デジタルコレクションに収録されている1945/06/01-19…",
-          "link": "https://blog.hatenablog.com/entry/2026/08/17/120000",
-          "publishedOn": "2026-08-17T03:00:00.000Z",
-          "wordCount": 1140,
-          "title": "今週のはてなブログランキング〔2026年8月第3週〕",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/6aa8462ebffaf7bb21c9cbafcd1ff2db7fa0414f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260817%2F20260817095739.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/6aa8462ebffaf7bb21c9cbafcd1ff2db7fa0414f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260817%2F20260817095739.jpg"
         }
       ]
     },
@@ -1830,21 +1815,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032067060321/1787274002"
-        },
-        {
-          "id": "hatenablog://entry/14945776032065577575",
-          "author": null,
-          "description": "github.com\nClaude Codeが動いている間、PCのスリープを抑止するプラグインを書いた。\nDesktop PCでClaudeを動かしている時に、実行中でも勝手にスリープしてしまって困っていた。例えばremote controlでスマートフォンからアクセスしているときや、長くなりそうなタスクを投げてそのまま寝たいときなど。単純にスリープを抑制して電源をつけっぱなしにしていたけれど、それはそれでなあという気持ちでプラグインを作った。\n後から調べたら https://github.com/samber/cc-caffeine など同じことをするツールがあるようだが、どうやらJavaScriptで書かれているっぽく、サプライチェーンリスクなどを考えるとだいぶ入れたくないので自分で書いたものの存在意義は一応ある。多分。\nとりあえずWSL2で動作確認済み。macOSでの動作確認は明日にでもやろうと思っている。Windowsホストでの動作確認もしたい。Linux Desktopだとうまく動かないとClaudeは言っている。まあスリープ抑止コマンドは好きなものを設定できるので、理論的には動く。\nサブエージェントの実行中を検知するのをサボっていたら、導入して30分後ぐらいに勝手にスリープして困ったので、サブエージェント検知機能を実装中。\ngithub.com\n自分の登壇一覧をまとめているのをしばらく更新をサボっていたので、Claudeに更新してもらった。Speakerdeckとかを勝手に漁って埋めてくれた。いくつかそれでも漏れていたものが合ったので自分でClaudeに伝えた。だいたい埋まったのではないか。\nここ半年ぐらい設定していた宝くじの定期購入を解除した。\n1回ぐらい黒字になる回が出て気分が上がるかなと思ったけれど、単にお金が消えていくだけで何も面白くなかった。\nいつの間にか口座に億入っている夢を見られなくなるのはちょっと残念。\nmixi.social\n今週もクラフトジンジャーエールを作った。味はまだ見てない。\n前回のレシピから、唐辛子を抜き、砂糖を減らし、スパイスとレモンを増やした。多分クラフトコーラに近づいた気がする。\n最近は夜中に外を歩くようにしている。運動不足解消が目的。\n今日は雨が降っていたから歩かなかったけれど。\n1時間前後、近所を歩くようにしている。夜中だと気温が多少下がって歩くのが楽になる。\n田舎なので、夜中歩くことができるコースが限られるのがやや難点。さすがに街灯が全くない田んぼの中の道とかを夜中歩きたくない。しかし違うコースを歩けないのはちょっと不便。いい感じに歩ける場所まで車で移動しても良いかもしれない。",
-          "link": "https://commits.hatenablog.com/entry/2026/08/17/100000",
-          "publishedOn": "2026-08-17T01:00:00.000Z",
-          "wordCount": 571,
-          "title": "2026-08-16",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032065577575/1786928400",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032065577575/1786928400"
         }
       ]
     },
@@ -2772,7 +2742,23 @@
       "title": "遺失物取扱所",
       "feedUrl": "https://isitsutbustu-todoke.hatenablog.com/rss",
       "siteUrl": "https://isitsutbustu-todoke.hatenablog.com/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/14729835035338468403",
+          "author": null,
+          "description": "これまで食べた　全てが余さずに\n私を作り上げている\nそうでしょう？\n - 濁茶「おぼしめし (feat. 初音ミク)」\nhttps://youtu.be/SBLmUzx88HM?si=Kl51x37mgPaQoC2c\n \n大学受験が終わった直後、noteに「受験生に向けたラジオのようなもの。」という記事を書いて消したりした（タイトル末に句点があるのはほぼ日から影響を受けている……）。自分が経験したことが他人の役に立ったら嬉しいという気持ちだったのだけど、さしずめそれの最新バージョンといったところ。経験や知識で語れるほどのものってあまりなくて、考えたら節約飯くらいしかなかった。これでも新規性はないのかもしれないけれど、自分のためにもなるし、エッセイ風に書き残しておく。俗流に言い換えるなら貧乏、金欠、ズボラ、限界などの言葉が浮かぶけれど、どれも自虐・ネガティブに繋がって嫌いなので節約飯ということにする。\n \nいくつかの前提……私は食べる量が多いほう・偏食がなくなんでも美味しく食べる・食事が好きなのでそういう人の観点である。／自炊を讃美して持ち上げるつもりはない。自炊をしたほうがお金は浮くという言説には疑問があって、そんなにきっぱり自炊と外食を二項対立できないと思う。自炊と外食に各個人の複雑なグラデーションがあるから、したい人がしたらいい。自炊が無理という人がいるのも分かる。／バズレシピを度々引用するので嫌いな人はすいません。レシピだけは信用している。著書『虚無レシピ』をページが抜け落ちるほど頻繁に参照していて、おすすめです。\n \n\n\n    \n米\nパスタ\nパスタ以外の麺\n副菜\n既製品\n調味料\n \n米\n米を用いた食事について。\n \nまず、そんな抵抗がないので玄米でかさましすることが多い。私の場合は米が高騰していた時期にお金がなかったのも大きい。だいたい玄米：米を１：２～１：１とか…",
+          "link": "https://isitsutbustu-todoke.hatenablog.com/entry/2026/11/15/003844",
+          "publishedOn": "2026-11-14T15:38:44.000Z",
+          "wordCount": null,
+          "title": "nikki20261115「節約飯を語る」",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png"
+        }
+      ]
     },
     {
       "title": "conceptualization",
@@ -9061,16 +9047,6 @@
           "wordCount": 1830,
           "title": "GameGaz Daily 2026.8.18",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=45950",
-          "author": "mamosuke",
-          "description": "OnionHEN v0.0.8,DVRPwned v1.0.0,etaHEN 2.6B,CiborgEc RetroLoader v1.00 Beta1,ps5-webkit-autoloader v0.3.1-pre-3e9b02d (pre-release),ps5-unified-autoloader v0.1.4-955249d,ps5-webkit-autoloader-esp32 v0.3.0-0,ampr_emu 0.3.3,PS5-Super-PLDMGR-Auto-Updater v17.08.2026_01.14,PS5 MQTT v1.7.0,AutoPlugin II v2.19,vita-save-sync v0.1.6,NeoVitaDB-Downloader v.2.9.1,Vita Save Keeper v1.3.1,OpenNOW Vita v0.3.2,ioQuake3-PSP 1.0,Nyx Rescue Mod 0.2,libusbdvd 0.1.2,Breeze beta108.9c,A-Pix DS(Alfombra-s-Pixel-Art-Editor-DS) 0.5.1,RustyNES v2.3.5,ARMSX2 2.6.6.7,KytyPS5 2026-08-16-bc2f077,KytyPlus v2.8,ReXGlue SDK Nightly 0.10.0-dev.g509ed5b,PoorDS4 v0.1.0-rc38→→→この記事の続きを読む\nGameGaz Daily 2026.8.17 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026081745950/",
-          "publishedOn": "2026-08-17T03:25:28.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2026.8.17",
-          "imageUrl": null
         }
       ]
     },
