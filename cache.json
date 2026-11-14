@@ -1142,6 +1142,21 @@
       "siteUrl": "https://commits.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035337748466",
+          "author": null,
+          "description": "claude.ai\n\n100-300mmのレンズが欲しい気がしつつ、どのくらいの画角になるかのイメージが付かないのでClaudeにサクッと作ってもらった。金さえあればレンズほしいな……https://t.co/vDKE81Jxz6 pic.twitter.com/eIq6DR0kZ6\n— 🎹 (@p_ck_) 2026年11月12日\n   \n最近はずっと100-300mm(換算200-600mm)のレンズが欲しくて悩んでいる。\n実際どれくらいズームできるのかの体感を知りたかったので、写真をアップロードすると指定した焦点距離で撮影した場合の画角を出してくれるWebアプリをClaudeにシュッと作ってもらった。結果25mmでは全然だめだったサギが、300mmではいい感じにズームできることが分かってしまった…。\nお金さえあれば買うのだけれど、あまり現金資産がない状態なのでなかなか迷う。買うなら仙台に行く前にほしいなあ。",
+          "link": "https://commits.hatenablog.com/entry/2026/11/14/100000",
+          "publishedOn": "2026-11-14T01:00:00.000Z",
+          "wordCount": 542,
+          "title": "2026-11-13",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14729835035337748466/1794618000",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14729835035337748466/1794618000"
+        },
+        {
           "id": "hatenablog://entry/14729835035337005365",
           "author": null,
           "description": "深山公園に遊びに行っていた。\n\n🐈️ pic.twitter.com/N64Y4RzB67\n— 🎹 (@p_ck_) 2026年11月11日\n   \n猫に近づいても逃げないので良い公園。猫に近づいて写真を撮ると写真がうまくなった気持ちになる。猫に踊らされている。\nあまり近寄らせてくれなかった猫\n木陰の猫\n景色もいい\n池がいくつかあって水鳥も結構いた。鳥を見ると望遠のレンズが欲しくなる。100-300mmのレンズ欲しいなあ……。\nついでにしばらく前に吉備津神社に行った時に撮った写真。迫力があって好き。\n水に向かって伸びる松",
@@ -10170,36 +10185,6 @@
           "wordCount": 1489,
           "title": "Pythonライクで高速な「Mojo言語」がバージョン1.0に到達、今後はコンパイラをオープンソース化すると表明",
           "imageUrl": "https://www.publickey1.jp/2026/Pex8OnGM.jpg"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/aikitesurfcloudflare.html",
-          "author": null,
-          "description": "CloudflareはAIエージェントによる操作専用のヘッドレスなWebブラウザ「Kitesurf」を発表しました。 現在ベータ版として公開されています。 Kitesurfは主にRust言語で記述されWebAssemblyにコンパイルされた...",
-          "link": "https://www.publickey1.jp/blog/26/aikitesurfcloudflare.html",
-          "publishedOn": "2026-08-16T15:10:13.000Z",
-          "wordCount": null,
-          "title": "タブもテーマも拡張機能もないAI専用の超軽量ヘッドレスブラウザ「Kitesurf」、Cloudflareが発表",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/zeddeltaai.html",
-          "author": null,
-          "description": "オープンソースとして開発されている高速なコードエディタ「Zed」の開発チームは、人間の開発チームとAIエージェントの議論や対話内容とコードの変更履歴をすべて共有し、コンテキストとして保存できる「Delta」を発表しました。 Today we...",
-          "link": "https://www.publickey1.jp/blog/26/zeddeltaai.html",
-          "publishedOn": "2026-08-16T15:05:36.000Z",
-          "wordCount": null,
-          "title": "Zed開発チームが「Delta」発表。人間とAIの全対話とコード変更履歴をコンテキストとして保存共有するコラボレーションツール",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/delphi_13_community_edtionwindows_x86armmaciosandroid.html",
-          "author": null,
-          "description": "米エンバカデロ・テクノロジーズは、無料で使える統合開発環境「Delphi 13 Community Edtion」の提供開始を発表しました。 Delphi 13 Community Edition is now available!The ...",
-          "link": "https://www.publickey1.jp/blog/26/delphi_13_community_edtionwindows_x86armmaciosandroid.html",
-          "publishedOn": "2026-08-16T15:01:16.000Z",
-          "wordCount": null,
-          "title": "無料で使える「Delphi 13 Community Edtion」提供開始。Windows x86/Arm、Mac、iOS、Androidのネイティブアプリなど開発可能",
-          "imageUrl": null
         }
       ]
     },
