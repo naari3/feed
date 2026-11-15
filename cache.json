@@ -7565,16 +7565,6 @@
           "wordCount": 565,
           "title": "メルカリにおけるTiDB改善の取り組み：リソース制御・リージョンサイズ・プランキャッシュ編",
           "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/08/e8d19a70-tidb_series2_eyecatch.png"
-        },
-        {
-          "id": "https://engineering.mercari.com/blog/entry/20260814-3bdaa0433a/",
-          "author": null,
-          "description": "先日、メルカリのCoreDBをMySQLからTiDBへ移行した振り返り という記事で、MySQLからTiDBへの移行完了に関する報告と、大枠の振り返りについてお伝えしました。これから3つの記事にわたって、私たちDBRE（ […]",
-          "link": "https://engineering.mercari.com/blog/entry/20260814-3bdaa0433a/",
-          "publishedOn": "2026-08-17T07:30:34.000Z",
-          "wordCount": 601,
-          "title": "メルカリにおけるTiDB改善の取り組み：IN句内100万件クエリへの対応",
-          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/08/1870b036-eyecatch_not_in_to_temporary_table.png"
         }
       ]
     },
