@@ -3727,21 +3727,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/fff0a2fc3f725bfcf9841c70ff9625d8cad167af/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260821%2F20260821124909.png"
-        },
-        {
-          "id": "hatenablog://entry/14945776032066149164",
-          "author": null,
-          "description": "先日、譜読みアプリをリリースした話を書きましたが、そのときに作ったストア掲載用の電話番号に半日に1回くらい非通知着信がかかってくるようになりました。\nというわけで不在着信を拒否する方法を調べました。\nキャリアによってやり方が違いますが、MVNO（格安SIM）の場合もだいたい回線キャリアに準ずるようです。\nドコモ系\n「番号通知お願いサービス」というサービスを使用します。\n料金：無料\n開始方法：148に電話→1を押す\n停止方法：148に電話→0を押す\nドコモの各プランのほか、ahamo、日本通信、mineo Dプラン、イオンモバイル ドコモ回線、OCNモバイルONE、IIJmio ドコモ網などのドコモ回線の格安SIMもこれが使えるみたいです。\nau系\n「番号通知リクエストサービス」というサービスを使用します。\n料金：無料\n開始方法：1481に電話\n停止方法：1480に電話\nauの各プランのほか、povo 2.0、UQ mobile、mineo Aプラン、イオンモバイル au回線、IIJmio au網などのau回線の格安SIMもこれが使えるみたいです。\nソフトバンク、Y!mobile系\nソフトバンク系はかなりイマイチなので、端末側で設定した方がいいかも（後述）。\n一応「ナンバーブロック」という特定の番号をブロックするための機能があり、これが非通知着信も対象とすることができます。\nそして設定したところで結局番号単位でのブロック（特定の番号からの着信を非通知時含めて拒否できるだけ）であり、非通知着信全体のブロックはできないようです。不便！！！！！\n料金：無料（※かつて有料だったものが最近無料化されたようです）\n設定方法：My SoftBank より、オプションサービスとして申し込んだうえで、「安心・便利サービス」の「ナンバーブロック」から設定、または専用ダイヤル「144」にかける\nY!mobile、LINEモバイルも同様みたいです。\n楽天モバイル\n非通知拒否機能はありません…！端末側で設定しましょう（後述）\n端末側で設定する\nキャリア側の使い勝手がイマイチな場合、端末側で設定することができます。\nAndroidの場合\n電話アプリ内で右上の「︙」→「設定」\n「ブロック中の電話番号」を選ぶ\n「不明な発信者」の項目をオン\nGoogle純正の電話アプリの場合はこれで非通知拒否ができるみたいです。ただ公衆電話などの番号表示のできない着信がすべて一括でブロックされてしまうので注意。\nまた、Androidの場合はメーカーによって独自の電話アプリを使用している場合があるので、そうすると仕様が異なります。たとえばGalaxyでは似たような名前の項目はあるものの、電話帳に入っていない番号は番号通知でもすべて拒否という挙動になってしまうようです。\nONにした後は家族や知人に一度かけてもらうなどして確認した方がよいと思います。\niPhoneの場合\niPhoneでは端末でのブロックはできず、消音するのみ。かつ非通知以外に電話帳に入っていない番号なども含め一括での対応となってしまうようです。\n「設定」→「アプリ」→「電話」→「不明な発信者を消音」を順にタップ\n「不明な発信者を消音」をオン\n以上です\n非通知拒否はかなり基本的な機能だと思っていたのですが、ソフトバンク系や楽天モバイル＋iPhoneやGalaxyの組み合わせだと実現できないんですね。\n自分はいまGalaxyを使ってますが、回線がpovoだったのでキャリア側で拒否できて快適になりました。よかった～。\n以上、参考になれば幸いです。",
-          "link": "https://nomolk.hatenablog.com/entry/2026/08/18/112214",
-          "publishedOn": "2026-08-18T02:22:14.000Z",
-          "wordCount": null,
-          "title": "番号非通知の電話を着信拒否する方法【全キャリア対応版】",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/13208692334729895114/14945776032066149164/1787020458",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/13208692334729895114/14945776032066149164/1787020458"
         }
       ]
     },
@@ -7453,16 +7438,6 @@
           "wordCount": null,
           "title": "九州エリアのNWエンジニアが集う、QUNOG35に参加しました",
           "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=37259",
-          "author": "snara",
-          "description": "はじめに 遠隔地に設置してあるネットワーク対応の機器（無人の太陽光発電設備や監視カメラなど）にアクセスしたい場合はどのようにするでしょうか。 よく使われる方法は、その機器にグローバルIPアドレスを付与...",
-          "link": "https://eng-blog.iij.ad.jp/archives/37259",
-          "publishedOn": "2026-08-18T00:54:56.000Z",
-          "wordCount": null,
-          "title": "インターネットに繋がらないSIMで安全にリモートアクセスしてみる",
-          "imageUrl": null
         }
       ]
     },
@@ -9067,26 +9042,6 @@
           "wordCount": 1969,
           "title": "GameGaz Daily 2026.8.19",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=45955",
-          "author": "mamosuke",
-          "description": "毎年8月18日にブログ周年記事書いてますが、前回書いた時からもう1年したのかと時の流れの早さを実感してます。 最近まともな記事書けていないですが、このブログも丸18年目を迎えました。そして19年目に突入です。 先日ちょっ...→→→この記事の続きを読む\n【ブログ18周年記念コラム】ネオレトロゲームの高騰がひどい first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026081845955/",
-          "publishedOn": "2026-08-18T01:03:29.000Z",
-          "wordCount": null,
-          "title": "【ブログ18周年記念コラム】ネオレトロゲームの高騰がひどい",
-          "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=45953",
-          "author": "mamosuke",
-          "description": "microSD Expressカード値上げ,OnionHEN v.0.0.11-beta,ampr_emu 0.3.4,PS5-Super-PLDMGR-Auto-Updater v17.08.2026_21.04,ioQuake3-PS4 1.7,ioQuake3-PS3 1.8,vitaki-vitarps5(VitakiFork) v3.1.0,UAE4ALL2-HD-VITA 1.02,FrogGBA v0.4.0-rc.1,Switch Theme Injector (NXThemesInstaller) 3.0,AIO-MOD-Updater v4.0,Breeze beta109.01,dolphin-nx 1.0.3-v2,DrasticDS_nx 1.0.9,green-nx v1.0.30pre4,D1X 3DS v2.0.8,CitraVR (Beta) v0.6.0,PCSX2 v2.7.522,ARMSX2 nightly 20260817 (2a98726692),shadPS4 Pre-release-shadPS4-2026-08-17-0000a06,SharpEmu v0.0.3-release.3,blueMSX+(blueMSX-plus) v3.1.0,xenia 8ffe24e_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.8.18 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026081845953/",
-          "publishedOn": "2026-08-17T23:54:11.000Z",
-          "wordCount": 1830,
-          "title": "GameGaz Daily 2026.8.18",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
@@ -9202,6 +9157,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/postgresql_194ai.html",
+          "author": null,
+          "description": "オープンソースのリレーショナルデータベース「PostgreSQL」は、先週木曜日（2026年11月12日）に最終リリース候補版となるPostgreSQL 19 RC2が公開され、予定では今週の11月19日に正式リリースとなる見通しです。 そ...",
+          "link": "https://www.publickey1.jp/blog/26/postgresql_194ai.html",
+          "publishedOn": "2026-11-15T15:31:49.000Z",
+          "wordCount": null,
+          "title": "PostgreSQL 19リリース延期の背景。β4で多くの新機能取り下げが発生、原因はAIによるコードレビューか",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html",
+          "author": null,
+          "description": "Cloudflareは、AIエージェントが操作することを想定した軽量のヘッドレスブラウザ「Kitesurf」をオープンソースで公開したと発表しました。 Kitesurf is now open source on GitHub under ...",
+          "link": "https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html",
+          "publishedOn": "2026-11-15T15:30:19.000Z",
+          "wordCount": null,
+          "title": "Cloudflare、AI専用でタブやテーマや拡張などない軽量ヘッドレスブラウザ「Kitesurf」、オープンソースで公開",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/google_antigravityaiai.html",
           "author": null,

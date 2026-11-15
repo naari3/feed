@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-11-15T08:32:58.376Z</updated>
+    <updated>2026-11-15T15:57:08.516Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[PostgreSQL 19リリース延期の背景。β4で多くの新機能取り下げが発生、原因はAIによるコードレビューか]]></title>
+        <id>https://www.publickey1.jp/blog/26/postgresql_194ai.html</id>
+        <link href="https://www.publickey1.jp/blog/26/postgresql_194ai.html"/>
+        <updated>2026-11-15T15:31:49.000Z</updated>
+        <summary type="html"><![CDATA[オープンソースのリレーショナルデータベース「PostgreSQL」は、先週木曜日（2026年11月12日）に最終リリース候補版となるPostgreSQL 19 RC2が公開され、予定では今週の11月19日に正式リリースとなる見通しです。 そ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cloudflare、AI専用でタブやテーマや拡張などない軽量ヘッドレスブラウザ「Kitesurf」、オープンソースで公開]]></title>
+        <id>https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</id>
+        <link href="https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html"/>
+        <updated>2026-11-15T15:30:19.000Z</updated>
+        <summary type="html"><![CDATA[Cloudflareは、AIエージェントが操作することを想定した軽量のヘッドレスブラウザ「Kitesurf」をオープンソースで公開したと発表しました。 Kitesurf is now open source on GitHub under ...]]></summary>
+        <author>
+            <name>Publickey</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[No AI Slop Manifesto に署名した]]></title>
         <id>hatenablog://entry/14729835035338685677</id>
@@ -11462,67 +11482,6 @@ GameGaz Daily 2026.8.19 first appeared on 大人のためのゲーム講座.]]><
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[番号非通知の電話を着信拒否する方法【全キャリア対応版】]]></title>
-        <id>hatenablog://entry/14945776032066149164</id>
-        <link href="https://nomolk.hatenablog.com/entry/2026/08/18/112214"/>
-        <updated>2026-08-18T02:22:14.000Z</updated>
-        <summary type="html"><![CDATA[先日、譜読みアプリをリリースした話を書きましたが、そのときに作ったストア掲載用の電話番号に半日に1回くらい非通知着信がかかってくるようになりました。
-というわけで不在着信を拒否する方法を調べました。
-キャリアによってやり方が違いますが、MVNO（格安SIM）の場合もだいたい回線キャリアに準ずるようです。
-ドコモ系
-「番号通知お願いサービス」というサービスを使用します。
-料金：無料
-開始方法：148に電話→1を押す
-停止方法：148に電話→0を押す
-ドコモの各プランのほか、ahamo、日本通信、mineo Dプラン、イオンモバイル ドコモ回線、OCNモバイルONE、IIJmio ドコモ網などのドコモ回線の格安SIMもこれが使えるみたいです。
-au系
-「番号通知リクエストサービス」というサービスを使用します。
-料金：無料
-開始方法：1481に電話
-停止方法：1480に電話
-auの各プランのほか、povo 2.0、UQ mobile、mineo Aプラン、イオンモバイル au回線、IIJmio au網などのau回線の格安SIMもこれが使えるみたいです。
-ソフトバンク、Y!mobile系
-ソフトバンク系はかなりイマイチなので、端末側で設定した方がいいかも（後述）。
-一応「ナンバーブロック」という特定の番号をブロックするための機能があり、これが非通知着信も対象とすることができます。
-そして設定したところで結局番号単位でのブロック（特定の番号からの着信を非通知時含めて拒否できるだけ）であり、非通知着信全体のブロックはできないようです。不便！！！！！
-料金：無料（※かつて有料だったものが最近無料化されたようです）
-設定方法：My SoftBank より、オプションサービスとして申し込んだうえで、「安心・便利サービス」の「ナンバーブロック」から設定、または専用ダイヤル「144」にかける
-Y!mobile、LINEモバイルも同様みたいです。
-楽天モバイル
-非通知拒否機能はありません…！端末側で設定しましょう（後述）
-端末側で設定する
-キャリア側の使い勝手がイマイチな場合、端末側で設定することができます。
-Androidの場合
-電話アプリ内で右上の「︙」→「設定」
-「ブロック中の電話番号」を選ぶ
-「不明な発信者」の項目をオン
-Google純正の電話アプリの場合はこれで非通知拒否ができるみたいです。ただ公衆電話などの番号表示のできない着信がすべて一括でブロックされてしまうので注意。
-また、Androidの場合はメーカーによって独自の電話アプリを使用している場合があるので、そうすると仕様が異なります。たとえばGalaxyでは似たような名前の項目はあるものの、電話帳に入っていない番号は番号通知でもすべて拒否という挙動になってしまうようです。
-ONにした後は家族や知人に一度かけてもらうなどして確認した方がよいと思います。
-iPhoneの場合
-iPhoneでは端末でのブロックはできず、消音するのみ。かつ非通知以外に電話帳に入っていない番号なども含め一括での対応となってしまうようです。
-「設定」→「アプリ」→「電話」→「不明な発信者を消音」を順にタップ
-「不明な発信者を消音」をオン
-以上です
-非通知拒否はかなり基本的な機能だと思っていたのですが、ソフトバンク系や楽天モバイル＋iPhoneやGalaxyの組み合わせだと実現できないんですね。
-自分はいまGalaxyを使ってますが、回線がpovoだったのでキャリア側で拒否できて快適になりました。よかった～。
-以上、参考になれば幸いです。]]></summary>
-        <author>
-            <name>nomolkのブログ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【ブログ18周年記念コラム】ネオレトロゲームの高騰がひどい]]></title>
-        <id>https://gamegaz.com/?p=45955</id>
-        <link href="https://gamegaz.com/2026081845955/"/>
-        <updated>2026-08-18T01:03:29.000Z</updated>
-        <summary type="html"><![CDATA[毎年8月18日にブログ周年記事書いてますが、前回書いた時からもう1年したのかと時の流れの早さを実感してます。 最近まともな記事書けていないですが、このブログも丸18年目を迎えました。そして19年目に突入です。 先日ちょっ...→→→この記事の続きを読む
-【ブログ18周年記念コラム】ネオレトロゲームの高騰がひどい first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Karte.197 私はやってやる]]></title>
         <id>5c8ebd5e1d4fb</id>
         <link href="https://championcross.jp/episodes/5c8ebd5e1d4fb/?utm_source=rss&amp;utm_medium=referral"/>
@@ -11530,27 +11489,6 @@ iPhoneでは端末でのブロックはできず、消音するのみ。かつ�
         <summary type="html"><![CDATA[僕の心のヤバイやつ【最新話無料】 - Karte.197 私はやってやる]]></summary>
         <author>
             <name>僕の心のヤバイやつ【最新話無料】</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[インターネットに繋がらないSIMで安全にリモートアクセスしてみる]]></title>
-        <id>https://eng-blog.iij.ad.jp/?p=37259</id>
-        <link href="https://eng-blog.iij.ad.jp/archives/37259"/>
-        <updated>2026-08-18T00:54:56.000Z</updated>
-        <summary type="html"><![CDATA[はじめに 遠隔地に設置してあるネットワーク対応の機器（無人の太陽光発電設備や監視カメラなど）にアクセスしたい場合はどのようにするでしょうか。 よく使われる方法は、その機器にグローバルIPアドレスを付与...]]></summary>
-        <author>
-            <name>snara</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GameGaz Daily 2026.8.18]]></title>
-        <id>https://gamegaz.com/?p=45953</id>
-        <link href="https://gamegaz.com/2026081845953/"/>
-        <updated>2026-08-17T23:54:11.000Z</updated>
-        <summary type="html"><![CDATA[microSD Expressカード値上げ,OnionHEN v.0.0.11-beta,ampr_emu 0.3.4,PS5-Super-PLDMGR-Auto-Updater v17.08.2026_21.04,ioQuake3-PS4 1.7,ioQuake3-PS3 1.8,vitaki-vitarps5(VitakiFork) v3.1.0,UAE4ALL2-HD-VITA 1.02,FrogGBA v0.4.0-rc.1,Switch Theme Injector (NXThemesInstaller) 3.0,AIO-MOD-Updater v4.0,Breeze beta109.01,dolphin-nx 1.0.3-v2,DrasticDS_nx 1.0.9,green-nx v1.0.30pre4,D1X 3DS v2.0.8,CitraVR (Beta) v0.6.0,PCSX2 v2.7.522,ARMSX2 nightly 20260817 (2a98726692),shadPS4 Pre-release-shadPS4-2026-08-17-0000a06,SharpEmu v0.0.3-release.3,blueMSX+(blueMSX-plus) v3.1.0,xenia 8ffe24e_canary_experimental→→→この記事の続きを読む
-GameGaz Daily 2026.8.18 first appeared on 大人のためのゲーム講座.]]></summary>
-        <author>
-            <name>mamosuke</name>
         </author>
     </entry>
     <entry>
