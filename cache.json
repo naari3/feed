@@ -834,6 +834,36 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035338685677",
+          "author": null,
+          "description": "AIE Code Summit 2026 の登壇者と参加者が書いた「No AI Slop: A Manifesto」を読んで、めちゃくちゃ感動したので紹介します。\nwww.slopmanifesto.com\n2001年、17人のエンジニアがユタ州 Snowbird のスキーロッジに集まって アジャイルソフトウェア開発宣言 を書きました。それに倣って、AI が量産する slop（雑な生成物）に向き合うための宣言を作ろう、という試みです。\n五つの価値\nアジャイル宣言と同じ「〜 over 〜」の形で、五つの価値が並んでいます。\nOutcomes over output\nUnderstanding over speed\nOur own thinking over a model's first draft\nBetter work over easier work\nImproving the system over patching the output\n\n\n訳すとこうなります。\nアウトプット（量）よりもアウトカム（結果・成果）を\nスピードよりも深い理解を\nモデルの初稿よりも自分自身の思考を\n楽な仕事よりも質の高い仕事を\n出力結果を取り繕うことよりもシステムそのものを改善することを\n\nslop の定義\nいちばん刺さったのはこのー文。\nSlop is when we put less effort into producing something than we ask the consumer to spend understanding it.\n\n\n作るのにかけた手間より、読む人に払わせる理解の手間のほうが大きいもの。それが slop だそうです。\nこの定義のすぐあとに、こう続きます。\nUsing AI doesn't necessarily make something slop…",
+          "link": "https://blog.nishimu.land/entry/2026/11/15/143815?utm_source=feed",
+          "publishedOn": "2026-11-15T05:38:15.000Z",
+          "wordCount": 574,
+          "title": "No AI Slop Manifesto に署名した",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/92382d9628e4d8533632d63a99c343cebd8e1647/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261115%2F20261115143458.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/92382d9628e4d8533632d63a99c343cebd8e1647/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261115%2F20261115143458.png"
+        },
+        {
+          "id": "hatenablog://entry/14729835035338560539",
+          "author": null,
+          "description": "ソフトウェアファクトリー（エージェントに開発を任せる仕組み）は、コードベースの環境を整えてから作るほうがいい、というのが僕の意見です。\n負債の返済は自動化と並行して続けるとして、コードベースのルールを機械的に検査する仕組み、テストの土台、真似されると困るパターンの除去の三つは、自動化の前に済ませておきたい。\nエージェントは既存のコードを真似るし、AI の書くコードが増えると並行して返すだけでは追いつかなくなると考えているからです。\nOpenAI の Codex チームは、Codex はリポジトリにすでにあるパターンを、ばらつきのあるものや最適でないものも含めて複製する、と書いています。\nチームは最初、毎週金曜日（週の20%）を AI が書いた雑なコードの後始末に使っていたそうです。これは続かなかった。\n\nソフトウェアファクトリーの話になると、負債は自動化しながら返していけばいい、という意見をよく聞きます。\n返し続けること自体には僕も賛成で、引っかかっているのは順番のほうです。LLM の出力は入力に左右されるので。\nblog.nishimu.land\n以下は2026年11月15日時点で読めた資料をもとにした整理です。arXiv の論文には査読前のものを含みます。\n既存のコードとエージェントの出力\n既存のコードの質がエージェントの出力を左右する、という結果は研究と実践報告の両方にあります。\n 出典 \n 分かったこと \n\n\n\n\n Borg ら（2026年1月） \n 5,000個の Python ファイルで AI にリファクタさせると、中規模のモデルは健全なコード（CodeHealth 9 以上）のほうがテストを壊す率が有意に低かった。相対リスクは 0.69〜0.85 で、リスクは15〜30%下がる \n\n\n Huang ら（2025年12月） \n コメントアウトされた欠陥コードが文…",
+          "link": "https://blog.nishimu.land/entry/2026/11/15/121636?utm_source=feed",
+          "publishedOn": "2026-11-15T03:16:36.000Z",
+          "wordCount": 634,
+          "title": "ソフトウェアファクトリーの前に整えるもの",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/b9c6aedd5b0220652215bc91e5b87afa0c683f1d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261115%2F20261115075845.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b9c6aedd5b0220652215bc91e5b87afa0c683f1d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261115%2F20261115075845.png"
+        },
+        {
           "id": "hatenablog://entry/14729835035336945950",
           "author": null,
           "description": "別府に住んでいて、家に温泉を引いている。\nかけ流しなので、蛇口で湯量を調節して湯船の温度を保っている。\nこの蛇口が前から固くなりかけていたのだけれど、夏に湯量を絞ったまましばらく放置していたら、とうとう固着して回らなくなってしまった。\n固着した蛇口の直し方を調べていろいろ試したものの、どれもうまくいかなかった。\nまだ暖かかったので、そのうちなんとかしようと後回しにした。\nそうしたら急に寒くなった。\n湯量が少ないままなので、湯船に溜めてもすぐに冷めしまう。\n温泉に入れない。別府に住んでいるのに。\n慌てて蛇口お分解して中の部品を直接回そうとしたけれど、びくともしない。\nGrok Botが分かりやすくしてくれた画像\n諦めてプロに頼んだら、その場で蛇口を交換して一瞬で直してくれた。\nあれだけ悩んだのはなんだったのか。\n最初から頼めば良かったねとなった。\n自分でなんとかしようとして寒い思いをするくらいなら、さっさとプロに頼るべし。",
@@ -7579,6 +7609,16 @@
       "siteUrl": "https://gamegaz.com",
       "articles": [
         {
+          "id": "https://gamegaz.com/?p=46537",
+          "author": "mamosuke",
+          "description": "Nintendo Switch 2向けのHomebrew Enabler機能を持つ最小限レベルに相当するカスタムファームウェア環境kaiHEN改変をリリースされました。→→→この記事の続きを読む\nSwitch 2シーンに伝染した変な日本語シリーズ Swich 2の準CFW kaiHEN(改変) by kurumuz first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026111546537/",
+          "publishedOn": "2026-11-15T03:02:58.000Z",
+          "wordCount": null,
+          "title": "Switch 2シーンに伝染した変な日本語シリーズ Swich 2の準CFW kaiHEN(改変) by kurumuz",
+          "imageUrl": null
+        },
+        {
           "id": "https://gamegaz.com/?p=46535",
           "author": "mamosuke",
           "description": "GoldHEN v2.4b18.14,PS5 ezRemote Client v2.20,PS4 ezRemote Client v2.11,Offline-WAN-Emulator v0.1.0-beta,XBOXのタイトルがWindows PCでプレイ可能に→→→この記事の続きを読む\nGameGaz Daily 2026.11.14 first appeared on 大人のためのゲーム講座.",
@@ -10141,36 +10181,6 @@
           "wordCount": null,
           "title": "AIエージェント時代のGitホスティングサービス「Origin」、Cursorが発表。Cursorとの統合、コマンドラインでの操作、GitHubとの同期など提供",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/saaspr_1.html",
-          "author": null,
-          "description": ".jetform-wrapper {     border: 2px solid #ccc;   /* 枠線 /     padding: 20px;            / 内側の余白 /     border-radius: 12p...",
-          "link": "https://www.publickey1.jp/blog/26/saaspr_1.html",
-          "publishedOn": "2026-08-17T15:46:49.000Z",
-          "wordCount": 1465,
-          "title": "事例で学ぶ、SaaSの開発を加速しつつプロダクト品質も引き上げる上手な方法とは？［PR］",
-          "imageUrl": "https://www.publickey1.jp/2026/saas-komatta-thumbnail02.png"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/visual_studio_code_1133htmlclaudecopilot.html",
-          "author": null,
-          "description": "マイクロソフトはオープンソースで開発されているコードエディタの最新版「Visual Studio Code 1.133」（以下、VS Code 1.133）の正式リリースを発表しました。 The latest @code release b...",
-          "link": "https://www.publickey1.jp/blog/26/visual_studio_code_1133htmlclaudecopilot.html",
-          "publishedOn": "2026-08-17T15:42:34.000Z",
-          "wordCount": 1480,
-          "title": "Visual Studio Code 1.133正式リリース。プロンプトを見失わない固定スクロール、ローカルHTMLファイルの自動リロード、ClaudeとCopilotの混在可能など新機能",
-          "imageUrl": "https://www.publickey1.jp/2026/HPidRiCXQAEGSPk.jpg"
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/pythonmojo10.html",
-          "author": null,
-          "description": "Modular社は、AIを高速に実行することを目指したPythonライクなプログラミング言語「Mojo」がバージョン1.0に到達したことを発表しました。 Mojo 1.0 is here.Since we open-sourced the ...",
-          "link": "https://www.publickey1.jp/blog/26/pythonmojo10.html",
-          "publishedOn": "2026-08-17T15:40:38.000Z",
-          "wordCount": 1489,
-          "title": "Pythonライクで高速な「Mojo言語」がバージョン1.0に到達、今後はコンパイラをオープンソース化すると表明",
-          "imageUrl": "https://www.publickey1.jp/2026/Pex8OnGM.jpg"
         }
       ]
     },
