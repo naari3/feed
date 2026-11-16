@@ -2,10 +2,140 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://naari3.github.io/feed/index.html</id>
     <title>naari3/feed</title>
-    <updated>2026-11-16T00:29:23.263Z</updated>
+    <updated>2026-11-16T07:26:27.776Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://naari3.github.io/feed/index.html"/>
     <link rel="self" href="https://naari3.github.io/feed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Secretlint v14.0.0リリース: 設定なしで動作するように変更、大規模リポジトリのチェックを高速化]]></title>
+        <id>https://efcl.info/2026/11/16/secretlint-v14/</id>
+        <link href="https://efcl.info/2026/11/16/secretlint-v14/"/>
+        <updated>2026-11-16T06:50:00.000Z</updated>
+        <summary type="html"><![CDATA[ソースコードや設定ファイルに含まれるAPIトークンやパスワードなどの機密情報を見つけるSecretlintのv14.0.0をリリースしました。
+Release v14.0.0 · secretlint/secretlint
+このバージョンの主な変更点は次の2つです。
+設定ファイルなしで動作（公式ルールとプリセットをsecretlint本体に同梱）
+ファイル数が多いリポジトリでのチェックを高速化
+v13からv14へは、基本的に設定や使い方を変えなくてもアップデートできます。
+公式ルールが本体に入ったので、不要になったルールのパッケージを取り除くことを推奨します。
+詳しくは移行ガイドを参照してください。
+移行ガイド
+この記事では、次の3つを順番に書きます。
+v14の変更点と、設定なしで動作する仕組み
+どういう考え方でパフォーマンスを改善したか
+最終的な処理の流れと技術的な詳細
+v14の変更点
+詳しい変更点は、リリースノートと移行ガイドを参照してください。
+ここでは主な変更点を紹介します。
+設定なしで動作
+v14では、事前のインストールや設定ファイルなしで、次のコマンドだけで動きます。
+
+npx secretlint@14 "**/*"
+
+
+設定ファイルがないときは、エラーで終わる代わりにrecommendプリセットで実行します（#1835）。
+v13までは、secretlintとは別にルールのパッケージをインストールして、.secretlintrc.jsonにそのルールを書く必要がありました。
+仕組み: 公式ルールを本体に同梱
+設定なしで動作するのは、公式ルールとプリセットを@secretlint/coreへ含めたためです（#1798, #1832）。
+recommendプリセットが本体に入り、パッケージとして1つとなったため、.secretlintrc.jsonの設定ファイル…]]></summary>
+        <author>
+            <name>Web Scratch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[現場で働くAI #1「AIは、画面を飛び出す。」]]></title>
+        <id>https://eng-blog.iij.ad.jp/?p=38163</id>
+        <link href="https://eng-blog.iij.ad.jp/archives/38163"/>
+        <updated>2026-11-16T03:19:38.000Z</updated>
+        <summary type="html"><![CDATA[現場で働くAI 〜 Flow the Intelligence 〜 本連載では、AIが現場の状況を理解し、人の業務を支援する「フィジカルAI」の可能性と、その社会実装に向けたIIJの取り組みを紹介しま...]]></summary>
+        <author>
+            <name>三木 庸彰</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[今週のはてなブログランキング〔2026年11月第2週〕]]></title>
+        <id>hatenablog://entry/14729835035339080944</id>
+        <link href="https://blog.hatenablog.com/entry/2026/11/16/120000"/>
+        <updated>2026-11-16T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はてなブログ独自の集計による人気記事のランキング。2026年11月8日（日）から2026年11月14日（土）〔2026年11月第2週〕のトップ30です*1。
+#
+    タイトル／著者とブックマーク
+    
+1
+    MetaのAIエージェント「Muse」に課金して使い倒した結果の、小ネタと生存戦略 - はげあたま.org
+ by id:hageatama- 
+    
+2
+    無謀な５万人来場想定の鳥取のグルメイベントになぜ出店してしまうのか。 - Everything you've ever Dreamed
+ by id:Delete_All 
+    
+3
+    2026年11月に発生したMicrosoft 365の接続障害についてまとめてみた - piyolog
+ by id:piyokango 
+    
+4
+    米中間選挙でぶっ壊れるのは実は民主党というはなし - アメリカ暮らしと外資系のはなし
+ by id:ktdisk 
+    
+5
+    ポテトチップスの白黒化で「更生」した87%の顧客と中毒患者のフラッシュバックを設計する牛丼屋の話 - 太陽がまぶしかったから
+ by id:bulldra 
+    
+6
+    Fable 5.2は物理モデリング音源の実装も作曲もすごい - きしだのHatena
+ by id:nowokay 
+    
+7
+    話題になった「1対1のラブコメ」は『タイマンラブコメ』と命名されてるそうです。ひたすら夫婦仲が良い系もこれかな【創作系譜論】 - INVISIBLE Dojo.　ーQUIET & COLORFUL PLACE-
+ by id:gryphon 
+    
+8
+    『検索システム』『推薦システム』とLLM時代の検索推薦 - ｼﾞｮｲｼﾞｮｲｼﾞｮｲ
+ by id:joisino 
+    
+…]]></summary>
+        <author>
+            <name>週刊はてなブログ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GBA JAM2026]]></title>
+        <id>hatenablog://entry/14729835035339121236</id>
+        <link href="https://akkera102.hatenablog.com/entry/2026/11/16/115522"/>
+        <updated>2026-11-16T02:55:22.000Z</updated>
+        <summary type="html"><![CDATA[うーん、個人的な寸評会をしたかったのですけど時間と気力がないのでURLを張ってお茶を濁そうと思います。1位のDame Reportは全クリするぐらい面白かったのでおススメです。
+gbadev.net]]></summary>
+        <author>
+            <name>あーさん日記</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2026-11-15]]></title>
+        <id>hatenablog://entry/14729835035338894125</id>
+        <link href="https://commits.hatenablog.com/entry/2026/11/16/100000"/>
+        <updated>2026-11-16T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[無限紅茶と美味しいせいろ蒸しが食べられるKNOTに久しぶりに行った。角煮まんは前来た時なかった気がする。美味しかった。https://t.co/yVl8oynWWv pic.twitter.com/GmuuSFH2Jb
+— 🎹 (@p_ck_) 2026年11月15日
+   
+せいろ蒸しと紅茶のお店に行っていた。
+ここはティーフリーという素晴らしいメニューがあり、全50種のフレーバーティーのうちの1つを10分ごとに注ぎに来てくれる。どれも美味しいし色々楽しめて大変良い。白桃系はやっぱり王道だなー。
+実はこのお店は以前は北長瀬にあり、北長瀬に住んでいたころは足繁く通っていた。その後倉敷の今の店舗に移転した。北長瀬の店舗が閉じてから倉敷に移転するまで年単位で空白期間が合ったので、その間はだいぶ寂しかったのを覚えている。
+しかし、北長瀬の頃から値段がだいぶ上がっていそう。今はせいろ蒸しセット+ティーフリーで税込み2860円。6年前は1800円だったらしい。
+
+しかしアフタヌーンティー飲み放題セットが1500円で、ちょっと高いかなあ。(この夕食は1800円だった)
+— 🎹 (@p_ck_) 2020年10月11日
+   
+まあ昔の価格がぶっ壊れていただけだとは思う。コロナ禍真っ只中だったのもありそう。
+F1.8だと被写体深度が足りないなと思ってF3.2まで絞ったけれど、まだ被写体深度が足りていなかった角煮まんじゅう
+かなりおすすめのお店なので、岡山に来ることがあればぜひ。ただ車がないと厳しいと思う。声かけて貰えれば連れていきます。
+最近はmuseをチマチマ使っている。毎日朝にRuby関係のアップデート情報を教えてもらったり、お出かけの相談をしたりしている。
+Googleカレンダーの読み込み権限を与えたら秘書っぽさが強くなった。
+一回話しかけると、しばらく後にその話題を蒸し返してくるのが便利なようなうざいような。
+Gmailの読み取り権限を与えたら便利だろうなという気持ちがありつつ、Gmailを掌握できるということはメールのみで認証する口を持つ全てのサービスの権限を渡すということにほかならず、怖くて渡せていない。そこを踏み切った方が便利になりそうな気もするし、一方でリスクが大きすぎる気もする。]]></summary>
+        <author>
+            <name>diary</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GameGaz Daily 2026.11.16]]></title>
         <id>https://gamegaz.com/?p=46542</id>
@@ -11460,36 +11590,6 @@ GameGaz Daily 2026.8.20 first appeared on 大人のためのゲーム講座.]]><
 GameGaz Daily 2026.8.19 first appeared on 大人のためのゲーム講座.]]></summary>
         <author>
             <name>mamosuke</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[コードからDockerfile不要でOCIコンテナをビルド。「Cloud Native Buildpacks」が十分成熟したとしてCNCFの卒業プロジェクトに]]></title>
-        <id>https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html</id>
-        <link href="https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html"/>
-        <updated>2026-08-18T16:03:06.000Z</updated>
-        <summary type="html"><![CDATA[Cloud Native Computing Foundation（CNCF）は、アプリケーションのソースコードから直接OCIコンテナメージを構築するツールである「Cloud Native Buildpacks」が十分成熟したとして、卒業プ...]]></summary>
-        <author>
-            <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Google、AIモデルをコンパイルして暗号データを復号せずに扱えるように変換する「HEIR」発表。完全準同型暗号を利用し、AIでのセキュリティやプライバシー保護など実現へ]]></title>
-        <id>https://www.publickey1.jp/blog/26/googleaiheirai.html</id>
-        <link href="https://www.publickey1.jp/blog/26/googleaiheirai.html"/>
-        <updated>2026-08-18T15:55:25.000Z</updated>
-        <summary type="html"><![CDATA[Googleは、完全準同型暗号を利用したAIモデル用のオープンソースコンパイラ「HEIR」を発表しました。 AIモデルをコンパイルする「HEIR」 HEIRはAIモデル用のコンパイラとツールチェーンであり、これを用いて学習済みAIモデルのP...]]></summary>
-        <author>
-            <name>Publickey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AIエージェント時代のGitホスティングサービス「Origin」、Cursorが発表。Cursorとの統合、コマンドラインでの操作、GitHubとの同期など提供]]></title>
-        <id>https://www.publickey1.jp/blog/26/aigitorigincursorcursorgithub.html</id>
-        <link href="https://www.publickey1.jp/blog/26/aigitorigincursorcursorgithub.html"/>
-        <updated>2026-08-18T15:43:29.000Z</updated>
-        <summary type="html"><![CDATA[AIコードエディタのCursorなどを提供するAnysphereは、Gitに対応したコードホスティングサービス「Origin」を発表しました。 Origin, our code hosting platform, is now live.I...]]></summary>
-        <author>
-            <name>Publickey</name>
         </author>
     </entry>
     <entry>
