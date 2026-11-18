@@ -864,6 +864,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035340439827",
+          "author": null,
+          "description": "AIエージェントにどこまで任せられるかは、そのエージェントをどれだけ信頼できるかで決まります。\nLauren Tan（@poteto）は、この信頼を段階に分けて、信頼を積んだ分だけ同時に走らせるエージェントを増やせる、と話しています。\nその段階に当てはめると、僕は10〜20体くらいのところにいる気がします。\nただ、出てきた結果はまだ僕がいちいち確認していて、数だけ増えて信頼が追いついていません。\n次は、ある程度は自動で開発が回るように、検証に力を入れたいと思っています。\n信頼グラフ\nTan は2026年9月の講演 How I Shipped 2000 PRs Last Month — Trusting AI Agents で、あるグラフを出しています。\n縦軸が信頼、横軸が同時に走らせるエージェントの数で、Tan はこれを信頼グラフ（trust graph）と呼んでいます。\n 目盛り \n Tan の説明 \n\n\n\n\n 1 \n 1体をつきっきりで細かく管理する（micromanage）ところから始まる。 \n\n\n 1 to 5 \n すべての会話に張りついて軌道修正し続ける。目を離すとエージェントは間違える。この段階が一番抜け出しにくい。 \n\n\n 5 to 10 / 10 to 20 \n 目盛りとして置かれているだけで、説明はない。 \n\n\n hundreds / thousands \n 「100体のような規模」が到達のイメージとして出てくるが、hundreds と thousands の違いは語られていない。 \n\n\n\n\n\n\n段階を上がるための数値の基準（誤り率など）は示されていません。\n信頼がないまま100体のサブエージェントやクラウドエージェントを出すと、質の低いプルリクエストとリグレッションとバグが大量に出る、と注意しているだけです。\n上がる条件として挙げているのは検証です。\nア…",
+          "link": "https://blog.nishimu.land/entry/2026/11/18/211338?utm_source=feed",
+          "publishedOn": "2026-11-18T12:13:38.000Z",
+          "wordCount": 535,
+          "title": "AIエージェントに対する信頼の段階",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/d1507571592f3306d426a00e995be915bc938171/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261118%2F20261118210911.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d1507571592f3306d426a00e995be915bc938171/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261118%2F20261118210911.png"
+        },
+        {
           "id": "hatenablog://entry/14729835035338685677",
           "author": null,
           "description": "AIE Code Summit 2026 の登壇者と参加者が書いた「No AI Slop: A Manifesto」を読んで、めちゃくちゃ感動したので紹介します。\nwww.slopmanifesto.com\n2001年、17人のエンジニアがユタ州 Snowbird のスキーロッジに集まって アジャイルソフトウェア開発宣言 を書きました。それに倣って、AI が量産する slop（雑な生成物）に向き合うための宣言を作ろう、という試みです。\n五つの価値\nアジャイル宣言と同じ「〜 over 〜」の形で、五つの価値が並んでいます。\nOutcomes over output\nUnderstanding over speed\nOur own thinking over a model's first draft\nBetter work over easier work\nImproving the system over patching the output\n\n\n訳すとこうなります。\nアウトプット（量）よりもアウトカム（結果・成果）を\nスピードよりも深い理解を\nモデルの初稿よりも自分自身の思考を\n楽な仕事よりも質の高い仕事を\n出力結果を取り繕うことよりもシステムそのものを改善することを\n\nslop の定義\nいちばん刺さったのはこのー文。\nSlop is when we put less effort into producing something than we ask the consumer to spend understanding it.\n\n\n作るのにかけた手間より、読む人に払わせる理解の手間のほうが大きいもの。それが slop だそうです。\nこの定義のすぐあとに、こう続きます。\nUsing AI doesn't necessarily make something slop…",
@@ -1890,21 +1905,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032068679799/1787619600"
-        },
-        {
-          "id": "hatenablog://entry/14945776032067060321",
-          "author": null,
-          "description": "自宅インターネットのプロバイダを、ZOOT NEXTからZOOT NATIVEに切り替えた。\nどうもここ数日インターネットの速度が1,2桁Mbpsで厳しかったので、改善をしたかったのが目的。Claudeに聞いてみると、プロバイダ側で詰まっているのではという話だったので、切り替えてみたら3桁Mbpsが安定して出るようになった。幸い自宅のネットワーク機器が対応していてよかった。\n切り替えはインターネットから申し込んで、1時間ぐらいで開通した。しばらく契約を併用して、問題なければZOOT NATIVEのみに切り替えようと思う。\n最初はフレッツ光の10Gプランに切り替えることを検討していたのだけど、Claudeのおかげでそこまでせずとも期待する速度を手に入れた。3桁Mbpsが安定して出ているなら、自分のユースケースだと10Gは実用性よりロマンかなあと思っている。たまにデカいファイルをダウンロードするときとかには便利そうだけど、通常利用ではあまり意味がなさそう。\nRise of the Ronin をストーリークリアした。トロコンも考えていたけれど、なんかだるそうなのでやめた。1割ぐらいトロフィーが残っている。\n正直全くおすすめしない。\n以下愚痴。ストーリー寄りの話はあまり書かないでおく\nマップ上にギリギリ登れそうで登れない段差が多い\n\n\n登れないならそれとわかる高さにしてほしい\nうまく角度を調整すると登れたりすることもあり、ストレスが溜まる\n登場人物が多い。誰が誰だか覚えられない。一瞬登場して掘り下げのないキャラクターとかもいて、それなら出さなくていいのでは\nUIがだめ。キーボード操作をしていたので、コントローラーだとマシなところはあるかもしれない\n\n\nマップ上のファストトラベルポイントを選択するのに左クリックを使うのに、マップを掴んで動かすのにも左クリックを使用する。なのでマップを動かしたいのに「ファストトラベルしますか?」と言われてめちゃくちゃだるい。\nキャラの好感度システムがある。会話→プレゼントメニューを選択→プレゼントする という流れで好感度を上げられるが、現在の好感度はプレゼントメニューを選択しないと表示されない。好感度MAXになっていたらプレゼントを渡す必要はないのに、いちいちプレゼント選択まで遷移する必要がありだるい\nメニューからのアイテム使用時、使用してからワンテンポ遅れて「使用しました」ダイアログが出るのでアイテムを使用するテンポが悪い\n戦闘時、狭いところで戦闘していたりすると、敵の動きでカメラがグリグリ回されてとてもやりづらい\n\n\n敵の動きを見てパリィするゲームなのに、カメラワークが終わっていてパリィできない\nキャラを切り替えて戦闘するシステムがあるけれど、あんまりキャラを切り替えるメリットが無くて、結局主人公だけを操作していた\nゲームを終了するときに、一度タイトル画面に戻ってからプロセスを落とす形になっている\n\n\nPCゲーでこういうの多いけど本当にだるいから素直に終了させてほしい\n弓の使い道がなかった\n\n\n銃で狙撃すると発砲音で気付かれるシステムがあるが、発砲音が届く範囲が狭いので基本気付かれない。\nなので静音性特化の弓の出番はない\nマップのエリア友好度(因縁)が設定されていて、それを上げるとマップ上の探索要素アイコンが解放されていくのだけれど、一部エリアでは友好度をMAXまで上げるのがかなり厳しい\n\n\nMAXまで上げないと、マップに表示されない探索要素があるので、探索要素を見つけるのが困難\n友好度を上げる主な手段は探索要素の発見やランダムクエストの消化。探索要素は数に限りがあるため、一定値までしか上げられない。ランダムクエストは湧く位置が決まっていそうで、かつMAXまで上げられなかったエリアではそもそも湧かない(あるいはストーリー進行しないと湧かない)のではと思っている。\nMAXまで上がらないと、マップをしらみ潰しに探す必要があり、とてもだるい。マップ上アイコンがないとヒントがほぼ無いような要素もあって、厳しい\nスキルツリーから取得するスキルに死にスキルになっているものがちょくちょくある\n\n\n例えば一部町人からスリをできるようになるスキルがあるが、馬に乗っているとスレないし、金額が雀の涙で使うメリットがほぼない\n他にも色々悪いところはあったと思う。全部は覚えていない。",
-          "link": "https://commits.hatenablog.com/entry/2026/08/21/100000",
-          "publishedOn": "2026-08-21T01:00:00.000Z",
-          "wordCount": 581,
-          "title": "2026-08-20",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032067060321/1787274002",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032067060321/1787274002"
         }
       ]
     },
@@ -3787,21 +3787,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d32364985b3ca54305448e86b5113e14a67ad040/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260811%2F20260811174514.jpg"
-        },
-        {
-          "id": "hatenablog://entry/14945776032067457122",
-          "author": null,
-          "description": "工作をするのでよくChatGPTに機構の相談をするんですけど、ChatGPTって謎のAAを出してくるんですよね。\n\nこれ、がんばって描いてる感じがあってかなり好きなんですけど、好きではあるんですけど、いかんせん意味が分からないのが難点です。難点というか相談の回答としては致命的です。\n画像生成してもらってもいいんですけど時間がかかるわりに正確な図にならないので、こうなると結局諦めて自分で考えることが多いです。\nなんですけど、昨日ふとそのことをChatGPT本人に相談したところ、こんなことを言い出しました。\n\nえ、そんなことできたの！？早く言ってよ～！！と思ったのですが、この機能、どうもテスト中のようです。\n\nいろいろ調べたところ、これはapp_blockという機能らしいです。\nいろんな図を描いてみる\nまず、普通に丸を書いてもらいます。\n\nOK、いい感じです。\nじゃあ今度はいつもの用途と同じように、何らかの装置を作る想定で、仕組みの設計をしてもらいましょう。\n\n設計として十分か？といわれるとだいぶ疑問が残りますが、なんかそれっぽい図が出てきて面白いです。\nモデル図みたいなのもできるのでしょうか。三権分立の概念図を書いてもらいます。\n\nいいですね。画像生成で作った図みたいにゴテゴテしてなくていい。使いやすそうです。\nあとはアプリのUIワイヤーフレームも作ってくれました。\n\nそしてこの機能は単に静止画を作るだけではないみたいで、インタラクティブな表示もできます。ボタンを押すと円が増えていくシンプルなウィジェット。\n\n↓ボタンを押すと…\n\n\n\nさっきの三権分立の図に、新たな第四の組織を加えました。ボタンを押すと組織の規模が大きくなっていきます。\n\n↓ボタンを押すと…\n\n\n\nあとはロゴなんかも作ってくれます。動物専用スーパー、アニマルエツのロゴ。\n\nイラストに味があるな…。\n絵を描くと…",
-          "link": "https://nomolk.hatenablog.com/entry/2026/08/21/132849",
-          "publishedOn": "2026-08-21T04:28:49.000Z",
-          "wordCount": null,
-          "title": "ChatGPTがチャット中に図を描いてくれる機能がテスト中。味のありすぎるイラストも描ける",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/fff0a2fc3f725bfcf9841c70ff9625d8cad167af/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260821%2F20260821124909.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/fff0a2fc3f725bfcf9841c70ff9625d8cad167af/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260821%2F20260821124909.png"
         }
       ]
     },
@@ -6854,6 +6839,21 @@
       "siteUrl": "https://blog.3qe.us/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035340407767",
+          "author": null,
+          "description": "掲題のとおり、というか見ればわかる話だが、ブログのテーマをひさしぶりに変更した。\n先日アイキャッチ画像をいい感じのCSSテーマにしたばかりだが、せっかくなのでブログテーマもフルスクラッチで作ってみたところ、うまくいったというわけ。\nブログテーマを作る\n自分の場合はすでにデザインシステムが完成していたので、Claudeと一緒にブログテーマを作ってもらった。テーマの作成方法はデザインテーマ制作の手引きというページがあるので、この通りにやったら作ることができる。AI Agentに読ませたらすぐやってくれると思う。\nある程度の微調整を行ったら完成。\nTipsとして、Claudeを利用する場合はArtifact機能を利用してデモ画面を作ってもらいながら作業を進めるとイメージがつきやすいのでおすすめ。\nブログテーマをアップロードする\nあとはテーマストアでアップロードしよう。最終的にできあがったCSSファイルをコピペするだけだ。非公開でアップロードすることもできるので、自分しか使わないテーマはそれでいいと思う。\nAIとお好みのテーマを作るのおすすめ\n自分のこだわりテーマを気楽に作れるので、頭の中にイメージが固まっている人はやったらよいと思う。",
+          "link": "https://blog.3qe.us/entry/2026/11/18/192109",
+          "publishedOn": "2026-11-18T10:21:09.000Z",
+          "wordCount": 1432,
+          "title": "ブログテーマを作成してアイキャッチ画像と揃えた",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/12921228815713116358/14729835035340407767/1794997269",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/12921228815713116358/14729835035340407767/1794997269"
+        },
+        {
           "id": "hatenablog://entry/14729835035340152805",
           "author": null,
           "description": "AIが栄華を極めておりニンゲンによるコンテンツの作成は日陰においやられている今日このごろだが、自分はといえばこれまで通り気楽に執筆を続けている。たとえばブログ記事であったり、社内記事であったり、好きなゲームの情報を自分が欲しい形式で備忘録としてまとめておいたりと、とにかく自分が喜ぶようなものを盆栽的に続けている。それがたまたま人のためになることもあるし、自分しか見ないものができあがることもある。だいたい後者であるし、そこにあまり期待はしていない。あわよくば承認されたいな〜という下心がないわけではないけれど、それをあてにして書いているようではモチベーションを他者に委ねることになってしまうので、やめたほうがいいと思っている。\n執筆するとき、没入することとオーガナイゼーションの両方を行う必要がある\nこれまでの執筆環境遍歴\norg-mode\nEmacsでMarkdown直書き\nScrapbox / Cosense\norg-modeの復活\nCosenseの書き味に近付ける\norg-mode のインデント/移動を覚える\nyasnippet で構文を寄せる\norg-startup-indented を設定する\nox-gfm でGitHub式のMarkdownをレンダできるようにする\nevil-org を導入する\norg-export-with-toc を切って目次をやめる\norg-export-with-sub-superscripts を切る\nタグの活用\ntag-faceの設定\nタグでレンダの挙動をカスタマイズする\n開いたときの挙動を制御する\n快適な執筆環境を得られている\n執筆するとき、没入することとオーガナイゼーションの両方を行う必要がある\nところで、執筆という大仰な言葉を使ってみたけれど、そんなに気張るものではない。自分が考えていることを楽しく書いて、後の自分が楽しく読めるようなも…",
@@ -7137,6 +7137,16 @@
       "feedUrl": "https://blog.lai.so/rss/",
       "siteUrl": "https://blog.lai.so/",
       "articles": [
+        {
+          "id": "6afdb729d43f620001c0a76b",
+          "author": "laiso",
+          "description": "Claude Codeにツール呼び出しをJavaScriptコードで一括処理するCode Modeが追加されました。\n\nRun tool calls from code with Code Mode - Claude Code Docs\n\nTry Code Mode, an experimental feature",
+          "link": "https://blog.lai.so/2026-11-18/",
+          "publishedOn": "2026-11-18T14:58:14.000Z",
+          "wordCount": 701,
+          "title": "#27 Code Mode on Claude Code",
+          "imageUrl": null
+        },
         {
           "id": "6af6ab957331a600014b79d6",
           "author": "laiso",
@@ -7557,6 +7567,26 @@
       "siteUrl": "https://engineering.mercari.com/",
       "articles": [
         {
+          "id": "https://engineering.mercari.com/blog/entry/20261117-report-iosdc-2026/",
+          "author": null,
+          "description": "iOSDC Japan 2026に登壇・参加しました こんにちは。株式会社メルカリ iOSエンジニアの佐藤たけしです。 9月11日から9月13日にかけて開催された「iOSDC Japan 2026」にメルカリはゴールドス […]",
+          "link": "https://engineering.mercari.com/blog/entry/20261117-report-iosdc-2026/",
+          "publishedOn": "2026-11-17T18:00:54.000Z",
+          "wordCount": 563,
+          "title": "iOSDC Japan 2026に参加しました",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/11/1c123fd5-img_4217-scaled.jpg"
+        },
+        {
+          "id": "https://engineering.mercari.com/blog/entry/20261113-query-suggest-vector-search-reranking/",
+          "author": null,
+          "description": "はじめに こんにちは！　メルカリでMLエンジニアをしているarr0wです。 今回はメルカリの商品ページの下部にあるQuery Suggest「他の人はこちらも検索」を改善した取り組みについて紹介します。 この機能では「ハ […]",
+          "link": "https://engineering.mercari.com/blog/entry/20261113-query-suggest-vector-search-reranking/",
+          "publishedOn": "2026-11-16T11:20:39.000Z",
+          "wordCount": 841,
+          "title": "ベクトル検索とRerankingモデルを活用した商品ページのクエリサジェストの改善",
+          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/11/cf48338d-gemini_generated_image_du18iudu18iudu18-scaled.jpeg"
+        },
+        {
           "id": "https://engineering.mercari.com/blog/entry/20261110-ai-native-catalog-construction/",
           "author": null,
           "description": "はじめに こんにちは、メルカリのProduct Engineer、arr0w（ML）と utdoi （Backend）です。 私たちが所属するProduct Data Teamでは、商品カタログ（製品ごとの情報をまとめた […]",
@@ -7655,26 +7685,6 @@
           "wordCount": 512,
           "title": "「Merpay Tech Talk 〜3年で50ヵ国へ。メルカリ決済基盤アーキテクチャ刷新の舞台裏〜」を開催しました！ #merpay_techtalk",
           "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/09/8ab5da76-merpay-tech-talk-サムネイル.png"
-        },
-        {
-          "id": "https://engineering.mercari.com/blog/entry/20260820-4f9e501769/",
-          "author": null,
-          "description": "本記事は、私たちDBRE（Database Reliability Engineering）チームが2026年3月末までに行った改善を紹介する3つの記事の3つ目（最終回）です。 1つ目の記事「メルカリにおけるTiDB改善 […]",
-          "link": "https://engineering.mercari.com/blog/entry/20260820-4f9e501769/",
-          "publishedOn": "2026-08-20T17:13:20.000Z",
-          "wordCount": 708,
-          "title": "メルカリにおけるTiDB改善の取り組み：インデックス非互換への対応",
-          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/08/2dd24400-tidb_series3_eyecatch-1.png"
-        },
-        {
-          "id": "https://engineering.mercari.com/blog/entry/20260818-dba81909b6/",
-          "author": null,
-          "description": "本記事は、私たちDBRE（Database Reliability Engineering）チームが2026年3月末までに行った改善を紹介する3つの記事の2つ目です。 1つ目のブログ記事の「メルカリにおけるTiDB改善の […]",
-          "link": "https://engineering.mercari.com/blog/entry/20260818-dba81909b6/",
-          "publishedOn": "2026-08-19T07:00:36.000Z",
-          "wordCount": 565,
-          "title": "メルカリにおけるTiDB改善の取り組み：リソース制御・リージョンサイズ・プランキャッシュ編",
-          "imageUrl": "https://storage.googleapis.com/prd-engineering-asset/2026/08/e8d19a70-tidb_series2_eyecatch.png"
         }
       ]
     },
@@ -9172,16 +9182,6 @@
           "wordCount": 1907,
           "title": "GameGaz Daily 2026.8.22",
           "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
-        },
-        {
-          "id": "https://gamegaz.com/?p=45972",
-          "author": "mamosuke",
-          "description": "GTA6 Leak,Switch2,ps5-payload-ftpsrv v0.21.1,ampr_emu 0.3.6,ps5upload v5.4.7,PS5-Super-PLDMGR-Auto-Updater v20.08.2026_18.58,RetroFlow-Launcher v8.3.0,sys-HDR 1.0.0,green-nx v1.0.30pre9,Breeze beta114.00,NXStation v0.3.0,pipensx 1.4.1,WasabiDS v0.2.6,WasabiGBA v0.2.6,ColecoDS 11.0,SpeccySE Version 2.1a,amiberry v8.3.0-ChromeOS-Update1,MAME4droid 2026(0.289) 1.38.3,oyConDroid 1.1.3,Azahar 2126.1 Alpha 1,RustyNES v2.4.1,shadPS4 Pre-release-shadPS4-2026-08-20-e4ff203,ARMSX2 nightly 20260820 (dfef534426),Xenia Manager v4.3.2,ReXGlue SDK Nightly 0.10.0-dev.gcdb4388,webMAN MOD 1.47.48s→→→この記事の続きを読む\nGameGaz Daily 2026.8.21 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026082145972/",
-          "publishedOn": "2026-08-21T01:37:41.000Z",
-          "wordCount": 1811,
-          "title": "GameGaz Daily 2026.8.21",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
@@ -9297,6 +9297,36 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html",
+          "author": null,
+          "description": "マイクロソフトは日本時間11月18日未明に開幕した年次イベント「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するためのAIエージェントによる新サービス「Microsoft Perception」の提供開始を発...",
+          "link": "https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html",
+          "publishedOn": "2026-11-18T16:00:37.000Z",
+          "wordCount": 1521,
+          "title": "マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始",
+          "imageUrl": "https://www.publickey1.jp/2026/HXWPdJiXoAAF46K.png"
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html",
+          "author": null,
+          "description": "マイクロソフトは日本時間11月18日未明に開幕した年次イベント「Microsoft Ignite 2026」で、AIが生成したアプリなどを企業内で安全に実行するための基盤となる「Copilot Managed Runtime」の正式リリース...",
+          "link": "https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html",
+          "publishedOn": "2026-11-18T15:58:32.000Z",
+          "wordCount": 1509,
+          "title": "マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース",
+          "imageUrl": "https://www.publickey1.jp/2026/copilot-managed-runtime-ga01.png"
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html",
+          "author": null,
+          "description": "マイクロソフトは日本時間11月18日未明に開幕した年次イベント「Microsoft Ignite 2026」で、次期サーバ向けOSとなるWindows Server 2028のパブリックプレビュー公開を発表しました。 企業内のAI推論基盤へ...",
+          "link": "https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html",
+          "publishedOn": "2026-11-18T15:55:49.000Z",
+          "wordCount": 1507,
+          "title": "Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張",
+          "imageUrl": "https://www.publickey1.jp/2026/windows-server2028-la.png"
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html",
           "author": null,
