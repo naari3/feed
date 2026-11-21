@@ -818,6 +818,21 @@
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035341811867",
+          "author": null,
+          "description": "tmux から Rex に移行しました。tmux はもう起動していません。\nwww.superlogical.com\nしばらく tmux と併用してたのだけれど、唯一のネックは copy mode がないことでした。11月18日の mac/0.1.0-preview.32 で copy mode が入ったので、併用する理由がなくなった。\nblog.nishimu.land\nzellij から tmux に戻したときの理由は、細かく手を入れられることと、Claude Code から tmux send-keys などで操作できることでした。Rex はこの二つを満たしたうえで、tmux ではできなかったことがいくつかできます。\nClaude Code からの操作は、tmux send-keys が rex send に、tmux capture-pane が rex capture になったくらいの違いです。このブログの下書きも、Claude Code が rex split で右の pane に nvim を開いて見せてくれている。\nRex\nRex は Superlogical が作っているターミナルマルチプレクサです。Superlogical は、Ghostty の作者で HashiCorp の共同創業者でもある Mitchell Hashimoto が今年7月に立ち上げた会社です。今はまだ preview で、Mac、iOS、Windows のアプリと、Linux などで動くサーバーと rex コマンドが出ています。\ntmux との一番の違いは、ターミナルエミュレーターとマルチプレクサが一つになっていることです。tmux のころは Ghostty の中で tmux を動かしていたのだけれど、Rex では Mac のアプリがそのままターミナルになり、tab や pane の…",
+          "link": "https://blog.nishimu.land/entry/2026/11/21/192436?utm_source=feed",
+          "publishedOn": "2026-11-21T10:24:36.000Z",
+          "wordCount": 923,
+          "title": "tmuxからRexに移行した",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/4803376c5bb891ce298c51f6a8b8c58b471d2afa/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261121%2F20261121192123.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/4803376c5bb891ce298c51f6a8b8c58b471d2afa/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261121%2F20261121192123.png"
+        },
+        {
           "id": "hatenablog://entry/14729835035340439827",
           "author": null,
           "description": "AIエージェントにどこまで任せられるかは、そのエージェントをどれだけ信頼できるかで決まります。\nLauren Tan（@poteto）は、この信頼を段階に分けて、信頼を積んだ分だけ同時に走らせるエージェントを増やせる、と話しています。\nその段階に当てはめると、僕は10〜20体くらいのところにいる気がします。\nただ、出てきた結果はまだ僕がいちいち確認していて、数だけ増えて信頼が追いついていません。\n次は、ある程度は自動で開発が回るように、検証に力を入れたいと思っています。\n信頼グラフ\nTan は2026年9月の講演 How I Shipped 2000 PRs Last Month — Trusting AI Agents で、あるグラフを出しています。\n縦軸が信頼、横軸が同時に走らせるエージェントの数で、Tan はこれを信頼グラフ（trust graph）と呼んでいます。\n 目盛り \n Tan の説明 \n\n\n\n\n 1 \n 1体をつきっきりで細かく管理する（micromanage）ところから始まる。 \n\n\n 1 to 5 \n すべての会話に張りついて軌道修正し続ける。目を離すとエージェントは間違える。この段階が一番抜け出しにくい。 \n\n\n 5 to 10 / 10 to 20 \n 目盛りとして置かれているだけで、説明はない。 \n\n\n hundreds / thousands \n 「100体のような規模」が到達のイメージとして出てくるが、hundreds と thousands の違いは語られていない。 \n\n\n\n\n\n\n段階を上がるための数値の基準（誤り率など）は示されていません。\n信頼がないまま100体のサブエージェントやクラウドエージェントを出すと、質の低いプルリクエストとリグレッションとバグが大量に出る、と注意しているだけです。\n上がる条件として挙げているのは検証です。\nア…",
@@ -7683,6 +7698,16 @@
       "siteUrl": "https://gamegaz.com",
       "articles": [
         {
+          "id": "https://gamegaz.com/?p=46581",
+          "author": "mamosuke",
+          "description": "Malev0氏がSwitch 1『たねつみの歌』を利用してNintendo Switch 2でkaiHEN環境を実現できるseedsow-fs-kaihenをリリースしていました。→→→この記事の続きを読む\nたねつみの歌でkaiHEN seedsow-fs-kaihen by Malev0 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026112146581/",
+          "publishedOn": "2026-11-21T03:43:14.000Z",
+          "wordCount": null,
+          "title": "たねつみの歌でkaiHEN seedsow-fs-kaihen by Malev0",
+          "imageUrl": null
+        },
+        {
           "id": "https://gamegaz.com/?p=46576",
           "author": "mamosuke",
           "description": "pavelgajdo氏がAndroid向けのNintendo Switch 2エミュレータHokkaido 0.7.1をリリースしていました。→→→この記事の続きを読む\n北海道 ゆず発祥のアンドロイドの2エミュ first appeared on 大人のためのゲーム講座.",
@@ -10344,26 +10369,6 @@
           "publishedOn": "2026-08-24T15:29:33.000Z",
           "wordCount": null,
           "title": "シングルバイナリなOLAP DBの次期版「DuckDB 2.0」プレビュー。クライアント／サーバ機能が安定版に、スキーマレスのVARIANT型、トリガー、非同期I/Oなど新機能",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html",
-          "author": null,
-          "description": "サーバサイドJavaScriptランタイムのBunの最新版となる「Bun 1.4」正式版のリリースが発表されました。 Bun 1.4は、これまでZig言語で開発されていたものをClaude Codeを使ってRustに書き直した最初のバージョ...",
-          "link": "https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html",
-          "publishedOn": "2026-08-23T15:58:41.000Z",
-          "wordCount": null,
-          "title": "Rustに移植された「Bun 1.4」正式リリース。Node.jsとの互換性向上でPlaywrightやvitestが動作、CPUとメモリの使用率が大幅改善、正規表現が高速化など",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/slackaislack_code.html",
-          "author": null,
-          "description": "Salesforce傘下のSlack社は、同社のチャットサービス「Slack」の新機能として、開発チームの一員としてAIエージェントがチャットに加わり、それまでの開発チームの議論を把握してコーディングを行う「Slack Code」の提供開始...",
-          "link": "https://www.publickey1.jp/blog/26/slackaislack_code.html",
-          "publishedOn": "2026-08-23T15:52:28.000Z",
-          "wordCount": null,
-          "title": "Slack上の開発チームの会話をAIエージェントが把握してコーディング。ドキュメント作成もする「Slack Code」登場",
           "imageUrl": null
         }
       ]
