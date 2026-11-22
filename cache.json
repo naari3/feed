@@ -1859,21 +1859,6 @@
             "length": "0"
           },
           "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032070879414/1788051602"
-        },
-        {
-          "id": "hatenablog://entry/14945776032068679799",
-          "author": null,
-          "description": "station-ranking.kuwabara-cloudflare.workers.dev\n鉄道でどの区間が多く利用されているのか気になったので、Claudeに雑アプリを作ってもらった。国土交通省が出している定期券の販売実績から、定期券が多く発券されている区間順にランキングを出すアプリ。\n駅ごとに傾向に違いがあって面白い。1駅に集中していたり、逆にいろんな駅にバラけていたり。ずっと見ていられる。\nなお出力が本当に正しいのかなどは全く見ていないので、そのへんは自己責任で。\nデプロイにはCloudflare Workerを使った。Claudeがポンと出してくれたHTMLをとりあえず設置するには一番便利そう。ClaudeからダウンロードしてD&Dすればデプロイができる。\nちゃんとgit管理するならGitHub pagesのほうが良いかもしれない。\nこういうデータって、データとしては存在していても、加工して眺めてみようとは今までなかなかやるのが大変だったので、Claudeによってシュッとビューを作れるようになったのは結構便利。\ngithub.com\nClaudeに「rbs/steepを導入して」と言ったときに、rbs collectionを使ってくれないことが多かったので、rbsとsteep側に修正をいれた。\nsteep initで生成されるSteepfileにrbs collectionへの言及が一切なかったのが一番良くなかったかなと思っている。rbs collectionを実装したときに、ここも直しておいたほうが良かったのだろうなあ。\nこの変更がリリースされれば、「rbs/steepを導入して」と言うだけで、いい感じのセットアップがされてくれるに違いない。\nmixi.social\nクラフトジンジャーエールシロップを作った。多分3回目のtry。\nかなり好みの味に仕上がったと思う。クラフトジンジャーエールのレシピの量を基本にしつつ、スパイス類はクラフトコーラのレシピの量を入れた。スパイスが強めに効いたクラフトジンジャーエールになっていい感じ。\n砂糖を減らすのを忘れていて砂糖多めになってしまっていたので、次は砂糖を減らしたい。別のスパイスを試してみても良いかも知れない。\n昼頃に無限に水を飲んでは無限に汗が出る状態になっていて、備蓄していたOS-1を初めて飲んだ。500mlを一瞬で飲んでしまった。\n脱水していると美味しく感じると聞くけれど、確かに美味しかった。ただ脱水していない時に飲んだことがないので、比較として飲んでみたい。りんご味なのも美味しく感じた理由な気がする。",
-          "link": "https://commits.hatenablog.com/entry/2026/08/25/100000",
-          "publishedOn": "2026-08-25T01:00:00.000Z",
-          "wordCount": 560,
-          "title": "2026-08-24",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032068679799/1787619600",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032068679799/1787619600"
         }
       ]
     },
@@ -3106,6 +3091,66 @@
       "feedUrl": "https://kougasetumei.hatenablog.com/rss",
       "siteUrl": "https://kougasetumei.hatenablog.com/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14729835035342616315",
+          "author": null,
+          "description": "コミケット19で頒布された『漫画新批評大系』第15号（第3期4号／1981年12月）に、亜庭じゅんは「まんがをめぐる言葉をめぐって」を発表した。漫画を語る言葉が急増するなか、宮岡蓮二（三宅秀典）や米沢嘉博の批評を俎上に載せ、自身もその一翼を担ってきた70年代の漫画批評を根本から再検討した論考である。\n宮岡が漫画に関わる人間の生き方を問題にしたのに対し、亜庭は漫画表現とそれを取り巻く状況に対する批評の有効性を問題にした。ところが、大塚英志は『COMIC BOX』1983年6月号に発表した「〈有効性〉をめぐる幻想」で宮岡の立場を評価しつつ、漫画批評に〈有効性〉を求めること自体を批判したのだ。漫画状況の変革を目指す運動としての批評から、漫画を素材とする自立した表現としての批評へ。この一連の論争には、70年代から80年代にかけての漫画批評の世代的・方法論的な転回が端的に表れている。\n\n1981年の漫画批評状況\n「迷宮」と「跋折羅」の対立\n宮岡蓮二（三宅秀典）の批判――漫画を通じた自己検証\n亜庭の反論――漫画もまた現実である\n米沢嘉博への批判\n漫画表現論への批判\n「論争」は成立していたのか\n大塚英志「〈有効性〉をめぐる幻想」\n2026年11月22日「幻燈の会」と跋折羅の再評価\n主要参照文献\n一次資料\n研究文献\n2026年の関連資料\n註\n亜庭じゅん「まんがをめぐる言葉をめぐって」（再録）\n編註\n1981年の漫画批評状況\n亜庭は1981年の漫画批評を次の一文から論じ始めた。\nまんがに関する文章が急激に増えている*1。\n当時、漫画批評を取り巻くメディア環境は急速に変化していた。\n媒体・出版物\n1981年前後の動向\n\n\n\n\n『ぱふ』\n漫画専門誌としての展開と分裂\n\n\n『ふゅーじょんぷろだくと』\n漫画情報・評論の新たな媒体\n\n\n『マンガ奇想天外』\n評論コラムの定着\n\n\n『週刊宝石』\n一般週刊誌…",
+          "link": "https://kougasetumei.hatenablog.com/entry/meikyu-basara",
+          "publishedOn": "2026-11-22T17:58:07.000Z",
+          "wordCount": 800,
+          "title": "80年前後の漫画批評の〈有効性〉をめぐる論争あるいは「迷宮」VS「跋折羅社」論争の再検証――亜庭じゅん「まんがをめぐる言葉をめぐって」を中心に",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/14729835035342533105",
+          "author": null,
+          "description": "1980年前後の「迷宮」とコミックマーケットの分裂は、単なる運営方針の対立や人間関係のもつれではなく、70年代の漫画マニア運動が時代の変化に直面した結果であった。\nコミックマーケットは当初、描き手と読み手が直接交流し、自らの手で新しい漫画文化を創造する場として構想された。しかし、規模の拡大と参加者の多様化に伴い、創作同人誌を中心とする即売会から、二次創作やコスプレなどを含む多様な表現の場へと変貌していく。\nこうした変化に対し、創設メンバーの原田央男、亜庭じゅん、米沢嘉博は、それぞれ異なる選択をした。原田は自らの理想と現実との乖離を理由に代表を辞任。亜庭は初期コケットの理念を継承するため、新たな即売会「MGM」を立ち上げた。一方、米沢は参加者の多様化を受け入れ、コミックマーケットを時代の変化に対応させていった。\n亜庭が重視したのは、参加者が単なる利用者ではなく、漫画文化を創造する主体となることである。そのためMGMでは、オリジナル創作を優先し、参加規模や活動内容にも一定の制限を設けた。亜庭にとって、これらの規制は自由を否定するものではなく、主体的な参加と対等な交流を成立させるための条件だった。\nしかし、理念を守るための規制は、結果的に新規参加者の参入を難しくし、MGMの閉鎖性を高めることにもなった。そこには、かつて亜庭自身が批判したマニア文化のサロン化という問題が再び現れている。\n対照的に、米沢体制下のコミックマーケットは、特定の漫画観を参加者に求めることなく、多様な表現を受け入れることで発展を遂げた。\n金泰龍は、この三者の選択を原田の「離脱」、亜庭の「抵抗」、米沢の「転向」として捉えている。そこに示されているのは、漫画を「ぼくら」のものとして共有し、自らの手で変革できるという70年代の漫画世代の共通感覚が、もはや維持できなくなったという事実である。\n「迷宮」とコミックマーケ…",
+          "link": "https://kougasetumei.hatenablog.com/entry/meikyu-comiket-split",
+          "publishedOn": "2026-11-22T14:06:40.000Z",
+          "wordCount": 544,
+          "title": "「迷宮」とコミックマーケットの分裂（原田央男の離脱、亜庭じゅんの抵抗、米沢嘉博の転向をめぐって）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/95794f88bc5c7e5d538201df54de56b084a628dd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkougasetumei%2F20261122%2F20261122224702.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/95794f88bc5c7e5d538201df54de56b084a628dd/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fk%2Fkougasetumei%2F20261122%2F20261122224702.png"
+        },
+        {
+          "id": "hatenablog://entry/14729835035342495636",
+          "author": null,
+          "description": "1970年代後半から80年代初頭にかけて、漫画市場の拡大とコミックマーケットの成長は、漫画ファンダムのあり方を大きく変えた。その一方で、漫画批評や同人活動を通じて漫画文化そのものを変革しようとした「迷宮」の運動は、次第に影響力を失っていく。金泰龍は、この過程を70年代の漫画マニア文化の衰退として捉えている。\n「迷宮」は、作家と読者が作品を媒介として交流し、ともに新しい漫画文化を創造することを目指していた。少女漫画批評や「24年組」の発見、コミックマーケットの創設も、その実践の一環である。しかし、コミックマーケットの規模が拡大するにつれ、コスプレやアニパロなど、創設者たちの意図とは異なる文化が発展していった。\nこうした変化に強い危機感を抱いたのが亜庭じゅんだった。1980年、亜庭はコミックマーケットが本来の目的を見失い、単なる「お祭り騒ぎ」になりつつあると批判した。漫画の商品化によって作家と読者が分離したように、コミックマーケットでも準備会と参加者の分離が進んでいたからだ。そこで亜庭は既存の出版・流通システムに対抗するため、全国的な同人誌メディアの確立と新たな同人誌即売会の開催を構想し、同年8月に「まんが・ミニ・マーケット」を立ち上げた。1981年には「MGM」と改称し、現在も運営体制を変えて継続している。\n一方、漫画批評のあり方をめぐって「迷宮」と跋折羅社の間で論争が起こった。『跋折羅』を刊行する跋折羅社の宮岡蓮二（三宅秀典）は「迷宮」の批評が漫画の世界だけで完結していることを問題視した。漫画を論じるのであれば、漫画と社会との関係だけでなく、批評する自分自身の立場も問い直す必要があるというのだ。これに対し、亜庭じゅんは『漫画新批評大系』第15号（1981年12月20日発行）に発表した「まんがをめぐる言葉をめぐって」で反論した。要するに、宮岡は漫画の外にある社会や現実から漫画…",
+          "link": "https://kougasetumei.hatenablog.com/entry/The-Decline-of-1970s-Manga-Fan-Culture",
+          "publishedOn": "2026-11-22T12:17:53.000Z",
+          "wordCount": null,
+          "title": "70年代マンガマニア文化の衰退（漫画批評の〈有効性〉をめぐって）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png"
+        },
+        {
+          "id": "hatenablog://entry/14729835035342479834",
+          "author": null,
+          "description": "1980年前後、コミケットを主催する「迷宮」グループと、同人誌『跋折羅』『弾道』を発行する跋折羅社の間で、漫画批評のあり方をめぐる論争が繰り広げられた。跋折羅社の宮岡蓮二（三宅秀典）は「迷宮」が漫画という閉じられた世界の内部でしか物事を考えていないと批判した。\nこれに対して亜庭じゅんは、1981年に『漫画新批評大系』第15号に発表した「まんがをめぐる言葉をめぐって」で反論。漫画もまた現実を構成する一部であり、漫画を通じて現実に働きかけることには意味があると主張した。同時に、漫画をめぐる言説が増加する一方で、批評が漫画状況を変革する力を失い、単なる情報提供に変質していることを問題視した。\nこうした論争を踏まえ、大塚英志は1983年に「〈有効性〉をめぐる幻想」を発表する。そこで提起されたのは、そもそも漫画批評は漫画状況を変革するためのものでなければならないのか、という根本的な問いだった。\n大塚によれば「迷宮」らの世代が新しい漫画の可能性を見いだし「24年組」や「ニューウェーブ」といった名称を与えたことは、それらを既存の出版市場に取り込む役割をも果たした。漫画状況を変革するはずの批評が、逆に漫画の商品化を助けていたのである。\nそのうえで大塚は、亜庭よりも宮岡の立場を評価した。批評とは、作家を支援したり、理想の漫画を実現したりするための手段ではなく、漫画を素材とした独立した表現活動であると考えたからだ。\nつまり大塚は、70年代の漫画マニアたちが抱いていた、批評によって漫画の世界を変えられるという信念そのものを「有効性をめぐる幻想」として批判したのである。\nなお、本稿は1988年7月に刊行された増補新版では削除されている。大塚は新版のあとがきで、自身の主張が変化したわけではなく、取り上げた漫画評論家の多くがすでに活動しておらず、掲載する意味が薄れたためだと説明している。\n\n \n大塚英…",
+          "link": "https://kougasetumei.hatenablog.com/entry/Illusions-Surrounding-Validity",
+          "publishedOn": "2026-11-22T11:40:31.000Z",
+          "wordCount": null,
+          "title": "大塚英志「〈有効性〉をめぐる幻想」（亜庭じゅん「まんがをめぐる言葉をめぐって」への反論）",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png"
+        },
         {
           "id": "hatenablog://entry/14729835035342479834",
           "author": null,
@@ -9157,16 +9202,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2026.8.26",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=45986",
-          "author": "mamosuke",
-          "description": "LuaPSX v1.0,PS5 Web File Manager v1.6,Spectrum Library 1.4.3,APR Emu Updater v1.5.1,ps5-image-forge v0.7.5,PS5-Super-PLDMGR-Auto-Updater PS5 AIO Packages (2026.08.24-2310),ShadowMountPlus 1.7alpha10,ps5upload v5.4.19,uac-pstv-host v1.4,NX Activity Log v1.5.9,green-nx v1.0.30,angrybirds2_nx 1.0.2,HaulNX 2.1.23,BlocksDS v1.23.0,DracoDS 1.8,RustyNES v2.6.1,xenia 1e834f8_canary_experimental,RPCN 1.10.0,ARMSX2 2.6.6.8.3,ARMSX3 0.9.4.4,ARMSX2-NX v3.0.0,shadNet 0.0.16,KytyPS5 2026-08-24-0b3302a→→→この記事の続きを読む\nGameGaz Daily 2026.8.25 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026082545986/",
-          "publishedOn": "2026-08-25T00:39:32.000Z",
-          "wordCount": 1816,
-          "title": "GameGaz Daily 2026.8.25",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
