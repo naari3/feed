@@ -30,6 +30,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035343402916",
+          "author": null,
+          "description": "凄まじいドキュメントです。いやー8年間ですか・・・。ここまで細部に実装できたり、ドキュメントを書けるというのは羨ましいですね。\nbokuweb.github.io\n追記：\nアホ脳みそですと自分で作っていないので半分ぐらいしか理解していないなあ、通読しただけで終わってしまったなあというのがあります（汗。\ntechbookfest.org",
+          "link": "https://akkera102.hatenablog.com/entry/2026/11/24/191423",
+          "publishedOn": "2026-11-24T10:14:23.000Z",
+          "wordCount": 524,
+          "title": "エミュレータドキュメント",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14729835035343402916/1795525537",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14729835035343402916/1795525537"
+        },
+        {
           "id": "hatenablog://entry/14729835035342704516",
           "author": null,
           "description": "GBA BIOS+GBATEK+（BIOS食った）claudeによるドキュメントです。\nretrointernals.github.io",
@@ -7425,6 +7440,16 @@
       "siteUrl": "https://eng-blog.iij.ad.jp",
       "articles": [
         {
+          "id": "https://eng-blog.iij.ad.jp/?p=38605",
+          "author": "IIJ Engineers Blog編集部",
+          "description": "AIの普及により、サイバー攻撃では情報収集やフィッシング、脆弱性探索などの高速化・効率化が進んでいます。一方、企業には「すべてを守る」のではなく、重要な資産を見極め、侵入後の被害最小化や復旧まで含めて...",
+          "link": "https://eng-blog.iij.ad.jp/archives/38605",
+          "publishedOn": "2026-11-24T06:13:22.000Z",
+          "wordCount": 1880,
+          "title": "AI時代のサイバーセキュリティとは？攻撃の変化と企業が見直すべき3つのポイント",
+          "imageUrl": "https://eng-blog.iij.ad.jp/wp-content/uploads/2026/11/4916800179ee7dc370b28dd611902ceb.jpg"
+        },
+        {
           "id": "https://eng-blog.iij.ad.jp/?p=38537",
           "author": "片貝 悠",
           "description": "新機種、現る！ IIJはISPとしてインターネット接続サービスをみなさまにお届けしているのですが、自身でルータも作っていたりします。 ISPであるIIJが「これは欲しい！」と思った機能を追加していきア...",
@@ -7613,16 +7638,6 @@
           "wordCount": null,
           "title": "データ品質と遠隔制御を実現するIoTゲートウェイ「P3EG®︎」の仕組み",
           "imageUrl": null
-        },
-        {
-          "id": "https://eng-blog.iij.ad.jp/?p=37391",
-          "author": "佐藤 雅子",
-          "description": "IIJの佐藤雅子です。 私は現在、社外・社内で研修やワークショップの企画・実施・運営を行っています。 ワークショップデザインで大切にしていること 私自身、参加者としてワークショップに加わったとき、気づ...",
-          "link": "https://eng-blog.iij.ad.jp/archives/37391",
-          "publishedOn": "2026-08-27T00:06:40.000Z",
-          "wordCount": null,
-          "title": "「気づいたら夢中になっていた」を、意図してつくる ―　ワークショップデザインの舞台裏",
-          "imageUrl": null
         }
       ]
     },
@@ -7758,6 +7773,26 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=46600",
+          "author": "mamosuke",
+          "description": "Nintendo Classics,GTA→→→この記事の続きを読む\nGameGaz Daily 2026.11.24 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026112446600/",
+          "publishedOn": "2026-11-24T10:28:56.000Z",
+          "wordCount": 1638,
+          "title": "GameGaz Daily 2026.11.24",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
+        },
+        {
+          "id": "https://gamegaz.com/?p=46598",
+          "author": "mamosuke",
+          "description": "mr-Native氏がPS5にWindows 11をインストールしてブートできるようにするペイロードPSWloader v1.0.4をリリースしていました。→→→この記事の続きを読む\nPS5でWindows 11を PSWloader by mr-Native first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026112446598/",
+          "publishedOn": "2026-11-24T05:46:31.000Z",
+          "wordCount": 1749,
+          "title": "PS5でWindows 11を PSWloader by mr-Native",
+          "imageUrl": "https://gamegaz.com/wp-content/uploads/PS5-Jailbreak.png"
+        },
         {
           "id": "https://gamegaz.com/?p=46592",
           "author": "mamosuke",
@@ -9247,16 +9282,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2026.8.28",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=45996",
-          "author": "mamosuke",
-          "description": "Disc to Digital,Project Helix,GTA6,ファミコンカセット盗難,Atari 2600用カートリッジを復刻販売,OnionHEN v0.0.11,Goldengames-PS5-Autoloader v1.1.0,send_pkg-payload v1.6.4,ps4debug v1.1.19, RPCS3,ps5-webkit-autoloader-esp32 PS4-v1.1.0,PS5-Super-PLDMGR-Auto-Updater PS5 AIO Packages (2026.08.26-1947),ps5upload v5.9.1,Hocoslamfy 1.02 PSVITA,Apollo PC Tools (apollo-lib) v2.1.0,Sakura-Switch v1.0.2,Breeze beta116.02,Checkpoint 5.2.0,re_nsyshid v0.4.7,WiiUDownloader v2.101,Azahar 2126.1 -rc1,ReXGlue SDK Nightly 0.10.0,RustyNES v2.6.4,EmuCoreX v0.3.6,ARMSX2 nightly 20260826 (662b114168),shadPS4 Pre-release-shadPS4-2026-08-26-54ec7d0,shadPS4-QtLauncher 2026-08-26-d2c682c,shadNet 2026-08-26-4209782,KytyPS5 2026-08-26-8072718,xenia 9d08d64_canary_experimental→→→この記事の続きを読む\nGameGaz Daily 2026.8.27 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026082745996/",
-          "publishedOn": "2026-08-27T03:56:53.000Z",
-          "wordCount": 1968,
-          "title": "GameGaz Daily 2026.8.27",
-          "imageUrl": "https://gamegaz.com/wp-content/uploads/GameGaz-Daily.png"
         }
       ]
     },
@@ -9402,6 +9427,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html",
+          "author": null,
+          "description": "Amazon Web Services（AWS）は、同社がクラウドサービスとして提供しているNoSQLデータベース「Amazon DynamoDB」の互換データベースを、Windows、Linux、macOSなどのOSに対応したユーザーのロ...",
+          "link": "https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html",
+          "publishedOn": "2026-11-24T15:19:30.000Z",
+          "wordCount": 1434,
+          "title": "AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達",
+          "imageUrl": "https://www.publickey1.jp/2026/extenddb10-01.png"
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/jquery_41queryselectoralljquery_3xjquery_38.html",
+          "author": null,
+          "description": "jQuery開発チームは、JavaScriptライブラリ「jQuery」の最新版となる「jQuery 4.1」正式版のリリースを発表しました。 また同時にjQuery 3.x系の最後のリリースとなる「jQuery 3.8」も同時にリリースし...",
+          "link": "https://www.publickey1.jp/blog/26/jquery_41queryselectoralljquery_3xjquery_38.html",
+          "publishedOn": "2026-11-24T15:15:39.000Z",
+          "wordCount": 1464,
+          "title": "jQuery 4.1正式版がリリース、内部実装をquerySelectorAllに統一でより高速に。jQuery 3.x系最後となるjQuery 3.8も同時リリース",
+          "imageUrl": "https://www.publickey1.jp/2026/jquery41ga.png"
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html",
           "author": null,
