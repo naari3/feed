@@ -2198,7 +2198,23 @@
       "title": "fumiLab",
       "feedUrl": "https://fumimaker.net/rss",
       "siteUrl": "https://fumimaker.net/",
-      "articles": []
+      "articles": [
+        {
+          "id": "hatenablog://entry/14729835035343846266",
+          "author": null,
+          "description": "小ネタです。\nAmazonで領収書保存するとき、そのまま保存するとInvoice.pdfという名前となるのでかなりだるいです。なにかわからない。ブラウザによっては上書きしようとしてきて非常にやっかい。\nそこでこのブックレットを領収書保存の画面でクリックすると自動でリネームした上で保存してくれます。形式はAmazon_注文日付_注文番号.pdfとなります。\n導入のやり方\nこれをコピーしてChromeなりのブックマークに保存してください。ブックマークバーの見えるところに置いておくと便利です。単にAmazon画面の注文番号などをリネームに使ってるだけなので特にまずいことはないと思いますが、内容が気になる方は中身覗いてください。\n\n\n\n\n\nAmazonで領収書画面を開きます。\n\nブックレットをクリックするとブラウザ標準に保存画面がでるので保存することでAmazon_注文日付_注文番号.pdfとして保存してくれます。\n確定申告の時期にイライラしなくて最適です。\nこんなのAIに聞けばちょちょいのちょいですが再利用性が高そうなのでご共有します。\n（というか個人で書きためてる知見とかをガンガンブログにあっぷしないともったいないよね・・・なんとかしたい）",
+          "link": "https://fumimaker.net/entry/2026/11/25/171829?utm_source=feed",
+          "publishedOn": "2026-11-25T08:18:29.000Z",
+          "wordCount": 502,
+          "title": "Amazonの領収書保存時のinvoice(1).pdfをなんとかする",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/f9dbb9811ae47061b7bed66dd8560fc2fc00ddc8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffumimaker%2F20261125%2F20261125171214.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f9dbb9811ae47061b7bed66dd8560fc2fc00ddc8/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Ffumimaker%2F20261125%2F20261125171214.png"
+        }
+      ]
     },
     {
       "title": "Islands in the byte stream",
@@ -10455,16 +10471,6 @@
           "publishedOn": "2026-08-30T15:07:47.000Z",
           "wordCount": null,
           "title": "JetBrains、Mac上で動作するコーディングエージェント「Junie Local」提供開始。Claude Sonnet 4.5と同等の能力、RTX5909対応も開発中",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.publickey1.jp/blog/26/duckdbducklabsawsduckdbmit.html",
-          "author": null,
-          "description": "DuckDBの開発元であるDuckLabsは、来月（2026年9月）初旬にAWSの子会社となる予定であることを発表しました（DuckLabsの発表。AWSの発表） Today, @ducklabs_com is joining @awscl...",
-          "link": "https://www.publickey1.jp/blog/26/duckdbducklabsawsduckdbmit.html",
-          "publishedOn": "2026-08-27T15:55:49.000Z",
-          "wordCount": null,
-          "title": "DuckDBの開発元であるDuckLabsがAWS子会社になると発表。DuckDBはオープンソースのMITライセンスを維持",
           "imageUrl": null
         }
       ]
