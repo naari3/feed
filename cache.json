@@ -809,21 +809,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/ba12cb422b030a3cbba7538b50cb5f4c1a567065/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260831%2F20260831093315.jpg"
-        },
-        {
-          "id": "hatenablog://entry/14945776032070104374",
-          "author": null,
-          "description": "支えになったり、カッコつけになったり。言葉について考える\n\nはてなブログ編集部が選出する「はてなブログアワード」。2026年7月の受賞エントリーを特設ページにて発表しました。\n今月の受賞エントリーは以下の2つです！\nいじけないことですよ - ダイナミック気晴らし\nカッコいい言葉のこと - いろいろなことがある\n特設ページには編集部からのコメントも掲載しています。\n来月の更新もお楽しみに！\nblog.hatenablog.com\n\n\nはてなブログアワードでは、はてなブログ編集部がその月に「特に印象的だったブログ・みなさんに読んでもらいたいブログ」を選出し、掲載します。\nこれは「アルゴリズムだけでは見つけられない、めちゃくちゃおもしろいブログ」を毎日ピックアップして掲載している「きょうのはてなブログ」より、さらに激選したブログを1ヶ月に一度お届けするものです。\nはてなブログアワードは、毎月更新予定です。年末には、その年に投稿されたブログの中から「年間アワード」も発表しています。ぜひチェックしてください！",
-          "link": "https://blog.hatenablog.com/entry/2026/08/28/142410",
-          "publishedOn": "2026-08-28T05:24:10.000Z",
-          "wordCount": 904,
-          "title": "「はてなブログアワード」2026年7月度の受賞エントリーを発表しました！",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/1b97ba2c4f62d75e232762976e81a61e9b1480f1/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260224%2F20260224122450.png",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/1b97ba2c4f62d75e232762976e81a61e9b1480f1/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fh%2Fhatenablog%2F20260224%2F20260224122450.png"
         }
       ]
     },
@@ -832,6 +817,21 @@
       "feedUrl": "https://blog.nishimu.land/rss",
       "siteUrl": "https://blog.nishimu.land/",
       "articles": [
+        {
+          "id": "hatenablog://entry/14729835035343964320",
+          "author": null,
+          "description": "「ハーネス」という言葉をよく見かけるようになったのだけれど、人によって指している範囲がけっこう違います。\nClaude Code はハーネスなのか、サンドボックスはハーネスに入るのか。\nそう聞かれると僕もちゃんと答えられなかったので、一次情報を読んで整理しまいした（調べたのは 2026-11-25 時点の文書です）。\n出典がそろって言っているのは次の四つくらいです。\nハーネスはモデルそのものではない\n中核は、モデルにツールを見せ、呼び出しを実行し、結果を戻してループを回す仕組み\n人が触る UI（TUI やアプリ）と、その下のハーネスを分ける用法がある\n「ハーネス」という語は意味が詰め込まれすぎていて、範囲は出典ごとに違う\nエージェントの層\nエージェントを次の五つの層に分けると、出典どうしの共通部分を取りやすいです。\n 層 \n 何をするか \n 例 \n\n\n\n\n モデル \n テキストを生成する。重みそのもの \n Claude、GPT 系 \n\n\n ハーネス \n ツールを持たせ、呼び出しを解釈して実行し、結果を返す。会話の状態や文脈の圧縮も持つことが多い \n Claude Agent SDK、Codex の core や App Server \n\n\n 製品の入口 \n 人が操作して結果を見る \n TUI、デスクトップアプリ、IDE 拡張、設定画面、権限確認の UI \n\n\n 実行環境 \n コマンドが実際に走る \n 手元の端末、コンテナ、クラウドの VM、Anthropic の managed / self-hosted sandbox \n\n\n その外側 \n 検証したり、複数のループを束ねたりする \n テスト、リンター、CI、可観測性、ファクトリー \n\n\n\n\n\n実行環境を独立した層にするかは出典で割れます。\n一番外側は、Böckeler の言う outer harness や Osmani…",
+          "link": "https://blog.nishimu.land/entry/2026/11/25/215754?utm_source=feed",
+          "publishedOn": "2026-11-25T12:57:54.000Z",
+          "wordCount": 753,
+          "title": "ハーネスはどこからどこまでか",
+          "enclosure": {
+            "url": "https://cdn.image.st-hatena.com/image/scale/f9af380490dd616460636eb4fd85782b4f9fc6ea/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261125%2F20261125215538.png",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/f9af380490dd616460636eb4fd85782b4f9fc6ea/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2FS%2FSixeight%2F20261125%2F20261125215538.png"
+        },
         {
           "id": "hatenablog://entry/14729835035341917908",
           "author": null,
@@ -2097,21 +2097,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/b4a61e709fc1749ed7eef9658835f70a024bcc3c/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20260903%2F20260903154644.jpg"
-        },
-        {
-          "id": "hatenablog://entry/14945776032070001760",
-          "author": null,
-          "description": "・バスが来るまで。\nwww.nicovideo.jp\n良かった。ちょうど良い感じの距離にいる人達の対話を聞くのって好きなんだよね。\nかなり世代のギャップみたいなのも感じた。悪い意味じゃなく、です。\nこれ全員分やってください\n \n・ボカコレ\n好きな曲多かった！なんかゴタゴタが起きたのだけ残念です。本当にニコニコで一番勢いある企画だと思ってるのでどうかしょうもない荒れ方してないでしっかりしてくれ！\n20年動いてる動画サイトがやる杜撰さではない\n \nツァイストガイスト、本当にいい曲だから聴いたほうがいい。\nwww.nicovideo.jp\n \n余談なんだけど、ニコレポ連携をSNSに垂れ流す拡張のお陰で投稿者や関係者からのいいねRPがかなり頻繁に来てたことが分かった。そりゃエゴサするわな。\n多分音MAD関連の人しか使ってないと思うんだけど勿体ないよ。TLはめちゃくちゃ流すけどまあそこは自衛してくれや。\nニコニコ動画のいいね！や公開マイリスト登録を、Xへ自動投稿する拡張機能を作りました。\nスマホのいいね、マイリスト履歴を回収する機能もあります。\nダウンロードなど↓https://t.co/qizY0AyTLy pic.twitter.com/R3GeRqNmv9\n2026年6月23日\n\n\n \n・時限式サーバー\nネガティブな感情とか抜きで人のコミュニティサーバーが爆発する瞬間を見たい\nこれはどっかでまとめて感想とか書くと思うけど、時限式で消滅するDiscordサーバーがかなり俺の活動的に正解に近い。今はね。\n特に長引かせると過疎化して廃墟になることのが多いから楽しいことは今だけだと割り切ってしまったほうが結果的に内輪の動きは活性化すると思う。それと内輪以外を呼び込むときに時限式のほうが気が楽だよね。基本的に輪は広げたいと思ってるよ。\n \n・傲慢\n最終的に俺が力をつけすぎて傲慢さをオープンに振る舞いはじめて、それを打ち倒すやつが現れてほしいよね。\nだがそれは今日ではないし、お前にでもない。\n \n・エロ漫画\nwww.dlsite.com\nサンプルページが出てました。9月に出ます。読んでねッ\n \n・マダミス\nやった。過去一でRPがノリノリですごかった。俺だけでなく、みんな巧かった。\n推理はボロボロでした。でもそれで良いと思えるくらいRPが楽しかったね。\n \n・ガヤ\nwww.nicovideo.jp\nガヤ生に参加した。楽しかった。\n友達の家でゲームしてるとこ後ろで見てる感じだよね。\n \n・今週の良かった動画\nwww.nicovideo.jp\nwww.nicovideo.jp\nwww.nicovideo.jp\n \nそんな感じかな\n \nじゃ！",
-          "link": "https://crabgot.hatenablog.com/entry/2026/08/28/085238",
-          "publishedOn": "2026-08-27T23:52:38.000Z",
-          "wordCount": null,
-          "title": "【2026年8月-4】に関するレポート",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/bef7779ec1777d48b3bdd281e905c8e184965c44/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20260828%2F20260828083010.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/bef7779ec1777d48b3bdd281e905c8e184965c44/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fc%2Fcomariai%2F20260828%2F20260828083010.jpg"
         }
       ]
     },
@@ -3847,21 +3832,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/4261e16507bf7f8d6fba3d1e4e4f99c197038e3f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260830%2F20260830144518.png"
-        },
-        {
-          "id": "hatenablog://entry/14945776032065725597",
-          "author": null,
-          "description": "イヤフォンメーカーのSOUNDPEATSから、完全ワイヤレスイヤホン SOUNDPEATS Air6 Pro のサンプルをいただいたのでレビューします。\nカナル型のBluetoothイヤフォンで、「音質と機能を高次元で両立」「ちゃんと音で選ぶなら、SOUNDPEATS Air6 Pro」とうたわれており気合十分のモデルみたいです。\n先日レビューしたUU2イヤーカフも愛用しているので楽しみです。さっそく試用してみましょう。\n記事の最後にクーポンコードもあります！\n\n\nSOUNDPEATS Air6 Pro ワイヤレスイヤホン ハイレゾ ノイズキャンセリング（ブラック）【VGP2026 SUMMER 金賞】\n\nSoundPEATS(サウンドピーツ)\nAmazon\n\nSOUNDPEATS Air6 Pro とは\nSOUNDPEATS は深圳のメーカー。2010年創業です。いろんなメーカーがしのぎを削っている印象のある中国製中低価格帯のイヤフォンですが、その走りみたいなメーカー。\n\nケースです。右が表で、左のロゴ入りは裏面。丸っこくて思ったよりコンパクトなので、ポケットの中に転がしておくのにちょうどいいです。\n\nケースを開けて取り出したところ。表面はタッチセンサーになっていて、スマホアプリから左右の１～３回押し、長押しにそれぞれ機能を割り当てられます。割り当てできるのは音量の上下と再生／停止、ゲームモード切替、次の曲／前の曲、ノイズキャンセリングモード切替、スマホの音声アシスタント起動です。誤操作防止のために無効にすることも可能です。\nHear the difference（違いを聴け）のキャッチフレーズが印刷されていますが、写真で見るほどは目立ちません。むしろさりげないくらい。見にくいですが写真右上、角のところにもメーカーロゴが入っています。\n\nこんな感じ。あと写真に写ってません…",
-          "link": "https://nomolk.hatenablog.com/entry/2026/08/28/091200",
-          "publishedOn": "2026-08-28T00:12:00.000Z",
-          "wordCount": null,
-          "title": "音質重視ワイヤレスイヤホン SOUNDPEATS Air6 Pro レビュー。ボーカル曲は近くで歌っているような臨場感、ノイズキャンセルも強力な全部入り！",
-          "enclosure": {
-            "url": "https://cdn.image.st-hatena.com/image/scale/d32364985b3ca54305448e86b5113e14a67ad040/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260811%2F20260811174514.jpg",
-            "type": "image/jpeg",
-            "length": "0"
-          },
-          "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d32364985b3ca54305448e86b5113e14a67ad040/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fslideglide%2F20260811%2F20260811174514.jpg"
         }
       ]
     },
@@ -6733,7 +6703,18 @@
       "title": "ともしげ",
       "feedUrl": "https://note.com/tomoshige_note/rss",
       "siteUrl": "https://note.com/tomoshige_note",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://note.com/tomoshige_note/n/n5f51f664b202",
+          "author": null,
+          "description": "皆様いかがお過ごしでしょうか、お久しぶりです。\nいつの間にやら音MAD作者として10年もの月日が経ってしまいました、まだまだ気分は若手なんですけど…\n１０周年に向けて何か動画作るかとかも考えたんですが、僕は動画作るのが嫌いなのでなしになりました。\n続きをみる",
+          "link": "https://note.com/tomoshige_note/n/n5f51f664b202",
+          "publishedOn": "2026-11-25T15:51:23.000Z",
+          "wordCount": null,
+          "title": "10周年が過ぎたので、AIに自分の歴史をインタビューしてもらった",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "とそちか",
@@ -7146,6 +7127,16 @@
       "feedUrl": "https://blog.jxck.io/feeds/atom.xml",
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
+        {
+          "id": "https://blog.jxck.io/entries/2026-11-25/ekyc-over-jpki.html",
+          "author": null,
+          "description": "",
+          "link": "https://blog.jxck.io/entries/2026-11-25/ekyc-over-jpki.html",
+          "publishedOn": "2026-11-25T00:00:00.000Z",
+          "wordCount": null,
+          "title": "タイムズはどうすべきだったのか、JPKI を用いた eKYC の今後",
+          "imageUrl": null
+        },
         {
           "id": "https://blog.jxck.io/entries/2026-11-19/cyber-security-emergency-package.html",
           "author": null,
@@ -7789,6 +7780,16 @@
       "feedUrl": "https://gamegaz.com/feed/",
       "siteUrl": "https://gamegaz.com",
       "articles": [
+        {
+          "id": "https://gamegaz.com/?p=46604",
+          "author": "mamosuke",
+          "description": "Hinoaaaaaf212氏がNintendo Switch 2で『Seedsow Lullaby(たねつみの歌)』などのインストール済みSwitch 1ゲームと置き換えてSwitch 1のバックアックゲームを起動することができるSeedSwapをリリースしていました。→→→この記事の続きを読む\nなんとSwitch 2でバックアップ起動 SeedSwap by Hinoaaaaaf212 first appeared on 大人のためのゲーム講座.",
+          "link": "https://gamegaz.com/2026112546604/",
+          "publishedOn": "2026-11-25T13:16:01.000Z",
+          "wordCount": null,
+          "title": "なんとSwitch 2でバックアップ起動 SeedSwap by Hinoaaaaaf212",
+          "imageUrl": null
+        },
         {
           "id": "https://gamegaz.com/?p=46600",
           "author": "mamosuke",
@@ -9288,16 +9289,6 @@
           "wordCount": null,
           "title": "GameGaz Daily 2026.8.29",
           "imageUrl": null
-        },
-        {
-          "id": "https://gamegaz.com/?p=45999",
-          "author": "mamosuke",
-          "description": "send_pkg-payload v2.0.0,PS5-Super-PLDMGR-Auto-Updater PS5 AIO Packages (2026.08.27-1755),ps5upload v5.12.0,AdvancedControllerProcessor v1.6.0,Sakura-Switch v1.0.3,Breeze beta117.01,pipensx 1.4.3,3DS-CLI V5.0,NetPass v2.1.1,WiiUDownloader v2.102,PKHeX 26.08.26,Azahar 2126.1-rc2,ReXGlue SDK Nightly 0.10.0.1-dev.ge9d4425,Cube64 / Wii64 1.4.5,ARMSX2 nightly 20260827 (19dec9c211),shadPS4 Pre-release-shadPS4-2026-08-27-388cff5,shadNet 2026-08-27-b62567f,KytyPS5 2026-08-27-ade32e7→→→この記事の続きを読む\nGameGaz Daily 2026.8.28 first appeared on 大人のためのゲーム講座.",
-          "link": "https://gamegaz.com/2026082845999/",
-          "publishedOn": "2026-08-28T00:31:31.000Z",
-          "wordCount": null,
-          "title": "GameGaz Daily 2026.8.28",
-          "imageUrl": null
         }
       ]
     },
@@ -9443,6 +9434,26 @@
       "feedUrl": "https://www.publickey1.jp/atom.xml",
       "siteUrl": "https://www.publickey1.jp/",
       "articles": [
+        {
+          "id": "https://www.publickey1.jp/blog/26/mcpskills_over_mcpmcp.html",
+          "author": null,
+          "description": "AIエージェントと外部ツールを接続する業界標準となっているMCP（Model Context Protocol）に、新機能として「Skills over MCP」がβ版として追加されました。 Skills over MCPを利用することで、...",
+          "link": "https://www.publickey1.jp/blog/26/mcpskills_over_mcpmcp.html",
+          "publishedOn": "2026-11-25T15:29:05.000Z",
+          "wordCount": null,
+          "title": "MCPに新機能「Skills over MCP」登場。ツールとの接続だけでなく使い方のスキルもMCP経由で提供",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html",
+          "author": null,
+          "description": "Googleは、Google WorkspaceをAIエージェントが操作するためのインターフェイスとして「Google Workspace MCP Server」と「Google Workspace CLI」が正式版になったことを発表しまし...",
+          "link": "https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html",
+          "publishedOn": "2026-11-25T15:27:15.000Z",
+          "wordCount": null,
+          "title": "「Google Workspace MCPサーバ」と「Google Workspace CLI」が正式版としてリリース",
+          "imageUrl": null
+        },
         {
           "id": "https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html",
           "author": null,
