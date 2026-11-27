@@ -30,6 +30,21 @@
       "siteUrl": "https://akkera102.hatenablog.com/",
       "articles": [
         {
+          "id": "hatenablog://entry/14729835035344914293",
+          "author": null,
+          "description": "日経ソフトウエアのファミコンプログラミングの記事を書かれていた著者の方がpdfを公開されています。\ngithub.com\n（はてなブログにもリンク張りたかったのですけど、当方の心臓がミジンコ並みなので張れませんでした。トラックバック飛ばすには恐れ多いといいますか・・・。気になる方は調べてみてください。）",
+          "link": "https://akkera102.hatenablog.com/entry/2026/11/27/203925",
+          "publishedOn": "2026-11-27T11:39:25.000Z",
+          "wordCount": 520,
+          "title": "ファミコンドキュメント",
+          "enclosure": {
+            "url": "https://ogimage.blog.st-hatena.com/8454420450073336369/14729835035344914293/1795780160",
+            "type": "image/png",
+            "length": "0"
+          },
+          "imageUrl": "https://ogimage.blog.st-hatena.com/8454420450073336369/14729835035344914293/1795780160"
+        },
+        {
           "id": "hatenablog://entry/14729835035343402916",
           "author": null,
           "description": "凄まじいドキュメントです。いやー8年間ですか・・・。ここまで細部に実装できたり、ドキュメントを書けるというのは羨ましいですね。\nbokuweb.github.io\n追記：\nアホ脳みそですと自分で作っていないので半分ぐらいしか理解していないなあ、通読しただけで終わってしまったなあというのがあります（汗。\ntechbookfest.org",
@@ -1889,21 +1904,6 @@
             "length": "0"
           },
           "imageUrl": "https://cdn.image.st-hatena.com/image/scale/d57485a719a2a523ba8e134d2b98b74aa5996ea2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51PZ-Bsq2jL._SL500_.jpg"
-        },
-        {
-          "id": "hatenablog://entry/14945776032070879414",
-          "author": null,
-          "description": "鉄道ゲームを作っている。今のところクローズドベータ的な感じでデプロイしている。興味がある人がいたら ruby-jp#times-pocke を覗いてみてください。路線図に詳しいオタクには刺さる自信が割とある。そうでない人には意味不明だとは思う。\nコーディングはClaude Codeに完全にまかせている。実装は全く見ていない。markdownファイルや、PRのdescriptionで仕様の確認だけをしている。\n最初にClaude Chatに大まかな仕様を投げて、実現可能性や少し細かい仕様を相談し、markdownとして仕様書を書き出した。\n次にこの仕様書をClaude Codeに渡して具体的なタスクに落とし込んでIssueを作らせた。\nそしてそのIssueを元に開発を進めて行っている。\nClaude Chatに仕様を確定してもらった段階で「開発始めたらまた進捗聞かせてよ。」と言われて、ごめんねもう君に話しかけることはないんだ……と思った。かなしい。\n早くリリースしたい気持ちと、楽しい気持ちでひたすら開発をしていたらだいぶClaude Code MAX20のトークンが溶けてしまった。土曜日の昼12時が週間制限切り替わりポイントなのだけれど、先週分は99%ぐらいまで使い切っていたし、今週分はもうすでに28%使っている。やばい。\n結構なスピード感で開発はしているものの、まだちゃんとリリースするには細かいところを詰めたい。ゲームプレイのコア体験は、今日一日でだいぶ仕上がってきたかなあと言う気はする。どちらかと言うとメタ的要素がまだまだ必要。\n先週、定期券利用駅ペアランキングを作ったのがきっかけ。 2026-08-24 - diary\nこれを作ってからオープンになっているデータを使って何か面白いものが作れないかなと考えていた。水曜日に丸一日アイディアを考えていたのだけど、どうもいい案が出なくて少し落ち込んでいた。本当に水曜日は何もしてなかった。\n夜にようやくこのゲームのアイディアを思いついてClaude Chatに相談を始めたので、まあ1日悩んだかいはあったと思う。\n修正したおもしろバグの1つに、方角ネタバレがある。\nこのゲームでは難易度を上げるために地図の方角をランダムに回転させたものを初期方角とする機能がある。\n初期方角のままだと大変なので、ユーザーが地図を回転させるUIが必要なのだけど、初期実装ではそれがスライダーとして実装されていた。そして、ランダムな回転はスライダー位置の初期値として実装され、スライダーを端に合わせると北が上を向くという大変親切な設計になっていた。\nそもそもスライダーを回転に使うのがおかしいだろうということで、左右それぞれの向きに回転させるボタンを2つつける形に変更した。",
-          "link": "https://commits.hatenablog.com/entry/2026/08/30/100000",
-          "publishedOn": "2026-08-30T01:00:00.000Z",
-          "wordCount": 564,
-          "title": "2026-08-29",
-          "enclosure": {
-            "url": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032070879414/1788051602",
-            "type": "image/png",
-            "length": "0"
-          },
-          "imageUrl": "https://ogimage.blog.st-hatena.com/17680117127160141034/14945776032070879414/1788051602"
         }
       ]
     },
@@ -7102,6 +7102,16 @@
       "feedUrl": "https://blog.jxck.io/feeds/atom.xml",
       "siteUrl": "https://blog.jxck.io/",
       "articles": [
+        {
+          "id": "https://blog.jxck.io/entries/2026-11-27/verifiable-credentials.html",
+          "author": null,
+          "description": "マイナンバーカードや JPKI を用いて本人確認する方式への移行が急がれている。しかし、確認方法が変わっても、そこで取得した情報を DB に保存していては、漏洩のリスク自体はなくならない。個人情報自体を渡さずに、必要な確認を行うことができれば、そのリスクも減らせるだろう。ここで活用が期待されているのが、Verifiable Credentials だ。この記事は、サイバーセキュリティアドベントカレンダー 4 日目である。",
+          "link": "https://blog.jxck.io/entries/2026-11-27/verifiable-credentials.html",
+          "publishedOn": "2026-11-27T00:00:00.000Z",
+          "wordCount": null,
+          "title": "Verifiable Credentials による個人情報収集の最小化",
+          "imageUrl": null
+        },
         {
           "id": "https://blog.jxck.io/entries/2026-11-25/ekyc-over-jpki.html",
           "author": null,
